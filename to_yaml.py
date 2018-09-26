@@ -85,10 +85,6 @@ def postprocess_person(person):
 
         else:
             raise ValueError(organization_id)
-        if membership['organization_id'] == '~{"classification": "lower"}':
-            pass
-        elif membership['organization_id'] == '~{"classification": "upper"}':
-            pass
 
     for key in optional_keys:
         if person.get(key):
