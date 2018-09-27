@@ -1,8 +1,23 @@
+import re
+import sys
+import yaml
+
+
+DATE_RE = re.compile('^\d{4}(-\d{2}(-\d{2}))$')
+PHONE_RE = re.compile('^\d{3}-\d{3}-\d{4}$')
+UUID_RE = re.compile('^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
+
+
 class Missing:
     pass
 
+
 class Required:
     pass
+
+
+def is_dict(val):
+    return isinstance(val, dict)
 
 
 def is_string(val):
@@ -14,14 +29,19 @@ def is_url(val):
 
 
 def is_fuzzy_date(val):
-    return is_string(val)  # TODO
+    return is_string(val) and DATE_RE.match(val)
 
 
 def is_phone(val):
-    return is_string(val)  # TODO
+    return is_string(val) and PHONE_RE.match(val)
+
+
+def is_uuid(val):
+    return is_string(val) and UUID_RE.match(val)
 
 
 PERSON_FIELDS = {
+    'id': [is_uuid],
     'name': [is_string, Required],
     'sort_name': [is_string],
     'given_name': [is_string],
@@ -32,7 +52,6 @@ PERSON_FIELDS = {
     'birth_date': [is_fuzzy_date],
     'death_date': [is_fuzzy_date],
     'image': [is_url],
-
     'contact_details': {
         'note': [is_string, Required],
         'voice': [is_phone],
@@ -55,22 +74,28 @@ PERSON_FIELDS = {
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
     },
-
     'sources': {
         'note': [is_string],
         'url': [is_url, Required],
     },
-    # 'committees': [],
+    'committees': {
+        'name': [is_string, Required],
+        'start_date': [is_fuzzy_date],
+        'end_date': [is_fuzzy_date],
+    },
     'party': {
         'name': [is_string, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
     },
-    'terms': {
-        'chamber': ['lower', 'upper'],
+    'roles': {
+        'chamber': [is_string, Required],
+        'district': [is_string, Required],
+        'start_date': [is_fuzzy_date],
+        'end_date': [is_fuzzy_date],
     },
+    'extras': [is_dict],
 }
-
 
 
 def validate_obj(obj, schema, prefix=None):
@@ -96,14 +121,27 @@ def validate_obj(obj, schema, prefix=None):
                 if validator is Required:
                     continue
                 if not validator(value):
-                    errors.append(f'{prefix_str}{field} failed validation {validator.__name__}: {value}')
+                    errors.append(
+                        f'{prefix_str}{field} failed validation {validator.__name__}: {value}'
+                    )
         elif isinstance(validators, dict):
             # validate list elements against child schema
             for index, item in enumerate(value):
                 errors.extend(validate_obj(item, validators, [field, str(index)]))
         else:
-            print('error', field, validators)
+            raise Exception('invalid schema {}'.format(validators))
+
+    # check for extra items that went without validation
+    for key in set(obj.keys()) - set(schema.keys()):
+        errors.append(f'extra key: {prefix_str}{key}')
+
     return errors
 
-for err in validate_obj({'name': 'James', 'contact_details': [{'voice': 3}]}, PERSON_FIELDS):
-    print(err)
+
+if __name__ == '__main__':
+    with open(sys.argv[1]) as f:
+        errors = validate_obj(yaml.load(f), PERSON_FIELDS)
+        for err in errors:
+            print(err)
+        if not errors:
+            print('no errors!')
