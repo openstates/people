@@ -87,11 +87,12 @@ def validate_obj(obj, schema, prefix=None):
         if value is Missing:
             if Required in validators:
                 errors.append(f'{prefix_str}{field} missing')
+            # error or not, don't run other validators against missing fields
             continue
 
         if isinstance(validators, list):
             for validator in validators:
-                # don't call any method for Required check
+                # required is checked above
                 if validator is Required:
                     continue
                 if not validator(value):
