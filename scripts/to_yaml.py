@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import glob
 import json
 import os
@@ -5,6 +7,7 @@ import sys
 import yaml
 import yamlordereddictloader
 from collections import defaultdict, OrderedDict
+from utils import reformat_phone_number
 
 # set up defaultdict representation
 from yaml.representer import Representer
@@ -72,7 +75,10 @@ def postprocess_person(person):
 
     contact_details = defaultdict(lambda: defaultdict(list))
     for detail in person['contact_details']:
-        contact_details[detail['note']][detail['type']] = detail['value']
+        value = detail['value']
+        if detail['type'] in ('voice', 'fax'):
+            value = reformat_phone_number(value)
+        contact_details[detail['note']][detail['type']] = value
 
     result['contact_details'] = [{'note': key, **val} for key, val in contact_details.items()]
 
