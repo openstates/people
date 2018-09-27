@@ -54,10 +54,10 @@ PERSON_FIELDS = {
     'image': [is_url],
     'contact_details': {
         'note': [is_string, Required],
-        'voice': [is_phone],
-        'fax': [is_phone],
         'address': [is_string],
         'email': [is_string],
+        'voice': [is_phone],
+        'fax': [is_phone],
     },
     'links': {
         'note': [is_string],
@@ -139,9 +139,13 @@ def validate_obj(obj, schema, prefix=None):
 
 
 if __name__ == '__main__':
-    with open(sys.argv[1]) as f:
-        errors = validate_obj(yaml.load(f), PERSON_FIELDS)
-        for err in errors:
-            print(err)
-        if not errors:
-            print('no errors!')
+    filenames = sys.argv[1:]
+
+    for filename in filenames:
+        with open(filename) as f:
+            errors = validate_obj(yaml.load(f), PERSON_FIELDS)
+            print(filename)
+            for err in errors:
+                print(' ', err)
+            if not errors:
+                print('  no errors!')
