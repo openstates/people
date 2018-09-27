@@ -1,1 +1,14 @@
+==========
 experiment
+==========
+
+scripts
+-------
+
+./scripts/to_yaml.py <data-dir>
+
+Convert a pupa scrape directory to YAML.  (currently will wipe all data from destination directory)
+
+./scripts/lint_yaml.py <files>
+
+Check status of YAML files.
