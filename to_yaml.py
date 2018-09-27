@@ -13,10 +13,17 @@ yaml.add_representer(defaultdict, Representer.represent_dict)
 
 def all_people(dirname):
     memberships = defaultdict(list)
+    organizations = {}
+
+    for filename in glob.glob(os.path.join(dirname, 'organization_*.json')):
+        with open(filename) as f:
+            organization = json.load(f)
+            organizations[organization['_id']] = organization
 
     for filename in glob.glob(os.path.join(dirname, 'membership_*.json')):
         with open(filename) as f:
             membership = json.load(f)
+            membership['organization'] = organizations.get(membership['organization_id'])
             memberships[membership['person_id']].append(membership)
 
     for filename in glob.glob(os.path.join(dirname, 'person_*.json')):
@@ -60,6 +67,7 @@ def postprocess_person(person):
         contact_details=[],
         # maybe post-process these?
         sources=[postprocess_link(link) for link in person['sources']],
+        committees=[],
     )
 
     contact_details = defaultdict(lambda: defaultdict(list))
@@ -82,7 +90,10 @@ def postprocess_person(person):
                 result['party'] = [
                     {'name': org['name']}
                 ]
-
+        elif membership['organization']:
+            result['committees'].append({
+                'name': membership['organization']['name'],
+            })
         else:
             raise ValueError(organization_id)
 
@@ -101,6 +112,7 @@ def process_people(input_dir, output_dir):
 
         with open(os.path.join(output_dir, filename), 'w') as f:
             yaml.dump(person, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
+
 
 if __name__ == '__main__':
     input_dir, output_dir = sys.argv[1:3]
