@@ -121,7 +121,17 @@ def process_people(input_dir, output_dir):
 
 
 if __name__ == '__main__':
-    input_dir, output_dir = sys.argv[1:3]
+    input_dir = sys.argv[1]
+
+    # state is last piece of directory name
+    state = None
+    for piece in input_dir.split('/')[::-1]:
+        if piece:
+            state = piece
+            break
+
+    output_dir = os.path.join(os.path.dirname(__file__), '../test/', state)
+
     try:
         os.makedirs(output_dir)
     except FileExistsError:
