@@ -45,6 +45,15 @@ def is_uuid(val):
     return is_string(val) and UUID_RE.match(val)
 
 
+CONTACT_DETAILS = {
+    'note': [is_string, Required],
+    'address': [is_string],
+    'email': [is_string],
+    'voice': [is_phone],
+    'fax': [is_phone],
+}
+
+
 PERSON_FIELDS = {
     'id': [is_uuid],
     'name': [is_string, Required],
@@ -57,13 +66,7 @@ PERSON_FIELDS = {
     'birth_date': [is_fuzzy_date],
     'death_date': [is_fuzzy_date],
     'image': [is_url],
-    'contact_details': {
-        'note': [is_string, Required],
-        'address': [is_string],
-        'email': [is_string],
-        'voice': [is_phone],
-        'fax': [is_phone],
-    },
+    'contact_details': CONTACT_DETAILS,
     'links': {
         'note': [is_string],
         'url': [is_url, Required],
@@ -98,6 +101,7 @@ PERSON_FIELDS = {
         'district': [is_string, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
+        'contact_details': CONTACT_DETAILS,
     },
     'extras': [is_dict],
 }
