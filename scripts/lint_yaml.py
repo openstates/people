@@ -189,11 +189,11 @@ def compare_districts(expected, actual):
     for chamber in expected:
         expected_districts = set(expected[chamber].keys())
         actual_districts = set(actual[chamber].keys())
-        for district in expected_districts - actual_districts:
+        for district in sorted(expected_districts - actual_districts):
             errors.append(f'missing legislator for {chamber} {district}')
-        for district in actual_districts - expected_districts:
+        for district in sorted(actual_districts - expected_districts):
             errors.append(f'extra legislator for unexpected seat {chamber} {district}')
-        for district in (actual_districts & expected_districts):
+        for district in sorted(actual_districts & expected_districts):
             if actual[chamber][district] < expected[chamber][district]:
                 errors.append(f'missing legislator for {chamber} {district}')
             if actual[chamber][district] > expected[chamber][district]:
