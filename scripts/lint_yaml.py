@@ -1,12 +1,11 @@
 #!/usr/bin/env python
-
 import re
 import os
-import sys
 import yaml
 import glob
 import click
 from utils import get_data_dir
+from collections import defaultdict, Counter
 
 
 DATE_RE = re.compile('^\d{4}(-\d{2}(-\d{2}))$')
@@ -144,23 +143,102 @@ def validate_obj(obj, schema, prefix=None):
     return errors
 
 
-@click.command()
-@click.option('--state', default='*')
-@click.option('-v', '--verbose', count=True)
-def lint(state, verbose):
+def role_is_active(role):
+    if role.get('end_date') is None:
+        return True
+
+
+def get_aggregate_stats(person):
+    chamber = None
+    district = None
+    party = []
+
+    for role in person['roles']:
+        if role_is_active(role):
+            chamber = role['chamber']
+            district = role['district']
+
+    for role in person['party']:
+        if role_is_active(role):
+            party.append(role['name'])
+
+    return {'chamber': chamber, 'district': district, 'party': party}
+
+
+def get_expected_districts(settings):
+    expected = {}
+    for key in ('upper', 'lower', 'legislature'):
+        seats = settings.get(key + '_seats')
+        if not seats:
+            continue
+        elif isinstance(seats, int):
+            # one seat per district by default
+            expected[key] = {str(s): 1 for s in range(1, seats+1)}
+        else:
+            expected[key] = seats
+    return expected
+
+
+def compare_districts(expected, actual):
+    errors = []
+
+    if expected.keys() != actual.keys():
+        errors.append(f'expected districts for {expected.keys()}, got {actual.keys()}')
+        return errors
+
+    for chamber in expected:
+        expected_districts = set(expected[chamber].keys())
+        actual_districts = set(actual[chamber].keys())
+        for district in expected_districts - actual_districts:
+            errors.append(f'missing legislator for {chamber} {district}')
+        for district in actual_districts - expected_districts:
+            errors.append(f'extra legislator for unexpected seat {chamber} {district}')
+        for district in (actual_districts & expected_districts):
+            if actual[chamber][district] < expected[chamber][district]:
+                errors.append(f'missing legislator for {chamber} {district}')
+            if actual[chamber][district] > expected[chamber][district]:
+                errors.append(f'extra legislator for {chamber} {district}')
+    return errors
+
+
+def process_state(state, verbose, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
-    
+    chamber_districts = defaultdict(Counter)
+    parties = Counter()
+
+    expected = get_expected_districts(settings)
 
     for filename in filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            errors = validate_obj(yaml.load(f), PERSON_FIELDS)
+            person = yaml.load(f)
+            errors = validate_obj(person, PERSON_FIELDS)
+
+            # increment counts for state-level validation
+            agg = get_aggregate_stats(person)
+            chamber_districts[agg['chamber']][agg['district']] += 1
+            parties.update(agg['party'])
+
             if errors:
                 click.echo(print_filename)
             for err in errors:
                 click.secho(' ' + err, fg='red')
             if not errors and verbose > 0:
                 click.secho(print_filename, 'OK!', fg='green')
+
+    for err in compare_districts(expected, chamber_districts):
+        click.secho(err, fg='red')
+
+
+@click.command()
+@click.argument('state')
+@click.option('-v', '--verbose', count=True)
+def lint(state, verbose):
+    with open(get_data_dir('state-settings.yml')) as f:
+        state_settings = yaml.load(f)
+
+    process_state(state, verbose, state_settings[state])
+
 
 if __name__ == '__main__':
     lint()
