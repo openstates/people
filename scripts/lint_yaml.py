@@ -173,7 +173,7 @@ def get_aggregate_stats(person):
                 cd_counts[key] += 1
 
     return {'chamber': chamber, 'district': district, 'party': party,
-            'contact_details': cd_counts}
+            'contact_counts': cd_counts}
 
 
 def get_expected_districts(settings):
@@ -216,6 +216,7 @@ def process_state(state, verbose, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
     chamber_districts = defaultdict(Counter)
     parties = Counter()
+    contact_counts = Counter()
     count = 0
 
     expected = get_expected_districts(settings)
@@ -231,6 +232,7 @@ def process_state(state, verbose, settings):
             agg = get_aggregate_stats(person)
             chamber_districts[agg['chamber']][agg['district']] += 1
             parties.update(agg['party'])
+            contact_counts.update(agg['contact_counts'])
 
             if errors:
                 click.echo(print_filename)
@@ -242,6 +244,7 @@ def process_state(state, verbose, settings):
     for err in compare_districts(expected, chamber_districts):
         click.secho(err, fg='red')
 
+    # summary
     click.secho(f'processed {count} files')
     upper = sum(chamber_districts['upper'].values())
     lower = sum(chamber_districts['lower'].values())
@@ -254,6 +257,8 @@ def process_state(state, verbose, settings):
         else:
             color = 'green'
         click.secho(f'{count:4d} {party} ', bg=color)
+    for type, count in contact_counts.items():
+        click.secho(f'{count:4d} {type} ')
 
 
 @click.command()
