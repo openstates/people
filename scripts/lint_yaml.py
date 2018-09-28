@@ -166,7 +166,14 @@ def get_aggregate_stats(person):
         if role_is_active(role):
             party.append(role['name'])
 
-    return {'chamber': chamber, 'district': district, 'party': party}
+    cd_counts = Counter()
+    for cd in person['contact_details']:
+        for key in cd:
+            if key != 'note':
+                cd_counts[key] += 1
+
+    return {'chamber': chamber, 'district': district, 'party': party,
+            'contact_details': cd_counts}
 
 
 def get_expected_districts(settings):
@@ -209,12 +216,14 @@ def process_state(state, verbose, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
     chamber_districts = defaultdict(Counter)
     parties = Counter()
+    count = 0
 
     expected = get_expected_districts(settings)
 
     for filename in filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
+            count += 1
             person = yaml.load(f)
             errors = validate_obj(person, PERSON_FIELDS)
 
@@ -233,11 +242,25 @@ def process_state(state, verbose, settings):
     for err in compare_districts(expected, chamber_districts):
         click.secho(err, fg='red')
 
+    click.secho(f'processed {count} files')
+    upper = sum(chamber_districts['upper'].values())
+    lower = sum(chamber_districts['lower'].values())
+    click.secho(f'{upper:4d} upper\n{lower:4d} lower')
+    for party, count in parties.items():
+        if party == 'Republican':
+            color = 'red'
+        elif party == 'Democratic':
+            color = 'blue'
+        else:
+            color = 'green'
+        click.secho(f'{count:4d} {party} ', bg=color)
+
 
 @click.command()
 @click.argument('state')
 @click.option('-v', '--verbose', count=True)
-def lint(state, verbose):
+@click.option('--summary', is_flag=True)
+def lint(state, verbose, summary):
     with open(get_data_dir('state-settings.yml')) as f:
         state_settings = yaml.load(f)
 
