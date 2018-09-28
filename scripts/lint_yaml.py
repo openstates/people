@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
 import re
+import os
 import sys
 import yaml
+import glob
+import click
+from utils import get_data_dir
 
 
 DATE_RE = re.compile('^\d{4}(-\d{2}(-\d{2}))$')
@@ -140,14 +144,23 @@ def validate_obj(obj, schema, prefix=None):
     return errors
 
 
-if __name__ == '__main__':
-    filenames = sys.argv[1:]
+@click.command()
+@click.option('--state', default='*')
+@click.option('-v', '--verbose', count=True)
+def lint(state, verbose):
+    filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
+    
 
     for filename in filenames:
+        print_filename = os.path.basename(filename)
         with open(filename) as f:
             errors = validate_obj(yaml.load(f), PERSON_FIELDS)
-            print(filename)
+            if errors:
+                click.echo(print_filename)
             for err in errors:
-                print(' ', err)
-            if not errors:
-                print('  no errors!')
+                click.secho(' ' + err, fg='red')
+            if not errors and verbose > 0:
+                click.secho(print_filename, 'OK!', fg='green')
+
+if __name__ == '__main__':
+    lint()

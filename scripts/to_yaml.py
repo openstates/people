@@ -7,7 +7,7 @@ import sys
 import yaml
 import yamlordereddictloader
 from collections import defaultdict, OrderedDict
-from utils import reformat_phone_number
+from utils import reformat_phone_number, get_data_dir
 
 # set up defaultdict representation
 from yaml.representer import Representer
@@ -130,7 +130,7 @@ if __name__ == '__main__':
             state = piece
             break
 
-    output_dir = os.path.join(os.path.dirname(__file__), '../test/', state)
+    output_dir = get_data_dir(state)
 
     try:
         os.makedirs(output_dir)

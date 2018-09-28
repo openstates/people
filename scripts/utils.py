@@ -1,4 +1,5 @@
 import re
+import os
 
 
 def reformat_phone_number(phone):
@@ -10,3 +11,7 @@ def reformat_phone_number(phone):
         return '-'.join(groups)
     else:
         return phone
+
+
+def get_data_dir(state):
+    return os.path.join(os.path.dirname(__file__), '../test/', state)
