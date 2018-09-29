@@ -201,14 +201,16 @@ def compare_districts(expected, actual):
     return errors
 
 
-class Summarizer:
+class Validator:
     OPTIONAL_FIELD_SET = set(('sort_name', 'given_name', 'family_name',
                               'gender', 'summary', 'biography',
                               'birth_date', 'death_date', 'image',
                               'links', 'other_names', 'sources',
                               ))
 
-    def __init__(self):
+    def __init__(self, settings):
+        self.expected = get_expected_districts(settings)
+        self.errors = defaultdict(list)
         self.count = 0
         self.parties = Counter()
         self.contact_counts = Counter()
@@ -217,7 +219,13 @@ class Summarizer:
         self.extra_counts = Counter()
         self.chamber_districts = defaultdict(Counter)
 
-    def add_person(self, person):
+    def validate_person(self, person, filename):
+        self.errors[filename] = validate_obj(person, PERSON_FIELDS)
+        self.errors[filename].extend(validate_roles(person, 'roles'))
+        self.errors[filename].extend(validate_roles(person, 'party'))
+        self.summarize_person(person)
+
+    def summarize_person(self, person):
         chamber = None
         district = None
 
@@ -243,6 +251,18 @@ class Summarizer:
 
         for id in person.get('identifiers', []):
             self.id_counts[id['scheme']] += 1
+
+    def print_validation_report(self, verbose):
+        for fn, errors in self.errors.items():
+            if errors:
+                click.echo(fn)
+                for err in errors:
+                    click.secho(' ' + err, fg='red')
+            if not errors and verbose > 0:
+                click.secho(print_filename, 'OK!', fg='green')
+
+        for err in compare_districts(self.expected, self.chamber_districts):
+            click.secho(err, fg='red')
 
     def print_summary(self):
         click.secho(f'processed {self.count} files', bold=True)
@@ -272,32 +292,19 @@ class Summarizer:
 
 def process_state(state, verbose, summary, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
-    expected = get_expected_districts(settings)
-    summarizer = Summarizer()
+    validator = Validator(settings)
 
     for filename in filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
             person = yaml.load(f)
-            errors = validate_obj(person, PERSON_FIELDS)
-            errors.extend(validate_roles(person, 'roles'))
-            errors.extend(validate_roles(person, 'party'))
+            validator.validate_person(person, print_filename)
 
-            summarizer.add_person(person)
-
-            if errors:
-                click.echo(print_filename)
-            for err in errors:
-                click.secho(' ' + err, fg='red')
-            if not errors and verbose > 0:
-                click.secho(print_filename, 'OK!', fg='green')
-
-    for err in compare_districts(expected, summarizer.chamber_districts):
-        click.secho(err, fg='red')
+    validator.print_validation_report(verbose)
 
     # summary
     if summary:
-        summarizer.print_summary()
+        validator.print_summary()
 
 
 @click.command()
@@ -305,6 +312,9 @@ def process_state(state, verbose, summary, settings):
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False)
 def lint(state, verbose, summary):
+    # if not states:
+    #      states = [os.path.basename(d)
+    #                for d in glob.glob(os.path.join(get_data_dir(''), '*'))]
     with open(get_data_dir('state-settings.yml')) as f:
         state_settings = yaml.load(f)
 
