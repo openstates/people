@@ -55,7 +55,7 @@ CONTACT_DETAILS = {
 
 
 PERSON_FIELDS = {
-    'id': [is_uuid],
+    'id': [is_uuid, Required],
     'name': [is_string, Required],
     'sort_name': [is_string],
     'given_name': [is_string],
@@ -162,11 +162,6 @@ def validate_roles(person, roles_key):
     return []
 
 
-
-
-# TODO: report on committees
-
-
 def get_expected_districts(settings):
     expected = {}
     for key in ('upper', 'lower', 'legislature'):
@@ -183,6 +178,7 @@ def get_expected_districts(settings):
 
 def compare_districts(expected, actual):
     errors = []
+    warnings = []
 
     if expected.keys() != actual.keys():
         errors.append(f'expected districts for {expected.keys()}, got {actual.keys()}')
@@ -192,15 +188,15 @@ def compare_districts(expected, actual):
         expected_districts = set(expected[chamber].keys())
         actual_districts = set(actual[chamber].keys())
         for district in sorted(expected_districts - actual_districts):
-            errors.append(f'missing legislator for {chamber} {district}')
+            warnings.append(f'missing legislator for {chamber} {district}')
         for district in sorted(actual_districts - expected_districts):
             errors.append(f'extra legislator for unexpected seat {chamber} {district}')
         for district in sorted(actual_districts & expected_districts):
             if actual[chamber][district] < expected[chamber][district]:
-                errors.append(f'missing legislator for {chamber} {district}')
+                warnings.append(f'missing legislator for {chamber} {district}')
             if actual[chamber][district] > expected[chamber][district]:
                 errors.append(f'extra legislator for {chamber} {district}')
-    return errors
+    return errors, warnings
 
 
 class Validator:
@@ -217,6 +213,7 @@ class Validator:
         self.warnings = defaultdict(list)
         self.count = 0
         self.parties = Counter()
+        self.committees = Counter()
         self.contact_counts = Counter()
         self.id_counts = Counter()
         self.optional_fields = Counter()
@@ -250,7 +247,6 @@ class Validator:
                 warnings.append(f'sources.{i} URL {url} should be HTTPS')
         return warnings
 
-
     def summarize_person(self, person):
         chamber = None
         district = None
@@ -269,6 +265,10 @@ class Validator:
         for role in person['party']:
             if role_is_active(role):
                 self.parties[role['name']] += 1
+
+        for role in person['committees']:
+            if role_is_active(role):
+                self.committees[role['name']] += 1
 
         for cd in person['contact_details']:
             for key in cd:
@@ -290,14 +290,19 @@ class Validator:
             if not errors and verbose > 0:
                 click.secho(print_filename, 'OK!', fg='green')
 
-        for err in compare_districts(self.expected, self.chamber_districts):
+        errors, warnings = compare_districts(self.expected, self.chamber_districts)
+        for err in errors:
             click.secho(err, fg='red')
+        for warning in warnings:
+            click.secho(warning, fg='yellow')
 
     def print_summary(self):
         click.secho(f'processed {self.count} files', bold=True)
         upper = sum(self.chamber_districts['upper'].values())
         lower = sum(self.chamber_districts['lower'].values())
         click.secho(f'{upper:4d} upper\n{lower:4d} lower')
+
+        click.secho('Parties', bold=True)
         for party, count in self.parties.items():
             if party == 'Republican':
                 color = 'red'
@@ -306,6 +311,11 @@ class Validator:
             else:
                 color = 'green'
             click.secho(f'{count:4d} {party} ', bg=color)
+
+        click.secho('Committees', bold=True)
+        for com, count in sorted(self.committees.items(),
+                                 key=lambda x:x[1], reverse=True):
+            click.secho(f'{count:4d} {com} ')
 
         for name, collection in {'Contact Info': self.contact_counts,
                                  'Identifiers': self.id_counts,
