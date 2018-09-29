@@ -234,7 +234,7 @@ class Summarizer:
             self.id_counts[id['scheme']] += 1
 
     def print_summary(self):
-        click.secho(f'processed {self.count} files')
+        click.secho(f'processed {self.count} files', bold=True)
         upper = sum(self.chamber_districts['upper'].values())
         lower = sum(self.chamber_districts['lower'].values())
         click.secho(f'{upper:4d} upper\n{lower:4d} lower')
@@ -247,16 +247,19 @@ class Summarizer:
                 color = 'green'
             click.secho(f'{count:4d} {party} ', bg=color)
 
-        for type, count in self.contact_counts.items():
-            click.secho(f'{count:4d} {type} ')
-        for type, count in self.id_counts.items():
-            click.secho(f'{count:4d} {type} ')
-        for field, count in self.optional_fields.items():
-            click.secho(f'{count:4d} {field} ')
-        for field, count in self.extra_counts.items():
-            click.secho(f'{count:4d} {field} ')
+        for name, collection in {'Contact Info': self.contact_counts,
+                                 'Identifiers': self.id_counts,
+                                 'Additional Info': self.optional_fields,
+                                 'Extras': self.extra_counts}.items():
+            if collection:
+                click.secho(name, bold=True)
+                for type, count in collection.items():
+                    click.secho(f'{count:4d} {type} ')
+            else:
+                click.secho(name + ' - none', bold=True)
 
-def process_state(state, verbose, settings):
+
+def process_state(state, verbose, summary, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
     expected = get_expected_districts(settings)
     summarizer = Summarizer()
@@ -279,19 +282,19 @@ def process_state(state, verbose, settings):
         click.secho(err, fg='red')
 
     # summary
-    summarizer.print_summary()
-
+    if summary:
+        summarizer.print_summary()
 
 
 @click.command()
 @click.argument('state')
 @click.option('-v', '--verbose', count=True)
-@click.option('--summary', is_flag=True)
+@click.option('--summary/--no-summary', default=False)
 def lint(state, verbose, summary):
     with open(get_data_dir('state-settings.yml')) as f:
         state_settings = yaml.load(f)
 
-    process_state(state, verbose, state_settings[state])
+    process_state(state, verbose, summary, state_settings[state])
 
 
 if __name__ == '__main__':
