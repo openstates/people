@@ -88,6 +88,7 @@ PERSON_FIELDS = {
     },
     'committees': {
         'name': [is_string, Required],
+        'post': [is_string],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
     },
@@ -161,11 +162,6 @@ def validate_roles(person, roles_key):
     return []
 
 
-OPTIONAL_FIELD_SET = set(('sort_name', 'given_name', 'family_name',
-                          'gender', 'summary', 'biography',
-                          'birth_date', 'death_date', 'image',
-                          'links', 'other_names', 'sources',
-                          ))
 # TODO: report on committees
 
 
@@ -206,6 +202,12 @@ def compare_districts(expected, actual):
 
 
 class Summarizer:
+    OPTIONAL_FIELD_SET = set(('sort_name', 'given_name', 'family_name',
+                              'gender', 'summary', 'biography',
+                              'birth_date', 'death_date', 'image',
+                              'links', 'other_names', 'sources',
+                              ))
+
     def __init__(self):
         self.count = 0
         self.parties = Counter()
@@ -220,7 +222,7 @@ class Summarizer:
         district = None
 
         self.count += 1
-        self.optional_fields.update(set(person.keys()) & OPTIONAL_FIELD_SET)
+        self.optional_fields.update(set(person.keys()) & self.OPTIONAL_FIELD_SET)
         self.extra_counts.update(person.get('extras', {}).keys())
 
         for role in person['roles']:
