@@ -152,28 +152,12 @@ def role_is_active(role):
         return True
 
 
-def get_aggregate_stats(person):
-    chamber = None
-    district = None
-    party = []
-
-    for role in person['roles']:
-        if role_is_active(role):
-            chamber = role['chamber']
-            district = role['district']
-
-    for role in person['party']:
-        if role_is_active(role):
-            party.append(role['name'])
-
-    cd_counts = Counter()
-    for cd in person['contact_details']:
-        for key in cd:
-            if key != 'note':
-                cd_counts[key] += 1
-
-    return {'chamber': chamber, 'district': district, 'party': party,
-            'contact_counts': cd_counts}
+OPTIONAL_FIELD_SET = set(('sort_name', 'given_name', 'family_name',
+                          'gender', 'summary', 'biography',
+                          'birth_date', 'death_date', 'image',
+                          'links', 'other_names', 'sources',
+                          ))
+# TODO: report on committees
 
 
 def get_expected_districts(settings):
@@ -212,27 +196,77 @@ def compare_districts(expected, actual):
     return errors
 
 
+class Summarizer:
+    def __init__(self):
+        self.count = 0
+        self.parties = Counter()
+        self.contact_counts = Counter()
+        self.id_counts = Counter()
+        self.optional_fields = Counter()
+        self.extra_counts = Counter()
+        self.chamber_districts = defaultdict(Counter)
+
+    def add_person(self, person):
+        chamber = None
+        district = None
+
+        self.count += 1
+        self.optional_fields.update(set(person.keys()) & OPTIONAL_FIELD_SET)
+        self.extra_counts.update(person.get('extras', {}).keys())
+
+        for role in person['roles']:
+            if role_is_active(role):
+                chamber = role['chamber']
+                district = role['district']
+                break
+        self.chamber_districts[chamber][district] += 1
+
+        for role in person['party']:
+            if role_is_active(role):
+                self.parties[role['name']] += 1
+
+        for cd in person['contact_details']:
+            for key in cd:
+                if key != 'note':
+                    self.contact_counts[key] += 1
+
+        for id in person.get('identifiers', []):
+            self.id_counts[id['scheme']] += 1
+
+    def print_summary(self):
+        click.secho(f'processed {self.count} files')
+        upper = sum(self.chamber_districts['upper'].values())
+        lower = sum(self.chamber_districts['lower'].values())
+        click.secho(f'{upper:4d} upper\n{lower:4d} lower')
+        for party, count in self.parties.items():
+            if party == 'Republican':
+                color = 'red'
+            elif party == 'Democratic':
+                color = 'blue'
+            else:
+                color = 'green'
+            click.secho(f'{count:4d} {party} ', bg=color)
+
+        for type, count in self.contact_counts.items():
+            click.secho(f'{count:4d} {type} ')
+        for type, count in self.id_counts.items():
+            click.secho(f'{count:4d} {type} ')
+        for field, count in self.optional_fields.items():
+            click.secho(f'{count:4d} {field} ')
+        for field, count in self.extra_counts.items():
+            click.secho(f'{count:4d} {field} ')
+
 def process_state(state, verbose, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
-    chamber_districts = defaultdict(Counter)
-    parties = Counter()
-    contact_counts = Counter()
-    count = 0
-
     expected = get_expected_districts(settings)
+    summarizer = Summarizer()
 
     for filename in filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            count += 1
             person = yaml.load(f)
             errors = validate_obj(person, PERSON_FIELDS)
-
-            # increment counts for state-level validation
-            agg = get_aggregate_stats(person)
-            chamber_districts[agg['chamber']][agg['district']] += 1
-            parties.update(agg['party'])
-            contact_counts.update(agg['contact_counts'])
+            summarizer.add_person(person)
 
             if errors:
                 click.echo(print_filename)
@@ -241,24 +275,12 @@ def process_state(state, verbose, settings):
             if not errors and verbose > 0:
                 click.secho(print_filename, 'OK!', fg='green')
 
-    for err in compare_districts(expected, chamber_districts):
+    for err in compare_districts(expected, summarizer.chamber_districts):
         click.secho(err, fg='red')
 
     # summary
-    click.secho(f'processed {count} files')
-    upper = sum(chamber_districts['upper'].values())
-    lower = sum(chamber_districts['lower'].values())
-    click.secho(f'{upper:4d} upper\n{lower:4d} lower')
-    for party, count in parties.items():
-        if party == 'Republican':
-            color = 'red'
-        elif party == 'Democratic':
-            color = 'blue'
-        else:
-            color = 'green'
-        click.secho(f'{count:4d} {party} ', bg=color)
-    for type, count in contact_counts.items():
-        click.secho(f'{count:4d} {type} ')
+    summarizer.print_summary()
+
 
 
 @click.command()
