@@ -162,6 +162,8 @@ def validate_roles(person, roles_key):
     return []
 
 
+
+
 # TODO: report on committees
 
 
@@ -208,9 +210,11 @@ class Validator:
                               'links', 'other_names', 'sources',
                               ))
 
-    def __init__(self, settings):
-        self.expected = get_expected_districts(settings)
+    def __init__(self, settings, state):
+        self.http_whitelist = tuple(settings['http_whitelist'])
+        self.expected = get_expected_districts(settings[state])
         self.errors = defaultdict(list)
+        self.warnings = defaultdict(list)
         self.count = 0
         self.parties = Counter()
         self.contact_counts = Counter()
@@ -223,7 +227,29 @@ class Validator:
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         self.errors[filename].extend(validate_roles(person, 'roles'))
         self.errors[filename].extend(validate_roles(person, 'party'))
+        self.warnings[filename] = self.check_https(person)
         self.summarize_person(person)
+
+    def check_https_url(self, url):
+        if (url and url.startswith('http://')
+            and not url.startswith(self.http_whitelist)):
+                return False
+        return True
+
+    def check_https(self, person):
+        warnings = []
+        if not self.check_https_url(person.get('image')):
+            warnings.append(f'image URL {person["image"]} should be HTTPS')
+        for i, url in enumerate(person.get('links', [])):
+            url = url['url']
+            if not self.check_https_url(url):
+                warnings.append(f'links.{i} URL {url} should be HTTPS')
+        for i, url in enumerate(person.get('sources', [])):
+            url = url['url']
+            if not self.check_https_url(url):
+                warnings.append(f'sources.{i} URL {url} should be HTTPS')
+        return warnings
+
 
     def summarize_person(self, person):
         chamber = None
@@ -254,10 +280,13 @@ class Validator:
 
     def print_validation_report(self, verbose):
         for fn, errors in self.errors.items():
-            if errors:
+            warnings = self.warnings[fn]
+            if errors or warnings:
                 click.echo(fn)
                 for err in errors:
                     click.secho(' ' + err, fg='red')
+                for warning in warnings:
+                    click.secho(' ' + warning, fg='yellow')
             if not errors and verbose > 0:
                 click.secho(print_filename, 'OK!', fg='green')
 
@@ -292,7 +321,7 @@ class Validator:
 
 def process_state(state, verbose, summary, settings):
     filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
-    validator = Validator(settings)
+    validator = Validator(settings, state)
 
     for filename in filenames:
         print_filename = os.path.basename(filename)
@@ -316,9 +345,9 @@ def lint(state, verbose, summary):
     #      states = [os.path.basename(d)
     #                for d in glob.glob(os.path.join(get_data_dir(''), '*'))]
     with open(get_data_dir('state-settings.yml')) as f:
-        state_settings = yaml.load(f)
+        settings = yaml.load(f)
 
-    process_state(state, verbose, summary, state_settings[state])
+    process_state(state, verbose, summary, settings)
 
 
 if __name__ == '__main__':
