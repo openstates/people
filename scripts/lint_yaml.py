@@ -152,6 +152,15 @@ def role_is_active(role):
         return True
 
 
+def validate_roles(person, roles_key):
+    active = [role for role in person[roles_key] if role_is_active(role)]
+    if len(active) == 0:
+        return [f'no active {roles_key}']
+    elif roles_key == 'roles' and len(active) > 1:
+        return [f'{len(active)} active roles']
+    return []
+
+
 OPTIONAL_FIELD_SET = set(('sort_name', 'given_name', 'family_name',
                           'gender', 'summary', 'biography',
                           'birth_date', 'death_date', 'image',
@@ -269,6 +278,9 @@ def process_state(state, verbose, summary, settings):
         with open(filename) as f:
             person = yaml.load(f)
             errors = validate_obj(person, PERSON_FIELDS)
+            errors.extend(validate_roles(person, 'roles'))
+            errors.extend(validate_roles(person, 'party'))
+
             summarizer.add_person(person)
 
             if errors:
