@@ -171,8 +171,8 @@ def get_expected_districts(settings):
         elif isinstance(seats, int):
             # one seat per district by default
             expected[key] = {str(s): 1 for s in range(1, seats+1)}
-        else:
-            expected[key] = seats
+        elif isinstance(seats, list):
+            expected[key] = {s: 1 for s in seats}
     return expected
 
 
@@ -262,15 +262,15 @@ class Validator:
                 break
         self.chamber_districts[chamber][district] += 1
 
-        for role in person['party']:
+        for role in person.get('party', []):
             if role_is_active(role):
                 self.parties[role['name']] += 1
 
-        for role in person['committees']:
+        for role in person.get('committees', []):
             if role_is_active(role):
                 self.committees[role['name']] += 1
 
-        for cd in person['contact_details']:
+        for cd in person.get('contact_details', []):
             for key in cd:
                 if key != 'note':
                     self.contact_counts[key] += 1
@@ -347,17 +347,19 @@ def process_state(state, verbose, summary, settings):
 
 
 @click.command()
-@click.argument('state')
+@click.argument('state', default='*')
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False)
 def lint(state, verbose, summary):
-    # if not states:
-    #      states = [os.path.basename(d)
-    #                for d in glob.glob(os.path.join(get_data_dir(''), '*'))]
     with open(get_data_dir('state-settings.yml')) as f:
         settings = yaml.load(f)
-
-    process_state(state, verbose, summary, settings)
+    if state == '*':
+        states = [os.path.basename(d)
+                  for d in glob.glob(os.path.join(get_data_dir(''), '*/'))]
+        for state in states:
+            process_state(state, verbose, summary, settings)
+    else:
+        process_state(state, verbose, summary, settings)
 
 
 if __name__ == '__main__':
