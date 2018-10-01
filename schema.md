@@ -35,6 +35,12 @@ These sections can have a list of objects, each with the following fields availa
     * start_date: optional date name started being valid for this person
     * end_date: optional date name ceased to be valid for this person
 
+* social:
+    * twitter: username of official Twitter account
+    * youtube: username of official YouTube account
+    * instagram: username of official Instagram account
+    * facebook: username of official Facebook account
+
 * sources:
     * note: description of the usage of this source
     * url: URL used to collect information for this person **required**

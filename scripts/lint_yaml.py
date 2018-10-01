@@ -75,7 +75,13 @@ PERSON_FIELDS = {
         'note': [is_string],
         'url': [is_url, Required],
     },
-    'identifiers': {
+    'ids': {
+        'twitter': [is_social],
+        'youtube': [is_social],
+        'instagram': [is_social],
+        'facebook': [is_social],
+    },
+    'extra_identifiers': {
         'identifier': [is_string, Required],
         'scheme': [is_string, Required],
         'start_date': [is_fuzzy_date],
@@ -279,7 +285,7 @@ class Validator:
                 if key != 'note':
                     self.contact_counts[key] += 1
 
-        for id in person.get('identifiers', []):
+        for id in person.get('extra_identifiers', []):
             self.id_counts[id['scheme']] += 1
 
     def print_validation_report(self, verbose):
