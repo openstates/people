@@ -3,6 +3,7 @@ import re
 import os
 import yaml
 import glob
+import datetime
 import click
 from utils import get_data_dir
 from collections import defaultdict, Counter
@@ -159,8 +160,8 @@ def validate_obj(obj, schema, prefix=None):
 
 
 def role_is_active(role):
-    if role.get('end_date') is None:
-        return True
+    now = datetime.datetime.utcnow().date().strftime('%Y-%m-%d')
+    return role.get('end_date') is None or role.get('end_date') > now
 
 
 def validate_roles(person, roles_key):
@@ -183,6 +184,10 @@ def get_expected_districts(settings):
             expected[key] = {str(s): 1 for s in range(1, seats+1)}
         elif isinstance(seats, list):
             expected[key] = {s: 1 for s in seats}
+        elif isinstance(seats, dict):
+            expected[key] = seats
+        else:
+            raise ValueError(seats)
     return expected
 
 
@@ -265,7 +270,7 @@ class Validator:
         self.optional_fields.update(set(person.keys()) & self.OPTIONAL_FIELD_SET)
         self.extra_counts.update(person.get('extras', {}).keys())
 
-        for role in person['roles']:
+        for role in person.get('roles', []):
             if role_is_active(role):
                 chamber = role['chamber']
                 district = role['district']
@@ -285,6 +290,8 @@ class Validator:
                 if key != 'note':
                     self.contact_counts[key] += 1
 
+        for scheme in person.get('ids', {}):
+            self.id_counts[scheme] += 1
         for id in person.get('extra_identifiers', []):
             self.id_counts[id['scheme']] += 1
 
