@@ -3,7 +3,9 @@
 import glob
 import json
 import os
+import re
 import sys
+import uuid
 import yaml
 import yamlordereddictloader
 from collections import defaultdict, OrderedDict
@@ -37,7 +39,11 @@ def all_people(dirname):
 
 
 def filename_for_person(person):
-    return '{name}-{_id}.yml'.format(**person)
+    id = person['id']
+    name = person['name']
+    name = re.sub('\s+', '-', name)
+    name = re.sub('[^a-zA-Z-]', '', name)
+    return f'{name}-{id}.yml'
 
 
 def postprocess_link(link):
@@ -62,7 +68,7 @@ def postprocess_person(person):
     )
 
     result = OrderedDict(
-        id=person['_id'],
+        id=uuid.uuid4(),        # let's use uuid4 for these, override pupa's
         name=person['name'],
         party=[],
         roles=[],
@@ -113,8 +119,8 @@ def postprocess_person(person):
 def process_people(input_dir, output_dir):
     for person in all_people(input_dir):
 
-        filename = filename_for_person(person)
         person = postprocess_person(person)
+        filename = filename_for_person(person)
 
         with open(os.path.join(output_dir, filename), 'w') as f:
             yaml.dump(person, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
