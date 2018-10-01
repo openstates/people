@@ -8,9 +8,9 @@ from utils import get_data_dir
 from collections import defaultdict, Counter
 
 
-DATE_RE = re.compile('^\d{4}(-\d{2}(-\d{2}))$')
-PHONE_RE = re.compile('^\d{3}-\d{3}-\d{4}$')
-UUID_RE = re.compile('^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
+DATE_RE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
+PHONE_RE = re.compile(r'^(1-)?\d{3}-\d{3}-\d{4}$')
+UUID_RE = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
 
 
 class Missing:
@@ -31,6 +31,10 @@ def is_string(val):
 
 def is_url(val):
     return is_string(val) and val.startswith('http')
+
+
+def is_social(val):
+    return is_string(val) and not val.startswith(('http://', 'https://', '@'))
 
 
 def is_fuzzy_date(val):
