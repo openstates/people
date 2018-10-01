@@ -22,6 +22,11 @@ class Required:
     pass
 
 
+class NestedList:
+    def __init__(self, subschema):
+        self.subschema = subschema
+
+
 def is_dict(val):
     return isinstance(val, dict)
 
@@ -50,13 +55,18 @@ def is_uuid(val):
     return is_string(val) and UUID_RE.match(val)
 
 
-CONTACT_DETAILS = {
+CONTACT_DETAILS = NestedList({
     'note': [is_string, Required],
     'address': [is_string],
     'email': [is_string],
     'voice': [is_phone],
     'fax': [is_phone],
-}
+})
+
+URL_LIST = NestedList({
+    'note': [is_string],
+    'url': [is_url, Required],
+})
 
 
 PERSON_FIELDS = {
@@ -72,49 +82,43 @@ PERSON_FIELDS = {
     'death_date': [is_fuzzy_date],
     'image': [is_url],
     'contact_details': CONTACT_DETAILS,
-    'links': {
-        'note': [is_string],
-        'url': [is_url, Required],
-    },
+    'links': URL_LIST,
     'ids': {
         'twitter': [is_social],
         'youtube': [is_social],
         'instagram': [is_social],
         'facebook': [is_social],
     },
-    'extra_identifiers': {
+    'extra_identifiers': NestedList({
         'identifier': [is_string, Required],
         'scheme': [is_string, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
-    },
-    'other_names': {
+    }),
+    'other_names': NestedList({
         'name': [is_string, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
-    },
-    'sources': {
-        'note': [is_string],
-        'url': [is_url, Required],
-    },
-    'committees': {
+    }),
+    'sources': URL_LIST,
+    'committees': NestedList({
         'name': [is_string, Required],
         'post': [is_string],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
-    },
-    'party': {
+    }),
+    'party': NestedList({
         'name': [is_string, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
-    },
-    'roles': {
+    }),
+    'roles': NestedList({
         'chamber': [is_string, Required],
         'district': [is_string, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
         'contact_details': CONTACT_DETAILS,
-    },
+    }),
     'extras': [is_dict],
 }
 
@@ -131,7 +135,7 @@ def validate_obj(obj, schema, prefix=None):
         value = obj.get(field, Missing)
 
         if value is Missing:
-            if Required in validators:
+            if isinstance(validators, list) and Required in validators:
                 errors.append(f'{prefix_str}{field} missing')
             # error or not, don't run other validators against missing fields
             continue
@@ -146,9 +150,11 @@ def validate_obj(obj, schema, prefix=None):
                         f'{prefix_str}{field} failed validation {validator.__name__}: {value}'
                     )
         elif isinstance(validators, dict):
+            errors.extend(validate_obj(value, validators, [field]))
+        elif isinstance(validators, NestedList):
             # validate list elements against child schema
             for index, item in enumerate(value):
-                errors.extend(validate_obj(item, validators, [field, str(index)]))
+                errors.extend(validate_obj(item, validators.subschema, [field, str(index)]))
         else:
             raise Exception('invalid schema {}'.format(validators))
 

@@ -82,6 +82,21 @@ def test_validate_nested_list():
     assert 'links.0.url' in errs[0]
 
 
+def test_validate_nested_object():
+    example = {
+        'id': str(uuid.uuid4()),
+        'name': 'Anne A',
+        'ids': {
+            'twitter': '@bad-name',
+            'youtube': 'is-ok',
+        }
+    }
+
+    errs = validate_obj(example, PERSON_FIELDS)
+    assert len(errs) == 1
+    assert 'ids.twitter' in errs[0]
+
+
 def test_validate_extra_keys_not_present():
     example = {
         'id': str(uuid.uuid4()),
