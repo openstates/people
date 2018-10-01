@@ -9,6 +9,12 @@ The following fields are available:
 * birth_date: Birth date in YYYY-MM-DD format.
 * death_date: Death date in YYYY-MM-DD format.
 * image: URL to official photo.
+* ids:  nested dictionary of additional ids
+    * twitter: username of official Twitter account
+    * youtube: username of official YouTube account
+    * instagram: username of official Instagram account
+    * facebook: username of official Facebook account
+    * legacy_openstates: legacy Open States ID (e.g. NCL000123)
 
 ### List Fields
 
@@ -24,7 +30,7 @@ These sections can have a list of objects, each with the following fields availa
     * note: description of the purpose of this link
     * url: URL associated with legislator **required**
 
-* identifiers:
+* extra_identifiers:
     * scheme: origin of this identifier (e.g. "votesmart")        **required**
     * identifier: identifier used by the given service/scheme (e.g. 13823)    **required**
     * start_date: optional date identifier started being valid for this person
@@ -35,11 +41,6 @@ These sections can have a list of objects, each with the following fields availa
     * start_date: optional date name started being valid for this person
     * end_date: optional date name ceased to be valid for this person
 
-* social:
-    * twitter: username of official Twitter account
-    * youtube: username of official YouTube account
-    * instagram: username of official Instagram account
-    * facebook: username of official Facebook account
 
 * sources:
     * note: description of the usage of this source

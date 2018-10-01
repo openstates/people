@@ -12,6 +12,7 @@ from collections import defaultdict, Counter
 DATE_RE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
 PHONE_RE = re.compile(r'^(1-)?\d{3}-\d{3}-\d{4}$')
 UUID_RE = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
+LEGACY_OS_ID_RE = re.compile(r'[A-Z]{2}L\d{6}')
 
 
 class Missing:
@@ -55,6 +56,10 @@ def is_uuid(val):
     return is_string(val) and UUID_RE.match(val)
 
 
+def is_legacy_openstates(val):
+    return is_string(val) and LEGACY_OS_ID_RE.match(val)
+
+
 CONTACT_DETAILS = NestedList({
     'note': [is_string, Required],
     'address': [is_string],
@@ -88,6 +93,7 @@ PERSON_FIELDS = {
         'youtube': [is_social],
         'instagram': [is_social],
         'facebook': [is_social],
+        'legacy_openstates': [is_legacy_openstates],
     },
     'extra_identifiers': NestedList({
         'identifier': [is_string, Required],
