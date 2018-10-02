@@ -1,7 +1,7 @@
 language: python
 sudo: false
 python: 3.6
-install: pip install flake8
+install: pip install -r scripts/requirements.txt
 notifications:
     email:
         - james@openstates.org
@@ -9,8 +9,11 @@ jobs:
   include:
     - stage: Check Python
       script: flake8 scripts
+      name: "Flake8 Python"
     - script: pytest
       env:
         - PYTHONPATH=scripts
+      name: "Test Python"
     - stage: Check YAML
       script: ./scripts/check_yaml.py
+      name: "Check YAML"
