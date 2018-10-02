@@ -7,13 +7,12 @@ notifications:
         - james@openstates.org
 jobs:
   include:
-    - stage: Check Python
+    - stage: test
       script: flake8 scripts
       name: "Flake8 Python"
     - script: pytest
       env:
         - PYTHONPATH=scripts
       name: "Test Python"
-    - stage: Check YAML
-      script: ./scripts/check_yaml.py
+    - script: ./scripts/check_yaml.py
       name: "Check YAML"
