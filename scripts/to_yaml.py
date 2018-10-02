@@ -68,7 +68,7 @@ def postprocess_person(person):
     )
 
     result = OrderedDict(
-        id=uuid.uuid4(),        # let's use uuid4 for these, override pupa's
+        id=str(uuid.uuid4()),        # let's use uuid4 for these, override pupa's
         name=person['name'],
         party=[],
         roles=[],
