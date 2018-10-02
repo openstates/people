@@ -57,13 +57,13 @@ def postprocess_person(person):
         'image',
         'gender',
         'biography',
+        'given_name',
+        'family_name',
         'birth_date',
         'death_date',
         'national_identity',
         'summary',
-        'extras',
         # maybe post-process these?
-        'identifiers',
         'other_names',
     )
 
@@ -112,6 +112,16 @@ def postprocess_person(person):
     for key in optional_keys:
         if person.get(key):
             result[key] = person[key]
+
+    # promote some extras where appropriate
+    for key in person.get('extras', {}).keys():
+        if key in optional_keys:
+            result[key] = person['extras'].pop(key)
+    if person.get('extras'):
+        result['extras'] = person['extras']
+
+    if person.get('identifiers'):
+        result['other_identifiers'] = person['identifiers']
 
     return result
 
