@@ -209,7 +209,7 @@ def compare_districts(expected, actual):
 
     if expected.keys() != actual.keys():
         errors.append(f'expected districts for {expected.keys()}, got {actual.keys()}')
-        return errors
+        return errors, warnings
 
     for chamber in expected:
         expected_districts = set(expected[chamber].keys())
@@ -382,10 +382,11 @@ def process_state(state, verbose, summary, settings):
 def lint(state, verbose, summary):
     with open(get_data_dir('state-settings.yml')) as f:
         settings = yaml.load(f)
+
     if state == '*':
-        states = [os.path.basename(d)
-                  for d in glob.glob(os.path.join(get_data_dir(''), '*/'))]
+        states = [k for k in settings.keys() if k != 'http_whitelist' and k in os.listdir('test')]
         for state in states:
+            click.secho('==== {} ===='.format(state), bold=True)
             process_state(state, verbose, summary, settings)
     else:
         process_state(state, verbose, summary, settings)
