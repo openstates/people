@@ -65,6 +65,7 @@ All include optional start_date & end_date fields that can be used to scope a pe
 * roles:
     * chamber: upper|lower|legislature    **required**
     * district: name/number of district   **required**
+    * jurisdiction: ocd-jurisdiction identifier **required**
     * start_date
     * end_date
     * contact_details:    It is possible to list any role-specific contact details here and they will be considered inactive when the role ends.

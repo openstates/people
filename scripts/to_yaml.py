@@ -52,7 +52,7 @@ def postprocess_link(link):
     return link
 
 
-def postprocess_person(person):
+def postprocess_person(person, jurisdiction_id):
     optional_keys = (
         'image',
         'gender',
@@ -96,7 +96,8 @@ def postprocess_person(person):
             if org['classification'] in ('upper', 'lower'):
                 post = json.loads(membership['post_id'][1:])['label']
                 result['roles'] = [
-                    {'chamber': org['classification'], 'district': post}
+                    {'chamber': org['classification'], 'district': post,
+                     'jurisdiction': jurisdiction_id}
                 ]
             elif org['classification'] == 'party':
                 result['party'] = [
@@ -126,10 +127,10 @@ def postprocess_person(person):
     return result
 
 
-def process_people(input_dir, output_dir):
+def process_people(input_dir, output_dir, jurisdiction_id):
     for person in all_people(input_dir):
 
-        person = postprocess_person(person)
+        person = postprocess_person(person, jurisdiction_id)
         filename = filename_for_person(person)
 
         with open(os.path.join(output_dir, filename), 'w') as f:
@@ -148,9 +149,16 @@ if __name__ == '__main__':
 
     output_dir = get_data_dir(abbr)
 
+    if abbr == 'dc':
+        jurisdiction_id = 'ocd-jurisdiction/country:us/district:dc'
+    elif abbr in ('vi', 'pr'):
+        jurisdiction_id = f'ocd-jurisdiction/country:us/territory:{abbr}'
+    else:
+        jurisdiction_id = f'ocd-jurisdiction/country:us/state:{abbr}'
+
     try:
         os.makedirs(output_dir)
     except FileExistsError:
         for file in glob.glob(os.path.join(output_dir, '*.yml')):
             os.remove(file)
-    process_people(input_dir, output_dir)
+    process_people(input_dir, output_dir, jurisdiction_id)

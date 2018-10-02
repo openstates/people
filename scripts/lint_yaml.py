@@ -56,6 +56,10 @@ def is_uuid(val):
     return is_string(val) and UUID_RE.match(val)
 
 
+def is_ocd_jurisdiction(val):
+    return is_string(val) and val.startswith('ocd-jurisdiction/')
+
+
 def is_legacy_openstates(val):
     return is_string(val) and LEGACY_OS_ID_RE.match(val)
 
@@ -121,6 +125,7 @@ PERSON_FIELDS = {
     'roles': NestedList({
         'chamber': [is_string, Required],
         'district': [is_string, Required],
+        'jurisdiction': [is_ocd_jurisdiction, Required],
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
         'contact_details': CONTACT_DETAILS,
