@@ -1,12 +1,8 @@
-import sys
 import pytest
 import uuid
-
-sys.path.append('.')
-
 from lint_yaml import (is_url, is_social, is_fuzzy_date, is_phone, is_uuid, is_legacy_openstates,
                        validate_obj, PERSON_FIELDS, role_is_active, validate_roles,
-                       get_expected_districts, compare_districts, Validator)
+                       get_expected_districts, compare_districts, Validator) # noqa
 
 
 def test_is_url():
@@ -37,6 +33,7 @@ def test_is_phone():
 def test_is_uuid():
     assert is_uuid('abcdef98-0123-7777-8888-1234567890ab')
     assert not is_uuid('abcdef980123777788881234567890ab')
+
 
 def test_is_legacy_openstates():
     assert is_legacy_openstates('AKL000001')
@@ -153,7 +150,7 @@ def test_get_expected_districts():
                                        "lower_seats": ["A", "B", "C"],
                                        "legislature_seats": {"At-Large": 3}})
     assert expected['upper'] == {"1": 1, "2": 1, "3": 1}
-    assert expected['lower'] == {"A": 1, "B": 1, "C": 1} 
+    assert expected['lower'] == {"A": 1, "B": 1, "C": 1}
     assert expected['legislature'] == {"At-Large": 3}
 
 

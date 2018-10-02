@@ -255,9 +255,8 @@ class Validator:
         self.summarize_person(person)
 
     def check_https_url(self, url):
-        if (url and url.startswith('http://')
-            and not url.startswith(self.http_whitelist)):
-                return False
+        if url and url.startswith('http://') and not url.startswith(self.http_whitelist):
+            return False
         return True
 
     def check_https(self, person):
@@ -317,7 +316,7 @@ class Validator:
                 for warning in warnings:
                     click.secho(' ' + warning, fg='yellow')
             if not errors and verbose > 0:
-                click.secho(print_filename, 'OK!', fg='green')
+                click.secho(fn, 'OK!', fg='green')
 
         errors, warnings = compare_districts(self.expected, self.chamber_districts)
         for err in errors:
@@ -343,7 +342,7 @@ class Validator:
 
         click.secho('Committees', bold=True)
         for com, count in sorted(self.committees.items(),
-                                 key=lambda x:x[1], reverse=True):
+                                 key=lambda x: x[1], reverse=True):
             click.secho(f'{count:4d} {com} ')
 
         for name, collection in {'Contact Info': self.contact_counts,
