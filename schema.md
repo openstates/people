@@ -1,7 +1,7 @@
 The following fields are available:
 
-* id: UUID representing this person for this data set.
-* name: Full Name.
+* id: UUID representing this person for this data set.  **required**
+* name: Full Name.  **required**
 * given_name: First name.
 * family_name: Last name.
 * gender: Male/Female/Other
@@ -26,11 +26,12 @@ These sections can have a list of objects, each with the following fields availa
     * email: Email address.
     * voice: Phone number used for voice calls.
     * fax: Fax number.
+
 * links:
     * note: description of the purpose of this link
     * url: URL associated with legislator **required**
 
-* extra_identifiers:
+* other_identifiers:
     * scheme: origin of this identifier (e.g. "votesmart")        **required**
     * identifier: identifier used by the given service/scheme (e.g. 13823)    **required**
     * start_date: optional date identifier started being valid for this person
@@ -40,7 +41,6 @@ These sections can have a list of objects, each with the following fields availa
     * name: alternate name that has been seen for this person **required**
     * start_date: optional date name started being valid for this person
     * end_date: optional date name ceased to be valid for this person
-
 
 * sources:
     * note: description of the usage of this source

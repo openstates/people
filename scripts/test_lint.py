@@ -196,14 +196,14 @@ def test_validator_summary():
          'party': [{'name': 'Democratic'}, {'name': 'Working Families'}],
          'extras': {'religion': 'Zoroastrian'},
          'contact_details': [{'fax': '123-456-7890'}],
-         'extra_identifiers': [{'scheme': 'fake', 'identifier': 'abc'}],
+         'other_identifiers': [{'scheme': 'fake', 'identifier': 'abc'}],
          'ids': {'twitter': 'fake'},
          },
         {'gender': 'M', 'image': 'https://example.com/image3',
          'party': [{'name': 'Republican'}],
          'committees': [{'name': 'Finance'}],
          'contact_details': [{'phone': '123-456-7890'}],
-         'extra_identifiers': [{'scheme': 'fake', 'identifier': '123'}],
+         'other_identifiers': [{'scheme': 'fake', 'identifier': '123'}],
          },
     ]
 

@@ -95,7 +95,7 @@ PERSON_FIELDS = {
         'facebook': [is_social],
         'legacy_openstates': [is_legacy_openstates],
     },
-    'extra_identifiers': NestedList({
+    'other_identifiers': NestedList({
         'identifier': [is_string, Required],
         'scheme': [is_string, Required],
         'start_date': [is_fuzzy_date],
@@ -304,7 +304,7 @@ class Validator:
 
         for scheme in person.get('ids', {}):
             self.id_counts[scheme] += 1
-        for id in person.get('extra_identifiers', []):
+        for id in person.get('other_identifiers', []):
             self.id_counts[id['scheme']] += 1
 
     def print_validation_report(self, verbose):
