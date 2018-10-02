@@ -27,6 +27,7 @@ def test_is_fuzzy_date():
 def test_is_phone():
     assert is_phone('123-346-7990')
     assert is_phone('1-123-346-7990')
+    assert is_phone('1-123-346-7990 ext. 123')
     assert not is_phone('(123) 346-7990')
 
 

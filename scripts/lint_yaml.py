@@ -10,7 +10,7 @@ from collections import defaultdict, Counter
 
 
 DATE_RE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
-PHONE_RE = re.compile(r'^(1-)?\d{3}-\d{3}-\d{4}$')
+PHONE_RE = re.compile(r'^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$')
 UUID_RE = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
 LEGACY_OS_ID_RE = re.compile(r'[A-Z]{2}L\d{6}')
 
