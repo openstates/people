@@ -139,14 +139,14 @@ def process_people(input_dir, output_dir):
 if __name__ == '__main__':
     input_dir = sys.argv[1]
 
-    # state is last piece of directory name
-    state = None
+    # abbr is last piece of directory name
+    abbr = None
     for piece in input_dir.split('/')[::-1]:
         if piece:
-            state = piece
+            abbr = piece
             break
 
-    output_dir = get_data_dir(state)
+    output_dir = get_data_dir(abbr)
 
     try:
         os.makedirs(output_dir)

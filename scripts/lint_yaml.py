@@ -233,9 +233,9 @@ class Validator:
                               'links', 'other_names', 'sources',
                               ))
 
-    def __init__(self, settings, state):
+    def __init__(self, settings, abbr):
         self.http_whitelist = tuple(settings['http_whitelist'])
-        self.expected = get_expected_districts(settings[state])
+        self.expected = get_expected_districts(settings[abbr])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
         self.count = 0
@@ -358,9 +358,9 @@ class Validator:
                 click.secho(name + ' - none', bold=True)
 
 
-def process_state(state, verbose, summary, settings):
-    filenames = glob.glob(os.path.join(get_data_dir(state), '*.yml'))
-    validator = Validator(settings, state)
+def process_dir(abbr, verbose, summary, settings):
+    filenames = glob.glob(os.path.join(get_data_dir(abbr), '*.yml'))
+    validator = Validator(settings, abbr)
 
     for filename in filenames:
         print_filename = os.path.basename(filename)
@@ -376,20 +376,20 @@ def process_state(state, verbose, summary, settings):
 
 
 @click.command()
-@click.argument('state', default='*')
+@click.argument('abbr', default='*')
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False)
-def lint(state, verbose, summary):
-    with open(get_data_dir('state-settings.yml')) as f:
+def lint(abbr, verbose, summary):
+    with open(get_data_dir('settings.yml')) as f:
         settings = yaml.load(f)
 
-    if state == '*':
-        states = [k for k in settings.keys() if k != 'http_whitelist' and k in os.listdir('test')]
-        for state in states:
-            click.secho('==== {} ===='.format(state), bold=True)
-            process_state(state, verbose, summary, settings)
+    if abbr == '*':
+        all = [k for k in settings.keys() if k != 'http_whitelist' and k in os.listdir('test')]
+        for abbr in all:
+            click.secho('==== {} ===='.format(abbr), bold=True)
+            process_dir(abbr, verbose, summary, settings)
     else:
-        process_state(state, verbose, summary, settings)
+        process_dir(abbr, verbose, summary, settings)
 
 
 if __name__ == '__main__':

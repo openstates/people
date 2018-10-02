@@ -13,5 +13,5 @@ def reformat_phone_number(phone):
         return phone
 
 
-def get_data_dir(state):
-    return os.path.join(os.path.dirname(__file__), '../test/', state)
+def get_data_dir(abbr):
+    return os.path.join(os.path.dirname(__file__), '../test/', abbr)
