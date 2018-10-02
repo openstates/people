@@ -251,7 +251,8 @@ class Validator:
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         self.errors[filename].extend(validate_roles(person, 'roles'))
         self.errors[filename].extend(validate_roles(person, 'party'))
-        self.warnings[filename] = self.check_https(person)
+        # TODO: this was too ambitious, disabling this for now
+        # self.warnings[filename] = self.check_https(person)
         self.summarize_person(person)
 
     def check_https_url(self, url):
