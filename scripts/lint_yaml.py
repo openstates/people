@@ -414,7 +414,8 @@ def process_dir(abbr, verbose, summary, settings):
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False)
 def lint(abbr, verbose, summary):
-    with open(get_data_dir('settings.yml')) as f:
+    settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
+    with open(settings_file) as f:
         settings = yaml.load(f)
 
     if abbr == '*':
