@@ -9,7 +9,7 @@ import uuid
 import yaml
 import yamlordereddictloader
 from collections import defaultdict, OrderedDict
-from utils import reformat_phone_number, get_data_dir
+from utils import reformat_phone_number, reformat_address, get_data_dir
 
 # set up defaultdict representation
 from yaml.representer import Representer
@@ -84,6 +84,8 @@ def postprocess_person(person, jurisdiction_id):
         value = detail['value']
         if detail['type'] in ('voice', 'fax'):
             value = reformat_phone_number(value)
+        elif detail['type'] == 'address':
+            value = reformat_address(value)
         contact_details[detail['note']][detail['type']] = value
 
     result['contact_details'] = [{'note': key, **val} for key, val in contact_details.items()]

@@ -1,5 +1,5 @@
 import pytest
-from utils import reformat_phone_number
+from utils import reformat_phone_number, reformat_address
 
 
 @pytest.mark.parametrize("input,output", [
@@ -15,3 +15,12 @@ from utils import reformat_phone_number
 ])
 def test_reformat_phone(input, output):
     assert reformat_phone_number(input) == output
+
+
+@pytest.mark.parametrize("input,output", [
+    ('123 Maple Lane\nRaleigh, NC 27511', '123 Maple Lane;Raleigh, NC 27511'),
+    ('123 Maple Lane   \n   Raleigh, NC    27511', '123 Maple Lane;Raleigh, NC 27511'),
+    ('123 Maple Lane\n \nRaleigh, NC 27511', '123 Maple Lane;Raleigh, NC 27511'),
+])
+def test_reformat_address(input, output):
+    assert reformat_address(input) == output

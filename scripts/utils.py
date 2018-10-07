@@ -29,5 +29,9 @@ def reformat_phone_number(phone):
         return phone
 
 
+def reformat_address(address):
+    return re.sub(r'\s+', ' ', re.sub(r'\s*\n\s*', ';', address))
+
+
 def get_data_dir(abbr):
     return os.path.join(os.path.dirname(__file__), '../test/', abbr)
