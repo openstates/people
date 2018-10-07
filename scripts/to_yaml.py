@@ -117,11 +117,12 @@ def postprocess_person(person, jurisdiction_id):
             result[key] = person[key]
 
     # promote some extras where appropriate
+    extras = person.get('extras', {}).copy()
     for key in person.get('extras', {}).keys():
         if key in optional_keys:
-            result[key] = person['extras'].pop(key)
-    if person.get('extras'):
-        result['extras'] = person['extras']
+            result[key] = extras.pop(key)
+    if extras:
+        result['extras'] = extras
 
     if person.get('identifiers'):
         result['other_identifiers'] = person['identifiers']

@@ -3,6 +3,7 @@ from utils import reformat_phone_number, reformat_address
 
 
 @pytest.mark.parametrize("input,output", [
+    ('1234567890', '123-456-7890'),
     ('123-456-7890', '123-456-7890'),
     ('1-123-456-7890', '1-123-456-7890'),
     ('+1-123-456-7890', '1-123-456-7890'),
