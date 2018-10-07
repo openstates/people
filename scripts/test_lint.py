@@ -85,6 +85,29 @@ def test_validate_nested_list():
     assert 'links.0.url' in errs[0]
 
 
+def test_validate_nested_role_list():
+    example = {
+        'id': str(uuid.uuid4()),
+        'name': 'Anne A',
+        'roles': [
+            {'type': 'upper', 'district': '4', 'end_date': '2010',
+             'jurisdiction': 'ocd-jurisdiction/country:us/state:nc'},
+            {'type': 'gov', 'start_date': '2010',
+             'jurisdiction': 'ocd-jurisdiction/country:us/state:nc'},
+            # bad roles
+            {'type': 'upper',
+             'jurisdiction': 'ocd-jurisdiction/country:us/state:nc'},
+            {'type': 'gov', 'district': '4',
+             'jurisdiction': 'ocd-jurisdiction/country:us/state:nc'},
+        ]
+    }
+
+    errs = validate_obj(example, PERSON_FIELDS)
+    assert len(errs) == 2
+    assert 'roles.2' in errs[0]
+    assert 'roles.3' in errs[1]
+
+
 def test_validate_nested_object():
     example = {
         'id': str(uuid.uuid4()),

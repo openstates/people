@@ -64,6 +64,12 @@ def is_legacy_openstates(val):
     return is_string(val) and LEGACY_OS_ID_RE.match(val)
 
 
+URL_LIST = NestedList({
+    'note': [is_string],
+    'url': [is_url, Required],
+})
+
+
 CONTACT_DETAILS = NestedList({
     'note': [is_string, Required],
     'address': [is_string],
@@ -72,10 +78,34 @@ CONTACT_DETAILS = NestedList({
     'fax': [is_phone],
 })
 
-URL_LIST = NestedList({
-    'note': [is_string],
-    'url': [is_url, Required],
-})
+
+LEGISLATIVE_ROLE_FIELDS = {
+    'type': [is_string, Required],
+    'district': [is_string, Required],
+    'jurisdiction': [is_ocd_jurisdiction, Required],
+    'start_date': [is_fuzzy_date],
+    'end_date': [is_fuzzy_date],
+    'contact_details': CONTACT_DETAILS,
+}
+
+
+EXECUTIVE_ROLE_FIELDS = {
+    'type': [is_string, Required],
+    'jurisdiction': [is_ocd_jurisdiction, Required],
+    'start_date': [is_fuzzy_date],
+    'end_date': [is_fuzzy_date],
+    'contact_details': CONTACT_DETAILS,
+}
+
+
+def is_role(role):
+    role_type = role.get('type')
+    if role_type in ('upper', 'lower', 'legislature'):
+        return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
+    elif role_type in ('gov', 'lt_gov'):
+        return validate_obj(role, EXECUTIVE_ROLE_FIELDS)
+    else:
+        return ['invalid type']
 
 
 PERSON_FIELDS = {
@@ -122,14 +152,7 @@ PERSON_FIELDS = {
         'start_date': [is_fuzzy_date],
         'end_date': [is_fuzzy_date],
     }),
-    'roles': NestedList({
-        'chamber': [is_string, Required],
-        'district': [is_string, Required],
-        'jurisdiction': [is_ocd_jurisdiction, Required],
-        'start_date': [is_fuzzy_date],
-        'end_date': [is_fuzzy_date],
-        'contact_details': CONTACT_DETAILS,
-    }),
+    'roles': NestedList(is_role),
     'extras': [is_dict],
 }
 
@@ -163,9 +186,15 @@ def validate_obj(obj, schema, prefix=None):
         elif isinstance(validators, dict):
             errors.extend(validate_obj(value, validators, [field]))
         elif isinstance(validators, NestedList):
-            # validate list elements against child schema
-            for index, item in enumerate(value):
-                errors.extend(validate_obj(item, validators.subschema, [field, str(index)]))
+            if isinstance(validators.subschema, dict):
+                # validate list elements against child schema
+                for index, item in enumerate(value):
+                    errors.extend(validate_obj(item, validators.subschema, [field, str(index)]))
+            else:
+                # subschema can also be a validation function
+                for index, item in enumerate(value):
+                    errors.extend(['.'.join([field, str(index)]) + ': ' + e
+                                   for e in validators.subschema(item)])
         else:
             raise Exception('invalid schema {}'.format(validators))
 
@@ -250,7 +279,7 @@ class Validator:
         self.id_counts = Counter()
         self.optional_fields = Counter()
         self.extra_counts = Counter()
-        self.chamber_districts = defaultdict(Counter)
+        self.district_counts = defaultdict(Counter)
 
     def validate_person(self, person, filename):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
@@ -280,7 +309,7 @@ class Validator:
         return warnings
 
     def summarize_person(self, person):
-        chamber = None
+        role_type = None
         district = None
 
         self.count += 1
@@ -289,10 +318,10 @@ class Validator:
 
         for role in person.get('roles', []):
             if role_is_active(role):
-                chamber = role['chamber']
-                district = role['district']
+                role_type = role['type']
+                district = role.get('district')
                 break
-        self.chamber_districts[chamber][district] += 1
+        self.district_counts[role_type][district] += 1
 
         for role in person.get('party', []):
             if role_is_active(role):
@@ -324,7 +353,7 @@ class Validator:
             if not errors and verbose > 0:
                 click.secho(fn, 'OK!', fg='green')
 
-        errors, warnings = compare_districts(self.expected, self.chamber_districts)
+        errors, warnings = compare_districts(self.expected, self.district_counts)
         for err in errors:
             click.secho(err, fg='red')
         for warning in warnings:
@@ -332,9 +361,9 @@ class Validator:
 
     def print_summary(self):
         click.secho(f'processed {self.count} files', bold=True)
-        upper = sum(self.chamber_districts['upper'].values())
-        lower = sum(self.chamber_districts['lower'].values())
-        click.secho(f'{upper:4d} upper\n{lower:4d} lower')
+        for role_type in self.district_counts:
+            count = sum(self.district_counts[role_type].values())
+            click.secho(f'{count:4d} {role_type}')
 
         click.secho('Parties', bold=True)
         for party, count in self.parties.items():
