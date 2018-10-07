@@ -33,7 +33,7 @@ def is_dict(val):
 
 
 def is_string(val):
-    return isinstance(val, str)
+    return isinstance(val, str) and '\n' not in val
 
 
 def is_url(val):
