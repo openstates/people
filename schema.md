@@ -64,7 +64,7 @@ All include optional start_date & end_date fields that can be used to scope a pe
 
 * roles:
     * type: upper|lower|legislature|gov|lt_gov    **required**
-    * district: name/number of district   **required**
+    * district: name/number of district   **required if not gov/lt_gov**
     * jurisdiction: ocd-jurisdiction identifier **required**
     * start_date
     * end_date
