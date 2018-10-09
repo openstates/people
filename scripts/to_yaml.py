@@ -9,7 +9,7 @@ import uuid
 import yaml
 import yamlordereddictloader
 from collections import defaultdict, OrderedDict
-from utils import reformat_phone_number, reformat_address, get_data_dir
+from utils import reformat_phone_number, reformat_address, get_data_dir, get_jurisdiction_id
 
 # set up defaultdict representation
 from yaml.representer import Representer
@@ -151,6 +151,7 @@ if __name__ == '__main__':
             break
 
     output_dir = get_data_dir(abbr)
+    jurisdiction_id = get_jurisdiction_id(abbr)
 
     if abbr == 'dc':
         jurisdiction_id = 'ocd-jurisdiction/country:us/district:dc/government'

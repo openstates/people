@@ -6,7 +6,10 @@ import django
 from django import conf
 from django.db import transaction
 import click
-from utils import get_data_dir
+from utils import get_data_dir, get_jurisdiction_id
+
+class CancelTransaction(Exception):
+    pass
 
 
 def update_subobjects(person, fieldname, objects):
@@ -127,23 +130,46 @@ def load_yaml(data):
     return created, updated
 
 
-def load_directory(dirname):
+def load_directory(dirname, jurisdiction_id, purge):
     files = glob.glob(os.path.join(dirname, './*.yml'))
     ids = set()
-    # Person.objects.filter(memberships__organization__jurisdiction_id=jurisdiction_id
-    #                       ).values_list('id', flat=True)
 
-    with transaction.atomic():
-        for filename in files:
-            with open(filename) as f:
-                data = yaml.load(f)
-                ids.add(data['id'])
-                created, updated = load_yaml(data)
+    from opencivicdata.core.models import Person
+    existing_ids = set(Person.objects.filter(
+        memberships__organization__jurisdiction_id=jurisdiction_id
+    ).values_list('id', flat=True))
 
-            if created:
-                click.secho(f'created legislator from {filename}')
-            elif updated:
-                click.secho(f'updated legislator from {filename}')
+    try:
+        with transaction.atomic():
+            for filename in files:
+                with open(filename) as f:
+                    data = yaml.load(f)
+                    ids.add(data['id'])
+                    created, updated = load_yaml(data)
+
+                if created:
+                    click.secho(f'created legislator from {filename}')
+                elif updated:
+                    click.secho(f'updated legislator from {filename}')
+
+            missing_ids = existing_ids - ids
+            if missing_ids and not purge:
+                click.secho(f'{len(missing_ids)} went missing, run with --purge to remove',
+                            fg='red')
+                for id in missing_ids:
+                    click.secho(f'  {id}')
+                raise CancelTransaction()
+            elif missing_ids and purge:
+                click.secho(f'{len(missing_ids)} people purged', fg='yellow')
+                Person.objects.filter(id__in=missing_ids).delete()
+
+            # TODO: check new_ids?
+            # new_ids = ids - existing_ids
+
+    except CancelTransaction:
+        pass
+
+
 
 
 def init_django():
@@ -174,11 +200,12 @@ def init_django():
 @click.argument('abbr', default='*')
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False)
-@click.option('--safe/--no-safe', default=True)
-def to_database(abbr, verbose, summary, safe):
+@click.option('--purge/--no-purge', default=False)
+def to_database(abbr, verbose, summary, purge):
     init_django()
     directory = get_data_dir(abbr)
-    load_directory(directory)
+    jurisdiction_id = get_jurisdiction_id(abbr)
+    load_directory(directory, jurisdiction_id, purge)
 
 
 if __name__ == '__main__':

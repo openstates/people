@@ -34,3 +34,12 @@ def reformat_address(address):
 
 def get_data_dir(abbr):
     return os.path.join(os.path.dirname(__file__), '../test/', abbr)
+
+
+def get_jurisdiction_id(abbr):
+    if abbr == 'dc':
+        return 'ocd-jurisdiction/country:us/district:dc/government'
+    elif abbr in ('vi', 'pr'):
+        return f'ocd-jurisdiction/country:us/territory:{abbr}/government'
+    else:
+        return f'ocd-jurisdiction/country:us/state:{abbr}/government'
