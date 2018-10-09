@@ -153,11 +153,11 @@ if __name__ == '__main__':
     output_dir = get_data_dir(abbr)
 
     if abbr == 'dc':
-        jurisdiction_id = 'ocd-jurisdiction/country:us/district:dc'
+        jurisdiction_id = 'ocd-jurisdiction/country:us/district:dc/government'
     elif abbr in ('vi', 'pr'):
-        jurisdiction_id = f'ocd-jurisdiction/country:us/territory:{abbr}'
+        jurisdiction_id = f'ocd-jurisdiction/country:us/territory:{abbr}/government'
     else:
-        jurisdiction_id = f'ocd-jurisdiction/country:us/state:{abbr}'
+        jurisdiction_id = f'ocd-jurisdiction/country:us/state:{abbr}/government'
 
     try:
         os.makedirs(output_dir)
