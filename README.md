@@ -36,3 +36,7 @@ Convert a pupa scrape directory to YAML.  (currently will wipe all data from des
 ```./scripts/lint_yaml.py <files>```
 
 Check status of YAML files.
+
+```./scripts/to_database.py <files>```
+
+Import YAML files to DB.
