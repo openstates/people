@@ -10,7 +10,7 @@ jobs:
     - stage: test
       script: flake8 scripts
       name: "Flake8 Python"
-    - script: pytest
+    - script: ./scripts/run_tests.sh
       env:
         - PYTHONPATH=scripts
       name: "Test Python"
