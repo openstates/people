@@ -4,6 +4,7 @@ import glob
 import yaml
 import django
 from django import conf
+from django.db import transaction
 import click
 from utils import get_data_dir
 
@@ -39,7 +40,7 @@ def update_subobjects(person, fieldname, objects):
 
 def load_yaml(data):
     # import has to be here so that Django is set up
-    from opencivicdata.core.models import Person, Organization
+    from opencivicdata.core.models import Person, Organization, Post
 
     created = False
     updated = False
@@ -94,21 +95,33 @@ def load_yaml(data):
     #                         'start_date': party.get('start_date', ''),
     #                         'end_date': party.get('end_date', '')})
     for party in data.get('party', []):
-        org = Organization.objects.get(classification='party', name=party['name'])
+        try:
+            org = Organization.objects.get(classification='party', name=party['name'])
+        except Organization.DoesNotExist:
+            click.secho(f"no such party {party['name']}", fg='red')
+            raise
         memberships.append({'organization': org,
                             'start_date': party.get('start_date', ''),
                             'end_date': party.get('end_date', '')})
     for role in data.get('roles', []):
         if role['type'] in ('upper', 'lower', 'legislature'):
-            org = Organization.objects.get(classification=role['type'],
-                                           jurisdiction_id=role['jurisdiction'])
-            post = org.posts.get(label=role['district'])
+            try:
+                org = Organization.objects.get(classification=role['type'],
+                                               jurisdiction_id=role['jurisdiction'])
+                post = org.posts.get(label=role['district'])
+            except Organization.DoesNotExist:
+                click.secho(f"no such organization {role}", fg='red')
+                raise
+            except Post.DoesNotExist:
+                click.secho(f"no such post {role}", fg='red')
+                raise
         else:
             raise ValueError('unsupported role type')
         memberships.append({'organization': org,
                             'post': post,
                             'start_date': role.get('start_date', ''),
                             'end_date': role.get('end_date', '')})
+
     updated |= update_subobjects(person, 'memberships', memberships)
 
     return created, updated
@@ -116,29 +129,27 @@ def load_yaml(data):
 
 def load_directory(dirname):
     files = glob.glob(os.path.join(dirname, './*.yml'))
-    for filename in files:
-        with open(filename) as f:
-            data = yaml.load(f)
-            created, updated = load_yaml(data)
-        if created:
-            print('created legislator from', filename)
-        elif updated:
-            print('updated legislator from', filename)
+    ids = set()
+    # Person.objects.filter(memberships__organization__jurisdiction_id=jurisdiction_id
+    #                       ).values_list('id', flat=True)
 
+    with transaction.atomic():
+        for filename in files:
+            with open(filename) as f:
+                data = yaml.load(f)
+                ids.add(data['id'])
+                created, updated = load_yaml(data)
 
-@click.command()
-@click.argument('abbr', default='*')
-@click.option('-v', '--verbose', count=True)
-@click.option('--summary/--no-summary', default=False)
-def to_database(abbr, verbose, summary):
-    directory = get_data_dir(abbr)
-    load_directory(directory)
+            if created:
+                click.secho(f'created legislator from {filename}')
+            elif updated:
+                click.secho(f'updated legislator from {filename}')
 
 
 def init_django():
     conf.settings.configure(
         conf.global_settings,
-        SECRET_KEY='test',
+        SECRET_KEY='not-important',
         DEBUG=False,
         INSTALLED_APPS=(
              'django.contrib.contenttypes',
@@ -148,9 +159,9 @@ def init_django():
         DATABASES={
             'default': {
                 'ENGINE': 'django.contrib.gis.db.backends.postgis',
-                'NAME': 'test',
-                'USER': 'test',
-                'PASSWORD': 'test',
+                'NAME': os.environ['OCD_DATABASE_NAME'],
+                'USER': os.environ['OCD_DATABASE_USER'],
+                'PASSWORD': os.environ['OCD_DATABASE_PASSWORD'],
                 'HOST': 'localhost',
             }
         },
@@ -159,6 +170,16 @@ def init_django():
     django.setup()
 
 
-if __name__ == '__main__':
+@click.command()
+@click.argument('abbr', default='*')
+@click.option('-v', '--verbose', count=True)
+@click.option('--summary/--no-summary', default=False)
+@click.option('--safe/--no-safe', default=True)
+def to_database(abbr, verbose, summary, safe):
     init_django()
+    directory = get_data_dir(abbr)
+    load_directory(directory)
+
+
+if __name__ == '__main__':
     to_database()
