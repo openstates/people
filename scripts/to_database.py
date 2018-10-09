@@ -3,6 +3,7 @@ import os
 import glob
 import yaml
 import django
+from django import conf
 import click
 from utils import get_data_dir
 
@@ -134,9 +135,30 @@ def to_database(abbr, verbose, summary):
     load_directory(directory)
 
 
-if __name__ == '__main__':
-    # configure Django before model imports
-    if os.environ.get("DJANGO_SETTINGS_MODULE") is None:
-        os.environ['DJANGO_SETTINGS_MODULE'] = 'pupa.settings'
+def init_django():
+    conf.settings.configure(
+        conf.global_settings,
+        SECRET_KEY='test',
+        DEBUG=False,
+        INSTALLED_APPS=(
+             'django.contrib.contenttypes',
+             'opencivicdata.core.apps.BaseConfig',
+             'opencivicdata.legislative.apps.BaseConfig'
+        ),
+        DATABASES={
+            'default': {
+                'ENGINE': 'django.contrib.gis.db.backends.postgis',
+                'NAME': 'test',
+                'USER': 'test',
+                'PASSWORD': 'test',
+                'HOST': 'localhost',
+            }
+        },
+        MIDDLEWARE_CLASSES=(),
+    )
     django.setup()
+
+
+if __name__ == '__main__':
+    init_django()
     to_database()
