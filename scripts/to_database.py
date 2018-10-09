@@ -130,14 +130,19 @@ def load_yaml(data):
     return created, updated
 
 
-def load_directory(dirname, jurisdiction_id, purge):
+def load_directory(dirname, jurisdiction_id, purge, safe):
     files = glob.glob(os.path.join(dirname, './*.yml'))
     ids = set()
+    created_count = 0
+    updated_count = 0
 
     from opencivicdata.core.models import Person
     existing_ids = set(Person.objects.filter(
         memberships__organization__jurisdiction_id=jurisdiction_id
     ).values_list('id', flat=True))
+
+    if safe:
+        click.secho('running in safe mode, no changes will be made', fg='magenta')
 
     try:
         with transaction.atomic():
@@ -148,9 +153,9 @@ def load_directory(dirname, jurisdiction_id, purge):
                     created, updated = load_yaml(data)
 
                 if created:
-                    click.secho(f'created legislator from {filename}')
+                    click.secho(f'created legislator from {filename}', fg='cyan', bold=True)
                 elif updated:
-                    click.secho(f'updated legislator from {filename}')
+                    click.secho(f'updated legislator from {filename}', fg='cyan')
 
             missing_ids = existing_ids - ids
             if missing_ids and not purge:
@@ -165,6 +170,13 @@ def load_directory(dirname, jurisdiction_id, purge):
 
             # TODO: check new_ids?
             # new_ids = ids - existing_ids
+
+            click.secho(f'processed {len(ids)} files, {created_count} created, '
+                        f'{updated_count} updated', fg='green')
+            if safe:
+                click.secho('ran in safe mode, no changes were made', fg='magenta')
+                raise CancelTransaction()
+
 
     except CancelTransaction:
         pass
@@ -201,11 +213,12 @@ def init_django():
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False)
 @click.option('--purge/--no-purge', default=False)
-def to_database(abbr, verbose, summary, purge):
+@click.option('--safe/--no-safe', default=False)
+def to_database(abbr, verbose, summary, purge, safe):
     init_django()
     directory = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)
-    load_directory(directory, jurisdiction_id, purge)
+    load_directory(directory, jurisdiction_id, purge, safe)
 
 
 if __name__ == '__main__':
