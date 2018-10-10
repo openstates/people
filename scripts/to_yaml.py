@@ -22,48 +22,56 @@ def dump_obj(obj, filename):
 
 
 def process_dir(input_dir, output_dir, jurisdiction_id):
-    memberships_by_id = defaultdict(list)
-    memberships_by_name = defaultdict(list)
-    # map org scrape IDs to org objects
-    organizations = {}
+    person_memberships = defaultdict(list)
+    # map both names & ids to people objects
+    people_lookup = {}
+    committees_by_id = {}
 
+    # build list of committees
     for filename in glob.glob(os.path.join(input_dir, 'organization_*.json')):
         with open(filename) as f:
             org = json.load(f)
 
         if org['classification'] == 'committee':
-            organizations[org['_id']] = org = postprocess_org(org, jurisdiction_id)
-        else:
-            organizations[org['_id']] = org
+            committees_by_id[org['_id']] = postprocess_org(org, jurisdiction_id)
 
-    # resolve committee parents
-    for org in organizations.values():
-        if org['classification'] == 'committee':
-            if org['parent'].startswith('~'):
-                org['parent'] = json.loads(org['parent'][1:])['classification']
-
-    dump_obj(sorted(organizations.values(), key=lambda o: o['name']),
-             os.path.join(output_dir, 'organizations', 'committees.yml'))
-
+    # collect memberships 
     for filename in glob.glob(os.path.join(input_dir, 'membership_*.json')):
         with open(filename) as f:
             membership = json.load(f)
 
-        membership['organization'] = organizations.get(membership['organization_id'])
-        if membership['person_id'].startswith('~'):
-            memberships_by_name[membership['person_name']].append(membership)
+        if membership['organization_id'] in committees_by_id:
+            committees_by_id[membership['organization_id']]['memberships'].append(membership)
         else:
-            memberships_by_id[membership['person_id']].append(membership)
+            if membership['person_id'].startswith('~'):
+                raise ValueError(membership)
+            person_memberships[membership['person_id']].append(membership)
 
+    # process people & store people by ID for committees
     for filename in glob.glob(os.path.join(input_dir, 'person_*.json')):
         with open(filename) as f:
             person = json.load(f)
 
-        person['memberships'] = (memberships_by_id[person['_id']] +
-                                 memberships_by_name[person['name']])
+        scrape_id = person['_id']
+        person['memberships'] = person_memberships[scrape_id]
         person = postprocess_person(person, jurisdiction_id)
+        people_lookup[scrape_id] = person
+        people_lookup[person['name']] = person
+
         filename = get_filename(person)
         dump_obj(person, os.path.join(output_dir, 'people', filename))
+
+    # resolve committee parents and members and write them out
+    for org in committees_by_id.values():
+        if org['parent'].startswith('~'):
+            org['parent'] = json.loads(org['parent'][1:])['classification']
+
+        org['memberships'] = [postprocess_committee_membership(m, people_lookup)
+                              for m in org['memberships']]
+
+        filename = get_filename(org)
+        dump_obj(org, os.path.join(output_dir, 'organizations', filename))
+
 
 
 def get_filename(obj):
@@ -78,6 +86,26 @@ def postprocess_link(link):
     if not link['note']:
         del link['note']
     return link
+
+
+def postprocess_committee_membership(membership, people_lookup):
+    result = OrderedDict()
+    if membership['person_id'].startswith('~'):
+        try:
+            result['id'] = people_lookup[membership['person_name']]['id']
+        except KeyError:
+            print('unresolved person', membership['person_name'])
+    else:
+        result['id'] = people_lookup[membership['person_id']]['id']
+
+    result['name'] = membership['person_name']
+    if membership['role'] != 'member':
+        result['role'] = membership['role']
+    if membership['start_date']:
+        result['start_date'] = membership['start_date']
+    if membership['end_date']:
+        result['end_date'] = membership['end_date']
+    return result
 
 
 def postprocess_person(person, jurisdiction_id):
@@ -104,7 +132,6 @@ def postprocess_person(person, jurisdiction_id):
         contact_details=[],
         # maybe post-process these?
         sources=[postprocess_link(link) for link in person['sources']],
-        committees=[],
     )
 
     contact_details = defaultdict(lambda: defaultdict(list))
@@ -121,24 +148,19 @@ def postprocess_person(person, jurisdiction_id):
     # memberships!
     for membership in person['memberships']:
         organization_id = membership['organization_id']
-        if organization_id.startswith('~'):
-            org = json.loads(organization_id[1:])
-            if org['classification'] in ('upper', 'lower'):
-                post = json.loads(membership['post_id'][1:])['label']
-                result['roles'] = [
-                    {'type': org['classification'], 'district': post,
-                     'jurisdiction': jurisdiction_id}
-                ]
-            elif org['classification'] == 'party':
-                result['party'] = [
-                    {'name': org['name']}
-                ]
-        elif membership['organization']:
-            result['committees'].append({
-                'id': membership['organization']['id'],
-            })
-        else:
+        if not organization_id.startswith('~'):
             raise ValueError(organization_id)
+        org = json.loads(organization_id[1:])
+        if org['classification'] in ('upper', 'lower'):
+            post = json.loads(membership['post_id'][1:])['label']
+            result['roles'] = [
+                {'type': org['classification'], 'district': post,
+                 'jurisdiction': jurisdiction_id}
+            ]
+        elif org['classification'] == 'party':
+            result['party'] = [
+                {'name': org['name']}
+            ]
 
     for key in optional_keys:
         if person.get(key):
@@ -167,6 +189,7 @@ def postprocess_org(org, jurisdiction_id):
         classification=org['classification'],
         links=[postprocess_link(link) for link in org['links']],
         sources=[postprocess_link(link) for link in org['sources']],
+        memberships=[],
     )
 
 
