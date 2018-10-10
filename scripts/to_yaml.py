@@ -2,14 +2,14 @@
 import glob
 import json
 import os
-import sys
 import uuid
+import click
 from collections import defaultdict, OrderedDict
 from utils import (reformat_phone_number, reformat_address, get_data_dir, get_jurisdiction_id,
                    dump_obj)
 
 
-def postprocess_link(link):
+def process_link(link):
     if not link['note']:
         del link['note']
     return link
@@ -27,7 +27,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
             org = json.load(f)
 
         if org['classification'] == 'committee':
-            committees_by_id[org['_id']] = postprocess_org(org, jurisdiction_id)
+            committees_by_id[org['_id']] = process_org(org, jurisdiction_id)
 
     # collect memberships
     for filename in glob.glob(os.path.join(input_dir, 'membership_*.json')):
@@ -48,7 +48,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
 
         scrape_id = person['_id']
         person['memberships'] = person_memberships[scrape_id]
-        person = postprocess_person(person, jurisdiction_id)
+        person = process_person(person, jurisdiction_id)
         people_lookup[scrape_id] = person
         people_lookup[person['name']] = person
 
@@ -59,13 +59,13 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         if org['parent'].startswith('~'):
             org['parent'] = json.loads(org['parent'][1:])['classification']
 
-        org['memberships'] = [postprocess_committee_membership(m, people_lookup)
+        org['memberships'] = [process_committee_membership(m, people_lookup)
                               for m in org['memberships']]
 
         dump_obj(org, os.path.join(output_dir, 'organizations'))
 
 
-def postprocess_committee_membership(membership, people_lookup):
+def process_committee_membership(membership, people_lookup):
     result = OrderedDict()
     if membership['person_id'].startswith('~'):
         try:
@@ -87,7 +87,7 @@ def postprocess_committee_membership(membership, people_lookup):
     return result
 
 
-def postprocess_person(person, jurisdiction_id):
+def process_person(person, jurisdiction_id):
     optional_keys = (
         'image',
         'gender',
@@ -107,10 +107,10 @@ def postprocess_person(person, jurisdiction_id):
         name=person['name'],
         party=[],
         roles=[],
-        links=[postprocess_link(link) for link in person['links']],
+        links=[process_link(link) for link in person['links']],
         contact_details=[],
         # maybe post-process these?
-        sources=[postprocess_link(link) for link in person['sources']],
+        sources=[process_link(link) for link in person['sources']],
     )
 
     contact_details = defaultdict(lambda: defaultdict(list))
@@ -159,21 +159,24 @@ def postprocess_person(person, jurisdiction_id):
     return result
 
 
-def postprocess_org(org, jurisdiction_id):
+def process_org(org, jurisdiction_id):
     return OrderedDict(
         id=str(uuid.uuid4()),        # let's use uuid4 for these, override pupa's
         name=org['name'],
         jurisdiction=jurisdiction_id,
         parent=org['parent_id'],
         classification=org['classification'],
-        links=[postprocess_link(link) for link in org['links']],
-        sources=[postprocess_link(link) for link in org['sources']],
+        links=[process_link(link) for link in org['links']],
+        sources=[process_link(link) for link in org['sources']],
         memberships=[],
     )
 
 
-if __name__ == '__main__':
-    input_dir = sys.argv[1]
+@click.command()
+@click.argument('input_dir')
+@click.option('--reset/--no-reset', default=False)
+def to_yaml(input_dir, reset):
+    # TODO: remove reset option once we're in prod
 
     # abbr is last piece of directory name
     abbr = None
@@ -189,6 +192,11 @@ if __name__ == '__main__':
         try:
             os.makedirs(os.path.join(output_dir, dir))
         except FileExistsError:
-            for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
-                os.remove(file)
+            if reset:
+                for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
+                    os.remove(file)
     process_dir(input_dir, output_dir, jurisdiction_id)
+
+
+if __name__ == '__main__':
+    to_yaml()
