@@ -108,6 +108,29 @@ def is_role(role):
         return ['invalid type']
 
 
+def is_valid_parent(parent):
+    return parent in ('upper', 'lower', 'legislature')
+
+
+ORGANIZATION_FIELDS = {
+    'id': [is_uuid, Required],
+    'name': [is_string, Required],
+    'jurisdiction': [is_ocd_jurisdiction, Required],
+    'parent': [is_valid_parent, Required],
+    'classification': [is_string, Required],    # TODO: tighten this
+    'founding_date': [is_fuzzy_date],
+    'dissolution_date': [is_fuzzy_date],
+    'memberships': NestedList({
+        'id': [is_uuid],
+        'name': [is_string, Required],
+        'role': [is_string],
+        'start_date': [is_fuzzy_date],
+        'end_date': [is_fuzzy_date],
+    }),
+    'sources': URL_LIST,
+    'links': URL_LIST,
+}
+
 PERSON_FIELDS = {
     'id': [is_uuid, Required],
     'name': [is_string, Required],
@@ -282,6 +305,9 @@ class Validator:
         # self.warnings[filename] = self.check_https(person)
         self.summarize_person(person)
 
+    def validate_org(self, org, filename):
+        self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
+
     def check_https_url(self, url):
         if url and url.startswith('http://') and not url.startswith(self.http_whitelist):
             return False
@@ -377,14 +403,21 @@ class Validator:
 
 
 def process_dir(abbr, verbose, summary, settings):
-    filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
+    person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
+    org_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'organizations', '*.yml'))
     validator = Validator(settings, abbr)
 
-    for filename in filenames:
+    for filename in person_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
             person = yaml.load(f)
             validator.validate_person(person, print_filename)
+
+    for filename in org_filenames:
+        print_filename = os.path.basename(filename)
+        with open(filename) as f:
+            org = yaml.load(f)
+            validator.validate_org(org, print_filename)
 
     validator.print_validation_report(verbose)
 
