@@ -15,6 +15,10 @@ def process_link(link):
     return link
 
 
+def ocd_uuid(type):
+    return 'ocd-{}/{}'.format(type, uuid.uuid4())
+
+
 def process_dir(input_dir, output_dir, jurisdiction_id):
     person_memberships = defaultdict(list)
     # map both names & ids to people objects
@@ -103,7 +107,7 @@ def process_person(person, jurisdiction_id):
     )
 
     result = OrderedDict(
-        id=str(uuid.uuid4()),        # let's use uuid4 for these, override pupa's
+        id=ocd_uuid('person'),
         name=person['name'],
         party=[],
         roles=[],
@@ -161,7 +165,7 @@ def process_person(person, jurisdiction_id):
 
 def process_org(org, jurisdiction_id):
     return OrderedDict(
-        id=str(uuid.uuid4()),        # let's use uuid4 for these, override pupa's
+        id=ocd_uuid('organization'),
         name=org['name'],
         jurisdiction=jurisdiction_id,
         parent=org['parent_id'],

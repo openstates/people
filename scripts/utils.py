@@ -58,7 +58,7 @@ def dump_obj(obj, output_dir):
 
 
 def get_filename(obj):
-    id = obj['id']
+    id = obj['id'].split('/')[1]
     name = obj['name']
     name = re.sub('\s+', '-', name)
     name = re.sub('[^a-zA-Z-]', '', name)

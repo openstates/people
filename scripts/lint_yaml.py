@@ -11,7 +11,7 @@ from collections import defaultdict, Counter
 
 DATE_RE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
 PHONE_RE = re.compile(r'^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$')
-UUID_RE = re.compile(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
+UUID_RE = re.compile(r'^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
 LEGACY_OS_ID_RE = re.compile(r'[A-Z]{2}L\d{6}')
 
 
@@ -52,12 +52,16 @@ def is_phone(val):
     return is_string(val) and PHONE_RE.match(val)
 
 
-def is_uuid(val):
-    return is_string(val) and UUID_RE.match(val)
-
-
 def is_ocd_jurisdiction(val):
     return is_string(val) and val.startswith('ocd-jurisdiction/')
+
+
+def is_ocd_person(val):
+    return is_string(val) and val.startswith('ocd-person/') and UUID_RE.match(val)
+
+
+def is_ocd_organization(val):
+    return is_string(val) and val.startswith('ocd-organization/') and UUID_RE.match(val)
 
 
 def is_legacy_openstates(val):
@@ -113,7 +117,7 @@ def is_valid_parent(parent):
 
 
 ORGANIZATION_FIELDS = {
-    'id': [is_uuid, Required],
+    'id': [is_ocd_organization, Required],
     'name': [is_string, Required],
     'jurisdiction': [is_ocd_jurisdiction, Required],
     'parent': [is_valid_parent, Required],
@@ -121,7 +125,7 @@ ORGANIZATION_FIELDS = {
     'founding_date': [is_fuzzy_date],
     'dissolution_date': [is_fuzzy_date],
     'memberships': NestedList({
-        'id': [is_uuid],
+        'id': [is_ocd_person],
         'name': [is_string, Required],
         'role': [is_string],
         'start_date': [is_fuzzy_date],
@@ -132,7 +136,7 @@ ORGANIZATION_FIELDS = {
 }
 
 PERSON_FIELDS = {
-    'id': [is_uuid, Required],
+    'id': [is_ocd_person, Required],
     'name': [is_string, Required],
     'sort_name': [is_string],
     'given_name': [is_string],
