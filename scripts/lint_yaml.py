@@ -141,12 +141,6 @@ PERSON_FIELDS = {
         'end_date': [is_fuzzy_date],
     }),
     'sources': URL_LIST,
-    'committees': NestedList({
-        'name': [is_string, Required],
-        'post': [is_string],
-        'start_date': [is_fuzzy_date],
-        'end_date': [is_fuzzy_date],
-    }),
     'party': NestedList({
         'name': [is_string, Required],
         'start_date': [is_fuzzy_date],
@@ -268,13 +262,12 @@ class Validator:
                               ))
 
     def __init__(self, settings, abbr):
-        self.http_whitelist = tuple(settings['http_whitelist'])
+        self.http_whitelist = tuple(settings.get('http_whitelist', []))
         self.expected = get_expected_districts(settings[abbr])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
         self.count = 0
         self.parties = Counter()
-        self.committees = Counter()
         self.contact_counts = Counter()
         self.id_counts = Counter()
         self.optional_fields = Counter()
@@ -327,10 +320,6 @@ class Validator:
             if role_is_active(role):
                 self.parties[role['name']] += 1
 
-        for role in person.get('committees', []):
-            if role_is_active(role):
-                self.committees[role['name']] += 1
-
         for cd in person.get('contact_details', []):
             for key in cd:
                 if key != 'note':
@@ -375,11 +364,6 @@ class Validator:
                 color = 'green'
             click.secho(f'{count:4d} {party} ', bg=color)
 
-        click.secho('Committees', bold=True)
-        for com, count in sorted(self.committees.items(),
-                                 key=lambda x: x[1], reverse=True):
-            click.secho(f'{count:4d} {com} ')
-
         for name, collection in {'Contact Info': self.contact_counts,
                                  'Identifiers': self.id_counts,
                                  'Additional Info': self.optional_fields,
@@ -393,7 +377,7 @@ class Validator:
 
 
 def process_dir(abbr, verbose, summary, settings):
-    filenames = glob.glob(os.path.join(get_data_dir(abbr), '*.yml'))
+    filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
     validator = Validator(settings, abbr)
 
     for filename in filenames:
