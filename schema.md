@@ -15,8 +15,48 @@
     * instagram: username of official Instagram account
     * facebook: username of official Facebook account
     * legacy_openstates: legacy Open States ID (e.g. NCL000123)
+* party: list of parties that the legislator has been a part of, each may have the following fields:
+    * name: Name of the party.    **required**
+    * start_date
+    * end_date
+* roles: list of legislative & executive roles held by this individual, each may have the following fields:
+    * type: upper|lower|legislature|gov|lt_gov    **required**
+    * district: name/number of district   **required if not gov/lt_gov**
+    * jurisdiction: ocd-jurisdiction identifier **required**
+    * start_date
+    * end_date
+    * contact_details: role-specific contact details (see below for schema)
+* contact_details (see below)
+* links (see below)
+* other_identifiers (see below)
+* other_names (see below)
+* sources (see below)
 
-### List Fields
+# Organization Fields
+
+* id: UUID representing this organization.  **required**
+* name: Name of Organization.  **required**
+* jurisdiction: ocd-jurisdiction identifier **required**
+* parent: Parent of this organization, can be:
+    * upper
+    * lower
+    * legislature
+    * ID of a parent committee in the case of subcommittee
+    **required**
+* classification: Classification, can be:
+    * committee
+    **required**
+* founding_date: Creation date in YYYY-MM-DD format.
+* dissolution_date: Dissolution date in YYYY-MM-DD format.
+* memberships: list of memberships, each may have the following:
+    * id - ocd-person ID if known
+    * name - name of person **required**
+    * role - role that person fills on committee, if not 'member'
+    * start_date
+    * end_date
+
+
+### Common Elements
 
 These sections can have a list of objects, each with the following fields available.
 
@@ -46,29 +86,6 @@ These sections can have a list of objects, each with the following fields availa
     * note: description of the usage of this source
     * url: URL used to collect information for this person **required**
 
-### Roles
-
-These sections describe roles that the legislator had.
-All include optional start_date & end_date fields that can be used to scope a person's membership on a committee, party, or particular legislative role.
-
-* committees:
-    * id:     ID of the committee.  **required**
-    * post:   Special role fulfilled, if not a typical committe member. (e.g. chair)
-    * start_date
-    * end_date
-
-* party:
-    * name: Name of the party.    **required**
-    * start_date
-    * end_date
-
-* roles:
-    * type: upper|lower|legislature|gov|lt_gov    **required**
-    * district: name/number of district   **required if not gov/lt_gov**
-    * jurisdiction: ocd-jurisdiction identifier **required**
-    * start_date
-    * end_date
-    * contact_details:    It is possible to list any role-specific contact details here and they will be considered inactive when the role ends.
 
 ### Additional Fields
 
@@ -76,20 +93,3 @@ These fields should only be set by the automated processes, but may also be pres
 * summary
 * sort_name
 * extras
-
-
-# Organization Fields
-
-* id: UUID representing this organization.  **required**
-* name: Name of Organization.  **required**
-* jurisdiction: ocd-jurisdiction identifier **required**
-* parent: Parent of this organization, can be:
-    * upper
-    * lower
-    * legislature
-    **required**
-* classification: Classification, can be:
-    * committee
-    **required**
-* founding_date: Creation date in YYYY-MM-DD format.
-* dissolution_date: Dissolution date in YYYY-MM-DD format.
