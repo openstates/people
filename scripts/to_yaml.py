@@ -17,7 +17,8 @@ yaml.add_representer(defaultdict, Representer.represent_dict)
 
 
 def all_people(dirname):
-    memberships = defaultdict(list)
+    memberships_by_id = defaultdict(list)
+    memberships_by_name = defaultdict(list)
     organizations = {}
 
     for filename in glob.glob(os.path.join(dirname, 'organization_*.json')):
@@ -29,12 +30,16 @@ def all_people(dirname):
         with open(filename) as f:
             membership = json.load(f)
             membership['organization'] = organizations.get(membership['organization_id'])
-            memberships[membership['person_id']].append(membership)
+            if membership['person_id'].startswith('~'):
+                memberships_by_name[membership['person_name']].append(membership)
+            else:
+                memberships_by_id[membership['person_id']].append(membership)
 
     for filename in glob.glob(os.path.join(dirname, 'person_*.json')):
         with open(filename) as f:
             person = json.load(f)
-            person['memberships'] = memberships[person['_id']]
+            person['memberships'] = (memberships_by_id[person['_id']] +
+                                     memberships_by_name[person['name']])
             yield person
 
 

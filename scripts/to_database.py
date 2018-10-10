@@ -177,11 +177,8 @@ def load_directory(dirname, jurisdiction_id, purge, safe):
                 click.secho('ran in safe mode, no changes were made', fg='magenta')
                 raise CancelTransaction()
 
-
     except CancelTransaction:
         pass
-
-
 
 
 def init_django():
