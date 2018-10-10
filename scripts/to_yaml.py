@@ -1,24 +1,18 @@
 #!/usr/bin/env python
-
 import glob
 import json
 import os
-import re
 import sys
 import uuid
-import yaml
-import yamlordereddictloader
 from collections import defaultdict, OrderedDict
-from utils import reformat_phone_number, reformat_address, get_data_dir, get_jurisdiction_id
-
-# set up defaultdict representation
-from yaml.representer import Representer
-yaml.add_representer(defaultdict, Representer.represent_dict)
+from utils import (reformat_phone_number, reformat_address, get_data_dir, get_jurisdiction_id,
+                   dump_obj)
 
 
-def dump_obj(obj, filename):
-    with open(filename, 'w') as f:
-        yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
+def postprocess_link(link):
+    if not link['note']:
+        del link['note']
+    return link
 
 
 def process_dir(input_dir, output_dir, jurisdiction_id):
@@ -35,7 +29,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         if org['classification'] == 'committee':
             committees_by_id[org['_id']] = postprocess_org(org, jurisdiction_id)
 
-    # collect memberships 
+    # collect memberships
     for filename in glob.glob(os.path.join(input_dir, 'membership_*.json')):
         with open(filename) as f:
             membership = json.load(f)
@@ -58,8 +52,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         people_lookup[scrape_id] = person
         people_lookup[person['name']] = person
 
-        filename = get_filename(person)
-        dump_obj(person, os.path.join(output_dir, 'people', filename))
+        dump_obj(person, os.path.join(output_dir, 'people'))
 
     # resolve committee parents and members and write them out
     for org in committees_by_id.values():
@@ -69,23 +62,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         org['memberships'] = [postprocess_committee_membership(m, people_lookup)
                               for m in org['memberships']]
 
-        filename = get_filename(org)
-        dump_obj(org, os.path.join(output_dir, 'organizations', filename))
-
-
-
-def get_filename(obj):
-    id = obj['id']
-    name = obj['name']
-    name = re.sub('\s+', '-', name)
-    name = re.sub('[^a-zA-Z-]', '', name)
-    return f'{name}-{id}.yml'
-
-
-def postprocess_link(link):
-    if not link['note']:
-        del link['note']
-    return link
+        dump_obj(org, os.path.join(output_dir, 'organizations'))
 
 
 def postprocess_committee_membership(membership, people_lookup):

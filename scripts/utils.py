@@ -1,5 +1,11 @@
 import re
 import os
+import yaml
+import yamlordereddictloader
+from collections import defaultdict
+from yaml.representer import Representer
+# set up defaultdict representation
+yaml.add_representer(defaultdict, Representer.represent_dict)
 
 PHONE_RE = re.compile(r'''^
                       \D*(1?)\D*                                # prefix
@@ -43,3 +49,17 @@ def get_jurisdiction_id(abbr):
         return f'ocd-jurisdiction/country:us/territory:{abbr}/government'
     else:
         return f'ocd-jurisdiction/country:us/state:{abbr}/government'
+
+
+def dump_obj(obj, output_dir):
+    filename = os.path.join(output_dir, get_filename(obj))
+    with open(filename, 'w') as f:
+        yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
+
+
+def get_filename(obj):
+    id = obj['id']
+    name = obj['name']
+    name = re.sub('\s+', '-', name)
+    name = re.sub('[^a-zA-Z-]', '', name)
+    return f'{name}-{id}.yml'
