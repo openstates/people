@@ -41,8 +41,9 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         if org['classification'] == 'committee':
             if org['parent'].startswith('~'):
                 org['parent'] = json.loads(org['parent'][1:])['classification']
-            filename = get_filename(org)
-            dump_obj(org, os.path.join(output_dir, 'organizations', filename))
+
+    dump_obj(sorted(organizations.values(), key=lambda o: o['name']),
+             os.path.join(output_dir, 'organizations', 'committees.yml'))
 
     for filename in glob.glob(os.path.join(input_dir, 'membership_*.json')):
         with open(filename) as f:
