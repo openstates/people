@@ -1,4 +1,4 @@
-The following fields are available:
+# Person Schema
 
 * id: UUID representing this person for this data set.  **required**
 * name: Full Name.  **required**
@@ -52,7 +52,7 @@ These sections describe roles that the legislator had.
 All include optional start_date & end_date fields that can be used to scope a person's membership on a committee, party, or particular legislative role.
 
 * committees:
-    * name:   Name of the committee.  **required**
+    * id:     ID of the committee.  **required**
     * post:   Special role fulfilled, if not a typical committe member. (e.g. chair)
     * start_date
     * end_date
@@ -76,3 +76,20 @@ These fields should only be set by the automated processes, but may also be pres
 * summary
 * sort_name
 * extras
+
+
+# Organization Fields
+
+* id: UUID representing this organization.  **required**
+* name: Name of Organization.  **required**
+* jurisdiction: ocd-jurisdiction identifier **required**
+* parent: Parent of this organization, can be:
+    * upper
+    * lower
+    * legislature
+    **required**
+* classification: Classification, can be:
+    * committee
+    **required**
+* founding_date: Creation date in YYYY-MM-DD format.
+* dissolution_date: Dissolution date in YYYY-MM-DD format.
