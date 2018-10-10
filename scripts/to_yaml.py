@@ -16,36 +16,58 @@ from yaml.representer import Representer
 yaml.add_representer(defaultdict, Representer.represent_dict)
 
 
-def all_people(dirname):
+def dump_obj(obj, filename):
+    with open(filename, 'w') as f:
+        yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
+
+
+def process_dir(input_dir, output_dir, jurisdiction_id):
     memberships_by_id = defaultdict(list)
     memberships_by_name = defaultdict(list)
+    # map org scrape IDs to org objects
     organizations = {}
 
-    for filename in glob.glob(os.path.join(dirname, 'organization_*.json')):
+    for filename in glob.glob(os.path.join(input_dir, 'organization_*.json')):
         with open(filename) as f:
-            organization = json.load(f)
-            organizations[organization['_id']] = organization
+            org = json.load(f)
 
-    for filename in glob.glob(os.path.join(dirname, 'membership_*.json')):
+        if org['classification'] == 'committee':
+            organizations[org['_id']] = org = postprocess_org(org, jurisdiction_id)
+        else:
+            organizations[org['_id']] = org
+
+    # resolve committee parents
+    for org in organizations.values():
+        if org['classification'] == 'committee':
+            if org['parent'].startswith('~'):
+                org['parent'] = json.loads(org['parent'][1:])['classification']
+            filename = get_filename(org)
+            dump_obj(org, os.path.join(output_dir, 'organizations', filename))
+
+    for filename in glob.glob(os.path.join(input_dir, 'membership_*.json')):
         with open(filename) as f:
             membership = json.load(f)
-            membership['organization'] = organizations.get(membership['organization_id'])
-            if membership['person_id'].startswith('~'):
-                memberships_by_name[membership['person_name']].append(membership)
-            else:
-                memberships_by_id[membership['person_id']].append(membership)
 
-    for filename in glob.glob(os.path.join(dirname, 'person_*.json')):
+        membership['organization'] = organizations.get(membership['organization_id'])
+        if membership['person_id'].startswith('~'):
+            memberships_by_name[membership['person_name']].append(membership)
+        else:
+            memberships_by_id[membership['person_id']].append(membership)
+
+    for filename in glob.glob(os.path.join(input_dir, 'person_*.json')):
         with open(filename) as f:
             person = json.load(f)
-            person['memberships'] = (memberships_by_id[person['_id']] +
-                                     memberships_by_name[person['name']])
-            yield person
+
+        person['memberships'] = (memberships_by_id[person['_id']] +
+                                 memberships_by_name[person['name']])
+        person = postprocess_person(person, jurisdiction_id)
+        filename = get_filename(person)
+        dump_obj(person, os.path.join(output_dir, 'people', filename))
 
 
-def filename_for_person(person):
-    id = person['id']
-    name = person['name']
+def get_filename(obj):
+    id = obj['id']
+    name = obj['name']
     name = re.sub('\s+', '-', name)
     name = re.sub('[^a-zA-Z-]', '', name)
     return f'{name}-{id}.yml'
@@ -112,7 +134,7 @@ def postprocess_person(person, jurisdiction_id):
                 ]
         elif membership['organization']:
             result['committees'].append({
-                'name': membership['organization']['name'],
+                'id': membership['organization']['id'],
             })
         else:
             raise ValueError(organization_id)
@@ -135,14 +157,16 @@ def postprocess_person(person, jurisdiction_id):
     return result
 
 
-def process_people(input_dir, output_dir, jurisdiction_id):
-    for person in all_people(input_dir):
-
-        person = postprocess_person(person, jurisdiction_id)
-        filename = filename_for_person(person)
-
-        with open(os.path.join(output_dir, filename), 'w') as f:
-            yaml.dump(person, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
+def postprocess_org(org, jurisdiction_id):
+    return OrderedDict(
+        id=str(uuid.uuid4()),        # let's use uuid4 for these, override pupa's
+        name=org['name'],
+        jurisdiction=jurisdiction_id,
+        parent=org['parent_id'],
+        classification=org['classification'],
+        links=[postprocess_link(link) for link in org['links']],
+        sources=[postprocess_link(link) for link in org['sources']],
+    )
 
 
 if __name__ == '__main__':
@@ -158,16 +182,10 @@ if __name__ == '__main__':
     output_dir = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)
 
-    if abbr == 'dc':
-        jurisdiction_id = 'ocd-jurisdiction/country:us/district:dc/government'
-    elif abbr in ('vi', 'pr'):
-        jurisdiction_id = f'ocd-jurisdiction/country:us/territory:{abbr}/government'
-    else:
-        jurisdiction_id = f'ocd-jurisdiction/country:us/state:{abbr}/government'
-
-    try:
-        os.makedirs(output_dir)
-    except FileExistsError:
-        for file in glob.glob(os.path.join(output_dir, '*.yml')):
-            os.remove(file)
-    process_people(input_dir, output_dir, jurisdiction_id)
+    for dir in ('people', 'organizations'):
+        try:
+            os.makedirs(os.path.join(output_dir, dir))
+        except FileExistsError:
+            for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
+                os.remove(file)
+    process_dir(input_dir, output_dir, jurisdiction_id)
