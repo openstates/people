@@ -8,6 +8,7 @@ from django.db import transaction
 import click
 from utils import get_data_dir, get_jurisdiction_id
 
+
 class CancelTransaction(Exception):
     pass
 
