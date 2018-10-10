@@ -94,7 +94,9 @@ def postprocess_committee_membership(membership, people_lookup):
         try:
             result['id'] = people_lookup[membership['person_name']]['id']
         except KeyError:
-            print('unresolved person', membership['person_name'])
+            # there are many unresolved people for all sorts of reasons,
+            # we'll see them in the lint
+            pass
     else:
         result['id'] = people_lookup[membership['person_id']]['id']
 
