@@ -42,12 +42,25 @@ def update_subobjects(person, fieldname, objects):
     return updated
 
 
-def load_yaml(data):
+def get_update_or_create(ModelCls, data):
+    updated = created = False
+    try:
+        obj = ModelCls.objects.get(pk=data['id'])
+        for field, value in data.items():
+            if getattr(obj, field) != value:
+                setattr(obj, field, value)
+                updated = True
+        if updated:
+            obj.save()
+    except ModelCls.DoesNotExist:
+        obj = ModelCls.objects.create(id=data['id'], **data)
+        created = True
+    return obj, created, updated
+
+
+def load_person(data):
     # import has to be here so that Django is set up
     from opencivicdata.core.models import Person, Organization, Post
-
-    created = False
-    updated = False
 
     fields = dict(name=data['name'],
                   given_name=data.get('given_name', ''),
@@ -59,18 +72,7 @@ def load_yaml(data):
                   image=data.get('image', ''),
                   extras=data.get('extras', {}),
                   )
-
-    try:
-        person = Person.objects.get(pk=data['id'])
-        for field, value in fields.items():
-            if getattr(person, field) != value:
-                setattr(person, field, value)
-                updated = True
-        if updated:
-            person.save()
-    except Person.DoesNotExist:
-        person = Person.objects.create(id=data['id'], **fields)
-        created = True
+    person, created, updated = get_update_or_create(Person, fields)
 
     updated |= update_subobjects(person, 'other_names', data.get('other_names', []))
     updated |= update_subobjects(person, 'links', data.get('links', []))
@@ -114,11 +116,12 @@ def load_yaml(data):
                                                jurisdiction_id=role['jurisdiction'])
                 post = org.posts.get(label=role['district'])
             except Organization.DoesNotExist:
-                click.secho(f"no such organization {role}", fg='red')
-                raise
+                click.secho(f"no such organization {role['jurisdiction']} {role['type']}",
+                            fg='red')
+                raise CancelTransaction()
             except Post.DoesNotExist:
                 click.secho(f"no such post {role}", fg='red')
-                raise
+                raise CancelTransaction()
         else:
             raise ValueError('unsupported role type')
         memberships.append({'organization': org,
@@ -131,55 +134,76 @@ def load_yaml(data):
     return created, updated
 
 
-def load_directory(dirname, jurisdiction_id, purge, safe):
-    files = glob.glob(os.path.join(dirname, './*.yml'))
+def load_org(data):
+    from opencivicdata.core.models import Organization
+
+    parent_id = data['parent']
+    if parent_id.startswith('ocd-organization'):
+        parent = Organization.objects.get(pk=parent_id)
+    else:
+        parent = Organization.objects.get(jurisdiction_id=data['jurisdiction'],
+                                          classification=parent_id)
+
+    fields = dict(
+        id=data['id'],
+        name=data['name'],
+        jurisdiction_id=data['jurisdiction'],
+        classification=data['classification'],
+        founding_date=data['founding_date'],
+        dissolution_date=data['dissolution_date'],
+        parent=parent,
+    )
+    org, created, updated = get_update_or_create(Organization, fields)
+
+
+def load_directory(files, type, jurisdiction_id, purge):
     ids = set()
     created_count = 0
     updated_count = 0
 
-    from opencivicdata.core.models import Person
-    existing_ids = set(Person.objects.filter(
-        memberships__organization__jurisdiction_id=jurisdiction_id
-    ).values_list('id', flat=True))
+    if type == 'person':
+        from opencivicdata.core.models import Person
+        existing_ids = set(Person.objects.filter(
+            memberships__organization__jurisdiction_id=jurisdiction_id
+        ).values_list('id', flat=True))
+        ModelCls = Person
+        load_func = load_person
+    elif type == 'organization':
+        from opencivicdata.core.models import Organization
+        existing_ids = set(Organization.objects.filter(
+            jurisdiction_id=jurisdiction_id
+        ).values_list('id', flat=True))
+        ModelCls = Organization
+        load_func = load_org
+    else:
+        raise ValueError(type)
 
-    if safe:
-        click.secho('running in safe mode, no changes will be made', fg='magenta')
+    for filename in files:
+        with open(filename) as f:
+            data = yaml.load(f)
+            ids.add(data['id'])
+            created, updated = load_func(data)
 
-    try:
-        with transaction.atomic():
-            for filename in files:
-                with open(filename) as f:
-                    data = yaml.load(f)
-                    ids.add(data['id'])
-                    created, updated = load_yaml(data)
+        if created:
+            click.secho(f'created {type} from {filename}', fg='cyan', bold=True)
+        elif updated:
+            click.secho(f'updated {type} from {filename}', fg='cyan')
 
-                if created:
-                    click.secho(f'created legislator from {filename}', fg='cyan', bold=True)
-                elif updated:
-                    click.secho(f'updated legislator from {filename}', fg='cyan')
+    missing_ids = existing_ids - ids
+    if missing_ids and not purge:
+        click.secho(f'{len(missing_ids)} went missing, run with --purge to remove',
+                    fg='red')
+        for id in missing_ids:
+            click.secho(f'  {id}')
+        raise CancelTransaction()
+    elif missing_ids and purge:
+        click.secho(f'{len(missing_ids)} {type} purged', fg='yellow')
+        ModelCls.objects.filter(id__in=missing_ids).delete()
 
-            missing_ids = existing_ids - ids
-            if missing_ids and not purge:
-                click.secho(f'{len(missing_ids)} went missing, run with --purge to remove',
-                            fg='red')
-                for id in missing_ids:
-                    click.secho(f'  {id}')
-                raise CancelTransaction()
-            elif missing_ids and purge:
-                click.secho(f'{len(missing_ids)} people purged', fg='yellow')
-                Person.objects.filter(id__in=missing_ids).delete()
-
-            # TODO: check new_ids?
-            # new_ids = ids - existing_ids
-
-            click.secho(f'processed {len(ids)} files, {created_count} created, '
-                        f'{updated_count} updated', fg='green')
-            if safe:
-                click.secho('ran in safe mode, no changes were made', fg='magenta')
-                raise CancelTransaction()
-
-    except CancelTransaction:
-        pass
+    # TODO: check new_ids?
+    # new_ids = ids - existing_ids
+    click.secho(f'processed {len(ids)} files, {created_count} created, '
+                f'{updated_count} updated', fg='green')
 
 
 def init_django():
@@ -190,7 +214,6 @@ def init_django():
         INSTALLED_APPS=(
              'django.contrib.contenttypes',
              'opencivicdata.core.apps.BaseConfig',
-             'opencivicdata.legislative.apps.BaseConfig'
         ),
         DATABASES={
             'default': {
@@ -216,7 +239,21 @@ def to_database(abbr, verbose, summary, purge, safe):
     init_django()
     directory = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)
-    load_directory(directory, jurisdiction_id, purge, safe)
+
+    person_files = (glob.glob(os.path.join(directory, 'people/*.yml')) +
+                    glob.glob(os.path.join(directory, 'retired/*.yml')))
+
+    if safe:
+        click.secho('running in safe mode, no changes will be made', fg='magenta')
+
+    try:
+        with transaction.atomic():
+            load_directory(person_files, 'person', jurisdiction_id, purge=purge)
+        if safe:
+            click.secho('ran in safe mode, no changes were made', fg='magenta')
+            raise CancelTransaction()
+    except CancelTransaction:
+        pass
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 import pytest
 import yaml
 from opencivicdata.core.models import Person, Organization, Jurisdiction, Division
-from to_database import load_yaml
+from to_database import load_person
 
 
 @pytest.mark.django_db
@@ -14,7 +14,7 @@ def test_basic_creation():
         something: special
     """)
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
 
     assert created is True
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
@@ -34,12 +34,12 @@ def test_basic_updates():
     """
     data = yaml.load(yaml_text)
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
     created_at, updated_at = p.created_at, p.updated_at
 
     # ensure no change means no change
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     assert created is False
     assert updated is False
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
@@ -48,7 +48,7 @@ def test_basic_updates():
 
     # ensure extra changes got captured
     data['extras']['something'] = 'changed'
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     assert created is False
     assert updated is True
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
@@ -72,7 +72,7 @@ def test_basic_subobjects():
     """
     data = yaml.load(yaml_text)
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
 
     assert p.links.count() == 2
@@ -93,12 +93,12 @@ def test_subobject_update():
     """
     data = yaml.load(yaml_text)
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
     created_at, updated_at = p.created_at, p.updated_at
 
     # ensure no change means no change
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     assert created is False
     assert updated is False
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
@@ -107,7 +107,7 @@ def test_subobject_update():
 
     # change one field
     data['links'][0]['url'] = 'https://example.com/jane-smith'
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
 
     assert created is False
     assert updated is True
@@ -118,7 +118,7 @@ def test_subobject_update():
 
     # delete a field
     data['links'].pop()
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     assert created is False
     assert updated is True
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
@@ -142,7 +142,7 @@ def test_identifiers():
     """
     data = yaml.load(yaml_text)
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
 
     assert p.identifiers.count() == 4
@@ -166,7 +166,7 @@ def test_contact_details():
     """
     data = yaml.load(yaml_text)
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
 
     assert p.contact_details.count() == 5
@@ -185,14 +185,14 @@ def test_party():
     Organization.objects.create(name='Democratic', classification='party')
     Organization.objects.create(name='Republican', classification='party')
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
 
     assert p.memberships.count() == 1
     assert p.memberships.get().organization.name == 'Democratic'
 
     data['party'].append({'name': 'Republican', 'end_date': '2018-10-06'})
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     assert updated is True
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
     p.memberships.count() == 2
@@ -216,7 +216,7 @@ def test_legislative_roles():
     o = Organization.objects.create(name='House', classification='lower', jurisdiction=j)
     o.posts.create(label='3')
 
-    created, updated = load_yaml(data)
+    created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
 
     assert p.memberships.count() == 1
