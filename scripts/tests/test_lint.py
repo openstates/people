@@ -164,6 +164,16 @@ def test_validate_roles_roles(person, expected):
     assert validate_roles(person, "roles") == expected
 
 
+@pytest.mark.parametrize("person,expected", [
+    ({"roles": [{"name": "House"}]}, ["1 active roles on retired person"]),
+    ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles on retired person"]),
+    ({"roles": []}, []),
+    ({"roles": [{"name": "House", "end_date": "1990"}]}, []),
+])
+def test_validate_roles_retired(person, expected):
+    assert validate_roles(person, "roles", retired=True) == expected
+
+
 def test_get_expected_districts():
     expected = get_expected_districts({"upper_seats": 3,
                                        "lower_seats": ["A", "B", "C"],

@@ -225,10 +225,12 @@ def validate_obj(obj, schema, prefix=None):
     return errors
 
 
-def validate_roles(person, roles_key):
+def validate_roles(person, roles_key, retired=False):
     active = [role for role in person[roles_key] if role_is_active(role)]
-    if len(active) == 0:
+    if len(active) == 0 and not retired:
         return [f'no active {roles_key}']
+    elif roles_key == 'roles' and retired and len(active) > 0:
+        return [f'{len(active)} active roles on retired person']
     elif roles_key == 'roles' and len(active) > 1:
         return [f'{len(active)} active roles']
     return []
@@ -289,6 +291,7 @@ class Validator:
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
         self.person_count = 0
+        self.retired_count = 0
         self.org_count = 0
         self.missing_person_id = 0
         self.role_types = defaultdict(int)
@@ -301,14 +304,17 @@ class Validator:
         self.extra_counts = Counter()
         self.active_legislators = defaultdict(lambda: defaultdict(list))
 
-    def validate_person(self, person, filename):
+    def validate_person(self, person, filename, retired=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
-        self.errors[filename].extend(validate_roles(person, 'roles'))
+        self.errors[filename].extend(validate_roles(person, 'roles', retired))
         self.errors[filename].extend(validate_roles(person, 'party'))
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         self.person_mapping[person['id']] = person['name']
-        self.summarize_person(person)
+        if retired:
+            self.retired_count += 1
+        else:
+            self.summarize_person(person)
 
     def validate_org(self, org, filename):
         self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
@@ -403,8 +409,8 @@ class Validator:
             click.secho(warning, fg='yellow')
 
     def print_summary(self):
-        click.secho(f'processed {self.person_count} people & {self.org_count} oranizations',
-                    bold=True)
+        click.secho(f'processed {self.person_count} active people, {self.retired_count} retired & '
+                    f'{self.org_count} organizations', bold=True)
         for role_type in self.active_legislators:
             count = sum([len(v) for v in self.active_legislators[role_type].values()])
             click.secho(f'{count:4d} {role_type}')
@@ -440,6 +446,7 @@ class Validator:
 
 def process_dir(abbr, verbose, summary, settings):
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
+    retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'retired', '*.yml'))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'organizations', '*.yml'))
     validator = Validator(settings, abbr)
 
@@ -448,6 +455,12 @@ def process_dir(abbr, verbose, summary, settings):
         with open(filename) as f:
             person = yaml.load(f)
             validator.validate_person(person, print_filename)
+
+    for filename in retired_filenames:
+        print_filename = os.path.basename(filename)
+        with open(filename) as f:
+            person = yaml.load(f)
+            validator.validate_person(person, print_filename, retired=True)
 
     for filename in org_filenames:
         print_filename = os.path.basename(filename)
