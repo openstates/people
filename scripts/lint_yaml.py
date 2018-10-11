@@ -5,7 +5,7 @@ import yaml
 import glob
 import datetime
 import click
-from utils import get_data_dir
+from utils import get_data_dir, get_filename
 from collections import defaultdict, Counter
 
 
@@ -274,10 +274,11 @@ def compare_districts(expected, actual):
         for district in sorted(actual_districts - expected_districts):
             errors.append(f'extra legislator for unexpected seat {chamber} {district}')
         for district in sorted(actual_districts & expected_districts):
-            if actual[chamber][district] < expected[chamber][district]:
+            if len(actual[chamber][district]) < expected[chamber][district]:
                 warnings.append(f'missing legislator for {chamber} {district}')
-            if actual[chamber][district] > expected[chamber][district]:
-                errors.append(f'extra legislator for {chamber} {district}')
+            if len(actual[chamber][district]) > expected[chamber][district]:
+                people = '\n\t'.join(get_filename(o) for o in actual[chamber][district])
+                errors.append(f'extra legislator for {chamber} {district}:\n\t' + people)
     return errors, warnings
 
 
@@ -304,7 +305,7 @@ class Validator:
         self.id_counts = Counter()
         self.optional_fields = Counter()
         self.extra_counts = Counter()
-        self.district_counts = defaultdict(Counter)
+        self.active_legislators = defaultdict(lambda: defaultdict(list))
 
     def validate_person(self, person, filename):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
@@ -359,7 +360,7 @@ class Validator:
                 role_type = role['type']
                 district = role.get('district')
                 break
-        self.district_counts[role_type][district] += 1
+        self.active_legislators[role_type][district].append(person)
 
         for role in person.get('party', []):
             if role_is_active(role):
@@ -401,7 +402,7 @@ class Validator:
             if not errors and verbose > 0:
                 click.secho(fn, 'OK!', fg='green')
 
-        errors, warnings = compare_districts(self.expected, self.district_counts)
+        errors, warnings = compare_districts(self.expected, self.active_legislators)
         for err in errors:
             click.secho(err, fg='red')
         for warning in warnings:
@@ -410,8 +411,8 @@ class Validator:
     def print_summary(self):
         click.secho(f'processed {self.person_count} people & {self.org_count} oranizations',
                     bold=True)
-        for role_type in self.district_counts:
-            count = sum(self.district_counts[role_type].values())
+        for role_type in self.active_legislators:
+            count = sum([len(v) for v in self.active_legislators[role_type].values()])
             click.secho(f'{count:4d} {role_type}')
 
         click.secho('Parties', bold=True)

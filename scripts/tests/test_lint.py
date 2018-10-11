@@ -184,17 +184,26 @@ def test_get_expected_districts():
 
 
 @pytest.mark.parametrize("expected,actual,errors,warnings", [
-    ({"A": 1, "B": 1}, {"A": 1, "B": 1}, 0, 0),     # good
-    ({"A": 1}, {"A": 1, "B": 1}, 1, 0),             # extra district
-    ({"A": 1, "B": 1}, {"A": 1}, 0, 1),             # missing district
-    ({"A": 1, "B": 1}, {"A": 0, "B": 1}, 0, 1),     # missing leg
-    ({"A": 1, "B": 1}, {"A": 2, "B": 1}, 1, 0),     # extra leg
-    ({"A": 5, "B": 3}, {"A": 3, "B": 5}, 1, 1),     # mix of both
+    ({"A": 1, "B": 1}, {"A": ['a'], "B": ['a']}, 0, 0),     # good
+    ({"A": 1}, {"A": ['a'], "B": ['a']}, 1, 0),             # extra district
+    ({"A": 1, "B": 1}, {"A": ['a']}, 0, 1),             # missing district
+    ({"A": 1, "B": 1}, {"A": [], "B": ['a']}, 0, 1),     # missing leg
 ])
 def test_compare_districts(expected, actual, errors, warnings):
     e, w = compare_districts({"upper": expected}, {"upper": actual})
     assert len(e) == errors
     assert len(w) == warnings
+
+
+def test_compare_districts_overfill():
+    expected = {"A": 1}
+    actual = {'A': [{'id': 'ocd-person/1', 'name': 'Anne'},
+                    {'id': 'ocd-person/2', 'name': 'Bob'}]}
+    e, w = compare_districts({"upper": expected}, {"upper": actual})
+    assert len(e) == 1
+    assert len(w) == 0
+    assert 'Anne' in e[0]
+    assert 'Bob' in e[0]
 
 
 def test_validator_check_https():
