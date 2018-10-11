@@ -56,7 +56,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         people_lookup[scrape_id] = person
         people_lookup[person['name']] = person
 
-        dump_obj(person, os.path.join(output_dir, 'people'))
+        dump_obj(person, output_dir=os.path.join(output_dir, 'people'))
 
     # resolve committee parents and members and write them out
     for org in committees_by_id.values():
@@ -66,7 +66,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         org['memberships'] = [process_committee_membership(m, people_lookup)
                               for m in org['memberships']]
 
-        dump_obj(org, os.path.join(output_dir, 'organizations'))
+        dump_obj(org, output_dir=os.path.join(output_dir, 'organizations'))
 
 
 def process_committee_membership(membership, people_lookup):

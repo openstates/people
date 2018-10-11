@@ -1,7 +1,7 @@
 import pytest
 from lint_yaml import (is_url, is_social, is_fuzzy_date, is_phone,
                        is_ocd_person, is_legacy_openstates,
-                       validate_obj, PERSON_FIELDS, role_is_active, validate_roles,
+                       validate_obj, PERSON_FIELDS, validate_roles,
                        get_expected_districts, compare_districts, Validator) # noqa
 
 
@@ -142,16 +142,6 @@ def test_validate_extra_keys_not_present():
     assert len(errs) == 2
     assert 'extra key: junk' in errs
     assert 'extra key: links.0.bad' in errs
-
-
-@pytest.mark.parametrize("role,expected", [
-    ({"name": "A"}, True),
-    ({"name": "B", "end_date": None}, True),
-    ({"name": "C", "end_date": "1990-01-01"}, False),
-    ({"name": "D", "end_date": "2100-01-01"}, True),
-])
-def test_role_is_active(role, expected):
-    assert role_is_active(role) == expected
 
 
 @pytest.mark.parametrize("person,expected", [

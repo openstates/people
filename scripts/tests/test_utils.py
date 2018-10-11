@@ -1,5 +1,5 @@
 import pytest
-from utils import reformat_phone_number, reformat_address
+from utils import reformat_phone_number, reformat_address, role_is_active
 
 
 @pytest.mark.parametrize("input,output", [
@@ -25,3 +25,13 @@ def test_reformat_phone(input, output):
 ])
 def test_reformat_address(input, output):
     assert reformat_address(input) == output
+
+
+@pytest.mark.parametrize("role,expected", [
+    ({"name": "A"}, True),
+    ({"name": "B", "end_date": None}, True),
+    ({"name": "C", "end_date": "1990-01-01"}, False),
+    ({"name": "D", "end_date": "2100-01-01"}, True),
+])
+def test_role_is_active(role, expected):
+    assert role_is_active(role) == expected

@@ -3,9 +3,8 @@ import re
 import os
 import yaml
 import glob
-import datetime
 import click
-from utils import get_data_dir, get_filename
+from utils import get_data_dir, get_filename, role_is_active
 from collections import defaultdict, Counter
 
 
@@ -224,11 +223,6 @@ def validate_obj(obj, schema, prefix=None):
         errors.append(f'extra key: {prefix_str}{key}')
 
     return errors
-
-
-def role_is_active(role):
-    now = datetime.datetime.utcnow().date().strftime('%Y-%m-%d')
-    return role.get('end_date') is None or role.get('end_date') > now
 
 
 def validate_roles(person, roles_key):

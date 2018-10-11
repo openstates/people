@@ -1,5 +1,6 @@
 import re
 import os
+import datetime
 import yaml
 import yamlordereddictloader
 from collections import defaultdict
@@ -51,10 +52,17 @@ def get_jurisdiction_id(abbr):
         return f'ocd-jurisdiction/country:us/state:{abbr}/government'
 
 
-def dump_obj(obj, output_dir):
-    filename = os.path.join(output_dir, get_filename(obj))
+def load_yaml(file_obj):
+    return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
+
+
+def dump_obj(obj, *, output_dir=None, filename=None):
+    if output_dir:
+        filename = os.path.join(output_dir, get_filename(obj))
+    if not filename:
+        raise ValueError('must provide output_dir or filename parameter')
     with open(filename, 'w') as f:
-        yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.Dumper)
+        yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.SafeDumper)
 
 
 def get_filename(obj):
@@ -63,3 +71,8 @@ def get_filename(obj):
     name = re.sub('\s+', '-', name)
     name = re.sub('[^a-zA-Z-]', '', name)
     return f'{name}-{id}.yml'
+
+
+def role_is_active(role):
+    now = datetime.datetime.utcnow().date().strftime('%Y-%m-%d')
+    return role.get('end_date') is None or role.get('end_date') > now
