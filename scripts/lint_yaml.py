@@ -293,7 +293,12 @@ class Validator:
         self.expected = get_expected_districts(settings[abbr])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
-        self.count = 0
+        self.person_count = 0
+        self.org_count = 0
+        self.missing_person_id = 0
+        self.role_types = defaultdict(int)
+        self.parent_types = defaultdict(int)
+        self.person_mapping = {}
         self.parties = Counter()
         self.contact_counts = Counter()
         self.id_counts = Counter()
@@ -307,10 +312,20 @@ class Validator:
         self.errors[filename].extend(validate_roles(person, 'party'))
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
+        self.person_mapping[person['id']] = person['name']
         self.summarize_person(person)
 
     def validate_org(self, org, filename):
         self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
+        for m in org['memberships']:
+            if not m.get('id'):
+                continue
+            if m['id'] not in self.person_mapping:
+                self.errors[filename].append(f'invalid person ID {m["id"]}')
+            elif self.person_mapping[m['id']] != m['name']:
+                name = self.person_mapping[m['id']]
+                self.warnings[filename].append(f'ID {m["id"]} refers to {name}, not {m["name"]}')
+        self.summarize_org(org)
 
     def check_https_url(self, url):
         if url and url.startswith('http://') and not url.startswith(self.http_whitelist):
@@ -335,7 +350,7 @@ class Validator:
         role_type = None
         district = None
 
-        self.count += 1
+        self.person_count += 1
         self.optional_fields.update(set(person.keys()) & self.OPTIONAL_FIELD_SET)
         self.extra_counts.update(person.get('extras', {}).keys())
 
@@ -360,6 +375,20 @@ class Validator:
         for id in person.get('other_identifiers', []):
             self.id_counts[id['scheme']] += 1
 
+    def summarize_org(self, org):
+        self.org_count += 1
+
+        if org['parent'].startswith('ocd-organization'):
+            self.parent_types['subcommittee'] += 1
+        else:
+            self.parent_types[org['parent']] += 1
+
+        for m in org['memberships']:
+            if not m.get('id'):
+                self.missing_person_id += 1
+            if role_is_active(m):
+                self.role_types[m.get('role', 'member')] += 1
+
     def print_validation_report(self, verbose):
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
@@ -379,7 +408,8 @@ class Validator:
             click.secho(warning, fg='yellow')
 
     def print_summary(self):
-        click.secho(f'processed {self.count} files', bold=True)
+        click.secho(f'processed {self.person_count} people & {self.org_count} oranizations',
+                    bold=True)
         for role_type in self.district_counts:
             count = sum(self.district_counts[role_type].values())
             click.secho(f'{count:4d} {role_type}')
@@ -405,6 +435,13 @@ class Validator:
             else:
                 click.secho(name + ' - none', bold=True)
 
+        click.secho('Committees', bold=True)
+        for parent, count in self.parent_types.items():
+            click.secho(f'{count:4d} {parent}')
+        click.secho('{:4d} roles missing ID'.format(self.missing_person_id))
+        for role, count in self.role_types.items():
+            click.secho(f'{count:4d} {role} roles')
+
 
 def process_dir(abbr, verbose, summary, settings):
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
@@ -425,7 +462,6 @@ def process_dir(abbr, verbose, summary, settings):
 
     validator.print_validation_report(verbose)
 
-    # summary
     if summary:
         validator.print_summary()
 

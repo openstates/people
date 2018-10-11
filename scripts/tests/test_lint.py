@@ -1,6 +1,6 @@
 import pytest
-import uuid
-from lint_yaml import (is_url, is_social, is_fuzzy_date, is_phone, is_uuid, is_legacy_openstates,
+from lint_yaml import (is_url, is_social, is_fuzzy_date, is_phone,
+                       is_ocd_person, is_legacy_openstates,
                        validate_obj, PERSON_FIELDS, role_is_active, validate_roles,
                        get_expected_districts, compare_districts, Validator) # noqa
 
@@ -31,9 +31,10 @@ def test_is_phone():
     assert not is_phone('(123) 346-7990')
 
 
-def test_is_uuid():
-    assert is_uuid('abcdef98-0123-7777-8888-1234567890ab')
-    assert not is_uuid('abcdef980123777788881234567890ab')
+def test_is_ocd_person():
+    assert is_ocd_person('ocd-person/abcdef98-0123-7777-8888-1234567890ab')
+    assert not is_ocd_person('abcdef98-0123-7777-8888-1234567890ab')
+    assert not is_ocd_person('ocd-person/abcdef980123777788881234567890ab')
 
 
 def test_is_legacy_openstates():
@@ -42,9 +43,13 @@ def test_is_legacy_openstates():
     assert not is_legacy_openstates('AK001')
 
 
+EXAMPLE_OCD_PERSON_ID = 'ocd-person/12345678-0000-1111-2222-1234567890ab'
+EXAMPLE_OCD_ORG_ID = 'ocd-organization/00001111-2222-3333-aaaa-444455556666'
+
+
 def test_validate_required():
     example = {
-        'id': str(uuid.uuid4()),
+        'id': EXAMPLE_OCD_PERSON_ID,
         'name': 'Anne A',
     }
 
@@ -58,7 +63,7 @@ def test_validate_required():
 
 def test_validate_nested_required():
     example = {
-        'id': str(uuid.uuid4()),
+        'id': EXAMPLE_OCD_PERSON_ID,
         'name': 'Anne A',
         'links': [
             {'url': 'https://example.com'},
@@ -73,7 +78,7 @@ def test_validate_nested_required():
 
 def test_validate_nested_list():
     example = {
-        'id': str(uuid.uuid4()),
+        'id': EXAMPLE_OCD_PERSON_ID,
         'name': 'Anne A',
         'links': [
             {'url': 'example.com'},
@@ -87,7 +92,7 @@ def test_validate_nested_list():
 
 def test_validate_nested_role_list():
     example = {
-        'id': str(uuid.uuid4()),
+        'id': EXAMPLE_OCD_PERSON_ID,
         'name': 'Anne A',
         'roles': [
             {'type': 'upper', 'district': '4', 'end_date': '2010',
@@ -110,7 +115,7 @@ def test_validate_nested_role_list():
 
 def test_validate_nested_object():
     example = {
-        'id': str(uuid.uuid4()),
+        'id': EXAMPLE_OCD_PERSON_ID,
         'name': 'Anne A',
         'ids': {
             'twitter': '@bad-name',
@@ -125,7 +130,7 @@ def test_validate_nested_object():
 
 def test_validate_extra_keys_not_present():
     example = {
-        'id': str(uuid.uuid4()),
+        'id': EXAMPLE_OCD_PERSON_ID,
         'name': 'Anne A',
         'junk': 100,
         'links': [
@@ -207,7 +212,7 @@ def test_validator_check_https():
     assert 'links.1' in warnings[0]
 
 
-def test_validator_summary():
+def test_person_summary():
     settings = {'us': {'upper_seats': 100, 'lower_seats': 435},
                 'http_whitelist': ['http://bad.example.com']}
     v = Validator(settings, 'us')
@@ -225,7 +230,6 @@ def test_validator_summary():
          },
         {'gender': 'M', 'image': 'https://example.com/image3',
          'party': [{'name': 'Republican'}],
-         'committees': [{'name': 'Finance'}],
          'contact_details': [{'phone': '123-456-7890'}],
          'other_identifiers': [{'scheme': 'fake', 'identifier': '123'}],
          },
@@ -236,8 +240,52 @@ def test_validator_summary():
 
     assert v.parties == {'Republican': 1, 'Democratic': 2,
                          'Working Families': 1}
-    assert v.committees == {'Finance': 1}
     assert v.contact_counts == {'phone': 1, 'fax': 1}
     assert v.id_counts == {'fake': 2, 'twitter': 1}
     assert v.optional_fields == {'gender': 3, 'image': 3}
     assert v.extra_counts == {'religion': 1}
+
+
+def test_validate_org_memberships():
+    person = {'id': EXAMPLE_OCD_PERSON_ID,
+              'name': 'Jane Smith',
+              'roles': [],
+              'party': [],
+              }
+    org = {'id': EXAMPLE_OCD_ORG_ID,
+           'name': 'Finance Committee',
+           'jurisdiction': 'ocd-jurisdiction/country:us',
+           'parent': 'lower',
+           'classification': 'committee',
+           'memberships': []
+           }
+    settings = {'us': {'upper_seats': 100, 'lower_seats': 435}}
+
+    # a good membership
+    org['memberships'] = [
+        {'id': EXAMPLE_OCD_PERSON_ID, 'name': 'Jane Smith'}
+    ]
+    v = Validator(settings, 'us')
+    v.validate_person(person, 'fake-person')    # validate person first to learn ID
+    v.validate_org(org, 'fake-org')
+    assert v.errors['fake-org'] == []
+    assert v.warnings['fake-org'] == []
+
+    # a bad ID
+    org['memberships'] = [
+        {'id': 'ocd-person/00000000-0000-0000-0000-000000000000', 'name': 'Jane Smith'}
+    ]
+    v = Validator(settings, 'us')
+    v.validate_person(person, 'fake-person')
+    v.validate_org(org, 'fake-org')
+    assert len(v.errors['fake-org']) == 1
+
+    # bad name, warning
+    org['memberships'] = [
+        {'id': EXAMPLE_OCD_PERSON_ID, 'name': 'Smith'}
+    ]
+    v = Validator(settings, 'us')
+    v.validate_person(person, 'fake-person')
+    v.validate_org(org, 'fake-org')
+    assert len(v.warnings['fake-org']) == 1
+    assert v.warnings['fake-org']
