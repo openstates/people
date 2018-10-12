@@ -86,28 +86,30 @@ def calculate_similarity(existing, new):
     return score
 
 
-def directory_merge(existing_people, new_people, threshold=0.7):
-    perfect_matches = []
-    unmatched = set()
-    matched = set()
+def directory_merge(existing_people, new_people):
     perfect_matched = set()
+    best_match = {}
 
     for new in new_people:
-        unmatched.add(new['id'])
         for existing in existing_people:
             similarity = calculate_similarity(existing, new)
-            if similarity > 0.99:
+            if similarity > 0.999:
                 perfect_matched.add(new['id'])
-            elif similarity > threshold:
-                print('likely match: {} with new {} {}'.format(
-                    get_filename(existing), get_filename(new), similarity
-                ))
-                matched.add(new['id'])
+            elif new['id'] in best_match:
+                cur_similarity, cur_match = best_match[new['id']]
+                if similarity > cur_similarity:
+                    best_match[get_filename(new)] = (similarity, existing)
+            else:
+                best_match[get_filename(new)] = (similarity, existing)
 
-    unmatched -= matched
-    unmatched -= perfect_matched
-    print('unmatched', unmatched)
-    print('perfect_matches', perfect_matches)
+    click.secho(f'{len(perfect_matched)} were perfect matches', fg='green')
+    matches = []
+    for new, (similarity, old) in best_match.items():
+        matches.append((similarity, new, old))
+    for sim, new, old in sorted(matches, reverse=True):
+        if sim < 0.001:
+            break
+        print('{:.2f} {} {}'.format(sim, new, get_filename(old)))
 
 
 def check_merge_candidates(abbr):
@@ -123,8 +125,7 @@ def check_merge_candidates(abbr):
         with open(filename) as f:
             new_people.append(yaml.load(f))
 
-    print(len(existing_people))
-    print(len(new_people))
+    click.secho(f'analyzing {len(existing_people)} existing people and {len(new_people)} incoming')
 
     directory_merge(existing_people, new_people)
 
