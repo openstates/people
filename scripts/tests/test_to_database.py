@@ -1,11 +1,22 @@
 import pytest
 import yaml
 from opencivicdata.core.models import Person, Organization, Jurisdiction, Division
-from to_database import load_person
+from to_database import load_person, load_org
+
+def setup():
+    d = Division.objects.create(id='ocd-division/country:us/state:nc', name='NC')
+    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:nc', name='NC',
+                                    division=d)
+    o = Organization.objects.create(name='House', classification='lower', jurisdiction=j)
+    o.posts.create(label='1')
+    o.posts.create(label='2')
+    o.posts.create(label='3')
+    Organization.objects.create(name='Democratic', classification='party')
+    Organization.objects.create(name='Republican', classification='party')
 
 
 @pytest.mark.django_db
-def test_basic_creation():
+def test_basic_person_creation():
     data = yaml.load("""
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -24,7 +35,7 @@ def test_basic_creation():
 
 
 @pytest.mark.django_db
-def test_basic_updates():
+def test_basic_person_updates():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -57,7 +68,7 @@ def test_basic_updates():
 
 
 @pytest.mark.django_db
-def test_basic_subobjects():
+def test_basic_person_subobjects():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -127,7 +138,7 @@ def test_subobject_update():
 
 
 @pytest.mark.django_db
-def test_identifiers():
+def test_person_identifiers():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -151,7 +162,7 @@ def test_identifiers():
 
 
 @pytest.mark.django_db
-def test_contact_details():
+def test_person_contact_details():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -174,7 +185,7 @@ def test_contact_details():
 
 
 @pytest.mark.django_db
-def test_party():
+def test_person_party():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -182,8 +193,6 @@ def test_party():
         - name: Democratic
     """
     data = yaml.load(yaml_text)
-    Organization.objects.create(name='Democratic', classification='party')
-    Organization.objects.create(name='Republican', classification='party')
 
     created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
@@ -200,7 +209,7 @@ def test_party():
 
 
 @pytest.mark.django_db
-def test_legislative_roles():
+def test_person_legislative_roles():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -210,12 +219,6 @@ def test_legislative_roles():
           jurisdiction: ocd-jurisdiction/country:us/state:nc
     """
     data = yaml.load(yaml_text)
-    d = Division.objects.create(id='ocd-division/country:us/state:nc', name='NC')
-    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:nc', name='NC',
-                                    division=d)
-    o = Organization.objects.create(name='House', classification='lower', jurisdiction=j)
-    o.posts.create(label='3')
-
     created, updated = load_person(data)
     p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
 
@@ -223,4 +226,117 @@ def test_legislative_roles():
     assert p.memberships.get().organization.name == 'House'
     assert p.memberships.get().post.label == '3'
 
-# TODO: committees & executives
+EXAMPLE_ORG_ID = 'ocd-organization/00000000-1111-2222-3333-444455556666'
+
+@pytest.mark.django_db
+def test_basic_organization():
+    data = yaml.load("""
+    id: ocd-organization/00000000-1111-2222-3333-444455556666
+    name: Finance
+    parent: lower
+    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    classification: committee
+    founding_date: '2007-01-01'
+    """)
+    created, updated = load_org(data)
+
+    assert created is True
+    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
+    assert o.name == 'Finance'
+    assert o.jurisdiction.name == 'NC'
+    assert o.parent.name == 'House'
+
+
+@pytest.mark.django_db
+def test_basic_organization_updates():
+    data = yaml.load("""
+    id: ocd-organization/00000000-1111-2222-3333-444455556666
+    name: Finance
+    parent: lower
+    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    classification: committee
+    founding_date: '2007-01-01'
+    """)
+    created, updated = load_org(data)
+    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
+    created_at, updated_at = o.created_at, o.updated_at
+
+    # ensure no change means no change
+    created, updated = load_org(data)
+    assert created is False
+    assert updated is False
+    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
+    assert o.created_at == created_at
+    assert o.updated_at == updated_at
+
+    # ensure extra changes got captured
+    data['founding_date'] = '2008-01-01'
+    created, updated = load_org(data)
+    assert created is False
+    assert updated is True
+    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
+    assert o.updated_at > updated_at
+    assert o.founding_date == '2008-01-01'
+
+
+@pytest.mark.django_db
+def test_organization_memberships():
+    data = yaml.load("""
+    id: ocd-organization/00000000-1111-2222-3333-444455556666
+    name: Finance
+    parent: lower
+    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    classification: committee
+    founding_date: '2007-01-01'
+    memberships:
+        - id: 123
+          name: Jane Smith
+        - name: Noah Idy
+    """)
+    Person.objects.create(id='123', name='Jane Smith')
+    created, updated = load_org(data)
+    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
+    created_at, updated_at = o.created_at, o.updated_at
+    assert o.memberships.count() == 2
+
+    data['memberships'].append({'name': 'Another One', 'role': 'Chairman'})
+    created, updated = load_org(data)
+    assert created is False
+    assert updated is True
+    assert o.memberships.count() == 3
+    assert o.memberships.filter(role='Chairman')[0].person_name == 'Another One'
+
+    data['memberships'] = []
+    created, updated = load_org(data)
+    assert created is False
+    assert updated is True
+    assert o.memberships.count() == 0
+
+
+@pytest.mark.django_db
+def test_org_person_membership_interaction():
+    # this test ensure that committee memberships don't mess up person loading
+    person_data = {'id': '123', 'name': 'Jane Smith'}
+    com_data = yaml.load("""
+    id: ocd-organization/00000000-1111-2222-3333-444455556666
+    name: Finance
+    parent: lower
+    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    classification: committee
+    founding_date: '2007-01-01'
+    memberships:
+        - id: 123
+          name: Jane Smith
+    """)
+    load_person(person_data)
+    load_org(com_data)
+    p = Person.objects.get(pk='123')
+    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
+    assert o.memberships.count() == 1
+
+    # re-import person, make sure it doesn't count as an update and that the membership persists
+    #  (this corresponds to the use of read_manager in update_subobjects)
+    created, updated = load_person(person_data)
+    assert created is False
+    assert updated is False
+    assert o.memberships.count() == 1

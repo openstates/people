@@ -13,10 +13,17 @@ class CancelTransaction(Exception):
     pass
 
 
-def update_subobjects(person, fieldname, objects):
+def update_subobjects(person, fieldname, objects, read_manager=None):
     """ returns True if there are any updates """
+    # we need the default manager for this field in case we need to do updates
     manager = getattr(person, fieldname)
-    current_count = manager.count()
+
+    # if a read_manager is passed, we'll use that for all read operations
+    # this is used for Person.memberships to ensure we don't wipe out committee memberships
+    if read_manager is None:
+        read_manager = manager
+
+    current_count = read_manager.count()
     updated = False
 
     # if counts differ, we need to do an update for sure
@@ -27,13 +34,13 @@ def update_subobjects(person, fieldname, objects):
     for obj in objects:
         if updated:
             break
-        if manager.filter(**obj).count() != 1:
+        if read_manager.filter(**obj).count() != 1:
             updated = True
 
     # if there's been an update, wipe the old & insert the new
     if updated:
         if current_count:
-            manager.all().delete()
+            read_manager.all().delete()
         for obj in objects:
             manager.create(**obj)
         # save to bump updated_at timestamp
@@ -53,7 +60,7 @@ def get_update_or_create(ModelCls, data):
         if updated:
             obj.save()
     except ModelCls.DoesNotExist:
-        obj = ModelCls.objects.create(id=data['id'], **data)
+        obj = ModelCls.objects.create(**data)
         created = True
     return obj, created, updated
 
@@ -62,7 +69,8 @@ def load_person(data):
     # import has to be here so that Django is set up
     from opencivicdata.core.models import Person, Organization, Post
 
-    fields = dict(name=data['name'],
+    fields = dict(id=data['id'],
+                  name=data['name'],
                   given_name=data.get('given_name', ''),
                   family_name=data.get('family_name', ''),
                   gender=data.get('gender', ''),
@@ -95,11 +103,6 @@ def load_person(data):
     updated |= update_subobjects(person, 'contact_details', contact_details)
 
     memberships = []
-    # for committee in data.get('committees', []):
-    #     org = Organization.objects.get(classification='committee', name=committee['name'])
-    #     memberships.append({'organization': org,
-    #                         'start_date': party.get('start_date', ''),
-    #                         'end_date': party.get('end_date', '')})
     for party in data.get('party', []):
         try:
             org = Organization.objects.get(classification='party', name=party['name'])
@@ -129,13 +132,17 @@ def load_person(data):
                             'start_date': role.get('start_date', ''),
                             'end_date': role.get('end_date', '')})
 
-    updated |= update_subobjects(person, 'memberships', memberships)
+    # note that we don't manager committee memberships here
+    updated |= update_subobjects(
+        person, 'memberships', memberships,
+        read_manager=person.memberships.exclude(organization__classification='committee')
+    )
 
     return created, updated
 
 
 def load_org(data):
-    from opencivicdata.core.models import Organization
+    from opencivicdata.core.models import Organization, Person
 
     parent_id = data['parent']
     if parent_id.startswith('ocd-organization'):
@@ -149,11 +156,34 @@ def load_org(data):
         name=data['name'],
         jurisdiction_id=data['jurisdiction'],
         classification=data['classification'],
-        founding_date=data['founding_date'],
-        dissolution_date=data['dissolution_date'],
+        founding_date=data.get('founding_date', ''),
+        dissolution_date=data.get('dissolution_date', ''),
         parent=parent,
     )
     org, created, updated = get_update_or_create(Organization, fields)
+
+    updated |= update_subobjects(org, 'links', data.get('links', []))
+    updated |= update_subobjects(org, 'sources', data.get('sources', []))
+
+    memberships = []
+    for role in data.get('memberships', []):
+        if role.get('id'):
+            try:
+                person = Person.objects.get(pk=role['id'])
+            except Person.DoesNotExist:
+                click.secho(f"no such person {role['id']}", fg='red')
+                raise CancelTransaction()
+        else:
+            person = None
+
+        memberships.append({'person': person,
+                            'person_name': role['name'],
+                            'role': role.get('role', 'member'),
+                            'start_date': role.get('start_date', ''),
+                            'end_date': role.get('end_date', '')})
+    updated |= update_subobjects(org, 'memberships', memberships)
+
+    return created, updated
 
 
 def load_directory(files, type, jurisdiction_id, purge):
@@ -171,7 +201,8 @@ def load_directory(files, type, jurisdiction_id, purge):
     elif type == 'organization':
         from opencivicdata.core.models import Organization
         existing_ids = set(Organization.objects.filter(
-            jurisdiction_id=jurisdiction_id
+            jurisdiction_id=jurisdiction_id,
+            classification='committee',
         ).values_list('id', flat=True))
         ModelCls = Organization
         load_func = load_org
@@ -242,6 +273,7 @@ def to_database(abbr, verbose, summary, purge, safe):
 
     person_files = (glob.glob(os.path.join(directory, 'people/*.yml')) +
                     glob.glob(os.path.join(directory, 'retired/*.yml')))
+    committee_files = glob.glob(os.path.join(directory, 'organizations/*.yml'))
 
     if safe:
         click.secho('running in safe mode, no changes will be made', fg='magenta')
@@ -249,6 +281,8 @@ def to_database(abbr, verbose, summary, purge, safe):
     try:
         with transaction.atomic():
             load_directory(person_files, 'person', jurisdiction_id, purge=purge)
+            load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
+
         if safe:
             click.secho('ran in safe mode, no changes were made', fg='magenta')
             raise CancelTransaction()
