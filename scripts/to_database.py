@@ -228,12 +228,12 @@ def load_directory(files, type, jurisdiction_id, purge):
             click.secho(f'  {id}')
         raise CancelTransaction()
     elif missing_ids and purge:
-        click.secho(f'{len(missing_ids)} {type} purged', fg='yellow')
+        click.secho(f'{len(missing_ids)} purged', fg='yellow')
         ModelCls.objects.filter(id__in=missing_ids).delete()
 
     # TODO: check new_ids?
     # new_ids = ids - existing_ids
-    click.secho(f'processed {len(ids)} files, {created_count} created, '
+    click.secho(f'processed {len(ids)} {type} files, {created_count} created, '
                 f'{updated_count} updated', fg='green')
 
 
@@ -282,10 +282,9 @@ def to_database(abbr, verbose, summary, purge, safe):
         with transaction.atomic():
             load_directory(person_files, 'person', jurisdiction_id, purge=purge)
             load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
-
-        if safe:
-            click.secho('ran in safe mode, no changes were made', fg='magenta')
-            raise CancelTransaction()
+            if safe:
+                click.secho('ran in safe mode, no changes were made', fg='magenta')
+                raise CancelTransaction()
     except CancelTransaction:
         pass
 
