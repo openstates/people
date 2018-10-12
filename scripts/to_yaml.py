@@ -179,7 +179,8 @@ def process_org(org, jurisdiction_id):
 @click.command()
 @click.argument('input_dir')
 @click.option('--reset/--no-reset', default=False)
-def to_yaml(input_dir, reset):
+@click.option('--incoming/--no-incoming', default=False)
+def to_yaml(input_dir, reset, incoming):
     # TODO: remove reset option once we're in prod
 
     # abbr is last piece of directory name
@@ -191,6 +192,11 @@ def to_yaml(input_dir, reset):
 
     output_dir = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)
+
+    if incoming:
+        output_dir = output_dir.replace('test', 'incoming')
+        # TODO: replace this when we drop test prefix
+        # output_dir = os.path.join('incoming', output_dir)
 
     for dir in ('people', 'organizations'):
         try:

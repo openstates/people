@@ -1,5 +1,5 @@
 import pytest
-from merge import compare_objects, ItemDifference, ListDifference
+from merge import compare_objects, ItemDifference, ListDifference, calculate_similarity
 
 
 @pytest.mark.parametrize("a, b, output", [
@@ -40,3 +40,23 @@ def test_compare_objects_nested(a, b, output):
 ])
 def test_compare_objects_list(a, b, output):
     assert compare_objects(a, b) == output
+
+
+def test_calculate_similarity():
+    base_person = {'id': '123', 'name': 'A. Person',
+                   'birth_date': '1980-01-01',
+                   'party': [{'name': 'Democratic'}]}
+
+    new_id_person = base_person.copy()
+    new_id_person['id'] = '456'
+    assert calculate_similarity(base_person, new_id_person) == pytest.approx(1)
+
+    new_name_person = base_person.copy()
+    new_name_person['name'] = 'Another Person'
+    assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.8)
+
+    new_name_person['death_date'] = '2018-01-01'
+    assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.7)
+
+    new_name_person['roles'] = [{'type': 'lower', 'district': '3'}]
+    assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.6)

@@ -1,4 +1,10 @@
-from utils import get_filename
+#!/usr/bin/env python
+
+import os
+import glob
+import yaml
+import click
+from utils import get_filename, get_data_dir
 
 
 class ListDifference:
@@ -34,6 +40,10 @@ def compare_objects(obj1, obj2, prefix=''):
         val2 = obj2.get(key)
         if isinstance(val1, list) or isinstance(val2, list):
             # we can compare this way since order doesn't matter
+            if val1 is None:
+                val1 = []
+            if val2 is None:
+                val2 = []
             for item in val1:
                 if item not in val2:
                     differences.append(ListDifference(key_name, item, 'first'))
@@ -48,33 +58,85 @@ def compare_objects(obj1, obj2, prefix=''):
 
 
 def calculate_similarity(existing, new):
+    """
+        if everything is equal except for the id: 1
+        if names differ, maximum match is 0.8
+        for each item that differs, we decrease score by 0.1
+    """
     differences = compare_objects(existing, new)
 
     # if nothing differs or only id differs
     if len(differences) == 0 or (len(differences) == 1 and differences[0].key_name == 'id'):
         return 1
 
-    if len(differences) < 2:
-        return 0.9
+    if existing['name'] != new['name']:
+        score = 0.9     # will have another 0.1 deducted later
+    else:
+        score = 1
 
-    return 0
+    score -= 0.1*len(differences)
+
+    # don't count id difference
+    if existing['id'] != new['id']:
+        score += 0.1
+
+    if score < 0:
+        score = 0
+
+    return score
 
 
-def directory_merge(existing_people, new_people, threshold=90):
+def directory_merge(existing_people, new_people, threshold=0.7):
     perfect_matches = []
     unmatched = set()
     matched = set()
+    perfect_matched = set()
 
     for new in new_people:
         unmatched.add(new['id'])
         for existing in existing_people:
             similarity = calculate_similarity(existing, new)
-            if similarity == 100:
-                perfect_matches.append(similarity)
+            if similarity > 0.99:
+                perfect_matched.add(new['id'])
             elif similarity > threshold:
-                print('likely match: {} with new {}'.format(
-                    get_filename(existing), get_filename(new)
+                print('likely match: {} with new {} {}'.format(
+                    get_filename(existing), get_filename(new), similarity
                 ))
                 matched.add(new['id'])
 
     unmatched -= matched
+    unmatched -= perfect_matched
+    print('unmatched', unmatched)
+    print('perfect_matches', perfect_matches)
+
+
+def check_merge_candidates(abbr):
+    existing_people = []
+    for filename in (glob.glob(os.path.join(get_data_dir(abbr), 'people/*.yml')) +
+                     glob.glob(os.path.join(get_data_dir(abbr), 'retired/*.yml'))):
+        with open(filename) as f:
+            existing_people.append(yaml.load(f))
+
+    new_people = []
+    incoming_dir = get_data_dir(abbr).replace('test', 'incoming')
+    for filename in glob.glob(os.path.join(incoming_dir, 'people/*.yml')):
+        with open(filename) as f:
+            new_people.append(yaml.load(f))
+
+    print(len(existing_people))
+    print(len(new_people))
+
+    directory_merge(existing_people, new_people)
+
+
+@click.command()
+# @click.argument('abbr', default='*')
+# @click.option('-v', '--verbose', count=True)
+@click.option('--incoming', default=None)
+def entrypoint(incoming):
+    if incoming:
+        check_merge_candidates(incoming)
+
+
+if __name__ == '__main__':
+    entrypoint()
