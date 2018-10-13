@@ -302,7 +302,10 @@ class Validator:
         self.id_counts = Counter()
         self.optional_fields = Counter()
         self.extra_counts = Counter()
+        # role type -> district -> person
         self.active_legislators = defaultdict(lambda: defaultdict(list))
+        # field name -> value -> person
+        self.duplicate_values = defaultdict(lambda: defaultdict(list))
 
     def validate_person(self, person, filename, retired=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
@@ -367,14 +370,20 @@ class Validator:
                 self.parties[role['name']] += 1
 
         for cd in person.get('contact_details', []):
-            for key in cd:
+            for key, value in cd.items():
                 if key != 'note':
                     self.contact_counts[key] += 1
+                    # currently too aggressive:
+                    # plenty of valid cases where legislators share
+                    # phone numbers & addresses apparently
+                    # self.duplicate_values[key][value].append(person)
 
-        for scheme in person.get('ids', {}):
+        for scheme, value in person.get('ids', {}).items():
             self.id_counts[scheme] += 1
+            self.duplicate_values[scheme][value].append(person)
         for id in person.get('other_identifiers', []):
             self.id_counts[id['scheme']] += 1
+            self.duplicate_values[id['scheme']][id['identifier']].append(person)
 
     def summarize_org(self, org):
         self.org_count += 1
@@ -390,6 +399,23 @@ class Validator:
             if role_is_active(m):
                 self.role_types[m.get('role', 'member')] += 1
 
+    def check_duplicates(self):
+        """
+        duplicates should already be stored in self.duplicate_values
+        this method just needs to turn them into errors
+        """
+        errors = []
+        for key, values in self.duplicate_values.items():
+            for value, instances in values.items():
+                if len(instances) > 1:
+                    if len(instances) > 3:
+                        instance_str = ', '.join(get_filename(i) for i in instances[:3])
+                        instance_str += ' and {} more...'.format(len(instances)-3)
+                    else:
+                        instance_str = ', '.join(get_filename(i) for i in instances)
+                    errors.append(f'duplicate {key}: "{value}" {instance_str}')
+        return errors
+
     def print_validation_report(self, verbose):
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
@@ -401,6 +427,9 @@ class Validator:
                     click.secho(' ' + warning, fg='yellow')
             if not errors and verbose > 0:
                 click.secho(fn, 'OK!', fg='green')
+
+        for err in self.check_duplicates():
+            click.secho(err, fg='red')
 
         errors, warnings = compare_districts(self.expected, self.active_legislators)
         for err in errors:

@@ -255,6 +255,46 @@ def test_person_summary():
     assert v.extra_counts == {'religion': 1}
 
 
+def test_person_duplicates():
+    settings = {'us': {'upper_seats': 100, 'lower_seats': 435},
+                'http_whitelist': ['http://bad.example.com']}
+    v = Validator(settings, 'us')
+
+
+    people = [
+        # duplicates across people
+        {
+            'id': 'ocd-person/1', 'name': 'One',
+            'ids': {'twitter': 'no-twitter', 'youtube': 'fake'},
+         },
+        {
+            'id': 'ocd-person/2', 'name': 'Two',
+            'ids': {'twitter': 'no-twitter', 'youtube': 'fake'},
+         },
+        # duplicate on same person
+        {
+            'id': 'ocd-person/3', 'name': 'Three',
+            'ids': {'twitter': 'no-twitter'},
+            'other_identifiers': [
+                {'scheme': 'external_service_id', 'identifier': 'XYZ'},
+                {'scheme': 'external_service_id', 'identifier': 'XYZ'},
+            ]
+         },
+        {
+            'id': 'ocd-person/4', 'name': 'Four',
+            'ids': {'twitter': 'no-twitter'},
+         },
+    ]
+    for p in people:
+        v.summarize_person(p)
+    errors = v.check_duplicates()
+    assert len(errors) == 3
+    assert 'duplicate youtube: "fake" One-1.yml, Two-2.yml' in errors
+    assert 'duplicate external_service_id: "XYZ" Three-3.yml, Three-3.yml' in errors
+    assert ('duplicate twitter: "no-twitter" One-1.yml, Two-2.yml, Three-3.yml and 1 more...'
+            in errors)
+
+
 def test_validate_org_memberships():
     person = {'id': EXAMPLE_OCD_PERSON_ID,
               'name': 'Jane Smith',
