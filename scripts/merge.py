@@ -88,28 +88,36 @@ def calculate_similarity(existing, new):
 
 def directory_merge(existing_people, new_people):
     perfect_matched = set()
-    best_match = {}
+    matches = []
 
     for new in new_people:
+        best_similarity = 0
+        best_match = None
+
         for existing in existing_people:
             similarity = calculate_similarity(existing, new)
             if similarity > 0.999:
                 perfect_matched.add(new['id'])
-            elif new['id'] in best_match:
-                cur_similarity, cur_match = best_match[new['id']]
-                if similarity > cur_similarity:
-                    best_match[get_filename(new)] = (similarity, existing)
-            else:
-                best_match[get_filename(new)] = (similarity, existing)
+                continue
+
+            if similarity > best_similarity:
+                best_similarity = similarity
+                best_match = existing
+
+        matches.append((best_similarity, new, best_match))
 
     click.secho(f'{len(perfect_matched)} were perfect matches', fg='green')
-    matches = []
-    for new, (similarity, old) in best_match.items():
-        matches.append((similarity, new, old))
-    for sim, new, old in sorted(matches, reverse=True):
+
+    unmatched = set(p['id'] for p in new_people) - perfect_matched
+
+    for sim, new, old in sorted(matches, reverse=True, key=lambda x: x[0]):
         if sim < 0.001:
             break
-        print('{:.2f} {} {}'.format(sim, new, get_filename(old)))
+        unmatched.remove(new['id'])
+        click.secho(' {:.2f} {} {}'.format(sim, get_filename(new), get_filename(old)),
+                    fg='yellow')
+
+    click.secho(f'{len(unmatched)} were unmatched')
 
 
 def check_merge_candidates(abbr):
@@ -131,8 +139,6 @@ def check_merge_candidates(abbr):
 
 
 @click.command()
-# @click.argument('abbr', default='*')
-# @click.option('-v', '--verbose', count=True)
 @click.option('--incoming', default=None)
 def entrypoint(incoming):
     if incoming:
