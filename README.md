@@ -1,6 +1,8 @@
 Open States People
 ===================
 
+[![Build Status](https://travis-ci.org/openstates/people.svg?branch=master)](https://travis-ci.org/openstates/people)
+
 Repository of curated information on all state legislators & governors.
 
 This is currently experimental, but is intended as an eventual replacement for running Open States' person scrapers nightly.
