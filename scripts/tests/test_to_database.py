@@ -3,6 +3,7 @@ import yaml
 from opencivicdata.core.models import Person, Organization, Jurisdiction, Division
 from to_database import load_person, load_org
 
+
 def setup():
     d = Division.objects.create(id='ocd-division/country:us/state:nc', name='NC')
     j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:nc', name='NC',
@@ -226,7 +227,9 @@ def test_person_legislative_roles():
     assert p.memberships.get().organization.name == 'House'
     assert p.memberships.get().post.label == '3'
 
+
 EXAMPLE_ORG_ID = 'ocd-organization/00000000-1111-2222-3333-444455556666'
+
 
 @pytest.mark.django_db
 def test_basic_organization():
@@ -296,7 +299,6 @@ def test_organization_memberships():
     Person.objects.create(id='123', name='Jane Smith')
     created, updated = load_org(data)
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    created_at, updated_at = o.created_at, o.updated_at
     assert o.memberships.count() == 2
 
     data['memberships'].append({'name': 'Another One', 'role': 'Chairman'})
@@ -330,7 +332,6 @@ def test_org_person_membership_interaction():
     """)
     load_person(person_data)
     load_org(com_data)
-    p = Person.objects.get(pk='123')
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
     assert o.memberships.count() == 1
 
