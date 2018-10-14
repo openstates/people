@@ -111,9 +111,8 @@ def process_person(person, jurisdiction_id):
         name=person['name'],
         party=[],
         roles=[],
-        links=[process_link(link) for link in person['links']],
         contact_details=[],
-        # maybe post-process these?
+        links=[process_link(link) for link in person['links']],
         sources=[process_link(link) for link in person['sources']],
     )
 
@@ -128,7 +127,6 @@ def process_person(person, jurisdiction_id):
 
     result['contact_details'] = [{'note': key, **val} for key, val in contact_details.items()]
 
-    # memberships!
     for membership in person['memberships']:
         organization_id = membership['organization_id']
         if not organization_id.startswith('~'):

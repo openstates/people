@@ -23,7 +23,7 @@ def retire_person(person, end_date):
     return person, num
 
 
-def move_file(filename):
+def move_file(filename):        # pragma: no cover
     new_filename = filename.replace('/people/', '/retired/')
     click.secho(f'moved from {filename} to {new_filename}')
     os.renames(filename, new_filename)

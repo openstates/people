@@ -215,8 +215,8 @@ def validate_obj(obj, schema, prefix=None):
                 for index, item in enumerate(value):
                     errors.extend(['.'.join([field, str(index)]) + ': ' + e
                                    for e in validators.subschema(item)])
-        else:
-            raise Exception('invalid schema {}'.format(validators))
+        else:   # pragma: no cover
+            raise ValueError('invalid schema {}'.format(validators))
 
     # check for extra items that went without validation
     for key in set(obj.keys()) - set(schema.keys()):
@@ -249,7 +249,7 @@ def get_expected_districts(settings):
             expected[key] = {s: 1 for s in seats}
         elif isinstance(seats, dict):
             expected[key] = seats
-        else:
+        else:   # pragma: no cover
             raise ValueError(seats)
     return expected
 
@@ -416,7 +416,7 @@ class Validator:
                     errors.append(f'duplicate {key}: "{value}" {instance_str}')
         return errors
 
-    def print_validation_report(self, verbose):
+    def print_validation_report(self, verbose):     # pragma: no cover
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
             if errors or warnings:
@@ -437,7 +437,7 @@ class Validator:
         for warning in warnings:
             click.secho(warning, fg='yellow')
 
-    def print_summary(self):
+    def print_summary(self):                        # pragma: no cover
         click.secho(f'processed {self.person_count} active people, {self.retired_count} retired & '
                     f'{self.org_count} organizations', bold=True)
         for role_type in self.active_legislators:
@@ -473,7 +473,7 @@ class Validator:
             click.secho(f'{count:4d} {role} roles')
 
 
-def process_dir(abbr, verbose, summary, settings):
+def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'retired', '*.yml'))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'organizations', '*.yml'))

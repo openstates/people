@@ -134,24 +134,6 @@ def directory_merge(existing_people, new_people):
     click.secho(f'{len(unmatched)} were unmatched')
 
 
-def check_merge_candidates(abbr):
-    existing_people = []
-    for filename in (glob.glob(os.path.join(get_data_dir(abbr), 'people/*.yml')) +
-                     glob.glob(os.path.join(get_data_dir(abbr), 'retired/*.yml'))):
-        with open(filename) as f:
-            existing_people.append(yaml.load(f))
-
-    new_people = []
-    incoming_dir = get_data_dir(abbr).replace('test', 'incoming')
-    for filename in glob.glob(os.path.join(incoming_dir, 'people/*.yml')):
-        with open(filename) as f:
-            new_people.append(yaml.load(f))
-
-    click.secho(f'analyzing {len(existing_people)} existing people and {len(new_people)} incoming')
-
-    directory_merge(existing_people, new_people)
-
-
 def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
     differences = compare_objects(old, new)
     for difference in differences:
@@ -211,7 +193,25 @@ def entrypoint(incoming, old, new, keep):
         File merge mode merges two legislator files.
     """
     if incoming:
-        check_merge_candidates(incoming)
+        abbr = incoming
+        existing_people = []
+        for filename in (glob.glob(os.path.join(get_data_dir(abbr), 'people/*.yml')) +
+                         glob.glob(os.path.join(get_data_dir(abbr), 'retired/*.yml'))):
+            with open(filename) as f:
+                existing_people.append(yaml.load(f))
+
+        new_people = []
+        incoming_dir = get_data_dir(abbr).replace('test', 'incoming')
+        for filename in glob.glob(os.path.join(incoming_dir, 'people/*.yml')):
+            with open(filename) as f:
+                new_people.append(yaml.load(f))
+
+        click.secho(
+            f'analyzing {len(existing_people)} existing people and {len(new_people)} incoming'
+        )
+
+        directory_merge(existing_people, new_people)
+
     if old and new:
         with open(old) as f:
             old_obj = load_yaml(f)

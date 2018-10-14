@@ -108,7 +108,7 @@ def load_person(data):
             org = Organization.objects.get(classification='party', name=party['name'])
         except Organization.DoesNotExist:
             click.secho(f"no such party {party['name']}", fg='red')
-            raise
+            raise CancelTransaction()
         memberships.append({'organization': org,
                             'start_date': party.get('start_date', ''),
                             'end_date': party.get('end_date', '')})
@@ -231,13 +231,11 @@ def load_directory(files, type, jurisdiction_id, purge):
         click.secho(f'{len(missing_ids)} purged', fg='yellow')
         ModelCls.objects.filter(id__in=missing_ids).delete()
 
-    # TODO: check new_ids?
-    # new_ids = ids - existing_ids
     click.secho(f'processed {len(ids)} {type} files, {created_count} created, '
                 f'{updated_count} updated', fg='green')
 
 
-def init_django():
+def init_django():      # pragma: no cover
     conf.settings.configure(
         conf.global_settings,
         SECRET_KEY='not-important',
