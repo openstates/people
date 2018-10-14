@@ -184,11 +184,32 @@ def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
 
 
 @click.command()
-@click.option('--incoming', default=None)
-@click.option('--old', default=None)
-@click.option('--new', default=None)
-@click.option('--keep', default=None)
+@click.option('--incoming', default=None,
+              help='Operate in incoming mode, argument should be state abbr to scan.')
+@click.option('--old', default=None,
+              help='Operate in merge mode, this is the older of two files & will be kept.')
+@click.option('--new', default=None,
+              help='In merge mode, this is the newer file that will be removed after merge.')
+@click.option('--keep', default=None,
+              help='''When operating in merge mode, select which data to keep.
+Values:
+old
+    Keep data in old file if there's conflict.
+new
+    Keep data in new file if there's conflict.
+
+When omitted, conflicts will raise error.''')
 def entrypoint(incoming, old, new, keep):
+    """
+        Script to assist with merging legislator files.
+
+        Can be used in two modes: incoming or file merge.
+
+        Incoming mode analyzes incoming/ directory files (generated with to_yaml.py)
+        and discovers identical & similar files to assist with merging.
+
+        File merge mode merges two legislator files.
+    """
     if incoming:
         check_merge_candidates(incoming)
     if old and new:

@@ -176,11 +176,14 @@ def process_org(org, jurisdiction_id):
     )
 
 
-@click.command()
+@click.command()                # pragma: no cover
 @click.argument('input_dir')
 @click.option('--reset/--no-reset', default=False)
 @click.option('--incoming/--no-incoming', default=False)
 def to_yaml(input_dir, reset, incoming):
+    """
+    Convert pupa scraped JSON in INPUT_DIR to YAML files for this repo.
+    """
     # TODO: remove reset option once we're in prod
 
     # abbr is last piece of directory name

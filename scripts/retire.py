@@ -33,6 +33,11 @@ def move_file(filename):
 @click.argument('end_date')
 @click.argument('filename')
 def retire(end_date, filename):
+    """
+    Retire a legislator, given END_DATE and FILENAME.
+
+    Will set end_date on active roles & committee memberships.
+    """
     # end the person's active roles & re-save
     with open(filename) as f:
         person = load_yaml(f)

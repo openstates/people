@@ -262,11 +262,14 @@ def init_django():
 
 @click.command()
 @click.argument('abbr', default='*')
-@click.option('-v', '--verbose', count=True)
-@click.option('--summary/--no-summary', default=False)
-@click.option('--purge/--no-purge', default=False)
-@click.option('--safe/--no-safe', default=False)
-def to_database(abbr, verbose, summary, purge, safe):
+@click.option('--purge/--no-purge', default=False,
+              help="Purge all legislators from DB that aren't in YAML.")
+@click.option('--safe/--no-safe', default=False,
+              help="Operate in safe mode, no changes will be written to database.")
+def to_database(abbr, purge, safe):
+    """
+    Sync YAML files to DB.
+    """
     init_django()
     directory = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)

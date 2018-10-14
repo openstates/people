@@ -506,8 +506,14 @@ def process_dir(abbr, verbose, summary, settings):
 @click.command()
 @click.argument('abbr', default='*')
 @click.option('-v', '--verbose', count=True)
-@click.option('--summary/--no-summary', default=False)
+@click.option('--summary/--no-summary', default=False,
+              help='Print summary after validation errors.')
 def lint(abbr, verbose, summary):
+    """
+        Lint YAML files, optionally also providing a summary of state's data.
+
+        <ABBR> can be provided to restrict linting to single state's files.
+    """
     settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
     with open(settings_file) as f:
         settings = yaml.load(f)
