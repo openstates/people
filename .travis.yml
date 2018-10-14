@@ -23,5 +23,7 @@ jobs:
       env:
         - PYTHONPATH=scripts
       name: "Test Python"
+      after_success:
+        - coveralls
     # - script: ./scripts/check_yaml.py
     #   name: "Check YAML"
