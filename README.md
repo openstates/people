@@ -2,6 +2,7 @@ Open States People
 ===================
 
 [![Build Status](https://travis-ci.org/openstates/people.svg?branch=master)](https://travis-ci.org/openstates/people)
+[![Coverage Status](https://coveralls.io/repos/github/openstates/people/badge.svg?branch=master)](https://coveralls.io/github/openstates/people?branch=master)
 
 Repository of curated information on all state legislators & governors.
 
