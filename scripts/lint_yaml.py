@@ -1,11 +1,17 @@
 #!/usr/bin/env python
 import re
 import os
+import sys
+import datetime
 import yaml
 import glob
 import click
 from utils import get_data_dir, get_filename, role_is_active
 from collections import defaultdict, Counter
+
+
+class BadVacancy(Exception):
+    pass
 
 
 DATE_RE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
@@ -246,36 +252,50 @@ def get_expected_districts(settings):
             # one seat per district by default
             expected[key] = {str(s): 1 for s in range(1, seats+1)}
         elif isinstance(seats, list):
-            expected[key] = {s: 1 for s in seats}
+            expected[key] = {str(s): 1 for s in seats}
         elif isinstance(seats, dict):
             expected[key] = seats
         else:
             raise ValueError(seats)
+
+    vacancies = settings.get('vacancies', [])
+    if vacancies:
+        click.secho(f'Processing {len(vacancies)} vacancies:')
+    for vacancy in settings.get('vacancies', []):
+        if datetime.date.today() < vacancy['vacant_until']:
+            expected[vacancy['chamber']][str(vacancy['district'])] -= 1
+            click.secho('\t{chamber}-{district} (until {vacant_until})'.format(**vacancy),
+                        fg='yellow')
+        else:
+            click.secho('\t{chamber}-{district} expired {vacant_until} remove & re-run'.format(
+                **vacancy), fg='red')
+            raise BadVacancy()
+
     return expected
 
 
 def compare_districts(expected, actual):
     errors = []
-    warnings = []
 
     if expected.keys() != actual.keys():
         errors.append(f'expected districts for {expected.keys()}, got {actual.keys()}')
-        return errors, warnings
+        return errors
 
     for chamber in expected:
         expected_districts = set(expected[chamber].keys())
         actual_districts = set(actual[chamber].keys())
         for district in sorted(expected_districts - actual_districts):
-            warnings.append(f'missing legislator for {chamber} {district}')
+            if expected[chamber][district]:
+                errors.append(f'missing legislator for {chamber} {district}')
         for district in sorted(actual_districts - expected_districts):
             errors.append(f'extra legislator for unexpected seat {chamber} {district}')
         for district in sorted(actual_districts & expected_districts):
             if len(actual[chamber][district]) < expected[chamber][district]:
-                warnings.append(f'missing legislator for {chamber} {district}')
+                errors.append(f'missing legislator for {chamber} {district}')
             if len(actual[chamber][district]) > expected[chamber][district]:
                 people = '\n\t'.join(get_filename(o) for o in actual[chamber][district])
                 errors.append(f'extra legislator for {chamber} {district}:\n\t' + people)
-    return errors, warnings
+    return errors
 
 
 class Validator:
@@ -285,7 +305,7 @@ class Validator:
                               'links', 'other_names', 'sources',
                               ))
 
-    def __init__(self, settings, abbr):
+    def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get('http_whitelist', []))
         self.expected = get_expected_districts(settings[abbr])
         self.errors = defaultdict(list)
@@ -431,11 +451,9 @@ class Validator:
         for err in self.check_duplicates():
             click.secho(err, fg='red')
 
-        errors, warnings = compare_districts(self.expected, self.active_legislators)
+        errors = compare_districts(self.expected, self.active_legislators)
         for err in errors:
             click.secho(err, fg='red')
-        for warning in warnings:
-            click.secho(warning, fg='yellow')
 
     def print_summary(self):
         click.secho(f'processed {self.person_count} active people, {self.retired_count} retired & '
@@ -477,7 +495,10 @@ def process_dir(abbr, verbose, summary, settings):
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'retired', '*.yml'))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'organizations', '*.yml'))
-    validator = Validator(settings, abbr)
+    try:
+        validator = Validator(abbr, settings)
+    except BadVacancy:
+        sys.exit(-1)
 
     for filename in person_filenames:
         print_filename = os.path.basename(filename)
