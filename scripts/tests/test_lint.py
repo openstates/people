@@ -260,7 +260,6 @@ def test_person_duplicates():
                 'http_whitelist': ['http://bad.example.com']}
     v = Validator(settings, 'us')
 
-
     people = [
         # duplicates across people
         {

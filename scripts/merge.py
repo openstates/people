@@ -4,7 +4,7 @@ import os
 import glob
 import yaml
 import click
-from utils import get_filename, get_data_dir
+from utils import get_filename, get_data_dir, load_yaml, dump_obj
 
 
 class ListDifference:
@@ -18,6 +18,9 @@ class ListDifference:
                 self.list_item == other.list_item and
                 self.which_list == other.which_list)
 
+    def __str__(self):
+        return f'{self.key_name}: {self.list_item} only in {self.which_list}'
+
 
 class ItemDifference:
     def __init__(self, key_name, value_one, value_two):
@@ -29,6 +32,17 @@ class ItemDifference:
         return (self.key_name == other.key_name and
                 self.value_one == other.value_one and
                 self.value_two == other.value_two)
+
+    def __str__(self):
+        return f'{self.key_name}: {self.value_one} != {self.value_two}'
+
+
+class MergeConflict(Exception):
+    def __init__(self, difference):
+        self.difference = difference
+
+    def __str__(self):
+        return str(self.difference)
 
 
 def compare_objects(obj1, obj2, prefix=''):
@@ -138,11 +152,57 @@ def check_merge_candidates(abbr):
     directory_merge(existing_people, new_people)
 
 
+def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
+    differences = compare_objects(old, new)
+    for difference in differences:
+
+        if difference.key_name == 'id':
+            if keep_both_ids:
+                if 'other_identifiers' not in old:
+                    old['other_identifiers'] = []
+                old['other_identifiers'].append({'scheme': 'openstates',
+                                                 'identifier': new['id']})
+            continue
+
+        if isinstance(difference, ItemDifference):
+            if difference.value_one is None:
+                old[difference.key_name] = difference.value_two
+            elif difference.value_two is None:
+                pass
+            elif keep_on_conflict == 'old':
+                pass
+            elif keep_on_conflict == 'new':
+                old[difference.key_name] = difference.value_two
+            else:
+                raise MergeConflict(difference)
+
+        if isinstance(difference, ListDifference):
+            # only need to handle case where item is only in second list
+            if difference.which_list == 'second':
+                old[difference.key_name].append(difference.list_item)
+    return old
+
+
 @click.command()
 @click.option('--incoming', default=None)
-def entrypoint(incoming):
+@click.option('--old', default=None)
+@click.option('--new', default=None)
+@click.option('--keep', default=None)
+def entrypoint(incoming, old, new, keep):
     if incoming:
         check_merge_candidates(incoming)
+    if old and new:
+        with open(old) as f:
+            old_obj = load_yaml(f)
+        with open(new) as f:
+            new_obj = load_yaml(f)
+        if keep not in ('old', 'new'):
+            raise ValueError('--keep parameter must be old or new')
+        merged = merge_people(old_obj, new_obj, keep_on_conflict=keep,
+                              keep_both_ids=True)
+        dump_obj(merged, filename=old)
+        os.remove(new)
+        click.secho(f'merged files into {old}\ndeleted {new}\ncheck git diff before committing')
 
 
 if __name__ == '__main__':

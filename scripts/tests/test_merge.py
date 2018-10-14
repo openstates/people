@@ -1,5 +1,6 @@
 import pytest
-from merge import compare_objects, ItemDifference, ListDifference, calculate_similarity
+from merge import (compare_objects, ItemDifference, ListDifference, calculate_similarity,
+                   merge_people, MergeConflict)
 
 
 @pytest.mark.parametrize("a, b, output", [
@@ -60,3 +61,80 @@ def test_calculate_similarity():
 
     new_name_person['roles'] = [{'type': 'lower', 'district': '3'}]
     assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.6)
+
+
+@pytest.mark.parametrize("old, new, keep, expected", [
+    # no changes
+    ({'name': 'Anna'}, {'name': 'Anna'}, 'old',
+     {'name': 'Anna'}),
+    # field only in old, keep=old
+    ({'name': 'Anna', 'birth_date': '1980'}, {'name': 'Anna'}, 'old',
+     {'name': 'Anna', 'birth_date': '1980'}),
+    # field only in old, keep=new
+    ({'name': 'Anna', 'birth_date': '1980'}, {'name': 'Anna'}, 'new',
+     {'name': 'Anna', 'birth_date': '1980'}),
+    # field only in new, keep=old
+    ({'name': 'Anna'}, {'name': 'Anna', 'birth_date': '1980'}, 'old',
+     {'name': 'Anna', 'birth_date': '1980'}),
+    # field only in new, keep=new
+    ({'name': 'Anna'}, {'name': 'Anna', 'birth_date': '1980'}, 'new',
+     {'name': 'Anna', 'birth_date': '1980'}),
+    # field differs, keep=new
+    ({'name': 'Bob'}, {'name': 'Robert'}, 'new', {'name': 'Robert'}),
+    # field differs, keep=old
+    ({'name': 'Bob'}, {'name': 'Robert'}, 'old', {'name': 'Bob'}),
+])
+def test_simple_merge(old, new, keep, expected):
+    assert merge_people(old, new, keep) == expected
+
+
+def test_merge_conflict():
+    with pytest.raises(MergeConflict):
+        merge_people({'name': 'A'}, {'name': 'B'})
+
+
+@pytest.mark.parametrize("old, new, expected", [
+    # more in first list
+    ({'other_names': [{'name': 'A'}, {'name': 'B'}]},
+     {'other_names': [{'name': 'A'}]},
+     {'other_names': [{'name': 'A'}, {'name': 'B'}]}
+     ),
+    # more in second list
+    ({'other_names': [{'name': 'A'}]},
+     {'other_names': [{'name': 'A'}, {'name': 'B'}]},
+     {'other_names': [{'name': 'A'}, {'name': 'B'}]}
+     ),
+    # each list is unique
+    ({'other_names': [{'name': 'A'}]},
+     {'other_names': [{'name': 'B'}]},
+     {'other_names': [{'name': 'A'}, {'name': 'B'}]}
+     ),
+])
+def test_list_merge(old, new, expected):
+    # note that keep doesn't matter for these
+    assert merge_people(old, new, None) == expected
+
+
+@pytest.mark.parametrize("old, new, expected", [
+    # simplest case
+    ({'id': 'ocd-person/1'},
+     {'id': 'ocd-person/2'},
+     {'id': 'ocd-person/1',
+      'other_identifiers': [{'scheme': 'openstates', 'identifier': 'ocd-person/2'}]
+      }
+     ),
+    # already has identifiers
+    ({'id': 'ocd-person/1',
+      'other_identifiers': [{'scheme': 'openstates', 'identifier': 'ocd-person/0'}]
+      },
+     {'id': 'ocd-person/2'},
+     {'id': 'ocd-person/1',
+      'other_identifiers': [
+          {'scheme': 'openstates', 'identifier': 'ocd-person/0'},
+          {'scheme': 'openstates', 'identifier': 'ocd-person/2'},
+      ]
+      }
+     ),
+])
+def test_keep_both_ids(old, new, expected):
+    assert merge_people(old, new, keep_both_ids=True) == expected
