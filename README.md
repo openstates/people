@@ -34,10 +34,8 @@ to_yaml.py [OPTIONS] INPUT_DIR
 
   Convert pupa scraped JSON in INPUT_DIR to YAML files for this repo.
 
-Options:
-  --reset / --no-reset
-  --incoming / --no-incoming
-Convert a pupa scrape directory to YAML.  (currently will wipe all data from destination directory)
+Convert a pupa scrape directory to YAML.  Will put data into incoming/
+directory for usage with merge.py's --incoming option.
 ```
 
 ### lint_yaml.py

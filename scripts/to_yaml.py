@@ -176,12 +176,12 @@ def process_org(org, jurisdiction_id):
 
 @click.command()                # pragma: no cover
 @click.argument('input_dir')
-@click.option('--incoming/--no-incoming', default=False)
-def to_yaml(input_dir, reset, incoming):
+def to_yaml(input_dir):
     """
     Convert pupa scraped JSON in INPUT_DIR to YAML files for this repo.
+
+    Will put data into incoming/ directory for usage with merge.py's --incoming option.
     """
-    # TODO: remove reset option once we're in prod
 
     # abbr is last piece of directory name
     abbr = None
@@ -193,20 +193,15 @@ def to_yaml(input_dir, reset, incoming):
     output_dir = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)
 
-    if incoming:
-        output_dir = output_dir.replace('test', 'incoming')
-        # TODO: replace this when we drop test prefix
-        # output_dir = os.path.join('incoming', output_dir)
+    output_dir = output_dir.replace('data', 'incoming')
+    assert 'incoming' in output_dir
 
     for dir in ('people', 'organizations'):
         try:
             os.makedirs(os.path.join(output_dir, dir))
         except FileExistsError:
-            raise
-            # TODO: once we're in incoming-only mode we'll restore this as default
-            # if reset:
-            #     for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
-            #         os.remove(file)
+            for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
+                os.remove(file)
     process_dir(input_dir, output_dir, jurisdiction_id)
 
 
