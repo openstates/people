@@ -315,6 +315,7 @@ class Validator:
         self.retired_count = 0
         self.org_count = 0
         self.missing_person_id = 0
+        self.missing_person_id_percent = 0
         self.role_types = defaultdict(int)
         self.parent_types = defaultdict(int)
         self.person_mapping = {}
@@ -452,6 +453,22 @@ class Validator:
         for err in self.check_duplicates():
             click.secho(err, fg='red')
 
+        # check committee role IDs
+        total_roles = sum(self.role_types.values())
+        if total_roles:
+            self.missing_person_id_percent = self.missing_person_id / total_roles * 100
+        if total_roles:
+            percent = self.missing_person_id / total_roles * 100
+            if percent < 10:
+                color = 'green'
+            elif percent < 34:
+                color = 'yellow'
+            else:
+                color = 'red'
+            if color != 'green' or verbose:
+                click.secho('{:4d} roles missing ID {:.1f}%'.format(
+                    self.missing_person_id, self.missing_person_id_percent), fg=color)
+
         errors = compare_districts(self.expected, self.active_legislators)
         for err in errors:
             click.secho(err, fg='red')
@@ -487,7 +504,6 @@ class Validator:
         click.secho('Committees', bold=True)
         for parent, count in self.parent_types.items():
             click.secho(f'{count:4d} {parent}')
-        click.secho('{:4d} roles missing ID'.format(self.missing_person_id))
         for role, count in self.role_types.items():
             click.secho(f'{count:4d} {role} roles')
 
