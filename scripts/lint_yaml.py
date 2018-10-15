@@ -42,7 +42,7 @@ def is_string(val):
 
 
 def is_url(val):
-    return is_string(val) and val.startswith('http')
+    return is_string(val) and val.startswith(('http://', 'https://', 'ftp://'))
 
 
 def is_social(val):
