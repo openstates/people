@@ -541,7 +541,7 @@ def lint(abbr, verbose, summary):
         settings = yaml.load(f)
 
     if abbr == '*':
-        all = [abbr for abbr in os.listdir(os.path.join(os.path.dirname(__file__), '..'))
+        all = [abbr for abbr in os.listdir(os.path.join(os.path.dirname(__file__), '../data'))
                if abbr in settings.keys()]
         for abbr in all:
             click.secho('==== {} ===='.format(abbr), bold=True)

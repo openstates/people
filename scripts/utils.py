@@ -40,7 +40,7 @@ def reformat_address(address):
 
 
 def get_data_dir(abbr):
-    return os.path.join(os.path.dirname(__file__), '../', abbr)
+    return os.path.join(os.path.dirname(__file__), '../data', abbr)
 
 
 def get_jurisdiction_id(abbr):
