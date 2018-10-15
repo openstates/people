@@ -14,7 +14,7 @@ def retire_from_committee(committee, person_id, end_date):
     return committee, num
 
 
-def retire_person(person, end_date, reason):
+def retire_person(person, end_date, reason=None):
     num = 0
     for role in person['roles']:
         if role_is_active(role):
