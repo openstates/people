@@ -18,11 +18,42 @@ Historically Open States has scraped this data, but given the relatively infrequ
 
 ## Contributing
 
-To contribute you can fork this project & submit a PR.  Please try to keep the change as small as possible (i.e. avoid re-ordering keys unnecessarily, etc.) to expedite review.
+Please note that this project is in the public domain in the United States with all copyright waived via a [CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication.  By contributing you agree to waive all copyright claims.
+
+There are a few different scenarios that may be useful:
+
+### Updating legislator data by hand
+
+Let's say you call a legislator and find out that they have a new phone number, contribute back!
 
 See [schema.md](schema.md) for details on the acceptable fields.  If you're looking to add a lot of data but unsure where it fits feel free to ask via an issue and we can either amend the schema or make a recommendation.
 
-Please note that this project is in the public domain in the United States with all copyright waived via a [CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication.  By contributing you agree to waive all copyright claims.
+0. Start a new branch for this work
+1. Make the edits you need in the appropriate YAML file.  Please keep edits to a minimum (e.g. don't re-order fields)
+2. Submit a PR, please describe how you came across this information to expedite review.
+
+### Retiring a legislator
+
+0. Start a new branch for this work
+1. Run `./scripts/retire.py` on the appropriate legislator file(s)
+2. Review the automatically edited files & submit a PR.
+
+### Updating an entire state via a scrape
+
+Let's say a North Carolina has had an election & it makes sense to re-scrape everything for that state.
+
+0. Start a new branch for this work
+1. Scrape data using [Open States' Scrapers](https://github.com/openstates/openstates)
+2. Run `./scripts/to_yaml.py` against the generated JSON data, this will populate the incoming/ directory 
+3. Check for merge candidates using `./scripts/merge.py --incoming nc`
+4. Manually reconcile remaining changes, will almost certainly require some retirements as well.
+5. Check that data looks clean with `./scripts/lint_yaml.py nc --summary` and prepare a PR.
+
+### Updating a single field for many people
+
+Let's say you want to add foobar_id to a ton of legislators from your own data set or similar.
+
+TBD - We need to create a tool that will aid in this as it will prove a common use case & we can lower the barrier here.
 
 ## Scripts
 
