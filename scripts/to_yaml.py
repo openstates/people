@@ -176,7 +176,6 @@ def process_org(org, jurisdiction_id):
 
 @click.command()                # pragma: no cover
 @click.argument('input_dir')
-@click.option('--reset/--no-reset', default=False)
 @click.option('--incoming/--no-incoming', default=False)
 def to_yaml(input_dir, reset, incoming):
     """
@@ -203,9 +202,11 @@ def to_yaml(input_dir, reset, incoming):
         try:
             os.makedirs(os.path.join(output_dir, dir))
         except FileExistsError:
-            if reset:
-                for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
-                    os.remove(file)
+            raise
+            # TODO: once we're in incoming-only mode we'll restore this as default
+            # if reset:
+            #     for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
+            #         os.remove(file)
     process_dir(input_dir, output_dir, jurisdiction_id)
 
 

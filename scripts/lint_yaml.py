@@ -541,7 +541,8 @@ def lint(abbr, verbose, summary):
         settings = yaml.load(f)
 
     if abbr == '*':
-        all = [k for k in settings.keys() if k != 'http_whitelist' and k in os.listdir('test')]
+        all = [abbr for abbr in os.listdir(os.path.join(os.path.dirname(__file__), '..'))
+               if abbr in settings.keys()]
         for abbr in all:
             click.secho('==== {} ===='.format(abbr), bold=True)
             process_dir(abbr, verbose, summary, settings)
