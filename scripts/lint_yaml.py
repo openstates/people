@@ -119,7 +119,7 @@ def is_role(role):
 
 
 def is_valid_parent(parent):
-    return parent in ('upper', 'lower', 'legislature')
+    return parent in ('upper', 'lower', 'legislature') or is_ocd_organization(parent)
 
 
 ORGANIZATION_FIELDS = {
@@ -411,7 +411,7 @@ class Validator:
         self.org_count += 1
 
         if org['parent'].startswith('ocd-organization'):
-            self.parent_types['subcommittee'] += 1
+            self.parent_types['subcommittee of ' + org['parent']] += 1
         else:
             self.parent_types[org['parent']] += 1
 

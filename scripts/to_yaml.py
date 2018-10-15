@@ -62,6 +62,9 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
     for org in committees_by_id.values():
         if org['parent'].startswith('~'):
             org['parent'] = json.loads(org['parent'][1:])['classification']
+        else:
+            # map scrape ID to ocd-org ID
+            org['parent'] = committees_by_id[org['parent']]['id']
 
         org['memberships'] = [process_committee_membership(m, people_lookup)
                               for m in org['memberships']]
