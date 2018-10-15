@@ -94,6 +94,7 @@ LEGISLATIVE_ROLE_FIELDS = {
     'jurisdiction': [is_ocd_jurisdiction, Required],
     'start_date': [is_fuzzy_date],
     'end_date': [is_fuzzy_date],
+    'end_reason': [is_string],          # note: this field isn't imported to DB
     'contact_details': CONTACT_DETAILS,
 }
 

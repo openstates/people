@@ -25,6 +25,7 @@
     * jurisdiction: ocd-jurisdiction identifier **required**
     * start_date
     * end_date
+    * end_reason: reason this role ended, such as resignation/death
     * contact_details: role-specific contact details (see below for schema)
 * contact_details (see below)
 * links (see below)

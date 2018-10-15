@@ -14,11 +14,13 @@ def retire_from_committee(committee, person_id, end_date):
     return committee, num
 
 
-def retire_person(person, end_date):
+def retire_person(person, end_date, reason):
     num = 0
     for role in person['roles']:
         if role_is_active(role):
             role['end_date'] = end_date
+            if reason:
+                role['end_reason'] = reason
             num += 1
     return person, num
 
@@ -32,7 +34,8 @@ def move_file(filename):        # pragma: no cover
 @click.command()
 @click.argument('end_date')
 @click.argument('filename')
-def retire(end_date, filename):
+@click.option('--reason', default=None)
+def retire(end_date, filename, reason):
     """
     Retire a legislator, given END_DATE and FILENAME.
 
@@ -41,7 +44,7 @@ def retire(end_date, filename):
     # end the person's active roles & re-save
     with open(filename) as f:
         person = load_yaml(f)
-    person, num = retire_person(person, end_date)
+    person, num = retire_person(person, end_date, reason)
     dump_obj(person, filename=filename)
 
     # same for their committees
