@@ -448,7 +448,7 @@ class Validator:
                 for warning in warnings:
                     click.secho(' ' + warning, fg='yellow')
             if not errors and verbose > 0:
-                click.secho(fn, 'OK!', fg='green')
+                click.secho(fn + ' OK!', fg='green')
 
         for err in self.check_duplicates():
             click.secho(err, fg='red')
