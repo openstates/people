@@ -1,8 +1,10 @@
 import pytest
+import datetime
 from lint_yaml import (is_url, is_social, is_fuzzy_date, is_phone,
                        is_ocd_person, is_legacy_openstates,
                        validate_obj, PERSON_FIELDS, validate_roles,
-                       get_expected_districts, compare_districts, Validator) # noqa
+                       get_expected_districts, compare_districts, Validator,
+                       BadVacancy) # noqa
 
 
 def test_is_url():
@@ -183,25 +185,41 @@ def test_get_expected_districts():
     assert expected['legislature'] == {"At-Large": 3}
 
 
-@pytest.mark.parametrize("expected,actual,errors,warnings", [
-    ({"A": 1, "B": 1}, {"A": ['a'], "B": ['a']}, 0, 0),     # good
-    ({"A": 1}, {"A": ['a'], "B": ['a']}, 1, 0),             # extra district
-    ({"A": 1, "B": 1}, {"A": ['a']}, 0, 1),             # missing district
-    ({"A": 1, "B": 1}, {"A": [], "B": ['a']}, 0, 1),     # missing leg
+def test_expected_districts_vacancies():
+    expected = get_expected_districts({"upper_seats": 3, "lower_seats": {"At-Large": 3},
+                                       "vacancies": [
+                                           {"chamber": "upper", "district": "2",
+                                            "vacant_until": datetime.date(2100, 1, 1)},
+                                           {"chamber": "lower", "district": "At-Large",
+                                            "vacant_until": datetime.date(2100, 1, 1)},
+                                       ]})
+    assert expected['upper'] == {"1": 1, "2": 0, "3": 1}
+    assert expected['lower'] == {"At-Large": 2}
+
+    with pytest.raises(BadVacancy):
+        get_expected_districts({"upper_seats": 3, "vacancies": [
+            {"chamber": "upper", "district": "2",
+             "vacant_until": datetime.date(2000, 1, 1)},
+        ]})
+
+
+@pytest.mark.parametrize("expected,actual,errors", [
+    ({"A": 1, "B": 1}, {"A": ['a'], "B": ['a']}, 0),     # good
+    ({"A": 1}, {"A": ['a'], "B": ['a']}, 1),             # extra district
+    ({"A": 1, "B": 1}, {"A": ['a']}, 1),                 # missing district
+    ({"A": 1, "B": 1}, {"A": [], "B": ['a']}, 1),        # missing leg
 ])
-def test_compare_districts(expected, actual, errors, warnings):
-    e, w = compare_districts({"upper": expected}, {"upper": actual})
+def test_compare_districts(expected, actual, errors):
+    e = compare_districts({"upper": expected}, {"upper": actual})
     assert len(e) == errors
-    assert len(w) == warnings
 
 
 def test_compare_districts_overfill():
     expected = {"A": 1}
     actual = {'A': [{'id': 'ocd-person/1', 'name': 'Anne'},
                     {'id': 'ocd-person/2', 'name': 'Bob'}]}
-    e, w = compare_districts({"upper": expected}, {"upper": actual})
+    e = compare_districts({"upper": expected}, {"upper": actual})
     assert len(e) == 1
-    assert len(w) == 0
     assert 'Anne' in e[0]
     assert 'Bob' in e[0]
 
@@ -209,7 +227,7 @@ def test_compare_districts_overfill():
 def test_validator_check_https():
     settings = {'us': {'upper_seats': 100, 'lower_seats': 435},
                 'http_whitelist': ['http://bad.example.com']}
-    v = Validator(settings, 'us')
+    v = Validator('us', settings)
 
     person = {'links': [
         {'url': 'https://example.com'},
@@ -224,7 +242,7 @@ def test_validator_check_https():
 def test_person_summary():
     settings = {'us': {'upper_seats': 100, 'lower_seats': 435},
                 'http_whitelist': ['http://bad.example.com']}
-    v = Validator(settings, 'us')
+    v = Validator('us', settings)
 
     people = [
         {'gender': 'F', 'image': 'https://example.com/image1',
@@ -258,7 +276,7 @@ def test_person_summary():
 def test_person_duplicates():
     settings = {'us': {'upper_seats': 100, 'lower_seats': 435},
                 'http_whitelist': ['http://bad.example.com']}
-    v = Validator(settings, 'us')
+    v = Validator('us', settings)
 
     people = [
         # duplicates across people
@@ -313,7 +331,7 @@ def test_validate_org_memberships():
     org['memberships'] = [
         {'id': EXAMPLE_OCD_PERSON_ID, 'name': 'Jane Smith'}
     ]
-    v = Validator(settings, 'us')
+    v = Validator('us', settings)
     v.validate_person(person, 'fake-person')    # validate person first to learn ID
     v.validate_org(org, 'fake-org')
     assert v.errors['fake-org'] == []
@@ -323,7 +341,7 @@ def test_validate_org_memberships():
     org['memberships'] = [
         {'id': 'ocd-person/00000000-0000-0000-0000-000000000000', 'name': 'Jane Smith'}
     ]
-    v = Validator(settings, 'us')
+    v = Validator('us', settings)
     v.validate_person(person, 'fake-person')
     v.validate_org(org, 'fake-org')
     assert len(v.errors['fake-org']) == 1
@@ -332,7 +350,7 @@ def test_validate_org_memberships():
     org['memberships'] = [
         {'id': EXAMPLE_OCD_PERSON_ID, 'name': 'Smith'}
     ]
-    v = Validator(settings, 'us')
+    v = Validator('us', settings)
     v.validate_person(person, 'fake-person')
     v.validate_org(org, 'fake-org')
     assert len(v.warnings['fake-org']) == 1
