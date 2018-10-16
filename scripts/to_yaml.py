@@ -135,7 +135,7 @@ def process_person(person, jurisdiction_id):
         if not organization_id.startswith('~'):
             raise ValueError(organization_id)
         org = json.loads(organization_id[1:])
-        if org['classification'] in ('upper', 'lower'):
+        if org['classification'] in ('upper', 'lower', 'legislature'):
             post = json.loads(membership['post_id'][1:])['label']
             result['roles'] = [
                 {'type': org['classification'], 'district': post,
