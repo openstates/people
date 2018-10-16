@@ -14,6 +14,7 @@ class BadVacancy(Exception):
     pass
 
 
+SUFFIX_RE = re.compile('(iii?)|(ph\.?d\.?)|(m\.?d\.?)|([sj]r\.?)', re.I)
 DATE_RE = re.compile(r'^\d{4}(-\d{2}(-\d{2})?)?$')
 PHONE_RE = re.compile(r'^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$')
 UUID_RE = re.compile(r'^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$')
@@ -39,6 +40,16 @@ def is_dict(val):
 
 def is_string(val):
     return isinstance(val, str) and '\n' not in val
+
+
+def no_bad_comma(val):
+    pieces = val.split(',')
+    if len(pieces) == 1:
+        return True     # no comma
+    elif len(pieces) > 2:
+        return False    # too many commas for a suffix
+    else:
+        return bool(SUFFIX_RE.findall(pieces[1]))
 
 
 def is_url(val):
@@ -143,7 +154,7 @@ ORGANIZATION_FIELDS = {
 
 PERSON_FIELDS = {
     'id': [is_ocd_person, Required],
-    'name': [is_string, Required],
+    'name': [is_string, no_bad_comma, Required],
     'sort_name': [is_string],
     'given_name': [is_string],
     'family_name': [is_string],

@@ -1,7 +1,7 @@
 import pytest
 import datetime
 from lint_yaml import (is_url, is_social, is_fuzzy_date, is_phone,
-                       is_ocd_person, is_legacy_openstates,
+                       is_ocd_person, is_legacy_openstates, no_bad_comma,
                        validate_obj, PERSON_FIELDS, validate_roles,
                        get_expected_districts, compare_districts, Validator,
                        BadVacancy) # noqa
@@ -31,6 +31,19 @@ def test_is_phone():
     assert is_phone('1-123-346-7990')
     assert is_phone('1-123-346-7990 ext. 123')
     assert not is_phone('(123) 346-7990')
+
+
+def test_no_bad_comma():
+    assert no_bad_comma("John Smith")
+    assert no_bad_comma("John Smith, II")
+    assert no_bad_comma("John Smith, III")
+    assert no_bad_comma("John Smith, Jr.")
+    assert no_bad_comma("John Smith, Sr.")
+    assert no_bad_comma("John Smith, PH.D.")
+    assert no_bad_comma("John Smith, M.D.")
+    assert no_bad_comma("John Smith, MD")
+    assert no_bad_comma("Smith, John") is False
+    assert no_bad_comma("Smith, J.R.") is False
 
 
 def test_is_ocd_person():
