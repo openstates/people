@@ -24,7 +24,7 @@ ct:
   lower_seats: 151
   upper_seats: 36
 dc:
-  legislature_seats: ['Ward 1', 'Ward 2', 'Ward 3', 'Ward 4', 'Ward 5', 'Ward 6', 'Ward 7', 'Ward 8', 'Chairman', 'At-Large']
+  legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1, 'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
 de:
   lower_seats: 41
   upper_seats: 21
@@ -76,6 +76,10 @@ in:
 ks:
   lower_seats: 125
   upper_seats: 40
+  vacancies:
+    - chamber: upper
+      district: 5
+      vacant_until: 2019-01-01
 ky:
   lower_seats: 100
   upper_seats: 38
@@ -86,6 +90,16 @@ ky:
 la:
   lower_seats: 105
   upper_seats: 39
+  vacancies:
+    - chamber: lower
+      district: 12
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 33
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 90
+      vacant_until: 2019-01-01
 ma:
   lower_seats: ["Tenth Bristol", "Tenth Essex", "Tenth Hampden", "Tenth Middlesex", "Tenth Norfolk", "Tenth Plymouth", "Tenth Suffolk", "Tenth Worcester", "Eleventh Bristol", "Eleventh Essex", "Eleventh Hampden", "Eleventh Middlesex", "Eleventh Norfolk", "Eleventh Plymouth", "Eleventh Suffolk", "Eleventh Worcester", "Twelfth Bristol", "Twelfth Essex", "Twelfth Hampden", "Twelfth Middlesex", "Twelfth Norfolk", "Twelfth Plymouth", "Twelfth Suffolk", "Twelfth Worcester", "Thirteenth Bristol", "Thirteenth Essex", "Thirteenth Middlesex", "Thirteenth Norfolk", "Thirteenth Suffolk", "Thirteenth Worcester", "Fourteenth Bristol", "Fourteenth Essex", "Fourteenth Middlesex", "Fourteenth Norfolk", "Fourteenth Suffolk", "Fourteenth Worcester", "Fifteenth Essex", "Fifteenth Middlesex", "Fifteenth Norfolk", "Fifteenth Suffolk", "Fifteenth Worcester", "Sixteenth Essex", "Sixteenth Middlesex", "Sixteenth Suffolk", "Sixteenth Worcester", "Seventeenth Essex", "Seventeenth Middlesex", "Seventeenth Suffolk", "Seventeenth Worcester", "Eighteenth Essex", "Eighteenth Middlesex", "Eighteenth Suffolk", "Eighteenth Worcester", "Nineteenth Middlesex", "Nineteenth Suffolk", "First Barnstable", "First Berkshire", "First Bristol", "First Essex", "First Franklin", "First Hampden", "First Hampshire", "First Middlesex", "First Norfolk", "First Plymouth", "First Suffolk", "First Worcester", "Twentieth Middlesex", "Twenty-First Middlesex", "Twenty-Second Middlesex", "Twenty-Third Middlesex", "Twenty-Fourth Middlesex", "Twenty-Fifth Middlesex", "Twenty-Sixth Middlesex", "Twenty-Seventh Middlesex", "Twenty-Eighth Middlesex", "Twenty-Ninth Middlesex", "Second Barnstable", "Second Berkshire", "Second Bristol", "Second Essex", "Second Franklin", "Second Hampden", "Second Hampshire", "Second Middlesex", "Second Norfolk", "Second Plymouth", "Second Suffolk", "Second Worcester", "Thirtieth Middlesex", "Thirty-First Middlesex", "Thirty-Second Middlesex", "Thirty-Third Middlesex", "Thirty-Fourth Middlesex", "Thirty-Fifth Middlesex", "Thirty-Sixth Middlesex", "Thirty-Seventh Middlesex", "Third Barnstable", "Third Berkshire", "Third Bristol", "Third Essex", "Third Hampden", "Third Hampshire", "Third Middlesex", "Third Norfolk", "Third Plymouth", "Third Suffolk", "Third Worcester", "Fourth Barnstable", "Fourth Berkshire", "Fourth Bristol", "Fourth Essex", "Fourth Hampden", "Fourth Middlesex", "Fourth Norfolk", "Fourth Plymouth", "Fourth Suffolk", "Fourth Worcester", "Fifth Barnstable", "Fifth Bristol", "Fifth Essex", "Fifth Hampden", "Fifth Middlesex", "Fifth Norfolk", "Fifth Plymouth", "Fifth Suffolk", "Fifth Worcester", "Sixth Bristol", "Sixth Essex", "Sixth Hampden", "Sixth Middlesex", "Sixth Norfolk", "Sixth Plymouth", "Sixth Suffolk", "Sixth Worcester", "Seventh Bristol", "Seventh Essex", "Seventh Hampden", "Seventh Middlesex", "Seventh Norfolk", "Seventh Plymouth", "Seventh Suffolk", "Seventh Worcester", "Eighth Bristol", "Eighth Essex", "Eighth Hampden", "Eighth Middlesex", "Eighth Norfolk", "Eighth Plymouth", "Eighth Suffolk", "Eighth Worcester", "Ninth Bristol", "Ninth Essex", "Ninth Hampden", "Ninth Middlesex", "Ninth Norfolk", "Ninth Plymouth", "Ninth Suffolk", "Ninth Worcester", "Barnstable, Dukes and Nantucket"]
   upper_seats: ["Bristol and Norfolk", "Cape and Islands", "Fifth Middlesex", "First Bristol and Plymouth", "First Essex", "First Essex and Middlesex", "First Hampden and Hampshire", "First Middlesex", "First Middlesex and Norfolk", "First Plymouth and Bristol", "First Suffolk", "First Suffolk and Middlesex", "First Worcester", "Fourth Middlesex", "Hampden", "Berkshire, Hampshire, Franklin and Hampden", "Middlesex and Suffolk", "Middlesex and Worcester", "Norfolk, Bristol and Middlesex", "Norfolk, Bristol and Plymouth", "Norfolk and Plymouth", "Norfolk and Suffolk", "Plymouth and Barnstable", "Plymouth and Norfolk", "Second Bristol and Plymouth", "Second Essex", "Second Essex and Middlesex", "Second Hampden and Hampshire", "Second Middlesex", "Second Middlesex and Norfolk", "Second Plymouth and Bristol", "Second Suffolk", "Second Suffolk and Middlesex", "Second Worcester", "Third Essex", "Third Middlesex", "Worcester and Middlesex", "Worcester and Norfolk", "Worcester, Hampden, Hampshire and Middlesex", "Hampshire, Franklin and Worcester"]
@@ -313,6 +327,16 @@ or:
 pa:
   lower_seats: 203
   upper_seats: 50
+  vacancies:
+    - chamber: upper
+      district: 28
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 2
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 54
+      vacant_until: 2019-01-01
 pr:
   lower_seats: 40
   upper_seats: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'At-Large']
@@ -371,6 +395,10 @@ ut:
 va:
   lower_seats: 100
   upper_seats: 40
+  vacancies:
+    - chamber: lower
+      district: 8
+      vacant_until: 2019-01-01
 vt:
   vacancies:
     - chamber: lower
