@@ -25,14 +25,28 @@ ct:
   upper_seats: 36
 dc:
   legislature_seats: ['Ward 1', 'Ward 2', 'Ward 3', 'Ward 4', 'Ward 5', 'Ward 6', 'Ward 7', 'Ward 8', 'Chairman', 'At-Large']
-  multi_member_seats:
-    At-Large: 2
 de:
   lower_seats: 41
   upper_seats: 21
 fl:
   lower_seats: 120
   upper_seats: 40
+  vacancies:
+    - chamber: lower
+      district: 32
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 33
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 90
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 105
+      vacant_until: 2019-01-01
+    - chamber: upper
+      district: 16
+      vacant_until: 2019-01-01
 ga:
   lower_seats: 180
   upper_seats: 56
