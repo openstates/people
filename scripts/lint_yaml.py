@@ -42,6 +42,10 @@ def is_string(val):
     return isinstance(val, str) and '\n' not in val
 
 
+def is_multiline_string(val):
+    return isinstance(val, str)
+
+
 def no_bad_comma(val):
     pieces = val.split(',')
     if len(pieces) == 1:
@@ -159,8 +163,8 @@ PERSON_FIELDS = {
     'given_name': [is_string],
     'family_name': [is_string],
     'gender': [is_string],
-    'summary': [is_string],
-    'biography': [is_string],
+    'summary': [is_multiline_string],
+    'biography': [is_multiline_string],
     'birth_date': [is_fuzzy_date],
     'death_date': [is_fuzzy_date],
     'image': [is_url],
