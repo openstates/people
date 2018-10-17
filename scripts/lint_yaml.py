@@ -3,10 +3,9 @@ import re
 import os
 import sys
 import datetime
-import yaml
 import glob
 import click
-from utils import get_data_dir, get_filename, role_is_active
+from utils import get_data_dir, get_filename, role_is_active, load_yaml
 from collections import defaultdict, Counter
 
 
@@ -65,7 +64,7 @@ def is_social(val):
 
 
 def is_fuzzy_date(val):
-    return is_string(val) and DATE_RE.match(val)
+    return isinstance(val, datetime.date) or (is_string(val) and DATE_RE.match(val))
 
 
 def is_phone(val):
@@ -534,19 +533,19 @@ def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
     for filename in person_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            person = yaml.load(f)
+            person = load_yaml(f)
             validator.validate_person(person, print_filename)
 
     for filename in retired_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            person = yaml.load(f)
+            person = load_yaml(f)
             validator.validate_person(person, print_filename, retired=True)
 
     for filename in org_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            org = yaml.load(f)
+            org = load_yaml(f)
             validator.validate_org(org, print_filename)
 
     validator.print_validation_report(verbose)
@@ -568,7 +567,7 @@ def lint(abbr, verbose, summary):
     """
     settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
     with open(settings_file) as f:
-        settings = yaml.load(f)
+        settings = load_yaml(f)
 
     if abbr == '*':
         all = [abbr for abbr in os.listdir(os.path.join(os.path.dirname(__file__), '../data'))

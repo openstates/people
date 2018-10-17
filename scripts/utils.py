@@ -74,5 +74,5 @@ def get_filename(obj):
 
 
 def role_is_active(role):
-    now = datetime.datetime.utcnow().date().strftime('%Y-%m-%d')
-    return role.get('end_date') is None or role.get('end_date') > now
+    now = datetime.datetime.utcnow().date().isoformat()
+    return str(role.get('end_date')) is None or str(role.get('end_date')) > now
