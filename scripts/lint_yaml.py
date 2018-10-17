@@ -476,9 +476,8 @@ class Validator:
                 color = 'yellow'
             else:
                 color = 'red'
-            if color != 'green' or verbose:
-                click.secho('{:4d} roles missing ID {:.1f}%'.format(
-                    self.missing_person_id, self.missing_person_id_percent), fg=color)
+            click.secho('{:4d} roles missing ID {:.1f}%'.format(
+                self.missing_person_id, self.missing_person_id_percent), fg=color)
 
         errors = compare_districts(self.expected, self.active_legislators)
         for err in errors:
