@@ -453,12 +453,15 @@ class Validator:
         return errors
 
     def print_validation_report(self, verbose):     # pragma: no cover
+        error_count = 0
+
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
             if errors or warnings:
                 click.echo(fn)
                 for err in errors:
                     click.secho(' ' + err, fg='red')
+                    error_count += 1
                 for warning in warnings:
                     click.secho(' ' + warning, fg='yellow')
             if not errors and verbose > 0:
@@ -466,25 +469,14 @@ class Validator:
 
         for err in self.check_duplicates():
             click.secho(err, fg='red')
-
-        # check committee role IDs
-        total_roles = sum(self.role_types.values())
-        if total_roles:
-            self.missing_person_id_percent = self.missing_person_id / total_roles * 100
-        if total_roles:
-            percent = self.missing_person_id / total_roles * 100
-            if percent < 10:
-                color = 'green'
-            elif percent < 34:
-                color = 'yellow'
-            else:
-                color = 'red'
-            click.secho('{:4d} roles missing ID {:.1f}%'.format(
-                self.missing_person_id, self.missing_person_id_percent), fg=color)
+            error_count += 1
 
         errors = compare_districts(self.expected, self.active_legislators)
         for err in errors:
             click.secho(err, fg='red')
+            error_count += 1
+
+        return error_count
 
     def print_summary(self):                        # pragma: no cover
         click.secho(f'processed {self.person_count} active people, {self.retired_count} retired & '
@@ -520,6 +512,21 @@ class Validator:
         for role, count in self.role_types.items():
             click.secho(f'{count:4d} {role} roles')
 
+        # check committee role IDs
+        total_roles = sum(self.role_types.values())
+        if total_roles:
+            self.missing_person_id_percent = self.missing_person_id / total_roles * 100
+        if total_roles:
+            percent = self.missing_person_id / total_roles * 100
+            if percent < 10:
+                color = 'green'
+            elif percent < 34:
+                color = 'yellow'
+            else:
+                color = 'red'
+            click.secho('{:4d} roles missing ID {:.1f}%'.format(
+                self.missing_person_id, self.missing_person_id_percent), fg=color)
+
 
 def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
@@ -548,10 +555,12 @@ def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
             org = load_yaml(f)
             validator.validate_org(org, print_filename)
 
-    validator.print_validation_report(verbose)
+    error_count = validator.print_validation_report(verbose)
 
     if summary:
         validator.print_summary()
+
+    return error_count
 
 
 @click.command()
@@ -569,14 +578,20 @@ def lint(abbr, verbose, summary):
     with open(settings_file) as f:
         settings = load_yaml(f)
 
+    error_count = 0
+
     if abbr == '*':
         all = [abbr for abbr in os.listdir(os.path.join(os.path.dirname(__file__), '../data'))
                if abbr in settings.keys()]
         for abbr in all:
             click.secho('==== {} ===='.format(abbr), bold=True)
-            process_dir(abbr, verbose, summary, settings)
+            error_count += process_dir(abbr, verbose, summary, settings)
     else:
-        process_dir(abbr, verbose, summary, settings)
+        error_count += process_dir(abbr, verbose, summary, settings)
+
+    if error_count:
+        click.secho(f'exiting with {error_count} errors', fg='red')
+        sys.exit(99)
 
 
 if __name__ == '__main__':
