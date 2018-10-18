@@ -186,6 +186,25 @@ def load_org(data):
     return created, updated
 
 
+def sort_organizations(orgs):
+    order = []
+    seen = set()
+    how_many = len(orgs)
+
+    while orgs:
+        for org, filename in list(orgs):
+            if ((org['parent'].startswith('ocd-organization') and org['parent'] in seen) or
+                not org['parent'].startswith('ocd-organization')):
+                    seen.add(org['id'])
+                    order.append((org, filename))
+                    orgs.remove((org, filename))
+
+    # TODO: this doesn't check for infinite loops when two orgs refer to one another
+    assert len(order) == how_many
+
+    return order
+
+
 def load_directory(files, type, jurisdiction_id, purge):
     ids = set()
     created_count = 0
@@ -209,11 +228,18 @@ def load_directory(files, type, jurisdiction_id, purge):
     else:
         raise ValueError(type)
 
+    all_data = []
     for filename in files:
         with open(filename) as f:
             data = yaml.load(f)
-            ids.add(data['id'])
-            created, updated = load_func(data)
+            all_data.append((data, filename))
+
+    if type == 'organization':
+        all_data = sort_organizations(all_data)
+
+    for data, filename in all_data:
+        ids.add(data['id'])
+        created, updated = load_func(data)
 
         if created:
             click.secho(f'created {type} from {filename}', fg='cyan', bold=True)
