@@ -194,10 +194,10 @@ def sort_organizations(orgs):
     while orgs:
         for org, filename in list(orgs):
             if ((org['parent'].startswith('ocd-organization') and org['parent'] in seen) or
-                not org['parent'].startswith('ocd-organization')):
-                    seen.add(org['id'])
-                    order.append((org, filename))
-                    orgs.remove((org, filename))
+                    not org['parent'].startswith('ocd-organization')):
+                seen.add(org['id'])
+                order.append((org, filename))
+                orgs.remove((org, filename))
 
     # TODO: this doesn't check for infinite loops when two orgs refer to one another
     assert len(order) == how_many

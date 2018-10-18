@@ -25,5 +25,5 @@ jobs:
       name: "Test Python"
       after_success:
         - coveralls
-    # - script: ./scripts/check_yaml.py
-    #   name: "Check YAML"
+    - script: ./scripts/lint_yaml.py
+      name: "Check YAML"

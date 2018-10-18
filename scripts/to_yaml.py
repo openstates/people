@@ -138,7 +138,7 @@ def process_person(person, jurisdiction_id):
         if org['classification'] in ('upper', 'lower', 'legislature'):
             post = json.loads(membership['post_id'][1:])['label']
             result['roles'] = [
-                {'type': org['classification'], 'district': post,
+                {'type': org['classification'], 'district': str(post),
                  'jurisdiction': jurisdiction_id}
             ]
         elif org['classification'] == 'party':

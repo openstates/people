@@ -3,10 +3,9 @@ import re
 import os
 import sys
 import datetime
-import yaml
 import glob
 import click
-from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations
+from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml
 from collections import defaultdict, Counter
 
 
@@ -65,7 +64,7 @@ def is_social(val):
 
 
 def is_fuzzy_date(val):
-    return is_string(val) and DATE_RE.match(val)
+    return isinstance(val, datetime.date) or (is_string(val) and DATE_RE.match(val))
 
 
 def is_phone(val):
@@ -454,12 +453,15 @@ class Validator:
         return errors
 
     def print_validation_report(self, verbose):     # pragma: no cover
+        error_count = 0
+
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
             if errors or warnings:
                 click.echo(fn)
                 for err in errors:
                     click.secho(' ' + err, fg='red')
+                    error_count += 1
                 for warning in warnings:
                     click.secho(' ' + warning, fg='yellow')
             if not errors and verbose > 0:
@@ -467,25 +469,14 @@ class Validator:
 
         for err in self.check_duplicates():
             click.secho(err, fg='red')
-
-        # check committee role IDs
-        total_roles = sum(self.role_types.values())
-        if total_roles:
-            self.missing_person_id_percent = self.missing_person_id / total_roles * 100
-        if total_roles:
-            percent = self.missing_person_id / total_roles * 100
-            if percent < 10:
-                color = 'green'
-            elif percent < 34:
-                color = 'yellow'
-            else:
-                color = 'red'
-            click.secho('{:4d} roles missing ID {:.1f}%'.format(
-                self.missing_person_id, self.missing_person_id_percent), fg=color)
+            error_count += 1
 
         errors = compare_districts(self.expected, self.active_legislators)
         for err in errors:
             click.secho(err, fg='red')
+            error_count += 1
+
+        return error_count
 
     def print_summary(self):                        # pragma: no cover
         click.secho(f'processed {self.person_count} active people, {self.retired_count} retired & '
@@ -521,6 +512,21 @@ class Validator:
         for role, count in self.role_types.items():
             click.secho(f'{count:4d} {role} roles')
 
+        # check committee role IDs
+        total_roles = sum(self.role_types.values())
+        if total_roles:
+            self.missing_person_id_percent = self.missing_person_id / total_roles * 100
+        if total_roles:
+            percent = self.missing_person_id / total_roles * 100
+            if percent < 10:
+                color = 'green'
+            elif percent < 34:
+                color = 'yellow'
+            else:
+                color = 'red'
+            click.secho('{:4d} roles missing ID {:.1f}%'.format(
+                self.missing_person_id, self.missing_person_id_percent), fg=color)
+
 
 def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), 'people', '*.yml'))
@@ -534,25 +540,27 @@ def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
     for filename in person_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            person = yaml.load(f)
+            person = load_yaml(f)
             validator.validate_person(person, print_filename)
 
     for filename in retired_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            person = yaml.load(f)
+            person = load_yaml(f)
             validator.validate_person(person, print_filename, retired=True)
 
     for filename in org_filenames:
         print_filename = os.path.basename(filename)
         with open(filename) as f:
-            org = yaml.load(f)
+            org = load_yaml(f)
             validator.validate_org(org, print_filename)
 
-    validator.print_validation_report(verbose)
+    error_count = validator.print_validation_report(verbose)
 
     if summary:
         validator.print_summary()
+
+    return error_count
 
 
 @click.command()
@@ -568,14 +576,20 @@ def lint(abbreviations, verbose, summary):
     """
     settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
     with open(settings_file) as f:
-        settings = yaml.load(f)
+        settings = load_yaml(f)
+
+    error_count = 0
 
     if not abbreviations:
         abbreviations = get_all_abbreviations()
 
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
-        process_dir(abbr, verbose, summary, settings)
+        error_count += process_dir(abbr, verbose, summary, settings)
+
+    if error_count:
+        click.secho(f'exiting with {error_count} errors', fg='red')
+        sys.exit(99)
 
 
 if __name__ == '__main__':

@@ -156,6 +156,9 @@ mn:
   lower_seats: ['1A', '1B', '2A', '2B', '3A', '3B', '4A', '4B', '5A', '5B', '6A', '6B', '7A', '7B', '8A', '8B', '9A', '9B', '10A', '10B', '11A', '11B', '12A', '12B', '13A', '13B', '14A', '14B', '15A', '15B', '16A', '16B', '17A', '17B', '18A', '18B', '19A', '19B', '20A', '20B', '21A', '21B', '22A', '22B',
 '23A', '23B', '24A', '24B', '25A', '25B', '26A', '26B', '27A', '27B', '28A', '28B', '29A', '29B', '30A', '30B', '31A', '31B', '32A', '32B', '33A', '33B', '34A', '34B', '35A', '35B', '36A', '36B', '37A', '37B', '38A', '38B', '39A', '39B', '40A', '40B', '41A', '41B', '42A', '42B', '43A', '43B', '44A', '44B', '45A', '45B', '46A', '46B', '47A', '47B', '48A', '48B', '49A', '49B', '50A', '50B', '51A', '51B', '52A', '52B', '53A', '53B', '54A', '54B', '55A', '55B', '56A', '56B', '57A', '57B', '58A', '58B', '59A', '59B', '60A', '60B', '61A', '61B', '62A', '62B', '63A', '63B', '64A', '64B', '65A', '65B', '66A', '66B', '67A', '67B']
   upper_seats: 67
+mt:
+  lower_seats: 100
+  upper_seats: 50
 mo:
   lower_seats: 163
   upper_seats: 34
@@ -289,9 +292,29 @@ nv:
 ny:
   lower_seats: 150
   upper_seats: 63
+  vacancies:
+    - chamber: lower
+      district: 46
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 87
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 90
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 104
+      vacant_until: 2019-01-01
 oh:
   lower_seats: 99
   upper_seats: 33
+  vacancies:
+    - chamber: lower
+      district: 14
+      vacant_until: 2019-01-01
+    - chamber: upper
+      district: 20
+      vacant_until: 2019-01-01
 ok:
   lower_seats: 101
   upper_seats: 48
@@ -325,8 +348,16 @@ pa:
       district: 54
       vacant_until: 2019-01-01
 pr:
-  lower_seats: 40
-  upper_seats: ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'At-Large']
+  lower_seats: {'1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1, '19': 1, '20': 1, '21': 1, '22': 1, '23': 1, '24': 1, '25': 1, '26': 1, '27': 1, '28': 1, '29': 1, '30': 1, '31': 1, '32': 1, '33': 1, '34': 1, '35': 1, '36': 1, '37': 1, '38': 1, '39': 1, '40': 1, 'At-Large': 11}
+  upper_seats: {'I': 2, 'II': 2, 'III': 2, 'IV': 2, 'V': 2, 'VI': 2, 'VII': 2, 'VIII': 2, 'At-Large': 14}
+  # note: PR's At-Large number can *change*
+  vacancies:
+    - chamber: lower
+      district: 17
+      vacant_until: 2019-01-01
+    - chamber: lower
+      district: 35
+      vacant_until: 2019-01-01
 ri:
   lower_seats: 75
   upper_seats: 38
