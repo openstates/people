@@ -29,18 +29,20 @@ class Matcher:
                     self.load_person(line)
 
     def load_person(self, line):
-        self.people_by_name['{first_name} {last_name}'.format(**line)].append(line['id'])
+        self.people_by_name['{scraped_name}'.format(**line).lower()].append(line['id'])
+        self.people_by_name['{first_name} {last_name}'.format(**line).lower()].append(line['id'])
         if line['middle_name']:
-            self.people_by_name['{first_name} {middle_name} {last_name}'.format(**line)].append(line['id'])
+            self.people_by_name['{first_name} {middle_name} {last_name}'.format(**line).lower()].append(line['id'])
+            self.people_by_name['{first_name} {middle_name}. {last_name}'.format(**line).lower()].append(line['id'])
         if line['suffixes']:
-            self.people_by_name['{first_name} {last_name} {suffixes}'.format(**line)].append(line['id'])
+            self.people_by_name['{first_name} {last_name} {suffixes}'.format(**line).lower()].append(line['id'])
         if line['middle_name'] and line['suffixes']:
-            self.people_by_name['{first_name} {middle_name} {last_name} {suffixes}'.format(**line)].append(line['id'])
+            self.people_by_name['{first_name} {middle_name} {last_name} {suffixes}'.format(**line).lower()].append(line['id'])
 
         self.people_by_id[line['id']] = line
 
     def match(self, person):
-        potentials = self.people_by_name[person['name']]
+        potentials = self.people_by_name[person['name'].lower()]
         chamber, district = get_chamber_and_district(person)
         exact = []
         if len(potentials) == 0:
@@ -57,6 +59,9 @@ class Matcher:
             return self.people_by_id[exact[0]]['all_ids'].split(';')
         elif len(exact) > 1:
             click.secho(f'multiple exact matches {exact}', fg='green')
+        elif len(potentials) == 1:
+            click.secho(f'one candidate {potentials}', fg='yellow')
+            return self.people_by_id[potentials[0]]['all_ids'].split(';')
         else:
             click.secho(f'multiple candidates {potentials}', fg='yellow')
 
