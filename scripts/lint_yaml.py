@@ -6,7 +6,7 @@ import datetime
 import yaml
 import glob
 import click
-from utils import get_data_dir, get_filename, role_is_active
+from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations
 from collections import defaultdict, Counter
 
 
@@ -556,11 +556,11 @@ def process_dir(abbr, verbose, summary, settings):      # pragma: no cover
 
 
 @click.command()
-@click.argument('abbr', default='*')
+@click.argument('abbreviations', nargs=-1)
 @click.option('-v', '--verbose', count=True)
 @click.option('--summary/--no-summary', default=False,
               help='Print summary after validation errors.')
-def lint(abbr, verbose, summary):
+def lint(abbreviations, verbose, summary):
     """
         Lint YAML files, optionally also providing a summary of state's data.
 
@@ -570,13 +570,11 @@ def lint(abbr, verbose, summary):
     with open(settings_file) as f:
         settings = yaml.load(f)
 
-    if abbr == '*':
-        all = [abbr for abbr in os.listdir(os.path.join(os.path.dirname(__file__), '../data'))
-               if abbr in settings.keys()]
-        for abbr in all:
-            click.secho('==== {} ===='.format(abbr), bold=True)
-            process_dir(abbr, verbose, summary, settings)
-    else:
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        click.secho('==== {} ===='.format(abbr), bold=True)
         process_dir(abbr, verbose, summary, settings)
 
 

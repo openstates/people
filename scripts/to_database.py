@@ -6,7 +6,7 @@ import django
 from django import conf
 from django.db import transaction
 import click
-from utils import get_data_dir, get_jurisdiction_id
+from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations
 
 
 class CancelTransaction(Exception):
@@ -217,8 +217,10 @@ def load_directory(files, type, jurisdiction_id, purge):
 
         if created:
             click.secho(f'created {type} from {filename}', fg='cyan', bold=True)
+            created_count += 1
         elif updated:
             click.secho(f'updated {type} from {filename}', fg='cyan')
+            updated_count += 1
 
     missing_ids = existing_ids - ids
     if missing_ids and not purge:
@@ -259,35 +261,41 @@ def init_django():      # pragma: no cover
 
 
 @click.command()
-@click.argument('abbr', default='*')
+@click.argument('abbreviations', nargs=-1)
 @click.option('--purge/--no-purge', default=False,
               help="Purge all legislators from DB that aren't in YAML.")
 @click.option('--safe/--no-safe', default=False,
               help="Operate in safe mode, no changes will be written to database.")
-def to_database(abbr, purge, safe):
+def to_database(abbreviations, purge, safe):
     """
     Sync YAML files to DB.
     """
     init_django()
-    directory = get_data_dir(abbr)
-    jurisdiction_id = get_jurisdiction_id(abbr)
 
-    person_files = (glob.glob(os.path.join(directory, 'people/*.yml')) +
-                    glob.glob(os.path.join(directory, 'retired/*.yml')))
-    committee_files = glob.glob(os.path.join(directory, 'organizations/*.yml'))
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
 
-    if safe:
-        click.secho('running in safe mode, no changes will be made', fg='magenta')
+    for abbr in abbreviations:
+        click.secho('==== {} ===='.format(abbr), bold=True)
+        directory = get_data_dir(abbr)
+        jurisdiction_id = get_jurisdiction_id(abbr)
 
-    try:
-        with transaction.atomic():
-            load_directory(person_files, 'person', jurisdiction_id, purge=purge)
-            load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
-            if safe:
-                click.secho('ran in safe mode, no changes were made', fg='magenta')
-                raise CancelTransaction()
-    except CancelTransaction:
-        pass
+        person_files = (glob.glob(os.path.join(directory, 'people/*.yml')) +
+                        glob.glob(os.path.join(directory, 'retired/*.yml')))
+        committee_files = glob.glob(os.path.join(directory, 'organizations/*.yml'))
+
+        if safe:
+            click.secho('running in safe mode, no changes will be made', fg='magenta')
+
+        try:
+            with transaction.atomic():
+                load_directory(person_files, 'person', jurisdiction_id, purge=purge)
+                load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
+                if safe:
+                    click.secho('ran in safe mode, no changes were made', fg='magenta')
+                    raise CancelTransaction()
+        except CancelTransaction:
+            pass
 
 
 if __name__ == '__main__':

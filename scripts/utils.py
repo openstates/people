@@ -43,6 +43,10 @@ def get_data_dir(abbr):
     return os.path.join(os.path.dirname(__file__), '../data', abbr)
 
 
+def get_all_abbreviations():
+    return sorted(os.listdir(os.path.join(os.path.dirname(__file__), '../data')))
+
+
 def get_jurisdiction_id(abbr):
     if abbr == 'dc':
         return 'ocd-jurisdiction/country:us/district:dc/government'
