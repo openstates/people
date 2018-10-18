@@ -34,7 +34,7 @@ def update_subobjects(person, fieldname, objects, read_manager=None):
     for obj in objects:
         if updated:
             break
-        if read_manager.filter(**obj).count() != 1:
+        if not read_manager.filter(**obj).count():
             updated = True
 
     # if there's been an update, wipe the old & insert the new

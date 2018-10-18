@@ -139,6 +139,26 @@ def test_subobject_update():
 
 
 @pytest.mark.django_db
+def test_subobject_duplicate():
+    # this shouldn't actually be allowed most places (lint should catch)
+    # but it was breaking committee imports when two members had the same name
+    yaml_text = """
+    id: abcdefab-0000-1111-2222-1234567890ab
+    name: Jane Smith
+    links:
+        - url: https://example.com/jane
+        - url: https://example.com/jane
+    """
+    data = yaml.load(yaml_text)
+
+    # load twice, but second time no update should occur
+    created, updated = load_person(data)
+    created, updated = load_person(data)
+    assert created is False
+    assert updated is False
+
+
+@pytest.mark.django_db
 def test_person_identifiers():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
