@@ -278,7 +278,7 @@ def init_django():      # pragma: no cover
                 'NAME': os.environ['OCD_DATABASE_NAME'],
                 'USER': os.environ['OCD_DATABASE_USER'],
                 'PASSWORD': os.environ['OCD_DATABASE_PASSWORD'],
-                'HOST': 'localhost',
+                'HOST': os.environ['OCD_DATABASE_HOST'],
             }
         },
         MIDDLEWARE_CLASSES=(),
