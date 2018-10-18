@@ -3,9 +3,7 @@
 [![Build Status](https://travis-ci.org/openstates/people.svg?branch=master)](https://travis-ci.org/openstates/people)
 [![Coverage Status](https://coveralls.io/repos/github/openstates/people/badge.svg?branch=master)](https://coveralls.io/github/openstates/people?branch=master)
 
-Repository of curated information on all state legislators & governors.
-
-This is currently experimental, but is intended as an eventual replacement for running Open States' person scrapers nightly.
+Repository of curated information on all state legislators.
 
 
 ## About the Data
@@ -71,11 +69,11 @@ directory for usage with merge.py's --incoming option.
 
 ### lint_yaml.py
 ```
-lint_yaml.py [OPTIONS] [ABBR]
+lint_yaml.py [OPTIONS] [ABBREVIATIONS]
 
   Lint YAML files, optionally also providing a summary of state's data.
 
-  <ABBR> can be provided to restrict linting to single state's files.
+  <ABBREVIATIONS> can be provided to restrict linting to select states.
 
 Options:
   -v, --verbose
@@ -124,7 +122,7 @@ retire.py [OPTIONS] END_DATE FILENAME
 
 ### to_database.py
 ```
-to_database.py [OPTIONS] [ABBR]
+to_database.py [OPTIONS] [ABBREVIATIONS]
 
   Sync YAML files to DB.
 
