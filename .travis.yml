@@ -30,7 +30,7 @@ jobs:
     - stage: deploy
       script: ./scripts/to_database.py
       name: "To Database"
-      if: branch = master
+      if: branch = master AND repo = openstates/people AND type = push
       env:
         - OCD_DATABASE_NAME=openstatesorg
         - OCD_DATABASE_USER=travis
