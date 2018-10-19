@@ -1,5 +1,6 @@
 import re
 import os
+import glob
 import datetime
 import yaml
 import yamlordereddictloader
@@ -58,6 +59,13 @@ def get_jurisdiction_id(abbr):
 
 def load_yaml(file_obj):
     return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
+
+
+def iter_objects(abbr, objtype):
+    filenames = glob.glob(os.path.join(get_data_dir(abbr), objtype, '*.yml'))
+    for filename in filenames:
+        with open(filename) as f:
+            yield load_yaml(f), filename
 
 
 def dump_obj(obj, *, output_dir=None, filename=None):
