@@ -32,12 +32,16 @@ class Matcher:
         self.people_by_name['{scraped_name}'.format(**line).lower()].append(line['id'])
         self.people_by_name['{first_name} {last_name}'.format(**line).lower()].append(line['id'])
         if line['middle_name']:
-            self.people_by_name['{first_name} {middle_name} {last_name}'.format(**line).lower()].append(line['id'])
-            self.people_by_name['{first_name} {middle_name}. {last_name}'.format(**line).lower()].append(line['id'])
+            self.people_by_name['{first_name} {middle_name} {last_name}'.format(
+                **line).lower()].append(line['id'])
+            self.people_by_name['{first_name} {middle_name}. {last_name}'.format(
+                **line).lower()].append(line['id'])
         if line['suffixes']:
-            self.people_by_name['{first_name} {last_name} {suffixes}'.format(**line).lower()].append(line['id'])
+            self.people_by_name['{first_name} {last_name} {suffixes}'.format(
+                **line).lower()].append(line['id'])
         if line['middle_name'] and line['suffixes']:
-            self.people_by_name['{first_name} {middle_name} {last_name} {suffixes}'.format(**line).lower()].append(line['id'])
+            self.people_by_name['{first_name} {middle_name} {last_name} {suffixes}'.format(
+                **line).lower()].append(line['id'])
 
         self.people_by_id[line['id']] = line
 
@@ -99,6 +103,24 @@ def match_ids(abbreviations):
                     dump_obj(person, filename=fname)
 
 
-
 if __name__ == '__main__':
     match_ids()
+
+
+# find missing ids... if we want to fill out the rest
+# all_files = glob.glob('data/*/people/*.yml')
+# used_ids = set()
+
+# for file in all_files:
+#     with open(file) as f:
+#         p = yaml.load(f)
+#         for oid in p.get('other_identifiers', []):
+#             used_ids.add(oid['identifier'])
+
+
+# f = open('scripts/one-off/legacy_openstates_ids.csv')
+# old = csv.DictReader(f)
+# new = csv.DictWriter(open('output.csv', 'w'), old.fieldnames)
+# for line in old:
+#     if line['id'] not in used_ids:
+#         new.writerow(line)

@@ -63,8 +63,9 @@ def update_from_csv(filename, fields, other_identifiers):
             for scheme in other_identifiers:
                 # TODO: check for duplicates among what was already there
                 for id in line[scheme].split(';'):
-                    person['other_identifiers'].append({'scheme': scheme,
-                                                        'identifier': id})
+                    if id:
+                        person['other_identifiers'].append({'scheme': scheme,
+                                                            'identifier': id})
             dump_obj(person, filename=yaml_filename)
 
 
