@@ -15,7 +15,7 @@ def get_next_id(db, abbr):
     return f'{abbr.upper()}L{new_id:06d}'
 
 
-def dir_to_mongo(abbr, create, verbose):
+def dir_to_mongo(abbr, create, clear_old_roles, verbose):
     db = pymongo.MongoClient(os.environ.get('BILLY_MONGO_HOST', 'localhost'))['fiftystates']
 
     metadata = db.metadata.find({'_id': abbr})[0]
@@ -83,7 +83,8 @@ def dir_to_mongo(abbr, create, verbose):
         try:
             old_person = db.legislators.find({'_id': legacy_ids[0]})[0]
             created_at = old_person['created_at']
-            old_roles = old_person.get('old_roles', {})
+            if not clear_old_roles:
+                old_roles = old_person.get('old_roles', {})
         except IndexError:
             pass
 
@@ -102,6 +103,7 @@ def dir_to_mongo(abbr, create, verbose):
             'party': party,
             'email': email,
             'url': url,
+            'offices': offices,
             'created_at': created_at,
 
             'first_name': first_name,
@@ -152,8 +154,9 @@ def retire_person(db, leg):
 @click.command()
 @click.argument('abbreviations', nargs=-1)
 @click.option('--create/--no-create', default=False)
+@click.option('--clear-old-roles/--no-clear-old-roles', default=False)
 @click.option('-v', '--verbose', count=True)
-def to_database(abbreviations, create, verbose):
+def to_database(abbreviations, create, verbose, clear_old_roles):
     """
     Sync YAML files to legacy MongoDB.
     """
@@ -163,7 +166,7 @@ def to_database(abbreviations, create, verbose):
 
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
-        dir_to_mongo(abbr, create, verbose)
+        dir_to_mongo(abbr, create, clear_old_roles, verbose)
 
 
 if __name__ == '__main__':
