@@ -1,21 +1,46 @@
 #!/usr/bin/env python
 
+import sys
 import datetime
 import click
 import pymongo
-from utils import iter_objects, get_all_abbreviations, role_is_active
+from utils import iter_objects, get_all_abbreviations, role_is_active, dump_obj
 
 
-def dir_to_mongo(abbr):
+def get_next_id(db, abbr):
+    cur_max = max([max(x['_all_ids']) for x in db.legislators.find({'state': abbr})])
+    new_id = int(cur_max[3:]) + 1
+
+    return f'{abbr.upper()}L{new_id:06d}'
+
+
+def dir_to_mongo(abbr, create):
     db = pymongo.MongoClient()['fiftystates']
 
     metadata = db.metadata.find({'_id': abbr})[0]
     latest_term = metadata['terms'][-1]['name']
 
+    active_ids = []
+
     for person, filename in iter_objects(abbr, 'people'):
 
         legacy_ids = [oid['identifier'] for oid in person.get('other_identifiers', [])
                       if oid['scheme'] == 'legacy_openstates']
+        if not legacy_ids:
+            if create:
+                # get next ID
+                new_id = get_next_id(db, abbr)
+                legacy_ids = [new_id]
+                if 'other_identifiers' not in person:
+                    person['other_identifiers'] = []
+                person['other_identifiers'].append({'scheme': 'legacy_openstates',
+                                                    'identifier': new_id})
+                dump_obj(person, filename=filename)
+            else:
+                click.secho(f'{filename} does not have legacy ID, run with --create', fg='red')
+                sys.exit(1)
+
+        active_ids.append(legacy_ids[0])
 
         for role in person['roles']:
             if role_is_active(role):
@@ -48,8 +73,9 @@ def dir_to_mongo(abbr):
             chamber = 'upper'
 
         # get some old data to keep around
-        created_at = updated_at = datetime.datetime.utcnow()
+        created_at = datetime.datetime.utcnow()
         old_roles = {}
+        old_person = None
         try:
             old_person = db.legislators.find({'_id': legacy_ids[0]})[0]
             created_at = old_person['created_at']
@@ -73,7 +99,6 @@ def dir_to_mongo(abbr):
             'email': email,
             'url': url,
             'created_at': created_at,
-            'updated_at': updated_at,
 
             'first_name': '',
             'middle_name': '',
@@ -91,16 +116,36 @@ def dir_to_mongo(abbr):
         # { "term" : "2017-2018", "committee_id" : "NCC000233", "chamber" : "lower",
         # "state" : "nc", "subcommittee" : null, "committee" : "State and Local Government II",
         # "position" : "member", "type" : "committee member" },
-        db.legislators.save(mongo_person)
+
+        # compare
+        if old_person:
+            old_person.pop('updated_at', None)
+        if old_person == mongo_person:
+            click.secho(f'no updates to {mongo_person["_id"]}')
+        else:
+            click.secho(f'updating {mongo_person["_id"]}', fg='green')
+            mongo_person['updated_at'] = datetime.datetime.utcnow()
+            db.legislators.save(mongo_person)
+
+    to_retire = db.legislators.find({'_id': {'$nin': active_ids}, 'state': abbr})
+    click.secho(f'going to try to retire {to_retire.count()}')
+    for leg in to_retire:
+        retire_person(db, leg)
+
+
+def retire_person(db, leg):
+    if leg['active'] or leg['roles']:
+        leg['active'] = False
+        leg['roles'] = []
+        leg['updated_at'] = datetime.datetime.utcnow()
+        db.legislators.save(leg)
+        click.secho(f'retired {leg["_id"]}', fg='blue')
 
 
 @click.command()
 @click.argument('abbreviations', nargs=-1)
-@click.option('--purge/--no-purge', default=False,
-              help="Purge all legislators from DB that aren't in YAML.")
-@click.option('--safe/--no-safe', default=False,
-              help="Operate in safe mode, no changes will be written to database.")
-def to_database(abbreviations, purge, safe):
+@click.option('--create/--no-create', default=False)
+def to_database(abbreviations, create):
     """
     Sync YAML files to legacy MongoDB.
     """
@@ -110,7 +155,7 @@ def to_database(abbreviations, purge, safe):
 
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
-        dir_to_mongo(abbr)
+        dir_to_mongo(abbr, create)
 
 
 if __name__ == '__main__':
