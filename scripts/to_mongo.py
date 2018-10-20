@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-
+import os
 import sys
 import datetime
 import click
 import pymongo
+import name_tools
 from utils import iter_objects, get_all_abbreviations, role_is_active, dump_obj
 
 
@@ -14,8 +15,8 @@ def get_next_id(db, abbr):
     return f'{abbr.upper()}L{new_id:06d}'
 
 
-def dir_to_mongo(abbr, create):
-    db = pymongo.MongoClient()['fiftystates']
+def dir_to_mongo(abbr, create, verbose):
+    db = pymongo.MongoClient(os.environ.get('BILLY_MONGO_HOST', 'localhost'))['fiftystates']
 
     metadata = db.metadata.find({'_id': abbr})[0]
     latest_term = metadata['terms'][-1]['name']
@@ -42,12 +43,15 @@ def dir_to_mongo(abbr, create):
 
         active_ids.append(legacy_ids[0])
 
+        # handle name
+        prefix, first_name, last_name, suffixes = name_tools.split(person['name'])
+
+        # get chamber, district, party
         for role in person['roles']:
             if role_is_active(role):
                 chamber = role['type']
                 district = role['district']
                 break
-
         for role in person['party']:
             if role_is_active(role):
                 party = role['name']
@@ -91,7 +95,7 @@ def dir_to_mongo(abbr, create):
             'active': True,
             'full_name': person['name'],
             '_scraped_name': person['name'],
-            'photo_url': person['image'],
+            'photo_url': person.get('image'),
             'state': abbr,
             'district': district,
             'chamber': chamber,
@@ -100,10 +104,10 @@ def dir_to_mongo(abbr, create):
             'url': url,
             'created_at': created_at,
 
-            'first_name': '',
+            'first_name': first_name,
             'middle_name': '',
-            'last_name': '',
-            'suffixes': '',
+            'last_name': last_name,
+            'suffixes': suffixes,
             'sources': person['sources'],
 
             'old_roles': old_roles,
@@ -121,8 +125,11 @@ def dir_to_mongo(abbr, create):
         if old_person:
             old_person.pop('updated_at', None)
         if old_person == mongo_person:
-            click.secho(f'no updates to {mongo_person["_id"]}')
+            if verbose:
+                click.secho(f'no updates to {mongo_person["_id"]}')
         else:
+            # print(mongo_person, old_person)
+            # raise Exception()
             click.secho(f'updating {mongo_person["_id"]}', fg='green')
             mongo_person['updated_at'] = datetime.datetime.utcnow()
             db.legislators.save(mongo_person)
@@ -145,7 +152,8 @@ def retire_person(db, leg):
 @click.command()
 @click.argument('abbreviations', nargs=-1)
 @click.option('--create/--no-create', default=False)
-def to_database(abbreviations, create):
+@click.option('-v', '--verbose', count=True)
+def to_database(abbreviations, create, verbose):
     """
     Sync YAML files to legacy MongoDB.
     """
@@ -155,7 +163,7 @@ def to_database(abbreviations, create):
 
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
-        dir_to_mongo(abbr, create)
+        dir_to_mongo(abbr, create, verbose)
 
 
 if __name__ == '__main__':
