@@ -134,7 +134,11 @@ def dir_to_mongo(abbr, create, clear_old_roles, verbose):
             # raise Exception()
             click.secho(f'updating {mongo_person["_id"]}', fg='green')
             mongo_person['updated_at'] = datetime.datetime.utcnow()
-            db.legislators.save(mongo_person)
+            try:
+                db.legislators.save(mongo_person)
+            except Exception as e:
+                print(e)
+                continue
 
     to_retire = db.legislators.find({'_id': {'$nin': active_ids}, 'state': abbr})
     click.secho(f'going to try to retire {to_retire.count()}')
