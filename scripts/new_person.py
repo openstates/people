@@ -49,5 +49,6 @@ def new_person(fname, lname, name, state, district, party, rtype, url, image, st
                   rtype=rtype, url=url, image=image,
                   start_date=start_date)
 
+
 if __name__ == '__main__':
     new_person()
