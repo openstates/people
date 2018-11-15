@@ -113,7 +113,8 @@ def download_state_images(abbr, skip_existing):
 
 @click.command()
 @click.argument('abbreviations', nargs=-1)
-@click.option('--skip-existing/--no-skip-existing')
+@click.option('--skip-existing/--no-skip-existing',
+              help="Skip processing for files that already exist on S3. (default: true)")
 def sync_images(abbreviations, skip_existing):
     """
         Download images and sync them to S3.
