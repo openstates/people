@@ -30,19 +30,23 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
 
 
 @click.command()
-@click.option('--fname', prompt='First Name')
-@click.option('--lname', prompt='Last Name')
-@click.option('--name')
-@click.option('--state', prompt='State')
-@click.option('--district', prompt='District')
-@click.option('--party', prompt='Party')
-@click.option('--rtype', prompt='Role Type (upper|lower)')
-@click.option('--url', prompt='URL')
-@click.option('--image', prompt='Image URL')
-@click.option('--start-date', prompt='Start Date')
+@click.option('--fname', prompt='First Name', help='First Name')
+@click.option('--lname', prompt='Last Name', help='Last Name')
+@click.option('--name', help='Optional Name, if not provided First + Last will be used')
+@click.option('--state', prompt='State', help='State abbreviation')
+@click.option('--district', prompt='District', help='District')
+@click.option('--party', prompt='Party', help='Party')
+@click.option('--rtype', prompt='Role Type (upper|lower)', help='Role Type')
+@click.option('--url', prompt='URL', help='Source URL')
+@click.option('--image', prompt='Image URL', help='Image URL')
+@click.option('--start-date', prompt='Start Date', help='Start Date YYYY-MM-DD')
 def new_person(fname, lname, name, state, district, party, rtype, url, image, start_date):
     """
     Create a new person record.
+
+    Arguments can be passed via command line flags, omitted arguments will be prompted.
+
+    Be sure to review the file and add any additional data before committing.
     """
     create_person(fname=fname, lname=lname, name=name,
                   state=state, district=district, party=party,
