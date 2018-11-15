@@ -30,7 +30,11 @@ def download_state_images(abbr, skip_existing):
             continue
 
         # get the source URL
-        resp = requests.get(url)
+        try:
+            resp = requests.get(url)
+        except Exception as e:
+            click.secho(f'could not fetch {url}, {e}', fg='red')
+            continue
 
         if resp.status_code != 200:
             click.secho(f'could not fetch {url}, {resp.status_code}', fg='red')
