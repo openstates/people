@@ -131,3 +131,16 @@ Options:
   --safe / --no-safe    Operate in safe mode, no changes will be written to
                         database.
 ```
+
+### sync_images.py
+```
+sync_images.py [OPTIONS] [ABBREVIATIONS]...
+
+  Download images and sync them to S3.
+
+  <ABBR> can be provided to restrict to single state.
+
+Options:
+  --skip-existing / --no-skip-existing  Skip processing for files that already exist
+                                        on S3. (default: true)
+  ```
