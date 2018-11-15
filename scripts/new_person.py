@@ -1,13 +1,13 @@
 #!/usr/bin/env python
-
 import os
 import click
+from collections import OrderedDict
 from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
 
 
 def create_person(fname, lname, name, state, district, party, rtype, url, image,
                   start_date):
-    person = {
+    person = OrderedDict({
         'id': ocd_uuid('person'),
         'name': name or f'{fname} {lname}',
         'given_name': fname,
@@ -23,7 +23,7 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
         ],
         'links': [{'url': url}],
         'sources': [{'url': url}],
-    }
+    })
 
     output_dir = get_data_dir(state)
     dump_obj(person, output_dir=os.path.join(output_dir, 'people'))
