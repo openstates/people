@@ -15,6 +15,8 @@ s3 = boto3.client('s3')
 
 
 def upload(img_callable, key_name, skip_existing):
+    """ upload works as a sort of decorator around img_callable, which is
+        only called if necessary after checking if there's already an image """
     try:
         obj = s3.head_object(Bucket=os.environ['S3_BUCKET'], Key=key_name)
     except ClientError:
@@ -47,11 +49,11 @@ def upload(img_callable, key_name, skip_existing):
         }
     )
 
+    # return the raw bytes, which may be reused for resizing/etc.
     return img_bytes
 
 
 def download_image(url):
-    # get the source URL
     try:
         resp = requests.get(url)
     except Exception as e:
@@ -90,9 +92,12 @@ def download_state_images(abbr, skip_existing):
         img_bytes = upload(lambda: download_image(url),
                            f'images/original/{person_id}',
                            skip_existing)
+        # if the image got skipped, we can't do the resizes either, this means if we add new
+        # profiles we need to run with --no-skip-existing
         if not img_bytes:
             continue
 
+        # resize image so largest dimension is 200px
         upload(lambda: resize_image(img_bytes, 200),
                f'images/small/{person_id}',
                skip_existing)
