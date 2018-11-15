@@ -111,6 +111,30 @@ Options:
                    When omitted, conflicts will raise error.
 ```
 
+### new_person.py
+```
+new_person.py [OPTIONS]
+
+Create a new person record.
+
+  Arguments can be passed via command line flags, omitted arguments will be
+  prompted.
+
+  Be sure to review the file and add any additional data before committing.
+
+Options:
+  --fname TEXT       First Name
+  --lname TEXT       Last Name
+  --name TEXT        Optional Name, if not provided First + Last will be used
+  --state TEXT       State abbreviation
+  --district TEXT    District
+  --party TEXT       Party
+  --rtype TEXT       Role Type
+  --url TEXT         Source URL
+  --image TEXT       Image URL
+  --start-date TEXT  Start Date YYYY-MM-DD
+```
+
 ### retire.py
 ```
 retire.py [OPTIONS] END_DATE FILENAME

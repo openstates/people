@@ -2,21 +2,16 @@
 import glob
 import json
 import os
-import uuid
 import click
 from collections import defaultdict, OrderedDict
 from utils import (reformat_phone_number, reformat_address, get_data_dir, get_jurisdiction_id,
-                   dump_obj)
+                   dump_obj, ocd_uuid)
 
 
 def process_link(link):
     if not link['note']:
         del link['note']
     return link
-
-
-def ocd_uuid(type):
-    return 'ocd-{}/{}'.format(type, uuid.uuid4())
 
 
 def process_dir(input_dir, output_dir, jurisdiction_id):
