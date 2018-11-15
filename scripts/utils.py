@@ -1,6 +1,7 @@
 import re
 import os
 import glob
+import uuid
 import datetime
 import yaml
 import yamlordereddictloader
@@ -38,6 +39,10 @@ def reformat_phone_number(phone):
 
 def reformat_address(address):
     return re.sub(r'\s+', ' ', re.sub(r'\s*\n\s*', ';', address))
+
+
+def ocd_uuid(type):
+    return 'ocd-{}/{}'.format(type, uuid.uuid4())
 
 
 def get_data_dir(abbr):
