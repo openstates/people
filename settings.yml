@@ -116,8 +116,211 @@ la:
       district: 90
       vacant_until: 2019-01-01
 ma:
+  legislature_name: Massachusetts General Court
   lower_seats: ["Tenth Bristol", "Tenth Essex", "Tenth Hampden", "Tenth Middlesex", "Tenth Norfolk", "Tenth Plymouth", "Tenth Suffolk", "Tenth Worcester", "Eleventh Bristol", "Eleventh Essex", "Eleventh Hampden", "Eleventh Middlesex", "Eleventh Norfolk", "Eleventh Plymouth", "Eleventh Suffolk", "Eleventh Worcester", "Twelfth Bristol", "Twelfth Essex", "Twelfth Hampden", "Twelfth Middlesex", "Twelfth Norfolk", "Twelfth Plymouth", "Twelfth Suffolk", "Twelfth Worcester", "Thirteenth Bristol", "Thirteenth Essex", "Thirteenth Middlesex", "Thirteenth Norfolk", "Thirteenth Suffolk", "Thirteenth Worcester", "Fourteenth Bristol", "Fourteenth Essex", "Fourteenth Middlesex", "Fourteenth Norfolk", "Fourteenth Suffolk", "Fourteenth Worcester", "Fifteenth Essex", "Fifteenth Middlesex", "Fifteenth Norfolk", "Fifteenth Suffolk", "Fifteenth Worcester", "Sixteenth Essex", "Sixteenth Middlesex", "Sixteenth Suffolk", "Sixteenth Worcester", "Seventeenth Essex", "Seventeenth Middlesex", "Seventeenth Suffolk", "Seventeenth Worcester", "Eighteenth Essex", "Eighteenth Middlesex", "Eighteenth Suffolk", "Eighteenth Worcester", "Nineteenth Middlesex", "Nineteenth Suffolk", "First Barnstable", "First Berkshire", "First Bristol", "First Essex", "First Franklin", "First Hampden", "First Hampshire", "First Middlesex", "First Norfolk", "First Plymouth", "First Suffolk", "First Worcester", "Twentieth Middlesex", "Twenty-First Middlesex", "Twenty-Second Middlesex", "Twenty-Third Middlesex", "Twenty-Fourth Middlesex", "Twenty-Fifth Middlesex", "Twenty-Sixth Middlesex", "Twenty-Seventh Middlesex", "Twenty-Eighth Middlesex", "Twenty-Ninth Middlesex", "Second Barnstable", "Second Berkshire", "Second Bristol", "Second Essex", "Second Franklin", "Second Hampden", "Second Hampshire", "Second Middlesex", "Second Norfolk", "Second Plymouth", "Second Suffolk", "Second Worcester", "Thirtieth Middlesex", "Thirty-First Middlesex", "Thirty-Second Middlesex", "Thirty-Third Middlesex", "Thirty-Fourth Middlesex", "Thirty-Fifth Middlesex", "Thirty-Sixth Middlesex", "Thirty-Seventh Middlesex", "Third Barnstable", "Third Berkshire", "Third Bristol", "Third Essex", "Third Hampden", "Third Hampshire", "Third Middlesex", "Third Norfolk", "Third Plymouth", "Third Suffolk", "Third Worcester", "Fourth Barnstable", "Fourth Berkshire", "Fourth Bristol", "Fourth Essex", "Fourth Hampden", "Fourth Middlesex", "Fourth Norfolk", "Fourth Plymouth", "Fourth Suffolk", "Fourth Worcester", "Fifth Barnstable", "Fifth Bristol", "Fifth Essex", "Fifth Hampden", "Fifth Middlesex", "Fifth Norfolk", "Fifth Plymouth", "Fifth Suffolk", "Fifth Worcester", "Sixth Bristol", "Sixth Essex", "Sixth Hampden", "Sixth Middlesex", "Sixth Norfolk", "Sixth Plymouth", "Sixth Suffolk", "Sixth Worcester", "Seventh Bristol", "Seventh Essex", "Seventh Hampden", "Seventh Middlesex", "Seventh Norfolk", "Seventh Plymouth", "Seventh Suffolk", "Seventh Worcester", "Eighth Bristol", "Eighth Essex", "Eighth Hampden", "Eighth Middlesex", "Eighth Norfolk", "Eighth Plymouth", "Eighth Suffolk", "Eighth Worcester", "Ninth Bristol", "Ninth Essex", "Ninth Hampden", "Ninth Middlesex", "Ninth Norfolk", "Ninth Plymouth", "Ninth Suffolk", "Ninth Worcester", "Barnstable, Dukes and Nantucket"]
   upper_seats: ["Bristol and Norfolk", "Cape and Islands", "Fifth Middlesex", "First Bristol and Plymouth", "First Essex", "First Essex and Middlesex", "First Hampden and Hampshire", "First Middlesex", "First Middlesex and Norfolk", "First Plymouth and Bristol", "First Suffolk", "First Suffolk and Middlesex", "First Worcester", "Fourth Middlesex", "Hampden", "Berkshire, Hampshire, Franklin and Hampden", "Middlesex and Suffolk", "Middlesex and Worcester", "Norfolk, Bristol and Middlesex", "Norfolk, Bristol and Plymouth", "Norfolk and Plymouth", "Norfolk and Suffolk", "Plymouth and Barnstable", "Plymouth and Norfolk", "Second Bristol and Plymouth", "Second Essex", "Second Essex and Middlesex", "Second Hampden and Hampshire", "Second Middlesex", "Second Middlesex and Norfolk", "Second Plymouth and Bristol", "Second Suffolk", "Second Suffolk and Middlesex", "Second Worcester", "Third Essex", "Third Middlesex", "Worcester and Middlesex", "Worcester and Norfolk", "Worcester, Hampden, Hampshire and Middlesex", "Hampshire, Franklin and Worcester"]
+  upper_division_ids:
+    "Berkshire, Hampshire, Franklin and Hampden": "ocd-division/country:us/state:ma/sldu:berkshire_hampshire_franklin_and_hampden"
+    "Bristol and Norfolk": "ocd-division/country:us/state:ma/sldu:bristol_and_norfolk"
+    "Cape and Islands": "ocd-division/country:us/state:ma/sldu:cape_and_islands"
+    "Fifth Middlesex": "ocd-division/country:us/state:ma/sldu:5th_middlesex"
+    "First Bristol and Plymouth": "ocd-division/country:us/state:ma/sldu:1st_bristol_and_plymouth"
+    "First Essex": "ocd-division/country:us/state:ma/sldu:1st_essex"
+    "First Essex and Middlesex": "ocd-division/country:us/state:ma/sldu:1st_essex_and_middlesex"
+    "First Hampden and Hampshire": "ocd-division/country:us/state:ma/sldu:1st_hampden_and_hampshire"
+    "First Middlesex": "ocd-division/country:us/state:ma/sldu:1st_middlesex"
+    "First Middlesex and Norfolk": "ocd-division/country:us/state:ma/sldu:1st_middlesex_and_norfolk"
+    "First Plymouth and Bristol": "ocd-division/country:us/state:ma/sldu:1st_plymouth_and_bristol"
+    "First Suffolk": "ocd-division/country:us/state:ma/sldu:1st_suffolk"
+    "First Suffolk and Middlesex": "ocd-division/country:us/state:ma/sldu:1st_suffolk_and_middlesex"
+    "First Worcester": "ocd-division/country:us/state:ma/sldu:1st_worcester"
+    "Fourth Middlesex": "ocd-division/country:us/state:ma/sldu:4th_middlesex"
+    "Hampden": "ocd-division/country:us/state:ma/sldu:hampden"
+    "Hampshire, Franklin and Worcester": "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester"
+    "Middlesex and Suffolk": "ocd-division/country:us/state:ma/sldu:middlesex_and_suffolk"
+    "Middlesex and Worcester": "ocd-division/country:us/state:ma/sldu:middlesex_and_worcester"
+    "Norfolk, Bristol and Middlesex": "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_middlesex"
+    "Norfolk, Bristol and Plymouth": "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_plymouth"
+    "Norfolk and Plymouth": "ocd-division/country:us/state:ma/sldu:norfolk_and_plymouth"
+    "Norfolk and Suffolk": "ocd-division/country:us/state:ma/sldu:norfolk_and_suffolk"
+    "Plymouth and Barnstable": "ocd-division/country:us/state:ma/sldu:plymouth_and_barnstable"
+    "Plymouth and Norfolk": "ocd-division/country:us/state:ma/sldu:plymouth_and_norfolk"
+    "Second Bristol and Plymouth": "ocd-division/country:us/state:ma/sldu:2nd_bristol_and_plymouth"
+    "Second Essex": "ocd-division/country:us/state:ma/sldu:2nd_essex"
+    "Second Essex and Middlesex": "ocd-division/country:us/state:ma/sldu:2nd_essex_and_middlesex"
+    "Second Hampden and Hampshire": "ocd-division/country:us/state:ma/sldu:2nd_hampden_and_hampshire"
+    "Second Middlesex": "ocd-division/country:us/state:ma/sldu:2nd_middlesex"
+    "Second Middlesex and Norfolk": "ocd-division/country:us/state:ma/sldu:2nd_middlesex_and_norfolk"
+    "Second Plymouth and Bristol": "ocd-division/country:us/state:ma/sldu:2nd_plymouth_and_bristol"
+    "Second Suffolk": "ocd-division/country:us/state:ma/sldu:2nd_suffolk"
+    "Second Suffolk and Middlesex": "ocd-division/country:us/state:ma/sldu:2nd_suffolk_and_middlesex"
+    "Second Worcester": "ocd-division/country:us/state:ma/sldu:2nd_worcester"
+    "Third Essex": "ocd-division/country:us/state:ma/sldu:3rd_essex"
+    "Third Middlesex": "ocd-division/country:us/state:ma/sldu:3rd_middlesex"
+    "Worcester, Hampden, Hampshire and Middlesex": "ocd-division/country:us/state:ma/sldu:worcester_hampden_hampshire_and_middlesex"
+    "Worcester and Middlesex": "ocd-division/country:us/state:ma/sldu:worcester_and_middlesex"
+    "Worcester and Norfolk": "ocd-division/country:us/state:ma/sldu:worcester_and_norfolk"
+  lower_division_ids:
+    "Tenth Bristol": "ocd-division/country:us/state:ma/sldl:10th_bristol"
+    "Tenth Essex": "ocd-division/country:us/state:ma/sldl:10th_essex"
+    "Tenth Hampden": "ocd-division/country:us/state:ma/sldl:10th_hampden"
+    "Tenth Middlesex": "ocd-division/country:us/state:ma/sldl:10th_middlesex"
+    "Tenth Norfolk": "ocd-division/country:us/state:ma/sldl:10th_norfolk"
+    "Tenth Plymouth": "ocd-division/country:us/state:ma/sldl:10th_plymouth"
+    "Tenth Suffolk": "ocd-division/country:us/state:ma/sldl:10th_suffolk"
+    "Tenth Worcester": "ocd-division/country:us/state:ma/sldl:10th_worcester"
+    "Eleventh Bristol": "ocd-division/country:us/state:ma/sldl:11th_bristol"
+    "Eleventh Essex": "ocd-division/country:us/state:ma/sldl:11th_essex"
+    "Eleventh Hampden": "ocd-division/country:us/state:ma/sldl:11th_hampden"
+    "Eleventh Middlesex": "ocd-division/country:us/state:ma/sldl:11th_middlesex"
+    "Eleventh Norfolk": "ocd-division/country:us/state:ma/sldl:11th_norfolk"
+    "Eleventh Plymouth": "ocd-division/country:us/state:ma/sldl:11th_plymouth"
+    "Eleventh Suffolk": "ocd-division/country:us/state:ma/sldl:11th_suffolk"
+    "Eleventh Worcester": "ocd-division/country:us/state:ma/sldl:11th_worcester"
+    "Twelfth Bristol": "ocd-division/country:us/state:ma/sldl:12th_bristol"
+    "Twelfth Essex": "ocd-division/country:us/state:ma/sldl:12th_essex"
+    "Twelfth Hampden": "ocd-division/country:us/state:ma/sldl:12th_hampden"
+    "Twelfth Middlesex": "ocd-division/country:us/state:ma/sldl:12th_middlesex"
+    "Twelfth Norfolk": "ocd-division/country:us/state:ma/sldl:12th_norfolk"
+    "Twelfth Plymouth": "ocd-division/country:us/state:ma/sldl:12th_plymouth"
+    "Twelfth Suffolk": "ocd-division/country:us/state:ma/sldl:12th_suffolk"
+    "Twelfth Worcester": "ocd-division/country:us/state:ma/sldl:12th_worcester"
+    "Thirteenth Bristol": "ocd-division/country:us/state:ma/sldl:13th_bristol"
+    "Thirteenth Essex": "ocd-division/country:us/state:ma/sldl:13th_essex"
+    "Thirteenth Middlesex": "ocd-division/country:us/state:ma/sldl:13th_middlesex"
+    "Thirteenth Norfolk": "ocd-division/country:us/state:ma/sldl:13th_norfolk"
+    "Thirteenth Suffolk": "ocd-division/country:us/state:ma/sldl:13th_suffolk"
+    "Thirteenth Worcester": "ocd-division/country:us/state:ma/sldl:13th_worcester"
+    "Fourteenth Bristol": "ocd-division/country:us/state:ma/sldl:14th_bristol"
+    "Fourteenth Essex": "ocd-division/country:us/state:ma/sldl:14th_essex"
+    "Fourteenth Middlesex": "ocd-division/country:us/state:ma/sldl:14th_middlesex"
+    "Fourteenth Norfolk": "ocd-division/country:us/state:ma/sldl:14th_norfolk"
+    "Fourteenth Suffolk": "ocd-division/country:us/state:ma/sldl:14th_suffolk"
+    "Fourteenth Worcester": "ocd-division/country:us/state:ma/sldl:14th_worcester"
+    "Fifteenth Essex": "ocd-division/country:us/state:ma/sldl:15th_essex"
+    "Fifteenth Middlesex": "ocd-division/country:us/state:ma/sldl:15th_middlesex"
+    "Fifteenth Norfolk": "ocd-division/country:us/state:ma/sldl:15th_norfolk"
+    "Fifteenth Suffolk": "ocd-division/country:us/state:ma/sldl:15th_suffolk"
+    "Fifteenth Worcester": "ocd-division/country:us/state:ma/sldl:15th_worcester"
+    "Sixteenth Essex": "ocd-division/country:us/state:ma/sldl:16th_essex"
+    "Sixteenth Middlesex": "ocd-division/country:us/state:ma/sldl:16th_middlesex"
+    "Sixteenth Suffolk": "ocd-division/country:us/state:ma/sldl:16th_suffolk"
+    "Sixteenth Worcester": "ocd-division/country:us/state:ma/sldl:16th_worcester"
+    "Seventeenth Essex": "ocd-division/country:us/state:ma/sldl:17th_essex"
+    "Seventeenth Middlesex": "ocd-division/country:us/state:ma/sldl:17th_middlesex"
+    "Seventeenth Suffolk": "ocd-division/country:us/state:ma/sldl:17th_suffolk"
+    "Seventeenth Worcester": "ocd-division/country:us/state:ma/sldl:17th_worcester"
+    "Eighteenth Essex": "ocd-division/country:us/state:ma/sldl:18th_essex"
+    "Eighteenth Middlesex": "ocd-division/country:us/state:ma/sldl:18th_middlesex"
+    "Eighteenth Suffolk": "ocd-division/country:us/state:ma/sldl:18th_suffolk"
+    "Eighteenth Worcester": "ocd-division/country:us/state:ma/sldl:18th_worcester"
+    "Nineteenth Middlesex": "ocd-division/country:us/state:ma/sldl:19th_middlesex"
+    "Nineteenth Suffolk": "ocd-division/country:us/state:ma/sldl:19th_suffolk"
+    "First Barnstable": "ocd-division/country:us/state:ma/sldl:1st_barnstable"
+    "First Berkshire": "ocd-division/country:us/state:ma/sldl:1st_berkshire"
+    "First Bristol": "ocd-division/country:us/state:ma/sldl:1st_bristol"
+    "First Essex": "ocd-division/country:us/state:ma/sldl:1st_essex"
+    "First Franklin": "ocd-division/country:us/state:ma/sldl:1st_franklin"
+    "First Hampden": "ocd-division/country:us/state:ma/sldl:1st_hampden"
+    "First Hampshire": "ocd-division/country:us/state:ma/sldl:1st_hampshire"
+    "First Middlesex": "ocd-division/country:us/state:ma/sldl:1st_middlesex"
+    "First Norfolk": "ocd-division/country:us/state:ma/sldl:1st_norfolk"
+    "First Plymouth": "ocd-division/country:us/state:ma/sldl:1st_plymouth"
+    "First Suffolk": "ocd-division/country:us/state:ma/sldl:1st_suffolk"
+    "First Worcester": "ocd-division/country:us/state:ma/sldl:1st_worcester"
+    "Twentieth Middlesex": "ocd-division/country:us/state:ma/sldl:20th_middlesex"
+    "Twenty-First Middlesex": "ocd-division/country:us/state:ma/sldl:21st_middlesex"
+    "Twenty-Second Middlesex": "ocd-division/country:us/state:ma/sldl:22nd_middlesex"
+    "Twenty-Third Middlesex": "ocd-division/country:us/state:ma/sldl:23rd_middlesex"
+    "Twenty-Fourth Middlesex": "ocd-division/country:us/state:ma/sldl:24th_middlesex"
+    "Twenty-Fifth Middlesex": "ocd-division/country:us/state:ma/sldl:25th_middlesex"
+    "Twenty-Sixth Middlesex": "ocd-division/country:us/state:ma/sldl:26th_middlesex"
+    "Twenty-Seventh Middlesex": "ocd-division/country:us/state:ma/sldl:27th_middlesex"
+    "Twenty-Eighth Middlesex": "ocd-division/country:us/state:ma/sldl:28th_middlesex"
+    "Twenty-Ninth Middlesex": "ocd-division/country:us/state:ma/sldl:29th_middlesex"
+    "Second Barnstable": "ocd-division/country:us/state:ma/sldl:2nd_barnstable"
+    "Second Berkshire": "ocd-division/country:us/state:ma/sldl:2nd_berkshire"
+    "Second Bristol": "ocd-division/country:us/state:ma/sldl:2nd_bristol"
+    "Second Essex": "ocd-division/country:us/state:ma/sldl:2nd_essex"
+    "Second Franklin": "ocd-division/country:us/state:ma/sldl:2nd_franklin"
+    "Second Hampden": "ocd-division/country:us/state:ma/sldl:2nd_hampden"
+    "Second Hampshire": "ocd-division/country:us/state:ma/sldl:2nd_hampshire"
+    "Second Middlesex": "ocd-division/country:us/state:ma/sldl:2nd_middlesex"
+    "Second Norfolk": "ocd-division/country:us/state:ma/sldl:2nd_norfolk"
+    "Second Plymouth": "ocd-division/country:us/state:ma/sldl:2nd_plymouth"
+    "Second Suffolk": "ocd-division/country:us/state:ma/sldl:2nd_suffolk"
+    "Second Worcester": "ocd-division/country:us/state:ma/sldl:2nd_worcester"
+    "Thirtieth Middlesex": "ocd-division/country:us/state:ma/sldl:30th_middlesex"
+    "Thirty-First Middlesex": "ocd-division/country:us/state:ma/sldl:31st_middlesex"
+    "Thirty-Second Middlesex": "ocd-division/country:us/state:ma/sldl:32nd_middlesex"
+    "Thirty-Third Middlesex": "ocd-division/country:us/state:ma/sldl:33rd_middlesex"
+    "Thirty-Fourth Middlesex": "ocd-division/country:us/state:ma/sldl:34th_middlesex"
+    "Thirty-Fifth Middlesex": "ocd-division/country:us/state:ma/sldl:35th_middlesex"
+    "Thirty-Sixth Middlesex": "ocd-division/country:us/state:ma/sldl:36th_middlesex"
+    "Thirty-Seventh Middlesex": "ocd-division/country:us/state:ma/sldl:37th_middlesex"
+    "Third Barnstable": "ocd-division/country:us/state:ma/sldl:3rd_barnstable"
+    "Third Berkshire": "ocd-division/country:us/state:ma/sldl:3rd_berkshire"
+    "Third Bristol": "ocd-division/country:us/state:ma/sldl:3rd_bristol"
+    "Third Essex": "ocd-division/country:us/state:ma/sldl:3rd_essex"
+    "Third Hampden": "ocd-division/country:us/state:ma/sldl:3rd_hampden"
+    "Third Hampshire": "ocd-division/country:us/state:ma/sldl:3rd_hampshire"
+    "Third Middlesex": "ocd-division/country:us/state:ma/sldl:3rd_middlesex"
+    "Third Norfolk": "ocd-division/country:us/state:ma/sldl:3rd_norfolk"
+    "Third Plymouth": "ocd-division/country:us/state:ma/sldl:3rd_plymouth"
+    "Third Suffolk": "ocd-division/country:us/state:ma/sldl:3rd_suffolk"
+    "Third Worcester": "ocd-division/country:us/state:ma/sldl:3rd_worcester"
+    "Fourth Barnstable": "ocd-division/country:us/state:ma/sldl:4th_barnstable"
+    "Fourth Berkshire": "ocd-division/country:us/state:ma/sldl:4th_berkshire"
+    "Fourth Bristol": "ocd-division/country:us/state:ma/sldl:4th_bristol"
+    "Fourth Essex": "ocd-division/country:us/state:ma/sldl:4th_essex"
+    "Fourth Hampden": "ocd-division/country:us/state:ma/sldl:4th_hampden"
+    "Fourth Middlesex": "ocd-division/country:us/state:ma/sldl:4th_middlesex"
+    "Fourth Norfolk": "ocd-division/country:us/state:ma/sldl:4th_norfolk"
+    "Fourth Plymouth": "ocd-division/country:us/state:ma/sldl:4th_plymouth"
+    "Fourth Suffolk": "ocd-division/country:us/state:ma/sldl:4th_suffolk"
+    "Fourth Worcester": "ocd-division/country:us/state:ma/sldl:4th_worcester"
+    "Fifth Barnstable": "ocd-division/country:us/state:ma/sldl:5th_barnstable"
+    "Fifth Bristol": "ocd-division/country:us/state:ma/sldl:5th_bristol"
+    "Fifth Essex": "ocd-division/country:us/state:ma/sldl:5th_essex"
+    "Fifth Hampden": "ocd-division/country:us/state:ma/sldl:5th_hampden"
+    "Fifth Middlesex": "ocd-division/country:us/state:ma/sldl:5th_middlesex"
+    "Fifth Norfolk": "ocd-division/country:us/state:ma/sldl:5th_norfolk"
+    "Fifth Plymouth": "ocd-division/country:us/state:ma/sldl:5th_plymouth"
+    "Fifth Suffolk": "ocd-division/country:us/state:ma/sldl:5th_suffolk"
+    "Fifth Worcester": "ocd-division/country:us/state:ma/sldl:5th_worcester"
+    "Sixth Bristol": "ocd-division/country:us/state:ma/sldl:6th_bristol"
+    "Sixth Essex": "ocd-division/country:us/state:ma/sldl:6th_essex"
+    "Sixth Hampden": "ocd-division/country:us/state:ma/sldl:6th_hampden"
+    "Sixth Middlesex": "ocd-division/country:us/state:ma/sldl:6th_middlesex"
+    "Sixth Norfolk": "ocd-division/country:us/state:ma/sldl:6th_norfolk"
+    "Sixth Plymouth": "ocd-division/country:us/state:ma/sldl:6th_plymouth"
+    "Sixth Suffolk": "ocd-division/country:us/state:ma/sldl:6th_suffolk"
+    "Sixth Worcester": "ocd-division/country:us/state:ma/sldl:6th_worcester"
+    "Seventh Bristol": "ocd-division/country:us/state:ma/sldl:7th_bristol"
+    "Seventh Essex": "ocd-division/country:us/state:ma/sldl:7th_essex"
+    "Seventh Hampden": "ocd-division/country:us/state:ma/sldl:7th_hampden"
+    "Seventh Middlesex": "ocd-division/country:us/state:ma/sldl:7th_middlesex"
+    "Seventh Norfolk": "ocd-division/country:us/state:ma/sldl:7th_norfolk"
+    "Seventh Plymouth": "ocd-division/country:us/state:ma/sldl:7th_plymouth"
+    "Seventh Suffolk": "ocd-division/country:us/state:ma/sldl:7th_suffolk"
+    "Seventh Worcester": "ocd-division/country:us/state:ma/sldl:7th_worcester"
+    "Eighth Bristol": "ocd-division/country:us/state:ma/sldl:8th_bristol"
+    "Eighth Essex": "ocd-division/country:us/state:ma/sldl:8th_essex"
+    "Eighth Hampden": "ocd-division/country:us/state:ma/sldl:8th_hampden"
+    "Eighth Middlesex": "ocd-division/country:us/state:ma/sldl:8th_middlesex"
+    "Eighth Norfolk": "ocd-division/country:us/state:ma/sldl:8th_norfolk"
+    "Eighth Plymouth": "ocd-division/country:us/state:ma/sldl:8th_plymouth"
+    "Eighth Suffolk": "ocd-division/country:us/state:ma/sldl:8th_suffolk"
+    "Eighth Worcester": "ocd-division/country:us/state:ma/sldl:8th_worcester"
+    "Ninth Bristol": "ocd-division/country:us/state:ma/sldl:9th_bristol"
+    "Ninth Essex": "ocd-division/country:us/state:ma/sldl:9th_essex"
+    "Ninth Hampden": "ocd-division/country:us/state:ma/sldl:9th_hampden"
+    "Ninth Middlesex": "ocd-division/country:us/state:ma/sldl:9th_middlesex"
+    "Ninth Norfolk": "ocd-division/country:us/state:ma/sldl:9th_norfolk"
+    "Ninth Plymouth": "ocd-division/country:us/state:ma/sldl:9th_plymouth"
+    "Ninth Suffolk": "ocd-division/country:us/state:ma/sldl:9th_suffolk"
+    "Ninth Worcester": "ocd-division/country:us/state:ma/sldl:9th_worcester"
+    "Barnstable, Dukes and Nantucket": "ocd-division/country:us/state:ma/sldl:barnstable_dukes_and_nantucket"
   vacancies:
     - chamber: upper
       district: "First Middlesex"
@@ -221,12 +424,15 @@ nd:
   lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2, '36': 2, '37': 2, '38': 2, '39': 2, '40': 2, '41': 2, '42': 2, '43': 2, '44': 2, '45': 2, '46': 2, '47': 2}
   upper_seats: 47
 ne:
+  legislature_name: Nebraska Legislature
+  legislature_title: Senator
   legislature_seats: 49
   vacancies:
     - chamber: legislature
       district: 14
       vacant_until: 2019-01-01
 nh:
+  legislature_name: New Hampshire General Court
   vacancies:
     - district: Cheshire 4
       chamber: lower
@@ -371,9 +577,20 @@ pa:
       district: 54
       vacant_until: 2019-01-01
 pr:
+  legislature_name: Legislative Assembly of Puerto Rico
   lower_seats: {'1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1, '19': 1, '20': 1, '21': 1, '22': 1, '23': 1, '24': 1, '25': 1, '26': 1, '27': 1, '28': 1, '29': 1, '30': 1, '31': 1, '32': 1, '33': 1, '34': 1, '35': 1, '36': 1, '37': 1, '38': 1, '39': 1, '40': 1, 'At-Large': 11}
   upper_seats: {'I': 2, 'II': 2, 'III': 2, 'IV': 2, 'V': 2, 'VI': 2, 'VII': 2, 'VIII': 2, 'At-Large': 14}
   # note: PR's At-Large number can *change*
+  upper_division_ids:
+    I: ocd-division/country:us/territory:pr/sldu:1
+    II: ocd-division/country:us/territory:pr/sldu:2
+    III: ocd-division/country:us/territory:pr/sldu:3
+    IV: ocd-division/country:us/territory:pr/sldu:4
+    V: ocd-division/country:us/territory:pr/sldu:5
+    VI: ocd-division/country:us/territory:pr/sldu:6
+    VII: ocd-division/country:us/territory:pr/sldu:7
+    VIII: ocd-division/country:us/territory:pr/sldu:8
+    At-Large: ocd-division/country:us/territory:pr
   vacancies:
     - chamber: lower
       district: 17
@@ -442,6 +659,8 @@ va:
       district: 8
       vacant_until: 2019-01-01
 vt:
+  legislature_name: Vermont General Assembly
+  # TODO: figure out Chittenden-Grand Isle: grand_isle-chittenden
   vacancies:
     - chamber: lower
       district: Chittenden-6-7
