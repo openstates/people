@@ -224,30 +224,48 @@ def create_top_level_orgs(jurisdiction_id, settings):
          },
         ['jurisdiction_id', 'classification']
     )
-    legislature = org
+    if created:
+        click.secho(f'{org} created', fg='green')
+    elif updated:
+        click.secho(f'{org} updated', fg='yellow')
 
+    legislature = org
     districts = get_districts(settings)
 
-    print(districts)
+    # create remaining orgs & add posts
     for chamber in districts:
         if chamber != 'legislature':
+            # check for name overrides
+            title = settings.get(chamber + '_title')
+            if not title:
+                title = 'Senator' if chamber == 'upper' else 'Representative'
+            chamber_name = settings.get(chamber + '_chamber_name')
+            if not chamber_name:
+                chamber_name = 'Senate' if chamber == 'upper' else 'House'
+
             org = org, created, updated = get_update_or_create(
                 Organization,
-                {'name': settings[chamber + '_chamber_name'],
+                {'name': chamber_name,
                  'classification': chamber,
                  'jurisdiction_id': jurisdiction_id,
                  'parent_id': legislature.id},
                 ['classification', 'parent_id']
             )
+        else:
+            title = settings['legislature_title']
 
         # add posts to org
         posts = [{'label': label,
-                  'role': settings[chamber + '_role'],
+                  'role': title,
                   'division_id': get_division_id_for_role(settings, division_id, chamber, label),
                   'maximum_memberships': maximum,
                   }
                  for label, maximum in districts[chamber].items()]
         updated |= update_subobjects(org, 'posts', posts)
+        if created:
+            click.secho(f'{org} created', fg='green')
+        elif updated:
+            click.secho(f'{org} updated', fg='yellow')
 
 
 def load_directory(files, type, jurisdiction_id, purge):
@@ -346,6 +364,8 @@ def to_database(abbreviations, purge, safe):
     if not abbreviations:
         abbreviations = get_all_abbreviations()
 
+    settings = get_settings()
+
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
         directory = get_data_dir(abbr)
@@ -358,8 +378,11 @@ def to_database(abbreviations, purge, safe):
         if safe:
             click.secho('running in safe mode, no changes will be made', fg='magenta')
 
+        state_settings = settings[abbr]
+
         try:
             with transaction.atomic():
+                create_top_level_orgs(jurisdiction_id, state_settings)
                 load_directory(person_files, 'person', jurisdiction_id, purge=purge)
                 load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
                 if safe:

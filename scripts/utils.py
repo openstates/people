@@ -90,6 +90,12 @@ def get_filename(obj):
     return f'{name}-{id}.yml'
 
 
+def get_settings():
+    settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
+    with open(settings_file) as f:
+        return load_yaml(f)
+
+
 def role_is_active(role):
     now = datetime.datetime.utcnow().date().isoformat()
     return str(role.get('end_date')) is None or str(role.get('end_date')) > now

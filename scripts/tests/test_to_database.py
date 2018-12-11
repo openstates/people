@@ -372,10 +372,6 @@ def test_create_top_level_simple():
         'lower_seats': 105,
         'upper_seats': 35,
         'legislature_name': 'Alabama Legislature',
-        'upper_chamber_name': 'House',
-        'lower_chamber_name': 'Senate',
-        'upper_role': 'Senator',
-        'lower_role': 'Representative',
     }
     # divisions would already exist
     for n in range(settings['lower_seats'] + 1):

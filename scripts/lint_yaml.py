@@ -6,7 +6,7 @@ import datetime
 import glob
 import click
 from utils import (get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml,
-                   get_districts)
+                   get_districts, get_settings)
 from collections import defaultdict, Counter
 
 
@@ -563,10 +563,7 @@ def lint(abbreviations, verbose, summary):
 
         <ABBR> can be provided to restrict linting to single state's files.
     """
-    settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
-    with open(settings_file) as f:
-        settings = load_yaml(f)
-
+    settings = get_settings()
     error_count = 0
 
     if not abbreviations:
