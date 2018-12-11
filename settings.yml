@@ -16,6 +16,8 @@ az:
   upper_seats: 30
 ca:
   lower_seats: 80
+  lower_title: Assemblymember
+  lower_chamber_name: Assembly
   upper_seats: 40
 co:
   lower_seats: 65
@@ -25,6 +27,19 @@ ct:
   upper_seats: 36
 dc:
   legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1, 'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
+  legislature_name: Council of the District of Columbia
+  legislature_title: Councilmember
+  legislature_division_ids: 
+    'Ward 1': 'ocd-division/country:us/district:dc/ward:1'
+    'Ward 2': 'ocd-division/country:us/district:dc/ward:2'
+    'Ward 3': 'ocd-division/country:us/district:dc/ward:3'
+    'Ward 4': 'ocd-division/country:us/district:dc/ward:4'
+    'Ward 5': 'ocd-division/country:us/district:dc/ward:5'
+    'Ward 6': 'ocd-division/country:us/district:dc/ward:6'
+    'Ward 7': 'ocd-division/country:us/district:dc/ward:7'
+    'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
+    'Chairman': 'ocd-division/country:us/district:dc'
+    'At-Large': 'ocd-division/country:us/district:dc'
 de:
   lower_seats: 41
   upper_seats: 21
@@ -134,6 +149,7 @@ ma:
 
 md:
   lower_seats: {'1A': 1, '1B': 1, '1C': 1, '2A': 2, '2B': 1, '3A': 2, '3B': 1, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9A': 2, '9B': 1, '10': 3, '11': 3, '12': 3, '13': 3, '14': 3, '15': 3, '16': 3, '17': 3, '18': 3, '19': 3, '20': 3, '21': 3, '22': 3, '23A': 1, '23B': 2, '24': 3, '25': 3, '26': 3, '27A': 1, '27B': 1, '27C': 1, '28': 3, '29A': 1, '29B': 1, '29C': 1, '30A': 2, '30B': 1, '31A': 1, '31B': 2, '32': 3, '33': 3, '34A': 2, '34B': 1, '35A': 1, '35B': 2, '36': 3, '37A': 1, '37B': 2, '38A': 1, '38B': 1, '38C': 1, '39': 3, '40': 3, '41': 3, '42A': 1, '42B': 2, '43': 3, '44A': 1, '44B': 2, '45': 3, '46': 3, '47A': 2, '47B': 1}
+  lower_title: Delegate
   upper_seats: 47
 me:
   lower_seats: 151
@@ -198,6 +214,7 @@ ms:
       district: 31
       vacant_until: 2019-01-01
 nc:
+  legislature_name: North Carolina General Assembly
   lower_seats: 120
   upper_seats: 50
 nd:
@@ -278,6 +295,8 @@ nh:
   lower_seats: {'Belknap 1': 1, 'Belknap 2': 4, 'Belknap 3': 4, 'Belknap 4': 2, 'Belknap 5': 2, 'Belknap 6': 2, 'Belknap 7': 1, 'Belknap 8': 1, 'Belknap 9': 1, 'Carroll 1': 1, 'Carroll 2': 3, 'Carroll 3': 2, 'Carroll 4': 2, 'Carroll 5': 3, 'Carroll 6': 2, 'Carroll 7': 1, 'Carroll 8': 1, 'Cheshire 1': 4, 'Cheshire 2': 1, 'Cheshire 3': 1, 'Cheshire 4': 1, 'Cheshire 5': 1, 'Cheshire 6': 1, 'Cheshire 7': 1, 'Cheshire 8': 1, 'Cheshire 9': 2, 'Cheshire 10': 1, 'Cheshire 11': 2, 'Cheshire 12': 2, 'Cheshire 13': 1, 'Cheshire 14': 1, 'Cheshire 15': 1, 'Cheshire 16': 2, 'Coos 1': 2, 'Coos 2': 1, 'Coos 3': 3, 'Coos 4': 1, 'Coos 5': 1, 'Coos 6': 1, 'Coos 7': 1, 'Grafton 1': 2, 'Grafton 2': 1, 'Grafton 3': 1, 'Grafton 4': 1, 'Grafton 5': 1, 'Grafton 6': 1, 'Grafton 7': 1, 'Grafton 8': 3, 'Grafton 9': 2, 'Grafton 10': 1, 'Grafton 11': 1, 'Grafton 12': 4, 'Grafton 13': 4, 'Grafton 14': 1, 'Grafton 15': 1, 'Grafton 16': 1, 'Grafton 17': 1, 'Hillsborough 1': 2, 'Hillsborough 2': 3, 'Hillsborough 3': 1, 'Hillsborough 4': 2, 'Hillsborough 5': 2, 'Hillsborough 6': 5, 'Hillsborough 7': 6, 'Hillsborough 8': 2, 'Hillsborough 9': 2, 'Hillsborough 10': 2, 'Hillsborough 11': 2, 'Hillsborough 12': 2, 'Hillsborough 13': 2, 'Hillsborough 14': 2, 'Hillsborough 15': 2, 'Hillsborough 16': 2, 'Hillsborough 17': 2, 'Hillsborough 18': 2, 'Hillsborough 19': 2, 'Hillsborough 20': 2, 'Hillsborough 21': 8, 'Hillsborough 22': 3, 'Hillsborough 23': 4, 'Hillsborough 24': 2, 'Hillsborough 25': 2, 'Hillsborough 26': 2, 'Hillsborough 27': 2, 'Hillsborough 28': 3, 'Hillsborough 29': 3, 'Hillsborough 30': 3, 'Hillsborough 31': 3, 'Hillsborough 32': 3, 'Hillsborough 33': 3, 'Hillsborough 34': 3, 'Hillsborough 35': 3, 'Hillsborough 36': 3, 'Hillsborough 37': 11, 'Hillsborough 38': 2, 'Hillsborough 39': 1, 'Hillsborough 40': 1, 'Hillsborough 41': 1, 'Hillsborough 42': 2, 'Hillsborough 43': 3, 'Hillsborough 44': 2, 'Hillsborough 45': 2, 'Merrimack 1': 1, 'Merrimack 2': 2, 'Merrimack 3': 2, 'Merrimack 4': 1, 'Merrimack 5': 2, 'Merrimack 6': 2, 'Merrimack 7': 1, 'Merrimack 8': 1, 'Merrimack 9': 2, 'Merrimack 10': 3, 'Merrimack 11': 1, 'Merrimack 12': 1, 'Merrimack 13': 1, 'Merrimack 14': 1, 'Merrimack 15': 1, 'Merrimack 16': 1, 'Merrimack 17': 1, 'Merrimack 18': 1, 'Merrimack 19': 1, 'Merrimack 20': 3, 'Merrimack 21': 2, 'Merrimack 22': 1, 'Merrimack 23': 3, 'Merrimack 24': 4, 'Merrimack 25': 1, 'Merrimack 26': 1, 'Merrimack 27': 2, 'Merrimack 28': 1, 'Merrimack 29': 1, 'Rockingham 1': 1, 'Rockingham 2': 3, 'Rockingham 3': 3, 'Rockingham 4': 5, 'Rockingham 5': 7, 'Rockingham 6': 10, 'Rockingham 7': 4, 'Rockingham 8': 9, 'Rockingham 9': 2, 'Rockingham 10': 1, 'Rockingham 11': 1, 'Rockingham 12': 1, 'Rockingham 13': 4, 'Rockingham 14': 4, 'Rockingham 15': 1, 'Rockingham 16': 1, 'Rockingham 17': 3, 'Rockingham 18': 4, 'Rockingham 19': 2, 'Rockingham 20': 3, 'Rockingham 21': 4, 'Rockingham 22': 1, 'Rockingham 23': 1, 'Rockingham 24': 2, 'Rockingham 25': 1, 'Rockingham 26': 1, 'Rockingham 27': 1, 'Rockingham 28': 1, 'Rockingham 29': 1, 'Rockingham 30': 1, 'Rockingham 31': 1, 'Rockingham 32': 1, 'Rockingham 33': 1, 'Rockingham 34': 1, 'Rockingham 35': 1, 'Rockingham 36': 1, 'Rockingham 37': 1, 'Strafford 1': 2, 'Strafford 2': 2, 'Strafford 3': 2, 'Strafford 4': 2, 'Strafford 5': 1, 'Strafford 6': 5, 'Strafford 7': 1, 'Strafford 8': 1, 'Strafford 9': 1, 'Strafford 10': 1, 'Strafford 11': 1, 'Strafford 12': 1, 'Strafford 13': 1, 'Strafford 14': 1, 'Strafford 15': 1, 'Strafford 16': 1, 'Strafford 17': 3, 'Strafford 18': 3, 'Strafford 19': 1, 'Strafford 20': 1, 'Strafford 21': 1, 'Strafford 22': 1, 'Strafford 23': 1, 'Strafford 24': 1, 'Strafford 25': 1, 'Sullivan 1': 2, 'Sullivan 2': 1, 'Sullivan 3': 1, 'Sullivan 4': 1, 'Sullivan 5': 1, 'Sullivan 6': 2, 'Sullivan 7': 1, 'Sullivan 8': 1, 'Sullivan 9': 1, 'Sullivan 10': 1, 'Sullivan 11': 1}
 nj:
   lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2, '36': 2, '37': 2, '38': 2, '39': 2, '40': 2}
+  lower_title: Assembly Member
+  lower_chamber_name: Assembly
   upper_seats: 40
 nm:
   lower_seats: 70
@@ -288,9 +307,13 @@ nm:
       vacant_until: 2019-01-01
 nv:
   lower_seats: 42
+  lower_title: Assembly Member
+  lower_chamber_name: Assembly
   upper_seats: 21
 ny:
   lower_seats: 150
+  lower_chamber_name: Assembly
+  lower_title: Assembly Member
   upper_seats: 63
   vacancies:
     - chamber: lower
@@ -412,6 +435,7 @@ ut:
       vacant_until: 2019-01-01
 va:
   lower_seats: 100
+  lower_title: Delegate
   upper_seats: 40
   vacancies:
     - chamber: lower
@@ -432,9 +456,11 @@ wa:
   upper_seats: 49
 wi:
   lower_seats: 99
+  lower_chamber_name: Assembly
   upper_seats: 33
 wv:
   lower_seats: {'1': 2, '2': 1, '3': 2, '4': 2, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 3, '11': 1, '12': 1, '13': 2, '14': 1, '15': 1, '16': 3, '17': 2, '18': 1, '19': 2, '20': 1, '21': 1, '22': 2, '23': 1, '24': 2, '25': 1, '26': 1, '27': 3, '28': 2, '29': 1, '30': 1, '31': 1, '32': 3, '33': 1, '34': 1, '35': 4, '36': 3, '37': 1, '38': 1, '39': 1, '40': 1, '41': 1, '42': 2, '43': 2, '44': 1, '45': 1, '46': 1, '47': 1, '48': 4, '49': 1, '50': 3, '51': 5, '52': 1, '53': 1, '54': 1, '55': 1, '56': 1, '57': 1, '58': 1, '59': 1, '60': 1, '61': 1, '62': 1, '63': 1, '64': 1, '65': 1, '66': 1, '67': 1}
+  lower_title: Delegate
   upper_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2}
 wy:
   lower_seats: 60
