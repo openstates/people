@@ -6,7 +6,8 @@ import django
 from django import conf
 from django.db import transaction
 import click
-from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations, get_districts
+from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations, get_districts,
+                   get_settings)
 
 
 class CancelTransaction(Exception):
@@ -207,8 +208,14 @@ def sort_organizations(orgs):
 
 
 def get_division_id_for_role(settings, division_id, chamber, label):
+    # if there's an override, use it
+    overrides = settings.get(chamber + '_division_ids')
+    if overrides:
+        return overrides[label]
+
+    # default is parent/sld[ul]:prefix
     prefix = 'sldl' if chamber == 'lower' else 'sldu'
-    slug = label
+    slug = label.lower()
     return f'{division_id}/{prefix}:{slug}'
 
 

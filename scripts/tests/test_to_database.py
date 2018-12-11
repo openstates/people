@@ -389,16 +389,30 @@ def test_create_top_level_simple():
 
 
 @pytest.mark.django_db
-def skiptest_create_top_level_unicameral():
+def test_create_top_level_unicameral():
     d = Division.objects.create(id='ocd-division/country:us/district:dc', name='DC')
-    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/district:dc/government',
-                                    name='DC', division=d)
-    settings = {'legislature_seats': {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1,
-                                      'Ward 5': 1, 'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1,
-                                      'Chairman': 1, 'At-Large': 4},
-                'legislature_name': 'Council of the District of Columbia',
-                'legislature_role': 'Councilmember',
-                }
+    Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/district:dc/government',
+                                name='DC', division=d)
+    for n in range(1, 9):
+        Division.objects.create(id=f'ocd-division/country:us/district:dc/ward:{n}',
+                                name=f'Ward {n}')
+
+    settings = yaml.load("""
+legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1,
+                    'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
+legislature_name: Council of the District of Columbia
+legislature_title: Councilmember
+legislature_division_ids:
+    'Ward 1': 'ocd-division/country:us/district:dc/ward:1'
+    'Ward 2': 'ocd-division/country:us/district:dc/ward:2'
+    'Ward 3': 'ocd-division/country:us/district:dc/ward:3'
+    'Ward 4': 'ocd-division/country:us/district:dc/ward:4'
+    'Ward 5': 'ocd-division/country:us/district:dc/ward:5'
+    'Ward 6': 'ocd-division/country:us/district:dc/ward:6'
+    'Ward 7': 'ocd-division/country:us/district:dc/ward:7'
+    'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
+    'Chairman': 'ocd-division/country:us/district:dc'
+    'At-Large': 'ocd-division/country:us/district:dc'""")
     create_top_level_orgs('ocd-jurisdiction/country:us/district:dc/government', settings)
 
     org = Organization.objects.get(name='Council of the District of Columbia')
@@ -408,3 +422,5 @@ def skiptest_create_top_level_unicameral():
     create_top_level_orgs('ocd-jurisdiction/country:us/district:dc/government', settings)
 
     assert Organization.objects.filter(classification='legislature').count() == 1
+    assert org.posts.all().count() == 10
+    assert Post.objects.filter(division_id='ocd-division/country:us/district:dc').count() == 2
