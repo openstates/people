@@ -215,7 +215,7 @@ def get_division_id_for_role(settings, division_id, chamber, label):
 
     # default is parent/sld[ul]:prefix
     prefix = 'sldl' if chamber == 'lower' else 'sldu'
-    slug = label.lower()
+    slug = label.lower().replace(' ', '_')
     return f'{division_id}/{prefix}:{slug}'
 
 
