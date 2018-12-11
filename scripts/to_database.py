@@ -6,7 +6,7 @@ import django
 from django import conf
 from django.db import transaction
 import click
-from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations
+from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations, get_districts
 
 
 class CancelTransaction(Exception):
@@ -49,10 +49,11 @@ def update_subobjects(person, fieldname, objects, read_manager=None):
     return updated
 
 
-def get_update_or_create(ModelCls, data):
+def get_update_or_create(ModelCls, data, lookup_keys):
     updated = created = False
+    kwargs = {k: data[k] for k in lookup_keys}
     try:
-        obj = ModelCls.objects.get(pk=data['id'])
+        obj = ModelCls.objects.get(**kwargs)
         for field, value in data.items():
             if getattr(obj, field) != value:
                 setattr(obj, field, value)
@@ -80,7 +81,7 @@ def load_person(data):
                   image=data.get('image', ''),
                   extras=data.get('extras', {}),
                   )
-    person, created, updated = get_update_or_create(Person, fields)
+    person, created, updated = get_update_or_create(Person, fields, ['id'])
 
     updated |= update_subobjects(person, 'other_names', data.get('other_names', []))
     updated |= update_subobjects(person, 'links', data.get('links', []))
@@ -160,7 +161,7 @@ def load_org(data):
         dissolution_date=data.get('dissolution_date', ''),
         parent=parent,
     )
-    org, created, updated = get_update_or_create(Organization, fields)
+    org, created, updated = get_update_or_create(Organization, fields, ['id'])
 
     updated |= update_subobjects(org, 'links', data.get('links', []))
     updated |= update_subobjects(org, 'sources', data.get('sources', []))
@@ -203,6 +204,50 @@ def sort_organizations(orgs):
     assert len(order) == how_many
 
     return order
+
+
+def get_division_id_for_role(settings, division_id, chamber, label):
+    prefix = 'sldl' if chamber == 'lower' else 'sldu'
+    slug = label
+    return f'{division_id}/{prefix}:{slug}'
+
+
+def create_top_level_orgs(jurisdiction_id, settings):
+    from opencivicdata.core.models import Organization, Jurisdiction
+
+    division_id = Jurisdiction.objects.get(pk=jurisdiction_id).division_id
+    org, created, updated = get_update_or_create(
+        Organization,
+        {'name': settings['legislature_name'],
+         'classification': 'legislature',
+         'jurisdiction_id': jurisdiction_id,
+         },
+        ['jurisdiction_id', 'classification']
+    )
+    legislature = org
+
+    districts = get_districts(settings)
+
+    print(districts)
+    for chamber in districts:
+        if chamber != 'legislature':
+            org = org, created, updated = get_update_or_create(
+                Organization,
+                {'name': settings[chamber + '_chamber_name'],
+                 'classification': chamber,
+                 'jurisdiction_id': jurisdiction_id,
+                 'parent_id': legislature.id},
+                ['classification', 'parent_id']
+            )
+
+        # add posts to org
+        posts = [{'label': label,
+                  'role': settings[chamber + '_role'],
+                  'division_id': get_division_id_for_role(settings, division_id, chamber, label),
+                  'maximum_memberships': maximum,
+                  }
+                 for label, maximum in districts[chamber].items()]
+        updated |= update_subobjects(org, 'posts', posts)
 
 
 def load_directory(files, type, jurisdiction_id, purge):

@@ -1,7 +1,7 @@
 import pytest
 import yaml
-from opencivicdata.core.models import Person, Organization, Jurisdiction, Division
-from to_database import load_person, load_org
+from opencivicdata.core.models import Person, Organization, Jurisdiction, Division, Post
+from to_database import load_person, load_org, create_top_level_orgs
 
 
 def setup():
@@ -361,3 +361,54 @@ def test_org_person_membership_interaction():
     assert created is False
     assert updated is False
     assert o.memberships.count() == 1
+
+
+@pytest.mark.django_db
+def test_create_top_level_simple():
+    d = Division.objects.create(id='ocd-division/country:us/state:al', name='Alabama')
+    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:al/government',
+                                    name='Alabama', division=d)
+    settings = {
+        'lower_seats': 105,
+        'upper_seats': 35,
+        'legislature_name': 'Alabama Legislature',
+        'upper_chamber_name': 'House',
+        'lower_chamber_name': 'Senate',
+        'upper_role': 'Senator',
+        'lower_role': 'Representative',
+    }
+    # divisions would already exist
+    for n in range(settings['lower_seats'] + 1):
+        Division.objects.create(id=f'ocd-division/country:us/state:al/sldl:{n}', name=str(n))
+    for n in range(settings['upper_seats'] + 1):
+        Division.objects.create(id=f'ocd-division/country:us/state:al/sldu:{n}', name=str(n))
+
+    create_top_level_orgs('ocd-jurisdiction/country:us/state:al/government', settings)
+
+    assert Organization.objects.filter(classification='legislature').count() == 1
+    assert Organization.objects.filter(classification='upper', jurisdiction=j).count() == 1
+    assert Organization.objects.filter(classification='lower', jurisdiction=j).count() == 1
+    assert Post.objects.filter(role='Senator').count() == 35
+    assert Post.objects.filter(role='Representative').count() == 105
+
+
+@pytest.mark.django_db
+def skiptest_create_top_level_unicameral():
+    d = Division.objects.create(id='ocd-division/country:us/district:dc', name='DC')
+    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/district:dc/government',
+                                    name='DC', division=d)
+    settings = {'legislature_seats': {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1,
+                                      'Ward 5': 1, 'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1,
+                                      'Chairman': 1, 'At-Large': 4},
+                'legislature_name': 'Council of the District of Columbia',
+                'legislature_role': 'Councilmember',
+                }
+    create_top_level_orgs('ocd-jurisdiction/country:us/district:dc/government', settings)
+
+    org = Organization.objects.get(name='Council of the District of Columbia')
+
+    # name change due to statehood!
+    settings['legislature_name'] = 'Douglass Commonwealth Legislature'
+    create_top_level_orgs('ocd-jurisdiction/country:us/district:dc/government', settings)
+
+    assert Organization.objects.filter(classification='legislature').count() == 1

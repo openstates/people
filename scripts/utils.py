@@ -93,3 +93,21 @@ def get_filename(obj):
 def role_is_active(role):
     now = datetime.datetime.utcnow().date().isoformat()
     return str(role.get('end_date')) is None or str(role.get('end_date')) > now
+
+
+def get_districts(settings):
+    expected = {}
+    for key in ('upper', 'lower', 'legislature'):
+        seats = settings.get(key + '_seats')
+        if not seats:
+            continue
+        elif isinstance(seats, int):
+            # one seat per district by default
+            expected[key] = {str(s): 1 for s in range(1, seats+1)}
+        elif isinstance(seats, list):
+            expected[key] = {str(s): 1 for s in seats}
+        elif isinstance(seats, dict):
+            expected[key] = seats
+        else:   # pragma: no cover
+            raise ValueError(seats)
+    return expected
