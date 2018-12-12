@@ -5,7 +5,8 @@ import sys
 import datetime
 import glob
 import click
-from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml
+from utils import (get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml,
+                   get_districts, get_settings)
 from collections import defaultdict, Counter
 
 
@@ -258,21 +259,9 @@ def validate_roles(person, roles_key, retired=False):
 
 
 def get_expected_districts(settings):
-    expected = {}
-    for key in ('upper', 'lower', 'legislature'):
-        seats = settings.get(key + '_seats')
-        if not seats:
-            continue
-        elif isinstance(seats, int):
-            # one seat per district by default
-            expected[key] = {str(s): 1 for s in range(1, seats+1)}
-        elif isinstance(seats, list):
-            expected[key] = {str(s): 1 for s in seats}
-        elif isinstance(seats, dict):
-            expected[key] = seats
-        else:   # pragma: no cover
-            raise ValueError(seats)
+    expected = get_districts(settings)
 
+    # remove vacancies
     vacancies = settings.get('vacancies', [])
     if vacancies:
         click.secho(f'Processing {len(vacancies)} vacancies:')
@@ -574,10 +563,7 @@ def lint(abbreviations, verbose, summary):
 
         <ABBR> can be provided to restrict linting to single state's files.
     """
-    settings_file = os.path.join(os.path.dirname(__file__), '../settings.yml')
-    with open(settings_file) as f:
-        settings = load_yaml(f)
-
+    settings = get_settings()
     error_count = 0
 
     if not abbreviations:
