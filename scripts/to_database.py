@@ -2,6 +2,7 @@
 import os
 import glob
 import yaml
+from functools import lru_cache
 import django
 from django import conf
 from django.db import transaction
@@ -12,6 +13,11 @@ from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations, get
 
 class CancelTransaction(Exception):
     pass
+
+
+@lru_cache(128)
+def cached_lookup(ModelCls, **kwargs):
+    return ModelCls.objects.get(**kwargs)
 
 
 def update_subobjects(person, fieldname, objects, read_manager=None):
@@ -107,7 +113,7 @@ def load_person(data):
     memberships = []
     for party in data.get('party', []):
         try:
-            org = Organization.objects.get(classification='party', name=party['name'])
+            org = cached_lookup(Organization, classification='party', name=party['name'])
         except Organization.DoesNotExist:
             click.secho(f"no such party {party['name']}", fg='red')
             raise CancelTransaction()
@@ -117,8 +123,8 @@ def load_person(data):
     for role in data.get('roles', []):
         if role['type'] in ('upper', 'lower', 'legislature'):
             try:
-                org = Organization.objects.get(classification=role['type'],
-                                               jurisdiction_id=role['jurisdiction'])
+                org = cached_lookup(Organization, classification=role['type'],
+                                    jurisdiction_id=role['jurisdiction'])
                 post = org.posts.get(label=role['district'])
             except Organization.DoesNotExist:
                 click.secho(f"no such organization {role['jurisdiction']} {role['type']}",
