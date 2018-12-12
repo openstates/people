@@ -226,42 +226,21 @@ def _echo_org_status(org, created, updated):
         click.secho(f'{org} updated', fg='yellow')
 
 
-def create_top_level_orgs(jurisdiction_id, settings):
+def create_posts(jurisdiction_id, settings):
     from opencivicdata.core.models import Organization, Jurisdiction
 
     division_id = Jurisdiction.objects.get(pk=jurisdiction_id).division_id
-    org, created, updated = get_update_or_create(
-        Organization,
-        {'name': settings['legislature_name'],
-         'classification': 'legislature',
-         'jurisdiction_id': jurisdiction_id,
-         },
-        ['jurisdiction_id', 'classification']
-    )
-    _echo_org_status(org, created, updated)
-
-    legislature = org
     districts = get_districts(settings)
 
     # create remaining orgs & add posts
     for chamber in districts:
+        org = Organization.objects.get(jurisdiction_id=jurisdiction_id,
+                                       classification=chamber)
         if chamber != 'legislature':
             # check for name overrides
             title = settings.get(chamber + '_title')
             if not title:
                 title = 'Senator' if chamber == 'upper' else 'Representative'
-            chamber_name = settings.get(chamber + '_chamber_name')
-            if not chamber_name:
-                chamber_name = 'Senate' if chamber == 'upper' else 'House'
-
-            org = org, created, updated = get_update_or_create(
-                Organization,
-                {'name': chamber_name,
-                 'classification': chamber,
-                 'jurisdiction_id': jurisdiction_id,
-                 'parent_id': legislature.id},
-                ['classification', 'parent_id']
-            )
         else:
             title = settings['legislature_title']
 
@@ -272,8 +251,9 @@ def create_top_level_orgs(jurisdiction_id, settings):
                   'maximum_memberships': maximum,
                   }
                  for label, maximum in districts[chamber].items()]
-        updated |= update_subobjects(org, 'posts', posts)
-        _echo_org_status(org, created, updated)
+        updated = update_subobjects(org, 'posts', posts)
+        if updated:
+            click.secho(f'updated {org} posts', fg='yellow')
 
 
 def load_directory(files, type, jurisdiction_id, purge):
@@ -390,7 +370,7 @@ def to_database(abbreviations, purge, safe):
 
         try:
             with transaction.atomic():
-                create_top_level_orgs(jurisdiction_id, state_settings)
+                create_posts(jurisdiction_id, state_settings)
                 load_directory(person_files, 'person', jurisdiction_id, purge=purge)
                 load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
                 if safe:

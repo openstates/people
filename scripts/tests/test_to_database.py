@@ -1,7 +1,7 @@
 import pytest
 import yaml
 from opencivicdata.core.models import Person, Organization, Jurisdiction, Division, Post
-from to_database import load_person, load_org, create_top_level_orgs
+from to_database import load_person, load_org, create_posts
 
 
 def setup():
@@ -364,10 +364,12 @@ def test_org_person_membership_interaction():
 
 
 @pytest.mark.django_db
-def test_create_top_level_simple():
+def test_create_posts_simple():
     d = Division.objects.create(id='ocd-division/country:us/state:al', name='Alabama')
     j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:al/government',
                                     name='Alabama', division=d)
+    Organization.objects.create(jurisdiction=j, name='House', classification='lower')
+    Organization.objects.create(jurisdiction=j, name='Senate', classification='upper')
     settings = {
         'lower_seats': 105,
         'upper_seats': 35,
@@ -379,11 +381,8 @@ def test_create_top_level_simple():
     for n in range(settings['upper_seats'] + 1):
         Division.objects.create(id=f'ocd-division/country:us/state:al/sldu:{n}', name=str(n))
 
-    create_top_level_orgs('ocd-jurisdiction/country:us/state:al/government', settings)
+    create_posts(j.id, settings)
 
-    assert Organization.objects.filter(classification='legislature').count() == 1
-    assert Organization.objects.filter(classification='upper', jurisdiction=j).count() == 1
-    assert Organization.objects.filter(classification='lower', jurisdiction=j).count() == 1
     assert Post.objects.filter(role='Senator').count() == 35
     assert Post.objects.filter(role='Representative').count() == 105
 
@@ -391,8 +390,9 @@ def test_create_top_level_simple():
 @pytest.mark.django_db
 def test_create_top_level_unicameral():
     d = Division.objects.create(id='ocd-division/country:us/district:dc', name='DC')
-    Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/district:dc/government',
-                                name='DC', division=d)
+    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/district:dc/government',
+                                    name='DC', division=d)
+    org = Organization.objects.create(jurisdiction=j, name='Council', classification='legislature')
     for n in range(1, 9):
         Division.objects.create(id=f'ocd-division/country:us/district:dc/ward:{n}',
                                 name=f'Ward {n}')
@@ -413,14 +413,7 @@ legislature_division_ids:
     'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
     'Chairman': 'ocd-division/country:us/district:dc'
     'At-Large': 'ocd-division/country:us/district:dc'""")
-    create_top_level_orgs('ocd-jurisdiction/country:us/district:dc/government', settings)
 
-    org = Organization.objects.get(name='Council of the District of Columbia')
-
-    # name change due to statehood!
-    settings['legislature_name'] = 'Douglass Commonwealth Legislature'
-    create_top_level_orgs('ocd-jurisdiction/country:us/district:dc/government', settings)
-
-    assert Organization.objects.filter(classification='legislature').count() == 1
+    create_posts(j.id, settings)
     assert org.posts.all().count() == 10
     assert Post.objects.filter(division_id='ocd-division/country:us/district:dc').count() == 2
