@@ -2,15 +2,22 @@
 import os
 import glob
 import yaml
+from functools import lru_cache
 import django
 from django import conf
 from django.db import transaction
 import click
-from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations
+from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations, get_districts,
+                   get_settings)
 
 
 class CancelTransaction(Exception):
     pass
+
+
+@lru_cache(128)
+def cached_lookup(ModelCls, **kwargs):
+    return ModelCls.objects.get(**kwargs)
 
 
 def update_subobjects(person, fieldname, objects, read_manager=None):
@@ -49,10 +56,11 @@ def update_subobjects(person, fieldname, objects, read_manager=None):
     return updated
 
 
-def get_update_or_create(ModelCls, data):
+def get_update_or_create(ModelCls, data, lookup_keys):
     updated = created = False
+    kwargs = {k: data[k] for k in lookup_keys}
     try:
-        obj = ModelCls.objects.get(pk=data['id'])
+        obj = ModelCls.objects.get(**kwargs)
         for field, value in data.items():
             if getattr(obj, field) != value:
                 setattr(obj, field, value)
@@ -80,7 +88,7 @@ def load_person(data):
                   image=data.get('image', ''),
                   extras=data.get('extras', {}),
                   )
-    person, created, updated = get_update_or_create(Person, fields)
+    person, created, updated = get_update_or_create(Person, fields, ['id'])
 
     updated |= update_subobjects(person, 'other_names', data.get('other_names', []))
     updated |= update_subobjects(person, 'links', data.get('links', []))
@@ -105,7 +113,7 @@ def load_person(data):
     memberships = []
     for party in data.get('party', []):
         try:
-            org = Organization.objects.get(classification='party', name=party['name'])
+            org = cached_lookup(Organization, classification='party', name=party['name'])
         except Organization.DoesNotExist:
             click.secho(f"no such party {party['name']}", fg='red')
             raise CancelTransaction()
@@ -115,8 +123,8 @@ def load_person(data):
     for role in data.get('roles', []):
         if role['type'] in ('upper', 'lower', 'legislature'):
             try:
-                org = Organization.objects.get(classification=role['type'],
-                                               jurisdiction_id=role['jurisdiction'])
+                org = cached_lookup(Organization, classification=role['type'],
+                                    jurisdiction_id=role['jurisdiction'])
                 post = org.posts.get(label=role['district'])
             except Organization.DoesNotExist:
                 click.secho(f"no such organization {role['jurisdiction']} {role['type']}",
@@ -160,7 +168,7 @@ def load_org(data):
         dissolution_date=data.get('dissolution_date', ''),
         parent=parent,
     )
-    org, created, updated = get_update_or_create(Organization, fields)
+    org, created, updated = get_update_or_create(Organization, fields, ['id'])
 
     updated |= update_subobjects(org, 'links', data.get('links', []))
     updated |= update_subobjects(org, 'sources', data.get('sources', []))
@@ -203,6 +211,55 @@ def sort_organizations(orgs):
     assert len(order) == how_many
 
     return order
+
+
+def get_division_id_for_role(settings, division_id, chamber, label):
+    # if there's an override, use it
+    overrides = settings.get(chamber + '_division_ids')
+    if overrides:
+        return overrides[label]
+
+    # default is parent/sld[ul]:prefix
+    prefix = 'sldl' if chamber == 'lower' else 'sldu'
+    slug = label.lower().replace(' ', '_')
+    return f'{division_id}/{prefix}:{slug}'
+
+
+def _echo_org_status(org, created, updated):
+    if created:
+        click.secho(f'{org} created', fg='green')
+    elif updated:
+        click.secho(f'{org} updated', fg='yellow')
+
+
+def create_posts(jurisdiction_id, settings):
+    from opencivicdata.core.models import Organization, Jurisdiction
+
+    division_id = Jurisdiction.objects.get(pk=jurisdiction_id).division_id
+    districts = get_districts(settings)
+
+    # create remaining orgs & add posts
+    for chamber in districts:
+        org = Organization.objects.get(jurisdiction_id=jurisdiction_id,
+                                       classification=chamber)
+        if chamber != 'legislature':
+            # check for name overrides
+            title = settings.get(chamber + '_title')
+            if not title:
+                title = 'Senator' if chamber == 'upper' else 'Representative'
+        else:
+            title = settings['legislature_title']
+
+        # add posts to org
+        posts = [{'label': label,
+                  'role': title,
+                  'division_id': get_division_id_for_role(settings, division_id, chamber, label),
+                  'maximum_memberships': maximum,
+                  }
+                 for label, maximum in districts[chamber].items()]
+        updated = update_subobjects(org, 'posts', posts)
+        if updated:
+            click.secho(f'updated {org} posts', fg='yellow')
 
 
 def load_directory(files, type, jurisdiction_id, purge):
@@ -301,6 +358,8 @@ def to_database(abbreviations, purge, safe):
     if not abbreviations:
         abbreviations = get_all_abbreviations()
 
+    settings = get_settings()
+
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
         directory = get_data_dir(abbr)
@@ -313,8 +372,11 @@ def to_database(abbreviations, purge, safe):
         if safe:
             click.secho('running in safe mode, no changes will be made', fg='magenta')
 
+        state_settings = settings[abbr]
+
         try:
             with transaction.atomic():
+                create_posts(jurisdiction_id, state_settings)
                 load_directory(person_files, 'person', jurisdiction_id, purge=purge)
                 load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
                 if safe:
