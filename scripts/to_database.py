@@ -219,6 +219,13 @@ def get_division_id_for_role(settings, division_id, chamber, label):
     return f'{division_id}/{prefix}:{slug}'
 
 
+def _echo_org_status(org, created, updated):
+    if created:
+        click.secho(f'{org} created', fg='green')
+    elif updated:
+        click.secho(f'{org} updated', fg='yellow')
+
+
 def create_top_level_orgs(jurisdiction_id, settings):
     from opencivicdata.core.models import Organization, Jurisdiction
 
@@ -231,10 +238,7 @@ def create_top_level_orgs(jurisdiction_id, settings):
          },
         ['jurisdiction_id', 'classification']
     )
-    if created:
-        click.secho(f'{org} created', fg='green')
-    elif updated:
-        click.secho(f'{org} updated', fg='yellow')
+    _echo_org_status(org, created, updated)
 
     legislature = org
     districts = get_districts(settings)
@@ -269,10 +273,7 @@ def create_top_level_orgs(jurisdiction_id, settings):
                   }
                  for label, maximum in districts[chamber].items()]
         updated |= update_subobjects(org, 'posts', posts)
-        if created:
-            click.secho(f'{org} created', fg='green')
-        elif updated:
-            click.secho(f'{org} updated', fg='yellow')
+        _echo_org_status(org, created, updated)
 
 
 def load_directory(files, type, jurisdiction_id, purge):
