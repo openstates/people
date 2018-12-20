@@ -45,10 +45,12 @@ class MergeConflict(Exception):
         return str(self.difference)
 
 
-def compare_objects(obj1, obj2, prefix=''):
+def compare_objects(obj1, obj2, prefix='', ignore=None):
     combined_keys = set(obj1) | set(obj2)
     differences = []
     for key in combined_keys:
+        if ignore and key in ignore:
+            continue
         key_name = '.'.join((prefix, key)) if prefix else key
         val1 = obj1.get(key)
         val2 = obj2.get(key)
@@ -77,7 +79,10 @@ def calculate_similarity(existing, new):
         if names differ, maximum match is 0.8
         for each item that differs, we decrease score by 0.1
     """
-    differences = compare_objects(existing, new)
+    differences = compare_objects(
+        existing, new,
+        ignore=['id', 'other_identifiers', 'given_name', 'family_name']
+    )
 
     # if nothing differs or only id differs
     if len(differences) == 0 or (len(differences) == 1 and differences[0].key_name == 'id'):
@@ -89,10 +94,6 @@ def calculate_similarity(existing, new):
         score = 1
 
     score -= 0.1*len(differences)
-
-    # don't count id difference
-    if existing['id'] != new['id']:
-        score += 0.1
 
     if score < 0:
         score = 0
@@ -132,6 +133,8 @@ def directory_merge(existing_people, new_people):
                     fg='yellow')
 
     click.secho(f'{len(unmatched)} were unmatched')
+    for id in unmatched:
+        click.secho(get_filename(id))
 
 
 def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
@@ -201,7 +204,7 @@ def entrypoint(incoming, old, new, keep):
                 existing_people.append(yaml.load(f))
 
         new_people = []
-        incoming_dir = get_data_dir(abbr).replace('test', 'incoming')
+        incoming_dir = get_data_dir(abbr).replace('data', 'incoming')
         for filename in glob.glob(os.path.join(incoming_dir, 'people/*.yml')):
             with open(filename) as f:
                 new_people.append(yaml.load(f))
