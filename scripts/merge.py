@@ -139,8 +139,8 @@ def directory_merge(abbr, existing_people, new_people, remove_identical, copy_ne
         if sim < 0.001:
             break
         unmatched.remove(new['id'])
-        click.secho(' {:.2f} {} {}'.format(sim, get_filename(new), get_filename(old)),
-                    fg='yellow')
+        click.secho(' {:.2f} incoming/{}/people/{} data/{}/people/{}'.format(
+            sim, abbr, get_filename(new), abbr, get_filename(old)), fg='yellow')
 
     click.secho(f'{len(unmatched)} were unmatched')
     for id in unmatched:
@@ -242,7 +242,7 @@ def entrypoint(incoming, old, new, keep, remove_identical, copy_new):
         if keep not in ('old', 'new'):
             raise ValueError('--keep parameter must be old or new')
         merged = merge_people(old_obj, new_obj, keep_on_conflict=keep,
-                              keep_both_ids=True)
+                              keep_both_ids=False)
         dump_obj(merged, filename=old)
         os.remove(new)
         click.secho(f'merged files into {old}\ndeleted {new}\ncheck git diff before committing')
