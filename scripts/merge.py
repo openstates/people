@@ -242,7 +242,7 @@ def entrypoint(incoming, old, new, keep, remove_identical, copy_new):
         if keep not in ('old', 'new'):
             raise ValueError('--keep parameter must be old or new')
         keep_both_ids = True
-        if 'incoming' in new_obj:
+        if 'incoming' in new:
             keep_both_ids = False
         merged = merge_people(old_obj, new_obj, keep_on_conflict=keep,
                               keep_both_ids=keep_both_ids)
