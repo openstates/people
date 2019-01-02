@@ -101,13 +101,16 @@ def calculate_similarity(existing, new):
     return score
 
 
-def directory_merge(existing_people, new_people):
+def directory_merge(abbr, existing_people, new_people, remove_identical, copy_new):
     perfect_matched = set()
     matches = []
+    id_to_new_filename = {}
 
     for new in new_people:
         best_similarity = 0
         best_match = None
+
+        id_to_new_filename[new['id']] = get_filename(new)
 
         for existing in existing_people:
             similarity = calculate_similarity(existing, new)
@@ -123,6 +126,13 @@ def directory_merge(existing_people, new_people):
 
     click.secho(f'{len(perfect_matched)} were perfect matches', fg='green')
 
+    if remove_identical:
+        for id in perfect_matched:
+            fname = id_to_new_filename[id]
+            fname = f'incoming/{abbr}/people/{fname}'.format(fname)
+            click.secho('removing ' + fname, fg='red')
+            os.remove(fname)
+
     unmatched = set(p['id'] for p in new_people) - perfect_matched
 
     for sim, new, old in sorted(matches, reverse=True, key=lambda x: x[0]):
@@ -134,7 +144,12 @@ def directory_merge(existing_people, new_people):
 
     click.secho(f'{len(unmatched)} were unmatched')
     for id in unmatched:
-        click.secho(get_filename(id))
+        fname = id_to_new_filename[id]
+        oldfname = f'incoming/{abbr}/people/{fname}'.format(fname)
+        if copy_new:
+            newfname = f'data/{abbr}/people/{fname}'.format(fname)
+            click.secho(f'moving {oldfname} to {newfname}', fg='yellow')
+            os.rename(oldfname, newfname)
 
 
 def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
@@ -171,6 +186,10 @@ def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
 @click.command()
 @click.option('--incoming', default=None,
               help='Operate in incoming mode, argument should be state abbr to scan.')
+@click.option('--remove-identical/--no-remove-identical',
+              help='In incoming mode, remove identical files.')
+@click.option('--copy-new/--no-copy-new', default=None,
+              help='In incoming mode, copy brand new files over.')
 @click.option('--old', default=None,
               help='Operate in merge mode, this is the older of two files & will be kept.')
 @click.option('--new', default=None,
@@ -184,7 +203,7 @@ new
     Keep data in new file if there's conflict.
 
 When omitted, conflicts will raise error.''')
-def entrypoint(incoming, old, new, keep):
+def entrypoint(incoming, old, new, keep, remove_identical, copy_new):
     """
         Script to assist with merging legislator files.
 
@@ -213,7 +232,7 @@ def entrypoint(incoming, old, new, keep):
             f'analyzing {len(existing_people)} existing people and {len(new_people)} incoming'
         )
 
-        directory_merge(existing_people, new_people)
+        directory_merge(abbr, existing_people, new_people, remove_identical, copy_new)
 
     if old and new:
         with open(old) as f:
