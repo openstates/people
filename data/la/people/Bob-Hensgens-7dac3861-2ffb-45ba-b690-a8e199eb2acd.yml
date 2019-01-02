@@ -3,19 +3,24 @@ name: Bob Hensgens
 party:
 - name: Republican
 roles:
+- district: '26'
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  type: upper
+  start_date: 2018-11-06
 - district: '47'
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   type: lower
+  end_date: 2018-11-06
 contact_details:
 - address: 407 Charity Street;Abbeville, LA 70510
-  email: hensgensb@legis.la.gov
+  email: sen26@legis.la.gov
+  fax: 337-898-1160
   note: District Office
   voice: 337-893-5035
 links:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=47
+- url: http://senate.la.gov/senators/senpage.asp?SenID=26
 sources:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=47
-image: http://house.louisiana.gov/h_reps/RepPics09/rep47.jpg
+- url: http://senate.la.gov/senators/senpage.asp?SenID=26
 other_identifiers:
 - identifier: LAL000430
   scheme: legacy_openstates
