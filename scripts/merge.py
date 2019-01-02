@@ -241,8 +241,11 @@ def entrypoint(incoming, old, new, keep, remove_identical, copy_new):
             new_obj = load_yaml(f)
         if keep not in ('old', 'new'):
             raise ValueError('--keep parameter must be old or new')
+        keep_both_ids = True
+        if 'incoming' in new_obj:
+            keep_both_ids = False
         merged = merge_people(old_obj, new_obj, keep_on_conflict=keep,
-                              keep_both_ids=False)
+                              keep_both_ids=keep_both_ids)
         dump_obj(merged, filename=old)
         os.remove(new)
         click.secho(f'merged files into {old}\ndeleted {new}\ncheck git diff before committing')
