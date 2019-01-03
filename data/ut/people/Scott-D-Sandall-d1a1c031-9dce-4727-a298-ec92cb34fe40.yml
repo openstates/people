@@ -6,13 +6,18 @@ roles:
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: lower
+  end_date: '2018-12-31'
+- district: '17'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  type: upper
+  start_date: '2019-01-01'
 contact_details:
 - address: 635 N HILLCREST CIR, TREMONTON, UT, 84337
   email: ssandall@le.utah.gov
   note: District Office
   voice: 435-279-7551
 links:
-- url: http://house.utah.gov/rep/SANDASD
+- url: https://senate.utah.gov/scott-sandall
 sources:
 - url: http://le.utah.gov/data/legislators.json
 image: https://le.utah.gov/images/legislator/SANDASD.jpg
@@ -30,5 +35,5 @@ other_identifiers:
   scheme: legacy_openstates
 - identifier: UTL000259
   scheme: legacy_openstates
-given_name: Scott D.
+given_name: Scott
 family_name: Sandall
