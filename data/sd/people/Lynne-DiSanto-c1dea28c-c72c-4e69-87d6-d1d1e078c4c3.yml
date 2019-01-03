@@ -6,18 +6,31 @@ roles:
 - district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: lower
+  end_date: 2018-12-31
+- district: '35'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: upper
 contact_details:
 - email: Lynne.DiSanto@sdlegislature.gov
   note: Capitol Office
+- email: Lynne.DiSanto@sdlegislature.gov
+  note: Capitol Office
+  voice: 605-773-3821
+- address: 22739A Rando Ct.;Box Elder, SD 57719
+  note: District Office
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1516&Session=2018s
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1608&Session=2019
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1516&Session=2018s
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1608&Session=2019
 image: https://sdlegislature.gov/inc/img/Legislators/DiSanto_2017.jpg
 extras:
   occupation: Realtor
 other_identifiers:
 - identifier: SDL000273
   scheme: legacy_openstates
+- identifier: ocd-person/720cadd7-a4dd-4182-a615-b028d83b770e
+  scheme: openstates
 given_name: Lynne
 family_name: DiSanto
