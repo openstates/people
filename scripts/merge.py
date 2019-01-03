@@ -101,7 +101,7 @@ def calculate_similarity(existing, new):
     return score
 
 
-def directory_merge(abbr, existing_people, new_people, remove_identical, copy_new):
+def directory_merge(abbr, existing_people, new_people, remove_identical, copy_new, interactive):
     perfect_matched = set()
     matches = []
     id_to_new_filename = {}
@@ -139,8 +139,30 @@ def directory_merge(abbr, existing_people, new_people, remove_identical, copy_ne
         if sim < 0.001:
             break
         unmatched.remove(new['id'])
-        click.secho(' {:.2f} incoming/{}/people/{} data/{}/people/{}'.format(
-            sim, abbr, get_filename(new), abbr, get_filename(old)), fg='yellow')
+        oldfname = 'data/{}/people/{}'.format(abbr, get_filename(old))
+        newfname = 'incoming/{}/people/{}'.format(abbr, get_filename(new))
+        click.secho(' {:.2f} {} {}'.format(sim, oldfname, newfname), fg='yellow')
+        if interactive:
+            differences = compare_objects(old, new)
+
+            for difference in differences:
+                click.echo('    ' + str(difference))
+            ch = '~'
+            while ch not in 'onsa':
+                click.secho('Keep (o)ld? Keep (n)ew? (s)kip? (a)bort?', bold=True)
+                ch = click.getchar()
+                if ch == 'a':
+                    raise SystemExit(-1)
+                elif ch == 'o':
+                    keep_on_conflict = 'old'
+                elif ch == 'n':
+                    keep_on_conflict = 'new'
+                elif ch == 's':
+                    continue
+                merged = merge_people(old, new, keep_both_ids=False,
+                                      keep_on_conflict=keep_on_conflict)
+                dump_obj(merged, filename=oldfname)
+                os.remove(newfname)
 
     click.secho(f'{len(unmatched)} were unmatched')
     for id in unmatched:
@@ -154,8 +176,8 @@ def directory_merge(abbr, existing_people, new_people, remove_identical, copy_ne
 
 def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
     differences = compare_objects(old, new)
-    for difference in differences:
 
+    for difference in differences:
         if difference.key_name == 'id':
             if keep_both_ids:
                 if 'other_identifiers' not in old:
@@ -190,6 +212,8 @@ def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
               help='In incoming mode, remove identical files.')
 @click.option('--copy-new/--no-copy-new', default=None,
               help='In incoming mode, copy brand new files over.')
+@click.option('--interactive/--no-interactive', default=False,
+              help='Do interactive merges.')
 @click.option('--old', default=None,
               help='Operate in merge mode, this is the older of two files & will be kept.')
 @click.option('--new', default=None,
@@ -203,7 +227,7 @@ new
     Keep data in new file if there's conflict.
 
 When omitted, conflicts will raise error.''')
-def entrypoint(incoming, old, new, keep, remove_identical, copy_new):
+def entrypoint(incoming, old, new, keep, remove_identical, copy_new, interactive):
     """
         Script to assist with merging legislator files.
 
@@ -232,7 +256,7 @@ def entrypoint(incoming, old, new, keep, remove_identical, copy_new):
             f'analyzing {len(existing_people)} existing people and {len(new_people)} incoming'
         )
 
-        directory_merge(abbr, existing_people, new_people, remove_identical, copy_new)
+        directory_merge(abbr, existing_people, new_people, remove_identical, copy_new, interactive)
 
     if old and new:
         with open(old) as f:

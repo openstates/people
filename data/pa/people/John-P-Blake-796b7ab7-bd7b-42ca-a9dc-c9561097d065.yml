@@ -1,11 +1,3 @@
-id: ocd-person/796b7ab7-bd7b-42ca-a9dc-c9561097d065
-name: John P. Blake
-party:
-- name: Democratic
-roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: upper
 contact_details:
 - address: Senate Box 203022;Harrisburg, PA 17120-3022;Room:;17 East Wing
   email: senatorblake@pasenate.com
@@ -17,14 +9,22 @@ contact_details:
   fax: 570-207-2897
   note: District Office
   voice: 877-346-5721
+family_name: Blake
+given_name: John
+id: ocd-person/796b7ab7-bd7b-42ca-a9dc-c9561097d065
+image: https://www.legis.state.pa.us/images/members/200/1227.jpg
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
-sources:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1227
-image: http://www.legis.state.pa.us/images/members/200/1227.jpg
+name: John P. Blake
 other_identifiers:
 - identifier: PAL000265
   scheme: legacy_openstates
-given_name: John
-family_name: Blake
+party:
+- name: Democratic
+roles:
+- district: '22'
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  type: upper
+sources:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1227

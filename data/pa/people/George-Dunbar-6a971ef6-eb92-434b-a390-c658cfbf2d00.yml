@@ -1,11 +1,3 @@
-id: ocd-person/6a971ef6-eb92-434b-a390-c658cfbf2d00
-name: George Dunbar
-party:
-- name: Republican
-roles:
-- district: '56'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: lower
 contact_details:
 - address: 156C Clay Pike North Huntingdon, PA 15642
   fax: 724-744-0380
@@ -15,15 +7,16 @@ contact_details:
   fax: 717-782-2880
   note: Capitol Office
   voice: 717-260-6132
-links:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
-sources:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1206
-image: http://www.legis.state.pa.us/images/members/200/1206.jpg
 extras:
   facebook: https://facebook.com/RepDunbar
   youtube: https://youtube.com/RepDunbar
+family_name: Dunbar
+given_name: George
+id: ocd-person/6a971ef6-eb92-434b-a390-c658cfbf2d00
+image: https://www.legis.state.pa.us/images/members/200/1206.jpg
+links:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+name: George Dunbar
 other_identifiers:
 - identifier: PAL000278
   scheme: legacy_openstates
@@ -31,5 +24,12 @@ other_identifiers:
   scheme: legacy_openstates
 - identifier: PAL000522
   scheme: legacy_openstates
-given_name: George
-family_name: Dunbar
+party:
+- name: Republican
+roles:
+- district: '56'
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  type: lower
+sources:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1206
