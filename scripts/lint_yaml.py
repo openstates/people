@@ -334,6 +334,9 @@ class Validator:
 
     def validate_person(self, person, filename, retired=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
+        uid = person['id'].split('/')[1]
+        if uid not in filename:
+            self.errors[filename].append(f'id piece {uid} not in filename')
         self.errors[filename].extend(validate_roles(person, 'roles', retired))
         self.errors[filename].extend(validate_roles(person, 'party'))
         # TODO: this was too ambitious, disabling this for now
@@ -346,6 +349,9 @@ class Validator:
 
     def validate_org(self, org, filename):
         self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
+        uid = org['id'].split('/')[1]
+        if uid not in filename:
+            self.errors[filename].append(f'id piece {uid} not in filename')
         for m in org['memberships']:
             if not m.get('id'):
                 continue
