@@ -325,6 +325,22 @@ def test_person_duplicates():
             in errors)
 
 
+def test_filename_id_test():
+    person = {'id': EXAMPLE_OCD_PERSON_ID,
+              'name': 'Jane Smith',
+              'roles': [],
+              'party': [],
+              }
+    settings = {'us': {'upper_seats': 100, 'lower_seats': 435}}
+    v = Validator('us', settings)
+    v.validate_person(person, 'bad-filename')
+    for err in v.errors['bad-filename']:
+        if f'not in filename' in err:
+            break
+    else:
+        raise AssertionError("did not check for id in filename")
+
+
 def test_validate_org_memberships():
     person = {'id': EXAMPLE_OCD_PERSON_ID,
               'name': 'Jane Smith',
@@ -339,32 +355,36 @@ def test_validate_org_memberships():
            'memberships': []
            }
     settings = {'us': {'upper_seats': 100, 'lower_seats': 435}}
+    org_filename = 'fake-org-' + EXAMPLE_OCD_ORG_ID
+    person_filename = 'fake-person-' + EXAMPLE_OCD_PERSON_ID
 
     # a good membership
     org['memberships'] = [
         {'id': EXAMPLE_OCD_PERSON_ID, 'name': 'Jane Smith'}
     ]
     v = Validator('us', settings)
-    v.validate_person(person, 'fake-person')    # validate person first to learn ID
-    v.validate_org(org, 'fake-org')
-    assert v.errors['fake-org'] == []
-    assert v.warnings['fake-org'] == []
+    # validate person first to learn ID
+    v.validate_person(person, person_filename)
+    v.validate_org(org, org_filename)
+    assert v.errors[org_filename] == []
+    assert v.warnings[org_filename] == []
 
     # a bad ID
     org['memberships'] = [
         {'id': 'ocd-person/00000000-0000-0000-0000-000000000000', 'name': 'Jane Smith'}
     ]
     v = Validator('us', settings)
-    v.validate_person(person, 'fake-person')
-    v.validate_org(org, 'fake-org')
-    assert len(v.errors['fake-org']) == 1
+    v.validate_person(person, person_filename)
+    v.validate_org(org, org_filename)
+    print(v.errors)
+    assert len(v.errors[org_filename]) == 1
 
     # bad name, warning
     org['memberships'] = [
         {'id': EXAMPLE_OCD_PERSON_ID, 'name': 'Smith'}
     ]
     v = Validator('us', settings)
-    v.validate_person(person, 'fake-person')
-    v.validate_org(org, 'fake-org')
-    assert len(v.warnings['fake-org']) == 1
-    assert v.warnings['fake-org']
+    v.validate_person(person, person_filename)
+    v.validate_org(org, org_filename)
+    assert len(v.warnings[org_filename]) == 1
+    assert v.warnings[org_filename]
