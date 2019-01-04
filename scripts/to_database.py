@@ -290,7 +290,7 @@ def load_directory(files, type, jurisdiction_id, purge):
     all_data = []
     for filename in files:
         with open(filename) as f:
-            data = yaml.load(f)
+            data = yaml.load(f, Loader=yaml.CLoader)
             all_data.append((data, filename))
 
     if type == 'organization':
