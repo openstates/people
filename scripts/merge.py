@@ -2,7 +2,6 @@
 
 import os
 import glob
-import yaml
 import click
 from utils import get_filename, get_data_dir, load_yaml, dump_obj
 
@@ -244,13 +243,13 @@ def entrypoint(incoming, old, new, keep, remove_identical, copy_new, interactive
         for filename in (glob.glob(os.path.join(get_data_dir(abbr), 'people/*.yml')) +
                          glob.glob(os.path.join(get_data_dir(abbr), 'retired/*.yml'))):
             with open(filename) as f:
-                existing_people.append(yaml.load(f))
+                existing_people.append(load_yaml(f))
 
         new_people = []
         incoming_dir = get_data_dir(abbr).replace('data', 'incoming')
         for filename in glob.glob(os.path.join(incoming_dir, 'people/*.yml')):
             with open(filename) as f:
-                new_people.append(yaml.load(f))
+                new_people.append(load_yaml(f))
 
         click.secho(
             f'analyzing {len(existing_people)} existing people and {len(new_people)} incoming'
