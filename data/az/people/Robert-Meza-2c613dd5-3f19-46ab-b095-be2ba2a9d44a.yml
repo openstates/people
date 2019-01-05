@@ -6,16 +6,22 @@ roles:
 - district: '30'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
+  end_date: '2018-01-14'
+- district: '30'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: '2019-01-14'
 links:
-- url: https://www.azleg.gov/Senate/Senate-member/?legislature=53&session=119&legislator=1803
+- url: https://www.azleg.gov/House/House-member/?legislature=54&session=121&legislator=1912
 contact_details:
-- address: Senate;1700 West Washington;Room Room 311;Phoenix, AZ 85007
+- address: House of Representatives;1700 West Washington;Room Room 339;Phoenix, AZ
+    85007
   note: Capitol Office
   voice: 602-926-3425
 - email: rmeza@azleg.gov
   note: ''
 sources:
-- url: http://www.azleg.gov/MemberRoster/?body=S
+- url: http://www.azleg.gov/MemberRoster/?body=H
 image: https://www.azleg.gov/alisImages/MemberPhotos/53leg/Senate/MEZA.gif
 other_identifiers:
 - identifier: AZL000073
