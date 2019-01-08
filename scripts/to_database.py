@@ -9,6 +9,10 @@ from django.db import transaction
 import click
 from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations, get_districts,
                    get_settings)
+try:
+    from yaml import CLoader as Loader
+except ImportError:
+    from yaml import Loader as Loader
 
 
 class CancelTransaction(Exception):
@@ -290,7 +294,7 @@ def load_directory(files, type, jurisdiction_id, purge):
     all_data = []
     for filename in files:
         with open(filename) as f:
-            data = yaml.load(f, Loader=yaml.CLoader)
+            data = yaml.load(f, Loader=Loader)
             all_data.append((data, filename))
 
     if type == 'organization':
