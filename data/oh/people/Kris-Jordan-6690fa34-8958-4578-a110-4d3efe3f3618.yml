@@ -6,16 +6,20 @@ roles:
 - district: '19'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: upper
+  end_date: '2018-12-31'
+- district: '67'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: lower
+  start_date: '2019-01-01'
 contact_details:
-- address: Senate Building;1 Capitol Square, Ground Floor
-  email: sd19@ohiosenate.gov
+- address: 77 S. High St;Columbus, OH 43215
+  email: rep67@ohiohouse.gov
   note: Capitol Office
-  voice: 614-466-8086
 links:
-- url: http://www.ohiosenate.gov/senators/jordan
+- url: http://www.ohiohouse.gov/kris-jordan
 sources:
-- url: http://www.ohiosenate.gov/senators
-image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/1638.jpg
+- url: http://www.ohiohouse.gov/members/member-directory
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/67.jpg
 other_identifiers:
 - identifier: OHL000019
   scheme: legacy_openstates

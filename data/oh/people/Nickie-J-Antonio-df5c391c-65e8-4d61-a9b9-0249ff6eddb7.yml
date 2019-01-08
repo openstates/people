@@ -6,17 +6,21 @@ roles:
 - district: '13'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
+  end_date: '2018-12-31'
+- district: '23'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: upper
+  start_date: '2019-01-01'
 contact_details:
-- address: 77 S. High St;14th Floor;Columbus, OH 43215
-  email: rep13@ohiohouse.gov
-  fax: 614-719-3913
+- address: Senate Building;1 Capitol Square, Ground Floor
+  email: sd23@ohiosenate.gov
   note: Capitol Office
-  voice: 614-466-5921
+  voice: 614-466-5123
 links:
-- url: http://www.ohiohouse.gov/nickie-j-antonio
+- url: http://www.ohiosenate.gov/senators/antonio
 sources:
-- url: http://www.ohiohouse.gov/members/member-directory
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/13.jpg
+- url: http://www.ohiosenate.gov/senators
+image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2919.jpg
 biography: State Representative Nickie J. Antonio (D-Lakewood) is honored to be serving
   her fourth term in the Ohio House of Representatives. Representing the 13
 other_identifiers:
@@ -26,5 +30,5 @@ other_identifiers:
   scheme: legacy_openstates
 - identifier: OHL000182
   scheme: legacy_openstates
-given_name: Nickie J.
+given_name: Nickie
 family_name: Antonio
