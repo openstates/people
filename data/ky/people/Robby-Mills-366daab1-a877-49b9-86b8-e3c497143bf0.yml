@@ -6,18 +6,29 @@ roles:
 - district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:ky/government
   type: lower
+  end_date: 2018-12-31
+- district: '4'
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  type: upper
 contact_details:
 - address: 702 Capitol Ave;Annex Room 413C;Frankfort KY 40601
   email: Robby.Mills@lrc.ky.gov
   note: Capitol Office
   voice: 502-564-8100
+- address: 702 Capitol Ave;Annex Room 255;Frankfort KY 40601
+  note: Capitol Office
+  voice: 502-564-8100
 links:
 - url: http://www.lrc.ky.gov/legislator/H011.htm
+- url: http://www.lrc.ky.gov/legislator/S004.htm
 sources:
 - url: http://www.lrc.ky.gov/legislator/H011.htm
-image: http://www.lrc.ky.gov/pubinfo/thumbnails/House11.jpg
+- url: http://www.lrc.ky.gov/legislator/S004.htm
+image: http://www.lrc.ky.gov/pubinfo/thumbnails/Senate04.jpg
 other_identifiers:
 - identifier: KYL000244
   scheme: legacy_openstates
+- identifier: ocd-person/cccb2884-967f-47fb-aef8-5598810d1255
+  scheme: openstates
 given_name: Robby
 family_name: Mills

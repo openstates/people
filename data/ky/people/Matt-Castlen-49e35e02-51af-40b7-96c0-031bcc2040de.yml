@@ -6,18 +6,29 @@ roles:
 - district: '14'
   jurisdiction: ocd-jurisdiction/country:us/state:ky/government
   type: lower
+  end_date: 2018-12-31
+- district: '8'
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  type: upper
 contact_details:
 - address: 702 Capitol Ave;Annex Room 329D;Frankfort KY 40601
   email: Matt.Castlen@lrc.ky.gov
   note: Capitol Office
   voice: 502-564-8100
+- address: 702 Capitol Ave;Annex Room 255;Frankfort KY 40601
+  note: Capitol Office
+  voice: 502-564-8100
 links:
 - url: http://www.lrc.ky.gov/legislator/H014.htm
+- url: http://www.lrc.ky.gov/legislator/S008.htm
 sources:
 - url: http://www.lrc.ky.gov/legislator/H014.htm
-image: http://www.lrc.ky.gov/pubinfo/thumbnails/House14.jpg
+- url: http://www.lrc.ky.gov/legislator/S008.htm
+image: http://www.lrc.ky.gov/pubinfo/thumbnails/Senate08.jpg
 other_identifiers:
 - identifier: KYL000243
   scheme: legacy_openstates
+- identifier: ocd-person/1335b0cb-11c3-40bc-b9bf-dd6ad2cba596
+  scheme: openstates
 given_name: Matt
 family_name: Castlen
