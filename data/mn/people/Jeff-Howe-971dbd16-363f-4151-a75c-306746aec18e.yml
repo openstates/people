@@ -6,16 +6,21 @@ roles:
 - district: 13A
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
+  end_date: '2018-12-11'
+- district: '13'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: upper
+  start_date: '2018-12-11'
 contact_details:
-- address: 527 State Office Building;St. Paul, MN 55155
-  email: rep.jeff.howe@house.mn
+- address: 3231 Minnesota Senate Bldg.;95 University Avenue W.;St. Paul, MN 55155
   note: capitol
-  voice: 651-296-4373
+  voice: 651-296-2084
 links:
-- url: http://www.house.leg.state.mn.us/members/members.asp?id=15401
+- url: http://www.senate.mn/members/member_bio.php?member_id=1239
 sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls90/tn_13A.jpg?v=2018
+- url: http://www.senate.mn/members/member_list_ascii.php?ls=
+- url: http://www.senate.mn/members/index.php
+image: http://www.senate.mn/graphics/member_thumbnails/13Howe.jpg
 other_identifiers:
 - identifier: MNL000422
   scheme: legacy_openstates
