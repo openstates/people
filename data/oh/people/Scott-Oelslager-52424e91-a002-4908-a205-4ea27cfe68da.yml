@@ -6,16 +6,21 @@ roles:
 - district: '29'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: upper
+  end_date: '2018-12-31'
+- district: '48'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: lower
+  start_date: '2019-01-01'
 contact_details:
-- address: Senate Building;1 Capitol Square, 1st Floor
-  email: sd29@ohiosenate.gov
+- address: 77 S. High St;11th Floor;Columbus, OH 43215
+  email: rep48@ohiohouse.gov
   note: Capitol Office
-  voice: 614-466-0626
+  voice: 614-752-2438
 links:
-- url: http://www.ohiosenate.gov/senators/oelslager
+- url: http://www.ohiohouse.gov/scott-oelslager
 sources:
-- url: http://www.ohiosenate.gov/senators
-image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/1641.jpg
+- url: http://www.ohiohouse.gov/members/member-directory
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/48.jpg
 other_identifiers:
 - identifier: OHL000029
   scheme: legacy_openstates

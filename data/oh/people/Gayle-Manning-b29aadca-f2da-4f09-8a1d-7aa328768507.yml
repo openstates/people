@@ -6,16 +6,22 @@ roles:
 - district: '13'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: upper
+  end_date: '2018-12-31'
+- district: '55'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: lower
+  start_date: '2019-01-01'
 contact_details:
-- address: Senate Building;1 Capitol Square, 1st Floor
-  email: sd13@ohiosenate.gov
+- address: 77 S. High St;12th Floor;Columbus, OH 43215
+  email: rep55@ohiohouse.gov
+  fax: 614-719-3957
   note: Capitol Office
-  voice: 614-644-7613
+  voice: 614-644-5076
 links:
-- url: http://www.ohiosenate.gov/senators/manning
+- url: http://www.ohiohouse.gov/gayle-manning
 sources:
-- url: http://www.ohiosenate.gov/senators
-image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/1635.jpg
+- url: http://www.ohiohouse.gov/members/member-directory
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/55.jpg
 other_identifiers:
 - identifier: OHL000013
   scheme: legacy_openstates
