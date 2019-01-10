@@ -6,12 +6,15 @@ roles:
 - district: '79'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   type: lower
+  end_date: '2018-12-31'
+- district: '77'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  type: lower
 contact_details:
-- address: 330 S Salisbury St, Mocksville, NC 27028
+- address: 330 S Salisbury St;Mocksville, NC 27028
   note: District Office
   voice: 336-751-3538
-- address: N.C. House of Representatives;300 N Salisbury Street, Room 302;Raleigh,
-    NC 27603-5925
+- address: 300 N. Salisbury Street, Rm. 302;Raleigh, NC 27603-5925
   email: Julia.Howard@ncleg.net
   note: Capitol Office
   voice: 919-733-5904
@@ -30,3 +33,5 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Julia C.
 family_name: Howard
+extras.counties:
+- Rowan

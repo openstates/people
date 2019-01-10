@@ -6,6 +6,10 @@ roles:
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   type: lower
+  end_date: '2018-12-31'
+- district: '1'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  type: upper
 contact_details:
 - address: 300 N. Salisbury Street, Room 301B, Raleigh, NC 27603-5925
   note: District Office
@@ -16,9 +20,9 @@ contact_details:
   note: Capitol Office
   voice: 919-733-0010
 links:
-- url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=666
+- url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=415
 sources:
-- url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=666
+- url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=415
 image: http://www.ncleg.net/House/pictures/hiRes/666.jpg
 extras:
   counties:
@@ -34,3 +38,9 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Bob
 family_name: Steinburg
+extras.counties:
+- Dare
+- Gates
+- Hertford
+- Hyde
+- Washington

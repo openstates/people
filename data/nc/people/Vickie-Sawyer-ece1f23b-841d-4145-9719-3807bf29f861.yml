@@ -6,11 +6,15 @@ roles:
 - district: '44'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   type: upper
+  end_date: '2018-12-31'
+- district: '34'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  type: upper
 contact_details:
-- address: 300 N. Salisbury Street, Room 410, Raleigh, NC 27603-5925
+- address: 300 N. Salisbury Street, Rm. 410;Raleigh, NC 27603-5925
   note: District Office
   voice: 919-715-3038
-- address: N.C. Senate;300 N Salisbury Street, Room 410;Raleigh, NC 27603-5925
+- address: 300 N. Salisbury Street, Rm. 410;Raleigh, NC 27603-5925
   email: Vickie.Sawyer@ncleg.net
   note: Capitol Office
   voice: 919-715-3038
@@ -30,3 +34,5 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Vickie
 family_name: Sawyer
+extras.counties:
+- Yadkin
