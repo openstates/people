@@ -6,16 +6,20 @@ roles:
 - district: '59'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
+  end_date: '2018-12-31'
+- district: '6'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: upper
 contact_details:
-- address: 201 West Capitol Avenue 414, Jefferson City, MO 65101
+- address: 201 W Capitol Ave., Rm. 417;Jefferson City, Missouri 65101
   email: Mike.Bernskoetter@house.mo.gov
   note: Capitol Office
-  voice: 573-751-0665
+  voice: 573-751-2076
 links:
-- url: http://www.house.mo.gov/MemberDetails.aspx?district=59
+- url: http://www.senate.mo.gov/mem06
 sources:
-- url: http://house.mo.gov/MemberGridCluster.aspx
-- url: http://www.house.mo.gov/MemberDetails.aspx?district=59
+- url: http://www.senate.mo.gov/senators-listing/
+- url: http://www.senate.mo.gov/mem06
 extras:
   first_name: Mike
   last_name: Bernskoetter
@@ -26,3 +30,4 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Mike
 family_name: Bernskoetter
+image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/Bernskoetter-200x300.jpg
