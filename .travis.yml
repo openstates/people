@@ -27,12 +27,12 @@ jobs:
         - coveralls
     - script: ./scripts/lint_yaml.py
       name: "Check YAML"
-    - stage: deploy
-      script: ./scripts/to_database.py
-      name: "To Database"
-      if: branch = master AND repo = openstates/people AND type = push
-      env:
-        - OCD_DATABASE_NAME=openstatesorg
-        - OCD_DATABASE_USER=travis
-        - secure: "uZ4MCXTp6tYXAXYrtUmkzrQk4bvQV+aBjd5dfLqIfY6f2Tj44q8PH65M65Rp3qpue8rVvWU2QJCLnWafVl8+GjlyyoDsyBbaNlUboqfh6AmIp+IjlVO/eo7JgtWXizx8mgC2WkcUk3gPxuW/ydfU7+D6wwioS1v8MhMXf84dhydKGsC6eX2eyvSXVG5b7rEmGCIxcStWcFCRPZkgby2ZXunKcjAUPI9uVzu0iL4JAtIT3Dn9tMcTI7Ag1+H4mbRVw4USZbqQZ4drARNWRXGnkpOgHTORpoKjubZ2G5MKqjb7gXCSzm+rvW6VgDbmozNf1HgCH2dYm/rlYZqm3BomjLSOttoorPQ+9cTzu7es9US9/53+3XT6Yu4NM1XTAI8Z1aP1q/dqE51U87cUs4kbjB1UJOqFkfto7rGy7aFQwwaJUuks4aau81dixOb/P7X/M9qQobt7yiUDdXzukL7bII8qC4PwEWn+PKZZad9PFDCAIgJIDNUjuFRqGiQpHMOwLSMBeOs6NnR1ZX5QePCUFPCZo3euqukj/W2e3lIEiQefhyPAlYAg3cDaOSpjcrrLjbWt4lnzYC+XyTuQDMN2zgL3yT2OvSxyJWNhhW0t3u4/M3uQ0icFnqkmm4YFRXCvSfIm2IdfUy+uStJbb8+Kr9Gb7kqh/JhOv4OziIGZOF0="
-        - secure: "bMA1TwPv/2NqtkwKUkI9DILvcIczhlQcYd5t3pV67g3n1f64fOZq73xDJ00ULZNEDk8Ue4nHk+aCTVTjRGhqGyYXPtnsnEhkDfQAh1w4iqxHJ2gvOAfTNwSsy2d41dGG2DyR2lXEkVAzfRYXK9nk6SgFFVJLAfR/CKwBqZhyjnmOmXqA/hSwjjY23x5Q00yFN39F60iHwX86GkEv1hF3ytMJ1vSc73DbrWktpxgXePTG/8ftIsyIhuwUr1UiZ5ZWpLEV90dkB4EAR40ZoGRApjWZRhmjBY49Qa8hR+PFkpI6UEyD6nQPSW/xD11ot/ENBBLpXn3bFU3XKafEdWHuwZKoNT3gIL2mZDqQMqRZmS5FEJoW9BWZgbNwYNqbKwHFbrm2KthKl0sZHGqfamIwXJsf0xFmlMbPgM+ZO+E4IeP1Zr8B7KZrMpIjA1AbjrzxGAgjdZ7jNjdoiCRu1aH291JNBr3IfFfO0rHRZ/DdJDDiZxQZjrlwgq++XkKhzst1bkO/u5U8mcnQYyVNjxRh7IW2Uqg81dEUYHb1NWprakx9VuIUCIKb13nGVy/mMfCIa/Pxp1lFDmGv6yx8Fzyz728zjwM8IZbKLginai9MNi3BDU7/Q3gICV4WkER8m2rwy50U6euYMmcbrl6ooAf06EgH8qZHnj80fkYCwZe//KM="
+    # - stage: deploy
+    #   script: ./scripts/to_database.py
+    #   name: "To Database"
+    #   if: branch = master AND repo = openstates/people AND type = push
+    #   env:
+    #     - OCD_DATABASE_NAME=openstatesorg
+    #     - OCD_DATABASE_USER=travis
+    #     - secure: "uZ4MCXTp6tYXAXYrtUmkzrQk4bvQV+aBjd5dfLqIfY6f2Tj44q8PH65M65Rp3qpue8rVvWU2QJCLnWafVl8+GjlyyoDsyBbaNlUboqfh6AmIp+IjlVO/eo7JgtWXizx8mgC2WkcUk3gPxuW/ydfU7+D6wwioS1v8MhMXf84dhydKGsC6eX2eyvSXVG5b7rEmGCIxcStWcFCRPZkgby2ZXunKcjAUPI9uVzu0iL4JAtIT3Dn9tMcTI7Ag1+H4mbRVw4USZbqQZ4drARNWRXGnkpOgHTORpoKjubZ2G5MKqjb7gXCSzm+rvW6VgDbmozNf1HgCH2dYm/rlYZqm3BomjLSOttoorPQ+9cTzu7es9US9/53+3XT6Yu4NM1XTAI8Z1aP1q/dqE51U87cUs4kbjB1UJOqFkfto7rGy7aFQwwaJUuks4aau81dixOb/P7X/M9qQobt7yiUDdXzukL7bII8qC4PwEWn+PKZZad9PFDCAIgJIDNUjuFRqGiQpHMOwLSMBeOs6NnR1ZX5QePCUFPCZo3euqukj/W2e3lIEiQefhyPAlYAg3cDaOSpjcrrLjbWt4lnzYC+XyTuQDMN2zgL3yT2OvSxyJWNhhW0t3u4/M3uQ0icFnqkmm4YFRXCvSfIm2IdfUy+uStJbb8+Kr9Gb7kqh/JhOv4OziIGZOF0="
+    #     - secure: "bMA1TwPv/2NqtkwKUkI9DILvcIczhlQcYd5t3pV67g3n1f64fOZq73xDJ00ULZNEDk8Ue4nHk+aCTVTjRGhqGyYXPtnsnEhkDfQAh1w4iqxHJ2gvOAfTNwSsy2d41dGG2DyR2lXEkVAzfRYXK9nk6SgFFVJLAfR/CKwBqZhyjnmOmXqA/hSwjjY23x5Q00yFN39F60iHwX86GkEv1hF3ytMJ1vSc73DbrWktpxgXePTG/8ftIsyIhuwUr1UiZ5ZWpLEV90dkB4EAR40ZoGRApjWZRhmjBY49Qa8hR+PFkpI6UEyD6nQPSW/xD11ot/ENBBLpXn3bFU3XKafEdWHuwZKoNT3gIL2mZDqQMqRZmS5FEJoW9BWZgbNwYNqbKwHFbrm2KthKl0sZHGqfamIwXJsf0xFmlMbPgM+ZO+E4IeP1Zr8B7KZrMpIjA1AbjrzxGAgjdZ7jNjdoiCRu1aH291JNBr3IfFfO0rHRZ/DdJDDiZxQZjrlwgq++XkKhzst1bkO/u5U8mcnQYyVNjxRh7IW2Uqg81dEUYHb1NWprakx9VuIUCIKb13nGVy/mMfCIa/Pxp1lFDmGv6yx8Fzyz728zjwM8IZbKLginai9MNi3BDU7/Q3gICV4WkER8m2rwy50U6euYMmcbrl6ooAf06EgH8qZHnj80fkYCwZe//KM="
