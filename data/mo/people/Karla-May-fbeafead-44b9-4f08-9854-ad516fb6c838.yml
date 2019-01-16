@@ -6,16 +6,21 @@ roles:
 - district: '84'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
+  end_date: '2018-12-31'
+- district: '4'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: upper
 contact_details:
-- address: 201 West Capitol Avenue 101-J, Jefferson City, MO 65101
+- address: 201 W Capitol Ave., Rm. 421;Jefferson City, Missouri 65101
   email: Karla.May@house.mo.gov
   note: Capitol Office
-  voice: 573-751-2198
+  voice: 573-751-3599
+  fax: 573-751-0266
 links:
-- url: http://www.house.mo.gov/MemberDetails.aspx?district=84
+- url: http://www.senate.mo.gov/mem04
 sources:
-- url: http://house.mo.gov/MemberGridCluster.aspx
-- url: http://www.house.mo.gov/MemberDetails.aspx?district=84
+- url: http://www.senate.mo.gov/senators-listing/
+- url: http://www.senate.mo.gov/mem04
 extras:
   first_name: Karla
   last_name: May
@@ -26,3 +31,4 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Karla
 family_name: May
+image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/KarlaMay-200x300.jpg
