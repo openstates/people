@@ -6,19 +6,25 @@ roles:
 - district: '73'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
+  end_date: '2018-12-31'
+- district: '23'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: upper
 contact_details:
-- address: 1101 The Capitol;402 South Monroe Street;Tallahassee, FL 32399-1300
+- address: 324 Senate Building;404 South Monroe Street;Tallahassee, FL 32399-1100
   note: capitol
-  voice: 850-717-5073
-- address: 381 Interstate Boulevard;Sarasota, FL 34240-8686
+  voice: 850-487-5023
+- address: 381 Interstate Boulevard;Sarasota, FL 34240
   note: district
   voice: 941-378-6309
+- email: gruters.joe.web@flsenate.gov
+  note: ''
 links:
-- url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4661&LegislativeTermId=87
+- url: http://www.flsenate.gov/Senators/s23
 sources:
-- url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4661&LegislativeTermId=87
-- url: http://www.flhouse.gov/Sections/Representatives/representatives.aspx
-image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4661.jpg
+- url: http://www.flsenate.gov/Senators/
+- url: http://www.flsenate.gov/Senators/s23
+image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s23_5347.jpg
 other_identifiers:
 - identifier: FLL000624
   scheme: legacy_openstates
