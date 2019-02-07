@@ -47,10 +47,12 @@ class AlaskaScraper(scrapelib.Scraper):
             elem: _get_if_exists(item, elem) for elem in ELEMENTS
         }
         chamber = item.attrib["chamber"]
-        code = item.attrib["code"]
+        code = item.attrib["code"].lower()
 
         person = Person(
             name="{FirstName} {LastName}".format(**item_dict),
+            given_name=item_dict['FirstName'],
+            family_name=item_dict['LastName'],
             state='ak',
             party=item_dict["Party"],
             chamber=('upper' if chamber == 'S' else 'lower'),
