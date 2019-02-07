@@ -97,6 +97,9 @@ def calculate_similarity(existing, new):
     if score < 0:
         score = 0
 
+    if existing['name'] == new['name']:
+        score = 0.4
+
     return score
 
 

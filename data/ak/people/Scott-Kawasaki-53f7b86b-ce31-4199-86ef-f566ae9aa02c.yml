@@ -6,8 +6,13 @@ roles:
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
+  end_date: '2018-12-31'
+- district: A
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  type: upper
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kaw
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=kaw
 contact_details:
 - address: State Capitol Room 502;Juneau AK, 99801
   note: Capitol Office
@@ -21,9 +26,14 @@ contact_details:
   voice: 907-456-7423
 - fax: 907-451-9293
   note: District Office Fax
+- address: State Capitol Room 7; Juneau AK, 99801
+  email: Senator.Scott.Kawasaki@akleg.gov
+  note: Capitol Office
+  voice: 907-465-3466
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kaw
-image: http://akleg.gov/images/legislators/rounded/KAW.png
+- url: http://w3.akleg.gov/
+image: http://akleg.gov/images/legislators/kaw.jpg
 other_identifiers:
 - identifier: AKL000042
   scheme: legacy_openstates
