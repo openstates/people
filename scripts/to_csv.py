@@ -118,7 +118,7 @@ def to_csv(abbreviations):
         click.secho('==== {} ===='.format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
-        person_files = glob.glob(os.path.join(directory, 'people/*.yml'))
+        person_files = sorted(glob.glob(os.path.join(directory, 'people/*.yml')))
         write_csv(person_files, jurisdiction_id, f"csv/{abbr}_legislators.csv")
 
 
