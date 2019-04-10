@@ -167,4 +167,13 @@ sync_images.py [OPTIONS] [ABBREVIATIONS]...
 Options:
   --skip-existing / --no-skip-existing  Skip processing for files that already exist
                                         on S3. (default: true)
-  ```
+```
+
+### to_csv.py
+```
+to_csv.py [ABBREVIATIONS]...
+
+  Update CSVs of current legislators.
+
+  <ABBR> can be provided to restrict to single state.
+```
