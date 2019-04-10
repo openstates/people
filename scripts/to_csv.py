@@ -4,19 +4,7 @@ import csv
 import glob
 import click
 from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations,
-                   get_settings, load_yaml, role_is_active)
-
-
-def get_division_id_for_role(settings, division_id, chamber, label):
-    # if there's an override, use it
-    overrides = settings.get(chamber + '_division_ids')
-    if overrides:
-        return overrides[label]
-
-    # default is parent/sld[ul]:prefix
-    prefix = 'sldl' if chamber == 'lower' else 'sldu'
-    slug = label.lower().replace(' ', '_')
-    return f'{division_id}/{prefix}:{slug}'
+                   load_yaml, role_is_active)
 
 
 def write_csv(files, jurisdiction_id, output_filename):
@@ -111,8 +99,6 @@ def to_csv(abbreviations):
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()
-
-    settings = get_settings()
 
     for abbr in abbreviations:
         click.secho('==== {} ===='.format(abbr), bold=True)
