@@ -1,10 +1,11 @@
+dist: xenial
 language: python
 sudo: false
 addons:
   postgresql: 9.6
   apt:
     packages:
-      - postgresql-9.6-postgis-2.3
+      - postgresql-9.6-postgis-2.4
 python: 3.6
 install: pip install -r scripts/requirements.txt
 notifications:
