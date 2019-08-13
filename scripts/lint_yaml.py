@@ -272,8 +272,8 @@ def get_expected_districts(settings):
                         fg='yellow')
         else:
             click.secho('\t{chamber}-{district} expired {vacant_until} remove & re-run'.format(
-                **vacancy), fg='red')
-            raise BadVacancy()
+                **vacancy), fg='yellow')
+            # raise BadVacancy()
 
     return expected
 
