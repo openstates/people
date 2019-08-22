@@ -14,14 +14,14 @@ from common import Person
 
 # Montana-specific
 
+
 def clean_name(name):
-    name = re.sub(r'\s+', ' ', name)
+    name = re.sub(r"\s+", " ", name)
     name = name.strip()
     return name.title()
 
 
 class MontanaScraper(scrapelib.Scraper):
-
     def lxmlize(self, url):
         data = self.get(url)
         doc = lxml.html.fromstring(data.content)
@@ -40,13 +40,13 @@ class MontanaScraper(scrapelib.Scraper):
         email, name, party, seat, phone = tds
 
         chamber, district = seat.text_content().strip().split()
-        url = str(name.xpath('a/@href')[0])
+        url = str(name.xpath("a/@href")[0])
 
         person = Person(
             name=clean_name(name.text_content()),
-            state='mt',
+            state="mt",
             party=party.text_content().strip(),
-            chamber=('upper' if chamber == 'SD' else 'lower'),
+            chamber=("upper" if chamber == "SD" else "lower"),
             district=district,
         )
         person.add_link(url)
@@ -56,11 +56,11 @@ class MontanaScraper(scrapelib.Scraper):
         if len(phone) == 14:
             person.capitol_office.voice = phone
         elif len(phone) > 30:
-            person.capitol_office.voice = phone.split('    ')[0]
+            person.capitol_office.voice = phone.split("    ")[0]
 
-        email = email.xpath('./a/@href')
+        email = email.xpath("./a/@href")
         if email:
-            email = email[0].split(':', 1)[1]
+            email = email[0].split(":", 1)[1]
         person.capitol_office.email = email
 
         return person, url
@@ -72,13 +72,13 @@ class MontanaScraper(scrapelib.Scraper):
 
 def main():
     try:
-        os.makedirs('incoming/mt/people')
+        os.makedirs("incoming/mt/people")
     except OSError:
         pass
     mt = MontanaScraper()
-    for leg in mt.scrape_legislator_list('113'):
-        leg.save('incoming/mt/people')
+    for leg in mt.scrape_legislator_list("113"):
+        leg.save("incoming/mt/people")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

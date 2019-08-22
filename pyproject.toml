@@ -1,0 +1,14 @@
+[tool.black]
+line-length = 99
+py36 = true
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
