@@ -15,6 +15,11 @@ boto3 = "^1.9"
 pillow = "^6.1"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+pytest = "^5.1"
+pytest-django = "^3.5"
+pytest-cov = "^2.7"
+coveralls = "^1.8"
 
 [tool.black]
 line-length = 99

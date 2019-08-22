@@ -7,7 +7,9 @@ addons:
     packages:
       - postgresql-9.6-postgis-2.4
 python: 3.6
-install: pip install -r scripts/requirements.txt
+install: 
+  - pip install poetry
+  - poetry install
 notifications:
     email:
         - james@openstates.org
