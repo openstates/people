@@ -14,6 +14,7 @@ def clean_name(name):
     name = name.strip()
     return name.title()
 
+
 ELEMENTS = (
     'FirstName',
     'MiddleName',
@@ -36,7 +37,8 @@ def _get_if_exists(item, elem):
 class AlaskaScraper(scrapelib.Scraper):
 
     def scrape_legislator_list(self, session_num):
-        url = "http://www.legis.state.ak.us/publicservice/basis/members?minifyresult=false&session=" + session_num
+        url = ("http://www.legis.state.ak.us/publicservice/basis/members"
+               "?minifyresult=false&session=" + session_num)
         xml = scrapelib.Scraper().get(url).content
         for line in lxml.etree.fromstring(xml).xpath("//Member/MemberDetails"):
             person = self.handle_list_item(line, session_num)
