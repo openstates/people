@@ -3,22 +3,47 @@ import os
 import csv
 import glob
 import click
-from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations,
-                   load_yaml, role_is_active)
+from utils import (
+    get_data_dir,
+    get_jurisdiction_id,
+    get_all_abbreviations,
+    load_yaml,
+    role_is_active,
+)
 
 
 def write_csv(files, jurisdiction_id, output_filename):
     with open(output_filename, "w") as outf:
         out = csv.DictWriter(
             outf,
-            ("id", "name",
-             "current_party", "current_district", "current_chamber",
-             "given_name", "family_name", "gender", "biography", "birth_date", "death_date",
-             "image", "links", "sources",
-             "capitol_address", "capitol_email", "capitol_voice", "capitol_fax",
-             "district_address", "district_email", "district_voice", "district_fax",
-             "twitter", "youtube", "instagram", "facebook",
-             )
+            (
+                "id",
+                "name",
+                "current_party",
+                "current_district",
+                "current_chamber",
+                "given_name",
+                "family_name",
+                "gender",
+                "biography",
+                "birth_date",
+                "death_date",
+                "image",
+                "links",
+                "sources",
+                "capitol_address",
+                "capitol_email",
+                "capitol_voice",
+                "capitol_fax",
+                "district_address",
+                "district_email",
+                "district_voice",
+                "district_fax",
+                "twitter",
+                "youtube",
+                "instagram",
+                "facebook",
+            ),
         )
         out.writeheader()
 
@@ -88,11 +113,11 @@ def write_csv(files, jurisdiction_id, output_filename):
                 }
                 out.writerow(obj)
 
-    click.secho(f'processed {len(files)} files', fg='green')
+    click.secho(f"processed {len(files)} files", fg="green")
 
 
 @click.command()
-@click.argument('abbreviations', nargs=-1)
+@click.argument("abbreviations", nargs=-1)
 def to_csv(abbreviations):
     """
     Sync YAML files to DB.
@@ -101,12 +126,12 @@ def to_csv(abbreviations):
         abbreviations = get_all_abbreviations()
 
     for abbr in abbreviations:
-        click.secho('==== {} ===='.format(abbr), bold=True)
+        click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
-        person_files = sorted(glob.glob(os.path.join(directory, 'people/*.yml')))
+        person_files = sorted(glob.glob(os.path.join(directory, "people/*.yml")))
         write_csv(person_files, jurisdiction_id, f"csv/{abbr}_legislators.csv")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     to_csv()

@@ -5,34 +5,37 @@ from to_database import load_person, load_org, create_posts
 
 
 def setup():
-    d = Division.objects.create(id='ocd-division/country:us/state:nc', name='NC')
-    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:nc', name='NC',
-                                    division=d)
-    o = Organization.objects.create(name='House', classification='lower', jurisdiction=j)
-    o.posts.create(label='1')
-    o.posts.create(label='2')
-    o.posts.create(label='3')
-    Organization.objects.create(name='Democratic', classification='party')
-    Organization.objects.create(name='Republican', classification='party')
+    d = Division.objects.create(id="ocd-division/country:us/state:nc", name="NC")
+    j = Jurisdiction.objects.create(
+        id="ocd-jurisdiction/country:us/state:nc", name="NC", division=d
+    )
+    o = Organization.objects.create(name="House", classification="lower", jurisdiction=j)
+    o.posts.create(label="1")
+    o.posts.create(label="2")
+    o.posts.create(label="3")
+    Organization.objects.create(name="Democratic", classification="party")
+    Organization.objects.create(name="Republican", classification="party")
 
 
 @pytest.mark.django_db
 def test_basic_person_creation():
-    data = yaml.load("""
+    data = yaml.load(
+        """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
     image: https://example.com/image
     extras:
         something: special
-    """)
+    """
+    )
 
     created, updated = load_person(data)
 
     assert created is True
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
-    assert p.name == 'Jane Smith'
-    assert p.image == 'https://example.com/image'
-    assert p.extras['something'] == 'special'
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    assert p.name == "Jane Smith"
+    assert p.image == "https://example.com/image"
+    assert p.extras["something"] == "special"
 
 
 @pytest.mark.django_db
@@ -47,25 +50,25 @@ def test_basic_person_updates():
     data = yaml.load(yaml_text)
 
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     created_at, updated_at = p.created_at, p.updated_at
 
     # ensure no change means no change
     created, updated = load_person(data)
     assert created is False
     assert updated is False
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     assert p.created_at == created_at
     assert p.updated_at == updated_at
 
     # ensure extra changes got captured
-    data['extras']['something'] = 'changed'
+    data["extras"]["something"] = "changed"
     created, updated = load_person(data)
     assert created is False
     assert updated is True
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     assert p.updated_at > updated_at
-    assert p.extras['something'] == 'changed'
+    assert p.extras["something"] == "changed"
 
 
 @pytest.mark.django_db
@@ -85,10 +88,10 @@ def test_basic_person_subobjects():
     data = yaml.load(yaml_text)
 
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.links.count() == 2
-    assert p.links.filter(note='some additional data').count() == 1
+    assert p.links.filter(note="some additional data").count() == 1
     assert p.sources.count() == 1
     assert p.other_names.count() == 1
 
@@ -106,34 +109,34 @@ def test_subobject_update():
     data = yaml.load(yaml_text)
 
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     created_at, updated_at = p.created_at, p.updated_at
 
     # ensure no change means no change
     created, updated = load_person(data)
     assert created is False
     assert updated is False
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     assert p.created_at == created_at
     assert p.updated_at == updated_at
 
     # change one field
-    data['links'][0]['url'] = 'https://example.com/jane-smith'
+    data["links"][0]["url"] = "https://example.com/jane-smith"
     created, updated = load_person(data)
 
     assert created is False
     assert updated is True
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     assert p.links.count() == 2
-    assert p.links.filter(url='https://example.com/jane-smith').count() == 1
+    assert p.links.filter(url="https://example.com/jane-smith").count() == 1
     assert p.updated_at > updated_at
 
     # delete a field
-    data['links'].pop()
+    data["links"].pop()
     created, updated = load_person(data)
     assert created is False
     assert updated is True
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     assert p.links.count() == 1
     assert p.updated_at > updated_at
 
@@ -175,11 +178,11 @@ def test_person_identifiers():
     data = yaml.load(yaml_text)
 
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.identifiers.count() == 4
-    assert p.identifiers.filter(scheme='old_openstates').count() == 2
-    assert p.identifiers.filter(scheme='twitter')[0].identifier == 'fakeaccount'
+    assert p.identifiers.filter(scheme="old_openstates").count() == 2
+    assert p.identifiers.filter(scheme="twitter")[0].identifier == "fakeaccount"
 
 
 @pytest.mark.django_db
@@ -199,10 +202,10 @@ def test_person_contact_details():
     data = yaml.load(yaml_text)
 
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.contact_details.count() == 5
-    assert p.contact_details.filter(note='home').count() == 1
+    assert p.contact_details.filter(note="home").count() == 1
 
 
 @pytest.mark.django_db
@@ -216,17 +219,17 @@ def test_person_party():
     data = yaml.load(yaml_text)
 
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.memberships.count() == 1
-    assert p.memberships.get().organization.name == 'Democratic'
+    assert p.memberships.get().organization.name == "Democratic"
 
-    data['party'].append({'name': 'Republican', 'end_date': '2018-10-06'})
+    data["party"].append({"name": "Republican", "end_date": "2018-10-06"})
     created, updated = load_person(data)
     assert updated is True
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     p.memberships.count() == 2
-    p.memberships.exclude(end_date='').count() == 1
+    p.memberships.exclude(end_date="").count() == 1
 
 
 @pytest.mark.django_db
@@ -241,45 +244,49 @@ def test_person_legislative_roles():
     """
     data = yaml.load(yaml_text)
     created, updated = load_person(data)
-    p = Person.objects.get(pk='abcdefab-0000-1111-2222-1234567890ab')
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.memberships.count() == 1
-    assert p.memberships.get().organization.name == 'House'
-    assert p.memberships.get().post.label == '3'
+    assert p.memberships.get().organization.name == "House"
+    assert p.memberships.get().post.label == "3"
 
 
-EXAMPLE_ORG_ID = 'ocd-organization/00000000-1111-2222-3333-444455556666'
+EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
 
 
 @pytest.mark.django_db
 def test_basic_organization():
-    data = yaml.load("""
+    data = yaml.load(
+        """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
     jurisdiction: ocd-jurisdiction/country:us/state:nc
     classification: committee
     founding_date: '2007-01-01'
-    """)
+    """
+    )
     created, updated = load_org(data)
 
     assert created is True
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    assert o.name == 'Finance'
-    assert o.jurisdiction.name == 'NC'
-    assert o.parent.name == 'House'
+    assert o.name == "Finance"
+    assert o.jurisdiction.name == "NC"
+    assert o.parent.name == "House"
 
 
 @pytest.mark.django_db
 def test_basic_organization_updates():
-    data = yaml.load("""
+    data = yaml.load(
+        """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
     jurisdiction: ocd-jurisdiction/country:us/state:nc
     classification: committee
     founding_date: '2007-01-01'
-    """)
+    """
+    )
     created, updated = load_org(data)
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
     created_at, updated_at = o.created_at, o.updated_at
@@ -293,18 +300,19 @@ def test_basic_organization_updates():
     assert o.updated_at == updated_at
 
     # ensure extra changes got captured
-    data['founding_date'] = '2008-01-01'
+    data["founding_date"] = "2008-01-01"
     created, updated = load_org(data)
     assert created is False
     assert updated is True
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
     assert o.updated_at > updated_at
-    assert o.founding_date == '2008-01-01'
+    assert o.founding_date == "2008-01-01"
 
 
 @pytest.mark.django_db
 def test_organization_memberships():
-    data = yaml.load("""
+    data = yaml.load(
+        """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
@@ -315,20 +323,21 @@ def test_organization_memberships():
         - id: 123
           name: Jane Smith
         - name: Noah Idy
-    """)
-    Person.objects.create(id='123', name='Jane Smith')
+    """
+    )
+    Person.objects.create(id="123", name="Jane Smith")
     created, updated = load_org(data)
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
     assert o.memberships.count() == 2
 
-    data['memberships'].append({'name': 'Another One', 'role': 'Chairman'})
+    data["memberships"].append({"name": "Another One", "role": "Chairman"})
     created, updated = load_org(data)
     assert created is False
     assert updated is True
     assert o.memberships.count() == 3
-    assert o.memberships.filter(role='Chairman')[0].person_name == 'Another One'
+    assert o.memberships.filter(role="Chairman")[0].person_name == "Another One"
 
-    data['memberships'] = []
+    data["memberships"] = []
     created, updated = load_org(data)
     assert created is False
     assert updated is True
@@ -338,8 +347,9 @@ def test_organization_memberships():
 @pytest.mark.django_db
 def test_org_person_membership_interaction():
     # this test ensure that committee memberships don't mess up person loading
-    person_data = {'id': '123', 'name': 'Jane Smith'}
-    com_data = yaml.load("""
+    person_data = {"id": "123", "name": "Jane Smith"}
+    com_data = yaml.load(
+        """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
@@ -349,7 +359,8 @@ def test_org_person_membership_interaction():
     memberships:
         - id: 123
           name: Jane Smith
-    """)
+    """
+    )
     load_person(person_data)
     load_org(com_data)
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
@@ -365,39 +376,39 @@ def test_org_person_membership_interaction():
 
 @pytest.mark.django_db
 def test_create_posts_simple():
-    d = Division.objects.create(id='ocd-division/country:us/state:al', name='Alabama')
-    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/state:al/government',
-                                    name='Alabama', division=d)
-    Organization.objects.create(jurisdiction=j, name='House', classification='lower')
-    Organization.objects.create(jurisdiction=j, name='Senate', classification='upper')
-    settings = {
-        'lower_seats': 105,
-        'upper_seats': 35,
-        'legislature_name': 'Alabama Legislature',
-    }
+    d = Division.objects.create(id="ocd-division/country:us/state:al", name="Alabama")
+    j = Jurisdiction.objects.create(
+        id="ocd-jurisdiction/country:us/state:al/government", name="Alabama", division=d
+    )
+    Organization.objects.create(jurisdiction=j, name="House", classification="lower")
+    Organization.objects.create(jurisdiction=j, name="Senate", classification="upper")
+    settings = {"lower_seats": 105, "upper_seats": 35, "legislature_name": "Alabama Legislature"}
     # divisions would already exist
-    for n in range(settings['lower_seats'] + 1):
-        Division.objects.create(id=f'ocd-division/country:us/state:al/sldl:{n}', name=str(n))
-    for n in range(settings['upper_seats'] + 1):
-        Division.objects.create(id=f'ocd-division/country:us/state:al/sldu:{n}', name=str(n))
+    for n in range(settings["lower_seats"] + 1):
+        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
+    for n in range(settings["upper_seats"] + 1):
+        Division.objects.create(id=f"ocd-division/country:us/state:al/sldu:{n}", name=str(n))
 
     create_posts(j.id, settings)
 
-    assert Post.objects.filter(role='Senator').count() == 35
-    assert Post.objects.filter(role='Representative').count() == 105
+    assert Post.objects.filter(role="Senator").count() == 35
+    assert Post.objects.filter(role="Representative").count() == 105
 
 
 @pytest.mark.django_db
 def test_create_top_level_unicameral():
-    d = Division.objects.create(id='ocd-division/country:us/district:dc', name='DC')
-    j = Jurisdiction.objects.create(id='ocd-jurisdiction/country:us/district:dc/government',
-                                    name='DC', division=d)
-    org = Organization.objects.create(jurisdiction=j, name='Council', classification='legislature')
+    d = Division.objects.create(id="ocd-division/country:us/district:dc", name="DC")
+    j = Jurisdiction.objects.create(
+        id="ocd-jurisdiction/country:us/district:dc/government", name="DC", division=d
+    )
+    org = Organization.objects.create(jurisdiction=j, name="Council", classification="legislature")
     for n in range(1, 9):
-        Division.objects.create(id=f'ocd-division/country:us/district:dc/ward:{n}',
-                                name=f'Ward {n}')
+        Division.objects.create(
+            id=f"ocd-division/country:us/district:dc/ward:{n}", name=f"Ward {n}"
+        )
 
-    settings = yaml.load("""
+    settings = yaml.load(
+        """
 legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1,
                     'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
 legislature_name: Council of the District of Columbia
@@ -412,8 +423,9 @@ legislature_division_ids:
     'Ward 7': 'ocd-division/country:us/district:dc/ward:7'
     'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
     'Chairman': 'ocd-division/country:us/district:dc'
-    'At-Large': 'ocd-division/country:us/district:dc'""")
+    'At-Large': 'ocd-division/country:us/district:dc'"""
+    )
 
     create_posts(j.id, settings)
     assert org.posts.all().count() == 10
-    assert Post.objects.filter(division_id='ocd-division/country:us/district:dc').count() == 2
+    assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2
