@@ -6,7 +6,7 @@ addons:
   apt:
     packages:
       - postgresql-9.6-postgis-2.4
-python: 3.6
+python: 3.7
 install: 
   - pip install poetry
   - poetry install
