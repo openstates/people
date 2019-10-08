@@ -15,6 +15,7 @@
     * instagram: username of official Instagram account
     * facebook: username of official Facebook account
     * legacy_openstates: legacy Open States ID (e.g. NCL000123)
+    * openstates: alternate Open States ID (results from duplicates that have been merged)
 * party: list of parties that the legislator has been a part of, each may have the following fields:
     * name: Name of the party.    **required**
     * start_date
