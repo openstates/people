@@ -297,11 +297,13 @@ def create_posts(jurisdiction_id, settings):
 
 def load_directory(files, type, jurisdiction_id, purge):
     ids = set()
+    merged = {}
     created_count = 0
     updated_count = 0
 
     if type == "person":
         from opencivicdata.core.models import Person
+        from opencivicdata.legislative.models import BillSponsorship
 
         existing_ids = set(
             Person.objects.filter(
@@ -344,10 +346,32 @@ def load_directory(files, type, jurisdiction_id, purge):
             updated_count += 1
 
     missing_ids = existing_ids - ids
+
+    # check if missing ids are in need of a merge
+    for missing_id in missing_ids:
+        try:
+            found = ModelCls.objects.get(
+                identifiers__identifier=missing_id,
+                identifiers__scheme="openstates"
+            )
+            merged[missing_id] = found.id
+        except ModelCls.DoesNotExist:
+            pass
+
+    if merged:
+        click.secho(f"{len(merged)} removed via merge", fg="yellow")
+        for old, new in merged.items():
+            click.secho(f"   {old} => {new}", fg="yellow")
+            BillSponsorship.objects.filter(person_id=old).update(person_id=new)
+            ModelCls.objects.filter(id=old).delete()
+            missing_ids.remove(old)
+
+    # ids that are still missing would need to be purged
     if missing_ids and not purge:
         click.secho(f"{len(missing_ids)} went missing, run with --purge to remove", fg="red")
         for id in missing_ids:
-            click.secho(f"  {id}")
+            mobj = ModelCls.objects.get(pk=id)
+            click.secho(f"  {id}: {mobj}")
         raise CancelTransaction()
     elif missing_ids and purge:
         click.secho(f"{len(missing_ids)} purged", fg="yellow")
@@ -364,7 +388,10 @@ def init_django():  # pragma: no cover
         conf.global_settings,
         SECRET_KEY="not-important",
         DEBUG=False,
-        INSTALLED_APPS=("django.contrib.contenttypes", "opencivicdata.core.apps.BaseConfig"),
+        INSTALLED_APPS=("django.contrib.contenttypes",
+                        "opencivicdata.core.apps.BaseConfig",
+                        "opencivicdata.legislative.apps.BaseConfig",
+                        ),
         DATABASES={
             "default": {
                 "ENGINE": "django.contrib.gis.db.backends.postgis",
