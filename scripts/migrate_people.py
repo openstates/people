@@ -53,9 +53,7 @@ def terms_to_roles(leg_terms, metadata_terms):
     years_for_position = defaultdict(list)
     for lt in leg_terms:
         start, end = term_ranges[lt["term"]]
-        years_for_position[(lt["chamber"], lt["district"])].extend(
-            list(range(start, end + 1))
-        )
+        years_for_position[(lt["chamber"], lt["district"])].extend(list(range(start, end + 1)))
 
     positions = []
 
@@ -118,9 +116,7 @@ def process_old_file(filename, metadata):
     for k in [k for k in data.keys() if k.startswith("+")]:
         data.pop(k)
 
-    leg_obj = {
-        "id": ocd_uuid("person"),
-    }
+    leg_obj = {"id": ocd_uuid("person")}
 
     leg_obj["name"] = data.pop("full_name")
     first_name = data.pop("first_name")
@@ -150,11 +146,7 @@ def process_old_file(filename, metadata):
                 continue
             parties.add(role["party"])
             new_roles.append(
-                {
-                    "term": role["term"],
-                    "chamber": role["chamber"],
-                    "district": role["district"],
-                }
+                {"term": role["term"], "chamber": role["chamber"], "district": role["district"]}
             )
 
     leg_obj["party"] = [{"name": party} for party in parties]
@@ -163,13 +155,15 @@ def process_old_file(filename, metadata):
     roles = terms_to_roles(new_roles, metadata["terms"])
     formatted_roles = []
     for chamber, district, start, end in roles:
-        formatted_roles.append({
-            "district": district,
-            "jurisdiction": jurisdiction_id,
-            "type": chamber,
-            "start_date": f"{start}-01-01",
-            "end_date": f"{end}-12-31",
-        })
+        formatted_roles.append(
+            {
+                "district": district,
+                "jurisdiction": jurisdiction_id,
+                "type": chamber,
+                "start_date": f"{start}-01-01",
+                "end_date": f"{end}-12-31",
+            }
+        )
     leg_obj["roles"] = formatted_roles
 
     all_ids = data.pop("_all_ids")
