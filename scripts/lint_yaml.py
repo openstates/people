@@ -170,6 +170,8 @@ PERSON_FIELDS = {
     "sort_name": [is_string],
     "given_name": [is_string],
     "family_name": [is_string],
+    "middle_name": [is_string],
+    "suffix": [is_string],
     "gender": [is_string],
     "summary": [is_multiline_string],
     "biography": [is_multiline_string],

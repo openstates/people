@@ -83,7 +83,9 @@ def calculate_similarity(existing, new):
         for each item that differs, we decrease score by 0.1
     """
     differences = compare_objects(
-        existing, new, ignore=["id", "other_identifiers", "given_name", "family_name"]
+        existing,
+        new,
+        ignore=["id", "other_identifiers", "given_name", "family_name", "middle_name", "suffix"],
     )
 
     # if nothing differs or only id differs
