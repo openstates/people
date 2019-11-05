@@ -351,8 +351,7 @@ def load_directory(files, type, jurisdiction_id, purge):
     for missing_id in missing_ids:
         try:
             found = ModelCls.objects.get(
-                identifiers__identifier=missing_id,
-                identifiers__scheme="openstates"
+                identifiers__identifier=missing_id, identifiers__scheme="openstates"
             )
             merged[missing_id] = found.id
         except ModelCls.DoesNotExist:
@@ -388,10 +387,11 @@ def init_django():  # pragma: no cover
         conf.global_settings,
         SECRET_KEY="not-important",
         DEBUG=False,
-        INSTALLED_APPS=("django.contrib.contenttypes",
-                        "opencivicdata.core.apps.BaseConfig",
-                        "opencivicdata.legislative.apps.BaseConfig",
-                        ),
+        INSTALLED_APPS=(
+            "django.contrib.contenttypes",
+            "opencivicdata.core.apps.BaseConfig",
+            "opencivicdata.legislative.apps.BaseConfig",
+        ),
         DATABASES={
             "default": {
                 "ENGINE": "django.contrib.gis.db.backends.postgis",
