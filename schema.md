@@ -4,6 +4,8 @@
 * name: Full Name.  **required**
 * given_name: First name.
 * family_name: Last name.
+* middle_name: Middle name or initial.
+* suffix: Name Suffix.
 * gender: Male/Female/Other
 * biography: Official biography text.
 * birth_date: Birth date in YYYY-MM-DD format.
