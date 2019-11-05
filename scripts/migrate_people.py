@@ -8,26 +8,22 @@ from collections import defaultdict
 from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj, iter_objects
 
 
-OLD_DATA_DIRECTORY = "/Users/james/Desktop/old-json-to-new/old"
-
-
 def load_new_files(state):
     new_db_ids = set()
-
     for data, _ in itertools.chain(iter_objects(state, "people"), iter_objects(state, "retired")):
         for ids in data.get("other_identifiers", []):
             if ids["scheme"] == "legacy_openstates":
                 new_db_ids.add(ids["identifier"])
-
-    print("found", len(new_db_ids), "migrated ids")
     return new_db_ids
 
 
-def scan_old_files(state, new_db_ids):
-    with open(os.path.join(OLD_DATA_DIRECTORY, state, "metadata.json")) as f:
+def scan_old_files(state, old_dir, new_db_ids):
+    with open(os.path.join(old_dir, state, "metadata.json")) as f:
         metadata = json.load(f)
 
-    all_old_files = glob.glob(os.path.join(OLD_DATA_DIRECTORY, state, "legislators/*"))
+    all_old_files = glob.glob(os.path.join(old_dir, state, "legislators/*"))
+    already = 0
+    migrated = 0
     for f in all_old_files:
         data = json.load(open(f))
 
@@ -37,10 +33,14 @@ def scan_old_files(state, new_db_ids):
                 found += 1
         if found == 0:
             process_old_file(f, metadata)
+            migrated += 1
         elif found == len(data["_all_ids"]):
-            print("ALREADY MIGRATED:", f)
+            already += 1
         else:
             print("!!! PARTIAL:", f)
+            raise Exception()
+
+    print(f"{already} already migrated.   {migrated} migrated.")
 
 
 def terms_to_roles(leg_terms, metadata_terms):
@@ -110,6 +110,7 @@ def process_old_file(filename, metadata):
         "csrfmiddlewaretoken",
         "email",
         "created_at",
+        "office_address",
     ):
         data.pop(k, None)
 
@@ -191,13 +192,16 @@ def process_old_file(filename, metadata):
         print(data)
         raise Exception()
 
-    print(leg_obj)
+    output_dir = get_data_dir(state)
+    dump_obj(leg_obj, output_dir=os.path.join(output_dir, "retired"))
 
 
 def main():
     state = sys.argv[1]
+    old_data_dir = sys.argv[2]
     new_ids = load_new_files(state)
-    scan_old_files(state, new_ids)
+    scan_old_files(state, old_data_dir, new_ids)
 
 
-main()
+if __name__ == "__main__":
+    main()
