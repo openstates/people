@@ -4,7 +4,7 @@ import os
 import glob
 import itertools
 import json
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj, iter_objects
 
 
@@ -116,7 +116,7 @@ def process_old_file(filename, metadata):
     for k in [k for k in data.keys() if k.startswith("+")]:
         data.pop(k)
 
-    leg_obj = {"id": ocd_uuid("person")}
+    leg_obj = OrderedDict({"id": ocd_uuid("person")})
 
     leg_obj["name"] = data.pop("full_name")
     first_name = data.pop("first_name")
