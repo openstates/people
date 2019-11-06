@@ -156,13 +156,13 @@ def process_old_file(filename, metadata):
     formatted_roles = []
     for chamber, district, start, end in roles:
         formatted_roles.append(
-            {
+            OrderedDict({
                 "district": district,
                 "jurisdiction": jurisdiction_id,
                 "type": chamber,
                 "start_date": f"{start}-01-01",
                 "end_date": f"{end}-12-31",
-            }
+            })
         )
     leg_obj["roles"] = formatted_roles
 
@@ -191,8 +191,8 @@ def process_old_file(filename, metadata):
 
 
 def main():
-    state = sys.argv[1]
-    old_data_dir = sys.argv[2]
+    old_data_dir = sys.argv[1]
+    state = sys.argv[2]
     new_ids = load_new_files(state)
     scan_old_files(state, old_data_dir, new_ids)
 
