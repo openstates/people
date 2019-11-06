@@ -7,6 +7,16 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
   end_date: '2018-11-30'
+- district: '24'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2016-12-31'
+- district: '23'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2012-12-31'
 contact_details:
 - address: 1681 Wildflower Lane, Twin Falls, ID 83301
   email: shartgen@house.idaho.gov
@@ -16,11 +26,19 @@ contact_details:
   voice: 208-332-1061
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2018&district=24
+- url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=705
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+- url: http://legislature.idaho.gov/house/membership.cfm
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2018/directory/Hartgen705.jpg
 other_identifiers:
 - identifier: IDL000263
+  scheme: legacy_openstates
+- identifier: ocd-person/5c51a969-6fa8-44d9-bb1d-54b27fea15f4
+  scheme: openstates
+- identifier: IDL000064
+  scheme: legacy_openstates
+- identifier: IDL000156
   scheme: legacy_openstates
 given_name: Stephen
 family_name: Hartgen

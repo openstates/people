@@ -112,6 +112,7 @@ def process_old_file(filename, metadata):
         "office_phone",
         "_guid",
         "all_ids",
+        "2008-2011",
     ):
         data.pop(k, None)
 
@@ -145,7 +146,18 @@ def process_old_file(filename, metadata):
     new_roles = []
     for session, roles in old_roles.items():
         for role in roles:
-            if role["type"] == "committee member":
+            if role["type"] in ("committee member",
+                                "Minority Floor Leader",
+                                "Majority Floor Leader",
+                                "Majority Caucus Chair",
+                                "Minority Caucus Chair",
+                                "Speaker Pro Tem",
+                                "President Pro Tem",
+                                "Senate President",
+                                "Speaker of the House",
+                                "Minority Whip",
+                                "Majority Whip",
+                                ) or role.get("committee"):
                 continue
             parties.add(role["party"])
             new_roles.append(
