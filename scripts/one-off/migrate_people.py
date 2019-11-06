@@ -213,9 +213,11 @@ def process_old_file(filename, metadata):
 
 def main():
     old_data_dir = sys.argv[1]
-    state = sys.argv[2]
-    new_ids = load_new_files(state)
-    scan_old_files(state, old_data_dir, new_ids)
+    for state in glob.glob("data/*"):
+        state = state.replace("data/", "")
+        print(state)
+        new_ids = load_new_files(state)
+        scan_old_files(state, old_data_dir, new_ids)
 
 
 if __name__ == "__main__":
