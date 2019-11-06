@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   type: lower
   end_date: '2018-12-31'
+- district: '1'
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: 411 Legislative Ave. Dover, DE 19901
   note: Capitol Office
@@ -16,14 +21,23 @@ contact_details:
 links:
 - note: legislator page
   url: https://legis.delaware.gov/LegislatorDetail?personId=37
+- url: http://legis.delaware.gov/legislature.nsf/52087754ec8b9261852569c10055df42/5999f83ac2e4a5dd852569d800535df0?OpenDocument&TableRow=1.5.5
 sources:
 - note: legislator list page
   url: https://legis.delaware.gov/House
+- +page: legislator detail page
+  url: http://legis.delaware.gov/legislature.nsf/FSMain?OpenFrameset&Frame=right&src=/legislature.nsf/52087754EC8B9261852569C10055DF42/FC7D650CF7BC468085257E0E005D8DA9
+- +page: legislator list page
+  url: http://legis.delaware.gov/Legislature.nsf/Reps?openview
 image: https://legis.delaware.gov/images/default-source/default-album/CharlesPotter.jpg?sfvrsn=0
 other_identifiers:
 - identifier: DEL000136
   scheme: legacy_openstates
 - identifier: DEL000158
   scheme: legacy_openstates
+- identifier: DEL000112
+  scheme: legacy_openstates
+- identifier: ocd-person/d5ffa6b1-a135-4e58-b6be-4aa4e8214ae8
+  scheme: openstates
 given_name: Charles
 family_name: Potter
