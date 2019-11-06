@@ -109,6 +109,7 @@ def process_old_file(filename, metadata):
         "email",
         "created_at",
         "office_address",
+        "office_phone",
     ):
         data.pop(k, None)
 
