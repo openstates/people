@@ -79,6 +79,7 @@ def process_old_file(filename, metadata):
         raise Exception()
     if data.get("active"):
         print(data)
+        return
         raise Exception()
     if data.get("roles", []):
         raise Exception()
@@ -161,6 +162,7 @@ def process_old_file(filename, metadata):
                                 "Speaker of the House",
                                 "Minority Whip",
                                 "Majority Whip",
+                                "Lt. Governor",
                                 ) or role.get("committee"):
                 continue
             parties.add(role["party"])
