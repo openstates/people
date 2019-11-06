@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
   end_date: '2018-11-30'
+- district: '34'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: 3215 N. 2000 W., Rexburg, ID 83440
   email: draybould@house.idaho.gov
@@ -15,11 +20,17 @@ contact_details:
   voice: 208-332-1173
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2018&district=34
+- url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=49
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+- url: http://legislature.idaho.gov/house/membership.cfm
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2018/directory/Raybould49.jpg
 other_identifiers:
 - identifier: IDL000276
+  scheme: legacy_openstates
+- identifier: ocd-person/b2ba280c-a932-4dc3-aba5-020f0d22cb8e
+  scheme: openstates
+- identifier: IDL000086
   scheme: legacy_openstates
 given_name: Dell
 family_name: Raybould

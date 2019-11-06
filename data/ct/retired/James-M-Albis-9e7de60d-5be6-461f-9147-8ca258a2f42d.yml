@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   type: lower
   end_date: '2018-12-31'
+- district: '99'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: Legislative Office Building;Room 4023;Hartford, CT 06106
   note: Capitol Office
@@ -23,5 +28,12 @@ sources:
 other_identifiers:
 - identifier: CTL000347
   scheme: legacy_openstates
+- identifier: ocd-person/965224a1-0a9c-4a40-ba87-7cf66dff2c8f
+  scheme: openstates
+- identifier: CTL000135
+  scheme: legacy_openstates
+- identifier: CTL000212
+  scheme: legacy_openstates
 given_name: James M.
 family_name: Albis
+image: http://www.housedems.ct.gov/Albis/images/Albis_2014-01-24b.jpg

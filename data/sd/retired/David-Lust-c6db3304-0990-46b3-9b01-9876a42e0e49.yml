@@ -7,18 +7,30 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: lower
   end_date: '2018-12-31'
+- district: '34'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: lower
+  start_date: '2009-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - email: David.Lust@sdlegislature.gov
   note: Capitol Office
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1464&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=442
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1464&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=442
+- url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=442
 image: https://sdlegislature.gov/inc/img/Legislators/Lust_2017.jpg
 extras:
   occupation: Attorney
 other_identifiers:
 - identifier: SDL000272
+  scheme: legacy_openstates
+- identifier: ocd-person/a202c211-4c5a-422f-8414-c713154033d9
+  scheme: openstates
+- identifier: SDL000073
   scheme: legacy_openstates
 given_name: David
 family_name: Lust

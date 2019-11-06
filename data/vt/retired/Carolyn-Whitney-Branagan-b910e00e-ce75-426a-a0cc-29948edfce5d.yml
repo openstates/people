@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: upper
   end_date: '2019-01-08'
+- district: Franklin-1
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  type: lower
+  start_date: '2009-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: Vermont State House;115 State Street;Montpelier, VT 05633
   email: CBranagan@leg.state.vt.us
@@ -15,12 +20,26 @@ contact_details:
   note: District Office
 links:
 - url: http://legislature.vermont.gov/people/single/2018.1/27151
+- url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2018.1
 - url: http://legislature.vermont.gov/people/single/2018.1/27151
+- url: http://legislature.vermont.gov/people/loadAll/2016
+- url: http://legislature.vermont.gov/people/single/2016/14550
 image: https://legislature.vermont.gov/assets/Documents/Legislators/CBranagan.jpg
 other_identifiers:
 - identifier: VTL000818
   scheme: legacy_openstates
+- identifier: VTL000042
+  scheme: legacy_openstates
+- identifier: VTL000577
+  scheme: legacy_openstates
+- identifier: VTL000447
+  scheme: legacy_openstates
+- identifier: VTL000717
+  scheme: legacy_openstates
+- identifier: ocd-person/aebef24f-bf2e-4c7f-9711-1a34a3714897
+  scheme: openstates
 given_name: Carolyn Whitney
 family_name: Branagan
+middle_name: Whitney

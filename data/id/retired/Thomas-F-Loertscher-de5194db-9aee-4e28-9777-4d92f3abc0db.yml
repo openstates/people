@@ -7,6 +7,16 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
   end_date: '2018-11-30'
+- district: '32'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2016-12-31'
+- district: '31'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2012-12-31'
 contact_details:
 - address: 1357 Bone Road, Iona, ID 83427
   email: tloertscher@house.idaho.gov
@@ -15,11 +25,20 @@ contact_details:
   voice: 208-332-1183
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2018&district=32
+- url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=37
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+- url: http://legislature.idaho.gov/house/membership.cfm
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2018/directory/Loertscher37.jpg
 other_identifiers:
 - identifier: IDL000239
   scheme: legacy_openstates
+- identifier: IDL000073
+  scheme: legacy_openstates
+- identifier: IDL000163
+  scheme: legacy_openstates
+- identifier: ocd-person/eb2de29e-7148-4e40-8def-6e20b1847e73
+  scheme: openstates
 given_name: Thomas F.
 family_name: Loertscher
+middle_name: F.
