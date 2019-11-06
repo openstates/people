@@ -112,6 +112,7 @@ def process_old_file(filename, metadata):
         "created_at",
         "office_address",
         "office_phone",
+        "occupation",
         "_guid",
         "_code",
         "all_ids",

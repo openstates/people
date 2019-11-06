@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   type: lower
   end_date: '2018-12-31'
+- district: '162'
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  type: lower
+  start_date: '2009-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - address: 605 East Chester Pike Ridley Park, PA 19078
   fax: 610-534-1710
@@ -18,6 +23,7 @@ contact_details:
   voice: 717-787-3472
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1175
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1175
@@ -28,5 +34,13 @@ extras:
 other_identifiers:
 - identifier: PAL000504
   scheme: legacy_openstates
+- identifier: PAL000169
+  scheme: legacy_openstates
+- identifier: PAL000306
+  scheme: legacy_openstates
+- identifier: PAL000383
+  scheme: legacy_openstates
+- identifier: ocd-person/396f219c-d21e-47de-973f-0412fa6e8d78
+  scheme: openstates
 given_name: Nick
 family_name: Miccarelli
