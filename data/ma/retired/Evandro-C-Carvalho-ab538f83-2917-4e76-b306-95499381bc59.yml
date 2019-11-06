@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: lower
   end_date: '2018-12-31'
+- district: Fifth Suffolk
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - email: Evandro.Carvalho@mahouse.gov
   note: District Office
@@ -15,11 +20,19 @@ contact_details:
   voice: 617-722-2017
 links:
 - url: https://malegislature.gov/Legislators/Profile/ecc1
+- url: http://www.malegislature.gov/People/Profile/ECC1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/ecc1
+- url: http://www.malegislature.gov/People/Profile/ECC1
 image: https://malegislature.gov/Legislators/Profile/170/ecc1.jpg
 other_identifiers:
 - identifier: MAL000483
+  scheme: legacy_openstates
+- identifier: ocd-person/e8220bc1-1020-4c1c-8704-8eee788beaf1
+  scheme: openstates
+- identifier: MAL000332
+  scheme: legacy_openstates
+- identifier: MAL000378
   scheme: legacy_openstates
 given_name: Evandro
 family_name: Carvalho

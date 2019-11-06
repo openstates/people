@@ -52,7 +52,8 @@ def terms_to_roles(leg_terms, metadata_terms):
     # (chamber, district) => [years]
     years_for_position = defaultdict(list)
     for lt in leg_terms:
-        start, end = term_ranges[lt["term"]]
+        # fix out of order term in MA
+        start, end = sorted(term_ranges[lt["term"]])
         years_for_position[(lt["chamber"], lt["district"])].extend(list(range(start, end + 1)))
 
     positions = []
@@ -77,6 +78,7 @@ def process_old_file(filename, metadata):
     if data["leg_id"] != data["_id"]:
         raise Exception()
     if data.get("active"):
+        print(data)
         raise Exception()
     if data.get("roles", []):
         raise Exception()
@@ -111,6 +113,7 @@ def process_old_file(filename, metadata):
         "office_address",
         "office_phone",
         "_guid",
+        "_code",
         "all_ids",
         "2008-2011",
     ):
