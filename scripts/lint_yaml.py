@@ -21,7 +21,7 @@ class BadVacancy(Exception):
     pass
 
 
-SUFFIX_RE = re.compile(r"(iii?)|(i?v)|(ed\.?d\.?)|(ph\.?d\.?)|(m\.?d\.?)|([sj]r\.?)", re.I)
+SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)", re.I)
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
 UUID_RE = re.compile(r"^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
