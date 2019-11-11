@@ -36,7 +36,7 @@ def move_file(filename):  # pragma: no cover
     os.renames(filename, new_filename)
 
 
-def validate_end_date(ctx, value):
+def validate_end_date(ctx, param, value):
     try:
         datetime.strptime(value, '%Y-%m-%d')
         return value
