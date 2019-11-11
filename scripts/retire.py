@@ -39,7 +39,7 @@ def move_file(filename):  # pragma: no cover
 def validate_end_date(ctx, value):
     try:
         end_date = datetime.strptime(value, '%Y-%m-%d')
-        return end_date
+        return value
     except ValueError:
         raise click.BadParameter('END_DATE must be a valid date in the format YYYY-MM-DD')
 
