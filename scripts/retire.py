@@ -2,6 +2,7 @@
 import os
 import glob
 import click
+from datetime import datetime
 from utils import load_yaml, dump_obj, role_is_active
 
 
@@ -35,8 +36,16 @@ def move_file(filename):  # pragma: no cover
     os.renames(filename, new_filename)
 
 
+def validate_end_date(ctx, value):
+    try:
+        end_date = datetime.strptime(value, '%Y-%m-%d')
+        return end_date
+    except ValueError:
+        raise click.BadParameter('END_DATE must be a valid date in the format YYYY-MM-DD')
+
+
 @click.command()
-@click.argument("end_date")
+@click.argument("end_date", callback=validate_end_date)
 @click.argument("filename")
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
