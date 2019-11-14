@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: lower
   end_date: '2018-12-31'
+- district: Fifteenth Norfolk
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: 42 Russell Street;Brookline, MA 02446
   email: Frank.Smizik@mahouse.gov
@@ -17,11 +22,18 @@ contact_details:
   voice: 617-722-2676
 links:
 - url: https://malegislature.gov/Legislators/Profile/FIS1
+- url: http://www.malegislature.gov/People/Profile/FIS1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/FIS1
+- url: http://www.malegislature.gov/People/Profile/FIS1
 image: https://malegislature.gov/Legislators/Profile/170/FIS1.jpg
 other_identifiers:
 - identifier: MAL000505
   scheme: legacy_openstates
+- identifier: ocd-person/cbdd975f-2bc4-42eb-99b9-38165170e591
+  scheme: openstates
+- identifier: MAL000174
+  scheme: legacy_openstates
 given_name: Frank
 family_name: Smizik
+middle_name: I.

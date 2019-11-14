@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: lower
   end_date: '2018-12-31'
+- district: '40'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - address: 1513 ASHFORD DR, MILLCREEK TOWNSHIP, UT, 84124
   email: lhemingway@le.utah.gov
@@ -14,8 +19,11 @@ contact_details:
   voice: 801-231-2153
 links:
 - url: http://house.utah.gov/rep/HEMINLN
+- url: http://le.utah.gov/house2/detail.jsp?i=HEMINLN
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: http://le.utah.gov/house2/representatives.jsp
+- url: http://le.utah.gov/house2/detail.jsp?i=HEMINLN
 image: https://le.utah.gov/images/legislator/HEMINLN.jpg
 extras:
   links:
@@ -28,5 +36,10 @@ extras:
 other_identifiers:
 - identifier: UTL000275
   scheme: legacy_openstates
+- identifier: ocd-person/75747011-ade6-4864-8245-785e622289ef
+  scheme: openstates
+- identifier: UTL000061
+  scheme: legacy_openstates
 given_name: Lynn N.
 family_name: Hemingway
+middle_name: N

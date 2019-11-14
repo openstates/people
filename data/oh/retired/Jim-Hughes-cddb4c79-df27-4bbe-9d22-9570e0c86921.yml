@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
   end_date: '2018-12-31'
+- district: '16'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: upper
+  start_date: '2011-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: 77 S. High Street;13th Floor;Columbus, OH 43215
   email: rep24@ohiohouse.gov
@@ -15,8 +20,10 @@ contact_details:
   voice: 614-466-8012
 links:
 - url: http://www.ohiohouse.gov/jim-hughes
+- url: http://www.ohiosenate.gov/hughes
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
+- url: http://www.ohiosenate.gov/members/senate-directory
 image: http://www.ohiohouse.gov/Assets/Headshots/Small/24.jpg
 biography: Representative Jim Hughes is serving his first term in the Ohio House representing
   the 24th district, which encompasses a portion of Franklin County, including Upper
@@ -24,5 +31,9 @@ biography: Representative Jim Hughes is serving his first term in the Ohio House
 other_identifiers:
 - identifier: OHL000334
   scheme: legacy_openstates
+- identifier: OHL000016
+  scheme: legacy_openstates
+- identifier: ocd-person/eb11947d-a05e-4122-9195-5583b4a1846c
+  scheme: openstates
 given_name: Jim
 family_name: Hughes
