@@ -8,13 +8,43 @@ roles:
   type: upper
   end_date: '2017-12-15'
   end_reason: resigned to run for Congress
+- district: '13'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: upper
+  start_date: '2017-01-01'
+  end_date: '2018-12-31'
+- district: '13'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2016-12-31'
+- district: '12'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: '2009-01-01'
+  end_date: '2012-12-31'
 links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=53&session=119&legislator=1786
+- url: http://www.azleg.gov/MembersPage.asp?Member_ID=66&Legislature=52&Session_ID=115
 contact_details:
 - address: Senate;1700 West Washington;Room;Phoenix, AZ 85007
   note: Capitol Office
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=S
+- url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=H
 image: https://www.azleg.gov/alisImages/MemberPhotos/53leg/Senate/MONTENEGRO.gif
 given_name: Steve
 family_name: Montenegro
+other_identifiers:
+- identifier: ocd-person/6d571d81-5c57-48a2-a9bd-56f61af2c4ae
+  scheme: openstates
+- identifier: AZL000379
+  scheme: legacy_openstates
+- identifier: ocd-person/77793969-a745-4713-b7be-21ab21980563
+  scheme: openstates
+- identifier: AZL000075
+  scheme: legacy_openstates
+- identifier: AZL000166
+  scheme: legacy_openstates
+- identifier: AZL000276
+  scheme: legacy_openstates

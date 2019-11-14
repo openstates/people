@@ -7,6 +7,16 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: upper
   end_date: '2018-12-31'
+- district: '43'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  type: lower
+  start_date: '2015-01-01'
+  end_date: '2016-12-31'
+- district: '113'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - address: 45 Allison Avenue;Portland, ME 04103
   note: District Office
@@ -16,8 +26,11 @@ contact_details:
   note: District Email
 links:
 - url: https://mainelegislature.org/senate/senator-mark-dion/9366
+- url: http://www.maine.gov/legis/house/hsebios/dionmn.htm
 sources:
 - url: https://mainelegislature.org/senate/senator-mark-dion/9366
+- url: http://www.maine.gov/legis/house/dist_mem.htm
+- url: http://www.maine.gov/legis/house/hsebios/dionmn.htm
 image: https://mainelegislature.org/images/logo.png
 extras:
   first_name: Mark
@@ -26,5 +39,12 @@ extras:
 other_identifiers:
 - identifier: MEL000524
   scheme: legacy_openstates
+- identifier: MEL000148
+  scheme: legacy_openstates
+- identifier: MEL000327
+  scheme: legacy_openstates
+- identifier: ocd-person/eead9dc3-96a2-4bb7-aa12-017f5d755111
+  scheme: openstates
 given_name: Mark
 family_name: Dion
+middle_name: N.

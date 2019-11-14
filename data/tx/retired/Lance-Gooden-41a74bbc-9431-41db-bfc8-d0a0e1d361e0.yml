@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   type: lower
   end_date: '2019-01-07'
+- district: '4'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - address: Room E1.204;P.O. Box 2910;Austin, TX 78768
   fax: 512-463-2040
@@ -14,11 +19,17 @@ contact_details:
   voice: 512-463-0458
 links:
 - url: https://house.texas.gov/members/member-page/?district=4
+- url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2020
 sources:
 - url: https://house.texas.gov/members/member-page/?district=4
+- url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2020
 image: https://house.texas.gov/photos/members/2020.jpg
 other_identifiers:
 - identifier: TXL000695
+  scheme: legacy_openstates
+- identifier: ocd-person/f8d4124c-5731-40d9-a53b-0db611b4b860
+  scheme: openstates
+- identifier: TXL000383
   scheme: legacy_openstates
 given_name: Lance
 family_name: Gooden

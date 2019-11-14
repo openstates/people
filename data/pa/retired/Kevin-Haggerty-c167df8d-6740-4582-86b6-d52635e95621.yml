@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   type: lower
   end_date: '2018-12-31'
+- district: '112'
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - address: Dunmore Community Center 1414 Monroe Avenue Dunmore, PA 18509
   fax: 570-342-2845
@@ -18,6 +23,7 @@ contact_details:
   voice: 717-783-5043
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1635
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1635
@@ -28,6 +34,10 @@ extras:
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgU15us6XsTqaUIrYlr0bktv
 other_identifiers:
 - identifier: PAL000557
+  scheme: legacy_openstates
+- identifier: ocd-person/5765774e-0d5e-46e2-a42f-8de963b7a2ae
+  scheme: openstates
+- identifier: PAL000451
   scheme: legacy_openstates
 given_name: Kevin
 family_name: Haggerty
