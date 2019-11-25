@@ -338,6 +338,7 @@ class Validator:
     def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
         self.expected = get_expected_districts(settings[abbr])
+        self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
         self.person_count = 0
@@ -365,6 +366,9 @@ class Validator:
             self.errors[filename].append(f"id piece {uid} not in filename")
         self.errors[filename].extend(validate_roles(person, "roles", retired))
         self.errors[filename].extend(validate_roles(person, "party"))
+        for party in person.get("party", []):
+            if party["name"] not in self.valid_parties:
+                self.errors[filename].append(f"invalid party {party['name']}")
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         self.person_mapping[person["id"]] = person["name"]

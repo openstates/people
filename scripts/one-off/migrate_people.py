@@ -151,19 +151,20 @@ def process_old_file(filename, metadata):
     new_roles = []
     for session, roles in old_roles.items():
         for role in roles:
-            if role["type"] in ("committee member",
-                                "Minority Floor Leader",
-                                "Majority Floor Leader",
-                                "Majority Caucus Chair",
-                                "Minority Caucus Chair",
-                                "Speaker Pro Tem",
-                                "President Pro Tem",
-                                "Senate President",
-                                "Speaker of the House",
-                                "Minority Whip",
-                                "Majority Whip",
-                                "Lt. Governor",
-                                ) or role.get("committee"):
+            if role["type"] in (
+                "committee member",
+                "Minority Floor Leader",
+                "Majority Floor Leader",
+                "Majority Caucus Chair",
+                "Minority Caucus Chair",
+                "Speaker Pro Tem",
+                "President Pro Tem",
+                "Senate President",
+                "Speaker of the House",
+                "Minority Whip",
+                "Majority Whip",
+                "Lt. Governor",
+            ) or role.get("committee"):
                 continue
             parties.add(role["party"])
             new_roles.append(
@@ -177,13 +178,15 @@ def process_old_file(filename, metadata):
     formatted_roles = []
     for chamber, district, start, end in roles:
         formatted_roles.append(
-            OrderedDict({
-                "district": district,
-                "jurisdiction": jurisdiction_id,
-                "type": chamber,
-                "start_date": f"{start}-01-01",
-                "end_date": f"{end}-12-31",
-            })
+            OrderedDict(
+                {
+                    "district": district,
+                    "jurisdiction": jurisdiction_id,
+                    "type": chamber,
+                    "start_date": f"{start}-01-01",
+                    "end_date": f"{end}-12-31",
+                }
+            )
         )
     leg_obj["roles"] = formatted_roles
 
