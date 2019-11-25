@@ -8,6 +8,16 @@ roles:
   type: lower
   end_date: '2017-04-12'
   end_reason: resigned to take SBA position
+- district: '22'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2018-12-31'
+- district: '4'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2012-12-31'
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=53&session=119&legislator=1735
 contact_details:
@@ -18,3 +28,10 @@ sources:
 image: https://www.azleg.gov/alisImages/MemberPhotos/53leg/House/LOVAS.gif
 given_name: Phil
 family_name: ' Lovas'
+other_identifiers:
+- identifier: ocd-person/811221c5-595c-40ca-8019-82bd2c836a61
+  scheme: openstates
+- identifier: AZL000193
+  scheme: legacy_openstates
+- identifier: AZL000268
+  scheme: legacy_openstates

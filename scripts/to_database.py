@@ -395,10 +395,10 @@ def init_django():  # pragma: no cover
         DATABASES={
             "default": {
                 "ENGINE": "django.contrib.gis.db.backends.postgis",
-                "NAME": os.environ["OCD_DATABASE_NAME"],
-                "USER": os.environ["OCD_DATABASE_USER"],
-                "PASSWORD": os.environ["OCD_DATABASE_PASSWORD"],
-                "HOST": os.environ["OCD_DATABASE_HOST"],
+                "NAME": os.environ["PGDATABASE"],
+                "USER": os.environ["PGUSER"],
+                "PASSWORD": os.environ["PGPASSWORD"],
+                "HOST": os.environ["PGHOST"],
             }
         },
         MIDDLEWARE_CLASSES=(),

@@ -268,6 +268,7 @@ def test_validator_check_https():
     settings = {
         "us": {"upper_seats": 100, "lower_seats": 435},
         "http_whitelist": ["http://bad.example.com"],
+        "parties": [],
     }
     v = Validator("us", settings)
 
@@ -287,6 +288,7 @@ def test_person_summary():
     settings = {
         "us": {"upper_seats": 100, "lower_seats": 435},
         "http_whitelist": ["http://bad.example.com"],
+        "parties": [],
     }
     v = Validator("us", settings)
 
@@ -328,6 +330,7 @@ def test_person_duplicates():
     settings = {
         "us": {"upper_seats": 100, "lower_seats": 435},
         "http_whitelist": ["http://bad.example.com"],
+        "parties": [],
     }
     v = Validator("us", settings)
 
@@ -360,7 +363,7 @@ def test_person_duplicates():
 
 def test_filename_id_test():
     person = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith", "roles": [], "party": []}
-    settings = {"us": {"upper_seats": 100, "lower_seats": 435}}
+    settings = {"us": {"upper_seats": 100, "lower_seats": 435}, "parties": []}
     v = Validator("us", settings)
     v.validate_person(person, "bad-filename")
     for err in v.errors["bad-filename"]:
@@ -380,7 +383,7 @@ def test_validate_org_memberships():
         "classification": "committee",
         "memberships": [],
     }
-    settings = {"us": {"upper_seats": 100, "lower_seats": 435}}
+    settings = {"us": {"upper_seats": 100, "lower_seats": 435}, "parties": []}
     org_filename = "fake-org-" + EXAMPLE_OCD_ORG_ID
     person_filename = "fake-person-" + EXAMPLE_OCD_PERSON_ID
 

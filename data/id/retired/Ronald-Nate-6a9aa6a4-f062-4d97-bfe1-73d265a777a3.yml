@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
   end_date: '2018-11-30'
+- district: '34'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: '2013-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: 2139 Ferris Lane, Rexburg, ID 83440
   email: nater@house.idaho.gov
@@ -15,11 +20,17 @@ contact_details:
   voice: 208-332-1053
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2018&district=34
+- url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=3133
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+- url: http://legislature.idaho.gov/house/membership.cfm
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2018/directory/Nate3133.jpg
 other_identifiers:
 - identifier: IDL000314
+  scheme: legacy_openstates
+- identifier: ocd-person/eeba92b5-9f54-46b7-854f-9ea05d45393f
+  scheme: openstates
+- identifier: IDL000200
   scheme: legacy_openstates
 given_name: Ronald
 family_name: Nate

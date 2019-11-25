@@ -21,7 +21,7 @@ class BadVacancy(Exception):
     pass
 
 
-SUFFIX_RE = re.compile(r"(iii?)|(i?v)|(ed\.?d\.?)|(ph\.?d\.?)|(m\.?d\.?)|([sj]r\.?)", re.I)
+SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)", re.I)
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
 UUID_RE = re.compile(r"^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
@@ -338,6 +338,7 @@ class Validator:
     def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
         self.expected = get_expected_districts(settings[abbr])
+        self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
         self.person_count = 0
@@ -365,6 +366,9 @@ class Validator:
             self.errors[filename].append(f"id piece {uid} not in filename")
         self.errors[filename].extend(validate_roles(person, "roles", retired))
         self.errors[filename].extend(validate_roles(person, "party"))
+        for party in person.get("party", []):
+            if party["name"] not in self.valid_parties:
+                self.errors[filename].append(f"invalid party {party['name']}")
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         self.person_mapping[person["id"]] = person["name"]
