@@ -6,13 +6,13 @@ import django
 from django import conf
 from django.db import transaction
 import click
-# from utils import (
-#     get_data_dir,
-#     get_jurisdiction_id,
-#     get_all_abbreviations,
-#     get_districts,
-#     get_settings,
-# )
+from utils import (
+    get_data_dir,
+    get_jurisdiction_id,
+    get_all_abbreviations,
+    get_districts,
+    get_settings,
+)
 
 def init_django():  # pragma: no cover
     conf.settings.configure(
@@ -27,10 +27,12 @@ def init_django():  # pragma: no cover
         DATABASES={
             "default": {
                 "ENGINE": "django.contrib.gis.db.backends.postgis",
-                "NAME": "openstates",
+                "NAME": "openstatesorg",
                 "USER": "openstates",
                 "PASSWORD": "openstates",
-                "URL": "postgres://openstates:openstates@db/openstatesorg",
+                "HOST": "localhost",
+                # "URL": "postgres://openstates:openstates@db/openstatesorg",
+                "PORT": "5405"
             }
         },
         MIDDLEWARE_CLASSES=(),
@@ -40,10 +42,20 @@ def init_django():  # pragma: no cover
 @click.command()
 @click.argument("session", nargs=-1)
 def archive_leg_to_csv(session):
-    session = session[0]
+    session=session[0]
+    abbr = "nc"
+
     init_django()
-    from opencivicdata.legislative.models import BillSponsorship
-    print("Session:", session)
+    abbreviations = get_all_abbreviations()
+    settings = get_settings()
+    jurisdiction_id = get_jurisdiction_id(abbr)
+    print("jurisdiction_id:", jurisdiction_id, "session:", session)
+    print("\n\n")
+
+    from opencivicdata.legislative.models import Bill
+    bills = Bill.objects.filter(
+        legislative_session__identifier=session)
+    print("Number of votes give session:", len(bills))
 
 
 if __name__ == "__main__":
