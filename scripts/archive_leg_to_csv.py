@@ -54,7 +54,8 @@ def archive_leg_to_csv(session):
 
     from opencivicdata.legislative.models import Bill
     bills = Bill.objects.filter(
-        legislative_session__identifier=session)
+        legislative_session__identifier=session,
+        legislative_session__jurisdiction_id=jurisdiction_id)
     print("Number of votes give session:", len(bills))
 
 
