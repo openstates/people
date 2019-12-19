@@ -40,10 +40,10 @@ def init_django():  # pragma: no cover
     django.setup()
 
 @click.command()
-@click.argument("session", nargs=-1)
-def archive_leg_to_csv(session):
-    session=session[0]
-    abbr = "nc"
+@click.argument("state_abbr", nargs=-1)
+@click.argument("session", nargs=1)
+def archive_leg_to_csv(state_abbr, session):
+    abbr = state_abbr[0]
 
     init_django()
     abbreviations = get_all_abbreviations()
