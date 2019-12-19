@@ -49,14 +49,25 @@ def archive_leg_to_csv(session):
     abbreviations = get_all_abbreviations()
     settings = get_settings()
     jurisdiction_id = get_jurisdiction_id(abbr)
-    print("jurisdiction_id:", jurisdiction_id, "session:", session)
-    print("\n\n")
 
-    from opencivicdata.legislative.models import Bill
+    voter_dictionary = {}
+
+    from opencivicdata.legislative.models import Bill, PersonVote
     bills = Bill.objects.filter(
         legislative_session__identifier=session,
-        legislative_session__jurisdiction_id=jurisdiction_id)
-    print("Number of votes give session:", len(bills))
+        legislative_session__jurisdiction_id=jurisdiction_id).values_list("id", flat=True)
+    for bill in bills:
+        voters = PersonVote.objects.filter(
+            vote_event_id__bill_id=bill
+        )
+        for voter in voters:
+            if voter.voter_name in voter_dictionary:
+                voter_dictionary[voter.voter_name] += 1
+            else:
+                voter_dictionary[voter.voter_name] = 1
+
+    for vname, num_occurances in voter_dictionary.items():
+        print(vname, num_occurances)
 
 
 if __name__ == "__main__":
