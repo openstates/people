@@ -2,6 +2,7 @@
 import os
 # import glob
 # from functools import lru_cache
+import csv
 import django
 from django import conf
 from django.db import transaction
@@ -31,7 +32,6 @@ def init_django():  # pragma: no cover
                 "USER": "openstates",
                 "PASSWORD": "openstates",
                 "HOST": "localhost",
-                # "URL": "postgres://openstates:openstates@db/openstatesorg",
                 "PORT": "5405"
             }
         },
@@ -44,6 +44,7 @@ def init_django():  # pragma: no cover
 @click.argument("session", nargs=1)
 def archive_leg_to_csv(state_abbr, session):
     abbr = state_abbr[0]
+    output_filename = "data/archive_data_legislators/" + abbr + session + "legislators.csv"
 
     init_django()
     abbreviations = get_all_abbreviations()
@@ -66,8 +67,26 @@ def archive_leg_to_csv(state_abbr, session):
             else:
                 voter_dictionary[voter.voter_name] = 1
 
-    for vname, num_occurances in voter_dictionary.items():
-        print(vname, num_occurances)
+    # Writing CSV
+    with open(output_filename, "w") as outf:
+        out = csv.DictWriter(
+            outf,
+            (
+                "name",
+                "jurisdiction",
+                "session",
+                "num_occurances",
+            ),
+        )
+        out.writeheader()
+        for vname, num_occurances in voter_dictionary.items():
+            obj = {
+                "name": vname,
+                "jurisdiction": abbr,
+                "session": session,
+                "num_occurances": num_occurances,
+            }
+            out.writerow(obj)
 
 
 if __name__ == "__main__":
