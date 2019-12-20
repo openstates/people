@@ -67,26 +67,29 @@ def archive_leg_to_csv(state_abbr, session):
             else:
                 voter_dictionary[voter.voter_name] = 1
 
-    # Writing CSV
-    with open(output_filename, "w") as outf:
-        out = csv.DictWriter(
-            outf,
-            (
-                "name",
-                "jurisdiction",
-                "session",
-                "num_occurances",
-            ),
-        )
-        out.writeheader()
-        for vname, num_occurances in voter_dictionary.items():
-            obj = {
-                "name": vname,
-                "jurisdiction": abbr,
-                "session": session,
-                "num_occurances": num_occurances,
-            }
-            out.writerow(obj)
+    if voter_dictionary:
+        # Writing CSV
+        with open(output_filename, "w") as outf:
+            out = csv.DictWriter(
+                outf,
+                (
+                    "name",
+                    "jurisdiction",
+                    "session",
+                    "num_occurances",
+                ),
+            )
+            out.writeheader()
+            for vname, num_occurances in voter_dictionary.items():
+                obj = {
+                    "name": vname,
+                    "jurisdiction": abbr,
+                    "session": session,
+                    "num_occurances": num_occurances,
+                }
+                out.writerow(obj)
+    else:
+        print("Voters not found")
 
 
 if __name__ == "__main__":
