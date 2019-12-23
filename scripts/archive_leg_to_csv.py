@@ -5,7 +5,6 @@ from django import conf
 import click
 from utils import (
     get_jurisdiction_id,
-    get_all_abbreviations,
 )
 
 
