@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 import os
-# import glob
-# from functools import lru_cache
 import csv
 import django
 from django import conf
@@ -47,8 +45,6 @@ def archive_leg_to_csv(state_abbr, session):
     output_filename = "data/archive_data_legislators/" + abbr + session + "legislators.csv"
 
     init_django()
-    abbreviations = get_all_abbreviations()
-    settings = get_settings()
     jurisdiction_id = get_jurisdiction_id(abbr)
 
     voter_dictionary = {}
@@ -90,7 +86,6 @@ def archive_leg_to_csv(state_abbr, session):
                 out.writerow(obj)
     else:
         print("Voters not found")
-
 
 if __name__ == "__main__":
     archive_leg_to_csv()
