@@ -1,17 +1,13 @@
 #!/usr/bin/env python
-import os
 import csv
 import django
 from django import conf
-from django.db import transaction
 import click
 from utils import (
-    get_data_dir,
     get_jurisdiction_id,
     get_all_abbreviations,
-    get_districts,
-    get_settings,
 )
+
 
 def init_django():  # pragma: no cover
     conf.settings.configure(
@@ -36,6 +32,7 @@ def init_django():  # pragma: no cover
         MIDDLEWARE_CLASSES=(),
     )
     django.setup()
+
 
 @click.command()
 @click.argument("state_abbr", nargs=-1)
@@ -86,6 +83,7 @@ def archive_leg_to_csv(state_abbr, session):
                 out.writerow(obj)
     else:
         print("Voters not found")
+
 
 if __name__ == "__main__":
     archive_leg_to_csv()
