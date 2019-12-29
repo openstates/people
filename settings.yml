@@ -67,16 +67,6 @@ fl:
   legislature_name: Florida Legislature
   lower_seats: 120
   upper_seats: 40
-  vacancies:
-    - chamber: lower
-      district: 7
-      vacant_until: 2019-08-01
-    - chamber: lower
-      district: 38
-      vacant_until: 2019-08-01
-    - chamber: lower
-      district: 97
-      vacant_until: 2019-08-01
 ga:
   legislature_name: Georgia General Assembly
   lower_seats: 180
@@ -109,24 +99,10 @@ ky:
   legislature_name: Kentucky General Assembly
   lower_seats: 100
   upper_seats: 38
-  vacancies:
-    - chamber: upper
-      district: 31
-      vacant_until: 2019-08-01
 la:
   legislature_name: Louisiana Legislature
   lower_seats: 105
   upper_seats: 39
-  vacancies:
-    - chamber: lower
-      district: 17
-      vacant_until: 2019-08-01
-    - chamber: lower
-      district: 18
-      vacant_until: 2019-08-01
-    - chamber: lower
-      district: 62
-      vacant_until: 2019-08-01
 ma:
   legislature_name: Massachusetts General Court
   lower_seats: ["Tenth Bristol", "Tenth Essex", "Tenth Hampden", "Tenth Middlesex", "Tenth Norfolk", "Tenth Plymouth", "Tenth Suffolk", "Tenth Worcester", "Eleventh Bristol", "Eleventh Essex", "Eleventh Hampden", "Eleventh Middlesex", "Eleventh Norfolk", "Eleventh Plymouth", "Eleventh Suffolk", "Eleventh Worcester", "Twelfth Bristol", "Twelfth Essex", "Twelfth Hampden", "Twelfth Middlesex", "Twelfth Norfolk", "Twelfth Plymouth", "Twelfth Suffolk", "Twelfth Worcester", "Thirteenth Bristol", "Thirteenth Essex", "Thirteenth Middlesex", "Thirteenth Norfolk", "Thirteenth Suffolk", "Thirteenth Worcester", "Fourteenth Bristol", "Fourteenth Essex", "Fourteenth Middlesex", "Fourteenth Norfolk", "Fourteenth Suffolk", "Fourteenth Worcester", "Fifteenth Essex", "Fifteenth Middlesex", "Fifteenth Norfolk", "Fifteenth Suffolk", "Fifteenth Worcester", "Sixteenth Essex", "Sixteenth Middlesex", "Sixteenth Suffolk", "Sixteenth Worcester", "Seventeenth Essex", "Seventeenth Middlesex", "Seventeenth Suffolk", "Seventeenth Worcester", "Eighteenth Essex", "Eighteenth Middlesex", "Eighteenth Suffolk", "Eighteenth Worcester", "Nineteenth Middlesex", "Nineteenth Suffolk", "First Barnstable", "First Berkshire", "First Bristol", "First Essex", "First Franklin", "First Hampden", "First Hampshire", "First Middlesex", "First Norfolk", "First Plymouth", "First Suffolk", "First Worcester", "Twentieth Middlesex", "Twenty-First Middlesex", "Twenty-Second Middlesex", "Twenty-Third Middlesex", "Twenty-Fourth Middlesex", "Twenty-Fifth Middlesex", "Twenty-Sixth Middlesex", "Twenty-Seventh Middlesex", "Twenty-Eighth Middlesex", "Twenty-Ninth Middlesex", "Second Barnstable", "Second Berkshire", "Second Bristol", "Second Essex", "Second Franklin", "Second Hampden", "Second Hampshire", "Second Middlesex", "Second Norfolk", "Second Plymouth", "Second Suffolk", "Second Worcester", "Thirtieth Middlesex", "Thirty-First Middlesex", "Thirty-Second Middlesex", "Thirty-Third Middlesex", "Thirty-Fourth Middlesex", "Thirty-Fifth Middlesex", "Thirty-Sixth Middlesex", "Thirty-Seventh Middlesex", "Third Barnstable", "Third Berkshire", "Third Bristol", "Third Essex", "Third Hampden", "Third Hampshire", "Third Middlesex", "Third Norfolk", "Third Plymouth", "Third Suffolk", "Third Worcester", "Fourth Barnstable", "Fourth Berkshire", "Fourth Bristol", "Fourth Essex", "Fourth Hampden", "Fourth Middlesex", "Fourth Norfolk", "Fourth Plymouth", "Fourth Suffolk", "Fourth Worcester", "Fifth Barnstable", "Fifth Bristol", "Fifth Essex", "Fifth Hampden", "Fifth Middlesex", "Fifth Norfolk", "Fifth Plymouth", "Fifth Suffolk", "Fifth Worcester", "Sixth Bristol", "Sixth Essex", "Sixth Hampden", "Sixth Middlesex", "Sixth Norfolk", "Sixth Plymouth", "Sixth Suffolk", "Sixth Worcester", "Seventh Bristol", "Seventh Essex", "Seventh Hampden", "Seventh Middlesex", "Seventh Norfolk", "Seventh Plymouth", "Seventh Suffolk", "Seventh Worcester", "Eighth Bristol", "Eighth Essex", "Eighth Hampden", "Eighth Middlesex", "Eighth Norfolk", "Eighth Plymouth", "Eighth Suffolk", "Eighth Worcester", "Ninth Bristol", "Ninth Essex", "Ninth Hampden", "Ninth Middlesex", "Ninth Norfolk", "Ninth Plymouth", "Ninth Suffolk", "Ninth Worcester", "Barnstable, Dukes and Nantucket"]
@@ -350,10 +326,6 @@ mn:
   lower_seats: ['1A', '1B', '2A', '2B', '3A', '3B', '4A', '4B', '5A', '5B', '6A', '6B', '7A', '7B', '8A', '8B', '9A', '9B', '10A', '10B', '11A', '11B', '12A', '12B', '13A', '13B', '14A', '14B', '15A', '15B', '16A', '16B', '17A', '17B', '18A', '18B', '19A', '19B', '20A', '20B', '21A', '21B', '22A', '22B', '23A', '23B', '24A', '24B', '25A', '25B', '26A', '26B', '27A', '27B', '28A', '28B', '29A', '29B', '30A', '30B', '31A', '31B', '32A', '32B', '33A', '33B', '34A', '34B', '35A', '35B', '36A', '36B', '37A', '37B', '38A', '38B', '39A', '39B', '40A', '40B', '41A', '41B', '42A', '42B', '43A', '43B', '44A', '44B', '45A', '45B', '46A', '46B', '47A', '47B', '48A', '48B', '49A', '49B', '50A', '50B', '51A', '51B', '52A', '52B', '53A', '53B', '54A', '54B', '55A', '55B', '56A', '56B', '57A', '57B', '58A', '58B', '59A', '59B', '60A', '60B', '61A', '61B', '62A', '62B', '63A', '63B', '64A', '64B', '65A', '65B', '66A', '66B', '67A', '67B']
   legslature_name: Minnesota State Legislature
   upper_seats: 67
-  vacancies:
-    - chamber: lower
-      district: '11B'
-      vacant_until: 2019-08-01
 mt:
   legislature_name: Montana Legislature
   lower_seats: 100
@@ -428,6 +400,10 @@ pa:
   legislature_name: Pennsylvania General Assembly
   lower_seats: 203
   upper_seats: 50
+  vacancies:
+    - chamber: upper
+      district: 48
+      vacant_until: 2021-01-01
 pr:
   legislature_name: Legislative Assembly of Puerto Rico
   lower_seats: {'1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1, '19': 1, '20': 1, '21': 1, '22': 1, '23': 1, '24': 1, '25': 1, '26': 1, '27': 1, '28': 1, '29': 1, '30': 1, '31': 1, '32': 1, '33': 1, '34': 1, '35': 1, '36': 1, '37': 1, '38': 1, '39': 1, '40': 1, 'At-Large': 11}
@@ -463,16 +439,6 @@ tx:
   legislature_name: Texas Legislature
   lower_seats: 150
   upper_seats: 31
-  vacancies:
-    - chamber: lower
-      district: 79
-      vacant_until: 2019-08-01
-    - chamber: lower
-      district: 125
-      vacant_until: 2019-08-01
-    - chamber: lower
-      district: 145
-      vacant_until: 2019-08-01
 ut:
   legislature_name: Utah State Legislature
   lower_seats: 75
@@ -504,3 +470,19 @@ wy:
   legislature_name: Wyoming State Legislature
   lower_seats: 60
   upper_seats: 30
+parties:
+  - Democratic
+  - Democratic-Farmer-Labor    # MN
+  - Democratic/Progressive     # VT
+  - Independent
+  - Libertarian
+  - Nonpartisan
+  - Partido Independentista Puertorriqueño
+  - Partido Nuevo Progresista
+  - Partido Popular Democrático
+  - Progressive
+  - Progressive/Democratic    # VT
+  - Republican
+  - Green
+  - Republican/Democratic     # VT
+  - Carter County Republican  # TN

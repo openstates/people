@@ -4,6 +4,8 @@
 * name: Full Name.  **required**
 * given_name: First name.
 * family_name: Last name.
+* middle_name: Middle name or initial.
+* suffix: Name Suffix.
 * gender: Male/Female/Other
 * biography: Official biography text.
 * birth_date: Birth date in YYYY-MM-DD format.
@@ -15,6 +17,7 @@
     * instagram: username of official Instagram account
     * facebook: username of official Facebook account
     * legacy_openstates: legacy Open States ID (e.g. NCL000123)
+    * openstates: alternate Open States ID (results from duplicates that have been merged)
 * party: list of parties that the legislator has been a part of, each may have the following fields:
     * name: Name of the party.    **required**
     * start_date

@@ -4,13 +4,19 @@ import json
 import os
 import click
 from collections import defaultdict, OrderedDict
-from utils import (reformat_phone_number, reformat_address, get_data_dir, get_jurisdiction_id,
-                   dump_obj, ocd_uuid)
+from utils import (
+    reformat_phone_number,
+    reformat_address,
+    get_data_dir,
+    get_jurisdiction_id,
+    dump_obj,
+    ocd_uuid,
+)
 
 
 def process_link(link):
-    if not link['note']:
-        del link['note']
+    if not link["note"]:
+        del link["note"]
     return link
 
 
@@ -21,159 +27,161 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
     committees_by_id = {}
 
     # build list of committees
-    for filename in glob.glob(os.path.join(input_dir, 'organization_*.json')):
+    for filename in glob.glob(os.path.join(input_dir, "organization_*.json")):
         with open(filename) as f:
             org = json.load(f)
 
-        if org['classification'] == 'committee':
-            committees_by_id[org['_id']] = process_org(org, jurisdiction_id)
+        if org["classification"] == "committee":
+            committees_by_id[org["_id"]] = process_org(org, jurisdiction_id)
 
     # collect memberships
-    for filename in glob.glob(os.path.join(input_dir, 'membership_*.json')):
+    for filename in glob.glob(os.path.join(input_dir, "membership_*.json")):
         with open(filename) as f:
             membership = json.load(f)
 
-        if membership['organization_id'] in committees_by_id:
-            committees_by_id[membership['organization_id']]['memberships'].append(membership)
+        if membership["organization_id"] in committees_by_id:
+            committees_by_id[membership["organization_id"]]["memberships"].append(membership)
         else:
-            if membership['person_id'].startswith('~'):
+            if membership["person_id"].startswith("~"):
                 raise ValueError(membership)
-            person_memberships[membership['person_id']].append(membership)
+            person_memberships[membership["person_id"]].append(membership)
 
     # process people & store people by ID for committees
-    for filename in glob.glob(os.path.join(input_dir, 'person_*.json')):
+    for filename in glob.glob(os.path.join(input_dir, "person_*.json")):
         with open(filename) as f:
             person = json.load(f)
 
-        scrape_id = person['_id']
-        person['memberships'] = person_memberships[scrape_id]
+        scrape_id = person["_id"]
+        person["memberships"] = person_memberships[scrape_id]
         person = process_person(person, jurisdiction_id)
         people_lookup[scrape_id] = person
-        people_lookup[person['name']] = person
+        people_lookup[person["name"]] = person
 
-        dump_obj(person, output_dir=os.path.join(output_dir, 'people'))
+        dump_obj(person, output_dir=os.path.join(output_dir, "people"))
 
     # resolve committee parents and members and write them out
     for org in committees_by_id.values():
-        if org['parent'].startswith('~'):
-            org['parent'] = json.loads(org['parent'][1:])['classification']
+        if org["parent"].startswith("~"):
+            org["parent"] = json.loads(org["parent"][1:])["classification"]
         else:
             # map scrape ID to ocd-org ID
-            org['parent'] = committees_by_id[org['parent']]['id']
+            org["parent"] = committees_by_id[org["parent"]]["id"]
 
-        org['memberships'] = [process_committee_membership(m, people_lookup)
-                              for m in org['memberships']]
+        org["memberships"] = [
+            process_committee_membership(m, people_lookup) for m in org["memberships"]
+        ]
 
-        dump_obj(org, output_dir=os.path.join(output_dir, 'organizations'))
+        dump_obj(org, output_dir=os.path.join(output_dir, "organizations"))
 
 
 def process_committee_membership(membership, people_lookup):
     result = OrderedDict()
-    if membership['person_id'].startswith('~'):
+    if membership["person_id"].startswith("~"):
         try:
-            result['id'] = people_lookup[membership['person_name']]['id']
+            result["id"] = people_lookup[membership["person_name"]]["id"]
         except KeyError:
             # there are many unresolved people for all sorts of reasons,
             # we'll see them in the lint
             pass
     else:
-        result['id'] = people_lookup[membership['person_id']]['id']
+        result["id"] = people_lookup[membership["person_id"]]["id"]
 
-    result['name'] = membership['person_name']
-    if membership['role'] != 'member':
-        result['role'] = membership['role']
-    if membership['start_date']:
-        result['start_date'] = membership['start_date']
-    if membership['end_date']:
-        result['end_date'] = membership['end_date']
+    result["name"] = membership["person_name"]
+    if membership["role"] != "member":
+        result["role"] = membership["role"]
+    if membership["start_date"]:
+        result["start_date"] = membership["start_date"]
+    if membership["end_date"]:
+        result["end_date"] = membership["end_date"]
     return result
 
 
 def process_person(person, jurisdiction_id):
     optional_keys = (
-        'image',
-        'gender',
-        'biography',
-        'given_name',
-        'family_name',
-        'birth_date',
-        'death_date',
-        'national_identity',
-        'summary',
+        "image",
+        "gender",
+        "biography",
+        "given_name",
+        "family_name",
+        "birth_date",
+        "death_date",
+        "national_identity",
+        "summary",
         # maybe post-process these?
-        'other_names',
+        "other_names",
     )
 
     result = OrderedDict(
-        id=ocd_uuid('person'),
-        name=person['name'],
+        id=ocd_uuid("person"),
+        name=person["name"],
         party=[],
         roles=[],
         contact_details=[],
-        links=[process_link(link) for link in person['links']],
-        sources=[process_link(link) for link in person['sources']],
+        links=[process_link(link) for link in person["links"]],
+        sources=[process_link(link) for link in person["sources"]],
     )
 
     contact_details = defaultdict(lambda: defaultdict(list))
-    for detail in person['contact_details']:
-        value = detail['value']
-        if detail['type'] in ('voice', 'fax'):
+    for detail in person["contact_details"]:
+        value = detail["value"]
+        if detail["type"] in ("voice", "fax"):
             value = reformat_phone_number(value)
-        elif detail['type'] == 'address':
+        elif detail["type"] == "address":
             value = reformat_address(value)
-        contact_details[detail['note']][detail['type']] = value
+        contact_details[detail["note"]][detail["type"]] = value
 
-    result['contact_details'] = [{'note': key, **val} for key, val in contact_details.items()]
+    result["contact_details"] = [{"note": key, **val} for key, val in contact_details.items()]
 
-    for membership in person['memberships']:
-        organization_id = membership['organization_id']
-        if not organization_id.startswith('~'):
+    for membership in person["memberships"]:
+        organization_id = membership["organization_id"]
+        if not organization_id.startswith("~"):
             raise ValueError(organization_id)
         org = json.loads(organization_id[1:])
-        if org['classification'] in ('upper', 'lower', 'legislature'):
-            post = json.loads(membership['post_id'][1:])['label']
-            result['roles'] = [
-                {'type': org['classification'], 'district': str(post),
-                 'jurisdiction': jurisdiction_id}
+        if org["classification"] in ("upper", "lower", "legislature"):
+            post = json.loads(membership["post_id"][1:])["label"]
+            result["roles"] = [
+                {
+                    "type": org["classification"],
+                    "district": str(post),
+                    "jurisdiction": jurisdiction_id,
+                }
             ]
-        elif org['classification'] == 'party':
-            result['party'] = [
-                {'name': org['name']}
-            ]
+        elif org["classification"] == "party":
+            result["party"] = [{"name": org["name"]}]
 
     for key in optional_keys:
         if person.get(key):
             result[key] = person[key]
 
     # promote some extras where appropriate
-    extras = person.get('extras', {}).copy()
-    for key in person.get('extras', {}).keys():
+    extras = person.get("extras", {}).copy()
+    for key in person.get("extras", {}).keys():
         if key in optional_keys:
             result[key] = extras.pop(key)
     if extras:
-        result['extras'] = extras
+        result["extras"] = extras
 
-    if person.get('identifiers'):
-        result['other_identifiers'] = person['identifiers']
+    if person.get("identifiers"):
+        result["other_identifiers"] = person["identifiers"]
 
     return result
 
 
 def process_org(org, jurisdiction_id):
     return OrderedDict(
-        id=ocd_uuid('organization'),
-        name=org['name'],
+        id=ocd_uuid("organization"),
+        name=org["name"],
         jurisdiction=jurisdiction_id,
-        parent=org['parent_id'],
-        classification=org['classification'],
-        links=[process_link(link) for link in org['links']],
-        sources=[process_link(link) for link in org['sources']],
+        parent=org["parent_id"],
+        classification=org["classification"],
+        links=[process_link(link) for link in org["links"]],
+        sources=[process_link(link) for link in org["sources"]],
         memberships=[],
     )
 
 
-@click.command()                # pragma: no cover
-@click.argument('input_dir')
+@click.command()  # pragma: no cover
+@click.argument("input_dir")
 def to_yaml(input_dir):
     """
     Convert pupa scraped JSON in INPUT_DIR to YAML files for this repo.
@@ -183,7 +191,7 @@ def to_yaml(input_dir):
 
     # abbr is last piece of directory name
     abbr = None
-    for piece in input_dir.split('/')[::-1]:
+    for piece in input_dir.split("/")[::-1]:
         if piece:
             abbr = piece
             break
@@ -191,17 +199,17 @@ def to_yaml(input_dir):
     output_dir = get_data_dir(abbr)
     jurisdiction_id = get_jurisdiction_id(abbr)
 
-    output_dir = output_dir.replace('data', 'incoming')
-    assert 'incoming' in output_dir
+    output_dir = output_dir.replace("data", "incoming")
+    assert "incoming" in output_dir
 
-    for dir in ('people', 'organizations'):
+    for dir in ("people", "organizations"):
         try:
             os.makedirs(os.path.join(output_dir, dir))
         except FileExistsError:
-            for file in glob.glob(os.path.join(output_dir, dir, '*.yml')):
+            for file in glob.glob(os.path.join(output_dir, dir, "*.yml")):
                 os.remove(file)
     process_dir(input_dir, output_dir, jurisdiction_id)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     to_yaml()

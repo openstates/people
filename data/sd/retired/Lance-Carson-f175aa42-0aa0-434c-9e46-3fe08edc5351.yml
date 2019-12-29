@@ -7,18 +7,30 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: lower
   end_date: '2018-12-31'
+- district: '20'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: lower
+  start_date: '2009-01-01'
+  end_date: '2014-12-31'
 contact_details:
 - email: Lance.Carson@sdlegislature.gov
   note: Capitol Office
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1461&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=433
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1461&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=433
+- url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=433
 image: https://sdlegislature.gov/inc/img/Legislators/Carson_2017.jpg
 extras:
   occupation: Retired Business Owner
 other_identifiers:
 - identifier: SDL000309
+  scheme: legacy_openstates
+- identifier: ocd-person/c999eb0b-8320-4d09-bca5-5737f4512eff
+  scheme: openstates
+- identifier: SDL000041
   scheme: legacy_openstates
 given_name: Lance
 family_name: Carson

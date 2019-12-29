@@ -7,8 +7,14 @@ import django
 from django import conf
 from django.db import transaction
 import click
-from utils import (get_data_dir, get_jurisdiction_id, get_all_abbreviations, get_districts,
-                   get_settings)
+from utils import (
+    get_data_dir,
+    get_jurisdiction_id,
+    get_all_abbreviations,
+    get_districts,
+    get_settings,
+)
+
 try:
     from yaml import CLoader as Loader
 except ImportError:
@@ -83,73 +89,86 @@ def load_person(data):
     # import has to be here so that Django is set up
     from opencivicdata.core.models import Person, Organization, Post
 
-    fields = dict(id=data['id'],
-                  name=data['name'],
-                  given_name=data.get('given_name', ''),
-                  family_name=data.get('family_name', ''),
-                  gender=data.get('gender', ''),
-                  biography=data.get('biography', ''),
-                  birth_date=data.get('birth_date', ''),
-                  death_date=data.get('death_date', ''),
-                  image=data.get('image', ''),
-                  extras=data.get('extras', {}),
-                  )
-    person, created, updated = get_update_or_create(Person, fields, ['id'])
+    fields = dict(
+        id=data["id"],
+        name=data["name"],
+        given_name=data.get("given_name", ""),
+        family_name=data.get("family_name", ""),
+        gender=data.get("gender", ""),
+        biography=data.get("biography", ""),
+        birth_date=data.get("birth_date", ""),
+        death_date=data.get("death_date", ""),
+        image=data.get("image", ""),
+        extras=data.get("extras", {}),
+    )
+    person, created, updated = get_update_or_create(Person, fields, ["id"])
 
-    updated |= update_subobjects(person, 'other_names', data.get('other_names', []))
-    updated |= update_subobjects(person, 'links', data.get('links', []))
-    updated |= update_subobjects(person, 'sources', data.get('sources', []))
+    updated |= update_subobjects(person, "other_names", data.get("other_names", []))
+    updated |= update_subobjects(person, "links", data.get("links", []))
+    updated |= update_subobjects(person, "sources", data.get("sources", []))
 
     identifiers = []
-    for scheme, value in data.get('ids', {}).items():
-        identifiers.append({'scheme': scheme, 'identifier': value})
-    for identifier in data.get('other_identifiers', []):
+    for scheme, value in data.get("ids", {}).items():
+        identifiers.append({"scheme": scheme, "identifier": value})
+    for identifier in data.get("other_identifiers", []):
         identifiers.append(identifier)
-    updated |= update_subobjects(person, 'identifiers', identifiers)
+    updated |= update_subobjects(person, "identifiers", identifiers)
 
     contact_details = []
-    for cd in data.get('contact_details', []):
-        for type in ('address', 'email', 'voice', 'fax'):
+    for cd in data.get("contact_details", []):
+        for type in ("address", "email", "voice", "fax"):
             if cd.get(type):
-                contact_details.append({'note': cd.get('note', ''),
-                                        'type': type,
-                                        'value': cd[type]})
-    updated |= update_subobjects(person, 'contact_details', contact_details)
+                contact_details.append(
+                    {"note": cd.get("note", ""), "type": type, "value": cd[type]}
+                )
+    updated |= update_subobjects(person, "contact_details", contact_details)
 
     memberships = []
-    for party in data.get('party', []):
+    for party in data.get("party", []):
         try:
-            org = cached_lookup(Organization, classification='party', name=party['name'])
+            org = cached_lookup(Organization, classification="party", name=party["name"])
         except Organization.DoesNotExist:
-            click.secho(f"no such party {party['name']}", fg='red')
+            click.secho(f"no such party {party['name']}", fg="red")
             raise CancelTransaction()
-        memberships.append({'organization': org,
-                            'start_date': party.get('start_date', ''),
-                            'end_date': party.get('end_date', '')})
-    for role in data.get('roles', []):
-        if role['type'] in ('upper', 'lower', 'legislature'):
+        memberships.append(
+            {
+                "organization": org,
+                "start_date": party.get("start_date", ""),
+                "end_date": party.get("end_date", ""),
+            }
+        )
+    for role in data.get("roles", []):
+        if role["type"] in ("upper", "lower", "legislature"):
             try:
-                org = cached_lookup(Organization, classification=role['type'],
-                                    jurisdiction_id=role['jurisdiction'])
-                post = org.posts.get(label=role['district'])
+                org = cached_lookup(
+                    Organization, classification=role["type"], jurisdiction_id=role["jurisdiction"]
+                )
+                post = org.posts.get(label=role["district"])
             except Organization.DoesNotExist:
-                click.secho(f"no such organization {role['jurisdiction']} {role['type']}",
-                            fg='red')
+                click.secho(
+                    f"no such organization {role['jurisdiction']} {role['type']}", fg="red"
+                )
                 raise CancelTransaction()
             except Post.DoesNotExist:
-                click.secho(f"no such post {role}", fg='red')
+                click.secho(f"no such post {role}", fg="red")
                 raise CancelTransaction()
         else:
-            raise ValueError('unsupported role type')
-        memberships.append({'organization': org,
-                            'post': post,
-                            'start_date': role.get('start_date', ''),
-                            'end_date': role.get('end_date', '')})
+            raise ValueError("unsupported role type")
+        memberships.append(
+            {
+                "organization": org,
+                "post": post,
+                "start_date": role.get("start_date", ""),
+                "end_date": role.get("end_date", ""),
+            }
+        )
 
     # note that we don't manager committee memberships here
     updated |= update_subobjects(
-        person, 'memberships', memberships,
-        read_manager=person.memberships.exclude(organization__classification='committee')
+        person,
+        "memberships",
+        memberships,
+        read_manager=person.memberships.exclude(organization__classification="committee"),
     )
 
     return created, updated
@@ -158,44 +177,49 @@ def load_person(data):
 def load_org(data):
     from opencivicdata.core.models import Organization, Person
 
-    parent_id = data['parent']
-    if parent_id.startswith('ocd-organization'):
+    parent_id = data["parent"]
+    if parent_id.startswith("ocd-organization"):
         parent = Organization.objects.get(pk=parent_id)
     else:
-        parent = Organization.objects.get(jurisdiction_id=data['jurisdiction'],
-                                          classification=parent_id)
+        parent = Organization.objects.get(
+            jurisdiction_id=data["jurisdiction"], classification=parent_id
+        )
 
     fields = dict(
-        id=data['id'],
-        name=data['name'],
-        jurisdiction_id=data['jurisdiction'],
-        classification=data['classification'],
-        founding_date=data.get('founding_date', ''),
-        dissolution_date=data.get('dissolution_date', ''),
+        id=data["id"],
+        name=data["name"],
+        jurisdiction_id=data["jurisdiction"],
+        classification=data["classification"],
+        founding_date=data.get("founding_date", ""),
+        dissolution_date=data.get("dissolution_date", ""),
         parent=parent,
     )
-    org, created, updated = get_update_or_create(Organization, fields, ['id'])
+    org, created, updated = get_update_or_create(Organization, fields, ["id"])
 
-    updated |= update_subobjects(org, 'links', data.get('links', []))
-    updated |= update_subobjects(org, 'sources', data.get('sources', []))
+    updated |= update_subobjects(org, "links", data.get("links", []))
+    updated |= update_subobjects(org, "sources", data.get("sources", []))
 
     memberships = []
-    for role in data.get('memberships', []):
-        if role.get('id'):
+    for role in data.get("memberships", []):
+        if role.get("id"):
             try:
-                person = Person.objects.get(pk=role['id'])
+                person = Person.objects.get(pk=role["id"])
             except Person.DoesNotExist:
-                click.secho(f"no such person {role['id']}", fg='red')
+                click.secho(f"no such person {role['id']}", fg="red")
                 raise CancelTransaction()
         else:
             person = None
 
-        memberships.append({'person': person,
-                            'person_name': role['name'],
-                            'role': role.get('role', 'member'),
-                            'start_date': role.get('start_date', ''),
-                            'end_date': role.get('end_date', '')})
-    updated |= update_subobjects(org, 'memberships', memberships)
+        memberships.append(
+            {
+                "person": person,
+                "person_name": role["name"],
+                "role": role.get("role", "member"),
+                "start_date": role.get("start_date", ""),
+                "end_date": role.get("end_date", ""),
+            }
+        )
+    updated |= update_subobjects(org, "memberships", memberships)
 
     return created, updated
 
@@ -207,9 +231,10 @@ def sort_organizations(orgs):
 
     while orgs:
         for org, filename in list(orgs):
-            if ((org['parent'].startswith('ocd-organization') and org['parent'] in seen) or
-                    not org['parent'].startswith('ocd-organization')):
-                seen.add(org['id'])
+            if (org["parent"].startswith("ocd-organization") and org["parent"] in seen) or not org[
+                "parent"
+            ].startswith("ocd-organization"):
+                seen.add(org["id"])
                 order.append((org, filename))
                 orgs.remove((org, filename))
 
@@ -221,21 +246,21 @@ def sort_organizations(orgs):
 
 def get_division_id_for_role(settings, division_id, chamber, label):
     # if there's an override, use it
-    overrides = settings.get(chamber + '_division_ids')
+    overrides = settings.get(chamber + "_division_ids")
     if overrides:
         return overrides[label]
 
     # default is parent/sld[ul]:prefix
-    prefix = 'sldl' if chamber == 'lower' else 'sldu'
-    slug = label.lower().replace(' ', '_')
-    return f'{division_id}/{prefix}:{slug}'
+    prefix = "sldl" if chamber == "lower" else "sldu"
+    slug = label.lower().replace(" ", "_")
+    return f"{division_id}/{prefix}:{slug}"
 
 
 def _echo_org_status(org, created, updated):
     if created:
-        click.secho(f'{org} created', fg='green')
+        click.secho(f"{org} created", fg="green")
     elif updated:
-        click.secho(f'{org} updated', fg='yellow')
+        click.secho(f"{org} updated", fg="yellow")
 
 
 def create_posts(jurisdiction_id, settings):
@@ -246,46 +271,55 @@ def create_posts(jurisdiction_id, settings):
 
     # create remaining orgs & add posts
     for chamber in districts:
-        org = Organization.objects.get(jurisdiction_id=jurisdiction_id,
-                                       classification=chamber)
-        if chamber != 'legislature':
+        org = Organization.objects.get(jurisdiction_id=jurisdiction_id, classification=chamber)
+        if chamber != "legislature":
             # check for name overrides
-            title = settings.get(chamber + '_title')
+            title = settings.get(chamber + "_title")
             if not title:
-                title = 'Senator' if chamber == 'upper' else 'Representative'
+                title = "Senator" if chamber == "upper" else "Representative"
         else:
-            title = settings['legislature_title']
+            title = settings["legislature_title"]
 
         # add posts to org
-        posts = [{'label': label,
-                  'role': title,
-                  'division_id': get_division_id_for_role(settings, division_id, chamber, label),
-                  'maximum_memberships': maximum,
-                  }
-                 for label, maximum in districts[chamber].items()]
-        updated = update_subobjects(org, 'posts', posts)
+        posts = [
+            {
+                "label": label,
+                "role": title,
+                "division_id": get_division_id_for_role(settings, division_id, chamber, label),
+                "maximum_memberships": maximum,
+            }
+            for label, maximum in districts[chamber].items()
+        ]
+        updated = update_subobjects(org, "posts", posts)
         if updated:
-            click.secho(f'updated {org} posts', fg='yellow')
+            click.secho(f"updated {org} posts", fg="yellow")
 
 
 def load_directory(files, type, jurisdiction_id, purge):
     ids = set()
+    merged = {}
     created_count = 0
     updated_count = 0
 
-    if type == 'person':
+    if type == "person":
         from opencivicdata.core.models import Person
-        existing_ids = set(Person.objects.filter(
-            memberships__organization__jurisdiction_id=jurisdiction_id
-        ).values_list('id', flat=True))
+        from opencivicdata.legislative.models import BillSponsorship
+
+        existing_ids = set(
+            Person.objects.filter(
+                memberships__organization__jurisdiction_id=jurisdiction_id
+            ).values_list("id", flat=True)
+        )
         ModelCls = Person
         load_func = load_person
-    elif type == 'organization':
+    elif type == "organization":
         from opencivicdata.core.models import Organization
-        existing_ids = set(Organization.objects.filter(
-            jurisdiction_id=jurisdiction_id,
-            classification='committee',
-        ).values_list('id', flat=True))
+
+        existing_ids = set(
+            Organization.objects.filter(
+                jurisdiction_id=jurisdiction_id, classification="committee"
+            ).values_list("id", flat=True)
+        )
         ModelCls = Organization
         load_func = load_org
     else:
@@ -297,51 +331,74 @@ def load_directory(files, type, jurisdiction_id, purge):
             data = yaml.load(f, Loader=Loader)
             all_data.append((data, filename))
 
-    if type == 'organization':
+    if type == "organization":
         all_data = sort_organizations(all_data)
 
     for data, filename in all_data:
-        ids.add(data['id'])
+        ids.add(data["id"])
         created, updated = load_func(data)
 
         if created:
-            click.secho(f'created {type} from {filename}', fg='cyan', bold=True)
+            click.secho(f"created {type} from {filename}", fg="cyan", bold=True)
             created_count += 1
         elif updated:
-            click.secho(f'updated {type} from {filename}', fg='cyan')
+            click.secho(f"updated {type} from {filename}", fg="cyan")
             updated_count += 1
 
     missing_ids = existing_ids - ids
+
+    # check if missing ids are in need of a merge
+    for missing_id in missing_ids:
+        try:
+            found = ModelCls.objects.get(
+                identifiers__identifier=missing_id, identifiers__scheme="openstates"
+            )
+            merged[missing_id] = found.id
+        except ModelCls.DoesNotExist:
+            pass
+
+    if merged:
+        click.secho(f"{len(merged)} removed via merge", fg="yellow")
+        for old, new in merged.items():
+            click.secho(f"   {old} => {new}", fg="yellow")
+            BillSponsorship.objects.filter(person_id=old).update(person_id=new)
+            ModelCls.objects.filter(id=old).delete()
+            missing_ids.remove(old)
+
+    # ids that are still missing would need to be purged
     if missing_ids and not purge:
-        click.secho(f'{len(missing_ids)} went missing, run with --purge to remove',
-                    fg='red')
+        click.secho(f"{len(missing_ids)} went missing, run with --purge to remove", fg="red")
         for id in missing_ids:
-            click.secho(f'  {id}')
+            mobj = ModelCls.objects.get(pk=id)
+            click.secho(f"  {id}: {mobj}")
         raise CancelTransaction()
     elif missing_ids and purge:
-        click.secho(f'{len(missing_ids)} purged', fg='yellow')
+        click.secho(f"{len(missing_ids)} purged", fg="yellow")
         ModelCls.objects.filter(id__in=missing_ids).delete()
 
-    click.secho(f'processed {len(ids)} {type} files, {created_count} created, '
-                f'{updated_count} updated', fg='green')
+    click.secho(
+        f"processed {len(ids)} {type} files, {created_count} created, " f"{updated_count} updated",
+        fg="green",
+    )
 
 
-def init_django():      # pragma: no cover
+def init_django():  # pragma: no cover
     conf.settings.configure(
         conf.global_settings,
-        SECRET_KEY='not-important',
+        SECRET_KEY="not-important",
         DEBUG=False,
         INSTALLED_APPS=(
-             'django.contrib.contenttypes',
-             'opencivicdata.core.apps.BaseConfig',
+            "django.contrib.contenttypes",
+            "opencivicdata.core.apps.BaseConfig",
+            "opencivicdata.legislative.apps.BaseConfig",
         ),
         DATABASES={
-            'default': {
-                'ENGINE': 'django.contrib.gis.db.backends.postgis',
-                'NAME': os.environ['OCD_DATABASE_NAME'],
-                'USER': os.environ['OCD_DATABASE_USER'],
-                'PASSWORD': os.environ['OCD_DATABASE_PASSWORD'],
-                'HOST': os.environ['OCD_DATABASE_HOST'],
+            "default": {
+                "ENGINE": "django.contrib.gis.db.backends.postgis",
+                "NAME": os.environ["PGDATABASE"],
+                "USER": os.environ["PGUSER"],
+                "PASSWORD": os.environ["PGPASSWORD"],
+                "HOST": os.environ["PGHOST"],
             }
         },
         MIDDLEWARE_CLASSES=(),
@@ -350,11 +407,15 @@ def init_django():      # pragma: no cover
 
 
 @click.command()
-@click.argument('abbreviations', nargs=-1)
-@click.option('--purge/--no-purge', default=False,
-              help="Purge all legislators from DB that aren't in YAML.")
-@click.option('--safe/--no-safe', default=False,
-              help="Operate in safe mode, no changes will be written to database.")
+@click.argument("abbreviations", nargs=-1)
+@click.option(
+    "--purge/--no-purge", default=False, help="Purge all legislators from DB that aren't in YAML."
+)
+@click.option(
+    "--safe/--no-safe",
+    default=False,
+    help="Operate in safe mode, no changes will be written to database.",
+)
 def to_database(abbreviations, purge, safe):
     """
     Sync YAML files to DB.
@@ -367,30 +428,31 @@ def to_database(abbreviations, purge, safe):
     settings = get_settings()
 
     for abbr in abbreviations:
-        click.secho('==== {} ===='.format(abbr), bold=True)
+        click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
 
-        person_files = (glob.glob(os.path.join(directory, 'people/*.yml')) +
-                        glob.glob(os.path.join(directory, 'retired/*.yml')))
-        committee_files = glob.glob(os.path.join(directory, 'organizations/*.yml'))
+        person_files = glob.glob(os.path.join(directory, "people/*.yml")) + glob.glob(
+            os.path.join(directory, "retired/*.yml")
+        )
+        committee_files = glob.glob(os.path.join(directory, "organizations/*.yml"))
 
         if safe:
-            click.secho('running in safe mode, no changes will be made', fg='magenta')
+            click.secho("running in safe mode, no changes will be made", fg="magenta")
 
         state_settings = settings[abbr]
 
         try:
             with transaction.atomic():
                 create_posts(jurisdiction_id, state_settings)
-                load_directory(person_files, 'person', jurisdiction_id, purge=purge)
-                load_directory(committee_files, 'organization', jurisdiction_id, purge=purge)
+                load_directory(person_files, "person", jurisdiction_id, purge=purge)
+                load_directory(committee_files, "organization", jurisdiction_id, purge=purge)
                 if safe:
-                    click.secho('ran in safe mode, no changes were made', fg='magenta')
+                    click.secho("ran in safe mode, no changes were made", fg="magenta")
                     raise CancelTransaction()
         except CancelTransaction:
             pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     to_database()

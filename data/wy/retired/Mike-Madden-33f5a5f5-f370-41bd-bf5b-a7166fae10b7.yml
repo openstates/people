@@ -7,6 +7,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   type: lower
   end_date: '2019-01-06'
+- district: '40'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  type: lower
+  start_date: '2011-01-01'
+  end_date: '2016-12-31'
 contact_details:
 - address: 63 Langdon Road, Buffalo WY 82834
   email: Mike.Madden@wyoleg.gov
@@ -14,8 +19,11 @@ contact_details:
   voice: 307-620-9065
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/473
+- url: http://legisweb.state.wy.us/LegislatorSummary/LegDetail.aspx?LegID=473
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/473
+- url: http://legisweb.state.wy.us/LegislatorSummary/LegislatorList.aspx?strHouse=H&strStatus=N
+- url: http://legisweb.state.wy.us/LegislatorSummary/LegDetail.aspx?LegID=473
 image: http://wyoleg.gov/LegislatorSummary/Photos/MaddenMH40.jpg
 birth_date: '1943-09-13'
 given_name: Mike
@@ -41,3 +49,7 @@ extras:
 other_identifiers:
 - identifier: WYL000167
   scheme: legacy_openstates
+- identifier: WYL000068
+  scheme: legacy_openstates
+- identifier: ocd-person/f3492c2f-f377-4ddd-a46b-bbf085b36e42
+  scheme: openstates
