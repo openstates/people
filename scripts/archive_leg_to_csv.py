@@ -5,17 +5,13 @@ from utils import (
     get_jurisdiction_id,
     init_django,
 )
+init_django()
+from opencivicdata.legislative.models import LegislativeSession, Bill, PersonVote
 
+def archive_leg_to_csv(state_abbr=None, session=None):
+    output_filename = "data/archive_data_legislators/" + state_abbr + session + "legislators.csv"
 
-@click.command()
-@click.argument("state_abbr", nargs=-1)
-@click.argument("session", nargs=1)
-def archive_leg_to_csv(state_abbr, session):
-    abbr = state_abbr[0]
-    output_filename = "data/archive_data_legislators/" + abbr + session + "legislators.csv"
-
-    init_django()
-    jurisdiction_id = get_jurisdiction_id(abbr)
+    jurisdiction_id = get_jurisdiction_id(state_abbr)
 
     voter_dictionary = {}
 
@@ -49,14 +45,32 @@ def archive_leg_to_csv(state_abbr, session):
             for vname, num_occurances in voter_dictionary.items():
                 obj = {
                     "name": vname,
-                    "jurisdiction": abbr,
+                    "jurisdiction": state_abbr,
                     "session": session,
                     "num_occurances": num_occurances,
                 }
                 out.writerow(obj)
     else:
-        print("Voters not found")
+        print("Voters not found in session", session)
+
+
+@click.command()
+@click.argument("state_abbr", nargs=1)
+@click.argument("session", nargs=1, required=False)
+def determine_session(state_abbr=None, session=None):
+
+    print("State:", state_abbr, "Session:", session)
+
+    jurisdiction_id = get_jurisdiction_id(state_abbr)
+
+    if session:
+        archive_leg_to_csv(state_abbr, session)
+    else:
+        sessions = LegislativeSession.objects.filter(
+            jurisdiction_id=jurisdiction_id).values_list("identifier",flat=True)
+        for session in sessions:
+            archive_leg_to_csv(state_abbr, session)
 
 
 if __name__ == "__main__":
-    archive_leg_to_csv()
+    determine_session()
