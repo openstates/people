@@ -5,6 +5,8 @@ import uuid
 import datetime
 import yaml
 import yamlordereddictloader
+import django
+from django import conf
 from collections import defaultdict
 from yaml.representer import Representer
 
@@ -121,3 +123,27 @@ def get_districts(settings):
         else:  # pragma: no cover
             raise ValueError(seats)
     return expected
+
+def init_django():  # pragma: no cover
+    conf.settings.configure(
+        conf.global_settings,
+        SECRET_KEY="not-important",
+        DEBUG=False,
+        INSTALLED_APPS=(
+            "django.contrib.contenttypes",
+            "opencivicdata.core.apps.BaseConfig",
+            "opencivicdata.legislative.apps.BaseConfig",
+        ),
+        DATABASES={
+            "default": {
+                "ENGINE": "django.contrib.gis.db.backends.postgis",
+                "NAME": "openstatesorg",
+                "USER": "openstates",
+                "PASSWORD": "openstates",
+                "HOST": "localhost",
+                "PORT": "5405"
+            }
+        },
+        MIDDLEWARE_CLASSES=(),
+    )
+    django.setup()

@@ -1,36 +1,10 @@
 #!/usr/bin/env python
 import csv
-import django
-from django import conf
 import click
 from utils import (
     get_jurisdiction_id,
+    init_django,
 )
-
-
-def init_django():  # pragma: no cover
-    conf.settings.configure(
-        conf.global_settings,
-        SECRET_KEY="not-important",
-        DEBUG=False,
-        INSTALLED_APPS=(
-            "django.contrib.contenttypes",
-            "opencivicdata.core.apps.BaseConfig",
-            "opencivicdata.legislative.apps.BaseConfig",
-        ),
-        DATABASES={
-            "default": {
-                "ENGINE": "django.contrib.gis.db.backends.postgis",
-                "NAME": "openstatesorg",
-                "USER": "openstates",
-                "PASSWORD": "openstates",
-                "HOST": "localhost",
-                "PORT": "5405"
-            }
-        },
-        MIDDLEWARE_CLASSES=(),
-    )
-    django.setup()
 
 
 @click.command()
