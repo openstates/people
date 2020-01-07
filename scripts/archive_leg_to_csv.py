@@ -1,13 +1,16 @@
 #!/usr/bin/env python
-import csv
-import click
+"""Script to create CSVs of legislators given a state and session"""
 from utils import (
     get_jurisdiction_id,
     init_django,
 )
+import csv
+import click
 init_django()
+
 from opencivicdata.legislative.models import LegislativeSession, Bill, PersonVote
 from collections import Counter
+
 
 def archive_leg_to_csv(state_abbr=None, session=None):
     output_filename = "data/archive_data_legislators/" + state_abbr + session + "legislators.csv"
@@ -57,15 +60,13 @@ def archive_leg_to_csv(state_abbr=None, session=None):
 @click.argument("session", nargs=1, required=False)
 def determine_session(state_abbr=None, session=None):
 
-    print("State:", state_abbr, "Session:", session)
-
     jurisdiction_id = get_jurisdiction_id(state_abbr)
 
     if session:
         archive_leg_to_csv(state_abbr, session)
     else:
         sessions = LegislativeSession.objects.filter(
-            jurisdiction_id=jurisdiction_id).values_list("identifier",flat=True)
+            jurisdiction_id=jurisdiction_id).values_list("identifier", flat=True)
         for session in sessions:
             archive_leg_to_csv(state_abbr, session)
 
