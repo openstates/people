@@ -6,17 +6,28 @@ roles:
 - district: '4'
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   type: lower
+  end_date: '2019-12-31'
+- district: '40'
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  type: upper
+  end_date: '2019-12-31'
 contact_details:
 - address: 851 French Moore Jr. Blvd.;Suite 178;Abingdon, Virginia 24210
   email: DelTPillion@house.virginia.gov
   note: District Office
   voice: 276-220-1209
+- address: 851 French Moore Jr. Blvd.;Suite 178;Abingdon, Virginia 24210
+  note: District Office
+  voice: 276-220-1209
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H270
+- url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S111
 sources:
 - url: http://lis.virginia.gov/191/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H270
-image: http://memdata.virginiageneralassembly.gov/images/display_image/H0270
+- url: http://lis.virginia.gov/201/mbr/MBR.HTM
+- url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S111
+image: https://apps.lis.virginia.gov/senatepics/newbiopics/Pillion40.jpg
 other_identifiers:
 - identifier: VAL000224
   scheme: legacy_openstates
