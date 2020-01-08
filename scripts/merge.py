@@ -4,6 +4,7 @@ import os
 import glob
 import click
 from utils import get_filename, get_data_dir, load_yaml, dump_obj
+from retire import retire_person, move_file
 
 
 class Append:
@@ -84,14 +85,13 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
     return changes
 
 
-def directory_merge(abbr, existing_people, new_people):
-    id_to_new_filename = {}
-    unmatched = set()
+def incoming_merge(abbr, existing_people, new_people):
+    unmatched = []
 
     # find candidate(s) for each new person
     for new in new_people:
-        id_to_new_filename[new["id"]] = get_filename(new)
         matched = False
+        role_matches = []
 
         for existing in existing_people:
             name_match = new["name"] == existing["name"]
@@ -107,20 +107,43 @@ def directory_merge(abbr, existing_people, new_people):
                 matched = interactive_merge(abbr, existing, new, auto=True)
             elif name_match or role_match:
                 matched = interactive_merge(abbr, existing, new, auto=False)
+                if not matched and role_match:
+                    retire(abbr, existing, new)
 
             if matched:
                 break
+
+            # if we haven't matched and this was a role match, save this for later
+            if role_match:
+                role_matches.append(existing)
         else:
             # not matched
-            unmatched.add(new["id"])
+            unmatched.append((new, role_matches))
 
-    click.secho(f"{len(unmatched)} were unmatched")
-    for id in unmatched:
-        fname = id_to_new_filename[id]
-        oldfname = f"incoming/{abbr}/people/{fname}".format(fname)
-        newfname = f"data/{abbr}/people/{fname}".format(fname)
-        click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
-        os.rename(oldfname, newfname)
+    return unmatched
+
+
+def copy_new_incoming(abbr, new):
+    fname = get_filename(new)
+    oldfname = f"incoming/{abbr}/people/{fname}".format(fname)
+    newfname = f"data/{abbr}/people/{fname}".format(fname)
+    click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
+    os.rename(oldfname, newfname)
+
+
+def retire(abbr, existing, new):
+    if not click.confirm(f"retire {existing['name']} in favor of {new['name']}?"):
+        return False
+
+    value = click.prompt("Enter retirement date YYYY-MM-DD")
+    # copy new
+    copy_new_incoming(abbr, new)
+    # retire
+    person, num = retire_person(existing, value)
+    fname = get_filename(existing)
+    fname = f"data/{abbr}/people/{fname}".format(fname)
+    dump_obj(person, filename=fname)
+    move_file(fname)
 
 
 def interactive_merge(abbr, old, new, auto):
@@ -230,7 +253,8 @@ def entrypoint(incoming, old, new):
             f"analyzing {len(existing_people)} existing people and {len(new_people)} incoming"
         )
 
-        directory_merge(abbr, existing_people, new_people)
+        unmatched = incoming_merge(abbr, existing_people, new_people)
+        click.secho(f"{len(unmatched)} were unmatched")
 
     if old and new:
         with open(old) as f:
