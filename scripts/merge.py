@@ -54,7 +54,7 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
             if val1 and not val2:
                 continue
             elif val2 and not val1:
-                changes.ppend(Replace(key_name, val1, val2))
+                changes.append(Replace(key_name, val1, val2))
             else:
                 # both have elements, append new to old, leave old intact
                 for item in val2:
