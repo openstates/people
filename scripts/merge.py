@@ -91,6 +91,7 @@ def directory_merge(abbr, existing_people, new_people):
     # find candidate(s) for each new person
     for new in new_people:
         id_to_new_filename[new["id"]] = get_filename(new)
+        matched = False
 
         for existing in existing_people:
             name_match = new["name"] == existing["name"]
@@ -102,14 +103,16 @@ def directory_merge(abbr, existing_people, new_people):
 
             # there is one very specific case that this fails in, if someone is beaten
             # by someone with the exact same name, that'll need to be caught manually
-            matched = False
             if name_match and role_match:
                 matched = interactive_merge(abbr, existing, new, auto=True)
             elif name_match or role_match:
                 matched = interactive_merge(abbr, existing, new, auto=False)
 
-            if not matched:
-                unmatched.add(new["id"])
+            if matched:
+                break
+        else:
+            # not matched
+            unmatched.add(new["id"])
 
     click.secho(f"{len(unmatched)} were unmatched")
     for id in unmatched:
@@ -142,16 +145,17 @@ def interactive_merge(abbr, old, new, auto):
         else:
             click.echo("    " + str(change))
 
-    ch = "~"
-    while ch not in "msa":
-        click.secho("(m)erge? (s)kip? (a)bort?", bold=True)
-        ch = click.getchar()
-        if ch == "a":
-            raise SystemExit(-1)
-        elif ch == "m":
-            pass
-        elif ch == "s":
-            return False
+    if not auto:
+        ch = "~"
+        while ch not in "msa":
+            click.secho("(m)erge? (s)kip? (a)bort?", bold=True)
+            ch = click.getchar()
+            if ch == "a":
+                raise SystemExit(-1)
+            elif ch == "m":
+                pass
+            elif ch == "s":
+                return False
     merged = merge_people(old, new, keep_both_ids=False)
     dump_obj(merged, filename=oldfname)
     click.secho(" merged.", fg="green")
