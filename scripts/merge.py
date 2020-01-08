@@ -93,6 +93,7 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
             name_match = new["name"] == existing["name"]
             role_match = False
             for role in existing["roles"]:
+                role.pop("start_date", None)
                 if new["roles"][0] == role:
                     role_match = True
                     break
