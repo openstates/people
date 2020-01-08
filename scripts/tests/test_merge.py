@@ -1,10 +1,5 @@
 import pytest
-from merge import (
-    compute_merge,
-    Append,
-    Replace,
-    merge_people,
-)
+from merge import compute_merge, Append, Replace, merge_people
 
 
 @pytest.mark.parametrize(
@@ -47,11 +42,7 @@ def test_compute_merge_nested(a, b, output):
         # no errors - just different order
         ({"a": [{"b": 1}, {"c": 2}]}, {"a": [{"c": 2}, {"b": 1}]}, []),
         # extra item left
-        (
-            {"a": [{"b": 1}, {"c": 2}, {"d": 3}]},
-            {"a": [{"b": 1}, {"c": 2}]},
-            [],
-        ),
+        ({"a": [{"b": 1}, {"c": 2}, {"d": 3}]}, {"a": [{"b": 1}, {"c": 2}]}, []),
         # extra item right
         (
             {"a": [{"b": 1}, {"c": 2}]},
@@ -82,7 +73,11 @@ def test_compute_merge_list(a, b, output):
             {"name": "Anna", "birth_date": "1980"},
         ),
         # special: name field differs
-        ({"name": "Bob"}, {"name": "Robert"}, {"name": "Robert", "other_names": [{"name": "Bob"}]}),
+        (
+            {"name": "Bob"},
+            {"name": "Robert"},
+            {"name": "Robert", "other_names": [{"name": "Bob"}]},
+        ),
     ],
 )
 def test_simple_merge(old, new, expected):

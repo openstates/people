@@ -13,10 +13,7 @@ class Append:
         self.list_item = list_item
 
     def __eq__(self, other):
-        return (
-            self.key_name == other.key_name
-            and self.list_item == other.list_item
-        )
+        return self.key_name == other.key_name and self.list_item == other.list_item
 
     def __str__(self):
         return f"{self.key_name}: append {dict(self.list_item)}"
@@ -62,8 +59,9 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
         elif key == "id":
             if val1 != val2 and keep_both_ids:
                 # old id stays as id: to keep things sane
-                changes.append(Append("other_identifiers", {"scheme": "openstates",
-                                                            "identifier": val2}))
+                changes.append(
+                    Append("other_identifiers", {"scheme": "openstates", "identifier": val2})
+                )
         elif key == "name":
             if val1 != val2:
                 # new name becomes name, but old name goes into other_names
@@ -93,7 +91,9 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
                     role_match = True
                     break
             if name_match or role_match:
-                matched = interactive_merge(abbr, existing, new, name_match, role_match, retirement)
+                matched = interactive_merge(
+                    abbr, existing, new, name_match, role_match, retirement
+                )
 
             if matched:
                 break
