@@ -100,15 +100,8 @@ def incoming_merge(abbr, existing_people, new_people):
                 if new["roles"][0] == role:
                     role_match = True
                     break
-
-            # there is one very specific case that this fails in, if someone is beaten
-            # by someone with the exact same name, that'll need to be caught manually
-            if name_match and role_match:
-                matched = interactive_merge(abbr, existing, new, auto=True)
-            elif name_match or role_match:
-                matched = interactive_merge(abbr, existing, new, auto=False)
-                if not matched and role_match:
-                    retire(abbr, existing, new)
+            if name_match or role_match:
+                matched = interactive_merge(abbr, existing, new, name_match, role_match)
 
             if matched:
                 break
@@ -132,12 +125,7 @@ def copy_new_incoming(abbr, new):
 
 
 def retire(abbr, existing, new):
-    if not click.confirm(f"retire {existing['name']} in favor of {new['name']}?"):
-        return False
-
     value = click.prompt("Enter retirement date YYYY-MM-DD")
-    # copy new
-    copy_new_incoming(abbr, new)
     # retire
     person, num = retire_person(existing, value)
     fname = get_filename(existing)
@@ -146,7 +134,7 @@ def retire(abbr, existing, new):
     move_file(fname)
 
 
-def interactive_merge(abbr, old, new, auto):
+def interactive_merge(abbr, old, new, name_match, role_match):
     """
     returns True iff a merge was done
     """
@@ -163,26 +151,41 @@ def interactive_merge(abbr, old, new, auto):
         return True
 
     for change in changes:
-        if change.key_name in ("name", "roles"):
+        if change.key_name == "name" or change.key_name == "roles":
             click.secho("    " + str(change), fg="red", bold=True)
         else:
             click.echo("    " + str(change))
 
-    if not auto:
-        ch = "~"
-        while ch not in "msa":
-            click.secho("(m)erge? (s)kip? (a)bort?", bold=True)
-            ch = click.getchar()
-            if ch == "a":
-                raise SystemExit(-1)
-            elif ch == "m":
-                pass
-            elif ch == "s":
-                return False
-    merged = merge_people(old, new, keep_both_ids=False)
-    dump_obj(merged, filename=oldfname)
-    click.secho(" merged.", fg="green")
-    os.remove(newfname)
+    ch = "~"
+    if name_match and role_match:
+        choices = "m"
+        # automatically pick merge
+        ch = "m"
+        # there is one very specific case that this fails in, if someone is beaten
+        # by someone with the exact same name, that'll need to be caught manually
+    elif name_match:
+        choices = "m"
+        text = "(m)erge?"
+    elif role_match:
+        choices = "r"
+        text = f"(m)erge? (r)etire {old['name']}"
+
+    while ch not in (choices + "sa"):
+        click.secho(text + " (s)kip? (a)bort?", bold=True)
+        ch = click.getchar()
+        if ch == "a":
+            raise SystemExit(-1)
+        elif ch == "m":
+            merged = merge_people(old, new, keep_both_ids=False)
+            dump_obj(merged, filename=oldfname)
+            click.secho(" merged.", fg="green")
+            os.remove(newfname)
+        elif ch == "r":
+            copy_new_incoming(abbr, new)
+            retire(abbr, old, new)
+        elif ch == "s":
+            return False
+
     return True
 
 
