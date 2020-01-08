@@ -18,6 +18,9 @@ class Append:
     def __str__(self):
         return f"{self.key_name}: append {dict(self.list_item)}"
 
+    def __repr__(self):
+        return f"Append({self.key_name}, {self.list_item})"
+
 
 class Replace:
     def __init__(self, key_name, value_one, value_two):
@@ -34,6 +37,9 @@ class Replace:
 
     def __str__(self):
         return f"{self.key_name}: {self.value_one} => {self.value_two}"
+
+    def __repr__(self):
+        return f"Append({self.key_name}, {self.value_one}, {self.value_two})"
 
 
 def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):

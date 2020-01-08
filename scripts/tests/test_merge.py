@@ -56,6 +56,31 @@ def test_compute_merge_list(a, b, output):
 
 
 @pytest.mark.parametrize(
+    "a, b, keep_both, output",
+    [
+        # discard id
+        ({"id": "1"}, {"id": "2"}, False, []),
+        # keep id
+        (
+            {"id": "1"},
+            {"id": "2"},
+            True,
+            [Append("other_identifiers", {"identifier": "2", "scheme": "openstates"})],
+        ),
+        # append name
+        (
+            {"name": "A"},
+            {"name": "B"},
+            True,
+            [Append("other_names", {"name": "A"}), Replace("name", "A", "B")],
+        ),
+    ],
+)
+def test_compute_merge_special_cases(a, b, keep_both, output):
+    assert compute_merge(a, b, keep_both_ids=keep_both) == output
+
+
+@pytest.mark.parametrize(
     "old, new, expected",
     [
         # no changes
