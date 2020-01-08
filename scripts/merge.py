@@ -39,14 +39,6 @@ class Replace:
         return f"{self.key_name}: {self.value_one} => {self.value_two}"
 
 
-class MergeConflict(Exception):
-    def __init__(self, difference):
-        self.difference = difference
-
-    def __str__(self):
-        return str(self.difference)
-
-
 def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
     combined_keys = set(obj1) | set(obj2)
     changes = []

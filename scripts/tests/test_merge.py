@@ -1,42 +1,42 @@
 import pytest
 from merge import (
-    compare_objects,
-    ItemDifference,
-    ListDifference,
-    calculate_similarity,
+    compute_merge,
+    Append,
+    Replace,
     merge_people,
-    MergeConflict,
 )
 
 
 @pytest.mark.parametrize(
     "a, b, output",
     [
-        # no errors
+        # no diff
         ({"a": "one", "b": "two"}, {"a": "one", "b": "two"}, []),
-        # simple error
-        ({"a": "one", "b": "two"}, {"a": "bad", "b": "two"}, [ItemDifference("a", "one", "bad")]),
+        # simple difference
+        ({"a": "one", "b": "two"}, {"a": "bad", "b": "two"}, [Replace("a", "one", "bad")]),
         # missing key from first
-        ({"a": "one"}, {"a": "one", "b": "two"}, [ItemDifference("b", None, "two")]),
+        ({"a": "one"}, {"a": "one", "b": "two"}, [Replace("b", None, "two")]),
         # missing key from second
-        ({"a": "one", "b": "two"}, {"a": "one"}, [ItemDifference("b", "two", None)]),
+        ({"a": "one", "b": "two"}, {"a": "one"}, []),
     ],
 )
-def test_compare_objects_simple(a, b, output):
-    assert compare_objects(a, b) == output
+def test_compute_merge_simple(a, b, output):
+    assert compute_merge(a, b) == output
 
 
 @pytest.mark.parametrize(
     "a, b, output",
     [
-        # no errors
+        # no diff
         ({"a": {"b": "c"}}, {"a": {"b": "c"}}, []),
-        # no errors
-        ({"a": {"b": "c"}}, {"a": {}}, [ItemDifference("a.b", "c", None)]),
+        # nothing new on right
+        ({"a": {"b": "c"}}, {"a": {}}, []),
+        # replace
+        ({"a": {}}, {"a": {"b": "c"}}, [Replace("a.b", None, "c")]),
     ],
 )
-def test_compare_objects_nested(a, b, output):
-    assert compare_objects(a, b) == output
+def test_compute_merge_nested(a, b, output):
+    assert compute_merge(a, b) == output
 
 
 @pytest.mark.parametrize(
@@ -50,89 +50,43 @@ def test_compare_objects_nested(a, b, output):
         (
             {"a": [{"b": 1}, {"c": 2}, {"d": 3}]},
             {"a": [{"b": 1}, {"c": 2}]},
-            [ListDifference("a", {"d": 3}, "first")],
+            [],
         ),
         # extra item right
         (
             {"a": [{"b": 1}, {"c": 2}]},
             {"a": [{"b": 1}, {"c": 2}, {"d": 3}]},
-            [ListDifference("a", {"d": 3}, "second")],
+            [Append("a", {"d": 3})],
         ),
     ],
 )
-def test_compare_objects_list(a, b, output):
-    assert compare_objects(a, b) == output
-
-
-def test_calculate_similarity():
-    base_person = {
-        "id": "123",
-        "name": "A. Person",
-        "birth_date": "1980-01-01",
-        "party": [{"name": "Democratic"}],
-    }
-
-    new_id_person = base_person.copy()
-    new_id_person["id"] = "456"
-    assert calculate_similarity(base_person, new_id_person) == pytest.approx(1)
-
-    new_name_person = base_person.copy()
-    new_name_person["name"] = "Another Person"
-    assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.8)
-
-    new_name_person["death_date"] = "2018-01-01"
-    assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.7)
-
-    new_name_person["roles"] = [{"type": "lower", "district": "3"}]
-    assert calculate_similarity(base_person, new_name_person) == pytest.approx(0.6)
+def test_compute_merge_list(a, b, output):
+    assert compute_merge(a, b) == output
 
 
 @pytest.mark.parametrize(
-    "old, new, keep, expected",
+    "old, new, expected",
     [
         # no changes
-        ({"name": "Anna"}, {"name": "Anna"}, "old", {"name": "Anna"}),
-        # field only in old, keep=old
+        ({"name": "Anna"}, {"name": "Anna"}, {"name": "Anna"}),
+        # field only in old
         (
             {"name": "Anna", "birth_date": "1980"},
             {"name": "Anna"},
-            "old",
             {"name": "Anna", "birth_date": "1980"},
         ),
-        # field only in old, keep=new
-        (
-            {"name": "Anna", "birth_date": "1980"},
-            {"name": "Anna"},
-            "new",
-            {"name": "Anna", "birth_date": "1980"},
-        ),
-        # field only in new, keep=old
+        # field only in new
         (
             {"name": "Anna"},
             {"name": "Anna", "birth_date": "1980"},
-            "old",
             {"name": "Anna", "birth_date": "1980"},
         ),
-        # field only in new, keep=new
-        (
-            {"name": "Anna"},
-            {"name": "Anna", "birth_date": "1980"},
-            "new",
-            {"name": "Anna", "birth_date": "1980"},
-        ),
-        # field differs, keep=new
-        ({"name": "Bob"}, {"name": "Robert"}, "new", {"name": "Robert"}),
-        # field differs, keep=old
-        ({"name": "Bob"}, {"name": "Robert"}, "old", {"name": "Bob"}),
+        # special: name field differs
+        ({"name": "Bob"}, {"name": "Robert"}, {"name": "Robert", "other_names": [{"name": "Bob"}]}),
     ],
 )
-def test_simple_merge(old, new, keep, expected):
-    assert merge_people(old, new, keep) == expected
-
-
-def test_merge_conflict():
-    with pytest.raises(MergeConflict):
-        merge_people({"name": "A"}, {"name": "B"})
+def test_simple_merge(old, new, expected):
+    assert merge_people(old, new) == expected
 
 
 @pytest.mark.parametrize(
