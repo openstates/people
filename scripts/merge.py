@@ -85,7 +85,7 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
     return changes
 
 
-def incoming_merge(abbr, existing_people, new_people):
+def incoming_merge(abbr, existing_people, new_people, retirement):
     unmatched = []
 
     # find candidate(s) for each new person
@@ -101,7 +101,7 @@ def incoming_merge(abbr, existing_people, new_people):
                     role_match = True
                     break
             if name_match or role_match:
-                matched = interactive_merge(abbr, existing, new, name_match, role_match)
+                matched = interactive_merge(abbr, existing, new, name_match, role_match, retirement)
 
             if matched:
                 break
@@ -124,17 +124,17 @@ def copy_new_incoming(abbr, new):
     os.rename(oldfname, newfname)
 
 
-def retire(abbr, existing, new):
-    value = click.prompt("Enter retirement date YYYY-MM-DD")
-    # retire
-    person, num = retire_person(existing, value)
+def retire(abbr, existing, new, retirement=None):
+    if not retirement:
+        retirement = click.prompt("Enter retirement date YYYY-MM-DD")
+    person, num = retire_person(existing, retirement)
     fname = get_filename(existing)
     fname = f"data/{abbr}/people/{fname}".format(fname)
     dump_obj(person, filename=fname)
     move_file(fname)
 
 
-def interactive_merge(abbr, old, new, name_match, role_match):
+def interactive_merge(abbr, old, new, name_match, role_match, retirement):
     """
     returns True iff a merge was done
     """
@@ -167,24 +167,25 @@ def interactive_merge(abbr, old, new, name_match, role_match):
         choices = "m"
         text = "(m)erge?"
     elif role_match:
-        choices = "r"
+        choices = "mr"
         text = f"(m)erge? (r)etire {old['name']}"
 
     while ch not in (choices + "sa"):
         click.secho(text + " (s)kip? (a)bort?", bold=True)
         ch = click.getchar()
-        if ch == "a":
-            raise SystemExit(-1)
-        elif ch == "m":
-            merged = merge_people(old, new, keep_both_ids=False)
-            dump_obj(merged, filename=oldfname)
-            click.secho(" merged.", fg="green")
-            os.remove(newfname)
-        elif ch == "r":
-            copy_new_incoming(abbr, new)
-            retire(abbr, old, new)
-        elif ch == "s":
-            return False
+
+    if ch == "a":
+        raise SystemExit(-1)
+    elif ch == "m":
+        merged = merge_people(old, new, keep_both_ids=False)
+        dump_obj(merged, filename=oldfname)
+        click.secho(" merged.", fg="green")
+        os.remove(newfname)
+    elif ch == "r":
+        copy_new_incoming(abbr, new)
+        retire(abbr, old, new, retirement)
+    elif ch == "s":
+        return False
 
     return True
 
@@ -217,6 +218,11 @@ def merge_people(old, new, keep_both_ids=False):
     help="Operate in incoming mode, argument should be state abbr to scan.",
 )
 @click.option(
+    "--retirement",
+    default=None,
+    help="Set retirement date for all people marked retired (in incoming mode).",
+)
+@click.option(
     "--old",
     default=None,
     help="Operate in merge mode, this is the older of two files & will be kept.",
@@ -226,7 +232,7 @@ def merge_people(old, new, keep_both_ids=False):
     default=None,
     help="In merge mode, this is the newer file that will be removed after merge.",
 )
-def entrypoint(incoming, old, new):
+def entrypoint(incoming, old, new, retirement):
     """
         Script to assist with merging legislator files.
 
@@ -256,7 +262,7 @@ def entrypoint(incoming, old, new):
             f"analyzing {len(existing_people)} existing people and {len(new_people)} incoming"
         )
 
-        unmatched = incoming_merge(abbr, existing_people, new_people)
+        unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
         click.secho(f"{len(unmatched)} were unmatched")
 
     if old and new:
