@@ -65,7 +65,7 @@
 These sections can have a list of objects, each with the following fields available.
 
 * contact_details: 
-    * note: Description of what these details refer to (e.g. "District Office").  **required**
+    * note: "District Office" or "Capitol Office"  **required**
     * address: Mailing address.
     * email: Email address.
     * voice: Phone number used for voice calls.
