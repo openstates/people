@@ -191,7 +191,7 @@ def test_person_contact_details():
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
     contact_details:
-        - note: district office
+        - note: Capitol Office office
           fax: 111-222-3333
           voice: 555-555-5555
           email: fake@example.com

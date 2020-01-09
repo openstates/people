@@ -71,6 +71,19 @@ def is_social(val):
     return is_string(val) and not val.startswith(("http://", "https://", "@"))
 
 
+class Enum:
+    def __init__(self, *values):
+        self.values = values
+
+    def __call__(self, val):
+        return is_string(val) and val in self.values
+
+    # for display
+    @property
+    def __name__(self):
+        return f"Enum{self.values}"
+
+
 def is_fuzzy_date(val):
     return isinstance(val, datetime.date) or (is_string(val) and DATE_RE.match(val))
 
@@ -100,7 +113,7 @@ URL_LIST = NestedList({"note": [is_string], "url": [is_url, Required]})
 
 CONTACT_DETAILS = NestedList(
     {
-        "note": [is_string, Required],
+        "note": [Enum("District Office", "Capitol Office"), Required],
         "address": [is_string],
         "email": [is_string],
         "voice": [is_phone],
