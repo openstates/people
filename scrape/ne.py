@@ -1,6 +1,5 @@
-from spatula.core import Workflow
+from spatula.core import Workflow, NullSource
 from spatula.pages import HtmlPage, ListPage
-from spatula.sources import NullSource
 from spatula.selectors import CSS
 from common import Person
 

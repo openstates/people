@@ -1,6 +1,6 @@
 import re
 from spatula.pages import XmlListPage
-from spatula.sources import URL
+from spatula.core import URL
 from spatula.selectors import XPath
 from common import Person
 

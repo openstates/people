@@ -1,6 +1,5 @@
 from spatula.pages import JsonListPage
-from spatula.core import Workflow
-from spatula.sources import URL
+from spatula.core import Workflow, URL
 from common import Person
 
 

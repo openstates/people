@@ -1,9 +1,8 @@
 import re
 import lxml.etree
 from spatula.pages import HtmlListPage, HtmlPage
-from spatula.sources import URL
 from spatula.selectors import CSS, SelectorError
-from spatula.core import Workflow
+from spatula.core import Workflow, URL
 from common import Person
 
 
