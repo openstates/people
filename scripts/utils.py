@@ -5,8 +5,6 @@ import uuid
 import datetime
 import yaml
 import yamlordereddictloader
-import django
-from django import conf
 from collections import defaultdict
 from yaml.representer import Representer
 
@@ -124,7 +122,11 @@ def get_districts(settings):
             raise ValueError(seats)
     return expected
 
+
 def init_django():  # pragma: no cover
+    import django
+    from django import conf
+
     conf.settings.configure(
         conf.global_settings,
         SECRET_KEY="not-important",
@@ -137,11 +139,10 @@ def init_django():  # pragma: no cover
         DATABASES={
             "default": {
                 "ENGINE": "django.contrib.gis.db.backends.postgis",
-                "NAME": "openstatesorg",
-                "USER": "openstates",
-                "PASSWORD": "openstates",
-                "HOST": "localhost",
-                "PORT": "5405"
+                "NAME": os.environ["PGDATABASE"],
+                "USER": os.environ["PGUSER"],
+                "PASSWORD": os.environ["PGPASSWORD"],
+                "HOST": os.environ["PGHOST"],
             }
         },
         MIDDLEWARE_CLASSES=(),

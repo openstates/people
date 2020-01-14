@@ -4,10 +4,7 @@
 
 import csv
 from collections import Counter
-from utils import (
-    get_jurisdiction_id,
-    init_django,
-)
+from utils import get_jurisdiction_id, init_django
 import click
 
 
@@ -36,7 +33,7 @@ def archive_leg_to_csv(state_abbr=None, session=None):
     if voter_dictionary:
         # Writing CSV
         with open(output_filename, "w") as outf:
-            out = csv.DictWriter(outf, ("name", "jurisdiction", "session", "num_occurances",),)
+            out = csv.DictWriter(outf, ("name", "jurisdiction", "session", "num_occurances"))
             out.writeheader()
             for vname, num_occurances in voter_dictionary.items():
                 obj = {
