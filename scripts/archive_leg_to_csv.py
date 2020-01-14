@@ -1,15 +1,19 @@
 #!/usr/bin/env python
+
 """Script to create CSVs of legislators given a state and session"""
+
+import csv
+from collections import Counter
 from utils import (
     get_jurisdiction_id,
     init_django,
 )
-import csv
 import click
+
+
 init_django()
 
-from opencivicdata.legislative.models import LegislativeSession, Bill, PersonVote
-from collections import Counter
+from opencivicdata.legislative.models import LegislativeSession, Bill, PersonVote  # noqa
 
 
 def archive_leg_to_csv(state_abbr=None, session=None):
@@ -21,11 +25,10 @@ def archive_leg_to_csv(state_abbr=None, session=None):
 
     bills = Bill.objects.filter(
         legislative_session__identifier=session,
-        legislative_session__jurisdiction_id=jurisdiction_id).values_list("id", flat=True)
+        legislative_session__jurisdiction_id=jurisdiction_id,
+    ).values_list("id", flat=True)
     for bill in bills:
-        voters = PersonVote.objects.filter(
-            vote_event_id__bill_id=bill
-        )
+        voters = PersonVote.objects.filter(vote_event_id__bill_id=bill)
 
         for voter in voters:
             voter_dictionary[voter.voter_name] += 1
@@ -33,15 +36,7 @@ def archive_leg_to_csv(state_abbr=None, session=None):
     if voter_dictionary:
         # Writing CSV
         with open(output_filename, "w") as outf:
-            out = csv.DictWriter(
-                outf,
-                (
-                    "name",
-                    "jurisdiction",
-                    "session",
-                    "num_occurances",
-                ),
-            )
+            out = csv.DictWriter(outf, ("name", "jurisdiction", "session", "num_occurances",),)
             out.writeheader()
             for vname, num_occurances in voter_dictionary.items():
                 obj = {
@@ -65,8 +60,9 @@ def determine_session(state_abbr=None, session=None):
     if session:
         archive_leg_to_csv(state_abbr, session)
     else:
-        sessions = LegislativeSession.objects.filter(
-            jurisdiction_id=jurisdiction_id).values_list("identifier", flat=True)
+        sessions = LegislativeSession.objects.filter(jurisdiction_id=jurisdiction_id).values_list(
+            "identifier", flat=True
+        )
         for session in sessions:
             archive_leg_to_csv(state_abbr, session)
 
