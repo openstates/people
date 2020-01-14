@@ -1,6 +1,6 @@
 import json
 import lxml.html
-from .sources import URL
+from .core import URL
 
 
 class Page:
