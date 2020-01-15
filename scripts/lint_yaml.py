@@ -353,10 +353,7 @@ class Validator:
         )
     )
 
-    def __init__(self, abbr):
-        settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
-        with open(settings_file) as f:
-            settings = load_yaml(f)
+    def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
@@ -587,8 +584,12 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), "people", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
+
+    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
+    with open(settings_file) as f:
+        settings = load_yaml(f)
     try:
-        validator = Validator(abbr)
+        validator = Validator(abbr, settings)
     except BadVacancy:
         sys.exit(-1)
 
