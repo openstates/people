@@ -7,6 +7,7 @@ import yaml
 import yamlordereddictloader
 from collections import defaultdict
 from yaml.representer import Representer
+import openstates_metadata as metadata
 
 # set up defaultdict representation
 yaml.add_representer(defaultdict, Representer.represent_dict)
@@ -58,12 +59,7 @@ def get_all_abbreviations():
 
 
 def get_jurisdiction_id(abbr):
-    if abbr == "dc":
-        return "ocd-jurisdiction/country:us/district:dc/government"
-    elif abbr in ("vi", "pr"):
-        return f"ocd-jurisdiction/country:us/territory:{abbr}/government"
-    else:
-        return f"ocd-jurisdiction/country:us/state:{abbr}/government"
+    return metadata.lookup(abbr=abbr).jurisdiction_id
 
 
 def load_yaml(file_obj):
