@@ -249,7 +249,7 @@ def _echo_org_status(org, created, updated):
 def create_posts(jurisdiction_id):
     from opencivicdata.core.models import Organization, Jurisdiction
 
-    state = metadata.lookup(jurisdiction_id)
+    state = metadata.lookup(jurisdiction_id=jurisdiction_id)
 
     juris = Jurisdiction.objects.update_or_create(
         id=state.jurisdiction_id,
