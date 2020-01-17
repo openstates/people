@@ -23,7 +23,7 @@ class SenDetail(Page):
     def get_url(self):
         return self.obj.links[0]["url"]
 
-    def handle_page(self):
+    def scrape(self):
         email = self.doc.xpath('//a[contains(@href, "mailto:")]')[0].get("href").split(":")[-1]
         self.obj.capitol_office.email = email
         self.obj.image = str(self.doc.xpath('//div[@id="sidebar"]//img/@src').pop())
@@ -37,7 +37,6 @@ class SenContactDetail(ListPage):
 
     def handle_list_item(self, office):
         (name,) = office.xpath("text()")
-        print(name)
         if name == "Tallahassee Office":
             obj_office = self.obj.capitol_office
         else:
@@ -91,7 +90,7 @@ class SenList(ListPage):
 
         name = fix_name(name)
         leg = Person(
-            name=str(name), state="fl", party=str(party), district=str(district), chamber="upper",
+            name=str(name), state="fl", party=str(party), district=str(district), chamber="upper"
         )
         leg.add_link(leg_url)
         leg.add_source(self.url)
@@ -112,7 +111,7 @@ class RepContact(Page):
         contact_url = details_url.replace("details.aspx", "contactmember.aspx")
         return contact_url
 
-    def handle_page(self):
+    def scrape(self):
         for otype in ("district", "capitol"):
             odoc = self.doc.xpath(f"//h3[@id='{otype}-office']/following-sibling::ul")
             if odoc:
@@ -233,10 +232,10 @@ def main():
     except OSError:
         pass
     sen = SenList()
-    for leg in sen.handle_page():
+    for leg in sen.yield_objects():
         leg.save("incoming/fl/people")
     rep = RepList()
-    for leg in rep.handle_page():
+    for leg in rep.yield_objects():
         leg.save("incoming/fl/people")
 
 
