@@ -6,7 +6,7 @@ import re
 import os
 import logging
 from common import Person
-from scrape_tools import ListScraper, DetailPage
+from scrape_tools import ListPage, Page
 
 log = logging.getLogger("fl")
 
@@ -19,7 +19,7 @@ def fix_name(name):
     return first + " " + last
 
 
-class SenDetail(DetailPage):
+class SenDetail(Page):
     def get_url(self):
         return self.obj.links[0]["url"]
 
@@ -29,10 +29,54 @@ class SenDetail(DetailPage):
         self.obj.image = str(self.doc.xpath('//div[@id="sidebar"]//img/@src').pop())
 
 
-class SenList(ListScraper):
+class SenContactDetail(ListPage):
+    list_xpath = '//h4[contains(text(), "Office")]'
+
+    def get_url(self):
+        return self.obj.links[0]["url"]
+
+    def handle_list_item(self, office):
+        (name,) = office.xpath("text()")
+        print(name)
+        if name == "Tallahassee Office":
+            obj_office = self.obj.capitol_office
+        else:
+            obj_office = self.obj.district_office
+
+        address_lines = [
+            x.strip()
+            for x in office.xpath("following-sibling::div[1]")[0].text_content().splitlines()
+            if x.strip()
+        ]
+
+        clean_address_lines = []
+        fax = phone = None
+        PHONE_RE = r"\(\d{3}\)\s\d{3}\-\d{4}"
+        after_phone = False
+
+        for line in address_lines:
+            if re.search(r"(?i)open\s+\w+day", address_lines[0]):
+                continue
+            elif "FAX" in line:
+                fax = line.replace("FAX ", "")
+                after_phone = True
+            elif re.search(PHONE_RE, line):
+                phone = line
+                after_phone = True
+            elif not after_phone:
+                clean_address_lines.append(line)
+
+        address = "\n".join(clean_address_lines)
+        address = re.sub(r"\s{2,}", " ", address)
+        obj_office.address = address
+        obj_office.phone = phone
+        obj_office.fax = fax
+
+
+class SenList(ListPage):
     url = "http://www.flsenate.gov/Senators/"
     list_xpath = "//a[@class='senatorLink']"
-    detail_pages = [SenDetail]
+    detail_pages = [SenDetail, SenContactDetail]
 
     def handle_list_item(self, item):
         name = " ".join(item.xpath(".//text()"))
@@ -56,7 +100,7 @@ class SenList(ListScraper):
         return leg
 
 
-class RepContact(DetailPage):
+class RepContact(Page):
     def get_url(self):
         """
         Transform from
@@ -86,7 +130,7 @@ class RepContact(DetailPage):
             office.voice = spans[1].text_content().strip()
 
 
-class RepList(ListScraper):
+class RepList(ListPage):
     url = "https://www.myfloridahouse.gov/Representatives"
     list_xpath = "//div[@class='team-box']"
     detail_pages = [RepContact]
@@ -112,53 +156,6 @@ class RepList(ListScraper):
         rep.add_source(self.url)
         rep.add_source(link)
         return rep
-
-
-# class SenDetail(Page):
-#     list_xpath = '//h4[contains(text(), "Office")]'
-
-#     def handle_list_item(self, office):
-#         (name,) = office.xpath("text()")
-#         if name == "Tallahassee Office":
-#             type_ = "capitol"
-#         else:
-#             type_ = "district"
-
-#         address_lines = [
-#             x.strip()
-#             for x in office.xpath("following-sibling::div[1]")[0]
-#             .text_content()
-#             .splitlines()
-#             if x.strip()
-#         ]
-
-#         clean_address_lines = []
-#         fax = phone = None
-#         PHONE_RE = r"\(\d{3}\)\s\d{3}\-\d{4}"
-#         after_phone = False
-
-#         for line in address_lines:
-#             if re.search(r"(?i)open\s+\w+day", address_lines[0]):
-#                 continue
-#             elif "FAX" in line:
-#                 fax = line.replace("FAX ", "")
-#                 after_phone = True
-#             elif re.search(PHONE_RE, line):
-#                 phone = line
-#                 after_phone = True
-#             elif not after_phone:
-#                 clean_address_lines.append(line)
-
-#         if phone:
-#             self.obj.add_contact_detail(type="voice", value=phone, note=type_)
-#         if fax:
-#             self.obj.add_contact_detail(type="fax", value=fax, note=type_)
-
-#         # address
-#         address = "\n".join(clean_address_lines)
-#         address = re.sub(r"\s{2,}", " ", address)
-#         if address:
-#             self.obj.add_contact_detail(type="address", value=address, note=type_)
 
 
 # import tempfile
@@ -236,10 +233,10 @@ def main():
     except OSError:
         pass
     sen = SenList()
-    for leg in sen.run():
+    for leg in sen.handle_page():
         leg.save("incoming/fl/people")
     rep = RepList()
-    for leg in rep.run():
+    for leg in rep.handle_page():
         leg.save("incoming/fl/people")
 
 
