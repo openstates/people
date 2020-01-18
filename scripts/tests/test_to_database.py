@@ -390,6 +390,8 @@ def test_create_juris_orgs_posts_simple():
 
     create_juris_orgs_posts(j.id)
 
+    assert Jurisdiction.objects.count() == 1
+    assert Organization.objects.count() == 2
     assert Post.objects.filter(role="Senator").count() == 35
     assert Post.objects.filter(role="Representative").count() == 105
 
@@ -407,5 +409,7 @@ def test_create_top_level_unicameral():
         )
 
     create_juris_orgs_posts(j.id)
+    assert Jurisdiction.objects.count() == 1
+    assert Organization.objects.count() == 2
     assert org.posts.all().count() == 10
     assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2

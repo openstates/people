@@ -266,7 +266,9 @@ def create_juris_orgs_posts(jurisdiction_id):
             # TODO: restore ID here
             # id=chamber.organization_id
             jurisdiction=juris,
-            classification=chamber.chamber_type,
+            classification="legislature"
+            if chamber.chamber_type == "unicameral"
+            else chamber.chamber_type,
             defaults={"name": chamber.name},
         )
 
