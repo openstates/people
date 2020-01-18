@@ -287,9 +287,8 @@ def get_expected_districts(settings, abbr):
 
     state = metadata.lookup(abbr=abbr)
     for chamber in state.chambers:
-        expected[chamber.chamber_type] = {
-            district.name: district.num_seats for district in chamber.districts
-        }
+        chtype = "legislature" if chamber.chamber_type == "unicameral" else chamber.chamber_type
+        expected[chtype] = {district.name: district.num_seats for district in chamber.districts}
 
     # remove vacancies
     vacancies = settings.get(abbr, {}).get("vacancies", [])

@@ -201,8 +201,8 @@ def test_validate_roles_retired(person, expected):
 
 def test_get_expected_districts():
     expected = get_expected_districts({}, "ne")
-    assert len(expected["unicameral"]) == 49
-    assert expected["unicameral"]["1"] == 1
+    assert len(expected["legislature"]) == 49
+    assert expected["legislature"]["1"] == 1
 
     expected = get_expected_districts({}, "md")
     print(expected)
@@ -215,7 +215,7 @@ def test_expected_districts_vacancies():
         "ne": {
             "vacancies": [
                 {
-                    "chamber": "unicameral",
+                    "chamber": "legislature",
                     "district": "1",
                     "vacant_until": datetime.date(2100, 1, 1),
                 },
@@ -223,7 +223,7 @@ def test_expected_districts_vacancies():
         }
     }
     expected = get_expected_districts(vacancies, "ne")
-    assert expected["unicameral"]["1"] == 0
+    assert expected["legislature"]["1"] == 0
 
     with pytest.raises(BadVacancy):
         get_expected_districts(
