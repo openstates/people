@@ -384,9 +384,9 @@ def test_create_juris_orgs_posts_simple():
     Organization.objects.create(jurisdiction=j, name="Senate", classification="upper")
     # divisions would already exist
     for n in range(1, 35 + 1):
-        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
-    for n in range(1, 105 + 1):
         Division.objects.create(id=f"ocd-division/country:us/state:al/sldu:{n}", name=str(n))
+    for n in range(1, 105 + 1):
+        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
 
     create_juris_orgs_posts(j.id)
 
