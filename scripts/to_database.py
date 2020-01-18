@@ -246,12 +246,12 @@ def _echo_org_status(org, created, updated):
         click.secho(f"{org} updated", fg="yellow")
 
 
-def create_posts(jurisdiction_id):
+def create_juris_orgs_posts(jurisdiction_id):
     from opencivicdata.core.models import Organization, Jurisdiction
 
     state = metadata.lookup(jurisdiction_id=jurisdiction_id)
 
-    juris = Jurisdiction.objects.update_or_create(
+    juris, _ = Jurisdiction.objects.update_or_create(
         id=state.jurisdiction_id,
         defaults={
             "name": state.name,
@@ -262,7 +262,7 @@ def create_posts(jurisdiction_id):
     )
 
     for chamber in state.chambers:
-        org = Organization.objects.update_or_create(
+        org, _ = Organization.objects.update_or_create(
             # TODO: restore ID here
             # id=chamber.organization_id
             jurisdiction=juris,
@@ -430,7 +430,7 @@ def to_database(abbreviations, purge, safe):
 
         try:
             with transaction.atomic():
-                create_posts(jurisdiction_id)
+                create_juris_orgs_posts(jurisdiction_id)
                 load_directory(person_files, "person", jurisdiction_id, purge=purge)
                 load_directory(committee_files, "organization", jurisdiction_id, purge=purge)
                 if safe:

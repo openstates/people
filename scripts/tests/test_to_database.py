@@ -1,7 +1,7 @@
 import pytest
 import yaml
 from opencivicdata.core.models import Person, Organization, Jurisdiction, Division, Post
-from to_database import load_person, load_org, create_posts
+from to_database import load_person, load_org, create_juris_orgs_posts
 
 
 def setup():
@@ -375,7 +375,7 @@ def test_org_person_membership_interaction():
 
 
 @pytest.mark.django_db
-def test_create_posts_simple():
+def test_create_juris_orgs_posts_simple():
     d = Division.objects.create(id="ocd-division/country:us/state:al", name="Alabama")
     j = Jurisdiction.objects.create(
         id="ocd-jurisdiction/country:us/state:al/government", name="Alabama", division=d
@@ -388,7 +388,7 @@ def test_create_posts_simple():
     for n in range(1, 105 + 1):
         Division.objects.create(id=f"ocd-division/country:us/state:al/sldu:{n}", name=str(n))
 
-    create_posts(j.id)
+    create_juris_orgs_posts(j.id)
 
     assert Post.objects.filter(role="Senator").count() == 35
     assert Post.objects.filter(role="Representative").count() == 105
@@ -406,6 +406,6 @@ def test_create_top_level_unicameral():
             id=f"ocd-division/country:us/district:dc/ward:{n}", name=f"Ward {n}"
         )
 
-    create_posts(j.id)
+    create_juris_orgs_posts(j.id)
     assert org.posts.all().count() == 10
     assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2
