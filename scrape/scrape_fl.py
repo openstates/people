@@ -65,7 +65,7 @@ class SenContactDetail(ListPage):
             elif not after_phone:
                 clean_address_lines.append(line)
 
-        address = "\n".join(clean_address_lines)
+        address = "; ".join(clean_address_lines)
         address = re.sub(r"\s{2,}", " ", address)
         obj_office.address = address
         obj_office.phone = phone
@@ -131,7 +131,8 @@ class RepContact(Page):
 
 class RepList(ListPage):
     url = "https://www.myfloridahouse.gov/Representatives"
-    list_xpath = "//div[@class='team-box']"
+    # kind of wonky xpath to not get the partial term people at the bottom of the page
+    list_xpath = "(//div[@class='team-page'])[1]//div[@class='team-box']"
     detail_pages = [RepContact]
 
     IMAGE_BASE = "https://www.myfloridahouse.gov/"
