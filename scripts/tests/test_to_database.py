@@ -390,17 +390,27 @@ def test_create_juris_orgs_posts_simple():
 
     create_juris_orgs_posts(j.id)
 
-    assert Jurisdiction.objects.count() == 1
-    assert Organization.objects.count() == 2
-    assert Post.objects.filter(role="Senator").count() == 35
-    assert Post.objects.filter(role="Representative").count() == 105
+    assert Jurisdiction.objects.filter(name="Alabama").count() == 1
+    assert Organization.objects.filter(jurisdiction__name="Alabama").count() == 2
+    assert (
+        Post.objects.filter(organization__jurisdiction__name="Alabama", role="Senator").count()
+        == 35
+    )
+    assert (
+        Post.objects.filter(
+            organization__jurisdiction__name="Alabama", role="Representative"
+        ).count()
+        == 105
+    )
 
 
 @pytest.mark.django_db
 def test_create_top_level_unicameral():
     d = Division.objects.create(id="ocd-division/country:us/district:dc", name="DC")
     j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/district:dc/government", name="DC", division=d
+        id="ocd-jurisdiction/country:us/district:dc/government",
+        name="District of Columbia",
+        division=d,
     )
     org = Organization.objects.create(jurisdiction=j, name="Council", classification="legislature")
     for n in range(1, 9):
@@ -409,7 +419,8 @@ def test_create_top_level_unicameral():
         )
 
     create_juris_orgs_posts(j.id)
-    assert Jurisdiction.objects.count() == 1
-    assert Organization.objects.count() == 2
+    assert Jurisdiction.objects.filter(name="District of Columbia").count() == 1
+    assert Organization.objects.filter(jurisdiction__name="District of Columbia").count() == 1
     assert org.posts.all().count() == 10
+    # two at-large posts
     assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2
