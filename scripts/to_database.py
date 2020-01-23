@@ -7,13 +7,8 @@ import django
 from django import conf
 from django.db import transaction
 import click
-from utils import (
-    get_data_dir,
-    get_jurisdiction_id,
-    get_all_abbreviations,
-    get_districts,
-    get_settings,
-)
+import openstates_metadata as metadata
+from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations
 
 try:
     from yaml import CLoader as Loader
@@ -244,18 +239,6 @@ def sort_organizations(orgs):
     return order
 
 
-def get_division_id_for_role(settings, division_id, chamber, label):
-    # if there's an override, use it
-    overrides = settings.get(chamber + "_division_ids")
-    if overrides:
-        return overrides[label]
-
-    # default is parent/sld[ul]:prefix
-    prefix = "sldl" if chamber == "lower" else "sldu"
-    slug = label.lower().replace(" ", "_")
-    return f"{division_id}/{prefix}:{slug}"
-
-
 def _echo_org_status(org, created, updated):
     if created:
         click.secho(f"{org} created", fg="green")
@@ -263,32 +246,41 @@ def _echo_org_status(org, created, updated):
         click.secho(f"{org} updated", fg="yellow")
 
 
-def create_posts(jurisdiction_id, settings):
+def create_juris_orgs_posts(jurisdiction_id):
     from opencivicdata.core.models import Organization, Jurisdiction
 
-    division_id = Jurisdiction.objects.get(pk=jurisdiction_id).division_id
-    districts = get_districts(settings)
+    state = metadata.lookup(jurisdiction_id=jurisdiction_id)
 
-    # create remaining orgs & add posts
-    for chamber in districts:
-        org = Organization.objects.get(jurisdiction_id=jurisdiction_id, classification=chamber)
-        if chamber != "legislature":
-            # check for name overrides
-            title = settings.get(chamber + "_title")
-            if not title:
-                title = "Senator" if chamber == "upper" else "Representative"
-        else:
-            title = settings["legislature_title"]
+    juris, _ = Jurisdiction.objects.update_or_create(
+        id=state.jurisdiction_id,
+        defaults={
+            "name": state.name,
+            "url": state.url,
+            "classification": "government",
+            "division_id": state.division_id,
+        },
+    )
+
+    for chamber in state.chambers:
+        org, _ = Organization.objects.update_or_create(
+            # TODO: restore ID here
+            # id=chamber.organization_id
+            jurisdiction=juris,
+            classification="legislature"
+            if chamber.chamber_type == "unicameral"
+            else chamber.chamber_type,
+            defaults={"name": chamber.name},
+        )
 
         # add posts to org
         posts = [
             {
-                "label": label,
-                "role": title,
-                "division_id": get_division_id_for_role(settings, division_id, chamber, label),
-                "maximum_memberships": maximum,
+                "label": d.name,
+                "role": chamber.title,
+                "division_id": d.division_id,
+                "maximum_memberships": d.num_seats,
             }
-            for label, maximum in districts[chamber].items()
+            for d in chamber.districts
         ]
         updated = update_subobjects(org, "posts", posts)
         if updated:
@@ -425,8 +417,6 @@ def to_database(abbreviations, purge, safe):
     if not abbreviations:
         abbreviations = get_all_abbreviations()
 
-    settings = get_settings()
-
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
@@ -440,11 +430,9 @@ def to_database(abbreviations, purge, safe):
         if safe:
             click.secho("running in safe mode, no changes will be made", fg="magenta")
 
-        state_settings = settings[abbr]
-
         try:
             with transaction.atomic():
-                create_posts(jurisdiction_id, state_settings)
+                create_juris_orgs_posts(jurisdiction_id)
                 load_directory(person_files, "person", jurisdiction_id, purge=purge)
                 load_directory(committee_files, "organization", jurisdiction_id, purge=purge)
                 if safe:
