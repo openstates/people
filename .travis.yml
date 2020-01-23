@@ -23,9 +23,9 @@ jobs:
         - PYTHONPATH=scripts
       name: "Test Python"
       before_script:
-        - psql -c "CREATE USER test with PASSWORD 'test' CREATEDB SUPERUSER;" -U postgres
-        - psql -c "CREATE DATABASE test;" -U postgres
-        - psql -c "CREATE EXTENSION postgis;" -U postgres -d test
+        - psql -c "CREATE USER openstates with PASSWORD 'openstates' CREATEDB SUPERUSER;" -U postgres
+        - psql -c "CREATE DATABASE testdb;" -U postgres
+        - psql -c "CREATE EXTENSION postgis;" -U postgres -d testdb
       after_success:
         - coveralls
     - script: ./scripts/lint_yaml.py
