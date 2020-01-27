@@ -5,14 +5,13 @@ import sys
 import datetime
 import glob
 import click
+import openstates_metadata as metadata
 from utils import (
     get_data_dir,
     get_filename,
     role_is_active,
     get_all_abbreviations,
     load_yaml,
-    get_districts,
-    get_settings,
 )
 from collections import defaultdict, Counter
 
@@ -71,6 +70,19 @@ def is_social(val):
     return is_string(val) and not val.startswith(("http://", "https://", "@"))
 
 
+class Enum:
+    def __init__(self, *values):
+        self.values = values
+
+    def __call__(self, val):
+        return is_string(val) and val in self.values
+
+    # for display
+    @property
+    def __name__(self):
+        return f"Enum{self.values}"
+
+
 def is_fuzzy_date(val):
     return isinstance(val, datetime.date) or (is_string(val) and DATE_RE.match(val))
 
@@ -100,7 +112,7 @@ URL_LIST = NestedList({"note": [is_string], "url": [is_url, Required]})
 
 CONTACT_DETAILS = NestedList(
     {
-        "note": [is_string, Required],
+        "note": [Enum("District Office", "Capitol Office"), Required],
         "address": [is_string],
         "email": [is_string],
         "voice": [is_phone],
@@ -270,14 +282,19 @@ def validate_roles(person, roles_key, retired=False):
     return []
 
 
-def get_expected_districts(settings):
-    expected = get_districts(settings)
+def get_expected_districts(settings, abbr):
+    expected = {}
+
+    state = metadata.lookup(abbr=abbr)
+    for chamber in state.chambers:
+        chtype = "legislature" if chamber.chamber_type == "unicameral" else chamber.chamber_type
+        expected[chtype] = {district.name: district.num_seats for district in chamber.districts}
 
     # remove vacancies
-    vacancies = settings.get("vacancies", [])
+    vacancies = settings.get(abbr, {}).get("vacancies", [])
     if vacancies:
         click.secho(f"Processing {len(vacancies)} vacancies:")
-    for vacancy in settings.get("vacancies", []):
+    for vacancy in vacancies:
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
@@ -337,7 +354,7 @@ class Validator:
 
     def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
-        self.expected = get_expected_districts(settings[abbr])
+        self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
@@ -562,10 +579,14 @@ class Validator:
             )
 
 
-def process_dir(abbr, verbose, summary, settings):  # pragma: no cover
+def process_dir(abbr, verbose, summary):  # pragma: no cover
     person_filenames = glob.glob(os.path.join(get_data_dir(abbr), "people", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
+
+    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
+    with open(settings_file) as f:
+        settings = load_yaml(f)
     try:
         validator = Validator(abbr, settings)
     except BadVacancy:
@@ -609,7 +630,6 @@ def lint(abbreviations, verbose, summary):
 
         <ABBR> can be provided to restrict linting to single state's files.
     """
-    settings = get_settings()
     error_count = 0
 
     if not abbreviations:
@@ -617,7 +637,7 @@ def lint(abbreviations, verbose, summary):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, summary, settings)
+        error_count += process_dir(abbr, verbose, summary)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")

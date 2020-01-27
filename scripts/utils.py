@@ -7,6 +7,7 @@ import yaml
 import yamlordereddictloader
 from collections import defaultdict
 from yaml.representer import Representer
+import openstates_metadata as metadata
 
 # set up defaultdict representation
 yaml.add_representer(defaultdict, Representer.represent_dict)
@@ -58,12 +59,7 @@ def get_all_abbreviations():
 
 
 def get_jurisdiction_id(abbr):
-    if abbr == "dc":
-        return "ocd-jurisdiction/country:us/district:dc/government"
-    elif abbr in ("vi", "pr"):
-        return f"ocd-jurisdiction/country:us/territory:{abbr}/government"
-    else:
-        return f"ocd-jurisdiction/country:us/state:{abbr}/government"
+    return metadata.lookup(abbr=abbr).jurisdiction_id
 
 
 def load_yaml(file_obj):
@@ -94,35 +90,11 @@ def get_filename(obj):
     return f"{name}-{id}.yml"
 
 
-def get_settings():
-    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
-    with open(settings_file) as f:
-        return load_yaml(f)
-
-
 def role_is_active(role):
     now = datetime.datetime.utcnow().date().isoformat()
     return str(role.get("end_date")) is None or str(role.get("end_date")) > now
 
-
-def get_districts(settings):
-    expected = {}
-    for key in ("upper", "lower", "legislature"):
-        seats = settings.get(key + "_seats")
-        if not seats:
-            continue
-        elif isinstance(seats, int):
-            # one seat per district by default
-            expected[key] = {str(s): 1 for s in range(1, seats + 1)}
-        elif isinstance(seats, list):
-            expected[key] = {str(s): 1 for s in seats}
-        elif isinstance(seats, dict):
-            expected[key] = seats
-        else:  # pragma: no cover
-            raise ValueError(seats)
-    return expected
-
-
+  
 def init_django():  # pragma: no cover
     import django
     from django import conf

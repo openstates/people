@@ -1,7 +1,7 @@
 import pytest
 import yaml
 from opencivicdata.core.models import Person, Organization, Jurisdiction, Division, Post
-from to_database import load_person, load_org, create_posts
+from to_database import load_person, load_org, create_juris_orgs_posts
 
 
 def setup():
@@ -191,7 +191,7 @@ def test_person_contact_details():
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
     contact_details:
-        - note: district office
+        - note: Capitol Office office
           fax: 111-222-3333
           voice: 555-555-5555
           email: fake@example.com
@@ -375,31 +375,42 @@ def test_org_person_membership_interaction():
 
 
 @pytest.mark.django_db
-def test_create_posts_simple():
+def test_create_juris_orgs_posts_simple():
     d = Division.objects.create(id="ocd-division/country:us/state:al", name="Alabama")
     j = Jurisdiction.objects.create(
         id="ocd-jurisdiction/country:us/state:al/government", name="Alabama", division=d
     )
     Organization.objects.create(jurisdiction=j, name="House", classification="lower")
     Organization.objects.create(jurisdiction=j, name="Senate", classification="upper")
-    settings = {"lower_seats": 105, "upper_seats": 35, "legislature_name": "Alabama Legislature"}
     # divisions would already exist
-    for n in range(settings["lower_seats"] + 1):
-        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
-    for n in range(settings["upper_seats"] + 1):
+    for n in range(1, 35 + 1):
         Division.objects.create(id=f"ocd-division/country:us/state:al/sldu:{n}", name=str(n))
+    for n in range(1, 105 + 1):
+        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
 
-    create_posts(j.id, settings)
+    create_juris_orgs_posts(j.id)
 
-    assert Post.objects.filter(role="Senator").count() == 35
-    assert Post.objects.filter(role="Representative").count() == 105
+    assert Jurisdiction.objects.filter(name="Alabama").count() == 1
+    assert Organization.objects.filter(jurisdiction__name="Alabama").count() == 2
+    assert (
+        Post.objects.filter(organization__jurisdiction__name="Alabama", role="Senator").count()
+        == 35
+    )
+    assert (
+        Post.objects.filter(
+            organization__jurisdiction__name="Alabama", role="Representative"
+        ).count()
+        == 105
+    )
 
 
 @pytest.mark.django_db
 def test_create_top_level_unicameral():
     d = Division.objects.create(id="ocd-division/country:us/district:dc", name="DC")
     j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/district:dc/government", name="DC", division=d
+        id="ocd-jurisdiction/country:us/district:dc/government",
+        name="District of Columbia",
+        division=d,
     )
     org = Organization.objects.create(jurisdiction=j, name="Council", classification="legislature")
     for n in range(1, 9):
@@ -407,25 +418,9 @@ def test_create_top_level_unicameral():
             id=f"ocd-division/country:us/district:dc/ward:{n}", name=f"Ward {n}"
         )
 
-    settings = yaml.load(
-        """
-legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1,
-                    'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
-legislature_name: Council of the District of Columbia
-legislature_title: Councilmember
-legislature_division_ids:
-    'Ward 1': 'ocd-division/country:us/district:dc/ward:1'
-    'Ward 2': 'ocd-division/country:us/district:dc/ward:2'
-    'Ward 3': 'ocd-division/country:us/district:dc/ward:3'
-    'Ward 4': 'ocd-division/country:us/district:dc/ward:4'
-    'Ward 5': 'ocd-division/country:us/district:dc/ward:5'
-    'Ward 6': 'ocd-division/country:us/district:dc/ward:6'
-    'Ward 7': 'ocd-division/country:us/district:dc/ward:7'
-    'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
-    'Chairman': 'ocd-division/country:us/district:dc'
-    'At-Large': 'ocd-division/country:us/district:dc'"""
-    )
-
-    create_posts(j.id, settings)
+    create_juris_orgs_posts(j.id)
+    assert Jurisdiction.objects.filter(name="District of Columbia").count() == 1
+    assert Organization.objects.filter(jurisdiction__name="District of Columbia").count() == 1
     assert org.posts.all().count() == 10
+    # two at-large posts
     assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2
