@@ -94,7 +94,7 @@ def role_is_active(role):
     now = datetime.datetime.utcnow().date().isoformat()
     return str(role.get("end_date")) is None or str(role.get("end_date")) > now
 
-  
+
 def init_django():  # pragma: no cover
     import django
     from django import conf
