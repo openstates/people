@@ -10,7 +10,7 @@ import click
 
 init_django()
 
-from opencivicdata.legislative.models import LegislativeSession, Bill, PersonVote  # noqa
+from opencivicdata.legislative.models import LegislativeSession, Bill, PersonVote, BillSponsorship  # noqa
 
 
 def archive_leg_to_csv(state_abbr=None, session=None):
@@ -24,10 +24,15 @@ def archive_leg_to_csv(state_abbr=None, session=None):
         legislative_session__identifier=session,
         legislative_session__jurisdiction_id=jurisdiction_id,
     ).values_list("id", flat=True)
+
     for bill in bills:
         voters = PersonVote.objects.filter(vote_event_id__bill_id=bill, voter_id=None)
         for voter in voters:
             voter_dictionary[voter.voter_name] += 1
+
+        bill_sponsors = BillSponsorship.objects.filter(bill_id=bill, person_id=None)
+        for bill_sponsor in bill_sponsors:
+            voter_dictionary[bill_sponsor.name] += 1
 
     if voter_dictionary:
         # Writing CSV
