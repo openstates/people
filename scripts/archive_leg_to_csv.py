@@ -25,8 +25,7 @@ def archive_leg_to_csv(state_abbr=None, session=None):
         legislative_session__jurisdiction_id=jurisdiction_id,
     ).values_list("id", flat=True)
     for bill in bills:
-        voters = PersonVote.objects.filter(vote_event_id__bill_id=bill)
-
+        voters = PersonVote.objects.filter(vote_event_id__bill_id=bill, voter_id=None)
         for voter in voters:
             voter_dictionary[voter.voter_name] += 1
 
