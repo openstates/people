@@ -1,18 +1,19 @@
 #!/usr/bin/env python
 import os
+import sys
 import glob
-import yaml
 from functools import lru_cache
 from django.db import transaction
 import click
 import openstates_metadata as metadata
-from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations, init_django
-
-try:
-    from yaml import CLoader as Loader
-except ImportError:
-    from yaml import Loader as Loader
-
+from utils import (
+    get_data_dir,
+    get_jurisdiction_id,
+    get_all_abbreviations,
+    load_yaml,
+    legacy_districts,
+    init_django,
+)
 
 class CancelTransaction(Exception):
     pass
@@ -139,10 +140,15 @@ def load_person(data):
                 post = org.posts.get(label=role["district"])
             except Organization.DoesNotExist:
                 click.secho(
-                    f"no such organization {role['jurisdiction']} {role['type']}", fg="red"
+                    f"{person} no such organization {role['jurisdiction']} {role['type']}",
+                    fg="red",
                 )
                 raise CancelTransaction()
             except Post.DoesNotExist:
+                # if this is a legacy district, be quiet
+                lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
+                if role["district"] in lds[role["type"]]:
+                    continue
                 click.secho(f"no such post {role}", fg="red")
                 raise CancelTransaction()
         else:
@@ -318,7 +324,7 @@ def load_directory(files, type, jurisdiction_id, purge):
     all_data = []
     for filename in files:
         with open(filename) as f:
-            data = yaml.load(f, Loader=Loader)
+            data = load_yaml(f)
             all_data.append((data, filename))
 
     if type == "organization":
@@ -372,6 +378,19 @@ def load_directory(files, type, jurisdiction_id, purge):
     )
 
 
+def create_parties():
+    from opencivicdata.core.models import Organization
+
+    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
+    with open(settings_file) as f:
+        settings = load_yaml(f)
+    parties = settings["parties"]
+    for party in parties:
+        org, created = Organization.objects.get_or_create(name=party, classification="party")
+        if created:
+            click.secho(f"created party: {party}", fg="green")
+
+
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option(
@@ -387,6 +406,8 @@ def to_database(abbreviations, purge, safe):
     Sync YAML files to DB.
     """
     init_django()
+
+    create_parties()
 
     if not abbreviations:
         abbreviations = get_all_abbreviations()
@@ -413,7 +434,7 @@ def to_database(abbreviations, purge, safe):
                     click.secho("ran in safe mode, no changes were made", fg="magenta")
                     raise CancelTransaction()
         except CancelTransaction:
-            pass
+            sys.exit(1)
 
 
 if __name__ == "__main__":

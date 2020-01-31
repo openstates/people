@@ -120,3 +120,11 @@ def init_django():  # pragma: no cover
         MIDDLEWARE_CLASSES=(),
     )
     django.setup()
+
+ 
+def legacy_districts(**kwargs):
+    """ can take jurisdiction_id or abbr via kwargs """
+    legacy_districts = {"upper": [], "lower": []}
+    for d in metadata.lookup(**kwargs).legacy_districts:
+        legacy_districts[d.chamber_type].append(d.name)
+    return legacy_districts
