@@ -93,3 +93,11 @@ def get_filename(obj):
 def role_is_active(role):
     now = datetime.datetime.utcnow().date().isoformat()
     return str(role.get("end_date")) is None or str(role.get("end_date")) > now
+
+
+def legacy_districts(**kwargs):
+    """ can take jurisdiction_id or abbr via kwargs """
+    legacy_districts = {"upper": [], "lower": []}
+    for d in metadata.lookup(**kwargs).legacy_districts:
+        legacy_districts[d.chamber_type].append(d.name)
+    return legacy_districts

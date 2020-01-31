@@ -8,7 +8,13 @@ from django import conf
 from django.db import transaction
 import click
 import openstates_metadata as metadata
-from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations, load_yaml
+from utils import (
+    get_data_dir,
+    get_jurisdiction_id,
+    get_all_abbreviations,
+    load_yaml,
+    legacy_districts,
+)
 
 
 class CancelTransaction(Exception):
@@ -136,10 +142,15 @@ def load_person(data):
                 post = org.posts.get(label=role["district"])
             except Organization.DoesNotExist:
                 click.secho(
-                    f"no such organization {role['jurisdiction']} {role['type']}", fg="red"
+                    f"{person} no such organization {role['jurisdiction']} {role['type']}",
+                    fg="red",
                 )
                 raise CancelTransaction()
             except Post.DoesNotExist:
+                # if this is a legacy district, be quiet
+                lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
+                if role["district"] in lds[role["type"]]:
+                    continue
                 click.secho(f"no such post {role}", fg="red")
                 raise CancelTransaction()
         else:

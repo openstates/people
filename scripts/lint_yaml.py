@@ -6,7 +6,14 @@ import datetime
 import glob
 import click
 import openstates_metadata as metadata
-from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml
+from utils import (
+    get_data_dir,
+    get_filename,
+    role_is_active,
+    get_all_abbreviations,
+    load_yaml,
+    legacy_districts,
+)
 from collections import defaultdict, Counter
 
 
@@ -369,9 +376,7 @@ class Validator:
         self.active_legislators = defaultdict(lambda: defaultdict(list))
         # field name -> value -> person
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
-        self.legacy_districts = {"upper": [], "lower": []}
-        for d in metadata.lookup(abbr=abbr).legacy_districts:
-            self.legacy_districts[d.chamber_type].append(d.name)
+        self.legacy_districts = legacy_districts(abbr)
 
     def validate_person(self, person, filename, retired=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
