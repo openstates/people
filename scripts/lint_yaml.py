@@ -376,7 +376,7 @@ class Validator:
         self.active_legislators = defaultdict(lambda: defaultdict(list))
         # field name -> value -> person
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
-        self.legacy_districts = legacy_districts(abbr)
+        self.legacy_districts = legacy_districts(abbr=abbr)
 
     def validate_person(self, person, filename, retired=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
