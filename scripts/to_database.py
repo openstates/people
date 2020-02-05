@@ -6,22 +6,20 @@ from functools import lru_cache
 from django.db import transaction
 import click
 import openstates_metadata as metadata
-<<<<<<< HEAD
-from utils import get_data_dir, get_jurisdiction_id, get_all_abbreviations, init_django
 
 try:
     from yaml import CLoader as Loader
 except ImportError:
     from yaml import Loader as Loader
-=======
+
 from utils import (
     get_data_dir,
     get_jurisdiction_id,
     get_all_abbreviations,
     load_yaml,
     legacy_districts,
+    init_django,
 )
->>>>>>> 77612767715b65acc8a4f275575fe7a2e6a25d4b
 
 
 class CancelTransaction(Exception):
@@ -387,32 +385,6 @@ def load_directory(files, type, jurisdiction_id, purge):
     )
 
 
-<<<<<<< HEAD
-=======
-def init_django():  # pragma: no cover
-    conf.settings.configure(
-        conf.global_settings,
-        SECRET_KEY="not-important",
-        DEBUG=False,
-        INSTALLED_APPS=(
-            "django.contrib.contenttypes",
-            "opencivicdata.core.apps.BaseConfig",
-            "opencivicdata.legislative.apps.BaseConfig",
-        ),
-        DATABASES={
-            "default": {
-                "ENGINE": "django.contrib.gis.db.backends.postgis",
-                "NAME": os.environ["PGDATABASE"],
-                "USER": os.environ["PGUSER"],
-                "PASSWORD": os.environ["PGPASSWORD"],
-                "HOST": os.environ["PGHOST"],
-            }
-        },
-        MIDDLEWARE_CLASSES=(),
-    )
-    django.setup()
-
-
 def create_parties():
     from opencivicdata.core.models import Organization
 
@@ -426,7 +398,7 @@ def create_parties():
             click.secho(f"created party: {party}", fg="green")
 
 
->>>>>>> 77612767715b65acc8a4f275575fe7a2e6a25d4b
+
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option(

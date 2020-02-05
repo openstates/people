@@ -6,9 +6,7 @@ import datetime
 import glob
 import click
 import openstates_metadata as metadata
-<<<<<<< HEAD
-from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml
-=======
+
 from utils import (
     get_data_dir,
     get_filename,
@@ -17,7 +15,7 @@ from utils import (
     load_yaml,
     legacy_districts,
 )
->>>>>>> 77612767715b65acc8a4f275575fe7a2e6a25d4b
+
 from collections import defaultdict, Counter
 
 
