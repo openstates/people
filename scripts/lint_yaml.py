@@ -6,7 +6,18 @@ import datetime
 import glob
 import click
 import openstates_metadata as metadata
+<<<<<<< HEAD
 from utils import get_data_dir, get_filename, role_is_active, get_all_abbreviations, load_yaml
+=======
+from utils import (
+    get_data_dir,
+    get_filename,
+    role_is_active,
+    get_all_abbreviations,
+    load_yaml,
+    legacy_districts,
+)
+>>>>>>> 77612767715b65acc8a4f275575fe7a2e6a25d4b
 from collections import defaultdict, Counter
 
 
@@ -266,7 +277,7 @@ def validate_obj(obj, schema, prefix=None):
 
 
 def validate_roles(person, roles_key, retired=False):
-    active = [role for role in person[roles_key] if role_is_active(role)]
+    active = [role for role in person.get(roles_key, []) if role_is_active(role)]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
     elif roles_key == "roles" and retired and len(active) > 0:
@@ -369,6 +380,7 @@ class Validator:
         self.active_legislators = defaultdict(lambda: defaultdict(list))
         # field name -> value -> person
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
+        self.legacy_districts = legacy_districts(abbr=abbr)
 
     def validate_person(self, person, filename, retired=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
@@ -385,8 +397,19 @@ class Validator:
         self.person_mapping[person["id"]] = person["name"]
         if retired:
             self.retired_count += 1
+            self.errors[filename].extend(self.validate_old_district_names(person))
         else:
             self.summarize_person(person)
+
+    def validate_old_district_names(self, person):
+        errors = []
+        for role in person.get("roles", []):
+            if (
+                role["district"] not in self.expected[role["type"]]
+                and role["district"] not in self.legacy_districts[role["type"]]
+            ):
+                errors.append(f"unknown district name: {role['type']} {role['district']}")
+        return errors
 
     def validate_org(self, org, filename):
         self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
