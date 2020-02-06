@@ -19,7 +19,6 @@ def interactive_check(csv_name, yml_name, last_name_match):
     if last_name_match:
         choices = "a"
 
-
     while ch not in (choices + "sa"):
         click.secho(text + " (s)kip? (e)xit?", bold=True)
         ch = click.getchar()
@@ -41,7 +40,10 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
 
         if name == person["family_name"]:
             last_name_match = True
-            interactive_check(name, person["name"], last_name_match)
+            matched = interactive_check(name, person["name"], last_name_match)
+        
+        if matched:
+            break
 
 
 @click.command()
