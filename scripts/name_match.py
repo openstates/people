@@ -7,13 +7,13 @@ import csv
 from collections import defaultdict
 from utils import get_filename, get_data_dir, load_yaml, dump_obj
 
+unmatched = []
 
 def interactive_check(csv_name, yml_name, last_name_match):
 
     if last_name_match:
         click.secho(f"Last name matched between {csv_name} and {yml_name}", fg="yellow")
         text = "(a)dd name"
-        # click.secho(f"Add name to {yml_name}?", fg="yellow")
 
     ch = "~"
     if last_name_match:
@@ -37,13 +37,21 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
 
     for person in existing_people:
         last_name_match = False
+        matched = False
 
         if name == person["family_name"]:
             last_name_match = True
-            matched = interactive_check(name, person["name"], last_name_match)
-        
+            matched = True#interactive_check(name, person["name"], last_name_match)
+        elif name in person["name"]:
+            matched = True
+        elif len(name.split()) > 0 and (name.split()[0] in person["name"]):
+            # Example: West (Tammy)
+            print(name)
+            matched = True
         if matched:
             break
+    else:
+        unmatched.append(name)
 
 
 @click.command()
@@ -67,6 +75,10 @@ def entrypoint(archive_data_csv):
 
     for line in archive_data:
         find_match(line["name"], line["jurisdiction"], line["session"], line["num_occurances"], existing_people)
+
+    print("\n\nTotal unmatched:")
+    for name in unmatched:
+        print(name)
 
 if __name__ == "__main__":
     entrypoint()
