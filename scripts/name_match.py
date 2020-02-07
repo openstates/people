@@ -39,13 +39,23 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
         possible_name_match = False
         matched = False
 
+        print(person["name"])
         if name == person["family_name"]:
             possible_name_match = True
             matched = True#interactive_check(name, person["name"], possible_name_match)
         elif name in person["name"]:
             matched = True
+        elif name.split()[-1] == person["family_name"]:
+            # Example: Tom Brinkman
+            matched = True
+        elif name.split()[0].replace(",", "") == person["family_name"]:
+            # Example Kwan, Karen
+            matched = True
         elif len(name.split()) > 0 and (name.split()[0] in person["name"]):
             # Example: West (Tammy)
+            matched = True
+        elif len(name.split()) > 2 and (name.split()[2] in person["name"]):
+            #Matt Huffman, M.
             matched = True
         elif name.replace("'", "") == person["family_name"].replace("'", ""):
             # Example O'Donnell
