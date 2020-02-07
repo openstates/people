@@ -39,30 +39,34 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
         possible_name_match = False
         matched = False
 
-        cleaned_name = str.capitalize(name)
+        cleaned_name = str.lower(name)
+        cleaned_person_name = str.lower(name)
 
         if person.get("family_name") != None:
-            if cleaned_name == person["family_name"]:
+
+            cleaned_person_family_name = str.lower(person["family_name"])
+
+            if cleaned_name == cleaned_person_family_name:
                 possible_name_match = True
                 matched = True#interactive_check(name, person["name"], possible_name_match)
-            elif cleaned_name.split()[-1] == person["family_name"]:
+            elif cleaned_name.split()[-1] == cleaned_person_family_name:
                 # Example: Tom Brinkman
                 matched = True
-            elif cleaned_name.split()[0].replace(",", "") == person["family_name"]:
+            elif cleaned_name.split()[0].replace(",", "") == cleaned_person_family_name:
                 # Example Kwan, Karen
                 matched = True
-            elif cleaned_name.replace("'", "") == person["family_name"].replace("'", ""):
+            elif cleaned_name.replace("'", "") == cleaned_person_family_name.replace("'", ""):
                 # Example O'Donnell
                 matched = True
-            elif cleaned_name.replace(" ", "") == person["family_name"].replace(" ", ""):
+            elif cleaned_name.replace(" ", "") == cleaned_person_family_name.replace(" ", ""):
                 # Example Crosswhite Hader == CrosswhiteHader
                 matched = True
         elif cleaned_name in person["name"]:
             matched = True
-        elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in person["name"]):
+        elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
             # Example: West (Tammy)
             matched = True
-        elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[2] in person["name"]):
+        elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[2] in cleaned_person_name):
             #Matt Huffman, M.
             matched = True
         if matched:
