@@ -9,14 +9,14 @@ from utils import get_filename, get_data_dir, load_yaml, dump_obj
 
 unmatched = []
 
-def interactive_check(csv_name, yml_name, last_name_match):
+def interactive_check(csv_name, yml_name, possible_name_match):
 
     if last_name_match:
         click.secho(f"Last name matched between {csv_name} and {yml_name}", fg="yellow")
-        text = "(a)dd name"
+        text = "(a)dd name?"
 
     ch = "~"
-    if last_name_match:
+    if possible_name_match:
         choices = "a"
 
     while ch not in (choices + "sa"):
@@ -36,16 +36,20 @@ def interactive_check(csv_name, yml_name, last_name_match):
 def find_match(name, jurisdiction, session, num_occurances, existing_people):
 
     for person in existing_people:
-        last_name_match = False
+        possible_name_match = False
         matched = False
 
         if name == person["family_name"]:
-            last_name_match = True
-            matched = True#interactive_check(name, person["name"], last_name_match)
+            possible_name_match = True
+            matched = True#interactive_check(name, person["name"], possible_name_match)
         elif name in person["name"]:
             matched = True
         elif len(name.split()) > 0 and (name.split()[0] in person["name"]):
             # Example: West (Tammy)
+            # print(name)
+            matched = True
+        elif name.replace("'", "") == person["family_name"].replace("'", ""):
+            # Example O'Donnell
             print(name)
             matched = True
         if matched:
