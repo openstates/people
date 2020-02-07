@@ -55,6 +55,12 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
             elif cleaned_name.split()[0].replace(",", "") == cleaned_person_family_name:
                 # Example Kwan, Karen
                 matched = True
+            elif len(cleaned_name.split()) == 3 and (cleaned_name.split()[1] in cleaned_person_name):
+                # Example: Matt Huffman, M.
+                matched = True
+            elif len(cleaned_name.split()) == 4 and (cleaned_name.split()[2] in cleaned_person_name):
+                # Example: Louis W. Blessing, III
+                matched = True
             elif cleaned_name.replace("'", "") == cleaned_person_family_name.replace("'", ""):
                 # Example O'Donnell
                 matched = True
