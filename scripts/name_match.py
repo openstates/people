@@ -46,11 +46,12 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
             matched = True
         elif len(name.split()) > 0 and (name.split()[0] in person["name"]):
             # Example: West (Tammy)
-            # print(name)
             matched = True
         elif name.replace("'", "") == person["family_name"].replace("'", ""):
             # Example O'Donnell
-            print(name)
+            matched = True
+        elif name.replace(" ", "") == person["family_name"].replace(" ", ""):
+            # Example Crosswhite Hader == CrosswhiteHader
             matched = True
         if matched:
             break
