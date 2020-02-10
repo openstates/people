@@ -40,6 +40,8 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
         matched = False
 
         cleaned_name = str.lower(name)
+        cleaned_name = cleaned_name.replace(".", " ")
+
         cleaned_person_name = str.lower(name)
 
         if person.get("family_name") != None:
@@ -49,6 +51,8 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
             if cleaned_name == cleaned_person_family_name:
                 possible_name_match = True
                 matched = True#interactive_check(name, person["name"], possible_name_match)
+            elif cleaned_name in cleaned_person_family_name:
+                matched = True
             elif cleaned_name.split()[-1] == cleaned_person_family_name:
                 # Example: Tom Brinkman
                 matched = True
@@ -60,6 +64,9 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
                 matched = True
             elif len(cleaned_name.split()) == 4 and (cleaned_name.split()[2] in cleaned_person_name):
                 # Example: Louis W. Blessing, III
+                matched = True
+            elif len(cleaned_name.split()) > 4 and (cleaned_name.split()[1] in cleaned_person_family_name):
+                # Example: S. CHANG (Introduced by request of another party) in Hawaii
                 matched = True
             elif cleaned_name.replace("'", "") == cleaned_person_family_name.replace("'", ""):
                 # Example O'Donnell
@@ -78,7 +85,7 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
         if matched:
             break
     else:
-        unmatched.append(name)
+        unmatched.append(name + "::" + cleaned_person_name)
 
 
 @click.command()
