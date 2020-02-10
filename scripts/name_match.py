@@ -41,6 +41,7 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
 
         cleaned_name = str.lower(name)
         cleaned_name = cleaned_name.replace(".", " ")
+        cleaned_name = cleaned_name.replace("*", " ")
 
         cleaned_person_name = str.lower(name)
 
@@ -85,7 +86,7 @@ def find_match(name, jurisdiction, session, num_occurances, existing_people):
         if matched:
             break
     else:
-        unmatched.append(name + "::" + cleaned_person_name)
+        unmatched.append(name)
 
 
 @click.command()
