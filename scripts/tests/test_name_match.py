@@ -47,7 +47,13 @@ def test_family_name(csv_name, yaml_person, expected):
         ("Dan Schneiderman", {"name": "Dan Schneiderman"}, True),
 
         # Last name of location ZEIGLER of Montville
-        ("ZEIGLER of Montville", {"name": "Stanley Paige Zeigler"}, True),
+        ("JACKSON of Aroostook", {"name": "Troy D Jackson"}, True),
+
+        # Last Name then First Name in perense West (Tammy)
+        ("West (Tammy)", {"name": "Tammy West"}, True),
+
+        # Name with an initial at the end Matt Huffman, M.
+        ("Matt Huffman, M", {"name": "Matt Huffman"}, True),
 
     ],
 )
