@@ -34,67 +34,66 @@ def interactive_check(csv_name, yml_name, possible_name_match):
     return True
 
 
-def find_match(name, jurisdiction, session, num_occurances, existing_people):
+def find_match(name, person):
 
-    for person in existing_people:
-        possible_name_match = False
-        matched = False
+    possible_name_match = False
+    matched = False
 
-        cleaned_name = str.lower(name)
-        cleaned_name = cleaned_name.replace(".", " ")
-        cleaned_name = cleaned_name.replace("*", " ")
-        cleaned_name = cleaned_name.replace(",", " ")
+    cleaned_name = str.lower(name)
+    cleaned_name = cleaned_name.replace(".", " ")
+    cleaned_name = cleaned_name.replace("*", " ")
+    cleaned_name = cleaned_name.replace(",", " ")
 
-        cleaned_person_name = str.lower(person["name"])
+    cleaned_person_name = str.lower(person["name"])
 
-        if person.get("family_name") != None:
+    if person.get("family_name") != None:
 
-            cleaned_person_family_name = str.lower(person["family_name"])
+        cleaned_person_family_name = str.lower(person["family_name"])
 
-            if cleaned_name == cleaned_person_family_name:
-                matched = True
-            elif cleaned_name in cleaned_person_family_name:
-                matched = True
-            elif cleaned_name.split()[-1] == cleaned_person_family_name:
-                # Example: Tom Brinkman
-                matched = True
-            elif cleaned_name.split()[0].replace(",", "") == cleaned_person_family_name:
-                # Example Kwan, Karen
-                matched = True
-            elif len(cleaned_name.split()) == 3 and (cleaned_person_family_name in cleaned_name.split()[1]):
-                # Example: Matt Huffman, M.
-                matched = True
-            elif len(cleaned_name.split()) == 3 and (cleaned_name.split()[0] == cleaned_person_family_name):
-                # Example: ZEIGLER of Montville
-                matched = True
-            elif len(cleaned_name.split()) == 4 and (cleaned_name.split()[2] in cleaned_person_family_name):
-                # Example: Louis W. Blessing, III
-                matched = True
-            elif len(cleaned_name.split()) > 4 and (cleaned_name.split()[1] in cleaned_person_family_name):
-                # Example: S. CHANG (Introduced by request of another party) in Hawaii
-                matched = True
-            elif cleaned_name.replace("'", "") == cleaned_person_family_name.replace("'", ""):
-                # Example O'Donnell
-                matched = True
-            elif cleaned_name.replace(" ", "") == cleaned_person_family_name.replace(" ", ""):
-                # Example Crosswhite Hader == CrosswhiteHader
-                matched = True
-        elif cleaned_name in person["name"]:
+        if cleaned_name == cleaned_person_family_name:
             matched = True
-        elif (" of " in cleaned_name) and (cleaned_name.split(" of ")[0] in cleaned_person_name):
-            # Example: carpenter of aroostook
-            matched == True
-        elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
-            # Example: West (Tammy)
+        elif cleaned_name in cleaned_person_family_name:
             matched = True
-        elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[2] in cleaned_person_name):
-            #Matt Huffman, M.
+        elif cleaned_name.split()[-1] == cleaned_person_family_name:
+            # Example: Tom Brinkman
             matched = True
-        if matched:
-            interactive_check(name, person["name"], matched)
-            break
+        elif cleaned_name.split()[0].replace(",", "") == cleaned_person_family_name:
+            # Example Kwan, Karen
+            matched = True
+        elif len(cleaned_name.split()) == 3 and (cleaned_person_family_name in cleaned_name.split()[1]):
+            # Example: Matt Huffman, M.
+            matched = True
+        elif len(cleaned_name.split()) == 3 and (cleaned_name.split()[0] == cleaned_person_family_name):
+            # Example: ZEIGLER of Montville
+            matched = True
+        elif len(cleaned_name.split()) == 4 and (cleaned_name.split()[2] in cleaned_person_family_name):
+            # Example: Louis W. Blessing, III
+            matched = True
+        elif len(cleaned_name.split()) > 4 and (cleaned_name.split()[1] in cleaned_person_family_name):
+            # Example: S. CHANG (Introduced by request of another party) in Hawaii
+            matched = True
+        elif cleaned_name.replace("'", "") == cleaned_person_family_name.replace("'", ""):
+            # Example O'Donnell
+            matched = True
+        elif cleaned_name.replace(" ", "") == cleaned_person_family_name.replace(" ", ""):
+            # Example Crosswhite Hader == CrosswhiteHader
+            matched = True
+    elif cleaned_name in person["name"]:
+        matched = True
+    elif (" of " in cleaned_name) and (cleaned_name.split(" of ")[0] in cleaned_person_name):
+        # Example: carpenter of aroostook
+        matched == True
+    elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
+        # Example: West (Tammy)
+        matched = True
+    elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[2] in cleaned_person_name):
+        #Matt Huffman, M.
+        matched = True
+    if matched:
+        return True
+
     else:
-        unmatched.append(name)
+        return False
 
 
 @click.command()
@@ -117,7 +116,13 @@ def entrypoint(archive_data_csv):
             existing_people.append(load_yaml(f))
 
     for line in archive_data:
-        find_match(line["name"], line["jurisdiction"], line["session"], line["num_occurances"], existing_people)
+        for person in existing_people:
+            matched = find_match(line["name"], person)
+            if matched:
+                interactive_check(line["name"], person["name"], matched)
+                break
+        else:
+            unmatched.append(line["name"])
 
     print("\n\nTotal unmatched:")
     for name in unmatched:
