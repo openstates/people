@@ -45,6 +45,9 @@ def find_match(name, person):
     cleaned_name = cleaned_name.replace(",", " ")
 
     cleaned_person_name = str.lower(person["name"])
+    cleaned_person_name = cleaned_person_name.replace(".", " ")
+    cleaned_person_name = cleaned_person_name.replace("*", " ")
+    cleaned_person_name = cleaned_person_name.replace(",", " ")
 
     if person.get("family_name") != None:
 
@@ -82,16 +85,19 @@ def find_match(name, person):
         matched = True
     elif (" of " in cleaned_name) and (cleaned_name.split(" of ")[0] in cleaned_person_name):
         # Example: carpenter of aroostook
-        matched == True
+        matched = True
+    elif cleaned_name[0] == cleaned_person_name[-1]:
+        # Another example for: Carpenter of Aroostook, 
+        matched = True
     elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
         # Example: West (Tammy)
         matched = True
     elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[2] in cleaned_person_name):
         #Matt Huffman, M.
         matched = True
+
     if matched:
         return True
-
     else:
         return False
 
@@ -119,7 +125,7 @@ def entrypoint(archive_data_csv):
         for person in existing_people:
             matched = find_match(line["name"], person)
             if matched:
-                interactive_check(line["name"], person["name"], matched)
+                # interactive_check(line["name"], person["name"], matched)
                 break
         else:
             unmatched.append(line["name"])
