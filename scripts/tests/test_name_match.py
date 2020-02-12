@@ -37,3 +37,19 @@ from name_match import find_match
 )
 def test_family_name(csv_name, yaml_person, expected):
     assert find_match(csv_name, yaml_person) == expected
+
+
+# Tests with no family name
+@pytest.mark.parametrize(
+    "csv_name, yaml_person, expected",
+    [
+        # Basic Name
+        ("Dan Schneiderman", {"name": "Dan Schneiderman"}, True),
+
+        # Last name of location ZEIGLER of Montville
+        ("ZEIGLER of Montville", {"name": "Stanley Paige Zeigler"}, True),
+
+    ],
+)
+def test_no_family_name(csv_name, yaml_person, expected):
+    assert find_match(csv_name, yaml_person) == expected
