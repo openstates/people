@@ -1,6 +1,8 @@
 import pytest
 from name_match import find_match
 
+
+#  Tests that include family name within the yaml person file
 @pytest.mark.parametrize(
     "csv_name, yaml_person, expected",
     [
@@ -21,6 +23,15 @@ from name_match import find_match
 
         # Full name with initial and number at end of name
         ("Louis W. Blessing, III", {"name": "Louis W. Blessing", "family_name": "Blessing"}, True),
+
+        # First name initial then last name S. CHANG
+        ("S. CHANG ", {"name": "Stephanie Chang", "family_name": "Chang"}, True),
+
+        # Last name with an abbrivation
+        ("O'Donnell ", {"name": "Daniel O'Donnell", "family_name": "O'Donnell"}, True),
+
+        # Two Name Last Name
+        ("CrosswhiteHader ", {"name": "Denise Crosswhite Hader", "family_name": "Crosswhite Hader"}, True),
 
     ],
 )
