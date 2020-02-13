@@ -148,7 +148,6 @@ def entrypoint(archive_data_csv):
                     person_file = get_filename(person)
                     output_dir = get_data_dir(jurisdiction)
                     person_file = os.path.join(os.path.join(output_dir, "people"), person_file)
-                    # print(person_file)
                     add_to_file(line["name"], person_file)
                 break
         else:
