@@ -11,12 +11,17 @@ unmatched = []
 
 
 def add_to_file(name_to_add, person_file):
-    with open(person_file, "a+") as file:
+    other_names_found = False
+    with open(person_file, "r") as file:
         file_text = file.read()
         if "other_names:" in file_text:
+            other_names_found = True
+
+    with open(person_file, "a") as file:
+        if other_names_found:
             file.write(f"\n - name: {name_to_add}")
         else:
-            file.write("other_names:\n")
+            file.write("\nother_names:\n")
             file.write(f" - name: {name_to_add}")
 
 
