@@ -9,6 +9,17 @@ from utils import get_filename, get_data_dir, load_yaml, dump_obj
 
 unmatched = []
 
+
+def add_to_file(name_to_add, person_file):
+    with open(person_file, "a+") as file:
+        file_text = file.read()
+        if "other_names:" in file_text:
+            file.write(f"\n - name: {name_to_add}")
+        else:
+            file.write("other_names:\n")
+            file.write(f" - name: {name_to_add}")
+
+
 def interactive_check(csv_name, yml_name, possible_name_match):
 
     choices = ""
@@ -106,6 +117,7 @@ def find_match(name, person):
 @click.argument("archive_data_csv")
 def entrypoint(archive_data_csv):
     archive_data = []
+    jurisdiction = ""
     with open(archive_data_csv, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
@@ -116,6 +128,7 @@ def entrypoint(archive_data_csv):
                 "num_occurances": row['num_occurances']
             })
 
+    jurisdiction = archive_data[0]["jurisdiction"]
     existing_people = []
     for filename in glob.glob(os.path.join(get_data_dir(archive_data[0]["jurisdiction"]), "people/*.yml")):
         with open(filename) as f:
@@ -125,7 +138,13 @@ def entrypoint(archive_data_csv):
         for person in existing_people:
             matched = find_match(line["name"], person)
             if matched:
-                # interactive_check(line["name"], person["name"], matched)
+                match_confirmed = interactive_check(line["name"], person["name"], matched)
+                if match_confirmed:
+                    person_file = get_filename(person)
+                    output_dir = get_data_dir(jurisdiction)
+                    person_file = os.path.join(os.path.join(output_dir, "people"), person_file)
+                    # print(person_file)
+                    add_to_file(line["name"], person_file)
                 break
         else:
             unmatched.append(line["name"])
