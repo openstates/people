@@ -12,17 +12,21 @@ unmatched = []
 
 def add_to_file(name_to_add, person_file):
     other_names_found = False
+    same_name_found = False
     with open(person_file, "r") as file:
         file_text = file.read()
         if "other_names:" in file_text:
             other_names_found = True
+            if name_to_add in file_text:
+                same_name_found = True
 
     with open(person_file, "a") as file:
-        if other_names_found:
-            file.write(f"\n - name: {name_to_add}")
-        else:
-            file.write("\nother_names:\n")
-            file.write(f" - name: {name_to_add}")
+        if same_name_found == False:
+            if other_names_found:
+                file.write(f"\n - name: {name_to_add}")
+            else:
+                file.write("\nother_names:\n")
+                file.write(f" - name: {name_to_add}")
 
 
 def interactive_check(csv_name, yml_name, possible_name_match):
