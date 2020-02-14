@@ -25,7 +25,7 @@ def add_to_file(name_to_add, person_file):
             if other_names_found:
                 file.write(f"\n - name: {name_to_add}")
             else:
-                file.write("\nother_names:\n")
+                file.write("other_names:\n")
                 file.write(f" - name: {name_to_add}")
 
 
