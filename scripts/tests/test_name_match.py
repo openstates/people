@@ -55,6 +55,18 @@ def test_family_name(csv_name, yaml_person, expected):
         # Name with an initial at the end Matt Huffman, M.
         ("Matt Huffman, M", {"name": "Matt Huffman"}, True),
 
+        # False match
+        ("SANBORN, L. of Cumberland", {"name": "Victoria E. Morales"}, False),
+
+        # False match
+        ("SHARPE of Durham", {"name": "Victoria E. Morales"}, False),
+
+        # False match
+        ("Teresa PIERCE", {"name": "Thom Harnett"}, False),
+
+        # False match
+        ("Lisa KEIM", {"name": "Randall C. Hall"}, False),
+
     ],
 )
 def test_no_family_name(csv_name, yaml_person, expected):
