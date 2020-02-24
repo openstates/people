@@ -106,7 +106,7 @@ def find_match(name, person):
     elif (" of " in cleaned_name) and (cleaned_name.split(" of ")[0] in cleaned_person_name):
         # Example: carpenter of aroostook
         matched = True
-    elif cleaned_name[0] == cleaned_person_name[-1]:
+    elif cleaned_name.split()[0] == cleaned_person_name.split()[-1]: # Need to double check tests
         # Another example for: Carpenter of Aroostook, 
         matched = True
     elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
