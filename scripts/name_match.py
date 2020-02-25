@@ -105,22 +105,27 @@ def find_match(name, person):
         elif cleaned_name.replace(" ", "") == cleaned_person_family_name.replace(" ", ""):
             # Example Crosswhite Hader == CrosswhiteHader
             matched = True
-    elif cleaned_name in person["name"]:
+    elif cleaned_name == cleaned_person_name:
         matched = True
-    elif (" of " in cleaned_name) and (cleaned_name.split(" of ")[0] in cleaned_person_name):
+    elif cleaned_name in cleaned_person_name:
+        matched = True
+    elif (" of " in cleaned_name) and (cleaned_name.split()[0] == cleaned_person_name.split()[-1]):
         # Example: carpenter of aroostook
         matched = True
     elif cleaned_name.split()[0] == cleaned_person_name.split()[-1]: # Need to double check tests
-        # Another example for: Carpenter of Aroostook, 
+        # Another example for: Carpenter of Aroostook,
         matched = True
     elif len(cleaned_name.split()) == 2 and (cleaned_name.split()[0] == cleaned_person_name.split()[0]) and (cleaned_name.split()[-1] != cleaned_person_name.split()[-1]):
         # 'Mark BLIER' and 'Mark Lawrence'
         matched = False
-    elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
+    elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] == cleaned_person_name.split()[-1]):
         # Example: West (Tammy)
         matched = True
-    elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[2] in cleaned_person_name):
+    elif len(cleaned_name.split()) == 2 and (cleaned_name.split()[1] in cleaned_person_name):
         #Matt Huffman, M.
+        matched = True
+    elif len(cleaned_name.split()) > 2 and (cleaned_name.split()[0] in cleaned_person_name):
+        # 'SANBORN, L. of Cumberland' and 'Victoria E. Morales'
         matched = True
 
     if matched:

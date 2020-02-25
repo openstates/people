@@ -70,6 +70,9 @@ def test_family_name(csv_name, yaml_person, expected):
         # False match
         ("Mark BLIER", {"name": "Mark Lawrence"}, False),
 
+        # False match
+        ("TALBOT ROSS of Portland", {"name": "Josanne C. Dolloff"}, False),
+
     ],
 )
 def test_no_family_name(csv_name, yaml_person, expected):
