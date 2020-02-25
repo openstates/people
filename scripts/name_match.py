@@ -52,6 +52,7 @@ def interactive_check(csv_name, yml_name, possible_name_match):
     elif ch == "a":
         click.secho(" adding.", fg="green")
     elif ch == "s":
+        click.secho(" skipping.", fg="green")
         return False
 
     return True
