@@ -113,6 +113,9 @@ def find_match(name, person):
     elif cleaned_name.split()[0] == cleaned_person_name.split()[-1]: # Need to double check tests
         # Another example for: Carpenter of Aroostook, 
         matched = True
+    elif (cleaned_name.split()[0] == cleaned_person_name.split()[0]) and (cleaned_name.split()[1] != cleaned_person_name.split()[1]):
+        # 'Mark BLIER' and 'Mark Lawrence'
+        matched = False
     elif len(cleaned_name.split()) > 0 and (cleaned_name.split()[0] in cleaned_person_name):
         # Example: West (Tammy)
         matched = True
