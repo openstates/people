@@ -3,6 +3,11 @@ name: Dennis Lenz
 party:
 - name: Republican
 roles:
+- district: '50'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
 - district: '53'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
@@ -20,6 +25,8 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5112
 other_identifiers:
 - identifier: MTL000404
+  scheme: legacy_openstates
+- identifier: MTL000197
   scheme: legacy_openstates
 given_name: Dennis
 family_name: Lenz

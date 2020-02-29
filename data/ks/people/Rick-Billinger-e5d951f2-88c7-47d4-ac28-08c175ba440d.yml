@@ -3,6 +3,16 @@ name: Rick Billinger
 party:
 - name: Republican
 roles:
+- district: '121'
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '120'
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '40'
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   type: upper
@@ -20,6 +30,10 @@ extras:
   occupation: Retired Businessman/Farmer
 other_identifiers:
 - identifier: KSL000367
+  scheme: legacy_openstates
+- identifier: KSL000044
+  scheme: legacy_openstates
+- identifier: KSL000305
   scheme: legacy_openstates
 given_name: Rick
 family_name: Billinger

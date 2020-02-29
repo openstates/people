@@ -3,6 +3,11 @@ name: John Persell
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- district: 4A
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2012-12-31
 - district: 5A
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
@@ -19,3 +24,12 @@ sources:
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls91/05A.gif
 given_name: John
 family_name: Persell
+other_identifiers:
+- identifier: MNL000329
+  scheme: legacy_openstates
+- identifier: MNL000074
+  scheme: legacy_openstates
+- identifier: MNL000461
+  scheme: legacy_openstates
+- identifier: MNL000593
+  scheme: legacy_openstates

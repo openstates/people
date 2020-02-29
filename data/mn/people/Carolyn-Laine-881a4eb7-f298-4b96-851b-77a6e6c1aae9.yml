@@ -3,6 +3,16 @@ name: Carolyn Laine
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- district: 50A
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2012-12-31
+- district: 41B
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '41'
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: upper
@@ -19,6 +29,14 @@ sources:
 image: http://www.senate.mn/graphics/member_thumbnails/41Laine.jpg
 other_identifiers:
 - identifier: MNL000735
+  scheme: legacy_openstates
+- identifier: MNL000166
+  scheme: legacy_openstates
+- identifier: MNL000294
+  scheme: legacy_openstates
+- identifier: MNL000429
+  scheme: legacy_openstates
+- identifier: MNL000572
   scheme: legacy_openstates
 given_name: Carolyn
 family_name: Laine

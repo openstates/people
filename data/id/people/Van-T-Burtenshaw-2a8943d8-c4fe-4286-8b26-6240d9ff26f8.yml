@@ -7,6 +7,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
   end_date: '2018-11-30'
+  start_date: 2013-01-01
 - district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
@@ -24,6 +25,10 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Burtenshaw3140.jpg
 other_identifiers:
 - identifier: IDL000258
+  scheme: legacy_openstates
+- identifier: IDL000209
+  scheme: legacy_openstates
+- identifier: IDL000223
   scheme: legacy_openstates
 given_name: Van
 family_name: Burtenshaw

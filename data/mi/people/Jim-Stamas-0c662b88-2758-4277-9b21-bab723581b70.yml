@@ -3,6 +3,11 @@ name: Jim Stamas
 party:
 - name: Republican
 roles:
+- district: '98'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2014-12-31
 - district: '36'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -19,6 +24,8 @@ sources:
 image: http://www.senate.michigan.gov/_images/Stamas.png
 other_identifiers:
 - identifier: MIL000272
+  scheme: legacy_openstates
+- identifier: MIL000136
   scheme: legacy_openstates
 given_name: Jim
 family_name: Stamas

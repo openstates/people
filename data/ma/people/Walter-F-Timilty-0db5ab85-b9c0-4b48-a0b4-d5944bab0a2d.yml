@@ -3,6 +3,11 @@ name: Walter F. Timilty
 party:
 - name: Democratic
 roles:
+- district: Seventh Norfolk
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: Norfolk, Bristol and Plymouth
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: upper
@@ -19,6 +24,8 @@ sources:
 image: https://malegislature.gov/Legislators/Profile/170/WFT0.jpg
 other_identifiers:
 - identifier: MAL000482
+  scheme: legacy_openstates
+- identifier: MAL000185
   scheme: legacy_openstates
 given_name: Walter
 family_name: Timilty

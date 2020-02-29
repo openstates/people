@@ -3,6 +3,10 @@ name: Paul Lundeen
 party:
 - name: Republican
 roles:
+- district: '19'
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  type: lower
+  end_date: 2018-12-31
 - district: '9'
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   type: upper
@@ -20,3 +24,6 @@ sources:
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2020a_lundeen%2C%20paul.jpg
 given_name: Paul
 family_name: Lundeen
+other_identifiers:
+- identifier: COL000189
+  scheme: legacy_openstates

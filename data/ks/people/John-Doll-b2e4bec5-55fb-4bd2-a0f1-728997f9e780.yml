@@ -9,6 +9,11 @@ party:
 - name: Republican
   start_date: 2019-06-20
 roles:
+- district: '123'
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '39'
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   type: upper
@@ -26,6 +31,8 @@ extras:
   occupation: Self-Employed
 other_identifiers:
 - identifier: KSL000370
+  scheme: legacy_openstates
+- identifier: KSL000206
   scheme: legacy_openstates
 given_name: John
 family_name: Doll

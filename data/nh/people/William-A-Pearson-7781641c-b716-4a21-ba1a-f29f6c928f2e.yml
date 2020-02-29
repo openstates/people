@@ -3,6 +3,11 @@ name: William A. Pearson
 party:
 - name: Democratic
 roles:
+- district: Cheshire 4
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: Cheshire 16
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
@@ -27,6 +32,8 @@ extras:
   middle_name: A.
 other_identifiers:
 - identifier: NHL001462
+  scheme: legacy_openstates
+- identifier: NHL001124
   scheme: legacy_openstates
 given_name: William A.
 family_name: Pearson

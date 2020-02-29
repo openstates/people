@@ -3,6 +3,11 @@ name: LaTonya Johnson
 party:
 - name: Democratic
 roles:
+- district: '17'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '6'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: upper
@@ -24,6 +29,8 @@ sources:
 image: https://docs.legis.wisconsin.gov/2019/legislators/senate/1904.jpg
 other_identifiers:
 - identifier: WIL000627
+  scheme: legacy_openstates
+- identifier: WIL000515
   scheme: legacy_openstates
 given_name: LaTonya
 family_name: Johnson

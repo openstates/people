@@ -3,6 +3,10 @@ name: Mike Cuffe
 party:
 - name: Republican
 roles:
+- district: '2'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  end_date: 2018-01-01
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
@@ -14,3 +18,6 @@ contact_details:
 - email: mcuffe@interbell.net
   note: Capitol Office
   voice: 406-293-1247
+other_identifiers:
+- identifier: MTL000069
+  scheme: legacy_openstates

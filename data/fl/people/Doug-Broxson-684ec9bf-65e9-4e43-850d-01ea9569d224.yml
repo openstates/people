@@ -3,6 +3,11 @@ name: Doug Broxson
 party:
 - name: Republican
 roles:
+- district: '3'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
@@ -29,6 +34,8 @@ sources:
 image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s01_5194.jpg
 other_identifiers:
 - identifier: FLL000577
+  scheme: legacy_openstates
+- identifier: FLL000402
   scheme: legacy_openstates
 given_name: Doug
 family_name: Broxson

@@ -3,6 +3,11 @@ name: Jeff Steinborn
 party:
 - name: Democratic
 roles:
+- district: '35'
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '36'
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: upper
@@ -20,6 +25,12 @@ sources:
 image: http://www.nmlegis.gov/Images/Legislators/Senate/SSTEI.jpg
 other_identifiers:
 - identifier: NML000419
+  scheme: legacy_openstates
+- identifier: NML000155
+  scheme: legacy_openstates
+- identifier: NML000246
+  scheme: legacy_openstates
+- identifier: NML000290
   scheme: legacy_openstates
 given_name: Jeff
 family_name: Steinborn

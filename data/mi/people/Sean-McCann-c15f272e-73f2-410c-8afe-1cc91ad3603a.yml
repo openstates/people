@@ -3,6 +3,11 @@ name: Sean McCann
 party:
 - name: Democratic
 roles:
+- district: '60'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2014-12-31
 - district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -16,3 +21,6 @@ links:
 - url: https://senatedems.com/mccann/
 sources:
 - url: https://senatedems.com/mccann/
+other_identifiers:
+- identifier: MIL000098
+  scheme: legacy_openstates

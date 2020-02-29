@@ -5,6 +5,11 @@ party:
 roles:
 - district: '17'
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2018-12-31
+- district: '17'
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   type: upper
 contact_details:
 - address: 110 Irv Newhouse Building;PO Box 40417;Olympia, WA 98504
@@ -19,6 +24,8 @@ sources:
 image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/wilsonl.jpg
 other_identifiers:
 - identifier: WAL000262
+  scheme: legacy_openstates
+- identifier: WAL000214
   scheme: legacy_openstates
 given_name: Lynda
 family_name: Wilson

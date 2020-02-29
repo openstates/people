@@ -3,6 +3,21 @@ name: Shelley Hughes
 party:
 - name: Republican
 roles:
+- district: '13'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '8'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '11'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: F
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: upper
@@ -20,6 +35,12 @@ sources:
 image: http://akleg.gov/images/legislators/hus.jpg
 other_identifiers:
 - identifier: AKL000180
+  scheme: legacy_openstates
+- identifier: AKL000060
+  scheme: legacy_openstates
+- identifier: AKL000104
+  scheme: legacy_openstates
+- identifier: AKL000159
   scheme: legacy_openstates
 given_name: Shelley
 family_name: Hughes

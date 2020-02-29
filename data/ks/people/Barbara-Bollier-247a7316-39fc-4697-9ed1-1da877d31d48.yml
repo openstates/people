@@ -6,6 +6,16 @@ party:
 - name: Democratic
   start_date: '2018-12-12'
 roles:
+- district: '25'
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '21'
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   type: upper
@@ -23,6 +33,10 @@ extras:
   occupation: Retired Physician
 other_identifiers:
 - identifier: KSL000323
+  scheme: legacy_openstates
+- identifier: KSL000045
+  scheme: legacy_openstates
+- identifier: KSL000194
   scheme: legacy_openstates
 given_name: Barbara
 family_name: Bollier

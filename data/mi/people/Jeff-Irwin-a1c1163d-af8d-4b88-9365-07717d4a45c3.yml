@@ -3,6 +3,11 @@ name: Jeff Irwin
 party:
 - name: Democratic
 roles:
+- district: '53'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -16,3 +21,6 @@ links:
 - url: https://senatedems.com/irwin/
 sources:
 - url: https://senatedems.com/irwin/
+other_identifiers:
+- identifier: MIL000091
+  scheme: legacy_openstates

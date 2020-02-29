@@ -3,9 +3,15 @@ name: Gary E. Collins
 party:
 - name: Republican
 roles:
+- district: '12'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
 - district: '13'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
+  start_date: 2013-01-01
 contact_details:
 - address: 2019 E. Massachusetts Avenue, Nampa, ID 83686
   email: gcollins@house.idaho.gov
@@ -19,6 +25,10 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Collins20.jpg
 other_identifiers:
 - identifier: IDL000305
+  scheme: legacy_openstates
+- identifier: IDL000053
+  scheme: legacy_openstates
+- identifier: IDL000149
   scheme: legacy_openstates
 given_name: Gary
 family_name: Collins

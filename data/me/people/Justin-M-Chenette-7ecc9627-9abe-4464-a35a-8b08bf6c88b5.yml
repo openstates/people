@@ -3,6 +3,11 @@ name: Justin M. Chenette
 party:
 - name: Democratic
 roles:
+- district: '15'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '31'
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: upper
@@ -22,6 +27,8 @@ extras:
   middle_name: M.
 other_identifiers:
 - identifier: MEL000526
+  scheme: legacy_openstates
+- identifier: MEL000424
   scheme: legacy_openstates
 given_name: Justin
 family_name: Chenette

@@ -3,6 +3,11 @@ name: Bill Galvano
 party:
 - name: Republican
 roles:
+- district: '26'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: upper
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
@@ -29,6 +34,8 @@ sources:
 image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s21_5098.jpg
 other_identifiers:
 - identifier: FLL000521
+  scheme: legacy_openstates
+- identifier: FLL000181
   scheme: legacy_openstates
 given_name: Bill
 family_name: Galvano

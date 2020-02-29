@@ -3,6 +3,11 @@ name: Jon Lundberg
 party:
 - name: Republican
 roles:
+- district: '1'
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '4'
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   type: upper
@@ -19,6 +24,14 @@ sources:
 image: http://www.capitol.tn.gov/senate/members/images/s4.jpg
 other_identifiers:
 - identifier: TNL000489
+  scheme: legacy_openstates
+- identifier: TNL000083
+  scheme: legacy_openstates
+- identifier: TNL000217
+  scheme: legacy_openstates
+- identifier: TNL000285
+  scheme: legacy_openstates
+- identifier: TNL000322
   scheme: legacy_openstates
 given_name: Jon
 family_name: Lundberg

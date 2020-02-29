@@ -5,6 +5,11 @@ party:
 roles:
 - district: '4'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '4'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
 links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=54&session=122&legislator=1920
@@ -18,6 +23,8 @@ sources:
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/Senate/OTONDO.gif
 other_identifiers:
 - identifier: AZL000366
+  scheme: legacy_openstates
+- identifier: AZL000279
   scheme: legacy_openstates
 given_name: Lisa
 family_name: Otondo

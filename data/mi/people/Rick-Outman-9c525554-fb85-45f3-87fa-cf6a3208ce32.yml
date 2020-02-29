@@ -3,6 +3,11 @@ name: Rick Outman
 party:
 - name: Republican
 roles:
+- district: '70'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '33'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -16,3 +21,6 @@ links:
 - url: https://www.senatorrickoutman.com/
 sources:
 - url: https://www.senatorrickoutman.com/
+other_identifiers:
+- identifier: MIL000108
+  scheme: legacy_openstates

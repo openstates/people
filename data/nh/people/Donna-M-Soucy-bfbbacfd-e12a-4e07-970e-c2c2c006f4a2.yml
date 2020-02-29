@@ -6,6 +6,12 @@ roles:
 - district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '18'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  type: upper
+  start_date: 2015-01-01
 contact_details:
 - address: '"State House, Room 120";107 North Main Street;Concord, NH 03301'
   email: donna.soucy@leg.state.nh.us
@@ -27,6 +33,10 @@ extras:
   middle_name: M.
 other_identifiers:
 - identifier: NHL001351
+  scheme: legacy_openstates
+- identifier: NHL000813
+  scheme: legacy_openstates
+- identifier: NHL001304
   scheme: legacy_openstates
 given_name: Donna M.
 family_name: Soucy

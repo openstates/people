@@ -3,9 +3,15 @@ name: Joe Sam Queen
 party:
 - name: Democratic
 roles:
+- district: '47'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  type: upper
+  start_date: 2009-01-01
+  end_date: 2010-12-31
 - district: '119'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   type: lower
+  start_date: 2013-01-01
 contact_details:
 - address: 209 Hillview Cir.;Waynesville, NC 28786
   note: District Office
@@ -24,3 +30,8 @@ extras:
   - Jackson
   - Swain
   notice: null
+other_identifiers:
+- identifier: NCL000040
+  scheme: legacy_openstates
+- identifier: NCL000294
+  scheme: legacy_openstates

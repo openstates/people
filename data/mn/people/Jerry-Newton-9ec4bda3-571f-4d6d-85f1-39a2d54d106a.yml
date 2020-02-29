@@ -3,6 +3,16 @@ name: Jerry Newton
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- district: 49B
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2010-12-31
+- district: 37A
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '37'
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: upper
@@ -19,6 +29,12 @@ sources:
 image: http://www.senate.mn/graphics/member_thumbnails/37Newton.jpg
 other_identifiers:
 - identifier: MNL000748
+  scheme: legacy_openstates
+- identifier: MNL000165
+  scheme: legacy_openstates
+- identifier: MNL000454
+  scheme: legacy_openstates
+- identifier: MNL000635
   scheme: legacy_openstates
 given_name: Jerry
 family_name: Newton

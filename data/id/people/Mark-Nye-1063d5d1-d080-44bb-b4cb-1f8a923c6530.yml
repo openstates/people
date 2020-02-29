@@ -5,6 +5,11 @@ party:
 roles:
 - district: '29'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
+- district: '29'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
 contact_details:
 - address: P.O. Box N, Pocatello, ID 83205-0040
@@ -19,6 +24,8 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Nye3134.jpg
 other_identifiers:
 - identifier: IDL000286
+  scheme: legacy_openstates
+- identifier: IDL000212
   scheme: legacy_openstates
 given_name: Mark
 family_name: Nye

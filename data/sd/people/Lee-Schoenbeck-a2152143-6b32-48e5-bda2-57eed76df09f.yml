@@ -5,6 +5,11 @@ party:
 roles:
 - district: '5'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
+- district: '5'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: upper
 contact_details:
 - email: Lee.Schoenbeck@sdlegislature.gov
@@ -19,3 +24,6 @@ sources:
 image: https://sdlegislature.gov/inc/img/LegPlaceholder.png
 extras:
   occupation: Attorney
+other_identifiers:
+- identifier: SDL000218
+  scheme: legacy_openstates
