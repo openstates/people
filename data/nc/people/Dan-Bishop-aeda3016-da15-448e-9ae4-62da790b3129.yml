@@ -3,6 +3,11 @@ name: Dan Bishop
 party:
 - name: Republican
 roles:
+- district: '104'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '39'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   type: upper
@@ -25,6 +30,8 @@ extras:
   notice: null
 other_identifiers:
 - identifier: NCL000388
+  scheme: legacy_openstates
+- identifier: NCL000343
   scheme: legacy_openstates
 given_name: Dan
 family_name: Bishop

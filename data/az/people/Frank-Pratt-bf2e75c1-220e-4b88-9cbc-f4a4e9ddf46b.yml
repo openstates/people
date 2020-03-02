@@ -3,6 +3,16 @@ name: Frank Pratt
 party:
 - name: Republican
 roles:
+- district: '23'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2012-12-31
+- district: '8'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
 - district: '8'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
@@ -18,6 +28,12 @@ sources:
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/Senate/PRATT.jpg
 other_identifiers:
 - identifier: AZL000398
+  scheme: legacy_openstates
+- identifier: AZL000170
+  scheme: legacy_openstates
+- identifier: AZL000080
+  scheme: legacy_openstates
+- identifier: AZL000283
   scheme: legacy_openstates
 given_name: Frank
 family_name: Pratt

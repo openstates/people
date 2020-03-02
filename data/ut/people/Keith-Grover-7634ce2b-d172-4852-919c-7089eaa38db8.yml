@@ -3,6 +3,11 @@ name: Keith Grover
 party:
 - name: Republican
 roles:
+- district: '61'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '15'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: upper
@@ -27,6 +32,10 @@ extras:
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1913
 other_identifiers:
 - identifier: UTL000307
+  scheme: legacy_openstates
+- identifier: UTL000058
+  scheme: legacy_openstates
+- identifier: UTL000272
   scheme: legacy_openstates
 given_name: Keith
 family_name: Grover

@@ -3,6 +3,16 @@ name: John Rizzo
 party:
 - name: Democratic
 roles:
+- district: '40'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '19'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: upper
@@ -20,6 +30,10 @@ sources:
 image: https://www.senate.mo.gov/18web/wp-content/uploads/2016/12/Rizzo2018-683x1024.jpg
 other_identifiers:
 - identifier: MOL000470
+  scheme: legacy_openstates
+- identifier: MOL000154
+  scheme: legacy_openstates
+- identifier: MOL000336
   scheme: legacy_openstates
 given_name: John
 family_name: Rizzo

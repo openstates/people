@@ -3,6 +3,10 @@ name: Jessie Danielson
 party:
 - name: Democratic
 roles:
+- district: '24'
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  type: lower
+  end_date: 2018-12-31
 - district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   type: upper
@@ -20,3 +24,6 @@ sources:
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2020a_danielson%2C%20jessie.jpg
 given_name: Jessie
 family_name: Danielson
+other_identifiers:
+- identifier: COL000183
+  scheme: legacy_openstates

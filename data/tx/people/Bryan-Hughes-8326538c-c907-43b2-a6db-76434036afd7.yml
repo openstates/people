@@ -3,12 +3,17 @@ name: Bryan Hughes
 party:
 - name: Republican
 roles:
+- district: '5'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2018-12-31
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   type: upper
 contact_details:
 - address: The Honorable Bryan Hughes;P.O. Box 12068;Capitol Station;Austin, TX 78711
-  note: 'Capitol Office'
+  note: Capitol Office
   voice: 512-463-0101
 - address: 5411 Plaza Drive, Suite D;Texarkana, Texas 75503
   fax: 903-923-0391
@@ -27,6 +32,12 @@ sources:
 - url: https://senate.texas.gov/member.php?d=1
 other_identifiers:
 - identifier: TXL000716
+  scheme: legacy_openstates
+- identifier: TXL000285
+  scheme: legacy_openstates
+- identifier: TXL000103
+  scheme: legacy_openstates
+- identifier: TXL000630
   scheme: legacy_openstates
 given_name: Bryan
 family_name: Hughes

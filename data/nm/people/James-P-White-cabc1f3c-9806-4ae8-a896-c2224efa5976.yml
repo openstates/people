@@ -3,6 +3,11 @@ name: James P. White
 party:
 - name: Republican
 roles:
+- district: '20'
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2014-12-31
 - district: '19'
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: upper
@@ -21,6 +26,10 @@ sources:
 image: http://www.nmlegis.gov/Images/Legislators/Senate/SWHIJ.jpg
 other_identifiers:
 - identifier: NML000432
+  scheme: legacy_openstates
+- identifier: NML000062
+  scheme: legacy_openstates
+- identifier: NML000231
   scheme: legacy_openstates
 given_name: James P.
 family_name: White

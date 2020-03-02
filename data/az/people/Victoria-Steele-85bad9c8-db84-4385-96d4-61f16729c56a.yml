@@ -5,6 +5,11 @@ party:
 roles:
 - district: '9'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
+- district: '9'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
   start_date: '2019-01-14'
 contact_details:
@@ -17,3 +22,6 @@ links:
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=S
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/Senate/STEELE.gif
+other_identifiers:
+- identifier: AZL000291
+  scheme: legacy_openstates

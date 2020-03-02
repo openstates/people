@@ -3,6 +3,16 @@ name: Denny Hoskins
 party:
 - name: Republican
 roles:
+- district: '121'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '54'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: upper
@@ -18,6 +28,10 @@ sources:
 image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/09/HoskinsW-200x300.jpg
 other_identifiers:
 - identifier: MOL000472
+  scheme: legacy_openstates
+- identifier: MOL000094
+  scheme: legacy_openstates
+- identifier: MOL000272
   scheme: legacy_openstates
 given_name: Denny
 family_name: Hoskins

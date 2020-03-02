@@ -3,6 +3,11 @@ name: Brian Strickland
 party:
 - name: Republican
 roles:
+- district: '111'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2018-12-31
 - district: '17'
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: upper
@@ -25,4 +30,6 @@ extras:
   guid: 835
 other_identifiers:
 - identifier: GAL000491
+  scheme: legacy_openstates
+- identifier: GAL000361
   scheme: legacy_openstates

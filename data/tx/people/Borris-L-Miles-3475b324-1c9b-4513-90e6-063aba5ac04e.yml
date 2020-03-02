@@ -3,13 +3,18 @@ name: Borris L. Miles
 party:
 - name: Democratic
 roles:
+- district: '146'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2018-12-31
 - district: '13'
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   type: upper
 contact_details:
 - address: The Honorable Borris L. Miles;P.O. Box 12068;Capitol Station;Austin, TX
     78711
-  note: 'Capitol Office'
+  note: Capitol Office
   voice: 512-463-0113
 - address: 3300 Lyons Avenue, Suite 301;Houston, TX 77020
   note: District Office
@@ -27,6 +32,10 @@ sources:
 - url: https://senate.texas.gov/member.php?d=13
 other_identifiers:
 - identifier: TXL000707
+  scheme: legacy_openstates
+- identifier: TXL000395
+  scheme: legacy_openstates
+- identifier: TXL000648
   scheme: legacy_openstates
 given_name: Borris
 family_name: Miles

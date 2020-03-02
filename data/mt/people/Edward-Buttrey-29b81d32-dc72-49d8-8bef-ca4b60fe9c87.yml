@@ -3,6 +3,10 @@ name: Edward Buttrey
 party:
 - name: Republican
 roles:
+- district: '11'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: upper
+  end_date: 2018-12-31
 - district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
@@ -14,3 +18,8 @@ contact_details:
 - email: Ed.Buttrey@mtleg.gov
   note: Capitol Office
   voice: 406-452-6460
+other_identifiers:
+- identifier: MTL000009
+  scheme: legacy_openstates
+- identifier: MTL000296
+  scheme: legacy_openstates

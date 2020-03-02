@@ -3,6 +3,11 @@ name: Dale Zorn
 party:
 - name: Republican
 roles:
+- district: '56'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2014-12-31
 - district: '17'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -19,6 +24,12 @@ sources:
 image: http://www.senate.michigan.gov/_images/Zorn.png
 other_identifiers:
 - identifier: MIL000301
+  scheme: legacy_openstates
+- identifier: MIL000094
+  scheme: legacy_openstates
+- identifier: MIL000169
+  scheme: legacy_openstates
+- identifier: MIL000221
   scheme: legacy_openstates
 given_name: Dale
 family_name: Zorn

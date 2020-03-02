@@ -7,6 +7,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
   end_date: '2018-12-31'
+  start_date: 2013-01-01
 - district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
@@ -28,6 +29,10 @@ extras:
   middle_name: E.
 other_identifiers:
 - identifier: NHL001368
+  scheme: legacy_openstates
+- identifier: NHL000482
+  scheme: legacy_openstates
+- identifier: NHL000913
   scheme: legacy_openstates
 given_name: Shannon E.
 family_name: Chandley

@@ -3,6 +3,16 @@ name: Shannon Grove
 party:
 - name: Republican
 roles:
+- district: '32'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '34'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: upper
@@ -12,7 +22,7 @@ contact_details:
   note: Capitol Office
   voice: 916-651-4016
 - address: 7248 Joshua Lane, Suite B, Yucca Valley, CA 92284
-  note: 'District Office'
+  note: District Office
   voice: 760-228-3136
 links:
 - url: https://senate.ca.gov/sd16
@@ -22,3 +32,10 @@ image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senato
 given_name: Shannon
 family_name: Grove
 gender: Female
+other_identifiers:
+- identifier: CAL000140
+  scheme: legacy_openstates
+- identifier: CAL000249
+  scheme: legacy_openstates
+- identifier: CAL000372
+  scheme: legacy_openstates

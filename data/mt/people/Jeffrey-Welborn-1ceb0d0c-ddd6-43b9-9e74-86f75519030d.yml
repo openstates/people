@@ -3,6 +3,11 @@ name: Jeffrey Welborn
 party:
 - name: Republican
 roles:
+- district: '72'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '36'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
@@ -20,6 +25,8 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5021
 other_identifiers:
 - identifier: MTL000394
+  scheme: legacy_openstates
+- identifier: MTL000147
   scheme: legacy_openstates
 given_name: Jeffrey
 family_name: Welborn

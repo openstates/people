@@ -3,6 +3,11 @@ name: Nick Collins
 party:
 - name: Democratic
 roles:
+- district: Fourth Suffolk
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: First Suffolk
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: upper
@@ -19,6 +24,10 @@ sources:
 image: https://malegislature.gov/Legislators/Profile/170/N_C0.jpg
 other_identifiers:
 - identifier: MAL000589
+  scheme: legacy_openstates
+- identifier: MAL000069
+  scheme: legacy_openstates
+- identifier: MAL000411
   scheme: legacy_openstates
 given_name: Nick
 family_name: Collins

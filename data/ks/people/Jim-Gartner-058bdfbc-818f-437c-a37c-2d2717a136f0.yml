@@ -6,6 +6,7 @@ roles:
 - district: '53'
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   type: lower
+  start_date: 2015-01-01
 contact_details:
 - address: Room 43-S;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
   email: Jim.gartner@house.ks.gov
@@ -20,6 +21,8 @@ extras:
   occupation: Retired
 other_identifiers:
 - identifier: KSL000350
+  scheme: legacy_openstates
+- identifier: KSL000322
   scheme: legacy_openstates
 given_name: Jim
 family_name: Gartner

@@ -3,6 +3,16 @@ name: Rick Gray
 party:
 - name: Republican
 roles:
+- district: '9'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '21'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
@@ -18,6 +28,10 @@ sources:
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/Senate/GRAY.jpg
 other_identifiers:
 - identifier: AZL000407
+  scheme: legacy_openstates
+- identifier: AZL000151
+  scheme: legacy_openstates
+- identifier: AZL000260
   scheme: legacy_openstates
 given_name: Rick
 family_name: Gray

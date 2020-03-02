@@ -3,6 +3,11 @@ name: Ed McBroom
 party:
 - name: Republican
 roles:
+- district: '108'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '38'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -15,3 +20,6 @@ links:
 - url: https://www.senatoredmcbroom.com/
 sources:
 - url: https://www.senatoredmcbroom.com/
+other_identifiers:
+- identifier: MIL000146
+  scheme: legacy_openstates

@@ -3,6 +3,10 @@ name: Susan Webber
 party:
 - name: Democratic
 roles:
+- district: '16'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  end_date: 2018-01-01
 - district: '8'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
@@ -14,3 +18,6 @@ contact_details:
 - email: Susan.Webber@mtleg.gov
   note: Capitol Office
   voice: 406-450-1894
+other_identifiers:
+- identifier: MTL000316
+  scheme: legacy_openstates

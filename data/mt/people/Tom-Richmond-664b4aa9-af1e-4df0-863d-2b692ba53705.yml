@@ -3,6 +3,11 @@ name: Tom Richmond
 party:
 - name: Republican
 roles:
+- district: '56'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '28'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
@@ -20,6 +25,8 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5018
 other_identifiers:
 - identifier: MTL000381
+  scheme: legacy_openstates
+- identifier: MTL000290
   scheme: legacy_openstates
 given_name: Tom
 family_name: Richmond

@@ -3,9 +3,15 @@ name: Chuck Winder
 party:
 - name: Republican
 roles:
+- district: '14'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: upper
+  start_date: 2011-01-01
+  end_date: 2012-12-31
 - district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
+  start_date: 2013-01-01
 contact_details:
 - address: 5528 N. Ebbetts Avenue, Boise, ID 83713
   email: cwinder@senate.idaho.gov
@@ -19,6 +25,10 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Winder753.jpg
 other_identifiers:
 - identifier: IDL000309
+  scheme: legacy_openstates
+- identifier: IDL000035
+  scheme: legacy_openstates
+- identifier: IDL000138
   scheme: legacy_openstates
 given_name: Chuck
 family_name: Winder

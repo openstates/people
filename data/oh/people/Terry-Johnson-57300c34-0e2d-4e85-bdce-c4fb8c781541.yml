@@ -3,6 +3,10 @@ name: Terry Johnson
 party:
 - name: Republican
 roles:
+- district: '90'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: lower
+  end_date: 2018-12-31
 - district: '14'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: upper
@@ -19,3 +23,8 @@ sources:
 image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2932.jpg
 given_name: Terry
 family_name: Johnson
+other_identifiers:
+- identifier: OHL000122
+  scheme: legacy_openstates
+- identifier: OHL000259
+  scheme: legacy_openstates

@@ -4,6 +4,11 @@ party:
 - name: Democratic
 - name: Independent
 roles:
+- district: '43'
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  type: lower
+  start_date: 2012-01-01
+  end_date: 2015-12-31
 - district: '45'
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   type: lower
@@ -25,6 +30,8 @@ extras:
     Farm Bureau, Rotary, Mason, and Mississippi Poultry Association.
 other_identifiers:
 - identifier: MSL000271
+  scheme: legacy_openstates
+- identifier: MSL000222
   scheme: legacy_openstates
 given_name: Michael T.
 family_name: Evans

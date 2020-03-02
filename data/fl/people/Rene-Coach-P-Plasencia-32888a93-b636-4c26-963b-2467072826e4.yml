@@ -3,6 +3,11 @@ name: Rene "Coach P" Plasencia
 party:
 - name: Republican
 roles:
+- district: '49'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '50'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
@@ -32,6 +37,8 @@ sources:
 image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4607.jpg
 other_identifiers:
 - identifier: FLL000533
+  scheme: legacy_openstates
+- identifier: FLL000385
   scheme: legacy_openstates
 given_name: Rene
 family_name: Plasencia

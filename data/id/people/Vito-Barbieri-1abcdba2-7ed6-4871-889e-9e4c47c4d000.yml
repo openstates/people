@@ -3,9 +3,15 @@ name: Vito Barbieri
 party:
 - name: Republican
 roles:
+- district: '3'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
 - district: '2'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
+  start_date: 2013-01-01
 contact_details:
 - address: 564 E. Prairie Avenue, Dalton Gardens, ID 83815
   email: vbar@house.idaho.gov
@@ -19,6 +25,10 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Barbieri1171.jpg
 other_identifiers:
 - identifier: IDL000320
+  scheme: legacy_openstates
+- identifier: IDL000038
+  scheme: legacy_openstates
+- identifier: IDL000143
   scheme: legacy_openstates
 given_name: Vito
 family_name: Barbieri

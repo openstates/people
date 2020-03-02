@@ -3,6 +3,11 @@ name: Stephanie Kunze
 party:
 - name: Republican
 roles:
+- district: '24'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: upper
@@ -18,6 +23,8 @@ sources:
 image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2865.jpg
 other_identifiers:
 - identifier: OHL000327
+  scheme: legacy_openstates
+- identifier: OHL000193
   scheme: legacy_openstates
 given_name: Stephanie
 family_name: Kunze

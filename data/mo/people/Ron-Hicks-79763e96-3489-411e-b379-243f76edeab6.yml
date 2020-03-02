@@ -3,6 +3,11 @@ name: Ron Hicks
 party:
 - name: Republican
 roles:
+- district: '107'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '102'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
@@ -19,3 +24,6 @@ sources:
 extras:
   first_name: Ron
   last_name: Hicks
+other_identifiers:
+- identifier: MOL000268
+  scheme: legacy_openstates

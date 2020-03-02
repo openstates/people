@@ -3,9 +3,15 @@ name: Jim Guthrie
 party:
 - name: Republican
 roles:
+- district: '29'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
 - district: '28'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
+  start_date: 2013-01-01
 contact_details:
 - address: 320 S. Marsh Creek Road, Inkom, ID 83245
   email: jguthrie@senate.idaho.gov
@@ -19,6 +25,10 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Guthrie1179.jpg
 other_identifiers:
 - identifier: IDL000323
+  scheme: legacy_openstates
+- identifier: IDL000061
+  scheme: legacy_openstates
+- identifier: IDL000121
   scheme: legacy_openstates
 given_name: Jim
 family_name: Guthrie
