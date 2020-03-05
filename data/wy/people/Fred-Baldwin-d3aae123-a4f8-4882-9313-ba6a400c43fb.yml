@@ -3,6 +3,11 @@ name: Fred Baldwin
 party:
 - name: Republican
 roles:
+- district: '18'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2018-12-31
 - district: '14'
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   type: upper
@@ -45,4 +50,6 @@ extras:
   wy_leg_id: 2007
 other_identifiers:
 - identifier: WYL000152
+  scheme: legacy_openstates
+- identifier: WYL000128
   scheme: legacy_openstates

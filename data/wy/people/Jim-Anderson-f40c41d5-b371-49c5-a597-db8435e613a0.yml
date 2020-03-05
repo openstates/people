@@ -3,6 +3,11 @@ name: Jim Anderson
 party:
 - name: Republican
 roles:
+- district: '2'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  type: upper
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '28'
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   type: upper
@@ -38,4 +43,12 @@ extras:
   wy_leg_id: 1985
 other_identifiers:
 - identifier: WYL000168
+  scheme: legacy_openstates
+- identifier: WYL000001
+  scheme: legacy_openstates
+- identifier: WYL000092
+  scheme: legacy_openstates
+- identifier: WYL000113
+  scheme: legacy_openstates
+- identifier: WYL000135
   scheme: legacy_openstates

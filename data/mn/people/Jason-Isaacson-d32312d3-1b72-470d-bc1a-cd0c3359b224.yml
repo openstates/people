@@ -3,6 +3,11 @@ name: Jason Isaacson
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- district: 42B
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '42'
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: upper
@@ -18,6 +23,10 @@ sources:
 image: http://www.senate.mn/graphics/member_thumbnails/42Isaacson.jpg
 other_identifiers:
 - identifier: MNL000768
+  scheme: legacy_openstates
+- identifier: MNL000423
+  scheme: legacy_openstates
+- identifier: MNL000600
   scheme: legacy_openstates
 given_name: Jason
 family_name: Isaacson

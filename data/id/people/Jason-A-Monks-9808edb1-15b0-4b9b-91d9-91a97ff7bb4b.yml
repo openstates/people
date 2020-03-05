@@ -6,6 +6,7 @@ roles:
 - district: '22'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
+  start_date: 2013-01-01
 contact_details:
 - address: 3865 S. Black Cat Road, Nampa, ID 83687
   email: jmonks@house.idaho.gov
@@ -19,6 +20,8 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Monks2084.jpg
 other_identifiers:
 - identifier: IDL000256
+  scheme: legacy_openstates
+- identifier: IDL000169
   scheme: legacy_openstates
 given_name: Jason
 family_name: Monks

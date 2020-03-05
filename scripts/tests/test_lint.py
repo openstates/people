@@ -218,8 +218,8 @@ def test_expected_districts_vacancies():
                     "chamber": "legislature",
                     "district": "1",
                     "vacant_until": datetime.date(2100, 1, 1),
-                },
-            ],
+                }
+            ]
         }
     }
     expected = get_expected_districts(vacancies, "ne")
@@ -235,7 +235,7 @@ def test_expected_districts_vacancies():
                             "district": "2",
                             "vacant_until": datetime.date(2000, 1, 1),
                         }
-                    ],
+                    ]
                 }
             },
             "ne",
@@ -266,10 +266,7 @@ def test_compare_districts_overfill():
 
 
 def test_validator_check_https():
-    settings = {
-        "http_whitelist": ["http://bad.example.com"],
-        "parties": [],
-    }
+    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     person = {
@@ -285,10 +282,7 @@ def test_validator_check_https():
 
 
 def test_person_summary():
-    settings = {
-        "http_whitelist": ["http://bad.example.com"],
-        "parties": [],
-    }
+    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     people = [
@@ -326,10 +320,7 @@ def test_person_summary():
 
 
 def test_person_duplicates():
-    settings = {
-        "http_whitelist": ["http://bad.example.com"],
-        "parties": [],
-    }
+    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     people = [

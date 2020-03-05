@@ -3,6 +3,11 @@ name: Caleb Rowden
 party:
 - name: Republican
 roles:
+- district: '44'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '19'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: upper
@@ -19,6 +24,8 @@ sources:
 image: https://www.senate.mo.gov/18Web/wp-content/uploads/photo-gallery/Senator Portraits/thumb/Rowden1a-200x300.jpg
 other_identifiers:
 - identifier: MOL000471
+  scheme: legacy_openstates
+- identifier: MOL000339
   scheme: legacy_openstates
 given_name: Caleb
 family_name: Rowden

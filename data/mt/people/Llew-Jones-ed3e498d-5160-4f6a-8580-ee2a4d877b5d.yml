@@ -3,6 +3,10 @@ name: Llew Jones
 party:
 - name: Republican
 roles:
+- district: '9'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: upper
+  end_date: 2018-01-01
 - district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
@@ -14,3 +18,8 @@ contact_details:
 - email: Llew.Jones@mtleg.gov
   note: Capitol Office
   voice: 406-271-3104
+other_identifiers:
+- identifier: MTL000021
+  scheme: legacy_openstates
+- identifier: MTL000238
+  scheme: legacy_openstates

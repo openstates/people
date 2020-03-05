@@ -3,6 +3,11 @@ name: Erik Simonson
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- district: 7B
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: upper
@@ -19,6 +24,10 @@ sources:
 image: http://www.senate.mn/graphics/member_thumbnails/07Simonson.jpg
 other_identifiers:
 - identifier: MNL000750
+  scheme: legacy_openstates
+- identifier: MNL000475
+  scheme: legacy_openstates
+- identifier: MNL000575
   scheme: legacy_openstates
 given_name: Erik
 family_name: Simonson

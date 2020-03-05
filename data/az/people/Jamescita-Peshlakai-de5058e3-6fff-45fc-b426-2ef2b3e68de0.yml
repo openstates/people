@@ -5,6 +5,11 @@ party:
 roles:
 - district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '7'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
 links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=54&session=122&legislator=1923
@@ -18,6 +23,8 @@ sources:
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/Senate/PESHLAKAI.jpg
 other_identifiers:
 - identifier: AZL000371
+  scheme: legacy_openstates
+- identifier: AZL000280
   scheme: legacy_openstates
 given_name: Jamescita
 family_name: Peshlakai

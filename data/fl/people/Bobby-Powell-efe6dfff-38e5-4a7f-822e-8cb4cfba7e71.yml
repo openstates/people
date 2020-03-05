@@ -3,6 +3,11 @@ name: Bobby Powell
 party:
 - name: Democratic
 roles:
+- district: '88'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '30'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
@@ -29,6 +34,8 @@ sources:
 image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s30_5201.jpg
 other_identifiers:
 - identifier: FLL000630
+  scheme: legacy_openstates
+- identifier: FLL000280
   scheme: legacy_openstates
 given_name: Bobby
 family_name: Powell

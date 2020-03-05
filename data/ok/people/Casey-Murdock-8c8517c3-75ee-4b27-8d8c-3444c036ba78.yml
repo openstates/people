@@ -3,6 +3,11 @@ name: Casey Murdock
 party:
 - name: Republican
 roles:
+- district: '61'
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '27'
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
   type: upper
@@ -19,6 +24,8 @@ extras:
   email: murdock@oksenate.gov
 other_identifiers:
 - identifier: OKL000328
+  scheme: legacy_openstates
+- identifier: OKL000194
   scheme: legacy_openstates
 given_name: Casey
 family_name: Murdock

@@ -3,6 +3,16 @@ name: Jim Abeler
 party:
 - name: Republican
 roles:
+- district: 48B
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2012-12-31
+- district: 35A
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: upper
@@ -19,6 +29,12 @@ sources:
 image: http://www.senate.mn/graphics/member_thumbnails/35Abeler.jpg
 other_identifiers:
 - identifier: MNL000729
+  scheme: legacy_openstates
+- identifier: MNL000226
+  scheme: legacy_openstates
+- identifier: MNL000163
+  scheme: legacy_openstates
+- identifier: MNL000370
   scheme: legacy_openstates
 given_name: Jim
 family_name: Abeler

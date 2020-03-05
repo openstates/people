@@ -5,6 +5,11 @@ party:
 roles:
 - district: '34'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
+- district: '34'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: upper
 contact_details:
 - email: Jeffrey.Partridge@sdlegislature.gov
@@ -18,6 +23,8 @@ extras:
   occupation: Financial Advisor
 other_identifiers:
 - identifier: SDL000281
+  scheme: legacy_openstates
+- identifier: SDL000216
   scheme: legacy_openstates
 given_name: Jeffrey D
 family_name: Partridge

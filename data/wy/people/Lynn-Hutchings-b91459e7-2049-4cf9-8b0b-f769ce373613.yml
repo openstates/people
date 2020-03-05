@@ -3,6 +3,11 @@ name: Lynn Hutchings
 party:
 - name: Republican
 roles:
+- district: '42'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
 - district: '5'
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   type: upper
@@ -28,3 +33,6 @@ extras:
   religion: Christian
   spouse_given_name: Thomas
   wy_leg_id: 1997
+other_identifiers:
+- identifier: WYL000101
+  scheme: legacy_openstates

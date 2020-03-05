@@ -3,6 +3,11 @@ name: Mark L. Walker
 party:
 - name: Democratic
 roles:
+- district: '66'
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2010-12-31
 - district: '53'
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   type: lower
@@ -20,3 +25,6 @@ sources:
 - url: http://ilga.gov/house/default.asp?GA=101
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
 image: http://ilga.gov/images/members/{BC2AF76D-FAE4-44C4-8632-AA4E629A9678}.jpg
+other_identifiers:
+- identifier: ILL000830
+  scheme: legacy_openstates

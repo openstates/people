@@ -3,6 +3,11 @@ name: Larry Kump
 party:
 - name: Republican
 roles:
+- district: '52'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
 - district: '59'
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   type: lower
@@ -19,3 +24,10 @@ sources:
 image: http://www.legis.state.wv.us/images/members/2019/house/kump_larry.jpg
 given_name: Larry
 family_name: Kump
+other_identifiers:
+- identifier: WVL000128
+  scheme: legacy_openstates
+- identifier: WVL000220
+  scheme: legacy_openstates
+- identifier: WVL000267
+  scheme: legacy_openstates

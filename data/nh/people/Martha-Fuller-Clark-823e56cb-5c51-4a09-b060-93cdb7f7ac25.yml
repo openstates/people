@@ -6,6 +6,12 @@ roles:
 - district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '21'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  type: upper
+  start_date: 2015-01-01
 contact_details:
 - address: '"Legislative Office Building, Room 102-A";33 North State Street;Concord,
     NH 03301'
@@ -28,6 +34,10 @@ extras:
   middle_name: ''
 other_identifiers:
 - identifier: NHL001475
+  scheme: legacy_openstates
+- identifier: NHL000806
+  scheme: legacy_openstates
+- identifier: NHL001308
   scheme: legacy_openstates
 given_name: Martha Fuller
 family_name: Clark

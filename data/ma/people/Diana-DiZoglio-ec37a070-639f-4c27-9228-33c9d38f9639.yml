@@ -7,6 +7,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: lower
   end_date: 2018-12-31
+  start_date: 2013-01-01
 - district: First Essex
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: upper
@@ -25,6 +26,8 @@ sources:
 image: https://malegislature.gov/Legislators/Profile/170/D_D0.jpg
 other_identifiers:
 - identifier: MAL000429
+  scheme: legacy_openstates
+- identifier: MAL000226
   scheme: legacy_openstates
 given_name: Diana
 family_name: DiZoglio

@@ -3,6 +3,11 @@ name: Glenn Moniz
 party:
 - name: Republican
 roles:
+- district: '46'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2018-12-31
 - district: '10'
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   type: upper
@@ -38,4 +43,6 @@ extras:
   wy_leg_id: 1259
 other_identifiers:
 - identifier: WYL000151
+  scheme: legacy_openstates
+- identifier: WYL000072
   scheme: legacy_openstates

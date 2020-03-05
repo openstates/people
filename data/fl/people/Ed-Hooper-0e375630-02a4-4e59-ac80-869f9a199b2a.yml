@@ -3,6 +3,16 @@ name: Ed Hooper
 party:
 - name: Republican
 roles:
+- district: '50'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2012-12-31
+- district: '67'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
 - district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
@@ -27,3 +37,8 @@ sources:
 - url: http://www.flsenate.gov/Senators/s16
 - url: http://www.flsenate.gov/Senators/2018-2020/S16
 image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s16_5344.jpg
+other_identifiers:
+- identifier: FLL000091
+  scheme: legacy_openstates
+- identifier: FLL000251
+  scheme: legacy_openstates

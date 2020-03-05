@@ -3,6 +3,11 @@ name: Jim Keane
 party:
 - name: Democratic
 roles:
+- district: '38'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: upper
+  start_date: 2011-01-01
+  end_date: 2016-12-31
 - district: '73'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
@@ -19,6 +24,8 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5132
 other_identifiers:
 - identifier: MTL000358
+  scheme: legacy_openstates
+- identifier: MTL000023
   scheme: legacy_openstates
 given_name: Jim
 family_name: Keane

@@ -3,6 +3,11 @@ name: Peter MacGregor
 party:
 - name: Republican
 roles:
+- district: '73'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2014-12-31
 - district: '28'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: upper
@@ -19,6 +24,8 @@ sources:
 image: http://www.senate.michigan.gov/_images/MacGregor.png
 other_identifiers:
 - identifier: MIL000274
+  scheme: legacy_openstates
+- identifier: MIL000111
   scheme: legacy_openstates
 given_name: Peter
 family_name: MacGregor

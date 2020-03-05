@@ -3,6 +3,16 @@ name: Mike Lang
 party:
 - name: Republican
 roles:
+- district: '35'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '33'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '17'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
@@ -20,6 +30,10 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5012
 other_identifiers:
 - identifier: MTL000408
+  scheme: legacy_openstates
+- identifier: MTL000195
+  scheme: legacy_openstates
+- identifier: MTL000321
   scheme: legacy_openstates
 given_name: Mike
 family_name: Lang

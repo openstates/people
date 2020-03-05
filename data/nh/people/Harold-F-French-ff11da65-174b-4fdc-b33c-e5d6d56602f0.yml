@@ -3,6 +3,11 @@ name: Harold F. French
 party:
 - name: Republican
 roles:
+- district: Merrimack 2
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
@@ -28,6 +33,8 @@ extras:
   middle_name: F.
 other_identifiers:
 - identifier: NHL001442
+  scheme: legacy_openstates
+- identifier: NHL001120
   scheme: legacy_openstates
 given_name: Harold F.
 family_name: French

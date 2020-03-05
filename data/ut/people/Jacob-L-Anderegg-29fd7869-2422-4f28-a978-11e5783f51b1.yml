@@ -3,6 +3,11 @@ name: Jacob L. Anderegg
 party:
 - name: Republican
 roles:
+- district: '6'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2018-12-31
 - district: '13'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: upper
@@ -24,6 +29,10 @@ extras:
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411359
 other_identifiers:
 - identifier: UTL000288
+  scheme: legacy_openstates
+- identifier: UTL000122
+  scheme: legacy_openstates
+- identifier: UTL000234
   scheme: legacy_openstates
 given_name: Jacob
 family_name: Anderegg

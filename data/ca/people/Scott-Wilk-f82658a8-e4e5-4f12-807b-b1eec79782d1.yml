@@ -3,6 +3,11 @@ name: Scott Wilk
 party:
 - name: Republican
 roles:
+- district: '38'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: upper
@@ -11,7 +16,7 @@ contact_details:
   note: Capitol Office
   voice: 916-651-4021
 - address: 14343 Civic Drive, First Floor, Victorville, CA 92392
-  note: 'District Office'
+  note: District Office
   voice: 760-843-8414
 links:
 - url: http://senate.ca.gov/sd21
@@ -20,6 +25,8 @@ sources:
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/wilk.jpg
 other_identifiers:
 - identifier: CAL000505
+  scheme: legacy_openstates
+- identifier: CAL000413
   scheme: legacy_openstates
 given_name: Scott
 family_name: Wilk

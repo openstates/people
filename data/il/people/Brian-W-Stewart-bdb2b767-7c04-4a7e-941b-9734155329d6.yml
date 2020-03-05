@@ -3,6 +3,10 @@ name: Brian W. Stewart
 party:
 - name: Republican
 roles:
+- district: '89'
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  type: lower
+  end_date: 2018-12-31
 - district: '45'
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   type: upper
@@ -20,3 +24,6 @@ sources:
 - url: http://ilga.gov/senate/default.asp?GA=101
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2720
 image: http://ilga.gov/images/members/{9542D32E-E8F8-4E42-963E-23FC7621D747}.jpg
+other_identifiers:
+- identifier: ILL000980
+  scheme: legacy_openstates

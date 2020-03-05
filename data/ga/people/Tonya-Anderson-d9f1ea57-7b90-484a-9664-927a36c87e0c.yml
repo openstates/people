@@ -3,6 +3,11 @@ name: Tonya Anderson
 party:
 - name: Democratic
 roles:
+- district: '92'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '43'
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: upper
@@ -25,4 +30,6 @@ extras:
   guid: 807
 other_identifiers:
 - identifier: GAL000458
+  scheme: legacy_openstates
+- identifier: GAL000241
   scheme: legacy_openstates

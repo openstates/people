@@ -3,6 +3,11 @@ name: Ryan Weld
 party:
 - name: Republican
 roles:
+- district: '2'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   type: upper
@@ -21,6 +26,8 @@ sources:
 image: http://www.legis.state.wv.us/images/members/2019/senate/weld_ryan.jpg
 other_identifiers:
 - identifier: WVL000376
+  scheme: legacy_openstates
+- identifier: WVL000313
   scheme: legacy_openstates
 given_name: Ryan
 family_name: Weld

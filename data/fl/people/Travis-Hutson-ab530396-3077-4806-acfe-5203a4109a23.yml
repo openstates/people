@@ -3,6 +3,16 @@ name: Travis Hutson
 party:
 - name: Republican
 roles:
+- district: '24'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2014-12-31
+- district: '6'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  type: upper
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
@@ -31,6 +41,10 @@ sources:
 image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s07_5186.jpg
 other_identifiers:
 - identifier: FLL000590
+  scheme: legacy_openstates
+- identifier: FLL000253
+  scheme: legacy_openstates
+- identifier: FLL000408
   scheme: legacy_openstates
 given_name: Travis
 family_name: Hutson

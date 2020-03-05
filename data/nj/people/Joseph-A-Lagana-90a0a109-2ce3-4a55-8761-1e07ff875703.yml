@@ -5,6 +5,11 @@ party:
 roles:
 - district: '38'
   jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  type: lower
+  start_date: 2014-01-01
+  end_date: 2017-12-31
+- district: '38'
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
   type: upper
 contact_details:
 - address: 205 Robin Rd., Suite 122;Paramus, NJ 07652
@@ -20,6 +25,8 @@ image: http://www.njleg.state.nj.us/members/memberphotos/lagana_color.jpg
 gender: Male
 other_identifiers:
 - identifier: NJL000234
+  scheme: legacy_openstates
+- identifier: NJL000182
   scheme: legacy_openstates
 given_name: Joseph
 family_name: Lagana

@@ -3,6 +3,11 @@ name: Eddie J. Lambert
 party:
 - name: Republican
 roles:
+- district: '59'
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  type: lower
+  start_date: 2012-01-01
+  end_date: 2015-12-31
 - district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   type: upper
@@ -18,6 +23,14 @@ sources:
 - url: http://senate.la.gov/senators/senpage.asp?SenID=18
 other_identifiers:
 - identifier: LAL000805
+  scheme: legacy_openstates
+- identifier: LAL000232
+  scheme: legacy_openstates
+- identifier: LAL000382
+  scheme: legacy_openstates
+- identifier: LAL000583
+  scheme: legacy_openstates
+- identifier: LAL000700
   scheme: legacy_openstates
 given_name: Eddie J.
 family_name: Lambert

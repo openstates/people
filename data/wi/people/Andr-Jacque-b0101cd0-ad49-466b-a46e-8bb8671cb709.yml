@@ -3,6 +3,10 @@ name: "Andr\xE9 Jacque"
 party:
 - name: Republican
 roles:
+- district: '2'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  type: lower
+  end_date: 2018-12-31
 - district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: upper
@@ -16,3 +20,8 @@ links:
 sources:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1941
 image: https://docs.legis.wisconsin.gov/2019/legislators/senate/1941.jpg
+other_identifiers:
+- identifier: WIL000461
+  scheme: legacy_openstates
+- identifier: WIL000549
+  scheme: legacy_openstates

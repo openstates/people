@@ -3,6 +3,11 @@ name: Bill Dodd
 party:
 - name: Democratic
 roles:
+- district: '4'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: '3'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: upper
@@ -11,7 +16,7 @@ contact_details:
   note: Capitol Office
   voice: 916-651-4003
 - address: 50 D Street, Suite 300, Santa Rosa, CA 95404
-  note: 'District Office'
+  note: District Office
   voice: 707-576-2093
 links:
 - url: http://sd03.senate.ca.gov
@@ -20,6 +25,8 @@ sources:
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/dodd.jpg
 other_identifiers:
 - identifier: CAL000514
+  scheme: legacy_openstates
+- identifier: CAL000453
   scheme: legacy_openstates
 given_name: Bill
 family_name: Dodd

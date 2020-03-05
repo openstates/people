@@ -3,6 +3,10 @@ name: Mike Foote
 party:
 - name: Democratic
 roles:
+- district: '12'
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  type: lower
+  end_date: 2018-12-31
 - district: '17'
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   type: upper
@@ -20,3 +24,6 @@ sources:
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2020a_foote%2C%20mike.jpg
 given_name: Mike
 family_name: Foote
+other_identifiers:
+- identifier: COL000136
+  scheme: legacy_openstates

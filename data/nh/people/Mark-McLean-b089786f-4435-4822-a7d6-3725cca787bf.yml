@@ -3,6 +3,11 @@ name: Mark McLean
 party:
 - name: Republican
 roles:
+- district: Hillsborough 15
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  type: lower
+  start_date: 2015-01-01
+  end_date: 2016-12-31
 - district: Hillsborough 44
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
@@ -24,6 +29,8 @@ extras:
   middle_name: ''
 other_identifiers:
 - identifier: NHL001507
+  scheme: legacy_openstates
+- identifier: NHL001152
   scheme: legacy_openstates
 given_name: Mark
 family_name: McLean

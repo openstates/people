@@ -3,6 +3,11 @@ name: Mia S. McLeod
 party:
 - name: Democratic
 roles:
+- district: '79'
+  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
+  type: lower
+  start_date: 2013-01-01
+  end_date: 2016-12-31
 - district: '22'
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   type: upper
@@ -18,6 +23,8 @@ sources:
 image: http://www.scstatehouse.gov/images/members/0279545421.jpg
 other_identifiers:
 - identifier: SCL000246
+  scheme: legacy_openstates
+- identifier: SCL000194
   scheme: legacy_openstates
 given_name: Mia S.
 family_name: McLeod

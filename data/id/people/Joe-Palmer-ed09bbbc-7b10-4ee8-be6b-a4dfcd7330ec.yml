@@ -6,6 +6,7 @@ roles:
 - district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
+  start_date: 2011-01-01
 contact_details:
 - address: 1524 N. Meridian Road, Meridian, ID 83642
   email: jpalmer@house.idaho.gov
@@ -19,6 +20,8 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Palmer749.jpg
 other_identifiers:
 - identifier: IDL000330
+  scheme: legacy_openstates
+- identifier: IDL000082
   scheme: legacy_openstates
 given_name: Joe
 family_name: Palmer

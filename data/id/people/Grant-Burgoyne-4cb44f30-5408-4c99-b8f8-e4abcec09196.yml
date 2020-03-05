@@ -5,7 +5,13 @@ party:
 roles:
 - district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  type: lower
+  start_date: 2011-01-01
+  end_date: 2014-12-31
+- district: '16'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
+  start_date: 2015-01-01
 contact_details:
 - address: 2203 Mountain View Drive, Boise , ID 83706
   email: gburgoyne@senate.idaho.gov
@@ -19,6 +25,10 @@ sources:
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directory/Burgoyne746.jpg
 other_identifiers:
 - identifier: IDL000275
+  scheme: legacy_openstates
+- identifier: IDL000050
+  scheme: legacy_openstates
+- identifier: IDL000202
   scheme: legacy_openstates
 given_name: Grant
 family_name: Burgoyne

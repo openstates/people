@@ -5,6 +5,11 @@ party:
 roles:
 - district: '30'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: lower
+  start_date: 2009-01-01
+  end_date: 2014-12-31
+- district: '30'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: upper
 contact_details:
 - email: Lance.Russell@sdlegislature.gov
@@ -18,6 +23,8 @@ extras:
   occupation: Attorney
 other_identifiers:
 - identifier: SDL000315
+  scheme: legacy_openstates
+- identifier: SDL000088
   scheme: legacy_openstates
 given_name: Lance S
 family_name: Russell
