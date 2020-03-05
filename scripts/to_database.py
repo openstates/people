@@ -301,7 +301,7 @@ def load_directory(files, type, jurisdiction_id, purge):
 
     if type == "person":
         from opencivicdata.core.models import Person
-        from opencivicdata.legislative.models import BillSponsorship
+        from opencivicdata.legislative.models import BillSponsorship, PersonVote
 
         existing_ids = set(
             Person.objects.filter(
@@ -360,6 +360,7 @@ def load_directory(files, type, jurisdiction_id, purge):
         for old, new in merged.items():
             click.secho(f"   {old} => {new}", fg="yellow")
             BillSponsorship.objects.filter(person_id=old).update(person_id=new)
+            PersonVote.objects.filter(voter_id=old).update(voter_id=new)
             ModelCls.objects.filter(id=old).delete()
             missing_ids.remove(old)
 
