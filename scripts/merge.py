@@ -262,7 +262,19 @@ def entrypoint(incoming, old, new, retirement):
         )
 
         unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
-        click.secho(f"{len(unmatched)} were unmatched")
+        click.secho(f"{len(unmatched)} people were unmatched")
+
+        existing_coms = []
+        incoming_coms = []
+        for filename in glob.glob(os.path.join(get_data_dir(abbr), "organizations/*.yml")):
+            with open(filename) as f:
+                existing_coms.append(load_yaml(f))
+        for filename in glob.glob(os.path.join(incoming_dir, "organizations/*.yml")):
+            with open(filename) as f:
+                incoming_coms.append(load_yaml(f))
+        click.secho(
+            f"analyzing {len(existing_coms)} existing orgs and {len(incoming_coms)} incoming"
+        )
 
     if old and new:
         with open(old) as f:
