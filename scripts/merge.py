@@ -115,10 +115,10 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
     return unmatched
 
 
-def copy_new_incoming(abbr, new):
+def copy_new_incoming(abbr, new, _type):
     fname = get_filename(new)
-    oldfname = f"incoming/{abbr}/people/{fname}".format(fname)
-    newfname = f"data/{abbr}/people/{fname}".format(fname)
+    oldfname = f"incoming/{abbr}/{_type}/{fname}".format(fname)
+    newfname = f"data/{abbr}/{_type}/{fname}".format(fname)
     click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
     os.rename(oldfname, newfname)
 
@@ -181,7 +181,7 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
         click.secho(" merged.", fg="green")
         os.remove(newfname)
     elif ch == "r":
-        copy_new_incoming(abbr, new)
+        copy_new_incoming(abbr, new, "people")
         retire(abbr, old, new, retirement)
     elif ch == "s":
         return False
@@ -217,7 +217,13 @@ def merge_scraped_coms(abbr, old, new):
         if old_com:
             print("match", c["name"])
         else:
-            print(">>>> creating", c["name"])
+            copy_new_incoming(abbr, c, "organizations")
+
+    # remove unmatched old committees
+    for com in old_by_key.values():
+        fn = get_filename(com)
+        click.secho(f"removing {fn}", fg="yellow")
+        os.remove(os.path.join(get_data_dir(abbr), "organizations", fn))
 
 
 @click.command()
