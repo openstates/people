@@ -210,6 +210,16 @@ def merge_people(old, new, keep_both_ids=False):
     return old
 
 
+def merge_scraped_coms(abbr, old, new):
+    old_by_key = {(c["parent"], c["name"]): c for c in old}
+    for c in new:
+        old_com = old_by_key.pop((c["parent"], c["name"]), None)
+        if old_com:
+            print("match", c["name"])
+        else:
+            print(">>>> creating", c["name"])
+
+
 @click.command()
 @click.option(
     "--incoming",
@@ -275,6 +285,7 @@ def entrypoint(incoming, old, new, retirement):
         click.secho(
             f"analyzing {len(existing_coms)} existing orgs and {len(incoming_coms)} incoming"
         )
+        merge_scraped_coms(abbr, existing_coms, incoming_coms)
 
     if old and new:
         with open(old) as f:
