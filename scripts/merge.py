@@ -210,6 +210,16 @@ def merge_people(old, new, keep_both_ids=False):
     return old
 
 
+def merge_scraped_coms(abbr, old, new):
+    old_by_key = {(c["parent"], c["name"]): c for c in old}
+    for c in new:
+        old_com = old_by_key.pop((c["parent"], c["name"]), None)
+        if old_com:
+            print("match", c["name"])
+        else:
+            print(">>>> creating", c["name"])
+
+
 @click.command()
 @click.option(
     "--incoming",
@@ -262,7 +272,20 @@ def entrypoint(incoming, old, new, retirement):
         )
 
         unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
-        click.secho(f"{len(unmatched)} were unmatched")
+        click.secho(f"{len(unmatched)} people were unmatched")
+
+        existing_coms = []
+        incoming_coms = []
+        for filename in glob.glob(os.path.join(get_data_dir(abbr), "organizations/*.yml")):
+            with open(filename) as f:
+                existing_coms.append(load_yaml(f))
+        for filename in glob.glob(os.path.join(incoming_dir, "organizations/*.yml")):
+            with open(filename) as f:
+                incoming_coms.append(load_yaml(f))
+        click.secho(
+            f"analyzing {len(existing_coms)} existing orgs and {len(incoming_coms)} incoming"
+        )
+        merge_scraped_coms(abbr, existing_coms, incoming_coms)
 
     if old and new:
         with open(old) as f:
