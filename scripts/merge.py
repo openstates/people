@@ -115,10 +115,10 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
     return unmatched
 
 
-def copy_new_incoming(abbr, new):
+def copy_new_incoming(abbr, new, _type):
     fname = get_filename(new)
-    oldfname = f"incoming/{abbr}/people/{fname}".format(fname)
-    newfname = f"data/{abbr}/people/{fname}".format(fname)
+    oldfname = f"incoming/{abbr}/{_type}/{fname}".format(fname)
+    newfname = f"data/{abbr}/{_type}/{fname}".format(fname)
     click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
     os.rename(oldfname, newfname)
 
@@ -181,7 +181,7 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
         click.secho(" merged.", fg="green")
         os.remove(newfname)
     elif ch == "r":
-        copy_new_incoming(abbr, new)
+        copy_new_incoming(abbr, new, "people")
         retire(abbr, old, new, retirement)
     elif ch == "s":
         return False
@@ -210,11 +210,36 @@ def merge_people(old, new, keep_both_ids=False):
     return old
 
 
+def merge_scraped_coms(abbr, old, new):
+    old_by_key = {(c["parent"], c["name"]): c for c in old}
+    for c in new:
+        old_com = old_by_key.pop((c["parent"], c["name"]), None)
+        if old_com:
+            old_com["sources"] = c["sources"]
+            old_com["memberships"] = c["memberships"]
+            fname = os.path.join(get_data_dir(abbr), "organizations", get_filename(old_com))
+            dump_obj(old_com, filename=fname)
+            click.secho(f"updated {fname}")
+            os.remove(f"incoming/{abbr}/organizations/{get_filename(c)}")
+        else:
+            copy_new_incoming(abbr, c, "organizations")
+
+    # remove unmatched old committees
+    for com in old_by_key.values():
+        fn = get_filename(com)
+        click.secho(f"removing {fn}", fg="yellow")
+        os.remove(os.path.join(get_data_dir(abbr), "organizations", fn))
+
+
 @click.command()
 @click.option(
     "--incoming",
     default=None,
     help="Operate in incoming mode, argument should be state abbr to scan.",
+)
+@click.option(
+    "--committees/--no-committees",
+    help="Enable/Disable experimental committee merge (off by default)",
 )
 @click.option(
     "--retirement",
@@ -231,7 +256,7 @@ def merge_people(old, new, keep_both_ids=False):
     default=None,
     help="In merge mode, this is the newer file that will be removed after merge.",
 )
-def entrypoint(incoming, old, new, retirement):
+def entrypoint(incoming, old, new, retirement, committees):
     """
         Script to assist with merging legislator files.
 
@@ -262,7 +287,21 @@ def entrypoint(incoming, old, new, retirement):
         )
 
         unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
-        click.secho(f"{len(unmatched)} were unmatched")
+        click.secho(f"{len(unmatched)} people were unmatched")
+
+    if incoming and committees:
+        existing_coms = []
+        incoming_coms = []
+        for filename in glob.glob(os.path.join(get_data_dir(abbr), "organizations/*.yml")):
+            with open(filename) as f:
+                existing_coms.append(load_yaml(f))
+        for filename in glob.glob(os.path.join(incoming_dir, "organizations/*.yml")):
+            with open(filename) as f:
+                incoming_coms.append(load_yaml(f))
+        click.secho(
+            f"analyzing {len(existing_coms)} existing orgs and {len(incoming_coms)} incoming"
+        )
+        merge_scraped_coms(abbr, existing_coms, incoming_coms)
 
     if old and new:
         with open(old) as f:
