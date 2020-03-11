@@ -238,6 +238,10 @@ def merge_scraped_coms(abbr, old, new):
     help="Operate in incoming mode, argument should be state abbr to scan.",
 )
 @click.option(
+    "--committees/--no-committees",
+    help="Enable/Disable experimental committee merge (off by default)",
+)
+@click.option(
     "--retirement",
     default=None,
     help="Set retirement date for all people marked retired (in incoming mode).",
@@ -252,7 +256,7 @@ def merge_scraped_coms(abbr, old, new):
     default=None,
     help="In merge mode, this is the newer file that will be removed after merge.",
 )
-def entrypoint(incoming, old, new, retirement):
+def entrypoint(incoming, old, new, retirement, committees):
     """
         Script to assist with merging legislator files.
 
@@ -285,6 +289,7 @@ def entrypoint(incoming, old, new, retirement):
         unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
         click.secho(f"{len(unmatched)} people were unmatched")
 
+    if incoming and committees:
         existing_coms = []
         incoming_coms = []
         for filename in glob.glob(os.path.join(get_data_dir(abbr), "organizations/*.yml")):
