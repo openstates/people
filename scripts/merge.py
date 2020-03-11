@@ -215,7 +215,12 @@ def merge_scraped_coms(abbr, old, new):
     for c in new:
         old_com = old_by_key.pop((c["parent"], c["name"]), None)
         if old_com:
-            print("match", c["name"])
+            old_com["sources"] = c["sources"]
+            old_com["memberships"] = c["memberships"]
+            fname = os.path.join(get_data_dir(abbr), "organizations", get_filename(old_com))
+            dump_obj(old_com, filename=fname)
+            click.secho(f"updated {fname}")
+            os.remove(f"incoming/{abbr}/organizations/{get_filename(c)}")
         else:
             copy_new_incoming(abbr, c, "organizations")
 
