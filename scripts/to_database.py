@@ -3,8 +3,6 @@ import os
 import sys
 import glob
 from functools import lru_cache
-import django
-from django import conf
 from django.db import transaction
 import click
 import openstates_metadata as metadata
@@ -14,6 +12,7 @@ from utils import (
     get_all_abbreviations,
     load_yaml,
     legacy_districts,
+    init_django,
 )
 
 
@@ -379,30 +378,6 @@ def load_directory(files, type, jurisdiction_id, purge):
         f"processed {len(ids)} {type} files, {created_count} created, " f"{updated_count} updated",
         fg="green",
     )
-
-
-def init_django():  # pragma: no cover
-    conf.settings.configure(
-        conf.global_settings,
-        SECRET_KEY="not-important",
-        DEBUG=False,
-        INSTALLED_APPS=(
-            "django.contrib.contenttypes",
-            "opencivicdata.core.apps.BaseConfig",
-            "opencivicdata.legislative.apps.BaseConfig",
-        ),
-        DATABASES={
-            "default": {
-                "ENGINE": "django.contrib.gis.db.backends.postgis",
-                "NAME": os.environ["PGDATABASE"],
-                "USER": os.environ["PGUSER"],
-                "PASSWORD": os.environ["PGPASSWORD"],
-                "HOST": os.environ["PGHOST"],
-            }
-        },
-        MIDDLEWARE_CLASSES=(),
-    )
-    django.setup()
 
 
 def create_parties():
