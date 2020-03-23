@@ -2,80 +2,62 @@
 """Script to create CSVs of unmatched legislators given a state and session"""
 
 import csv
-from collections import Counter
+from collections import Counter, defaultdict
 from utils import get_jurisdiction_id, init_django
 import click
 
 
 init_django()
 
-from opencivicdata.legislative.models import (
-    LegislativeSession,
-    PersonVote,
-    BillSponsorship,
-)  # noqa
+from opencivicdata.legislative.models import PersonVote, BillSponsorship  # noqa
 
 
-def archive_leg_to_csv(state_abbr=None, session=None):
-    output_filename = f"unmatched_{state_abbr}_{session}.csv"
+def archive_leg_to_csv(state_abbr=None):
+    output_filename = f"unmatched_{state_abbr}.csv"
 
     jurisdiction_id = get_jurisdiction_id(state_abbr)
 
+    # name -> session -> count
     missing_votes = Counter()
     missing_sponsors = Counter()
+    sessions_for_name = defaultdict(set)
 
     voters = PersonVote.objects.filter(
-        vote_event__bill__legislative_session__identifier=session,
-        vote_event__bill__legislative_session__jurisdiction_id=jurisdiction_id,
-        voter_id=None,
-    )
+        vote_event__legislative_session__jurisdiction_id=jurisdiction_id, voter_id=None
+    ).select_related("vote_event__legislative_session")
     for voter in voters:
         missing_votes[voter.voter_name] += 1
+        sessions_for_name[voter.voter_name].add(voter.vote_event.legislative_session.identifier)
 
     bill_sponsors = BillSponsorship.objects.filter(
-        bill__legislative_session__identifier=session,
         bill__legislative_session__jurisdiction_id=jurisdiction_id,
         person_id=None,
         organization_id=None,
-    )
+    ).select_related("bill__legislative_session")
     for bill_sponsor in bill_sponsors:
         missing_sponsors[bill_sponsor.name] += 1
+        sessions_for_name[bill_sponsor.name].add(bill_sponsor.bill.legislative_session.identifier)
 
-    all_names = set(missing_votes) | set(missing_sponsors)
+    all_names = sorted(sessions_for_name.keys())
 
-    if all_names:
-        with open(output_filename, "w") as outf:
-            out = csv.DictWriter(
-                outf, ("name", "jurisdiction", "session", "votes", "sponsorships")
-            )
-            out.writeheader()
-            for name in sorted(all_names):
-                obj = {
-                    "name": name,
-                    "jurisdiction": state_abbr,
-                    "session": session,
-                    "votes": missing_votes[name],
-                    "sponsorships": missing_sponsors[name],
-                }
-                out.writerow(obj)
-    else:
-        print(f"no unmatched for {session}")
+    with open(output_filename, "w") as outf:
+        out = csv.DictWriter(outf, ("name", "jurisdiction", "sessions", "votes", "sponsorships"))
+        out.writeheader()
+        for name in all_names:
+            obj = {
+                "name": name,
+                "jurisdiction": state_abbr,
+                "sessions": "; ".join(sorted(sessions_for_name[name])),
+                "votes": missing_votes[name],
+                "sponsorships": missing_sponsors[name],
+            }
+            out.writerow(obj)
 
 
 @click.command()
 @click.argument("state_abbr", nargs=1)
-@click.argument("session", nargs=1, required=False)
 def export_unmatched(state_abbr=None, session=None):
-    jurisdiction_id = get_jurisdiction_id(state_abbr)
-
-    if session:
-        archive_leg_to_csv(state_abbr, session)
-    else:
-        sessions = LegislativeSession.objects.filter(jurisdiction_id=jurisdiction_id).values_list(
-            "identifier", flat=True
-        )
-        for session in sessions:
-            archive_leg_to_csv(state_abbr, session)
+    archive_leg_to_csv(state_abbr)
 
 
 if __name__ == "__main__":
