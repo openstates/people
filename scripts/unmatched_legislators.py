@@ -2,12 +2,12 @@
 """Script to create CSVs of unmatched legislators given a state and session"""
 import csv
 from collections import Counter, defaultdict
-from utils import get_jurisdiction_id, init_django
+from utils import get_jurisdiction_id, init_django, get_all_abbreviations
 import click
 
 
 def archive_leg_to_csv(state_abbr=None):
-    from opencivicdata.legislative.models import PersonVote, BillSponsorship  # noqa
+    from opencivicdata.legislative.models import PersonVote, BillSponsorship
     from django.db.models import Count, F
 
     output_filename = f"unmatched_{state_abbr}.csv"
@@ -60,9 +60,13 @@ def archive_leg_to_csv(state_abbr=None):
 
 
 @click.command()
-@click.argument("state_abbr", nargs=1)
-def export_unmatched(state_abbr=None, session=None):
-    archive_leg_to_csv(state_abbr)
+@click.argument("abbreviations", nargs=-1)
+def export_unmatched(abbreviations=None):
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        archive_leg_to_csv(abbr)
 
 
 if __name__ == "__main__":
