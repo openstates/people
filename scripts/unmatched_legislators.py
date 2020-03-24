@@ -92,29 +92,49 @@ def get_matching_person(jurisdiction_id, name):
 
 @transaction.atomic
 def check_historical_matches(abbr, dry=True):
-    from opencivicdata.legislative.models import PersonVote
+    from opencivicdata.legislative.models import PersonVote, BillSponsorship
 
     jurisdiction_id = get_jurisdiction_id(abbr)
     voters, sponsorships = get_unmatched(jurisdiction_id)
 
-    for voter in voters:
-        person = get_matching_person(jurisdiction_id, voter["name"])
+    for rec in voters:
+        person = get_matching_person(jurisdiction_id, rec["name"])
         if person:
             click.secho(
-                f"updating {voter['n']} records for {voter['name']} "
-                f"session={voter['session']} to {person}",
+                f"updating {rec['n']} votes for {rec['name']} "
+                f"session={rec['session']} to {person}",
                 fg="green",
             )
-        if not dry:
+        if person and not dry:
             to_update = PersonVote.objects.filter(
                 vote_event__legislative_session__jurisdiction_id=jurisdiction_id,
-                vote_event__legislative_session__identifier=voter["session"],
-                voter_name=voter["name"],
+                vote_event__legislative_session__identifier=rec["session"],
+                voter_name=rec["name"],
                 voter_id=None,
             )
-            if to_update.count() != voter["n"]:
-                raise AbortTransaction(f"mismatched counts for {voter}, got {to_update.count()}")
+            if to_update.count() != rec["n"]:
+                raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
             to_update.update(voter=person)
+
+    for rec in sponsorships:
+        person = get_matching_person(jurisdiction_id, rec["name"])
+        if person:
+            click.secho(
+                f"updating {rec['n']} sponsorships for {rec['name']} "
+                f"session={rec['session']} to {person}",
+                fg="green",
+            )
+        if person and not dry:
+            to_update = BillSponsorship.objects.filter(
+                bill__legislative_session__jurisdiction_id=jurisdiction_id,
+                bill__legislative_session__identifier=rec["session"],
+                name=rec["name"],
+                person_id=None,
+                organization_id=None,
+            )
+            if to_update.count() != rec["n"]:
+                raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
+            to_update.update(person=person)
 
 
 @click.command()
@@ -122,13 +142,11 @@ def check_historical_matches(abbr, dry=True):
 @click.option("--dump/--no-dump")
 @click.option("--match/--no-match")
 @click.option("--dry/--no-dry", default=True)
-def export_unmatched(abbreviations, dump, match, dry):
+def process_unmatched(abbreviations, dump, match, dry):
     if not abbreviations:
         abbreviations = get_all_abbreviations()
 
     for abbr in abbreviations:
-        if dump:
-            archive_leg_to_csv(abbr)
         if match:
             if dry:
                 click.secho("dry run, nothing will be saved", fg="blue")
@@ -136,8 +154,10 @@ def export_unmatched(abbreviations, dump, match, dry):
                 check_historical_matches(abbr, dry=dry)
             except AbortTransaction as e:
                 click.secho(f"{e}\ntransaction aborted!", fg="red")
+        if dump:
+            archive_leg_to_csv(abbr)
 
 
 if __name__ == "__main__":
     init_django()
-    export_unmatched()
+    process_unmatched()
