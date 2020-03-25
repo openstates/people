@@ -2,9 +2,10 @@
 """Script to create CSVs of unmatched legislators given a state and session"""
 import csv
 from collections import Counter, defaultdict
+from functools import lru_cache
 from utils import get_jurisdiction_id, init_django, get_all_abbreviations
 import click
-from django.db import transaction
+from django.db.models import Q, F, Count
 
 
 class AbortTransaction(Exception):
@@ -13,9 +14,8 @@ class AbortTransaction(Exception):
 
 def get_unmatched(jurisdiction_id):
     from opencivicdata.legislative.models import PersonVote, BillSponsorship
-    from django.db.models import Count, F
 
-    voters = (
+    voters = list(
         PersonVote.objects.filter(
             vote_event__legislative_session__jurisdiction_id=jurisdiction_id, voter_id=None,
         )
@@ -23,7 +23,7 @@ def get_unmatched(jurisdiction_id):
         .annotate(n=Count("id"))
     )
 
-    bill_sponsors = (
+    bill_sponsors = list(
         BillSponsorship.objects.filter(
             bill__legislative_session__jurisdiction_id=jurisdiction_id,
             person_id=None,
@@ -73,9 +73,9 @@ def archive_leg_to_csv(state_abbr=None):
             out.writerow(obj)
 
 
+@lru_cache(1000)
 def get_matching_person(jurisdiction_id, name):
     from opencivicdata.core.models import Person
-    from django.db.models import Q
 
     candidates = list(
         Person.objects.filter(
@@ -90,51 +90,50 @@ def get_matching_person(jurisdiction_id, name):
         click.secho(f"{len(candidates)} possible matches for {name}: {candidates}", fg="yellow")
 
 
-@transaction.atomic
-def check_historical_matches(abbr, dry=True):
+def update_objects(jurisdiction_id, objects, obj_type, dry):
     from opencivicdata.legislative.models import PersonVote, BillSponsorship
 
+    assert obj_type in ("vote", "sponsorship")
+
+    for n, rec in enumerate(objects):
+        person = get_matching_person(jurisdiction_id, rec["name"])
+        if person:
+            click.secho(
+                f"[{n+1}/{len(objects)}] updating {rec['n']} {obj_type}s for {rec['name']} "
+                f"session={rec['session']} to {person}",
+                fg="green",
+            )
+        if person and not dry:
+            if obj_type == "vote":
+                to_update = PersonVote.objects.filter(
+                    vote_event__legislative_session__jurisdiction_id=jurisdiction_id,
+                    vote_event__legislative_session__identifier=rec["session"],
+                    voter_name=rec["name"],
+                    voter_id=None,
+                )
+            elif obj_type == "sponsorship":
+                to_update = BillSponsorship.objects.filter(
+                    bill__legislative_session__jurisdiction_id=jurisdiction_id,
+                    bill__legislative_session__identifier=rec["session"],
+                    name=rec["name"],
+                    person_id=None,
+                    organization_id=None,
+                )
+
+            if to_update.count() != rec["n"]:
+                raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
+
+            if obj_type == "vote":
+                to_update.update(voter=person)
+            elif obj_type == "sponsorship":
+                to_update.update(person=person)
+
+
+def check_historical_matches(abbr, dry=True):
     jurisdiction_id = get_jurisdiction_id(abbr)
     voters, sponsorships = get_unmatched(jurisdiction_id)
-
-    for rec in voters:
-        person = get_matching_person(jurisdiction_id, rec["name"])
-        if person:
-            click.secho(
-                f"updating {rec['n']} votes for {rec['name']} "
-                f"session={rec['session']} to {person}",
-                fg="green",
-            )
-        if person and not dry:
-            to_update = PersonVote.objects.filter(
-                vote_event__legislative_session__jurisdiction_id=jurisdiction_id,
-                vote_event__legislative_session__identifier=rec["session"],
-                voter_name=rec["name"],
-                voter_id=None,
-            )
-            if to_update.count() != rec["n"]:
-                raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
-            to_update.update(voter=person)
-
-    for rec in sponsorships:
-        person = get_matching_person(jurisdiction_id, rec["name"])
-        if person:
-            click.secho(
-                f"updating {rec['n']} sponsorships for {rec['name']} "
-                f"session={rec['session']} to {person}",
-                fg="green",
-            )
-        if person and not dry:
-            to_update = BillSponsorship.objects.filter(
-                bill__legislative_session__jurisdiction_id=jurisdiction_id,
-                bill__legislative_session__identifier=rec["session"],
-                name=rec["name"],
-                person_id=None,
-                organization_id=None,
-            )
-            if to_update.count() != rec["n"]:
-                raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
-            to_update.update(person=person)
+    update_objects(jurisdiction_id, voters, "vote", dry)
+    update_objects(jurisdiction_id, sponsorships, "sponsorship", dry)
 
 
 @click.command()
