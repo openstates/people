@@ -120,8 +120,8 @@ def update_objects(jurisdiction_id, objects, obj_type, dry):
                     organization_id=None,
                 )
 
-            if to_update.count() != rec["n"]:
-                raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
+            # if to_update.count() != rec["n"]:
+            #     raise AbortTransaction(f"mismatched counts for {rec}, got {to_update.count()}")
 
             if obj_type == "vote":
                 to_update.update(voter=person)
