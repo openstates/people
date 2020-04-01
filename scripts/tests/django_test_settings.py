@@ -4,8 +4,7 @@ import os
 SECRET_KEY = "test"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
-    "opencivicdata.core.apps.BaseConfig",
-    "opencivicdata.legislative.apps.BaseConfig",
+    "openstates_core.data",
 )
 DATABASES = {
     "default": {
