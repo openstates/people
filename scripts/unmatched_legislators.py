@@ -6,7 +6,7 @@ from functools import lru_cache
 from utils import get_jurisdiction_id, get_all_abbreviations
 import click
 from django.db.models import Q, F, Count
-from openstates_core.utils.django import init_django
+from openstates.utils.django import init_django
 
 
 class AbortTransaction(Exception):
@@ -14,7 +14,7 @@ class AbortTransaction(Exception):
 
 
 def get_unmatched(jurisdiction_id):
-    from openstates_core.data.models import PersonVote, BillSponsorship
+    from openstates.data.models import PersonVote, BillSponsorship
 
     voters = list(
         PersonVote.objects.filter(
@@ -76,7 +76,7 @@ def archive_leg_to_csv(state_abbr=None):
 
 @lru_cache(1000)
 def get_matching_person(jurisdiction_id, name):
-    from openstates_core.data.models import Person
+    from openstates.data.models import Person
 
     candidates = list(
         Person.objects.filter(
@@ -92,7 +92,7 @@ def get_matching_person(jurisdiction_id, name):
 
 
 def update_objects(jurisdiction_id, objects, obj_type, dry):
-    from openstates_core.data.models import PersonVote, BillSponsorship
+    from openstates.data.models import PersonVote, BillSponsorship
 
     assert obj_type in ("vote", "sponsorship")
 

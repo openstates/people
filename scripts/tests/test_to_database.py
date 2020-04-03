@@ -1,6 +1,6 @@
 import pytest
 import yaml
-from openstates_core.data.models import Person, Organization, Jurisdiction, Division, Post
+from openstates.data.models import Person, Organization, Jurisdiction, Division, Post
 from to_database import load_person, load_org, create_juris_orgs_posts
 
 

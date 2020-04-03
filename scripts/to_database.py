@@ -6,7 +6,7 @@ from functools import lru_cache
 from django.db import transaction
 import click
 import openstates_metadata as metadata
-from openstates_core.utils.django import init_django
+from openstates.utils.django import init_django
 from utils import (
     get_data_dir,
     get_jurisdiction_id,
@@ -82,7 +82,7 @@ def get_update_or_create(ModelCls, data, lookup_keys):
 
 def load_person(data):
     # import has to be here so that Django is set up
-    from openstates_core.data.models import Person, Organization, Post
+    from openstates.data.models import Person, Organization, Post
 
     fields = dict(
         id=data["id"],
@@ -175,7 +175,7 @@ def load_person(data):
 
 
 def load_org(data):
-    from openstates_core.data.models import Organization, Person
+    from openstates.data.models import Organization, Person
 
     parent_id = data["parent"]
     if parent_id.startswith("ocd-organization"):
@@ -252,7 +252,7 @@ def _echo_org_status(org, created, updated):
 
 
 def create_juris_orgs_posts(jurisdiction_id):
-    from openstates_core.data.models import Organization, Jurisdiction
+    from openstates.data.models import Organization, Jurisdiction
 
     state = metadata.lookup(jurisdiction_id=jurisdiction_id)
 
@@ -299,7 +299,7 @@ def load_directory(files, type, jurisdiction_id, purge):
     updated_count = 0
 
     if type == "person":
-        from openstates_core.data.models import Person, BillSponsorship, PersonVote
+        from openstates.data.models import Person, BillSponsorship, PersonVote
 
         existing_ids = set(
             Person.objects.filter(
@@ -309,7 +309,7 @@ def load_directory(files, type, jurisdiction_id, purge):
         ModelCls = Person
         load_func = load_person
     elif type == "organization":
-        from openstates_core.data.models import Organization
+        from openstates.data.models import Organization
 
         existing_ids = set(
             Organization.objects.filter(
@@ -380,7 +380,7 @@ def load_directory(files, type, jurisdiction_id, purge):
 
 
 def create_parties():
-    from openstates_core.data.models import Organization
+    from openstates.data.models import Organization
 
     settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
     with open(settings_file) as f:

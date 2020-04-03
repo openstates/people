@@ -4,7 +4,7 @@ import os
 SECRET_KEY = "test"
 INSTALLED_APPS = (
     "django.contrib.contenttypes",
-    "openstates_core.data",
+    "openstates.data",
 )
 DATABASES = {
     "default": {
