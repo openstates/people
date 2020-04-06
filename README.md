@@ -12,6 +12,10 @@ This repository contains YAML files with all the information on given individual
 * [Open States Discourse](https://discourse.openstates.org)
 * [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
 
+## Running Tests
+
+    docker-compose run --rm --entrypoint scripts/run_tests.sh people
+
 ## About this Repo
 
 A lot of inspiration was taken from the [congress-legislators](https://github.com/unitedstates/congress-legislators) project that has been maintaining this data for the United States Congress.

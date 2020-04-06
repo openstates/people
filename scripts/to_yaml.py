@@ -184,7 +184,7 @@ def process_org(org, jurisdiction_id):
 @click.argument("input_dir")
 def to_yaml(input_dir):
     """
-    Convert pupa scraped JSON in INPUT_DIR to YAML files for this repo.
+    Convert scraped JSON in INPUT_DIR to YAML files for this repo.
 
     Will put data into incoming/ directory for usage with merge.py's --incoming option.
     """
