@@ -8,10 +8,7 @@ services:
   people:
     build: .
     environment:
-    - PGDATABASE=openstatesorg
-    - PGHOST=db
-    - PGPASSWORD=openstates
-    - PGUSER=openstates
+    - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
     - PYTHONPATH=scripts
     volumes:
     - .:/opt/people
