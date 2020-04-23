@@ -13,6 +13,8 @@ from utils import (
     get_all_abbreviations,
     load_yaml,
     legacy_districts,
+    role_is_active,
+    MAJOR_PARTIES,
 )
 
 
@@ -119,6 +121,8 @@ def load_person(data):
     updated |= update_subobjects(person, "contact_details", contact_details)
 
     memberships = []
+    primary_party = ""
+    active_division_id = ""
     for party in data.get("party", []):
         try:
             org = cached_lookup(Organization, classification="party", name=party["name"])
@@ -132,28 +136,39 @@ def load_person(data):
                 "end_date": party.get("end_date", ""),
             }
         )
+        if role_is_active(party):
+            if primary_party in MAJOR_PARTIES and party in MAJOR_PARTIES:
+                raise ValueError(f"two primary parties for ({data['name']} {data['id']})")
+            elif primary_party in MAJOR_PARTIES:
+                # already set correct primary party, so do nothing
+                pass
+            else:
+                primary_party = party
     for role in data.get("roles", []):
-        if role["type"] in ("upper", "lower", "legislature"):
-            try:
-                org = cached_lookup(
-                    Organization, classification=role["type"], jurisdiction_id=role["jurisdiction"]
-                )
-                post = org.posts.get(label=role["district"])
-            except Organization.DoesNotExist:
-                click.secho(
-                    f"{person} no such organization {role['jurisdiction']} {role['type']}",
-                    fg="red",
-                )
-                raise CancelTransaction()
-            except Post.DoesNotExist:
-                # if this is a legacy district, be quiet
-                lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
-                if role["district"] in lds[role["type"]]:
-                    continue
-                click.secho(f"no such post {role}", fg="red")
-                raise CancelTransaction()
-        else:
+        if role["type"] not in ("upper", "lower", "legislature"):
             raise ValueError("unsupported role type")
+        try:
+            org = cached_lookup(
+                Organization, classification=role["type"], jurisdiction_id=role["jurisdiction"]
+            )
+            post = org.posts.get(label=role["district"])
+        except Organization.DoesNotExist:
+            click.secho(
+                f"{person} no such organization {role['jurisdiction']} {role['type']}", fg="red",
+            )
+            raise CancelTransaction()
+        except Post.DoesNotExist:
+            # if this is a legacy district, be quiet
+            lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
+            if role["district"] in lds[role["type"]]:
+                continue
+            click.secho(f"no such post {role}", fg="red")
+            raise CancelTransaction()
+        if role_is_active(role):
+            state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
+            district = state_metadata.lookup_district(name=role["district"], chamber=role["type"])
+            active_division_id = district.division_id
+            assert active_division_id
         memberships.append(
             {
                 "organization": org,
@@ -170,6 +185,11 @@ def load_person(data):
         memberships,
         read_manager=person.memberships.exclude(organization__classification="committee"),
     )
+
+    # set computed fields
+    person.current_role_division_id = active_division_id
+    person.primary_party = primary_party
+    person.save()
 
     return created, updated
 
