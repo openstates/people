@@ -149,7 +149,7 @@ def load_person(data):
             raise ValueError("unsupported role type")
         try:
             org = cached_lookup(
-                Organization, classification=role["type"], jurisdiction_id=role["jurisdiction"]
+                Organization, classification=role["type"], jurisdiction_id=role["jurisdiction"],
             )
             post = org.posts.get(label=role["district"])
         except Organization.DoesNotExist:
@@ -166,9 +166,11 @@ def load_person(data):
             raise CancelTransaction()
         if role_is_active(role):
             state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
-            district = state_metadata.lookup_district(name=role["district"], chamber=role["type"])
+            district = state_metadata.lookup_district(
+                name=str(role["district"]), chamber=role["type"]
+            )
+            assert district
             active_division_id = district.division_id
-            assert active_division_id
         memberships.append(
             {
                 "organization": org,
@@ -186,10 +188,14 @@ def load_person(data):
         read_manager=person.memberships.exclude(organization__classification="committee"),
     )
 
-    # set computed fields
-    person.current_role_division_id = active_division_id
-    person.primary_party = primary_party
-    person.save()
+    # set computed fields (avoid extra save)
+    if (
+        person.current_role_division_id != active_division_id
+        or person.primary_party != primary_party
+    ):
+        person.current_role_division_id = active_division_id
+        person.primary_party = primary_party
+        person.save()
 
     return created, updated
 
@@ -415,7 +421,7 @@ def create_parties():
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option(
-    "--purge/--no-purge", default=False, help="Purge all legislators from DB that aren't in YAML."
+    "--purge/--no-purge", default=False, help="Purge all legislators from DB that aren't in YAML.",
 )
 @click.option(
     "--safe/--no-safe",

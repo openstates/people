@@ -7,19 +7,21 @@ from to_database import load_person, load_org, create_juris_orgs_posts
 def setup():
     d = Division.objects.create(id="ocd-division/country:us/state:nc", name="NC")
     j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/state:nc", name="NC", division=d
+        id="ocd-jurisdiction/country:us/state:nc/government", name="NC", division=d
     )
     o = Organization.objects.create(name="House", classification="lower", jurisdiction=j)
-    o.posts.create(label="1")
-    o.posts.create(label="2")
-    o.posts.create(label="3")
+    for n in range(1, 4):
+        division = Division.objects.create(
+            id=f"ocd-division/country:us/state:nc/sldl:{n}", name=str(n)
+        )
+        o.posts.create(label=str(n), division=division)
     Organization.objects.create(name="Democratic", classification="party")
     Organization.objects.create(name="Republican", classification="party")
 
 
 @pytest.mark.django_db
 def test_basic_person_creation():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -47,7 +49,7 @@ def test_basic_person_updates():
     extras:
         something: special
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -85,7 +87,7 @@ def test_basic_person_subobjects():
     other_names:
         - name: J. Smith
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -106,7 +108,7 @@ def test_subobject_update():
         - url: https://example.com/extra
           note: some additional data
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -152,7 +154,7 @@ def test_subobject_duplicate():
         - url: https://example.com/jane
         - url: https://example.com/jane
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     # load twice, but second time no update should occur
     created, updated = load_person(data)
@@ -175,7 +177,7 @@ def test_person_identifiers():
         - scheme: old_openstates
           identifier: AR000002
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -199,7 +201,7 @@ def test_person_contact_details():
         - note: home
           voice: 333-333-3333
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -216,7 +218,7 @@ def test_person_party():
     party:
         - name: Democratic
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -240,9 +242,9 @@ def test_person_legislative_roles():
     roles:
         - type: lower
           district: 3
-          jurisdiction: ocd-jurisdiction/country:us/state:nc
+          jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
@@ -256,12 +258,12 @@ EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
 
 @pytest.mark.django_db
 def test_basic_organization():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     """
@@ -277,12 +279,12 @@ def test_basic_organization():
 
 @pytest.mark.django_db
 def test_basic_organization_updates():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     """
@@ -311,12 +313,12 @@ def test_basic_organization_updates():
 
 @pytest.mark.django_db
 def test_organization_memberships():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     memberships:
@@ -348,12 +350,12 @@ def test_organization_memberships():
 def test_org_person_membership_interaction():
     # this test ensure that committee memberships don't mess up person loading
     person_data = {"id": "123", "name": "Jane Smith"}
-    com_data = yaml.load(
+    com_data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     memberships:
