@@ -13,6 +13,7 @@ from utils import (
     get_all_abbreviations,
     load_yaml,
     legacy_districts,
+    MAJOR_PARTIES,
 )
 from collections import defaultdict, Counter
 
@@ -209,11 +210,19 @@ PERSON_FIELDS = {
         }
     ),
     "other_names": NestedList(
-        {"name": [is_string, Required], "start_date": [is_fuzzy_date], "end_date": [is_fuzzy_date]}
+        {
+            "name": [is_string, Required],
+            "start_date": [is_fuzzy_date],
+            "end_date": [is_fuzzy_date],
+        }
     ),
     "sources": URL_LIST,
     "party": NestedList(
-        {"name": [is_string, Required], "start_date": [is_fuzzy_date], "end_date": [is_fuzzy_date]}
+        {
+            "name": [is_string, Required],
+            "start_date": [is_fuzzy_date],
+            "end_date": [is_fuzzy_date],
+        }
     ),
     "roles": NestedList(is_role),
     "extras": [is_dict],
@@ -299,7 +308,7 @@ def get_expected_districts(settings, abbr):
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
-                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow"
+                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow",
             )
         else:
             click.secho(
@@ -385,9 +394,21 @@ class Validator:
             self.errors[filename].append(f"id piece {uid} not in filename")
         self.errors[filename].extend(validate_roles(person, "roles", retired))
         self.errors[filename].extend(validate_roles(person, "party"))
+        active_parties = []
         for party in person.get("party", []):
             if party["name"] not in self.valid_parties:
                 self.errors[filename].append(f"invalid party {party['name']}")
+            if role_is_active(party):
+                active_parties.append(party["name"])
+        if len(active_parties) > 1:
+            if len([party for party in active_parties if party in MAJOR_PARTIES]) > 1:
+                self.errors[filename].append(
+                    f"multiple active major party memberships {active_parties}"
+                )
+            else:
+                self.warnings[filename].append(
+                    f"multiple active party memberships {active_parties}"
+                )
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         self.person_mapping[person["id"]] = person["name"]
@@ -635,7 +656,7 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
 @click.option(
-    "--summary/--no-summary", default=False, help="Print summary after validation errors."
+    "--summary/--no-summary", default=False, help="Print summary after validation errors.",
 )
 def lint(abbreviations, verbose, summary):
     """

@@ -12,6 +12,10 @@ import openstates_metadata as metadata
 # set up defaultdict representation
 yaml.add_representer(defaultdict, Representer.represent_dict)
 
+# can only have one of these at a time
+MAJOR_PARTIES = ("Democratic", "Republican", "Independent")
+
+
 PHONE_RE = re.compile(
     r"""^
                       \D*(1?)\D*                                # prefix
