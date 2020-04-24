@@ -124,6 +124,7 @@ def load_person(data):
     primary_party = ""
     active_division_id = ""
     for party in data.get("party", []):
+        party_name = party["name"]
         try:
             org = cached_lookup(Organization, classification="party", name=party["name"])
         except Organization.DoesNotExist:
@@ -137,13 +138,13 @@ def load_person(data):
             }
         )
         if role_is_active(party):
-            if primary_party in MAJOR_PARTIES and party in MAJOR_PARTIES:
+            if primary_party in MAJOR_PARTIES and party_name in MAJOR_PARTIES:
                 raise ValueError(f"two primary parties for ({data['name']} {data['id']})")
             elif primary_party in MAJOR_PARTIES:
                 # already set correct primary party, so do nothing
                 pass
             else:
-                primary_party = party
+                primary_party = party_name
     for role in data.get("roles", []):
         if role["type"] not in ("upper", "lower", "legislature"):
             raise ValueError("unsupported role type")
