@@ -141,10 +141,11 @@ def to_csv(abbreviations, upload):
         if upload:
             s3.upload_file(
                 fname,
-                os.environ["S3_BUCKET"],
+                "data.openstates.org",
                 f"people/current/{abbr}.csv",
                 ExtraArgs={"ContentType": "text/csv", "ACL": "public-read"},
             )
+            click.secho(f"uploaded to data.openstates.org/people/current/{abbr}.csv", fg="green")
 
 
 if __name__ == "__main__":
