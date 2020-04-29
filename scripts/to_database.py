@@ -162,10 +162,11 @@ def load_person(data):
         except Post.DoesNotExist:
             # if this is a legacy district, be quiet
             lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
-            if role["district"] in lds[role["type"]]:
-                continue
-            click.secho(f"no such post {role}", fg="red")
-            raise CancelTransaction()
+            if role["district"] not in lds[role["type"]]:
+                click.secho(f"no such post {role}", fg="red")
+                raise CancelTransaction()
+            else:
+                post = None
         if role_is_active(role):
             state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
             district = state_metadata.lookup_district(
@@ -190,7 +191,7 @@ def load_person(data):
             }
         )
 
-    # note that we don't manager committee memberships here
+    # note that we don't manage committee memberships here
     updated |= update_subobjects(
         person,
         "memberships",
