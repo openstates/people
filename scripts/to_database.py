@@ -123,6 +123,7 @@ def load_person(data):
     memberships = []
     primary_party = ""
     active_division_id = ""
+    current_state = ""
     for party in data.get("party", []):
         party_name = party["name"]
         try:
@@ -172,6 +173,14 @@ def load_person(data):
             )
             assert district
             active_division_id = district.division_id
+            current_state = state_metadata.abbr.upper()
+        elif not current_state:
+            # set current_state to *something* -- since legislators
+            # are only going to ever appear in one state this is fine
+            # it may become necessary to make this smarter if legislators start
+            # crossing state lines, but we don't have any examples of this
+            state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
+            current_state = state_metadata.abbr.upper()
         memberships.append(
             {
                 "organization": org,
@@ -193,8 +202,10 @@ def load_person(data):
     if (
         person.current_role_division_id != active_division_id
         or person.primary_party != primary_party
+        or person.current_state != current_state
     ):
         person.current_role_division_id = active_division_id
+        person.current_state = current_state
         person.primary_party = primary_party
         person.save()
 
