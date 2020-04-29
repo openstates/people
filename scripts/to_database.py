@@ -123,6 +123,7 @@ def load_person(data):
     memberships = []
     primary_party = ""
     active_division_id = ""
+    current_state = ""
     for party in data.get("party", []):
         party_name = party["name"]
         try:
@@ -161,10 +162,11 @@ def load_person(data):
         except Post.DoesNotExist:
             # if this is a legacy district, be quiet
             lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
-            if role["district"] in lds[role["type"]]:
-                continue
-            click.secho(f"no such post {role}", fg="red")
-            raise CancelTransaction()
+            if role["district"] not in lds[role["type"]]:
+                click.secho(f"no such post {role}", fg="red")
+                raise CancelTransaction()
+            else:
+                post = None
         if role_is_active(role):
             state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
             district = state_metadata.lookup_district(
@@ -172,6 +174,14 @@ def load_person(data):
             )
             assert district
             active_division_id = district.division_id
+            current_state = state_metadata.abbr.upper()
+        elif not current_state:
+            # set current_state to *something* -- since legislators
+            # are only going to ever appear in one state this is fine
+            # it may become necessary to make this smarter if legislators start
+            # crossing state lines, but we don't have any examples of this
+            state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
+            current_state = state_metadata.abbr.upper()
         memberships.append(
             {
                 "organization": org,
@@ -181,7 +191,7 @@ def load_person(data):
             }
         )
 
-    # note that we don't manager committee memberships here
+    # note that we don't manage committee memberships here
     updated |= update_subobjects(
         person,
         "memberships",
@@ -193,8 +203,10 @@ def load_person(data):
     if (
         person.current_role_division_id != active_division_id
         or person.primary_party != primary_party
+        or person.current_state != current_state
     ):
         person.current_role_division_id = active_division_id
+        person.current_state = current_state
         person.primary_party = primary_party
         person.save()
 
@@ -276,47 +288,6 @@ def _echo_org_status(org, created, updated):
         click.secho(f"{org} created", fg="green")
     elif updated:
         click.secho(f"{org} updated", fg="yellow")
-
-
-def create_juris_orgs_posts(jurisdiction_id):
-    from openstates.data.models import Organization, Jurisdiction
-
-    state = metadata.lookup(jurisdiction_id=jurisdiction_id)
-
-    juris, _ = Jurisdiction.objects.update_or_create(
-        id=state.jurisdiction_id,
-        defaults={
-            "name": state.name,
-            "url": state.url,
-            "classification": "government",
-            "division_id": state.division_id,
-        },
-    )
-
-    for chamber in state.chambers:
-        org, _ = Organization.objects.update_or_create(
-            # TODO: restore ID here
-            # id=chamber.organization_id
-            jurisdiction=juris,
-            classification="legislature"
-            if chamber.chamber_type == "unicameral"
-            else chamber.chamber_type,
-            defaults={"name": chamber.name},
-        )
-
-        # add posts to org
-        posts = [
-            {
-                "label": d.name,
-                "role": chamber.title,
-                "division_id": d.division_id,
-                "maximum_memberships": d.num_seats,
-            }
-            for d in chamber.districts
-        ]
-        updated = update_subobjects(org, "posts", posts)
-        if updated:
-            click.secho(f"updated {org} posts", fg="yellow")
 
 
 def load_directory(files, type, jurisdiction_id, purge):
@@ -455,7 +426,6 @@ def to_database(abbreviations, purge, safe):
 
         try:
             with transaction.atomic():
-                create_juris_orgs_posts(jurisdiction_id)
                 load_directory(person_files, "person", jurisdiction_id, purge=purge)
                 load_directory(committee_files, "organization", jurisdiction_id, purge=purge)
                 if safe:
