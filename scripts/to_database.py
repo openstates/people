@@ -290,47 +290,6 @@ def _echo_org_status(org, created, updated):
         click.secho(f"{org} updated", fg="yellow")
 
 
-def create_juris_orgs_posts(jurisdiction_id):
-    from openstates.data.models import Organization, Jurisdiction
-
-    state = metadata.lookup(jurisdiction_id=jurisdiction_id)
-
-    juris, _ = Jurisdiction.objects.update_or_create(
-        id=state.jurisdiction_id,
-        defaults={
-            "name": state.name,
-            "url": state.url,
-            "classification": "government",
-            "division_id": state.division_id,
-        },
-    )
-
-    for chamber in state.chambers:
-        org, _ = Organization.objects.update_or_create(
-            # TODO: restore ID here
-            # id=chamber.organization_id
-            jurisdiction=juris,
-            classification="legislature"
-            if chamber.chamber_type == "unicameral"
-            else chamber.chamber_type,
-            defaults={"name": chamber.name},
-        )
-
-        # add posts to org
-        posts = [
-            {
-                "label": d.name,
-                "role": chamber.title,
-                "division_id": d.division_id,
-                "maximum_memberships": d.num_seats,
-            }
-            for d in chamber.districts
-        ]
-        updated = update_subobjects(org, "posts", posts)
-        if updated:
-            click.secho(f"updated {org} posts", fg="yellow")
-
-
 def load_directory(files, type, jurisdiction_id, purge):
     ids = set()
     merged = {}
@@ -467,7 +426,6 @@ def to_database(abbreviations, purge, safe):
 
         try:
             with transaction.atomic():
-                create_juris_orgs_posts(jurisdiction_id)
                 load_directory(person_files, "person", jurisdiction_id, purge=purge)
                 load_directory(committee_files, "organization", jurisdiction_id, purge=purge)
                 if safe:

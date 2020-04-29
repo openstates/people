@@ -1,7 +1,7 @@
 import pytest
 import yaml
-from openstates.data.models import Person, Organization, Jurisdiction, Division, Post
-from to_database import load_person, load_org, create_juris_orgs_posts
+from openstates.data.models import Person, Organization, Jurisdiction, Division
+from to_database import load_person, load_org
 
 
 def setup():
@@ -374,55 +374,3 @@ def test_org_person_membership_interaction():
     assert created is False
     assert updated is False
     assert o.memberships.count() == 1
-
-
-@pytest.mark.django_db
-def test_create_juris_orgs_posts_simple():
-    d = Division.objects.create(id="ocd-division/country:us/state:al", name="Alabama")
-    j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/state:al/government", name="Alabama", division=d
-    )
-    Organization.objects.create(jurisdiction=j, name="House", classification="lower")
-    Organization.objects.create(jurisdiction=j, name="Senate", classification="upper")
-    # divisions would already exist
-    for n in range(1, 35 + 1):
-        Division.objects.create(id=f"ocd-division/country:us/state:al/sldu:{n}", name=str(n))
-    for n in range(1, 105 + 1):
-        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
-
-    create_juris_orgs_posts(j.id)
-
-    assert Jurisdiction.objects.filter(name="Alabama").count() == 1
-    assert Organization.objects.filter(jurisdiction__name="Alabama").count() == 2
-    assert (
-        Post.objects.filter(organization__jurisdiction__name="Alabama", role="Senator").count()
-        == 35
-    )
-    assert (
-        Post.objects.filter(
-            organization__jurisdiction__name="Alabama", role="Representative"
-        ).count()
-        == 105
-    )
-
-
-@pytest.mark.django_db
-def test_create_top_level_unicameral():
-    d = Division.objects.create(id="ocd-division/country:us/district:dc", name="DC")
-    j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/district:dc/government",
-        name="District of Columbia",
-        division=d,
-    )
-    org = Organization.objects.create(jurisdiction=j, name="Council", classification="legislature")
-    for n in range(1, 9):
-        Division.objects.create(
-            id=f"ocd-division/country:us/district:dc/ward:{n}", name=f"Ward {n}"
-        )
-
-    create_juris_orgs_posts(j.id)
-    assert Jurisdiction.objects.filter(name="District of Columbia").count() == 1
-    assert Organization.objects.filter(jurisdiction__name="District of Columbia").count() == 1
-    assert org.posts.all().count() == 10
-    # two at-large posts
-    assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2
