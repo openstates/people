@@ -1,7 +1,10 @@
+#Scraper code for updating contacts within the states
+
 import uuid
 from collections import OrderedDict
 from utils import dump_obj, get_jurisdiction_id, reformat_phone_number
 
+#Dictionary lookup for abbreviated versions of party names 
 PARTIES = {
     "d": "Democratic",
     "r": "Republican",
@@ -11,7 +14,8 @@ PARTIES = {
     "republican": "Republican",
 }
 
-
+#Contact object 
+#Contains contact information for listed people in state legislature
 class ContactDetail:
     def __init__(self, note):
         self.note = note
@@ -58,9 +62,10 @@ class Person:
         self.sources = []
         self.capitol_office = ContactDetail("Capitol Office")
         self.district_office = ContactDetail("District Office")
-
+#Orders the state representatives/senators and creates an unique id for them
     def to_dict(self):
         party = PARTIES.get(self.party.lower(), self.party)
+        #Where the unique id is created
         d = OrderedDict(
             {
                 "id": f"ocd-person/{uuid.uuid4()}",
