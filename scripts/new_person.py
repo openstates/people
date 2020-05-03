@@ -5,6 +5,7 @@ from collections import OrderedDict
 from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
 
 
+#Simple function that orders fields of person into a dictionary
 def create_person(fname, lname, name, state, district, party, rtype, url, image, start_date):
     person = OrderedDict(
         {
@@ -30,7 +31,7 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
     output_dir = get_data_dir(state)
     dump_obj(person, output_dir=os.path.join(output_dir, "people"))
 
-
+#Command Line prompts user to enter in the most defining fields 
 @click.command()
 @click.option("--fname", prompt="First Name", help="First Name")
 @click.option("--lname", prompt="Last Name", help="Last Name")
