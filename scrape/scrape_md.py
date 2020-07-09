@@ -1,6 +1,49 @@
-import scrapelib
+import re
 import lxml.html
-from functools import lru_cache
+import click
+import scrapelib
+
+
+def elem_to_str(item, inside=False):
+    attribs = "  ".join(f"{k}='{v}'" for k, v in item.attrib.items())
+    return f"<{item.tag} {attribs}> @ line {item.sourceline}"
+
+
+class XPath:
+    def __init__(self, xpath, *, min_items=1, max_items=None, num_items=None):
+        self.xpath = xpath
+        self.min_items = min_items
+        self.max_items = max_items
+        self.num_items = num_items
+
+    def match(self, element, *, min_items=None, max_items=None, num_items=None):
+        items = element.xpath(self.xpath)
+
+        num_items = self.num_items if num_items is None else num_items
+        max_items = self.max_items if max_items is None else max_items
+        min_items = self.min_items if min_items is None else min_items
+
+        if num_items is not None and len(items) != num_items:
+            print(items)
+            raise XPathError(
+                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
+                f"expected {num_items}"
+            )
+        if min_items is not None and len(items) < min_items:
+            raise XPathError(
+                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
+                f"expected at least {min_items}"
+            )
+        if max_items is not None and len(items) > max_items:
+            raise XPathError(
+                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
+                f"expected at most {max_items}"
+            )
+
+        return items
+
+    def match_one(self, element):
+        return self.match(element, num_items=1)[0]
 
 
 class NoSuchScraper(Exception):
@@ -11,112 +54,193 @@ class XPathError(ValueError):
     pass
 
 
-class BaseScraper(scrapelib.Scraper):
-    root_xpath = None
-    url = None
+# @attr.s
+# class ContactDetail:
+#     note = attr.ib()
+#     voice = attr.ib()
+#     email =attr.ib()
+#     fax = attr.ib()
+#     address = attr.ib()
 
-    @lru_cache(maxsize=None)
-    def lxml(self, url):
-        """
-        method that actually fetches the data, might be called by a child class
-        """
-        print(f"fetching {url} via {self.__class__.__name__}")
-        html = self.get(url)
-        doc = lxml.html.fromstring(html.content)
-        doc.make_links_absolute(url)
-        return doc
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+# @attr.s
+# class Person:
+#     name = attr.ib()
+#     state = attr.ib()
+#     party = attr.ib()
+#     district = attr.ib()
+#     chamber = attr.ib()
+#     image = attr.ib(default=None)
+#     given_name = attr.ib(default=None)
+#     family_name = attr.ib(default=None)
+#     links = attr.ib(default=attr.Factory(list))
+#     sources = attr.ib(default=attr.Factory(list))
+#     capitol_office = attr.ib(default=None)
+#     district_office = attr.ib(default=None)
 
-    def yield_root_objects(self):
-        if not self.root_xpath:
-            raise NotImplementedError(
-                "must either provide root_xpath or override yield_root_objects"
-            )
-        items = self.root_xpath.match(self.doc)
-        for item in items:
-            yield self.process_root_item(item)
 
-    def process_root_item(self, item):
+class Scraper(scrapelib.Scraper):
+    def fetch_page_data(self, page):
+        print(f"fetching {page.url} for {page.__class__.__name__}")
+        data = self.get(page.url)
+        page.set_raw_data(data)
+
+    def augment_item(self, item, subpages):
+        for subpage_func in subpages:
+            page = subpage_func(item)
+            self.fetch_page_data(page)
+            page_data = page.get_data()
+            item.update(page_data)
+            return item
+
+    def scrape(self, chamber, session):
+        for page in self.start_scrape(chamber, session):
+            self.fetch_page_data(page)
+            for item in page.get_data():
+                if page.subpages:
+                    item = self.augment_item(item, page.subpages)
+                if isinstance(item, dict):
+                    item = self.to_object(item)
+                yield item
+
+    def to_object(self, item):
         return item
 
 
-def elem_to_str(item, inside=False):
-    attribs = "  ".join(f"{k}='{v}'" for k, v in item.attrib.items())
-    return f"<{item.tag} {attribs}> @ line {item.sourceline}"
-
-
-class XPath:
-    def __init__(self, xpath, min_items=1, max_items=None, num_items=None):
-        self.xpath = xpath
-        self.min_items = min_items
-        self.max_items = max_items
-        self.num_items = num_items
-
-    def match(self, element, *, num_items=None):
-        items = element.xpath(self.xpath)
-
-        num_items = self.num_items if num_items is None else num_items
-
-        if num_items is not None and len(items) != num_items:
-            print(items)
-            raise XPathError(
-                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
-                f"expected {num_items}"
-            )
-        if self.min_items is not None and len(items) < self.min_items:
-            raise XPathError(
-                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
-                f"expected at least {self.min_items}"
-            )
-        if self.max_items is not None and len(items) > self.max_items:
-            raise XPathError(
-                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
-                f"expected at most {self.max_items}"
-            )
-
-        return items
-
-    def match_one(self, element):
-        return self.match(element, num_items=1)[0]
-
-
-class MDPersonScraper(BaseScraper):
-    root_xpath = XPath("//div[@id='myDIV']//div[@class='p-0 member-index-cell']")
-
-    def __init__(self, url, **kwargs):
-        super().__init__(**kwargs)
+class HtmlPage:
+    def __init__(self, url):
         self.url = url
-        self.doc = self.lxml(self.url)
 
-    def process_root_item(self, item):
+    def set_raw_data(self, raw_data):
+        self.raw_data = raw_data
+        self.root = lxml.html.fromstring(raw_data.content)
+        self.root.make_links_absolute(self.url)
+
+    def get_data(self):
+        pass
+
+
+class HtmlListPage(HtmlPage):
+    xpath = None
+
+    def get_data(self):
+        if not self.xpath:
+            raise NotImplementedError("must either provide xpath or override scrape")
+        items = self.xpath.match(self.root)
+        for item in items:
+            item = self.process_item(item)
+            yield item
+
+    def process_item(self, item):
+        return item
+
+
+class MDPersonDetail(HtmlPage):
+    def parse_address_block(self, block):
+        state = "address"
+        # group lines by type
+        values = {"address": [], "phone": [], "fax": []}
+        for line in block.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            if line.startswith("Phone"):
+                state = "phone"
+            elif line.startswith("Fax"):
+                state = "fax"
+
+            values[state].append(line)
+
+        # postprocess values
+
+        phones = []
+        for line in values["phone"]:
+            for match in re.findall(r"\d{3}-\d{3}-\d{4}", line):
+                phones.append(match)
+
+        faxes = []
+        for line in values["fax"]:
+            for match in re.findall(r"\d{3}-\d{3}-\d{4}", line):
+                faxes.append(match)
+
+        return {"address": "; ".join(values["address"]), "phones": phones, "faxes": faxes}
+
+    def get_data(self):
+        # annapolis_info = (
+        #     XPath("//dt[text()='Annapolis Info']/following-sibling::dd[1]")
+        #     .match_one(self.root)
+        #     .text_content()
+        # )
+        # interim_info = (
+        #     XPath("//dt[text()='Interim Info']/following-sibling::dd[1]")
+        #     .match_one(self.root)
+        #     .text_content()
+        # )
+        # print(self.parse_address_block(annapolis_info))
+        # print(self.parse_address_block(interim_info))
+
+        return dict(
+            name=XPath("//h2/text()").match_one(self.root).split(" ", 1)[1],
+            # "email": XPath(
+            #     "//dt[text()='Contact']/following-sibling::dd[1]/a[1]/text()"
+            # ).match_one(self.root),
+        )
+
+
+class MDPersonList(HtmlListPage):
+    xpath = XPath("//div[@id='myDIV']//div[@class='p-0 member-index-cell']")
+    subpages = [lambda item: MDPersonDetail(item["link"])]
+
+    def process_item(self, item):
         dd_text = XPath(".//dd/text()").match(item)
         district = dd_text[2].strip()
         party = dd_text[4].strip()
-        return {
-            "img": XPath(".//img/@src").match_one(item),
-            "name": XPath(".//dd/a[1]/text()").match_one(item),
-            "link": XPath(".//dd/a[1]/@href").match_one(item),
-            "district": district,
-            "party": party,
-        }
+        return dict(
+            image=XPath(".//img/@src").match_one(item),
+            district=district,
+            party=party,
+            link=XPath(".//dd/a[1]/@href").match_one(item),
+        )
 
 
-def parameter_dispatch(chamber, session=None):
-    """
-    this function converts accepted parameters to an instance of a class
-    that can do the scraping
-    """
-    if session:
-        raise NoSuchScraper("cannot scrape non-current sessions")
-    if chamber == "upper":
-        scraper = MDPersonScraper("http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate")
-    elif chamber == "lower":
-        scraper = MDPersonScraper("http://mgaleg.maryland.gov/mgawebsite/Members/Index/house")
+class MDPersonScraper(Scraper):
+    def start_scrape(self, chamber, session):
+        if session:
+            raise NoSuchScraper("cannot scrape non-current sessions")
+        if chamber == "upper":
+            yield MDPersonList("http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate")
+        elif chamber == "lower":
+            yield MDPersonList("http://mgaleg.maryland.gov/mgawebsite/Members/Index/house")
 
-    for partial_obj in scraper.yield_root_objects():
-        print(partial_obj)
+    def to_object(self, item):
+        return item
 
 
-parameter_dispatch("upper")
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+@click.argument("class_name")
+@click.argument("url")
+def sample(class_name, url):
+    # implementation is a stub, this will be able to accept dotted paths once implemented
+    Cls = globals()[class_name]
+    page = Cls(url)
+    s = Scraper()
+    s.fetch_page_data(page)
+    print(page.get_data())
+
+
+@cli.command()
+@click.option("--chamber", multiple=True, default=["upper", "lower"])
+@click.option("--session", default=None)
+def scrape(chamber, session):
+    for ch in chamber:
+        for item in MDPersonScraper().scrape(ch, session):
+            print(item)
+
+
+if __name__ == "__main__":
+    cli()
