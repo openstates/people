@@ -104,23 +104,52 @@ class Scraper(scrapelib.Scraper):
                 yield item
 
     def to_object(self, item):
+        """
+        converts intermediate data (often in a dictionary) to a final object to be validated
+        """
         return item
+
+    def start_scrape(self, chamber, session):
+        """
+        yields one or more Page objects that will kick off the scrape.
+
+        It may also raise a ValueError (TBD) when it does not have an appropriate entrypoint
+        to scrape the requested data.
+        """
+        raise NotImplementedError()
+
+
+class Page:
+    def __init__(self, url):
+        """
+        a Page can be instantiated with a url & options (TBD) needed to fetch it
+        """
+        self.url = url
+
+    def set_raw_data(self, raw_data):
+        """ callback to handle raw data returned by grabbing the URL """
+        self.raw_data = raw_data
+
+    def get_data(self):
+        """ return data extracted from this page and this page alone """
+        raise NotImplementedError()
 
 
 class HtmlPage:
-    def __init__(self, url):
-        self.url = url
-
     def set_raw_data(self, raw_data):
         self.raw_data = raw_data
         self.root = lxml.html.fromstring(raw_data.content)
         self.root.make_links_absolute(self.url)
 
-    def get_data(self):
-        pass
-
 
 class HtmlListPage(HtmlPage):
+    """
+    Simplification for HTML pages that get a list of items and process them.
+
+    When overriding the class, instead of providing get_data, one must only provide
+    an xpath and a process_item function.
+    """
+
     xpath = None
 
     def get_data(self):
@@ -205,6 +234,12 @@ class MDPersonList(HtmlListPage):
 
 class MDPersonScraper(Scraper):
     def start_scrape(self, chamber, session):
+        """ This function yields one or more Page objects that will kick off the scrape.
+
+        It may also raise a ValueError (TBD) when it does not have an appropriate entrypoint
+        to scrape the requested data.
+        """
+
         if session:
             raise NoSuchScraper("cannot scrape non-current sessions")
         if chamber == "upper":
