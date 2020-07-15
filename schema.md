@@ -23,11 +23,11 @@
     * start_date
     * end_date
 * roles: list of legislative & executive roles held by this individual, each may have the following fields:
-    * type: upper|lower|legislature|gov|lt_gov    **required**
-    * district: name/number of district   **required if not gov/lt_gov**
+    * type: upper|lower|legislature|gov|lt_gov|mayor    **required**
+    * district: name/number of district   **required if upper|lower|legislature**
     * jurisdiction: ocd-jurisdiction identifier **required**
-    * start_date
-    * end_date
+    * start_date  **required if not upper|lower|legislature**
+    * end_date    **required if not upper|lower|legislature**
     * end_reason: reason this role ended, such as resignation/death
     * contact_details: role-specific contact details (see below for schema)
 * contact_details (see below)

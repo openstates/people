@@ -17,6 +17,15 @@ This repository contains YAML files with all the information on given individual
 
     docker-compose run --rm --entrypoint scripts/run_tests.sh people
 
+## Data Layout
+
+All data within the data directory is organized by state.  Within a given state directory you may find the following:
+
+  * legislature - people that are currently serving in the legislature
+  * cities - people currently serving in city government (e.g. mayors)
+  * retired - people not currently serving any tracked roles
+  * committees - committee data (future TBD)
+
 ## About this Repo
 
 A lot of inspiration was taken from the [congress-legislators](https://github.com/unitedstates/congress-legislators) project that has been maintaining this data for the United States Congress.
