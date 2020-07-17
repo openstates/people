@@ -16,19 +16,19 @@ def make_mayors(state_to_import):
             state = line["Postal Code"].lower()
             if state != state_to_import:
                 continue
-            city = line["City"]
-            given_name = line["First"]
-            family_name = line["Last"]
+            city = line["City"].strip()
+            given_name = line["First"].strip()
+            family_name = line["Last"].strip()
             name = f"{given_name} {family_name}"
-            email = line["Email"]
-            webform = line["Web Form"]
+            email = line["Email"].strip()
+            webform = line["Web Form"].strip()
             phone = reformat_phone_number(line["Phone"])
             fax = reformat_phone_number(line["Fax"])
-            address1 = line["Address 1"]
-            address2 = line["Address 2"]
-            zipcode = line["Zip Code"]
-            if line["Zip Plus 4"]:
-                zipcode += "-" + line["Zip Plus 4"]
+            address1 = line["Address 1"].strip()
+            address2 = line["Address 2"].strip()
+            zipcode = line["Zip Code"].strip()
+            if line["Zip Plus 4"].strip():
+                zipcode += "-" + line["Zip Plus 4"].strip()
             term_end = datetime.datetime.strptime(line["Term End"], "%m/%d/%Y").strftime(
                 "%Y-%m-%d"
             )
@@ -70,4 +70,5 @@ def make_mayors(state_to_import):
 
 
 if __name__ == "__main__":
+    make_mayors("ak")
     make_mayors("al")
