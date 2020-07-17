@@ -15,6 +15,7 @@ from lint_yaml import (
     compare_districts,
     Validator,
     BadVacancy,
+    PersonType,
 )  # noqa
 
 
@@ -116,6 +117,7 @@ def test_validate_nested_role_list():
             {
                 "type": "gov",
                 "start_date": "2010",
+                "end_date": "2016",
                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
             },
             # bad roles
@@ -123,6 +125,7 @@ def test_validate_nested_role_list():
             {
                 "type": "gov",
                 "district": "4",
+                "end_date": "2016",
                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
             },
         ],
@@ -353,7 +356,7 @@ def test_person_duplicates():
 def test_filename_id_test():
     person = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith", "roles": [], "party": []}
     v = Validator("ak", {"parties": []})
-    v.validate_person(person, "bad-filename")
+    v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
     for err in v.errors["bad-filename"]:
         if f"not in filename" in err:
             break
@@ -379,7 +382,7 @@ def test_validate_org_memberships():
     org["memberships"] = [{"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith"}]
     v = Validator("ak", settings)
     # validate person first to learn ID
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     assert v.errors[org_filename] == []
     assert v.warnings[org_filename] == []
@@ -389,7 +392,7 @@ def test_validate_org_memberships():
         {"id": "ocd-person/00000000-0000-0000-0000-000000000000", "name": "Jane Smith"}
     ]
     v = Validator("ak", settings)
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     print(v.errors)
     assert len(v.errors[org_filename]) == 1
@@ -397,7 +400,7 @@ def test_validate_org_memberships():
     # bad name, warning
     org["memberships"] = [{"id": EXAMPLE_OCD_PERSON_ID, "name": "Smith"}]
     v = Validator("ak", settings)
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     assert len(v.warnings[org_filename]) == 1
     assert v.warnings[org_filename]
