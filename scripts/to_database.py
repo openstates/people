@@ -416,7 +416,7 @@ def to_database(abbreviations, purge, safe):
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
 
-        person_files = glob.glob(os.path.join(directory, "people/*.yml")) + glob.glob(
+        person_files = glob.glob(os.path.join(directory, "legislature/*.yml")) + glob.glob(
             os.path.join(directory, "retired/*.yml")
         )
         committee_files = glob.glob(os.path.join(directory, "organizations/*.yml"))

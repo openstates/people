@@ -210,19 +210,11 @@ PERSON_FIELDS = {
         }
     ),
     "other_names": NestedList(
-        {
-            "name": [is_string, Required],
-            "start_date": [is_fuzzy_date],
-            "end_date": [is_fuzzy_date],
-        }
+        {"name": [is_string, Required], "start_date": [is_fuzzy_date], "end_date": [is_fuzzy_date]}
     ),
     "sources": URL_LIST,
     "party": NestedList(
-        {
-            "name": [is_string, Required],
-            "start_date": [is_fuzzy_date],
-            "end_date": [is_fuzzy_date],
-        }
+        {"name": [is_string, Required], "start_date": [is_fuzzy_date], "end_date": [is_fuzzy_date]}
     ),
     "roles": NestedList(is_role),
     "extras": [is_dict],
@@ -308,7 +300,7 @@ def get_expected_districts(settings, abbr):
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
-                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow",
+                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow"
             )
         else:
             click.secho(
@@ -614,7 +606,7 @@ class Validator:
 
 
 def process_dir(abbr, verbose, summary):  # pragma: no cover
-    person_filenames = glob.glob(os.path.join(get_data_dir(abbr), "people", "*.yml"))
+    person_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
 
@@ -656,7 +648,7 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
 @click.option(
-    "--summary/--no-summary", default=False, help="Print summary after validation errors.",
+    "--summary/--no-summary", default=False, help="Print summary after validation errors."
 )
 def lint(abbreviations, verbose, summary):
     """
