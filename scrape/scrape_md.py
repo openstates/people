@@ -2,6 +2,7 @@ import re
 import lxml.html
 import click
 import scrapelib
+from common import Person
 
 
 def elem_to_str(item, inside=False):
@@ -24,7 +25,6 @@ class XPath:
         min_items = self.min_items if min_items is None else min_items
 
         if num_items is not None and len(items) != num_items:
-            print(items)
             raise XPathError(
                 f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
                 f"expected {num_items}"
@@ -43,7 +43,7 @@ class XPath:
         return items
 
     def match_one(self, element):
-        return self.match(element, num_items=1)[0]
+        return str(self.match(element, num_items=1)[0])
 
 
 class NoSuchScraper(Exception):
@@ -165,6 +165,9 @@ class HtmlListPage(HtmlPage):
 
 
 class MDPersonDetail(HtmlPage):
+    def __init__(self, url):
+        self.url = url
+
     def parse_address_block(self, block):
         state = "address"
         # group lines by type
@@ -220,11 +223,15 @@ class MDPersonList(HtmlListPage):
     xpath = XPath("//div[@id='myDIV']//div[@class='p-0 member-index-cell']")
     subpages = [lambda item: MDPersonDetail(item["link"])]
 
+    def __init__(self, url):
+        self.url = url
+
     def process_item(self, item):
         dd_text = XPath(".//dd/text()").match(item)
         district = dd_text[2].strip()
         party = dd_text[4].strip()
         return dict(
+            chamber="upper" if "senate" in self.url else "lower",
             image=XPath(".//img/@src").match_one(item),
             district=district,
             party=party,
@@ -248,7 +255,17 @@ class MDPersonScraper(Scraper):
             yield MDPersonList("http://mgaleg.maryland.gov/mgawebsite/Members/Index/house")
 
     def to_object(self, item):
-        return item
+        p = Person(
+            state="md",
+            chamber=item["chamber"],
+            name=item["name"],
+            party=item["party"],
+            image=item["image"],
+            district=item["district"],
+        )
+        p.add_link(item["link"])
+        p.add_source(item["link"])
+        return p
 
 
 @click.group()
@@ -274,7 +291,7 @@ def sample(class_name, url):
 def scrape(chamber, session):
     for ch in chamber:
         for item in MDPersonScraper().scrape(ch, session):
-            print(item)
+            item.save("incoming/md/people")
 
 
 if __name__ == "__main__":
