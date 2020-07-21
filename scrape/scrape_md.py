@@ -228,7 +228,7 @@ class MDPersonList(HtmlListPage):
 
     def process_item(self, item):
         dd_text = XPath(".//dd/text()").match(item)
-        district = dd_text[2].strip()
+        district = dd_text[2].strip().split()[1]
         party = dd_text[4].strip()
         return dict(
             chamber="upper" if "senate" in self.url else "lower",
