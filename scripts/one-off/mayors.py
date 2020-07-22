@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import sys
 import csv
 import datetime
 from utils import ocd_uuid, dump_obj, reformat_phone_number
@@ -10,6 +11,7 @@ def city_to_jurisdiction(city, state):
 
 
 def make_mayors(state_to_import):
+    all_localities = []
     with open("mayors.csv") as f:
         data = csv.DictReader(f)
         for line in data:
@@ -48,27 +50,25 @@ def make_mayors(state_to_import):
             if email:
                 contact["email"] = email
 
+            jid = city_to_jurisdiction(city, state)
+            all_localities.append(OrderedDict({"name": city, "id": jid}))
+
             obj = OrderedDict(
                 {
                     "id": ocd_uuid("person"),
                     "name": name,
                     "given_name": given_name,
                     "family_name": family_name,
-                    "roles": [
-                        {
-                            "jurisdiction": city_to_jurisdiction(city, state),
-                            "type": "mayor",
-                            "end_date": term_end,
-                        }
-                    ],
+                    "roles": [{"jurisdiction": jid, "type": "mayor", "end_date": term_end}],
                     "contact_details": [contact],
                     "sources": [{"url": webform}] if webform else [],
                     "links": [{"url": webform}] if webform else [],
                 }
             )
             dump_obj(obj, output_dir=f"data/{state}/localities/")
+        dump_obj(all_localities, filename=f"data/{state_to_import}/localities.yml")
 
 
 if __name__ == "__main__":
-    make_mayors("ak")
-    make_mayors("al")
+    # make_mayors("ak")
+    make_mayors(sys.argv[1])
