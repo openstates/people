@@ -81,8 +81,8 @@ def write_csv(files, jurisdiction_id, output_filename):
                     else:
                         click.secho("unknown office: " + note, fg="red")
 
-                links = ";".join(l["url"] for l in data.get("links", []))
-                sources = ";".join(l["url"] for l in data.get("sources", []))
+                links = ";".join(k["url"] for k in data.get("links", []))
+                sources = ";".join(k["url"] for k in data.get("sources", []))
 
                 obj = {
                     "id": data["id"],

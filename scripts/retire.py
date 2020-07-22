@@ -75,7 +75,7 @@ def retire(end_date, filename, reason, death):
     if num == 0:
         click.secho("no active roles to retire", fg="red")
     elif num == 1:
-        click.secho(f"retired person")
+        click.secho("retired person")
     else:
         click.secho(f"retired person from {num} roles")
 
