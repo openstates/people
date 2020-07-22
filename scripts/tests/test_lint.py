@@ -358,7 +358,7 @@ def test_filename_id_test():
     v = Validator("ak", {"parties": []})
     v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
     for err in v.errors["bad-filename"]:
-        if f"not in filename" in err:
+        if "not in filename" in err:
             break
     else:
         raise AssertionError("did not check for id in filename")
