@@ -617,7 +617,7 @@ class Validator:
 
 def process_dir(abbr, verbose, summary):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
-    locality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "localities", "*.yml"))
+    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
 
@@ -632,7 +632,7 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
     for person_type, filenames in (
         (PersonType.LEGISLATIVE, legislative_filenames),
         (PersonType.RETIRED, retired_filenames),
-        (PersonType.EXECUTIVE, locality_filenames),
+        (PersonType.EXECUTIVE, municipality_filenames),
     ):
         for filename in filenames:
             print_filename = os.path.basename(filename)

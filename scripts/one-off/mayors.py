@@ -11,7 +11,7 @@ def city_to_jurisdiction(city, state):
 
 
 def make_mayors(state_to_import):
-    all_localities = []
+    all_municipalities = []
     with open("mayors.csv") as f:
         data = csv.DictReader(f)
         for line in data:
@@ -51,7 +51,7 @@ def make_mayors(state_to_import):
                 contact["email"] = email
 
             jid = city_to_jurisdiction(city, state)
-            all_localities.append(OrderedDict({"name": city, "id": jid}))
+            all_municipalities.append(OrderedDict({"name": city, "id": jid}))
 
             obj = OrderedDict(
                 {
@@ -65,8 +65,8 @@ def make_mayors(state_to_import):
                     "links": [{"url": webform}] if webform else [],
                 }
             )
-            dump_obj(obj, output_dir=f"data/{state}/localities/")
-        dump_obj(all_localities, filename=f"data/{state_to_import}/localities.yml")
+            dump_obj(obj, output_dir=f"data/{state}/municipalities/")
+        dump_obj(all_municipalities, filename=f"data/{state_to_import}/municipalities.yml")
 
 
 if __name__ == "__main__":

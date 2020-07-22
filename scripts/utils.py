@@ -107,6 +107,6 @@ def legacy_districts(**kwargs):
     return legacy_districts
 
 
-def load_local_jurisdictions(abbr):
-    with open(os.path.join(get_data_dir(abbr), "localities.yml")) as f:
+def load_municipalities(abbr):
+    with open(os.path.join(get_data_dir(abbr), "municipalities.yml")) as f:
         return load_yaml(f)

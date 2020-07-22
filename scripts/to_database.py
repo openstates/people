@@ -14,7 +14,7 @@ from utils import (
     load_yaml,
     legacy_districts,
     role_is_active,
-    load_local_jurisdictions,
+    load_municipalities,
     MAJOR_PARTIES,
 )
 
@@ -403,18 +403,18 @@ def create_parties():
             click.secho(f"created party: {party}", fg="green")
 
 
-def create_localities(jurisdictions):
+def create_municipalities(jurisdictions):
     from openstates.data.models import Jurisdiction, Organization
 
     for jurisdiction in jurisdictions:
         j, created = Jurisdiction.objects.get_or_create(
-            id=jurisdiction["id"], name=jurisdiction["name"]
+            id=jurisdiction["id"], name=jurisdiction["name"], classification="municipality"
         )
         if created:
             click.secho(f"created jurisdiction: {j.name}", fg="green")
 
         o, created = Organization.objects.get_or_create(
-            jurisdiction=j, classification="government", name=f"{jurisdiction['name']} Government",
+            jurisdiction=j, classification="government", name=f"{jurisdiction['name']} Government"
         )
         if created:
             click.secho(f"created organization: {o.name}", fg="green")
@@ -445,14 +445,14 @@ def to_database(abbreviations, purge, safe):
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
-        localities = load_local_jurisdictions(abbr)
+        municipalities = load_municipalities(abbr)
 
         with transaction.atomic():
-            create_localities(localities)
+            create_municipalities(municipalities)
 
         person_files = (
             glob.glob(os.path.join(directory, "legislature/*.yml"))
-            + glob.glob(os.path.join(directory, "localities/*.yml"))
+            + glob.glob(os.path.join(directory, "municipalities/*.yml"))
             + glob.glob(os.path.join(directory, "retired/*.yml"))
         )
         committee_files = glob.glob(os.path.join(directory, "organizations/*.yml"))
