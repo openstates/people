@@ -6,6 +6,7 @@ import datetime
 import glob
 import click
 import openstates_metadata as metadata
+from enum import Enum, auto
 from utils import (
     get_data_dir,
     get_filename,
@@ -20,6 +21,12 @@ from collections import defaultdict, Counter
 
 class BadVacancy(Exception):
     pass
+
+
+class PersonType(Enum):
+    LEGISLATIVE = auto()
+    RETIRED = auto()
+    EXECUTIVE = auto()
 
 
 SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)", re.I)
@@ -114,7 +121,7 @@ URL_LIST = NestedList({"note": [is_string], "url": [is_url, Required]})
 
 CONTACT_DETAILS = NestedList(
     {
-        "note": [Enum("District Office", "Capitol Office"), Required],
+        "note": [Enum("District Office", "Capitol Office", "Primary Office"), Required],
         "address": [is_string],
         "email": [is_string],
         "voice": [is_phone],
@@ -138,7 +145,7 @@ EXECUTIVE_ROLE_FIELDS = {
     "type": [is_string, Required],
     "jurisdiction": [is_ocd_jurisdiction, Required],
     "start_date": [is_fuzzy_date],
-    "end_date": [is_fuzzy_date],
+    "end_date": [is_fuzzy_date, Required],
     "contact_details": CONTACT_DETAILS,
 }
 
@@ -147,7 +154,7 @@ def is_role(role):
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
-    elif role_type in ("gov", "lt_gov"):
+    elif role_type in ("gov", "lt_gov", "mayor"):
         return validate_obj(role, EXECUTIVE_ROLE_FIELDS)
     else:
         return ["invalid type"]
@@ -210,19 +217,11 @@ PERSON_FIELDS = {
         }
     ),
     "other_names": NestedList(
-        {
-            "name": [is_string, Required],
-            "start_date": [is_fuzzy_date],
-            "end_date": [is_fuzzy_date],
-        }
+        {"name": [is_string, Required], "start_date": [is_fuzzy_date], "end_date": [is_fuzzy_date]}
     ),
     "sources": URL_LIST,
     "party": NestedList(
-        {
-            "name": [is_string, Required],
-            "start_date": [is_fuzzy_date],
-            "end_date": [is_fuzzy_date],
-        }
+        {"name": [is_string, Required], "start_date": [is_fuzzy_date], "end_date": [is_fuzzy_date]}
     ),
     "roles": NestedList(is_role),
     "extras": [is_dict],
@@ -308,7 +307,7 @@ def get_expected_districts(settings, abbr):
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
-                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow",
+                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow"
             )
         else:
             click.secho(
@@ -387,13 +386,16 @@ class Validator:
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
 
-    def validate_person(self, person, filename, retired=False):
+    def validate_person(self, person, filename, person_type):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         uid = person["id"].split("/")[1]
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
-        self.errors[filename].extend(validate_roles(person, "roles", retired))
-        self.errors[filename].extend(validate_roles(person, "party"))
+        self.errors[filename].extend(
+            validate_roles(person, "roles", person_type == PersonType.RETIRED)
+        )
+        if person_type == PersonType.LEGISLATIVE:
+            self.errors[filename].extend(validate_roles(person, "party"))
         active_parties = []
         for party in person.get("party", []):
             if party["name"] not in self.valid_parties:
@@ -412,10 +414,10 @@ class Validator:
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         self.person_mapping[person["id"]] = person["name"]
-        if retired:
+        if person_type == PersonType.RETIRED:
             self.retired_count += 1
             self.errors[filename].extend(self.validate_old_district_names(person))
-        else:
+        elif person_type == PersonType.LEGISLATIVE:
             self.summarize_person(person)
 
     def validate_old_district_names(self, person):
@@ -614,7 +616,8 @@ class Validator:
 
 
 def process_dir(abbr, verbose, summary):  # pragma: no cover
-    person_filenames = glob.glob(os.path.join(get_data_dir(abbr), "people", "*.yml"))
+    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
+    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
 
@@ -626,17 +629,16 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
     except BadVacancy:
         sys.exit(-1)
 
-    for filename in person_filenames:
-        print_filename = os.path.basename(filename)
-        with open(filename) as f:
-            person = load_yaml(f)
-            validator.validate_person(person, print_filename)
-
-    for filename in retired_filenames:
-        print_filename = os.path.basename(filename)
-        with open(filename) as f:
-            person = load_yaml(f)
-            validator.validate_person(person, print_filename, retired=True)
+    for person_type, filenames in (
+        (PersonType.LEGISLATIVE, legislative_filenames),
+        (PersonType.RETIRED, retired_filenames),
+        (PersonType.EXECUTIVE, municipality_filenames),
+    ):
+        for filename in filenames:
+            print_filename = os.path.basename(filename)
+            with open(filename) as f:
+                person = load_yaml(f)
+                validator.validate_person(person, print_filename, person_type)
 
     for filename in org_filenames:
         print_filename = os.path.basename(filename)
@@ -656,7 +658,7 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
 @click.option(
-    "--summary/--no-summary", default=False, help="Print summary after validation errors.",
+    "--summary/--no-summary", default=False, help="Print summary after validation errors."
 )
 def lint(abbreviations, verbose, summary):
     """

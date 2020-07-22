@@ -28,7 +28,7 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
     )
 
     output_dir = get_data_dir(state)
-    dump_obj(person, output_dir=os.path.join(output_dir, "people"))
+    dump_obj(person, output_dir=os.path.join(output_dir, "legislature"))
 
 
 @click.command()

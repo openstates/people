@@ -105,3 +105,8 @@ def legacy_districts(**kwargs):
     for d in metadata.lookup(**kwargs).legacy_districts:
         legacy_districts[d.chamber_type].append(d.name)
     return legacy_districts
+
+
+def load_municipalities(abbr):
+    with open(os.path.join(get_data_dir(abbr), "municipalities.yml")) as f:
+        return load_yaml(f)
