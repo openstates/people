@@ -108,5 +108,8 @@ def legacy_districts(**kwargs):
 
 
 def load_municipalities(abbr):
-    with open(os.path.join(get_data_dir(abbr), "municipalities.yml")) as f:
-        return load_yaml(f)
+    try:
+        with open(os.path.join(get_data_dir(abbr), "municipalities.yml")) as f:
+            return load_yaml(f)
+    except FileNotFoundError:
+        return []
