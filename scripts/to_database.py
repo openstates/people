@@ -149,6 +149,7 @@ def load_person(data):
                 primary_party = party_name
     for role in data.get("roles", []):
         if role["type"] in ("mayor",):
+            role_name = "Mayor"
             org_type = "government"
             use_district = False
         elif role["type"] in ("upper", "lower", "legislature"):
@@ -195,14 +196,15 @@ def load_person(data):
                 current_state = state_metadata.abbr.upper()
             except KeyError:
                 current_state = ""  # true for cities for now, figure out if that matters
-        memberships.append(
-            {
-                "organization": org,
-                "post": post,
-                "start_date": role.get("start_date", ""),
-                "end_date": role.get("end_date", ""),
-            }
-        )
+        membership = {
+            "organization": org,
+            "post": post,
+            "start_date": role.get("start_date", ""),
+            "end_date": role.get("end_date", ""),
+        }
+        if not use_district:
+            membership["role"] = role_name
+        memberships.append(membership)
 
     # note that we don't manage committee memberships here
     updated |= update_subobjects(
