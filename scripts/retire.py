@@ -32,6 +32,7 @@ def retire_person(person, end_date, reason=None, death=False):
 
 def move_file(filename):  # pragma: no cover
     new_filename = filename.replace("/legislature/", "/retired/")
+    new_filename = filename.replace("/municipalities/", "/retired/")
     click.secho(f"moved from {filename} to {new_filename}")
     os.renames(filename, new_filename)
 
