@@ -294,7 +294,7 @@ def validate_roles(person, roles_key, retired=False):
 
 def validate_jurisdictions(person, municipalities):
     errors = []
-    for role in person["roles"]:
+    for role in person.get("roles", []):
         jid = role.get("jurisdiction")
         try:
             state = metadata.lookup(jurisdiction_id=jid)
