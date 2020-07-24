@@ -14,6 +14,7 @@ from utils import (
     get_all_abbreviations,
     load_yaml,
     legacy_districts,
+    load_municipalities,
     MAJOR_PARTIES,
 )
 from collections import defaultdict, Counter
@@ -291,6 +292,19 @@ def validate_roles(person, roles_key, retired=False):
     return []
 
 
+def validate_jurisdictions(person, municipalities):
+    errors = []
+    for role in person.get("roles", []):
+        jid = role.get("jurisdiction")
+        try:
+            state = metadata.lookup(jurisdiction_id=jid)
+        except KeyError:
+            state = None
+        if jid and (not state and jid not in municipalities):
+            errors.append(f"{jid} is not a valid jurisdiction_id")
+    return errors
+
+
 def get_expected_districts(settings, abbr):
     expected = {}
 
@@ -385,12 +399,14 @@ class Validator:
         # field name -> value -> person
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
+        self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
 
     def validate_person(self, person, filename, person_type):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         uid = person["id"].split("/")[1]
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
+        self.errors[filename].extend(validate_jurisdictions(person, self.municipalities))
         self.errors[filename].extend(
             validate_roles(person, "roles", person_type == PersonType.RETIRED)
         )
