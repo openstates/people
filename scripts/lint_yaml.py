@@ -440,7 +440,8 @@ class Validator:
         errors = []
         for role in person.get("roles", []):
             if (
-                role["district"] not in self.expected[role["type"]]
+                "district" in role
+                and role["district"] not in self.expected[role["type"]]
                 and role["district"] not in self.legacy_districts[role["type"]]
             ):
                 errors.append(f"unknown district name: {role['type']} {role['district']}")
