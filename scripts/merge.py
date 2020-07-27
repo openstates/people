@@ -3,6 +3,7 @@
 import os
 import glob
 import click
+import openstates_metadata as metadata
 from utils import get_filename, get_data_dir, load_yaml, dump_obj
 from retire import retire_person, move_file
 
@@ -84,6 +85,14 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
 def incoming_merge(abbr, existing_people, new_people, retirement):
     unmatched = []
 
+    seats_for_district = {}
+    state = metadata.lookup(abbr=abbr)
+    for chamber in state.chambers:
+        chtype = "legislature" if chamber.chamber_type == "unicameral" else chamber.chamber_type
+        seats_for_district[chtype] = {
+            district.name: district.num_seats for district in chamber.districts
+        }
+
     # find candidate(s) for each new person
     for new in new_people:
         matched = False
@@ -94,7 +103,8 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
             role_match = False
             for role in existing["roles"]:
                 role.pop("start_date", None)
-                if new["roles"][0] == role:
+                seats = seats_for_district[role["type"]].get(role["district"], 1)
+                if new["roles"][0] == role and seats == 1:
                     role_match = True
                     break
             if name_match or role_match:
