@@ -34,6 +34,9 @@ SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)",
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
 UUID_RE = re.compile(r"^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
+JURISDICTION_RE = re.compile(
+    r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/(place:[a-z_]+/)?government"
+)
 LEGACY_OS_ID_RE = re.compile(r"[A-Z]{2}L\d{6}")
 
 
@@ -102,7 +105,7 @@ def is_phone(val):
 
 
 def is_ocd_jurisdiction(val):
-    return is_string(val) and val.startswith("ocd-jurisdiction/")
+    return is_string(val) and JURISDICTION_RE.match(val)
 
 
 def is_ocd_person(val):
@@ -400,6 +403,9 @@ class Validator:
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
         self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
+        for m in self.municipalities:
+            if not JURISDICTION_RE.match(m):
+                raise ValueError(f"invalid municipality id {m}")
 
     def validate_person(self, person, filename, person_type):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
