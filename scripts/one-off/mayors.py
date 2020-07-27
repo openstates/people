@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import sys
 import csv
 import datetime
@@ -12,6 +13,7 @@ def city_to_jurisdiction(city, state):
 
 def make_mayors(state_to_import):
     all_municipalities = []
+    os.makedirs(f"data/{state_to_import}/municipalities")
     with open("mayors.csv") as f:
         data = csv.DictReader(f)
         for line in data:
@@ -31,9 +33,12 @@ def make_mayors(state_to_import):
             zipcode = line["Zip Code"].strip()
             if line["Zip Plus 4"].strip():
                 zipcode += "-" + line["Zip Plus 4"].strip()
-            term_end = datetime.datetime.strptime(line["Term End"], "%m/%d/%Y").strftime(
-                "%Y-%m-%d"
-            )
+            if not line["Term End"]:
+                term_end = "2021-01-01"  # temporary term end date for the unknowns
+            else:
+                term_end = datetime.datetime.strptime(line["Term End"], "%m/%d/%Y").strftime(
+                    "%Y-%m-%d"
+                )
 
             if address2:
                 full_address = f"{address1};{address2};{city}, {state.upper()} {zipcode}"
