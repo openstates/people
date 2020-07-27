@@ -15,6 +15,7 @@ from lint_yaml import (
     compare_districts,
     Validator,
     BadVacancy,
+    PersonType,
 )  # noqa
 
 
@@ -111,19 +112,21 @@ def test_validate_nested_role_list():
                 "type": "upper",
                 "district": "4",
                 "end_date": "2010",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             {
                 "type": "gov",
                 "start_date": "2010",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "end_date": "2016",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             # bad roles
-            {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc"},
+            {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government"},
             {
                 "type": "gov",
                 "district": "4",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "end_date": "2016",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
         ],
     }
@@ -353,9 +356,9 @@ def test_person_duplicates():
 def test_filename_id_test():
     person = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith", "roles": [], "party": []}
     v = Validator("ak", {"parties": []})
-    v.validate_person(person, "bad-filename")
+    v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
     for err in v.errors["bad-filename"]:
-        if f"not in filename" in err:
+        if "not in filename" in err:
             break
     else:
         raise AssertionError("did not check for id in filename")
@@ -366,7 +369,7 @@ def test_validate_org_memberships():
     org = {
         "id": EXAMPLE_OCD_ORG_ID,
         "name": "Finance Committee",
-        "jurisdiction": "ocd-jurisdiction/country:us",
+        "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
         "parent": "lower",
         "classification": "committee",
         "memberships": [],
@@ -379,7 +382,7 @@ def test_validate_org_memberships():
     org["memberships"] = [{"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith"}]
     v = Validator("ak", settings)
     # validate person first to learn ID
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     assert v.errors[org_filename] == []
     assert v.warnings[org_filename] == []
@@ -389,7 +392,7 @@ def test_validate_org_memberships():
         {"id": "ocd-person/00000000-0000-0000-0000-000000000000", "name": "Jane Smith"}
     ]
     v = Validator("ak", settings)
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     print(v.errors)
     assert len(v.errors[org_filename]) == 1
@@ -397,7 +400,7 @@ def test_validate_org_memberships():
     # bad name, warning
     org["memberships"] = [{"id": EXAMPLE_OCD_PERSON_ID, "name": "Smith"}]
     v = Validator("ak", settings)
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     assert len(v.warnings[org_filename]) == 1
     assert v.warnings[org_filename]

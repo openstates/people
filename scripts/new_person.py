@@ -6,6 +6,20 @@ from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
 
 
 def create_person(fname, lname, name, state, district, party, rtype, url, image, start_date):
+    role = {
+        "type": rtype,
+        "district": district,
+        "jurisdiction": get_jurisdiction_id(state),
+        "start_date": start_date,
+    }
+    if rtype in ("upper", "lower", "legislature"):
+        directory = "legislature"
+    elif rtype in ("mayor",):
+        directory = "municipalities"
+        role.pop("district")
+    else:
+        raise ValueError(f"unknown role type {rtype}")
+
     person = OrderedDict(
         {
             "id": ocd_uuid("person"),
@@ -14,21 +28,14 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
             "family_name": lname,
             "image": image,
             "party": [{"name": party}],
-            "roles": [
-                {
-                    "type": rtype,
-                    "district": district,
-                    "jurisdiction": get_jurisdiction_id(state),
-                    "start_date": start_date,
-                }
-            ],
+            "roles": [role],
             "links": [{"url": url}],
             "sources": [{"url": url}],
         }
     )
 
     output_dir = get_data_dir(state)
-    dump_obj(person, output_dir=os.path.join(output_dir, "people"))
+    dump_obj(person, output_dir=os.path.join(output_dir, directory))
 
 
 @click.command()
@@ -38,7 +45,7 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
 @click.option("--state", prompt="State", help="State abbreviation")
 @click.option("--district", prompt="District", help="District")
 @click.option("--party", prompt="Party", help="Party")
-@click.option("--rtype", prompt="Role Type (upper|lower)", help="Role Type")
+@click.option("--rtype", prompt="Role Type (upper|lower|mayor)", help="Role Type")
 @click.option("--url", prompt="URL", help="Source URL")
 @click.option("--image", prompt="Image URL", help="Image URL")
 @click.option("--start-date", prompt="Start Date", help="Start Date YYYY-MM-DD")

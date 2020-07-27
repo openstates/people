@@ -81,8 +81,8 @@ def write_csv(files, jurisdiction_id, output_filename):
                     else:
                         click.secho("unknown office: " + note, fg="red")
 
-                links = ";".join(l["url"] for l in data.get("links", []))
-                sources = ";".join(l["url"] for l in data.get("sources", []))
+                links = ";".join(k["url"] for k in data.get("links", []))
+                sources = ";".join(k["url"] for k in data.get("sources", []))
 
                 obj = {
                     "id": data["id"],
@@ -134,7 +134,7 @@ def to_csv(abbreviations, upload):
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
-        person_files = sorted(glob.glob(os.path.join(directory, "people/*.yml")))
+        person_files = sorted(glob.glob(os.path.join(directory, "legislature/*.yml")))
         fname = f"{abbr}.csv"
         write_csv(person_files, jurisdiction_id, fname)
 

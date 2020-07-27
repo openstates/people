@@ -79,7 +79,7 @@ def resize_image(img_bytes, size):
 
 
 def download_state_images(abbr, skip_existing):
-    for person, _ in iter_objects(abbr, "people"):
+    for person, _ in iter_objects(abbr, "legislature"):
         url = person.get("image")
         person_id = person["id"]
         if not url:

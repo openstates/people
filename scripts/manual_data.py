@@ -50,7 +50,7 @@ def generate_template_csv(abbreviations, filename, missing_id=None):
 
 def find_by_id(id):
     id = id.split("/")[1]
-    choices = glob.glob(os.path.join(get_data_dir("*"), "people", f"*-{id}.yml")) + glob.glob(
+    choices = glob.glob(os.path.join(get_data_dir("*"), "legislature", f"*-{id}.yml")) + glob.glob(
         os.path.join(get_data_dir("*"), "retired", f"*-{id}.yml")
     )
     if len(choices) != 1:

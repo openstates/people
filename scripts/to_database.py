@@ -14,6 +14,7 @@ from utils import (
     load_yaml,
     legacy_districts,
     role_is_active,
+    load_municipalities,
     MAJOR_PARTIES,
 )
 
@@ -147,16 +148,26 @@ def load_person(data):
             else:
                 primary_party = party_name
     for role in data.get("roles", []):
-        if role["type"] not in ("upper", "lower", "legislature"):
+        if role["type"] in ("mayor",):
+            role_name = "Mayor"
+            org_type = "government"
+            use_district = False
+        elif role["type"] in ("upper", "lower", "legislature"):
+            org_type = role["type"]
+            use_district = True
+        else:
             raise ValueError("unsupported role type")
         try:
             org = cached_lookup(
-                Organization, classification=role["type"], jurisdiction_id=role["jurisdiction"],
+                Organization, classification=org_type, jurisdiction_id=role["jurisdiction"]
             )
-            post = org.posts.get(label=role["district"])
+            if use_district:
+                post = org.posts.get(label=role["district"])
+            else:
+                post = None
         except Organization.DoesNotExist:
             click.secho(
-                f"{person} no such organization {role['jurisdiction']} {role['type']}", fg="red",
+                f"{person} no such organization {role['jurisdiction']} {role['type']}", fg="red"
             )
             raise CancelTransaction()
         except Post.DoesNotExist:
@@ -167,7 +178,7 @@ def load_person(data):
                 raise CancelTransaction()
             else:
                 post = None
-        if role_is_active(role):
+        if role_is_active(role) and use_district:
             state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
             district = state_metadata.lookup_district(
                 name=str(role["district"]), chamber=role["type"]
@@ -180,16 +191,20 @@ def load_person(data):
             # are only going to ever appear in one state this is fine
             # it may become necessary to make this smarter if legislators start
             # crossing state lines, but we don't have any examples of this
-            state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
-            current_state = state_metadata.abbr.upper()
-        memberships.append(
-            {
-                "organization": org,
-                "post": post,
-                "start_date": role.get("start_date", ""),
-                "end_date": role.get("end_date", ""),
-            }
-        )
+            try:
+                state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
+                current_state = state_metadata.abbr.upper()
+            except KeyError:
+                current_state = ""  # true for cities for now, figure out if that matters
+        membership = {
+            "organization": org,
+            "post": post,
+            "start_date": role.get("start_date", ""),
+            "end_date": role.get("end_date", ""),
+        }
+        if not use_district:
+            membership["role"] = role_name
+        memberships.append(membership)
 
     # note that we don't manage committee memberships here
     updated |= update_subobjects(
@@ -390,10 +405,27 @@ def create_parties():
             click.secho(f"created party: {party}", fg="green")
 
 
+def create_municipalities(jurisdictions):
+    from openstates.data.models import Jurisdiction, Organization
+
+    for jurisdiction in jurisdictions:
+        j, created = Jurisdiction.objects.get_or_create(
+            id=jurisdiction["id"], name=jurisdiction["name"], classification="municipality"
+        )
+        if created:
+            click.secho(f"created jurisdiction: {j.name}", fg="green")
+
+        o, created = Organization.objects.get_or_create(
+            jurisdiction=j, classification="government", name=f"{jurisdiction['name']} Government"
+        )
+        if created:
+            click.secho(f"created organization: {o.name}", fg="green")
+
+
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option(
-    "--purge/--no-purge", default=False, help="Purge all legislators from DB that aren't in YAML.",
+    "--purge/--no-purge", default=False, help="Purge all legislators from DB that aren't in YAML."
 )
 @click.option(
     "--safe/--no-safe",
@@ -415,9 +447,15 @@ def to_database(abbreviations, purge, safe):
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
+        municipalities = load_municipalities(abbr)
 
-        person_files = glob.glob(os.path.join(directory, "people/*.yml")) + glob.glob(
-            os.path.join(directory, "retired/*.yml")
+        with transaction.atomic():
+            create_municipalities(municipalities)
+
+        person_files = (
+            glob.glob(os.path.join(directory, "legislature/*.yml"))
+            + glob.glob(os.path.join(directory, "municipalities/*.yml"))
+            + glob.glob(os.path.join(directory, "retired/*.yml"))
         )
         committee_files = glob.glob(os.path.join(directory, "organizations/*.yml"))
 
