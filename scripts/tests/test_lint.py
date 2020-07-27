@@ -112,21 +112,21 @@ def test_validate_nested_role_list():
                 "type": "upper",
                 "district": "4",
                 "end_date": "2010",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             {
                 "type": "gov",
                 "start_date": "2010",
                 "end_date": "2016",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             # bad roles
-            {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc"},
+            {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government"},
             {
                 "type": "gov",
                 "district": "4",
                 "end_date": "2016",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
         ],
     }
@@ -369,7 +369,7 @@ def test_validate_org_memberships():
     org = {
         "id": EXAMPLE_OCD_ORG_ID,
         "name": "Finance Committee",
-        "jurisdiction": "ocd-jurisdiction/country:us",
+        "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
         "parent": "lower",
         "classification": "committee",
         "memberships": [],
