@@ -159,7 +159,7 @@ def is_role(role):
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
-    elif role_type in ("governor", "lt_gov", "mayor"):
+    elif role_type in ("governor", "lt_governor", "mayor"):
         return validate_obj(role, EXECUTIVE_ROLE_FIELDS)
     else:
         return ["invalid type"]
