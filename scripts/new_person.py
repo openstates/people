@@ -17,6 +17,9 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
     elif rtype in ("mayor",):
         directory = "municipalities"
         role.pop("district")
+    elif rtype in ("governor", "lt_governor"):
+        directory = "executive"
+        role.pop("district")
     else:
         raise ValueError(f"unknown role type {rtype}")
 
