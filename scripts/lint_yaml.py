@@ -28,6 +28,7 @@ class PersonType(Enum):
     LEGISLATIVE = auto()
     RETIRED = auto()
     EXECUTIVE = auto()
+    MUNICIPAL = auto()
 
 
 SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
@@ -158,7 +159,7 @@ def is_role(role):
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
-    elif role_type in ("gov", "lt_gov", "mayor"):
+    elif role_type in ("governor", "lt_gov", "mayor"):
         return validate_obj(role, EXECUTIVE_ROLE_FIELDS)
     else:
         return ["invalid type"]
@@ -416,7 +417,7 @@ class Validator:
         self.errors[filename].extend(
             validate_roles(person, "roles", person_type == PersonType.RETIRED)
         )
-        if person_type == PersonType.LEGISLATIVE:
+        if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
             self.errors[filename].extend(validate_roles(person, "party"))
         active_parties = []
         for party in person.get("party", []):
@@ -640,6 +641,7 @@ class Validator:
 
 def process_dir(abbr, verbose, summary):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
+    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
@@ -655,7 +657,8 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
     for person_type, filenames in (
         (PersonType.LEGISLATIVE, legislative_filenames),
         (PersonType.RETIRED, retired_filenames),
-        (PersonType.EXECUTIVE, municipality_filenames),
+        (PersonType.MUNICIPAL, municipality_filenames),
+        (PersonType.EXECUTIVE, executive_filenames),
     ):
         for filename in filenames:
             print_filename = os.path.basename(filename)
