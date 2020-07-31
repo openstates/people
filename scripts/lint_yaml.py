@@ -242,6 +242,9 @@ def validate_obj(obj, schema, prefix=None):
         prefix_str = ""
 
     for field, validators in schema.items():
+        if not isinstance(obj, dict):
+            raise ValueError(f"{prefix_str} is not a dictionary")
+            continue
         value = obj.get(field, Missing)
 
         if value is Missing:
