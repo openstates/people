@@ -23,7 +23,7 @@
     * start_date
     * end_date
 * roles: list of legislative & executive roles held by this individual, each may have the following fields:
-    * type: upper|lower|legislature|gov|lt_gov|mayor    **required**
+    * type: upper|lower|legislature|governor|lt_governor|mayor    **required**
     * district: name/number of district   **required if upper|lower|legislature**
     * jurisdiction: ocd-jurisdiction identifier **required**
     * start_date  **required if not upper|lower|legislature**

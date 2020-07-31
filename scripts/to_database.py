@@ -152,6 +152,12 @@ def load_person(data):
             role_name = "Mayor"
             org_type = "government"
             use_district = False
+        elif role["type"] == "governor":
+            role_name = "Governor"
+            if role["jurisdiction"] == "ocd-jurisdiction/country:us/district:dc/government":
+                role_name = "Mayor"
+            org_type = "executive"
+            use_district = False
         elif role["type"] in ("upper", "lower", "legislature"):
             org_type = role["type"]
             use_district = True
@@ -454,6 +460,7 @@ def to_database(abbreviations, purge, safe):
 
         person_files = (
             glob.glob(os.path.join(directory, "legislature/*.yml"))
+            + glob.glob(os.path.join(directory, "executive/*.yml"))
             + glob.glob(os.path.join(directory, "municipalities/*.yml"))
             + glob.glob(os.path.join(directory, "retired/*.yml"))
         )

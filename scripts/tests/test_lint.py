@@ -115,7 +115,7 @@ def test_validate_nested_role_list():
                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             {
-                "type": "gov",
+                "type": "governor",
                 "start_date": "2010",
                 "end_date": "2016",
                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
@@ -123,7 +123,7 @@ def test_validate_nested_role_list():
             # bad roles
             {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government"},
             {
-                "type": "gov",
+                "type": "governor",
                 "district": "4",
                 "end_date": "2016",
                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
