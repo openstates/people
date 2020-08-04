@@ -123,8 +123,8 @@ def load_person(data):
 
     memberships = []
     primary_party = ""
-    active_division_id = ""
-    current_state = ""
+    current_jurisdiction_id = None
+    current_role = None
     for party in data.get("party", []):
         party_name = party["name"]
         try:
@@ -184,24 +184,23 @@ def load_person(data):
                 raise CancelTransaction()
             else:
                 post = None
-        if role_is_active(role) and use_district:
-            state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
-            district = state_metadata.lookup_district(
-                name=str(role["district"]), chamber=role["type"]
-            )
-            assert district
-            active_division_id = district.division_id
-            current_state = state_metadata.abbr.upper()
-        elif not current_state:
-            # set current_state to *something* -- since legislators
-            # are only going to ever appear in one state this is fine
-            # it may become necessary to make this smarter if legislators start
-            # crossing state lines, but we don't have any examples of this
-            try:
+
+        if role_is_active(role):
+            current_jurisdiction_id = role["jurisdiction_id"]
+            current_role = {
+                "title": role["title"],
+                "chamber": role["type"],
+                "district": role["district"],
+                "division_id": None,
+            }
+            if use_district:
                 state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
-                current_state = state_metadata.abbr.upper()
-            except KeyError:
-                current_state = ""  # true for cities for now, figure out if that matters
+                district = state_metadata.lookup_district(
+                    name=str(role["district"]), chamber=role["type"]
+                )
+                assert district
+                current_role["division_id"] = district.division_id
+
         membership = {
             "organization": org,
             "post": post,
@@ -222,13 +221,15 @@ def load_person(data):
 
     # set computed fields (avoid extra save)
     if (
-        person.current_role_division_id != active_division_id
+        person.current_role_division_id != current_role["division_id"]
         or person.primary_party != primary_party
-        or person.current_state != current_state
+        or person.current_role != current_role
+        or person.current_jurisdiction_id != current_jurisdiction_id
     ):
-        person.current_role_division_id = active_division_id
-        person.current_state = current_state
+        person.current_role_division_id = current_role["division_id"]
         person.primary_party = primary_party
+        person.current_role = current_role
+        person.current_jurisdiction_id = current_jurisdiction_id
         person.save()
 
     return created, updated
