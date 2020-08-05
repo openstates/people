@@ -188,11 +188,7 @@ def load_person(data):
         if role_is_active(role):
             current_jurisdiction_id = role["jurisdiction"]
 
-            current_role = {
-                "org_classification": org_type,
-                "district": None,
-                "division_id": None,
-            }
+            current_role = {"org_classification": org_type, "district": None, "division_id": None}
             if use_district:
                 state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
                 district = state_metadata.lookup_district(
@@ -201,7 +197,11 @@ def load_person(data):
                 assert district
                 current_role["division_id"] = district.division_id
                 current_role["title"] = getattr(state_metadata, role["type"]).title
-                current_role["district"] = role["district"]
+                # try to force district to an int for sorting, but allow strings for non-numeric districts
+                try:
+                    current_role["district"] = int(role["district"])
+                except ValueError:
+                    current_role["district"] = str(role["district"])
             else:
                 current_role["title"] = role_name
 
