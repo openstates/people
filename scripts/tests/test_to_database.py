@@ -38,6 +38,7 @@ def test_basic_person_creation():
     assert p.name == "Jane Smith"
     assert p.image == "https://example.com/image"
     assert p.extras["something"] == "special"
+    assert p.current_role is None
 
 
 @pytest.mark.django_db
@@ -225,10 +226,12 @@ def test_person_party():
 
     assert p.memberships.count() == 1
     assert p.memberships.get().organization.name == "Democratic"
+    assert p.primary_party == "Democratic"
 
     data["party"].append({"name": "Republican", "end_date": "2018-10-06"})
     created, updated = load_person(data)
     assert updated is True
+    assert p.primary_party == "Democratic"
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     p.memberships.count() == 2
     p.memberships.exclude(end_date="").count() == 1
@@ -251,6 +254,14 @@ def test_person_legislative_roles():
     assert p.memberships.count() == 1
     assert p.memberships.get().organization.name == "House"
     assert p.memberships.get().post.label == "3"
+    assert p.current_role == {
+        "chamber": "lower",
+        "district": 3,
+        "division_id": "ocd-division/country:us/state:nc/sldl:3",
+        "title": "Representative",
+    }
+    assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
+    assert p.current_role_division_id == "ocd-division/country:us/state:nc/sldl:3"
 
 
 EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
