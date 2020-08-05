@@ -15,8 +15,15 @@ def setup():
             id=f"ocd-division/country:us/state:nc/sldl:{n}", name=str(n)
         )
         o.posts.create(label=str(n), division=division)
+    Organization.objects.create(name="Executive", classification="executive", jurisdiction=j)
     Organization.objects.create(name="Democratic", classification="party")
     Organization.objects.create(name="Republican", classification="party")
+    j2 = Jurisdiction.objects.create(
+        id="ocd-jurisdiction/country:us/state:nc/place:cary/government", name="Cary, NC"
+    )
+    Organization.objects.create(
+        name="Cary Town Government", classification="government", jurisdiction=j2
+    )
 
 
 @pytest.mark.django_db
@@ -255,13 +262,64 @@ def test_person_legislative_roles():
     assert p.memberships.get().organization.name == "House"
     assert p.memberships.get().post.label == "3"
     assert p.current_role == {
-        "chamber": "lower",
+        "org_classification": "lower",
         "district": 3,
         "division_id": "ocd-division/country:us/state:nc/sldl:3",
         "title": "Representative",
     }
     assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
     assert p.current_role_division_id == "ocd-division/country:us/state:nc/sldl:3"
+
+
+@pytest.mark.django_db
+def test_person_governor_role():
+    yaml_text = """
+    id: abcdefab-0000-1111-2222-1234567890ab
+    name: Jane Smith
+    roles:
+        - type: governor
+          jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+    """
+    data = yaml.safe_load(yaml_text)
+    created, updated = load_person(data)
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+
+    assert p.memberships.count() == 1
+    assert p.memberships.get().organization.name == "Executive"
+    assert p.current_role == {
+        "org_classification": "executive",
+        "district": None,
+        "division_id": None,
+        "title": "Governor",
+    }
+    assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
+    assert p.current_role_division_id == ""
+
+
+@pytest.mark.django_db
+def test_person_mayor_role():
+    yaml_text = """
+    id: abcdefab-0000-1111-2222-1234567890ab
+    name: Jane Smith
+    roles:
+        - type: mayor
+          jurisdiction: ocd-jurisdiction/country:us/state:nc/place:cary/government
+    """
+    data = yaml.safe_load(yaml_text)
+    created, updated = load_person(data)
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+
+    assert p.memberships.count() == 1
+    assert p.current_role == {
+        "org_classification": "government",
+        "district": None,
+        "division_id": None,
+        "title": "Mayor",
+    }
+    assert (
+        p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/place:cary/government"
+    )
+    assert p.current_role_division_id == ""
 
 
 EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"

@@ -173,7 +173,7 @@ def load_person(data):
                 post = None
         except Organization.DoesNotExist:
             click.secho(
-                f"{person} no such organization {role['jurisdiction']} {role['type']}", fg="red"
+                f"{person} no such organization {role['jurisdiction']} {org_type}", fg="red"
             )
             raise CancelTransaction()
         except Post.DoesNotExist:
@@ -189,8 +189,8 @@ def load_person(data):
             current_jurisdiction_id = role["jurisdiction"]
 
             current_role = {
-                "chamber": role["type"],
-                "district": role["district"],
+                "org_classification": org_type,
+                "district": None,
                 "division_id": None,
             }
             if use_district:
@@ -201,6 +201,9 @@ def load_person(data):
                 assert district
                 current_role["division_id"] = district.division_id
                 current_role["title"] = getattr(state_metadata, role["type"]).title
+                current_role["district"] = role["district"]
+            else:
+                current_role["title"] = role_name
 
         membership = {
             "organization": org,
@@ -227,7 +230,7 @@ def load_person(data):
         or person.current_jurisdiction_id != current_jurisdiction_id
     ):
         if current_role:
-            person.current_role_division_id = current_role["division_id"]
+            person.current_role_division_id = current_role["division_id"] or ""
         person.primary_party = primary_party
         person.current_role = current_role
         person.current_jurisdiction_id = current_jurisdiction_id
