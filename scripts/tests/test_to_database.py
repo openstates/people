@@ -268,7 +268,6 @@ def test_person_legislative_roles():
         "title": "Representative",
     }
     assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
-    assert p.current_role_division_id == "ocd-division/country:us/state:nc/sldl:3"
 
 
 @pytest.mark.django_db
@@ -293,7 +292,6 @@ def test_person_governor_role():
         "title": "Governor",
     }
     assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
-    assert p.current_role_division_id == ""
 
 
 @pytest.mark.django_db
@@ -319,7 +317,6 @@ def test_person_mayor_role():
     assert (
         p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/place:cary/government"
     )
-    assert p.current_role_division_id == ""
 
 
 EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
