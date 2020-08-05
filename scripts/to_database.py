@@ -186,9 +186,9 @@ def load_person(data):
                 post = None
 
         if role_is_active(role):
-            current_jurisdiction_id = role["jurisdiction_id"]
+            current_jurisdiction_id = role["jurisdiction"]
+
             current_role = {
-                "title": role["title"],
                 "chamber": role["type"],
                 "district": role["district"],
                 "division_id": None,
@@ -200,6 +200,7 @@ def load_person(data):
                 )
                 assert district
                 current_role["division_id"] = district.division_id
+                current_role["title"] = getattr(state_metadata, role["type"]).title
 
         membership = {
             "organization": org,
@@ -221,12 +222,12 @@ def load_person(data):
 
     # set computed fields (avoid extra save)
     if (
-        person.current_role_division_id != current_role["division_id"]
-        or person.primary_party != primary_party
+        person.primary_party != primary_party
         or person.current_role != current_role
         or person.current_jurisdiction_id != current_jurisdiction_id
     ):
-        person.current_role_division_id = current_role["division_id"]
+        if current_role:
+            person.current_role_division_id = current_role["division_id"]
         person.primary_party = primary_party
         person.current_role = current_role
         person.current_jurisdiction_id = current_jurisdiction_id
