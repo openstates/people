@@ -204,6 +204,8 @@ def load_person(data):
                     current_role["district"] = str(role["district"])
             else:
                 current_role["title"] = role_name
+        elif not current_jurisdiction_id:
+            current_jurisdiction_id = role["jurisdiction"]
 
         membership = {
             "organization": org,
