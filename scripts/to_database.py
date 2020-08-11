@@ -231,8 +231,6 @@ def load_person(data):
         or person.current_role != current_role
         or person.current_jurisdiction_id != current_jurisdiction_id
     ):
-        if current_role:
-            person.current_role_division_id = current_role["division_id"] or ""
         person.primary_party = primary_party
         person.current_role = current_role
         person.current_jurisdiction_id = current_jurisdiction_id
