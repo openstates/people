@@ -15,14 +15,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v2
+    - name: install dependencies
+      uses: abatilo/actions-poetry@v1.11.0
       with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        python -m pip install poetry
-        poetry install
-    - name: 
-      run: |
-        ./scripts/lint_yaml.py
+        python_version: 3.8.0
+        poetry_version: 1.0
+        args: install
+    - name: lint yaml
+      uses: abatilo/actions-poetry@v1.11.0
+      with:
+        python_version: 3.8.0
+        poetry_version: 1.0
+        args: run ./scripts/lint_yaml.py
+      env: 
+        PYTHONPATH: scripts
