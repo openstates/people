@@ -41,11 +41,19 @@ jobs:
         python_version: 3.8.0
         poetry_version: 1.0
         args: run flake8  scripts --show-source --statistics
-    - name: lint with flake8
+    - name: pytest
       uses: abatilo/actions-poetry@v1.11.0
       with:
         python_version: 3.8.0
         poetry_version: 1.0
         args: run ./scripts/run_tests.sh
+      env: 
+        PYTHONPATH: scripts
+    - name: lint yaml
+      uses: abatilo/actions-poetry@v1.11.0
+      with:
+        python_version: 3.8.0
+        poetry_version: 1.0
+        args: run ./scripts/lint_yaml.py
       env: 
         PYTHONPATH: scripts
