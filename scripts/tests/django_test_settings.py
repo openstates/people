@@ -8,7 +8,7 @@ INSTALLED_APPS = (
 )
 DATABASES = {
     "default": {
-        "ENGINE": "django.contrib.gis.db.backends.postgis",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": "testdb",
         "USER": os.environ.get("PGUSER", "openstates"),
         "PASSWORD": os.environ.get("PGPASS", "openstates"),
