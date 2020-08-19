@@ -5,14 +5,17 @@ import sys
 import datetime
 import glob
 import click
+import openstates_metadata as metadata
+from enum import Enum, auto
 from utils import (
     get_data_dir,
     get_filename,
     role_is_active,
     get_all_abbreviations,
     load_yaml,
-    get_districts,
-    get_settings,
+    legacy_districts,
+    load_municipalities,
+    MAJOR_PARTIES,
 )
 from collections import defaultdict, Counter
 
@@ -21,10 +24,20 @@ class BadVacancy(Exception):
     pass
 
 
-SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)", re.I)
+class PersonType(Enum):
+    LEGISLATIVE = auto()
+    RETIRED = auto()
+    EXECUTIVE = auto()
+    MUNICIPAL = auto()
+
+
+SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
 UUID_RE = re.compile(r"^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
+JURISDICTION_RE = re.compile(
+    r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/(place:[a-z_]+/)?government"
+)
 LEGACY_OS_ID_RE = re.compile(r"[A-Z]{2}L\d{6}")
 
 
@@ -71,6 +84,19 @@ def is_social(val):
     return is_string(val) and not val.startswith(("http://", "https://", "@"))
 
 
+class Enum:
+    def __init__(self, *values):
+        self.values = values
+
+    def __call__(self, val):
+        return is_string(val) and val in self.values
+
+    # for display
+    @property
+    def __name__(self):
+        return f"Enum{self.values}"
+
+
 def is_fuzzy_date(val):
     return isinstance(val, datetime.date) or (is_string(val) and DATE_RE.match(val))
 
@@ -80,7 +106,7 @@ def is_phone(val):
 
 
 def is_ocd_jurisdiction(val):
-    return is_string(val) and val.startswith("ocd-jurisdiction/")
+    return is_string(val) and JURISDICTION_RE.match(val)
 
 
 def is_ocd_person(val):
@@ -100,7 +126,7 @@ URL_LIST = NestedList({"note": [is_string], "url": [is_url, Required]})
 
 CONTACT_DETAILS = NestedList(
     {
-        "note": [is_string, Required],
+        "note": [Enum("District Office", "Capitol Office", "Primary Office"), Required],
         "address": [is_string],
         "email": [is_string],
         "voice": [is_phone],
@@ -124,7 +150,7 @@ EXECUTIVE_ROLE_FIELDS = {
     "type": [is_string, Required],
     "jurisdiction": [is_ocd_jurisdiction, Required],
     "start_date": [is_fuzzy_date],
-    "end_date": [is_fuzzy_date],
+    "end_date": [is_fuzzy_date, Required],
     "contact_details": CONTACT_DETAILS,
 }
 
@@ -133,7 +159,7 @@ def is_role(role):
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
-    elif role_type in ("gov", "lt_gov"):
+    elif role_type in ("governor", "lt_governor", "mayor"):
         return validate_obj(role, EXECUTIVE_ROLE_FIELDS)
     else:
         return ["invalid type"]
@@ -216,6 +242,9 @@ def validate_obj(obj, schema, prefix=None):
         prefix_str = ""
 
     for field, validators in schema.items():
+        if not isinstance(obj, dict):
+            raise ValueError(f"{prefix_str} is not a dictionary")
+            continue
         value = obj.get(field, Missing)
 
         if value is Missing:
@@ -260,7 +289,7 @@ def validate_obj(obj, schema, prefix=None):
 
 
 def validate_roles(person, roles_key, retired=False):
-    active = [role for role in person[roles_key] if role_is_active(role)]
+    active = [role for role in person.get(roles_key, []) if role_is_active(role)]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
     elif roles_key == "roles" and retired and len(active) > 0:
@@ -270,14 +299,32 @@ def validate_roles(person, roles_key, retired=False):
     return []
 
 
-def get_expected_districts(settings):
-    expected = get_districts(settings)
+def validate_jurisdictions(person, municipalities):
+    errors = []
+    for role in person.get("roles", []):
+        jid = role.get("jurisdiction")
+        try:
+            state = metadata.lookup(jurisdiction_id=jid)
+        except KeyError:
+            state = None
+        if jid and (not state and jid not in municipalities):
+            errors.append(f"{jid} is not a valid jurisdiction_id")
+    return errors
+
+
+def get_expected_districts(settings, abbr):
+    expected = {}
+
+    state = metadata.lookup(abbr=abbr)
+    for chamber in state.chambers:
+        chtype = "legislature" if chamber.chamber_type == "unicameral" else chamber.chamber_type
+        expected[chtype] = {district.name: district.num_seats for district in chamber.districts}
 
     # remove vacancies
-    vacancies = settings.get("vacancies", [])
+    vacancies = settings.get(abbr, {}).get("vacancies", [])
     if vacancies:
         click.secho(f"Processing {len(vacancies)} vacancies:")
-    for vacancy in settings.get("vacancies", []):
+    for vacancy in vacancies:
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
@@ -337,7 +384,7 @@ class Validator:
 
     def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
-        self.expected = get_expected_districts(settings[abbr])
+        self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
@@ -358,24 +405,57 @@ class Validator:
         self.active_legislators = defaultdict(lambda: defaultdict(list))
         # field name -> value -> person
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
+        self.legacy_districts = legacy_districts(abbr=abbr)
+        self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
+        for m in self.municipalities:
+            if not JURISDICTION_RE.match(m):
+                raise ValueError(f"invalid municipality id {m}")
 
-    def validate_person(self, person, filename, retired=False):
+    def validate_person(self, person, filename, person_type):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         uid = person["id"].split("/")[1]
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
-        self.errors[filename].extend(validate_roles(person, "roles", retired))
-        self.errors[filename].extend(validate_roles(person, "party"))
+        self.errors[filename].extend(validate_jurisdictions(person, self.municipalities))
+        self.errors[filename].extend(
+            validate_roles(person, "roles", person_type == PersonType.RETIRED)
+        )
+        if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
+            self.errors[filename].extend(validate_roles(person, "party"))
+        active_parties = []
         for party in person.get("party", []):
             if party["name"] not in self.valid_parties:
                 self.errors[filename].append(f"invalid party {party['name']}")
+            if role_is_active(party):
+                active_parties.append(party["name"])
+        if len(active_parties) > 1:
+            if len([party for party in active_parties if party in MAJOR_PARTIES]) > 1:
+                self.errors[filename].append(
+                    f"multiple active major party memberships {active_parties}"
+                )
+            else:
+                self.warnings[filename].append(
+                    f"multiple active party memberships {active_parties}"
+                )
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         self.person_mapping[person["id"]] = person["name"]
-        if retired:
+        if person_type == PersonType.RETIRED:
             self.retired_count += 1
-        else:
+            self.errors[filename].extend(self.validate_old_district_names(person))
+        elif person_type == PersonType.LEGISLATIVE:
             self.summarize_person(person)
+
+    def validate_old_district_names(self, person):
+        errors = []
+        for role in person.get("roles", []):
+            if (
+                "district" in role
+                and role["district"] not in self.expected[role["type"]]
+                and role["district"] not in self.legacy_districts[role["type"]]
+            ):
+                errors.append(f"unknown district name: {role['type']} {role['district']}")
+        return errors
 
     def validate_org(self, org, filename):
         self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
@@ -562,26 +642,32 @@ class Validator:
             )
 
 
-def process_dir(abbr, verbose, summary, settings):  # pragma: no cover
-    person_filenames = glob.glob(os.path.join(get_data_dir(abbr), "people", "*.yml"))
+def process_dir(abbr, verbose, summary):  # pragma: no cover
+    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
+    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
+    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
     org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
+
+    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
+    with open(settings_file) as f:
+        settings = load_yaml(f)
     try:
         validator = Validator(abbr, settings)
     except BadVacancy:
         sys.exit(-1)
 
-    for filename in person_filenames:
-        print_filename = os.path.basename(filename)
-        with open(filename) as f:
-            person = load_yaml(f)
-            validator.validate_person(person, print_filename)
-
-    for filename in retired_filenames:
-        print_filename = os.path.basename(filename)
-        with open(filename) as f:
-            person = load_yaml(f)
-            validator.validate_person(person, print_filename, retired=True)
+    for person_type, filenames in (
+        (PersonType.LEGISLATIVE, legislative_filenames),
+        (PersonType.RETIRED, retired_filenames),
+        (PersonType.MUNICIPAL, municipality_filenames),
+        (PersonType.EXECUTIVE, executive_filenames),
+    ):
+        for filename in filenames:
+            print_filename = os.path.basename(filename)
+            with open(filename) as f:
+                person = load_yaml(f)
+                validator.validate_person(person, print_filename, person_type)
 
     for filename in org_filenames:
         print_filename = os.path.basename(filename)
@@ -609,7 +695,6 @@ def lint(abbreviations, verbose, summary):
 
         <ABBR> can be provided to restrict linting to single state's files.
     """
-    settings = get_settings()
     error_count = 0
 
     if not abbreviations:
@@ -617,7 +702,7 @@ def lint(abbreviations, verbose, summary):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, summary, settings)
+        error_count += process_dir(abbr, verbose, summary)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")

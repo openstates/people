@@ -1,25 +1,34 @@
 import pytest
 import yaml
-from opencivicdata.core.models import Person, Organization, Jurisdiction, Division, Post
-from to_database import load_person, load_org, create_posts
+from openstates.data.models import Person, Organization, Jurisdiction, Division
+from to_database import load_person, load_org
 
 
 def setup():
     d = Division.objects.create(id="ocd-division/country:us/state:nc", name="NC")
     j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/state:nc", name="NC", division=d
+        id="ocd-jurisdiction/country:us/state:nc/government", name="NC", division=d
     )
     o = Organization.objects.create(name="House", classification="lower", jurisdiction=j)
-    o.posts.create(label="1")
-    o.posts.create(label="2")
-    o.posts.create(label="3")
+    for n in range(1, 4):
+        division = Division.objects.create(
+            id=f"ocd-division/country:us/state:nc/sldl:{n}", name=str(n)
+        )
+        o.posts.create(label=str(n), division=division)
+    Organization.objects.create(name="Executive", classification="executive", jurisdiction=j)
     Organization.objects.create(name="Democratic", classification="party")
     Organization.objects.create(name="Republican", classification="party")
+    j2 = Jurisdiction.objects.create(
+        id="ocd-jurisdiction/country:us/state:nc/place:cary/government", name="Cary, NC"
+    )
+    Organization.objects.create(
+        name="Cary Town Government", classification="government", jurisdiction=j2
+    )
 
 
 @pytest.mark.django_db
 def test_basic_person_creation():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
@@ -36,6 +45,7 @@ def test_basic_person_creation():
     assert p.name == "Jane Smith"
     assert p.image == "https://example.com/image"
     assert p.extras["something"] == "special"
+    assert p.current_role is None
 
 
 @pytest.mark.django_db
@@ -47,7 +57,7 @@ def test_basic_person_updates():
     extras:
         something: special
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -85,7 +95,7 @@ def test_basic_person_subobjects():
     other_names:
         - name: J. Smith
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -106,7 +116,7 @@ def test_subobject_update():
         - url: https://example.com/extra
           note: some additional data
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -152,7 +162,7 @@ def test_subobject_duplicate():
         - url: https://example.com/jane
         - url: https://example.com/jane
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     # load twice, but second time no update should occur
     created, updated = load_person(data)
@@ -175,7 +185,7 @@ def test_person_identifiers():
         - scheme: old_openstates
           identifier: AR000002
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -191,7 +201,7 @@ def test_person_contact_details():
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
     contact_details:
-        - note: district office
+        - note: Capitol Office office
           fax: 111-222-3333
           voice: 555-555-5555
           email: fake@example.com
@@ -199,7 +209,7 @@ def test_person_contact_details():
         - note: home
           voice: 333-333-3333
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
@@ -216,17 +226,19 @@ def test_person_party():
     party:
         - name: Democratic
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
 
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.memberships.count() == 1
     assert p.memberships.get().organization.name == "Democratic"
+    assert p.primary_party == "Democratic"
 
     data["party"].append({"name": "Republican", "end_date": "2018-10-06"})
     created, updated = load_person(data)
     assert updated is True
+    assert p.primary_party == "Democratic"
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
     p.memberships.count() == 2
     p.memberships.exclude(end_date="").count() == 1
@@ -240,15 +252,71 @@ def test_person_legislative_roles():
     roles:
         - type: lower
           district: 3
-          jurisdiction: ocd-jurisdiction/country:us/state:nc
+          jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     """
-    data = yaml.load(yaml_text)
+    data = yaml.safe_load(yaml_text)
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.memberships.count() == 1
     assert p.memberships.get().organization.name == "House"
     assert p.memberships.get().post.label == "3"
+    assert p.current_role == {
+        "org_classification": "lower",
+        "district": 3,
+        "division_id": "ocd-division/country:us/state:nc/sldl:3",
+        "title": "Representative",
+    }
+    assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
+
+
+@pytest.mark.django_db
+def test_person_governor_role():
+    yaml_text = """
+    id: abcdefab-0000-1111-2222-1234567890ab
+    name: Jane Smith
+    roles:
+        - type: governor
+          jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+    """
+    data = yaml.safe_load(yaml_text)
+    created, updated = load_person(data)
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+
+    assert p.memberships.count() == 1
+    assert p.memberships.get().organization.name == "Executive"
+    assert p.current_role == {
+        "org_classification": "executive",
+        "district": None,
+        "division_id": None,
+        "title": "Governor",
+    }
+    assert p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/government"
+
+
+@pytest.mark.django_db
+def test_person_mayor_role():
+    yaml_text = """
+    id: abcdefab-0000-1111-2222-1234567890ab
+    name: Jane Smith
+    roles:
+        - type: mayor
+          jurisdiction: ocd-jurisdiction/country:us/state:nc/place:cary/government
+    """
+    data = yaml.safe_load(yaml_text)
+    created, updated = load_person(data)
+    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+
+    assert p.memberships.count() == 1
+    assert p.current_role == {
+        "org_classification": "government",
+        "district": None,
+        "division_id": None,
+        "title": "Mayor",
+    }
+    assert (
+        p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/place:cary/government"
+    )
 
 
 EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
@@ -256,12 +324,12 @@ EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
 
 @pytest.mark.django_db
 def test_basic_organization():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     """
@@ -277,12 +345,12 @@ def test_basic_organization():
 
 @pytest.mark.django_db
 def test_basic_organization_updates():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     """
@@ -311,12 +379,12 @@ def test_basic_organization_updates():
 
 @pytest.mark.django_db
 def test_organization_memberships():
-    data = yaml.load(
+    data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     memberships:
@@ -348,12 +416,12 @@ def test_organization_memberships():
 def test_org_person_membership_interaction():
     # this test ensure that committee memberships don't mess up person loading
     person_data = {"id": "123", "name": "Jane Smith"}
-    com_data = yaml.load(
+    com_data = yaml.safe_load(
         """
     id: ocd-organization/00000000-1111-2222-3333-444455556666
     name: Finance
     parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc
+    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
     founding_date: '2007-01-01'
     memberships:
@@ -372,60 +440,3 @@ def test_org_person_membership_interaction():
     assert created is False
     assert updated is False
     assert o.memberships.count() == 1
-
-
-@pytest.mark.django_db
-def test_create_posts_simple():
-    d = Division.objects.create(id="ocd-division/country:us/state:al", name="Alabama")
-    j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/state:al/government", name="Alabama", division=d
-    )
-    Organization.objects.create(jurisdiction=j, name="House", classification="lower")
-    Organization.objects.create(jurisdiction=j, name="Senate", classification="upper")
-    settings = {"lower_seats": 105, "upper_seats": 35, "legislature_name": "Alabama Legislature"}
-    # divisions would already exist
-    for n in range(settings["lower_seats"] + 1):
-        Division.objects.create(id=f"ocd-division/country:us/state:al/sldl:{n}", name=str(n))
-    for n in range(settings["upper_seats"] + 1):
-        Division.objects.create(id=f"ocd-division/country:us/state:al/sldu:{n}", name=str(n))
-
-    create_posts(j.id, settings)
-
-    assert Post.objects.filter(role="Senator").count() == 35
-    assert Post.objects.filter(role="Representative").count() == 105
-
-
-@pytest.mark.django_db
-def test_create_top_level_unicameral():
-    d = Division.objects.create(id="ocd-division/country:us/district:dc", name="DC")
-    j = Jurisdiction.objects.create(
-        id="ocd-jurisdiction/country:us/district:dc/government", name="DC", division=d
-    )
-    org = Organization.objects.create(jurisdiction=j, name="Council", classification="legislature")
-    for n in range(1, 9):
-        Division.objects.create(
-            id=f"ocd-division/country:us/district:dc/ward:{n}", name=f"Ward {n}"
-        )
-
-    settings = yaml.load(
-        """
-legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1,
-                    'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
-legislature_name: Council of the District of Columbia
-legislature_title: Councilmember
-legislature_division_ids:
-    'Ward 1': 'ocd-division/country:us/district:dc/ward:1'
-    'Ward 2': 'ocd-division/country:us/district:dc/ward:2'
-    'Ward 3': 'ocd-division/country:us/district:dc/ward:3'
-    'Ward 4': 'ocd-division/country:us/district:dc/ward:4'
-    'Ward 5': 'ocd-division/country:us/district:dc/ward:5'
-    'Ward 6': 'ocd-division/country:us/district:dc/ward:6'
-    'Ward 7': 'ocd-division/country:us/district:dc/ward:7'
-    'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
-    'Chairman': 'ocd-division/country:us/district:dc'
-    'At-Large': 'ocd-division/country:us/district:dc'"""
-    )
-
-    create_posts(j.id, settings)
-    assert org.posts.all().count() == 10
-    assert Post.objects.filter(division_id="ocd-division/country:us/district:dc").count() == 2

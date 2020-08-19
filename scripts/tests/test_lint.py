@@ -15,6 +15,7 @@ from lint_yaml import (
     compare_districts,
     Validator,
     BadVacancy,
+    PersonType,
 )  # noqa
 
 
@@ -111,19 +112,21 @@ def test_validate_nested_role_list():
                 "type": "upper",
                 "district": "4",
                 "end_date": "2010",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             {
-                "type": "gov",
+                "type": "governor",
                 "start_date": "2010",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "end_date": "2016",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
             # bad roles
-            {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc"},
+            {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government"},
             {
-                "type": "gov",
+                "type": "governor",
                 "district": "4",
-                "jurisdiction": "ocd-jurisdiction/country:us/state:nc",
+                "end_date": "2016",
+                "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
             },
         ],
     }
@@ -200,44 +203,45 @@ def test_validate_roles_retired(person, expected):
 
 
 def test_get_expected_districts():
-    expected = get_expected_districts(
-        {"upper_seats": 3, "lower_seats": ["A", "B", "C"], "legislature_seats": {"At-Large": 3}}
-    )
-    assert expected["upper"] == {"1": 1, "2": 1, "3": 1}
-    assert expected["lower"] == {"A": 1, "B": 1, "C": 1}
-    assert expected["legislature"] == {"At-Large": 3}
+    expected = get_expected_districts({}, "ne")
+    assert len(expected["legislature"]) == 49
+    assert expected["legislature"]["1"] == 1
+
+    expected = get_expected_districts({}, "md")
+    print(expected)
+    assert expected["lower"]["3A"] == 2
+    assert expected["lower"]["3B"] == 1
 
 
 def test_expected_districts_vacancies():
-    expected = get_expected_districts(
-        {
-            "upper_seats": 3,
-            "lower_seats": {"At-Large": 3},
+    vacancies = {
+        "ne": {
             "vacancies": [
-                {"chamber": "upper", "district": "2", "vacant_until": datetime.date(2100, 1, 1)},
                 {
-                    "chamber": "lower",
-                    "district": "At-Large",
+                    "chamber": "legislature",
+                    "district": "1",
                     "vacant_until": datetime.date(2100, 1, 1),
-                },
-            ],
+                }
+            ]
         }
-    )
-    assert expected["upper"] == {"1": 1, "2": 0, "3": 1}
-    assert expected["lower"] == {"At-Large": 2}
+    }
+    expected = get_expected_districts(vacancies, "ne")
+    assert expected["legislature"]["1"] == 0
 
     with pytest.raises(BadVacancy):
         get_expected_districts(
             {
-                "upper_seats": 3,
-                "vacancies": [
-                    {
-                        "chamber": "upper",
-                        "district": "2",
-                        "vacant_until": datetime.date(2000, 1, 1),
-                    }
-                ],
-            }
+                "ne": {
+                    "vacancies": [
+                        {
+                            "chamber": "upper",
+                            "district": "2",
+                            "vacant_until": datetime.date(2000, 1, 1),
+                        }
+                    ]
+                }
+            },
+            "ne",
         )
 
 
@@ -265,12 +269,8 @@ def test_compare_districts_overfill():
 
 
 def test_validator_check_https():
-    settings = {
-        "us": {"upper_seats": 100, "lower_seats": 435},
-        "http_whitelist": ["http://bad.example.com"],
-        "parties": [],
-    }
-    v = Validator("us", settings)
+    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    v = Validator("ak", settings)
 
     person = {
         "links": [
@@ -285,12 +285,8 @@ def test_validator_check_https():
 
 
 def test_person_summary():
-    settings = {
-        "us": {"upper_seats": 100, "lower_seats": 435},
-        "http_whitelist": ["http://bad.example.com"],
-        "parties": [],
-    }
-    v = Validator("us", settings)
+    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    v = Validator("ak", settings)
 
     people = [
         {
@@ -327,12 +323,8 @@ def test_person_summary():
 
 
 def test_person_duplicates():
-    settings = {
-        "us": {"upper_seats": 100, "lower_seats": 435},
-        "http_whitelist": ["http://bad.example.com"],
-        "parties": [],
-    }
-    v = Validator("us", settings)
+    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    v = Validator("ak", settings)
 
     people = [
         # duplicates across people
@@ -363,11 +355,10 @@ def test_person_duplicates():
 
 def test_filename_id_test():
     person = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith", "roles": [], "party": []}
-    settings = {"us": {"upper_seats": 100, "lower_seats": 435}, "parties": []}
-    v = Validator("us", settings)
-    v.validate_person(person, "bad-filename")
+    v = Validator("ak", {"parties": []})
+    v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
     for err in v.errors["bad-filename"]:
-        if f"not in filename" in err:
+        if "not in filename" in err:
             break
     else:
         raise AssertionError("did not check for id in filename")
@@ -378,20 +369,20 @@ def test_validate_org_memberships():
     org = {
         "id": EXAMPLE_OCD_ORG_ID,
         "name": "Finance Committee",
-        "jurisdiction": "ocd-jurisdiction/country:us",
+        "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
         "parent": "lower",
         "classification": "committee",
         "memberships": [],
     }
-    settings = {"us": {"upper_seats": 100, "lower_seats": 435}, "parties": []}
+    settings = {"parties": []}
     org_filename = "fake-org-" + EXAMPLE_OCD_ORG_ID
     person_filename = "fake-person-" + EXAMPLE_OCD_PERSON_ID
 
     # a good membership
     org["memberships"] = [{"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith"}]
-    v = Validator("us", settings)
+    v = Validator("ak", settings)
     # validate person first to learn ID
-    v.validate_person(person, person_filename)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     assert v.errors[org_filename] == []
     assert v.warnings[org_filename] == []
@@ -400,16 +391,16 @@ def test_validate_org_memberships():
     org["memberships"] = [
         {"id": "ocd-person/00000000-0000-0000-0000-000000000000", "name": "Jane Smith"}
     ]
-    v = Validator("us", settings)
-    v.validate_person(person, person_filename)
+    v = Validator("ak", settings)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     print(v.errors)
     assert len(v.errors[org_filename]) == 1
 
     # bad name, warning
     org["memberships"] = [{"id": EXAMPLE_OCD_PERSON_ID, "name": "Smith"}]
-    v = Validator("us", settings)
-    v.validate_person(person, person_filename)
+    v = Validator("ak", settings)
+    v.validate_person(person, person_filename, PersonType.LEGISLATIVE)
     v.validate_org(org, org_filename)
     assert len(v.warnings[org_filename]) == 1
     assert v.warnings[org_filename]

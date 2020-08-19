@@ -3,27 +3,27 @@
 import os
 import glob
 import click
+import openstates_metadata as metadata
 from utils import get_filename, get_data_dir, load_yaml, dump_obj
+from retire import retire_person, move_file
 
 
-class ListDifference:
-    def __init__(self, key_name, list_item, which_list):
+class Append:
+    def __init__(self, key_name, list_item):
         self.key_name = key_name
         self.list_item = list_item
-        self.which_list = which_list
 
     def __eq__(self, other):
-        return (
-            self.key_name == other.key_name
-            and self.list_item == other.list_item
-            and self.which_list == other.which_list
-        )
+        return self.key_name == other.key_name and self.list_item == other.list_item
 
     def __str__(self):
-        return f"{self.key_name}: {self.list_item} only in {self.which_list}"
+        return f"{self.key_name}: append {dict(self.list_item)}"
+
+    def __repr__(self):
+        return f"Append({self.key_name}, {self.list_item})"
 
 
-class ItemDifference:
+class Replace:
     def __init__(self, key_name, value_one, value_two):
         self.key_name = key_name
         self.value_one = value_one
@@ -37,179 +37,208 @@ class ItemDifference:
         )
 
     def __str__(self):
-        return f"{self.key_name}: {self.value_one} != {self.value_two}"
+        return f"{self.key_name}: {self.value_one} => {self.value_two}"
+
+    def __repr__(self):
+        return f"Append({self.key_name}, {self.value_one}, {self.value_two})"
 
 
-class MergeConflict(Exception):
-    def __init__(self, difference):
-        self.difference = difference
-
-    def __str__(self):
-        return str(self.difference)
-
-
-def compare_objects(obj1, obj2, prefix="", ignore=None):
+def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
     combined_keys = set(obj1) | set(obj2)
-    differences = []
+    changes = []
     for key in combined_keys:
-        if ignore and key in ignore:
-            continue
         key_name = ".".join((prefix, key)) if prefix else key
         val1 = obj1.get(key)
         val2 = obj2.get(key)
+
         if isinstance(val1, list) or isinstance(val2, list):
-            # we can compare this way since order doesn't matter
-            if val1 is None:
-                val1 = []
-            if val2 is None:
-                val2 = []
-            for item in val1:
-                if item not in val2:
-                    differences.append(ListDifference(key_name, item, "first"))
-            for item in val2:
-                if item not in val1:
-                    differences.append(ListDifference(key_name, item, "second"))
+            if val1 and not val2:
+                continue
+            elif val2 and not val1:
+                changes.append(Replace(key_name, val1, val2))
+            else:
+                # both have elements, append new to old, leave old intact
+                for item in val2:
+                    if item not in val1:
+                        changes.append(Append(key_name, item))
         elif isinstance(val1, dict) or isinstance(val2, dict):
-            differences.extend(compare_objects(val1 or {}, val2 or {}, prefix=key_name))
-        elif val1 != val2:
-            differences.append(ItemDifference(key_name, val1, val2))
-    return differences
+            changes.extend(compute_merge(val1 or {}, val2 or {}, prefix=key_name))
+        elif key == "id":
+            if val1 != val2 and keep_both_ids:
+                # old id stays as id: to keep things sane
+                changes.append(
+                    Append("other_identifiers", {"scheme": "openstates", "identifier": val2})
+                )
+        elif key == "name":
+            if val1 != val2:
+                # new name becomes name, but old name goes into other_names
+                changes.append(Append("other_names", {"name": val1}))
+                changes.append(Replace("name", val1, val2))
+        else:
+            # if values both exist and differ, or val1 is empty, do a Replace
+            if (val1 and val2 and val1 != val2) or (val1 is None):
+                changes.append(Replace(key_name, val1, val2))
+
+    return changes
 
 
-def calculate_similarity(existing, new):
-    """
-        if everything is equal except for the id: 1
-        if names differ, maximum match is 0.8
-        for each item that differs, we decrease score by 0.1
-    """
-    differences = compare_objects(
-        existing,
-        new,
-        ignore=["id", "other_identifiers", "given_name", "family_name", "middle_name", "suffix"],
-    )
+def incoming_merge(abbr, existing_people, new_people, retirement):
+    unmatched = []
 
-    # if nothing differs or only id differs
-    if len(differences) == 0 or (len(differences) == 1 and differences[0].key_name == "id"):
-        return 1
+    seats_for_district = {}
+    state = metadata.lookup(abbr=abbr)
+    for chamber in state.chambers:
+        chtype = "legislature" if chamber.chamber_type == "unicameral" else chamber.chamber_type
+        seats_for_district[chtype] = {
+            district.name: district.num_seats for district in chamber.districts
+        }
 
-    if existing["name"] != new["name"]:
-        score = 0.9  # will have another 0.1 deducted later
-    else:
-        score = 1
-
-    score -= 0.1 * len(differences)
-
-    if score < 0:
-        score = 0
-
-    if existing["name"] == new["name"]:
-        score = 0.4
-
-    return score
-
-
-def directory_merge(abbr, existing_people, new_people, remove_identical, copy_new, interactive):
-    perfect_matched = set()
-    matches = []
-    id_to_new_filename = {}
-
+    # find candidate(s) for each new person
     for new in new_people:
-        best_similarity = 0
-        best_match = None
-
-        id_to_new_filename[new["id"]] = get_filename(new)
+        matched = False
+        role_matches = []
 
         for existing in existing_people:
-            similarity = calculate_similarity(existing, new)
-            if similarity > 0.999:
-                perfect_matched.add(new["id"])
-                continue
-
-            if similarity > best_similarity:
-                best_similarity = similarity
-                best_match = existing
-
-        matches.append((best_similarity, new, best_match))
-
-    click.secho(f"{len(perfect_matched)} were perfect matches", fg="green")
-
-    if remove_identical:
-        for id in perfect_matched:
-            fname = id_to_new_filename[id]
-            fname = f"incoming/{abbr}/people/{fname}".format(fname)
-            click.secho("removing " + fname, fg="red")
-            os.remove(fname)
-
-    unmatched = set(p["id"] for p in new_people) - perfect_matched
-
-    for sim, new, old in sorted(matches, reverse=True, key=lambda x: x[0]):
-        if sim < 0.001:
-            break
-        unmatched.remove(new["id"])
-        oldfname = "data/{}/people/{}".format(abbr, get_filename(old))
-        newfname = "incoming/{}/people/{}".format(abbr, get_filename(new))
-        click.secho(" {:.2f} {} {}".format(sim, oldfname, newfname), fg="yellow")
-        if interactive:
-            differences = compare_objects(old, new)
-
-            for difference in differences:
-                click.echo("    " + str(difference))
-            ch = "~"
-            while ch not in "onsa":
-                click.secho("Keep (o)ld? Keep (n)ew? (s)kip? (a)bort?", bold=True)
-                ch = click.getchar()
-                if ch == "a":
-                    raise SystemExit(-1)
-                elif ch == "o":
-                    keep_on_conflict = "old"
-                elif ch == "n":
-                    keep_on_conflict = "new"
-                elif ch == "s":
-                    continue
-                merged = merge_people(
-                    old, new, keep_both_ids=False, keep_on_conflict=keep_on_conflict
+            name_match = new["name"] == existing["name"]
+            role_match = False
+            for role in existing["roles"]:
+                role.pop("start_date", None)
+                seats = seats_for_district[role["type"]].get(role["district"], 1)
+                if new["roles"][0] == role and seats == 1:
+                    role_match = True
+                    break
+            if name_match or role_match:
+                matched = interactive_merge(
+                    abbr, existing, new, name_match, role_match, retirement
                 )
-                dump_obj(merged, filename=oldfname)
-                os.remove(newfname)
 
-    click.secho(f"{len(unmatched)} were unmatched")
-    for id in unmatched:
-        fname = id_to_new_filename[id]
-        oldfname = f"incoming/{abbr}/people/{fname}".format(fname)
-        if copy_new:
-            newfname = f"data/{abbr}/people/{fname}".format(fname)
-            click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
-            os.rename(oldfname, newfname)
+            if matched:
+                break
+
+            # if we haven't matched and this was a role match, save this for later
+            if role_match:
+                role_matches.append(existing)
+        else:
+            # not matched
+            unmatched.append((new, role_matches))
+
+    return unmatched
 
 
-def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
-    differences = compare_objects(old, new)
+def copy_new_incoming(abbr, new, _type):
+    fname = get_filename(new)
+    oldfname = f"incoming/{abbr}/{_type}/{fname}".format(fname)
+    newfname = f"data/{abbr}/{_type}/{fname}".format(fname)
+    click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
+    os.rename(oldfname, newfname)
 
-    for difference in differences:
-        if difference.key_name == "id":
-            if keep_both_ids:
-                if "other_identifiers" not in old:
-                    old["other_identifiers"] = []
-                old["other_identifiers"].append({"scheme": "openstates", "identifier": new["id"]})
-            continue
 
-        if isinstance(difference, ItemDifference):
-            if difference.value_one is None:
-                old[difference.key_name] = difference.value_two
-            elif difference.value_two is None:
-                pass
-            elif keep_on_conflict == "old":
-                pass
-            elif keep_on_conflict == "new":
-                old[difference.key_name] = difference.value_two
-            else:
-                raise MergeConflict(difference)
+def retire(abbr, existing, new, retirement=None):
+    if not retirement:
+        retirement = click.prompt("Enter retirement date YYYY-MM-DD")
+    person, num = retire_person(existing, retirement)
+    fname = get_filename(existing)
+    fname = f"data/{abbr}/people/{fname}".format(fname)
+    dump_obj(person, filename=fname)
+    move_file(fname)
 
-        if isinstance(difference, ListDifference):
-            # only need to handle case where item is only in second list
-            if difference.which_list == "second":
-                old[difference.key_name].append(difference.list_item)
+
+def interactive_merge(abbr, old, new, name_match, role_match, retirement):
+    """
+    returns True iff a merge was done
+    """
+    oldfname = "data/{}/people/{}".format(abbr, get_filename(old))
+    newfname = "incoming/{}/people/{}".format(abbr, get_filename(new))
+    click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
+
+    # simulate difference
+    changes = compute_merge(old, new, keep_both_ids=False)
+
+    if not changes:
+        click.secho(" perfect match, removing " + newfname, fg="green")
+        os.remove(newfname)
+        return True
+
+    for change in changes:
+        if change.key_name == "name" or change.key_name == "roles":
+            click.secho("    " + str(change), fg="red", bold=True)
+        else:
+            click.echo("    " + str(change))
+
+    ch = "~"
+    if name_match and role_match:
+        choices = "m"
+        # automatically pick merge
+        ch = "m"
+        # there is one very specific case that this fails in, if someone is beaten
+        # by someone with the exact same name, that'll need to be caught manually
+    elif name_match:
+        choices = "m"
+        text = "(m)erge?"
+    elif role_match:
+        choices = "mr"
+        text = f"(m)erge? (r)etire {old['name']}"
+
+    while ch not in (choices + "sa"):
+        click.secho(text + " (s)kip? (a)bort?", bold=True)
+        ch = click.getchar()
+
+    if ch == "a":
+        raise SystemExit(-1)
+    elif ch == "m":
+        merged = merge_people(old, new, keep_both_ids=False)
+        dump_obj(merged, filename=oldfname)
+        click.secho(" merged.", fg="green")
+        os.remove(newfname)
+    elif ch == "r":
+        copy_new_incoming(abbr, new, "people")
+        retire(abbr, old, new, retirement)
+    elif ch == "s":
+        return False
+
+    return True
+
+
+def merge_people(old, new, keep_both_ids=False):
+    """
+    Function to merge two people objects.
+
+    keep_both_ids
+        Should be set to True iff people have been imported before.
+        If we're dealing with an election, it should be set to false since the new ID
+        hasn't been published anywhere yet.
+    """
+    changes = compute_merge(old, new, keep_both_ids=keep_both_ids)
+
+    for change in changes:
+        if isinstance(change, Replace):
+            old[change.key_name] = change.value_two
+        if isinstance(change, Append):
+            if change.key_name not in old:
+                old[change.key_name] = []
+            old[change.key_name].append(change.list_item)
     return old
+
+
+def merge_scraped_coms(abbr, old, new):
+    old_by_key = {(c["parent"], c["name"]): c for c in old}
+    for c in new:
+        old_com = old_by_key.pop((c["parent"], c["name"]), None)
+        if old_com:
+            old_com["sources"] = c["sources"]
+            old_com["memberships"] = c["memberships"]
+            fname = os.path.join(get_data_dir(abbr), "organizations", get_filename(old_com))
+            dump_obj(old_com, filename=fname)
+            click.secho(f"updated {fname}")
+            os.remove(f"incoming/{abbr}/organizations/{get_filename(c)}")
+        else:
+            copy_new_incoming(abbr, c, "organizations")
+
+    # remove unmatched old committees
+    for com in old_by_key.values():
+        fn = get_filename(com)
+        click.secho(f"removing {fn}", fg="yellow")
+        os.remove(os.path.join(get_data_dir(abbr), "organizations", fn))
 
 
 @click.command()
@@ -219,12 +248,14 @@ def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
     help="Operate in incoming mode, argument should be state abbr to scan.",
 )
 @click.option(
-    "--remove-identical/--no-remove-identical", help="In incoming mode, remove identical files."
+    "--committees/--no-committees",
+    help="Enable/Disable experimental committee merge (off by default)",
 )
 @click.option(
-    "--copy-new/--no-copy-new", default=None, help="In incoming mode, copy brand new files over."
+    "--retirement",
+    default=None,
+    help="Set retirement date for all people marked retired (in incoming mode).",
 )
-@click.option("--interactive/--no-interactive", default=False, help="Do interactive merges.")
 @click.option(
     "--old",
     default=None,
@@ -235,19 +266,7 @@ def merge_people(old, new, keep_on_conflict=None, keep_both_ids=False):
     default=None,
     help="In merge mode, this is the newer file that will be removed after merge.",
 )
-@click.option(
-    "--keep",
-    default=None,
-    help="""When operating in merge mode, select which data to keep.
-Values:
-old
-    Keep data in old file if there's conflict.
-new
-    Keep data in new file if there's conflict.
-
-When omitted, conflicts will raise error.""",
-)
-def entrypoint(incoming, old, new, keep, remove_identical, copy_new, interactive):
+def entrypoint(incoming, old, new, retirement, committees):
     """
         Script to assist with merging legislator files.
 
@@ -277,19 +296,32 @@ def entrypoint(incoming, old, new, keep, remove_identical, copy_new, interactive
             f"analyzing {len(existing_people)} existing people and {len(new_people)} incoming"
         )
 
-        directory_merge(abbr, existing_people, new_people, remove_identical, copy_new, interactive)
+        unmatched = incoming_merge(abbr, existing_people, new_people, retirement)
+        click.secho(f"{len(unmatched)} people were unmatched")
+
+    if incoming and committees:
+        existing_coms = []
+        incoming_coms = []
+        for filename in glob.glob(os.path.join(get_data_dir(abbr), "organizations/*.yml")):
+            with open(filename) as f:
+                existing_coms.append(load_yaml(f))
+        for filename in glob.glob(os.path.join(incoming_dir, "organizations/*.yml")):
+            with open(filename) as f:
+                incoming_coms.append(load_yaml(f))
+        click.secho(
+            f"analyzing {len(existing_coms)} existing orgs and {len(incoming_coms)} incoming"
+        )
+        merge_scraped_coms(abbr, existing_coms, incoming_coms)
 
     if old and new:
         with open(old) as f:
             old_obj = load_yaml(f)
         with open(new) as f:
             new_obj = load_yaml(f)
-        if keep not in ("old", "new"):
-            raise ValueError("--keep parameter must be old or new")
         keep_both_ids = True
         if "incoming" in new:
             keep_both_ids = False
-        merged = merge_people(old_obj, new_obj, keep_on_conflict=keep, keep_both_ids=keep_both_ids)
+        merged = merge_people(old_obj, new_obj, keep_both_ids=keep_both_ids)
         dump_obj(merged, filename=old)
         os.remove(new)
         click.secho(f"merged files into {old}\ndeleted {new}\ncheck git diff before committing")

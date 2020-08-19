@@ -57,7 +57,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         people_lookup[scrape_id] = person
         people_lookup[person["name"]] = person
 
-        dump_obj(person, output_dir=os.path.join(output_dir, "people"))
+        dump_obj(person, output_dir=os.path.join(output_dir, "legislature"))
 
     # resolve committee parents and members and write them out
     for org in committees_by_id.values():
@@ -184,7 +184,7 @@ def process_org(org, jurisdiction_id):
 @click.argument("input_dir")
 def to_yaml(input_dir):
     """
-    Convert pupa scraped JSON in INPUT_DIR to YAML files for this repo.
+    Convert scraped JSON in INPUT_DIR to YAML files for this repo.
 
     Will put data into incoming/ directory for usage with merge.py's --incoming option.
     """
@@ -202,7 +202,7 @@ def to_yaml(input_dir):
     output_dir = output_dir.replace("data", "incoming")
     assert "incoming" in output_dir
 
-    for dir in ("people", "organizations"):
+    for dir in ("legislature", "organizations"):
         try:
             os.makedirs(os.path.join(output_dir, dir))
         except FileExistsError:

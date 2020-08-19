@@ -1,488 +1,65 @@
-ak:
-  legislature_name: Alaska State Legislature
-  lower_seats: 40
-  upper_seats: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T']
-al:
-  legislature_name: Alabama Legislature
-  lower_seats: 105
-  upper_seats: 35
-ar:
-  legislature_name: Arkansas General Assembly
-  lower_seats: 100
-  upper_seats: 35
-az:
-  legislature_name: Arizona State Legislature
-  lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2}
-  upper_seats: 30
 ca:
-  legislature_name: California State Legislature
-  lower_seats: 80
-  lower_title: Assemblymember
-  lower_chamber_name: Assembly
-  upper_seats: 40
-co:
-  legislature_name: Colorado General Assembly
-  lower_seats: 65
-  upper_seats: 35
-ct:
-  legislature_name: Connecticut General Assembly
-  lower_seats: 151
-  upper_seats: 36
   vacancies:
     - chamber: lower
-      district: 39
+      district: 67
+      vacant_until: 2021-01-01
+ga:
+  vacancies:
+    - chamber: upper
+      district: 4
+      vacant_until: 2021-01-01
+ma:
+  vacancies:
+    - chamber: upper
+      district: Plymouth and Barnstable
+      vacant_until: 2021-01-01
+    - chamber: upper
+      district: Second Hampden and Hampshire
       vacant_until: 2021-01-01
     - chamber: lower
-      district: 99
+      district: Third Bristol
       vacant_until: 2021-01-01
+    - chamber: lower
+      district: Thirty-Seventh Middlesex
+      vacant_until: 2021-01-01
+mo:
+  vacancies:
     - chamber: upper
       district: 3
       vacant_until: 2021-01-01
     - chamber: upper
-      district: 5
+      district: 7
       vacant_until: 2021-01-01
     - chamber: upper
-      district: 6
+      district: 9
       vacant_until: 2021-01-01
-dc:
-  legislature_name: Council of the District of Columbia
-  legislature_seats: {'Ward 1': 1, 'Ward 2': 1, 'Ward 3': 1, 'Ward 4': 1, 'Ward 5': 1, 'Ward 6': 1, 'Ward 7': 1, 'Ward 8': 1, 'Chairman': 1, 'At-Large': 4}
-  legislature_title: Councilmember
-  legislature_division_ids:
-    'Ward 1': 'ocd-division/country:us/district:dc/ward:1'
-    'Ward 2': 'ocd-division/country:us/district:dc/ward:2'
-    'Ward 3': 'ocd-division/country:us/district:dc/ward:3'
-    'Ward 4': 'ocd-division/country:us/district:dc/ward:4'
-    'Ward 5': 'ocd-division/country:us/district:dc/ward:5'
-    'Ward 6': 'ocd-division/country:us/district:dc/ward:6'
-    'Ward 7': 'ocd-division/country:us/district:dc/ward:7'
-    'Ward 8': 'ocd-division/country:us/district:dc/ward:8'
-    'Chairman': 'ocd-division/country:us/district:dc'
-    'At-Large': 'ocd-division/country:us/district:dc'
-de:
-  legislature_name: Delaware General Assembly
-  lower_seats: 41
-  upper_seats: 21
-fl:
-  legislature_name: Florida Legislature
-  lower_seats: 120
-  upper_seats: 40
-ga:
-  legislature_name: Georgia General Assembly
-  lower_seats: 180
-  upper_seats: 56
-hi:
-  legislature_name: Hawaii State Legislature
-  lower_seats: 51
-  upper_seats: 25
-ia:
-  legislature_name: Iowa General Assembly
-  lower_seats: 100
-  upper_seats: 50
-id:
-  legislature_name: Idaho State Legislature
-  lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2}
-  upper_seats: 35
-il:
-  legislature_name: Illinois General Assembly
-  lower_seats: 118
-  upper_seats: 59
-in:
-  legislature_name: Indiana General Assembly
-  lower_seats: 100
-  upper_seats: 50
-ks:
-  legislature_name: Kansas State Legislature
-  lower_seats: 125
-  upper_seats: 40
-ky:
-  legislature_name: Kentucky General Assembly
-  lower_seats: 100
-  upper_seats: 38
-la:
-  legislature_name: Louisiana Legislature
-  lower_seats: 105
-  upper_seats: 39
-ma:
-  legislature_name: Massachusetts General Court
-  lower_seats: ["Tenth Bristol", "Tenth Essex", "Tenth Hampden", "Tenth Middlesex", "Tenth Norfolk", "Tenth Plymouth", "Tenth Suffolk", "Tenth Worcester", "Eleventh Bristol", "Eleventh Essex", "Eleventh Hampden", "Eleventh Middlesex", "Eleventh Norfolk", "Eleventh Plymouth", "Eleventh Suffolk", "Eleventh Worcester", "Twelfth Bristol", "Twelfth Essex", "Twelfth Hampden", "Twelfth Middlesex", "Twelfth Norfolk", "Twelfth Plymouth", "Twelfth Suffolk", "Twelfth Worcester", "Thirteenth Bristol", "Thirteenth Essex", "Thirteenth Middlesex", "Thirteenth Norfolk", "Thirteenth Suffolk", "Thirteenth Worcester", "Fourteenth Bristol", "Fourteenth Essex", "Fourteenth Middlesex", "Fourteenth Norfolk", "Fourteenth Suffolk", "Fourteenth Worcester", "Fifteenth Essex", "Fifteenth Middlesex", "Fifteenth Norfolk", "Fifteenth Suffolk", "Fifteenth Worcester", "Sixteenth Essex", "Sixteenth Middlesex", "Sixteenth Suffolk", "Sixteenth Worcester", "Seventeenth Essex", "Seventeenth Middlesex", "Seventeenth Suffolk", "Seventeenth Worcester", "Eighteenth Essex", "Eighteenth Middlesex", "Eighteenth Suffolk", "Eighteenth Worcester", "Nineteenth Middlesex", "Nineteenth Suffolk", "First Barnstable", "First Berkshire", "First Bristol", "First Essex", "First Franklin", "First Hampden", "First Hampshire", "First Middlesex", "First Norfolk", "First Plymouth", "First Suffolk", "First Worcester", "Twentieth Middlesex", "Twenty-First Middlesex", "Twenty-Second Middlesex", "Twenty-Third Middlesex", "Twenty-Fourth Middlesex", "Twenty-Fifth Middlesex", "Twenty-Sixth Middlesex", "Twenty-Seventh Middlesex", "Twenty-Eighth Middlesex", "Twenty-Ninth Middlesex", "Second Barnstable", "Second Berkshire", "Second Bristol", "Second Essex", "Second Franklin", "Second Hampden", "Second Hampshire", "Second Middlesex", "Second Norfolk", "Second Plymouth", "Second Suffolk", "Second Worcester", "Thirtieth Middlesex", "Thirty-First Middlesex", "Thirty-Second Middlesex", "Thirty-Third Middlesex", "Thirty-Fourth Middlesex", "Thirty-Fifth Middlesex", "Thirty-Sixth Middlesex", "Thirty-Seventh Middlesex", "Third Barnstable", "Third Berkshire", "Third Bristol", "Third Essex", "Third Hampden", "Third Hampshire", "Third Middlesex", "Third Norfolk", "Third Plymouth", "Third Suffolk", "Third Worcester", "Fourth Barnstable", "Fourth Berkshire", "Fourth Bristol", "Fourth Essex", "Fourth Hampden", "Fourth Middlesex", "Fourth Norfolk", "Fourth Plymouth", "Fourth Suffolk", "Fourth Worcester", "Fifth Barnstable", "Fifth Bristol", "Fifth Essex", "Fifth Hampden", "Fifth Middlesex", "Fifth Norfolk", "Fifth Plymouth", "Fifth Suffolk", "Fifth Worcester", "Sixth Bristol", "Sixth Essex", "Sixth Hampden", "Sixth Middlesex", "Sixth Norfolk", "Sixth Plymouth", "Sixth Suffolk", "Sixth Worcester", "Seventh Bristol", "Seventh Essex", "Seventh Hampden", "Seventh Middlesex", "Seventh Norfolk", "Seventh Plymouth", "Seventh Suffolk", "Seventh Worcester", "Eighth Bristol", "Eighth Essex", "Eighth Hampden", "Eighth Middlesex", "Eighth Norfolk", "Eighth Plymouth", "Eighth Suffolk", "Eighth Worcester", "Ninth Bristol", "Ninth Essex", "Ninth Hampden", "Ninth Middlesex", "Ninth Norfolk", "Ninth Plymouth", "Ninth Suffolk", "Ninth Worcester", "Barnstable, Dukes and Nantucket"]
-  upper_seats: ["Bristol and Norfolk", "Cape and Islands", "Fifth Middlesex", "First Bristol and Plymouth", "First Essex", "First Essex and Middlesex", "First Hampden and Hampshire", "First Middlesex", "First Middlesex and Norfolk", "First Plymouth and Bristol", "First Suffolk", "First Suffolk and Middlesex", "First Worcester", "Fourth Middlesex", "Hampden", "Berkshire, Hampshire, Franklin and Hampden", "Middlesex and Suffolk", "Middlesex and Worcester", "Norfolk, Bristol and Middlesex", "Norfolk, Bristol and Plymouth", "Norfolk and Plymouth", "Norfolk and Suffolk", "Plymouth and Barnstable", "Plymouth and Norfolk", "Second Bristol and Plymouth", "Second Essex", "Second Essex and Middlesex", "Second Hampden and Hampshire", "Second Middlesex", "Second Middlesex and Norfolk", "Second Plymouth and Bristol", "Second Suffolk", "Second Suffolk and Middlesex", "Second Worcester", "Third Essex", "Third Middlesex", "Worcester and Middlesex", "Worcester and Norfolk", "Worcester, Hampden, Hampshire and Middlesex", "Hampshire, Franklin and Worcester"]
-  upper_division_ids:
-    "Berkshire, Hampshire, Franklin and Hampden": "ocd-division/country:us/state:ma/sldu:berkshire_hampshire_franklin_and_hampden"
-    "Bristol and Norfolk": "ocd-division/country:us/state:ma/sldu:bristol_and_norfolk"
-    "Cape and Islands": "ocd-division/country:us/state:ma/sldu:cape_and_islands"
-    "Fifth Middlesex": "ocd-division/country:us/state:ma/sldu:5th_middlesex"
-    "First Bristol and Plymouth": "ocd-division/country:us/state:ma/sldu:1st_bristol_and_plymouth"
-    "First Essex": "ocd-division/country:us/state:ma/sldu:1st_essex"
-    "First Essex and Middlesex": "ocd-division/country:us/state:ma/sldu:1st_essex_and_middlesex"
-    "First Hampden and Hampshire": "ocd-division/country:us/state:ma/sldu:1st_hampden_and_hampshire"
-    "First Middlesex": "ocd-division/country:us/state:ma/sldu:1st_middlesex"
-    "First Middlesex and Norfolk": "ocd-division/country:us/state:ma/sldu:1st_middlesex_and_norfolk"
-    "First Plymouth and Bristol": "ocd-division/country:us/state:ma/sldu:1st_plymouth_and_bristol"
-    "First Suffolk": "ocd-division/country:us/state:ma/sldu:1st_suffolk"
-    "First Suffolk and Middlesex": "ocd-division/country:us/state:ma/sldu:1st_suffolk_and_middlesex"
-    "First Worcester": "ocd-division/country:us/state:ma/sldu:1st_worcester"
-    "Fourth Middlesex": "ocd-division/country:us/state:ma/sldu:4th_middlesex"
-    "Hampden": "ocd-division/country:us/state:ma/sldu:hampden"
-    "Hampshire, Franklin and Worcester": "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester"
-    "Middlesex and Suffolk": "ocd-division/country:us/state:ma/sldu:middlesex_and_suffolk"
-    "Middlesex and Worcester": "ocd-division/country:us/state:ma/sldu:middlesex_and_worcester"
-    "Norfolk, Bristol and Middlesex": "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_middlesex"
-    "Norfolk, Bristol and Plymouth": "ocd-division/country:us/state:ma/sldu:norfolk_bristol_and_plymouth"
-    "Norfolk and Plymouth": "ocd-division/country:us/state:ma/sldu:norfolk_and_plymouth"
-    "Norfolk and Suffolk": "ocd-division/country:us/state:ma/sldu:norfolk_and_suffolk"
-    "Plymouth and Barnstable": "ocd-division/country:us/state:ma/sldu:plymouth_and_barnstable"
-    "Plymouth and Norfolk": "ocd-division/country:us/state:ma/sldu:plymouth_and_norfolk"
-    "Second Bristol and Plymouth": "ocd-division/country:us/state:ma/sldu:2nd_bristol_and_plymouth"
-    "Second Essex": "ocd-division/country:us/state:ma/sldu:2nd_essex"
-    "Second Essex and Middlesex": "ocd-division/country:us/state:ma/sldu:2nd_essex_and_middlesex"
-    "Second Hampden and Hampshire": "ocd-division/country:us/state:ma/sldu:2nd_hampden_and_hampshire"
-    "Second Middlesex": "ocd-division/country:us/state:ma/sldu:2nd_middlesex"
-    "Second Middlesex and Norfolk": "ocd-division/country:us/state:ma/sldu:2nd_middlesex_and_norfolk"
-    "Second Plymouth and Bristol": "ocd-division/country:us/state:ma/sldu:2nd_plymouth_and_bristol"
-    "Second Suffolk": "ocd-division/country:us/state:ma/sldu:2nd_suffolk"
-    "Second Suffolk and Middlesex": "ocd-division/country:us/state:ma/sldu:2nd_suffolk_and_middlesex"
-    "Second Worcester": "ocd-division/country:us/state:ma/sldu:2nd_worcester"
-    "Third Essex": "ocd-division/country:us/state:ma/sldu:3rd_essex"
-    "Third Middlesex": "ocd-division/country:us/state:ma/sldu:3rd_middlesex"
-    "Worcester, Hampden, Hampshire and Middlesex": "ocd-division/country:us/state:ma/sldu:worcester_hampden_hampshire_and_middlesex"
-    "Worcester and Middlesex": "ocd-division/country:us/state:ma/sldu:worcester_and_middlesex"
-    "Worcester and Norfolk": "ocd-division/country:us/state:ma/sldu:worcester_and_norfolk"
-  lower_division_ids:
-    "Tenth Bristol": "ocd-division/country:us/state:ma/sldl:10th_bristol"
-    "Tenth Essex": "ocd-division/country:us/state:ma/sldl:10th_essex"
-    "Tenth Hampden": "ocd-division/country:us/state:ma/sldl:10th_hampden"
-    "Tenth Middlesex": "ocd-division/country:us/state:ma/sldl:10th_middlesex"
-    "Tenth Norfolk": "ocd-division/country:us/state:ma/sldl:10th_norfolk"
-    "Tenth Plymouth": "ocd-division/country:us/state:ma/sldl:10th_plymouth"
-    "Tenth Suffolk": "ocd-division/country:us/state:ma/sldl:10th_suffolk"
-    "Tenth Worcester": "ocd-division/country:us/state:ma/sldl:10th_worcester"
-    "Eleventh Bristol": "ocd-division/country:us/state:ma/sldl:11th_bristol"
-    "Eleventh Essex": "ocd-division/country:us/state:ma/sldl:11th_essex"
-    "Eleventh Hampden": "ocd-division/country:us/state:ma/sldl:11th_hampden"
-    "Eleventh Middlesex": "ocd-division/country:us/state:ma/sldl:11th_middlesex"
-    "Eleventh Norfolk": "ocd-division/country:us/state:ma/sldl:11th_norfolk"
-    "Eleventh Plymouth": "ocd-division/country:us/state:ma/sldl:11th_plymouth"
-    "Eleventh Suffolk": "ocd-division/country:us/state:ma/sldl:11th_suffolk"
-    "Eleventh Worcester": "ocd-division/country:us/state:ma/sldl:11th_worcester"
-    "Twelfth Bristol": "ocd-division/country:us/state:ma/sldl:12th_bristol"
-    "Twelfth Essex": "ocd-division/country:us/state:ma/sldl:12th_essex"
-    "Twelfth Hampden": "ocd-division/country:us/state:ma/sldl:12th_hampden"
-    "Twelfth Middlesex": "ocd-division/country:us/state:ma/sldl:12th_middlesex"
-    "Twelfth Norfolk": "ocd-division/country:us/state:ma/sldl:12th_norfolk"
-    "Twelfth Plymouth": "ocd-division/country:us/state:ma/sldl:12th_plymouth"
-    "Twelfth Suffolk": "ocd-division/country:us/state:ma/sldl:12th_suffolk"
-    "Twelfth Worcester": "ocd-division/country:us/state:ma/sldl:12th_worcester"
-    "Thirteenth Bristol": "ocd-division/country:us/state:ma/sldl:13th_bristol"
-    "Thirteenth Essex": "ocd-division/country:us/state:ma/sldl:13th_essex"
-    "Thirteenth Middlesex": "ocd-division/country:us/state:ma/sldl:13th_middlesex"
-    "Thirteenth Norfolk": "ocd-division/country:us/state:ma/sldl:13th_norfolk"
-    "Thirteenth Suffolk": "ocd-division/country:us/state:ma/sldl:13th_suffolk"
-    "Thirteenth Worcester": "ocd-division/country:us/state:ma/sldl:13th_worcester"
-    "Fourteenth Bristol": "ocd-division/country:us/state:ma/sldl:14th_bristol"
-    "Fourteenth Essex": "ocd-division/country:us/state:ma/sldl:14th_essex"
-    "Fourteenth Middlesex": "ocd-division/country:us/state:ma/sldl:14th_middlesex"
-    "Fourteenth Norfolk": "ocd-division/country:us/state:ma/sldl:14th_norfolk"
-    "Fourteenth Suffolk": "ocd-division/country:us/state:ma/sldl:14th_suffolk"
-    "Fourteenth Worcester": "ocd-division/country:us/state:ma/sldl:14th_worcester"
-    "Fifteenth Essex": "ocd-division/country:us/state:ma/sldl:15th_essex"
-    "Fifteenth Middlesex": "ocd-division/country:us/state:ma/sldl:15th_middlesex"
-    "Fifteenth Norfolk": "ocd-division/country:us/state:ma/sldl:15th_norfolk"
-    "Fifteenth Suffolk": "ocd-division/country:us/state:ma/sldl:15th_suffolk"
-    "Fifteenth Worcester": "ocd-division/country:us/state:ma/sldl:15th_worcester"
-    "Sixteenth Essex": "ocd-division/country:us/state:ma/sldl:16th_essex"
-    "Sixteenth Middlesex": "ocd-division/country:us/state:ma/sldl:16th_middlesex"
-    "Sixteenth Suffolk": "ocd-division/country:us/state:ma/sldl:16th_suffolk"
-    "Sixteenth Worcester": "ocd-division/country:us/state:ma/sldl:16th_worcester"
-    "Seventeenth Essex": "ocd-division/country:us/state:ma/sldl:17th_essex"
-    "Seventeenth Middlesex": "ocd-division/country:us/state:ma/sldl:17th_middlesex"
-    "Seventeenth Suffolk": "ocd-division/country:us/state:ma/sldl:17th_suffolk"
-    "Seventeenth Worcester": "ocd-division/country:us/state:ma/sldl:17th_worcester"
-    "Eighteenth Essex": "ocd-division/country:us/state:ma/sldl:18th_essex"
-    "Eighteenth Middlesex": "ocd-division/country:us/state:ma/sldl:18th_middlesex"
-    "Eighteenth Suffolk": "ocd-division/country:us/state:ma/sldl:18th_suffolk"
-    "Eighteenth Worcester": "ocd-division/country:us/state:ma/sldl:18th_worcester"
-    "Nineteenth Middlesex": "ocd-division/country:us/state:ma/sldl:19th_middlesex"
-    "Nineteenth Suffolk": "ocd-division/country:us/state:ma/sldl:19th_suffolk"
-    "First Barnstable": "ocd-division/country:us/state:ma/sldl:1st_barnstable"
-    "First Berkshire": "ocd-division/country:us/state:ma/sldl:1st_berkshire"
-    "First Bristol": "ocd-division/country:us/state:ma/sldl:1st_bristol"
-    "First Essex": "ocd-division/country:us/state:ma/sldl:1st_essex"
-    "First Franklin": "ocd-division/country:us/state:ma/sldl:1st_franklin"
-    "First Hampden": "ocd-division/country:us/state:ma/sldl:1st_hampden"
-    "First Hampshire": "ocd-division/country:us/state:ma/sldl:1st_hampshire"
-    "First Middlesex": "ocd-division/country:us/state:ma/sldl:1st_middlesex"
-    "First Norfolk": "ocd-division/country:us/state:ma/sldl:1st_norfolk"
-    "First Plymouth": "ocd-division/country:us/state:ma/sldl:1st_plymouth"
-    "First Suffolk": "ocd-division/country:us/state:ma/sldl:1st_suffolk"
-    "First Worcester": "ocd-division/country:us/state:ma/sldl:1st_worcester"
-    "Twentieth Middlesex": "ocd-division/country:us/state:ma/sldl:20th_middlesex"
-    "Twenty-First Middlesex": "ocd-division/country:us/state:ma/sldl:21st_middlesex"
-    "Twenty-Second Middlesex": "ocd-division/country:us/state:ma/sldl:22nd_middlesex"
-    "Twenty-Third Middlesex": "ocd-division/country:us/state:ma/sldl:23rd_middlesex"
-    "Twenty-Fourth Middlesex": "ocd-division/country:us/state:ma/sldl:24th_middlesex"
-    "Twenty-Fifth Middlesex": "ocd-division/country:us/state:ma/sldl:25th_middlesex"
-    "Twenty-Sixth Middlesex": "ocd-division/country:us/state:ma/sldl:26th_middlesex"
-    "Twenty-Seventh Middlesex": "ocd-division/country:us/state:ma/sldl:27th_middlesex"
-    "Twenty-Eighth Middlesex": "ocd-division/country:us/state:ma/sldl:28th_middlesex"
-    "Twenty-Ninth Middlesex": "ocd-division/country:us/state:ma/sldl:29th_middlesex"
-    "Second Barnstable": "ocd-division/country:us/state:ma/sldl:2nd_barnstable"
-    "Second Berkshire": "ocd-division/country:us/state:ma/sldl:2nd_berkshire"
-    "Second Bristol": "ocd-division/country:us/state:ma/sldl:2nd_bristol"
-    "Second Essex": "ocd-division/country:us/state:ma/sldl:2nd_essex"
-    "Second Franklin": "ocd-division/country:us/state:ma/sldl:2nd_franklin"
-    "Second Hampden": "ocd-division/country:us/state:ma/sldl:2nd_hampden"
-    "Second Hampshire": "ocd-division/country:us/state:ma/sldl:2nd_hampshire"
-    "Second Middlesex": "ocd-division/country:us/state:ma/sldl:2nd_middlesex"
-    "Second Norfolk": "ocd-division/country:us/state:ma/sldl:2nd_norfolk"
-    "Second Plymouth": "ocd-division/country:us/state:ma/sldl:2nd_plymouth"
-    "Second Suffolk": "ocd-division/country:us/state:ma/sldl:2nd_suffolk"
-    "Second Worcester": "ocd-division/country:us/state:ma/sldl:2nd_worcester"
-    "Thirtieth Middlesex": "ocd-division/country:us/state:ma/sldl:30th_middlesex"
-    "Thirty-First Middlesex": "ocd-division/country:us/state:ma/sldl:31st_middlesex"
-    "Thirty-Second Middlesex": "ocd-division/country:us/state:ma/sldl:32nd_middlesex"
-    "Thirty-Third Middlesex": "ocd-division/country:us/state:ma/sldl:33rd_middlesex"
-    "Thirty-Fourth Middlesex": "ocd-division/country:us/state:ma/sldl:34th_middlesex"
-    "Thirty-Fifth Middlesex": "ocd-division/country:us/state:ma/sldl:35th_middlesex"
-    "Thirty-Sixth Middlesex": "ocd-division/country:us/state:ma/sldl:36th_middlesex"
-    "Thirty-Seventh Middlesex": "ocd-division/country:us/state:ma/sldl:37th_middlesex"
-    "Third Barnstable": "ocd-division/country:us/state:ma/sldl:3rd_barnstable"
-    "Third Berkshire": "ocd-division/country:us/state:ma/sldl:3rd_berkshire"
-    "Third Bristol": "ocd-division/country:us/state:ma/sldl:3rd_bristol"
-    "Third Essex": "ocd-division/country:us/state:ma/sldl:3rd_essex"
-    "Third Hampden": "ocd-division/country:us/state:ma/sldl:3rd_hampden"
-    "Third Hampshire": "ocd-division/country:us/state:ma/sldl:3rd_hampshire"
-    "Third Middlesex": "ocd-division/country:us/state:ma/sldl:3rd_middlesex"
-    "Third Norfolk": "ocd-division/country:us/state:ma/sldl:3rd_norfolk"
-    "Third Plymouth": "ocd-division/country:us/state:ma/sldl:3rd_plymouth"
-    "Third Suffolk": "ocd-division/country:us/state:ma/sldl:3rd_suffolk"
-    "Third Worcester": "ocd-division/country:us/state:ma/sldl:3rd_worcester"
-    "Fourth Barnstable": "ocd-division/country:us/state:ma/sldl:4th_barnstable"
-    "Fourth Berkshire": "ocd-division/country:us/state:ma/sldl:4th_berkshire"
-    "Fourth Bristol": "ocd-division/country:us/state:ma/sldl:4th_bristol"
-    "Fourth Essex": "ocd-division/country:us/state:ma/sldl:4th_essex"
-    "Fourth Hampden": "ocd-division/country:us/state:ma/sldl:4th_hampden"
-    "Fourth Middlesex": "ocd-division/country:us/state:ma/sldl:4th_middlesex"
-    "Fourth Norfolk": "ocd-division/country:us/state:ma/sldl:4th_norfolk"
-    "Fourth Plymouth": "ocd-division/country:us/state:ma/sldl:4th_plymouth"
-    "Fourth Suffolk": "ocd-division/country:us/state:ma/sldl:4th_suffolk"
-    "Fourth Worcester": "ocd-division/country:us/state:ma/sldl:4th_worcester"
-    "Fifth Barnstable": "ocd-division/country:us/state:ma/sldl:5th_barnstable"
-    "Fifth Bristol": "ocd-division/country:us/state:ma/sldl:5th_bristol"
-    "Fifth Essex": "ocd-division/country:us/state:ma/sldl:5th_essex"
-    "Fifth Hampden": "ocd-division/country:us/state:ma/sldl:5th_hampden"
-    "Fifth Middlesex": "ocd-division/country:us/state:ma/sldl:5th_middlesex"
-    "Fifth Norfolk": "ocd-division/country:us/state:ma/sldl:5th_norfolk"
-    "Fifth Plymouth": "ocd-division/country:us/state:ma/sldl:5th_plymouth"
-    "Fifth Suffolk": "ocd-division/country:us/state:ma/sldl:5th_suffolk"
-    "Fifth Worcester": "ocd-division/country:us/state:ma/sldl:5th_worcester"
-    "Sixth Bristol": "ocd-division/country:us/state:ma/sldl:6th_bristol"
-    "Sixth Essex": "ocd-division/country:us/state:ma/sldl:6th_essex"
-    "Sixth Hampden": "ocd-division/country:us/state:ma/sldl:6th_hampden"
-    "Sixth Middlesex": "ocd-division/country:us/state:ma/sldl:6th_middlesex"
-    "Sixth Norfolk": "ocd-division/country:us/state:ma/sldl:6th_norfolk"
-    "Sixth Plymouth": "ocd-division/country:us/state:ma/sldl:6th_plymouth"
-    "Sixth Suffolk": "ocd-division/country:us/state:ma/sldl:6th_suffolk"
-    "Sixth Worcester": "ocd-division/country:us/state:ma/sldl:6th_worcester"
-    "Seventh Bristol": "ocd-division/country:us/state:ma/sldl:7th_bristol"
-    "Seventh Essex": "ocd-division/country:us/state:ma/sldl:7th_essex"
-    "Seventh Hampden": "ocd-division/country:us/state:ma/sldl:7th_hampden"
-    "Seventh Middlesex": "ocd-division/country:us/state:ma/sldl:7th_middlesex"
-    "Seventh Norfolk": "ocd-division/country:us/state:ma/sldl:7th_norfolk"
-    "Seventh Plymouth": "ocd-division/country:us/state:ma/sldl:7th_plymouth"
-    "Seventh Suffolk": "ocd-division/country:us/state:ma/sldl:7th_suffolk"
-    "Seventh Worcester": "ocd-division/country:us/state:ma/sldl:7th_worcester"
-    "Eighth Bristol": "ocd-division/country:us/state:ma/sldl:8th_bristol"
-    "Eighth Essex": "ocd-division/country:us/state:ma/sldl:8th_essex"
-    "Eighth Hampden": "ocd-division/country:us/state:ma/sldl:8th_hampden"
-    "Eighth Middlesex": "ocd-division/country:us/state:ma/sldl:8th_middlesex"
-    "Eighth Norfolk": "ocd-division/country:us/state:ma/sldl:8th_norfolk"
-    "Eighth Plymouth": "ocd-division/country:us/state:ma/sldl:8th_plymouth"
-    "Eighth Suffolk": "ocd-division/country:us/state:ma/sldl:8th_suffolk"
-    "Eighth Worcester": "ocd-division/country:us/state:ma/sldl:8th_worcester"
-    "Ninth Bristol": "ocd-division/country:us/state:ma/sldl:9th_bristol"
-    "Ninth Essex": "ocd-division/country:us/state:ma/sldl:9th_essex"
-    "Ninth Hampden": "ocd-division/country:us/state:ma/sldl:9th_hampden"
-    "Ninth Middlesex": "ocd-division/country:us/state:ma/sldl:9th_middlesex"
-    "Ninth Norfolk": "ocd-division/country:us/state:ma/sldl:9th_norfolk"
-    "Ninth Plymouth": "ocd-division/country:us/state:ma/sldl:9th_plymouth"
-    "Ninth Suffolk": "ocd-division/country:us/state:ma/sldl:9th_suffolk"
-    "Ninth Worcester": "ocd-division/country:us/state:ma/sldl:9th_worcester"
-    "Barnstable, Dukes and Nantucket": "ocd-division/country:us/state:ma/sldl:barnstable_dukes_and_nantucket"
-md:
-  legislature_name: Maryland General Assembly
-  lower_seats: {'1A': 1, '1B': 1, '1C': 1, '2A': 2, '2B': 1, '3A': 2, '3B': 1, '4': 3, '5': 3, '6': 3, '7': 3, '8': 3, '9A': 2, '9B': 1, '10': 3, '11': 3, '12': 3, '13': 3, '14': 3, '15': 3, '16': 3, '17': 3, '18': 3, '19': 3, '20': 3, '21': 3, '22': 3, '23A': 1, '23B': 2, '24': 3, '25': 3, '26': 3, '27A': 1, '27B': 1, '27C': 1, '28': 3, '29A': 1, '29B': 1, '29C': 1, '30A': 2, '30B': 1, '31A': 1, '31B': 2, '32': 3, '33': 3, '34A': 2, '34B': 1, '35A': 1, '35B': 2, '36': 3, '37A': 1, '37B': 2, '38A': 1, '38B': 1, '38C': 1, '39': 3, '40': 3, '41': 3, '42A': 1, '42B': 2, '43': 3, '44A': 1, '44B': 2, '45': 3, '46': 3, '47A': 2, '47B': 1}
-  lower_title: Delegate
-  upper_seats: 47
-me:
-  legislature_name: Maine Legislature
-  lower_seats: 151
-  upper_seats: 35
-mi:
-  legislature_name: Michigan Legislature
-  lower_seats: 110
-  upper_seats: 38
-mn:
-  lower_seats: ['1A', '1B', '2A', '2B', '3A', '3B', '4A', '4B', '5A', '5B', '6A', '6B', '7A', '7B', '8A', '8B', '9A', '9B', '10A', '10B', '11A', '11B', '12A', '12B', '13A', '13B', '14A', '14B', '15A', '15B', '16A', '16B', '17A', '17B', '18A', '18B', '19A', '19B', '20A', '20B', '21A', '21B', '22A', '22B', '23A', '23B', '24A', '24B', '25A', '25B', '26A', '26B', '27A', '27B', '28A', '28B', '29A', '29B', '30A', '30B', '31A', '31B', '32A', '32B', '33A', '33B', '34A', '34B', '35A', '35B', '36A', '36B', '37A', '37B', '38A', '38B', '39A', '39B', '40A', '40B', '41A', '41B', '42A', '42B', '43A', '43B', '44A', '44B', '45A', '45B', '46A', '46B', '47A', '47B', '48A', '48B', '49A', '49B', '50A', '50B', '51A', '51B', '52A', '52B', '53A', '53B', '54A', '54B', '55A', '55B', '56A', '56B', '57A', '57B', '58A', '58B', '59A', '59B', '60A', '60B', '61A', '61B', '62A', '62B', '63A', '63B', '64A', '64B', '65A', '65B', '66A', '66B', '67A', '67B']
-  legslature_name: Minnesota State Legislature
-  upper_seats: 67
-mt:
-  legislature_name: Montana Legislature
-  lower_seats: 100
-  upper_seats: 50
-mo:
-  legislature_name: Missouri General Assembly
-  lower_seats: 163
-  upper_seats: 34
+    - chamber: lower
+      district: 34
+      vacant_until: 2021-01-01
+nv:
   vacancies:
     - chamber: lower
-      district: 158
+      district: 17
       vacant_until: 2021-01-01
-ms:
-  legislature_name: Mississippi Legislature
-  lower_seats: 122
-  upper_seats: 52
-nc:
-  legislature_name: North Carolina General Assembly
-  lower_seats: 120
-  upper_seats: 50
-  vacancies:
-      - chamber: upper
-        district: 7
-        vacant_until: 2021-01-01
-nd:
-  legislature_name: North Dakota Legislative Assembly
-  lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2, '36': 2, '37': 2, '38': 2, '39': 2, '40': 2, '41': 2, '42': 2, '43': 2, '44': 2, '45': 2, '46': 2, '47': 2}
-  upper_seats: 47
-ne:
-  legislature_name: Nebraska Legislature
-  legislature_title: Senator
-  legislature_seats: 49
-nh:
-  legislature_name: New Hampshire General Court
-  upper_seats: 24
-  lower_seats: {'Belknap 1': 1, 'Belknap 2': 4, 'Belknap 3': 4, 'Belknap 4': 2, 'Belknap 5': 2, 'Belknap 6': 2, 'Belknap 7': 1, 'Belknap 8': 1, 'Belknap 9': 1, 'Carroll 1': 1, 'Carroll 2': 3, 'Carroll 3': 2, 'Carroll 4': 2, 'Carroll 5': 3, 'Carroll 6': 2, 'Carroll 7': 1, 'Carroll 8': 1, 'Cheshire 1': 4, 'Cheshire 2': 1, 'Cheshire 3': 1, 'Cheshire 4': 1, 'Cheshire 5': 1, 'Cheshire 6': 1, 'Cheshire 7': 1, 'Cheshire 8': 1, 'Cheshire 9': 2, 'Cheshire 10': 1, 'Cheshire 11': 2, 'Cheshire 12': 2, 'Cheshire 13': 1, 'Cheshire 14': 1, 'Cheshire 15': 1, 'Cheshire 16': 2, 'Coos 1': 2, 'Coos 2': 1, 'Coos 3': 3, 'Coos 4': 1, 'Coos 5': 1, 'Coos 6': 1, 'Coos 7': 1, 'Grafton 1': 2, 'Grafton 2': 1, 'Grafton 3': 1, 'Grafton 4': 1, 'Grafton 5': 1, 'Grafton 6': 1, 'Grafton 7': 1, 'Grafton 8': 3, 'Grafton 9': 2, 'Grafton 10': 1, 'Grafton 11': 1, 'Grafton 12': 4, 'Grafton 13': 4, 'Grafton 14': 1, 'Grafton 15': 1, 'Grafton 16': 1, 'Grafton 17': 1, 'Hillsborough 1': 2, 'Hillsborough 2': 3, 'Hillsborough 3': 1, 'Hillsborough 4': 2, 'Hillsborough 5': 2, 'Hillsborough 6': 5, 'Hillsborough 7': 6, 'Hillsborough 8': 2, 'Hillsborough 9': 2, 'Hillsborough 10': 2, 'Hillsborough 11': 2, 'Hillsborough 12': 2, 'Hillsborough 13': 2, 'Hillsborough 14': 2, 'Hillsborough 15': 2, 'Hillsborough 16': 2, 'Hillsborough 17': 2, 'Hillsborough 18': 2, 'Hillsborough 19': 2, 'Hillsborough 20': 2, 'Hillsborough 21': 8, 'Hillsborough 22': 3, 'Hillsborough 23': 4, 'Hillsborough 24': 2, 'Hillsborough 25': 2, 'Hillsborough 26': 2, 'Hillsborough 27': 2, 'Hillsborough 28': 3, 'Hillsborough 29': 3, 'Hillsborough 30': 3, 'Hillsborough 31': 3, 'Hillsborough 32': 3, 'Hillsborough 33': 3, 'Hillsborough 34': 3, 'Hillsborough 35': 3, 'Hillsborough 36': 3, 'Hillsborough 37': 11, 'Hillsborough 38': 2, 'Hillsborough 39': 1, 'Hillsborough 40': 1, 'Hillsborough 41': 1, 'Hillsborough 42': 2, 'Hillsborough 43': 3, 'Hillsborough 44': 2, 'Hillsborough 45': 2, 'Merrimack 1': 1, 'Merrimack 2': 2, 'Merrimack 3': 2, 'Merrimack 4': 1, 'Merrimack 5': 2, 'Merrimack 6': 2, 'Merrimack 7': 1, 'Merrimack 8': 1, 'Merrimack 9': 2, 'Merrimack 10': 3, 'Merrimack 11': 1, 'Merrimack 12': 1, 'Merrimack 13': 1, 'Merrimack 14': 1, 'Merrimack 15': 1, 'Merrimack 16': 1, 'Merrimack 17': 1, 'Merrimack 18': 1, 'Merrimack 19': 1, 'Merrimack 20': 3, 'Merrimack 21': 2, 'Merrimack 22': 1, 'Merrimack 23': 3, 'Merrimack 24': 4, 'Merrimack 25': 1, 'Merrimack 26': 1, 'Merrimack 27': 2, 'Merrimack 28': 1, 'Merrimack 29': 1, 'Rockingham 1': 1, 'Rockingham 2': 3, 'Rockingham 3': 3, 'Rockingham 4': 5, 'Rockingham 5': 7, 'Rockingham 6': 10, 'Rockingham 7': 4, 'Rockingham 8': 9, 'Rockingham 9': 2, 'Rockingham 10': 1, 'Rockingham 11': 1, 'Rockingham 12': 1, 'Rockingham 13': 4, 'Rockingham 14': 4, 'Rockingham 15': 1, 'Rockingham 16': 1, 'Rockingham 17': 3, 'Rockingham 18': 4, 'Rockingham 19': 2, 'Rockingham 20': 3, 'Rockingham 21': 4, 'Rockingham 22': 1, 'Rockingham 23': 1, 'Rockingham 24': 2, 'Rockingham 25': 1, 'Rockingham 26': 1, 'Rockingham 27': 1, 'Rockingham 28': 1, 'Rockingham 29': 1, 'Rockingham 30': 1, 'Rockingham 31': 1, 'Rockingham 32': 1, 'Rockingham 33': 1, 'Rockingham 34': 1, 'Rockingham 35': 1, 'Rockingham 36': 1, 'Rockingham 37': 1, 'Strafford 1': 2, 'Strafford 2': 2, 'Strafford 3': 2, 'Strafford 4': 2, 'Strafford 5': 1, 'Strafford 6': 5, 'Strafford 7': 1, 'Strafford 8': 1, 'Strafford 9': 1, 'Strafford 10': 1, 'Strafford 11': 1, 'Strafford 12': 1, 'Strafford 13': 1, 'Strafford 14': 1, 'Strafford 15': 1, 'Strafford 16': 1, 'Strafford 17': 3, 'Strafford 18': 3, 'Strafford 19': 1, 'Strafford 20': 1, 'Strafford 21': 1, 'Strafford 22': 1, 'Strafford 23': 1, 'Strafford 24': 1, 'Strafford 25': 1, 'Sullivan 1': 2, 'Sullivan 2': 1, 'Sullivan 3': 1, 'Sullivan 4': 1, 'Sullivan 5': 1, 'Sullivan 6': 2, 'Sullivan 7': 1, 'Sullivan 8': 1, 'Sullivan 9': 1, 'Sullivan 10': 1, 'Sullivan 11': 1}
-nj:
-  legislature_name: New jersey Legislature
-  lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2, '36': 2, '37': 2, '38': 2, '39': 2, '40': 2}
-  lower_title: Assembly Member
-  lower_chamber_name: Assembly
-  upper_seats: 40
-nm:
-  legislature_name: New Mexico Legislature
-  lower_seats: 70
-  upper_seats: 42
-nv:
-  legislature_name: Nevada Legislature
-  lower_seats: 42
-  lower_title: Assembly Member
-  lower_chamber_name: Assembly
-  upper_seats: 21
-ny:
-  legislature_name: New York Legislature
-  lower_seats: 150
-  lower_chamber_name: Assembly
-  lower_title: Assembly Member
-  upper_seats: 63
-oh:
-  legislature_name: Ohio General Assembly
-  lower_seats: 99
-  upper_seats: 33
-ok:
-  legislature_name: Oklahoma Legislature
-  lower_seats: 101
-  upper_seats: 48
-or:
-  legislature_name: Oregon Legislative Assembly
-  lower_seats: 60
-  upper_seats: 30
-pa:
-  legislature_name: Pennsylvania General Assembly
-  lower_seats: 203
-  upper_seats: 50
-  vacancies:
-    - chamber: upper
-      district: 48
-      vacant_until: 2021-01-01
-pr:
-  legislature_name: Legislative Assembly of Puerto Rico
-  lower_seats: {'1': 1, '2': 1, '3': 1, '4': 1, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 1, '11': 1, '12': 1, '13': 1, '14': 1, '15': 1, '16': 1, '17': 1, '18': 1, '19': 1, '20': 1, '21': 1, '22': 1, '23': 1, '24': 1, '25': 1, '26': 1, '27': 1, '28': 1, '29': 1, '30': 1, '31': 1, '32': 1, '33': 1, '34': 1, '35': 1, '36': 1, '37': 1, '38': 1, '39': 1, '40': 1, 'At-Large': 11}
-  upper_seats: {'I': 2, 'II': 2, 'III': 2, 'IV': 2, 'V': 2, 'VI': 2, 'VII': 2, 'VIII': 2, 'At-Large': 14}
-  # note: PR's At-Large number can *change*
-  upper_division_ids:
-    I: ocd-division/country:us/territory:pr/sldu:1
-    II: ocd-division/country:us/territory:pr/sldu:2
-    III: ocd-division/country:us/territory:pr/sldu:3
-    IV: ocd-division/country:us/territory:pr/sldu:4
-    V: ocd-division/country:us/territory:pr/sldu:5
-    VI: ocd-division/country:us/territory:pr/sldu:6
-    VII: ocd-division/country:us/territory:pr/sldu:7
-    VIII: ocd-division/country:us/territory:pr/sldu:8
-    At-Large: ocd-division/country:us/territory:pr
-ri:
-  legislature_name: Rhode Island General Assembly
-  lower_seats: 75
-  upper_seats: 38
 sc:
-  legislature_name: South Carolina Legislature
-  lower_seats: 124
-  upper_seats: 46
-sd:
-  legislature_name: South Dakota State Legislature
-  lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26A': 1, '26B': 1, '27': 2, '28A': 1, '28B': 1, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2}
-  upper_seats: 35
-tn:
-  legislature_name: Tennessee General Assembly
-  lower_seats: 99
-  upper_seats: 33
-tx:
-  legislature_name: Texas Legislature
-  lower_seats: 150
-  upper_seats: 31
-ut:
-  legislature_name: Utah State Legislature
-  lower_seats: 75
-  upper_seats: 29
-va:
-  legislature_name: Virginia General Assembly
-  lower_seats: 100
-  lower_title: Delegate
-  upper_seats: 40
-vt:
-  legislature_name: Vermont General Assembly
-  lower_seats: {'Addison-1': 2, 'Addison-2': 1, 'Addison-3': 2, 'Addison-4': 2, 'Addison-5': 1, 'Addison-Rutland': 1, 'Bennington-1': 1, 'Bennington-2-1': 2, 'Bennington-2-2': 2, 'Bennington-3': 1, 'Bennington-4': 2, 'Bennington-Rutland': 1, 'Caledonia-1': 1, 'Caledonia-2': 1, 'Caledonia-3': 2, 'Caledonia-4': 2, 'Caledonia-Washington': 1, 'Chittenden-10': 2, 'Chittenden-1': 1, 'Chittenden-2': 2, 'Chittenden-3': 2, 'Chittenden-4-1': 1, 'Chittenden-4-2': 1, 'Chittenden-5-1': 1, 'Chittenden-5-2': 1, 'Chittenden-6-1': 2, 'Chittenden-6-2': 1, 'Chittenden-6-3': 2, 'Chittenden-6-4': 2, 'Chittenden-6-5': 2, 'Chittenden-6-6': 1, 'Chittenden-6-7': 2, 'Chittenden-7-1': 1, 'Chittenden-7-2': 1, 'Chittenden-7-3': 1, 'Chittenden-7-4': 1, 'Chittenden-8-1': 2, 'Chittenden-8-2': 2, 'Chittenden-8-3': 1, 'Chittenden-9-1': 2, 'Chittenden-9-2': 2, 'Essex-Caledonia': 1, 'Essex-Caledonia-Orleans': 1, 'Franklin-1': 1, 'Franklin-2': 1, 'Franklin-3-1': 2, 'Franklin-3-2': 1, 'Franklin-4': 2, 'Franklin-5': 2, 'Franklin-6': 1, 'Franklin-7': 1, 'Grand Isle-Chittenden': 2, 'Lamoille-1': 1, 'Lamoille-2': 2, 'Lamoille-3': 1, 'Lamoille-Washington': 2, 'Orange-1': 2, 'Orange-2': 1, 'Orange-Caledonia': 1, 'Orange-Washington-Addison': 2, 'Orleans-1': 2, 'Orleans-2': 2, 'Orleans-Caledonia': 2, 'Orleans-Lamoille': 1, 'Rutland-1': 1, 'Rutland-2': 2, 'Rutland-3': 2, 'Rutland-4': 1, 'Rutland-5-1': 1, 'Rutland-5-2': 1, 'Rutland-5-3': 1, 'Rutland-5-4': 1, 'Rutland-6': 2, 'Rutland-Bennington': 1, 'Rutland-Windsor-1': 1, 'Rutland-Windsor-2': 1, 'Washington-1': 2, 'Washington-2': 2, 'Washington-3': 2, 'Washington-4': 2, 'Washington-5': 1, 'Washington-6': 1, 'Washington-7': 2, 'Washington-Chittenden': 2, 'Windham-1': 1, 'Windham-2-1': 1, 'Windham-2-2': 1, 'Windham-2-3': 1, 'Windham-3': 2, 'Windham-4': 2, 'Windham-5': 1, 'Windham-6': 1, 'Windham-Bennington': 1, 'Windham-Bennington-Windsor': 1, 'Windsor-1': 2, 'Windsor-2': 1, 'Windsor-3-1': 1, 'Windsor-3-2': 2, 'Windsor-4-1': 1, 'Windsor-4-2': 2, 'Windsor-5': 1, 'Windsor-Orange-1': 1, 'Windsor-Orange-2': 2, 'Windsor-Rutland': 1}
-  upper_seats: {'Addison': 2, 'Bennington': 2, 'Caledonia': 2, 'Chittenden': 6, 'Essex-Orleans': 2, 'Franklin': 2, 'Grand Isle': 1, 'Lamoille': 1, 'Orange': 1, 'Rutland': 3, 'Washington': 3, 'Windham': 2, 'Windsor': 3}
-wa:
-  legislature_name: Washington State Legislature
-  lower_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2, '18': 2, '19': 2, '20': 2, '21': 2, '22': 2, '23': 2, '24': 2, '25': 2, '26': 2, '27': 2, '28': 2, '29': 2, '30': 2, '31': 2, '32': 2, '33': 2, '34': 2, '35': 2, '36': 2, '37': 2, '38': 2, '39': 2, '40': 2, '41': 2, '42': 2, '43': 2, '44': 2, '45': 2, '46': 2, '47': 2, '48': 2, '49': 2}
-  upper_seats: 49
-wi:
-  legislature_name: Wisconsin State Legislature
-  lower_seats: 99
-  lower_chamber_name: Assembly
-  upper_seats: 33
-wv:
-  legislature_name: West Virginia Legislature
-  lower_seats: {'1': 2, '2': 1, '3': 2, '4': 2, '5': 1, '6': 1, '7': 1, '8': 1, '9': 1, '10': 3, '11': 1, '12': 1, '13': 2, '14': 1, '15': 1, '16': 3, '17': 2, '18': 1, '19': 2, '20': 1, '21': 1, '22': 2, '23': 1, '24': 2, '25': 1, '26': 1, '27': 3, '28': 2, '29': 1, '30': 1, '31': 1, '32': 3, '33': 1, '34': 1, '35': 4, '36': 3, '37': 1, '38': 1, '39': 1, '40': 1, '41': 1, '42': 2, '43': 2, '44': 1, '45': 1, '46': 1, '47': 1, '48': 4, '49': 1, '50': 3, '51': 5, '52': 1, '53': 1, '54': 1, '55': 1, '56': 1, '57': 1, '58': 1, '59': 1, '60': 1, '61': 1, '62': 1, '63': 1, '64': 1, '65': 1, '66': 1, '67': 1}
-  lower_title: Delegate
-  upper_seats: {'1': 2, '2': 2, '3': 2, '4': 2, '5': 2, '6': 2, '7': 2, '8': 2, '9': 2, '10': 2, '11': 2, '12': 2, '13': 2, '14': 2, '15': 2, '16': 2, '17': 2}
-wy:
-  legislature_name: Wyoming State Legislature
-  lower_seats: 60
-  upper_seats: 30
+  vacancies:
+    - chamber: lower
+      district: 115
+      vacant_until: 2020-09-01
+
 parties:
-  - Democratic
-  - Democratic-Farmer-Labor    # MN
-  - Democratic/Progressive     # VT
-  - Independent
-  - Libertarian
-  - Nonpartisan
-  - Partido Independentista Puertorriqueño
-  - Partido Nuevo Progresista
-  - Partido Popular Democrático
-  - Progressive
-  - Progressive/Democratic    # VT
-  - Republican
-  - Green
-  - Republican/Democratic     # VT
-  - Carter County Republican  # TN
+ - Democratic
+ - Democratic-Farmer-Labor    # MN
+ - Democratic/Progressive     # VT
+ - Independent
+ - Libertarian
+ - Nonpartisan
+ - Partido Independentista Puertorriqueño
+ - Partido Nuevo Progresista
+ - Partido Popular Democrático
+ - Progressive
+ - Progressive/Democratic    # VT
+ - Republican
+ - Green
+ - Republican/Democratic     # VT
+ - Carter County Republican  # TN

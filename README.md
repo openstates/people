@@ -7,10 +7,25 @@ This repository contains YAML files with all the information on given individual
 
 ## Links
 
+* [People Issues](https://github.com/openstates/issues/issues?q=is%3Aissue+is%3Aopen+label%3Adata%3Apeople)
 * [Contributor's Guide](https://docs.openstates.org/en/latest/contributing/getting-started.html)
 * [Documentation](https://docs.openstates.org/en/latest/contributing/people.html)
 * [Open States Discourse](https://discourse.openstates.org)
 * [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
+
+## Running Tests
+
+    docker-compose run --rm --entrypoint scripts/run_tests.sh people
+
+## Data Layout
+
+All data within the data directory is organized by state.  Within a given state directory you may find the following:
+
+  * legislature - people that are currently serving in the legislature
+  * eecutive - people that are currently serving in the state executive (e.g. governors)
+  * municipalities - people currently serving in local government (e.g. mayors)
+  * retired - people not currently serving any tracked roles
+  * committees - committee data (future TBD)
 
 ## About this Repo
 

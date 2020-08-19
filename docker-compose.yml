@@ -9,6 +9,7 @@ services:
     build: .
     environment:
     - DATABASE_URL=postgres://openstates:openstates@db/openstatesorg
+    - PYTHONPATH=scripts
     volumes:
     - .:/opt/people
     entrypoint: ["poetry", "run"]

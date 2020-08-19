@@ -31,7 +31,9 @@ def retire_person(person, end_date, reason=None, death=False):
 
 
 def move_file(filename):  # pragma: no cover
-    new_filename = filename.replace("/people/", "/retired/")
+    new_filename = filename.replace("/legislature/", "/retired/").replace(
+        "/municipalities/", "/retired/"
+    )
     click.secho(f"moved from {filename} to {new_filename}")
     os.renames(filename, new_filename)
 
@@ -75,7 +77,7 @@ def retire(end_date, filename, reason, death):
     if num == 0:
         click.secho("no active roles to retire", fg="red")
     elif num == 1:
-        click.secho(f"retired person")
+        click.secho("retired person")
     else:
         click.secho(f"retired person from {num} roles")
 

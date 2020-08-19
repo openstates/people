@@ -2,6 +2,7 @@
 import os
 import csv
 import glob
+import boto3
 import click
 from utils import (
     get_data_dir,
@@ -80,8 +81,8 @@ def write_csv(files, jurisdiction_id, output_filename):
                     else:
                         click.secho("unknown office: " + note, fg="red")
 
-                links = ";".join(l["url"] for l in data.get("links", []))
-                sources = ";".join(l["url"] for l in data.get("sources", []))
+                links = ";".join(k["url"] for k in data.get("links", []))
+                sources = ";".join(k["url"] for k in data.get("sources", []))
 
                 obj = {
                     "id": data["id"],
@@ -118,19 +119,33 @@ def write_csv(files, jurisdiction_id, output_filename):
 
 @click.command()
 @click.argument("abbreviations", nargs=-1)
-def to_csv(abbreviations):
+@click.option("--upload/--no-upload", default=False, help="Upload to S3. (default: false)")
+def to_csv(abbreviations, upload):
     """
     Sync YAML files to DB.
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()
 
+    if upload:
+        s3 = boto3.client("s3")
+
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
         jurisdiction_id = get_jurisdiction_id(abbr)
-        person_files = sorted(glob.glob(os.path.join(directory, "people/*.yml")))
-        write_csv(person_files, jurisdiction_id, f"csv/{abbr}_legislators.csv")
+        person_files = sorted(glob.glob(os.path.join(directory, "legislature/*.yml")))
+        fname = f"{abbr}.csv"
+        write_csv(person_files, jurisdiction_id, fname)
+
+        if upload:
+            s3.upload_file(
+                fname,
+                "data.openstates.org",
+                f"people/current/{abbr}.csv",
+                ExtraArgs={"ContentType": "text/csv", "ACL": "public-read"},
+            )
+            click.secho(f"uploaded to data.openstates.org/people/current/{abbr}.csv", fg="green")
 
 
 if __name__ == "__main__":
