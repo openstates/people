@@ -34,7 +34,7 @@ jobs:
       with:
         python-version: 3.7
     - name: install Poetry
-      uses: dschep/install-poetry-action@1.3
+      uses: dschep/install-poetry-action@v1.3
     - name: cache Poetry virtualenv
       uses: actions/cache@v2
       id: cache
