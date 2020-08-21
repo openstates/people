@@ -49,6 +49,7 @@ jobs:
         args: run ./scripts/run_tests.sh
       env: 
         PYTHONPATH: scripts
+        POSTGRES_HOST: postgres
     - name: lint yaml
       uses: abatilo/actions-poetry@v1.11.0
       with:
