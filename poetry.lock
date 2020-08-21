@@ -27,10 +27,10 @@ description = "The AWS SDK for Python"
 name = "boto3"
 optional = false
 python-versions = "*"
-version = "1.14.35"
+version = "1.14.47"
 
 [package.dependencies]
-botocore = ">=1.17.35,<1.18.0"
+botocore = ">=1.17.47,<1.18.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.3.0,<0.4.0"
 
@@ -40,16 +40,13 @@ description = "Low-level, data-driven core of boto 3."
 name = "botocore"
 optional = false
 python-versions = "*"
-version = "1.17.35"
+version = "1.17.47"
 
 [package.dependencies]
 docutils = ">=0.10,<0.16"
 jmespath = ">=0.7.1,<1.0.0"
 python-dateutil = ">=2.1,<3.0.0"
-
-[package.dependencies.urllib3]
-python = "<3.4.0 || >=3.5.0"
-version = ">=1.20,<1.26"
+urllib3 = ">=1.20,<1.26"
 
 [[package]]
 category = "main"
@@ -258,7 +255,7 @@ description = "core infrastructure for the openstates project"
 name = "openstates"
 optional = false
 python-versions = ">=3.6,<4.0"
-version = "4.7.1"
+version = "4.8.0"
 
 [package.dependencies]
 Django = ">=2.2"
@@ -400,7 +397,7 @@ description = "Pytest plugin for measuring coverage."
 name = "pytest-cov"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
-version = "2.10.0"
+version = "2.10.1"
 
 [package.dependencies]
 coverage = ">=4.4"
@@ -558,7 +555,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "e9ec12a5683779c978c74a75392829f111b8ef769f3dfc4fb437bac5ccdfc92b"
+content-hash = "f2292cd8803dfc40c45ec6d018cbb1a941a5f390c3d25d29c0f95b6e32a76b7f"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -571,12 +568,11 @@ attrs = [
     {file = "attrs-19.3.0.tar.gz", hash = "sha256:f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"},
 ]
 boto3 = [
-    {file = "boto3-1.14.35-py2.py3-none-any.whl", hash = "sha256:cbafcae500bbffcf723c6b34bfede0eb5bb04cf41788fc732ce95d08fcf90a62"},
-    {file = "boto3-1.14.35.tar.gz", hash = "sha256:df19f35e2d73e77c72f756f98805785f45dd26c608b704b105e9f8fec6992c1e"},
+    {file = "boto3-1.14.47-py2.py3-none-any.whl", hash = "sha256:0d9cbeb5c8ca67650cc963c77e2e3b3ab5dffeeee16e03d61d740755f8fc7c44"},
+    {file = "boto3-1.14.47.tar.gz", hash = "sha256:df73edf3bd6f191870212e04ae9a8bc6245fd6749f464e9fb950392a8d15bd8c"},
 ]
 botocore = [
-    {file = "botocore-1.17.35-py2.py3-none-any.whl", hash = "sha256:8b55eb0d5ea82e383649eca3129ae0979781a97ac51c0375dfcb300178e5f2fb"},
-    {file = "botocore-1.17.35.tar.gz", hash = "sha256:0f69698a59e7829d34851ea5025338bddc4352300ba7df619842eac173bc4a4e"},
+    {file = "botocore-1.17.47.tar.gz", hash = "sha256:eca25f01c503c2b86b394497f875a0eb0d3fe367dbc032f3a02851ba7e827109"},
 ]
 certifi = [
     {file = "certifi-2020.6.20-py2.py3-none-any.whl", hash = "sha256:8fc0819f1f30ba15bdb34cceffb9ef04d99f420f68eb75d901e9560b8749fc41"},
@@ -712,8 +708,8 @@ more-itertools = [
     {file = "more_itertools-8.4.0-py3-none-any.whl", hash = "sha256:b78134b2063dd214000685165d81c154522c3ee0a1c0d4d113c80361c234c5a2"},
 ]
 openstates = [
-    {file = "openstates-4.7.1-py3-none-any.whl", hash = "sha256:3fd7eac4695935ea74d6b431f6bad9e5cf2c2288068f1b8335d2a33173be9f8c"},
-    {file = "openstates-4.7.1.tar.gz", hash = "sha256:e580412deb040504cd47049ff0f748f3f5500023972aecbfe1992b218b811707"},
+    {file = "openstates-4.8.0-py3-none-any.whl", hash = "sha256:6e57becc48a958120fb07fb210ad7dc97f3d0eca47cdf9ca23b31e6b266b1b1f"},
+    {file = "openstates-4.8.0.tar.gz", hash = "sha256:2ddf4712d3126e0d5ceb6c671250124c146d3fdeabc1cdb1dcfd2bdb5f8f6f5c"},
 ]
 openstates-metadata = [
     {file = "openstates_metadata-2020.4.7-py3-none-any.whl", hash = "sha256:cb9e6a2a55ac3ef4b552fcd1dc6d64eba4949bb8f8732ba1fcf288242535e591"},
@@ -815,8 +811,8 @@ pytest = [
     {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
 ]
 pytest-cov = [
-    {file = "pytest-cov-2.10.0.tar.gz", hash = "sha256:1a629dc9f48e53512fcbfda6b07de490c374b0c83c55ff7a1720b3fccff0ac87"},
-    {file = "pytest_cov-2.10.0-py2.py3-none-any.whl", hash = "sha256:6e6d18092dce6fad667cd7020deed816f858ad3b49d5b5e2b1cc1c97a4dba65c"},
+    {file = "pytest-cov-2.10.1.tar.gz", hash = "sha256:47bd0ce14056fdd79f93e1713f88fad7bdcc583dcd7783da86ef2f085a0bb88e"},
+    {file = "pytest_cov-2.10.1-py2.py3-none-any.whl", hash = "sha256:45ec2d5182f89a81fc3eb29e3d1ed3113b9e9a873bcddb2a71faaab066110191"},
 ]
 pytest-django = [
     {file = "pytest-django-3.9.0.tar.gz", hash = "sha256:664e5f42242e5e182519388f01b9f25d824a9feb7cd17d8f863c8d776f38baf9"},
