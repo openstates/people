@@ -1,4 +1,4 @@
-name: Test Scripts
+name: Lint YAML
 
 on:
   push:
@@ -9,19 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    services:
-      postgres:
-        image: postgres
-        env:
-          POSTGRS_USER: 'openstates'
-          POSTGRES_PASSWORD: 'openstates'
-          POSTGRES_DB: 'testdb'
-          options: >-
-            --health-cmd pg_isready
-            --health-interval 10s
-            --health-timeout 5s
-            --health-retries 5
 
     steps:
     # Python & dependency installation
@@ -46,10 +33,7 @@ jobs:
       run: poetry install
       if: steps.cache.outputs.cache-hit != 'true'
      
-    - name: lint with flake8
-      run: poetry run flake8  scripts --show-source --statistics
-    - name: pytest
-      run: poetry run ./scripts/run_tests.sh
+    - name: lint yaml
+      run: poetry run ./scripts/lint_yaml.py
       env: 
         PYTHONPATH: scripts
-        PGHOST: postgres
