@@ -34,14 +34,14 @@ jobs:
         python-version: 3.7
     - name: install Poetry
       uses: dschep/install-poetry-action@v1.3
-    # - name: cache Poetry virtualenv
-    #   uses: actions/cache@v2
-    #   id: cache
-    #   with:
-    #     path: ~/.virtualenvs/
-    #     key: poetry-${{ hashFiles('**/poetry.lock') }}
-    #     restore-keys: |
-    #       poetry-${{ hashFiles('**/poetry.lock') }}
+    - name: cache Poetry virtualenv
+      uses: actions/cache@v2
+      id: cache
+      with:
+        path: ~/.virtualenvs/
+        key: poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          poetry-${{ hashFiles('**/poetry.lock') }}
     - name: set poetry config path
       run: poetry config virtualenvs.path ~/.virtualenvs
     - name: install dependencies
