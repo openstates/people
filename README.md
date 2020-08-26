@@ -22,7 +22,7 @@ This repository contains YAML files with all the information on given individual
 All data within the data directory is organized by state.  Within a given state directory you may find the following:
 
   * legislature - people that are currently serving in the legislature
-  * eecutive - people that are currently serving in the state executive (e.g. governors)
+  * executive - people that are currently serving in the state executive (e.g. governors)
   * municipalities - people currently serving in local government (e.g. mayors)
   * retired - people not currently serving any tracked roles
   * committees - committee data (future TBD)
