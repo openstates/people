@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import os
+import re
 import csv
 import glob
 import click
@@ -28,18 +29,29 @@ def load_person_by_id(abbr, person_id):
         return person[0], load_yaml(f)
 
 
+def clean_id(value, id_type):
+    if id_type == "facebook":
+        print(value)
+        return re.findall(r"facebook.com/([-\.\w\d]+)/?$", value)[0]
+    if id_type == "twitter":
+        print(value)
+        return re.findall(r"twitter.com/([-\.\w\d]+)/?$", value)[0]
+    return value
+
+
 def add_id_if_exists(person, id_type, id_or_none):
     if id_or_none:
+        new_id = clean_id(id_or_none, id_type)
         existing = person.get("ids", {}).get(id_type)
         # doesn't yet exist, set it
         if not existing:
             if "ids" not in person:
                 person["ids"] = {}
-            person["ids"][id_type] = id_or_none
-            click.secho(f"set {person['id']} {id_type} to {id_or_none}")
+            person["ids"][id_type] = new_id
+            click.secho(f"set {person['id']} {id_type} to {new_id}")
         # already exists, conflict
-        if existing and existing != id_or_none:
-            click.secho(f"conflict for {person['id']} {id_type} old={existing}, new={id_or_none}")
+        if existing and existing != new_id:
+            click.secho(f"conflict for {person['id']} {id_type} old={existing}, new={new_id}")
 
 
 @click.command()
