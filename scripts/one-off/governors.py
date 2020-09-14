@@ -2,7 +2,7 @@
 import os
 import csv
 from utils import ocd_uuid, dump_obj, reformat_phone_number
-import openstates_metadata as metadata
+from openstates import metadata
 from collections import OrderedDict
 
 

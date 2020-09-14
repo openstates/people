@@ -5,7 +5,7 @@ import glob
 from functools import lru_cache
 from django.db import transaction
 import click
-import openstates_metadata as metadata
+from openstates import metadata
 from openstates.utils.django import init_django
 from utils import (
     get_data_dir,

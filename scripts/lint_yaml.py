@@ -5,7 +5,7 @@ import sys
 import datetime
 import glob
 import click
-import openstates_metadata as metadata
+from openstates import metadata
 from enum import Enum, auto
 from utils import (
     get_data_dir,
