@@ -255,8 +255,6 @@ def load_org(data):
         name=data["name"],
         jurisdiction_id=data["jurisdiction"],
         classification=data["classification"],
-        founding_date=data.get("founding_date", ""),
-        dissolution_date=data.get("dissolution_date", ""),
         parent=parent,
     )
     org, created, updated = get_update_or_create(Organization, fields, ["id"])

@@ -331,7 +331,6 @@ def test_basic_organization():
     parent: lower
     jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
-    founding_date: '2007-01-01'
     """
     )
     created, updated = load_org(data)
@@ -352,7 +351,6 @@ def test_basic_organization_updates():
     parent: lower
     jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
-    founding_date: '2007-01-01'
     """
     )
     created, updated = load_org(data)
@@ -368,13 +366,12 @@ def test_basic_organization_updates():
     assert o.updated_at == updated_at
 
     # ensure extra changes got captured
-    data["founding_date"] = "2008-01-01"
+    data["classification"] = "something else"
     created, updated = load_org(data)
     assert created is False
     assert updated is True
     o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
     assert o.updated_at > updated_at
-    assert o.founding_date == "2008-01-01"
 
 
 @pytest.mark.django_db
@@ -386,7 +383,6 @@ def test_organization_memberships():
     parent: lower
     jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
-    founding_date: '2007-01-01'
     memberships:
         - id: 123
           name: Jane Smith
@@ -423,7 +419,6 @@ def test_org_person_membership_interaction():
     parent: lower
     jurisdiction: ocd-jurisdiction/country:us/state:nc/government
     classification: committee
-    founding_date: '2007-01-01'
     memberships:
         - id: 123
           name: Jane Smith

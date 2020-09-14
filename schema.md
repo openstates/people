@@ -50,8 +50,6 @@
 * classification: Classification, can be:
     * committee
     **required**
-* founding_date: Creation date in YYYY-MM-DD format.
-* dissolution_date: Dissolution date in YYYY-MM-DD format.
 * memberships: list of memberships, each may have the following:
     * id - ocd-person ID if known
     * name - name of person **required**

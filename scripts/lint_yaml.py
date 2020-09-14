@@ -175,8 +175,6 @@ ORGANIZATION_FIELDS = {
     "jurisdiction": [is_ocd_jurisdiction, Required],
     "parent": [is_valid_parent, Required],
     "classification": [is_string, Required],  # TODO: tighten this
-    "founding_date": [is_fuzzy_date],
-    "dissolution_date": [is_fuzzy_date],
     "memberships": NestedList(
         {
             "id": [is_ocd_person],
