@@ -30,18 +30,24 @@ def load_person_by_id(abbr, person_id):
 
 
 def clean_id(value, id_type):
-    if id_type == "facebook":
-        print(value)
-        return re.findall(r"facebook.com/([-\.\w\d]+)/?$", value)[0]
-    if id_type == "twitter":
-        print(value)
-        return re.findall(r"twitter.com/([-\.\w\d]+)/?$", value)[0]
+    if not value:
+        return
+    try:
+        if id_type == "facebook":
+            return re.findall(r"facebook.com/([-\.\w\d]+)/?$", value)[0]
+        if id_type == "twitter":
+            return re.findall(r"twitter.com/([-\.\w\d]+)/?$", value)[0]
+        if id_type == "instagram":
+            return re.findall(r"instagram.com/([-\.\w\d]+)/(\??.*)$", value)[0][0]
+    except IndexError:
+        click.secho(f"skipping {id_type} id {value}", fg="yellow")
+        return None
     return value
 
 
 def add_id_if_exists(person, id_type, id_or_none):
-    if id_or_none:
-        new_id = clean_id(id_or_none, id_type)
+    new_id = clean_id(id_or_none, id_type)
+    if new_id:
         existing = person.get("ids", {}).get(id_type)
         # doesn't yet exist, set it
         if not existing:
@@ -67,8 +73,11 @@ def social_csv_import(abbr, filename):
             if not person:
                 return
 
-            for id_type in ("twitter", "facebook", "youtube", "instagram", "linkedin"):
+            for id_type in ("twitter", "facebook", "instagram"):
                 add_id_if_exists(person, id_type, line.get(id_type))
+            for link_type in ("linkedin", "youtube", "campaign_url"):
+                if url := line.get(link_type):
+                    person["links"].append({"url": url, "note": link_type})
 
             dump_obj(person, filename=person_fname)
 
