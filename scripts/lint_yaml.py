@@ -5,7 +5,7 @@ import sys
 import datetime
 import glob
 import click
-import openstates_metadata as metadata
+from openstates import metadata
 from enum import Enum, auto
 from utils import (
     get_data_dir,
@@ -175,8 +175,6 @@ ORGANIZATION_FIELDS = {
     "jurisdiction": [is_ocd_jurisdiction, Required],
     "parent": [is_valid_parent, Required],
     "classification": [is_string, Required],  # TODO: tighten this
-    "founding_date": [is_fuzzy_date],
-    "dissolution_date": [is_fuzzy_date],
     "memberships": NestedList(
         {
             "id": [is_ocd_person],

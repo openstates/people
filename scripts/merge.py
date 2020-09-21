@@ -3,7 +3,7 @@
 import os
 import glob
 import click
-import openstates_metadata as metadata
+from openstates import metadata
 from utils import get_filename, get_data_dir, load_yaml, dump_obj
 from retire import retire_person, move_file
 
