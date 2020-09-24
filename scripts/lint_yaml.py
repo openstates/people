@@ -640,7 +640,7 @@ class Validator:
             )
 
 
-def process_dir(abbr, verbose, summary):  # pragma: no cover
+def process_dir(abbr, verbose, summary, committees):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
@@ -667,11 +667,12 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
                 person = load_yaml(f)
                 validator.validate_person(person, print_filename, person_type)
 
-    for filename in org_filenames:
-        print_filename = os.path.basename(filename)
-        with open(filename) as f:
-            org = load_yaml(f)
-            validator.validate_org(org, print_filename)
+    if committees:
+        for filename in org_filenames:
+            print_filename = os.path.basename(filename)
+            with open(filename) as f:
+                org = load_yaml(f)
+                validator.validate_org(org, print_filename)
 
     error_count = validator.print_validation_report(verbose)
 
@@ -687,7 +688,8 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
 @click.option(
     "--summary/--no-summary", default=False, help="Print summary after validation errors."
 )
-def lint(abbreviations, verbose, summary):
+@click.option("--committees/--no-committees", default=True, help="Skip committee checks.")
+def lint(abbreviations, verbose, summary, committees):
     """
         Lint YAML files, optionally also providing a summary of state's data.
 
@@ -700,7 +702,7 @@ def lint(abbreviations, verbose, summary):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, summary)
+        error_count += process_dir(abbr, verbose, summary, committees)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
