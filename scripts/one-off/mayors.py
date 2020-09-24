@@ -2,24 +2,33 @@
 import os
 import sys
 import csv
+import glob
 import datetime
-from utils import ocd_uuid, dump_obj, reformat_phone_number
+import click
+from utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml, get_filename
 from collections import OrderedDict
 
 
 def city_to_jurisdiction(city, state):
-    return f"ocd-jurisdiction/country:us/state:{state.lower()}/place:{city.lower()}/government"
+    return f"ocd-jurisdiction/country:us/state:{state.lower()}/place:{city.lower().replace(' ', '_')}/government"
+
+
+def get_existing_mayor(state, name):
+    for fn in glob.glob(f"data/{state}/municipalities/*.yml") + glob.glob(f"data/{state}/retired/*.yml"):
+        with open(fn) as f:
+            person = load_yaml(f)
+            if person["name"] == name:
+                return person, "retired" in fn
 
 
 def make_mayors(state_to_import):
     all_municipalities = []
-    os.makedirs(f"data/{state_to_import}/municipalities")
     with open("mayors.csv") as f:
         data = csv.DictReader(f)
         for line in data:
             state = line["Postal Code"].lower()
-            if state != state_to_import:
-                continue
+            # if state != state_to_import:
+            #     continue
             city = line["City"].strip()
             given_name = line["First"].strip()
             family_name = line["Last"].strip()
@@ -40,6 +49,10 @@ def make_mayors(state_to_import):
                     "%Y-%m-%d"
                 )
 
+            if term_end < "2020-09-24":
+                click.secho(f"skipping retired {name}, {term_end}", fg="yellow")
+                continue
+
             if address2:
                 full_address = f"{address1};{address2};{city}, {state.upper()} {zipcode}"
             else:
@@ -58,9 +71,18 @@ def make_mayors(state_to_import):
             jid = city_to_jurisdiction(city, state)
             all_municipalities.append(OrderedDict({"name": city, "id": jid}))
 
+            existing, retired = get_existing_mayor(state, name)
+            if existing:
+                pid = existing["id"]
+            else:
+                pid = ocd_uuid("person")
+
+            if retired:
+                os.remove(os.path.join(f"data/{state}/retired/", get_filename(existing)))
+
             obj = OrderedDict(
                 {
-                    "id": ocd_uuid("person"),
+                    "id": pid,
                     "name": name,
                     "given_name": given_name,
                     "family_name": family_name,
