@@ -19,6 +19,7 @@ def get_existing_mayor(state, name):
             person = load_yaml(f)
             if person["name"] == name:
                 return person, "retired" in fn
+    return False, False
 
 
 def make_mayors(state_to_import):
@@ -27,6 +28,8 @@ def make_mayors(state_to_import):
         data = csv.DictReader(f)
         for line in data:
             state = line["Postal Code"].lower()
+            if state == "dc":
+                continue
             # if state != state_to_import:
             #     continue
             city = line["City"].strip()
