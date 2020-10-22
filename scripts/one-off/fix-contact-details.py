@@ -11,13 +11,19 @@ import click
 def fix_offices(filename):
     with open(filename) as file:
         data = load_yaml(file)
+
     # office_type -> key -> set of values seen
     all_details = defaultdict(lambda: defaultdict(set))
+    email = set()
+
     for office in data.get("contact_details", []):
         for key, value in office.items():
             if key == "note":
                 continue
-            all_details[office["note"]][key].add(value)
+            if key == "email":
+                email.add(value)
+            else:
+                all_details[office["note"]][key].add(value)
 
     reformatted = defaultdict(dict)
     error = False
@@ -30,7 +36,15 @@ def fix_offices(filename):
                 click.secho(f"multiple values for {office_type} {ctype}: {values}", fg="red")
                 error = True
 
+    if len(email) == 1:
+        email = email.pop()
+    elif len(email) > 1:
+        click.secho(f"multiple values for email: {email}", fg="red")
+        error = True
+
     if not error:
+        if email:
+            data["email"] = email
         data["contact_details"] = []
         for otype in ("Capitol Office", "District Office", "Primary Office"):
             if otype in reformatted:
