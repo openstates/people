@@ -239,74 +239,6 @@ def load_person(data):
     return created, updated
 
 
-def load_org(data):
-    from openstates.data.models import Organization, Person
-
-    parent_id = data["parent"]
-    if parent_id.startswith("ocd-organization"):
-        parent = Organization.objects.get(pk=parent_id)
-    else:
-        parent = Organization.objects.get(
-            jurisdiction_id=data["jurisdiction"], classification=parent_id
-        )
-
-    fields = dict(
-        id=data["id"],
-        name=data["name"],
-        jurisdiction_id=data["jurisdiction"],
-        classification=data["classification"],
-        parent=parent,
-    )
-    org, created, updated = get_update_or_create(Organization, fields, ["id"])
-
-    updated |= update_subobjects(org, "links", data.get("links", []))
-    updated |= update_subobjects(org, "sources", data.get("sources", []))
-
-    memberships = []
-    for role in data.get("memberships", []):
-        if role.get("id"):
-            try:
-                person = Person.objects.get(pk=role["id"])
-            except Person.DoesNotExist:
-                click.secho(f"no such person {role['id']}", fg="red")
-                raise CancelTransaction()
-        else:
-            person = None
-
-        memberships.append(
-            {
-                "person": person,
-                "person_name": role["name"],
-                "role": role.get("role", "member"),
-                "start_date": role.get("start_date", ""),
-                "end_date": role.get("end_date", ""),
-            }
-        )
-    updated |= update_subobjects(org, "memberships", memberships)
-
-    return created, updated
-
-
-def sort_organizations(orgs):
-    order = []
-    seen = set()
-    how_many = len(orgs)
-
-    while orgs:
-        for org, filename in list(orgs):
-            if (org["parent"].startswith("ocd-organization") and org["parent"] in seen) or not org[
-                "parent"
-            ].startswith("ocd-organization"):
-                seen.add(org["id"])
-                order.append((org, filename))
-                orgs.remove((org, filename))
-
-    # TODO: this doesn't check for infinite loops when two orgs refer to one another
-    assert len(order) == how_many
-
-    return order
-
-
 def _echo_org_status(org, created, updated):
     if created:
         click.secho(f"{org} created", fg="green")
@@ -330,16 +262,6 @@ def load_directory(files, type, jurisdiction_id, purge):
         )
         ModelCls = Person
         load_func = load_person
-    elif type == "organization":
-        from openstates.data.models import Organization
-
-        existing_ids = set(
-            Organization.objects.filter(
-                jurisdiction_id=jurisdiction_id, classification="committee"
-            ).values_list("id", flat=True)
-        )
-        ModelCls = Organization
-        load_func = load_org
     else:
         raise ValueError(type)
 
@@ -348,9 +270,6 @@ def load_directory(files, type, jurisdiction_id, purge):
         with open(filename) as f:
             data = load_yaml(f)
             all_data.append((data, filename))
-
-    if type == "organization":
-        all_data = sort_organizations(all_data)
 
     for data, filename in all_data:
         ids.add(data["id"])
@@ -467,7 +386,6 @@ def to_database(abbreviations, purge, safe):
             + glob.glob(os.path.join(directory, "municipalities/*.yml"))
             + glob.glob(os.path.join(directory, "retired/*.yml"))
         )
-        committee_files = glob.glob(os.path.join(directory, "organizations/*.yml"))
 
         if safe:
             click.secho("running in safe mode, no changes will be made", fg="magenta")
@@ -475,7 +393,6 @@ def to_database(abbreviations, purge, safe):
         try:
             with transaction.atomic():
                 load_directory(person_files, "person", jurisdiction_id, purge=purge)
-                load_directory(committee_files, "organization", jurisdiction_id, purge=purge)
                 if safe:
                     click.secho("ran in safe mode, no changes were made", fg="magenta")
                     raise CancelTransaction()
