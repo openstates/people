@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import os
-import glob
 import click
 from datetime import datetime
 from utils import load_yaml, dump_obj, role_is_active
