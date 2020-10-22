@@ -22,31 +22,17 @@ def process_link(link):
 
 def process_dir(input_dir, output_dir, jurisdiction_id):
     person_memberships = defaultdict(list)
-    # map both names & ids to people objects
-    people_lookup = {}
-    committees_by_id = {}
-
-    # build list of committees
-    for filename in glob.glob(os.path.join(input_dir, "organization_*.json")):
-        with open(filename) as f:
-            org = json.load(f)
-
-        if org["classification"] == "committee":
-            committees_by_id[org["_id"]] = process_org(org, jurisdiction_id)
 
     # collect memberships
     for filename in glob.glob(os.path.join(input_dir, "membership_*.json")):
         with open(filename) as f:
             membership = json.load(f)
 
-        if membership["organization_id"] in committees_by_id:
-            committees_by_id[membership["organization_id"]]["memberships"].append(membership)
-        else:
-            if membership["person_id"].startswith("~"):
-                raise ValueError(membership)
-            person_memberships[membership["person_id"]].append(membership)
+        if membership["person_id"].startswith("~"):
+            raise ValueError(membership)
+        person_memberships[membership["person_id"]].append(membership)
 
-    # process people & store people by ID for committees
+    # process people
     for filename in glob.glob(os.path.join(input_dir, "person_*.json")):
         with open(filename) as f:
             person = json.load(f)
@@ -54,46 +40,8 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         scrape_id = person["_id"]
         person["memberships"] = person_memberships[scrape_id]
         person = process_person(person, jurisdiction_id)
-        people_lookup[scrape_id] = person
-        people_lookup[person["name"]] = person
 
         dump_obj(person, output_dir=os.path.join(output_dir, "legislature"))
-
-    # resolve committee parents and members and write them out
-    for org in committees_by_id.values():
-        if org["parent"].startswith("~"):
-            org["parent"] = json.loads(org["parent"][1:])["classification"]
-        else:
-            # map scrape ID to ocd-org ID
-            org["parent"] = committees_by_id[org["parent"]]["id"]
-
-        org["memberships"] = [
-            process_committee_membership(m, people_lookup) for m in org["memberships"]
-        ]
-
-        dump_obj(org, output_dir=os.path.join(output_dir, "organizations"))
-
-
-def process_committee_membership(membership, people_lookup):
-    result = OrderedDict()
-    if membership["person_id"].startswith("~"):
-        try:
-            result["id"] = people_lookup[membership["person_name"]]["id"]
-        except KeyError:
-            # there are many unresolved people for all sorts of reasons,
-            # we'll see them in the lint
-            pass
-    else:
-        result["id"] = people_lookup[membership["person_id"]]["id"]
-
-    result["name"] = membership["person_name"]
-    if membership["role"] != "member":
-        result["role"] = membership["role"]
-    if membership["start_date"]:
-        result["start_date"] = membership["start_date"]
-    if membership["end_date"]:
-        result["end_date"] = membership["end_date"]
-    return result
 
 
 def process_person(person, jurisdiction_id):
@@ -167,19 +115,6 @@ def process_person(person, jurisdiction_id):
     return result
 
 
-def process_org(org, jurisdiction_id):
-    return OrderedDict(
-        id=ocd_uuid("organization"),
-        name=org["name"],
-        jurisdiction=jurisdiction_id,
-        parent=org["parent_id"],
-        classification=org["classification"],
-        links=[process_link(link) for link in org["links"]],
-        sources=[process_link(link) for link in org["sources"]],
-        memberships=[],
-    )
-
-
 @click.command()  # pragma: no cover
 @click.argument("input_dir")
 def to_yaml(input_dir):
@@ -202,12 +137,11 @@ def to_yaml(input_dir):
     output_dir = output_dir.replace("data", "incoming")
     assert "incoming" in output_dir
 
-    for dir in ("legislature", "organizations"):
-        try:
-            os.makedirs(os.path.join(output_dir, dir))
-        except FileExistsError:
-            for file in glob.glob(os.path.join(output_dir, dir, "*.yml")):
-                os.remove(file)
+    try:
+        os.makedirs(os.path.join(output_dir, "legislature"))
+    except FileExistsError:
+        for file in glob.glob(os.path.join(output_dir, "legislature", "*.yml")):
+            os.remove(file)
     process_dir(input_dir, output_dir, jurisdiction_id)
 
 
