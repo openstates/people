@@ -1,5 +1,5 @@
 # import pytest
-from retire import retire_person, retire_from_committee
+from retire import retire_person
 
 
 def test_retire_person():
@@ -20,20 +20,3 @@ def test_retire_person():
     # idempotent
     person, num = retire_person(person, "2018-11-01")
     assert num == 0
-
-
-def test_retire_from_committee():
-    committee = {
-        "memberships": [
-            {"id": "123", "end_date": "2000-01-01"},
-            {"id": "123"},
-            {"id": "123", "end_date": "2030-01-01"},
-            {"id": "456"},
-        ]
-    }
-    committee, num = retire_from_committee(committee, "123", "2018-10-01")
-    assert num == 2
-    assert committee["memberships"][0]["end_date"] == "2000-01-01"
-    assert committee["memberships"][1]["end_date"] == "2018-10-01"
-    assert committee["memberships"][2]["end_date"] == "2018-10-01"
-    assert committee["memberships"][3].get("end_date") is None
