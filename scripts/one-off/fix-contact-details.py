@@ -33,7 +33,7 @@ def fix_offices(filename):
             if len(values) == 1:
                 reformatted[office_type][ctype] = values.pop()
             else:
-                click.secho(f"multiple values for {office_type} {ctype}: {values}", fg="red")
+                # click.secho(f"multiple values for {office_type} {ctype}: {values}", fg="red")
                 error = True
 
     if len(email) == 1:
@@ -54,6 +54,8 @@ def fix_offices(filename):
 
 
 def fix_offices_state(state):
+    if state == "all":
+        state = "*"
     for filename in glob.glob(os.path.join(get_data_dir(state), "legislature/*.yml")):
         fix_offices(filename)
 
