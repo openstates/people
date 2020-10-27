@@ -158,11 +158,15 @@ def load_person(data):
                 role_name = "Mayor"
             org_type = "executive"
             use_district = False
+        elif role["type"] in ("secretary of state", "chief election officer"):
+            role_name = role["type"].title()
+            org_type = "executive"
+            use_district = False
         elif role["type"] in ("upper", "lower", "legislature"):
             org_type = role["type"]
             use_district = True
         else:
-            raise ValueError("unsupported role type")
+            raise ValueError(f"unsupported role type: {role['type']}")
         try:
             org = cached_lookup(
                 Organization, classification=org_type, jurisdiction_id=role["jurisdiction"]
