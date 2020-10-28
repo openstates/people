@@ -39,8 +39,16 @@ def fix_offices(filename):
     if len(email) == 1:
         email = email.pop()
     elif len(email) > 1:
-        click.secho(f"multiple values for email: {email}", fg="red")
-        error = True
+        emails = list(email)
+        if "leg.state.vt.us" in emails[0]:
+            email = emails[0]
+        elif "leg.state.vt.us" in emails[1]:
+            email = emails[0]
+        elif emails[0].lower() == emails[1].lower():
+            email = emails[0]
+        else:
+            click.secho(f"multiple values for email: {email}", fg="red")
+            error = True
 
     if not error:
         if email:
