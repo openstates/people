@@ -64,7 +64,7 @@ def fix_offices(filename):
 def fix_offices_state(state):
     if state == "all":
         state = "*"
-    for filename in glob.glob(os.path.join(get_data_dir(state), "legislature/*.yml")):
+    for filename in glob.glob(os.path.join(get_data_dir(state), "municipalities/*.yml")):
         fix_offices(filename)
 
 
