@@ -128,7 +128,6 @@ CONTACT_DETAILS = NestedList(
     {
         "note": [Enum("District Office", "Capitol Office", "Primary Office"), Required],
         "address": [is_string],
-        "email": [is_string],
         "voice": [is_phone],
         "fax": [is_phone],
     }
@@ -195,6 +194,7 @@ PERSON_FIELDS = {
     "given_name": [is_string],
     "family_name": [is_string],
     "middle_name": [is_string],
+    "email": [is_string],
     "suffix": [is_string],
     "gender": [is_string],
     "summary": [is_multiline_string],
