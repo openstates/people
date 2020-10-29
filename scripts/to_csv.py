@@ -26,6 +26,7 @@ def write_csv(files, jurisdiction_id, output_filename):
                 "given_name",
                 "family_name",
                 "gender",
+                "email",
                 "biography",
                 "birth_date",
                 "death_date",
@@ -33,11 +34,9 @@ def write_csv(files, jurisdiction_id, output_filename):
                 "links",
                 "sources",
                 "capitol_address",
-                "capitol_email",
                 "capitol_voice",
                 "capitol_fax",
                 "district_address",
-                "district_email",
                 "district_voice",
                 "district_fax",
                 "twitter",
@@ -64,18 +63,16 @@ def write_csv(files, jurisdiction_id, output_filename):
                         current_chamber = role["type"]
                         current_district = role["district"]
 
-                district_address = district_email = district_voice = district_fax = None
-                capitol_address = capitol_email = capitol_voice = capitol_fax = None
+                district_address = district_voice = district_fax = None
+                capitol_address = capitol_voice = capitol_fax = None
                 for cd in data.get("contact_details", {}):
                     note = cd["note"].lower()
                     if "district" in note:
                         district_address = cd.get("address")
-                        district_email = cd.get("email")
                         district_voice = cd.get("voice")
                         district_fax = cd.get("fax")
                     elif "capitol" in note:
                         capitol_address = cd.get("address")
-                        capitol_email = cd.get("email")
                         capitol_voice = cd.get("voice")
                         capitol_fax = cd.get("fax")
                     else:
@@ -93,6 +90,7 @@ def write_csv(files, jurisdiction_id, output_filename):
                     "given_name": data.get("given_name"),
                     "family_name": data.get("family_name"),
                     "gender": data.get("gender"),
+                    "email": data.get("email"),
                     "biography": data.get("biography"),
                     "birth_date": data.get("birth_date"),
                     "death_date": data.get("death_date"),
@@ -104,11 +102,9 @@ def write_csv(files, jurisdiction_id, output_filename):
                     "links": links,
                     "sources": sources,
                     "district_address": district_address,
-                    "district_email": district_email,
                     "district_voice": district_voice,
                     "district_fax": district_fax,
                     "capitol_address": capitol_address,
-                    "capitol_email": capitol_email,
                     "capitol_voice": capitol_voice,
                     "capitol_fax": capitol_fax,
                 }
