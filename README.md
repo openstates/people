@@ -1,7 +1,7 @@
 # Open States People
 
-[![Build Status](https://travis-ci.com/openstates/people.svg?branch=master)](https://travis-ci.com/openstates/people)
-[![Coverage Status](https://coveralls.io/repos/github/openstates/people/badge.svg?branch=master)](https://coveralls.io/github/openstates/people?branch=master)
+![Lint YAML](https://github.com/openstates/people/workflows/Lint%20YAML/badge.svg)
+![Test Scripts](https://github.com/openstates/people/workflows/Test%20Scripts/badge.svg)
 
 This repository contains YAML files with all the information on given individuals, as well as scripts to work with & maintain the data.
 
