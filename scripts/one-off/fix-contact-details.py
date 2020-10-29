@@ -23,7 +23,15 @@ def fix_offices(filename):
             if key == "email":
                 email.add(value)
             else:
-                all_details[office["note"]][key].add(value)
+                otype = office["note"]
+                # # Florida fixes
+                # if "/fl" in filename and key == "address":
+                #     value = "; ".join([v.strip() for v in value.split(";")])
+                # if "/fl/" in filename and key == "voice" and not value.startswith("850-"):
+                #     otype = "District Office"
+                # if "/fl/" in filename and key == "address" and "32399-1300" not in value:
+                #     otype = "District Office"
+                all_details[otype][key].add(value)
 
     reformatted = defaultdict(dict)
     error = False
@@ -33,7 +41,7 @@ def fix_offices(filename):
             if len(values) == 1:
                 reformatted[office_type][ctype] = values.pop()
             else:
-                # click.secho(f"multiple values for {office_type} {ctype}: {values}", fg="red")
+                click.secho(f"multiple values for {office_type} {ctype}: {values}", fg="red")
                 error = True
 
     if len(email) == 1:
@@ -58,16 +66,25 @@ def fix_offices(filename):
             if otype in reformatted:
                 data["contact_details"].append(OrderedDict(note=otype, **reformatted[otype]))
         # click.echo(f"rewrite contact details as {data['contact_details']}")
-    dump_obj(data, filename=filename)
+        dump_obj(data, filename=filename)
 
 
 def fix_offices_state(state):
-    if state == "all":
-        state = "*"
-    for filename in glob.glob(os.path.join(get_data_dir(state), "municipalities/*.yml")):
+    for filename in glob.glob(os.path.join(get_data_dir(state), "legislature/*.yml")):
         fix_offices(filename)
+
+
+def remove_retired_data(state):
+    for filename in glob.glob(os.path.join(get_data_dir(state), "retired/*.yml")):
+        with open(filename) as file:
+            data = load_yaml(file)
+        data.pop("contact_details", None)
+        dump_obj(data, filename=filename)
 
 
 if __name__ == "__main__":
     state = sys.argv[1]
+    if state == "all":
+        state = "*"
     fix_offices_state(state)
+    # remove_retired_data(state)
