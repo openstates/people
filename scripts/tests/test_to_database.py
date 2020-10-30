@@ -215,7 +215,7 @@ def test_person_contact_details():
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
     assert p.email == "fake@example.com"
-    assert p.contact_details.count() == 5
+    assert p.contact_details.count() == 4
     assert p.contact_details.filter(note="home").count() == 1
 
 
