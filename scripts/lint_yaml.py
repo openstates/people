@@ -128,7 +128,6 @@ CONTACT_DETAILS = NestedList(
     {
         "note": [Enum("District Office", "Capitol Office", "Primary Office"), Required],
         "address": [is_string],
-        "email": [is_string],
         "voice": [is_phone],
         "fax": [is_phone],
     }
@@ -201,6 +200,7 @@ PERSON_FIELDS = {
     "given_name": [is_string],
     "family_name": [is_string],
     "middle_name": [is_string],
+    "email": [is_string],
     "suffix": [is_string],
     "gender": [is_string],
     "summary": [is_multiline_string],
@@ -301,6 +301,19 @@ def validate_roles(person, roles_key, retired=False):
     elif roles_key == "roles" and len(active) > 1:
         return [f"{len(active)} active roles"]
     return []
+
+
+def validate_offices(person):
+    errors = []
+    contact_details = person.get("contact_details", [])
+    type_counter = Counter()
+    for office in contact_details:
+        type_counter[office["note"]] += 1
+    # if type_counter["District Office"] > 1:
+    #     errors.append("Multiple district offices.")
+    if type_counter["Capitol Office"] > 1:
+        errors.append("Multiple capitol offices, condense to one.")
+    return errors
 
 
 def validate_jurisdictions(person, municipalities):
@@ -420,6 +433,10 @@ class Validator:
         )
         if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
             self.errors[filename].extend(validate_roles(person, "party"))
+
+        self.errors[filename].extend(validate_offices(person))
+
+        # active party validation
         active_parties = []
         for party in person.get("party", []):
             if party["name"] not in self.valid_parties:
@@ -435,6 +452,7 @@ class Validator:
                 self.warnings[filename].append(
                     f"multiple active party memberships {active_parties}"
                 )
+
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         if person_type == PersonType.RETIRED:

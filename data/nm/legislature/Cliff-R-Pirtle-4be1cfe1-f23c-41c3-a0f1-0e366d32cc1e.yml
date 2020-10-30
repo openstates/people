@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: upper
 contact_details:
-- address: 5507 Y.O. Road;Roswell, NM 88203
-  note: District Office
-  voice: 575-626-7046
-- address: Room 414B State Capitol;Santa Fe, NM 87501
-  email: cliff.pirtle@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 414B State Capitol;Santa Fe, NM 87501
   voice: 505-986-4369
+- note: District Office
+  address: 5507 Y.O. Road;Roswell, NM 88203
+  voice: 575-626-7046
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPIRT
 sources:
@@ -28,6 +27,7 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Cliff
 family_name: Pirtle
+email: cliff.pirtle@nmlegis.gov
 ids:
   facebook: cliff.pirtle
   twitter: CliffPirtle

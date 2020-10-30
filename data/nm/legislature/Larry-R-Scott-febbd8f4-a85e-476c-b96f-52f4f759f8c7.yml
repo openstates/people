@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: lower
 contact_details:
-- address: P.O. Box 1708;Hobbs, NM 88241
-  note: District Office
-  voice: 575-392-5960
-- address: Room 203GN State Capitol;Santa Fe, NM 87501
-  email: larry.scott@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 203GN State Capitol;Santa Fe, NM 87501
   voice: 505-986-4450
+- note: District Office
+  address: P.O. Box 1708;Hobbs, NM 88241
+  voice: 575-392-5960
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HSCOT
 sources:
@@ -24,3 +23,4 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Larry
 family_name: Scott
+email: larry.scott@nmlegis.gov

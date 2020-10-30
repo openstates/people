@@ -93,6 +93,7 @@ def load_person(data):
         given_name=data.get("given_name", ""),
         family_name=data.get("family_name", ""),
         gender=data.get("gender", ""),
+        email=data.get("email", ""),
         biography=data.get("biography", ""),
         birth_date=data.get("birth_date", ""),
         death_date=data.get("death_date", ""),
@@ -114,7 +115,7 @@ def load_person(data):
 
     contact_details = []
     for cd in data.get("contact_details", []):
-        for type in ("address", "email", "voice", "fax"):
+        for type in ("address", "voice", "fax"):
             if cd.get(type):
                 contact_details.append(
                     {"note": cd.get("note", ""), "type": type, "value": cd[type]}

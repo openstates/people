@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: upper
 contact_details:
-- address: 418 Raynolds Avenue;Las Vegas, NM 87701
-  note: District Office
-  voice: 505-425-0508
-- address: Room 302B State Capitol;Santa Fe, NM 87501
-  email: pete.campos@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 302B State Capitol;Santa Fe, NM 87501
   voice: 505-986-4311
+- note: District Office
+  address: 418 Raynolds Avenue;Las Vegas, NM 87701
+  voice: 505-425-0508
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SCAMP
 sources:
@@ -30,6 +29,7 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Pete
 family_name: Campos
+email: pete.campos@nmlegis.gov
 ids:
   facebook: pete.campos.1426
   twitter: senpetecampos

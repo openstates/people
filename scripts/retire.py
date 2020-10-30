@@ -17,6 +17,9 @@ def retire_person(person, end_date, reason=None, death=False):
     if death:
         person["death_date"] = end_date
 
+    # remove old contact details
+    person.pop("contact_details", None)
+
     return person, num
 
 

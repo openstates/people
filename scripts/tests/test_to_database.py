@@ -200,11 +200,11 @@ def test_person_contact_details():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
+    email: fake@example.com
     contact_details:
         - note: Capitol Office office
           fax: 111-222-3333
           voice: 555-555-5555
-          email: fake@example.com
           address: 123 Main St; Washington DC; 20001
         - note: home
           voice: 333-333-3333
@@ -214,7 +214,8 @@ def test_person_contact_details():
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
-    assert p.contact_details.count() == 5
+    assert p.email == "fake@example.com"
+    assert p.contact_details.count() == 4
     assert p.contact_details.filter(note="home").count() == 1
 
 

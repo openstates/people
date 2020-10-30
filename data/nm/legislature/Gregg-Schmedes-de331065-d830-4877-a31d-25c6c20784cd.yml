@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: lower
 contact_details:
-- address: 25 Calle Vallecitos;Tijeras, NM 87059
-  note: District Office
-  voice: 505-506-6725
-- address: Room 203HN State Capitol;Santa Fe, NM 87501
-  email: gregg.schmedes@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 203HN State Capitol;Santa Fe, NM 87501
   voice: 505-986-4453
+- note: District Office
+  address: 25 Calle Vallecitos;Tijeras, NM 87059
+  voice: 505-506-6725
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HSCHM
 - note: linkedin
@@ -26,6 +25,7 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Gregg
 family_name: Schmedes
+email: gregg.schmedes@nmlegis.gov
 ids:
   facebook: gregg4nm
   instagram: greggschmedes

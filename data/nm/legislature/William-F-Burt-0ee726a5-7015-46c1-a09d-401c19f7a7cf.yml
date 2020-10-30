@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: upper
 contact_details:
-- address: Box 1848;Alamogordo, NM 88311
-  note: District Office
-  voice: 575-434-1414
-- address: Room 415C State Capitol;Santa Fe, NM 87501
-  email: bill.burt@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 415C State Capitol;Santa Fe, NM 87501
   voice: 505-986-4366
+- note: District Office
+  address: Box 1848;Alamogordo, NM 88311
+  voice: 575-434-1414
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SBURT
 - note: linkedin
@@ -32,5 +31,6 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: William
 family_name: Burt
+email: bill.burt@nmlegis.gov
 ids:
   twitter: burtfornmsenate

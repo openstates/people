@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: upper
 contact_details:
-- address: 612 Inwood Avenue;Grants, NM 87020
-  note: District Office
-  voice: 505-287-2515
-- address: Room 323 State Capitol;Santa Fe, NM 87501
-  email: clemente.sanchez@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 323 State Capitol;Santa Fe, NM 87501
   voice: 505-986-4513
+- note: District Office
+  address: 612 Inwood Avenue;Grants, NM 87020
+  voice: 505-287-2515
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSACL
 sources:
@@ -28,6 +27,7 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Clemente
 family_name: Sanchez
+email: clemente.sanchez@nmlegis.gov
 ids:
   facebook: SenatorClementeSanchez
   twitter: sencsanchez

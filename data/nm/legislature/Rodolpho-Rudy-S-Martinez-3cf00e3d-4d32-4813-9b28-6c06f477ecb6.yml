@@ -7,13 +7,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: lower
 contact_details:
-- address: P.O. Box 164;Bayard, NM 88023
-  note: District Office
-  voice: 575-534-7546
-- address: Room 204A State Capitol;Santa Fe, NM 87501
-  email: rodolpho.martinez@nmlegis.gov
-  note: Capitol Office
+- note: Capitol Office
+  address: Room 204A State Capitol;Santa Fe, NM 87501
   voice: 505-986-4233
+- note: District Office
+  address: P.O. Box 164;Bayard, NM 88023
+  voice: 575-534-7546
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HMARR
 sources:
@@ -24,6 +23,7 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Rodolpho
 family_name: Martinez
+email: rodolpho.martinez@nmlegis.gov
 ids:
   facebook: Rudy4NM
   twitter: rmartineznm39
