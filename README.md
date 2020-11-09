@@ -1,7 +1,7 @@
 # Open States People
 
-[![Build Status](https://travis-ci.com/openstates/people.svg?branch=master)](https://travis-ci.com/openstates/people)
-[![Coverage Status](https://coveralls.io/repos/github/openstates/people/badge.svg?branch=master)](https://coveralls.io/github/openstates/people?branch=master)
+![Lint YAML](https://github.com/openstates/people/workflows/Lint%20YAML/badge.svg)
+![Test Scripts](https://github.com/openstates/people/workflows/Test%20Scripts/badge.svg)
 
 This repository contains YAML files with all the information on given individuals, as well as scripts to work with & maintain the data.
 
@@ -22,7 +22,7 @@ This repository contains YAML files with all the information on given individual
 All data within the data directory is organized by state.  Within a given state directory you may find the following:
 
   * legislature - people that are currently serving in the legislature
-  * eecutive - people that are currently serving in the state executive (e.g. governors)
+  * executive - people that are currently serving in the state executive (e.g. governors)
   * municipalities - people currently serving in local government (e.g. mayors)
   * retired - people not currently serving any tracked roles
   * committees - committee data (future TBD)

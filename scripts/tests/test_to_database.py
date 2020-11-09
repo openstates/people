@@ -1,7 +1,7 @@
 import pytest
 import yaml
 from openstates.data.models import Person, Organization, Jurisdiction, Division
-from to_database import load_person, load_org
+from to_database import load_person
 
 
 def setup():
@@ -200,11 +200,11 @@ def test_person_contact_details():
     yaml_text = """
     id: abcdefab-0000-1111-2222-1234567890ab
     name: Jane Smith
+    email: fake@example.com
     contact_details:
         - note: Capitol Office office
           fax: 111-222-3333
           voice: 555-555-5555
-          email: fake@example.com
           address: 123 Main St; Washington DC; 20001
         - note: home
           voice: 333-333-3333
@@ -214,7 +214,8 @@ def test_person_contact_details():
     created, updated = load_person(data)
     p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
 
-    assert p.contact_details.count() == 5
+    assert p.email == "fake@example.com"
+    assert p.contact_details.count() == 4
     assert p.contact_details.filter(note="home").count() == 1
 
 
@@ -320,123 +321,3 @@ def test_person_mayor_role():
 
 
 EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"
-
-
-@pytest.mark.django_db
-def test_basic_organization():
-    data = yaml.safe_load(
-        """
-    id: ocd-organization/00000000-1111-2222-3333-444455556666
-    name: Finance
-    parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-    classification: committee
-    founding_date: '2007-01-01'
-    """
-    )
-    created, updated = load_org(data)
-
-    assert created is True
-    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    assert o.name == "Finance"
-    assert o.jurisdiction.name == "NC"
-    assert o.parent.name == "House"
-
-
-@pytest.mark.django_db
-def test_basic_organization_updates():
-    data = yaml.safe_load(
-        """
-    id: ocd-organization/00000000-1111-2222-3333-444455556666
-    name: Finance
-    parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-    classification: committee
-    founding_date: '2007-01-01'
-    """
-    )
-    created, updated = load_org(data)
-    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    created_at, updated_at = o.created_at, o.updated_at
-
-    # ensure no change means no change
-    created, updated = load_org(data)
-    assert created is False
-    assert updated is False
-    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    assert o.created_at == created_at
-    assert o.updated_at == updated_at
-
-    # ensure extra changes got captured
-    data["founding_date"] = "2008-01-01"
-    created, updated = load_org(data)
-    assert created is False
-    assert updated is True
-    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    assert o.updated_at > updated_at
-    assert o.founding_date == "2008-01-01"
-
-
-@pytest.mark.django_db
-def test_organization_memberships():
-    data = yaml.safe_load(
-        """
-    id: ocd-organization/00000000-1111-2222-3333-444455556666
-    name: Finance
-    parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-    classification: committee
-    founding_date: '2007-01-01'
-    memberships:
-        - id: 123
-          name: Jane Smith
-        - name: Noah Idy
-    """
-    )
-    Person.objects.create(id="123", name="Jane Smith")
-    created, updated = load_org(data)
-    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    assert o.memberships.count() == 2
-
-    data["memberships"].append({"name": "Another One", "role": "Chairman"})
-    created, updated = load_org(data)
-    assert created is False
-    assert updated is True
-    assert o.memberships.count() == 3
-    assert o.memberships.filter(role="Chairman")[0].person_name == "Another One"
-
-    data["memberships"] = []
-    created, updated = load_org(data)
-    assert created is False
-    assert updated is True
-    assert o.memberships.count() == 0
-
-
-@pytest.mark.django_db
-def test_org_person_membership_interaction():
-    # this test ensure that committee memberships don't mess up person loading
-    person_data = {"id": "123", "name": "Jane Smith"}
-    com_data = yaml.safe_load(
-        """
-    id: ocd-organization/00000000-1111-2222-3333-444455556666
-    name: Finance
-    parent: lower
-    jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-    classification: committee
-    founding_date: '2007-01-01'
-    memberships:
-        - id: 123
-          name: Jane Smith
-    """
-    )
-    load_person(person_data)
-    load_org(com_data)
-    o = Organization.objects.get(pk=EXAMPLE_ORG_ID)
-    assert o.memberships.count() == 1
-
-    # re-import person, make sure it doesn't count as an update and that the membership persists
-    #  (this corresponds to the use of read_manager in update_subobjects)
-    created, updated = load_person(person_data)
-    assert created is False
-    assert updated is False
-    assert o.memberships.count() == 1

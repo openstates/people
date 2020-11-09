@@ -7,7 +7,7 @@ import yaml
 import yamlordereddictloader
 from collections import defaultdict
 from yaml.representer import Representer
-import openstates_metadata as metadata
+from openstates import metadata
 
 # set up defaultdict representation
 yaml.add_representer(defaultdict, Representer.represent_dict)

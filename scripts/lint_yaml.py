@@ -5,7 +5,7 @@ import sys
 import datetime
 import glob
 import click
-import openstates_metadata as metadata
+from openstates import metadata
 from enum import Enum, auto
 from utils import (
     get_data_dir,
@@ -128,7 +128,6 @@ CONTACT_DETAILS = NestedList(
     {
         "note": [Enum("District Office", "Capitol Office", "Primary Office"), Required],
         "address": [is_string],
-        "email": [is_string],
         "voice": [is_phone],
         "fax": [is_phone],
     }
@@ -159,7 +158,13 @@ def is_role(role):
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
-    elif role_type in ("governor", "lt_governor", "mayor"):
+    elif role_type in (
+        "governor",
+        "lt_governor",
+        "mayor",
+        "chief election officer",
+        "secretary of state",
+    ):
         return validate_obj(role, EXECUTIVE_ROLE_FIELDS)
     else:
         return ["invalid type"]
@@ -175,8 +180,6 @@ ORGANIZATION_FIELDS = {
     "jurisdiction": [is_ocd_jurisdiction, Required],
     "parent": [is_valid_parent, Required],
     "classification": [is_string, Required],  # TODO: tighten this
-    "founding_date": [is_fuzzy_date],
-    "dissolution_date": [is_fuzzy_date],
     "memberships": NestedList(
         {
             "id": [is_ocd_person],
@@ -197,6 +200,7 @@ PERSON_FIELDS = {
     "given_name": [is_string],
     "family_name": [is_string],
     "middle_name": [is_string],
+    "email": [is_string],
     "suffix": [is_string],
     "gender": [is_string],
     "summary": [is_multiline_string],
@@ -299,6 +303,19 @@ def validate_roles(person, roles_key, retired=False):
     return []
 
 
+def validate_offices(person):
+    errors = []
+    contact_details = person.get("contact_details", [])
+    type_counter = Counter()
+    for office in contact_details:
+        type_counter[office["note"]] += 1
+    # if type_counter["District Office"] > 1:
+    #     errors.append("Multiple district offices.")
+    if type_counter["Capitol Office"] > 1:
+        errors.append("Multiple capitol offices, condense to one.")
+    return errors
+
+
 def validate_jurisdictions(person, municipalities):
     errors = []
     for role in person.get("roles", []):
@@ -390,12 +407,6 @@ class Validator:
         self.warnings = defaultdict(list)
         self.person_count = 0
         self.retired_count = 0
-        self.org_count = 0
-        self.missing_person_id = 0
-        self.missing_person_id_percent = 0
-        self.role_types = defaultdict(int)
-        self.parent_types = defaultdict(int)
-        self.person_mapping = {}
         self.parties = Counter()
         self.contact_counts = Counter()
         self.id_counts = Counter()
@@ -422,6 +433,10 @@ class Validator:
         )
         if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
             self.errors[filename].extend(validate_roles(person, "party"))
+
+        self.errors[filename].extend(validate_offices(person))
+
+        # active party validation
         active_parties = []
         for party in person.get("party", []):
             if party["name"] not in self.valid_parties:
@@ -437,9 +452,9 @@ class Validator:
                 self.warnings[filename].append(
                     f"multiple active party memberships {active_parties}"
                 )
+
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
-        self.person_mapping[person["id"]] = person["name"]
         if person_type == PersonType.RETIRED:
             self.retired_count += 1
             self.errors[filename].extend(self.validate_old_district_names(person))
@@ -456,21 +471,6 @@ class Validator:
             ):
                 errors.append(f"unknown district name: {role['type']} {role['district']}")
         return errors
-
-    def validate_org(self, org, filename):
-        self.errors[filename] = validate_obj(org, ORGANIZATION_FIELDS)
-        uid = org["id"].split("/")[1]
-        if uid not in filename:
-            self.errors[filename].append(f"id piece {uid} not in filename")
-        for m in org["memberships"]:
-            if not m.get("id"):
-                continue
-            if m["id"] not in self.person_mapping:
-                self.errors[filename].append(f'invalid person ID {m["id"]}')
-            elif self.person_mapping[m["id"]] != m["name"]:
-                name = self.person_mapping[m["id"]]
-                self.warnings[filename].append(f'ID {m["id"]} refers to {name}, not {m["name"]}')
-        self.summarize_org(org)
 
     def check_https_url(self, url):
         if url and url.startswith("http://") and not url.startswith(self.http_whitelist):
@@ -526,20 +526,6 @@ class Validator:
             self.id_counts[id["scheme"]] += 1
             self.duplicate_values[id["scheme"]][id["identifier"]].append(person)
 
-    def summarize_org(self, org):
-        self.org_count += 1
-
-        if org["parent"].startswith("ocd-organization"):
-            self.parent_types["subcommittee of " + org["parent"]] += 1
-        else:
-            self.parent_types[org["parent"]] += 1
-
-        for m in org["memberships"]:
-            if not m.get("id"):
-                self.missing_person_id += 1
-            if role_is_active(m):
-                self.role_types[m.get("role", "member")] += 1
-
     def check_duplicates(self):
         """
         duplicates should already be stored in self.duplicate_values
@@ -585,8 +571,7 @@ class Validator:
 
     def print_summary(self):  # pragma: no cover
         click.secho(
-            f"processed {self.person_count} active people, {self.retired_count} retired & "
-            f"{self.org_count} organizations",
+            f"processed {self.person_count} active people, {self.retired_count} retired",
             bold=True,
         )
         for role_type in self.active_legislators:
@@ -616,38 +601,12 @@ class Validator:
             else:
                 click.secho(name + " - none", bold=True)
 
-        click.secho("Committees", bold=True)
-        for parent, count in self.parent_types.items():
-            click.secho(f"{count:4d} {parent}")
-        for role, count in self.role_types.items():
-            click.secho(f"{count:4d} {role} roles")
-
-        # check committee role IDs
-        total_roles = sum(self.role_types.values())
-        if total_roles:
-            self.missing_person_id_percent = self.missing_person_id / total_roles * 100
-        if total_roles:
-            percent = self.missing_person_id / total_roles * 100
-            if percent < 10:
-                color = "green"
-            elif percent < 34:
-                color = "yellow"
-            else:
-                color = "red"
-            click.secho(
-                "{:4d} roles missing ID {:.1f}%".format(
-                    self.missing_person_id, self.missing_person_id_percent
-                ),
-                fg=color,
-            )
-
 
 def process_dir(abbr, verbose, summary):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
-    org_filenames = glob.glob(os.path.join(get_data_dir(abbr), "organizations", "*.yml"))
 
     settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
     with open(settings_file) as f:
@@ -668,12 +627,6 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
             with open(filename) as f:
                 person = load_yaml(f)
                 validator.validate_person(person, print_filename, person_type)
-
-    for filename in org_filenames:
-        print_filename = os.path.basename(filename)
-        with open(filename) as f:
-            org = load_yaml(f)
-            validator.validate_org(org, print_filename)
 
     error_count = validator.print_validation_report(verbose)
 

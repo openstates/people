@@ -7,6 +7,7 @@
 * middle_name: Middle name or initial.
 * suffix: Name Suffix.
 * gender: Male/Female/Other
+* email: Email address.
 * biography: Official biography text.
 * birth_date: Birth date in YYYY-MM-DD format.
 * death_date: Death date in YYYY-MM-DD format.
@@ -50,8 +51,6 @@
 * classification: Classification, can be:
     * committee
     **required**
-* founding_date: Creation date in YYYY-MM-DD format.
-* dissolution_date: Dissolution date in YYYY-MM-DD format.
 * memberships: list of memberships, each may have the following:
     * id - ocd-person ID if known
     * name - name of person **required**
@@ -67,7 +66,6 @@ These sections can have a list of objects, each with the following fields availa
 * contact_details: 
     * note: "District Office" or "Capitol Office"  **required**
     * address: Mailing address.
-    * email: Email address.
     * voice: Phone number used for voice calls.
     * fax: Fax number.
 
