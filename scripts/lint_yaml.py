@@ -307,8 +307,19 @@ def validate_offices(person):
     errors = []
     contact_details = person.get("contact_details", [])
     type_counter = Counter()
+    seen_values = {}
     for office in contact_details:
         type_counter[office["note"]] += 1
+        for key, value in office.items():
+            if key == "note":
+                continue
+            # reverse lookup to see if we've used this phone number/etc. before
+            location_str = f"{office['note']} {key}"
+            if value in seen_values:
+                errors.append(
+                    f"Value '{value}' used multiple times: {seen_values[value]} and {location_str}"
+                )
+            seen_values[value] = location_str
     # if type_counter["District Office"] > 1:
     #     errors.append("Multiple district offices.")
     if type_counter["Capitol Office"] > 1:
@@ -602,7 +613,7 @@ class Validator:
                 click.secho(name + " - none", bold=True)
 
 
-def process_dir(abbr, verbose, summary):  # pragma: no cover
+def process_dir(abbr, verbose, summary, municipal):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
@@ -616,12 +627,16 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
     except BadVacancy:
         sys.exit(-1)
 
-    for person_type, filenames in (
+    all_filenames = [
         (PersonType.LEGISLATIVE, legislative_filenames),
         (PersonType.RETIRED, retired_filenames),
-        (PersonType.MUNICIPAL, municipality_filenames),
         (PersonType.EXECUTIVE, executive_filenames),
-    ):
+    ]
+
+    if municipal:
+        all_filenames.append((PersonType.MUNICIPAL, municipality_filenames))
+
+    for person_type, filenames in all_filenames:
         for filename in filenames:
             print_filename = os.path.basename(filename)
             with open(filename) as f:
@@ -642,7 +657,10 @@ def process_dir(abbr, verbose, summary):  # pragma: no cover
 @click.option(
     "--summary/--no-summary", default=False, help="Print summary after validation errors."
 )
-def lint(abbreviations, verbose, summary):
+@click.option(
+    "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
+)
+def lint(abbreviations, verbose, summary, municipal):
     """
         Lint YAML files, optionally also providing a summary of state's data.
 
@@ -655,7 +673,7 @@ def lint(abbreviations, verbose, summary):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, summary)
+        error_count += process_dir(abbr, verbose, summary, municipal)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
