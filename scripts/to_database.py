@@ -277,10 +277,10 @@ def load_directory(files, purge):
         created, updated = load_person(data)
 
         if created:
-            click.secho(f"created {type} from {filename}", fg="cyan", bold=True)
+            click.secho(f"created person from {filename}", fg="cyan", bold=True)
             created_count += 1
         elif updated:
-            click.secho(f"updated {type} from {filename}", fg="cyan")
+            click.secho(f"updated person from {filename}", fg="cyan")
             updated_count += 1
 
     missing_ids = existing_ids - ids
@@ -316,7 +316,7 @@ def load_directory(files, purge):
         Person.objects.filter(id__in=missing_ids).delete()
 
     click.secho(
-        f"processed {len(ids)} {type} files, {created_count} created, " f"{updated_count} updated",
+        f"processed {len(ids)} person files, {created_count} created, " f"{updated_count} updated",
         fg="green",
     )
 
