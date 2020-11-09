@@ -307,8 +307,19 @@ def validate_offices(person):
     errors = []
     contact_details = person.get("contact_details", [])
     type_counter = Counter()
+    seen_values = {}
     for office in contact_details:
         type_counter[office["note"]] += 1
+        for key, value in office.items():
+            if key == "note":
+                continue
+            # reverse lookup to see if we've used this phone number/etc. before
+            location_str = f"{office['note']} {key}"
+            if value in seen_values:
+                errors.append(
+                    f"Value '{value}' used multiple times: {seen_values[value]} and {location_str}"
+                )
+            seen_values[value] = location_str
     # if type_counter["District Office"] > 1:
     #     errors.append("Multiple district offices.")
     if type_counter["Capitol Office"] > 1:
