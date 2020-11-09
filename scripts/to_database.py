@@ -264,7 +264,7 @@ def load_directory(files, purge):
         with open(filename) as f:
             data = load_yaml(f)
             all_data.append((data, filename))
-            if data["roles"]:
+            if data.get("roles"):
                 all_jurisdictions.append(data["roles"][0]["jurisdiction"])
 
     existing_ids = set(
