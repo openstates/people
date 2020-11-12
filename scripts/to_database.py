@@ -9,7 +9,6 @@ from openstates import metadata
 from openstates.utils.django import init_django
 from utils import (
     get_data_dir,
-    get_jurisdiction_id,
     get_all_abbreviations,
     load_yaml,
     legacy_districts,
@@ -251,40 +250,38 @@ def _echo_org_status(org, created, updated):
         click.secho(f"{org} updated", fg="yellow")
 
 
-def load_directory(files, type, jurisdiction_id, purge):
+def load_directory(files, purge):
+    from openstates.data.models import Person, BillSponsorship, PersonVote
+
     ids = set()
     merged = {}
     created_count = 0
     updated_count = 0
 
-    if type == "person":
-        from openstates.data.models import Person, BillSponsorship, PersonVote
-
-        existing_ids = set(
-            Person.objects.filter(
-                memberships__organization__jurisdiction_id=jurisdiction_id
-            ).values_list("id", flat=True)
-        )
-        ModelCls = Person
-        load_func = load_person
-    else:
-        raise ValueError(type)
-
     all_data = []
+    all_jurisdictions = []
     for filename in files:
         with open(filename) as f:
             data = load_yaml(f)
             all_data.append((data, filename))
+            if data.get("roles"):
+                all_jurisdictions.append(data["roles"][0]["jurisdiction"])
+
+    existing_ids = set(
+        Person.objects.filter(
+            memberships__organization__jurisdiction_id__in=all_jurisdictions
+        ).values_list("id", flat=True)
+    )
 
     for data, filename in all_data:
         ids.add(data["id"])
-        created, updated = load_func(data)
+        created, updated = load_person(data)
 
         if created:
-            click.secho(f"created {type} from {filename}", fg="cyan", bold=True)
+            click.secho(f"created person from {filename}", fg="cyan", bold=True)
             created_count += 1
         elif updated:
-            click.secho(f"updated {type} from {filename}", fg="cyan")
+            click.secho(f"updated person from {filename}", fg="cyan")
             updated_count += 1
 
     missing_ids = existing_ids - ids
@@ -292,11 +289,11 @@ def load_directory(files, type, jurisdiction_id, purge):
     # check if missing ids are in need of a merge
     for missing_id in missing_ids:
         try:
-            found = ModelCls.objects.get(
+            found = Person.objects.get(
                 identifiers__identifier=missing_id, identifiers__scheme="openstates"
             )
             merged[missing_id] = found.id
-        except ModelCls.DoesNotExist:
+        except Person.DoesNotExist:
             pass
 
     if merged:
@@ -305,22 +302,22 @@ def load_directory(files, type, jurisdiction_id, purge):
             click.secho(f"   {old} => {new}", fg="yellow")
             BillSponsorship.objects.filter(person_id=old).update(person_id=new)
             PersonVote.objects.filter(voter_id=old).update(voter_id=new)
-            ModelCls.objects.filter(id=old).delete()
+            Person.objects.filter(id=old).delete()
             missing_ids.remove(old)
 
     # ids that are still missing would need to be purged
     if missing_ids and not purge:
         click.secho(f"{len(missing_ids)} went missing, run with --purge to remove", fg="red")
         for id in missing_ids:
-            mobj = ModelCls.objects.get(pk=id)
+            mobj = Person.objects.get(pk=id)
             click.secho(f"  {id}: {mobj}")
         raise CancelTransaction()
     elif missing_ids and purge:
         click.secho(f"{len(missing_ids)} purged", fg="yellow")
-        ModelCls.objects.filter(id__in=missing_ids).delete()
+        Person.objects.filter(id__in=missing_ids).delete()
 
     click.secho(
-        f"processed {len(ids)} {type} files, {created_count} created, " f"{updated_count} updated",
+        f"processed {len(ids)} person files, {created_count} created, " f"{updated_count} updated",
         fg="green",
     )
 
@@ -379,7 +376,6 @@ def to_database(abbreviations, purge, safe):
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
-        jurisdiction_id = get_jurisdiction_id(abbr)
         municipalities = load_municipalities(abbr)
 
         with transaction.atomic():
@@ -397,7 +393,7 @@ def to_database(abbreviations, purge, safe):
 
         try:
             with transaction.atomic():
-                load_directory(person_files, "person", jurisdiction_id, purge=purge)
+                load_directory(person_files, purge=purge)
                 if safe:
                     click.secho("ran in safe mode, no changes were made", fg="magenta")
                     raise CancelTransaction()
