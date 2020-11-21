@@ -32,8 +32,8 @@ jobs:
     - name: install dependencies
       run: poetry install
       # if: steps.cache.outputs.cache-hit != 'true'
-     
+
     - name: lint yaml
-      run: poetry run ./scripts/lint_yaml.py
-      env: 
+      run: poetry --ansi run ./scripts/lint_yaml.py
+      env:
         PYTHONPATH: scripts
