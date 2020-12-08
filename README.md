@@ -10,7 +10,7 @@ This repository contains YAML files with all the information on given individual
 * [People Issues](https://github.com/openstates/issues/issues?q=is%3Aissue+is%3Aopen+label%3Adata%3Apeople)
 * [Contributor's Guide](https://docs.openstates.org/en/latest/contributing/getting-started.html)
 * [Documentation](https://docs.openstates.org/en/latest/contributing/people.html)
-* [Open States Discourse](https://discourse.openstates.org)
+* [Open States Discussions](https://github.com/openstates/issues/discussions)
 * [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
 
 ## Running Tests
