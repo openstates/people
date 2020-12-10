@@ -25,6 +25,8 @@ pytest = "^5.1"
 pytest-django = "^3.5"
 pytest-cov = "^2.7"
 coveralls = "^1.8"
+black = {version = "^20.8b1", allow-prereleases = true}
+autopep8 = "^1.5.4"
 
 [tool.black]
 line-length = 99
