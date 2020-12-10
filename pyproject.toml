@@ -5,7 +5,7 @@ description = ""
 authors = ["James Turk <james@openstates.org>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 yamlordereddictloader = "^0.4.0"
 click = "^7.0"
 Django = "^2.2"
@@ -16,6 +16,8 @@ scrapelib = "^1.2"
 lxml = "^4.4"
 openstates = "^5.3.0"
 cssselect = "^1.1.0"
+airtable-python-wrapper = "0.15.1"
+freezegun = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"

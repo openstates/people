@@ -1,14 +1,22 @@
 #!/usr/bin/env python
-import re
-import os
-import sys
+from dataclasses import asdict, dataclass, field
 import datetime
 import glob
+import os
+import re
+import sys
+from typing import Dict, List, Optional
+
 import click
 from openstates import metadata
 from enum import Enum, auto
+from retire import (
+    retire_person as retire_person_data,
+    move_file as retire_person_file
+)
 from utils import (
     get_data_dir,
+    get_data_root,
     role_is_active,
     get_all_abbreviations,
     load_yaml,
@@ -389,9 +397,56 @@ def compare_districts(expected, actual):
                 errors.append(f"extra legislator for {chamber} {district}:\n\t" + people)
     return errors
 
+NON_ENGLISH_CHARS = re.compile("[^a-zA-Z]+")
+def names_consistent(person: dict) -> bool:
+    """
+    The intent is to try to detect if a person's 'family_name'
+    matches their (full) 'name'.
+
+    Generally errs on the side of considering names consistent
+    if they can be matched at all.
+
+    Overall algorithm is this:
+
+    - if NO family_name, then consider names consistent
+
+    - break up 'family_name' and 'name' into tokens, 
+        and if any pair matches, then consider names consistent
+
+    - try to ignore non-english characters
+    """
+    family_names = person.get("family_name", "").lower()
+    if not (family_names):
+        return True  # some person records just have 'name'
+    names = [
+        NON_ENGLISH_CHARS.sub(".", n)
+        for n in person.get("name", "").lower().split()
+    ]
+    for fn in family_names.split(" "):
+        fn = NON_ENGLISH_CHARS.sub(".", fn)
+        for n in names:
+            if re.match(f".*{fn}.*", n):
+                return True
+            if re.match(f".*{n}.*", fn):
+                return True
+    return False
+
+
+@dataclass
+class ValidationResult:
+    errors: List[str] = field(default_factory=list)
+    errors_by_filename: Dict[str, List[str]] = field(default_factory=dict)
+    warnings_by_filename: Dict[str, List[str]] = field(default_factory=dict)
+
+    def error_count(self) -> int:
+        return len(self.errors) + len(self.errors_by_filename)
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
 
 class Validator:
-    def __init__(self, abbr, settings):
+    def __init__(self, abbr, settings, data_root=''):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
@@ -402,7 +457,10 @@ class Validator:
         # field name -> value -> filename
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
-        self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
+        self.municipalities = [
+            m["id"] 
+            for m in load_municipalities(abbr=abbr, data_root=data_root)
+        ]
         for m in self.municipalities:
             if not JURISDICTION_RE.match(m):
                 raise ValueError(f"invalid municipality id {m}")
@@ -412,6 +470,8 @@ class Validator:
         uid = person["id"].split("/")[1]
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
+        if not names_consistent(person):
+            self.errors[filename].append(f"inconsistent name")
         self.errors[filename].extend(validate_jurisdictions(person, self.municipalities))
         self.errors[filename].extend(
             validate_roles(person, "roles", person_type == PersonType.RETIRED, date=date)
@@ -458,6 +518,7 @@ class Validator:
                     district = role.get("district")
                     break
             self.active_legislators[role_type][district].append(filename)
+
 
     def validate_old_district_names(self, person):
         errors = []
@@ -506,44 +567,77 @@ class Validator:
                     errors.append(f'duplicate {key}: "{value}" {instance_str}')
         return errors
 
-    def print_validation_report(self, verbose):  # pragma: no cover
-        error_count = 0
-
+    def print_validation_report(
+        self, 
+        verbose: int, 
+        result_collector: Optional[ValidationResult] = None
+    ) -> ValidationResult:  # pragma: no cover
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
             if errors or warnings:
                 click.echo(fn)
                 for err in errors:
                     click.secho(" " + err, fg="red")
-                    error_count += 1
                 for warning in warnings:
                     click.secho(" " + warning, fg="yellow")
             if not errors and verbose > 0:
                 click.secho(fn + " OK!", fg="green")
 
+        errors = []
         for err in self.check_duplicates():
+            errors.append(err)
             click.secho(err, fg="red")
-            error_count += 1
 
-        errors = compare_districts(self.expected, self.active_legislators)
-        for err in errors:
+        for err in compare_districts(self.expected, self.active_legislators):
+            errors.append(err)
             click.secho(err, fg="red")
-            error_count += 1
 
-        return error_count
+        result_collector = result_collector or ValidationResult()
+        result_collector.errors.extend(errors)
+        result_collector.errors_by_filename.update({
+            fn: msgs for fn, msgs in self.errors.items() if msgs
+        })
+        result_collector.warnings_by_filename.update({
+            fn: msgs for fn, msgs in self.warnings.items() if msgs
+        })
+        return result_collector
 
 
-def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
-    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
-    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
-    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
-    retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
+def process_dir(
+    abbr: str,
+    data_root='', 
+    date=None,
+    municipal = True,
+    verbose = 0,
+    retire_inactive = False,
+    result_collector: Optional[ValidationResult] = None
+) -> ValidationResult:  # pragma: no cover
+    """
+    Run linting on one directory at the level of an abbr (typically a state)
+
+    Args:
+        abbr (str): the state (or other region)
+        data_root (str)[Optional]: root of people data, if left empty then `./data` folder in local clone
+        date: (str)[Optional]: force a specific validation date
+        municipal (bool)[Optional]: True to include municipalities in linting (default True)
+        verbose (int)[Optional]: count of verbosity level (0 = None, 1 = on, 2 = more, etc)
+        retire_inactive (bool)[Optional]: if True, try to fix "no active role" errors by retiring persons with no active role
+        result_collection: (ValidationResult)[Optional] validation errors and warnings collected here. Will create and return an instance if none passed.
+
+    Returns:
+        (ValidationResult) has errors and warnings
+    """
+    data_root = data_root or get_data_root()
+    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr, data_root=data_root), "legislature", "*.yml"))
+    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr, data_root=data_root), "executive", "*.yml"))
+    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr, data_root=data_root), "municipalities", "*.yml"))
+    retired_filenames = glob.glob(os.path.join(get_data_dir(abbr, data_root=data_root), "retired", "*.yml"))
 
     settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
     with open(settings_file) as f:
         settings = load_yaml(f)
     try:
-        validator = Validator(abbr, settings)
+        validator = Validator(abbr, settings, data_root=data_root)
     except BadVacancy:
         sys.exit(-1)
 
@@ -556,28 +650,49 @@ def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
     if municipal:
         all_filenames.append((PersonType.MUNICIPAL, municipality_filenames))
 
+    to_retire = []
+    ERROR_NO_ACTIVE_ROLES = "no active roles"
     for person_type, filenames in all_filenames:
         for filename in filenames:
             print_filename = os.path.basename(filename)
             with open(filename) as f:
                 person = load_yaml(f)
                 validator.validate_person(person, print_filename, person_type, date)
-
-    error_count = validator.print_validation_report(verbose)
-
-    return error_count
+                if retire_inactive and ERROR_NO_ACTIVE_ROLES in validator.errors[print_filename]:
+                    to_retire.append((person, filename, print_filename))
+    if to_retire:
+        # end_date is required for retire,
+        # but in these cases will be unused
+        # because we're retiring persons with no active role
+        end_date = datetime.date.today().isoformat()
+        for person_data, person_file, person_error_key in to_retire:
+            retire_person_data(person_data, end_date, ERROR_NO_ACTIVE_ROLES)
+            retire_person_file(person_file)
+            validator.errors[person_error_key] = [
+                err
+                for err in validator.errors[person_error_key]
+                if err != ERROR_NO_ACTIVE_ROLES
+            ]
+    return validator.print_validation_report(verbose, result_collector=result_collector)
 
 
 @click.command()
 @click.argument("abbreviations", nargs=-1)
-@click.option("-v", "--verbose", count=True)
 @click.option(
-    "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
+    "--data",
+    default=lambda: os.path.abspath(get_data_root())
 )
 @click.option(
     "--date", type=str, default=None, help="Lint roles using a certain date instead of today.",
 )
-def lint(abbreviations, verbose, municipal, date):
+@click.option(
+    "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
+)
+@click.option(
+    "--retire/--no-retire", default=False, help="On encounter persons with 'no active roles' errors, try to retire those persons rather than fail"
+)
+@click.option("-v", "--verbose", count=True)
+def lint(data, abbreviations, date, retire, municipal, verbose):
     """
         Lint YAML files.
 
@@ -586,12 +701,21 @@ def lint(abbreviations, verbose, municipal, date):
     error_count = 0
 
     if not abbreviations:
-        abbreviations = get_all_abbreviations()
+        abbreviations = get_all_abbreviations(data_root=data)
 
+    result_collector = ValidationResult()
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, municipal, date)
-
+        process_dir(
+            abbr, 
+            data_root=data,
+            date=date,
+            municipal=municipal, 
+            verbose=verbose,
+            retire_inactive=retire,
+            result_collector=result_collector
+        )
+    error_count = result_collector.error_count()
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
         sys.exit(99)

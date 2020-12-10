@@ -3,9 +3,11 @@ import os
 import glob
 import uuid
 import datetime
+from pathlib import Path
+from typing import List
 import yaml
 import yamlordereddictloader
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 from yaml.representer import Representer
 from openstates import metadata
 
@@ -54,12 +56,16 @@ def ocd_uuid(type):
     return "ocd-{}/{}".format(type, uuid.uuid4())
 
 
-def get_data_dir(abbr):
-    return os.path.join(os.path.dirname(__file__), "../data", abbr)
+def get_data_root():
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "../data"))
 
 
-def get_all_abbreviations():
-    return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../data")))
+def get_data_dir(abbr: str, data_root='') -> str:
+    return os.path.join(data_root or get_data_root(), abbr)
+
+
+def get_all_abbreviations(data_root=''):
+    return sorted(os.listdir(data_root or get_data_root()))
 
 
 def get_jurisdiction_id(abbr):
@@ -68,6 +74,10 @@ def get_jurisdiction_id(abbr):
 
 def load_yaml(file_obj):
     return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
+
+
+def load_yaml_path(p: str) -> OrderedDict:
+    return load_yaml(Path(p).read_text())
 
 
 def iter_objects(abbr, objtype):
@@ -93,12 +103,20 @@ def get_new_filename(obj):
     name = re.sub(r"[^a-zA-Z-]", "", name)
     return f"{name}-{id}.yml"
 
+def person_filepath(person: dict, abbr: str, objtype: str, data_root='') -> str:
+    return os.path.abspath(
+        os.path.join(
+            get_data_dir(abbr, data_root=data_root),
+            objtype,
+            get_new_filename(person)
+        )
+    )
 
 def role_is_active(role, date=None):
-    if date is None:
+    if not date:
         date = datetime.datetime.utcnow().date().isoformat()
-    return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
-        role.get("start_date") is None or str(role.get("start_date")) <= date
+    return (not role.get("end_date") or str(role.get("end_date")) > date) and (
+        not role.get("start_date") or str(role.get("start_date")) <= date
     )
 
 
@@ -123,9 +141,14 @@ def legacy_districts(**kwargs):
     return legacy_districts
 
 
-def load_municipalities(abbr):
+def load_municipalities(abbr: str, data_root='') -> List[dict]:
     try:
-        with open(os.path.join(get_data_dir(abbr), "municipalities.yml")) as f:
+        with open(
+            os.path.join(
+                get_data_dir(abbr, data_root=data_root),
+                "municipalities.yml"
+            )
+        ) as f:
             return load_yaml(f)
     except FileNotFoundError:
         return []
