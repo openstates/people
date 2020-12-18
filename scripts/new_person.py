@@ -5,7 +5,9 @@ from collections import OrderedDict
 from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
 
 
-def create_person(fname, lname, name, state, district, party, rtype, url, image, start_date):
+def create_person(
+    fname, lname, name, state, district, party, rtype, url, image, email, start_date
+):
     role = {
         "type": rtype,
         "district": district,
@@ -30,6 +32,7 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
             "given_name": fname,
             "family_name": lname,
             "image": image,
+            "email": email,
             "party": [{"name": party}],
             "roles": [role],
             "links": [{"url": url}],
@@ -51,8 +54,9 @@ def create_person(fname, lname, name, state, district, party, rtype, url, image,
 @click.option("--rtype", prompt="Role Type (upper|lower|mayor)", help="Role Type")
 @click.option("--url", prompt="URL", help="Source URL")
 @click.option("--image", prompt="Image URL", help="Image URL")
+@click.option("--email", prompt="Email", help="Email")
 @click.option("--start-date", prompt="Start Date", help="Start Date YYYY-MM-DD")
-def new_person(fname, lname, name, state, district, party, rtype, url, image, start_date):
+def new_person(fname, lname, name, state, district, party, rtype, url, image, email, start_date):
     """
     Create a new person record.
 
@@ -70,6 +74,7 @@ def new_person(fname, lname, name, state, district, party, rtype, url, image, st
         rtype=rtype,
         url=url,
         image=image,
+        email=email,
         start_date=start_date,
     )
 
