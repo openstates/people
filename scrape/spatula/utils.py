@@ -39,7 +39,7 @@ class Selector:
         return items
 
     def match_one(self, element):
-        return str(self.match(element, num_items=1)[0])
+        return self.match(element, num_items=1)[0]
 
 
 class XPath(Selector):
@@ -69,6 +69,18 @@ class SimilarLink(Selector):
 
     def get_display(self):
         return f"SimilarLink({self.pattern})"
+
+
+class CSS(Selector):
+    def __init__(self, css_selector, *, min_items=1, max_items=None, num_items=None):
+        super().__init__(min_items=min_items, max_items=max_items, num_items=num_items)
+        self.css_selector = css_selector
+
+    def get_items(self, element):
+        yield from element.cssselect(self.css_selector)
+
+    def get_display(self):
+        return f"CSS({self.css_selector})"
 
 
 class NoSuchScraper(Exception):
