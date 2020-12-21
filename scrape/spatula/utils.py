@@ -21,17 +21,17 @@ class Selector:
         min_items = self.min_items if min_items is None else min_items
 
         if num_items is not None and len(items) != num_items:
-            raise XPathError(
+            raise SelectorError(
                 f"{self.get_display()} on {elem_to_str(element)} got {len(items)}, "
                 f"expected {num_items}"
             )
         if min_items is not None and len(items) < min_items:
-            raise XPathError(
+            raise SelectorError(
                 f"{self.get_display()} on {elem_to_str(element)} got {len(items)}, "
                 f"expected at least {min_items}"
             )
         if max_items is not None and len(items) > max_items:
-            raise XPathError(
+            raise SelectorError(
                 f"{self.get_display()} on {elem_to_str(element)} got {len(items)}, "
                 f"expected at most {max_items}"
             )
@@ -60,9 +60,12 @@ class SimilarLink(Selector):
         self.pattern = re.compile(pattern)
 
     def get_items(self, element):
+        seen = set()
         for element in element.xpath("//a"):
-            if self.pattern.match(element.get("href", "")):
+            href = element.get("href")
+            if href and href not in seen and self.pattern.match(element.get("href", "")):
                 yield element
+                seen.add(href)
 
     def get_display(self):
         return f"SimilarLink({self.pattern})"
@@ -72,7 +75,7 @@ class NoSuchScraper(Exception):
     pass
 
 
-class XPathError(ValueError):
+class SelectorError(ValueError):
     pass
 
 

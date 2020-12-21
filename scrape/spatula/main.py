@@ -44,7 +44,7 @@ def list(class_name):
     obj = Cls()
     s.fetch_page_data(obj)
     for i, item in enumerate(obj.get_data()):
-        print(f"{i}:", item.get("href"))
+        print(f"{i}:", item)
 
 
 if __name__ == "__main__":
