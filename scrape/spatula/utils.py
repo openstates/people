@@ -1,7 +1,6 @@
-import importlib
+import re
 import scrapelib
 import lxml.html
-import click
 
 
 def elem_to_str(item, inside=False):
@@ -9,33 +8,31 @@ def elem_to_str(item, inside=False):
     return f"<{item.tag} {attribs}> @ line {item.sourceline}"
 
 
-class XPath:
-    def __init__(self, xpath, *, min_items=1, max_items=None, num_items=None):
-        self.xpath = xpath
+class Selector:
+    def __init__(self, *, min_items=1, max_items=None, num_items=None):
         self.min_items = min_items
         self.max_items = max_items
         self.num_items = num_items
 
     def match(self, element, *, min_items=None, max_items=None, num_items=None):
-        items = element.xpath(self.xpath)
-
+        items = list(self.get_items(element))
         num_items = self.num_items if num_items is None else num_items
         max_items = self.max_items if max_items is None else max_items
         min_items = self.min_items if min_items is None else min_items
 
         if num_items is not None and len(items) != num_items:
             raise XPathError(
-                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
+                f"{self.get_display()} on {elem_to_str(element)} got {len(items)}, "
                 f"expected {num_items}"
             )
         if min_items is not None and len(items) < min_items:
             raise XPathError(
-                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
+                f"{self.get_display()} on {elem_to_str(element)} got {len(items)}, "
                 f"expected at least {min_items}"
             )
         if max_items is not None and len(items) > max_items:
             raise XPathError(
-                f"{self.xpath} on {elem_to_str(element)} got {len(items)}, "
+                f"{self.get_display()} on {elem_to_str(element)} got {len(items)}, "
                 f"expected at most {max_items}"
             )
 
@@ -43,6 +40,32 @@ class XPath:
 
     def match_one(self, element):
         return str(self.match(element, num_items=1)[0])
+
+
+class XPath(Selector):
+    def __init__(self, xpath, *, min_items=1, max_items=None, num_items=None):
+        super().__init__(min_items=min_items, max_items=max_items, num_items=num_items)
+        self.xpath = xpath
+
+    def get_items(self, element):
+        yield from element.xpath(self.xpath)
+
+    def get_display(self):
+        return f"XPath({self.xpath})"
+
+
+class SimilarLink(Selector):
+    def __init__(self, pattern, *, min_items=1, max_items=None, num_items=None):
+        super().__init__(min_items=min_items, max_items=max_items, num_items=num_items)
+        self.pattern = re.compile(pattern)
+
+    def get_items(self, element):
+        for element in element.xpath("//a"):
+            if self.pattern.match(element.get("href", "")):
+                yield element
+
+    def get_display(self):
+        return f"SimilarLink({self.pattern})"
 
 
 class NoSuchScraper(Exception):
@@ -109,9 +132,9 @@ class Page:
         raise NotImplementedError()
 
 
-class HtmlPage:
+class HtmlPage(Page):
     def set_raw_data(self, raw_data):
-        self.raw_data = raw_data
+        super().set_raw_data(raw_data)
         self.root = lxml.html.fromstring(raw_data.content)
         self.root.make_links_absolute(self.url)
 
@@ -121,55 +144,18 @@ class HtmlListPage(HtmlPage):
     Simplification for HTML pages that get a list of items and process them.
 
     When overriding the class, instead of providing get_data, one must only provide
-    an xpath and a process_item function.
+    a selector and a process_item function.
     """
 
-    xpath = None
+    selector = None
 
     def get_data(self):
-        if not self.xpath:
-            raise NotImplementedError("must either provide xpath or override scrape")
-        items = self.xpath.match(self.root)
+        if not self.selector:
+            raise NotImplementedError("must either provide selector or override scrape")
+        items = self.selector.match(self.root)
         for item in items:
             item = self.process_item(item)
             yield item
 
     def process_item(self, item):
         return item
-
-
-def get_class(dotted_name):
-    mod_name, cls_name = dotted_name.rsplit(".", 1)
-    mod = importlib.import_module(mod_name)
-    return getattr(mod, cls_name)
-
-
-@click.group()
-def cli():
-    pass
-
-
-@cli.command()
-@click.argument("class_name")
-@click.argument("url")
-def sample(class_name, url):
-    Cls = get_class(class_name)
-    page = Cls(url)
-    s = Scraper()
-    s.fetch_page_data(page)
-    print(page.get_data())
-
-
-@cli.command()
-@click.argument("class_name")
-@click.option("--chamber", multiple=True, default=["upper", "lower"])
-@click.option("--session", default=None)
-def scrape(class_name, chamber, session):
-    Cls = get_class(class_name)
-    for ch in chamber:
-        for item in Cls().scrape(ch, session):
-            item.save("incoming/md/people")
-
-
-if __name__ == "__main__":
-    cli()
