@@ -5,9 +5,6 @@ class OKSenateList(HtmlListPage):
     selector = SimilarLink("https://oksenate.gov/senators/", num_items=48)
     url = "https://oksenate.gov/senators"
 
-    def __init__(self):
-        super().__init__(url="https://oksenate.gov/senators")
-
     def process_item(self, item):
         party, _, district, name = item.text_content().split(maxsplit=3)
         return {
@@ -22,9 +19,7 @@ class OKHouseList(HtmlListPage):
     selector = SimilarLink(
         r"https://www.okhouse.gov/Members/District.aspx\?District=", num_items=101
     )
-
-    def __init__(self):
-        super().__init__(url="https://www.okhouse.gov/Members/Default.aspx")
+    url = "https://www.okhouse.gov/Members/Default.aspx"
 
     def process_item(self, item):
         return {
@@ -64,4 +59,28 @@ class OKHouseDetail(HtmlPage):
             )
             data["address"] = "; ".join([ln.strip() for ln in capitol_address_div[:-1]])
             data["phone"] = capitol_address_div[-1].strip()
+        return data
+
+
+class OKSenateDetail(HtmlPage):
+    name_css = CSS(".field--name-title")
+    image_css = CSS(".bSenBio__media-btn")
+    district_css = CSS(".bDistrict h2")
+    address_css = CSS(".bSenBio__address p")
+    phone_css = CSS(".bSenBio__tel a")
+    contact_link_sel = SimilarLink(r"https://oksenate.gov/contact-senator\?sid=")
+
+    def get_data(self):
+        data = {
+            "name": self.name_css.match_one(self.root).text,
+            "image": self.image_css.match_one(self.root).get("href"),
+            "district": self.district_css.match_one(self.root).text.strip().split()[1],
+            "address": self.address_css.match_one(self.root).text,
+            "phone": self.phone_css.match_one(self.root).text,
+            "contact_url": self.contact_link_sel.match_one(self.root).get("href"),
+        }
+
+        for bio in CSS(".bSenBio__infoIt").match(self.root):
+            if "Party:" in bio.text_content():
+                data["party"] = bio.text_content().split(":")[1].strip()
         return data

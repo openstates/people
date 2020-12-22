@@ -164,6 +164,15 @@ class HtmlListPage(HtmlPage):
 
     selector = None
 
+    # common for a list page to only work on one URL, in which case it is more clear
+    # to set it as a property
+    def __init__(self, url=None):
+        """
+        a Page can be instantiated with a url & options (TBD) needed to fetch it
+        """
+        if url is not None:
+            self.url = url
+
     def get_data(self):
         if not self.selector:
             raise NotImplementedError("must either provide selector or override scrape")
