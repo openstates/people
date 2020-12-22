@@ -36,7 +36,7 @@ DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
 UUID_RE = re.compile(r"^ocd-\w+/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$")
 JURISDICTION_RE = re.compile(
-    r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/(place:[a-z_]+/)?government"
+    r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/((place|county):[a-z_]+/)?government"
 )
 LEGACY_OS_ID_RE = re.compile(r"[A-Z]{2}L\d{6}")
 
