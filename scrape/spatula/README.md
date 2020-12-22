@@ -101,7 +101,9 @@ By wrapping all of these in a new `Selector` interface as you can see in selecto
 While developing, the following commands are available (spatula is the stand-in name for the CLI entrypoint):
 
 `spatula test md.SenateRoster` - Will print a list of all data yielded from the SenateRoster page.
+
 `spatula test md.PersonDetail https://example.com/123` - Will print result of using PersonDetail scraper on given URL.
+
 `spatula run md.house_members_workflow` - Will run a defined 'Workflow' which is a configuration of an entrypoint.  Details TBD.
 
 
