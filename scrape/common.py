@@ -16,13 +16,12 @@ class ContactDetail:
     def __init__(self, note):
         self.note = note
         self.voice = None
-        self.email = None
         self.fax = None
         self.address = None
 
     def to_dict(self):
         d = {}
-        for key in ("voice", "email", "fax", "address"):
+        for key in ("voice", "fax", "address"):
             val = getattr(self, key)
             if val:
                 if key in ("voice", "fax"):
@@ -43,6 +42,7 @@ class Person:
         district,
         chamber,
         image=None,
+        email=None,
         given_name=None,
         family_name=None,
     ):
@@ -54,6 +54,7 @@ class Person:
         self.given_name = given_name
         self.family_name = family_name
         self.image = image
+        self.email = email
         self.links = []
         self.sources = []
         self.capitol_office = ContactDetail("Capitol Office")
@@ -83,6 +84,8 @@ class Person:
             d["family_name"] = self.family_name
         if self.image:
             d["image"] = self.image
+        if self.email:
+            d["email"] = self.email
 
         # contact details
         d["contact_details"] = []
