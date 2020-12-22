@@ -1,6 +1,6 @@
+from spatula.core import Workflow
 from spatula.pages import HtmlListPage, HtmlPage
 from spatula.selectors import SimilarLink, CSS
-from spatula.core import Workflow
 from common import Person
 
 
