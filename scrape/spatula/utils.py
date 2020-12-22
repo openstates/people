@@ -1,6 +1,8 @@
+import os
 import re
 import scrapelib
 import lxml.html
+from utils import dump_obj
 
 
 def elem_to_str(item, inside=False):
@@ -97,39 +99,6 @@ class Scraper(scrapelib.Scraper):
         data = self.get(page.url)
         page.set_raw_data(data)
 
-    def augment_item(self, item, subpages):
-        for subpage_func in subpages:
-            page = subpage_func(item)
-            self.fetch_page_data(page)
-            page_data = page.get_data()
-            item.update(page_data)
-            return item
-
-    def scrape(self, chamber, session):
-        for page in self.start_scrape(chamber, session):
-            self.fetch_page_data(page)
-            for item in page.get_data():
-                if page.subpages:
-                    item = self.augment_item(item, page.subpages)
-                if isinstance(item, dict):
-                    item = self.to_object(item)
-                yield item
-
-    def to_object(self, item):
-        """
-        converts intermediate data (often in a dictionary) to a final object to be validated
-        """
-        return item
-
-    def start_scrape(self, chamber, session):
-        """
-        yields one or more Page objects that will kick off the scrape.
-
-        It may also raise a ValueError (TBD) when it does not have an appropriate entrypoint
-        to scrape the requested data.
-        """
-        raise NotImplementedError()
-
 
 class Page:
     def __init__(self, url):
@@ -183,3 +152,23 @@ class HtmlListPage(HtmlPage):
 
     def process_item(self, item):
         return item
+
+
+class Workflow:
+    def __init__(self, initial_page, page_processor_cls, scraper=None):
+        self.initial_page = initial_page
+        self.page_processor_cls = page_processor_cls
+        if not scraper:
+            self.scraper = Scraper()
+
+    def execute(self):
+        directory = "_data"
+        os.makedirs(directory, exist_ok=True)
+        self.scraper.fetch_page_data(self.initial_page)
+
+        for i, item in enumerate(self.initial_page.get_data()):
+            # print(f"{i}:", _display(item))
+            page = self.page_processor_cls(item["url"])
+            self.scraper.fetch_page_data(page)
+            data = page.get_data()
+            dump_obj(data.to_dict(), output_dir=directory)

@@ -1,6 +1,6 @@
 import uuid
 from collections import OrderedDict
-from utils import dump_obj, get_jurisdiction_id, reformat_phone_number
+from utils import get_jurisdiction_id, reformat_phone_number
 
 PARTIES = {
     "d": "Democratic",
@@ -95,9 +95,6 @@ class Person:
             d["contact_details"].append(self.capitol_office.to_dict())
 
         return d
-
-    def save(self, directory):
-        dump_obj(self.to_dict(), output_dir=directory)
 
     def add_link(self, url, note=None):
         if note:

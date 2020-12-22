@@ -1,4 +1,4 @@
-from spatula.utils import HtmlListPage, SimilarLink, HtmlPage, CSS
+from spatula.utils import HtmlListPage, SimilarLink, HtmlPage, CSS, Workflow
 from common import Person
 
 
@@ -39,10 +39,13 @@ class OKHouseDetail(HtmlPage):
     def get_data(self):
         name = self.name_css.match_one(self.root).text.split(maxsplit=1)[1]
         p = Person(
-            name=name, state="ok", chamber="upper", party=self.party_css.match_one(self.root).text
+            name=name,
+            state="ok",
+            chamber="upper",
+            party=self.party_css.match_one(self.root).text,
+            district=self.district_css.match_one(self.root).text,
         )
         p.image = self.image_selector.match_one(self.root).get("href")
-        p.district = self.district_css.match_one(self.root).text
 
         contact_url = self.url.replace("District.aspx", "Contact.aspx")
         assert contact_url.startswith("https://www.okhouse.gov/Members/Contact.aspx?District=")
@@ -88,3 +91,7 @@ class OKSenateDetail(HtmlPage):
         p.add_link(self.contact_link_sel.match_one(self.root).get("href"), "Contact Form")
 
         return p
+
+
+house_members = Workflow(OKHouseList(), OKHouseDetail)
+senate_members = Workflow(OKSenateList(), OKSenateDetail)

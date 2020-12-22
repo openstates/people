@@ -42,14 +42,10 @@ def test(class_name, url):
 
 
 @cli.command()
-@click.argument("class_name")
-@click.option("--chamber", multiple=True, default=["upper", "lower"])
-@click.option("--session", default=None)
-def scrape(class_name, chamber, session):
-    Cls = get_class(class_name)
-    for ch in chamber:
-        for item in Cls().scrape(ch, session):
-            item.save("incoming/md/people")
+@click.argument("workflow_name")
+def scrape(workflow_name):
+    workflow = get_class(workflow_name)
+    workflow.execute()
 
 
 if __name__ == "__main__":
