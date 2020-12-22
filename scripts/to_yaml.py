@@ -82,20 +82,19 @@ def process_person(person, jurisdiction_id):
 
     for membership in person["memberships"]:
         organization_id = membership["organization_id"]
-        if not organization_id.startswith("~"):
-            raise ValueError(organization_id)
-        org = json.loads(organization_id[1:])
-        if org["classification"] in ("upper", "lower", "legislature"):
-            post = json.loads(membership["post_id"][1:])["label"]
-            result["roles"] = [
-                {
-                    "type": org["classification"],
-                    "district": str(post),
-                    "jurisdiction": jurisdiction_id,
-                }
-            ]
-        elif org["classification"] == "party":
-            result["party"] = [{"name": org["name"]}]
+        if organization_id.startswith("~"):
+            org = json.loads(organization_id[1:])
+            if org["classification"] in ("upper", "lower", "legislature"):
+                post = json.loads(membership["post_id"][1:])["label"]
+                result["roles"] = [
+                    {
+                        "type": org["classification"],
+                        "district": str(post),
+                        "jurisdiction": jurisdiction_id,
+                    }
+                ]
+            elif org["classification"] == "party":
+                result["party"] = [{"name": org["name"]}]
 
     for key in optional_keys:
         if person.get(key):

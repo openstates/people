@@ -138,7 +138,7 @@ def retire(abbr, existing, new, retirement=None):
         retirement = click.prompt("Enter retirement date YYYY-MM-DD")
     person, num = retire_person(existing, retirement)
     fname = get_filename(existing)
-    fname = f"data/{abbr}/people/{fname}".format(fname)
+    fname = f"data/{abbr}/legislature/{fname}".format(fname)
     dump_obj(person, filename=fname)
     move_file(fname)
 
@@ -147,8 +147,8 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
     """
     returns True iff a merge was done
     """
-    oldfname = "data/{}/people/{}".format(abbr, get_filename(old))
-    newfname = "incoming/{}/people/{}".format(abbr, get_filename(new))
+    oldfname = "data/{}/legislature/{}".format(abbr, get_filename(old))
+    newfname = "incoming/{}/legislature/{}".format(abbr, get_filename(new))
     click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
     # simulate difference
@@ -191,7 +191,7 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
         click.secho(" merged.", fg="green")
         os.remove(newfname)
     elif ch == "r":
-        copy_new_incoming(abbr, new, "people")
+        copy_new_incoming(abbr, new, "legislature")
         retire(abbr, old, new, retirement)
     elif ch == "s":
         return False
@@ -243,27 +243,27 @@ def merge_people(old, new, keep_both_ids=False):
 )
 def entrypoint(incoming, old, new, retirement):
     """
-        Script to assist with merging legislator files.
+    Script to assist with merging legislator files.
 
-        Can be used in two modes: incoming or file merge.
+    Can be used in two modes: incoming or file merge.
 
-        Incoming mode analyzes incoming/ directory files (generated with to_yaml.py)
-        and discovers identical & similar files to assist with merging.
+    Incoming mode analyzes incoming/ directory files (generated with to_yaml.py)
+    and discovers identical & similar files to assist with merging.
 
-        File merge mode merges two legislator files.
+    File merge mode merges two legislator files.
     """
     if incoming:
         abbr = incoming
         existing_people = []
-        for filename in glob.glob(os.path.join(get_data_dir(abbr), "people/*.yml")) + glob.glob(
-            os.path.join(get_data_dir(abbr), "retired/*.yml")
-        ):
+        for filename in glob.glob(
+            os.path.join(get_data_dir(abbr), "legislature/*.yml")
+        ) + glob.glob(os.path.join(get_data_dir(abbr), "retired/*.yml")):
             with open(filename) as f:
                 existing_people.append(load_yaml(f))
 
         new_people = []
         incoming_dir = get_data_dir(abbr).replace("data", "incoming")
-        for filename in glob.glob(os.path.join(incoming_dir, "people/*.yml")):
+        for filename in glob.glob(os.path.join(incoming_dir, "legislature/*.yml")):
             with open(filename) as f:
                 new_people.append(load_yaml(f))
 
