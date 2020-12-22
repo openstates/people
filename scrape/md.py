@@ -66,6 +66,7 @@ class PersonDetail(HtmlPage):
             image=self.image_sel.match_one(self.root).get("src"),
             party=self.extract_dd("Party"),
             district=self.extract_dd("District"),
+            chamber=None,
             email=email,
         )
         # TODO: make URL always a string to avoid this cast
