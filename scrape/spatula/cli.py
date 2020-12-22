@@ -1,7 +1,8 @@
 import click
 import importlib
 import pprint
-from .utils import Scraper, HtmlListPage
+from .core import Scraper
+from .pages import HtmlListPage
 
 
 def get_class(dotted_name):
@@ -26,7 +27,7 @@ def cli():
 
 @cli.command()
 @click.argument("class_name")
-@click.argument("url", default=None)
+@click.argument("url", required=False)
 def test(class_name, url):
     Cls = get_class(class_name)
     page = Cls(url)

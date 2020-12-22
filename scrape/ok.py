@@ -1,8 +1,10 @@
-from spatula.utils import HtmlListPage, SimilarLink, HtmlPage, CSS, Workflow
+from spatula.pages import HtmlListPage, HtmlPage
+from spatula.selectors import SimilarLink, CSS
+from spatula.core import Workflow
 from common import Person
 
 
-class OKSenateList(HtmlListPage):
+class SenateList(HtmlListPage):
     selector = SimilarLink("https://oksenate.gov/senators/", num_items=48)
     url = "https://oksenate.gov/senators"
 
@@ -16,7 +18,7 @@ class OKSenateList(HtmlListPage):
         }
 
 
-class OKHouseList(HtmlListPage):
+class HouseList(HtmlListPage):
     selector = SimilarLink(
         r"https://www.okhouse.gov/Members/District.aspx\?District=", num_items=101
     )
@@ -29,7 +31,7 @@ class OKHouseList(HtmlListPage):
         }
 
 
-class OKHouseDetail(HtmlPage):
+class HouseDetail(HtmlPage):
     image_selector = SimilarLink("https://www.okhouse.gov/Members/Pictures/HiRes/")
     prefix = "#ctl00_ContentPlaceHolder1_lbl"
     name_css = CSS(prefix + "Name")
@@ -66,7 +68,7 @@ class OKHouseDetail(HtmlPage):
         return p
 
 
-class OKSenateDetail(HtmlPage):
+class SenateDetail(HtmlPage):
     name_css = CSS(".field--name-title")
     image_css = CSS(".bSenBio__media-btn")
     district_css = CSS(".bDistrict h2")
@@ -93,5 +95,5 @@ class OKSenateDetail(HtmlPage):
         return p
 
 
-house_members = Workflow(OKHouseList(), OKHouseDetail)
-senate_members = Workflow(OKSenateList(), OKSenateDetail)
+house_members = Workflow(HouseList(), HouseDetail)
+senate_members = Workflow(SenateList(), SenateDetail)
