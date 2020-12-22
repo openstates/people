@@ -53,6 +53,7 @@ We'd go about writing this by writing individual classes, perhaps:
 ## Proposed API
 
 `Page.set_raw_data`: generally preprocesses fetched remote data (e.g. parses HTML or CSV).  Most scrapers will use a Page subclass like HtmlPage and not need to implement their own version of this. (see scraper/fetch separation below for more thoughts)
+
 `Page.get_data`: function that will convert the raw data into an object of the desired type (Person, Bill, or perhaps a list or dictionary for supplemental pages)
 
 And two important conventions:
