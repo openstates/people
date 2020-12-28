@@ -445,6 +445,12 @@ class Validator:
         if person_type == PersonType.RETIRED:
             self.errors[filename].extend(self.validate_old_district_names(person))
 
+        # check duplicate IDs
+        for scheme, value in person.get("ids", {}).items():
+            self.duplicate_values[scheme][value].append(person)
+        for id in person.get("other_identifiers", []):
+            self.duplicate_values[id["scheme"]][id["identifier"]].append(person)
+
     def validate_old_district_names(self, person):
         errors = []
         for role in person.get("roles", []):
