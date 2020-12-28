@@ -15,20 +15,20 @@ def merge_contact_details(old, new):
     new_cap_office = {}
     new_dist_office = {}
 
-    for office in old:
+    for office in old or []:
         if office["note"] == "Capitol Office" and not old_cap_office:
             old_cap_office = office
         elif office["note"] == "District Office" and not old_dist_office:
             old_dist_office = office
         else:
-            raise NotImplementedError()
-    for office in new:
+            raise NotImplementedError("extra old " + office["note"])
+    for office in new or []:
         if office["note"] == "Capitol Office" and not new_cap_office:
             new_cap_office = office
         elif office["note"] == "District Office" and not new_dist_office:
             new_dist_office = office
         else:
-            raise NotImplementedError()
+            raise NotImplementedError("extra new " + office["note"])
 
     updated_cap = update_office(old_cap_office, new_cap_office)
     updated_dist = update_office(old_dist_office, new_dist_office)
