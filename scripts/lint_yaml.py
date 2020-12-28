@@ -451,6 +451,16 @@ class Validator:
         for id in person.get("other_identifiers", []):
             self.duplicate_values[id["scheme"]][id["identifier"]].append(person)
 
+        # update active legislators
+        if person_type == PersonType.LEGISLATIVE:
+            role_type = district = None
+            for role in person.get("roles", []):
+                if role_is_active(role):
+                    role_type = role["type"]
+                    district = role.get("district")
+                    break
+            self.active_legislators[role_type][district].append(person)
+
     def validate_old_district_names(self, person):
         errors = []
         for role in person.get("roles", []):
