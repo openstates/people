@@ -8,6 +8,52 @@ from utils import get_filename, get_data_dir, load_yaml, dump_obj
 from retire import retire_person, move_file
 
 
+def merge_contact_details(old, new):
+    # figure out which office entries are which
+    old_cap_office = {}
+    old_dist_office = {}
+    new_cap_office = {}
+    new_dist_office = {}
+
+    for office in old:
+        if office["note"] == "Capitol Office" and not old_cap_office:
+            old_cap_office = office
+        elif office["note"] == "District Office" and not old_dist_office:
+            old_dist_office = office
+        else:
+            raise NotImplementedError()
+    for office in new:
+        if office["note"] == "Capitol Office" and not new_cap_office:
+            new_cap_office = office
+        elif office["note"] == "District Office" and not new_dist_office:
+            new_dist_office = office
+        else:
+            raise NotImplementedError()
+
+    updated_cap = update_office(old_cap_office, new_cap_office)
+    updated_dist = update_office(old_dist_office, new_dist_office)
+    if updated_cap == old_cap_office and updated_dist == old_dist_office:
+        return None
+    elif updated_cap and updated_dist:
+        return [updated_cap, updated_dist]
+    elif updated_cap:
+        return [updated_cap]
+    elif updated_dist:
+        return [updated_dist]
+
+
+def update_office(old_office, new_office):
+    updated_office = old_office.copy()
+    # update each field in office
+    for newfield, newval in new_office.items():
+        if newfield == "note":
+            continue
+        for oldfield, oldval in old_office.items():
+            if oldfield == newfield and newval != oldval:
+                updated_office[oldfield] = newval
+    return updated_office
+
+
 class Append:
     def __init__(self, key_name, list_item):
         self.key_name = key_name
@@ -40,7 +86,22 @@ class Replace:
         return f"{self.key_name}: {self.value_one} => {self.value_two}"
 
     def __repr__(self):
-        return f"Append({self.key_name}, {self.value_one}, {self.value_two})"
+        return f"Replace({self.key_name}, {self.value_one}, {self.value_two})"
+
+
+class ContactDetailsReplace(Replace):
+    def __str__(self):
+        def _fmt_cd(cd):
+            cd_str = f"{cd['note']}"
+            for key in ("address", "voice", "fax"):
+                if key in cd:
+                    cd_str += f" {key}={cd[key]}"
+            return cd_str
+
+        old = "\n\t".join(_fmt_cd(cd) for cd in self.value_one)
+        new = "\n\t".join(_fmt_cd(cd) for cd in self.value_two)
+
+        return f"{self.key_name} changed from: \n\t{old}\n  to\n\t{new}"
 
 
 def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
@@ -51,7 +112,23 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
         val1 = obj1.get(key)
         val2 = obj2.get(key)
 
-        if isinstance(val1, list) or isinstance(val2, list):
+        # special cases first
+        if key == "id":
+            if val1 != val2 and keep_both_ids:
+                # old id stays as id: to keep things sane
+                changes.append(
+                    Append("other_identifiers", {"scheme": "openstates", "identifier": val2})
+                )
+        elif key == "name":
+            if val1 != val2:
+                # new name becomes name, but old name goes into other_names
+                changes.append(Append("other_names", {"name": val1}))
+                changes.append(Replace("name", val1, val2))
+        elif key == "contact_details":
+            changed = merge_contact_details(val1, val2)
+            if changed:
+                changes.append(ContactDetailsReplace("contact_details", val1, changed))
+        elif isinstance(val1, list) or isinstance(val2, list):
             if val1 and not val2:
                 continue
             elif val2 and not val1:
@@ -63,17 +140,6 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
                         changes.append(Append(key_name, item))
         elif isinstance(val1, dict) or isinstance(val2, dict):
             changes.extend(compute_merge(val1 or {}, val2 or {}, prefix=key_name))
-        elif key == "id":
-            if val1 != val2 and keep_both_ids:
-                # old id stays as id: to keep things sane
-                changes.append(
-                    Append("other_identifiers", {"scheme": "openstates", "identifier": val2})
-                )
-        elif key == "name":
-            if val1 != val2:
-                # new name becomes name, but old name goes into other_names
-                changes.append(Append("other_names", {"name": val1}))
-                changes.append(Replace("name", val1, val2))
         else:
             # if values both exist and differ, or val1 is empty, do a Replace
             if (val1 and val2 and val1 != val2) or (val1 is None):
