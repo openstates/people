@@ -404,6 +404,7 @@ class Validator:
             "birth_date",
             "death_date",
             "image",
+            "email",
             "links",
             "other_names",
             "sources",
