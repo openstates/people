@@ -6,6 +6,7 @@ import click
 from utils import (
     get_data_dir,
     load_yaml,
+    role_is_active,
     get_all_abbreviations,
 )
 
@@ -32,6 +33,7 @@ class Summarizer:
         self.extra_counts = Counter()
         self.contact_counts = Counter()
         self.id_counts = Counter()
+        self.parties = Counter()
 
     def summarize(self, person):
         self.person_count += 1
@@ -45,9 +47,9 @@ class Summarizer:
         #         break
         # self.active_legislators[role_type][district].append(person)
 
-        # for role in person.get("party", []):
-        #     if role_is_active(role):
-        #         self.parties[role["name"]] += 1
+        for role in person.get("party", []):
+            if role_is_active(role):
+                self.parties[role["name"]] += 1
 
         for cd in person.get("contact_details", []):
             for key, value in cd.items():
@@ -68,15 +70,15 @@ class Summarizer:
         #     count = sum([len(v) for v in self.active_legislators[role_type].values()])
         #     click.secho(f"{count:4d} {role_type}")
 
-        # click.secho("Parties", bold=True)
-        # for party, count in self.parties.items():
-        #     if party == "Republican":
-        #         color = "red"
-        #     elif party == "Democratic":
-        #         color = "blue"
-        #     else:
-        #         color = "green"
-        #     click.secho(f"{count:4d} {party} ", bg=color)
+        click.secho("Parties", bold=True)
+        for party, count in self.parties.items():
+            if party == "Republican":
+                color = "red"
+            elif party == "Democratic":
+                color = "blue"
+            else:
+                color = "green"
+            click.secho(f"{count:4d} {party} ", bg=color)
 
         for name, collection in {
             "Contact Info": self.contact_counts,

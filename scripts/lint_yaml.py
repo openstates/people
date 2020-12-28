@@ -393,37 +393,12 @@ def compare_districts(expected, actual):
 
 
 class Validator:
-    OPTIONAL_FIELD_SET = set(
-        (
-            "sort_name",
-            "given_name",
-            "family_name",
-            "gender",
-            "summary",
-            "biography",
-            "birth_date",
-            "death_date",
-            "image",
-            "email",
-            "links",
-            "other_names",
-            "sources",
-        )
-    )
-
     def __init__(self, abbr, settings):
         self.http_whitelist = tuple(settings.get("http_whitelist", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
-        self.person_count = 0
-        self.retired_count = 0
-        self.parties = Counter()
-        self.contact_counts = Counter()
-        self.id_counts = Counter()
-        self.optional_fields = Counter()
-        self.extra_counts = Counter()
         # role type -> district -> person
         self.active_legislators = defaultdict(lambda: defaultdict(list))
         # field name -> value -> person
@@ -468,10 +443,7 @@ class Validator:
         # TODO: this was too ambitious, disabling this for now
         # self.warnings[filename] = self.check_https(person)
         if person_type == PersonType.RETIRED:
-            self.retired_count += 1
             self.errors[filename].extend(self.validate_old_district_names(person))
-        elif person_type == PersonType.LEGISLATIVE:
-            self.summarize_person(person)
 
     def validate_old_district_names(self, person):
         errors = []
@@ -502,41 +474,6 @@ class Validator:
             if not self.check_https_url(url):
                 warnings.append(f"sources.{i} URL {url} should be HTTPS")
         return warnings
-
-    def summarize_person(self, person):
-        role_type = None
-        district = None
-
-        self.person_count += 1
-        self.optional_fields.update(set(person.keys()) & self.OPTIONAL_FIELD_SET)
-        self.extra_counts.update(person.get("extras", {}).keys())
-
-        for role in person.get("roles", []):
-            if role_is_active(role):
-                role_type = role["type"]
-                district = role.get("district")
-                break
-        self.active_legislators[role_type][district].append(person)
-
-        for role in person.get("party", []):
-            if role_is_active(role):
-                self.parties[role["name"]] += 1
-
-        for cd in person.get("contact_details", []):
-            for key, value in cd.items():
-                if key != "note":
-                    self.contact_counts[key] += 1
-                    # currently too aggressive:
-                    # plenty of valid cases where legislators share
-                    # phone numbers & addresses apparently
-                    # self.duplicate_values[key][value].append(person)
-
-        for scheme, value in person.get("ids", {}).items():
-            self.id_counts[scheme] += 1
-            self.duplicate_values[scheme][value].append(person)
-        for id in person.get("other_identifiers", []):
-            self.id_counts[id["scheme"]] += 1
-            self.duplicate_values[id["scheme"]][id["identifier"]].append(person)
 
     def check_duplicates(self):
         """
@@ -581,40 +518,8 @@ class Validator:
 
         return error_count
 
-    def print_summary(self):  # pragma: no cover
-        click.secho(
-            f"processed {self.person_count} active people, {self.retired_count} retired",
-            bold=True,
-        )
-        for role_type in self.active_legislators:
-            count = sum([len(v) for v in self.active_legislators[role_type].values()])
-            click.secho(f"{count:4d} {role_type}")
 
-        click.secho("Parties", bold=True)
-        for party, count in self.parties.items():
-            if party == "Republican":
-                color = "red"
-            elif party == "Democratic":
-                color = "blue"
-            else:
-                color = "green"
-            click.secho(f"{count:4d} {party} ", bg=color)
-
-        for name, collection in {
-            "Contact Info": self.contact_counts,
-            "Identifiers": self.id_counts,
-            "Additional Info": self.optional_fields,
-            "Extras": self.extra_counts,
-        }.items():
-            if collection:
-                click.secho(name, bold=True)
-                for type, count in collection.items():
-                    click.secho(f"{count:4d} {type} ")
-            else:
-                click.secho(name + " - none", bold=True)
-
-
-def process_dir(abbr, verbose, summary, municipal):  # pragma: no cover
+def process_dir(abbr, verbose, municipal):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
@@ -646,9 +551,6 @@ def process_dir(abbr, verbose, summary, municipal):  # pragma: no cover
 
     error_count = validator.print_validation_report(verbose)
 
-    if summary:
-        validator.print_summary()
-
     return error_count
 
 
@@ -656,14 +558,11 @@ def process_dir(abbr, verbose, summary, municipal):  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
 @click.option(
-    "--summary/--no-summary", default=False, help="Print summary after validation errors."
-)
-@click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
-def lint(abbreviations, verbose, summary, municipal):
+def lint(abbreviations, verbose, municipal):
     """
-        Lint YAML files, optionally also providing a summary of state's data.
+        Lint YAML files.
 
         <ABBR> can be provided to restrict linting to single state's files.
     """
@@ -674,7 +573,7 @@ def lint(abbreviations, verbose, summary, municipal):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, summary, municipal)
+        error_count += process_dir(abbr, verbose, municipal)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
