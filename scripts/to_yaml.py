@@ -62,6 +62,7 @@ def process_person(person, jurisdiction_id):
     result = OrderedDict(
         id=ocd_uuid("person"),
         name=person["name"],
+        email=None,
         party=[],
         roles=[],
         contact_details=[],
@@ -70,14 +71,19 @@ def process_person(person, jurisdiction_id):
     )
 
     contact_details = defaultdict(lambda: defaultdict(list))
+    email = None
     for detail in person["contact_details"]:
         value = detail["value"]
         if detail["type"] in ("voice", "fax"):
             value = reformat_phone_number(value)
         elif detail["type"] == "address":
             value = reformat_address(value)
+        elif detail["type"] == "email":
+            email = value
+            continue
         contact_details[detail["note"]][detail["type"]] = value
 
+    result["email"] = email
     result["contact_details"] = [{"note": key, **val} for key, val in contact_details.items()]
 
     for membership in person["memberships"]:
