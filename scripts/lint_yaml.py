@@ -9,7 +9,6 @@ from openstates import metadata
 from enum import Enum, auto
 from utils import (
     get_data_dir,
-    get_filename,
     role_is_active,
     get_all_abbreviations,
     load_yaml,
@@ -387,7 +386,7 @@ def compare_districts(expected, actual):
             if len(actual[chamber][district]) < expected[chamber][district]:
                 errors.append(f"missing legislator for {chamber} {district}")
             if len(actual[chamber][district]) > expected[chamber][district]:
-                people = "\n\t".join(get_filename(o) for o in actual[chamber][district])
+                people = "\n\t".join(actual[chamber][district])
                 errors.append(f"extra legislator for {chamber} {district}:\n\t" + people)
     return errors
 
@@ -399,9 +398,9 @@ class Validator:
         self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
-        # role type -> district -> person
+        # role type -> district -> filename
         self.active_legislators = defaultdict(lambda: defaultdict(list))
-        # field name -> value -> person
+        # field name -> value -> filename
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
         self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
@@ -447,9 +446,9 @@ class Validator:
 
         # check duplicate IDs
         for scheme, value in person.get("ids", {}).items():
-            self.duplicate_values[scheme][value].append(person)
+            self.duplicate_values[scheme][value].append(filename)
         for id in person.get("other_identifiers", []):
-            self.duplicate_values[id["scheme"]][id["identifier"]].append(person)
+            self.duplicate_values[id["scheme"]][id["identifier"]].append(filename)
 
         # update active legislators
         if person_type == PersonType.LEGISLATIVE:
@@ -459,7 +458,7 @@ class Validator:
                     role_type = role["type"]
                     district = role.get("district")
                     break
-            self.active_legislators[role_type][district].append(person)
+            self.active_legislators[role_type][district].append(filename)
 
     def validate_old_district_names(self, person):
         errors = []
@@ -501,10 +500,10 @@ class Validator:
             for value, instances in values.items():
                 if len(instances) > 1:
                     if len(instances) > 3:
-                        instance_str = ", ".join(get_filename(i) for i in instances[:3])
+                        instance_str = ", ".join(instances[:3])
                         instance_str += " and {} more...".format(len(instances) - 3)
                     else:
-                        instance_str = ", ".join(get_filename(i) for i in instances)
+                        instance_str = ", ".join(instances)
                     errors.append(f'duplicate {key}: "{value}" {instance_str}')
         return errors
 
