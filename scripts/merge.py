@@ -130,7 +130,7 @@ def compute_merge(obj1, obj2, prefix="", keep_both_ids=False):
         elif key == "contact_details":
             changed = merge_contact_details(val1, val2)
             if changed:
-                changes.append(ContactDetailsReplace("contact_details", val1, changed))
+                changes.append(ContactDetailsReplace("contact_details", val1 or [], changed))
         elif isinstance(val1, list) or isinstance(val2, list):
             if val1 and not val2:
                 continue
