@@ -261,7 +261,7 @@ def test_compare_districts(expected, actual, errors):
 
 def test_compare_districts_overfill():
     expected = {"A": 1}
-    actual = {"A": [{"id": "ocd-person/1", "name": "Anne"}, {"id": "ocd-person/2", "name": "Bob"}]}
+    actual = {"A": ["Anne", "Bob"]}
     e = compare_districts({"upper": expected}, {"upper": actual})
     assert len(e) == 1
     assert "Anne" in e[0]
@@ -305,14 +305,12 @@ def test_person_duplicates():
         {"id": "ocd-person/4", "name": "Four", "ids": {"twitter": "no-twitter"}},
     ]
     for person in people:
-        v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
+        v.validate_person(person, person["name"] + ".yml", PersonType.LEGISLATIVE)
     errors = v.check_duplicates()
     assert len(errors) == 3
-    assert 'duplicate youtube: "fake" One-1.yml, Two-2.yml' in errors
-    assert 'duplicate external_service_id: "XYZ" Three-3.yml, Three-3.yml' in errors
-    assert (
-        'duplicate twitter: "no-twitter" One-1.yml, Two-2.yml, Three-3.yml and 1 more...' in errors
-    )
+    assert 'duplicate youtube: "fake" One.yml, Two.yml' in errors
+    assert 'duplicate external_service_id: "XYZ" Three.yml, Three.yml' in errors
+    assert 'duplicate twitter: "no-twitter" One.yml, Two.yml, Three.yml and 1 more...' in errors
 
 
 def test_filename_id_test():
