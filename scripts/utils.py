@@ -94,9 +94,12 @@ def get_filename(obj):
     return f"{name}-{id}.yml"
 
 
-def role_is_active(role):
-    now = datetime.datetime.utcnow().date().isoformat()
-    return str(role.get("end_date")) is None or str(role.get("end_date")) > now
+def role_is_active(role, date=None):
+    if date is None:
+        date = datetime.datetime.utcnow().date().isoformat()
+    return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
+        role.get("start_date") is None or str(role.get("start_date")) < date
+    )
 
 
 def legacy_districts(**kwargs):

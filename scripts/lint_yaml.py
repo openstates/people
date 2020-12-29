@@ -292,8 +292,8 @@ def validate_obj(obj, schema, prefix=None):
     return errors
 
 
-def validate_roles(person, roles_key, retired=False):
-    active = [role for role in person.get(roles_key, []) if role_is_active(role)]
+def validate_roles(person, roles_key, retired=False, date=None):
+    active = [role for role in person.get(roles_key, []) if role_is_active(role, date=date)]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
     elif roles_key == "roles" and retired and len(active) > 0:
@@ -409,14 +409,14 @@ class Validator:
             if not JURISDICTION_RE.match(m):
                 raise ValueError(f"invalid municipality id {m}")
 
-    def validate_person(self, person, filename, person_type):
+    def validate_person(self, person, filename, person_type, date=None):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         uid = person["id"].split("/")[1]
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
         self.errors[filename].extend(validate_jurisdictions(person, self.municipalities))
         self.errors[filename].extend(
-            validate_roles(person, "roles", person_type == PersonType.RETIRED)
+            validate_roles(person, "roles", person_type == PersonType.RETIRED, date=date)
         )
         if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
             self.errors[filename].extend(validate_roles(person, "party"))
@@ -455,7 +455,7 @@ class Validator:
         if person_type == PersonType.LEGISLATIVE:
             role_type = district = None
             for role in person.get("roles", []):
-                if role_is_active(role):
+                if role_is_active(role, date=date):
                     role_type = role["type"]
                     district = role.get("district")
                     break
@@ -535,7 +535,7 @@ class Validator:
         return error_count
 
 
-def process_dir(abbr, verbose, municipal):  # pragma: no cover
+def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
@@ -563,7 +563,7 @@ def process_dir(abbr, verbose, municipal):  # pragma: no cover
             print_filename = os.path.basename(filename)
             with open(filename) as f:
                 person = load_yaml(f)
-                validator.validate_person(person, print_filename, person_type)
+                validator.validate_person(person, print_filename, person_type, date)
 
     error_count = validator.print_validation_report(verbose)
 
@@ -576,7 +576,10 @@ def process_dir(abbr, verbose, municipal):  # pragma: no cover
 @click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
-def lint(abbreviations, verbose, municipal):
+@click.option(
+    "--date", type=str, default=None, help="Lint roles using a certain date instead of today.",
+)
+def lint(abbreviations, verbose, municipal, date):
     """
         Lint YAML files.
 
@@ -589,7 +592,7 @@ def lint(abbreviations, verbose, municipal):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, municipal)
+        error_count += process_dir(abbr, verbose, municipal, date)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
