@@ -4,7 +4,7 @@ import os
 import glob
 import click
 from openstates import metadata
-from utils import get_filename, get_data_dir, load_yaml, dump_obj
+from utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file
 from retire import retire_person, move_file
 
 
@@ -195,7 +195,7 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
 
 
 def copy_new_incoming(abbr, new, _type):
-    fname = get_filename(new)
+    fname = get_new_filename(new)
     oldfname = f"incoming/{abbr}/{_type}/{fname}".format(fname)
     newfname = f"data/{abbr}/{_type}/{fname}".format(fname)
     click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
@@ -206,8 +206,7 @@ def retire(abbr, existing, new, retirement=None):
     if not retirement:
         retirement = click.prompt("Enter retirement date YYYY-MM-DD")
     person, num = retire_person(existing, retirement)
-    fname = get_filename(existing)
-    fname = f"data/{abbr}/legislature/{fname}".format(fname)
+    fname = find_file(existing)
     dump_obj(person, filename=fname)
     move_file(fname)
 
@@ -216,8 +215,8 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
     """
     returns True iff a merge was done
     """
-    oldfname = "data/{}/legislature/{}".format(abbr, get_filename(old))
-    newfname = "incoming/{}/legislature/{}".format(abbr, get_filename(new))
+    oldfname = find_file(old)
+    newfname = "incoming/{}/legislature/{}".format(abbr, get_new_filename(new))
     click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
     # simulate difference
