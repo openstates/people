@@ -172,7 +172,10 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
             role_match = False
             for role in existing["roles"]:
                 role.pop("start_date", None)
-                seats = seats_for_district[role["type"]].get(role["district"], 1)
+                try:
+                    seats = seats_for_district[role["type"]].get(role["district"], 1)
+                except KeyError:
+                    continue
                 if new["roles"][0] == role and seats == 1:
                     role_match = True
                     break
