@@ -284,44 +284,6 @@ def test_validator_check_https():
     assert "links.1" in warnings[0]
 
 
-def test_person_summary():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
-    v = Validator("ak", settings)
-
-    people = [
-        {
-            "gender": "F",
-            "image": "https://example.com/image1",
-            "party": [{"name": "Democratic"}, {"name": "Democratic", "end_date": "1990"}],
-        },
-        {
-            "gender": "F",
-            "image": "https://example.com/image2",
-            "party": [{"name": "Democratic"}, {"name": "Working Families"}],
-            "extras": {"religion": "Zoroastrian"},
-            "contact_details": [{"fax": "123-456-7890"}],
-            "other_identifiers": [{"scheme": "fake", "identifier": "abc"}],
-            "ids": {"twitter": "fake"},
-        },
-        {
-            "gender": "M",
-            "image": "https://example.com/image3",
-            "party": [{"name": "Republican"}],
-            "contact_details": [{"phone": "123-456-7890"}],
-            "other_identifiers": [{"scheme": "fake", "identifier": "123"}],
-        },
-    ]
-
-    for p in people:
-        v.summarize_person(p)
-
-    assert v.parties == {"Republican": 1, "Democratic": 2, "Working Families": 1}
-    assert v.contact_counts == {"phone": 1, "fax": 1}
-    assert v.id_counts == {"fake": 2, "twitter": 1}
-    assert v.optional_fields == {"gender": 3, "image": 3}
-    assert v.extra_counts == {"religion": 1}
-
-
 def test_person_duplicates():
     settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
@@ -342,8 +304,8 @@ def test_person_duplicates():
         },
         {"id": "ocd-person/4", "name": "Four", "ids": {"twitter": "no-twitter"}},
     ]
-    for p in people:
-        v.summarize_person(p)
+    for person in people:
+        v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
     errors = v.check_duplicates()
     assert len(errors) == 3
     assert 'duplicate youtube: "fake" One-1.yml, Two-2.yml' in errors
