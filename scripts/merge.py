@@ -43,14 +43,17 @@ def merge_contact_details(old, new):
 
 
 def update_office(old_office, new_office):
+    """ function returns a copy of old_office updated with values from new if applicable """
     updated_office = old_office.copy()
     # update each field in office
     for newfield, newval in new_office.items():
-        if newfield == "note":
-            continue
         for oldfield, oldval in old_office.items():
             if oldfield == newfield and newval != oldval:
                 updated_office[oldfield] = newval
+                break
+        else:
+            # add new fields to updated office
+            updated_office[newfield] = newval
     return updated_office
 
 

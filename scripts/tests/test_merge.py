@@ -1,5 +1,5 @@
 import pytest
-from merge import compute_merge, Append, Replace, merge_people
+from merge import compute_merge, Append, Replace, merge_people, merge_contact_details
 
 
 @pytest.mark.parametrize(
@@ -168,3 +168,56 @@ def test_list_merge(old, new, expected):
 )
 def test_keep_both_ids(old, new, expected):
     assert merge_people(old, new, keep_both_ids=True) == expected
+
+
+@pytest.mark.parametrize(
+    "old, new",
+    [
+        (
+            [{"note": "Capitol Office", "voice": "123"}],
+            [{"note": "Capitol Office", "voice": "123"}],
+        ),
+        (
+            [
+                {"note": "Capitol Office", "voice": "123"},
+                {"note": "District Office", "address": "abc"},
+            ],
+            [
+                {"note": "Capitol Office", "voice": "123"},
+                {"note": "District Office", "address": "abc"},
+            ],
+        ),
+    ],
+)
+def test_merge_contact_details_no_change(old, new):
+    assert merge_contact_details(old, new) is None
+
+
+@pytest.mark.parametrize(
+    "old, new, expected",
+    [
+        # replace a value with a new one
+        (
+            [{"note": "Capitol Office", "voice": "123"}],
+            [{"note": "Capitol Office", "voice": "456"}],
+            [{"note": "Capitol Office", "voice": "456"}],
+        ),
+        # merge two partial records
+        (
+            [{"note": "Capitol Office", "voice": "123"}],
+            [{"note": "Capitol Office", "fax": "456"}],
+            [{"note": "Capitol Office", "voice": "123", "fax": "456"}],
+        ),
+        # merge two offices into a single list
+        (
+            [{"note": "Capitol Office", "voice": "123"}],
+            [{"note": "District Office", "voice": "456"}],
+            [
+                {"note": "Capitol Office", "voice": "123"},
+                {"note": "District Office", "voice": "456"},
+            ],
+        ),
+    ],
+)
+def test_merge_contact_details_changes(old, new, expected):
+    assert merge_contact_details(old, new) == expected
