@@ -3,10 +3,30 @@ import scrapelib
 from utils import dump_obj
 
 
+class Source:
+    pass
+
+
+class URL(Source):
+    def __init__(self, url):
+        self.url = url
+
+    def get_data(self, scraper):
+        return scraper.get(self.url).content
+
+    def __str__(self):
+        return self.url
+
+
 class Scraper(scrapelib.Scraper):
     def fetch_page_data(self, page):
-        print(f"fetching {page.url} for {page.__class__.__name__}")
-        data = self.get(page.url)
+        # allow simple scrapers to use X.url instead of X.source
+        if hasattr(page, "url"):
+            source = URL(page.url)
+        else:
+            source = page.source
+        print(f"fetching {source} for {page.__class__.__name__}")
+        data = source.get_data(self)
         page.set_raw_data(data)
 
 
