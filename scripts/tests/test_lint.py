@@ -11,6 +11,7 @@ from lint_yaml import (
     validate_obj,
     PERSON_FIELDS,
     validate_roles,
+    validate_offices,
     get_expected_districts,
     compare_districts,
     Validator,
@@ -187,6 +188,30 @@ def test_validate_roles_party(person, expected):
 )
 def test_validate_roles_roles(person, expected):
     assert validate_roles(person, "roles") == expected
+
+
+@pytest.mark.parametrize(
+    "person,expected",
+    [
+        ({"contact_details": []}, []),
+        (
+            {"contact_details": [{"note": "Capitol Office"}, {"note": "Capitol Office"}]},
+            ["Multiple capitol offices, condense to one."],
+        ),
+        ({"contact_details": [{"note": "District Office"}, {"note": "District Office"}]}, []),
+        (
+            {
+                "contact_details": [
+                    {"note": "District Office", "phone": "123"},
+                    {"note": "Capitol Office", "phone": "123"},
+                ]
+            },
+            ["Value '123' used multiple times: District Office phone and Capitol Office phone"],
+        ),
+    ],
+)
+def test_validate_offices(person, expected):
+    assert validate_offices(person) == expected
 
 
 @pytest.mark.parametrize(

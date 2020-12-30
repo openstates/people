@@ -1,5 +1,5 @@
 import pytest
-from utils import reformat_phone_number, reformat_address, role_is_active
+from utils import reformat_phone_number, reformat_address, role_is_active, find_file
 
 
 @pytest.mark.parametrize(
@@ -44,3 +44,13 @@ def test_reformat_address(input, output):
 )
 def test_role_is_active(role, expected):
     assert role_is_active(role) == expected
+
+
+def test_find_file_good():
+    filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f")
+    assert "Pam-Snyder" in filename
+
+
+def test_find_file_missing():
+    with pytest.raises(FileNotFoundError):
+        find_file("77777777-ffff-0000-9000-bbbbbbbbbbbb")

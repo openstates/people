@@ -2,15 +2,13 @@
 
 import click
 import csv
-import glob
-import os
 from utils import (
     iter_objects,
     role_is_active,
     get_all_abbreviations,
     load_yaml,
+    find_file,
     dump_obj,
-    get_data_dir,
 )
 
 
@@ -48,20 +46,10 @@ def generate_template_csv(abbreviations, filename, missing_id=None):
                     )
 
 
-def find_by_id(id):
-    id = id.split("/")[1]
-    choices = glob.glob(os.path.join(get_data_dir("*"), "legislature", f"*-{id}.yml")) + glob.glob(
-        os.path.join(get_data_dir("*"), "retired", f"*-{id}.yml")
-    )
-    if len(choices) != 1:
-        raise ValueError(f"unknown id {id}")
-    return choices[0]
-
-
 def update_from_csv(filename, fields, other_identifiers):
     with open(filename) as f:
         for line in csv.DictReader(f):
-            yaml_filename = find_by_id(line["id"])
+            yaml_filename = find_file(line["id"])
             with open(yaml_filename) as yf:
                 person = load_yaml(yf)
 
