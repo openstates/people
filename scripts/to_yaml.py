@@ -83,7 +83,8 @@ def process_person(person, jurisdiction_id):
             continue
         contact_details[detail["note"]][detail["type"]] = value
 
-    result["email"] = email
+    if email:
+        result["email"] = email
     result["contact_details"] = [{"note": key, **val} for key, val in contact_details.items()]
 
     for membership in person["memberships"]:
