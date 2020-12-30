@@ -35,6 +35,12 @@ class HtmlListPage(HtmlPage):
 
     selector = None
 
+    class SkipItem(Exception):
+        pass
+
+    def skip(self):
+        raise self.SkipItem()
+
     # common for a list page to only work on one URL, in which case it is more clear
     # to set it as a property
     def __init__(self, url=None):
@@ -49,7 +55,10 @@ class HtmlListPage(HtmlPage):
             raise NotImplementedError("must either provide selector or override scrape")
         items = self.selector.match(self.root)
         for item in items:
-            item = self.process_item(item)
+            try:
+                item = self.process_item(item)
+            except self.SkipItem:
+                continue
             yield item
 
     def process_item(self, item):
