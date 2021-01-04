@@ -1,6 +1,6 @@
 import lxml.html
 
-# from spatula.core import Workflow
+from spatula.core import Workflow
 from spatula.pages import HtmlListPage
 from spatula.selectors import CSS, SelectorError
 
@@ -86,3 +86,6 @@ class HawaiiLegislators(HtmlListPage):
         p.add_source(data["url"])
         p.add_link(data["url"])
         return p
+
+
+all_legislators = Workflow(HawaiiLegislators())
