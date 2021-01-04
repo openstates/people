@@ -92,6 +92,5 @@ These sections can have a list of objects, each with the following fields availa
 ### Additional Fields
 
 These fields should only be set by the automated processes, but may also be present.
-* summary
 * sort_name
 * extras
