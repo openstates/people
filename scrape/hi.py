@@ -36,6 +36,9 @@ class FormSource:
         resp = scraper.post(self.url, data)
         return resp.content
 
+    def __str__(self):
+        return f"FormSource('{self.url}', '{self.form_xpath}', '{self.button_label}')"
+
 
 class HawaiiLegislators(HtmlListPage):
     source = FormSource(
