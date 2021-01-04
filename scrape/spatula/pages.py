@@ -21,8 +21,8 @@ class HtmlPage(Page):
     def set_raw_data(self, raw_data):
         super().set_raw_data(raw_data)
         self.root = lxml.html.fromstring(raw_data)
-        if hasattr(self, "url"):
-            self.root.make_links_absolute(self.url)
+        if hasattr(self.source, "url"):
+            self.root.make_links_absolute(self.source.url)
 
 
 class HtmlListPage(HtmlPage):
