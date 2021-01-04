@@ -5,7 +5,7 @@ from common import Person
 
 
 class SenateList(HtmlListPage):
-    selector = SimilarLink("https://oksenate.gov/senators/", num_items=48)
+    selector = SimilarLink("https://oksenate.gov/senators/", min_items=45, max_items=48)
     url = "https://oksenate.gov/senators"
 
     def process_item(self, item):
@@ -45,7 +45,7 @@ class HouseDetail(HtmlPage):
             state="ok",
             chamber="upper",
             party=self.party_css.match_one(self.root).text,
-            district=self.district_css.match_one(self.root).text,
+            district=self.district_css.match_one(self.root).text.split()[1],
         )
         p.image = self.image_selector.match_one(self.root).get("href")
 
