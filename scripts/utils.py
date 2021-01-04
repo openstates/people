@@ -95,6 +95,8 @@ def get_new_filename(obj):
 
 
 def find_file(leg_id, *, state="*"):
+    if leg_id.startswith("ocd-person"):
+        leg_id = leg_id.split("/")[1]
     assert len(leg_id) == 36
     files = glob.glob(os.path.join(get_data_dir(state), "*", f"*{leg_id}.yml"))
     if len(files) == 1:

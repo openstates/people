@@ -206,7 +206,7 @@ def retire(abbr, existing, new, retirement=None):
     if not retirement:
         retirement = click.prompt("Enter retirement date YYYY-MM-DD")
     person, num = retire_person(existing, retirement)
-    fname = find_file(existing)
+    fname = find_file(existing["id"])
     dump_obj(person, filename=fname)
     move_file(fname)
 
@@ -215,7 +215,7 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
     """
     returns True iff a merge was done
     """
-    oldfname = find_file(old)
+    oldfname = find_file(old["id"])
     newfname = "incoming/{}/legislature/{}".format(abbr, get_new_filename(new))
     click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
