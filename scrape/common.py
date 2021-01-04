@@ -65,7 +65,7 @@ class Person:
         d = OrderedDict(
             {
                 "id": f"ocd-person/{uuid.uuid4()}",
-                "name": self.name,
+                "name": str(self.name),
                 "party": [{"name": party}],
                 "roles": [
                     {
@@ -79,13 +79,13 @@ class Person:
             }
         )
         if self.given_name:
-            d["given_name"] = self.given_name
+            d["given_name"] = str(self.given_name)
         if self.family_name:
-            d["family_name"] = self.family_name
+            d["family_name"] = str(self.family_name)
         if self.image:
-            d["image"] = self.image
+            d["image"] = str(self.image)
         if self.email:
-            d["email"] = self.email
+            d["email"] = str(self.email)
 
         # contact details
         d["contact_details"] = []

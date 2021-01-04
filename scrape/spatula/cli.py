@@ -44,9 +44,10 @@ def test(class_name, url):
 
 @cli.command()
 @click.argument("workflow_name")
-def scrape(workflow_name):
+@click.option("-o", "--output-dir", default=None)
+def scrape(workflow_name, output_dir):
     workflow = get_class(workflow_name)
-    workflow.execute()
+    workflow.execute(output_dir=output_dir)
 
 
 if __name__ == "__main__":
