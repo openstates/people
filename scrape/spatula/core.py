@@ -1,4 +1,5 @@
 import os
+import datetime
 import scrapelib
 from utils import dump_obj
 
@@ -31,20 +32,32 @@ class Scraper(scrapelib.Scraper):
 
 
 class Workflow:
-    def __init__(self, initial_page, page_processor_cls, scraper=None):
+    def __init__(self, initial_page, page_processor_cls=None, scraper=None):
         self.initial_page = initial_page
         self.page_processor_cls = page_processor_cls
         if not scraper:
             self.scraper = Scraper()
 
     def execute(self):
-        directory = "_data"
-        os.makedirs(directory, exist_ok=True)
+        count = 0
+        dirn = 1
+        today = datetime.date.today().strftime("%Y-%m-%d")
+        while True:
+            try:
+                directory = f"_scrapes/{today}/{dirn:03d}"
+                os.makedirs(directory)
+                break
+            except FileExistsError:
+                dirn += 1
         self.scraper.fetch_page_data(self.initial_page)
 
         for i, item in enumerate(self.initial_page.get_data()):
-            # print(f"{i}:", _display(item))
-            page = self.page_processor_cls(item["url"])
-            self.scraper.fetch_page_data(page)
-            data = page.get_data()
+            if self.page_processor_cls:
+                page = self.page_processor_cls(item["url"])
+                self.scraper.fetch_page_data(page)
+                data = page.get_data()
+            else:
+                data = item
+            count += 1
             dump_obj(data.to_dict(), output_dir=directory)
+        print(f"success: wrote {count} objects to {directory}")
