@@ -176,6 +176,9 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
                 seats = seats_for_district[role_copy["type"]].get(role_copy["district"], 1)
                 if new["roles"][0] == role_copy and seats == 1:
                     role_match = True
+                    # if they match without start date, copy the start date over so it isn't
+                    # alterred or otherwise removed in the merge
+                    new["roles"][0] = role
                     break
             if name_match or role_match:
                 matched = interactive_merge(
