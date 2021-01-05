@@ -1,6 +1,6 @@
 import uuid
 from collections import OrderedDict
-from utils import dump_obj, get_jurisdiction_id, reformat_phone_number
+from utils import get_jurisdiction_id, reformat_phone_number
 
 PARTIES = {
     "d": "Democratic",
@@ -16,13 +16,12 @@ class ContactDetail:
     def __init__(self, note):
         self.note = note
         self.voice = None
-        self.email = None
         self.fax = None
         self.address = None
 
     def to_dict(self):
         d = {}
-        for key in ("voice", "email", "fax", "address"):
+        for key in ("voice", "fax", "address"):
             val = getattr(self, key)
             if val:
                 if key in ("voice", "fax"):
@@ -43,6 +42,7 @@ class Person:
         district,
         chamber,
         image=None,
+        email=None,
         given_name=None,
         family_name=None,
     ):
@@ -54,6 +54,7 @@ class Person:
         self.given_name = given_name
         self.family_name = family_name
         self.image = image
+        self.email = email
         self.links = []
         self.sources = []
         self.capitol_office = ContactDetail("Capitol Office")
@@ -64,7 +65,7 @@ class Person:
         d = OrderedDict(
             {
                 "id": f"ocd-person/{uuid.uuid4()}",
-                "name": self.name,
+                "name": str(self.name),
                 "party": [{"name": party}],
                 "roles": [
                     {
@@ -78,11 +79,13 @@ class Person:
             }
         )
         if self.given_name:
-            d["given_name"] = self.given_name
+            d["given_name"] = str(self.given_name)
         if self.family_name:
-            d["family_name"] = self.family_name
+            d["family_name"] = str(self.family_name)
         if self.image:
-            d["image"] = self.image
+            d["image"] = str(self.image)
+        if self.email:
+            d["email"] = str(self.email)
 
         # contact details
         d["contact_details"] = []
@@ -92,9 +95,6 @@ class Person:
             d["contact_details"].append(self.capitol_office.to_dict())
 
         return d
-
-    def save(self, directory):
-        dump_obj(self.to_dict(), output_dir=directory)
 
     def add_link(self, url, note=None):
         if note:

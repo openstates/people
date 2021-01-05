@@ -6,23 +6,30 @@ roles:
 - district: '29'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: Room 17 North;State Capitol;PO Box 8953;Madison, WI 53708
-  fax: 608-282-3629
-  voice: 608-266-7683
+  end_date: '2020-12-31'
+- district: '10'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  type: upper
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1635
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1823
+- url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2248
 sources:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1635
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1823
-image: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1823.jpg
+- url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2248
+image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2248.jpg
 other_identifiers:
 - identifier: WIL000629
   scheme: legacy_openstates
 - identifier: WIL000647
   scheme: legacy_openstates
+- identifier: ocd-person/7c7f4965-fdab-4a07-9507-cf14c0b02efb
+  scheme: openstates
 given_name: Rob
 family_name: Stafsholt
-email: Rep.Stafsholt@legis.wisconsin.gov
+email: Sen.Stafsholt@legis.wisconsin.gov
+contact_details:
+- address: Room 15 South;State Capitol;PO Box 7882;Madison, WI 53708
+  note: Capitol Office
+  voice: 608-266-7745

@@ -171,9 +171,10 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
             name_match = new["name"] == existing["name"]
             role_match = False
             for role in existing["roles"]:
-                role.pop("start_date", None)
-                seats = seats_for_district[role["type"]].get(role["district"], 1)
-                if new["roles"][0] == role and seats == 1:
+                role_copy = role.copy()
+                role_copy.pop("start_date", None)
+                seats = seats_for_district[role_copy["type"]].get(role_copy["district"], 1)
+                if new["roles"][0] == role_copy and seats == 1:
                     role_match = True
                     break
             if name_match or role_match:
@@ -206,7 +207,7 @@ def retire(abbr, existing, new, retirement=None):
     if not retirement:
         retirement = click.prompt("Enter retirement date YYYY-MM-DD")
     person, num = retire_person(existing, retirement)
-    fname = find_file(existing)
+    fname = find_file(existing["id"])
     dump_obj(person, filename=fname)
     move_file(fname)
 
@@ -215,7 +216,7 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
     """
     returns True iff a merge was done
     """
-    oldfname = find_file(old)
+    oldfname = find_file(old["id"])
     newfname = "incoming/{}/legislature/{}".format(abbr, get_new_filename(new))
     click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
