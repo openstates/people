@@ -2,20 +2,24 @@ id: ocd-person/3e5f28a5-aab0-4679-b17a-2e7ec4195ef9
 name: Thomas M. Bakk
 party:
 - name: Democratic-Farmer-Labor
+  end_date: 2020-11-18
+- name: Independent
+  start_date: 2020-11-18
 roles:
 - district: '3'
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: upper
 contact_details:
+- note: District Office
+  address: 328 Capitol;75 Rev. Dr. Martin Luther King Jr. Blvd.;St. Paul, MN 55155-1606
 - note: Capitol Office
-  address: 2221 Minnesota Senate Bldg.;95 University Avenue W.;St. Paul, MN 55155
   voice: 651-296-8881
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1003
 sources:
-- url: http://www.senate.mn/members/member_list_ascii.php?ls=
-- url: http://www.senate.mn/members/index.php
-image: http://www.senate.mn/img/member_thumbnails/03Bakk.jpg
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+image: https://www.senate.mn/img/member_thumbnails/03Bakk.jpg
 other_identifiers:
 - identifier: MNL000002
   scheme: legacy_openstates
@@ -25,4 +29,3 @@ other_identifiers:
   scheme: legacy_openstates
 given_name: Thomas
 family_name: Bakk
-email: sd03iq@mnsenate.lmhostediq.com
