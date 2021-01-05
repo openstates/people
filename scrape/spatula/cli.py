@@ -1,3 +1,4 @@
+import attr
 import click
 import importlib
 import pprint
@@ -33,6 +34,15 @@ def test(class_name, url):
     page = Cls(url)
     s = Scraper()
     s.fetch_page_data(page)
+
+    # TODO: non-interactive versions of this
+    input_type = getattr(Cls, "input_type")
+    if input_type:
+        print(f"{Cls.__name__} expects input ({input_type.__name__}): ")
+        fake_input = {}
+        for field in attr.fields(input_type):
+            fake_input[field.name] = click.prompt("  " + field.name)
+        page.input = input_type(**fake_input)
 
     # TODO: better way to check this
     if issubclass(Cls, HtmlListPage):

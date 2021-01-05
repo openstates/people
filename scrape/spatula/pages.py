@@ -2,11 +2,14 @@ import lxml.html
 
 
 class Page:
-    def __init__(self, url):
+    def __init__(self, input_val):
         """
         a Page can be instantiated with a url & options (TBD) needed to fetch it
         """
-        self.url = url
+        self.input = input_val
+        # TODO: special case, maybe __url__ or something?
+        if hasattr(input_val, "url"):
+            self.url = input_val.url
 
     def set_raw_data(self, raw_data):
         """ callback to handle raw data returned by grabbing the URL """

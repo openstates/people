@@ -62,7 +62,7 @@ class Workflow:
 
         for i, item in enumerate(self.initial_page.get_data()):
             if self.page_processor_cls:
-                page = self.page_processor_cls(item["url"])
+                page = self.page_processor_cls(item)
                 self.scraper.fetch_page_data(page)
                 data = page.get_data()
             else:
