@@ -13,7 +13,7 @@ class LegPage(HtmlPage):
 
     def get_data(self):
         name = self.name_css.match_one(self.root).text.replace("Sen. ", "").strip()
-        district = self.district_css.match_one(self.root).text
+        district = self.district_css.match_one(self.root).text.split()[1]
         image = self.image_css.match_one(self.root).get("src")
         addrlines = self.address_css.match_one(self.root).text_content()
 
