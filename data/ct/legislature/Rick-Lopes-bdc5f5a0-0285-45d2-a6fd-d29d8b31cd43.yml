@@ -6,15 +6,13 @@ roles:
 - district: '24'
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 1802;Hartford, CT 06106
-  voice: 860-240-8500
-- note: District Office
-  address: 208 South Mountain Drive;New Britain, CT 06052
-  voice: 860-229-7721
+  end_date: '2020-12-31'
+- district: '6'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  type: upper
 links:
 - url: http://www.housedems.ct.gov/Lopes
+- url: http://www.senatedems.ct.gov/lopes
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 other_identifiers:
@@ -23,3 +21,8 @@ other_identifiers:
 given_name: Rick
 family_name: Lopes
 email: Rick.Lopes@cga.ct.gov
+contact_details:
+- address: Legislative Office Building;Room;Hartford, CT 06106
+  note: Capitol Office
+- address: ', CT'
+  note: District Office
