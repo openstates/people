@@ -28,7 +28,30 @@ class HtmlPage(Page):
             self.root.make_links_absolute(self.source.url)
 
 
-class HtmlListPage(HtmlPage):
+class ListPage(Page):
+    class SkipItem(Exception):
+        pass
+
+    def skip(self):
+        raise self.SkipItem()
+
+
+# TODO
+# class CSVListPage(ListPage):
+#     def get_data(self):
+#         print(self.raw_data)
+#         for item in items:
+#             try:
+#                 item = self.process_item(item)
+#             except self.SkipItem:
+#                 continue
+#             yield item
+
+#     def process_item(self, item):
+#         return item
+
+
+class HtmlListPage(ListPage, HtmlPage):
     """
     Simplification for HTML pages that get a list of items and process them.
 
@@ -37,12 +60,6 @@ class HtmlListPage(HtmlPage):
     """
 
     selector = None
-
-    class SkipItem(Exception):
-        pass
-
-    def skip(self):
-        raise self.SkipItem()
 
     # common for a list page to only work on one URL, in which case it is more clear
     # to set it as a property

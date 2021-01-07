@@ -3,7 +3,7 @@ import click
 import importlib
 import pprint
 from .core import Scraper
-from .pages import HtmlListPage
+from .pages import ListPage
 
 
 def get_class(dotted_name):
@@ -36,7 +36,7 @@ def test(class_name, url):
     s.fetch_page_data(page)
 
     # TODO: non-interactive versions of this
-    input_type = getattr(Cls, "input_type")
+    input_type = getattr(Cls, "input_type", None)
     if input_type:
         print(f"{Cls.__name__} expects input ({input_type.__name__}): ")
         fake_input = {}
@@ -44,8 +44,7 @@ def test(class_name, url):
             fake_input[field.name] = click.prompt("  " + field.name)
         page.input = input_type(**fake_input)
 
-    # TODO: better way to check this
-    if issubclass(Cls, HtmlListPage):
+    if issubclass(Cls, ListPage):
         for i, item in enumerate(page.get_data()):
             print(f"{i}:", _display(item))
     else:
