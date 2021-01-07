@@ -34,14 +34,15 @@ def test(class_name, interactive, data):
     Cls = get_class(class_name)
     s = Scraper()
 
+    # build fake input from command line data if present
+    fake_input = {}
+    for item in data:
+        k, v = item.split("=", 1)
+        fake_input[k] = v
+
     input_type = getattr(Cls, "input_type", None)
     if input_type:
         print(f"{Cls.__name__} expects input ({input_type.__name__}): ")
-        fake_input = {}
-        for item in data:
-            k, v = item.split("=", 1)
-            fake_input[k] = v
-
         for field in attr.fields(input_type):
             if field.name in fake_input:
                 print(f"  {field.name}: {fake_input[field.name]}")
@@ -52,8 +53,11 @@ def test(class_name, interactive, data):
                 fake_input[field.name] = dummy_val
                 print(f"  {field.name}: {dummy_val}")
 
+        page = Cls(input_type(**fake_input))
+    else:
+        page = Cls(fake_input)
+
     # fetch data after input is handled, since we might need to build the source
-    page = Cls(input_type(**fake_input))
     s.fetch_page_data(page)
 
     if issubclass(Cls, ListPage):

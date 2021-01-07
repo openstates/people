@@ -1,15 +1,18 @@
 import lxml.html
+from .sources import URL
 
 
 class Page:
-    def __init__(self, input_val):
+    def __init__(self, input_val=None):
         """
         a Page can be instantiated with a url & options (TBD) needed to fetch it
         """
         self.input = input_val
         # TODO: special case, maybe __url__ or something?
+        if isinstance(input_val, dict) and "url" in input_val:
+            self.source = URL(input_val["url"])
         if hasattr(input_val, "url"):
-            self.url = input_val.url
+            self.source = URL(input_val.url)
 
     def set_raw_data(self, raw_data):
         """ callback to handle raw data returned by grabbing the URL """
