@@ -3,22 +3,21 @@ name: John C. Velis
 party:
 - name: Democratic
 roles:
-- district: Fourth Hampden
+- district: 4th Hampden
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   type: lower
   start_date: 2013-01-01
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 174;Boston, MA, 02133
-  voice: 617-722-2877
-- note: District Office
-  address: 52 Court Street;Westfield, MA 01085
-  voice: 413-572-3920
+  end_date: '2020-12-31'
+- district: Second Hampden and Hampshire
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  type: upper
 links:
 - url: https://malegislature.gov/Legislators/Profile/jcv1
+- url: https://malegislature.gov/Legislators/Profile/JCV0
 sources:
 - url: https://malegislature.gov/Legislators/Profile/jcv1
-image: https://malegislature.gov/Legislators/Profile/170/jcv1.jpg
+- url: https://malegislature.gov/Legislators/Profile/JCV0
+image: https://malegislature.gov/Legislators/Profile/170/JCV0.jpg
 other_identifiers:
 - identifier: MAL000504
   scheme: legacy_openstates
@@ -31,4 +30,8 @@ other_identifiers:
 given_name: John
 family_name: Velis
 gender: Male
-email: john.velis@mahouse.gov
+email: john.velis@masenate.gov
+contact_details:
+- address: 24 Beacon St.;Room 70;Boston, MA, 02133
+  note: Capitol Office
+  voice: 617-722-1415
