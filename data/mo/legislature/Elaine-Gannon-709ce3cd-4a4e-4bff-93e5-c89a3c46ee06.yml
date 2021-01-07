@@ -6,15 +6,18 @@ roles:
 - district: '115'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: 201 West Capitol Avenue 304-B, Jefferson City, MO 65101
-  voice: 573-751-7735
+  end_date: '2020-12-31'
+- district: '3'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: upper
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=115
+- url: https://www.senate.mo.gov/mem03
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=115
+- url: https://www.senate.mo.gov/senators-listing/
+- url: https://www.senate.mo.gov/mem03
 extras:
   first_name: Elaine
   last_name: Gannon
@@ -24,3 +27,8 @@ other_identifiers:
 given_name: Elaine
 family_name: Gannon
 email: Elaine.Gannon@house.mo.gov
+contact_details:
+- address: 201 W Capitol Ave., Rm. 426;Jefferson City, Missouri 65101
+  note: Capitol Office
+  voice: 573-751-4008
+image: https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Gannon-200x300.jpg
