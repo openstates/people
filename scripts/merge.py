@@ -170,7 +170,9 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
         for existing in existing_people:
             name_match = new["name"] == existing["name"]
             role_match = False
-            for role in existing["roles"]:
+            for role in existing.get("roles", []):
+                if role["type"] == "mayor":
+                    continue
                 role_copy = role.copy()
                 role_copy.pop("start_date", None)
                 seats = seats_for_district[role_copy["type"]].get(role_copy["district"], 1)
