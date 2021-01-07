@@ -48,7 +48,7 @@ class Person:
     ):
         self.name = name
         self.party = party
-        self.district = district
+        self.district = str(district)
         self.chamber = chamber
         self.state = state
         self.given_name = given_name
