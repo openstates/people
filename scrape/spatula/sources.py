@@ -13,3 +13,11 @@ class URL(Source):
 
     def __str__(self):
         return self.url
+
+
+class NullSource(Source):
+    def get_data(self, scraper):
+        return None
+
+    def __str__(self):
+        return self.__class__.__name__
