@@ -50,9 +50,12 @@ class HouseDetail(HtmlPage):
     def get_data(self):
         party = {"D": "Democratic", "R": "Republican"}[self.input.party]
 
+        photo = CSS("img#ContentPlaceHolder1_imgPhoto1").match_one(self.root).get("src")
+
         p = Person(
             state="mo",
             party=party,
+            image=photo,
             chamber="lower",
             district=self.input.district,
             name=f"{self.input.first_name} {self.input.last_name}",
