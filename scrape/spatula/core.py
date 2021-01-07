@@ -24,13 +24,15 @@ class URL(Source):
 
 class Scraper(scrapelib.Scraper):
     def fetch_page_data(self, page):
-        # allow simple scrapers to use X.url instead of X.source
-        if hasattr(page, "url") and not hasattr(page, "source"):
-            source = page.source = URL(page.url)
-        else:
-            source = page.source
-        print(f"fetching {source} for {page.__class__.__name__}")
-        data = source.get_data(self)
+        if not hasattr(page, "source"):
+            if hasattr(page, "get_source_from_input"):
+                page.source = page.get_source_from_input()
+            else:
+                raise Exception(
+                    f"{page.__class__.__name__} has no source or get_source_from_input"
+                )
+        print(f"fetching {page.source} for {page.__class__.__name__}")
+        data = page.source.get_data(self)
         page.set_raw_data(data)
 
 
