@@ -57,6 +57,11 @@ def test(class_name, interactive, data):
     else:
         page = Cls(fake_input)
 
+    # TODO: move this somewhere better
+    for val, dep in page.dependencies.items():
+        s.fetch_page_data(dep)
+        setattr(page, val, dep.get_data())
+
     # fetch data after input is handled, since we might need to build the source
     s.fetch_page_data(page)
 

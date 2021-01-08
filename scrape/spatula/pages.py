@@ -3,6 +3,9 @@ from .sources import URL
 
 
 class Page:
+    source = None
+    dependencies = {}
+
     def __init__(self, input_val=None):
         """
         a Page can be instantiated with a url & options (TBD) needed to fetch it
