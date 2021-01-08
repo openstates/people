@@ -1,3 +1,5 @@
+import re
+import lxml.etree
 from spatula.pages import HtmlListPage, HtmlPage
 from spatula.sources import URL
 from spatula.selectors import CSS, SelectorError
@@ -33,16 +35,81 @@ class PartyAugmentation(HtmlPage):
         return mapping
 
 
+# TODO: consider turning these common hacks into spatula.utils
+
+
+def innerhtml(elem):
+    return (elem.text or "") + "\n".join(
+        [lxml.etree.tostring(child).decode() for child in elem.iterchildren()]
+    )
+
+
+def block_to_text(elem):
+    return re.sub("<br/?>", "\n", innerhtml(elem))
+
+
+def parse_address_lines(text):
+    """
+    a fairly common occurence, a bunch of lines like
+    addr line 1
+    addr line 2
+    addr line 3?
+    phone: 555-333-3333
+    fax: 555-333-3333
+    maybe junk down here
+    """
+    phone_re = re.compile(r"\d{3}-\d{4}")
+    email_re = re.compile(r"\w+@\w+\.\w+")
+    mode = "address"
+    address = []
+    email = fax = phone = None
+
+    for line in text.splitlines():
+        line = line.strip()
+        line_lower = line.lower()
+        if not line:
+            continue
+
+        # check for mode-changing lines
+        if line_lower.startswith("phone:") or phone_re.findall(line_lower):
+            phone = line_lower.replace("phone:", "").strip()
+            mode = None
+        elif line_lower.startswith("email:") or email_re.findall(line_lower):
+            email = line_lower.replace("email:", "").strip()
+            mode = None
+        elif line_lower.startswith("fax:"):
+            fax = line_lower.replace("fax:", "").strip()
+            mode = None
+        elif mode == "address":
+            address.append(line)
+
+    return {"address": address, "fax": fax, "phone": phone, "email": email}
+
+
 class AssemblyList(HtmlListPage):
     source = URL("https://assembly.state.ny.us/mem/")
     selector = CSS("section.mem-item", num_items=150)
     dependencies = {"party_mapping": PartyAugmentation()}
+
+    def process_addresses(self, item):
+        # 1-3 address blocks, last is always Capitol
+        address_blocks = CSS(".full-addr").match(item, min_items=1, max_items=3)
+
+        # district address #1
+        district = parse_address_lines(block_to_text(address_blocks[0]))
+        # capitol address
+        capitol = parse_address_lines(block_to_text(address_blocks[-1]))
+        # TODO: handle district address #2 if it exists
+
+        return district, capitol
 
     def process_item(self, item):
         # strip leading zero
         district = str(int(item.get("id")))
         image = CSS(".mem-pic a img").match_one(item).get("src")
         name = CSS(".mem-name a").match_one(item)
+
+        district_addr, capitol_addr = self.process_addresses(item)
 
         # email, twitter, facebook are all sometimes present
         try:
@@ -77,4 +144,10 @@ class AssemblyList(HtmlListPage):
             p.ids["twitter"] = twitter
         if facebook:
             p.ids["facebook"] = facebook
+        p.district_office.address = district_addr["address"]
+        p.district_office.voice = district_addr["phone"]
+        p.district_office.fax = district_addr["fax"]
+        p.capitol_office.address = capitol_addr["address"]
+        p.capitol_office.voice = capitol_addr["phone"]
+        p.capitol_office.fax = capitol_addr["fax"]
         return p
