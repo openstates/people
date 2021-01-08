@@ -1,6 +1,12 @@
+import re
 import uuid
 from collections import OrderedDict
 from utils import get_jurisdiction_id, reformat_phone_number
+
+
+def clean_spaces(text):
+    return re.sub(r"\s+", " ", text).strip()
+
 
 PARTIES = {
     "d": "Democratic",
@@ -46,7 +52,7 @@ class Person:
         given_name=None,
         family_name=None,
     ):
-        self.name = name
+        self.name = clean_spaces(name)
         self.party = party
         self.district = str(district)
         self.chamber = chamber
@@ -59,6 +65,7 @@ class Person:
         self.sources = []
         self.capitol_office = ContactDetail("Capitol Office")
         self.district_office = ContactDetail("District Office")
+        self.ids = {}
 
     def to_dict(self):
         party = PARTIES.get(self.party.lower(), self.party)
@@ -76,6 +83,7 @@ class Person:
                 ],
                 "links": self.links,
                 "sources": self.sources,
+                "ids": self.ids,
             }
         )
         if self.given_name:

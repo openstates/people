@@ -2,7 +2,7 @@ import attr
 import click
 import importlib
 import pprint
-from .core import Scraper
+from scrapelib import Scraper
 from .pages import ListPage
 
 
@@ -58,7 +58,7 @@ def test(class_name, interactive, data):
         page = Cls(fake_input)
 
     # fetch data after input is handled, since we might need to build the source
-    s.fetch_page_data(page)
+    page._fetch_data(s)
 
     if issubclass(Cls, ListPage):
         for i, item in enumerate(page.get_data()):
