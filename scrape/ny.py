@@ -72,7 +72,11 @@ def parse_address_lines(text):
             continue
 
         # check for mode-changing lines
-        if line_lower.startswith("phone:") or phone_re.findall(line_lower):
+        if (
+            line_lower.startswith("phone:")
+            or phone_re.findall(line_lower)
+            and "fax" not in line_lower
+        ):
             phone = line_lower.replace("phone:", "").strip()
             mode = None
         elif line_lower.startswith("email:") or email_re.findall(line_lower):
@@ -84,7 +88,7 @@ def parse_address_lines(text):
         elif mode == "address":
             address.append(line)
 
-    return {"address": address, "fax": fax, "phone": phone, "email": email}
+    return {"address": "; ".join(address), "fax": fax, "phone": phone, "email": email}
 
 
 class AssemblyList(HtmlListPage):
