@@ -3,6 +3,7 @@ import lxml.etree
 from spatula.pages import HtmlListPage, HtmlPage
 from spatula.sources import URL
 from spatula.selectors import CSS, SelectorError
+from spatula.core import Workflow
 from common import Person
 
 
@@ -151,3 +152,6 @@ class AssemblyList(HtmlListPage):
         p.capitol_office.voice = capitol_addr["phone"]
         p.capitol_office.fax = capitol_addr["fax"]
         return p
+
+
+assembly_members = Workflow(AssemblyList())

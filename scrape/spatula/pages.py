@@ -6,6 +6,23 @@ class Page:
     source = None
     dependencies = {}
 
+    def _fetch_data(self, scraper):
+        # process dependencies first
+        for val, dep in self.dependencies.items():
+            dep._fetch_data(scraper)
+            setattr(self, val, dep.get_data())
+
+        if not self.source:
+            if hasattr(self, "get_source_from_input"):
+                self.source = self.get_source_from_input()
+            else:
+                raise Exception(
+                    f"{self.__class__.__name__} has no source or get_source_from_input"
+                )
+        print(f"fetching {self.source} for {self.__class__.__name__}")
+        data = self.source.get_data(scraper)
+        self.set_raw_data(data)
+
     def __init__(self, input_val=None):
         """
         a Page can be instantiated with a url & options (TBD) needed to fetch it
