@@ -4,7 +4,7 @@ from spatula.selectors import CSS, SelectorError
 from common import Person
 
 
-class PartyAugmentationData(HtmlPage):
+class PartyAugmentation(HtmlPage):
     """
     NY Assembly does not have partisan information on their site.
 
@@ -12,10 +12,31 @@ class PartyAugmentationData(HtmlPage):
     besides hard-coding... and it isn't good.
     """
 
+    source = URL("https://en.wikipedia.org/wiki/New_York_State_Assembly")
+
+    def find_rows(self):
+        # the first table on the page that has a bunch of rows
+        for table in CSS("table.wikitable").match(self.root):
+            rows = CSS("tr").match(table)
+            if len(rows) >= 150:
+                return rows
+
+    def get_data(self):
+        mapping = {}
+        rows = self.find_rows()
+        for row in rows:
+            tds = row.getchildren()
+            dist = tds[0].text_content().strip()
+            name = tds[1].text_content().strip()
+            party = tds[2].text_content().strip()
+            mapping[dist] = (name, party)
+        return mapping
+
 
 class AssemblyList(HtmlListPage):
     source = URL("https://assembly.state.ny.us/mem/")
     selector = CSS("section.mem-item", num_items=150)
+    dependencies = {"party_mapping": PartyAugmentation()}
 
     def process_item(self, item):
         # strip leading zero
@@ -30,26 +51,30 @@ class AssemblyList(HtmlListPage):
             email = ""
         try:
             twitter = CSS(".fa-twitter").match_one(item)
-            twitter = twitter.getparent().get("href")
+            twitter = twitter.getparent().get("href").split("/")[-1]
         except SelectorError:
             twitter = ""
         try:
             facebook = CSS(".fa-facebook").match_one(item)
-            facebook = facebook.getparent().get("href")
+            facebook = facebook.getparent().get("href").split("/")[-1]
         except SelectorError:
             facebook = ""
+
+        party = self.party_mapping[district][1]
 
         p = Person(
             state="ny",
             chamber="lower",
             image=image,
+            party=party,
             district=district,
             name=name.text.strip(),
             email=email,
-            party="Unknown",
         )
         p.add_link(url=name.get("href"))
         p.add_source(url=name.get("href"))
-        p.twitter = twitter
-        p.facebook = facebook
+        if twitter:
+            p.ids["twitter"] = twitter
+        if facebook:
+            p.ids["facebook"] = facebook
         return p

@@ -59,6 +59,7 @@ class Person:
         self.sources = []
         self.capitol_office = ContactDetail("Capitol Office")
         self.district_office = ContactDetail("District Office")
+        self.ids = {}
 
     def to_dict(self):
         party = PARTIES.get(self.party.lower(), self.party)
@@ -76,6 +77,7 @@ class Person:
                 ],
                 "links": self.links,
                 "sources": self.sources,
+                "ids": self.ids,
             }
         )
         if self.given_name:
