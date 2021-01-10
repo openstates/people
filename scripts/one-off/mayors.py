@@ -5,7 +5,7 @@ import csv
 import glob
 import datetime
 import click
-from utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml
+from utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml, find_file
 from collections import defaultdict, OrderedDict
 
 
@@ -79,7 +79,7 @@ def get_mayor_details(csv_fname):
                 pid = ocd_uuid("person")
 
             if retired:
-                os.remove(os.path.join(f"data/{state}/retired/", get_filename(existing)))
+                os.remove(find_file(existing["id"]))
 
             mayors_by_state[state].append(OrderedDict(
                 {
