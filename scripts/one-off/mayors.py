@@ -5,7 +5,7 @@ import csv
 import glob
 import datetime
 import click
-from utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml, get_filename
+from utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml
 from collections import defaultdict, OrderedDict
 
 
