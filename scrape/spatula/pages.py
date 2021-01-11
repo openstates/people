@@ -24,11 +24,15 @@ class Page:
         data = self.source.get_data(scraper)
         self.set_raw_data(data)
 
-    def __init__(self, input_val=None):
+    def __init__(self, input_val=None, *, source=None):
         """
         a Page can be instantiated with a url & options (TBD) needed to fetch it
         """
         self.input = input_val
+        if source:
+            if isinstance(source, str):
+                source = URL(source)
+            self.source = source
         # TODO: special case, maybe __url__ or something?
         if isinstance(input_val, dict) and "url" in input_val:
             self.source = URL(input_val["url"])
