@@ -221,3 +221,11 @@ def test_merge_contact_details_no_change(old, new):
 )
 def test_merge_contact_details_changes(old, new, expected):
     assert merge_contact_details(old, new) == expected
+
+
+def test_merge_extras():
+    # replace was adding a key like extras._internal_id
+    old = {"extras": {"_internal_id": 123}}
+    new = {}
+    expected = old.copy()
+    assert merge_people(new, old) == expected

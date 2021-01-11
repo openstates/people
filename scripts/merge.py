@@ -286,7 +286,13 @@ def merge_people(old, new, keep_both_ids=False):
 
     for change in changes:
         if isinstance(change, Replace):
-            old[change.key_name] = change.value_two
+            keys = change.key_name.split(".")
+
+            # recursively set the value based on dotted key
+            temp_obj = old
+            for key in keys[:-1]:
+                temp_obj = temp_obj.setdefault(key, {})
+            temp_obj[keys[-1]] = change.value_two
         if isinstance(change, Append):
             if change.key_name not in old:
                 old[change.key_name] = []
