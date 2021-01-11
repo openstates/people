@@ -51,6 +51,7 @@ class Person:
         email=None,
         given_name=None,
         family_name=None,
+        suffix=None,
     ):
         self.name = clean_spaces(name)
         self.party = party
@@ -59,6 +60,7 @@ class Person:
         self.state = state
         self.given_name = given_name
         self.family_name = family_name
+        self.suffix = suffix
         self.image = image
         self.email = email
         self.links = []
@@ -66,6 +68,7 @@ class Person:
         self.capitol_office = ContactDetail("Capitol Office")
         self.district_office = ContactDetail("District Office")
         self.ids = {}
+        self.extras = {}
 
     def to_dict(self):
         party = PARTIES.get(self.party.lower(), self.party)
@@ -83,17 +86,22 @@ class Person:
                 ],
                 "links": self.links,
                 "sources": self.sources,
-                "ids": self.ids,
             }
         )
         if self.given_name:
             d["given_name"] = str(self.given_name)
         if self.family_name:
             d["family_name"] = str(self.family_name)
+        if self.suffix:
+            d["suffix"] = str(self.suffix)
         if self.image:
             d["image"] = str(self.image)
         if self.email:
             d["email"] = str(self.email)
+        if self.ids:
+            d["ids"] = self.ids
+        if self.extras:
+            d["extras"] = self.extras
 
         # contact details
         d["contact_details"] = []
