@@ -6,15 +6,18 @@ roles:
 - district: '23'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: 201 West Capitol Avenue 135-AB, Jefferson City, MO 65101
-  voice: 573-751-0538
+  end_date: '2020-12-31'
+- district: '9'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  type: upper
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=23
+- url: https://www.senate.mo.gov/mem09
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=23
+- url: https://www.senate.mo.gov/senators-listing/
+- url: https://www.senate.mo.gov/mem09
 extras:
   first_name: Barbara
   last_name: Washington
@@ -24,3 +27,7 @@ other_identifiers:
 given_name: Barbara
 family_name: Washington
 email: Barbara.Washington@house.mo.gov
+contact_details:
+- address: 201 W Capitol Ave., Rm. 425;Jefferson City, Missouri 65101
+  note: Capitol Office
+  voice: 573-751-3158

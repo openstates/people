@@ -6,21 +6,28 @@ roles:
 - district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: Room 309 North;State Capitol;PO Box 8952;Madison WI 53708
-  fax: 608-282-3635
-  voice: 608-266-7694
+  end_date: '2020-12-31'
+- district: '12'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  type: upper
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1549
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1829
+- url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2249
 sources:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1549
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1829
-image: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1829.jpg
+- url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2249
+image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2249.jpg
 other_identifiers:
 - identifier: WIL000635
   scheme: legacy_openstates
+- identifier: ocd-person/6a2da4f4-5080-4001-bf2f-a1c43defa0b3
+  scheme: openstates
 given_name: Mary
 family_name: Felzkowski
-email: Rep.Felzkowski@legis.wisconsin.gov
+email: Sen.Felzkowski@legis.wisconsin.gov
+contact_details:
+- address: Room 415 South;State Capitol;PO Box 7882;Madison WI 53708
+  note: Capitol Office
+  voice: 608-266-2509

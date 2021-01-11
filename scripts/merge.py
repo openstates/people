@@ -4,7 +4,7 @@ import os
 import glob
 import click
 from openstates import metadata
-from utils import get_filename, get_data_dir, load_yaml, dump_obj
+from utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file
 from retire import retire_person, move_file
 
 
@@ -170,14 +170,17 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
         for existing in existing_people:
             name_match = new["name"] == existing["name"]
             role_match = False
-            for role in existing["roles"]:
-                role.pop("start_date", None)
-                try:
-                    seats = seats_for_district[role["type"]].get(role["district"], 1)
-                except KeyError:
+            for role in existing.get("roles", []):
+                if role["type"] == "mayor":
                     continue
-                if new["roles"][0] == role and seats == 1:
+                role_copy = role.copy()
+                role_copy.pop("start_date", None)
+                seats = seats_for_district[role_copy["type"]].get(role_copy["district"], 1)
+                if new["roles"][0] == role_copy and seats == 1:
                     role_match = True
+                    # if they match without start date, copy the start date over so it isn't
+                    # alterred or otherwise removed in the merge
+                    new["roles"][0] = role
                     break
             if name_match or role_match:
                 matched = interactive_merge(
@@ -198,7 +201,7 @@ def incoming_merge(abbr, existing_people, new_people, retirement):
 
 
 def copy_new_incoming(abbr, new, _type):
-    fname = get_filename(new)
+    fname = get_new_filename(new)
     oldfname = f"incoming/{abbr}/{_type}/{fname}".format(fname)
     newfname = f"data/{abbr}/{_type}/{fname}".format(fname)
     click.secho(f"moving {oldfname} to {newfname}", fg="yellow")
@@ -209,8 +212,7 @@ def retire(abbr, existing, new, retirement=None):
     if not retirement:
         retirement = click.prompt("Enter retirement date YYYY-MM-DD")
     person, num = retire_person(existing, retirement)
-    fname = get_filename(existing)
-    fname = f"data/{abbr}/legislature/{fname}".format(fname)
+    fname = find_file(existing["id"])
     dump_obj(person, filename=fname)
     move_file(fname)
 
@@ -219,8 +221,8 @@ def interactive_merge(abbr, old, new, name_match, role_match, retirement):
     """
     returns True iff a merge was done
     """
-    oldfname = "data/{}/legislature/{}".format(abbr, get_filename(old))
-    newfname = "incoming/{}/legislature/{}".format(abbr, get_filename(new))
+    oldfname = find_file(old["id"])
+    newfname = "incoming/{}/legislature/{}".format(abbr, get_new_filename(new))
     click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
     # simulate difference

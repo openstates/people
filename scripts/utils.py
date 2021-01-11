@@ -79,14 +79,14 @@ def iter_objects(abbr, objtype):
 
 def dump_obj(obj, *, output_dir=None, filename=None):
     if output_dir:
-        filename = os.path.join(output_dir, get_filename(obj))
+        filename = os.path.join(output_dir, get_new_filename(obj))
     if not filename:
         raise ValueError("must provide output_dir or filename parameter")
     with open(filename, "w") as f:
         yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.SafeDumper)
 
 
-def get_filename(obj):
+def get_new_filename(obj):
     id = obj["id"].split("/")[1]
     name = obj["name"]
     name = re.sub(r"\s+", "-", name)
@@ -100,6 +100,18 @@ def role_is_active(role, date=None):
     return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
         role.get("start_date") is None or str(role.get("start_date")) < date
     )
+  
+def find_file(leg_id, *, state="*"):
+    if leg_id.startswith("ocd-person"):
+        leg_id = leg_id.split("/")[1]
+    assert len(leg_id) == 36
+    files = glob.glob(os.path.join(get_data_dir(state), "*", f"*{leg_id}.yml"))
+    if len(files) == 1:
+        return files[0]
+    elif len(files) > 1:
+        raise ValueError(f"multiple files with same leg_id: {leg_id}")
+    else:
+        raise FileNotFoundError()
 
 
 def legacy_districts(**kwargs):

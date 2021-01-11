@@ -202,7 +202,6 @@ PERSON_FIELDS = {
     "email": [is_string],
     "suffix": [is_string],
     "gender": [is_string],
-    "summary": [is_multiline_string],
     "biography": [is_multiline_string],
     "birth_date": [is_fuzzy_date],
     "death_date": [is_fuzzy_date],
