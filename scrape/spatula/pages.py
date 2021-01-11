@@ -20,6 +20,8 @@ class Page:
                 raise Exception(
                     f"{self.__class__.__name__} has no source or get_source_from_input"
                 )
+        if isinstance(self.source, str):
+            self.source = URL(self.source)
         print(f"fetching {self.source} for {self.__class__.__name__}")
         data = self.source.get_data(scraper)
         self.set_raw_data(data)
