@@ -94,6 +94,14 @@ def get_new_filename(obj):
     return f"{name}-{id}.yml"
 
 
+def role_is_active(role, date=None):
+    if date is None:
+        date = datetime.datetime.utcnow().date().isoformat()
+    return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
+        role.get("start_date") is None or str(role.get("start_date")) <= date
+    )
+
+
 def find_file(leg_id, *, state="*"):
     if leg_id.startswith("ocd-person"):
         leg_id = leg_id.split("/")[1]
@@ -105,11 +113,6 @@ def find_file(leg_id, *, state="*"):
         raise ValueError(f"multiple files with same leg_id: {leg_id}")
     else:
         raise FileNotFoundError()
-
-
-def role_is_active(role):
-    now = datetime.datetime.utcnow().date().isoformat()
-    return str(role.get("end_date")) is None or str(role.get("end_date")) > now
 
 
 def legacy_districts(**kwargs):
