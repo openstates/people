@@ -1,8 +1,13 @@
 id: ocd-person/e40b342d-1732-4d1d-aa23-6d904e871e98
-name: Wayne H Steinhauer
+name: Wayne H. Steinhauer
 party:
 - name: Republican
 roles:
+- district: '9'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  type: lower
+  start_date: '2015-01-01'
+  end_date: '2016-12-31'
 - district: '9'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: lower
@@ -14,14 +19,20 @@ contact_details:
 - note: Capitol Office
   voice: 605-773-3821
 - note: District Office
-  address: 26581 E. Shore Pl.;Hartford, SD 57033
+  address: 26581 E. Shore Pl.Hartford, SD 57033
+  voice: 605-526-4269
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1521&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1426&Session=2019
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1069&Session=2016
+- url: https://sdlegislature.gov/Legislators/Profile/1858/Detail
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1521&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1426&Session=2019
-image: https://sdlegislature.gov/inc/img/Legislators/Steinhauer_2017.jpg
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1069&Session=2016
+- url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=1069&Session=2016
+- url: https://sdlegislature.gov/Legislators/Profile/1858/Detail
+image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/steinhauer_2019.jpg
 extras:
   occupation: Business Owner
 other_identifiers:
@@ -29,6 +40,15 @@ other_identifiers:
   scheme: legacy_openstates
 - identifier: ocd-person/b75ebfcb-ad11-4a39-bad5-cdda7d3de616
   scheme: openstates
-given_name: Wayne H
+- identifier: SDL000260
+  scheme: legacy_openstates
+- identifier: SDL000262
+  scheme: legacy_openstates
+- identifier: ocd-person/a9fa929b-d636-4d0d-8629-d4e753edff2b
+  scheme: openstates
+given_name: Wayne
 family_name: Steinhauer
 email: Wayne.Steinhauer@sdlegislature.gov
+other_names:
+- name: Wayne H Steinhauer
+middle_name: H.
