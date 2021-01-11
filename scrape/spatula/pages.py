@@ -1,3 +1,4 @@
+import json
 import lxml.html
 from .sources import URL
 
@@ -23,11 +24,15 @@ class Page:
         data = self.source.get_data(scraper)
         self.set_raw_data(data)
 
-    def __init__(self, input_val=None):
+    def __init__(self, input_val=None, *, source=None):
         """
         a Page can be instantiated with a url & options (TBD) needed to fetch it
         """
         self.input = input_val
+        if source:
+            if isinstance(source, str):
+                source = URL(source)
+            self.source = source
         # TODO: special case, maybe __url__ or something?
         if isinstance(input_val, dict) and "url" in input_val:
             self.source = URL(input_val["url"])
@@ -51,12 +56,21 @@ class HtmlPage(Page):
             self.root.make_links_absolute(self.source.url)
 
 
+class JsonPage(Page):
+    def set_raw_data(self, raw_data):
+        super().set_raw_data(raw_data)
+        self.data = json.loads(raw_data)
+
+
 class ListPage(Page):
     class SkipItem(Exception):
         pass
 
     def skip(self):
         raise self.SkipItem()
+
+    def process_item(self, item):
+        return item
 
 
 # TODO
@@ -84,15 +98,6 @@ class HtmlListPage(ListPage, HtmlPage):
 
     selector = None
 
-    # common for a list page to only work on one URL, in which case it is more clear
-    # to set it as a property
-    def __init__(self, url=None):
-        """
-        a Page can be instantiated with a url & options (TBD) needed to fetch it
-        """
-        if url is not None:
-            self.url = url
-
     def get_data(self):
         if not self.selector:
             raise NotImplementedError("must either provide selector or override scrape")
@@ -104,5 +109,12 @@ class HtmlListPage(ListPage, HtmlPage):
                 continue
             yield item
 
-    def process_item(self, item):
-        return item
+
+class JsonListPage(ListPage, JsonPage):
+    def get_data(self):
+        for item in self.data:
+            try:
+                item = self.process_item(item)
+            except self.SkipItem:
+                continue
+            yield item
