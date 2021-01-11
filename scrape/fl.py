@@ -41,12 +41,15 @@ class SenList(HtmlListPage):
         party = item.xpath("string(../../td[2])")
         leg_url = item.get("href")
 
-        return PartialPerson(name=fix_name(name), party=party, district=district, url=leg_url,)
+        return PartialPerson(name=name, party=party, district=district, url=leg_url,)
 
 
 class SenDetail(HtmlPage):
     contact_xpath = XPath('//h4[contains(text(), "Office")]')
     input_type = PartialPerson
+
+    def get_source_from_input(self):
+        return self.input.url
 
     def get_data(self):
         email = self.root.xpath('//a[contains(@href, "mailto:")]')[0].get("href").split(":")[-1]
@@ -158,7 +161,7 @@ class RepList(HtmlListPage):
         link = str(item.xpath("./a/@href")[0])
 
         return PartialPerson(
-            name=fix_name(name), party=str(party), district=str(district), image=image, url=link,
+            name=name, party=str(party), district=str(district), image=image, url=link,
         )
 
 
