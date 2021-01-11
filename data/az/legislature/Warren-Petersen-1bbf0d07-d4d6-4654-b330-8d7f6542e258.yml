@@ -11,17 +11,23 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: lower
   start_date: '2019-01-14'
+  end_date: '2021-01-11'
+- district: '12'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: upper
+  start_date: '2021-01-11'
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1914
 - note: linkedin
   url: https://www.linkedin.com/in/warren-petersen-68487425/
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1966
 contact_details:
 - note: Capitol Office
-  address: House of Representatives;1700 West Washington;Room Room 208;Phoenix, AZ
-    85007
+  address: Senate;1700 West Washington;Room Room 304;Phoenix, AZ 85007
   voice: 602-926-4136
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
+- url: http://www.azleg.gov/MemberRoster/?body=S
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/House/PETERSEN.gif
 other_identifiers:
 - identifier: AZL000386
@@ -34,10 +40,12 @@ other_identifiers:
   scheme: openstates
 - identifier: AZL000327
   scheme: legacy_openstates
+- identifier: ocd-person/1dc17457-31ec-43f7-9668-41d8dae4ad17
+  scheme: openstates
 given_name: Warren
 family_name: Petersen
 other_names:
-  - name: Warren H. Petersen
+- name: Warren H. Petersen
 ids:
   twitter: votewarren
 email: wpetersen@azleg.gov

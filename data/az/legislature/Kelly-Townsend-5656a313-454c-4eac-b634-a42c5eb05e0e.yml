@@ -6,21 +6,29 @@ roles:
 - district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: lower
+  end_date: '2020-01-10'
+- district: '16'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  type: upper
+  start_date: '2020-01-10'
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1873
 - note: linkedin
   url: https://www.linkedin.com/in/kelly-townsend-5b0b3228/
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1970
 contact_details:
 - note: Capitol Office
-  address: House of Representatives;1700 West Washington;Room Room 111;Phoenix, AZ
-    85007
+  address: Senate;1700 West Washington;Room Room 301;Phoenix, AZ 85007
   voice: 602-926-4467
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
+- url: http://www.azleg.gov/MemberRoster/?body=S
 image: https://www.azleg.gov/alisImages/MemberPhotos/54leg/House/TOWNSEND.gif
 other_identifiers:
 - identifier: AZL000294
   scheme: legacy_openstates
+- identifier: ocd-person/1750052f-58cf-43e4-881e-eb79474ef35c
+  scheme: openstates
 given_name: Kelly
 family_name: Townsend
 ids:
