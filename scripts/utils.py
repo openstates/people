@@ -98,9 +98,10 @@ def role_is_active(role, date=None):
     if date is None:
         date = datetime.datetime.utcnow().date().isoformat()
     return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
-        role.get("start_date") is None or str(role.get("start_date")) < date
+        role.get("start_date") is None or str(role.get("start_date")) <= date
     )
-  
+
+
 def find_file(leg_id, *, state="*"):
     if leg_id.startswith("ocd-person"):
         leg_id = leg_id.split("/")[1]
