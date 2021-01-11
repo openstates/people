@@ -4,6 +4,7 @@ import importlib
 import pprint
 from scrapelib import Scraper
 from .pages import ListPage
+from .sources import URL
 
 
 def get_class(dotted_name):
@@ -30,7 +31,8 @@ def cli():
 @click.argument("class_name")
 @click.option("-i", "--interactive")
 @click.option("-d", "--data", multiple=True)
-def test(class_name, interactive, data):
+@click.option("-s", "--source")
+def test(class_name, interactive, data, source):
     Cls = get_class(class_name)
     s = Scraper()
 
@@ -56,6 +58,10 @@ def test(class_name, interactive, data):
         page = Cls(input_type(**fake_input))
     else:
         page = Cls(fake_input)
+
+    # special case for passing a single URL source
+    if source:
+        page.source = URL(source)
 
     # fetch data after input is handled, since we might need to build the source
     page._fetch_data(s)
