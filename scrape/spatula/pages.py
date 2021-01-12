@@ -20,6 +20,8 @@ class Page:
                 raise Exception(
                     f"{self.__class__.__name__} has no source or get_source_from_input"
                 )
+        if isinstance(self.source, str):
+            self.source = URL(self.source)
         print(f"fetching {self.source} for {self.__class__.__name__}")
         data = self.source.get_data(scraper)
         self.set_raw_data(data)
@@ -29,15 +31,14 @@ class Page:
         a Page can be instantiated with a url & options (TBD) needed to fetch it
         """
         self.input = input_val
+        # possibly override existing source, useful during dev
         if source:
-            if isinstance(source, str):
-                source = URL(source)
             self.source = source
-        # TODO: special case, maybe __url__ or something?
-        if isinstance(input_val, dict) and "url" in input_val:
-            self.source = URL(input_val["url"])
-        if hasattr(input_val, "url"):
-            self.source = URL(input_val.url)
+        # TODO: restore special case? maybe __url__ or something?
+        # if isinstance(input_val, dict) and "url" in input_val:
+        #     self.source = URL(input_val["url"])
+        # if hasattr(input_val, "url"):
+        #     self.source = URL(input_val.url)
 
     def set_raw_data(self, raw_data):
         """ callback to handle raw data returned by grabbing the URL """

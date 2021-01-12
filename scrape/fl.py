@@ -4,6 +4,7 @@ import logging
 from common import Person
 from spatula.pages import HtmlListPage, HtmlPage
 from spatula.selectors import XPath
+from spatula.core import Workflow
 
 log = logging.getLogger("fl")
 
@@ -17,10 +18,12 @@ def fix_name(name):
 
 
 @attr.s(auto_attribs=True)
-class SenPartial:
+class PartialPerson:
     name: str
     party: str
     district: str
+    url: str
+    image: str = ""  # default empty, required for Rep
 
 
 class SenList(HtmlListPage):
@@ -38,12 +41,15 @@ class SenList(HtmlListPage):
         party = item.xpath("string(../../td[2])")
         leg_url = item.get("href")
 
-        return SenPartial(name=fix_name(name), party=party, district=district, url=leg_url,)
+        return PartialPerson(name=name, party=party, district=district, url=leg_url,)
 
 
 class SenDetail(HtmlPage):
     contact_xpath = XPath('//h4[contains(text(), "Office")]')
-    input_type = SenPartial
+    input_type = PartialPerson
+
+    def get_source_from_input(self):
+        return self.input.url
 
     def get_data(self):
         email = self.root.xpath('//a[contains(@href, "mailto:")]')[0].get("href").split(":")[-1]
@@ -101,33 +107,43 @@ class SenDetail(HtmlPage):
 
 
 class RepContact(HtmlPage):
-    def get_url(self):
+    input_type = PartialPerson
+
+    def get_source_from_input(self):
         """
         Transform from
-            /Sections/Representatives/details.aspx?MemberId=4640&LegislativeTermId=88
+            /Sections/Representatives/details.aspx?MemberId=#&LegislativeTermId=#
         to:
-            /Sections/Representatives/contactmember.aspx?MemberId=4737&SessionId=89
+            /Sections/Representatives/contactmember.aspx?MemberId=#&SessionId=#
         """
-        details_url = self.obj.links[0]["url"]
-        contact_url = details_url.replace("details.aspx", "contactmember.aspx")
-        return contact_url
+        return self.input.url.replace("details.aspx", "contactmember.aspx")
 
-    def scrape(self):
+    def get_data(self):
+        p = Person(
+            state="fl",
+            chamber="lower",
+            name=fix_name(self.input.name),
+            party=str(self.input.party),
+            district=str(self.input.district),
+            image=self.input.image,
+        )
         for otype in ("district", "capitol"):
-            odoc = self.doc.xpath(f"//h3[@id='{otype}-office']/following-sibling::ul")
+            odoc = self.root.xpath(f"//h3[@id='{otype}-office']/following-sibling::ul")
             if odoc:
                 odoc = odoc[0]
             else:
                 continue
             spans = odoc.xpath(".//span")
 
-            office = self.obj.capitol_office if otype == "capitol" else self.obj.district_office
+            office = p.capitol_office if otype == "capitol" else p.district_office
             office.address = "; ".join(
                 line.strip()
                 for line in spans[0].text_content().strip().splitlines()
                 if line.strip()
             )
             office.voice = spans[1].text_content().strip()
+
+        return p
 
 
 class RepList(HtmlListPage):
@@ -144,15 +160,10 @@ class RepList(HtmlListPage):
         image = self.IMAGE_BASE + item.xpath(".//img")[0].attrib["data-src"]
         link = str(item.xpath("./a/@href")[0])
 
-        rep = Person(
-            name=fix_name(name),
-            state="fl",
-            party=str(party),
-            district=str(district),
-            chamber="lower",
-            image=image,
+        return PartialPerson(
+            name=name, party=str(party), district=str(district), image=image, url=link,
         )
-        rep.add_link(link)
-        rep.add_source(self.source.url)
-        rep.add_source(link)
-        return rep
+
+
+senators = Workflow(SenList(), SenDetail)
+reps = Workflow(RepList(), RepContact)
