@@ -1,5 +1,6 @@
 from spatula.pages import HtmlListPage
 from spatula.selectors import CSS
+from spatula.core import Workflow
 from common import Person
 
 
@@ -50,8 +51,8 @@ class SenList(HtmlListPage):
             party=self.PARTY_MAP[party.text],
             image=image_url,
         )
-        p.capitol_office.voice = phone.text_content()
-        p.capitol_office.address = office.text_content()
+        p.capitol_office.voice = str(phone.text_content())
+        p.capitol_office.address = str(office.text_content())
         p.add_source(self.source.url)
         p.add_link(leg_url)
         p.add_link(contact_url, note="Contact")
@@ -91,3 +92,7 @@ class RepList(HtmlListPage):
         p.capitol_office.voice = phone.text_content()
         p.capitol_office.address = office
         return p
+
+
+senators = Workflow(SenList())
+reps = Workflow(RepList())
