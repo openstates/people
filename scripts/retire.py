@@ -41,31 +41,32 @@ def validate_end_date(ctx, param, value):
 
 @click.command()
 @click.argument("end_date", callback=validate_end_date)
-@click.argument("filename")
+@click.argument("filenames", nargs=-1)
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
-def retire(end_date, filename, reason, death):
+def retire(end_date, filenames, reason, death):
     """
     Retire a legislator, given END_DATE and FILENAME.
 
     Will set end_date on active roles.
     """
-    # end the person's active roles & re-save
-    with open(filename) as f:
-        person = load_yaml(f)
-    if death:
-        reason = "Deceased"
-    person, num = retire_person(person, end_date, reason, death)
-    dump_obj(person, filename=filename)
+    for filename in filenames:
+        # end the person's active roles & re-save
+        with open(filename) as f:
+            person = load_yaml(f)
+        if death:
+            reason = "Deceased"
+        person, num = retire_person(person, end_date, reason, death)
+        dump_obj(person, filename=filename)
 
-    if num == 0:
-        click.secho("no active roles to retire", fg="red")
-    elif num == 1:
-        click.secho("retired person")
-    else:
-        click.secho(f"retired person from {num} roles")
+        if num == 0:
+            click.secho("no active roles to retire", fg="red")
+        elif num == 1:
+            click.secho("retired person")
+        else:
+            click.secho(f"retired person from {num} roles")
 
-    move_file(filename)
+        move_file(filename)
 
 
 if __name__ == "__main__":
