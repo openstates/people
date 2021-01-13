@@ -6,21 +6,26 @@ roles:
 - district: '46'
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: Room 219E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3123
-- note: District Office
-  address: PO Box 910;Weston, WV, 26452
-  voice: 304-613-2327
+  end_date: '2020-12-31'
+- district: '12'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  type: upper
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
+- url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
-image: http://www.legis.state.wv.us/images/members/2019/house/martin_patrick.jpg
+- url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
+image: http://www.legis.state.wv.us/images/members/2021/senate/martin_patrick.jpg
 other_identifiers:
 - identifier: WVL000354
   scheme: legacy_openstates
 given_name: Patrick
 family_name: Martin
-email: patrick.martin@wvhouse.gov
+email: patrick.martin@wvsenate.gov
+contact_details:
+- address: Room 213W, Building 1;State Capitol Complex;Charleston, WV 25305
+  note: Capitol Office
+  voice: 304-357-7845
+- address: P.O. Box 910;Weston, WV 26452
+  note: District Office
