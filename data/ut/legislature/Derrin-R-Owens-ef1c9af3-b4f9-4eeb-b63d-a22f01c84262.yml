@@ -6,23 +6,32 @@ roles:
 - district: '58'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: lower
+  end_date: 2020-12-31
+- district: '24'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  type: upper
+  start_date: 2021-01-01
 contact_details:
 - note: District Office
-  address: PO BOX 127, FOUNTAIN GREEN, UT, 84632
-  voice: 435-851-1284
+  address: P.O. Box 127, Fountain Green, UT, 84632
+  voice: 435-851-1285
 links:
-- url: http://house.utah.gov/rep/OWENSD
+- url: https://senate.utah.gov/derrin-owens
 sources:
 - url: http://le.utah.gov/data/legislators.json
 image: https://le.utah.gov/images/legislator/OWENSD.jpg
 extras:
   links:
+  - https://le.utah.gov/house2/CofI/COFIOWENSD4.pdf
+  - https://le.utah.gov/house2/CofI/COFIOWENSD3.pdf
+  - https://le.utah.gov/house2/CofI/COFIOWENSD2.pdf
+  - https://le.utah.gov/house2/CofI/COFIOWENSD1.pdf
   - https://le.utah.gov/house2/CofI/COFIOWENSD.pdf
   - https://le.utah.gov/house2/CofI/OWENSD1.pdf
   - https://le.utah.gov/house2/CofI/OWENSD.pdf
   - http://le.utah.gov/house2/CofI/dowens2.pdf
   - http://le.utah.gov/house2/CofI/dowens.pdf
-  - http://www.disclosures.utah.gov/Search/PublicSearch
+  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414375
 other_identifiers:
 - identifier: UTL000282
   scheme: legacy_openstates
