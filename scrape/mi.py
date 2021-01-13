@@ -56,3 +56,38 @@ class SenList(HtmlListPage):
         p.add_link(leg_url)
         p.add_link(contact_url, note="Contact")
         return p
+
+
+class RepList(HtmlListPage):
+    source = "https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true"
+    selector = CSS("#grvRepInfo tr", num_items=111)
+    office_names = {
+        "SHOB": "South House Office Building",
+        "NHOB": "North House Office Building",
+        "CB": "Capitol Building",
+    }
+
+    def process_item(self, item):
+        website, district, name, party, office, phone, email = item.getchildren()
+
+        # skip header row
+        if website.tag == "th":
+            self.skip()
+
+        office = office.text_content()
+        for abbr, full in self.office_names.items():
+            office = office.replace(abbr, full)
+
+        p = Person(
+            name=name.text_content(),
+            state="mi",
+            chamber="lower",
+            district=district.text_content().lstrip("0"),
+            party=party.text_content(),
+            email=email.text_content(),
+        )
+        p.add_link(CSS("a").match_one(website).get("href"))
+        p.add_source(self.source.url)
+        p.capitol_office.voice = phone.text_content()
+        p.capitol_office.address = office
+        return p
