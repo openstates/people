@@ -57,6 +57,12 @@ class HtmlPage(Page):
             self.root.make_links_absolute(self.source.url)
 
 
+class XmlPage(Page):
+    def set_raw_data(self, raw_data):
+        super().set_raw_data(raw_data)
+        self.root = lxml.etree.fromstring(raw_data)
+
+
 class JsonPage(Page):
     def set_raw_data(self, raw_data):
         super().set_raw_data(raw_data)
@@ -89,9 +95,11 @@ class ListPage(Page):
 #         return item
 
 
-class HtmlListPage(ListPage, HtmlPage):
+class LxmlListPage(ListPage):
     """
-    Simplification for HTML pages that get a list of items and process them.
+    Base class for XML and HTML subclasses below, only difference is which parser is used.
+
+    Simplification for pages that get a list of items and process them.
 
     When overriding the class, instead of providing get_data, one must only provide
     a selector and a process_item function.
@@ -109,6 +117,14 @@ class HtmlListPage(ListPage, HtmlPage):
             except self.SkipItem:
                 continue
             yield item
+
+
+class HtmlListPage(LxmlListPage, HtmlPage):
+    pass
+
+
+class XmlListPage(LxmlListPage, XmlPage):
+    pass
 
 
 class JsonListPage(ListPage, JsonPage):
