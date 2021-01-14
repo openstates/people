@@ -2,18 +2,19 @@ import attr
 import click
 import importlib
 import pprint
+from typing import List
 from scrapelib import Scraper
 from .pages import ListPage
 from .core import URL
 
 
-def get_class(dotted_name):
+def get_class(dotted_name: str):
     mod_name, cls_name = dotted_name.rsplit(".", 1)
     mod = importlib.import_module(mod_name)
     return getattr(mod, cls_name)
 
 
-def _display(obj):
+def _display(obj) -> str:
     if isinstance(obj, dict):
         return pprint.pformat(obj)
     elif hasattr(obj, "to_dict"):
@@ -23,7 +24,7 @@ def _display(obj):
 
 
 @click.group()
-def cli():
+def cli() -> None:
     pass
 
 
@@ -32,7 +33,7 @@ def cli():
 @click.option("-i", "--interactive")
 @click.option("-d", "--data", multiple=True)
 @click.option("-s", "--source")
-def test(class_name, interactive, data, source):
+def test(class_name: str, interactive: bool, data: List[str], source: str) -> None:
     Cls = get_class(class_name)
     s = Scraper()
 
@@ -76,7 +77,7 @@ def test(class_name, interactive, data, source):
 @cli.command()
 @click.argument("workflow_name")
 @click.option("-o", "--output-dir", default=None)
-def scrape(workflow_name, output_dir):
+def scrape(workflow_name: str, output_dir: str) -> None:
     workflow = get_class(workflow_name)
     workflow.execute(output_dir=output_dir)
 

@@ -1,4 +1,5 @@
 import lxml.html
+import scrapelib
 from .core import URL
 
 
@@ -6,7 +7,7 @@ class Page:
     source = None
     dependencies = {}
 
-    def _fetch_data(self, scraper):
+    def _fetch_data(self, scraper: scrapelib.Scraper) -> None:
         """
         ensure that the page has all of its data, this is guaranteed to be called exactly once
         before process_page is invoked
@@ -35,7 +36,7 @@ class Page:
         if source:
             self.source = source
 
-    def postprocess_response(self):
+    def postprocess_response(self) -> None:
         """ this is called after source.get_response but before self.process_page """
         pass
 
@@ -49,7 +50,7 @@ class HtmlPage(Page):
     self.root: preprocessed lxml.html-parsed HTML element
     """
 
-    def postprocess_response(self):
+    def postprocess_response(self) -> None:
         self.root = lxml.html.fromstring(self.response.content)
         if hasattr(self.source, "url"):
             self.root.make_links_absolute(self.source.url)
@@ -60,7 +61,7 @@ class XmlPage(Page):
     self.root: preprocessed lxml.etree-parsed XML element
     """
 
-    def postprocess_response(self):
+    def postprocess_response(self) -> None:
         self.root = lxml.etree.fromstring(self.response.content)
 
 
@@ -69,7 +70,7 @@ class JsonPage(Page):
     self.data: preprocessed JSON
     """
 
-    def postprocess_response(self):
+    def postprocess_response(self) -> None:
         self.data = self.response.json()
 
 
@@ -77,7 +78,7 @@ class ListPage(Page):
     class SkipItem(Exception):
         pass
 
-    def skip(self):
+    def skip(self) -> None:
         raise self.SkipItem()
 
     def process_item(self, item):

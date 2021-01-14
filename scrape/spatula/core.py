@@ -1,19 +1,20 @@
 import os
 import glob
 import datetime
+from typing import Optional
 import requests
 import scrapelib
 from utils import dump_obj
 
 
 class Workflow:
-    def __init__(self, initial_page, page_processor_cls=None, scraper=None):
+    def __init__(self, initial_page, page_processor_cls=None, scraper: scrapelib.Scraper = None):
         self.initial_page = initial_page
         self.page_processor_cls = page_processor_cls
         if not scraper:
             self.scraper = scrapelib.Scraper()
 
-    def execute(self, output_dir=None):
+    def execute(self, output_dir: str = None) -> None:
         count = 0
         if not output_dir:
             dirn = 1
@@ -50,24 +51,24 @@ class Source:
 
 
 class URL(Source):
-    def __init__(self, url, method="GET", data=None, headers=None):
+    def __init__(self, url: str, method: str = "GET", data: dict = None, headers: dict = None):
         self.url = url
         self.method = method
         self.data = data
         self.headers = headers
 
-    def get_response(self, scraper) -> requests.models.Response:
+    def get_response(self, scraper: scrapelib.Scraper) -> Optional[requests.models.Response]:
         return scraper.request(
             method=self.method, url=self.url, data=self.data, headers=self.headers
         )
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.url
 
 
 class NullSource(Source):
-    def get_response(self, scraper):
+    def get_response(self, scraper: scrapelib.Scraper) -> Optional[requests.models.Response]:
         return None
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.__class__.__name__
