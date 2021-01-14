@@ -1,4 +1,3 @@
-import json
 import lxml.html
 from .core import URL
 
@@ -8,6 +7,10 @@ class Page:
     dependencies = {}
 
     def _fetch_data(self, scraper):
+        """
+        ensure that the page has all of its data, this is guaranteed to be called exactly once
+        before get_data is invoked
+        """
         # process dependencies first
         for val, dep in self.dependencies.items():
             dep._fetch_data(scraper)
@@ -23,26 +26,18 @@ class Page:
         if isinstance(self.source, str):
             self.source = URL(self.source)
         print(f"fetching {self.source} for {self.__class__.__name__}")
-        data = self.source.get_data(scraper)
-        self.set_raw_data(data)
+        self.response = self.source.get_response(scraper)
+        self.postprocess_response()
 
     def __init__(self, input_val=None, *, source=None):
-        """
-        a Page can be instantiated with a url & options (TBD) needed to fetch it
-        """
         self.input = input_val
-        # possibly override existing source, useful during dev
+        # allow possibility to override default source, useful during dev
         if source:
             self.source = source
-        # TODO: restore special case? maybe __url__ or something?
-        # if isinstance(input_val, dict) and "url" in input_val:
-        #     self.source = URL(input_val["url"])
-        # if hasattr(input_val, "url"):
-        #     self.source = URL(input_val.url)
 
-    def set_raw_data(self, raw_data):
-        """ callback to handle raw data returned by grabbing the URL """
-        self.raw_data = raw_data
+    def postprocess_response(self):
+        """ this is called after source.get_response but before self.process_page """
+        pass
 
     def get_data(self):
         """ return data extracted from this page and this page alone """
@@ -50,23 +45,20 @@ class Page:
 
 
 class HtmlPage(Page):
-    def set_raw_data(self, raw_data):
-        super().set_raw_data(raw_data)
-        self.root = lxml.html.fromstring(raw_data)
+    def postprocess_response(self):
+        self.root = lxml.html.fromstring(self.response.content)
         if hasattr(self.source, "url"):
             self.root.make_links_absolute(self.source.url)
 
 
 class XmlPage(Page):
-    def set_raw_data(self, raw_data):
-        super().set_raw_data(raw_data)
-        self.root = lxml.etree.fromstring(raw_data)
+    def postprocess_response(self):
+        self.root = lxml.etree.fromstring(self.response.content)
 
 
 class JsonPage(Page):
-    def set_raw_data(self, raw_data):
-        super().set_raw_data(raw_data)
-        self.data = json.loads(raw_data)
+    def postprocess_response(self):
+        self.data = self.response.json()
 
 
 class ListPage(Page):
@@ -83,7 +75,6 @@ class ListPage(Page):
 # TODO
 # class CSVListPage(ListPage):
 #     def get_data(self):
-#         print(self.raw_data)
 #         for item in items:
 #             try:
 #                 item = self.process_item(item)

@@ -1,6 +1,7 @@
 import os
 import glob
 import datetime
+import requests
 import scrapelib
 from utils import dump_obj
 
@@ -55,17 +56,17 @@ class URL(Source):
         self.data = data
         self.headers = headers
 
-    def get_data(self, scraper):
+    def get_response(self, scraper) -> requests.models.Response:
         return scraper.request(
             method=self.method, url=self.url, data=self.data, headers=self.headers
-        ).content
+        )
 
     def __str__(self):
         return self.url
 
 
 class NullSource(Source):
-    def get_data(self, scraper):
+    def get_response(self, scraper):
         return None
 
     def __str__(self):

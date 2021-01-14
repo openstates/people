@@ -36,6 +36,10 @@ def test(class_name, interactive, data, source):
     Cls = get_class(class_name)
     s = Scraper()
 
+    # special case for passing a single URL source
+    if source:
+        source = URL(source)
+
     # build fake input from command line data if present
     fake_input = {}
     for item in data:
@@ -55,13 +59,9 @@ def test(class_name, interactive, data, source):
                 fake_input[field.name] = dummy_val
                 print(f"  {field.name}: {dummy_val}")
 
-        page = Cls(input_type(**fake_input))
+        page = Cls(input_type(**fake_input), source=source)
     else:
-        page = Cls(fake_input)
-
-    # special case for passing a single URL source
-    if source:
-        page.source = URL(source)
+        page = Cls(fake_input, source=source)
 
     # fetch data after input is handled, since we might need to build the source
     page._fetch_data(s)
