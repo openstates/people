@@ -33,11 +33,11 @@ class Workflow:
                     raise FileExistsError(f"{output_dir} exists and is not empty")
 
         self.initial_page._fetch_data(self.scraper)
-        for i, item in enumerate(self.initial_page.get_data()):
+        for i, item in enumerate(self.initial_page.process_page()):
             if self.page_processor_cls:
                 page = self.page_processor_cls(item)
                 page._fetch_data(self.scraper)
-                data = page.get_data()
+                data = page.process_page()
             else:
                 data = item
             count += 1

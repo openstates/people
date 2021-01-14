@@ -67,10 +67,10 @@ def test(class_name, interactive, data, source):
     page._fetch_data(s)
 
     if issubclass(Cls, ListPage):
-        for i, item in enumerate(page.get_data()):
+        for i, item in enumerate(page.process_page()):
             print(f"{i}:", _display(item))
     else:
-        print(_display(page.get_data()))
+        print(_display(page.process_page()))
 
 
 @cli.command()
