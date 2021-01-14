@@ -4,7 +4,7 @@ import importlib
 import pprint
 from scrapelib import Scraper
 from .pages import ListPage
-from .sources import URL
+from .core import URL
 
 
 def get_class(dotted_name):
