@@ -23,7 +23,7 @@ class PartyAugmentation(HtmlPage):
             if len(rows) >= 150:
                 return rows
 
-    def get_data(self):
+    def process_page(self):
         mapping = {}
         rows = self.find_rows()
         for row in rows:

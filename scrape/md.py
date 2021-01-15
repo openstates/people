@@ -47,7 +47,7 @@ class PersonDetail(HtmlPage):
 
     image_sel = CSS("img.details-page-image-padding")
 
-    def get_data(self):
+    def process_page(self):
         # annapolis_info = (
         #     XPath("//dt[text()='Annapolis Info']/following-sibling::dd[1]")
         #     .match_one(self.root)

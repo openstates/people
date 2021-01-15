@@ -41,7 +41,7 @@ class HouseDetail(HtmlPage):
     def get_source_from_input(self):
         return self.input["url"]
 
-    def get_data(self):
+    def process_page(self):
         name = self.name_css.match_one(self.root).text.split(maxsplit=1)[1]
         p = Person(
             name=name,

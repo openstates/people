@@ -47,7 +47,7 @@ class HouseDetail(HtmlPage):
     def get_source_from_input(self):
         return URL(self.input.url)
 
-    def get_data(self):
+    def process_page(self):
         party = {"D": "Democratic", "R": "Republican"}[self.input.party]
 
         photo = CSS("img#ContentPlaceHolder1_imgPhoto1").match_one(self.root).get("src")

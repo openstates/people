@@ -54,7 +54,7 @@ We'd go about writing this by writing individual classes, perhaps:
 
 `Page.set_raw_data`: generally preprocesses fetched remote data (e.g. parses HTML or CSV).  Most scrapers will use a Page subclass like HtmlPage and not need to implement their own version of this. (see scraper/fetch separation below for more thoughts)
 
-`Page.get_data`: function that will convert the raw data into an object of the desired type (Person, Bill, or perhaps a list or dictionary for supplemental pages)
+`Page.process_page`: function that will convert the raw data into an object of the desired type (Person, Bill, or perhaps a list or dictionary for supplemental pages)
 
 And two important conventions:
 * `ListPage` type classes should return (yield?) lists of dictionaries that have 'url' keys.
@@ -71,7 +71,7 @@ senate_members = Workflow(
 )
 ```
 
-This workflow can then be invoked from the command line, which will call `PersonDetail.get_data` on every page yielded by `PersonList.get_data`.
+This workflow can then be invoked from the command line, which will call `PersonDetail.process_page` on every page yielded by `PersonList.process_page`.
 
 In a sense, that's it.  A scraper that uses an API or bulk data might only need these.  We can also add some helpers, like `HtmlListPage` that handles common use cases:
 

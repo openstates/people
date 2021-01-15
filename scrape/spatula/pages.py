@@ -1,5 +1,7 @@
-import json
+import io
+import csv
 import lxml.html
+import scrapelib
 from .core import URL
 
 
@@ -7,11 +9,15 @@ class Page:
     source = None
     dependencies = {}
 
-    def _fetch_data(self, scraper):
+    def _fetch_data(self, scraper: scrapelib.Scraper) -> None:
+        """
+        ensure that the page has all of its data, this is guaranteed to be called exactly once
+        before process_page is invoked
+        """
         # process dependencies first
         for val, dep in self.dependencies.items():
             dep._fetch_data(scraper)
-            setattr(self, val, dep.get_data())
+            setattr(self, val, dep.process_page())
 
         if not self.source:
             if hasattr(self, "get_source_from_input"):
@@ -23,76 +29,78 @@ class Page:
         if isinstance(self.source, str):
             self.source = URL(self.source)
         print(f"fetching {self.source} for {self.__class__.__name__}")
-        data = self.source.get_data(scraper)
-        self.set_raw_data(data)
+        self.response = self.source.get_response(scraper)
+        self.postprocess_response()
 
     def __init__(self, input_val=None, *, source=None):
-        """
-        a Page can be instantiated with a url & options (TBD) needed to fetch it
-        """
         self.input = input_val
-        # possibly override existing source, useful during dev
+        # allow possibility to override default source, useful during dev
         if source:
             self.source = source
-        # TODO: restore special case? maybe __url__ or something?
-        # if isinstance(input_val, dict) and "url" in input_val:
-        #     self.source = URL(input_val["url"])
-        # if hasattr(input_val, "url"):
-        #     self.source = URL(input_val.url)
 
-    def set_raw_data(self, raw_data):
-        """ callback to handle raw data returned by grabbing the URL """
-        self.raw_data = raw_data
+    def postprocess_response(self) -> None:
+        """ this is called after source.get_response but before self.process_page """
+        pass
 
-    def get_data(self):
+    def process_page(self):
         """ return data extracted from this page and this page alone """
         raise NotImplementedError()
 
 
 class HtmlPage(Page):
-    def set_raw_data(self, raw_data):
-        super().set_raw_data(raw_data)
-        self.root = lxml.html.fromstring(raw_data)
+    """
+    self.root: preprocessed lxml.html-parsed HTML element
+    """
+
+    def postprocess_response(self) -> None:
+        self.root = lxml.html.fromstring(self.response.content)
         if hasattr(self.source, "url"):
             self.root.make_links_absolute(self.source.url)
 
 
 class XmlPage(Page):
-    def set_raw_data(self, raw_data):
-        super().set_raw_data(raw_data)
-        self.root = lxml.etree.fromstring(raw_data)
+    """
+    self.root: preprocessed lxml.etree-parsed XML element
+    """
+
+    def postprocess_response(self) -> None:
+        self.root = lxml.etree.fromstring(self.response.content)
 
 
 class JsonPage(Page):
-    def set_raw_data(self, raw_data):
-        super().set_raw_data(raw_data)
-        self.data = json.loads(raw_data)
+    """
+    self.data: preprocessed JSON
+    """
+
+    def postprocess_response(self) -> None:
+        self.data = self.response.json()
 
 
 class ListPage(Page):
     class SkipItem(Exception):
         pass
 
-    def skip(self):
+    def skip(self) -> None:
         raise self.SkipItem()
 
     def process_item(self, item):
         return item
 
 
-# TODO
-# class CSVListPage(ListPage):
-#     def get_data(self):
-#         print(self.raw_data)
-#         for item in items:
-#             try:
-#                 item = self.process_item(item)
-#             except self.SkipItem:
-#                 continue
-#             yield item
+class CsvListPage(ListPage):
+    def postprocess_response(self) -> None:
+        self.reader = csv.DictReader(io.StringIO(self.response.text))
 
-#     def process_item(self, item):
-#         return item
+    def process_page(self):
+        for item in self.reader:
+            try:
+                item = self.process_item(item)
+            except self.SkipItem:
+                continue
+            yield item
+
+    def process_item(self, item):
+        return item
 
 
 class LxmlListPage(ListPage):
@@ -101,13 +109,13 @@ class LxmlListPage(ListPage):
 
     Simplification for pages that get a list of items and process them.
 
-    When overriding the class, instead of providing get_data, one must only provide
+    When overriding the class, instead of providing process_page, one must only provide
     a selector and a process_item function.
     """
 
     selector = None
 
-    def get_data(self):
+    def process_page(self):
         if not self.selector:
             raise NotImplementedError("must either provide selector or override scrape")
         items = self.selector.match(self.root)
@@ -128,7 +136,7 @@ class XmlListPage(LxmlListPage, XmlPage):
 
 
 class JsonListPage(ListPage, JsonPage):
-    def get_data(self):
+    def process_page(self):
         for item in self.data:
             try:
                 item = self.process_item(item)

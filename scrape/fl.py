@@ -51,7 +51,7 @@ class SenDetail(HtmlPage):
     def get_source_from_input(self):
         return self.input.url
 
-    def get_data(self):
+    def process_page(self):
         email = self.root.xpath('//a[contains(@href, "mailto:")]')[0].get("href").split(":")[-1]
 
         p = Person(
@@ -118,7 +118,7 @@ class RepContact(HtmlPage):
         """
         return self.input.url.replace("details.aspx", "contactmember.aspx")
 
-    def get_data(self):
+    def process_page(self):
         p = Person(
             state="fl",
             chamber="lower",

@@ -42,7 +42,7 @@ class HouseDetail(HtmlPage):
     def get_source_from_input(self):
         return self.input.url
 
-    def get_data(self):
+    def process_page(self):
         # construct person from the details from above
         p = Person(
             state="oh",
