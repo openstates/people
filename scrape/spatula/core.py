@@ -8,9 +8,12 @@ from utils import dump_obj
 
 
 class Workflow:
-    def __init__(self, initial_page, page_processor_cls=None, scraper: scrapelib.Scraper = None):
+    def __init__(self, initial_page, page_processors=None, *, scraper: scrapelib.Scraper = None):
         self.initial_page = initial_page
-        self.page_processor_cls = page_processor_cls
+        if not isinstance(page_processors, (list, tuple)):
+            self.page_processors = [page_processors]
+        else:
+            self.page_processors = page_processors
         if not scraper:
             self.scraper = scrapelib.Scraper()
 
@@ -35,12 +38,11 @@ class Workflow:
 
         self.initial_page._fetch_data(self.scraper)
         for i, item in enumerate(self.initial_page.process_page()):
-            if self.page_processor_cls:
-                page = self.page_processor_cls(item)
+            data = item
+            for pp_cls in self.page_processors:
+                page = pp_cls(data)
                 page._fetch_data(self.scraper)
                 data = page.process_page()
-            else:
-                data = item
             count += 1
             dump_obj(data.to_dict(), output_dir=output_dir)
         print(f"success: wrote {count} objects to {output_dir}")
