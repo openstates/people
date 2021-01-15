@@ -1,3 +1,5 @@
+import io
+import csv
 import lxml.html
 import scrapelib
 from .core import URL
@@ -85,18 +87,20 @@ class ListPage(Page):
         return item
 
 
-# TODO
-# class CSVListPage(ListPage):
-#     def process_page(self):
-#         for item in items:
-#             try:
-#                 item = self.process_item(item)
-#             except self.SkipItem:
-#                 continue
-#             yield item
+class CsvListPage(ListPage):
+    def postprocess_response(self) -> None:
+        self.reader = csv.DictReader(io.StringIO(self.response.text))
 
-#     def process_item(self, item):
-#         return item
+    def process_page(self):
+        for item in self.reader:
+            try:
+                item = self.process_item(item)
+            except self.SkipItem:
+                continue
+            yield item
+
+    def process_item(self, item):
+        return item
 
 
 class LxmlListPage(ListPage):
