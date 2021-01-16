@@ -15,7 +15,7 @@ class FormSource:
         self.form_xpath = form_xpath
         self.button_label = button_label
 
-    def get_data(self, scraper):
+    def process_page(self, scraper):
         resp = scraper.get(self.url)
         root = lxml.html.fromstring(resp.content)
         form = root.xpath(self.form_xpath)[0]

@@ -6,6 +6,9 @@ from common import Person
 
 
 class PersonDetail(HtmlPage):
+    def get_source_from_input(self):
+        return str(self.input["url"])
+
     def parse_address_block(self, block):
         state = "address"
         # group lines by type
@@ -44,7 +47,7 @@ class PersonDetail(HtmlPage):
 
     image_sel = CSS("img.details-page-image-padding")
 
-    def get_data(self):
+    def process_page(self):
         # annapolis_info = (
         #     XPath("//dt[text()='Annapolis Info']/following-sibling::dd[1]")
         #     .match_one(self.root)
@@ -69,9 +72,8 @@ class PersonDetail(HtmlPage):
             chamber=None,
             email=email,
         )
-        # TODO: make URL always a string to avoid this cast
-        p.add_link(str(self.url))
-        p.add_source(str(self.url))
+        p.add_link(self.source.url)
+        p.add_source(self.source.url)
         return p
 
 
@@ -83,7 +85,7 @@ class PersonList(HtmlListPage):
         district = dd_text[2].strip().split()[1]
         party = dd_text[4].strip()
         return dict(
-            chamber="upper" if "senate" in self.url else "lower",
+            chamber="upper" if "senate" in self.source.url else "lower",
             district=district,
             party=party,
             url=XPath(".//dd/a[1]/@href").match_one(item),
@@ -91,8 +93,8 @@ class PersonList(HtmlListPage):
 
 
 house_members = Workflow(
-    PersonList("http://mgaleg.maryland.gov/mgawebsite/Members/Index/house"), PersonDetail
+    PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/house"), PersonDetail
 )
 senate_members = Workflow(
-    PersonList("http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate"), PersonDetail
+    PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate"), PersonDetail
 )

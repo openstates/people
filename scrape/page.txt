@@ -1,0 +1,13 @@
+
+Page processsing:
+  * Constructor is invoked, sets input and source
+  * any dependencies are then invoked
+      (describe this a bit more, each dependency sets a self.__ variable based on page output)
+  * if there isn't a source set, get_source_from_input will be called
+  * sources that are strings are converted to URLs 
+  * self.response is populated from source.get_response
+  * self.postprocess_response()
+  * self.process_page()
+
+
+TODO: change to logging insteaad of printing

@@ -6,18 +6,21 @@ roles:
 - district: '109'
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   type: lower
-contact_details:
-- note: Capitol Office
-  address: 228-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-2087
-- note: District Office
-  address: 152 S. Church Street;P.O. Box I;Louisville, IL 62858
-  voice: 618-665-4109
+  end_date: '2020-12-31'
+- district: '55'
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  type: upper
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2757
+- url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2989
 sources:
 - url: http://ilga.gov/house/default.asp?GA=101
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2757
-image: http://ilga.gov/images/members/{E711544D-E0C4-4E1F-AFAB-86718D6DCC55}.jpg
+- url: http://ilga.gov/senate/default.asp?GA=102
+- url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2989
+image: http://ilga.gov/images/members/{FB025E91-2025-4C39-BBC8-3196C761769E}.jpg
 given_name: Darren
 family_name: Bailey
+contact_details:
+- address: Springfield, IL 62706
+  note: Capitol Office

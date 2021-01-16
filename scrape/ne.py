@@ -1,6 +1,5 @@
-from spatula.core import Workflow
+from spatula.core import Workflow, NullSource
 from spatula.pages import HtmlPage, ListPage
-from spatula.sources import NullSource
 from spatula.selectors import CSS
 from common import Person
 
@@ -11,7 +10,10 @@ class LegPage(HtmlPage):
     image_css = CSS("img#sen-image")
     address_css = CSS("address")
 
-    def get_data(self):
+    def get_source_from_input(self):
+        return self.input
+
+    def process_page(self):
         name = self.name_css.match_one(self.root).text.replace("Sen. ", "").strip()
         district = self.district_css.match_one(self.root).text.split()[1]
         image = self.image_css.match_one(self.root).get("src")
@@ -65,7 +67,7 @@ class LegPageGenerator(ListPage):
 
     def get_data(self):
         for n in range(1, 50):
-            yield {"url": f"http://news.legislature.ne.gov/dist{n:02d}/"}
+            yield f"http://news.legislature.ne.gov/dist{n:02d}/"
 
 
 legislators = Workflow(LegPageGenerator(), LegPage)

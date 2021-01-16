@@ -18,7 +18,7 @@ class HousePartial:
 
 
 class HouseList(HtmlListPage):
-    url = "https://www.legislature.ohio.gov/legislators/house-directory"
+    source = "https://www.legislature.ohio.gov/legislators/house-directory"
     selector = CSS(".mediaGrid a[target='_blank']", num_items=99)
 
     def process_item(self, item):
@@ -39,7 +39,10 @@ class HouseList(HtmlListPage):
 class HouseDetail(HtmlPage):
     input_type = HousePartial
 
-    def get_data(self):
+    def get_source_from_input(self):
+        return self.input.url
+
+    def process_page(self):
         # construct person from the details from above
         p = Person(
             state="oh",

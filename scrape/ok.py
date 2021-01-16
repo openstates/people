@@ -6,7 +6,7 @@ from common import Person
 
 class SenateList(HtmlListPage):
     selector = SimilarLink("https://oksenate.gov/senators/", min_items=45, max_items=48)
-    url = "https://oksenate.gov/senators"
+    source = "https://oksenate.gov/senators"
 
     def process_item(self, item):
         party, _, district, name = item.text_content().split(maxsplit=3)
@@ -22,7 +22,7 @@ class HouseList(HtmlListPage):
     selector = SimilarLink(
         r"https://www.okhouse.gov/Members/District.aspx\?District=", num_items=101
     )
-    url = "https://www.okhouse.gov/Members/Default.aspx"
+    source = "https://www.okhouse.gov/Members/Default.aspx"
 
     def process_item(self, item):
         return {
@@ -38,7 +38,10 @@ class HouseDetail(HtmlPage):
     district_css = CSS(prefix + "District")
     party_css = CSS(prefix + "Party")
 
-    def get_data(self):
+    def get_source_from_input(self):
+        return self.input["url"]
+
+    def process_page(self):
         name = self.name_css.match_one(self.root).text.split(maxsplit=1)[1]
         p = Person(
             name=name,
@@ -49,7 +52,7 @@ class HouseDetail(HtmlPage):
         )
         p.image = self.image_selector.match_one(self.root).get("href")
 
-        contact_url = self.url.replace("District.aspx", "Contact.aspx")
+        contact_url = self.source.url.replace("District.aspx", "Contact.aspx")
         assert contact_url.startswith("https://www.okhouse.gov/Members/Contact.aspx?District=")
         p.add_link(contact_url, note="Contact Form")
 
@@ -75,6 +78,9 @@ class SenateDetail(HtmlPage):
     address_css = CSS(".bSenBio__address p")
     phone_css = CSS(".bSenBio__tel a")
     contact_link_sel = SimilarLink(r"https://oksenate.gov/contact-senator\?sid=")
+
+    def get_source_from_input(self):
+        return self.input["url"]
 
     def get_data(self):
         for bio in CSS(".bSenBio__infoIt").match(self.root):
