@@ -1,7 +1,8 @@
 import re
 import uuid
 from collections import OrderedDict
-from utils import get_jurisdiction_id, reformat_phone_number
+from utils import get_jurisdiction_id, reformat_phone_number, dump_obj
+from spatula import Workflow
 
 
 def clean_spaces(text):
@@ -123,3 +124,8 @@ class Person:
             self.sources.append({"url": url, "note": note})
         else:
             self.sources.append({"url": url})
+
+
+class PeopleWorkflow(Workflow):
+    def save_object(self, obj, output_dir):
+        dump_obj(obj, output_dir=output_dir)

@@ -1,6 +1,5 @@
-from spatula.pages import JsonListPage
-from spatula.core import Workflow
-from common import Person
+from spatula import JsonListPage
+from common import Person, PeopleWorkflow
 
 
 class DirectoryListing(JsonListPage):
@@ -60,4 +59,6 @@ class DirectoryListing(JsonListPage):
         return p
 
 
-legislators = Workflow(DirectoryListing(source="https://www.legis.ga.gov/api/members/list/1029"))
+legislators = PeopleWorkflow(
+    DirectoryListing(source="https://www.legis.ga.gov/api/members/list/1029")
+)

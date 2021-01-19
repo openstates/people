@@ -1,7 +1,5 @@
-from spatula.core import Workflow
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import SimilarLink, CSS
-from common import Person
+from spatula.pages import HtmlListPage, HtmlPage, SimilarLink, CSS
+from common import Person, PeopleWorkflow
 
 
 class SenateList(HtmlListPage):
@@ -101,5 +99,5 @@ class SenateDetail(HtmlPage):
         return p
 
 
-house_members = Workflow(HouseList(), HouseDetail)
-senate_members = Workflow(SenateList(), SenateDetail)
+house_members = PeopleWorkflow(HouseList(), HouseDetail)
+senate_members = PeopleWorkflow(SenateList(), SenateDetail)

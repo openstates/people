@@ -1,9 +1,7 @@
 import re
 import attr
-from spatula.core import Workflow
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import CSS
-from common import Person
+from spatula import HtmlListPage, HtmlPage, CSS
+from common import Person, PeopleWorkflow
 
 background_image_re = re.compile(r"background-image:url\((.*?)\)")
 
@@ -74,4 +72,4 @@ class HouseDetail(HtmlPage):
         return p
 
 
-house_members = Workflow(HouseList(), HouseDetail)
+house_members = PeopleWorkflow(HouseList(), HouseDetail)

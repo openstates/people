@@ -1,8 +1,6 @@
 import re
-from spatula.pages import XmlListPage
-from spatula.core import URL, Workflow
-from spatula.selectors import XPath
-from common import Person
+from spatula import XmlListPage, URL, XPath
+from common import Person, PeopleWorkflow
 
 
 def clean_name(name):
@@ -72,4 +70,4 @@ class Legislators(XmlListPage):
         return person
 
 
-legislators = Workflow(Legislators())
+legislators = PeopleWorkflow(Legislators())

@@ -1,7 +1,5 @@
-from spatula.core import Workflow, NullSource
-from spatula.pages import HtmlPage, ListPage
-from spatula.selectors import CSS
-from common import Person
+from spatula import HtmlPage, ListPage, NullSource, CSS
+from common import Person, PeopleWorkflow
 
 
 class LegPage(HtmlPage):
@@ -70,4 +68,4 @@ class LegPageGenerator(ListPage):
             yield f"http://news.legislature.ne.gov/dist{n:02d}/"
 
 
-legislators = Workflow(LegPageGenerator(), LegPage)
+legislators = PeopleWorkflow(LegPageGenerator(), LegPage)

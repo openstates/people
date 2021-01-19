@@ -1,8 +1,6 @@
 import re
-from spatula.core import Workflow
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import XPath, SimilarLink, CSS
-from common import Person
+from spatula import HtmlListPage, HtmlPage, XPath, SimilarLink, CSS
+from common import Person, PeopleWorkflow
 
 
 class PersonDetail(HtmlPage):
@@ -92,9 +90,9 @@ class PersonList(HtmlListPage):
         )
 
 
-house_members = Workflow(
+house_members = PeopleWorkflow(
     PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/house"), PersonDetail
 )
-senate_members = Workflow(
+senate_members = PeopleWorkflow(
     PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate"), PersonDetail
 )

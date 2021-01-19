@@ -1,10 +1,8 @@
 import re
 import attr
 import logging
-from common import Person
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import XPath
-from spatula.core import Workflow
+from common import Person, PeopleWorkflow
+from spatula import HtmlListPage, HtmlPage, XPath
 
 log = logging.getLogger("fl")
 
@@ -165,5 +163,5 @@ class RepList(HtmlListPage):
         )
 
 
-senators = Workflow(SenList(), SenDetail)
-reps = Workflow(RepList(), RepContact)
+senators = PeopleWorkflow(SenList(), SenDetail)
+reps = PeopleWorkflow(RepList(), RepContact)

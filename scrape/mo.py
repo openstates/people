@@ -1,8 +1,6 @@
 import attr
-from spatula.core import Workflow, URL
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import CSS
-from common import Person
+from spatula import HtmlListPage, HtmlPage, URL, CSS
+from common import Person, PeopleWorkflow
 
 
 @attr.s(auto_attribs=True)
@@ -74,4 +72,4 @@ class HouseDetail(HtmlPage):
         return p
 
 
-house_members = Workflow(HouseList(), HouseDetail)
+house_members = PeopleWorkflow(HouseList(), HouseDetail)

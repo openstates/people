@@ -1,10 +1,8 @@
 import datetime
 import re
 import attr
-from spatula.core import Workflow
-from spatula.pages import HtmlPage, HtmlListPage
-from spatula.selectors import XPath
-from common import Person
+from spatula import HtmlPage, HtmlListPage, XPath
+from common import Person, PeopleWorkflow
 
 PARTY_MAP = {"R": "Republican", "D": "Democratic", "I": "Independent"}
 party_district_pattern = re.compile(r"\((R|D|I)\) - (?:House|Senate) District\s+(\d+)")
@@ -178,5 +176,5 @@ class DelegateDetail(MemberDetail):
         return p
 
 
-senators = Workflow(SenateList(), (SenatePhotoDetail, SenateDetail))
-delegates = Workflow(DelegateList(), DelegateDetail)
+senators = PeopleWorkflow(SenateList(), (SenatePhotoDetail, SenateDetail))
+delegates = PeopleWorkflow(DelegateList(), DelegateDetail)

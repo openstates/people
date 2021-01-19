@@ -1,7 +1,5 @@
-from spatula.pages import HtmlListPage
-from spatula.selectors import CSS
-from spatula.core import Workflow
-from common import Person
+from spatula.pages import HtmlListPage, CSS
+from common import Person, PeopleWorkflow
 
 
 def split_name(name):
@@ -94,5 +92,5 @@ class RepList(HtmlListPage):
         return p
 
 
-senators = Workflow(SenList())
-reps = Workflow(RepList())
+senators = PeopleWorkflow(SenList())
+reps = PeopleWorkflow(RepList())

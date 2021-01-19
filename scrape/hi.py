@@ -1,10 +1,6 @@
 import lxml.html
-
-from spatula.core import Workflow
-from spatula.pages import HtmlListPage
-from spatula.selectors import CSS, SelectorError
-
-from common import Person
+from spatula.selectors import CSS, SelectorError, HtmlListPage
+from common import Person, PeopleWorkflow
 
 
 class FormSource:
@@ -91,4 +87,4 @@ class HawaiiLegislators(HtmlListPage):
         return p
 
 
-all_legislators = Workflow(HawaiiLegislators())
+all_legislators = PeopleWorkflow(HawaiiLegislators())
