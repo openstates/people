@@ -1,8 +1,31 @@
 #!/usr/bin/env python
 import os
+import glob
 import click
 from datetime import datetime
-from utils import load_yaml, dump_obj, role_is_active
+from utils import load_yaml, dump_obj, role_is_active, get_data_dir
+
+
+def is_inactive(person, date=None):
+    active = [role for role in person.get("roles", []) if role_is_active(role, date=date)]
+    return len(active) == 0
+
+
+def autoretire(abbr):
+    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
+    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
+    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
+
+    filenames = legislative_filenames + executive_filenames + municipality_filenames
+    for filename in filenames:
+        with open(filename) as f:
+            person = load_yaml(f)
+
+            if is_inactive(person):
+                print("retiring ", filename)
+                # end_date won't be used since they're already expired
+                retire_person(person, None)
+                move_file(filename)
 
 
 def retire_person(person, end_date, reason=None, death=False):
@@ -44,12 +67,17 @@ def validate_end_date(ctx, param, value):
 @click.argument("filenames", nargs=-1)
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
-def retire(end_date, filenames, reason, death):
+@click.option("--auto")
+def retire(end_date, filenames, reason, death, auto):
     """
     Retire a legislator, given END_DATE and FILENAME.
 
     Will set end_date on active roles.
     """
+    if auto:
+        autoretire(auto)
+        return
+
     for filename in filenames:
         # end the person's active roles & re-save
         with open(filename) as f:
