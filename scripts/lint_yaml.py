@@ -471,7 +471,9 @@ class Validator:
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
         if not names_consistent(person):
-            self.errors[filename].append(f"inconsistent name")
+            self.errors[filename].append(
+                f"inconsistent names: family_name='{person.get('family_name', '')}', name='{person.get('name', '')}'"
+            )
         self.errors[filename].extend(validate_jurisdictions(person, self.municipalities))
         self.errors[filename].extend(
             validate_roles(person, "roles", person_type == PersonType.RETIRED, date=date)

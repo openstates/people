@@ -456,7 +456,8 @@ def test_raises_error_for_inconsistent_name(
         "raises_error_for_inconsistent_name", 
         expected_validation_result=ValidationResult(
             errors_by_filename={
-                'Lois-Richardson-5d143251-d27d-4cfe-a3dd-d9928fc5159a.yml': ['inconsistent name']
+                'Lois-Richardson-5d143251-d27d-4cfe-a3dd-d9928fc5159a.yml':
+                ["inconsistent names: family_name='Bashert', name='Lois Richardson'"]
             }
         )
     )
