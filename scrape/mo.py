@@ -42,9 +42,6 @@ class HouseList(HtmlListPage):
 class HouseDetail(HtmlPage):
     input_type = HousePartial
 
-    def get_source_from_input(self):
-        return URL(self.input.url)
-
     def process_page(self):
         party = {"D": "Democratic", "R": "Republican"}[self.input.party]
 

@@ -97,9 +97,6 @@ class DelegateList(MemberList):
 class MemberDetail(HtmlPage):
     input_type = PartialMember
 
-    def get_source_from_input(self):
-        return self.input.url
-
     def process_page(self):
         party_district_text = self.root.xpath("//h3/font/text()")[0]
         party, district = get_party_district(party_district_text)

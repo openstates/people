@@ -37,9 +37,6 @@ class HouseList(HtmlListPage):
 class HouseDetail(HtmlPage):
     input_type = HousePartial
 
-    def get_source_from_input(self):
-        return self.input.url
-
     def process_page(self):
         # construct person from the details from above
         p = Person(

@@ -46,9 +46,6 @@ class SenDetail(HtmlPage):
     contact_xpath = XPath('//h4[contains(text(), "Office")]')
     input_type = PartialPerson
 
-    def get_source_from_input(self):
-        return self.input.url
-
     def process_page(self):
         email = self.root.xpath('//a[contains(@href, "mailto:")]')[0].get("href").split(":")[-1]
 
