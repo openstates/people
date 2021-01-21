@@ -444,6 +444,7 @@ class Validator:
             self.errors[filename].extend(self.validate_old_district_names(person))
 
         # check duplicate IDs
+        self.duplicate_values["openstates"][person["id"]].append(filename)
         for scheme, value in person.get("ids", {}).items():
             self.duplicate_values[scheme][value].append(filename)
         for id in person.get("other_identifiers", []):
