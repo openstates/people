@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import glob
 import os
-from collections import Counter
+from collections import Counter, defaultdict
 import click
 from utils import (
     get_data_dir,
@@ -34,18 +34,19 @@ class Summarizer:
         self.contact_counts = Counter()
         self.id_counts = Counter()
         self.parties = Counter()
+        self.active_legislators = defaultdict(lambda: defaultdict(list))
 
     def summarize(self, person):
         self.person_count += 1
         self.optional_fields.update(set(person.keys()) & OPTIONAL_FIELD_SET)
         self.extra_counts.update(person.get("extras", {}).keys())
 
-        # for role in person.get("roles", []):
-        #     if role_is_active(role):
-        #         role_type = role["type"]
-        #         district = role.get("district")
-        #         break
-        # self.active_legislators[role_type][district].append(person)
+        for role in person.get("roles", []):
+            if role_is_active(role):
+                role_type = role["type"]
+                district = role.get("district")
+                break
+        self.active_legislators[role_type][district].append(person)
 
         for role in person.get("party", []):
             if role_is_active(role):
@@ -66,9 +67,9 @@ class Summarizer:
         click.secho(
             f"processed {self.person_count} active people", bold=True,
         )
-        # for role_type in self.active_legislators:
-        #     count = sum([len(v) for v in self.active_legislators[role_type].values()])
-        #     click.secho(f"{count:4d} {role_type}")
+        for role_type in self.active_legislators:
+            count = sum([len(v) for v in self.active_legislators[role_type].values()])
+            click.secho(f"{count:4d} {role_type}")
 
         click.secho("Parties", bold=True)
         for party, count in self.parties.items():
@@ -93,6 +94,13 @@ class Summarizer:
             else:
                 click.secho(name + " - none", bold=True)
 
+    def print_roster(self):  # pragma: no cover
+        for role_type, districts in self.active_legislators.items():
+            for district, people in sorted(districts.items()):
+                click.secho(f"{role_type} {district}", fg="blue")
+                for person in people:
+                    click.secho(f"   {person['name']}")
+
     def process_legislature(self, abbr):  # pragma: no cover
         filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
 
@@ -109,17 +117,15 @@ class Summarizer:
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
-@click.option(
-    "--summary/--no-summary", default=False, help="Print summary after validation errors."
-)
+@click.option("--roster/--no-roster", default=False, help="Print roster after summary.")
 @click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
-def summarize(abbreviations, verbose, summary, municipal):
+def summarize(abbreviations, verbose, roster, municipal):
     """
-        Lint YAML files, optionally also providing a summary of state's data.
+    Lint YAML files, optionally also providing a summary of state's data.
 
-        <ABBR> can be provided to restrict linting to single state's files.
+    <ABBR> can be provided to restrict linting to single state's files.
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()
@@ -128,6 +134,8 @@ def summarize(abbreviations, verbose, summary, municipal):
     for abbr in abbreviations:
         summarizer.process_legislature(abbr)
     summarizer.print_summary()
+    if roster:
+        summarizer.print_roster()
 
 
 if __name__ == "__main__":
