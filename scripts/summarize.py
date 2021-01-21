@@ -41,12 +41,14 @@ class Summarizer:
         self.optional_fields.update(set(person.keys()) & OPTIONAL_FIELD_SET)
         self.extra_counts.update(person.get("extras", {}).keys())
 
+        district = role_type = None
         for role in person.get("roles", []):
             if role_is_active(role):
                 role_type = role["type"]
                 district = role.get("district")
                 break
-        self.active_legislators[role_type][district].append(person)
+        if role_type:
+            self.active_legislators[role_type][district].append(person)
 
         for role in person.get("party", []):
             if role_is_active(role):
