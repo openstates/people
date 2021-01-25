@@ -5,6 +5,10 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  paths:
+    - "data/**"
+    - "scripts/lint_yaml.py"
+    - "settings.yml"
 
 jobs:
   build:
