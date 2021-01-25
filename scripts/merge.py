@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-
 import os
 import glob
 import click
+from collections import defaultdict
 from openstates import metadata
 from utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file
 from retire import retire_person, move_file
@@ -10,36 +10,35 @@ from retire import retire_person, move_file
 
 def merge_contact_details(old, new):
     # figure out which office entries are which
-    old_cap_office = {}
-    old_dist_office = {}
-    new_cap_office = {}
-    new_dist_office = {}
+    old_offices = defaultdict(dict)
+    new_offices = defaultdict(dict)
+    offices = []
+    update = False
 
     for office in old or []:
-        if office["note"] == "Capitol Office" and not old_cap_office:
-            old_cap_office = office
-        elif office["note"] == "District Office" and not old_dist_office:
-            old_dist_office = office
+        note = office["note"]
+        if not old_offices[note]:
+            old_offices[note] = office
         else:
-            raise NotImplementedError("extra old " + office["note"])
+            raise NotImplementedError(f"extra old {note}")
     for office in new or []:
-        if office["note"] == "Capitol Office" and not new_cap_office:
-            new_cap_office = office
-        elif office["note"] == "District Office" and not new_dist_office:
-            new_dist_office = office
+        note = office["note"]
+        if not new_offices[note]:
+            new_offices[note] = office
         else:
-            raise NotImplementedError("extra new " + office["note"])
+            raise NotImplementedError(f"extra old {note}")
 
-    updated_cap = update_office(old_cap_office, new_cap_office)
-    updated_dist = update_office(old_dist_office, new_dist_office)
-    if updated_cap == old_cap_office and updated_dist == old_dist_office:
+    for note in sorted(set(old_offices) | set(new_offices)):
+        combined = update_office(old_offices[note], new_offices[note])
+        offices.append(combined)
+        if combined != old_offices[note]:
+            update = True
+
+    # return all offices if there were any changes
+    if update:
+        return offices
+    else:
         return None
-    elif updated_cap and updated_dist:
-        return [updated_cap, updated_dist]
-    elif updated_cap:
-        return [updated_cap]
-    elif updated_dist:
-        return [updated_dist]
 
 
 def update_office(old_office, new_office):
