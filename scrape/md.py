@@ -4,9 +4,6 @@ from common import Person, PeopleWorkflow
 
 
 class PersonDetail(HtmlPage):
-    def get_source_from_input(self):
-        return str(self.input["url"])
-
     def parse_address_block(self, block):
         state = "address"
         # group lines by type
@@ -82,17 +79,19 @@ class PersonList(HtmlListPage):
         dd_text = XPath(".//dd/text()").match(item)
         district = dd_text[2].strip().split()[1]
         party = dd_text[4].strip()
-        return dict(
-            chamber="upper" if "senate" in self.source.url else "lower",
-            district=district,
-            party=party,
-            url=XPath(".//dd/a[1]/@href").match_one(item),
+        return PersonDetail(
+            dict(
+                chamber="upper" if "senate" in self.source.url else "lower",
+                district=district,
+                party=party,
+            ),
+            source=str(XPath(".//dd/a[1]/@href").match_one(item)),
         )
 
 
 house_members = PeopleWorkflow(
-    PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/house"), PersonDetail
+    PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/house")
 )
 senate_members = PeopleWorkflow(
-    PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate"), PersonDetail
+    PersonList(source="http://mgaleg.maryland.gov/mgawebsite/Members/Index/senate")
 )

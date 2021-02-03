@@ -155,4 +155,4 @@ class AssemblyList(HtmlListPage):
         return p
 
 
-assembly_members = PeopleWorkflow(AssemblyList())
+assembly_members = PeopleWorkflow(AssemblyList)

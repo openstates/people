@@ -87,4 +87,4 @@ class HawaiiLegislators(HtmlListPage):
         return p
 
 
-all_legislators = PeopleWorkflow(HawaiiLegislators())
+all_legislators = PeopleWorkflow(HawaiiLegislators)

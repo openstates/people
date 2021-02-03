@@ -39,7 +39,7 @@ class SenList(HtmlListPage):
         party = item.xpath("string(../../td[2])")
         leg_url = item.get("href")
 
-        return PartialPerson(name=name, party=party, district=district, url=leg_url,)
+        return SenDetail(PartialPerson(name=name, party=party, district=district, url=leg_url))
 
 
 class SenDetail(HtmlPage):
@@ -155,10 +155,12 @@ class RepList(HtmlListPage):
         image = self.IMAGE_BASE + item.xpath(".//img")[0].attrib["data-src"]
         link = str(item.xpath("./a/@href")[0])
 
-        return PartialPerson(
-            name=name, party=str(party), district=str(district), image=image, url=link,
+        return RepContact(
+            PartialPerson(
+                name=name, party=str(party), district=str(district), image=image, url=link,
+            )
         )
 
 
-senators = PeopleWorkflow(SenList(), SenDetail)
-reps = PeopleWorkflow(RepList(), RepContact)
+senators = PeopleWorkflow(SenList)
+reps = PeopleWorkflow(RepList)

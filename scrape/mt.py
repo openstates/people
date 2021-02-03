@@ -45,4 +45,4 @@ class Legislators(HtmlListPage):
         return person
 
 
-legislators = PeopleWorkflow(Legislators())
+legislators = PeopleWorkflow(Legislators)

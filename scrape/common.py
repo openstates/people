@@ -128,4 +128,4 @@ class Person:
 
 class PeopleWorkflow(Workflow):
     def save_object(self, obj, output_dir):
-        dump_obj(obj, output_dir=output_dir)
+        dump_obj(obj.to_dict(), output_dir=output_dir)

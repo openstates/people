@@ -92,5 +92,5 @@ class RepList(HtmlListPage):
         return p
 
 
-senators = PeopleWorkflow(SenList())
-reps = PeopleWorkflow(RepList())
+senators = PeopleWorkflow(SenList)
+reps = PeopleWorkflow(RepList)

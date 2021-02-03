@@ -81,17 +81,7 @@ class MemberList(HtmlListPage):
 
         name, action, date = clean_name(name)
 
-        return PartialMember(name=name, url=item.get("href"))
-
-
-class SenateList(MemberList):
-    chamber = "upper"
-    selector = XPath('//div[@class="lColRt"]/ul/li/a')
-
-
-class DelegateList(MemberList):
-    chamber = "lower"
-    selector = XPath('//div[@class="lColLt"]/ul/li/a')
+        return self.next_page_cls(PartialMember(name=name, url=item.get("href")))
 
 
 class MemberDetail(HtmlPage):
@@ -157,7 +147,7 @@ class SenatePhotoDetail(HtmlPage):
         if img and img.startswith("//"):
             img = "https:" + img
         self.input.image = img
-        return self.input
+        return SenateDetail(self.input)
 
 
 class DelegateDetail(MemberDetail):
@@ -173,5 +163,17 @@ class DelegateDetail(MemberDetail):
         return p
 
 
-senators = PeopleWorkflow(SenateList(), (SenatePhotoDetail, SenateDetail))
-delegates = PeopleWorkflow(DelegateList(), DelegateDetail)
+class SenateList(MemberList):
+    chamber = "upper"
+    selector = XPath('//div[@class="lColRt"]/ul/li/a')
+    next_page_cls = SenatePhotoDetail
+
+
+class DelegateList(MemberList):
+    chamber = "lower"
+    selector = XPath('//div[@class="lColLt"]/ul/li/a')
+    next_page_cls = DelegateDetail
+
+
+senators = PeopleWorkflow(SenateList)
+delegates = PeopleWorkflow(DelegateList)

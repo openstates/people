@@ -70,4 +70,4 @@ class Legislators(XmlListPage):
         return person
 
 
-legislators = PeopleWorkflow(Legislators())
+legislators = PeopleWorkflow(Legislators)

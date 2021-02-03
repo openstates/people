@@ -1,4 +1,4 @@
-from spatula.pages import HtmlListPage, HtmlPage, SimilarLink, CSS
+from spatula import HtmlListPage, HtmlPage, SimilarLink, CSS
 from common import Person, PeopleWorkflow
 
 
@@ -8,12 +8,9 @@ class SenateList(HtmlListPage):
 
     def process_item(self, item):
         party, _, district, name = item.text_content().split(maxsplit=3)
-        return {
-            "url": item.get("href"),
-            "party": party,
-            "district": district,
-            "name": name.strip(),
-        }
+        return SenateDetail(
+            {"party": party, "district": district, "name": name.strip()}, source=item.get("href"),
+        )
 
 
 class HouseList(HtmlListPage):
@@ -23,10 +20,7 @@ class HouseList(HtmlListPage):
     source = "https://www.okhouse.gov/Members/Default.aspx"
 
     def process_item(self, item):
-        return {
-            "url": item.get("href"),
-            "name": item.text.strip(),
-        }
+        return HouseDetail({"name": item.text.strip()}, source=item.get("href"))
 
 
 class HouseDetail(HtmlPage):
@@ -35,9 +29,6 @@ class HouseDetail(HtmlPage):
     name_css = CSS(prefix + "Name")
     district_css = CSS(prefix + "District")
     party_css = CSS(prefix + "Party")
-
-    def get_source_from_input(self):
-        return self.input["url"]
 
     def process_page(self):
         name = self.name_css.match_one(self.root).text.split(maxsplit=1)[1]
@@ -77,10 +68,7 @@ class SenateDetail(HtmlPage):
     phone_css = CSS(".bSenBio__tel a")
     contact_link_sel = SimilarLink(r"https://oksenate.gov/contact-senator\?sid=")
 
-    def get_source_from_input(self):
-        return self.input["url"]
-
-    def get_data(self):
+    def process_page(self):
         for bio in CSS(".bSenBio__infoIt").match(self.root):
             if "Party:" in bio.text_content():
                 party = bio.text_content().split(":")[1].strip()
@@ -99,5 +87,5 @@ class SenateDetail(HtmlPage):
         return p
 
 
-house_members = PeopleWorkflow(HouseList(), HouseDetail)
-senate_members = PeopleWorkflow(SenateList(), SenateDetail)
+house_members = PeopleWorkflow(HouseList)
+senate_members = PeopleWorkflow(SenateList)

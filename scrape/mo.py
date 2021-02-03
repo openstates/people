@@ -27,15 +27,17 @@ class HouseList(HtmlListPage):
         _, last, first, district, party, town, phone, room = tds
         if last.text_content() == "Vacant":
             self.skip()
-        return HousePartial(
-            last_name=last.text_content(),
-            first_name=first.text_content(),
-            district=int(district.text_content()),
-            party=party.text_content(),
-            hometown=town.text_content().strip(),
-            voice=phone.text_content(),
-            room=room.text_content(),
-            url=CSS("a").match_one(last).get("href"),
+        return HouseDetail(
+            HousePartial(
+                last_name=last.text_content(),
+                first_name=first.text_content(),
+                district=int(district.text_content()),
+                party=party.text_content(),
+                hometown=town.text_content().strip(),
+                voice=phone.text_content(),
+                room=room.text_content(),
+                url=CSS("a").match_one(last).get("href"),
+            )
         )
 
 
@@ -69,4 +71,4 @@ class HouseDetail(HtmlPage):
         return p
 
 
-house_members = PeopleWorkflow(HouseList(), HouseDetail)
+house_members = PeopleWorkflow(HouseList)

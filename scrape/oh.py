@@ -29,8 +29,10 @@ class HouseList(HtmlListPage):
         district = district.split()[1]
         party = {"D": "Democratic", "R": "Republican"}[party]
 
-        return HousePartial(
-            name=name, district=district, party=party, url=item.get("href"), image=image,
+        return HouseDetail(
+            HousePartial(
+                name=name, district=district, party=party, url=item.get("href"), image=image,
+            )
         )
 
 
@@ -69,4 +71,4 @@ class HouseDetail(HtmlPage):
         return p
 
 
-house_members = PeopleWorkflow(HouseList(), HouseDetail)
+house_members = PeopleWorkflow(HouseList)

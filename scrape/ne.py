@@ -8,9 +8,6 @@ class LegPage(HtmlPage):
     image_css = CSS("img#sen-image")
     address_css = CSS("address")
 
-    def get_source_from_input(self):
-        return self.input
-
     def process_page(self):
         name = self.name_css.match_one(self.root).text.replace("Sen. ", "").strip()
         district = self.district_css.match_one(self.root).text.split()[1]
@@ -63,9 +60,9 @@ class LegPageGenerator(ListPage):
     to spawn the 49 subpage scrapers.
     """
 
-    def get_data(self):
+    def process_page(self):
         for n in range(1, 50):
-            yield f"http://news.legislature.ne.gov/dist{n:02d}/"
+            yield LegPage(source=f"http://news.legislature.ne.gov/dist{n:02d}/")
 
 
-legislators = PeopleWorkflow(LegPageGenerator(), LegPage)
+legislators = PeopleWorkflow(LegPageGenerator)

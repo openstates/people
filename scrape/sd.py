@@ -45,4 +45,4 @@ class DirectoryListing(JsonListPage):
         return p
 
 
-legislators = PeopleWorkflow(DirectoryListing())
+legislators = PeopleWorkflow(DirectoryListing)
