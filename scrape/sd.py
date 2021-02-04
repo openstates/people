@@ -1,6 +1,5 @@
-from spatula.pages import JsonListPage
-from spatula.core import Workflow, URL
-from common import Person
+from spatula import JsonListPage, URL
+from common import Person, PeopleWorkflow
 
 
 class DirectoryListing(JsonListPage):
@@ -46,4 +45,4 @@ class DirectoryListing(JsonListPage):
         return p
 
 
-legislators = Workflow(DirectoryListing())
+legislators = PeopleWorkflow(DirectoryListing)

@@ -1,7 +1,6 @@
 import re
-from spatula.pages import HtmlListPage
-from spatula.selectors import XPath
-from common import Person
+from spatula import HtmlListPage, XPath
+from common import Person, PeopleWorkflow
 
 
 def clean_name(name):
@@ -44,3 +43,6 @@ class Legislators(HtmlListPage):
         person.capitol_office.email = email
 
         return person
+
+
+legislators = PeopleWorkflow(Legislators)

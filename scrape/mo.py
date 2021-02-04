@@ -1,8 +1,6 @@
 import attr
-from spatula.core import Workflow, URL
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import CSS
-from common import Person
+from spatula import HtmlListPage, HtmlPage, URL, CSS
+from common import Person, PeopleWorkflow
 
 
 @attr.s(auto_attribs=True)
@@ -29,23 +27,22 @@ class HouseList(HtmlListPage):
         _, last, first, district, party, town, phone, room = tds
         if last.text_content() == "Vacant":
             self.skip()
-        return HousePartial(
-            last_name=last.text_content(),
-            first_name=first.text_content(),
-            district=int(district.text_content()),
-            party=party.text_content(),
-            hometown=town.text_content().strip(),
-            voice=phone.text_content(),
-            room=room.text_content(),
-            url=CSS("a").match_one(last).get("href"),
+        return HouseDetail(
+            HousePartial(
+                last_name=last.text_content(),
+                first_name=first.text_content(),
+                district=int(district.text_content()),
+                party=party.text_content(),
+                hometown=town.text_content().strip(),
+                voice=phone.text_content(),
+                room=room.text_content(),
+                url=CSS("a").match_one(last).get("href"),
+            )
         )
 
 
 class HouseDetail(HtmlPage):
     input_type = HousePartial
-
-    def get_source_from_input(self):
-        return URL(self.input.url)
 
     def process_page(self):
         party = {"D": "Democratic", "R": "Republican"}[self.input.party]
@@ -74,4 +71,4 @@ class HouseDetail(HtmlPage):
         return p
 
 
-house_members = Workflow(HouseList(), HouseDetail)
+house_members = PeopleWorkflow(HouseList)

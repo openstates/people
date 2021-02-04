@@ -1,10 +1,8 @@
 import datetime
 import re
 import attr
-from spatula.core import Workflow
-from spatula.pages import HtmlPage, HtmlListPage
-from spatula.selectors import XPath
-from common import Person
+from spatula import HtmlPage, HtmlListPage, XPath
+from common import Person, PeopleWorkflow
 
 PARTY_MAP = {"R": "Republican", "D": "Democratic", "I": "Independent"}
 party_district_pattern = re.compile(r"\((R|D|I)\) - (?:House|Senate) District\s+(\d+)")
@@ -83,24 +81,11 @@ class MemberList(HtmlListPage):
 
         name, action, date = clean_name(name)
 
-        return PartialMember(name=name, url=item.get("href"))
-
-
-class SenateList(MemberList):
-    chamber = "upper"
-    selector = XPath('//div[@class="lColRt"]/ul/li/a')
-
-
-class DelegateList(MemberList):
-    chamber = "lower"
-    selector = XPath('//div[@class="lColLt"]/ul/li/a')
+        return self.next_page_cls(PartialMember(name=name, url=item.get("href")))
 
 
 class MemberDetail(HtmlPage):
     input_type = PartialMember
-
-    def get_source_from_input(self):
-        return self.input.url
 
     def process_page(self):
         party_district_text = self.root.xpath("//h3/font/text()")[0]
@@ -162,7 +147,7 @@ class SenatePhotoDetail(HtmlPage):
         if img and img.startswith("//"):
             img = "https:" + img
         self.input.image = img
-        return self.input
+        return SenateDetail(self.input)
 
 
 class DelegateDetail(MemberDetail):
@@ -178,5 +163,17 @@ class DelegateDetail(MemberDetail):
         return p
 
 
-senators = Workflow(SenateList(), (SenatePhotoDetail, SenateDetail))
-delegates = Workflow(DelegateList(), DelegateDetail)
+class SenateList(MemberList):
+    chamber = "upper"
+    selector = XPath('//div[@class="lColRt"]/ul/li/a')
+    next_page_cls = SenatePhotoDetail
+
+
+class DelegateList(MemberList):
+    chamber = "lower"
+    selector = XPath('//div[@class="lColLt"]/ul/li/a')
+    next_page_cls = DelegateDetail
+
+
+senators = PeopleWorkflow(SenateList)
+delegates = PeopleWorkflow(DelegateList)
