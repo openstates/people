@@ -1,9 +1,7 @@
 import collections
 import re
-from common import Person
-from spatula.core import Workflow
-from spatula.selectors import XPath
-from spatula.pages import HtmlListPage, CsvListPage, HtmlPage
+from common import Person, PeopleWorkflow
+from spatula.pages import HtmlListPage, CsvListPage, HtmlPage, XPath
 
 PARTIES = {"DFL": "Democratic-Farmer-Labor", "R": "Republican", "I": "Independent"}
 SEN_HTML_URL = "http://www.senate.mn/members/index.php"
@@ -121,5 +119,5 @@ class RepList(HtmlListPage):
         return rep
 
 
-reps = Workflow(RepList)
-sens = Workflow(SenList)
+reps = PeopleWorkflow(RepList)
+sens = PeopleWorkflow(SenList)

@@ -3,8 +3,14 @@ name: Test Scripts
 on:
   push:
     branches: [ main ]
+    paths:
+      - "scripts/**"
+      - "scrape/**"
   pull_request:
     branches: [ main ]
+    paths:
+      - "scripts/**"
+      - "scrape/**"
 
 jobs:
   build:

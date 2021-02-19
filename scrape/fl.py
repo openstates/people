@@ -1,10 +1,8 @@
 import re
 import attr
 import logging
-from common import Person
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import XPath
-from spatula.core import Workflow
+from common import Person, PeopleWorkflow
+from spatula import HtmlListPage, HtmlPage, XPath
 
 log = logging.getLogger("fl")
 
@@ -41,15 +39,12 @@ class SenList(HtmlListPage):
         party = item.xpath("string(../../td[2])")
         leg_url = item.get("href")
 
-        return PartialPerson(name=name, party=party, district=district, url=leg_url,)
+        return SenDetail(PartialPerson(name=name, party=party, district=district, url=leg_url))
 
 
 class SenDetail(HtmlPage):
     contact_xpath = XPath('//h4[contains(text(), "Office")]')
     input_type = PartialPerson
-
-    def get_source_from_input(self):
-        return self.input.url
 
     def process_page(self):
         email = self.root.xpath('//a[contains(@href, "mailto:")]')[0].get("href").split(":")[-1]
@@ -160,10 +155,12 @@ class RepList(HtmlListPage):
         image = self.IMAGE_BASE + item.xpath(".//img")[0].attrib["data-src"]
         link = str(item.xpath("./a/@href")[0])
 
-        return PartialPerson(
-            name=name, party=str(party), district=str(district), image=image, url=link,
+        return RepContact(
+            PartialPerson(
+                name=name, party=str(party), district=str(district), image=image, url=link,
+            )
         )
 
 
-senators = Workflow(SenList(), SenDetail)
-reps = Workflow(RepList(), RepContact)
+senators = PeopleWorkflow(SenList)
+reps = PeopleWorkflow(RepList)

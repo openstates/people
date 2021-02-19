@@ -1,7 +1,5 @@
-from spatula.core import Workflow, NullSource
-from spatula.pages import HtmlPage, ListPage
-from spatula.selectors import CSS
-from common import Person
+from spatula import HtmlPage, ListPage, NullSource, CSS
+from common import Person, PeopleWorkflow
 
 
 class LegPage(HtmlPage):
@@ -9,9 +7,6 @@ class LegPage(HtmlPage):
     district_css = CSS(".col-9 h2")
     image_css = CSS("img#sen-image")
     address_css = CSS("address")
-
-    def get_source_from_input(self):
-        return self.input
 
     def process_page(self):
         name = self.name_css.match_one(self.root).text.replace("Sen. ", "").strip()
@@ -65,9 +60,9 @@ class LegPageGenerator(ListPage):
     to spawn the 49 subpage scrapers.
     """
 
-    def get_data(self):
+    def process_page(self):
         for n in range(1, 50):
-            yield f"http://news.legislature.ne.gov/dist{n:02d}/"
+            yield LegPage(source=f"http://news.legislature.ne.gov/dist{n:02d}/")
 
 
-legislators = Workflow(LegPageGenerator(), LegPage)
+legislators = PeopleWorkflow(LegPageGenerator)

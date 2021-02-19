@@ -1,9 +1,7 @@
 import re
 import attr
-from spatula.core import Workflow
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import CSS
-from common import Person
+from spatula import HtmlListPage, HtmlPage, CSS
+from common import Person, PeopleWorkflow
 
 background_image_re = re.compile(r"background-image:url\((.*?)\)")
 
@@ -31,16 +29,15 @@ class HouseList(HtmlListPage):
         district = district.split()[1]
         party = {"D": "Democratic", "R": "Republican"}[party]
 
-        return HousePartial(
-            name=name, district=district, party=party, url=item.get("href"), image=image,
+        return HouseDetail(
+            HousePartial(
+                name=name, district=district, party=party, url=item.get("href"), image=image,
+            )
         )
 
 
 class HouseDetail(HtmlPage):
     input_type = HousePartial
-
-    def get_source_from_input(self):
-        return self.input.url
 
     def process_page(self):
         # construct person from the details from above
@@ -74,4 +71,4 @@ class HouseDetail(HtmlPage):
         return p
 
 
-house_members = Workflow(HouseList(), HouseDetail)
+house_members = PeopleWorkflow(HouseList)

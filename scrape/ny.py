@@ -1,9 +1,7 @@
 import re
 import lxml.etree
-from spatula.pages import HtmlListPage, HtmlPage
-from spatula.selectors import CSS, SelectorError
-from spatula.core import Workflow, URL
-from common import Person
+from spatula import HtmlListPage, HtmlPage, CSS, SelectorError, URL
+from common import Person, PeopleWorkflow
 
 
 class PartyAugmentation(HtmlPage):
@@ -157,4 +155,4 @@ class AssemblyList(HtmlListPage):
         return p
 
 
-assembly_members = Workflow(AssemblyList())
+assembly_members = PeopleWorkflow(AssemblyList)
