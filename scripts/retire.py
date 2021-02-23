@@ -1,8 +1,26 @@
 #!/usr/bin/env python
 import os
 import click
-from datetime import datetime
+from datetime import datetime, timedelta
 from utils import load_yaml, dump_obj, role_is_active
+from openstates import metadata
+
+
+def add_vacancy(person, until):
+    with open("settings.yml") as f:
+        settings = load_yaml(f)
+    last_role = person["roles"][-1]
+    abbr = metadata.lookup(jurisdiction_id=last_role["jurisdiction"]).abbr.lower()
+    if abbr not in settings:
+        settings[abbr] = {"vacancies": []}
+    settings[abbr]["vacancies"].append(
+        {
+            "chamber": last_role["type"],
+            "district": last_role["district"],
+            "vacant_until": until.date(),
+        }
+    )
+    dump_obj(settings, filename="settings.yml")
 
 
 def retire_person(person, end_date, reason=None, death=False):
@@ -44,7 +62,8 @@ def validate_end_date(ctx, param, value):
 @click.argument("filenames", nargs=-1)
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
-def retire(end_date, filenames, reason, death):
+@click.option("--vacant", is_flag=True)
+def retire(end_date, filenames, reason, death, vacant):
     """
     Retire a legislator, given END_DATE and FILENAME.
 
@@ -57,6 +76,11 @@ def retire(end_date, filenames, reason, death):
         if death:
             reason = "Deceased"
         person, num = retire_person(person, end_date, reason, death)
+
+        if vacant:
+            # default to 60 days for now
+            add_vacancy(person, until=datetime.today() + timedelta(days=60))
+
         dump_obj(person, filename=filename)
 
         if num == 0:
