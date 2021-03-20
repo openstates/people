@@ -63,7 +63,7 @@ class Legislators(XmlListPage):
             person.capitol_office.voice = phone
 
         if item_dict["Building"] == "CAPITOL":
-            person.capitol_office.address = "State Capitol Room {}; Juneau AK, 99801".format(
+            person.capitol_office.address = "State Capitol Room {}; Juneau, AK, 99801".format(
                 item_dict["Room"]
             )
 
