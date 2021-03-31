@@ -6,10 +6,10 @@ roles:
 - district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
-contact_details:
-- note: Capitol Office
-  voice: 495-942-0615
-  address: PO BOX 729;Poplar, MT 59255
+  end_date: '2021-01-03'
+- district: '31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  type: lower
 links:
 - note: legislator page
   url: https://leg.mt.gov/legislator-information/roster/individual/4725
@@ -20,6 +20,7 @@ sources:
   url: https://leg.mt.gov/legislator-information/?session_select=111
 - url: https://leg.mt.gov/legislator-information/roster/individual/5011
 - url: https://leg.mt.gov/legislator-information/?session_select=113
+- url: https://leg.mt.gov/legislator-information/roster/individual/6827
 other_identifiers:
 - identifier: MTL000371
   scheme: legacy_openstates
@@ -28,3 +29,6 @@ family_name: Smith
 email: clairena@hughes.net
 other_names:
 - name: Frank J Smith
+contact_details:
+- note: Capitol Office
+  voice: 406-942-0615
