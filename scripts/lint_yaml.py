@@ -354,7 +354,7 @@ def get_expected_districts(settings, abbr):
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
-                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow"
+                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="green"
             )
         else:
             click.secho(
@@ -413,9 +413,12 @@ class Validator:
         if uid not in filename:
             self.errors[filename].append(f"id piece {uid} not in filename")
         self.errors[filename].extend(validate_jurisdictions(person, self.municipalities))
-        self.errors[filename].extend(
-            validate_roles(person, "roles", person_type == PersonType.RETIRED, date=date)
-        )
+        role_issues = validate_roles(person, "roles", person_type == PersonType.RETIRED, date=date)
+        # municipals missing roles is a warning to avoid blocking lint
+        if person_type == PersonType.MUNICIPAL:
+            self.warnings[filename].extend(role_issues)
+        else:
+            self.errors[filename].extend(role_issues)
         if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
             self.errors[filename].extend(validate_roles(person, "party"))
 
@@ -576,13 +579,16 @@ def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
 @click.option(
-    "--date", type=str, default=None, help="Lint roles using a certain date instead of today.",
+    "--date",
+    type=str,
+    default=None,
+    help="Lint roles using a certain date instead of today.",
 )
 def lint(abbreviations, verbose, municipal, date):
     """
-        Lint YAML files.
+    Lint YAML files.
 
-        <ABBR> can be provided to restrict linting to single state's files.
+    <ABBR> can be provided to restrict linting to single state's files.
     """
     error_count = 0
 
