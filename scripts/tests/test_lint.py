@@ -294,7 +294,7 @@ def test_compare_districts_overfill():
 
 
 def test_validator_check_https():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     person = {
@@ -310,7 +310,7 @@ def test_validator_check_https():
 
 
 def test_person_duplicates():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     people = [

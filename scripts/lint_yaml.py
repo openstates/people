@@ -392,7 +392,7 @@ def compare_districts(expected, actual):
 
 class Validator:
     def __init__(self, abbr, settings):
-        self.http_whitelist = tuple(settings.get("http_whitelist", []))
+        self.http_allow = tuple(settings.get("http_allow", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
@@ -475,7 +475,7 @@ class Validator:
         return errors
 
     def check_https_url(self, url):
-        if url and url.startswith("http://") and not url.startswith(self.http_whitelist):
+        if url and url.startswith("http://") and not url.startswith(self.http_allow):
             return False
         return True
 
