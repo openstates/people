@@ -354,7 +354,7 @@ def get_expected_districts(settings, abbr):
         if datetime.date.today() < vacancy["vacant_until"]:
             expected[vacancy["chamber"]][str(vacancy["district"])] -= 1
             click.secho(
-                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="yellow"
+                "\t{chamber}-{district} (until {vacant_until})".format(**vacancy), fg="green"
             )
         else:
             click.secho(
