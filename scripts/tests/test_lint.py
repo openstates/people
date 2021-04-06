@@ -11,6 +11,7 @@ from lint_yaml import (
     validate_obj,
     PERSON_FIELDS,
     validate_roles,
+    validate_name,
     validate_offices,
     get_expected_districts,
     compare_districts,
@@ -175,6 +176,33 @@ def test_validate_extra_keys_not_present():
 )
 def test_validate_roles_party(person, expected):
     assert validate_roles(person, "party") == expected
+
+
+@pytest.mark.parametrize(
+    "person,expected",
+    [
+        ({"name": "Phillip J Swoozle"}, []),
+        (
+            {"name": "Phillip Swoozle"},
+            [
+                "missing given_name that could be set to 'Phillip'",
+                "missing family_name that could be set to 'Swoozle'",
+            ],
+        ),
+        (
+            {"name": "Phillip Swoozle", "given_name": "Phil"},
+            [
+                "missing family_name that could be set to 'Swoozle'",
+            ],
+        ),
+        (
+            {"name": "Phillip Swoozle", "given_name": "Phil", "family_name": "Swoozle"},
+            [],
+        ),
+    ],
+)
+def test_validate_name(person, expected):
+    assert validate_name(person) == expected
 
 
 @pytest.mark.parametrize(

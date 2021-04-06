@@ -325,6 +325,24 @@ def validate_offices(person):
     return errors
 
 
+def validate_name(person):
+    """ some basic checks on a persons name """
+    errors = []
+    spaces_in_name = person["name"].count(" ")
+    if spaces_in_name == 1:
+        given_cand, family_cand = person["name"].split()
+        given = person.get("given_name")
+        family = person.get("family_name")
+        # expected_name = f"{given} {family}"
+        if not given:
+            errors.append(f"missing given_name that could be set to '{given_cand}'")
+        if not family:
+            errors.append(f"missing family_name that could be set to '{family_cand}'")
+        # if not errors and person["name"] != expected_name:
+        #     errors.append(f"names do not match given={given} family={family}, but name={person['name']}")
+    return errors
+
+
 def validate_jurisdictions(person, municipalities):
     errors = []
     for role in person.get("roles", []):
@@ -423,6 +441,7 @@ class Validator:
             self.errors[filename].extend(validate_roles(person, "party"))
 
         self.errors[filename].extend(validate_offices(person))
+        self.errors[filename].extend(validate_name(person))
 
         # active party validation
         active_parties = []
