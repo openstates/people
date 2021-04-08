@@ -3,7 +3,7 @@ import os
 import glob
 import click
 from datetime import datetime, timedelta
-from utils import load_yaml, dump_obj, role_is_active, get_data_dir
+from utils import load_yaml, dump_obj, role_is_active, get_data_dir, retire_file
 from openstates import metadata
 
 
@@ -43,7 +43,7 @@ def autoretire(abbr):
                 print("retiring ", filename)
                 # end_date won't be used since they're already expired
                 retire_person(person, None)
-                move_file(filename)
+                retire_file(filename)
 
 
 def retire_person(person, end_date, reason=None, death=False):
@@ -62,14 +62,6 @@ def retire_person(person, end_date, reason=None, death=False):
     person.pop("contact_details", None)
 
     return person, num
-
-
-def move_file(filename):  # pragma: no cover
-    new_filename = filename.replace("/legislature/", "/retired/").replace(
-        "/municipalities/", "/retired/"
-    )
-    click.secho(f"moved from {filename} to {new_filename}")
-    os.renames(filename, new_filename)
 
 
 def validate_end_date(ctx, param, value):
@@ -118,7 +110,8 @@ def retire(end_date, filenames, reason, death, auto, vacant):
         else:
             click.secho(f"retired person from {num} roles")
 
-        move_file(filename)
+        new_filename = retire_file(filename)
+        click.secho(f"moved from {filename} to {new_filename}")
 
 
 if __name__ == "__main__":

@@ -134,3 +134,11 @@ def load_municipalities(abbr: str) -> list[dict]:
             return typing.cast(list, load_yaml(f))
     except FileNotFoundError:
         return []
+
+
+def retire_file(filename: str) -> str:  # pragma: no cover
+    new_filename = filename.replace("/legislature/", "/retired/").replace(
+        "/municipalities/", "/retired/"
+    )
+    os.renames(filename, new_filename)
+    return new_filename
