@@ -14,13 +14,13 @@ from utils import (
 )
 
 
-def process_link(link):
+def process_link(link: dict[str, str]) -> dict[str, str]:
     if not link["note"]:
         del link["note"]
     return link
 
 
-def process_dir(input_dir, output_dir, jurisdiction_id):
+def process_dir(input_dir: str, output_dir: str, jurisdiction_id: str) -> None:
     person_memberships = defaultdict(list)
 
     # collect memberships
@@ -44,7 +44,7 @@ def process_dir(input_dir, output_dir, jurisdiction_id):
         dump_obj(person, output_dir=os.path.join(output_dir, "legislature"))
 
 
-def process_person(person, jurisdiction_id):
+def process_person(person: dict, jurisdiction_id: str) -> dict:
     optional_keys = (
         "image",
         "gender",
@@ -70,7 +70,9 @@ def process_person(person, jurisdiction_id):
         sources=[process_link(link) for link in person["sources"]],
     )
 
-    contact_details = defaultdict(lambda: defaultdict(list))
+    contact_details: defaultdict[str, defaultdict[str, list[str]]] = defaultdict(
+        lambda: defaultdict(list)
+    )
     email = None
     for detail in person["contact_details"]:
         value = detail["value"]
@@ -123,7 +125,7 @@ def process_person(person, jurisdiction_id):
 
 @click.command()  # pragma: no cover
 @click.argument("input_dir")
-def to_yaml(input_dir):
+def to_yaml(input_dir: str) -> None:
     """
     Convert scraped JSON in INPUT_DIR to YAML files for this repo.
 
@@ -131,7 +133,7 @@ def to_yaml(input_dir):
     """
 
     # abbr is last piece of directory name
-    abbr = None
+    abbr = ""
     for piece in input_dir.split("/")[::-1]:
         if piece:
             abbr = piece
