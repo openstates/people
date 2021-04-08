@@ -350,9 +350,13 @@ def validate_name(person: dict, fix: bool) -> CheckResult:
             fixes.append(f"set given_name={given}")
             fixes.append(f"set family_name={family}")
         if not given:
-            errors.append(f"missing given_name that could be set to '{given_cand}'")
+            errors.append(
+                f"missing given_name that could be set to '{given_cand}', run with --fix"
+            )
         if not family:
-            errors.append(f"missing family_name that could be set to '{family_cand}'")
+            errors.append(
+                f"missing family_name that could be set to '{family_cand}', run with --fix"
+            )
         # expected_name = f"{given} {family}"
         # if not errors and person["name"] != expected_name:
         #     errors.append(f"names do not match given={given} family={family}, but name={person['name']}")
@@ -561,8 +565,11 @@ class Validator:
 
         for fn, errors in self.errors.items():
             warnings = self.warnings[fn]
-            if errors or warnings:
+            fixes = self.fixes[fn]
+            if errors or warnings or fixes:
                 click.echo(fn)
+                for fix in fixes:
+                    click.secho(" " + fix, fg="green")
                 for err in errors:
                     click.secho(" " + err, fg="red")
                     error_count += 1
@@ -621,7 +628,7 @@ def process_dir(abbr, verbose, municipal, date, fix):  # pragma: no cover
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
-@click.option("--fix/--no-fix", default=True, help="Enable/disable automatic fixing of data.")
+@click.option("--fix/--no-fix", default=False, help="Enable/disable automatic fixing of data.")
 @click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )

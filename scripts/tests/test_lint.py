@@ -185,14 +185,14 @@ def test_validate_roles_party(person, expected):
         (
             {"name": "Phillip Swoozle"},
             [
-                "missing given_name that could be set to 'Phillip'",
-                "missing family_name that could be set to 'Swoozle'",
+                "missing given_name that could be set to 'Phillip', run with --fix",
+                "missing family_name that could be set to 'Swoozle', run with --fix",
             ],
         ),
         (
             {"name": "Phillip Swoozle", "given_name": "Phil"},
             [
-                "missing family_name that could be set to 'Swoozle'",
+                "missing family_name that could be set to 'Swoozle', run with --fix",
             ],
         ),
         (
