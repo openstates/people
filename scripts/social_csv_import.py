@@ -4,6 +4,7 @@ import re
 import csv
 import glob
 import click
+import typing
 from utils import (
     get_data_dir,
     load_yaml,
@@ -11,7 +12,9 @@ from utils import (
 )
 
 
-def load_person_by_id(abbr, person_id):
+def load_person_by_id(
+    abbr: str, person_id: str
+) -> tuple[typing.Optional[str], typing.Optional[dict]]:
     directory = get_data_dir(abbr)
 
     person_id = person_id.replace("ocd-person/", "")
@@ -29,9 +32,9 @@ def load_person_by_id(abbr, person_id):
         return person[0], load_yaml(f)
 
 
-def clean_id(value, id_type):
+def clean_id(value: typing.Optional[str], id_type: str) -> typing.Optional[str]:
     if not value:
-        return
+        return None
     try:
         if id_type == "facebook":
             return re.findall(r"facebook.com/([-\.\w\d]+)/?$", value)[0]
@@ -45,7 +48,7 @@ def clean_id(value, id_type):
     return value
 
 
-def add_id_if_exists(person, id_type, id_or_none):
+def add_id_if_exists(person: dict, id_type: str, id_or_none: typing.Optional[str]) -> None:
     new_id = clean_id(id_or_none, id_type)
     if new_id:
         existing = person.get("ids", {}).get(id_type)
@@ -63,7 +66,7 @@ def add_id_if_exists(person, id_type, id_or_none):
 @click.command()
 @click.argument("abbr")
 @click.argument("filename")
-def social_csv_import(abbr, filename):
+def social_csv_import(abbr: str, filename: str) -> None:
     with open(filename) as f:
         social_data = csv.DictReader(f)
 
