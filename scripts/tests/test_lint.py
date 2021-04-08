@@ -201,10 +201,23 @@ def test_validate_roles_party(person, expected):
         ),
     ],
 )
-def test_validate_name(person, expected):
+def test_validate_name_errors(person, expected):
     assert validate_name(person, fix=False).errors == expected
     assert validate_name(person, fix=False).warnings == []
     assert validate_name(person, fix=False).fixes == []
+
+
+def test_validate_name_fixes():
+    person = {"name": "Phillip Swoozle"}
+    result = validate_name(person, fix=True)
+    assert result.errors == []
+    assert len(result.fixes) == 2
+    assert person["given_name"] == "Phillip"
+    assert person["family_name"] == "Swoozle"
+
+    # no fixes on an OK name
+    result = validate_name(person, fix=True)
+    assert result.errors == result.fixes == []
 
 
 @pytest.mark.parametrize(
