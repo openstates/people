@@ -202,7 +202,9 @@ def test_validate_roles_party(person, expected):
     ],
 )
 def test_validate_name(person, expected):
-    assert validate_name(person) == expected
+    assert validate_name(person, fix=False).errors == expected
+    assert validate_name(person, fix=False).warnings == []
+    assert validate_name(person, fix=False).fixes == []
 
 
 @pytest.mark.parametrize(

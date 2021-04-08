@@ -5,6 +5,8 @@ import sys
 import datetime
 import glob
 import click
+import typing
+from dataclasses import dataclass
 from openstates import metadata
 from enum import Enum, auto
 from utils import (
@@ -12,6 +14,7 @@ from utils import (
     role_is_active,
     get_all_abbreviations,
     load_yaml,
+    dump_obj,
     legacy_districts,
     load_municipalities,
     MAJOR_PARTIES,
@@ -28,6 +31,13 @@ class PersonType(Enum):
     RETIRED = auto()
     EXECUTIVE = auto()
     MUNICIPAL = auto()
+
+
+@dataclass
+class CheckResult:
+    errors: typing.List[str]
+    warnings: typing.List[str]
+    fixes: typing.List[str]
 
 
 SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
@@ -325,22 +335,28 @@ def validate_offices(person):
     return errors
 
 
-def validate_name(person):
+def validate_name(person: dict, fix: bool) -> CheckResult:
     """ some basic checks on a persons name """
     errors = []
+    fixes = []
     spaces_in_name = person["name"].count(" ")
     if spaces_in_name == 1:
         given_cand, family_cand = person["name"].split()
         given = person.get("given_name")
         family = person.get("family_name")
-        # expected_name = f"{given} {family}"
+        if not given and not family and fix:
+            person["given_name"] = given = given_cand
+            person["family_name"] = family = family_cand
+            fixes.append(f"set given_name={given}")
+            fixes.append(f"set family_name={family}")
         if not given:
             errors.append(f"missing given_name that could be set to '{given_cand}'")
         if not family:
             errors.append(f"missing family_name that could be set to '{family_cand}'")
+        # expected_name = f"{given} {family}"
         # if not errors and person["name"] != expected_name:
         #     errors.append(f"names do not match given={given} family={family}, but name={person['name']}")
-    return errors
+    return CheckResult(errors, [], fixes)
 
 
 def validate_jurisdictions(person, municipalities):
@@ -415,6 +431,7 @@ class Validator:
         self.valid_parties = set(settings["parties"])
         self.errors = defaultdict(list)
         self.warnings = defaultdict(list)
+        self.fixes = defaultdict(list)
         # role type -> district -> filename
         self.active_legislators = defaultdict(lambda: defaultdict(list))
         # field name -> value -> filename
@@ -425,7 +442,17 @@ class Validator:
             if not JURISDICTION_RE.match(m):
                 raise ValueError(f"invalid municipality id {m}")
 
-    def validate_person(self, person, filename, person_type, date=None):
+    def process_validator_result(
+        self, validator_func, person: dict, filename: str, fix: bool
+    ) -> None:
+        result = validator_func(person, fix)
+        self.errors[filename].extend(result.errors)
+        self.warnings[filename].extend(result.warnings)
+        if result.fixes:
+            self.fixes[filename].extend(result.fixes)
+            dump_obj(person, filename=filename)
+
+    def validate_person(self, person, filename, person_type, date=None, fix=False):
         self.errors[filename] = validate_obj(person, PERSON_FIELDS)
         uid = person["id"].split("/")[1]
         if uid not in filename:
@@ -441,7 +468,7 @@ class Validator:
             self.errors[filename].extend(validate_roles(person, "party"))
 
         self.errors[filename].extend(validate_offices(person))
-        self.errors[filename].extend(validate_name(person))
+        self.process_validator_result(validate_name, person, filename, fix)
 
         # active party validation
         active_parties = []
@@ -556,7 +583,7 @@ class Validator:
         return error_count
 
 
-def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
+def process_dir(abbr, verbose, municipal, date, fix):  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
@@ -584,7 +611,7 @@ def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
             print_filename = os.path.basename(filename)
             with open(filename) as f:
                 person = load_yaml(f)
-                validator.validate_person(person, print_filename, person_type, date)
+                validator.validate_person(person, print_filename, person_type, date, fix)
 
     error_count = validator.print_validation_report(verbose)
 
@@ -594,6 +621,7 @@ def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option("-v", "--verbose", count=True)
+@click.option("--fix/--no-fix", default=True, help="Enable/disable automatic fixing of data.")
 @click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
@@ -603,7 +631,7 @@ def process_dir(abbr, verbose, municipal, date):  # pragma: no cover
     default=None,
     help="Lint roles using a certain date instead of today.",
 )
-def lint(abbreviations, verbose, municipal, date):
+def lint(abbreviations, verbose, municipal, date, fix):
     """
     Lint YAML files.
 
@@ -616,7 +644,7 @@ def lint(abbreviations, verbose, municipal, date):
 
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, municipal, date)
+        error_count += process_dir(abbr, verbose, municipal, date, fix)
 
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
