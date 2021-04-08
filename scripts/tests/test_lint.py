@@ -11,6 +11,7 @@ from lint_yaml import (
     validate_obj,
     PERSON_FIELDS,
     validate_roles,
+    validate_name,
     validate_offices,
     get_expected_districts,
     compare_districts,
@@ -180,6 +181,48 @@ def test_validate_roles_party(person, expected):
 @pytest.mark.parametrize(
     "person,expected",
     [
+        ({"name": "Phillip J Swoozle"}, []),
+        (
+            {"name": "Phillip Swoozle"},
+            [
+                "missing given_name that could be set to 'Phillip', run with --fix",
+                "missing family_name that could be set to 'Swoozle', run with --fix",
+            ],
+        ),
+        (
+            {"name": "Phillip Swoozle", "given_name": "Phil"},
+            [
+                "missing family_name that could be set to 'Swoozle', run with --fix",
+            ],
+        ),
+        (
+            {"name": "Phillip Swoozle", "given_name": "Phil", "family_name": "Swoozle"},
+            [],
+        ),
+    ],
+)
+def test_validate_name_errors(person, expected):
+    assert validate_name(person, fix=False).errors == expected
+    assert validate_name(person, fix=False).warnings == []
+    assert validate_name(person, fix=False).fixes == []
+
+
+def test_validate_name_fixes():
+    person = {"name": "Phillip Swoozle"}
+    result = validate_name(person, fix=True)
+    assert result.errors == []
+    assert len(result.fixes) == 2
+    assert person["given_name"] == "Phillip"
+    assert person["family_name"] == "Swoozle"
+
+    # no fixes on an OK name
+    result = validate_name(person, fix=True)
+    assert result.errors == result.fixes == []
+
+
+@pytest.mark.parametrize(
+    "person,expected",
+    [
         ({"roles": [{"name": "House"}]}, []),
         ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles"]),
         ({"roles": []}, ["no active roles"]),
@@ -294,7 +337,7 @@ def test_compare_districts_overfill():
 
 
 def test_validator_check_https():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     person = {
@@ -310,7 +353,7 @@ def test_validator_check_https():
 
 
 def test_person_duplicates():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
+    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
     v = Validator("ak", settings)
 
     people = [
