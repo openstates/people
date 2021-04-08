@@ -35,9 +35,9 @@ class PersonType(Enum):
 
 @dataclass
 class CheckResult:
-    errors: typing.List[str]
-    warnings: typing.List[str]
-    fixes: typing.List[str]
+    errors: list[str]
+    warnings: list[str]
+    fixes: list[str]
 
 
 @dataclass
@@ -70,9 +70,7 @@ class Required:
 
 
 class NestedList:
-    def __init__(
-        self, subschema: typing.Union[dict, typing.Callable[[typing.Any], typing.List[str]]]
-    ):
+    def __init__(self, subschema: typing.Union[dict, typing.Callable[[typing.Any], list[str]]]):
         self.subschema = subschema
 
 
@@ -176,7 +174,7 @@ EXECUTIVE_ROLE_FIELDS = {
 }
 
 
-def is_role(role: dict) -> typing.List[str]:
+def is_role(role: dict) -> list[str]:
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
@@ -258,9 +256,7 @@ PERSON_FIELDS = {
 }
 
 
-def validate_obj(
-    obj: dict, schema: dict, prefix: typing.Optional[typing.List[str]] = None
-) -> typing.List[str]:
+def validate_obj(obj: dict, schema: dict, prefix: typing.Optional[list[str]] = None) -> list[str]:
     errors = []
 
     if prefix:
@@ -317,7 +313,7 @@ def validate_obj(
 
 def validate_roles(
     person: dict, roles_key: str, retired: bool = False, date: typing.Optional[str] = None
-) -> typing.List[str]:
+) -> list[str]:
     active = [role for role in person.get(roles_key, []) if role_is_active(role, date=date)]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
@@ -328,11 +324,11 @@ def validate_roles(
     return []
 
 
-def validate_offices(person: dict) -> typing.List[str]:
+def validate_offices(person: dict) -> list[str]:
     errors = []
     contact_details = person.get("contact_details", [])
     type_counter: Counter[str] = Counter()
-    seen_values: typing.Dict[str, str] = {}
+    seen_values: dict[str, str] = {}
     for office in contact_details:
         type_counter[office["note"]] += 1
         for key, value in office.items():
@@ -380,7 +376,7 @@ def validate_name(person: dict, fix: bool) -> CheckResult:
     return CheckResult(errors, [], fixes)
 
 
-def validate_jurisdictions(person: dict, municipalities: typing.List[str]) -> typing.List[str]:
+def validate_jurisdictions(person: dict, municipalities: list[str]) -> list[str]:
     errors = []
     for role in person.get("roles", []):
         jid = role.get("jurisdiction")
@@ -393,13 +389,11 @@ def validate_jurisdictions(person: dict, municipalities: typing.List[str]) -> ty
     return errors
 
 
-_EXPECTED_DISTRICTS_TYPE = typing.Dict[str, typing.Dict[str, int]]
-_ACTUAL_DISTRICTS_TYPE = defaultdict[str, defaultdict[str, typing.List[str]]]
+_EXPECTED_DISTRICTS_TYPE = dict[str, dict[str, int]]
+_ACTUAL_DISTRICTS_TYPE = defaultdict[str, defaultdict[str, list[str]]]
 
 
-def get_expected_districts(
-    settings: typing.Dict[str, dict], abbr: str
-) -> _EXPECTED_DISTRICTS_TYPE:
+def get_expected_districts(settings: dict[str, dict], abbr: str) -> _EXPECTED_DISTRICTS_TYPE:
     expected = {}
 
     state = metadata.lookup(abbr=abbr)
@@ -429,7 +423,7 @@ def get_expected_districts(
 
 def compare_districts(
     expected: _EXPECTED_DISTRICTS_TYPE, actual: _ACTUAL_DISTRICTS_TYPE
-) -> typing.List[str]:
+) -> list[str]:
     errors = []
 
     if expected.keys() != actual.keys():
@@ -458,15 +452,15 @@ class Validator:
         self.http_allow = tuple(settings.get("http_allow", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
-        self.errors: defaultdict[str, typing.List[str]] = defaultdict(list)
-        self.warnings: defaultdict[str, typing.List[str]] = defaultdict(list)
-        self.fixes: defaultdict[str, typing.List[str]] = defaultdict(list)
+        self.errors: defaultdict[str, list[str]] = defaultdict(list)
+        self.warnings: defaultdict[str, list[str]] = defaultdict(list)
+        self.fixes: defaultdict[str, list[str]] = defaultdict(list)
         # role type -> district -> filename
-        self.active_legislators: defaultdict[
-            str, defaultdict[str, typing.List[str]]
-        ] = defaultdict(lambda: defaultdict(list))
+        self.active_legislators: defaultdict[str, defaultdict[str, list[str]]] = defaultdict(
+            lambda: defaultdict(list)
+        )
         # field name -> value -> filename
-        self.duplicate_values: defaultdict[str, defaultdict[str, typing.List[str]]] = defaultdict(
+        self.duplicate_values: defaultdict[str, defaultdict[str, list[str]]] = defaultdict(
             lambda: defaultdict(list)
         )
         self.legacy_districts = legacy_districts(abbr=abbr)
@@ -549,7 +543,7 @@ class Validator:
                     break
             self.active_legislators[str(role_type)][str(district)].append(person.print_filename)
 
-    def validate_old_district_names(self, person: dict) -> typing.List[str]:
+    def validate_old_district_names(self, person: dict) -> list[str]:
         errors = []
         for role in person.get("roles", []):
             if (
@@ -565,7 +559,7 @@ class Validator:
             return False
         return True
 
-    def check_https(self, person: dict) -> typing.List[str]:
+    def check_https(self, person: dict) -> list[str]:
         warnings = []
         if not self.check_https_url(person.get("image")):
             warnings.append(f'image URL {person["image"]} should be HTTPS')
@@ -579,7 +573,7 @@ class Validator:
                 warnings.append(f"sources.{i} URL {url} should be HTTPS")
         return warnings
 
-    def check_duplicates(self) -> typing.List[str]:
+    def check_duplicates(self) -> list[str]:
         """
         duplicates should already be stored in self.duplicate_values
         this method just needs to turn them into errors
@@ -676,9 +670,7 @@ def process_dir(
     default=None,
     help="Lint roles using a certain date instead of today.",
 )
-def lint(
-    abbreviations: typing.List[str], verbose: bool, municipal: bool, date: str, fix: bool
-) -> None:
+def lint(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fix: bool) -> None:
     """
     Lint YAML files.
 

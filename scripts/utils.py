@@ -59,7 +59,7 @@ def get_data_dir(abbr: str) -> str:
     return os.path.join(os.path.dirname(__file__), "../data", abbr)
 
 
-def get_all_abbreviations() -> typing.List[str]:
+def get_all_abbreviations() -> list[str]:
     return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../data")))
 
 
@@ -71,7 +71,7 @@ def load_yaml(file_obj: typing.TextIO) -> dict:
     return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
 
 
-def iter_objects(abbr: str, objtype: str) -> typing.Iterator[typing.Tuple[dict, str]]:
+def iter_objects(abbr: str, objtype: str) -> typing.Iterator[tuple[dict, str]]:
     filenames = glob.glob(os.path.join(get_data_dir(abbr), objtype, "*.yml"))
     for filename in filenames:
         with open(filename) as f:
@@ -120,17 +120,17 @@ def find_file(leg_id: str, *, state: str = "*") -> str:
 
 def legacy_districts(
     abbr: typing.Optional[str] = None, jurisdiction_id: typing.Optional[str] = None
-) -> typing.Dict[str, typing.List[str]]:
+) -> dict[str, list[str]]:
     """ can take jurisdiction_id or abbr via kwargs """
-    legacy_districts: typing.Dict[str, typing.List[str]] = {"upper": [], "lower": []}
+    legacy_districts: dict[str, list[str]] = {"upper": [], "lower": []}
     for d in metadata.lookup(abbr=abbr, jurisdiction_id=jurisdiction_id).legacy_districts:
         legacy_districts[d.chamber_type].append(d.name)
     return legacy_districts
 
 
-def load_municipalities(abbr: str) -> typing.List[dict]:
+def load_municipalities(abbr: str) -> list[dict]:
     try:
         with open(os.path.join(get_data_dir(abbr), "municipalities.yml")) as f:
-            return typing.cast(typing.List, load_yaml(f))
+            return typing.cast(list, load_yaml(f))
     except FileNotFoundError:
         return []
