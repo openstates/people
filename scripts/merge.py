@@ -4,8 +4,8 @@ import glob
 import click
 from collections import defaultdict
 from openstates import metadata
-from utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file
-from retire import retire_person, move_file
+from utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file, retire_file
+from retire import retire_person
 
 
 def merge_contact_details(old, new):
@@ -213,7 +213,8 @@ def retire(abbr, existing, new, retirement=None):
     person, num = retire_person(existing, retirement)
     fname = find_file(existing["id"])
     dump_obj(person, filename=fname)
-    move_file(fname)
+    new_filename = retire_file(fname)
+    click.secho(f"moved from {fname} to {new_filename}")
 
 
 def interactive_merge(abbr, old, new, name_match, role_match, retirement):

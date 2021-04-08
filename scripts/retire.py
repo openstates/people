@@ -1,9 +1,7 @@
 #!/usr/bin/env python
-import os
-import glob
 import click
 from datetime import datetime, timedelta
-from utils import load_yaml, dump_obj, role_is_active, get_data_dir
+from utils import load_yaml, dump_obj, role_is_active, retire_file
 from openstates import metadata
 
 
@@ -29,23 +27,6 @@ def is_inactive(person, date=None):
     return len(active) == 0
 
 
-def autoretire(abbr):
-    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
-    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
-    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
-
-    filenames = legislative_filenames + executive_filenames + municipality_filenames
-    for filename in filenames:
-        with open(filename) as f:
-            person = load_yaml(f)
-
-            if is_inactive(person):
-                print("retiring ", filename)
-                # end_date won't be used since they're already expired
-                retire_person(person, None)
-                move_file(filename)
-
-
 def retire_person(person, end_date, reason=None, death=False):
     num = 0
     for role in person["roles"]:
@@ -64,14 +45,6 @@ def retire_person(person, end_date, reason=None, death=False):
     return person, num
 
 
-def move_file(filename):  # pragma: no cover
-    new_filename = filename.replace("/legislature/", "/retired/").replace(
-        "/municipalities/", "/retired/"
-    )
-    click.secho(f"moved from {filename} to {new_filename}")
-    os.renames(filename, new_filename)
-
-
 def validate_end_date(ctx, param, value):
     try:
         datetime.strptime(value, "%Y-%m-%d")
@@ -86,17 +59,12 @@ def validate_end_date(ctx, param, value):
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
 @click.option("--vacant", is_flag=True)
-@click.option("--auto")
-def retire(end_date, filenames, reason, death, auto, vacant):
+def retire(end_date, filenames, reason, death, vacant):
     """
     Retire a legislator, given END_DATE and FILENAME.
 
     Will set end_date on active roles.
     """
-    if auto:
-        autoretire(auto)
-        return
-
     for filename in filenames:
         # end the person's active roles & re-save
         with open(filename) as f:
@@ -118,7 +86,8 @@ def retire(end_date, filenames, reason, death, auto, vacant):
         else:
             click.secho(f"retired person from {num} roles")
 
-        move_file(filename)
+        new_filename = retire_file(filename)
+        click.secho(f"moved from {filename} to {new_filename}")
 
 
 if __name__ == "__main__":

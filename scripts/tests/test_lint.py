@@ -11,12 +11,14 @@ from lint_yaml import (
     validate_obj,
     PERSON_FIELDS,
     validate_roles,
+    validate_name,
     validate_offices,
     get_expected_districts,
     compare_districts,
     Validator,
     BadVacancy,
     PersonType,
+    PersonData,
 )  # noqa
 
 
@@ -180,6 +182,48 @@ def test_validate_roles_party(person, expected):
 @pytest.mark.parametrize(
     "person,expected",
     [
+        ({"name": "Phillip J Swoozle"}, []),
+        (
+            {"name": "Phillip Swoozle"},
+            [
+                "missing given_name that could be set to 'Phillip', run with --fix",
+                "missing family_name that could be set to 'Swoozle', run with --fix",
+            ],
+        ),
+        (
+            {"name": "Phillip Swoozle", "given_name": "Phil"},
+            [
+                "missing family_name that could be set to 'Swoozle', run with --fix",
+            ],
+        ),
+        (
+            {"name": "Phillip Swoozle", "given_name": "Phil", "family_name": "Swoozle"},
+            [],
+        ),
+    ],
+)
+def test_validate_name_errors(person, expected):
+    assert validate_name(PersonData(person, "", ""), fix=False).errors == expected
+    assert validate_name(PersonData(person, "", ""), fix=False).warnings == []
+    assert validate_name(PersonData(person, "", ""), fix=False).fixes == []
+
+
+def test_validate_name_fixes():
+    person = PersonData({"name": "Phillip Swoozle"}, "", "")
+    result = validate_name(person, fix=True)
+    assert result.errors == []
+    assert len(result.fixes) == 2
+    assert person.data["given_name"] == "Phillip"
+    assert person.data["family_name"] == "Swoozle"
+
+    # no fixes on an OK name
+    result = validate_name(person, fix=True)
+    assert result.errors == result.fixes == []
+
+
+@pytest.mark.parametrize(
+    "person,expected",
+    [
         ({"roles": [{"name": "House"}]}, []),
         ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles"]),
         ({"roles": []}, ["no active roles"]),
@@ -294,8 +338,8 @@ def test_compare_districts_overfill():
 
 
 def test_validator_check_https():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
-    v = Validator("ak", settings)
+    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
+    v = Validator("ak", settings, False)
 
     person = {
         "links": [
@@ -310,8 +354,8 @@ def test_validator_check_https():
 
 
 def test_person_duplicates():
-    settings = {"http_whitelist": ["http://bad.example.com"], "parties": []}
-    v = Validator("ak", settings)
+    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
+    v = Validator("ak", settings, False)
 
     people = [
         # duplicates across people
@@ -330,7 +374,7 @@ def test_person_duplicates():
         {"id": "ocd-person/4", "name": "Four", "ids": {"twitter": "no-twitter"}},
     ]
     for person in people:
-        v.validate_person(person, person["name"] + ".yml", PersonType.LEGISLATIVE)
+        v.validate_person(PersonData(person, person["name"] + ".yml", PersonType.LEGISLATIVE))
     errors = v.check_duplicates()
     assert len(errors) == 3
     assert 'duplicate youtube: "fake" One.yml, Two.yml' in errors
@@ -340,8 +384,8 @@ def test_person_duplicates():
 
 def test_filename_id_test():
     person = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith", "roles": [], "party": []}
-    v = Validator("ak", {"parties": []})
-    v.validate_person(person, "bad-filename", PersonType.LEGISLATIVE)
+    v = Validator("ak", {"parties": []}, False)
+    v.validate_person(PersonData(person, "bad-filename", PersonType.LEGISLATIVE))
     for err in v.errors["bad-filename"]:
         if "not in filename" in err:
             break
