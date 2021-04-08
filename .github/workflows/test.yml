@@ -34,10 +34,10 @@ jobs:
     steps:
     # Python & dependency installation
     - uses: actions/checkout@v2
-    - name: setup Python 3.8
+    - name: setup Python 3.9
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: install Poetry
       uses: snok/install-poetry@v1.1.1
     - name: cache Poetry virtualenv
