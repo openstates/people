@@ -47,7 +47,7 @@ class PersonData:
     person_type: PersonType
 
     @property
-    def print_filename(self):
+    def print_filename(self) -> str:
         return os.path.basename(self.filename)
 
 
@@ -70,23 +70,25 @@ class Required:
 
 
 class NestedList:
-    def __init__(self, subschema):
+    def __init__(
+        self, subschema: typing.Union[dict, typing.Callable[[typing.Any], typing.List[str]]]
+    ):
         self.subschema = subschema
 
 
-def is_dict(val):
+def is_dict(val: typing.Any) -> bool:
     return isinstance(val, dict)
 
 
-def is_string(val):
+def is_string(val: typing.Any) -> bool:
     return isinstance(val, str) and "\n" not in val
 
 
-def is_multiline_string(val):
+def is_multiline_string(val: typing.Any) -> bool:
     return isinstance(val, str)
 
 
-def no_bad_comma(val):
+def no_bad_comma(val: str) -> bool:
     pieces = val.split(",")
     if len(pieces) == 1:
         return True  # no comma
@@ -96,49 +98,49 @@ def no_bad_comma(val):
         return bool(SUFFIX_RE.findall(pieces[1]))
 
 
-def is_url(val):
+def is_url(val: typing.Any) -> bool:
     return is_string(val) and val.startswith(("http://", "https://", "ftp://"))
 
 
-def is_social(val):
+def is_social(val: typing.Any) -> bool:
     return is_string(val) and not val.startswith(("http://", "https://", "@"))
 
 
 class CheckedEnum:
-    def __init__(self, *values):
+    def __init__(self, *values: str):
         self.values = values
 
-    def __call__(self, val):
+    def __call__(self, val: typing.Any) -> bool:
         return is_string(val) and val in self.values
 
     # for display
     @property
-    def __name__(self):
+    def __name__(self) -> str:
         return f"Enum{self.values}"
 
 
-def is_fuzzy_date(val):
-    return isinstance(val, datetime.date) or (is_string(val) and DATE_RE.match(val))
+def is_fuzzy_date(val: typing.Any) -> bool:
+    return isinstance(val, datetime.date) or (is_string(val) and bool(DATE_RE.match(val)))
 
 
-def is_phone(val):
-    return is_string(val) and PHONE_RE.match(val)
+def is_phone(val: typing.Any) -> bool:
+    return is_string(val) and bool(PHONE_RE.match(val))
 
 
-def is_ocd_jurisdiction(val):
-    return is_string(val) and JURISDICTION_RE.match(val)
+def is_ocd_jurisdiction(val: typing.Any) -> bool:
+    return is_string(val) and bool(JURISDICTION_RE.match(val))
 
 
-def is_ocd_person(val):
-    return is_string(val) and val.startswith("ocd-person/") and UUID_RE.match(val)
+def is_ocd_person(val: typing.Any) -> bool:
+    return is_string(val) and val.startswith("ocd-person/") and bool(UUID_RE.match(val))
 
 
-def is_ocd_organization(val):
-    return is_string(val) and val.startswith("ocd-organization/") and UUID_RE.match(val)
+def is_ocd_organization(val: typing.Any) -> bool:
+    return is_string(val) and val.startswith("ocd-organization/") and bool(UUID_RE.match(val))
 
 
-def is_legacy_openstates(val):
-    return is_string(val) and LEGACY_OS_ID_RE.match(val)
+def is_legacy_openstates(val: typing.Any) -> bool:
+    return is_string(val) and bool(LEGACY_OS_ID_RE.match(val))
 
 
 URL_LIST = NestedList({"note": [is_string], "url": [is_url, Required]})
@@ -174,7 +176,7 @@ EXECUTIVE_ROLE_FIELDS = {
 }
 
 
-def is_role(role):
+def is_role(role: dict) -> typing.List[str]:
     role_type = role.get("type")
     if role_type in ("upper", "lower", "legislature"):
         return validate_obj(role, LEGISLATIVE_ROLE_FIELDS)
@@ -190,7 +192,7 @@ def is_role(role):
         return ["invalid type"]
 
 
-def is_valid_parent(parent):
+def is_valid_parent(parent: str) -> bool:
     return parent in ("upper", "lower", "legislature") or is_ocd_organization(parent)
 
 
@@ -256,7 +258,9 @@ PERSON_FIELDS = {
 }
 
 
-def validate_obj(obj, schema, prefix=None):
+def validate_obj(
+    obj: dict, schema: dict, prefix: typing.Optional[typing.List[str]] = None
+) -> typing.List[str]:
     errors = []
 
     if prefix:
@@ -311,7 +315,9 @@ def validate_obj(obj, schema, prefix=None):
     return errors
 
 
-def validate_roles(person, roles_key, retired=False, date=None):
+def validate_roles(
+    person: dict, roles_key: str, retired: bool = False, date: typing.Optional[str] = None
+) -> typing.List[str]:
     active = [role for role in person.get(roles_key, []) if role_is_active(role, date=date)]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
@@ -322,11 +328,11 @@ def validate_roles(person, roles_key, retired=False, date=None):
     return []
 
 
-def validate_offices(person):
+def validate_offices(person: dict) -> typing.List[str]:
     errors = []
     contact_details = person.get("contact_details", [])
-    type_counter = Counter()
-    seen_values = {}
+    type_counter: Counter[str] = Counter()
+    seen_values: typing.Dict[str, str] = {}
     for office in contact_details:
         type_counter[office["note"]] += 1
         for key, value in office.items():
@@ -374,7 +380,7 @@ def validate_name(person: dict, fix: bool) -> CheckResult:
     return CheckResult(errors, [], fixes)
 
 
-def validate_jurisdictions(person, municipalities):
+def validate_jurisdictions(person: dict, municipalities: typing.List[str]) -> typing.List[str]:
     errors = []
     for role in person.get("roles", []):
         jid = role.get("jurisdiction")
@@ -387,7 +393,13 @@ def validate_jurisdictions(person, municipalities):
     return errors
 
 
-def get_expected_districts(settings, abbr):
+_EXPECTED_DISTRICTS_TYPE = typing.Dict[str, typing.Dict[str, int]]
+_ACTUAL_DISTRICTS_TYPE = defaultdict[str, defaultdict[str, typing.List[str]]]
+
+
+def get_expected_districts(
+    settings: typing.Dict[str, dict], abbr: str
+) -> _EXPECTED_DISTRICTS_TYPE:
     expected = {}
 
     state = metadata.lookup(abbr=abbr)
@@ -415,7 +427,9 @@ def get_expected_districts(settings, abbr):
     return expected
 
 
-def compare_districts(expected, actual):
+def compare_districts(
+    expected: _EXPECTED_DISTRICTS_TYPE, actual: _ACTUAL_DISTRICTS_TYPE
+) -> typing.List[str]:
     errors = []
 
     if expected.keys() != actual.keys():
@@ -440,17 +454,21 @@ def compare_districts(expected, actual):
 
 
 class Validator:
-    def __init__(self, abbr, settings, fix):
+    def __init__(self, abbr: str, settings: dict, fix: bool):
         self.http_allow = tuple(settings.get("http_allow", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
-        self.errors = defaultdict(list)
-        self.warnings = defaultdict(list)
-        self.fixes = defaultdict(list)
+        self.errors: defaultdict[str, typing.List[str]] = defaultdict(list)
+        self.warnings: defaultdict[str, typing.List[str]] = defaultdict(list)
+        self.fixes: defaultdict[str, typing.List[str]] = defaultdict(list)
         # role type -> district -> filename
-        self.active_legislators = defaultdict(lambda: defaultdict(list))
+        self.active_legislators: defaultdict[
+            str, defaultdict[str, typing.List[str]]
+        ] = defaultdict(lambda: defaultdict(list))
         # field name -> value -> filename
-        self.duplicate_values = defaultdict(lambda: defaultdict(list))
+        self.duplicate_values: defaultdict[str, defaultdict[str, typing.List[str]]] = defaultdict(
+            lambda: defaultdict(list)
+        )
         self.legacy_districts = legacy_districts(abbr=abbr)
         self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
         self.fix = fix
@@ -458,15 +476,17 @@ class Validator:
             if not JURISDICTION_RE.match(m):
                 raise ValueError(f"invalid municipality id {m}")
 
-    def process_validator_result(self, validator_func, person: PersonData) -> None:
+    def process_validator_result(
+        self, validator_func: typing.Callable[[dict, bool], CheckResult], person: PersonData
+    ) -> None:
         result = validator_func(person.data, self.fix)
         self.errors[person.print_filename].extend(result.errors)
         self.warnings[person.print_filename].extend(result.warnings)
         if result.fixes:
             self.fixes[person.print_filename].extend(result.fixes)
-            dump_obj(person, filename=person.filename)
+            dump_obj(person.data, filename=person.filename)
 
-    def validate_person(self, person: PersonData, date=None):
+    def validate_person(self, person: PersonData, date: typing.Optional[str] = None) -> None:
         self.errors[person.print_filename] = validate_obj(person.data, PERSON_FIELDS)
         uid = person.data["id"].split("/")[1]
         if uid not in person.print_filename:
@@ -527,9 +547,9 @@ class Validator:
                     role_type = role["type"]
                     district = role.get("district")
                     break
-            self.active_legislators[role_type][district].append(person.print_filename)
+            self.active_legislators[str(role_type)][str(district)].append(person.print_filename)
 
-    def validate_old_district_names(self, person):
+    def validate_old_district_names(self, person: dict) -> typing.List[str]:
         errors = []
         for role in person.get("roles", []):
             if (
@@ -540,12 +560,12 @@ class Validator:
                 errors.append(f"unknown district name: {role['type']} {role['district']}")
         return errors
 
-    def check_https_url(self, url):
+    def check_https_url(self, url: typing.Optional[str]) -> bool:
         if url and url.startswith("http://") and not url.startswith(self.http_allow):
             return False
         return True
 
-    def check_https(self, person):
+    def check_https(self, person: dict) -> typing.List[str]:
         warnings = []
         if not self.check_https_url(person.get("image")):
             warnings.append(f'image URL {person["image"]} should be HTTPS')
@@ -559,7 +579,7 @@ class Validator:
                 warnings.append(f"sources.{i} URL {url} should be HTTPS")
         return warnings
 
-    def check_duplicates(self):
+    def check_duplicates(self) -> typing.List[str]:
         """
         duplicates should already be stored in self.duplicate_values
         this method just needs to turn them into errors
@@ -576,7 +596,7 @@ class Validator:
                     errors.append(f'duplicate {key}: "{value}" {instance_str}')
         return errors
 
-    def print_validation_report(self, verbose):  # pragma: no cover
+    def print_validation_report(self, verbose: bool) -> int:  # pragma: no cover
         error_count = 0
 
         for fn, errors in self.errors.items():
@@ -606,7 +626,9 @@ class Validator:
         return error_count
 
 
-def process_dir(abbr, verbose, municipal, date, fix):  # pragma: no cover
+def process_dir(
+    abbr: str, verbose: bool, municipal: bool, date: str, fix: bool
+) -> int:  # pragma: no cover
     legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
     executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
@@ -654,7 +676,9 @@ def process_dir(abbr, verbose, municipal, date, fix):  # pragma: no cover
     default=None,
     help="Lint roles using a certain date instead of today.",
 )
-def lint(abbreviations, verbose, municipal, date, fix):
+def lint(
+    abbreviations: typing.List[str], verbose: bool, municipal: bool, date: str, fix: bool
+) -> None:
     """
     Lint YAML files.
 
