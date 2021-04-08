@@ -17,6 +17,7 @@ from utils import (
     dump_obj,
     legacy_districts,
     load_municipalities,
+    retire_file,
     MAJOR_PARTIES,
 )
 from collections import defaultdict, Counter
@@ -59,6 +60,9 @@ JURISDICTION_RE = re.compile(
     r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/((place|county):[a-z_]+/)?government"
 )
 LEGACY_OS_ID_RE = re.compile(r"[A-Z]{2}L\d{6}")
+
+# constant to check for this particular fix
+MOVED_TO_RETIRED = "moved to retired"
 
 
 class Missing:
@@ -324,6 +328,27 @@ def validate_roles(
     return []
 
 
+def validate_roles_key(
+    person: PersonData, fix: bool, date: typing.Optional[str] = None
+) -> CheckResult:
+    resp = CheckResult([], [], [])
+    role_issues = validate_roles(
+        person.data, "roles", person.person_type == PersonType.RETIRED, date=date
+    )
+
+    if person.person_type == PersonType.MUNICIPAL and role_issues == ["no active roles"]:
+        # municipals missing roles is a warning to avoid blocking lint
+        if fix:
+            resp.fixes = [MOVED_TO_RETIRED]
+        else:
+            resp.warnings.extend(role_issues)
+    else:
+        resp.errors.extend(role_issues)
+    if person.person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
+        resp.errors.extend(validate_roles(person.data, "party"))
+    return resp
+
+
 def validate_offices(person: dict) -> list[str]:
     errors = []
     contact_details = person.get("contact_details", [])
@@ -348,18 +373,18 @@ def validate_offices(person: dict) -> list[str]:
     return errors
 
 
-def validate_name(person: dict, fix: bool) -> CheckResult:
+def validate_name(person: PersonData, fix: bool) -> CheckResult:
     """ some basic checks on a persons name """
     errors = []
     fixes = []
-    spaces_in_name = person["name"].count(" ")
+    spaces_in_name = person.data["name"].count(" ")
     if spaces_in_name == 1:
-        given_cand, family_cand = person["name"].split()
-        given = person.get("given_name")
-        family = person.get("family_name")
+        given_cand, family_cand = person.data["name"].split()
+        given = person.data.get("given_name")
+        family = person.data.get("family_name")
         if not given and not family and fix:
-            person["given_name"] = given = given_cand
-            person["family_name"] = family = family_cand
+            person.data["given_name"] = given = given_cand
+            person.data["family_name"] = family = family_cand
             fixes.append(f"set given_name={given}")
             fixes.append(f"set family_name={family}")
         if not given:
@@ -371,8 +396,8 @@ def validate_name(person: dict, fix: bool) -> CheckResult:
                 f"missing family_name that could be set to '{family_cand}', run with --fix"
             )
         # expected_name = f"{given} {family}"
-        # if not errors and person["name"] != expected_name:
-        #     errors.append(f"names do not match given={given} family={family}, but name={person['name']}")
+        # if not errors and person.data["name"] != expected_name:
+        #     errors.append(f"names do not match given={given} family={family}, but name={person.data['name']}")
     return CheckResult(errors, [], fixes)
 
 
@@ -471,9 +496,9 @@ class Validator:
                 raise ValueError(f"invalid municipality id {m}")
 
     def process_validator_result(
-        self, validator_func: typing.Callable[[dict, bool], CheckResult], person: PersonData
+        self, validator_func: typing.Callable[[PersonData, bool], CheckResult], person: PersonData
     ) -> None:
-        result = validator_func(person.data, self.fix)
+        result = validator_func(person, self.fix)
         self.errors[person.print_filename].extend(result.errors)
         self.warnings[person.print_filename].extend(result.warnings)
         if result.fixes:
@@ -488,18 +513,9 @@ class Validator:
         self.errors[person.print_filename].extend(
             validate_jurisdictions(person.data, self.municipalities)
         )
-        role_issues = validate_roles(
-            person.data, "roles", person.person_type == PersonType.RETIRED, date=date
-        )
-        # municipals missing roles is a warning to avoid blocking lint
-        if person.person_type == PersonType.MUNICIPAL:
-            self.warnings[person.print_filename].extend(role_issues)
-        else:
-            self.errors[person.print_filename].extend(role_issues)
-        if person.person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
-            self.errors[person.print_filename].extend(validate_roles(person.data, "party"))
 
         self.errors[person.print_filename].extend(validate_offices(person.data))
+        self.process_validator_result(validate_roles_key, person)
         self.process_validator_result(validate_name, person)
 
         # active party validation
@@ -532,6 +548,10 @@ class Validator:
             self.duplicate_values[scheme][value].append(person.print_filename)
         for id in person.data.get("other_identifiers", []):
             self.duplicate_values[id["scheme"]][id["identifier"]].append(person.print_filename)
+
+        # special case for the auto-retirement fix
+        if MOVED_TO_RETIRED in self.fixes[person.print_filename]:
+            retire_file(person.filename)
 
         # update active legislators
         if person.person_type == PersonType.LEGISLATIVE:
