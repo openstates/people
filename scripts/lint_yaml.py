@@ -40,6 +40,17 @@ class CheckResult:
     fixes: typing.List[str]
 
 
+@dataclass
+class PersonData:
+    data: dict
+    filename: str
+    person_type: PersonType
+
+    @property
+    def print_filename(self):
+        return os.path.basename(self.filename)
+
+
 SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
@@ -93,7 +104,7 @@ def is_social(val):
     return is_string(val) and not val.startswith(("http://", "https://", "@"))
 
 
-class Enum:
+class CheckedEnum:
     def __init__(self, *values):
         self.values = values
 
@@ -135,7 +146,7 @@ URL_LIST = NestedList({"note": [is_string], "url": [is_url, Required]})
 
 CONTACT_DETAILS = NestedList(
     {
-        "note": [Enum("District Office", "Capitol Office", "Primary Office"), Required],
+        "note": [CheckedEnum("District Office", "Capitol Office", "Primary Office"), Required],
         "address": [is_string],
         "voice": [is_phone],
         "fax": [is_phone],
@@ -429,7 +440,7 @@ def compare_districts(expected, actual):
 
 
 class Validator:
-    def __init__(self, abbr, settings):
+    def __init__(self, abbr, settings, fix):
         self.http_allow = tuple(settings.get("http_allow", []))
         self.expected = get_expected_districts(settings, abbr)
         self.valid_parties = set(settings["parties"])
@@ -442,77 +453,81 @@ class Validator:
         self.duplicate_values = defaultdict(lambda: defaultdict(list))
         self.legacy_districts = legacy_districts(abbr=abbr)
         self.municipalities = [m["id"] for m in load_municipalities(abbr=abbr)]
+        self.fix = fix
         for m in self.municipalities:
             if not JURISDICTION_RE.match(m):
                 raise ValueError(f"invalid municipality id {m}")
 
-    def process_validator_result(
-        self, validator_func, person: dict, filename: str, print_filename: str, fix: bool
-    ) -> None:
-        result = validator_func(person, fix)
-        self.errors[print_filename].extend(result.errors)
-        self.warnings[print_filename].extend(result.warnings)
+    def process_validator_result(self, validator_func, person: PersonData) -> None:
+        result = validator_func(person.data, self.fix)
+        self.errors[person.print_filename].extend(result.errors)
+        self.warnings[person.print_filename].extend(result.warnings)
         if result.fixes:
-            self.fixes[print_filename].extend(result.fixes)
-            dump_obj(person, filename=filename)
+            self.fixes[person.print_filename].extend(result.fixes)
+            dump_obj(person, filename=person.filename)
 
-    def validate_person(self, person, filename, person_type, date=None, fix=False):
-        print_filename = os.path.basename(filename)
-        self.errors[print_filename] = validate_obj(person, PERSON_FIELDS)
-        uid = person["id"].split("/")[1]
-        if uid not in print_filename:
-            self.errors[print_filename].append(f"id piece {uid} not in filename")
-        self.errors[print_filename].extend(validate_jurisdictions(person, self.municipalities))
-        role_issues = validate_roles(person, "roles", person_type == PersonType.RETIRED, date=date)
+    def validate_person(self, person: PersonData, date=None):
+        self.errors[person.print_filename] = validate_obj(person.data, PERSON_FIELDS)
+        uid = person.data["id"].split("/")[1]
+        if uid not in person.print_filename:
+            self.errors[person.print_filename].append(f"id piece {uid} not in filename")
+        self.errors[person.print_filename].extend(
+            validate_jurisdictions(person.data, self.municipalities)
+        )
+        role_issues = validate_roles(
+            person.data, "roles", person.person_type == PersonType.RETIRED, date=date
+        )
         # municipals missing roles is a warning to avoid blocking lint
-        if person_type == PersonType.MUNICIPAL:
-            self.warnings[print_filename].extend(role_issues)
+        if person.person_type == PersonType.MUNICIPAL:
+            self.warnings[person.print_filename].extend(role_issues)
         else:
-            self.errors[print_filename].extend(role_issues)
-        if person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
-            self.errors[print_filename].extend(validate_roles(person, "party"))
+            self.errors[person.print_filename].extend(role_issues)
+        if person.person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
+            self.errors[person.print_filename].extend(validate_roles(person.data, "party"))
 
-        self.errors[print_filename].extend(validate_offices(person))
-        self.process_validator_result(validate_name, person, filename, print_filename, fix)
+        self.errors[person.print_filename].extend(validate_offices(person.data))
+        self.process_validator_result(validate_name, person)
 
         # active party validation
         active_parties = []
-        for party in person.get("party", []):
+        for party in person.data.get("party", []):
             if party["name"] not in self.valid_parties:
-                self.errors[print_filename].append(f"invalid party {party['name']}")
+                self.errors[person.print_filename].append(f"invalid party {party['name']}")
             if role_is_active(party):
                 active_parties.append(party["name"])
         if len(active_parties) > 1:
             if len([party for party in active_parties if party in MAJOR_PARTIES]) > 1:
-                self.errors[print_filename].append(
+                self.errors[person.print_filename].append(
                     f"multiple active major party memberships {active_parties}"
                 )
             else:
-                self.warnings[print_filename].append(
+                self.warnings[person.print_filename].append(
                     f"multiple active party memberships {active_parties}"
                 )
 
         # TODO: this was too ambitious, disabling this for now
-        # self.warnings[filename] = self.check_https(person)
-        if person_type == PersonType.RETIRED:
-            self.errors[print_filename].extend(self.validate_old_district_names(person))
+        # self.warnings[filename] = self.check_https(person.data)
+        if person.person_type == PersonType.RETIRED:
+            self.errors[person.print_filename].extend(
+                self.validate_old_district_names(person.data)
+            )
 
         # check duplicate IDs
-        self.duplicate_values["openstates"][person["id"]].append(print_filename)
-        for scheme, value in person.get("ids", {}).items():
-            self.duplicate_values[scheme][value].append(print_filename)
-        for id in person.get("other_identifiers", []):
-            self.duplicate_values[id["scheme"]][id["identifier"]].append(print_filename)
+        self.duplicate_values["openstates"][person.data["id"]].append(person.print_filename)
+        for scheme, value in person.data.get("ids", {}).items():
+            self.duplicate_values[scheme][value].append(person.print_filename)
+        for id in person.data.get("other_identifiers", []):
+            self.duplicate_values[id["scheme"]][id["identifier"]].append(person.print_filename)
 
         # update active legislators
-        if person_type == PersonType.LEGISLATIVE:
+        if person.person_type == PersonType.LEGISLATIVE:
             role_type = district = None
-            for role in person.get("roles", []):
+            for role in person.data.get("roles", []):
                 if role_is_active(role, date=date):
                     role_type = role["type"]
                     district = role.get("district")
                     break
-            self.active_legislators[role_type][district].append(print_filename)
+            self.active_legislators[role_type][district].append(person.print_filename)
 
     def validate_old_district_names(self, person):
         errors = []
@@ -601,7 +616,7 @@ def process_dir(abbr, verbose, municipal, date, fix):  # pragma: no cover
     with open(settings_file) as f:
         settings = load_yaml(f)
     try:
-        validator = Validator(abbr, settings)
+        validator = Validator(abbr, settings, fix)
     except BadVacancy:
         sys.exit(-1)
 
@@ -617,8 +632,9 @@ def process_dir(abbr, verbose, municipal, date, fix):  # pragma: no cover
     for person_type, filenames in all_filenames:
         for filename in filenames:
             with open(filename) as f:
-                person = load_yaml(f)
-                validator.validate_person(person, filename, person_type, date, fix)
+                data = load_yaml(f)
+                person = PersonData(data=data, filename=filename, person_type=person_type)
+                validator.validate_person(person, date)
 
     error_count = validator.print_validation_report(verbose)
 
