@@ -2,7 +2,7 @@
 import os
 import csv
 import glob
-import boto3
+import boto3  # type: ignore
 import click
 from utils import (
     get_data_dir,

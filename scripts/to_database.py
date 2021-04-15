@@ -2,11 +2,12 @@
 import os
 import sys
 import glob
+import typing
 from functools import lru_cache
-from django.db import transaction
+from django.db import transaction  # type: ignore
 import click
 from openstates import metadata
-from openstates.utils.django import init_django
+from openstates.utils.django import init_django  # type: ignore
 from utils import (
     get_data_dir,
     get_all_abbreviations,
@@ -18,16 +19,28 @@ from utils import (
 )
 
 
+# TODO: define TypedDict for the models?
+DataDict = dict[str, typing.Any]
+# TODO: whenever Django typed replace these
+DjangoModel = typing.Any
+DjangoModelInstance = typing.Any
+
+
 class CancelTransaction(Exception):
     pass
 
 
 @lru_cache(128)
-def cached_lookup(ModelCls, **kwargs):
+def cached_lookup(ModelCls: DjangoModel, **kwargs: str) -> DjangoModelInstance:
     return ModelCls.objects.get(**kwargs)
 
 
-def update_subobjects(person, fieldname, objects, read_manager=None):
+def update_subobjects(
+    person: DjangoModelInstance,
+    fieldname: str,
+    objects: list[DataDict],
+    read_manager: typing.Any = None,
+) -> bool:
     """ returns True if there are any updates """
     # we need the default manager for this field in case we need to do updates
     manager = getattr(person, fieldname)
@@ -65,7 +78,9 @@ def update_subobjects(person, fieldname, objects, read_manager=None):
     return updated
 
 
-def get_update_or_create(ModelCls, data, lookup_keys):
+def get_update_or_create(
+    ModelCls: DjangoModel, data: dict, lookup_keys: list[str]
+) -> tuple[DjangoModelInstance, bool, bool]:
     updated = created = False
     kwargs = {k: data[k] for k in lookup_keys}
     try:
@@ -82,7 +97,7 @@ def get_update_or_create(ModelCls, data, lookup_keys):
     return obj, created, updated
 
 
-def load_person(data):
+def load_person(data: DataDict) -> tuple[bool, bool]:
     # import has to be here so that Django is set up
     from openstates.data.models import Person, Organization, Post
 
@@ -203,7 +218,7 @@ def load_person(data):
                 current_role["title"] = getattr(state_metadata, role["type"]).title
                 # try to force district to an int for sorting, but allow strings for non-numeric districts
                 try:
-                    current_role["district"] = int(role["district"])
+                    current_role["district"] = int(role["district"])  # type: ignore
                 except ValueError:
                     current_role["district"] = str(role["district"])
             else:
@@ -243,14 +258,14 @@ def load_person(data):
     return created, updated
 
 
-def _echo_org_status(org, created, updated):
+def _echo_org_status(org: DjangoModelInstance, created: bool, updated: bool) -> None:
     if created:
         click.secho(f"{org} created", fg="green")
     elif updated:
         click.secho(f"{org} updated", fg="yellow")
 
 
-def load_directory(files, purge):
+def load_directory(files: list[str], purge: bool) -> None:
     from openstates.data.models import Person, BillSponsorship, PersonVote
 
     ids = set()
@@ -322,7 +337,7 @@ def load_directory(files, purge):
     )
 
 
-def create_parties():
+def create_parties() -> None:
     from openstates.data.models import Organization
 
     settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
@@ -335,7 +350,7 @@ def create_parties():
             click.secho(f"created party: {party}", fg="green")
 
 
-def create_municipalities(jurisdictions):
+def create_municipalities(jurisdictions: list[DataDict]) -> None:
     from openstates.data.models import Jurisdiction, Organization
 
     for jurisdiction in jurisdictions:
@@ -362,7 +377,7 @@ def create_municipalities(jurisdictions):
     default=False,
     help="Operate in safe mode, no changes will be written to database.",
 )
-def to_database(abbreviations, purge, safe):
+def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
     """
     Sync YAML files to DB.
     """
