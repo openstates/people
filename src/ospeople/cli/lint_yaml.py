@@ -7,9 +7,10 @@ import glob
 import click
 import typing
 from dataclasses import dataclass
+from collections import defaultdict, Counter
 from openstates import metadata
 from enum import Enum, auto
-from utils import (
+from ..utils import (
     get_data_dir,
     role_is_active,
     get_all_abbreviations,
@@ -20,7 +21,6 @@ from utils import (
     retire_file,
     MAJOR_PARTIES,
 )
-from collections import defaultdict, Counter
 
 
 class BadVacancy(Exception):

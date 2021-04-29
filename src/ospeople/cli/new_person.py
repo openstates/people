@@ -2,7 +2,7 @@
 import os
 import click
 from collections import OrderedDict
-from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
+from ..utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
 
 
 def create_person(

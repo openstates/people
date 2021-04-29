@@ -1,6 +1,6 @@
 import pytest
 import datetime
-from lint_yaml import (
+from ospeople.cli.lint_yaml import (
     is_url,
     is_social,
     is_fuzzy_date,

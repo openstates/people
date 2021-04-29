@@ -7,7 +7,7 @@ import boto3
 from PIL import Image
 from botocore.exceptions import ClientError
 import requests
-from utils import get_all_abbreviations, iter_objects
+from ..utils import get_all_abbreviations, iter_objects
 
 
 ALLOWED_CONTENT_TYPES = ("image/jpeg", "image/png", "image/gif", "image/jpg")
@@ -15,8 +15,8 @@ s3 = boto3.client("s3")
 
 
 def upload(img_callable, key_name, skip_existing):
-    """ upload works as a sort of decorator around img_callable, which is
-        only called if necessary after checking if there's already an image """
+    """upload works as a sort of decorator around img_callable, which is
+    only called if necessary after checking if there's already an image"""
     try:
         obj = s3.head_object(Bucket=os.environ["S3_BUCKET"], Key=key_name)
     except ClientError:
@@ -114,9 +114,9 @@ def download_state_images(abbr, skip_existing):
 )
 def sync_images(abbreviations, skip_existing):
     """
-        Download images and sync them to S3.
+    Download images and sync them to S3.
 
-        <ABBR> can be provided to restrict to single state.
+    <ABBR> can be provided to restrict to single state.
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()

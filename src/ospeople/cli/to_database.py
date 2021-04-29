@@ -7,7 +7,7 @@ from django.db import transaction
 import click
 from openstates import metadata
 from openstates.utils.django import init_django
-from utils import (
+from ..utils import (
     get_data_dir,
     get_all_abbreviations,
     load_yaml,

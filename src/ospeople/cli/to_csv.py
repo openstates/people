@@ -4,7 +4,7 @@ import csv
 import glob
 import boto3
 import click
-from utils import (
+from ..utils import (
     get_data_dir,
     get_jurisdiction_id,
     get_all_abbreviations,

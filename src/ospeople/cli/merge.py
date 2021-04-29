@@ -4,8 +4,8 @@ import glob
 import click
 from collections import defaultdict
 from openstates import metadata
-from utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file, retire_file
-from retire import retire_person
+from ..utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file, retire_file
+from .retire import retire_person
 
 
 def merge_contact_details(old, new):

@@ -1,4 +1,4 @@
-from summarize import Summarizer
+from ospeople.cli.summarize import Summarizer
 
 
 def test_person_summary():

@@ -3,7 +3,7 @@ import glob
 import os
 from collections import Counter, defaultdict
 import click
-from utils import (
+from ..utils import (
     get_data_dir,
     load_yaml,
     role_is_active,
@@ -67,7 +67,8 @@ class Summarizer:
 
     def print_summary(self):  # pragma: no cover
         click.secho(
-            f"processed {self.person_count} active people", bold=True,
+            f"processed {self.person_count} active people",
+            bold=True,
         )
         for role_type in self.active_legislators:
             count = sum([len(v) for v in self.active_legislators[role_type].values()])

@@ -2,7 +2,7 @@
 
 import click
 import csv
-from utils import (
+from ..utils import (
     iter_objects,
     role_is_active,
     get_all_abbreviations,
@@ -74,7 +74,7 @@ def update_from_csv(filename, fields, other_identifiers):
 @click.option("--other-identifiers", multiple=True)
 def manual_data(abbreviations, missing_id, filename, fields, other_identifiers):
     """
-        Import & Export Manual Data CSV Files
+    Import & Export Manual Data CSV Files
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()

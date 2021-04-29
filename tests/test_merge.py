@@ -1,5 +1,5 @@
 import pytest
-from merge import compute_merge, Append, Replace, merge_people, merge_contact_details
+from ospeople.cli.merge import compute_merge, Append, Replace, merge_people, merge_contact_details
 
 
 @pytest.mark.parametrize(

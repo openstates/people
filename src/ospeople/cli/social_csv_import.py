@@ -4,11 +4,7 @@ import re
 import csv
 import glob
 import click
-from utils import (
-    get_data_dir,
-    load_yaml,
-    dump_obj,
-)
+from ..utils import get_data_dir, load_yaml, dump_obj
 
 
 def load_person_by_id(abbr, person_id):

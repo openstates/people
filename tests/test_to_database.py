@@ -1,7 +1,7 @@
 import pytest
 import yaml
 from openstates.data.models import Person, Organization, Jurisdiction, Division
-from to_database import load_person
+from ospeople.cli.to_database import load_person
 
 
 def setup():

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 import click
 from datetime import datetime, timedelta
-from utils import load_yaml, dump_obj, role_is_active, retire_file
 from openstates import metadata
+from ..utils import load_yaml, dump_obj, role_is_active, retire_file
 
 
 def add_vacancy(person, until):

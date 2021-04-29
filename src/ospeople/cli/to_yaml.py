@@ -4,7 +4,7 @@ import json
 import os
 import click
 from collections import defaultdict, OrderedDict
-from utils import (
+from ..utils import (
     reformat_phone_number,
     reformat_address,
     get_data_dir,

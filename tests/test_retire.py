@@ -1,5 +1,4 @@
-# import pytest
-from retire import retire_person
+from ospeople.cli.retire import retire_person
 
 
 def test_retire_person():
