@@ -3,7 +3,7 @@
 import sys
 import glob
 import os
-from utils import get_data_dir, load_yaml, dump_obj
+from ..utils import get_data_dir, load_yaml, dump_obj
 from collections import defaultdict, OrderedDict
 import click
 

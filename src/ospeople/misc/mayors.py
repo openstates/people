@@ -5,7 +5,7 @@ import csv
 import glob
 import datetime
 import click
-from utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml, find_file
+from ..utils import ocd_uuid, dump_obj, reformat_phone_number, load_yaml, find_file
 from collections import defaultdict, OrderedDict
 
 
@@ -14,7 +14,9 @@ def city_to_jurisdiction(city, state):
 
 
 def get_existing_mayor(state, name):
-    for fn in glob.glob(f"data/{state}/municipalities/*.yml") + glob.glob(f"data/{state}/retired/*.yml"):
+    for fn in glob.glob(f"data/{state}/municipalities/*.yml") + glob.glob(
+        f"data/{state}/retired/*.yml"
+    ):
         with open(fn) as f:
             person = load_yaml(f)
             if person["name"] == name:
@@ -24,7 +26,7 @@ def get_existing_mayor(state, name):
 
 def update_municipalities(municipalities, state):
     fname = f"data/{state}/municipalities.yml"
-    with open(fname, 'r') as f:
+    with open(fname, "r") as f:
         contents = load_yaml(f)
     dump_obj(contents + municipalities, filename=fname)
 
@@ -81,19 +83,21 @@ def get_mayor_details(csv_fname):
             if retired:
                 os.remove(find_file(existing["id"]))
 
-            mayors_by_state[state].append(OrderedDict(
-                {
-                    "id": pid,
-                    "name": name,
-                    "given_name": given_name,
-                    "family_name": family_name,
-                    "roles": [{"jurisdiction": jid, "type": "mayor", "end_date": term_end}],
-                    "contact_details": [contact],
-                    "sources": [{"url": source}] if source else [],
-                    "links": [{"url": source}] if source else [],
-                    "email": email,
-                }
-            ))
+            mayors_by_state[state].append(
+                OrderedDict(
+                    {
+                        "id": pid,
+                        "name": name,
+                        "given_name": given_name,
+                        "family_name": family_name,
+                        "roles": [{"jurisdiction": jid, "type": "mayor", "end_date": term_end}],
+                        "contact_details": [contact],
+                        "sources": [{"url": source}] if source else [],
+                        "links": [{"url": source}] if source else [],
+                        "email": email,
+                    }
+                )
+            )
 
             municipalities_by_state[state].append(OrderedDict({"name": city, "id": jid}))
 

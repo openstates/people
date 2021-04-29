@@ -1,4 +1,4 @@
-from utils import load_yaml, dump_obj
+from ..utils import load_yaml, dump_obj
 import sys
 
 for fn in sys.argv[1:]:

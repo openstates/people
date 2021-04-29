@@ -5,7 +5,7 @@ import glob
 import itertools
 import json
 from collections import defaultdict, OrderedDict
-from utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj, iter_objects
+from ..utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj, iter_objects
 
 
 def load_new_files(state):
@@ -151,20 +151,24 @@ def process_old_file(filename, metadata):
     new_roles = []
     for session, roles in old_roles.items():
         for role in roles:
-            if role["type"] in (
-                "committee member",
-                "Minority Floor Leader",
-                "Majority Floor Leader",
-                "Majority Caucus Chair",
-                "Minority Caucus Chair",
-                "Speaker Pro Tem",
-                "President Pro Tem",
-                "Senate President",
-                "Speaker of the House",
-                "Minority Whip",
-                "Majority Whip",
-                "Lt. Governor",
-            ) or role.get("committee"):
+            if (
+                role["type"]
+                in (
+                    "committee member",
+                    "Minority Floor Leader",
+                    "Majority Floor Leader",
+                    "Majority Caucus Chair",
+                    "Minority Caucus Chair",
+                    "Speaker Pro Tem",
+                    "President Pro Tem",
+                    "Senate President",
+                    "Speaker of the House",
+                    "Minority Whip",
+                    "Majority Whip",
+                    "Lt. Governor",
+                )
+                or role.get("committee")
+            ):
                 continue
             parties.add(role["party"])
             new_roles.append(

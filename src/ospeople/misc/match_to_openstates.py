@@ -5,7 +5,7 @@ import os
 import glob
 from collections import defaultdict
 import click
-from utils import get_data_dir, load_yaml, role_is_active, get_all_abbreviations, dump_obj
+from ..utils import get_data_dir, load_yaml, role_is_active, get_all_abbreviations, dump_obj
 
 
 def get_chamber_and_district(person):

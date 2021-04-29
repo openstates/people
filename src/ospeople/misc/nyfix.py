@@ -1,5 +1,5 @@
 import csv
-from utils import find_file, load_yaml, dump_obj
+from ..utils import find_file, load_yaml, dump_obj
 
 with open("nyleg.csv") as f:
     for row in csv.DictReader(f):

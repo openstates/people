@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import csv
-from utils import ocd_uuid, dump_obj, reformat_phone_number
+from ..utils import ocd_uuid, dump_obj, reformat_phone_number
 from openstates import metadata
 from collections import OrderedDict
 
