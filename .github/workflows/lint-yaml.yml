@@ -42,6 +42,4 @@ jobs:
       # if: steps.cache.outputs.cache-hit != 'true'
 
     - name: lint yaml
-      run: poetry run ./scripts/lint_yaml.py
-      env: 
-        PYTHONPATH: scripts
+      run: poetry run lint-yaml
