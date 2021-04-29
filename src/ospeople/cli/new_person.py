@@ -56,7 +56,7 @@ def create_person(
 @click.option("--image", prompt="Image URL", help="Image URL")
 @click.option("--email", prompt="Email", help="Email")
 @click.option("--start-date", prompt="Start Date", help="Start Date YYYY-MM-DD")
-def new_person(fname, lname, name, state, district, party, rtype, url, image, email, start_date):
+def main(fname, lname, name, state, district, party, rtype, url, image, email, start_date):
     """
     Create a new person record.
 
@@ -80,4 +80,4 @@ def new_person(fname, lname, name, state, district, party, rtype, url, image, em
 
 
 if __name__ == "__main__":
-    new_person()
+    main()

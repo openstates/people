@@ -321,7 +321,7 @@ def merge_people(old, new, keep_both_ids=False):
     default=None,
     help="In merge mode, this is the newer file that will be removed after merge.",
 )
-def entrypoint(incoming, old, new, retirement):
+def main(incoming, old, new, retirement):
     """
     Script to assist with merging legislator files.
 
@@ -369,4 +369,4 @@ def entrypoint(incoming, old, new, retirement):
 
 
 if __name__ == "__main__":
-    entrypoint()
+    main()

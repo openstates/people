@@ -107,10 +107,6 @@ class Summarizer:
     def process_legislature(self, abbr):  # pragma: no cover
         filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
 
-        # settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
-        # with open(settings_file) as f:
-        #     settings = load_yaml(f)
-
         for filename in filenames:
             with open(filename) as f:
                 person = load_yaml(f)
@@ -124,7 +120,7 @@ class Summarizer:
 @click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
-def summarize(abbreviations, verbose, roster, municipal):
+def main(abbreviations, verbose, roster, municipal):
     """
     Lint YAML files, optionally also providing a summary of state's data.
 
@@ -142,4 +138,4 @@ def summarize(abbreviations, verbose, roster, municipal):
 
 
 if __name__ == "__main__":
-    summarize()
+    main()

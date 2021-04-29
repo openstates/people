@@ -116,7 +116,7 @@ def write_csv(files, jurisdiction_id, output_filename):
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option("--upload/--no-upload", default=False, help="Upload to S3. (default: false)")
-def to_csv(abbreviations, upload):
+def main(abbreviations, upload):
     """
     Sync YAML files to DB.
     """
@@ -145,4 +145,4 @@ def to_csv(abbreviations, upload):
 
 
 if __name__ == "__main__":
-    to_csv()
+    main()

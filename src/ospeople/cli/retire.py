@@ -59,7 +59,7 @@ def validate_end_date(ctx, param, value):
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
 @click.option("--vacant", is_flag=True)
-def retire(end_date, filenames, reason, death, vacant):
+def main(end_date, filenames, reason, death, vacant):
     """
     Retire a legislator, given END_DATE and FILENAME.
 
@@ -91,4 +91,4 @@ def retire(end_date, filenames, reason, death, vacant):
 
 
 if __name__ == "__main__":
-    retire()
+    main()

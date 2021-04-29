@@ -11,6 +11,7 @@ from ..utils import (
     get_data_dir,
     get_all_abbreviations,
     load_yaml,
+    load_settings,
     legacy_districts,
     role_is_active,
     load_municipalities,
@@ -325,9 +326,7 @@ def load_directory(files, purge):
 def create_parties():
     from openstates.data.models import Organization
 
-    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
-    with open(settings_file) as f:
-        settings = load_yaml(f)
+    settings = load_settings()
     parties = settings["parties"]
     for party in parties:
         org, created = Organization.objects.get_or_create(name=party, classification="party")
@@ -362,7 +361,7 @@ def create_municipalities(jurisdictions):
     default=False,
     help="Operate in safe mode, no changes will be written to database.",
 )
-def to_database(abbreviations, purge, safe):
+def main(abbreviations, purge, safe):
     """
     Sync YAML files to DB.
     """
@@ -402,4 +401,4 @@ def to_database(abbreviations, purge, safe):
 
 
 if __name__ == "__main__":
-    to_database()
+    main()

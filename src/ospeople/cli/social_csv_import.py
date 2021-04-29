@@ -59,7 +59,7 @@ def add_id_if_exists(person, id_type, id_or_none):
 @click.command()
 @click.argument("abbr")
 @click.argument("filename")
-def social_csv_import(abbr, filename):
+def main(abbr, filename):
     with open(filename) as f:
         social_data = csv.DictReader(f)
 
@@ -79,4 +79,4 @@ def social_csv_import(abbr, filename):
 
 
 if __name__ == "__main__":
-    social_csv_import()
+    main()

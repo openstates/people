@@ -59,6 +59,12 @@ def get_data_dir(abbr: str) -> str:
     return os.path.join(os.path.dirname(__file__), "../../data", abbr)
 
 
+def load_settings() -> dict:
+    settings_file = os.path.join(os.path.dirname(__file__), "../../settings.yml")
+    with open(settings_file) as f:
+        return load_yaml(f)
+
+
 def get_all_abbreviations() -> list[str]:
     return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../../data")))
 

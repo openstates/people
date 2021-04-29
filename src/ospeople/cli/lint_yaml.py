@@ -19,6 +19,7 @@ from ..utils import (
     legacy_districts,
     load_municipalities,
     retire_file,
+    load_settings,
     MAJOR_PARTIES,
 )
 
@@ -648,9 +649,7 @@ def process_dir(
     municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
     retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
 
-    settings_file = os.path.join(os.path.dirname(__file__), "../settings.yml")
-    with open(settings_file) as f:
-        settings = load_yaml(f)
+    settings = load_settings()
     try:
         validator = Validator(abbr, settings, fix)
     except BadVacancy:
@@ -690,7 +689,7 @@ def process_dir(
     default=None,
     help="Lint roles using a certain date instead of today.",
 )
-def lint(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fix: bool) -> None:
+def main(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fix: bool) -> None:
     """
     Lint YAML files.
 
@@ -711,4 +710,4 @@ def lint(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fi
 
 
 if __name__ == "__main__":
-    lint()
+    main()

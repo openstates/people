@@ -123,7 +123,7 @@ def process_person(person, jurisdiction_id):
 
 @click.command()  # pragma: no cover
 @click.argument("input_dir")
-def to_yaml(input_dir):
+def main(input_dir):
     """
     Convert scraped JSON in INPUT_DIR to YAML files for this repo.
 
@@ -152,4 +152,4 @@ def to_yaml(input_dir):
 
 
 if __name__ == "__main__":
-    to_yaml()
+    main()

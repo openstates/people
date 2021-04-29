@@ -72,7 +72,7 @@ def update_from_csv(filename, fields, other_identifiers):
 @click.option("--filename")
 @click.option("--fields", multiple=True)
 @click.option("--other-identifiers", multiple=True)
-def manual_data(abbreviations, missing_id, filename, fields, other_identifiers):
+def main(abbreviations, missing_id, filename, fields, other_identifiers):
     """
     Import & Export Manual Data CSV Files
     """
@@ -89,4 +89,4 @@ def manual_data(abbreviations, missing_id, filename, fields, other_identifiers):
 
 
 if __name__ == "__main__":
-    manual_data()
+    main()

@@ -112,7 +112,7 @@ def download_state_images(abbr, skip_existing):
     "--skip-existing/--no-skip-existing",
     help="Skip processing for files that already exist on S3. (default: true)",
 )
-def sync_images(abbreviations, skip_existing):
+def main(abbreviations, skip_existing):
     """
     Download images and sync them to S3.
 
@@ -126,4 +126,4 @@ def sync_images(abbreviations, skip_existing):
 
 
 if __name__ == "__main__":
-    sync_images()
+    main()
