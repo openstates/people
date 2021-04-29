@@ -56,11 +56,11 @@ def ocd_uuid(type: str) -> str:
 
 
 def get_data_dir(abbr: str) -> str:
-    return os.path.join(os.path.dirname(__file__), "../data", abbr)
+    return os.path.join(os.path.dirname(__file__), "../../data", abbr)
 
 
 def get_all_abbreviations() -> list[str]:
-    return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../data")))
+    return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../../data")))
 
 
 def get_jurisdiction_id(abbr: str) -> str:
