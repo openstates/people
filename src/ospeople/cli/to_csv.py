@@ -2,7 +2,7 @@
 import os
 import csv
 import glob
-import boto3
+import boto3  # type: ignore
 import click
 from ..utils import (
     get_data_dir,
@@ -13,7 +13,7 @@ from ..utils import (
 )
 
 
-def write_csv(files, jurisdiction_id, output_filename):
+def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> None:
     with open(output_filename, "w") as outf:
         out = csv.DictWriter(
             outf,
@@ -116,7 +116,7 @@ def write_csv(files, jurisdiction_id, output_filename):
 @click.command()
 @click.argument("abbreviations", nargs=-1)
 @click.option("--upload/--no-upload", default=False, help="Upload to S3. (default: false)")
-def main(abbreviations, upload):
+def main(abbreviations: list[str], upload: bool) -> None:
     """
     Sync YAML files to DB.
     """

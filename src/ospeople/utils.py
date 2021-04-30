@@ -5,7 +5,7 @@ import uuid
 import datetime
 import typing
 import yaml
-import yamlordereddictloader
+import yamlordereddictloader  # type: ignore
 from collections import defaultdict
 from yaml.representer import Representer
 from openstates import metadata

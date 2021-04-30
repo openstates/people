@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import typing
 import click
 import csv
 from ..utils import (
@@ -12,7 +12,9 @@ from ..utils import (
 )
 
 
-def generate_template_csv(abbreviations, filename, missing_id=None):
+def generate_template_csv(
+    abbreviations: list[str], filename: str, missing_id: typing.Optional[str] = None
+) -> None:
     fields = ("id", "name", "chamber", "district", "jurisdiction")
 
     with open(filename, "w") as outfile:
@@ -46,7 +48,7 @@ def generate_template_csv(abbreviations, filename, missing_id=None):
                     )
 
 
-def update_from_csv(filename, fields, other_identifiers):
+def update_from_csv(filename: str, fields: list[str], other_identifiers: list[str]) -> None:
     with open(filename) as f:
         for line in csv.DictReader(f):
             yaml_filename = find_file(line["id"])
@@ -72,7 +74,13 @@ def update_from_csv(filename, fields, other_identifiers):
 @click.option("--filename")
 @click.option("--fields", multiple=True)
 @click.option("--other-identifiers", multiple=True)
-def main(abbreviations, missing_id, filename, fields, other_identifiers):
+def main(
+    abbreviations: list[str],
+    missing_id: typing.Optional[str],
+    filename: str,
+    fields: list[str],
+    other_identifiers: list[str],
+) -> None:
     """
     Import & Export Manual Data CSV Files
     """

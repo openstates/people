@@ -3,9 +3,10 @@ import os
 import io
 import hashlib
 import click
-import boto3
-from PIL import Image
-from botocore.exceptions import ClientError
+import boto3  # type: ignore
+import typing
+from PIL import Image  # type: ignore
+from botocore.exceptions import ClientError  # type: ignore
 import requests
 from ..utils import get_all_abbreviations, iter_objects
 
@@ -14,7 +15,12 @@ ALLOWED_CONTENT_TYPES = ("image/jpeg", "image/png", "image/gif", "image/jpg")
 s3 = boto3.client("s3")
 
 
-def upload(img_callable, key_name, skip_existing):
+_IMAGE_RETURN_TYPE = tuple[typing.Optional[bytes], typing.Optional[str]]
+
+
+def upload(
+    img_callable: typing.Callable[[], _IMAGE_RETURN_TYPE], key_name: str, skip_existing: bool
+) -> typing.Optional[bytes]:
     """upload works as a sort of decorator around img_callable, which is
     only called if necessary after checking if there's already an image"""
     try:
@@ -24,12 +30,12 @@ def upload(img_callable, key_name, skip_existing):
 
     if obj and skip_existing:
         click.secho(f"{key_name} already exists", fg="yellow")
-        return
+        return None
 
     # if we need to get the object, call the (potentially expensive) callable
     img_bytes, content_type = img_callable()
     if not img_bytes:
-        return
+        return None
 
     # compare sha1 hashes
     sha1 = hashlib.sha1(img_bytes).hexdigest()
@@ -49,7 +55,7 @@ def upload(img_callable, key_name, skip_existing):
     return img_bytes
 
 
-def download_image(url):
+def download_image(url: str) -> _IMAGE_RETURN_TYPE:
     try:
         resp = requests.get(url)
     except Exception as e:
@@ -68,7 +74,7 @@ def download_image(url):
     return resp.content, content_type
 
 
-def resize_image(img_bytes, size):
+def resize_image(img_bytes: bytes, size: int) -> _IMAGE_RETURN_TYPE:
     img = Image.open(fp=io.BytesIO(img_bytes))
     img = img.convert("RGB")
     img.thumbnail((size, size))
@@ -78,15 +84,18 @@ def resize_image(img_bytes, size):
     return output.read(), "image/jpeg"
 
 
-def download_state_images(abbr, skip_existing):
+def download_state_images(abbr: str, skip_existing: bool) -> None:
     for person, _ in iter_objects(abbr, "legislature"):
         url = person.get("image")
         person_id = person["id"]
         if not url:
             continue
 
+        # safe to cast because we've bailed above if url is None
         img_bytes = upload(
-            lambda: download_image(url), f"images/original/{person_id}", skip_existing
+            lambda: download_image(typing.cast(str, url)),
+            f"images/original/{person_id}",
+            skip_existing,
         )
         # if the image got skipped, we can't do the resizes either, this means if we add new
         # profiles we need to run with --no-skip-existing
@@ -94,7 +103,11 @@ def download_state_images(abbr, skip_existing):
             continue
 
         # resize image so largest dimension is 200px
-        upload(lambda: resize_image(img_bytes, 200), f"images/small/{person_id}", skip_existing)
+        upload(
+            lambda: resize_image(typing.cast(bytes, img_bytes), 200),
+            f"images/small/{person_id}",
+            skip_existing,
+        )
 
 
 # def recognize(key):
@@ -112,7 +125,7 @@ def download_state_images(abbr, skip_existing):
     "--skip-existing/--no-skip-existing",
     help="Skip processing for files that already exist on S3. (default: true)",
 )
-def main(abbreviations, skip_existing):
+def main(abbreviations: list[str], skip_existing: bool) -> None:
     """
     Download images and sync them to S3.
 

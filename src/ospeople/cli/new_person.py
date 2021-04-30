@@ -6,8 +6,18 @@ from ..utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
 
 
 def create_person(
-    fname, lname, name, state, district, party, rtype, url, image, email, start_date
-):
+    fname: str,
+    lname: str,
+    name: str,
+    state: str,
+    district: str,
+    party: str,
+    rtype: str,
+    url: str,
+    image: str,
+    email: str,
+    start_date: str,
+) -> None:
     role = {
         "type": rtype,
         "district": district,
@@ -56,7 +66,19 @@ def create_person(
 @click.option("--image", prompt="Image URL", help="Image URL")
 @click.option("--email", prompt="Email", help="Email")
 @click.option("--start-date", prompt="Start Date", help="Start Date YYYY-MM-DD")
-def main(fname, lname, name, state, district, party, rtype, url, image, email, start_date):
+def main(
+    fname: str,
+    lname: str,
+    name: str,
+    state: str,
+    district: str,
+    party: str,
+    rtype: str,
+    url: str,
+    image: str,
+    email: str,
+    start_date: str,
+) -> None:
     """
     Create a new person record.
 

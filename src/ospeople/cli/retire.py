@@ -1,11 +1,12 @@
 #!/usr/bin/env python
+import typing
 import click
 from datetime import datetime, timedelta
 from openstates import metadata
 from ..utils import load_yaml, dump_obj, role_is_active, retire_file
 
 
-def add_vacancy(person, until):
+def add_vacancy(person: dict, until: datetime) -> None:
     with open("settings.yml") as f:
         settings = load_yaml(f)
     last_role = person["roles"][-1]
@@ -22,12 +23,14 @@ def add_vacancy(person, until):
     dump_obj(settings, filename="settings.yml")
 
 
-def is_inactive(person, date=None):
+def is_inactive(person: dict, date: typing.Optional[str] = None) -> bool:
     active = [role for role in person.get("roles", []) if role_is_active(role, date=date)]
     return len(active) == 0
 
 
-def retire_person(person, end_date, reason=None, death=False):
+def retire_person(
+    person: dict, end_date: datetime, reason: typing.Optional[str] = None, death: bool = False
+) -> tuple[dict, int]:
     num = 0
     for role in person["roles"]:
         if role_is_active(role):
@@ -45,7 +48,9 @@ def retire_person(person, end_date, reason=None, death=False):
     return person, num
 
 
-def validate_end_date(ctx, param, value):
+def validate_end_date(
+    ctx: click.Context, param: typing.Union[click.Option, click.Parameter], value: typing.Any
+) -> datetime:
     try:
         datetime.strptime(value, "%Y-%m-%d")
         return value
@@ -59,7 +64,13 @@ def validate_end_date(ctx, param, value):
 @click.option("--reason", default=None)
 @click.option("--death", is_flag=True)
 @click.option("--vacant", is_flag=True)
-def main(end_date, filenames, reason, death, vacant):
+def main(
+    end_date: datetime,
+    filenames: list[str],
+    reason: typing.Optional[str],
+    death: bool,
+    vacant: bool,
+) -> None:
     """
     Retire a legislator, given END_DATE and FILENAME.
 
