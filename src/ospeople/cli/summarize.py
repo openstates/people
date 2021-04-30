@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import glob
 import os
+import typing
 from collections import Counter, defaultdict
 import click
 from ..utils import (
@@ -9,6 +10,8 @@ from ..utils import (
     role_is_active,
     get_all_abbreviations,
 )
+
+DataDict = dict[str, typing.Any]
 
 OPTIONAL_FIELD_SET = set(
     (
@@ -27,16 +30,18 @@ OPTIONAL_FIELD_SET = set(
 
 
 class Summarizer:
-    def __init__(self):
+    def __init__(self) -> None:
         self.person_count = 0
-        self.optional_fields = Counter()
-        self.extra_counts = Counter()
-        self.contact_counts = Counter()
-        self.id_counts = Counter()
-        self.parties = Counter()
-        self.active_legislators = defaultdict(lambda: defaultdict(list))
+        self.optional_fields: Counter[str] = Counter()
+        self.extra_counts: Counter[str] = Counter()
+        self.contact_counts: Counter[str] = Counter()
+        self.id_counts: Counter[str] = Counter()
+        self.parties: Counter[str] = Counter()
+        self.active_legislators: defaultdict[str, defaultdict[str, list[DataDict]]] = defaultdict(
+            lambda: defaultdict(list)
+        )
 
-    def summarize(self, person):
+    def summarize(self, person: DataDict) -> None:
         self.person_count += 1
         self.optional_fields.update(set(person.keys()) & OPTIONAL_FIELD_SET)
         self.extra_counts.update(person.get("extras", {}).keys())
@@ -48,7 +53,7 @@ class Summarizer:
                 district = role.get("district")
                 break
         if role_type:
-            self.active_legislators[role_type][district].append(person)
+            self.active_legislators[str(role_type)][str(district)].append(person)
 
         for role in person.get("party", []):
             if role_is_active(role):
@@ -65,7 +70,7 @@ class Summarizer:
             if id["scheme"] not in ("openstates", "legacy_openstates"):
                 self.id_counts[id["scheme"]] += 1
 
-    def print_summary(self):  # pragma: no cover
+    def print_summary(self) -> None:  # pragma: no cover
         click.secho(
             f"processed {self.person_count} active people",
             bold=True,
@@ -97,14 +102,14 @@ class Summarizer:
             else:
                 click.secho(name + " - none", bold=True)
 
-    def print_roster(self):  # pragma: no cover
+    def print_roster(self) -> None:  # pragma: no cover
         for role_type, districts in self.active_legislators.items():
             for district, people in sorted(districts.items()):
                 click.secho(f"{role_type} {district}", fg="blue")
                 for person in people:
                     click.secho(f"   {person['name']}")
 
-    def process_legislature(self, abbr):  # pragma: no cover
+    def process_legislature(self, abbr: str) -> None:  # pragma: no cover
         filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
 
         for filename in filenames:
@@ -120,7 +125,7 @@ class Summarizer:
 @click.option(
     "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
 )
-def main(abbreviations, verbose, roster, municipal):
+def main(abbreviations: list[str], verbose: int, roster: bool, municipal: bool) -> None:
     """
     Lint YAML files, optionally also providing a summary of state's data.
 
