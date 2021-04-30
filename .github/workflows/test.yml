@@ -57,6 +57,6 @@ jobs:
       # if: steps.cache.outputs.cache-hit != 'true'
 
     - name: lint with flake8
-      run: poetry run flake8 src tests --show-source --statistics
+      run: poetry run inv lint
     - name: pytest
       run: poetry run inv test
