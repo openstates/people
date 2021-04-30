@@ -1,7 +1,7 @@
 import re
 import attr
 import logging
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 from spatula import HtmlListPage, HtmlPage, XPath
 
 log = logging.getLogger("fl")
@@ -157,7 +157,11 @@ class RepList(HtmlListPage):
 
         return RepContact(
             PartialPerson(
-                name=name, party=str(party), district=str(district), image=image, url=link,
+                name=name,
+                party=str(party),
+                district=str(district),
+                image=image,
+                url=link,
             )
         )
 

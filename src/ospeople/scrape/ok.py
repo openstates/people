@@ -1,5 +1,5 @@
 from spatula import HtmlListPage, HtmlPage, SimilarLink, CSS
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 
 
 class SenateList(HtmlListPage):
@@ -9,7 +9,8 @@ class SenateList(HtmlListPage):
     def process_item(self, item):
         party, _, district, name = item.text_content().split(maxsplit=3)
         return SenateDetail(
-            {"party": party, "district": district, "name": name.strip()}, source=item.get("href"),
+            {"party": party, "district": district, "name": name.strip()},
+            source=item.get("href"),
         )
 
 

@@ -1,5 +1,5 @@
 from spatula.pages import HtmlListPage, CSS
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 
 
 def split_name(name):

@@ -1,5 +1,5 @@
 from spatula import HtmlPage, ListPage, NullSource, CSS
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 
 
 class LegPage(HtmlPage):

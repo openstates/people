@@ -2,7 +2,7 @@ import datetime
 import re
 import attr
 from spatula import HtmlPage, HtmlListPage, XPath
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 
 PARTY_MAP = {"R": "Republican", "D": "Democratic", "I": "Independent"}
 party_district_pattern = re.compile(r"\((R|D|I)\) - (?:House|Senate) District\s+(\d+)")
@@ -91,7 +91,11 @@ class MemberDetail(HtmlPage):
         party_district_text = self.root.xpath("//h3/font/text()")[0]
         party, district = get_party_district(party_district_text)
         p = Person(
-            name=self.input.name, state="va", chamber=self.chamber, party=party, district=district,
+            name=self.input.name,
+            state="va",
+            chamber=self.chamber,
+            party=party,
+            district=district,
         )
         if self.input.image:
             p.image = self.input.image

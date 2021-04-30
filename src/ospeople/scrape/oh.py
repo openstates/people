@@ -1,7 +1,7 @@
 import re
 import attr
 from spatula import HtmlListPage, HtmlPage, CSS
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 
 background_image_re = re.compile(r"background-image:url\((.*?)\)")
 
@@ -31,7 +31,11 @@ class HouseList(HtmlListPage):
 
         return HouseDetail(
             HousePartial(
-                name=name, district=district, party=party, url=item.get("href"), image=image,
+                name=name,
+                district=district,
+                party=party,
+                url=item.get("href"),
+                image=image,
             )
         )
 

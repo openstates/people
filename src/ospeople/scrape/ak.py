@@ -1,6 +1,6 @@
 import re
 from spatula import XmlListPage, URL, XPath
-from common import Person, PeopleWorkflow
+from .common import Person, PeopleWorkflow
 
 
 def clean_name(name):
