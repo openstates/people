@@ -1,7 +1,7 @@
 import re
 import uuid
 from collections import OrderedDict
-from ..utils import get_jurisdiction_id, reformat_phone_number, dump_obj
+from ...utils import get_jurisdiction_id, reformat_phone_number, dump_obj
 from spatula import Workflow
 
 

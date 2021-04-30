@@ -1,6 +1,6 @@
 import re
 from spatula import HtmlListPage, HtmlPage, XPath, SimilarLink, CSS
-from .common import Person, PeopleWorkflow
+from .common.people import Person, PeopleWorkflow
 
 
 class PersonDetail(HtmlPage):

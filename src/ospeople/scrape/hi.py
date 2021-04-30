@@ -1,6 +1,6 @@
 import lxml.html
 from spatula.selectors import CSS, SelectorError, HtmlListPage
-from .common import Person, PeopleWorkflow
+from .common.people import Person, PeopleWorkflow
 
 
 class FormSource:

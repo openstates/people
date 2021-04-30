@@ -1,8 +1,8 @@
 import re
 import attr
 import logging
-from .common import Person, PeopleWorkflow
 from spatula import HtmlListPage, HtmlPage, XPath
+from .common.people import Person, PeopleWorkflow
 
 log = logging.getLogger("fl")
 
