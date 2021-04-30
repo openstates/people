@@ -5,13 +5,13 @@ on:
     branches: [ main ]
     paths:
       - "data/**"
-      - "scripts/lint_yaml.py"
+      - "src/ospeople/cli/lint_yaml.py"
       - "settings.yml"
   pull_request:
     branches: [ main ]
     paths:
       - "data/**"
-      - "scripts/lint_yaml.py"
+      - "src/ospeople/cli/lint_yaml.py"
       - "settings.yml"
 
 jobs:
@@ -40,8 +40,6 @@ jobs:
     - name: install dependencies
       run: poetry install
       # if: steps.cache.outputs.cache-hit != 'true'
-     
+
     - name: lint yaml
-      run: poetry run ./scripts/lint_yaml.py
-      env: 
-        PYTHONPATH: scripts
+      run: poetry run lint-yaml
