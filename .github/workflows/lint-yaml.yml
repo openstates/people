@@ -42,4 +42,4 @@ jobs:
       # if: steps.cache.outputs.cache-hit != 'true'
 
     - name: lint yaml
-      run: poetry run lint-yaml
+      run: poetry run os-lint-yaml

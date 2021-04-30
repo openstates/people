@@ -5,17 +5,17 @@ description = ""
 authors = ["James Turk <james@openstates.org>"]
 
 [tool.poetry.scripts]
-lint-yaml = 'ospeople.cli.lint_yaml:main'
-manual-data = 'ospeople.cli.manual_data:main'
-merge = 'ospeople.cli.merge:main'
-new-person = 'ospeople.cli.new_person:main'
-retire = 'ospeople.cli.retire:main'
-social-csv-import = 'ospeople.cli.social_csv_import:main'
-summarize = 'ospeople.cli.summarize:main'
-sync-images = 'ospeople.cli.sync_images:main'
-to-csv = 'ospeople.cli.to_csv:main'
-to-database = 'ospeople.cli.to_database:main'
-to-yaml = 'ospeople.cli.to_yaml:main'
+os-lint-yaml = 'ospeople.cli.lint_yaml:main'
+os-manual-data = 'ospeople.cli.manual_data:main'
+os-merge = 'ospeople.cli.merge:main'
+os-new-person = 'ospeople.cli.new_person:main'
+os-retire = 'ospeople.cli.retire:main'
+os-social-csv-import = 'ospeople.cli.social_csv_import:main'
+os-summarize = 'ospeople.cli.summarize:main'
+os-sync-images = 'ospeople.cli.sync_images:main'
+os-to-csv = 'ospeople.cli.to_csv:main'
+os-to-database = 'ospeople.cli.to_database:main'
+os-to-yaml = 'ospeople.cli.to_yaml:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
