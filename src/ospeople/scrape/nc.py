@@ -5,14 +5,17 @@ from .common.committee import Committee
 class CommitteeDetail(HtmlPage):
     example_source = "https://www.ncleg.gov/Committees/CommitteeInfo/SenateStanding/1162"
 
-    ROLE_MAPPING = {"Chairs": "chair", "Members": "member", "Chair": "chair"}
+    def get_role(self, text):
+        if text.endswith("s"):
+            text = text[:-1]
+        return text.lower()
 
     def process_page(self):
         com = self.input
         com.add_source(self.source.url)
 
         for membership_type in CSS("div#Membership h5").match(self.root):
-            role = self.ROLE_MAPPING[membership_type.text_content()]
+            role = self.get_role(membership_type.text_content())
             # sibling div contains members
             members = [p.text_content() for p in CSS("a p").match(membership_type.getnext())]
             for member in members:
