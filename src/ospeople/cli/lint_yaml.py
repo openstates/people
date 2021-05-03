@@ -138,10 +138,6 @@ def is_ocd_person(val: typing.Any) -> bool:
     return is_string(val) and val.startswith("ocd-person/") and bool(UUID_RE.match(val))
 
 
-def is_ocd_organization(val: typing.Any) -> bool:
-    return is_string(val) and val.startswith("ocd-organization/") and bool(UUID_RE.match(val))
-
-
 def is_legacy_openstates(val: typing.Any) -> bool:
     return is_string(val) and bool(LEGACY_OS_ID_RE.match(val))
 

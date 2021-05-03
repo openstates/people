@@ -1,6 +1,11 @@
+import re
 import typing
 from enum import Enum
 from pydantic import BaseModel, validator
+
+ORG_ID_RE = re.compile(
+    r"^ocd-organization/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+)
 
 
 class Parent(str, Enum):
@@ -62,3 +67,9 @@ class ScrapeCommittee(BaseModel):
 
 class Committee(ScrapeCommittee):
     id: str
+
+    @validator("id")
+    def valid_ocd_org_format(cls, v):
+        if not ORG_ID_RE.match(v):
+            raise ValueError("must match ocd-organization/UUID format")
+        return v
