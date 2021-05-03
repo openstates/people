@@ -21,8 +21,6 @@ class CommitteeDir:
         except FileExistsError:
             pass
 
-    def load_data(self):
-        self.coms_by_chamber_and_name = defaultdict(dict)
         for filename in glob.glob(os.path.join(self.directory, "*.yml")):
             with open(filename) as file:
                 data = load_yaml(file)
@@ -73,35 +71,50 @@ def merge_data_by_chamber(committee_dir: CommitteeDir, chamber: str, new_data: l
 
     names_to_add = new_names - existing_names
     names_to_remove = existing_names - new_names
-    names_to_merge = new_names & existing_names
+    names_to_compare = new_names & existing_names
+    to_merge = list()
+    same = 0
 
     # TODO: prettify & prompt to continue
-    print(f"{len(names_to_add)} names to add")
-    print(f"{len(names_to_merge)} names to compare")
-    print(f"{len(names_to_remove)} names to remove")
+    print(f"{len(names_to_add)} to add")
+    print(f"{len(names_to_remove)} to remove")
 
     for com in new_data:
-        if com.name in names_to_merge:
+        if com.name in names_to_compare:
             # reverse a saved Committee to a ScrapeCommittee for comparison
             existing = committee_dir.coms_by_chamber_and_name[chamber][com.name]
             com_without_id = existing.dict()
             com_without_id.pop("id")
             rev_sc = ScrapeCommittee(**com_without_id)
             if com != rev_sc:
-                print(com, rev_sc)
+                to_merge.append((existing, com))
+            else:
+                same += 1
+
+    print(f"{same} without changes")
+    print(f"{len(to_merge)} with changes")
+
+    for com in new_data:
         if com.name in names_to_add:
             committee_dir.add_committee(com)
 
+    # TODO: names_to_remove
+    # TODO: to_merge
 
-@click.command()  # pragma: no cover
+
+@click.group()
+def main() -> None:
+    pass
+
+
+@main.command()  # pragma: no cover
 @click.argument("abbr")
 @click.argument("input_dir")
-def main(abbr: str, input_dir: str) -> None:
+def merge(abbr: str, input_dir: str) -> None:
     """
     Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
     """
     comdir = CommitteeDir(abbr)
-    comdir.load_data()
     scraped_data = ingest_scraped_json(input_dir)
 
     merge_data(comdir, scraped_data)
