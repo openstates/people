@@ -28,6 +28,10 @@ class Membership(BaseModel):
     name: str
     role: str
 
+    class Config:
+        anystr_strip_whitespace = True
+        extra = "forbid"
+
 
 class ScrapeCommittee(BaseModel):
     name: str

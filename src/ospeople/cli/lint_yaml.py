@@ -195,29 +195,6 @@ def is_role(role: dict) -> list[str]:
         return ["invalid type"]
 
 
-def is_valid_parent(parent: str) -> bool:
-    return parent in ("upper", "lower", "legislature") or is_ocd_organization(parent)
-
-
-ORGANIZATION_FIELDS = {
-    "id": [is_ocd_organization, Required],
-    "name": [is_string, Required],
-    "jurisdiction": [is_ocd_jurisdiction, Required],
-    "parent": [is_valid_parent, Required],
-    "classification": [is_string, Required],  # TODO: tighten this
-    "memberships": NestedList(
-        {
-            "id": [is_ocd_person],
-            "name": [is_string, Required],
-            "role": [is_string],
-            "start_date": [is_fuzzy_date],
-            "end_date": [is_fuzzy_date],
-        }
-    ),
-    "sources": URL_LIST,
-    "links": URL_LIST,
-}
-
 PERSON_FIELDS = {
     "id": [is_ocd_person, Required],
     "name": [is_string, no_bad_comma, Required],

@@ -5,15 +5,17 @@ import json
 import uuid
 from collections import defaultdict
 import click
+from pydantic import ValidationError
 from ..utils import get_data_dir, load_yaml, dump_obj
 from ..models.committees import Committee, ScrapeCommittee
 
 
 class CommitteeDir:
-    def __init__(self, abbr):
+    def __init__(self, abbr, raise_errors=True):
         data_dir = get_data_dir(abbr)
         self.directory = os.path.join(data_dir, "committees")
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
+        self.errors = []
 
         # make sure a committees dir exists
         try:
@@ -24,7 +26,12 @@ class CommitteeDir:
         for filename in glob.glob(os.path.join(self.directory, "*.yml")):
             with open(filename) as file:
                 data = load_yaml(file)
-                com = Committee(**data)
+                try:
+                    com = Committee(**data)
+                except ValidationError as ve:
+                    if raise_errors:
+                        raise
+                    self.errors.append((filename, ve))
                 self.coms_by_chamber_and_name[com.parent][com.name] = com
 
     def get_new_filename(self, obj: Committee) -> str:
@@ -34,6 +41,7 @@ class CommitteeDir:
         return f"{obj.parent}-{name}-{id}.yml"
 
     def save_committee(self, committee: Committee) -> None:
+        # TODO: fix key order
         dump_obj(
             committee.dict(),
             filename=os.path.join(self.directory, self.get_new_filename(committee)),
@@ -118,6 +126,19 @@ def merge(abbr: str, input_dir: str) -> None:
     scraped_data = ingest_scraped_json(input_dir)
 
     merge_data(comdir, scraped_data)
+
+
+@main.command()  # pragma: no cover
+@click.argument("abbr")
+def lint(abbr: str) -> None:
+    """
+    Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
+    """
+    comdir = CommitteeDir(abbr, raise_errors=False)
+    for filename, error in comdir.errors:
+        print(os.path.basename(filename))
+        for error in error.errors():
+            print(f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}")
 
 
 if __name__ == "__main__":
