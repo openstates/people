@@ -1,5 +1,5 @@
 from spatula import HtmlPage, HtmlListPage, CSS
-from .common.committee import Committee
+from ..models.committees import ScrapeCommittee
 
 
 class CommitteeDetail(HtmlPage):
@@ -29,7 +29,7 @@ class CommitteeList(HtmlListPage):
 
     def process_item(self, item):
         return CommitteeDetail(
-            Committee(
+            ScrapeCommittee(
                 name=item.text_content(),
                 parent=self.chamber,
             ),

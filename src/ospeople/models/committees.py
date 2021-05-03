@@ -29,7 +29,7 @@ class Membership(BaseModel):
     role: str
 
 
-class Committee(BaseModel):
+class ScrapeCommittee(BaseModel):
     name: str
     parent: Parent
     classification: str = "committee"
@@ -54,3 +54,7 @@ class Committee(BaseModel):
     def to_dict(self):
         # TODO: replace this with first class pydantic support in spatula
         return self.dict()
+
+
+class Committee(ScrapeCommittee):
+    id: str
