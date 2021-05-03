@@ -6,12 +6,14 @@ import datetime
 import typing
 import yaml
 import yamlordereddictloader  # type: ignore
+from enum import Enum
 from collections import defaultdict
 from yaml.representer import Representer
 from openstates import metadata
 
 # set up defaultdict representation
 yaml.add_representer(defaultdict, Representer.represent_dict)
+yamlordereddictloader.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
 
 # can only have one of these at a time
 MAJOR_PARTIES = ("Democratic", "Republican", "Independent")
