@@ -37,10 +37,10 @@
 * other_names (see below)
 * sources (see below)
 
-# Organization Fields
+# Committee Schema
 
 * id: UUID representing this organization.  **required**
-* name: Name of Organization.  **required**
+* name: Name of Committee.  **required**
 * jurisdiction: ocd-jurisdiction identifier **required**
 * parent: Parent of this organization, can be:
     * upper
@@ -55,9 +55,8 @@
     * id - ocd-person ID if known
     * name - name of person **required**
     * role - role that person fills on committee, if not 'member'
-    * start_date
-    * end_date
-
+    * start_date - optional start date of this membership
+    * end_date - optional end date of this membership
 
 ### Common Elements
 

@@ -4,12 +4,14 @@ on:
   push:
     branches: [ main ]
     paths:
-      - "scripts/**"
+      - "src/**"
+      - "tests/**"
       - "scrape/**"
   pull_request:
     branches: [ main ]
     paths:
-      - "scripts/**"
+      - "src/**"
+      - "tests/**"
       - "scrape/**"
 
 jobs:
@@ -53,10 +55,8 @@ jobs:
     - name: install dependencies
       run: poetry install
       # if: steps.cache.outputs.cache-hit != 'true'
-     
+
     - name: lint with flake8
-      run: poetry run flake8  scripts --show-source --statistics
+      run: poetry run inv lint
     - name: pytest
-      run: poetry run ./scripts/run_tests.sh
-      env: 
-        PYTHONPATH: scripts
+      run: poetry run inv test

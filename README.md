@@ -13,9 +13,6 @@ This repository contains YAML files with all the information on given individual
 * [Open States Discussions](https://github.com/openstates/issues/discussions)
 * [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
 
-## Running Tests
-
-    docker-compose run --rm --entrypoint scripts/run_tests.sh people
 
 ## Data Layout
 
