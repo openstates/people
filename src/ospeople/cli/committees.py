@@ -2,6 +2,8 @@ import re
 import sys
 import json
 import uuid
+import typing
+from functools import lru_cache
 from pathlib import Path
 from enum import Enum
 from dataclasses import dataclass
@@ -10,21 +12,60 @@ import click
 import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
-from ..utils import get_data_dir, load_yaml
+from ..utils import get_data_dir, load_yaml, role_is_active
 from ..models.committees import Committee, ScrapeCommittee
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
 
 
-def get_active_person_names(abbr: str):
-    pass
+class PersonMatcher:
+    def __init__(self, abbr: str):
+        self.abbr = abbr
+        # chamber -> name piece -> id set
+        self.current_people: dict[str, dict[str, set[str]]] = {"upper": {}, "lower": {}}
+
+        # read in people with current roles
+        dirname = Path(get_data_dir(abbr)) / "legislature"
+        for filename in dirname.glob("*.yml"):
+            with open(filename) as file:
+                person = load_yaml(file)
+            chamber = ""
+            for role in person["roles"]:
+                if role_is_active(role):
+                    chamber = typing.cast(str, role["type"])
+                    break
+            self.add_person(chamber, person["name"], person["id"])
+            if person.get("family_name"):
+                self.add_person(chamber, person["family_name"], person["id"])
+            for name in person.get("other_names", []):
+                self.add_person(chamber, name["name"], person["id"])
+
+    def add_person(self, chamber: str, name_piece: str, id_: str) -> None:
+        if name_piece in self.current_people[chamber]:
+            self.current_people[chamber][name_piece].add(id_)
+        else:
+            self.current_people[chamber][name_piece] = {id_}
+
+    @lru_cache(500)
+    def match(self, chamber: str, name: str) -> typing.Optional[str]:
+        candidates = self.current_people[chamber].get(name, None)
+        if not candidates:
+            click.secho(f"  no candidates while attempting to match {chamber} {name}", fg="yellow")
+            return None
+        elif len(candidates) == 1:
+            return list(candidates)[0]
+        else:
+            click.secho(
+                f"  multiple candidates while attempting to match {chamber} {name}", fg="yellow"
+            )
+            return None
 
 
 class CommitteeDir:
     def __init__(self, abbr: str, raise_errors: bool = True):
-        data_dir = get_data_dir(abbr)
-        self.directory = Path(data_dir) / "committees"
+        self.abbr = abbr
+        self.directory = Path(get_data_dir(abbr)) / "committees"
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
 
@@ -41,6 +82,9 @@ class CommitteeDir:
                         raise
                     self.errors.append((filename, ve))
                 self.coms_by_chamber_and_name[com.parent][com.name] = com
+
+        # prepare person matcher
+        self.person_matcher = PersonMatcher(self.abbr)
 
     def get_new_filename(self, obj: Committee) -> str:
         id = obj.id.split("/")[1]
@@ -62,6 +106,10 @@ class CommitteeDir:
     def add_committee(self, committee: ScrapeCommittee) -> None:
         # convert a ScrapeCommittee to a committee by giving it an ID and trying to match names
         full_com = Committee(id=f"ocd-organization/{uuid.uuid4()}", **committee.dict())
+
+        for member in full_com.members:
+            self.person_matcher.match(full_com.parent, member.name)
+
         self.coms_by_chamber_and_name[committee.parent][committee.name] = committee
         self.save_committee(full_com)
 
