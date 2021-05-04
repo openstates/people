@@ -1,9 +1,8 @@
-import os
 import re
 import sys
-import glob
 import json
 import uuid
+from pathlib import Path
 from enum import Enum
 from dataclasses import dataclass
 from collections import defaultdict
@@ -18,20 +17,21 @@ yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
 
 
+def get_active_person_names(abbr: str):
+    pass
+
+
 class CommitteeDir:
     def __init__(self, abbr: str, raise_errors: bool = True):
         data_dir = get_data_dir(abbr)
-        self.directory = os.path.join(data_dir, "committees")
+        self.directory = Path(data_dir) / "committees"
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
 
         # make sure a committees dir exists
-        try:
-            os.makedirs(self.directory)
-        except FileExistsError:
-            pass
+        self.directory.mkdir(parents=True, exist_ok=True)
 
-        for filename in glob.glob(os.path.join(self.directory, "*.yml")):
+        for filename in self.directory.glob("*.yml"):
             with open(filename) as file:
                 data = load_yaml(file)
                 try:
@@ -49,7 +49,7 @@ class CommitteeDir:
         return f"{obj.parent}-{name}-{id}.yml"
 
     def save_committee(self, committee: Committee) -> None:
-        filename = os.path.join(self.directory, self.get_new_filename(committee))
+        filename = self.directory / self.get_new_filename(committee)
         with open(filename, "w") as f:
             yaml.dump(
                 committee.to_dict(),
@@ -60,6 +60,7 @@ class CommitteeDir:
             )
 
     def add_committee(self, committee: ScrapeCommittee) -> None:
+        # convert a ScrapeCommittee to a committee by giving it an ID and trying to match names
         full_com = Committee(id=f"ocd-organization/{uuid.uuid4()}", **committee.dict())
         self.coms_by_chamber_and_name[committee.parent][committee.name] = committee
         self.save_committee(full_com)
@@ -67,7 +68,7 @@ class CommitteeDir:
 
 def ingest_scraped_json(input_dir: str) -> list[Committee]:
     scraped_data = []
-    for filename in glob.glob(os.path.join(input_dir, "*")):
+    for filename in Path(input_dir).glob("*"):
         with open(filename) as file:
             data = json.load(file)
             com = ScrapeCommittee(**data)
@@ -179,7 +180,7 @@ def lint(abbr: str) -> None:
     errors = 0
     click.secho(f"==== {abbr} ====")
     for filename, error in comdir.errors:
-        click.secho(os.path.basename(filename))
+        click.secho(filename.name)
         for error in error.errors():
             click.secho(f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}", fg="red")
             errors += 1
