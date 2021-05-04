@@ -6,6 +6,9 @@ from pydantic import BaseModel, validator
 ORG_ID_RE = re.compile(
     r"^ocd-organization/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 )
+PERSON_ID_RE = re.compile(
+    r"^ocd-person/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+)
 
 
 class Parent(str, Enum):
@@ -32,6 +35,13 @@ class Link(BaseModel):
 class Membership(BaseModel):
     name: str
     role: str
+    person_id: typing.Optional[str] = None
+
+    @validator("person_id")
+    def valid_ocd_person_format(cls, v):
+        if isinstance(v, str) and not PERSON_ID_RE.match(v):
+            raise ValueError("must match ocd-person/UUID format")
+        return v
 
     class Config:
         anystr_strip_whitespace = True
