@@ -66,6 +66,7 @@ class CommitteeDir:
     def __init__(self, abbr: str, raise_errors: bool = True):
         self.abbr = abbr
         self.directory = Path(get_data_dir(abbr)) / "committees"
+        # chamber -> name -> Committee
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
 
@@ -91,6 +92,20 @@ class CommitteeDir:
         name = re.sub(r"\s+", "-", obj.name)
         name = re.sub(r"[^a-zA-Z-]", "", name)
         return f"{obj.parent}-{name}-{id}.yml"
+
+    def get_filename_by_id(self, com_id: str) -> Path:
+        if com_id.startswith("ocd-organization"):
+            com_id = com_id.split("/")[1]
+        assert len(com_id) == 36
+        files = list(self.directory.glob(f"*{com_id}.yml"))
+        if len(files) == 1:
+            return files[0]
+        else:
+            raise FileNotFoundError()
+
+    def get_filename_by_name(self, chamber: str, name: str) -> Path:
+        com = self.coms_by_chamber_and_name[chamber][name]
+        return self.get_filename_by_id(com.id)
 
     def save_committee(self, committee: Committee) -> None:
         filename = self.directory / self.get_new_filename(committee)
@@ -209,10 +224,10 @@ def merge(abbr: str, input_dir: str) -> None:
                 sys.exit(1)
             merge_new_files(comdir, scraped_data, plan.names_to_add)
 
-            # TODO: names_to_remove
             for name in plan.names_to_remove:
-                print(name)
-
+                filename = comdir.get_filename_by_name(chamber, name)
+                click.secho(f"removing {filename}", fg="red")
+                filename.unlink()
             # TODO: to_merge
         else:
             click.secho("nothing to do!", fg="green")
