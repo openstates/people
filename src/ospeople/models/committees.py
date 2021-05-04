@@ -73,3 +73,7 @@ class Committee(ScrapeCommittee):
         if not ORG_ID_RE.match(v):
             raise ValueError("must match ocd-organization/UUID format")
         return v
+
+    def to_dict(self):
+        # hack to always have id on top
+        return {"id": self.id, **super().dict()}

@@ -1,17 +1,25 @@
 import os
 import re
+import sys
 import glob
 import json
 import uuid
+from enum import Enum
+from dataclasses import dataclass
 from collections import defaultdict
 import click
+import yaml
+from yaml.representer import Representer
 from pydantic import ValidationError
-from ..utils import get_data_dir, load_yaml, dump_obj
+from ..utils import get_data_dir, load_yaml
 from ..models.committees import Committee, ScrapeCommittee
+
+yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
+yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
 
 
 class CommitteeDir:
-    def __init__(self, abbr, raise_errors=True):
+    def __init__(self, abbr: str, raise_errors: bool = True):
         data_dir = get_data_dir(abbr)
         self.directory = os.path.join(data_dir, "committees")
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
@@ -41,11 +49,15 @@ class CommitteeDir:
         return f"{obj.parent}-{name}-{id}.yml"
 
     def save_committee(self, committee: Committee) -> None:
-        # TODO: fix key order
-        dump_obj(
-            committee.dict(),
-            filename=os.path.join(self.directory, self.get_new_filename(committee)),
-        )
+        filename = os.path.join(self.directory, self.get_new_filename(committee))
+        with open(filename, "w") as f:
+            yaml.dump(
+                committee.to_dict(),
+                f,
+                default_flow_style=False,
+                Dumper=yaml.SafeDumper,
+                sort_keys=False,
+            )
 
     def add_committee(self, committee: ScrapeCommittee) -> None:
         full_com = Committee(id=f"ocd-organization/{uuid.uuid4()}", **committee.dict())
@@ -63,17 +75,17 @@ def ingest_scraped_json(input_dir: str) -> list[Committee]:
     return scraped_data
 
 
-def merge_data(committee_dir, incoming):
-    coms_by_chamber: defaultdict[str, list[Committee]] = defaultdict(list)
-
-    for com in incoming:
-        coms_by_chamber[com.parent].append(com)
-
-    for chamber, coms in coms_by_chamber.items():
-        merge_data_by_chamber(committee_dir, chamber, coms)
+@dataclass
+class DirectoryMergePlan:
+    names_to_add: set[str]
+    names_to_remove: set[str]
+    same: int
+    to_merge: list[tuple[Committee, ScrapeCommittee]]
 
 
-def merge_data_by_chamber(committee_dir: CommitteeDir, chamber: str, new_data: list[CommitteeDir]):
+def get_merge_plan_by_chamber(
+    committee_dir: CommitteeDir, chamber: str, new_data: list[ScrapeCommittee]
+) -> DirectoryMergePlan:
     existing_names = set(committee_dir.coms_by_chamber_and_name[chamber].keys())
     new_names = {com.name for com in new_data}
 
@@ -82,10 +94,6 @@ def merge_data_by_chamber(committee_dir: CommitteeDir, chamber: str, new_data: l
     names_to_compare = new_names & existing_names
     to_merge = list()
     same = 0
-
-    # TODO: prettify & prompt to continue
-    print(f"{len(names_to_add)} to add")
-    print(f"{len(names_to_remove)} to remove")
 
     for com in new_data:
         if com.name in names_to_compare:
@@ -99,15 +107,18 @@ def merge_data_by_chamber(committee_dir: CommitteeDir, chamber: str, new_data: l
             else:
                 same += 1
 
-    print(f"{same} without changes")
-    print(f"{len(to_merge)} with changes")
+    return DirectoryMergePlan(
+        names_to_add=names_to_add, names_to_remove=names_to_remove, same=same, to_merge=to_merge
+    )
 
+
+def merge_new_files(
+    committee_dir: CommitteeDir, new_data: list[Committee], names_to_add: set[str]
+) -> None:
     for com in new_data:
         if com.name in names_to_add:
             committee_dir.add_committee(com)
-
-    # TODO: names_to_remove
-    # TODO: to_merge
+            click.secho(f"  adding {com.parent} {com.name}")
 
 
 @click.group()
@@ -123,9 +134,39 @@ def merge(abbr: str, input_dir: str) -> None:
     Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
     """
     comdir = CommitteeDir(abbr)
-    scraped_data = ingest_scraped_json(input_dir)
 
-    merge_data(comdir, scraped_data)
+    coms_by_chamber: defaultdict[str, list[ScrapeCommittee]] = defaultdict(list)
+    scraped_data = ingest_scraped_json(input_dir)
+    for com in scraped_data:
+        coms_by_chamber[com.parent].append(com)
+
+    for chamber, coms in coms_by_chamber.items():
+        plan = get_merge_plan_by_chamber(comdir, chamber, coms)
+
+        click.secho(
+            f"{len(plan.names_to_add)} to add", fg="yellow" if plan.names_to_add else "green"
+        )
+        click.secho(
+            f"{len(plan.names_to_remove)} to remove",
+            fg="yellow" if plan.names_to_remove else "green",
+        )
+        click.secho(f"{plan.same} without changes", fg="green")
+        click.secho(
+            f"{len(plan.to_merge)} with changes", fg="yellow" if plan.to_merge else "green"
+        )
+
+        if plan.names_to_add or plan.names_to_remove or plan.to_merge:
+            if not click.confirm("Do you wish to continue?"):
+                sys.exit(1)
+            merge_new_files(comdir, scraped_data, plan.names_to_add)
+
+            # TODO: names_to_remove
+            for name in plan.names_to_remove:
+                print(name)
+
+            # TODO: to_merge
+        else:
+            click.secho("nothing to do!", fg="green")
 
 
 @main.command()  # pragma: no cover
@@ -135,10 +176,16 @@ def lint(abbr: str) -> None:
     Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
     """
     comdir = CommitteeDir(abbr, raise_errors=False)
+    errors = 0
+    click.secho(f"==== {abbr} ====")
     for filename, error in comdir.errors:
-        print(os.path.basename(filename))
+        click.secho(os.path.basename(filename))
         for error in error.errors():
-            print(f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}")
+            click.secho(f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}", fg="red")
+            errors += 1
+    if errors:
+        click.secho(f"exiting with {errors} errors", fg="red")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
