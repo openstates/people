@@ -104,24 +104,24 @@ class CommitteeDir:
             )
 
     def add_committee(self, committee: ScrapeCommittee) -> None:
-        # convert a ScrapeCommittee to a committee by giving it an ID and trying to match names
+        # convert a ScrapeCommittee to a committee by giving it an ID
         full_com = Committee(id=f"ocd-organization/{uuid.uuid4()}", **committee.dict())
-
-        for member in full_com.members:
-            self.person_matcher.match(full_com.parent, member.name)
-
         self.coms_by_chamber_and_name[committee.parent][committee.name] = committee
         self.save_committee(full_com)
 
-
-def ingest_scraped_json(input_dir: str) -> list[Committee]:
-    scraped_data = []
-    for filename in Path(input_dir).glob("*"):
-        with open(filename) as file:
-            data = json.load(file)
-            com = ScrapeCommittee(**data)
-            scraped_data.append(com)
-    return scraped_data
+    def ingest_scraped_json(self, input_dir: str) -> list[Committee]:
+        scraped_data = []
+        for filename in Path(input_dir).glob("*"):
+            with open(filename) as file:
+                data = json.load(file)
+                com = ScrapeCommittee(**data)
+                # do person matching on import so that diffs work
+                for member in com.members:
+                    mid = self.person_matcher.match(com.parent, member.name)
+                    if mid:
+                        member.person_id = mid
+                scraped_data.append(com)
+        return scraped_data
 
 
 @dataclass
@@ -185,7 +185,7 @@ def merge(abbr: str, input_dir: str) -> None:
     comdir = CommitteeDir(abbr)
 
     coms_by_chamber: defaultdict[str, list[ScrapeCommittee]] = defaultdict(list)
-    scraped_data = ingest_scraped_json(input_dir)
+    scraped_data = comdir.ingest_scraped_json(input_dir)
     for com in scraped_data:
         coms_by_chamber[com.parent].append(com)
 
