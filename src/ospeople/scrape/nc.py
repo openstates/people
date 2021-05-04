@@ -19,6 +19,7 @@ class CommitteeDetail(HtmlPage):
             # sibling div contains members
             members = [p.text_content() for p in CSS("a p").match(membership_type.getnext())]
             for member in members:
+                member = member.replace("Rep.", "").replace("Sen.", "").strip()
                 com.add_member(member, role)
 
         return com
