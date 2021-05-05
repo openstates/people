@@ -4,11 +4,14 @@ from pydantic import ValidationError
 from ospeople.cli.committees import CommitteeDir
 from ospeople.models.committees import Committee, Link, ScrapeCommittee, Membership
 
+# TODO: test PersonMatcher standalone
+# TODO: test PersonMatcher usage prior to merge
+
 
 def test_load_data():
     comdir = CommitteeDir(abbr="wa", directory=Path("tests/testdata/committees"))
 
-    assert len(comdir.coms_by_chamber_and_name["lower"]) == 2
+    assert len(comdir.coms_by_chamber_and_name["lower"]) == 3
     assert len(comdir.coms_by_chamber_and_name["upper"]) == 1
     assert comdir.errors == []
 
@@ -113,6 +116,7 @@ def test_get_merge_plan_by_chamber():
     )
 
     newdata = [
+        # identical
         ScrapeCommittee(
             name="Education",
             parent="lower",
@@ -124,6 +128,7 @@ def test_get_merge_plan_by_chamber():
                 Membership(name="Cristobal", role="member"),
             ],
         ),
+        # new
         ScrapeCommittee(
             name="Science",
             parent="lower",
@@ -133,10 +138,24 @@ def test_get_merge_plan_by_chamber():
                 Membership(name="Nguyen", role="co-chair"),
             ],
         ),
+        # changed
+        ScrapeCommittee(
+            name="Rules",
+            parent="lower",
+            sources=[Link(url="https://example.com/committee")],
+            members=[
+                Membership(name="Fox", role="chair"),
+                Membership(name="Fawkes", role="co-chair"),
+                Membership(name="Faux", role="member"),
+            ],
+        ),
     ]
 
     plan = comdir.get_merge_plan_by_chamber("lower", newdata)
     assert plan.names_to_add == {"Science"}
     assert plan.names_to_remove == {"Agriculture"}
-    assert plan.to_merge == []  # TODO: add one to merge
     assert plan.same == 1
+    assert len(plan.to_merge) == 1
+    old, new = plan.to_merge[0]
+    assert old.name == new.name == "Rules"
+    assert len(old.members) < len(new.members)
