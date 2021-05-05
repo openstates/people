@@ -76,9 +76,12 @@ class PersonMatcher:
 
 
 class CommitteeDir:
-    def __init__(self, abbr: str, raise_errors: bool = True):
+    def __init__(
+        self, abbr: str, raise_errors: bool = True, directory: typing.Optional[Path] = None
+    ):
         self.abbr = abbr
-        self.directory = Path(get_data_dir(abbr)) / "committees"
+        # allow overriding directory explicitly, useful for testing
+        self.directory = directory if directory else Path(get_data_dir(abbr)) / "committees"
         # chamber -> name -> Committee
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
@@ -91,11 +94,11 @@ class CommitteeDir:
                 data = load_yaml(file)
                 try:
                     com = Committee(**data)
+                    self.coms_by_chamber_and_name[com.parent][com.name] = com
                 except ValidationError as ve:
                     if raise_errors:
                         raise
                     self.errors.append((filename, ve))
-                self.coms_by_chamber_and_name[com.parent][com.name] = com
 
         # prepare person matcher
         self.person_matcher = PersonMatcher(self.abbr)
@@ -117,7 +120,10 @@ class CommitteeDir:
             raise FileNotFoundError()
 
     def get_filename_by_name(self, chamber: str, name: str) -> Path:
-        com = self.coms_by_chamber_and_name[chamber][name]
+        try:
+            com = self.coms_by_chamber_and_name[chamber][name]
+        except KeyError:
+            raise FileNotFoundError()
         return self.get_filename_by_id(com.id)
 
     def save_committee(self, committee: Committee) -> None:
