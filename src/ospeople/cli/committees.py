@@ -19,17 +19,27 @@ yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
 
 
+@dataclass
+class DirectoryMergePlan:
+    names_to_add: set[str]
+    names_to_remove: set[str]
+    same: int
+    to_merge: list[tuple[Committee, ScrapeCommittee]]
+
+
 class PersonMatcher:
     def __init__(self, abbr: str):
         self.abbr = abbr
         # chamber -> name piece -> id set
         self.current_people: dict[str, dict[str, set[str]]] = {"upper": {}, "lower": {}}
+        self.all_ids: set[str] = set()
 
         # read in people with current roles
         dirname = Path(get_data_dir(abbr)) / "legislature"
         for filename in dirname.glob("*.yml"):
             with open(filename) as file:
                 person = load_yaml(file)
+            self.all_ids.add(person["id"])
             chamber = ""
             for role in person["roles"]:
                 if role_is_active(role):
@@ -60,6 +70,9 @@ class PersonMatcher:
                 f"  multiple candidates while attempting to match {chamber} {name}", fg="yellow"
             )
             return None
+
+    def id_exists(self, id_: str) -> bool:
+        return id_ in self.all_ids
 
 
 class CommitteeDir:
@@ -138,51 +151,36 @@ class CommitteeDir:
                 scraped_data.append(com)
         return scraped_data
 
+    def get_merge_plan_by_chamber(
+        self, chamber: str, new_data: list[ScrapeCommittee]
+    ) -> DirectoryMergePlan:
+        existing_names = set(self.coms_by_chamber_and_name[chamber].keys())
+        new_names = {com.name for com in new_data}
 
-@dataclass
-class DirectoryMergePlan:
-    names_to_add: set[str]
-    names_to_remove: set[str]
-    same: int
-    to_merge: list[tuple[Committee, ScrapeCommittee]]
+        names_to_add = new_names - existing_names
+        names_to_remove = existing_names - new_names
+        names_to_compare = new_names & existing_names
+        to_merge = list()
+        same = 0
 
+        for com in new_data:
+            if com.name in names_to_compare:
+                # reverse a saved Committee to a ScrapeCommittee for comparison
+                existing = self.coms_by_chamber_and_name[chamber][com.name]
+                com_without_id = existing.dict()
+                com_without_id.pop("id")
+                rev_sc = ScrapeCommittee(**com_without_id)
+                if com != rev_sc:
+                    to_merge.append((existing, com))
+                else:
+                    same += 1
 
-def get_merge_plan_by_chamber(
-    committee_dir: CommitteeDir, chamber: str, new_data: list[ScrapeCommittee]
-) -> DirectoryMergePlan:
-    existing_names = set(committee_dir.coms_by_chamber_and_name[chamber].keys())
-    new_names = {com.name for com in new_data}
-
-    names_to_add = new_names - existing_names
-    names_to_remove = existing_names - new_names
-    names_to_compare = new_names & existing_names
-    to_merge = list()
-    same = 0
-
-    for com in new_data:
-        if com.name in names_to_compare:
-            # reverse a saved Committee to a ScrapeCommittee for comparison
-            existing = committee_dir.coms_by_chamber_and_name[chamber][com.name]
-            com_without_id = existing.dict()
-            com_without_id.pop("id")
-            rev_sc = ScrapeCommittee(**com_without_id)
-            if com != rev_sc:
-                to_merge.append((existing, com))
-            else:
-                same += 1
-
-    return DirectoryMergePlan(
-        names_to_add=names_to_add, names_to_remove=names_to_remove, same=same, to_merge=to_merge
-    )
-
-
-def merge_new_files(
-    committee_dir: CommitteeDir, new_data: list[Committee], names_to_add: set[str]
-) -> None:
-    for com in new_data:
-        if com.name in names_to_add:
-            committee_dir.add_committee(com)
-            click.secho(f"  adding {com.parent} {com.name}")
+        return DirectoryMergePlan(
+            names_to_add=names_to_add,
+            names_to_remove=names_to_remove,
+            same=same,
+            to_merge=to_merge,
+        )
 
 
 @click.group()
@@ -205,7 +203,7 @@ def merge(abbr: str, input_dir: str) -> None:
         coms_by_chamber[com.parent].append(com)
 
     for chamber, coms in coms_by_chamber.items():
-        plan = get_merge_plan_by_chamber(comdir, chamber, coms)
+        plan = comdir.get_merge_plan_by_chamber(chamber, coms)
 
         click.secho(
             f"{len(plan.names_to_add)} to add", fg="yellow" if plan.names_to_add else "green"
@@ -222,8 +220,14 @@ def merge(abbr: str, input_dir: str) -> None:
         if plan.names_to_add or plan.names_to_remove or plan.to_merge:
             if not click.confirm("Do you wish to continue?"):
                 sys.exit(1)
-            merge_new_files(comdir, scraped_data, plan.names_to_add)
 
+            # add new committees
+            for com in coms:
+                if com.name in com.names_to_add:
+                    comdir.add_committee(com)
+                    click.secho(f"  adding {com.parent} {com.name}")
+
+            # remove old committees
             for name in plan.names_to_remove:
                 filename = comdir.get_filename_by_name(chamber, name)
                 click.secho(f"removing {filename}", fg="red")
