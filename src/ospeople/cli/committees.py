@@ -143,7 +143,7 @@ class CommitteeDir:
         self.coms_by_chamber_and_name[committee.parent][committee.name] = committee
         self.save_committee(full_com)
 
-    def ingest_scraped_json(self, input_dir: str) -> list[Committee]:
+    def ingest_scraped_json(self, input_dir: str) -> list[ScrapeCommittee]:
         scraped_data = []
         for filename in Path(input_dir).glob("*"):
             with open(filename) as file:

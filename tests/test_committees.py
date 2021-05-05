@@ -2,7 +2,7 @@ import pytest
 from pathlib import Path
 from pydantic import ValidationError
 from ospeople.cli.committees import CommitteeDir
-from ospeople.models.committees import Committee
+from ospeople.models.committees import Committee, Link, ScrapeCommittee, Membership
 
 
 def test_load_data():
@@ -93,3 +93,50 @@ def test_get_filename_by_name():
 
 
 # TODO: test_save_committee, test_add_committee
+
+
+def test_ingest_scraped_json():
+    comdir = CommitteeDir(
+        abbr="wa",
+        directory=Path("tests/testdata/committees"),
+    )
+    committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
+    assert len(committees) == 2
+    assert committees[0].name == "Judiciary 2"
+    assert committees[1].name == "Judiciary 4"
+
+
+def test_get_merge_plan_by_chamber():
+    comdir = CommitteeDir(
+        abbr="wa",
+        directory=Path("tests/testdata/committees"),
+    )
+
+    newdata = [
+        ScrapeCommittee(
+            name="Education",
+            parent="lower",
+            sources=[Link(url="https://example.com/committee")],
+            members=[
+                Membership(name="Jones", role="chair"),
+                Membership(name="Nguyen", role="co-chair"),
+                Membership(name="Green", role="member"),
+                Membership(name="Cristobal", role="member"),
+            ],
+        ),
+        ScrapeCommittee(
+            name="Science",
+            parent="lower",
+            sources=[Link(url="https://example.com/committee")],
+            members=[
+                Membership(name="Jones", role="chair"),
+                Membership(name="Nguyen", role="co-chair"),
+            ],
+        ),
+    ]
+
+    plan = comdir.get_merge_plan_by_chamber("lower", newdata)
+    assert plan.names_to_add == {"Science"}
+    assert plan.names_to_remove == {"Agriculture"}
+    assert plan.to_merge == []  # TODO: add one to merge
+    assert plan.same == 1
