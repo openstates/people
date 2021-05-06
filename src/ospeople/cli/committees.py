@@ -28,30 +28,33 @@ class DirectoryMergePlan:
 
 
 class PersonMatcher:
-    def __init__(self, abbr: str):
+    def __init__(self, abbr: str, directory: typing.Optional[Path] = None):
         self.abbr = abbr
         # chamber -> name piece -> id set
         self.current_people: dict[str, dict[str, set[str]]] = {"upper": {}, "lower": {}}
         self.all_ids: set[str] = set()
 
+        # allow directory override for testing purposes
+        if not directory:
+            directory = Path(get_data_dir(abbr)) / "legislature"
+
         # read in people with current roles
-        dirname = Path(get_data_dir(abbr)) / "legislature"
-        for filename in dirname.glob("*.yml"):
+        for filename in directory.glob("*.yml"):
             with open(filename) as file:
                 person = load_yaml(file)
-            self.all_ids.add(person["id"])
             chamber = ""
             for role in person["roles"]:
                 if role_is_active(role):
                     chamber = typing.cast(str, role["type"])
                     break
-            self.add_person(chamber, person["name"], person["id"])
+            self.add_name(chamber, person["name"], person["id"])
             if person.get("family_name"):
-                self.add_person(chamber, person["family_name"], person["id"])
+                self.add_name(chamber, person["family_name"], person["id"])
             for name in person.get("other_names", []):
-                self.add_person(chamber, name["name"], person["id"])
+                self.add_name(chamber, name["name"], person["id"])
 
-    def add_person(self, chamber: str, name_piece: str, id_: str) -> None:
+    def add_name(self, chamber: str, name_piece: str, id_: str) -> None:
+        self.all_ids.add(id_)
         if name_piece in self.current_people[chamber]:
             self.current_people[chamber][name_piece].add(id_)
         else:

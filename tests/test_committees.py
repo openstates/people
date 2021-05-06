@@ -1,11 +1,34 @@
 import pytest
 from pathlib import Path
 from pydantic import ValidationError
-from ospeople.cli.committees import CommitteeDir
+from ospeople.cli.committees import CommitteeDir, PersonMatcher
 from ospeople.models.committees import Committee, Link, ScrapeCommittee, Membership
 
-# TODO: test PersonMatcher standalone
-# TODO: test PersonMatcher usage prior to merge
+
+@pytest.fixture
+def person_matcher():
+    pm = PersonMatcher("wa", Path("tests/testdata/no-such-dir"))
+    pm.add_name("lower", "Jones", "ocd-person/00000000-0000-0000-0000-111111111111")
+    pm.add_name("lower", "Nguyen", "ocd-person/00000000-0000-0000-0000-222222222222")
+    pm.add_name("lower", "Green", "ocd-person/00000000-0000-0000-0000-333333333333")
+    # two Cristobals
+    pm.add_name("lower", "Cristobal", "ocd-person/00000000-0000-0000-0000-000888888888")
+    pm.add_name("lower", "Cristobal", "ocd-person/00000000-0000-0000-0000-000999999999")
+    return pm
+
+
+def test_person_matcher_match(person_matcher):
+    assert (
+        person_matcher.match("lower", "Jones") == "ocd-person/00000000-0000-0000-0000-111111111111"
+    )
+    assert (
+        person_matcher.match("lower", "Nguyen")
+        == "ocd-person/00000000-0000-0000-0000-222222222222"
+    )
+    # two matches
+    assert person_matcher.match("lower", "Cristobal") is None
+    # no matches
+    assert person_matcher.match("lower", "Gordy") is None
 
 
 def test_load_data():
@@ -109,11 +132,29 @@ def test_ingest_scraped_json():
     assert committees[1].name == "Judiciary 4"
 
 
-def test_get_merge_plan_by_chamber():
+def test_ingest_scraped_json_names_resolved():
     comdir = CommitteeDir(
         abbr="wa",
         directory=Path("tests/testdata/committees"),
     )
+    richardson_id = "ocd-person/11111111-0000-0000-0000-55555555555"
+    comdir.person_matcher.add_name("lower", "Richardson", richardson_id)
+    committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
+    assert len(committees) == 2
+    assert committees[0].name == "Judiciary 2"
+    # ensure that names are matched
+    assert committees[0].members[0].name == "Richardson"
+    assert committees[0].members[0].role == "chair"
+    assert committees[0].members[0].person_id == richardson_id
+    assert committees[1].name == "Judiciary 4"
+
+
+def test_get_merge_plan_by_chamber(person_matcher):
+    comdir = CommitteeDir(
+        abbr="wa",
+        directory=Path("tests/testdata/committees"),
+    )
+    comdir.person_matcher = person_matcher
 
     newdata = [
         # identical
@@ -154,7 +195,7 @@ def test_get_merge_plan_by_chamber():
     plan = comdir.get_merge_plan_by_chamber("lower", newdata)
     assert plan.names_to_add == {"Science"}
     assert plan.names_to_remove == {"Agriculture"}
-    assert plan.same == 1
+    assert plan.same == 1  # Edcuation
     assert len(plan.to_merge) == 1
     old, new = plan.to_merge[0]
     assert old.name == new.name == "Rules"
