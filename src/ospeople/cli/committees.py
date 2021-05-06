@@ -277,7 +277,7 @@ def merge(abbr: str, input_dir: str) -> None:
 
             # add new committees
             for com in coms:
-                if com.name in com.names_to_add:
+                if com.name in plan.names_to_add:
                     comdir.add_committee(com)
                     click.secho(f"  adding {com.parent} {com.name}")
 

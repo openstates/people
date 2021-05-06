@@ -5,6 +5,7 @@ description = ""
 authors = ["James Turk <james@openstates.org>"]
 
 [tool.poetry.scripts]
+os-committees = 'ospeople.cli.committees:main'
 os-lint-yaml = 'ospeople.cli.lint_yaml:main'
 os-manual-data = 'ospeople.cli.manual_data:main'
 os-merge = 'ospeople.cli.merge:main'
