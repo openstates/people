@@ -31,6 +31,7 @@
     * end_date    **required if not upper|lower|legislature**
     * end_reason: reason this role ended, such as resignation/death
     * contact_details: role-specific contact details (see below for schema)
+* extras - unvalidated JSON to store additional details in
 * contact_details (see below)
 * links (see below)
 * other_identifiers (see below)
@@ -40,8 +41,8 @@
 # Committee Schema
 
 * id: UUID representing this organization.  **required**
-* name: Name of Committee.  **required**
 * jurisdiction: ocd-jurisdiction identifier **required**
+* name: Name of Committee.  **required**
 * parent: Parent of this organization, can be:
     * upper
     * lower
@@ -51,12 +52,15 @@
 * classification: Classification, can be:
     * committee
     **required**
-* memberships: list of memberships, each may have the following:
+* members: list of memberships, each may have the following:
     * id - ocd-person ID if known
     * name - name of person **required**
     * role - role that person fills on committee, if not 'member'
     * start_date - optional start date of this membership
     * end_date - optional end date of this membership
+* links (see below)
+* sources (see below)
+* other_names (see below)
 
 ### Common Elements
 
@@ -86,10 +90,3 @@ These sections can have a list of objects, each with the following fields availa
 * sources:
     * note: description of the usage of this source
     * url: URL used to collect information for this person **required**
-
-
-### Additional Fields
-
-These fields should only be set by the automated processes, but may also be present.
-* sort_name
-* extras

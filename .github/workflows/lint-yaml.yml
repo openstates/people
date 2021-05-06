@@ -6,12 +6,14 @@ on:
     paths:
       - "data/**"
       - "src/ospeople/cli/lint_yaml.py"
+      - "src/ospeople/cli/committees.py"
       - "settings.yml"
   pull_request:
     branches: [ main ]
     paths:
       - "data/**"
       - "src/ospeople/cli/lint_yaml.py"
+      - "src/ospeople/cli/committees.py"
       - "settings.yml"
 
 jobs:
@@ -41,5 +43,7 @@ jobs:
       run: poetry install
       # if: steps.cache.outputs.cache-hit != 'true'
 
-    - name: lint yaml
+    - name: lint people
       run: poetry run os-lint-yaml
+    - name: lint committees
+      run: poetry run os-committees lint
