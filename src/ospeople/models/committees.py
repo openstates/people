@@ -1,47 +1,14 @@
-import re
 import typing
 from enum import Enum
-from pydantic import BaseModel, validator
+from pydantic import validator
 from openstates.metadata import lookup
-
-ORG_ID_RE = re.compile(
-    r"^ocd-organization/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-)
-PERSON_ID_RE = re.compile(
-    r"^ocd-person/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
-)
+from .common import BaseModel, ORG_ID_RE, PERSON_ID_RE, Link, OtherName
 
 
 class Parent(str, Enum):
     UPPER = "upper"
     LOWER = "lower"
     JOINT = "legislature"
-
-
-class Link(BaseModel):
-    url: str
-    note: typing.Optional[str] = None
-
-    @validator("url")
-    def validate_url(cls, v):
-        if not v.startswith(("http://", "https://", "ftp://")):
-            raise ValueError("URL must start with protocol")
-        return v
-
-    class Config:
-        anystr_strip_whitespace = True
-        extra = "forbid"
-
-
-class OtherName(BaseModel):
-    name: str
-    start_date: typing.Optional[str] = None
-    end_date: typing.Optional[str] = None
-    # TODO: add date validators
-
-    class Config:
-        anystr_strip_whitespace = True
-        extra = "forbid"
 
 
 class Membership(BaseModel):
@@ -55,10 +22,6 @@ class Membership(BaseModel):
             raise ValueError("must match ocd-person/UUID format")
         return v
 
-    class Config:
-        anystr_strip_whitespace = True
-        extra = "forbid"
-
 
 class ScrapeCommittee(BaseModel):
     name: str
@@ -69,10 +32,6 @@ class ScrapeCommittee(BaseModel):
     other_names: typing.List[OtherName] = []
     members: typing.List[Membership] = []
 
-    class Config:
-        anystr_strip_whitespace = True
-        extra = "forbid"
-
     def add_member(self, name: str, role: str = "member") -> None:
         self.members.append(Membership(name=name, role=role))
 
@@ -81,10 +40,6 @@ class ScrapeCommittee(BaseModel):
 
     def add_source(self, url: str, note: typing.Optional[str] = None) -> None:
         self.sources.append(Link(url=url, note=note))
-
-    def to_dict(self):
-        # TODO: replace this with first class pydantic support in spatula
-        return self.dict()
 
 
 class Committee(ScrapeCommittee):
