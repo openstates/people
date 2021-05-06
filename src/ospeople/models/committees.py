@@ -107,4 +107,8 @@ class Committee(ScrapeCommittee):
 
     def to_dict(self):
         # hack to always have id on top
-        return {"id": self.id, "jurisdiction": self.jurisdiction, **super().dict()}
+        return {
+            "id": self.id,
+            "jurisdiction": self.jurisdiction,
+            **super().dict(exclude_defaults=True),
+        }
