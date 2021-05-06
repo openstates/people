@@ -78,6 +78,47 @@ class PersonMatcher:
         return id_ in self.all_ids
 
 
+def merge_lists(orig: list, new: list, key_attr: str) -> list:
+    """ merge two lists based on a unique property """
+    combined = []
+    new_by_key = {getattr(item, key_attr): item for item in new}
+    seen = set()
+    # add original items, or their replacements if present
+    print(orig, new)
+    for item in orig:
+        key = getattr(item, key_attr)
+        seen.add(key)
+        if key in new_by_key:
+            combined.append(new_by_key[key])
+        else:
+            combined.append(item)
+    # add new items
+    for key, item in new_by_key.items():
+        if key not in seen:
+            combined.append(item)
+    return combined
+
+
+def merge_committees(orig: Committee, new: Committee) -> Committee:
+    # disallow merge of these, likely error & unclear what should happen
+    if orig.parent != new.parent:
+        raise ValueError("cannot merge committees with different parents")
+    if orig.classification != new.classification:
+        raise ValueError("cannot merge committees with different classifications")
+
+    merged = Committee(
+        id=orig.id,  # id stays constant
+        parent=orig.parent,
+        classification=orig.classification,
+        name=new.name,  # name can be updated
+        sources=merge_lists(orig.sources, new.sources, "url"),
+        links=merge_lists(orig.links, new.links, "url"),
+        other_names=merge_lists(orig.other_names, new.other_names, "name"),
+        members=merge_lists(orig.members, new.members, "name"),
+    )
+    return merged
+
+
 class CommitteeDir:
     def __init__(
         self, abbr: str, raise_errors: bool = True, directory: typing.Optional[Path] = None

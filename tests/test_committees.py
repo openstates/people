@@ -1,7 +1,7 @@
 import pytest
 from pathlib import Path
 from pydantic import ValidationError
-from ospeople.cli.committees import CommitteeDir, PersonMatcher
+from ospeople.cli.committees import CommitteeDir, PersonMatcher, merge_committees
 from ospeople.models.committees import Committee, Link, ScrapeCommittee, Membership
 
 
@@ -29,6 +29,81 @@ def test_person_matcher_match(person_matcher):
     assert person_matcher.match("lower", "Cristobal") is None
     # no matches
     assert person_matcher.match("lower", "Gordy") is None
+
+
+def test_merge_committees_name():
+    id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
+    id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
+    c1 = Committee(id=id_one, parent="upper", name="Education")
+    c2 = Committee(id=id_two, parent="upper", name="Education & Children")
+    merged = merge_committees(c1, c2)
+    assert merged.id == c1.id
+    assert merged.name == c2.name
+
+
+def test_merge_committees_invalid():
+    id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
+    id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
+    c1 = Committee(id=id_one, parent="upper", name="Education")
+    c2 = Committee(id=id_two, parent="lower", name="Education & Children")
+    with pytest.raises(ValueError):
+        merge_committees(c1, c2)
+
+
+def test_merge_committees_links():
+    id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
+    id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
+    c1 = Committee(
+        id=id_one,
+        parent="upper",
+        name="Education",
+        links=[
+            Link(url="https://example.com/1"),
+            Link(url="https://example.com/2"),
+        ],
+    )
+    c2 = Committee(
+        id=id_two,
+        parent="upper",
+        name="Education & Children",
+        links=[Link(url="https://example.com/1", note="first"), Link(url="https://example.com/3")],
+    )
+    merged = merge_committees(c1, c2)
+    assert merged.links == [
+        Link(url="https://example.com/1", note="first"),
+        Link(url="https://example.com/2"),
+        Link(url="https://example.com/3"),
+    ]
+
+
+def test_merge_committees_members():
+    id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
+    id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
+    person_id = "ocd-person/00000000-0000-0000-0000-000000000002"
+    c1 = Committee(
+        id=id_one,
+        parent="upper",
+        name="Education",
+        members=[
+            Membership(name="Amy", role="chair"),
+            Membership(name="Bo", role="chair"),
+        ],
+    )
+    c2 = Committee(
+        id=id_two,
+        parent="upper",
+        name="Education & Children",
+        members=[
+            Membership(name="Amy", role="chair", person_id=person_id),
+            Membership(name="Charlize", role="member"),
+        ],
+    )
+    merged = merge_committees(c1, c2)
+    assert merged.members == [
+        Membership(name="Amy", role="chair", person_id=person_id),
+        Membership(name="Bo", role="chair"),
+        Membership(name="Charlize", role="member"),
+    ]
 
 
 def test_load_data():
