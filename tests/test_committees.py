@@ -4,6 +4,8 @@ from pydantic import ValidationError
 from ospeople.cli.committees import CommitteeDir, PersonMatcher, merge_committees
 from ospeople.models.committees import Committee, Link, ScrapeCommittee, Membership
 
+JURISDICTION_ID = "ocd-jurisdiction/country:us/state:wa/government"
+
 
 @pytest.fixture
 def person_matcher():
@@ -34,8 +36,10 @@ def test_person_matcher_match(person_matcher):
 def test_merge_committees_name():
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
-    c1 = Committee(id=id_one, parent="upper", name="Education")
-    c2 = Committee(id=id_two, parent="upper", name="Education & Children")
+    c1 = Committee(id=id_one, jurisdiction=JURISDICTION_ID, parent="upper", name="Education")
+    c2 = Committee(
+        id=id_two, jurisdiction=JURISDICTION_ID, parent="upper", name="Education & Children"
+    )
     merged = merge_committees(c1, c2)
     assert merged.id == c1.id
     assert merged.name == c2.name
@@ -44,8 +48,10 @@ def test_merge_committees_name():
 def test_merge_committees_invalid():
     id_one = "ocd-organization/00000000-0000-0000-0000-000000000001"
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
-    c1 = Committee(id=id_one, parent="upper", name="Education")
-    c2 = Committee(id=id_two, parent="lower", name="Education & Children")
+    c1 = Committee(id=id_one, jurisdiction=JURISDICTION_ID, parent="upper", name="Education")
+    c2 = Committee(
+        id=id_two, jurisdiction=JURISDICTION_ID, parent="lower", name="Education & Children"
+    )
     with pytest.raises(ValueError):
         merge_committees(c1, c2)
 
@@ -55,6 +61,7 @@ def test_merge_committees_links():
     id_two = "ocd-organization/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
         id=id_one,
+        jurisdiction=JURISDICTION_ID,
         parent="upper",
         name="Education",
         links=[
@@ -64,6 +71,7 @@ def test_merge_committees_links():
     )
     c2 = Committee(
         id=id_two,
+        jurisdiction=JURISDICTION_ID,
         parent="upper",
         name="Education & Children",
         links=[Link(url="https://example.com/1", note="first"), Link(url="https://example.com/3")],
@@ -82,6 +90,7 @@ def test_merge_committees_members():
     person_id = "ocd-person/00000000-0000-0000-0000-000000000002"
     c1 = Committee(
         id=id_one,
+        jurisdiction=JURISDICTION_ID,
         parent="upper",
         name="Education",
         members=[
@@ -91,6 +100,7 @@ def test_merge_committees_members():
     )
     c2 = Committee(
         id=id_two,
+        jurisdiction=JURISDICTION_ID,
         parent="upper",
         name="Education & Children",
         members=[
@@ -151,11 +161,13 @@ def test_get_new_filename():
     )
     simple = Committee(
         id="ocd-organization/00001111-2222-3333-4444-555566667777",
+        jurisdiction=JURISDICTION_ID,
         name="Simple",
         parent="lower",
     )
     longer = Committee(
         id="ocd-organization/00001111-2222-3333-4444-999999999999",
+        jurisdiction=JURISDICTION_ID,
         name="Ways, Means & Taxes",
         parent="upper",
     )

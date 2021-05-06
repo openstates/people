@@ -104,11 +104,14 @@ def merge_committees(orig: Committee, new: Committee) -> Committee:
         raise ValueError("cannot merge committees with different parents")
     if orig.classification != new.classification:
         raise ValueError("cannot merge committees with different classifications")
+    if orig.jurisdiction != new.jurisdiction:
+        raise ValueError("cannot merge committees with different jurisdictions")
 
     merged = Committee(
         id=orig.id,  # id stays constant
         parent=orig.parent,
         classification=orig.classification,
+        jurisdiction=orig.jurisdiction,
         name=new.name,  # name can be updated
         sources=merge_lists(orig.sources, new.sources, "url"),
         links=merge_lists(orig.links, new.links, "url"),
@@ -223,6 +226,7 @@ class CommitteeDir:
                 existing = self.coms_by_chamber_and_name[chamber][com.name]
                 com_without_id = existing.dict()
                 com_without_id.pop("id")
+                com_without_id.pop("jurisdiction")
                 rev_sc = ScrapeCommittee(**com_without_id)
                 if com != rev_sc:
                     to_merge.append((existing, com))

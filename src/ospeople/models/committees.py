@@ -2,6 +2,7 @@ import re
 import typing
 from enum import Enum
 from pydantic import BaseModel, validator
+from openstates.metadata import lookup
 
 ORG_ID_RE = re.compile(
     r"^ocd-organization/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
@@ -88,6 +89,15 @@ class ScrapeCommittee(BaseModel):
 
 class Committee(ScrapeCommittee):
     id: str
+    jurisdiction: str
+
+    @validator("jurisdiction")
+    def valid_ocd_jurisdiction(cls, v):
+        try:
+            lookup(jurisdiction_id=v)
+        except KeyError:
+            raise ValueError(f"invalid jurisdiction_id {v}")
+        return v
 
     @validator("id")
     def valid_ocd_org_format(cls, v):
@@ -97,4 +107,4 @@ class Committee(ScrapeCommittee):
 
     def to_dict(self):
         # hack to always have id on top
-        return {"id": self.id, **super().dict()}
+        return {"id": self.id, "jurisdiction": self.jurisdiction, **super().dict()}
