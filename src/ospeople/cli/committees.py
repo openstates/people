@@ -12,6 +12,7 @@ import click
 import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
+from openstates.metadata import lookup
 from ..utils import get_data_dir, load_yaml, role_is_active
 from ..models.committees import Committee, ScrapeCommittee
 
@@ -190,8 +191,12 @@ class CommitteeDir:
 
     def add_committee(self, committee: ScrapeCommittee) -> None:
         # convert a ScrapeCommittee to a committee by giving it an ID
-        full_com = Committee(id=f"ocd-organization/{uuid.uuid4()}", **committee.dict())
-        self.coms_by_chamber_and_name[committee.parent][committee.name] = committee
+        full_com = Committee(
+            id=f"ocd-organization/{uuid.uuid4()}",
+            jurisdiction=lookup(abbr=self.abbr).jurisdiction_id,
+            **committee.dict(),
+        )
+        self.coms_by_chamber_and_name[committee.parent][committee.name] = full_com
         self.save_committee(full_com)
 
     def ingest_scraped_json(self, input_dir: str) -> list[ScrapeCommittee]:

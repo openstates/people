@@ -1,4 +1,5 @@
 import pytest
+from unittest.mock import patch
 from pathlib import Path
 from pydantic import ValidationError
 from ospeople.cli.committees import CommitteeDir, PersonMatcher, merge_committees
@@ -209,6 +210,21 @@ def test_get_filename_by_name():
 
 
 # TODO: test_save_committee, test_add_committee
+
+
+def test_add_committee():
+    comdir = CommitteeDir(
+        abbr="wa",
+        directory=Path("tests/testdata/committees"),
+    )
+    with patch.object(comdir, "save_committee") as patch_obj:
+        sc = ScrapeCommittee(parent="lower", name="New Business")
+        comdir.add_committee(sc)
+        full_com = comdir.coms_by_chamber_and_name[sc.parent][sc.name]
+        assert full_com.name == sc.name
+        assert full_com.id.startswith("ocd-organization")
+        assert full_com.jurisdiction == JURISDICTION_ID
+        assert patch_obj.called_once_with(full_com)
 
 
 def test_ingest_scraped_json():
