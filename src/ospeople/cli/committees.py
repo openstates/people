@@ -13,7 +13,7 @@ import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
 from openstates.metadata import lookup
-from ..utils import get_data_dir, load_yaml, role_is_active
+from ..utils import get_data_dir, load_yaml, role_is_active, get_all_abbreviations
 from ..models.committees import Committee, ScrapeCommittee
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
@@ -32,7 +32,11 @@ class PersonMatcher:
     def __init__(self, abbr: str, directory: typing.Optional[Path] = None):
         self.abbr = abbr
         # chamber -> name piece -> id set
-        self.current_people: dict[str, dict[str, set[str]]] = {"upper": {}, "lower": {}}
+        self.current_people: dict[str, dict[str, set[str]]] = {
+            "upper": {},
+            "lower": {},
+            "legislature": {},
+        }
         self.all_ids: set[str] = set()
 
         # allow directory override for testing purposes
@@ -132,6 +136,8 @@ class CommitteeDir:
         # chamber -> name -> Committee
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
+        # person matcher will be prepared if/when needed
+        self.person_matcher = None
 
         # make sure a committees dir exists
         self.directory.mkdir(parents=True, exist_ok=True)
@@ -146,9 +152,6 @@ class CommitteeDir:
                     if raise_errors:
                         raise
                     self.errors.append((filename, ve))
-
-        # prepare person matcher
-        self.person_matcher = PersonMatcher(self.abbr)
 
     def get_new_filename(self, obj: Committee) -> str:
         id = obj.id.split("/")[1]
@@ -200,6 +203,9 @@ class CommitteeDir:
         self.save_committee(full_com)
 
     def ingest_scraped_json(self, input_dir: str) -> list[ScrapeCommittee]:
+        if not self.person_matcher:
+            self.person_matcher = PersonMatcher(self.abbr)
+
         scraped_data = []
         for filename in Path(input_dir).glob("*"):
             with open(filename) as file:
@@ -305,22 +311,28 @@ def merge(abbr: str, input_dir: str) -> None:
 
 
 @main.command()  # pragma: no cover
-@click.argument("abbr")
-def lint(abbr: str) -> None:
+@click.argument("abbreviations", nargs=-1)
+def lint(abbreviations: str) -> None:
     """
     Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
     """
-    comdir = CommitteeDir(abbr, raise_errors=False)
-    errors = 0
-    click.secho(f"==== {abbr} ====")
-    for filename, error in comdir.errors:
-        click.secho(filename.name)
-        for error in error.errors():
-            click.secho(f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}", fg="red")
-            errors += 1
-    if errors:
-        click.secho(f"exiting with {errors} errors", fg="red")
-        sys.exit(1)
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        comdir = CommitteeDir(abbr, raise_errors=False)
+        errors = 0
+        click.secho(f"==== {abbr} ====")
+        for filename, error in comdir.errors:
+            click.secho(filename.name)
+            for error in error.errors():
+                click.secho(
+                    f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}", fg="red"
+                )
+                errors += 1
+        if errors:
+            click.secho(f"exiting with {errors} errors", fg="red")
+            sys.exit(1)
 
 
 if __name__ == "__main__":
