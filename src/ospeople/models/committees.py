@@ -1,8 +1,14 @@
 import typing
 from enum import Enum
 from pydantic import validator
-from openstates.metadata import lookup
-from .common import BaseModel, ORG_ID_RE, PERSON_ID_RE, Link, OtherName
+from .common import (
+    BaseModel,
+    ORG_ID_RE,
+    Link,
+    OtherName,
+    validate_ocd_person,
+    validate_ocd_jurisdiction,
+)
 
 
 class Parent(str, Enum):
@@ -16,11 +22,7 @@ class Membership(BaseModel):
     role: str
     person_id: typing.Optional[str] = None
 
-    @validator("person_id")
-    def valid_ocd_person_format(cls, v):
-        if isinstance(v, str) and not PERSON_ID_RE.match(v):
-            raise ValueError("must match ocd-person/UUID format")
-        return v
+    _validate_person_id = validator("person_id", allow_reuse=True)(validate_ocd_person)
 
 
 class ScrapeCommittee(BaseModel):
@@ -46,13 +48,7 @@ class Committee(ScrapeCommittee):
     id: str
     jurisdiction: str
 
-    @validator("jurisdiction")
-    def valid_ocd_jurisdiction(cls, v):
-        try:
-            lookup(jurisdiction_id=v)
-        except KeyError:
-            raise ValueError(f"invalid jurisdiction_id {v}")
-        return v
+    _validate_jurisdiction = validator("jurisdiction", allow_reuse=True)(validate_ocd_jurisdiction)
 
     @validator("id")
     def valid_ocd_org_format(cls, v):
