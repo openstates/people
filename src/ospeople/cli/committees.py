@@ -171,7 +171,12 @@ class CommitteeDir:
         return self.get_filename_by_id(com.id)
 
     def save_committee(self, committee: Committee) -> None:
-        filename = self.directory / self.get_new_filename(committee)
+        # try to use id's existing filename if possible
+        try:
+            filename = self.get_filename_by_id(committee.id)
+        except FileNotFoundError:
+            filename = self.directory / self.get_new_filename(committee)
+
         with open(filename, "w") as f:
             yaml.dump(
                 committee.to_dict(),
@@ -282,7 +287,11 @@ def merge(abbr: str, input_dir: str) -> None:
                 filename = comdir.get_filename_by_name(chamber, name)
                 click.secho(f"removing {filename}", fg="red")
                 filename.unlink()
-            # TODO: to_merge
+
+            # merge remaining committees
+            for orig, new in plan.to_merge:
+                merged = merge_committees(orig, new)
+                comdir.save_committee(merged)
         else:
             click.secho("nothing to do!", fg="green")
 

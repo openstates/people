@@ -32,6 +32,17 @@ class Link(BaseModel):
         extra = "forbid"
 
 
+class OtherName(BaseModel):
+    name: str
+    start_date: typing.Optional[str] = None
+    end_date: typing.Optional[str] = None
+    # TODO: add date validators
+
+    class Config:
+        anystr_strip_whitespace = True
+        extra = "forbid"
+
+
 class Membership(BaseModel):
     name: str
     role: str
@@ -54,7 +65,7 @@ class ScrapeCommittee(BaseModel):
     classification: str = "committee"
     sources: typing.List[Link] = []
     links: typing.List[Link] = []
-    other_names: typing.List[Link] = []
+    other_names: typing.List[OtherName] = []
     members: typing.List[Membership] = []
 
     class Config:
