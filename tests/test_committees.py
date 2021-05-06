@@ -122,11 +122,14 @@ def test_load_data_with_errors():
     assert len(comdir.coms_by_chamber_and_name["lower"]) == 0
     assert len(comdir.coms_by_chamber_and_name["upper"]) == 0
     assert len(comdir.errors) == 2
+    # error order isn't deterministic
     path0, msg0 = comdir.errors[0]
+    path1, msg1 = comdir.errors[1]
+    if "lower" in str(path0):
+        msg0, msg1 = msg1, msg0
     assert "8 validation errors" in str(msg0)
     assert "members -> 3 -> who" in str(msg0)
     assert "members -> 3 -> name" in str(msg0)
-    path1, msg1 = comdir.errors[1]
     assert "2 validation errors" in str(msg1)
     assert "value is not a valid enumeration member" in str(msg1)
     assert "extra fields not permitted" in str(msg1)
