@@ -49,8 +49,16 @@ class Link(BaseModel):
     _validate_url = validator("url", allow_reuse=True)(validate_url)
 
 
-class OtherName(BaseModel):
-    name: str
+class TimeScoped(BaseModel):
     start_date: typing.Optional[str] = None
     end_date: typing.Optional[str] = None
     # TODO: add date validators
+
+
+class OtherName(TimeScoped):
+    name: str
+
+
+class OtherIdentifier(TimeScoped):
+    scheme: str
+    identifier: str
