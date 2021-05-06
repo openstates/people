@@ -5,6 +5,7 @@ description = ""
 authors = ["James Turk <james@openstates.org>"]
 
 [tool.poetry.scripts]
+os-committees = 'ospeople.cli.committees:main'
 os-lint-yaml = 'ospeople.cli.lint_yaml:main'
 os-manual-data = 'ospeople.cli.manual_data:main'
 os-merge = 'ospeople.cli.merge:main'
@@ -28,6 +29,7 @@ scrapelib = "^2.0"
 pillow = "^8.1"
 openstates = "^5.10.0"
 spatula = "^0.6.0"
+pydantic = "^1.8.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"
