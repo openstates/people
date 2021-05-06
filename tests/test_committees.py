@@ -203,8 +203,7 @@ def test_ingest_scraped_json():
     )
     committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
     assert len(committees) == 2
-    assert committees[0].name == "Judiciary 2"
-    assert committees[1].name == "Judiciary 4"
+    assert {"Judiciary 2", "Judiciary 4"} == {c.name for c in committees}
 
 
 def test_ingest_scraped_json_names_resolved():
@@ -216,6 +215,7 @@ def test_ingest_scraped_json_names_resolved():
     comdir.person_matcher.add_name("lower", "Richardson", richardson_id)
     committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
     assert len(committees) == 2
+    committees = sorted(committees, key=lambda c: c.name)
     assert committees[0].name == "Judiciary 2"
     # ensure that names are matched
     assert committees[0].members[0].name == "Richardson"

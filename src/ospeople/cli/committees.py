@@ -84,7 +84,6 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
     new_by_key = {getattr(item, key_attr): item for item in new}
     seen = set()
     # add original items, or their replacements if present
-    print(orig, new)
     for item in orig:
         key = getattr(item, key_attr)
         seen.add(key)
