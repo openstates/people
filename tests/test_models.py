@@ -205,11 +205,20 @@ def test_party_on_person():
         roles=[],
     )
     with pytest.raises(ValidationError):
-        # no party!
-        p.party = []
-    with pytest.raises(ValidationError):
         # no such party
         p.party = [Party(name="Vampire")]
+
+
+def test_party_required_on_legislator():
+    p = Person(
+        id=VALID_PERSON_ID,
+        name="Tony Tigre",
+        party=[Party(name="Democratic")],
+        roles=[Role(type=RoleType.UPPER, district=1, jurisdiction=VALID_JURISDICTION_ID)],
+    )
+    with pytest.raises(ValidationError):
+        # no party!
+        p.party = []
 
 
 def test_multiple_parties():
