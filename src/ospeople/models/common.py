@@ -15,7 +15,7 @@ DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 
 
 def validate_str_no_newline(v):
-    if not isinstance(v, str) or "\n" in v:
+    if isinstance(v, str) and "\n" in v:
         raise ValueError("must be a string without newline")
     return v
 

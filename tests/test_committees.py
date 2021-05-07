@@ -242,7 +242,7 @@ def test_ingest_scraped_json_names_resolved():
         abbr="wa",
         directory=Path("tests/testdata/committees"),
     )
-    richardson_id = "ocd-person/11111111-0000-0000-0000-55555555555"
+    richardson_id = "ocd-person/11111111-0000-0000-0000-555555555555"
     comdir.person_matcher = PersonMatcher("wa", Path("tests/testdata/no-such-dir"))
     comdir.person_matcher.add_name("lower", "Richardson", richardson_id)
     committees = comdir.ingest_scraped_json("tests/testdata/scraped-committees")
