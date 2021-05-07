@@ -11,68 +11,8 @@ from ospeople.cli.lint_yaml import (
 )  # noqa
 
 
-# def test_is_social():
-#     assert is_social("example_id")
-#     assert not is_social("@no_at_sign")
-#     assert not is_social("http://no-urls.com")
-
-
-# def test_is_phone():
-#     assert is_phone("123-346-7990")
-#     assert is_phone("1-123-346-7990")
-#     assert is_phone("1-123-346-7990 ext. 123")
-#     assert not is_phone("(123) 346-7990")
-
-
-# def test_no_bad_comma():
-#     assert no_bad_comma("John Smith")
-#     assert no_bad_comma("John Smith, II")
-#     assert no_bad_comma("John Smith, III")
-#     assert no_bad_comma("John Smith, Jr.")
-#     assert no_bad_comma("John Smith, Sr.")
-#     assert no_bad_comma("John Smith, PH.D.")
-#     assert no_bad_comma("John Smith, M.D.")
-#     assert no_bad_comma("John Smith, MD")
-#     assert no_bad_comma("Smith, John") is False
-#     assert no_bad_comma("Smith, J.R.") is False
-
-
 EXAMPLE_OCD_PERSON_ID = "ocd-person/12345678-0000-1111-2222-1234567890ab"
 EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
-
-
-# def test_validate_nested_role_list():
-#     example = {
-#         "id": EXAMPLE_OCD_PERSON_ID,
-#         "name": "Anne A",
-#         "roles": [
-#             {
-#                 "type": "upper",
-#                 "district": "4",
-#                 "end_date": "2010",
-#                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
-#             },
-#             {
-#                 "type": "governor",
-#                 "start_date": "2010",
-#                 "end_date": "2016",
-#                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
-#             },
-#             # bad roles
-#             {"type": "upper", "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government"},
-#             {
-#                 "type": "governor",
-#                 "district": "4",
-#                 "end_date": "2016",
-#                 "jurisdiction": "ocd-jurisdiction/country:us/state:nc/government",
-#             },
-#         ],
-#     }
-
-#     errs = validate_obj(example, PERSON_FIELDS)
-#     assert len(errs) == 2
-#     assert "roles.2" in errs[0]
-#     assert "roles.3" in errs[1]
 
 
 # @pytest.mark.parametrize(

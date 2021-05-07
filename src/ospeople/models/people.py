@@ -36,7 +36,21 @@ class RoleType(str, Enum):
     CHIEF_ELECTION_OFFICER = "chief election officer"
 
 
-class OfficeType(str, Enum):
+LEGISLATIVE_ROLES = (
+    RoleType.UPPER,
+    RoleType.LOWER,
+    RoleType.JOINT,
+)
+EXECUTIVE_ROLES = (
+    RoleType.GOVERNOR,
+    RoleType.LT_GOVERNOR,
+    RoleType.MAYOR,
+    RoleType.CHIEF_ELECTION_OFFICER,
+    RoleType.SOS,
+)
+
+
+class ContactType(str, Enum):
     DISTRICT = "District Office"
     CAPITOL = "Capitol Office"
     PRIMARY = "Primary Office"
@@ -64,40 +78,40 @@ class Party(TimeScoped):
 
 class Role(TimeScoped):
     type: RoleType
-    district: str
     jurisdiction: str
-    end_reason: str  # note: this field not imported to db
+    district: typing.Optional[str] = None
+    end_reason: str = ""  # note: this field not imported to db
 
     _validate_strs = validator("district", "end_reason", allow_reuse=True)(validate_str_no_newline)
     _validate_jurisdiction = validator("jurisdiction", allow_reuse=True)(validate_ocd_jurisdiction)
 
     @root_validator
-    def check_executives_have_end_date(cls, values):
+    def check_conditional_required_fields(cls, values):
+        # executives require end_date, everyone else requires a district
         office_type = values.get("type")
         end_date = values.get("end_date")
-        if (
-            office_type
-            in (
-                OfficeType.GOVERNOR,
-                OfficeType.LT_GOVERNOR,
-                OfficeType.MAYOR,
-                OfficeType.CHIEF_ELECTION_OFFICER,
-                OfficeType.SOS,
-            )
-            and not end_date
-        ):
+        district = values.get("district")
+        if office_type in LEGISLATIVE_ROLES and not district:
+            raise ValueError("district is required for legislative roles")
+        if office_type in EXECUTIVE_ROLES and not end_date:
             raise ValueError("end_date is required for executive roles")
         return values
 
 
 class ContactDetail(BaseModel):
-    note: OfficeType
+    note: ContactType
     address: str = ""
     voice: str = ""
     fax: str = ""
 
     _validate_strs = validator("address", allow_reuse=True)(validate_str_no_newline)
     _validate_phones = validator("voice", "fax", allow_reuse=True)(validate_phone)
+
+    @root_validator
+    def check_have_at_least_one_value(cls, values):
+        if not any((values.get("address"), values.get("voice"), values.get("fax"))):
+            raise ValueError("must have at least one valid contact type for the office")
+        return values
 
 
 class Person(BaseModel):

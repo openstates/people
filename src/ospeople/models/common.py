@@ -53,6 +53,7 @@ class BaseModel(PydanticBaseModel):
     class Config:
         anystr_strip_whitespace = True
         extra = "forbid"
+        validate_assignment = True
 
     def to_dict(self):
         # TODO: replace this with first class pydantic support in spatula
