@@ -71,7 +71,7 @@ class TimeScoped(BaseModel):
     start_date: typing.Optional[str] = None
     end_date: typing.Optional[str] = None
 
-    validator("start_date", "end_date", allow_reuse=True)(validate_fuzzy_date)
+    _validate_dates = validator("start_date", "end_date", allow_reuse=True)(validate_fuzzy_date)
 
 
 class OtherName(TimeScoped):

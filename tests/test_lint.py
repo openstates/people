@@ -1,17 +1,7 @@
 import pytest
 import datetime
 from ospeople.cli.lint_yaml import (
-    # is_url,
-    # is_social,
-    # is_fuzzy_date,
-    # is_phone,
-    # is_legacy_openstates,
-    # no_bad_comma,
-    # validate_obj,
-    # PERSON_FIELDS,
-    # validate_roles,
     validate_name,
-    # validate_offices,
     get_expected_districts,
     compare_districts,
     Validator,
@@ -21,23 +11,10 @@ from ospeople.cli.lint_yaml import (
 )  # noqa
 
 
-# def test_is_url():
-#     assert is_url("http://example.com")
-#     assert is_url("https://example.com")
-#     assert not is_url("/fragment")
-
-
 # def test_is_social():
 #     assert is_social("example_id")
 #     assert not is_social("@no_at_sign")
 #     assert not is_social("http://no-urls.com")
-
-
-# def test_is_fuzzy_date():
-#     assert is_fuzzy_date("2010")
-#     assert is_fuzzy_date("2019-01")
-#     assert is_fuzzy_date("2020-01-01")
-#     assert not is_fuzzy_date("1/1/2011")
 
 
 # def test_is_phone():
@@ -62,35 +39,6 @@ from ospeople.cli.lint_yaml import (
 
 EXAMPLE_OCD_PERSON_ID = "ocd-person/12345678-0000-1111-2222-1234567890ab"
 EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
-
-
-# def test_validate_required():
-#     example = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Anne A"}
-
-#     # with required fields
-#     assert validate_obj(example, PERSON_FIELDS) == []
-
-#     errs = validate_obj({}, PERSON_FIELDS)
-#     assert len(errs) == 2
-#     assert "id missing" in errs
-
-
-# def test_validate_nested_required():
-#     example = {
-#         "id": EXAMPLE_OCD_PERSON_ID,
-#         "name": "Anne A",
-#         "links": [{"url": "https://example.com"}, {"note": "note only"}],
-#     }
-
-#     assert validate_obj(example, PERSON_FIELDS) == ["links.1.url missing"]
-
-
-# def test_validate_nested_list():
-#     example = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Anne A", "links": [{"url": "example.com"}]}
-
-#     errs = validate_obj(example, PERSON_FIELDS)
-#     assert len(errs) == 1
-#     assert "links.0.url" in errs[0]
 
 
 # def test_validate_nested_role_list():
@@ -125,32 +73,6 @@ EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
 #     assert len(errs) == 2
 #     assert "roles.2" in errs[0]
 #     assert "roles.3" in errs[1]
-
-
-# def test_validate_nested_object():
-#     example = {
-#         "id": EXAMPLE_OCD_PERSON_ID,
-#         "name": "Anne A",
-#         "ids": {"twitter": "@bad-name", "youtube": "is-ok"},
-#     }
-
-#     errs = validate_obj(example, PERSON_FIELDS)
-#     assert len(errs) == 1
-#     assert "ids.twitter" in errs[0]
-
-
-# def test_validate_extra_keys_not_present():
-#     example = {
-#         "id": EXAMPLE_OCD_PERSON_ID,
-#         "name": "Anne A",
-#         "junk": 100,
-#         "links": [{"url": "https://example.com", "bad": 100}],
-#     }
-
-#     errs = validate_obj(example, PERSON_FIELDS)
-#     assert len(errs) == 2
-#     assert "extra key: junk" in errs
-#     assert "extra key: links.0.bad" in errs
 
 
 # @pytest.mark.parametrize(
