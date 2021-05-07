@@ -14,9 +14,31 @@ from .common import (
     validate_ocd_jurisdiction,
     validate_str_no_newline,
 )
+from ..utils import MAJOR_PARTIES
 
 SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
+
+ALL_PARTIES = (
+    "Democratic",
+    "Green",
+    "Independent",
+    "Libertarian",
+    "Nonpartisan",
+    "Progressive",
+    "Republican",
+    "Democratic-Farmer-Labor",
+    "Democratic/Progressive",
+    "Progressive/Democratic",
+    "Republican/Democratic",
+    "Carter County Republican",
+    "Independence",
+    "Partido Independentista Puertorrique\xF1o",
+    "Partido Nuevo Progresista",
+    "Partido Popular Democr\xE1tico",
+    "Proyecto Dignidad",
+    "Movimiento Victoria Ciudadana",
+)
 
 
 def validate_phone(val: str) -> str:
@@ -138,6 +160,28 @@ class Person(BaseModel):
     other_identifiers: list[OtherIdentifier] = []
     sources: list[Link] = []
     extras: dict = {}
+
+    @validator("party")
+    def check_active_party(val: list[Party]):
+        active_parties = []
+        for party in val:
+            if party.name not in ALL_PARTIES:
+                raise ValueError(f"invalid party {party.name}")
+            if party.is_active():
+                active_parties.append(party.name)
+
+        if len(active_parties) == 0:
+            raise ValueError("no active parties")
+        elif len(active_parties) > 1:
+            if len([party for party in active_parties if party in MAJOR_PARTIES]) > 1:
+                raise ValueError(f"multiple active party memberships: {active_parties}")
+            # TODO: warn again
+            # else:
+            #     self.warnings[person.print_filename].append(
+            #         f"multiple active party memberships {active_parties}"
+            #     )
+
+        return val
 
     @validator("name")
     def no_bad_comma(val: str) -> str:

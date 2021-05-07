@@ -139,7 +139,7 @@ def test_person_commas():
     assert good_comma.name
 
 
-def test_party():
+def test_party_cls():
     party = Party(name="Democratic")
     assert party.name
     with pytest.raises(ValidationError):
@@ -195,6 +195,37 @@ def test_role_conditional_requires():
 
     with pytest.raises(ValidationError):
         assert Role(type=RoleType.GOVERNOR, start_date="2010", jurisdiction=VALID_JURISDICTION_ID)
+
+
+def test_party_on_person():
+    p = Person(
+        id=VALID_PERSON_ID,
+        name="Tony Tigre",
+        party=[Party(name="Democratic")],
+        roles=[],
+    )
+    with pytest.raises(ValidationError):
+        # no party!
+        p.party = []
+    with pytest.raises(ValidationError):
+        # no such party
+        p.party = [Party(name="Vampire")]
+
+
+def test_multiple_parties():
+    p = Person(
+        id=VALID_PERSON_ID,
+        name="Tony Tigre",
+        party=[Party(name="Democratic")],
+        roles=[],
+    )
+    with pytest.raises(ValidationError):
+        # can't have two active major parties
+        p.party = [Party(name="Democratic"), Party(name="Republican")]
+    # can be in multiple parties as long as one is non-major
+    p.party = [Party(name="Democratic"), Party(name="Green")]
+    # or if one is obsolete
+    p.party = [Party(name="Democratic", end_date="2010"), Party(name="Republican")]
 
 
 def test_committee_membership():

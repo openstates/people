@@ -21,7 +21,6 @@ from ..utils import (
     load_municipalities,
     retire_file,
     load_settings,
-    MAJOR_PARTIES,
 )
 from ..models.people import Person
 
@@ -104,8 +103,6 @@ def validate_roles_key(
             resp.warnings.extend(role_issues)
     else:
         resp.errors.extend(role_issues)
-    if person.person_type in (PersonType.LEGISLATIVE, PersonType.EXECUTIVE):
-        resp.errors.extend(validate_roles(person.data, "party"))
     return resp
 
 
@@ -234,9 +231,7 @@ def compare_districts(
 
 class Validator:
     def __init__(self, abbr: str, settings: dict, fix: bool):
-        self.http_allow = tuple(settings.get("http_allow", []))
         self.expected = get_expected_districts(settings, abbr)
-        self.valid_parties = set(settings["parties"])
         self.errors: defaultdict[str, list[str]] = defaultdict(list)
         self.warnings: defaultdict[str, list[str]] = defaultdict(list)
         self.fixes: defaultdict[str, list[str]] = defaultdict(list)
@@ -278,25 +273,6 @@ class Validator:
         self.process_validator_result(validate_roles_key, person)
         self.process_validator_result(validate_name, person)
 
-        # active party validation
-        active_parties = []
-        for party in person.data.get("party", []):
-            if party["name"] not in self.valid_parties:
-                self.errors[person.print_filename].append(f"invalid party {party['name']}")
-            if role_is_active(party):
-                active_parties.append(party["name"])
-        if len(active_parties) > 1:
-            if len([party for party in active_parties if party in MAJOR_PARTIES]) > 1:
-                self.errors[person.print_filename].append(
-                    f"multiple active major party memberships {active_parties}"
-                )
-            else:
-                self.warnings[person.print_filename].append(
-                    f"multiple active party memberships {active_parties}"
-                )
-
-        # TODO: this was too ambitious, disabling this for now
-        # self.warnings[filename] = self.check_https(person.data)
         if person.person_type == PersonType.RETIRED:
             self.errors[person.print_filename].extend(
                 self.validate_old_district_names(person.data)
@@ -333,25 +309,6 @@ class Validator:
             ):
                 errors.append(f"unknown district name: {role['type']} {role['district']}")
         return errors
-
-    def check_https_url(self, url: typing.Optional[str]) -> bool:
-        if url and url.startswith("http://") and not url.startswith(self.http_allow):
-            return False
-        return True
-
-    def check_https(self, person: dict) -> list[str]:
-        warnings = []
-        if not self.check_https_url(person.get("image")):
-            warnings.append(f'image URL {person["image"]} should be HTTPS')
-        for i, url in enumerate(person.get("links", [])):
-            url = url["url"]
-            if not self.check_https_url(url):
-                warnings.append(f"links.{i} URL {url} should be HTTPS")
-        for i, url in enumerate(person.get("sources", [])):
-            url = url["url"]
-            if not self.check_https_url(url):
-                warnings.append(f"sources.{i} URL {url} should be HTTPS")
-        return warnings
 
     def check_duplicates(self) -> list[str]:
         """

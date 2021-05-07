@@ -74,6 +74,12 @@ class TimeScoped(BaseModel):
 
     _validate_dates = validator("start_date", "end_date", allow_reuse=True)(validate_fuzzy_date)
 
+    def is_active(self):
+        date = datetime.datetime.utcnow().date().isoformat()
+        return (self.end_date is None or self.end_date > date) and (
+            self.start_date is None or self.start_date <= date
+        )
+
 
 class OtherName(TimeScoped):
     name: str

@@ -20,19 +20,6 @@ EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
 @pytest.mark.parametrize(
     "person,expected",
     [
-        ({"party": [{"name": "Democratic"}]}, []),
-        ({"party": [{"name": "Democratic"}, {"name": "Working Families"}]}, []),
-        ({"party": []}, ["no active party"]),
-        ({"party": [{"name": "Democratic", "end_date": "1990"}]}, ["no active party"]),
-    ],
-)
-def test_validate_roles_party(person, expected):
-    assert validate_roles(person, "party") == expected
-
-
-@pytest.mark.parametrize(
-    "person,expected",
-    [
         ({"name": "Phillip J Swoozle"}, []),
         (
             {"name": "Phillip Swoozle"},
@@ -186,22 +173,6 @@ def test_compare_districts_overfill():
     assert len(e) == 1
     assert "Anne" in e[0]
     assert "Bob" in e[0]
-
-
-def test_validator_check_https():
-    settings = {"http_allow": ["http://bad.example.com"], "parties": []}
-    v = Validator("ak", settings, False)
-
-    person = {
-        "links": [
-            {"url": "https://example.com"},
-            {"url": "http://insecure.example.com"},
-            {"url": "https://bad.example.com"},
-        ]
-    }
-    warnings = v.check_https(person)
-    assert len(warnings) == 1
-    assert "links.1" in warnings[0]
 
 
 def test_person_duplicates():
