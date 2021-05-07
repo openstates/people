@@ -1,5 +1,6 @@
 import re
 import typing
+import datetime
 from enum import Enum
 from pydantic import validator, root_validator
 from .common import (
@@ -146,8 +147,8 @@ class Person(BaseModel):
     gender: str = ""
     email: str = ""
     biography: str = ""
-    birth_date: str = ""
-    death_date: str = ""
+    birth_date: typing.Union[datetime.date, str] = ""
+    death_date: typing.Union[datetime.date, str] = ""
     image: str = ""
 
     party: list[Party] = []
