@@ -4,7 +4,9 @@ import typing
 from pydantic import BaseModel as PydanticBaseModel, validator
 from openstates.metadata import lookup
 
-
+JURISDICTION_RE = re.compile(
+    r"ocd-jurisdiction/country:us/(state|district|territory):\w\w/(place|county):[a-z_]+/government"
+)
 ORG_ID_RE = re.compile(
     r"^ocd-organization/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
 )
@@ -39,7 +41,8 @@ def validate_ocd_jurisdiction(v):
     try:
         lookup(jurisdiction_id=v)
     except KeyError:
-        raise ValueError(f"invalid jurisdiction_id {v}")
+        if not JURISDICTION_RE.match(v):
+            raise ValueError(f"invalid jurisdiction_id {v}")
     return v
 
 
@@ -69,15 +72,15 @@ class Link(BaseModel):
 
 
 class TimeScoped(BaseModel):
-    start_date: typing.Optional[str] = None
-    end_date: typing.Optional[str] = None
+    start_date: typing.Union[None, str, datetime.date]
+    end_date: typing.Union[None, str, datetime.date]
 
     _validate_dates = validator("start_date", "end_date", allow_reuse=True)(validate_fuzzy_date)
 
     def is_active(self):
         date = datetime.datetime.utcnow().date().isoformat()
-        return (self.end_date is None or self.end_date > date) and (
-            self.start_date is None or self.start_date <= date
+        return (self.end_date is None or str(self.end_date) > date) and (
+            self.start_date is None or str(self.start_date) <= date
         )
 
 

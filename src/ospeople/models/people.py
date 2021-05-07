@@ -109,7 +109,7 @@ class Role(TimeScoped):
 
     @root_validator
     def check_conditional_required_fields(cls, values):
-        # executives require end_date, everyone else requires a district
+        # executives require end_date, everyone else requires a district & party
         office_type = values.get("type")
         end_date = values.get("end_date")
         district = values.get("district")
@@ -150,7 +150,7 @@ class Person(BaseModel):
     death_date: str = ""
     image: str = ""
 
-    party: list[Party]
+    party: list[Party] = []
     roles: list[Role]
 
     contact_details: list[ContactDetail] = []
@@ -161,16 +161,21 @@ class Person(BaseModel):
     sources: list[Link] = []
     extras: dict = {}
 
-    @validator("party")
-    def check_active_party(val: list[Party]):
+    @root_validator
+    def check_active_party(cls, values):
+        require_party = False
+        for role in values.get("roles"):
+            if role.is_active() and role.type in LEGISLATIVE_ROLES:
+                require_party = True
+
         active_parties = []
-        for party in val:
+        for party in values.get("party"):
             if party.name not in ALL_PARTIES:
                 raise ValueError(f"invalid party {party.name}")
             if party.is_active():
                 active_parties.append(party.name)
 
-        if len(active_parties) == 0:
+        if len(active_parties) == 0 and require_party:
             raise ValueError("no active parties")
         elif len(active_parties) > 1:
             if len([party for party in active_parties if party in MAJOR_PARTIES]) > 1:
@@ -181,7 +186,7 @@ class Person(BaseModel):
             #         f"multiple active party memberships {active_parties}"
             #     )
 
-        return val
+        return values
 
     @validator("name")
     def no_bad_comma(val: str) -> str:
