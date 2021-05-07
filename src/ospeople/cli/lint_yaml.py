@@ -71,7 +71,9 @@ def validate_person_data(person_data: dict):
         Person(**person_data)
         return []
     except ValidationError as ve:
-        return ve.errors()
+        return [
+            f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}" for error in ve.errors()
+        ]
 
 
 def validate_roles(
