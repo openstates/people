@@ -8,6 +8,7 @@ from .common import (
     OtherName,
     validate_ocd_person,
     validate_ocd_jurisdiction,
+    validate_str_no_newline,
 )
 
 
@@ -33,6 +34,8 @@ class ScrapeCommittee(BaseModel):
     links: typing.List[Link] = []
     other_names: typing.List[OtherName] = []
     members: typing.List[Membership] = []
+
+    _validate_strs = validator("name", allow_reuse=True)(validate_str_no_newline)
 
     def add_member(self, name: str, role: str = "member") -> None:
         self.members.append(Membership(name=name, role=role))

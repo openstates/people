@@ -20,6 +20,15 @@ from ospeople.models.people import (
     PersonIdBlock,
     Role,
 )
+from ospeople.models.committees import (
+    Membership,
+    ScrapeCommittee,
+    Committee,
+)
+
+VALID_PERSON_ID = "ocd-person/abcdef98-0123-7777-8888-1234567890ab"
+VALID_ORG_ID = "ocd-organization/abcdef98-0123-7777-8888-1234567890ab"
+VALID_JURISDICTION_ID = "ocd-jurisdiction/country:us/state:nc/government"
 
 
 @pytest.mark.parametrize(
@@ -32,7 +41,7 @@ from ospeople.models.people import (
         (validate_fuzzy_date, "2020-1-22", False),
         (validate_fuzzy_date, "2020/1/22", False),
         (validate_fuzzy_date, "x", False),
-        (validate_ocd_person, "ocd-person/abcdef98-0123-7777-8888-1234567890ab", True),
+        (validate_ocd_person, VALID_PERSON_ID, True),
         (validate_ocd_person, "abcdef98-0123-7777-8888-1234567890ab", False),
         (validate_ocd_person, "ocd-person/abcdef980123777788881234567890ab", False),
         (validate_ocd_jurisdiction, "ocd-jurisdiction/country:us/state:nc/government", True),
@@ -164,20 +173,57 @@ def test_person_id_block():
 
 
 def test_role_basics():
-    jid = "ocd-jurisdiction/country:us/state:nc/government"
     with pytest.raises(ValidationError):
         Role(type=RoleType.UPPER, jurisdiction="us")
     with pytest.raises(ValidationError):
-        Role(type=RoleType.UPPER, jurisdiction=jid, end_reason="stuff\nhere")
+        Role(type=RoleType.UPPER, jurisdiction=VALID_JURISDICTION_ID, end_reason="stuff\nhere")
 
 
 def test_role_conditional_requires():
-    jid = "ocd-jurisdiction/country:us/state:nc/government"
-    assert Role(type=RoleType.UPPER, district=4, end_date="2010", jurisdiction=jid)
-    assert Role(type=RoleType.GOVERNOR, start_date="2010", end_date="2016", jurisdiction=jid)
+    assert Role(
+        type=RoleType.UPPER, district=4, end_date="2010", jurisdiction=VALID_JURISDICTION_ID
+    )
+    assert Role(
+        type=RoleType.GOVERNOR,
+        start_date="2010",
+        end_date="2016",
+        jurisdiction=VALID_JURISDICTION_ID,
+    )
 
     with pytest.raises(ValidationError):
-        assert Role(type=RoleType.UPPER, end_date="2010", jurisdiction=jid)
+        assert Role(type=RoleType.UPPER, end_date="2010", jurisdiction=VALID_JURISDICTION_ID)
 
     with pytest.raises(ValidationError):
-        assert Role(type=RoleType.GOVERNOR, start_date="2010", jurisdiction=jid)
+        assert Role(type=RoleType.GOVERNOR, start_date="2010", jurisdiction=VALID_JURISDICTION_ID)
+
+
+def test_committee_membership():
+    assert Membership(name="Franz Ferdinand", role="member")
+    assert Membership(name="Franz Ferdinand", role="member", person_id=VALID_PERSON_ID)
+    with pytest.raises(ValidationError):
+        Membership(name="No Role", person_id=VALID_PERSON_ID)
+    with pytest.raises(ValidationError):
+        Membership(name="Bad ID", role="chair", person_id="123")
+
+
+def test_scrapecommittee():
+    assert ScrapeCommittee(name="Health", parent="upper")
+    with pytest.raises(ValidationError):
+        ScrapeCommittee(name="Health \n Roads", parent="upper")
+
+
+def test_committee():
+    assert Committee(
+        name="Health", parent="upper", id=VALID_ORG_ID, jurisdiction=VALID_JURISDICTION_ID
+    )
+    with pytest.raises(ValidationError):
+        Committee(name="Health", parent="upper", id="123", jurisdiction=VALID_JURISDICTION_ID)
+    with pytest.raises(ValidationError):
+        Committee(name="Health", parent="upper", id=VALID_ORG_ID, jurisdiction="canada")
+
+
+def test_committee_dict_order():
+    c = Committee(
+        name="Health", parent="upper", id=VALID_ORG_ID, jurisdiction=VALID_JURISDICTION_ID
+    )
+    assert list(c.to_dict().keys())[:3] == ["id", "jurisdiction", "name"]
