@@ -2,6 +2,8 @@ import pytest
 import datetime
 from ospeople.cli.lint_yaml import (
     validate_name,
+    validate_roles,
+    validate_offices,
     get_expected_districts,
     compare_districts,
     Validator,
@@ -15,17 +17,17 @@ EXAMPLE_OCD_PERSON_ID = "ocd-person/12345678-0000-1111-2222-1234567890ab"
 EXAMPLE_OCD_ORG_ID = "ocd-organization/00001111-2222-3333-aaaa-444455556666"
 
 
-# @pytest.mark.parametrize(
-#     "person,expected",
-#     [
-#         ({"party": [{"name": "Democratic"}]}, []),
-#         ({"party": [{"name": "Democratic"}, {"name": "Working Families"}]}, []),
-#         ({"party": []}, ["no active party"]),
-#         ({"party": [{"name": "Democratic", "end_date": "1990"}]}, ["no active party"]),
-#     ],
-# )
-# def test_validate_roles_party(person, expected):
-#     assert validate_roles(person, "party") == expected
+@pytest.mark.parametrize(
+    "person,expected",
+    [
+        ({"party": [{"name": "Democratic"}]}, []),
+        ({"party": [{"name": "Democratic"}, {"name": "Working Families"}]}, []),
+        ({"party": []}, ["no active party"]),
+        ({"party": [{"name": "Democratic", "end_date": "1990"}]}, ["no active party"]),
+    ],
+)
+def test_validate_roles_party(person, expected):
+    assert validate_roles(person, "party") == expected
 
 
 @pytest.mark.parametrize(
@@ -70,54 +72,54 @@ def test_validate_name_fixes():
     assert result.errors == result.fixes == []
 
 
-# @pytest.mark.parametrize(
-#     "person,expected",
-#     [
-#         ({"roles": [{"name": "House"}]}, []),
-#         ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles"]),
-#         ({"roles": []}, ["no active roles"]),
-#         ({"roles": [{"name": "House", "end_date": "1990"}]}, ["no active roles"]),
-#     ],
-# )
-# def test_validate_roles_roles(person, expected):
-#     assert validate_roles(person, "roles") == expected
+@pytest.mark.parametrize(
+    "person,expected",
+    [
+        ({"roles": [{"name": "House"}]}, []),
+        ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles"]),
+        ({"roles": []}, ["no active roles"]),
+        ({"roles": [{"name": "House", "end_date": "1990"}]}, ["no active roles"]),
+    ],
+)
+def test_validate_roles_roles(person, expected):
+    assert validate_roles(person, "roles") == expected
 
 
-# @pytest.mark.parametrize(
-#     "person,expected",
-#     [
-#         ({"contact_details": []}, []),
-#         (
-#             {"contact_details": [{"note": "Capitol Office"}, {"note": "Capitol Office"}]},
-#             ["Multiple capitol offices, condense to one."],
-#         ),
-#         ({"contact_details": [{"note": "District Office"}, {"note": "District Office"}]}, []),
-#         (
-#             {
-#                 "contact_details": [
-#                     {"note": "District Office", "phone": "123"},
-#                     {"note": "Capitol Office", "phone": "123"},
-#                 ]
-#             },
-#             ["Value '123' used multiple times: District Office phone and Capitol Office phone"],
-#         ),
-#     ],
-# )
-# def test_validate_offices(person, expected):
-#     assert validate_offices(person) == expected
+@pytest.mark.parametrize(
+    "person,expected",
+    [
+        ({"contact_details": []}, []),
+        (
+            {"contact_details": [{"note": "Capitol Office"}, {"note": "Capitol Office"}]},
+            ["Multiple capitol offices, condense to one."],
+        ),
+        ({"contact_details": [{"note": "District Office"}, {"note": "District Office"}]}, []),
+        (
+            {
+                "contact_details": [
+                    {"note": "District Office", "phone": "123"},
+                    {"note": "Capitol Office", "phone": "123"},
+                ]
+            },
+            ["Value '123' used multiple times: District Office phone and Capitol Office phone"],
+        ),
+    ],
+)
+def test_validate_offices(person, expected):
+    assert validate_offices(person) == expected
 
 
-# @pytest.mark.parametrize(
-#     "person,expected",
-#     [
-#         ({"roles": [{"name": "House"}]}, ["1 active roles on retired person"]),
-#         ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles on retired person"]),
-#         ({"roles": []}, []),
-#         ({"roles": [{"name": "House", "end_date": "1990"}]}, []),
-#     ],
-# )
-# def test_validate_roles_retired(person, expected):
-#     assert validate_roles(person, "roles", retired=True) == expected
+@pytest.mark.parametrize(
+    "person,expected",
+    [
+        ({"roles": [{"name": "House"}]}, ["1 active roles on retired person"]),
+        ({"roles": [{"name": "House"}, {"name": "Senate"}]}, ["2 active roles on retired person"]),
+        ({"roles": []}, []),
+        ({"roles": [{"name": "House", "end_date": "1990"}]}, []),
+    ],
+)
+def test_validate_roles_retired(person, expected):
+    assert validate_roles(person, "roles", retired=True) == expected
 
 
 def test_get_expected_districts():
