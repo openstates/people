@@ -28,6 +28,8 @@ All data within the data directory is organized by state.  Within a given state 
 
 A lot of inspiration was taken from the [congress-legislators](https://github.com/unitedstates/congress-legislators) project that has been maintaining this data for the United States Congress.
 
+New as of 2021: the data/us directory is also directly ported from the congress-legislators repo, reproduced here in our schema for ease of use for people using both data sets.
+
 Historically Open States has scraped this data, but given the relatively infrequent changes and the manual labor required to retire & merge legislators- we have decided to move in this direction in the hopes of improving the data and making it more accessible for contributors.
 
 Also, please note that this portion of the project is in the public domain in the United States with all copyright waived via a [CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication.  By contributing you agree to waive all copyright claims.
