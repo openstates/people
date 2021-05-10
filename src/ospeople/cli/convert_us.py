@@ -147,6 +147,7 @@ def main() -> None:
         person.contact_details.extend(district_offices[bioguide])
         person.ids = social[bioguide]
         person.sources.append(Link(url="https://theunitedstates.io/"))
+        person.image = f"https://theunitedstates.io/images/congress/450x550/{bioguide}.jpg"
         dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
