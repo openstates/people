@@ -146,6 +146,7 @@ def main() -> None:
     for bioguide, person in fetch_current():
         person.contact_details.extend(district_offices[bioguide])
         person.ids = social[bioguide]
+        person.sources.append(Link(url="https://theunitedstates.io/"))
         dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
