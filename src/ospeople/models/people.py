@@ -43,7 +43,7 @@ ALL_PARTIES = (
 
 
 def validate_phone(val: str) -> str:
-    if not PHONE_RE.match(val):
+    if val and not PHONE_RE.match(val):
         raise ValueError("invalid phone number")
     return val
 
