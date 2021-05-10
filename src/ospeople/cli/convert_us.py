@@ -1,6 +1,14 @@
+import uuid
 from collections import defaultdict
+from pathlib import Path
+import us
 import requests
+import click
 from ..models.people import Person, OtherIdentifier, Role, Party, ContactDetail, Link
+from ..utils import dump_obj, get_data_dir
+
+# chosen at random, but needs to be constant
+US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")
 
 
 def fetch_current():
@@ -14,8 +22,9 @@ def current_to_person(current):
     full_name = current["name"].get(
         "official_full", f"{current['name']['first']} {current['name']['last']}"
     )
+    bioguide = current["id"]["bioguide"]
     p = Person(
-        id="ocd-person/00001111-2222-3333-4444-555566667777",
+        id="ocd-person/" + str(uuid.uuid5(US_UUID_NAMESPACE, bioguide)),
         name=full_name,
         given_name=current["name"]["first"],
         family_name=current["name"]["last"],
@@ -40,11 +49,14 @@ def current_to_person(current):
             parties[term["party"]]["end"] = term["end"]
         if term["type"] == "sen":
             role_type = "upper"
-            district = term["state"]
+            district = us.states.lookup(term["state"]).name
             # division_id = f"ocd-division/country:us/state:{term['state']}"
         elif term["type"] == "rep":
             role_type = "lower"
-            district = "{term['state']}-{term['district']}"
+            if term["district"] == 0:
+                district = f"{term['state']}-AL"
+            else:
+                district = f"{term['state']}-{term['district']}"
             # division_id = f"ocd-division/country:us/state:{term['state']}/cd:{term['district']}"
         role = Role(
             type=role_type,
@@ -57,7 +69,9 @@ def current_to_person(current):
 
     # add party memberships
     for name, times in parties.items():
-        p.roles.append(Party(name=name, start_date=times["start"], end_date=times["end"]))
+        if name == "Democrat":
+            name = "Democratic"
+        p.party.append(Party(name=name, start_date=times["start"], end_date=times["end"]))
 
     # add contact info from latest term
     cur_term = current["terms"][-1]
@@ -77,5 +91,15 @@ def current_to_person(current):
     return p
 
 
-for x in fetch_current():
-    print(x)
+@click.command()
+def main() -> None:
+    """
+    Create/Update United States legislators from unitedstates.io
+    """
+    output_dir = Path(get_data_dir("us")) / "legislature"
+    for person in fetch_current():
+        dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
+
+
+if __name__ == "__main__":
+    main()
