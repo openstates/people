@@ -94,7 +94,13 @@ def dump_obj(
     if not filename:
         raise ValueError("must provide output_dir or filename parameter")
     with open(filename, "w") as f:
-        yaml.dump(obj, f, default_flow_style=False, Dumper=yamlordereddictloader.SafeDumper)
+        yaml.dump(
+            obj,
+            f,
+            default_flow_style=False,
+            Dumper=yamlordereddictloader.SafeDumper,
+            sort_keys=False,
+        )
 
 
 def get_new_filename(obj: dict) -> str:

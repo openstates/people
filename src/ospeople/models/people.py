@@ -165,7 +165,7 @@ class Person(BaseModel):
     @root_validator
     def check_active_party(cls, values):
         require_party = False
-        for role in values.get("roles"):
+        for role in values.get("roles", []):
             if role.is_active() and role.type in LEGISLATIVE_ROLES:
                 require_party = True
 

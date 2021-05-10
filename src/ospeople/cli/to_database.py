@@ -3,6 +3,7 @@ import os
 import sys
 import glob
 import typing
+import datetime
 from functools import lru_cache
 from django.db import transaction  # type: ignore
 import click
@@ -87,6 +88,9 @@ def get_update_or_create(
     try:
         obj = ModelCls.objects.get(**kwargs)
         for field, value in data.items():
+            # special case datetime since comparisons won't work between str/datetime
+            if isinstance(value, datetime.date):
+                value = str(value)
             if getattr(obj, field) != value:
                 setattr(obj, field, value)
                 updated = True
