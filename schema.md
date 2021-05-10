@@ -17,8 +17,6 @@
     * youtube: username of official YouTube account
     * instagram: username of official Instagram account
     * facebook: username of official Facebook account
-    * legacy_openstates: legacy Open States ID (e.g. NCL000123)
-    * openstates: alternate Open States ID (results from duplicates that have been merged)
 * party: list of parties that the legislator has been a part of, each may have the following fields:
     * name: Name of the party.    **required**
     * start_date
@@ -30,7 +28,6 @@
     * start_date  **required if not upper|lower|legislature**
     * end_date    **required if not upper|lower|legislature**
     * end_reason: reason this role ended, such as resignation/death
-    * contact_details: role-specific contact details (see below for schema)
 * extras - unvalidated JSON to store additional details in
 * contact_details (see below)
 * links (see below)
@@ -66,7 +63,7 @@
 
 These sections can have a list of objects, each with the following fields available.
 
-* contact_details: 
+* contact_details:
     * note: "District Office" or "Capitol Office"  **required**
     * address: Mailing address.
     * voice: Phone number used for voice calls.
