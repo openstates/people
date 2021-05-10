@@ -4,7 +4,15 @@ from pathlib import Path
 import us
 import requests
 import click
-from ..models.people import Person, OtherIdentifier, Role, Party, ContactDetail, Link
+from ..models.people import (
+    Person,
+    OtherIdentifier,
+    Role,
+    Party,
+    ContactDetail,
+    Link,
+    PersonIdBlock,
+)
 from ..utils import dump_obj, get_data_dir
 
 # chosen at random, but needs to be constant
@@ -32,6 +40,19 @@ def get_district_offices():
                 )
             )
     return district_offices
+
+
+def get_social():
+    social = defaultdict(list)
+    url = "https://theunitedstates.io/congress-legislators/legislators-social-media.json"
+    entries = requests.get(url).json()
+    for entry in entries:
+        social[entry["id"]["bioguide"]] = PersonIdBlock(
+            twitter=entry["social"].get("twitter", ""),
+            facebook=entry["social"].get("facebook", ""),
+            youtube=entry["social"].get("youtube_id", ""),
+        )
+    return social
 
 
 def fetch_current():
@@ -121,8 +142,10 @@ def main() -> None:
     """
     output_dir = Path(get_data_dir("us")) / "legislature"
     district_offices = get_district_offices()
+    social = get_social()
     for bioguide, person in fetch_current():
         person.contact_details.extend(district_offices[bioguide])
+        person.ids = social[bioguide]
         dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
