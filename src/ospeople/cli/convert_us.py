@@ -11,6 +11,29 @@ from ..utils import dump_obj, get_data_dir
 US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")
 
 
+def get_district_offices():
+    district_offices = defaultdict(list)
+    url = "https://theunitedstates.io/congress-legislators/legislators-district-offices.json"
+    entries = requests.get(url).json()
+    for entry in entries:
+        for office in entry["offices"]:
+            address = office.get("address", "")
+            if address:
+                if office.get("suite"):
+                    address += " " + office["suite"]
+                address += f"; {office['city']}, {office['state']} {office['zip']}"
+
+            district_offices[entry["id"]["bioguide"]].append(
+                ContactDetail(
+                    note="District Office",
+                    voice=office.get("phone", ""),
+                    fax=office.get("fax", ""),
+                    address=address,
+                )
+            )
+    return district_offices
+
+
 def fetch_current():
     url = "https://theunitedstates.io/congress-legislators/legislators-current.json"
     legislators = requests.get(url).json()
@@ -88,7 +111,7 @@ def current_to_person(current):
         )
     )
 
-    return p
+    return bioguide, p
 
 
 @click.command()
@@ -97,7 +120,9 @@ def main() -> None:
     Create/Update United States legislators from unitedstates.io
     """
     output_dir = Path(get_data_dir("us")) / "legislature"
-    for person in fetch_current():
+    district_offices = get_district_offices()
+    for bioguide, person in fetch_current():
+        person.contact_details.extend(district_offices[bioguide])
         dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
