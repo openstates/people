@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ospeople"
-version = "1.3"
+version = "2.0"
 description = ""
 authors = ["James Turk <james@openstates.org>"]
 
@@ -17,6 +17,7 @@ os-sync-images = 'ospeople.cli.sync_images:main'
 os-to-csv = 'ospeople.cli.to_csv:main'
 os-to-database = 'ospeople.cli.to_database:main'
 os-to-yaml = 'ospeople.cli.to_yaml:main'
+os-us-to-yaml = 'ospeople.cli.convert_us:main'
 
 [tool.poetry.dependencies]
 python = "^3.9"
