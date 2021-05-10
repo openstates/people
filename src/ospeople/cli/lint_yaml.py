@@ -271,7 +271,9 @@ class Validator:
             validate_jurisdictions(person.data, self.municipalities)
         )
 
-        self.errors[person.print_filename].extend(validate_offices(person.data))
+        # looser validation for upstream-maintained unitedstates.io data
+        if "/us/legislature" not in person.filename:
+            self.errors[person.print_filename].extend(validate_offices(person.data))
         self.process_validator_result(validate_roles_key, person)
         self.process_validator_result(validate_name, person)
 
