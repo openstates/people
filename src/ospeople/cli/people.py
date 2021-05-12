@@ -1,8 +1,7 @@
-#!/usr/bin/env python
 import os
 import click
-from collections import OrderedDict
 from openstates.utils import abbr_to_jid
+from ..models.people import Person, Role, Party, Link
 from ..utils import ocd_uuid, get_data_dir, dump_obj
 
 
@@ -19,43 +18,40 @@ def create_person(
     email: str,
     start_date: str,
 ) -> None:
-    role = {
-        "type": rtype,
-        "district": district,
-        "jurisdiction": abbr_to_jid(state),
-        "start_date": start_date,
-    }
+    role = Role(
+        type=rtype, district=district, jurisdiction=abbr_to_jid(state), start_date=start_date
+    )
+
     if rtype in ("upper", "lower", "legislature"):
         directory = "legislature"
     elif rtype in ("mayor",):
         directory = "municipalities"
-        role.pop("district")
     elif rtype in ("governor", "lt_governor"):
         directory = "executive"
-        role.pop("district")
-    else:
-        raise ValueError(f"unknown role type {rtype}")
 
-    person = OrderedDict(
-        {
-            "id": ocd_uuid("person"),
-            "name": name or f"{fname} {lname}",
-            "given_name": fname,
-            "family_name": lname,
-            "image": image,
-            "email": email,
-            "party": [{"name": party}],
-            "roles": [role],
-            "links": [{"url": url}],
-            "sources": [{"url": url}],
-        }
+    person = Person(
+        id=ocd_uuid("person"),
+        name=name or f"{fname} {lname}",
+        given_name=fname,
+        family_name=lname,
+        image=image,
+        email=email,
+        party=[Party(name=party)],
+        roles=[role],
+        links=[Link(url=url)],
+        sources=[Link(url=url)],
     )
 
     output_dir = get_data_dir(state)
-    dump_obj(person, output_dir=os.path.join(output_dir, directory))
+    dump_obj(person.dict(exclude_defaults=True), output_dir=os.path.join(output_dir, directory))
 
 
-@click.command()
+@click.group()
+def main() -> None:
+    pass
+
+
+@main.command()
 @click.option("--fname", prompt="First Name", help="First Name")
 @click.option("--lname", prompt="Last Name", help="Last Name")
 @click.option("--name", help="Optional Name, if not provided First + Last will be used")
@@ -67,7 +63,7 @@ def create_person(
 @click.option("--image", prompt="Image URL", help="Image URL")
 @click.option("--email", prompt="Email", help="Email")
 @click.option("--start-date", prompt="Start Date", help="Start Date YYYY-MM-DD")
-def main(
+def new(
     fname: str,
     lname: str,
     name: str,
