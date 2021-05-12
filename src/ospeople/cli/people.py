@@ -1,7 +1,6 @@
-import os
-import glob
-import click
+from pathlib import Path
 from collections import Counter, defaultdict
+import click
 from openstates.utils import abbr_to_jid
 from ..models.people import Person, Role, Party, Link
 from ..utils import ocd_uuid, get_data_dir, dump_obj, get_all_abbreviations, load_yaml
@@ -104,7 +103,8 @@ class Summarizer:
                     click.secho(f"   {person.name}")
 
     def process_legislature(self, abbr: str) -> None:  # pragma: no cover
-        filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
+        path = Path(get_data_dir(abbr)) / "legislature"
+        filenames = path.glob("*.yml")
 
         for filename in filenames:
             with open(filename) as f:
@@ -149,8 +149,8 @@ def create_person(
         sources=[Link(url=url)],
     )
 
-    output_dir = get_data_dir(state)
-    dump_obj(person.dict(exclude_defaults=True), output_dir=os.path.join(output_dir, directory))
+    output_dir = Path(get_data_dir(state)) / directory
+    dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
 @click.group()
