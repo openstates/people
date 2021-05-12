@@ -4,11 +4,11 @@ import json
 import os
 import click
 from collections import defaultdict, OrderedDict
+from openstates.utils import abbr_to_jid
 from ..utils import (
     reformat_phone_number,
     reformat_address,
     get_data_dir,
-    get_jurisdiction_id,
     dump_obj,
     ocd_uuid,
 )
@@ -140,7 +140,7 @@ def main(input_dir: str) -> None:
             break
 
     output_dir = get_data_dir(abbr)
-    jurisdiction_id = get_jurisdiction_id(abbr)
+    jurisdiction_id = abbr_to_jid(abbr)
 
     output_dir = output_dir.replace("data", "incoming")
     assert "incoming" in output_dir

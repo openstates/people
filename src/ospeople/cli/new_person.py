@@ -2,7 +2,8 @@
 import os
 import click
 from collections import OrderedDict
-from ..utils import ocd_uuid, get_jurisdiction_id, get_data_dir, dump_obj
+from openstates.utils import abbr_to_jid
+from ..utils import ocd_uuid, get_data_dir, dump_obj
 
 
 def create_person(
@@ -21,7 +22,7 @@ def create_person(
     role = {
         "type": rtype,
         "district": district,
-        "jurisdiction": get_jurisdiction_id(state),
+        "jurisdiction": abbr_to_jid(state),
         "start_date": start_date,
     }
     if rtype in ("upper", "lower", "legislature"):

@@ -1,7 +1,8 @@
 import re
 import uuid
 from collections import OrderedDict
-from ...utils import get_jurisdiction_id, reformat_phone_number, dump_obj
+from openstates.utils import abbr_to_jid
+from ...utils import reformat_phone_number, dump_obj
 from spatula import Workflow
 
 
@@ -82,7 +83,7 @@ class Person:
                     {
                         "district": self.district,
                         "type": self.chamber,
-                        "jurisdiction": get_jurisdiction_id(self.state),
+                        "jurisdiction": abbr_to_jid(self.state),
                     }
                 ],
                 "links": self.links,

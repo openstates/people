@@ -4,9 +4,9 @@ import csv
 import glob
 import boto3  # type: ignore
 import click
+from openstates.utils import abbr_to_jid
 from ..utils import (
     get_data_dir,
-    get_jurisdiction_id,
     get_all_abbreviations,
     load_yaml,
     role_is_active,
@@ -129,7 +129,7 @@ def main(abbreviations: list[str], upload: bool) -> None:
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
         directory = get_data_dir(abbr)
-        jurisdiction_id = get_jurisdiction_id(abbr)
+        jurisdiction_id = abbr_to_jid(abbr)
         person_files = sorted(glob.glob(os.path.join(directory, "legislature/*.yml")))
         fname = f"{abbr}.csv"
         write_csv(person_files, jurisdiction_id, fname)

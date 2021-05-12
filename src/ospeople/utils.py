@@ -71,10 +71,6 @@ def get_all_abbreviations() -> list[str]:
     return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../../data")))
 
 
-def get_jurisdiction_id(abbr: str) -> str:
-    return metadata.lookup(abbr=abbr).jurisdiction_id
-
-
 def load_yaml(file_obj: typing.TextIO) -> dict:
     return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
 
