@@ -1,9 +1,12 @@
+import typing
+import datetime
 from pathlib import Path
 from collections import Counter, defaultdict
 import click
 from openstates.utils import abbr_to_jid
 from ..models.people import Person, Role, Party, Link
-from ..utils import ocd_uuid, get_data_dir, dump_obj, get_all_abbreviations, load_yaml
+from ..utils import ocd_uuid, get_data_dir, dump_obj, get_all_abbreviations, load_yaml, retire_file
+from ..retire import retire_person, add_vacancy
 
 
 OPTIONAL_FIELD_SET = {
@@ -223,6 +226,50 @@ def summarize(abbreviations: list[str], roster: bool) -> None:
     summarizer.print_summary()
     if roster:
         summarizer.print_roster()
+
+
+@main.command()
+@click.argument("filenames", nargs=-1)
+@click.option("--date")
+@click.option("--reason", default=None)
+@click.option("--death", is_flag=True)
+@click.option("--vacant", is_flag=True)
+def retire(
+    date: str,
+    filenames: list[str],
+    reason: typing.Optional[str],
+    death: bool,
+    vacant: bool,
+) -> None:
+    """
+    Retire a legislator, given END_DATE and FILENAME.
+
+    Will set end_date on active roles.
+    """
+    for filename in filenames:
+        # end the person's active roles & re-save
+        with open(filename) as f:
+            print(filename)
+            person = Person(**load_yaml(f))
+        if death:
+            reason = "Deceased"
+        person, num = retire_person(person, date, reason, death)
+
+        if vacant:
+            # default to 60 days for now
+            add_vacancy(person, until=datetime.datetime.today() + datetime.timedelta(days=60))
+
+        dump_obj(person.dict(exclude_defaults=True), filename=filename)
+
+        if num == 0:
+            click.secho("no active roles to retire", fg="red")
+        elif num == 1:
+            click.secho("retired person")
+        else:
+            click.secho(f"retired person from {num} roles")
+
+        new_filename = retire_file(filename)
+        click.secho(f"moved from {filename} to {new_filename}")
 
 
 if __name__ == "__main__":
