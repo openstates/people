@@ -15,26 +15,23 @@ from openstates import metadata
 yaml.add_representer(defaultdict, Representer.represent_dict)
 yamlordereddictloader.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
 
-# can only have one of these at a time
-MAJOR_PARTIES = ("Democratic", "Republican", "Independent")
-
 
 def ocd_uuid(type: str) -> str:
     return "ocd-{}/{}".format(type, uuid.uuid4())
 
 
 def get_data_dir(abbr: str) -> str:
-    return os.path.join(os.path.dirname(__file__), "../../data", abbr)
+    return os.path.join(os.path.dirname(__file__), "../../../data", abbr)
 
 
 def load_settings() -> dict:
-    settings_file = os.path.join(os.path.dirname(__file__), "../../settings.yml")
+    settings_file = os.path.join(os.path.dirname(__file__), "../../../settings.yml")
     with open(settings_file) as f:
         return load_yaml(f)
 
 
 def get_all_abbreviations() -> list[str]:
-    return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../../data")))
+    return sorted(os.listdir(os.path.join(os.path.dirname(__file__), "../../../data")))
 
 
 def load_yaml(file_obj: typing.TextIO) -> dict:

@@ -5,8 +5,15 @@ from collections import Counter, defaultdict
 import click
 from openstates.utils import abbr_to_jid
 from ..models.people import Person, Role, Party, Link
-from ..utils import ocd_uuid, get_data_dir, dump_obj, get_all_abbreviations, load_yaml, retire_file
-from ..retire import retire_person, add_vacancy
+from ..utils import (
+    ocd_uuid,
+    get_data_dir,
+    dump_obj,
+    get_all_abbreviations,
+    load_yaml,
+    download_state_images,
+)
+from ..utils.retire import retire_person, add_vacancy, retire_file
 
 
 OPTIONAL_FIELD_SET = {
@@ -270,6 +277,25 @@ def retire(
 
         new_filename = retire_file(filename)
         click.secho(f"moved from {filename} to {new_filename}")
+
+
+@main.command()
+@click.argument("abbreviations", nargs=-1)
+@click.option(
+    "--skip-existing/--no-skip-existing",
+    help="Skip processing for files that already exist on S3. (default: true)",
+)
+def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
+    """
+    Download images and sync them to S3.
+
+    <ABBR> can be provided to restrict to single state.
+    """
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        download_state_images(abbr, skip_existing)
 
 
 if __name__ == "__main__":

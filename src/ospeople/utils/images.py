@@ -8,7 +8,7 @@ import typing
 from PIL import Image  # type: ignore
 from botocore.exceptions import ClientError  # type: ignore
 import requests
-from ..utils import get_all_abbreviations, iter_objects
+from ..utils import iter_objects
 
 
 ALLOWED_CONTENT_TYPES = ("image/jpeg", "image/png", "image/gif", "image/jpg")
@@ -117,26 +117,3 @@ def download_state_images(abbr: str, skip_existing: bool) -> None:
 #                            Attributes=["DEFAULT"])
 # algorithm suggested here seems like a good starting point
 # https://stackoverflow.com/questions/4813608/cropping-an-image-with-a-focus-area-face-using-imagemagick
-
-
-@click.command()
-@click.argument("abbreviations", nargs=-1)
-@click.option(
-    "--skip-existing/--no-skip-existing",
-    help="Skip processing for files that already exist on S3. (default: true)",
-)
-def main(abbreviations: list[str], skip_existing: bool) -> None:
-    """
-    Download images and sync them to S3.
-
-    <ABBR> can be provided to restrict to single state.
-    """
-    if not abbreviations:
-        abbreviations = get_all_abbreviations()
-
-    for abbr in abbreviations:
-        download_state_images(abbr, skip_existing)
-
-
-if __name__ == "__main__":
-    main()

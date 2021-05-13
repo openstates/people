@@ -17,8 +17,8 @@ from ..utils import (
     legacy_districts,
     role_is_active,
     load_municipalities,
-    MAJOR_PARTIES,
 )
+from ..models.people import MAJOR_PARTIES
 
 
 # TODO: define TypedDict for the models?
