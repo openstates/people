@@ -1,17 +1,50 @@
 #!/usr/bin/env python
 import glob
+import re
 import json
 import os
 import click
 from collections import defaultdict, OrderedDict
 from openstates.utils import abbr_to_jid
 from ..utils import (
-    reformat_phone_number,
-    reformat_address,
     get_data_dir,
     dump_obj,
     ocd_uuid,
 )
+
+
+PHONE_RE = re.compile(
+    r"""^
+                      \D*(1?)\D*                                # prefix
+                      (\d{3})\D*(\d{3})\D*(\d{4}).*?             # main 10 digits
+                      (?:(?:ext|Ext|EXT)\.?\s*\s*(\d{1,4}))?    # extension
+                      $""",
+    re.VERBOSE,
+)
+
+
+def reformat_phone_number(phone: str) -> str:
+    match = PHONE_RE.match(phone)
+    if match:
+        groups = match.groups()
+
+        ext = groups[-1]
+        if ext:
+            ext = f" ext. {ext}"
+        else:
+            ext = ""
+
+        if not groups[0]:
+            groups = groups[1:-1]
+        else:
+            groups = groups[:-1]
+        return "-".join(groups) + ext
+    else:
+        return phone
+
+
+def reformat_address(address: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"\s*\n\s*", ";", address))
 
 
 def process_link(link: dict[str, str]) -> dict[str, str]:

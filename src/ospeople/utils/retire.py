@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import typing
+import os
 from datetime import datetime
 from openstates import metadata
 from ..utils import load_yaml, dump_obj
@@ -41,3 +42,11 @@ def retire_person(
     person.contact_details = []
 
     return person, num
+
+
+def retire_file(filename: str) -> str:  # pragma: no cover
+    new_filename = filename.replace("/legislature/", "/retired/").replace(
+        "/municipalities/", "/retired/"
+    )
+    os.renames(filename, new_filename)
+    return new_filename
