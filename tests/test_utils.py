@@ -1,5 +1,6 @@
 import pytest
-from ospeople.utils import reformat_phone_number, reformat_address, role_is_active, find_file
+from ospeople.cli.to_yaml import reformat_phone_number, reformat_address
+from ospeople.utils import role_is_active, find_file
 
 
 @pytest.mark.parametrize(

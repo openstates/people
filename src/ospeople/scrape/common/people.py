@@ -2,7 +2,7 @@ import re
 import uuid
 from collections import OrderedDict
 from openstates.utils import abbr_to_jid
-from ...utils import reformat_phone_number, dump_obj
+from ...utils import dump_obj
 from spatula import Workflow
 
 
@@ -32,8 +32,8 @@ class ContactDetail:
         for key in ("voice", "fax", "address"):
             val = getattr(self, key)
             if val:
-                if key in ("voice", "fax"):
-                    val = reformat_phone_number(val)
+                # if key in ("voice", "fax"):
+                #     val = reformat_phone_number(val)
                 d[key] = val
         if d:
             d["note"] = self.note

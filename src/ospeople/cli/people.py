@@ -67,11 +67,12 @@ class Summarizer:
                 if getattr(cd, key, None):
                     self.contact_counts[cd.note + " " + key] += 1
 
-        for id_ in person.ids or []:
-            self.id_counts[id_.scheme] += 1
+        for scheme, id_ in person.ids or []:
+            if id_:
+                self.id_counts[scheme] += 1
         for id_ in person.other_identifiers:
             if id_.scheme not in ("openstates", "legacy_openstates"):
-                self.id_counts[id._scheme] += 1
+                self.id_counts[id_.scheme] += 1
 
     def print_summary(self) -> None:  # pragma: no cover
         click.secho(
