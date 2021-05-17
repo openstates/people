@@ -1,11 +1,11 @@
 import re
 import os
-import glob
 import uuid
 import datetime
 import typing
 import yaml
 import yamlordereddictloader  # type: ignore
+from pathlib import Path
 from enum import Enum
 from collections import defaultdict
 from yaml.representer import Representer
@@ -39,7 +39,7 @@ def load_yaml(file_obj: typing.TextIO) -> dict:
 
 
 def iter_objects(abbr: str, objtype: str) -> typing.Iterator[tuple[dict, str]]:
-    filenames = glob.glob(os.path.join(get_data_dir(abbr), objtype, "*.yml"))
+    filenames = (Path(get_data_dir(abbr)) / objtype).glob("*.yml")
     for filename in filenames:
         with open(filename) as f:
             yield load_yaml(f), filename
@@ -82,7 +82,14 @@ def find_file(leg_id: str, *, state: str = "*") -> str:
     if leg_id.startswith("ocd-person"):
         leg_id = leg_id.split("/")[1]
     assert len(leg_id) == 36
-    files = glob.glob(os.path.join(get_data_dir(state), "*", f"*{leg_id}.yml"))
+
+    if state == "*":
+        filedir = Path(get_data_dir("."))
+        files = list(filedir.glob(f"*/*/*{leg_id}.yml"))
+    else:
+        filedir = Path(get_data_dir(state))
+        files = list(filedir.glob(f"*/*{leg_id}.yml"))
+
     if len(files) == 1:
         return files[0]
     elif len(files) > 1:

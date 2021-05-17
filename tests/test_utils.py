@@ -48,10 +48,15 @@ def test_role_is_active(role, expected):
 
 
 def test_find_file_good():
+    filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f", state="pa")
+    assert "Pam-Snyder" in str(filename)
     filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f")
-    assert "Pam-Snyder" in filename
+    assert "Pam-Snyder" in str(filename)
 
 
 def test_find_file_missing():
     with pytest.raises(FileNotFoundError):
         find_file("77777777-ffff-0000-9000-bbbbbbbbbbbb")
+    # good file, bad directory
+    with pytest.raises(FileNotFoundError):
+        find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f", state="nc")
