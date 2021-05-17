@@ -7,9 +7,7 @@ authors = ["James Turk <james@openstates.org>"]
 [tool.poetry.scripts]
 os-people = 'ospeople.cli.people:main'
 os-committees = 'ospeople.cli.committees:main'
-os-manual-data = 'ospeople.cli.manual_data:main'
 os-merge = 'ospeople.cli.merge:main'
-os-social-csv-import = 'ospeople.cli.social_csv_import:main'
 os-to-database = 'ospeople.cli.to_database:main'
 os-to-yaml = 'ospeople.cli.to_yaml:main'
 os-us-to-yaml = 'ospeople.cli.convert_us:main'
