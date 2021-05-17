@@ -13,8 +13,9 @@ import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
 from openstates.metadata import lookup
-from ..utils import get_data_dir, load_yaml, role_is_active, get_all_abbreviations
+from ..utils import get_data_dir, get_all_abbreviations
 from ..models.committees import Committee, ScrapeCommittee
+from ..models.people import Person
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
@@ -45,12 +46,11 @@ class PersonMatcher:
 
         # read in people with current roles
         for filename in directory.glob("*.yml"):
-            with open(filename) as file:
-                person = load_yaml(file)
+            person = Person.load_yaml(filename)
             chamber = ""
-            for role in person["roles"]:
-                if role_is_active(role):
-                    chamber = typing.cast(str, role["type"])
+            for role in person.roles:
+                if role.is_active():
+                    chamber = role.type
                     break
             self.add_name(chamber, person["name"], person["id"])
             if person.get("family_name"):
@@ -143,15 +143,13 @@ class CommitteeDir:
         self.directory.mkdir(parents=True, exist_ok=True)
 
         for filename in self.directory.glob("*.yml"):
-            with open(filename) as file:
-                data = load_yaml(file)
-                try:
-                    com = Committee(**data)
-                    self.coms_by_chamber_and_name[com.parent][com.name] = com
-                except ValidationError as ve:
-                    if raise_errors:
-                        raise
-                    self.errors.append((filename, ve))
+            try:
+                com = Committee.load_yaml(filename)
+                self.coms_by_chamber_and_name[com.parent][com.name] = com
+            except ValidationError as ve:
+                if raise_errors:
+                    raise
+                self.errors.append((filename, ve))
 
     def get_new_filename(self, obj: Committee) -> str:
         id = obj.id.split("/")[1]

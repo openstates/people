@@ -6,6 +6,7 @@ from pathlib import Path
 from collections import Counter, defaultdict
 import click
 import boto3
+import yaml
 from openstates.utils import abbr_to_jid
 from ..models.people import Person, Role, Party, Link
 from ..utils import (
@@ -13,7 +14,6 @@ from ..utils import (
     get_data_dir,
     dump_obj,
     get_all_abbreviations,
-    load_yaml,
     download_state_images,
     load_settings,
 )
@@ -123,9 +123,8 @@ class Summarizer:
         filenames = path.glob("*.yml")
 
         for filename in filenames:
-            with open(filename) as f:
-                person = Person(**load_yaml(f))
-                self.summarize(person)
+            person = Person.load_yaml(filename)
+            self.summarize(person)
 
 
 def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> None:
@@ -163,67 +162,66 @@ def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> N
         out.writeheader()
 
         for filename in files:
-            with open(filename) as f:
-                person = Person(**load_yaml(f))
+            person = Person.load_yaml(filename)
 
-                # current party
-                for role in person.party:
-                    if role.is_active():
-                        current_party = role.name
-                        break
+            # current party
+            for role in person.party:
+                if role.is_active():
+                    current_party = role.name
+                    break
 
-                # current district
-                for role in person.roles:
-                    if role.is_active():
-                        current_chamber = role.type
-                        current_district = role.district
+            # current district
+            for role in person.roles:
+                if role.is_active():
+                    current_chamber = role.type
+                    current_district = role.district
 
-                district_address = district_voice = district_fax = None
-                capitol_address = capitol_voice = capitol_fax = None
-                for cd in person.contact_details:
-                    note = cd.note.lower()
-                    if "district" in note:
-                        district_address = cd.address
-                        district_voice = cd.voice
-                        district_fax = cd.fax
-                    elif "capitol" in note:
-                        capitol_address = cd.address
-                        capitol_voice = cd.voice
-                        capitol_fax = cd.fax
-                    else:
-                        click.secho("unknown office: " + note, fg="red")
+            district_address = district_voice = district_fax = None
+            capitol_address = capitol_voice = capitol_fax = None
+            for cd in person.contact_details:
+                note = cd.note.lower()
+                if "district" in note:
+                    district_address = cd.address
+                    district_voice = cd.voice
+                    district_fax = cd.fax
+                elif "capitol" in note:
+                    capitol_address = cd.address
+                    capitol_voice = cd.voice
+                    capitol_fax = cd.fax
+                else:
+                    click.secho("unknown office: " + note, fg="red")
 
-                links = ";".join(k.url for k in person.links)
-                sources = ";".join(k.url for k in person.sources)
+            links = ";".join(k.url for k in person.links)
+            sources = ";".join(k.url for k in person.sources)
 
-                obj = {
-                    "id": person.id,
-                    "name": person.name,
-                    "current_party": current_party,
-                    "current_district": current_district,
-                    "current_chamber": current_chamber,
-                    "given_name": person.given_name,
-                    "family_name": person.family_name,
-                    "gender": person.gender,
-                    "email": person.email,
-                    "biography": person.biography,
-                    "birth_date": person.birth_date,
-                    "death_date": person.death_date,
-                    "image": person.image,
-                    "twitter": person.ids.twitter if person.ids else "",
-                    "youtube": person.ids.youtube if person.ids else "",
-                    "instagram": person.ids.instagram if person.ids else "",
-                    "facebook": person.ids.facebook if person.ids else "",
-                    "links": links,
-                    "sources": sources,
-                    "district_address": district_address,
-                    "district_voice": district_voice,
-                    "district_fax": district_fax,
-                    "capitol_address": capitol_address,
-                    "capitol_voice": capitol_voice,
-                    "capitol_fax": capitol_fax,
-                }
-                out.writerow(obj)
+            obj = {
+                "id": person.id,
+                "name": person.name,
+                "current_party": current_party,
+                "current_district": current_district,
+                "current_chamber": current_chamber,
+                "given_name": person.given_name,
+                "family_name": person.family_name,
+                "gender": person.gender,
+                "email": person.email,
+                "biography": person.biography,
+                "birth_date": person.birth_date,
+                "death_date": person.death_date,
+                "image": person.image,
+                "twitter": person.ids.twitter if person.ids else "",
+                "youtube": person.ids.youtube if person.ids else "",
+                "instagram": person.ids.instagram if person.ids else "",
+                "facebook": person.ids.facebook if person.ids else "",
+                "links": links,
+                "sources": sources,
+                "district_address": district_address,
+                "district_voice": district_voice,
+                "district_fax": district_fax,
+                "capitol_address": capitol_address,
+                "capitol_voice": capitol_voice,
+                "capitol_fax": capitol_fax,
+            }
+            out.writerow(obj)
 
     click.secho(f"processed {len(files)} files", fg="green")
 
@@ -254,10 +252,12 @@ def lint_dir(
 
     for person_type, filenames in all_filenames:
         for filename in filenames:
-            with open(filename) as f:
-                data = load_yaml(f)
-                person = PersonData(data=data, filename=filename, person_type=person_type)
-                validator.validate_person(person, date)
+            # load just the data here since validate_person will convert to Person and
+            # catch errors
+            with open(filename) as file:
+                data = yaml.safe_load(file)
+            person = PersonData(data=data, filename=filename, person_type=person_type)
+            validator.validate_person(person, date)
 
     error_count = validator.print_validation_report(verbose)
 
@@ -428,8 +428,7 @@ def retire(
     """
     for filename in filenames:
         # end the person's active roles & re-save
-        with open(filename) as f:
-            person = Person(**load_yaml(f))
+        person = Person.load_yaml(filename)
         if death:
             reason = "Deceased"
         person, num = retire_person(person, date, reason, death)

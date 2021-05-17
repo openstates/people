@@ -1,6 +1,8 @@
 import re
 import datetime
 import typing
+from pathlib import Path
+import yaml
 from pydantic import BaseModel as PydanticBaseModel, validator
 from openstates.metadata import lookup
 
@@ -61,6 +63,12 @@ class BaseModel(PydanticBaseModel):
     def to_dict(self):
         # TODO: replace this with first class pydantic support in spatula
         return self.dict()
+
+    @classmethod
+    def load_yaml(cls, filename: Path) -> "BaseModel":
+        with open(filename) as file:
+            data = yaml.safe_load(file)
+            return cls(**data)
 
 
 class Link(BaseModel):

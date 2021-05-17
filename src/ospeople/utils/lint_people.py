@@ -38,7 +38,7 @@ class CheckResult:
 
 @dataclass
 class PersonData:
-    data: dict
+    data: Person
     filename: Path
     person_type: PersonType
 
