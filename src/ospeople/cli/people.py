@@ -1,9 +1,11 @@
 import sys
+import csv
 import typing
 import datetime
 from pathlib import Path
 from collections import Counter, defaultdict
 import click
+import boto3
 from openstates.utils import abbr_to_jid
 from ..models.people import Person, Role, Party, Link
 from ..utils import (
@@ -126,6 +128,106 @@ class Summarizer:
                 self.summarize(person)
 
 
+def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> None:
+    with open(output_filename, "w") as outf:
+        out = csv.DictWriter(
+            outf,
+            (
+                "id",
+                "name",
+                "current_party",
+                "current_district",
+                "current_chamber",
+                "given_name",
+                "family_name",
+                "gender",
+                "email",
+                "biography",
+                "birth_date",
+                "death_date",
+                "image",
+                "links",
+                "sources",
+                "capitol_address",
+                "capitol_voice",
+                "capitol_fax",
+                "district_address",
+                "district_voice",
+                "district_fax",
+                "twitter",
+                "youtube",
+                "instagram",
+                "facebook",
+            ),
+        )
+        out.writeheader()
+
+        for filename in files:
+            with open(filename) as f:
+                person = Person(**load_yaml(f))
+
+                # current party
+                for role in person.party:
+                    if role.is_active():
+                        current_party = role.name
+                        break
+
+                # current district
+                for role in person.roles:
+                    if role.is_active():
+                        current_chamber = role.type
+                        current_district = role.district
+
+                district_address = district_voice = district_fax = None
+                capitol_address = capitol_voice = capitol_fax = None
+                for cd in person.contact_details:
+                    note = cd.note.lower()
+                    if "district" in note:
+                        district_address = cd.address
+                        district_voice = cd.voice
+                        district_fax = cd.fax
+                    elif "capitol" in note:
+                        capitol_address = cd.address
+                        capitol_voice = cd.voice
+                        capitol_fax = cd.fax
+                    else:
+                        click.secho("unknown office: " + note, fg="red")
+
+                links = ";".join(k.url for k in person.links)
+                sources = ";".join(k.url for k in person.sources)
+
+                obj = {
+                    "id": person.id,
+                    "name": person.name,
+                    "current_party": current_party,
+                    "current_district": current_district,
+                    "current_chamber": current_chamber,
+                    "given_name": person.given_name,
+                    "family_name": person.family_name,
+                    "gender": person.gender,
+                    "email": person.email,
+                    "biography": person.biography,
+                    "birth_date": person.birth_date,
+                    "death_date": person.death_date,
+                    "image": person.image,
+                    "twitter": person.ids.twitter if person.ids else "",
+                    "youtube": person.ids.youtube if person.ids else "",
+                    "instagram": person.ids.instagram if person.ids else "",
+                    "facebook": person.ids.facebook if person.ids else "",
+                    "links": links,
+                    "sources": sources,
+                    "district_address": district_address,
+                    "district_voice": district_voice,
+                    "district_fax": district_fax,
+                    "capitol_address": capitol_address,
+                    "capitol_voice": capitol_voice,
+                    "capitol_fax": capitol_fax,
+                }
+                out.writerow(obj)
+
+    click.secho(f"processed {len(files)} files", fg="green")
+
+
 def lint_dir(
     abbr: str, verbose: bool, municipal: bool, date: str, fix: bool
 ) -> int:  # pragma: no cover
@@ -206,6 +308,37 @@ def create_person(
 @click.group()
 def main() -> None:
     pass
+
+
+@main.command()
+@click.argument("abbreviations", nargs=-1)
+@click.option("--upload/--no-upload", default=False, help="Upload to S3. (default: false)")
+def to_csv(abbreviations: list[str], upload: bool) -> None:
+    """
+    Sync YAML files to DB.
+    """
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    if upload:
+        s3 = boto3.client("s3")
+
+    for abbr in abbreviations:
+        click.secho("==== {} ====".format(abbr), bold=True)
+        jurisdiction_id = abbr_to_jid(abbr)
+        directory = Path(get_data_dir(abbr))
+        person_files = sorted((directory / "legislature").glob("*.yml"))
+        fname = f"{abbr}.csv"
+        write_csv(person_files, jurisdiction_id, fname)
+
+        if upload:
+            s3.upload_file(
+                fname,
+                "data.openstates.org",
+                f"people/current/{abbr}.csv",
+                ExtraArgs={"ContentType": "text/csv", "ACL": "public-read"},
+            )
+            click.secho(f"uploaded to data.openstates.org/people/current/{abbr}.csv", fg="green")
 
 
 @main.command()
@@ -296,7 +429,6 @@ def retire(
     for filename in filenames:
         # end the person's active roles & re-save
         with open(filename) as f:
-            print(filename)
             person = Person(**load_yaml(f))
         if death:
             reason = "Deceased"
@@ -369,10 +501,6 @@ def lint(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fi
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
         sys.exit(99)
-
-
-if __name__ == "__main__":
-    main()
 
 
 if __name__ == "__main__":
