@@ -1,3 +1,4 @@
+import sys
 import typing
 import datetime
 from pathlib import Path
@@ -12,8 +13,10 @@ from ..utils import (
     get_all_abbreviations,
     load_yaml,
     download_state_images,
+    load_settings,
 )
 from ..utils.retire import retire_person, add_vacancy, retire_file
+from ..utils.lint_people import Validator, BadVacancy, PersonType, PersonData
 
 
 OPTIONAL_FIELD_SET = {
@@ -121,6 +124,42 @@ class Summarizer:
             with open(filename) as f:
                 person = Person(**load_yaml(f))
                 self.summarize(person)
+
+
+def lint_dir(
+    abbr: str, verbose: bool, municipal: bool, date: str, fix: bool
+) -> int:  # pragma: no cover
+    state_dir = Path(get_data_dir(abbr))
+    legislative_filenames = (state_dir / "legislature").glob("*.yml")
+    executive_filenames = (state_dir / "executive").glob("*.yml")
+    municipality_filenames = (state_dir / "municipalities").glob("*.yml")
+    retired_filenames = (state_dir / "retired").glob("*.yml")
+
+    settings = load_settings()
+    try:
+        validator = Validator(abbr, settings, fix)
+    except BadVacancy:
+        sys.exit(-1)
+
+    all_filenames = [
+        (PersonType.LEGISLATIVE, legislative_filenames),
+        (PersonType.RETIRED, retired_filenames),
+        (PersonType.EXECUTIVE, executive_filenames),
+    ]
+
+    if municipal:
+        all_filenames.append((PersonType.MUNICIPAL, municipality_filenames))
+
+    for person_type, filenames in all_filenames:
+        for filename in filenames:
+            with open(filename) as f:
+                data = load_yaml(f)
+                person = PersonData(data=data, filename=filename, person_type=person_type)
+                validator.validate_person(person, date)
+
+    error_count = validator.print_validation_report(verbose)
+
+    return error_count
 
 
 def create_person(
@@ -297,6 +336,43 @@ def sync_images(abbreviations: list[str], skip_existing: bool) -> None:
 
     for abbr in abbreviations:
         download_state_images(abbr, skip_existing)
+
+
+@main.command()
+@click.argument("abbreviations", nargs=-1)
+@click.option("-v", "--verbose", count=True)
+@click.option("--fix/--no-fix", default=False, help="Enable/disable automatic fixing of data.")
+@click.option(
+    "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
+)
+@click.option(
+    "--date",
+    type=str,
+    default=None,
+    help="Lint roles using a certain date instead of today.",
+)
+def lint(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fix: bool) -> None:
+    """
+    Lint YAML files.
+
+    <ABBR> can be provided to restrict linting to single state's files.
+    """
+    error_count = 0
+
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        click.secho("==== {} ====".format(abbr), bold=True)
+        error_count += lint_dir(abbr, verbose, municipal, date, fix)
+
+    if error_count:
+        click.secho(f"exiting with {error_count} errors", fg="red")
+        sys.exit(99)
+
+
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":

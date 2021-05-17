@@ -1,26 +1,19 @@
-#!/usr/bin/env python
 import re
-import os
-import sys
 import datetime
-import glob
 import click
 import typing
+from pathlib import Path
 from dataclasses import dataclass
 from collections import defaultdict, Counter
 from openstates import metadata
 from enum import Enum, auto
 from pydantic import ValidationError
 from ..utils import (
-    get_data_dir,
     role_is_active,
-    get_all_abbreviations,
-    load_yaml,
     dump_obj,
     legacy_districts,
     load_municipalities,
     retire_file,
-    load_settings,
 )
 from ..models.people import Person
 
@@ -46,12 +39,12 @@ class CheckResult:
 @dataclass
 class PersonData:
     data: dict
-    filename: str
+    filename: Path
     person_type: PersonType
 
     @property
     def print_filename(self) -> str:
-        return os.path.basename(self.filename)
+        return self.filename.name
 
 
 JURISDICTION_RE = re.compile(
@@ -272,7 +265,7 @@ class Validator:
         )
 
         # looser validation for upstream-maintained unitedstates.io data
-        if "/us/legislature" not in person.filename:
+        if "/us/legislature" not in str(person.filename):
             self.errors[person.print_filename].extend(validate_offices(person.data))
         self.process_validator_result(validate_roles_key, person)
         self.process_validator_result(validate_name, person)
@@ -359,75 +352,3 @@ class Validator:
             error_count += 1
 
         return error_count
-
-
-def process_dir(
-    abbr: str, verbose: bool, municipal: bool, date: str, fix: bool
-) -> int:  # pragma: no cover
-    legislative_filenames = glob.glob(os.path.join(get_data_dir(abbr), "legislature", "*.yml"))
-    executive_filenames = glob.glob(os.path.join(get_data_dir(abbr), "executive", "*.yml"))
-    municipality_filenames = glob.glob(os.path.join(get_data_dir(abbr), "municipalities", "*.yml"))
-    retired_filenames = glob.glob(os.path.join(get_data_dir(abbr), "retired", "*.yml"))
-
-    settings = load_settings()
-    try:
-        validator = Validator(abbr, settings, fix)
-    except BadVacancy:
-        sys.exit(-1)
-
-    all_filenames = [
-        (PersonType.LEGISLATIVE, legislative_filenames),
-        (PersonType.RETIRED, retired_filenames),
-        (PersonType.EXECUTIVE, executive_filenames),
-    ]
-
-    if municipal:
-        all_filenames.append((PersonType.MUNICIPAL, municipality_filenames))
-
-    for person_type, filenames in all_filenames:
-        for filename in filenames:
-            with open(filename) as f:
-                data = load_yaml(f)
-                person = PersonData(data=data, filename=filename, person_type=person_type)
-                validator.validate_person(person, date)
-
-    error_count = validator.print_validation_report(verbose)
-
-    return error_count
-
-
-@click.command()
-@click.argument("abbreviations", nargs=-1)
-@click.option("-v", "--verbose", count=True)
-@click.option("--fix/--no-fix", default=False, help="Enable/disable automatic fixing of data.")
-@click.option(
-    "--municipal/--no-municipal", default=True, help="Enable/disable linting of municipal data."
-)
-@click.option(
-    "--date",
-    type=str,
-    default=None,
-    help="Lint roles using a certain date instead of today.",
-)
-def main(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fix: bool) -> None:
-    """
-    Lint YAML files.
-
-    <ABBR> can be provided to restrict linting to single state's files.
-    """
-    error_count = 0
-
-    if not abbreviations:
-        abbreviations = get_all_abbreviations()
-
-    for abbr in abbreviations:
-        click.secho("==== {} ====".format(abbr), bold=True)
-        error_count += process_dir(abbr, verbose, municipal, date, fix)
-
-    if error_count:
-        click.secho(f"exiting with {error_count} errors", fg="red")
-        sys.exit(99)
-
-
-if __name__ == "__main__":
-    main()
