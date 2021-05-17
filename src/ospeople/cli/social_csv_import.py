@@ -1,31 +1,17 @@
 #!/usr/bin/env python
-import os
 import re
 import csv
-import glob
 import click
 import typing
-from ..utils import get_data_dir, load_yaml, dump_obj
+from ..utils import load_yaml, dump_obj, find_file
 
 
 def load_person_by_id(
     abbr: str, person_id: str
 ) -> tuple[typing.Optional[str], typing.Optional[dict]]:
-    directory = get_data_dir(abbr)
-
-    person_id = person_id.replace("ocd-person/", "")
-
-    person = glob.glob(os.path.join(directory, "*", f"*{person_id}.yml"))
-    if len(person) < 1:
-        click.secho(f"could not find {abbr} {person_id}")
-        return None, None
-    elif len(person) > 1:
-        click.secho(f"multiple matches for {abbr} {person_id}")
-        return None, None
-
-    # found them, load & return
-    with open(person[0]) as f:
-        return person[0], load_yaml(f)
+    filename = find_file(person_id, state=abbr)
+    with open(filename) as f:
+        return filename, load_yaml(f)
 
 
 def clean_id(value: typing.Optional[str], id_type: str) -> typing.Optional[str]:
