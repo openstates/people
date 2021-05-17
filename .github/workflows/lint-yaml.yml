@@ -44,6 +44,6 @@ jobs:
       # if: steps.cache.outputs.cache-hit != 'true'
 
     - name: lint people
-      run: poetry run os-lint-yaml
+      run: poetry run os-people lint
     - name: lint committees
       run: poetry run os-committees lint
