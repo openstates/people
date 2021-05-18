@@ -73,7 +73,7 @@ class BaseModel(PydanticBaseModel):
 
 class Link(BaseModel):
     url: str
-    note: typing.Optional[str] = None
+    note: str = ""
 
     _validate_note = validator("note", allow_reuse=True)(validate_str_no_newline)
     _validate_url = validator("url", allow_reuse=True)(validate_url)

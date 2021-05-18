@@ -159,7 +159,7 @@ class Person(BaseModel):
     contact_details: list[ContactDetail] = []
     links: list[Link] = []
     other_names: list[OtherName] = []
-    ids: typing.Optional[PersonIdBlock] = None
+    ids: PersonIdBlock = PersonIdBlock()
     other_identifiers: list[OtherIdentifier] = []
     sources: list[Link] = []
     extras: dict = {}
