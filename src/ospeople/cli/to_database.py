@@ -13,12 +13,11 @@ from ..utils import (
     get_data_dir,
     get_all_abbreviations,
     load_yaml,
-    load_settings,
     legacy_districts,
     role_is_active,
     load_municipalities,
 )
-from ..models.people import MAJOR_PARTIES
+from ..models.people import MAJOR_PARTIES, PartyName
 
 
 # TODO: define TypedDict for the models?
@@ -345,12 +344,10 @@ def load_directory(files: list[str], purge: bool) -> None:
 def create_parties() -> None:
     from openstates.data.models import Organization
 
-    settings = load_settings()
-    parties = settings["parties"]
-    for party in parties:
-        org, created = Organization.objects.get_or_create(name=party, classification="party")
+    for party in PartyName:
+        org, created = Organization.objects.get_or_create(name=party.value, classification="party")
         if created:
-            click.secho(f"created party: {party}", fg="green")
+            click.secho(f"created party: {party.value}", fg="green")
 
 
 def create_municipalities(jurisdictions: list[DataDict]) -> None:

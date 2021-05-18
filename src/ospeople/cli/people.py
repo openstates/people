@@ -3,6 +3,7 @@ import csv
 import typing
 import datetime
 from collections import Counter, defaultdict
+from pathlib import Path
 import click
 import boto3
 import yaml
@@ -14,7 +15,6 @@ from ..utils import (
     dump_obj,
     get_all_abbreviations,
     download_state_images,
-    load_settings,
 )
 from ..utils.retire import retire_person, add_vacancy, retire_file
 from ..utils.lint_people import Validator, BadVacancy, PersonType, PersonData
@@ -234,7 +234,10 @@ def lint_dir(
     municipality_filenames = (state_dir / "municipalities").glob("*.yml")
     retired_filenames = (state_dir / "retired").glob("*.yml")
 
-    settings = load_settings()
+    settings_file = Path(__file__).parents[3] / "settings.yml"
+    with open(settings_file) as f:
+        settings = yaml.safe_load(f)
+
     try:
         validator = Validator(abbr, settings, fix)
     except BadVacancy:

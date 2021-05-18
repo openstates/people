@@ -25,14 +25,8 @@ def get_data_dir(abbr: str) -> str:
 
 
 def get_data_path(abbr: str) -> Path:
-    # 4 parent calls to get from this file to /data dir
-    return Path(__file__).parent.parent.parent.parent / "data" / abbr
-
-
-def load_settings() -> dict:
-    settings_file = os.path.join(os.path.dirname(__file__), "../../../settings.yml")
-    with open(settings_file) as f:
-        return load_yaml(f)
+    # 4 parents up to get from this file to /data dir
+    return Path(__file__).parents[3] / "data" / abbr
 
 
 def get_all_abbreviations() -> list[str]:
