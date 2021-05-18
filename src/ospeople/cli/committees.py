@@ -13,7 +13,7 @@ import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
 from openstates.metadata import lookup
-from ..utils import get_data_dir, get_all_abbreviations
+from ..utils import get_data_path, get_all_abbreviations
 from ..models.committees import Committee, ScrapeCommittee
 from ..models.people import Person
 
@@ -42,7 +42,7 @@ class PersonMatcher:
 
         # allow directory override for testing purposes
         if not directory:
-            directory = Path(get_data_dir(abbr)) / "legislature"
+            directory = get_data_path(abbr) / "legislature"
 
         # read in people with current roles
         for filename in directory.glob("*.yml"):
@@ -132,7 +132,7 @@ class CommitteeDir:
     ):
         self.abbr = abbr
         # allow overriding directory explicitly, useful for testing
-        self.directory = directory if directory else Path(get_data_dir(abbr)) / "committees"
+        self.directory = directory if directory else get_data_path(abbr) / "committees"
         # chamber -> name -> Committee
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []

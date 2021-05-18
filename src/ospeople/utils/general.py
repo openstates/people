@@ -24,6 +24,11 @@ def get_data_dir(abbr: str) -> str:
     return os.path.join(os.path.dirname(__file__), "../../../data", abbr)
 
 
+def get_data_path(abbr: str) -> Path:
+    # 4 parent calls to get from this file to /data dir
+    return Path(__file__).parent.parent.parent.parent / "data" / abbr
+
+
 def load_settings() -> dict:
     settings_file = os.path.join(os.path.dirname(__file__), "../../../settings.yml")
     with open(settings_file) as f:
@@ -39,7 +44,7 @@ def load_yaml(file_obj: typing.TextIO) -> dict:
 
 
 def iter_objects(abbr: str, objtype: str) -> typing.Iterator[tuple[dict, str]]:
-    filenames = (Path(get_data_dir(abbr)) / objtype).glob("*.yml")
+    filenames = (get_data_path(abbr) / objtype).glob("*.yml")
     for filename in filenames:
         with open(filename) as f:
             yield load_yaml(f), filename

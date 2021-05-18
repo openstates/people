@@ -2,7 +2,6 @@ import sys
 import csv
 import typing
 import datetime
-from pathlib import Path
 from collections import Counter, defaultdict
 import click
 import boto3
@@ -11,7 +10,7 @@ from openstates.utils import abbr_to_jid
 from ..models.people import Person, Role, Party, Link
 from ..utils import (
     ocd_uuid,
-    get_data_dir,
+    get_data_path,
     dump_obj,
     get_all_abbreviations,
     download_state_images,
@@ -119,7 +118,7 @@ class Summarizer:
                     click.secho(f"   {person.name}")
 
     def process_legislature(self, abbr: str) -> None:  # pragma: no cover
-        path = Path(get_data_dir(abbr)) / "legislature"
+        path = get_data_path(abbr) / "legislature"
         filenames = path.glob("*.yml")
 
         for filename in filenames:
@@ -229,7 +228,7 @@ def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> N
 def lint_dir(
     abbr: str, verbose: bool, municipal: bool, date: str, fix: bool
 ) -> int:  # pragma: no cover
-    state_dir = Path(get_data_dir(abbr))
+    state_dir = get_data_path(abbr)
     legislative_filenames = (state_dir / "legislature").glob("*.yml")
     executive_filenames = (state_dir / "executive").glob("*.yml")
     municipality_filenames = (state_dir / "municipalities").glob("*.yml")
@@ -301,7 +300,7 @@ def create_person(
         sources=[Link(url=url)],
     )
 
-    output_dir = Path(get_data_dir(state)) / directory
+    output_dir = get_data_path(state) / directory
     dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
@@ -326,7 +325,7 @@ def to_csv(abbreviations: list[str], upload: bool) -> None:
     for abbr in abbreviations:
         click.secho("==== {} ====".format(abbr), bold=True)
         jurisdiction_id = abbr_to_jid(abbr)
-        directory = Path(get_data_dir(abbr))
+        directory = get_data_path(abbr)
         person_files = sorted((directory / "legislature").glob("*.yml"))
         fname = f"{abbr}.csv"
         write_csv(person_files, jurisdiction_id, fname)
