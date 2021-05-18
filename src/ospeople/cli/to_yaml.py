@@ -4,10 +4,11 @@ import re
 import json
 import os
 import click
+from pathlib import Path
 from collections import defaultdict, OrderedDict
 from openstates.utils import abbr_to_jid
 from ..utils import (
-    get_data_dir,
+    get_data_path,
     dump_obj,
     ocd_uuid,
 )
@@ -172,10 +173,10 @@ def main(input_dir: str) -> None:
             abbr = piece
             break
 
-    output_dir = get_data_dir(abbr)
     jurisdiction_id = abbr_to_jid(abbr)
 
-    output_dir = output_dir.replace("data", "incoming")
+    output_dir = get_data_path(abbr)
+    output_dir = Path(str(output_dir).replace("data", "incoming"))
     assert "incoming" in output_dir
 
     try:

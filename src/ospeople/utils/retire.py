@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 import typing
 import os
+import yaml
 from datetime import datetime
 from openstates import metadata
-from ..utils import load_yaml, dump_obj
+from ..utils import dump_obj
 from ..models.people import Person
 
 
 def add_vacancy(person: dict, until: datetime) -> None:
     with open("settings.yml") as f:
-        settings = load_yaml(f)
+        settings = yaml.safe_load(f)
     last_role = person["roles"][-1]
     abbr = metadata.lookup(jurisdiction_id=last_role["jurisdiction"]).abbr.lower()
     if abbr not in settings:

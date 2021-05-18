@@ -1,5 +1,12 @@
 import pytest
-from ospeople.cli.merge import compute_merge, Append, Replace, merge_people, merge_contact_details
+from ospeople.cli.merge import (
+    compute_merge,
+    Append,
+    Replace,
+    merge_people,
+    merge_contact_details,
+    find_file,
+)
 
 
 @pytest.mark.parametrize(
@@ -229,3 +236,18 @@ def test_merge_extras():
     new = {}
     expected = old.copy()
     assert merge_people(new, old) == expected
+
+
+def test_find_file_good():
+    filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f", state="pa")
+    assert "Pam-Snyder" in str(filename)
+    filename = find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f")
+    assert "Pam-Snyder" in str(filename)
+
+
+def test_find_file_missing():
+    with pytest.raises(FileNotFoundError):
+        find_file("77777777-ffff-0000-9000-bbbbbbbbbbbb")
+    # good file, bad directory
+    with pytest.raises(FileNotFoundError):
+        find_file("a2e4a1b2-f0fd-4c35-9e0c-bb009778792f", state="nc")

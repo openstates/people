@@ -8,12 +8,11 @@ from collections import defaultdict, Counter
 from openstates import metadata
 from enum import Enum, auto
 from pydantic import ValidationError
-from ..utils import (
-    role_is_active,
+from .retire import retire_file
+from .general import (
     dump_obj,
     legacy_districts,
     load_municipalities,
-    retire_file,
 )
 from ..models.people import Person
 
@@ -59,7 +58,15 @@ class Missing:
     pass
 
 
-def validate_person_data(person_data: dict):
+def _role_is_active(role: dict, date: typing.Optional[str] = None) -> bool:
+    if date is None:
+        date = datetime.datetime.utcnow().date().isoformat()
+    return (role.get("end_date") is None or str(role.get("end_date")) > date) and (
+        role.get("start_date") is None or str(role.get("start_date")) <= date
+    )
+
+
+def validate_person_data(person_data: dict) -> list[str]:
     try:
         Person(**person_data)
         return []
@@ -72,7 +79,7 @@ def validate_person_data(person_data: dict):
 def validate_roles(
     person: dict, roles_key: str, retired: bool = False, date: typing.Optional[str] = None
 ) -> list[str]:
-    active = [role for role in person.get(roles_key, []) if role_is_active(role, date=date)]
+    active = [role for role in person.get(roles_key, []) if _role_is_active(role, date=date)]
     if len(active) == 0 and not retired:
         return [f"no active {roles_key}"]
     elif roles_key == "roles" and retired and len(active) > 0:
@@ -290,7 +297,7 @@ class Validator:
         if person.person_type == PersonType.LEGISLATIVE:
             role_type = district = None
             for role in person.data.get("roles", []):
-                if role_is_active(role, date=date):
+                if _role_is_active(role, date=date):
                     role_type = role["type"]
                     district = role.get("district")
                     break

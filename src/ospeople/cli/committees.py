@@ -260,7 +260,7 @@ def main() -> None:
 @click.argument("input_dir")
 def merge(abbr: str, input_dir: str) -> None:
     """
-    Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
+    Merge scraped committee data into repo.
     """
     comdir = CommitteeDir(abbr)
 
@@ -312,7 +312,7 @@ def merge(abbr: str, input_dir: str) -> None:
 @click.argument("abbreviations", nargs=-1)
 def lint(abbreviations: str) -> None:
     """
-    Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
+    Lint committee YAML files.
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()
