@@ -1,7 +1,7 @@
 import pytest
 from openstates.data.models import Organization, Jurisdiction, Division
 from openstates.data.models import Person as DjangoPerson
-from ospeople.cli.to_database import load_person, cached_lookup
+from ospeople.utils.to_database import load_person, cached_lookup
 from ospeople.models.people import (
     Person,
     Party,

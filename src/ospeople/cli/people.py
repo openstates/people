@@ -2,12 +2,15 @@ import sys
 import csv
 import typing
 import datetime
+import itertools
 from collections import Counter, defaultdict
 from pathlib import Path
 import click
 import boto3
 import yaml
+from django.db import transaction  # type: ignore
 from openstates.utils import abbr_to_jid
+from openstates.utils.django import init_django  # type: ignore
 from ..models.people import Person, Role, Party, Link
 from ..utils import (
     ocd_uuid,
@@ -15,9 +18,16 @@ from ..utils import (
     dump_obj,
     get_all_abbreviations,
     download_state_images,
+    load_municipalities,
 )
 from ..utils.retire import retire_person, add_vacancy, retire_file
 from ..utils.lint_people import Validator, BadVacancy, PersonType, PersonData
+from ..utils.to_database import (
+    create_municipalities,
+    create_parties,
+    load_person,
+    CancelTransaction,
+)
 
 
 OPTIONAL_FIELD_SET = {
@@ -266,6 +276,85 @@ def lint_dir(
     return error_count
 
 
+def _echo_org_status(org: typing.Any, created: bool, updated: bool) -> None:
+    if created:
+        click.secho(f"{org} created", fg="green")
+    elif updated:
+        click.secho(f"{org} updated", fg="yellow")
+
+
+def load_directory_to_database(files: list[str], purge: bool) -> None:
+    from openstates.data.models import Person as DjangoPerson
+    from openstates.data.models import BillSponsorship, PersonVote
+
+    ids = set()
+    merged = {}
+    created_count = 0
+    updated_count = 0
+
+    all_data = []
+    all_jurisdictions = []
+    for filename in files:
+        person = Person.load_yaml(filename)
+        all_data.append((person, filename))
+        if person.roles:
+            all_jurisdictions.append(person.roles[0].jurisdiction)
+
+    existing_ids = set(
+        DjangoPerson.objects.filter(
+            memberships__organization__jurisdiction_id__in=all_jurisdictions
+        ).values_list("id", flat=True)
+    )
+
+    for person, filename in all_data:
+        ids.add(person.id)
+        created, updated = load_person(person)
+
+        if created:
+            click.secho(f"created person from {filename}", fg="cyan", bold=True)
+            created_count += 1
+        elif updated:
+            click.secho(f"updated person from {filename}", fg="cyan")
+            updated_count += 1
+
+    missing_ids = existing_ids - ids
+
+    # check if missing ids are in need of a merge
+    for missing_id in missing_ids:
+        try:
+            found = DjangoPerson.objects.get(
+                identifiers__identifier=missing_id, identifiers__scheme="openstates"
+            )
+            merged[missing_id] = found.id
+        except DjangoPerson.DoesNotExist:
+            pass
+
+    if merged:
+        click.secho(f"{len(merged)} removed via merge", fg="yellow")
+        for old, new in merged.items():
+            click.secho(f"   {old} => {new}", fg="yellow")
+            BillSponsorship.objects.filter(person_id=old).update(person_id=new)
+            PersonVote.objects.filter(voter_id=old).update(voter_id=new)
+            DjangoPerson.objects.filter(id=old).delete()
+            missing_ids.remove(old)
+
+    # ids that are still missing would need to be purged
+    if missing_ids and not purge:
+        click.secho(f"{len(missing_ids)} went missing, run with --purge to remove", fg="red")
+        for id in missing_ids:
+            mobj = DjangoPerson.objects.get(pk=id)
+            click.secho(f"  {id}: {mobj}")
+        raise CancelTransaction()
+    elif missing_ids and purge:
+        click.secho(f"{len(missing_ids)} purged", fg="yellow")
+        DjangoPerson.objects.filter(id__in=missing_ids).delete()
+
+    click.secho(
+        f"processed {len(ids)} person files, {created_count} created, " f"{updated_count} updated",
+        fg="green",
+    )
+
+
 def create_person(
     fname: str,
     lname: str,
@@ -317,7 +406,7 @@ def main() -> None:
 @click.option("--upload/--no-upload", default=False, help="Upload to S3. (default: false)")
 def to_csv(abbreviations: list[str], upload: bool) -> None:
     """
-    Sync YAML files to DB.
+    Generate CSV files for YAML and optionally sync to S3.
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()
@@ -502,6 +591,55 @@ def lint(abbreviations: list[str], verbose: bool, municipal: bool, date: str, fi
     if error_count:
         click.secho(f"exiting with {error_count} errors", fg="red")
         sys.exit(99)
+
+
+@main.command()
+@click.argument("abbreviations", nargs=-1)
+@click.option(
+    "--purge/--no-purge", default=False, help="Purge all legislators from DB that aren't in YAML."
+)
+@click.option(
+    "--safe/--no-safe",
+    default=False,
+    help="Operate in safe mode, no changes will be written to database.",
+)
+def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
+    """
+    Sync YAML files to DB.
+    """
+    init_django()
+
+    create_parties()
+
+    if not abbreviations:
+        abbreviations = get_all_abbreviations()
+
+    for abbr in abbreviations:
+        click.secho("==== {} ====".format(abbr), bold=True)
+        directory = get_data_path(abbr)
+        municipalities = load_municipalities(abbr)
+
+        with transaction.atomic():
+            create_municipalities(municipalities)
+
+        person_files = itertools.chain(
+            directory.glob("legislature/*.yml"),
+            directory.glob("executive/*.yml"),
+            directory.glob("municipalities/*.yml"),
+            directory.glob("retired/*.yml"),
+        )
+
+        if safe:
+            click.secho("running in safe mode, no changes will be made", fg="magenta")
+
+        try:
+            with transaction.atomic():
+                load_directory_to_database(person_files, purge=purge)
+                if safe:
+                    click.secho("ran in safe mode, no changes were made", fg="magenta")
+                    raise CancelTransaction()
+        except CancelTransaction:
+            sys.exit(1)
 
 
 if __name__ == "__main__":
