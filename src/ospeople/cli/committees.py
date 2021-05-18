@@ -52,11 +52,11 @@ class PersonMatcher:
                 if role.is_active():
                     chamber = role.type
                     break
-            self.add_name(chamber, person["name"], person["id"])
-            if person.get("family_name"):
-                self.add_name(chamber, person["family_name"], person["id"])
-            for name in person.get("other_names", []):
-                self.add_name(chamber, name["name"], person["id"])
+            self.add_name(chamber, person.name, person.id)
+            if person.family_name:
+                self.add_name(chamber, person.family_name, person.id)
+            for name in person.other_names:
+                self.add_name(chamber, name.name, person.id)
 
     def add_name(self, chamber: str, name_piece: str, id_: str) -> None:
         self.all_ids.add(id_)
