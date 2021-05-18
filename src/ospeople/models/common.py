@@ -80,15 +80,15 @@ class Link(BaseModel):
 
 
 class TimeScoped(BaseModel):
-    start_date: typing.Union[None, str, datetime.date]
-    end_date: typing.Union[None, str, datetime.date]
+    start_date: typing.Union[str, datetime.date] = ""
+    end_date: typing.Union[str, datetime.date] = ""
 
     _validate_dates = validator("start_date", "end_date", allow_reuse=True)(validate_fuzzy_date)
 
     def is_active(self):
         date = datetime.datetime.utcnow().date().isoformat()
-        return (self.end_date is None or str(self.end_date) > date) and (
-            self.start_date is None or str(self.start_date) <= date
+        return (self.end_date == "" or str(self.end_date) > date) and (
+            self.start_date == "" or str(self.start_date) <= date
         )
 
 
