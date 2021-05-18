@@ -12,12 +12,10 @@ from openstates.utils.django import init_django  # type: ignore
 from ..utils import (
     get_data_dir,
     get_all_abbreviations,
-    load_yaml,
     legacy_districts,
-    role_is_active,
     load_municipalities,
 )
-from ..models.people import MAJOR_PARTIES, PartyName
+from ..models.people import MAJOR_PARTIES, PartyName, Person
 
 
 # TODO: define TypedDict for the models?
@@ -33,7 +31,10 @@ class CancelTransaction(Exception):
 
 @lru_cache(128)
 def cached_lookup(ModelCls: DjangoModel, **kwargs: str) -> DjangoModelInstance:
-    return ModelCls.objects.get(**kwargs)
+    # return ModelCls.objects.get(**kwargs)
+    m = ModelCls.objects.get(**kwargs)
+    print(kwargs, m.id)
+    return m
 
 
 def update_subobjects(
@@ -47,7 +48,7 @@ def update_subobjects(
     manager = getattr(person, fieldname)
 
     # if a read_manager is passed, we'll use that for all read operations
-    # this is used for Person.memberships to ensure we don't wipe out committee memberships
+    # this is used for DjangoPerson.memberships to ensure we don't wipe out committee memberships
     if read_manager is None:
         read_manager = manager
 
@@ -101,140 +102,138 @@ def get_update_or_create(
     return obj, created, updated
 
 
-def load_person(data: DataDict) -> tuple[bool, bool]:
+def load_person(data: Person) -> tuple[bool, bool]:
     # import has to be here so that Django is set up
-    from openstates.data.models import Person, Organization, Post
+    from openstates.data.models import Organization, Post
+    from openstates.data.models import Person as DjangoPerson
 
     fields = dict(
-        id=data["id"],
-        name=data["name"],
-        given_name=data.get("given_name", ""),
-        family_name=data.get("family_name", ""),
-        gender=data.get("gender", ""),
-        email=data.get("email", ""),
-        biography=data.get("biography", ""),
-        birth_date=data.get("birth_date", ""),
-        death_date=data.get("death_date", ""),
-        image=data.get("image", ""),
-        extras=data.get("extras", {}),
+        id=data.id,
+        name=data.name,
+        given_name=data.given_name,
+        family_name=data.family_name,
+        gender=data.gender,
+        email=data.email,
+        biography=data.biography,
+        birth_date=data.birth_date,
+        death_date=data.death_date,
+        image=data.image,
+        extras=data.extras,
     )
-    person, created, updated = get_update_or_create(Person, fields, ["id"])
+    person, created, updated = get_update_or_create(DjangoPerson, fields, ["id"])
 
-    updated |= update_subobjects(person, "other_names", data.get("other_names", []))
-    updated |= update_subobjects(person, "links", data.get("links", []))
-    updated |= update_subobjects(person, "sources", data.get("sources", []))
+    updated |= update_subobjects(person, "other_names", [n.dict() for n in data.other_names])
+    updated |= update_subobjects(person, "links", [n.dict() for n in data.links])
+    updated |= update_subobjects(person, "sources", [n.dict() for n in data.sources])
 
     identifiers = []
-    for scheme, value in data.get("ids", {}).items():
-        identifiers.append({"scheme": scheme, "identifier": value})
-    for identifier in data.get("other_identifiers", []):
-        identifiers.append(identifier)
+    for scheme, value in data.ids.dict().items():
+        if value:
+            identifiers.append({"scheme": scheme, "identifier": value})
+    for identifier in data.other_identifiers:
+        identifiers.append({"scheme": identifier.scheme, "identifier": identifier.identifier})
     updated |= update_subobjects(person, "identifiers", identifiers)
 
     contact_details = []
-    for cd in data.get("contact_details", []):
-        for type in ("address", "voice", "fax"):
-            if cd.get(type):
-                contact_details.append(
-                    {"note": cd.get("note", ""), "type": type, "value": cd[type]}
-                )
+    for cd in data.contact_details:
+        for field in ("address", "voice", "fax"):
+            if value := getattr(cd, field):
+                contact_details.append({"note": cd.note, "type": field, "value": value})
     updated |= update_subobjects(person, "contact_details", contact_details)
 
     memberships = []
     primary_party = ""
     current_jurisdiction_id = None
     current_role = None
-    for party in data.get("party", []):
-        party_name = party["name"]
+    for party in data.party:
+        party_name = party.name
         try:
-            org = cached_lookup(Organization, classification="party", name=party["name"])
+            org = cached_lookup(Organization, classification="party", name=party.name)
         except Organization.DoesNotExist:
-            click.secho(f"no such party {party['name']}", fg="red")
+            click.secho(f"no such party {party.name}", fg="red")
             raise CancelTransaction()
         memberships.append(
             {
                 "organization": org,
-                "start_date": party.get("start_date", ""),
-                "end_date": party.get("end_date", ""),
+                "start_date": party.start_date,
+                "end_date": party.end_date,
             }
         )
-        if role_is_active(party):
+        if party.is_active():
             if primary_party in MAJOR_PARTIES and party_name in MAJOR_PARTIES:
-                raise ValueError(f"two primary parties for ({data['name']} {data['id']})")
+                raise ValueError(f"two primary parties for ({data.name} {data.id})")
             elif primary_party in MAJOR_PARTIES:
                 # already set correct primary party, so do nothing
                 pass
             else:
                 primary_party = party_name
-    for role in data.get("roles", []):
-        if role["type"] in ("mayor",):
+    for role in data.roles:
+        if role.type == "mayor":
             role_name = "Mayor"
             org_type = "government"
             use_district = False
-        elif role["type"] == "governor":
+        elif role.type == "governor":
             role_name = "Governor"
-            if role["jurisdiction"] == "ocd-jurisdiction/country:us/district:dc/government":
+            if role.jurisdiction == "ocd-jurisdiction/country:us/district:dc/government":
                 role_name = "Mayor"
             org_type = "executive"
             use_district = False
-        elif role["type"] in ("secretary of state", "chief election officer"):
-            role_name = role["type"].title()
+        elif role.type in ("secretary of state", "chief election officer"):
+            role_name = role.type.title()
             org_type = "executive"
             use_district = False
-        elif role["type"] in ("upper", "lower", "legislature"):
-            org_type = role["type"]
+        elif role.type in ("upper", "lower", "legislature"):
+            org_type = role.type
             use_district = True
         else:
-            raise ValueError(f"unsupported role type: {role['type']}")
+            raise ValueError(f"unsupported role type: {role.type}")
         try:
             org = cached_lookup(
-                Organization, classification=org_type, jurisdiction_id=role["jurisdiction"]
+                Organization, classification=org_type, jurisdiction_id=role.jurisdiction
             )
             if use_district:
-                post = org.posts.get(label=role["district"])
+                post = org.posts.get(label=role.district)
             else:
                 post = None
         except Organization.DoesNotExist:
-            click.secho(
-                f"{person} no such organization {role['jurisdiction']} {org_type}", fg="red"
-            )
+            click.secho(f"{person} no such organization {role.jurisdiction} {org_type}", fg="red")
             raise CancelTransaction()
         except Post.DoesNotExist:
             # if this is a legacy district, be quiet
-            lds = legacy_districts(jurisdiction_id=role["jurisdiction"])
-            if role["district"] not in lds[role["type"]]:
+            lds = legacy_districts(jurisdiction_id=role.jurisdiction)
+            if role.district not in lds[role.type]:
                 click.secho(f"no such post {role}", fg="red")
                 raise CancelTransaction()
             else:
                 post = None
 
-        if role_is_active(role):
-            current_jurisdiction_id = role["jurisdiction"]
+        if role.is_active():
+            current_jurisdiction_id = role.jurisdiction
 
             current_role = {"org_classification": org_type, "district": None, "division_id": None}
             if use_district:
-                state_metadata = metadata.lookup(jurisdiction_id=role["jurisdiction"])
+                state_metadata = metadata.lookup(jurisdiction_id=role.jurisdiction)
                 district = state_metadata.lookup_district(
-                    name=str(role["district"]), chamber=role["type"]
+                    name=str(role.district), chamber=role.type
                 )
                 assert district
                 current_role["division_id"] = district.division_id
-                current_role["title"] = getattr(state_metadata, role["type"]).title
+                current_role["title"] = getattr(state_metadata, role.type).title
                 # try to force district to an int for sorting, but allow strings for non-numeric districts
                 try:
-                    current_role["district"] = int(role["district"])  # type: ignore
+                    current_role["district"] = int(role.district)  # type: ignore
                 except ValueError:
-                    current_role["district"] = str(role["district"])
+                    current_role["district"] = str(role.district)
             else:
                 current_role["title"] = role_name
         elif not current_jurisdiction_id:
-            current_jurisdiction_id = role["jurisdiction"]
+            current_jurisdiction_id = role.jurisdiction
 
         membership = {
             "organization": org,
             "post": post,
-            "start_date": role.get("start_date", ""),
-            "end_date": role.get("end_date", ""),
+            "start_date": role.start_date,
+            "end_date": role.end_date,
         }
         if not use_district:
             membership["role"] = role_name
@@ -270,7 +269,8 @@ def _echo_org_status(org: DjangoModelInstance, created: bool, updated: bool) -> 
 
 
 def load_directory(files: list[str], purge: bool) -> None:
-    from openstates.data.models import Person, BillSponsorship, PersonVote
+    from openstates.data.models import Person as DjangoPerson
+    from openstates.data.models import BillSponsorship, PersonVote
 
     ids = set()
     merged = {}
@@ -280,21 +280,20 @@ def load_directory(files: list[str], purge: bool) -> None:
     all_data = []
     all_jurisdictions = []
     for filename in files:
-        with open(filename) as f:
-            data = load_yaml(f)
-            all_data.append((data, filename))
-            if data.get("roles"):
-                all_jurisdictions.append(data["roles"][0]["jurisdiction"])
+        person = Person.load_yaml(filename)
+        all_data.append((person, filename))
+        if person.roles:
+            all_jurisdictions.append(person.roles[0].jurisdiction)
 
     existing_ids = set(
-        Person.objects.filter(
+        DjangoPerson.objects.filter(
             memberships__organization__jurisdiction_id__in=all_jurisdictions
         ).values_list("id", flat=True)
     )
 
-    for data, filename in all_data:
-        ids.add(data["id"])
-        created, updated = load_person(data)
+    for person, filename in all_data:
+        ids.add(person.id)
+        created, updated = load_person(person)
 
         if created:
             click.secho(f"created person from {filename}", fg="cyan", bold=True)
@@ -308,11 +307,11 @@ def load_directory(files: list[str], purge: bool) -> None:
     # check if missing ids are in need of a merge
     for missing_id in missing_ids:
         try:
-            found = Person.objects.get(
+            found = DjangoPerson.objects.get(
                 identifiers__identifier=missing_id, identifiers__scheme="openstates"
             )
             merged[missing_id] = found.id
-        except Person.DoesNotExist:
+        except DjangoPerson.DoesNotExist:
             pass
 
     if merged:
@@ -321,19 +320,19 @@ def load_directory(files: list[str], purge: bool) -> None:
             click.secho(f"   {old} => {new}", fg="yellow")
             BillSponsorship.objects.filter(person_id=old).update(person_id=new)
             PersonVote.objects.filter(voter_id=old).update(voter_id=new)
-            Person.objects.filter(id=old).delete()
+            DjangoPerson.objects.filter(id=old).delete()
             missing_ids.remove(old)
 
     # ids that are still missing would need to be purged
     if missing_ids and not purge:
         click.secho(f"{len(missing_ids)} went missing, run with --purge to remove", fg="red")
         for id in missing_ids:
-            mobj = Person.objects.get(pk=id)
+            mobj = DjangoPerson.objects.get(pk=id)
             click.secho(f"  {id}: {mobj}")
         raise CancelTransaction()
     elif missing_ids and purge:
         click.secho(f"{len(missing_ids)} purged", fg="yellow")
-        Person.objects.filter(id__in=missing_ids).delete()
+        DjangoPerson.objects.filter(id__in=missing_ids).delete()
 
     click.secho(
         f"processed {len(ids)} person files, {created_count} created, " f"{updated_count} updated",
