@@ -46,7 +46,7 @@ class PersonMatcher:
 
         # read in people with current roles
         for filename in directory.glob("*.yml"):
-            person = Person.load_yaml(filename)
+            person: Person = Person.load_yaml(filename)
             chamber = ""
             for role in person.roles:
                 if role.is_active():
@@ -103,14 +103,13 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
     return combined
 
 
-def merge_committees(orig: Committee, new: Committee) -> Committee:
+def merge_committees(orig: Committee, new: ScrapeCommittee) -> Committee:
     # disallow merge of these, likely error & unclear what should happen
     if orig.parent != new.parent:
         raise ValueError("cannot merge committees with different parents")
     if orig.classification != new.classification:
         raise ValueError("cannot merge committees with different classifications")
-    if orig.jurisdiction != new.jurisdiction:
-        raise ValueError("cannot merge committees with different jurisdictions")
+    # TODO: jurisdiction isn't yet set on ScrapeCommittee... do we need another check here?
 
     merged = Committee(
         id=orig.id,  # id stays constant
@@ -137,14 +136,14 @@ class CommitteeDir:
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
         # person matcher will be prepared if/when needed
-        self.person_matcher = None
+        self.person_matcher: typing.Optional[PersonMatcher] = None
 
         # make sure a committees dir exists
         self.directory.mkdir(parents=True, exist_ok=True)
 
         for filename in self.directory.glob("*.yml"):
             try:
-                com = Committee.load_yaml(filename)
+                com: Committee = Committee.load_yaml(filename)
                 self.coms_by_chamber_and_name[com.parent][com.name] = com
             except ValidationError as ve:
                 if raise_errors:
@@ -310,7 +309,7 @@ def merge(abbr: str, input_dir: str) -> None:
 
 @main.command()  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
-def lint(abbreviations: str) -> None:
+def lint(abbreviations: list[str]) -> None:
     """
     Lint committee YAML files.
     """
@@ -323,10 +322,8 @@ def lint(abbreviations: str) -> None:
         click.secho(f"==== {abbr} ====")
         for filename, error in comdir.errors:
             click.secho(filename.name)
-            for error in error.errors():
-                click.secho(
-                    f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}", fg="red"
-                )
+            for err in error.errors():
+                click.secho(f"  {'.'.join(str(l) for l in err['loc'])}: {err['msg']}", fg="red")
                 errors += 1
         if errors:
             click.secho(f"exiting with {errors} errors", fg="red")

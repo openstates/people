@@ -1,5 +1,4 @@
 import re
-import os
 import uuid
 import typing
 import yaml
@@ -31,11 +30,11 @@ def get_all_abbreviations() -> list[str]:
 def dump_obj(
     obj: dict,
     *,
-    output_dir: typing.Union[Path] = None,
+    output_dir: typing.Optional[Path] = None,
     filename: typing.Union[Path, str, None] = None,
 ) -> None:
     if output_dir:
-        filename = os.path.join(output_dir, get_new_filename(obj))
+        filename = output_dir / get_new_filename(obj)
     if not filename:
         raise ValueError("must provide output_dir or filename parameter")
     with open(filename, "w") as f:

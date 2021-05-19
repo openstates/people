@@ -9,17 +9,17 @@ from ..utils import dump_obj
 from ..models.people import Person
 
 
-def add_vacancy(person: dict, until: datetime) -> None:
+def add_vacancy(person: Person, until: datetime) -> None:
     with open("settings.yml") as f:
         settings = yaml.safe_load(f)
-    last_role = person["roles"][-1]
-    abbr = metadata.lookup(jurisdiction_id=last_role["jurisdiction"]).abbr.lower()
+    last_role = person.roles[-1]
+    abbr = metadata.lookup(jurisdiction_id=last_role.jurisdiction).abbr.lower()
     if abbr not in settings:
         settings[abbr] = {"vacancies": []}
     settings[abbr]["vacancies"].append(
         {
-            "chamber": last_role["type"],
-            "district": last_role["district"],
+            "chamber": last_role.type,
+            "district": last_role.district,
             "vacant_until": until.date(),
         }
     )
@@ -27,7 +27,7 @@ def add_vacancy(person: dict, until: datetime) -> None:
 
 
 def retire_person(
-    person: Person, end_date: datetime, reason: typing.Optional[str] = None, death: bool = False
+    person: Person, end_date: str, reason: typing.Optional[str] = None, death: bool = False
 ) -> tuple[Person, int]:
     num = 0
     for role in person.roles:

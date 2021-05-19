@@ -15,7 +15,7 @@ def load_yaml(file_obj: typing.TextIO) -> dict:
     return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
 
 
-def find_file(leg_id: str, *, state: str = "*") -> str:
+def find_file(leg_id: str, *, state: str = "*") -> Path:
     if leg_id.startswith("ocd-person"):
         leg_id = leg_id.split("/")[1]
     assert len(leg_id) == 36

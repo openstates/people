@@ -69,12 +69,12 @@ class Summarizer:
                 role_type = role.type
                 district = role.district
                 break
-        if role_type:
+        if role_type and district:
             self.active_legislators[role_type][district].append(person)
 
-        for role in person.party:
-            if role.is_active():
-                self.parties[role.name] += 1
+        for p_role in person.party:
+            if p_role.is_active():
+                self.parties[p_role.name] += 1
 
         for cd in person.contact_details:
             for key in ("voice", "fax", "address"):
@@ -132,11 +132,11 @@ class Summarizer:
         filenames = path.glob("*.yml")
 
         for filename in filenames:
-            person = Person.load_yaml(filename)
+            person: Person = Person.load_yaml(filename)
             self.summarize(person)
 
 
-def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> None:
+def write_csv(files: list[Path], jurisdiction_id: str, output_filename: str) -> None:
     with open(output_filename, "w") as outf:
         out = csv.DictWriter(
             outf,
@@ -171,12 +171,12 @@ def write_csv(files: list[str], jurisdiction_id: str, output_filename: str) -> N
         out.writeheader()
 
         for filename in files:
-            person = Person.load_yaml(filename)
+            person: Person = Person.load_yaml(filename)
 
             # current party
-            for role in person.party:
-                if role.is_active():
-                    current_party = role.name
+            for p_role in person.party:
+                if p_role.is_active():
+                    current_party = p_role.name
                     break
 
             # current district
@@ -283,7 +283,7 @@ def _echo_org_status(org: typing.Any, created: bool, updated: bool) -> None:
         click.secho(f"{org} updated", fg="yellow")
 
 
-def load_directory_to_database(files: list[str], purge: bool) -> None:
+def load_directory_to_database(files: list[Path], purge: bool) -> None:
     from openstates.data.models import Person as DjangoPerson
     from openstates.data.models import BillSponsorship, PersonVote
 
@@ -295,7 +295,7 @@ def load_directory_to_database(files: list[str], purge: bool) -> None:
     all_data = []
     all_jurisdictions = []
     for filename in files:
-        person = Person.load_yaml(filename)
+        person: Person = Person.load_yaml(filename)
         all_data.append((person, filename))
         if person.roles:
             all_jurisdictions.append(person.roles[0].jurisdiction)
@@ -519,7 +519,7 @@ def retire(
     """
     for filename in filenames:
         # end the person's active roles & re-save
-        person = Person.load_yaml(filename)
+        person: Person = Person.load_yaml(Path(filename))
         if death:
             reason = "Deceased"
         person, num = retire_person(person, date, reason, death)
@@ -622,11 +622,13 @@ def to_database(abbreviations: list[str], purge: bool, safe: bool) -> None:
         with transaction.atomic():
             create_municipalities(municipalities)
 
-        person_files = itertools.chain(
-            directory.glob("legislature/*.yml"),
-            directory.glob("executive/*.yml"),
-            directory.glob("municipalities/*.yml"),
-            directory.glob("retired/*.yml"),
+        person_files = list(
+            itertools.chain(
+                directory.glob("legislature/*.yml"),
+                directory.glob("executive/*.yml"),
+                directory.glob("municipalities/*.yml"),
+                directory.glob("retired/*.yml"),
+            )
         )
 
         if safe:
