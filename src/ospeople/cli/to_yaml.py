@@ -1,17 +1,49 @@
 #!/usr/bin/env python
-import glob
+import re
 import json
-import os
 import click
+from pathlib import Path
 from collections import defaultdict, OrderedDict
+from openstates.utils import abbr_to_jid
 from ..utils import (
-    reformat_phone_number,
-    reformat_address,
-    get_data_dir,
-    get_jurisdiction_id,
+    get_data_path,
     dump_obj,
     ocd_uuid,
 )
+
+
+PHONE_RE = re.compile(
+    r"""^
+                      \D*(1?)\D*                                # prefix
+                      (\d{3})\D*(\d{3})\D*(\d{4}).*?             # main 10 digits
+                      (?:(?:ext|Ext|EXT)\.?\s*\s*(\d{1,4}))?    # extension
+                      $""",
+    re.VERBOSE,
+)
+
+
+def reformat_phone_number(phone: str) -> str:
+    match = PHONE_RE.match(phone)
+    if match:
+        groups = match.groups()
+
+        ext = groups[-1]
+        if ext:
+            ext = f" ext. {ext}"
+        else:
+            ext = ""
+
+        if not groups[0]:
+            groups = groups[1:-1]
+        else:
+            groups = groups[:-1]
+        return "-".join(groups) + ext
+    else:
+        return phone
+
+
+def reformat_address(address: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"\s*\n\s*", ";", address))
 
 
 def process_link(link: dict[str, str]) -> dict[str, str]:
@@ -20,11 +52,11 @@ def process_link(link: dict[str, str]) -> dict[str, str]:
     return link
 
 
-def process_dir(input_dir: str, output_dir: str, jurisdiction_id: str) -> None:
+def process_dir(input_dir: Path, output_dir: Path, jurisdiction_id: str) -> None:
     person_memberships = defaultdict(list)
 
     # collect memberships
-    for filename in glob.glob(os.path.join(input_dir, "membership_*.json")):
+    for filename in input_dir.glob("membership_*.json"):
         with open(filename) as f:
             membership = json.load(f)
 
@@ -33,7 +65,7 @@ def process_dir(input_dir: str, output_dir: str, jurisdiction_id: str) -> None:
         person_memberships[membership["person_id"]].append(membership)
 
     # process people
-    for filename in glob.glob(os.path.join(input_dir, "person_*.json")):
+    for filename in input_dir.glob("person_*.json"):
         with open(filename) as f:
             person = json.load(f)
 
@@ -41,7 +73,7 @@ def process_dir(input_dir: str, output_dir: str, jurisdiction_id: str) -> None:
         person["memberships"] = person_memberships[scrape_id]
         person = process_person(person, jurisdiction_id)
 
-        dump_obj(person, output_dir=os.path.join(output_dir, "legislature"))
+        dump_obj(person, output_dir=output_dir)
 
 
 def process_person(person: dict, jurisdiction_id: str) -> dict:
@@ -139,18 +171,18 @@ def main(input_dir: str) -> None:
             abbr = piece
             break
 
-    output_dir = get_data_dir(abbr)
-    jurisdiction_id = get_jurisdiction_id(abbr)
+    jurisdiction_id = abbr_to_jid(abbr)
 
-    output_dir = output_dir.replace("data", "incoming")
-    assert "incoming" in output_dir
+    output_dir = get_data_path(abbr)
+    output_dir = Path(str(output_dir).replace("data", "incoming")) / "legislature"
+    assert "incoming" in str(output_dir)
 
     try:
-        os.makedirs(os.path.join(output_dir, "legislature"))
+        output_dir.mkdir()
     except FileExistsError:
-        for file in glob.glob(os.path.join(output_dir, "legislature", "*.yml")):
-            os.remove(file)
-    process_dir(input_dir, output_dir, jurisdiction_id)
+        for file in output_dir.glob("*.yml"):
+            file.unlink()
+    process_dir(Path(input_dir), output_dir, jurisdiction_id)
 
 
 if __name__ == "__main__":

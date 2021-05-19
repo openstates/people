@@ -8,7 +8,8 @@ import typing
 from PIL import Image  # type: ignore
 from botocore.exceptions import ClientError  # type: ignore
 import requests
-from ..utils import get_all_abbreviations, iter_objects
+from ..utils import get_data_path
+from ..models.people import Person
 
 
 ALLOWED_CONTENT_TYPES = ("image/jpeg", "image/png", "image/gif", "image/jpg")
@@ -85,16 +86,16 @@ def resize_image(img_bytes: bytes, size: int) -> _IMAGE_RETURN_TYPE:
 
 
 def download_state_images(abbr: str, skip_existing: bool) -> None:
-    for person, _ in iter_objects(abbr, "legislature"):
-        url = person.get("image")
-        person_id = person["id"]
+    for filename in (get_data_path(abbr) / "legislature").glob("*.yml"):
+        person: Person = Person.load_yaml(filename)
+        url = person.image
         if not url:
             continue
 
         # safe to cast because we've bailed above if url is None
         img_bytes = upload(
             lambda: download_image(typing.cast(str, url)),
-            f"images/original/{person_id}",
+            f"images/original/{person.id}",
             skip_existing,
         )
         # if the image got skipped, we can't do the resizes either, this means if we add new
@@ -105,7 +106,7 @@ def download_state_images(abbr: str, skip_existing: bool) -> None:
         # resize image so largest dimension is 200px
         upload(
             lambda: resize_image(typing.cast(bytes, img_bytes), 200),
-            f"images/small/{person_id}",
+            f"images/small/{person.id}",
             skip_existing,
         )
 
@@ -117,26 +118,3 @@ def download_state_images(abbr: str, skip_existing: bool) -> None:
 #                            Attributes=["DEFAULT"])
 # algorithm suggested here seems like a good starting point
 # https://stackoverflow.com/questions/4813608/cropping-an-image-with-a-focus-area-face-using-imagemagick
-
-
-@click.command()
-@click.argument("abbreviations", nargs=-1)
-@click.option(
-    "--skip-existing/--no-skip-existing",
-    help="Skip processing for files that already exist on S3. (default: true)",
-)
-def main(abbreviations: list[str], skip_existing: bool) -> None:
-    """
-    Download images and sync them to S3.
-
-    <ABBR> can be provided to restrict to single state.
-    """
-    if not abbreviations:
-        abbreviations = get_all_abbreviations()
-
-    for abbr in abbreviations:
-        download_state_images(abbr, skip_existing)
-
-
-if __name__ == "__main__":
-    main()

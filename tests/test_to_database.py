@@ -1,7 +1,16 @@
 import pytest
-import yaml
-from openstates.data.models import Person, Organization, Jurisdiction, Division
-from ospeople.cli.to_database import load_person
+from openstates.data.models import Organization, Jurisdiction, Division
+from openstates.data.models import Person as DjangoPerson
+from ospeople.utils.to_database import load_person, cached_lookup
+from ospeople.models.people import (
+    Person,
+    Party,
+    Link,
+    Role,
+    OtherName,
+    OtherIdentifier,
+    ContactDetail,
+)
 
 
 def setup():
@@ -25,23 +34,30 @@ def setup():
         name="Cary Town Government", classification="government", jurisdiction=j2
     )
 
+    # clear cache here because we can't have lru_cache keep the old party ids, etc. around
+    # between tests as setup() is called once per test
+    cached_lookup.cache_clear()
 
-@pytest.mark.django_db
-def test_basic_person_creation():
-    data = yaml.safe_load(
-        """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    image: https://example.com/image
-    extras:
-        something: special
-    """
+
+@pytest.fixture
+def person():
+    PERSON_ID = "ocd-person/abcdefab-0000-1111-2222-1234567890ab"
+    return Person(
+        id=PERSON_ID,
+        name="Jane Smith",
+        party=[Party(name="Democratic")],
+        roles=[],
+        image="https://example.com/image",
+        extras={"something": "special"},
     )
 
-    created, updated = load_person(data)
+
+@pytest.mark.django_db
+def test_basic_person_creation(person):
+    created, updated = load_person(person)
 
     assert created is True
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     assert p.name == "Jane Smith"
     assert p.image == "https://example.com/image"
     assert p.extras["something"] == "special"
@@ -49,56 +65,42 @@ def test_basic_person_creation():
 
 
 @pytest.mark.django_db
-def test_basic_person_updates():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    image: https://example.com/image
-    extras:
-        something: special
-    """
-    data = yaml.safe_load(yaml_text)
-
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_basic_person_updates(person):
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
     created_at, updated_at = p.created_at, p.updated_at
 
     # ensure no change means no change
-    created, updated = load_person(data)
+    created, updated = load_person(person)
     assert created is False
     assert updated is False
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     assert p.created_at == created_at
     assert p.updated_at == updated_at
 
     # ensure extra changes got captured
-    data["extras"]["something"] = "changed"
-    created, updated = load_person(data)
+    person.extras["something"] = "changed"
+    created, updated = load_person(person)
     assert created is False
     assert updated is True
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     assert p.updated_at > updated_at
     assert p.extras["something"] == "changed"
 
 
 @pytest.mark.django_db
-def test_basic_person_subobjects():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    links:
-        - url: https://example.com/jane
-        - url: https://example.com/extra
-          note: some additional data
-    sources:
-        - url: https://example.com/jane
-    other_names:
-        - name: J. Smith
-    """
-    data = yaml.safe_load(yaml_text)
+def test_basic_person_subobjects(person):
+    person.links = [
+        Link(url="https://example.com"),
+        Link(url="https://example.com/2", note="some additional data"),
+    ]
+    person.sources = [Link(url="https://example.com/jane")]
+    person.other_names = [
+        OtherName(name="J. Smith"),
+    ]
 
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
     assert p.links.count() == 2
     assert p.links.filter(note="some additional data").count() == 1
@@ -107,88 +109,71 @@ def test_basic_person_subobjects():
 
 
 @pytest.mark.django_db
-def test_subobject_update():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    links:
-        - url: https://example.com/jane
-        - url: https://example.com/extra
-          note: some additional data
-    """
-    data = yaml.safe_load(yaml_text)
-
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_subobject_update(person):
+    person.links = [
+        Link(url="https://example.com"),
+        Link(url="https://example.com/2", note="some additional data"),
+    ]
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
     created_at, updated_at = p.created_at, p.updated_at
 
     # ensure no change means no change
-    created, updated = load_person(data)
+    created, updated = load_person(person)
     assert created is False
     assert updated is False
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     assert p.created_at == created_at
     assert p.updated_at == updated_at
 
     # change one field
-    data["links"][0]["url"] = "https://example.com/jane-smith"
-    created, updated = load_person(data)
+    person.links[0].url = "https://example.com/jane-smith"
+    created, updated = load_person(person)
 
     assert created is False
     assert updated is True
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     assert p.links.count() == 2
     assert p.links.filter(url="https://example.com/jane-smith").count() == 1
     assert p.updated_at > updated_at
 
     # delete a field
-    data["links"].pop()
-    created, updated = load_person(data)
+    person.links.pop()
+    created, updated = load_person(person)
     assert created is False
     assert updated is True
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     assert p.links.count() == 1
     assert p.updated_at > updated_at
 
 
 @pytest.mark.django_db
-def test_subobject_duplicate():
+def test_subobject_duplicate(person):
     # this shouldn't actually be allowed most places (lint should catch)
     # but it was breaking committee imports when two members had the same name
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    links:
-        - url: https://example.com/jane
-        - url: https://example.com/jane
-    """
-    data = yaml.safe_load(yaml_text)
-
+    person.links = [
+        Link(url="https://example.com"),
+        Link(url="https://example.com"),
+    ]
     # load twice, but second time no update should occur
-    created, updated = load_person(data)
-    created, updated = load_person(data)
+    created, updated = load_person(person)
+    created, updated = load_person(person)
     assert created is False
     assert updated is False
 
 
 @pytest.mark.django_db
-def test_person_identifiers():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    ids:
-        twitter: fakeaccount
-        youtube: fakeYT
-    other_identifiers:
-        - scheme: old_openstates
-          identifier: AR000001
-        - scheme: old_openstates
-          identifier: AR000002
-    """
-    data = yaml.safe_load(yaml_text)
-
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_person_identifiers(person):
+    person.ids.twitter = "fakeaccount"
+    person.ids.youtube = "fakeaccount"
+    person.other_identifiers.append(
+        OtherIdentifier(scheme="old_openstates", identifier="AR000001")
+    )
+    person.other_identifiers.append(
+        OtherIdentifier(scheme="old_openstates", identifier="AR000002")
+    )
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
     assert p.identifiers.count() == 4
     assert p.identifiers.filter(scheme="old_openstates").count() == 2
@@ -196,72 +181,65 @@ def test_person_identifiers():
 
 
 @pytest.mark.django_db
-def test_person_contact_details():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    email: fake@example.com
-    contact_details:
-        - note: Capitol Office office
-          fax: 111-222-3333
-          voice: 555-555-5555
-          address: 123 Main St; Washington DC; 20001
-        - note: home
-          voice: 333-333-3333
-    """
-    data = yaml.safe_load(yaml_text)
+def test_person_contact_details(person):
+    person.email = "fake@example.com"
+    person.contact_details.append(
+        ContactDetail(
+            note="Capitol Office",
+            fax="111-222-3333",
+            voice="555-555-5555",
+            address="123 Main St; Washington DC",
+        )
+    )
+    person.contact_details.append(
+        ContactDetail(
+            note="Primary Office",
+            voice="333-333-5555",
+        )
+    )
 
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
     assert p.email == "fake@example.com"
     assert p.contact_details.count() == 4
-    assert p.contact_details.filter(note="home").count() == 1
+    assert p.contact_details.filter(note="Primary Office").count() == 1
 
 
 @pytest.mark.django_db
-def test_person_party():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    party:
-        - name: Democratic
-    """
-    data = yaml.safe_load(yaml_text)
-
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_person_party(person):
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
     assert p.memberships.count() == 1
     assert p.memberships.get().organization.name == "Democratic"
     assert p.primary_party == "Democratic"
 
-    data["party"].append({"name": "Republican", "end_date": "2018-10-06"})
-    created, updated = load_person(data)
+    person.party.append(Party(name="Republican", end_date="2018-10-06"))
+    created, updated = load_person(person)
     assert updated is True
     assert p.primary_party == "Democratic"
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+    p = DjangoPerson.objects.get(pk=person.id)
     p.memberships.count() == 2
     p.memberships.exclude(end_date="").count() == 1
 
 
 @pytest.mark.django_db
-def test_person_legislative_roles():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    roles:
-        - type: lower
-          district: 3
-          jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-    """
-    data = yaml.safe_load(yaml_text)
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_person_legislative_roles(person):
+    person.roles.append(
+        Role(
+            type="lower",
+            district=3,
+            jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
+        )
+    )
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
-    assert p.memberships.count() == 1
-    assert p.memberships.get().organization.name == "House"
-    assert p.memberships.get().post.label == "3"
+    # party and legislative
+    assert p.memberships.count() == 2
+    assert p.memberships.get(organization__classification="lower").organization.name == "House"
+    assert p.memberships.get(organization__classification="lower").post.label == "3"
     assert p.current_role == {
         "org_classification": "lower",
         "district": 3,
@@ -272,20 +250,22 @@ def test_person_legislative_roles():
 
 
 @pytest.mark.django_db
-def test_person_governor_role():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    roles:
-        - type: governor
-          jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-    """
-    data = yaml.safe_load(yaml_text)
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_person_governor_role(person):
+    person.roles.append(
+        Role(
+            type="governor",
+            jurisdiction="ocd-jurisdiction/country:us/state:nc/government",
+            end_date="2030-01-01",
+        )
+    )
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
-    assert p.memberships.count() == 1
-    assert p.memberships.get().organization.name == "Executive"
+    assert p.memberships.count() == 2
+    assert (
+        p.memberships.get(organization__classification="executive").organization.name
+        == "Executive"
+    )
     assert p.current_role == {
         "org_classification": "executive",
         "district": None,
@@ -296,19 +276,18 @@ def test_person_governor_role():
 
 
 @pytest.mark.django_db
-def test_person_mayor_role():
-    yaml_text = """
-    id: abcdefab-0000-1111-2222-1234567890ab
-    name: Jane Smith
-    roles:
-        - type: mayor
-          jurisdiction: ocd-jurisdiction/country:us/state:nc/place:cary/government
-    """
-    data = yaml.safe_load(yaml_text)
-    created, updated = load_person(data)
-    p = Person.objects.get(pk="abcdefab-0000-1111-2222-1234567890ab")
+def test_person_mayor_role(person):
+    person.roles.append(
+        Role(
+            type="mayor",
+            jurisdiction="ocd-jurisdiction/country:us/state:nc/place:cary/government",
+            end_date="2030-01-01",
+        )
+    )
+    created, updated = load_person(person)
+    p = DjangoPerson.objects.get(pk=person.id)
 
-    assert p.memberships.count() == 1
+    assert p.memberships.count() == 2
     assert p.current_role == {
         "org_classification": "government",
         "district": None,
@@ -318,6 +297,3 @@ def test_person_mayor_role():
     assert (
         p.current_jurisdiction_id == "ocd-jurisdiction/country:us/state:nc/place:cary/government"
     )
-
-
-EXAMPLE_ORG_ID = "ocd-organization/00000000-1111-2222-3333-444455556666"

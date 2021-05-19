@@ -13,8 +13,9 @@ import yaml
 from yaml.representer import Representer
 from pydantic import ValidationError
 from openstates.metadata import lookup
-from ..utils import get_data_dir, load_yaml, role_is_active, get_all_abbreviations
+from ..utils import get_data_path, get_all_abbreviations
 from ..models.committees import Committee, ScrapeCommittee
+from ..models.people import Person
 
 yaml.SafeDumper.add_representer(defaultdict, Representer.represent_dict)
 yaml.SafeDumper.add_multi_representer(Enum, Representer.represent_str)
@@ -41,22 +42,21 @@ class PersonMatcher:
 
         # allow directory override for testing purposes
         if not directory:
-            directory = Path(get_data_dir(abbr)) / "legislature"
+            directory = get_data_path(abbr) / "legislature"
 
         # read in people with current roles
         for filename in directory.glob("*.yml"):
-            with open(filename) as file:
-                person = load_yaml(file)
+            person: Person = Person.load_yaml(filename)
             chamber = ""
-            for role in person["roles"]:
-                if role_is_active(role):
-                    chamber = typing.cast(str, role["type"])
+            for role in person.roles:
+                if role.is_active():
+                    chamber = role.type
                     break
-            self.add_name(chamber, person["name"], person["id"])
-            if person.get("family_name"):
-                self.add_name(chamber, person["family_name"], person["id"])
-            for name in person.get("other_names", []):
-                self.add_name(chamber, name["name"], person["id"])
+            self.add_name(chamber, person.name, person.id)
+            if person.family_name:
+                self.add_name(chamber, person.family_name, person.id)
+            for name in person.other_names:
+                self.add_name(chamber, name.name, person.id)
 
     def add_name(self, chamber: str, name_piece: str, id_: str) -> None:
         self.all_ids.add(id_)
@@ -103,14 +103,13 @@ def merge_lists(orig: list, new: list, key_attr: str) -> list:
     return combined
 
 
-def merge_committees(orig: Committee, new: Committee) -> Committee:
+def merge_committees(orig: Committee, new: ScrapeCommittee) -> Committee:
     # disallow merge of these, likely error & unclear what should happen
     if orig.parent != new.parent:
         raise ValueError("cannot merge committees with different parents")
     if orig.classification != new.classification:
         raise ValueError("cannot merge committees with different classifications")
-    if orig.jurisdiction != new.jurisdiction:
-        raise ValueError("cannot merge committees with different jurisdictions")
+    # TODO: jurisdiction isn't yet set on ScrapeCommittee... do we need another check here?
 
     merged = Committee(
         id=orig.id,  # id stays constant
@@ -132,26 +131,24 @@ class CommitteeDir:
     ):
         self.abbr = abbr
         # allow overriding directory explicitly, useful for testing
-        self.directory = directory if directory else Path(get_data_dir(abbr)) / "committees"
+        self.directory = directory if directory else get_data_path(abbr) / "committees"
         # chamber -> name -> Committee
         self.coms_by_chamber_and_name: defaultdict[str, dict[str, Committee]] = defaultdict(dict)
         self.errors = []
         # person matcher will be prepared if/when needed
-        self.person_matcher = None
+        self.person_matcher: typing.Optional[PersonMatcher] = None
 
         # make sure a committees dir exists
         self.directory.mkdir(parents=True, exist_ok=True)
 
         for filename in self.directory.glob("*.yml"):
-            with open(filename) as file:
-                data = load_yaml(file)
-                try:
-                    com = Committee(**data)
-                    self.coms_by_chamber_and_name[com.parent][com.name] = com
-                except ValidationError as ve:
-                    if raise_errors:
-                        raise
-                    self.errors.append((filename, ve))
+            try:
+                com: Committee = Committee.load_yaml(filename)
+                self.coms_by_chamber_and_name[com.parent][com.name] = com
+            except ValidationError as ve:
+                if raise_errors:
+                    raise
+                self.errors.append((filename, ve))
 
     def get_new_filename(self, obj: Committee) -> str:
         id = obj.id.split("/")[1]
@@ -262,7 +259,7 @@ def main() -> None:
 @click.argument("input_dir")
 def merge(abbr: str, input_dir: str) -> None:
     """
-    Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
+    Merge scraped committee data into repo.
     """
     comdir = CommitteeDir(abbr)
 
@@ -312,9 +309,9 @@ def merge(abbr: str, input_dir: str) -> None:
 
 @main.command()  # pragma: no cover
 @click.argument("abbreviations", nargs=-1)
-def lint(abbreviations: str) -> None:
+def lint(abbreviations: list[str]) -> None:
     """
-    Convert scraped committee JSON in INPUT_DIR to YAML files for this repo.
+    Lint committee YAML files.
     """
     if not abbreviations:
         abbreviations = get_all_abbreviations()
@@ -325,10 +322,8 @@ def lint(abbreviations: str) -> None:
         click.secho(f"==== {abbr} ====")
         for filename, error in comdir.errors:
             click.secho(filename.name)
-            for error in error.errors():
-                click.secho(
-                    f"  {'.'.join(str(l) for l in error['loc'])}: {error['msg']}", fg="red"
-                )
+            for err in error.errors():
+                click.secho(f"  {'.'.join(str(l) for l in err['loc'])}: {err['msg']}", fg="red")
                 errors += 1
         if errors:
             click.secho(f"exiting with {errors} errors", fg="red")

@@ -1,6 +1,5 @@
 import uuid
 from collections import defaultdict
-from pathlib import Path
 import us
 import requests
 import click
@@ -13,7 +12,7 @@ from ..models.people import (
     Link,
     PersonIdBlock,
 )
-from ..utils import dump_obj, get_data_dir
+from ..utils import dump_obj, get_data_path
 
 # chosen at random, but needs to be constant
 US_UUID_NAMESPACE = uuid.UUID("bf6b57c6-8cfe-454c-bd26-9c2b508c30b2")
@@ -140,7 +139,7 @@ def main() -> None:
     """
     Create/Update United States legislators from unitedstates.io
     """
-    output_dir = Path(get_data_dir("us")) / "legislature"
+    output_dir = get_data_path("us") / "legislature"
     district_offices = get_district_offices()
     social = get_social()
     for bioguide, person in fetch_current():

@@ -1,6 +1,7 @@
 import pytest
 import datetime
-from ospeople.cli.lint_yaml import (
+from pathlib import Path
+from ospeople.utils.lint_people import (
     validate_name,
     validate_roles,
     validate_offices,
@@ -196,7 +197,9 @@ def test_person_duplicates():
         {"id": "ocd-person/4", "name": "Four", "ids": {"twitter": "no-twitter"}},
     ]
     for person in people:
-        v.validate_person(PersonData(person, person["name"] + ".yml", PersonType.LEGISLATIVE))
+        v.validate_person(
+            PersonData(person, Path(person["name"] + ".yml"), PersonType.LEGISLATIVE)
+        )
     errors = v.check_duplicates()
     assert len(errors) == 3
     assert 'duplicate youtube: "fake" One.yml, Two.yml' in errors
@@ -207,7 +210,7 @@ def test_person_duplicates():
 def test_filename_id_test():
     person = {"id": EXAMPLE_OCD_PERSON_ID, "name": "Jane Smith", "roles": [], "party": []}
     v = Validator("ak", {"parties": []}, False)
-    v.validate_person(PersonData(person, "bad-filename", PersonType.LEGISLATIVE))
+    v.validate_person(PersonData(person, Path("bad-filename"), PersonType.LEGISLATIVE))
     for err in v.errors["bad-filename"]:
         if "not in filename" in err:
             break

@@ -5,17 +5,9 @@ description = ""
 authors = ["James Turk <james@openstates.org>"]
 
 [tool.poetry.scripts]
+os-people = 'ospeople.cli.people:main'
 os-committees = 'ospeople.cli.committees:main'
-os-lint-yaml = 'ospeople.cli.lint_yaml:main'
-os-manual-data = 'ospeople.cli.manual_data:main'
 os-merge = 'ospeople.cli.merge:main'
-os-new-person = 'ospeople.cli.new_person:main'
-os-retire = 'ospeople.cli.retire:main'
-os-social-csv-import = 'ospeople.cli.social_csv_import:main'
-os-summarize = 'ospeople.cli.summarize:main'
-os-sync-images = 'ospeople.cli.sync_images:main'
-os-to-csv = 'ospeople.cli.to_csv:main'
-os-to-database = 'ospeople.cli.to_database:main'
 os-to-yaml = 'ospeople.cli.to_yaml:main'
 os-us-to-yaml = 'ospeople.cli.convert_us:main'
 
@@ -31,6 +23,7 @@ pillow = "^8.1"
 openstates = "^5.11.1"
 spatula = "^0.6.0"
 pydantic = "^1.8.1"
+mypy = "^0.812"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"
@@ -39,6 +32,7 @@ pytest-django = "^3.5"
 pytest-cov = "^2.7"
 coveralls = "^1.8"
 invoke = "^1.5.0"
+mypy = "^0.812"
 
 [tool.black]
 line-length = 99

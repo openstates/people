@@ -1,11 +1,38 @@
-#!/usr/bin/env python
+import typing
 import os
-import glob
 import click
+import itertools
+from pathlib import Path
 from collections import defaultdict
+import yaml
+import yamlordereddictloader  # type: ignore
 from openstates import metadata
-from ..utils import get_new_filename, get_data_dir, load_yaml, dump_obj, find_file, retire_file
-from .retire import retire_person
+from ..utils import get_new_filename, get_data_path, dump_obj, retire_file
+from ..utils.retire import retire_person
+
+
+def load_yaml(file_obj: typing.TextIO) -> dict:
+    return yaml.load(file_obj, Loader=yamlordereddictloader.SafeLoader)
+
+
+def find_file(leg_id: str, *, state: str = "*") -> Path:
+    if leg_id.startswith("ocd-person"):
+        leg_id = leg_id.split("/")[1]
+    assert len(leg_id) == 36
+
+    if state == "*":
+        filedir = get_data_path(".")
+        files = list(filedir.glob(f"*/*/*{leg_id}.yml"))
+    else:
+        filedir = get_data_path(state)
+        files = list(filedir.glob(f"*/*{leg_id}.yml"))
+
+    if len(files) == 1:
+        return files[0]
+    elif len(files) > 1:
+        raise ValueError(f"multiple files with same leg_id: {leg_id}")
+    else:
+        raise FileNotFoundError()
 
 
 def merge_contact_details(old, new):
@@ -335,15 +362,17 @@ def main(incoming, old, new, retirement):
     if incoming:
         abbr = incoming
         existing_people = []
-        for filename in glob.glob(
-            os.path.join(get_data_dir(abbr), "legislature/*.yml")
-        ) + glob.glob(os.path.join(get_data_dir(abbr), "retired/*.yml")):
+        directory = get_data_path(abbr)
+        for filename in itertools.chain(
+            directory.glob("legislature/*.yml"),
+            directory.glob("retired/*.yml"),
+        ):
             with open(filename) as f:
                 existing_people.append(load_yaml(f))
 
         new_people = []
-        incoming_dir = get_data_dir(abbr).replace("data", "incoming")
-        for filename in glob.glob(os.path.join(incoming_dir, "legislature/*.yml")):
+        incoming_dir = Path(str(directory).replace("data", "incoming"))
+        for filename in incoming_dir.glob("legislature/*.yml"):
             with open(filename) as f:
                 new_people.append(load_yaml(f))
 

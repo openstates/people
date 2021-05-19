@@ -54,12 +54,12 @@ class Committee(ScrapeCommittee):
     _validate_jurisdiction = validator("jurisdiction", allow_reuse=True)(validate_ocd_jurisdiction)
 
     @validator("id")
-    def valid_ocd_org_format(cls, v):
+    def valid_ocd_org_format(cls, v: str) -> str:
         if not ORG_ID_RE.match(v):
             raise ValueError("must match ocd-organization/UUID format")
         return v
 
-    def to_dict(self):
+    def to_dict(self) -> dict[str, typing.Any]:
         # hack to always have id on top
         return {
             "id": self.id,

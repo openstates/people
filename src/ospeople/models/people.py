@@ -15,37 +15,39 @@ from .common import (
     validate_ocd_jurisdiction,
     validate_str_no_newline,
 )
-from ..utils import MAJOR_PARTIES
+
+# can only have one of these at a time
+MAJOR_PARTIES = ("Democratic", "Republican", "Independent")
 
 SUFFIX_RE = re.compile(r"(iii?)|(i?v)|((ed|ph|m|o)\.?d\.?)|([sj]r\.?)|(esq\.?)", re.I)
 PHONE_RE = re.compile(r"^(1-)?\d{3}-\d{3}-\d{4}( ext. \d+)?$")
-
-ALL_PARTIES = (
-    "Democratic",
-    "Green",
-    "Independent",
-    "Libertarian",
-    "Nonpartisan",
-    "Progressive",
-    "Republican",
-    "Democratic-Farmer-Labor",
-    "Democratic/Progressive",
-    "Progressive/Democratic",
-    "Republican/Democratic",
-    "Carter County Republican",
-    "Independence",
-    "Partido Independentista Puertorrique\xF1o",
-    "Partido Nuevo Progresista",
-    "Partido Popular Democr\xE1tico",
-    "Proyecto Dignidad",
-    "Movimiento Victoria Ciudadana",
-)
 
 
 def validate_phone(val: str) -> str:
     if val and not PHONE_RE.match(val):
         raise ValueError("invalid phone number")
     return val
+
+
+class PartyName(str, Enum):
+    DEM = "Democratic"
+    GREEN = "Green"
+    IND = "Independent"
+    LIB = "Libertarian"
+    NP = "Nonpartisan"
+    PROG = "Progressive"
+    REP = "Republican"
+    MN_DFL = "Democratic-Farmer-Labor"
+    VT_DEM_PROG = "Democratic/Progressive"
+    VT_PROG_DEM = "Progressive/Democratic"
+    VT_REP_DEM = "Republican/Democratic"
+    TN_CC_REP = "Carter County Republican"
+    NY_INDEPENDENCE = "Independence"
+    PR_PIP = "Partido Independentista Puertorrique\xF1o"
+    PR_PNP = "Partido Nuevo Progresista"
+    PR_PPD = "Partido Popular Democr\xE1tico"
+    PR_PD = "Proyecto Dignidad"
+    PR_MVC = "Movimiento Victoria Ciudadana"
 
 
 class RoleType(str, Enum):
@@ -94,7 +96,7 @@ class PersonIdBlock(BaseModel):
 
 
 class Party(TimeScoped):
-    name: str
+    name: PartyName
 
     _validate_strs = validator("name", allow_reuse=True)(validate_str_no_newline)
 
@@ -109,7 +111,9 @@ class Role(TimeScoped):
     _validate_jurisdiction = validator("jurisdiction", allow_reuse=True)(validate_ocd_jurisdiction)
 
     @root_validator
-    def check_conditional_required_fields(cls, values):
+    def check_conditional_required_fields(
+        cls, values: dict[str, typing.Any]
+    ) -> dict[str, typing.Any]:
         # executives require end_date, everyone else requires a district & party
         office_type = values.get("type")
         end_date = values.get("end_date")
@@ -131,7 +135,7 @@ class ContactDetail(BaseModel):
     _validate_phones = validator("voice", "fax", allow_reuse=True)(validate_phone)
 
     @root_validator
-    def check_have_at_least_one_value(cls, values):
+    def check_have_at_least_one_value(cls, values: dict[str, typing.Any]) -> dict[str, typing.Any]:
         if not any((values.get("address"), values.get("voice"), values.get("fax"))):
             raise ValueError("must have at least one valid contact type for the office")
         return values
@@ -157,22 +161,20 @@ class Person(BaseModel):
     contact_details: list[ContactDetail] = []
     links: list[Link] = []
     other_names: list[OtherName] = []
-    ids: typing.Optional[PersonIdBlock] = None
+    ids: PersonIdBlock = PersonIdBlock()
     other_identifiers: list[OtherIdentifier] = []
     sources: list[Link] = []
     extras: dict = {}
 
     @root_validator
-    def check_active_party(cls, values):
+    def check_active_party(cls, values: dict[str, typing.Any]) -> dict[str, typing.Any]:
         require_party = False
         for role in values.get("roles", []):
             if role.is_active() and role.type in LEGISLATIVE_ROLES:
                 require_party = True
 
         active_parties = []
-        for party in values.get("party"):
-            if party.name not in ALL_PARTIES:
-                raise ValueError(f"invalid party {party.name}")
+        for party in values.get("party", []):
             if party.is_active():
                 active_parties.append(party.name)
 
