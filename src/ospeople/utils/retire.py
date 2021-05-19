@@ -2,6 +2,7 @@
 import typing
 import os
 import yaml
+from pathlib import Path
 from datetime import datetime
 from openstates import metadata
 from ..utils import dump_obj
@@ -45,7 +46,9 @@ def retire_person(
     return person, num
 
 
-def retire_file(filename: str) -> str:  # pragma: no cover
+def retire_file(filename: typing.Union[Path, str]) -> str:  # pragma: no cover
+    if isinstance(filename, Path):
+        filename = str(filename)
     new_filename = filename.replace("/legislature/", "/retired/").replace(
         "/municipalities/", "/retired/"
     )

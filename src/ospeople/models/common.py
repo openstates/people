@@ -18,13 +18,13 @@ PERSON_ID_RE = re.compile(
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 
 
-def validate_str_no_newline(v):
+def validate_str_no_newline(v: typing.Any) -> str:
     if isinstance(v, str) and "\n" in v:
         raise ValueError("must be a string without newline")
     return v
 
 
-def validate_fuzzy_date(v):
+def validate_fuzzy_date(v: typing.Any) -> typing.Union[datetime.date, str]:
     if isinstance(v, datetime.date):
         return v
     elif isinstance(v, str) and DATE_RE.match(v):
@@ -33,13 +33,13 @@ def validate_fuzzy_date(v):
         raise ValueError("invalid date")
 
 
-def validate_ocd_person(v):
+def validate_ocd_person(v: typing.Any) -> str:
     if isinstance(v, str) and not PERSON_ID_RE.match(v):
         raise ValueError("must match ocd-person/UUID format")
     return v
 
 
-def validate_ocd_jurisdiction(v):
+def validate_ocd_jurisdiction(v: typing.Any) -> str:
     try:
         lookup(jurisdiction_id=v)
     except KeyError:
@@ -48,7 +48,7 @@ def validate_ocd_jurisdiction(v):
     return v
 
 
-def validate_url(v):
+def validate_url(v: str) -> str:
     if not v.startswith(("http://", "https://", "ftp://")):
         raise ValueError("URL must start with protocol")
     return v
@@ -60,7 +60,7 @@ class BaseModel(PydanticBaseModel):
         extra = "forbid"
         validate_assignment = True
 
-    def to_dict(self):
+    def to_dict(self) -> dict[str, typing.Any]:
         # TODO: replace this with first class pydantic support in spatula
         return self.dict()
 
@@ -85,7 +85,7 @@ class TimeScoped(BaseModel):
 
     _validate_dates = validator("start_date", "end_date", allow_reuse=True)(validate_fuzzy_date)
 
-    def is_active(self):
+    def is_active(self) -> bool:
         date = datetime.datetime.utcnow().date().isoformat()
         return (self.end_date == "" or str(self.end_date) > date) and (
             self.start_date == "" or str(self.start_date) <= date

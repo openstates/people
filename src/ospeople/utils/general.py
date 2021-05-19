@@ -29,7 +29,10 @@ def get_all_abbreviations() -> list[str]:
 
 
 def dump_obj(
-    obj: dict, *, output_dir: typing.Optional[str] = None, filename: typing.Optional[str] = None
+    obj: dict,
+    *,
+    output_dir: typing.Union[Path] = None,
+    filename: typing.Union[Path, str, None] = None,
 ) -> None:
     if output_dir:
         filename = os.path.join(output_dir, get_new_filename(obj))

@@ -111,7 +111,9 @@ class Role(TimeScoped):
     _validate_jurisdiction = validator("jurisdiction", allow_reuse=True)(validate_ocd_jurisdiction)
 
     @root_validator
-    def check_conditional_required_fields(cls, values):
+    def check_conditional_required_fields(
+        cls, values: dict[str, typing.Any]
+    ) -> dict[str, typing.Any]:
         # executives require end_date, everyone else requires a district & party
         office_type = values.get("type")
         end_date = values.get("end_date")
@@ -133,7 +135,7 @@ class ContactDetail(BaseModel):
     _validate_phones = validator("voice", "fax", allow_reuse=True)(validate_phone)
 
     @root_validator
-    def check_have_at_least_one_value(cls, values):
+    def check_have_at_least_one_value(cls, values: dict[str, typing.Any]) -> dict[str, typing.Any]:
         if not any((values.get("address"), values.get("voice"), values.get("fax"))):
             raise ValueError("must have at least one valid contact type for the office")
         return values
@@ -165,14 +167,14 @@ class Person(BaseModel):
     extras: dict = {}
 
     @root_validator
-    def check_active_party(cls, values):
+    def check_active_party(cls, values: dict[str, typing.Any]) -> dict[str, typing.Any]:
         require_party = False
         for role in values.get("roles", []):
             if role.is_active() and role.type in LEGISLATIVE_ROLES:
                 require_party = True
 
         active_parties = []
-        for party in values.get("party"):
+        for party in values.get("party", []):
             if party.is_active():
                 active_parties.append(party.name)
 
