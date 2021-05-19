@@ -37,7 +37,7 @@ class CheckResult:
 
 @dataclass
 class PersonData:
-    data: Person
+    data: dict[str, typing.Any]
     filename: Path
     person_type: PersonType
 

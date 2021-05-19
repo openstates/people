@@ -54,6 +54,9 @@ def validate_url(v: str) -> str:
     return v
 
 
+BaseT = typing.TypeVar("BaseT", bound="BaseModel")
+
+
 class BaseModel(PydanticBaseModel):
     class Config:
         anystr_strip_whitespace = True
@@ -65,10 +68,10 @@ class BaseModel(PydanticBaseModel):
         return self.dict()
 
     @classmethod
-    def load_yaml(cls, filename: Path) -> "BaseModel":
+    def load_yaml(cls, filename: Path) -> BaseT:
         with open(filename) as file:
             data = yaml.safe_load(file)
-            return cls(**data)
+            return cls(**data)  # type: ignore
 
 
 class Link(BaseModel):

@@ -87,7 +87,7 @@ def resize_image(img_bytes: bytes, size: int) -> _IMAGE_RETURN_TYPE:
 
 def download_state_images(abbr: str, skip_existing: bool) -> None:
     for filename in (get_data_path(abbr) / "legislature").glob("*.yml"):
-        person = Person.load_yaml(filename)
+        person: Person = Person.load_yaml(filename)
         url = person.image
         if not url:
             continue

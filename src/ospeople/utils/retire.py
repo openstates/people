@@ -28,7 +28,7 @@ def add_vacancy(person: dict, until: datetime) -> None:
 
 def retire_person(
     person: Person, end_date: datetime, reason: typing.Optional[str] = None, death: bool = False
-) -> tuple[dict, int]:
+) -> tuple[Person, int]:
     num = 0
     for role in person.roles:
         if role.is_active():
