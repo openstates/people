@@ -192,7 +192,7 @@ class Person(BaseModel):
         return values
 
     @validator("name")
-    def no_bad_comma(self, val: str) -> str:
+    def no_bad_comma(val: str) -> str:
         pieces = val.split(",")
         if len(pieces) > 2:
             raise ValueError("too many commas, check if name is mangled")
