@@ -15,7 +15,16 @@ from ..utils import (
     ocd_uuid,
 )
 from ..utils.retire import retire_person, retire_file
-from ..models.people import ScrapePerson, Person, Role, Party, ContactDetail, Link
+from ..models.people import (
+    ScrapePerson,
+    Person,
+    Role,
+    Party,
+    ContactDetail,
+    Link,
+    OtherName,
+    OtherIdentifier,
+)
 
 
 def find_file(leg_id: str, *, state: str = "*") -> Path:
@@ -166,12 +175,14 @@ def compute_merge(
             if val1 != val2 and keep_both_ids:
                 # old id stays as id: to keep things sane
                 changes.append(
-                    Append("other_identifiers", {"scheme": "openstates", "identifier": val2})
+                    Append(
+                        "other_identifiers", OtherIdentifier(scheme="openstates", identifier=val2)
+                    )
                 )
         elif key == "name":
             if val1 != val2:
                 # new name becomes name, but old name goes into other_names
-                changes.append(Append("other_names", {"name": val1}))
+                changes.append(Append("other_names", OtherName(name=val1)))
                 changes.append(Replace("name", val1, val2))
         elif key == "contact_details":
             changed = merge_contact_details(val1, val2)
@@ -191,7 +202,7 @@ def compute_merge(
             changes.extend(compute_merge(val1, val2, prefix=key_name))
         else:
             # if values both exist and differ, or val1 is empty, do a Replace
-            if (val1 and val2 and val1 != val2) or (val1 is None):
+            if (val1 and val2 and val1 != val2) or not val1:
                 changes.append(Replace(key_name, val1, val2))
 
     return changes
