@@ -147,7 +147,7 @@ def main() -> None:
         person.ids = social[bioguide]
         person.sources.append(Link(url="https://theunitedstates.io/"))
         person.image = f"https://theunitedstates.io/images/congress/450x550/{bioguide}.jpg"
-        dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
+        dump_obj(person, output_dir=output_dir)
 
 
 if __name__ == "__main__":

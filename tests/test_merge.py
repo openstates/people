@@ -1,5 +1,5 @@
 import pytest
-from ospeople.cli.merge import (
+from ospeople.cli.to_yaml import (
     compute_merge,
     Append,
     Replace,
@@ -7,6 +7,8 @@ from ospeople.cli.merge import (
     merge_contact_details,
     find_file,
 )
+from ospeople.models.people import OtherName, OtherIdentifier, ContactDetail
+from pydantic import BaseModel
 
 
 @pytest.mark.parametrize(
@@ -23,7 +25,11 @@ from ospeople.cli.merge import (
     ],
 )
 def test_compute_merge_simple(a, b, output):
-    assert compute_merge(a, b) == output
+    class Model(BaseModel):
+        a: str = None
+        b: str = None
+
+    assert compute_merge(Model(**a), Model(**b)) == output
 
 
 @pytest.mark.parametrize(
@@ -38,7 +44,13 @@ def test_compute_merge_simple(a, b, output):
     ],
 )
 def test_compute_merge_nested(a, b, output):
-    assert compute_merge(a, b) == output
+    class Inner(BaseModel):
+        b: str = None
+
+    class Model(BaseModel):
+        a: Inner = None
+
+    assert compute_merge(Model(**a), Model(**b)) == output
 
 
 @pytest.mark.parametrize(
@@ -59,7 +71,10 @@ def test_compute_merge_nested(a, b, output):
     ],
 )
 def test_compute_merge_list(a, b, output):
-    assert compute_merge(a, b) == output
+    class Model(BaseModel):
+        a: list[dict]
+
+    assert compute_merge(Model(**a), Model(**b)) == output
 
 
 @pytest.mark.parametrize(
@@ -72,19 +87,23 @@ def test_compute_merge_list(a, b, output):
             {"id": "1"},
             {"id": "2"},
             True,
-            [Append("other_identifiers", {"identifier": "2", "scheme": "openstates"})],
+            [Append("other_identifiers", OtherIdentifier(identifier="2", scheme="openstates"))],
         ),
         # append name
         (
             {"name": "A"},
             {"name": "B"},
             True,
-            [Append("other_names", {"name": "A"}), Replace("name", "A", "B")],
+            [Append("other_names", OtherName(name="A")), Replace("name", "A", "B")],
         ),
     ],
 )
 def test_compute_merge_special_cases(a, b, keep_both, output):
-    assert compute_merge(a, b, keep_both_ids=keep_both) == output
+    class Model(BaseModel):
+        id: str = None
+        name: str = ""
+
+    assert compute_merge(Model(**a), Model(**b), keep_both_ids=keep_both) == output
 
 
 @pytest.mark.parametrize(
@@ -108,12 +127,17 @@ def test_compute_merge_special_cases(a, b, keep_both, output):
         (
             {"name": "Bob"},
             {"name": "Robert"},
-            {"name": "Robert", "other_names": [{"name": "Bob"}]},
+            {"name": "Robert", "other_names": [OtherName(name="Bob")]},
         ),
     ],
 )
 def test_simple_merge(old, new, expected):
-    assert merge_people(old, new) == expected
+    class Model(BaseModel):
+        name: str
+        birth_date: str = ""
+        other_names: list[OtherName] = []
+
+    assert merge_people(Model(**old), Model(**new)) == Model(**expected)
 
 
 @pytest.mark.parametrize(
@@ -140,8 +164,11 @@ def test_simple_merge(old, new, expected):
     ],
 )
 def test_list_merge(old, new, expected):
+    class Model(BaseModel):
+        other_names: list[OtherName] = []
+
     # note that keep doesn't matter for these
-    assert merge_people(old, new, None) == expected
+    assert merge_people(Model(**old), Model(**new), None) == Model(**expected)
 
 
 @pytest.mark.parametrize(
@@ -153,45 +180,53 @@ def test_list_merge(old, new, expected):
             {"id": "ocd-person/2"},
             {
                 "id": "ocd-person/1",
-                "other_identifiers": [{"scheme": "openstates", "identifier": "ocd-person/2"}],
+                "other_identifiers": [
+                    OtherIdentifier(scheme="openstates", identifier="ocd-person/2")
+                ],
             },
         ),
         # already has identifiers
         (
             {
                 "id": "ocd-person/1",
-                "other_identifiers": [{"scheme": "openstates", "identifier": "ocd-person/0"}],
+                "other_identifiers": [
+                    OtherIdentifier(scheme="openstates", identifier="ocd-person/0")
+                ],
             },
             {"id": "ocd-person/2"},
             {
                 "id": "ocd-person/1",
                 "other_identifiers": [
-                    {"scheme": "openstates", "identifier": "ocd-person/0"},
-                    {"scheme": "openstates", "identifier": "ocd-person/2"},
+                    OtherIdentifier(scheme="openstates", identifier="ocd-person/0"),
+                    OtherIdentifier(scheme="openstates", identifier="ocd-person/2"),
                 ],
             },
         ),
     ],
 )
 def test_keep_both_ids(old, new, expected):
-    assert merge_people(old, new, keep_both_ids=True) == expected
+    class Model(BaseModel):
+        id: str
+        other_identifiers: list[OtherIdentifier] = []
+
+    assert merge_people(Model(**old), Model(**new), keep_both_ids=True) == Model(**expected)
 
 
 @pytest.mark.parametrize(
     "old, new",
     [
         (
-            [{"note": "Capitol Office", "voice": "123"}],
-            [{"note": "Capitol Office", "voice": "123"}],
+            [ContactDetail(note="Capitol Office", voice="123-555-9999")],
+            [ContactDetail(note="Capitol Office", voice="123-555-9999")],
         ),
         (
             [
-                {"note": "Capitol Office", "voice": "123"},
-                {"note": "District Office", "address": "abc"},
+                ContactDetail(note="Capitol Office", voice="123-555-9999"),
+                ContactDetail(note="District Office", address="abc"),
             ],
             [
-                {"note": "Capitol Office", "voice": "123"},
-                {"note": "District Office", "address": "abc"},
+                ContactDetail(note="Capitol Office", voice="123-555-9999"),
+                ContactDetail(note="District Office", address="abc"),
             ],
         ),
     ],
@@ -205,23 +240,23 @@ def test_merge_contact_details_no_change(old, new):
     [
         # replace a value with a new one
         (
-            [{"note": "Capitol Office", "voice": "123"}],
-            [{"note": "Capitol Office", "voice": "456"}],
-            [{"note": "Capitol Office", "voice": "456"}],
+            [ContactDetail(note="Capitol Office", voice="111-111-1111")],
+            [ContactDetail(note="Capitol Office", voice="222-222-2222")],
+            [ContactDetail(note="Capitol Office", voice="222-222-2222")],
         ),
         # merge two partial records
         (
-            [{"note": "Capitol Office", "voice": "123"}],
-            [{"note": "Capitol Office", "fax": "456"}],
-            [{"note": "Capitol Office", "voice": "123", "fax": "456"}],
+            [ContactDetail(note="Capitol Office", voice="111-111-1111")],
+            [ContactDetail(note="Capitol Office", fax="444-444-4444")],
+            [ContactDetail(note="Capitol Office", voice="111-111-1111", fax="444-444-4444")],
         ),
         # merge two offices into a single list
         (
-            [{"note": "Capitol Office", "voice": "123"}],
-            [{"note": "District Office", "voice": "456"}],
+            [ContactDetail(note="Capitol Office", voice="111-111-1111")],
+            [ContactDetail(note="District Office", voice="444-444-4444")],
             [
-                {"note": "Capitol Office", "voice": "123"},
-                {"note": "District Office", "voice": "456"},
+                ContactDetail(note="Capitol Office", voice="111-111-1111"),
+                ContactDetail(note="District Office", voice="444-444-4444"),
             ],
         ),
     ],
@@ -235,7 +270,11 @@ def test_merge_extras():
     old = {"extras": {"_internal_id": 123}}
     new = {}
     expected = old.copy()
-    assert merge_people(new, old) == expected
+
+    class Model(BaseModel):
+        extras: dict = {}
+
+    assert merge_people(Model(**new), Model(**old)) == expected
 
 
 def test_find_file_good():
