@@ -7,6 +7,7 @@ from pathlib import Path
 from enum import Enum
 from collections import defaultdict
 from yaml.representer import Representer
+from pydantic import BaseModel
 from openstates import metadata
 
 # set up defaultdict representation
@@ -28,11 +29,13 @@ def get_all_abbreviations() -> list[str]:
 
 
 def dump_obj(
-    obj: dict,
+    obj: typing.Union[dict, BaseModel],
     *,
     output_dir: typing.Optional[Path] = None,
     filename: typing.Union[Path, str, None] = None,
 ) -> None:
+    if isinstance(obj, BaseModel):
+        obj = obj.dict(exclude_defaults=True)
     if output_dir:
         filename = output_dir / get_new_filename(obj)
     if not filename:
