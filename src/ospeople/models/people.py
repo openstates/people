@@ -141,8 +141,7 @@ class ContactDetail(BaseModel):
         return values
 
 
-class Person(BaseModel):
-    id: str
+class ScrapePerson(BaseModel):
     name: str
     given_name: str = ""
     family_name: str = ""
@@ -165,6 +164,34 @@ class Person(BaseModel):
     other_identifiers: list[OtherIdentifier] = []
     sources: list[Link] = []
     extras: dict = {}
+
+    @validator("name")
+    def no_bad_comma(val: str) -> str:
+        pieces = val.split(",")
+        if len(pieces) > 2:
+            raise ValueError("too many commas, check if name is mangled")
+        elif len(pieces) == 2 and not SUFFIX_RE.findall(pieces[1]):
+            raise ValueError("invalid comma")
+        return val
+
+    _validate_dates = validator("birth_date", "death_date", allow_reuse=True)(validate_fuzzy_date)
+    _validate_strings_no_newline = validator(
+        # only biography is allowed newlines
+        "name",
+        "given_name",
+        "family_name",
+        "given_name",
+        "middle_name",
+        "email",
+        "suffix",
+        "gender",
+        allow_reuse=True,
+    )(validate_str_no_newline)
+    _validate_image = validator("image", allow_reuse=True)(validate_url)
+
+
+class Person(ScrapePerson):
+    id: str
 
     @root_validator
     def check_active_party(cls, values: dict[str, typing.Any]) -> dict[str, typing.Any]:
@@ -191,27 +218,4 @@ class Person(BaseModel):
 
         return values
 
-    @validator("name")
-    def no_bad_comma(val: str) -> str:
-        pieces = val.split(",")
-        if len(pieces) > 2:
-            raise ValueError("too many commas, check if name is mangled")
-        elif len(pieces) == 2 and not SUFFIX_RE.findall(pieces[1]):
-            raise ValueError("invalid comma")
-        return val
-
     _validate_person_id = validator("id", allow_reuse=True)(validate_ocd_person)
-    _validate_dates = validator("birth_date", "death_date", allow_reuse=True)(validate_fuzzy_date)
-    _validate_strings_no_newline = validator(
-        # only biography is allowed newlines
-        "name",
-        "given_name",
-        "family_name",
-        "given_name",
-        "middle_name",
-        "email",
-        "suffix",
-        "gender",
-        allow_reuse=True,
-    )(validate_str_no_newline)
-    _validate_image = validator("image", allow_reuse=True)(validate_url)
