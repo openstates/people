@@ -393,7 +393,7 @@ def create_person(
     )
 
     output_dir = get_data_path(state) / directory
-    dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
+    dump_obj(person, output_dir=output_dir)
 
 
 @click.group()
@@ -528,7 +528,7 @@ def retire(
             # default to 60 days for now
             add_vacancy(person, until=datetime.datetime.today() + datetime.timedelta(days=60))
 
-        dump_obj(person.dict(exclude_defaults=True), filename=filename)
+        dump_obj(person, filename=filename)
 
         if num == 0:
             click.secho("no active roles to retire", fg="red")

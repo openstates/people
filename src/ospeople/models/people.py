@@ -218,4 +218,11 @@ class Person(ScrapePerson):
 
         return values
 
+    def to_dict(self) -> dict[str, typing.Any]:
+        # hack to always have id on top
+        return {
+            "id": self.id,
+            **super().dict(exclude_defaults=True),
+        }
+
     _validate_person_id = validator("id", allow_reuse=True)(validate_ocd_person)

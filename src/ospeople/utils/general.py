@@ -35,7 +35,7 @@ def dump_obj(
     filename: typing.Union[Path, str, None] = None,
 ) -> None:
     if isinstance(obj, BaseModel):
-        obj = obj.dict(exclude_defaults=True)
+        obj = obj.to_dict()
     if output_dir:
         filename = output_dir / get_new_filename(obj)
     if not filename:
