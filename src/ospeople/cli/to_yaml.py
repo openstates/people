@@ -5,6 +5,7 @@ import click
 import itertools
 from pathlib import Path
 from collections import defaultdict
+from pydantic import BaseModel
 from openstates import metadata
 from openstates.utils import abbr_to_jid
 from ..utils import (
@@ -14,7 +15,7 @@ from ..utils import (
     ocd_uuid,
 )
 from ..utils.retire import retire_person, retire_file
-from ..models.people import ScrapePerson, Person, Role, Party, ContactDetail
+from ..models.people import ScrapePerson, Person, Role, Party, ContactDetail, Link
 
 
 def find_file(leg_id: str, *, state: str = "*") -> Path:
@@ -37,30 +38,32 @@ def find_file(leg_id: str, *, state: str = "*") -> Path:
         raise FileNotFoundError()
 
 
-def merge_contact_details(old: dict, new: dict) -> typing.Optional[typing.List[dict]]:
+def merge_contact_details(
+    old: list[ContactDetail], new: list[ContactDetail]
+) -> typing.Optional[typing.List[ContactDetail]]:
     # figure out which office entries are which
-    old_offices: defaultdict[str, dict] = defaultdict(dict)
-    new_offices: defaultdict[str, dict] = defaultdict(dict)
+    old_offices: dict[str, ContactDetail] = {}
+    new_offices: dict[str, ContactDetail] = {}
     offices = []
     update = False
 
-    for office in old or []:
-        note = office["note"]
-        if not old_offices[note]:
+    for office in old:
+        note = office.note
+        if note not in old_offices:
             old_offices[note] = office
         else:
             raise NotImplementedError(f"extra old {note}")
-    for office in new or []:
-        note = office["note"]
-        if not new_offices[note]:
+    for office in new:
+        note = office.note
+        if note not in new_offices:
             new_offices[note] = office
         else:
             raise NotImplementedError(f"extra old {note}")
 
-    for note in sorted(set(old_offices) | set(new_offices)):
-        combined = update_office(old_offices[note], new_offices[note])
+    for note_type in sorted(set(old_offices) | set(new_offices)):
+        combined = update_office(old_offices.get(note_type), new_offices.get(note_type))
         offices.append(combined)
-        if combined != old_offices[note]:
+        if combined != old_offices.get(note_type):
             update = True
 
     # return all offices if there were any changes
@@ -70,18 +73,25 @@ def merge_contact_details(old: dict, new: dict) -> typing.Optional[typing.List[d
         return None
 
 
-def update_office(old_office: dict, new_office: dict) -> dict:
+def update_office(
+    old_office: typing.Optional[ContactDetail], new_office: typing.Optional[ContactDetail]
+) -> ContactDetail:
     """ function returns a copy of old_office updated with values from new if applicable """
-    updated_office = old_office.copy()
-    # update each field in office
-    for newfield, newval in new_office.items():
-        for oldfield, oldval in old_office.items():
-            if oldfield == newfield and newval != oldval:
-                updated_office[oldfield] = newval
-                break
-        else:
-            # add new fields to updated office
-            updated_office[newfield] = newval
+
+    # if only one exists, return that one
+    if not old_office and new_office:
+        return new_office
+    if not new_office and old_office:
+        return old_office
+
+    # combine the two
+    if new_office and old_office:
+        updated_office = old_office.copy()
+        for field in updated_office.__fields__.keys():
+            oldval = getattr(old_office, field)
+            newval = getattr(new_office, field)
+            if oldval != newval and newval:
+                setattr(updated_office, field, newval)
     return updated_office
 
 
@@ -127,11 +137,11 @@ class Replace:
 
 class ContactDetailsReplace(Replace):
     def __str__(self) -> str:
-        def _fmt_cd(cd: dict) -> str:
-            cd_str = f"{cd['note']}"
+        def _fmt_cd(cd: ContactDetail) -> str:
+            cd_str = f"{cd.note}"
             for key in ("address", "voice", "fax"):
-                if key in cd:
-                    cd_str += f" {key}={cd[key]}"
+                if val := getattr(cd, key):
+                    cd_str += f" {key}={val}"
             return cd_str
 
         old = "\n\t".join(_fmt_cd(cd) for cd in self.value_one)
@@ -141,14 +151,15 @@ class ContactDetailsReplace(Replace):
 
 
 def compute_merge(
-    obj1: dict, obj2: dict, prefix: str = "", keep_both_ids: bool = False
+    obj1: BaseModel, obj2: BaseModel, prefix: str = "", keep_both_ids: bool = False
 ) -> list[typing.Union[Append, Replace]]:
-    combined_keys = set(obj1) | set(obj2)
+    all_keys = obj1.__fields__.keys()
     changes: list[typing.Union[Append, Replace]] = []
-    for key in combined_keys:
+
+    for key in all_keys:
         key_name = ".".join((prefix, key)) if prefix else key
-        val1 = obj1.get(key)
-        val2 = obj2.get(key)
+        val1 = getattr(obj1, key)
+        val2 = getattr(obj2, key)
 
         # special cases first
         if key == "id":
@@ -163,7 +174,7 @@ def compute_merge(
                 changes.append(Append("other_names", {"name": val1}))
                 changes.append(Replace("name", val1, val2))
         elif key == "contact_details":
-            changed = merge_contact_details(typing.cast(dict, val1), typing.cast(dict, val2))
+            changed = merge_contact_details(val1, val2)
             if changed:
                 changes.append(ContactDetailsReplace("contact_details", val1 or [], changed))
         elif isinstance(val1, list) or isinstance(val2, list):
@@ -176,14 +187,24 @@ def compute_merge(
                 for item in typing.cast(list, val2):
                     if item not in typing.cast(list, val1):
                         changes.append(Append(key_name, item))
-        elif isinstance(val1, dict) or isinstance(val2, dict):
-            changes.extend(compute_merge(val1 or {}, val2 or {}, prefix=key_name))
+        elif isinstance(val1, BaseModel) or isinstance(val2, BaseModel):
+            changes.extend(compute_merge(val1, val2, prefix=key_name))
         else:
             # if values both exist and differ, or val1 is empty, do a Replace
             if (val1 and val2 and val1 != val2) or (val1 is None):
                 changes.append(Replace(key_name, val1, val2))
 
     return changes
+
+
+def roles_equalish(role1: Role, role2: Role) -> bool:
+    return (
+        role1.type == role2.type
+        and role1.jurisdiction == role2.jurisdiction
+        and role1.district == role2.district
+        and role1.end_date == role2.end_date
+        and role1.end_reason == role2.end_reason
+    )
 
 
 def incoming_merge(
@@ -208,15 +229,13 @@ def incoming_merge(
             name_match = new.name == existing.name
             role_match = False
             for role in existing.roles:
-                role_copy = role.copy()
-                if role_copy["type"] == "mayor" or role_copy["type"] == "governor":
+                if role.type == "mayor" or role.type == "governor":
                     continue
-                role_copy.pop("start_date", None)
-                seats = seats_for_district[role_copy["type"]].get(role_copy["district"], 1)
-                if new.roles[0] == role_copy and seats == 1:
+                seats = seats_for_district[role.type].get(role.district, 1)
+                if roles_equalish(new.roles[0], role) and seats == 1:
                     role_match = True
                     # if they match without start date, copy the start date over so it isn't
-                    # alterred or otherwise removed in the merge
+                    # altered or otherwise removed in the merge
                     new.roles[0] = role
                     break
             if name_match or role_match:
@@ -266,7 +285,7 @@ def interactive_merge(
     click.secho(" {} {}".format(oldfname, newfname), fg="yellow")
 
     # simulate difference
-    changes = compute_merge(old.dict(), new.dict(), keep_both_ids=False)
+    changes = compute_merge(old, new, keep_both_ids=False)
 
     if not changes:
         click.secho(f" perfect match, removing {newfname}", fg="green")
@@ -322,7 +341,11 @@ def merge_people(old: Person, new: Person, keep_both_ids: bool = False) -> Perso
         If we're dealing with an election, it should be set to false since the new ID
         hasn't been published anywhere yet.
     """
-    changes = compute_merge(old.dict(), new.dict(), keep_both_ids=keep_both_ids)
+    changes = compute_merge(
+        old,
+        new,
+        keep_both_ids=keep_both_ids,
+    )
 
     for change in changes:
         if isinstance(change, Replace):
@@ -370,12 +393,6 @@ def reformat_phone_number(phone: str) -> str:
 
 def reformat_address(address: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"\s*\n\s*", ";", address))
-
-
-def process_link(link: dict[str, str]) -> dict[str, str]:
-    if not link["note"]:
-        del link["note"]
-    return link
 
 
 def process_pupa_scrape_dir(
@@ -427,8 +444,8 @@ def process_pupa_person(person: dict, jurisdiction_id: str) -> ScrapePerson:
     result = ScrapePerson(
         name=person["name"],
         roles=[],
-        links=[process_link(link) for link in person["links"]],
-        sources=[process_link(link) for link in person["sources"]],
+        links=[Link(url=link["url"], note=link["note"]) for link in person["links"]],
+        sources=[Link(url=link["url"], note=link["note"]) for link in person["sources"]],
     )
 
     contact_details: defaultdict[str, defaultdict[str, list[str]]] = defaultdict(
