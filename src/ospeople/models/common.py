@@ -27,7 +27,7 @@ def validate_str_no_newline(v: typing.Any) -> str:
 def validate_fuzzy_date(v: typing.Any) -> typing.Union[datetime.date, str]:
     if isinstance(v, datetime.date):
         return v
-    elif isinstance(v, str) and DATE_RE.match(v):
+    elif isinstance(v, str) and (v == "" or DATE_RE.match(v)):
         return v
     else:
         raise ValueError("invalid date")
