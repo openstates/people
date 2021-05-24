@@ -3,13 +3,14 @@ import re
 import json
 import click
 from pathlib import Path
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
 from openstates.utils import abbr_to_jid
 from ..utils import (
     get_data_path,
     dump_obj,
     ocd_uuid,
 )
+from ..models.people import ScrapePerson, Person, Role, Party
 
 
 PHONE_RE = re.compile(
@@ -71,9 +72,11 @@ def process_dir(input_dir: Path, output_dir: Path, jurisdiction_id: str) -> None
 
         scrape_id = person["_id"]
         person["memberships"] = person_memberships[scrape_id]
-        person = process_person(person, jurisdiction_id)
+        scrape_person = process_person(person, jurisdiction_id)
+        print(scrape_person.dict())
+        person = Person(**scrape_person.dict(), id=ocd_uuid("person"))
 
-        dump_obj(person, output_dir=output_dir)
+        dump_obj(person.dict(exclude_defaults=True), output_dir=output_dir)
 
 
 def process_person(person: dict, jurisdiction_id: str) -> dict:
@@ -91,13 +94,9 @@ def process_person(person: dict, jurisdiction_id: str) -> dict:
         "other_names",
     )
 
-    result = OrderedDict(
-        id=ocd_uuid("person"),
+    result = ScrapePerson(
         name=person["name"],
-        email=None,
-        party=[],
         roles=[],
-        contact_details=[],
         links=[process_link(link) for link in person["links"]],
         sources=[process_link(link) for link in person["sources"]],
     )
@@ -118,8 +117,8 @@ def process_person(person: dict, jurisdiction_id: str) -> dict:
         contact_details[detail["note"]][detail["type"]] = value
 
     if email:
-        result["email"] = email
-    result["contact_details"] = [{"note": key, **val} for key, val in contact_details.items()]
+        result.email = email
+    result.contact_details = [{"note": key, **val} for key, val in contact_details.items()]
 
     for membership in person["memberships"]:
         organization_id = membership["organization_id"]
@@ -127,19 +126,19 @@ def process_person(person: dict, jurisdiction_id: str) -> dict:
             org = json.loads(organization_id[1:])
             if org["classification"] in ("upper", "lower", "legislature"):
                 post = json.loads(membership["post_id"][1:])["label"]
-                result["roles"] = [
-                    {
-                        "type": org["classification"],
-                        "district": str(post),
-                        "jurisdiction": jurisdiction_id,
-                    }
+                result.roles = [
+                    Role(
+                        type=org["classification"],
+                        district=str(post),
+                        jurisdiction=jurisdiction_id,
+                    )
                 ]
             elif org["classification"] == "party":
-                result["party"] = [{"name": org["name"]}]
+                result.party = [Party(name=org["name"])]
 
     for key in optional_keys:
-        if person.get(key):
-            result[key] = person[key]
+        if val := person.get(key):
+            setattr(result, key, val)
 
     # promote some extras where appropriate
     extras = person.get("extras", {}).copy()
@@ -147,10 +146,10 @@ def process_person(person: dict, jurisdiction_id: str) -> dict:
         if key in optional_keys:
             result[key] = extras.pop(key)
     if extras:
-        result["extras"] = extras
+        result.extras = extras
 
     if person.get("identifiers"):
-        result["other_identifiers"] = person["identifiers"]
+        result.identifiers = person["identifiers"]
 
     return result
 
@@ -178,7 +177,7 @@ def main(input_dir: str) -> None:
     assert "incoming" in str(output_dir)
 
     try:
-        output_dir.mkdir()
+        output_dir.mkdir(parents=True)
     except FileExistsError:
         for file in output_dir.glob("*.yml"):
             file.unlink()
