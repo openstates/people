@@ -4,25 +4,13 @@ version = "2.0"
 description = ""
 authors = ["James Turk <james@openstates.org>"]
 
-[tool.poetry.scripts]
-os-people = 'ospeople.cli.people:main'
-os-committees = 'ospeople.cli.committees:main'
-os-people-to-yaml = 'ospeople.cli.to_yaml:main'
-os-us-to-yaml = 'ospeople.cli.convert_us:main'
-
 [tool.poetry.dependencies]
 python = "^3.9"
 yamlordereddictloader = "^0.4.0"
-click = "^7.0"
 Django = "^3.2"
-PyYAML = "^5.1"
-boto3 = "^1.9"
 scrapelib = "^2.0"
-pillow = "^8.1"
-openstates = "^5.11.1"
+openstates = "^6.0.0"
 spatula = "^0.6.0"
-pydantic = "^1.8.1"
-mypy = "^0.812"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7"

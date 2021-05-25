@@ -5,15 +5,11 @@ on:
     branches: [ main ]
     paths:
       - "data/**"
-      - "src/ospeople/cli/lint_yaml.py"
-      - "src/ospeople/cli/committees.py"
       - "settings.yml"
   pull_request:
     branches: [ main ]
     paths:
       - "data/**"
-      - "src/ospeople/cli/lint_yaml.py"
-      - "src/ospeople/cli/committees.py"
       - "settings.yml"
 
 jobs:
