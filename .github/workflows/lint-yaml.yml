@@ -44,8 +44,8 @@ jobs:
     - name: lint people
       run: poetry run os-people lint
       env:
-        OS_PEOPLE_DIRECTORY: $GITHUB_WORKSPACE
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
     - name: lint committees
       run: poetry run os-committees lint
       env:
-        OS_PEOPLE_DIRECTORY: $GITHUB_WORKSPACE
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
