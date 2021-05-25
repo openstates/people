@@ -7,4 +7,6 @@ ADD . /opt/people
 WORKDIR /opt/people
 RUN poetry install
 
+ENV OS_PEOPLE_DIRECTORY=/opt/people
+
 ENTRYPOINT ["poetry", "run"]
