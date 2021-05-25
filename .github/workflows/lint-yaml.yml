@@ -6,11 +6,13 @@ on:
     paths:
       - "data/**"
       - "settings.yml"
+      - "poetry.lock"
   pull_request:
     branches: [ main ]
     paths:
       - "data/**"
       - "settings.yml"
+      - "poetry.lock"
 
 jobs:
   build:
