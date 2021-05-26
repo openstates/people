@@ -1,16 +1,19 @@
 id: ocd-person/013d012f-a50e-43c8-af40-f12aa852a0da
 name: Celina Villanueva
+given_name: Celina
+family_name: Villanueva
+image: http://ilga.gov/images/members/{F8A21A81-5453-4E94-AC51-E644E1B0C00B}.jpg
 party:
 - name: Democratic
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+- end_date: 2020-01-07
   type: lower
-  end_date: 2020-01-07
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '21'
+- start_date: 2020-01-07
   type: upper
-  start_date: 2020-01-07
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: 111 Capitol Building;Springfield, IL 62706
@@ -21,14 +24,11 @@ contact_details:
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2777
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2976
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL001094
 sources:
 - url: http://ilga.gov/senate/default.asp?GA=101
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2777
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2976
-image: http://ilga.gov/images/members/{F8A21A81-5453-4E94-AC51-E644E1B0C00B}.jpg
-other_identifiers:
-- identifier: ILL001094
-  scheme: legacy_openstates
-given_name: Celina
-family_name: Villanueva

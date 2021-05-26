@@ -1,16 +1,20 @@
 id: ocd-person/7ecd4221-a627-42dc-9029-bbc543ef3735
 name: Bill Dodd
+given_name: Bill
+family_name: Dodd
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sen_bill_dodd.jpg
 party:
 - name: Democratic
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '3'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '4'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4032, Sacramento, CA 95814-4900
@@ -20,18 +24,14 @@ contact_details:
   voice: 707-576-2093
 links:
 - url: https://senate.ca.gov/sd03
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD03&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD03&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000514
+- scheme: legacy_openstates
+  identifier: CAL000453
+- scheme: openstates
+  identifier: ocd-person/5f62600a-6817-491e-9306-bc244fe4cf17
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sen_bill_dodd.jpg
-other_identifiers:
-- identifier: CAL000514
-  scheme: legacy_openstates
-- identifier: CAL000453
-  scheme: legacy_openstates
-- identifier: ocd-person/5f62600a-6817-491e-9306-bc244fe4cf17
-  scheme: openstates
-given_name: Bill
-family_name: Dodd
-gender: Male

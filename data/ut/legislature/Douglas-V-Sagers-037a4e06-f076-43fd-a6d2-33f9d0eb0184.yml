@@ -1,21 +1,34 @@
 id: ocd-person/037a4e06-f076-43fd-a6d2-33f9d0eb0184
 name: Douglas V. Sagers
+given_name: Douglas
+family_name: Sagers
+email: dougsagers@le.utah.gov
+image: https://le.utah.gov/images/legislator/SAGERD.jpg
 party:
 - name: Republican
 roles:
-- district: '21'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '21'
 contact_details:
 - note: District Office
   address: 243 HOME TOWN CT, TOOELE, UT, 84074
-  fax: 435-882-8770
   voice: 435-830-3485
+  fax: 435-882-8770
 links:
 - url: http://house.utah.gov/rep/SAGERD
+other_names:
+- name: Sagers, D.
+- name: Sagers, Douglas V.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000090
+- scheme: legacy_openstates
+  identifier: UTL000123
+- scheme: legacy_openstates
+  identifier: UTL000192
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/SAGERD.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFISAGERD2.pdf
@@ -26,16 +39,3 @@ extras:
   - http://le.utah.gov/house2/CofI/dsagers.pdf
   - http://le.utah.gov/house2/CofI/SAGERD.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409401
-other_identifiers:
-- identifier: UTL000090
-  scheme: legacy_openstates
-- identifier: UTL000123
-  scheme: legacy_openstates
-- identifier: UTL000192
-  scheme: legacy_openstates
-given_name: Douglas
-family_name: Sagers
-email: dougsagers@le.utah.gov
-other_names:
-- name: Sagers, D.
-- name: Sagers, Douglas V.

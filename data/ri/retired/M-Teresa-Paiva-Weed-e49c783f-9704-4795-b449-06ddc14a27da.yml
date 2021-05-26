@@ -2,25 +2,25 @@ id: ocd-person/e49c783f-9704-4795-b449-06ddc14a27da
 name: M. Teresa Paiva Weed
 given_name: M. Teresa Paiva
 family_name: Weed
+image: http://www.rilin.state.ri.us/senators/Pictures/Paiva Weed.jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2017-12-31'
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   type: upper
-  start_date: '2017-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '13'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
-image: http://www.rilin.state.ri.us/senators/Pictures/Paiva Weed.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '13'
 links:
 - url: http://www.rilin.state.ri.us/senators/Algiere/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000013
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/senators/PaivaWeed/
-other_identifiers:
-- identifier: RIL000013
-  scheme: legacy_openstates

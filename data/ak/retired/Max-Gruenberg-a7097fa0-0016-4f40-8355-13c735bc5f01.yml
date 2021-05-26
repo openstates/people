@@ -2,33 +2,33 @@ id: ocd-person/a7097fa0-0016-4f40-8355-13c735bc5f01
 name: Max Gruenberg
 given_name: Max
 family_name: Gruenberg
+image: http://akleg.gov/images/legislators/GRU.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '20'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '14'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://akleg.gov/images/legislators/GRU.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '16'
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=gru
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000034
+- scheme: legacy_openstates
+  identifier: AKL000099
+- scheme: legacy_openstates
+  identifier: AKL000135
 sources:
 - url: http://akleg.gov/legislator.php?id=gru
-other_identifiers:
-- identifier: AKL000034
-  scheme: legacy_openstates
-- identifier: AKL000099
-  scheme: legacy_openstates
-- identifier: AKL000135
-  scheme: legacy_openstates

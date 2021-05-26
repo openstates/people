@@ -1,16 +1,18 @@
 id: ocd-person/c6471995-41db-497c-8953-dd3ea5871870
 name: Janet Nguyen
+given_name: Janet
+family_name: Nguyen
 party:
 - name: Republican
 roles:
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- end_date: '2018-11-30'
   type: upper
-  end_date: '2018-11-30'
-- district: '72'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '34'
+- start_date: 2020-12-07
   type: lower
-  start_date: 2020-12-07
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '72'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0072
@@ -20,12 +22,10 @@ contact_details:
   voice: 714-843-4966
 links:
 - url: https://ad72.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD72&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD72&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000469
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_identifiers:
-- identifier: CAL000469
-  scheme: legacy_openstates
-given_name: Janet
-family_name: Nguyen

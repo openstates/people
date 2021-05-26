@@ -2,20 +2,20 @@ id: ocd-person/86bb2447-c884-4e33-979f-8cce2d703f4b
 name: Fred Jordan
 given_name: Fred
 family_name: Jordan
+image: http://www.okhouse.gov/Members/Pictures/Jordan-Fredx175.jpg
 party:
 - name: Republican
 roles:
-- district: '69'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.okhouse.gov/Members/Pictures/Jordan-Fredx175.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '69'
 links:
 - url: http://www.okhouse.gov/District.aspx?District=69
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000085
 sources:
 - url: http://www.okhouse.gov/Members/Default.aspx
 - url: http://www.okhouse.gov/District.aspx?District=69
-other_identifiers:
-- identifier: OKL000085
-  scheme: legacy_openstates

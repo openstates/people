@@ -3,26 +3,26 @@ name: Jeanie L Forrester
 given_name: Jeanie
 family_name: Forrester
 middle_name: L
+image: http://www.gencourt.state.nh.us/Senate/images/senators/02.jpg
 party:
 - name: Republican
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '2'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.gencourt.state.nh.us/Senate/images/senators/02.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '2'
 links:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district02.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000008
+- scheme: legacy_openstates
+  identifier: NHL001306
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district02.aspx
-other_identifiers:
-- identifier: NHL000008
-  scheme: legacy_openstates
-- identifier: NHL001306
-  scheme: legacy_openstates

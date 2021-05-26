@@ -5,15 +5,15 @@ family_name: Maher
 party:
 - name: Republican
 roles:
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '34'
 links:
 - url: http://webserver.rilin.state.ri.us/Maher/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000034
 sources:
 - url: http://webserver.rilin.state.ri.us/Documents/Senators.xls
-other_identifiers:
-- identifier: RIL000034
-  scheme: legacy_openstates

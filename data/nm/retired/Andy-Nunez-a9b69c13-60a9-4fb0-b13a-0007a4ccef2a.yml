@@ -2,19 +2,19 @@ id: ocd-person/a9b69c13-60a9-4fb0-b13a-0007a4ccef2a
 name: Andy Nunez
 given_name: Andy
 family_name: Nunez
+image: http://www.nmlegis.gov/Images/Legislators/House/HNUNE.jpg
 party:
 - name: Republican
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.nmlegis.gov/Images/Legislators/House/HNUNE.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '36'
 links:
 - url: http://www.nmlegis.gov/lcs/legislator_details.aspx?SPONCODE=HNUNE
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000362
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HNUNE
-other_identifiers:
-- identifier: NML000362
-  scheme: legacy_openstates

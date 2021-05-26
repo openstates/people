@@ -3,26 +3,26 @@ name: Robert M Fesh
 given_name: Robert
 family_name: Fesh
 middle_name: M
+image: http://www.votesmart.org/canphoto/5037.jpg
 party:
 - name: Republican
 roles:
-- district: Rockingham 6
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: Rockingham 5
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 6
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.votesmart.org/canphoto/5037.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 5
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=375842
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000124
+- scheme: legacy_openstates
+  identifier: NHL000523
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- identifier: NHL000124
-  scheme: legacy_openstates
-- identifier: NHL000523
-  scheme: legacy_openstates

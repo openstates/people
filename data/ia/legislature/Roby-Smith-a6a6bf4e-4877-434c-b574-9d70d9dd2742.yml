@@ -1,11 +1,15 @@
 id: ocd-person/a6a6bf4e-4877-434c-b574-9d70d9dd2742
 name: Roby Smith
+given_name: Roby
+family_name: Smith
+email: roby.smith@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=9386
 party:
 - name: Republican
 roles:
-- district: '47'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '47'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9386
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9386
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000044
+- scheme: legacy_openstates
+  identifier: IAL000216
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9386
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9386
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=9386
-other_identifiers:
-- identifier: IAL000044
-  scheme: legacy_openstates
-- identifier: IAL000216
-  scheme: legacy_openstates
-given_name: Roby
-family_name: Smith
-email: roby.smith@legis.iowa.gov

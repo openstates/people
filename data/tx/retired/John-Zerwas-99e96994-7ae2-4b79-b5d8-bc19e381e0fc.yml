@@ -1,23 +1,23 @@
 id: ocd-person/99e96994-7ae2-4b79-b5d8-bc19e381e0fc
 name: John Zerwas
+given_name: John
+family_name: Zerwas
+image: https://house.texas.gov/photos/members/5170.jpg
 party:
 - name: Republican
 roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+- end_date: '2019-09-30'
   type: lower
-  end_date: '2019-09-30'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '28'
 links:
 - url: https://house.texas.gov/members/member-page/?district=28
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000363
+- scheme: legacy_openstates
+  identifier: TXL000181
+- scheme: legacy_openstates
+  identifier: TXL000537
 sources:
 - url: https://house.texas.gov/members/member-page/?district=28
-image: https://house.texas.gov/photos/members/5170.jpg
-other_identifiers:
-- identifier: TXL000363
-  scheme: legacy_openstates
-- identifier: TXL000181
-  scheme: legacy_openstates
-- identifier: TXL000537
-  scheme: legacy_openstates
-given_name: John
-family_name: Zerwas

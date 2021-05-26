@@ -3,19 +3,19 @@ name: Jason C. Welch
 given_name: Jason
 family_name: Welch
 middle_name: C.
+image: http://www.ctsenaterepublicans.com/images/sens/welch_about.png
 party:
 - name: Republican
 roles:
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.ctsenaterepublicans.com/images/sens/welch_about.png
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '31'
 links:
 - url: http://www.ctsenaterepublicans.com/home-welch
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000031
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000031
-  scheme: legacy_openstates

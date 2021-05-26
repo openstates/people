@@ -1,11 +1,14 @@
 id: ocd-person/acb9a83b-c921-4631-826e-ffd02e2203b9
 name: Joshua M. Hall
+given_name: Joshua
+family_name: Hall
+email: Joshua.Hall@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '7'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 5007;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-810-0471
 links:
 - url: http://www.housedems.ct.gov/Hall
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000362
-  scheme: legacy_openstates
-given_name: Joshua
-family_name: Hall
-email: Joshua.Hall@cga.ct.gov
 other_names:
 - name: Hall, Joshua M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000362
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

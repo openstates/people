@@ -2,17 +2,17 @@ id: ocd-person/81857560-b28f-494c-be90-aa5e9582bda5
 name: Ira Ruskin
 given_name: Ira
 family_name: Ruskin
+image: http://www.assembly.ca.gov/images/members/21.jpg
 party:
 - name: Democratic
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.assembly.ca.gov/images/members/21.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '21'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000079
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000079
-  scheme: legacy_openstates

@@ -1,17 +1,8 @@
 id: ocd-person/b8df69c7-ee72-41a3-9398-7dd3341acb36
 name: Jack Evans
-party:
-- name: Democratic
-roles:
-- district: Ward 2
-  jurisdiction: ocd-jurisdiction/country:us/district:dc/government
-  type: legislature
-  end_date: '2020-01-17'
-links:
-- url: http://dccouncil.us/council/jack-evans/
-sources:
-- url: http://dccouncil.us/council/jack-evans/
-image: http://dccouncil.us/wp-content/uploads/2017/03/evans-125x125-c-default.jpg
+given_name: Jack
+family_name: Evans
+email: jevans@dccouncil.us
 biography: "Jack Evans is the Councilmember for Ward 2, representing 11 distinct neighborhoods\
   \ including: Chinatown, Logan Circle, Blagden Alley, Dupont Circle, Sheridan-Kalorama,\
   \ Foggy Bottom/West End, Georgetown, Burleith, Hillandale, Penn Quarter, and Downtown\
@@ -35,13 +26,22 @@ biography: "Jack Evans is the Councilmember for Ward 2, representing 11 distinct
   \ law at the Securities and Exchange Commission in the Division of Enforcement.\n\
   Jack\u2019s wife Noel passed away in 2003. He currently lives in Georgetown and\
   \ is the father of college-aged triplets \u2013 Katherine, Christine, and John."
+image: http://dccouncil.us/wp-content/uploads/2017/03/evans-125x125-c-default.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2020-01-17'
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/district:dc/government
+  district: Ward 2
+links:
+- url: http://dccouncil.us/council/jack-evans/
 other_identifiers:
-- identifier: DCL000009
-  scheme: legacy_openstates
-- identifier: DCL000030
-  scheme: legacy_openstates
-- identifier: DCL000050
-  scheme: legacy_openstates
-given_name: Jack
-family_name: Evans
-email: jevans@dccouncil.us
+- scheme: legacy_openstates
+  identifier: DCL000009
+- scheme: legacy_openstates
+  identifier: DCL000030
+- scheme: legacy_openstates
+  identifier: DCL000050
+sources:
+- url: http://dccouncil.us/council/jack-evans/

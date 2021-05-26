@@ -3,27 +3,27 @@ name: Mark W. Eves
 given_name: Mark
 family_name: Eves
 middle_name: W.
+image: http://www.maine.gov/legis/house/photo125/evesm_.jpg
 party:
 - name: Democratic
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '146'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '6'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.maine.gov/legis/house/photo125/evesm_.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '146'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/evesm_.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000180
+- scheme: legacy_openstates
+  identifier: MEL000445
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/evesm_.htm
-other_identifiers:
-- identifier: MEL000180
-  scheme: legacy_openstates
-- identifier: MEL000445
-  scheme: legacy_openstates

@@ -1,11 +1,16 @@
 id: ocd-person/7052600a-c1b3-484d-80a3-232fc9815d7c
 name: Landon Brown
+given_name: Landon
+family_name: Brown
+email: Landon.Brown@wyoleg.gov
+birth_date: 1987-02-26
+image: http://wyoleg.gov/LegislatorSummary/Photos/BrownLH09.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '9'
 contact_details:
 - note: District Office
   address: P.O. Box 20729, Cheyenne WY 82003
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2034
 - url: http://wyoleg.gov/Legislators/2021/R/2034
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000145
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2034
 - url: http://wyoleg.gov/Legislators/2021/R/2034
-image: http://wyoleg.gov/LegislatorSummary/Photos/BrownLH09.jpg
-birth_date: '1987-02-26'
-given_name: Landon
-family_name: Brown
 extras:
   civic_organizations:
   - orgname: Cheyenne Planning Commission
@@ -39,7 +43,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 2034
-other_identifiers:
-- identifier: WYL000145
-  scheme: legacy_openstates
-email: Landon.Brown@wyoleg.gov

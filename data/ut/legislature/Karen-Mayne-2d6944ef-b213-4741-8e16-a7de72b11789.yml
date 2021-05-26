@@ -1,20 +1,31 @@
 id: ocd-person/2d6944ef-b213-4741-8e16-a7de72b11789
 name: Karen Mayne
+given_name: Karen
+family_name: Mayne
+email: kmayne@le.utah.gov
+image: https://le.utah.gov/images/legislator/MAYNEK.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: upper
+  district: '5'
 contact_details:
 - note: District Office
   address: 5044 W BANNOCK CIR, WEST VALLEY CITY, UT, 84120
   voice: 801-232-6648
 links:
 - url: https://senate.utah.gov/karen-mayne
+other_names:
+- name: Mayne, Karen
+- name: Mayne, K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000014
+- scheme: legacy_openstates
+  identifier: UTL000211
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/MAYNEK.jpg
 extras:
   links:
   - https://le.utah.gov/senate/CofI/COFIMAYNEK3.pdf
@@ -22,14 +33,3 @@ extras:
   - https://le.utah.gov/senate/CofI/COFIMAYNEK2.pdf
   - https://le.utah.gov/senate/CofI/COFIMAYNEK.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/2054
-other_identifiers:
-- identifier: UTL000014
-  scheme: legacy_openstates
-- identifier: UTL000211
-  scheme: legacy_openstates
-given_name: Karen
-family_name: Mayne
-email: kmayne@le.utah.gov
-other_names:
-- name: Mayne, Karen
-- name: Mayne, K.

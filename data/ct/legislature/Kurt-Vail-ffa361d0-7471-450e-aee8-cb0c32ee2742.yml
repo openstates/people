@@ -1,11 +1,14 @@
 id: ocd-person/ffa361d0-7471-450e-aee8-cb0c32ee2742
 name: Kurt Vail
+given_name: Kurt
+family_name: Vail
+email: Kurt.Vail@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '52'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '52'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3802;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 90 Main Street;Stafford Springs, CT 06076
 links:
 - url: http://www.cthousegop.com/Vail/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000291
-  scheme: legacy_openstates
-given_name: Kurt
-family_name: Vail
-email: Kurt.Vail@housegop.ct.gov
 other_names:
 - name: Vail, Kurt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000291
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,13 +1,17 @@
 id: ocd-person/835c10ff-752e-49b0-b7a7-390edc412bc3
 name: Fred W. Thiele, Jr.
+given_name: Fred
+family_name: Thiele
+email: ThieleF@nyassembly.gov
+image: https://assembly.state.ny.us/write/upload/member_files/001/headshot/001.jpg
 party:
-- name: Democratic
-  end_date: 2009-10-01
+- end_date: 2009-10-01
+  name: Democratic
 - name: Independence
 roles:
-- district: '1'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: LOB 837; Albany, NY 12248
@@ -18,20 +22,16 @@ contact_details:
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
-sources:
-- url: http://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
-- url: https://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
-image: https://assembly.state.ny.us/write/upload/member_files/001/headshot/001.jpg
-other_identifiers:
-- identifier: NYL000202
-  scheme: legacy_openstates
-- identifier: NYL000316
-  scheme: legacy_openstates
-given_name: Fred
-family_name: Thiele
-email: ThieleF@nyassembly.gov
+other_names:
+- name: Fred Thiele, Jr.
 ids:
   twitter: fred_thiele
   facebook: assemblymanfredthiele
-other_names:
-- name: Fred Thiele, Jr.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000202
+- scheme: legacy_openstates
+  identifier: NYL000316
+sources:
+- url: http://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
+- url: https://assembly.state.ny.us/mem/Fred-W-Thiele-Jr

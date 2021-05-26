@@ -1,21 +1,21 @@
 id: ocd-person/8b1d08a9-a2b7-4732-881f-81fe3bb7779a
 name: Robert Marshall
+given_name: Robert
+family_name: Marshall
+image: https://legis.delaware.gov/images/default-source/Legislators/RobertIMarshall.jpg?sfvrsn=2
 party:
 - name: Democratic
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '3'
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=294
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/Senate
-image: https://legis.delaware.gov/images/default-source/Legislators/RobertIMarshall.jpg?sfvrsn=2
+- url: https://legis.delaware.gov/LegislatorDetail?personId=294
+  note: legislator page
 other_identifiers:
-- identifier: DEL000145
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Marshall
+- scheme: legacy_openstates
+  identifier: DEL000145
+sources:
+- url: https://legis.delaware.gov/Senate
+  note: legislator list page

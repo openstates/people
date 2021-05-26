@@ -1,18 +1,28 @@
 id: ocd-person/de8806cc-fa03-4745-ae1e-198c56492f9a
 name: Barbara Washington
+given_name: Barbara
+family_name: Washington
+email: Barbara.Washington@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
-- district: '9'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: upper
+  district: '23'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '9'
+contact_details:
+- note: Capitol Office
+  address: 201 W Capitol Ave., Rm. 425;Jefferson City, Missouri 65101
+  voice: 573-751-3158
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=23
 - url: https://www.senate.mo.gov/mem09
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000476
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=23
@@ -21,13 +31,3 @@ sources:
 extras:
   first_name: Barbara
   last_name: Washington
-other_identifiers:
-- identifier: MOL000476
-  scheme: legacy_openstates
-given_name: Barbara
-family_name: Washington
-email: Barbara.Washington@house.mo.gov
-contact_details:
-- address: 201 W Capitol Ave., Rm. 425;Jefferson City, Missouri 65101
-  note: Capitol Office
-  voice: 573-751-3158

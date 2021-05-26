@@ -1,33 +1,33 @@
 id: ocd-person/f175aa42-0aa0-434c-9e46-3fe08edc5351
 name: Lance Carson
+given_name: Lance
+family_name: Carson
+image: https://sdlegislature.gov/inc/img/Legislators/Carson_2017.jpg
 party:
 - name: Republican
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+  district: '20'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '20'
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1461&Session=2018s
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=433
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000309
+- scheme: openstates
+  identifier: ocd-person/c999eb0b-8320-4d09-bca5-5737f4512eff
+- scheme: legacy_openstates
+  identifier: SDL000041
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1461&Session=2018s
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=433
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=433
-image: https://sdlegislature.gov/inc/img/Legislators/Carson_2017.jpg
 extras:
   occupation: Retired Business Owner
-other_identifiers:
-- identifier: SDL000309
-  scheme: legacy_openstates
-- identifier: ocd-person/c999eb0b-8320-4d09-bca5-5737f4512eff
-  scheme: openstates
-- identifier: SDL000041
-  scheme: legacy_openstates
-given_name: Lance
-family_name: Carson

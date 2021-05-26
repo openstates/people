@@ -5,16 +5,16 @@ family_name: Hensley
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '9'
 links:
 - url: http://legis.delaware.gov/legislature.nsf/52087754ec8b9261852569c10055df42/b03681a62d1272a9852569d800535df6?OpenDocument&TableRow=1.5.5
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: DEL000128
 sources:
 - url: http://legis.delaware.gov/legislature.nsf/FSMain?OpenFrameset&Frame=right&src=/legislature.nsf/52087754EC8B9261852569C10055DF42/90AF3231F140EBB585257E0E005D8DAE
 - url: http://legis.delaware.gov/Legislature.nsf/Reps?openview
-other_identifiers:
-- identifier: DEL000128
-  scheme: legacy_openstates

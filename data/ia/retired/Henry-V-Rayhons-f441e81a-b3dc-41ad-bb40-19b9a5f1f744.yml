@@ -3,26 +3,26 @@ name: Henry V. Rayhons
 given_name: Henry
 family_name: Rayhons
 middle_name: V.
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=17
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '8'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=17
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '11'
 links:
 - url: https://www.legis.iowa.gov/legislators/house
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000120
+- scheme: legacy_openstates
+  identifier: IAL000291
 sources:
 - url: https://www.legis.iowa.gov/legislators/house
-other_identifiers:
-- identifier: IAL000120
-  scheme: legacy_openstates
-- identifier: IAL000291
-  scheme: legacy_openstates

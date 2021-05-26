@@ -2,22 +2,22 @@ id: ocd-person/8b5ee127-4efd-488c-838b-71ccb3204668
 name: Kraig Powell
 given_name: Kraig
 family_name: Powell
+image: http://le.utah.gov/images/legislator/POWELK.jpg
 party:
 - name: Republican
 roles:
-- district: '54'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://le.utah.gov/images/legislator/POWELK.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '54'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=POWELK
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000088
+- scheme: legacy_openstates
+  identifier: UTL000179
 sources:
 - url: http://le.utah.gov/house2/detail.jsp?i=POWELK
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000088
-  scheme: legacy_openstates
-- identifier: UTL000179
-  scheme: legacy_openstates

@@ -2,20 +2,20 @@ id: ocd-person/9ba5ecea-18be-4115-ada9-d561030b337c
 name: James E. Davitt
 given_name: James E.
 family_name: Davitt
+image: http://www.maine.gov/legis/house/photo127/davije.jpg
 party:
 - name: Democratic
 roles:
-- district: '101'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.maine.gov/legis/house/photo127/davije.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '101'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/davije.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000330
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/davije.htm
-other_identifiers:
-- identifier: MEL000330
-  scheme: legacy_openstates

@@ -1,11 +1,15 @@
 id: ocd-person/de50d28d-6a58-4244-8c74-36ca3f41767a
 name: Ben Queen
+given_name: Ben
+family_name: Queen
+email: ben.queen@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/queen_ben.jpg
 party:
 - name: Republican
 roles:
-- district: '48'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '48'
 contact_details:
 - note: Capitol Office
   address: Room 221E, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,12 +19,8 @@ contact_details:
   voice: 304-709-2013
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Queen
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000367
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Queen
-image: http://www.legis.state.wv.us/images/members/2021/house/queen_ben.jpg
-other_identifiers:
-- identifier: WVL000367
-  scheme: legacy_openstates
-given_name: Ben
-family_name: Queen
-email: ben.queen@wvhouse.gov

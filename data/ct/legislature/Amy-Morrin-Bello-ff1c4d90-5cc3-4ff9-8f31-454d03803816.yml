@@ -4,17 +4,17 @@ email: amy.morrinbello@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '28'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '28'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/morrinbello
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 other_names:
 - name: Morrin Bello, Amy
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

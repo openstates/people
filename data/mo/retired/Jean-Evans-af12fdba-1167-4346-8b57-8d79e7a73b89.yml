@@ -1,22 +1,22 @@
 id: ocd-person/af12fdba-1167-4346-8b57-8d79e7a73b89
 name: Jean Evans
+given_name: Jean
+family_name: Evans
 party:
 - name: Republican
 roles:
-- district: '99'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2019-02-05'
   type: lower
-  end_date: '2019-02-05'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '99'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=99
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000442
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=99
 extras:
   first_name: Jean
   last_name: Evans
-other_identifiers:
-- identifier: MOL000442
-  scheme: legacy_openstates
-given_name: Jean
-family_name: Evans

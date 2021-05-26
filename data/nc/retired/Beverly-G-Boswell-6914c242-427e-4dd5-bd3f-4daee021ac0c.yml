@@ -1,17 +1,22 @@
 id: ocd-person/6914c242-427e-4dd5-bd3f-4daee021ac0c
 name: Beverly G. Boswell
+given_name: Beverly G.
+family_name: Boswell
+image: http://www.ncleg.net/House/pictures/hiRes/714.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '6'
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=714
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000366
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=714
-image: http://www.ncleg.net/House/pictures/hiRes/714.jpg
 extras:
   counties:
   - Beaufort
@@ -19,8 +24,3 @@ extras:
   - Hyde
   - Washington
   notice: null
-other_identifiers:
-- identifier: NCL000366
-  scheme: legacy_openstates
-given_name: Beverly G.
-family_name: Boswell

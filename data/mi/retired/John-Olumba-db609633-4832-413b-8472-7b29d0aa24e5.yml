@@ -2,26 +2,26 @@ id: ocd-person/db609633-4832-413b-8472-7b29d0aa24e5
 name: John Olumba
 given_name: John
 family_name: Olumba
+image: http://media.housedems.com/media_cache/95/d9/79/e6/37/fb/05/8d/f1/50/13/e5/9b/bb/42/73/b1/1c/f4/1d/Olumba_Headshot_e.jpg
 party:
 - name: Democratic
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '3'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://media.housedems.com/media_cache/95/d9/79/e6/37/fb/05/8d/f1/50/13/e5/9b/bb/42/73/b1/1c/f4/1d/Olumba_Headshot_e.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '5'
 links:
 - url: http://www.house.mi.gov/JohnOlumba.asp
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000043
+- scheme: legacy_openstates
+  identifier: MIL000189
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000043
-  scheme: legacy_openstates
-- identifier: MIL000189
-  scheme: legacy_openstates

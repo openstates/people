@@ -2,19 +2,19 @@ id: ocd-person/8d5caf91-7cfd-411f-a783-34865e0105b2
 name: W. T. Mayhall Jr.
 given_name: W. T.
 family_name: Mayhall
+image: http://billstatus.ls.state.ms.us/members/house/mayhall.jpg
 party:
 - name: Republican
 roles:
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/mayhall.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '40'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mayhall.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000164
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mayhall.xml
-other_identifiers:
-- identifier: MSL000164
-  scheme: legacy_openstates

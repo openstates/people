@@ -1,20 +1,20 @@
 id: ocd-person/dfa7d6da-abfd-48b2-b6fc-ea76a31cd616
 name: Len Suzio Jr.
+given_name: Len
+family_name: Suzio
 party:
 - name: Republican
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '13'
 links:
 - url: http://www.ctsenaterepublicans.com/home-Suzio
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000348
+- scheme: legacy_openstates
+  identifier: CTL000355
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000348
-  scheme: legacy_openstates
-- identifier: CTL000355
-  scheme: legacy_openstates
-given_name: Len
-family_name: Suzio

@@ -2,19 +2,19 @@ id: ocd-person/4e8bdfe6-93f7-4e2c-84dc-793372ba1007
 name: Shannon Jones
 given_name: Shannon
 family_name: Jones
+image: http://www.ohiosenate.gov/senate/Assets/Headshots/Small/7.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.ohiosenate.gov/senate/Assets/Headshots/Small/7.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '7'
 links:
 - url: http://www.ohiosenate.gov/jones
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000007
 sources:
 - url: http://www.ohiosenate.gov/members/senate-directory
-other_identifiers:
-- identifier: OHL000007
-  scheme: legacy_openstates

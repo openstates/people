@@ -1,11 +1,15 @@
 id: ocd-person/7739a4d0-534e-4bdb-b7fb-6a8f348e833e
 name: Bob J. Giuda
+given_name: Bob J.
+family_name: Giuda
+email: Bob.Giuda@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/Senate/images/senators/02.jpg
 party:
 - name: Republican
 roles:
-- district: '2'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
+  district: '2'
 contact_details:
 - note: Capitol Office
   address: State House, Room 302;107 North Main Street;Concord, NH 03301
@@ -13,18 +17,14 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001441
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district02.aspx
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/Senate/images/senators/02.jpg
 extras:
   first_name: Bob
   last_name: Giuda
   middle_name: J.
-other_identifiers:
-- identifier: NHL001441
-  scheme: legacy_openstates
-given_name: Bob J.
-family_name: Giuda
-email: Bob.Giuda@leg.state.nh.us

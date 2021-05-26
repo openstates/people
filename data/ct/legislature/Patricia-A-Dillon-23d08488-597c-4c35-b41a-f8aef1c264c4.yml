@@ -1,11 +1,14 @@
 id: ocd-person/23d08488-597c-4c35-b41a-f8aef1c264c4
 name: Patricia A. Dillon
+given_name: Patricia
+family_name: Dillon
+email: Patricia.Dillon@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '92'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '92'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4019;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 68 West Rock Avenue;New Haven, CT 06515
 links:
 - url: http://www.housedems.ct.gov/Dillon
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000128
-  scheme: legacy_openstates
-given_name: Patricia
-family_name: Dillon
-email: Patricia.Dillon@cga.ct.gov
 other_names:
 - name: Dillon, Patricia A.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000128
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

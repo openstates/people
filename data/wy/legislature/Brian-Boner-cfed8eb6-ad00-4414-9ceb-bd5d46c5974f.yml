@@ -1,11 +1,16 @@
 id: ocd-person/cfed8eb6-ad00-4414-9ceb-bd5d46c5974f
 name: Brian Boner
+given_name: Brian
+family_name: Boner
+email: Brian.Boner@wyoleg.gov
+birth_date: 1984-12-10
+image: http://wyoleg.gov/LegislatorSummary/Photos/BonerS02.jpg
 party:
 - name: Republican
 roles:
-- district: '2'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '2'
 contact_details:
 - note: District Office
   address: PO Box 1308, Douglas WY 82633
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2021
 - url: http://wyoleg.gov/Legislators/2021/R/2021
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000136
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2021
 - url: http://wyoleg.gov/Legislators/2021/R/2021
-image: http://wyoleg.gov/LegislatorSummary/Photos/BonerS02.jpg
-birth_date: '1984-12-10'
-given_name: Brian
-family_name: Boner
 extras:
   civic_organizations:
   - orgname: Moose Lodge
@@ -43,7 +47,3 @@ extras:
   religion: Catholic
   spouse_given_name: Nicole
   wy_leg_id: 2021
-other_identifiers:
-- identifier: WYL000136
-  scheme: legacy_openstates
-email: Brian.Boner@wyoleg.gov

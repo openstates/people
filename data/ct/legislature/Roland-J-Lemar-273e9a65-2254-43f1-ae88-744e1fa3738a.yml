@@ -1,11 +1,14 @@
 id: ocd-person/273e9a65-2254-43f1-ae88-744e1fa3738a
 name: Roland J. Lemar
+given_name: Roland
+family_name: Lemar
+email: roland.lemar@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '96'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '96'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2300;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-903-5003
 links:
 - url: http://www.housedems.ct.gov/lemar
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000132
-  scheme: legacy_openstates
-given_name: Roland
-family_name: Lemar
-email: roland.lemar@cga.ct.gov
 other_names:
 - name: Lemar, Roland J.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000132
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -2,19 +2,19 @@ id: ocd-person/408e9671-d26b-4058-bd9f-452eb99a0dd2
 name: John Wright
 given_name: John
 family_name: Wright
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=662
 party:
 - name: Democratic
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=662
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '47'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=58
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000367
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=47
-other_identifiers:
-- identifier: MOL000367
-  scheme: legacy_openstates

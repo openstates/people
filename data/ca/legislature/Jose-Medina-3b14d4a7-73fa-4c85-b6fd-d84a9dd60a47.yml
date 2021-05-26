@@ -1,11 +1,15 @@
 id: ocd-person/3b14d4a7-73fa-4c85-b6fd-d84a9dd60a47
 name: Jose Medina
+given_name: Jose
+family_name: Medina
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD61-Medina_0.jpg
 party:
 - name: Democratic
 roles:
-- district: '61'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '61'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0061
@@ -15,14 +19,10 @@ contact_details:
   voice: 951-369-6644
 links:
 - url: https://a61.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD61&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD61&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000387
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD61-Medina_0.jpg
-other_identifiers:
-- identifier: CAL000387
-  scheme: legacy_openstates
-given_name: Jose
-family_name: Medina
-gender: Male

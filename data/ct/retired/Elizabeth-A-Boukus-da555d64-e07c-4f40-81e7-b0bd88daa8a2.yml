@@ -2,19 +2,19 @@ id: ocd-person/da555d64-e07c-4f40-81e7-b0bd88daa8a2
 name: Elizabeth A. Boukus
 given_name: Elizabeth A.
 family_name: Boukus
+image: http://www.housedems.ct.gov/Boukus/images/Boukus8.jpg
 party:
 - name: Democratic
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/Boukus/images/Boukus8.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '22'
 links:
 - url: http://www.housedems.ct.gov/Boukus
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000058
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000058
-  scheme: legacy_openstates

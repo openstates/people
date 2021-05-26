@@ -1,30 +1,30 @@
 id: ocd-person/91b85143-6ba4-42d1-970c-8dfbb7140fbd
 name: Chris Carter
+given_name: Chris
+family_name: Carter
+email: Chris.Carter@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '76'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '61'
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '76'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=76
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000052
+- scheme: openstates
+  identifier: ocd-person/4b738c76-6d31-4e1c-a4e5-cbea4bef2bc1
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=76
 extras:
   first_name: Chris
   last_name: Carter
-other_identifiers:
-- identifier: MOL000052
-  scheme: legacy_openstates
-- identifier: ocd-person/4b738c76-6d31-4e1c-a4e5-cbea4bef2bc1
-  scheme: openstates
-email: Chris.Carter@house.mo.gov
-given_name: Chris
-family_name: Carter

@@ -2,26 +2,26 @@ id: ocd-person/a1282b7f-98d8-4a28-83f3-aedb24cae924
 name: Tommie Pierson
 given_name: Tommie
 family_name: Pierson
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=497
 party:
 - name: Democratic
 roles:
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '69'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '66'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=497
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '69'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=138
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000147
+- scheme: legacy_openstates
+  identifier: MOL000326
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=66
-other_identifiers:
-- identifier: MOL000147
-  scheme: legacy_openstates
-- identifier: MOL000326
-  scheme: legacy_openstates

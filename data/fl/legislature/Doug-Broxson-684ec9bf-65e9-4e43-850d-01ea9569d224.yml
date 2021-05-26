@@ -1,16 +1,20 @@
 id: ocd-person/684ec9bf-65e9-4e43-850d-01ea9569d224
 name: Doug Broxson
+given_name: Doug
+family_name: Broxson
+email: broxson.doug.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s01_5194.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '1'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
+  district: '3'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: 418 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -21,18 +25,14 @@ contact_details:
 links:
 - url: http://www.flsenate.gov/Senators/s1
 - url: http://www.flsenate.gov/Senators/2018-2020/S1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000577
+- scheme: legacy_openstates
+  identifier: FLL000402
+- scheme: openstates
+  identifier: ocd-person/97934a61-a014-479b-8a70-5fd95e37068f
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s1
 - url: http://www.flsenate.gov/Senators/2018-2020/S1
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s01_5194.jpg
-other_identifiers:
-- identifier: FLL000577
-  scheme: legacy_openstates
-- identifier: FLL000402
-  scheme: legacy_openstates
-- identifier: ocd-person/97934a61-a014-479b-8a70-5fd95e37068f
-  scheme: openstates
-given_name: Doug
-family_name: Broxson
-email: broxson.doug.web@flsenate.gov

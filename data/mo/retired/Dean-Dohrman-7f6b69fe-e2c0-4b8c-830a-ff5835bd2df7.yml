@@ -1,23 +1,23 @@
 id: ocd-person/7f6b69fe-e2c0-4b8c-830a-ff5835bd2df7
 name: Dean Dohrman
+given_name: Dean
+family_name: Dohrman
+email: Dean.Dohrman@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '51'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '51'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=51
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000238
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=51
 extras:
   first_name: Dean
   last_name: Dohrman
-other_identifiers:
-- identifier: MOL000238
-  scheme: legacy_openstates
-given_name: Dean
-family_name: Dohrman
-email: Dean.Dohrman@house.mo.gov

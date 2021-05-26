@@ -3,27 +3,27 @@ name: Barbara R Sears
 given_name: Barbara
 family_name: Sears
 middle_name: R
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/47.jpg
 party:
 - name: Republican
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '46'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '47'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/47.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '46'
 links:
 - url: http://www.ohiohouse.gov/barbara-r-sears
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000079
+- scheme: legacy_openstates
+  identifier: OHL000216
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
 - url: http://www.dispatch.com/content/stories/local/2016/06/08/Sears_accepts_health_position.html
-other_identifiers:
-- identifier: OHL000079
-  scheme: legacy_openstates
-- identifier: OHL000216
-  scheme: legacy_openstates

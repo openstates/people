@@ -1,11 +1,16 @@
 id: ocd-person/1fb9515b-440c-45f4-92e9-6276ffd4a9dd
 name: Dave A. LaRock
+given_name: Dave A.
+family_name: LaRock
+gender: Male
+email: DelDLaRock@house.virginia.gov
+image: http://memdata.virginiageneralassembly.gov/images/display_image/H0261
 party:
 - name: Republican
 roles:
-- district: '33'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
+  district: '33'
 contact_details:
 - note: District Office
   address: P.O. Box 6;Hamilton, Virginia 20159
@@ -13,23 +18,18 @@ contact_details:
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H261
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H261
+other_names:
+- name: LaRock, Dave A.
+ids:
+  twitter: LaRock4Delegate
+  facebook: DelegateDaveLaRock
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000188
+- scheme: legacy_openstates
+  identifier: VAL000207
 sources:
 - url: http://lis.virginia.gov/191/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H261
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H261
-image: http://memdata.virginiageneralassembly.gov/images/display_image/H0261
-other_identifiers:
-- identifier: VAL000188
-  scheme: legacy_openstates
-- identifier: VAL000207
-  scheme: legacy_openstates
-given_name: Dave A.
-family_name: LaRock
-gender: Male
-ids:
-  facebook: DelegateDaveLaRock
-  twitter: LaRock4Delegate
-email: DelDLaRock@house.virginia.gov
-other_names:
-- name: LaRock, Dave A.

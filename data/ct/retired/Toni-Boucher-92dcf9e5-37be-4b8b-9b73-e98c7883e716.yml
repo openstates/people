@@ -1,24 +1,24 @@
 id: ocd-person/92dcf9e5-37be-4b8b-9b73-e98c7883e716
 name: Toni Boucher
+given_name: Antonietta
+family_name: Boucher
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '26'
 links:
 - url: http://www.ctsenaterepublicans.com/home-boucher
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000026
+- scheme: legacy_openstates
+  identifier: CTL000237
+- scheme: legacy_openstates
+  identifier: CTL000248
+- scheme: legacy_openstates
+  identifier: CTL000257
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000026
-  scheme: legacy_openstates
-- identifier: CTL000237
-  scheme: legacy_openstates
-- identifier: CTL000248
-  scheme: legacy_openstates
-- identifier: CTL000257
-  scheme: legacy_openstates
-given_name: Antonietta
-family_name: Boucher

@@ -1,11 +1,14 @@
 id: ocd-person/02ce0fa3-ac25-42dd-9f5e-ee44b7e9d542
 name: Craig C. Fishbein
+given_name: Craig
+family_name: Fishbein
+email: Craig.Fishbein@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '90'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '90'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4200;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 179 Grieb Road;Wallingford, CT 06492
 links:
 - url: http://www.cthousegop.com/Fishbein/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000341
-  scheme: legacy_openstates
-given_name: Craig
-family_name: Fishbein
-email: Craig.Fishbein@housegop.ct.gov
 other_names:
 - name: Fishbein, Craig C.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000341
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

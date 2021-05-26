@@ -1,18 +1,18 @@
 id: ocd-person/aaeebd95-7f0f-464c-a99b-7da43e217b79
 name: William Duff
+given_name: William
+family_name: Duff
 party:
 - name: Republican
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '2'
 links:
 - url: http://www.cthousegop.com/Duff/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000323
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000323
-  scheme: legacy_openstates
-given_name: William
-family_name: Duff

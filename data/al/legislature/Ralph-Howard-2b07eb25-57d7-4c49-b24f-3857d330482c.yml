@@ -1,28 +1,28 @@
 id: ocd-person/2b07eb25-57d7-4c49-b24f-3857d330482c
 name: Ralph Howard
+given_name: Ralph
+family_name: Howard
+email: ralph.howard@alhouse.gov
+image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Howard_72.jpeg
 party:
 - name: Democratic
 roles:
-- district: '72'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  type: lower
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100554&OID_PERSON=5283
+  district: '72'
 contact_details:
 - note: Capitol Office
   address: Suite 525-B;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0559
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100554&OID_PERSON=5283
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000080
+- scheme: legacy_openstates
+  identifier: ALL000242
+- scheme: legacy_openstates
+  identifier: ALL000460
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100554&OID_PERSON=5283
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Howard_72.jpeg
-other_identifiers:
-- identifier: ALL000080
-  scheme: legacy_openstates
-- identifier: ALL000242
-  scheme: legacy_openstates
-- identifier: ALL000460
-  scheme: legacy_openstates
-given_name: Ralph
-family_name: Howard
-email: ralph.howard@alhouse.gov

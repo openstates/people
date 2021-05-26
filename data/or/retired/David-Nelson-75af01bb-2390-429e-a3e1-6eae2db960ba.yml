@@ -2,19 +2,19 @@ id: ocd-person/75af01bb-2390-429e-a3e1-6eae2db960ba
 name: David Nelson
 given_name: David
 family_name: Nelson
+image: http://www.leg.state.or.us/nelson_david/member_photo.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.leg.state.or.us/nelson_david/member_photo.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '29'
 links:
 - url: http://www.leg.state.or.us/nelson_david
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000020
 sources:
 - url: http://www.leg.state.or.us/xml/members.xml
-other_identifiers:
-- identifier: ORL000020
-  scheme: legacy_openstates

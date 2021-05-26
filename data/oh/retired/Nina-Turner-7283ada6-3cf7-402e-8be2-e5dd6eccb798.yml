@@ -2,19 +2,19 @@ id: ocd-person/7283ada6-3cf7-402e-8be2-e5dd6eccb798
 name: Nina Turner
 given_name: Nina
 family_name: Turner
+image: http://www.ohiosenate.gov/senate/Assets/Headshots/Small/25.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.ohiosenate.gov/senate/Assets/Headshots/Small/25.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '25'
 links:
 - url: http://www.ohiosenate.gov/senate/turner
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000025
 sources:
 - url: http://www.ohiosenate.gov/senate/members/senate-directory
-other_identifiers:
-- identifier: OHL000025
-  scheme: legacy_openstates

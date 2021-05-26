@@ -2,20 +2,20 @@ id: ocd-person/92ccf154-37a7-4c63-9544-680b699a5548
 name: Doug Holt
 given_name: Doug
 family_name: Holt
+image: http://www.house.ga.gov/SiteCollectionImages/HoltDoug128.jpg
 party:
 - name: Republican
 roles:
-- district: '112'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/HoltDoug128.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '112'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=128&Session=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000133
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=128&Session=23
-other_identifiers:
-- identifier: GAL000133
-  scheme: legacy_openstates

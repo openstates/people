@@ -1,11 +1,14 @@
 id: ocd-person/2342cde8-078f-4dd8-8879-f9fdaa036a94
 name: Doug Dubitsky
+given_name: Doug
+family_name: Dubitsky
+email: Doug.Dubitsky@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '47'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '47'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4047;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: P.O. Box 140;Chaplin, CT 06235
 links:
 - url: http://www.cthousegop.com/Dubitsky/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000280
-  scheme: legacy_openstates
-given_name: Doug
-family_name: Dubitsky
-email: Doug.Dubitsky@housegop.ct.gov
 other_names:
 - name: Dubitsky, Doug
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000280
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

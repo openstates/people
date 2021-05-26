@@ -2,19 +2,19 @@ id: ocd-person/a65e9933-795e-4eda-8864-0572ed2bdbef
 name: Sally Stutsman
 given_name: Sally
 family_name: Stutsman
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=10745
 party:
 - name: Democratic
 roles:
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=10745
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '77'
 links:
 - url: https://www.legis.iowa.gov/legislators/house
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000307
 sources:
 - url: https://www.legis.iowa.gov/legislators/house
-other_identifiers:
-- identifier: IAL000307
-  scheme: legacy_openstates

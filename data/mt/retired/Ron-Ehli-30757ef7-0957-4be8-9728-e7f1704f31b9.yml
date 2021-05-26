@@ -1,22 +1,22 @@
 id: ocd-person/30757ef7-0957-4be8-9728-e7f1704f31b9
 name: Ron Ehli
+given_name: Ron
+family_name: Ehli
 party:
 - name: Republican
 roles:
-- district: '86'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '86'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4828
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4828
+  note: legislator page
 other_identifiers:
-- identifier: MTL000072
-  scheme: legacy_openstates
-- identifier: MTL000274
-  scheme: legacy_openstates
-given_name: Ron
-family_name: Ehli
+- scheme: legacy_openstates
+  identifier: MTL000072
+- scheme: legacy_openstates
+  identifier: MTL000274
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

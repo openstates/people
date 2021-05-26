@@ -1,16 +1,20 @@
 id: ocd-person/8bd21671-34c1-4ba3-aced-0dcaa110029c
 name: Bill Hamilton
+given_name: Bill
+family_name: Hamilton
+email: bill.hamilton@wvsenate.gov
+image: http://www.legis.state.wv.us/images/members/2021/senate/hamilton_bill.jpg
 party:
 - name: Republican
 roles:
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+- end_date: '2018-11-30'
   type: lower
-  end_date: '2018-11-30'
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '45'
+- start_date: '2018-12-01'
   type: upper
-  start_date: '2018-12-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: Room 223W, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -20,14 +24,10 @@ contact_details:
   voice: 304-472-1966
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Hamilton
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000107
+- scheme: legacy_openstates
+  identifier: WVL000197
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Hamilton
-image: http://www.legis.state.wv.us/images/members/2021/senate/hamilton_bill.jpg
-other_identifiers:
-- identifier: WVL000107
-  scheme: legacy_openstates
-- identifier: WVL000197
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Hamilton
-email: bill.hamilton@wvsenate.gov

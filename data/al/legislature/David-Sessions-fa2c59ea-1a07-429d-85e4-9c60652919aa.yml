@@ -1,33 +1,33 @@
 id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
 name: David Sessions
+given_name: David
+family_name: Sessions
+email: d.r.sessions@att.net
+image: http://www.legislature.state.al.us/ALISWWW/Senate/Senator%20Pictures/Sessions_35.jpeg
 party:
 - name: Republican
 roles:
-- district: '105'
-  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+- end_date: '2018-11-07'
   type: lower
-  end_date: '2018-11-07'
-- district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '105'
+- start_date: '2018-11-07'
   type: upper
-  start_date: '2018-11-07'
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '35'
 contact_details:
 - note: Capitol Office
   address: Suite 733;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0882
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000126
+- scheme: legacy_openstates
+  identifier: ALL000196
+- scheme: legacy_openstates
+  identifier: ALL000357
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
 - url: http://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
-image: http://www.legislature.state.al.us/ALISWWW/Senate/Senator%20Pictures/Sessions_35.jpeg
-other_identifiers:
-- identifier: ALL000126
-  scheme: legacy_openstates
-- identifier: ALL000196
-  scheme: legacy_openstates
-- identifier: ALL000357
-  scheme: legacy_openstates
-given_name: David
-family_name: Sessions
-email: d.r.sessions@att.net

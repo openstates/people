@@ -1,16 +1,20 @@
 id: ocd-person/ef6a28f2-da94-4a3f-850a-b005cffa884d
 name: Patty Kuderer
+given_name: Patty
+family_name: Kuderer
+email: patty.kuderer@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/kuderer.jpg
 party:
 - name: Democratic
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2018-12-31
-- district: '48'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '48'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '48'
 contact_details:
 - note: Capitol Office
   address: 411 Legislative Building;PO Box 40448;Olympia, WA 98504
@@ -18,18 +22,14 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Kuderer/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000256
+- scheme: legacy_openstates
+  identifier: WAL000231
+- scheme: legacy_openstates
+  identifier: WAL000232
+- scheme: openstates
+  identifier: ocd-person/84c9ebce-40db-47ff-ad39-d3c588113c1f
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/kuderer.jpg
-other_identifiers:
-- identifier: WAL000256
-  scheme: legacy_openstates
-- identifier: WAL000231
-  scheme: legacy_openstates
-- identifier: WAL000232
-  scheme: legacy_openstates
-- identifier: ocd-person/84c9ebce-40db-47ff-ad39-d3c588113c1f
-  scheme: openstates
-given_name: Patty
-family_name: Kuderer
-email: patty.kuderer@leg.wa.gov

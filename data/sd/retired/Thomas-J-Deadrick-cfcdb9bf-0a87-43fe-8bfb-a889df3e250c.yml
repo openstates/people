@@ -3,17 +3,17 @@ name: Thomas J Deadrick
 given_name: Thomas
 family_name: Deadrick
 middle_name: J
+image: http://legis.state.sd.us/sessions/2009/deadrick.jpg
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2009/deadrick.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '21'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000046
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=64
-other_identifiers:
-- identifier: SDL000046
-  scheme: legacy_openstates

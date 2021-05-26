@@ -2,27 +2,27 @@ id: ocd-person/1543294e-4df1-4d72-b0ac-e116ac9f1d84
 name: Pat Noonan
 given_name: Pat
 family_name: Noonan
+image: http://leg.mt.gov/images/legislators_64th/12766.jpg
 party:
 - name: Democratic
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '74'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '73'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/12766.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '74'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12766
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000115
+- scheme: legacy_openstates
+  identifier: MTL000242
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12766
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000115
-  scheme: legacy_openstates
-- identifier: MTL000242
-  scheme: legacy_openstates

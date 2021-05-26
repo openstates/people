@@ -1,31 +1,31 @@
 id: ocd-person/65a42043-6243-4f79-b1e0-69b3b8b4af29
 name: Charlie Geren
+given_name: Charlie
+family_name: Geren
+image: https://house.texas.gov/photos/members/2945.jpg
 party:
 - name: Republican
 roles:
-- district: '99'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
+  district: '99'
 contact_details:
 - note: Capitol Office
   address: Room GW.15;P.O. Box 2910;Austin, TX 78768
-  fax: 512-463-8310
   voice: 512-463-0610
+  fax: 512-463-8310
 - note: District Office
   address: 6713 Telephone Rd Suite 301;Lake Worth, TX 76135
-  fax: 817-237-2264
   voice: 817-237-2251
+  fax: 817-237-2264
 links:
 - url: https://house.texas.gov/members/member-page/?district=99
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000264
+- scheme: legacy_openstates
+  identifier: TXL000082
+- scheme: legacy_openstates
+  identifier: TXL000626
 sources:
 - url: https://house.texas.gov/members/member-page/?district=99
-image: https://house.texas.gov/photos/members/2945.jpg
-other_identifiers:
-- identifier: TXL000264
-  scheme: legacy_openstates
-- identifier: TXL000082
-  scheme: legacy_openstates
-- identifier: TXL000626
-  scheme: legacy_openstates
-given_name: Charlie
-family_name: Geren

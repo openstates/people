@@ -1,30 +1,7 @@
 id: ocd-person/d7d0bd69-2615-4d0c-84df-4cdb75809343
 name: Charles Schwertner
-party:
-- name: Republican
-roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0105
-- note: District Office
-  address: 117 W. 7th Street, Suite 5 Georgetown, TX 78626
-  voice: 512-863-8456
-links:
-- url: https://senate.texas.gov/member.php?d=5
-sources:
-- url: https://senate.texas.gov/member.php?d=5
-other_identifiers:
-- identifier: TXL000405
-  scheme: legacy_openstates
-- identifier: TXL000422
-  scheme: legacy_openstates
 given_name: Charles
 family_name: Schwertner
-image: https://senate.texas.gov/members/d05/img/headshot.jpg
 biography: "Senator Charles Schwertner is a physician, family man, business owner,\
   \ and a life-long fiscal and social conservative. In 2010, Schwertner was first\
   \ elected to serve the people of House District 20 as a member of the Texas House\
@@ -54,3 +31,26 @@ biography: "Senator Charles Schwertner is a physician, family man, business owne
   \ Texas Legislature, Dr. Schwertner also works as a practicing orthopedic surgeon,\
   \ treating thousands of patients each year. He and his wife Belinda (an obstetrician/gynecologist)\
   \ reside in Georgetown with their three sons: Carson, Zachary, and Matthew."
+image: https://senate.texas.gov/members/d05/img/headshot.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '5'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0105
+- note: District Office
+  address: 117 W. 7th Street, Suite 5 Georgetown, TX 78626
+  voice: 512-863-8456
+links:
+- url: https://senate.texas.gov/member.php?d=5
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000405
+- scheme: legacy_openstates
+  identifier: TXL000422
+sources:
+- url: https://senate.texas.gov/member.php?d=5

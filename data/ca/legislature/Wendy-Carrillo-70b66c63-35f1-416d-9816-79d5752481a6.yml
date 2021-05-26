@@ -1,11 +1,15 @@
 id: ocd-person/70b66c63-35f1-416d-9816-79d5752481a6
 name: Wendy Carrillo
+given_name: Wendy
+family_name: Carrillo
+gender: Female
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad51_carrillo_1.jpg
 party:
 - name: Democratic
 roles:
-- district: '51'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '51'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0051
@@ -15,14 +19,10 @@ contact_details:
   voice: 213-483-5151
 links:
 - url: https://a51.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD51&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD51&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000535
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad51_carrillo_1.jpg
-other_identifiers:
-- identifier: CAL000535
-  scheme: legacy_openstates
-given_name: Wendy
-family_name: Carrillo
-gender: Female

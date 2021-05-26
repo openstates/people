@@ -2,26 +2,26 @@ id: ocd-person/f5aca413-aa09-4923-8b10-396774662159
 name: Alan Austerman
 given_name: Alan
 family_name: Austerman
+image: http://w3.legis.state.ak.us/images/house/AUS.jpg
 party:
 - name: Republican
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '36'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://w3.legis.state.ak.us/images/house/AUS.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '35'
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=aus
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000021
+- scheme: legacy_openstates
+  identifier: AKL000094
 sources:
 - url: http://house.legis.state.ak.us/rep.php?id=aus
-other_identifiers:
-- identifier: AKL000021
-  scheme: legacy_openstates
-- identifier: AKL000094
-  scheme: legacy_openstates

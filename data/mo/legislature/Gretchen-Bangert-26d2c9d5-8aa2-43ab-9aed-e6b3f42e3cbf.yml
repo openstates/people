@@ -1,19 +1,28 @@
 id: ocd-person/26d2c9d5-8aa2-43ab-9aed-e6b3f42e3cbf
 name: Gretchen Bangert
+given_name: Gretchen
+family_name: Bangert
+email: Gretchen.Bangert@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1908
 party:
 - name: Democratic
 roles:
-- district: '69'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '69'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 109-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 109-B; Jefferson
+    City MO 65101
   voice: 573-751-5365
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=69
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=069
+other_names:
+- name: Bangert, Gretchen
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000449
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=69
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Gretchen
   last_name: Bangert
-other_identifiers:
-- identifier: MOL000449
-  scheme: legacy_openstates
-given_name: Gretchen
-family_name: Bangert
-email: Gretchen.Bangert@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1908
-other_names:
-- name: Bangert, Gretchen

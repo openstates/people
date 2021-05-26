@@ -1,23 +1,23 @@
 id: ocd-person/30f3d7a9-e46a-45c0-b6a8-192ca4fc5345
 name: Sonya Anderson
+given_name: Sonya
+family_name: Anderson
+email: Sonya.Anderson@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '131'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '131'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=131
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000213
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=131
 extras:
   first_name: Sonya
   last_name: Anderson
-other_identifiers:
-- identifier: MOL000213
-  scheme: legacy_openstates
-given_name: Sonya
-family_name: Anderson
-email: Sonya.Anderson@house.mo.gov

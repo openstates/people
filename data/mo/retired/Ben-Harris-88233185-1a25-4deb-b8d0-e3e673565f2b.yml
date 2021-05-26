@@ -1,24 +1,24 @@
 id: ocd-person/88233185-1a25-4deb-b8d0-e3e673565f2b
 name: Ben Harris
+given_name: Ben
+family_name: Harris
 party:
 - name: Democratic
 roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '118'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=118
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000089
+- scheme: legacy_openstates
+  identifier: MOL000267
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=118
 extras:
   first_name: Ben
   last_name: Harris
-other_identifiers:
-- identifier: MOL000089
-  scheme: legacy_openstates
-- identifier: MOL000267
-  scheme: legacy_openstates
-given_name: Ben
-family_name: Harris

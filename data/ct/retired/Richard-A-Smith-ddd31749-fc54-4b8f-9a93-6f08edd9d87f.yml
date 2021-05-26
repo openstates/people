@@ -1,19 +1,19 @@
 id: ocd-person/ddd31749-fc54-4b8f-9a93-6f08edd9d87f
 name: Richard A. Smith
-party:
-- name: Republican
-roles:
-- district: '108'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: http://www.cthousegop.com/Smith/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000144
-  scheme: legacy_openstates
 given_name: Richard
 family_name: Smith
 email: richard.smith@housegop.ct.gov
+party:
+- name: Republican
+roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '108'
+links:
+- url: http://www.cthousegop.com/Smith/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000144
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

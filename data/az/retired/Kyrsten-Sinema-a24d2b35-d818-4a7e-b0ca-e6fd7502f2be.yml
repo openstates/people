@@ -2,32 +2,32 @@ id: ocd-person/a24d2b35-d818-4a7e-b0ca-e6fd7502f2be
 name: Kyrsten Sinema
 given_name: Kyrsten
 family_name: Sinema
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/SINEMA.gif
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
-  start_date: '2009-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '15'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/SINEMA.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '24'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=15&Legislature=50&Session_ID=107
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000002
+- scheme: legacy_openstates
+  identifier: AZL000086
+- scheme: legacy_openstates
+  identifier: AZL000125
+- scheme: legacy_openstates
+  identifier: AZL000199
+- scheme: legacy_openstates
+  identifier: AZL000205
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=107&body=S
-other_identifiers:
-- identifier: AZL000002
-  scheme: legacy_openstates
-- identifier: AZL000086
-  scheme: legacy_openstates
-- identifier: AZL000125
-  scheme: legacy_openstates
-- identifier: AZL000199
-  scheme: legacy_openstates
-- identifier: AZL000205
-  scheme: legacy_openstates

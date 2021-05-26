@@ -1,26 +1,5 @@
 id: ocd-person/ccecd8e2-0208-4819-a2b1-1234ad22f197
 name: Pat Fallon
-party:
-- name: Republican
-roles:
-- district: '106'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  end_date: '2019-01-07'
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-  end_date: '2020-12-31'
-links:
-- url: https://senate.texas.gov/member.php?d=30
-sources:
-- url: https://senate.texas.gov/member.php?d=30
-image: https://senate.texas.gov/members/d30/img/Fallon_2019.jpg
-other_identifiers:
-- identifier: TXL000434
-  scheme: legacy_openstates
-- identifier: TXL000557
-  scheme: legacy_openstates
 given_name: Pat
 family_name: Fallon
 biography: "Pat Fallon, a dedicated and life long constitutional conservative, is\
@@ -39,3 +18,24 @@ biography: "Pat Fallon, a dedicated and life long constitutional conservative, i
   \ the first novice runner in the world to complete the \u2018777\u2019.\r \r Pat\
   \ has been married to his beautiful wife, Susan, since 2004 and they have two wonderful\
   \ sons, Thomas and Mac (and a mischievous puggle named Bowzer)."
+image: https://senate.texas.gov/members/d30/img/Fallon_2019.jpg
+party:
+- name: Republican
+roles:
+- end_date: '2019-01-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '106'
+- end_date: '2020-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '30'
+links:
+- url: https://senate.texas.gov/member.php?d=30
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000434
+- scheme: legacy_openstates
+  identifier: TXL000557
+sources:
+- url: https://senate.texas.gov/member.php?d=30

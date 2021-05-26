@@ -1,24 +1,24 @@
 id: ocd-person/6c1ad7e8-650a-4b91-a358-8104e4945eca
 name: Jack Hill
+given_name: Jack
+family_name: Hill
+death_date: 2020-04-06
+image: http://www.senate.ga.gov/SiteCollectionImages/HillJack22.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2020-04-06'
   type: upper
-  end_date: '2020-04-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '4'
   end_reason: Deceased
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=22&Session=27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000023
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=22&Session=27
-image: http://www.senate.ga.gov/SiteCollectionImages/HillJack22.jpg
-family_name: Hill
-given_name: Jack
 extras:
   guid: 22
-other_identifiers:
-- identifier: GAL000023
-  scheme: legacy_openstates
-death_date: '2020-04-06'

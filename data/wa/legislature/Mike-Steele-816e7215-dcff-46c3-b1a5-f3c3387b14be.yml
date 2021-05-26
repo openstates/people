@@ -1,11 +1,15 @@
 id: ocd-person/816e7215-dcff-46c3-b1a5-f3c3387b14be
 name: Mike Steele
+given_name: Mike
+family_name: Steele
+email: mike.steele@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/steele.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: 122F Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,16 +18,12 @@ links:
 - url: http://houserepublicans.wa.gov/Mike-Steele/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: http://MikeSteele.houserepublicans.wa.gov/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000265
+- scheme: legacy_openstates
+  identifier: WAL000271
+- scheme: legacy_openstates
+  identifier: WAL000274
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/steele.jpg
-other_identifiers:
-- identifier: WAL000265
-  scheme: legacy_openstates
-- identifier: WAL000271
-  scheme: legacy_openstates
-- identifier: WAL000274
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Steele
-email: mike.steele@leg.wa.gov

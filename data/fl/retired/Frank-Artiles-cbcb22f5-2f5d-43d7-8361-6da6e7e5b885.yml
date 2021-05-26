@@ -2,27 +2,27 @@ id: ocd-person/cbcb22f5-2f5d-43d7-8361-6da6e7e5b885
 name: Frank Artiles
 given_name: Frank
 family_name: Artiles
+image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4529.jpg
 party:
 - name: Republican
 roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '119'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '118'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4529.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '119'
 links:
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4529&LegislativeTermId=86
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000045
+- scheme: legacy_openstates
+  identifier: FLL000210
 sources:
 - url: http://www.flhouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4529&LegislativeTermId=86
-other_identifiers:
-- identifier: FLL000045
-  scheme: legacy_openstates
-- identifier: FLL000210
-  scheme: legacy_openstates

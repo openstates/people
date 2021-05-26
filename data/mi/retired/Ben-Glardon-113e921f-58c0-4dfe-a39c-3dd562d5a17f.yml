@@ -2,19 +2,19 @@ id: ocd-person/113e921f-58c0-4dfe-a39c-3dd562d5a17f
 name: Ben Glardon
 given_name: Ben
 family_name: Glardon
+image: http://gophouse.org/wp-content/uploads/2013/02/85.jpg
 party:
 - name: Republican
 roles:
-- district: '85'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/85.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '85'
 links:
 - url: http://repGlardon.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000123
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000123
-  scheme: legacy_openstates

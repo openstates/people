@@ -2,27 +2,27 @@ id: ocd-person/b58e5901-e3b6-49e1-869c-2849757ff889
 name: Cory Mason
 given_name: Cory
 family_name: Mason
+image: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1585.jpg
 party:
 - name: Democratic
 roles:
-- district: '62'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '62'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-image: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1585.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '66'
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1585
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000389
+- scheme: legacy_openstates
+  identifier: WIL000524
 sources:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1585
 - url: https://www.jsonline.com/story/news/politics/elections/2017/11/07/rep-cory-mason-stepping-down-wisconsin-assembly-he-takes-job-racine-mayor/841018001/
-other_identifiers:
-- identifier: WIL000389
-  scheme: legacy_openstates
-- identifier: WIL000524
-  scheme: legacy_openstates

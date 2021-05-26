@@ -1,11 +1,15 @@
 id: ocd-person/abfa015f-301e-4e17-9917-535bb9079768
 name: Steve Massengill
+given_name: Steve
+family_name: Massengill
+email: smassengill@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/massengill.jpg
 party:
 - name: Republican
 roles:
-- district: '13'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '13'
 contact_details:
 - note: Capitol Office
   address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
@@ -14,15 +18,11 @@ contact_details:
   address: 424 Massengill Road;Hickory Flat, MS 38633
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/massengill.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000195
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/massengill.xml
-image: http://billstatus.ls.state.ms.us/members/house/massengill.jpg
 extras:
   org_info: Rep. Massengill is a member of Ebenezer Men's Club (President) and Pott's
     Camp Booster Club.
-other_identifiers:
-- identifier: MSL000195
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Massengill
-email: smassengill@house.ms.gov

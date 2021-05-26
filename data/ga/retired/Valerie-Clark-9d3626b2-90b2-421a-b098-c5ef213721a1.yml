@@ -2,27 +2,27 @@ id: ocd-person/9d3626b2-90b2-421a-b098-c5ef213721a1
 name: Valerie Clark
 given_name: Valerie
 family_name: Clark
+image: http://www.house.ga.gov/SiteCollectionImages/ClarkValerie775.jpg
 party:
 - name: Republican
 roles:
-- district: '101'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '104'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '101'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/ClarkValerie775.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '104'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=775&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000085
+- scheme: legacy_openstates
+  identifier: GAL000264
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=775&Session=24
-other_identifiers:
-- identifier: GAL000085
-  scheme: legacy_openstates
-- identifier: GAL000264
-  scheme: legacy_openstates

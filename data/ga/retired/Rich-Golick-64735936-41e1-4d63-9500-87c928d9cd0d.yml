@@ -1,24 +1,24 @@
 id: ocd-person/64735936-41e1-4d63-9500-87c928d9cd0d
 name: Rich Golick
+given_name: Rich
+family_name: Golick
+image: http://www.house.ga.gov/SiteCollectionImages/GolickRich112.jpg
 party:
 - name: Republican
 roles:
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '40'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=112&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000115
+- scheme: legacy_openstates
+  identifier: GAL000289
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=112&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/GolickRich112.jpg
-family_name: Golick
-given_name: Rich
 extras:
   guid: 112
-other_identifiers:
-- identifier: GAL000115
-  scheme: legacy_openstates
-- identifier: GAL000289
-  scheme: legacy_openstates

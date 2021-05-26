@@ -2,26 +2,26 @@ id: ocd-person/d5fb6018-3279-4725-b51b-0dd05e3f031e
 name: Paul Bookout
 given_name: Paul
 family_name: Bookout
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Bookout.jpg
 party:
 - name: Democratic
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '21'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Bookout.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '14'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Bookout
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000011
+- scheme: legacy_openstates
+  identifier: ARL000149
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Bookout
-other_identifiers:
-- identifier: ARL000011
-  scheme: legacy_openstates
-- identifier: ARL000149
-  scheme: legacy_openstates

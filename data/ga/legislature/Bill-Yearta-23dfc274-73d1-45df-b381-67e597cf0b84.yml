@@ -1,12 +1,16 @@
 id: ocd-person/23dfc274-73d1-45df-b381-67e597cf0b84
 name: Bill Yearta
+given_name: Bill
+family_name: Yearta
+email: bill.yearta@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/yearta-bill-4969.jpg
 party:
 - name: Republican
 roles:
-- district: '152'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- start_date: 2019-12-24
   type: lower
-  start_date: 2019-12-24
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '152'
 contact_details:
 - note: Capitol Office
   address: 601-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -21,12 +25,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4969&Session=27
 - url: https://www.legis.ga.gov/members/house/4969?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/yearta-bill-4969.jpg
-family_name: Yearta
-given_name: Bill
 extras:
   guid: 4969
   city: Sylvester
   georgia_id: 4969
   residence: Sylvester
-email: bill.yearta@house.ga.gov

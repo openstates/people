@@ -1,24 +1,24 @@
 id: ocd-person/4710c402-ebc0-4b6c-b399-87124e9966e9
 name: Sam Teasley
+given_name: Sam
+family_name: Teasley
+image: http://www.house.ga.gov/SiteCollectionImages/TeasleySam761.jpg
 party:
 - name: Republican
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '37'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=761&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000218
+- scheme: legacy_openstates
+  identifier: GAL000365
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=761&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/TeasleySam761.jpg
-family_name: Teasley
-given_name: Sam
 extras:
   guid: 761
-other_identifiers:
-- identifier: GAL000218
-  scheme: legacy_openstates
-- identifier: GAL000365
-  scheme: legacy_openstates

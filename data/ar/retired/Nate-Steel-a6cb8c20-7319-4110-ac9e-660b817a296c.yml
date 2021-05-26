@@ -2,26 +2,26 @@ id: ocd-person/a6cb8c20-7319-4110-ac9e-660b817a296c
 name: Nate Steel
 given_name: Nate
 family_name: Steel
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Steel.jpg
 party:
 - name: Democratic
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '19'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Steel.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '21'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Steel
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000109
+- scheme: legacy_openstates
+  identifier: ARL000241
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Steel
-other_identifiers:
-- identifier: ARL000109
-  scheme: legacy_openstates
-- identifier: ARL000241
-  scheme: legacy_openstates

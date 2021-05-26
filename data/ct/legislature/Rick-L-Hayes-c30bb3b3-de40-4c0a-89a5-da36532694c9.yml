@@ -1,11 +1,14 @@
 id: ocd-person/c30bb3b3-de40-4c0a-89a5-da36532694c9
 name: Rick L. Hayes
+given_name: Rick
+family_name: Hayes
+email: rick.hayes@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '51'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '51'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4200;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 860-933-3022
 links:
 - url: http://www.cthousegop.com/hayes/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Rick
-family_name: Hayes
-email: rick.hayes@housegop.ct.gov
 other_names:
 - name: Hayes, Rick L.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

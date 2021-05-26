@@ -1,24 +1,24 @@
 id: ocd-person/def7cfd9-1bff-4a88-a45c-b3a8422887f3
 name: Jeff Collins
+given_name: Jeff
+family_name: Collins
+image: http://www.ncleg.net/House/pictures/hiRes/611.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '25'
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=611
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000201
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=611
-image: http://www.ncleg.net/House/pictures/hiRes/611.jpg
 extras:
   counties:
   - Franklin
   - Nash
   notice: null
-other_identifiers:
-- identifier: NCL000201
-  scheme: legacy_openstates
-given_name: Jeff
-family_name: Collins

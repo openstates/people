@@ -1,11 +1,15 @@
 id: ocd-person/002bdecd-2374-44d8-8280-e0636c5f4897
 name: Fred Shanks
+given_name: Fred
+family_name: Shanks
+email: fshanks@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/shanks.jpg
 party:
 - name: Republican
 roles:
-- district: '60'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '60'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -14,16 +18,12 @@ contact_details:
   voice: 601-540-0041
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000302
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
-image: http://billstatus.ls.state.ms.us/members/house/shanks.jpg
 extras:
   org_info: "Rep. Shanks is a member of the following:  \nRankin County Republican\
     \ Executive Committee,\nReserve Police Officer of Brandon \nNRA Member\n\nFormer\
     \ Alderman of Brandon"
-other_identifiers:
-- identifier: MSL000302
-  scheme: legacy_openstates
-given_name: Fred
-family_name: Shanks
-email: fshanks@house.ms.gov

@@ -1,11 +1,15 @@
 id: ocd-person/ce888eff-62f5-41c0-9114-651c43f77aba
 name: Michael Padilla
+given_name: Michael
+family_name: Padilla
+email: michael.padilla@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SPADI.jpg
 party:
 - name: Democratic
 roles:
-- district: '14'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
+  district: '14'
 contact_details:
 - note: Capitol Office
   address: Room 217 State Capitol;Santa Fe, NM 87501
@@ -15,22 +19,18 @@ contact_details:
   voice: 505-977-6247
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPADI
-- note: linkedin
-  url: https://www.linkedin.com/in/michaelpadilla1/
+- url: https://www.linkedin.com/in/michaelpadilla1/
+  note: linkedin
+ids:
+  twitter: SenPadilla
+  instagram: michael.padilla.31
+  facebook: michael.padilla.31
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000132
+- scheme: legacy_openstates
+  identifier: NML000183
+- scheme: legacy_openstates
+  identifier: NML000381
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPADI
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SPADI.jpg
-other_identifiers:
-- identifier: NML000132
-  scheme: legacy_openstates
-- identifier: NML000183
-  scheme: legacy_openstates
-- identifier: NML000381
-  scheme: legacy_openstates
-given_name: Michael
-family_name: Padilla
-email: michael.padilla@nmlegis.gov
-ids:
-  facebook: michael.padilla.31
-  instagram: michael.padilla.31
-  twitter: SenPadilla

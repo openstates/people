@@ -1,11 +1,14 @@
 id: ocd-person/4361534b-c294-475d-b2d8-384bc355ad17
 name: Joe de la Cruz
+given_name: Joe
+family_name: de la Cruz
+email: Joe.delaCruz@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '41'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '41'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4100;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-271-1834
 links:
 - url: http://www.housedems.ct.gov/delaCruz
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000345
-  scheme: legacy_openstates
-given_name: Joe
-family_name: de la Cruz
-email: Joe.delaCruz@cga.ct.gov
 other_names:
 - name: De La Cruz, Joe
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000345
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

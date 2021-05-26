@@ -1,29 +1,29 @@
 id: ocd-person/f510455c-9122-4deb-a2b4-ead11b7f96aa
 name: John M. Alexander, Jr.
+given_name: John M.
+family_name: Alexander
+email: John.Alexander@ncleg.net
+image: http://www.ncleg.net/Senate/pictures/hiRes/392.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
-- district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '15'
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '18'
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/392
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000346
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/392
-image: http://www.ncleg.net/Senate/pictures/hiRes/392.jpg
 extras:
   counties:
   - Wake
   - Franklin
   notice: null
-other_identifiers:
-- identifier: NCL000346
-  scheme: legacy_openstates
-given_name: John M.
-family_name: Alexander
-email: John.Alexander@ncleg.net

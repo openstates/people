@@ -6,15 +6,15 @@ middle_name: J
 party:
 - name: Democratic
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '3'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/McCoy.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000172
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/McCoy.xml
-other_identifiers:
-- identifier: MSL000172
-  scheme: legacy_openstates

@@ -2,26 +2,26 @@ id: ocd-person/911dc71d-97e0-459b-b547-b167708a7646
 name: James McLean
 given_name: James
 family_name: McLean
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/McLean.jpg
 party:
 - name: Democratic
 roles:
-- district: '63'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '72'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '63'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/McLean.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '72'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=McLean
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000084
+- scheme: legacy_openstates
+  identifier: ARL000221
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=McLean
-other_identifiers:
-- identifier: ARL000084
-  scheme: legacy_openstates
-- identifier: ARL000221
-  scheme: legacy_openstates

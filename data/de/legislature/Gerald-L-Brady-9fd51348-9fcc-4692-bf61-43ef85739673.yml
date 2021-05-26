@@ -1,27 +1,27 @@
 id: ocd-person/9fd51348-9fcc-4692-bf61-43ef85739673
 name: Gerald L. Brady
+given_name: Gerald L.
+family_name: Brady
+email: Gerald.Brady@state.de.us
+image: https://legis.delaware.gov/images/default-source/default-album/GeraldBrady.jpg?sfvrsn=0
 party:
 - name: Democratic
 roles:
-- district: '4'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
+  district: '4'
 contact_details:
 - note: Capitol Office
   address: 411 Legislative Ave. Dover, DE 19901
   voice: 302-744-4351
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=124
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/House
-image: https://legis.delaware.gov/images/default-source/default-album/GeraldBrady.jpg?sfvrsn=0
+- url: https://legis.delaware.gov/LegislatorDetail?personId=124
+  note: legislator page
 other_identifiers:
-- identifier: DEL000027
-  scheme: legacy_openstates
-- identifier: DEL000091
-  scheme: legacy_openstates
-given_name: Gerald L.
-family_name: Brady
-email: Gerald.Brady@state.de.us
+- scheme: legacy_openstates
+  identifier: DEL000027
+- scheme: legacy_openstates
+  identifier: DEL000091
+sources:
+- url: https://legis.delaware.gov/House
+  note: legislator list page

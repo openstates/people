@@ -1,17 +1,24 @@
 id: ocd-person/0ed8e66a-d6ed-44c0-b22e-f15aa25d3d05
 name: Michael E. Noel
+given_name: Michael
+family_name: Noel
+image: https://le.utah.gov/images/legislator/NOELME.jpg
 party:
 - name: Republican
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '73'
 links:
 - url: http://house.utah.gov/rep/NOELME
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000080
+- scheme: legacy_openstates
+  identifier: UTL000257
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/NOELME.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFINOELME1.pdf
@@ -21,10 +28,3 @@ extras:
   - http://le.utah.gov/house2/CofI/mnoel.pdf
   - http://le.utah.gov/house2/CofI/NOELME.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1404
-other_identifiers:
-- identifier: UTL000080
-  scheme: legacy_openstates
-- identifier: UTL000257
-  scheme: legacy_openstates
-given_name: Michael
-family_name: Noel

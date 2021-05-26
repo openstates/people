@@ -1,11 +1,15 @@
 id: ocd-person/35eec890-026c-412f-8bcf-27e24206a608
 name: Kevin Kiley
+given_name: Kevin
+family_name: Kiley
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/kiley.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0006
@@ -15,14 +19,10 @@ contact_details:
   voice: 916-774-4430
 links:
 - url: https://ad06.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD06&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD06&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000520
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/kiley.jpg
-other_identifiers:
-- identifier: CAL000520
-  scheme: legacy_openstates
-given_name: Kevin
-family_name: Kiley
-gender: Male

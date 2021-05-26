@@ -5,13 +5,13 @@ family_name: Decker
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '29'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000320
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=29
-other_identifiers:
-- identifier: WIL000320
-  scheme: legacy_openstates

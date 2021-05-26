@@ -1,11 +1,15 @@
 id: ocd-person/d4713ec5-e36b-49bb-bfc8-6b7fe9c0e9a7
 name: Mitchell S. Setzer
+given_name: Mitchell
+family_name: Setzer
+email: Mitchell.Setzer@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/149/High
 party:
 - name: Republican
 roles:
-- district: '89'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '89'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 2204;Raleigh, NC 27601-1096
@@ -14,16 +18,12 @@ contact_details:
   address: PO Box 416;Catawba, NC 28609
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/149
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000155
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/149
-image: https://www.ncleg.gov/Members/MemberImage/H/149/High
 extras:
   counties:
   - Catawba
   notice: null
-other_identifiers:
-- identifier: NCL000155
-  scheme: legacy_openstates
-given_name: Mitchell
-family_name: Setzer
-email: Mitchell.Setzer@ncleg.gov

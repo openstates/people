@@ -1,35 +1,35 @@
 id: ocd-person/530465d6-d53e-4da9-b8af-22f92ebf0e28
 name: Susan Wismer
-party:
-- name: Democratic
-roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  end_date: 2018-01-01
-  start_date: 2009-01-01
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  end_date: '2020-12-31'
-links:
-- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1466&Session=2018s
-- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1565&Session=2019
-sources:
-- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1466&Session=2018s
-- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1565&Session=2019
-image: https://sdlegislature.gov/inc/img/Legislators/Wismer_2017.jpg
-extras:
-  occupation: Public Accounting, CPA
-other_identifiers:
-- identifier: SDL000307
-  scheme: legacy_openstates
-- identifier: ocd-person/cea50f64-6951-4df0-b84a-779384fb5e6d
-  scheme: openstates
-- identifier: SDL000105
-  scheme: legacy_openstates
-- identifier: ocd-person/f3b8b0f8-f15e-4006-ac1c-0b99a4b10b8c
-  scheme: openstates
 given_name: Susan
 family_name: Wismer
 email: Susan.Wismer@sdlegislature.gov
+image: https://sdlegislature.gov/inc/img/Legislators/Wismer_2017.jpg
+party:
+- name: Democratic
+roles:
+- start_date: 2009-01-01
+  end_date: 2018-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '1'
+- end_date: '2020-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '1'
+links:
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1466&Session=2018s
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1565&Session=2019
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000307
+- scheme: openstates
+  identifier: ocd-person/cea50f64-6951-4df0-b84a-779384fb5e6d
+- scheme: legacy_openstates
+  identifier: SDL000105
+- scheme: openstates
+  identifier: ocd-person/f3b8b0f8-f15e-4006-ac1c-0b99a4b10b8c
+sources:
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1466&Session=2018s
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1565&Session=2019
+extras:
+  occupation: Public Accounting, CPA

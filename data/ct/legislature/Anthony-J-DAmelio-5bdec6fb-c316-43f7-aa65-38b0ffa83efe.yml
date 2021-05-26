@@ -1,11 +1,14 @@
 id: ocd-person/5bdec6fb-c316-43f7-aa65-38b0ffa83efe
 name: Anthony J. D'Amelio
+given_name: Anthony
+family_name: D'Amelio
+email: Anthony.DAmelio@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '71'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '71'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4085;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 64 Wellington Avenue;Waterbury, CT 06708
 links:
 - url: http://www.cthousegop.com/DAmelio/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000107
-  scheme: legacy_openstates
-given_name: Anthony
-family_name: D'Amelio
-email: Anthony.DAmelio@housegop.ct.gov
 other_names:
 - name: D'amelio, Anthony J.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000107
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

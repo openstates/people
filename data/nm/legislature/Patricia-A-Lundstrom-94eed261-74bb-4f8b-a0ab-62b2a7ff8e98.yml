@@ -1,11 +1,15 @@
 id: ocd-person/94eed261-74bb-4f8b-a0ab-62b2a7ff8e98
 name: Patricia A. Lundstrom
+given_name: Patricia
+family_name: Lundstrom
+email: patricia.lundstrom@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/House/HLUND.jpg
 party:
 - name: Democratic
 roles:
-- district: '9'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
+  district: '9'
 contact_details:
 - note: Capitol Office
   address: Room 304B State Capitol;Santa Fe, NM 87501
@@ -15,22 +19,18 @@ contact_details:
   voice: 505-722-2980
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HLUND
-- note: linkedin
-  url: https://www.linkedin.com/in/patty-lundstrom-a47ba450/
-sources:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=HLUND
-image: http://www.nmlegis.gov/Images/Legislators/House/HLUND.jpg
-other_identifiers:
-- identifier: NML000051
-  scheme: legacy_openstates
-- identifier: NML000220
-  scheme: legacy_openstates
-- identifier: NML000373
-  scheme: legacy_openstates
-- identifier: NML000410
-  scheme: legacy_openstates
-given_name: Patricia
-family_name: Lundstrom
-email: patricia.lundstrom@nmlegis.gov
+- url: https://www.linkedin.com/in/patty-lundstrom-a47ba450/
+  note: linkedin
 ids:
   facebook: patricia.lundstrom.1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000051
+- scheme: legacy_openstates
+  identifier: NML000220
+- scheme: legacy_openstates
+  identifier: NML000373
+- scheme: legacy_openstates
+  identifier: NML000410
+sources:
+- url: http://www.nmlegis.gov/Members/Legislator?SponCode=HLUND

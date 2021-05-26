@@ -1,11 +1,15 @@
 id: ocd-person/69493144-3e3e-49a8-9e1f-f9a948fd0ff3
 name: Lee Hawkins
+given_name: Lee
+family_name: Hawkins
+email: lee.hawkins@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/hawkins-lee-19.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '27'
 contact_details:
 - note: Capitol Office
   address: 401-B State Capitol;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=19&Session=27
 - url: https://www.legis.ga.gov/members/house/19?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000299
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=19&Session=27
 - url: https://www.legis.ga.gov/members/house/19?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/hawkins-lee-19.jpg
-family_name: Hawkins
-given_name: Lee
 extras:
   guid: 19
   city: Gainesville
   georgia_id: 19
   residence: Gainesville
-other_identifiers:
-- identifier: GAL000299
-  scheme: legacy_openstates
-email: lee.hawkins@house.ga.gov

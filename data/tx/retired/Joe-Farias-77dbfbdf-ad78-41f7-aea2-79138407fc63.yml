@@ -2,22 +2,22 @@ id: ocd-person/77dbfbdf-ad78-41f7-aea2-79138407fc63
 name: Joe Farias
 given_name: Joe
 family_name: Farias
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2820.jpg
 party:
 - name: Democratic
 roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2016-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2820.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '118'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2820
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000256
+- scheme: legacy_openstates
+  identifier: TXL000074
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2820
 - url: http://legacy.kvue.com/story/news/state/2015/08/10/state-rep-joe-farias-resigns/31442593/
-other_identifiers:
-- identifier: TXL000256
-  scheme: legacy_openstates
-- identifier: TXL000074
-  scheme: legacy_openstates

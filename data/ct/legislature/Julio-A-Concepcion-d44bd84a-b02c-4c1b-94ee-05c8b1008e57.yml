@@ -1,11 +1,14 @@
 id: ocd-person/d44bd84a-b02c-4c1b-94ee-05c8b1008e57
 name: Julio A. Concepcion
+given_name: Julio
+family_name: Concepcion
+email: julio.concepcion@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '4'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '4'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2303;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-922-0768
 links:
 - url: http://www.housedems.ct.gov/concepcion
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000366
-  scheme: legacy_openstates
-given_name: Julio
-family_name: Concepcion
-email: julio.concepcion@cga.ct.gov
 other_names:
 - name: Concepcion, Julio A.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000366
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

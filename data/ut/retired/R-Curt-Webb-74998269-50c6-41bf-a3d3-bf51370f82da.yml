@@ -2,21 +2,21 @@ id: ocd-person/74998269-50c6-41bf-a3d3-bf51370f82da
 name: R. Curt Webb
 given_name: R. Curt
 family_name: Webb
+image: https://le.utah.gov/images/legislator/WEBBRC.jpg
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: https://le.utah.gov/images/legislator/WEBBRC.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '5'
 links:
 - url: http://house.utah.gov/rep/WEBBRC
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000097
+- scheme: legacy_openstates
+  identifier: UTL000212
 sources:
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000097
-  scheme: legacy_openstates
-- identifier: UTL000212
-  scheme: legacy_openstates

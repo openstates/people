@@ -1,17 +1,25 @@
 id: ocd-person/a54688ea-34f7-4551-b281-983f11a19a59
 name: Susan Duckworth
+given_name: Susan
+family_name: Duckworth
+email: sduckworth@le.utah.gov
+image: https://le.utah.gov/images/legislator/DUCKWS.jpg
 party:
 - name: Democratic
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '22'
 links:
 - url: http://house.utah.gov/rep/DUCKWS
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000048
+- scheme: legacy_openstates
+  identifier: UTL000169
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/DUCKWS.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIDUCKWS.pdf
@@ -20,11 +28,3 @@ extras:
   - http://le.utah.gov/house2/CofI/sduckworth.pdf
   - http://le.utah.gov/house2/CofI/DUCKWS.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1850
-other_identifiers:
-- identifier: UTL000048
-  scheme: legacy_openstates
-- identifier: UTL000169
-  scheme: legacy_openstates
-given_name: Susan
-family_name: Duckworth
-email: sduckworth@le.utah.gov

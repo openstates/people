@@ -1,24 +1,24 @@
 id: ocd-person/3ff665a3-bf25-4613-b797-45b5c9586e75
 name: Chad Barefoot
+given_name: Chad
+family_name: Barefoot
+image: http://www.ncleg.net/Senate/pictures/hiRes/369.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '18'
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=369
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000249
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=369
-image: http://www.ncleg.net/Senate/pictures/hiRes/369.jpg
 extras:
   counties:
   - Franklin
   - Wake
   notice: null
-other_identifiers:
-- identifier: NCL000249
-  scheme: legacy_openstates
-given_name: Chad
-family_name: Barefoot

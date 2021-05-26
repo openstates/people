@@ -2,27 +2,27 @@ id: ocd-person/543c52d9-2715-4ac6-8dc4-0b4f8b9ee034
 name: L. Mark Dudenhefer
 given_name: L. Mark
 family_name: Dudenhefer
+image: http://memdata.virginiageneralassembly.gov/images/display_image/H0234
 party:
 - name: Republican
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2013-12-31'
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
   type: lower
-  start_date: '2016-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '2'
+- start_date: '2016-01-01'
   end_date: '2017-12-31'
-image: http://memdata.virginiageneralassembly.gov/images/display_image/H0234
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '2'
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?171+mbr+H234
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000156
+- scheme: legacy_openstates
+  identifier: VAL000236
 sources:
 - url: http://lis.virginia.gov/171/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?171+mbr+H234
-other_identifiers:
-- identifier: VAL000156
-  scheme: legacy_openstates
-- identifier: VAL000236
-  scheme: legacy_openstates

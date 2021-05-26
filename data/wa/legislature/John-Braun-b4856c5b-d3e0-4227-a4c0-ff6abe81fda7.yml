@@ -1,11 +1,15 @@
 id: ocd-person/b4856c5b-d3e0-4227-a4c0-ff6abe81fda7
 name: John Braun
+given_name: John
+family_name: Braun
+email: john.braun@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/braun.jpg
 party:
 - name: Republican
 roles:
-- district: '20'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: 403A Legislative Building;PO Box 40420;Olympia, WA 98504
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://JohnBraun.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000165
+- scheme: legacy_openstates
+  identifier: WAL000193
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/braun.jpg
-other_identifiers:
-- identifier: WAL000165
-  scheme: legacy_openstates
-- identifier: WAL000193
-  scheme: legacy_openstates
-given_name: John
-family_name: Braun
-email: john.braun@leg.wa.gov

@@ -1,22 +1,22 @@
 id: ocd-person/321de557-3bd8-47fa-8ab6-66c5c0cbf690
 name: Fred Durhal
+given_name: Fred
+family_name: Durhal
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '5'
 links:
 - url: https://housedems.com/durhal
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000044
+- scheme: legacy_openstates
+  identifier: MIL000154
+- scheme: legacy_openstates
+  identifier: MIL000191
 sources:
 - url: https://housedems.com/durhal
-other_identifiers:
-- identifier: MIL000044
-  scheme: legacy_openstates
-- identifier: MIL000154
-  scheme: legacy_openstates
-- identifier: MIL000191
-  scheme: legacy_openstates
-given_name: Fred
-family_name: Durhal

@@ -1,11 +1,13 @@
 id: ocd-person/aec1fe1b-02ac-4802-be69-8714ec0b848e
 name: Catherine A. Osten
+given_name: Catherine
+family_name: Osten
 party:
 - name: Democratic
 roles:
-- district: '19'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '19'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2700;Hartford, CT 06106
@@ -14,12 +16,10 @@ contact_details:
   address: 187 Scotland Road;Baltic, CT 06330
 links:
 - url: http://www.senatedems.ct.gov/Osten
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000222
-  scheme: legacy_openstates
-given_name: Catherine
-family_name: Osten
 other_names:
 - name: Osten, Catherine A.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000222
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

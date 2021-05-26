@@ -1,31 +1,5 @@
 id: ocd-person/e78373de-6d96-44db-b552-6da34ed992fc
 name: Carol Alvarado
-party:
-- name: Democratic
-roles:
-- district: '145'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  end_date: '2018-12-21'
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0106
-links:
-- url: https://senate.texas.gov/member.php?d=6
-sources:
-- url: https://senate.texas.gov/member.php?d=6
-image: https://senate.texas.gov/members/d06/img/CA-2018_web.jpg
-other_identifiers:
-- identifier: TXL000216
-  scheme: legacy_openstates
-- identifier: TXL000034
-  scheme: legacy_openstates
-- identifier: TXL000644
-  scheme: legacy_openstates
 given_name: Carol
 family_name: Alvarado
 biography: "Senator Carol Alvarado is proud to serve Texas Senate District 6 in Harris\
@@ -45,3 +19,29 @@ biography: "Senator Carol Alvarado is proud to serve Texas Senate District 6 in 
   \ She holds a Master of Business Administration and a Bachelor of Arts degree in\
   \ Political Science from the University of Houston and is a member of St. Alphonsus\
   \ Catholic Church."
+image: https://senate.texas.gov/members/d06/img/CA-2018_web.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2018-12-21'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '145'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '6'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0106
+links:
+- url: https://senate.texas.gov/member.php?d=6
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000216
+- scheme: legacy_openstates
+  identifier: TXL000034
+- scheme: legacy_openstates
+  identifier: TXL000644
+sources:
+- url: https://senate.texas.gov/member.php?d=6

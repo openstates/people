@@ -1,20 +1,23 @@
 id: ocd-person/f628ec50-2994-47a6-b757-c369d864ba2b
 name: Bruce Burns
+given_name: Bruce
+family_name: Burns
+birth_date: 1952-06-30
+image: http://wyoleg.gov/LegislatorSummary/Photos/BurnsBS21.jpg
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: upper
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '21'
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/901
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000004
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/901
-image: http://wyoleg.gov/LegislatorSummary/Photos/BurnsBS21.jpg
-birth_date: '1952-06-30'
-given_name: Bruce
-family_name: Burns
 extras:
   county: Sheridan
   education:
@@ -27,6 +30,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 901
-other_identifiers:
-- identifier: WYL000004
-  scheme: legacy_openstates

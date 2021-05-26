@@ -1,33 +1,33 @@
 id: ocd-person/a936c9c8-0a8d-4bcf-8da0-1a9b9ac80ab2
 name: John Esp
+given_name: John
+family_name: Esp
+email: johnesp2001@yahoo.com
 party:
 - name: Republican
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: 2012-12-31
   type: lower
-  end_date: 2012-12-31
-- district: '30'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
+  district: '61'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '30'
+contact_details:
+- note: Capitol Office
+  address: PO BOX 1024;Big Timber, MT 59011
+  voice: 406-932-5662
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5049
 - url: https://leg.mt.gov/legislator-information/roster/individual/6814
+other_names:
+- name: Esp, John
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000073
+- scheme: openstates
+  identifier: ocd-person/751bb306-ce27-4995-9b54-bc383a937f60
 sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5049
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6814
-contact_details:
-- note: Capitol Office
-  voice: 406-932-5662
-  address: PO BOX 1024;Big Timber, MT 59011
-other_identifiers:
-- identifier: MTL000073
-  scheme: legacy_openstates
-- identifier: ocd-person/751bb306-ce27-4995-9b54-bc383a937f60
-  scheme: openstates
-email: johnesp2001@yahoo.com
-given_name: John
-family_name: Esp
-other_names:
-- name: Esp, John

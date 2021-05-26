@@ -1,11 +1,15 @@
 id: ocd-person/86f82668-8d68-45c5-bbcd-a5557b4dad54
 name: Bob Hasegawa
+given_name: Bob
+family_name: Hasegawa
+email: bob.hasegawa@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/hasegawa.jpg
 party:
 - name: Democratic
 roles:
-- district: '11'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: 223 John A. Cherberg Building;PO Box 40411;Olympia, WA 98504
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Hasegawa/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000085
+- scheme: legacy_openstates
+  identifier: WAL000169
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/hasegawa.jpg
-other_identifiers:
-- identifier: WAL000085
-  scheme: legacy_openstates
-- identifier: WAL000169
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Hasegawa
-email: bob.hasegawa@leg.wa.gov

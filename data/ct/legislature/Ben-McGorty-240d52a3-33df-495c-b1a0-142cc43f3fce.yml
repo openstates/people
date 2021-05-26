@@ -1,11 +1,14 @@
 id: ocd-person/240d52a3-33df-495c-b1a0-142cc43f3fce
 name: Ben McGorty
+given_name: Ben
+family_name: McGorty
+email: Ben.McGorty@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '122'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '122'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4062;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 30 Wigwam Drive;Shelton, CT 06484
 links:
 - url: http://www.cthousegop.com/McGorty/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000261
-  scheme: legacy_openstates
-given_name: Ben
-family_name: McGorty
-email: Ben.McGorty@housegop.ct.gov
 other_names:
 - name: Mcgorty, Ben
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000261
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

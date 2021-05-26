@@ -1,17 +1,25 @@
 id: ocd-person/aa49678d-34f8-4c6e-9afd-3f602976f71f
 name: Eric K. Hutchings
+given_name: Eric
+family_name: Hutchings
+email: ehutchings@le.utah.gov
+image: https://le.utah.gov/images/legislator/HUTCHEK.jpg
 party:
 - name: Republican
 roles:
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '38'
 links:
 - url: http://house.utah.gov/rep/HUTCHEK
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000065
+- scheme: legacy_openstates
+  identifier: UTL000267
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/HUTCHEK.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIHUTCHEK.pdf
@@ -23,11 +31,3 @@ extras:
   - http://le.utah.gov/house2/CofI/ehutchings.pdf
   - http://le.utah.gov/house2/CofI/HUTCHEK.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1967
-other_identifiers:
-- identifier: UTL000065
-  scheme: legacy_openstates
-- identifier: UTL000267
-  scheme: legacy_openstates
-given_name: Eric
-family_name: Hutchings
-email: ehutchings@le.utah.gov

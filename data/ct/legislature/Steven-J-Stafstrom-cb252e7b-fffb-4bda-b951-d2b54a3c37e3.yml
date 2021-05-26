@@ -1,11 +1,14 @@
 id: ocd-person/cb252e7b-fffb-4bda-b951-d2b54a3c37e3
 name: Steven J. Stafstrom
+given_name: Steven
+family_name: Stafstrom
+email: Steven.Stafstrom@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '129'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '129'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2500;Hartford, CT 06106
@@ -15,15 +18,12 @@ contact_details:
   voice: 203-258-6878
 links:
 - url: http://www.housedems.ct.gov/Stafstrom
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000306
-  scheme: legacy_openstates
-- identifier: CTL000356
-  scheme: legacy_openstates
-given_name: Steven
-family_name: Stafstrom
-email: Steven.Stafstrom@cga.ct.gov
 other_names:
 - name: Stafstrom, Steven J.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000306
+- scheme: legacy_openstates
+  identifier: CTL000356
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

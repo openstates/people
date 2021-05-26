@@ -1,24 +1,24 @@
 id: ocd-person/d7f57d81-7999-4260-913d-af5c36972c96
 name: Marsha Haefner
+given_name: Marsha
+family_name: Haefner
 party:
 - name: Republican
 roles:
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '95'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=95
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000087
+- scheme: legacy_openstates
+  identifier: MOL000264
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=95
 extras:
   first_name: Marsha
   last_name: Haefner
-other_identifiers:
-- identifier: MOL000087
-  scheme: legacy_openstates
-- identifier: MOL000264
-  scheme: legacy_openstates
-given_name: Marsha
-family_name: Haefner

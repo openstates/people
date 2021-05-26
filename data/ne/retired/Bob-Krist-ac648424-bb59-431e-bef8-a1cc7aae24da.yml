@@ -1,21 +1,21 @@
 id: ocd-person/ac648424-bb59-431e-bef8-a1cc7aae24da
 name: Bob Krist
+given_name: Bob
+family_name: Krist
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist10.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+- end_date: '2019-01-08'
   type: legislature
-  end_date: '2019-01-08'
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '10'
 links:
 - url: http://news.legislature.ne.gov/dist10
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000010
+- scheme: legacy_openstates
+  identifier: NEL000190
 sources:
 - url: http://news.legislature.ne.gov/dist10
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist10.jpg
-other_identifiers:
-- identifier: NEL000010
-  scheme: legacy_openstates
-- identifier: NEL000190
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Krist

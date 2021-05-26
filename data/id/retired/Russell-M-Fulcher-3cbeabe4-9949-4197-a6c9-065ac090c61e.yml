@@ -3,26 +3,26 @@ name: Russell M. Fulcher
 given_name: Russell
 family_name: Fulcher
 middle_name: M.
+image: http://legislature.idaho.gov/images/Fulcher82.jpg
 party:
 - name: Republican
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '22'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Fulcher82.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '21'
 links:
 - url: http://legislature.idaho.gov/senate/membershipSingle.cfm?ID=82
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000011
+- scheme: legacy_openstates
+  identifier: IDL000120
 sources:
 - url: http://legislature.idaho.gov/senate/membership.cfm
-other_identifiers:
-- identifier: IDL000011
-  scheme: legacy_openstates
-- identifier: IDL000120
-  scheme: legacy_openstates

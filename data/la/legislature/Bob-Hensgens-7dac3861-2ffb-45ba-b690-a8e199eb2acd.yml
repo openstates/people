@@ -1,33 +1,33 @@
 id: ocd-person/7dac3861-2ffb-45ba-b690-a8e199eb2acd
 name: Bob Hensgens
+given_name: Bob
+family_name: Hensgens
+email: sen26@legis.la.gov
 party:
 - name: Republican
 roles:
-- district: '26'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  type: upper
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '26'
+- end_date: 2018-11-06
   type: lower
-  end_date: 2018-11-06
-email: sen26@legis.la.gov
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '47'
 contact_details:
-- address: 122 N. State Street;Suite 100;Abbeville, LA 70510
-  fax: 337-898-1160
-  note: District Office
+- note: District Office
+  address: 122 N. State Street;Suite 100;Abbeville, LA 70510
   voice: 337-740-6425
+  fax: 337-898-1160
 links:
 - url: http://senate.la.gov/senators/senpage.asp?SenID=26
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000430
+- scheme: legacy_openstates
+  identifier: LAL000567
+- scheme: legacy_openstates
+  identifier: LAL000683
+- scheme: legacy_openstates
+  identifier: LAL000871
 sources:
 - url: http://senate.la.gov/senators/senpage.asp?SenID=26
-other_identifiers:
-- identifier: LAL000430
-  scheme: legacy_openstates
-- identifier: LAL000567
-  scheme: legacy_openstates
-- identifier: LAL000683
-  scheme: legacy_openstates
-- identifier: LAL000871
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Hensgens

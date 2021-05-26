@@ -6,15 +6,15 @@ middle_name: W.
 party:
 - name: Republican
 roles:
-- district: '125'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '125'
 links:
 - url: http://rephetherington.com/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000161
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000161
-  scheme: legacy_openstates

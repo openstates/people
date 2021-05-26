@@ -2,19 +2,19 @@ id: ocd-person/a7f10b05-31a0-47c3-abeb-4ca012f02150
 name: Mike Callton
 given_name: Mike
 family_name: Callton
+image: http://gophouse.org/wp-content/uploads/2013/02/87.jpg
 party:
 - name: Republican
 roles:
-- district: '87'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/87.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '87'
 links:
 - url: http://repCallton.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000125
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000125
-  scheme: legacy_openstates

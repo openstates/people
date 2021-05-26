@@ -1,22 +1,22 @@
 id: ocd-person/7f687418-74ed-433a-ab77-4a0f75e3d323
 name: Rob Cook
+given_name: Rob
+family_name: Cook
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '18'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4761
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4761
+  note: legislator page
 other_identifiers:
-- identifier: MTL000067
-  scheme: legacy_openstates
-- identifier: MTL000297
-  scheme: legacy_openstates
-given_name: Rob
-family_name: Cook
+- scheme: legacy_openstates
+  identifier: MTL000067
+- scheme: legacy_openstates
+  identifier: MTL000297
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

@@ -1,17 +1,24 @@
 id: ocd-person/03def7cd-27a3-48bb-8f42-f9357f0890d9
 name: John R. Westwood
+given_name: John
+family_name: Westwood
+image: https://le.utah.gov/images/legislator/WESTWJR.jpg
 party:
 - name: Republican
 roles:
-- district: '72'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '72'
 links:
 - url: http://house.utah.gov/rep/WESTWJR
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000144
+- scheme: legacy_openstates
+  identifier: UTL000209
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/WESTWJR.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIWESTWJR.pdf
@@ -20,10 +27,3 @@ extras:
   - http://le.utah.gov/house2/CofI/jwestwood.pdf
   - http://le.utah.gov/house2/CofI/WESTWJR.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411600
-other_identifiers:
-- identifier: UTL000144
-  scheme: legacy_openstates
-- identifier: UTL000209
-  scheme: legacy_openstates
-given_name: John
-family_name: Westwood

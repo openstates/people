@@ -1,33 +1,33 @@
 id: ocd-person/21e604a6-9cd0-49e7-b2b6-9dffd4419bee
 name: Joe Read
+given_name: Joe
+family_name: Read
+email: joeread2019mt@gmail.com
 party:
 - name: Republican
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: 2012-12-31
   type: lower
-  end_date: 2012-12-31
-- district: '93'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
+  district: '15'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '93'
+contact_details:
+- note: Capitol Office
+  address: 35566 Terrace Lake RD;Ronan, MT 59864
+  voice: 406-676-0200
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5152
 - url: https://leg.mt.gov/legislator-information/roster/individual/6928
+other_names:
+- name: Read, Joe
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000124
+- scheme: openstates
+  identifier: ocd-person/64520404-5d31-450b-b980-023d75c78c08
 sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5152
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6928
-contact_details:
-- note: Capitol Office
-  voice: 406-676-0200
-  address: 35566 Terrace Lake RD;Ronan, MT 59864
-other_identifiers:
-- identifier: MTL000124
-  scheme: legacy_openstates
-- identifier: ocd-person/64520404-5d31-450b-b980-023d75c78c08
-  scheme: openstates
-email: joeread2019mt@gmail.com
-given_name: Joe
-family_name: Read
-other_names:
-- name: Read, Joe

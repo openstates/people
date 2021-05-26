@@ -1,11 +1,16 @@
 id: ocd-person/c334e9c7-e02c-4562-a08f-f87c847fd4b1
 name: Jerry Paxton
+given_name: Jerry
+family_name: Paxton
+email: Jerry.Paxton@wyoleg.gov
+birth_date: 1944-12-19
+image: http://wyoleg.gov/LegislatorSummary/Photos/PaxtonH47.jpg
 party:
 - name: Republican
 roles:
-- district: '47'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '47'
 contact_details:
 - note: District Office
   address: P.O. Box 692, Encampment WY 82325
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1996
 - url: http://wyoleg.gov/Legislators/2021/R/1996
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000106
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1996
 - url: http://wyoleg.gov/Legislators/2021/R/1996
-image: http://wyoleg.gov/LegislatorSummary/Photos/PaxtonH47.jpg
-birth_date: '1944-12-19'
-given_name: Jerry
-family_name: Paxton
 extras:
   civic_organizations:
   - orgname: Encampment Riverside Lions Club
@@ -40,7 +44,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1996
-other_identifiers:
-- identifier: WYL000106
-  scheme: legacy_openstates
-email: Jerry.Paxton@wyoleg.gov

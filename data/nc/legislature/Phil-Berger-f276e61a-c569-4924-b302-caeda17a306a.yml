@@ -1,24 +1,30 @@
 id: ocd-person/f276e61a-c569-4924-b302-caeda17a306a
 name: Phil Berger
+given_name: Phil
+family_name: Berger
+email: Phil.Berger@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/S/64/High
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
-- district: '30'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
+  district: '26'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '30'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 2007;Raleigh, NC 27601
   voice: 919-733-5708
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/64
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000007
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/64
-image: https://www.ncleg.gov/Members/MemberImage/S/64/High
 extras:
   counties:
   - Caswell
@@ -26,9 +32,3 @@ extras:
   - Stokes
   - Surry
   notice: null
-other_identifiers:
-- identifier: NCL000007
-  scheme: legacy_openstates
-given_name: Phil
-family_name: Berger
-email: Phil.Berger@ncleg.gov

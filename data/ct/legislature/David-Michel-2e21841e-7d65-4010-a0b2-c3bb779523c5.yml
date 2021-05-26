@@ -1,11 +1,14 @@
 id: ocd-person/2e21841e-7d65-4010-a0b2-c3bb779523c5
 name: David Michel
+given_name: David
+family_name: Michel
+email: David.Michel@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '146'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '146'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4037;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 860-240-8500
 links:
 - url: http://www.housedems.ct.gov/michel
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: David
-family_name: Michel
-email: David.Michel@cga.ct.gov
 other_names:
 - name: Michel, David
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

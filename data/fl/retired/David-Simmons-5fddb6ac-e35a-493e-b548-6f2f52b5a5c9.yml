@@ -1,39 +1,39 @@
 id: ocd-person/5fddb6ac-e35a-493e-b548-6f2f52b5a5c9
 name: David Simmons
+given_name: David
+family_name: Simmons
+email: simmons.david.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s09_4682.jpg
 party:
 - name: Republican
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '22'
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '10'
+- end_date: '2020-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '9'
 links:
 - url: http://www.flsenate.gov/Senators/s9
 - url: http://www.flsenate.gov/Senators/2018-2020/S9
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000576
+- scheme: legacy_openstates
+  identifier: FLL000034
+- scheme: legacy_openstates
+  identifier: FLL000198
+- scheme: openstates
+  identifier: ocd-person/ecbf75d2-3d67-4ab2-93f8-a2ba7c78be59
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s9
 - url: http://www.flsenate.gov/Senators/2018-2020/S9
-image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s09_4682.jpg
-other_identifiers:
-- identifier: FLL000576
-  scheme: legacy_openstates
-- identifier: FLL000034
-  scheme: legacy_openstates
-- identifier: FLL000198
-  scheme: legacy_openstates
-- identifier: ocd-person/ecbf75d2-3d67-4ab2-93f8-a2ba7c78be59
-  scheme: openstates
-given_name: David
-family_name: Simmons
-email: simmons.david.web@flsenate.gov

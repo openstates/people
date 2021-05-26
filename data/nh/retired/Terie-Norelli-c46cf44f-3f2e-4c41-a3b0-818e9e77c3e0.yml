@@ -2,26 +2,26 @@ id: ocd-person/c46cf44f-3f2e-4c41-a3b0-818e9e77c3e0
 name: Terie Norelli
 given_name: Terie
 family_name: Norelli
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376154.jpg
 party:
 - name: Democratic
 roles:
-- district: Rockingham 26
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: Rockingham 16
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 26
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376154.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 16
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376154
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000261
+- scheme: legacy_openstates
+  identifier: NHL000668
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- identifier: NHL000261
-  scheme: legacy_openstates
-- identifier: NHL000668
-  scheme: legacy_openstates

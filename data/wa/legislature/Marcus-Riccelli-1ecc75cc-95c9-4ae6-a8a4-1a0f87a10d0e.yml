@@ -1,11 +1,15 @@
 id: ocd-person/1ecc75cc-95c9-4ae6-a8a4-1a0f87a10d0e
 name: Marcus Riccelli
+given_name: Marcus
+family_name: Riccelli
+email: marcus.riccelli@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/riccelli.jpg
 party:
 - name: Democratic
 roles:
-- district: '3'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: 434A Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Marcus-Riccelli/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Riccelli/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000186
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/riccelli.jpg
-other_identifiers:
-- identifier: WAL000186
-  scheme: legacy_openstates
-given_name: Marcus
-family_name: Riccelli
-email: marcus.riccelli@leg.wa.gov

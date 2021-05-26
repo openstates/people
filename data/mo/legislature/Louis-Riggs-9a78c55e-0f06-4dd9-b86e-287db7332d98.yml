@@ -1,19 +1,25 @@
 id: ocd-person/9a78c55e-0f06-4dd9-b86e-287db7332d98
 name: Louis Riggs
+given_name: Louis
+family_name: Riggs
+email: Louis.Riggs@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2094
 party:
 - name: Republican
 roles:
-- district: '5'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '5'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 111; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 111; Jefferson
+    City MO 65101
   voice: 573-751-3613
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=5
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=005
+other_names:
+- name: Riggs, Louis
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=5
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Louis
   last_name: Riggs
-email: Louis.Riggs@house.mo.gov
-family_name: Riggs
-image: https://house.mo.gov/MemberPhoto.aspx?id=2094
-given_name: Louis
-other_names:
-- name: Riggs, Louis

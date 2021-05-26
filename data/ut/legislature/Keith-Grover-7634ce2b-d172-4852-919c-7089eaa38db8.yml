@@ -1,26 +1,41 @@
 id: ocd-person/7634ce2b-d172-4852-919c-7089eaa38db8
 name: Keith Grover
+given_name: Keith
+family_name: Grover
+email: keithgrover@le.utah.gov
+image: https://le.utah.gov/images/legislator/GROVEK.jpg
 party:
 - name: Republican
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2016-12-31
-- district: '15'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: upper
+  district: '61'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '15'
 contact_details:
 - note: District Office
   address: 1374 W 1940 N, PROVO, UT, 84604
-  fax: 801-356-2442
   voice: 801-319-0170
+  fax: 801-356-2442
 links:
 - url: https://senate.utah.gov/keith-grover
+other_names:
+- name: Grover, Keith
+- name: Grover, K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000307
+- scheme: legacy_openstates
+  identifier: UTL000058
+- scheme: legacy_openstates
+  identifier: UTL000272
+- scheme: openstates
+  identifier: ocd-person/c17b9ece-b750-4eb1-befb-591757513771
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/GROVEK.jpg
 extras:
   links:
   - https://le.utah.gov/senate/CofI/GROVEK.pdf
@@ -30,18 +45,3 @@ extras:
   - https://le.utah.gov/house2/CofI/kgrover.pdf
   - https://le.utah.gov/house2/CofI/GROVEK.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1913
-other_identifiers:
-- identifier: UTL000307
-  scheme: legacy_openstates
-- identifier: UTL000058
-  scheme: legacy_openstates
-- identifier: UTL000272
-  scheme: legacy_openstates
-- identifier: ocd-person/c17b9ece-b750-4eb1-befb-591757513771
-  scheme: openstates
-given_name: Keith
-family_name: Grover
-email: keithgrover@le.utah.gov
-other_names:
-- name: Grover, Keith
-- name: Grover, K.

@@ -2,26 +2,26 @@ id: ocd-person/7543862f-39e2-433b-80c3-4f1e48bff928
 name: Curtis Hanson
 given_name: Curtis
 family_name: Hanson
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=9018
 party:
 - name: Democratic
 roles:
-- district: '82'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '90'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '82'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=9018
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '90'
 links:
 - url: https://www.legis.iowa.gov/legislators/house
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000076
+- scheme: legacy_openstates
+  identifier: IAL000252
 sources:
 - url: https://www.legis.iowa.gov/legislators/house
-other_identifiers:
-- identifier: IAL000076
-  scheme: legacy_openstates
-- identifier: IAL000252
-  scheme: legacy_openstates

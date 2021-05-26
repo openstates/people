@@ -3,26 +3,26 @@ name: Kenneth C Alexander
 given_name: Kenneth
 family_name: Alexander
 middle_name: C
+image: http://apps.lis.virginia.gov/senatepics/KAlexanderBW.jpg
 party:
 - name: Democratic
 roles:
-- district: '89'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
-  start_date: '2010-01-01'
+- start_date: '2010-01-01'
   end_date: '2011-12-31'
-- district: '5'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: upper
-  start_date: '2012-01-01'
+  district: '89'
+- start_date: '2012-01-01'
   end_date: '2017-12-31'
-image: http://apps.lis.virginia.gov/senatepics/KAlexanderBW.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '5'
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?161+mbr+S89
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000044
+- scheme: legacy_openstates
+  identifier: VAL000172
 sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?161+mbr+S89
-other_identifiers:
-- identifier: VAL000044
-  scheme: legacy_openstates
-- identifier: VAL000172
-  scheme: legacy_openstates

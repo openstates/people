@@ -2,19 +2,19 @@ id: ocd-person/c7c8aa2d-3376-4d35-a652-f65cdd2df615
 name: Dannie Reed
 given_name: Dannie
 family_name: Reed
+image: http://billstatus.ls.state.ms.us/members/house/reed.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/reed.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '35'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/reed.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000160
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/reed.xml
-other_identifiers:
-- identifier: MSL000160
-  scheme: legacy_openstates

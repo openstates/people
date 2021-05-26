@@ -2,19 +2,19 @@ id: ocd-person/9f24f335-ef22-4f1a-a6cb-81fd8567bc69
 name: Tommy Dickerson
 given_name: Tommy
 family_name: Dickerson
+image: http://billstatus.ls.state.ms.us/members/senate/dickerson.jpg
 party:
 - name: Democratic
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/dickerson.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '43'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/dickerson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000010
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/dickerson.xml
-other_identifiers:
-- identifier: MSL000010
-  scheme: legacy_openstates

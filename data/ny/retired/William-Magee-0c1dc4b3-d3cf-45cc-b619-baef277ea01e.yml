@@ -1,21 +1,21 @@
 id: ocd-person/0c1dc4b3-d3cf-45cc-b619-baef277ea01e
 name: William Magee
+given_name: William
+family_name: Magee
+image: http://assembly.state.ny.us/mem/pic/121.jpg
 party:
 - name: Democratic
 roles:
-- district: '121'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '121'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000145
+- scheme: legacy_openstates
+  identifier: NYL000282
 sources:
 - url: http://assembly.state.ny.us/mem/William-Magee
-image: http://assembly.state.ny.us/mem/pic/121.jpg
-other_identifiers:
-- identifier: NYL000145
-  scheme: legacy_openstates
-- identifier: NYL000282
-  scheme: legacy_openstates
-given_name: William
-family_name: Magee

@@ -1,20 +1,23 @@
 id: ocd-person/232462b1-3d3f-4131-a8ce-040c1f336528
 name: Curt Meier
+given_name: Curt
+family_name: Meier
+birth_date: 1953-01-01
+image: http://wyoleg.gov/LegislatorSummary/Photos/MeierCS03.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: upper
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '3'
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/524
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000021
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/524
-image: http://wyoleg.gov/LegislatorSummary/Photos/MeierCS03.jpg
-birth_date: '1953-01-01'
-given_name: Curt
-family_name: Meier
 extras:
   civic_organizations:
   - orgname: Rotary
@@ -34,6 +37,3 @@ extras:
   religion: ''
   spouse_given_name: Charlene
   wy_leg_id: 524
-other_identifiers:
-- identifier: WYL000021
-  scheme: legacy_openstates

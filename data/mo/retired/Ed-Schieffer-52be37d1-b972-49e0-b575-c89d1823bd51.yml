@@ -2,26 +2,26 @@ id: ocd-person/52be37d1-b972-49e0-b575-c89d1823bd51
 name: Ed Schieffer
 given_name: Ed
 family_name: Schieffer
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=55
 party:
 - name: Democratic
 roles:
-- district: '41'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '41'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=55
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '11'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=14
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000162
+- scheme: legacy_openstates
+  identifier: MOL000345
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=41
-other_identifiers:
-- identifier: MOL000162
-  scheme: legacy_openstates
-- identifier: MOL000345
-  scheme: legacy_openstates

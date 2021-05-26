@@ -1,33 +1,33 @@
 id: ocd-person/8c8517c3-75ee-4b27-8d8c-3444c036ba78
 name: Casey Murdock
+given_name: Casey
+family_name: Murdock
+image: http://www.oksenate.gov/Senators/biographies/Images/murdock_bio.jpg
 party:
 - name: Republican
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '27'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: upper
+  district: '61'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '27'
 contact_details:
 - note: Capitol Office
   address: 2300 N. Lincoln Blvd., Rm. 430;Oklahoma City, OK 73105
 links:
 - url: http://oksenate.gov/Senators/biographies/murdock_bio.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000328
+- scheme: legacy_openstates
+  identifier: OKL000194
+- scheme: openstates
+  identifier: ocd-person/b80f171a-cf10-485b-822d-06d7e98bbb8a
 sources:
 - url: http://oksenate.gov/Senators/biographies/murdock_bio.aspx
 - url: http://oksenate.gov/Senators/biographies/murdock_bio.html
-image: http://www.oksenate.gov/Senators/biographies/Images/murdock_bio.jpg
 extras:
   email: murdock@oksenate.gov
-other_identifiers:
-- identifier: OKL000328
-  scheme: legacy_openstates
-- identifier: OKL000194
-  scheme: legacy_openstates
-- identifier: ocd-person/b80f171a-cf10-485b-822d-06d7e98bbb8a
-  scheme: openstates
-given_name: Casey
-family_name: Murdock

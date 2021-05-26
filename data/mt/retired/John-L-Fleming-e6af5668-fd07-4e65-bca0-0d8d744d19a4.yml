@@ -1,20 +1,20 @@
 id: ocd-person/e6af5668-fd07-4e65-bca0-0d8d744d19a4
 name: John L Fleming
+given_name: John
+family_name: Fleming
 party:
 - name: Democratic
 roles:
-- district: '93'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '93'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4835
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4835
+  note: legislator page
 other_identifiers:
-- identifier: MTL000396
-  scheme: legacy_openstates
-given_name: John
-family_name: Fleming
+- scheme: legacy_openstates
+  identifier: MTL000396
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

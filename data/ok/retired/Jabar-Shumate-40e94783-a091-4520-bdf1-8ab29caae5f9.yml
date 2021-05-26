@@ -2,29 +2,29 @@ id: ocd-person/40e94783-a091-4520-bdf1-8ab29caae5f9
 name: Jabar Shumate
 given_name: Jabar
 family_name: Shumate
+image: http://www.oksenate.gov/Senators/biographies/shumate_bio.jpg
 party:
 - name: Democratic
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '73'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '11'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.oksenate.gov/Senators/biographies/shumate_bio.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '73'
 links:
 - url: http://oksenate.gov/Senators/biographies/shumate_bio.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000135
+- scheme: legacy_openstates
+  identifier: OKL000162
+- scheme: legacy_openstates
+  identifier: OKL000211
 sources:
 - url: http://oksenate.gov/Senators/biographies/shumate_bio.aspx
 - url: http://oksenate.gov/Senators/biographies/shumate_bio.html
-other_identifiers:
-- identifier: OKL000135
-  scheme: legacy_openstates
-- identifier: OKL000162
-  scheme: legacy_openstates
-- identifier: OKL000211
-  scheme: legacy_openstates

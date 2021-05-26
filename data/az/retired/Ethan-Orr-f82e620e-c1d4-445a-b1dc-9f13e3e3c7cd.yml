@@ -2,19 +2,19 @@ id: ocd-person/f82e620e-c1d4-445a-b1dc-9f13e3e3c7cd
 name: Ethan Orr
 given_name: Ethan
 family_name: Orr
+image: https://sphotos-a.xx.fbcdn.net/hphotos-ash3/547041_386493344758787_1611776779_n.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: https://sphotos-a.xx.fbcdn.net/hphotos-ash3/547041_386493344758787_1611776779_n.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '9'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=76&Legislature=51&Session_ID=110
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000278
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=H
-other_identifiers:
-- identifier: AZL000278
-  scheme: legacy_openstates

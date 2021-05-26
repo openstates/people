@@ -1,11 +1,15 @@
 id: ocd-person/bf88659d-b2dd-462e-84b3-82ead47ff360
 name: Philip Y.  Ting
+given_name: Philip
+family_name: Ting
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad19-ting_0.jpg
 party:
 - name: Democratic
 roles:
-- district: '19'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '19'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0019
@@ -15,16 +19,12 @@ contact_details:
   voice: 415-557-2312
 links:
 - url: https://a19.asmdc.org
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD19&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD19&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000407
+- scheme: legacy_openstates
+  identifier: CAL000496
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad19-ting_0.jpg
-other_identifiers:
-- identifier: CAL000407
-  scheme: legacy_openstates
-- identifier: CAL000496
-  scheme: legacy_openstates
-given_name: Philip
-family_name: Ting
-gender: Male

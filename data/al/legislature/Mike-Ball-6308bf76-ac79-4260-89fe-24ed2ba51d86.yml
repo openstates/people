@@ -1,28 +1,28 @@
 id: ocd-person/6308bf76-ac79-4260-89fe-24ed2ba51d86
 name: Mike Ball
+given_name: Mike
+family_name: Ball
+email: mikeball@knology.net
+image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Ball_10.jpeg
 party:
 - name: Republican
 roles:
-- district: '10'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  type: lower
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100490&OID_PERSON=4454
+  district: '10'
 contact_details:
 - note: Capitol Office
   address: Suite 401-A;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0483
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100490&OID_PERSON=4454
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000037
+- scheme: legacy_openstates
+  identifier: ALL000231
+- scheme: legacy_openstates
+  identifier: ALL000383
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100490&OID_PERSON=4454
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Ball_10.jpeg
-other_identifiers:
-- identifier: ALL000037
-  scheme: legacy_openstates
-- identifier: ALL000231
-  scheme: legacy_openstates
-- identifier: ALL000383
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Ball
-email: mikeball@knology.net

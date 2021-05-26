@@ -1,11 +1,15 @@
 id: ocd-person/11b76460-b10e-4182-a052-0b2db5b60fce
 name: Sheri Gilligan
+given_name: Sheri
+family_name: Gilligan
+email: sheri.gilligan@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/gilligan-sheri-879.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '24'
 contact_details:
 - note: Capitol Office
   address: 612-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=879&Session=27
 - url: https://www.legis.ga.gov/members/house/879?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000431
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=879&Session=27
 - url: https://www.legis.ga.gov/members/house/879?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/gilligan-sheri-879.jpg
-family_name: Gilligan
-given_name: Sheri
 extras:
   guid: 879
   city: Cumming
   georgia_id: 879
   residence: Cumming
-other_identifiers:
-- identifier: GAL000431
-  scheme: legacy_openstates
-email: sheri.gilligan@house.ga.gov

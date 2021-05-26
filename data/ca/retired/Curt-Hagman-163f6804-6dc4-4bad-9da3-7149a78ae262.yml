@@ -2,28 +2,28 @@ id: ocd-person/163f6804-6dc4-4bad-9da3-7149a78ae262
 name: Curt Hagman
 given_name: Curt
 family_name: Hagman
+image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/60.jpg?1320968843
 party:
 - name: Republican
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '55'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '60'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/60.jpg?1320968843
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '55'
 links:
 - url: http://arc.asm.ca.gov/member/AD55
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000092
+- scheme: legacy_openstates
+  identifier: CAL000250
+- scheme: legacy_openstates
+  identifier: CAL000373
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_identifiers:
-- identifier: CAL000092
-  scheme: legacy_openstates
-- identifier: CAL000250
-  scheme: legacy_openstates
-- identifier: CAL000373
-  scheme: legacy_openstates

@@ -1,27 +1,7 @@
 id: ocd-person/dd120c8b-e0c8-4907-b982-8653f4208c80
 name: Jane Nelson
-party:
-- name: Republican
-roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0112
-links:
-- url: https://senate.texas.gov/member.php?d=12
-sources:
-- url: https://senate.texas.gov/member.php?d=12
-other_identifiers:
-- identifier: TXL000199
-  scheme: legacy_openstates
-- identifier: TXL000017
-  scheme: legacy_openstates
 given_name: Jane
 family_name: Nelson
-image: https://senate.texas.gov/members/d12/img/headshot.jpg
 biography: "Senator Jane Nelson is a businesswoman and former teacher who served two\
   \ terms on the State Board of Education.\r \r The first woman in Texas legislative\
   \ history to chair a standing budget-writing committee, she is serving her 4th session\
@@ -37,3 +17,23 @@ biography: "Senator Jane Nelson is a businesswoman and former teacher who served
   \ she led efforts to expand women's health; protect endangered children; and improve\
   \ care for seniors and Texans with disabilities.\r \r Senator Nelson is the highest\
   \ ranking Republican in the Senate."
+image: https://senate.texas.gov/members/d12/img/headshot.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '12'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0112
+links:
+- url: https://senate.texas.gov/member.php?d=12
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000199
+- scheme: legacy_openstates
+  identifier: TXL000017
+sources:
+- url: https://senate.texas.gov/member.php?d=12

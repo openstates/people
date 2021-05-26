@@ -1,11 +1,14 @@
 id: ocd-person/454e5979-c5bb-4f4e-9f3d-dc11f5e5b6ca
 name: Susan M. Johnson
+given_name: Susan
+family_name: Johnson
+email: Susan.Johnson@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '49'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '49'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4029;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-423-2085
 links:
 - url: http://www.housedems.ct.gov/Johnson
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000085
-  scheme: legacy_openstates
-given_name: Susan
-family_name: Johnson
-email: Susan.Johnson@cga.ct.gov
 other_names:
 - name: Johnson, Susan M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000085
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

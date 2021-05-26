@@ -1,15 +1,19 @@
 id: ocd-person/b0101cd0-ad49-466b-a46e-8bb8671cb709
 name: "Andr\xE9 Jacque"
+given_name: "Andr\xE9"
+family_name: Jacque
+email: Sen.Jacque@legis.wisconsin.gov
+image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099.jpg
 party:
 - name: Republican
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+- end_date: 2018-12-31
   type: lower
-  end_date: 2018-12-31
-- district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
+  district: '2'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: Room 7 South;State Capitol;PO Box 7882;Madison, WI 53707
@@ -18,17 +22,13 @@ contact_details:
 links:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1941
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000461
+- scheme: legacy_openstates
+  identifier: WIL000549
+- scheme: openstates
+  identifier: ocd-person/0e27c35e-f9fc-483e-80fa-0718735e8451
 sources:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1941
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099
-image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099.jpg
-other_identifiers:
-- identifier: WIL000461
-  scheme: legacy_openstates
-- identifier: WIL000549
-  scheme: legacy_openstates
-- identifier: ocd-person/0e27c35e-f9fc-483e-80fa-0718735e8451
-  scheme: openstates
-email: Sen.Jacque@legis.wisconsin.gov
-given_name: "Andr\xE9"
-family_name: Jacque

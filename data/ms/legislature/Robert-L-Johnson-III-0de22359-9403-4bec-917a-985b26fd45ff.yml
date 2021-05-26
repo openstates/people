@@ -1,11 +1,15 @@
 id: ocd-person/0de22359-9403-4bec-917a-985b26fd45ff
 name: Robert L. Johnson III
+given_name: Robert L.
+family_name: Johnson
+email: rjohnson@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/johnson_(94th).jpg
 party:
 - name: Democratic
 roles:
-- district: '94'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '94'
 contact_details:
 - note: Capitol Office
   address: Room 102-C;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 601-445-5690
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/johnson_(94th).xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000134
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/johnson_(94th).xml
-image: http://billstatus.ls.state.ms.us/members/house/johnson_(94th).jpg
 extras:
   org_info: Representative Johnson is a member of the Mississippi Bar Association
     and the Mississippi Trial Lawyers Association. He is President of the Adams County
     Voters League.
-other_identifiers:
-- identifier: MSL000134
-  scheme: legacy_openstates
-given_name: Robert L.
-family_name: Johnson
-email: rjohnson@house.ms.gov

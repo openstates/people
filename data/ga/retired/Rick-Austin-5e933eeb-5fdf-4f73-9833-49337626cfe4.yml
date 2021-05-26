@@ -2,17 +2,17 @@ id: ocd-person/5e933eeb-5fdf-4f73-9833-49337626cfe4
 name: Rick Austin
 given_name: Rick
 family_name: Austin
+image: http://www1.legis.ga.gov/legis/2011_12/house/images/members_web_images/austinRick.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www1.legis.ga.gov/legis/2011_12/house/images/members_web_images/austinRick.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '10'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000062
 sources:
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/austinRick.htm
-other_identifiers:
-- identifier: GAL000062
-  scheme: legacy_openstates

@@ -1,11 +1,15 @@
 id: ocd-person/e8716b1c-7767-4a07-b0a8-346e6fe175f5
 name: Ann Rivers
+given_name: Ann
+family_name: Rivers
+email: ann.rivers@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/rivers.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: 204 Irv Newhouse Building;PO Box 40418;Olympia, WA 98504
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://AnnRivers.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000123
+- scheme: legacy_openstates
+  identifier: WAL000155
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/rivers.jpg
-other_identifiers:
-- identifier: WAL000123
-  scheme: legacy_openstates
-- identifier: WAL000155
-  scheme: legacy_openstates
-given_name: Ann
-family_name: Rivers
-email: ann.rivers@leg.wa.gov

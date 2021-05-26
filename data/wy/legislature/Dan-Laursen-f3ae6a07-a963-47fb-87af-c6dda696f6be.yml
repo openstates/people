@@ -1,11 +1,16 @@
 id: ocd-person/f3ae6a07-a963-47fb-87af-c6dda696f6be
 name: Dan Laursen
+given_name: Dan
+family_name: Laursen
+email: Dan.Laursen@wyoleg.gov
+birth_date: 1960-03-09
+image: http://wyoleg.gov/LegislatorSummary/Photos/laursendH25.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '25'
 contact_details:
 - note: District Office
   address: 478 Road 8, Powell WY 82435
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2006
 - url: http://wyoleg.gov/Legislators/2021/R/2006
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000123
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2006
 - url: http://wyoleg.gov/Legislators/2021/R/2006
-image: http://wyoleg.gov/LegislatorSummary/Photos/laursendH25.jpg
-birth_date: '1960-03-09'
-given_name: Dan
-family_name: Laursen
 extras:
   civic_organizations:
   - orgname: Board Member Upper Missouri Water Association
@@ -46,7 +50,3 @@ extras:
   religion: Christian
   spouse_given_name: Denise
   wy_leg_id: 2006
-other_identifiers:
-- identifier: WYL000123
-  scheme: legacy_openstates
-email: Dan.Laursen@wyoleg.gov

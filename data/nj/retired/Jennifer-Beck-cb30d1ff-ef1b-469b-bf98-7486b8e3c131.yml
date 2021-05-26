@@ -2,27 +2,27 @@ id: ocd-person/cb30d1ff-ef1b-469b-bf98-7486b8e3c131
 name: Jennifer Beck
 given_name: Jennifer
 family_name: Beck
+image: http://www.njleg.state.nj.us/members/memberphotos/beck_color.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2017-12-31'
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
   type: upper
-  start_date: '2008-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '11'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://www.njleg.state.nj.us/members/memberphotos/beck_color.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '12'
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=351
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000035
+- scheme: legacy_openstates
+  identifier: NJL000153
 sources:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=351
 - url: http://www.njleg.state.nj.us/downloads.asp
-other_identifiers:
-- identifier: NJL000035
-  scheme: legacy_openstates
-- identifier: NJL000153
-  scheme: legacy_openstates

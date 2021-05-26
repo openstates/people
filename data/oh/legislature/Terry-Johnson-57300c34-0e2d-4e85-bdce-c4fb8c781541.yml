@@ -1,32 +1,32 @@
 id: ocd-person/57300c34-0e2d-4e85-bdce-c4fb8c781541
 name: Terry Johnson
+given_name: Terry
+family_name: Johnson
+email: sd14@ohiosenate.gov
+image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2932.jpg
 party:
 - name: Republican
 roles:
-- district: '90'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+- end_date: 2018-12-31
   type: lower
-  end_date: 2018-12-31
-- district: '14'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '90'
+- start_date: '2019-09-18'
   type: upper
-  start_date: '2019-09-18'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '14'
 contact_details:
 - note: Capitol Office
   address: Statehouse;1 Capitol Square;2nd Floor;Columbus, OH 43215
   voice: 614-466-8082
 links:
 - url: http://www.ohiosenate.gov/senators/johnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000122
+- scheme: legacy_openstates
+  identifier: OHL000259
+- scheme: openstates
+  identifier: ocd-person/871f7df3-bff9-4f81-b951-401bfecb733a
 sources:
 - url: http://www.ohiosenate.gov/senators
-image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2932.jpg
-given_name: Terry
-family_name: Johnson
-other_identifiers:
-- identifier: OHL000122
-  scheme: legacy_openstates
-- identifier: OHL000259
-  scheme: legacy_openstates
-- identifier: ocd-person/871f7df3-bff9-4f81-b951-401bfecb733a
-  scheme: openstates
-email: sd14@ohiosenate.gov

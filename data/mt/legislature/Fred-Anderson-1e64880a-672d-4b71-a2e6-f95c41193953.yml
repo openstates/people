@@ -1,31 +1,31 @@
 id: ocd-person/1e64880a-672d-4b71-a2e6-f95c41193953
 name: Fred Anderson
-party:
-- name: Republican
-roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-contact_details:
-- note: Capitol Office
-  voice: 406-761-4042
-  address: 1609 39TH ST S;Great Falls, MT 59405
-links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4763
-- url: https://leg.mt.gov/legislator-information/roster/individual/5078
-- url: https://leg.mt.gov/legislator-information/roster/individual/6898
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-- url: https://leg.mt.gov/legislator-information/roster/individual/5078
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-- url: https://leg.mt.gov/legislator-information/roster/individual/6898
-other_identifiers:
-- identifier: MTL000405
-  scheme: legacy_openstates
 given_name: Fred
 family_name: Anderson
 email: Fred.Anderson@mtleg.gov
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '20'
+contact_details:
+- note: Capitol Office
+  address: 1609 39TH ST S;Great Falls, MT 59405
+  voice: 406-761-4042
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4763
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5078
+- url: https://leg.mt.gov/legislator-information/roster/individual/6898
 other_names:
 - name: Anderson, Fred
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000405
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5078
+- url: https://leg.mt.gov/legislator-information/?session_select=113
+- url: https://leg.mt.gov/legislator-information/roster/individual/6898

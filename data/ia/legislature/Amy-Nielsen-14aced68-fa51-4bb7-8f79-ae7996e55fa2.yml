@@ -1,11 +1,15 @@
 id: ocd-person/14aced68-fa51-4bb7-8f79-ae7996e55fa2
 name: Amy Nielsen
+given_name: Amy
+family_name: Nielsen
+email: Amy.Nielsen@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=18050
 party:
 - name: Democratic
 roles:
-- district: '77'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '77'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -14,13 +18,9 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18050
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18050
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000531
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18050
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18050
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=18050
-other_identifiers:
-- identifier: IAL000531
-  scheme: legacy_openstates
-given_name: Amy
-family_name: Nielsen
-email: Amy.Nielsen@legis.iowa.gov

@@ -1,46 +1,46 @@
 id: ocd-person/ab530396-3077-4806-acfe-5203a4109a23
 name: Travis Hutson
+given_name: Travis
+family_name: Hutson
+email: hutson.travis.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s07_5186.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2014-12-31
-- district: '6'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
-  start_date: 2015-01-01
+  district: '24'
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '6'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: 416 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
   voice: 850-487-5007
 - note: District Office
   address: 4875 Palm Coast Parkway, NW; Suite 5; Palm Coast, FL 32137
-  fax: 888-263-3475
   voice: 386-446-7610
+  fax: 888-263-3475
 links:
 - url: http://www.flsenate.gov/Senators/s7
 - url: http://www.flsenate.gov/Senators/2018-2020/S7
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000590
+- scheme: legacy_openstates
+  identifier: FLL000253
+- scheme: legacy_openstates
+  identifier: FLL000408
+- scheme: openstates
+  identifier: ocd-person/5af95f45-a587-4d5c-b8c1-51f4e9e71278
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s7
 - url: http://www.flsenate.gov/Senators/2018-2020/S7
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s07_5186.jpg
-other_identifiers:
-- identifier: FLL000590
-  scheme: legacy_openstates
-- identifier: FLL000253
-  scheme: legacy_openstates
-- identifier: FLL000408
-  scheme: legacy_openstates
-- identifier: ocd-person/5af95f45-a587-4d5c-b8c1-51f4e9e71278
-  scheme: openstates
-given_name: Travis
-family_name: Hutson
-email: hutson.travis.web@flsenate.gov

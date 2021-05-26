@@ -1,22 +1,22 @@
 id: ocd-person/140d2d97-aae9-433a-b012-ce3775aa81a8
 name: Emmanuel Sanchez
+given_name: Emmanuel
+family_name: Sanchez
 email: emmanuel.sanchez@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '24'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '24'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/SanchezM
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Emmanuel
-family_name: Sanchez
 other_names:
 - name: Sanchez, Emmanuel
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

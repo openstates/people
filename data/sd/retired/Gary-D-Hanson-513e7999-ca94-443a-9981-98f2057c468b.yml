@@ -3,17 +3,17 @@ name: Gary D Hanson
 given_name: Gary
 family_name: Hanson
 middle_name: D
+image: http://legis.state.sd.us/sessions/2010/hansong.jpg
 party:
 - name: Democratic
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2010/hansong.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '1'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000014
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=3
-other_identifiers:
-- identifier: SDL000014
-  scheme: legacy_openstates

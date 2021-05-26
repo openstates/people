@@ -1,17 +1,24 @@
 id: ocd-person/17c5e858-8061-4347-a7b8-ff5552829fcf
 name: Willie Simmons
+given_name: Willie
+family_name: Simmons
+image: http://billstatus.ls.state.ms.us/members/senate/simmons_(13th).jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+- end_date: '2020-01-07'
   type: upper
-  end_date: '2020-01-07'
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '13'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/simmons_(13th).xml
+other_names:
+- name: Simmons
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000020
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/simmons_(13th).xml
-image: http://billstatus.ls.state.ms.us/members/senate/simmons_(13th).jpg
 extras:
   org_info: Senator Simmons is owner of Simmons and Associates Consultant Firm and
     the Senator's Place Restaurant in Cleveland, Mississippi. He is active in the
@@ -19,10 +26,3 @@ extras:
     Legislators, MLBC, Foundation for Education & Economic Development, Inc, and the
     Mississippi Grammy Museum. He is an Omega Psi Phi and a Life member of Alcorn
     State University and Delta State University Alumni Associations.
-other_identifiers:
-- identifier: MSL000020
-  scheme: legacy_openstates
-given_name: Willie
-family_name: Simmons
-other_names:
-- name: Simmons

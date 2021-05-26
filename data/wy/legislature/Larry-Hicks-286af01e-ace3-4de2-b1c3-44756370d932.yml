@@ -1,11 +1,16 @@
 id: ocd-person/286af01e-ace3-4de2-b1c3-44756370d932
 name: Larry Hicks
+given_name: Larry
+family_name: Hicks
+email: Larry.Hicks@wyoleg.gov
+birth_date: 1958-12-30
+image: http://wyoleg.gov/LegislatorSummary/Photos/HicksS11.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '11'
 contact_details:
 - note: District Office
   address: P O Box 413, Baggs WY 82321
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1963
 - url: http://wyoleg.gov/Legislators/2021/R/1963
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000015
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1963
 - url: http://wyoleg.gov/Legislators/2021/R/1963
-image: http://wyoleg.gov/LegislatorSummary/Photos/HicksS11.jpg
-birth_date: '1958-12-30'
-given_name: Larry
-family_name: Hicks
 extras:
   civic_organizations:
   - orgname: Family Farm Alliance, Advisory Board
@@ -51,7 +55,3 @@ extras:
   religion: ''
   spouse_given_name: Roxane "ROX" Hicks
   wy_leg_id: 1963
-other_identifiers:
-- identifier: WYL000015
-  scheme: legacy_openstates
-email: Larry.Hicks@wyoleg.gov

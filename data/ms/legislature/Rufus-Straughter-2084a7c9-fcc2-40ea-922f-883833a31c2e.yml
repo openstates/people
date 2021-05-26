@@ -1,11 +1,15 @@
 id: ocd-person/2084a7c9-fcc2-40ea-922f-883833a31c2e
 name: Rufus Straughter
+given_name: Rufus
+family_name: Straughter
+email: rstraughter@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/straughter.jpg
 party:
 - name: Democratic
 roles:
-- district: '51'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '51'
 contact_details:
 - note: Capitol Office
   address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 662-247-2728
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/straughter.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000101
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/straughter.xml
-image: http://billstatus.ls.state.ms.us/members/house/straughter.jpg
 extras:
   org_info: Representative Straughter is affiliated Omega Psi Phi, Elks, NEA, MAE,
     HCAE, NCTM and the NAACP.
-other_identifiers:
-- identifier: MSL000101
-  scheme: legacy_openstates
-given_name: Rufus
-family_name: Straughter
-email: rstraughter@house.ms.gov

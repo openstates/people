@@ -1,19 +1,28 @@
 id: ocd-person/f9e737ad-26f3-418e-99c8-0b21670c71f8
 name: Kelly B. Miles
+given_name: Kelly
+family_name: Miles
+email: kmiles@le.utah.gov
+image: https://le.utah.gov/images/legislator/MILESKB.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '11'
 contact_details:
 - note: District Office
   address: 6288 S 1575 E, OGDEN, UT, 84405
 links:
 - url: http://house.utah.gov/rep/MILESKB
+other_names:
+- name: Miles, Kelly B.
+- name: Miles, K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000277
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/MILESKB.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIMILESKB2.pdf
@@ -21,12 +30,3 @@ extras:
   - https://le.utah.gov/house2/CofI/COFIMILESKB.pdf
   - http://le.utah.gov/house2/CofI/MILESKB.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414497
-other_identifiers:
-- identifier: UTL000277
-  scheme: legacy_openstates
-given_name: Kelly
-family_name: Miles
-email: kmiles@le.utah.gov
-other_names:
-- name: Miles, Kelly B.
-- name: Miles, K.

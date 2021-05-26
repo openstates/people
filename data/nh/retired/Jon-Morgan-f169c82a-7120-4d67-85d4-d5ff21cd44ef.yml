@@ -1,12 +1,15 @@
 id: ocd-person/f169c82a-7120-4d67-85d4-d5ff21cd44ef
 name: Jon Morgan
+given_name: Jon
+family_name: Morgan
+email: Jon.Morgan@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '23'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 sources:
@@ -16,6 +19,3 @@ extras:
   first_name: Jon
   last_name: Morgan
   middle_name: ''
-email: Jon.Morgan@leg.state.nh.us
-given_name: Jon
-family_name: Morgan

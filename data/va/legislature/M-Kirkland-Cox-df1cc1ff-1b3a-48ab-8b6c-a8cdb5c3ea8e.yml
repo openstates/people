@@ -1,11 +1,16 @@
 id: ocd-person/df1cc1ff-1b3a-48ab-8b6c-a8cdb5c3ea8e
 name: M. Kirkland Cox
+given_name: M. Kirkland
+family_name: Cox
+gender: Male
+email: DelKCox@house.virginia.gov
+image: http://memdata.virginiageneralassembly.gov/images/display_image/H0021
 party:
 - name: Republican
 roles:
-- district: '66'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
+  district: '66'
 contact_details:
 - note: District Office
   address: P.O. Box 1205;Colonial Heights, Virginia 23834
@@ -13,21 +18,16 @@ contact_details:
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H21
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H21
+other_names:
+- name: Cox, M. Kirkland
+ids:
+  twitter: delkcox
+  facebook: DelKCox
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000063
 sources:
 - url: http://lis.virginia.gov/191/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H21
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H21
-image: http://memdata.virginiageneralassembly.gov/images/display_image/H0021
-other_identifiers:
-- identifier: VAL000063
-  scheme: legacy_openstates
-given_name: M. Kirkland
-family_name: Cox
-gender: Male
-ids:
-  facebook: DelKCox
-  twitter: delkcox
-email: DelKCox@house.virginia.gov
-other_names:
-- name: Cox, M. Kirkland

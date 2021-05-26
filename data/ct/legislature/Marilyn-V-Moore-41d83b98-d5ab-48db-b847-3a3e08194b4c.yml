@@ -1,11 +1,13 @@
 id: ocd-person/41d83b98-d5ab-48db-b847-3a3e08194b4c
 name: Marilyn V. Moore
+given_name: Marilyn
+family_name: Moore
 party:
 - name: Democratic
 roles:
-- district: '22'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '22'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2000;Hartford, CT 06106
@@ -14,10 +16,8 @@ contact_details:
   address: 666 Cleveland Avenue;Bridgeport, CT 06604
 links:
 - url: http://www.senatedems.ct.gov/Moore
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000329
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000329
-  scheme: legacy_openstates
-given_name: Marilyn
-family_name: Moore

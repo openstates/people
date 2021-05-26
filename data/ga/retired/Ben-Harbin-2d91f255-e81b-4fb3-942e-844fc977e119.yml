@@ -2,27 +2,27 @@ id: ocd-person/2d91f255-e81b-4fb3-942e-844fc977e119
 name: Ben Harbin
 given_name: Ben
 family_name: Harbin
+image: http://www.house.ga.gov/SiteCollectionImages/HarbinBen118.jpg
 party:
 - name: Republican
 roles:
-- district: '122'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '122'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/HarbinBen118.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '118'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=118&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000120
+- scheme: legacy_openstates
+  identifier: GAL000295
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=118&Session=24
-other_identifiers:
-- identifier: GAL000120
-  scheme: legacy_openstates
-- identifier: GAL000295
-  scheme: legacy_openstates

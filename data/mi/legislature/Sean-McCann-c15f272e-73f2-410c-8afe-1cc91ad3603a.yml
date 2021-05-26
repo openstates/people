@@ -1,34 +1,34 @@
 id: ocd-person/c15f272e-73f2-410c-8afe-1cc91ad3603a
 name: Sean McCann
+given_name: Sean
+family_name: McCann
+email: sensmccann@senate.michigan.gov
+image: https://senate.michigan.gov/_images/20th.jpg
 party:
 - name: Democratic
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2014-12-31
-- district: '20'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '60'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: 6600 Binsfeld Bldg
-  fax: 517-373-5115
   voice: 517-373-5100
+  fax: 517-373-5115
 links:
 - url: https://senatedems.com/mccann/
-- note: Contact
-  url: https://senatedems.com/mccann/contact
+- url: https://senatedems.com/mccann/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000098
+- scheme: openstates
+  identifier: ocd-person/29bfbb5e-dfb5-4fc4-9bdc-a7a2b447bfaa
 sources:
 - url: https://senatedems.com/mccann/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000098
-  scheme: legacy_openstates
-- identifier: ocd-person/29bfbb5e-dfb5-4fc4-9bdc-a7a2b447bfaa
-  scheme: openstates
-email: sensmccann@senate.michigan.gov
-family_name: McCann
-image: https://senate.michigan.gov/_images/20th.jpg
-given_name: Sean

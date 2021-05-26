@@ -1,11 +1,16 @@
 id: ocd-person/c8560c84-4f07-42f1-b6c0-40ab7df52f33
 name: Bill Henderson
+given_name: Bill
+family_name: Henderson
+email: Bill.Henderson@wyoleg.gov
+birth_date: 1948-11-28
+image: http://wyoleg.gov/LegislatorSummary/Photos/HendersonWH41.jpg
 party:
 - name: Republican
 roles:
-- district: '41'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '41'
 contact_details:
 - note: District Office
   address: P.O. Box 20877, Cheyenne WY 82003
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2042
 - url: http://wyoleg.gov/Legislators/2021/R/2042
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000156
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2042
 - url: http://wyoleg.gov/Legislators/2021/R/2042
-image: http://wyoleg.gov/LegislatorSummary/Photos/HendersonWH41.jpg
-birth_date: '1948-11-28'
-given_name: Bill
-family_name: Henderson
 extras:
   civic_organizations:
   - orgname: Board of Directors Southeast Wyoming Builders Association
@@ -56,7 +60,3 @@ extras:
   religion: Roman Catholic
   spouse_given_name: Linda
   wy_leg_id: 2042
-other_identifiers:
-- identifier: WYL000156
-  scheme: legacy_openstates
-email: Bill.Henderson@wyoleg.gov

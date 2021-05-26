@@ -1,15 +1,19 @@
 id: ocd-person/91915f3b-c93f-4f55-a164-58b8c1587d6d
 name: Brian Dahle
+given_name: Brian
+family_name: Dahle
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator-dahle.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- end_date: '2019-06-23'
   type: lower
-  end_date: '2019-06-23'
-- district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '1'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 2054, Sacramento, CA 95814-4900
@@ -19,14 +23,10 @@ contact_details:
   voice: 530-271-1022
 links:
 - url: https://senate.ca.gov/sd01
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD01&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD01&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000357
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator-dahle.jpg
-other_identifiers:
-- identifier: CAL000357
-  scheme: legacy_openstates
-given_name: Brian
-family_name: Dahle
-gender: Male

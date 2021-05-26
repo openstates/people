@@ -2,19 +2,19 @@ id: ocd-person/3e63ea07-378a-4c33-9133-c78f01c7c74f
 name: Rita Martinson
 given_name: Rita
 family_name: Martinson
+image: http://billstatus.ls.state.ms.us/members/house/martinson.jpg
 party:
 - name: Republican
 roles:
-- district: '58'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/martinson.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '58'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/martinson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000159
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/martinson.xml
-other_identifiers:
-- identifier: MSL000159
-  scheme: legacy_openstates

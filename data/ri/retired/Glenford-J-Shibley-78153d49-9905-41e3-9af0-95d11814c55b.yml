@@ -5,15 +5,15 @@ family_name: Shibley
 party:
 - name: Republican
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '33'
 links:
 - url: http://webserver.rilin.state.ri.us/Shibley/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000033
 sources:
 - url: http://webserver.rilin.state.ri.us/Documents/Senators.xls
-other_identifiers:
-- identifier: RIL000033
-  scheme: legacy_openstates

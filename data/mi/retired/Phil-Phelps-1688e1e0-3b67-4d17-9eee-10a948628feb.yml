@@ -1,18 +1,18 @@
 id: ocd-person/1688e1e0-3b67-4d17-9eee-10a948628feb
 name: Phil Phelps
+given_name: Phil
+family_name: Phelps
 party:
 - name: Democratic
 roles:
-- district: '49'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '49'
 links:
 - url: https://housedems.com/phelps
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000255
 sources:
 - url: https://housedems.com/phelps
-other_identifiers:
-- identifier: MIL000255
-  scheme: legacy_openstates
-given_name: Phil
-family_name: Phelps

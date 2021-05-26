@@ -1,20 +1,20 @@
 id: ocd-person/eaa0db94-873f-414d-a7f9-3938c6e7edc1
 name: Bob Dixon
+given_name: Bob
+family_name: Dixon
+image: https://www.senate.mo.gov/18web/wp-content/uploads/2015/11/Dixon-7-16-15-200x300.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '30'
 links:
 - url: http://www.senate.mo.gov/mem30
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000008
 sources:
 - url: http://www.senate.mo.gov/senators-listing/
 - url: http://www.senate.mo.gov/mem30
-image: https://www.senate.mo.gov/18web/wp-content/uploads/2015/11/Dixon-7-16-15-200x300.jpg
-other_identifiers:
-- identifier: MOL000008
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Dixon

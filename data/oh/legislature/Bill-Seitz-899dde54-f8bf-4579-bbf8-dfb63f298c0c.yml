@@ -1,23 +1,8 @@
 id: ocd-person/899dde54-f8bf-4579-bbf8-dfb63f298c0c
 name: Bill Seitz
-party:
-- name: Republican
-roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-contact_details:
-- note: Capitol Office
-  address: 77 South High Street; 14th Floor; Columbus, OH 43215
-  fax: 614-719-3584
-  voice: 614-466-8258
-links:
-- url: http://www.ohiohouse.gov/bill-seitz
-- url: http://ohiohouse.gov/bill-seitz
-sources:
-- url: http://www.ohiohouse.gov/members/member-directory
-- url: http://ohiohouse.gov/bill-seitz
-image: https://www.legislature.ohio.gov/Assets/HouseMembers/Headshots/Medium/2849.jpg
+given_name: Bill
+family_name: Seitz
+email: rep30@ohiohouse.gov
 biography: A lifelong resident of Western Hamilton County, State Representative Bill
   Seitz has worked to represent the best interests of the Greater Cincinnati area
   at the Statehouse. Known for his colorful floor speeches and legal acumen, in a
@@ -25,13 +10,28 @@ biography: A lifelong resident of Western Hamilton County, State Representative 
   was rated best speechmaker, savviest, funniest, and most knowledgeable and was also
   recognized as second most effective and hardest working. He has put these talents
   to good use on issues that matter to his constituents.
+image: https://www.legislature.ohio.gov/Assets/HouseMembers/Headshots/Medium/2849.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '30'
+contact_details:
+- note: Capitol Office
+  address: 77 South High Street; 14th Floor; Columbus, OH 43215
+  voice: 614-466-8258
+  fax: 614-719-3584
+links:
+- url: http://www.ohiohouse.gov/bill-seitz
+- url: http://ohiohouse.gov/bill-seitz
 other_identifiers:
-- identifier: OHL000008
-  scheme: legacy_openstates
-- identifier: OHL000314
-  scheme: legacy_openstates
-- identifier: OHL000368
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Seitz
-email: rep30@ohiohouse.gov
+- scheme: legacy_openstates
+  identifier: OHL000008
+- scheme: legacy_openstates
+  identifier: OHL000314
+- scheme: legacy_openstates
+  identifier: OHL000368
+sources:
+- url: http://www.ohiohouse.gov/members/member-directory
+- url: http://ohiohouse.gov/bill-seitz

@@ -1,11 +1,15 @@
 id: ocd-person/9b9e51a1-a136-44d3-af3b-1e91e09df335
 name: John Autry
+given_name: John
+family_name: Autry
+email: John.Autry@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/710/High
 party:
 - name: Democratic
 roles:
-- district: '100'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '100'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 1019;Raleigh, NC 27601-1096
@@ -14,16 +18,12 @@ contact_details:
   address: PO Box 189113;Charlotte, NC 28218
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/710
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000368
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/710
-image: https://www.ncleg.gov/Members/MemberImage/H/710/High
 extras:
   counties:
   - Mecklenburg
   notice: null
-other_identifiers:
-- identifier: NCL000368
-  scheme: legacy_openstates
-given_name: John
-family_name: Autry
-email: John.Autry@ncleg.gov

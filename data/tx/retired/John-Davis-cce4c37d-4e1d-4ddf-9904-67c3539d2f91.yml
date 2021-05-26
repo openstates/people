@@ -2,21 +2,21 @@ id: ocd-person/cce4c37d-4e1d-4ddf-9904-67c3539d2f91
 name: John Davis
 given_name: John
 family_name: Davis
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2620.jpg
 party:
 - name: Republican
 roles:
-- district: '129'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2620.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '129'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2620
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000243
+- scheme: legacy_openstates
+  identifier: TXL000061
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2620
-other_identifiers:
-- identifier: TXL000243
-  scheme: legacy_openstates
-- identifier: TXL000061
-  scheme: legacy_openstates

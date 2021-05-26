@@ -1,11 +1,15 @@
 id: ocd-person/7215ab68-1bac-4cef-9b64-c2601904acca
 name: Sharon Brown
+given_name: Sharon
+family_name: Brown
+email: sharon.brown@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/brown.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '8'
 contact_details:
 - note: Capitol Office
   address: 202 Irv Newhouse Building;PO Box 40408;Olympia, WA 98504
@@ -13,12 +17,8 @@ contact_details:
 links:
 - url: http://SharonBrown.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000192
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/brown.jpg
-other_identifiers:
-- identifier: WAL000192
-  scheme: legacy_openstates
-given_name: Sharon
-family_name: Brown
-email: sharon.brown@leg.wa.gov

@@ -2,19 +2,19 @@ id: ocd-person/3d301c6c-a154-45d6-914f-bb72ba2d098a
 name: Joanne Verger
 given_name: Joanne
 family_name: Verger
+image: http://www.leg.state.or.us/verger/member_photo.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.leg.state.or.us/verger/member_photo.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '5'
 links:
 - url: http://www.leg.state.or.us/verger
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000028
 sources:
 - url: http://www.leg.state.or.us/xml/members.xml
-other_identifiers:
-- identifier: ORL000028
-  scheme: legacy_openstates

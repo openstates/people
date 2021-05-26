@@ -2,22 +2,22 @@ id: ocd-person/bb8c047c-771b-416e-9ac4-861eee44544a
 name: Nick Kotik
 given_name: Nick
 family_name: Kotik
+image: http://www.legis.state.pa.us/images/members/200/1005.jpg
 party:
 - name: Democratic
 roles:
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2016-12-31'
-image: http://www.legis.state.pa.us/images/members/200/1005.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '45'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1005
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000148
+- scheme: legacy_openstates
+  identifier: PAL000372
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1005
-other_identifiers:
-- identifier: PAL000148
-  scheme: legacy_openstates
-- identifier: PAL000372
-  scheme: legacy_openstates

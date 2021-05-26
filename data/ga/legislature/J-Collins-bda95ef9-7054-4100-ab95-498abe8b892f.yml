@@ -1,11 +1,15 @@
 id: ocd-person/bda95ef9-7054-4100-ab95-498abe8b892f
 name: J Collins
+given_name: J
+family_name: Collins
+email: j.collins@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/collins-j-4892.jpg
 party:
 - name: Republican
 roles:
-- district: '68'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '68'
 contact_details:
 - note: Capitol Office
   address: 408-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4892&Session=27
 - url: https://www.legis.ga.gov/members/house/4892?session=1029
+other_names:
+- name: J. Collins
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000470
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4892&Session=27
 - url: https://www.legis.ga.gov/members/house/4892?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/collins-j-4892.jpg
-family_name: Collins
-given_name: J
 extras:
   guid: 4892
   city: Villa Rica
   georgia_id: 4892
   residence: Villa Rica
-other_identifiers:
-- identifier: GAL000470
-  scheme: legacy_openstates
-other_names:
-- name: J. Collins
-email: j.collins@house.ga.gov

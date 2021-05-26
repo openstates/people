@@ -1,20 +1,23 @@
 id: ocd-person/2909c23f-975c-4b3f-b04f-55d1e36eb8c3
 name: Marti Halverson
+given_name: Marti
+family_name: Halverson
+birth_date: 1949-10-06
+image: http://wyoleg.gov/LegislatorSummary/Photos/HalversonH22.jpg
 party:
 - name: Republican
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: lower
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '22'
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/1986
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000100
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/1986
-image: http://wyoleg.gov/LegislatorSummary/Photos/HalversonH22.jpg
-birth_date: '1949-10-06'
-given_name: Marti
-family_name: Halverson
 extras:
   civic_organizations:
   - orgname: American Legion Auxiliary
@@ -28,6 +31,3 @@ extras:
   religion: Episcopalian
   spouse_given_name: null
   wy_leg_id: 1986
-other_identifiers:
-- identifier: WYL000100
-  scheme: legacy_openstates

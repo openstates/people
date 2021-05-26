@@ -2,19 +2,19 @@ id: ocd-person/bb9a0abc-42f0-48f9-8823-13b8b8753a8b
 name: Robert Cowles
 given_name: Robert
 family_name: Cowles
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/sen02.jpeg
 party:
 - name: Republican
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/sen02.jpeg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '2'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=2&h=S
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000318
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=2&h=S
-other_identifiers:
-- identifier: WIL000318
-  scheme: legacy_openstates

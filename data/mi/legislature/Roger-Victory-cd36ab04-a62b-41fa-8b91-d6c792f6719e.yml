@@ -1,15 +1,19 @@
 id: ocd-person/cd36ab04-a62b-41fa-8b91-d6c792f6719e
 name: Roger Victory
+given_name: Roger
+family_name: Victory
+email: SenRVictory@senate.michigan.gov
+image: https://senate.michigan.gov/_images/30th.jpg
 party:
 - name: Republican
 roles:
-- district: '88'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '30'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '88'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '30'
 contact_details:
 - note: Capitol Office
   address: 4100 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-2751
 links:
 - url: https://www.senatorrogervictory.com/
-- note: Contact
-  url: https://www.senatorrogervictory.com/contact
+- url: https://www.senatorrogervictory.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000239
 sources:
 - url: https://www.senatorrogervictory.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-image: https://senate.michigan.gov/_images/30th.jpg
-other_identifiers:
-- identifier: MIL000239
-  scheme: legacy_openstates
-given_name: Roger
-family_name: Victory
-email: SenRVictory@senate.michigan.gov

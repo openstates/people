@@ -1,26 +1,26 @@
 id: ocd-person/f8593ecf-bd23-47b9-92e4-ae6910979e00
 name: Mike Shower
+given_name: Mike
+family_name: Shower
+email: Senator.Mike.Shower@akleg.gov
+image: http://akleg.gov/images/legislators/sho.jpg
 party:
 - name: Republican
 roles:
-- district: E
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: upper
-links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=sho
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=sho
+  district: E
 contact_details:
 - note: Capitol Office
   address: State Capitol Room 510; Juneau AK, 99801
   voice: 907-465-6600
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=sho
+- url: http://www.akleg.gov/basis/Member/Detail/32?code=sho
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000196
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
 - url: http://w3.akleg.gov/
-image: http://akleg.gov/images/legislators/sho.jpg
-other_identifiers:
-- identifier: AKL000196
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Shower
-email: Senator.Mike.Shower@akleg.gov

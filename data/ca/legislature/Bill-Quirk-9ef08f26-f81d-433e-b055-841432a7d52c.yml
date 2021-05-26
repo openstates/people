@@ -1,11 +1,15 @@
 id: ocd-person/9ef08f26-f81d-433e-b055-841432a7d52c
 name: Bill Quirk
+given_name: Bill
+family_name: Quirk
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad20.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0020
@@ -15,14 +19,10 @@ contact_details:
   voice: 510-583-8818
 links:
 - url: https://a20.asmdc.org
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD20&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD20&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000401
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad20.jpg
-other_identifiers:
-- identifier: CAL000401
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Quirk
-gender: Male

@@ -1,11 +1,15 @@
 id: ocd-person/e04bd985-5b75-4551-84a1-f9797ac495d2
 name: Rhonda Burnough
+given_name: Rhonda
+family_name: Burnough
+email: rhonda.burnough@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/burnough-rhonda-4895.jpg
 party:
 - name: Democratic
 roles:
-- district: '77'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '77'
 contact_details:
 - note: Capitol Office
   address: 409-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4895&Session=27
 - url: https://www.legis.ga.gov/members/house/4895?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000451
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4895&Session=27
 - url: https://www.legis.ga.gov/members/house/4895?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/burnough-rhonda-4895.jpg
-family_name: Burnough
-given_name: Rhonda
 extras:
   guid: 4895
   city: Riverdale
   georgia_id: 4895
   residence: Riverdale
-other_identifiers:
-- identifier: GAL000451
-  scheme: legacy_openstates
-email: rhonda.burnough@house.ga.gov

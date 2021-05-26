@@ -1,15 +1,19 @@
 id: ocd-person/4fa99fea-71fd-4f21-9f75-157e6a946c80
 name: Lana Theis
+given_name: Lana
+family_name: Theis
+email: LanaTheis@house.mi.gov
+image: https://senate.michigan.gov/_images/22nd.jpg
 party:
 - name: Republican
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '22'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '42'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '22'
 contact_details:
 - note: Capitol Office
   address: 7400 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-2764
 links:
 - url: https://www.senatorlanatheis.com/
-- note: Contact
-  url: https://www.senatorlanatheis.com/contact
+- url: https://www.senatorlanatheis.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000297
 sources:
 - url: https://www.senatorlanatheis.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-image: https://senate.michigan.gov/_images/22nd.jpg
-other_identifiers:
-- identifier: MIL000297
-  scheme: legacy_openstates
-given_name: Lana
-family_name: Theis
-email: LanaTheis@house.mi.gov

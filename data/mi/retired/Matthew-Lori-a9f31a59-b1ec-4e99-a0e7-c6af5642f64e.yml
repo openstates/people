@@ -2,23 +2,23 @@ id: ocd-person/a9f31a59-b1ec-4e99-a0e7-c6af5642f64e
 name: Matthew Lori
 given_name: Matt
 family_name: Lori
+image: http://gophouse.org/wp-content/uploads/2013/02/59.jpg
 party:
 - name: Republican
 roles:
-- district: '59'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/59.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '59'
 links:
 - url: http://repLori.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000097
+- scheme: legacy_openstates
+  identifier: MIL000171
+- scheme: legacy_openstates
+  identifier: MIL000223
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000097
-  scheme: legacy_openstates
-- identifier: MIL000171
-  scheme: legacy_openstates
-- identifier: MIL000223
-  scheme: legacy_openstates

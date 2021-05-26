@@ -1,11 +1,15 @@
 id: ocd-person/27c957dd-86a1-4bbe-9007-f4ebf931a795
 name: Anthony Rendon
+given_name: Anthony
+family_name: Rendon
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad63-rendon_0.jpg
 party:
 - name: Democratic
 roles:
-- district: '63'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '63'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0063
@@ -15,14 +19,10 @@ contact_details:
   voice: 562-529-3250
 links:
 - url: https://speaker.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD63&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD63&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000403
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad63-rendon_0.jpg
-other_identifiers:
-- identifier: CAL000403
-  scheme: legacy_openstates
-given_name: Anthony
-family_name: Rendon
-gender: Male

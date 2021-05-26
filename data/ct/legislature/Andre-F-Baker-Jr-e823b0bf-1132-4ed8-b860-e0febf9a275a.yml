@@ -1,11 +1,14 @@
 id: ocd-person/e823b0bf-1132-4ed8-b860-e0febf9a275a
 name: Andre F. Baker Jr.
+given_name: Andre
+family_name: Baker
+email: Andre.Baker@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '124'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '124'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4037;Hartford, CT 06106
@@ -15,15 +18,12 @@ contact_details:
   voice: 203-334-3876
 links:
 - url: http://www.housedems.ct.gov/Baker
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000267
-  scheme: legacy_openstates
-- identifier: CTL000304
-  scheme: legacy_openstates
-given_name: Andre
-family_name: Baker
-email: Andre.Baker@cga.ct.gov
 other_names:
 - name: Baker, Andre F.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000267
+- scheme: legacy_openstates
+  identifier: CTL000304
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

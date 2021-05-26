@@ -1,15 +1,19 @@
 id: ocd-person/b002bdd1-0622-4462-8623-e8bb52fde504
 name: Clarence K. Lam
+given_name: Clarence
+family_name: Lam
+email: clarence.lam@senate.state.md.us
+image: http://mgaleg.maryland.gov/2020RS/images/lam02.jpg
 party:
 - name: Democratic
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+- end_date: '2019-01-08'
   type: lower
-  end_date: '2019-01-08'
-- district: '12'
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
-  type: upper
+  district: '12'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: 420 Miller Senate Office Building;11 Bladen Street;Annapolis, MD 21401
@@ -17,13 +21,9 @@ contact_details:
 links:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=lam02&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/lam02
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MDL000643
 sources:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=lam02&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/lam02
-image: http://mgaleg.maryland.gov/2020RS/images/lam02.jpg
-other_identifiers:
-- identifier: MDL000643
-  scheme: legacy_openstates
-given_name: Clarence
-family_name: Lam
-email: clarence.lam@senate.state.md.us

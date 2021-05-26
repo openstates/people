@@ -1,17 +1,27 @@
 id: ocd-person/af3ed77d-a223-4f63-b4ca-5e02b457ba10
 name: Lee B. Perry
+given_name: Lee
+family_name: Perry
+email: leeperry@le.utah.gov
+image: https://le.utah.gov/images/legislator/PERRYLB.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '29'
 links:
 - url: http://house.utah.gov/rep/PERRYLB
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000083
+- scheme: legacy_openstates
+  identifier: UTL000126
+- scheme: legacy_openstates
+  identifier: UTL000233
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/PERRYLB.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIPERRYLB1.pdf
@@ -21,13 +31,3 @@ extras:
   - http://le.utah.gov/house2/CofI/lperry.pdf
   - http://le.utah.gov/house2/CofI/PERRYLB.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409463
-other_identifiers:
-- identifier: UTL000083
-  scheme: legacy_openstates
-- identifier: UTL000126
-  scheme: legacy_openstates
-- identifier: UTL000233
-  scheme: legacy_openstates
-given_name: Lee
-family_name: Perry
-email: leeperry@le.utah.gov

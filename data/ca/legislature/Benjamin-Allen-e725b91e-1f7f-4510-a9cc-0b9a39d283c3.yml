@@ -1,11 +1,15 @@
 id: ocd-person/e725b91e-1f7f-4510-a9cc-0b9a39d283c3
 name: Benjamin Allen
+given_name: Benjamin
+family_name: Allen
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/ben-allen.jpg
 party:
 - name: Democratic
 roles:
-- district: '26'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '26'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4076, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 310-318-6994
 links:
 - url: https://senate.ca.gov/sd26
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD26&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD26&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000490
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/ben-allen.jpg
-other_identifiers:
-- identifier: CAL000490
-  scheme: legacy_openstates
-given_name: Benjamin
-family_name: Allen
-gender: Male

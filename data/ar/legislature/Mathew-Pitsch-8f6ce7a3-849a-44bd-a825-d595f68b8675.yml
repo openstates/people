@@ -1,16 +1,20 @@
 id: ocd-person/8f6ce7a3-849a-44bd-a825-d595f68b8675
 name: Mathew Pitsch
+given_name: Mathew
+family_name: Pitsch
+email: mathew.pitsch@senate.ar.gov
+image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/573_sm.jpg
 party:
 - name: Republican
 roles:
-- district: '76'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2014-12-31
-- district: '8'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: upper
+  district: '76'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '8'
 contact_details:
 - note: District Office
   address: 6908 Hunter Crossing Drive, Fort Smith, AR 72916
@@ -18,21 +22,17 @@ contact_details:
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Pitsch&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Pitsch&ddBienniumSession=2021%2F2021R
+other_names:
+- name: M. Pitsch
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000332
+- scheme: legacy_openstates
+  identifier: ARL000333
+- scheme: openstates
+  identifier: ocd-person/6a8350de-2c25-47f6-a476-8cf5d1da4578
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Pitsch&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Pitsch&ddBienniumSession=2021%2F2021R
-image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/573_sm.jpg
-other_identifiers:
-- identifier: ARL000332
-  scheme: legacy_openstates
-- identifier: ARL000333
-  scheme: legacy_openstates
-- identifier: ocd-person/6a8350de-2c25-47f6-a476-8cf5d1da4578
-  scheme: openstates
 extras:
   occupation: Engineer / Business Owner
-given_name: Mathew
-family_name: Pitsch
-email: mathew.pitsch@senate.ar.gov
-other_names:
-- name: M. Pitsch

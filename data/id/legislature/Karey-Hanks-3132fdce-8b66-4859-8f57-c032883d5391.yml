@@ -1,16 +1,20 @@
 id: ocd-person/3132fdce-8b66-4859-8f57-c032883d5391
 name: Karey Hanks
+given_name: Karey
+family_name: Hanks
+email: KHanks@house.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Hanks4274.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+- end_date: '2018-11-30'
   type: lower
-  end_date: '2018-11-30'
-- district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '35'
+- start_date: 2020-12-01
   type: lower
-  start_date: 2020-12-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '35'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1179
@@ -18,12 +22,8 @@ contact_details:
   address: 463 N. 1800 E., St. Anthony, ID, 83445
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=35
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000313
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Hanks4274.jpg
-other_identifiers:
-- identifier: IDL000313
-  scheme: legacy_openstates
-given_name: Karey
-family_name: Hanks
-email: KHanks@house.idaho.gov

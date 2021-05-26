@@ -1,11 +1,15 @@
 id: ocd-person/4871dab1-570b-48ac-be4f-fd523c5c24fd
 name: Chris McDaniel
+given_name: Chris
+family_name: McDaniel
+email: cmcdaniel@senate.ms.gov
+image: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.jpg
 party:
 - name: Republican
 roles:
-- district: '42'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
+  district: '42'
 contact_details:
 - note: Capitol Office
   address: Room 404;P. O. Box 1018;Jackson, MS 39215
@@ -15,9 +19,11 @@ contact_details:
   voice: 601-477-2291
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000042
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.xml
-image: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.jpg
 extras:
   org_info: Senator McDaniel is a member of the Gideons International, Mississippi
     Leadership Forum, Mississippi Economic Council, Association for Excellence in
@@ -26,9 +32,3 @@ extras:
     Fifth Federal Circuit Bar Association, the Hundred Club of Jones County, Federalist
     Society, Mississippi Bar, Rotary Club, Exchange, Hundred Club and Mississippi
     Leadership Forum.
-other_identifiers:
-- identifier: MSL000042
-  scheme: legacy_openstates
-given_name: Chris
-family_name: McDaniel
-email: cmcdaniel@senate.ms.gov

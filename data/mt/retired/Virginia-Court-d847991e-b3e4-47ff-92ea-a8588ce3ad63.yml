@@ -1,22 +1,22 @@
 id: ocd-person/d847991e-b3e4-47ff-92ea-a8588ce3ad63
 name: Virginia Court
+given_name: Virginia
+family_name: Court
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '50'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4792
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4792
+  note: legislator page
 other_identifiers:
-- identifier: MTL000068
-  scheme: legacy_openstates
-- identifier: MTL000271
-  scheme: legacy_openstates
-given_name: Virginia
-family_name: Court
+- scheme: legacy_openstates
+  identifier: MTL000068
+- scheme: legacy_openstates
+  identifier: MTL000271
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

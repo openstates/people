@@ -1,22 +1,22 @@
 id: ocd-person/053b5471-c0c3-46e4-87ef-9addbb5550f3
 name: Jeff Essmann
+given_name: Jeff
+family_name: Essmann
 party:
 - name: Republican
 roles:
-- district: '54'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '54'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4796
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4796
+  note: legislator page
 other_identifiers:
-- identifier: MTL000012
-  scheme: legacy_openstates
-- identifier: MTL000263
-  scheme: legacy_openstates
-given_name: Jeff
-family_name: Essmann
+- scheme: legacy_openstates
+  identifier: MTL000012
+- scheme: legacy_openstates
+  identifier: MTL000263
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

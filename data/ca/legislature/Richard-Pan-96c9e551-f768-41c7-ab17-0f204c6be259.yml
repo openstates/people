@@ -1,11 +1,15 @@
 id: ocd-person/96c9e551-f768-41c7-ab17-0f204c6be259
 name: Richard Pan
+given_name: Richard
+family_name: Pan
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/pan-richard.jpg
 party:
 - name: Democratic
 roles:
-- district: '6'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 5114, Sacramento, CA 95814-4900
@@ -15,20 +19,16 @@ contact_details:
   voice: 916-262-2904
 links:
 - url: http://senate.ca.gov/sd06
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD06&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD06&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000149
+- scheme: legacy_openstates
+  identifier: CAL000277
+- scheme: legacy_openstates
+  identifier: CAL000396
+- scheme: legacy_openstates
+  identifier: CAL000474
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/pan-richard.jpg
-other_identifiers:
-- identifier: CAL000149
-  scheme: legacy_openstates
-- identifier: CAL000277
-  scheme: legacy_openstates
-- identifier: CAL000396
-  scheme: legacy_openstates
-- identifier: CAL000474
-  scheme: legacy_openstates
-given_name: Richard
-family_name: Pan
-gender: Male

@@ -2,30 +2,30 @@ id: ocd-person/1b45e33f-b8aa-4182-9fc5-af3d0e56a685
 name: Tara Mack
 given_name: Tara
 family_name: Mack
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls89/tn_57A.jpg
 party:
 - name: Republican
 roles:
-- district: 37A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: 57A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 37A
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls89/tn_57A.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 57A
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15308
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000305
+- scheme: legacy_openstates
+  identifier: MNL000140
+- scheme: legacy_openstates
+  identifier: MNL000439
+- scheme: legacy_openstates
+  identifier: MNL000614
 sources:
 - url: http://www.house.leg.state.mn.us/members/hmem.asp
-other_identifiers:
-- identifier: MNL000305
-  scheme: legacy_openstates
-- identifier: MNL000140
-  scheme: legacy_openstates
-- identifier: MNL000439
-  scheme: legacy_openstates
-- identifier: MNL000614
-  scheme: legacy_openstates

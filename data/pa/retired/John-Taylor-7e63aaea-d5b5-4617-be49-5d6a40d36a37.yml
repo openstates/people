@@ -1,25 +1,25 @@
 id: ocd-person/7e63aaea-d5b5-4617-be49-5d6a40d36a37
 name: John Taylor
+given_name: John
+family_name: Taylor
+image: http://www.legis.state.pa.us/images/members/200/161.jpg
 party:
 - name: Republican
 roles:
-- district: '177'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '177'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000235
+- scheme: legacy_openstates
+  identifier: PAL000420
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=161
-image: http://www.legis.state.pa.us/images/members/200/161.jpg
 extras:
   facebook: https://facebook.com/RepTaylor
   youtube: https://youtube.com/RepJohnTaylor
-other_identifiers:
-- identifier: PAL000235
-  scheme: legacy_openstates
-- identifier: PAL000420
-  scheme: legacy_openstates
-given_name: John
-family_name: Taylor

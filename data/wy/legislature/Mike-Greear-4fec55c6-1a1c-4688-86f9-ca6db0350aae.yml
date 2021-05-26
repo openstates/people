@@ -1,11 +1,16 @@
 id: ocd-person/4fec55c6-1a1c-4688-86f9-ca6db0350aae
 name: Mike Greear
+given_name: Mike
+family_name: Greear
+email: mike.greear@wyoleg.gov
+birth_date: 1967-03-01
+image: http://wyoleg.gov/LegislatorSummary/Photos/GreearH27.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '27'
 contact_details:
 - note: District Office
   address: P O Box 542, Worland WY 82401
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1961
 - url: http://wyoleg.gov/Legislators/2021/R/1961
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000055
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1961
 - url: http://wyoleg.gov/Legislators/2021/R/1961
-image: http://wyoleg.gov/LegislatorSummary/Photos/GreearH27.jpg
-birth_date: '1967-03-01'
-given_name: Mike
-family_name: Greear
 extras:
   county: Big Horn, Washakie
   number_children: ''
@@ -30,7 +34,3 @@ extras:
   wy_leg_id: 1961
   civic_organizations:
   - orgname: Rotary
-other_identifiers:
-- identifier: WYL000055
-  scheme: legacy_openstates
-email: mike.greear@wyoleg.gov

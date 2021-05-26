@@ -1,22 +1,22 @@
 id: ocd-person/ea5497d0-5a3b-4dcc-9d13-5d50a586cf2b
 name: Stephanie Thomas
+given_name: Stephanie
+family_name: Thomas
 email: Stephanie.Thomas@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '143'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '143'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/Thomas
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Stephanie
-family_name: Thomas
 other_names:
 - name: Thomas, Stephanie
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

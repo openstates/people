@@ -2,21 +2,21 @@ id: ocd-person/066f2f94-f051-43f4-9b16-6cad53fc2cc8
 name: Troy Balderson
 given_name: Troy
 family_name: Balderson
+image: http://www.ohiosenate.gov/Assets/Headshots/Small/20.jpg
 party:
 - name: Republican
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.ohiosenate.gov/Assets/Headshots/Small/20.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '20'
 links:
 - url: http://www.ohiosenate.gov/balderson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000127
+- scheme: legacy_openstates
+  identifier: OHL000138
 sources:
 - url: http://www.ohiosenate.gov/members/senate-directory
-other_identifiers:
-- identifier: OHL000127
-  scheme: legacy_openstates
-- identifier: OHL000138
-  scheme: legacy_openstates

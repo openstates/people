@@ -1,23 +1,23 @@
 id: ocd-person/9ee818c7-c13a-40cf-ad17-5e54fab6f538
 name: Warren Love
+given_name: Warren
+family_name: Love
+email: Warren.Love@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '125'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '125'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=125
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000294
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=125
 extras:
   first_name: Warren
   last_name: Love
-other_identifiers:
-- identifier: MOL000294
-  scheme: legacy_openstates
-given_name: Warren
-family_name: Love
-email: Warren.Love@house.mo.gov

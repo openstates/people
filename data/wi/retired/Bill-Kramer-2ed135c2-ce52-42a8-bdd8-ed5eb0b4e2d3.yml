@@ -2,19 +2,19 @@ id: ocd-person/2ed135c2-ce52-42a8-bdd8-ed5eb0b4e2d3
 name: Bill Kramer
 given_name: Bill
 family_name: Kramer
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm97.jpeg
 party:
 - name: Republican
 roles:
-- district: '97'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm97.jpeg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '97'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=97&h=A
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000385
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=97&h=A
-other_identifiers:
-- identifier: WIL000385
-  scheme: legacy_openstates

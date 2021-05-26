@@ -1,11 +1,15 @@
 id: ocd-person/c34f492a-7cdf-4830-a28a-0ff2fe7c8f71
 name: Ann Cummings
+given_name: Ann
+family_name: Cummings
+email: acummings@leg.state.vt.us
+image: https://legislature.vermont.gov/Documents/Legislators/Cummings.Ann.jpg
 party:
 - name: Democratic
 roles:
-- district: Washington
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: upper
+  district: Washington
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14604
 - url: http://legislature.vermont.gov/people/single/2022/14604
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000008
+- scheme: legacy_openstates
+  identifier: VTL000426
+- scheme: legacy_openstates
+  identifier: VTL000541
+- scheme: legacy_openstates
+  identifier: VTL000563
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14604
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14604
-image: https://legislature.vermont.gov/Documents/Legislators/Cummings.Ann.jpg
-other_identifiers:
-- identifier: VTL000008
-  scheme: legacy_openstates
-- identifier: VTL000426
-  scheme: legacy_openstates
-- identifier: VTL000541
-  scheme: legacy_openstates
-- identifier: VTL000563
-  scheme: legacy_openstates
-given_name: Ann
-family_name: Cummings
-email: acummings@leg.state.vt.us

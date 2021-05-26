@@ -1,15 +1,19 @@
 id: ocd-person/881d96f8-71ee-4c6c-a3e2-62ab285d3ebc
 name: Zach Nunn
+given_name: Zach
+family_name: Nunn
+email: zach.nunn@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=14803
 party:
 - name: Republican
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '15'
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '30'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '15'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -18,13 +22,9 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14803
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14803
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000509
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14803
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14803
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=14803
-other_identifiers:
-- identifier: IAL000509
-  scheme: legacy_openstates
-given_name: Zach
-family_name: Nunn
-email: zach.nunn@legis.iowa.gov

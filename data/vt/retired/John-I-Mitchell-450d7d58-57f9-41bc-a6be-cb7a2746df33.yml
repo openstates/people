@@ -3,19 +3,19 @@ name: John I. Mitchell
 given_name: John
 family_name: Mitchell
 middle_name: I
+image: http://ballotpedia.org/wiki/images/d/dc/John_Mitchell.png
 party:
 - name: Republican
 roles:
-- district: Franklin-2
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://ballotpedia.org/wiki/images/d/dc/John_Mitchell.png
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Franklin-2
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000288
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000288
-  scheme: legacy_openstates

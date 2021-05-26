@@ -1,23 +1,23 @@
 id: ocd-person/3f529d4b-d116-43c5-9126-f78cf8f065d2
 name: Gina Mitten
+given_name: Gina
+family_name: Mitten
+email: Gina.Mitten@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '83'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '83'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=83
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000310
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=83
 extras:
   first_name: Gina
   last_name: Mitten
-other_identifiers:
-- identifier: MOL000310
-  scheme: legacy_openstates
-given_name: Gina
-family_name: Mitten
-email: Gina.Mitten@house.mo.gov

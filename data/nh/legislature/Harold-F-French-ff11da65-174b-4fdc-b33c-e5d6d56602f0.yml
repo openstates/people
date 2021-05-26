@@ -1,16 +1,20 @@
 id: ocd-person/ff11da65-174b-4fdc-b33c-e5d6d56602f0
 name: Harold F. French
+given_name: Harold F.
+family_name: French
+email: Harold.French@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/Senate/images/senators/07.jpg
 party:
 - name: Republican
 roles:
-- district: Merrimack 2
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '7'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
+  district: Merrimack 2
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: State House, Room 107;107 North Main Street;Concord, NH 03301
@@ -18,22 +22,18 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001442
+- scheme: legacy_openstates
+  identifier: NHL001120
+- scheme: openstates
+  identifier: ocd-person/f1064c53-331e-4fea-a8b9-05ca2077bc67
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district07.aspx
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/Senate/images/senators/07.jpg
 extras:
   first_name: Harold
   last_name: French
   middle_name: F.
-other_identifiers:
-- identifier: NHL001442
-  scheme: legacy_openstates
-- identifier: NHL001120
-  scheme: legacy_openstates
-- identifier: ocd-person/f1064c53-331e-4fea-a8b9-05ca2077bc67
-  scheme: openstates
-given_name: Harold F.
-family_name: French
-email: Harold.French@leg.state.nh.us

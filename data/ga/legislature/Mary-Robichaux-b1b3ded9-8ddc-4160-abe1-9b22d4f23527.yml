@@ -1,11 +1,15 @@
 id: ocd-person/b1b3ded9-8ddc-4160-abe1-9b22d4f23527
 name: Mary Robichaux
+given_name: Mary
+family_name: Robichaux
+email: mary.robichaux@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/robichaux-mary-4940.jpg
 party:
 - name: Democratic
 roles:
-- district: '48'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '48'
 contact_details:
 - note: Capitol Office
   address: 507-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -19,12 +23,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4940&Session=27
 - url: https://www.legis.ga.gov/members/house/4940?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/robichaux-mary-4940.jpg
-family_name: Robichaux
-given_name: Mary
 extras:
   guid: 4940
   city: Roswell
   georgia_id: 4940
   residence: Roswell
-email: mary.robichaux@house.ga.gov

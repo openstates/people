@@ -1,17 +1,24 @@
 id: ocd-person/f7d7aac9-a3fd-4773-ac60-f66bb8d0211c
 name: Edward H. Redd
+given_name: Edward
+family_name: Redd
+image: https://le.utah.gov/images/legislator/REDDEH.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '4'
 links:
 - url: http://house.utah.gov/rep/REDDEH
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000121
+- scheme: legacy_openstates
+  identifier: UTL000180
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/REDDEH.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIREDDEH1.pdf
@@ -21,10 +28,3 @@ extras:
   - http://le.utah.gov/house2/CofI/eredd.pdf
   - http://le.utah.gov/house2/CofI/REDDEH.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411492
-other_identifiers:
-- identifier: UTL000121
-  scheme: legacy_openstates
-- identifier: UTL000180
-  scheme: legacy_openstates
-given_name: Edward
-family_name: Redd

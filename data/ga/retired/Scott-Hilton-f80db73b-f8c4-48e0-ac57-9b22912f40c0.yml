@@ -1,22 +1,22 @@
 id: ocd-person/f80db73b-f8c4-48e0-ac57-9b22912f40c0
 name: Scott Hilton
+given_name: Scott
+family_name: Hilton
+image: http://www.house.ga.gov/SiteCollectionImages/HiltonScott4899.jpg
 party:
 - name: Republican
 roles:
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '95'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4899&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000449
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4899&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/HiltonScott4899.jpg
-family_name: Hilton
-given_name: Scott
 extras:
   guid: 4899
-other_identifiers:
-- identifier: GAL000449
-  scheme: legacy_openstates

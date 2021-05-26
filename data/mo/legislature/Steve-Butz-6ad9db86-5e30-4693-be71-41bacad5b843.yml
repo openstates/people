@@ -1,19 +1,25 @@
 id: ocd-person/6ad9db86-5e30-4693-be71-41bacad5b843
 name: Steve Butz
+given_name: Steve
+family_name: Butz
+email: Steve.Butz@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2061
 party:
 - name: Democratic
 roles:
-- district: '81'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '81'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 106-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 106-B; Jefferson
+    City MO 65101
   voice: 573-751-0438
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=81
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=081
+other_names:
+- name: Butz, Steve
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=81
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Steve
   last_name: Butz
-email: Steve.Butz@house.mo.gov
-family_name: Butz
-image: https://house.mo.gov/MemberPhoto.aspx?id=2061
-given_name: Steve
-other_names:
-- name: Butz, Steve

@@ -1,11 +1,15 @@
 id: ocd-person/b37913d2-9f6e-4f1c-b6c8-7a19863be463
 name: Tracey T. Rosebud
+given_name: Tracey T.
+family_name: Rosebud
+email: trosebud@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/rosebud.jpg
 party:
 - name: Democratic
 roles:
-- district: '30'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '30'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -13,14 +17,10 @@ contact_details:
   address: P.O. Box 236;Tutwiler, MS 38963
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/rosebud.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000304
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/rosebud.xml
-image: http://billstatus.ls.state.ms.us/members/house/rosebud.jpg
 extras:
   org_info: ''
-other_identifiers:
-- identifier: MSL000304
-  scheme: legacy_openstates
-given_name: Tracey T.
-family_name: Rosebud
-email: trosebud@house.ms.gov

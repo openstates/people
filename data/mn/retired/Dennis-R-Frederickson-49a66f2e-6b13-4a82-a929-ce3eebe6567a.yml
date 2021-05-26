@@ -6,13 +6,13 @@ middle_name: R
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '21'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000018
 sources:
 - url: http://www.senate.leg.state.mn.us/members/member_list.php
-other_identifiers:
-- identifier: MNL000018
-  scheme: legacy_openstates

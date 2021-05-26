@@ -1,11 +1,15 @@
 id: ocd-person/f516d40a-3676-4437-8285-a931d7c2885b
 name: John Reagan
+given_name: John
+family_name: Reagan
+email: John.Reagan111@gmail.com
+image: http://www.gencourt.state.nh.us/Senate/images/senators/17.jpg
 party:
 - name: Republican
 roles:
-- district: '17'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
+  district: '17'
 contact_details:
 - note: Capitol Office
   address: State House, Room 107;107 North Main Street;Concord, NH 03301
@@ -13,18 +17,14 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001423
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district17.aspx
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/Senate/images/senators/17.jpg
 extras:
   first_name: John
   last_name: Reagan
   middle_name: ''
-other_identifiers:
-- identifier: NHL001423
-  scheme: legacy_openstates
-given_name: John
-family_name: Reagan
-email: John.Reagan111@gmail.com

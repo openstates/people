@@ -1,22 +1,22 @@
 id: ocd-person/42d3fcb2-14c1-423d-b589-72f2c3fb48e8
 name: Earl Ehrhart
+given_name: Earl
+family_name: Ehrhart
+image: http://www.house.ga.gov/SiteCollectionImages/EhrhartEarl97.jpg
 party:
 - name: Republican
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '36'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=97&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000104
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=97&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/EhrhartEarl97.jpg
-family_name: Ehrhart
-given_name: Earl
 extras:
   guid: 97
-other_identifiers:
-- identifier: GAL000104
-  scheme: legacy_openstates

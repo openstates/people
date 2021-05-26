@@ -1,18 +1,24 @@
 id: ocd-person/c0ca675d-4bd2-462f-9bcb-b7ac8226dbdf
 name: Karl E. Gillespie
+given_name: Karl
+family_name: Gillespie
 email: Karl.Gillespie@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/771/High
 party:
 - name: Republican
 roles:
-- district: '120'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- start_date: 2021-01-01
   type: lower
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '120'
+contact_details:
+- note: Capitol Office
+  address: 300 N. Salisbury Street, Rm. 633;Raleigh, NC 27603-5925
+  voice: 919-733-5859
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/771
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/771
-image: https://www.ncleg.gov/Members/MemberImage/H/771/High
 extras:
   counties:
   - Cherokee
@@ -20,9 +26,3 @@ extras:
   - Graham
   - Macon
   notice: null
-given_name: Karl
-family_name: Gillespie
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 633;Raleigh, NC 27603-5925
-  voice: 919-733-5859

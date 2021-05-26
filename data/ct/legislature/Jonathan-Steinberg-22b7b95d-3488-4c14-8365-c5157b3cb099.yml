@@ -1,11 +1,14 @@
 id: ocd-person/22b7b95d-3488-4c14-8365-c5157b3cb099
 name: Jonathan Steinberg
+given_name: Jonathan
+family_name: Steinberg
+email: Jonathan.Steinberg@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '136'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '136'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3004;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-226-6749
 links:
 - url: http://www.housedems.ct.gov/Steinberg
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000172
-  scheme: legacy_openstates
-given_name: Jonathan
-family_name: Steinberg
-email: Jonathan.Steinberg@cga.ct.gov
 other_names:
 - name: Steinberg, Jonathan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000172
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

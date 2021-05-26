@@ -1,28 +1,27 @@
 id: ocd-person/1ceaf313-19b1-4928-a200-dcba8c461f06
 name: Randall Friese
+given_name: Randall
+family_name: Friese
+email: rfriese@azleg.gov
+image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/FRIESE.gif
 party:
 - name: Democratic
 roles:
-- district: '9'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
+  district: '9'
+contact_details:
+- note: Capitol Office
+  address: House of Representatives;1700 West Washington;Room 115;Phoenix, AZ 85007
+  voice: 602-926-3138
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1866
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2007
-contact_details:
-- note: Capitol Office
-  address: House of Representatives;1700 West Washington;Room 115;Phoenix, AZ
-    85007
-  voice: 602-926-3138
+ids:
+  twitter: DrRandyFriese
+  facebook: drfriese
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000341
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/FRIESE.gif
-other_identifiers:
-- identifier: AZL000341
-  scheme: legacy_openstates
-given_name: Randall
-family_name: Friese
-ids:
-  facebook: drfriese
-  twitter: DrRandyFriese
-email: rfriese@azleg.gov

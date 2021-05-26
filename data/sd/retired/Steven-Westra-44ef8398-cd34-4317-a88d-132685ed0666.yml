@@ -2,20 +2,20 @@ id: ocd-person/44ef8398-cd34-4317-a88d-132685ed0666
 name: Steven Westra
 given_name: Steven
 family_name: Westra
+image: http://legis.sd.gov/img/Legislators/westraS.jpg
 party:
 - name: Republican
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://legis.sd.gov/img/Legislators/westraS.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '13'
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=508
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000202
 sources:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=508
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=508
-other_identifiers:
-- identifier: SDL000202
-  scheme: legacy_openstates

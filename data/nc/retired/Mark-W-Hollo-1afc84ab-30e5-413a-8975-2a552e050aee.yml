@@ -2,26 +2,26 @@ id: ocd-person/1afc84ab-30e5-413a-8975-2a552e050aee
 name: Mark W. Hollo
 given_name: Mark W.
 family_name: Hollo
+image: http://www.ncga.state.nc.us/House/pictures/hiRes/619.jpg
 party:
 - name: Republican
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '88'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '73'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ncga.state.nc.us/House/pictures/hiRes/619.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '88'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=619
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000210
+- scheme: legacy_openstates
+  identifier: NCL000286
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=619
-other_identifiers:
-- identifier: NCL000210
-  scheme: legacy_openstates
-- identifier: NCL000286
-  scheme: legacy_openstates

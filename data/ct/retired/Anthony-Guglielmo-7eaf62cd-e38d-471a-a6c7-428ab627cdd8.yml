@@ -1,18 +1,18 @@
 id: ocd-person/7eaf62cd-e38d-471a-a6c7-428ab627cdd8
 name: Anthony Guglielmo
+given_name: Anthony
+family_name: Guglielmo
 party:
 - name: Republican
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '35'
 links:
 - url: http://www.ctsenaterepublicans.com/home-guglielmo
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000035
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000035
-  scheme: legacy_openstates
-given_name: Anthony
-family_name: Guglielmo

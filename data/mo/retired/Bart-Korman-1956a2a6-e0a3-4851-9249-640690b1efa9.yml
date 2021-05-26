@@ -1,24 +1,24 @@
 id: ocd-person/1956a2a6-e0a3-4851-9249-640690b1efa9
 name: Bart Korman
+given_name: Bart
+family_name: Korman
 party:
 - name: Republican
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '42'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=42
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000111
+- scheme: legacy_openstates
+  identifier: MOL000287
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=42
 extras:
   first_name: Bart
   last_name: Korman
-other_identifiers:
-- identifier: MOL000111
-  scheme: legacy_openstates
-- identifier: MOL000287
-  scheme: legacy_openstates
-given_name: Bart
-family_name: Korman

@@ -2,20 +2,20 @@ id: ocd-person/2c0c0dcb-f58e-4a0f-a8c8-df26fea9dfc3
 name: John Kriesel
 given_name: John
 family_name: Kriesel
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls87/57A.GIF
 party:
 - name: Republican
 roles:
-- district: 57A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls87/57A.GIF
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 57A
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15354
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000293
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15354
-other_identifiers:
-- identifier: MNL000293
-  scheme: legacy_openstates

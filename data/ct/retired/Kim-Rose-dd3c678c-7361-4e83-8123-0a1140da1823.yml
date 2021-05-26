@@ -1,19 +1,19 @@
 id: ocd-person/dd3c678c-7361-4e83-8123-0a1140da1823
 name: Kim Rose
-party:
-- name: Democratic
-roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: http://housedems.ct.gov/Rose
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000154
-  scheme: legacy_openstates
 given_name: Kim
 family_name: Rose
 email: Kim.Rose@cga.ct.gov
+party:
+- name: Democratic
+roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '118'
+links:
+- url: http://housedems.ct.gov/Rose
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000154
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

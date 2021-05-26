@@ -1,11 +1,15 @@
 id: ocd-person/93878d49-e6b3-4c9e-affc-085ea63b9280
 name: Bob McCaslin
+given_name: Bob
+family_name: McCaslin
+email: bob.mccaslin@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/mccaslin.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '4'
 contact_details:
 - note: Capitol Office
   address: 425 John L. O'Brien Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://houserepublicans.wa.gov/Bob-McCaslin/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: http://BobMcCaslin.houserepublicans.wa.gov/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000218
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/mccaslin.jpg
-other_identifiers:
-- identifier: WAL000218
-  scheme: legacy_openstates
-given_name: Bob
-family_name: McCaslin
-email: bob.mccaslin@leg.wa.gov

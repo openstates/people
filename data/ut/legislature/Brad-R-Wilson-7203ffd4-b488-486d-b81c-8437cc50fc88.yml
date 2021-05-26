@@ -1,20 +1,31 @@
 id: ocd-person/7203ffd4-b488-486d-b81c-8437cc50fc88
 name: Brad R. Wilson
+given_name: Brad
+family_name: Wilson
+email: bradwilson@le.utah.gov
+image: https://le.utah.gov/images/legislator/WILSOBR.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '15'
 contact_details:
 - note: District Office
   address: 350 N STATE ST SUITE 350, SALT LAKE CITY, UT, 84114
   voice: 801-538-1029
 links:
 - url: http://house.utah.gov/rep/WILSOBR
+other_names:
+- name: Wilson, Brad R.
+- name: Wilson, B.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000101
+- scheme: legacy_openstates
+  identifier: UTL000227
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/WILSOBR.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIWILSOBR2.pdf
@@ -30,14 +41,3 @@ extras:
   - http://le.utah.gov/house2/CofI/bwilson.pdf
   - http://le.utah.gov/house2/CofI/WILSOBR.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409581
-other_identifiers:
-- identifier: UTL000101
-  scheme: legacy_openstates
-- identifier: UTL000227
-  scheme: legacy_openstates
-given_name: Brad
-family_name: Wilson
-email: bradwilson@le.utah.gov
-other_names:
-- name: Wilson, Brad R.
-- name: Wilson, B.

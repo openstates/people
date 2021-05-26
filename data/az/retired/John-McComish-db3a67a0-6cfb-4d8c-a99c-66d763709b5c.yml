@@ -2,33 +2,33 @@ id: ocd-person/db3a67a0-6cfb-4d8c-a99c-66d763709b5c
 name: John McComish
 given_name: John
 family_name: McComish
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/MCCOMISH.gif
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
-  start_date: '2011-01-01'
-  end_date: '2012-12-31'
-- district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+  district: '18'
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '20'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/MCCOMISH.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '20'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=102&Legislature=51&Session_ID=110
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000069
+- scheme: legacy_openstates
+  identifier: AZL000115
+- scheme: legacy_openstates
+  identifier: AZL000226
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=S
-other_identifiers:
-- identifier: AZL000069
-  scheme: legacy_openstates
-- identifier: AZL000115
-  scheme: legacy_openstates
-- identifier: AZL000226
-  scheme: legacy_openstates

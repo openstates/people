@@ -2,21 +2,21 @@ id: ocd-person/b8d4e46a-663e-48fb-ac9a-98d86f5d858d
 name: Dale Mallory
 given_name: Dale
 family_name: Mallory
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/32.jpg
 party:
 - name: Democratic
 roles:
-- district: '32'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/32.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '32'
 links:
 - url: http://www.ohiohouse.gov/dale-mallory
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000065
+- scheme: legacy_openstates
+  identifier: OHL000201
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000065
-  scheme: legacy_openstates
-- identifier: OHL000201
-  scheme: legacy_openstates

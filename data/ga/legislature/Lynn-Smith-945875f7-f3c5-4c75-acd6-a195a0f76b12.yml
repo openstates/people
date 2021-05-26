@@ -1,11 +1,15 @@
 id: ocd-person/945875f7-f3c5-4c75-acd6-a195a0f76b12
 name: Lynn Smith
+given_name: Lynn
+family_name: Smith
+email: lynn.smith@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-lynn-212.jpg
 party:
 - name: Republican
 roles:
-- district: '70'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '70'
 contact_details:
 - note: Capitol Office
   address: 228-C State Capitol;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=212&Session=27
 - url: https://www.legis.ga.gov/members/house/212?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000205
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=212&Session=27
 - url: https://www.legis.ga.gov/members/house/212?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-lynn-212.jpg
-family_name: Smith
-given_name: Lynn
 extras:
   guid: 212
   city: Newnan
   georgia_id: 212
   residence: Newnan
-other_identifiers:
-- identifier: GAL000205
-  scheme: legacy_openstates
-email: lynn.smith@house.ga.gov

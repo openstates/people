@@ -1,11 +1,15 @@
 id: ocd-person/c95294d8-1c22-4121-939d-f0f4c7c437f0
 name: Connie M. Leyva
+given_name: Connie
+family_name: Leyva
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator-leyva.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4061, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 909-469-1110
 links:
 - url: https://senate.ca.gov/sd20
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD20&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD20&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000466
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator-leyva.jpg
-other_identifiers:
-- identifier: CAL000466
-  scheme: legacy_openstates
-given_name: Connie
-family_name: Leyva
-gender: Female

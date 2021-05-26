@@ -1,11 +1,15 @@
 id: ocd-person/48567f29-ec70-4ff5-bda5-873f2e42933b
 name: Dan Eubanks
+given_name: Dan
+family_name: Eubanks
+email: deubanks@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/eubanks.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
@@ -14,15 +18,11 @@ contact_details:
   address: PO Box 184;Walls, MS 38680
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/eubanks.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000267
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/eubanks.xml
-image: http://billstatus.ls.state.ms.us/members/house/eubanks.jpg
 extras:
   org_info: Representative Eubanks is affiliated with Desoto Co. Republican Club and
     Desoto Co. Conservative Coalition.
-other_identifiers:
-- identifier: MSL000267
-  scheme: legacy_openstates
-given_name: Dan
-family_name: Eubanks
-email: deubanks@house.ms.gov

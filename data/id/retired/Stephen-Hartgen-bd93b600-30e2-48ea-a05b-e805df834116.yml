@@ -1,37 +1,37 @@
 id: ocd-person/bd93b600-30e2-48ea-a05b-e805df834116
 name: Stephen Hartgen
+given_name: Stephen
+family_name: Hartgen
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2018/directory/Hartgen705.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+- end_date: '2018-11-30'
   type: lower
-  end_date: '2018-11-30'
-- district: '24'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2013-01-01'
+  district: '24'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '24'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '23'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2018&district=24
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=705
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000263
+- scheme: openstates
+  identifier: ocd-person/5c51a969-6fa8-44d9-bb1d-54b27fea15f4
+- scheme: legacy_openstates
+  identifier: IDL000064
+- scheme: legacy_openstates
+  identifier: IDL000156
 sources:
 - url: https://legislature.idaho.gov/house/membership/
 - url: http://legislature.idaho.gov/house/membership.cfm
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2018/directory/Hartgen705.jpg
-other_identifiers:
-- identifier: IDL000263
-  scheme: legacy_openstates
-- identifier: ocd-person/5c51a969-6fa8-44d9-bb1d-54b27fea15f4
-  scheme: openstates
-- identifier: IDL000064
-  scheme: legacy_openstates
-- identifier: IDL000156
-  scheme: legacy_openstates
-given_name: Stephen
-family_name: Hartgen

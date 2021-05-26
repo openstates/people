@@ -2,19 +2,19 @@ id: ocd-person/d99ae451-e66b-4063-9ef3-df3403e5358a
 name: Robert Ramirez
 given_name: Robert
 family_name: Ramirez
+image: http://www.state.co.us/gov_dir/leg_dir/house/members/hou29.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:co/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.state.co.us/gov_dir/leg_dir/house/members/hou29.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '29'
 links:
 - url: http://www.state.co.us/gov_dir/leg_dir/house/members/hou29.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: COL000039
 sources:
 - url: http://www.leg.state.co.us//clics/clics2011A/directory.nsf/bc8027265603833007256648005aee21/b13a980015d5dccb87256f430079fabf?OpenDocument
-other_identifiers:
-- identifier: COL000039
-  scheme: legacy_openstates

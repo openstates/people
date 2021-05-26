@@ -1,19 +1,28 @@
 id: ocd-person/bfe7d6e1-6514-402f-b540-6b8676ad59e5
 name: Jason Chipman
+given_name: Jason
+family_name: Chipman
+email: Jason.Chipman@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1782
 party:
 - name: Republican
 roles:
-- district: '120'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '120'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 200-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 200-A; Jefferson
+    City MO 65101
   voice: 573-751-1688
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=120
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=120
+other_names:
+- name: Chipman, Jason
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000409
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=120
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Jason
   last_name: Chipman
-other_identifiers:
-- identifier: MOL000409
-  scheme: legacy_openstates
-given_name: Jason
-family_name: Chipman
-email: Jason.Chipman@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1782
-other_names:
-- name: Chipman, Jason

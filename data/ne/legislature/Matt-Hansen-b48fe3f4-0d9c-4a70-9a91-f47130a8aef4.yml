@@ -1,11 +1,15 @@
 id: ocd-person/b48fe3f4-0d9c-4a70-9a91-f47130a8aef4
 name: Matt Hansen
+given_name: Matt
+family_name: Hansen
+email: mhansen@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist26.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '26'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '26'
 contact_details:
 - note: Capitol Office
   address: Room 1015; P.O. Box 94604; Lincoln, NE 68509
@@ -13,17 +17,13 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist26
 - url: http://news.legislature.ne.gov/dist26/
+other_names:
+- name: Hansen, M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000072
+- scheme: legacy_openstates
+  identifier: NEL000189
 sources:
 - url: http://news.legislature.ne.gov/dist26
 - url: http://news.legislature.ne.gov/dist26/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist26.jpg
-other_identifiers:
-- identifier: NEL000072
-  scheme: legacy_openstates
-- identifier: NEL000189
-  scheme: legacy_openstates
-given_name: Matt
-family_name: Hansen
-email: mhansen@leg.ne.gov
-other_names:
-- name: Hansen, M.

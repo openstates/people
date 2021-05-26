@@ -1,19 +1,28 @@
 id: ocd-person/69d02db8-824d-40b9-b1ba-6556d6e2c719
 name: Hannah Kelly
+given_name: Hannah
+family_name: Kelly
+email: Hannah.Kelly@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1927
 party:
 - name: Republican
 roles:
-- district: '141'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '141'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 302-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 302-B; Jefferson
+    City MO 65101
   voice: 573-751-2205
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=141
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=141
+other_names:
+- name: Kelly, Hannah
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000436
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=141
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Hannah
   last_name: Kelly
-other_identifiers:
-- identifier: MOL000436
-  scheme: legacy_openstates
-given_name: Hannah
-family_name: Kelly
-email: Hannah.Kelly@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1927
-other_names:
-- name: Kelly, Hannah

@@ -1,38 +1,38 @@
 id: ocd-person/b29dddf1-268f-4419-a5f7-7d6089b9518c
 name: Jacob Hummel
+given_name: Jacob
+family_name: Hummel
+image: https://www.senate.mo.gov/18web/wp-content/uploads/2016/12/Hummel2017w-200x300.jpg
 party:
 - name: Democratic
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
-- district: '81'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+  district: '4'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '108'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '81'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '108'
 links:
 - url: http://www.senate.mo.gov/mem04
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=151
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000468
+- scheme: openstates
+  identifier: ocd-person/e176582e-54fc-443a-ac62-97085bf7d6e5
+- scheme: legacy_openstates
+  identifier: MOL000099
+- scheme: legacy_openstates
+  identifier: MOL000276
 sources:
 - url: http://www.senate.mo.gov/senators-listing/
 - url: http://www.senate.mo.gov/mem04
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=81
-image: https://www.senate.mo.gov/18web/wp-content/uploads/2016/12/Hummel2017w-200x300.jpg
-other_identifiers:
-- identifier: MOL000468
-  scheme: legacy_openstates
-- identifier: ocd-person/e176582e-54fc-443a-ac62-97085bf7d6e5
-  scheme: openstates
-- identifier: MOL000099
-  scheme: legacy_openstates
-- identifier: MOL000276
-  scheme: legacy_openstates
-given_name: Jacob
-family_name: Hummel

@@ -1,15 +1,19 @@
 id: ocd-person/ebc9981a-cbe1-4d37-99b0-89d3c350fd3f
 name: Erika Geiss
+given_name: Erika
+family_name: Geiss
+email: senegeiss@senate.michigan.gov
+image: https://senate.michigan.gov/_images/6th.jpg
 party:
 - name: Democratic
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '6'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '12'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: 5500 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-9310
 links:
 - url: https://senatedems.com/geiss/
-- note: Contact
-  url: https://senatedems.com/geiss/contact
+- url: https://senatedems.com/geiss/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000271
 sources:
 - url: https://senatedems.com/geiss/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000271
-  scheme: legacy_openstates
-given_name: Erika
-family_name: Geiss
-email: senegeiss@senate.michigan.gov
-image: https://senate.michigan.gov/_images/6th.jpg

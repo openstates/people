@@ -1,11 +1,15 @@
 id: ocd-person/cdddfc27-9b8c-4044-b47e-4b8c01b195e4
 name: Mike Murphy
+given_name: Mike
+family_name: Murphy
+email: murphy@ilhousegop.org
+image: http://ilga.gov/images/members/{0F7CD78F-3317-42D0-A1A9-9573CE74B150}.jpg
 party:
 - name: Republican
 roles:
-- district: '99'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
-  type: lower
+  district: '99'
 contact_details:
 - note: Capitol Office
   address: E-1 Stratton Office Building;Springfield, IL 62706
@@ -18,7 +22,3 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2756
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2957
-image: http://ilga.gov/images/members/{0F7CD78F-3317-42D0-A1A9-9573CE74B150}.jpg
-given_name: Mike
-family_name: Murphy
-email: murphy@ilhousegop.org

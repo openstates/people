@@ -2,19 +2,19 @@ id: ocd-person/a60ac028-298a-4b17-95ab-8b8d7c0504be
 name: Kate Sullivan
 given_name: Kate
 family_name: Sullivan
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist41.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '41'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist41.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '41'
 links:
 - url: http://news.legislature.ne.gov/dist41
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000041
 sources:
 - url: http://news.legislature.ne.gov/dist41
-other_identifiers:
-- identifier: NEL000041
-  scheme: legacy_openstates

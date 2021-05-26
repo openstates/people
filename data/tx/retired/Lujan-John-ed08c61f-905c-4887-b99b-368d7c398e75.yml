@@ -2,19 +2,19 @@ id: ocd-person/ed08c61f-905c-4887-b99b-368d7c398e75
 name: John Lujan
 given_name: John
 family_name: Lujan
+image: http://www.house.state.tx.us/photos/members/3145.jpg
 party:
 - name: Democratic
 roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2018-12-31'
-image: http://www.house.state.tx.us/photos/members/3145.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '118'
 links:
 - url: http://www.house.state.tx.us/members/member-page/?district=118
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000544
 sources:
 - url: http://www.house.state.tx.us/members/member-page/?district=118
-other_identifiers:
-- identifier: TXL000544
-  scheme: legacy_openstates

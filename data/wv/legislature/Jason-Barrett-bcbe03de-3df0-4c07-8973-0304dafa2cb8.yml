@@ -1,14 +1,18 @@
 id: ocd-person/bcbe03de-3df0-4c07-8973-0304dafa2cb8
 name: Jason Barrett
+given_name: Jason
+family_name: Barrett
+email: jasonbarrett@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/barrett_jason.jpg
 party:
-- name: Democratic
-  end_date: 2020-12-11
+- end_date: 2020-12-11
+  name: Democratic
 - name: Republican
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+- start_date: 2013-01-01
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '61'
 contact_details:
 - note: Capitol Office
   address: Room 218E, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -18,16 +22,12 @@ contact_details:
   voice: 304-886-9907
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barrett
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000352
+- scheme: legacy_openstates
+  identifier: WVL000222
+- scheme: openstates
+  identifier: ocd-person/f7b54755-f78c-4184-b167-570673e07710
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barrett
-image: http://www.legis.state.wv.us/images/members/2021/house/barrett_jason.jpg
-other_identifiers:
-- identifier: WVL000352
-  scheme: legacy_openstates
-- identifier: WVL000222
-  scheme: legacy_openstates
-- identifier: ocd-person/f7b54755-f78c-4184-b167-570673e07710
-  scheme: openstates
-given_name: Jason
-family_name: Barrett
-email: jasonbarrett@wvhouse.gov

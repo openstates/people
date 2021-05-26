@@ -2,19 +2,19 @@ id: ocd-person/013a5528-b35c-4c65-990a-bbb9edb98d4c
 name: Phil Hart
 given_name: Phil
 family_name: Hart
+image: http://legislature.idaho.gov/images/Hart26.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Hart26.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '3'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=26
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000063
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000063
-  scheme: legacy_openstates

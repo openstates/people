@@ -1,11 +1,15 @@
 id: ocd-person/eb4a0388-67bd-4e8d-85ca-288b4d84ab43
 name: Marvin W. Lucas
+given_name: Marvin
+family_name: Lucas
+email: Marvin.Lucas@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/216/High
 party:
 - name: Democratic
 roles:
-- district: '42'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '42'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 402;Raleigh, NC 27603-5925
@@ -14,16 +18,12 @@ contact_details:
   address: 3318 Hedgemoor Cir;Spring Lake, NC 28390
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/216
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000130
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/216
-image: https://www.ncleg.gov/Members/MemberImage/H/216/High
 extras:
   counties:
   - Cumberland
   notice: null
-other_identifiers:
-- identifier: NCL000130
-  scheme: legacy_openstates
-given_name: Marvin
-family_name: Lucas
-email: Marvin.Lucas@ncleg.gov

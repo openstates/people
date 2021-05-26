@@ -1,22 +1,22 @@
 id: ocd-person/c965b1a1-76ab-4ac0-b1af-457a01e49177
 name: Lea Whitford
+given_name: Lea
+family_name: Whitford
 party:
 - name: Democratic
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '8'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4720
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4720
+  note: legislator page
 other_identifiers:
-- identifier: MTL000222
-  scheme: legacy_openstates
-- identifier: MTL000249
-  scheme: legacy_openstates
-given_name: Lea
-family_name: Whitford
+- scheme: legacy_openstates
+  identifier: MTL000222
+- scheme: legacy_openstates
+  identifier: MTL000249
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

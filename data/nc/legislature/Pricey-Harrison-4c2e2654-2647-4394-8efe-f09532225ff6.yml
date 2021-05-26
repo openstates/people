@@ -1,15 +1,19 @@
 id: ocd-person/4c2e2654-2647-4394-8efe-f09532225ff6
 name: Pricey Harrison
+given_name: Pricey
+family_name: Harrison
+email: Pricey.Harrison@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/504/High
 party:
 - name: Democratic
 roles:
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '61'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '57'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '61'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 1218;Raleigh, NC 27601-1096
@@ -18,16 +22,12 @@ contact_details:
   address: PO Box 9339;Greensboro, NC 27429-9339
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/504
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000108
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/504
-image: https://www.ncleg.gov/Members/MemberImage/H/504/High
 extras:
   counties:
   - Guilford
   notice: null
-other_identifiers:
-- identifier: NCL000108
-  scheme: legacy_openstates
-given_name: Pricey
-family_name: Harrison
-email: Pricey.Harrison@ncleg.gov

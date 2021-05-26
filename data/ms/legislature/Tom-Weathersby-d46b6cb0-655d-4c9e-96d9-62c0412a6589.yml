@@ -1,11 +1,15 @@
 id: ocd-person/d46b6cb0-655d-4c9e-96d9-62c0412a6589
 name: Tom Weathersby
+given_name: Tom
+family_name: Weathersby
+email: tweathersby@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/weathersby.jpg
 party:
 - name: Republican
 roles:
-- district: '62'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '62'
 contact_details:
 - note: Capitol Office
   address: Room 115-A;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 601-845-2017
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/weathersby.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000151
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/weathersby.xml
-image: http://billstatus.ls.state.ms.us/members/house/weathersby.jpg
 extras:
   org_info: Representative Weathersby is a deacon and a Mason and is affiliated with
     Sigma Alpha Epsilon, Rankin and Copiah Counties Chambers of Commerce, Mississippi
     Cattlemens' Association, Kiwanis, ALEC and the NRA.
-other_identifiers:
-- identifier: MSL000151
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Weathersby
-email: tweathersby@house.ms.gov

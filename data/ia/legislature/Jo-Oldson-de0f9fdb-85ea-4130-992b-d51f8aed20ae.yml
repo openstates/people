@@ -1,11 +1,15 @@
 id: ocd-person/de0f9fdb-85ea-4130-992b-d51f8aed20ae
 name: Jo Oldson
+given_name: Jo
+family_name: Oldson
+email: jo.oldson@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=228
 party:
 - name: Democratic
 roles:
-- district: '41'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '41'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=228
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=228
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000108
+- scheme: legacy_openstates
+  identifier: IAL000284
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=228
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=228
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=228
-other_identifiers:
-- identifier: IAL000108
-  scheme: legacy_openstates
-- identifier: IAL000284
-  scheme: legacy_openstates
-given_name: Jo
-family_name: Oldson
-email: jo.oldson@legis.iowa.gov

@@ -1,11 +1,14 @@
 id: ocd-person/629f89a2-138d-43b1-a39f-b420bd7bc061
 name: Jill Barry
+given_name: Jill
+family_name: Barry
+email: Jill.Barry@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '31'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4100;Hartford, CT 06106
@@ -14,10 +17,7 @@ contact_details:
   address: 199 Cavan Lane;Glastonbury, CT 06033
 links:
 - url: http://www.housedems.ct.gov/barry
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Jill
-family_name: Barry
-email: Jill.Barry@cga.ct.gov
 other_names:
 - name: Barry, Jill
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

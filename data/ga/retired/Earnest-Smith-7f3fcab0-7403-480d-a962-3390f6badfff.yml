@@ -2,27 +2,27 @@ id: ocd-person/7f3fcab0-7403-480d-a962-3390f6badfff
 name: Earnest Smith
 given_name: Earnest
 family_name: Smith
+image: http://www.house.ga.gov/SiteCollectionImages/SmithEarnest731.jpg
 party:
 - name: Democratic
 roles:
-- district: '125'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '122'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '125'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/SmithEarnest731.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '122'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=731&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000203
+- scheme: legacy_openstates
+  identifier: GAL000354
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=731&Session=24
-other_identifiers:
-- identifier: GAL000203
-  scheme: legacy_openstates
-- identifier: GAL000354
-  scheme: legacy_openstates

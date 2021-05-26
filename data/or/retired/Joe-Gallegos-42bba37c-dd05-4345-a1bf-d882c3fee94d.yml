@@ -2,25 +2,25 @@ id: ocd-person/42bba37c-dd05-4345-a1bf-d882c3fee94d
 name: Joe Gallegos
 given_name: Joe
 family_name: Gallegos
+image: http://www.oregonlegislature.gov/house/MemberPhotos/gallegos.jpg
 party:
 - name: Democratic
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.oregonlegislature.gov/house/MemberPhotos/gallegos.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '30'
 links:
 - url: http://www.oregonlegislature.gov/gallegos
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000104
+- scheme: legacy_openstates
+  identifier: ORL000142
+- scheme: legacy_openstates
+  identifier: ORL000214
+- scheme: legacy_openstates
+  identifier: ORL000298
 sources:
 - url: http://www.oregonlegislature.gov/house/Pages/RepresentativesAll.aspx
-other_identifiers:
-- identifier: ORL000104
-  scheme: legacy_openstates
-- identifier: ORL000142
-  scheme: legacy_openstates
-- identifier: ORL000214
-  scheme: legacy_openstates
-- identifier: ORL000298
-  scheme: legacy_openstates

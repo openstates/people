@@ -3,27 +3,27 @@ name: Joyce A. Maker
 given_name: Joyce
 family_name: Maker
 middle_name: A.
+image: http://www.maine.gov/legis/house_gop/_images/makeja.jpg
 party:
 - name: Republican
 roles:
-- district: '140'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '140'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.maine.gov/legis/house_gop/_images/makeja.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '31'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/makeja.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000066
+- scheme: legacy_openstates
+  identifier: MEL000382
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/makeja.htm
-other_identifiers:
-- identifier: MEL000066
-  scheme: legacy_openstates
-- identifier: MEL000382
-  scheme: legacy_openstates

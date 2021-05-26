@@ -2,27 +2,27 @@ id: ocd-person/98e13b85-8338-44ad-8f99-86fa7daafe9c
 name: Mark Hamilton
 given_name: Mark
 family_name: Hamilton
+image: http://www.house.ga.gov/SiteCollectionImages/HamiltonMark116.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '24'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/HamiltonMark116.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '23'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=116&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000118
+- scheme: legacy_openstates
+  identifier: GAL000294
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=116&Session=24
-other_identifiers:
-- identifier: GAL000118
-  scheme: legacy_openstates
-- identifier: GAL000294
-  scheme: legacy_openstates

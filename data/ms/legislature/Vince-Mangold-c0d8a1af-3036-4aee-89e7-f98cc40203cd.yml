@@ -1,11 +1,15 @@
 id: ocd-person/c0d8a1af-3036-4aee-89e7-f98cc40203cd
 name: Vince Mangold
+given_name: Vince
+family_name: Mangold
+email: vmangold@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/mangold.jpg
 party:
 - name: Republican
 roles:
-- district: '53'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '53'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 601-835-2681
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mangold.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000262
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mangold.xml
-image: http://billstatus.ls.state.ms.us/members/house/mangold.jpg
 extras:
   org_info: Representative Mangold is affiliated with the Mississippi Cattleman's
     Assoc, Mississippi Assoc. of Independent Schools, and the Referees Assoc.
-other_identifiers:
-- identifier: MSL000262
-  scheme: legacy_openstates
-given_name: Vince
-family_name: Mangold
-email: vmangold@house.ms.gov

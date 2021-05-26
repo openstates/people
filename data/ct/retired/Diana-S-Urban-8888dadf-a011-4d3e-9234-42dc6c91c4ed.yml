@@ -1,18 +1,18 @@
 id: ocd-person/8888dadf-a011-4d3e-9234-42dc6c91c4ed
 name: Diana S. Urban
+given_name: Diana S.
+family_name: Urban
 party:
 - name: Democratic
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '43'
 links:
 - url: http://www.housedems.ct.gov/Urban
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000079
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000079
-  scheme: legacy_openstates
-given_name: Diana S.
-family_name: Urban

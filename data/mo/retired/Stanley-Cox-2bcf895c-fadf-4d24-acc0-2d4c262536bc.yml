@@ -2,26 +2,26 @@ id: ocd-person/2bcf895c-fadf-4d24-acc0-2d4c262536bc
 name: Stanley Cox
 given_name: Stanley
 family_name: Cox
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=151
 party:
 - name: Republican
 roles:
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '52'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=151
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '118'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=64
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000060
+- scheme: legacy_openstates
+  identifier: MOL000231
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=52
-other_identifiers:
-- identifier: MOL000060
-  scheme: legacy_openstates
-- identifier: MOL000231
-  scheme: legacy_openstates

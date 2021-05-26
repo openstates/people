@@ -2,19 +2,19 @@ id: ocd-person/4007ca61-cae3-42dc-9c5b-7c7538e5fdf6
 name: Gene Alday
 given_name: Gene
 family_name: Alday
+image: http://billstatus.ls.state.ms.us/members/house/alday.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/alday.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '25'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/alday.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000194
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/alday.xml
-other_identifiers:
-- identifier: MSL000194
-  scheme: legacy_openstates

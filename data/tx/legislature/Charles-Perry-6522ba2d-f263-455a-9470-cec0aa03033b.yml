@@ -1,32 +1,7 @@
 id: ocd-person/6522ba2d-f263-455a-9470-cec0aa03033b
 name: Charles Perry
-party:
-- name: Republican
-roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0128
-- note: District Office
-  address: 203 Commerce Childress, TX 79201
-  voice: 940-937-0909
-links:
-- url: https://senate.texas.gov/member.php?d=28
-sources:
-- url: https://senate.texas.gov/member.php?d=28
-other_identifiers:
-- identifier: TXL000400
-  scheme: legacy_openstates
-- identifier: TXL000477
-  scheme: legacy_openstates
-- identifier: TXL000511
-  scheme: legacy_openstates
 given_name: Charles
 family_name: Perry
-image: https://senate.texas.gov/members/d28/img/Perry-Headshot-2019.jpg
 biography: "Sen. Charles Perry, a practicing CPA from Lubbock, was elected to the\
   \ Texas Senate in 2014 after serving two terms in the Texas House of Representatives.\
   \ A life-long West Texan, he is a conservative \u2013 fighting for lower taxes,\
@@ -61,3 +36,28 @@ biography: "Sen. Charles Perry, a practicing CPA from Lubbock, was elected to th
   \ \r Geographically, Perry represents the largest Senate District in Texas. The\
   \ district covers 51 counties and is over 48,000 square miles, which is larger than\
   \ 19 U.S. states and 107 countries."
+image: https://senate.texas.gov/members/d28/img/Perry-Headshot-2019.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '28'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0128
+- note: District Office
+  address: 203 Commerce Childress, TX 79201
+  voice: 940-937-0909
+links:
+- url: https://senate.texas.gov/member.php?d=28
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000400
+- scheme: legacy_openstates
+  identifier: TXL000477
+- scheme: legacy_openstates
+  identifier: TXL000511
+sources:
+- url: https://senate.texas.gov/member.php?d=28

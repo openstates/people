@@ -2,28 +2,28 @@ id: ocd-person/e9cacc03-de5f-405a-82f5-75a3ef1ff666
 name: Joni Ernst
 given_name: Joni K.
 family_name: Ernst
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=9761
 party:
 - name: Republican
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '12'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=9761
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '48'
 links:
 - url: https://www.legis.iowa.gov/legislators/senate
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000019
+- scheme: legacy_openstates
+  identifier: IAL000193
+- scheme: legacy_openstates
+  identifier: IAL000486
 sources:
 - url: https://www.legis.iowa.gov/legislators/senate
-other_identifiers:
-- identifier: IAL000019
-  scheme: legacy_openstates
-- identifier: IAL000193
-  scheme: legacy_openstates
-- identifier: IAL000486
-  scheme: legacy_openstates

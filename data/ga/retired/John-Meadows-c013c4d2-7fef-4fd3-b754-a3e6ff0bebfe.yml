@@ -1,22 +1,22 @@
 id: ocd-person/c013c4d2-7fef-4fd3-b754-a3e6ff0bebfe
 name: John Meadows
+given_name: John
+family_name: Meadows
+image: http://www.house.ga.gov/SiteCollectionImages/MeadowsJohn169.jpg
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '5'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=169&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000165
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=169&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/MeadowsJohn169.jpg
-family_name: Meadows
-given_name: John
 extras:
   guid: 169
-other_identifiers:
-- identifier: GAL000165
-  scheme: legacy_openstates

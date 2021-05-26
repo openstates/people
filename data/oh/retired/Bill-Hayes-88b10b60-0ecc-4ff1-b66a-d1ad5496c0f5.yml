@@ -2,26 +2,26 @@ id: ocd-person/88b10b60-0ecc-4ff1-b66a-d1ad5496c0f5
 name: Bill Hayes
 given_name: Bill
 family_name: Hayes
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/72.jpg
 party:
 - name: Republican
 roles:
-- district: '72'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '91'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '72'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/72.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '91'
 links:
 - url: http://www.ohiohouse.gov/bill-hayes
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000124
+- scheme: legacy_openstates
+  identifier: OHL000241
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000124
-  scheme: legacy_openstates
-- identifier: OHL000241
-  scheme: legacy_openstates

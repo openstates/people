@@ -2,26 +2,26 @@ id: ocd-person/5e1693b6-c85f-4a65-af09-6f7d110f31b6
 name: Keith Ripp
 given_name: Keith
 family_name: Ripp
+image: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1603.jpg
 party:
 - name: Republican
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '47'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1603.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '42'
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1603
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000413
+- scheme: legacy_openstates
+  identifier: WIL000533
 sources:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1603
-other_identifiers:
-- identifier: WIL000413
-  scheme: legacy_openstates
-- identifier: WIL000533
-  scheme: legacy_openstates

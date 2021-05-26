@@ -1,24 +1,24 @@
 id: ocd-person/74524c96-2b40-48e7-9406-a003bb70d3f4
 name: Diane Franklin
+given_name: Diane
+family_name: Franklin
 party:
 - name: Republican
 roles:
-- district: '123'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '123'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=123
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000078
+- scheme: legacy_openstates
+  identifier: MOL000254
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=123
 extras:
   first_name: Diane
   last_name: Franklin
-other_identifiers:
-- identifier: MOL000078
-  scheme: legacy_openstates
-- identifier: MOL000254
-  scheme: legacy_openstates
-given_name: Diane
-family_name: Franklin

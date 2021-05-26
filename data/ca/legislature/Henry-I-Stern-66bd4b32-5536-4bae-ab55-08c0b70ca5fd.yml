@@ -1,11 +1,15 @@
 id: ocd-person/66bd4b32-5536-4bae-ab55-08c0b70ca5fd
 name: Henry I. Stern
+given_name: Henry
+family_name: Stern
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/stern.jpg
 party:
 - name: Democratic
 roles:
-- district: '27'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '27'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 5080, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 818-876-3352
 links:
 - url: https://senate.ca.gov/sd27
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD27&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD27&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000509
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/stern.jpg
-other_identifiers:
-- identifier: CAL000509
-  scheme: legacy_openstates
-given_name: Henry
-family_name: Stern
-gender: Male

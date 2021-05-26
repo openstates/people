@@ -1,18 +1,18 @@
 id: ocd-person/307f8ba0-d143-4c71-ac7b-f5220d739d70
 name: Chris Soto
+given_name: Chris
+family_name: Soto
 party:
 - name: Democratic
 roles:
-- district: '39'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '39'
 links:
 - url: http://www.housedems.ct.gov/Soto
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000344
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000344
-  scheme: legacy_openstates
-given_name: Chris
-family_name: Soto

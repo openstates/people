@@ -1,17 +1,21 @@
 id: ocd-person/2960c6c4-abca-4406-9d9d-4734fec3f68d
 name: Doug Ricks
+given_name: Doug
+family_name: Ricks
+email: DRicks@senate.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Ricks5383.jpg
 party:
 - name: Republican
 roles:
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2018-12-01'
+- start_date: '2018-12-01'
   end_date: 2020-12-01
-- district: '34'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '34'
+- start_date: 2020-12-01
   type: upper
-  start_date: 2020-12-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '34'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1301
@@ -21,7 +25,3 @@ links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=34
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Ricks5383.jpg
-given_name: Doug
-family_name: Ricks
-email: DRicks@senate.idaho.gov

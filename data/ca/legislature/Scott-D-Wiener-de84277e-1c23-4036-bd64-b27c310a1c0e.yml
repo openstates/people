@@ -1,11 +1,15 @@
 id: ocd-person/de84277e-1c23-4036-bd64-b27c310a1c0e
 name: Scott D. Wiener
+given_name: Scott
+family_name: Wiener
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/wiener.jpg
 party:
 - name: Democratic
 roles:
-- district: '11'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 5100, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 415-557-1300
 links:
 - url: https://senate.ca.gov/sd11
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD11&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD11&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000512
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/wiener.jpg
-other_identifiers:
-- identifier: CAL000512
-  scheme: legacy_openstates
-given_name: Scott
-family_name: Wiener
-gender: Male

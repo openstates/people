@@ -1,11 +1,15 @@
 id: ocd-person/28321ca7-5b8c-4b1a-9a85-2ae30e52045b
 name: Randy Smith
+given_name: Randy
+family_name: Smith
+email: randy.smith@wvsenate.gov
+image: http://www.legis.state.wv.us/images/members/2021/senate/smith_randy.jpg
 party:
 - name: Republican
 roles:
-- district: '14'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: upper
+  district: '14'
 contact_details:
 - note: Capitol Office
   address: Room 214W, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,12 +19,8 @@ contact_details:
   voice: 304-642-9502
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Smith
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000355
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Smith
-image: http://www.legis.state.wv.us/images/members/2021/senate/smith_randy.jpg
-other_identifiers:
-- identifier: WVL000355
-  scheme: legacy_openstates
-given_name: Randy
-family_name: Smith
-email: randy.smith@wvsenate.gov

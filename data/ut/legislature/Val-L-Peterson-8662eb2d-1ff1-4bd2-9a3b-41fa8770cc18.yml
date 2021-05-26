@@ -1,20 +1,31 @@
 id: ocd-person/8662eb2d-1ff1-4bd2-9a3b-41fa8770cc18
 name: Val L. Peterson
+given_name: Val
+family_name: Peterson
+email: vpeterson@le.utah.gov
+image: https://le.utah.gov/images/legislator/PETERVL.jpg
 party:
 - name: Republican
 roles:
-- district: '59'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '59'
 contact_details:
 - note: District Office
   address: 528 W 1160 N, OREM, UT, 84057
   voice: 801-224-4473
 links:
 - url: http://house.utah.gov/rep/PETERVL
+other_names:
+- name: Peterson, Val L.
+- name: Peterson, V.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000085
+- scheme: legacy_openstates
+  identifier: UTL000236
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/PETERVL.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIPETERVL3.pdf
@@ -28,14 +39,3 @@ extras:
   - http://le.utah.gov/house2/CofI/vpeterson.pdf
   - http://le.utah.gov/house2/CofI/PETERVL.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409531
-other_identifiers:
-- identifier: UTL000085
-  scheme: legacy_openstates
-- identifier: UTL000236
-  scheme: legacy_openstates
-given_name: Val
-family_name: Peterson
-email: vpeterson@le.utah.gov
-other_names:
-- name: Peterson, Val L.
-- name: Peterson, V.

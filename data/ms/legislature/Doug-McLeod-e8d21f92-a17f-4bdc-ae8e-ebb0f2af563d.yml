@@ -1,11 +1,15 @@
 id: ocd-person/e8d21f92-a17f-4bdc-ae8e-ebb0f2af563d
 name: Doug McLeod
+given_name: Doug
+family_name: McLeod
+email: dmcleod@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/mcleod.jpg
 party:
 - name: Republican
 roles:
-- district: '107'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '107'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 601-947-3125
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000201
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
-image: http://billstatus.ls.state.ms.us/members/house/mcleod.jpg
 extras:
   org_info: Rep. McLeod is a member of the George Co. Economic Development Board of
     Directors, Academic Board, and Farm Bureau.
-other_identifiers:
-- identifier: MSL000201
-  scheme: legacy_openstates
-given_name: Doug
-family_name: McLeod
-email: dmcleod@house.ms.gov

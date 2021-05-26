@@ -1,24 +1,24 @@
 id: ocd-person/1bb278fa-96ee-4859-864a-eb74ac4c938b
 name: Bill Reiboldt
+given_name: Bill
+family_name: Reiboldt
 party:
 - name: Republican
 roles:
-- district: '160'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '160'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=160
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000151
+- scheme: legacy_openstates
+  identifier: MOL000331
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=160
 extras:
   first_name: Bill
   last_name: Reiboldt
-other_identifiers:
-- identifier: MOL000151
-  scheme: legacy_openstates
-- identifier: MOL000331
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Reiboldt

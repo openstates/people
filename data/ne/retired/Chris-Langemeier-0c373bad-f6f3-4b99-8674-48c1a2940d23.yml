@@ -2,19 +2,19 @@ id: ocd-person/0c373bad-f6f3-4b99-8674-48c1a2940d23
 name: Chris Langemeier
 given_name: Chris
 family_name: Langemeier
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist23.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist23.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '23'
 links:
 - url: http://news.legislature.ne.gov/dist23/biography/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000023
 sources:
 - url: http://news.legislature.ne.gov/dist23/biography/
-other_identifiers:
-- identifier: NEL000023
-  scheme: legacy_openstates

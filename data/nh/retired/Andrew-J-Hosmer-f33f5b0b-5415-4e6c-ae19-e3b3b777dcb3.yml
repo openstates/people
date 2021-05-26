@@ -3,26 +3,26 @@ name: Andrew J. Hosmer
 given_name: Andrew
 family_name: Hosmer
 middle_name: J.
+image: http://www.gencourt.state.nh.us/Senate/images/senators/07.jpg
 party:
 - name: Democratic
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '7'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.gencourt.state.nh.us/Senate/images/senators/07.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '7'
 links:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district07.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000808
+- scheme: legacy_openstates
+  identifier: NHL001294
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district07.aspx
-other_identifiers:
-- identifier: NHL000808
-  scheme: legacy_openstates
-- identifier: NHL001294
-  scheme: legacy_openstates

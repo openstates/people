@@ -1,19 +1,28 @@
 id: ocd-person/47c358c3-810a-41d0-aa4c-a21fd8d19c8b
 name: Tom Hannegan
+given_name: Tom
+family_name: Hannegan
+email: Tom.Hannegan@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1936
 party:
 - name: Republican
 roles:
-- district: '65'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '65'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 303-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 303-A; Jefferson
+    City MO 65101
   voice: 573-751-3717
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=65
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=065
+other_names:
+- name: Hannegan, Tom
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000443
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=65
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Tom
   last_name: Hannegan
-other_identifiers:
-- identifier: MOL000443
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Hannegan
-email: Tom.Hannegan@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1936
-other_names:
-- name: Hannegan, Tom

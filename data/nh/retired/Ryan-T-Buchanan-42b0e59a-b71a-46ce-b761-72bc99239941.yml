@@ -1,12 +1,13 @@
 id: ocd-person/42b0e59a-b71a-46ce-b761-72bc99239941
 name: Ryan T. Buchanan
+email: Ryan.Buchanan@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: Merrimack 15
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 15
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 sources:
@@ -16,4 +17,3 @@ extras:
   first_name: Ryan
   last_name: Buchanan
   middle_name: T.
-email: Ryan.Buchanan@leg.state.nh.us

@@ -1,11 +1,15 @@
 id: ocd-person/d3dab509-1268-4b4f-b363-98932002bf2e
 name: John R. Cloutier
+given_name: John R.
+family_name: Cloutier
+email: jocloutier@comcast.net
+image: http://www.gencourt.state.nh.us/house/images/memberpics/375829.jpg
 party:
 - name: Democratic
 roles:
-- district: Sullivan 10
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Sullivan 10
 contact_details:
 - note: District Office
   address: 2 Winter St, Apt. D-14;Claremont, NH 03743-5091
@@ -13,22 +17,18 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000084
+- scheme: legacy_openstates
+  identifier: NHL000487
+- scheme: legacy_openstates
+  identifier: NHL000908
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=375829
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/375829.jpg
 extras:
   first_name: John
   last_name: Cloutier
   middle_name: R.
-other_identifiers:
-- identifier: NHL000084
-  scheme: legacy_openstates
-- identifier: NHL000487
-  scheme: legacy_openstates
-- identifier: NHL000908
-  scheme: legacy_openstates
-given_name: John R.
-family_name: Cloutier
-email: jocloutier@comcast.net

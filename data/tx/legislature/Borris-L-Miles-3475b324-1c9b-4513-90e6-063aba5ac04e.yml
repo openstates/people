@@ -1,39 +1,7 @@
 id: ocd-person/3475b324-1c9b-4513-90e6-063aba5ac04e
 name: Borris L. Miles
-party:
-- name: Democratic
-roles:
-- district: '146'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: 2011-01-01
-  end_date: 2018-12-31
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0113
-- note: District Office
-  address: 3300 Lyons Avenue, Suite 301 Houston, TX 77020
-  voice: 713-223-0387
-links:
-- url: https://senate.texas.gov/member.php?d=13
-sources:
-- url: https://senate.texas.gov/member.php?d=13
-other_identifiers:
-- identifier: TXL000707
-  scheme: legacy_openstates
-- identifier: TXL000395
-  scheme: legacy_openstates
-- identifier: TXL000648
-  scheme: legacy_openstates
-- identifier: ocd-person/619d2cdd-788c-4582-ae13-85a44c32ae48
-  scheme: openstates
 given_name: Borris
 family_name: Miles
-image: https://senate.texas.gov/members/d13/img/miles-initial.jpg
 biography: "A lifelong resident of Houston, Senator Borris L. Miles was elected to\
   \ the Texas Senate in 2016 after serving four terms in the Texas House of Representatives.\
   \ Miles is a successful businessman and developer, owning one of the largest insurance\
@@ -51,3 +19,35 @@ biography: "A lifelong resident of Houston, Senator Borris L. Miles was elected 
   \ his time to organizations like the Urban League and the Houston Sickle Cell Association.\
   \ Miles\u2019 non-profit, the TexStars Foundation, has awarded more than 100 scholarships\
   \ to pay for the college education of African-American men."
+image: https://senate.texas.gov/members/d13/img/miles-initial.jpg
+party:
+- name: Democratic
+roles:
+- start_date: 2011-01-01
+  end_date: 2018-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '146'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '13'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0113
+- note: District Office
+  address: 3300 Lyons Avenue, Suite 301 Houston, TX 77020
+  voice: 713-223-0387
+links:
+- url: https://senate.texas.gov/member.php?d=13
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000707
+- scheme: legacy_openstates
+  identifier: TXL000395
+- scheme: legacy_openstates
+  identifier: TXL000648
+- scheme: openstates
+  identifier: ocd-person/619d2cdd-788c-4582-ae13-85a44c32ae48
+sources:
+- url: https://senate.texas.gov/member.php?d=13

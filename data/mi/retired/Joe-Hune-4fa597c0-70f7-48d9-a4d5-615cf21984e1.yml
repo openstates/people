@@ -1,23 +1,23 @@
 id: ocd-person/4fa597c0-70f7-48d9-a4d5-615cf21984e1
 name: Joe Hune
+given_name: Joe
+family_name: Hune
+image: http://www.senate.michigan.gov/_images/Hune.png
 party:
 - name: Republican
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '22'
 links:
 - url: http://www.senate.michigan.gov/hune
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000022
+- scheme: legacy_openstates
+  identifier: MIL000149
+- scheme: legacy_openstates
+  identifier: MIL000186
 sources:
 - url: http://www.senate.michigan.gov/hune
-image: http://www.senate.michigan.gov/_images/Hune.png
-other_identifiers:
-- identifier: MIL000022
-  scheme: legacy_openstates
-- identifier: MIL000149
-  scheme: legacy_openstates
-- identifier: MIL000186
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Hune

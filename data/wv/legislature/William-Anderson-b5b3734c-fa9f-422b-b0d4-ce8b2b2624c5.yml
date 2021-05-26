@@ -1,11 +1,15 @@
 id: ocd-person/b5b3734c-fa9f-422b-b0d4-ce8b2b2624c5
 name: William Anderson
+given_name: William
+family_name: Anderson
+email: bill.anderson@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/anderson_bill.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '8'
 contact_details:
 - note: Capitol Office
   address: Room 200E-C, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,14 +19,10 @@ contact_details:
   voice: 304-481-4129
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000046
+- scheme: legacy_openstates
+  identifier: WVL000257
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
-image: http://www.legis.state.wv.us/images/members/2021/house/anderson_bill.jpg
-other_identifiers:
-- identifier: WVL000046
-  scheme: legacy_openstates
-- identifier: WVL000257
-  scheme: legacy_openstates
-given_name: William
-family_name: Anderson
-email: bill.anderson@wvhouse.gov

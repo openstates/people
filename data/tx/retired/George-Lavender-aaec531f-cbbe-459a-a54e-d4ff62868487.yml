@@ -2,19 +2,19 @@ id: ocd-person/aaec531f-cbbe-459a-a54e-d4ff62868487
 name: George Lavender
 given_name: George
 family_name: Lavender
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2010.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2010.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '1'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2010
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000390
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2010
-other_identifiers:
-- identifier: TXL000390
-  scheme: legacy_openstates

@@ -2,26 +2,26 @@ id: ocd-person/db30b113-c1d1-4cb7-a2d0-f0dff89db9d1
 name: John Diehl
 given_name: John
 family_name: Diehl
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=365
 party:
 - name: Republican
 roles:
-- district: '89'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '87'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '89'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=365
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '87'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2015&district=162
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000068
+- scheme: legacy_openstates
+  identifier: MOL000237
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2015&district=89
-other_identifiers:
-- identifier: MOL000068
-  scheme: legacy_openstates
-- identifier: MOL000237
-  scheme: legacy_openstates

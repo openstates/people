@@ -1,16 +1,20 @@
 id: ocd-person/a45d8fe7-d052-4d18-bc5f-b5911948d42c
 name: Shelly Short
+given_name: Shelly
+family_name: Short
+email: shelly.short@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/short.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2018-12-31
-- district: '7'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '7'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: 409 Legislative Building;PO Box 40407;Olympia, WA 98504
@@ -18,16 +22,12 @@ contact_details:
 links:
 - url: http://ShellyShort.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000272
+- scheme: legacy_openstates
+  identifier: WAL000134
+- scheme: openstates
+  identifier: ocd-person/bca66fde-c372-4788-9ccd-069a2f01e670
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/short.jpg
-other_identifiers:
-- identifier: WAL000272
-  scheme: legacy_openstates
-- identifier: WAL000134
-  scheme: legacy_openstates
-- identifier: ocd-person/bca66fde-c372-4788-9ccd-069a2f01e670
-  scheme: openstates
-given_name: Shelly
-family_name: Short
-email: shelly.short@leg.wa.gov

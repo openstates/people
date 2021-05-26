@@ -1,12 +1,16 @@
 id: ocd-person/e2da0f08-1bd8-4ac2-95f1-002870238527
 name: Dr. Joaquin  Arambula
+given_name: Joaquin
+family_name: Arambula
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/asm-arambula.jpg
 party:
 - name: Democratic
 roles:
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- start_date: 2016-04-14
   type: lower
-  start_date: 2016-04-14
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0031
@@ -16,20 +20,16 @@ contact_details:
   voice: 559-445-5532
 links:
 - url: https://a31.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD31&inframe=N
-sources:
-- url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/asm-arambula.jpg
-other_identifiers:
-- identifier: CAL000507
-  scheme: legacy_openstates
-- identifier: CAL000498
-  scheme: legacy_openstates
-- identifier: ocd-person/2fc70d74-fedb-4c4b-bc27-c9b44324dceb
-  scheme: openstates
-given_name: Joaquin
-family_name: Arambula
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD31&inframe=N
+  note: Contact Form
 other_names:
 - name: Joaquin Arambula
-gender: Male
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000507
+- scheme: legacy_openstates
+  identifier: CAL000498
+- scheme: openstates
+  identifier: ocd-person/2fc70d74-fedb-4c4b-bc27-c9b44324dceb
+sources:
+- url: http://assembly.ca.gov/assemblymembers

@@ -1,20 +1,20 @@
 id: ocd-person/053aa93e-b38d-424d-a9fc-43088529068f
 name: Linda A. Orange
+given_name: Linda A.
+family_name: Orange
+death_date: 2019-11-20
 party:
 - name: Democratic
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2019-11-20'
   type: lower
-  end_date: '2019-11-20'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '48'
   end_reason: Deceased
 links:
 - url: http://www.housedems.ct.gov/Orange
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000084
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000084
-  scheme: legacy_openstates
-given_name: Linda A.
-family_name: Orange
-death_date: '2019-11-20'

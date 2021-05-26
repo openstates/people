@@ -1,24 +1,24 @@
 id: ocd-person/06c92e3f-686d-4da7-b7ad-c569ad7c016c
 name: Mike Kelley
+given_name: Mike
+family_name: Kelley
 party:
 - name: Republican
 roles:
-- district: '127'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '127'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=127
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000106
+- scheme: legacy_openstates
+  identifier: MOL000283
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=127
 extras:
   first_name: Mike
   last_name: Kelley
-other_identifiers:
-- identifier: MOL000106
-  scheme: legacy_openstates
-- identifier: MOL000283
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Kelley

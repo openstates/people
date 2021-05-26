@@ -1,16 +1,20 @@
 id: ocd-person/796593d1-498e-4980-bd5e-2db033754c62
 name: Susan Talamantes Eggman
+given_name: Susan
+family_name: Eggman
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd5_eggman.jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- end_date: 2020-12-07
   type: lower
-  end_date: 2020-12-07
-- district: '5'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '13'
+- start_date: 2020-12-07
   type: upper
-  start_date: 2020-12-07
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 5097, Sacramento, CA 95814-4900
@@ -20,14 +24,10 @@ contact_details:
   voice: 209-948-7930
 links:
 - url: https://senate.ca.gov/sd05
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD05&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD05&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000361
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd5_eggman.jpg
-other_identifiers:
-- identifier: CAL000361
-  scheme: legacy_openstates
-given_name: Susan
-family_name: Eggman
-gender: Female

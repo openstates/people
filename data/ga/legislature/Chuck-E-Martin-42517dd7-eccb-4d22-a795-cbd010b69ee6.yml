@@ -1,11 +1,15 @@
 id: ocd-person/42517dd7-eccb-4d22-a795-cbd010b69ee6
 name: Chuck Martin
+given_name: Charles
+family_name: Martin
+email: chuck.martin@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/martin-chuck-164.jpg
 party:
 - name: Republican
 roles:
-- district: '49'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '49'
 contact_details:
 - note: Capitol Office
   address: 417-A State Capitol;Atlanta, GA 30334
@@ -15,23 +19,19 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=164&Session=27
 - url: https://www.legis.ga.gov/members/house/164?session=1029
+other_names:
+- name: Charles Martin
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000159
+- scheme: legacy_openstates
+  identifier: GAL000327
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=164&Session=27
 - url: https://www.legis.ga.gov/members/house/164?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/martin-chuck-164.jpg
-family_name: Martin
-given_name: Charles
 extras:
   guid: 164
   city: Alpharetta
   georgia_id: 164
   residence: Alpharetta
-other_identifiers:
-- identifier: GAL000159
-  scheme: legacy_openstates
-- identifier: GAL000327
-  scheme: legacy_openstates
-email: chuck.martin@house.ga.gov
-other_names:
-- name: Charles Martin

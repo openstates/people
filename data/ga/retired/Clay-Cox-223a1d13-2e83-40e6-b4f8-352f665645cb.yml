@@ -1,22 +1,22 @@
 id: ocd-person/223a1d13-2e83-40e6-b4f8-352f665645cb
 name: Clay Cox
+given_name: Clay
+family_name: Cox
+image: http://www.house.ga.gov/SiteCollectionImages/CoxClay87.jpg
 party:
 - name: Republican
 roles:
-- district: '108'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '108'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=87&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000455
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=87&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/CoxClay87.jpg
-family_name: Cox
-given_name: Clay
 extras:
   guid: 87
-other_identifiers:
-- identifier: GAL000455
-  scheme: legacy_openstates

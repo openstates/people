@@ -1,11 +1,15 @@
 id: ocd-person/b7b2494c-4f79-4abf-865b-9cbf3f3aaf5d
 name: Tom Briese
+given_name: Tom
+family_name: Briese
+email: tbriese@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist41.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '41'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '41'
 contact_details:
 - note: Capitol Office
   address: Room 1019; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist41
 - url: http://news.legislature.ne.gov/dist41/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000091
+- scheme: legacy_openstates
+  identifier: NEL000155
 sources:
 - url: http://news.legislature.ne.gov/dist41
 - url: http://news.legislature.ne.gov/dist41/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist41.jpg
-other_identifiers:
-- identifier: NEL000091
-  scheme: legacy_openstates
-- identifier: NEL000155
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Briese
-email: tbriese@leg.ne.gov

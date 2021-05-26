@@ -1,23 +1,23 @@
 id: ocd-person/78d8937f-740a-4f3a-a6a4-5a2884d7997e
 name: Mable Thomas
+given_name: Mable
+family_name: Thomas
+email: mable.thomas@house.ga.gov
+image: http://www.house.ga.gov/SiteCollectionImages/ThomasMable224.jpg
 party:
 - name: Democratic
 roles:
-- district: '56'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '56'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=224&Session=27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000366
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=224&Session=27
-image: http://www.house.ga.gov/SiteCollectionImages/ThomasMable224.jpg
-family_name: Thomas
-given_name: Mable
 extras:
   guid: 224
-other_identifiers:
-- identifier: GAL000366
-  scheme: legacy_openstates
-email: mable.thomas@house.ga.gov

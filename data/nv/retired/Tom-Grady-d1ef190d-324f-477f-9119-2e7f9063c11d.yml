@@ -2,25 +2,25 @@ id: ocd-person/d1ef190d-324f-477f-9119-2e7f9063c11d
 name: Tom Grady
 given_name: Tom
 family_name: Grady
+image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Grady.jpg
 party:
 - name: Republican
 roles:
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Grady.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '38'
 links:
 - url: http://www.leg.state.nv.us/Session/76th2011/legislators/Assembly/alist.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000080
+- scheme: legacy_openstates
+  identifier: NVL000038
+- scheme: legacy_openstates
+  identifier: NVL000177
+- scheme: legacy_openstates
+  identifier: NVL000222
 sources:
 - url: http://www.leg.state.nv.us/App/Legislator/A/Assembly/28th2014Special/38
-other_identifiers:
-- identifier: NVL000080
-  scheme: legacy_openstates
-- identifier: NVL000038
-  scheme: legacy_openstates
-- identifier: NVL000177
-  scheme: legacy_openstates
-- identifier: NVL000222
-  scheme: legacy_openstates

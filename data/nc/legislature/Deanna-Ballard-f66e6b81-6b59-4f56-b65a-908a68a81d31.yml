@@ -1,20 +1,26 @@
 id: ocd-person/f66e6b81-6b59-4f56-b65a-908a68a81d31
 name: Deanna Ballard
+given_name: Deanna
+family_name: Ballard
+email: Deanna.Ballard@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/S/396/High
 party:
 - name: Republican
 roles:
-- district: '45'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
+  district: '45'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 521;Raleigh, NC 27603
   voice: 919-733-5742
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/396
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000358
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/396
-image: https://www.ncleg.gov/Members/MemberImage/S/396/High
 extras:
   counties:
   - Alleghany
@@ -23,9 +29,3 @@ extras:
   - Watauga
   - Wilkes
   notice: null
-other_identifiers:
-- identifier: NCL000358
-  scheme: legacy_openstates
-given_name: Deanna
-family_name: Ballard
-email: Deanna.Ballard@ncleg.gov

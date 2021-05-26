@@ -1,11 +1,14 @@
 id: ocd-person/b1ab473b-e7ff-4c53-96af-ee796c89f4dd
 name: Tony Hwang
+given_name: Tony
+family_name: Hwang
+email: Tony.Hwang@cga.ct.gov
 party:
 - name: Republican
 roles:
-- district: '28'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '28'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3602;Hartford, CT 06106
@@ -15,15 +18,12 @@ contact_details:
   voice: 203-255-5555
 links:
 - url: http://www.ctsenaterepublicans.com/home-Hwang
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000170
-  scheme: legacy_openstates
-- identifier: CTL000272
-  scheme: legacy_openstates
-given_name: Tony
-family_name: Hwang
-email: Tony.Hwang@cga.ct.gov
 other_names:
 - name: Hwang, Tony
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000170
+- scheme: legacy_openstates
+  identifier: CTL000272
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

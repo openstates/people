@@ -5,13 +5,13 @@ family_name: Rodriguez
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '33'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000102
 sources:
 - url: ftp://www.njleg.state.nj.us/ag/2008data/ROSTER.DBF
-other_identifiers:
-- identifier: NJL000102
-  scheme: legacy_openstates

@@ -1,22 +1,26 @@
 id: ocd-person/426d94ce-e49c-4d56-a185-9eb9c628c006
 name: Toni G. Atkins
+given_name: Toni
+family_name: Atkins
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/pro-tem-atkins_0.jpg
 party:
 - name: Democratic
 roles:
-- district: '76'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: 2010-12-06
+- start_date: 2010-12-06
   end_date: 2012-11-30
-- district: '78'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: lower
-  start_date: 2012-12-03
-  end_date: 2016-11-30
-- district: '39'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '76'
+- start_date: 2012-12-03
+  end_date: 2016-11-30
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '78'
+- start_date: 2016-12-05
   type: upper
-  start_date: 2016-12-05
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '39'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 205, Sacramento, CA 95814-4900
@@ -26,26 +30,22 @@ contact_details:
   voice: 619-645-3133
 links:
 - url: https://senate.ca.gov/sd39
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD39&inframe=N
-sources:
-- url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/pro-tem-atkins_0.jpg
-other_identifiers:
-- identifier: CAL000511
-  scheme: legacy_openstates
-- identifier: CAL000144
-  scheme: legacy_openstates
-- identifier: CAL000217
-  scheme: legacy_openstates
-- identifier: CAL000340
-  scheme: legacy_openstates
-- identifier: CAL000432
-  scheme: legacy_openstates
-- identifier: ocd-person/4a469b57-af04-4bbe-bec7-145686fc3e55
-  scheme: openstates
-given_name: Toni
-family_name: Atkins
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD39&inframe=N
+  note: Contact Form
 other_names:
 - name: Toni Atkins
-gender: Female
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000511
+- scheme: legacy_openstates
+  identifier: CAL000144
+- scheme: legacy_openstates
+  identifier: CAL000217
+- scheme: legacy_openstates
+  identifier: CAL000340
+- scheme: legacy_openstates
+  identifier: CAL000432
+- scheme: openstates
+  identifier: ocd-person/4a469b57-af04-4bbe-bec7-145686fc3e55
+sources:
+- url: http://senate.ca.gov/senators

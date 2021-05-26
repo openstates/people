@@ -1,11 +1,15 @@
 id: ocd-person/1afb7f61-3f23-48d7-a596-09ad5a556449
 name: Fred Patton
+given_name: Fred
+family_name: Patton
+email: fred.patton@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_patton_fred_1.jpg
 party:
 - name: Republican
 roles:
-- district: '50'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
+  district: '50'
 contact_details:
 - note: Capitol Office
   address: Room 519-N;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -13,16 +17,12 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/rep_patton_fred_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_patton_fred_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000289
+- scheme: legacy_openstates
+  identifier: KSL000303
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_patton_fred_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_patton_fred_1.jpg
 extras:
   occupation: Attorney
-other_identifiers:
-- identifier: KSL000289
-  scheme: legacy_openstates
-- identifier: KSL000303
-  scheme: legacy_openstates
-given_name: Fred
-family_name: Patton
-email: fred.patton@house.ks.gov

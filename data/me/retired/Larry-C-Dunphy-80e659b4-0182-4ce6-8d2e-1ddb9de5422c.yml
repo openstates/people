@@ -3,29 +3,29 @@ name: Larry C. Dunphy
 given_name: Larry
 family_name: Dunphy
 middle_name: C.
+image: http://www.maine.gov/legis/house/photo125/dunplc.jpg
 party:
 - name: Independent
-- name: Republican
-  end_date: '2015-07-22'
+- end_date: '2015-07-22'
+  name: Republican
 roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '88'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '118'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.maine.gov/legis/house/photo125/dunplc.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '88'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/dunplc.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000123
+- scheme: legacy_openstates
+  identifier: MEL000289
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/dunplc.htm
-other_identifiers:
-- identifier: MEL000123
-  scheme: legacy_openstates
-- identifier: MEL000289
-  scheme: legacy_openstates

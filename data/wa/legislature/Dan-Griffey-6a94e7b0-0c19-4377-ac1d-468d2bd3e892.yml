@@ -1,11 +1,15 @@
 id: ocd-person/6a94e7b0-0c19-4377-ac1d-468d2bd3e892
 name: Dan Griffey
+given_name: Dan
+family_name: Griffey
+email: dan.griffey@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/griffey.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '35'
 contact_details:
 - note: Capitol Office
   address: 403 John L. O'Brien Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://houserepublicans.wa.gov/Dan-Griffey/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: http://DanGriffey.houserepublicans.wa.gov/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000212
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/griffey.jpg
-other_identifiers:
-- identifier: WAL000212
-  scheme: legacy_openstates
-given_name: Dan
-family_name: Griffey
-email: dan.griffey@leg.wa.gov

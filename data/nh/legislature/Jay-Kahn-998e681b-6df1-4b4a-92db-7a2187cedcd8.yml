@@ -1,11 +1,15 @@
 id: ocd-person/998e681b-6df1-4b4a-92db-7a2187cedcd8
 name: Jay Kahn
+given_name: Jay
+family_name: Kahn
+email: Jay.Kahn@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/Senate/images/senators/10.jpg
 party:
 - name: Democratic
 roles:
-- district: '10'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
+  district: '10'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building, Room 102;33 North State Street;Concord, NH
@@ -14,18 +18,14 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001460
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district10.aspx
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/Senate/images/senators/10.jpg
 extras:
   first_name: Jay
   last_name: Kahn
   middle_name: ''
-other_identifiers:
-- identifier: NHL001460
-  scheme: legacy_openstates
-given_name: Jay
-family_name: Kahn
-email: Jay.Kahn@leg.state.nh.us

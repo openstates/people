@@ -2,26 +2,26 @@ id: ocd-person/475e534d-6723-4147-bad5-24219568ccdc
 name: Terry Boose
 given_name: Terry
 family_name: Boose
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/57.jpg
 party:
 - name: Republican
 roles:
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '58'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '57'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/57.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '58'
 links:
 - url: http://www.ohiohouse.gov/terry-boose
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000091
+- scheme: legacy_openstates
+  identifier: OHL000226
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000091
-  scheme: legacy_openstates
-- identifier: OHL000226
-  scheme: legacy_openstates

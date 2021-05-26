@@ -2,28 +2,28 @@ id: ocd-person/6c298d59-9379-4e01-a747-620d27eba6b1
 name: Daniel Kelley
 given_name: Daniel
 family_name: Kelley
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=9399
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '41'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '29'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=9399
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '41'
 links:
 - url: https://www.legis.iowa.gov/legislators/house
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000092
+- scheme: legacy_openstates
+  identifier: IAL000165
+- scheme: legacy_openstates
+  identifier: IAL000267
 sources:
 - url: https://www.legis.iowa.gov/legislators/house
-other_identifiers:
-- identifier: IAL000092
-  scheme: legacy_openstates
-- identifier: IAL000165
-  scheme: legacy_openstates
-- identifier: IAL000267
-  scheme: legacy_openstates

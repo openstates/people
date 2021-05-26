@@ -1,11 +1,15 @@
 id: ocd-person/26c38427-62d3-440b-9253-c3e485fbd8ea
 name: John G. Faulkner
+given_name: John G.
+family_name: Faulkner
+email: jfaulkner@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/faulkner.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 662-350-0339
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/faulkner.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000240
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/faulkner.xml
-image: http://billstatus.ls.state.ms.us/members/house/faulkner.jpg
 extras:
   org_info: Representative Faulkner is the chairman of Crime Stoppers for Marshall/Panola
     Counties, a member of Marshall County IDA Board of Directors, 32nd Degree Mason
     (Shriners) Prince Hall Affiliated, and NAACP.
-other_identifiers:
-- identifier: MSL000240
-  scheme: legacy_openstates
-given_name: John G.
-family_name: Faulkner
-email: jfaulkner@house.ms.gov

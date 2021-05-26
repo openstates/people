@@ -3,26 +3,26 @@ name: Amy S Perkins
 given_name: Amy
 family_name: Perkins
 middle_name: S
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376849.jpg
 party:
 - name: Republican
 roles:
-- district: Rockingham 20
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: Rockingham 14
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 20
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376849.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 14
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376849
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000289
+- scheme: legacy_openstates
+  identifier: NHL000690
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- identifier: NHL000289
-  scheme: legacy_openstates
-- identifier: NHL000690
-  scheme: legacy_openstates

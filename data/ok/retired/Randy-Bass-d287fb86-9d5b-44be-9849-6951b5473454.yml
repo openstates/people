@@ -1,23 +1,23 @@
 id: ocd-person/d287fb86-9d5b-44be-9849-6951b5473454
 name: Randy Bass
+given_name: Randy
+family_name: Bass
 party:
 - name: Democratic
 roles:
-- district: '32'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+- end_date: '2018-11-06'
   type: upper
-  end_date: '2018-11-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '32'
 links:
 - url: http://oksenate.gov/Senators/biographies/bass_bio.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000007
+- scheme: legacy_openstates
+  identifier: OKL000249
 sources:
 - url: http://oksenate.gov/Senators/biographies/bass_bio.aspx
 - url: http://oksenate.gov/Senators/biographies/bass_bio.html
 extras:
   email: bass@oksenate.gov
-other_identifiers:
-- identifier: OKL000007
-  scheme: legacy_openstates
-- identifier: OKL000249
-  scheme: legacy_openstates
-given_name: Randy
-family_name: Bass

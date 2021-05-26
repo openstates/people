@@ -2,28 +2,28 @@ id: ocd-person/a3808af5-5422-4763-8969-ddf1e82d31ba
 name: Jeff Gorell
 given_name: Jeff
 family_name: Gorell
+image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/37.jpg?1320968716
 party:
 - name: Republican
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '37'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/37.jpg?1320968716
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '44'
 links:
 - url: http://arc.asm.ca.gov/member/AD44
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000160
+- scheme: legacy_openstates
+  identifier: CAL000248
+- scheme: legacy_openstates
+  identifier: CAL000370
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_identifiers:
-- identifier: CAL000160
-  scheme: legacy_openstates
-- identifier: CAL000248
-  scheme: legacy_openstates
-- identifier: CAL000370
-  scheme: legacy_openstates

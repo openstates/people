@@ -1,16 +1,20 @@
 id: ocd-person/1063d5d1-d080-44bb-b4cb-1f8a923c6530
 name: Mark Nye
+given_name: Mark
+family_name: Nye
+email: MNye@senate.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Nye3134.jpg
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: '29'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
+  district: '29'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '29'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1406
@@ -18,16 +22,12 @@ contact_details:
   address: PO Box N, Pocatello, ID, 83205-0040
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=29
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000286
+- scheme: legacy_openstates
+  identifier: IDL000212
+- scheme: openstates
+  identifier: ocd-person/16471aa1-de39-4863-b900-c6f4c9dff7bc
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Nye3134.jpg
-other_identifiers:
-- identifier: IDL000286
-  scheme: legacy_openstates
-- identifier: IDL000212
-  scheme: legacy_openstates
-- identifier: ocd-person/16471aa1-de39-4863-b900-c6f4c9dff7bc
-  scheme: openstates
-given_name: Mark
-family_name: Nye
-email: MNye@senate.idaho.gov

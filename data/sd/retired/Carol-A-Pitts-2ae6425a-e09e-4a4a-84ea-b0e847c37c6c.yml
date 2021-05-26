@@ -3,17 +3,17 @@ name: Carol A Pitts
 given_name: Carol
 family_name: Pitts
 middle_name: A
+image: http://legis.state.sd.us/sessions/2009/pitts.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2009/pitts.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '7'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000082
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=20
-other_identifiers:
-- identifier: SDL000082
-  scheme: legacy_openstates

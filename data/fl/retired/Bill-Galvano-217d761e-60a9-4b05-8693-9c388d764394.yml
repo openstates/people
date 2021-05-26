@@ -1,32 +1,32 @@
 id: ocd-person/217d761e-60a9-4b05-8693-9c388d764394
 name: Bill Galvano
+given_name: Bill
+family_name: Galvano
+email: galvano.bill.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s21_5098.jpg
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '26'
+- end_date: '2020-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '21'
 links:
 - url: http://www.flsenate.gov/Senators/s21
 - url: http://www.flsenate.gov/Senators/2018-2020/S21
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000521
+- scheme: legacy_openstates
+  identifier: FLL000181
+- scheme: openstates
+  identifier: ocd-person/59d386dd-86ae-40ae-a03d-54c679f27eaf
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s21
 - url: http://www.flsenate.gov/Senators/2018-2020/S21
-image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s21_5098.jpg
-other_identifiers:
-- identifier: FLL000521
-  scheme: legacy_openstates
-- identifier: FLL000181
-  scheme: legacy_openstates
-- identifier: ocd-person/59d386dd-86ae-40ae-a03d-54c679f27eaf
-  scheme: openstates
-given_name: Bill
-family_name: Galvano
-email: galvano.bill.web@flsenate.gov

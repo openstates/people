@@ -1,21 +1,30 @@
 id: ocd-person/5d8ada2a-75c6-4aa6-b359-29720794fb7e
 name: Casey Snider
+given_name: Casey
+family_name: Snider
+email: csnider@le.utah.gov
+image: https://le.utah.gov/images/legislator/SNIDEC.jpg
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- start_date: '2019-01-01'
   type: lower
-  start_date: '2019-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '5'
 contact_details:
 - note: District Office
   address: PO BOX 450, PARADISE, UT, 84328
   voice: 435-890-3383
 links:
 - url: http://house.utah.gov/rep/SNIDEC
+other_names:
+- name: Snider, C.
+- name: Snider, Casey
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000309
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/SNIDEC.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFISNIDEC3.pdf
@@ -23,12 +32,3 @@ extras:
   - https://le.utah.gov/house2/CofI/COFISNIDEC1.pdf
   - https://le.utah.gov/house2/CofI/COFISNIDEC.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414881
-other_identifiers:
-- identifier: UTL000309
-  scheme: legacy_openstates
-given_name: Casey
-family_name: Snider
-email: csnider@le.utah.gov
-other_names:
-- name: Snider, C.
-- name: Snider, Casey

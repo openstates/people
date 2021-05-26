@@ -1,25 +1,25 @@
 id: ocd-person/c3763901-5a4f-49b3-966a-74b80b1e3c2b
 name: Scott Stone
+given_name: Scott
+family_name: Stone
+image: http://www.ncleg.net/House/pictures/hiRes/706.jpg
 party:
 - name: Republican
 roles:
-- district: '105'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '105'
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=706
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000361
+- scheme: legacy_openstates
+  identifier: NCL000362
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=706
-image: http://www.ncleg.net/House/pictures/hiRes/706.jpg
 extras:
   counties:
   - Mecklenburg
   notice: null
-other_identifiers:
-- identifier: NCL000361
-  scheme: legacy_openstates
-- identifier: NCL000362
-  scheme: legacy_openstates
-given_name: Scott
-family_name: Stone

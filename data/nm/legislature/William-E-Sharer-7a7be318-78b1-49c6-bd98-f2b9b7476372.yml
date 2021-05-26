@@ -1,11 +1,15 @@
 id: ocd-person/7a7be318-78b1-49c6-bd98-f2b9b7476372
 name: William E. Sharer
+given_name: William
+family_name: Sharer
+email: bill@williamsharer.com
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SSHAR.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: Room 415H State Capitol;Santa Fe, NM 87501
@@ -14,23 +18,19 @@ contact_details:
   address: PO Box 203;Farmington, NM 87499
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSHAR
-- note: linkedin
-  url: https://www.linkedin.com/in/william-sharer-71248033/
+- url: https://www.linkedin.com/in/william-sharer-71248033/
+  note: linkedin
+ids:
+  twitter: billsharer
+  facebook: bill.sharer.9
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000001
+- scheme: legacy_openstates
+  identifier: NML000170
+- scheme: legacy_openstates
+  identifier: NML000341
+- scheme: legacy_openstates
+  identifier: NML000405
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSHAR
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SSHAR.jpg
-other_identifiers:
-- identifier: NML000001
-  scheme: legacy_openstates
-- identifier: NML000170
-  scheme: legacy_openstates
-- identifier: NML000341
-  scheme: legacy_openstates
-- identifier: NML000405
-  scheme: legacy_openstates
-given_name: William
-family_name: Sharer
-email: bill@williamsharer.com
-ids:
-  facebook: bill.sharer.9
-  twitter: billsharer

@@ -1,11 +1,14 @@
 id: ocd-person/7689046b-7757-475e-ba24-1e20ecf169b4
 name: Edwin Vargas
+given_name: Edwin
+family_name: Vargas
+email: Edwin.Vargas@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '6'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 1003;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-956-1503
 links:
 - url: http://www.housedems.ct.gov/Vargas
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000195
-  scheme: legacy_openstates
-given_name: Edwin
-family_name: Vargas
-email: Edwin.Vargas@cga.ct.gov
 other_names:
 - name: Vargas, Edwin
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000195
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

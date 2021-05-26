@@ -2,19 +2,19 @@ id: ocd-person/f4aa52fd-c29d-4db0-90f6-3d2610fe19a3
 name: Walter Michel
 given_name: Walter
 family_name: Michel
+image: http://billstatus.ls.state.ms.us/members/senate/michel.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/michel.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '25'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/michel.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000050
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/michel.xml
-other_identifiers:
-- identifier: MSL000050
-  scheme: legacy_openstates

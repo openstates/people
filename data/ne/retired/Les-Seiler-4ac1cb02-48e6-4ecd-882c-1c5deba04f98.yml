@@ -2,19 +2,19 @@ id: ocd-person/4ac1cb02-48e6-4ecd-882c-1c5deba04f98
 name: Les Seiler
 given_name: Les
 family_name: Seiler
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist33.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist33.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '33'
 links:
 - url: http://news.legislature.ne.gov/dist33
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000053
 sources:
 - url: http://news.legislature.ne.gov/dist33
-other_identifiers:
-- identifier: NEL000053
-  scheme: legacy_openstates

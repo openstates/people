@@ -1,17 +1,22 @@
 id: ocd-person/b91459e7-2049-4cf9-8b0b-f769ce373613
 name: Lynn Hutchings
+given_name: Lynn
+family_name: Hutchings
+email: Lynn.Hutchings@wyoleg.gov
+birth_date: 1960-09-06
+image: http://wyoleg.gov/LegislatorSummary/Photos/HutchingsLS05.jpg
 party:
 - name: Republican
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2014-12-31
-- district: '5'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '42'
+- start_date: '2019-01-07'
   type: upper
-  start_date: '2019-01-07'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '5'
 contact_details:
 - note: District Office
   address: P.O. Box 9603, Cheyenne WY 82003
@@ -19,13 +24,14 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1997
 - url: http://wyoleg.gov/Legislators/2021/R/1997
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000101
+- scheme: openstates
+  identifier: ocd-person/f2828e56-955b-419f-9ae3-a35439c3e867
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1997
 - url: http://wyoleg.gov/Legislators/2021/R/1997
-image: http://wyoleg.gov/LegislatorSummary/Photos/HutchingsLS05.jpg
-birth_date: '1960-09-06'
-given_name: Lynn
-family_name: Hutchings
 extras:
   county: Laramie
   number_children: ''
@@ -34,9 +40,3 @@ extras:
   religion: Christian
   spouse_given_name: Thomas
   wy_leg_id: 1997
-other_identifiers:
-- identifier: WYL000101
-  scheme: legacy_openstates
-- identifier: ocd-person/f2828e56-955b-419f-9ae3-a35439c3e867
-  scheme: openstates
-email: Lynn.Hutchings@wyoleg.gov

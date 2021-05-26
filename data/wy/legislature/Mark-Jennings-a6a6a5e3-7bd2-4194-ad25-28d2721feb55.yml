@@ -1,11 +1,16 @@
 id: ocd-person/a6a6a5e3-7bd2-4194-ad25-28d2721feb55
 name: Mark Jennings
+given_name: Mark
+family_name: Jennings
+email: Mark.Jennings@wyoleg.gov
+birth_date: 1961-05-04
+image: http://wyoleg.gov/LegislatorSummary/Photos/jenningsmH30.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '30'
 contact_details:
 - note: District Office
   address: 765 W. Timberline Drive, Sheridan WY 82801
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2015
 - url: http://wyoleg.gov/Legislators/2021/R/2015
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000121
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2015
 - url: http://wyoleg.gov/Legislators/2021/R/2015
-image: http://wyoleg.gov/LegislatorSummary/Photos/jenningsmH30.jpg
-birth_date: '1961-05-04'
-given_name: Mark
-family_name: Jennings
 extras:
   county: Sheridan
   education:
@@ -41,7 +45,3 @@ extras:
   religion: Christian
   spouse_given_name: Dana
   wy_leg_id: 2015
-other_identifiers:
-- identifier: WYL000121
-  scheme: legacy_openstates
-email: Mark.Jennings@wyoleg.gov

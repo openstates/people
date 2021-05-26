@@ -2,20 +2,20 @@ id: ocd-person/cbb1aabc-2984-4dc6-b78e-ea3eed3d6e95
 name: Mike Brown
 given_name: Mike
 family_name: Brown
+image: http://www.okhouse.gov/Members/Pictures/Brown.jpg
 party:
 - name: Democratic
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.okhouse.gov/Members/Pictures/Brown.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '4'
 links:
 - url: http://www.okhouse.gov/District.aspx?District=4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000054
 sources:
 - url: http://www.okhouse.gov/Members/Default.aspx
 - url: http://www.okhouse.gov/District.aspx?District=4
-other_identifiers:
-- identifier: OKL000054
-  scheme: legacy_openstates

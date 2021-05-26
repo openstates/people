@@ -1,19 +1,26 @@
 id: ocd-person/1ec6a491-f3c0-4d80-b9c0-fb4eb89b6465
 name: Doug Beck
+given_name: Doug
+family_name: Beck
+email: Doug.Beck@house.mo.gov
+image: https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Beck2021-200x300.jpg
 party:
 - name: Democratic
 roles:
-- district: '92'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
-- district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '92'
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '1'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=92
 - url: https://www.senate.mo.gov/mem01
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000456
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=92
@@ -22,10 +29,3 @@ sources:
 extras:
   first_name: Doug
   last_name: Beck
-other_identifiers:
-- identifier: MOL000456
-  scheme: legacy_openstates
-given_name: Doug
-family_name: Beck
-email: Doug.Beck@house.mo.gov
-image: https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Beck2021-200x300.jpg

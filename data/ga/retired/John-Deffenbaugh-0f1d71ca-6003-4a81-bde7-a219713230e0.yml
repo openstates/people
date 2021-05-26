@@ -1,22 +1,22 @@
 id: ocd-person/0f1d71ca-6003-4a81-bde7-a219713230e0
 name: John Deffenbaugh
+given_name: John
+family_name: Deffenbaugh
+image: http://www.house.ga.gov/SiteCollectionImages/DeffenbaughJohn816.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=816&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000267
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=816&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/DeffenbaughJohn816.jpg
-family_name: Deffenbaugh
-given_name: John
 extras:
   guid: 816
-other_identifiers:
-- identifier: GAL000267
-  scheme: legacy_openstates

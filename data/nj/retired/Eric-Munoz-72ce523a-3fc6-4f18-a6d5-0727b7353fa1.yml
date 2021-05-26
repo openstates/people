@@ -5,13 +5,13 @@ family_name: Munoz
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2009-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '21'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000141
 sources:
 - url: ftp://www.njleg.state.nj.us/ag/2008data/ROSTER.DBF
-other_identifiers:
-- identifier: NJL000141
-  scheme: legacy_openstates

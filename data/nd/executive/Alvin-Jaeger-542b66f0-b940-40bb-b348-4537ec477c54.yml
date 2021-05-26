@@ -2,22 +2,21 @@ id: ocd-person/542b66f0-b940-40bb-b348-4537ec477c54
 name: Alvin Jaeger
 given_name: Alvin
 family_name: Jaeger
+email: sos@nd.gov
+party:
+- name: Republican
 roles:
 - end_date: '2021-12-31'
-  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   type: secretary of state
+  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
 contact_details:
 - note: Capitol Office
   address: 600 E. Boulevard Ave. Dept. 108 ; ; Bismarck, ND 58505-0500
-  fax: 701-328-2992
   voice: 701-328-2900
-ids: {}
-sources:
-- url: http://sos.nd.gov
+  fax: 701-328-2992
 links:
 - url: http://sos.nd.gov
-- note: webform
-  url: http://sos.nd.gov/office-secretary-state/contact-us
-party:
-- name: Republican
-email: sos@nd.gov
+- url: http://sos.nd.gov/office-secretary-state/contact-us
+  note: webform
+sources:
+- url: http://sos.nd.gov

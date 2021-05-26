@@ -1,11 +1,15 @@
 id: ocd-person/9ed8fe52-b020-47d3-92d5-621e32f42e94
 name: Patricia C. Bates
+given_name: Patricia
+family_name: Bates
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/bates-patricia.jpg
 party:
 - name: Republican
 roles:
-- district: '36'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '36'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 3048, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 760-642-0809
 links:
 - url: http://senate.ca.gov/sd36
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD36&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD36&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000475
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/bates-patricia.jpg
-other_identifiers:
-- identifier: CAL000475
-  scheme: legacy_openstates
-given_name: Patricia
-family_name: Bates
-gender: Female

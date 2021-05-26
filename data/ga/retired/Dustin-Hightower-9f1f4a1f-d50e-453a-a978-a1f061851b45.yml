@@ -2,20 +2,20 @@ id: ocd-person/9f1f4a1f-d50e-453a-a978-a1f061851b45
 name: Dustin Hightower
 given_name: Dustin
 family_name: Hightower
+image: http://www.house.ga.gov/SiteCollectionImages/HightowerDustin800.jpg
 party:
 - name: Republican
 roles:
-- district: '68'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/HightowerDustin800.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '68'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=800&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000301
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=800&Session=24
-other_identifiers:
-- identifier: GAL000301
-  scheme: legacy_openstates

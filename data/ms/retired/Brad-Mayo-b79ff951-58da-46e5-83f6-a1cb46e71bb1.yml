@@ -2,19 +2,19 @@ id: ocd-person/b79ff951-58da-46e5-83f6-a1cb46e71bb1
 name: Brad Mayo
 given_name: Brad
 family_name: Mayo
+image: http://billstatus.ls.state.ms.us/members/house/mayo.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/mayo.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '12'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mayo.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000198
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mayo.xml
-other_identifiers:
-- identifier: MSL000198
-  scheme: legacy_openstates

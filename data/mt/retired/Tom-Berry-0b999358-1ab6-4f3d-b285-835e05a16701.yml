@@ -2,27 +2,27 @@ id: ocd-person/0b999358-1ab6-4f3d-b285-835e05a16701
 name: Tom Berry
 given_name: Tom
 family_name: Berry
+image: http://leg.mt.gov/images/legislators_64th/13619.jpg
 party:
 - name: Republican
 roles:
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '45'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/13619.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '40'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13619
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000059
+- scheme: legacy_openstates
+  identifier: MTL000351
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13619
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000059
-  scheme: legacy_openstates
-- identifier: MTL000351
-  scheme: legacy_openstates

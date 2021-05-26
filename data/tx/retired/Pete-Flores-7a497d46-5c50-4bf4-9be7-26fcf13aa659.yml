@@ -1,22 +1,7 @@
 id: ocd-person/7a497d46-5c50-4bf4-9be7-26fcf13aa659
 name: Pete Flores
-party:
-- name: Republican
-roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-  end_date: '2020-12-31'
-links:
-- url: https://senate.texas.gov/member.php?d=19
-sources:
-- url: https://senate.texas.gov/member.php?d=19
-other_identifiers:
-- identifier: TXL000723
-  scheme: legacy_openstates
 given_name: Pete
 family_name: Flores
-image: https://senate.texas.gov/members/d19/img/Flores_86-0634D-001_web.jpg
 biography: "Senator Peter P. Flores was raised in South Texas, graduating from Laredo\
   \ Martin High School and then attending Laredo Junior College before transferring\
   \ and graduating from Texas A&M University in College Station. \r \r Senator Flores\
@@ -41,4 +26,19 @@ biography: "Senator Peter P. Flores was raised in South Texas, graduating from L
   \ of his service to Senate District 19, is willing to write formal letters of recommendation\
   \ to qualified constituents applying for jobs, scholarships, awards, etc. If you\
   \ are a constituent seeking a letter of recommendation, please see the following\
-  \ document for more information: "
+  \ document for more information:"
+image: https://senate.texas.gov/members/d19/img/Flores_86-0634D-001_web.jpg
+party:
+- name: Republican
+roles:
+- end_date: '2020-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '19'
+links:
+- url: https://senate.texas.gov/member.php?d=19
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000723
+sources:
+- url: https://senate.texas.gov/member.php?d=19

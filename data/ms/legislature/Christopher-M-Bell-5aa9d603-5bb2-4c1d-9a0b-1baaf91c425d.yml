@@ -1,11 +1,15 @@
 id: ocd-person/5aa9d603-5bb2-4c1d-9a0b-1baaf91c425d
 name: Christopher M. Bell
+given_name: Christopher M.
+family_name: Bell
+email: cbell@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/bell_(65th).jpg
 party:
 - name: Democratic
 roles:
-- district: '65'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '65'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -14,20 +18,16 @@ contact_details:
   address: 510 George St Suite 239;Jackson, MS 39202
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bell_(65th).xml
+other_names:
+- name: Bell (65th)
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000263
+- scheme: legacy_openstates
+  identifier: MSL000294
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/bell_(65th).xml
-image: http://billstatus.ls.state.ms.us/members/house/bell_(65th).jpg
 extras:
   org_info: Omega Psi Phi, Board of Trustees Leadership Greater Jackson, Anderson
     United Methodist Church, Sunrise Rotary Club, Jackson Chamber of Commerce, and
     Anderson Outreach CDC Board.
-other_identifiers:
-- identifier: MSL000263
-  scheme: legacy_openstates
-- identifier: MSL000294
-  scheme: legacy_openstates
-given_name: Christopher M.
-family_name: Bell
-email: cbell@house.ms.gov
-other_names:
-- name: Bell (65th)

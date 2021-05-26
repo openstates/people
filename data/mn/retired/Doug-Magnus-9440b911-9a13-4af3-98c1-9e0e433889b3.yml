@@ -2,26 +2,26 @@ id: ocd-person/9440b911-9a13-4af3-98c1-9e0e433889b3
 name: Doug Magnus
 given_name: Doug
 family_name: Magnus
+image: http://www.senate.leg.state.mn.us//graphics/22Magnus.jpg
 party:
 - name: Republican
 roles:
-- district: 22A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '22'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
-  start_date: '2011-01-01'
+  district: 22A
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senate.leg.state.mn.us//graphics/22Magnus.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '22'
 links:
 - url: http://www.senate.leg.state.mn.us//members/member_bio.php?mem_id=1175&ls=
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000110
+- scheme: legacy_openstates
+  identifier: MNL000217
 sources:
 - url: http://www.senate.leg.state.mn.us/members/member_list.php
-other_identifiers:
-- identifier: MNL000110
-  scheme: legacy_openstates
-- identifier: MNL000217
-  scheme: legacy_openstates

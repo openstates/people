@@ -1,11 +1,15 @@
 id: ocd-person/b90d629d-9f8b-421a-88e3-9f72580cdd37
 name: John Horhn
+given_name: John
+family_name: Horhn
+email: jhorhn@senate.ms.gov
+image: http://billstatus.ls.state.ms.us/members/senate/horhn.jpg
 party:
 - name: Democratic
 roles:
-- district: '26'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
+  district: '26'
 contact_details:
 - note: Capitol Office
   address: Room 212 B;P. O. Box 1018;Jackson, MS 39215
@@ -15,9 +19,11 @@ contact_details:
   voice: 601-362-1045
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/horhn.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000045
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/horhn.xml
-image: http://billstatus.ls.state.ms.us/members/senate/horhn.jpg
 extras:
   org_info: Senator Horhn holds memberships in Phi Beta Sigma, Sigma Alpha Epsilon,
     A. Philip Randolph Institute, NAACP and Leadership Jackson Alumni Association.
@@ -26,9 +32,3 @@ extras:
     is also a board member of New Stage Theatre and Rainbow Health Food Co-op. He
     has appeared in several movies and television programs and is a member of the
     Screen Actors Guild.
-other_identifiers:
-- identifier: MSL000045
-  scheme: legacy_openstates
-given_name: John
-family_name: Horhn
-email: jhorhn@senate.ms.gov

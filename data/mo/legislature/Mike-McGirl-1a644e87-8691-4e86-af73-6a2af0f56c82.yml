@@ -1,19 +1,25 @@
 id: ocd-person/1a644e87-8691-4e86-af73-6a2af0f56c82
 name: Mike McGirl
+given_name: Mike
+family_name: McGirl
+email: Mike.McGirl@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2065
 party:
 - name: Republican
 roles:
-- district: '118'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '118'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 201-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 201-B; Jefferson
+    City MO 65101
   voice: 573-751-2398
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=118
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=118
+other_names:
+- name: McGirl, Mike
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=118
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Mike
   last_name: McGirl
-email: Mike.McGirl@house.mo.gov
-family_name: McGirl
-image: https://house.mo.gov/MemberPhoto.aspx?id=2065
-given_name: Mike
-other_names:
-- name: McGirl, Mike

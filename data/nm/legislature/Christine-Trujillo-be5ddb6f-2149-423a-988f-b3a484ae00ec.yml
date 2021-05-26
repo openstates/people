@@ -1,11 +1,15 @@
 id: ocd-person/be5ddb6f-2149-423a-988f-b3a484ae00ec
 name: Christine Trujillo
+given_name: Christine
+family_name: Trujillo
+email: christine.trujillo@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/House/HTRCH.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: Room 413A State Capitol;Santa Fe, NM 87501
@@ -15,21 +19,17 @@ contact_details:
   voice: 505-235-8783
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HTRCH
-- note: linkedin
-  url: https://www.linkedin.com/in/christine-trujillo-2184b74/
+- url: https://www.linkedin.com/in/christine-trujillo-2184b74/
+  note: linkedin
+ids:
+  twitter: elect_christine
+  facebook: electchristine
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000152
+- scheme: legacy_openstates
+  identifier: NML000236
+- scheme: legacy_openstates
+  identifier: NML000324
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HTRCH
-image: http://www.nmlegis.gov/Images/Legislators/House/HTRCH.jpg
-other_identifiers:
-- identifier: NML000152
-  scheme: legacy_openstates
-- identifier: NML000236
-  scheme: legacy_openstates
-- identifier: NML000324
-  scheme: legacy_openstates
-given_name: Christine
-family_name: Trujillo
-email: christine.trujillo@nmlegis.gov
-ids:
-  facebook: electchristine
-  twitter: elect_christine

@@ -2,27 +2,27 @@ id: ocd-person/82abb7e4-e8e4-45b4-a35a-1993fc99ede3
 name: Nancy Wilson
 given_name: Nancy
 family_name: Wilson
+image: http://leg.mt.gov/images/legislators_64th/15265.jpg
 party:
 - name: Democratic
 roles:
-- district: '97'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '97'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/15265.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '95'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15265
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000224
+- scheme: legacy_openstates
+  identifier: MTL000264
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15265
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000224
-  scheme: legacy_openstates
-- identifier: MTL000264
-  scheme: legacy_openstates

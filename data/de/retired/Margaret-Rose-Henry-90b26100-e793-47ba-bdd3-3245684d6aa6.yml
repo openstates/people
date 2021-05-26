@@ -1,23 +1,23 @@
 id: ocd-person/90b26100-e793-47ba-bdd3-3245684d6aa6
 name: Margaret Rose Henry
+given_name: Margaret Rose
+family_name: Henry
+image: https://legis.delaware.gov/images/default-source/Legislators/MargaretRoseHenry.jpg?sfvrsn=2
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '2'
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=227
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/Senate
-image: https://legis.delaware.gov/images/default-source/Legislators/MargaretRoseHenry.jpg?sfvrsn=2
+- url: https://legis.delaware.gov/LegislatorDetail?personId=227
+  note: legislator page
 other_identifiers:
-- identifier: DEL000011
-  scheme: legacy_openstates
-- identifier: DEL000070
-  scheme: legacy_openstates
-given_name: Margaret Rose
-family_name: Henry
+- scheme: legacy_openstates
+  identifier: DEL000011
+- scheme: legacy_openstates
+  identifier: DEL000070
+sources:
+- url: https://legis.delaware.gov/Senate
+  note: legislator list page

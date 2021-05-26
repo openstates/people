@@ -2,26 +2,26 @@ id: ocd-person/70810e11-4ab4-46c2-b5dc-2f046ff9f616
 name: Roy Lacey
 given_name: Roy
 family_name: Lacey
+image: http://legislature.idaho.gov/images/Lacey1180.jpg
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '30'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '29'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Lacey1180.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '30'
 links:
 - url: http://legislature.idaho.gov/senate/membershipSingle.cfm?ID=1180
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000071
+- scheme: legacy_openstates
+  identifier: IDL000124
 sources:
 - url: http://legislature.idaho.gov/senate/membership.cfm
-other_identifiers:
-- identifier: IDL000071
-  scheme: legacy_openstates
-- identifier: IDL000124
-  scheme: legacy_openstates

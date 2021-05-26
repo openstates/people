@@ -1,11 +1,14 @@
 id: ocd-person/e60aed5e-cbb4-4b27-ab1b-2ce1dd787dac
 name: Aboul B. Khan
+given_name: Aboul B.
+family_name: Khan
+email: Aboul.Khan@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- district: Rockingham 20
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Rockingham 20
 contact_details:
 - note: District Office
   address: 3 Greenleaf Drive;Seabrook, NH 03874-4045
@@ -13,6 +16,13 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000608
+- scheme: legacy_openstates
+  identifier: NHL001333
+- scheme: legacy_openstates
+  identifier: NHL001484
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377130
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -21,13 +31,3 @@ extras:
   first_name: Aboul
   last_name: Khan
   middle_name: B.
-other_identifiers:
-- identifier: NHL000608
-  scheme: legacy_openstates
-- identifier: NHL001333
-  scheme: legacy_openstates
-- identifier: NHL001484
-  scheme: legacy_openstates
-given_name: Aboul B.
-family_name: Khan
-email: Aboul.Khan@leg.state.nh.us

@@ -2,19 +2,19 @@ id: ocd-person/63a0f3ca-f0fa-499a-8596-26e727ab53a9
 name: Ray Begaye
 given_name: Ray
 family_name: Begaye
+image: http://www.nmlegis.gov/lcs/graphics/photos/HBEGA.jpg
 party:
 - name: Democratic
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.nmlegis.gov/lcs/graphics/photos/HBEGA.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '4'
 links:
 - url: http://www.nmlegis.gov/lcs/legdetails.aspx?SPONCODE=HBEGA
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000046
 sources:
 - url: http://www.nmlegis.gov/lcs/legdetails.aspx?SPONCODE=HBEGA
-other_identifiers:
-- identifier: NML000046
-  scheme: legacy_openstates

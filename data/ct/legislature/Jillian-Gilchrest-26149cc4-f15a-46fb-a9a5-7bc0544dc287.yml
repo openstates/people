@@ -1,11 +1,14 @@
 id: ocd-person/26149cc4-f15a-46fb-a9a5-7bc0544dc287
 name: Jillian Gilchrest
+given_name: Jillian
+family_name: Gilchrest
+email: Jillian.Gilchrest@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '18'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4000;Hartford, CT 06106
@@ -14,10 +17,7 @@ contact_details:
   address: 360 North Quaker Lane;West Hartford, CT 06119
 links:
 - url: http://www.housedems.ct.gov/gilchrest
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Jillian
-family_name: Gilchrest
-email: Jillian.Gilchrest@cga.ct.gov
 other_names:
 - name: Gilchrest, Jillian
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

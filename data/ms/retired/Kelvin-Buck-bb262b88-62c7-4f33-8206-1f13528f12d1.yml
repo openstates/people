@@ -2,19 +2,19 @@ id: ocd-person/bb262b88-62c7-4f33-8206-1f13528f12d1
 name: Kelvin Buck
 given_name: Kelvin
 family_name: Buck
+image: http://billstatus.ls.state.ms.us/members/house/buck_(5th).jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/buck_(5th).jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '5'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/buck_(5th).xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000132
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/buck_(5th).xml
-other_identifiers:
-- identifier: MSL000132
-  scheme: legacy_openstates

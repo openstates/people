@@ -1,24 +1,24 @@
 id: ocd-person/2a40eb39-7d6b-4309-bca2-393d3dad1104
 name: Rebekah Warren
-party:
-- name: Democratic
-roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
-  end_date: '2018-12-31'
-- district: '55'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: https://housedems.com/warren
-sources:
-- url: https://housedems.com/warren
-image: https://housedems.com/sites/default/files/Images/Representative_Images/D055_Rebekah_Warren/055_Warren.jpg
-other_identifiers:
-- identifier: MIL000018
-  scheme: legacy_openstates
 given_name: Rebekah
 family_name: Warren
 email: RebekahWarren@house.mi.gov
+image: https://housedems.com/sites/default/files/Images/Representative_Images/D055_Rebekah_Warren/055_Warren.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2018-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '18'
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '55'
+links:
+- url: https://housedems.com/warren
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000018
+sources:
+- url: https://housedems.com/warren

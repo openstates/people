@@ -2,19 +2,19 @@ id: ocd-person/1074a2e9-e256-4e8c-88a0-ec91b3404358
 name: Frank Lasee
 given_name: Frank
 family_name: Lasee
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/sen01.jpeg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/sen01.jpeg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '1'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=1&h=S
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000449
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=1&h=S
-other_identifiers:
-- identifier: WIL000449
-  scheme: legacy_openstates

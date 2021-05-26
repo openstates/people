@@ -1,11 +1,15 @@
 id: ocd-person/bde014bb-27c1-42a3-909f-c5d96cca5c3f
 name: John Sauls
+given_name: John
+family_name: Sauls
+email: John.Sauls@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/393/High
 party:
 - name: Republican
 roles:
-- district: '51'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '51'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 408;Raleigh, NC 27603-5925
@@ -14,17 +18,13 @@ contact_details:
   address: 2609 Wellington Dr;Sanford, NC 27330
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/393
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000363
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/393
-image: https://www.ncleg.gov/Members/MemberImage/H/393/High
 extras:
   counties:
   - Harnett
   - Lee
   notice: null
-other_identifiers:
-- identifier: NCL000363
-  scheme: legacy_openstates
-given_name: John
-family_name: Sauls
-email: John.Sauls@ncleg.gov

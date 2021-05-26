@@ -1,11 +1,15 @@
 id: ocd-person/f84bc5c0-1a2f-4eac-8a7a-63c879ad56e5
 name: Robert B. Long
+given_name: Robert
+family_name: Long
+email: Bob.Long@house.state.md.us
+image: http://mgaleg.maryland.gov/2020RS/images/long01.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
-  type: lower
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: 325 House Office Building;6 Bladen Street;Annapolis, MD 21401
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=long01&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/long01
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MDL000658
+- scheme: legacy_openstates
+  identifier: MDL000706
 sources:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=long01&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/long01
-image: http://mgaleg.maryland.gov/2020RS/images/long01.jpg
-other_identifiers:
-- identifier: MDL000658
-  scheme: legacy_openstates
-- identifier: MDL000706
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Long
-email: Bob.Long@house.state.md.us

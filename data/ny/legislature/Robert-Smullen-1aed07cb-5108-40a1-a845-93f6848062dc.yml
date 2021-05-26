@@ -1,17 +1,21 @@
 id: ocd-person/1aed07cb-5108-40a1-a845-93f6848062dc
 name: Robert Smullen
+given_name: Robert
+family_name: Smullen
+email: smullenr@nyassembly.gov
+image: https://assembly.state.ny.us/write/upload/member_files/118/headshot/118.jpg
 party:
 - name: Republican
 roles:
-- district: '118'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
+  district: '118'
 contact_details:
-- address: LOB 527; Albany, NY 12248
-  note: Capitol Office
+- note: Capitol Office
+  address: LOB 527; Albany, NY 12248
   voice: 518-455-5393
-- address: 235 North Prospect St.; Herkimer, NY 13350
-  note: District Office
+- note: District Office
+  address: 235 North Prospect St.; Herkimer, NY 13350
   voice: 315-866-1632
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
@@ -19,7 +23,3 @@ links:
 sources:
 - url: http://assembly.state.ny.us/mem/Robert-Smullen
 - url: https://assembly.state.ny.us/mem/Robert-Smullen
-image: https://assembly.state.ny.us/write/upload/member_files/118/headshot/118.jpg
-email: smullenr@nyassembly.gov
-given_name: Robert
-family_name: Smullen

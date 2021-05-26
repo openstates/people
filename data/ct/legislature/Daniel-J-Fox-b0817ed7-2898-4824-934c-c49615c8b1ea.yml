@@ -1,11 +1,14 @@
 id: ocd-person/b0817ed7-2898-4824-934c-c49615c8b1ea
 name: Daniel J. Fox
+given_name: Daniel
+family_name: Fox
+email: Dan.Fox@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '148'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '148'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2202;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-569-6290
 links:
 - url: http://www.housedems.ct.gov/Fox
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000184
-  scheme: legacy_openstates
-given_name: Daniel
-family_name: Fox
-email: Dan.Fox@cga.ct.gov
 other_names:
 - name: Fox, Daniel J.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000184
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

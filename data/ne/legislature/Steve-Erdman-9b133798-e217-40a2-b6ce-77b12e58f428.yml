@@ -1,11 +1,15 @@
 id: ocd-person/9b133798-e217-40a2-b6ce-77b12e58f428
 name: Steve Erdman
+given_name: Steve
+family_name: Erdman
+email: serdman@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist47.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '47'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '47'
 contact_details:
 - note: Capitol Office
   address: Room 1124; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist47
 - url: http://news.legislature.ne.gov/dist47/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000099
+- scheme: legacy_openstates
+  identifier: NEL000199
 sources:
 - url: http://news.legislature.ne.gov/dist47
 - url: http://news.legislature.ne.gov/dist47/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist47.jpg
-other_identifiers:
-- identifier: NEL000099
-  scheme: legacy_openstates
-- identifier: NEL000199
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Erdman
-email: serdman@leg.ne.gov

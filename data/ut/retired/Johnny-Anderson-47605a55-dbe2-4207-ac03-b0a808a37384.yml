@@ -2,22 +2,22 @@ id: ocd-person/47605a55-dbe2-4207-ac03-b0a808a37384
 name: Johnny Anderson
 given_name: Johnny
 family_name: Anderson
+image: http://le.utah.gov/images/legislator/ANDERJ.jpg
 party:
 - name: Republican
 roles:
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://le.utah.gov/images/legislator/ANDERJ.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '34'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=ANDERJ
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000030
+- scheme: legacy_openstates
+  identifier: UTL000263
 sources:
 - url: http://le.utah.gov/house2/detail.jsp?i=ANDERJ
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000030
-  scheme: legacy_openstates
-- identifier: UTL000263
-  scheme: legacy_openstates

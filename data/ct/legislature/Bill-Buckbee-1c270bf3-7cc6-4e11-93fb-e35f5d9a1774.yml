@@ -1,11 +1,14 @@
 id: ocd-person/1c270bf3-7cc6-4e11-93fb-e35f5d9a1774
 name: Bill Buckbee
+given_name: Bill
+family_name: Buckbee
+email: Bill.Buckbee@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '67'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '67'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4041;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 64A Lanesville Road;New Milford, CT 06776
 links:
 - url: http://www.cthousegop.com/Buckbee/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000317
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Buckbee
-email: Bill.Buckbee@housegop.ct.gov
 other_names:
 - name: Buckbee, Bill
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000317
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

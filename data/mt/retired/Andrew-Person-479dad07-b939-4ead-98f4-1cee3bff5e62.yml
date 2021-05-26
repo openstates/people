@@ -2,20 +2,20 @@ id: ocd-person/479dad07-b939-4ead-98f4-1cee3bff5e62
 name: Andrew Person
 given_name: Andrew
 family_name: Person
+image: http://leg.mt.gov/images/legislators_64th/16518.jpg
 party:
 - name: Democratic
 roles:
-- district: '96'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/16518.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '96'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16518
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000302
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16518
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000302
-  scheme: legacy_openstates

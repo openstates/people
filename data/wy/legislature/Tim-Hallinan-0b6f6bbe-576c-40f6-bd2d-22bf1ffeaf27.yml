@@ -1,11 +1,16 @@
 id: ocd-person/0b6f6bbe-576c-40f6-bd2d-22bf1ffeaf27
 name: Tim Hallinan
+given_name: Tim
+family_name: Hallinan
+email: Tim.Hallinan@wyoleg.gov
+birth_date: 1945-04-28
+image: http://wyoleg.gov/LegislatorSummary/Photos/HallinanTH32.jpg
 party:
 - name: Republican
 roles:
-- district: '32'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '32'
 contact_details:
 - note: District Office
   address: 1401 Three Forks Court, Gillette WY 82718
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/698
 - url: http://wyoleg.gov/Legislators/2021/R/698
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000170
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/698
 - url: http://wyoleg.gov/Legislators/2021/R/698
-image: http://wyoleg.gov/LegislatorSummary/Photos/HallinanTH32.jpg
-birth_date: '1945-04-28'
-given_name: Tim
-family_name: Hallinan
 extras:
   civic_organizations:
   - orgname: National Riffle Association
@@ -42,7 +46,3 @@ extras:
   religion: Catholic
   spouse_given_name: Nancy
   wy_leg_id: 698
-other_identifiers:
-- identifier: WYL000170
-  scheme: legacy_openstates
-email: Tim.Hallinan@wyoleg.gov

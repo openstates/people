@@ -1,12 +1,15 @@
 id: ocd-person/7dcb0b5b-3eb3-4db2-8666-0eb83589289f
 name: Percy W. Watson
+given_name: Percy W.
+family_name: Watson
+email: pwatson@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/watson.jpg
 party:
 - name: Democratic
 roles:
-- district: '103'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-email: pwatson@house.ms.gov
+  district: '103'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +18,12 @@ contact_details:
   voice: 601-544-6490
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/watson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000146
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/watson.xml
-image: http://billstatus.ls.state.ms.us/members/house/watson.jpg
 extras:
   org_info: Representative Watson is affiliated with the Jesse Brown Lodge, Phi Beta
     Kappa, NAACP, Mississippi Legal Services and the Mississippi, Iowa, Alaska, National
     and American Bar Associations.
-other_identifiers:
-- identifier: MSL000146
-  scheme: legacy_openstates
-given_name: Percy W.
-family_name: Watson

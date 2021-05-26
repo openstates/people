@@ -1,19 +1,28 @@
 id: ocd-person/51d417ae-146f-4a87-b748-82adf1e57173
 name: Rory Rowland
+given_name: Rory
+family_name: Rowland
+email: Rory.Rowland@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1871
 party:
 - name: Democratic
 roles:
-- district: '29'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '29'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 107; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 107; Jefferson
+    City MO 65101
   voice: 573-751-3623
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=29
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=029
+other_names:
+- name: Rowland, Rory
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000423
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=29
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Rory
   last_name: Rowland
-other_identifiers:
-- identifier: MOL000423
-  scheme: legacy_openstates
-given_name: Rory
-family_name: Rowland
-email: Rory.Rowland@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1871
-other_names:
-- name: Rowland, Rory

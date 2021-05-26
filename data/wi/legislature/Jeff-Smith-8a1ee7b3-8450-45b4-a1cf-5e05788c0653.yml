@@ -1,15 +1,19 @@
 id: ocd-person/8a1ee7b3-8450-45b4-a1cf-5e05788c0653
 name: Jeff Smith
+given_name: Jeff
+family_name: Smith
+email: Sen.Smith@legis.wisconsin.gov
+image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2114.jpg
 party:
 - name: Democratic
 roles:
-- district: '93'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+- end_date: 2010-12-31
   type: lower
-  end_date: 2010-12-31
-- district: '31'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
+  district: '93'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: Room 19 South;State Capitol;PO Box 7882;Madison, WI 53707
@@ -18,15 +22,11 @@ contact_details:
 links:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1944
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2114
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000421
+- scheme: openstates
+  identifier: ocd-person/51aa4699-b7c1-428a-a72d-2b90a6545409
 sources:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1944
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2114
-other_identifiers:
-- identifier: WIL000421
-  scheme: legacy_openstates
-- identifier: ocd-person/51aa4699-b7c1-428a-a72d-2b90a6545409
-  scheme: openstates
-email: Sen.Smith@legis.wisconsin.gov
-image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2114.jpg
-given_name: Jeff
-family_name: Smith

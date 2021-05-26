@@ -2,27 +2,27 @@ id: ocd-person/d0480ea7-0a72-4cc1-a71b-854859db93d0
 name: Steven McLaughlin
 given_name: Steven
 family_name: McLaughlin
+image: http://assembly.state.ny.us/mem/pic/107.jpg
 party:
 - name: Republican
 roles:
-- district: '107'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-- district: '108'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '107'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://assembly.state.ny.us/mem/pic/107.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '108'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000153
+- scheme: legacy_openstates
+  identifier: NYL000288
 sources:
 - url: http://assembly.state.ny.us/mem/Steven-F-McLaughlin
 - url: http://www.timesunion.com/local/article/Steve-McLaughlin-sworn-in-as-Rensselaer-County-12465950.php
-other_identifiers:
-- identifier: NYL000153
-  scheme: legacy_openstates
-- identifier: NYL000288
-  scheme: legacy_openstates

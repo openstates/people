@@ -1,24 +1,24 @@
 id: ocd-person/575d56d7-634f-49ac-a833-7fd96526553c
 name: Lindell Shumake
+given_name: Lindell
+family_name: Shumake
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '5'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=5
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000167
+- scheme: legacy_openstates
+  identifier: MOL000348
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=5
 extras:
   first_name: Lindell
   last_name: Shumake
-other_identifiers:
-- identifier: MOL000167
-  scheme: legacy_openstates
-- identifier: MOL000348
-  scheme: legacy_openstates
-given_name: Lindell
-family_name: Shumake

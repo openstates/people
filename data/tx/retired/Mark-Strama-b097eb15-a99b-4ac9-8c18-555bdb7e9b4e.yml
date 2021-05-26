@@ -2,21 +2,21 @@ id: ocd-person/b097eb15-a99b-4ac9-8c18-555bdb7e9b4e
 name: Mark Strama
 given_name: Mark
 family_name: Strama
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A4545.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A4545.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '50'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A4545
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000346
+- scheme: legacy_openstates
+  identifier: TXL000164
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A4545
-other_identifiers:
-- identifier: TXL000346
-  scheme: legacy_openstates
-- identifier: TXL000164
-  scheme: legacy_openstates

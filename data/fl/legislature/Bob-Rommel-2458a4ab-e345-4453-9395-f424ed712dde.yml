@@ -1,11 +1,14 @@
 id: ocd-person/2458a4ab-e345-4453-9395-f424ed712dde
 name: Bob Rommel
+given_name: Bob
+family_name: Rommel
+image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4634.jpg
 party:
 - name: Republican
 roles:
-- district: '106'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
+  district: '106'
 contact_details:
 - note: Capitol Office
   address: 303 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
@@ -16,14 +19,11 @@ contact_details:
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4634&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4634&LegislativeTermId=88
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000646
 sources:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4634&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4634&LegislativeTermId=88
-image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4634.jpg
-other_identifiers:
-- identifier: FLL000646
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Rommel

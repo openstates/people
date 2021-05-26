@@ -2,27 +2,27 @@ id: ocd-person/0b3c55d1-f2c3-4c93-81b1-59e1d1645378
 name: Christine B. Powers
 given_name: Christine B.
 family_name: Powers
+image: http://www.maine.gov/legis/house/photo127/powecb.jpg
 party:
 - name: Democratic
 roles:
-- district: '101'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '68'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '101'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.maine.gov/legis/house/photo127/powecb.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '68'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/powecb.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000255
+- scheme: legacy_openstates
+  identifier: MEL000325
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/powecb.htm
-other_identifiers:
-- identifier: MEL000255
-  scheme: legacy_openstates
-- identifier: MEL000325
-  scheme: legacy_openstates

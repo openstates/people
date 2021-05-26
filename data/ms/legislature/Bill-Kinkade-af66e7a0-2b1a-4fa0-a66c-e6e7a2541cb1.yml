@@ -1,11 +1,15 @@
 id: ocd-person/af66e7a0-2b1a-4fa0-a66c-e6e7a2541cb1
 name: Bill Kinkade
+given_name: Bill
+family_name: Kinkade
+email: bkinkade@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/kinkade.jpg
 party:
 - name: Republican
 roles:
-- district: '52'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '52'
 contact_details:
 - note: Capitol Office
   address: Room 112-C;P. O. Box 1018;Jackson, MS 39215
@@ -14,16 +18,12 @@ contact_details:
   address: 71 Peachtree Rd;Byhalia, MS 38611
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/kinkade.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000229
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/kinkade.xml
-image: http://billstatus.ls.state.ms.us/members/house/kinkade.jpg
 extras:
   org_info: Rep. Kinkade is a member of the Byhalia Chamber of Commerce, Olive Branch
     Chamber of Commerce, Byhalia Lions Club, and the AutoZone Liberty Bowl Board of
     Directors.
-other_identifiers:
-- identifier: MSL000229
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Kinkade
-email: bkinkade@house.ms.gov

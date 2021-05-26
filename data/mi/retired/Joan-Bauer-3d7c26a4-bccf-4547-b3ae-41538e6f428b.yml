@@ -5,15 +5,15 @@ family_name: Bauer
 party:
 - name: Democratic
 roles:
-- district: '68'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '68'
 links:
 - url: http://068.housedems.com/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000106
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000106
-  scheme: legacy_openstates

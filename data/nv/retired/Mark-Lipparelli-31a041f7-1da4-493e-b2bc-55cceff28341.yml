@@ -2,19 +2,19 @@ id: ocd-person/31a041f7-1da4-493e-b2bc-55cceff28341
 name: Mark Lipparelli
 given_name: Mark
 family_name: Lipparelli
+image: http://leg.state.nv.us/Session/29th2015Special/legislators/Senators/Images/Lipparelli.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.state.nv.us/Session/29th2015Special/legislators/Senators/Images/Lipparelli.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '6'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000280
+- scheme: legacy_openstates
+  identifier: NVL000314
 sources:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/78th2015/Legislator?id=288
-other_identifiers:
-- identifier: NVL000280
-  scheme: legacy_openstates
-- identifier: NVL000314
-  scheme: legacy_openstates

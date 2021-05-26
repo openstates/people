@@ -1,11 +1,14 @@
 id: ocd-person/fcf63a22-3979-4cbf-a719-0d414d13e1ac
 name: Patricia Billie Miller
+given_name: Patricia
+family_name: Miller
+email: Patricia.Miller@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '145'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '145'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4033;Hartford, CT 06106
@@ -16,13 +19,10 @@ contact_details:
 links:
 - url: http://www.housedems.ct.gov/Miller
 - url: http://www.housedems.ct.gov/MillerPat
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000181
-  scheme: legacy_openstates
-given_name: Patricia
-family_name: Miller
-email: Patricia.Miller@cga.ct.gov
 other_names:
 - name: Miller, Patricia Billie
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000181
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

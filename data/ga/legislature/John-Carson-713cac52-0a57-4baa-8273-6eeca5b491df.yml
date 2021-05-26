@@ -1,11 +1,15 @@
 id: ocd-person/713cac52-0a57-4baa-8273-6eeca5b491df
 name: John Carson
+given_name: John
+family_name: Carson
+email: john.carson@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/carson-john-795.jpg
 party:
 - name: Republican
 roles:
-- district: '46'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '46'
 contact_details:
 - note: Capitol Office
   address: 401-E State Capitol;Atlanta, GA 30334
@@ -16,23 +20,19 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
 - url: https://www.legis.ga.gov/members/house/795?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000234
+- scheme: legacy_openstates
+  identifier: GAL000236
+- scheme: legacy_openstates
+  identifier: GAL000257
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
 - url: https://www.legis.ga.gov/members/house/795?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/carson-john-795.jpg
-family_name: Carson
-given_name: John
 extras:
   guid: 795
   city: Marietta
   georgia_id: 795
   residence: Marietta
-other_identifiers:
-- identifier: GAL000234
-  scheme: legacy_openstates
-- identifier: GAL000236
-  scheme: legacy_openstates
-- identifier: GAL000257
-  scheme: legacy_openstates
-email: john.carson@house.ga.gov

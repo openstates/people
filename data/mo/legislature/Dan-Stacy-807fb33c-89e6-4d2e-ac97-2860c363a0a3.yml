@@ -1,19 +1,28 @@
 id: ocd-person/807fb33c-89e6-4d2e-ac97-2860c363a0a3
 name: Dan Stacy
+given_name: Dan
+family_name: Stacy
+email: Dan.Stacy@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1899
 party:
 - name: Republican
 roles:
-- district: '31'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '31'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 411-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 411-B; Jefferson
+    City MO 65101
   voice: 573-751-8636
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=31
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=031
+other_names:
+- name: Stacy, Dan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000439
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=31
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Dan
   last_name: Stacy
-other_identifiers:
-- identifier: MOL000439
-  scheme: legacy_openstates
-given_name: Dan
-family_name: Stacy
-email: Dan.Stacy@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1899
-other_names:
-- name: Stacy, Dan

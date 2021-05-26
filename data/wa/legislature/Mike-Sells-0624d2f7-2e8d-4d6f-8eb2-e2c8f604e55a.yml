@@ -1,11 +1,15 @@
 id: ocd-person/0624d2f7-2e8d-4d6f-8eb2-e2c8f604e55a
 name: Mike Sells
+given_name: Mike
+family_name: Sells
+email: mike.sells@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/sells.jpg
 party:
 - name: Democratic
 roles:
-- district: '38'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '38'
 contact_details:
 - note: Capitol Office
   address: 438B Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Mike-Sells/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Sells/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000132
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/sells.jpg
-other_identifiers:
-- identifier: WAL000132
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Sells
-email: mike.sells@leg.wa.gov

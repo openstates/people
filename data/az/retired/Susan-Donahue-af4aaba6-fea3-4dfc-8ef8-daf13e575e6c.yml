@@ -2,19 +2,19 @@ id: ocd-person/af4aaba6-fea3-4dfc-8ef8-daf13e575e6c
 name: Susan Donahue
 given_name: Susan
 family_name: Donahue
+image: http://www.azleg.gov/alisImages/nophoto.gif
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.azleg.gov/alisImages/nophoto.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '5'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=93&Legislature=52&Session_ID=115
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000358
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=S
-other_identifiers:
-- identifier: AZL000358
-  scheme: legacy_openstates

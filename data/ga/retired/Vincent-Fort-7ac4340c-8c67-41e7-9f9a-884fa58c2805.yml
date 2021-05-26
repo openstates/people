@@ -2,21 +2,21 @@ id: ocd-person/7ac4340c-8c67-41e7-9f9a-884fa58c2805
 name: Vincent Fort
 given_name: Vincent
 family_name: Fort
+image: http://www.senate.ga.gov/SiteCollectionImages/FortVincent12.jpg
 party:
 - name: Democratic
 roles:
-- district: '39'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://www.senate.ga.gov/SiteCollectionImages/FortVincent12.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '39'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=12&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000013
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=12&Session=25
 - url: http://www.senate.ga.gov/senators/en-US/SenateMembersList.aspx?Sort=District&Session=25
-other_identifiers:
-- identifier: GAL000013
-  scheme: legacy_openstates

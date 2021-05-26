@@ -1,11 +1,15 @@
 id: ocd-person/3ffead8c-6856-4592-8594-182e295b8e87
 name: Devon J. Mathis
+given_name: Devon
+family_name: Mathis
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/mathis.jpg
 party:
 - name: Republican
 roles:
-- district: '26'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '26'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0026
@@ -15,14 +19,10 @@ contact_details:
   voice: 559-636-3440
 links:
 - url: https://ad26.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD26&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD26&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000463
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/mathis.jpg
-other_identifiers:
-- identifier: CAL000463
-  scheme: legacy_openstates
-given_name: Devon
-family_name: Mathis
-gender: Male

@@ -1,11 +1,15 @@
 id: ocd-person/57419404-003c-4a1d-93c0-dce987b11c00
 name: Larry Byrd
+given_name: Larry
+family_name: Byrd
+email: lbyrd@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/byrd.jpg
 party:
 - name: Republican
 roles:
-- district: '104'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '104'
 contact_details:
 - note: Capitol Office
   address: Room 400-B;P. O. Box 1018;Jackson, MS 39215
@@ -15,17 +19,13 @@ contact_details:
   voice: 601-544-1877
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/byrd.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000147
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/byrd.xml
-image: http://billstatus.ls.state.ms.us/members/house/byrd.jpg
 extras:
   org_info: Representative Byrd is a member of the Petal Chamber of Commerce, Macedonia
     Baptist Church, Petal Masonic Lodge no. 516 Hattiesburg York, K.Y.C.H. & Scottish
     Rite 32 degrees Bodies, K.C.C.H., V.F.W. Life Member, and U.S. Army Veteran of
     the 82nd Airborne Division
-other_identifiers:
-- identifier: MSL000147
-  scheme: legacy_openstates
-given_name: Larry
-family_name: Byrd
-email: lbyrd@house.ms.gov

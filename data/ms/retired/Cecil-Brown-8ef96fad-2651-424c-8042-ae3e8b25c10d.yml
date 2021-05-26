@@ -2,19 +2,19 @@ id: ocd-person/8ef96fad-2651-424c-8042-ae3e8b25c10d
 name: Cecil Brown
 given_name: Cecil
 family_name: Brown
+image: http://billstatus.ls.state.ms.us/members/house/brown_(66th).jpg
 party:
 - name: Democratic
 roles:
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/brown_(66th).jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '66'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/brown_(66th).xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000127
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/brown_(66th).xml
-other_identifiers:
-- identifier: MSL000127
-  scheme: legacy_openstates

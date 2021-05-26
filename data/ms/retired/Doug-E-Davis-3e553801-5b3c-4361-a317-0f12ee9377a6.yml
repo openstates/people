@@ -3,19 +3,19 @@ name: Doug E Davis
 given_name: Doug
 family_name: Davis
 middle_name: E
+image: http://billstatus.ls.state.ms.us/members/senate/davis.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/davis.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '1'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/davis.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000048
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/davis.xml
-other_identifiers:
-- identifier: MSL000048
-  scheme: legacy_openstates

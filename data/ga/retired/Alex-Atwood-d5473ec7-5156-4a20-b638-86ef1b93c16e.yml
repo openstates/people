@@ -2,20 +2,20 @@ id: ocd-person/d5473ec7-5156-4a20-b638-86ef1b93c16e
 name: Alex Atwood
 given_name: Alex
 family_name: Atwood
+image: http://www.house.ga.gov/SiteCollectionImages/AtwoodAlex788.jpg
 party:
 - name: Republican
 roles:
-- district: '179'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/AtwoodAlex788.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '179'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=788&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000061
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=788&Session=24
-other_identifiers:
-- identifier: GAL000061
-  scheme: legacy_openstates

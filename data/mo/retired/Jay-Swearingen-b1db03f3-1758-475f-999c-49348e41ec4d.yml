@@ -2,26 +2,26 @@ id: ocd-person/b1db03f3-1758-475f-999c-49348e41ec4d
 name: Jay Swearingen
 given_name: Jay
 family_name: Swearingen
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=492
 party:
 - name: Democratic
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '18'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=492
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '31'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=147
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000176
+- scheme: legacy_openstates
+  identifier: MOL000356
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2014&district=18
-other_identifiers:
-- identifier: MOL000176
-  scheme: legacy_openstates
-- identifier: MOL000356
-  scheme: legacy_openstates

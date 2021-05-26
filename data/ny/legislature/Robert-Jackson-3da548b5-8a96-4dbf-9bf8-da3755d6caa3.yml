@@ -1,14 +1,18 @@
 id: ocd-person/3da548b5-8a96-4dbf-9bf8-da3755d6caa3
 name: Robert Jackson
+given_name: Robert
+family_name: Jackson
+email: jackson@nysenate.gov
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/01-03-19jackson-hs-048_2.jpg?itok=OXbnwl-9
 party:
 - name: Democratic
 roles:
-- district: '31'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: upper
+  district: '31'
 contact_details:
-- address: 188 State Street,;Albany,, NY 12247
-  note: Capitol Office
+- note: Capitol Office
+  address: 188 State Street,;Albany,, NY 12247
   voice: 518-455-2041
 - note: District Office
   address: 5030 Broadway;New York,, NY 10034
@@ -16,11 +20,7 @@ contact_details:
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/robert-jackson/contact
-sources:
-- url: http://www.nysenate.gov/senators/robert-jackson/contact
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/01-03-19jackson-hs-048_2.jpg?itok=OXbnwl-9
-email: jackson@nysenate.gov
 ids:
   twitter: SenatorRJackson
-given_name: Robert
-family_name: Jackson
+sources:
+- url: http://www.nysenate.gov/senators/robert-jackson/contact

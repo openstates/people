@@ -1,16 +1,20 @@
 id: ocd-person/11de0f04-3a78-49cf-a5a9-7d7f59bf94b3
 name: Brad Hawkins
+given_name: Brad
+family_name: Hawkins
+email: brad.hawkins@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/hawkins.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2018-12-31
-- district: '12'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '12'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: 107 Irv Newhouse Building;PO Box 40412;Olympia, WA 98504
@@ -18,16 +22,12 @@ contact_details:
 links:
 - url: http://BradHawkins.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000267
+- scheme: legacy_openstates
+  identifier: WAL000177
+- scheme: openstates
+  identifier: ocd-person/87934228-89fc-495f-a396-becd7b913b31
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/hawkins.jpg
-other_identifiers:
-- identifier: WAL000267
-  scheme: legacy_openstates
-- identifier: WAL000177
-  scheme: legacy_openstates
-- identifier: ocd-person/87934228-89fc-495f-a396-becd7b913b31
-  scheme: openstates
-given_name: Brad
-family_name: Hawkins
-email: brad.hawkins@leg.wa.gov

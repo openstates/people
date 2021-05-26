@@ -1,44 +1,44 @@
 id: ocd-person/80af2c89-f455-4599-966c-2ab147376959
 name: Bradley Maxon Hamlett
-party:
-- name: Democratic
-roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  end_date: 2014-12-31
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  end_date: 2016-12-31
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  end_date: '2021-01-03'
-links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4766
-- url: https://leg.mt.gov/legislator-information/roster/individual/5082
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-- url: https://leg.mt.gov/legislator-information/roster/individual/5082
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-other_identifiers:
-- identifier: MTL000376
-  scheme: legacy_openstates
-- identifier: MTL000416
-  scheme: legacy_openstates
-- identifier: MTL000016
-  scheme: legacy_openstates
-- identifier: MTL000151
-  scheme: legacy_openstates
-- identifier: MTL000162
-  scheme: legacy_openstates
-- identifier: MTL000353
-  scheme: legacy_openstates
-- identifier: ocd-person/f7b84b6b-837b-451d-98d4-437df3ac8cb8
-  scheme: openstates
 given_name: Bradley Maxon
 family_name: Hamlett
 email: Bradley.Hamlett@mtleg.gov
+party:
+- name: Democratic
+roles:
+- end_date: 2014-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '10'
+- end_date: 2016-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '15'
+- end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '23'
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4766
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5082
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000376
+- scheme: legacy_openstates
+  identifier: MTL000416
+- scheme: legacy_openstates
+  identifier: MTL000016
+- scheme: legacy_openstates
+  identifier: MTL000151
+- scheme: legacy_openstates
+  identifier: MTL000162
+- scheme: legacy_openstates
+  identifier: MTL000353
+- scheme: openstates
+  identifier: ocd-person/f7b84b6b-837b-451d-98d4-437df3ac8cb8
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5082
+- url: https://leg.mt.gov/legislator-information/?session_select=113

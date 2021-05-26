@@ -1,11 +1,15 @@
 id: ocd-person/f3cede47-c452-4c44-acda-5449dafacad6
 name: Mark Mullet
+given_name: Mark
+family_name: Mullet
+email: mark.mullet@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/mullet.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: 415 Legislative Building;PO Box 40405;Olympia, WA 98504
@@ -13,12 +17,8 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Mullet/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000158
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/mullet.jpg
-other_identifiers:
-- identifier: WAL000158
-  scheme: legacy_openstates
-given_name: Mark
-family_name: Mullet
-email: mark.mullet@leg.wa.gov

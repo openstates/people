@@ -2,20 +2,20 @@ id: ocd-person/66232e7d-f2f4-4738-a4ca-a4bf3b52b61c
 name: Patty Miller
 given_name: Patty
 family_name: Miller
+image: http://legis.state.sd.us/sessions/2013/miller.jpg
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legis.state.sd.us/sessions/2013/miller.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '16'
 links:
 - url: http://legis.state.sd.us/sessions/2013/MemberDetail.aspx?Member=171
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000136
 sources:
 - url: http://legis.state.sd.us/sessions/2013/MemberDetail.aspx?Member=171
 - url: http://legis.state.sd.us/sessions/2013/MemberCommittees.aspx?Member=171
-other_identifiers:
-- identifier: SDL000136
-  scheme: legacy_openstates

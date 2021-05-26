@@ -3,20 +3,20 @@ name: John L Moore
 given_name: John
 family_name: Moore
 middle_name: L
+image: http://billstatus.ls.state.ms.us/members/house/moore.jpg
 party:
 - name: Republican
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2017-12-08'
-image: http://billstatus.ls.state.ms.us/members/house/moore.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '60'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/moore.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000085
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/moore.xml
 - url: https://mississippitoday.org/2017/12/11/sexual-harassment-allegations-force-rep-john-moores-resignation/
-other_identifiers:
-- identifier: MSL000085
-  scheme: legacy_openstates

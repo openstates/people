@@ -1,11 +1,15 @@
 id: ocd-person/aaa374c2-a584-4e78-b2f3-f899efb2d568
 name: Susan Holmes
+given_name: Susan
+family_name: Holmes
+email: susan.holmes@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/holmes-susan-780.jpg
 party:
 - name: Republican
 roles:
-- district: '129'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '129'
 contact_details:
 - note: Capitol Office
   address: 218-B State Capitol;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=780&Session=27
 - url: https://www.legis.ga.gov/members/house/780?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000132
+- scheme: legacy_openstates
+  identifier: GAL000306
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=780&Session=27
 - url: https://www.legis.ga.gov/members/house/780?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/holmes-susan-780.jpg
-family_name: Holmes
-given_name: Susan
 extras:
   guid: 780
   city: Monticello
   georgia_id: 780
   residence: Monticello
-other_identifiers:
-- identifier: GAL000132
-  scheme: legacy_openstates
-- identifier: GAL000306
-  scheme: legacy_openstates
-email: susan.holmes@house.ga.gov

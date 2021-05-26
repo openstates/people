@@ -1,18 +1,18 @@
 id: ocd-person/224f3752-9c40-44f3-adf8-b7eb0054b5f2
 name: L. Scott Frantz
+given_name: L. Scott
+family_name: Frantz
 party:
 - name: Republican
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '36'
 links:
 - url: http://www.ctsenaterepublicans.com/home-frantz
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000036
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000036
-  scheme: legacy_openstates
-given_name: L. Scott
-family_name: Frantz

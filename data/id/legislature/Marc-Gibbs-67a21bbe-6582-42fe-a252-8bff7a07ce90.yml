@@ -1,17 +1,21 @@
 id: ocd-person/67a21bbe-6582-42fe-a252-8bff7a07ce90
 name: Marc Gibbs
+given_name: Marc
+family_name: Gibbs
+email: MGibbs@house.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Gibbs748.jpg
 party:
 - name: Republican
 roles:
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '32'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '31'
+- start_date: 2013-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '32'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1042
@@ -19,18 +23,14 @@ contact_details:
   address: 632 Highway 34, Grace, ID, 83241
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=32
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000304
+- scheme: legacy_openstates
+  identifier: IDL000060
+- scheme: legacy_openstates
+  identifier: IDL000153
+- scheme: openstates
+  identifier: ocd-person/a930a229-2e68-4ea3-8e88-ba9f539ead80
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Gibbs748.jpg
-other_identifiers:
-- identifier: IDL000304
-  scheme: legacy_openstates
-- identifier: IDL000060
-  scheme: legacy_openstates
-- identifier: IDL000153
-  scheme: legacy_openstates
-- identifier: ocd-person/a930a229-2e68-4ea3-8e88-ba9f539ead80
-  scheme: openstates
-given_name: Marc
-family_name: Gibbs
-email: MGibbs@house.idaho.gov

@@ -1,15 +1,17 @@
 id: ocd-person/a70935b5-517e-4b70-accb-26e55c34fb42
 name: Lex Berezhny
+given_name: Lex
+family_name: Berezhny
 email: lex@berezhny.com
 party:
 - name: Republican
 roles:
-- district: Grafton 9
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Grafton 9
 contact_details:
-- address: PO Box 41;Grafton, NH 03240
-  note: District Office
+- note: District Office
+  address: PO Box 41;Grafton, NH 03240
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 sources:
@@ -18,5 +20,3 @@ extras:
   first_name: Lex
   last_name: Berezhny
   middle_name: ''
-given_name: Lex
-family_name: Berezhny

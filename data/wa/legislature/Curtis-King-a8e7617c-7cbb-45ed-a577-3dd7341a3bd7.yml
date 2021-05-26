@@ -1,11 +1,15 @@
 id: ocd-person/a8e7617c-7cbb-45ed-a577-3dd7341a3bd7
 name: Curtis King
+given_name: Curtis
+family_name: King
+email: curtis.king@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/king.jpg
 party:
 - name: Republican
 roles:
-- district: '14'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '14'
 contact_details:
 - note: Capitol Office
   address: 115 Irv Newhouse Building;PO Box 40414;Olympia, WA 98504
@@ -13,12 +17,8 @@ contact_details:
 links:
 - url: http://CurtisKing.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000026
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/king.jpg
-other_identifiers:
-- identifier: WAL000026
-  scheme: legacy_openstates
-given_name: Curtis
-family_name: King
-email: curtis.king@leg.wa.gov

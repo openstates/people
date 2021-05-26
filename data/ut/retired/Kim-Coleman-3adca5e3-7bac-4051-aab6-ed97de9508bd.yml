@@ -2,22 +2,22 @@ id: ocd-person/3adca5e3-7bac-4051-aab6-ed97de9508bd
 name: Kim Coleman
 given_name: Kim
 family_name: Coleman
+image: http://le.utah.gov/images/legislator/COLEMK.jpg
 party:
 - name: Republican
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://le.utah.gov/images/legislator/COLEMK.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '42'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=COLEMK
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000166
+- scheme: legacy_openstates
+  identifier: UTL000193
 sources:
 - url: http://le.utah.gov/house2/detail.jsp?i=COLEMK
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000166
-  scheme: legacy_openstates
-- identifier: UTL000193
-  scheme: legacy_openstates

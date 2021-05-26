@@ -1,20 +1,20 @@
 id: ocd-person/2de29dfd-b551-43a1-8b54-2967805f9106
 name: Adam Rosendale
+given_name: Adam
+family_name: Rosendale
 party:
 - name: Republican
 roles:
-- district: '51'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2017-12-01'
   type: lower
-  end_date: '2017-12-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '51'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4793
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-given_name: Adam
-family_name: ' Rosendale'
+- url: https://leg.mt.gov/legislator-information/roster/individual/4793
+  note: legislator page
 other_identifiers:
-- identifier: MTL000406
-  scheme: legacy_openstates
+- scheme: legacy_openstates
+  identifier: MTL000406
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

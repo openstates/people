@@ -2,21 +2,21 @@ id: ocd-person/e420fffb-7b56-42db-8cc4-531526ad6802
 name: Bruce Starr
 given_name: Bruce
 family_name: Starr
+image: http://www.oregonlegislature.gov/senate/MemberPhotos/starr.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.oregonlegislature.gov/senate/MemberPhotos/starr.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '15'
 links:
 - url: http://www.oregonlegislature.gov/starrb
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000025
+- scheme: legacy_openstates
+  identifier: ORL000177
 sources:
 - url: http://www.oregonlegislature.gov/senate/Pages/SenatorsAll.aspx
-other_identifiers:
-- identifier: ORL000025
-  scheme: legacy_openstates
-- identifier: ORL000177
-  scheme: legacy_openstates

@@ -1,21 +1,21 @@
 id: ocd-person/37bcdeb4-d877-4e88-ba76-611241e17dbc
 name: Pete Kelly
+given_name: Pete
+family_name: Kelly
+image: http://akleg.gov/images/legislators/rounded/KEP.png
 party:
 - name: Republican
 roles:
-- district: A
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: A
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kep
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000066
+- scheme: legacy_openstates
+  identifier: AKL000149
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kep
-image: http://akleg.gov/images/legislators/rounded/KEP.png
-other_identifiers:
-- identifier: AKL000066
-  scheme: legacy_openstates
-- identifier: AKL000149
-  scheme: legacy_openstates
-given_name: Pete
-family_name: Kelly

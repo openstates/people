@@ -1,24 +1,24 @@
 id: ocd-person/778d8b55-c259-47ed-acf4-689553418ad7
 name: Kathie Conway
+given_name: Kathie
+family_name: Conway
 party:
 - name: Republican
 roles:
-- district: '104'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '104'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=104
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000057
+- scheme: legacy_openstates
+  identifier: MOL000228
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=104
 extras:
   first_name: Kathie
   last_name: Conway
-other_identifiers:
-- identifier: MOL000057
-  scheme: legacy_openstates
-- identifier: MOL000228
-  scheme: legacy_openstates
-given_name: Kathie
-family_name: Conway

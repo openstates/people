@@ -3,19 +3,19 @@ name: Sally G Fox
 given_name: Sally
 family_name: Fox
 middle_name: G
+image: http://ballotpedia.org/wiki/images/Sally_Fox.jpg
 party:
 - name: Democratic
 roles:
-- district: Chittenden
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://ballotpedia.org/wiki/images/Sally_Fox.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000182
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000182
-  scheme: legacy_openstates

@@ -3,21 +3,21 @@ name: Sara R Thomas
 given_name: Sara
 family_name: Thomas
 middle_name: R
+image: http://billstatus.ls.state.ms.us/members/house/thomas.jpg
 party:
 - name: Democratic
 roles:
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/thomas.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '31'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/thomas.xml
-sources:
-- url: http://billstatus.ls.state.ms.us/members/house/thomas.xml
-other_identifiers:
-- identifier: MSL000116
-  scheme: legacy_openstates
 other_names:
 - name: Thomas
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000116
+sources:
+- url: http://billstatus.ls.state.ms.us/members/house/thomas.xml

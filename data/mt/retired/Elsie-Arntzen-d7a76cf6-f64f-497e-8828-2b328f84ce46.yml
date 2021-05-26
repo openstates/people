@@ -2,34 +2,34 @@ id: ocd-person/d7a76cf6-f64f-497e-8828-2b328f84ce46
 name: Elsie Arntzen
 given_name: Elsie
 family_name: Arntzen
+image: http://leg.mt.gov/images/legislators_64th/12925.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '53'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
-  end_date: '2012-12-31'
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '27'
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '53'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/12925.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '26'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12925
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000052
+- scheme: legacy_openstates
+  identifier: MTL000156
+- scheme: legacy_openstates
+  identifier: MTL000283
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12925
 - url: http://leg.mt.gov/content/sessions/64th/2015SenateMembers.txt
-other_identifiers:
-- identifier: MTL000052
-  scheme: legacy_openstates
-- identifier: MTL000156
-  scheme: legacy_openstates
-- identifier: MTL000283
-  scheme: legacy_openstates

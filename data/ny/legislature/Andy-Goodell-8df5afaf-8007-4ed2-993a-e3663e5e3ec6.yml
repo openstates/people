@@ -1,11 +1,15 @@
 id: ocd-person/8df5afaf-8007-4ed2-993a-e3663e5e3ec6
 name: Andy Goodell
+given_name: Andy
+family_name: Goodell
+email: goodella@nyassembly.gov
+image: https://assembly.state.ny.us/write/upload/member_files/150/headshot/150.jpg
 party:
 - name: Republican
 roles:
-- district: '150'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
+  district: '150'
 contact_details:
 - note: Capitol Office
   address: LOB 446; Albany, NY 12248
@@ -16,15 +20,11 @@ contact_details:
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Andy-Goodell
+ids:
+  twitter: andygoodell
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000113
 sources:
 - url: http://assembly.state.ny.us/mem/Andy-Goodell
 - url: https://assembly.state.ny.us/mem/Andy-Goodell
-image: https://assembly.state.ny.us/write/upload/member_files/150/headshot/150.jpg
-other_identifiers:
-- identifier: NYL000113
-  scheme: legacy_openstates
-given_name: Andy
-family_name: Goodell
-email: goodella@nyassembly.gov
-ids:
-  twitter: andygoodell

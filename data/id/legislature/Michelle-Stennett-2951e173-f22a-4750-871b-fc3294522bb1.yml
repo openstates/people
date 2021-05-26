@@ -1,17 +1,21 @@
 id: ocd-person/2951e173-f22a-4750-871b-fc3294522bb1
 name: Michelle Stennett
+given_name: Michelle
+family_name: Stennett
+email: MStennett@senate.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Stennett1169.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '25'
+- start_date: 2013-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '26'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1353
@@ -19,18 +23,14 @@ contact_details:
   address: PO Box 475, Ketchum, ID, 83340
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=26
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000262
+- scheme: legacy_openstates
+  identifier: IDL000030
+- scheme: legacy_openstates
+  identifier: IDL000134
+- scheme: openstates
+  identifier: ocd-person/f6232882-71b6-4eb8-ad5c-6206326506e1
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Stennett1169.jpg
-other_identifiers:
-- identifier: IDL000262
-  scheme: legacy_openstates
-- identifier: IDL000030
-  scheme: legacy_openstates
-- identifier: IDL000134
-  scheme: legacy_openstates
-- identifier: ocd-person/f6232882-71b6-4eb8-ad5c-6206326506e1
-  scheme: openstates
-given_name: Michelle
-family_name: Stennett
-email: MStennett@senate.idaho.gov

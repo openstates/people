@@ -1,11 +1,15 @@
 id: ocd-person/53869ff4-415d-466a-ad71-c13485b83318
 name: Timmy Ladner
+given_name: Timmy
+family_name: Ladner
+email: tladner@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/ladner.jpg
 party:
 - name: Republican
 roles:
-- district: '93'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '93'
 contact_details:
 - note: Capitol Office
   address: Room 201M-7;P. O. Box 1018;Jackson, MS 39215
@@ -14,15 +18,11 @@ contact_details:
   address: 6 Michael D. Smith Rd;Poplarville, MS 39470
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/ladner.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000219
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/ladner.xml
-image: http://billstatus.ls.state.ms.us/members/house/ladner.jpg
 extras:
   org_info: Rep. Ladner is a member of the Gulf Coast Association of Realtors, MS
     Association of Realtors, and National Association of Realtors.
-other_identifiers:
-- identifier: MSL000219
-  scheme: legacy_openstates
-given_name: Timmy
-family_name: Ladner
-email: tladner@house.ms.gov

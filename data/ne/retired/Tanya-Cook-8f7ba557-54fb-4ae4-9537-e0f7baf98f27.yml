@@ -2,19 +2,19 @@ id: ocd-person/8f7ba557-54fb-4ae4-9537-e0f7baf98f27
 name: Tanya Cook
 given_name: Tanya
 family_name: Cook
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist13.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist13.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '13'
 links:
 - url: http://news.legislature.ne.gov/dist13
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000013
 sources:
 - url: http://news.legislature.ne.gov/dist13
-other_identifiers:
-- identifier: NEL000013
-  scheme: legacy_openstates

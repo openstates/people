@@ -1,11 +1,15 @@
 id: ocd-person/393d3590-c044-4aef-a07a-437e9eca6632
 name: Tyler Harper
+given_name: Tyler
+family_name: Harper
+email: tyler.harper@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/harper-tyler-804.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: 301-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=804&Session=27
 - url: https://www.legis.ga.gov/members/senate/804?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000297
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=804&Session=27
 - url: https://www.legis.ga.gov/members/senate/804?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/harper-tyler-804.jpg
-family_name: Harper
-given_name: Tyler
 extras:
   guid: 804
   city: Ocilla
   georgia_id: 804
   residence: Ocilla
-other_identifiers:
-- identifier: GAL000297
-  scheme: legacy_openstates
-email: tyler.harper@senate.ga.gov

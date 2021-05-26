@@ -2,26 +2,26 @@ id: ocd-person/6c76429b-b7e1-443b-8d56-398e01ca2a4f
 name: Peter Beck
 given_name: Peter
 family_name: Beck
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/54.jpg
 party:
 - name: Republican
 roles:
-- district: '54'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '67'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '54'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/54.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '67'
 links:
 - url: http://www.ohiohouse.gov/peter-beck
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000100
+- scheme: legacy_openstates
+  identifier: OHL000223
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000100
-  scheme: legacy_openstates
-- identifier: OHL000223
-  scheme: legacy_openstates

@@ -1,32 +1,32 @@
 id: ocd-person/65fc9478-1d40-4b00-b434-52a0a737c067
 name: Albert Olszewski
-party:
-- name: Republican
-roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  end_date: 2016-12-31
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  end_date: '2021-01-03'
-links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4845
-- url: https://leg.mt.gov/legislator-information/roster/individual/5032
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-- url: https://leg.mt.gov/legislator-information/roster/individual/5032
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-other_identifiers:
-- identifier: MTL000363
-  scheme: legacy_openstates
-- identifier: MTL000261
-  scheme: legacy_openstates
-- identifier: ocd-person/c384f2cb-98db-4a30-9e4d-d57fe2164e40
-  scheme: openstates
 given_name: Albert
 family_name: Olszewski
 email: Albert.Olszewski@mtleg.gov
+party:
+- name: Republican
+roles:
+- end_date: 2016-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '11'
+- end_date: '2021-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '6'
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4845
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5032
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000363
+- scheme: legacy_openstates
+  identifier: MTL000261
+- scheme: openstates
+  identifier: ocd-person/c384f2cb-98db-4a30-9e4d-d57fe2164e40
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5032
+- url: https://leg.mt.gov/legislator-information/?session_select=113

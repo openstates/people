@@ -2,26 +2,26 @@ id: ocd-person/3dffc72b-5051-4a1d-a601-79b997b39601
 name: Tim Manchin
 given_name: Tim
 family_name: Manchin
+image: http://www.legis.state.wv.us/../images/members/2016/house/manchin_tim.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '50'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.state.wv.us/../images/members/2016/house/manchin_tim.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '43'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Manchin
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000116
+- scheme: legacy_openstates
+  identifier: WVL000207
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Manchin
-other_identifiers:
-- identifier: WVL000116
-  scheme: legacy_openstates
-- identifier: WVL000207
-  scheme: legacy_openstates

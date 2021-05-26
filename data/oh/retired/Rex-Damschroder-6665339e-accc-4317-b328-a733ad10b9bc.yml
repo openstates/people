@@ -2,26 +2,26 @@ id: ocd-person/6665339e-accc-4317-b328-a733ad10b9bc
 name: Rex Damschroder
 given_name: Rex
 family_name: Damschroder
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/88.jpg
 party:
 - name: Republican
 roles:
-- district: '88'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '81'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '88'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/88.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '81'
 links:
 - url: http://www.ohiohouse.gov/rex-damschroder
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000114
+- scheme: legacy_openstates
+  identifier: OHL000257
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000114
-  scheme: legacy_openstates
-- identifier: OHL000257
-  scheme: legacy_openstates

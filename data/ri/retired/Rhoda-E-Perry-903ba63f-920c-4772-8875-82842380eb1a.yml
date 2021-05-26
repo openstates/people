@@ -5,15 +5,15 @@ family_name: Perry
 party:
 - name: Democratic
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '3'
 links:
 - url: http://webserver.rilin.state.ri.us/Perry/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000003
 sources:
 - url: http://webserver.rilin.state.ri.us/Documents/Senators.xls
-other_identifiers:
-- identifier: RIL000003
-  scheme: legacy_openstates

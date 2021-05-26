@@ -1,16 +1,20 @@
 id: ocd-person/b654a887-2eca-41f7-83ba-60044df0fc1c
 name: Ted Davis, Jr.
+given_name: Ted
+family_name: Davis
+email: Ted.Davis@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/637/High
 party:
 - name: Republican
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: 2020-12-31
   type: lower
-  end_date: 2020-12-31
-- district: '20'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '19'
+- start_date: 2021-01-01
   type: lower
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 417B;Raleigh, NC 27603-5925
@@ -19,16 +23,12 @@ contact_details:
   address: PO Box 2535;Wilmington, NC 28402
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/637
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000245
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/637
-image: https://www.ncleg.gov/Members/MemberImage/H/637/High
 extras:
   counties:
   - New Hanover
   notice: null
-other_identifiers:
-- identifier: NCL000245
-  scheme: legacy_openstates
-given_name: Ted
-family_name: Davis
-email: Ted.Davis@ncleg.gov

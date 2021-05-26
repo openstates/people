@@ -2,17 +2,17 @@ id: ocd-person/3ef98b57-72ca-4127-8c8b-a3d2f6a6e679
 name: Andrew Rice
 given_name: Andrew
 family_name: Rice
+image: http://www.oksenate.gov/Senators/biographies/rice_bio.jpg
 party:
 - name: Democratic
 roles:
-- district: '46'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.oksenate.gov/Senators/biographies/rice_bio.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '46'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000038
 sources:
 - url: http://www.oksenate.gov/Senators/directory.xls
-other_identifiers:
-- identifier: OKL000038
-  scheme: legacy_openstates

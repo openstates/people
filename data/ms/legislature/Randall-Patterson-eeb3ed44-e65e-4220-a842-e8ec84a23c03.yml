@@ -1,11 +1,14 @@
 id: ocd-person/eeb3ed44-e65e-4220-a842-e8ec84a23c03
 name: Randall Patterson
+given_name: Randall
+family_name: Patterson
+image: http://billstatus.ls.state.ms.us/members/house/patterson.jpg
 party:
 - name: Republican
 roles:
-- district: '115'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '115'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +18,13 @@ contact_details:
   voice: 228-273-0758
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/patterson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000130
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/patterson.xml
-image: http://billstatus.ls.state.ms.us/members/house/patterson.jpg
 extras:
   org_info: 'Representative Patterson is a member of the American Legislative Exchange
     Council, Biloxi Chamber of Commerce, Biloxi Bay Chamber of Commerce, Association
     of General Contractors of Mississippi, City of Biloxi Plumbing and Mechanical
     Board and the Biloxi Elks'' Lodge #606.'
-other_identifiers:
-- identifier: MSL000130
-  scheme: legacy_openstates
-given_name: Randall
-family_name: Patterson

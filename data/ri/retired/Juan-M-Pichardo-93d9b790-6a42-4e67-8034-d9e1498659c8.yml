@@ -2,21 +2,21 @@ id: ocd-person/93d9b790-6a42-4e67-8034-d9e1498659c8
 name: Juan M. Pichardo
 given_name: Juan M.
 family_name: Pichardo
+image: http://webserver.rilin.state.ri.us/Pichardo/photos/image2.jpg
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2017-12-31'
-image: http://webserver.rilin.state.ri.us/Pichardo/photos/image2.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '2'
 links:
 - url: http://webserver.rilin.state.ri.us/Pichardo/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000002
 sources:
 - url: http://www.rilin.state.ri.us/senators/default.aspx
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/senators/pichardo
-other_identifiers:
-- identifier: RIL000002
-  scheme: legacy_openstates

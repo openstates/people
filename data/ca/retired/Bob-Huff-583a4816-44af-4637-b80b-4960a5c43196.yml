@@ -2,23 +2,23 @@ id: ocd-person/583a4816-44af-4637-b80b-4960a5c43196
 name: Bob Huff
 given_name: Bob
 family_name: Huff
+image: http://senate.ca.gov/sites/senate.ca.gov/files/HUFF_1.jpg?1381191880
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2016-12-31'
-image: http://senate.ca.gov/sites/senate.ca.gov/files/HUFF_1.jpg?1381191880
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '29'
 links:
 - url: http://huff.cssrc.us
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000022
+- scheme: legacy_openstates
+  identifier: CAL000191
+- scheme: legacy_openstates
+  identifier: CAL000315
 sources:
 - url: http://senate.ca.gov/senators
-other_identifiers:
-- identifier: CAL000022
-  scheme: legacy_openstates
-- identifier: CAL000191
-  scheme: legacy_openstates
-- identifier: CAL000315
-  scheme: legacy_openstates

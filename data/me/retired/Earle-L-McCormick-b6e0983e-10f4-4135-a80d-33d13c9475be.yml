@@ -3,27 +3,27 @@ name: Earle L. McCormick
 given_name: Earle
 family_name: McCormick
 middle_name: L.
+image: http://www.maine.gov/legis/senate_gop/_images/mccormick.jpg
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '21'
+- start_date: '2015-01-01'
   end_date: '2018-12-31'
-image: http://www.maine.gov/legis/senate_gop/_images/mccormick.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '14'
 links:
 - url: http://legisweb1.mainelegislature.org/wp/senate/senators/mccormick/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000021
+- scheme: legacy_openstates
+  identifier: MEL000299
 sources:
 - url: http://legisweb1.mainelegislature.org/wp/senate/wp-content/uploads/sites/2/2014/12/127th-Senate-Members2.xlsx
 - url: http://legisweb1.mainelegislature.org/wp/senate/senators/mccormick/
-other_identifiers:
-- identifier: MEL000021
-  scheme: legacy_openstates
-- identifier: MEL000299
-  scheme: legacy_openstates

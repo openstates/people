@@ -2,27 +2,27 @@ id: ocd-person/43497e09-16f2-4ba5-b53f-f15361152a97
 name: Denny Coffman
 given_name: Denny
 family_name: Coffman
+image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/coffman.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '5'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/coffman.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '6'
 links:
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=coffman&year=2013
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: HIL000036
+- scheme: legacy_openstates
+  identifier: HIL000105
 sources:
 - url: http://capitol.hawaii.gov/members/legislators.aspx?chamber=H
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=coffman&year=2013
-other_identifiers:
-- identifier: HIL000036
-  scheme: legacy_openstates
-- identifier: HIL000105
-  scheme: legacy_openstates

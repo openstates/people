@@ -2,7 +2,7 @@
 
 ![Lint YAML](https://github.com/openstates/people/workflows/Lint%20YAML/badge.svg)
 
-This repository contains YAML files with all the information on given individuals.
+This repository contains YAML files with official information on state legislators, governors, and some municipal leaders.
 
 ## Links
 

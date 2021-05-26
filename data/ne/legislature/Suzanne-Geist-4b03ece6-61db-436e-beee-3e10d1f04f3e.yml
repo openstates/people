@@ -1,11 +1,15 @@
 id: ocd-person/4b03ece6-61db-436e-beee-3e10d1f04f3e
 name: Suzanne Geist
+given_name: Suzanne
+family_name: Geist
+email: sgeist@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist25.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '25'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: Room 2000; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist25
 - url: http://news.legislature.ne.gov/dist25/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000100
+- scheme: legacy_openstates
+  identifier: NEL000177
 sources:
 - url: http://news.legislature.ne.gov/dist25
 - url: http://news.legislature.ne.gov/dist25/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist25.jpg
-other_identifiers:
-- identifier: NEL000100
-  scheme: legacy_openstates
-- identifier: NEL000177
-  scheme: legacy_openstates
-given_name: Suzanne
-family_name: Geist
-email: sgeist@leg.ne.gov

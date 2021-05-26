@@ -1,11 +1,15 @@
 id: ocd-person/15f0ab07-54ec-40fb-8eea-e9dc63dabd68
 name: Phelps Anderson
+given_name: Phelps
+family_name: Anderson
+email: phelps.anderson@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/House/HANDP.jpg
 party:
 - name: Republican
 roles:
-- district: '66'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
+  district: '66'
 contact_details:
 - note: Capitol Office
   address: Room 203GN State Capitol;Santa Fe, NM 87501
@@ -17,7 +21,3 @@ links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HANDP
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HANDP
-image: http://www.nmlegis.gov/Images/Legislators/House/HANDP.jpg
-given_name: Phelps
-family_name: Anderson
-email: phelps.anderson@nmlegis.gov

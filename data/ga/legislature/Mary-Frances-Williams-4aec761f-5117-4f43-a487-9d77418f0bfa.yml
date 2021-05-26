@@ -1,11 +1,15 @@
 id: ocd-person/4aec761f-5117-4f43-a487-9d77418f0bfa
 name: Mary Frances Williams
+given_name: Mary Frances
+family_name: Williams
+email: maryfrances.williams@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/williams-mary-frances-4938.jpg
 party:
 - name: Democratic
 roles:
-- district: '37'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '37'
 contact_details:
 - note: Capitol Office
   address: 607-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -20,12 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4938&Session=27
 - url: https://www.legis.ga.gov/members/house/4938?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/williams-mary-frances-4938.jpg
-family_name: Williams
-given_name: Mary Frances
 extras:
   guid: 4938
   city: Marietta
   georgia_id: 4938
   residence: Marietta
-email: maryfrances.williams@house.ga.gov

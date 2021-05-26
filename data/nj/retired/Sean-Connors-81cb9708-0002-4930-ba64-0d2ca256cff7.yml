@@ -2,20 +2,20 @@ id: ocd-person/81cb9708-0002-4930-ba64-0d2ca256cff7
 name: Sean Connors
 given_name: Sean
 family_name: Connors
+image: http://www.njleg.state.nj.us/members/memberphotos/connors_sean_color.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2013-12-31'
-image: http://www.njleg.state.nj.us/members/memberphotos/connors_sean_color.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '33'
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=345
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000162
 sources:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=345
 - url: http://www.njleg.state.nj.us/downloads.asp
-other_identifiers:
-- identifier: NJL000162
-  scheme: legacy_openstates

@@ -1,11 +1,14 @@
 id: ocd-person/ea0027a9-6952-4b74-a771-a14ced4e647e
 name: Christopher Rosario
+given_name: Christopher
+family_name: Rosario
+email: Christopher.Rosario@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '128'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '128'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4013;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 195 French Street;Bridgeport, CT 06606
 links:
 - url: http://www.housedems.ct.gov/Rosario
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000297
-  scheme: legacy_openstates
-given_name: Christopher
-family_name: Rosario
-email: Christopher.Rosario@cga.ct.gov
 other_names:
 - name: Rosario, Christopher
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000297
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

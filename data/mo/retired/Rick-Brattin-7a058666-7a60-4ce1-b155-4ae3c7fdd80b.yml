@@ -1,24 +1,24 @@
 id: ocd-person/7a058666-7a60-4ce1-b155-4ae3c7fdd80b
 name: Rick Brattin
+given_name: Rick
+family_name: Brattin
 party:
 - name: Republican
 roles:
-- district: '55'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '55'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=55
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000046
+- scheme: legacy_openstates
+  identifier: MOL000220
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=55
 extras:
   first_name: Rick
   last_name: Brattin
-other_identifiers:
-- identifier: MOL000046
-  scheme: legacy_openstates
-- identifier: MOL000220
-  scheme: legacy_openstates
-given_name: Rick
-family_name: Brattin

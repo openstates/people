@@ -1,16 +1,18 @@
 id: ocd-person/a33a2113-e60b-4000-9dc7-eb58a775d986
 name: Derek Slap
+given_name: Derek
+family_name: Slap
 party:
 - name: Democratic
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: 2019-03-01
   type: lower
-  end_date: 2019-03-01
-- district: '5'
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '19'
+- start_date: 2019-03-01
   type: upper
-  start_date: 2019-03-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 1000;Hartford, CT 06106
@@ -19,12 +21,10 @@ contact_details:
   address: 51 Fairlee Road;West Hartford, CT 06107
 links:
 - url: http://www.senatedems.ct.gov/slap
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000320
-  scheme: legacy_openstates
-given_name: Derek
-family_name: Slap
 other_names:
 - name: Slap, Derek
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000320
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

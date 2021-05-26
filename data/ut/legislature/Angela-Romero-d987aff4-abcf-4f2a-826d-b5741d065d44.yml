@@ -1,20 +1,31 @@
 id: ocd-person/d987aff4-abcf-4f2a-826d-b5741d065d44
 name: Angela Romero
+given_name: Angela
+family_name: Romero
+email: angelaromero@le.utah.gov
+image: https://le.utah.gov/images/legislator/ROMERAY.jpg
 party:
 - name: Democratic
 roles:
-- district: '26'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '26'
 contact_details:
 - note: District Office
   address: PO BOX 25732, SALT LAKE CITY, UT, 84125
   voice: 801-722-4972
 links:
 - url: http://house.utah.gov/rep/ROMERAY
+other_names:
+- name: Romero, A.
+- name: Romero, Angela
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000124
+- scheme: legacy_openstates
+  identifier: UTL000172
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/ROMERAY.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIROMERAY1.pdf
@@ -24,14 +35,3 @@ extras:
   - http://le.utah.gov/house2/CofI/aromero.pdf
   - http://le.utah.gov/house2/CofI/ROMERAY.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411502
-other_identifiers:
-- identifier: UTL000124
-  scheme: legacy_openstates
-- identifier: UTL000172
-  scheme: legacy_openstates
-given_name: Angela
-family_name: Romero
-email: angelaromero@le.utah.gov
-other_names:
-- name: Romero, A.
-- name: Romero, Angela

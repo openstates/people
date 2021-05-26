@@ -1,19 +1,28 @@
 id: ocd-person/5612561a-cd0c-47da-9e41-9f81d17a2748
 name: Bruce DeGroot
+given_name: Bruce
+family_name: DeGroot
+email: Bruce.DeGroot@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1948
 party:
 - name: Republican
 roles:
-- district: '101'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '101'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 304-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 304-B; Jefferson
+    City MO 65101
   voice: 573-751-1247
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=101
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=101
+other_names:
+- name: DeGroot, Bruce
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000432
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=101
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Bruce
   last_name: DeGroot
-other_identifiers:
-- identifier: MOL000432
-  scheme: legacy_openstates
-given_name: Bruce
-family_name: DeGroot
-email: Bruce.DeGroot@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1948
-other_names:
-- name: DeGroot, Bruce

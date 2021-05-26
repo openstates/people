@@ -1,20 +1,24 @@
 id: ocd-person/851e6318-8209-4042-b554-0f082fe1b8dd
 name: Tom Crank
+given_name: Tom
+family_name: Crank
+email: Thomas.Crank@wyoleg.gov
+birth_date: 1960-01-17
+image: http://wyoleg.gov/LegislatorSummary/Photos/CrankTH18.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '18'
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2037
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000150
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2037
-image: http://wyoleg.gov/LegislatorSummary/Photos/CrankTH18.jpg
-birth_date: '1960-01-17'
-given_name: Tom
-family_name: Crank
 extras:
   county: Lincoln, Sweetwater, Uinta
   number_children: ''
@@ -23,7 +27,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 2037
-other_identifiers:
-- identifier: WYL000150
-  scheme: legacy_openstates
-email: Thomas.Crank@wyoleg.gov

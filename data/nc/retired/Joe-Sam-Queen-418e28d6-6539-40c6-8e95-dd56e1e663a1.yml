@@ -1,20 +1,28 @@
 id: ocd-person/418e28d6-6539-40c6-8e95-dd56e1e663a1
 name: Joe Sam Queen
+email: Joe.Queen@ncleg.net
 party:
 - name: Democratic
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
-  start_date: 2009-01-01
+- start_date: 2009-01-01
   end_date: 2010-12-31
-- district: '119'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: 2013-01-01
+  district: '47'
+- start_date: 2013-01-01
   end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '119'
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/669
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000040
+- scheme: legacy_openstates
+  identifier: NCL000294
+- scheme: openstates
+  identifier: ocd-person/1d5fa241-9606-4410-ae6f-23f138317930
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/669
 extras:
@@ -23,11 +31,3 @@ extras:
   - Jackson
   - Swain
   notice: null
-other_identifiers:
-- identifier: NCL000040
-  scheme: legacy_openstates
-- identifier: NCL000294
-  scheme: legacy_openstates
-- identifier: ocd-person/1d5fa241-9606-4410-ae6f-23f138317930
-  scheme: openstates
-email: Joe.Queen@ncleg.net

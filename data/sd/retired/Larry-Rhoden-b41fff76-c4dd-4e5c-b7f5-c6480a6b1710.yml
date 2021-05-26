@@ -1,33 +1,33 @@
 id: ocd-person/b41fff76-c4dd-4e5c-b7f5-c6480a6b1710
 name: Larry Rhoden
+given_name: Larry
+family_name: Rhoden
+image: https://sdlegislature.gov/inc/img/Legislators/Rhoden_2017.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '29'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+  district: '29'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '29'
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1463&Session=2018s
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=440
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000282
+- scheme: openstates
+  identifier: ocd-person/b0b10e29-de2d-4b42-a2f2-0fe5ebc6f716
+- scheme: legacy_openstates
+  identifier: SDL000031
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1463&Session=2018s
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=440
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=440
-image: https://sdlegislature.gov/inc/img/Legislators/Rhoden_2017.jpg
 extras:
   occupation: Rancher
-other_identifiers:
-- identifier: SDL000282
-  scheme: legacy_openstates
-- identifier: ocd-person/b0b10e29-de2d-4b42-a2f2-0fe5ebc6f716
-  scheme: openstates
-- identifier: SDL000031
-  scheme: legacy_openstates
-given_name: Larry
-family_name: Rhoden

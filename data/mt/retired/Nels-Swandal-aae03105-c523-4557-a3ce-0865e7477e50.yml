@@ -1,20 +1,20 @@
 id: ocd-person/aae03105-c523-4557-a3ce-0865e7477e50
 name: Nels Swandal
+given_name: Nels
+family_name: Swandal
 party:
 - name: Republican
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: upper
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '30'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4717
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4717
+  note: legislator page
 other_identifiers:
-- identifier: MTL000280
-  scheme: legacy_openstates
-given_name: Nels
-family_name: Swandal
+- scheme: legacy_openstates
+  identifier: MTL000280
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

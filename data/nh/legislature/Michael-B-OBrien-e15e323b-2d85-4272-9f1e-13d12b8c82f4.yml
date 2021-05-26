@@ -1,11 +1,15 @@
 id: ocd-person/e15e323b-2d85-4272-9f1e-13d12b8c82f4
 name: Michael B. O'Brien
+given_name: Michael B.
+family_name: O'Brien
+email: Michael.O'Brien@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376720.jpg
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 36
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 36
 contact_details:
 - note: District Office
   address: 4 Woodfield Street;Nashua, NH 03062-2056
@@ -13,26 +17,22 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000670
+- scheme: legacy_openstates
+  identifier: NHL000914
+- scheme: legacy_openstates
+  identifier: NHL001263
+- scheme: legacy_openstates
+  identifier: NHL001235
+- scheme: legacy_openstates
+  identifier: NHL001270
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376720
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376720.jpg
 extras:
   first_name: Michael
   last_name: O'Brien
   middle_name: B.
-other_identifiers:
-- identifier: NHL000670
-  scheme: legacy_openstates
-- identifier: NHL000914
-  scheme: legacy_openstates
-- identifier: NHL001263
-  scheme: legacy_openstates
-- identifier: NHL001235
-  scheme: legacy_openstates
-- identifier: NHL001270
-  scheme: legacy_openstates
-given_name: Michael B.
-family_name: O'Brien
-email: Michael.O'Brien@leg.state.nh.us

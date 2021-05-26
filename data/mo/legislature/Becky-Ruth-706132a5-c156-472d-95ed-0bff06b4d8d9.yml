@@ -1,19 +1,28 @@
 id: ocd-person/706132a5-c156-472d-95ed-0bff06b4d8d9
 name: Becky Ruth
+given_name: Becky
+family_name: Ruth
+email: Becky.Ruth@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1791
 party:
 - name: Republican
 roles:
-- district: '114'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '114'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 316; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 316; Jefferson
+    City MO 65101
   voice: 573-751-4451
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=114
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=114
+other_names:
+- name: Ruth, Becky
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000406
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=114
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Becky
   last_name: Ruth
-other_identifiers:
-- identifier: MOL000406
-  scheme: legacy_openstates
-given_name: Becky
-family_name: Ruth
-email: Becky.Ruth@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1791
-other_names:
-- name: Ruth, Becky

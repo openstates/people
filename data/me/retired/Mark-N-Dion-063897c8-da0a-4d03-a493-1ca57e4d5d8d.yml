@@ -1,43 +1,43 @@
 id: ocd-person/063897c8-da0a-4d03-a493-1ca57e4d5d8d
 name: Mark N. Dion
+given_name: Mark
+family_name: Dion
+middle_name: N.
+image: https://mainelegislature.org/images/logo.png
 party:
 - name: Democratic
 roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
-- district: '43'
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+  district: '28'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '113'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '43'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '113'
 links:
 - url: https://mainelegislature.org/senate/senator-mark-dion/9366
 - url: http://www.maine.gov/legis/house/hsebios/dionmn.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000524
+- scheme: legacy_openstates
+  identifier: MEL000148
+- scheme: legacy_openstates
+  identifier: MEL000327
+- scheme: openstates
+  identifier: ocd-person/eead9dc3-96a2-4bb7-aa12-017f5d755111
 sources:
 - url: https://mainelegislature.org/senate/senator-mark-dion/9366
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/dionmn.htm
-image: https://mainelegislature.org/images/logo.png
 extras:
   first_name: Mark
   last_name: Dion
   middle_name: N.
-other_identifiers:
-- identifier: MEL000524
-  scheme: legacy_openstates
-- identifier: MEL000148
-  scheme: legacy_openstates
-- identifier: MEL000327
-  scheme: legacy_openstates
-- identifier: ocd-person/eead9dc3-96a2-4bb7-aa12-017f5d755111
-  scheme: openstates
-given_name: Mark
-family_name: Dion
-middle_name: N.

@@ -1,18 +1,18 @@
 id: ocd-person/8482e8c5-1be9-490b-a186-50be05f5501a
 name: Pam Staneski
+given_name: Pam
+family_name: Staneski
 party:
 - name: Republican
 roles:
-- district: '119'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '119'
 links:
 - url: http://www.cthousegop.com/Staneski/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000274
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000274
-  scheme: legacy_openstates
-given_name: Pam
-family_name: Staneski

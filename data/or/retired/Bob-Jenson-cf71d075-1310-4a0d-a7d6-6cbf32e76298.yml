@@ -2,23 +2,23 @@ id: ocd-person/cf71d075-1310-4a0d-a7d6-6cbf32e76298
 name: Bob Jenson
 given_name: Bob
 family_name: Jenson
+image: http://www.oregonlegislature.gov/house/MemberPhotos/jenson.jpg
 party:
 - name: Republican
 roles:
-- district: '58'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.oregonlegislature.gov/house/MemberPhotos/jenson.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '58'
 links:
 - url: http://www.oregonlegislature.gov/jenson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000062
+- scheme: legacy_openstates
+  identifier: ORL000125
+- scheme: legacy_openstates
+  identifier: ORL000249
 sources:
 - url: http://www.oregonlegislature.gov/house/Pages/RepresentativesAll.aspx
-other_identifiers:
-- identifier: ORL000062
-  scheme: legacy_openstates
-- identifier: ORL000125
-  scheme: legacy_openstates
-- identifier: ORL000249
-  scheme: legacy_openstates

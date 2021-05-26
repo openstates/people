@@ -1,16 +1,19 @@
 id: ocd-person/6c0069de-c064-412e-ae45-9e87d6ee3dae
 name: Sara Feigenholtz
+given_name: Sara
+family_name: Feigenholtz
+image: http://ilga.gov/images/members/{E77394AE-D896-4FEB-A325-B33A553554EB}.jpg
 party:
 - name: Democratic
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+- end_date: 2020-01-21
   type: lower
-  end_date: 2020-01-21
-- district: '6'
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '12'
+- start_date: 2020-01-21
   type: upper
-  start_date: 2020-01-21
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: M106 Capitol Building;Springfield, IL 62706
@@ -21,18 +24,15 @@ contact_details:
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2778
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2977
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL000098
+- scheme: legacy_openstates
+  identifier: ILL000452
+- scheme: legacy_openstates
+  identifier: ILL000273
 sources:
 - url: http://ilga.gov/senate/default.asp?GA=101
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2778
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2977
-image: http://ilga.gov/images/members/{E77394AE-D896-4FEB-A325-B33A553554EB}.jpg
-other_identifiers:
-- identifier: ILL000098
-  scheme: legacy_openstates
-- identifier: ILL000452
-  scheme: legacy_openstates
-- identifier: ILL000273
-  scheme: legacy_openstates
-given_name: Sara
-family_name: Feigenholtz

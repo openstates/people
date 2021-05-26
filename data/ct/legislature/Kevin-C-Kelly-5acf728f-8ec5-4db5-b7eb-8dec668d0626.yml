@@ -1,11 +1,14 @@
 id: ocd-person/5acf728f-8ec5-4db5-b7eb-8dec668d0626
 name: Kevin C. Kelly
+given_name: Kevin
+family_name: Kelly
+email: Kevin.Kelly@cga.ct.gov
 party:
 - name: Republican
 roles:
-- district: '21'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '21'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2803;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 240 York Street;Stratford, CT 06615
 links:
 - url: http://www.ctsenaterepublicans.com/home-kelly
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000021
-  scheme: legacy_openstates
-given_name: Kevin
-family_name: Kelly
-email: Kevin.Kelly@cga.ct.gov
 other_names:
 - name: Kelly, Kevin C.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000021
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,17 +1,21 @@
 id: ocd-person/824fd47e-fb8c-47e2-b5ab-67af71e6f6bc
 name: Steve Vick
+given_name: Steve
+family_name: Vick
+email: SJVick@senate.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Vick1164.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '3'
+- start_date: 2013-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '2'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1345
@@ -19,18 +23,14 @@ contact_details:
   address: 2140 E Hanley Ave, Dalton Gardens, ID, 83815
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=2
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000251
+- scheme: legacy_openstates
+  identifier: IDL000033
+- scheme: legacy_openstates
+  identifier: IDL000137
+- scheme: openstates
+  identifier: ocd-person/2c1dc41c-d9b9-46bf-97ae-74a9b689b7be
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Vick1164.jpg
-other_identifiers:
-- identifier: IDL000251
-  scheme: legacy_openstates
-- identifier: IDL000033
-  scheme: legacy_openstates
-- identifier: IDL000137
-  scheme: legacy_openstates
-- identifier: ocd-person/2c1dc41c-d9b9-46bf-97ae-74a9b689b7be
-  scheme: openstates
-given_name: Steve
-family_name: Vick
-email: SJVick@senate.idaho.gov

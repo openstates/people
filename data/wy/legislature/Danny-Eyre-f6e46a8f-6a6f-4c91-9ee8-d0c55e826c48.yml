@@ -1,11 +1,16 @@
 id: ocd-person/f6e46a8f-6a6f-4c91-9ee8-d0c55e826c48
 name: Danny Eyre
+given_name: Danny
+family_name: Eyre
+email: Danny.Eyre@wyoleg.gov
+birth_date: 1948-02-02
+image: http://wyoleg.gov/LegislatorSummary/Photos/EyreDH19.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '19'
 contact_details:
 - note: District Office
   address: P.O. Box 425, Lyman WY 82937
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2038
 - url: http://wyoleg.gov/Legislators/2021/R/2038
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000139
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2038
 - url: http://wyoleg.gov/Legislators/2021/R/2038
-image: http://wyoleg.gov/LegislatorSummary/Photos/EyreDH19.jpg
-birth_date: '1948-02-02'
-given_name: Danny
-family_name: Eyre
 extras:
   county: Uinta
   number_children: ''
@@ -32,7 +36,3 @@ extras:
   - degree: B.S.
     gradYear: '1970'
     schoolName: Utah State University
-other_identifiers:
-- identifier: WYL000139
-  scheme: legacy_openstates
-email: Danny.Eyre@wyoleg.gov

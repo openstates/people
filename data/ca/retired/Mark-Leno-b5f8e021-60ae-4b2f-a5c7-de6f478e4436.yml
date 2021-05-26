@@ -2,28 +2,28 @@ id: ocd-person/b5f8e021-60ae-4b2f-a5c7-de6f478e4436
 name: Mark Leno
 given_name: Mark
 family_name: Leno
+image: http://sd11.senate.ca.gov/sites/sd11.senate.ca.gov/files/images/ML%20at%20SCOTUS%20Prop%208%203.26.13%20II%20-%20Copy.thumbnail.JPG
 party:
 - name: Democratic
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: upper
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '3'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://sd11.senate.ca.gov/sites/sd11.senate.ca.gov/files/images/ML%20at%20SCOTUS%20Prop%208%203.26.13%20II%20-%20Copy.thumbnail.JPG
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '11'
 links:
 - url: http://sd11.senate.ca.gov
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000003
+- scheme: legacy_openstates
+  identifier: CAL000194
+- scheme: legacy_openstates
+  identifier: CAL000319
 sources:
 - url: http://senate.ca.gov/senators
-other_identifiers:
-- identifier: CAL000003
-  scheme: legacy_openstates
-- identifier: CAL000194
-  scheme: legacy_openstates
-- identifier: CAL000319
-  scheme: legacy_openstates

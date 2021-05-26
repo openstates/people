@@ -1,37 +1,37 @@
 id: ocd-person/b5de0597-0a18-4b0c-a566-f3d637dde035
 name: Nick Miccarelli
+given_name: Nick
+family_name: Miccarelli
+image: http://www.legis.state.pa.us/images/members/200/1175.jpg
 party:
 - name: Republican
 roles:
-- district: '162'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '162'
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: lower
-  start_date: '2009-01-01'
+  district: '162'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '162'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1175
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000504
+- scheme: legacy_openstates
+  identifier: PAL000169
+- scheme: legacy_openstates
+  identifier: PAL000306
+- scheme: legacy_openstates
+  identifier: PAL000383
+- scheme: openstates
+  identifier: ocd-person/396f219c-d21e-47de-973f-0412fa6e8d78
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1175
-image: http://www.legis.state.pa.us/images/members/200/1175.jpg
 extras:
   facebook: https://facebook.com/RepMiccarelli
   youtube: https://youtube.com/RepMiccarelli
-other_identifiers:
-- identifier: PAL000504
-  scheme: legacy_openstates
-- identifier: PAL000169
-  scheme: legacy_openstates
-- identifier: PAL000306
-  scheme: legacy_openstates
-- identifier: PAL000383
-  scheme: legacy_openstates
-- identifier: ocd-person/396f219c-d21e-47de-973f-0412fa6e8d78
-  scheme: openstates
-given_name: Nick
-family_name: Miccarelli

@@ -1,11 +1,15 @@
 id: ocd-person/c71cb4ca-cc90-4ba3-8ae8-1a41199ee29f
 name: Eric L. Householder
+given_name: Eric
+family_name: Householder
+email: eric.householder@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/householder_eric.jpg
 party:
 - name: Republican
 roles:
-- district: '64'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '64'
 contact_details:
 - note: Capitol Office
   address: Room 462M, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,16 +19,12 @@ contact_details:
   voice: 304-262-9004
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Householder
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000132
+- scheme: legacy_openstates
+  identifier: WVL000225
+- scheme: legacy_openstates
+  identifier: WVL000256
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Householder
-image: http://www.legis.state.wv.us/images/members/2021/house/householder_eric.jpg
-other_identifiers:
-- identifier: WVL000132
-  scheme: legacy_openstates
-- identifier: WVL000225
-  scheme: legacy_openstates
-- identifier: WVL000256
-  scheme: legacy_openstates
-given_name: Eric
-family_name: Householder
-email: eric.householder@wvhouse.gov

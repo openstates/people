@@ -1,24 +1,24 @@
 id: ocd-person/da2690d9-7699-4bca-9d8f-28036e560e06
 name: Ira Anders
+given_name: Ira
+family_name: Anders
 party:
 - name: Democratic
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '21'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=21
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000036
+- scheme: legacy_openstates
+  identifier: MOL000212
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=21
 extras:
   first_name: Ira
   last_name: Anders
-other_identifiers:
-- identifier: MOL000036
-  scheme: legacy_openstates
-- identifier: MOL000212
-  scheme: legacy_openstates
-given_name: Ira
-family_name: Anders

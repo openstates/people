@@ -1,23 +1,23 @@
 id: ocd-person/a9a1ddcd-5537-479a-bbf8-0fca1dcb6fa0
 name: Bob Johnson
+given_name: Bob
+family_name: Johnson
+image: http://www.arkleg.state.ar.us/assembly/2019/Member%20Pictures/johnson.jpg
 party:
 - name: Democratic
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '42'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2019/2019R/Pages/MemberProfile.aspx?member=Johnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000298
+- scheme: legacy_openstates
+  identifier: ARL000321
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2019/2019R/Pages/MemberProfile.aspx?member=Johnson
-image: http://www.arkleg.state.ar.us/assembly/2019/Member%20Pictures/johnson.jpg
 extras:
   occupation: Certified Public Accountant
-other_identifiers:
-- identifier: ARL000298
-  scheme: legacy_openstates
-- identifier: ARL000321
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Johnson

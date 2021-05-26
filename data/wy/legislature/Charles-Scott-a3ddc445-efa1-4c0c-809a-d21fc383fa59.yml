@@ -1,11 +1,16 @@
 id: ocd-person/a3ddc445-efa1-4c0c-809a-d21fc383fa59
 name: Charles Scott
+given_name: Charles
+family_name: Scott
+email: Charles.Scott@wyoleg.gov
+birth_date: 1945-08-19
+image: http://wyoleg.gov/LegislatorSummary/Photos/ScottCS30.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '30'
 contact_details:
 - note: District Office
   address: 13900 State Highway 487, Casper WY 82604
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/294
 - url: http://wyoleg.gov/Legislators/2021/R/294
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000029
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/294
 - url: http://wyoleg.gov/Legislators/2021/R/294
-image: http://wyoleg.gov/LegislatorSummary/Photos/ScottCS30.jpg
-birth_date: '1945-08-19'
-given_name: Charles
-family_name: Scott
 extras:
   civic_organizations:
   - orgname: Audubon Society
@@ -40,7 +44,3 @@ extras:
   religion: Unitarian
   spouse_given_name: null
   wy_leg_id: 294
-other_identifiers:
-- identifier: WYL000029
-  scheme: legacy_openstates
-email: Charles.Scott@wyoleg.gov

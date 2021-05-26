@@ -1,11 +1,14 @@
 id: ocd-person/283ad876-68be-4235-a108-e0aedbadde40
 name: Maria P. Horn
+given_name: Maria
+family_name: Horn
+email: Maria.Horn@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '64'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '64'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4000;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 860-671-1026
 links:
 - url: http://www.housedems.ct.gov/horn
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Maria
-family_name: Horn
-email: Maria.Horn@cga.ct.gov
 other_names:
 - name: Horn, Maria P.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

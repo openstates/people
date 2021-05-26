@@ -1,24 +1,24 @@
 id: ocd-person/32a91e8a-8ab0-4f26-b6a5-842d9c685217
 name: '"Coach" Williams'
+given_name: Coach
+family_name: Williams
+image: http://www.house.ga.gov/SiteCollectionImages/WilliamsEarnest231.jpg
 party:
 - name: Democratic
 roles:
-- district: '87'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '87'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=231&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000230
+- scheme: legacy_openstates
+  identifier: GAL000373
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=231&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/WilliamsEarnest231.jpg
-family_name: Williams
-given_name: Coach
 extras:
   guid: 231
-other_identifiers:
-- identifier: GAL000230
-  scheme: legacy_openstates
-- identifier: GAL000373
-  scheme: legacy_openstates

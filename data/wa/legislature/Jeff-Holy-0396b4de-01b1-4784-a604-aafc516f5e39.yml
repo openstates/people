@@ -1,16 +1,20 @@
 id: ocd-person/0396b4de-01b1-4784-a604-aafc516f5e39
 name: Jeff Holy
+given_name: Jeff
+family_name: Holy
+email: jeff.holy@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/holy.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+- end_date: '2019-01-13'
   type: lower
-  end_date: '2019-01-13'
-- district: '6'
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '6'
+- start_date: '2019-01-14'
   type: upper
-  start_date: '2019-01-14'
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: 201 Irv Newhouse Building;PO Box 40600;Olympia, WA 98504
@@ -18,12 +22,8 @@ contact_details:
 links:
 - url: http://JeffHoly.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000179
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/holy.jpg
-other_identifiers:
-- identifier: WAL000179
-  scheme: legacy_openstates
-given_name: Jeff
-family_name: Holy
-email: jeff.holy@leg.wa.gov

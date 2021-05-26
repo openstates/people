@@ -1,11 +1,15 @@
 id: ocd-person/9510ffea-ad50-40da-8634-30d92edc6d68
 name: Mac Huddleston
+given_name: Mac
+family_name: Huddleston
+email: mhuddleston@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/huddleston.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '15'
 contact_details:
 - note: Capitol Office
   address: Room 201;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 662-489-5157
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/huddleston.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000114
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/huddleston.xml
-image: http://billstatus.ls.state.ms.us/members/house/huddleston.jpg
 extras:
   org_info: Representative Huddleston is a member of the Pontotoc Chamber of Commerce,
     Farm Bureau, Pontotoc Band Boosters, and  Vietnam Helicopter Pilots Association.
-other_identifiers:
-- identifier: MSL000114
-  scheme: legacy_openstates
-given_name: Mac
-family_name: Huddleston
-email: mhuddleston@house.ms.gov

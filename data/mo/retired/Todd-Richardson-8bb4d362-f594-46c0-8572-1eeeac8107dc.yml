@@ -1,24 +1,24 @@
 id: ocd-person/8bb4d362-f594-46c0-8572-1eeeac8107dc
 name: Todd Richardson
+given_name: Todd
+family_name: Richardson
 party:
 - name: Republican
 roles:
-- district: '152'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '152'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=152
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000152
+- scheme: legacy_openstates
+  identifier: MOL000334
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=152
 extras:
   first_name: Todd
   last_name: Richardson
-other_identifiers:
-- identifier: MOL000152
-  scheme: legacy_openstates
-- identifier: MOL000334
-  scheme: legacy_openstates
-given_name: Todd
-family_name: Richardson

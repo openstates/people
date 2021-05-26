@@ -1,11 +1,15 @@
 id: ocd-person/7a9174a7-1301-407a-8c77-5f70e70fde92
 name: Kevin Ford
+given_name: Kevin
+family_name: Ford
+email: kford@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/ford_(54th).jpg
 party:
 - name: Republican
 roles:
-- district: '54'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '54'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -14,17 +18,13 @@ contact_details:
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/ford.xml
 - url: http://billstatus.ls.state.ms.us/members/house/ford_(54th).xml
+other_names:
+- name: Ford (54th)
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000297
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/ford.xml
 - url: http://billstatus.ls.state.ms.us/members/house/ford_(54th).xml
-image: http://billstatus.ls.state.ms.us/members/house/ford_(54th).jpg
 extras:
   org_info: Representative Ford is affiliated with Red Carpet Bowl.
-other_identifiers:
-- identifier: MSL000297
-  scheme: legacy_openstates
-given_name: Kevin
-family_name: Ford
-email: kford@house.ms.gov
-other_names:
-- name: Ford (54th)

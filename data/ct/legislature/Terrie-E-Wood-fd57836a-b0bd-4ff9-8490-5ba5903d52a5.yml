@@ -1,11 +1,14 @@
 id: ocd-person/fd57836a-b0bd-4ff9-8490-5ba5903d52a5
 name: Terrie E. Wood
+given_name: Terrie
+family_name: Wood
+email: Terrie.Wood@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '141'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '141'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2005;Hartford, CT 06106
@@ -15,15 +18,12 @@ contact_details:
   voice: 203-655-4452
 links:
 - url: http://www.cthousegop.com/Wood/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000177
-  scheme: legacy_openstates
-- identifier: CTL000353
-  scheme: legacy_openstates
-given_name: Terrie
-family_name: Wood
-email: Terrie.Wood@housegop.ct.gov
 other_names:
 - name: Wood, Terrie E.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000177
+- scheme: legacy_openstates
+  identifier: CTL000353
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

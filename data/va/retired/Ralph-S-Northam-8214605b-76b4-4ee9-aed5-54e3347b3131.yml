@@ -3,19 +3,19 @@ name: Ralph S Northam
 given_name: Ralph
 family_name: Northam
 middle_name: S
+image: http://sov.state.va.us/images/Northam06.jpg
 party:
 - name: Democratic
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: upper
-  start_date: '2010-01-01'
+- start_date: '2010-01-01'
   end_date: '2013-12-31'
-image: http://sov.state.va.us/images/Northam06.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '6'
 links:
 - url: http://leg6.state.va.us/cgi-bin/legp604.exe?141+mbr+S75
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000023
 sources:
 - url: http://leg6.state.va.us/cgi-bin/legp604.exe?141+mbr+S75
-other_identifiers:
-- identifier: VAL000023
-  scheme: legacy_openstates

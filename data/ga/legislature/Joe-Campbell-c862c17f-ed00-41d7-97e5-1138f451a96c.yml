@@ -1,12 +1,16 @@
 id: ocd-person/c862c17f-ed00-41d7-97e5-1138f451a96c
 name: Joe Campbell
+given_name: Joe
+family_name: Campbell
+email: joe.campbell@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/campbell-joe-4970.jpg
 party:
 - name: Republican
 roles:
-- district: '171'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- start_date: 2020-02-06
   type: lower
-  start_date: 2020-02-06
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '171'
 contact_details:
 - note: Capitol Office
   address: 608-C Coverdell Legislative Office Bldg. 18 Capitol Square SW;Atlanta,
@@ -21,12 +25,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4970&Session=27
 - url: https://www.legis.ga.gov/members/house/4970?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/campbell-joe-4970.jpg
-family_name: Campbell
-given_name: Joe
 extras:
   guid: 4970
   city: Camilla
   georgia_id: 4970
   residence: Camilla
-email: joe.campbell@house.ga.gov
