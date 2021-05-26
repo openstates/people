@@ -1,20 +1,26 @@
 id: ocd-person/25828c07-8295-45af-bd01-b044b59d530a
 name: Ralph Hise
+given_name: Ralph
+family_name: Hise
+email: Ralph.Hise@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/S/298/High
 party:
 - name: Republican
 roles:
-- district: '47'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
+  district: '47'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 300-A;Raleigh, NC 27603
   voice: 919-733-3460
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/298
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000187
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/298
-image: https://www.ncleg.gov/Members/MemberImage/S/298/High
 extras:
   counties:
   - Madison
@@ -24,9 +30,3 @@ extras:
   - Rutherford
   - Yancey
   notice: null
-other_identifiers:
-- identifier: NCL000187
-  scheme: legacy_openstates
-given_name: Ralph
-family_name: Hise
-email: Ralph.Hise@ncleg.gov

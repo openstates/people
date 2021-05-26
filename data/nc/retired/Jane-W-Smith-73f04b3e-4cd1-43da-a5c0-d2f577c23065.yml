@@ -2,19 +2,19 @@ id: ocd-person/73f04b3e-4cd1-43da-a5c0-d2f577c23065
 name: Jane W. Smith
 given_name: Jane W.
 family_name: Smith
+image: http://www.ncga.state.nc.us/Senate/pictures/hiRes/390.jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.ncga.state.nc.us/Senate/pictures/hiRes/390.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '13'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=390
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000337
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=390
-other_identifiers:
-- identifier: NCL000337
-  scheme: legacy_openstates

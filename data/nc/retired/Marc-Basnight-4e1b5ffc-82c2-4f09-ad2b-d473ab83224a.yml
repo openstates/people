@@ -2,21 +2,21 @@ id: ocd-person/4e1b5ffc-82c2-4f09-ad2b-d473ab83224a
 name: Marc Basnight
 given_name: Marc
 family_name: Basnight
+image: http://www.ncga.state.nc.us/Senate/pictures/hiRes/38.jpg
 party:
 - name: Democratic
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.ncga.state.nc.us/Senate/pictures/hiRes/38.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '1'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=38
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000005
+- scheme: legacy_openstates
+  identifier: NCL000234
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=38
-other_identifiers:
-- identifier: NCL000005
-  scheme: legacy_openstates
-- identifier: NCL000234
-  scheme: legacy_openstates

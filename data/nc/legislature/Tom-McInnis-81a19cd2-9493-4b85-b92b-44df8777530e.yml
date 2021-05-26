@@ -1,20 +1,26 @@
 id: ocd-person/81a19cd2-9493-4b85-b92b-44df8777530e
 name: Tom McInnis
+given_name: Tom
+family_name: McInnis
+email: Tom.McInnis@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/S/389/High
 party:
 - name: Republican
 roles:
-- district: '25'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 314;Raleigh, NC 27603
   voice: 919-733-5953
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/389
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000329
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/389
-image: https://www.ncleg.gov/Members/MemberImage/S/389/High
 extras:
   counties:
   - Anson
@@ -22,9 +28,3 @@ extras:
   - Richmond
   - Scotland
   notice: null
-other_identifiers:
-- identifier: NCL000329
-  scheme: legacy_openstates
-given_name: Tom
-family_name: McInnis
-email: Tom.McInnis@ncleg.gov

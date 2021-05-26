@@ -5,13 +5,13 @@ family_name: Williams
 party:
 - name: Democratic
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '6'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000177
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/memberList.pl?sChamber=House
-other_identifiers:
-- identifier: NCL000177
-  scheme: legacy_openstates

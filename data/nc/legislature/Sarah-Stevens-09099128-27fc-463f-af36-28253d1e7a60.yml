@@ -1,11 +1,15 @@
 id: ocd-person/09099128-27fc-463f-af36-28253d1e7a60
 name: Sarah Stevens
+given_name: Sarah
+family_name: Stevens
+email: Sarah.Stevens@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/592/High
 party:
 - name: Republican
 roles:
-- district: '90'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '90'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 419;Raleigh, NC 27603-5925
@@ -14,18 +18,14 @@ contact_details:
   address: 2161 Margaret Dr;Mt. Airy, NC 27030
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/592
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000160
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/592
-image: https://www.ncleg.gov/Members/MemberImage/H/592/High
 extras:
   counties:
   - Alleghany
   - Surry
   - Wilkes
   notice: null
-other_identifiers:
-- identifier: NCL000160
-  scheme: legacy_openstates
-given_name: Sarah
-family_name: Stevens
-email: Sarah.Stevens@ncleg.gov

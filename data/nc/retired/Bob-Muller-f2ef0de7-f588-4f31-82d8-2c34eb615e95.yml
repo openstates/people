@@ -1,24 +1,24 @@
 id: ocd-person/f2ef0de7-f588-4f31-82d8-2c34eb615e95
 name: Bob Muller
+given_name: Bob
+family_name: Muller
+image: http://www.ncleg.net/House/pictures/hiRes/733.jpg
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '16'
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=733
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000395
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=733
-image: http://www.ncleg.net/House/pictures/hiRes/733.jpg
 extras:
   counties:
   - Onslow
   - Pender
   notice: "[\_Appointed\_09/26/2017\_]"
-other_identifiers:
-- identifier: NCL000395
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Muller

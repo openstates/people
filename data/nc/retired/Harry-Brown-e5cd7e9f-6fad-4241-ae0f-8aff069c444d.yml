@@ -1,25 +1,25 @@
 id: ocd-person/e5cd7e9f-6fad-4241-ae0f-8aff069c444d
 name: Harry Brown
+given_name: Harry
+family_name: Brown
+email: Harry.Brown@ncleg.net
+image: http://www.ncleg.net/Senate/pictures/hiRes/139.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '6'
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/139
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000013
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/139
-image: http://www.ncleg.net/Senate/pictures/hiRes/139.jpg
 extras:
   counties:
   - Jones
   - Onslow
   notice: null
-other_identifiers:
-- identifier: NCL000013
-  scheme: legacy_openstates
-given_name: Harry
-family_name: Brown
-email: Harry.Brown@ncleg.net

@@ -1,11 +1,15 @@
 id: ocd-person/631d7157-ffae-4043-907b-f18fa9b978b0
 name: Tim Moore
+given_name: Tim
+family_name: Moore
+email: Tim.Moore@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/339/High
 party:
 - name: Republican
 roles:
-- district: '111'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '111'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 2304;Raleigh, NC 27601-1096
@@ -14,16 +18,12 @@ contact_details:
   address: 305 E King St;Kings Mountain, NC 28086
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/339
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000143
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/339
-image: https://www.ncleg.gov/Members/MemberImage/H/339/High
 extras:
   counties:
   - Cleveland
   notice: null
-other_identifiers:
-- identifier: NCL000143
-  scheme: legacy_openstates
-given_name: Tim
-family_name: Moore
-email: Tim.Moore@ncleg.gov

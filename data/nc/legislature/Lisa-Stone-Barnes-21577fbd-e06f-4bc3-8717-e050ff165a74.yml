@@ -1,18 +1,28 @@
 id: ocd-person/21577fbd-e06f-4bc3-8717-e050ff165a74
 name: Lisa S. Barnes
+given_name: Lisa
+family_name: Barnes
+email: Lisa.Barnes@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/S/427/High
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: 2021-01-01
   type: lower
-  end_date: 2021-01-01
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '7'
+- start_date: 2020-12-31
   type: upper
-  start_date: 2020-12-31
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '11'
+contact_details:
+- note: Capitol Office
+  address: 16 West Jones Street, Rm. 2117;Raleigh, NC 27601
+  voice: 919-715-3030
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/427
+other_names:
+- name: Lisa Stone Barnes
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/427
 extras:
@@ -20,13 +30,3 @@ extras:
   - Johnston
   - Nash
   notice: null
-email: Lisa.Barnes@ncleg.gov
-other_names:
-- name: Lisa Stone Barnes
-image: https://www.ncleg.gov/Members/MemberImage/S/427/High
-given_name: Lisa
-family_name: Barnes
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2117;Raleigh, NC 27601
-  voice: 919-715-3030

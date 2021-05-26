@@ -1,11 +1,15 @@
 id: ocd-person/82c54a54-0f6e-4fa9-95ec-34f67abcc238
 name: Howard J. Hunter, III
+given_name: Howard
+family_name: Hunter
+email: Howard.Hunter@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/692/High
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 2121;Raleigh, NC 27601-1096
@@ -14,18 +18,14 @@ contact_details:
   address: PO Box 944;Ahoskie, NC 27910
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/692
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000342
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/692
-image: https://www.ncleg.gov/Members/MemberImage/H/692/High
 extras:
   counties:
   - Gates
   - Hertford
   - Pasquotank
   notice: null
-other_identifiers:
-- identifier: NCL000342
-  scheme: legacy_openstates
-given_name: Howard
-family_name: Hunter
-email: Howard.Hunter@ncleg.gov

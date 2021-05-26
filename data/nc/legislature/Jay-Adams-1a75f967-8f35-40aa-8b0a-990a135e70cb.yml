@@ -1,11 +1,15 @@
 id: ocd-person/1a75f967-8f35-40aa-8b0a-990a135e70cb
 name: Jay Adams
+given_name: Jay
+family_name: Adams
+email: Jay.Adams@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/697/High
 party:
 - name: Republican
 roles:
-- district: '96'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '96'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 301N;Raleigh, NC 27603-5925
@@ -14,16 +18,12 @@ contact_details:
   address: PO Box 217;Hickory, NC 28603
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/697
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000338
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/697
-image: https://www.ncleg.gov/Members/MemberImage/H/697/High
 extras:
   counties:
   - Catawba
   notice: null
-other_identifiers:
-- identifier: NCL000338
-  scheme: legacy_openstates
-given_name: Jay
-family_name: Adams
-email: Jay.Adams@ncleg.gov

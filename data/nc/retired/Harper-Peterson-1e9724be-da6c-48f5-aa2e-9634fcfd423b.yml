@@ -1,12 +1,15 @@
 id: ocd-person/1e9724be-da6c-48f5-aa2e-9634fcfd423b
 name: Harper Peterson
+given_name: Harper
+family_name: Peterson
+email: Harper.Peterson@ncleg.net
 party:
 - name: Democratic
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '9'
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/413
 sources:
@@ -15,6 +18,3 @@ extras:
   counties:
   - New Hanover
   notice: null
-email: Harper.Peterson@ncleg.net
-given_name: Harper
-family_name: Peterson

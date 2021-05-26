@@ -2,19 +2,19 @@ id: ocd-person/6de7db2b-83bd-484f-b6a5-50e4def70a30
 name: Mike Hager
 given_name: Mike
 family_name: Hager
+image: http://www.ncga.state.nc.us/House/pictures/hiRes/616.jpg
 party:
 - name: Republican
 roles:
-- district: '112'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.ncga.state.nc.us/House/pictures/hiRes/616.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '112'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=616
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000207
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=616
-other_identifiers:
-- identifier: NCL000207
-  scheme: legacy_openstates

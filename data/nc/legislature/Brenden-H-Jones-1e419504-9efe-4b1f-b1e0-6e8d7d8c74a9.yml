@@ -1,11 +1,15 @@
 id: ocd-person/1e419504-9efe-4b1f-b1e0-6e8d7d8c74a9
 name: Brenden H. Jones
+given_name: Brenden
+family_name: Jones
+email: Brenden.Jones@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/723/High
 party:
 - name: Republican
 roles:
-- district: '46'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '46'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 1227;Raleigh, NC 27601-1096
@@ -14,19 +18,15 @@ contact_details:
   address: 329 S US Hwy 701;Tabor City, NC 28463
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/723
+other_names:
+- name: B. Jones
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000386
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/723
-image: https://www.ncleg.gov/Members/MemberImage/H/723/High
 extras:
   counties:
   - Columbus
   - Robeson
   notice: null
-other_identifiers:
-- identifier: NCL000386
-  scheme: legacy_openstates
-given_name: Brenden
-family_name: Jones
-email: Brenden.Jones@ncleg.gov
-other_names:
-  - name: B. Jones

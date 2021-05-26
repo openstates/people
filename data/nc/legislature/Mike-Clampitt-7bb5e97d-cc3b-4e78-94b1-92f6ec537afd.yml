@@ -1,16 +1,20 @@
 id: ocd-person/7bb5e97d-cc3b-4e78-94b1-92f6ec537afd
 name: Mike Clampitt
+given_name: Mike
+family_name: Clampitt
+email: Mike.Clampitt@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/715/High
 party:
 - name: Republican
 roles:
-- district: '119'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '119'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '119'
+- start_date: 2021-01-01
   type: lower
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '119'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 418A1;Raleigh, NC 27603-5925
@@ -19,17 +23,13 @@ contact_details:
   address: PO Box 386;Bryson City, NC 28713
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/715
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000377
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/715
-image: https://www.ncleg.gov/Members/MemberImage/H/715/High
 extras:
   counties:
   - Haywood
   - Jackson
   - Swain
-other_identifiers:
-- identifier: NCL000377
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Clampitt
-email: Mike.Clampitt@ncleg.gov

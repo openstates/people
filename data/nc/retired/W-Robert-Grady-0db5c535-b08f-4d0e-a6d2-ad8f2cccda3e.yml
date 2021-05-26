@@ -5,13 +5,13 @@ family_name: Grady
 party:
 - name: Republican
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '15'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000101
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/memberList.pl?sChamber=House
-other_identifiers:
-- identifier: NCL000101
-  scheme: legacy_openstates

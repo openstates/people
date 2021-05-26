@@ -2,19 +2,19 @@ id: ocd-person/5927b99a-c847-4d8b-9948-54c11ef8ee89
 name: Larry Womble
 given_name: Larry
 family_name: Womble
+image: http://www.ncga.state.nc.us/House/pictures/hiRes/107.jpg
 party:
 - name: Democratic
 roles:
-- district: '71'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.ncga.state.nc.us/House/pictures/hiRes/107.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '71'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=107
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000178
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=107
-other_identifiers:
-- identifier: NCL000178
-  scheme: legacy_openstates
