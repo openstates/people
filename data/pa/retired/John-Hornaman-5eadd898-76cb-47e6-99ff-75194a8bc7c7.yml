@@ -2,22 +2,22 @@ id: ocd-person/5eadd898-76cb-47e6-99ff-75194a8bc7c7
 name: John Hornaman
 given_name: John
 family_name: Hornaman
+image: http://www.house.state.pa.us/members/districts/003/images/1082.jpg
 party:
 - name: Democratic
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.house.state.pa.us/members/districts/003/images/1082.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '3'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1082
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000135
+- scheme: legacy_openstates
+  identifier: PAL000364
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1082
-other_identifiers:
-- identifier: PAL000135
-  scheme: legacy_openstates
-- identifier: PAL000364
-  scheme: legacy_openstates

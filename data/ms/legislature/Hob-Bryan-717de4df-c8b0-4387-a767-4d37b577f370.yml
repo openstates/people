@@ -1,11 +1,14 @@
 id: ocd-person/717de4df-c8b0-4387-a767-4d37b577f370
 name: Hob Bryan
+given_name: Hob
+family_name: Bryan
+image: http://billstatus.ls.state.ms.us/members/senate/bryan.jpg
 party:
 - name: Democratic
 roles:
-- district: '7'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: Room 409 A;P. O. Box 1018;Jackson, MS 39215
@@ -15,13 +18,10 @@ contact_details:
   voice: 662-256-9989
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/bryan.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000021
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/bryan.xml
-image: http://billstatus.ls.state.ms.us/members/senate/bryan.jpg
 extras:
   org_info: ''
-other_identifiers:
-- identifier: MSL000021
-  scheme: legacy_openstates
-given_name: Hob
-family_name: Bryan

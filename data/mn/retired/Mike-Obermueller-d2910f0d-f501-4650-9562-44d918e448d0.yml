@@ -5,13 +5,13 @@ family_name: Obermueller
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 38B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 38B
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000143
 sources:
 - url: http://www.house.leg.state.mn.us/members/meminfo.xls
-other_identifiers:
-- identifier: MNL000143
-  scheme: legacy_openstates

@@ -2,19 +2,19 @@ id: ocd-person/43dd5a26-2af5-4604-ba4f-2641046a0f76
 name: W. Roscoe Reynolds
 given_name: W. Roscoe
 family_name: Reynolds
+image: http://sov.state.va.us/images/Reynolds20.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: upper
-  start_date: '2010-01-01'
+- start_date: '2010-01-01'
   end_date: '2011-12-31'
-image: http://sov.state.va.us/images/Reynolds20.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '20'
 links:
 - url: http://leg6.state.va.us/cgi-bin/legp604.exe?112+mbr+S51
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000029
 sources:
 - url: http://leg6.state.va.us/cgi-bin/legp604.exe?112+mbr+S51
-other_identifiers:
-- identifier: VAL000029
-  scheme: legacy_openstates

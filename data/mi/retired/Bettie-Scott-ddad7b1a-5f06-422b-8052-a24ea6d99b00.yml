@@ -1,18 +1,18 @@
 id: ocd-person/ddad7b1a-5f06-422b-8052-a24ea6d99b00
 name: Bettie Scott
+given_name: Bettie
+family_name: Scott
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '2'
 links:
 - url: https://housedems.com/cook-scott
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000328
 sources:
 - url: https://housedems.com/cook-scott
-other_identifiers:
-- identifier: MIL000328
-  scheme: legacy_openstates
-given_name: Bettie
-family_name: Scott

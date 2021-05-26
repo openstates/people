@@ -1,19 +1,25 @@
 id: ocd-person/6a97f10b-84e2-4585-8c67-304be2fb1f24
 name: Holly Rehder
+given_name: Holly
+family_name: Rehder
+email: Holly.Rehder@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '148'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
-- district: '27'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '148'
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '27'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=148
 - url: https://www.senate.mo.gov/mem27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000330
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=148
@@ -22,9 +28,3 @@ sources:
 extras:
   first_name: Holly
   last_name: Rehder
-other_identifiers:
-- identifier: MOL000330
-  scheme: legacy_openstates
-given_name: Holly
-family_name: Rehder
-email: Holly.Rehder@house.mo.gov

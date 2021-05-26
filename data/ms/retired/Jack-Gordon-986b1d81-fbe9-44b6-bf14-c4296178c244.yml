@@ -2,17 +2,17 @@ id: ocd-person/986b1d81-fbe9-44b6-bf14-c4296178c244
 name: Jack Gordon
 given_name: Jack
 family_name: Gordon
+image: http://billstatus.ls.state.ms.us/members/senate/gordon.jpg
 party:
 - name: Democratic
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/gordon.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '8'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000030
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/gordon.xml
-other_identifiers:
-- identifier: MSL000030
-  scheme: legacy_openstates

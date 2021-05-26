@@ -3,26 +3,26 @@ name: Russell E Prescott
 given_name: Russell
 family_name: Prescott
 middle_name: E
+image: http://www.gencourt.state.nh.us/Senate/images/senators/23.jpg
 party:
 - name: Republican
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '23'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.gencourt.state.nh.us/Senate/images/senators/23.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '23'
 links:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district23.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000020
+- scheme: legacy_openstates
+  identifier: NHL001281
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district23.aspx
-other_identifiers:
-- identifier: NHL000020
-  scheme: legacy_openstates
-- identifier: NHL001281
-  scheme: legacy_openstates

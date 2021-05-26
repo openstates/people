@@ -1,11 +1,15 @@
 id: ocd-person/afb41226-be03-40b4-ab32-15a5a226edbf
 name: Tom Hawk
+given_name: Tom
+family_name: Hawk
+email: Tom.Hawk@senate.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/sen_hawk_tom_1.jpg
 party:
 - name: Democratic
 roles:
-- district: '22'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: upper
+  district: '22'
 contact_details:
 - note: Capitol Office
   address: Room 135-E;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/sen_hawk_tom_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/sen_hawk_tom_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000176
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/sen_hawk_tom_1
-image: http://www.kslegislature.org/li/m/images/pics/sen_hawk_tom_1.jpg
 extras:
   occupation: Retired
-other_identifiers:
-- identifier: KSL000176
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Hawk
-email: Tom.Hawk@senate.ks.gov

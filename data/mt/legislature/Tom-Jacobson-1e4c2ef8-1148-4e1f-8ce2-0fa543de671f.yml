@@ -1,33 +1,33 @@
 id: ocd-person/1e4c2ef8-1148-4e1f-8ce2-0fa543de671f
 name: Tom Jacobson
+given_name: Tom
+family_name: Jacobson
+email: Tom.Jacobson@mtleg.gov
 party:
 - name: Democratic
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
+  district: '21'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '11'
+contact_details:
+- note: Capitol Office
+  address: 521 RIVERVIEW DR E;Great Falls, MT 59404
+  voice: 406-868-9814
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5039
 - url: https://leg.mt.gov/legislator-information/roster/individual/6794
+other_names:
+- name: Jacobson, Tom
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000192
+- scheme: legacy_openstates
+  identifier: MTL000245
 sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5039
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6794
-contact_details:
-- note: Capitol Office
-  voice: 406-868-9814
-  address: 521 RIVERVIEW DR E;Great Falls, MT 59404
-other_identifiers:
-- identifier: MTL000192
-  scheme: legacy_openstates
-- identifier: MTL000245
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Jacobson
-email: Tom.Jacobson@mtleg.gov
-other_names:
-- name: Jacobson, Tom

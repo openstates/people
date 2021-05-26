@@ -6,13 +6,13 @@ middle_name: D
 party:
 - name: Republican
 roles:
-- district: '91'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
-  start_date: '2010-01-01'
+- start_date: '2010-01-01'
   end_date: '2011-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '91'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000071
 sources:
 - url: http://leg6.state.va.us/cgi-bin/legp604.exe?101+mbr+H144
-other_identifiers:
-- identifier: VAL000071
-  scheme: legacy_openstates

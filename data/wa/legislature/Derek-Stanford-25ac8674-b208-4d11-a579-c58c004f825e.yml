@@ -1,11 +1,15 @@
 id: ocd-person/25ac8674-b208-4d11-a579-c58c004f825e
 name: Derek Stanford
+given_name: Derek
+family_name: Stanford
+email: derek.stanford@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/stanford.jpg
 party:
 - name: Democratic
 roles:
-- district: '1'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: 402 Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -15,13 +19,9 @@ links:
 - url: http://leg.wa.gov/Senate/Senators/Pages/default.aspx
 - url: http://sdc.wastateleg.org/Stanford/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000137
 sources:
 - url: http://leg.wa.gov/Senate/Senators/Pages/default.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/stanford.jpg
-other_identifiers:
-- identifier: WAL000137
-  scheme: legacy_openstates
-given_name: Derek
-family_name: Stanford
-email: derek.stanford@leg.wa.gov

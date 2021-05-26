@@ -1,17 +1,25 @@
 id: ocd-person/dc7ed9be-2389-4da0-af91-5123770111e6
 name: Ken Ivory
+given_name: Ken
+family_name: Ivory
+email: kivory@le.utah.gov
+image: https://le.utah.gov/images/legislator/IVORYK.jpg
 party:
 - name: Republican
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2019-08-19'
   type: lower
-  end_date: '2019-08-19'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '47'
 links:
 - url: http://house.utah.gov/rep/IVORYK
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000067
+- scheme: legacy_openstates
+  identifier: UTL000210
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/IVORYK.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIIVORYK.pdf
@@ -22,11 +30,3 @@ extras:
   - http://le.utah.gov/house2/CofI/kivory.pdf
   - http://le.utah.gov/house2/CofI/IVORYK.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409302
-other_identifiers:
-- identifier: UTL000067
-  scheme: legacy_openstates
-- identifier: UTL000210
-  scheme: legacy_openstates
-given_name: Ken
-family_name: Ivory
-email: kivory@le.utah.gov

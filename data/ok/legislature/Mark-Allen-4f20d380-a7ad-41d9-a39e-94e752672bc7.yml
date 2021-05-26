@@ -1,11 +1,14 @@
 id: ocd-person/4f20d380-a7ad-41d9-a39e-94e752672bc7
 name: Mark Allen
+given_name: Mark
+family_name: Allen
+image: https://oksenate.gov/sites/default/files/Sen._Mark_Allen_0.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: upper
+  district: '4'
 contact_details:
 - note: Capitol Office
   address: 2300 N. Lincoln Blvd., Rm. 234 Oklahoma City, OK 73105
@@ -14,18 +17,15 @@ contact_details:
   address: 19279 US Hwy. 271;Spiro, OK 74959
 links:
 - url: http://oksenate.gov/Senators/biographies/allen_bio.aspx
-- note: Contact Form
-  url: https://oksenate.gov/contact-senator?sid=1837
+- url: https://oksenate.gov/contact-senator?sid=1837
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000003
+- scheme: legacy_openstates
+  identifier: OKL000238
 sources:
 - url: http://oksenate.gov/Senators/biographies/allen_bio.aspx
 - url: http://oksenate.gov/Senators/biographies/allen_bio.html
-image: https://oksenate.gov/sites/default/files/Sen._Mark_Allen_0.jpg
 extras:
   email: allen@oksenate.gov
-other_identifiers:
-- identifier: OKL000003
-  scheme: legacy_openstates
-- identifier: OKL000238
-  scheme: legacy_openstates
-given_name: Mark
-family_name: Allen

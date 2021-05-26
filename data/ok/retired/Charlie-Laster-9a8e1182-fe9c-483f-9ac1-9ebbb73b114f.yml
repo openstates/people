@@ -2,20 +2,20 @@ id: ocd-person/9a8e1182-fe9c-483f-9ac1-9ebbb73b114f
 name: Charlie Laster
 given_name: Charlie
 family_name: Laster
+image: http://www.oksenate.gov/Senators/biographies/laster_bio.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.oksenate.gov/Senators/biographies/laster_bio.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '17'
 links:
 - url: http://www.oksenate.gov/Senators/directory.xls
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000029
 sources:
 - url: http://www.oksenate.gov/Senators/directory.xls
 - url: http://www.oksenate.gov/Senators/biographies/Laster_bio.html
-other_identifiers:
-- identifier: OKL000029
-  scheme: legacy_openstates

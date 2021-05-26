@@ -1,11 +1,15 @@
 id: ocd-person/57e6524f-40c5-4708-89ad-c80570bf31b1
 name: Pam Curtis
+given_name: Pam
+family_name: Curtis
+email: pam.curtis@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_curtis_pam_1.jpg
 party:
 - name: Democratic
 roles:
-- district: '32'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
+  district: '32'
 contact_details:
 - note: Capitol Office
   address: Room 452-S;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/rep_curtis_pam_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_curtis_pam_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000280
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_curtis_pam_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_curtis_pam_1.jpg
 extras:
   occupation: Community Relations
-other_identifiers:
-- identifier: KSL000280
-  scheme: legacy_openstates
-given_name: Pam
-family_name: Curtis
-email: pam.curtis@house.ks.gov

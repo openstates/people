@@ -1,22 +1,22 @@
 id: ocd-person/fba19dbd-cdf9-4b3c-ac38-5906358367e7
 name: Tom Facey
+given_name: Tom
+family_name: Facey
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '50'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4699
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4699
+  note: legislator page
 other_identifiers:
-- identifier: MTL000013
-  scheme: legacy_openstates
-- identifier: MTL000235
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Facey
+- scheme: legacy_openstates
+  identifier: MTL000013
+- scheme: legacy_openstates
+  identifier: MTL000235
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

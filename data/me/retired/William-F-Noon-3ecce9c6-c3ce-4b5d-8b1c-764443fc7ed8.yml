@@ -2,28 +2,28 @@ id: ocd-person/3ecce9c6-c3ce-4b5d-8b1c-764443fc7ed8
 name: William F. Noon
 given_name: William F.
 family_name: Noon
+image: http://www.maine.gov/legis/house/photo127/noonwf.jpg
 party:
 - name: Democratic
 roles:
-- district: '144'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '144'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.maine.gov/legis/house/photo127/noonwf.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '19'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/noonwf.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000273
+- scheme: legacy_openstates
+  identifier: MEL000400
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/noonwf.htm
 - url: http://legislature.maine.gov/house/vacancy-19.htm
-other_identifiers:
-- identifier: MEL000273
-  scheme: legacy_openstates
-- identifier: MEL000400
-  scheme: legacy_openstates

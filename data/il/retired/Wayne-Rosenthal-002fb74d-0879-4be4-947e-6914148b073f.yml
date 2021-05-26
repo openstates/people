@@ -2,29 +2,29 @@ id: ocd-person/002fb74d-0879-4be4-947e-6914148b073f
 name: Wayne Rosenthal
 given_name: Wayne
 family_name: Rosenthal
+image: http://ilga.gov/images/members/%7BAF243514-814F-4894-A0D9-5F3CCC414019%7D.jpg
 party:
 - name: Republican
 roles:
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '98'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '95'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://ilga.gov/images/members/%7BAF243514-814F-4894-A0D9-5F3CCC414019%7D.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '98'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=99&MemberID=2189
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL000155
+- scheme: legacy_openstates
+  identifier: ILL000509
+- scheme: legacy_openstates
+  identifier: ILL000889
 sources:
 - url: http://ilga.gov/house/default.asp?GA=99
 - url: http://ilga.gov/house/Rep.asp?GA=99&MemberID=2189
-other_identifiers:
-- identifier: ILL000155
-  scheme: legacy_openstates
-- identifier: ILL000509
-  scheme: legacy_openstates
-- identifier: ILL000889
-  scheme: legacy_openstates

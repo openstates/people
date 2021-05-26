@@ -1,19 +1,25 @@
 id: ocd-person/77aeecd6-a8b9-446f-b361-88b07026555c
 name: Ben Baker
+given_name: Ben
+family_name: Baker
+email: Ben.Baker@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2066
 party:
 - name: Republican
 roles:
-- district: '160'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '160'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 201-D; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 201-D; Jefferson
+    City MO 65101
   voice: 573-751-9781
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=160
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=160
+other_names:
+- name: Baker, Ben
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=160
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Ben
   last_name: Baker
-email: Ben.Baker@house.mo.gov
-family_name: Baker
-image: https://house.mo.gov/MemberPhoto.aspx?id=2066
-given_name: Ben
-other_names:
-- name: Baker, Ben

@@ -2,28 +2,28 @@ id: ocd-person/fb35a975-f770-4e77-9a64-b1713a19fae5
 name: Carlos Trujillo
 given_name: Carlos
 family_name: Trujillo
+image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4527.jpg
 party:
 - name: Republican
 roles:
-- district: '116'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '105'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '116'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4527.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '105'
 links:
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4527&LegislativeTermId=87
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000150
+- scheme: legacy_openstates
+  identifier: FLL000315
 sources:
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4527&LegislativeTermId=87
 - url: http://www.flhouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/FileStores/Web/HouseContent/Approved/ClerksOffice/HouseDirectory.pdf
-other_identifiers:
-- identifier: FLL000150
-  scheme: legacy_openstates
-- identifier: FLL000315
-  scheme: legacy_openstates

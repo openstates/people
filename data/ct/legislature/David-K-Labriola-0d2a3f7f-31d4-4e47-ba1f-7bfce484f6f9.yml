@@ -1,11 +1,14 @@
 id: ocd-person/0d2a3f7f-31d4-4e47-ba1f-7bfce484f6f9
 name: David K. Labriola
+given_name: David
+family_name: Labriola
+email: David.Labriola@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '131'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '131'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4084;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-828-6154
 links:
 - url: http://www.cthousegop.com/Labriola/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000167
-  scheme: legacy_openstates
-given_name: David
-family_name: Labriola
-email: David.Labriola@housegop.ct.gov
 other_names:
 - name: Labriola, David K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000167
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

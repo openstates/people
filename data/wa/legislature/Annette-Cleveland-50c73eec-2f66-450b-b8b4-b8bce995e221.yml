@@ -1,11 +1,15 @@
 id: ocd-person/50c73eec-2f66-450b-b8b4-b8bce995e221
 name: Annette Cleveland
+given_name: Annette
+family_name: Cleveland
+email: annette.cleveland@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/cleveland.jpg
 party:
 - name: Democratic
 roles:
-- district: '49'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '49'
 contact_details:
 - note: Capitol Office
   address: 220 John A. Cherberg Building;PO Box 40449;Olympia, WA 98504
@@ -13,12 +17,8 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Cleveland/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000166
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/cleveland.jpg
-other_identifiers:
-- identifier: WAL000166
-  scheme: legacy_openstates
-given_name: Annette
-family_name: Cleveland
-email: annette.cleveland@leg.wa.gov

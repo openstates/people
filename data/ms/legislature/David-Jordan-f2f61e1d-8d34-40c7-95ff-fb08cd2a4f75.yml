@@ -1,11 +1,15 @@
 id: ocd-person/f2f61e1d-8d34-40c7-95ff-fb08cd2a4f75
 name: David Jordan
+given_name: David
+family_name: Jordan
+email: djordan@senate.ms.gov
+image: http://billstatus.ls.state.ms.us/members/senate/jordan.jpg
 party:
 - name: Democratic
 roles:
-- district: '24'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
+  district: '24'
 contact_details:
 - note: Capitol Office
   address: Room 405-A;P. O. Box 1018;Jackson, MS 39215
@@ -15,14 +19,10 @@ contact_details:
   voice: 662-453-5361
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/jordan.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000023
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/jordan.xml
-image: http://billstatus.ls.state.ms.us/members/senate/jordan.jpg
 extras:
   org_info: ''
-other_identifiers:
-- identifier: MSL000023
-  scheme: legacy_openstates
-given_name: David
-family_name: Jordan
-email: djordan@senate.ms.gov

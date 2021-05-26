@@ -2,19 +2,19 @@ id: ocd-person/8d72f93b-aa63-4c5a-b55e-0350365f1e8a
 name: Chris Garrett
 given_name: Chris
 family_name: Garrett
+image: http://www.leg.state.or.us/garrett/member_photo.jpg
 party:
 - name: Democratic
 roles:
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.leg.state.or.us/garrett/member_photo.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '38'
 links:
 - url: http://www.leg.state.or.us/garrett
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000051
 sources:
 - url: http://www.leg.state.or.us/xml/members.xml
-other_identifiers:
-- identifier: ORL000051
-  scheme: legacy_openstates

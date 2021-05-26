@@ -1,11 +1,15 @@
 id: ocd-person/379b9fd9-2da7-4e20-b0ed-4319ead3a1db
 name: Cedric Burnett
+given_name: Cedric
+family_name: Burnett
+email: cburnett@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/burnett.jpg
 party:
 - name: Democratic
 roles:
-- district: '9'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '9'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
@@ -13,16 +17,12 @@ contact_details:
 - note: District Office
   address: P. O. Box 469;Tunica, MS 38676
   voice: 662-363-1730
-email: cburnett@house.ms.gov
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/burnett.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000243
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/burnett.xml
-image: http://billstatus.ls.state.ms.us/members/house/burnett.jpg
 extras:
   org_info: ''
-other_identifiers:
-- identifier: MSL000243
-  scheme: legacy_openstates
-given_name: Cedric
-family_name: Burnett

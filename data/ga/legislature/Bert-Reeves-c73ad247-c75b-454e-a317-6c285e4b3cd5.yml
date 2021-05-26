@@ -1,11 +1,15 @@
 id: ocd-person/c73ad247-c75b-454e-a317-6c285e4b3cd5
 name: Bert Reeves
+given_name: Bert
+family_name: Reeves
+email: bert.reeves@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/reeves-bert-869.jpg
 party:
 - name: Republican
 roles:
-- district: '34'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '34'
 contact_details:
 - note: Capitol Office
   address: 109 State Capitol;Atlanta, GA 30334
@@ -16,21 +20,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=869&Session=27
 - url: https://www.legis.ga.gov/members/house/869?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000397
+- scheme: legacy_openstates
+  identifier: GAL000424
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=869&Session=27
 - url: https://www.legis.ga.gov/members/house/869?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/reeves-bert-869.jpg
-family_name: Reeves
-given_name: Bert
 extras:
   guid: 869
   city: Marietta
   georgia_id: 869
   residence: Marietta
-other_identifiers:
-- identifier: GAL000397
-  scheme: legacy_openstates
-- identifier: GAL000424
-  scheme: legacy_openstates
-email: bert.reeves@house.ga.gov

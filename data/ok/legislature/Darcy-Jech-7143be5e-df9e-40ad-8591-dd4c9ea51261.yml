@@ -1,11 +1,14 @@
 id: ocd-person/7143be5e-df9e-40ad-8591-dd4c9ea51261
 name: Darcy Jech
+given_name: Darcy
+family_name: Jech
+image: https://oksenate.gov/sites/default/files/1200px-DarcyJech_0.jpg
 party:
 - name: Republican
 roles:
-- district: '26'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: upper
+  district: '26'
 contact_details:
 - note: Capitol Office
   address: 2300 N. Lincoln Blvd., Rm. 417 Oklahoma City, OK 73105
@@ -14,16 +17,13 @@ contact_details:
   address: 1702 Harvey Brown Dr.;Kingfisher, OK 73750
 links:
 - url: http://oksenate.gov/Senators/biographies/jech_bio.aspx
-- note: Contact Form
-  url: https://oksenate.gov/contact-senator?sid=1855
+- url: https://oksenate.gov/contact-senator?sid=1855
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000199
 sources:
 - url: http://oksenate.gov/Senators/biographies/jech_bio.aspx
 - url: http://oksenate.gov/Senators/biographies/jech_bio.html
-image: https://oksenate.gov/sites/default/files/1200px-DarcyJech_0.jpg
 extras:
   email: ' jech@oksenate.gov'
-other_identifiers:
-- identifier: OKL000199
-  scheme: legacy_openstates
-given_name: Darcy
-family_name: Jech

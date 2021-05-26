@@ -1,11 +1,14 @@
 id: ocd-person/57900db1-ade5-4107-8025-a0c664f41a32
 name: Minnie Gonzalez
+given_name: Minnie
+family_name: Gonzalez
+email: Minnie.Gonzalez@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '3'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4031;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-655-5907
 links:
 - url: http://www.housedems.ct.gov/Gonzalez
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000039
-  scheme: legacy_openstates
-given_name: Minnie
-family_name: Gonzalez
-email: Minnie.Gonzalez@cga.ct.gov
 other_names:
 - name: Gonzalez, Minnie
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000039
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

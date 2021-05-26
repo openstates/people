@@ -5,13 +5,13 @@ family_name: Biddle
 party:
 - name: Independent
 roles:
-- district: At-Large
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-  jurisdiction: ocd-jurisdiction/country:us/district:dc/government
-  start_date: '2011-01-01'
   type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/district:dc/government
+  district: At-Large
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: DCL000006
 sources:
 - url: http://www.dccouncil.washington.dc.us/sekoubiddleatlarge
-other_identifiers:
-- identifier: DCL000006
-  scheme: legacy_openstates

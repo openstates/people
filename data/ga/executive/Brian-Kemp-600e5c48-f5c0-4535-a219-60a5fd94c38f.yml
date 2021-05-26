@@ -2,23 +2,23 @@ id: ocd-person/600e5c48-f5c0-4535-a219-60a5fd94c38f
 name: Brian Kemp
 given_name: Brian
 family_name: Kemp
-birth_date: '1963-11-02'
+birth_date: 1963-11-02
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  start_date: '2019-01-14'
+- start_date: '2019-01-14'
+  end_date: '2023-01-01'
   type: governor
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
 contact_details:
 - note: Capitol Office
   address: 206 Washington Street; Suite 203, State Capitol; Atlanta, GA 30334
   voice: 404-656-1776
+links:
+- url: https://gov.georgia.gov/
+- url: https://gov.georgia.gov/contact-us/constituent-services
+  note: webform
 ids:
   twitter: govkemp
 sources:
 - url: https://gov.georgia.gov/
-links:
-- url: https://gov.georgia.gov/
-- note: webform
-  url: https://gov.georgia.gov/contact-us/constituent-services

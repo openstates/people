@@ -1,30 +1,30 @@
 id: ocd-person/03d6bca3-9630-4173-a3c0-4ab4b5aaaedb
 name: Bob Fincher
+given_name: Bob
+family_name: Fincher
+email: rsfincher77@gmail.com
+image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Fincher_37.jpeg
 party:
 - name: Republican
 roles:
-- district: '37'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  type: lower
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100518&OID_PERSON=3191
+  district: '37'
 contact_details:
 - note: Capitol Office
   address: Suite 538-A;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0538
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100518&OID_PERSON=3191
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000181
+- scheme: legacy_openstates
+  identifier: ALL000443
+- scheme: legacy_openstates
+  identifier: ALL000322
+- scheme: legacy_openstates
+  identifier: ALL000503
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100518&OID_PERSON=3191
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Fincher_37.jpeg
-other_identifiers:
-- identifier: ALL000181
-  scheme: legacy_openstates
-- identifier: ALL000443
-  scheme: legacy_openstates
-- identifier: ALL000322
-  scheme: legacy_openstates
-- identifier: ALL000503
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Fincher
-email: rsfincher77@gmail.com

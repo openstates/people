@@ -1,12 +1,15 @@
 id: ocd-person/127bb871-7119-4732-8c8f-0208750c3a56
 name: Marcos A. Devers
+gender: Male
+email: marcos.devers@mahouse.gov
+image: https://malegislature.gov/Legislators/Profile/170/MAD1.jpg
 party:
 - name: Democratic
 roles:
-- district: 16th Essex
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+- start_date: 2011-01-01
   type: lower
-  start_date: 2011-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 16th Essex
 contact_details:
 - note: Capitol Office
   address: 24 Beacon St.;Room 527A;Boston, MA, 02133
@@ -16,13 +19,10 @@ contact_details:
   voice: 978-912-0323
 links:
 - url: https://malegislature.gov/Legislators/Profile/MAD1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MAL000080
+- scheme: openstates
+  identifier: ocd-person/05435a17-624a-499d-8cce-d7f09f958cba
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MAD1
-image: https://malegislature.gov/Legislators/Profile/170/MAD1.jpg
-gender: Male
-other_identifiers:
-- identifier: MAL000080
-  scheme: legacy_openstates
-- identifier: ocd-person/05435a17-624a-499d-8cce-d7f09f958cba
-  scheme: openstates
-email: marcos.devers@mahouse.gov

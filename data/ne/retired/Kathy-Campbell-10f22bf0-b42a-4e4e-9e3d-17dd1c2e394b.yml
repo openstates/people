@@ -2,19 +2,19 @@ id: ocd-person/10f22bf0-b42a-4e4e-9e3d-17dd1c2e394b
 name: Kathy Campbell
 given_name: Kathy
 family_name: Campbell
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist25.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist25.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '25'
 links:
 - url: http://news.legislature.ne.gov/dist25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000025
 sources:
 - url: http://news.legislature.ne.gov/dist25
-other_identifiers:
-- identifier: NEL000025
-  scheme: legacy_openstates

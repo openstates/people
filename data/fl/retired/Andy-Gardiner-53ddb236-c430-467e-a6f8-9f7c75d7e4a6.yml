@@ -2,27 +2,27 @@ id: ocd-person/53ddb236-c430-467e-a6f8-9f7c75d7e4a6
 name: Andy Gardiner
 given_name: Andy
 family_name: Gardiner
+image: http://www.flsenate.gov/PublishedContent/Senators/2014-2016/Photos/s13_4684.jpg
 party:
 - name: Republican
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '13'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.flsenate.gov/PublishedContent/Senators/2014-2016/Photos/s13_4684.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '9'
 links:
 - url: http://www.flsenate.gov/Senators/s13
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000017
+- scheme: legacy_openstates
+  identifier: FLL000183
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s13
-other_identifiers:
-- identifier: FLL000017
-  scheme: legacy_openstates
-- identifier: FLL000183
-  scheme: legacy_openstates

@@ -6,13 +6,13 @@ middle_name: P
 party:
 - name: Democratic
 roles:
-- district: Cheshire 4
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000072
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members(Asterisk%20Delimited).txt
-other_identifiers:
-- identifier: NHL000072
-  scheme: legacy_openstates

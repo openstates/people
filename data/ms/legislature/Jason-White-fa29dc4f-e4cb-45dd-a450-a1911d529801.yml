@@ -1,11 +1,15 @@
 id: ocd-person/fa29dc4f-e4cb-45dd-a450-a1911d529801
 name: Jason White
+given_name: Jason
+family_name: White
+email: jwhite@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/white.jpg
 party:
 - name: Republican
 roles:
-- district: '48'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '48'
 contact_details:
 - note: Capitol Office
   address: Room 201;P. O. Box 1018;Jackson, MS 39215
@@ -16,17 +20,13 @@ contact_details:
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/white.xml
 - url: http://billstatus.ls.state.ms.us/members/house/White.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000217
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/white.xml
 - url: http://billstatus.ls.state.ms.us/members/house/White.xml
-image: http://billstatus.ls.state.ms.us/members/house/white.jpg
 extras:
   org_info: Rep. White is a member of the MS BAR Assoc.(President), Attala County
     BAR Assoc.(President), West Historical & Preservation Society, Board of Dir.,
     Attala County Forestry Assoc., and Attala County Farmers Co-op.
-other_identifiers:
-- identifier: MSL000217
-  scheme: legacy_openstates
-given_name: Jason
-family_name: White
-email: jwhite@house.ms.gov

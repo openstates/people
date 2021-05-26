@@ -1,17 +1,17 @@
 id: ocd-person/7a405c17-49ab-4d43-8b56-5aee3e52da2e
 name: Mary Moe
+given_name: Mary
+family_name: Moe
 party:
 - name: Democratic
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2017-01-25'
   type: upper
-  end_date: '2017-01-25'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '12'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4715
+- url: https://leg.mt.gov/legislator-information/roster/individual/4715
+  note: legislator page
 sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-given_name: Mary
-family_name: ' Moe'
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

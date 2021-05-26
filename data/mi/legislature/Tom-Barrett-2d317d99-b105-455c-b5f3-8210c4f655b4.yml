@@ -1,15 +1,19 @@
 id: ocd-person/2d317d99-b105-455c-b5f3-8210c4f655b4
 name: Tom Barrett
+given_name: Tom
+family_name: Barrett
+email: SenTBarrett@senate.michigan.gov
+image: https://senate.michigan.gov/_images/24th.jpg
 party:
 - name: Republican
 roles:
-- district: '71'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '24'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '71'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '24'
 contact_details:
 - note: Capitol Office
   address: 3200 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-5849
 links:
 - url: https://www.senatortombarrett.com/
-- note: Contact
-  url: https://www.senatortombarrett.com/contact/
+- url: https://www.senatortombarrett.com/contact/
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000300
 sources:
 - url: https://www.senatortombarrett.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-image: https://senate.michigan.gov/_images/24th.jpg
-other_identifiers:
-- identifier: MIL000300
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Barrett
-email: SenTBarrett@senate.michigan.gov

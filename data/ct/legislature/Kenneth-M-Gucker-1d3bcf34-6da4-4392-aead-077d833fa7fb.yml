@@ -1,11 +1,14 @@
 id: ocd-person/1d3bcf34-6da4-4392-aead-077d833fa7fb
 name: Kenneth M. Gucker
+given_name: Kenneth
+family_name: Gucker
+email: Kenneth.Gucker@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '138'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '138'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4000;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 203-733-4400
 links:
 - url: http://www.housedems.ct.gov/gucker
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Kenneth
-family_name: Gucker
-email: Kenneth.Gucker@cga.ct.gov
 other_names:
 - name: Gucker, Kenneth M
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

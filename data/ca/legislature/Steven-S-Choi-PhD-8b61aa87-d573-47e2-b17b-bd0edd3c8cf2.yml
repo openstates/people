@@ -1,11 +1,15 @@
 id: ocd-person/8b61aa87-d573-47e2-b17b-bd0edd3c8cf2
 name: Steven S. Choi, Ph.D.
+given_name: Steven
+family_name: Choi
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/choi.jpg
 party:
 - name: Republican
 roles:
-- district: '68'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '68'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0068
@@ -15,16 +19,12 @@ contact_details:
   voice: 714-665-6868
 links:
 - url: https://ad68.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD68&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD68&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000508
+- scheme: legacy_openstates
+  identifier: CAL000534
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/choi.jpg
-other_identifiers:
-- identifier: CAL000508
-  scheme: legacy_openstates
-- identifier: CAL000534
-  scheme: legacy_openstates
-given_name: Steven
-family_name: Choi
-gender: Male

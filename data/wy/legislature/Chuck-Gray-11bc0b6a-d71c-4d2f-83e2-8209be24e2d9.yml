@@ -1,11 +1,16 @@
 id: ocd-person/11bc0b6a-d71c-4d2f-83e2-8209be24e2d9
 name: Chuck Gray
+given_name: Chuck
+family_name: Gray
+email: Chuck.Gray@wyoleg.gov
+birth_date: 1900-01-01
+image: http://wyoleg.gov/LegislatorSummary/Photos/GrayCH57.jpg
 party:
 - name: Republican
 roles:
-- district: '57'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '57'
 contact_details:
 - note: District Office
   address: PO Box 51842, Casper WY 82605
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2046
 - url: http://wyoleg.gov/Legislators/2021/R/2046
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000160
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2046
 - url: http://wyoleg.gov/Legislators/2021/R/2046
-image: http://wyoleg.gov/LegislatorSummary/Photos/GrayCH57.jpg
-birth_date: '1900-01-01'
-given_name: Chuck
-family_name: Gray
 extras:
   county: Natrona
   education:
@@ -35,7 +39,3 @@ extras:
   religion: Catholic
   spouse_given_name: null
   wy_leg_id: 2046
-other_identifiers:
-- identifier: WYL000160
-  scheme: legacy_openstates
-email: Chuck.Gray@wyoleg.gov

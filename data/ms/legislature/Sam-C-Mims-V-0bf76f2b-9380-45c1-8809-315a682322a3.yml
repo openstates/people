@@ -1,11 +1,15 @@
 id: ocd-person/0bf76f2b-9380-45c1-8809-315a682322a3
 name: Sam C. Mims, V
+given_name: Sam C.
+family_name: Mims
+email: smims@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/mims.jpg
 party:
 - name: Republican
 roles:
-- district: '97'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '97'
 contact_details:
 - note: Capitol Office
   address: Room 104-B;P. O. Box 1018;Jackson, MS 39215
@@ -15,9 +19,11 @@ contact_details:
   voice: 601-684-0281
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mims.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000070
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mims.xml
-image: http://billstatus.ls.state.ms.us/members/house/mims.jpg
 extras:
   org_info: "In 2007, Representative Mims was elected by the Mississippi House Republican\
     \ Conference as Assistant Floor Leader, the fifth ranking officer of the organization.\
@@ -27,9 +33,3 @@ extras:
     Representative Mims is a member of the National Rifle \nAssociation, the McComb\
     \ Rotary Club, former member of the Pike County Republican Executive Committee,\
     \ and former Chairman of the City of McComb Republican Executive Committee."
-other_identifiers:
-- identifier: MSL000070
-  scheme: legacy_openstates
-given_name: Sam C.
-family_name: Mims
-email: smims@house.ms.gov

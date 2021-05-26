@@ -3,22 +3,22 @@ name: Melvin R Brown
 given_name: Melvin
 family_name: Brown
 middle_name: R
+image: http://le.utah.gov/images/legislator/BROWNMR.jpg
 party:
 - name: Republican
 roles:
-- district: '53'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://le.utah.gov/images/legislator/BROWNMR.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '53'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=BROWNMR
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000037
+- scheme: legacy_openstates
+  identifier: UTL000223
 sources:
 - url: http://le.utah.gov/house2/detail.jsp?i=BROWNMR
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000037
-  scheme: legacy_openstates
-- identifier: UTL000223
-  scheme: legacy_openstates

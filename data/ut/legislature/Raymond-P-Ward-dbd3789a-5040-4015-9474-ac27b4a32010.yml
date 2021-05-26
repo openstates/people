@@ -1,20 +1,33 @@
 id: ocd-person/dbd3789a-5040-4015-9474-ac27b4a32010
 name: Raymond P. Ward
+given_name: Raymond
+family_name: Ward
+email: rayward@le.utah.gov
+image: https://le.utah.gov/images/legislator/WARDR.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '19'
 contact_details:
 - note: District Office
   address: 954 E. MILLBROOK WAY, BOUNTIFUL, UT, 84010
   voice: 801-440-8765
 links:
 - url: http://house.utah.gov/rep/WARDR
+other_names:
+- name: Ward, Raymond P.
+- name: Ward, R.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000151
+- scheme: legacy_openstates
+  identifier: UTL000167
+- scheme: legacy_openstates
+  identifier: UTL000251
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/WARDR.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIWARDR1.pdf
@@ -23,16 +36,3 @@ extras:
   - http://le.utah.gov/house2/CofI/rward2.pdf
   - http://le.utah.gov/house2/CofI/rward.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412633
-other_identifiers:
-- identifier: UTL000151
-  scheme: legacy_openstates
-- identifier: UTL000167
-  scheme: legacy_openstates
-- identifier: UTL000251
-  scheme: legacy_openstates
-given_name: Raymond
-family_name: Ward
-email: rayward@le.utah.gov
-other_names:
-- name: Ward, Raymond P.
-- name: Ward, R.

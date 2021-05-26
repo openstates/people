@@ -2,26 +2,26 @@ id: ocd-person/38a4f4dd-d47a-4c07-855c-1c40859be599
 name: Chester Crandell
 given_name: Chester
 family_name: Crandell
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/CRANDELL.gif
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '5'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '6'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/CRANDELL.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '5'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=93&Legislature=51&Session_ID=110
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000140
+- scheme: legacy_openstates
+  identifier: AZL000217
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=S
-other_identifiers:
-- identifier: AZL000140
-  scheme: legacy_openstates
-- identifier: AZL000217
-  scheme: legacy_openstates

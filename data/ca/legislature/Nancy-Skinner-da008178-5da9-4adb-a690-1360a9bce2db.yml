@@ -1,21 +1,25 @@
 id: ocd-person/da008178-5da9-4adb-a690-1360a9bce2db
 name: Nancy Skinner
+given_name: Nancy
+family_name: Skinner
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/skinner.jpg
 party:
 - name: Democratic
 roles:
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: 2009-01-01
+- start_date: 2009-01-01
   end_date: 2012-12-31
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: lower
-  start_date: 2013-01-01
-  end_date: 2014-12-31
-- district: '9'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '14'
+- start_date: 2013-01-01
+  end_date: 2014-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '15'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '9'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 5094, Sacramento, CA 95814-4900
@@ -25,22 +29,18 @@ contact_details:
   voice: 510-286-1333
 links:
 - url: https://senate.ca.gov/sd09
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD09&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD09&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000501
+- scheme: legacy_openstates
+  identifier: CAL000058
+- scheme: legacy_openstates
+  identifier: CAL000283
+- scheme: legacy_openstates
+  identifier: CAL000405
+- scheme: openstates
+  identifier: ocd-person/7f9a2356-3291-4aa2-a996-2c3b62ab2a11
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/skinner.jpg
-other_identifiers:
-- identifier: CAL000501
-  scheme: legacy_openstates
-- identifier: CAL000058
-  scheme: legacy_openstates
-- identifier: CAL000283
-  scheme: legacy_openstates
-- identifier: CAL000405
-  scheme: legacy_openstates
-- identifier: ocd-person/7f9a2356-3291-4aa2-a996-2c3b62ab2a11
-  scheme: openstates
-given_name: Nancy
-family_name: Skinner
-gender: Female

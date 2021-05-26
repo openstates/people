@@ -1,25 +1,25 @@
 id: ocd-person/01fbba6a-282f-4b93-a888-eb15d40ccce0
 name: Michele Henson
+given_name: Michele
+family_name: Henson
+email: michele.henson@house.ga.gov
+image: http://www.house.ga.gov/SiteCollectionImages/HensonMichele124.jpg
 party:
 - name: Democratic
 roles:
-- district: '86'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '86'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=124&Session=27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000129
+- scheme: legacy_openstates
+  identifier: GAL000300
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=124&Session=27
-image: http://www.house.ga.gov/SiteCollectionImages/HensonMichele124.jpg
-family_name: Henson
-given_name: Michele
 extras:
   guid: 124
-other_identifiers:
-- identifier: GAL000129
-  scheme: legacy_openstates
-- identifier: GAL000300
-  scheme: legacy_openstates
-email: michele.henson@house.ga.gov

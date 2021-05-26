@@ -1,21 +1,21 @@
 id: ocd-person/bf8104e0-0438-4ab8-b544-defec44961a4
 name: Bob Oaks
+given_name: Bob
+family_name: Oaks
+image: http://assembly.state.ny.us/mem/pic/130.jpg
 party:
 - name: Republican
 roles:
-- district: '130'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '130'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000166
+- scheme: legacy_openstates
+  identifier: NYL000292
 sources:
 - url: http://assembly.state.ny.us/mem/Bob-Oaks
-image: http://assembly.state.ny.us/mem/pic/130.jpg
-other_identifiers:
-- identifier: NYL000166
-  scheme: legacy_openstates
-- identifier: NYL000292
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Oaks

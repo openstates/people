@@ -2,19 +2,19 @@ id: ocd-person/1b19f419-d7da-4a34-8abd-cb3aeda1c67e
 name: Delwin Jones
 given_name: Delwin
 family_name: Jones
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A3405.jpg
 party:
 - name: Republican
 roles:
-- district: '83'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A3405.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '83'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000290
+- scheme: legacy_openstates
+  identifier: TXL000108
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A3405
-other_identifiers:
-- identifier: TXL000290
-  scheme: legacy_openstates
-- identifier: TXL000108
-  scheme: legacy_openstates

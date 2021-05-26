@@ -2,19 +2,19 @@ id: ocd-person/70be3b0a-816b-4b8b-bbe8-c16c4d1bd3cd
 name: Thomas Long
 given_name: Thomas
 family_name: Long
+image: http://www.house.mo.gov/billtracking/bills121/member/mem134.jpg
 party:
 - name: Republican
 roles:
-- district: '134'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/billtracking/bills121/member/mem134.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '134'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=112
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000123
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=134
-other_identifiers:
-- identifier: MOL000123
-  scheme: legacy_openstates

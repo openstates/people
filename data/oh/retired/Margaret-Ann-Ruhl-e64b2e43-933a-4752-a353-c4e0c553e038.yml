@@ -2,26 +2,26 @@ id: ocd-person/e64b2e43-933a-4752-a353-c4e0c553e038
 name: Margaret Ann Ruhl
 given_name: Margaret Ann
 family_name: Ruhl
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/68.jpg
 party:
 - name: Republican
 roles:
-- district: '68'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '90'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '68'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/68.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '90'
 links:
 - url: http://www.ohiohouse.gov/margaret-ann-ruhl
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000123
+- scheme: legacy_openstates
+  identifier: OHL000237
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000123
-  scheme: legacy_openstates
-- identifier: OHL000237
-  scheme: legacy_openstates

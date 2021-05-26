@@ -2,30 +2,30 @@ id: ocd-person/dce9c4a8-218a-411d-bb93-09f7e8347d8c
 name: Muriel Bowser
 given_name: Muriel
 family_name: Bowser
+email: eom@dc.gov
+image: http://dccouncil.us/files/user_uploads/member_photos/Bowser_Official_Photo_2012_small.jpg
 party:
 - name: Democratic
 roles:
-- district: Ward 4
+- start_date: '2007-01-02'
   end_date: '2015-01-02'
-  jurisdiction: ocd-jurisdiction/country:us/district:dc/government
-  start_date: '2007-01-02'
   type: legislature
-- type: governor
-  start_date: '2015-01-02'
-  end_date: '2023-01-01'
   jurisdiction: ocd-jurisdiction/country:us/district:dc/government
-image: http://dccouncil.us/files/user_uploads/member_photos/Bowser_Official_Photo_2012_small.jpg
+  district: Ward 4
+- start_date: '2015-01-02'
+  end_date: '2023-01-01'
+  type: governor
+  jurisdiction: ocd-jurisdiction/country:us/district:dc/government
 contact_details:
 - note: Capitol Office
-  voice: 202-727-2643
   address: 1350 Pennsylvani Avenue NW; Washington, DC 20004
-email: eom@dc.gov
-ids:
-  twitter: MayorBowser
+  voice: 202-727-2643
 links:
 - url: https://mayor.dc.gov/
+ids:
+  twitter: MayorBowser
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: DCL000011
 sources:
 - url: https://mayor.dc.gov/
-other_identifiers:
-- identifier: DCL000011
-  scheme: legacy_openstates

@@ -1,16 +1,17 @@
 id: ocd-person/ce985799-268d-4190-b078-955fc63a8c3c
 name: Suzanne M. Vail
+email: Suzanne.Vail@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 29
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2014-12-31
-- district: Hillsborough 30
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 29
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 30
 contact_details:
 - note: District Office
   address: 28B Norton Street;Nashua, NH 03064
@@ -18,6 +19,13 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000775
+- scheme: legacy_openstates
+  identifier: NHL000856
+- scheme: openstates
+  identifier: ocd-person/d0ec569c-bb65-4c42-8e27-ee4345b1ce8c
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377185
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -26,11 +34,3 @@ extras:
   first_name: Suzanne
   last_name: Vail
   middle_name: M.
-other_identifiers:
-- identifier: NHL000775
-  scheme: legacy_openstates
-- identifier: NHL000856
-  scheme: legacy_openstates
-- identifier: ocd-person/d0ec569c-bb65-4c42-8e27-ee4345b1ce8c
-  scheme: openstates
-email: Suzanne.Vail@leg.state.nh.us

@@ -2,26 +2,26 @@ id: ocd-person/918be135-e56c-412c-bdb9-d16e85bb545f
 name: Matt Lynch
 given_name: Matt
 family_name: Lynch
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/76.jpg
 party:
 - name: Republican
 roles:
-- district: '76'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '98'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '76'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/76.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '98'
 links:
 - url: http://www.ohiohouse.gov/matt-lynch
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000161
+- scheme: legacy_openstates
+  identifier: OHL000245
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000161
-  scheme: legacy_openstates
-- identifier: OHL000245
-  scheme: legacy_openstates

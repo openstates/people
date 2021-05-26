@@ -1,11 +1,15 @@
 id: ocd-person/45567c87-3ba6-49ec-9ea2-5ebb880aa94c
 name: Todd Jones
+given_name: Todd
+family_name: Jones
+email: todd.jones@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/jones-todd-4885.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: 508-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4885&Session=27
 - url: https://www.legis.ga.gov/members/house/4885?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000468
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4885&Session=27
 - url: https://www.legis.ga.gov/members/house/4885?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/jones-todd-4885.jpg
-family_name: Jones
-given_name: Todd
 extras:
   guid: 4885
   city: South Forsyth
   georgia_id: 4885
   residence: South Forsyth
-other_identifiers:
-- identifier: GAL000468
-  scheme: legacy_openstates
-email: todd.jones@house.ga.gov

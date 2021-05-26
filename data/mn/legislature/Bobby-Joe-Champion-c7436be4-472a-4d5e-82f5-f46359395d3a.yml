@@ -1,11 +1,15 @@
 id: ocd-person/c7436be4-472a-4d5e-82f5-f46359395d3a
 name: Bobby Joe Champion
+given_name: Bobby
+family_name: Champion
+email: sen.bobby.champion@senate.mn
+image: https://www.senate.mn/img/member_thumbnails/59Champion.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: '59'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
+  district: '59'
 contact_details:
 - note: District Office
   address: 1501 Hall Curve N.;Minneapolis, MN 55411
@@ -13,17 +17,13 @@ contact_details:
   voice: 651-296-9246
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1212
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000183
+- scheme: legacy_openstates
+  identifier: MNL000242
+- scheme: legacy_openstates
+  identifier: MNL000499
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-image: https://www.senate.mn/img/member_thumbnails/59Champion.jpg
-other_identifiers:
-- identifier: MNL000183
-  scheme: legacy_openstates
-- identifier: MNL000242
-  scheme: legacy_openstates
-- identifier: MNL000499
-  scheme: legacy_openstates
-given_name: Bobby
-family_name: Champion
-email: sen.bobby.champion@senate.mn

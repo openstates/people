@@ -2,19 +2,19 @@ id: ocd-person/143f4ed3-99be-47aa-b450-9ea1a5733d95
 name: James Evans
 given_name: James
 family_name: Evans
+image: http://billstatus.ls.state.ms.us/members/house/evans_(70th).jpg
 party:
 - name: Democratic
 roles:
-- district: '70'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/evans_(70th).jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '70'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/evans_(70th).xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000133
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/evans_(70th).xml
-other_identifiers:
-- identifier: MSL000133
-  scheme: legacy_openstates

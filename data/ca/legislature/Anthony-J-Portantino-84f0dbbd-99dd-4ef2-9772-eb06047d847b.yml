@@ -1,17 +1,21 @@
 id: ocd-person/84f0dbbd-99dd-4ef2-9772-eb06047d847b
 name: Anthony J. Portantino
+given_name: Anthony
+family_name: Portantino
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/portantino_en_3444_lls_ed_v.jpg
 party:
 - name: Democratic
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: 2006-12-06
+- start_date: 2006-12-06
   end_date: 2012-11-30
-- district: '25'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '44'
+- start_date: 2016-12-05
   type: upper
-  start_date: 2016-12-05
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 3086, Sacramento, CA 95814-4900
@@ -21,24 +25,20 @@ contact_details:
   voice: 909-599-7351
 links:
 - url: https://senate.ca.gov/sd25
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD25&inframe=N
-sources:
-- url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/portantino_en_3444_lls_ed_v.jpg
-other_identifiers:
-- identifier: CAL000531
-  scheme: legacy_openstates
-- identifier: CAL000071
-  scheme: legacy_openstates
-- identifier: CAL000162
-  scheme: legacy_openstates
-- identifier: CAL000281
-  scheme: legacy_openstates
-- identifier: ocd-person/03863888-caaf-4e8c-9b01-2642a9364884
-  scheme: openstates
-given_name: Anthony
-family_name: Portantino
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD25&inframe=N
+  note: Contact Form
 other_names:
 - name: Anthony Portantino
-gender: Male
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000531
+- scheme: legacy_openstates
+  identifier: CAL000071
+- scheme: legacy_openstates
+  identifier: CAL000162
+- scheme: legacy_openstates
+  identifier: CAL000281
+- scheme: openstates
+  identifier: ocd-person/03863888-caaf-4e8c-9b01-2642a9364884
+sources:
+- url: http://senate.ca.gov/senators

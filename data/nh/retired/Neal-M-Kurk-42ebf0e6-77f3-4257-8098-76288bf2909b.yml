@@ -1,14 +1,23 @@
 id: ocd-person/42ebf0e6-77f3-4257-8098-76288bf2909b
 name: Neal M. Kurk
+given_name: Neal M.
+family_name: Kurk
 party:
 - name: Republican
 roles:
-- district: Hillsborough 2
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 2
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000206
+- scheme: legacy_openstates
+  identifier: NHL000614
+- scheme: legacy_openstates
+  identifier: NHL000855
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=372821
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -16,12 +25,3 @@ extras:
   first_name: Neal
   last_name: Kurk
   middle_name: M.
-other_identifiers:
-- identifier: NHL000206
-  scheme: legacy_openstates
-- identifier: NHL000614
-  scheme: legacy_openstates
-- identifier: NHL000855
-  scheme: legacy_openstates
-given_name: Neal M.
-family_name: Kurk

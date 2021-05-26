@@ -1,11 +1,13 @@
 id: ocd-person/fa722794-9212-4794-b381-04d0f1d65cff
 name: Dennis A. Bradley
+given_name: Dennis
+family_name: Bradley
 party:
 - name: Democratic
 roles:
-- district: '23'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '23'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3300;Hartford, CT 06106
@@ -15,9 +17,7 @@ contact_details:
   voice: 203-212-3617
 links:
 - url: http://www.senatedems.ct.gov/bradley
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Dennis
-family_name: Bradley
 other_names:
 - name: Bradley, Dennis A.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,24 +1,35 @@
 id: ocd-person/53a3ee25-bf36-4c14-8b89-8efece8c6021
 name: Michael S. Kennedy
+given_name: Michael
+family_name: Kennedy
+email: mkennedy@le.utah.gov
+image: https://le.utah.gov/images/legislator/KENNEMS.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '14'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '27'
+- start_date: 2021-01-05
   type: upper
-  start_date: 2021-01-05
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '14'
 contact_details:
 - note: District Office
   address: 659 E 200 N, ALPINE, UT, 84004
 links:
 - url: https://senate.utah.gov/michael-kennedy
+other_names:
+- name: Kennedy, M.
+- name: Kennedy, Michael S.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000125
+- scheme: legacy_openstates
+  identifier: UTL000228
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/KENNEMS.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIKENNEMS.pdf
@@ -29,14 +40,3 @@ extras:
   - http://le.utah.gov/house2/CofI/mkennedy.pdf
   - http://le.utah.gov/house2/CofI/KENNEMS.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411326
-other_identifiers:
-- identifier: UTL000125
-  scheme: legacy_openstates
-- identifier: UTL000228
-  scheme: legacy_openstates
-given_name: Michael
-family_name: Kennedy
-email: mkennedy@le.utah.gov
-other_names:
-- name: Kennedy, M.
-- name: Kennedy, Michael S.

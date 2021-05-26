@@ -1,30 +1,30 @@
 id: ocd-person/aea19844-4572-4086-9462-e50ad3ff4b76
 name: Mia Costello
+given_name: Mia
+family_name: Costello
+email: Senator.Mia.Costello@akleg.gov
+image: http://akleg.gov/images/legislators/cos.jpg
 party:
 - name: Republican
 roles:
-- district: K
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: upper
-links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=cos
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=cos
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=cos
+  district: K
 contact_details:
 - note: Capitol Office
   address: State Capitol Room 119; Juneau AK, 99801
   voice: 907-465-4968
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=cos
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=cos
+- url: http://www.akleg.gov/basis/Member/Detail/32?code=cos
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000024
+- scheme: legacy_openstates
+  identifier: AKL000068
+- scheme: legacy_openstates
+  identifier: AKL000156
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=cos
 - url: http://w3.akleg.gov/
-image: http://akleg.gov/images/legislators/cos.jpg
-other_identifiers:
-- identifier: AKL000024
-  scheme: legacy_openstates
-- identifier: AKL000068
-  scheme: legacy_openstates
-- identifier: AKL000156
-  scheme: legacy_openstates
-given_name: Mia
-family_name: Costello
-email: Senator.Mia.Costello@akleg.gov

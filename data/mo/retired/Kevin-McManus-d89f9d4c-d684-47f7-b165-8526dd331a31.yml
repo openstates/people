@@ -2,26 +2,26 @@ id: ocd-person/d89f9d4c-d684-47f7-b165-8526dd331a31
 name: Kevin McManus
 given_name: Kevin
 family_name: McManus
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=485
 party:
 - name: Democratic
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '46'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '36'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=485
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '46'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2015&district=39
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000131
+- scheme: legacy_openstates
+  identifier: MOL000304
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2015&district=36
-other_identifiers:
-- identifier: MOL000131
-  scheme: legacy_openstates
-- identifier: MOL000304
-  scheme: legacy_openstates

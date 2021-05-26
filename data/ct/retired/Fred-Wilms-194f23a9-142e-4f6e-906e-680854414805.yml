@@ -1,18 +1,18 @@
 id: ocd-person/194f23a9-142e-4f6e-906e-680854414805
 name: Fred Wilms
+given_name: Fred
+family_name: Wilms
 party:
 - name: Republican
 roles:
-- district: '142'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '142'
 links:
 - url: http://www.cthousegop.com/Wilms/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000290
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000290
-  scheme: legacy_openstates
-given_name: Fred
-family_name: Wilms

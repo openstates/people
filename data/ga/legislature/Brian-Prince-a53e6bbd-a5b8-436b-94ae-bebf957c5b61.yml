@@ -1,11 +1,15 @@
 id: ocd-person/a53e6bbd-a5b8-436b-94ae-bebf957c5b61
 name: Brian Prince
+given_name: Brian
+family_name: Prince
+email: brian.prince@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/prince-brian-847.jpg
 party:
 - name: Democratic
 roles:
-- district: '127'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '127'
 contact_details:
 - note: Capitol Office
   address: 409-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=847&Session=27
 - url: https://www.legis.ga.gov/members/house/847?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000390
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=847&Session=27
 - url: https://www.legis.ga.gov/members/house/847?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/prince-brian-847.jpg
-family_name: Prince
-given_name: Brian
 extras:
   guid: 847
   city: Augusta
   georgia_id: 847
   residence: Augusta
-other_identifiers:
-- identifier: GAL000390
-  scheme: legacy_openstates
-email: brian.prince@house.ga.gov

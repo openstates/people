@@ -1,19 +1,28 @@
 id: ocd-person/656e595a-c09f-4a47-884c-26ed40482d00
 name: Mark Ellebracht
+given_name: Mark
+family_name: Ellebracht
+email: Mark.Ellebracht@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1913
 party:
 - name: Democratic
 roles:
-- district: '17'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '17'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 135-BA; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 135-BA; Jefferson
+    City MO 65101
   voice: 573-751-1218
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=17
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=017
+other_names:
+- name: Ellebracht, Mark
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000428
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=17
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Mark
   last_name: Ellebracht
-other_identifiers:
-- identifier: MOL000428
-  scheme: legacy_openstates
-given_name: Mark
-family_name: Ellebracht
-email: Mark.Ellebracht@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1913
-other_names:
-- name: Ellebracht, Mark

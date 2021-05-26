@@ -1,19 +1,28 @@
 id: ocd-person/36ae788a-47cc-46bc-b0f3-e4225020d0d5
 name: Donna Baringer
+given_name: Donna
+family_name: Baringer
+email: Donna.Baringer@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1918
 party:
 - name: Democratic
 roles:
-- district: '82'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '82'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 109-C; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 109-C; Jefferson
+    City MO 65101
   voice: 573-751-4220
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=82
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=082
+other_names:
+- name: Baringer, Donna
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000464
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=82
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Donna
   last_name: Baringer
-other_identifiers:
-- identifier: MOL000464
-  scheme: legacy_openstates
-given_name: Donna
-family_name: Baringer
-email: Donna.Baringer@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1918
-other_names:
-- name: Baringer, Donna

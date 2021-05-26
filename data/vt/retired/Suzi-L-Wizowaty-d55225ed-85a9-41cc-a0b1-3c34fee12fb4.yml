@@ -3,26 +3,26 @@ name: Suzi L Wizowaty
 given_name: Suzi
 family_name: Wizowaty
 middle_name: L
+image: http://vermont-elections.org/2009-2010BioBook/jpegs/wizowaty.jpg
 party:
 - name: Democratic
 roles:
-- district: Chittenden-3-5
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Chittenden-6-5
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-3-5
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://vermont-elections.org/2009-2010BioBook/jpegs/wizowaty.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-6-5
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000175
+- scheme: legacy_openstates
+  identifier: VTL000325
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000175
-  scheme: legacy_openstates
-- identifier: VTL000325
-  scheme: legacy_openstates

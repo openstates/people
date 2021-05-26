@@ -1,19 +1,19 @@
 id: ocd-person/45eb38da-8f2e-40b0-aab0-dda7d069abd9
 name: Tom Casperson
+given_name: Tom
+family_name: Casperson
+image: http://www.senate.michigan.gov/_images/Casperson.png
 party:
 - name: Republican
 roles:
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '38'
 links:
 - url: http://www.senate.michigan.gov/casperson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000038
 sources:
 - url: http://www.senate.michigan.gov/casperson
-image: http://www.senate.michigan.gov/_images/Casperson.png
-other_identifiers:
-- identifier: MIL000038
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Casperson

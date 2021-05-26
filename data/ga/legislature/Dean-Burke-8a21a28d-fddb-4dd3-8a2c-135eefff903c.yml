@@ -1,11 +1,15 @@
 id: ocd-person/8a21a28d-fddb-4dd3-8a2c-135eefff903c
 name: Dean Burke
+given_name: Dean
+family_name: Burke
+email: dean.burke@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/burke-dean-841.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: 301-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=841&Session=27
 - url: https://www.legis.ga.gov/members/senate/841?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000382
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=841&Session=27
 - url: https://www.legis.ga.gov/members/senate/841?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/burke-dean-841.jpg
-family_name: Burke
-given_name: Dean
 extras:
   guid: 841
   city: Bainbridge
   georgia_id: 841
   residence: Bainbridge
-other_identifiers:
-- identifier: GAL000382
-  scheme: legacy_openstates
-email: dean.burke@senate.ga.gov

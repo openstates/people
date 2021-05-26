@@ -1,23 +1,23 @@
 id: ocd-person/605ab2a6-9d6a-4968-80c9-8e80f9a07c02
 name: Jim Neely
+given_name: Jim
+family_name: Neely
+email: Jim.Neely@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '8'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=8
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000316
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=8
 extras:
   first_name: Jim
   last_name: Neely
-other_identifiers:
-- identifier: MOL000316
-  scheme: legacy_openstates
-given_name: Jim
-family_name: Neely
-email: Jim.Neely@house.mo.gov

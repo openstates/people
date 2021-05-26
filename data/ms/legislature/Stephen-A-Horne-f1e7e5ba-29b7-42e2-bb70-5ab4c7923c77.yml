@@ -1,11 +1,14 @@
 id: ocd-person/f1e7e5ba-29b7-42e2-bb70-5ab4c7923c77
 name: Stephen A. Horne
+given_name: Stephen A.
+family_name: Horne
+image: http://billstatus.ls.state.ms.us/members/house/horne.jpg
 party:
 - name: Republican
 roles:
-- district: '81'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '81'
 contact_details:
 - note: Capitol Office
   address: Room 100-C;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +18,13 @@ contact_details:
   voice: 601-644-9974
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/horne.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000104
+- scheme: legacy_openstates
+  identifier: MSL000227
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/horne.xml
-image: http://billstatus.ls.state.ms.us/members/house/horne.jpg
 extras:
   org_info: Representative Horne is a member of the National Rifle Association, Pi
     Kappa Alpha and is a mason.
-other_identifiers:
-- identifier: MSL000104
-  scheme: legacy_openstates
-- identifier: MSL000227
-  scheme: legacy_openstates
-given_name: Stephen A.
-family_name: Horne

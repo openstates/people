@@ -1,11 +1,13 @@
 id: ocd-person/749be8b3-0b40-41ec-8670-7dfbfbc90b6e
 name: John W. Fonfara
+given_name: John
+family_name: Fonfara
 party:
 - name: Democratic
 roles:
-- district: '1'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3705;Hartford, CT 06106
@@ -14,12 +16,10 @@ contact_details:
   address: 99 Montowese Street;Hartford, CT 06114
 links:
 - url: http://www.senatedems.ct.gov/Fonfara
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000001
-  scheme: legacy_openstates
-given_name: John
-family_name: Fonfara
 other_names:
 - name: Fonfara, John W.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000001
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

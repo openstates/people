@@ -1,18 +1,18 @@
 id: ocd-person/9f135d51-c39f-4508-b7fa-4c3936b4fcaf
 name: Bruce V. Morris
+given_name: Bruce V.
+family_name: Morris
 party:
 - name: Democratic
 roles:
-- district: '140'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '140'
 links:
 - url: http://www.housedems.ct.gov/Morris
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000176
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000176
-  scheme: legacy_openstates
-given_name: Bruce V.
-family_name: Morris

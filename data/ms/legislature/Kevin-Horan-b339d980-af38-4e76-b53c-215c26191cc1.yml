@@ -1,16 +1,20 @@
 id: ocd-person/b339d980-af38-4e76-b53c-215c26191cc1
 name: Kevin Horan
+given_name: Kevin
+family_name: Horan
+email: khoran@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/horan.jpg
 party:
 - name: Democratic
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: 2012-01-01
+- start_date: 2012-01-01
   end_date: 2015-12-31
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '24'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '34'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -20,19 +24,15 @@ contact_details:
   voice: 662-226-1817
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/horan.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000257
+- scheme: legacy_openstates
+  identifier: MSL000212
+- scheme: openstates
+  identifier: ocd-person/c3741045-e044-490e-8186-43149d8ec505
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/horan.xml
-image: http://billstatus.ls.state.ms.us/members/house/horan.jpg
 extras:
   org_info: Rep. Horan is a member of the Milestone Hospice, Inc. and Mississippi
     Bar Association.
-other_identifiers:
-- identifier: MSL000257
-  scheme: legacy_openstates
-- identifier: MSL000212
-  scheme: legacy_openstates
-- identifier: ocd-person/c3741045-e044-490e-8186-43149d8ec505
-  scheme: openstates
-given_name: Kevin
-family_name: Horan
-email: khoran@house.ms.gov

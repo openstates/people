@@ -2,17 +2,17 @@ id: ocd-person/8e08e266-1113-4cce-9c78-a8ee68332a74
 name: Kristi Noem
 given_name: Kristi
 family_name: Noem
+image: http://legis.state.sd.us/sessions/2009/noem.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2009/noem.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '6'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000076
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=19
-other_identifiers:
-- identifier: SDL000076
-  scheme: legacy_openstates

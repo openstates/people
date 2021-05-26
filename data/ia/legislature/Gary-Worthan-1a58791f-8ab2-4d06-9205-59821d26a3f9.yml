@@ -1,11 +1,15 @@
 id: ocd-person/1a58791f-8ab2-4d06-9205-59821d26a3f9
 name: Gary Worthan
+given_name: Gary
+family_name: Worthan
+email: gary.worthan@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=6324
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '11'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6324
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6324
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000150
+- scheme: legacy_openstates
+  identifier: IAL000319
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6324
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6324
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=6324
-other_identifiers:
-- identifier: IAL000150
-  scheme: legacy_openstates
-- identifier: IAL000319
-  scheme: legacy_openstates
-given_name: Gary
-family_name: Worthan
-email: gary.worthan@legis.iowa.gov

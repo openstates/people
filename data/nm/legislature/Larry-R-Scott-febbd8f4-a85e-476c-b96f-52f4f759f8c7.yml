@@ -1,11 +1,15 @@
 id: ocd-person/febbd8f4-a85e-476c-b96f-52f4f759f8c7
 name: Larry R. Scott
+given_name: Larry
+family_name: Scott
+email: larry.scott@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/House/HSCOT.jpg
 party:
 - name: Republican
 roles:
-- district: '62'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
+  district: '62'
 contact_details:
 - note: Capitol Office
   address: Room 203GN State Capitol;Santa Fe, NM 87501
@@ -15,12 +19,8 @@ contact_details:
   voice: 575-392-5960
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HSCOT
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000352
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HSCOT
-image: http://www.nmlegis.gov/Images/Legislators/House/HSCOT.jpg
-other_identifiers:
-- identifier: NML000352
-  scheme: legacy_openstates
-given_name: Larry
-family_name: Scott
-email: larry.scott@nmlegis.gov

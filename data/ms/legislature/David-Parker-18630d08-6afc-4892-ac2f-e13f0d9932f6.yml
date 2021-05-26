@@ -1,16 +1,20 @@
 id: ocd-person/18630d08-6afc-4892-ac2f-e13f0d9932f6
 name: David Parker
+given_name: David
+family_name: Parker
+email: dparker@senate.ms.gov
+image: http://billstatus.ls.state.ms.us/members/senate/parker.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: 2012-01-01
+- start_date: 2012-01-01
   end_date: 2015-12-31
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '19'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '2'
 contact_details:
 - note: Capitol Office
   address: Room 408;P. O. Box 1018;Jackson, MS 39215
@@ -20,19 +24,15 @@ contact_details:
   voice: 662-893-3309
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/parker.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000251
+- scheme: legacy_openstates
+  identifier: MSL000228
+- scheme: openstates
+  identifier: ocd-person/c998e641-4136-4595-a560-19804dc402cd
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/parker.xml
-image: http://billstatus.ls.state.ms.us/members/senate/parker.jpg
 extras:
   org_info: Senator Parker is a member of the American Board of Optometry, Diplomats,
     Mississippi Optometric Association and American Optometric Association.
-other_identifiers:
-- identifier: MSL000251
-  scheme: legacy_openstates
-- identifier: MSL000228
-  scheme: legacy_openstates
-- identifier: ocd-person/c998e641-4136-4595-a560-19804dc402cd
-  scheme: openstates
-given_name: David
-family_name: Parker
-email: dparker@senate.ms.gov

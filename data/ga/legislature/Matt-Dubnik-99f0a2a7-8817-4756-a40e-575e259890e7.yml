@@ -1,11 +1,15 @@
 id: ocd-person/99f0a2a7-8817-4756-a40e-575e259890e7
 name: Matt Dubnik
+given_name: Matt
+family_name: Dubnik
+email: matt.dubnik@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/dubnik-matt-4886.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '29'
 contact_details:
 - note: Capitol Office
   address: 508-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -13,19 +17,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4886&Session=27
 - url: https://www.legis.ga.gov/members/house/4886?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000450
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4886&Session=27
 - url: https://www.legis.ga.gov/members/house/4886?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/dubnik-matt-4886.jpg
-family_name: Dubnik
-given_name: Matt
 extras:
   guid: 4886
   city: Gainesville
   georgia_id: 4886
   residence: Gainesville
-other_identifiers:
-- identifier: GAL000450
-  scheme: legacy_openstates
-email: matt.dubnik@house.ga.gov

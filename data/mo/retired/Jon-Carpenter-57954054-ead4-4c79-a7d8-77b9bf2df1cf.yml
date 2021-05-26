@@ -1,23 +1,23 @@
 id: ocd-person/57954054-ead4-4c79-a7d8-77b9bf2df1cf
 name: Jon Carpenter
+given_name: Jon
+family_name: Carpenter
+email: Jon.Carpenter@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '15'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=15
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000225
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=15
 extras:
   first_name: Jon
   last_name: Carpenter
-other_identifiers:
-- identifier: MOL000225
-  scheme: legacy_openstates
-given_name: Jon
-family_name: Carpenter
-email: Jon.Carpenter@house.mo.gov

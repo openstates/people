@@ -1,27 +1,27 @@
 id: ocd-person/c5dca4cd-fc80-4021-b888-4194edc583cd
 name: Greg Hertz
-party:
-- name: Republican
-roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  end_date: '2021-01-03'
-links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4755
-- url: https://leg.mt.gov/legislator-information/roster/individual/5070
-- url: https://leg.mt.gov/legislator-information/roster/individual/6818
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-- url: https://leg.mt.gov/legislator-information/roster/individual/5070
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-other_identifiers:
-- identifier: MTL000190
-  scheme: legacy_openstates
-- identifier: MTL000295
-  scheme: legacy_openstates
 given_name: Greg
 family_name: Hertz
 email: greg.hertz@mtleg.gov
+party:
+- name: Republican
+roles:
+- end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '12'
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4755
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5070
+- url: https://leg.mt.gov/legislator-information/roster/individual/6818
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000190
+- scheme: legacy_openstates
+  identifier: MTL000295
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5070
+- url: https://leg.mt.gov/legislator-information/?session_select=113

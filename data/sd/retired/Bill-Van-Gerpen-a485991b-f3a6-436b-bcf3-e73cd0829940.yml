@@ -2,27 +2,27 @@ id: ocd-person/a485991b-f3a6-436b-bcf3-e73cd0829940
 name: Bill Van Gerpen
 given_name: Bill
 family_name: Van Gerpen
+image: http://legis.state.sd.us/sessions/2009/VanGerpen.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '19'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2013-01-01'
+  district: '19'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://legis.state.sd.us/sessions/2009/VanGerpen.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '19'
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1013&Session=2016
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000100
+- scheme: legacy_openstates
+  identifier: SDL000162
 sources:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1013&Session=2016
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=1013&Session=2016
-other_identifiers:
-- identifier: SDL000100
-  scheme: legacy_openstates
-- identifier: SDL000162
-  scheme: legacy_openstates

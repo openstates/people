@@ -1,24 +1,24 @@
 id: ocd-person/890c498e-6700-4482-93df-977c90f0f87c
 name: Donna Lichtenegger
+given_name: Donna
+family_name: Lichtenegger
 party:
 - name: Republican
 roles:
-- district: '146'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '146'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=146
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000121
+- scheme: legacy_openstates
+  identifier: MOL000293
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=146
 extras:
   first_name: Donna
   last_name: Lichtenegger
-other_identifiers:
-- identifier: MOL000121
-  scheme: legacy_openstates
-- identifier: MOL000293
-  scheme: legacy_openstates
-given_name: Donna
-family_name: Lichtenegger

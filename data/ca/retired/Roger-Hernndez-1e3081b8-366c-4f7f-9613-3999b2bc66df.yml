@@ -2,28 +2,28 @@ id: ocd-person/1e3081b8-366c-4f7f-9613-3999b2bc66df
 name: "Roger Hern\xE1ndez"
 given_name: Roger
 family_name: "Hern\xE1ndez"
+image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD48_photo.jpg
 party:
 - name: Democratic
 roles:
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '57'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD48_photo.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '48'
 links:
 - url: http://asmdc.org/members/a48
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000152
+- scheme: legacy_openstates
+  identifier: CAL000255
+- scheme: legacy_openstates
+  identifier: CAL000376
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_identifiers:
-- identifier: CAL000152
-  scheme: legacy_openstates
-- identifier: CAL000255
-  scheme: legacy_openstates
-- identifier: CAL000376
-  scheme: legacy_openstates

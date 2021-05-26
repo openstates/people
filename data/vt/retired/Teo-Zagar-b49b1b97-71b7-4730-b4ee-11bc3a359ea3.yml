@@ -2,31 +2,31 @@ id: ocd-person/b49b1b97-71b7-4730-b4ee-11bc3a359ea3
 name: Teo Zagar
 given_name: Teo
 family_name: Zagar
+image: http://ballotpedia.org/wiki/images/4/4b/Zagar.jpg
 party:
 - name: Democratic
 roles:
-- district: Windsor-4-1
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: Windsor-6-1
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windsor-4-1
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://ballotpedia.org/wiki/images/4/4b/Zagar.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windsor-6-1
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000211
+- scheme: legacy_openstates
+  identifier: VTL000330
+- scheme: legacy_openstates
+  identifier: VTL000382
+- scheme: legacy_openstates
+  identifier: VTL000565
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2016
 - url: http://legislature.vermont.gov/people/single/2016/18208
-other_identifiers:
-- identifier: VTL000211
-  scheme: legacy_openstates
-- identifier: VTL000330
-  scheme: legacy_openstates
-- identifier: VTL000382
-  scheme: legacy_openstates
-- identifier: VTL000565
-  scheme: legacy_openstates

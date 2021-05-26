@@ -1,11 +1,15 @@
 id: ocd-person/3aa56ec5-a087-40b1-960a-acb9426ccb2a
 name: Marko Liias
+given_name: Marko
+family_name: Liias
+email: marko.liias@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/liias.jpg
 party:
 - name: Democratic
 roles:
-- district: '21'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '21'
 contact_details:
 - note: Capitol Office
   address: 309 Legislative Building;PO Box 40421;Olympia, WA 98504
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Liias/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000103
+- scheme: legacy_openstates
+  identifier: WAL000209
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/liias.jpg
-other_identifiers:
-- identifier: WAL000103
-  scheme: legacy_openstates
-- identifier: WAL000209
-  scheme: legacy_openstates
-given_name: Marko
-family_name: Liias
-email: marko.liias@leg.wa.gov

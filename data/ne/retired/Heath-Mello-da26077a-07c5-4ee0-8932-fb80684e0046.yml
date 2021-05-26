@@ -2,19 +2,19 @@ id: ocd-person/da26077a-07c5-4ee0-8932-fb80684e0046
 name: Heath Mello
 given_name: Heath
 family_name: Mello
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist05.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist05.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '5'
 links:
 - url: http://news.legislature.ne.gov/dist05
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000005
 sources:
 - url: http://news.legislature.ne.gov/dist05
-other_identifiers:
-- identifier: NEL000005
-  scheme: legacy_openstates

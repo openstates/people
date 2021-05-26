@@ -2,19 +2,19 @@ id: ocd-person/62925fbb-a1c2-4445-a98d-d04392278028
 name: Alice Harden
 given_name: Alice
 family_name: Harden
+image: http://billstatus.ls.state.ms.us/members/senate/harden.jpg
 party:
 - name: Democratic
 roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/harden.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '28'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/harden.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000033
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/harden.xml
-other_identifiers:
-- identifier: MSL000033
-  scheme: legacy_openstates

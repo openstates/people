@@ -2,27 +2,27 @@ id: ocd-person/f2aa71c5-9350-4fa0-bc3a-de72f456e581
 name: '"Jody" Amedee'
 given_name: '"Jody"'
 family_name: Amedee
+image: http://senate.la.gov/Amedee/images/amedee2004.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://senate.la.gov/Amedee/images/amedee2004.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '18'
 links:
 - url: http://senate.la.gov/Amedee/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000139
+- scheme: legacy_openstates
+  identifier: LAL000283
+- scheme: legacy_openstates
+  identifier: LAL000486
+- scheme: legacy_openstates
+  identifier: LAL000745
+- scheme: legacy_openstates
+  identifier: LAL000798
 sources:
 - url: http://senate.la.gov/senators/senpage.asp?SenID=18
-other_identifiers:
-- identifier: LAL000139
-  scheme: legacy_openstates
-- identifier: LAL000283
-  scheme: legacy_openstates
-- identifier: LAL000486
-  scheme: legacy_openstates
-- identifier: LAL000745
-  scheme: legacy_openstates
-- identifier: LAL000798
-  scheme: legacy_openstates

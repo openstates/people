@@ -2,27 +2,27 @@ id: ocd-person/933f92bd-bc8f-4cf4-80f7-d1a151fe1303
 name: Chuck Hunter
 given_name: Chuck
 family_name: Hunter
+image: http://leg.mt.gov/images/legislators_64th/13680.jpg
 party:
 - name: Democratic
 roles:
-- district: '79'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '83'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '79'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/13680.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '83'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13680
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000091
+- scheme: legacy_openstates
+  identifier: MTL000335
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13680
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000091
-  scheme: legacy_openstates
-- identifier: MTL000335
-  scheme: legacy_openstates

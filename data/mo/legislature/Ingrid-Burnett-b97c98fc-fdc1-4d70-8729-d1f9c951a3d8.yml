@@ -1,19 +1,28 @@
 id: ocd-person/b97c98fc-fdc1-4d70-8729-d1f9c951a3d8
 name: Ingrid Burnett
+given_name: Ingrid
+family_name: Burnett
+email: Ingrid.Burnett@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1916
 party:
 - name: Democratic
 roles:
-- district: '19'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '19'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 105-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 105-A; Jefferson
+    City MO 65101
   voice: 573-751-3310
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=19
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=019
+other_names:
+- name: Burnett, Ingrid
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000427
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=19
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Ingrid
   last_name: Burnett
-other_identifiers:
-- identifier: MOL000427
-  scheme: legacy_openstates
-given_name: Ingrid
-family_name: Burnett
-email: Ingrid.Burnett@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1916
-other_names:
-- name: Burnett, Ingrid

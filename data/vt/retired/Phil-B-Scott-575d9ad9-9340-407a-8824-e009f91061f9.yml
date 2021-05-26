@@ -6,13 +6,13 @@ middle_name: B
 party:
 - name: Republican
 roles:
-- district: Washington
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Washington
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000025
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000025
-  scheme: legacy_openstates

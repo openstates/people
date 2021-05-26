@@ -1,12 +1,15 @@
 id: ocd-person/caaba025-7a5a-401d-8714-73f627651196
 name: Antonio Felipe
+given_name: Antonio
+family_name: Felipe
+email: antonio.felipe@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '130'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- start_date: 2019-05-13
   type: lower
-  start_date: 2019-05-13
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '130'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Bldg;Room 4000;Hartford, CT 06106
@@ -16,10 +19,7 @@ contact_details:
   voice: 203-726-6398
 links:
 - url: http://www.housedems.ct.gov/felipe
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Antonio
-family_name: Felipe
-email: antonio.felipe@cga.ct.gov
 other_names:
 - name: Felipe, Antonio
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

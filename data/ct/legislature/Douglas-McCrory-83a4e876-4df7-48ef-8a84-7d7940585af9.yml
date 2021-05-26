@@ -1,11 +1,14 @@
 id: ocd-person/83a4e876-4df7-48ef-8a84-7d7940585af9
 name: Douglas McCrory
+given_name: Douglas
+family_name: McCrory
+email: douglas.mccrory@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '2'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '2'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3105;Hartford, CT 06106
@@ -14,15 +17,12 @@ contact_details:
   address: 235 Blue Hills Avenue;Hartford, CT 06112
 links:
 - url: http://www.senatedems.ct.gov/McCrory
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000043
-  scheme: legacy_openstates
-- identifier: CTL000359
-  scheme: legacy_openstates
-given_name: Douglas
-family_name: McCrory
-email: douglas.mccrory@cga.ct.gov
 other_names:
 - name: Mccrory, Douglas
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000043
+- scheme: legacy_openstates
+  identifier: CTL000359
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

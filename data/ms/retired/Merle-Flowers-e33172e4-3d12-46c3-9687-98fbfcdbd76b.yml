@@ -2,19 +2,19 @@ id: ocd-person/e33172e4-3d12-46c3-9687-98fbfcdbd76b
 name: Merle Flowers
 given_name: Merle
 family_name: Flowers
+image: http://billstatus.ls.state.ms.us/members/senate/flowers.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/flowers.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '19'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/flowers.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000018
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/flowers.xml
-other_identifiers:
-- identifier: MSL000018
-  scheme: legacy_openstates

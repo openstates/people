@@ -2,21 +2,21 @@ id: ocd-person/288afc94-5003-4a3c-aa90-abb705c40f60
 name: Tom Chabin
 given_name: Tom
 family_name: Chabin
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/CHABIN.gif
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/CHABIN.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '2'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=84&Legislature=50&Session_ID=108
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000138
+- scheme: legacy_openstates
+  identifier: AZL000049
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=108&body=H
-other_identifiers:
-- identifier: AZL000138
-  scheme: legacy_openstates
-- identifier: AZL000049
-  scheme: legacy_openstates

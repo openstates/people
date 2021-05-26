@@ -1,18 +1,18 @@
 id: ocd-person/5b47799e-01f3-43b9-b3da-f7b7d75db007
 name: Gary Byron
+given_name: Gary
+family_name: Byron
 party:
 - name: Republican
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '27'
 links:
 - url: http://www.cthousegop.com/Byron/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000286
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000286
-  scheme: legacy_openstates
-given_name: Gary
-family_name: Byron

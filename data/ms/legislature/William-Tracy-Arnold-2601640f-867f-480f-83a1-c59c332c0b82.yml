@@ -1,11 +1,15 @@
 id: ocd-person/2601640f-867f-480f-83a1-c59c332c0b82
 name: William Tracy Arnold
+given_name: William Tracy
+family_name: Arnold
+email: warnold@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/arnold.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
@@ -14,14 +18,10 @@ contact_details:
   address: 301 Wyninegar Rd;Booneville, MS 38829
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/arnold.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000197
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/arnold.xml
-image: http://billstatus.ls.state.ms.us/members/house/arnold.jpg
 extras:
   org_info: Rep. Arnold is a member of the Farm Bureau, NRA, and Pro-life.
-other_identifiers:
-- identifier: MSL000197
-  scheme: legacy_openstates
-given_name: William Tracy
-family_name: Arnold
-email: warnold@house.ms.gov

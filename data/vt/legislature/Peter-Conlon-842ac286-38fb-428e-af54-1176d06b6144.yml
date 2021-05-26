@@ -1,11 +1,15 @@
 id: ocd-person/842ac286-38fb-428e-af54-1176d06b6144
 name: Peter Conlon
+given_name: Peter
+family_name: Conlon
+email: PConlon@leg.state.vt.us
+image: https://legislature.vermont.gov/Documents/Legislators/PConlon.jpg
 party:
 - name: Democratic
 roles:
-- district: Addison-2
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
+  district: Addison-2
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27155
 - url: http://legislature.vermont.gov/people/single/2022/27155
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000850
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/27155
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27155
-image: https://legislature.vermont.gov/Documents/Legislators/PConlon.jpg
-other_identifiers:
-- identifier: VTL000850
-  scheme: legacy_openstates
-given_name: Peter
-family_name: Conlon
-email: PConlon@leg.state.vt.us

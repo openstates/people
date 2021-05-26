@@ -1,27 +1,27 @@
 id: ocd-person/1465de6a-ec39-4986-b3e4-e30ef7a47c20
 name: Todd Gloria
+given_name: Todd
+family_name: Gloria
+gender: Male
+email: mayortoddgloria@sandiego.gov
 party:
 - name: Democratic
 roles:
-- district: '78'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- end_date: '2020-12-07'
   type: lower
-  end_date: '2020-12-07'
-- jurisdiction: ocd-jurisdiction/country:us/state:ca/place:san_diego/government
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '78'
+- end_date: '2024-12-31'
   type: mayor
-  end_date: '2024-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/place:san_diego/government
 contact_details:
 - note: Primary Office
   address: 202 C Street, 11th Floor;San Diego, CA 92101
   voice: 619-236-6330
-sources:
-- url: https://www.sandiego.gov/contact
 links:
 - url: https://www.sandiego.gov/contact
 other_identifiers:
-- identifier: CAL000527
-  scheme: legacy_openstates
-given_name: Todd
-family_name: Gloria
-email: mayortoddgloria@sandiego.gov
-gender: Male
+- scheme: legacy_openstates
+  identifier: CAL000527
+sources:
+- url: https://www.sandiego.gov/contact

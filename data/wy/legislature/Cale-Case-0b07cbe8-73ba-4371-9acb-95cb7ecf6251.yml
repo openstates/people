@@ -1,11 +1,16 @@
 id: ocd-person/0b07cbe8-73ba-4371-9acb-95cb7ecf6251
 name: Cale Case
+given_name: Cale
+family_name: Case
+email: Cale.Case@wyoleg.gov
+birth_date: 1900-01-01
+image: http://wyoleg.gov/LegislatorSummary/Photos/CaseCS25.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '25'
 contact_details:
 - note: District Office
   address: 787 S. 4th Street, Lander WY 82520
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/945
 - url: http://wyoleg.gov/Legislators/2021/R/945
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000005
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/945
 - url: http://wyoleg.gov/Legislators/2021/R/945
-image: http://wyoleg.gov/LegislatorSummary/Photos/CaseCS25.jpg
-birth_date: '1900-01-01'
-given_name: Cale
-family_name: Case
 extras:
   county: Fremont
   number_children: ''
@@ -28,7 +32,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 945
-other_identifiers:
-- identifier: WYL000005
-  scheme: legacy_openstates
-email: Cale.Case@wyoleg.gov

@@ -1,11 +1,15 @@
 id: ocd-person/e3b1be9c-b244-4466-9192-adc365a31cfb
 name: Viola Davis
+given_name: Viola
+family_name: Davis
+email: viola.davis@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/davis-viola-4947.jpg
 party:
 - name: Democratic
 roles:
-- district: '87'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '87'
 contact_details:
 - note: Capitol Office
   address: 404-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -19,12 +23,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4947&Session=27
 - url: https://www.legis.ga.gov/members/house/4947?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/davis-viola-4947.jpg
-family_name: Davis
-given_name: Viola
 extras:
   guid: 4947
   city: Stone Mountain
   georgia_id: 4947
   residence: Stone Mountain
-email: viola.davis@house.ga.gov

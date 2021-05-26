@@ -2,27 +2,27 @@ id: ocd-person/9194cb6b-4d18-48db-886e-6a9a326a2d04
 name: Allen Jaggi
 given_name: Allen
 family_name: Jaggi
+image: http://legisweb.state.wy.us/LegislatorSummary/photos/JaggiAH18.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '18'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-image: http://legisweb.state.wy.us/LegislatorSummary/photos/JaggiAH18.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '19'
 links:
 - url: http://legisweb.state.wy.us/LegislatorSummary/LegDetail.aspx?LegID=811
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000061
+- scheme: legacy_openstates
+  identifier: WYL000102
 sources:
 - url: http://legisweb.state.wy.us/LegislatorSummary/LegislatorList.aspx?strHouse=H&strStatus=N
 - url: http://legisweb.state.wy.us/LegislatorSummary/LegDetail.aspx?LegID=811
-other_identifiers:
-- identifier: WYL000061
-  scheme: legacy_openstates
-- identifier: WYL000102
-  scheme: legacy_openstates

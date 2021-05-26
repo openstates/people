@@ -2,19 +2,19 @@ id: ocd-person/2b861d6f-f18e-4662-a60b-29985cddff8d
 name: Matt Wingard
 given_name: Matt
 family_name: Wingard
+image: http://www.leg.state.or.us/wingard/member_photo.jpg
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.leg.state.or.us/wingard/member_photo.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '26'
 links:
 - url: http://www.leg.state.or.us/wingard
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000089
 sources:
 - url: http://www.leg.state.or.us/xml/members.xml
-other_identifiers:
-- identifier: ORL000089
-  scheme: legacy_openstates

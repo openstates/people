@@ -1,11 +1,15 @@
 id: ocd-person/1529b892-b3da-4958-bb3a-5bf04d7b5e0c
 name: Rob Bonta
+given_name: Rob
+family_name: Bonta
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD18-Bonta.jpg
 party:
 - name: Democratic
 roles:
-- district: '18'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0018
@@ -15,14 +19,10 @@ contact_details:
   voice: 510-286-1670
 links:
 - url: https://a18.asmdc.org
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD18&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD18&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000346
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD18-Bonta.jpg
-other_identifiers:
-- identifier: CAL000346
-  scheme: legacy_openstates
-given_name: Rob
-family_name: Bonta
-gender: Male

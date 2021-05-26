@@ -3,19 +3,19 @@ name: Eric R. Anderson
 given_name: Eric
 family_name: Anderson
 middle_name: R.
+image: http://legislature.idaho.gov/images/Anderson1.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legislature.idaho.gov/images/Anderson1.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '1'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000036
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000036
-  scheme: legacy_openstates

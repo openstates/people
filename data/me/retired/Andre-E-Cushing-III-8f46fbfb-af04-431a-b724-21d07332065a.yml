@@ -3,33 +3,33 @@ name: Andre E. Cushing III
 given_name: Andre
 family_name: Cushing
 middle_name: E.
+image: https://mainelegislature.org/images/logo.png
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: upper
-  start_date: '2013-01-01'
-  end_date: '2014-12-31'
-- district: '39'
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '10'
+- start_date: '2013-01-01'
+  end_date: '2014-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '33'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://mainelegislature.org/images/logo.png
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '39'
 links:
 - url: https://mainelegislature.org/senate/senator-andre-cushing/9360
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000074
+- scheme: legacy_openstates
+  identifier: MEL000209
+- scheme: legacy_openstates
+  identifier: MEL000291
 sources:
 - url: https://mainelegislature.org/senate/senator-andre-cushing/9360
-other_identifiers:
-- identifier: MEL000074
-  scheme: legacy_openstates
-- identifier: MEL000209
-  scheme: legacy_openstates
-- identifier: MEL000291
-  scheme: legacy_openstates

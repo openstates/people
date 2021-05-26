@@ -2,27 +2,27 @@ id: ocd-person/8687cd72-2ae8-4b3b-b42e-249f11926ce9
 name: Will Morgan
 given_name: Will
 family_name: Morgan
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/56B.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 40A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: 56B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 40A
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/56B.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 56B
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15268
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000146
+- scheme: legacy_openstates
+  identifier: MNL000447
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15268
-other_identifiers:
-- identifier: MNL000146
-  scheme: legacy_openstates
-- identifier: MNL000447
-  scheme: legacy_openstates

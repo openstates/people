@@ -2,21 +2,21 @@ id: ocd-person/6f893b1b-45f9-47fd-9be8-c92468d73fd6
 name: Stuart Spitzer
 given_name: Stuart
 family_name: Spitzer
+image: http://www.house.state.tx.us/photos/members/2885.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2018-12-31'
-image: http://www.house.state.tx.us/photos/members/2885.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '4'
 links:
 - url: http://www.house.state.tx.us/members/member-page/?district=4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000483
+- scheme: legacy_openstates
+  identifier: TXL000629
 sources:
 - url: http://www.house.state.tx.us/members/member-page/?district=4
-other_identifiers:
-- identifier: TXL000483
-  scheme: legacy_openstates
-- identifier: TXL000629
-  scheme: legacy_openstates

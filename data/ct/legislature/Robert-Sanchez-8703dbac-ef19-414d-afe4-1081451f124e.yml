@@ -1,11 +1,14 @@
 id: ocd-person/8703dbac-ef19-414d-afe4-1081451f124e
 name: Robert Sanchez
+given_name: Robert
+family_name: Sanchez
+email: Bobby.Sanchez@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '25'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3100;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-225-4807
 links:
 - url: http://www.housedems.ct.gov/Sanchez
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000061
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Sanchez
-email: Bobby.Sanchez@cga.ct.gov
 other_names:
 - name: Sanchez, Robert
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000061
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

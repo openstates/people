@@ -1,14 +1,18 @@
 id: ocd-person/aa80fb3b-9add-463b-bfba-fe51e3409212
 name: Roxanne J. Persaud
+given_name: Roxanne J.
+family_name: Persaud
+email: persaud@nysenate.gov
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/03-21-17_persaud_hs-018.jpg?itok=ALiZNeZt
 party:
 - name: Democratic
 roles:
-- district: '19'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: upper
+  district: '19'
 contact_details:
-- address: 409 Legislative Office Building;Albany,, NY 12247
-  note: Capitol Office
+- note: Capitol Office
+  address: 409 Legislative Office Building;Albany,, NY 12247
   voice: 518-455-2788
 - note: District Office
   address: 1222 East 96th Street;Brooklyn,, NY 11236
@@ -16,18 +20,14 @@ contact_details:
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/roxanne-j-persaud/contact
-sources:
-- url: http://www.nysenate.gov/senators/roxanne-j-persaud/contact
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/03-21-17_persaud_hs-018.jpg?itok=ALiZNeZt
-other_identifiers:
-- identifier: NYL000352
-  scheme: legacy_openstates
-- identifier: NYL000420
-  scheme: legacy_openstates
-given_name: Roxanne J.
-family_name: Persaud
-email: persaud@nysenate.gov
-ids:
-  twitter: SenatorPersaud
 other_names:
 - name: Roxanne J Persaud
+ids:
+  twitter: SenatorPersaud
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000352
+- scheme: legacy_openstates
+  identifier: NYL000420
+sources:
+- url: http://www.nysenate.gov/senators/roxanne-j-persaud/contact

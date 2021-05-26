@@ -1,11 +1,15 @@
 id: ocd-person/024ce6f2-cbc1-4331-9466-7b57e52cdb8c
 name: Cristina Garcia
+given_name: Cristina
+family_name: Garcia
+gender: Female
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/asm-c-garcia.jpg
 party:
 - name: Democratic
 roles:
-- district: '58'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '58'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0058
@@ -15,14 +19,10 @@ contact_details:
   voice: 562-861-5803
 links:
 - url: https://a58.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD58&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD58&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000366
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/asm-c-garcia.jpg
-other_identifiers:
-- identifier: CAL000366
-  scheme: legacy_openstates
-given_name: Cristina
-family_name: Garcia
-gender: Female

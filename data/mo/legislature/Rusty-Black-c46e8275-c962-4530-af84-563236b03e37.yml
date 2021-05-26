@@ -1,19 +1,28 @@
 id: ocd-person/c46e8275-c962-4530-af84-563236b03e37
 name: Rusty Black
+given_name: Rusty
+family_name: Black
+email: Rusty.Black@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1933
 party:
 - name: Republican
 roles:
-- district: '7'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '7'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 112; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 112; Jefferson
+    City MO 65101
   voice: 573-751-2917
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=7
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=007
+other_names:
+- name: Black, Rusty
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000447
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=7
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Rusty
   last_name: Black
-other_identifiers:
-- identifier: MOL000447
-  scheme: legacy_openstates
-given_name: Rusty
-family_name: Black
-email: Rusty.Black@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1933
-other_names:
-- name: Black, Rusty

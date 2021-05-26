@@ -1,11 +1,14 @@
 id: ocd-person/bdea553b-35fa-4076-88e8-fd995d2d7631
 name: Paul M. Formica
+given_name: Paul
+family_name: Formica
+email: Paul.Formica@cga.ct.gov
 party:
 - name: Republican
 roles:
-- district: '20'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2705;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 11 South Lee Road;Niantic, CT 06357
 links:
 - url: http://www.ctsenaterepublicans.com/home-Formica
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000298
-  scheme: legacy_openstates
-given_name: Paul
-family_name: Formica
-email: Paul.Formica@cga.ct.gov
 other_names:
 - name: Formica, Paul M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000298
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

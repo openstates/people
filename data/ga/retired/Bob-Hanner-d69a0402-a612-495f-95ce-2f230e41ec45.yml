@@ -2,19 +2,19 @@ id: ocd-person/d69a0402-a612-495f-95ce-2f230e41ec45
 name: Bob Hanner
 given_name: Bob
 family_name: Hanner
+image: http://www1.legis.ga.gov/legis/2011_12/house/images/members_web_images/hannerBob.jpg
 party:
 - name: Republican
 roles:
-- district: '148'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www1.legis.ga.gov/legis/2011_12/house/images/members_web_images/hannerBob.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '148'
 links:
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/hannerBob.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000119
 sources:
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/hannerBob.htm
-other_identifiers:
-- identifier: GAL000119
-  scheme: legacy_openstates

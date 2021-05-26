@@ -1,11 +1,15 @@
 id: ocd-person/bec0f8f6-7f4c-442b-be25-14e2a2c1f5cb
 name: Willie Bailey
+given_name: Willie
+family_name: Bailey
+email: wbailey@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/bailey.jpg
 party:
 - name: Democratic
 roles:
-- district: '49'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '49'
 contact_details:
 - note: Capitol Office
   address: Room 100-C;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 662-335-5310
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bailey.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000067
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/bailey.xml
-image: http://billstatus.ls.state.ms.us/members/house/bailey.jpg
 extras:
   org_info: Representative Bailey is affiliated with the Tougaloo College National
     Alumni Association and the Magnolia and Mississippi Bar Associations. He is a
     former judge.
-other_identifiers:
-- identifier: MSL000067
-  scheme: legacy_openstates
-given_name: Willie
-family_name: Bailey
-email: wbailey@house.ms.gov

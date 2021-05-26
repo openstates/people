@@ -1,14 +1,16 @@
 id: ocd-person/74b2c980-7fce-46b9-98dc-356240e18c2e
 name: Maria Perez
+given_name: Maria
+family_name: Perez
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 23
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 23
 contact_details:
-- address: Milford, NH 03055
-  note: District Office
+- note: District Office
+  address: Milford, NH 03055
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 sources:
@@ -17,5 +19,3 @@ extras:
   first_name: Maria
   last_name: Perez
   middle_name: ''
-given_name: Maria
-family_name: Perez

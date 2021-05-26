@@ -3,27 +3,27 @@ name: Janice M Fisher
 given_name: Janice
 family_name: Fisher
 middle_name: M
+image: http://le.utah.gov/images/legislator/fishejm.jpg
 party:
 - name: Democratic
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '30'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://le.utah.gov/images/legislator/fishejm.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '29'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=FISHEJM
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000052
+- scheme: legacy_openstates
+  identifier: UTL000127
 sources:
 - url: http://le.utah.gov/house2/representatives.jsp
 - url: http://le.utah.gov/house2/detail.jsp?i=FISHEJM
-other_identifiers:
-- identifier: UTL000052
-  scheme: legacy_openstates
-- identifier: UTL000127
-  scheme: legacy_openstates

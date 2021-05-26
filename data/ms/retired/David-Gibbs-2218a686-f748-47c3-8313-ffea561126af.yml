@@ -2,19 +2,19 @@ id: ocd-person/2218a686-f748-47c3-8313-ffea561126af
 name: David Gibbs
 given_name: David
 family_name: Gibbs
+image: http://billstatus.ls.state.ms.us/members/house/gibbs.jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/gibbs.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '36'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/gibbs.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000054
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/gibbs.xml
-other_identifiers:
-- identifier: MSL000054
-  scheme: legacy_openstates

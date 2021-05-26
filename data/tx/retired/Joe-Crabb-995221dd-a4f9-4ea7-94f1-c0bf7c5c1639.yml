@@ -2,19 +2,19 @@ id: ocd-person/995221dd-a4f9-4ea7-94f1-c0bf7c5c1639
 name: Joe Crabb
 given_name: Joe
 family_name: Crabb
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2605.jpg
 party:
 - name: Republican
 roles:
-- district: '127'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2605.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '127'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000238
+- scheme: legacy_openstates
+  identifier: TXL000056
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2605
-other_identifiers:
-- identifier: TXL000238
-  scheme: legacy_openstates
-- identifier: TXL000056
-  scheme: legacy_openstates

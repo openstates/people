@@ -1,22 +1,22 @@
 id: ocd-person/46e099e5-8830-436d-b492-3fac2cee8e53
 name: Jenny Eck
+given_name: Jenny
+family_name: Eck
 party:
 - name: Democratic
 roles:
-- district: '79'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '79'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4821
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4821
+  note: legislator page
 other_identifiers:
-- identifier: MTL000182
-  scheme: legacy_openstates
-- identifier: MTL000338
-  scheme: legacy_openstates
-given_name: Jenny
-family_name: Eck
+- scheme: legacy_openstates
+  identifier: MTL000182
+- scheme: legacy_openstates
+  identifier: MTL000338
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

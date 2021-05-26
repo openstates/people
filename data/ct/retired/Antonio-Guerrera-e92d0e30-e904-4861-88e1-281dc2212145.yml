@@ -1,18 +1,18 @@
 id: ocd-person/e92d0e30-e904-4861-88e1-281dc2212145
 name: Antonio Guerrera
+given_name: Antonio
+family_name: Guerrera
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '29'
 links:
 - url: http://www.housedems.ct.gov/Guerrera
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000065
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000065
-  scheme: legacy_openstates
-given_name: Antonio
-family_name: Guerrera

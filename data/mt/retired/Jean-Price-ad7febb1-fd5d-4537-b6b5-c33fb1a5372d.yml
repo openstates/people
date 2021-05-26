@@ -1,22 +1,22 @@
 id: ocd-person/ad7febb1-fd5d-4537-b6b5-c33fb1a5372d
 name: Jean Price
+given_name: Jean
+family_name: Price
 party:
 - name: Democratic
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '24'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4767
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4767
+  note: legislator page
 other_identifiers:
-- identifier: MTL000122
-  scheme: legacy_openstates
-- identifier: MTL000292
-  scheme: legacy_openstates
-given_name: Jean
-family_name: Price
+- scheme: legacy_openstates
+  identifier: MTL000122
+- scheme: legacy_openstates
+  identifier: MTL000292
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

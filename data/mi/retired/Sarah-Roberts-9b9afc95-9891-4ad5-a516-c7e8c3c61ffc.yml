@@ -2,19 +2,19 @@ id: ocd-person/9b9afc95-9891-4ad5-a516-c7e8c3c61ffc
 name: Sarah Roberts
 given_name: Sarah
 family_name: Roberts
+image: http://media.housedems.com/media_cache/9c/4d/dd/aa/47/f4/2f/9d/63/c5/a6/82/54/b6/21/2f/fb/d5/fb/7e/Roberts_Headshot.jpg
 party:
 - name: Democratic
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://media.housedems.com/media_cache/9c/4d/dd/aa/47/f4/2f/9d/63/c5/a6/82/54/b6/21/2f/fb/d5/fb/7e/Roberts_Headshot.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '18'
 links:
 - url: http://housedems.com/state-rep-sarah-roberts
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000203
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000203
-  scheme: legacy_openstates

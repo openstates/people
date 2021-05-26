@@ -2,26 +2,26 @@ id: ocd-person/8122eb0c-c13b-4922-b7ab-f54561605dfd
 name: Barbara McGuire
 given_name: Barbara
 family_name: McGuire
+image: http://www.azleg.gov/alisImages/MemberPhotos/52leg/Senate/MCGUIRE.gif
 party:
 - name: Democratic
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '8'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+  district: '23'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/52leg/Senate/MCGUIRE.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '8'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=8&Legislature=52&Session_ID=115
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000070
+- scheme: legacy_openstates
+  identifier: AZL000227
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=S
-other_identifiers:
-- identifier: AZL000070
-  scheme: legacy_openstates
-- identifier: AZL000227
-  scheme: legacy_openstates

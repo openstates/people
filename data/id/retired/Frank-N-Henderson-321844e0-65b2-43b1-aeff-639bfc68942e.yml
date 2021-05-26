@@ -3,26 +3,26 @@ name: Frank N. Henderson
 given_name: Frank
 family_name: Henderson
 middle_name: N.
+image: http://legislature.idaho.gov/images/Henderson29.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '3'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Henderson29.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '5'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=29
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000066
+- scheme: legacy_openstates
+  identifier: IDL000157
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000066
-  scheme: legacy_openstates
-- identifier: IDL000157
-  scheme: legacy_openstates

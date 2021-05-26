@@ -1,17 +1,24 @@
 id: ocd-person/dfb24654-ac46-4b98-9600-d606c093e8f0
 name: Dixon M. Pitcher
+given_name: Dixon
+family_name: Pitcher
+image: https://le.utah.gov/images/legislator/PITCHDM.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '10'
 links:
 - url: http://house.utah.gov/rep/PITCHDM
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000086
+- scheme: legacy_openstates
+  identifier: UTL000254
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/PITCHDM.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIPITCHDM1.pdf
@@ -20,10 +27,3 @@ extras:
   - http://le.utah.gov/house2/CofI/dpitcher.pdf
   - http://le.utah.gov/house2/CofI/PITCHDM.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409546
-other_identifiers:
-- identifier: UTL000086
-  scheme: legacy_openstates
-- identifier: UTL000254
-  scheme: legacy_openstates
-given_name: Dixon
-family_name: Pitcher

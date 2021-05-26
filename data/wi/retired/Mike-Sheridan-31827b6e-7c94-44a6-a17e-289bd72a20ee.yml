@@ -5,13 +5,13 @@ family_name: Sheridan
 party:
 - name: Democratic
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '44'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000418
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=44
-other_identifiers:
-- identifier: WIL000418
-  scheme: legacy_openstates

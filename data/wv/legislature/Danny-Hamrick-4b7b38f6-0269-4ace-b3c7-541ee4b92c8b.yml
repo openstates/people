@@ -1,11 +1,15 @@
 id: ocd-person/4b7b38f6-0269-4ace-b3c7-541ee4b92c8b
 name: Danny Hamrick
+given_name: Danny
+family_name: Hamrick
+email: danny.hamrick@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/hamrick_danny.jpg
 party:
 - name: Republican
 roles:
-- district: '48'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '48'
 contact_details:
 - note: Capitol Office
   address: Room 224E, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,12 +19,8 @@ contact_details:
   voice: 304-250-9848
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Hamrick
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000201
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Hamrick
-image: http://www.legis.state.wv.us/images/members/2021/house/hamrick_danny.jpg
-other_identifiers:
-- identifier: WVL000201
-  scheme: legacy_openstates
-given_name: Danny
-family_name: Hamrick
-email: danny.hamrick@wvhouse.gov

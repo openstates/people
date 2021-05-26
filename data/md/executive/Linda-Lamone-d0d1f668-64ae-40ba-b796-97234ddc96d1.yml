@@ -2,20 +2,19 @@ id: ocd-person/d0d1f668-64ae-40ba-b796-97234ddc96d1
 name: Linda Lamone
 given_name: Linda
 family_name: Lamone
-roles:
-- end_date: '2021-12-31'
-  jurisdiction: ocd-jurisdiction/country:us/state:md/government
-  type: chief election officer
-contact_details:
-- note: Capitol Office
-  address: 'P.O. Box 6486; ; Annapolis, MD 21401-0486 '
-  fax: 410-974-2019
-  voice: 410-269-2840
-ids: {}
-sources:
-- url: https://elections.maryland.gov/about/contact.html
-links:
-- url: https://elections.maryland.gov/about/contact.html
+email: linda.lamone@maryland.gov
 party:
 - name: Independent
-email: linda.lamone@maryland.gov
+roles:
+- end_date: '2021-12-31'
+  type: chief election officer
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 6486; ; Annapolis, MD 21401-0486
+  voice: 410-269-2840
+  fax: 410-974-2019
+links:
+- url: https://elections.maryland.gov/about/contact.html
+sources:
+- url: https://elections.maryland.gov/about/contact.html

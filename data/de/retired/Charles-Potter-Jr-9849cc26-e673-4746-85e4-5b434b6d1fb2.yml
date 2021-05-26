@@ -1,35 +1,35 @@
 id: ocd-person/9849cc26-e673-4746-85e4-5b434b6d1fb2
 name: Charles Potter Jr.
+given_name: Charles
+family_name: Potter
+image: https://legis.delaware.gov/images/default-source/default-album/CharlesPotter.jpg?sfvrsn=0
 party:
 - name: Democratic
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '1'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '1'
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=37
+- url: https://legis.delaware.gov/LegislatorDetail?personId=37
+  note: legislator page
 - url: http://legis.delaware.gov/legislature.nsf/52087754ec8b9261852569c10055df42/5999f83ac2e4a5dd852569d800535df0?OpenDocument&TableRow=1.5.5
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: DEL000136
+- scheme: legacy_openstates
+  identifier: DEL000158
+- scheme: legacy_openstates
+  identifier: DEL000112
+- scheme: openstates
+  identifier: ocd-person/d5ffa6b1-a135-4e58-b6be-4aa4e8214ae8
 sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/House
+- url: https://legis.delaware.gov/House
+  note: legislator list page
 - url: http://legis.delaware.gov/legislature.nsf/FSMain?OpenFrameset&Frame=right&src=/legislature.nsf/52087754EC8B9261852569C10055DF42/FC7D650CF7BC468085257E0E005D8DA9
 - url: http://legis.delaware.gov/Legislature.nsf/Reps?openview
-image: https://legis.delaware.gov/images/default-source/default-album/CharlesPotter.jpg?sfvrsn=0
-other_identifiers:
-- identifier: DEL000136
-  scheme: legacy_openstates
-- identifier: DEL000158
-  scheme: legacy_openstates
-- identifier: DEL000112
-  scheme: legacy_openstates
-- identifier: ocd-person/d5ffa6b1-a135-4e58-b6be-4aa4e8214ae8
-  scheme: openstates
-given_name: Charles
-family_name: Potter

@@ -1,19 +1,28 @@
 id: ocd-person/bd5e546a-fd42-4047-9bc2-5bb7a68d6fda
 name: Dan Shaul
+given_name: Dan
+family_name: Shaul
+email: Dan.Shaul@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1792
 party:
 - name: Republican
 roles:
-- district: '113'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '113'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 313-1; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 313-1; Jefferson
+    City MO 65101
   voice: 573-751-2504
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=113
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=113
+other_names:
+- name: Shaul, Dan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000403
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=113
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Dan
   last_name: Shaul
-other_identifiers:
-- identifier: MOL000403
-  scheme: legacy_openstates
-given_name: Dan
-family_name: Shaul
-email: Dan.Shaul@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1792
-other_names:
-- name: Shaul, Dan

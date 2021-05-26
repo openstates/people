@@ -2,21 +2,21 @@ id: ocd-person/b89c116a-7656-422a-aee3-0618588a3bd7
 name: Emily Kane
 given_name: Emily
 family_name: Kane
+image: http://www.nmlegis.gov/lcs/graphics/photos/HKANE.jpg
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://www.nmlegis.gov/lcs/graphics/photos/HKANE.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '15'
 links:
 - url: http://www.nmlegis.gov/lcs/legislator_details.aspx?SPONCODE=HKANE
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000149
+- scheme: legacy_openstates
+  identifier: NML000226
 sources:
 - url: http://www.nmlegis.gov/lcs/legislator_details.aspx?SPONCODE=HKANE
-other_identifiers:
-- identifier: NML000149
-  scheme: legacy_openstates
-- identifier: NML000226
-  scheme: legacy_openstates

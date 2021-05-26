@@ -1,11 +1,15 @@
 id: ocd-person/ce7cb314-aa41-43a3-a875-9204f3a10beb
 name: Mickey Stephens
+given_name: Mickey
+family_name: Stephens
+email: mickey.stephens@gmail.com
+image: https://www.legis.ga.gov/api/images/default-source/portraits/stephens-mickey-743.jpg
 party:
 - name: Democratic
 roles:
-- district: '165'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '165'
 contact_details:
 - note: Capitol Office
   address: 604-A Coverdell Legislative Office Building;Atlanta, Ga 30334
@@ -16,21 +20,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=743&Session=27
 - url: https://www.legis.ga.gov/members/house/743?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000210
+- scheme: legacy_openstates
+  identifier: GAL000358
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=743&Session=27
 - url: https://www.legis.ga.gov/members/house/743?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/stephens-mickey-743.jpg
-family_name: Stephens
-given_name: Mickey
 extras:
   guid: 743
   city: Savannah
   georgia_id: 743
   residence: Savannah
-other_identifiers:
-- identifier: GAL000210
-  scheme: legacy_openstates
-- identifier: GAL000358
-  scheme: legacy_openstates
-email: mickey.stephens@gmail.com

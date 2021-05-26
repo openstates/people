@@ -1,11 +1,15 @@
 id: ocd-person/059c0e54-cc7b-4605-aee6-58388026a2fb
 name: Sheila Nelson
+given_name: Sheila
+family_name: Nelson
+email: sheila.nelson@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/nelson-sheila-4903.jpg
 party:
 - name: Democratic
 roles:
-- district: '125'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '125'
 contact_details:
 - note: Capitol Office
   address: 511-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4903&Session=27
 - url: https://www.legis.ga.gov/members/house/4903?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000459
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4903&Session=27
 - url: https://www.legis.ga.gov/members/house/4903?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/nelson-sheila-4903.jpg
-family_name: Nelson
-given_name: Sheila
 extras:
   guid: 4903
   city: Augusta
   georgia_id: 4903
   residence: Augusta
-other_identifiers:
-- identifier: GAL000459
-  scheme: legacy_openstates
-email: sheila.nelson@house.ga.gov

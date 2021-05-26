@@ -1,11 +1,15 @@
 id: ocd-person/0f5a9273-2fc6-458f-af59-b75070a1dc76
 name: Carolyn Hugley
+given_name: Carolyn
+family_name: Hugley
+email: carolyn.hugley@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/hugley-carolyn-133.jpg
 party:
 - name: Democratic
 roles:
-- district: '136'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '136'
 contact_details:
 - note: Capitol Office
   address: 404-G Coverdell Legislative Office Building;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=133&Session=27
 - url: https://www.legis.ga.gov/members/house/133?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000138
+- scheme: legacy_openstates
+  identifier: GAL000309
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=133&Session=27
 - url: https://www.legis.ga.gov/members/house/133?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/hugley-carolyn-133.jpg
-family_name: Hugley
-given_name: Carolyn
 extras:
   guid: 133
   city: Columbus
   georgia_id: 133
   residence: Columbus
-other_identifiers:
-- identifier: GAL000138
-  scheme: legacy_openstates
-- identifier: GAL000309
-  scheme: legacy_openstates
-email: carolyn.hugley@house.ga.gov

@@ -1,11 +1,14 @@
 id: ocd-person/12835342-bb95-428a-ace3-78c51c3e8443
 name: Dave W. Yaccarino
+given_name: Dave
+family_name: Yaccarino
+email: dave.yaccarino@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '87'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '87'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4057;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-980-0030
 links:
 - url: http://www.cthousegop.com/Yaccarino/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000123
-  scheme: legacy_openstates
-given_name: Dave
-family_name: Yaccarino
-email: dave.yaccarino@housegop.ct.gov
 other_names:
 - name: Yaccarino, Dave W.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000123
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

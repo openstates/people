@@ -2,19 +2,19 @@ id: ocd-person/b0e91e7a-a1d1-42f9-8e9e-0b46023f322d
 name: Brian Aldridge
 given_name: Brian
 family_name: Aldridge
+image: http://billstatus.ls.state.ms.us/members/house/aldridge.jpg
 party:
 - name: Republican
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/aldridge.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '17'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/aldridge.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000057
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/aldridge.xml
-other_identifiers:
-- identifier: MSL000057
-  scheme: legacy_openstates

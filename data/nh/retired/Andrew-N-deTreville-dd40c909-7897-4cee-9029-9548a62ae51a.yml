@@ -6,13 +6,13 @@ middle_name: N.
 party:
 - name: Democratic
 roles:
-- district: Merrimack 18
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: '2017-01-01'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 18
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001461
 sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- identifier: NHL001461
-  scheme: legacy_openstates

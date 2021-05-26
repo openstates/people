@@ -1,11 +1,16 @@
 id: ocd-person/6ff4eff9-e68c-42a1-9aa5-b964daa37a89
 name: Bob Nicholas
+given_name: Bob
+family_name: Nicholas
+email: Bob.Nicholas@wyoleg.gov
+birth_date: 1957-10-14
+image: http://wyoleg.gov/LegislatorSummary/Photos/NicholasH8.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '8'
 contact_details:
 - note: District Office
   address: 6225 Mountainview Drive, Cheyenne WY 82009
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1980
 - url: http://wyoleg.gov/Legislators/2021/R/1980
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000073
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1980
 - url: http://wyoleg.gov/Legislators/2021/R/1980
-image: http://wyoleg.gov/LegislatorSummary/Photos/NicholasH8.jpg
-birth_date: '1957-10-14'
-given_name: Bob
-family_name: Nicholas
 extras:
   county: Laramie
   education:
@@ -35,7 +39,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1980
-other_identifiers:
-- identifier: WYL000073
-  scheme: legacy_openstates
-email: Bob.Nicholas@wyoleg.gov

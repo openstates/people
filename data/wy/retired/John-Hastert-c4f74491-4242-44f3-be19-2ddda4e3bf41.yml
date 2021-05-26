@@ -1,20 +1,23 @@
 id: ocd-person/c4f74491-4242-44f3-be19-2ddda4e3bf41
 name: John Hastert
+given_name: John
+family_name: Hastert
+birth_date: 1958-11-20
+image: http://wyoleg.gov/LegislatorSummary/Photos/HastertJS13.jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: upper
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '13'
 links:
 - url: http://wyoleg.gov/Legislators/2018/D/721
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000014
 sources:
 - url: http://wyoleg.gov/Legislators/2018/D/721
-image: http://wyoleg.gov/LegislatorSummary/Photos/HastertJS13.jpg
-birth_date: '1958-11-20'
-given_name: John
-family_name: Hastert
 extras:
   county: Sweetwater
   education:
@@ -36,6 +39,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 721
-other_identifiers:
-- identifier: WYL000014
-  scheme: legacy_openstates

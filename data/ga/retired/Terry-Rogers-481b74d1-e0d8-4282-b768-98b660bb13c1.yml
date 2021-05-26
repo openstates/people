@@ -1,23 +1,23 @@
 id: ocd-person/481b74d1-e0d8-4282-b768-98b660bb13c1
 name: Terry Rogers
+given_name: Terry
+family_name: Rogers
+email: terry.rogers@house.ga.gov
+image: http://www.house.ga.gov/SiteCollectionImages/RogersTerry796.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '10'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=796&Session=27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000235
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=796&Session=27
-image: http://www.house.ga.gov/SiteCollectionImages/RogersTerry796.jpg
-family_name: Rogers
-given_name: Terry
 extras:
   guid: 796
-other_identifiers:
-- identifier: GAL000235
-  scheme: legacy_openstates
-email: terry.rogers@house.ga.gov

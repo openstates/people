@@ -1,22 +1,22 @@
 id: ocd-person/e2af4f68-83ed-44cf-9dcb-b1696b98e199
 name: Tom Cox
-party:
-- name: Republican
-roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: http://www.kslegislature.org/li/b2019_20/members/rep_cox_tom_1/
-sources:
-- url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_cox_tom_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_cox_tom_1.jpg
-extras:
-  occupation: Small Business Owner
-other_identifiers:
-- identifier: KSL000366
-  scheme: legacy_openstates
 given_name: Tom
 family_name: Cox
 email: Tom.Cox@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_cox_tom_1.jpg
+party:
+- name: Republican
+roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  district: '17'
+links:
+- url: http://www.kslegislature.org/li/b2019_20/members/rep_cox_tom_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000366
+sources:
+- url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_cox_tom_1
+extras:
+  occupation: Small Business Owner

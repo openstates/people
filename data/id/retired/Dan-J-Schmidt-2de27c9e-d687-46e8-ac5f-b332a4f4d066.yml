@@ -3,26 +3,26 @@ name: Dan J. Schmidt
 given_name: Dan
 family_name: Schmidt
 middle_name: J.
+image: http://legislature.idaho.gov/images/Schmidt1165.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '5'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Schmidt1165.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '6'
 links:
 - url: http://legislature.idaho.gov/senate/membershipSingle.cfm?ID=1165
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000026
+- scheme: legacy_openstates
+  identifier: IDL000133
 sources:
 - url: http://legislature.idaho.gov/senate/membership.cfm
-other_identifiers:
-- identifier: IDL000026
-  scheme: legacy_openstates
-- identifier: IDL000133
-  scheme: legacy_openstates

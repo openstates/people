@@ -1,11 +1,15 @@
 id: ocd-person/38d590c5-20ff-42d5-b9dd-af77664213cf
 name: Karl Gibbs
+given_name: Karl
+family_name: Gibbs
+email: kgibbs@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/gibbs_(36th).jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '36'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 662-494-3669
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/gibbs_(36th).xml
-sources:
-- url: http://billstatus.ls.state.ms.us/members/house/gibbs_(36th).xml
-image: http://billstatus.ls.state.ms.us/members/house/gibbs_(36th).jpg
-extras:
-  org_info: Representative Gibbs is affiliated with The American Legion.
-other_identifiers:
-- identifier: MSL000233
-  scheme: legacy_openstates
-given_name: Karl
-family_name: Gibbs
-email: kgibbs@house.ms.gov
 other_names:
 - name: Gibbs (36th)
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000233
+sources:
+- url: http://billstatus.ls.state.ms.us/members/house/gibbs_(36th).xml
+extras:
+  org_info: Representative Gibbs is affiliated with The American Legion.

@@ -2,21 +2,21 @@ id: ocd-person/accb0ceb-233a-4321-adc1-8337cd57ab38
 name: Mike Villarreal
 given_name: Mike
 family_name: Villarreal
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A4800.jpg
 party:
 - name: Democratic
 roles:
-- district: '123'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2016-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A4800.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '123'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A4800
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000358
+- scheme: legacy_openstates
+  identifier: TXL000176
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A4800
-other_identifiers:
-- identifier: TXL000358
-  scheme: legacy_openstates
-- identifier: TXL000176
-  scheme: legacy_openstates

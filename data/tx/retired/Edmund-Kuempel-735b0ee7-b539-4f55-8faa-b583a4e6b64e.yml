@@ -2,19 +2,19 @@ id: ocd-person/735b0ee7-b539-4f55-8faa-b583a4e6b64e
 name: Edmund Kuempel
 given_name: Edmund
 family_name: Kuempel
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A3450.jpg
 party:
 - name: Republican
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A3450.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '44'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000298
+- scheme: legacy_openstates
+  identifier: TXL000116
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A3450
-other_identifiers:
-- identifier: TXL000298
-  scheme: legacy_openstates
-- identifier: TXL000116
-  scheme: legacy_openstates

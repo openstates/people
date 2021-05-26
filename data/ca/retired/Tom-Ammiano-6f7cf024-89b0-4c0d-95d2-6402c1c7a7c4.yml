@@ -2,28 +2,28 @@ id: ocd-person/6f7cf024-89b0-4c0d-95d2-6402c1c7a7c4
 name: Tom Ammiano
 given_name: Tom
 family_name: Ammiano
+image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/Ammiano_2013_updated.jpg?1392848906
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '13'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/Ammiano_2013_updated.jpg?1392848906
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '17'
 links:
 - url: http://asmdc.org/members/a17
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000104
+- scheme: legacy_openstates
+  identifier: CAL000216
+- scheme: legacy_openstates
+  identifier: CAL000339
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_identifiers:
-- identifier: CAL000104
-  scheme: legacy_openstates
-- identifier: CAL000216
-  scheme: legacy_openstates
-- identifier: CAL000339
-  scheme: legacy_openstates

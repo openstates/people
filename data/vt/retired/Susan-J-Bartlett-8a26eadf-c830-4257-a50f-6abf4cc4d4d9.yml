@@ -6,13 +6,13 @@ middle_name: J
 party:
 - name: Democratic
 roles:
-- district: Lamoille
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Lamoille
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000003
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000003
-  scheme: legacy_openstates

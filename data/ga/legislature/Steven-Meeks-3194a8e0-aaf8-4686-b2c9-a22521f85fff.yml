@@ -1,11 +1,15 @@
 id: ocd-person/3194a8e0-aaf8-4686-b2c9-a22521f85fff
 name: Steven Meeks
+given_name: Steven
+family_name: Meeks
+email: steven.meeks@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/meeks-steven-4961.jpg
 party:
 - name: Republican
 roles:
-- district: '178'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '178'
 contact_details:
 - note: Capitol Office
   address: 501-E Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -19,12 +23,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4961&Session=27
 - url: https://www.legis.ga.gov/members/house/4961?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/meeks-steven-4961.jpg
-family_name: Meeks
-given_name: Steven
 extras:
   guid: 4961
   city: Screven
   georgia_id: 4961
   residence: Screven
-email: steven.meeks@house.ga.gov

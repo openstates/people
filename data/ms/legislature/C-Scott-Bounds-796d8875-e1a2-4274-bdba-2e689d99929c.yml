@@ -1,11 +1,15 @@
 id: ocd-person/796d8875-e1a2-4274-bdba-2e689d99929c
 name: C. Scott Bounds
+given_name: C. Scott
+family_name: Bounds
+email: sbounds@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/bounds.jpg
 party:
 - name: Republican
 roles:
-- district: '44'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '44'
 contact_details:
 - note: Capitol Office
   address: Room 115-B;P. O. Box 1018;Jackson, MS 39215
@@ -15,9 +19,11 @@ contact_details:
   voice: 601-656-1765
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bounds.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000117
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/bounds.xml
-image: http://billstatus.ls.state.ms.us/members/house/bounds.jpg
 extras:
   org_info: Representative Bounds is a member of the NRA, Wildlife Mississippi, the
     Mississippi Wildlife Federation, Neshoba County Forestry Assn., Neshoba County
@@ -25,9 +31,3 @@ extras:
     Director of the the Neshoba County Fair Association.  Representative Bounds also
     serves on the National Association of Sportsmen's Caucus Executive Council and
     serves as Co-Chair of the Mississippi Legislative Sportsmen's Caucus.
-other_identifiers:
-- identifier: MSL000117
-  scheme: legacy_openstates
-given_name: C. Scott
-family_name: Bounds
-email: sbounds@house.ms.gov

@@ -1,18 +1,18 @@
 id: ocd-person/968dc75a-c45d-4e5c-a39a-59bdf7e89ba8
 name: Sam Belsito
+given_name: Sam
+family_name: Belsito
 party:
 - name: Republican
 roles:
-- district: '53'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '53'
 links:
 - url: http://www.cthousegop.com/Belsito/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000238
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000238
-  scheme: legacy_openstates
-given_name: Sam
-family_name: Belsito

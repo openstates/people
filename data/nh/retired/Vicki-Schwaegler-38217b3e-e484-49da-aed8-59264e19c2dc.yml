@@ -1,14 +1,19 @@
 id: ocd-person/38217b3e-e484-49da-aed8-59264e19c2dc
 name: Vicki Schwaegler
+given_name: Vicki
+family_name: Schwaegler
 party:
 - name: Republican
 roles:
-- district: Grafton 3
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Grafton 3
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001404
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408722
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -16,8 +21,3 @@ extras:
   first_name: Vicki
   last_name: Schwaegler
   middle_name: ''
-other_identifiers:
-- identifier: NHL001404
-  scheme: legacy_openstates
-given_name: Vicki
-family_name: Schwaegler

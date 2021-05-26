@@ -1,11 +1,14 @@
 id: ocd-person/79d4059c-5faa-443f-a842-7b494ea2d57e
 name: Devin R. Carney
+given_name: Devin
+family_name: Carney
+email: Devin.Carney@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '23'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '23'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2304;Hartford, CT 06106
@@ -14,15 +17,12 @@ contact_details:
   address: 99 Grassy Hill Road;Old Lyme, CT 06371
 links:
 - url: http://www.cthousegop.com/Carney/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000293
-  scheme: legacy_openstates
-- identifier: CTL000300
-  scheme: legacy_openstates
-given_name: Devin
-family_name: Carney
-email: Devin.Carney@housegop.ct.gov
 other_names:
 - name: Carney, Devin R.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000293
+- scheme: legacy_openstates
+  identifier: CTL000300
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

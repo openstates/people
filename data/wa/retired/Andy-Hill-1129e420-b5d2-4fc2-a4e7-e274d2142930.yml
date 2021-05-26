@@ -2,19 +2,19 @@ id: ocd-person/1129e420-b5d2-4fc2-a4e7-e274d2142930
 name: Andy Hill
 given_name: Andy
 family_name: Hill
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/hill.jpg
 party:
 - name: Republican
 roles:
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/hill.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '45'
 links:
 - url: http://AndyHill.src.wastateleg.org/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000019
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-other_identifiers:
-- identifier: WAL000019
-  scheme: legacy_openstates

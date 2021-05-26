@@ -1,11 +1,15 @@
 id: ocd-person/361c95de-b7b2-434f-bdea-89fbb3896fea
 name: Strom Peterson
+given_name: Strom
+family_name: Peterson
+email: strom.peterson@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/peterson.jpg
 party:
 - name: Democratic
 roles:
-- district: '21'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '21'
 contact_details:
 - note: Capitol Office
   address: 324 John L. O'Brien Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Strom-Peterson/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Peterson/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000217
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/peterson.jpg
-other_identifiers:
-- identifier: WAL000217
-  scheme: legacy_openstates
-given_name: Strom
-family_name: Peterson
-email: strom.peterson@leg.wa.gov

@@ -1,23 +1,23 @@
 id: ocd-person/6ec9685b-cdde-477f-bfb0-870ab4f0ef51
 name: Bob Wooley
+given_name: Bob
+family_name: Wooley
+image: http://www.nmlegis.gov/Images/Legislators/House/HWOOL.jpg
 party:
 - name: Republican
 roles:
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '66'
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HWOOL
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000108
+- scheme: legacy_openstates
+  identifier: NML000276
+- scheme: legacy_openstates
+  identifier: NML000365
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HWOOL
-image: http://www.nmlegis.gov/Images/Legislators/House/HWOOL.jpg
-other_identifiers:
-- identifier: NML000108
-  scheme: legacy_openstates
-- identifier: NML000276
-  scheme: legacy_openstates
-- identifier: NML000365
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Wooley

@@ -2,19 +2,19 @@ id: ocd-person/bbe6aafd-8e74-4bbe-9919-f4a3c81d188c
 name: Joseph J. Crisco Jr.
 given_name: Joseph J.
 family_name: Crisco
+image: http://www.senatedems.ct.gov/photos/crisco-hi.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.senatedems.ct.gov/photos/crisco-hi.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '17'
 links:
 - url: http://www.senatedems.ct.gov/Crisco.php
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000017
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000017
-  scheme: legacy_openstates

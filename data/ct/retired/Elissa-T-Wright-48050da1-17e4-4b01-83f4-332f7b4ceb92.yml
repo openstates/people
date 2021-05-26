@@ -3,19 +3,19 @@ name: Elissa T. Wright
 given_name: Elissa
 family_name: Wright
 middle_name: T.
+image: http://www.housedems.ct.gov/Wright/images/Wright07.jpg
 party:
 - name: Democratic
 roles:
-- district: '41'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.housedems.ct.gov/Wright/images/Wright07.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '41'
 links:
 - url: http://www.housedems.ct.gov/Wright
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000077
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000077
-  scheme: legacy_openstates

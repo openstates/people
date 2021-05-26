@@ -1,11 +1,15 @@
 id: ocd-person/dbf06797-edd3-40c0-9ade-df8ad694e581
 name: Melissa Miller
+given_name: Melissa
+family_name: Miller
+email: MillerML@nyassembly.gov
+image: https://assembly.state.ny.us/write/upload/member_files/020/headshot/020.jpg
 party:
 - name: Republican
 roles:
-- district: '20'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: LOB 439; Albany, NY 12248
@@ -16,15 +20,11 @@ contact_details:
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Melissa-Miller
+ids:
+  twitter: MissyMillerNY20
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000443
 sources:
 - url: http://assembly.state.ny.us/mem/Melissa-Miller
 - url: https://assembly.state.ny.us/mem/Melissa-Miller
-image: https://assembly.state.ny.us/write/upload/member_files/020/headshot/020.jpg
-other_identifiers:
-- identifier: NYL000443
-  scheme: legacy_openstates
-given_name: Melissa
-family_name: Miller
-email: MillerML@nyassembly.gov
-ids:
-  twitter: MissyMillerNY20

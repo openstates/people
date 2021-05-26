@@ -1,11 +1,15 @@
 id: ocd-person/42a456fa-8979-468f-b2a6-30f81ff20299
 name: Matt Koleszar
+given_name: Matt
+family_name: Koleszar
+email: MattKoleszar@house.mi.gov
+image: https://housedems.com/sites/default/files/Images/Representative_Images/D020_Matt_Koleszar/020_Koleszar.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
+  district: '20'
 contact_details:
 - note: Capitol Office
   address: North House Office Building 6-699
@@ -15,7 +19,3 @@ links:
 sources:
 - url: https://housedems.com/koleszar
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
-image: https://housedems.com/sites/default/files/Images/Representative_Images/D020_Matt_Koleszar/020_Koleszar.jpg
-email: MattKoleszar@house.mi.gov
-given_name: Matt
-family_name: Koleszar

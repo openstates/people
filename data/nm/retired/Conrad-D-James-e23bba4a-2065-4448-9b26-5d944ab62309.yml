@@ -3,26 +3,26 @@ name: Conrad D. James
 given_name: Conrad
 family_name: James
 middle_name: D.
+image: http://www.nmlegis.gov/lcs/graphics/photos/HJAME.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '24'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.nmlegis.gov/lcs/graphics/photos/HJAME.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '24'
 links:
 - url: http://www.nmlegis.gov/lcs/legislator_details.aspx?SPONCODE=HJAME
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000066
+- scheme: legacy_openstates
+  identifier: NML000358
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HJAME
-other_identifiers:
-- identifier: NML000066
-  scheme: legacy_openstates
-- identifier: NML000358
-  scheme: legacy_openstates

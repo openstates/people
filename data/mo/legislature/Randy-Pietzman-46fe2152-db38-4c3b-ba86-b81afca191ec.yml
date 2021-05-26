@@ -1,19 +1,28 @@
 id: ocd-person/46fe2152-db38-4c3b-ba86-b81afca191ec
 name: Randy Pietzman
+given_name: Randy
+family_name: Pietzman
+email: Randy.Pietzman@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1812
 party:
 - name: Republican
 roles:
-- district: '41'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '41'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 205; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 205; Jefferson
+    City MO 65101
   voice: 573-751-9459
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=41
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=041
+other_names:
+- name: Pietzman, Randy
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000399
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=41
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Randy
   last_name: Pietzman
-other_identifiers:
-- identifier: MOL000399
-  scheme: legacy_openstates
-given_name: Randy
-family_name: Pietzman
-email: Randy.Pietzman@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1812
-other_names:
-- name: Pietzman, Randy

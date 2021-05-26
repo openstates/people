@@ -2,20 +2,20 @@ id: ocd-person/6c9bd606-f9b6-435d-ab2c-0e0c23e27348
 name: John Tilley
 given_name: John
 family_name: Tilley
+image: http://www.lrc.ky.gov/pubinfo/thumbnails/House08.jpg
 party:
 - name: Democratic
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.lrc.ky.gov/pubinfo/thumbnails/House08.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  district: '8'
 links:
 - url: http://www.lrc.ky.gov/legislator/H008.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KYL000129
 sources:
 - url: http://www.lrc.ky.gov/legislator/H008.htm
 - url: http://www.kentucky.com/news/politics-government/article49002695.html
-other_identifiers:
-- identifier: KYL000129
-  scheme: legacy_openstates

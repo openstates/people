@@ -1,11 +1,14 @@
 id: ocd-person/78bb88a9-cde1-4691-aa7a-e423ee16a147
 name: Jason Perillo
+given_name: Jason
+family_name: Perillo
+email: jason.perillo@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '113'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '113'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4078;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 454 Coram Avenue;Shelton, CT 06484
 links:
 - url: http://www.cthousegop.com/Perillo/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000149
-  scheme: legacy_openstates
-given_name: Jason
-family_name: Perillo
-email: jason.perillo@housegop.ct.gov
 other_names:
 - name: Perillo, Jason
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000149
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

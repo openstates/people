@@ -1,24 +1,24 @@
 id: ocd-person/55dc4d53-3966-4e5d-9759-b6b13b9d8cb4
 name: Brandon Ellington
+given_name: Brandon
+family_name: Ellington
 party:
 - name: Democratic
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2019-07-31'
   type: lower
-  end_date: '2019-07-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '22'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=22
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000194
+- scheme: legacy_openstates
+  identifier: MOL000242
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=22
 extras:
   first_name: Brandon
   last_name: Ellington
-other_identifiers:
-- identifier: MOL000194
-  scheme: legacy_openstates
-- identifier: MOL000242
-  scheme: legacy_openstates
-given_name: Brandon
-family_name: Ellington

@@ -1,25 +1,25 @@
 id: ocd-person/58d66900-7b0f-4c99-a399-4116d7304562
 name: Jim Dabakis
+given_name: Jim
+family_name: Dabakis
+image: https://le.utah.gov/images/legislator/DABAKJ.jpg
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '2'
 links:
 - url: http://senate.utah.gov/senators/district2.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000115
+- scheme: legacy_openstates
+  identifier: UTL000240
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/DABAKJ.jpg
 extras:
   links:
   - http://www.utahsenate.org/documents/DABAKIS.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411835
-other_identifiers:
-- identifier: UTL000115
-  scheme: legacy_openstates
-- identifier: UTL000240
-  scheme: legacy_openstates
-given_name: Jim
-family_name: Dabakis

@@ -1,16 +1,19 @@
 id: ocd-person/3066d94c-3834-42a2-9b60-94bfb5fa2277
 name: Karla Eslinger
+given_name: Karla
+family_name: Eslinger
+email: Karla.Eslinger@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '155'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
-- district: '33'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '155'
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '33'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=155
 - url: https://www.senate.mo.gov/mem33
@@ -22,6 +25,3 @@ sources:
 extras:
   first_name: Karla
   last_name: Eslinger
-email: Karla.Eslinger@house.mo.gov
-given_name: Karla
-family_name: Eslinger

@@ -1,11 +1,14 @@
 id: ocd-person/e7f7ad52-69a8-4306-8dfe-02368f74d75b
 name: John E. Piscopo
+given_name: John
+family_name: Piscopo
+email: John.Piscopo@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '76'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '76'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4086;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 50 Judson Street;Thomaston, CT 06787
 links:
 - url: http://www.cthousegop.com/Piscopo/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000112
-  scheme: legacy_openstates
-given_name: John
-family_name: Piscopo
-email: John.Piscopo@housegop.ct.gov
 other_names:
 - name: Piscopo, John E.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000112
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

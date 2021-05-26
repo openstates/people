@@ -1,11 +1,15 @@
 id: ocd-person/c655558e-dfac-468a-a633-85f380c538b6
 name: John Thomas "Trey" Lamar, III
+given_name: John Thomas "Trey"
+family_name: Lamar
+email: jlamar@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/lamar.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '8'
 contact_details:
 - note: Capitol Office
   address: Room 201;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 662-562-0434
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/lamar.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000221
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/lamar.xml
-image: http://billstatus.ls.state.ms.us/members/house/lamar.jpg
 extras:
   org_info: Rep. Lamar is a member of First Baptist Church of Senatobia, Senatobia
     Rotory Club, Tate County Economic Development Foundation, MS BAR Association,
     and Ole Miss M-Club.
-other_identifiers:
-- identifier: MSL000221
-  scheme: legacy_openstates
-given_name: John Thomas "Trey"
-family_name: Lamar
-email: jlamar@house.ms.gov

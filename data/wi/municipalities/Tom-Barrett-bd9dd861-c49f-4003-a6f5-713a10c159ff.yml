@@ -2,15 +2,13 @@ id: ocd-person/bd9dd861-c49f-4003-a6f5-713a10c159ff
 name: Tom Barrett
 given_name: Tom
 family_name: Barrett
+email: mayor@milwaukee.gov
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:wi/place:milwaukee/government
+- end_date: '2024-04-23'
   type: mayor
-  end_date: '2024-04-23'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/place:milwaukee/government
 contact_details:
 - note: Primary Office
   address: 200 E. Wells Street;Milwaukee, WI 53202
-  fax: 414-286-3191
   voice: 414-286-2200
-sources: []
-links: []
-email: mayor@milwaukee.gov
+  fax: 414-286-3191

@@ -1,11 +1,15 @@
 id: ocd-person/25a5746b-d7c3-425c-a5b4-a942f86576f2
 name: Drew Hansen
+given_name: Drew
+family_name: Hansen
+email: drew.hansen@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/hansen.jpg
 party:
 - name: Democratic
 roles:
-- district: '23'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '23'
 contact_details:
 - note: Capitol Office
   address: 370 John L. O'Brien Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Drew-Hansen/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Hansen/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000150
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/hansen.jpg
-other_identifiers:
-- identifier: WAL000150
-  scheme: legacy_openstates
-given_name: Drew
-family_name: Hansen
-email: drew.hansen@leg.wa.gov

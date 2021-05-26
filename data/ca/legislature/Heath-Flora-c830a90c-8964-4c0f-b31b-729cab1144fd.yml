@@ -1,11 +1,15 @@
 id: ocd-person/c830a90c-8964-4c0f-b31b-729cab1144fd
 name: Heath Flora
+given_name: Heath
+family_name: Flora
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/flora.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0012
@@ -15,14 +19,10 @@ contact_details:
   voice: 209-599-2112
 links:
 - url: https://ad12.asmrc.org
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD12&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD12&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000502
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/flora.jpg
-other_identifiers:
-- identifier: CAL000502
-  scheme: legacy_openstates
-given_name: Heath
-family_name: Flora
-gender: Male

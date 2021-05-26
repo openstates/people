@@ -1,15 +1,19 @@
 id: ocd-person/de38477b-6f3e-44cd-96d0-bd81ff831948
 name: Winnie Brinks
+given_name: Winnie
+family_name: Brinks
+email: senwbrinks@senate.michigan.gov
+image: https://senate.michigan.gov/_images/29th.jpg
 party:
 - name: Democratic
 roles:
-- district: '76'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '29'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '76'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '29'
 contact_details:
 - note: Capitol Office
   address: 6500 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-5801
 links:
 - url: https://senatedems.com/brinks/
-- note: Contact
-  url: https://senatedems.com/brinks/contact
+- url: https://senatedems.com/brinks/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000232
 sources:
 - url: https://senatedems.com/brinks/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000232
-  scheme: legacy_openstates
-given_name: Winnie
-family_name: Brinks
-email: senwbrinks@senate.michigan.gov
-image: https://senate.michigan.gov/_images/29th.jpg

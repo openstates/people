@@ -1,11 +1,16 @@
 id: ocd-person/644f5618-fd45-48ae-8184-2a0afecbba9a
 name: Cathy Connolly
+given_name: Cathy
+family_name: Connolly
+email: Cathy.Connolly@wyoleg.gov
+birth_date: 1956-09-15
+image: http://wyoleg.gov/LegislatorSummary/Photos/ConnollyCH13.jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '13'
 contact_details:
 - note: District Office
   address: 1321 Garfield, Laramie WY 82070
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/D/1258
 - url: http://wyoleg.gov/Legislators/2021/D/1258
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000045
 sources:
 - url: http://wyoleg.gov/Legislators/2019/D/1258
 - url: http://wyoleg.gov/Legislators/2021/D/1258
-image: http://wyoleg.gov/LegislatorSummary/Photos/ConnollyCH13.jpg
-birth_date: '1956-09-15'
-given_name: Cathy
-family_name: Connolly
 extras:
   county: Albany
   education:
@@ -35,7 +39,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1258
-other_identifiers:
-- identifier: WYL000045
-  scheme: legacy_openstates
-email: Cathy.Connolly@wyoleg.gov

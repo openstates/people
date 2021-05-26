@@ -2,20 +2,20 @@ id: ocd-person/1df65d23-cb8d-4c94-85f9-c5ee6974fdcc
 name: Kevin Dunlap
 given_name: Kevin
 family_name: Dunlap
+image: http://www.capitol.tn.gov/house/members/images/h43.jpg
 party:
 - name: Democratic
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.capitol.tn.gov/house/members/images/h43.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '43'
 links:
 - url: http://www.capitol.tn.gov/house/members/h43.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TNL000449
 sources:
 - url: http://www.capitol.tn.gov/house/members/
 - url: http://www.capitol.tn.gov/house/members/h43.html
-other_identifiers:
-- identifier: TNL000449
-  scheme: legacy_openstates

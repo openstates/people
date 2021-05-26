@@ -1,11 +1,15 @@
 id: ocd-person/937347fd-5059-496e-89a9-574677b49a07
 name: Tom Miles
+given_name: Tom
+family_name: Miles
+email: tmiles@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/miles.jpg
 party:
 - name: Democratic
 roles:
-- district: '75'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '75'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -15,17 +19,13 @@ contact_details:
   voice: 601-732-9511
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/miles.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000206
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/miles.xml
-image: http://billstatus.ls.state.ms.us/members/house/miles.jpg
 extras:
   org_info: Rep. Miles is a member of Forest Baptist Church, Morton, Rankin, and Forest
     County Chambers of Commerce, Forest Rotary and Lion's Club, lifetime member of
     the NRA, Scott County Dive Team, Habitat for Humanity and Relay for Life, and
     MSU Alumni Assoc.
-other_identifiers:
-- identifier: MSL000206
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Miles
-email: tmiles@house.ms.gov

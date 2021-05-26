@@ -1,11 +1,15 @@
 id: ocd-person/8d2154d2-3401-4b8c-9173-9c895d014b79
 name: Gloria Frazier
+given_name: Gloria
+family_name: Frazier
+email: gloria.frazier@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/frazier-gloria-107.jpg
 party:
 - name: Democratic
 roles:
-- district: '126'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '126'
 contact_details:
 - note: Capitol Office
   address: 604-C Coverdell Legislative Office Building;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=107&Session=27
 - url: https://www.legis.ga.gov/members/house/107?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000111
+- scheme: legacy_openstates
+  identifier: GAL000284
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=107&Session=27
 - url: https://www.legis.ga.gov/members/house/107?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/frazier-gloria-107.jpg
-family_name: Frazier
-given_name: Gloria
 extras:
   guid: 107
   city: Hephzibah
   georgia_id: 107
   residence: Hephzibah
-other_identifiers:
-- identifier: GAL000111
-  scheme: legacy_openstates
-- identifier: GAL000284
-  scheme: legacy_openstates
-email: gloria.frazier@house.ga.gov

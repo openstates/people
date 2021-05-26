@@ -3,22 +3,22 @@ name: Scott K Jenkins
 given_name: Scott
 family_name: Jenkins
 middle_name: K
+image: http://le.utah.gov/images/legislator/JENKISK.jpg
 party:
 - name: Republican
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://le.utah.gov/images/legislator/JENKISK.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '20'
 links:
 - url: http://senate.utah.gov/senators/district20.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000009
+- scheme: legacy_openstates
+  identifier: UTL000218
 sources:
 - url: http://senate.utah.gov/senators/district20.html
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000009
-  scheme: legacy_openstates
-- identifier: UTL000218
-  scheme: legacy_openstates

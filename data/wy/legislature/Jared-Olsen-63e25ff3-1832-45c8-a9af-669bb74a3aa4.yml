@@ -1,11 +1,16 @@
 id: ocd-person/63e25ff3-1832-45c8-a9af-669bb74a3aa4
 name: Jared Olsen
+given_name: Jared
+family_name: Olsen
+email: Jared.Olsen@wyoleg.gov
+birth_date: 1987-10-10
+image: http://wyoleg.gov/LegislatorSummary/Photos/OlsenJH11.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '11'
 contact_details:
 - note: District Office
   address: P.O. Box 4333, Cheyenne WY 82003
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2035
 - url: http://wyoleg.gov/Legislators/2021/R/2035
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000149
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2035
 - url: http://wyoleg.gov/Legislators/2021/R/2035
-image: http://wyoleg.gov/LegislatorSummary/Photos/OlsenJH11.jpg
-birth_date: '1987-10-10'
-given_name: Jared
-family_name: Olsen
 extras:
   civic_organizations:
   - orgname: Chairman, Laramie County Republican Party
@@ -43,7 +47,3 @@ extras:
   religion: Christian
   spouse_given_name: Dani
   wy_leg_id: 2035
-other_identifiers:
-- identifier: WYL000149
-  scheme: legacy_openstates
-email: Jared.Olsen@wyoleg.gov

@@ -2,21 +2,21 @@ id: ocd-person/5a60d027-74d2-4582-9bc1-e3f2ef629b20
 name: Hunter Hill
 given_name: Hunter
 family_name: Hill
+image: http://www.senate.ga.gov/SiteCollectionImages/HillHunter803.jpg
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-image: http://www.senate.ga.gov/SiteCollectionImages/HillHunter803.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '6'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=803&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000303
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=803&Session=25
 - url: http://www.senate.ga.gov/senators/en-US/SenateMembersList.aspx?Sort=District&Session=25
-other_identifiers:
-- identifier: GAL000303
-  scheme: legacy_openstates

@@ -2,27 +2,27 @@ id: ocd-person/6b07652d-3bef-41f7-a9c0-2f4f5145401c
 name: John Tippets
 given_name: John H.
 family_name: Tippets
+image: http://legislature.idaho.gov/images/Tippets1404.jpg
 party:
 - name: Republican
 roles:
-- district: '32'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '32'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Tippets1404.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '31'
 links:
 - url: http://legislature.idaho.gov/senate/membershipSingle.cfm?ID=1404
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000031
+- scheme: legacy_openstates
+  identifier: IDL000136
 sources:
 - url: http://legislature.idaho.gov/senate/membership.cfm
 - url: http://idahobusinessreview.com/2015/06/17/idaho-state-sen-john-tippets-to-lead-deq/
-other_identifiers:
-- identifier: IDL000031
-  scheme: legacy_openstates
-- identifier: IDL000136
-  scheme: legacy_openstates

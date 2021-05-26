@@ -2,27 +2,27 @@ id: ocd-person/a648fd7d-70c7-417b-8a08-e01609e7fdbf
 name: Todd Schlekeway
 given_name: Todd
 family_name: Schlekeway
+image: http://legis.state.sd.us/sessions/2011/schlekeway.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2011-01-01'
+  district: '11'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legis.state.sd.us/sessions/2011/schlekeway.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '11'
 links:
 - url: http://legis.state.sd.us/sessions/2011/MemberDetail.aspx?Member=123
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000089
+- scheme: legacy_openstates
+  identifier: SDL000121
 sources:
 - url: http://legis.state.sd.us/sessions/2011/MemberDetail.aspx?Member=123
 - url: http://legis.state.sd.us/sessions/2011/MemberCommittees.aspx?Member=123
-other_identifiers:
-- identifier: SDL000089
-  scheme: legacy_openstates
-- identifier: SDL000121
-  scheme: legacy_openstates

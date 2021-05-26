@@ -1,28 +1,28 @@
 id: ocd-person/7fdfc0b9-dff9-41c7-9e5a-6b0beb1d0c2e
 name: Nate Mcconnell
-party:
-- name: Democratic
-roles:
-- district: '89'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  end_date: 2018-02-01
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  end_date: '2020-11-16'
-links:
-- url: https://leg.mt.gov/legislator-information/roster/individual/5056
-sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/5056
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-other_identifiers:
-- identifier: ocd-person/39f41df6-4f33-459e-9019-1b9c0b4477ed
-  scheme: openstates
-- identifier: MTL000425
-  scheme: legacy_openstates
 given_name: Nate
 family_name: McConnell
 email: NateForSD48@gmail.com
+party:
+- name: Democratic
+roles:
+- end_date: 2018-02-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '89'
+- end_date: '2020-11-16'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '48'
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/5056
 other_names:
 - name: Nate McConnell
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/39f41df6-4f33-459e-9019-1b9c0b4477ed
+- scheme: legacy_openstates
+  identifier: MTL000425
+sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/5056
+- url: https://leg.mt.gov/legislator-information/?session_select=113

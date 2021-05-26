@@ -2,23 +2,23 @@ id: ocd-person/d89cce59-a90a-48bc-9c15-0fa2a699023c
 name: Allen Fletcher
 given_name: Allen
 family_name: Fletcher
+image: http://www.house.state.tx.us/photos/members/2830.jpg
 party:
 - name: Republican
 roles:
-- district: '130'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2018-12-31'
-image: http://www.house.state.tx.us/photos/members/2830.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '130'
 links:
 - url: http://www.house.state.tx.us/members/member-page/?district=130
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000258
+- scheme: legacy_openstates
+  identifier: TXL000076
+- scheme: legacy_openstates
+  identifier: TXL000565
 sources:
 - url: http://www.house.state.tx.us/members/member-page/?district=130
-other_identifiers:
-- identifier: TXL000258
-  scheme: legacy_openstates
-- identifier: TXL000076
-  scheme: legacy_openstates
-- identifier: TXL000565
-  scheme: legacy_openstates

@@ -5,15 +5,15 @@ family_name: Miller
 party:
 - name: Democratic
 roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '28'
 links:
 - url: http://housedems.com/state-rep-derek-miller
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000305
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000305
-  scheme: legacy_openstates

@@ -2,19 +2,19 @@ id: ocd-person/330f8ac1-a5ed-4e7f-81be-8eb603b5851c
 name: Ray Vandeveer
 given_name: Ray
 family_name: Vandeveer
+image: http://www.senate.leg.state.mn.us//graphics/52Vandeveer.jpg
 party:
 - name: Republican
 roles:
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://www.senate.leg.state.mn.us//graphics/52Vandeveer.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '52'
 links:
 - url: http://www.senate.leg.state.mn.us//members/member_bio.php?mem_id=1145&ls=
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000065
 sources:
 - url: http://www.senate.leg.state.mn.us/members/member_list.php
-other_identifiers:
-- identifier: MNL000065
-  scheme: legacy_openstates

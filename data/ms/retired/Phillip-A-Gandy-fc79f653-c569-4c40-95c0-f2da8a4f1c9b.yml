@@ -2,19 +2,19 @@ id: ocd-person/fc79f653-c569-4c40-95c0-f2da8a4f1c9b
 name: Phillip A. Gandy
 given_name: Phillip A.
 family_name: Gandy
+image: http://billstatus.ls.state.ms.us/members/senate/gandy.jpg
 party:
 - name: Republican
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/gandy.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '43'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/gandy.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000181
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/gandy.xml
-other_identifiers:
-- identifier: MSL000181
-  scheme: legacy_openstates

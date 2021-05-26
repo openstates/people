@@ -1,11 +1,14 @@
 id: ocd-person/ddbee7da-746c-4fd1-8ee2-21ec3c6672d1
 name: Charlie L. Stallworth
+given_name: Charlie
+family_name: Stallworth
+email: Charlie.Stallworth@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '126'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '126'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 5005;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-257-5281
 links:
 - url: http://www.housedems.ct.gov/stallworth
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000162
-  scheme: legacy_openstates
-given_name: Charlie
-family_name: Stallworth
-email: Charlie.Stallworth@cga.ct.gov
 other_names:
 - name: Stallworth, Charlie L.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000162
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

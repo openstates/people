@@ -1,12 +1,16 @@
 id: ocd-person/7e4dba64-b998-44af-9f11-430bd5c782ea
 name: Clark Kauffman
+given_name: Clark
+family_name: Kauffman
+email: CKauffman@house.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Kauffman2126.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+- start_date: 2013-01-01
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '25'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1182
@@ -15,16 +19,12 @@ contact_details:
   fax: 208-326-4132
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000299
+- scheme: legacy_openstates
+  identifier: IDL000161
+- scheme: openstates
+  identifier: ocd-person/195923bb-c409-4967-b091-44c737ed3ff8
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Kauffman2126.jpg
-other_identifiers:
-- identifier: IDL000299
-  scheme: legacy_openstates
-- identifier: IDL000161
-  scheme: legacy_openstates
-- identifier: ocd-person/195923bb-c409-4967-b091-44c737ed3ff8
-  scheme: openstates
-given_name: Clark
-family_name: Kauffman
-email: CKauffman@house.idaho.gov

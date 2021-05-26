@@ -2,21 +2,21 @@ id: ocd-person/05ac7694-3944-43bb-b8ac-5ce9b64e84ca
 name: Mike Jackson
 given_name: Mike
 family_name: Jackson
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/Senate/small/A1270.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/Senate/small/A1270.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '11'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1270
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000197
+- scheme: legacy_openstates
+  identifier: TXL000015
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=S&Code=A1270
-other_identifiers:
-- identifier: TXL000197
-  scheme: legacy_openstates
-- identifier: TXL000015
-  scheme: legacy_openstates

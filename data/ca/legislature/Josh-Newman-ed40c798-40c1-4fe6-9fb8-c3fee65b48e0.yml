@@ -2,18 +2,19 @@ id: ocd-person/ed40c798-40c1-4fe6-9fb8-c3fee65b48e0
 name: Josh Newman
 given_name: Josh
 family_name: Newman
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd29_newman.jpg
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: 2018-06-24
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   type: upper
-  start_date: 2020-12-07
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '29'
+- start_date: 2020-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '29'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4062, Sacramento, CA 95814-4900
@@ -21,13 +22,12 @@ contact_details:
 - note: District Office
   address: 1800 E. Lambert Road, Suite 150, Brea, CA 92821
   voice: 714-671-9474
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sd29_newman.jpg
 links:
 - url: http://senate.ca.gov/sd29
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD29&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD29&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000521
 sources:
 - url: http://senate.ca.gov/senators
-other_identifiers:
-- identifier: CAL000521
-  scheme: legacy_openstates

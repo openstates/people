@@ -1,11 +1,15 @@
 id: ocd-person/b2f6bc11-2b2f-4b49-9d44-d07a89432688
 name: Micah Gravley
+given_name: Micah
+family_name: Gravley
+email: micah.gravley@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/gravley-micah-821.jpg
 party:
 - name: Republican
 roles:
-- district: '67'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '67'
 contact_details:
 - note: Capitol Office
   address: 415 State Capitol;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=821&Session=27
 - url: https://www.legis.ga.gov/members/house/821?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000291
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=821&Session=27
 - url: https://www.legis.ga.gov/members/house/821?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/gravley-micah-821.jpg
-family_name: Gravley
-given_name: Micah
 extras:
   guid: 821
   city: Douglasville
   georgia_id: 821
   residence: Douglasville
-other_identifiers:
-- identifier: GAL000291
-  scheme: legacy_openstates
-email: micah.gravley@house.ga.gov

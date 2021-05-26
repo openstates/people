@@ -1,15 +1,17 @@
 id: ocd-person/5b7f0213-5ecb-4d91-84c8-29c0abedfe7f
 name: Amy Bradley
+given_name: Amy
+family_name: Bradley
 email: Amy.Bradley@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 43
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 43
 contact_details:
-- address: 895 Bridge Street;Manchester, NH 03104
-  note: District Office
+- note: District Office
+  address: 895 Bridge Street;Manchester, NH 03104
   voice: 603-315-1597
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -19,5 +21,3 @@ extras:
   first_name: Amy
   last_name: Bradley
   middle_name: ''
-given_name: Amy
-family_name: Bradley

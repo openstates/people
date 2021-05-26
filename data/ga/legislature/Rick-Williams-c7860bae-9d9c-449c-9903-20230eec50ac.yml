@@ -1,11 +1,15 @@
 id: ocd-person/c7860bae-9d9c-449c-9903-20230eec50ac
 name: Rick Williams
+given_name: Rick
+family_name: Williams
+email: rick.williams@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/williams-rick-4905.jpg
 party:
 - name: Republican
 roles:
-- district: '145'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '145'
 contact_details:
 - note: Capitol Office
   address: 601-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4905&Session=27
 - url: https://www.legis.ga.gov/members/house/4905?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000472
+- scheme: legacy_openstates
+  identifier: GAL000474
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4905&Session=27
 - url: https://www.legis.ga.gov/members/house/4905?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/williams-rick-4905.jpg
-family_name: Williams
-given_name: Rick
 extras:
   guid: 4905
   city: Milledgeville
   georgia_id: 4905
   residence: Milledgeville
-other_identifiers:
-- identifier: GAL000472
-  scheme: legacy_openstates
-- identifier: GAL000474
-  scheme: legacy_openstates
-email: rick.williams@house.ga.gov

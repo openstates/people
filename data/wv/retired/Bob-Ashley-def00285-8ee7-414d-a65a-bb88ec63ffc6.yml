@@ -2,26 +2,26 @@ id: ocd-person/def00285-8ee7-414d-a65a-bb88ec63ffc6
 name: Bob Ashley
 given_name: Bob
 family_name: Ashley
+image: http://www.legis.state.wv.us/../images/members/2016/senate/ashley_bob.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '3'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: upper
-  start_date: '2015-01-01'
+  district: '11'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.legis.state.wv.us/../images/members/2016/senate/ashley_bob.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '3'
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Ashley
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000051
+- scheme: legacy_openstates
+  identifier: WVL000339
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Ashley
-other_identifiers:
-- identifier: WVL000051
-  scheme: legacy_openstates
-- identifier: WVL000339
-  scheme: legacy_openstates

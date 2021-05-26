@@ -1,38 +1,38 @@
 id: ocd-person/b325559c-79b9-4ce3-a548-4c0c4116815e
 name: Fred Allen
+given_name: Fred
+family_name: Allen
+email: fredallen99@comcast.net
+image: https://www.arkleg.state.ar.us/Content/photos/2021/House/519_sm.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: lower
-links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
-- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '33'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '30'
 contact_details:
 - note: District Office
   address: 19 Dover Drive, Little Rock, AR 72204
   voice: 501-804-7844
+links:
+- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
+other_names:
+- name: F. Allen
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000360
+- scheme: legacy_openstates
+  identifier: ARL000001
+- scheme: openstates
+  identifier: ocd-person/791db008-194a-45c1-b9ff-5cdef426b120
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
-image: https://www.arkleg.state.ar.us/Content/photos/2021/House/519_sm.jpg
 extras:
   occupation: Contractor/Photographer
-other_identifiers:
-- identifier: ARL000360
-  scheme: legacy_openstates
-- identifier: ARL000001
-  scheme: legacy_openstates
-- identifier: ocd-person/791db008-194a-45c1-b9ff-5cdef426b120
-  scheme: openstates
-given_name: Fred
-family_name: Allen
-email: fredallen99@comcast.net
-other_names:
-- name: F. Allen

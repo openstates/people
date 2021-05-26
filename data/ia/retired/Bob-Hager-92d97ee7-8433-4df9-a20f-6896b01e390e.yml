@@ -2,21 +2,21 @@ id: ocd-person/92d97ee7-8433-4df9-a20f-6896b01e390e
 name: Bob Hager
 given_name: Robert
 family_name: Hager
+image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=84&PID=10789
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=84&PID=10789
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '16'
 links:
 - url: http://www.legis.iowa.gov/Legislators/house.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000074
+- scheme: legacy_openstates
+  identifier: IAL000162
 sources:
 - url: http://www.legis.iowa.gov/Legislators/house.aspx
-other_identifiers:
-- identifier: IAL000074
-  scheme: legacy_openstates
-- identifier: IAL000162
-  scheme: legacy_openstates

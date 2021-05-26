@@ -2,26 +2,26 @@ id: ocd-person/94b2db32-6504-4dab-8899-e6a2c5a18adb
 name: Kent Sorenson
 given_name: Kent
 family_name: Sorenson
+image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=85&PID=7500
 party:
 - name: Republican
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '13'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=85&PID=7500
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '37'
 links:
 - url: http://www.legis.iowa.gov/Legislators/senate.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000046
+- scheme: legacy_openstates
+  identifier: IAL000218
 sources:
 - url: http://www.legis.iowa.gov/Legislators/senate.aspx
-other_identifiers:
-- identifier: IAL000046
-  scheme: legacy_openstates
-- identifier: IAL000218
-  scheme: legacy_openstates

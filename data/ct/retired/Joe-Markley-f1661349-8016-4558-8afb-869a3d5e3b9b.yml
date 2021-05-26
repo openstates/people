@@ -1,18 +1,18 @@
 id: ocd-person/f1661349-8016-4558-8afb-869a3d5e3b9b
 name: Joe Markley
+given_name: Joe
+family_name: Markley
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '16'
 links:
 - url: http://www.ctsenaterepublicans.com/home-markley
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000016
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000016
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Markley

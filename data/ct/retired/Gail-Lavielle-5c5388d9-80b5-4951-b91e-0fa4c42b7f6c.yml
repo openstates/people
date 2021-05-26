@@ -1,19 +1,19 @@
 id: ocd-person/5c5388d9-80b5-4951-b91e-0fa4c42b7f6c
 name: Gail Lavielle
-party:
-- name: Republican
-roles:
-- district: '143'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: http://www.cthousegop.com/Lavielle/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000179
-  scheme: legacy_openstates
 given_name: Gail
 family_name: Lavielle
 email: gail.lavielle@housegop.ct.gov
+party:
+- name: Republican
+roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '143'
+links:
+- url: http://www.cthousegop.com/Lavielle/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000179
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

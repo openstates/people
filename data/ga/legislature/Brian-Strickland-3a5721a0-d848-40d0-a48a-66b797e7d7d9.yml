@@ -1,16 +1,20 @@
 id: ocd-person/3a5721a0-d848-40d0-a48a-66b797e7d7d9
 name: Brian Strickland
+given_name: Brian
+family_name: Strickland
+email: brian.strickland@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/strickland-brian-835.jpg
 party:
 - name: Republican
 roles:
-- district: '111'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2018-12-31
-- district: '17'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '111'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '17'
 contact_details:
 - note: Capitol Office
   address: 109 State Capitol;Atlanta, GA 30334
@@ -20,23 +24,19 @@ contact_details:
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 - url: https://www.legis.ga.gov/members/senate/835?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000491
+- scheme: legacy_openstates
+  identifier: GAL000361
+- scheme: openstates
+  identifier: ocd-person/9377bdba-e623-477c-ba0f-828b830a99c3
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 - url: https://www.legis.ga.gov/members/senate/835?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/strickland-brian-835.jpg
-family_name: Strickland
-given_name: Brian
 extras:
   guid: 835
   city: McDonough
   georgia_id: 835
   residence: McDonough
-other_identifiers:
-- identifier: GAL000491
-  scheme: legacy_openstates
-- identifier: GAL000361
-  scheme: legacy_openstates
-- identifier: ocd-person/9377bdba-e623-477c-ba0f-828b830a99c3
-  scheme: openstates
-email: brian.strickland@senate.ga.gov

@@ -1,19 +1,19 @@
 id: ocd-person/8d85499f-d434-466f-a859-e6c5c40e33fa
 name: Themis Klarides
-party:
-- name: Republican
-roles:
-- district: '114'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: http://www.cthousegop.com/Klarides/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000150
-  scheme: legacy_openstates
 given_name: Themis
 family_name: Klarides
 email: Themis.Klarides@housegop.ct.gov
+party:
+- name: Republican
+roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '114'
+links:
+- url: http://www.cthousegop.com/Klarides/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000150
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

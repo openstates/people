@@ -1,11 +1,14 @@
 id: ocd-person/df318645-047c-46a5-be61-682a7272e6b6
 name: Joe Polletta
+given_name: Joe
+family_name: Polletta
+email: Joe.Polletta@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '68'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '68'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4200;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-509-0340
 links:
 - url: http://www.cthousegop.com/Polletta/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000361
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Polletta
-email: Joe.Polletta@housegop.ct.gov
 other_names:
 - name: Polletta, Joe
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000361
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

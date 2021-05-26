@@ -1,11 +1,15 @@
 id: ocd-person/35bf01bd-be16-4ce6-b07c-bfff3d25e7e3
 name: Price Wallace
+given_name: Price
+family_name: Wallace
+email: pwallace@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/wallace.jpg
 party:
 - name: Republican
 roles:
-- district: '77'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '77'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -13,15 +17,11 @@ contact_details:
   address: 125 Price Wallace Dr.;Mendenhall, MS 39114
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/wallace.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000305
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/wallace.xml
-image: http://billstatus.ls.state.ms.us/members/house/wallace.jpg
 extras:
   org_info: Representative Wallace is a member of the Farm Bureau, Mississippi Cattlemen's
     Association, and Trust Advisory Board in Magee.
-other_identifiers:
-- identifier: MSL000305
-  scheme: legacy_openstates
-given_name: Price
-family_name: Wallace
-email: pwallace@house.ms.gov

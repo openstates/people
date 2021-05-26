@@ -1,12 +1,16 @@
 id: ocd-person/78610d0e-c790-4fc9-ab8e-0887adbbe063
 name: Al Muratsuchi
+given_name: Al
+family_name: Muratsuchi
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad66.jpg
 party:
 - name: Democratic
 roles:
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- start_date: 2013-01-01
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '66'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0066
@@ -16,18 +20,14 @@ contact_details:
   voice: 310-375-0691
 links:
 - url: https://a66.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD66&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD66&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000523
+- scheme: legacy_openstates
+  identifier: CAL000392
+- scheme: openstates
+  identifier: ocd-person/267964ec-a417-4abc-812d-25e6713acd6b
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad66.jpg
-other_identifiers:
-- identifier: CAL000523
-  scheme: legacy_openstates
-- identifier: CAL000392
-  scheme: legacy_openstates
-- identifier: ocd-person/267964ec-a417-4abc-812d-25e6713acd6b
-  scheme: openstates
-given_name: Al
-family_name: Muratsuchi
-gender: Male

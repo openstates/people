@@ -2,20 +2,20 @@ id: ocd-person/e8c8a343-411e-4163-8ca5-7fe7e329d05f
 name: Joe Haynes
 given_name: Joe
 family_name: Haynes
+image: http://www.capitol.tn.gov/senate/members/images/s20.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.capitol.tn.gov/senate/members/images/s20.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '20'
 links:
 - url: http://www.capitol.tn.gov/senate/members/s20.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TNL000013
 sources:
 - url: http://www.capitol.tn.gov/senate/members/
 - url: http://www.capitol.tn.gov/senate/members/s20.html
-other_identifiers:
-- identifier: TNL000013
-  scheme: legacy_openstates

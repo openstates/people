@@ -1,11 +1,15 @@
 id: ocd-person/df023a79-0194-4d1a-8755-5dee4053e1cc
 name: Gail Davenport
+given_name: Gail
+family_name: Davenport
+email: gail.davenport@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/davenport-gail-10.jpg
 party:
 - name: Democratic
 roles:
-- district: '44'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '44'
 contact_details:
 - note: Capitol Office
   address: 432 State Capitol;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=10&Session=27
 - url: https://www.legis.ga.gov/members/senate/10?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000011
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=10&Session=27
 - url: https://www.legis.ga.gov/members/senate/10?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/davenport-gail-10.jpg
-family_name: Davenport
-given_name: Gail
 extras:
   guid: 10
   city: Jonesboro
   georgia_id: 10
   residence: Jonesboro
-other_identifiers:
-- identifier: GAL000011
-  scheme: legacy_openstates
-email: gail.davenport@senate.ga.gov

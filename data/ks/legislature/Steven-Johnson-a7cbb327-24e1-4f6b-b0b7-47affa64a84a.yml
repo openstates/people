@@ -1,11 +1,15 @@
 id: ocd-person/a7cbb327-24e1-4f6b-b0b7-47affa64a84a
 name: Steven Johnson
+given_name: Steven
+family_name: Johnson
+email: steven.johnson@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_johnson_steven_1.jpg
 party:
 - name: Republican
 roles:
-- district: '108'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
+  district: '108'
 contact_details:
 - note: Capitol Office
   address: Room 276-W;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -13,16 +17,12 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/rep_johnson_steven_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_johnson_steven_1/
-sources:
-- url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_johnson_steven_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_johnson_steven_1.jpg
-extras:
-  occupation: Farmer
-other_identifiers:
-- identifier: KSL000095
-  scheme: legacy_openstates
-given_name: Steven
-family_name: Johnson
-email: steven.johnson@house.ks.gov
 other_names:
 - name: S.Johnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000095
+sources:
+- url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_johnson_steven_1
+extras:
+  occupation: Farmer

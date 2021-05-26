@@ -1,11 +1,15 @@
 id: ocd-person/777f58bb-9d6b-4755-ab7b-b94d11629cb5
 name: Ed Setzler
+given_name: Ed
+family_name: Setzler
+email: ed.setzler@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/setzler-ed-203.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '35'
 contact_details:
 - note: Capitol Office
   address: 401-I State Capitol;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=203&Session=27
 - url: https://www.legis.ga.gov/members/house/203?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000198
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=203&Session=27
 - url: https://www.legis.ga.gov/members/house/203?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/setzler-ed-203.jpg
-family_name: Setzler
-given_name: Ed
 extras:
   guid: 203
   city: Acworth
   georgia_id: 203
   residence: Acworth
-other_identifiers:
-- identifier: GAL000198
-  scheme: legacy_openstates
-email: ed.setzler@house.ga.gov

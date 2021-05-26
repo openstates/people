@@ -1,19 +1,28 @@
 id: ocd-person/03c06165-52b7-4d4a-bf27-e6fdfc4c46f4
 name: Justin Hill
+given_name: Justin
+family_name: Hill
+email: Justin.Hill@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1784
 party:
 - name: Republican
 roles:
-- district: '108'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '108'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 311; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 311; Jefferson
+    City MO 65101
   voice: 573-751-3572
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=108
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=108
+other_names:
+- name: Hill, Justin
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000408
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=108
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Justin
   last_name: Hill
-other_identifiers:
-- identifier: MOL000408
-  scheme: legacy_openstates
-given_name: Justin
-family_name: Hill
-email: Justin.Hill@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1784
-other_names:
-- name: Hill, Justin

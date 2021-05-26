@@ -1,15 +1,19 @@
 id: ocd-person/a2d8a32a-3bbe-487a-9ec0-a79160b4f31f
 name: Kim LaSata
+given_name: Kim
+family_name: LaSata
+email: SenKLaSata@senate.michigan.gov
+image: https://senate.michigan.gov/_images/21st.jpg
 party:
 - name: Republican
 roles:
-- district: '79'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '21'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '79'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '21'
 contact_details:
 - note: Capitol Office
   address: S-310 Capitol Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-0897
 links:
 - url: https://www.statesenatorkimlasata.com/
-- note: Contact
-  url: https://www.statesenatorkimlasata.com/contact
+- url: https://www.statesenatorkimlasata.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000362
 sources:
 - url: https://www.statesenatorkimlasata.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-image: https://senate.michigan.gov/_images/21st.jpg
-other_identifiers:
-- identifier: MIL000362
-  scheme: legacy_openstates
-given_name: Kim
-family_name: LaSata
-email: SenKLaSata@senate.michigan.gov

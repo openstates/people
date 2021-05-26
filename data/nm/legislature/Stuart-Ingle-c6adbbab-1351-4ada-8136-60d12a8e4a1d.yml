@@ -1,11 +1,15 @@
 id: ocd-person/c6adbbab-1351-4ada-8136-60d12a8e4a1d
 name: Stuart Ingle
+given_name: Stuart
+family_name: Ingle
+email: stuart.ingle@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SINGL.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
+  district: '27'
 contact_details:
 - note: Capitol Office
   address: Room 109A State Capitol;Santa Fe, NM 87501
@@ -15,16 +19,12 @@ contact_details:
   voice: 575-356-3088
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SINGL
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000027
+- scheme: legacy_openstates
+  identifier: NML000196
+- scheme: legacy_openstates
+  identifier: NML000367
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SINGL
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SINGL.jpg
-other_identifiers:
-- identifier: NML000027
-  scheme: legacy_openstates
-- identifier: NML000196
-  scheme: legacy_openstates
-- identifier: NML000367
-  scheme: legacy_openstates
-given_name: Stuart
-family_name: Ingle
-email: stuart.ingle@nmlegis.gov

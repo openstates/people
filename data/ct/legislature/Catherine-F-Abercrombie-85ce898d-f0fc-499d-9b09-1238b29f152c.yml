@@ -1,11 +1,14 @@
 id: ocd-person/85ce898d-f0fc-499d-9b09-1238b29f152c
 name: Catherine F. Abercrombie
+given_name: Catherine
+family_name: Abercrombie
+email: Catherine.Abercrombie@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '83'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '83'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2002;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-634-8770
 links:
 - url: http://www.housedems.ct.gov/Abercrombie
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000119
-  scheme: legacy_openstates
-given_name: Catherine
-family_name: Abercrombie
-email: Catherine.Abercrombie@cga.ct.gov
 other_names:
 - name: Abercrombie, Catherine F.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000119
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -2,27 +2,27 @@ id: ocd-person/73004c9a-247e-48fb-ab0d-27c616689b87
 name: Tom Rice
 given_name: Tom
 family_name: Rice
+image: http://www.house.ga.gov/SiteCollectionImages/RiceTom194.jpg
 party:
 - name: Republican
 roles:
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '51'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '95'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/RiceTom194.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '51'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=194&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000191
+- scheme: legacy_openstates
+  identifier: GAL000347
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=194&Session=24
-other_identifiers:
-- identifier: GAL000191
-  scheme: legacy_openstates
-- identifier: GAL000347
-  scheme: legacy_openstates

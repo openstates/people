@@ -1,11 +1,15 @@
 id: ocd-person/adde7784-4e40-4bd5-892d-f45189ad8962
 name: Carol Blood
+given_name: Carol
+family_name: Blood
+email: cblood@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist03.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '3'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: Room 1021; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist03
 - url: http://news.legislature.ne.gov/dist03/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000093
+- scheme: legacy_openstates
+  identifier: NEL000178
 sources:
 - url: http://news.legislature.ne.gov/dist03
 - url: http://news.legislature.ne.gov/dist03/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist03.jpg
-other_identifiers:
-- identifier: NEL000093
-  scheme: legacy_openstates
-- identifier: NEL000178
-  scheme: legacy_openstates
-given_name: Carol
-family_name: Blood
-email: cblood@leg.ne.gov

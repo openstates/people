@@ -2,19 +2,19 @@ id: ocd-person/cc9ec2fa-13ab-466a-a0d6-a14e490ce1bf
 name: Tom Hancock
 given_name: Tom
 family_name: Hancock
+image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=84&PID=792
 party:
 - name: Democratic
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=84&PID=792
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '16'
 links:
 - url: http://www.legis.iowa.gov/Legislators/senate.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000026
 sources:
 - url: http://www.legis.iowa.gov/Legislators/senate.aspx
-other_identifiers:
-- identifier: IAL000026
-  scheme: legacy_openstates

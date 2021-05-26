@@ -1,21 +1,25 @@
 id: ocd-person/0e375630-02a4-4e59-ac80-869f9a199b2a
 name: Ed Hooper
+given_name: Ed
+family_name: Hooper
+email: hooper.ed.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s16_5344.jpg
 party:
 - name: Republican
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '67'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
-  start_date: 2013-01-01
-  end_date: 2014-12-31
-- district: '16'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
+  district: '50'
+- start_date: 2013-01-01
+  end_date: 2014-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '67'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '16'
 contact_details:
 - note: Capitol Office
   address: 302 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -26,20 +30,16 @@ contact_details:
 links:
 - url: http://www.flsenate.gov/Senators/s16
 - url: http://www.flsenate.gov/Senators/2018-2020/S16
+other_names:
+- name: Hooper
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000091
+- scheme: legacy_openstates
+  identifier: FLL000251
+- scheme: openstates
+  identifier: ocd-person/570f727a-634c-465a-8347-ab1477e8f634
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s16
 - url: http://www.flsenate.gov/Senators/2018-2020/S16
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s16_5344.jpg
-other_identifiers:
-- identifier: FLL000091
-  scheme: legacy_openstates
-- identifier: FLL000251
-  scheme: legacy_openstates
-- identifier: ocd-person/570f727a-634c-465a-8347-ab1477e8f634
-  scheme: openstates
-email: hooper.ed.web@flsenate.gov
-given_name: Ed
-family_name: Hooper
-other_names:
-- name: Hooper

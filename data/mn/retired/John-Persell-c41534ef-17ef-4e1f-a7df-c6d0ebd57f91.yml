@@ -1,34 +1,34 @@
 id: ocd-person/c41534ef-17ef-4e1f-a7df-c6d0ebd57f91
 name: John Persell
+given_name: John
+family_name: Persell
+email: rep.john.persell@house.mn
+image: https://www.house.leg.state.mn.us/hinfo/memberimgls91/05A.gif
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 4A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: 2009-01-01
+- start_date: 2009-01-01
   end_date: 2012-12-31
-- district: 5A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2019-01-08'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 4A
+- start_date: '2019-01-08'
   end_date: '2021-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 5A
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15298
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000329
+- scheme: legacy_openstates
+  identifier: MNL000074
+- scheme: legacy_openstates
+  identifier: MNL000461
+- scheme: legacy_openstates
+  identifier: MNL000593
+- scheme: openstates
+  identifier: ocd-person/5be01674-a330-4d12-9746-f16a6432caef
 sources:
 - url: http://www.house.leg.state.mn.us/members/hmem.asp
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls91/05A.gif
-given_name: John
-family_name: Persell
-other_identifiers:
-- identifier: MNL000329
-  scheme: legacy_openstates
-- identifier: MNL000074
-  scheme: legacy_openstates
-- identifier: MNL000461
-  scheme: legacy_openstates
-- identifier: MNL000593
-  scheme: legacy_openstates
-- identifier: ocd-person/5be01674-a330-4d12-9746-f16a6432caef
-  scheme: openstates
-email: rep.john.persell@house.mn

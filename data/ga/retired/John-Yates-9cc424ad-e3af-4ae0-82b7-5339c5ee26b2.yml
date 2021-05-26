@@ -2,22 +2,22 @@ id: ocd-person/9cc424ad-e3af-4ae0-82b7-5339c5ee26b2
 name: John Yates
 given_name: John
 family_name: Yates
+image: http://www.house.ga.gov/SiteCollectionImages/YatesJohn235.jpg
 party:
 - name: Republican
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/YatesJohn235.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '73'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=235&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000233
+- scheme: legacy_openstates
+  identifier: GAL000377
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=235&Session=24
-other_identifiers:
-- identifier: GAL000233
-  scheme: legacy_openstates
-- identifier: GAL000377
-  scheme: legacy_openstates

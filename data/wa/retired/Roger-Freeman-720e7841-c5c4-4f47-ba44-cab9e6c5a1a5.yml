@@ -2,19 +2,19 @@ id: ocd-person/720e7841-c5c4-4f47-ba44-cab9e6c5a1a5
 name: Roger Freeman
 given_name: Roger
 family_name: Freeman
+image: http://www.leg.wa.gov/house/representatives/publishingimages/freeman.jpg
 party:
 - name: Democratic
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://www.leg.wa.gov/house/representatives/publishingimages/freeman.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '30'
 links:
 - url: http://www.leg.wa.gov/house/representatives/Pages/freeman.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000175
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/freeman.aspx
-other_identifiers:
-- identifier: WAL000175
-  scheme: legacy_openstates

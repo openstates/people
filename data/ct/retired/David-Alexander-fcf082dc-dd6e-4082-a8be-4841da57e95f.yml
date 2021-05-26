@@ -2,19 +2,19 @@ id: ocd-person/fcf082dc-dd6e-4082-a8be-4841da57e95f
 name: David Alexander
 given_name: David
 family_name: Alexander
+image: http://www.housedems.ct.gov/Alexander/images/Alexander_2013-04-05.jpg
 party:
 - name: Democratic
 roles:
-- district: '58'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/Alexander/images/Alexander_2013-04-05.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '58'
 links:
 - url: http://www.housedems.ct.gov/Alexander
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000204
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000204
-  scheme: legacy_openstates

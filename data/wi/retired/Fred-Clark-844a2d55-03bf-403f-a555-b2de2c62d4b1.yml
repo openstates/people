@@ -2,26 +2,26 @@ id: ocd-person/844a2d55-03bf-403f-a555-b2de2c62d4b1
 name: Fred Clark
 given_name: Fred
 family_name: Clark
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm81.jpeg
 party:
 - name: Democratic
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '81'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '42'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm81.jpeg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '81'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=81&h=A
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000357
+- scheme: legacy_openstates
+  identifier: WIL000506
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=81&h=A
-other_identifiers:
-- identifier: WIL000357
-  scheme: legacy_openstates
-- identifier: WIL000506
-  scheme: legacy_openstates

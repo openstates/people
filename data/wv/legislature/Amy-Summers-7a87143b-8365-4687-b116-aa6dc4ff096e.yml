@@ -1,11 +1,15 @@
 id: ocd-person/7a87143b-8365-4687-b116-aa6dc4ff096e
 name: Amy Summers
+given_name: Amy
+family_name: Summers
+email: amy.summers@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/summers_amy.jpg
 party:
 - name: Republican
 roles:
-- district: '49'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '49'
 contact_details:
 - note: Capitol Office
   address: Room 228M, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,12 +19,8 @@ contact_details:
   voice: 304-842-7958
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Summers
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000304
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Summers
-image: http://www.legis.state.wv.us/images/members/2021/house/summers_amy.jpg
-other_identifiers:
-- identifier: WVL000304
-  scheme: legacy_openstates
-given_name: Amy
-family_name: Summers
-email: amy.summers@wvhouse.gov

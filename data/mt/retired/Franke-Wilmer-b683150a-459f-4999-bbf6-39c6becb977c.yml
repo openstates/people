@@ -2,27 +2,27 @@ id: ocd-person/b683150a-459f-4999-bbf6-39c6becb977c
 name: Franke Wilmer
 given_name: Franke
 family_name: Wilmer
+image: http://leg.mt.gov/images/legislators_63rd/13803.jpg
 party:
 - name: Democratic
 roles:
-- district: '63'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '64'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '63'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://leg.mt.gov/images/legislators_63rd/13803.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '64'
 links:
 - url: http://leg.mt.gov/css/Sessions/63rd/leg_info.asp?HouseID=0&SessionID=107&LAWSID=13803
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000149
+- scheme: legacy_openstates
+  identifier: MTL000223
 sources:
 - url: http://leg.mt.gov/css/Sessions/63rd/leg_info.asp?HouseID=0&SessionID=107&LAWSID=13803
 - url: http://leg.mt.gov/content/sessions/63rd/2013HouseMembers.txt
-other_identifiers:
-- identifier: MTL000149
-  scheme: legacy_openstates
-- identifier: MTL000223
-  scheme: legacy_openstates

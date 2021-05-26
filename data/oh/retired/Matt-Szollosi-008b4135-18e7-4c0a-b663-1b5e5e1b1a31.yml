@@ -2,26 +2,26 @@ id: ocd-person/008b4135-18e7-4c0a-b663-1b5e5e1b1a31
 name: Matt Szollosi
 given_name: Matt
 family_name: Szollosi
+image: http://www.house.state.oh.us/houseImages/129/headshots/h49.jpg
 party:
 - name: Democratic
 roles:
-- district: '46'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '49'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '46'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.state.oh.us/houseImages/129/headshots/h49.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '49'
 links:
 - url: http://www.ohiohouse.gov/matt-szollosi
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000082
+- scheme: legacy_openstates
+  identifier: OHL000215
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000082
-  scheme: legacy_openstates
-- identifier: OHL000215
-  scheme: legacy_openstates

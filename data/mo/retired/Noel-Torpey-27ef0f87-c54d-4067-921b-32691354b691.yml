@@ -2,26 +2,26 @@ id: ocd-person/27ef0f87-c54d-4067-921b-32691354b691
 name: Noel Torpey
 given_name: Noel
 family_name: Torpey
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=494
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '29'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=494
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '52'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2015&district=139
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000182
+- scheme: legacy_openstates
+  identifier: MOL000358
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2015&district=29
-other_identifiers:
-- identifier: MOL000182
-  scheme: legacy_openstates
-- identifier: MOL000358
-  scheme: legacy_openstates

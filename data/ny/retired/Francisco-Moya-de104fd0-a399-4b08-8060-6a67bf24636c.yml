@@ -2,20 +2,20 @@ id: ocd-person/de104fd0-a399-4b08-8060-6a67bf24636c
 name: Francisco Moya
 given_name: Francisco
 family_name: Moya
+image: http://assembly.state.ny.us/mem/pic/039.jpg
 party:
 - name: Democratic
 roles:
-- district: '39'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://assembly.state.ny.us/mem/pic/039.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '39'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000162
 sources:
 - url: http://assembly.state.ny.us/mem/Francisco-P-Moya
 - url: http://cityandstateny.com/articles/politics/campaigns-and-elections/state-lawmaker-open-seats-in-albany-who-replaces-them.html
-other_identifiers:
-- identifier: NYL000162
-  scheme: legacy_openstates

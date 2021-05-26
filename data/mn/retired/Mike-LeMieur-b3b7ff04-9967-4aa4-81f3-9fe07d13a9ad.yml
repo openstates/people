@@ -2,20 +2,20 @@ id: ocd-person/b3b7ff04-9967-4aa4-81f3-9fe07d13a9ad
 name: Mike LeMieur
 given_name: Mike
 family_name: LeMieur
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls87/12B.GIF
 party:
 - name: Republican
 roles:
-- district: 12B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls87/12B.GIF
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 12B
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15357
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000297
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15357
-other_identifiers:
-- identifier: MNL000297
-  scheme: legacy_openstates

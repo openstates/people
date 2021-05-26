@@ -1,20 +1,31 @@
 id: ocd-person/ba001a98-4cdc-45e6-a107-89abb869d017
 name: Merrill F. Nelson
+given_name: Merrill
+family_name: Nelson
+email: mnelson@le.utah.gov
+image: https://le.utah.gov/images/legislator/NELSOMF.jpg
 party:
 - name: Republican
 roles:
-- district: '68'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '68'
 contact_details:
 - note: District Office
   address: 164 S 800 E, GRANTSVILLE, UT, 84029
   voice: 801-971-2172
 links:
 - url: http://house.utah.gov/rep/NELSOMF
+other_names:
+- name: Nelson, Merrill F.
+- name: Nelson, M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000142
+- scheme: legacy_openstates
+  identifier: UTL000229
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/NELSOMF.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFINELSOMF.pdf
@@ -24,14 +35,3 @@ extras:
   - http://le.utah.gov/house2/CofI/mnelson.pdf
   - http://le.utah.gov/house2/CofI/NELSOMF.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411411
-other_identifiers:
-- identifier: UTL000142
-  scheme: legacy_openstates
-- identifier: UTL000229
-  scheme: legacy_openstates
-given_name: Merrill
-family_name: Nelson
-email: mnelson@le.utah.gov
-other_names:
-- name: Nelson, Merrill F.
-- name: Nelson, M.

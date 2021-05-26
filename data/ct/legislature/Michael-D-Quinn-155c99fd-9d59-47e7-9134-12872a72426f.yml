@@ -4,17 +4,17 @@ email: Michael.Quinn@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '82'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '82'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/Quinn
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 other_names:
 - name: Quinn, Michael D
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,11 +1,14 @@
 id: ocd-person/62869ad5-5744-4a50-95f5-56ecf5549e31
 name: Michael D'Agostino
+given_name: Michael
+family_name: D'Agostino
+email: Michael.DAgostino@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '91'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '91'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3504;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 575 Ridge Road;Hamden, CT 06517
 links:
 - url: http://www.housedems.ct.gov/DAgostino
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000211
-  scheme: legacy_openstates
-given_name: Michael
-family_name: D'Agostino
-email: Michael.DAgostino@cga.ct.gov
 other_names:
 - name: D'agostino, Michael
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000211
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

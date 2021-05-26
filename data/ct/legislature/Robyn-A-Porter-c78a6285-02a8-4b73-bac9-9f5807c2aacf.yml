@@ -1,11 +1,14 @@
 id: ocd-person/c78a6285-02a8-4b73-bac9-9f5807c2aacf
 name: Robyn A. Porter
+given_name: Robyn
+family_name: Porter
+email: robyn.porter@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '94'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '94'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2704;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 99 Division Street;New Haven, CT 06511
 links:
 - url: http://www.housedems.ct.gov/Porter
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000260
-  scheme: legacy_openstates
-given_name: Robyn
-family_name: Porter
-email: robyn.porter@cga.ct.gov
 other_names:
 - name: Porter, Robyn A.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000260
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

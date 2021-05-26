@@ -2,19 +2,19 @@ id: ocd-person/3fb232a1-17d4-40f1-85e9-04d2720b5269
 name: Dean Knudson
 given_name: Dean
 family_name: Knudson
+image: http://docs.legis.wisconsin.gov/2015/legislators/assembly/1263.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://docs.legis.wisconsin.gov/2015/legislators/assembly/1263.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '30'
 links:
 - url: https://docs.legis.wisconsin.gov/2015/legislators/assembly/1263
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000465
 sources:
 - url: https://docs.legis.wisconsin.gov/2015/legislators/assembly/1263
-other_identifiers:
-- identifier: WIL000465
-  scheme: legacy_openstates

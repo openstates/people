@@ -1,16 +1,21 @@
 id: ocd-person/d3aae123-a4f8-4882-9313-ba6a400c43fb
 name: Fred Baldwin
+given_name: Fred
+family_name: Baldwin
+email: Fred.Baldwin@wyoleg.gov
+birth_date: 1965-09-23
+image: http://wyoleg.gov/LegislatorSummary/Photos/BaldwinFS14.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2018-12-31
-- district: '14'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '18'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '14'
 contact_details:
 - note: District Office
   address: P.O. Box 1032, Kemmerer WY 83101
@@ -18,13 +23,16 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2007
 - url: http://wyoleg.gov/Legislators/2021/R/2007
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000152
+- scheme: legacy_openstates
+  identifier: WYL000128
+- scheme: openstates
+  identifier: ocd-person/1727ae1d-3ddd-4949-aa1b-cfa25e093fbd
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2007
 - url: http://wyoleg.gov/Legislators/2021/R/2007
-image: http://wyoleg.gov/LegislatorSummary/Photos/BaldwinFS14.jpg
-birth_date: '1965-09-23'
-given_name: Fred
-family_name: Baldwin
 extras:
   civic_organizations:
   - orgname: South Lincoln Fire District
@@ -49,11 +57,3 @@ extras:
   religion: LDS
   spouse_given_name: Parry
   wy_leg_id: 2007
-other_identifiers:
-- identifier: WYL000152
-  scheme: legacy_openstates
-- identifier: WYL000128
-  scheme: legacy_openstates
-- identifier: ocd-person/1727ae1d-3ddd-4949-aa1b-cfa25e093fbd
-  scheme: openstates
-email: Fred.Baldwin@wyoleg.gov

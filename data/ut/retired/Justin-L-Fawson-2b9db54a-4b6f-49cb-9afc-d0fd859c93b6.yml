@@ -2,21 +2,21 @@ id: ocd-person/2b9db54a-4b6f-49cb-9afc-d0fd859c93b6
 name: Justin L. Fawson
 given_name: Justin L.
 family_name: Fawson
+image: https://le.utah.gov/images/legislator/FAWSOJL.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: https://le.utah.gov/images/legislator/FAWSOJL.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '7'
 links:
 - url: http://house.utah.gov/rep/FAWSOJL
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000148
+- scheme: legacy_openstates
+  identifier: UTL000177
 sources:
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000148
-  scheme: legacy_openstates
-- identifier: UTL000177
-  scheme: legacy_openstates

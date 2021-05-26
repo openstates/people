@@ -1,21 +1,21 @@
 id: ocd-person/0c80708e-2dcb-42ed-8ced-2cc3e2257931
 name: John Wray
+given_name: John
+family_name: Wray
+image: https://house.texas.gov/photos/members/2890.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '10'
 links:
 - url: https://house.texas.gov/members/member-page/?district=10
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000481
+- scheme: legacy_openstates
+  identifier: TXL000671
 sources:
 - url: https://house.texas.gov/members/member-page/?district=10
-image: https://house.texas.gov/photos/members/2890.jpg
-other_identifiers:
-- identifier: TXL000481
-  scheme: legacy_openstates
-- identifier: TXL000671
-  scheme: legacy_openstates
-given_name: John
-family_name: Wray

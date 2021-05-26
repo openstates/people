@@ -3,26 +3,26 @@ name: Gerald L Stebelton
 given_name: Gerald
 family_name: Stebelton
 middle_name: L
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/77.jpg
 party:
 - name: Republican
 roles:
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '77'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/77.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '5'
 links:
 - url: http://www.ohiohouse.gov/gerald-l-stebelton
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000038
+- scheme: legacy_openstates
+  identifier: OHL000246
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000038
-  scheme: legacy_openstates
-- identifier: OHL000246
-  scheme: legacy_openstates

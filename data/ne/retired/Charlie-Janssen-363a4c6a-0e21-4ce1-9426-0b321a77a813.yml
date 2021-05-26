@@ -2,19 +2,19 @@ id: ocd-person/363a4c6a-0e21-4ce1-9426-0b321a77a813
 name: Charlie Janssen
 given_name: Charlie
 family_name: Janssen
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist15.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist15.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '15'
 links:
 - url: http://news.legislature.ne.gov/dist15/biography/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000015
 sources:
 - url: http://news.legislature.ne.gov/dist15/biography/
-other_identifiers:
-- identifier: NEL000015
-  scheme: legacy_openstates

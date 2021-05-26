@@ -1,11 +1,14 @@
 id: ocd-person/ad606d1d-4567-41b6-8087-534555de2828
 name: Caroline Simmons
+given_name: Caroline
+family_name: Simmons
+email: Caroline.Simmons@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '144'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '144'
 contact_details:
 - note: Capitol Office
   address: Capitol Building;Room 407;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 48 Lakeview Drive;Stamford, CT 06905
 links:
 - url: http://www.housedems.ct.gov/Simmons
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000264
-  scheme: legacy_openstates
-given_name: Caroline
-family_name: Simmons
-email: Caroline.Simmons@cga.ct.gov
 other_names:
 - name: Simmons, Caroline
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000264
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

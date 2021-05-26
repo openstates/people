@@ -1,21 +1,21 @@
 id: ocd-person/869e7026-c395-43b4-a026-da6e834abdad
 name: Dean Murray
+given_name: Dean
+family_name: Murray
+image: http://assembly.state.ny.us/mem/pic/003.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '3'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000163
+- scheme: legacy_openstates
+  identifier: NYL000336
 sources:
 - url: http://assembly.state.ny.us/mem/Dean-Murray
-image: http://assembly.state.ny.us/mem/pic/003.jpg
-other_identifiers:
-- identifier: NYL000163
-  scheme: legacy_openstates
-- identifier: NYL000336
-  scheme: legacy_openstates
-given_name: Dean
-family_name: Murray

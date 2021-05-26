@@ -1,11 +1,15 @@
 id: ocd-person/05a586d8-4c39-4578-95f6-7aaa30b3c67c
 name: John A. Graham
+given_name: John A.
+family_name: Graham
+email: graham4rep@hotmail.com
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376343.jpg
 party:
 - name: Republican
 roles:
-- district: Hillsborough 7
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 7
 contact_details:
 - note: District Office
   address: 8 Ministerial Circle;Bedford, NH 03110-5729
@@ -13,18 +17,14 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001416
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376343
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376343.jpg
 extras:
   first_name: John
   last_name: Graham
   middle_name: A.
-other_identifiers:
-- identifier: NHL001416
-  scheme: legacy_openstates
-given_name: John A.
-family_name: Graham
-email: graham4rep@hotmail.com

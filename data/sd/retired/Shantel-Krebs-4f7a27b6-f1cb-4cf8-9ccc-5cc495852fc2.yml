@@ -2,27 +2,27 @@ id: ocd-person/4f7a27b6-f1cb-4cf8-9ccc-5cc495852fc2
 name: Shantel Krebs
 given_name: Shantel
 family_name: Krebs
+image: http://legis.state.sd.us/sessions/2011/krebss.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2011-01-01'
+  district: '10'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legis.state.sd.us/sessions/2011/krebss.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '10'
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=429
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000069
+- scheme: legacy_openstates
+  identifier: SDL000114
 sources:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=429
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=429
-other_identifiers:
-- identifier: SDL000069
-  scheme: legacy_openstates
-- identifier: SDL000114
-  scheme: legacy_openstates

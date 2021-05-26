@@ -2,19 +2,19 @@ id: ocd-person/901f8b7b-f4ab-4143-a347-dbcd4b4a1c1a
 name: Ellen Cohen
 given_name: Ellen
 family_name: Cohen
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2425.jpg
 party:
 - name: Democratic
 roles:
-- district: '134'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2425.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '134'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000234
+- scheme: legacy_openstates
+  identifier: TXL000052
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2425
-other_identifiers:
-- identifier: TXL000234
-  scheme: legacy_openstates
-- identifier: TXL000052
-  scheme: legacy_openstates

@@ -1,41 +1,41 @@
 id: ocd-person/0ef5d45b-ae38-4dd8-b04a-c4bc653eaa0c
 name: Pete Lee
+given_name: Pete
+family_name: Lee
+email: pete.lee.senate@state.co.us
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2021a_lee%2C%20sanford%20pete.jpg?itok=epwqYcLo
 party:
 - name: Democratic
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+- end_date: 2018-12-31
   type: lower
-  end_date: 2018-12-31
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '18'
+- start_date: '2019-01-04'
   type: upper
-  start_date: '2019-01-04'
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: 200 E. Colfax;RM 346;Denver, CO 80203
   voice: 303-866-6364
 links:
 - url: http://leg.colorado.gov/legislators/pete-lee
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: COL000088
+- scheme: legacy_openstates
+  identifier: COL000158
+- scheme: legacy_openstates
+  identifier: COL000199
+- scheme: legacy_openstates
+  identifier: COL000173
+- scheme: legacy_openstates
+  identifier: COL000200
+- scheme: legacy_openstates
+  identifier: COL000208
+- scheme: openstates
+  identifier: ocd-person/c2de8d3b-05cd-4d76-988e-17829385b54b
 sources:
 - url: http://leg.colorado.gov/legislators/pete-lee
 - url: http://leg.colorado.gov/legislators
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2021a_lee%2C%20sanford%20pete.jpg?itok=epwqYcLo
-given_name: Pete
-family_name: Lee
-other_identifiers:
-- identifier: COL000088
-  scheme: legacy_openstates
-- identifier: COL000158
-  scheme: legacy_openstates
-- identifier: COL000199
-  scheme: legacy_openstates
-- identifier: COL000173
-  scheme: legacy_openstates
-- identifier: COL000200
-  scheme: legacy_openstates
-- identifier: COL000208
-  scheme: legacy_openstates
-- identifier: ocd-person/c2de8d3b-05cd-4d76-988e-17829385b54b
-  scheme: openstates
-email: pete.lee.senate@state.co.us

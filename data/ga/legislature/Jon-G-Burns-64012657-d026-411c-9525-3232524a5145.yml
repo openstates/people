@@ -1,11 +1,15 @@
 id: ocd-person/64012657-d026-411c-9525-3232524a5145
 name: Jon Burns
+given_name: Jon
+family_name: Burns
+email: jon.burns@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/burns-jon-73.jpg
 party:
 - name: Republican
 roles:
-- district: '159'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '159'
 contact_details:
 - note: Capitol Office
   address: 338 State Capitol;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=73&Session=27
 - url: https://www.legis.ga.gov/members/house/73?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000078
+- scheme: legacy_openstates
+  identifier: GAL000254
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=73&Session=27
 - url: https://www.legis.ga.gov/members/house/73?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/burns-jon-73.jpg
-family_name: Burns
-given_name: Jon
 extras:
   guid: 73
   city: Newington
   georgia_id: 73
   residence: Newington
-other_identifiers:
-- identifier: GAL000078
-  scheme: legacy_openstates
-- identifier: GAL000254
-  scheme: legacy_openstates
-email: jon.burns@house.ga.gov

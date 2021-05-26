@@ -1,20 +1,23 @@
 id: ocd-person/85b52584-f605-4648-98f6-851368bcd444
 name: James Byrd
+given_name: James
+family_name: Byrd
+birth_date: 1954-03-14
+image: http://wyoleg.gov/LegislatorSummary/Photos/ByrdJH44.jpg
 party:
 - name: Democratic
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: lower
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '44'
 links:
 - url: http://wyoleg.gov/Legislators/2018/D/1241
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000041
 sources:
 - url: http://wyoleg.gov/Legislators/2018/D/1241
-image: http://wyoleg.gov/LegislatorSummary/Photos/ByrdJH44.jpg
-birth_date: '1954-03-14'
-given_name: James
-family_name: Byrd
 extras:
   county: Laramie
   number_children: '2'
@@ -23,6 +26,3 @@ extras:
   religion: Catholic
   spouse_given_name: null
   wy_leg_id: 1241
-other_identifiers:
-- identifier: WYL000041
-  scheme: legacy_openstates

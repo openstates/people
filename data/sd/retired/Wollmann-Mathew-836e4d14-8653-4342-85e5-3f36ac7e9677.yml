@@ -2,31 +2,31 @@ id: ocd-person/836e4d14-8653-4342-85e5-3f36ac7e9677
 name: Mathew Wollmann
 given_name: Mathew
 family_name: Wollmann
+image: http://www.sdlegislature.gov/img/Legislators/Wollmann_2017.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2017-01-01'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '8'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.sdlegislature.gov/img/Legislators/Wollmann_2017.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '8'
 links:
 - url: http://www.sdlegislature.gov/Legislators/Legislators/MemberCommittees.aspx?Member=1138&Session=2017
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1053&Session=2016
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000322
+- scheme: openstates
+  identifier: ocd-person/957efe80-366f-4040-b66d-5c5b18daaf90
+- scheme: legacy_openstates
+  identifier: SDL000255
 sources:
 - url: http://www.sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1138&Session=2017&Cleaned=True
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1053&Session=2016
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=1053&Session=2016
-other_identifiers:
-- identifier: SDL000322
-  scheme: legacy_openstates
-- identifier: ocd-person/957efe80-366f-4040-b66d-5c5b18daaf90
-  scheme: openstates
-- identifier: SDL000255
-  scheme: legacy_openstates

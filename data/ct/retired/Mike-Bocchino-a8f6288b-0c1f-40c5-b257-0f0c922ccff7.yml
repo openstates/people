@@ -1,18 +1,18 @@
 id: ocd-person/a8f6288b-0c1f-40c5-b257-0f0c922ccff7
 name: Mike Bocchino
+given_name: Mike
+family_name: Bocchino
 party:
 - name: Republican
 roles:
-- district: '150'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '150'
 links:
 - url: http://www.cthousegop.com/Bocchino/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000283
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000283
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Bocchino

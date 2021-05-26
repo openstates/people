@@ -5,16 +5,16 @@ family_name: Tilleman
 party:
 - name: Republican
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '17'
 links:
 - url: http://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=3750
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000039
 sources:
 - url: http://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=3750
 - url: http://leg.mt.gov/content/sessions/62nd/2011SenateMembers.txt
-other_identifiers:
-- identifier: MTL000039
-  scheme: legacy_openstates

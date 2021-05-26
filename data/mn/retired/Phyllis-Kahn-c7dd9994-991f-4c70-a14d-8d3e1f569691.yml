@@ -2,30 +2,30 @@ id: ocd-person/c7dd9994-991f-4c70-a14d-8d3e1f569691
 name: Phyllis Kahn
 given_name: Phyllis
 family_name: Kahn
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls89/tn_60B.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 59B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: 60B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 59B
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls89/tn_60B.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 60B
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=10302
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000285
+- scheme: legacy_openstates
+  identifier: MNL000185
+- scheme: legacy_openstates
+  identifier: MNL000425
+- scheme: legacy_openstates
+  identifier: MNL000625
 sources:
 - url: http://www.house.leg.state.mn.us/members/hmem.asp
-other_identifiers:
-- identifier: MNL000285
-  scheme: legacy_openstates
-- identifier: MNL000185
-  scheme: legacy_openstates
-- identifier: MNL000425
-  scheme: legacy_openstates
-- identifier: MNL000625
-  scheme: legacy_openstates

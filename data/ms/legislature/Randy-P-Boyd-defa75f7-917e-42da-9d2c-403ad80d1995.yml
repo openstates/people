@@ -1,11 +1,15 @@
 id: ocd-person/defa75f7-917e-42da-9d2c-403ad80d1995
 name: Randy P. Boyd
+given_name: Randy P.
+family_name: Boyd
+email: rboyd@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/boyd.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '19'
 contact_details:
 - note: Capitol Office
   address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 662-282-4045
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/boyd.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000215
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/boyd.xml
-image: http://billstatus.ls.state.ms.us/members/house/boyd.jpg
 extras:
   org_info: Rep. Boyd is a member of the Mantachie Lion's Club, M.A.P.S., S.A.F.,
     M.F.A., and Deacon's Board.
-other_identifiers:
-- identifier: MSL000215
-  scheme: legacy_openstates
-given_name: Randy P.
-family_name: Boyd
-email: rboyd@house.ms.gov

@@ -1,24 +1,24 @@
 id: ocd-person/02f82fcd-70f0-412f-9587-abde2991ed5c
 name: Nate Walker
+given_name: Nate
+family_name: Walker
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '3'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=3
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000359
+- scheme: legacy_openstates
+  identifier: MOL000369
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=3
 extras:
   first_name: Nate
   last_name: Walker
-other_identifiers:
-- identifier: MOL000359
-  scheme: legacy_openstates
-- identifier: MOL000369
-  scheme: legacy_openstates
-given_name: Nate
-family_name: Walker

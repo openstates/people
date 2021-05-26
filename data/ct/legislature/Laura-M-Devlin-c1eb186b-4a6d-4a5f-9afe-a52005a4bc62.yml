@@ -1,11 +1,14 @@
 id: ocd-person/c1eb186b-4a6d-4a5f-9afe-a52005a4bc62
 name: Laura M. Devlin
+given_name: Laura
+family_name: Devlin
+email: Laura.Devlin@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '134'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '134'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2304;Hartford, CT 06106
@@ -14,15 +17,12 @@ contact_details:
   address: 85 Brett Lane;Fairfield, CT 06824
 links:
 - url: http://www.cthousegop.com/Devlin/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000266
-  scheme: legacy_openstates
-- identifier: CTL000360
-  scheme: legacy_openstates
-given_name: Laura
-family_name: Devlin
-email: Laura.Devlin@housegop.ct.gov
 other_names:
 - name: Devlin, Laura M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000266
+- scheme: legacy_openstates
+  identifier: CTL000360
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

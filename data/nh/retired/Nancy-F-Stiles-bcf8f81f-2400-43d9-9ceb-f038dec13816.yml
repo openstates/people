@@ -3,26 +3,26 @@ name: Nancy F Stiles
 given_name: Nancy
 family_name: Stiles
 middle_name: F
+image: http://www.gencourt.state.nh.us/Senate/images/senators/24.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '24'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.gencourt.state.nh.us/Senate/images/senators/24.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '24'
 links:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district24.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000023
+- scheme: legacy_openstates
+  identifier: NHL001291
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district24.aspx
-other_identifiers:
-- identifier: NHL000023
-  scheme: legacy_openstates
-- identifier: NHL001291
-  scheme: legacy_openstates

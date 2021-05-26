@@ -2,19 +2,19 @@ id: ocd-person/6aee2fc9-d9b8-4d85-ad32-1fe81f1f7c8c
 name: Michelle Litjens
 given_name: Michelle
 family_name: Litjens
+image: http://legis.wisconsin.gov//Assembly/asm56/asm56.jpg
 party:
 - name: Republican
 roles:
-- district: '56'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legis.wisconsin.gov//Assembly/asm56/asm56.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '56'
 links:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=56
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000470
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=56
-other_identifiers:
-- identifier: WIL000470
-  scheme: legacy_openstates

@@ -1,11 +1,15 @@
 id: ocd-person/b68e46b2-ab04-4e52-8269-be6f9b5cf134
 name: John Lowe
+given_name: John
+family_name: Lowe
+email: jlowe@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist37.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '37'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '37'
 contact_details:
 - note: Capitol Office
   address: Room 2011; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist37
 - url: http://news.legislature.ne.gov/dist37/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000101
+- scheme: legacy_openstates
+  identifier: NEL000186
 sources:
 - url: http://news.legislature.ne.gov/dist37
 - url: http://news.legislature.ne.gov/dist37/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist37.jpg
-other_identifiers:
-- identifier: NEL000101
-  scheme: legacy_openstates
-- identifier: NEL000186
-  scheme: legacy_openstates
-given_name: John
-family_name: Lowe
-email: jlowe@leg.ne.gov

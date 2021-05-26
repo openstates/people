@@ -1,24 +1,24 @@
 id: ocd-person/d035b5d7-49db-46f4-9758-57e8ff085a8f
 name: Stacey Newman
+given_name: Stacey
+family_name: Newman
 party:
 - name: Democratic
 roles:
-- district: '87'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '87'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=87
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000140
+- scheme: legacy_openstates
+  identifier: MOL000318
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=87
 extras:
   first_name: Stacey
   last_name: Newman
-other_identifiers:
-- identifier: MOL000140
-  scheme: legacy_openstates
-- identifier: MOL000318
-  scheme: legacy_openstates
-given_name: Stacey
-family_name: Newman

@@ -1,26 +1,26 @@
 id: ocd-person/623725aa-b13f-4852-a43c-b782393d4418
 name: Bob Andrzejczak
+given_name: Bob
+family_name: Andrzejczak
+gender: Male
+image: http://www.njleg.state.nj.us/members/memberphotos/andrzejczak_color.jpg
 party:
 - name: Democratic
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+- end_date: '2019-01-14'
   type: lower
-  end_date: '2019-01-14'
-- district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: upper
-  start_date: 2019-01-15
+  district: '1'
+- start_date: 2019-01-15
   end_date: 2020-01-14
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '1'
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=357
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000175
 sources:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=357
 - url: http://www.njleg.state.nj.us/downloads.asp
-image: http://www.njleg.state.nj.us/members/memberphotos/andrzejczak_color.jpg
-gender: Male
-other_identifiers:
-- identifier: NJL000175
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Andrzejczak

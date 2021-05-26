@@ -1,11 +1,15 @@
 id: ocd-person/622761e7-fba1-4a35-879b-45a6dd021ab0
 name: Joey Hood
+given_name: Joey
+family_name: Hood
+email: jhood@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/hood.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '35'
 contact_details:
 - note: Capitol Office
   address: Room 112-E;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 662-547-9818
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/hood.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000211
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/hood.xml
-image: http://billstatus.ls.state.ms.us/members/house/hood.jpg
 extras:
   org_info: Rep. Hood is a member of the Mississippi Bar Association, Choctaw County
     Medical Foundation, and Simpson Volunteer Fire Department.
-other_identifiers:
-- identifier: MSL000211
-  scheme: legacy_openstates
-given_name: Joey
-family_name: Hood
-email: jhood@house.ms.gov

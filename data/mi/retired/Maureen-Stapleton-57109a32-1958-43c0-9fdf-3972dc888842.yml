@@ -5,17 +5,17 @@ family_name: Stapleton
 party:
 - name: Democratic
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '4'
 links:
 - url: http://004.housedems.com/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000042
+- scheme: legacy_openstates
+  identifier: MIL000153
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000042
-  scheme: legacy_openstates
-- identifier: MIL000153
-  scheme: legacy_openstates

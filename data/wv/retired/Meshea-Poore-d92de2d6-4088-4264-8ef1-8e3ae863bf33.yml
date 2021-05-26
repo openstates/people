@@ -2,28 +2,28 @@ id: ocd-person/d92de2d6-4088-4264-8ef1-8e3ae863bf33
 name: Meshea Poore
 given_name: Meshea L.
 family_name: Poore
+image: http://www.legis.state.wv.us/../images/members/2013/house/poore_meshea.jpg
 party:
 - name: Democratic
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '37'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.state.wv.us/../images/members/2013/house/poore_meshea.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '31'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Poore
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000096
+- scheme: legacy_openstates
+  identifier: WVL000187
+- scheme: legacy_openstates
+  identifier: WVL000274
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Poore
-other_identifiers:
-- identifier: WVL000096
-  scheme: legacy_openstates
-- identifier: WVL000187
-  scheme: legacy_openstates
-- identifier: WVL000274
-  scheme: legacy_openstates

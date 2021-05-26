@@ -2,31 +2,31 @@ id: ocd-person/0936391b-832c-4b20-8e24-9bf8163ffc50
 name: Brandon A. Hixon
 given_name: Brandon A.
 family_name: Hixon
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Hixon2064.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2017-01-01'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '10'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Hixon2064.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '10'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2017&district=10
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=2064
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000322
+- scheme: openstates
+  identifier: ocd-person/79ae7d4b-5c9c-4144-849d-e5ceff5eef9e
+- scheme: legacy_openstates
+  identifier: IDL000158
 sources:
 - url: https://legislature.idaho.gov/house/membership/
 - url: http://www.idahostatesman.com/news/politics-government/state-politics/article181973131.html
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000322
-  scheme: legacy_openstates
-- identifier: ocd-person/79ae7d4b-5c9c-4144-849d-e5ceff5eef9e
-  scheme: openstates
-- identifier: IDL000158
-  scheme: legacy_openstates

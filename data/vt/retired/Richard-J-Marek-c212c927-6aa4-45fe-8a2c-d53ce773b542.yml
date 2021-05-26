@@ -3,26 +3,26 @@ name: Richard J Marek
 given_name: Richard
 family_name: Marek
 middle_name: J
+image: http://vermont-elections.org/2009-2010BioBook/jpegs/marek.jpg
 party:
 - name: Democratic
 roles:
-- district: Windham-6
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Windham-5
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windham-6
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://vermont-elections.org/2009-2010BioBook/jpegs/marek.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windham-5
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000114
+- scheme: legacy_openstates
+  identifier: VTL000282
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000114
-  scheme: legacy_openstates
-- identifier: VTL000282
-  scheme: legacy_openstates

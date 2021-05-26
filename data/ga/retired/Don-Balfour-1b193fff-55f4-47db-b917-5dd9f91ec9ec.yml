@@ -2,20 +2,20 @@ id: ocd-person/1b193fff-55f4-47db-b917-5dd9f91ec9ec
 name: Don Balfour
 given_name: Don
 family_name: Balfour
+image: http://www.senate.ga.gov/SiteCollectionImages/BalfourDon2.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senate.ga.gov/SiteCollectionImages/BalfourDon2.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '9'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=2&Session=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000002
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=2&Session=23
-other_identifiers:
-- identifier: GAL000002
-  scheme: legacy_openstates

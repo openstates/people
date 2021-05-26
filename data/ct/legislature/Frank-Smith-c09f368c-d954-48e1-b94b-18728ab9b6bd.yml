@@ -1,22 +1,22 @@
 id: ocd-person/c09f368c-d954-48e1-b94b-18728ab9b6bd
 name: Frank Smith
+given_name: Frank
+family_name: Smith
 email: Frank.Smith@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '118'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '118'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/SmithF
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Frank
-family_name: Smith
 other_names:
 - name: Smith, Frank
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

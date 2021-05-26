@@ -1,11 +1,14 @@
 id: ocd-person/50e78f89-a9e7-43f5-9566-a9f2cb23a5c9
 name: Patrick S. Boyd
+given_name: Patrick
+family_name: Boyd
+email: Pat.Boyd@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '50'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '50'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4005;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-963-5202
 links:
 - url: http://www.housedems.ct.gov/Boyd
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000350
-  scheme: legacy_openstates
-given_name: Patrick
-family_name: Boyd
-email: Pat.Boyd@cga.ct.gov
 other_names:
 - name: Boyd, Patrick S.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000350
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

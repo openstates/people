@@ -2,17 +2,17 @@ id: ocd-person/0fa59b1e-3735-40bb-a87c-81fc2643ffa3
 name: Kathy Miles
 given_name: Kathy
 family_name: Miles
+image: http://legis.state.sd.us/sessions/2010/milesk.jpg
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2010/milesk.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '15'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000025
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=44
-other_identifiers:
-- identifier: SDL000025
-  scheme: legacy_openstates

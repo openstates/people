@@ -1,11 +1,15 @@
 id: ocd-person/0e3a253d-dc05-4665-83b4-962bcd7a390b
 name: Sonya Williams-Barnes
+given_name: Sonya
+family_name: Williams-Barnes
+email: swilliams-barnes@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/williams-barnes.jpg
 party:
 - name: Democratic
 roles:
-- district: '119'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '119'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT-B;P. O. Box 1018;Jackson, MS 39215
@@ -14,16 +18,12 @@ contact_details:
   address: 2018 31st Ave;Gulfport, MS 39501
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/williams-barnes.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000220
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/williams-barnes.xml
-image: http://billstatus.ls.state.ms.us/members/house/williams-barnes.jpg
 extras:
   org_info: Rep. Williams-Barnes is a member of AKA Sorority Inc., NAACP, Saving Our
     Sisters-Teen Pregnancy Prevention, Morning Star M.B. Church, and Youth Council
     Advisory Board.
-other_identifiers:
-- identifier: MSL000220
-  scheme: legacy_openstates
-given_name: Sonya
-family_name: Williams-Barnes
-email: swilliams-barnes@house.ms.gov

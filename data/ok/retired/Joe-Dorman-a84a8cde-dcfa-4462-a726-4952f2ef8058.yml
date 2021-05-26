@@ -2,20 +2,20 @@ id: ocd-person/a84a8cde-dcfa-4462-a726-4952f2ef8058
 name: Joe Dorman
 given_name: Joe
 family_name: Dorman
+image: http://www.okhouse.gov/Members/Pictures/joe_photox175.jpg
 party:
 - name: Democratic
 roles:
-- district: '65'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.okhouse.gov/Members/Pictures/joe_photox175.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '65'
 links:
 - url: http://www.okhouse.gov/District.aspx?District=65
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000068
 sources:
 - url: http://www.okhouse.gov/Members/Default.aspx
 - url: http://www.okhouse.gov/District.aspx?District=65
-other_identifiers:
-- identifier: OKL000068
-  scheme: legacy_openstates

@@ -1,11 +1,14 @@
 id: ocd-person/5d963d6d-74c1-4282-9ad4-592c3760bead
 name: Robin E. Comey
+given_name: Robin
+family_name: Comey
+email: Robin.Comey@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '102'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '102'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4000;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 203-415-5613
 links:
 - url: http://housedems.ct.gov/comey
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Robin
-family_name: Comey
-email: Robin.Comey@cga.ct.gov
 other_names:
 - name: Comey, Robin E.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

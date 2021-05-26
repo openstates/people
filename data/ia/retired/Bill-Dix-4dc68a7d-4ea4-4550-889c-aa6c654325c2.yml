@@ -2,26 +2,26 @@ id: ocd-person/4dc68a7d-4ea4-4550-889c-aa6c654325c2
 name: Bill Dix
 given_name: Bill
 family_name: Dix
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2017-2018&pid=22
 party:
 - name: Republican
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '25'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2017-2018&pid=22
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '9'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=87&personID=22
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000016
+- scheme: legacy_openstates
+  identifier: IAL000190
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=87&personID=22
-other_identifiers:
-- identifier: IAL000016
-  scheme: legacy_openstates
-- identifier: IAL000190
-  scheme: legacy_openstates

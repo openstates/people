@@ -1,12 +1,15 @@
 id: ocd-person/8c139a04-43ed-48c5-98cc-e2d308efa65b
 name: Dennis DeBar, Jr.
+given_name: Dennis
+family_name: DeBar
+email: ddebar@senate.ms.gov
+image: http://billstatus.ls.state.ms.us/members/senate/debar.jpg
 party:
 - name: Republican
 roles:
-- district: '43'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-email: ddebar@senate.ms.gov
+  district: '43'
 contact_details:
 - note: Capitol Office
   address: Room 407;P. O. Box 1018;Jackson, MS 39215
@@ -15,18 +18,15 @@ contact_details:
   address: P.O. Box 1090;Leakesville, MS 39451
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/debar.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000209
+- scheme: legacy_openstates
+  identifier: MSL000274
+- scheme: legacy_openstates
+  identifier: MSL000287
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/debar.xml
-image: http://billstatus.ls.state.ms.us/members/senate/debar.jpg
 extras:
   org_info: Senator DeBar is a member of the Bar Association of Mississippi, Farm
     Bureau, National Guard Association of Mississippi and a NRA Life Member.
-other_identifiers:
-- identifier: MSL000209
-  scheme: legacy_openstates
-- identifier: MSL000274
-  scheme: legacy_openstates
-- identifier: MSL000287
-  scheme: legacy_openstates
-given_name: Dennis
-family_name: DeBar

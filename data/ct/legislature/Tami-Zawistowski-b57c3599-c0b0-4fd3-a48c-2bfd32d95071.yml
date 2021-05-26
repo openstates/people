@@ -1,11 +1,14 @@
 id: ocd-person/b57c3599-c0b0-4fd3-a48c-2bfd32d95071
 name: Tami Zawistowski
+given_name: Tami
+family_name: Zawistowski
+email: Tami.Zawistowski@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '61'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '61'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2105;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-658-1191
 links:
 - url: http://www.cthousegop.com/Zawistowski/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000259
-  scheme: legacy_openstates
-given_name: Tami
-family_name: Zawistowski
-email: Tami.Zawistowski@housegop.ct.gov
 other_names:
 - name: Zawistowski, Tami
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000259
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

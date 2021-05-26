@@ -1,33 +1,33 @@
 id: ocd-person/54c93c1b-968f-4b39-a17f-26ebcb266f69
 name: Mike Cuffe
+given_name: Mike
+family_name: Cuffe
+email: mcuffe@interbel.net
 party:
 - name: Republican
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: 2018-01-01
   type: lower
-  end_date: 2018-01-01
-- district: '1'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
+  district: '2'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '1'
+contact_details:
+- note: Capitol Office
+  address: PO BOX 1685;Eureka, MT 59917-1685
+  voice: 406-293-1247
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5034
 - url: https://leg.mt.gov/legislator-information/roster/individual/6803
+other_names:
+- name: Cuffe, Mike
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000069
+- scheme: openstates
+  identifier: ocd-person/c841e01f-4518-4bb0-a791-d421d9c9d360
 sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5034
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6803
-contact_details:
-- note: Capitol Office
-  voice: 406-293-1247
-  address: PO BOX 1685;Eureka, MT 59917-1685
-other_identifiers:
-- identifier: MTL000069
-  scheme: legacy_openstates
-- identifier: ocd-person/c841e01f-4518-4bb0-a791-d421d9c9d360
-  scheme: openstates
-email: mcuffe@interbel.net
-given_name: Mike
-family_name: Cuffe
-other_names:
-- name: Cuffe, Mike

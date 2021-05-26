@@ -1,11 +1,13 @@
 id: ocd-person/77713b68-e8ef-455e-80a6-1614488fb71a
 name: Mae Flexer
+given_name: Mae
+family_name: Flexer
 party:
 - name: Democratic
 roles:
-- district: '29'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '29'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 1805;Hartford, CT 06106
@@ -15,16 +17,14 @@ contact_details:
   voice: 860-208-0429
 links:
 - url: http://www.senatedems.ct.gov/Flexer
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000080
-  scheme: legacy_openstates
-- identifier: CTL000284
-  scheme: legacy_openstates
-- identifier: CTL000302
-  scheme: legacy_openstates
-given_name: Mae
-family_name: Flexer
 other_names:
 - name: Flexer, Mae
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000080
+- scheme: legacy_openstates
+  identifier: CTL000284
+- scheme: legacy_openstates
+  identifier: CTL000302
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

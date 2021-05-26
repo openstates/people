@@ -1,26 +1,26 @@
 id: ocd-person/79ffab1c-4d79-4cfa-89b4-5f7ee95ca1bf
 name: Tom Oliverson
+given_name: Tom
+family_name: Oliverson
+image: https://house.texas.gov/photos/members/3535.jpg
 party:
 - name: Republican
 roles:
-- district: '130'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
+  district: '130'
 contact_details:
 - note: Capitol Office
   address: Room E2.910;P.O. Box 2910;Austin, TX 78768
-  fax: 512-463-4130
   voice: 512-463-0661
+  fax: 512-463-4130
 - note: District Office
   address: '12345 Jones Rd #221;Houston, Texas 77070'
   voice: 281-955-5152
 links:
 - url: https://house.texas.gov/members/member-page/?district=130
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000687
 sources:
 - url: https://house.texas.gov/members/member-page/?district=130
-image: https://house.texas.gov/photos/members/3535.jpg
-other_identifiers:
-- identifier: TXL000687
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Oliverson

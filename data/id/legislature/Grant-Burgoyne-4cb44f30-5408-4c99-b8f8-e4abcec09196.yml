@@ -1,17 +1,21 @@
 id: ocd-person/4cb44f30-5408-4c99-b8f8-e4abcec09196
 name: Grant Burgoyne
+given_name: Grant
+family_name: Burgoyne
+email: GBurgoyne@senate.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Burgoyne746.jpg
 party:
 - name: Democratic
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2014-12-31
-- district: '16'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '16'
+- start_date: 2015-01-01
   type: upper
-  start_date: 2015-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '16'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1409
@@ -19,18 +23,14 @@ contact_details:
   address: 2203 Mountain View Dr, Boise , ID, 83706
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=16
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000275
+- scheme: legacy_openstates
+  identifier: IDL000050
+- scheme: legacy_openstates
+  identifier: IDL000202
+- scheme: openstates
+  identifier: ocd-person/6dba294c-bf89-41dd-9e15-1cc03174ba20
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Burgoyne746.jpg
-other_identifiers:
-- identifier: IDL000275
-  scheme: legacy_openstates
-- identifier: IDL000050
-  scheme: legacy_openstates
-- identifier: IDL000202
-  scheme: legacy_openstates
-- identifier: ocd-person/6dba294c-bf89-41dd-9e15-1cc03174ba20
-  scheme: openstates
-given_name: Grant
-family_name: Burgoyne
-email: GBurgoyne@senate.idaho.gov

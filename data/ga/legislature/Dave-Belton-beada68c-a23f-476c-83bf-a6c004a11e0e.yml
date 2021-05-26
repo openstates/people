@@ -1,11 +1,15 @@
 id: ocd-person/beada68c-a23f-476c-83bf-a6c004a11e0e
 name: Dave Belton
+given_name: Dave
+family_name: Belton
+email: dave.belton@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/belton-dave-866.jpg
 party:
 - name: Republican
 roles:
-- district: '112'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '112'
 contact_details:
 - note: Capitol Office
   address: 614-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=866&Session=27
 - url: https://www.legis.ga.gov/members/house/866?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000405
+- scheme: legacy_openstates
+  identifier: GAL000418
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=866&Session=27
 - url: https://www.legis.ga.gov/members/house/866?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/belton-dave-866.jpg
-family_name: Belton
-given_name: Dave
 extras:
   guid: 866
   city: Buckhead
   georgia_id: 866
   residence: Buckhead
-other_identifiers:
-- identifier: GAL000405
-  scheme: legacy_openstates
-- identifier: GAL000418
-  scheme: legacy_openstates
-email: dave.belton@house.ga.gov

@@ -1,11 +1,14 @@
 id: ocd-person/ad0dd078-9756-4d8a-ba91-dcdf9dbd007b
 name: Michael A. DiMassa
+given_name: Michael
+family_name: DiMassa
+email: Michael.DiMassa@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '116'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '116'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2704;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-710-8915
 links:
 - url: http://www.housedems.ct.gov/DiMassa
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000332
-  scheme: legacy_openstates
-given_name: Michael
-family_name: DiMassa
-email: Michael.DiMassa@cga.ct.gov
 other_names:
 - name: Dimassa, Michael A.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000332
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

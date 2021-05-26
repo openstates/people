@@ -1,20 +1,31 @@
 id: ocd-person/4a21334a-7f0e-4025-a01e-709406a46fa2
 name: Craig Hall
+given_name: Craig
+family_name: Hall
+email: chall@le.utah.gov
+image: https://le.utah.gov/images/legislator/HALLHC.jpg
 party:
 - name: Republican
 roles:
-- district: '33'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '33'
 contact_details:
 - note: District Office
   address: 3428 HARRISONWOOD DR, WEST VALLEY CITY, UT, 84119
   voice: 801-573-1774
 links:
 - url: http://house.utah.gov/rep/HALLHC
+other_names:
+- name: Hall, C.
+- name: Hall, Craig
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000129
+- scheme: legacy_openstates
+  identifier: UTL000248
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/HALLHC.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIHALLHC3.pdf
@@ -26,14 +37,3 @@ extras:
   - http://le.utah.gov/house2/CofI/chall.pdf
   - http://le.utah.gov/house2/CofI/HALLHC.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411350
-other_identifiers:
-- identifier: UTL000129
-  scheme: legacy_openstates
-- identifier: UTL000248
-  scheme: legacy_openstates
-given_name: Craig
-family_name: Hall
-email: chall@le.utah.gov
-other_names:
-- name: Hall, C.
-- name: Hall, Craig

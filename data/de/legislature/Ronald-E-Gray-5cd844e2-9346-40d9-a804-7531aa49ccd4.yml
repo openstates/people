@@ -1,25 +1,25 @@
 id: ocd-person/5cd844e2-9346-40d9-a804-7531aa49ccd4
 name: Ronald E. Gray
+given_name: Ronald E.
+family_name: Gray
+email: Ronald.Gray@state.de.us
+image: https://legis.delaware.gov/images/default-source/Legislators/RonaldGray.jpg?sfvrsn=2
 party:
 - name: Republican
 roles:
-- district: '38'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
+  district: '38'
 contact_details:
 - note: Capitol Office
   address: 411 Legislative Ave. Dover, DE 19901
   voice: 302-744-4171
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=290
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/House
-image: https://legis.delaware.gov/images/default-source/Legislators/RonaldGray.jpg?sfvrsn=2
+- url: https://legis.delaware.gov/LegislatorDetail?personId=290
+  note: legislator page
 other_identifiers:
-- identifier: DEL000095
-  scheme: legacy_openstates
-given_name: Ronald E.
-family_name: Gray
-email: Ronald.Gray@state.de.us
+- scheme: legacy_openstates
+  identifier: DEL000095
+sources:
+- url: https://legis.delaware.gov/House
+  note: legislator list page

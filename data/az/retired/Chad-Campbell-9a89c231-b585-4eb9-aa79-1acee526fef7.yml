@@ -2,28 +2,28 @@ id: ocd-person/9a89c231-b585-4eb9-aa79-1acee526fef7
 name: Chad Campbell
 given_name: Chad
 family_name: Campbell
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/CAMPBELL.gif
 party:
 - name: Democratic
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: lower
-  start_date: '2009-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '24'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/CAMPBELL.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '14'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=4&Legislature=51&Session_ID=110
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000136
+- scheme: legacy_openstates
+  identifier: AZL000047
+- scheme: legacy_openstates
+  identifier: AZL000245
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=H
-other_identifiers:
-- identifier: AZL000136
-  scheme: legacy_openstates
-- identifier: AZL000047
-  scheme: legacy_openstates
-- identifier: AZL000245
-  scheme: legacy_openstates

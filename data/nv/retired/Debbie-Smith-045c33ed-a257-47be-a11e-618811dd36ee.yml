@@ -2,32 +2,32 @@ id: ocd-person/045c33ed-a257-47be-a11e-618811dd36ee
 name: Debbie Smith
 given_name: Debbie
 family_name: Smith
+image: http://leg.state.nv.us/Session/77th2013/legislators/Senators/Images/Smith,D.jpg
 party:
 - name: Democratic
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '13'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: upper
-  start_date: '2013-01-01'
+  district: '30'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://leg.state.nv.us/Session/77th2013/legislators/Senators/Images/Smith,D.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '13'
 links:
 - url: http://www.leg.state.nv.us/Session/76th2011/legislators/Assembly/alist.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000102
+- scheme: legacy_openstates
+  identifier: NVL000060
+- scheme: legacy_openstates
+  identifier: NVL000198
+- scheme: legacy_openstates
+  identifier: NVL000207
+- scheme: legacy_openstates
+  identifier: NVL000341
 sources:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/78th2015/Legislator?id=74
-other_identifiers:
-- identifier: NVL000102
-  scheme: legacy_openstates
-- identifier: NVL000060
-  scheme: legacy_openstates
-- identifier: NVL000198
-  scheme: legacy_openstates
-- identifier: NVL000207
-  scheme: legacy_openstates
-- identifier: NVL000341
-  scheme: legacy_openstates

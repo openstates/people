@@ -2,21 +2,21 @@ id: ocd-person/3d76e552-98c2-4e5b-a2cd-62a3311d0633
 name: Nancy Johnson
 given_name: Nancy
 family_name: Johnson
+image: http://www.legis.nd.gov/files/styles/medium/public/person/photo/njohnson.jpg?itok=V5-WqdpZ
 party:
 - name: Republican
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.legis.nd.gov/files/styles/medium/public/person/photo/njohnson.jpg?itok=V5-WqdpZ
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
+  district: '37'
 links:
 - url: http://www.legis.nd.gov/assembly/62-2011/house/representatives/bios/njohnson.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NDL000122
+- scheme: legacy_openstates
+  identifier: NDL000258
 sources:
 - url: http://www.legis.nd.gov/assembly/63-2013/members/house/representative-nancy-johnson
-other_identifiers:
-- identifier: NDL000122
-  scheme: legacy_openstates
-- identifier: NDL000258
-  scheme: legacy_openstates

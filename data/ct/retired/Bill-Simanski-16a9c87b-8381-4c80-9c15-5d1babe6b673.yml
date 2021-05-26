@@ -1,19 +1,19 @@
 id: ocd-person/16a9c87b-8381-4c80-9c15-5d1babe6b673
 name: Bill Simanski
-party:
-- name: Republican
-roles:
-- district: '62'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  end_date: '2020-12-31'
-links:
-- url: http://www.cthousegop.com/Simanski/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000098
-  scheme: legacy_openstates
 given_name: Bill
 family_name: Simanski
 email: bill.simanski@housegop.ct.gov
+party:
+- name: Republican
+roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '62'
+links:
+- url: http://www.cthousegop.com/Simanski/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000098
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

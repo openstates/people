@@ -2,34 +2,34 @@ id: ocd-person/a14cd13b-ce97-4e92-bf77-883770620e87
 name: Jim Peterson
 given_name: Jim
 family_name: Peterson
+image: http://legis.state.sd.us/sessions/2010/petersonj.jpg
 party:
 - name: Democratic
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   type: upper
-  start_date: '2015-01-01'
-  end_date: '2016-12-31'
-- district: '4'
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2013-01-01'
+  district: '4'
+- start_date: '2015-01-01'
+  end_date: '2016-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '4'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://legis.state.sd.us/sessions/2010/petersonj.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '4'
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1016&Session=2016
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000030
+- scheme: legacy_openstates
+  identifier: SDL000189
+- scheme: legacy_openstates
+  identifier: SDL000222
 sources:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1016&Session=2016
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=1016&Session=2016
-other_identifiers:
-- identifier: SDL000030
-  scheme: legacy_openstates
-- identifier: SDL000189
-  scheme: legacy_openstates
-- identifier: SDL000222
-  scheme: legacy_openstates

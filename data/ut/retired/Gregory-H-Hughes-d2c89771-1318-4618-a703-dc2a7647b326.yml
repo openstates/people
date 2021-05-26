@@ -1,17 +1,24 @@
 id: ocd-person/d2c89771-1318-4618-a703-dc2a7647b326
 name: Gregory H. Hughes
+given_name: Gregory
+family_name: Hughes
+image: https://le.utah.gov/images/legislator/HUGHEGH.jpg
 party:
 - name: Republican
 roles:
-- district: '51'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '51'
 links:
 - url: http://house.utah.gov/rep/HUGHEGH
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000064
+- scheme: legacy_openstates
+  identifier: UTL000264
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/HUGHEGH.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIHUGHEGH.pdf
@@ -20,10 +27,3 @@ extras:
   - http://le.utah.gov/house2/CofI/ghughes.pdf
   - http://le.utah.gov/house2/CofI/HUGHEGH.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1462
-other_identifiers:
-- identifier: UTL000064
-  scheme: legacy_openstates
-- identifier: UTL000264
-  scheme: legacy_openstates
-given_name: Gregory
-family_name: Hughes

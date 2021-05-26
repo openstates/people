@@ -1,15 +1,19 @@
 id: ocd-person/6ce09502-b5ab-4529-b3ec-3e8cc2b80900
 name: Kathleen Bernier
+given_name: Kathleen
+family_name: Bernier
+email: Sen.Bernier@legis.wisconsin.gov
+image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2089.jpg
 party:
 - name: Republican
 roles:
-- district: '68'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+- end_date: 2018-12-31
   type: lower
-  end_date: 2018-12-31
-- district: '23'
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
+  district: '68'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '23'
 contact_details:
 - note: Capitol Office
   address: Room 319 South;State Capitol;PO Box 7882;Madison, WI 53707
@@ -18,17 +22,13 @@ contact_details:
 links:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1943
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2089
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000455
+- scheme: legacy_openstates
+  identifier: WIL000503
+- scheme: openstates
+  identifier: ocd-person/af637369-6a69-47f1-87e8-d7baac37adad
 sources:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1943
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2089
-image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2089.jpg
-other_identifiers:
-- identifier: WIL000455
-  scheme: legacy_openstates
-- identifier: WIL000503
-  scheme: legacy_openstates
-- identifier: ocd-person/af637369-6a69-47f1-87e8-d7baac37adad
-  scheme: openstates
-email: Sen.Bernier@legis.wisconsin.gov
-given_name: Kathleen
-family_name: Bernier

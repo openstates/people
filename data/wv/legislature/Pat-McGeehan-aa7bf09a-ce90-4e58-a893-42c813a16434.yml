@@ -1,11 +1,15 @@
 id: ocd-person/aa7bf09a-ce90-4e58-a893-42c813a16434
 name: Pat McGeehan
+given_name: Pat
+family_name: McGeehan
+email: pat.mcgeehan@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/mcgeehan_pat.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: Room 226E, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,12 +19,8 @@ contact_details:
   voice: 304-374-7018
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McGeehan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000291
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McGeehan
-image: http://www.legis.state.wv.us/images/members/2021/house/mcgeehan_pat.jpg
-other_identifiers:
-- identifier: WVL000291
-  scheme: legacy_openstates
-given_name: Pat
-family_name: McGeehan
-email: pat.mcgeehan@wvhouse.gov

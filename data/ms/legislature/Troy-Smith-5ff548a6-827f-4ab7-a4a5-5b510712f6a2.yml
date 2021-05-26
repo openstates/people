@@ -1,11 +1,15 @@
 id: ocd-person/5ff548a6-827f-4ab7-a4a5-5b510712f6a2
 name: Troy Smith
+given_name: Troy
+family_name: Smith
+email: tsmith@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/smith.jpg
 party:
 - name: Republican
 roles:
-- district: '84'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '84'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -15,10 +19,6 @@ links:
 - url: http://billstatus.ls.state.ms.us/members/house/smith.xml
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/smith.xml
-image: http://billstatus.ls.state.ms.us/members/house/smith.jpg
 extras:
   org_info: Representative Smith is affiliated with the MS Assoc. of Sup. Education
     Committee, NRA, and NWTF.
-email: tsmith@house.ms.gov
-given_name: Troy
-family_name: Smith

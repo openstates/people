@@ -2,22 +2,22 @@ id: ocd-person/60e93c3e-5bb0-46c6-ab68-cc7dd17291e2
 name: Josh Clark
 given_name: Josh
 family_name: Clark
+image: http://www.house.ga.gov/SiteCollectionImages/ClarkJosh772.jpg
 party:
 - name: Republican
 roles:
-- district: '98'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/ClarkJosh772.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '98'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=772&Session=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000084
+- scheme: legacy_openstates
+  identifier: GAL000263
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=772&Session=23
-other_identifiers:
-- identifier: GAL000084
-  scheme: legacy_openstates
-- identifier: GAL000263
-  scheme: legacy_openstates

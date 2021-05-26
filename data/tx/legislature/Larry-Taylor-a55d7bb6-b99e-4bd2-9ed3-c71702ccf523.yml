@@ -1,32 +1,7 @@
 id: ocd-person/a55d7bb6-b99e-4bd2-9ed3-c71702ccf523
 name: Larry Taylor
-party:
-- name: Republican
-roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0111
-- note: District Office
-  address: 174 Calder Road, Suite 151 League City, TX 77573
-  voice: 281-332-0003
-links:
-- url: https://senate.texas.gov/member.php?d=11
-sources:
-- url: https://senate.texas.gov/member.php?d=11
-other_identifiers:
-- identifier: TXL000349
-  scheme: legacy_openstates
-- identifier: TXL000167
-  scheme: legacy_openstates
-- identifier: TXL000423
-  scheme: legacy_openstates
 given_name: Larry
 family_name: Taylor
-image: https://senate.texas.gov/members/d11/img/headshot.jpg
 biography: "Senator Larry Taylor is a lifelong Texan and Baylor University graduate\
   \ raised in Friendswood. He and his wife Kerri have three adult children and two\
   \ grandchildren. Senator Taylor owns Truman Taylor Insurance Agency in Friendswood,\
@@ -57,3 +32,28 @@ biography: "Senator Larry Taylor is a lifelong Texan and Baylor University gradu
   \ Chairman of the Board for Houston based Texan Bank. He is also the President of\
   \ the Texas Conservative Coalition Research Institute.\r \r Senator Taylor represents\
   \ Senate District 11, comprised of portions of Brazoria, Galveston, and Harris Counties."
+image: https://senate.texas.gov/members/d11/img/headshot.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '11'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0111
+- note: District Office
+  address: 174 Calder Road, Suite 151 League City, TX 77573
+  voice: 281-332-0003
+links:
+- url: https://senate.texas.gov/member.php?d=11
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000349
+- scheme: legacy_openstates
+  identifier: TXL000167
+- scheme: legacy_openstates
+  identifier: TXL000423
+sources:
+- url: https://senate.texas.gov/member.php?d=11

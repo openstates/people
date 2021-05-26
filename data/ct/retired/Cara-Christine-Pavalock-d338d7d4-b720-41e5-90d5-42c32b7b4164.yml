@@ -5,15 +5,15 @@ family_name: Pavalock
 party:
 - name: Republican
 roles:
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '77'
 links:
 - url: http://reppavalock.com
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000288
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000288
-  scheme: legacy_openstates

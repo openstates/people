@@ -1,11 +1,13 @@
 id: ocd-person/50c1a448-665c-492b-8a2c-0cfbfd587c4c
 name: Steve Cassano
+given_name: Steve
+family_name: Cassano
 party:
 - name: Democratic
 roles:
-- district: '4'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '4'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 2204;Hartford, CT 06106
@@ -15,12 +17,10 @@ contact_details:
   voice: 860-646-6882
 links:
 - url: http://www.senatedems.ct.gov/Cassano
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000004
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Cassano
 other_names:
 - name: Cassano, Steve
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000004
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

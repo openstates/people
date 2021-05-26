@@ -1,19 +1,25 @@
 id: ocd-person/841b8b5c-a701-43c0-bb81-8e9515e61ea0
 name: Dave Griffith
+given_name: Dave
+family_name: Griffith
+email: Dave.Griffith@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2052
 party:
 - name: Republican
 roles:
-- district: '60'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '60'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 235-BB; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 235-BB; Jefferson
+    City MO 65101
   voice: 573-751-2412
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=60
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=060
+other_names:
+- name: Griffith, Dave
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=60
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Dave
   last_name: Griffith
-email: Dave.Griffith@house.mo.gov
-family_name: Griffith
-image: https://house.mo.gov/MemberPhoto.aspx?id=2052
-given_name: Dave
-other_names:
-- name: Griffith, Dave

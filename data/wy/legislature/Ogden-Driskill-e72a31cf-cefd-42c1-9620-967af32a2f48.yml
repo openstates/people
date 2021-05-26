@@ -1,11 +1,16 @@
 id: ocd-person/e72a31cf-cefd-42c1-9620-967af32a2f48
 name: Ogden Driskill
+given_name: Ogden
+family_name: Driskill
+email: Ogden.Driskill@wyoleg.gov
+birth_date: 1959-07-24
+image: http://wyoleg.gov/LegislatorSummary/Photos/DriskillS1.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '1'
 contact_details:
 - note: District Office
   address: P.O. Box 155, Devils Tower WY 82714
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1972
 - url: http://wyoleg.gov/Legislators/2021/R/1972
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000010
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1972
 - url: http://wyoleg.gov/Legislators/2021/R/1972
-image: http://wyoleg.gov/LegislatorSummary/Photos/DriskillS1.jpg
-birth_date: '1959-07-24'
-given_name: Ogden
-family_name: Driskill
 extras:
   civic_organizations:
   - orgname: Wyoming Stockgrowers Assn
@@ -42,7 +46,3 @@ extras:
   religion: ''
   spouse_given_name: Rosanne
   wy_leg_id: 1972
-other_identifiers:
-- identifier: WYL000010
-  scheme: legacy_openstates
-email: Ogden.Driskill@wyoleg.gov

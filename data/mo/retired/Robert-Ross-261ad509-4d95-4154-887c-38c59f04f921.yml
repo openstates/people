@@ -1,23 +1,23 @@
 id: ocd-person/261ad509-4d95-4154-887c-38c59f04f921
 name: Robert Ross
+given_name: Robert
+family_name: Ross
+email: Robert.Ross@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '142'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '142'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=142
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000338
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=142
 extras:
   first_name: Robert
   last_name: Ross
-other_identifiers:
-- identifier: MOL000338
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Ross
-email: Robert.Ross@house.mo.gov

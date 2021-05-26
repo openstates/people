@@ -2,26 +2,26 @@ id: ocd-person/51850abe-f263-40b0-8d69-e22910864f11
 name: Bruce Westerman
 given_name: Bruce
 family_name: Westerman
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Westerman.jpg
 party:
 - name: Republican
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '22'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Westerman.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '30'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Westerman
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000124
+- scheme: legacy_openstates
+  identifier: ARL000248
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Westerman
-other_identifiers:
-- identifier: ARL000124
-  scheme: legacy_openstates
-- identifier: ARL000248
-  scheme: legacy_openstates

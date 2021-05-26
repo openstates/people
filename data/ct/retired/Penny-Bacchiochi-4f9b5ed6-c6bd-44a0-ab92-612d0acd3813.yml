@@ -2,19 +2,19 @@ id: ocd-person/4f9b5ed6-c6bd-44a0-ab92-612d0acd3813
 name: Penny Bacchiochi
 given_name: Penny
 family_name: Bacchiochi
+image: http://cthousegop.com/wp-content/uploads/2012/01/penny_thumb.jpg
 party:
 - name: Republican
 roles:
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://cthousegop.com/wp-content/uploads/2012/01/penny_thumb.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '52'
 links:
 - url: http://reppenny.com/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000088
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000088
-  scheme: legacy_openstates

@@ -1,28 +1,7 @@
 id: ocd-person/013d69b7-a958-490c-a4a2-7224a30efa08
 name: Bob Hall
-party:
-- name: Republican
-roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0102
-- note: District Office
-  address: 17585 State Highway 19, Suite 200 Canton, Texas 75103
-  voice: 903-567-0531
-links:
-- url: https://senate.texas.gov/member.php?d=2
-sources:
-- url: https://senate.texas.gov/member.php?d=2
-other_identifiers:
-- identifier: TXL000503
-  scheme: legacy_openstates
 given_name: Bob
 family_name: Hall
-image: https://senate.texas.gov/members/d02/img/headshot.jpg
 biography: "Senator Bob Hall, father of four boys and husband to Kay Hall, taught\
   \ his family the importance of faith, family and hard work. Senator Hall graduated\
   \ from The Citadel in Charleston, South Carolina with a degree in Electrical Engineering\
@@ -43,3 +22,24 @@ biography: "Senator Bob Hall, father of four boys and husband to Kay Hall, taugh
   \ Envisioning their futures compelled him to become actively involved in the state's\
   \ political process and strongly believes it is time to stand in the gap for our\
   \ children, our liberties and our future."
+image: https://senate.texas.gov/members/d02/img/headshot.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '2'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0102
+- note: District Office
+  address: 17585 State Highway 19, Suite 200 Canton, Texas 75103
+  voice: 903-567-0531
+links:
+- url: https://senate.texas.gov/member.php?d=2
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000503
+sources:
+- url: https://senate.texas.gov/member.php?d=2

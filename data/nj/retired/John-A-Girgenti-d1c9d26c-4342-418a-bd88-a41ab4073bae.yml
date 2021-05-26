@@ -6,13 +6,13 @@ middle_name: A
 party:
 - name: Democratic
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '35'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000106
 sources:
 - url: ftp://www.njleg.state.nj.us/ag/2008data/ROSTER.DBF
-other_identifiers:
-- identifier: NJL000106
-  scheme: legacy_openstates

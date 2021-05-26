@@ -2,20 +2,20 @@ id: ocd-person/f7eafa40-df1c-4f05-832f-1f39f9636d23
 name: Jim Hundstad
 given_name: Jim
 family_name: Hundstad
+image: http://legis.state.sd.us/sessions/2011/Hundstadj.jpg
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://legis.state.sd.us/sessions/2011/Hundstadj.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '2'
 links:
 - url: http://legis.state.sd.us/sessions/2011/MemberDetail.aspx?Member=6
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000018
 sources:
 - url: http://legis.state.sd.us/sessions/2011/MemberDetail.aspx?Member=6
 - url: http://legis.state.sd.us/sessions/2011/MemberCommittees.aspx?Member=6
-other_identifiers:
-- identifier: SDL000018
-  scheme: legacy_openstates

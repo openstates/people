@@ -1,11 +1,15 @@
 id: ocd-person/5ffe6af7-c819-416a-ae92-f575baae1d75
 name: Tom Brewer
+given_name: Tom
+family_name: Brewer
+email: tbrewer@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist43.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '43'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '43'
 contact_details:
 - note: Capitol Office
   address: Room 1101; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist43
 - url: http://news.legislature.ne.gov/dist43/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000104
+- scheme: legacy_openstates
+  identifier: NEL000165
 sources:
 - url: http://news.legislature.ne.gov/dist43
 - url: http://news.legislature.ne.gov/dist43/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist43.jpg
-other_identifiers:
-- identifier: NEL000104
-  scheme: legacy_openstates
-- identifier: NEL000165
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Brewer
-email: tbrewer@leg.ne.gov

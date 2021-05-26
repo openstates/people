@@ -2,27 +2,27 @@ id: ocd-person/faea994b-de37-4091-9524-896c0224b0c6
 name: Sarah Laszloffy
 given_name: Sarah
 family_name: Laszloffy
+image: http://leg.mt.gov/images/legislators_64th/15252.jpg
 party:
 - name: Republican
 roles:
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '53'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '57'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/15252.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '53'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15252
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000196
+- scheme: legacy_openstates
+  identifier: MTL000293
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15252
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000196
-  scheme: legacy_openstates
-- identifier: MTL000293
-  scheme: legacy_openstates

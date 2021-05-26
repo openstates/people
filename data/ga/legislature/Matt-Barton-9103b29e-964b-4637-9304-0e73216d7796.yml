@@ -2,14 +2,21 @@ id: ocd-person/9103b29e-964b-4637-9304-0e73216d7796
 name: Matt Barton
 given_name: Matt
 family_name: Barton
+email: matt.barton@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/barton-matt-4966.jpg
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  start_date: '2019-02-12'
+- start_date: '2019-02-12'
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '5'
+contact_details:
+- note: Capitol Office
+  address: 612-E Coverdell Legislative Bldg.;Atlanta, GA 30334
+  voice: 404-656-0325
+- note: District Office
+  address: 135 Victory Ct.; Calhoun, GA 30701
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4966&Session=27
 - url: https://www.legis.ga.gov/members/house/4966?session=1029
@@ -17,15 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4966&Session=27
 - url: https://www.legis.ga.gov/members/house/4966?session=1029
-contact_details:
-- note: Capitol Office
-  address: 612-E Coverdell Legislative Bldg.;Atlanta, GA 30334
-  voice: 404-656-0325
-- note: District Office
-  address: 135 Victory Ct.; Calhoun, GA 30701
 extras:
   guid: 4966
   city: Calhoun
   georgia_id: 4966
   residence: Calhoun
-email: matt.barton@house.ga.gov

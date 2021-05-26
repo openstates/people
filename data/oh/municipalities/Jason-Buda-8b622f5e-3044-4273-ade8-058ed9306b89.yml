@@ -2,10 +2,11 @@ id: ocd-person/8b622f5e-3044-4273-ade8-058ed9306b89
 name: Jason Buda
 given_name: Jason
 family_name: Buda
+email: mayor@westunionoh.net
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:oh/place:west_union/government
+- end_date: '2023-12-31'
   type: mayor
-  end_date: '2023-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/place:west_union/government
 contact_details:
 - note: Primary Office
   address: 33 Logans Lane;West Union, OH 45693
@@ -13,5 +14,3 @@ contact_details:
 sources:
 - url: https://www.westunionoh.net/contact
 - url: https://lookup.boe.ohio.gov/vtrapp/adams/cnm.aspx
-links: []
-email: mayor@westunionoh.net

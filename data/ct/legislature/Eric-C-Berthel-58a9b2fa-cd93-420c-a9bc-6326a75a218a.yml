@@ -1,11 +1,14 @@
 id: ocd-person/58a9b2fa-cd93-420c-a9bc-6326a75a218a
 name: Eric C. Berthel
+given_name: Eric
+family_name: Berthel
+email: Eric.Berthel@cga.ct.gov
 party:
 - name: Republican
 roles:
-- district: '32'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '32'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3400;Hartford, CT 06106
@@ -14,15 +17,12 @@ contact_details:
   address: 92 Malvern Hill Road;Watertown, CT 06795
 links:
 - url: http://www.ctsenaterepublicans.com/home-Berthel
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000273
-  scheme: legacy_openstates
-- identifier: CTL000358
-  scheme: legacy_openstates
-given_name: Eric
-family_name: Berthel
-email: Eric.Berthel@cga.ct.gov
 other_names:
 - name: Berthel, Eric C.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000273
+- scheme: legacy_openstates
+  identifier: CTL000358
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

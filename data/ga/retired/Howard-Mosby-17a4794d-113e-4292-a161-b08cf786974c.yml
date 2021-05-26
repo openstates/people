@@ -1,24 +1,24 @@
 id: ocd-person/17a4794d-113e-4292-a161-b08cf786974c
 name: Howard Mosby
+given_name: Howard
+family_name: Mosby
+image: http://www.house.ga.gov/SiteCollectionImages/MosbyHoward175.jpg
 party:
 - name: Democratic
 roles:
-- district: '83'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '83'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=175&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000170
+- scheme: legacy_openstates
+  identifier: GAL000332
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=175&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/MosbyHoward175.jpg
-family_name: Mosby
-given_name: Howard
 extras:
   guid: 175
-other_identifiers:
-- identifier: GAL000170
-  scheme: legacy_openstates
-- identifier: GAL000332
-  scheme: legacy_openstates

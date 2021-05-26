@@ -2,23 +2,23 @@ id: ocd-person/7eff48c8-1263-410f-9866-8f45aaea081c
 name: Wayne Smith
 given_name: Wayne
 family_name: Smith
+image: http://www.house.state.tx.us/photos/members/4540.jpg
 party:
 - name: Republican
 roles:
-- district: '128'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2018-12-31'
-image: http://www.house.state.tx.us/photos/members/4540.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '128'
 links:
 - url: http://www.house.state.tx.us/members/member-page/?district=128
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000342
+- scheme: legacy_openstates
+  identifier: TXL000160
+- scheme: legacy_openstates
+  identifier: TXL000583
 sources:
 - url: http://www.house.state.tx.us/members/member-page/?district=128
-other_identifiers:
-- identifier: TXL000342
-  scheme: legacy_openstates
-- identifier: TXL000160
-  scheme: legacy_openstates
-- identifier: TXL000583
-  scheme: legacy_openstates

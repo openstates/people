@@ -2,19 +2,19 @@ id: ocd-person/2c8c0d89-2ad8-461d-9891-55c78075579d
 name: Bill Diamond
 given_name: Bill
 family_name: Diamond
+image: http://senatedems.maine.gov/diamond/images/billdiamondhead-med.jpg
 party:
 - name: Democratic
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://senatedems.maine.gov/diamond/images/billdiamondhead-med.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '12'
 links:
 - url: http://www.maine.gov/legis/senate/bio12s.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000012
 sources:
 - url: http://www.maine.gov/legis/senate/senators/email/125SenatorsList.xls
-other_identifiers:
-- identifier: MEL000012
-  scheme: legacy_openstates

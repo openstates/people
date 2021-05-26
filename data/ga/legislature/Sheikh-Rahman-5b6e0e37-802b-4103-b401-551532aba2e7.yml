@@ -1,11 +1,15 @@
 id: ocd-person/5b6e0e37-802b-4103-b401-551532aba2e7
 name: Sheikh Rahman
+given_name: Sheikh
+family_name: Rahman
+email: sheikh.rahman@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/rahman-sheikh-4924.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: 323-B Coverdell Legislative Office Building;Atlanta, GA 30334
@@ -19,12 +23,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4924&Session=27
 - url: https://www.legis.ga.gov/members/senate/4924?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/rahman-sheikh-4924.jpg
-family_name: Rahman
-given_name: Sheikh
 extras:
   guid: 4924
   city: 'Lawrenceville '
   georgia_id: 4924
   residence: 'Lawrenceville '
-email: sheikh.rahman@senate.ga.gov

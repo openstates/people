@@ -1,24 +1,24 @@
 id: ocd-person/11d98077-e98f-45ff-8613-aad9a645d8ae
 name: Betty Price
+given_name: Betty
+family_name: Price
+image: http://www.house.ga.gov/SiteCollectionImages/PriceBetty877.jpg
 party:
 - name: Republican
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '48'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=877&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000428
+- scheme: legacy_openstates
+  identifier: GAL000430
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=877&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/PriceBetty877.jpg
-family_name: Price
-given_name: Betty
 extras:
   guid: 877
-other_identifiers:
-- identifier: GAL000428
-  scheme: legacy_openstates
-- identifier: GAL000430
-  scheme: legacy_openstates

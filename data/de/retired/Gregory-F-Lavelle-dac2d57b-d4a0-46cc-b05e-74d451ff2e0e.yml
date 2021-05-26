@@ -1,23 +1,23 @@
 id: ocd-person/dac2d57b-d4a0-46cc-b05e-74d451ff2e0e
 name: Gregory F. Lavelle
+given_name: Gregory F.
+family_name: Lavelle
+image: https://legis.delaware.gov/images/default-source/Legislators/Lavelle_Greg.jpg?sfvrsn=0
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '4'
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=130
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/Senate
-image: https://legis.delaware.gov/images/default-source/Legislators/Lavelle_Greg.jpg?sfvrsn=0
+- url: https://legis.delaware.gov/LegislatorDetail?personId=130
+  note: legislator page
 other_identifiers:
-- identifier: DEL000040
-  scheme: legacy_openstates
-- identifier: DEL000072
-  scheme: legacy_openstates
-given_name: Gregory F.
-family_name: Lavelle
+- scheme: legacy_openstates
+  identifier: DEL000040
+- scheme: legacy_openstates
+  identifier: DEL000072
+sources:
+- url: https://legis.delaware.gov/Senate
+  note: legislator list page

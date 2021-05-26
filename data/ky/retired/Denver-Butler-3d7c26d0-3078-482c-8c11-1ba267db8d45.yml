@@ -2,21 +2,21 @@ id: ocd-person/3d7c26d0-3078-482c-8c11-1ba267db8d45
 name: Denver Butler
 given_name: Denver
 family_name: Butler
+image: http://www.lrc.ky.gov/pubinfo/thumbnails/House38.jpg
 party:
-- name: Democratic
-  end_date: '2015-01-01'
+- end_date: '2015-01-01'
+  name: Democratic
 - name: Republican
 roles:
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.lrc.ky.gov/pubinfo/thumbnails/House38.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  district: '38'
 links:
 - url: http://www.lrc.ky.gov/legislator/H038.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KYL000155
 sources:
 - url: http://www.lrc.ky.gov/legislator/H038.htm
-other_identifiers:
-- identifier: KYL000155
-  scheme: legacy_openstates

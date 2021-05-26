@@ -2,21 +2,21 @@ id: ocd-person/796c3c97-b0d7-4805-b274-37f66c7e4fad
 name: Dave Cheatham
 given_name: Dave
 family_name: Cheatham
+image: http://indianahousedemocrats.org/images/stories/head/cheatham.jpg
 party:
 - name: Democratic
 roles:
-- district: '69'
-  jurisdiction: ocd-jurisdiction/country:us/state:in/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://indianahousedemocrats.org/images/stories/head/cheatham.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:in/government
+  district: '69'
 links:
 - url: http://www.in.gov/h69
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: INL000065
 sources:
 - url: http://www.in.gov/cgi-bin/legislative/listing/listing-2.pl?data=alpha&chamber=House
 - url: http://www.in.gov/h69
 - url: http://indianahousedemocrats.org/members
-other_identifiers:
-- identifier: INL000065
-  scheme: legacy_openstates

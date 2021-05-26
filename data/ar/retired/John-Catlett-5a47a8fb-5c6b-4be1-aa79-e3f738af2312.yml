@@ -2,26 +2,26 @@ id: ocd-person/5a47a8fb-5c6b-4be1-aa79-e3f738af2312
 name: John Catlett
 given_name: John
 family_name: Catlett
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Catlett.jpg
 party:
 - name: Democratic
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '73'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Catlett.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '61'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Catlett
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000019
+- scheme: legacy_openstates
+  identifier: ARL000158
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Catlett
-other_identifiers:
-- identifier: ARL000019
-  scheme: legacy_openstates
-- identifier: ARL000158
-  scheme: legacy_openstates

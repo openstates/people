@@ -1,11 +1,15 @@
 id: ocd-person/4161e949-6ea2-4df9-8248-cabcf40286ae
 name: Shelly Hutchinson
+given_name: Shelly
+family_name: Hutchinson
+email: shelly.hutchinson@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/hutchinson-shelly-4952.jpg
 party:
 - name: Democratic
 roles:
-- district: '107'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '107'
 contact_details:
 - note: Capitol Office
   address: 607-G Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -20,12 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4952&Session=27
 - url: https://www.legis.ga.gov/members/house/4952?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/hutchinson-shelly-4952.jpg
-family_name: Hutchinson
-given_name: Shelly
 extras:
   guid: 4952
   city: Snellville
   georgia_id: 4952
   residence: Snellville
-email: shelly.hutchinson@house.ga.gov

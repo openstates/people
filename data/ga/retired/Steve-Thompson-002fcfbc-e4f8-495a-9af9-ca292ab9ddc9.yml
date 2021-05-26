@@ -2,20 +2,20 @@ id: ocd-person/002fcfbc-e4f8-495a-9af9-ca292ab9ddc9
 name: Steve Thompson
 given_name: Steve
 family_name: Thompson
+image: http://www.senate.ga.gov/SiteCollectionImages/ThompsonSteve51.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senate.ga.gov/SiteCollectionImages/ThompsonSteve51.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '33'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=51&Session=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000050
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=51&Session=23
-other_identifiers:
-- identifier: GAL000050
-  scheme: legacy_openstates

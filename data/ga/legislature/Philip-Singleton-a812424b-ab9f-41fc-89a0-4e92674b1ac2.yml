@@ -1,12 +1,16 @@
 id: ocd-person/a812424b-ab9f-41fc-89a0-4e92674b1ac2
 name: Philip Singleton
+given_name: Philip
+family_name: Singleton
+email: philip.singleton@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/singleton-philip-4968.jpg
 party:
 - name: Republican
 roles:
-- district: '71'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- start_date: 2019-10-15
   type: lower
-  start_date: 2019-10-15
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '71'
 contact_details:
 - note: Capitol Office
   address: 501-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -20,12 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4968&Session=27
 - url: https://www.legis.ga.gov/members/house/4968?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/singleton-philip-4968.jpg
-family_name: Singleton
-given_name: Philip
 extras:
   guid: 4968
   city: Sharpsburg
   georgia_id: 4968
   residence: Sharpsburg
-email: philip.singleton@house.ga.gov

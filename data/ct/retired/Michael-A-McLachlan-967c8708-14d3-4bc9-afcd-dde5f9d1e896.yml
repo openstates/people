@@ -1,18 +1,18 @@
 id: ocd-person/967c8708-14d3-4bc9-afcd-dde5f9d1e896
 name: Michael A. McLachlan
+given_name: Michael A.
+family_name: McLachlan
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '24'
 links:
 - url: http://www.ctsenaterepublicans.com/home-mclachlan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000024
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000024
-  scheme: legacy_openstates
-given_name: Michael A.
-family_name: McLachlan

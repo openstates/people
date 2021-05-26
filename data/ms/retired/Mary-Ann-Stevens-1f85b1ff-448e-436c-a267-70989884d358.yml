@@ -2,19 +2,19 @@ id: ocd-person/1f85b1ff-448e-436c-a267-70989884d358
 name: Mary Ann Stevens
 given_name: Mary Ann
 family_name: Stevens
+image: http://billstatus.ls.state.ms.us/members/house/stevens.jpg
 party:
 - name: Democratic
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/stevens.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '48'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/stevens.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000096
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/stevens.xml
-other_identifiers:
-- identifier: MSL000096
-  scheme: legacy_openstates

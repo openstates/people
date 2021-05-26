@@ -2,25 +2,25 @@ id: ocd-person/8a197289-245e-47b9-8aae-e2271ea2904f
 name: James E. Doyle II
 given_name: James E.
 family_name: Doyle
+image: http://www.rilin.state.ri.us/Senators/Pictures/doyle.jpg
 party:
 - name: Democratic
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2017-12-31'
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   type: upper
-  start_date: '2017-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '8'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
-image: http://www.rilin.state.ri.us/Senators/Pictures/doyle.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '8'
 links:
 - url: http://www.rilin.state.ri.us/senators/Algiere/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000008
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/senators/Doyle/
-other_identifiers:
-- identifier: RIL000008
-  scheme: legacy_openstates

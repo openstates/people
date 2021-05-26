@@ -1,36 +1,36 @@
 id: ocd-person/8e209d95-2333-4aa2-a628-1bdcec0674f5
 name: Mack Jackson
+given_name: Mack
+family_name: Jackson
+email: mack.jackson@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/jackson-mack-738.jpg
 party:
 - name: Democratic
 roles:
-- district: '128'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '128'
 contact_details:
 - note: Capitol Office
   address: 611-H Coverdell Legislative Office Building;Atlanta, Ga 300334
-  fax: 404-656-0250
   voice: 404-656-0314
+  fax: 404-656-0250
 - note: District Office
   address: 733 Evelyn Street; Sandersville, Ga 31082
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=738&Session=27
 - url: https://www.legis.ga.gov/members/house/738?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000139
+- scheme: legacy_openstates
+  identifier: GAL000310
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=738&Session=27
 - url: https://www.legis.ga.gov/members/house/738?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/jackson-mack-738.jpg
-family_name: Jackson
-given_name: Mack
 extras:
   guid: 738
   city: Sandersville
   georgia_id: 738
   residence: Sandersville
-other_identifiers:
-- identifier: GAL000139
-  scheme: legacy_openstates
-- identifier: GAL000310
-  scheme: legacy_openstates
-email: mack.jackson@house.ga.gov

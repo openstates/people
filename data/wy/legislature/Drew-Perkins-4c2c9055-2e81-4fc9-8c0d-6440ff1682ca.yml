@@ -1,11 +1,16 @@
 id: ocd-person/4c2c9055-2e81-4fc9-8c0d-6440ff1682ca
 name: Drew Perkins
+given_name: Drew
+family_name: Perkins
+email: Drew.Perkins@wyoleg.gov
+birth_date: 1956-03-21
+image: http://wyoleg.gov/LegislatorSummary/Photos/PerkinsDS29.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '29'
 contact_details:
 - note: District Office
   address: 1133 Granada Avenue, Casper WY 82601
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/188
 - url: http://wyoleg.gov/Legislators/2021/R/188
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000024
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/188
 - url: http://wyoleg.gov/Legislators/2021/R/188
-image: http://wyoleg.gov/LegislatorSummary/Photos/PerkinsDS29.jpg
-birth_date: '1956-03-21'
-given_name: Drew
-family_name: Perkins
 extras:
   civic_organizations:
   - orgname: Boys and Girls Club of Central Wyoming
@@ -42,7 +46,3 @@ extras:
   religion: LDS
   spouse_given_name: null
   wy_leg_id: 188
-other_identifiers:
-- identifier: WYL000024
-  scheme: legacy_openstates
-email: Drew.Perkins@wyoleg.gov

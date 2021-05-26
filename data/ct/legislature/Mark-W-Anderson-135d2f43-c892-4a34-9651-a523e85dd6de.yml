@@ -4,17 +4,17 @@ email: Mark.Anderson@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '62'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '62'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: https://www.cthousegop.com/Anderson
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 other_names:
 - name: Anderson, Mark W
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

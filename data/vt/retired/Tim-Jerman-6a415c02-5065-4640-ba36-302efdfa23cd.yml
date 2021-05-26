@@ -2,29 +2,29 @@ id: ocd-person/6a415c02-5065-4640-ba36-302efdfa23cd
 name: Tim Jerman
 given_name: Timothy
 family_name: Jerman
+image: http://vermont-elections.org/2009-2010BioBook/jpegs/jerman.jpg
 party:
 - name: Democratic
 roles:
-- district: Chittenden-6-2
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Chittenden-8-2
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-6-2
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://vermont-elections.org/2009-2010BioBook/jpegs/jerman.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-8-2
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000088
+- scheme: legacy_openstates
+  identifier: VTL000267
+- scheme: legacy_openstates
+  identifier: VTL000801
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2016
 - url: http://legislature.vermont.gov/people/single/2016/14575
-other_identifiers:
-- identifier: VTL000088
-  scheme: legacy_openstates
-- identifier: VTL000267
-  scheme: legacy_openstates
-- identifier: VTL000801
-  scheme: legacy_openstates

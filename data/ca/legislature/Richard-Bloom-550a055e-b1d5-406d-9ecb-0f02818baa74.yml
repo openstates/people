@@ -1,11 +1,15 @@
 id: ocd-person/550a055e-b1d5-406d-9ecb-0f02818baa74
 name: Richard Bloom
+given_name: Richard
+family_name: Bloom
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD50-Bloom.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '50'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0050
@@ -15,14 +19,10 @@ contact_details:
   voice: 310-450-0041
 links:
 - url: https://a50.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD50&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD50&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000342
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD50-Bloom.jpg
-other_identifiers:
-- identifier: CAL000342
-  scheme: legacy_openstates
-given_name: Richard
-family_name: Bloom
-gender: Male

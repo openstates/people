@@ -1,11 +1,15 @@
 id: ocd-person/2fed984f-0f51-40d2-9881-ec16131a6a2f
 name: Bill Pigott
+given_name: Bill
+family_name: Pigott
+email: bpigott@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/pigott.jpg
 party:
 - name: Republican
 roles:
-- district: '99'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '99'
 contact_details:
 - note: Capitol Office
   address: Room 119-B;P. O. Box 1018;Jackson, MS 39215
@@ -14,15 +18,11 @@ contact_details:
   address: 92 Pigott Easterling Rd;Tylertown, MS 39667
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/pigott.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000145
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/pigott.xml
-image: http://billstatus.ls.state.ms.us/members/house/pigott.jpg
 extras:
   org_info: Representative Pigott is a member of the Farm Bureau, Mississippi Cattlemen's
     Association, Mississippi Beef Council, and the ADA of Mississippi.
-other_identifiers:
-- identifier: MSL000145
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Pigott
-email: bpigott@house.ms.gov

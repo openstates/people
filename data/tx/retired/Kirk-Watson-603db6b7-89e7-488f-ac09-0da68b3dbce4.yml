@@ -1,24 +1,7 @@
 id: ocd-person/603db6b7-89e7-488f-ac09-0da68b3dbce4
 name: Kirk Watson
-party:
-- name: Democratic
-roles:
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-  end_date: '2020-04-30'
-links:
-- url: https://senate.texas.gov/member.php?d=14
-sources:
-- url: https://senate.texas.gov/member.php?d=14
-other_identifiers:
-- identifier: TXL000208
-  scheme: legacy_openstates
-- identifier: TXL000026
-  scheme: legacy_openstates
 given_name: Kirk
 family_name: Watson
-image: https://senate.texas.gov/members/d14/img/headshot.jpg
 biography: "Kirk Watson is former mayor of Austin, Texas, and was described by Texas\
   \ Monthly Biz magazine as \"a man with a vision of what the community wants and\
   \ the moxie to carry it out.\" \r \r First elected to the Texas Senate in 2006,\
@@ -72,3 +55,20 @@ biography: "Kirk Watson is former mayor of Austin, Texas, and was described by T
   \ Effie.  Preston has a BA and MBA and works in the tech industry in Austin.  Cooper\
   \ has undergraduate degrees in physics and mechanical engineering. He\u2019s in\
   \ a PhD program in physics."
+image: https://senate.texas.gov/members/d14/img/headshot.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2020-04-30'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '14'
+links:
+- url: https://senate.texas.gov/member.php?d=14
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000208
+- scheme: legacy_openstates
+  identifier: TXL000026
+sources:
+- url: https://senate.texas.gov/member.php?d=14

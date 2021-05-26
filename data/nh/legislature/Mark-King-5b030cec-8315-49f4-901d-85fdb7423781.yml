@@ -1,11 +1,15 @@
 id: ocd-person/5b030cec-8315-49f4-901d-85fdb7423781
 name: Mark R. King
+given_name: Mark
+family_name: King
+email: Mark.King@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/408544.jpg
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 33
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 33
 contact_details:
 - note: District Office
   address: 3 Lovewell Street;Nashua, NH 03060-4506
@@ -13,18 +17,14 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001422
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408544
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/408544.jpg
 extras:
   first_name: Mark
   last_name: King
   middle_name: R.
-other_identifiers:
-- identifier: NHL001422
-  scheme: legacy_openstates
-given_name: Mark
-family_name: King
-email: Mark.King@leg.state.nh.us

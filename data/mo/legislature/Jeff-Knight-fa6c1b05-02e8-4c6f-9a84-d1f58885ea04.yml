@@ -1,19 +1,28 @@
 id: ocd-person/fa6c1b05-02e8-4c6f-9a84-d1f58885ea04
 name: Jeff Knight
+given_name: Jeff
+family_name: Knight
+email: Jeff.Knight@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2020
 party:
 - name: Republican
 roles:
-- district: '129'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '129'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 413-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 413-A; Jefferson
+    City MO 65101
   voice: 573-751-1167
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=129
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=129
+other_names:
+- name: Knight, Jeff
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000480
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=129
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Jeff
   last_name: Knight
-other_identifiers:
-- identifier: MOL000480
-  scheme: legacy_openstates
-given_name: Jeff
-family_name: Knight
-email: Jeff.Knight@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=2020
-other_names:
-- name: Knight, Jeff

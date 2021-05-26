@@ -1,23 +1,23 @@
 id: ocd-person/f8c55565-9da7-429f-b9d8-5d83af3bb659
 name: Bill Brown
+given_name: Bill
+family_name: Brown
 party:
 - name: Republican
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+- end_date: '2018-11-06'
   type: upper
-  end_date: '2018-11-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '36'
 links:
 - url: http://oksenate.gov/Senators/biographies/brown_bio.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OKL000012
+- scheme: legacy_openstates
+  identifier: OKL000226
 sources:
 - url: http://oksenate.gov/Senators/biographies/brown_bio.aspx
 - url: http://oksenate.gov/Senators/biographies/brown_bio.html
 extras:
   email: brownb@oksenate.gov
-other_identifiers:
-- identifier: OKL000012
-  scheme: legacy_openstates
-- identifier: OKL000226
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Brown

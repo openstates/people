@@ -5,13 +5,13 @@ family_name: Schmidt
 party:
 - name: Republican
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '33'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000032
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=101
-other_identifiers:
-- identifier: SDL000032
-  scheme: legacy_openstates

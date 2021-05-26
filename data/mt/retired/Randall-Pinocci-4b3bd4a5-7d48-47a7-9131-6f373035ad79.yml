@@ -2,20 +2,20 @@ id: ocd-person/4b3bd4a5-7d48-47a7-9131-6f373035ad79
 name: Randall Pinocci
 given_name: Randall
 family_name: Pinocci
+image: http://leg.mt.gov/images/legislators_64th/16519.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/16519.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '19'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16519
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000308
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16519
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000308
-  scheme: legacy_openstates

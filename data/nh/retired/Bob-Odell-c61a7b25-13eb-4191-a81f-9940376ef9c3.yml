@@ -2,19 +2,19 @@ id: ocd-person/c61a7b25-13eb-4191-a81f-9940376ef9c3
 name: Bob Odell
 given_name: Bob
 family_name: Odell
+image: http://www.gencourt.state.nh.us/Senate/images/senators/08.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.gencourt.state.nh.us/Senate/images/senators/08.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '8'
 links:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district08.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000019
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- identifier: NHL000019
-  scheme: legacy_openstates

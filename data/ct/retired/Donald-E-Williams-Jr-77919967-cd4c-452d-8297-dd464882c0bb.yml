@@ -3,19 +3,19 @@ name: Donald E. Williams Jr.
 given_name: Donald
 family_name: Williams
 middle_name: E.
+image: http://www.senatedems.ct.gov/photos/williams-hi.jpg
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senatedems.ct.gov/photos/williams-hi.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '29'
 links:
 - url: http://www.senatedems.ct.gov/Williams.php
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000029
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000029
-  scheme: legacy_openstates

@@ -1,11 +1,16 @@
 id: ocd-person/29100bff-4c7a-4c01-8c06-30905df253a1
 name: Hans Hunt
+given_name: Hans
+family_name: Hunt
+email: hans.hunt@wyoleg.gov
+birth_date: 1988-03-18
+image: http://wyoleg.gov/LegislatorSummary/Photos/HuntH2.jpg
 party:
 - name: Republican
 roles:
-- district: '2'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '2'
 contact_details:
 - note: District Office
   address: 1347 Old Hwy 85, Newcastle WY 82701
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1977
 - url: http://wyoleg.gov/Legislators/2021/R/1977
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000059
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1977
 - url: http://wyoleg.gov/Legislators/2021/R/1977
-image: http://wyoleg.gov/LegislatorSummary/Photos/HuntH2.jpg
-birth_date: '1988-03-18'
-given_name: Hans
-family_name: Hunt
 extras:
   county: Niobrara, Weston, Goshen
   number_children: ''
@@ -28,7 +32,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1977
-other_identifiers:
-- identifier: WYL000059
-  scheme: legacy_openstates
-email: hans.hunt@wyoleg.gov

@@ -5,13 +5,13 @@ family_name: Cogdill
 party:
 - name: Republican
 roles:
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '14'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000011
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000011
-  scheme: legacy_openstates

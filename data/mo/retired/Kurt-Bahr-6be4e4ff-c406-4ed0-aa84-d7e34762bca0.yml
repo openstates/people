@@ -1,24 +1,24 @@
 id: ocd-person/6be4e4ff-c406-4ed0-aa84-d7e34762bca0
 name: Kurt Bahr
+given_name: Kurt
+family_name: Bahr
 party:
 - name: Republican
 roles:
-- district: '102'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '102'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=102
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000040
+- scheme: legacy_openstates
+  identifier: MOL000215
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=102
 extras:
   first_name: Kurt
   last_name: Bahr
-other_identifiers:
-- identifier: MOL000040
-  scheme: legacy_openstates
-- identifier: MOL000215
-  scheme: legacy_openstates
-given_name: Kurt
-family_name: Bahr

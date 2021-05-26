@@ -1,17 +1,25 @@
 id: ocd-person/caecc81f-83e4-48ea-b333-0a92acd57ca9
 name: Patrice M. Arent
+given_name: Patrice
+family_name: Arent
+email: parent@le.utah.gov
+image: https://le.utah.gov/images/legislator/ARENTPM.jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '36'
 links:
 - url: http://house.utah.gov/rep/ARENTPM
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000031
+- scheme: legacy_openstates
+  identifier: UTL000226
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/ARENTPM.jpg
 extras:
   links:
   - http://le.utah.gov/house2/CofI/ARENTPM.pdf
@@ -22,11 +30,3 @@ extras:
   - http://le.utah.gov/house2/CofI/parent.pdf
   - http://le.utah.gov/house2/CofI/ARENTPM.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1180
-other_identifiers:
-- identifier: UTL000031
-  scheme: legacy_openstates
-- identifier: UTL000226
-  scheme: legacy_openstates
-given_name: Patrice
-family_name: Arent
-email: parent@le.utah.gov

@@ -1,38 +1,37 @@
 id: ocd-person/b6144266-5383-491f-8c87-df8fd11805ea
 name: John Kavanagh
+given_name: John
+family_name: Kavanagh
+email: jkavanagh@azleg.gov
+image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/KAVANAGH.gif
 party:
 - name: Republican
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+- end_date: '2018-01-14'
   type: upper
-  end_date: '2018-01-14'
-- district: '23'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
+  district: '23'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '23'
+contact_details:
+- note: Capitol Office
+  address: House of Representatives;1700 West Washington;Room 226;Phoenix, AZ 85007
+  voice: 602-926-5170
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1916
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2056
-contact_details:
-- note: Capitol Office
-  address: House of Representatives;1700 West Washington;Room 226;Phoenix, AZ
-    85007
-  voice: 602-926-5170
+ids:
+  twitter: johnkavanagh_az
+  facebook: John.KavanaghAZ
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000063
+- scheme: legacy_openstates
+  identifier: AZL000158
+- scheme: legacy_openstates
+  identifier: AZL000263
+- scheme: legacy_openstates
+  identifier: AZL000338
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/KAVANAGH.gif
-other_identifiers:
-- identifier: AZL000063
-  scheme: legacy_openstates
-- identifier: AZL000158
-  scheme: legacy_openstates
-- identifier: AZL000263
-  scheme: legacy_openstates
-- identifier: AZL000338
-  scheme: legacy_openstates
-given_name: John
-family_name: Kavanagh
-ids:
-  facebook: John.KavanaghAZ
-  twitter: johnkavanagh_az
-email: jkavanagh@azleg.gov

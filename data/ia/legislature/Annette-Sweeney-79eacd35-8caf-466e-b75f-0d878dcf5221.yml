@@ -1,16 +1,20 @@
 id: ocd-person/79eacd35-8caf-466e-b75f-0d878dcf5221
 name: Annette Sweeney
+given_name: Annette
+family_name: Sweeney
+email: annette.sweeney@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=6585
 party:
 - name: Republican
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '25'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '44'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '25'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -19,17 +23,13 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6585
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6585
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000556
+- scheme: legacy_openstates
+  identifier: IAL000132
+- scheme: openstates
+  identifier: ocd-person/a106ce13-a95a-4e11-b8fd-36e759f64856
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6585
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6585
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=6585
-other_identifiers:
-- identifier: IAL000556
-  scheme: legacy_openstates
-- identifier: IAL000132
-  scheme: legacy_openstates
-- identifier: ocd-person/a106ce13-a95a-4e11-b8fd-36e759f64856
-  scheme: openstates
-given_name: Annette
-family_name: Sweeney
-email: annette.sweeney@legis.iowa.gov

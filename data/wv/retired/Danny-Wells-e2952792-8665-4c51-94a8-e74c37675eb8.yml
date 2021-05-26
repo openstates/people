@@ -2,26 +2,26 @@ id: ocd-person/e2952792-8665-4c51-94a8-e74c37675eb8
 name: Danny Wells
 given_name: Danny
 family_name: Wells
+image: http://www.legis.state.wv.us/../images/members/2013/house/wells_danny.jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '36'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.state.wv.us/../images/members/2013/house/wells_danny.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '30'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Wells
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000095
+- scheme: legacy_openstates
+  identifier: WVL000186
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Wells
-other_identifiers:
-- identifier: WVL000095
-  scheme: legacy_openstates
-- identifier: WVL000186
-  scheme: legacy_openstates

@@ -1,19 +1,26 @@
 id: ocd-person/9c206c3a-c8db-40ae-9d8e-4671677495a8
 name: Rob Vescovo
+given_name: Rob
+family_name: Vescovo
+email: Rob.Vescovo@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1793
 party:
 - name: Republican
 roles:
-- district: '112'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '112'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 308; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 308; Jefferson
+    City MO 65101
   voice: 573-751-3607
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=112
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=112
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000392
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=112
@@ -21,10 +28,3 @@ sources:
 extras:
   first_name: Rob
   last_name: Vescovo
-other_identifiers:
-- identifier: MOL000392
-  scheme: legacy_openstates
-given_name: Rob
-family_name: Vescovo
-email: Rob.Vescovo@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1793

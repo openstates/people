@@ -1,11 +1,15 @@
 id: ocd-person/07f649d3-e1bd-4897-b267-51f8ec6092ef
 name: Randy Nix
+given_name: Randy
+family_name: Nix
+email: randy.nix@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/nix-randy-179.jpg
 party:
 - name: Republican
 roles:
-- district: '69'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '69'
 contact_details:
 - note: Capitol Office
   address: 417-B State Capitol;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=179&Session=27
 - url: https://www.legis.ga.gov/members/house/179?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000175
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=179&Session=27
 - url: https://www.legis.ga.gov/members/house/179?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/nix-randy-179.jpg
-family_name: Nix
-given_name: Randy
 extras:
   guid: 179
   city: LaGrange
   georgia_id: 179
   residence: LaGrange
-other_identifiers:
-- identifier: GAL000175
-  scheme: legacy_openstates
-email: randy.nix@house.ga.gov

@@ -2,19 +2,19 @@ id: ocd-person/95a71d30-01a8-4dbf-83be-8f001d14e01e
 name: Matt Wand
 given_name: Matt
 family_name: Wand
+image: http://www.leg.state.or.us/wand/member_photo.jpg
 party:
 - name: Republican
 roles:
-- district: '49'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.leg.state.or.us/wand/member_photo.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '49'
 links:
 - url: http://www.leg.state.or.us/wand
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000086
 sources:
 - url: http://www.leg.state.or.us/xml/members.xml
-other_identifiers:
-- identifier: ORL000086
-  scheme: legacy_openstates

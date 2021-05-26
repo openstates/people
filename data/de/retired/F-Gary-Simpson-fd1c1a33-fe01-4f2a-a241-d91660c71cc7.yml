@@ -1,23 +1,23 @@
 id: ocd-person/fd1c1a33-fe01-4f2a-a241-d91660c71cc7
 name: F. Gary Simpson
+given_name: F. Gary
+family_name: Simpson
+image: https://legis.delaware.gov/images/default-source/Legislators/FGarySimpson.jpg?sfvrsn=2
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '18'
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=3057
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/Senate
-image: https://legis.delaware.gov/images/default-source/Legislators/FGarySimpson.jpg?sfvrsn=2
+- url: https://legis.delaware.gov/LegislatorDetail?personId=3057
+  note: legislator page
 other_identifiers:
-- identifier: DEL000018
-  scheme: legacy_openstates
-- identifier: DEL000081
-  scheme: legacy_openstates
-given_name: F. Gary
-family_name: Simpson
+- scheme: legacy_openstates
+  identifier: DEL000018
+- scheme: legacy_openstates
+  identifier: DEL000081
+sources:
+- url: https://legis.delaware.gov/Senate
+  note: legislator list page

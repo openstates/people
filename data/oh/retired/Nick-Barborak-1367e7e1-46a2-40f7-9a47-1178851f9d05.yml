@@ -2,19 +2,19 @@ id: ocd-person/1367e7e1-46a2-40f7-9a47-1178851f9d05
 name: Nick Barborak
 given_name: Nick
 family_name: Barborak
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/5.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/5.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '5'
 links:
 - url: http://www.ohiohouse.gov/nick-barborak
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000174
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000174
-  scheme: legacy_openstates

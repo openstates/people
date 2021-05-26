@@ -1,11 +1,15 @@
 id: ocd-person/184a243c-6357-4a30-a072-5ed3e0ea5ac0
 name: Heath Clark
+given_name: Heath
+family_name: Clark
+email: heath.clark@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/clark-heath-858.jpg
 party:
 - name: Republican
 roles:
-- district: '147'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '147'
 contact_details:
 - note: Capitol Office
   address: 508-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=858&Session=27
 - url: https://www.legis.ga.gov/members/house/858?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000408
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=858&Session=27
 - url: https://www.legis.ga.gov/members/house/858?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/clark-heath-858.jpg
-family_name: Clark
-given_name: Heath
 extras:
   guid: 858
   city: Warner Robins
   georgia_id: 858
   residence: Warner Robins
-other_identifiers:
-- identifier: GAL000408
-  scheme: legacy_openstates
-email: heath.clark@house.ga.gov

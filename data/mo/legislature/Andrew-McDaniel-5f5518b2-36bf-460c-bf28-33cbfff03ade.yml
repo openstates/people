@@ -1,19 +1,28 @@
 id: ocd-person/5f5518b2-36bf-460c-bf28-33cbfff03ade
 name: Andrew McDaniel
+given_name: Andrew
+family_name: McDaniel
+email: Andrew.McDaniel@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1787
 party:
 - name: Republican
 roles:
-- district: '150'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '150'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 314; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 314; Jefferson
+    City MO 65101
   voice: 573-751-3629
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=150
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=150
+other_names:
+- name: McDaniel, Andrew
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000389
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=150
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Andrew
   last_name: McDaniel
-other_identifiers:
-- identifier: MOL000389
-  scheme: legacy_openstates
-given_name: Andrew
-family_name: McDaniel
-email: Andrew.McDaniel@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1787
-other_names:
-- name: McDaniel, Andrew

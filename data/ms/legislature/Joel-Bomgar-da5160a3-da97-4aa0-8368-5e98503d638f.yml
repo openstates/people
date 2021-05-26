@@ -1,11 +1,15 @@
 id: ocd-person/da5160a3-da97-4aa0-8368-5e98503d638f
 name: Joel Bomgar
+given_name: Joel
+family_name: Bomgar
+email: jbomgar@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/bomgar.jpg
 party:
 - name: Republican
 roles:
-- district: '58'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '58'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -14,17 +18,13 @@ contact_details:
   address: PO Box 1998;Madison, MS 39130
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bomgar.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000246
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/bomgar.xml
-image: http://billstatus.ls.state.ms.us/members/house/bomgar.jpg
 extras:
   org_info: Representative Bomgar is Founder of Bomgar Corporation.  He served in
     the Mississippi Air National Guard and on the Steering Council of MEC's Blueprint
     Mississippi.  He is a former board member of the Madison County Foundation and
     Belhaven University.
-other_identifiers:
-- identifier: MSL000246
-  scheme: legacy_openstates
-given_name: Joel
-family_name: Bomgar
-email: jbomgar@house.ms.gov

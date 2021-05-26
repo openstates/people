@@ -1,11 +1,15 @@
 id: ocd-person/19f694d8-b409-40e5-9f87-d8e3e84afc7f
 name: "Eloise G\xF3mez Reyes"
+given_name: Eloise
+family_name: Reyes
+gender: Female
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad47_reyes_roster150_20161205.jpg
 party:
 - name: Democratic
 roles:
-- district: '47'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '47'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0047
@@ -15,14 +19,10 @@ contact_details:
   voice: 909-381-3238
 links:
 - url: https://a47.asmdc.org
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD47&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD47&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000515
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad47_reyes_roster150_20161205.jpg
-other_identifiers:
-- identifier: CAL000515
-  scheme: legacy_openstates
-given_name: Eloise
-family_name: Reyes
-gender: Female

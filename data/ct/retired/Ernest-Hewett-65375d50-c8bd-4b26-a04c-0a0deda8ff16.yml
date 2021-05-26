@@ -2,19 +2,19 @@ id: ocd-person/65375d50-c8bd-4b26-a04c-0a0deda8ff16
 name: Ernest Hewett
 given_name: Ernest
 family_name: Hewett
+image: http://www.housedems.ct.gov/Hewett/images/Hewett_2013-01-09d.jpg
 party:
 - name: Democratic
 roles:
-- district: '39'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/Hewett/images/Hewett_2013-01-09d.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '39'
 links:
 - url: http://www.housedems.ct.gov/Hewett
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000075
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000075
-  scheme: legacy_openstates

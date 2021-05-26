@@ -1,20 +1,31 @@
 id: ocd-person/8c8d32a7-32ed-4ef1-a03d-9661ca98fc5a
 name: Sandra Hollins
+given_name: Sandra
+family_name: Hollins
+email: shollins@le.utah.gov
+image: https://le.utah.gov/images/legislator/HOLLIS.jpg
 party:
 - name: Democratic
 roles:
-- district: '23'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '23'
 contact_details:
 - note: District Office
   address: 518 N 800 W, SALT LAKE CITY, UT, 84116
   voice: 801-363-4257
 links:
 - url: http://house.utah.gov/rep/HOLLIS
+other_names:
+- name: Hollins, S.
+- name: Hollins, Sandra
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000155
+- scheme: legacy_openstates
+  identifier: UTL000242
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/HOLLIS.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIHOLLIS3.pdf
@@ -27,14 +38,3 @@ extras:
   - http://le.utah.gov/house2/CofI/shollins2.pdf
   - http://le.utah.gov/house2/CofI/shollins.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412641
-other_identifiers:
-- identifier: UTL000155
-  scheme: legacy_openstates
-- identifier: UTL000242
-  scheme: legacy_openstates
-given_name: Sandra
-family_name: Hollins
-email: shollins@le.utah.gov
-other_names:
-- name: Hollins, S.
-- name: Hollins, Sandra

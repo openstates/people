@@ -1,11 +1,15 @@
 id: ocd-person/9df241a1-0f02-456a-9dbf-8706e0b6c15c
 name: Marie Waldron
+given_name: Marie
+family_name: Waldron
+gender: Female
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD75-Marie_Waldron.jpg
 party:
 - name: Republican
 roles:
-- district: '75'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '75'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0075
@@ -15,14 +19,10 @@ contact_details:
   voice: 760-480-7570
 links:
 - url: https://ad75.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD75&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD75&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000410
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD75-Marie_Waldron.jpg
-other_identifiers:
-- identifier: CAL000410
-  scheme: legacy_openstates
-given_name: Marie
-family_name: Waldron
-gender: Female

@@ -1,11 +1,15 @@
 id: ocd-person/a8879d70-713c-4d0c-b723-77d0e96c18df
 name: Tom Lackey
+given_name: Tom
+family_name: Lackey
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/lackey.png
 party:
 - name: Republican
 roles:
-- district: '36'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '36'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0036
@@ -15,14 +19,10 @@ contact_details:
   voice: 661-267-7636
 links:
 - url: https://ad36.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD36&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD36&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000481
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/lackey.png
-other_identifiers:
-- identifier: CAL000481
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Lackey
-gender: Male

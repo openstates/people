@@ -1,16 +1,20 @@
 id: ocd-person/5e9a828c-3dfb-4f88-8dfe-f8fccf11ef78
 name: Roberto "Bobby" J. Gonzales
+given_name: Roberto
+family_name: Gonzales
+email: roberto.gonzales@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SGONZ.jpg
 party:
 - name: Democratic
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+- end_date: 2019-12-20
   type: lower
-  end_date: 2019-12-20
-- district: '6'
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '42'
+- start_date: 2019-12-20
   type: upper
-  start_date: 2019-12-20
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '6'
 contact_details:
 - note: Capitol Office
   address: Room 218C State Capitol;Santa Fe, NM 87501
@@ -20,12 +24,8 @@ contact_details:
   voice: 575-758-2674
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SGONZ
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000376
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SGONZ
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SGONZ.jpg
-other_identifiers:
-- identifier: NML000376
-  scheme: legacy_openstates
-given_name: Roberto
-family_name: Gonzales
-email: roberto.gonzales@nmlegis.gov

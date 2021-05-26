@@ -1,36 +1,36 @@
 id: ocd-person/ffa17688-2ca9-40ba-9eb3-3991f930bf53
 name: John Kennedy
+given_name: John
+family_name: Kennedy
+email: john.kennedy@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/kennedy-john-852.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: 421-D State Capitol;Atlanta, GA 30334
-  fax: 404-651-6768
   voice: 404-656-0045
+  fax: 404-651-6768
 - note: District Office
   address: 231 Riverside Drive; Macon, GA 31201
-  fax: 478-742-8720
   voice: 478-749-9981
+  fax: 478-742-8720
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=852&Session=27
 - url: https://www.legis.ga.gov/members/senate/852?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000400
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=852&Session=27
 - url: https://www.legis.ga.gov/members/senate/852?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/kennedy-john-852.jpg
-family_name: Kennedy
-given_name: John
 extras:
   guid: 852
   city: Macon
   georgia_id: 852
   residence: Macon
-other_identifiers:
-- identifier: GAL000400
-  scheme: legacy_openstates
-email: john.kennedy@senate.ga.gov

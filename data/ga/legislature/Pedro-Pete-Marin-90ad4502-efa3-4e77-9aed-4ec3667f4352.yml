@@ -1,36 +1,36 @@
 id: ocd-person/90ad4502-efa3-4e77-9aed-4ec3667f4352
 name: Pedro "Pete" Marin
+given_name: Pedro
+family_name: Marin
+email: pedro.marin@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/marin-pedro--pete--163.jpg
 party:
 - name: Democratic
 roles:
-- district: '96'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '96'
 contact_details:
 - note: Capitol Office
   address: 611-A Coverdell Legislative Office Building;Atlanta, GA 30334
-  fax: 404-651-8086
   voice: 404-656-0314
+  fax: 404-651-8086
 - note: District Office
   address: 4901 Duncan Wood Drive; Duluth, GA 30096
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=163&Session=27
 - url: https://www.legis.ga.gov/members/house/163?session=1029
+other_names:
+- name: Pedro Marin
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000158
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=163&Session=27
 - url: https://www.legis.ga.gov/members/house/163?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/marin-pedro--pete--163.jpg
-family_name: Marin
-given_name: Pedro
 extras:
   guid: 163
   city: Duluth
   georgia_id: 163
   residence: Duluth
-other_identifiers:
-- identifier: GAL000158
-  scheme: legacy_openstates
-email: pedro.marin@house.ga.gov
-other_names:
-- name: Pedro Marin

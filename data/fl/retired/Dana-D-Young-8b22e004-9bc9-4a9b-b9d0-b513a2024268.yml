@@ -1,40 +1,40 @@
 id: ocd-person/8b22e004-9bc9-4a9b-b9d0-b513a2024268
 name: Dana D. Young
+given_name: Dana D.
+family_name: Young
+middle_name: D
+image: http://www.flsenate.gov/PublishedContent/Senators/2016-2018/Photos/s18_5207.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
-- district: '60'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: '2013-01-01'
+  district: '18'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '60'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '57'
 links:
 - url: http://www.flsenate.gov/Senators/s18
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4507&LegislativeTermId=86
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000431
+- scheme: legacy_openstates
+  identifier: FLL000160
+- scheme: legacy_openstates
+  identifier: FLL000324
+- scheme: openstates
+  identifier: ocd-person/d0ecd820-dc0f-44ba-ba40-b71e33b70ed4
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s18
 - url: http://www.flhouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4507&LegislativeTermId=86
-image: http://www.flsenate.gov/PublishedContent/Senators/2016-2018/Photos/s18_5207.jpg
-other_identifiers:
-- identifier: FLL000431
-  scheme: legacy_openstates
-- identifier: FLL000160
-  scheme: legacy_openstates
-- identifier: FLL000324
-  scheme: legacy_openstates
-- identifier: ocd-person/d0ecd820-dc0f-44ba-ba40-b71e33b70ed4
-  scheme: openstates
-given_name: Dana D.
-family_name: Young
-middle_name: D

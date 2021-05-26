@@ -1,11 +1,15 @@
 id: ocd-person/c5ec6885-a7dc-48f4-a2e4-7aa85397f337
 name: Jeffrey S. Guice
+given_name: Jeffrey S.
+family_name: Guice
+email: jguice@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/guice.jpg
 party:
 - name: Republican
 roles:
-- district: '114'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '114'
 contact_details:
 - note: Capitol Office
   address: Room 201 M-4;P. O. Box 1018;Jackson, MS 39215
@@ -14,17 +18,13 @@ contact_details:
   address: P. O Box 549;Ocean Springs, MS 39566
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/guice.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000064
+- scheme: legacy_openstates
+  identifier: MSL000200
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/guice.xml
-image: http://billstatus.ls.state.ms.us/members/house/guice.jpg
 extras:
   org_info: Representative Guice is a member of the National Association of Realtors,
     and the Board of Directors for the Boys and Girls Club of the Gulf Coast.
-other_identifiers:
-- identifier: MSL000064
-  scheme: legacy_openstates
-- identifier: MSL000200
-  scheme: legacy_openstates
-given_name: Jeffrey S.
-family_name: Guice
-email: jguice@house.ms.gov

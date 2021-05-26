@@ -2,19 +2,19 @@ id: ocd-person/bdcb312a-793b-4ec9-8801-ace03b82faa0
 name: J. Shaun Walley
 given_name: J. Shaun
 family_name: Walley
+image: http://billstatus.ls.state.ms.us/members/house/walley.jpg
 party:
 - name: Democratic
 roles:
-- district: '105'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/walley.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '105'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/walley.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000131
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/walley.xml
-other_identifiers:
-- identifier: MSL000131
-  scheme: legacy_openstates

@@ -1,11 +1,12 @@
 id: ocd-person/01d85172-f83f-48ee-8c35-8979a95c9190
 name: Gaby M. Grossman
+email: Gaby.Grossman@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: Rockingham 18
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Rockingham 18
 contact_details:
 - note: District Office
   address: 31 Winter Street;Exeter, NH 03833-1512
@@ -13,6 +14,11 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_names:
+- name: Gaby Grossman
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/6ca6f9b4-bb07-4802-b8f9-b13e95f8c112
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408918
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -21,9 +27,3 @@ extras:
   first_name: Gaby
   last_name: Grossman
   middle_name: ''
-email: Gaby.Grossman@leg.state.nh.us
-other_names:
-- name: Gaby Grossman
-other_identifiers:
-- identifier: ocd-person/6ca6f9b4-bb07-4802-b8f9-b13e95f8c112
-  scheme: openstates

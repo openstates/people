@@ -3,21 +3,21 @@ name: Nan A Baker
 given_name: Nan
 family_name: Baker
 middle_name: A
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/16.jpg
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/16.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '16'
 links:
 - url: http://www.ohiohouse.gov/nan-a-baker
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000049
+- scheme: legacy_openstates
+  identifier: OHL000185
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000049
-  scheme: legacy_openstates
-- identifier: OHL000185
-  scheme: legacy_openstates

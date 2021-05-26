@@ -1,27 +1,27 @@
 id: ocd-person/cdc1b6c5-a3cb-4e34-af46-5e17c7d13b46
 name: Jimmy Harris
+given_name: Jimmy
+family_name: Harris
+image: http://house.louisiana.gov/h_reps/RepPics09/rep99.jpg
 party:
 - name: Democratic
 roles:
-- district: '99'
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+- end_date: '2020-01-13'
   type: lower
-  end_date: '2020-01-13'
-- district: '4'
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '99'
+- end_date: '2020-01-13'
   type: upper
-  end_date: '2020-01-13'
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '4'
 links:
 - url: http://house.louisiana.gov/H_Reps/members.aspx?ID=99
 - url: http://senate.la.gov/senators/senpage.asp?SenID=4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000826
+- scheme: legacy_openstates
+  identifier: LAL000863
 sources:
 - url: http://house.louisiana.gov/H_Reps/members.aspx?ID=99
 - url: http://senate.la.gov/senators/senpage.asp?SenID=4
-image: http://house.louisiana.gov/h_reps/RepPics09/rep99.jpg
-other_identifiers:
-- identifier: LAL000826
-  scheme: legacy_openstates
-- identifier: LAL000863
-  scheme: legacy_openstates
-given_name: Jimmy
-family_name: Harris

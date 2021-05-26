@@ -1,15 +1,19 @@
 id: ocd-person/b0804883-3f8c-4341-bbc1-26a0346b37c4
 name: Curt VanderWall
+given_name: Curt
+family_name: VanderWall
+email: SenCVanderWall@senate.michigan.gov
+image: https://senate.michigan.gov/_images/35th.jpg
 party:
 - name: Republican
 roles:
-- district: '101'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '101'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '35'
 contact_details:
 - note: Capitol Office
   address: 4500 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-0741
 links:
 - url: https://www.senatorcurtvanderwall.com/
-- note: Contact
-  url: https://www.senatorcurtvanderwall.com/contact
+- url: https://www.senatorcurtvanderwall.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000333
 sources:
 - url: https://www.senatorcurtvanderwall.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-image: https://senate.michigan.gov/_images/35th.jpg
-other_identifiers:
-- identifier: MIL000333
-  scheme: legacy_openstates
-given_name: Curt
-family_name: VanderWall
-email: SenCVanderWall@senate.michigan.gov

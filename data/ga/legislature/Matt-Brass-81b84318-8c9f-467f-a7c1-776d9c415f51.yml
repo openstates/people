@@ -1,11 +1,15 @@
 id: ocd-person/81b84318-8c9f-467f-a7c1-776d9c415f51
 name: Matt Brass
+given_name: Matt
+family_name: Brass
+email: matt.brass@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/brass-matt-4907.jpg
 party:
 - name: Republican
 roles:
-- district: '28'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '28'
 contact_details:
 - note: Capitol Office
   address: 327-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4907&Session=27
 - url: https://www.legis.ga.gov/members/senate/4907?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000469
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4907&Session=27
 - url: https://www.legis.ga.gov/members/senate/4907?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/brass-matt-4907.jpg
-family_name: Brass
-given_name: Matt
 extras:
   guid: 4907
   city: Newnan
   georgia_id: 4907
   residence: Newnan
-other_identifiers:
-- identifier: GAL000469
-  scheme: legacy_openstates
-email: matt.brass@senate.ga.gov

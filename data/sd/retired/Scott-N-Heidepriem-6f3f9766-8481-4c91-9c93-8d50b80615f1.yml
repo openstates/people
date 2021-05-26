@@ -3,17 +3,17 @@ name: Scott N Heidepriem
 given_name: Scott
 family_name: Heidepriem
 middle_name: N
+image: http://legis.state.sd.us/sessions/2010/heidepriem.jpg
 party:
 - name: Democratic
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2010/heidepriem.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '13'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000016
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=40
-other_identifiers:
-- identifier: SDL000016
-  scheme: legacy_openstates

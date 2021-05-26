@@ -1,11 +1,15 @@
 id: ocd-person/d626c3d1-769d-456c-a073-f1efb326fe1d
 name: Scott Beck
+given_name: Scott
+family_name: Beck
+email: sbeck@leg.state.vt.us
+image: https://legislature.vermont.gov/Documents/Legislators/SBeck.jpg
 party:
 - name: Republican
 roles:
-- district: Caledonia-3
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
+  district: Caledonia-3
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -14,17 +18,13 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/23996
 - url: http://legislature.vermont.gov/people/single/2022/23996
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000346
+- scheme: legacy_openstates
+  identifier: VTL000616
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/23996
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/23996
-image: https://legislature.vermont.gov/Documents/Legislators/SBeck.jpg
-other_identifiers:
-- identifier: VTL000346
-  scheme: legacy_openstates
-- identifier: VTL000616
-  scheme: legacy_openstates
-given_name: Scott
-family_name: Beck
-email: sbeck@leg.state.vt.us

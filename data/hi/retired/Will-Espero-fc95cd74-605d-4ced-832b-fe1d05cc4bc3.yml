@@ -2,27 +2,27 @@ id: ocd-person/fc95cd74-605d-4ced-832b-fe1d05cc4bc3
 name: Will Espero
 given_name: Will
 family_name: Espero
+image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/espero.jpg
 party:
 - name: Democratic
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '19'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/espero.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '20'
 links:
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=espero&year=2018
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: HIL000005
+- scheme: legacy_openstates
+  identifier: HIL000084
 sources:
 - url: http://capitol.hawaii.gov/members/legislators.aspx?chamber=S
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=espero&year=2018
-other_identifiers:
-- identifier: HIL000005
-  scheme: legacy_openstates
-- identifier: HIL000084
-  scheme: legacy_openstates

@@ -1,11 +1,15 @@
 id: ocd-person/4c535bc4-4b3c-4def-9332-700a1ebb5c6a
 name: Dave Jacoby
+given_name: Dave
+family_name: Jacoby
+email: david.jacoby@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=320
 party:
 - name: Democratic
 roles:
-- district: '74'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '74'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=320
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=320
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000087
+- scheme: legacy_openstates
+  identifier: IAL000262
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=320
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=320
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=320
-other_identifiers:
-- identifier: IAL000087
-  scheme: legacy_openstates
-- identifier: IAL000262
-  scheme: legacy_openstates
-given_name: Dave
-family_name: Jacoby
-email: david.jacoby@legis.iowa.gov

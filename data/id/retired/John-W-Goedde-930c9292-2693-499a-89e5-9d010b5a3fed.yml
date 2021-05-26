@@ -3,19 +3,19 @@ name: John W. Goedde
 given_name: John
 family_name: Goedde
 middle_name: W.
+image: http://legislature.idaho.gov/images/Goedde85.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legislature.idaho.gov/images/Goedde85.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '4'
 links:
 - url: http://legislature.idaho.gov/senate/membershipSingle.cfm?ID=85
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000012
 sources:
 - url: http://legislature.idaho.gov/senate/membership.cfm
-other_identifiers:
-- identifier: IDL000012
-  scheme: legacy_openstates

@@ -1,11 +1,15 @@
 id: ocd-person/74ef0a3e-35c9-4729-b6fd-2c07c165864d
 name: Cheikh Taylor
+given_name: Cheikh
+family_name: Taylor
+email: ctaylor@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/taylor.jpg
 party:
 - name: Democratic
 roles:
-- district: '38'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '38'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -14,16 +18,12 @@ contact_details:
   voice: 662-617-8125
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000299
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
-image: http://billstatus.ls.state.ms.us/members/house/taylor.jpg
 extras:
   org_info: Representative Taylor is affiliated with Habitat for Humanity, Oktibbeha
     County Board of Supervisors' Advisory Council, Starkville Area Arts Council, Oktibbeha
     County Food Policy Council, Omega Psi Phi Fraternity Inc, and NAACP.
-other_identifiers:
-- identifier: MSL000299
-  scheme: legacy_openstates
-given_name: Cheikh
-family_name: Taylor
-email: ctaylor@house.ms.gov

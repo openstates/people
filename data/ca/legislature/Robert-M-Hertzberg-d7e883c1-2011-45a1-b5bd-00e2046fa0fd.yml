@@ -1,11 +1,15 @@
 id: ocd-person/d7e883c1-2011-45a1-b5bd-00e2046fa0fd
 name: Robert M. Hertzberg
+given_name: Robert
+family_name: Hertzberg
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/hertzberg_0705_lls_hsedcr.jpg
 party:
 - name: Democratic
 roles:
-- district: '18'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 313, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 818-901-5588
 links:
 - url: https://senate.ca.gov/sd18
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD18&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD18&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000482
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/hertzberg_0705_lls_hsedcr.jpg
-other_identifiers:
-- identifier: CAL000482
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Hertzberg
-gender: Male

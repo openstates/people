@@ -1,11 +1,15 @@
 id: ocd-person/93b85e3f-af14-4792-ae2e-06bcdaf04aa1
 name: Sydney Kamlager
+given_name: Sydney
+family_name: Kamlager
+gender: Female
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/kamlager-dove_0.jpg
 party:
 - name: Democratic
 roles:
-- district: '54'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '54'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0054
@@ -15,16 +19,12 @@ contact_details:
   voice: 310-641-5410
 links:
 - url: https://a54.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD54&inframe=N
-sources:
-- url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/kamlager-dove_0.jpg
-other_identifiers:
-- identifier: CAL000536
-  scheme: legacy_openstates
-given_name: Sydney
-family_name: Kamlager
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD54&inframe=N
+  note: Contact Form
 other_names:
 - name: Sydney Kamlager-Dove
-gender: Female
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000536
+sources:
+- url: http://assembly.ca.gov/assemblymembers

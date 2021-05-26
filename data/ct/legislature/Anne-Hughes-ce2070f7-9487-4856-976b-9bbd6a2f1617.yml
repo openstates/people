@@ -1,11 +1,14 @@
 id: ocd-person/ce2070f7-9487-4856-976b-9bbd6a2f1617
 name: Anne M. Hughes
+given_name: Anne
+family_name: Hughes
+email: Anne.Hughes@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '135'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '135'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4000;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 203-613-4040
 links:
 - url: http://www.housedems.ct.gov/hughes
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Anne
-family_name: Hughes
-email: Anne.Hughes@cga.ct.gov
 other_names:
 - name: Hughes, Anne M.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -2,17 +2,17 @@ id: ocd-person/999e39c0-be5d-4a50-8b6f-6646ce44f54d
 name: Dean Florez
 given_name: Dean
 family_name: Florez
+image: http://dist16.casen.govoffice.com/vertical/Sites/%7B38711C30-6066-4044-A339-4CAF59EA64E8%7D/uploads/%7BB3BEA1CD-56C8-4211-AF6E-B29ED9B9B3E8%7D_Web.jpg
 party:
 - name: Democratic
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://dist16.casen.govoffice.com/vertical/Sites/%7B38711C30-6066-4044-A339-4CAF59EA64E8%7D/uploads/%7BB3BEA1CD-56C8-4211-AF6E-B29ED9B9B3E8%7D_Web.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '16'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000033
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000033
-  scheme: legacy_openstates

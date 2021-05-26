@@ -2,19 +2,19 @@ id: ocd-person/5389b7f0-b33d-4037-b846-edbc33230e4f
 name: Mary Still
 given_name: Mary
 family_name: Still
+image: http://www.house.mo.gov/billtracking/bills121/member/mem025.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/billtracking/bills121/member/mem025.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '25'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=76
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000174
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=25
-other_identifiers:
-- identifier: MOL000174
-  scheme: legacy_openstates

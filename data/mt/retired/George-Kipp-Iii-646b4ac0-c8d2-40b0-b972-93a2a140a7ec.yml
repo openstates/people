@@ -1,22 +1,22 @@
 id: ocd-person/646b4ac0-c8d2-40b0-b972-93a2a140a7ec
 name: George Kipp Iii
+given_name: George
+family_name: Kipp
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '15'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4758
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4758
+  note: legislator page
 other_identifiers:
-- identifier: MTL000236
-  scheme: legacy_openstates
-- identifier: MTL000422
-  scheme: legacy_openstates
-given_name: George
-family_name: Kipp
+- scheme: legacy_openstates
+  identifier: MTL000236
+- scheme: legacy_openstates
+  identifier: MTL000422
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

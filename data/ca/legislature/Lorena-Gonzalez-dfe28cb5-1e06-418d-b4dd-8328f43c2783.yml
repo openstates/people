@@ -1,12 +1,16 @@
 id: ocd-person/dfe28cb5-1e06-418d-b4dd-8328f43c2783
 name: Lorena Gonzalez
+given_name: Lorena
+family_name: Gonzalez
+gender: Female
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD80.jpg
 party:
 - name: Democratic
 roles:
-- district: '80'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- start_date: '2018-12-03'
   type: lower
-  start_date: '2018-12-03'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '80'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0080
@@ -16,16 +20,12 @@ contact_details:
   voice: 619-338-8090
 links:
 - url: https://a80.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD80&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD80&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000425
+- scheme: openstates
+  identifier: ocd-person/2fe17faa-293f-42db-b726-c44387f942e3
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD80.jpg
-given_name: Lorena
-family_name: Gonzalez
-gender: Female
-other_identifiers:
-- identifier: CAL000425
-  scheme: legacy_openstates
-- identifier: ocd-person/2fe17faa-293f-42db-b726-c44387f942e3
-  scheme: openstates

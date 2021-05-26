@@ -2,19 +2,19 @@ id: ocd-person/91338c1e-e454-4c65-89f1-4c8c3ee418be
 name: Al Adinolfi
 given_name: Al
 family_name: Adinolfi
+image: http://cthousegop.com/wp-content/uploads/2012/01/adinolfi_thumb.jpg
 party:
 - name: Republican
 roles:
-- district: '103'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://cthousegop.com/wp-content/uploads/2012/01/adinolfi_thumb.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '103'
 links:
 - url: http://repadinolfi.com
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000139
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000139
-  scheme: legacy_openstates

@@ -1,15 +1,19 @@
 id: ocd-person/29d15156-587d-4fec-b442-6274b18a8e3f
 name: Bill White
+given_name: Bill
+family_name: White
+email: Bill.White@senate.mo.gov
+image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/White-1a-200x300.jpg
 party:
 - name: Republican
 roles:
-- district: '161'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '32'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: upper
+  district: '161'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '32'
 contact_details:
 - note: Capitol Office
   address: 201 W Capitol Ave., Rm. 431;Jefferson City, Missouri 65101
@@ -17,6 +21,11 @@ contact_details:
 links:
 - url: http://www.senate.mo.gov/mem32
 - url: https://www.senate.mo.gov/mem32
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000189
+- scheme: legacy_openstates
+  identifier: MOL000363
 sources:
 - url: http://www.senate.mo.gov/senators-listing/
 - url: http://www.senate.mo.gov/mem32
@@ -25,12 +34,3 @@ sources:
 extras:
   first_name: Bill
   last_name: White
-other_identifiers:
-- identifier: MOL000189
-  scheme: legacy_openstates
-- identifier: MOL000363
-  scheme: legacy_openstates
-given_name: Bill
-family_name: White
-image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/White-1a-200x300.jpg
-email: Bill.White@senate.mo.gov

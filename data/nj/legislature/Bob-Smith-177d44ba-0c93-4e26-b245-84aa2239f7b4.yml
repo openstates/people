@@ -1,27 +1,27 @@
 id: ocd-person/177d44ba-0c93-4e26-b245-84aa2239f7b4
 name: Bob Smith
+given_name: Bob
+family_name: Smith
+gender: Male
+email: SenSmith@njleg.org
+image: http://www.njleg.state.nj.us/members/memberphotos/smith_color.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: upper
+  district: '17'
 contact_details:
 - note: District Office
   address: 216 Stelton Rd., Suite E-5;Piscataway, NJ 08854
   voice: 732-752-0770
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=53
+other_names:
+- name: Smith, Bob
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000051
 sources:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=53
 - url: http://www.njleg.state.nj.us/downloads.asp
-image: http://www.njleg.state.nj.us/members/memberphotos/smith_color.jpg
-gender: Male
-other_identifiers:
-- identifier: NJL000051
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Smith
-email: SenSmith@njleg.org
-other_names:
-- name: Smith, Bob

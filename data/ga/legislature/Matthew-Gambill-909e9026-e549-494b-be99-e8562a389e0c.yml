@@ -1,11 +1,15 @@
 id: ocd-person/909e9026-e549-494b-be99-e8562a389e0c
 name: Matthew Gambill
+given_name: Matthew
+family_name: Gambill
+email: matthew.gambill@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/gambill-matthew-4934.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '15'
 contact_details:
 - note: Capitol Office
   address: 601-E Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -19,12 +23,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4934&Session=27
 - url: https://www.legis.ga.gov/members/house/4934?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/gambill-matthew-4934.jpg
-family_name: Gambill
-given_name: Matthew
 extras:
   guid: 4934
   city: Cartersville
   georgia_id: 4934
   residence: Cartersville
-email: matthew.gambill@house.ga.gov

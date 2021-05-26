@@ -1,19 +1,28 @@
 id: ocd-person/bfad4ef7-fad2-46e6-8f12-f8ea9feaa0cb
 name: Mike Henderson
+given_name: Mike
+family_name: Henderson
+email: Mike.Henderson@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1944
 party:
 - name: Republican
 roles:
-- district: '117'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '117'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 412-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 412-A; Jefferson
+    City MO 65101
   voice: 573-751-2317
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=117
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=117
+other_names:
+- name: Henderson, Mike
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000463
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=117
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Mike
   last_name: Henderson
-other_identifiers:
-- identifier: MOL000463
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Henderson
-email: Mike.Henderson@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1944
-other_names:
-- name: Henderson, Mike

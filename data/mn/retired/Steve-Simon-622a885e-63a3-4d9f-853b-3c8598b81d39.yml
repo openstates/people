@@ -2,29 +2,29 @@ id: ocd-person/622a885e-63a3-4d9f-853b-3c8598b81d39
 name: Steve Simon
 given_name: Steve
 family_name: Simon
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/46B.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 44A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: 46B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 44A
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/46B.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 46B
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=12280
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000154
+- scheme: legacy_openstates
+  identifier: MNL000342
+- scheme: legacy_openstates
+  identifier: MNL000474
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=12280
-other_identifiers:
-- identifier: MNL000154
-  scheme: legacy_openstates
-- identifier: MNL000342
-  scheme: legacy_openstates
-- identifier: MNL000474
-  scheme: legacy_openstates

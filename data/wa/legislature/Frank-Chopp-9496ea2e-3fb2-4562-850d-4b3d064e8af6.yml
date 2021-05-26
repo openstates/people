@@ -1,11 +1,15 @@
 id: ocd-person/9496ea2e-3fb2-4562-850d-4b3d064e8af6
 name: Frank Chopp
+given_name: Frank
+family_name: Chopp
+email: frank.chopp@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/chopp.jpg
 party:
 - name: Democratic
 roles:
-- district: '43'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '43'
 contact_details:
 - note: Capitol Office
   address: 339C Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Frank-Chopp/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Chopp/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000063
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/chopp.jpg
-other_identifiers:
-- identifier: WAL000063
-  scheme: legacy_openstates
-given_name: Frank
-family_name: Chopp
-email: frank.chopp@leg.wa.gov

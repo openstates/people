@@ -2,19 +2,19 @@ id: ocd-person/e31cbb1c-1953-4181-b2e7-c63d753614d9
 name: Claire L. Janowski
 given_name: Claire L.
 family_name: Janowski
+image: http://www.housedems.ct.gov/Janowski/images/Janowski36.jpg
 party:
 - name: Democratic
 roles:
-- district: '56'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/Janowski/images/Janowski36.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '56'
 links:
 - url: http://www.housedems.ct.gov/Janowski
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000092
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000092
-  scheme: legacy_openstates

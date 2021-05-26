@@ -1,11 +1,15 @@
 id: ocd-person/0e45048c-c1a4-415f-9ee4-5d09ea857e2e
 name: Josh Bonner
+given_name: Josh
+family_name: Bonner
+email: josh.bonner@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/bonner-josh-4893.jpg
 party:
 - name: Republican
 roles:
-- district: '72'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '72'
 contact_details:
 - note: Capitol Office
   address: 601-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4893&Session=27
 - url: https://www.legis.ga.gov/members/house/4893?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000471
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4893&Session=27
 - url: https://www.legis.ga.gov/members/house/4893?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/bonner-josh-4893.jpg
-family_name: Bonner
-given_name: Josh
 extras:
   guid: 4893
   city: Fayetteville
   georgia_id: 4893
   residence: Fayetteville
-other_identifiers:
-- identifier: GAL000471
-  scheme: legacy_openstates
-email: josh.bonner@house.ga.gov

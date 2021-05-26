@@ -1,19 +1,28 @@
 id: ocd-person/aa6fd7b5-39d2-41f0-8435-7190259e9b86
 name: Dan Houx
+given_name: Dan
+family_name: Houx
+email: Dan.Houx@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1904
 party:
 - name: Republican
 roles:
-- district: '54'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '54'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 413-B; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 413-B; Jefferson
+    City MO 65101
   voice: 573-751-3850
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=54
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=054
+other_names:
+- name: Houx, Dan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000437
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=54
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Dan
   last_name: Houx
-other_identifiers:
-- identifier: MOL000437
-  scheme: legacy_openstates
-given_name: Dan
-family_name: Houx
-email: Dan.Houx@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1904
-other_names:
-- name: Houx, Dan

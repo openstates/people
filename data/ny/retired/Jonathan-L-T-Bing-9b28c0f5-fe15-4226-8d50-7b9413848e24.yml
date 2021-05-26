@@ -3,17 +3,17 @@ name: Jonathan L T Bing
 given_name: Jonathan
 family_name: Bing
 middle_name: L T
+image: http://assembly.state.ny.us/mem/pic/073.jpg
 party:
 - name: Democratic
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://assembly.state.ny.us/mem/pic/073.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '73'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000071
 sources:
 - url: http://assembly.state.ny.us/mem/?sh=email
-other_identifiers:
-- identifier: NYL000071
-  scheme: legacy_openstates

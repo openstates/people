@@ -2,21 +2,21 @@ id: ocd-person/5fb8e2dc-0d2e-4be6-8371-783737b65af6
 name: Nancy McLain
 given_name: Nancy
 family_name: McLain
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/MCLAIN.gif
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/House/MCLAIN.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '3'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=62&Legislature=50&Session_ID=108
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000161
+- scheme: legacy_openstates
+  identifier: AZL000071
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=108&body=H
-other_identifiers:
-- identifier: AZL000161
-  scheme: legacy_openstates
-- identifier: AZL000071
-  scheme: legacy_openstates

@@ -1,11 +1,16 @@
 id: ocd-person/502bd80a-3f8c-4d0c-90f2-feacb234a6f2
 name: Pat Sweeney
+given_name: Pat
+family_name: Sweeney
+email: Patrick.Sweeney@wyoleg.gov
+birth_date: 1954-06-16
+image: http://wyoleg.gov/LegislatorSummary/Photos/SweeneyPH58.jpg
 party:
 - name: Republican
 roles:
-- district: '58'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '58'
 contact_details:
 - note: District Office
   address: P.O. Box 1325, Casper WY 82602
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2047
 - url: http://wyoleg.gov/Legislators/2021/R/2047
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000162
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2047
 - url: http://wyoleg.gov/Legislators/2021/R/2047
-image: http://wyoleg.gov/LegislatorSummary/Photos/SweeneyPH58.jpg
-birth_date: '1954-06-16'
-given_name: Pat
-family_name: Sweeney
 extras:
   civic_organizations:
   - orgname: Downtown Casper Business Association
@@ -35,7 +39,3 @@ extras:
   religion: Presbyterian
   spouse_given_name: null
   wy_leg_id: 2047
-other_identifiers:
-- identifier: WYL000162
-  scheme: legacy_openstates
-email: Patrick.Sweeney@wyoleg.gov

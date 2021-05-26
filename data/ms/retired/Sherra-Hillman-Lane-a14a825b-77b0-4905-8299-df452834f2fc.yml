@@ -2,19 +2,19 @@ id: ocd-person/a14a825b-77b0-4905-8299-df452834f2fc
 name: Sherra Hillman Lane
 given_name: Sherra Hillman
 family_name: Lane
+image: http://billstatus.ls.state.ms.us/members/house/lane.jpg
 party:
 - name: Democratic
 roles:
-- district: '86'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/lane.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '86'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/lane.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000149
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/lane.xml
-other_identifiers:
-- identifier: MSL000149
-  scheme: legacy_openstates

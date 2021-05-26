@@ -2,26 +2,26 @@ id: ocd-person/7e518268-126e-4661-bc5e-0390fc3e06df
 name: Jeff Thompson
 given_name: Jeff
 family_name: Thompson
+image: http://legislature.idaho.gov/images/Thompson752.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '30'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Thompson752.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '33'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=752
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000101
+- scheme: legacy_openstates
+  identifier: IDL000182
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000101
-  scheme: legacy_openstates
-- identifier: IDL000182
-  scheme: legacy_openstates

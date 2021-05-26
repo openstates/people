@@ -2,20 +2,20 @@ id: ocd-person/3c16dad7-0c96-41cb-a0f4-fe149586e350
 name: Joe Kroeber
 given_name: Joe
 family_name: Kroeber
+image: http://www.legis.nd.gov/images/62/representatives/jkroeber.jpg
 party:
 - name: Democratic
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.nd.gov/images/62/representatives/jkroeber.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
+  district: '12'
 links:
 - url: http://www.legis.nd.gov/assembly/62-2011/house/representatives/bios/jkroeber.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NDL000073
 sources:
 - url: http://www.legis.nd.gov/assembly/62-2011/house/representatives/bios/jkroeber.html
 - url: http://www.legis.nd.gov/assembly/62-2011/house/members/district.html
-other_identifiers:
-- identifier: NDL000073
-  scheme: legacy_openstates

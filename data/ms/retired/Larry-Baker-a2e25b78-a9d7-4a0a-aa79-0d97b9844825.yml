@@ -2,19 +2,19 @@ id: ocd-person/a2e25b78-a9d7-4a0a-aa79-0d97b9844825
 name: Larry Baker
 given_name: Larry
 family_name: Baker
+image: http://billstatus.ls.state.ms.us/members/house/baker_(8th).jpg
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/baker_(8th).jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '8'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/baker_(8th).xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000072
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/baker_(8th).xml
-other_identifiers:
-- identifier: MSL000072
-  scheme: legacy_openstates

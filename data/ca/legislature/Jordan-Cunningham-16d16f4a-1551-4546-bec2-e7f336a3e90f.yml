@@ -1,11 +1,15 @@
 id: ocd-person/16d16f4a-1551-4546-bec2-e7f336a3e90f
 name: Jordan Cunningham
+given_name: Jordan
+family_name: Cunningham
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/cunningham.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '35'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0035
@@ -15,14 +19,10 @@ contact_details:
   voice: 805-549-3381
 links:
 - url: https://ad35.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD35&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD35&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000519
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/cunningham.jpg
-other_identifiers:
-- identifier: CAL000519
-  scheme: legacy_openstates
-given_name: Jordan
-family_name: Cunningham
-gender: Male

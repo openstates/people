@@ -2,19 +2,19 @@ id: ocd-person/6cbf78df-c930-4339-b40f-03026e054e62
 name: Sidney Bondurant
 given_name: Sidney
 family_name: Bondurant
+image: http://billstatus.ls.state.ms.us/members/house/bondurant.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/bondurant.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '24'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bondurant.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000112
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/bondurant.xml
-other_identifiers:
-- identifier: MSL000112
-  scheme: legacy_openstates

@@ -1,16 +1,20 @@
 id: ocd-person/adb43503-bebd-4a83-8fa6-e6416576de2f
 name: Christy Zito
+given_name: Christy
+family_name: Zito
+email: CZito@senate.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Zito4281.jpg
 party:
 - name: Republican
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+- end_date: 2020-12-01
   type: lower
-  end_date: 2020-12-01
-- district: '23'
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '23'
+- start_date: 2020-12-01
   type: upper
-  start_date: 2020-12-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '23'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1336
@@ -18,12 +22,8 @@ contact_details:
   address: 8821 Old Highway 30, Hammett, ID, 83627
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000324
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Zito4281.jpg
-other_identifiers:
-- identifier: IDL000324
-  scheme: legacy_openstates
-given_name: Christy
-family_name: Zito
-email: CZito@senate.idaho.gov

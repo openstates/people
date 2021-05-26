@@ -2,19 +2,19 @@ id: ocd-person/efbd827c-9c40-4d92-8e57-57515dc98085
 name: Mike Gloor
 given_name: Mike
 family_name: Gloor
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist35.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist35.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '35'
 links:
 - url: http://news.legislature.ne.gov/dist35
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000035
 sources:
 - url: http://news.legislature.ne.gov/dist35
-other_identifiers:
-- identifier: NEL000035
-  scheme: legacy_openstates

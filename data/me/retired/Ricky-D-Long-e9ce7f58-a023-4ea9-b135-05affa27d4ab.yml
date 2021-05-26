@@ -3,27 +3,27 @@ name: Ricky D. Long
 given_name: Ricky
 family_name: Long
 middle_name: D.
+image: http://www.maine.gov/legis/house_gop/_images/longrd.jpg
 party:
 - name: Republican
 roles:
-- district: '145'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '145'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.maine.gov/legis/house_gop/_images/longrd.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '9'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/longrd.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000044
+- scheme: legacy_openstates
+  identifier: MEL000301
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/longrd.htm
-other_identifiers:
-- identifier: MEL000044
-  scheme: legacy_openstates
-- identifier: MEL000301
-  scheme: legacy_openstates

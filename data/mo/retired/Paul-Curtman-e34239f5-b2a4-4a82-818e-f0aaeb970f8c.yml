@@ -1,24 +1,24 @@
 id: ocd-person/e34239f5-b2a4-4a82-818e-f0aaeb970f8c
 name: Paul Curtman
+given_name: Paul
+family_name: Curtman
 party:
 - name: Republican
 roles:
-- district: '109'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '109'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=109
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000063
+- scheme: legacy_openstates
+  identifier: MOL000235
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=109
 extras:
   first_name: Paul
   last_name: Curtman
-other_identifiers:
-- identifier: MOL000063
-  scheme: legacy_openstates
-- identifier: MOL000235
-  scheme: legacy_openstates
-given_name: Paul
-family_name: Curtman

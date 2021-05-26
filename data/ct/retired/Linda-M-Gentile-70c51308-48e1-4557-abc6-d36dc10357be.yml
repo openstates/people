@@ -1,18 +1,18 @@
 id: ocd-person/70c51308-48e1-4557-abc6-d36dc10357be
 name: Linda M. Gentile
+given_name: Linda M.
+family_name: Gentile
 party:
 - name: Democratic
 roles:
-- district: '104'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '104'
 links:
 - url: http://www.housedems.ct.gov/Gentile
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000140
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000140
-  scheme: legacy_openstates
-given_name: Linda M.
-family_name: Gentile

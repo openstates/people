@@ -1,11 +1,16 @@
 id: ocd-person/0dd787e8-c62a-46a9-aa0e-915f574e75d2
 name: John J. McGuire, III
+given_name: John J.
+family_name: McGuire
+gender: Male
+email: DelJMcGuire@house.virginia.gov
+image: http://memdata.virginiageneralassembly.gov/images/display_image/H0300
 party:
 - name: Republican
 roles:
-- district: '56'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
+  district: '56'
 contact_details:
 - note: District Office
   address: 11357 Nuckols Road;#156;Glen Allen, Virginia 23059
@@ -13,18 +18,13 @@ contact_details:
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H300
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H300
+other_names:
+- name: McGuire, John J., III
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000272
 sources:
 - url: http://lis.virginia.gov/191/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H300
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H300
-image: http://memdata.virginiageneralassembly.gov/images/display_image/H0300
-other_identifiers:
-- identifier: VAL000272
-  scheme: legacy_openstates
-given_name: John J.
-family_name: McGuire
-gender: Male
-email: DelJMcGuire@house.virginia.gov
-other_names:
-- name: McGuire, John J., III

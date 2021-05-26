@@ -2,19 +2,19 @@ id: ocd-person/3c58de74-0091-4ca2-9710-4cec812d9861
 name: Robert Jauch
 given_name: Robert
 family_name: Jauch
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/sen25.jpeg
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/sen25.jpeg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '25'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=25&h=S
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000329
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=25&h=S
-other_identifiers:
-- identifier: WIL000329
-  scheme: legacy_openstates

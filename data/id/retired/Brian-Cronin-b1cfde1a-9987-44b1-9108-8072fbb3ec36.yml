@@ -2,19 +2,19 @@ id: ocd-person/b1cfde1a-9987-44b1-9108-8072fbb3ec36
 name: Brian Cronin
 given_name: Brian
 family_name: Cronin
+image: http://legislature.idaho.gov/images/Cronin747.jpg
 party:
 - name: Democratic
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Cronin747.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '19'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=747
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000055
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000055
-  scheme: legacy_openstates

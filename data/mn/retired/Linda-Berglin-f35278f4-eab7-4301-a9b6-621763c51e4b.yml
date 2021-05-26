@@ -2,17 +2,17 @@ id: ocd-person/f35278f4-eab7-4301-a9b6-621763c51e4b
 name: Linda Berglin
 given_name: Linda
 family_name: Berglin
+image: http://www.senate.leg.state.mn.us//graphics/61Berglin.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.senate.leg.state.mn.us//graphics/61Berglin.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '61'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000003
 sources:
 - url: http://www.senate.leg.state.mn.us/members/member_list.php
-other_identifiers:
-- identifier: MNL000003
-  scheme: legacy_openstates

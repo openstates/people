@@ -2,28 +2,28 @@ id: ocd-person/fd8438aa-3dfd-48ef-b2a5-076c42799b9b
 name: Ryan Silvey
 given_name: Ryan
 family_name: Silvey
+image: http://www.senate.mo.gov/17web/wp-content/uploads/2015/11/Silvey-200x300.jpg
 party:
 - name: Republican
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-- district: '38'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '17'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.senate.mo.gov/17web/wp-content/uploads/2015/11/Silvey-200x300.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '38'
 links:
 - url: http://www.senate.mo.gov/mem17
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000169
+- scheme: legacy_openstates
+  identifier: MOL000208
 sources:
 - url: http://www.senate.mo.gov/senators-listing/
 - url: http://www.senate.mo.gov/mem17
 - url: http://www.kansascity.com/news/politics-government/article193006474.html
-other_identifiers:
-- identifier: MOL000169
-  scheme: legacy_openstates
-- identifier: MOL000208
-  scheme: legacy_openstates

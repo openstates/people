@@ -1,11 +1,15 @@
 id: ocd-person/0c274c6c-6813-4a77-b7ed-5576e9989493
 name: Lisa Wellman
+given_name: Lisa
+family_name: Wellman
+email: lisa.wellman@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/wellman.jpg
 party:
 - name: Democratic
 roles:
-- district: '41'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '41'
 contact_details:
 - note: Capitol Office
   address: 218 John A. Cherberg Building;PO Box 40441;Olympia, WA 98504
@@ -16,12 +20,8 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Wellman/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000247
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/wellman.jpg
-other_identifiers:
-- identifier: WAL000247
-  scheme: legacy_openstates
-given_name: Lisa
-family_name: Wellman
-email: lisa.wellman@leg.wa.gov

@@ -1,11 +1,15 @@
 id: ocd-person/96f0cbbc-fc98-48f9-9142-ea2ebc0df930
 name: John R. Unger II
+given_name: John
+family_name: Unger
+email: john.unger@wvsenate.gov
+image: http://www.legis.state.wv.us/images/members/2021/senate/unger_john.jpg
 party:
 - name: Democratic
 roles:
-- district: '16'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: upper
+  district: '16'
 contact_details:
 - note: Capitol Office
   address: Room 200W, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,14 +19,10 @@ contact_details:
   voice: 304-389-1866
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Unger
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000034
+- scheme: legacy_openstates
+  identifier: WVL000236
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Unger
-image: http://www.legis.state.wv.us/images/members/2021/senate/unger_john.jpg
-other_identifiers:
-- identifier: WVL000034
-  scheme: legacy_openstates
-- identifier: WVL000236
-  scheme: legacy_openstates
-given_name: John
-family_name: Unger
-email: john.unger@wvsenate.gov

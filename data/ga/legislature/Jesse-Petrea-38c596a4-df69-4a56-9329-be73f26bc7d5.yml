@@ -1,11 +1,15 @@
 id: ocd-person/38c596a4-df69-4a56-9329-be73f26bc7d5
 name: Jesse Petrea
+given_name: Jesse
+family_name: Petrea
+email: jesse.petrea@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/petrea-jesse-862.jpg
 party:
 - name: Republican
 roles:
-- district: '166'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '166'
 contact_details:
 - note: Capitol Office
   address: 408-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=862&Session=27
 - url: https://www.legis.ga.gov/members/house/862?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000401
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=862&Session=27
 - url: https://www.legis.ga.gov/members/house/862?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/petrea-jesse-862.jpg
-family_name: Petrea
-given_name: Jesse
 extras:
   guid: 862
   city: Savannah
   georgia_id: 862
   residence: Savannah
-other_identifiers:
-- identifier: GAL000401
-  scheme: legacy_openstates
-email: jesse.petrea@house.ga.gov

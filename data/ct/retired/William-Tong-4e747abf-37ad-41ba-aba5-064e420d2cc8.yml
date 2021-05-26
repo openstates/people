@@ -1,18 +1,18 @@
 id: ocd-person/4e747abf-37ad-41ba-aba5-064e420d2cc8
 name: William Tong
+given_name: William
+family_name: Tong
 party:
 - name: Democratic
 roles:
-- district: '147'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '147'
 links:
 - url: http://www.housedems.ct.gov/Tong
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000183
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000183
-  scheme: legacy_openstates
-given_name: William
-family_name: Tong

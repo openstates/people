@@ -3,19 +3,19 @@ name: John C Carpenter
 given_name: John
 family_name: Carpenter
 middle_name: C
+image: http://www.leg.state.nv.us/73rd/legislators/assembly/Images/Carpenter.jpg
 party:
 - name: Republican
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.leg.state.nv.us/73rd/legislators/assembly/Images/Carpenter.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '33'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000070
+- scheme: legacy_openstates
+  identifier: NVL000028
 sources:
 - url: http://www.leg.state.nv.us/Session/75th2009/legislators/Assembly/alist.cfm
-other_identifiers:
-- identifier: NVL000070
-  scheme: legacy_openstates
-- identifier: NVL000028
-  scheme: legacy_openstates

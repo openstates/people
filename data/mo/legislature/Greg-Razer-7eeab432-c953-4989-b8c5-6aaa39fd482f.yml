@@ -1,18 +1,28 @@
 id: ocd-person/7eeab432-c953-4989-b8c5-6aaa39fd482f
 name: Greg Razer
+given_name: Greg
+family_name: Razer
+email: Greg.Razer@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
-- district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: upper
+  district: '25'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '7'
+contact_details:
+- note: Capitol Office
+  address: 201 W Capitol Ave., Rm. 330;Jefferson City, Missouri 65101
+  voice: 573-751-6607
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=25
 - url: https://www.senate.mo.gov/mem07
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000458
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=25
@@ -21,13 +31,3 @@ sources:
 extras:
   first_name: Greg
   last_name: Razer
-other_identifiers:
-- identifier: MOL000458
-  scheme: legacy_openstates
-given_name: Greg
-family_name: Razer
-email: Greg.Razer@house.mo.gov
-contact_details:
-- address: 201 W Capitol Ave., Rm. 330;Jefferson City, Missouri 65101
-  note: Capitol Office
-  voice: 573-751-6607

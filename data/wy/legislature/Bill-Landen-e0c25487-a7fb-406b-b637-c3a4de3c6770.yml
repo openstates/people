@@ -1,11 +1,16 @@
 id: ocd-person/e0c25487-a7fb-406b-b637-c3a4de3c6770
 name: Bill Landen
+given_name: Bill
+family_name: Landen
+email: Bill.Landen@wyoleg.gov
+birth_date: 1956-02-21
+image: http://wyoleg.gov/LegislatorSummary/Photos/LandenBS27.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '27'
 contact_details:
 - note: District Office
   address: 2010 Kingsbury Drive, Casper WY 82609
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/434
 - url: http://wyoleg.gov/Legislators/2021/R/434
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000019
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/434
 - url: http://wyoleg.gov/Legislators/2021/R/434
-image: http://wyoleg.gov/LegislatorSummary/Photos/LandenBS27.jpg
-birth_date: '1956-02-21'
-given_name: Bill
-family_name: Landen
 extras:
   county: Natrona
   education:
@@ -38,7 +42,3 @@ extras:
   religion: ''
   spouse_given_name: Robyn
   wy_leg_id: 434
-other_identifiers:
-- identifier: WYL000019
-  scheme: legacy_openstates
-email: Bill.Landen@wyoleg.gov

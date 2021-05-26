@@ -1,24 +1,24 @@
 id: ocd-person/f1a5ca48-575f-4577-9cd5-4cc84aedfac7
 name: T.J. Berry
+given_name: T.J.
+family_name: Berry
 party:
 - name: Republican
 roles:
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '38'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=38
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000043
+- scheme: legacy_openstates
+  identifier: MOL000218
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=38
 extras:
   first_name: T.J.
   last_name: Berry
-other_identifiers:
-- identifier: MOL000043
-  scheme: legacy_openstates
-- identifier: MOL000218
-  scheme: legacy_openstates
-given_name: T.J.
-family_name: Berry

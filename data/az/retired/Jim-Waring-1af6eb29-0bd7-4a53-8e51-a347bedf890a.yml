@@ -2,17 +2,17 @@ id: ocd-person/1af6eb29-0bd7-4a53-8e51-a347bedf890a
 name: Jim Waring
 given_name: Jim
 family_name: Waring
+image: http://www.azleg.gov/alisImages/MemberPhotos/48leg/Senate/WARING.gif
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/48leg/Senate/WARING.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '7'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000034
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=89&body=S
-other_identifiers:
-- identifier: AZL000034
-  scheme: legacy_openstates

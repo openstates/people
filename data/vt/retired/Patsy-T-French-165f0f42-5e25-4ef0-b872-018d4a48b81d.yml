@@ -2,33 +2,33 @@ id: ocd-person/165f0f42-5e25-4ef0-b872-018d4a48b81d
 name: Patsy T French
 given_name: Patsy
 family_name: French
+image: http://vermont-elections.org/2009-2010BioBook/jpegs/frenchp.jpg
 party:
 - name: Democratic
 roles:
-- district: Orange-Addison-1
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Orange-Washington-Addison
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Orange-Addison-1
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://vermont-elections.org/2009-2010BioBook/jpegs/frenchp.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Orange-Washington-Addison
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000073
+- scheme: legacy_openstates
+  identifier: VTL000253
+- scheme: legacy_openstates
+  identifier: VTL000651
+- scheme: legacy_openstates
+  identifier: VTL000497
+- scheme: legacy_openstates
+  identifier: VTL000725
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2016
 - url: http://legislature.vermont.gov/people/single/2016/14558
-other_identifiers:
-- identifier: VTL000073
-  scheme: legacy_openstates
-- identifier: VTL000253
-  scheme: legacy_openstates
-- identifier: VTL000651
-  scheme: legacy_openstates
-- identifier: VTL000497
-  scheme: legacy_openstates
-- identifier: VTL000725
-  scheme: legacy_openstates

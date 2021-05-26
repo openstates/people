@@ -1,11 +1,15 @@
 id: ocd-person/eda485ce-19de-4b39-87ee-6c3274a7fa6c
 name: Thomas Bock
+given_name: Thomas
+family_name: Bock
+email: TBock@leg.state.vt.us
+image: https://legislature.vermont.gov/Documents/Legislators/Bock.Thomas.jpg
 party:
 - name: Democratic
 roles:
-- district: Windsor-3-1
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
+  district: Windsor-3-1
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27182
 - url: http://legislature.vermont.gov/people/single/2022/27182
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000845
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/27182
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27182
-image: https://legislature.vermont.gov/Documents/Legislators/Bock.Thomas.jpg
-other_identifiers:
-- identifier: VTL000845
-  scheme: legacy_openstates
-given_name: Thomas
-family_name: Bock
-email: TBock@leg.state.vt.us

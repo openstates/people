@@ -2,19 +2,19 @@ id: ocd-person/c1004c15-35dc-43eb-ac55-d055dfc95759
 name: Michele Fiore
 given_name: Michele
 family_name: Fiore
+image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Fiore,M.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Fiore,M.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '4'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000252
+- scheme: legacy_openstates
+  identifier: NVL000297
 sources:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/78th2015/Legislator?id=221
-other_identifiers:
-- identifier: NVL000252
-  scheme: legacy_openstates
-- identifier: NVL000297
-  scheme: legacy_openstates
