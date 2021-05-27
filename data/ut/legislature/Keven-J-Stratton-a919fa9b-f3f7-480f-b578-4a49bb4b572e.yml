@@ -1,20 +1,33 @@
 id: ocd-person/a919fa9b-f3f7-480f-b578-4a49bb4b572e
 name: Keven J. Stratton
+given_name: Keven
+family_name: Stratton
+email: kstratton@le.utah.gov
+image: https://le.utah.gov/images/legislator/STRATKJ.jpg
 party:
 - name: Republican
 roles:
-- district: '48'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '48'
 contact_details:
 - note: District Office
   address: 1313 E 800 N, OREM, UT, 84097
   voice: 801-836-6010
 links:
 - url: http://house.utah.gov/rep/STRATKJ
+other_names:
+- name: Stratton, Keven J.
+- name: Stratton, K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000113
+- scheme: legacy_openstates
+  identifier: UTL000132
+- scheme: legacy_openstates
+  identifier: UTL000262
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/STRATKJ.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFISTRATKJ2.pdf
@@ -25,16 +38,3 @@ extras:
   - http://le.utah.gov/house2/CofI/kstratton.pdf
   - http://le.utah.gov/house2/CofI/STRATKJ.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413031
-other_identifiers:
-- identifier: UTL000113
-  scheme: legacy_openstates
-- identifier: UTL000132
-  scheme: legacy_openstates
-- identifier: UTL000262
-  scheme: legacy_openstates
-given_name: Keven
-family_name: Stratton
-email: kstratton@le.utah.gov
-other_names:
-- name: Stratton, Keven J.
-- name: Stratton, K.

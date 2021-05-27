@@ -2,19 +2,19 @@ id: ocd-person/a9a0f362-7917-4424-8b4b-33e5ec94d795
 name: Phil Potvin
 given_name: Phil
 family_name: Potvin
+image: http://gophouse.org/wp-content/uploads/2013/02/102.jpg
 party:
 - name: Republican
 roles:
-- district: '102'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/102.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '102'
 links:
 - url: http://repPotvin.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000140
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000140
-  scheme: legacy_openstates

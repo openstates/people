@@ -2,20 +2,19 @@ id: ocd-person/f4a4ed22-139b-46de-8769-b9b54d2cb5e4
 name: Bruce Zalaski
 given_name: Bruce
 family_name: Zalaski
-middle_name: ' '
+image: http://www.housedems.ct.gov/Zalaski/images/Zalaski5.jpg
 party:
 - name: Democratic
 roles:
-- district: '81'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.housedems.ct.gov/Zalaski/images/Zalaski5.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '81'
 links:
 - url: http://www.housedems.ct.gov/Zalaski
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000117
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000117
-  scheme: legacy_openstates

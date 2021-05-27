@@ -2,33 +2,33 @@ id: ocd-person/a611ba5c-3fd1-45b4-9cba-7bc08c4e3cbc
 name: Rich Crandall
 given_name: Rich
 family_name: Crandall
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/CRANDALL.gif
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
-  start_date: '2011-01-01'
-  end_date: '2012-12-31'
-- district: '19'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+  district: '16'
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '19'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/CRANDALL.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '19'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=92&Legislature=51&Session_ID=110
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000051
+- scheme: legacy_openstates
+  identifier: AZL000105
+- scheme: legacy_openstates
+  identifier: AZL000216
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=S
-other_identifiers:
-- identifier: AZL000051
-  scheme: legacy_openstates
-- identifier: AZL000105
-  scheme: legacy_openstates
-- identifier: AZL000216
-  scheme: legacy_openstates

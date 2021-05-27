@@ -1,11 +1,15 @@
 id: ocd-person/3eafc2ab-5448-40ac-9d5f-b317abdbc747
 name: Mike Hilgers
+given_name: Mike
+family_name: Hilgers
+email: mhilgers@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist21.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '21'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '21'
 contact_details:
 - note: Capitol Office
   address: Room 2103; P.O. Box 94604; Lincoln, NE 68509
@@ -13,17 +17,13 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist21
 - url: http://news.legislature.ne.gov/dist21/
+other_names:
+- name: Speaker Hilgers
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000097
+- scheme: legacy_openstates
+  identifier: NEL000172
 sources:
 - url: http://news.legislature.ne.gov/dist21
 - url: http://news.legislature.ne.gov/dist21/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist21.jpg
-other_identifiers:
-- identifier: NEL000097
-  scheme: legacy_openstates
-- identifier: NEL000172
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Hilgers
-email: mhilgers@leg.ne.gov
-other_names:
-- name: Speaker Hilgers

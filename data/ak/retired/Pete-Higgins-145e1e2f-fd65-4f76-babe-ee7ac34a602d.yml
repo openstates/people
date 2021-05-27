@@ -2,19 +2,19 @@ id: ocd-person/145e1e2f-fd65-4f76-babe-ee7ac34a602d
 name: Pete Higgins
 given_name: Pete
 family_name: Higgins
+image: http://w3.legis.state.ak.us/images/house/HIG.jpg
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://w3.legis.state.ak.us/images/house/HIG.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '5'
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=hig
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000071
 sources:
 - url: http://house.legis.state.ak.us/rep.php?id=hig
-other_identifiers:
-- identifier: AKL000071
-  scheme: legacy_openstates

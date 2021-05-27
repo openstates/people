@@ -1,11 +1,15 @@
 id: ocd-person/5df27ca6-2588-4b60-b373-420cb71bc023
 name: Kenneth Walker
+given_name: Kenneth
+family_name: Walker
+email: kwalker@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/walker.jpg
 party:
 - name: Democratic
 roles:
-- district: '27'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '27'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 601-267-5368
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/walker.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000277
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/walker.xml
-image: http://billstatus.ls.state.ms.us/members/house/walker.jpg
 extras:
   org_info: Representative Walker is affiliated with the Rotary Club, Chamber of Commerce,
     Volunteer Fireman, and Farmer's Co-op.
-other_identifiers:
-- identifier: MSL000277
-  scheme: legacy_openstates
-given_name: Kenneth
-family_name: Walker
-email: kwalker@house.ms.gov

@@ -1,11 +1,15 @@
 id: ocd-person/275b772e-6407-4aaa-8bd6-ceddad1da7fa
 name: Kimberly Alexander
+given_name: Kimberly
+family_name: Alexander
+email: kimberly.alexander@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/alexander-kimberly-806.jpg
 party:
 - name: Democratic
 roles:
-- district: '66'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '66'
 contact_details:
 - note: Capitol Office
   address: 512-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=806&Session=27
 - url: https://www.legis.ga.gov/members/house/806?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000240
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=806&Session=27
 - url: https://www.legis.ga.gov/members/house/806?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/alexander-kimberly-806.jpg
-family_name: Alexander
-given_name: Kimberly
 extras:
   guid: 806
   city: Hiram
   georgia_id: 806
   residence: Hiram
-other_identifiers:
-- identifier: GAL000240
-  scheme: legacy_openstates
-email: kimberly.alexander@house.ga.gov

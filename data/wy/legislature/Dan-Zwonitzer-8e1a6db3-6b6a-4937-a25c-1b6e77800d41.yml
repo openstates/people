@@ -1,11 +1,16 @@
 id: ocd-person/8e1a6db3-6b6a-4937-a25c-1b6e77800d41
 name: Dan Zwonitzer
+given_name: Dan
+family_name: Zwonitzer
+email: dan.zwonitzer@wyoleg.gov
+birth_date: 1979-10-30
+image: http://wyoleg.gov/LegislatorSummary/Photos/ZwonitzerDnH43.jpg
 party:
 - name: Republican
 roles:
-- district: '43'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '43'
 contact_details:
 - note: District Office
   address: 521 Cottonwood Drive, Cheyenne WY 82001
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1141
 - url: http://wyoleg.gov/Legislators/2021/R/1141
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000089
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1141
 - url: http://wyoleg.gov/Legislators/2021/R/1141
-image: http://wyoleg.gov/LegislatorSummary/Photos/ZwonitzerDnH43.jpg
-birth_date: '1979-10-30'
-given_name: Dan
-family_name: Zwonitzer
 extras:
   county: Laramie
   number_children: '2'
@@ -32,7 +36,3 @@ extras:
   - degree: MBA
     gradYear: '2014'
     schoolName: University of Wyoming
-other_identifiers:
-- identifier: WYL000089
-  scheme: legacy_openstates
-email: dan.zwonitzer@wyoleg.gov

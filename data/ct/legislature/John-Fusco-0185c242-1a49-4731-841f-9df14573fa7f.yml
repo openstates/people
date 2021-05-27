@@ -1,11 +1,14 @@
 id: ocd-person/0185c242-1a49-4731-841f-9df14573fa7f
 name: John Fusco
+given_name: John
+family_name: Fusco
+email: John.Fusco@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '81'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '81'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4046;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 55 Brookview Place;Plantsville, CT 06479
 links:
 - url: http://www.cthousegop.com/Fusco/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000342
-  scheme: legacy_openstates
-given_name: John
-family_name: Fusco
-email: John.Fusco@housegop.ct.gov
 other_names:
 - name: Fusco, John
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000342
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

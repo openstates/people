@@ -3,19 +3,19 @@ name: John C Watkins
 given_name: John
 family_name: Watkins
 middle_name: C
+image: http://sov.state.va.us/images/Watkins10.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: upper
-  start_date: '2010-01-01'
+- start_date: '2010-01-01'
   end_date: '2015-12-31'
-image: http://sov.state.va.us/images/Watkins10.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:va/government
+  district: '10'
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?151+mbr+S52
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000039
 sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?151+mbr+S52
-other_identifiers:
-- identifier: VAL000039
-  scheme: legacy_openstates

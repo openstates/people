@@ -2,19 +2,19 @@ id: ocd-person/b846f3bb-d982-470c-b747-eac7bc3d2ad4
 name: Dan Meyer
 given_name: Dan
 family_name: Meyer
+image: http://legis.wisconsin.gov//Assembly/asm34/asm34.jpg
 party:
 - name: Republican
 roles:
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://legis.wisconsin.gov//Assembly/asm34/asm34.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '34'
 links:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=34
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000390
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=34
-other_identifiers:
-- identifier: WIL000390
-  scheme: legacy_openstates

@@ -1,21 +1,21 @@
 id: ocd-person/525fcda4-439e-450d-95c0-d7a65dee565d
 name: Rick Miller
+given_name: Rick
+family_name: Miller
+image: https://house.texas.gov/photos/members/2500.jpg
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '26'
 links:
 - url: https://house.texas.gov/members/member-page/?district=26
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000449
+- scheme: legacy_openstates
+  identifier: TXL000655
 sources:
 - url: https://house.texas.gov/members/member-page/?district=26
-image: https://house.texas.gov/photos/members/2500.jpg
-other_identifiers:
-- identifier: TXL000449
-  scheme: legacy_openstates
-- identifier: TXL000655
-  scheme: legacy_openstates
-given_name: Rick
-family_name: Miller

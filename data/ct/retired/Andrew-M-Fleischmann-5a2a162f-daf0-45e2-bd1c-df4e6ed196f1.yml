@@ -1,18 +1,18 @@
 id: ocd-person/5a2a162f-daf0-45e2-bd1c-df4e6ed196f1
 name: Andrew M. Fleischmann
+given_name: Andrew M.
+family_name: Fleischmann
 party:
 - name: Democratic
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '18'
 links:
 - url: http://www.housedems.ct.gov/Fleischmann
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000054
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000054
-  scheme: legacy_openstates
-given_name: Andrew M.
-family_name: Fleischmann

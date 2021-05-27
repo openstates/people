@@ -2,26 +2,26 @@ id: ocd-person/932e0e33-6cec-4bdb-9412-8b7bd87659e4
 name: Rob Bryan
 given_name: Rob
 family_name: Bryan
+image: https://www.ncleg.gov/Members/MemberImage/S/420/High
 party:
 - name: Republican
 roles:
-- district: '88'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '39'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  start_date: 2019-10-02
-  type: upper
+  district: '88'
+- start_date: 2019-10-02
   end_date: '2020-12-31'
-image: https://www.ncleg.gov/Members/MemberImage/S/420/High
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '39'
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/420
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000271
+- scheme: openstates
+  identifier: ocd-person/26f3582f-e49c-4639-8d5b-86867de1f02c
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/420
-other_identifiers:
-- identifier: NCL000271
-  scheme: legacy_openstates
-- identifier: ocd-person/26f3582f-e49c-4639-8d5b-86867de1f02c
-  scheme: openstates

@@ -2,19 +2,19 @@ id: ocd-person/768b34ad-eba0-4b58-b56c-04e7f4d082ea
 name: Andrew M. Maynard
 given_name: Andrew M.
 family_name: Maynard
+image: http://www.senatedems.ct.gov/photos/maynard-hi.jpg
 party:
 - name: Democratic
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.senatedems.ct.gov/photos/maynard-hi.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '18'
 links:
 - url: http://www.senatedems.ct.gov/Maynard.php
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000018
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000018
-  scheme: legacy_openstates

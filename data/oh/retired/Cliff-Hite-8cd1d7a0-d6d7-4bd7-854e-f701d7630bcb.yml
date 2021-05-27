@@ -2,20 +2,20 @@ id: ocd-person/8cd1d7a0-d6d7-4bd7-854e-f701d7630bcb
 name: Cliff Hite
 given_name: Cliff
 family_name: Hite
+image: http://www.ohiosenate.gov/Assets/Headshots/Small/1.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://www.ohiosenate.gov/Assets/Headshots/Small/1.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '1'
 links:
 - url: http://www.ohiosenate.gov/hite
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000001
 sources:
 - url: http://www.ohiosenate.gov/members/senate-directory
 - url: http://fox8.com/2017/10/18/ohio-state-senator-resigns-over-inappropriate-conduct/
-other_identifiers:
-- identifier: OHL000001
-  scheme: legacy_openstates

@@ -2,19 +2,19 @@ id: ocd-person/be6af5e4-44a6-43e5-9e75-df16056d096b
 name: Jessica Upshaw
 given_name: Jessica
 family_name: Upshaw
+image: http://billstatus.ls.state.ms.us/members/house/upshaw.jpg
 party:
 - name: Republican
 roles:
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/upshaw.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '95'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/upshaw.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000126
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/upshaw.xml
-other_identifiers:
-- identifier: MSL000126
-  scheme: legacy_openstates

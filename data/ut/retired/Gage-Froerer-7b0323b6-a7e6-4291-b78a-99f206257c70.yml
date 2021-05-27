@@ -1,17 +1,24 @@
 id: ocd-person/7b0323b6-a7e6-4291-b78a-99f206257c70
 name: Gage Froerer
+given_name: Gage
+family_name: Froerer
+image: https://le.utah.gov/images/legislator/FROERG.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '8'
 links:
 - url: http://house.utah.gov/rep/FROERG
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000054
+- scheme: legacy_openstates
+  identifier: UTL000244
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/FROERG.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIFROERG.pdf
@@ -20,10 +27,3 @@ extras:
   - http://le.utah.gov/house2/CofI/gfroerer.pdf
   - http://le.utah.gov/house2/CofI/FROERG.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1554
-other_identifiers:
-- identifier: UTL000054
-  scheme: legacy_openstates
-- identifier: UTL000244
-  scheme: legacy_openstates
-given_name: Gage
-family_name: Froerer

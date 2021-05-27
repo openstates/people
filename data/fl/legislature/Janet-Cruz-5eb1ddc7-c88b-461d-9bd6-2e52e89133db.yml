@@ -1,15 +1,19 @@
 id: ocd-person/5eb1ddc7-c88b-461d-9bd6-2e52e89133db
 name: Janet Cruz
+given_name: Janet
+family_name: Cruz
+email: cruz.janet.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s18_5467.jpg
 party:
 - name: Democratic
 roles:
-- district: '62'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
+  district: '62'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: 216 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -21,14 +25,10 @@ contact_details:
 links:
 - url: http://www.flsenate.gov/Senators/s18
 - url: http://www.flsenate.gov/Senators/2018-2020/S18
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000536
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s18
 - url: http://www.flsenate.gov/Senators/2018-2020/S18
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s18_5467.jpg
-other_identifiers:
-- identifier: FLL000536
-  scheme: legacy_openstates
-given_name: Janet
-family_name: Cruz
-email: cruz.janet.web@flsenate.gov

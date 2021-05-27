@@ -2,19 +2,19 @@ id: ocd-person/8fe7c5af-b7c5-4f49-93cf-b09bc36316e4
 name: Mike Alberts
 given_name: Mike
 family_name: Alberts
+image: http://cthousegop.com/wp-content/uploads/2012/01/alberts_thumb.jpg
 party:
 - name: Republican
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://cthousegop.com/wp-content/uploads/2012/01/alberts_thumb.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '50'
 links:
 - url: http://repalberts.com
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000086
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000086
-  scheme: legacy_openstates

@@ -1,16 +1,20 @@
 id: ocd-person/8fe81e26-b0ce-4349-a3e3-91d25247b980
 name: Mike Azinger
+given_name: Mike
+family_name: Azinger
+email: mike.azinger@wvsenate.gov
+image: http://www.legis.state.wv.us/images/members/2021/senate/azinger_michael.jpg
 party:
 - name: Republican
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '3'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: upper
+  district: '10'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: Room 441M, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -20,16 +24,12 @@ contact_details:
   voice: 304-916-2177
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Azinger
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000366
+- scheme: legacy_openstates
+  identifier: WVL000318
+- scheme: openstates
+  identifier: ocd-person/1d07e116-08cb-4077-a8df-6a33f0b50150
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Azinger
-image: http://www.legis.state.wv.us/images/members/2021/senate/azinger_michael.jpg
-other_identifiers:
-- identifier: WVL000366
-  scheme: legacy_openstates
-- identifier: WVL000318
-  scheme: legacy_openstates
-- identifier: ocd-person/1d07e116-08cb-4077-a8df-6a33f0b50150
-  scheme: openstates
-given_name: Mike
-family_name: Azinger
-email: mike.azinger@wvsenate.gov

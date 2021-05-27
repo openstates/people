@@ -1,11 +1,15 @@
 id: ocd-person/68185f1d-fa54-4571-b305-fcd6c7dc024e
 name: Michael Smith
+given_name: Michael
+family_name: Smith
+email: michael.smith@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-michael-832.jpg
 party:
 - name: Democratic
 roles:
-- district: '41'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '41'
 contact_details:
 - note: Capitol Office
   address: 604-F Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
 - url: https://www.legis.ga.gov/members/house/832?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000355
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
 - url: https://www.legis.ga.gov/members/house/832?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-michael-832.jpg
-family_name: Smith
-given_name: Michael
 extras:
   guid: 832
   city: Marietta
   georgia_id: 832
   residence: Marietta
-other_identifiers:
-- identifier: GAL000355
-  scheme: legacy_openstates
-email: michael.smith@house.ga.gov

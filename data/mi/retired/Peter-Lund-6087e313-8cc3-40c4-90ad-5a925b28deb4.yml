@@ -2,23 +2,23 @@ id: ocd-person/6087e313-8cc3-40c4-90ad-5a925b28deb4
 name: Peter Lund
 given_name: Pete
 family_name: Lund
+image: http://gophouse.org/wp-content/uploads/2013/02/36.jpg
 party:
 - name: Republican
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/36.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '36'
 links:
 - url: http://repLund.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000074
+- scheme: legacy_openstates
+  identifier: MIL000163
+- scheme: legacy_openstates
+  identifier: MIL000210
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000074
-  scheme: legacy_openstates
-- identifier: MIL000163
-  scheme: legacy_openstates
-- identifier: MIL000210
-  scheme: legacy_openstates

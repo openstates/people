@@ -2,19 +2,19 @@ id: ocd-person/321e6860-b1ed-4155-800e-feb776bc17c3
 name: Bonnie Parnell
 given_name: Bonnie
 family_name: Parnell
+image: http://www.leg.state.nv.us/73rd/legislators/Assembly/Images/Parnell.jpg
 party:
 - name: Democratic
 roles:
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.leg.state.nv.us/73rd/legislators/Assembly/Images/Parnell.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '40'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000098
+- scheme: legacy_openstates
+  identifier: NVL000056
 sources:
 - url: http://www.leg.state.nv.us/Session/75th2009/legislators/Assembly/alist.cfm
-other_identifiers:
-- identifier: NVL000098
-  scheme: legacy_openstates
-- identifier: NVL000056
-  scheme: legacy_openstates

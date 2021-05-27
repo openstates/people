@@ -2,27 +2,27 @@ id: ocd-person/412c3601-ae5c-4b7c-828b-10cf06a5896e
 name: Eduardo Gonzalez
 given_name: Eduardo
 family_name: Gonzalez
+image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4385.jpg
 party:
 - name: Republican
 roles:
-- district: '111'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '102'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '111'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.flhouse.gov/FileStores/Web/Imaging/Member/4385.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '102'
 links:
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4385&SessionId=75
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000083
+- scheme: legacy_openstates
+  identifier: FLL000244
 sources:
 - url: http://www.flhouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4385&SessionId=75
-other_identifiers:
-- identifier: FLL000083
-  scheme: legacy_openstates
-- identifier: FLL000244
-  scheme: legacy_openstates

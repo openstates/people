@@ -1,22 +1,22 @@
 id: ocd-person/e8ce793e-671a-41fa-818a-42b534fa9c6b
 name: Brandon Chafee
+given_name: Brandon
+family_name: Chafee
 email: Brandon.Chafee@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '33'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '33'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/Chafee
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Brandon
-family_name: Chafee
 other_names:
 - name: Chafee, Brandon
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

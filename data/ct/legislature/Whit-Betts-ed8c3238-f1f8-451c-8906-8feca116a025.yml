@@ -1,11 +1,14 @@
 id: ocd-person/ed8c3238-f1f8-451c-8906-8feca116a025
 name: Whit Betts
+given_name: Whit
+family_name: Betts
+email: whit.betts@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '78'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '78'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 1803;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-582-7105
 links:
 - url: http://www.cthousegop.com/Betts/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000114
-  scheme: legacy_openstates
-given_name: Whit
-family_name: Betts
-email: whit.betts@housegop.ct.gov
 other_names:
 - name: Betts, Whit
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000114
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

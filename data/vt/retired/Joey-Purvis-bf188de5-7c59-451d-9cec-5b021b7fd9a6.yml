@@ -2,20 +2,20 @@ id: ocd-person/bf188de5-7c59-451d-9cec-5b021b7fd9a6
 name: Joey Purvis
 given_name: Joey
 family_name: Purvis
+image: http://legislature.vermont.gov/assets/Documents/Legislators/JPurvis.jpg
 party:
 - name: Republican
 roles:
-- district: Chittenden-9-1
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://legislature.vermont.gov/assets/Documents/Legislators/JPurvis.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-9-1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000344
+- scheme: legacy_openstates
+  identifier: VTL000628
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2016
 - url: http://legislature.vermont.gov/people/single/2016/24021
-other_identifiers:
-- identifier: VTL000344
-  scheme: legacy_openstates
-- identifier: VTL000628
-  scheme: legacy_openstates

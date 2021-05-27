@@ -2,28 +2,28 @@ id: ocd-person/ce36a2bf-c59c-4563-908d-f616d15ea30d
 name: Cresent Hardy
 given_name: Cresent
 family_name: Hardy
+image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Hardy.jpg
 party:
 - name: Republican
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '19'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Hardy.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '20'
 links:
 - url: http://www.leg.state.nv.us/Session/76th2011/legislators/Assembly/alist.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000129
+- scheme: legacy_openstates
+  identifier: NVL000181
+- scheme: legacy_openstates
+  identifier: NVL000238
 sources:
 - url: http://www.leg.state.nv.us/App/Legislator/A/Assembly/28th2014Special/19
-other_identifiers:
-- identifier: NVL000129
-  scheme: legacy_openstates
-- identifier: NVL000181
-  scheme: legacy_openstates
-- identifier: NVL000238
-  scheme: legacy_openstates

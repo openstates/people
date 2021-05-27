@@ -1,11 +1,14 @@
 id: ocd-person/7e01abb6-d4c5-40e9-bdef-7a7efd11aaca
 name: Four Price
+given_name: Four
+family_name: Price
+image: https://house.texas.gov/photos/members/2185.jpg
 party:
 - name: Republican
 roles:
-- district: '87'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
+  district: '87'
 contact_details:
 - note: Capitol Office
   address: Room 1N.9;Austin, Texas 78701
@@ -15,13 +18,10 @@ contact_details:
   voice: 806-374-8787
 links:
 - url: https://house.texas.gov/members/member-page/?district=87
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000402
+- scheme: legacy_openstates
+  identifier: TXL000560
 sources:
 - url: https://house.texas.gov/members/member-page/?district=87
-image: https://house.texas.gov/photos/members/2185.jpg
-other_identifiers:
-- identifier: TXL000402
-  scheme: legacy_openstates
-- identifier: TXL000560
-  scheme: legacy_openstates
-given_name: Four
-family_name: Price

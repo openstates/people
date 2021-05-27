@@ -1,11 +1,14 @@
 id: ocd-person/087a813d-b14a-4205-a08f-cec795647318
 name: Anne Dauphinais
+given_name: Anne
+family_name: Dauphinais
+email: Anne.Dauphinais@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '44'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '44'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4063;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 204 Wright Road;Danielson, CT 06239
 links:
 - url: http://www.cthousegop.com/Dauphinais/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000334
-  scheme: legacy_openstates
-given_name: Anne
-family_name: Dauphinais
-email: Anne.Dauphinais@housegop.ct.gov
 other_names:
 - name: Dauphinais, Anne
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000334
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,32 +1,32 @@
 id: ocd-person/aeda3016-da15-448e-9ae4-62da790b3129
 name: Dan Bishop
+given_name: Dan
+family_name: Bishop
+image: http://www.ncleg.net/Senate/pictures/hiRes/398.jpg
 party:
 - name: Republican
 roles:
-- district: '104'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: 2015-01-01
+- start_date: 2015-01-01
   end_date: 2016-12-31
-- district: '39'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '104'
+- end_date: '2019-09-17'
   type: upper
-  end_date: '2019-09-17'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '39'
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/398
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000388
+- scheme: legacy_openstates
+  identifier: NCL000343
+- scheme: openstates
+  identifier: ocd-person/fbf9d1b7-4468-4c0f-8ef2-8c340428959e
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/398
-image: http://www.ncleg.net/Senate/pictures/hiRes/398.jpg
 extras:
   counties:
   - Mecklenburg
   notice: null
-other_identifiers:
-- identifier: NCL000388
-  scheme: legacy_openstates
-- identifier: NCL000343
-  scheme: legacy_openstates
-- identifier: ocd-person/fbf9d1b7-4468-4c0f-8ef2-8c340428959e
-  scheme: openstates
-given_name: Dan
-family_name: Bishop

@@ -2,17 +2,17 @@ id: ocd-person/ec3c22dd-d66e-4851-bad1-f177d8bd5997
 name: Bob Coffin
 given_name: Bob
 family_name: Coffin
+image: http://www.leg.state.nv.us/73rd/legislators/Senators/Images/Coffin.jpg
 party:
 - name: Democratic
 roles:
-- district: Clark County, No. 10
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.leg.state.nv.us/73rd/legislators/Senators/Images/Coffin.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: Clark County, No. 10
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000006
 sources:
 - url: http://www.leg.state.nv.us/Session/75th2009/legislators/Senators/slist.cfm
-other_identifiers:
-- identifier: NVL000006
-  scheme: legacy_openstates

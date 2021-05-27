@@ -1,11 +1,15 @@
 id: ocd-person/184a7a1f-940c-4b69-aee6-68f4eec9c84a
 name: Abe Hudson
+given_name: Abe
+family_name: Hudson
+email: ahudson@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/hudson.jpg
 party:
 - name: Democratic
 roles:
-- district: '29'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '29'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -13,14 +17,10 @@ contact_details:
   address: 207 Dr. RT Hollingsworth;Shelby, MS 38774
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/hudson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000292
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/hudson.xml
-image: http://billstatus.ls.state.ms.us/members/house/hudson.jpg
 extras:
   org_info: Representative Hudson is affiliated with Alpha Phi Alpha Fraternity, Inc.
-other_identifiers:
-- identifier: MSL000292
-  scheme: legacy_openstates
-given_name: Abe
-family_name: Hudson
-email: ahudson@house.ms.gov

@@ -1,11 +1,15 @@
 id: ocd-person/a954dff9-39d6-4340-8070-5ef437438cda
 name: Tom Dent
+given_name: Tom
+family_name: Dent
+email: tom.dent@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/dent.jpg
 party:
 - name: Republican
 roles:
-- district: '13'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '13'
 contact_details:
 - note: Capitol Office
   address: 437 John L. O'Brien Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://houserepublicans.wa.gov/Tom-Dent/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: http://TomDent.houserepublicans.wa.gov/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000227
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/dent.jpg
-other_identifiers:
-- identifier: WAL000227
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Dent
-email: tom.dent@leg.wa.gov

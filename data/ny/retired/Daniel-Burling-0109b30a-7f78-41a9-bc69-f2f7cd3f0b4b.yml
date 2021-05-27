@@ -2,19 +2,19 @@ id: ocd-person/0109b30a-7f78-41a9-bc69-f2f7cd3f0b4b
 name: Daniel Burling
 given_name: Daniel
 family_name: Burling
+image: http://assembly.state.ny.us/mem/pic/147.jpg
 party:
 - name: Republican
 roles:
-- district: '147'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://assembly.state.ny.us/mem/pic/147.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '147'
 links:
 - url: http://assembly.state.ny.us/mem/Daniel-J-Burling
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000079
 sources:
 - url: http://assembly.state.ny.us/mem/?sh=email
-other_identifiers:
-- identifier: NYL000079
-  scheme: legacy_openstates

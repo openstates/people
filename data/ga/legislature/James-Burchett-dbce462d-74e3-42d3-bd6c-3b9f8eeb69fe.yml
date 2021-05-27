@@ -2,14 +2,21 @@ id: ocd-person/dbce462d-74e3-42d3-bd6c-3b9f8eeb69fe
 name: James Burchett
 given_name: James
 family_name: Burchett
+email: james.burchett@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/burchett-james-4967.jpg
 party:
 - name: Republican
 roles:
-- district: '176'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  start_date: '2019-03-18'
+- start_date: '2019-03-18'
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '176'
+contact_details:
+- note: Capitol Office
+  address: 504-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  voice: 404-656-0188
+- note: District Office
+  address: 6810 Albany Hwy; Waycross, GA 31552
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4967&Session=27
 - url: https://www.legis.ga.gov/members/house/4967?session=1029
@@ -17,15 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4967&Session=27
 - url: https://www.legis.ga.gov/members/house/4967?session=1029
-contact_details:
-- note: Capitol Office
-  address: 504-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
-  voice: 404-656-0188
-- note: District Office
-  address: 6810 Albany Hwy; Waycross, GA 31552
 extras:
   guid: 4967
   city: Waycross
   georgia_id: 4967
   residence: Waycross
-email: james.burchett@house.ga.gov

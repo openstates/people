@@ -1,11 +1,14 @@
 id: ocd-person/81708fd7-b28e-4c83-b972-80e77a91da3c
 name: Emmett D. Riley
+given_name: Emmett
+family_name: Riley
+email: Emmett.Riley@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '46'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '46'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4112;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-887-6228
 links:
 - url: http://www.housedems.ct.gov/Riley
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000202
-  scheme: legacy_openstates
-given_name: Emmett
-family_name: Riley
-email: Emmett.Riley@cga.ct.gov
 other_names:
 - name: Riley, Emmett D.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000202
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

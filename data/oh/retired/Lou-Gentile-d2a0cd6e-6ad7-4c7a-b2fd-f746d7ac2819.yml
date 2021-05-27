@@ -2,21 +2,21 @@ id: ocd-person/d2a0cd6e-6ad7-4c7a-b2fd-f746d7ac2819
 name: Lou Gentile
 given_name: Lou
 family_name: Gentile
+image: http://www.ohiosenate.gov/Assets/Headshots/Small/30.jpg
 party:
 - name: Democratic
 roles:
-- district: '30'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.ohiosenate.gov/Assets/Headshots/Small/30.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '30'
 links:
 - url: http://www.ohiosenate.gov/gentile
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000128
+- scheme: legacy_openstates
+  identifier: OHL000149
 sources:
 - url: http://www.ohiosenate.gov/members/senate-directory
-other_identifiers:
-- identifier: OHL000128
-  scheme: legacy_openstates
-- identifier: OHL000149
-  scheme: legacy_openstates

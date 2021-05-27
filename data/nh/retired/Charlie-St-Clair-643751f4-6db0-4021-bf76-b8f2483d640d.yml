@@ -1,14 +1,20 @@
 id: ocd-person/643751f4-6db0-4021-bf76-b8f2483d640d
 name: Charlie G. St. Clair
+given_name: Charlie
+family_name: St. Clair
+email: Charlie.StClair@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: Belknap 9
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 9
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001510
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408811
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -16,9 +22,3 @@ extras:
   first_name: Charlie
   last_name: St. Clair
   middle_name: G.
-other_identifiers:
-- identifier: NHL001510
-  scheme: legacy_openstates
-given_name: Charlie
-family_name: St. Clair
-email: Charlie.StClair@leg.state.nh.us

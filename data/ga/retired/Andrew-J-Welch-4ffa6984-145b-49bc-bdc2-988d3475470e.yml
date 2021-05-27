@@ -1,25 +1,25 @@
 id: ocd-person/4ffa6984-145b-49bc-bdc2-988d3475470e
 name: Andrew Welch
+given_name: Andrew
+family_name: Welch
+email: andrew.welch@house.ga.gov
+image: http://www.house.ga.gov/SiteCollectionImages/WelchAndrew777.jpg
 party:
 - name: Republican
 roles:
-- district: '110'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '110'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=777&Session=27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000223
+- scheme: legacy_openstates
+  identifier: GAL000370
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=777&Session=27
-image: http://www.house.ga.gov/SiteCollectionImages/WelchAndrew777.jpg
-family_name: Welch
-given_name: Andrew
 extras:
   guid: 777
-other_identifiers:
-- identifier: GAL000223
-  scheme: legacy_openstates
-- identifier: GAL000370
-  scheme: legacy_openstates
-email: andrew.welch@house.ga.gov

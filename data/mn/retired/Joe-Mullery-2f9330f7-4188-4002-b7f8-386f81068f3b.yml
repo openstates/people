@@ -2,30 +2,30 @@ id: ocd-person/2f9330f7-4188-4002-b7f8-386f81068f3b
 name: Joe Mullery
 given_name: Joe
 family_name: Mullery
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls89/tn_59A.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 58A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: 59A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 58A
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls89/tn_59A.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 59A
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=10442
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000316
+- scheme: legacy_openstates
+  identifier: MNL000182
+- scheme: legacy_openstates
+  identifier: MNL000449
+- scheme: legacy_openstates
+  identifier: MNL000644
 sources:
 - url: http://www.house.leg.state.mn.us/members/hmem.asp
-other_identifiers:
-- identifier: MNL000316
-  scheme: legacy_openstates
-- identifier: MNL000182
-  scheme: legacy_openstates
-- identifier: MNL000449
-  scheme: legacy_openstates
-- identifier: MNL000644
-  scheme: legacy_openstates

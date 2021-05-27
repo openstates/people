@@ -1,11 +1,15 @@
 id: ocd-person/73ee356a-069a-4f2c-938d-2bab3d81b49a
 name: Martin LaLonde
+given_name: Martin
+family_name: LaLonde
+email: martinlalonde@comcast.net
+image: https://legislature.vermont.gov/Documents/Legislators/MLaLonde.jpg
 party:
 - name: Democratic
 roles:
-- district: Chittenden-7-1
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
+  district: Chittenden-7-1
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -15,17 +19,13 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24010
 - url: http://legislature.vermont.gov/people/single/2022/24010
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000401
+- scheme: legacy_openstates
+  identifier: VTL000664
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/24010
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24010
-image: https://legislature.vermont.gov/Documents/Legislators/MLaLonde.jpg
-other_identifiers:
-- identifier: VTL000401
-  scheme: legacy_openstates
-- identifier: VTL000664
-  scheme: legacy_openstates
-given_name: Martin
-family_name: LaLonde
-email: martinlalonde@comcast.net

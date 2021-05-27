@@ -2,17 +2,17 @@ id: ocd-person/ff574a03-985b-4a20-ad85-c38bace044c3
 name: Scott Gunderson
 given_name: Scott
 family_name: Gunderson
+image: http://legis.wisconsin.gov//Assembly/asm83/asm83.jpg
 party:
 - name: Republican
 roles:
-- district: '83'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://legis.wisconsin.gov//Assembly/asm83/asm83.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '83'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000369
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=83
-other_identifiers:
-- identifier: WIL000369
-  scheme: legacy_openstates

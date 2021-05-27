@@ -5,13 +5,13 @@ family_name: Brod
 party:
 - name: Republican
 roles:
-- district: 25A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 25A
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000116
 sources:
 - url: http://www.house.leg.state.mn.us/members/meminfo.xls
-other_identifiers:
-- identifier: MNL000116
-  scheme: legacy_openstates

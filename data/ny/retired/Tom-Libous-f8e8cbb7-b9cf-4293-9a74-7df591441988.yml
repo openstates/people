@@ -2,21 +2,21 @@ id: ocd-person/f8e8cbb7-b9cf-4293-9a74-7df591441988
 name: Tom Libous
 given_name: Tom
 family_name: Libous
+image: http://www.nysenate.gov/files/profile-pictures/headshot%5B1%5D%5B1%5D.JPG
 party:
 - name: Republican
 roles:
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nysenate.gov/files/profile-pictures/headshot%5B1%5D%5B1%5D.JPG
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '52'
 links:
 - url: http://www.nysenate.gov/senator/tom-libous
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000033
 sources:
 - url: http://www.nysenate.gov/senators
 - url: http://www.nysenate.gov/senator/tom-libous/contact
 - url: http://www.nytimes.com/2015/07/23/nyregion/thomas-libous-new-york-state-senator-is-convicted-of-lying-to-fbi.html?_r=0
-other_identifiers:
-- identifier: NYL000033
-  scheme: legacy_openstates

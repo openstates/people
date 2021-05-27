@@ -1,11 +1,12 @@
 id: ocd-person/d2c2ea6a-95ee-4b7a-849c-99c90c762e99
-name: Jim O’Brien
+name: "Jim O\u2019Brien"
 given_name: Jim
-family_name: O’Brien
+family_name: "O\u2019Brien"
+email: jobrien@town.windermere.fl.us
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:fl/place:windermere/government
+- end_date: 2021-03-26
   type: mayor
-  end_date: 2021-03-26
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/place:windermere/government
 contact_details:
 - note: Primary Office
   address: 315 Butler Street;Windermere, FL 34786
@@ -13,5 +14,3 @@ contact_details:
 sources:
 - url: https://town.windermere.fl.us/government/
 - url: https://www.windermeresun.com/2019/03/26/new-mayor-of-windermere-jim-obrien-is-sworn-in/
-links: []
-email: jobrien@town.windermere.fl.us

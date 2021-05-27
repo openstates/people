@@ -3,22 +3,22 @@ name: Brad L Dee
 given_name: Brad
 family_name: Dee
 middle_name: L
+image: http://le.utah.gov/images/legislator/DEEBL.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://le.utah.gov/images/legislator/DEEBL.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '11'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=DEEBL
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000045
+- scheme: legacy_openstates
+  identifier: UTL000252
 sources:
 - url: http://le.utah.gov/house2/detail.jsp?i=DEEBL
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000045
-  scheme: legacy_openstates
-- identifier: UTL000252
-  scheme: legacy_openstates

@@ -1,12 +1,17 @@
 id: ocd-person/6e64e8db-c1f5-4f72-994b-dbe9cfdab8a5
 name: Bradford Hill
+given_name: Bradford
+family_name: Hill
+gender: Male
+email: Brad.Hill@mahouse.gov
+image: https://malegislature.gov/Legislators/Profile/170/BRH1.jpg
 party:
 - name: Republican
 roles:
-- district: 4th Essex
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+- start_date: 2011-01-01
   type: lower
-  start_date: 2011-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 4th Essex
 contact_details:
 - note: Capitol Office
   address: 24 Beacon St.;Room 128;Boston, MA, 02133
@@ -16,19 +21,14 @@ contact_details:
   voice: 978-356-2626
 links:
 - url: https://malegislature.gov/Legislators/Profile/BRH1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MAL000550
+- scheme: legacy_openstates
+  identifier: MAL000110
+- scheme: legacy_openstates
+  identifier: MAL000383
+- scheme: openstates
+  identifier: ocd-person/e3a58717-2344-4382-b641-39571f06a487
 sources:
 - url: https://malegislature.gov/Legislators/Profile/BRH1
-image: https://malegislature.gov/Legislators/Profile/170/BRH1.jpg
-other_identifiers:
-- identifier: MAL000550
-  scheme: legacy_openstates
-- identifier: MAL000110
-  scheme: legacy_openstates
-- identifier: MAL000383
-  scheme: legacy_openstates
-- identifier: ocd-person/e3a58717-2344-4382-b641-39571f06a487
-  scheme: openstates
-given_name: Bradford
-family_name: Hill
-gender: Male
-email: Brad.Hill@mahouse.gov

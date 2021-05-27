@@ -1,11 +1,15 @@
 id: ocd-person/a677ddb3-2d16-479d-aeaf-7d90e7c17509
 name: Larry Springer
+given_name: Larry
+family_name: Springer
+email: larry.springer@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/springer.jpg
 party:
 - name: Democratic
 roles:
-- district: '45'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '45'
 contact_details:
 - note: Capitol Office
   address: 132E Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Larry-Springer/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Springer/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000136
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/springer.jpg
-other_identifiers:
-- identifier: WAL000136
-  scheme: legacy_openstates
-given_name: Larry
-family_name: Springer
-email: larry.springer@leg.wa.gov

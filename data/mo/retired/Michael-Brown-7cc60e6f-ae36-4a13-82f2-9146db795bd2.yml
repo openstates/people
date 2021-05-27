@@ -2,19 +2,19 @@ id: ocd-person/7cc60e6f-ae36-4a13-82f2-9146db795bd2
 name: Michael Brown
 given_name: Michael
 family_name: Brown
+image: http://www.house.mo.gov/billtracking/bills121/member/mem050.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/billtracking/bills121/member/mem050.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '50'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=85
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000048
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=50
-other_identifiers:
-- identifier: MOL000048
-  scheme: legacy_openstates

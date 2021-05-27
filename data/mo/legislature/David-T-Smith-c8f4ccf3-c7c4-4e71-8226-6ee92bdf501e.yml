@@ -1,11 +1,13 @@
 id: ocd-person/c8f4ccf3-c7c4-4e71-8226-6ee92bdf501e
 name: David T. Smith
+given_name: David
+family_name: Smith
 party:
 - name: Democratic
 roles:
-- district: '45'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '45'
 sources:
 - url: https://ballotpedia.org/David_T._Smith_(Missouri)
 - url: https://themissouritimes.com/david-tyson-smith-wins-special-house-race-in-columbia/
@@ -13,5 +15,3 @@ sources:
 extras:
   first_name: David
   last_name: Smith
-family_name: Smith
-given_name: David

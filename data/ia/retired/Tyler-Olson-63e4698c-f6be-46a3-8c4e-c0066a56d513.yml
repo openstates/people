@@ -2,26 +2,26 @@ id: ocd-person/63e4698c-f6be-46a3-8c4e-c0066a56d513
 name: Tyler Olson
 given_name: Tyler
 family_name: Olson
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=6281
 party:
 - name: Democratic
 roles:
-- district: '65'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '38'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '65'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=6281
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '38'
 links:
 - url: https://www.legis.iowa.gov/legislators/house
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000111
+- scheme: legacy_openstates
+  identifier: IAL000287
 sources:
 - url: https://www.legis.iowa.gov/legislators/house
-other_identifiers:
-- identifier: IAL000111
-  scheme: legacy_openstates
-- identifier: IAL000287
-  scheme: legacy_openstates

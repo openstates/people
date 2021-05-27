@@ -1,11 +1,14 @@
 id: ocd-person/daf39ec5-3fcd-4d88-bd79-a5a9da8e45e6
 name: Michelle L. Cook
+given_name: Michelle
+family_name: Cook
+email: Michelle.Cook@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '65'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '65'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4035;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-489-8038
 links:
 - url: http://www.housedems.ct.gov/Cook
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000101
-  scheme: legacy_openstates
-given_name: Michelle
-family_name: Cook
-email: Michelle.Cook@cga.ct.gov
 other_names:
 - name: Cook, Michelle L.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000101
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -2,34 +2,34 @@ id: ocd-person/0ff6adce-1a1b-4656-9975-c8b27015bdc0
 name: Barry J. Hobbins
 given_name: Barry J.
 family_name: Hobbins
+image: http://www.maine.gov/legis/house/photo127/hobbbj.jpg
 party:
 - name: Democratic
 roles:
-- district: '133'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: upper
-  start_date: '2011-01-01'
-  end_date: '2012-12-31'
-- district: '14'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '133'
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '5'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.maine.gov/legis/house/photo127/hobbbj.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '14'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/hobbbj.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000005
+- scheme: legacy_openstates
+  identifier: MEL000269
+- scheme: legacy_openstates
+  identifier: MEL000438
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/hobbbj.htm
-other_identifiers:
-- identifier: MEL000005
-  scheme: legacy_openstates
-- identifier: MEL000269
-  scheme: legacy_openstates
-- identifier: MEL000438
-  scheme: legacy_openstates

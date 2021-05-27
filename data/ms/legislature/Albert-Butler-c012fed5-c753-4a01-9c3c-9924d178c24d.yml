@@ -1,11 +1,15 @@
 id: ocd-person/c012fed5-c753-4a01-9c3c-9924d178c24d
 name: Albert Butler
+given_name: Albert
+family_name: Butler
+email: abutler@senate.ms.gov
+image: http://billstatus.ls.state.ms.us/members/senate/butler.jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
+  district: '36'
 contact_details:
 - note: Capitol Office
   address: Room 213;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 601-437-4089
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/butler.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000029
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/butler.xml
-image: http://billstatus.ls.state.ms.us/members/senate/butler.jpg
 extras:
   org_info: Senator Butler is a member of Alcorn State University Alumni Association,
     Jackson State University Alumni Association, Omega Psi Phi Fraternity incorporated
     and a Mason. He is a Life Member of the NAACP.
-other_identifiers:
-- identifier: MSL000029
-  scheme: legacy_openstates
-given_name: Albert
-family_name: Butler
-email: abutler@senate.ms.gov

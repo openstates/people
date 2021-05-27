@@ -5,16 +5,14 @@ on:
     branches: [ main ]
     paths:
       - "data/**"
-      - "src/ospeople/cli/lint_yaml.py"
-      - "src/ospeople/cli/committees.py"
       - "settings.yml"
+      - "poetry.lock"
   pull_request:
     branches: [ main ]
     paths:
       - "data/**"
-      - "src/ospeople/cli/lint_yaml.py"
-      - "src/ospeople/cli/committees.py"
       - "settings.yml"
+      - "poetry.lock"
 
 jobs:
   build:
@@ -45,5 +43,9 @@ jobs:
 
     - name: lint people
       run: poetry run os-people lint
+      env:
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
     - name: lint committees
       run: poetry run os-committees lint
+      env:
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}

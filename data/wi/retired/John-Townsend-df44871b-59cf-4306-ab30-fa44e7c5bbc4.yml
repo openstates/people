@@ -5,13 +5,13 @@ family_name: Townsend
 party:
 - name: Republican
 roles:
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '52'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000431
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=52
-other_identifiers:
-- identifier: WIL000431
-  scheme: legacy_openstates

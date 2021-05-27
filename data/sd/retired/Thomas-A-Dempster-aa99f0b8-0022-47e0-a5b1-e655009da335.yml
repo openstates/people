@@ -3,17 +3,17 @@ name: Thomas A Dempster
 given_name: Thomas
 family_name: Dempster
 middle_name: A
+image: http://legis.state.sd.us/sessions/2010/Dempster.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2010/Dempster.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '9'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000007
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=26
-other_identifiers:
-- identifier: SDL000007
-  scheme: legacy_openstates

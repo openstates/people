@@ -2,26 +2,26 @@ id: ocd-person/2be2ecc9-b517-462f-8d07-2cb10f86d38b
 name: Ron Amstutz
 given_name: Ron
 family_name: Amstutz
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/1.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '1'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/1.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '3'
 links:
 - url: http://www.ohiohouse.gov/ron-amstutz
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000036
+- scheme: legacy_openstates
+  identifier: OHL000170
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000036
-  scheme: legacy_openstates
-- identifier: OHL000170
-  scheme: legacy_openstates

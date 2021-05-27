@@ -1,31 +1,31 @@
 id: ocd-person/cabc1f3c-9806-4ae8-a896-c2224efa5976
 name: James P. White
-party:
-- name: Republican
-roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
-  start_date: 2011-01-01
-  end_date: 2014-12-31
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
-  end_date: '2020-12-31'
-links:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SWHIJ
-sources:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SWHIJ
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SWHIJ.jpg
-other_identifiers:
-- identifier: NML000432
-  scheme: legacy_openstates
-- identifier: NML000062
-  scheme: legacy_openstates
-- identifier: NML000231
-  scheme: legacy_openstates
-- identifier: ocd-person/d158564e-ddf6-449e-b32b-e2281db6e8bc
-  scheme: openstates
 given_name: James
 family_name: White
 email: james.white@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SWHIJ.jpg
+party:
+- name: Republican
+roles:
+- start_date: 2011-01-01
+  end_date: 2014-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '20'
+- end_date: '2020-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '19'
+links:
+- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SWHIJ
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000432
+- scheme: legacy_openstates
+  identifier: NML000062
+- scheme: legacy_openstates
+  identifier: NML000231
+- scheme: openstates
+  identifier: ocd-person/d158564e-ddf6-449e-b32b-e2281db6e8bc
+sources:
+- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SWHIJ

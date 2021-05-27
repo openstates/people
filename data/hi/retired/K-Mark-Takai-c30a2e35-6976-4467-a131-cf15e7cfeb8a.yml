@@ -2,27 +2,27 @@ id: ocd-person/c30a2e35-6976-4467-a131-cf15e7cfeb8a
 name: K. Mark Takai
 given_name: K. Mark
 family_name: Takai
+image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/takai.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '33'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/takai.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '34'
 links:
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=takai&year=2014
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: HIL000068
+- scheme: legacy_openstates
+  identifier: HIL000125
 sources:
 - url: http://capitol.hawaii.gov/members/legislators.aspx?chamber=H
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=takai&year=2014
-other_identifiers:
-- identifier: HIL000068
-  scheme: legacy_openstates
-- identifier: HIL000125
-  scheme: legacy_openstates

@@ -1,33 +1,33 @@
 id: ocd-person/cf7ed8de-2df4-41ff-9dcb-489980b031a0
 name: Kevin Daley
+given_name: Kevin
+family_name: Daley
+image: https://senate.michigan.gov/_images/31st.jpg
 party:
 - name: Republican
 roles:
-- district: '82'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2014-12-31
-- district: '31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '82'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: 5200 Binsfeld Bldg
-  fax: 517-373-5871
   voice: 517-373-1777
+  fax: 517-373-5871
 links:
 - url: https://www.senatorkevindaley.com/
-- note: Contact
-  url: https://www.senatorkevindaley.com/contact/
+- url: https://www.senatorkevindaley.com/contact/
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000120
+- scheme: openstates
+  identifier: ocd-person/2526e60c-522f-4e9e-a7cc-b7861c597ae5
 sources:
 - url: https://www.senatorkevindaley.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000120
-  scheme: legacy_openstates
-- identifier: ocd-person/2526e60c-522f-4e9e-a7cc-b7861c597ae5
-  scheme: openstates
-family_name: Daley
-image: https://senate.michigan.gov/_images/31st.jpg
-given_name: Kevin

@@ -1,19 +1,28 @@
 id: ocd-person/d53f1a03-c9ad-4cfc-be22-cedbdfc5a074
 name: Derek Grier
+given_name: Derek
+family_name: Grier
+email: Derek.Grier@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1935
 party:
 - name: Republican
 roles:
-- district: '100'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '100'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 408-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 408-A; Jefferson
+    City MO 65101
   voice: 573-751-9765
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=100
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=100
+other_names:
+- name: Grier, Derek
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000452
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=100
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Derek
   last_name: Grier
-other_identifiers:
-- identifier: MOL000452
-  scheme: legacy_openstates
-given_name: Derek
-family_name: Grier
-email: Derek.Grier@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1935
-other_names:
-- name: Grier, Derek

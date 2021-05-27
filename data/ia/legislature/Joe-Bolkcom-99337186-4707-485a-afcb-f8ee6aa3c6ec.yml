@@ -1,11 +1,15 @@
 id: ocd-person/99337186-4707-485a-afcb-f8ee6aa3c6ec
 name: Joe Bolkcom
+given_name: Joe
+family_name: Bolkcom
+email: joe.bolkcom@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=123
 party:
 - name: Democratic
 roles:
-- district: '43'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '43'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=123
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=123
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000009
+- scheme: legacy_openstates
+  identifier: IAL000182
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=123
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=123
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=123
-other_identifiers:
-- identifier: IAL000009
-  scheme: legacy_openstates
-- identifier: IAL000182
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Bolkcom
-email: joe.bolkcom@legis.iowa.gov

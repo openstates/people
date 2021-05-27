@@ -1,11 +1,14 @@
 id: ocd-person/f307f4be-b411-4c7a-a466-cd12595b255f
 name: Mary Kiffmeyer
+given_name: Mary
+family_name: Kiffmeyer
+image: https://www.senate.mn/img/member_thumbnails/30Kiffmeyer.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
+  district: '30'
 contact_details:
 - note: District Office
   address: 16160 201st Avenue NW;Big Lake, MN 55309
@@ -13,16 +16,13 @@ contact_details:
   voice: 651-296-5655
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1202
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000099
+- scheme: legacy_openstates
+  identifier: MNL000290
+- scheme: legacy_openstates
+  identifier: MNL000522
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-image: https://www.senate.mn/img/member_thumbnails/30Kiffmeyer.jpg
-other_identifiers:
-- identifier: MNL000099
-  scheme: legacy_openstates
-- identifier: MNL000290
-  scheme: legacy_openstates
-- identifier: MNL000522
-  scheme: legacy_openstates
-given_name: Mary
-family_name: Kiffmeyer

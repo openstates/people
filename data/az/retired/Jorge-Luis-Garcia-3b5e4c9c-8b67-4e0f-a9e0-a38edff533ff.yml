@@ -2,17 +2,17 @@ id: ocd-person/3b5e4c9c-8b67-4e0f-a9e0-a38edff533ff
 name: Jorge Luis Garcia
 given_name: Jorge Luis
 family_name: Garcia
+image: http://www.azleg.gov/alisImages/MemberPhotos/49leg/Senate/GARCIA.gif
 party:
 - name: Democratic
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/49leg/Senate/GARCIA.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '27'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000012
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=89&body=S
-other_identifiers:
-- identifier: AZL000012
-  scheme: legacy_openstates

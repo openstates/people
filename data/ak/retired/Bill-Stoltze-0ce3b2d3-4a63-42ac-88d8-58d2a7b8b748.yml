@@ -2,35 +2,35 @@ id: ocd-person/0ce3b2d3-4a63-42ac-88d8-58d2a7b8b748
 name: Bill Stoltze
 given_name: Bill
 family_name: Stoltze
+image: http://w3.legis.state.ak.us/images/house/STZ.jpg
 party:
 - name: Republican
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
-  start_date: '2013-01-01'
-  end_date: '2014-12-31'
-- district: F
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: upper
-  start_date: '2015-01-01'
+  district: '16'
+- start_date: '2013-01-01'
+  end_date: '2014-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '11'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://w3.legis.state.ak.us/images/house/STZ.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: F
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=stz
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000054
+- scheme: legacy_openstates
+  identifier: AKL000115
+- scheme: legacy_openstates
+  identifier: AKL000120
+- scheme: legacy_openstates
+  identifier: AKL000172
 sources:
 - url: http://akleg.gov/legislator.php?id=stz
-other_identifiers:
-- identifier: AKL000054
-  scheme: legacy_openstates
-- identifier: AKL000115
-  scheme: legacy_openstates
-- identifier: AKL000120
-  scheme: legacy_openstates
-- identifier: AKL000172
-  scheme: legacy_openstates

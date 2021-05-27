@@ -1,11 +1,15 @@
 id: ocd-person/8e9eb277-8028-4715-9053-7483ad50c5fb
 name: Steve Westfall
+given_name: Steve
+family_name: Westfall
+email: steve.westfall@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/westfall_steve.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: Room 204E, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,12 +19,8 @@ contact_details:
   voice: 304-532-8875
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Westfall
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000150
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Westfall
-image: http://www.legis.state.wv.us/images/members/2021/house/westfall_steve.jpg
-other_identifiers:
-- identifier: WVL000150
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Westfall
-email: steve.westfall@wvhouse.gov

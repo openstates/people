@@ -1,14 +1,18 @@
 id: ocd-person/6c410bc7-76fd-4488-aca4-5158a5a55d70
 name: Stephanie Clayton
+given_name: Stephanie
+family_name: Clayton
+email: stephanie.clayton@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_clayton_stephanie_1.jpg
 party:
-- name: Republican
-  end_date: '2018-12-19'
-- name: Democratic
-  start_date: '2018-12-19'
+- end_date: '2018-12-19'
+  name: Republican
+- start_date: '2018-12-19'
+  name: Democratic
 roles:
-- district: '19'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
+  district: '19'
 contact_details:
 - note: Capitol Office
   address: Room 451-S;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -16,14 +20,10 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/rep_clayton_stephanie_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_clayton_stephanie_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000200
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_clayton_stephanie_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_clayton_stephanie_1.jpg
 extras:
   occupation: Social Media Consultant
-other_identifiers:
-- identifier: KSL000200
-  scheme: legacy_openstates
-given_name: Stephanie
-family_name: Clayton
-email: stephanie.clayton@house.ks.gov

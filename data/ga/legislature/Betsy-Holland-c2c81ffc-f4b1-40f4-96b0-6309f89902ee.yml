@@ -1,11 +1,15 @@
 id: ocd-person/c2c81ffc-f4b1-40f4-96b0-6309f89902ee
 name: Betsy Holland
+given_name: Betsy
+family_name: Holland
+email: betsy.holland@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/holland-betsy-4943.jpg
 party:
 - name: Democratic
 roles:
-- district: '54'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '54'
 contact_details:
 - note: Capitol Office
   address: 409-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -20,12 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4943&Session=27
 - url: https://www.legis.ga.gov/members/house/4943?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/holland-betsy-4943.jpg
-family_name: Holland
-given_name: Betsy
 extras:
   guid: 4943
   city: Atlanta
   georgia_id: 4943
   residence: Atlanta
-email: betsy.holland@house.ga.gov

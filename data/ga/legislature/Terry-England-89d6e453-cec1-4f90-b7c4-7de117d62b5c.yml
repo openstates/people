@@ -1,11 +1,15 @@
 id: ocd-person/89d6e453-cec1-4f90-b7c4-7de117d62b5c
 name: Terry England
+given_name: Terry
+family_name: England
+email: terry.england@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/england-terry-98.jpg
 party:
 - name: Republican
 roles:
-- district: '116'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '116'
 contact_details:
 - note: Capitol Office
   address: 245 State Capitol;Atlanta, GA 30334
@@ -13,21 +17,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=98&Session=27
 - url: https://www.legis.ga.gov/members/house/98?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000105
+- scheme: legacy_openstates
+  identifier: GAL000278
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=98&Session=27
 - url: https://www.legis.ga.gov/members/house/98?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/england-terry-98.jpg
-family_name: England
-given_name: Terry
 extras:
   guid: 98
   city: Auburn
   georgia_id: 98
   residence: Auburn
-other_identifiers:
-- identifier: GAL000105
-  scheme: legacy_openstates
-- identifier: GAL000278
-  scheme: legacy_openstates
-email: terry.england@house.ga.gov

@@ -1,25 +1,25 @@
 id: ocd-person/d7ef645a-8b7b-4944-82b7-b5a7a96e1f6a
 name: David Bentz
+given_name: David
+family_name: Bentz
+email: David.Bentz@state.de.us
+image: https://legis.delaware.gov/images/default-source/default-album/DavidBentz1.jpg?sfvrsn=0
 party:
 - name: Democratic
 roles:
-- district: '18'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
+  district: '18'
 contact_details:
 - note: Capitol Office
   address: 411 Legislative Ave. Dover, DE 19901
   voice: 302-744-4351
 links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=42
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/House
-image: https://legis.delaware.gov/images/default-source/default-album/DavidBentz1.jpg?sfvrsn=0
+- url: https://legis.delaware.gov/LegislatorDetail?personId=42
+  note: legislator page
 other_identifiers:
-- identifier: DEL000134
-  scheme: legacy_openstates
-given_name: David
-family_name: Bentz
-email: David.Bentz@state.de.us
+- scheme: legacy_openstates
+  identifier: DEL000134
+sources:
+- url: https://legis.delaware.gov/House
+  note: legislator list page

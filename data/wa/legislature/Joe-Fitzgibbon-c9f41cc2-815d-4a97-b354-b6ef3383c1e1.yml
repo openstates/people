@@ -1,11 +1,15 @@
 id: ocd-person/c9f41cc2-815d-4a97-b354-b6ef3383c1e1
 name: Joe Fitzgibbon
+given_name: Joe
+family_name: Fitzgibbon
+email: joe.fitzgibbon@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/fitzgibbon.jpg
 party:
 - name: Democratic
 roles:
-- district: '34'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '34'
 contact_details:
 - note: Capitol Office
   address: 308 John L. O'Brien Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Joe-Fitzgibbon/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Fitzgibbon/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000077
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/fitzgibbon.jpg
-other_identifiers:
-- identifier: WAL000077
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Fitzgibbon
-email: joe.fitzgibbon@leg.wa.gov

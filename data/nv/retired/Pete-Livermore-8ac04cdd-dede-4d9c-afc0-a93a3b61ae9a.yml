@@ -2,23 +2,23 @@ id: ocd-person/8ac04cdd-dede-4d9c-afc0-a93a3b61ae9a
 name: Pete Livermore
 given_name: Peter
 family_name: Livermore
+image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Livermore.jpg
 party:
 - name: Republican
 roles:
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://leg.state.nv.us/Session/77th2013/legislators/Assembly/Images/Livermore.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '40'
 links:
 - url: http://www.leg.state.nv.us/Session/76th2011/legislators/Assembly/alist.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000133
+- scheme: legacy_openstates
+  identifier: NVL000188
+- scheme: legacy_openstates
+  identifier: NVL000246
 sources:
 - url: http://www.leg.state.nv.us/App/Legislator/A/Assembly/28th2014Special/40
-other_identifiers:
-- identifier: NVL000133
-  scheme: legacy_openstates
-- identifier: NVL000188
-  scheme: legacy_openstates
-- identifier: NVL000246
-  scheme: legacy_openstates

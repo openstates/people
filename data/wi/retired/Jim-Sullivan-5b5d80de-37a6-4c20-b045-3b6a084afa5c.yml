@@ -5,13 +5,13 @@ family_name: Sullivan
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '5'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000345
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=5
-other_identifiers:
-- identifier: WIL000345
-  scheme: legacy_openstates

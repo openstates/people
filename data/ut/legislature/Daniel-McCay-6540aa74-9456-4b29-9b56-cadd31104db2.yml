@@ -1,25 +1,38 @@
 id: ocd-person/6540aa74-9456-4b29-9b56-cadd31104db2
 name: Daniel McCay
+given_name: Daniel
+family_name: McCay
+email: dmccay@le.utah.gov
+image: https://le.utah.gov/images/legislator/MCCAYD.jpg
 party:
 - name: Republican
 roles:
-- district: '41'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '41'
+- start_date: '2019-01-01'
   type: upper
-  start_date: '2019-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '11'
 contact_details:
 - note: District Office
   address: 13307 HERITAGE FARM COVE, RIVERTON, UT, 84065
   voice: 801-810-4110
 links:
 - url: https://senate.utah.gov/daniel-mccay
+other_names:
+- name: McCay, D.
+- name: McCay, Daniel
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000111
+- scheme: legacy_openstates
+  identifier: UTL000130
+- scheme: legacy_openstates
+  identifier: UTL000170
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/MCCAYD.jpg
 extras:
   links:
   - https://le.utah.gov/senate/CofI/COFIMCCAYD.pdf
@@ -29,16 +42,3 @@ extras:
   - http://le.utah.gov/house2/CofI/dmccay.pdf
   - http://le.utah.gov/house2/CofI/MCCAYD.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411368
-other_identifiers:
-- identifier: UTL000111
-  scheme: legacy_openstates
-- identifier: UTL000130
-  scheme: legacy_openstates
-- identifier: UTL000170
-  scheme: legacy_openstates
-given_name: Daniel
-family_name: McCay
-email: dmccay@le.utah.gov
-other_names:
-- name: McCay, D.
-- name: McCay, Daniel

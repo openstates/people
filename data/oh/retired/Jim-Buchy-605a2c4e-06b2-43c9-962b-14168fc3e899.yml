@@ -2,26 +2,26 @@ id: ocd-person/605a2c4e-06b2-43c9-962b-14168fc3e899
 name: Jim Buchy
 given_name: Jim
 family_name: Buchy
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/84.jpg
 party:
 - name: Republican
 roles:
-- district: '84'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '84'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/84.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '77'
 links:
 - url: http://www.ohiohouse.gov/jim-buchy
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000110
+- scheme: legacy_openstates
+  identifier: OHL000253
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000110
-  scheme: legacy_openstates
-- identifier: OHL000253
-  scheme: legacy_openstates

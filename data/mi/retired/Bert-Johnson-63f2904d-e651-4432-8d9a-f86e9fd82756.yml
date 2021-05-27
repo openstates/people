@@ -2,19 +2,19 @@ id: ocd-person/63f2904d-e651-4432-8d9a-f86e9fd82756
 name: Bert Johnson
 given_name: Bert
 family_name: Johnson
+image: http://media.senatedems.com/dynaimg-files/site_portrait.jpg/district-002.jpg
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://media.senatedems.com/dynaimg-files/site_portrait.jpg/district-002.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '2'
 links:
 - url: http://www.senate.mi.gov/johnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000002
 sources:
 - url: http://www.senate.mi.gov/johnson
-other_identifiers:
-- identifier: MIL000002
-  scheme: legacy_openstates

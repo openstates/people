@@ -1,11 +1,14 @@
 id: ocd-person/852df922-484b-412f-a604-c2d67efee5ec
 name: Gregory G. Hill
+given_name: Gregory
+family_name: Hill
+email: greg.hill@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- district: Merrimack 3
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Merrimack 3
 contact_details:
 - note: District Office
   address: 1 Knowles Farm Road;Northfield, NH 03276-4517
@@ -13,6 +16,11 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000168
+- scheme: legacy_openstates
+  identifier: NHL001094
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376948
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -21,11 +29,3 @@ extras:
   first_name: Gregory
   last_name: Hill
   middle_name: G.
-other_identifiers:
-- identifier: NHL000168
-  scheme: legacy_openstates
-- identifier: NHL001094
-  scheme: legacy_openstates
-given_name: Gregory
-family_name: Hill
-email: greg.hill@leg.state.nh.us

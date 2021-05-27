@@ -5,13 +5,13 @@ family_name: Nunnelee
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '6'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000012
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/nunnelee.xml
-other_identifiers:
-- identifier: MSL000012
-  scheme: legacy_openstates

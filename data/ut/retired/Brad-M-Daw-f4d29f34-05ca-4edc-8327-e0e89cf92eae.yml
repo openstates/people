@@ -1,17 +1,29 @@
 id: ocd-person/f4d29f34-05ca-4edc-8327-e0e89cf92eae
 name: Brad M. Daw
+given_name: Brad
+family_name: Daw
+email: bdaw@le.utah.gov
+image: https://le.utah.gov/images/legislator/DAWBM.jpg
 party:
 - name: Republican
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '60'
 links:
 - url: http://house.utah.gov/rep/DAWBM
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000044
+- scheme: legacy_openstates
+  identifier: UTL000163
+- scheme: legacy_openstates
+  identifier: UTL000168
+- scheme: legacy_openstates
+  identifier: UTL000256
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/DAWBM.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/DAWBM2.pdf
@@ -19,15 +31,3 @@ extras:
   - http://le.utah.gov/house2/CofI/bdaw2.pdf
   - http://le.utah.gov/house2/CofI/bdaw.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1636
-other_identifiers:
-- identifier: UTL000044
-  scheme: legacy_openstates
-- identifier: UTL000163
-  scheme: legacy_openstates
-- identifier: UTL000168
-  scheme: legacy_openstates
-- identifier: UTL000256
-  scheme: legacy_openstates
-given_name: Brad
-family_name: Daw
-email: bdaw@le.utah.gov

@@ -1,24 +1,24 @@
 id: ocd-person/0c652230-8f79-4df6-adb6-fb796f1bf328
 name: Cora Faith Walker
+given_name: Cora Faith
+family_name: Walker
 party:
 - name: Democratic
 roles:
-- district: '74'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2019-07-29'
   type: lower
-  end_date: '2019-07-29'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '74'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=74
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000430
+- scheme: legacy_openstates
+  identifier: MOL000467
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=74
 extras:
   first_name: Cora Faith
   last_name: Walker
-other_identifiers:
-- identifier: MOL000430
-  scheme: legacy_openstates
-- identifier: MOL000467
-  scheme: legacy_openstates
-given_name: Cora Faith
-family_name: Walker

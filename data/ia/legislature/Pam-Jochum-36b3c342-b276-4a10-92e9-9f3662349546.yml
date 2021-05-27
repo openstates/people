@@ -1,11 +1,15 @@
 id: ocd-person/36b3c342-b276-4a10-92e9-9f3662349546
 name: Pam Jochum
+given_name: Pam
+family_name: Jochum
+email: pam.jochum@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=35
 party:
 - name: Democratic
 roles:
-- district: '50'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '50'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=35
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=35
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000031
+- scheme: legacy_openstates
+  identifier: IAL000202
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=35
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=35
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=35
-other_identifiers:
-- identifier: IAL000031
-  scheme: legacy_openstates
-- identifier: IAL000202
-  scheme: legacy_openstates
-given_name: Pam
-family_name: Jochum
-email: pam.jochum@legis.iowa.gov

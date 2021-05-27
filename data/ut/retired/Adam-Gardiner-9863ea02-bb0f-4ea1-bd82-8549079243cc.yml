@@ -2,20 +2,20 @@ id: ocd-person/9863ea02-bb0f-4ea1-bd82-8549079243cc
 name: Adam Gardiner
 given_name: Adam
 family_name: Gardiner
+image: http://le.utah.gov/images/legislator/GARDIA.jpg
 party:
 - name: Republican
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2017-01-01'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
-image: http://le.utah.gov/images/legislator/GARDIA.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '43'
 links:
 - url: http://le.utah.gov/house2/detail.jsp?i=GARDIA
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000293
 sources:
 - url: http://le.utah.gov/house2/detail.jsp?i=GARDIA
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000293
-  scheme: legacy_openstates

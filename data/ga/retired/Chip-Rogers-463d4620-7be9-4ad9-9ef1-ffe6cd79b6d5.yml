@@ -2,19 +2,19 @@ id: ocd-person/463d4620-7be9-4ad9-9ef1-ffe6cd79b6d5
 name: Chip Rogers
 given_name: Chip
 family_name: Rogers
+image: http://www.senate.ga.gov/SiteCollectionImages/RogersChip38.jpg
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senate.ga.gov/SiteCollectionImages/RogersChip38.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '21'
 links:
 - url: http://www.senate.ga.gov/senators/en-US/member.aspx?Member=38&Session=21
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000041
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-other_identifiers:
-- identifier: GAL000041
-  scheme: legacy_openstates

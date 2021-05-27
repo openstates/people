@@ -2,20 +2,20 @@ id: ocd-person/01f1c629-a8ca-42ac-ba0e-f5ee36b7a73e
 name: Brian Banks
 given_name: Brian
 family_name: Banks
+image: http://media.housedems.com/media_cache/dd/bc/b8/c3/8f/06/c4/7a/7b/13/08/11/b8/53/0a/e8/c7/a8/0f/9a/Banks_Headshot.jpg
 party:
 - name: Democratic
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-image: http://media.housedems.com/media_cache/dd/bc/b8/c3/8f/06/c4/7a/7b/13/08/11/b8/53/0a/e8/c7/a8/0f/9a/Banks_Headshot.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '1'
 links:
 - url: http://housedems.com/state-rep-brian-banks
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000187
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
 - url: http://www.freep.com/story/news/local/michigan/wayne/2017/02/06/state-rep-brian-banks-resigns/97559676/
-other_identifiers:
-- identifier: MIL000187
-  scheme: legacy_openstates

@@ -2,19 +2,19 @@ id: ocd-person/1dfaad39-54ec-4162-b5bf-cb6dfdb67abe
 name: Coleman Young II
 given_name: Coleman
 family_name: Young
+image: http://www.senate.michigan.gov/_images/Young.jpg
 party:
 - name: Democratic
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
-  start_date: '2017-01-01'
+- start_date: '2017-01-01'
   end_date: '2018-12-31'
-image: http://www.senate.michigan.gov/_images/Young.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '27'
 links:
 - url: http://www.senate.michigan.gov/young
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000369
 sources:
 - url: http://www.senate.michigan.gov/young
-other_identifiers:
-- identifier: MIL000369
-  scheme: legacy_openstates

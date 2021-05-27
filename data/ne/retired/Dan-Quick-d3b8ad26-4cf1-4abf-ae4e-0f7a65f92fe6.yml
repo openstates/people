@@ -1,22 +1,22 @@
 id: ocd-person/d3b8ad26-4cf1-4abf-ae4e-0f7a65f92fe6
 name: Dan Quick
-party:
-- name: Nonpartisan
-roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  end_date: '2020-12-31'
-links:
-- url: http://news.legislature.ne.gov/dist35
-sources:
-- url: http://news.legislature.ne.gov/dist35
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist35.jpg
-other_identifiers:
-- identifier: NEL000088
-  scheme: legacy_openstates
-- identifier: NEL000185
-  scheme: legacy_openstates
 given_name: Dan
 family_name: Quick
 email: dquick@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist35.jpg
+party:
+- name: Nonpartisan
+roles:
+- end_date: '2020-12-31'
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '35'
+links:
+- url: http://news.legislature.ne.gov/dist35
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000088
+- scheme: legacy_openstates
+  identifier: NEL000185
+sources:
+- url: http://news.legislature.ne.gov/dist35

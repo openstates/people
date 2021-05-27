@@ -2,19 +2,19 @@ id: ocd-person/28a96ee7-3ce5-4371-845e-5b900f73bbee
 name: Alice Crandell
 given_name: Alice
 family_name: Crandell
+image: http://www.azleg.gov/alisImages/nophoto.gif
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://www.azleg.gov/alisImages/nophoto.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '6'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=121&Legislature=51&Session_ID=110
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000304
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=S
-other_identifiers:
-- identifier: AZL000304
-  scheme: legacy_openstates

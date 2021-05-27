@@ -2,17 +2,17 @@ id: ocd-person/4e270dba-250b-4d9e-bf19-535b8ff20b02
 name: Michael Villines
 given_name: Michael
 family_name: Villines
+image: http://votesmart.org/canphoto/28594.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://votesmart.org/canphoto/28594.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '29'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000075
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000075
-  scheme: legacy_openstates

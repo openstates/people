@@ -2,19 +2,19 @@ id: ocd-person/a3dc560e-7d6a-45ef-bfe6-378b75271c76
 name: Roberta B. Willis
 given_name: Roberta B.
 family_name: Willis
+image: http://www.housedems.ct.gov/Willis/images/Willis_2014-04-14.jpg
 party:
 - name: Democratic
 roles:
-- district: '64'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/Willis/images/Willis_2014-04-14.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '64'
 links:
 - url: http://www.housedems.ct.gov/Willis
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000100
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000100
-  scheme: legacy_openstates

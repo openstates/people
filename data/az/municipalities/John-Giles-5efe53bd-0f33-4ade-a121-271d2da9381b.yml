@@ -2,15 +2,14 @@ id: ocd-person/5efe53bd-0f33-4ade-a121-271d2da9381b
 name: John Giles
 given_name: John
 family_name: Giles
+email: mayor@mesaaz.gov
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:az/place:mesa/government
+- end_date: 2024-12-31
   type: mayor
-  end_date: 2024-12-31
+  jurisdiction: ocd-jurisdiction/country:us/state:az/place:mesa/government
 contact_details:
 - note: Primary Office
   address: PO Box 1466;Mesa, AZ 85211
   voice: 480-644-2388
 sources:
 - url: https://www.mesaaz.gov/government/mayor-council/mayor-john-giles
-links: []
-email: mayor@mesaaz.gov

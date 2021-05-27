@@ -1,22 +1,22 @@
 id: ocd-person/ac1a4518-0b54-45d1-9efe-65f1868bf30e
 name: Jonathan Wallace
+given_name: Jonathan
+family_name: Wallace
+image: http://www.house.ga.gov/SiteCollectionImages/WallaceJonathan4913.jpg
 party:
 - name: Democratic
 roles:
-- district: '119'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '119'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4913&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000481
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4913&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/WallaceJonathan4913.jpg
-family_name: Wallace
-given_name: Jonathan
 extras:
   guid: 4913
-other_identifiers:
-- identifier: GAL000481
-  scheme: legacy_openstates

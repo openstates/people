@@ -1,22 +1,22 @@
 id: ocd-person/784a12cd-3ecc-4fed-8b47-4e090038c2f8
 name: Jaime Foster
+given_name: Jaime
+family_name: Foster
 email: Jaime.Foster@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '57'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '57'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/Foster
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Jaime
-family_name: Foster
 other_names:
 - name: Foster, Jaime S.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

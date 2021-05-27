@@ -1,20 +1,31 @@
 id: ocd-person/06d334f0-dd19-4a8e-b1c9-5f1ae1d90e26
 name: Steve Eliason
+given_name: Steve
+family_name: Eliason
+email: seliason@le.utah.gov
+image: https://le.utah.gov/images/legislator/ELIASS.jpg
 party:
 - name: Republican
 roles:
-- district: '45'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '45'
 contact_details:
 - note: District Office
   address: 8157 S GRAMBLING WAY, SANDY, UT, 84094
   voice: 801-673-4748
 links:
 - url: http://house.utah.gov/rep/ELIASS
+other_names:
+- name: Eliason, S.
+- name: Eliason, Steve
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000051
+- scheme: legacy_openstates
+  identifier: UTL000271
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/ELIASS.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIELIASS1.pdf
@@ -27,14 +38,3 @@ extras:
   - http://le.utah.gov/house2/CofI/seliason.pdf
   - http://le.utah.gov/house2/CofI/ELIASS.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409528
-other_identifiers:
-- identifier: UTL000051
-  scheme: legacy_openstates
-- identifier: UTL000271
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Eliason
-email: seliason@le.utah.gov
-other_names:
-- name: Eliason, S.
-- name: Eliason, Steve

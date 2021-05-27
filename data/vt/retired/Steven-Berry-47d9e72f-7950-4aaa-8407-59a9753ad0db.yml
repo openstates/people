@@ -2,20 +2,20 @@ id: ocd-person/47d9e72f-7950-4aaa-8407-59a9753ad0db
 name: Steven Berry
 given_name: Steven
 family_name: Berry
+image: http://legislature.vermont.gov/assets/Documents/Legislators/SBerry.jpg
 party:
 - name: Democratic
 roles:
-- district: Bennington-4
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://legislature.vermont.gov/assets/Documents/Legislators/SBerry.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Bennington-4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000412
+- scheme: legacy_openstates
+  identifier: VTL000653
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2016
 - url: http://legislature.vermont.gov/people/single/2016/23997
-other_identifiers:
-- identifier: VTL000412
-  scheme: legacy_openstates
-- identifier: VTL000653
-  scheme: legacy_openstates

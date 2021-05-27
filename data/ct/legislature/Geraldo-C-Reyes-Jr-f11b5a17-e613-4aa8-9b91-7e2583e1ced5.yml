@@ -1,11 +1,14 @@
 id: ocd-person/f11b5a17-e613-4aa8-9b91-7e2583e1ced5
 name: Geraldo C. Reyes Jr.
+given_name: Geraldo
+family_name: Reyes
+email: Geraldo.Reyes@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '75'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '75'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4024;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-753-4930
 links:
 - url: http://www.housedems.ct.gov/Reyes
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000312
-  scheme: legacy_openstates
-given_name: Geraldo
-family_name: Reyes
-email: Geraldo.Reyes@cga.ct.gov
 other_names:
 - name: Reyes, Geraldo C.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000312
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

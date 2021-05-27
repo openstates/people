@@ -1,11 +1,15 @@
 id: ocd-person/0f494bf0-c776-4ee9-88d0-3d9e5707933f
 name: Charles Barron
+given_name: Charles
+family_name: Barron
+email: barronc@nyassembly.gov
+image: https://assembly.state.ny.us/write/upload/member_files/060/headshot/060.jpg
 party:
 - name: Democratic
 roles:
-- district: '60'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
+  district: '60'
 contact_details:
 - note: Capitol Office
   address: LOB Room 532; Albany, NY 12248
@@ -16,15 +20,11 @@ contact_details:
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Charles-Barron
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000342
+- scheme: legacy_openstates
+  identifier: NYL000458
 sources:
 - url: http://assembly.state.ny.us/mem/Charles-Barron
 - url: https://assembly.state.ny.us/mem/Charles-Barron
-image: https://assembly.state.ny.us/write/upload/member_files/060/headshot/060.jpg
-other_identifiers:
-- identifier: NYL000342
-  scheme: legacy_openstates
-- identifier: NYL000458
-  scheme: legacy_openstates
-given_name: Charles
-family_name: Barron
-email: barronc@nyassembly.gov

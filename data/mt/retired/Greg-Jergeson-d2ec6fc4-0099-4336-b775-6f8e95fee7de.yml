@@ -2,20 +2,20 @@ id: ocd-person/d2ec6fc4-0099-4336-b775-6f8e95fee7de
 name: Greg Jergeson
 given_name: Greg
 family_name: Jergeson
+image: http://leg.mt.gov/images/legislators_63rd/14885.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://leg.mt.gov/images/legislators_63rd/14885.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '17'
 links:
 - url: http://leg.mt.gov/css/Sessions/63rd/leg_info.asp?HouseID=0&SessionID=107&LAWSID=14885
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000163
 sources:
 - url: http://leg.mt.gov/css/Sessions/63rd/leg_info.asp?HouseID=0&SessionID=107&LAWSID=14885
 - url: http://leg.mt.gov/content/sessions/63rd/2013SenateMembers.txt
-other_identifiers:
-- identifier: MTL000163
-  scheme: legacy_openstates

@@ -1,11 +1,14 @@
 id: ocd-person/28512987-3275-4a5d-8af5-b8f3b7be2457
 name: Kyle Kacal
+given_name: Kyle
+family_name: Kacal
+image: https://house.texas.gov/photos/members/2445.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: Room E2.810;P.O. Box 2910;Austin, TX 78768
@@ -15,13 +18,10 @@ contact_details:
   voice: 979-774-7276
 links:
 - url: https://house.texas.gov/members/member-page/?district=12
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000441
+- scheme: legacy_openstates
+  identifier: TXL000606
 sources:
 - url: https://house.texas.gov/members/member-page/?district=12
-image: https://house.texas.gov/photos/members/2445.jpg
-other_identifiers:
-- identifier: TXL000441
-  scheme: legacy_openstates
-- identifier: TXL000606
-  scheme: legacy_openstates
-given_name: Kyle
-family_name: Kacal

@@ -1,18 +1,18 @@
 id: ocd-person/e6953ec1-9931-41fa-8db0-ea4ed56c42b9
 name: Beth Bye
+given_name: Beth
+family_name: Bye
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '5'
 links:
 - url: http://www.senatedems.ct.gov/Bye.php
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000005
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000005
-  scheme: legacy_openstates
-given_name: Beth
-family_name: Bye

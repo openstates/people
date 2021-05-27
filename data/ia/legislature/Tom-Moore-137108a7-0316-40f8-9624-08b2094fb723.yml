@@ -1,11 +1,15 @@
 id: ocd-person/137108a7-0316-40f8-9624-08b2094fb723
 name: Tom Moore
+given_name: Tom
+family_name: Moore
+email: Tom.Moore@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=17112
 party:
 - name: Republican
 roles:
-- district: '21'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '21'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -14,13 +18,9 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=17112
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=17112
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000524
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=17112
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=17112
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=17112
-other_identifiers:
-- identifier: IAL000524
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Moore
-email: Tom.Moore@legis.iowa.gov

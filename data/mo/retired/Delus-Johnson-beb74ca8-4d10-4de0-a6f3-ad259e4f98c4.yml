@@ -1,24 +1,24 @@
 id: ocd-person/beb74ca8-4d10-4de0-a6f3-ad259e4f98c4
 name: Delus Johnson
+given_name: Delus
+family_name: Johnson
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '9'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=9
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000100
+- scheme: legacy_openstates
+  identifier: MOL000278
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=9
 extras:
   first_name: Delus
   last_name: Johnson
-other_identifiers:
-- identifier: MOL000100
-  scheme: legacy_openstates
-- identifier: MOL000278
-  scheme: legacy_openstates
-given_name: Delus
-family_name: Johnson

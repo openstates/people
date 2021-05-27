@@ -2,19 +2,19 @@ id: ocd-person/8a5f735e-0a14-4dd4-b57c-d2935367417f
 name: Wendy Jaquet
 given_name: Wendy
 family_name: Jaquet
+image: http://legislature.idaho.gov/images/Jaquet30.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Jaquet30.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '25'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=30
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000068
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000068
-  scheme: legacy_openstates

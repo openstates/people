@@ -1,11 +1,15 @@
 id: ocd-person/e6050cfc-c04e-45ec-81b1-f81e7f0d5234
 name: Pat Sullivan
+given_name: Pat
+family_name: Sullivan
+email: pat.sullivan@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/sullivan.jpg
 party:
 - name: Democratic
 roles:
-- district: '47'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '47'
 contact_details:
 - note: Capitol Office
   address: 339A Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/Pat-Sullivan/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Sullivan/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000138
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/sullivan.jpg
-other_identifiers:
-- identifier: WAL000138
-  scheme: legacy_openstates
-given_name: Pat
-family_name: Sullivan
-email: pat.sullivan@leg.wa.gov

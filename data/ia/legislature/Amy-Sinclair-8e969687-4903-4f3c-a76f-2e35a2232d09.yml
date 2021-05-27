@@ -1,11 +1,15 @@
 id: ocd-person/8e969687-4903-4f3c-a76f-2e35a2232d09
 name: Amy Sinclair
+given_name: Amy
+family_name: Sinclair
+email: amy.sinclair@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=10729
 party:
 - name: Republican
 roles:
-- district: '14'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '14'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -14,13 +18,9 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10729
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10729
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000215
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10729
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10729
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=10729
-other_identifiers:
-- identifier: IAL000215
-  scheme: legacy_openstates
-given_name: Amy
-family_name: Sinclair
-email: amy.sinclair@legis.iowa.gov

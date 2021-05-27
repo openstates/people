@@ -1,18 +1,22 @@
 id: ocd-person/d247f852-5545-40b2-b974-757b73b1e807
 name: Michael T. Evans
+given_name: Michael T.
+family_name: Evans
+email: mevans@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/evans_(45th).jpg
 party:
-- name: Democratic
-  end_date: '2020-01-01'
+- end_date: '2020-01-01'
+  name: Democratic
 - name: Independent
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: 2012-01-01
+- start_date: 2012-01-01
   end_date: 2015-12-31
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '43'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '45'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -22,21 +26,17 @@ contact_details:
   voice: 662-677-3738
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/evans_(45th).xml
+other_names:
+- name: Evans (45th)
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000271
+- scheme: legacy_openstates
+  identifier: MSL000222
+- scheme: openstates
+  identifier: ocd-person/5cf40f42-b33a-40c3-8631-8c89d0bca827
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/evans_(45th).xml
-image: http://billstatus.ls.state.ms.us/members/house/evans_(45th).jpg
 extras:
   org_info: Rep. Evans is a member of the Mississippi Fire Chiefs' Association, Mississippi
     Farm Bureau, Rotary, Mason, and Mississippi Poultry Association.
-other_identifiers:
-- identifier: MSL000271
-  scheme: legacy_openstates
-- identifier: MSL000222
-  scheme: legacy_openstates
-- identifier: ocd-person/5cf40f42-b33a-40c3-8631-8c89d0bca827
-  scheme: openstates
-given_name: Michael T.
-family_name: Evans
-email: mevans@house.ms.gov
-other_names:
-- name: Evans (45th)

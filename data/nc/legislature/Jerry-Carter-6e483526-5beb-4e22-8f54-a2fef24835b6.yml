@@ -1,11 +1,15 @@
 id: ocd-person/6e483526-5beb-4e22-8f54-a2fef24835b6
 name: Jerry Carter
+given_name: Jerry
+family_name: Carter
+email: Jerry.Carter@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/737/High
 party:
 - name: Republican
 roles:
-- district: '65'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '65'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 418B2;Raleigh, NC 27603-5925
@@ -20,7 +24,3 @@ extras:
   counties:
   - Rockingham
   notice: null
-email: Jerry.Carter@ncleg.gov
-image: https://www.ncleg.gov/Members/MemberImage/H/737/High
-given_name: Jerry
-family_name: Carter

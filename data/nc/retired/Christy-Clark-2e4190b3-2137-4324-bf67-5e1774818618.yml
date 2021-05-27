@@ -1,12 +1,15 @@
 id: ocd-person/2e4190b3-2137-4324-bf67-5e1774818618
 name: Christy Clark
+given_name: Christy
+family_name: Clark
+email: Christy.Clark@ncleg.net
 party:
 - name: Democratic
 roles:
-- district: '98'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '98'
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/738
 sources:
@@ -15,6 +18,3 @@ extras:
   counties:
   - Mecklenburg
   notice: null
-email: Christy.Clark@ncleg.net
-given_name: Christy
-family_name: Clark

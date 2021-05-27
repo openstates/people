@@ -1,11 +1,14 @@
 id: ocd-person/8bf7e55e-afc1-4f5c-99c3-9b7a1356fbc3
 name: Tom Delnicki
+given_name: Tom
+family_name: Delnicki
+email: Tom.Delnicki@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '14'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '14'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4200;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-644-0026
 links:
 - url: http://www.cthousegop.com/Delnicki/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000339
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Delnicki
-email: Tom.Delnicki@housegop.ct.gov
 other_names:
 - name: Delnicki, Tom
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000339
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

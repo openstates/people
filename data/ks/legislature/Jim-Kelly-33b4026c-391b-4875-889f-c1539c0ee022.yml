@@ -1,11 +1,15 @@
 id: ocd-person/33b4026c-391b-4875-889f-c1539c0ee022
 name: Jim Kelly
+given_name: Jim
+family_name: Kelly
+email: jim.kelly@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_kelly_jim_1.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: Room 581-W;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -13,16 +17,12 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/rep_kelly_jim_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_kelly_jim_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000097
+- scheme: legacy_openstates
+  identifier: KSL000229
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_kelly_jim_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_kelly_jim_1.jpg
 extras:
   occupation: Banker
-other_identifiers:
-- identifier: KSL000097
-  scheme: legacy_openstates
-- identifier: KSL000229
-  scheme: legacy_openstates
-given_name: Jim
-family_name: Kelly
-email: jim.kelly@house.ks.gov

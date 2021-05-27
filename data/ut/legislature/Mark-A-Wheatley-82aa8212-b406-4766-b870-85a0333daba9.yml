@@ -1,20 +1,31 @@
 id: ocd-person/82aa8212-b406-4766-b870-85a0333daba9
 name: Mark A. Wheatley
+given_name: Mark
+family_name: Wheatley
+email: markwheatley@le.utah.gov
+image: https://le.utah.gov/images/legislator/WHEATMA.jpg
 party:
 - name: Democratic
 roles:
-- district: '35'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '35'
 contact_details:
 - note: District Office
   address: 447 E MOSS CREEK DR, MURRAY, UT, 84107
   voice: 801-556-4862
 links:
 - url: http://house.utah.gov/rep/WHEATMA
+other_names:
+- name: Wheatley, Mark A.
+- name: Wheatley, M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000098
+- scheme: legacy_openstates
+  identifier: UTL000189
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/WHEATMA.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIWHEATMA3.pdf
@@ -26,14 +37,3 @@ extras:
   - http://le.utah.gov/house2/CofI/mwheatley.pdf
   - http://le.utah.gov/house2/CofI/WHEATMA.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1878
-other_identifiers:
-- identifier: UTL000098
-  scheme: legacy_openstates
-- identifier: UTL000189
-  scheme: legacy_openstates
-given_name: Mark
-family_name: Wheatley
-email: markwheatley@le.utah.gov
-other_names:
-- name: Wheatley, Mark A.
-- name: Wheatley, M.

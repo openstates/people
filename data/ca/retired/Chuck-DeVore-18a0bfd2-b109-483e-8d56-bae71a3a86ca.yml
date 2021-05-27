@@ -2,17 +2,17 @@ id: ocd-person/18a0bfd2-b109-483e-8d56-bae71a3a86ca
 name: Chuck DeVore
 given_name: Chuck
 family_name: DeVore
+image: http://www.assembly.ca.gov/images/members/70.jpg
 party:
 - name: Republican
 roles:
-- district: '70'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.assembly.ca.gov/images/members/70.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '70'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000047
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000047
-  scheme: legacy_openstates

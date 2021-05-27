@@ -1,11 +1,15 @@
 id: ocd-person/4b4c6bbd-fcbb-4c7e-9746-83acffe80898
 name: Richard Bennett
+given_name: Richard
+family_name: Bennett
+email: rbennett@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/bennett.jpg
 party:
 - name: Republican
 roles:
-- district: '120'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '120'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 228-861-6348
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bennett.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000102
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/bennett.xml
-image: http://billstatus.ls.state.ms.us/members/house/bennett.jpg
 extras:
   org_info: Representative Bennett is a member of the Foreign Trade Zone, Gulf Coast
     Council of Governments, Long Beach Drug Task Force, and Hazard Mitigation Council.
-other_identifiers:
-- identifier: MSL000102
-  scheme: legacy_openstates
-given_name: Richard
-family_name: Bennett
-email: rbennett@house.ms.gov

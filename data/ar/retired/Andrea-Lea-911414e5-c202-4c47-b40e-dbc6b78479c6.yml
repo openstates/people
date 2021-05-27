@@ -2,26 +2,26 @@ id: ocd-person/911414e5-c202-4c47-b40e-dbc6b78479c6
 name: Andrea Lea
 given_name: Andrea
 family_name: Lea
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Lea.jpg
 party:
 - name: Republican
 roles:
-- district: '71'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '68'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '71'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Lea.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '68'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Lea
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000070
+- scheme: legacy_openstates
+  identifier: ARL000208
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=Lea
-other_identifiers:
-- identifier: ARL000070
-  scheme: legacy_openstates
-- identifier: ARL000208
-  scheme: legacy_openstates

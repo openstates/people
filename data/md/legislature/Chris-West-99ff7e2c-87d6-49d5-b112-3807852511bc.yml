@@ -1,15 +1,19 @@
 id: ocd-person/99ff7e2c-87d6-49d5-b112-3807852511bc
 name: Chris West
+given_name: Chris
+family_name: West
+email: chris.west@senate.state.md.us
+image: http://mgaleg.maryland.gov/2020RS/images/west02.jpg
 party:
 - name: Republican
 roles:
-- district: 42B
-  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+- end_date: '2019-01-08'
   type: lower
-  end_date: '2019-01-08'
-- district: '42'
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
-  type: upper
+  district: 42B
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: '42'
 contact_details:
 - note: Capitol Office
   address: 303 James Senate Office Building;11 Bladen Street;Annapolis, MD 21401
@@ -17,13 +21,9 @@ contact_details:
 links:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=west02&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/west02
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MDL000666
 sources:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=west02&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/west02
-image: http://mgaleg.maryland.gov/2020RS/images/west02.jpg
-other_identifiers:
-- identifier: MDL000666
-  scheme: legacy_openstates
-given_name: Chris
-family_name: West
-email: chris.west@senate.state.md.us

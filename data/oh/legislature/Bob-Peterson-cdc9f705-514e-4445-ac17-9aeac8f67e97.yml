@@ -1,25 +1,25 @@
 id: ocd-person/cdc9f705-514e-4445-ac17-9aeac8f67e97
 name: Bob Peterson
+given_name: Bob
+family_name: Peterson
+email: sd17@ohiosenate.gov
+image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2062.jpg
 party:
 - name: Republican
 roles:
-- district: '17'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
+  district: '17'
 contact_details:
 - note: Capitol Office
   address: Senate Building;1 Capitol Square;1st Floor;Columbus, OH 43215
   voice: 614-466-8156
 links:
 - url: http://www.ohiosenate.gov/senators/peterson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000118
+- scheme: legacy_openstates
+  identifier: OHL000159
 sources:
 - url: http://www.ohiosenate.gov/senators
-image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2062.jpg
-other_identifiers:
-- identifier: OHL000118
-  scheme: legacy_openstates
-- identifier: OHL000159
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Peterson
-email: sd17@ohiosenate.gov

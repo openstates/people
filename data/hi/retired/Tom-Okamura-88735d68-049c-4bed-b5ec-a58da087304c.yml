@@ -2,19 +2,19 @@ id: ocd-person/88735d68-049c-4bed-b5ec-a58da087304c
 name: Tom Okamura
 given_name: Tom
 family_name: Okamura
+image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/okamura.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://capitol.hawaii.gov//Members/Images/RepSenPhotos/okamura.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '33'
 links:
 - url: http://capitol.hawaii.gov//memberpage.aspx?member=okamura
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: HIL000080
 sources:
 - url: http://capitol.hawaii.gov/members/legislators.aspx?chamber=H
-other_identifiers:
-- identifier: HIL000080
-  scheme: legacy_openstates

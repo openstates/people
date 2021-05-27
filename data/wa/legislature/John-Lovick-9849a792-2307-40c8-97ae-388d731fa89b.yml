@@ -1,11 +1,15 @@
 id: ocd-person/9849a792-2307-40c8-97ae-388d731fa89b
 name: John Lovick
+given_name: John
+family_name: Lovick
+email: john.lovick@leg.wa.gov
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/lovick.jpg
 party:
 - name: Democratic
 roles:
-- district: '44'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
+  district: '44'
 contact_details:
 - note: Capitol Office
   address: 429B Legislative Building;PO Box 40600;Olympia, WA 98504
@@ -14,12 +18,8 @@ links:
 - url: http://housedemocrats.wa.gov/legislators/John-Lovick/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Lovick/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000240
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/lovick.jpg
-other_identifiers:
-- identifier: WAL000240
-  scheme: legacy_openstates
-given_name: John
-family_name: Lovick
-email: john.lovick@leg.wa.gov

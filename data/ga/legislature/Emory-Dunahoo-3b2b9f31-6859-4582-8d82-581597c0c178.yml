@@ -1,11 +1,15 @@
 id: ocd-person/3b2b9f31-6859-4582-8d82-581597c0c178
 name: Emory Dunahoo
+given_name: Emory
+family_name: Dunahoo
+email: emory.dunahoo@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/dunahoo-emory-797.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '30'
 contact_details:
 - note: Capitol Office
   address: 401-A Coverdell Legislative Office Building;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
 - url: https://www.legis.ga.gov/members/house/797?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000275
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
 - url: https://www.legis.ga.gov/members/house/797?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/dunahoo-emory-797.jpg
-family_name: Dunahoo
-given_name: Emory
 extras:
   guid: 797
   city: Gillsville
   georgia_id: 797
   residence: Gillsville
-other_identifiers:
-- identifier: GAL000275
-  scheme: legacy_openstates
-email: emory.dunahoo@house.ga.gov

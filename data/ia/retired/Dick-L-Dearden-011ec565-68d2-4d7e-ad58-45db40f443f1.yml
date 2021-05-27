@@ -3,26 +3,26 @@ name: Dick L. Dearden
 given_name: Dick
 family_name: Dearden
 middle_name: L.
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=135
 party:
 - name: Democratic
 roles:
-- district: '16'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '16'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=135
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '34'
 links:
 - url: https://www.legis.iowa.gov/legislators/senate
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000015
+- scheme: legacy_openstates
+  identifier: IAL000189
 sources:
 - url: https://www.legis.iowa.gov/legislators/senate
-other_identifiers:
-- identifier: IAL000015
-  scheme: legacy_openstates
-- identifier: IAL000189
-  scheme: legacy_openstates

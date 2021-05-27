@@ -2,19 +2,19 @@ id: ocd-person/1da0b268-4c18-40b4-a261-0bdbaf471e02
 name: Giles Ward
 given_name: Giles
 family_name: Ward
+image: http://billstatus.ls.state.ms.us/members/senate/ward.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/ward.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '18'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/Ward.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000039
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/Ward.xml
-other_identifiers:
-- identifier: MSL000039
-  scheme: legacy_openstates

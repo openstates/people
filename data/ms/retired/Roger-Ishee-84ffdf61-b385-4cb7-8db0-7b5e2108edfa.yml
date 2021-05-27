@@ -2,19 +2,19 @@ id: ocd-person/84ffdf61-b385-4cb7-8db0-7b5e2108edfa
 name: Roger Ishee
 given_name: Roger
 family_name: Ishee
+image: http://billstatus.ls.state.ms.us/members/house/ishee.jpg
 party:
 - name: Republican
 roles:
-- district: '118'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/ishee.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '118'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/ishee.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000124
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/ishee.xml
-other_identifiers:
-- identifier: MSL000124
-  scheme: legacy_openstates

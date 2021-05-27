@@ -1,11 +1,15 @@
 id: ocd-person/0acb9a2c-6cbb-44b3-828c-4c7ad3fd8ce6
 name: Thomas Stevens
+given_name: Thomas
+family_name: Stevens
+email: tom@stevensvermont.com
+image: https://legislature.vermont.gov/Documents/Legislators/Stevens.Thomas.jpg
 party:
 - name: Democratic
 roles:
-- district: Washington-Chittenden
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
+  district: Washington-Chittenden
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -15,23 +19,19 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14689
 - url: http://legislature.vermont.gov/people/single/2022/14689
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000161
+- scheme: legacy_openstates
+  identifier: VTL000308
+- scheme: legacy_openstates
+  identifier: VTL000416
+- scheme: legacy_openstates
+  identifier: VTL000683
+- scheme: legacy_openstates
+  identifier: VTL000772
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14689
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14689
-image: https://legislature.vermont.gov/Documents/Legislators/Stevens.Thomas.jpg
-other_identifiers:
-- identifier: VTL000161
-  scheme: legacy_openstates
-- identifier: VTL000308
-  scheme: legacy_openstates
-- identifier: VTL000416
-  scheme: legacy_openstates
-- identifier: VTL000683
-  scheme: legacy_openstates
-- identifier: VTL000772
-  scheme: legacy_openstates
-given_name: Thomas
-family_name: Stevens
-email: tom@stevensvermont.com

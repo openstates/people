@@ -1,35 +1,35 @@
 id: ocd-person/ed3e498d-5160-4f6a-8580-ee2a4d877b5d
 name: Llew Jones
+given_name: Llew
+family_name: Jones
+email: Llew.Jones@mtleg.gov
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: 2018-01-01
   type: upper
-  end_date: 2018-01-01
-- district: '18'
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
+  district: '9'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '18'
+contact_details:
+- note: Capitol Office
+  address: 1102 4TH AVE SW;Conrad, MT 59425-1919
+  voice: 406-271-3104
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5076
 - url: https://leg.mt.gov/legislator-information/roster/individual/6837
+other_names:
+- name: Jones, Llew
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000021
+- scheme: legacy_openstates
+  identifier: MTL000238
+- scheme: openstates
+  identifier: ocd-person/cbe3d754-5e22-4006-a3c7-c65eefc292b1
 sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5076
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6837
-contact_details:
-- note: Capitol Office
-  voice: 406-271-3104
-  address: 1102 4TH AVE SW;Conrad, MT 59425-1919
-other_identifiers:
-- identifier: MTL000021
-  scheme: legacy_openstates
-- identifier: MTL000238
-  scheme: legacy_openstates
-- identifier: ocd-person/cbe3d754-5e22-4006-a3c7-c65eefc292b1
-  scheme: openstates
-email: Llew.Jones@mtleg.gov
-given_name: Llew
-family_name: Jones
-other_names:
-- name: Jones, Llew

@@ -1,11 +1,15 @@
 id: ocd-person/26cbb5a7-e485-41f6-9cb6-be82cbef73db
 name: Richard D. Roth
+given_name: Richard
+family_name: Roth
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/roth-richard.jpg
 party:
 - name: Democratic
 roles:
-- district: '31'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 2080, Sacramento, CA 95814-4900
@@ -15,16 +19,12 @@ contact_details:
   voice: 951-680-6750
 links:
 - url: https://senate.ca.gov/sd31
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD31&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD31&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000327
+- scheme: legacy_openstates
+  identifier: CAL000422
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/roth-richard.jpg
-other_identifiers:
-- identifier: CAL000327
-  scheme: legacy_openstates
-- identifier: CAL000422
-  scheme: legacy_openstates
-given_name: Richard
-family_name: Roth
-gender: Male

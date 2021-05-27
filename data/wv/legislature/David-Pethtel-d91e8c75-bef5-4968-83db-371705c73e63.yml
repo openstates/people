@@ -1,11 +1,15 @@
 id: ocd-person/d91e8c75-bef5-4968-83db-371705c73e63
 name: David Pethtel
+given_name: David
+family_name: Pethtel
+email: dave.pethtel@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/pethtel_dave.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: Room 2R, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,14 +19,10 @@ contact_details:
   voice: 304-775-5472
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Pethtel
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000043
+- scheme: legacy_openstates
+  identifier: WVL000252
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Pethtel
-image: http://www.legis.state.wv.us/images/members/2021/house/pethtel_dave.jpg
-other_identifiers:
-- identifier: WVL000043
-  scheme: legacy_openstates
-- identifier: WVL000252
-  scheme: legacy_openstates
-given_name: David
-family_name: Pethtel
-email: dave.pethtel@wvhouse.gov

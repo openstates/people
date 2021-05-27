@@ -1,12 +1,15 @@
 id: ocd-person/8e7e0c04-e019-4ffe-a281-18beee5d939f
 name: Jeanne Dietsch
+given_name: Jeanne
+family_name: Dietsch
+email: Jeanne.Dietsch@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: upper
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '9'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 sources:
@@ -16,6 +19,3 @@ extras:
   first_name: Jeanne
   last_name: Dietsch
   middle_name: ''
-email: Jeanne.Dietsch@leg.state.nh.us
-given_name: Jeanne
-family_name: Dietsch

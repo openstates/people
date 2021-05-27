@@ -1,15 +1,19 @@
 id: ocd-person/ecc56806-698d-486b-bf02-38aa436474a9
 name: Todd E. Taylor
+given_name: Todd
+family_name: Taylor
+email: todd.taylor@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=54
 party:
 - name: Democratic
 roles:
-- district: '70'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '35'
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '70'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '35'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -19,15 +23,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=54
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=54
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000134
+- scheme: legacy_openstates
+  identifier: IAL000309
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=54
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=54
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=54
-other_identifiers:
-- identifier: IAL000134
-  scheme: legacy_openstates
-- identifier: IAL000309
-  scheme: legacy_openstates
-given_name: Todd
-family_name: Taylor
-email: todd.taylor@legis.iowa.gov

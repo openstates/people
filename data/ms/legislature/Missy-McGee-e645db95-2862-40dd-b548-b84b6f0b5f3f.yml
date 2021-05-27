@@ -1,11 +1,15 @@
 id: ocd-person/e645db95-2862-40dd-b548-b84b6f0b5f3f
 name: Missy McGee
+given_name: Missy
+family_name: McGee
+email: mmcgee@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/mcgee.jpg
 party:
 - name: Republican
 roles:
-- district: '102'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '102'
 contact_details:
 - note: Capitol Office
   address: P. O. Box 1018;Jackson, MS 39215
@@ -13,17 +17,13 @@ contact_details:
   address: PO Box 19089;Hattiesburg, MS 39404
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000296
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
-image: http://billstatus.ls.state.ms.us/members/house/mcgee.jpg
 extras:
   org_info: Representative McGee is a lifetime member of USM Alumni Association, former
     board member of the USM Athletic Foundation, life member of the Hattiesburg Jr
     Auxiliary Leadership Pinebelt; Area Development Partnership, Hattiesburg Dixie
     Youth baseball, and member of Main Street United Methodist Church.
-other_identifiers:
-- identifier: MSL000296
-  scheme: legacy_openstates
-given_name: Missy
-family_name: McGee
-email: mmcgee@house.ms.gov

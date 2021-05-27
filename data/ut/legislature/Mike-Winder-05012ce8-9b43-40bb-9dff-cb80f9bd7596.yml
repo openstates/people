@@ -1,20 +1,29 @@
 id: ocd-person/05012ce8-9b43-40bb-9dff-cb80f9bd7596
 name: Mike Winder
+given_name: Mike
+family_name: Winder
+email: mikewinder@le.utah.gov
+image: https://le.utah.gov/images/legislator/WINDEM.jpg
 party:
 - name: Republican
 roles:
-- district: '30'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '30'
 contact_details:
 - note: District Office
   address: 4165 South 4400 West, WEST VALLEY CITY, UT, 84120
   voice: 801-633-1300
 links:
 - url: http://house.utah.gov/rep/WINDEM
+other_names:
+- name: Winder, M.
+- name: Winder, Mike
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000295
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/WINDEM.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIWINDEM2.pdf
@@ -23,12 +32,3 @@ extras:
   - https://le.utah.gov/house2/CofI/WINDEM2.pdf
   - https://le.utah.gov/house2/CofI/WINDEM.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413274
-other_identifiers:
-- identifier: UTL000295
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Winder
-email: mikewinder@le.utah.gov
-other_names:
-- name: Winder, M.
-- name: Winder, Mike

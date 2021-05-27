@@ -5,16 +5,16 @@ family_name: Cornejo
 party:
 - name: Republican
 roles:
-- district: '64'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '64'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=64
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000230
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=64
-other_identifiers:
-- identifier: MOL000230
-  scheme: legacy_openstates

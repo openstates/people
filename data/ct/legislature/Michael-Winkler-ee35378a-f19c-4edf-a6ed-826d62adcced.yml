@@ -1,11 +1,14 @@
 id: ocd-person/ee35378a-f19c-4edf-a6ed-826d62adcced
 name: Michael A. Winkler
+given_name: Michael
+family_name: Winkler
+email: Michael.Winkler@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '56'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '56'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4026;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-875-3149
 links:
 - url: http://www.housedems.ct.gov/Winkler
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000349
-  scheme: legacy_openstates
-given_name: Michael
-family_name: Winkler
-email: Michael.Winkler@cga.ct.gov
 other_names:
 - name: Winkler, Michael A.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000349
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -2,20 +2,20 @@ id: ocd-person/15289dc1-bc5e-443f-87a5-d3d20413ebe7
 name: Greta Johnson
 given_name: Greta
 family_name: Johnson
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/35.jpg
 party:
 - name: Democratic
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2018-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/35.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '35'
 links:
 - url: http://www.ohiohouse.gov/greta-johnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000291
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
 - url: http://www.cleveland.com/akron/index.ssf/2017/03/state_rep_great_johnson_steps.html
-other_identifiers:
-- identifier: OHL000291
-  scheme: legacy_openstates

@@ -1,24 +1,24 @@
 id: ocd-person/c9b52973-c58d-4eec-878b-d4e18e000677
 name: Craig Redmon
+given_name: Craig
+family_name: Redmon
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '4'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000150
+- scheme: legacy_openstates
+  identifier: MOL000329
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=4
 extras:
   first_name: Craig
   last_name: Redmon
-other_identifiers:
-- identifier: MOL000150
-  scheme: legacy_openstates
-- identifier: MOL000329
-  scheme: legacy_openstates
-given_name: Craig
-family_name: Redmon

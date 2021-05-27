@@ -1,25 +1,38 @@
 id: ocd-person/8ffe791d-6a74-412b-a435-ee04045e0ad0
 name: Michael K. McKell
+given_name: Michael
+family_name: McKell
+email: mmckell@le.utah.gov
+image: https://le.utah.gov/images/legislator/MCKELMK.jpg
 party:
 - name: Republican
 roles:
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: 2020-12-31
   type: lower
-  end_date: 2020-12-31
-- district: '7'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '66'
+- start_date: 2021-01-01
   type: upper
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '7'
 contact_details:
 - note: District Office
   address: 642 KIRBY LANE STE 105, SPANISH FORK, UT, 84660
   voice: 801-210-1495
 links:
 - url: https://senate.utah.gov/michael-mckell
+other_names:
+- name: McKell, Michael K.
+- name: McKell, M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000140
+- scheme: legacy_openstates
+  identifier: UTL000176
+- scheme: legacy_openstates
+  identifier: UTL000301
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/MCKELMK.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIMCKELMK2.pdf
@@ -30,16 +43,3 @@ extras:
   - http://le.utah.gov/house2/CofI/mmckell.pdf
   - http://le.utah.gov/house2/CofI/MCKELMK.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411332
-other_identifiers:
-- identifier: UTL000140
-  scheme: legacy_openstates
-- identifier: UTL000176
-  scheme: legacy_openstates
-- identifier: UTL000301
-  scheme: legacy_openstates
-given_name: Michael
-family_name: McKell
-email: mmckell@le.utah.gov
-other_names:
-- name: McKell, Michael K.
-- name: McKell, M.

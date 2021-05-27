@@ -2,19 +2,19 @@ id: ocd-person/700a23ff-ff08-4cf6-b29f-ebb4ff987ad3
 name: Russ Nowell
 given_name: Russ
 family_name: Nowell
+image: http://billstatus.ls.state.ms.us/members/house/nowell.jpg
 party:
 - name: Republican
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/nowell.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '43'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/nowell.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000115
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/nowell.xml
-other_identifiers:
-- identifier: MSL000115
-  scheme: legacy_openstates

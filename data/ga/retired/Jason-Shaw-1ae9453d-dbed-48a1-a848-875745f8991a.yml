@@ -1,22 +1,22 @@
 id: ocd-person/1ae9453d-dbed-48a1-a848-875745f8991a
 name: Jason Shaw
+given_name: Jason
+family_name: Shaw
+image: http://www.house.ga.gov/SiteCollectionImages/ShawJason787.jpg
 party:
 - name: Republican
 roles:
-- district: '176'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2019-01-03'
   type: lower
-  end_date: '2019-01-03'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '176'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=787&Session=27
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000199
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=787&Session=27
-image: http://www.house.ga.gov/SiteCollectionImages/ShawJason787.jpg
-family_name: Shaw
-given_name: Jason
 extras:
   guid: 787
-other_identifiers:
-- identifier: GAL000199
-  scheme: legacy_openstates

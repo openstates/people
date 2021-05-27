@@ -1,11 +1,15 @@
 id: ocd-person/df7cab28-f697-448a-9d60-64163b67843d
 name: John Resman
+given_name: John
+family_name: Resman
+email: john.resman@house.ks.gov
+image: http://www.kslegislature.org/li/m/images/pics/rep_resman_john_1.jpg
 party:
 - name: Republican
 roles:
-- district: '121'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  type: lower
+  district: '121'
 contact_details:
 - note: Capitol Office
   address: Room 559-W;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/rep_resman_john_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_resman_john_1/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KSL000386
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_resman_john_1
-image: http://www.kslegislature.org/li/m/images/pics/rep_resman_john_1.jpg
 extras:
   occupation: Retired Deputy Sheriff
-other_identifiers:
-- identifier: KSL000386
-  scheme: legacy_openstates
-given_name: John
-family_name: Resman
-email: john.resman@house.ks.gov

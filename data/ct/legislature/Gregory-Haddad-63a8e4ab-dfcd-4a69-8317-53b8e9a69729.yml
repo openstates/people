@@ -1,11 +1,14 @@
 id: ocd-person/63a8e4ab-dfcd-4a69-8317-53b8e9a69729
 name: Gregory Haddad
+given_name: Gregory
+family_name: Haddad
+email: Gregory.Haddad@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '54'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '54'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 1804;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-429-8517
 links:
 - url: http://www.housedems.ct.gov/haddad
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000090
-  scheme: legacy_openstates
-given_name: Gregory
-family_name: Haddad
-email: Gregory.Haddad@cga.ct.gov
 other_names:
 - name: Haddad, Gregory
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000090
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

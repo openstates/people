@@ -2,27 +2,27 @@ id: ocd-person/1ac4ace9-6ce2-4756-9f42-a5b6c94ccf52
 name: Eleanor Sobel
 given_name: Eleanor
 family_name: Sobel
+image: http://www.flsenate.gov/PublishedContent/Senators/2014-2016/Photos/s33_4608.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '33'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.flsenate.gov/PublishedContent/Senators/2014-2016/Photos/s33_4608.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '31'
 links:
 - url: http://www.flsenate.gov/Senators/s33
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000037
+- scheme: legacy_openstates
+  identifier: FLL000201
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s33
-other_identifiers:
-- identifier: FLL000037
-  scheme: legacy_openstates
-- identifier: FLL000201
-  scheme: legacy_openstates

@@ -5,17 +5,17 @@ family_name: Randall
 party:
 - name: Democratic
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '44'
 links:
 - url: http://www.housedems.ct.gov/Randall
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000285
+- scheme: legacy_openstates
+  identifier: CTL000309
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000285
-  scheme: legacy_openstates
-- identifier: CTL000309
-  scheme: legacy_openstates

@@ -2,20 +2,20 @@ id: ocd-person/cefb9e83-c4ee-416b-92b6-bf59067633d0
 name: Victor Cuevas
 given_name: Victor
 family_name: Cuevas
+image: http://www.housedems.ct.gov/cuevas/images/Cuevas10.jpg
 party:
 - name: Democratic
 roles:
-- district: '75'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/cuevas/images/Cuevas10.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '75'
 links:
 - url: http://www.housedems.ct.gov/cuevas
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000207
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 - url: http://www.rep-am.com/articles/2016/03/10/news/local/944103.txt
-other_identifiers:
-- identifier: CTL000207
-  scheme: legacy_openstates

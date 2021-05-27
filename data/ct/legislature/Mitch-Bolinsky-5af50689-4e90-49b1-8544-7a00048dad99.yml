@@ -1,11 +1,14 @@
 id: ocd-person/5af50689-4e90-49b1-8544-7a00048dad99
 name: Mitch Bolinsky
+given_name: Mitch
+family_name: Bolinsky
+email: Mitch.Bolinsky@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '106'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '106'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4053;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 3 Wiley Lane;Newtown, CT 06470
 links:
 - url: http://www.cthousegop.com/Bolinsky/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000214
-  scheme: legacy_openstates
-given_name: Mitch
-family_name: Bolinsky
-email: Mitch.Bolinsky@housegop.ct.gov
 other_names:
 - name: Bolinsky, Mitch
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000214
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

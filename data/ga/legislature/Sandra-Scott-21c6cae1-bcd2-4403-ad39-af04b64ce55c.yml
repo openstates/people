@@ -1,11 +1,15 @@
 id: ocd-person/21c6cae1-bcd2-4403-ad39-af04b64ce55c
 name: Sandra Scott
+given_name: Sandra
+family_name: Scott
+email: sandra.scott@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/scott-sandra-766.jpg
 party:
 - name: Democratic
 roles:
-- district: '76'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '76'
 contact_details:
 - note: Capitol Office
   address: 611-D Coverdell Legislative Office Building;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=766&Session=27
 - url: https://www.legis.ga.gov/members/house/766?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000197
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=766&Session=27
 - url: https://www.legis.ga.gov/members/house/766?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/scott-sandra-766.jpg
-family_name: Scott
-given_name: Sandra
 extras:
   guid: 766
   city: Rex
   georgia_id: 766
   residence: Rex
-other_identifiers:
-- identifier: GAL000197
-  scheme: legacy_openstates
-email: sandra.scott@house.ga.gov

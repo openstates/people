@@ -2,21 +2,21 @@ id: ocd-person/8253903f-6cf6-4702-b6fa-85f55fb905cd
 name: Margaret Dayton
 given_name: Margaret
 family_name: Dayton
+image: https://le.utah.gov/images/legislator/DAYTOM.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: https://le.utah.gov/images/legislator/DAYTOM.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '15'
 links:
 - url: http://senate.utah.gov/senators/district15.html
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000006
+- scheme: legacy_openstates
+  identifier: UTL000266
 sources:
 - url: http://le.utah.gov/data/legislators.json
-other_identifiers:
-- identifier: UTL000006
-  scheme: legacy_openstates
-- identifier: UTL000266
-  scheme: legacy_openstates

@@ -1,22 +1,22 @@
 id: ocd-person/f39db1e3-d205-4712-b905-fa5b1bb09409
 name: Howard Maxwell
+given_name: Howard
+family_name: Maxwell
+image: http://www.house.ga.gov/SiteCollectionImages/MaxwellHoward165.jpg
 party:
 - name: Republican
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '17'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=165&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000160
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=165&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/MaxwellHoward165.jpg
-family_name: Maxwell
-given_name: Howard
 extras:
   guid: 165
-other_identifiers:
-- identifier: GAL000160
-  scheme: legacy_openstates

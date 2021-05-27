@@ -1,15 +1,19 @@
 id: ocd-person/7d877d41-e4d1-4dfd-b1e3-520586276532
 name: Larry G. Pittman
+given_name: Larry
+family_name: Pittman
+email: Larry.Pittman@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/633/High
 party:
 - name: Republican
 roles:
-- district: '82'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '83'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '82'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '83'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 1010;Raleigh, NC 27601-1096
@@ -18,18 +22,14 @@ contact_details:
   address: PO Box 5959;Concord, NC 28027
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/633
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000229
+- scheme: legacy_openstates
+  identifier: NCL000230
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/633
-image: https://www.ncleg.gov/Members/MemberImage/H/633/High
 extras:
   counties:
   - Cabarrus
   notice: null
-other_identifiers:
-- identifier: NCL000229
-  scheme: legacy_openstates
-- identifier: NCL000230
-  scheme: legacy_openstates
-given_name: Larry
-family_name: Pittman
-email: Larry.Pittman@ncleg.gov

@@ -2,26 +2,26 @@ id: ocd-person/ef600044-17ef-41ec-80c5-8241229e079e
 name: Eric Feige
 given_name: Eric
 family_name: Feige
+image: http://w3.legis.state.ak.us/images/house/FEI.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '12'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://w3.legis.state.ak.us/images/house/FEI.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '6'
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=fei
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000029
+- scheme: legacy_openstates
+  identifier: AKL000097
 sources:
 - url: http://house.legis.state.ak.us/rep.php?id=fei
-other_identifiers:
-- identifier: AKL000029
-  scheme: legacy_openstates
-- identifier: AKL000097
-  scheme: legacy_openstates

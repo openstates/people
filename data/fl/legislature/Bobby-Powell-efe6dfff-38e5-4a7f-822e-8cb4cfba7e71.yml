@@ -1,16 +1,20 @@
 id: ocd-person/efe6dfff-38e5-4a7f-822e-8cb4cfba7e71
 name: Bobby Powell
+given_name: Bobby
+family_name: Powell
+email: powell.bobby.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s30_5201.jpg
 party:
 - name: Democratic
 roles:
-- district: '88'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: '30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
+  district: '88'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '30'
 contact_details:
 - note: Capitol Office
   address: 220 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -21,18 +25,14 @@ contact_details:
 links:
 - url: http://www.flsenate.gov/Senators/s30
 - url: http://www.flsenate.gov/Senators/2018-2020/S30
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000630
+- scheme: legacy_openstates
+  identifier: FLL000280
+- scheme: openstates
+  identifier: ocd-person/0ce95301-fbb1-4d80-9852-bba69fec4158
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s30
 - url: http://www.flsenate.gov/Senators/2018-2020/S30
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s30_5201.jpg
-other_identifiers:
-- identifier: FLL000630
-  scheme: legacy_openstates
-- identifier: FLL000280
-  scheme: legacy_openstates
-- identifier: ocd-person/0ce95301-fbb1-4d80-9852-bba69fec4158
-  scheme: openstates
-given_name: Bobby
-family_name: Powell
-email: powell.bobby.web@flsenate.gov

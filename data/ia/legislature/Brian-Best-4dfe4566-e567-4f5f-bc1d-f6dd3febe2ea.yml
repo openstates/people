@@ -1,11 +1,15 @@
 id: ocd-person/4dfe4566-e567-4f5f-bc1d-f6dd3febe2ea
 name: Brian Best
+given_name: Brian
+family_name: Best
+email: Brian.Best@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=14800
 party:
 - name: Republican
 roles:
-- district: '12'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '12'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -14,13 +18,9 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14800
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14800
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000511
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14800
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14800
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=14800
-other_identifiers:
-- identifier: IAL000511
-  scheme: legacy_openstates
-given_name: Brian
-family_name: Best
-email: Brian.Best@legis.iowa.gov

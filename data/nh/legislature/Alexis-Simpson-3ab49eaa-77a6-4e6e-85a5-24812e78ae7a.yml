@@ -1,15 +1,17 @@
 id: ocd-person/3ab49eaa-77a6-4e6e-85a5-24812e78ae7a
 name: Alexis Simpson
+given_name: Alexis
+family_name: Simpson
 email: ahksimpson@gmail.com
 party:
 - name: Democratic
 roles:
-- district: Rockingham 36
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Rockingham 36
 contact_details:
-- address: 20 Main Street;Exeter, NH 03833-2438
-  note: District Office
+- note: District Office
+  address: 20 Main Street;Exeter, NH 03833-2438
   voice: 603-303-4722
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -19,5 +21,3 @@ extras:
   first_name: Alexis
   last_name: Simpson
   middle_name: ''
-given_name: Alexis
-family_name: Simpson

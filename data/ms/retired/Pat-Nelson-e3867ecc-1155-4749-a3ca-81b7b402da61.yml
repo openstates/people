@@ -2,19 +2,19 @@ id: ocd-person/e3867ecc-1155-4749-a3ca-81b7b402da61
 name: Pat Nelson
 given_name: Pat
 family_name: Nelson
+image: http://billstatus.ls.state.ms.us/members/house/nelson.jpg
 party:
 - name: Republican
 roles:
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/nelson.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '40'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/nelson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000214
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/nelson.xml
-other_identifiers:
-- identifier: MSL000214
-  scheme: legacy_openstates

@@ -1,15 +1,19 @@
 id: ocd-person/24b4458a-bc61-42f8-805a-6bc43edf6acb
 name: Joe Gruters
+given_name: Joe
+family_name: Gruters
+email: gruters.joe.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s23_5347.jpg
 party:
 - name: Republican
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '23'
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
+  district: '73'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '23'
 contact_details:
 - note: Capitol Office
   address: 316 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -20,14 +24,10 @@ contact_details:
 links:
 - url: http://www.flsenate.gov/Senators/s23
 - url: http://www.flsenate.gov/Senators/2018-2020/S23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000624
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s23
 - url: http://www.flsenate.gov/Senators/2018-2020/S23
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s23_5347.jpg
-other_identifiers:
-- identifier: FLL000624
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Gruters
-email: gruters.joe.web@flsenate.gov

@@ -2,20 +2,20 @@ id: ocd-person/b23d4a95-3bcb-420c-a5a4-0734428af3c8
 name: John Price
 given_name: John
 family_name: Price
+image: http://iga.in.gov/legislative/2016/portraits/legislator_john_price_1116
 party:
 - name: Republican
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:in/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://iga.in.gov/legislative/2016/portraits/legislator_john_price_1116
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:in/government
+  district: '47'
 links:
 - url: http://www.in.gov/h47
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: INL000176
 sources:
 - url: http://iga.in.gov/legislative/2016/legislators/legislator_john_price_1116
 - url: https://api.iga.in.gov/2016/legislators/john_price_1116
-other_identifiers:
-- identifier: INL000176
-  scheme: legacy_openstates

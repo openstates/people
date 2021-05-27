@@ -1,25 +1,34 @@
 id: ocd-person/ef1c9af3-b4f9-4eeb-b63d-a22f01c84262
 name: Derrin R. Owens
+given_name: Derrin
+family_name: Owens
+email: derrinowens@le.utah.gov
+image: https://le.utah.gov/images/legislator/OWENSD.jpg
 party:
 - name: Republican
 roles:
-- district: '58'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: 2020-12-31
   type: lower
-  end_date: 2020-12-31
-- district: '24'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '58'
+- start_date: 2021-01-01
   type: upper
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '24'
 contact_details:
 - note: District Office
   address: P.O. Box 127, Fountain Green, UT, 84632
   voice: 435-851-1284
 links:
 - url: https://senate.utah.gov/derrin-owens
+other_names:
+- name: Owens, Derrin R.
+- name: Owens, D.R.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000282
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/OWENSD.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIOWENSD4.pdf
@@ -32,12 +41,3 @@ extras:
   - http://le.utah.gov/house2/CofI/dowens2.pdf
   - http://le.utah.gov/house2/CofI/dowens.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414375
-other_identifiers:
-- identifier: UTL000282
-  scheme: legacy_openstates
-given_name: Derrin
-family_name: Owens
-email: derrinowens@le.utah.gov
-other_names:
-- name: Owens, Derrin R.
-- name: Owens, D.R.

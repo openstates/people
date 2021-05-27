@@ -1,16 +1,20 @@
 id: ocd-person/edcefea3-7cd4-4128-92ef-b22bc4a7c0b4
 name: Timothy A. Soucy
+given_name: Timothy A.
+family_name: Soucy
+email: Tim.Soucy@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376869.jpg
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 34
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: Merrimack 16
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 34
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 16
 contact_details:
 - note: District Office
   address: 11 Princeton Street;Concord, NH 03301-2333
@@ -18,24 +22,20 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001454
+- scheme: legacy_openstates
+  identifier: NHL000740
+- scheme: legacy_openstates
+  identifier: NHL000931
+- scheme: openstates
+  identifier: ocd-person/02e4d365-e1db-42b1-907e-0bc87ca7febb
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376869
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376869.jpg
 extras:
   first_name: Timothy
   last_name: Soucy
   middle_name: A.
-other_identifiers:
-- identifier: NHL001454
-  scheme: legacy_openstates
-- identifier: NHL000740
-  scheme: legacy_openstates
-- identifier: NHL000931
-  scheme: legacy_openstates
-- identifier: ocd-person/02e4d365-e1db-42b1-907e-0bc87ca7febb
-  scheme: openstates
-given_name: Timothy A.
-family_name: Soucy
-email: Tim.Soucy@leg.state.nh.us

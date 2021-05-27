@@ -2,19 +2,19 @@ id: ocd-person/fe5f3e86-7ac3-4a16-ad4d-4baaeba64a79
 name: Stefanie Mach
 given_name: Stefanie
 family_name: Mach
+image: http://www.stefaniemach.com/assets/pages/1/about-photo1.jpg
 party:
 - name: Democratic
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.stefaniemach.com/assets/pages/1/about-photo1.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '10'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=89&Legislature=52&Session_ID=115
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000269
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=H
-other_identifiers:
-- identifier: AZL000269
-  scheme: legacy_openstates

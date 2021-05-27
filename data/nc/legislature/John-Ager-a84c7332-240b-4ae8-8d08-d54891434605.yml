@@ -1,11 +1,15 @@
 id: ocd-person/a84c7332-240b-4ae8-8d08-d54891434605
 name: John Ager
+given_name: John
+family_name: Ager
+email: John.Ager@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/689/High
 party:
 - name: Democratic
 roles:
-- district: '115'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '115'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 1002;Raleigh, NC 27601-1096
@@ -14,16 +18,12 @@ contact_details:
   address: 15 Clarke Ln;Fairview, NC 28730
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/689
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000332
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/689
-image: https://www.ncleg.gov/Members/MemberImage/H/689/High
 extras:
   counties:
   - Buncombe
   notice: null
-other_identifiers:
-- identifier: NCL000332
-  scheme: legacy_openstates
-given_name: John
-family_name: Ager
-email: John.Ager@ncleg.gov

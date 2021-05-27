@@ -1,20 +1,29 @@
 id: ocd-person/54fcc31c-a3e5-47ea-a044-d1223c6bce65
 name: Cheryl K. Acton
+given_name: Cheryl
+family_name: Acton
+email: cacton@le.utah.gov
+image: https://le.utah.gov/images/legislator/ACTONCK.jpg
 party:
 - name: Republican
 roles:
-- district: '43'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '43'
 contact_details:
 - note: District Office
   address: 5143 W WHEATCREST CIRCLE, WEST JORDAN, UT, 84081
   voice: 801-809-3571
 links:
 - url: http://house.utah.gov/rep/ACTONCK
+other_names:
+- name: Acton, C.K.
+- name: Acton, Cheryl K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000300
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/ACTONCK.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIACTONCK1.pdf
@@ -22,12 +31,3 @@ extras:
   - https://le.utah.gov/house2/CofI/ACTONCK2.pdf
   - https://le.utah.gov/house2/CofI/ACTONCK1.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414828
-other_identifiers:
-- identifier: UTL000300
-  scheme: legacy_openstates
-given_name: Cheryl
-family_name: Acton
-email: cacton@le.utah.gov
-other_names:
-- name: Acton, C.K.
-- name: Acton, Cheryl K.

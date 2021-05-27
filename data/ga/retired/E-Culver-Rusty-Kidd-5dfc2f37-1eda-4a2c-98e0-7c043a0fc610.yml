@@ -2,27 +2,27 @@ id: ocd-person/5dfc2f37-1eda-4a2c-98e0-7c043a0fc610
 name: E. Culver "Rusty" Kidd
 given_name: E. Culver "Rusty"
 family_name: Kidd
+image: http://www.house.ga.gov/SiteCollectionImages/KiddRusty742.jpg
 party:
 - name: Independent
 roles:
-- district: '145'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '141'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '145'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/KiddRusty742.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '141'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=742&Session=24
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000150
+- scheme: legacy_openstates
+  identifier: GAL000319
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=742&Session=24
-other_identifiers:
-- identifier: GAL000150
-  scheme: legacy_openstates
-- identifier: GAL000319
-  scheme: legacy_openstates

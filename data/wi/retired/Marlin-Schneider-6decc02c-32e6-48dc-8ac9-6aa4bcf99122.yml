@@ -5,13 +5,13 @@ family_name: Schneider
 party:
 - name: Democratic
 roles:
-- district: '72'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '72'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000416
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=72
-other_identifiers:
-- identifier: WIL000416
-  scheme: legacy_openstates

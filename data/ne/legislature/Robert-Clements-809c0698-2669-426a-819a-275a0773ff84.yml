@@ -1,11 +1,15 @@
 id: ocd-person/809c0698-2669-426a-819a-275a0773ff84
 name: Robert Clements
+given_name: Robert
+family_name: Clements
+email: rclements@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist02.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '2'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '2'
 contact_details:
 - note: Capitol Office
   address: Room 1120; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist02
 - url: http://news.legislature.ne.gov/dist02/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000105
+- scheme: legacy_openstates
+  identifier: NEL000162
 sources:
 - url: http://news.legislature.ne.gov/dist02
 - url: http://news.legislature.ne.gov/dist02/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist02.jpg
-other_identifiers:
-- identifier: NEL000105
-  scheme: legacy_openstates
-- identifier: NEL000162
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Clements
-email: rclements@leg.ne.gov

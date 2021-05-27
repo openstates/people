@@ -2,17 +2,17 @@ id: ocd-person/db21273c-09b3-4a1d-b07a-f224c2f6f0c1
 name: Thayer Verschoor
 given_name: Thayer
 family_name: Verschoor
+image: http://www.azleg.gov/alisImages/MemberPhotos/49leg/Senate/VERSCHOOR.gif
 party:
 - name: Republican
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/49leg/Senate/VERSCHOOR.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '22'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000033
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=89&body=S
-other_identifiers:
-- identifier: AZL000033
-  scheme: legacy_openstates

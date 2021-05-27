@@ -1,14 +1,18 @@
 id: ocd-person/4c0ad3f7-b949-4206-a550-99633351236c
 name: Brian Maienschein
+given_name: Brian
+family_name: Maienschein
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad77-brian_maienschein_120x150.jpg
 party:
-- name: Republican
-  end_date: 2019-01-24
-- name: Democratic
-  start_date: 2019-01-25
+- end_date: 2019-01-24
+  name: Republican
+- start_date: 2019-01-25
+  name: Democratic
 roles:
-- district: '77'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '77'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0077
@@ -18,14 +22,10 @@ contact_details:
   voice: 858-675-0077
 links:
 - url: https://a77.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD77&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD77&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000385
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad77-brian_maienschein_120x150.jpg
-other_identifiers:
-- identifier: CAL000385
-  scheme: legacy_openstates
-given_name: Brian
-family_name: Maienschein
-gender: Male

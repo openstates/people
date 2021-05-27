@@ -1,21 +1,31 @@
 id: ocd-person/410836ee-4f48-4934-8f95-fca6b2d2f051
 name: Kevin Corbin
+given_name: Kevin
+family_name: Corbin
+email: Kevin.Corbin@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/S/433/High
 party:
 - name: Republican
 roles:
-- district: '120'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: 2020-12-31
   type: lower
-  end_date: 2020-12-31
-- district: '50'
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '120'
+- start_date: 2021-01-01
   type: upper
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '50'
+contact_details:
+- note: Capitol Office
+  address: 300 N. Salisbury Street, Rm. 520;Raleigh, NC 27603
+  voice: 919-733-5875
 links:
 - url: https://www.ncleg.gov/Members/Biography/S/433
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000365
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/433
-image: https://www.ncleg.gov/Members/MemberImage/S/433/High
 extras:
   counties:
   - Cherokee
@@ -26,13 +36,3 @@ extras:
   - Macon
   - Swain
   notice: null
-other_identifiers:
-- identifier: NCL000365
-  scheme: legacy_openstates
-given_name: Kevin
-family_name: Corbin
-email: Kevin.Corbin@ncleg.gov
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 520;Raleigh, NC 27603
-  voice: 919-733-5875

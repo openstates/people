@@ -1,25 +1,25 @@
 id: ocd-person/1d1ed545-3272-4e67-a646-09e08da7809c
 name: Manny Steele
+given_name: Manny
+family_name: Steele
+email: manny.steele@sdlegislature.gov
+image: https://sdlegislature.gov/inc/img/LegPlaceholder.png
 party:
 - name: Republican
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: 2009-01-01
+- start_date: 2009-01-01
   end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '12'
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1622&Session=2019
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000095
+- scheme: openstates
+  identifier: ocd-person/8d4b95f0-2a06-432f-aedd-c6d1b7064b49
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1622&Session=2019
-image: https://sdlegislature.gov/inc/img/LegPlaceholder.png
 extras:
   occupation: Retired
-other_identifiers:
-- identifier: SDL000095
-  scheme: legacy_openstates
-- identifier: ocd-person/8d4b95f0-2a06-432f-aedd-c6d1b7064b49
-  scheme: openstates
-email: manny.steele@sdlegislature.gov
-given_name: Manny
-family_name: Steele

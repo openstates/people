@@ -2,22 +2,22 @@ id: ocd-person/fba479e8-ce44-465a-b64c-c96949b07b55
 name: Jerry Bennett
 given_name: Jerry
 family_name: Bennett
+image: http://leg.mt.gov/images/legislators_64th/13618.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/13618.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '1'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13618
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000058
+- scheme: legacy_openstates
+  identifier: MTL000174
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13618
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000058
-  scheme: legacy_openstates
-- identifier: MTL000174
-  scheme: legacy_openstates

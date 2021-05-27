@@ -3,26 +3,26 @@ name: Larry E Townsend
 given_name: Larry
 family_name: Townsend
 middle_name: E
+image: http://vermont-elections.org/2009-2010BioBook/jpegs/townsend.jpg
 party:
 - name: Democratic
 roles:
-- district: Orange-Addison-1
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Orange-Washington-Addison
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Orange-Addison-1
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://vermont-elections.org/2009-2010BioBook/jpegs/townsend.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Orange-Washington-Addison
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000167
+- scheme: legacy_openstates
+  identifier: VTL000318
 sources:
 - url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
-other_identifiers:
-- identifier: VTL000167
-  scheme: legacy_openstates
-- identifier: VTL000318
-  scheme: legacy_openstates

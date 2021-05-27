@@ -1,11 +1,14 @@
 id: ocd-person/4243af78-477d-4221-ad97-b22e662e86d5
 name: "Jorge Navarro Su\xE1rez"
+given_name: Jorge
+family_name: "Navarro Su\xE1rez"
+image: http://www.tucamarapr.org/dnncamara/images/Representantes/a795cb0e-f3c1-4ec1-ad0c-62ea643b1553.jpg
 party:
 - name: Partido Nuevo Progresista
 roles:
-- district: '5'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
-  type: lower
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: "1er. PISO CAPITOLIO Carr. 169 KM.9.2Bo. R\xEDos, Sector La MudaGuaynabo,\
@@ -13,14 +16,11 @@ contact_details:
   voice: 787-724-4464
 links:
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=10
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PRL000036
+- scheme: legacy_openstates
+  identifier: PRL000133
 sources:
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=10
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/Biografia.aspx
-image: http://www.tucamarapr.org/dnncamara/images/Representantes/a795cb0e-f3c1-4ec1-ad0c-62ea643b1553.jpg
-other_identifiers:
-- identifier: PRL000036
-  scheme: legacy_openstates
-- identifier: PRL000133
-  scheme: legacy_openstates
-given_name: Jorge
-family_name: "Navarro Su\xE1rez"

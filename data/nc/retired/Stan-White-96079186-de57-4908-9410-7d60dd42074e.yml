@@ -2,19 +2,19 @@ id: ocd-person/96079186-de57-4908-9410-7d60dd42074e
 name: Stan White
 given_name: Stan
 family_name: White
+image: http://www.ncga.state.nc.us/Senate/pictures/hiRes/365.jpg
 party:
 - name: Democratic
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ncga.state.nc.us/Senate/pictures/hiRes/365.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '1'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=365
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000225
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=365
-other_identifiers:
-- identifier: NCL000225
-  scheme: legacy_openstates

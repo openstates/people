@@ -2,19 +2,19 @@ id: ocd-person/fb844b01-2c3a-4d9a-bc4c-f8a21f2e0a72
 name: Charles Younger
 given_name: Charles
 family_name: Younger
+image: http://billstatus.ls.state.ms.us/members/senate/younger.jpg
 party:
 - name: Republican
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/younger.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '17'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/younger.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000241
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/younger.xml
-other_identifiers:
-- identifier: MSL000241
-  scheme: legacy_openstates

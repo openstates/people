@@ -1,11 +1,15 @@
 id: ocd-person/2d0faef3-45a8-489c-84bd-9491c8ce0315
 name: Phil Fortunato
+given_name: Phil
+family_name: Fortunato
+email: phil.fortunato@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/fortunato.jpg
 party:
 - name: Republican
 roles:
-- district: '31'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: 105 Irv Newhouse Building;PO Box 40431;Olympia, WA 98504
@@ -13,12 +17,8 @@ contact_details:
 links:
 - url: http://PhilFortunato.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000259
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/fortunato.jpg
-other_identifiers:
-- identifier: WAL000259
-  scheme: legacy_openstates
-given_name: Phil
-family_name: Fortunato
-email: phil.fortunato@leg.wa.gov

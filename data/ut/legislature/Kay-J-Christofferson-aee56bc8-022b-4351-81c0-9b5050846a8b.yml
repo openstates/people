@@ -1,20 +1,31 @@
 id: ocd-person/aee56bc8-022b-4351-81c0-9b5050846a8b
 name: Kay J. Christofferson
+given_name: Kay
+family_name: Christofferson
+email: kchristofferson@le.utah.gov
+image: https://le.utah.gov/images/legislator/CHRISKJ.jpg
 party:
 - name: Republican
 roles:
-- district: '56'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '56'
 contact_details:
 - note: District Office
   address: 1256 E 1500 N, LEHI, UT, 84043
   voice: 801-592-5709
 links:
 - url: http://house.utah.gov/rep/CHRISKJ
+other_names:
+- name: Christofferson, K.
+- name: Christofferson, Kay J.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000135
+- scheme: legacy_openstates
+  identifier: UTL000199
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/CHRISKJ.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFICHRISKJ3.pdf
@@ -27,14 +38,3 @@ extras:
   - http://le.utah.gov/house2/CofI/kchristoff.pdf
   - http://le.utah.gov/house2/CofI/CHRISKJ.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411621
-other_identifiers:
-- identifier: UTL000135
-  scheme: legacy_openstates
-- identifier: UTL000199
-  scheme: legacy_openstates
-given_name: Kay
-family_name: Christofferson
-email: kchristofferson@le.utah.gov
-other_names:
-- name: Christofferson, K.
-- name: Christofferson, Kay J.

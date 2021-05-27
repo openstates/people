@@ -1,11 +1,16 @@
 id: ocd-person/4338df64-c20b-4bc8-a51a-eb8cb619bbe4
 name: Jerry Obermueller
+given_name: Jerry
+family_name: Obermueller
+email: Jerry.Obermueller@wyoleg.gov
+birth_date: 1947-10-17
+image: http://wyoleg.gov/LegislatorSummary/Photos/ObermuellerJH56.jpg
 party:
 - name: Republican
 roles:
-- district: '56'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '56'
 contact_details:
 - note: District Office
   address: 5031 S. David Street, Casper WY 82601
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2045
 - url: http://wyoleg.gov/Legislators/2021/R/2045
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000142
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2045
 - url: http://wyoleg.gov/Legislators/2021/R/2045
-image: http://wyoleg.gov/LegislatorSummary/Photos/ObermuellerJH56.jpg
-birth_date: '1947-10-17'
-given_name: Jerry
-family_name: Obermueller
 extras:
   county: Natrona
   number_children: '3'
@@ -28,7 +32,3 @@ extras:
   religion: Christian
   spouse_given_name: Vickie
   wy_leg_id: 2045
-other_identifiers:
-- identifier: WYL000142
-  scheme: legacy_openstates
-email: Jerry.Obermueller@wyoleg.gov

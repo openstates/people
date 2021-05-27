@@ -1,11 +1,15 @@
 id: ocd-person/35d58782-c84b-4238-8f49-db7e33ebd3c9
 name: Steve Hopkins
+given_name: Steve
+family_name: Hopkins
+email: shopkins@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/hopkins.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '7'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -14,15 +18,11 @@ contact_details:
   address: 1205 Worthington Drive;Southaven, MS 38671
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/hopkins.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000259
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/hopkins.xml
-image: http://billstatus.ls.state.ms.us/members/house/hopkins.jpg
 extras:
   org_info: Representative Hopkins is affiliated with the Conservative Coalition of
     Mississippi and Desoto County Conservative Coalition.
-other_identifiers:
-- identifier: MSL000259
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Hopkins
-email: shopkins@house.ms.gov

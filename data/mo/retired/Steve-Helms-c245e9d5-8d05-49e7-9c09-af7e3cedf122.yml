@@ -1,23 +1,23 @@
 id: ocd-person/c245e9d5-8d05-49e7-9c09-af7e3cedf122
 name: Steve Helms
+given_name: Steve
+family_name: Helms
+email: Steve.Helms@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '135'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '135'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=135
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000457
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=135
 extras:
   first_name: Steve
   last_name: Helms
-other_identifiers:
-- identifier: MOL000457
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Helms
-email: Steve.Helms@house.mo.gov

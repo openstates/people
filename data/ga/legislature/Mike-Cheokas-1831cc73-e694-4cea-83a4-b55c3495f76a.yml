@@ -1,45 +1,45 @@
 id: ocd-person/1831cc73-e694-4cea-83a4-b55c3495f76a
 name: Mike Cheokas
+given_name: Mike
+family_name: Cheokas
+email: mike.cheokas@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/cheokas-mike-81.jpg
 party:
 - name: Republican
 roles:
-- district: '134'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '138'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '134'
+- start_date: 2013-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '138'
 contact_details:
 - note: Capitol Office
   address: 401-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
   voice: 404-656-0152
 - note: District Office
   address: PO Box 824; Americus, GA 31709
-  fax: 229-924-7893
   voice: 229-924-7823
+  fax: 229-924-7893
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000083
+- scheme: legacy_openstates
+  identifier: GAL000262
+- scheme: openstates
+  identifier: ocd-person/00a9c185-5235-4c96-ba15-c5a0406b3027
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/cheokas-mike-81.jpg
-family_name: Cheokas
-given_name: Mike
 extras:
   guid: 81
   city: Americus
   georgia_id: 81
   residence: Americus
-other_identifiers:
-- identifier: GAL000083
-  scheme: legacy_openstates
-- identifier: GAL000262
-  scheme: legacy_openstates
-- identifier: ocd-person/00a9c185-5235-4c96-ba15-c5a0406b3027
-  scheme: openstates
-email: mike.cheokas@house.ga.gov

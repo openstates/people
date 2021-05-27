@@ -2,19 +2,19 @@ id: ocd-person/7cdfdc5d-e9e2-47a0-8954-01204d7cc67e
 name: Ken Schilz
 given_name: Ken
 family_name: Schilz
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist47.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist47.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '47'
 links:
 - url: http://news.legislature.ne.gov/dist47
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000047
 sources:
 - url: http://news.legislature.ne.gov/dist47
-other_identifiers:
-- identifier: NEL000047
-  scheme: legacy_openstates

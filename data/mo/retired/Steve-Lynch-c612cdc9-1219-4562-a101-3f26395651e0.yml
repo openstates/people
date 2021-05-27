@@ -1,23 +1,23 @@
 id: ocd-person/c612cdc9-1219-4562-a101-3f26395651e0
 name: Steve Lynch
+given_name: Steve
+family_name: Lynch
+email: Steve.Lynch@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '122'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '122'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=122
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000295
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=122
 extras:
   first_name: Steve
   last_name: Lynch
-other_identifiers:
-- identifier: MOL000295
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Lynch
-email: Steve.Lynch@house.mo.gov

@@ -1,11 +1,15 @@
 id: ocd-person/69fcccf7-9cfb-4c8f-978a-c85fbd55922d
 name: D. Wonda Johnson
+given_name: D. Wonda
+family_name: Johnson
+email: dwonda.johnson@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/House/HJOHD.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
+  district: '5'
 contact_details:
 - note: Capitol Office
   address: Room 413D State Capitol;Santa Fe, NM 87501
@@ -14,16 +18,12 @@ contact_details:
   address: P.O. Box 168;Rehoboth, NM 87322-0168
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HJOHD
-sources:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=HJOHD
-image: http://www.nmlegis.gov/Images/Legislators/House/HJOHD.jpg
-other_identifiers:
-- identifier: NML000375
-  scheme: legacy_openstates
-- identifier: NML000398
-  scheme: legacy_openstates
-given_name: D. Wonda
-family_name: Johnson
-email: dwonda.johnson@nmlegis.gov
 ids:
   facebook: DoreenWondaJohnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000375
+- scheme: legacy_openstates
+  identifier: NML000398
+sources:
+- url: http://www.nmlegis.gov/Members/Legislator?SponCode=HJOHD

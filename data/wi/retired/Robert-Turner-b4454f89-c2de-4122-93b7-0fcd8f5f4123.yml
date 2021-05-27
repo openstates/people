@@ -2,19 +2,19 @@ id: ocd-person/b4454f89-c2de-4122-93b7-0fcd8f5f4123
 name: Robert Turner
 given_name: Robert
 family_name: Turner
+image: http://legis.wisconsin.gov//Assembly/asm61/asm61.jpg
 party:
 - name: Democratic
 roles:
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://legis.wisconsin.gov//Assembly/asm61/asm61.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '61'
 links:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=61
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000432
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Assembly&district=61
-other_identifiers:
-- identifier: WIL000432
-  scheme: legacy_openstates

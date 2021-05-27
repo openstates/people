@@ -1,11 +1,15 @@
 id: ocd-person/3dc86015-2733-405e-ba6b-715006f4ab19
 name: Vince Fong
+given_name: Vince
+family_name: Fong
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/fong.jpg
 party:
 - name: Republican
 roles:
-- district: '34'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '34'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0034
@@ -15,14 +19,10 @@ contact_details:
   voice: 661-395-2995
 links:
 - url: https://ad34.asmrc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD34&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD34&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000503
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/fong.jpg
-other_identifiers:
-- identifier: CAL000503
-  scheme: legacy_openstates
-given_name: Vince
-family_name: Fong
-gender: Male

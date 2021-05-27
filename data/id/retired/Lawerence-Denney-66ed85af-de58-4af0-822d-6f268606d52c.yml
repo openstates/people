@@ -2,19 +2,19 @@ id: ocd-person/66ed85af-de58-4af0-822d-6f268606d52c
 name: Lawerence Denney
 given_name: Lawerence
 family_name: Denney
+image: http://legislature.idaho.gov/images/Denney22.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legislature.idaho.gov/images/Denney22.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '9'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=22
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000057
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000057
-  scheme: legacy_openstates

@@ -1,19 +1,28 @@
 id: ocd-person/de7efb99-6dba-4e44-96f5-02753676e61c
 name: Alan Gray
+given_name: Alan
+family_name: Gray
+email: Alan.Gray@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1934
 party:
 - name: Democratic
 roles:
-- district: '75'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '75'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 130-DA; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 130-DA; Jefferson
+    City MO 65101
   voice: 573-751-5538
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=75
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=075
+other_names:
+- name: Gray, Alan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000450
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=75
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Alan
   last_name: Gray
-other_identifiers:
-- identifier: MOL000450
-  scheme: legacy_openstates
-given_name: Alan
-family_name: Gray
-email: Alan.Gray@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1934
-other_names:
-- name: Gray, Alan

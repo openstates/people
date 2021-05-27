@@ -2,19 +2,19 @@ id: ocd-person/b9eca57e-f42c-4f27-b005-b7f4c99311d1
 name: Brad Salmon
 given_name: Brad
 family_name: Salmon
+image: http://www.ncga.state.nc.us/House/pictures/hiRes/693.jpg
 party:
 - name: Democratic
 roles:
-- district: '51'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.ncga.state.nc.us/House/pictures/hiRes/693.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '51'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=693
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000340
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=693
-other_identifiers:
-- identifier: NCL000340
-  scheme: legacy_openstates

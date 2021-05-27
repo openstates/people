@@ -1,24 +1,24 @@
 id: ocd-person/4f18d801-cee4-4a93-a24b-45a113dc4ca7
 name: Allen Peake
+given_name: Allen
+family_name: Peake
+image: http://www.house.ga.gov/SiteCollectionImages/PeakeAllen185.jpg
 party:
 - name: Republican
 roles:
-- district: '141'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '141'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=185&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000182
+- scheme: legacy_openstates
+  identifier: GAL000340
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=185&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/PeakeAllen185.jpg
-family_name: Peake
-given_name: Allen
 extras:
   guid: 185
-other_identifiers:
-- identifier: GAL000182
-  scheme: legacy_openstates
-- identifier: GAL000340
-  scheme: legacy_openstates

@@ -2,19 +2,19 @@ id: ocd-person/1aba2b69-1a66-4f10-83f2-c5a070b47116
 name: Ferr Smith
 given_name: Ferr
 family_name: Smith
+image: http://billstatus.ls.state.ms.us/members/house/smith_(27th).jpg
 party:
 - name: Democratic
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/smith_(27th).jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '27'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/smith_(27th).xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000076
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/smith_(27th).xml
-other_identifiers:
-- identifier: MSL000076
-  scheme: legacy_openstates

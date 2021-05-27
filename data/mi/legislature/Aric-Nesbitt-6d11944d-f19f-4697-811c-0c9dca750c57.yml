@@ -1,41 +1,41 @@
 id: ocd-person/6d11944d-f19f-4697-811c-0c9dca750c57
 name: Aric Nesbitt
+given_name: Aric
+family_name: Nesbitt
+email: SenANesbitt@senate.michigan.gov
+image: https://senate.michigan.gov/_images/26th.jpg
 party:
 - name: Republican
 roles:
-- district: '80'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   type: lower
-  start_date: 2013-01-01
-  end_date: 2016-12-31
-- district: '26'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '80'
+- start_date: 2013-01-01
+  end_date: 2016-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '66'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '26'
 contact_details:
 - note: Capitol Office
   address: 6100 Binsfeld Bldg
-  fax: 517-373-5607
   voice: 517-373-0793
+  fax: 517-373-5607
 links:
 - url: https://www.senatoraricnesbitt.com/
-- note: Contact
-  url: https://www.senatoraricnesbitt.com/contact
+- url: https://www.senatoraricnesbitt.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000118
+- scheme: legacy_openstates
+  identifier: MIL000226
+- scheme: openstates
+  identifier: ocd-person/8ceafa66-da4a-4bd6-82e1-9587a7180ce2
 sources:
 - url: https://www.senatoraricnesbitt.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000118
-  scheme: legacy_openstates
-- identifier: MIL000226
-  scheme: legacy_openstates
-- identifier: ocd-person/8ceafa66-da4a-4bd6-82e1-9587a7180ce2
-  scheme: openstates
-email: SenANesbitt@senate.michigan.gov
-family_name: Nesbitt
-image: https://senate.michigan.gov/_images/26th.jpg
-given_name: Aric

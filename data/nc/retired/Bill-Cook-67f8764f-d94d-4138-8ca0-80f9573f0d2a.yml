@@ -1,17 +1,24 @@
 id: ocd-person/67f8764f-d94d-4138-8ca0-80f9573f0d2a
 name: Bill Cook
+given_name: Bill
+family_name: Cook
+image: http://www.ncleg.net/Senate/pictures/hiRes/381.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+- end_date: '2018-12-31'
   type: upper
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '1'
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=381
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000202
+- scheme: legacy_openstates
+  identifier: NCL000251
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=Senate&nUserID=381
-image: http://www.ncleg.net/Senate/pictures/hiRes/381.jpg
 extras:
   counties:
   - Beaufort
@@ -23,10 +30,3 @@ extras:
   - Pasquotank
   - Perquimans
   notice: null
-other_identifiers:
-- identifier: NCL000202
-  scheme: legacy_openstates
-- identifier: NCL000251
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Cook

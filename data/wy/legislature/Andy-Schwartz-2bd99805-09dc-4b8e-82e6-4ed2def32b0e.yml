@@ -1,11 +1,16 @@
 id: ocd-person/2bd99805-09dc-4b8e-82e6-4ed2def32b0e
 name: Andy Schwartz
+given_name: Andy
+family_name: Schwartz
+email: Andy.Schwartz@wyoleg.gov
+birth_date: 1950-09-26
+image: http://wyoleg.gov/LegislatorSummary/Photos/schwartzaH23.jpg
 party:
 - name: Democratic
 roles:
-- district: '23'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '23'
 contact_details:
 - note: District Office
   address: P.O. Box 2654, Jackson WY 83001
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/D/2012
 - url: http://wyoleg.gov/Legislators/2021/D/2012
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000129
 sources:
 - url: http://wyoleg.gov/Legislators/2019/D/2012
 - url: http://wyoleg.gov/Legislators/2021/D/2012
-image: http://wyoleg.gov/LegislatorSummary/Photos/schwartzaH23.jpg
-birth_date: '1950-09-26'
-given_name: Andy
-family_name: Schwartz
 extras:
   county: Teton
   education:
@@ -35,7 +39,3 @@ extras:
   religion: ''
   spouse_given_name: Jean
   wy_leg_id: 2012
-other_identifiers:
-- identifier: WYL000129
-  scheme: legacy_openstates
-email: Andy.Schwartz@wyoleg.gov

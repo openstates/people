@@ -2,19 +2,19 @@ id: ocd-person/fb08eee3-10ac-4b2c-804f-a51c52e6f604
 name: Diana Maldonado
 given_name: Diana
 family_name: Maldonado
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A3720.jpg
 party:
 - name: Democratic
 roles:
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A3720.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '52'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000305
+- scheme: legacy_openstates
+  identifier: TXL000123
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A3720
-other_identifiers:
-- identifier: TXL000305
-  scheme: legacy_openstates
-- identifier: TXL000123
-  scheme: legacy_openstates

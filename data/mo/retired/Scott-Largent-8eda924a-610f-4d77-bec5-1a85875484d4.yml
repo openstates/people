@@ -2,19 +2,19 @@ id: ocd-person/8eda924a-610f-4d77-bec5-1a85875484d4
 name: Scott Largent
 given_name: Scott
 family_name: Largent
+image: http://www.house.mo.gov/billtracking/bills121/member/mem120.jpg
 party:
 - name: Republican
 roles:
-- district: '120'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/billtracking/bills121/member/mem120.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '120'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=131
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000116
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2012&district=120
-other_identifiers:
-- identifier: MOL000116
-  scheme: legacy_openstates

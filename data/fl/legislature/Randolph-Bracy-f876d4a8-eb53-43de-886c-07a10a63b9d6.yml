@@ -1,16 +1,20 @@
 id: ocd-person/f876d4a8-eb53-43de-886c-07a10a63b9d6
 name: Randolph Bracy
+given_name: Randolph
+family_name: Bracy
+email: bracy.randolph.web@flsenate.gov
+image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s11_5193.jpg
 party:
 - name: Democratic
 roles:
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: lower
-  start_date: 2013-01-01
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: '11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  type: upper
+  district: '45'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: 213 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -20,18 +24,14 @@ contact_details:
 links:
 - url: http://www.flsenate.gov/Senators/s11
 - url: http://www.flsenate.gov/Senators/2018-2020/S11
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000623
+- scheme: legacy_openstates
+  identifier: FLL000216
+- scheme: openstates
+  identifier: ocd-person/74b24fb9-0497-42f1-aa07-de7e33782679
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s11
 - url: http://www.flsenate.gov/Senators/2018-2020/S11
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s11_5193.jpg
-other_identifiers:
-- identifier: FLL000623
-  scheme: legacy_openstates
-- identifier: FLL000216
-  scheme: legacy_openstates
-- identifier: ocd-person/74b24fb9-0497-42f1-aa07-de7e33782679
-  scheme: openstates
-given_name: Randolph
-family_name: Bracy
-email: bracy.randolph.web@flsenate.gov

@@ -2,19 +2,19 @@ id: ocd-person/b3bd77c6-fd36-40d8-8ca2-bd1504afad9e
 name: Haskins Montgomery
 given_name: Haskins
 family_name: Montgomery
+image: http://billstatus.ls.state.ms.us/members/senate/montgomery.jpg
 party:
 - name: Democratic
 roles:
-- district: '34'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/montgomery.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '34'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/montgomery.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000008
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/montgomery.xml
-other_identifiers:
-- identifier: MSL000008
-  scheme: legacy_openstates

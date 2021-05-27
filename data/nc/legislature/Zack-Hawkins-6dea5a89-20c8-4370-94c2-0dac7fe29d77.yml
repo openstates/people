@@ -1,11 +1,15 @@
 id: ocd-person/6dea5a89-20c8-4370-94c2-0dac7fe29d77
 name: Zack Hawkins
+given_name: Zack
+family_name: Hawkins
+email: Zack.Hawkins@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/742/High
 party:
 - name: Democratic
 roles:
-- district: '31'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '31'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 1307;Raleigh, NC 27601-1096
@@ -20,7 +24,3 @@ extras:
   counties:
   - Durham
   notice: null
-email: Zack.Hawkins@ncleg.gov
-image: https://www.ncleg.gov/Members/MemberImage/H/742/High
-given_name: Zack
-family_name: Hawkins

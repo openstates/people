@@ -2,27 +2,27 @@ id: ocd-person/f7303b77-107a-4886-b8f6-ce5288893318
 name: John Brenden
 given_name: John
 family_name: Brenden
+image: http://leg.mt.gov/images/legislators_64th/13750.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '18'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/13750.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '17'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13750
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000007
+- scheme: legacy_openstates
+  identifier: MTL000314
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13750
 - url: http://leg.mt.gov/content/sessions/64th/2015SenateMembers.txt
-other_identifiers:
-- identifier: MTL000007
-  scheme: legacy_openstates
-- identifier: MTL000314
-  scheme: legacy_openstates

@@ -5,15 +5,15 @@ family_name: Brien
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '50'
 links:
 - url: http://webserver.rilin.state.ri.us/Brien/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000089
 sources:
 - url: http://webserver.rilin.state.ri.us/Documents/Representatives.xls
-other_identifiers:
-- identifier: RIL000089
-  scheme: legacy_openstates

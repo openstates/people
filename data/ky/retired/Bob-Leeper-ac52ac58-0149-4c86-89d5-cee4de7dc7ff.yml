@@ -2,19 +2,19 @@ id: ocd-person/ac52ac58-0149-4c86-89d5-cee4de7dc7ff
 name: Bob Leeper
 given_name: Bob
 family_name: Leeper
+image: http://www.lrc.ky.gov/pubinfo/thumbnails/Senate02.jpg
 party:
 - name: Independent
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.lrc.ky.gov/pubinfo/thumbnails/Senate02.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  district: '2'
 links:
 - url: http://www.lrc.ky.gov/legislator/S002.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KYL000017
 sources:
 - url: http://www.lrc.ky.gov/legislator/S002.htm
-other_identifiers:
-- identifier: KYL000017
-  scheme: legacy_openstates

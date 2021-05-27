@@ -1,21 +1,21 @@
 id: ocd-person/5f4a40fb-83c6-4cd5-8a4f-8f0ca6a03297
 name: Jason Isaac
+given_name: Jason
+family_name: Isaac
+image: https://house.texas.gov/photos/members/2070.jpg
 party:
 - name: Republican
 roles:
-- district: '45'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+- end_date: '2019-01-07'
   type: lower
-  end_date: '2019-01-07'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '45'
 links:
 - url: https://house.texas.gov/members/member-page/?district=45
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000386
+- scheme: legacy_openstates
+  identifier: TXL000615
 sources:
 - url: https://house.texas.gov/members/member-page/?district=45
-image: https://house.texas.gov/photos/members/2070.jpg
-other_identifiers:
-- identifier: TXL000386
-  scheme: legacy_openstates
-- identifier: TXL000615
-  scheme: legacy_openstates
-given_name: Jason
-family_name: Isaac

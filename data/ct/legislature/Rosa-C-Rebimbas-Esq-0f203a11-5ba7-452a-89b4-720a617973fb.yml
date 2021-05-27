@@ -1,11 +1,14 @@
 id: ocd-person/0f203a11-5ba7-452a-89b4-720a617973fb
 name: Rosa C. Rebimbas
+given_name: Rosa
+family_name: Rebimbas
+email: Rosa.Rebimbas@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '70'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '70'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4067;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 54 Woodlawn Avenue;Naugatuck, CT 06770
 links:
 - url: http://www.cthousegop.com/Rebimbas/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000106
-  scheme: legacy_openstates
-given_name: Rosa
-family_name: Rebimbas
-email: Rosa.Rebimbas@housegop.ct.gov
 other_names:
 - name: Rebimbas, Rosa C.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000106
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

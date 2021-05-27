@@ -2,19 +2,18 @@ id: ocd-person/2587c015-e0d6-4f38-a6c8-1030a64d4b1c
 name: Christopher Lyddy
 given_name: Christopher
 family_name: Lyddy
-middle_name: ' '
 party:
 - name: Democratic
 roles:
-- district: '106'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '106'
 links:
 - url: http://www.housedems.ct.gov/Lyddy
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000142
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000142
-  scheme: legacy_openstates

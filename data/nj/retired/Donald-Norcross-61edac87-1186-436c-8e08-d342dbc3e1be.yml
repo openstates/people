@@ -2,21 +2,21 @@ id: ocd-person/61edac87-1186-436c-8e08-d342dbc3e1be
 name: Donald Norcross
 given_name: Donald
 family_name: Norcross
+image: http://www.njleg.state.nj.us/members/memberphotos/norcross_color.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: upper
-  start_date: '2010-01-01'
+- start_date: '2010-01-01'
   end_date: '2015-12-31'
-image: http://www.njleg.state.nj.us/members/memberphotos/norcross_color.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '5'
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=324
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000013
+- scheme: legacy_openstates
+  identifier: NJL000015
 sources:
 - url: ftp://www.njleg.state.nj.us/ag/2010data/ROSTER.DBF
-other_identifiers:
-- identifier: NJL000013
-  scheme: legacy_openstates
-- identifier: NJL000015
-  scheme: legacy_openstates

@@ -1,11 +1,14 @@
 id: ocd-person/fc3ba144-870e-4603-b2a4-26d3e80b5c70
 name: Brian Lanoue
+given_name: Brian
+family_name: Lanoue
+email: Brian.Lanoue@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '45'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '45'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4200;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 860-376-9354
 links:
 - url: http://www.cthousegop.com/lanoue/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Brian
-family_name: Lanoue
-email: Brian.Lanoue@housegop.ct.gov
 other_names:
 - name: Lanoue, Brian
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

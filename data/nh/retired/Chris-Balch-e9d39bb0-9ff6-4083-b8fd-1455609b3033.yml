@@ -1,12 +1,14 @@
 id: ocd-person/e9d39bb0-9ff6-4083-b8fd-1455609b3033
 name: Chris Balch
+given_name: Chris
+family_name: Balch
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 38
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 38
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 sources:
@@ -16,5 +18,3 @@ extras:
   first_name: Chris
   last_name: Balch
   middle_name: ''
-given_name: Chris
-family_name: Balch

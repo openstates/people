@@ -1,18 +1,18 @@
 id: ocd-person/9d9b8599-0558-47cb-a12c-61c7094cf8e2
 name: Mark Tweedie
+given_name: Mark
+family_name: Tweedie
 party:
 - name: Republican
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '13'
 links:
 - url: http://www.cthousegop.com/Tweedie/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000269
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000269
-  scheme: legacy_openstates
-given_name: Mark
-family_name: Tweedie

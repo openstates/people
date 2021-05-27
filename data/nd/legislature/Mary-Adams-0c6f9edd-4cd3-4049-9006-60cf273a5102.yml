@@ -1,11 +1,15 @@
 id: ocd-person/0c6f9edd-4cd3-4049-9006-60cf273a5102
 name: Mary Adams
+given_name: Mary
+family_name: Adams
+email: mkadams@nd.gov
+image: https://www.legis.nd.gov/files/styles/medium/public/person/photo/mkadams.jpg?itok=z9k4FuEg
 party:
 - name: Democratic
 roles:
-- district: '43'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
-  type: lower
+  district: '43'
 contact_details:
 - note: District Office
   address: 1942 Prairie Rose Court;Grand Forks, ND;58201-5896
@@ -16,7 +20,3 @@ links:
 sources:
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-mary-adams
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-mary-adams
-image: https://www.legis.nd.gov/files/styles/medium/public/person/photo/mkadams.jpg?itok=z9k4FuEg
-email: mkadams@nd.gov
-given_name: Mary
-family_name: Adams

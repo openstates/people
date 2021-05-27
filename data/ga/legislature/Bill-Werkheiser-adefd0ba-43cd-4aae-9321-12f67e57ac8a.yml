@@ -1,11 +1,15 @@
 id: ocd-person/adefd0ba-43cd-4aae-9321-12f67e57ac8a
 name: Bill Werkheiser
+given_name: Bill
+family_name: Werkheiser
+email: bill.werkheiser@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/werkheiser-bill-863.jpg
 party:
 - name: Republican
 roles:
-- district: '157'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '157'
 contact_details:
 - note: Capitol Office
   address: 218-A State Capitol;Atlanta, GA 30334
@@ -16,21 +20,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=863&Session=27
 - url: https://www.legis.ga.gov/members/house/863?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000415
+- scheme: legacy_openstates
+  identifier: GAL000423
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=863&Session=27
 - url: https://www.legis.ga.gov/members/house/863?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/werkheiser-bill-863.jpg
-family_name: Werkheiser
-given_name: Bill
 extras:
   guid: 863
   city: Glennville
   georgia_id: 863
   residence: Glennville
-other_identifiers:
-- identifier: GAL000415
-  scheme: legacy_openstates
-- identifier: GAL000423
-  scheme: legacy_openstates
-email: bill.werkheiser@house.ga.gov

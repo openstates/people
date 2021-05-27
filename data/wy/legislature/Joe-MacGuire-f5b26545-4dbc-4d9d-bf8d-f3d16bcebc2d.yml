@@ -1,11 +1,16 @@
 id: ocd-person/f5b26545-4dbc-4d9d-bf8d-f3d16bcebc2d
 name: Joe MacGuire
+given_name: Joe
+family_name: MacGuire
+email: Joe.MacGuire@wyoleg.gov
+birth_date: 1962-02-20
+image: http://wyoleg.gov/LegislatorSummary/Photos/MacGuireJH35.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '35'
 contact_details:
 - note: District Office
   address: 2091 S. Walsh Drive, Casper WY 82609
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2048
 - url: http://wyoleg.gov/Legislators/2021/R/2048
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000164
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2048
 - url: http://wyoleg.gov/Legislators/2021/R/2048
-image: http://wyoleg.gov/LegislatorSummary/Photos/MacGuireJH35.jpg
-birth_date: '1962-02-20'
-given_name: Joe
-family_name: MacGuire
 extras:
   civic_organizations:
   - orgname: Casper Rotary Club
@@ -33,7 +37,3 @@ extras:
   religion: Catholic
   spouse_given_name: null
   wy_leg_id: 2048
-other_identifiers:
-- identifier: WYL000164
-  scheme: legacy_openstates
-email: Joe.MacGuire@wyoleg.gov

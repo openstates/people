@@ -1,20 +1,23 @@
 id: ocd-person/7e8b34b0-7e27-4c7d-b719-cb1225c1ff22
 name: Paul Barnard
+given_name: Paul
+family_name: Barnard
+birth_date: 1948-03-11
+image: http://wyoleg.gov/LegislatorSummary/Photos/BarnardS15.jpg
 party:
 - name: Republican
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: upper
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '15'
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/1969
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000002
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/1969
-image: http://wyoleg.gov/LegislatorSummary/Photos/BarnardS15.jpg
-birth_date: '1948-03-11'
-given_name: Paul
-family_name: Barnard
 extras:
   civic_organizations:
   - orgname: Boy Scouts of America
@@ -39,6 +42,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1969
-other_identifiers:
-- identifier: WYL000002
-  scheme: legacy_openstates

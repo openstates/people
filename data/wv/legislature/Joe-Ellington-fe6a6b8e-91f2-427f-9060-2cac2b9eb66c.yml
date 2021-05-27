@@ -1,11 +1,15 @@
 id: ocd-person/fe6a6b8e-91f2-427f-9060-2cac2b9eb66c
 name: Joe Ellington
+given_name: Joe
+family_name: Ellington
+email: joe.ellington@wvhouse.gov
+image: http://www.legis.state.wv.us/images/members/2021/house/ellington_joe.jpg
 party:
 - name: Republican
 roles:
-- district: '27'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
+  district: '27'
 contact_details:
 - note: Capitol Office
   address: Room 434M, Building 1;State Capitol Complex;Charleston, WV 25305
@@ -15,14 +19,10 @@ contact_details:
   voice: 304-487-6526
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Ellington
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000076
+- scheme: legacy_openstates
+  identifier: WVL000169
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Ellington
-image: http://www.legis.state.wv.us/images/members/2021/house/ellington_joe.jpg
-other_identifiers:
-- identifier: WVL000076
-  scheme: legacy_openstates
-- identifier: WVL000169
-  scheme: legacy_openstates
-given_name: Joe
-family_name: Ellington
-email: joe.ellington@wvhouse.gov

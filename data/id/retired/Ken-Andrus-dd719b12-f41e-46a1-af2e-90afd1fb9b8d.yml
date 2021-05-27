@@ -2,26 +2,26 @@ id: ocd-person/dd719b12-f41e-46a1-af2e-90afd1fb9b8d
 name: Ken Andrus
 given_name: Ken
 family_name: Andrus
+image: http://legislature.idaho.gov/images/Andrus2.jpg
 party:
 - name: Republican
 roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '28'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legislature.idaho.gov/images/Andrus2.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '29'
 links:
 - url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=2
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000037
+- scheme: legacy_openstates
+  identifier: IDL000142
 sources:
 - url: http://legislature.idaho.gov/house/membership.cfm
-other_identifiers:
-- identifier: IDL000037
-  scheme: legacy_openstates
-- identifier: IDL000142
-  scheme: legacy_openstates

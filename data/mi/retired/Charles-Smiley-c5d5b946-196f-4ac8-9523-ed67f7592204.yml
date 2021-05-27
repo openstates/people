@@ -2,19 +2,19 @@ id: ocd-person/c5d5b946-196f-4ac8-9523-ed67f7592204
 name: Charles Smiley
 given_name: Charles
 family_name: Smiley
+image: http://media.housedems.com/media_cache/97/d0/e0/f0/ab/e3/0c/4b/9b/8d/32/cb/13/5c/cc/c7/c4/35/86/6e/Smiley.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://media.housedems.com/media_cache/97/d0/e0/f0/ab/e3/0c/4b/9b/8d/32/cb/13/5c/cc/c7/c4/35/86/6e/Smiley.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '50'
 links:
 - url: http://housedems.com/state-rep-charles-smiley
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000088
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000088
-  scheme: legacy_openstates

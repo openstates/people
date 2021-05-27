@@ -1,11 +1,15 @@
 id: ocd-person/05f753ab-3ebd-4894-bd12-b838d561b8fa
 name: John Szoka
+given_name: John
+family_name: Szoka
+email: John.Szoka@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/662/High
 party:
 - name: Republican
 roles:
-- district: '45'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '45'
 contact_details:
 - note: Capitol Office
   address: 16 West Jones Street, Rm. 2207;Raleigh, NC 27601-1096
@@ -14,16 +18,12 @@ contact_details:
   address: 6922 Surrey Rd;Fayetteville, NC 28306
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/662
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000303
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/662
-image: https://www.ncleg.gov/Members/MemberImage/H/662/High
 extras:
   counties:
   - Cumberland
   notice: null
-other_identifiers:
-- identifier: NCL000303
-  scheme: legacy_openstates
-given_name: John
-family_name: Szoka
-email: John.Szoka@ncleg.gov

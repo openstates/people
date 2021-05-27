@@ -2,20 +2,20 @@ id: ocd-person/e6dad6ef-c696-4a52-8071-1d1609e8e04c
 name: Arthur Barclay
 given_name: Arthur
 family_name: Barclay
+image: http://www.njleg.state.nj.us/members/memberphotos/barclay_color.jpg
 party:
 - name: Democratic
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: lower
-  start_date: '2016-01-01'
+- start_date: '2016-01-01'
   end_date: '2017-12-31'
-image: http://www.njleg.state.nj.us/members/memberphotos/barclay_color.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '5'
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=377
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000196
 sources:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=377
 - url: http://www.njleg.state.nj.us/downloads.asp
-other_identifiers:
-- identifier: NJL000196
-  scheme: legacy_openstates

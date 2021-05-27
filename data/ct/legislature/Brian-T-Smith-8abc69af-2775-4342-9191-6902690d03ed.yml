@@ -1,12 +1,15 @@
 id: ocd-person/8abc69af-2775-4342-9191-6902690d03ed
 name: Brian T. Smith
+given_name: Brian
+family_name: Smith
+email: brian.smith@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- start_date: 2020-01-22
   type: lower
-  start_date: 2020-01-22
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '48'
 contact_details:
 - note: Capitol Office
   address: 300 Capitol Avenue;Room;Hartford, CT 06106
@@ -16,10 +19,7 @@ contact_details:
   voice: 860-537-1925
 links:
 - url: http://www.housedems.ct.gov/smith
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Brian
-family_name: Smith
-email: brian.smith@cga.ct.gov
 other_names:
 - name: Smith, Brian T.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

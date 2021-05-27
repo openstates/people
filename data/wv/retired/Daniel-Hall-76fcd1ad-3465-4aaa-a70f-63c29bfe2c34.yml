@@ -2,31 +2,31 @@ id: ocd-person/76fcd1ad-3465-4aaa-a70f-63c29bfe2c34
 name: Daniel Hall
 given_name: Daniel J.
 family_name: Hall
+image: http://www.legis.state.wv.us/../images/members/2015/senate/hall_daniel.jpg
 party:
-- name: Democratic
-  end_date: '2014-11-05'
+- end_date: '2014-11-05'
+  name: Democratic
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '22'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '9'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.state.wv.us/../images/members/2015/senate/hall_daniel.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '22'
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+D.+Hall
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000072
+- scheme: legacy_openstates
+  identifier: WVL000144
+- scheme: legacy_openstates
+  identifier: WVL000244
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+D.+Hall
 - url: http://www.statejournal.com/story/30878536/hall-resigning-after-all
-other_identifiers:
-- identifier: WVL000072
-  scheme: legacy_openstates
-- identifier: WVL000144
-  scheme: legacy_openstates
-- identifier: WVL000244
-  scheme: legacy_openstates

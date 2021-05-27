@@ -1,15 +1,19 @@
 id: ocd-person/30afc35e-fa35-448c-b303-e0f6cc456c77
 name: Dan Lauwers
+given_name: Dan
+family_name: Lauwers
+email: SenDLauwers@senate.michigan.gov
+image: https://senate.michigan.gov/_images/25th.jpg
 party:
 - name: Republican
 roles:
-- district: '81'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '25'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '81'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '25'
 contact_details:
 - note: Capitol Office
   address: S-2 Capitol Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-1450
 links:
 - url: https://www.senatordanlauwers.com/
-- note: Contact
-  url: https://www.senatordanlauwers.com/contact
+- url: https://www.senatordanlauwers.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000236
 sources:
 - url: https://www.senatordanlauwers.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-image: https://senate.michigan.gov/_images/25th.jpg
-other_identifiers:
-- identifier: MIL000236
-  scheme: legacy_openstates
-given_name: 'Dan '
-family_name: Lauwers
-email: SenDLauwers@senate.michigan.gov

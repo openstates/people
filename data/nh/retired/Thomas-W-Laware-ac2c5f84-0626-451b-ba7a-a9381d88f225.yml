@@ -1,14 +1,20 @@
 id: ocd-person/ac2c5f84-0626-451b-ba7a-a9381d88f225
 name: Thomas W. Laware
+given_name: Thomas W.
+family_name: Laware
+email: thomas.laware@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- district: Sullivan 8
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 8
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001108
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376965
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -16,9 +22,3 @@ extras:
   first_name: Thomas
   last_name: Laware
   middle_name: W.
-other_identifiers:
-- identifier: NHL001108
-  scheme: legacy_openstates
-given_name: Thomas W.
-family_name: Laware
-email: thomas.laware@leg.state.nh.us

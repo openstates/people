@@ -1,11 +1,15 @@
 id: ocd-person/a8732290-e58f-45b7-a0b0-c4e1e88ff013
 name: Bruce Hunter
+given_name: Bruce
+family_name: Hunter
+email: bruce.hunter@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=317
 party:
 - name: Democratic
 roles:
-- district: '34'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '34'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=317
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=317
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000083
+- scheme: legacy_openstates
+  identifier: IAL000259
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=317
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=317
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=317
-other_identifiers:
-- identifier: IAL000083
-  scheme: legacy_openstates
-- identifier: IAL000259
-  scheme: legacy_openstates
-given_name: Bruce
-family_name: Hunter
-email: bruce.hunter@legis.iowa.gov

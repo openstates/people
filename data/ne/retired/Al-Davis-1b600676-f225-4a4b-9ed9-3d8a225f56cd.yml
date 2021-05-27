@@ -2,19 +2,19 @@ id: ocd-person/1b600676-f225-4a4b-9ed9-3d8a225f56cd
 name: Al Davis
 given_name: Al
 family_name: Davis
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist43.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist43.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '43'
 links:
 - url: http://news.legislature.ne.gov/dist43
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000062
 sources:
 - url: http://news.legislature.ne.gov/dist43
-other_identifiers:
-- identifier: NEL000062
-  scheme: legacy_openstates

@@ -2,17 +2,17 @@ id: ocd-person/c484d7b4-1923-4266-b828-c7357f18ff7e
 name: Sam Aanestad
 given_name: Sam
 family_name: Aanestad
+image: http://votesmart.org/canphoto/16523.jpg
 party:
 - name: Republican
 roles:
-- district: '4'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://votesmart.org/canphoto/16523.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '4'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000004
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000004
-  scheme: legacy_openstates

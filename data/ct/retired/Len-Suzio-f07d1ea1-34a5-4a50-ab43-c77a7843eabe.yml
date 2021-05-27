@@ -2,20 +2,19 @@ id: ocd-person/f07d1ea1-34a5-4a50-ab43-c77a7843eabe
 name: Len Suzio
 given_name: Len
 family_name: Suzio
-middle_name: ' '
+image: http://ctsenaterepublicans.com/wp-content/uploads/2012/06/suzio-splash.jpg
 party:
 - name: Republican
 roles:
-- district: '13'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://ctsenaterepublicans.com/wp-content/uploads/2012/06/suzio-splash.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '13'
 links:
 - url: http://www.ctsenaterepublicans.com/home-suzio
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000013
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000013
-  scheme: legacy_openstates

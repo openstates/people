@@ -2,19 +2,19 @@ id: ocd-person/9c8d0f7b-94c5-4c08-9119-95bc19f6770f
 name: Kathy McClain
 given_name: Kathy
 family_name: McClain
+image: http://www.leg.state.nv.us/73rd/legislators/assembly/Images/McClain.jpg
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.leg.state.nv.us/73rd/legislators/assembly/Images/McClain.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '15'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000093
+- scheme: legacy_openstates
+  identifier: NVL000051
 sources:
 - url: http://www.leg.state.nv.us/Session/75th2009/legislators/Assembly/alist.cfm
-other_identifiers:
-- identifier: NVL000093
-  scheme: legacy_openstates
-- identifier: NVL000051
-  scheme: legacy_openstates

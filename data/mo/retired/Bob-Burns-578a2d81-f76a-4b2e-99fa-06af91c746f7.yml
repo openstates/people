@@ -1,23 +1,23 @@
 id: ocd-person/578a2d81-f76a-4b2e-99fa-06af91c746f7
 name: Bob Burns
+given_name: Bob
+family_name: Burns
+email: Bob.Burns@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '93'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '93'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=93
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000223
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=93
 extras:
   first_name: Bob
   last_name: Burns
-other_identifiers:
-- identifier: MOL000223
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Burns
-email: Bob.Burns@house.mo.gov

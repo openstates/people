@@ -2,19 +2,19 @@ id: ocd-person/bc70be43-d0bb-46f5-b75f-d823ce725d69
 name: Jerry Johnson
 given_name: Jerry
 family_name: Johnson
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist23.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist23.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '23'
 links:
 - url: http://news.legislature.ne.gov/dist23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000059
 sources:
 - url: http://news.legislature.ne.gov/dist23
-other_identifiers:
-- identifier: NEL000059
-  scheme: legacy_openstates

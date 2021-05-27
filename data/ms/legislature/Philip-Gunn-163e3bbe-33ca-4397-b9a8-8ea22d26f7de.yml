@@ -1,11 +1,14 @@
 id: ocd-person/163e3bbe-33ca-4397-b9a8-8ea22d26f7de
 name: Philip Gunn
+given_name: Philip
+family_name: Gunn
+image: http://billstatus.ls.state.ms.us/members/house/gunn.jpg
 party:
 - name: Republican
 roles:
-- district: '56'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '56'
 contact_details:
 - note: Capitol Office
   address: Room 306;P. O. Box 1018;Jackson, MS 39215
@@ -14,14 +17,11 @@ contact_details:
   address: P. O. Box 1018;Jackson, MS 39215
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/Gunn.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000069
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/Gunn.xml
-image: http://billstatus.ls.state.ms.us/members/house/gunn.jpg
 extras:
   org_info: Representative Gunn is a member of the Clinton Chamber of Commerce, Hinds
     County Bar Association and the Mississippi Bar Association.
-other_identifiers:
-- identifier: MSL000069
-  scheme: legacy_openstates
-given_name: Philip
-family_name: Gunn

@@ -1,14 +1,16 @@
 id: ocd-person/8f685697-5fb0-4966-8cd0-ad3059650f8d
 name: Tom Ploszaj
+given_name: Tom
+family_name: Ploszaj
 party:
 - name: Republican
 roles:
-- district: Belknap 1
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Belknap 1
 contact_details:
-- address: 137 Daniel Webster Hwy;Center Harbor, NH 03226
-  note: District Office
+- note: District Office
+  address: 137 Daniel Webster Hwy;Center Harbor, NH 03226
   voice: 603-279-9965
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -18,5 +20,3 @@ extras:
   first_name: Tom
   last_name: Ploszaj
   middle_name: ''
-given_name: Tom
-family_name: Ploszaj

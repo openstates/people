@@ -1,20 +1,23 @@
 id: ocd-person/3dbed4ea-d7a0-4328-8ea3-beb42d89cfb9
 name: Fred Emerich
+given_name: Fred
+family_name: Emerich
+birth_date: 1945-09-13
+image: http://wyoleg.gov/LegislatorSummary/Photos/EmerichS5.jpg
 party:
 - name: Republican
 roles:
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: upper
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '5'
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/1959
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000011
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/1959
-image: http://wyoleg.gov/LegislatorSummary/Photos/EmerichS5.jpg
-birth_date: '1945-09-13'
-given_name: Fred
-family_name: Emerich
 extras:
   civic_organizations:
   - orgname: Old West Museum
@@ -39,6 +42,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1959
-other_identifiers:
-- identifier: WYL000011
-  scheme: legacy_openstates

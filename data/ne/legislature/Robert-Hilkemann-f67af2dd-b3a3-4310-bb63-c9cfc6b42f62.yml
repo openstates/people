@@ -1,11 +1,15 @@
 id: ocd-person/f67af2dd-b3a3-4310-bb63-c9cfc6b42f62
 name: Robert Hilkemann
+given_name: Robert
+family_name: Hilkemann
+email: rhilkemann@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist04.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '4'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '4'
 contact_details:
 - note: Capitol Office
   address: Room 2028; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist04
 - url: http://news.legislature.ne.gov/dist04/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000082
+- scheme: legacy_openstates
+  identifier: NEL000182
 sources:
 - url: http://news.legislature.ne.gov/dist04
 - url: http://news.legislature.ne.gov/dist04/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist04.jpg
-other_identifiers:
-- identifier: NEL000082
-  scheme: legacy_openstates
-- identifier: NEL000182
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Hilkemann
-email: rhilkemann@leg.ne.gov

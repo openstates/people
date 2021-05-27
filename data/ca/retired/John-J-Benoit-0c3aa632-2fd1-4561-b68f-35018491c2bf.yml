@@ -3,17 +3,17 @@ name: John J Benoit
 given_name: John
 family_name: Benoit
 middle_name: J
+image: http://district4.co.riverside.ca.us/web/news/images/Benoit_PortraitThumb.jpg?__scale=c:transparent
 party:
 - name: Republican
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://district4.co.riverside.ca.us/web/news/images/Benoit_PortraitThumb.jpg?__scale=c:transparent
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '37'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000029
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000029
-  scheme: legacy_openstates

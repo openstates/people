@@ -1,24 +1,24 @@
 id: ocd-person/aaef5fad-d868-4fe7-9863-ac25f37c28da
 name: Pat Conway
+given_name: Pat
+family_name: Conway
 party:
 - name: Democratic
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '10'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=10
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000058
+- scheme: legacy_openstates
+  identifier: MOL000229
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=10
 extras:
   first_name: Pat
   last_name: Conway
-other_identifiers:
-- identifier: MOL000058
-  scheme: legacy_openstates
-- identifier: MOL000229
-  scheme: legacy_openstates
-given_name: Pat
-family_name: Conway

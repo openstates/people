@@ -2,26 +2,26 @@ id: ocd-person/54978298-4c9b-41fa-8261-e220a9b9b139
 name: Ron Maag
 given_name: Ron
 family_name: Maag
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/62.jpg
 party:
 - name: Republican
 roles:
-- district: '62'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '62'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/62.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '35'
 links:
 - url: http://www.ohiohouse.gov/ron-maag
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000068
+- scheme: legacy_openstates
+  identifier: OHL000231
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000068
-  scheme: legacy_openstates
-- identifier: OHL000231
-  scheme: legacy_openstates

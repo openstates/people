@@ -2,22 +2,22 @@ id: ocd-person/b4165fc2-803d-47f1-a58b-0fcb33764327
 name: Dwight Evans
 given_name: Dwight
 family_name: Evans
+image: http://www.legis.state.pa.us/images/members/200/269.jpg
 party:
 - name: Democratic
 roles:
-- district: '203'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2016-12-31'
-image: http://www.legis.state.pa.us/images/members/200/269.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '203'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=269
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000099
+- scheme: legacy_openstates
+  identifier: PAL000350
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=269
-other_identifiers:
-- identifier: PAL000099
-  scheme: legacy_openstates
-- identifier: PAL000350
-  scheme: legacy_openstates

@@ -1,22 +1,22 @@
 id: ocd-person/f7e0162b-7430-4925-94ef-621283f24d37
 name: Lincoln D. Willis
-given_name: 'Lincoln '
+given_name: Lincoln
 family_name: Willis
 middle_name: D.
+image: http://www.delawarestatehouse.com/pics/Lincoln_Mugshot.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.delawarestatehouse.com/pics/Lincoln_Mugshot.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '29'
 links:
 - url: http://legis.delaware.gov/legislature.nsf/52087754ec8b9261852569c10055df42/772342eb8fa468fe852569d800535e09?OpenDocument&TableRow=1.5.5
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: DEL000061
 sources:
 - url: http://legis.delaware.gov/legislature.nsf/52087754ec8b9261852569c10055df42/772342eb8fa468fe852569d800535e09?OpenDocument
 - url: http://legis.delaware.gov/legislature.nsf/Reps?openview&Count=75&nav=house&count=75
-other_identifiers:
-- identifier: DEL000061
-  scheme: legacy_openstates

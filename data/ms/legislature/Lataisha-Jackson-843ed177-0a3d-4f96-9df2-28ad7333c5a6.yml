@@ -1,11 +1,15 @@
 id: ocd-person/843ed177-0a3d-4f96-9df2-28ad7333c5a6
 name: Lataisha Jackson
+given_name: Lataisha
+family_name: Jackson
+email: ljackson@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/jackson.jpg
 party:
 - name: Democratic
 roles:
-- district: '11'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: Room 201M-7;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 662-526-1122
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/jackson.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000234
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/jackson.xml
-image: http://billstatus.ls.state.ms.us/members/house/jackson.jpg
 extras:
   org_info: Representative Jackson is a member of Alpha Kappa Alpha Sorority, Inc.
     and an active member of Askew Grove Baptist Church
-other_identifiers:
-- identifier: MSL000234
-  scheme: legacy_openstates
-given_name: Lataisha
-family_name: Jackson
-email: ljackson@house.ms.gov

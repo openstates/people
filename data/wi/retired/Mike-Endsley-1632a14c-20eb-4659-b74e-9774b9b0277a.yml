@@ -2,19 +2,19 @@ id: ocd-person/1632a14c-20eb-4659-b74e-9774b9b0277a
 name: Mike Endsley
 given_name: Mike
 family_name: Endsley
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm26.jpeg
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm26.jpeg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '26'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=26&h=A
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000458
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=26&h=A
-other_identifiers:
-- identifier: WIL000458
-  scheme: legacy_openstates

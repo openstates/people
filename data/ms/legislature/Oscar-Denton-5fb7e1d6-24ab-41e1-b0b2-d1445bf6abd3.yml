@@ -1,11 +1,15 @@
 id: ocd-person/5fb7e1d6-24ab-41e1-b0b2-d1445bf6abd3
 name: Oscar Denton
+given_name: Oscar
+family_name: Denton
+email: odenton@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/denton.jpg
 party:
 - name: Democratic
 roles:
-- district: '55'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '55'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 601-638-4007
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/denton.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000239
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/denton.xml
-image: http://billstatus.ls.state.ms.us/members/house/denton.jpg
 extras:
   org_info: Representative Denton is a member of AFL-CIO, CWA, Local 3518, and the
     NAACP.
-other_identifiers:
-- identifier: MSL000239
-  scheme: legacy_openstates
-given_name: Oscar
-family_name: Denton
-email: odenton@house.ms.gov

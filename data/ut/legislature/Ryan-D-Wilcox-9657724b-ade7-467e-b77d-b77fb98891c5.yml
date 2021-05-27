@@ -3,34 +3,34 @@ name: Ryan D. Wilcox
 given_name: Ryan
 family_name: Wilcox
 middle_name: D
+email: ryanwilcox@le.utah.gov
+image: https://le.utah.gov/images/legislator/WILCORD.jpg
 party:
 - name: Republican
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   type: lower
-  start_date: 2021-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '7'
+- start_date: 2021-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '7'
 contact_details:
 - note: District Office
   address: P.O. Box 14007, Ogden, UT, 84412
 links:
 - url: http://house.utah.gov/rep/WILCORD
-sources:
-- url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/WILCORD.jpg
-extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-other_identifiers:
-- identifier: UTL000099
-  scheme: legacy_openstates
 other_names:
 - name: Ryan D Wilcox
 - name: Wilcox, R.
 - name: Wilcox, Ryan D.
-email: ryanwilcox@le.utah.gov
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000099
+sources:
+- url: http://le.utah.gov/data/legislators.json
+extras:
+  links:
+  - http://www.disclosures.utah.gov/Search/PublicSearch

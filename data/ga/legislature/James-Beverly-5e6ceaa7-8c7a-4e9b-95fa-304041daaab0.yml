@@ -1,11 +1,15 @@
 id: ocd-person/5e6ceaa7-8c7a-4e9b-95fa-304041daaab0
 name: James Beverly
+given_name: James
+family_name: Beverly
+email: james.beverly@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/beverly-james-793.jpg
 party:
 - name: Democratic
 roles:
-- district: '143'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '143'
 contact_details:
 - note: Capitol Office
   address: 509-H Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,21 +20,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=793&Session=27
 - url: https://www.legis.ga.gov/members/house/793?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000070
+- scheme: legacy_openstates
+  identifier: GAL000246
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=793&Session=27
 - url: https://www.legis.ga.gov/members/house/793?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/beverly-james-793.jpg
-family_name: Beverly
-given_name: James
 extras:
   guid: 793
   city: Macon
   georgia_id: 793
   residence: Macon
-other_identifiers:
-- identifier: GAL000070
-  scheme: legacy_openstates
-- identifier: GAL000246
-  scheme: legacy_openstates
-email: james.beverly@house.ga.gov

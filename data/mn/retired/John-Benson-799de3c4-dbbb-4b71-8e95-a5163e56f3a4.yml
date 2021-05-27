@@ -2,29 +2,29 @@ id: ocd-person/799de3c4-dbbb-4b71-8e95-a5163e56f3a4
 name: John Benson
 given_name: John
 family_name: Benson
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/44B.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 43B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: 44B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 43B
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/44B.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 44B
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15270
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000236
+- scheme: legacy_openstates
+  identifier: MNL000153
+- scheme: legacy_openstates
+  identifier: MNL000380
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15270
-other_identifiers:
-- identifier: MNL000236
-  scheme: legacy_openstates
-- identifier: MNL000153
-  scheme: legacy_openstates
-- identifier: MNL000380
-  scheme: legacy_openstates

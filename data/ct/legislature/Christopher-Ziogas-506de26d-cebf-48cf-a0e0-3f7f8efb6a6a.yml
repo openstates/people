@@ -1,11 +1,14 @@
 id: ocd-person/506de26d-cebf-48cf-a0e0-3f7f8efb6a6a
 name: Christopher Ziogas
+given_name: Christopher
+family_name: Ziogas
+email: Chris.Ziogas@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '79'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '79'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4100;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: P.O. Box 1399;Bristol, CT 06010
 links:
 - url: http://www.housedems.ct.gov/Ziogas
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000314
-  scheme: legacy_openstates
-given_name: Christopher
-family_name: Ziogas
-email: Chris.Ziogas@cga.ct.gov
 other_names:
 - name: Ziogas, Christopher
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000314
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

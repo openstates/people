@@ -1,18 +1,18 @@
 id: ocd-person/7a5474af-535a-42e5-8653-0edf8311cdfb
 name: Fred Camillo
+given_name: Fred
+family_name: Camillo
 party:
 - name: Republican
 roles:
-- district: '151'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2019-12-02'
   type: lower
-  end_date: '2019-12-02'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '151'
 links:
 - url: http://www.cthousegop.com/Camillo/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000187
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000187
-  scheme: legacy_openstates
-given_name: Fred
-family_name: Camillo

@@ -2,27 +2,27 @@ id: ocd-person/9f55f57b-730b-4bb5-960d-100b5d17a814
 name: Kathleen Williams
 given_name: Kathleen
 family_name: Williams
+image: http://leg.mt.gov/images/legislators_64th/12612.jpg
 party:
 - name: Democratic
 roles:
-- district: '65'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '61'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '65'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/12612.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '61'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12612
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000148
+- scheme: legacy_openstates
+  identifier: MTL000270
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12612
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000148
-  scheme: legacy_openstates
-- identifier: MTL000270
-  scheme: legacy_openstates

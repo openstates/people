@@ -1,19 +1,28 @@
 id: ocd-person/5d6d2e6d-5e93-4323-adc1-32635f0077e3
 name: Richard Brown
+given_name: Richard
+family_name: Brown
+email: Richard.Brown@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1917
 party:
 - name: Democratic
 roles:
-- district: '27'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '27'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 134; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 134; Jefferson
+    City MO 65101
   voice: 573-751-7639
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=27
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=027
+other_names:
+- name: Brown, Richard
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000461
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=27
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Richard
   last_name: Brown
-other_identifiers:
-- identifier: MOL000461
-  scheme: legacy_openstates
-given_name: Richard
-family_name: Brown
-email: Richard.Brown@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=1917
-other_names:
-- name: Brown, Richard

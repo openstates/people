@@ -1,11 +1,15 @@
 id: ocd-person/1bb8d14b-9d5d-4edd-8c93-37e95991a8e4
 name: Debra Bazemore
+given_name: Debra
+family_name: Bazemore
+email: debra.bazemore@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/bazemore-debra-4890.jpg
 party:
 - name: Democratic
 roles:
-- district: '63'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '63'
 contact_details:
 - note: Capitol Office
   address: 507-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4890&Session=27
 - url: https://www.legis.ga.gov/members/house/4890?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000447
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4890&Session=27
 - url: https://www.legis.ga.gov/members/house/4890?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/bazemore-debra-4890.jpg
-family_name: Bazemore
-given_name: Debra
 extras:
   guid: 4890
   city: South Fulton
   georgia_id: 4890
   residence: South Fulton
-other_identifiers:
-- identifier: GAL000447
-  scheme: legacy_openstates
-email: debra.bazemore@house.ga.gov

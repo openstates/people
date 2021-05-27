@@ -2,19 +2,19 @@ id: ocd-person/d06e46e4-e98b-4b73-86da-5dce84834bf2
 name: Bob DeWeese
 given_name: Bob
 family_name: DeWeese
+image: http://www.lrc.ky.gov/pubinfo/thumbnails/House48.jpg
 party:
 - name: Republican
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.lrc.ky.gov/pubinfo/thumbnails/House48.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  district: '48'
 links:
 - url: http://www.lrc.ky.gov/legislator/H048.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: KYL000062
 sources:
 - url: http://www.lrc.ky.gov/legislator/H048.htm
-other_identifiers:
-- identifier: KYL000062
-  scheme: legacy_openstates

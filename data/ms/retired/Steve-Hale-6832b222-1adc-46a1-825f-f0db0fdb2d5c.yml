@@ -2,19 +2,19 @@ id: ocd-person/6832b222-1adc-46a1-825f-f0db0fdb2d5c
 name: Steve Hale
 given_name: Steve
 family_name: Hale
+image: http://billstatus.ls.state.ms.us/members/senate/hale.jpg
 party:
 - name: Democratic
 roles:
-- district: '10'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/hale.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '10'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/hale.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000184
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/hale.xml
-other_identifiers:
-- identifier: MSL000184
-  scheme: legacy_openstates

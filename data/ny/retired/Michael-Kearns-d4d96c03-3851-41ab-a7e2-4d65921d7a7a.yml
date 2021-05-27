@@ -2,27 +2,27 @@ id: ocd-person/d4d96c03-3851-41ab-a7e2-4d65921d7a7a
 name: Michael Kearns
 given_name: Michael
 family_name: Kearns
+image: http://assembly.state.ny.us/mem/pic/142.jpg
 party:
 - name: Democratic
 roles:
-- district: '142'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2018-12-31'
-- district: '145'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '142'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://assembly.state.ny.us/mem/pic/142.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '145'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000222
+- scheme: legacy_openstates
+  identifier: NYL000273
 sources:
 - url: http://assembly.state.ny.us/mem/Michael-P-Kearns
 - url: http://buffalonews.com/2017/11/30/kearns-to-resign-assembly-post-assume-clerk-duties-on-tuesday/
-other_identifiers:
-- identifier: NYL000222
-  scheme: legacy_openstates
-- identifier: NYL000273
-  scheme: legacy_openstates

@@ -1,11 +1,15 @@
 id: ocd-person/6b642cf3-d874-44e8-acdd-a4731817e514
 name: Jack O'Malley
+given_name: Jack
+family_name: O'Malley
+email: jackomalley@house.mi.gov
+image: http://gophouse.org/wp-content/uploads/2019/01/HS_OMalley_0119-214x300.jpg
 party:
 - name: Republican
 roles:
-- district: '101'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
+  district: '101'
 contact_details:
 - note: Capitol Office
   address: South House Office Building 13-1385
@@ -15,7 +19,3 @@ links:
 sources:
 - url: http://gophouse.org/representatives/northernmi/omalley/
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
-image: http://gophouse.org/wp-content/uploads/2019/01/HS_OMalley_0119-214x300.jpg
-email: jackomalley@house.mi.gov
-given_name: Jack
-family_name: O'Malley

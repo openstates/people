@@ -1,25 +1,25 @@
 id: ocd-person/1f8a26c0-13ba-4e3e-b7d6-c74af71c59aa
 name: Alan Green
+given_name: Alan
+family_name: Green
+email: Alan.Green@house.mo.gov
 party:
 - name: Democratic
 roles:
-- district: '67'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '67'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=67
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000377
+- scheme: legacy_openstates
+  identifier: MOL000380
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=67
 extras:
   first_name: Alan
   last_name: Green
-other_identifiers:
-- identifier: MOL000377
-  scheme: legacy_openstates
-- identifier: MOL000380
-  scheme: legacy_openstates
-given_name: Alan
-family_name: Green
-email: Alan.Green@house.mo.gov

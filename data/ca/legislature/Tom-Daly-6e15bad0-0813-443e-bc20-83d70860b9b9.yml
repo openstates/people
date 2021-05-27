@@ -1,11 +1,15 @@
 id: ocd-person/6e15bad0-0813-443e-bc20-83d70860b9b9
 name: Tom Daly
+given_name: Tom
+family_name: Daly
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD69-Daly.jpg
 party:
 - name: Democratic
 roles:
-- district: '69'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '69'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0069
@@ -15,14 +19,10 @@ contact_details:
   voice: 714-939-8469
 links:
 - url: https://a69.asmdc.org/
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD69&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD69&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000358
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD69-Daly.jpg
-other_identifiers:
-- identifier: CAL000358
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Daly
-gender: Male

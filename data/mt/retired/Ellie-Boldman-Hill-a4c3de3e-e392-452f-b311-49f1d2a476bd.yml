@@ -2,29 +2,29 @@ id: ocd-person/a4c3de3e-e392-452f-b311-49f1d2a476bd
 name: Ellie Boldman Hill
 given_name: Ellie Boldman
 family_name: Hill
+image: http://leg.mt.gov/images/legislators_64th/12457.jpg
 party:
 - name: Democratic
 roles:
-- district: '94'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '90'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '94'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/12457.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '90'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12457
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000085
+- scheme: legacy_openstates
+  identifier: MTL000191
+- scheme: legacy_openstates
+  identifier: MTL000240
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12457
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000085
-  scheme: legacy_openstates
-- identifier: MTL000191
-  scheme: legacy_openstates
-- identifier: MTL000240
-  scheme: legacy_openstates

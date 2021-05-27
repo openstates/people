@@ -2,27 +2,27 @@ id: ocd-person/8ff4ba5c-4f2d-46a8-b432-6c44adc6564b
 name: Tim Faust
 given_name: Tim
 family_name: Faust
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/11B.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: 8B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: 11B
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 8B
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls88/11B.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 11B
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15252
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000083
+- scheme: legacy_openstates
+  identifier: MNL000401
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=15252
-other_identifiers:
-- identifier: MNL000083
-  scheme: legacy_openstates
-- identifier: MNL000401
-  scheme: legacy_openstates

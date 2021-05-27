@@ -2,19 +2,19 @@ id: ocd-person/d50a43ce-e3f3-4760-a44f-05f0fe14c455
 name: John McEneny
 given_name: John
 family_name: McEneny
+image: http://assembly.state.ny.us/mem/pic/104.jpg
 party:
 - name: Democratic
 roles:
-- district: '104'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://assembly.state.ny.us/mem/pic/104.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '104'
 links:
 - url: http://assembly.state.ny.us/mem/John-J-McEneny
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000152
 sources:
 - url: http://assembly.state.ny.us/mem/?sh=email
-other_identifiers:
-- identifier: NYL000152
-  scheme: legacy_openstates

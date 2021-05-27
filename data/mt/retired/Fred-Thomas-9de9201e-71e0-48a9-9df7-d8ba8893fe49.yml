@@ -1,26 +1,26 @@
 id: ocd-person/9de9201e-71e0-48a9-9df7-d8ba8893fe49
 name: Fred Thomas
-party:
-- name: Republican
-roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  end_date: '2021-01-03'
-links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4740
-- url: https://leg.mt.gov/legislator-information/roster/individual/5026
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-- url: https://leg.mt.gov/legislator-information/roster/individual/5026
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-other_identifiers:
-- identifier: MTL000171
-  scheme: legacy_openstates
-- identifier: MTL000345
-  scheme: legacy_openstates
 given_name: Fred
 family_name: Thomas
 email: Fred.Thomas@mtleg.gov
+party:
+- name: Republican
+roles:
+- end_date: '2021-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '44'
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4740
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5026
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000171
+- scheme: legacy_openstates
+  identifier: MTL000345
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5026
+- url: https://leg.mt.gov/legislator-information/?session_select=113

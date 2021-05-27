@@ -2,20 +2,20 @@ id: ocd-person/bd3b3081-6431-48ef-99a9-c32f035ec8a9
 name: Debra Lamm
 given_name: Debra
 family_name: Lamm
+image: http://leg.mt.gov/images/legislators_64th/16508.jpg
 party:
 - name: Republican
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/16508.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '60'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16508
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000273
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16508
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000273
-  scheme: legacy_openstates

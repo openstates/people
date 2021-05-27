@@ -2,31 +2,31 @@ id: ocd-person/7a995618-b267-4548-b07d-4c5e77f8a7d4
 name: Kesha K Ram
 given_name: Kesha K.
 family_name: Ram
+image: http://vermont-elections.org/2009-2010BioBook/jpegs/ram.jpg
 party:
 - name: Democratic
 roles:
-- district: Chittenden-3-4
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Chittenden-6-4
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-3-4
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://vermont-elections.org/2009-2010BioBook/jpegs/ram.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-6-4
 links:
 - url: http://www.leg.state.vt.us/legdir/LegDirMain.cfm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000149
+- scheme: legacy_openstates
+  identifier: VTL000303
+- scheme: legacy_openstates
+  identifier: VTL000361
+- scheme: legacy_openstates
+  identifier: VTL000703
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2016
 - url: http://legislature.vermont.gov/people/single/2016/14694
-other_identifiers:
-- identifier: VTL000149
-  scheme: legacy_openstates
-- identifier: VTL000303
-  scheme: legacy_openstates
-- identifier: VTL000361
-  scheme: legacy_openstates
-- identifier: VTL000703
-  scheme: legacy_openstates

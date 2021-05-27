@@ -2,21 +2,21 @@ id: ocd-person/88c0fe11-efe1-41d9-b750-a2db3755e66d
 name: John Shaban
 given_name: John T.
 family_name: Shaban
+image: http://cthousegop.com/wp-content/uploads/2011/10/Shaban-121510-2_sm2.jpg
 party:
 - name: Republican
 roles:
-- district: '135'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://cthousegop.com/wp-content/uploads/2011/10/Shaban-121510-2_sm2.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '135'
 links:
 - url: http://repshaban.com
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000171
+- scheme: legacy_openstates
+  identifier: CTL000301
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000171
-  scheme: legacy_openstates
-- identifier: CTL000301
-  scheme: legacy_openstates

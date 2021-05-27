@@ -2,19 +2,19 @@ id: ocd-person/cf794c79-1296-47f4-9a3f-7e6a12aee6a1
 name: Van Wanggaard
 given_name: Van
 family_name: Wanggaard
+image: http://legis.wisconsin.gov//Senate/sen21/sen21.jpg
 party:
 - name: Republican
 roles:
-- district: '21'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legis.wisconsin.gov//Senate/sen21/sen21.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '21'
 links:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=21
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000452
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=21
-other_identifiers:
-- identifier: WIL000452
-  scheme: legacy_openstates

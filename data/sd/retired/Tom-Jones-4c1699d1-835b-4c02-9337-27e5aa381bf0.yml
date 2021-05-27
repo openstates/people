@@ -2,27 +2,27 @@ id: ocd-person/4c1699d1-835b-4c02-9337-27e5aa381bf0
 name: Tom Jones
 given_name: Tom
 family_name: Jones
+image: http://legis.sd.gov/img/Legislators/jones.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '17'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2011-01-01'
+  district: '17'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legis.sd.gov/img/Legislators/jones.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '17'
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=483
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000132
+- scheme: legacy_openstates
+  identifier: SDL000154
 sources:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=483
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=483
-other_identifiers:
-- identifier: SDL000132
-  scheme: legacy_openstates
-- identifier: SDL000154
-  scheme: legacy_openstates

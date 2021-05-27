@@ -1,9 +1,8 @@
 # Open States People
 
 ![Lint YAML](https://github.com/openstates/people/workflows/Lint%20YAML/badge.svg)
-![Test Scripts](https://github.com/openstates/people/workflows/Test%20Scripts/badge.svg)
 
-This repository contains YAML files with all the information on given individuals, as well as scripts to work with & maintain the data.
+This repository contains YAML files with official information on state legislators, governors, and some municipal leaders.
 
 ## Links
 
@@ -22,7 +21,7 @@ All data within the data directory is organized by state.  Within a given state 
   * executive - people that are currently serving in the state executive (e.g. governors)
   * municipalities - people currently serving in local government (e.g. mayors)
   * retired - people not currently serving any tracked roles
-  * committees - committee data (future TBD)
+  * committees - committee data
 
 ## About this Repo
 

@@ -1,11 +1,15 @@
 id: ocd-person/5f407e79-1d08-4d58-9003-26ff270e21e5
 name: James McCullough
+given_name: James
+family_name: McCullough
+email: jim_mccullough@myfairpoint.net
+image: https://legislature.vermont.gov/Documents/Legislators/McCullough.James.jpg
 party:
 - name: Democratic
 roles:
-- district: Chittenden-2
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
+  district: Chittenden-2
 contact_details:
 - note: Capitol Office
   address: Vermont State House;115 State Street;Montpelier, VT 05633
@@ -15,23 +19,19 @@ contact_details:
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14547
 - url: http://legislature.vermont.gov/people/single/2022/14547
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000119
+- scheme: legacy_openstates
+  identifier: VTL000566
+- scheme: legacy_openstates
+  identifier: VTL000421
+- scheme: legacy_openstates
+  identifier: VTL000738
+- scheme: legacy_openstates
+  identifier: VTL000771
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14547
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14547
-image: https://legislature.vermont.gov/Documents/Legislators/McCullough.James.jpg
-other_identifiers:
-- identifier: VTL000119
-  scheme: legacy_openstates
-- identifier: VTL000566
-  scheme: legacy_openstates
-- identifier: VTL000421
-  scheme: legacy_openstates
-- identifier: VTL000738
-  scheme: legacy_openstates
-- identifier: VTL000771
-  scheme: legacy_openstates
-given_name: James
-family_name: McCullough
-email: jim_mccullough@myfairpoint.net

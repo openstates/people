@@ -1,11 +1,15 @@
 id: ocd-person/a1394aeb-094a-4fc0-b4d5-005104ceddc0
 name: Mike McGuire
+given_name: Mike
+family_name: McGuire
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/mcguire-mike.jpg
 party:
 - name: Democratic
 roles:
-- district: '2'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '2'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 5061, Sacramento, CA 95814-4900
@@ -15,14 +19,10 @@ contact_details:
   voice: 707-468-8914
 links:
 - url: https://senate.ca.gov/sd02
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD02&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD02&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000447
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/mcguire-mike.jpg
-other_identifiers:
-- identifier: CAL000447
-  scheme: legacy_openstates
-given_name: Mike
-family_name: McGuire
-gender: Male

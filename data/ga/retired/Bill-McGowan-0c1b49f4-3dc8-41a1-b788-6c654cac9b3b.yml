@@ -1,22 +1,22 @@
 id: ocd-person/0c1b49f4-3dc8-41a1-b788-6c654cac9b3b
 name: Bill McGowan
+given_name: Bill
+family_name: McGowan
+image: http://www.house.ga.gov/SiteCollectionImages/McGowanBill4904.jpg
 party:
 - name: Democratic
 roles:
-- district: '138'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '138'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4904&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000457
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4904&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/McGowanBill4904.jpg
-family_name: McGowan
-given_name: Bill
 extras:
   guid: 4904
-other_identifiers:
-- identifier: GAL000457
-  scheme: legacy_openstates

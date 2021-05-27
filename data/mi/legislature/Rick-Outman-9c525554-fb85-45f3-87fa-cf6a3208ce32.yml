@@ -1,34 +1,34 @@
 id: ocd-person/9c525554-fb85-45f3-87fa-cf6a3208ce32
 name: Rick Outman
+given_name: Rick
+family_name: Outman
+email: SenROutman@senate.michigan.gov
+image: https://senate.michigan.gov/_images/33rd.jpg
 party:
 - name: Republican
 roles:
-- district: '70'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2016-12-31
-- district: '33'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '70'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '33'
 contact_details:
 - note: Capitol Office
   address: 4400 Binsfeld Bldg
-  fax: 517-373-8661
   voice: 517-373-3760
+  fax: 517-373-8661
 links:
 - url: https://www.senatorrickoutman.com/
-- note: Contact
-  url: https://www.senatorrickoutman.com/contact
+- url: https://www.senatorrickoutman.com/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000108
+- scheme: openstates
+  identifier: ocd-person/cfb05b53-0fd0-46fb-a6d0-6ffc1b26e84d
 sources:
 - url: https://www.senatorrickoutman.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000108
-  scheme: legacy_openstates
-- identifier: ocd-person/cfb05b53-0fd0-46fb-a6d0-6ffc1b26e84d
-  scheme: openstates
-email: SenROutman@senate.michigan.gov
-family_name: Outman
-image: https://senate.michigan.gov/_images/33rd.jpg
-given_name: Rick

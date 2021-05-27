@@ -5,13 +5,13 @@ family_name: Garcia
 party:
 - name: Democratic
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '27'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000013
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=89&body=S
-other_identifiers:
-- identifier: AZL000013
-  scheme: legacy_openstates

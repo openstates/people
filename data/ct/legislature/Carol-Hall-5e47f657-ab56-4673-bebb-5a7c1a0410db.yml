@@ -1,24 +1,24 @@
 id: ocd-person/5e47f657-ab56-4673-bebb-5a7c1a0410db
 name: Carol Hall
+given_name: Carol
+family_name: Hall
+email: Carol.Hall@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '59'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '59'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 1803;Hartford, CT 06106
   voice: 860-240-8700
 links:
 - url: http://www.cthousegop.com/Hall/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000318
-  scheme: legacy_openstates
-given_name: Carol
-family_name: Hall
-email: Carol.Hall@housegop.ct.gov
 other_names:
 - name: Hall, Carol
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000318
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

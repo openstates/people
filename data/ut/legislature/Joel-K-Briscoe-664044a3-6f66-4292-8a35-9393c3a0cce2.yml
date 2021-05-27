@@ -1,20 +1,31 @@
 id: ocd-person/664044a3-6f66-4292-8a35-9393c3a0cce2
 name: Joel K. Briscoe
+given_name: Joel
+family_name: Briscoe
+email: jbriscoe@le.utah.gov
+image: https://le.utah.gov/images/legislator/BRISCJK.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '25'
 contact_details:
 - note: District Office
   address: 350 North State, Suite 350, Salt Lake City, Utah, 84114
   voice: 801-946-9791
 links:
 - url: http://house.utah.gov/rep/BRISCJK
+other_names:
+- name: Briscoe, J.
+- name: Briscoe, Joel K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000035
+- scheme: legacy_openstates
+  identifier: UTL000246
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/BRISCJK.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIBRISCJK2.pdf
@@ -25,14 +36,3 @@ extras:
   - http://le.utah.gov/house2/CofI/jbriscoe.pdf
   - http://le.utah.gov/house2/CofI/BRISCJK.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409583
-other_identifiers:
-- identifier: UTL000035
-  scheme: legacy_openstates
-- identifier: UTL000246
-  scheme: legacy_openstates
-given_name: Joel
-family_name: Briscoe
-email: jbriscoe@le.utah.gov
-other_names:
-- name: Briscoe, J.
-- name: Briscoe, Joel K.

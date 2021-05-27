@@ -1,11 +1,15 @@
 id: ocd-person/f2ef9d8b-fed9-43d3-a1e3-ac5a20d59265
 name: Gerald Ortiz y Pino
+given_name: Gerald
+family_name: Ortiz y Pino
+email: jortizyp@msn.com
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SORTI.jpg
 party:
 - name: Democratic
 roles:
-- district: '12'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
+  district: '12'
 contact_details:
 - note: Capitol Office
   address: Room 300A State Capitol;Santa Fe, NM 87501
@@ -15,23 +19,19 @@ contact_details:
   voice: 505-243-1509
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SORTI
-- note: linkedin
-  url: https://www.linkedin.com/in/jerry-pino-2126b014/
-sources:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SORTI
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SORTI.jpg
-other_identifiers:
-- identifier: NML000012
-  scheme: legacy_openstates
-- identifier: NML000181
-  scheme: legacy_openstates
-- identifier: NML000283
-  scheme: legacy_openstates
-given_name: Gerald
-family_name: Ortiz y Pino
-email: jortizyp@msn.com
-ids:
-  facebook: jerry.o.pino
-  twitter: jerryfornm
+- url: https://www.linkedin.com/in/jerry-pino-2126b014/
+  note: linkedin
 other_names:
 - name: Ortiz y Pino, Gerald
+ids:
+  twitter: jerryfornm
+  facebook: jerry.o.pino
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000012
+- scheme: legacy_openstates
+  identifier: NML000181
+- scheme: legacy_openstates
+  identifier: NML000283
+sources:
+- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SORTI

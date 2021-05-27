@@ -2,21 +2,21 @@ id: ocd-person/9d389cd6-3242-46d4-8a9b-e5716e434bea
 name: Ben Unger
 given_name: Ben
 family_name: Unger
+image: http://www.oregonlegislature.gov/house/MemberPhotos/unger.jpg
 party:
 - name: Democratic
 roles:
-- district: '29'
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://www.oregonlegislature.gov/house/MemberPhotos/unger.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '29'
 links:
 - url: http://www.oregonlegislature.gov/unger
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000110
+- scheme: legacy_openstates
+  identifier: ORL000198
 sources:
 - url: http://www.oregonlegislature.gov/house/Pages/RepresentativesAll.aspx
-other_identifiers:
-- identifier: ORL000110
-  scheme: legacy_openstates
-- identifier: ORL000198
-  scheme: legacy_openstates

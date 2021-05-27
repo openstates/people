@@ -2,26 +2,26 @@ id: ocd-person/c321c67a-06ed-4bb1-adf8-8d83fb196300
 name: David Wyatt
 given_name: David
 family_name: Wyatt
+image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Wyatt_d.jpg
 party:
 - name: Democratic
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '19'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.arkleg.state.ar.us/assembly/2013/Member%20Pictures/Wyatt_d.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '12'
 links:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=D.+Wyatt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ARL000134
+- scheme: legacy_openstates
+  identifier: ARL000256
 sources:
 - url: http://www.arkleg.state.ar.us/assembly/2013/2013R/Pages/MemberProfile.aspx?member=D.+Wyatt
-other_identifiers:
-- identifier: ARL000134
-  scheme: legacy_openstates
-- identifier: ARL000256
-  scheme: legacy_openstates

@@ -2,26 +2,26 @@ id: ocd-person/41d1d0b1-6756-4bdd-b531-1d8c0dc722df
 name: Andy Jorgensen
 given_name: Andy
 family_name: Jorgensen
+image: http://docs.legis.wisconsin.gov/2015/legislators/assembly/1276.jpg
 party:
 - name: Democratic
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: '43'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '37'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://docs.legis.wisconsin.gov/2015/legislators/assembly/1276.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '43'
 links:
 - url: https://docs.legis.wisconsin.gov/2015/legislators/assembly/1276
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000378
+- scheme: legacy_openstates
+  identifier: WIL000516
 sources:
 - url: https://docs.legis.wisconsin.gov/2015/legislators/assembly/1276
-other_identifiers:
-- identifier: WIL000378
-  scheme: legacy_openstates
-- identifier: WIL000516
-  scheme: legacy_openstates

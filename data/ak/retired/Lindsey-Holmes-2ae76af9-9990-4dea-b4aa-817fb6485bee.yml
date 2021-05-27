@@ -2,28 +2,28 @@ id: ocd-person/2ae76af9-9990-4dea-b4aa-817fb6485bee
 name: Lindsey Holmes
 given_name: Lindsey
 family_name: Holmes
+image: http://w3.legis.state.ak.us/images/house/HOL.jpg
 party:
 - name: Republican
-- name: Democratic
-  end_date: '2013-01-02'
+- end_date: '2013-01-02'
+  name: Democratic
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '26'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-image: http://w3.legis.state.ak.us/images/house/HOL.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '19'
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=hol
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000038
+- scheme: legacy_openstates
+  identifier: AKL000103
 sources:
 - url: http://house.legis.state.ak.us/rep.php?id=hol
-other_identifiers:
-- identifier: AKL000038
-  scheme: legacy_openstates
-- identifier: AKL000103
-  scheme: legacy_openstates

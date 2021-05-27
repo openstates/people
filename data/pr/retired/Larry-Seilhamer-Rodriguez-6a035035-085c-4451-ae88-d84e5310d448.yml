@@ -2,28 +2,28 @@ id: ocd-person/6a035035-085c-4451-ae88-d84e5310d448
 name: Larry Seilhamer Rodriguez
 given_name: Larry
 family_name: Seilhamer Rodriguez
+image: http://www.senadopr.us/Fotos%20Senadores/sen_lseilhamer.jpg
 party:
 - name: Partido Nuevo Progresista
 roles:
-- district: At-Large
-  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '5'
-  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
   type: upper
-  start_date: '2009-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: At-Large
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.senadopr.us/Fotos%20Senadores/sen_lseilhamer.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: '5'
 links:
 - url: http://www.senadopr.us/Pages/SenadoresporAcumulacion.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PRL000025
+- scheme: legacy_openstates
+  identifier: PRL000106
+- scheme: legacy_openstates
+  identifier: PRL000157
 sources:
 - url: http://www.senadopr.us/Pages/SenadoresporAcumulacion.aspx
-other_identifiers:
-- identifier: PRL000025
-  scheme: legacy_openstates
-- identifier: PRL000106
-  scheme: legacy_openstates
-- identifier: PRL000157
-  scheme: legacy_openstates

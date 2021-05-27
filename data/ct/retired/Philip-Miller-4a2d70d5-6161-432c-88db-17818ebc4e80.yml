@@ -2,25 +2,25 @@ id: ocd-person/4a2d70d5-6161-432c-88db-17818ebc4e80
 name: Philip Miller
 given_name: Philip J.
 family_name: Miller
+image: http://www.housedems.ct.gov/MillerPJ/images/MillerPJ_2011-02-25.jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.housedems.ct.gov/MillerPJ/images/MillerPJ_2011-02-25.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '36'
 links:
 - url: http://www.housedems.ct.gov/MillerPJ
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000072
+- scheme: legacy_openstates
+  identifier: CTL000231
+- scheme: legacy_openstates
+  identifier: CTL000242
+- scheme: legacy_openstates
+  identifier: CTL000251
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000072
-  scheme: legacy_openstates
-- identifier: CTL000231
-  scheme: legacy_openstates
-- identifier: CTL000242
-  scheme: legacy_openstates
-- identifier: CTL000251
-  scheme: legacy_openstates

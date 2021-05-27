@@ -2,19 +2,19 @@ id: ocd-person/73638387-bf73-401c-810c-b8d916abc8c5
 name: Shawn Keough
 given_name: Shawn
 family_name: Keough
+image: http://legislature.idaho.gov/images/Keough91.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://legislature.idaho.gov/images/Keough91.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '1'
 links:
 - url: http://legislature.idaho.gov/senate/membershipSingle.cfm?ID=91
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000016
 sources:
 - url: http://legislature.idaho.gov/senate/membership.cfm
-other_identifiers:
-- identifier: IDL000016
-  scheme: legacy_openstates

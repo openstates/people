@@ -1,11 +1,14 @@
 id: ocd-person/817e17bf-a01c-4bf1-b70f-3e16aeef088e
 name: Mary M. Mushinsky
+given_name: Mary
+family_name: Mushinsky
+email: Mary.Mushinsky@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '85'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '85'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4038;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-269-8378
 links:
 - url: http://www.housedems.ct.gov/Mushinsky
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000121
-  scheme: legacy_openstates
-given_name: Mary
-family_name: Mushinsky
-email: Mary.Mushinsky@cga.ct.gov
 other_names:
 - name: Mushinsky, Mary M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000121
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

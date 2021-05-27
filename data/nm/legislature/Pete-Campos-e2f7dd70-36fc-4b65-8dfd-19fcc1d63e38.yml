@@ -1,11 +1,15 @@
 id: ocd-person/e2f7dd70-36fc-4b65-8dfd-19fcc1d63e38
 name: Pete Campos
+given_name: Pete
+family_name: Campos
+email: pete.campos@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SCAMP.jpg
 party:
 - name: Democratic
 roles:
-- district: '8'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
+  district: '8'
 contact_details:
 - note: Capitol Office
   address: Room 302B State Capitol;Santa Fe, NM 87501
@@ -15,21 +19,17 @@ contact_details:
   voice: 505-425-0508
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SCAMP
+ids:
+  twitter: senpetecampos
+  facebook: pete.campos.1426
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000008
+- scheme: legacy_openstates
+  identifier: NML000177
+- scheme: legacy_openstates
+  identifier: NML000313
+- scheme: legacy_openstates
+  identifier: NML000404
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SCAMP
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SCAMP.jpg
-other_identifiers:
-- identifier: NML000008
-  scheme: legacy_openstates
-- identifier: NML000177
-  scheme: legacy_openstates
-- identifier: NML000313
-  scheme: legacy_openstates
-- identifier: NML000404
-  scheme: legacy_openstates
-given_name: Pete
-family_name: Campos
-email: pete.campos@nmlegis.gov
-ids:
-  facebook: pete.campos.1426
-  twitter: senpetecampos

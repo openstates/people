@@ -1,24 +1,24 @@
 id: ocd-person/89e4a704-5a4e-4b54-9efc-e68d4231cf75
 name: Jay Barnes
+given_name: Jay
+family_name: Barnes
 party:
 - name: Republican
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '60'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=60
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000041
+- scheme: legacy_openstates
+  identifier: MOL000216
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=60
 extras:
   first_name: Jay
   last_name: Barnes
-other_identifiers:
-- identifier: MOL000041
-  scheme: legacy_openstates
-- identifier: MOL000216
-  scheme: legacy_openstates
-given_name: Jay
-family_name: Barnes

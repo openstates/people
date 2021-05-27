@@ -1,11 +1,15 @@
 id: ocd-person/fd2717f1-6294-4601-a027-8fc41195372c
 name: Ben Watson
+given_name: Ben
+family_name: Watson
+email: ben.watson@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/watson-ben-784.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
+  district: '1'
 contact_details:
 - note: Capitol Office
   address: 325-A Coverdell Legislative Office Building;Atlanta, GA 30334
@@ -16,23 +20,19 @@ contact_details:
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
 - url: https://www.legis.ga.gov/members/senate/784?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000222
+- scheme: legacy_openstates
+  identifier: GAL000368
+- scheme: legacy_openstates
+  identifier: GAL000417
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
 - url: https://www.legis.ga.gov/members/senate/784?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/watson-ben-784.jpg
-family_name: Watson
-given_name: Ben
 extras:
   guid: 784
   city: Savannah
   georgia_id: 784
   residence: Savannah
-other_identifiers:
-- identifier: GAL000222
-  scheme: legacy_openstates
-- identifier: GAL000368
-  scheme: legacy_openstates
-- identifier: GAL000417
-  scheme: legacy_openstates
-email: ben.watson@senate.ga.gov

@@ -1,20 +1,31 @@
 id: ocd-person/69b20f73-f129-4c6f-b740-b0a5929cb520
 name: Timothy D. Hawkes
+given_name: Timothy
+family_name: Hawkes
+email: thawkes@le.utah.gov
+image: https://le.utah.gov/images/legislator/HAWKETD.jpg
 party:
 - name: Republican
 roles:
-- district: '18'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '18'
 contact_details:
 - note: District Office
   address: 443 S 225 E, CENTERVILLE, UT, 84014
   voice: 801-928-9008
 links:
 - url: http://house.utah.gov/rep/HAWKETD
+other_names:
+- name: Hawkes, T.
+- name: Hawkes, Timothy D.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000152
+- scheme: legacy_openstates
+  identifier: UTL000213
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/HAWKETD.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIHAWKETD2.pdf
@@ -26,14 +37,3 @@ extras:
   - http://le.utah.gov/house2/CofI/thawkes2.pdf
   - http://le.utah.gov/house2/CofI/thawkes.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412541
-other_identifiers:
-- identifier: UTL000152
-  scheme: legacy_openstates
-- identifier: UTL000213
-  scheme: legacy_openstates
-given_name: Timothy
-family_name: Hawkes
-email: thawkes@le.utah.gov
-other_names:
-- name: Hawkes, T.
-- name: Hawkes, Timothy D.

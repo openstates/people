@@ -5,15 +5,15 @@ family_name: Cobb
 party:
 - name: Republican
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '26'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NVL000073
+- scheme: legacy_openstates
+  identifier: NVL000031
 sources:
 - url: http://www.leg.state.nv.us/Session/75th2009/legislators/Assembly/alist.cfm
-other_identifiers:
-- identifier: NVL000073
-  scheme: legacy_openstates
-- identifier: NVL000031
-  scheme: legacy_openstates

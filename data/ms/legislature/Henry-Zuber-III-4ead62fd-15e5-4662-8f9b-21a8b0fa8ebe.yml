@@ -1,11 +1,15 @@
 id: ocd-person/4ead62fd-15e5-4662-8f9b-21a8b0fa8ebe
 name: Henry Zuber III
+given_name: Henry
+family_name: Zuber
+email: hzuber@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/zuber.jpg
 party:
 - name: Republican
 roles:
-- district: '113'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '113'
 contact_details:
 - note: Capitol Office
   address: Room 402-C;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +19,11 @@ contact_details:
   voice: 228-875-4866
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/zuber.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000171
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/zuber.xml
-image: http://billstatus.ls.state.ms.us/members/house/zuber.jpg
 extras:
   org_info: Representative Zuber is affiliated with the Knights of Columbus, Chamber
     of Commerce and Board of Directors of the Y.M.C.A.
-other_identifiers:
-- identifier: MSL000171
-  scheme: legacy_openstates
-given_name: Henry
-family_name: Zuber
-email: hzuber@house.ms.gov

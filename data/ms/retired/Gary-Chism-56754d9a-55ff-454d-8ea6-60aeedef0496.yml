@@ -1,17 +1,23 @@
 id: ocd-person/56754d9a-55ff-454d-8ea6-60aeedef0496
 name: Gary Chism
+given_name: Gary
+family_name: Chism
+email: gchism@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/chism.jpg
 party:
 - name: Republican
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+- end_date: '2020-06-30'
   type: lower
-  end_date: '2020-06-30'
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '37'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/chism.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000167
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/chism.xml
-image: http://billstatus.ls.state.ms.us/members/house/chism.jpg
 extras:
   org_info: Representative Chism is a Mason, York Rite and a Shriner. He is affiliated
     with the Independent Insurance Agents of America, and of Mississippi, National
@@ -19,9 +25,3 @@ extras:
     Underwriters,the Society of Certified Insurance Counselors, and has served on
     the Lowndes County Board of Education and the East Mississippi Community College
     Board of Trustees.
-other_identifiers:
-- identifier: MSL000167
-  scheme: legacy_openstates
-given_name: Gary
-family_name: Chism
-email: gchism@house.ms.gov

@@ -3,17 +3,17 @@ name: Oran A Sorenson
 given_name: Oran
 family_name: Sorenson
 middle_name: A
+image: http://legis.state.sd.us/sessions/2009/Sorenson.jpg
 party:
 - name: Democratic
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2009/Sorenson.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '25'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000094
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=137
-other_identifiers:
-- identifier: SDL000094
-  scheme: legacy_openstates

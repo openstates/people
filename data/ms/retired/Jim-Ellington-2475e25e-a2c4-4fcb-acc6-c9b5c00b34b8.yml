@@ -2,19 +2,19 @@ id: ocd-person/2475e25e-a2c4-4fcb-acc6-c9b5c00b34b8
 name: Jim Ellington
 given_name: Jim
 family_name: Ellington
+image: http://billstatus.ls.state.ms.us/members/house/ellington.jpg
 party:
 - name: Republican
 roles:
-- district: '73'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/ellington.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '73'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/ellington.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000113
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/ellington.xml
-other_identifiers:
-- identifier: MSL000113
-  scheme: legacy_openstates

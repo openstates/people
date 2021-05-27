@@ -1,11 +1,15 @@
 id: ocd-person/8afda706-7afa-462c-89f2-0d6d5da010ff
 name: Dewey McClain
+given_name: Dewey
+family_name: McClain
+email: dewey.mcclain@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/mcclain-dewey-845.jpg
 party:
 - name: Democratic
 roles:
-- district: '100'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '100'
 contact_details:
 - note: Capitol Office
   address: 509-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -16,19 +20,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=845&Session=27
 - url: https://www.legis.ga.gov/members/house/845?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000388
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=845&Session=27
 - url: https://www.legis.ga.gov/members/house/845?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/mcclain-dewey-845.jpg
-family_name: McClain
-given_name: Dewey
 extras:
   guid: 845
   city: Lawrenceville
   georgia_id: 845
   residence: Lawrenceville
-other_identifiers:
-- identifier: GAL000388
-  scheme: legacy_openstates
-email: dewey.mcclain@house.ga.gov

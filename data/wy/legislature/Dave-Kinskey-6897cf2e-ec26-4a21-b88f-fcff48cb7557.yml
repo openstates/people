@@ -1,11 +1,16 @@
 id: ocd-person/6897cf2e-ec26-4a21-b88f-fcff48cb7557
 name: Dave Kinskey
+given_name: Dave
+family_name: Kinskey
+email: Dave.Kinskey@wyoleg.gov
+birth_date: 1956-09-22
+image: http://wyoleg.gov/LegislatorSummary/Photos/KinskeyDS22.jpg
 party:
 - name: Republican
 roles:
-- district: '22'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: upper
+  district: '22'
 contact_details:
 - note: District Office
   address: 614 Mountain Shadows Blvd., Sheridan WY 82801
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2003
 - url: http://wyoleg.gov/Legislators/2021/R/2003
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000118
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2003
 - url: http://wyoleg.gov/Legislators/2021/R/2003
-image: http://wyoleg.gov/LegislatorSummary/Photos/KinskeyDS22.jpg
-birth_date: '1956-09-22'
-given_name: Dave
-family_name: Kinskey
 extras:
   civic_organizations:
   - orgname: Rotary
@@ -47,7 +51,3 @@ extras:
   religion: Catholic
   spouse_given_name: Donna
   wy_leg_id: 2003
-other_identifiers:
-- identifier: WYL000118
-  scheme: legacy_openstates
-email: Dave.Kinskey@wyoleg.gov

@@ -1,11 +1,15 @@
 id: ocd-person/a6956643-33f7-4b99-bcfb-fd44f9d92481
 name: Steve Stern
+given_name: Steve
+family_name: Stern
+email: sterns@nyassembly.gov
+image: https://assembly.state.ny.us/write/upload/member_files/010/headshot/010.jpg
 party:
 - name: Democratic
 roles:
-- district: '10'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
+  district: '10'
 contact_details:
 - note: Capitol Office
   address: LOB 919; Albany, NY 12248
@@ -16,15 +20,11 @@ contact_details:
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Steve-Stern
+ids:
+  twitter: SteveSternNY
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000472
 sources:
 - url: http://assembly.state.ny.us/mem/Steve-Stern
 - url: https://assembly.state.ny.us/mem/Steve-Stern
-image: https://assembly.state.ny.us/write/upload/member_files/010/headshot/010.jpg
-other_identifiers:
-- identifier: NYL000472
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Stern
-email: sterns@nyassembly.gov
-ids:
-  twitter: SteveSternNY

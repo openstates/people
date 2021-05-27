@@ -1,11 +1,14 @@
 id: ocd-person/f04c3831-624c-49a1-a7c2-3185a43de06f
 name: Kathleen M. McCarty
+given_name: Kathleen
+family_name: McCarty
+email: Kathleen.McCarty@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '38'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '38'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4046;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-442-2903
 links:
 - url: http://www.cthousegop.com/McCarty/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000277
-  scheme: legacy_openstates
-given_name: Kathleen
-family_name: McCarty
-email: Kathleen.McCarty@housegop.ct.gov
 other_names:
 - name: Mccarty, Kathleen M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000277
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

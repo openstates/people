@@ -1,28 +1,28 @@
 id: ocd-person/3d737a2a-6fdf-4939-838d-4f035a647e23
 name: Thomas Jackson
+given_name: Thomas
+family_name: Jackson
+email: thomas.jackson@alhouse.gov
+image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Jackson_68.jpeg
 party:
 - name: Democratic
 roles:
-- district: '68'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  type: lower
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100550&OID_PERSON=1088
+  district: '68'
 contact_details:
 - note: Capitol Office
   address: Suite 437-D;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0437
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100550&OID_PERSON=1088
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000085
+- scheme: legacy_openstates
+  identifier: ALL000284
+- scheme: legacy_openstates
+  identifier: ALL000386
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100550&OID_PERSON=1088
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Jackson_68.jpeg
-other_identifiers:
-- identifier: ALL000085
-  scheme: legacy_openstates
-- identifier: ALL000284
-  scheme: legacy_openstates
-- identifier: ALL000386
-  scheme: legacy_openstates
-given_name: Thomas
-family_name: Jackson
-email: thomas.jackson@alhouse.gov

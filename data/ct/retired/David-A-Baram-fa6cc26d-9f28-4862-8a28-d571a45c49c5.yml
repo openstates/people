@@ -2,20 +2,20 @@ id: ocd-person/fa6cc26d-9f28-4862-8a28-d571a45c49c5
 name: David A. Baram
 given_name: David A.
 family_name: Baram
+image: http://www.housedems.ct.gov/Baram/images/Baram11.jpg
 party:
 - name: Democratic
 roles:
-- district: '15'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://www.housedems.ct.gov/Baram/images/Baram11.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '15'
 links:
 - url: http://www.housedems.ct.gov/Baram
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000051
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 - url: http://www.chicagotribune.com/news/sns-bc-ct--special-election-20171124-story.html
-other_identifiers:
-- identifier: CTL000051
-  scheme: legacy_openstates

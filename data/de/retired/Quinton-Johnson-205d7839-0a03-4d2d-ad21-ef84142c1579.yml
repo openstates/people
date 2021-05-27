@@ -1,22 +1,22 @@
 id: ocd-person/205d7839-0a03-4d2d-ad21-ef84142c1579
 name: Quinton Johnson
-party:
-- name: Democratic
-roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:de/government
-  type: lower
-  end_date: '2020-11-03'
-links:
-- note: legislator page
-  url: https://legis.delaware.gov/LegislatorDetail?personId=276
-sources:
-- note: legislator list page
-  url: https://legis.delaware.gov/House
-image: https://legis.delaware.gov/images/default-source/default-album/QuinnJohnson.jpg?sfvrsn=0
-other_identifiers:
-- identifier: DEL000135
-  scheme: legacy_openstates
 given_name: Quinton
 family_name: Johnson
 email: Quinton.Johnson@state.de.us
+image: https://legis.delaware.gov/images/default-source/default-album/QuinnJohnson.jpg?sfvrsn=0
+party:
+- name: Democratic
+roles:
+- end_date: '2020-11-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:de/government
+  district: '8'
+links:
+- url: https://legis.delaware.gov/LegislatorDetail?personId=276
+  note: legislator page
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: DEL000135
+sources:
+- url: https://legis.delaware.gov/House
+  note: legislator list page

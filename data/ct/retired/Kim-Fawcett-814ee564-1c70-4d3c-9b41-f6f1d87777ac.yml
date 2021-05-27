@@ -2,19 +2,19 @@ id: ocd-person/814ee564-1c70-4d3c-9b41-f6f1d87777ac
 name: Kim Fawcett
 given_name: Kim
 family_name: Fawcett
+image: http://www.housedems.ct.gov/Fawcett/images/Fawcett24.jpg
 party:
 - name: Democratic
 roles:
-- district: '133'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.housedems.ct.gov/Fawcett/images/Fawcett24.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '133'
 links:
 - url: http://www.housedems.ct.gov/Fawcett
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000169
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000169
-  scheme: legacy_openstates

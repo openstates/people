@@ -1,11 +1,14 @@
 id: ocd-person/e67843ce-752d-4cc0-abb9-4a45b8b8fdca
 name: Steve Cwodzinski
+given_name: Steve
+family_name: Cwodzinski
+image: https://www.senate.mn/img/member_thumbnails/48Cwodzinski.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: '48'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
+  district: '48'
 contact_details:
 - note: District Office
   address: 16411 Grenwich Terrace;Eden Prairie, MN 55346
@@ -13,12 +16,9 @@ contact_details:
   voice: 651-296-1314
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1234
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000759
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-image: https://www.senate.mn/img/member_thumbnails/48Cwodzinski.jpg
-other_identifiers:
-- identifier: MNL000759
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Cwodzinski

@@ -2,23 +2,23 @@ id: ocd-person/a8bdbf35-4788-4bd2-bc28-99f862d8c263
 name: Nancy Jenkins
 given_name: Nancy
 family_name: Jenkins
+image: http://gophouse.org/wp-content/uploads/2013/02/57.jpg
 party:
 - name: Republican
 roles:
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/57.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '57'
 links:
 - url: http://repJenkins.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000095
+- scheme: legacy_openstates
+  identifier: MIL000170
+- scheme: legacy_openstates
+  identifier: MIL000222
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000095
-  scheme: legacy_openstates
-- identifier: MIL000170
-  scheme: legacy_openstates
-- identifier: MIL000222
-  scheme: legacy_openstates

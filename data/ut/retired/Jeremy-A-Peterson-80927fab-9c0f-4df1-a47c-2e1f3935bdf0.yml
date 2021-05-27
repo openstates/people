@@ -1,17 +1,24 @@
 id: ocd-person/80927fab-9c0f-4df1-a47c-2e1f3935bdf0
 name: Jeremy A. Peterson
+given_name: Jeremy
+family_name: Peterson
+image: https://le.utah.gov/images/legislator/PETERJA.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '9'
 links:
 - url: http://house.utah.gov/rep/PETERJA
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000084
+- scheme: legacy_openstates
+  identifier: UTL000191
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/PETERJA.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIPETERJA.pdf
@@ -20,10 +27,3 @@ extras:
   - http://le.utah.gov/house2/CofI/jpeterson.pdf
   - http://le.utah.gov/house2/CofI/PETERJA.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/2093
-other_identifiers:
-- identifier: UTL000084
-  scheme: legacy_openstates
-- identifier: UTL000191
-  scheme: legacy_openstates
-given_name: Jeremy
-family_name: Peterson

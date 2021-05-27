@@ -2,33 +2,33 @@ id: ocd-person/bbca1386-dae7-461e-99e6-a9a4d5865b74
 name: Adam Driggs
 given_name: Adam
 family_name: Driggs
+image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/DRIGGS.gif
 party:
 - name: Republican
 roles:
-- district: '28'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
   type: upper
-  start_date: '2011-01-01'
-  end_date: '2012-12-31'
-- district: '11'
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+  district: '28'
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '11'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/50leg/Senate/DRIGGS.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '11'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=28&Legislature=52&Session_ID=115
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000106
+- scheme: legacy_openstates
+  identifier: AZL000054
+- scheme: legacy_openstates
+  identifier: AZL000218
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=S
-other_identifiers:
-- identifier: AZL000106
-  scheme: legacy_openstates
-- identifier: AZL000054
-  scheme: legacy_openstates
-- identifier: AZL000218
-  scheme: legacy_openstates

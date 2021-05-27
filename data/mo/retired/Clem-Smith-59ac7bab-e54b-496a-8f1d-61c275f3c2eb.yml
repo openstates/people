@@ -1,24 +1,24 @@
 id: ocd-person/59ac7bab-e54b-496a-8f1d-61c275f3c2eb
 name: Clem Smith
+given_name: Clem
+family_name: Smith
 party:
 - name: Democratic
 roles:
-- district: '85'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '85'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=85
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000170
+- scheme: legacy_openstates
+  identifier: MOL000349
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=85
 extras:
   first_name: Clem
   last_name: Smith
-other_identifiers:
-- identifier: MOL000170
-  scheme: legacy_openstates
-- identifier: MOL000349
-  scheme: legacy_openstates
-given_name: Clem
-family_name: Smith

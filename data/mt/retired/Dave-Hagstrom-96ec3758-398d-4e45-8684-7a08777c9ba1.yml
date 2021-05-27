@@ -2,27 +2,27 @@ id: ocd-person/96ec3758-398d-4e45-8684-7a08777c9ba1
 name: Dave Hagstrom
 given_name: Dave
 family_name: Hagstrom
+image: http://leg.mt.gov/images/legislators_64th/15251.jpg
 party:
 - name: Republican
 roles:
-- district: '53'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '52'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '53'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/15251.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '52'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15251
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000188
+- scheme: legacy_openstates
+  identifier: MTL000332
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15251
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000188
-  scheme: legacy_openstates
-- identifier: MTL000332
-  scheme: legacy_openstates

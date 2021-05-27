@@ -2,23 +2,23 @@ id: ocd-person/6a80e19f-a5e8-42ad-99e5-d7872e175f75
 name: Thomas Hooker
 given_name: Tom
 family_name: Hooker
+image: http://gophouse.org/wp-content/uploads/2013/02/77.jpg
 party:
 - name: Republican
 roles:
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://gophouse.org/wp-content/uploads/2013/02/77.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '77'
 links:
 - url: http://repHooker.gophouse.org
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000115
+- scheme: legacy_openstates
+  identifier: MIL000175
+- scheme: legacy_openstates
+  identifier: MIL000233
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000115
-  scheme: legacy_openstates
-- identifier: MIL000175
-  scheme: legacy_openstates
-- identifier: MIL000233
-  scheme: legacy_openstates

@@ -2,19 +2,19 @@ id: ocd-person/fab721f6-8edd-4132-bd76-4e4cd7f4f8a8
 name: Craig A. Miner
 given_name: Craig A.
 family_name: Miner
+image: http://www.cthousegop.com/wp-content/uploads/2012/01/miner_thumb.jpg
 party:
 - name: Republican
 roles:
-- district: '66'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.cthousegop.com/wp-content/uploads/2012/01/miner_thumb.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '66'
 links:
 - url: http://repminer.com
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000102
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000102
-  scheme: legacy_openstates

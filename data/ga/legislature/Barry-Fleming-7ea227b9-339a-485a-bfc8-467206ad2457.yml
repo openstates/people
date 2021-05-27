@@ -1,11 +1,15 @@
 id: ocd-person/7ea227b9-339a-485a-bfc8-467206ad2457
 name: Barry Fleming
+given_name: Barry
+family_name: Fleming
+email: barry.fleming@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/fleming-barry-101.jpg
 party:
 - name: Republican
 roles:
-- district: '121'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '121'
 contact_details:
 - note: Capitol Office
   address: 132 State Capitol;Atlanta, GA 30334
@@ -13,19 +17,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=101&Session=27
 - url: https://www.legis.ga.gov/members/house/101?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000282
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=101&Session=27
 - url: https://www.legis.ga.gov/members/house/101?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/fleming-barry-101.jpg
-family_name: Fleming
-given_name: Barry
 extras:
   guid: 101
   city: Harlem
   georgia_id: 101
   residence: Harlem
-other_identifiers:
-- identifier: GAL000282
-  scheme: legacy_openstates
-email: barry.fleming@house.ga.gov

@@ -2,33 +2,33 @@ id: ocd-person/d25f3243-80be-4eec-9bb8-78b4e2ab1857
 name: Andy Sanborn
 given_name: Andy
 family_name: Sanborn
+image: http://www.gencourt.state.nh.us/Senate/images/senators/09.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '9'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '7'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://www.gencourt.state.nh.us/Senate/images/senators/09.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '9'
 links:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district09.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000022
+- scheme: legacy_openstates
+  identifier: NHL000812
+- scheme: legacy_openstates
+  identifier: NHL001287
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district09.aspx
-other_identifiers:
-- identifier: NHL000022
-  scheme: legacy_openstates
-- identifier: NHL000812
-  scheme: legacy_openstates
-- identifier: NHL001287
-  scheme: legacy_openstates

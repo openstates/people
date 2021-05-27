@@ -1,11 +1,14 @@
 id: ocd-person/ee6c2cb7-6d0f-4b45-9e06-2ba1dfae8ecb
 name: Omeria Scott
+given_name: Omeria
+family_name: Scott
+image: http://billstatus.ls.state.ms.us/members/house/scott.jpg
 party:
 - name: Democratic
 roles:
-- district: '80'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '80'
 contact_details:
 - note: Capitol Office
   address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
@@ -15,15 +18,12 @@ contact_details:
   voice: 601-649-7677
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/scott.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000066
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/scott.xml
-image: http://billstatus.ls.state.ms.us/members/house/scott.jpg
 extras:
   org_info: Representative Scott is affiliated with the Order of the Eastern Star,
     National Council of Negro Women, Federated Women of America, Association for Excellence
     in Education and Beacon of Hope Mississippi Scholarship Foundation.
-other_identifiers:
-- identifier: MSL000066
-  scheme: legacy_openstates
-given_name: Omeria
-family_name: Scott

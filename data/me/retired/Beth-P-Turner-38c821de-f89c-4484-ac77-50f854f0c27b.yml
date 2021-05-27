@@ -3,27 +3,27 @@ name: Beth P. Turner
 given_name: Beth
 family_name: Turner
 middle_name: P.
+image: http://www.maine.gov/legis/house/photo125/turnbp.jpg
 party:
 - name: Republican
 roles:
-- district: '141'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '141'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.maine.gov/legis/house/photo125/turnbp.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '11'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/turnbp.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000046
+- scheme: legacy_openstates
+  identifier: MEL000320
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/turnbp.htm
-other_identifiers:
-- identifier: MEL000046
-  scheme: legacy_openstates
-- identifier: MEL000320
-  scheme: legacy_openstates

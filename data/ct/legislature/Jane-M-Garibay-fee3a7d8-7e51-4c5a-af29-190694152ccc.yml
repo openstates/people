@@ -1,11 +1,14 @@
 id: ocd-person/fee3a7d8-7e51-4c5a-af29-190694152ccc
 name: Jane M. Garibay
+given_name: Jane
+family_name: Garibay
+email: Jane.Garibay@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '60'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '60'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4000;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 860-882-8842
 links:
 - url: http://www.housedems.ct.gov/garibay
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Jane
-family_name: Garibay
-email: Jane.Garibay@cga.ct.gov
 other_names:
 - name: Garibay, Jane M.
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

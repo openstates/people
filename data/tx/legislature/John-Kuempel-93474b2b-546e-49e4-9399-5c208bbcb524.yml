@@ -1,11 +1,14 @@
 id: ocd-person/93474b2b-546e-49e4-9399-5c208bbcb524
 name: John Kuempel
+given_name: John
+family_name: Kuempel
+image: https://house.texas.gov/photos/members/2310.jpg
 party:
 - name: Republican
 roles:
-- district: '44'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
+  district: '44'
 contact_details:
 - note: Capitol Office
   address: Room GW.6;P.O. Box 2910;Austin, TX 78768
@@ -15,13 +18,10 @@ contact_details:
   voice: 830-379-8732
 links:
 - url: https://house.texas.gov/members/member-page/?district=44
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000387
+- scheme: legacy_openstates
+  identifier: TXL000522
 sources:
 - url: https://house.texas.gov/members/member-page/?district=44
-image: https://house.texas.gov/photos/members/2310.jpg
-other_identifiers:
-- identifier: TXL000387
-  scheme: legacy_openstates
-- identifier: TXL000522
-  scheme: legacy_openstates
-given_name: John
-family_name: Kuempel

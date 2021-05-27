@@ -2,19 +2,19 @@ id: ocd-person/ca2be7f7-e34b-43fd-9bf8-d679974f4a1e
 name: David Farabee
 given_name: David
 family_name: Farabee
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2795.jpg
 party:
 - name: Democratic
 roles:
-- district: '69'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A2795.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '69'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000255
+- scheme: legacy_openstates
+  identifier: TXL000073
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A2795
-other_identifiers:
-- identifier: TXL000255
-  scheme: legacy_openstates
-- identifier: TXL000073
-  scheme: legacy_openstates

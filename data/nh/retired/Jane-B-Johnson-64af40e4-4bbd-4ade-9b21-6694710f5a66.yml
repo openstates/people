@@ -6,22 +6,22 @@ middle_name: B
 party:
 - name: Republican
 roles:
-- district: Cheshire 12
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: Cheshire 6
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 12
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 6
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376671
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000190
+- scheme: legacy_openstates
+  identifier: NHL000599
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- identifier: NHL000190
-  scheme: legacy_openstates
-- identifier: NHL000599
-  scheme: legacy_openstates

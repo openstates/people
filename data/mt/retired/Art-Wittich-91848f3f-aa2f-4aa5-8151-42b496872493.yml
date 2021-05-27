@@ -2,27 +2,27 @@ id: ocd-person/91848f3f-aa2f-4aa5-8151-42b496872493
 name: Art Wittich
 given_name: Art
 family_name: Wittich
+image: http://leg.mt.gov/images/legislators_64th/12550.jpg
 party:
 - name: Republican
 roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '68'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2015-01-01'
+  district: '35'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/12550.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '68'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12550
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000049
+- scheme: legacy_openstates
+  identifier: MTL000250
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12550
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000049
-  scheme: legacy_openstates
-- identifier: MTL000250
-  scheme: legacy_openstates

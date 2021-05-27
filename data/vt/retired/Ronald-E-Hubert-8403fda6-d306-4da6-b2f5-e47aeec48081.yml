@@ -2,31 +2,31 @@ id: ocd-person/8403fda6-d306-4da6-b2f5-e47aeec48081
 name: Ronald E Hubert
 given_name: Ronald E.
 family_name: Hubert
+image: http://legislature.vermont.gov/assets/Documents/Legislators/RHubert.jpg
 party:
 - name: Republican
 roles:
-- district: Chittenden-9
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-- district: Chittenden-10
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   type: lower
-  start_date: '2013-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-9
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://legislature.vermont.gov/assets/Documents/Legislators/RHubert.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-10
 links:
 - url: http://legislature.vermont.gov/people/single/2018/14674
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000087
+- scheme: legacy_openstates
+  identifier: VTL000265
+- scheme: legacy_openstates
+  identifier: VTL000364
+- scheme: legacy_openstates
+  identifier: VTL000704
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2018
 - url: http://legislature.vermont.gov/people/single/2018/14674
-other_identifiers:
-- identifier: VTL000087
-  scheme: legacy_openstates
-- identifier: VTL000265
-  scheme: legacy_openstates
-- identifier: VTL000364
-  scheme: legacy_openstates
-- identifier: VTL000704
-  scheme: legacy_openstates

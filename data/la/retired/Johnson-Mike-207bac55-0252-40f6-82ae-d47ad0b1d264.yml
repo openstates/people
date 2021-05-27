@@ -2,21 +2,21 @@ id: ocd-person/207bac55-0252-40f6-82ae-d47ad0b1d264
 name: Mike Johnson
 given_name: Mike
 family_name: Johnson
+image: http://house.louisiana.gov/H_Reps/RepPics09Large/rep8.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2017-01-03'
-image: http://house.louisiana.gov/H_Reps/RepPics09Large/rep8.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '8'
 links:
 - url: http://house.louisiana.gov/H_Reps/members.asp?ID=8
-sources:
-- url: http://house.louisiana.gov/H_Reps/members.asp?ID=8
-other_identifiers:
-- identifier: LAL000790
-  scheme: legacy_openstates
 other_names:
 - name: Mike Johnson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000790
+sources:
+- url: http://house.louisiana.gov/H_Reps/members.asp?ID=8

@@ -1,11 +1,15 @@
 id: ocd-person/da8a0173-20dc-4979-949d-57d902e744e0
 name: Ken Morgan
+given_name: Ken
+family_name: Morgan
+email: kmorgan@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/morgan.jpg
 party:
 - name: Republican
 roles:
-- district: '100'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '100'
 contact_details:
 - note: Capitol Office
   address: Room 119-C;P. O. Box 1018;Jackson, MS 39215
@@ -15,18 +19,14 @@ contact_details:
   voice: 601-736-9688
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/morgan.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000090
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/morgan.xml
-image: http://billstatus.ls.state.ms.us/members/house/morgan.jpg
 extras:
   org_info: Representative Morgan is the former Marion County Representative for the
     Pearl River Basin Development District; Marion County Forestry Association, National
     Wild Turkey Federation, and NRA. He is also past president of the Cattleman's
     Association, Pearl River Land and Conservation Association, Chief, Morgantown
     Vol. Fire Department, and also is a Mason and a Shriner.
-other_identifiers:
-- identifier: MSL000090
-  scheme: legacy_openstates
-given_name: Ken
-family_name: Morgan
-email: kmorgan@house.ms.gov

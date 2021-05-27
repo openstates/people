@@ -2,19 +2,19 @@ id: ocd-person/18aa133e-95d5-4005-a5cc-c5925839e0d0
 name: Benjamin Nageak
 given_name: Benjamin
 family_name: Nageak
+image: http://w3.legis.state.ak.us/images/house/NAG.jpg
 party:
 - name: Democratic
 roles:
-- district: '40'
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://w3.legis.state.ak.us/images/house/NAG.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '40'
 links:
 - url: http://house.legis.state.ak.us/rep.php?id=nag
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000076
 sources:
 - url: http://akleg.gov/legislator.php?id=nag
-other_identifiers:
-- identifier: AKL000076
-  scheme: legacy_openstates

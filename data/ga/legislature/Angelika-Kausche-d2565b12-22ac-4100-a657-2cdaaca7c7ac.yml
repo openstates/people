@@ -1,11 +1,15 @@
 id: ocd-person/d2565b12-22ac-4100-a657-2cdaaca7c7ac
 name: Angelika Kausche
+given_name: Angelika
+family_name: Kausche
+email: angelika.kausche@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/kausche-angelika-4941.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '50'
 contact_details:
 - note: Capitol Office
   address: 409-E Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -19,12 +23,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4941&Session=27
 - url: https://www.legis.ga.gov/members/house/4941?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/kausche-angelika-4941.jpg
-family_name: Kausche
-given_name: Angelika
 extras:
   guid: 4941
   city: Johns Creek
   georgia_id: 4941
   residence: Johns Creek
-email: angelika.kausche@house.ga.gov

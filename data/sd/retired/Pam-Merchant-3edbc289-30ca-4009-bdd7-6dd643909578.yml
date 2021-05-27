@@ -2,17 +2,17 @@ id: ocd-person/3edbc289-30ca-4009-bdd7-6dd643909578
 name: Pam Merchant
 given_name: Pam
 family_name: Merchant
+image: http://legis.state.sd.us/sessions/2010/Merchant.jpg
 party:
 - name: Democratic
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://legis.state.sd.us/sessions/2010/Merchant.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '7'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000024
 sources:
 - url: http://legis.state.sd.us/sessions/2010/MemberDetail.aspx?Member=110
-other_identifiers:
-- identifier: SDL000024
-  scheme: legacy_openstates

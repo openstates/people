@@ -1,11 +1,15 @@
 id: ocd-person/1871260f-8daf-43e1-a9ec-09ebcfdbb6a4
 name: David Knight
+given_name: David
+family_name: Knight
+email: david.knight@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/knight-david-148.jpg
 party:
 - name: Republican
 roles:
-- district: '130'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '130'
 contact_details:
 - note: Capitol Office
   address: 245 State Capitol;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=148&Session=27
 - url: https://www.legis.ga.gov/members/house/148?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000151
+- scheme: legacy_openstates
+  identifier: GAL000321
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=148&Session=27
 - url: https://www.legis.ga.gov/members/house/148?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/knight-david-148.jpg
-family_name: Knight
-given_name: David
 extras:
   guid: 148
   city: Griffin
   georgia_id: 148
   residence: Griffin
-other_identifiers:
-- identifier: GAL000151
-  scheme: legacy_openstates
-- identifier: GAL000321
-  scheme: legacy_openstates
-email: david.knight@house.ga.gov

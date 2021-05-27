@@ -1,20 +1,24 @@
 id: ocd-person/78c818c4-db8b-446e-bd69-ceaccdce7673
 name: John Freeman
+given_name: John
+family_name: Freeman
+email: John.Freeman@wyoleg.gov
+birth_date: 1954-09-10
+image: http://wyoleg.gov/LegislatorSummary/Photos/FreemanH60.jpg
 party:
 - name: Democratic
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '60'
 links:
 - url: http://wyoleg.gov/Legislators/2019/D/1970
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000051
 sources:
 - url: http://wyoleg.gov/Legislators/2019/D/1970
-image: http://wyoleg.gov/LegislatorSummary/Photos/FreemanH60.jpg
-birth_date: '1954-09-10'
-given_name: John
-family_name: Freeman
 extras:
   county: Sweetwater
   education:
@@ -33,7 +37,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 1970
-other_identifiers:
-- identifier: WYL000051
-  scheme: legacy_openstates
-email: John.Freeman@wyoleg.gov

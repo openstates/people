@@ -1,25 +1,25 @@
 id: ocd-person/18c8bcb5-1946-4783-9191-88f808b66116
 name: Tom Hurst
+given_name: Tom
+family_name: Hurst
+email: Tom.Hurst@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '62'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '62'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=62
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000277
+- scheme: legacy_openstates
+  identifier: MOL000370
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=62
 extras:
   first_name: Tom
   last_name: Hurst
-other_identifiers:
-- identifier: MOL000277
-  scheme: legacy_openstates
-- identifier: MOL000370
-  scheme: legacy_openstates
-given_name: Tom
-family_name: Hurst
-email: Tom.Hurst@house.mo.gov

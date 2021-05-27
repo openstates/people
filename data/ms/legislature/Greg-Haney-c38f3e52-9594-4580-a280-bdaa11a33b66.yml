@@ -1,11 +1,15 @@
 id: ocd-person/c38f3e52-9594-4580-a280-bdaa11a33b66
 name: Greg Haney
+given_name: Greg
+family_name: Haney
+email: ghaney@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/haney.jpg
 party:
 - name: Republican
 roles:
-- district: '118'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '118'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -14,15 +18,11 @@ contact_details:
   address: 104 45th St;Gulfport, MS 39507
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/haney.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000203
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/haney.xml
-image: http://billstatus.ls.state.ms.us/members/house/haney.jpg
 extras:
   org_info: Rep. Haney is a member of the Nat'l Assoc. of Realtors, MS Assoc. of Realtors,
     MS Gulf Coast Realtors, MS Gulf Coast a MLS, Harrison County Republican Club.
-other_identifiers:
-- identifier: MSL000203
-  scheme: legacy_openstates
-given_name: Greg
-family_name: Haney
-email: ghaney@house.ms.gov

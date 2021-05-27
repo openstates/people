@@ -2,19 +2,19 @@ id: ocd-person/c12c1859-adaa-4b72-bd24-b06bf2c6e22e
 name: Tom King
 given_name: Tom
 family_name: King
+image: http://billstatus.ls.state.ms.us/members/senate/king.jpg
 party:
 - name: Republican
 roles:
-- district: '44'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2011-12-31'
-image: http://billstatus.ls.state.ms.us/members/senate/king.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '44'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/king.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000027
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/king.xml
-other_identifiers:
-- identifier: MSL000027
-  scheme: legacy_openstates

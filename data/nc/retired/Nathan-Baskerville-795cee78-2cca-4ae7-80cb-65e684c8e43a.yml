@@ -2,19 +2,19 @@ id: ocd-person/795cee78-2cca-4ae7-80cb-65e684c8e43a
 name: Nathan Baskerville
 given_name: Nathan
 family_name: Baskerville
+image: http://www.ncga.state.nc.us/House/pictures/hiRes/649.jpg
 party:
 - name: Democratic
 roles:
-- district: '32'
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.ncga.state.nc.us/House/pictures/hiRes/649.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '32'
 links:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=649
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000266
 sources:
 - url: http://www.ncga.state.nc.us/gascripts/members/viewMember.pl?sChamber=House&nUserID=649
-other_identifiers:
-- identifier: NCL000266
-  scheme: legacy_openstates

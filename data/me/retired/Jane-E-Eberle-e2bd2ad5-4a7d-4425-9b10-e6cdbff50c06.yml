@@ -3,20 +3,20 @@ name: Jane E. Eberle
 given_name: Jane
 family_name: Eberle
 middle_name: E.
+image: http://www.maine.gov/legis/house/photo125/eberje.jpg
 party:
 - name: Democratic
 roles:
-- district: '123'
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.maine.gov/legis/house/photo125/eberje.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '123'
 links:
 - url: http://www.maine.gov/legis/house/hsebios/eberje.htm
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MEL000157
 sources:
 - url: http://www.maine.gov/legis/house/dist_mem.htm
 - url: http://www.maine.gov/legis/house/hsebios/eberje.htm
-other_identifiers:
-- identifier: MEL000157
-  scheme: legacy_openstates

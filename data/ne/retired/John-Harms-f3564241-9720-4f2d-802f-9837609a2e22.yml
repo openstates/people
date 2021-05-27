@@ -2,19 +2,19 @@ id: ocd-person/f3564241-9720-4f2d-802f-9837609a2e22
 name: John Harms
 given_name: John
 family_name: Harms
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist42.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '48'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist42.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '48'
 links:
 - url: http://news.legislature.ne.gov/dist48/biography/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000048
 sources:
 - url: http://news.legislature.ne.gov/dist48/biography/
-other_identifiers:
-- identifier: NEL000048
-  scheme: legacy_openstates

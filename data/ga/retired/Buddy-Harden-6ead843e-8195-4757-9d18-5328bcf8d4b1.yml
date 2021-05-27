@@ -1,24 +1,24 @@
 id: ocd-person/6ead843e-8195-4757-9d18-5328bcf8d4b1
 name: Buddy Harden
+given_name: Buddy
+family_name: Harden
+image: http://www.house.ga.gov/SiteCollectionImages/HardenBuddy724.jpg
 party:
 - name: Republican
 roles:
-- district: '148'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '148'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=724&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000121
+- scheme: legacy_openstates
+  identifier: GAL000296
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=724&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/HardenBuddy724.jpg
-family_name: Harden
-given_name: Buddy
 extras:
   guid: 724
-other_identifiers:
-- identifier: GAL000121
-  scheme: legacy_openstates
-- identifier: GAL000296
-  scheme: legacy_openstates

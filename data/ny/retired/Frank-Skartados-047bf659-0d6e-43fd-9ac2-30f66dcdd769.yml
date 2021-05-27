@@ -2,26 +2,26 @@ id: ocd-person/047bf659-0d6e-43fd-9ac2-30f66dcdd769
 name: Frank Skartados
 given_name: Frank
 family_name: Skartados
+image: http://assembly.state.ny.us/mem/pic/104.jpg
 party:
 - name: Democratic
 roles:
-- district: '104'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '100'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '104'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://assembly.state.ny.us/mem/pic/104.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '100'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000221
+- scheme: legacy_openstates
+  identifier: NYL000308
 sources:
 - url: http://assembly.state.ny.us/mem/Frank-Skartados
-other_identifiers:
-- identifier: NYL000221
-  scheme: legacy_openstates
-- identifier: NYL000308
-  scheme: legacy_openstates

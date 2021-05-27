@@ -2,29 +2,29 @@ id: ocd-person/38c51de7-e512-4341-9178-0b12741ebc74
 name: Adam Brown
 given_name: Adam
 family_name: Brown
+image: http://ilga.gov/images/members/%7B92075850-EB13-4CDA-B6B7-E2C13D591969%7D.jpg
 party:
 - name: Republican
 roles:
-- district: '102'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '101'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '102'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://ilga.gov/images/members/%7B92075850-EB13-4CDA-B6B7-E2C13D591969%7D.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '101'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=99&MemberID=2184
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL000071
+- scheme: legacy_openstates
+  identifier: ILL000425
+- scheme: legacy_openstates
+  identifier: ILL000860
 sources:
 - url: http://ilga.gov/house/default.asp?GA=99
 - url: http://ilga.gov/house/Rep.asp?GA=99&MemberID=2184
-other_identifiers:
-- identifier: ILL000071
-  scheme: legacy_openstates
-- identifier: ILL000425
-  scheme: legacy_openstates
-- identifier: ILL000860
-  scheme: legacy_openstates

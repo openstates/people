@@ -2,27 +2,27 @@ id: ocd-person/0c09cd54-64ca-4faa-8e3d-380989374d9a
 name: Cliff Larsen
 given_name: Cliff
 family_name: Larsen
+image: http://leg.mt.gov/images/legislators_64th/13681.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-- district: '47'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: upper
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '50'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/13681.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '47'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13681
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000025
+- scheme: legacy_openstates
+  identifier: MTL000232
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=13681
 - url: http://leg.mt.gov/content/sessions/64th/2015SenateMembers.txt
-other_identifiers:
-- identifier: MTL000025
-  scheme: legacy_openstates
-- identifier: MTL000232
-  scheme: legacy_openstates

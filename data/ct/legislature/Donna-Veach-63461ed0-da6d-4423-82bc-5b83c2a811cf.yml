@@ -1,22 +1,22 @@
 id: ocd-person/63461ed0-da6d-4423-82bc-5b83c2a811cf
 name: Donna Veach
+given_name: Donna
+family_name: Veach
 email: Donna.Veach@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '30'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '30'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: https://www.cthousegop.com/veach
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Donna
-family_name: Veach
 other_names:
 - name: Veach, Donna
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

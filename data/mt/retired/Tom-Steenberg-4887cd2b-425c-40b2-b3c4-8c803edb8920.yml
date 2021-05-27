@@ -2,27 +2,27 @@ id: ocd-person/4887cd2b-425c-40b2-b3c4-8c803edb8920
 name: Tom Steenberg
 given_name: Tom
 family_name: Steenberg
+image: http://leg.mt.gov/images/legislators_64th/15264.jpg
 party:
 - name: Democratic
 roles:
-- district: '95'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '99'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   type: lower
-  start_date: '2015-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '95'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
-image: http://leg.mt.gov/images/legislators_64th/15264.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '99'
 links:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15264
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000219
+- scheme: legacy_openstates
+  identifier: MTL000340
 sources:
 - url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=15264
 - url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
-other_identifiers:
-- identifier: MTL000219
-  scheme: legacy_openstates
-- identifier: MTL000340
-  scheme: legacy_openstates

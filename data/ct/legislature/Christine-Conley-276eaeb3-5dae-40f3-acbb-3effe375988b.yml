@@ -1,11 +1,14 @@
 id: ocd-person/276eaeb3-5dae-40f3-acbb-3effe375988b
 name: Christine Conley
+given_name: Christine
+family_name: Conley
+email: Christine.Conley@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '40'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '40'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4009;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-916-3333
 links:
 - url: http://www.housedems.ct.gov/Conley
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000316
-  scheme: legacy_openstates
-given_name: Christine
-family_name: Conley
-email: Christine.Conley@cga.ct.gov
 other_names:
 - name: Conley, Christine
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000316
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -3,30 +3,30 @@ name: Jorge I. Suarez Caceres
 given_name: Jorge
 family_name: Suarez Caceres
 middle_name: I.
+image: http://www.senadopr.us/Fotos%20Senadores/sen_jsuarez.jpg
 party:
 - name: "Partido Popular Democr\xE1tico"
 roles:
-- district: VII
-  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: At-Large
-  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
   type: upper
-  start_date: '2009-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: VII
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.senadopr.us/Fotos%20Senadores/sen_jsuarez.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: At-Large
 links:
 - url: http://www.senadopr.us/Pages/Senadores%20Distrito%20VII.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PRL000013
+- scheme: legacy_openstates
+  identifier: PRL000096
+- scheme: legacy_openstates
+  identifier: PRL000159
+- scheme: legacy_openstates
+  identifier: PRL000208
 sources:
 - url: http://www.senadopr.us/Pages/Senadores%20Distrito%20VII.aspx
-other_identifiers:
-- identifier: PRL000013
-  scheme: legacy_openstates
-- identifier: PRL000096
-  scheme: legacy_openstates
-- identifier: PRL000159
-  scheme: legacy_openstates
-- identifier: PRL000208
-  scheme: legacy_openstates

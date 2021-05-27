@@ -1,11 +1,14 @@
 id: ocd-person/d2a3535f-bdff-414c-8aaa-c3f3f203bc14
 name: Philip L. Young III
+given_name: Philip
+family_name: Young
+email: phil.young@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '120'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '120'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4100;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-502-1458
 links:
 - url: http://www.housedems.ct.gov/young
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000365
-  scheme: legacy_openstates
-given_name: Philip
-family_name: Young
-email: phil.young@cga.ct.gov
 other_names:
 - name: Young, Philip L.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000365
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

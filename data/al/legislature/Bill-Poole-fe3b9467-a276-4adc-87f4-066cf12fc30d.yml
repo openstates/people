@@ -1,28 +1,28 @@
 id: ocd-person/fe3b9467-a276-4adc-87f4-066cf12fc30d
 name: Bill Poole
+given_name: Bill
+family_name: Poole
+email: bill.poole@alhouse.gov
+image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Poole_63.jpeg
 party:
 - name: Republican
 roles:
-- district: '63'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  type: lower
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100545&OID_PERSON=6679
+  district: '63'
 contact_details:
 - note: Capitol Office
   address: Suite 514;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0524
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100545&OID_PERSON=6679
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000118
+- scheme: legacy_openstates
+  identifier: ALL000208
+- scheme: legacy_openstates
+  identifier: ALL000365
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100545&OID_PERSON=6679
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Poole_63.jpeg
-other_identifiers:
-- identifier: ALL000118
-  scheme: legacy_openstates
-- identifier: ALL000208
-  scheme: legacy_openstates
-- identifier: ALL000365
-  scheme: legacy_openstates
-given_name: Bill
-family_name: Poole
-email: bill.poole@alhouse.gov

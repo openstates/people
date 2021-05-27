@@ -3,19 +3,19 @@ name: Andrea L. Stillman
 given_name: Andrea
 family_name: Stillman
 middle_name: L.
+image: http://www.senatedems.ct.gov/photos/stillman-hi.jpg
 party:
 - name: Democratic
 roles:
-- district: '20'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senatedems.ct.gov/photos/stillman-hi.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '20'
 links:
 - url: http://www.senatedems.ct.gov/Stillman.php
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000020
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000020
-  scheme: legacy_openstates

@@ -2,20 +2,20 @@ id: ocd-person/d8cb45cd-202f-4d1e-8760-26832773cf65
 name: Jason Carter
 given_name: Jason
 family_name: Carter
+image: http://www.senate.ga.gov/SiteCollectionImages/CarterJason720.jpg
 party:
 - name: Democratic
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.senate.ga.gov/SiteCollectionImages/CarterJason720.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '42'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=720&Session=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000007
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=720&Session=23
-other_identifiers:
-- identifier: GAL000007
-  scheme: legacy_openstates

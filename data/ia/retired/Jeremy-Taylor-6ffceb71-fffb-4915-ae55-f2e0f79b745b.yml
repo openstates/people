@@ -2,19 +2,19 @@ id: ocd-person/6ffceb71-fffb-4915-ae55-f2e0f79b745b
 name: Jeremy Taylor
 given_name: Jeremy
 family_name: Taylor
+image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=84&PID=10782
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.legis.iowa.gov/getPhotoPeople.aspx?GA=84&PID=10782
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '1'
 links:
 - url: http://www.legis.iowa.gov/Legislators/house.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000133
 sources:
 - url: http://www.legis.iowa.gov/Legislators/house.aspx
-other_identifiers:
-- identifier: IAL000133
-  scheme: legacy_openstates

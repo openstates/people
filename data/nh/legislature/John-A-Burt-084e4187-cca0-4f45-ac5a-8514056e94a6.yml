@@ -1,11 +1,15 @@
 id: ocd-person/084e4187-cca0-4f45-ac5a-8514056e94a6
 name: John A. Burt
+given_name: John A.
+family_name: Burt
+email: john.burt@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376912.jpg
 party:
 - name: Republican
 roles:
-- district: Hillsborough 39
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 39
 contact_details:
 - note: District Office
   address: 7 Bay Street;Goffstown, NH 03045-2634
@@ -13,24 +17,20 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000066
+- scheme: legacy_openstates
+  identifier: NHL000470
+- scheme: legacy_openstates
+  identifier: NHL001057
+- scheme: legacy_openstates
+  identifier: NHL001245
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376912
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376912.jpg
 extras:
   first_name: John
   last_name: Burt
   middle_name: A.
-other_identifiers:
-- identifier: NHL000066
-  scheme: legacy_openstates
-- identifier: NHL000470
-  scheme: legacy_openstates
-- identifier: NHL001057
-  scheme: legacy_openstates
-- identifier: NHL001245
-  scheme: legacy_openstates
-given_name: John A.
-family_name: Burt
-email: john.burt@leg.state.nh.us

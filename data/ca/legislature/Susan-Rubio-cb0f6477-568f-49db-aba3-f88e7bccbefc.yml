@@ -1,12 +1,16 @@
 id: ocd-person/cb0f6477-568f-49db-aba3-f88e7bccbefc
 name: Susan Rubio
+given_name: Susan
+family_name: Rubio
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator_rubio.jpg
 party:
 - name: Democratic
 roles:
-- district: '22'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- start_date: '2018-12-03'
   type: upper
-  start_date: '2018-12-03'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '22'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4052, Sacramento, CA 95814-4900
@@ -16,13 +20,9 @@ contact_details:
   voice: 626-430-2499
 links:
 - url: https://senate.ca.gov/sd22
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD22&inframe=N
-sources:
-- url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator_rubio.jpg
-given_name: Susan
-family_name: Rubio
-gender: Female
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD22&inframe=N
+  note: Contact Form
 other_names:
 - name: Rubio
+sources:
+- url: http://senate.ca.gov/senators

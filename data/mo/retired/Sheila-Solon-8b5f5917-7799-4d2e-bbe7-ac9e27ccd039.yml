@@ -1,37 +1,37 @@
 id: ocd-person/8b5f5917-7799-4d2e-bbe7-ac9e27ccd039
 name: Sheila Solon
+given_name: Sheila
+family_name: Solon
+email: Sheila.Solon@house.mo.gov
 party:
 - name: Republican
 roles:
-- district: '55'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '31'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '55'
+- start_date: 2013-01-01
   end_date: 2016-12-31
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '31'
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '9'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=9
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000172
+- scheme: legacy_openstates
+  identifier: MOL000351
+- scheme: openstates
+  identifier: ocd-person/8f7e37e3-8011-4479-b4b0-e732b8181e10
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=9
 extras:
   first_name: Sheila
   last_name: Solon
-other_identifiers:
-- identifier: MOL000172
-  scheme: legacy_openstates
-- identifier: MOL000351
-  scheme: legacy_openstates
-- identifier: ocd-person/8f7e37e3-8011-4479-b4b0-e732b8181e10
-  scheme: openstates
-email: Sheila.Solon@house.mo.gov
-given_name: Sheila
-family_name: Solon

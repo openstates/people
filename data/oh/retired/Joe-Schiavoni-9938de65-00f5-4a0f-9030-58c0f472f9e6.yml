@@ -2,19 +2,19 @@ id: ocd-person/9938de65-00f5-4a0f-9030-58c0f472f9e6
 name: Joe Schiavoni
 given_name: Joe
 family_name: Schiavoni
+image: http://www.ohiosenate.gov/senate/Assets/Headshots/Small/33.jpg
 party:
 - name: Democratic
 roles:
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: upper
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2016-12-31'
-image: http://www.ohiosenate.gov/senate/Assets/Headshots/Small/33.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '33'
 links:
 - url: http://www.ohiosenate.gov/schiavoni
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000033
 sources:
 - url: http://www.ohiosenate.gov/members/senate-directory
-other_identifiers:
-- identifier: OHL000033
-  scheme: legacy_openstates

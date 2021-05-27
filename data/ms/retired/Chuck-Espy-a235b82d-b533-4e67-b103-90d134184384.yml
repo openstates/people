@@ -2,19 +2,19 @@ id: ocd-person/a235b82d-b533-4e67-b103-90d134184384
 name: Chuck Espy
 given_name: Chuck
 family_name: Espy
+image: http://billstatus.ls.state.ms.us/members/house/espy.jpg
 party:
 - name: Democratic
 roles:
-- district: '26'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/espy.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '26'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/espy.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000123
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/espy.xml
-other_identifiers:
-- identifier: MSL000123
-  scheme: legacy_openstates

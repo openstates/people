@@ -2,30 +2,30 @@ id: ocd-person/090d2cda-f435-4efd-89c5-68fa5b422e08
 name: Ronald Jorgensen
 given_name: Ronald
 family_name: Jorgensen
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=9403
 party:
 - name: Republican
 roles:
-- district: '6'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '54'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '6'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=86&pid=9403
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '54'
 links:
 - url: https://www.legis.iowa.gov/legislators/house
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000088
+- scheme: legacy_openstates
+  identifier: IAL000164
+- scheme: legacy_openstates
+  identifier: IAL000173
+- scheme: legacy_openstates
+  identifier: IAL000263
 sources:
 - url: https://www.legis.iowa.gov/legislators/house
-other_identifiers:
-- identifier: IAL000088
-  scheme: legacy_openstates
-- identifier: IAL000164
-  scheme: legacy_openstates
-- identifier: IAL000173
-  scheme: legacy_openstates
-- identifier: IAL000263
-  scheme: legacy_openstates

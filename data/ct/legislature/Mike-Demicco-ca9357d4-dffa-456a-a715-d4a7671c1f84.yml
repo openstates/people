@@ -1,11 +1,14 @@
 id: ocd-person/ca9357d4-dffa-456a-a715-d4a7671c1f84
 name: Mike Demicco
+given_name: Mike
+family_name: Demicco
+email: Mike.Demicco@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '21'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '21'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3201;Hartford, CT 06106
@@ -14,13 +17,10 @@ contact_details:
   address: 6 Deborah Lane;Farmington, CT 06032
 links:
 - url: http://www.housedems.ct.gov/Demicco
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000198
-  scheme: legacy_openstates
-given_name: Mike
-family_name: Demicco
-email: Mike.Demicco@cga.ct.gov
 other_names:
 - name: Demicco, Mike
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000198
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,23 +1,23 @@
 id: ocd-person/521cb6a5-887e-40f0-8855-507c7adc94e8
 name: Van Taylor
+given_name: Van
+family_name: Taylor
 party:
 - name: Republican
 roles:
-- district: '8'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+- end_date: '2019-01-07'
   type: upper
-  end_date: '2019-01-07'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '8'
 links:
 - url: https://senate.texas.gov/member.php?d=8
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000350
+- scheme: legacy_openstates
+  identifier: TXL000168
+- scheme: legacy_openstates
+  identifier: TXL000512
 sources:
 - url: https://senate.texas.gov/directory.php
 - url: https://senate.texas.gov/member.php?d=8
-other_identifiers:
-- identifier: TXL000350
-  scheme: legacy_openstates
-- identifier: TXL000168
-  scheme: legacy_openstates
-- identifier: TXL000512
-  scheme: legacy_openstates
-given_name: Van
-family_name: Taylor

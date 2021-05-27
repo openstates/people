@@ -1,11 +1,15 @@
 id: ocd-person/57440e55-06ad-4f1f-8aa5-3bdd31a805dd
 name: Nathan P. Small
+given_name: Nathan
+family_name: Small
+email: nathan.small@nmlegis.gov
+image: http://www.nmlegis.gov/Images/Legislators/House/HSMAL.jpg
 party:
 - name: Democratic
 roles:
-- district: '36'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: lower
+  district: '36'
 contact_details:
 - note: Capitol Office
   address: Room 413B State Capitol;Santa Fe, NM 87501
@@ -15,17 +19,13 @@ contact_details:
   voice: 575-496-9540
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HSMAL
-- note: linkedin
-  url: https://www.linkedin.com/in/nathan-small-20685816/
+- url: https://www.linkedin.com/in/nathan-small-20685816/
+  note: linkedin
+ids:
+  twitter: nathanlcnm
+  facebook: NathanForNM
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000427
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HSMAL
-image: http://www.nmlegis.gov/Images/Legislators/House/HSMAL.jpg
-other_identifiers:
-- identifier: NML000427
-  scheme: legacy_openstates
-given_name: Nathan
-family_name: Small
-email: nathan.small@nmlegis.gov
-ids:
-  facebook: NathanForNM
-  twitter: nathanlcnm

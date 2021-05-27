@@ -2,17 +2,17 @@ id: ocd-person/3065eede-b9cd-4f2f-9b54-ddc400d5c10e
 name: Jeff Denham
 given_name: Jeff
 family_name: Denham
+image: http://votesmart.org/canphoto/28769.jpg
 party:
 - name: Republican
 roles:
-- district: '12'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://votesmart.org/canphoto/28769.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '12'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000032
 sources:
 - url: ftp://www.leginfo.ca.gov/pub/bill/
-other_identifiers:
-- identifier: CAL000032
-  scheme: legacy_openstates

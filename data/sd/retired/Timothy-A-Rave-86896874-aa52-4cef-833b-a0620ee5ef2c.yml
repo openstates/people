@@ -3,27 +3,27 @@ name: Timothy A Rave
 given_name: Timothy
 family_name: Rave
 middle_name: A
+image: http://legis.state.sd.us/sessions/2009/ravet.jpg
 party:
 - name: Republican
 roles:
-- district: '25'
-  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-- district: '25'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
-  type: upper
-  start_date: '2011-01-01'
+  district: '25'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://legis.state.sd.us/sessions/2009/ravet.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '25'
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=435
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000085
+- scheme: legacy_openstates
+  identifier: SDL000120
 sources:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=435
 - url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=435
-other_identifiers:
-- identifier: SDL000085
-  scheme: legacy_openstates
-- identifier: SDL000120
-  scheme: legacy_openstates

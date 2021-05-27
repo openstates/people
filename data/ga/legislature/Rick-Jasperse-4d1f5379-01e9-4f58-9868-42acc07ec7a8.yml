@@ -1,11 +1,15 @@
 id: ocd-person/4d1f5379-01e9-4f58-9868-42acc07ec7a8
 name: Rick Jasperse
+given_name: Rick
+family_name: Jasperse
+email: rick.jasperse@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/jasperse-rick-755.jpg
 party:
 - name: Republican
 roles:
-- district: '11'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '11'
 contact_details:
 - note: Capitol Office
   address: 218-C State Capitol;Atlanta, GA 30334
@@ -15,21 +19,17 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
 - url: https://www.legis.ga.gov/members/house/755?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000142
+- scheme: legacy_openstates
+  identifier: GAL000311
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
 - url: https://www.legis.ga.gov/members/house/755?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/jasperse-rick-755.jpg
-family_name: Jasperse
-given_name: Rick
 extras:
   guid: 755
   city: Jasper
   georgia_id: 755
   residence: Jasper
-other_identifiers:
-- identifier: GAL000142
-  scheme: legacy_openstates
-- identifier: GAL000311
-  scheme: legacy_openstates
-email: rick.jasperse@house.ga.gov

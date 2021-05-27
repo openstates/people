@@ -1,16 +1,19 @@
 id: ocd-person/4a3645fe-2a56-400f-ae2a-18e50f2b0bea
 name: Robert F. Martwick
+given_name: Robert
+family_name: Martwick
+image: http://ilga.gov/images/members/{8FA2A22C-6775-4098-905C-0C7D8BBD7AEE}.jpg
 party:
 - name: Democratic
 roles:
-- district: '19'
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+- end_date: 2019-06-28
   type: lower
-  end_date: 2019-06-28
-- district: '10'
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '19'
+- start_date: 2019-06-28
   type: upper
-  start_date: 2019-06-28
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '10'
 contact_details:
 - note: Capitol Office
   address: 127 Capitol Building;Springfield, IL 62706
@@ -21,20 +24,17 @@ contact_details:
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2769
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2970
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL000880
+- scheme: legacy_openstates
+  identifier: ILL000975
+- scheme: legacy_openstates
+  identifier: ILL001020
+- scheme: legacy_openstates
+  identifier: ILL001071
 sources:
 - url: http://ilga.gov/senate/default.asp?GA=101
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2769
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2970
-image: http://ilga.gov/images/members/{8FA2A22C-6775-4098-905C-0C7D8BBD7AEE}.jpg
-other_identifiers:
-- identifier: ILL000880
-  scheme: legacy_openstates
-- identifier: ILL000975
-  scheme: legacy_openstates
-- identifier: ILL001020
-  scheme: legacy_openstates
-- identifier: ILL001071
-  scheme: legacy_openstates
-given_name: Robert
-family_name: Martwick

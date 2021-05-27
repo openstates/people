@@ -1,17 +1,21 @@
 id: ocd-person/1abcdba2-7ed6-4871-889e-9e4c47c4d000
 name: Vito Barbieri
+given_name: Vito
+family_name: Barbieri
+email: VBar@house.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Barbieri1171.jpg
 party:
 - name: Republican
 roles:
-- district: '3'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  type: lower
-  start_date: 2011-01-01
+- start_date: 2011-01-01
   end_date: 2012-12-31
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '3'
+- start_date: 2013-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '2'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1177
@@ -19,18 +23,14 @@ contact_details:
   address: 564 E Prairie Ave, Dalton Gardens, ID, 83815
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=2
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000320
+- scheme: legacy_openstates
+  identifier: IDL000038
+- scheme: legacy_openstates
+  identifier: IDL000143
+- scheme: openstates
+  identifier: ocd-person/0e844eb2-de20-4d4c-b827-a0b1834e2392
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Barbieri1171.jpg
-other_identifiers:
-- identifier: IDL000320
-  scheme: legacy_openstates
-- identifier: IDL000038
-  scheme: legacy_openstates
-- identifier: IDL000143
-  scheme: legacy_openstates
-- identifier: ocd-person/0e844eb2-de20-4d4c-b827-a0b1834e2392
-  scheme: openstates
-given_name: Vito
-family_name: Barbieri
-email: VBar@house.idaho.gov

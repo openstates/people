@@ -1,11 +1,16 @@
 id: ocd-person/2fe99d72-b06e-4d64-b020-189ff2ac2fe6
 name: Mark Kinner
+given_name: Mark
+family_name: Kinner
+email: Mark.Kinner@wyoleg.gov
+birth_date: 1952-07-23
+image: http://wyoleg.gov/LegislatorSummary/Photos/KinnerMH29.jpg
 party:
 - name: Republican
 roles:
-- district: '29'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  type: lower
+  district: '29'
 contact_details:
 - note: District Office
   address: 456 Sumner Street, Sheridan WY 82801
@@ -13,13 +18,12 @@ contact_details:
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/2022
 - url: http://wyoleg.gov/Legislators/2021/R/2022
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000137
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/2022
 - url: http://wyoleg.gov/Legislators/2021/R/2022
-image: http://wyoleg.gov/LegislatorSummary/Photos/KinnerMH29.jpg
-birth_date: '1952-07-23'
-given_name: Mark
-family_name: Kinner
 extras:
   civic_organizations:
   - orgname: Sheridan College, former Board member, past Chairman
@@ -41,7 +45,3 @@ extras:
   religion: Anglican Catholic
   spouse_given_name: Tibbie J. Kinner
   wy_leg_id: 2022
-other_identifiers:
-- identifier: WYL000137
-  scheme: legacy_openstates
-email: Mark.Kinner@wyoleg.gov

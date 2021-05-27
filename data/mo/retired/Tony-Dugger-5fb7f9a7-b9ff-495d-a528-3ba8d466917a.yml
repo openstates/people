@@ -2,26 +2,26 @@ id: ocd-person/5fb7f9a7-b9ff-495d-a528-3ba8d466917a
 name: Tony Dugger
 given_name: Tony
 family_name: Dugger
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=366
 party:
 - name: Republican
 roles:
-- district: '141'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '144'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '141'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=366
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '144'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=51
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000069
+- scheme: legacy_openstates
+  identifier: MOL000239
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=141
-other_identifiers:
-- identifier: MOL000069
-  scheme: legacy_openstates
-- identifier: MOL000239
-  scheme: legacy_openstates

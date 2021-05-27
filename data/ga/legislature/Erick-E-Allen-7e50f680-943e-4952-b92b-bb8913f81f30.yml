@@ -1,11 +1,15 @@
 id: ocd-person/7e50f680-943e-4952-b92b-bb8913f81f30
 name: Erick Allen
+given_name: Erick
+family_name: Allen
+email: erick.allen@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/allen-erick-4939.jpg
 party:
 - name: Democratic
 roles:
-- district: '40'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '40'
 contact_details:
 - note: Capitol Office
   address: 404-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -20,12 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4939&Session=27
 - url: https://www.legis.ga.gov/members/house/4939?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/allen-erick-4939.jpg
-family_name: Allen
-given_name: Erick
 extras:
   guid: 4939
   city: Smyrna
   georgia_id: 4939
   residence: Smyrna
-email: erick.allen@house.ga.gov

@@ -1,20 +1,31 @@
 id: ocd-person/15a07e80-0373-457a-8945-78b6bcbb93c2
 name: V. Lowry Snow
+given_name: V.
+family_name: Snow
+email: vlsnow@le.utah.gov
+image: https://le.utah.gov/images/legislator/SNOWVL.jpg
 party:
 - name: Republican
 roles:
-- district: '74'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '74'
 contact_details:
 - note: District Office
   address: 912 W 1600 S SUITE B-200, ST GEORGE, UT, 84770
   voice: 435-703-3688
 links:
 - url: http://house.utah.gov/rep/SNOWVL
+other_names:
+- name: Snow, V. L.
+- name: Snow, V. Lowry
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000109
+- scheme: legacy_openstates
+  identifier: UTL000184
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/SNOWVL.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFISNOWVL2.pdf
@@ -25,14 +36,3 @@ extras:
   - http://le.utah.gov/house2/CofI/lsnow.pdf
   - http://le.utah.gov/house2/CofI/SNOWVL.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411584
-other_identifiers:
-- identifier: UTL000109
-  scheme: legacy_openstates
-- identifier: UTL000184
-  scheme: legacy_openstates
-given_name: V.
-family_name: Snow
-email: vlsnow@le.utah.gov
-other_names:
-- name: Snow, V. L.
-- name: Snow, V. Lowry

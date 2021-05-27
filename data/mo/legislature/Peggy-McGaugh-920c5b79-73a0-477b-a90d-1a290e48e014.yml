@@ -1,19 +1,28 @@
 id: ocd-person/920c5b79-73a0-477b-a90d-1a290e48e014
 name: Peggy McGaugh
+given_name: Peggy
+family_name: McGaugh
+email: Peggy.McGaugh@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2019
 party:
 - name: Republican
 roles:
-- district: '39'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '39'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 411-2; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 411-2; Jefferson
+    City MO 65101
   voice: 573-751-1468
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=39
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=039
+other_names:
+- name: McGaugh, Peggy
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000479
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=39
@@ -21,12 +30,3 @@ sources:
 extras:
   first_name: Peggy
   last_name: McGaugh
-other_identifiers:
-- identifier: MOL000479
-  scheme: legacy_openstates
-given_name: Peggy
-family_name: McGaugh
-email: Peggy.McGaugh@house.mo.gov
-image: https://house.mo.gov/MemberPhoto.aspx?id=2019
-other_names:
-- name: McGaugh, Peggy

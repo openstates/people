@@ -1,11 +1,14 @@
 id: ocd-person/15f3df31-84bc-4ae6-b399-c9b9c58ecec6
 name: Chris Perone
+given_name: Chris
+family_name: Perone
+email: Chris.Perone@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '137'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '137'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4109;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 203-840-1643
 links:
 - url: http://www.housedems.ct.gov/Perone
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000173
-  scheme: legacy_openstates
-given_name: Chris
-family_name: Perone
-email: Chris.Perone@cga.ct.gov
 other_names:
 - name: Perone, Chris
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000173
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

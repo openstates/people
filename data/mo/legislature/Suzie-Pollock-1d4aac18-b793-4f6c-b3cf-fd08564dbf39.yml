@@ -1,19 +1,25 @@
 id: ocd-person/1d4aac18-b793-4f6c-b3cf-fd08564dbf39
 name: Suzie Pollock
+given_name: Suzie
+family_name: Pollock
+email: Suzie.Pollock@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2070
 party:
 - name: Republican
 roles:
-- district: '123'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '123'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 234; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 234; Jefferson
+    City MO 65101
   voice: 573-751-1119
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=123
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=123
+other_names:
+- name: Pollock, Suzie
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=123
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Suzie
   last_name: Pollock
-email: Suzie.Pollock@house.mo.gov
-family_name: Pollock
-image: https://house.mo.gov/MemberPhoto.aspx?id=2070
-given_name: Suzie
-other_names:
-- name: Pollock, Suzie

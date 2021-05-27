@@ -2,21 +2,21 @@ id: ocd-person/1363b36b-4a7e-475f-889e-27bc37009928
 name: Todd Smith
 given_name: Todd
 family_name: Smith
+image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A4525.jpg
 party:
 - name: Republican
 roles:
-- district: '92'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.legdir.legis.state.tx.us/FlashCardDocs/images/House/small/A4525.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '92'
 links:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A4525
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000343
+- scheme: legacy_openstates
+  identifier: TXL000161
 sources:
 - url: http://www.legdir.legis.state.tx.us/MemberInfo.aspx?Chamber=H&Code=A4525
-other_identifiers:
-- identifier: TXL000343
-  scheme: legacy_openstates
-- identifier: TXL000161
-  scheme: legacy_openstates

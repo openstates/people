@@ -1,12 +1,16 @@
 id: ocd-person/e5ee7c55-aa4e-4ce8-b3c8-5ab542f7a836
 name: Sage G. Dixon
+given_name: Sage
+family_name: Dixon
+email: SDixon@house.idaho.gov
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Dixon3130.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+- start_date: 2013-01-01
   type: lower
-  start_date: 2013-01-01
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '1'
 contact_details:
 - note: Capitol Office
   voice: 208-332-1185
@@ -14,18 +18,14 @@ contact_details:
   address: PO Box 206, Ponderay, ID, 83852
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=1
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IDL000231
+- scheme: legacy_openstates
+  identifier: IDL000206
+- scheme: legacy_openstates
+  identifier: IDL000222
+- scheme: openstates
+  identifier: ocd-person/11c05e7a-2f2b-4a0f-8d25-11cde1a6d22a
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Dixon3130.jpg
-other_identifiers:
-- identifier: IDL000231
-  scheme: legacy_openstates
-- identifier: IDL000206
-  scheme: legacy_openstates
-- identifier: IDL000222
-  scheme: legacy_openstates
-- identifier: ocd-person/11c05e7a-2f2b-4a0f-8d25-11cde1a6d22a
-  scheme: openstates
-given_name: Sage
-family_name: Dixon
-email: SDixon@house.idaho.gov

@@ -1,11 +1,15 @@
 id: ocd-person/dd2200c1-2bdb-4afc-a557-ebcbb5f1eee8
 name: Donny Lambeth
+given_name: Donny
+family_name: Lambeth
+email: Donny.Lambeth@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/646/High
 party:
 - name: Republican
 roles:
-- district: '75'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '75'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 303;Raleigh, NC 27603-5925
@@ -14,16 +18,12 @@ contact_details:
   address: 4627 S Main St;Winston-Salem, NC 27127
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/646
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000288
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/646
-image: https://www.ncleg.gov/Members/MemberImage/H/646/High
 extras:
   counties:
   - Forsyth
   notice: null
-other_identifiers:
-- identifier: NCL000288
-  scheme: legacy_openstates
-given_name: Donny
-family_name: Lambeth
-email: Donny.Lambeth@ncleg.gov

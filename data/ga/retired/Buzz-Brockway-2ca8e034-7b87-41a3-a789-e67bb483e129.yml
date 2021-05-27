@@ -1,24 +1,24 @@
 id: ocd-person/2ca8e034-7b87-41a3-a789-e67bb483e129
 name: Buzz Brockway
+given_name: Buzz
+family_name: Brockway
+image: http://www.house.ga.gov/SiteCollectionImages/BrockwayBuzz773.jpg
 party:
 - name: Republican
 roles:
-- district: '102'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '102'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=773&Session=25
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000073
+- scheme: legacy_openstates
+  identifier: GAL000249
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=773&Session=25
-image: http://www.house.ga.gov/SiteCollectionImages/BrockwayBuzz773.jpg
-family_name: Brockway
-given_name: Buzz
 extras:
   guid: 773
-other_identifiers:
-- identifier: GAL000073
-  scheme: legacy_openstates
-- identifier: GAL000249
-  scheme: legacy_openstates

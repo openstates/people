@@ -1,20 +1,31 @@
 id: ocd-person/0c6f1552-42b3-46fa-9dcc-f02e8d1d80a6
 name: Paul Ray
+given_name: Paul
+family_name: Ray
+email: pray@le.utah.gov
+image: https://le.utah.gov/images/legislator/RAYP.jpg
 party:
 - name: Republican
 roles:
-- district: '13'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  type: lower
+  district: '13'
 contact_details:
 - note: District Office
   address: PO BOX 977, CLEARFIELD, UT, 84089
   voice: 801-725-2719
 links:
 - url: http://house.utah.gov/rep/RAYP
+other_names:
+- name: Ray, Paul
+- name: Ray, P.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000089
+- scheme: legacy_openstates
+  identifier: UTL000239
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/RAYP.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFIRAYP1.pdf
@@ -26,14 +37,3 @@ extras:
   - http://le.utah.gov/house2/CofI/pray.pdf
   - http://le.utah.gov/house2/CofI/RAYP.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1068
-other_identifiers:
-- identifier: UTL000089
-  scheme: legacy_openstates
-- identifier: UTL000239
-  scheme: legacy_openstates
-given_name: Paul
-family_name: Ray
-email: pray@le.utah.gov
-other_names:
-- name: Ray, Paul
-- name: Ray, P.

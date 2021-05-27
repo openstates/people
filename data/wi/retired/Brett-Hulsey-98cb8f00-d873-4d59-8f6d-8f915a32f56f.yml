@@ -2,26 +2,26 @@ id: ocd-person/98cb8f00-d873-4d59-8f6d-8f915a32f56f
 name: Brett Hulsey
 given_name: Brett
 family_name: Hulsey
+image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm78.jpeg
 party:
 - name: Democratic
 roles:
-- district: '78'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '78'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://legis.wisconsin.gov/sitecollectionimages/2013/asm78.jpeg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '77'
 links:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=78&h=A
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000460
+- scheme: legacy_openstates
+  identifier: WIL000512
 sources:
 - url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=78&h=A
-other_identifiers:
-- identifier: WIL000460
-  scheme: legacy_openstates
-- identifier: WIL000512
-  scheme: legacy_openstates

@@ -3,26 +3,26 @@ name: Robert F Hagan
 given_name: Robert
 family_name: Hagan
 middle_name: F
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/58.jpg
 party:
 - name: Democratic
 roles:
-- district: '58'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '58'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/58.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '60'
 links:
 - url: http://www.ohiohouse.gov/robert-f-hagan
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000093
+- scheme: legacy_openstates
+  identifier: OHL000227
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000093
-  scheme: legacy_openstates
-- identifier: OHL000227
-  scheme: legacy_openstates

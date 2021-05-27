@@ -1,15 +1,19 @@
 id: ocd-person/8e302b97-4868-4575-a56f-3881e91ae0f8
 name: Sylvia Santana
+given_name: Sylvia
+family_name: Santana
+email: senssantana@senate.michigan.gov
+image: https://senate.michigan.gov/_images/3rd.jpg
 party:
 - name: Democratic
 roles:
-- district: '9'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '3'
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: upper
+  district: '9'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: 5600 Binsfeld Bldg
@@ -17,15 +21,11 @@ contact_details:
   fax: 517-373-5338
 links:
 - url: https://senatedems.com/santana/
-- note: Contact
-  url: https://senatedems.com/santana/contact
+- url: https://senatedems.com/santana/contact
+  note: Contact
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000356
 sources:
 - url: https://senatedems.com/santana/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-other_identifiers:
-- identifier: MIL000356
-  scheme: legacy_openstates
-given_name: Sylvia
-family_name: Santana
-email: senssantana@senate.michigan.gov
-image: https://senate.michigan.gov/_images/3rd.jpg

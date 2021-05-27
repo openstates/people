@@ -2,26 +2,26 @@ id: ocd-person/7f62f076-8153-4216-bf5b-c26ce0b5da60
 name: Jack Hatch
 given_name: Jack
 family_name: Hatch
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=162
 party:
 - name: Democratic
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   type: upper
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '17'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=85&pid=162
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '33'
 links:
 - url: https://www.legis.iowa.gov/legislators/senate
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000027
+- scheme: legacy_openstates
+  identifier: IAL000198
 sources:
 - url: https://www.legis.iowa.gov/legislators/senate
-other_identifiers:
-- identifier: IAL000027
-  scheme: legacy_openstates
-- identifier: IAL000198
-  scheme: legacy_openstates

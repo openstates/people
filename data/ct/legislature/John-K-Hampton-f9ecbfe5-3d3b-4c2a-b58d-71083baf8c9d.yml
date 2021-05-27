@@ -1,11 +1,14 @@
 id: ocd-person/f9ecbfe5-3d3b-4c2a-b58d-71083baf8c9d
 name: John K. Hampton
+given_name: John
+family_name: Hampton
+email: John.Hampton@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '16'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '16'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4017;Hartford, CT 06106
@@ -15,13 +18,10 @@ contact_details:
   voice: 860-803-4072
 links:
 - url: http://www.housedems.ct.gov/Hampton
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000197
-  scheme: legacy_openstates
-given_name: John
-family_name: Hampton
-email: John.Hampton@cga.ct.gov
 other_names:
 - name: Hampton, John K.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000197
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

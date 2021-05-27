@@ -2,19 +2,19 @@ id: ocd-person/729f0287-d6a7-4ebf-86e4-88ffae0ef510
 name: Bill LaVoy
 given_name: Bill
 family_name: LaVoy
+image: http://media.housedems.com/media_cache/75/3a/e9/74/2e/c5/7d/0d/79/b4/f8/eb/93/02/9a/6f/68/b6/90/40/LaVoy_Headshot.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://media.housedems.com/media_cache/75/3a/e9/74/2e/c5/7d/0d/79/b4/f8/eb/93/02/9a/6f/68/b6/90/40/LaVoy_Headshot.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '17'
 links:
 - url: http://housedems.com/state-rep-bill-lavoy
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MIL000202
 sources:
 - url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx
-other_identifiers:
-- identifier: MIL000202
-  scheme: legacy_openstates

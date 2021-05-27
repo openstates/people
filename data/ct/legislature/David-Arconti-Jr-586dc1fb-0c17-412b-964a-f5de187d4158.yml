@@ -1,11 +1,14 @@
 id: ocd-person/586dc1fb-0c17-412b-964a-f5de187d4158
 name: David Arconti Jr.
+given_name: David
+family_name: Arconti
+email: David.Arconti@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '109'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '109'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 3902;Hartford, CT 06106
@@ -15,19 +18,16 @@ contact_details:
   voice: 203-313-4407
 links:
 - url: http://www.housedems.ct.gov/Arconti
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000215
-  scheme: legacy_openstates
-- identifier: CTL000228
-  scheme: legacy_openstates
-- identifier: CTL000244
-  scheme: legacy_openstates
-- identifier: CTL000253
-  scheme: legacy_openstates
-given_name: David
-family_name: Arconti
-email: David.Arconti@cga.ct.gov
 other_names:
 - name: Arconti, David
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000215
+- scheme: legacy_openstates
+  identifier: CTL000228
+- scheme: legacy_openstates
+  identifier: CTL000244
+- scheme: legacy_openstates
+  identifier: CTL000253
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

@@ -1,20 +1,23 @@
 id: ocd-person/e53d252e-aa14-4448-b6a1-86462d41d0c3
 name: Scott Court
+given_name: Scott
+family_name: Court
+birth_date: 1953-09-19
+image: http://wyoleg.gov/LegislatorSummary/Photos/CourtSH24.jpg
 party:
 - name: Republican
 roles:
-- district: '24'
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+- end_date: '2019-01-06'
   type: lower
-  end_date: '2019-01-06'
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '24'
 links:
 - url: http://wyoleg.gov/Legislators/2018/R/2039
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WYL000148
 sources:
 - url: http://wyoleg.gov/Legislators/2018/R/2039
-image: http://wyoleg.gov/LegislatorSummary/Photos/CourtSH24.jpg
-birth_date: '1953-09-19'
-given_name: Scott
-family_name: Court
 extras:
   county: Park
   education:
@@ -30,6 +33,3 @@ extras:
   religion: ''
   spouse_given_name: null
   wy_leg_id: 2039
-other_identifiers:
-- identifier: WYL000148
-  scheme: legacy_openstates

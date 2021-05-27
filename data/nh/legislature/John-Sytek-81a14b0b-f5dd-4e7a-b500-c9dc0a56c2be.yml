@@ -1,11 +1,15 @@
 id: ocd-person/81a14b0b-f5dd-4e7a-b500-c9dc0a56c2be
 name: John Sytek
+given_name: John
+family_name: Sytek
+email: john.sytek@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/375692.jpg
 party:
 - name: Republican
 roles:
-- district: Rockingham 8
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Rockingham 8
 contact_details:
 - note: District Office
   address: 34 Town Village Drive;Salem, NH 03079-3288
@@ -13,20 +17,16 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000378
+- scheme: legacy_openstates
+  identifier: NHL000755
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=375692
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/375692.jpg
 extras:
   first_name: John
   last_name: Sytek
   middle_name: ''
-other_identifiers:
-- identifier: NHL000378
-  scheme: legacy_openstates
-- identifier: NHL000755
-  scheme: legacy_openstates
-given_name: John
-family_name: Sytek
-email: john.sytek@leg.state.nh.us

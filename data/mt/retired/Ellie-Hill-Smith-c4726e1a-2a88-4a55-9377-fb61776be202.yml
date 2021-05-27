@@ -1,22 +1,22 @@
 id: ocd-person/c4726e1a-2a88-4a55-9377-fb61776be202
 name: Ellie Hill Smith
+given_name: Ellie Hill
+family_name: Smith
 party:
 - name: Democratic
 roles:
-- district: '90'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '90'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4832
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/4832
+  note: legislator page
 other_identifiers:
-- identifier: MTL000382
-  scheme: legacy_openstates
-- identifier: MTL000419
-  scheme: legacy_openstates
-given_name: Ellie Hill
-family_name: Smith
+- scheme: legacy_openstates
+  identifier: MTL000382
+- scheme: legacy_openstates
+  identifier: MTL000419
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

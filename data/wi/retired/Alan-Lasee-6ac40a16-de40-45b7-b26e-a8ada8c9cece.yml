@@ -5,13 +5,13 @@ family_name: Lasee
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  type: upper
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '1'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WIL000334
 sources:
 - url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=1
-other_identifiers:
-- identifier: WIL000334
-  scheme: legacy_openstates

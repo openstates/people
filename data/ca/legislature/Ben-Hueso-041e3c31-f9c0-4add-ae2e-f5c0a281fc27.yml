@@ -1,11 +1,15 @@
 id: ocd-person/041e3c31-f9c0-4add-ae2e-f5c0a281fc27
 name: Ben Hueso
+given_name: Ben
+family_name: Hueso
+gender: Male
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/hueso-ben.jpg
 party:
 - name: Democratic
 roles:
-- district: '40'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: upper
+  district: '40'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4035, Sacramento, CA 95814-4900
@@ -15,20 +19,16 @@ contact_details:
   voice: 760-335-3442
 links:
 - url: https://senate.ca.gov/sd40
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD40&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD40&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000141
+- scheme: legacy_openstates
+  identifier: CAL000258
+- scheme: legacy_openstates
+  identifier: CAL000378
+- scheme: legacy_openstates
+  identifier: CAL000423
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/hueso-ben.jpg
-other_identifiers:
-- identifier: CAL000141
-  scheme: legacy_openstates
-- identifier: CAL000258
-  scheme: legacy_openstates
-- identifier: CAL000378
-  scheme: legacy_openstates
-- identifier: CAL000423
-  scheme: legacy_openstates
-given_name: Ben
-family_name: Hueso
-gender: Male

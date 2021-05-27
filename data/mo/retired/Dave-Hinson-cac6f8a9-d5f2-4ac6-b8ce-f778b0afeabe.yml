@@ -2,26 +2,26 @@ id: ocd-person/cac6f8a9-d5f2-4ac6-b8ce-f778b0afeabe
 name: Dave Hinson
 given_name: Dave
 family_name: Hinson
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=500
 party:
 - name: Republican
 roles:
-- district: '119'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-- district: '98'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '119'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=500
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '98'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=108
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000091
+- scheme: legacy_openstates
+  identifier: MOL000270
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=119
-other_identifiers:
-- identifier: MOL000091
-  scheme: legacy_openstates
-- identifier: MOL000270
-  scheme: legacy_openstates

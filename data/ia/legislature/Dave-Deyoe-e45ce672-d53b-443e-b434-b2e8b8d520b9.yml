@@ -1,11 +1,15 @@
 id: ocd-person/e45ce672-d53b-443e-b434-b2e8b8d520b9
 name: Dave Deyoe
+given_name: Dave
+family_name: Deyoe
+email: dave.deyoe@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=6289
 party:
 - name: Republican
 roles:
-- district: '49'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: lower
+  district: '49'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3221
@@ -15,15 +19,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6289
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6289
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000064
+- scheme: legacy_openstates
+  identifier: IAL000237
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6289
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6289
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=6289
-other_identifiers:
-- identifier: IAL000064
-  scheme: legacy_openstates
-- identifier: IAL000237
-  scheme: legacy_openstates
-given_name: Dave
-family_name: Deyoe
-email: dave.deyoe@legis.iowa.gov

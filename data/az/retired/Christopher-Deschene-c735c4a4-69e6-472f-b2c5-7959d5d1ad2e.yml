@@ -2,17 +2,17 @@ id: ocd-person/c735c4a4-69e6-472f-b2c5-7959d5d1ad2e
 name: Christopher Deschene
 given_name: Christopher
 family_name: Deschene
+image: http://www.azleg.gov/alisImages/MemberPhotos/49leg/House/DESCHENE.gif
 party:
 - name: Democratic
 roles:
-- district: '2'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2010-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/49leg/House/DESCHENE.gif
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '2'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000053
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=89&body=H
-other_identifiers:
-- identifier: AZL000053
-  scheme: legacy_openstates

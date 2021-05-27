@@ -1,11 +1,15 @@
 id: ocd-person/ffdbb3fa-0445-460a-9501-18b5028fbe50
 name: Dean Arp
+given_name: Dean
+family_name: Arp
+email: Dean.Arp@ncleg.gov
+image: https://www.ncleg.gov/Members/MemberImage/H/640/High
 party:
 - name: Republican
 roles:
-- district: '69'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  type: lower
+  district: '69'
 contact_details:
 - note: Capitol Office
   address: 300 N. Salisbury Street, Rm. 307A;Raleigh, NC 27603-5925
@@ -14,16 +18,12 @@ contact_details:
   address: PO Box 1511;Monroe, NC 28111-1511
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/640
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NCL000265
 sources:
 - url: https://www.ncleg.gov/Members/Biography/H/640
-image: https://www.ncleg.gov/Members/MemberImage/H/640/High
 extras:
   counties:
   - Union
   notice: null
-other_identifiers:
-- identifier: NCL000265
-  scheme: legacy_openstates
-given_name: Dean
-family_name: Arp
-email: Dean.Arp@ncleg.gov

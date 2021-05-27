@@ -1,19 +1,25 @@
 id: ocd-person/4d763e2a-ab08-46ea-8561-9b3b74b34971
 name: Bob Bromley
+given_name: Bob
+family_name: Bromley
+email: Bob.Bromley@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2074
 party:
 - name: Republican
 roles:
-- district: '162'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
+  district: '162'
 contact_details:
 - note: Capitol Office
-  address: 'MO House of Representatives; 201 West Capitol Avenue; Room 403-A; Jefferson
-    City MO 65101 '
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 403-A; Jefferson
+    City MO 65101
   voice: 573-751-7082
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=162
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=162
+other_names:
+- name: Bromley, Bob
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=162
@@ -21,9 +27,3 @@ sources:
 extras:
   first_name: Bob
   last_name: Bromley
-email: Bob.Bromley@house.mo.gov
-family_name: Bromley
-image: https://house.mo.gov/MemberPhoto.aspx?id=2074
-given_name: Bob
-other_names:
-- name: Bromley, Bob

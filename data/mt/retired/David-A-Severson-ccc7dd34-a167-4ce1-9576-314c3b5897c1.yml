@@ -1,20 +1,20 @@
 id: ocd-person/ccc7dd34-a167-4ce1-9576-314c3b5897c1
 name: David A Severson
+given_name: David
+family_name: Severson
 party:
 - name: Democratic
 roles:
-- district: '89'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+- end_date: '2018-01-01'
   type: lower
-  end_date: '2018-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '89'
 links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/5004
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
+- url: https://leg.mt.gov/legislator-information/roster/individual/5004
+  note: legislator page
 other_identifiers:
-- identifier: MTL000423
-  scheme: legacy_openstates
-given_name: David
-family_name: Severson
+- scheme: legacy_openstates
+  identifier: MTL000423
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page

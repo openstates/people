@@ -1,29 +1,29 @@
 id: ocd-person/c6848e92-2caf-4ebd-80f9-e57ba7417213
 name: Mark Neuman
+given_name: Mark
+family_name: Neuman
+email: Representative.Mark.Neuman@akleg.gov
+image: http://akleg.gov/images/legislators/neu.jpg
 party:
 - name: Republican
 roles:
-- district: '8'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  type: lower
-links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=neu
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=neu
+  district: '8'
 contact_details:
 - note: Capitol Office
   address: State Capitol Room 104; Juneau AK, 99801
   voice: 907-465-2679
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=neu
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=neu
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000048
+- scheme: legacy_openstates
+  identifier: AKL000111
+- scheme: legacy_openstates
+  identifier: AKL000154
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=neu
 - url: http://w3.akleg.gov/
-image: http://akleg.gov/images/legislators/neu.jpg
-other_identifiers:
-- identifier: AKL000048
-  scheme: legacy_openstates
-- identifier: AKL000111
-  scheme: legacy_openstates
-- identifier: AKL000154
-  scheme: legacy_openstates
-given_name: Mark
-family_name: Neuman
-email: Representative.Mark.Neuman@akleg.gov

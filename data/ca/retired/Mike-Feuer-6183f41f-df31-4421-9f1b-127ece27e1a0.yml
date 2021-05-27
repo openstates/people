@@ -2,21 +2,21 @@ id: ocd-person/6183f41f-df31-4421-9f1b-127ece27e1a0
 name: Mike Feuer
 given_name: Mike
 family_name: Feuer
+image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/42.jpg?1320967988
 party:
 - name: Democratic
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/42.jpg?1320967988
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '42'
 links:
 - url: http://asmdc.org/members/a42
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000110
+- scheme: legacy_openstates
+  identifier: CAL000238
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_identifiers:
-- identifier: CAL000110
-  scheme: legacy_openstates
-- identifier: CAL000238
-  scheme: legacy_openstates

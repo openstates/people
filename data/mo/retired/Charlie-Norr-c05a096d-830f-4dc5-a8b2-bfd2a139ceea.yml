@@ -2,19 +2,19 @@ id: ocd-person/c05a096d-830f-4dc5-a8b2-bfd2a139ceea
 name: Charlie Norr
 given_name: Charlie
 family_name: Norr
+image: http://www.house.mo.gov/MemberPhoto.aspx?id=77
 party:
 - name: Democratic
 roles:
-- district: '132'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.house.mo.gov/MemberPhoto.aspx?id=77
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '132'
 links:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=72
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000320
 sources:
 - url: http://www.house.mo.gov/member.aspx?year=2016&district=132
-other_identifiers:
-- identifier: MOL000320
-  scheme: legacy_openstates

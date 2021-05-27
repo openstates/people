@@ -2,25 +2,25 @@ id: ocd-person/5409c68d-660b-4b03-93ef-0f171f10b90a
 name: "Marisa M\xE1rquez"
 given_name: Marisa
 family_name: "M\xE1rquez"
+image: http://www.house.state.tx.us/photos/members/3750.jpg
 party:
 - name: Democratic
 roles:
-- district: '77'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2018-12-31'
-image: http://www.house.state.tx.us/photos/members/3750.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '77'
 links:
 - url: http://www.house.state.tx.us/members/member-page/?district=77
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000307
+- scheme: legacy_openstates
+  identifier: TXL000125
+- scheme: legacy_openstates
+  identifier: TXL000447
+- scheme: legacy_openstates
+  identifier: TXL000562
 sources:
 - url: http://www.house.state.tx.us/members/member-page/?district=77
-other_identifiers:
-- identifier: TXL000307
-  scheme: legacy_openstates
-- identifier: TXL000125
-  scheme: legacy_openstates
-- identifier: TXL000447
-  scheme: legacy_openstates
-- identifier: TXL000562
-  scheme: legacy_openstates

@@ -1,25 +1,7 @@
 id: ocd-person/a9f861bf-1a13-4d3b-816a-69589e9b25e7
 name: Paul Bettencourt
-party:
-- name: Republican
-roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0107
-links:
-- url: https://senate.texas.gov/member.php?d=7
-sources:
-- url: https://senate.texas.gov/member.php?d=7
-other_identifiers:
-- identifier: TXL000482
-  scheme: legacy_openstates
 given_name: Paul
 family_name: Bettencourt
-image: https://senate.texas.gov/members/d07/img/headshot.jpg
 biography: "First elected to the Senate in 2014, Senator Paul Bettencourt represents\
   \ Senate District 7, which encompasses most of West Harris County. He previously\
   \ served 10 years, from 1998 - 2008, as the Harris County Tax Assessor-Collector,\
@@ -72,3 +54,21 @@ biography: "First elected to the Senate in 2014, Senator Paul Bettencourt repres
   \ degree Knight of Columbus.\r \r Senate District 7 is located in Harris County\
   \ and includes Bunker Hill Village, Hedwig Village, parts of Houston, Hunters Creek\
   \ Village, Jersey Village, Piney Point Village, Spring, and Tomball."
+image: https://senate.texas.gov/members/d07/img/headshot.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '7'
+contact_details:
+- note: Capitol Office
+  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0107
+links:
+- url: https://senate.texas.gov/member.php?d=7
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000482
+sources:
+- url: https://senate.texas.gov/member.php?d=7

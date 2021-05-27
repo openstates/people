@@ -1,11 +1,15 @@
 id: ocd-person/161479ed-b2dd-46e6-b43d-d82d2cce898e
 name: Steve Halloran
+given_name: Steve
+family_name: Halloran
+email: shalloran@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist33.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '33'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '33'
 contact_details:
 - note: Capitol Office
   address: Room 1022; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist33
 - url: http://news.legislature.ne.gov/dist33/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000090
+- scheme: legacy_openstates
+  identifier: NEL000163
 sources:
 - url: http://news.legislature.ne.gov/dist33
 - url: http://news.legislature.ne.gov/dist33/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist33.jpg
-other_identifiers:
-- identifier: NEL000090
-  scheme: legacy_openstates
-- identifier: NEL000163
-  scheme: legacy_openstates
-given_name: Steve
-family_name: Halloran
-email: shalloran@leg.ne.gov

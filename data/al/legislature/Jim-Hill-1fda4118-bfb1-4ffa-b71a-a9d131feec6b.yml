@@ -1,30 +1,30 @@
 id: ocd-person/1fda4118-bfb1-4ffa-b71a-a9d131feec6b
 name: Jim Hill
+given_name: Jim
+family_name: Hill
+email: jim.hill@alhouse.gov
+image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hill_50.jpeg
 party:
 - name: Republican
 roles:
-- district: '50'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  type: lower
-links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100531&OID_PERSON=7696
+  district: '50'
 contact_details:
 - note: Capitol Office
   address: Suite 419;11 S. Union Street;Montgomery, AL 36130
   voice: 334-261-0494
+links:
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100531&OID_PERSON=7696
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000164
+- scheme: legacy_openstates
+  identifier: ALL000461
+- scheme: legacy_openstates
+  identifier: ALL000305
+- scheme: legacy_openstates
+  identifier: ALL000513
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100531&OID_PERSON=7696
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hill_50.jpeg
-other_identifiers:
-- identifier: ALL000164
-  scheme: legacy_openstates
-- identifier: ALL000461
-  scheme: legacy_openstates
-- identifier: ALL000305
-  scheme: legacy_openstates
-- identifier: ALL000513
-  scheme: legacy_openstates
-given_name: Jim
-family_name: Hill
-email: jim.hill@alhouse.gov

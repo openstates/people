@@ -2,19 +2,19 @@ id: ocd-person/f0742791-b30b-4129-9ee7-b32cfba9b554
 name: Brenda Council
 given_name: Brenda
 family_name: Council
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist11.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '11'
-  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist11.jpg
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '11'
 links:
 - url: http://news.legislature.ne.gov/dist11/biography/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000011
 sources:
 - url: http://news.legislature.ne.gov/dist11/biography/
-other_identifiers:
-- identifier: NEL000011
-  scheme: legacy_openstates

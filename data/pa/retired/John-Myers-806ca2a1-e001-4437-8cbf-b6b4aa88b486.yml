@@ -2,22 +2,22 @@ id: ocd-person/806ca2a1-e001-4437-8cbf-b6b4aa88b486
 name: John Myers
 given_name: John
 family_name: Myers
+image: http://www.house.state.pa.us/members/districts/201/images/267.jpg
 party:
 - name: Democratic
 roles:
-- district: '201'
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2012-12-31'
-image: http://www.house.state.pa.us/members/districts/201/images/267.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '201'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=267
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000180
+- scheme: legacy_openstates
+  identifier: PAL000389
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=267
-other_identifiers:
-- identifier: PAL000180
-  scheme: legacy_openstates
-- identifier: PAL000389
-  scheme: legacy_openstates

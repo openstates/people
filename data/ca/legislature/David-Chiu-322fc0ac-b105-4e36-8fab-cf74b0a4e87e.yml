@@ -1,11 +1,15 @@
 id: ocd-person/322fc0ac-b105-4e36-8fab-cf74b0a4e87e
 name: David Chiu
+given_name: David
+family_name: Chiu
+gender: Male
+image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD17_Chiu_Portrait150_20141201.jpg
 party:
 - name: Democratic
 roles:
-- district: '17'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  type: lower
+  district: '17'
 contact_details:
 - note: Capitol Office
   address: P.O. Box 942849;Sacramento, CA 94249-0017
@@ -15,14 +19,10 @@ contact_details:
   voice: 415-557-3013
 links:
 - url: https://a17.asmdc.org
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD17&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD17&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000452
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD17_Chiu_Portrait150_20141201.jpg
-other_identifiers:
-- identifier: CAL000452
-  scheme: legacy_openstates
-given_name: David
-family_name: Chiu
-gender: Male

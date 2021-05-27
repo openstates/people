@@ -2,19 +2,19 @@ id: ocd-person/7c9c4bb1-bdc4-4f71-b409-5f7ef48e1cdd
 name: Hank Lott
 given_name: Hank
 family_name: Lott
+image: http://billstatus.ls.state.ms.us/members/house/lott.jpg
 party:
 - name: Republican
 roles:
-- district: '101'
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
-  start_date: '2012-01-01'
+- start_date: '2012-01-01'
   end_date: '2015-12-31'
-image: http://billstatus.ls.state.ms.us/members/house/lott.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '101'
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/lott.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000224
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/lott.xml
-other_identifiers:
-- identifier: MSL000224
-  scheme: legacy_openstates

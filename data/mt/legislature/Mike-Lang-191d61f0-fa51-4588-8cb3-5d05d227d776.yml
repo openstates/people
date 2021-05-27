@@ -1,45 +1,45 @@
 id: ocd-person/191d61f0-fa51-4588-8cb3-5d05d227d776
 name: Mike Lang
-party:
-- name: Republican
-roles:
-- district: '35'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  end_date: 2014-12-31
-- district: '33'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: lower
-  end_date: 2016-12-31
-- district: '17'
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  type: upper
-contact_details:
-- note: Capitol Office
-  voice: 406-654-7357
-  address: PO BOX 104;Malta, MT 59538
-links:
-- note: legislator page
-  url: https://leg.mt.gov/legislator-information/roster/individual/4726
-- url: https://leg.mt.gov/legislator-information/roster/individual/5012
-- url: https://leg.mt.gov/legislator-information/roster/individual/6821
-sources:
-- note: legislator list page
-  url: https://leg.mt.gov/legislator-information/?session_select=111
-- url: https://leg.mt.gov/legislator-information/roster/individual/5012
-- url: https://leg.mt.gov/legislator-information/?session_select=113
-- url: https://leg.mt.gov/legislator-information/roster/individual/6821
-other_identifiers:
-- identifier: MTL000408
-  scheme: legacy_openstates
-- identifier: MTL000195
-  scheme: legacy_openstates
-- identifier: MTL000321
-  scheme: legacy_openstates
-- identifier: ocd-person/cfd94df9-6689-4425-a3e4-c8f010c96fd8
-  scheme: openstates
 given_name: Mike
 family_name: Lang
 email: mike.lang@mtleg.gov
+party:
+- name: Republican
+roles:
+- end_date: 2014-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '35'
+- end_date: 2016-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '33'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '17'
+contact_details:
+- note: Capitol Office
+  address: PO BOX 104;Malta, MT 59538
+  voice: 406-654-7357
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4726
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5012
+- url: https://leg.mt.gov/legislator-information/roster/individual/6821
 other_names:
 - name: Lang, Mike
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000408
+- scheme: legacy_openstates
+  identifier: MTL000195
+- scheme: legacy_openstates
+  identifier: MTL000321
+- scheme: openstates
+  identifier: ocd-person/cfd94df9-6689-4425-a3e4-c8f010c96fd8
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5012
+- url: https://leg.mt.gov/legislator-information/?session_select=113
+- url: https://leg.mt.gov/legislator-information/roster/individual/6821

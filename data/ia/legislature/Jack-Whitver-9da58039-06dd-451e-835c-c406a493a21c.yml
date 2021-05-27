@@ -1,11 +1,15 @@
 id: ocd-person/9da58039-06dd-451e-835c-c406a493a21c
 name: Jack Whitver
+given_name: Jack
+family_name: Whitver
+email: jack.whitver@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=9768
 party:
 - name: Republican
 roles:
-- district: '19'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '19'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -14,15 +18,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9768
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9768
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000048
+- scheme: legacy_openstates
+  identifier: IAL000220
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9768
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9768
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=9768
-other_identifiers:
-- identifier: IAL000048
-  scheme: legacy_openstates
-- identifier: IAL000220
-  scheme: legacy_openstates
-given_name: Jack
-family_name: Whitver
-email: jack.whitver@legis.iowa.gov

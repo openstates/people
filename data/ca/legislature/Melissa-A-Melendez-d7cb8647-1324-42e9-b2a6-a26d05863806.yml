@@ -1,16 +1,20 @@
 id: ocd-person/d7cb8647-1324-42e9-b2a6-a26d05863806
 name: Melissa A. Melendez
+given_name: Melissa
+family_name: Melendez
+gender: Female
+image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sen_melendez.jpg
 party:
 - name: Republican
 roles:
-- district: '67'
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+- end_date: 2020-05-18
   type: lower
-  end_date: 2020-05-18
-- district: '28'
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '67'
+- start_date: 2020-05-18
   type: upper
-  start_date: 2020-05-18
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '28'
 contact_details:
 - note: Capitol Office
   address: State Capitol, Room 4082, Sacramento, CA 95814-4900
@@ -20,14 +24,10 @@ contact_details:
   voice: 760-398-6442
 links:
 - url: https://senate.ca.gov/sd28
-- note: Contact Form
-  url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD28&inframe=N
+- url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD28&inframe=N
+  note: Contact Form
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000388
 sources:
 - url: http://senate.ca.gov/senators
-image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sen_melendez.jpg
-other_identifiers:
-- identifier: CAL000388
-  scheme: legacy_openstates
-given_name: Melissa
-family_name: Melendez
-gender: Female

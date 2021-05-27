@@ -2,22 +2,22 @@ id: ocd-person/57445575-e70b-4fc9-8080-3d3f61af5060
 name: Steve Smith
 given_name: Steve
 family_name: Smith
+image: http://www.house.leg.state.mn.us/hinfo/memberimgls87/33A.GIF
 party:
 - name: Republican
 roles:
-- district: 33A
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: lower
-  start_date: '2009-01-01'
+- start_date: '2009-01-01'
   end_date: '2014-12-31'
-image: http://www.house.leg.state.mn.us/hinfo/memberimgls87/33A.GIF
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 33A
 links:
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=10624
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000132
+- scheme: legacy_openstates
+  identifier: MNL000345
 sources:
 - url: http://www.house.leg.state.mn.us/members/housemembers.asp
 - url: http://www.house.leg.state.mn.us/members/members.asp?id=10624
-other_identifiers:
-- identifier: MNL000132
-  scheme: legacy_openstates
-- identifier: MNL000345
-  scheme: legacy_openstates

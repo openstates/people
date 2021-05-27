@@ -1,17 +1,23 @@
 id: ocd-person/53895be7-c7bb-482d-b812-f710b41282ce
 name: Kim F. Coleman
+given_name: Kim
+family_name: Coleman
+email: kimcoleman@le.utah.gov
+image: https://le.utah.gov/images/legislator/COLEMK.jpg
 party:
 - name: Republican
 roles:
-- district: '42'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '42'
 links:
 - url: http://house.utah.gov/rep/COLEMK
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000279
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/COLEMK.jpg
 extras:
   links:
   - https://le.utah.gov/house2/CofI/COFICOLEMK.pdf
@@ -19,9 +25,3 @@ extras:
   - http://le.utah.gov/house2/CofI/kcoleman2.pdf
   - http://le.utah.gov/house2/CofI/kcoleman.pdf
   - http://www.disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412729
-other_identifiers:
-- identifier: UTL000279
-  scheme: legacy_openstates
-given_name: Kim
-family_name: Coleman
-email: kimcoleman@le.utah.gov

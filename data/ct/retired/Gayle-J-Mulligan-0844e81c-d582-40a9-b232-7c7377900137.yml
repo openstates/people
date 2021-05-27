@@ -5,15 +5,15 @@ family_name: Mulligan
 party:
 - name: Republican
 roles:
-- district: '55'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
-  start_date: '2015-01-01'
+- start_date: '2015-01-01'
   end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '55'
 links:
 - url: http://repmulligan.com
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000270
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000270
-  scheme: legacy_openstates

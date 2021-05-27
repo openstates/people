@@ -1,11 +1,14 @@
 id: ocd-person/f0517411-fc60-49ad-86e6-1f025ab4579b
 name: Kathy Kennedy
+given_name: Kathy
+family_name: Kennedy
+email: Kathy.Kennedy@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- district: '119'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '119'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 4200;Hartford, CT 06106
@@ -15,10 +18,7 @@ contact_details:
   voice: 203-530-3322
 links:
 - url: http://www.cthousegop.com/kennedy/
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Kathy
-family_name: Kennedy
-email: Kathy.Kennedy@housegop.ct.gov
 other_names:
 - name: Kennedy, Kathy
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

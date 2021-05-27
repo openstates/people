@@ -1,11 +1,16 @@
 id: ocd-person/865dace5-518d-4f4f-b393-c197064affe6
 name: R. Lee Ware
+given_name: R. Lee
+family_name: Ware
+gender: Male
+email: DelLWare@house.virginia.gov
+image: http://memdata.virginiageneralassembly.gov/images/display_image/H0124
 party:
 - name: Republican
 roles:
-- district: '65'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
-  type: lower
+  district: '65'
 contact_details:
 - note: District Office
   address: P.O. Box 689;Powhatan, Virginia 23139
@@ -13,20 +18,15 @@ contact_details:
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H124
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H124
+other_names:
+- name: Ware, R. Lee
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VAL000139
+- scheme: legacy_openstates
+  identifier: VAL000226
 sources:
 - url: http://lis.virginia.gov/191/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H124
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H124
-image: http://memdata.virginiageneralassembly.gov/images/display_image/H0124
-other_identifiers:
-- identifier: VAL000139
-  scheme: legacy_openstates
-- identifier: VAL000226
-  scheme: legacy_openstates
-given_name: R. Lee
-family_name: Ware
-gender: Male
-email: DelLWare@house.virginia.gov
-other_names:
-- name: Ware, R. Lee

@@ -1,11 +1,14 @@
 id: ocd-person/3e0a00e8-0ec8-418d-a2e3-a7eef0a5d186
 name: Alphonse Paolillo Jr.
+given_name: Alphonse
+family_name: Paolillo
+email: Alphonse.Paolillo@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- district: '97'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: lower
+  district: '97'
 contact_details:
 - note: Capitol Office
   address: Legislative Office Building;Room 5008;Hartford, CT 06106
@@ -14,15 +17,12 @@ contact_details:
   address: 151 Huntington Road;New Haven, CT 06492
 links:
 - url: http://www.housedems.ct.gov/Paolillo
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000326
-  scheme: legacy_openstates
-- identifier: CTL000351
-  scheme: legacy_openstates
-given_name: Alphonse
-family_name: Paolillo
-email: Alphonse.Paolillo@cga.ct.gov
 other_names:
 - name: Paolillo, Alphonse
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000326
+- scheme: legacy_openstates
+  identifier: CTL000351
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

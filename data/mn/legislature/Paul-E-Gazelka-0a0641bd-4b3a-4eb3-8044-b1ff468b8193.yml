@@ -1,11 +1,14 @@
 id: ocd-person/0a0641bd-4b3a-4eb3-8044-b1ff468b8193
 name: Paul E. Gazelka
+given_name: Paul
+family_name: Gazelka
+image: https://www.senate.mn/img/member_thumbnails/09Gazelka.jpg
 party:
 - name: Republican
 roles:
-- district: '9'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
+  district: '9'
 contact_details:
 - note: District Office
   address: 7822 Fairview Road;Suite 95;Baxter, MN 56425
@@ -13,16 +16,13 @@ contact_details:
   voice: 651-296-4875
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1169
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000209
+- scheme: legacy_openstates
+  identifier: MNL000510
+- scheme: legacy_openstates
+  identifier: MNL000561
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-image: https://www.senate.mn/img/member_thumbnails/09Gazelka.jpg
-other_identifiers:
-- identifier: MNL000209
-  scheme: legacy_openstates
-- identifier: MNL000510
-  scheme: legacy_openstates
-- identifier: MNL000561
-  scheme: legacy_openstates
-given_name: Paul
-family_name: Gazelka

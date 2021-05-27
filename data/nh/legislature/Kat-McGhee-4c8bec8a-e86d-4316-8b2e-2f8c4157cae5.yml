@@ -1,15 +1,18 @@
 id: ocd-person/4c8bec8a-e86d-4316-8b2e-2f8c4157cae5
 name: Kat McGhee
+given_name: Kat
+family_name: McGhee
+email: Kat.McGhee@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- district: Hillsborough 40
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+- end_date: '2020-12-31'
   type: lower
-  end_date: '2020-12-31'
-- district: Hillsborough 27
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Hillsborough 40
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 27
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -21,6 +24,3 @@ extras:
   first_name: Kat
   last_name: McGhee
   middle_name: ''
-email: Kat.McGhee@leg.state.nh.us
-given_name: Kat
-family_name: McGhee

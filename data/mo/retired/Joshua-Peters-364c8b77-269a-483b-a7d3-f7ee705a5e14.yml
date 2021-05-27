@@ -1,24 +1,24 @@
 id: ocd-person/364c8b77-269a-483b-a7d3-f7ee705a5e14
 name: Joshua Peters
+given_name: Joshua
+family_name: Peters
 party:
 - name: Democratic
 roles:
-- district: '76'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '76'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=76
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000372
+- scheme: legacy_openstates
+  identifier: MOL000375
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=76
 extras:
   first_name: Joshua
   last_name: Peters
-other_identifiers:
-- identifier: MOL000372
-  scheme: legacy_openstates
-- identifier: MOL000375
-  scheme: legacy_openstates
-given_name: Joshua
-family_name: Peters

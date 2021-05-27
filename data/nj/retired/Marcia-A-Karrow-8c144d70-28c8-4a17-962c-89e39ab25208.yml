@@ -6,15 +6,15 @@ middle_name: A.
 party:
 - name: Republican
 roles:
-- district: '23'
-  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
-  type: upper
-  start_date: '2008-01-01'
+- start_date: '2008-01-01'
   end_date: '2009-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '23'
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000143
+- scheme: legacy_openstates
+  identifier: NJL000145
 sources:
 - url: ftp://www.njleg.state.nj.us/ag/2008data/ROSTER.DBF
-other_identifiers:
-- identifier: NJL000143
-  scheme: legacy_openstates
-- identifier: NJL000145
-  scheme: legacy_openstates

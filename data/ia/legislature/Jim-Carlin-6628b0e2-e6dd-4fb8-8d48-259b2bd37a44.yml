@@ -1,11 +1,15 @@
 id: ocd-person/6628b0e2-e6dd-4fb8-8d48-259b2bd37a44
 name: Jim Carlin
+given_name: Jim
+family_name: Carlin
+email: jim.carlin@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=18041
 party:
 - name: Republican
 roles:
-- district: '3'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  type: upper
+  district: '3'
 contact_details:
 - note: Capitol Office
   voice: 515-281-3371
@@ -14,15 +18,11 @@ contact_details:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18041
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18041
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: IAL000543
+- scheme: legacy_openstates
+  identifier: IAL000552
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18041
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18041
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=2021-2022&pid=18041
-other_identifiers:
-- identifier: IAL000543
-  scheme: legacy_openstates
-- identifier: IAL000552
-  scheme: legacy_openstates
-given_name: Jim
-family_name: Carlin
-email: jim.carlin@legis.iowa.gov

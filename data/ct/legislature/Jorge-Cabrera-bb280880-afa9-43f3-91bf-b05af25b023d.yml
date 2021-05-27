@@ -1,21 +1,21 @@
 id: ocd-person/bb280880-afa9-43f3-91bf-b05af25b023d
 name: Jorge Cabrera
+given_name: Jorge
+family_name: Cabrera
 party:
 - name: Democratic
 roles:
-- district: '17'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  type: upper
+  district: '17'
 contact_details:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  note: Capitol Office
-- address: ', CT'
-  note: District Office
+- note: Capitol Office
+  address: Legislative Office Building;Room;Hartford, CT 06106
+- note: District Office
+  address: ', CT'
 links:
 - url: http://www.senatedems.ct.gov/cabrera
-sources:
-- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-given_name: Jorge
-family_name: Cabrera
 other_names:
 - name: Cabrera, Jorge
+sources:
+- url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv

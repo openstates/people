@@ -1,11 +1,15 @@
 id: ocd-person/f863b50d-c865-463a-830a-e5648837d9f7
 name: Robert Dickey
+given_name: Robert
+family_name: Dickey
+email: robert.dickey@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/dickey-robert-791.jpg
 party:
 - name: Republican
 roles:
-- district: '140'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '140'
 contact_details:
 - note: Capitol Office
   address: 245 State Capitol;Atlanta, GA 30334
@@ -16,25 +20,21 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/members/house/791?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000096
+- scheme: legacy_openstates
+  identifier: GAL000270
+- scheme: legacy_openstates
+  identifier: GAL000381
+- scheme: legacy_openstates
+  identifier: GAL000384
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/members/house/791?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/dickey-robert-791.jpg
-family_name: Dickey
-given_name: Robert
 extras:
   guid: 791
   city: Musella
   georgia_id: 791
   residence: Musella
-other_identifiers:
-- identifier: GAL000096
-  scheme: legacy_openstates
-- identifier: GAL000270
-  scheme: legacy_openstates
-- identifier: GAL000381
-  scheme: legacy_openstates
-- identifier: GAL000384
-  scheme: legacy_openstates
-email: robert.dickey@house.ga.gov

@@ -1,11 +1,15 @@
 id: ocd-person/c5b78494-5d8f-4ef6-b83e-cf00d2604b3e
 name: Lynne Walz
+given_name: Lynne
+family_name: Walz
+email: lwalz@leg.ne.gov
+image: http://www.nebraskalegislature.gov/media/images/blogs/dist15.jpg
 party:
 - name: Nonpartisan
 roles:
-- district: '15'
+- type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
-  type: legislature
+  district: '15'
 contact_details:
 - note: Capitol Office
   address: Room 1107; P.O. Box 94604; Lincoln, NE 68509
@@ -13,15 +17,11 @@ contact_details:
 links:
 - url: http://news.legislature.ne.gov/dist15
 - url: http://news.legislature.ne.gov/dist15/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000089
+- scheme: legacy_openstates
+  identifier: NEL000169
 sources:
 - url: http://news.legislature.ne.gov/dist15
 - url: http://news.legislature.ne.gov/dist15/
-image: http://www.nebraskalegislature.gov/media/images/blogs/dist15.jpg
-other_identifiers:
-- identifier: NEL000089
-  scheme: legacy_openstates
-- identifier: NEL000169
-  scheme: legacy_openstates
-given_name: Lynne
-family_name: Walz
-email: lwalz@leg.ne.gov

@@ -1,11 +1,15 @@
 id: ocd-person/1ed4e059-94c6-4404-b28e-0dc572112d03
 name: Elizabeth "Liz" Stefanics
+given_name: Elizabeth
+family_name: Stefanics
+email: lstefanics@msn.com
+image: http://www.nmlegis.gov/Images/Legislators/Senate/SSTEF.jpg
 party:
 - name: Democratic
 roles:
-- district: '39'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
-  type: upper
+  district: '39'
 contact_details:
 - note: Capitol Office
   address: Room 416C State Capitol;Santa Fe, NM 87501
@@ -15,16 +19,12 @@ contact_details:
   voice: 505-699-4808
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSTEF
-- note: linkedin
-  url: https://www.linkedin.com/in/liz-stefanics-140488151/
-sources:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSTEF
-image: http://www.nmlegis.gov/Images/Legislators/Senate/SSTEF.jpg
-other_identifiers:
-- identifier: NML000421
-  scheme: legacy_openstates
-given_name: Elizabeth
-family_name: Stefanics
-email: lstefanics@msn.com
+- url: https://www.linkedin.com/in/liz-stefanics-140488151/
+  note: linkedin
 ids:
   facebook: SenatorLizStefanics
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NML000421
+sources:
+- url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSTEF

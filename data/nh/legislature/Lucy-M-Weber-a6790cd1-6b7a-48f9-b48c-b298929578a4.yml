@@ -1,11 +1,15 @@
 id: ocd-person/a6790cd1-6b7a-48f9-b48c-b298929578a4
 name: Lucy M. Weber
+given_name: Lucy M.
+family_name: Weber
+email: lwmcv@comcast.net
+image: http://www.gencourt.state.nh.us/house/images/memberpics/376668.jpg
 party:
 - name: Democratic
 roles:
-- district: Cheshire 1
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  type: lower
+  district: Cheshire 1
 contact_details:
 - note: District Office
   address: 217 Old Keene Road;Walpole, NH 03608-4845
@@ -13,22 +17,18 @@ contact_details:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000411
+- scheme: legacy_openstates
+  identifier: NHL000791
+- scheme: legacy_openstates
+  identifier: NHL000939
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376668
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-image: http://www.gencourt.state.nh.us/house/images/memberpics/376668.jpg
 extras:
   first_name: Lucy
   last_name: Weber
   middle_name: M.
-other_identifiers:
-- identifier: NHL000411
-  scheme: legacy_openstates
-- identifier: NHL000791
-  scheme: legacy_openstates
-- identifier: NHL000939
-  scheme: legacy_openstates
-given_name: Lucy M.
-family_name: Weber
-email: lwmcv@comcast.net

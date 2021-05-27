@@ -2,21 +2,21 @@ id: ocd-person/1310b2b9-d787-42af-bc0a-7ec1eeea371a
 name: Tom Letson
 given_name: Tom
 family_name: Letson
+image: http://www.ohiohouse.gov/Assets/Headshots/Small/64.jpg
 party:
 - name: Democratic
 roles:
-- district: '64'
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2014-12-31'
-image: http://www.ohiohouse.gov/Assets/Headshots/Small/64.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '64'
 links:
 - url: http://www.ohiohouse.gov/tom-letson
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000097
+- scheme: legacy_openstates
+  identifier: OHL000233
 sources:
 - url: http://www.ohiohouse.gov/members/member-directory
-other_identifiers:
-- identifier: OHL000097
-  scheme: legacy_openstates
-- identifier: OHL000233
-  scheme: legacy_openstates

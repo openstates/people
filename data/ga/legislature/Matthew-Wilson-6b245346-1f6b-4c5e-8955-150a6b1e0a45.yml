@@ -1,11 +1,15 @@
 id: ocd-person/6b245346-1f6b-4c5e-8955-150a6b1e0a45
 name: Matthew Wilson
+given_name: Matthew
+family_name: Wilson
+email: matthew.wilson@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/wilson-matthew-4945.jpg
 party:
 - name: Democratic
 roles:
-- district: '80'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '80'
 contact_details:
 - note: Capitol Office
   address: 511-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
@@ -20,12 +24,8 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4945&Session=27
 - url: https://www.legis.ga.gov/members/house/4945?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/wilson-matthew-4945.jpg
-family_name: Wilson
-given_name: Matthew
 extras:
   guid: 4945
   city: Brookhaven
   georgia_id: 4945
   residence: Brookhaven
-email: matthew.wilson@house.ga.gov

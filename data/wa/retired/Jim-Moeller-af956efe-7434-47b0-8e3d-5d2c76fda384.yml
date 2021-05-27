@@ -2,19 +2,19 @@ id: ocd-person/af956efe-7434-47b0-8e3d-5d2c76fda384
 name: Jim Moeller
 given_name: Jim
 family_name: Moeller
+image: http://www.leg.wa.gov/House/Representatives/PublishingImages/moeller.jpg
 party:
 - name: Democratic
 roles:
-- district: '49'
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://www.leg.wa.gov/House/Representatives/PublishingImages/moeller.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '49'
 links:
 - url: http://housedemocrats.wa.gov/legislators/Jim-Moeller/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000109
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
-other_identifiers:
-- identifier: WAL000109
-  scheme: legacy_openstates

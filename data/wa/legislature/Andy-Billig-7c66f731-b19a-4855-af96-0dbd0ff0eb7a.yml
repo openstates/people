@@ -1,11 +1,15 @@
 id: ocd-person/7c66f731-b19a-4855-af96-0dbd0ff0eb7a
 name: Andy Billig
+given_name: Andy
+family_name: Billig
+email: andy.billig@leg.wa.gov
+image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/billig.jpg
 party:
 - name: Democratic
 roles:
-- district: '3'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  type: upper
+  district: '3'
 contact_details:
 - note: Capitol Office
   address: 307 Legislative Building;PO Box 40403;Olympia, WA 98504
@@ -13,14 +17,10 @@ contact_details:
 links:
 - url: http://sdc.wastateleg.org/Billig/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000058
+- scheme: legacy_openstates
+  identifier: WAL000164
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
-image: http://www.leg.wa.gov/Senate/Senators/PublishingImages/billig.jpg
-other_identifiers:
-- identifier: WAL000058
-  scheme: legacy_openstates
-- identifier: WAL000164
-  scheme: legacy_openstates
-given_name: Andy
-family_name: Billig
-email: andy.billig@leg.wa.gov

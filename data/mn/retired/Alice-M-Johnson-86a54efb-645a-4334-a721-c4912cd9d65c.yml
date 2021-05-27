@@ -2,20 +2,20 @@ id: ocd-person/86a54efb-645a-4334-a721-c4912cd9d65c
 name: Alice M. Johnson
 given_name: Alice M.
 family_name: Johnson
+image: http://www.senate.mn/graphics/member_thumbnails/37Johnson.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- district: '37'
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.senate.mn/graphics/member_thumbnails/37Johnson.jpg
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '37'
 links:
 - url: http://www.senate.mn/members/member_bio.php?mem_id=1206
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000520
 sources:
 - url: http://www.senate.mn/members/member_list_ascii.php?ls=
 - url: http://www.senate.mn/members/index.php
-other_identifiers:
-- identifier: MNL000520
-  scheme: legacy_openstates

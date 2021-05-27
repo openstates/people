@@ -1,11 +1,15 @@
 id: ocd-person/7fe0478b-3777-490c-93cb-20f83baf3d3f
 name: Bob Evans
+given_name: Bob
+family_name: Evans
+email: bevans@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/evans_(91st).jpg
 party:
 - name: Democratic
 roles:
-- district: '91'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '91'
 contact_details:
 - note: Capitol Office
   address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
@@ -15,18 +19,14 @@ contact_details:
   voice: 601-587-9313
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/evans_(91st).xml
+other_names:
+- name: Evans (91st)
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000128
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/evans_(91st).xml
-image: http://billstatus.ls.state.ms.us/members/house/evans_(91st).jpg
 extras:
   org_info: Representative Evans is a member of Habitat for Humanity, Southern Poverty
     Leadership Council, American Bar Association, and Mississippi Public Defenders'
     Association.
-other_identifiers:
-- identifier: MSL000128
-  scheme: legacy_openstates
-given_name: Bob
-family_name: Evans
-email: bevans@house.ms.gov
-other_names:
-- name: Evans (91st)

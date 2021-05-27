@@ -1,24 +1,24 @@
 id: ocd-person/572f1f2f-01a1-4b12-b33c-f8776b56f02a
 name: Wanda Brown
+given_name: Wanda
+family_name: Brown
 party:
 - name: Republican
 roles:
-- district: '57'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '57'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=57
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000049
+- scheme: legacy_openstates
+  identifier: MOL000221
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=57
 extras:
   first_name: Wanda
   last_name: Brown
-other_identifiers:
-- identifier: MOL000049
-  scheme: legacy_openstates
-- identifier: MOL000221
-  scheme: legacy_openstates
-given_name: Wanda
-family_name: Brown

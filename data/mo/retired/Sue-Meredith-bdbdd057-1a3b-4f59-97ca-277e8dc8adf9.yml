@@ -1,22 +1,22 @@
 id: ocd-person/bdbdd057-1a3b-4f59-97ca-277e8dc8adf9
 name: Sue Meredith
+given_name: Sue
+family_name: Meredith
 party:
 - name: Democratic
 roles:
-- district: '71'
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '71'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=71
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000306
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=71
 extras:
   first_name: Sue
   last_name: Meredith
-other_identifiers:
-- identifier: MOL000306
-  scheme: legacy_openstates
-given_name: Sue
-family_name: Meredith

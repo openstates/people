@@ -1,25 +1,36 @@
 id: ocd-person/d1a1c031-9dce-4727-a298-ec92cb34fe40
 name: Scott D. Sandall
+given_name: Scott
+family_name: Sandall
+email: ssandall@le.utah.gov
+image: https://le.utah.gov/images/legislator/SANDASD.jpg
 party:
 - name: Republican
 roles:
-- district: '1'
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
-- district: '17'
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '1'
+- start_date: '2019-01-01'
   type: upper
-  start_date: '2019-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '17'
 contact_details:
 - note: District Office
   address: 635 Hillcrest Circle, Tremonton, UT, 84337
   voice: 435-279-7551
 links:
 - url: https://senate.utah.gov/scott-sandall
+other_names:
+- name: Sandall, Scott D.
+- name: Sandall, S.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000159
+- scheme: legacy_openstates
+  identifier: UTL000259
 sources:
 - url: http://le.utah.gov/data/legislators.json
-image: https://le.utah.gov/images/legislator/SANDASD.jpg
 extras:
   links:
   - https://le.utah.gov/senate/CofI/COFISANDASD.pdf
@@ -30,14 +41,3 @@ extras:
   - http://le.utah.gov/house2/CofI/ssandall2.pdf
   - http://le.utah.gov/house2/CofI/ssandall.pdf
   - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412644
-other_identifiers:
-- identifier: UTL000159
-  scheme: legacy_openstates
-- identifier: UTL000259
-  scheme: legacy_openstates
-given_name: Scott
-family_name: Sandall
-email: ssandall@le.utah.gov
-other_names:
-- name: Sandall, Scott D.
-- name: Sandall, S.

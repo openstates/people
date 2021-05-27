@@ -1,11 +1,15 @@
 id: ocd-person/ee145624-3295-4db4-b3ce-9d1583e4ef6e
 name: Shaw Blackmon
+given_name: Shaw
+family_name: Blackmon
+email: shaw.blackmon@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/blackmon-shaw-1878.jpg
 party:
 - name: Republican
 roles:
-- district: '146'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
+  district: '146'
 contact_details:
 - note: Capitol Office
   address: 401-K State Capitol;Atlanta, GA 30334
@@ -15,19 +19,15 @@ contact_details:
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=1878&Session=27
 - url: https://www.legis.ga.gov/members/house/1878?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000433
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=1878&Session=27
 - url: https://www.legis.ga.gov/members/house/1878?session=1029
-image: https://www.legis.ga.gov/api/images/default-source/portraits/blackmon-shaw-1878.jpg
-family_name: Blackmon
-given_name: Shaw
 extras:
   guid: 1878
   city: Bonaire
   georgia_id: 1878
   residence: Bonaire
-other_identifiers:
-- identifier: GAL000433
-  scheme: legacy_openstates
-email: shaw.blackmon@house.ga.gov

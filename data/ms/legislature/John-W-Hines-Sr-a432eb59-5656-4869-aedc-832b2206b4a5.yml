@@ -1,11 +1,15 @@
 id: ocd-person/a432eb59-5656-4869-aedc-832b2206b4a5
 name: John W. Hines, Sr.
+given_name: John W.
+family_name: Hines
+email: jhines@house.ms.gov
+image: http://billstatus.ls.state.ms.us/members/house/hines.jpg
 party:
 - name: Democratic
 roles:
-- district: '50'
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  type: lower
+  district: '50'
 contact_details:
 - note: Capitol Office
   address: Room 100-C;P. O. Box 1018;Jackson, MS 39215
@@ -15,16 +19,12 @@ contact_details:
   voice: 662-335-9704
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/hines.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000089
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/hines.xml
-image: http://billstatus.ls.state.ms.us/members/house/hines.jpg
 extras:
   org_info: Representative Hines is member of 100 Black Men of the Mississippi Delta,
     a member of the NAACP, a member of Young Men Making a Difference, a member of
     the FEMA National Advisory Council, youth mentor and Little League coach.
-other_identifiers:
-- identifier: MSL000089
-  scheme: legacy_openstates
-given_name: John W.
-family_name: Hines
-email: jhines@house.ms.gov

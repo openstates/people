@@ -2,19 +2,19 @@ id: ocd-person/a329c0ec-dcb1-4450-bb7a-c2a3021ded6b
 name: Michael Simanowitz
 given_name: Michael
 family_name: Simanowitz
+image: http://assembly.state.ny.us/mem/pic/027.jpg
 party:
 - name: Democratic
 roles:
-- district: '27'
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  type: lower
-  start_date: '2011-01-01'
+- start_date: '2011-01-01'
   end_date: '2018-12-31'
-image: http://assembly.state.ny.us/mem/pic/027.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '27'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000215
 sources:
 - url: http://assembly.state.ny.us/mem/Michael-Simanowitz
-other_identifiers:
-- identifier: NYL000215
-  scheme: legacy_openstates

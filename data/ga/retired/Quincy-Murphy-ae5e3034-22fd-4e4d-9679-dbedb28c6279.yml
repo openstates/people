@@ -2,27 +2,27 @@ id: ocd-person/ae5e3034-22fd-4e4d-9679-dbedb28c6279
 name: Quincy Murphy
 given_name: Quincy
 family_name: Murphy
+image: http://www.house.ga.gov/SiteCollectionImages/MurphyQuincy177.jpg
 party:
 - name: Democratic
 roles:
-- district: '127'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  type: lower
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2014-12-31'
-- district: '120'
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   type: lower
-  start_date: '2011-01-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '127'
+- start_date: '2011-01-01'
   end_date: '2012-12-31'
-image: http://www.house.ga.gov/SiteCollectionImages/MurphyQuincy177.jpg
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '120'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=177&Session=23
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000171
+- scheme: legacy_openstates
+  identifier: GAL000333
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=177&Session=23
-other_identifiers:
-- identifier: GAL000171
-  scheme: legacy_openstates
-- identifier: GAL000333
-  scheme: legacy_openstates

@@ -2,21 +2,21 @@ id: ocd-person/5e601a2e-a24f-45c3-a23a-cb40e526a58a
 name: Carlyle Begay
 given_name: Carlyle
 family_name: Begay
+image: http://www.azleg.gov/alisImages/MemberPhotos/51leg/Senate/BEGAY.gif
 party:
 - name: Republican
-- name: Democratic
-  end_date: '2015-11-23'
+- end_date: '2015-11-23'
+  name: Democratic
 roles:
-- district: '7'
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  type: upper
-  start_date: '2013-01-01'
+- start_date: '2013-01-01'
   end_date: '2016-12-31'
-image: http://www.azleg.gov/alisImages/MemberPhotos/51leg/Senate/BEGAY.gif
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '7'
 links:
 - url: http://www.azleg.gov/MembersPage.asp?Member_ID=7&Legislature=52&Session_ID=115
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AZL000299
 sources:
 - url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=S
-other_identifiers:
-- identifier: AZL000299
-  scheme: legacy_openstates

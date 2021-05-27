@@ -1,18 +1,18 @@
 id: ocd-person/1eec2a82-f7db-466d-a049-a51d15f8d866
 name: Scott A. Storms
+given_name: Scott A.
+family_name: Storms
 party:
 - name: Republican
 roles:
-- district: '60'
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+- end_date: '2018-12-31'
   type: lower
-  end_date: '2018-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '60'
 links:
 - url: http://www.cthousegop.com/Storms/main/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CTL000321
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-other_identifiers:
-- identifier: CTL000321
-  scheme: legacy_openstates
-given_name: Scott A.
-family_name: Storms
