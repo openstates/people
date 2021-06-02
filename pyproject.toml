@@ -7,26 +7,10 @@ authors = ["James Turk <james@openstates.org>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 openstates = "^6.0.1"
-spatula = "^0.6.0"
 
 [tool.poetry.dev-dependencies]
-flake8 = "^3.7"
 invoke = "^1.5.0"
-mypy = "^0.812"
 
-[tool.black]
-line-length = 99
-exclude = '''
-/(
-    \.git
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | build
-  | dist
-)/
-'''
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
