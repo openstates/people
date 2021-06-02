@@ -86,20 +86,20 @@ lxml = ["lxml"]
 
 [[package]]
 name = "boto3"
-version = "1.17.79"
+version = "1.17.85"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
 python-versions = ">= 2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
 [package.dependencies]
-botocore = ">=1.20.79,<1.21.0"
+botocore = ">=1.20.85,<1.21.0"
 jmespath = ">=0.7.1,<1.0.0"
 s3transfer = ">=0.4.0,<0.5.0"
 
 [[package]]
 name = "botocore"
-version = "1.20.79"
+version = "1.20.85"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
@@ -115,7 +115,7 @@ crt = ["awscrt (==0.11.15)"]
 
 [[package]]
 name = "certifi"
-version = "2020.12.5"
+version = "2021.5.30"
 description = "Python package for providing Mozilla's CA Bundle."
 category = "main"
 optional = false
@@ -319,7 +319,7 @@ python-versions = "*"
 
 [[package]]
 name = "ipython"
-version = "7.23.1"
+version = "7.24.0"
 description = "IPython: Productive Interactive Computing"
 category = "main"
 optional = false
@@ -339,7 +339,7 @@ pygments = "*"
 traitlets = ">=4.2"
 
 [package.extras]
-all = ["Sphinx (>=1.3)", "ipykernel", "ipyparallel", "ipywidgets", "nbconvert", "nbformat", "nose (>=0.10.1)", "notebook", "numpy (>=1.16)", "pygments", "qtconsole", "requests", "testpath"]
+all = ["Sphinx (>=1.3)", "ipykernel", "ipyparallel", "ipywidgets", "nbconvert", "nbformat", "nose (>=0.10.1)", "notebook", "numpy (>=1.17)", "pygments", "qtconsole", "requests", "testpath"]
 doc = ["Sphinx (>=1.3)"]
 kernel = ["ipykernel"]
 nbconvert = ["nbconvert"]
@@ -347,7 +347,7 @@ nbformat = ["nbformat"]
 notebook = ["notebook", "ipywidgets"]
 parallel = ["ipyparallel"]
 qtconsole = ["qtconsole"]
-test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipykernel", "numpy (>=1.16)"]
+test = ["nose (>=0.10.1)", "requests", "testpath", "pygments", "nbformat", "ipykernel", "numpy (>=1.17)"]
 
 [[package]]
 name = "ipython-genutils"
@@ -1070,16 +1070,16 @@ pytz = "*"
 
 [[package]]
 name = "urllib3"
-version = "1.26.4"
+version = "1.26.5"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 
 [package.extras]
+brotli = ["brotlipy (>=0.6.0)"]
 secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
 socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
-brotli = ["brotlipy (>=0.6.0)"]
 
 [[package]]
 name = "us"
@@ -1156,16 +1156,16 @@ beautifulsoup4 = [
     {file = "beautifulsoup4-4.8.0.tar.gz", hash = "sha256:25288c9e176f354bf277c0a10aa96c782a6a18a17122dba2e8cec4a97e03343b"},
 ]
 boto3 = [
-    {file = "boto3-1.17.79-py2.py3-none-any.whl", hash = "sha256:1815748c9409e6d9a13a88a4f59c49d42c5d873a116c95ef18092ed3bd20b1c5"},
-    {file = "boto3-1.17.79.tar.gz", hash = "sha256:ccc2c2e412d31b9e542c525764c059f7523cf5268b0ce3c5b244f4df29367d9c"},
+    {file = "boto3-1.17.85-py2.py3-none-any.whl", hash = "sha256:ee82c1a97de02bd4e295b8cad440093d57869892ee5b8941a851758c45944cd5"},
+    {file = "boto3-1.17.85.tar.gz", hash = "sha256:8352dffe768af9e1471323c8e443cc66a114891572bf832bec3cc2eec47838f6"},
 ]
 botocore = [
-    {file = "botocore-1.20.79-py2.py3-none-any.whl", hash = "sha256:7518c3f028123f2c770cf1e568f24877259e0ec03badef657174fa93392a9e6a"},
-    {file = "botocore-1.20.79.tar.gz", hash = "sha256:b69c96f210a79f544c6dea923f708873121c174b8b4d72babd725328bf53e3d2"},
+    {file = "botocore-1.20.85-py2.py3-none-any.whl", hash = "sha256:7f54fa67b45cf767e1e4045741674cfdc47a3f424fe6f37570ae3ff1ca1e1e2a"},
+    {file = "botocore-1.20.85.tar.gz", hash = "sha256:d8992096d9c04e7be331924a59677e591cce6a3c6bd3a4c8fe26b00700d5255a"},
 ]
 certifi = [
-    {file = "certifi-2020.12.5-py2.py3-none-any.whl", hash = "sha256:719a74fb9e33b9bd44cc7f3a8d94bc35e4049deebe19ba7d8e108280cfd59830"},
-    {file = "certifi-2020.12.5.tar.gz", hash = "sha256:1a4995114262bffbc2413b159f2a1a480c969de6e6eb13ee966d470af86af59c"},
+    {file = "certifi-2021.5.30-py2.py3-none-any.whl", hash = "sha256:50b1e4f8446b06f41be7dd6338db18e0990601dce795c2b1686458aa7e8fa7d8"},
+    {file = "certifi-2021.5.30.tar.gz", hash = "sha256:2bbf76fd432960138b3ef6dda3dde0544f27cbf8546c458e60baf371917ba9ee"},
 ]
 cffi = [
     {file = "cffi-1.14.5-cp27-cp27m-macosx_10_9_x86_64.whl", hash = "sha256:bb89f306e5da99f4d922728ddcd6f7fcebb3241fc40edebcb7284d7514741991"},
@@ -1288,8 +1288,8 @@ invoke = [
     {file = "invoke-1.5.0.tar.gz", hash = "sha256:f0c560075b5fb29ba14dad44a7185514e94970d1b9d57dcd3723bec5fed92650"},
 ]
 ipython = [
-    {file = "ipython-7.23.1-py3-none-any.whl", hash = "sha256:f78c6a3972dde1cc9e4041cbf4de583546314ba52d3c97208e5b6b2221a9cb7d"},
-    {file = "ipython-7.23.1.tar.gz", hash = "sha256:714810a5c74f512b69d5f3b944c86e592cee0a5fb9c728e582f074610f6cf038"},
+    {file = "ipython-7.24.0-py3-none-any.whl", hash = "sha256:f86788eef439891438af3498525094cc2acbdbea4f2aa2f8895782d4ff471341"},
+    {file = "ipython-7.24.0.tar.gz", hash = "sha256:a171caa3d3d4c819a1c0742e3abecfd5a2b8ab525ca1c9f114b40b76b0679ab1"},
 ]
 ipython-genutils = [
     {file = "ipython_genutils-0.2.0-py2.py3-none-any.whl", hash = "sha256:72dd37233799e619666c9f639a9da83c34013a73e8bbc79a7a6348d93c61fab8"},
@@ -1799,8 +1799,8 @@ tzlocal = [
     {file = "tzlocal-1.5.1.tar.gz", hash = "sha256:4ebeb848845ac898da6519b9b31879cf13b6626f7184c496037b818e238f2c4e"},
 ]
 urllib3 = [
-    {file = "urllib3-1.26.4-py2.py3-none-any.whl", hash = "sha256:2f4da4594db7e1e110a944bb1b551fdf4e6c136ad42e4234131391e21eb5b0df"},
-    {file = "urllib3-1.26.4.tar.gz", hash = "sha256:e7b021f7241115872f92f43c6508082facffbd1c048e3c6e2bb9c2a157e28937"},
+    {file = "urllib3-1.26.5-py2.py3-none-any.whl", hash = "sha256:753a0374df26658f99d826cfe40394a686d05985786d946fbe4165b5148f5a7c"},
+    {file = "urllib3-1.26.5.tar.gz", hash = "sha256:a7acd0977125325f516bda9735fa7142b909a8d01e8b2e4c8108d0984e6e0098"},
 ]
 us = [
     {file = "us-2.0.2.tar.gz", hash = "sha256:cb11ad0d43deff3a1c3690c74f0c731cff5b862c73339df2edd91133e1496fbc"},
