@@ -1,0 +1,47 @@
+name: Update US data
+
+on:
+  schedule:
+    - cron: "0 10 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Python & dependency installation
+    - uses: actions/checkout@v2
+    - name: setup Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: install Poetry
+      uses: snok/install-poetry@v1.1.1
+    - name: cache Poetry virtualenv
+      uses: actions/cache@v2
+      id: cache
+      with:
+        path: ~/.virtualenvs/
+        key: poetry-${{ hashFiles('**/poetry.lock') }}
+        restore-keys: |
+          poetry-${{ hashFiles('**/poetry.lock') }}
+    - name: set poetry config path
+      run: poetry config virtualenvs.path ~/.virtualenvs
+    - name: install dependencies
+      run: poetry install
+
+    - name: people to database
+      run: poetry run os-us-to-yaml
+      env:
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+    - name: update remote git repo if necessary
+      run: |-
+        git diff
+        git checkout -b automatic-us-updates
+        git config --global user.email "actions@users.noreply.github.com"
+        git config --global user.name "openstates-bot"
+        git add -A
+        git commit -m "automated US update" || exit 0
+        git push -u origin automatic-us-updates
+        gh pr create -f
