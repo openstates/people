@@ -45,3 +45,5 @@ jobs:
         git commit -m "automated US update" || exit 0
         git push -u origin automatic-us-updates
         gh pr create -f
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
