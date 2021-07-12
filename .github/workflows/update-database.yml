@@ -37,6 +37,12 @@ jobs:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
+    - name: committees to database
+      run: poetry run os-committees to-database
+      env:
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
     - name: people to S3
       run: poetry run os-people to-csv --upload
       env:
