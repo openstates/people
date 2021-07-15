@@ -40,15 +40,16 @@
 * id: UUID representing this organization.  **required**
 * jurisdiction: ocd-jurisdiction identifier **required**
 * name: Name of Committee.  **required**
-* parent: Parent of this organization, can be:
+* chamber: Chamber of this committee, can be:
     * upper
     * lower
     * legislature
-    * ID of a parent committee in the case of subcommittee
     **required**
 * classification: Classification, can be:
     * committee
+    * subcommittee
     **required**
+* parent: `id` of parent committee, if classification is subcommittee.
 * members: list of memberships, each may have the following:
     * id - ocd-person ID if known
     * name - name of person **required**
