@@ -259,7 +259,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "openstates"
-version = "6.3.0"
+version = "6.3.1"
 description = "core infrastructure for the openstates project"
 category = "main"
 optional = false
@@ -550,7 +550,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "3306e4dd9eca6a07c6a58f1d60c75909c31cb49e68d19f9a39b303b0e86517a1"
+content-hash = "2a6bfa60ba14468b5d9260e4c7830111d73fe69ab726f1f1fe5f076afc440ef5"
 
 [metadata.files]
 argcomplete = [
@@ -688,8 +688,8 @@ olefile = [
     {file = "olefile-0.46.zip", hash = "sha256:133b031eaf8fd2c9399b78b8bc5b8fcbe4c31e85295749bb17a87cba8f3c3964"},
 ]
 openstates = [
-    {file = "openstates-6.3.0-py3-none-any.whl", hash = "sha256:c3ea7a466632d17024264f3b115f36326dd2ca770b894a23cd357292b26da2e4"},
-    {file = "openstates-6.3.0.tar.gz", hash = "sha256:1bd63ca972d2ac311b782bbe566725961b06d3d94d7916a948a5814759952aea"},
+    {file = "openstates-6.3.1-py3-none-any.whl", hash = "sha256:1fe8e95780a51442a3a99013cc54850e8401ae642c70f04298e86afdbfde67b9"},
+    {file = "openstates-6.3.1.tar.gz", hash = "sha256:e77175d7354ea165ee1521110f6fd3fd825c0f0f4bcef54331a5e63f0818ddaa"},
 ]
 "pdfminer.six" = [
     {file = "pdfminer.six-20181108-py2-none-any.whl", hash = "sha256:d12653375fcc00615d76dbd48fc551a2d5ffd6f572c11660d417ccf91a600f9b"},
@@ -697,6 +697,11 @@ openstates = [
     {file = "pdfminer.six-20181108.tar.gz", hash = "sha256:9cc58857cf0a360213008061d903282462abee55cdcc7e0b6e08d6834e55050d"},
 ]
 pillow = [
+    {file = "Pillow-8.3.1-1-cp36-cp36m-win_amd64.whl", hash = "sha256:fd7eef578f5b2200d066db1b50c4aa66410786201669fb76d5238b007918fb24"},
+    {file = "Pillow-8.3.1-1-cp37-cp37m-win_amd64.whl", hash = "sha256:75e09042a3b39e0ea61ce37e941221313d51a9c26b8e54e12b3ececccb71718a"},
+    {file = "Pillow-8.3.1-1-cp38-cp38-win_amd64.whl", hash = "sha256:c0e0550a404c69aab1e04ae89cca3e2a042b56ab043f7f729d984bf73ed2a093"},
+    {file = "Pillow-8.3.1-1-cp39-cp39-win_amd64.whl", hash = "sha256:479ab11cbd69612acefa8286481f65c5dece2002ffaa4f9db62682379ca3bb77"},
+    {file = "Pillow-8.3.1-1-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:f156d6ecfc747ee111c167f8faf5f4953761b5e66e91a4e6767e548d0f80129c"},
     {file = "Pillow-8.3.1-cp36-cp36m-macosx_10_10_x86_64.whl", hash = "sha256:196560dba4da7a72c5e7085fccc5938ab4075fd37fe8b5468869724109812edd"},
     {file = "Pillow-8.3.1-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:29c9569049d04aaacd690573a0398dbd8e0bf0255684fee512b413c2142ab723"},
     {file = "Pillow-8.3.1-cp36-cp36m-manylinux_2_5_i686.manylinux1_i686.whl", hash = "sha256:c088a000dfdd88c184cc7271bfac8c5b82d9efa8637cd2b68183771e3cf56f04"},
