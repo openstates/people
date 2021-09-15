@@ -12,7 +12,7 @@ roles:
   district: '41'
 contact_details:
 - note: Capitol Office
-  address: 604-F Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 604-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0265
 - note: District Office
   address: 2162 Caneridge Drive; Marietta, GA 30064
@@ -27,8 +27,14 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
 - url: https://www.legis.ga.gov/members/house/832?session=1029
+- url: https://www.legis.ga.gov/members/house/832?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/832?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 832
+  residence: Marietta
   city: Marietta
   georgia_id: 832
-  residence: Marietta
+  press: https://house-press.com/representative/Michael-Smith
+  staff: a href="
+  staff email: ''

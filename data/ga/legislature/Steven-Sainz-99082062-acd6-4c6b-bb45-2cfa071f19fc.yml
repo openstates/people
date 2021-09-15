@@ -12,7 +12,7 @@ roles:
   district: '180'
 contact_details:
 - note: Capitol Office
-  address: 501-F Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 501-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0178
 - note: District Office
   address: 203 E 5th St; Woodbine, GA 31569
@@ -23,8 +23,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4962&Session=27
 - url: https://www.legis.ga.gov/members/house/4962?session=1029
+- url: https://www.legis.ga.gov/members/house/4962?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4962?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4962
+  residence: Woodbine
   city: Woodbine
   georgia_id: 4962
-  residence: Woodbine
+  birthday: July 13
+  occupation: CEO
+  press: https://house-press.com/representative/Steven-Sainz
+  staff: Emily Beals - Administrative Assistant
+  staff email: emily.beals@house.ga.gov

@@ -12,7 +12,7 @@ roles:
   district: '147'
 contact_details:
 - note: Capitol Office
-  address: 508-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 508-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0213
 - note: District Office
   address: 305 Tarrasa Dr.; Warner Robins, GA 30188
@@ -26,8 +26,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=858&Session=27
 - url: https://www.legis.ga.gov/members/house/858?session=1029
+- url: https://www.legis.ga.gov/members/house/858?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/858?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 858
+  residence: Warner Robins
   city: Warner Robins
   georgia_id: 858
-  residence: Warner Robins
+  birthday: October 14
+  occupation: Software Engineer
+  press: https://house-press.com/representative/Heath-Clark
+  spouse: Lindsey
+  staff: Wyletha Thompson - Administrative Assistant
+  staff email: wyletha.thompson@house.ga.gov
+  title: Chairman, Defense & Veterans Affairs

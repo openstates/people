@@ -12,7 +12,7 @@ roles:
   district: '112'
 contact_details:
 - note: Capitol Office
-  address: 614-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 614-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-3947
 - note: District Office
   address: 1471 Morgan Dr.; Buckhead, GA 30625
@@ -28,8 +28,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=866&Session=27
 - url: https://www.legis.ga.gov/members/house/866?session=1029
+- url: https://www.legis.ga.gov/members/house/866?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/866?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 866
+  residence: Buckhead
   city: Buckhead
   georgia_id: 866
-  residence: Buckhead
+  birthday: April 6
+  occupation: Captain - Delta
+  press: https://house-press.com/representative/Dave-Belton
+  spouse: Theresa
+  staff: a href="
+  staff email: ''
+  title: Chairman, Special Rules
