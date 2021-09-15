@@ -12,7 +12,7 @@ roles:
   district: '13'
 contact_details:
 - note: Capitol Office
-  address: 245 State Capitol;Atlanta, GA 30334
+  address: 245 State Capitol; Atlanta, GA 30334
   voice: 404-463-2248
 - note: District Office
   address: '3 Central Plaza, #360; Rome, GA 30161'
@@ -28,8 +28,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=92&Session=27
 - url: https://www.legis.ga.gov/members/house/92?session=1029
+- url: https://www.legis.ga.gov/members/house/92?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/92?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 92
+  residence: Rome
   city: Rome
   georgia_id: 92
-  residence: Rome
+  birthday: September 11
+  occupation: Volunteer
+  press: https://house-press.com/representative/Katie-Dempsey
+  spouse: Lynn
+  staff: a href="
+  staff email: ''
+  title: 'Chairman, Appropriations: Human Resources Subcommittee'

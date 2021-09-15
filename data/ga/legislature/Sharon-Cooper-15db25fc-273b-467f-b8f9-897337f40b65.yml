@@ -12,7 +12,7 @@ roles:
   district: '43'
 contact_details:
 - note: Capitol Office
-  address: 436 State Capitol;Atlanta, GA 30334
+  address: 436 State Capitol; Atlanta, GA 30334
   voice: 404-656-5069
 - note: District Office
   address: 1234 Powers Ferry Rd., Suite 104; Marietta, GA 30067
@@ -30,8 +30,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/members/house/86?session=1029
+- url: https://www.legis.ga.gov/members/house/86?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/86?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 86
+  residence: Marietta
   city: Marietta
   georgia_id: 86
-  residence: Marietta
+  birthday: October 23
+  occupation: Medical Administrator/R.N M.S.N
+  press: https://house-press.com/representative/Sharon-Cooper
+  spouse: Tom
+  staff: a href="
+  staff email: ''
+  title: Chairman, Health & Human Services

@@ -12,7 +12,7 @@ roles:
   district: '31'
 contact_details:
 - note: Capitol Office
-  address: 217 State Capitol;Atlanta, GA 30334
+  address: 217 State Capitol; Atlanta, GA 30334
   voice: 404-656-5126
 - note: District Office
   address: 177 Martin Street; Jefferson, GA 30549
@@ -26,8 +26,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=65&Session=27
 - url: https://www.legis.ga.gov/members/house/65?session=1029
+- url: https://www.legis.ga.gov/members/house/65?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/65?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 65
+  residence: Jefferson
   city: Jefferson
   georgia_id: 65
-  residence: Jefferson
+  birthday: May 20
+  occupation: Retired Teacher
+  press: https://house-press.com/representative/Tommy-Benton
+  spouse: Karen
+  staff: a href="
+  staff email: ''

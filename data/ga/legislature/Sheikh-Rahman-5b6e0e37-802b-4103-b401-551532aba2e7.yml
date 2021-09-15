@@ -12,10 +12,10 @@ roles:
   district: '5'
 contact_details:
 - note: Capitol Office
-  address: 323-B Coverdell Legislative Office Building;Atlanta, GA 30334
+  address: 301-A CLOB; Atlanta, GA 30334
   voice: 404-463-1318
 - note: District Office
-  address: 779 Simon Way ; Lawrenceville, GA 30045
+  address: P.O. Box 1346; Lawrenceville, GA 30046
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4924&Session=27
 - url: https://www.legis.ga.gov/members/senate/4924?session=1029
@@ -23,8 +23,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4924&Session=27
 - url: https://www.legis.ga.gov/members/senate/4924?session=1029
+- url: https://www.legis.ga.gov/members/senate/4924?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4924?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4924
-  city: 'Lawrenceville '
-  georgia_id: 4924
   residence: 'Lawrenceville '
+  city: Lawrenceville
+  georgia_id: 4924
+  birthday: November 15
+  occupation: Business Owner
+  press: https://senatepress.net/category/senate-press/sheikh-rahman
+  religion: Muslim
+  spouse: Sham'e Afrose
+  staff: Meaghan Kelling
+  staff email: meaghan.kelling@senate.ga.gov

@@ -12,8 +12,8 @@ roles:
   district: '143'
 contact_details:
 - note: Capitol Office
-  address: 509-H Coverdell Legislative Office Bldg.;Atlanta, GA 30334
-  voice: 404-656-0220
+  address: 609-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-5058
 - note: District Office
   address: P.O. Box 13451; Macon, GA 31208
   voice: 478-803-0001
@@ -29,8 +29,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=793&Session=27
 - url: https://www.legis.ga.gov/members/house/793?session=1029
+- url: https://www.legis.ga.gov/members/house/793?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/793?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 793
+  residence: Macon
   city: Macon
   georgia_id: 793
-  residence: Macon
+  birthday: September 28
+  press: https://house-press.com/representative/James-Beverly
+  staff: span
+  staff email: ''
+  title: Minority Leader

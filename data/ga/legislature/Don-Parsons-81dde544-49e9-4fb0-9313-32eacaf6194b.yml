@@ -12,7 +12,7 @@ roles:
   district: '44'
 contact_details:
 - note: Capitol Office
-  address: 401-F State Capitol;Atlanta, GA 30334
+  address: 401-F State Capitol; Atlanta, GA 30334
   voice: 404-463-7853
 - note: District Office
   address: 3167 Sycamore Lane; Marietta, GA 30066
@@ -29,8 +29,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=184&Session=27
 - url: https://www.legis.ga.gov/members/house/184?session=1029
+- url: https://www.legis.ga.gov/members/house/184?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/184?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 184
+  residence: Marietta
   city: Marietta
   georgia_id: 184
-  residence: Marietta
+  birthday: July 21
+  occupation: Telecom Consultant
+  press: https://house-press.com/representative/Don-Parsons
+  spouse: Jo
+  staff: Sofia Fierro - Administrative Assistant
+  staff email: sofia.fierro@house.ga.gov
+  title: Chairman, Energy, Utilities, & Telecommunications

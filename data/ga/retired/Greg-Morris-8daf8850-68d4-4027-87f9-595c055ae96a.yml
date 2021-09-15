@@ -7,17 +7,10 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/morris-greg-
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2021-03-15'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '156'
-contact_details:
-- note: Capitol Office
-  address: 226-B State Capitol;Atlanta, GA 30334
-  voice: 404-656-5115
-  fax: 404-463-4122
-- note: District Office
-  address: 1021 J.R. Rollins Road; Vidalia, GA 30474
-  voice: 912-293-0725
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=174&Session=27
 - url: https://www.legis.ga.gov/members/house/174?session=1029
@@ -30,8 +23,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=174&Session=27
 - url: https://www.legis.ga.gov/members/house/174?session=1029
+- url: https://www.legis.ga.gov/members/house/174?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/174?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 174
+  residence: Vidalia
   city: Vidalia
   georgia_id: 174
-  residence: Vidalia
+  birthday: April 25
+  occupation: Businessman
+  press: https://house-press.com/representative/Greg-Morris
+  spouse: Amy
+  staff: Donna Harley - Administrative Assistant
+  staff email: donna.harley@house.ga.gov
+  title: Chairman, Banks and Banking

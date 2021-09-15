@@ -2,17 +2,31 @@ id: ocd-person/2f8621bc-0548-457c-8b0d-9148e14b77fe
 name: Kim Jackson
 given_name: Kim
 family_name: Jackson
+email: kim.jackson@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/jackson-kim-4981.jpg
 party:
 - name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '41'
+contact_details:
+- note: Capitol Office
+  address: 321-B CLOB ; Atlanta, GA 30334
+  voice: 404-656-6882
+- note: District Office
+  address: P.O. Box 1411; Pine Lake , GA 30072
 links:
 - url: https://www.legis.ga.gov/members/senate/4981?session=1029
 sources:
 - url: https://www.legis.ga.gov/members/senate/4981?session=1029
+- url: https://www.legis.ga.gov/members/senate/4981?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4981?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  city: null
+  residence: Stone Mountain
+  city: Stone Mountain
   georgia_id: 4981
-  residence: null
+  staff: Ashley Thomas
+  staff email: ashley.thomas@senate.ga.gov
