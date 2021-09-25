@@ -12,7 +12,7 @@ roles:
   district: '161'
 contact_details:
 - note: Capitol Office
-  address: 401-D State Capitol;Atlanta, GA 30334
+  address: 401-D State Capitol; Atlanta, GA 30334
   voice: 404-656-7855
 - note: District Office
   address: 2440 Rincon-Stillwell Rd.; Rincon, GA 31326
@@ -26,8 +26,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
 - url: https://www.legis.ga.gov/members/house/823?session=1029
+- url: https://www.legis.ga.gov/members/house/823?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/823?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 823
+  residence: Rincon
   city: Rincon
   georgia_id: 823
-  residence: Rincon
+  birthday: April 26
+  occupation: Retired
+  press: https://house-press.com/representative/Bill-Hitchens
+  spouse: Norma
+  staff: a href="
+  staff email: ''
+  title: 'Chairman, Appropriations: Public Safety Subcommittee'

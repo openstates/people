@@ -12,7 +12,7 @@ roles:
   district: '68'
 contact_details:
 - note: Capitol Office
-  address: 408-C Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 408-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-657-1803
 - note: District Office
   address: 206 South Carroll Rd.; Villa Rica, GA 30180
@@ -28,8 +28,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4892&Session=27
 - url: https://www.legis.ga.gov/members/house/4892?session=1029
+- url: https://www.legis.ga.gov/members/house/4892?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4892?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4892
+  residence: Villa Rica
   city: Villa Rica
   georgia_id: 4892
-  residence: Villa Rica
+  birthday: September 23
+  occupation: Funeral Director
+  press: https://house-press.com/representative/J-Collins
+  staff: a href="
+  staff email: ''
+  title: Chairman, Public Safety & Homeland Security

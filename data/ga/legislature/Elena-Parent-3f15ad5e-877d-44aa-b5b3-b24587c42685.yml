@@ -12,7 +12,7 @@ roles:
   district: '42'
 contact_details:
 - note: Capitol Office
-  address: 321-B Coverdell Legislative Office Building;Atlanta, GA 30334
+  address: 121-A State Capitol; Atlanta, GA 30334
   voice: 404-656-5109
 - note: District Office
   address: 1250 Oakdale Road NE;Atlanta, GA 30307
@@ -29,8 +29,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
 - url: https://www.legis.ga.gov/members/senate/768?session=1029
+- url: https://www.legis.ga.gov/members/senate/768?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/768?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 768
+  residence: Atlanta
   city: Atlanta
   georgia_id: 768
-  residence: Atlanta
+  birthday: December 27
+  occupation: Attorney
+  press: 'https://senatepress.net/category/senate-press/elena-parent '
+  spouse: Briley Brisendine
+  staff: Stephanie Tanner
+  staff email: stephanie.tanner@senate.ga.gov
+  title: Vice Chairman of Campaigns and Fundraising

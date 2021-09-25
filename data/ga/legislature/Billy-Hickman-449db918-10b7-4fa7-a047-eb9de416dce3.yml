@@ -2,6 +2,8 @@ id: ocd-person/449db918-10b7-4fa7-a047-eb9de416dce3
 name: Billy Hickman
 given_name: Billy
 family_name: Hickman
+email: billy.hickman@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/hickman-billy-4972.jpg
 party:
 - name: Republican
 roles:
@@ -9,6 +11,9 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '4'
 contact_details:
+- note: Capitol Office
+  address: 304-A CLOB; Atlanta, GA 30334
+  voice: 404-463-1371
 - note: District Office
   address: P.O. Box 25; Statesboro, GA 30459
   voice: 912-682-5819
@@ -16,7 +21,18 @@ links:
 - url: https://www.legis.ga.gov/members/senate/4972?session=1029
 sources:
 - url: https://www.legis.ga.gov/members/senate/4972?session=1029
+- url: https://www.legis.ga.gov/members/senate/4972?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4972?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
+  residence: Statesboro
   city: Statesboro
   georgia_id: 4972
-  residence: Statesboro
+  birthday: September 7
+  occupation: Certified Public Accountant
+  press: 'https://senatepress.net/category/senate-press/billy-hickman '
+  religion: Baptist
+  spouse: Jo Ann Hickman
+  staff: Caleb Rudin
+  staff email: caleb.rudin@senate.ga.gov

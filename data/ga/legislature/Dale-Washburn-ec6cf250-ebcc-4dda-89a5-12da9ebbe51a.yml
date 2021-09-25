@@ -12,7 +12,7 @@ roles:
   district: '141'
 contact_details:
 - note: Capitol Office
-  address: 401-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 401-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0152
 - note: District Office
   address: 3040 Riverside Dr, Suite C-2; Macon, GA 31210
@@ -23,8 +23,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4958&Session=27
 - url: https://www.legis.ga.gov/members/house/4958?session=1029
+- url: https://www.legis.ga.gov/members/house/4958?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4958?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4958
+  residence: Macon
   city: Macon
   georgia_id: 4958
-  residence: Macon
+  birthday: December 13
+  occupation: Real Estate Broker
+  press: https://house-press.com/representative/Dale-Washburn
+  spouse: Donna
+  staff: Shakirah Nash - Administrative Assistant
+  staff email: shakirah.nash@house.ga.gov style=

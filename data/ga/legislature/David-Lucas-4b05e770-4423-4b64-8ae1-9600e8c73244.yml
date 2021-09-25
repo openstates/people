@@ -12,7 +12,7 @@ roles:
   district: '26'
 contact_details:
 - note: Capitol Office
-  address: 110-D State Capitol;Atlanta, GA 30334
+  address: 110-C State Capitol; Atlanta, GA 30334
   voice: 404-656-0150
 - note: District Office
   address: 2594 Saratoga Drive; Macon, GA 31211
@@ -27,8 +27,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=157&Session=27
 - url: https://www.legis.ga.gov/members/senate/157?session=1029
+- url: https://www.legis.ga.gov/members/senate/157?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/157?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 157
+  residence: Macon
   city: Macon
   georgia_id: 157
-  residence: Macon
+  birthday: April 23
+  occupation: Self-Employed
+  press: 'https://senatepress.net/category/senate-press/david-lucas '
+  spouse: Elaine
+  staff: Keridan Ogletree
+  staff email: keridan.ogletree@senate.ga.gov

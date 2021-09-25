@@ -12,9 +12,9 @@ roles:
   district: '46'
 contact_details:
 - note: Capitol Office
-  address: 121- F State Capitol;Atlanta, GA 30334
+  address: 432 State Capitol; Atlanta, GA 30334
   voice: 404-463-1366
-  fax: 404-657-9887
+  fax: 404-463-5547
 - note: District Office
   address: P.O. Box 512; Athens, GA 30603
   voice: 706-543-7700
@@ -29,8 +29,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: https://www.legis.ga.gov/members/senate/9?session=1029
+- url: https://www.legis.ga.gov/members/senate/9?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/9?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 9
+  residence: Athens
   city: Athens
   georgia_id: 9
-  residence: Athens
+  birthday: September 1
+  occupation: Attorney
+  press: https://senatepress.net/category/senate-press/bill-cowsert
+  spouse: Amy
+  staff: Cyndi West
+  staff email: cyndi.west@senate.ga.gov

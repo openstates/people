@@ -12,8 +12,8 @@ roles:
   district: '25'
 contact_details:
 - note: Capitol Office
-  address: 508-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
-  voice: 404-656-0213
+  address: 245 State Capitol; Atlanta, GA 30334
+  voice: 404-463-2246
 - note: District Office
   address: 8175 Majors Ridge Way; Cumming, GA 30041
 links:
@@ -26,8 +26,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4885&Session=27
 - url: https://www.legis.ga.gov/members/house/4885?session=1029
+- url: https://www.legis.ga.gov/members/house/4885?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4885?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4885
+  residence: South Forsyth
   city: South Forsyth
   georgia_id: 4885
-  residence: South Forsyth
+  birthday: August 15
+  occupation: Technology Executive
+  press: https://house-press.com/representative/Todd-Jones
+  spouse: Tracey
+  staff: a href="
+  staff email: ''
+  title: 'Chairman, Appropriations: Education Subcommittee'

@@ -12,7 +12,7 @@ roles:
   district: '11'
 contact_details:
 - note: Capitol Office
-  address: 218-C State Capitol;Atlanta, GA 30334
+  address: 218-C State Capitol; Atlanta, GA 30334
   voice: 404-656-7153
 - note: District Office
   address: 89 Apple Valley Farm Lane; Jasper, GA 30143
@@ -28,8 +28,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
 - url: https://www.legis.ga.gov/members/house/755?session=1029
+- url: https://www.legis.ga.gov/members/house/755?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/755?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 755
+  residence: Jasper
   city: Jasper
   georgia_id: 755
-  residence: Jasper
+  birthday: July 22
+  occupation: 'Retired County Agent '
+  press: https://house-press.com/representative/Rick-Jasperse
+  spouse: Marcia
+  staff: a href="
+  staff email: ''
+  title: Chairman, Transportation

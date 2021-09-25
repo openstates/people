@@ -12,7 +12,7 @@ roles:
   district: '115'
 contact_details:
 - note: Capitol Office
-  address: 415-B State Capitol;Atlanta, GA 30334
+  address: 415-B State Capitol; Atlanta, GA 30334
   voice: 404-656-5024
 - note: District Office
   address: PO Box 430; Monroe, GA 30655
@@ -29,8 +29,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
 - url: https://www.legis.ga.gov/members/house/778?session=1029
+- url: https://www.legis.ga.gov/members/house/778?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/778?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 778
+  residence: Monroe
   city: Monroe
   georgia_id: 778
-  residence: Monroe
+  birthday: April 17
+  occupation: Business Owner
+  press: https://house-press.com/representative/Bruce-Williamson
+  spouse: Vickie
+  staff: a href="
+  staff email: ''
+  title: Majority Caucus Secretary/Treasurer
