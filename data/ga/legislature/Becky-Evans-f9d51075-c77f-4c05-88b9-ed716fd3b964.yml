@@ -12,7 +12,7 @@ roles:
   district: '83'
 contact_details:
 - note: Capitol Office
-  address: 404-E Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 404-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0109
 - note: District Office
   address: P.O. Box 15074; Atlanta, GA 30333
@@ -23,8 +23,15 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4946&Session=27
 - url: https://www.legis.ga.gov/members/house/4946?session=1029
+- url: https://www.legis.ga.gov/members/house/4946?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4946?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4946
+  residence: Atlanta
   city: Atlanta
   georgia_id: 4946
-  residence: Atlanta
+  press: https://house-press.com/representative/Becky-Evans
+  spouse: David
+  staff: Cheryl Jackson - Administrative Assistant
+  staff email: cheryl.jackson@house.ga.gov

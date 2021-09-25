@@ -12,7 +12,7 @@ roles:
   district: '70'
 contact_details:
 - note: Capitol Office
-  address: 228-C State Capitol;Atlanta, GA 30334
+  address: 228-C State Capitol; Atlanta, GA 30334
   voice: 404-656-7149
 - note: District Office
   address: Eight Evergreen Drive; Newnan, GA 30263
@@ -26,8 +26,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=212&Session=27
 - url: https://www.legis.ga.gov/members/house/212?session=1029
+- url: https://www.legis.ga.gov/members/house/212?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/212?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 212
+  residence: Newnan
   city: Newnan
   georgia_id: 212
-  residence: Newnan
+  birthday: August 30
+  occupation: Business Owner
+  press: https://house-press.com/representative/Lynn-Smith
+  spouse: Charles
+  staff: a href="
+  staff email: ''
+  title: Chairman, Natural Resources & Environment

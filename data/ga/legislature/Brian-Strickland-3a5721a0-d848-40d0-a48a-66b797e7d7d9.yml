@@ -17,8 +17,8 @@ roles:
   district: '17'
 contact_details:
 - note: Capitol Office
-  address: 109 State Capitol;Atlanta, GA 30334
-  voice: 404-656-7454
+  address: 324-B CLOB; Atlanta, GA 30334
+  voice: 404-463-6598
 - note: District Office
   address: P.O. Box 1895; McDonough, GA 30253
 links:
@@ -35,8 +35,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 - url: https://www.legis.ga.gov/members/senate/835?session=1029
+- url: https://www.legis.ga.gov/members/senate/835?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/835?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 835
+  residence: McDonough
   city: McDonough
   georgia_id: 835
-  residence: McDonough
+  birthday: October 26
+  occupation: Attorney
+  press: 'https://senatepress.net/category/senate-press/brian-strickland '
+  staff: Sky Park
+  staff email: sky.park@senate.ga.gov

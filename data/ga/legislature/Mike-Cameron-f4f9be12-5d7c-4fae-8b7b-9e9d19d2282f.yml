@@ -2,17 +2,34 @@ id: ocd-person/f4f9be12-5d7c-4fae-8b7b-9e9d19d2282f
 name: Mike Cameron
 given_name: Mike
 family_name: Cameron
+email: mike.cameron@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/cameron-mike-4986.jpg
 party:
 - name: Republican
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '1'
+contact_details:
+- note: Capitol Office
+  address: 504-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0188
+- note: District Office
+  address: 1100 S. Crest Rd; Rossville, GA 30741
 links:
 - url: https://www.legis.ga.gov/members/house/4986?session=1029
 sources:
 - url: https://www.legis.ga.gov/members/house/4986?session=1029
+- url: https://www.legis.ga.gov/members/house/4986?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4986?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  city: null
+  residence: Rossville
+  city: Rossville
   georgia_id: 4986
-  residence: null
+  birthday: July 21
+  occupation: Retired
+  press: https://house-press.com/representative/Mike-Cameron
+  staff: LaTricia Howard - Administrative Assistant
+  staff email: latricia.howard@house.ga.gov

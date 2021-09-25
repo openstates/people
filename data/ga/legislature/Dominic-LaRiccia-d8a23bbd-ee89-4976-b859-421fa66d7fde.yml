@@ -12,7 +12,7 @@ roles:
   district: '169'
 contact_details:
 - note: Capitol Office
-  address: 109 State Capitol;Atlanta, GA 30334
+  address: 109 State Capitol; Atlanta, GA 30334
   voice: 404-651-7737
 - note: District Office
   address: P.O. Box 1156; Douglas, GA 31534
@@ -28,8 +28,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=860&Session=27
 - url: https://www.legis.ga.gov/members/house/860?session=1029
+- url: https://www.legis.ga.gov/members/house/860?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/860?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 860
+  residence: Douglas
   city: Douglas
   georgia_id: 860
-  residence: Douglas
+  birthday: May 23
+  occupation: Business Owner
+  press: https://house-press.com/representative/Dominic-LaRiccia
+  spouse: Karrie
+  staff: a href="
+  staff email: ''
+  title: Governor's Floor Leader

@@ -12,7 +12,7 @@ roles:
   district: '7'
 contact_details:
 - note: Capitol Office
-  address: 332 State Capitol;Atlanta, GA 30334
+  address: 332 State Capitol; Atlanta, GA 30334
   voice: 404-656-5020
   fax: 404-656-5644
 - note: District Office
@@ -29,8 +29,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=189&Session=27
 - url: https://www.legis.ga.gov/members/house/189?session=1029
+- url: https://www.legis.ga.gov/members/house/189?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/189?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 189
+  residence: Blue Ridge
   city: Blue Ridge
   georgia_id: 189
-  residence: Blue Ridge
+  birthday: March 14
+  occupation: Attorney
+  press: https://house-press.com/representative/David-Ralston
+  staff: a href="
+  staff email: ''
+  title: Speaker of the House
