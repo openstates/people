@@ -12,7 +12,7 @@ roles:
   district: '119'
 contact_details:
 - note: Capitol Office
-  address: 612-G Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 612-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0325
 - note: District Office
   address: P.O. Box 623; Watkinsville, GA 30677
@@ -23,8 +23,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4956&Session=27
 - url: https://www.legis.ga.gov/members/house/4956?session=1029
+- url: https://www.legis.ga.gov/members/house/4956?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4956?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4956
+  residence: Watkinsville
   city: Watkinsville
   georgia_id: 4956
-  residence: Watkinsville
+  birthday: October 8
+  occupation: Real Estate
+  press: https://house-press.com/representative/Marcus-Wiedower
+  spouse: Kelly
+  staff: Delane Roberts - Administrative Assistant
+  staff email: delane.roberts@house.ga.gov

@@ -12,7 +12,7 @@ roles:
   district: '34'
 contact_details:
 - note: Capitol Office
-  address: 420-A State Capitol;Atlanta, GA 30334
+  address: 420-A State Capitol; Atlanta, GA 30334
   voice: 404-656-5095
   fax: 404-657-9728
 - note: District Office
@@ -28,8 +28,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
 - url: https://www.legis.ga.gov/members/senate/41?session=1029
+- url: https://www.legis.ga.gov/members/senate/41?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/41?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 41
+  residence: Riverdale
   city: Riverdale
   georgia_id: 41
-  residence: Riverdale
+  birthday: July 6
+  occupation: Businesswoman
+  press: 'https://senatepress.net/category/senate-press/valencia-seay '
+  religion: Antioch Baptist Church North
+  spouse: Walter
+  staff: Summer Boone
+  staff email: summer.boone@senate.ga.gov

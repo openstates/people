@@ -12,7 +12,7 @@ roles:
   district: '129'
 contact_details:
 - note: Capitol Office
-  address: 218-B State Capitol;Atlanta, GA 30334
+  address: 218-B State Capitol; Atlanta, GA 30334
   voice: 404-656-5132
 - note: District Office
   address: PO Box 151; Monticello, GA 31064
@@ -28,8 +28,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=780&Session=27
 - url: https://www.legis.ga.gov/members/house/780?session=1029
+- url: https://www.legis.ga.gov/members/house/780?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/780?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 780
+  residence: Monticello
   city: Monticello
   georgia_id: 780
-  residence: Monticello
+  birthday: October 8
+  occupation: Retired
+  press: https://house-press.com/representative/Susan-Holmes
+  spouse: Paul
+  staff: Vanessa Turner - Administrative Assistant
+  staff email: vanessa.turner@house.ga.gov

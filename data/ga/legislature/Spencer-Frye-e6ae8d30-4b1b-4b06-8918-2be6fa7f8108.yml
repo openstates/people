@@ -12,7 +12,7 @@ roles:
   district: '118'
 contact_details:
 - note: Capitol Office
-  address: 604-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 604-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0265
 - note: District Office
   address: 865 West Broad; Athens, GA 30601
@@ -26,8 +26,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=819&Session=27
 - url: https://www.legis.ga.gov/members/house/819?session=1029
+- url: https://www.legis.ga.gov/members/house/819?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/819?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 819
+  residence: Athens
   city: Athens
   georgia_id: 819
-  residence: Athens
+  birthday: December 14
+  occupation: Executive
+  press: https://house-press.com/representative/Spencer-Frye
+  spouse: Gretchen
+  staff: a href="
+  staff email: ''

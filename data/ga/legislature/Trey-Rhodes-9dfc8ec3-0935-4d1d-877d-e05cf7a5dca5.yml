@@ -12,7 +12,7 @@ roles:
   district: '120'
 contact_details:
 - note: Capitol Office
-  address: 228-A State Capitol;Atlanta, GA 30334
+  address: 228-A State Capitol; Atlanta, GA 30334
   voice: 404-656-5099
 - note: District Office
   address: 1051 Ben Hammond Drive; Greensboro, GA 30642
@@ -26,8 +26,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=876&Session=27
 - url: https://www.legis.ga.gov/members/house/876?session=1029
+- url: https://www.legis.ga.gov/members/house/876?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/876?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 876
+  residence: Greensboro
   city: Greensboro
   georgia_id: 876
-  residence: Greensboro
+  birthday: February 9
+  occupation: Financial Advisor
+  press: https://house-press.com/representative/Trey-Rhodes
+  spouse: Summer
+  staff: a href="
+  staff email: ''
+  title: Chairman, Game, Fish, & Parks

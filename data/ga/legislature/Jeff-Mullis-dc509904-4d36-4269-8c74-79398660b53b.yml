@@ -12,11 +12,11 @@ roles:
   district: '53'
 contact_details:
 - note: Capitol Office
-  address: 453 State Capitol;Atlanta, GA 30334
+  address: 453 State Capitol; Atlanta, GA 30334
   voice: 404-656-0057
   fax: 404-651-6768
 - note: District Office
-  address: 212 English Avenue; Chickamauga, GA 30707
+  address: 10052 North Highway 27; Rock Spring, GA 30739
   voice: 706-375-1776
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=31&Session=27
@@ -28,8 +28,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=31&Session=27
 - url: https://www.legis.ga.gov/members/senate/31?session=1029
+- url: https://www.legis.ga.gov/members/senate/31?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/31?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 31
+  residence: Chickamauga
   city: Chickamauga
   georgia_id: 31
-  residence: Chickamauga
+  birthday: December 27
+  occupation: Executive Director
+  press: 'https://senatepress.net/category/senate-press/jeff-mullis '
+  staff: Madeline Lara
+  staff email: madeline.lara@senate.ga.gov

@@ -12,7 +12,7 @@ roles:
   district: '59'
 contact_details:
 - note: Capitol Office
-  address: 604-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 604-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0265
 - note: District Office
   address: 275 Memorial Dr; Suite 415; Atlanta, GA 30312
@@ -26,8 +26,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4888&Session=27
 - url: https://www.legis.ga.gov/members/house/4888?session=1029
+- url: https://www.legis.ga.gov/members/house/4888?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4888?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4888
+  residence: Atlanta
   city: Atlanta
   georgia_id: 4888
-  residence: Atlanta
+  birthday: May 14
+  occupation: Attorney
+  press: https://house-press.com/representative/David-Dreyer
+  staff: a href="
+  staff email: ''

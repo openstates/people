@@ -12,8 +12,8 @@ roles:
   district: '117'
 contact_details:
 - note: Capitol Office
-  address: 612-F Coverdell Legislative Office Bldg.;Atlanta, GA 30334
-  voice: 404-656-0325
+  address: 608-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0298
 - note: District Office
   address: P.O. Box 1203; Athens, GA 30603
 links:
@@ -23,8 +23,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4955&Session=27
 - url: https://www.legis.ga.gov/members/house/4955?session=1029
+- url: https://www.legis.ga.gov/members/house/4955?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4955?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4955
+  residence: Athens
   city: Athens
   georgia_id: 4955
-  residence: Athens
+  birthday: January 11
+  occupation: Financial Services
+  press: https://house-press.com/representative/Houston-Gaines
+  staff: Ronny Pouliot - Administrative Assistant
+  staff email: ronald.pouliot@house.ga.gov

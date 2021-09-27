@@ -12,7 +12,7 @@ roles:
   district: '92'
 contact_details:
 - note: Capitol Office
-  address: 509-D Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 509-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0220
 - note: District Office
   address: PO Box 2186; Lithonia, GA 30058
@@ -28,8 +28,14 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=3877&Session=27
 - url: https://www.legis.ga.gov/members/house/3877?session=1029
+- url: https://www.legis.ga.gov/members/house/3877?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/3877?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 3877
+  residence: Lithonia
   city: Lithonia
   georgia_id: 3877
-  residence: Lithonia
+  press: https://house-press.com/representative/Doreen-Carter
+  staff: Prayer Idowu - Administrative Assistant
+  staff email: prayer.idowu@house.ga.gov

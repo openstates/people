@@ -12,7 +12,7 @@ roles:
   district: '122'
 contact_details:
 - note: Capitol Office
-  address: 109 State Capitol;Atlanta, GA 30334
+  address: 109 State Capitol; Atlanta, GA 30334
   voice: 404-651-7737
 - note: District Office
   address: P.O. Box 86; Evans, GA 30809
@@ -26,8 +26,16 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4879&Session=27
 - url: https://www.legis.ga.gov/members/house/4879?session=1029
+- url: https://www.legis.ga.gov/members/house/4879?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4879?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4879
+  residence: Evans
   city: Evans
   georgia_id: 4879
-  residence: Evans
+  birthday: March 27
+  press: https://house-press.com/representative/Jodi-Lott
+  staff: Talmadge James - Administrative Assistant
+  staff email: talmadge.james@house.ga.gov
+  title: Governor's Floor Leader
