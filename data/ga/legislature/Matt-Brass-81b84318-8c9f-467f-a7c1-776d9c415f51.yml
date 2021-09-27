@@ -12,7 +12,7 @@ roles:
   district: '28'
 contact_details:
 - note: Capitol Office
-  address: 327-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 327-B CLOB; Atlanta, GA 30334
   voice: 404-463-1376
 - note: District Office
   address: P.O. Box 1313; Newnan, GA 30264
@@ -27,8 +27,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4907&Session=27
 - url: https://www.legis.ga.gov/members/senate/4907?session=1029
+- url: https://www.legis.ga.gov/members/senate/4907?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4907?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4907
+  residence: Newnan
   city: Newnan
   georgia_id: 4907
-  residence: Newnan
+  birthday: January 19
+  occupation: 'Business Development '
+  press: https://senatepress.net/category/senate-press/matt-brass
+  religion: Presbyterian
+  spouse: Maegan
+  staff: Denese Sampson
+  staff email: denese.sampson@senate.ga.gov

@@ -12,8 +12,8 @@ roles:
   district: '30'
 contact_details:
 - note: Capitol Office
-  address: 236 State Capitol;Atlanta, GA 30334
-  voice: 404-463-2478
+  address: 236 State Capitol ; Atlanta, GA 30334
+  voice: 404-656-7872
 - note: District Office
   address: PO Box 1260; Carrollton, GA 30112
 links:
@@ -26,8 +26,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=839&Session=27
 - url: https://www.legis.ga.gov/members/senate/839?session=1029
+- url: https://www.legis.ga.gov/members/senate/839?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/839?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 839
+  residence: Carrollton
   city: Carrollton
   georgia_id: 839
-  residence: Carrollton
+  birthday: August 19
+  occupation: Retired Military (1986-2008), Construction Industry (2008-present)
+  press: https://senatepress.net/category/senate-press/mike-dugan
+  spouse: Missy
+  staff: Ethan Stiles
+  staff email: ethan.stiles@senate.ga.gov
+  title: Majority Leader

@@ -12,7 +12,7 @@ roles:
   district: '54'
 contact_details:
 - note: Capitol Office
-  address: 320-A Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 320-A CLOB; Atlanta, GA 30334
   voice: 404-463-5402
   fax: 404-657-7266
 - note: District Office
@@ -22,8 +22,8 @@ links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4909&Session=27
 - url: https://www.legis.ga.gov/members/senate/4909?session=1029
 other_names:
-- name: Chuck  Payne
-- name: Chuck  Payne
+- name: Chuck Payne
+- name: Chuck Payne
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000475
@@ -31,8 +31,14 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4909&Session=27
 - url: https://www.legis.ga.gov/members/senate/4909?session=1029
+- url: https://www.legis.ga.gov/members/senate/4909?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4909?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4909
-  city: 'Dalton '
-  georgia_id: 4909
   residence: 'Dalton '
+  city: Dalton
+  georgia_id: 4909
+  press: 'https://senatepress.net/category/senate-press/chuck-payne '
+  staff: Phyllis Williams
+  staff email: phyllis.williams@senate.ga.gov

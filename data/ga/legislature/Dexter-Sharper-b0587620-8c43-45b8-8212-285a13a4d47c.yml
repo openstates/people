@@ -12,7 +12,7 @@ roles:
   district: '177'
 contact_details:
 - note: Capitol Office
-  address: 411-B Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 411-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0126
 - note: District Office
   address: 19 Sharper Circle; Valdosta, GA 31601
@@ -26,8 +26,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=831&Session=27
 - url: https://www.legis.ga.gov/members/house/831?session=1029
+- url: https://www.legis.ga.gov/members/house/831?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/831?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 831
+  residence: Valdosta
   city: Valdosta
   georgia_id: 831
-  residence: Valdosta
+  birthday: July 9
+  occupation: Business Consultant/Paramedic
+  press: https://house-press.com/representative/Dexter-Sharper
+  spouse: Chequella
+  staff: a href="
+  staff email: ''

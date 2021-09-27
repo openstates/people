@@ -12,7 +12,7 @@ roles:
   district: '1'
 contact_details:
 - note: Capitol Office
-  address: 325-A Coverdell Legislative Office Building;Atlanta, GA 30334
+  address: 325-A CLOB; Atlanta, GA 30334
   voice: 404-656-7880
 - note: District Office
   address: '1326 Eisenhower Drive #2; Savannah, GA 31406'
@@ -31,8 +31,18 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
 - url: https://www.legis.ga.gov/members/senate/784?session=1029
+- url: https://www.legis.ga.gov/members/senate/784?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/784?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 784
+  residence: Savannah
   city: Savannah
   georgia_id: 784
-  residence: Savannah
+  birthday: July 27
+  occupation: Medical Doctor
+  press: 'https://senatepress.net/category/senate-press/ben-watson '
+  religion: Anglican
+  spouse: Bernice
+  staff: Leighton Kennedy
+  staff email: leighton.kennedy@senate.ga.gov

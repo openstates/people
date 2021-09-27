@@ -12,7 +12,7 @@ roles:
   district: '47'
 contact_details:
 - note: Capitol Office
-  address: 121-I State Capitol;Atlanta, GA 30334
+  address: 121-I State Capitol; Atlanta, GA 30334
   voice: 404-656-4700
   fax: 404-657-3248
 - note: District Office
@@ -28,8 +28,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=751&Session=27
 - url: https://www.legis.ga.gov/members/senate/751?session=1029
+- url: https://www.legis.ga.gov/members/senate/751?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/751?session=1029&chamber=2
+  note: Detail page (requires authorization token)
 extras:
-  guid: 751
+  residence: Danielsville
   city: Danielsville
   georgia_id: 751
-  residence: Danielsville
+  birthday: May 23
+  occupation: Engineer/Farmer
+  press: https://senatepress.net/category/senate-press/frank-ginn
+  spouse: Robin
+  staff: Emily Doppel
+  staff email: emily.doppel@senate.ga.gov

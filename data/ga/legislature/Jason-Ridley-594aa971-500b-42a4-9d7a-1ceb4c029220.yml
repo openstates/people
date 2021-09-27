@@ -12,7 +12,7 @@ roles:
   district: '6'
 contact_details:
 - note: Capitol Office
-  address: 612-H Coverdell Legislative Office Bldg.;Atlanta, GA 30334
+  address: 612-H Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0325
 - note: District Office
   address: P.O. Box 2010; Chatsworth, GA 30705
@@ -26,8 +26,17 @@ sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4883&Session=27
 - url: https://www.legis.ga.gov/members/house/4883?session=1029
+- url: https://www.legis.ga.gov/members/house/4883?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4883?session=1029&chamber=1
+  note: Detail page (requires authorization token)
 extras:
-  guid: 4883
+  residence: Chatsworth
   city: Chatsworth
   georgia_id: 4883
-  residence: Chatsworth
+  birthday: July 19
+  occupation: Financial Representative/Farmer
+  press: https://house-press.com/representative/Jason-Ridley
+  spouse: Andrea
+  staff: ''
+  staff email: delane.roberts@house.ga.gov
