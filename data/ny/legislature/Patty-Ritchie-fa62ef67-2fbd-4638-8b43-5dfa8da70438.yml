@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street, Legislative Office Building;Albany,, NY 12247
-  voice: 315-393-3024
-- note: District Office
-  address: 330 Ford St.;Ogdensburg,, NY 13669
-  voice: 518-455-3438
-  fax: 315-393-3063
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/patty-ritchie/contact
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: NYL000362
 sources:
 - url: http://www.nysenate.gov/senators/patty-ritchie/contact
+offices:
+- address: 188 State Street, Legislative Office Building;Albany,, NY 12247
+  voice: 315-393-3024
+  classification: capitol
+- address: 330 Ford St.;Ogdensburg,, NY 13669
+  voice: 518-455-3438
+  fax: 315-393-3063
+  classification: district
+  name: 'District Office #1'

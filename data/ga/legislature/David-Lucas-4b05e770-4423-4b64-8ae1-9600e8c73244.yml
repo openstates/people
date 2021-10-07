@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: 110-C State Capitol; Atlanta, GA 30334
-  voice: 404-656-0150
-- note: District Office
-  address: 2594 Saratoga Drive; Macon, GA 31211
-  voice: 478-254-7600
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=157&Session=27
 - url: https://www.legis.ga.gov/members/senate/157?session=1029
@@ -41,3 +34,11 @@ extras:
   spouse: Elaine
   staff: Keridan Ogletree
   staff email: keridan.ogletree@senate.ga.gov
+offices:
+- address: 110-C State Capitol; Atlanta, GA 30334
+  voice: 404-656-0150
+  classification: capitol
+- address: 2594 Saratoga Drive; Macon, GA 31211
+  voice: 478-254-7600
+  classification: district
+  name: 'District Office #1'

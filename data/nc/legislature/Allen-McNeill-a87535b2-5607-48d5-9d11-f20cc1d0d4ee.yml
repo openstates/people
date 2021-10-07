@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '78'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 411;Raleigh, NC 27603-5925
-  voice: 919-715-4946
-- note: District Office
-  address: 4172 NC Hwy 49 S;Asheboro, NC 27205
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/635
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Moore
   - Randolph
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 411;Raleigh, NC 27603-5925
+  voice: 919-715-4946
+  classification: capitol
+- address: 4172 NC Hwy 49 S;Asheboro, NC 27205
+  classification: district
+  name: 'District Office #1'

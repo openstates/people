@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '74'
-contact_details:
-- note: Capitol Office
-  address: 200-3N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8032
-- note: District Office
-  address: 275 N. Division St.;PO Box 173;Woodhull, IL 61490
-  voice: 309-334-7474
-  fax: 309-334-8000
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2696
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2912
@@ -29,3 +21,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2696
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2912
+offices:
+- address: 200-3N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8032
+  classification: capitol
+- address: 275 N. Division St.;PO Box 173;Woodhull, IL 61490
+  voice: 309-334-7474
+  fax: 309-334-8000
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '100'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1019;Raleigh, NC 27601-1096
-  voice: 919-715-0706
-- note: District Office
-  address: PO Box 189113;Charlotte, NC 28218
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/710
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Mecklenburg
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1019;Raleigh, NC 27601-1096
+  voice: 919-715-0706
+  classification: capitol
+- address: PO Box 189113;Charlotte, NC 28218
+  classification: district
+  name: 'District Office #1'

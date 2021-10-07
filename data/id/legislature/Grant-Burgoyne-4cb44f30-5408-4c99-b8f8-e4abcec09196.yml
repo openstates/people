@@ -16,11 +16,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1409
-- note: District Office
-  address: 2203 Mountain View Dr, Boise , ID, 83706
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=16
 other_identifiers:
@@ -34,3 +29,9 @@ other_identifiers:
   identifier: ocd-person/6dba294c-bf89-41dd-9e15-1cc03174ba20
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
+offices:
+- voice: 208-332-1409
+  classification: capitol
+- address: 2203 Mountain View Dr, Boise , ID, 83706
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Addison-5
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 2516 Lime Kiln Rd.;New Haven, VT 05472
-  voice: 802-877-2712
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15785
 - url: http://legislature.vermont.gov/people/single/2022/15785
@@ -31,3 +25,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/15785
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15785
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 2516 Lime Kiln Rd.;New Haven, VT 05472
+  voice: 802-877-2712
+  classification: district
+  name: 'District Office #1'

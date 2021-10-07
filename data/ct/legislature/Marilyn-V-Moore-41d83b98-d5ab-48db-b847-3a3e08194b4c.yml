@@ -8,12 +8,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2000;Hartford, CT 06106
-  voice: 860-240-0425
-- note: District Office
-  address: 666 Cleveland Avenue;Bridgeport, CT 06604
 links:
 - url: http://www.senatedems.ct.gov/Moore
 other_identifiers:
@@ -21,3 +15,10 @@ other_identifiers:
   identifier: CTL000329
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2000;Hartford, CT 06106
+  voice: 860-240-0425
+  classification: capitol
+- address: 666 Cleveland Avenue;Bridgeport, CT 06604
+  classification: district
+  name: 'District Office #1'

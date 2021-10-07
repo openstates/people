@@ -8,8 +8,9 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '29'
-contact_details:
-- note: District Office
-  address: 5301 North Federal Highway; Suite 135; Boca Raton, FL 33487
-- note: Capitol Office
-  address: 222 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+offices:
+- address: 5301 North Federal Highway; Suite 135; Boca Raton, FL 33487
+  classification: district
+  name: 'District Office #1'
+- address: 222 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  classification: capitol

@@ -10,14 +10,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '136'
-contact_details:
-- note: District Office
-  address: 1800 Hudson Ave; Second Floor, Suite 4; Rochester, NY 14617
-  voice: 585-467-0410
-- note: Capitol Office
-  address: LOB 429; Albany, NY 12248
-  voice: 518-455-5373
 links:
 - url: https://assembly.state.ny.us/mem/Sarah-Clark
 sources:
 - url: https://assembly.state.ny.us/mem/Sarah-Clark
+offices:
+- address: 1800 Hudson Ave; Second Floor, Suite 4; Rochester, NY 14617
+  voice: 585-467-0410
+  classification: district
+  name: 'District Office #1'
+- address: LOB 429; Albany, NY 12248
+  voice: 518-455-5373
+  classification: capitol

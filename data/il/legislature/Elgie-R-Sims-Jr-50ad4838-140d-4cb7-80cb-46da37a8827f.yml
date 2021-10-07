@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  address: 417B Capitol Building;Springfield, IL 62706
-  voice: 217-782-3201
-- note: District Office
-  address: 8233 S. Princeton Ave.;Chicago, IL 60620
-  voice: 773-933-7715
-  fax: 773-933-5498
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2703
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2918
@@ -34,3 +26,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2703
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2918
+offices:
+- address: 417B Capitol Building;Springfield, IL 62706
+  voice: 217-782-3201
+  classification: capitol
+- address: 8233 S. Princeton Ave.;Chicago, IL 60620
+  voice: 773-933-7715
+  fax: 773-933-5498
+  classification: district
+  name: 'District Office #1'

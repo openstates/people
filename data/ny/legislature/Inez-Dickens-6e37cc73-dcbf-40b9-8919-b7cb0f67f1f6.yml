@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '70'
-contact_details:
-- note: Capitol Office
-  address: LOB 819; Albany, NY 12248
-  voice: 518-455-4793
-- note: District Office
-  address: 163 West 125th Street; Suite 911; New York, NY 10027
-  voice: 212-866-5809
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Inez-E-Dickens
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Inez-E-Dickens
 - url: https://assembly.state.ny.us/mem/Inez-E-Dickens
+offices:
+- address: LOB 819; Albany, NY 12248
+  voice: 518-455-4793
+  classification: capitol
+- address: 163 West 125th Street; Suite 911; New York, NY 10027
+  voice: 212-866-5809
+  classification: district
+  name: 'District Office #1'

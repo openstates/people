@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '6'
-contact_details:
-- note: Capitol Office
-  address: 151 East Wing P.O. Box 202006 Harrisburg, PA 17120-2006
-  voice: 717-787-2353
-  fax: 717-260-6505
-- note: District Office
-  address: 900 Water Street Downtown Mall Meadville, PA 16335
-  voice: 814-336-1136
-  fax: 814-337-7680
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1083
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   twitter: https://twitter.com/RepRoae
   youtube: https://youtube.com/RepRoae
+offices:
+- address: 151 East Wing P.O. Box 202006 Harrisburg, PA 17120-2006
+  voice: 717-787-2353
+  fax: 717-260-6505
+  classification: capitol
+- address: 900 Water Street Downtown Mall Meadville, PA 16335
+  voice: 814-336-1136
+  fax: 814-337-7680
+  classification: district
+  name: 'District Office #1'

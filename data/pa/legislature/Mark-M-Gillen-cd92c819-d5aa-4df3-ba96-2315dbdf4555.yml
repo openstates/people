@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '128'
-contact_details:
-- note: Capitol Office
-  address: 408 Irvis Office Building P.O. Box 202128 Harrisburg, PA 17120-2128
-  voice: 717-787-8550
-  fax: 717-783-7862
-- note: District Office
-  address: 29 Village Center Drive Suite A-7 Reading, PA 19607
-  voice: 610-775-5130
-  fax: 610-775-3736
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1209
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepGillen
   youtube: https://youtube.com/RepGillen
+offices:
+- address: 408 Irvis Office Building P.O. Box 202128 Harrisburg, PA 17120-2128
+  voice: 717-787-8550
+  fax: 717-783-7862
+  classification: capitol
+- address: 29 Village Center Drive Suite A-7 Reading, PA 19607
+  voice: 610-775-5130
+  fax: 610-775-3736
+  classification: district
+  name: 'District Office #1'

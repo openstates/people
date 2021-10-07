@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '50'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1017;Raleigh, NC 27601-1096
-  voice: 919-715-3019
-- note: District Office
-  address: PO Box 867;Hillsborough, NC 27278
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/683
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Caswell
   - Orange
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1017;Raleigh, NC 27601-1096
+  voice: 919-715-3019
+  classification: capitol
+- address: PO Box 867;Hillsborough, NC 27278
+  classification: district
+  name: 'District Office #1'

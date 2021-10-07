@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 634;Raleigh, NC 27603-5925
-  voice: 919-733-6275
-- note: District Office
-  address: PO Box 4477;Emerald Isle, NC 28594
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/570
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Carteret
   - Jones
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 634;Raleigh, NC 27603-5925
+  voice: 919-733-6275
+  classification: capitol
+- address: PO Box 4477;Emerald Isle, NC 28594
+  classification: district
+  name: 'District Office #1'

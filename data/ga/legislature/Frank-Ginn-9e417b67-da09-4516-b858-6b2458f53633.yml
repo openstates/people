@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  address: 121-I State Capitol; Atlanta, GA 30334
-  voice: 404-656-4700
-  fax: 404-657-3248
-- note: District Office
-  address: P.O. Box 1136; Danielsville, GA 30633
-  voice: 706-680-4466
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=751&Session=27
 - url: https://www.legis.ga.gov/members/senate/751?session=1029
@@ -42,3 +34,12 @@ extras:
   spouse: Robin
   staff: Emily Doppel
   staff email: emily.doppel@senate.ga.gov
+offices:
+- address: 121-I State Capitol; Atlanta, GA 30334
+  voice: 404-656-4700
+  fax: 404-657-3248
+  classification: capitol
+- address: P.O. Box 1136; Danielsville, GA 30633
+  voice: 706-680-4466
+  classification: district
+  name: 'District Office #1'

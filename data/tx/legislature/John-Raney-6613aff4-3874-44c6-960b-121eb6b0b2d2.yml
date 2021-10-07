@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: Room GN.11;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0698
-  fax: 512-463-5109
-- note: District Office
-  address: 4103 South Texas Avenue, Suite 103;Bryan, Texas 77802
-  voice: 979-260-5040
-  fax: 979-260-5097
 links:
 - url: https://house.texas.gov/members/member-page/?district=14
 other_identifiers:
@@ -27,3 +18,13 @@ other_identifiers:
   identifier: TXL000653
 sources:
 - url: https://house.texas.gov/members/member-page/?district=14
+offices:
+- address: Room GN.11;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0698
+  fax: 512-463-5109
+  classification: capitol
+- address: 4103 South Texas Avenue, Suite 103;Bryan, Texas 77802
+  voice: 979-260-5040
+  fax: 979-260-5097
+  classification: district
+  name: 'District Office #1'

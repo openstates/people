@@ -10,11 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1318
-- note: District Office
-  address: 2231 E 3200 N, Twin Falls, ID, 83301
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=25
 other_identifiers:
@@ -22,3 +17,9 @@ other_identifiers:
   identifier: IDL000297
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
+offices:
+- voice: 208-332-1318
+  classification: capitol
+- address: 2231 E 3200 N, Twin Falls, ID, 83301
+  classification: district
+  name: 'District Office #1'

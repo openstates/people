@@ -11,13 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 4th Worcester
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 527A;Boston, MA, 02133
-  voice: 617-722-2020
-- note: District Office
-  address: 24 Church Street, Room 29;Leominster, MA 01453
-  voice: 978-227-5278
 links:
 - url: https://malegislature.gov/Legislators/Profile/N_H1
 other_identifiers:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: MAL000406
 sources:
 - url: https://malegislature.gov/Legislators/Profile/N_H1
+offices:
+- address: 24 Beacon St.;Room 527A;Boston, MA, 02133
+  voice: 617-722-2020
+  classification: capitol
+- address: 24 Church Street, Room 29;Leominster, MA 01453
+  voice: 978-227-5278
+  classification: district
+  name: 'District Office #1'

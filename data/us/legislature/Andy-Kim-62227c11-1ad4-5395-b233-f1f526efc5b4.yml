@@ -20,14 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NJ-3
-contact_details:
-- note: Capitol Office
-  address: 2444 Rayburn House Office Building Washington DC 20515-3003
-  voice: 202-225-4765
-- note: District Office
-  address: 535 E Main St; Marlton, NJ 08053-2301
-- note: District Office
-  address: 33 Washington St; Toms River, NJ 08753-7642
 links:
 - url: https://kim.house.gov
   note: website
@@ -56,3 +48,13 @@ other_identifiers:
   identifier: '179640'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2444 Rayburn House Office Building Washington DC 20515-3003
+  voice: 202-225-4765
+  classification: capitol
+- address: 535 E Main St; Marlton, NJ 08053-2301
+  classification: district
+  name: 'District Office #1'
+- address: 33 Washington St; Toms River, NJ 08753-7642
+  classification: district
+  name: 'District Office #2'

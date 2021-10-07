@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: Room 206W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7905
-- note: District Office
-  address: 2332 Greens Run Road;St. Marys, WV 26170-9735
-  voice: 304-684-3266
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Boley
 other_identifiers:
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: WVL000240
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Boley
+offices:
+- address: Room 206W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7905
+  classification: capitol
+- address: 2332 Greens Run Road;St. Marys, WV 26170-9735
+  voice: 304-684-3266
+  classification: district
+  name: 'District Office #1'

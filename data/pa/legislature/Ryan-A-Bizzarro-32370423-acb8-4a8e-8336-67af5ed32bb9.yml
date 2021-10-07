@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: 414 Main Capitol Building P.O. Box 202003 Harrisburg, PA 17120-2003
-  voice: 717-772-2297
-  fax: 717-780-4767
-- note: District Office
-  address: Peninsula Plaza 1101 Peninsula Drive Suite 213 Erie, PA 16505
-  voice: 814-835-2880
-  fax: 814-835-2885
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1619
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ extras:
   facebook: https://www.facebook.com/RyanForPA
   twitter: https://twitter.com/ryanbizzarro/
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgX6evDUdDxKRGj6SSt-zw4e
+offices:
+- address: 414 Main Capitol Building P.O. Box 202003 Harrisburg, PA 17120-2003
+  voice: 717-772-2297
+  fax: 717-780-4767
+  classification: capitol
+- address: Peninsula Plaza 1101 Peninsula Drive Suite 213 Erie, PA 16505
+  voice: 814-835-2880
+  fax: 814-835-2885
+  classification: district
+  name: 'District Office #1'

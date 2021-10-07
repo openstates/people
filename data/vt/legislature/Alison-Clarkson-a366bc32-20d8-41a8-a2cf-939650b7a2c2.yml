@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 18 Golf Ave.;Woodstock, VT 05091
-  voice: 802-457-4627
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27152
 - url: http://legislature.vermont.gov/people/single/2022/27152
@@ -27,3 +21,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27152
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27152
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 18 Golf Ave.;Woodstock, VT 05091
+  voice: 802-457-4627
+  classification: district
+  name: 'District Office #1'

@@ -10,9 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '156'
-contact_details:
-- note: District Office
-  address: P.O. Box 1228; Lyons, GA 30436
 sources:
 - url: https://www.legis.ga.gov/members/house/5010?session=1029
   note: Initial list page (requires authorization token)
@@ -23,3 +20,7 @@ extras:
   city: Lyons
   georgia_id: 5010
   spouse: Mike
+offices:
+- address: P.O. Box 1228; Lyons, GA 30436
+  classification: district
+  name: 'District Office #1'

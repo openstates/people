@@ -7,12 +7,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '46'
-contact_details:
-- note: District Office
-  address: Suite 220; 1803 Park Center Drive; Orlando, FL 32835-6216
-  voice: 407-445-5254
-- note: Capitol Office
-  address: 1302 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5046
 other_names:
 - name: McCurdy
+offices:
+- address: Suite 220; 1803 Park Center Drive; Orlando, FL 32835-6216
+  voice: 407-445-5254
+  classification: district
+  name: 'District Office #1'
+- address: 1302 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5046
+  classification: capitol

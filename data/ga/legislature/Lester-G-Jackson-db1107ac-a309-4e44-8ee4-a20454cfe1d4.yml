@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: 110-B State Capitol; Atlanta, GA 30334
-  voice: 404-463-5261
-  fax: 404-463-2279
-- note: District Office
-  address: 1501 Abercorn Street; Savannah, GA 31401
-  voice: 912-233-7970
-  fax: 912-201-0431
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=134&Session=27
 - url: https://www.legis.ga.gov/members/senate/134?session=1029
@@ -43,3 +34,13 @@ extras:
   spouse: Lorna
   staff: Corrinna Edwards
   staff email: corrinna.edwards@senate.ga.gov
+offices:
+- address: 110-B State Capitol; Atlanta, GA 30334
+  voice: 404-463-5261
+  fax: 404-463-2279
+  classification: capitol
+- address: 1501 Abercorn Street; Savannah, GA 31401
+  voice: 912-233-7970
+  fax: 912-201-0431
+  classification: district
+  name: 'District Office #1'

@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '36'
-contact_details:
-- note: Capitol Office
-  address: Room 4S.2;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0704
-  fax: 512-463-5364
-- note: District Office
-  address: 121 E. Tom Landry;Mission, TX 78572
-  voice: 956-584-8999
 links:
 - url: https://house.texas.gov/members/member-page/?district=36
 other_names:
@@ -31,3 +23,12 @@ other_identifiers:
   identifier: TXL000552
 sources:
 - url: https://house.texas.gov/members/member-page/?district=36
+offices:
+- address: Room 4S.2;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0704
+  fax: 512-463-5364
+  classification: capitol
+- address: 121 E. Tom Landry;Mission, TX 78572
+  voice: 956-584-8999
+  classification: district
+  name: 'District Office #1'

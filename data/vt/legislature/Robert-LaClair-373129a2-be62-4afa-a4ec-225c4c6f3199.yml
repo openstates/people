@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington-2
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 146 Airport Rd.;Barre, VT 05641
-  voice: 802-476-9668
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24009
 - url: http://legislature.vermont.gov/people/single/2022/24009
@@ -31,3 +25,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/24009
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24009
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 146 Airport Rd.;Barre, VT 05641
+  voice: 802-476-9668
+  classification: district
+  name: 'District Office #1'

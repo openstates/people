@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '109'
-contact_details:
-- note: Capitol Office
-  address: 128 Main Capitol Building P.O. Box 202109 Harrisburg, PA 17120-2109
-  voice: 717-783-1102
-  fax: 717-772-0094
-- note: District Office
-  address: 1000 Market Street Market Street Plaza, Suite 39 Bloomsburg, PA 17815
-  voice: 570-387-0246
-  fax: 570-387-4288
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1033
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepMillard
   youtube: https://youtube.com/RepMillard
+offices:
+- address: 128 Main Capitol Building P.O. Box 202109 Harrisburg, PA 17120-2109
+  voice: 717-783-1102
+  fax: 717-772-0094
+  classification: capitol
+- address: 1000 Market Street Market Street Plaza, Suite 39 Bloomsburg, PA 17815
+  voice: 570-387-0246
+  fax: 570-387-4288
+  classification: district
+  name: 'District Office #1'

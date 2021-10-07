@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '46'
-contact_details:
-- note: Capitol Office
-  voice: 701-232-6250
-  fax: 701-232-0796
-- note: District Office
-  address: P.O. Box 9016;Fargo, ND;58106-9016
-  voice: 701-799-9000
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-jim-kasper
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-jim-kasper
@@ -32,3 +25,11 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-jim-kasper
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-jim-kasper
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-jim-kasper
+offices:
+- voice: 701-232-6250
+  fax: 701-232-0796
+  classification: capitol
+- address: P.O. Box 9016;Fargo, ND;58106-9016
+  voice: 701-799-9000
+  classification: district
+  name: 'District Office #1'

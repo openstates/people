@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  address: 144 Main Capitol Building P.O. Box 202012 Harrisburg, PA 17120-2012
-  voice: 717-783-1707
-  fax: 717-787-4771
-- note: District Office
-  address: 2525 Rochester Road Municipal Center Suite 201 Cranberry Township, PA 16066
-  voice: 724-772-3110
-  fax: 724-772-2922
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=13
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepMetcalfe
   youtube: https://youtube.com/RepMetcalfe
+offices:
+- address: 144 Main Capitol Building P.O. Box 202012 Harrisburg, PA 17120-2012
+  voice: 717-783-1707
+  fax: 717-787-4771
+  classification: capitol
+- address: 2525 Rochester Road Municipal Center Suite 201 Cranberry Township, PA 16066
+  voice: 724-772-3110
+  fax: 724-772-2922
+  classification: district
+  name: 'District Office #1'

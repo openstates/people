@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '60'
-contact_details:
-- note: Capitol Office
-  address: LOB Room 532; Albany, NY 12248
-  voice: 518-455-5912
-- note: District Office
-  address: 669 Vermont St.; Brooklyn, NY 11207
-  voice: 718-257-5824
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Charles-Barron
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Charles-Barron
 - url: https://assembly.state.ny.us/mem/Charles-Barron
+offices:
+- address: LOB Room 532; Albany, NY 12248
+  voice: 518-455-5912
+  classification: capitol
+- address: 669 Vermont St.; Brooklyn, NY 11207
+  voice: 718-257-5824
+  classification: district
+  name: 'District Office #1'

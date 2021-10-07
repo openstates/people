@@ -10,15 +10,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '17'
-contact_details:
-- note: District Office
-  address: 46838 307th St.Burbank, SD 57010
-  voice: 605-770-7029
-- note: Capitol Office
-  voice: 605-773-3851
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/3783/Detail
 sources:
 - url: https://sdlegislature.gov/Legislators/Profile/3783/Detail
 extras:
   occupation: CRNA/Cattle Producer
+offices:
+- address: 46838 307th St.Burbank, SD 57010
+  voice: 605-770-7029
+  classification: district
+  name: 'District Office #1'
+- voice: 605-773-3851
+  classification: capitol

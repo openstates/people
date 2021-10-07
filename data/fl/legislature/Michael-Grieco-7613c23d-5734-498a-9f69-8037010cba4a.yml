@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '113'
-contact_details:
-- note: District Office
-  address: Suite 300; 1666 79th Street Causeway; North Bay Village, FL 33141-4189
+offices:
+- address: Suite 300; 1666 79th Street Causeway; North Bay Village, FL 33141-4189
   voice: 305-993-1905
-- note: Capitol Office
-  address: 406 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 406 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5113
+  classification: capitol

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  address: 330A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6789
-- note: District Office
-  address: 2247 Kennedy Road, Winnsboro, SC 29180
-  voice: 803-635-6894
-- note: Primary Office
-  voice: 803-960-5782
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1221590763
 other_names:
@@ -25,3 +16,13 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1221590763
+offices:
+- address: 330A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6789
+  classification: capitol
+- address: 2247 Kennedy Road, Winnsboro, SC 29180
+  voice: 803-635-6894
+  classification: district
+  name: 'District Office #1'
+- voice: 803-960-5782
+  classification: primary

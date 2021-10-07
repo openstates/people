@@ -11,11 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1040
-- note: District Office
-  address: "3732 S Dusty Ln, Coeur d\u2019Alene, ID, 83814"
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=3
 other_identifiers:
@@ -27,3 +22,9 @@ other_identifiers:
   identifier: ocd-person/37949003-2caf-47ce-b857-ea722af000e0
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+offices:
+- voice: 208-332-1040
+  classification: capitol
+- address: "3732 S Dusty Ln, Coeur d\u2019Alene, ID, 83814"
+  classification: district
+  name: 'District Office #1'

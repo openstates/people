@@ -15,12 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3821
-- note: District Office
-  address: 403 W. 11th St.Canton, SD 57013
-  voice: 605-261-9669
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1467&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1441&Session=2019
@@ -40,3 +34,10 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1771/Detail
 extras:
   occupation: Retired Educator
+offices:
+- voice: 605-773-3821
+  classification: capitol
+- address: 403 W. 11th St.Canton, SD 57013
+  voice: 605-261-9669
+  classification: district
+  name: 'District Office #1'

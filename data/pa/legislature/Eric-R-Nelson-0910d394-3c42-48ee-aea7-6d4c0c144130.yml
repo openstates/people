@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '57'
-contact_details:
-- note: Capitol Office
-  address: 432 Irvis Office Building P.O. Box 202057 Harrisburg, PA 17120-2057
-  voice: 717-260-6146
-  fax: 717-782-2882
-- note: District Office
-  address: 17 South Sixth Street Youngwood, PA 15697
-  voice: 724-925-5490
-  fax: 724-925-5491
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1738
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1738
+offices:
+- address: 432 Irvis Office Building P.O. Box 202057 Harrisburg, PA 17120-2057
+  voice: 717-260-6146
+  fax: 717-782-2882
+  classification: capitol
+- address: 17 South Sixth Street Youngwood, PA 15697
+  voice: 724-925-5490
+  fax: 724-925-5491
+  classification: district
+  name: 'District Office #1'

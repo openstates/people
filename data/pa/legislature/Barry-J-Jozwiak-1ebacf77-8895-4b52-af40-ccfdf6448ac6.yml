@@ -9,16 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  address: 155B East Wing P.O. Box 202005 Harrisburg, PA 17120-2005
-  voice: 717-772-9940
-  fax: 717-782-2925
-- note: District Office
-  address: 2501 Bernville Road Reading Regional Airport Main Terminal Building Reading,
-    PA 19605
-  voice: 610-378-4407
-  fax: 610-378-4412
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1692
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +21,14 @@ sources:
 extras:
   facebook: https://www.facebook.com/pages/PA-State-Rep-Barry-Jozwiak/884286918282077
   youtube: http://www.youtube.com/user/RepJozwiak
+offices:
+- address: 155B East Wing P.O. Box 202005 Harrisburg, PA 17120-2005
+  voice: 717-772-9940
+  fax: 717-782-2925
+  classification: capitol
+- address: 2501 Bernville Road Reading Regional Airport Main Terminal Building Reading,
+    PA 19605
+  voice: 610-378-4407
+  fax: 610-378-4412
+  classification: district
+  name: 'District Office #1'

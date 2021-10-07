@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '72'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 1306 290th St, Montour, IA 50173-8702
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10755
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10755
@@ -24,3 +19,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10755
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10755
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 1306 290th St, Montour, IA 50173-8702
+  classification: district
+  name: 'District Office #1'

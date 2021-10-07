@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '80'
-contact_details:
-- note: Capitol Office
-  address: LOB 530; Albany, NY 12248
-  voice: 518-455-5844
-- note: District Office
-  address: 2018 Williamsbridge Road; Bronx, NY 10461
-  voice: 718-409-0109
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Nathalia-Fernandez
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Nathalia-Fernandez
 - url: https://assembly.state.ny.us/mem/Nathalia-Fernandez
+offices:
+- address: LOB 530; Albany, NY 12248
+  voice: 518-455-5844
+  classification: capitol
+- address: 2018 Williamsbridge Road; Bronx, NY 10461
+  voice: 718-409-0109
+  classification: district
+  name: 'District Office #1'

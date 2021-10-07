@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: 214 Ryan Office Building P.O. Box 202004 Harrisburg, PA 17120-2004
-  voice: 717-783-9087
-  fax: 717-787-2005
-- note: District Office
-  address: 434 North Center Street Corry, PA 16407
-  voice: 814-664-9126
-  fax: 814-664-5857
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1046
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepSonney
   youtube: https://youtube.com/RepSonney
+offices:
+- address: 214 Ryan Office Building P.O. Box 202004 Harrisburg, PA 17120-2004
+  voice: 717-783-9087
+  fax: 717-787-2005
+  classification: capitol
+- address: 434 North Center Street Corry, PA 16407
+  voice: 814-664-9126
+  fax: 814-664-5857
+  classification: district
+  name: 'District Office #1'

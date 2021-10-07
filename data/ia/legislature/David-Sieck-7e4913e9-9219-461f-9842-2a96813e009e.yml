@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '23'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 1710 Timber Ln, Glenwood, IA 51534
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=15920
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=15920
@@ -24,3 +19,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=15920
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=15920
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 1710 Timber Ln, Glenwood, IA 51534
+  classification: district
+  name: 'District Office #1'

@@ -11,13 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Middlesex and Worcester
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 511-C;Boston, MA, 02133
-  voice: 617-722-1120
-  fax: 617-722-1089
-- note: District Office
-  address: 255 Main Street;Marlborough, MA 01752
 links:
 - url: https://malegislature.gov/Legislators/Profile/JBE0
 other_identifiers:
@@ -27,3 +20,11 @@ other_identifiers:
   identifier: MAL000252
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JBE0
+offices:
+- address: 24 Beacon St.;Room 511-C;Boston, MA, 02133
+  voice: 617-722-1120
+  fax: 617-722-1089
+  classification: capitol
+- address: 255 Main Street;Marlborough, MA 01752
+  classification: district
+  name: 'District Office #1'

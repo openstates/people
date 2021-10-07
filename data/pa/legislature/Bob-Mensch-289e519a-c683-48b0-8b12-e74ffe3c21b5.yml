@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203024;Harrisburg, PA 17120-3024;Room:;337 Main Capitol
-  voice: 717-787-3110
-  fax: 717-787-8004
-- note: District Office
-  address: 1 Vine Street, Suite 202 Lansdale, PA 19446
-  voice: 215-368-3117
-  fax: 215-361-4222
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1121
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -33,3 +24,13 @@ extras:
   facebook: https://www.facebook.com/PASenatorBobMensch/
   instagram: https://www.instagram.com/senatormensch/
   twitter: http://twitter.com/SenatorMensch
+offices:
+- address: Senate Box 203024;Harrisburg, PA 17120-3024;Room:;337 Main Capitol
+  voice: 717-787-3110
+  fax: 717-787-8004
+  classification: capitol
+- address: 1 Vine Street, Suite 202 Lansdale, PA 19446
+  voice: 215-368-3117
+  fax: 215-361-4222
+  classification: district
+  name: 'District Office #1'

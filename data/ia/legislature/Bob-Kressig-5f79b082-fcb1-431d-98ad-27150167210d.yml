@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '59'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 3523 Veralta Dr, Cedar Falls, IA 50613
-  voice: 319-266-9021
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=781
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=781
@@ -29,3 +23,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=781
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=781
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 3523 Veralta Dr, Cedar Falls, IA 50613
+  voice: 319-266-9021
+  classification: district
+  name: 'District Office #1'

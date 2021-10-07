@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  address: Room 409;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3237
-- note: District Office
-  address: P. O. Drawer 1500;West Point, MS 39773
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/turner-ford.xml
 other_names:
@@ -29,3 +23,10 @@ sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/turner-ford.xml
 extras:
   org_info: Senator Turner is a member of Delta Sigma Theta, Sorority, Inc.
+offices:
+- address: Room 409;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3237
+  classification: capitol
+- address: P. O. Drawer 1500;West Point, MS 39773
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '129'
-contact_details:
-- note: Capitol Office
-  address: 213 Ryan Office Building P.O. Box 202129 Harrisburg, PA 17120-2129
-  voice: 717-772-2435
-  fax: 717-705-1849
-- note: District Office
-  address: 2909 Windmill Road Suite 7 Sinking Spring, PA 19608
-  voice: 610-670-0139
-  fax: 610-927-3584
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1114
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepJimCox
   youtube: https://youtube.com/RepJimCox
+offices:
+- address: 213 Ryan Office Building P.O. Box 202129 Harrisburg, PA 17120-2129
+  voice: 717-772-2435
+  fax: 717-705-1849
+  classification: capitol
+- address: 2909 Windmill Road Suite 7 Sinking Spring, PA 19608
+  voice: 610-670-0139
+  fax: 610-927-3584
+  classification: district
+  name: 'District Office #1'

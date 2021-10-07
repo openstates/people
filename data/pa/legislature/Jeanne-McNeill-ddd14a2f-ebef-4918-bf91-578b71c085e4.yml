@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '133'
-contact_details:
-- note: Capitol Office
-  address: 219 Irvis Office Building P.O. Box 202133 Harrisburg, PA 17120-2133
-  voice: 717-772-9902
-  fax: 717-780-4762
-- note: District Office
-  address: 1080 Schadt Avenue Whitehall, PA 18052
-  voice: 610-266-1273
-  fax: 610-266-2126
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1793
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepMcNeill
   twitter: https://twitter.com/RepMcNeill
+offices:
+- address: 219 Irvis Office Building P.O. Box 202133 Harrisburg, PA 17120-2133
+  voice: 717-772-9902
+  fax: 717-780-4762
+  classification: capitol
+- address: 1080 Schadt Avenue Whitehall, PA 18052
+  voice: 610-266-1273
+  fax: 610-266-2126
+  classification: district
+  name: 'District Office #1'

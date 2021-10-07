@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '105'
-contact_details:
-- note: Capitol Office
-  address: LOB 531; Albany, NY 12248
-  voice: 518-455-5725
-- note: District Office
-  address: 'North Hopewell Plaza, Suite #1; 1075 Rt. 82; Hopewell Junction, NY 12533'
-  voice: 845-221-2202
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Kieran-Michael-Lalor
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Kieran-Michael-Lalor
 - url: https://assembly.state.ny.us/mem/Kieran-Michael-Lalor
+offices:
+- address: LOB 531; Albany, NY 12248
+  voice: 518-455-5725
+  classification: capitol
+- address: 'North Hopewell Plaza, Suite #1; 1075 Rt. 82; Hopewell Junction, NY 12533'
+  voice: 845-221-2202
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 12 Pine St.;Fair Haven, VT 05743
-  voice: 802-265-4428
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14569
 - url: http://legislature.vermont.gov/people/single/2022/14569
@@ -37,3 +31,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14569
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14569
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 12 Pine St.;Fair Haven, VT 05743
+  voice: 802-265-4428
+  classification: district
+  name: 'District Office #1'

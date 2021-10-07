@@ -11,13 +11,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 5066, Sacramento, CA 95814-4900
-  voice: 916-651-4024
-- note: District Office
-  address: 1808 W. Sunset Blvd., Los Angeles, CA 90026
-  voice: 213-483-9300
 links:
 - url: https://senate.ca.gov/sd24
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD24&inframe=N
@@ -26,3 +19,11 @@ other_names:
 - name: Maria Elena Durazo
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 5066, Sacramento, CA 95814-4900
+  voice: 916-651-4024
+  classification: capitol
+- address: 1808 W. Sunset Blvd., Los Angeles, CA 90026
+  voice: 213-483-9300
+  classification: district
+  name: 'District Office #1'

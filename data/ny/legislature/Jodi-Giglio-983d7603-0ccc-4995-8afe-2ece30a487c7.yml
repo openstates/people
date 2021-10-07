@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '2'
-contact_details:
-- note: District Office
-  address: 30  West Main Street; Suite 103; Riverhead, NY 11901
-  voice: 631-727-0204
-- note: Capitol Office
-  address: LOB 629; Albany, NY 12248
-  voice: 518-455-5294
 links:
 - url: https://assembly.state.ny.us/mem/Jodi-Giglio
 sources:
 - url: https://assembly.state.ny.us/mem/Jodi-Giglio
+offices:
+- address: 30  West Main Street; Suite 103; Riverhead, NY 11901
+  voice: 631-727-0204
+  classification: district
+  name: 'District Office #1'
+- address: LOB 629; Albany, NY 12248
+  voice: 518-455-5294
+  classification: capitol

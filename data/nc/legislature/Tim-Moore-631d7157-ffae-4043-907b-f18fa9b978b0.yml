@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '111'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2304;Raleigh, NC 27601-1096
-  voice: 919-733-3451
-- note: District Office
-  address: 305 E King St;Kings Mountain, NC 28086
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/339
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Cleveland
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 2304;Raleigh, NC 27601-1096
+  voice: 919-733-3451
+  classification: capitol
+- address: 305 E King St;Kings Mountain, NC 28086
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '36'
-contact_details:
-- note: District Office
-  address: 24-08 32nd Street; Suite 1002A; Astoria, NY 11102
-  voice: 718-545-3889
-- note: Capitol Office
-  voice: 518-455-5014
 links:
 - url: https://assembly.state.ny.us/mem/Zohran-Mamdani
 sources:
 - url: https://assembly.state.ny.us/mem/Zohran-Mamdani
 other_names:
 - name: Zohran K. Mamdani
+offices:
+- address: 24-08 32nd Street; Suite 1002A; Astoria, NY 11102
+  voice: 718-545-3889
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5014
+  classification: capitol

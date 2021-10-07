@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: '4004 Grand #302, Des Moines, IA 50312'
-  voice: 515-255-2805
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=228
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=228
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=228
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=228
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: '4004 Grand #302, Des Moines, IA 50312'
+  voice: 515-255-2805
+  classification: district
+  name: 'District Office #1'

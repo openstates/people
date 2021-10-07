@@ -15,13 +15,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Florida
-contact_details:
-- note: Capitol Office
-  address: 502 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-5274
-- note: District Office
-  address: 111 N Adams St 208,; Tallahassee, FL 32301-7736
-  voice: 850-942-8415
 links:
 - url: https://www.rickscott.senate.gov
   note: website
@@ -56,3 +49,11 @@ other_identifiers:
   identifier: '41903'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 502 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-5274
+  classification: capitol
+- address: 111 N Adams St 208,; Tallahassee, FL 32301-7736
+  voice: 850-942-8415
+  classification: district
+  name: 'District Office #1'

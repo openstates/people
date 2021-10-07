@@ -10,12 +10,13 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '28'
-contact_details:
-- note: District Office
-  address: PO Box 111, Spillville, IA 52168
-- note: Capitol Office
-  voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30547
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30547
+offices:
+- address: PO Box 111, Spillville, IA 52168
+  classification: district
+  name: 'District Office #1'
+- voice: 515-281-3371
+  classification: capitol

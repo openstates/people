@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: Room E1.306;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0600
-  fax: 512-463-5240
-- note: District Office
-  address: 401 South Austin Street;Brenham, Texas 77833
-  voice: 979-836-1238
 links:
 - url: https://house.texas.gov/members/member-page/?district=13
 other_identifiers:
@@ -24,3 +16,12 @@ other_identifiers:
   identifier: TXL000721
 sources:
 - url: https://house.texas.gov/members/member-page/?district=13
+offices:
+- address: Room E1.306;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0600
+  fax: 512-463-5240
+  classification: capitol
+- address: 401 South Austin Street;Brenham, Texas 77833
+  voice: 979-836-1238
+  classification: district
+  name: 'District Office #1'

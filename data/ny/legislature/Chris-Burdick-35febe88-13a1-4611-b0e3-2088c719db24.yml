@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '93'
-contact_details:
-- note: District Office
-  address: 100 S. Bedford Rd.; Suite 150; Mount Kisco, NY 10549
-  voice: 914-244-4450
-- note: Capitol Office
-  voice: 518-455-5397
 links:
 - url: https://assembly.state.ny.us/mem/Chris-Burdick
 ids:
@@ -22,3 +16,10 @@ ids:
   facebook: ChrisBurdickAD93
 sources:
 - url: https://assembly.state.ny.us/mem/Chris-Burdick
+offices:
+- address: 100 S. Bedford Rd.; Suite 150; Mount Kisco, NY 10549
+  voice: 914-244-4450
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5397
+  classification: capitol

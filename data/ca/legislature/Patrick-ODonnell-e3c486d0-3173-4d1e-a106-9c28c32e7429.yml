@@ -10,16 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '70'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0070
-  voice: 916-319-2070
-- note: District Office
-  address: 5000 East Spring Street, Suite 550;Long Beach, CA 90815
-  voice: 562-429-0470
-- note: District Office
-  address: 461 West 6th Street, Suite 209;San Pedro, CA 90731
-  voice: 310-548-6420
 links:
 - url: https://a70.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD70&inframe=N
@@ -29,3 +19,15 @@ other_identifiers:
   identifier: CAL000472
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0070
+  voice: 916-319-2070
+  classification: capitol
+- address: 5000 East Spring Street, Suite 550;Long Beach, CA 90815
+  voice: 562-429-0470
+  classification: district
+  name: 'District Office #1'
+- address: 461 West 6th Street, Suite 209;San Pedro, CA 90731
+  voice: 310-548-6420
+  classification: district
+  name: 'District Office #2'

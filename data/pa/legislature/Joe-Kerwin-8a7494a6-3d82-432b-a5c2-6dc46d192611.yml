@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '125'
-contact_details:
-- note: District Office
-  address: 15 E Main Street Schuylkill Haven, PA 17972
-  voice: 570-385-8235
-  fax: 570-385-8238
-- note: Capitol Office
-  address: 162A East Wing P.O. Box 202125 Harrisburg, PA 17120-2125
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1907
+offices:
+- address: 15 E Main Street Schuylkill Haven, PA 17972
+  voice: 570-385-8235
+  fax: 570-385-8238
+  classification: district
+  name: 'District Office #1'
+- address: 162A East Wing P.O. Box 202125 Harrisburg, PA 17120-2125
+  classification: capitol

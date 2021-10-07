@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  address: 265-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-4194
-- note: District Office
-  address: 1812 Waukegan Road;Suite B;Glenview, IL 60025
-  voice: 847-486-8810
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2744
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2945
@@ -24,3 +17,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2744
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2945
+offices:
+- address: 265-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-4194
+  classification: capitol
+- address: 1812 Waukegan Road;Suite B;Glenview, IL 60025
+  voice: 847-486-8810
+  classification: district
+  name: 'District Office #1'

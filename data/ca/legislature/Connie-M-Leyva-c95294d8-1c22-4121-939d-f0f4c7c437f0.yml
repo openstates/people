@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 4061, Sacramento, CA 95814-4900
-  voice: 916-651-4020
-- note: District Office
-  address: 101 W. Mission Blvd., Suite 111, Pomona, CA 91766
-  voice: 909-469-1110
 links:
 - url: https://senate.ca.gov/sd20
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD20&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000466
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 4061, Sacramento, CA 95814-4900
+  voice: 916-651-4020
+  classification: capitol
+- address: 101 W. Mission Blvd., Suite 111, Pomona, CA 91766
+  voice: 909-469-1110
+  classification: district
+  name: 'District Office #1'

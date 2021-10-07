@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '103'
-contact_details:
-- note: Capitol Office
-  address: 304C Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-2933
-- note: District Office
-  address: P.O. Box 694, Georgetown, SC 29442
-  voice: 843-546-5332
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0021590907
 other_names:
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0021590907
+offices:
+- address: 304C Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-2933
+  classification: capitol
+- address: P.O. Box 694, Georgetown, SC 29442
+  voice: 843-546-5332
+  classification: district
+  name: 'District Office #1'

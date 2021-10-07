@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: 5 East Wing P.O. Box 202010 Harrisburg, PA 17120-2010
-  voice: 717-783-8322
-  fax: 717-782-2961
-- note: District Office
-  address: 438 Line Ave. Ellwood City, PA 16117
-  voice: 724-752-2120
-  fax: 724-752-2123
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1742
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -29,3 +20,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1742
 extras:
   facebook: https://facebook.com/repbernstine
+offices:
+- address: 5 East Wing P.O. Box 202010 Harrisburg, PA 17120-2010
+  voice: 717-783-8322
+  fax: 717-782-2961
+  classification: capitol
+- address: 438 Line Ave. Ellwood City, PA 16117
+  voice: 724-752-2120
+  fax: 724-752-2123
+  classification: district
+  name: 'District Office #1'

@@ -65,18 +65,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Vermont
-contact_details:
-- note: Capitol Office
-  address: 332 Dirksen Senate Office Building Washington DC 20510
-  voice: 202-224-5141
-- note: District Office
-  address: 1 Church St. 3rd Floor; Burlington, VT 05401
-  voice: 802-862-0697
-  fax: 802-860-6370
-- note: District Office
-  address: 357 Western Ave. Suite 1B; St. Johnsbury, VT 05819
-  voice: 800-339-9834
-  fax: 802-860-6370
 links:
 - url: https://www.sanders.senate.gov
   note: website
@@ -121,3 +109,17 @@ other_identifiers:
   identifier: kg:/m/01_gbv
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 332 Dirksen Senate Office Building Washington DC 20510
+  voice: 202-224-5141
+  classification: capitol
+- address: 1 Church St. 3rd Floor; Burlington, VT 05401
+  voice: 802-862-0697
+  fax: 802-860-6370
+  classification: district
+  name: 'District Office #1'
+- address: 357 Western Ave. Suite 1B; St. Johnsbury, VT 05819
+  voice: 800-339-9834
+  fax: 802-860-6370
+  classification: district
+  name: 'District Office #2'

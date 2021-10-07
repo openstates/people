@@ -10,13 +10,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '2'
-contact_details:
-- note: District Office
-  address: 348 Fourth Ave SE, Sioux Center, IA 51250
-  voice: 712-722-1121
-- note: Capitol Office
-  voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30544
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30544
+offices:
+- address: 348 Fourth Ave SE, Sioux Center, IA 51250
+  voice: 712-722-1121
+  classification: district
+  name: 'District Office #1'
+- voice: 515-281-3371
+  classification: capitol

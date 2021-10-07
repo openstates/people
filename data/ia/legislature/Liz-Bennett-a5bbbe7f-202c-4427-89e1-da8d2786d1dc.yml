@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '65'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: PO Box 665, Cedar Rapids, IA 52406
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14806
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14806
@@ -24,3 +19,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14806
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14806
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: PO Box 665, Cedar Rapids, IA 52406
+  classification: district
+  name: 'District Office #1'

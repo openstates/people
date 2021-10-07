@@ -66,21 +66,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MO-6
-contact_details:
-- note: Capitol Office
-  address: 1135 Longworth House Office Building Washington DC 20515-2506
-  voice: 202-225-7041
-- note: District Office
-  address: 906 Broadway; Hannibal, MO 63401
-  voice: 573-221-3400
-- note: District Office
-  address: 11724 NW Plaza Circle Suite 900; Kansas City, MO 64153
-  voice: 816-792-3976
-  fax: 816-792-0694
-- note: District Office
-  address: 411 Jules St. Room 111; St. Joseph, MO 64501
-  voice: 816-749-0800
-  fax: 816-749-0801
 links:
 - url: https://graves.house.gov
   note: website
@@ -119,3 +104,21 @@ other_identifiers:
   identifier: Sam Graves
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1135 Longworth House Office Building Washington DC 20515-2506
+  voice: 202-225-7041
+  classification: capitol
+- address: 906 Broadway; Hannibal, MO 63401
+  voice: 573-221-3400
+  classification: district
+  name: 'District Office #1'
+- address: 11724 NW Plaza Circle Suite 900; Kansas City, MO 64153
+  voice: 816-792-3976
+  fax: 816-792-0694
+  classification: district
+  name: 'District Office #2'
+- address: 411 Jules St. Room 111; St. Joseph, MO 64501
+  voice: 816-749-0800
+  fax: 816-749-0801
+  classification: district
+  name: 'District Office #3'

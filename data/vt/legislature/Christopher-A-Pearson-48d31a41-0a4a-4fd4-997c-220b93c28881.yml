@@ -10,11 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 12 Brookes Ave.;Burlington, VT 05401
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27150
 - url: http://legislature.vermont.gov/people/single/2022/27150
@@ -28,3 +23,9 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27150
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27150
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 12 Brookes Ave.;Burlington, VT 05401
+  classification: district
+  name: 'District Office #1'

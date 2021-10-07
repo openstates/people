@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '130'
-contact_details:
-- note: Capitol Office
-  address: 6B East Wing P.O. Box 202130 Harrisburg, PA 17120-2130
-  voice: 717-260-6161
-  fax: 717-782-2883
-- note: District Office
-  address: 515 Old Swede Road Suite B2 Douglassville, PA 19518
-  voice: 610-385-0704
-  fax: 610-385-1176
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1226
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: http://facebook.com/RepMaloney
   youtube: https://youtube.com/RepMaloney
+offices:
+- address: 6B East Wing P.O. Box 202130 Harrisburg, PA 17120-2130
+  voice: 717-260-6161
+  fax: 717-782-2883
+  classification: capitol
+- address: 515 Old Swede Road Suite B2 Douglassville, PA 19518
+  voice: 610-385-0704
+  fax: 610-385-1176
+  classification: district
+  name: 'District Office #1'

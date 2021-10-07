@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '57'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1211;Raleigh, NC 27601-1096
-  voice: 919-733-5781
-- note: District Office
-  address: 1607 Beechtree Rd;Greensboro, NC 27408
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/739
 sources:
@@ -24,3 +18,10 @@ extras:
   counties:
   - Guilford
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1211;Raleigh, NC 27601-1096
+  voice: 919-733-5781
+  classification: capitol
+- address: 1607 Beechtree Rd;Greensboro, NC 27408
+  classification: district
+  name: 'District Office #1'

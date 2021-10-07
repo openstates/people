@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '75'
-contact_details:
-- note: Capitol Office
-  address: 205-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-5997
-- note: District Office
-  address: 1715 N. Division Street;Suite E;Morris, IL 60450
-  voice: 815-416-1475
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2674
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2895
@@ -28,3 +21,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2674
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2895
+offices:
+- address: 205-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-5997
+  classification: capitol
+- address: 1715 N. Division Street;Suite E;Morris, IL 60450
+  voice: 815-416-1475
+  classification: district
+  name: 'District Office #1'

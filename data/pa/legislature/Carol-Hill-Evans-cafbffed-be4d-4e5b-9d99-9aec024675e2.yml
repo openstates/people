@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '95'
-contact_details:
-- note: Capitol Office
-  address: 28A East Wing P.O. Box 202095 Harrisburg, PA 17120-2095
-  voice: 717-787-7514
-  fax: 717-780-4765
-- note: District Office
-  address: 53 East North Street, Suite 3 York, PA 17401-2475
-  voice: 717-848-9595
-  fax: 717-848-1871
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1749
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepHillEvans/
   twitter: https://twitter.com/RepHillEvans
+offices:
+- address: 28A East Wing P.O. Box 202095 Harrisburg, PA 17120-2095
+  voice: 717-787-7514
+  fax: 717-780-4765
+  classification: capitol
+- address: 53 East North Street, Suite 3 York, PA 17401-2475
+  voice: 717-848-9595
+  fax: 717-848-1871
+  classification: district
+  name: 'District Office #1'

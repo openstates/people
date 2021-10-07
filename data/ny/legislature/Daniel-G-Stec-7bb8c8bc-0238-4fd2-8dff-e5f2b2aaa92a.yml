@@ -8,13 +8,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '45'
-contact_details:
-- note: District Office
-  address: 5 Warren Street;Glens Falls,, NY 12801
-  voice: 518-743-0968
-- note: Capitol Office
-  address: 188 State Street;Albany ,, NY 12247
-  voice: 518-455-2811
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/daniel-g-stec/contact
@@ -24,3 +17,11 @@ ids:
   twitter: danstec
 sources:
 - url: http://www.nysenate.gov/senators/daniel-g-stec/contact
+offices:
+- address: 5 Warren Street;Glens Falls,, NY 12801
+  voice: 518-743-0968
+  classification: district
+  name: 'District Office #1'
+- address: 188 State Street;Albany ,, NY 12247
+  voice: 518-455-2811
+  classification: capitol

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '145'
-contact_details:
-- note: Capitol Office
-  address: 412 Irvis Office Building P.O. Box 202145 Harrisburg, PA 17120-2145
-  voice: 717-783-3154
-  fax: 717-260-6521
-- note: District Office
-  address: 10 South Third Street Quakertown, PA 18951
-  voice: 215-536-1434
-  fax: 215-536-1437
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1707
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/pages/PA-State-Rep-Craig-Staats/1508970476019467
   youtube: http://www.youtube.com/user/RepStaats
+offices:
+- address: 412 Irvis Office Building P.O. Box 202145 Harrisburg, PA 17120-2145
+  voice: 717-783-3154
+  fax: 717-260-6521
+  classification: capitol
+- address: 10 South Third Street Quakertown, PA 18951
+  voice: 215-536-1434
+  fax: 215-536-1437
+  classification: district
+  name: 'District Office #1'

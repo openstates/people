@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '151'
-contact_details:
-- note: Capitol Office
-  address: 416 State Capitol; Atlanta, GA 30334
-  voice: 404-656-9210
-- note: District Office
-  address: 5805 U.S. Highway 82 W.; Cuthbert, GA 39840
-  fax: 229-732-2750
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=115&Session=27
 - url: https://www.legis.ga.gov/members/house/115?session=1029
@@ -43,3 +36,11 @@ extras:
   staff: 'span style="background-color: rgb(255, 255, 255);"'
   staff email: ''
   title: Chairman; State Properties
+offices:
+- address: 416 State Capitol; Atlanta, GA 30334
+  voice: 404-656-9210
+  classification: capitol
+- address: 5805 U.S. Highway 82 W.; Cuthbert, GA 39840
+  fax: 229-732-2750
+  classification: district
+  name: 'District Office #1'

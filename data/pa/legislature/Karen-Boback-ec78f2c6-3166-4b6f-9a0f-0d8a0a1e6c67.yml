@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '117'
-contact_details:
-- note: Capitol Office
-  address: 41B East Wing P.O. Box 202117 Harrisburg, PA 17120-2117
-  voice: 717-787-1117
-  fax: 717-705-1889
-- note: District Office
-  address: 133 W. Tioga Street Suite 3 Tunkhannock, PA 18657-9107
-  voice: 570-836-4777
-  fax: 570-836-4772
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1110
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepBoback
   youtube: https://youtube.com/RepBoback
+offices:
+- address: 41B East Wing P.O. Box 202117 Harrisburg, PA 17120-2117
+  voice: 717-787-1117
+  fax: 717-705-1889
+  classification: capitol
+- address: 133 W. Tioga Street Suite 3 Tunkhannock, PA 18657-9107
+  voice: 570-836-4777
+  fax: 570-836-4772
+  classification: district
+  name: 'District Office #1'

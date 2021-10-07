@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '98'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2800;Hartford, CT 06106
-  voice: 860-240-8500
-- note: District Office
-  address: 405 North River Street;Guilford, CT 06437
 links:
 - url: http://www.housedems.ct.gov/Scanlon
 other_names:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: CTL000294
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2800;Hartford, CT 06106
+  voice: 860-240-8500
+  classification: capitol
+- address: 405 North River Street;Guilford, CT 06437
+  classification: district
+  name: 'District Office #1'

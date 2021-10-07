@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: Room 1W.5;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0672
-- note: District Office
-  address: 15217 S.P.I.D., Suite 205;Corpus Christi, TX 78418
-  voice: 361-949-4603
-  fax: 361-949-4634
 links:
 - url: https://house.texas.gov/members/member-page/?district=32
 other_identifiers:
@@ -28,3 +20,12 @@ other_identifiers:
   identifier: TXL000658
 sources:
 - url: https://house.texas.gov/members/member-page/?district=32
+offices:
+- address: Room 1W.5;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0672
+  classification: capitol
+- address: 15217 S.P.I.D., Suite 205;Corpus Christi, TX 78418
+  voice: 361-949-4603
+  fax: 361-949-4634
+  classification: district
+  name: 'District Office #1'

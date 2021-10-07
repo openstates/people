@@ -14,12 +14,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '83'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1010;Raleigh, NC 27601-1096
-  voice: 919-715-2009
-- note: District Office
-  address: PO Box 5959;Concord, NC 28027
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/633
 other_identifiers:
@@ -33,3 +27,10 @@ extras:
   counties:
   - Cabarrus
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1010;Raleigh, NC 27601-1096
+  voice: 919-715-2009
+  classification: capitol
+- address: PO Box 5959;Concord, NC 28027
+  classification: district
+  name: 'District Office #1'

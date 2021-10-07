@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '76'
-contact_details:
-- note: Capitol Office
-  address: 413 Irvis Office Building P.O. Box 202076 Harrisburg, PA 17120-2076
-  voice: 717-772-9925
-  fax: 717-782-2981
-- note: District Office
-  address: 103 Water Street Milesburg, PA 16853
-  voice: 814-353-8780
-  fax: 814-353-6056
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1838
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepBorowicz
   youtube: https://www.youtube.com/channel/UCKuzlJcguG6meP1XsYWd8qg
+offices:
+- address: 413 Irvis Office Building P.O. Box 202076 Harrisburg, PA 17120-2076
+  voice: 717-772-9925
+  fax: 717-782-2981
+  classification: capitol
+- address: 103 Water Street Milesburg, PA 16853
+  voice: 814-353-8780
+  fax: 814-353-6056
+  classification: district
+  name: 'District Office #1'

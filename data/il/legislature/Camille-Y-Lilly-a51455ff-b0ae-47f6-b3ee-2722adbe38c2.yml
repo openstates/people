@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '78'
-contact_details:
-- note: Capitol Office
-  address: 200-8S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-6400
-  fax: 217-558-1054
-- note: District Office
-  address: 6937 W. North Ave.;Oak Park, IL 60302
-  voice: 773-473-7300
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2584
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2826
@@ -37,3 +29,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2584
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2826
+offices:
+- address: 200-8S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-6400
+  fax: 217-558-1054
+  classification: capitol
+- address: 6937 W. North Ave.;Oak Park, IL 60302
+  voice: 773-473-7300
+  classification: district
+  name: 'District Office #1'

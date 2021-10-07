@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '61'
-contact_details:
-- note: Capitol Office
-  address: 123A East Wing P.O. Box 202061 Harrisburg, PA 17120-2061
-  voice: 717-783-4102
-  fax: 717-705-2046
-- note: District Office
-  address: 1098 W. Skippack Pike Blue Bell, PA 19422
-  voice: 610-277-3230
-  fax: 484-200-8267
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1834
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -28,3 +19,13 @@ extras:
   facebook: https://www.facebook.com/RepHanbidge
   twitter: https://www.twitter.com/RepHanbidge
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgWHK4t2_JcE0FjGCJskjkgu
+offices:
+- address: 123A East Wing P.O. Box 202061 Harrisburg, PA 17120-2061
+  voice: 717-783-4102
+  fax: 717-705-2046
+  classification: capitol
+- address: 1098 W. Skippack Pike Blue Bell, PA 19422
+  voice: 610-277-3230
+  fax: 484-200-8267
+  classification: district
+  name: 'District Office #1'

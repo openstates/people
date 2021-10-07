@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '44'
-contact_details:
-- note: Capitol Office
-  address: Room 115-B;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3334
-- note: District Office
-  address: 45 Carla Drive;Philadelphia, MS 39350
-  voice: 601-656-1765
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bounds.xml
 other_identifiers:
@@ -31,3 +24,11 @@ extras:
     Director of the the Neshoba County Fair Association.  Representative Bounds also
     serves on the National Association of Sportsmen's Caucus Executive Council and
     serves as Co-Chair of the Mississippi Legislative Sportsmen's Caucus.
+offices:
+- address: Room 115-B;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3334
+  classification: capitol
+- address: 45 Carla Drive;Philadelphia, MS 39350
+  voice: 601-656-1765
+  classification: district
+  name: 'District Office #1'

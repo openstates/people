@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '150'
-contact_details:
-- note: Capitol Office
-  address: Room E2.710;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0572
-  fax: 512-463-1908
-- note: District Office
-  address: 23008 Northcrest Dr;Spring, TX 77389
-  voice: 281-257-4222
 links:
 - url: https://house.texas.gov/members/member-page/?district=150
 other_identifiers:
@@ -24,3 +16,12 @@ other_identifiers:
   identifier: TXL000694
 sources:
 - url: https://house.texas.gov/members/member-page/?district=150
+offices:
+- address: Room E2.710;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0572
+  fax: 512-463-1908
+  classification: capitol
+- address: 23008 Northcrest Dr;Spring, TX 77389
+  voice: 281-257-4222
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: 103 Irv Newhouse Building;PO Box 40413;Olympia, WA 98504
-  voice: 360-786-7624
-- note: District Office
-  address: 326 S Cedar St.;Suite A;Moses Lake, WA 98837-1923
 links:
 - url: http://JudyWarnick.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
@@ -26,3 +20,10 @@ other_identifiers:
   identifier: WAL000216
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+offices:
+- address: 103 Irv Newhouse Building;PO Box 40413;Olympia, WA 98504
+  voice: 360-786-7624
+  classification: capitol
+- address: 326 S Cedar St.;Suite A;Moses Lake, WA 98837-1923
+  classification: district
+  name: 'District Office #1'

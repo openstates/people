@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '54'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2366
-- note: District Office
-  address: 425 Exchange St;Geneva,, NY 14456
-  voice: 315-568-9816
-  fax: 315-789-1946
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/pamela-helming/contact
@@ -28,3 +20,12 @@ other_identifiers:
   identifier: NYL000454
 sources:
 - url: http://www.nysenate.gov/senators/pamela-helming/contact
+offices:
+- address: Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-2366
+  classification: capitol
+- address: 425 Exchange St;Geneva,, NY 14456
+  voice: 315-568-9816
+  fax: 315-789-1946
+  classification: district
+  name: 'District Office #1'

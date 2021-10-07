@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '143'
-contact_details:
-- note: District Office
-  address: 1032 N. Easton Road Suite C Doylestown, PA 18902
-  voice: 215-489-2126
-  fax: 215-345-1361
-- note: Capitol Office
-  address: 153B East Wing P.O. Box 202143 Harrisburg, PA 17120-2143
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1911
+offices:
+- address: 1032 N. Easton Road Suite C Doylestown, PA 18902
+  voice: 215-489-2126
+  fax: 215-345-1361
+  classification: district
+  name: 'District Office #1'
+- address: 153B East Wing P.O. Box 202143 Harrisburg, PA 17120-2143
+  classification: capitol

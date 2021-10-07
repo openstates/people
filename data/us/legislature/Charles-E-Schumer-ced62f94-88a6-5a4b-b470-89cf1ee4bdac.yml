@@ -76,42 +76,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: New York
-contact_details:
-- note: Capitol Office
-  address: 322 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-6542
-- note: District Office
-  address: 100 State St. Room 3040; Rochester, NY 14614
-  voice: 585-263-5866
-  fax: 585-263-3173
-- note: District Office
-  address: 1 Clinton Ave. Room 420; Albany, NY 12207
-  voice: 518-431-4070
-  fax: 518-431-4076
-- note: District Office
-  address: 15 Henry St. Room. 100 A-F; Binghamton, NY 13901
-  voice: 607-772-6792
-  fax: 607-772-8124
-- note: District Office
-  address: '130 S. Elmwood Ave. #660; Buffalo, NY 14202'
-  voice: 716-846-4111
-  fax: 716-846-4113
-- note: District Office
-  address: 145 Pine Lawn Rd. Suite 300; Melville, NY 11747
-  voice: 631-753-0978
-  fax: 631-753-0997
-- note: District Office
-  address: 780 Third Ave. Suite 2301; New York, NY 10017
-  voice: 212-486-4430
-  fax: 202-228-2838
-- note: District Office
-  address: One Park Place Suite 100; Peekskill, NY 10566
-  voice: 914-734-1532
-  fax: 914-734-1673
-- note: District Office
-  address: 100 S. Clinton St. Room 841; Syracuse, NY 13261
-  voice: 315-423-5471
-  fax: 315-423-5185
 links:
 - url: https://www.schumer.senate.gov
   note: website
@@ -156,3 +120,47 @@ other_identifiers:
   identifier: kg:/m/01w74d
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 322 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-6542
+  classification: capitol
+- address: 100 State St. Room 3040; Rochester, NY 14614
+  voice: 585-263-5866
+  fax: 585-263-3173
+  classification: district
+  name: 'District Office #1'
+- address: 1 Clinton Ave. Room 420; Albany, NY 12207
+  voice: 518-431-4070
+  fax: 518-431-4076
+  classification: district
+  name: 'District Office #2'
+- address: 15 Henry St. Room. 100 A-F; Binghamton, NY 13901
+  voice: 607-772-6792
+  fax: 607-772-8124
+  classification: district
+  name: 'District Office #3'
+- address: '130 S. Elmwood Ave. #660; Buffalo, NY 14202'
+  voice: 716-846-4111
+  fax: 716-846-4113
+  classification: district
+  name: 'District Office #4'
+- address: 145 Pine Lawn Rd. Suite 300; Melville, NY 11747
+  voice: 631-753-0978
+  fax: 631-753-0997
+  classification: district
+  name: 'District Office #5'
+- address: 780 Third Ave. Suite 2301; New York, NY 10017
+  voice: 212-486-4430
+  fax: 202-228-2838
+  classification: district
+  name: 'District Office #6'
+- address: One Park Place Suite 100; Peekskill, NY 10566
+  voice: 914-734-1532
+  fax: 914-734-1673
+  classification: district
+  name: 'District Office #7'
+- address: 100 S. Clinton St. Room 841; Syracuse, NY 13261
+  voice: 315-423-5471
+  fax: 315-423-5185
+  classification: district
+  name: 'District Office #8'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  voice: 701-852-8151
-- note: District Office
-  address: 1718 Birch Place SW;Minot, ND;58701-7097
-  voice: 701-833-8489
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-scott-louser
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-scott-louser
@@ -31,3 +25,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-scott-louser
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-scott-louser
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-scott-louser
+offices:
+- voice: 701-852-8151
+  classification: capitol
+- address: 1718 Birch Place SW;Minot, ND;58701-7097
+  voice: 701-833-8489
+  classification: district
+  name: 'District Office #1'

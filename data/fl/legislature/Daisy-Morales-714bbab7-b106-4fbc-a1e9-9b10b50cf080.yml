@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '48'
-contact_details:
-- note: District Office
-  address: Suite 221; 5449 South Semoran Boulevard; Orlando, FL 32822-1779
+offices:
+- address: Suite 221; 5449 South Semoran Boulevard; Orlando, FL 32822-1779
   voice: 407-207-3840
-- note: Capitol Office
-  address: 1301 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1301 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5048
+  classification: capitol

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '89'
-contact_details:
-- note: Capitol Office
-  address: LOB 845; Albany, NY 12248
-  voice: 518-455-5291
-- note: District Office
-  address: 6 Gramatan Ave.; Suite 201; Mt. Vernon, NY 10550
-  voice: 914-667-0127
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/J-Gary-Pretlow
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/J-Gary-Pretlow
 - url: https://assembly.state.ny.us/mem/J-Gary-Pretlow
+offices:
+- address: LOB 845; Albany, NY 12248
+  voice: 518-455-5291
+  classification: capitol
+- address: 6 Gramatan Ave.; Suite 201; Mt. Vernon, NY 10550
+  voice: 914-667-0127
+  classification: district
+  name: 'District Office #1'

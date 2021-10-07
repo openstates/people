@@ -11,14 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Hampden and Hampshire
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 410;Boston, MA, 02133
-  voice: 617-722-1291
-  fax: 617-722-1014
-- note: District Office
-  address: 60 Shaker Road;Unit 3B;East Longmeadow, MA 01028
-  voice: 413-526-6501
 links:
 - url: https://malegislature.gov/Legislators/Profile/EPL0
 other_identifiers:
@@ -28,3 +20,12 @@ other_identifiers:
   identifier: MAL000365
 sources:
 - url: https://malegislature.gov/Legislators/Profile/EPL0
+offices:
+- address: 24 Beacon St.;Room 410;Boston, MA, 02133
+  voice: 617-722-1291
+  fax: 617-722-1014
+  classification: capitol
+- address: 60 Shaker Road;Unit 3B;East Longmeadow, MA 01028
+  voice: 413-526-6501
+  classification: district
+  name: 'District Office #1'

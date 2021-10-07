@@ -15,13 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: 409 The Capitol; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5010
-- note: District Office
-  address: 4076 Commercial Way; Spring Hill, FL 34606
-  voice: 352-688-5077
 links:
 - url: http://www.flsenate.gov/Senators/s10
 - url: http://www.flsenate.gov/Senators/2018-2020/S10
@@ -36,3 +29,11 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s10
 - url: http://www.flsenate.gov/Senators/2018-2020/S10
+offices:
+- address: 409 The Capitol; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5010
+  classification: capitol
+- address: 4076 Commercial Way; Spring Hill, FL 34606
+  voice: 352-688-5077
+  classification: district
+  name: 'District Office #1'

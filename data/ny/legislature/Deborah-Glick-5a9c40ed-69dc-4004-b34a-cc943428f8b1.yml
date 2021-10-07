@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '66'
-contact_details:
-- note: Capitol Office
-  address: LOB 717; Albany, NY 12248
-  voice: 518-455-4841
-- note: District Office
-  address: 853 Broadway; Suite 2007; New York, NY 10003
-  voice: 212-674-5153
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Deborah-J-Glick
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Deborah-J-Glick
 - url: https://assembly.state.ny.us/mem/Deborah-J-Glick
+offices:
+- address: LOB 717; Albany, NY 12248
+  voice: 518-455-4841
+  classification: capitol
+- address: 853 Broadway; Suite 2007; New York, NY 10003
+  voice: 212-674-5153
+  classification: district
+  name: 'District Office #1'

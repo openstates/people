@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: 325-A CLOB; Atlanta, GA 30334
-  voice: 404-656-7880
-- note: District Office
-  address: '1326 Eisenhower Drive #2; Savannah, GA 31406'
-  voice: 912-527-5100
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
 - url: https://www.legis.ga.gov/members/senate/784?session=1029
@@ -46,3 +39,11 @@ extras:
   spouse: Bernice
   staff: Leighton Kennedy
   staff email: leighton.kennedy@senate.ga.gov
+offices:
+- address: 325-A CLOB; Atlanta, GA 30334
+  voice: 404-656-7880
+  classification: capitol
+- address: '1326 Eisenhower Drive #2; Savannah, GA 31406'
+  voice: 912-527-5100
+  classification: district
+  name: 'District Office #1'

@@ -41,18 +41,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: AZ-4
-contact_details:
-- note: Capitol Office
-  address: 2057 Rayburn House Office Building Washington DC 20515-0304
-  voice: 202-225-2315
-- note: District Office
-  address: 220 N. 4th St.; Kingman, AZ 86401
-- note: District Office
-  address: '6499 S. Kings Ranch Rd. #4; Gold Canyon, AZ 85118'
-  voice: 480-882-2697
-- note: District Office
-  address: 122 N. Cortez St. Suite 104; Prescott, AZ 86301
-  voice: 928-445-1683
 links:
 - url: https://gosar.house.gov
   note: website
@@ -91,3 +79,18 @@ other_identifiers:
   identifier: kg:/m/0czdqz0
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2057 Rayburn House Office Building Washington DC 20515-0304
+  voice: 202-225-2315
+  classification: capitol
+- address: 220 N. 4th St.; Kingman, AZ 86401
+  classification: district
+  name: 'District Office #1'
+- address: '6499 S. Kings Ranch Rd. #4; Gold Canyon, AZ 85118'
+  voice: 480-882-2697
+  classification: district
+  name: 'District Office #2'
+- address: 122 N. Cortez St. Suite 104; Prescott, AZ 86301
+  voice: 928-445-1683
+  classification: district
+  name: 'District Office #3'

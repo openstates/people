@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '40'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4009;Hartford, CT 06106
-  voice: 860-240-8585
-- note: District Office
-  address: 33 Toll Gate Road;Groton, CT 06340
-  voice: 860-916-3333
 links:
 - url: http://www.housedems.ct.gov/Conley
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000316
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4009;Hartford, CT 06106
+  voice: 860-240-8585
+  classification: capitol
+- address: 33 Toll Gate Road;Groton, CT 06340
+  voice: 860-916-3333
+  classification: district
+  name: 'District Office #1'

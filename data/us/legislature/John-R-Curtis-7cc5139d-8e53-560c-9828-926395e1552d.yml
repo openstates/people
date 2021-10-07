@@ -26,13 +26,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: UT-3
-contact_details:
-- note: Capitol Office
-  address: 2400 Rayburn House Office Building Washington DC 20515-4403
-  voice: 202-225-7751
-- note: District Office
-  address: 51 South University Avenue Suite 318; Provo, UT 84601
-  voice: 801-851-2500
 links:
 - url: https://curtis.house.gov
   note: website
@@ -65,3 +58,11 @@ other_identifiers:
   identifier: '21755'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2400 Rayburn House Office Building Washington DC 20515-4403
+  voice: 202-225-7751
+  classification: capitol
+- address: 51 South University Avenue Suite 318; Provo, UT 84601
+  voice: 801-851-2500
+  classification: district
+  name: 'District Office #1'

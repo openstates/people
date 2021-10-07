@@ -15,12 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '43'
-contact_details:
-- note: Capitol Office
-  address: 110-A State Capitol; Atlanta, GA 30334
-  voice: 404-463-2598
-- note: District Office
-  address: P.O. Box 1026; Lithonia, GA 30058
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
 - url: https://www.legis.ga.gov/members/senate/807?session=1029
@@ -50,3 +44,10 @@ extras:
   spouse: Houston
   staff: Corrinna Edwards
   staff email: corrinna.edwards@senate.ga.gov
+offices:
+- address: 110-A State Capitol; Atlanta, GA 30334
+  voice: 404-463-2598
+  classification: capitol
+- address: P.O. Box 1026; Lithonia, GA 30058
+  classification: district
+  name: 'District Office #1'

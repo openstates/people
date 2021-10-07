@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '27'
-contact_details:
-- note: Capitol Office
-  address: 108D Capitol Building;Springfield, IL 62706
-  voice: 217-782-4471
-- note: District Office
-  address: 171 W. Wing St.;Suite 202;Arlington Heights, IL 60005
-  voice: 847-749-1880
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2726
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2931
@@ -24,3 +17,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2726
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2931
+offices:
+- address: 108D Capitol Building;Springfield, IL 62706
+  voice: 217-782-4471
+  classification: capitol
+- address: 171 W. Wing St.;Suite 202;Arlington Heights, IL 60005
+  voice: 847-749-1880
+  classification: district
+  name: 'District Office #1'

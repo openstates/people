@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '45'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203045;Harrisburg, PA 17120-3045;Room:;458 Main Capitol
-  voice: 717-787-5580
-  fax: 717-772-3588
-- note: District Office
-  address: New Kensington City Hall 301 11th Street, Suite L;New Kensington, PA 15068
-  voice: 724-334-1143
-  fax: 724-334-1152
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1197
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/senatorbrewster
   twitter: https://twitter.com/senatorbrewster
+offices:
+- address: Senate Box 203045;Harrisburg, PA 17120-3045;Room:;458 Main Capitol
+  voice: 717-787-5580
+  fax: 717-772-3588
+  classification: capitol
+- address: New Kensington City Hall 301 11th Street, Suite L;New Kensington, PA 15068
+  voice: 724-334-1143
+  fax: 724-334-1152
+  classification: district
+  name: 'District Office #1'

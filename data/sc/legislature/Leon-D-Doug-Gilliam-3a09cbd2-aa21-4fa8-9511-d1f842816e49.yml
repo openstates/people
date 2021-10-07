@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '42'
-contact_details:
-- note: Capitol Office
-  address: 420C Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6968
-- note: District Office
-  address: 3347 Buffalo-W. Springs Highway, Buffalo, SC 29321
-  voice: 864-427-5711
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0675426055
 other_names:
@@ -23,3 +16,11 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0675426055
+offices:
+- address: 420C Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6968
+  classification: capitol
+- address: 3347 Buffalo-W. Springs Highway, Buffalo, SC 29321
+  voice: 864-427-5711
+  classification: district
+  name: 'District Office #1'

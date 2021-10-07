@@ -12,13 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 3rd Barnstable
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 167;Boston, MA, 02133
-  voice: 617-722-2230
-- note: District Office
-  address: 346 Gifford Street;Unit 3;Falmouth, MA 02540
-  voice: 508-548-8683
 links:
 - url: https://malegislature.gov/Legislators/Profile/DTV1
 other_identifiers:
@@ -30,3 +23,11 @@ other_identifiers:
   identifier: ocd-person/ea72ce0f-5c4b-400a-bc2a-6cf1e82399b8
 sources:
 - url: https://malegislature.gov/Legislators/Profile/DTV1
+offices:
+- address: 24 Beacon St.;Room 167;Boston, MA, 02133
+  voice: 617-722-2230
+  classification: capitol
+- address: 346 Gifford Street;Unit 3;Falmouth, MA 02540
+  voice: 508-548-8683
+  classification: district
+  name: 'District Office #1'

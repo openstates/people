@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '99'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1008;Raleigh, NC 27601-1096
-  voice: 919-733-5606
-- note: District Office
-  address: 5401 Rupert Ln;Charlotte, NC 28215
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/752
 sources:
@@ -24,3 +18,10 @@ extras:
   counties:
   - Mecklenburg
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1008;Raleigh, NC 27601-1096
+  voice: 919-733-5606
+  classification: capitol
+- address: 5401 Rupert Ln;Charlotte, NC 28215
+  classification: district
+  name: 'District Office #1'

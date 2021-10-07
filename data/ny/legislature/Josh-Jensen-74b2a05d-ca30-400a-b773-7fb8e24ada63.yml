@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '134'
-contact_details:
-- note: District Office
-  address: 2496 West Ridge Rd.; Rochester, NY 14626
-  voice: 585-225-4190
-- note: Capitol Office
-  address: LOB Room 722; Albany, NY 12248
-  voice: 518-455-4664
 links:
 - url: https://assembly.state.ny.us/mem/Josh-Jensen
 sources:
 - url: https://assembly.state.ny.us/mem/Josh-Jensen
+offices:
+- address: 2496 West Ridge Rd.; Rochester, NY 14626
+  voice: 585-225-4190
+  classification: district
+  name: 'District Office #1'
+- address: LOB Room 722; Albany, NY 12248
+  voice: 518-455-4664
+  classification: capitol

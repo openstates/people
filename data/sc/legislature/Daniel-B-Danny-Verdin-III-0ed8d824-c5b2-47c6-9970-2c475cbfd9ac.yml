@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '9'
-contact_details:
-- note: Capitol Office
-  address: 412 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6250
-- note: District Office
-  address: P.O. Box 272, Laurens, SC 29360
-  voice: 864-682-8914
-- note: Primary Office
-  voice: 864-984-4129
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1874999775
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=1874999775
+offices:
+- address: 412 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6250
+  classification: capitol
+- address: P.O. Box 272, Laurens, SC 29360
+  voice: 864-682-8914
+  classification: district
+  name: 'District Office #1'
+- voice: 864-984-4129
+  classification: primary

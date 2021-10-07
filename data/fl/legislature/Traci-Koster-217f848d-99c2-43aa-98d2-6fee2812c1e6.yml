@@ -9,9 +9,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '64'
-contact_details:
-- note: District Office
-  address: Suite 3; 3135 State Road 580; Safety Harbor, FL 34695-4917
-- note: Capitol Office
-  address: 1101 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+offices:
+- address: Suite 3; 3135 State Road 580; Safety Harbor, FL 34695-4917
+  classification: district
+  name: 'District Office #1'
+- address: 1101 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5064
+  classification: capitol

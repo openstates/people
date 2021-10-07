@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0008
-  voice: 916-319-2008
-- note: District Office
-  address: 2729 Prospect Park Drive, Suite 130;Rancho Cordova, CA 95670
-  voice: 916-464-1910
 links:
 - url: https://a08.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD08&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000356
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0008
+  voice: 916-319-2008
+  classification: capitol
+- address: 2729 Prospect Park Drive, Suite 130;Rancho Cordova, CA 95670
+  voice: 916-464-1910
+  classification: district
+  name: 'District Office #1'

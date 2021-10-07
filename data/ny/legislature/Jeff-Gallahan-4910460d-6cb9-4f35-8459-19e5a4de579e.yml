@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '131'
-contact_details:
-- note: District Office
-  address: 70 Elizabeth Blackwell St.; Geneva, NY 14456
-  voice: 315-781-2030
-- note: Capitol Office
-  address: LOB 725; Albany, NY 12248
-  voice: 518-455-3979
 links:
 - url: https://assembly.state.ny.us/mem/Jeff-Gallahan
 sources:
 - url: https://assembly.state.ny.us/mem/Jeff-Gallahan
+offices:
+- address: 70 Elizabeth Blackwell St.; Geneva, NY 14456
+  voice: 315-781-2030
+  classification: district
+  name: 'District Office #1'
+- address: LOB 725; Albany, NY 12248
+  voice: 518-455-3979
+  classification: capitol

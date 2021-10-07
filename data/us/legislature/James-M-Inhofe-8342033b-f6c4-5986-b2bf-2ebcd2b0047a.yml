@@ -61,26 +61,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Oklahoma
-contact_details:
-- note: Capitol Office
-  address: 205 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-4721
-- note: District Office
-  address: '302 N. Independence #104; Enid, OK 73701'
-  voice: 580-234-5105
-  fax: 580-234-5094
-- note: District Office
-  address: '215 E. Choctaw Ave. #106; McAlester, OK 74501'
-  voice: 918-426-0933
-  fax: 918-426-0935
-- note: District Office
-  address: '3817 NW Expressway #780; Oklahoma City, OK 73112'
-  voice: 405-604-0917
-  fax: 405-208-8841
-- note: District Office
-  address: '1924 S. Utica Ave. #530; Tulsa, OK 74104-6511'
-  voice: 918-748-5111
-  fax: 918-748-5119
 links:
 - url: https://www.inhofe.senate.gov
   note: website
@@ -125,3 +105,27 @@ other_identifiers:
   identifier: kg:/m/021kpl
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 205 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-4721
+  classification: capitol
+- address: '302 N. Independence #104; Enid, OK 73701'
+  voice: 580-234-5105
+  fax: 580-234-5094
+  classification: district
+  name: 'District Office #1'
+- address: '215 E. Choctaw Ave. #106; McAlester, OK 74501'
+  voice: 918-426-0933
+  fax: 918-426-0935
+  classification: district
+  name: 'District Office #2'
+- address: '3817 NW Expressway #780; Oklahoma City, OK 73112'
+  voice: 405-604-0917
+  fax: 405-208-8841
+  classification: district
+  name: 'District Office #3'
+- address: '1924 S. Utica Ave. #530; Tulsa, OK 74104-6511'
+  voice: 918-748-5111
+  fax: 918-748-5119
+  classification: district
+  name: 'District Office #4'

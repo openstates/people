@@ -11,12 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '86'
-contact_details:
-- note: Capitol Office
-  address: 397 Herndon Parkway;Suite 110;Herndon, Virginia 20170
-  voice: 804-698-1540
-- note: District Office
-  voice: 571-324-2448
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H310
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H310
@@ -30,3 +24,10 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H310
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H310
+offices:
+- address: 397 Herndon Parkway;Suite 110;Herndon, Virginia 20170
+  voice: 804-698-1540
+  classification: capitol
+- voice: 571-324-2448
+  classification: district
+  name: 'District Office #1'

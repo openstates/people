@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '112'
-contact_details:
-- note: Capitol Office
-  address: LOB 635; Albany, NY 12248
-  voice: 518-455-5772
-- note: District Office
-  address: 199 Milton Avenue; Suite 3-4; Ballston Spa, NY 12020
-  voice: 518-884-8010
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Mary-Beth-Walsh
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Mary-Beth-Walsh
 - url: https://assembly.state.ny.us/mem/Mary-Beth-Walsh
+offices:
+- address: LOB 635; Albany, NY 12248
+  voice: 518-455-5772
+  classification: capitol
+- address: 199 Milton Avenue; Suite 3-4; Ballston Spa, NY 12020
+  voice: 518-884-8010
+  classification: district
+  name: 'District Office #1'

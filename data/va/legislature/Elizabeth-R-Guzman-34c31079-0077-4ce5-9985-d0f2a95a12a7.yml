@@ -11,12 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  voice: 804-698-1031
-- note: District Office
-  address: P.O. Box 1818;Woodbridge, Virginia 22195
-  voice: 571-403-1213
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H297
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H297
@@ -33,3 +27,10 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H297
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H297
+offices:
+- voice: 804-698-1031
+  classification: capitol
+- address: P.O. Box 1818;Woodbridge, Virginia 22195
+  voice: 571-403-1213
+  classification: district
+  name: 'District Office #1'

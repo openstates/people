@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  address: 505 Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-2701
-- note: District Office
-  address: P.O. Box 471, York, SC 29745
-- note: Primary Office
-  voice: 803-324-7574
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1484090731
 other_names:
@@ -27,3 +19,12 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1484090731
+offices:
+- address: 505 Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-2701
+  classification: capitol
+- address: P.O. Box 471, York, SC 29745
+  classification: district
+  name: 'District Office #1'
+- voice: 803-324-7574
+  classification: primary

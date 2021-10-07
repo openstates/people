@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Bldg. Room 848;Albany,, NY 12247
-  voice: 518-455-3250
-- note: District Office
-  address: 485 Underhill Blvd;Syosset,, NY 11791
-  voice: 516-922-1811
-  fax: 518-426-6785
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/james-gaughran/contact
@@ -27,3 +19,12 @@ ids:
   twitter: Gaughran4Senate
 sources:
 - url: http://www.nysenate.gov/senators/james-gaughran/contact
+offices:
+- address: Legislative Office Bldg. Room 848;Albany,, NY 12247
+  voice: 518-455-3250
+  classification: capitol
+- address: 485 Underhill Blvd;Syosset,, NY 11791
+  voice: 516-922-1811
+  fax: 518-426-6785
+  classification: district
+  name: 'District Office #1'

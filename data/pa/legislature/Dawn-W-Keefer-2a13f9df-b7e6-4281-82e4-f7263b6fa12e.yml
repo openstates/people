@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '92'
-contact_details:
-- note: Capitol Office
-  address: 423 Irvis Office Building P.O. Box 202092 Harrisburg, PA 17120-2092
-  voice: 717-783-8783
-  fax: 717-782-2920
-- note: District Office
-  address: 12 N. Baltimore Street Dillsburg, PA 17019
-  voice: 717-432-0792
-  fax: 717-432-0795
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1748
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -29,3 +20,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1748
 extras:
   facebook: https://facebook.com/repkeefer
+offices:
+- address: 423 Irvis Office Building P.O. Box 202092 Harrisburg, PA 17120-2092
+  voice: 717-783-8783
+  fax: 717-782-2920
+  classification: capitol
+- address: 12 N. Baltimore Street Dillsburg, PA 17019
+  voice: 717-432-0792
+  fax: 717-432-0795
+  classification: district
+  name: 'District Office #1'

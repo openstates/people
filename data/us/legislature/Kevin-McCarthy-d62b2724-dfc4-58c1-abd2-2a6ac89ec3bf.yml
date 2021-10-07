@@ -50,14 +50,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-23
-contact_details:
-- note: Capitol Office
-  address: 2468 Rayburn House Office Building Washington DC 20515-0523
-  voice: 202-225-2915
-- note: District Office
-  address: 4100 Empire Dr. Suite 150; Bakersfield, CA 93309
-  voice: 661-327-3611
-  fax: 661-637-0867
 links:
 - url: https://kevinmccarthy.house.gov
   note: website
@@ -98,3 +90,12 @@ other_identifiers:
   identifier: kg:/m/074qxm
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2468 Rayburn House Office Building Washington DC 20515-0523
+  voice: 202-225-2915
+  classification: capitol
+- address: 4100 Empire Dr. Suite 150; Bakersfield, CA 93309
+  voice: 661-327-3611
+  fax: 661-637-0867
+  classification: district
+  name: 'District Office #1'

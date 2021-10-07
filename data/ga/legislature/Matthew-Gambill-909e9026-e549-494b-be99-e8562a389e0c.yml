@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: 601-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0254
-- note: District Office
-  address: P.O. Box 487; Cartersville, GA 30120
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4934&Session=27
 - url: https://www.legis.ga.gov/members/house/4934?session=1029
@@ -37,3 +31,10 @@ extras:
   spouse: Danae
   staff: Kathy Hutcherson - Administrative Assistant
   staff email: kathy.hutcherson@house.ga.gov
+offices:
+- address: 601-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0254
+  classification: capitol
+- address: P.O. Box 487; Cartersville, GA 30120
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Addison-2
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 33 West St.;Cornwall, VT 05753
-  voice: 802-462-3134
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27155
 - url: http://legislature.vermont.gov/people/single/2022/27155
@@ -27,3 +21,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27155
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27155
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 33 West St.;Cornwall, VT 05753
+  voice: 802-462-3134
+  classification: district
+  name: 'District Office #1'

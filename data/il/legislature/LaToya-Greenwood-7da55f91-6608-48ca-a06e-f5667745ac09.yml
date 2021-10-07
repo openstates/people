@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '114'
-contact_details:
-- note: Capitol Office
-  address: 254-W Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-5951
-- note: District Office
-  address: 4700 State Street;Suite 2;East St. Louis, IL 62205
-  voice: 618-646-9557
-  fax: 618-646-9558
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2684
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2902
@@ -29,3 +21,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2684
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2902
+offices:
+- address: 254-W Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-5951
+  classification: capitol
+- address: 4700 State Street;Suite 2;East St. Louis, IL 62205
+  voice: 618-646-9557
+  fax: 618-646-9558
+  classification: district
+  name: 'District Office #1'

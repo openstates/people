@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Bennington-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 616 Vt. Rte. 7A;Shaftsbury, VT 05262
-  voice: 802-440-0936
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30944
 - url: http://legislature.vermont.gov/people/single/2022/30944
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30944
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30944
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 616 Vt. Rte. 7A;Shaftsbury, VT 05262
+  voice: 802-440-0936
+  classification: district
+  name: 'District Office #1'

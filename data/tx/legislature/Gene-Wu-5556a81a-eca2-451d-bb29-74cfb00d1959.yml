@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '137'
-contact_details:
-- note: Capitol Office
-  address: Room GW.4;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0492
-  fax: 512-463-1182
-- note: District Office
-  address: 6500 Rookin, Building C;Houston, TX 77074
-  voice: 713-271-3900
-  fax: 713-271-3902
 links:
 - url: https://house.texas.gov/members/member-page/?district=137
 other_identifiers:
@@ -27,3 +18,13 @@ other_identifiers:
   identifier: TXL000578
 sources:
 - url: https://house.texas.gov/members/member-page/?district=137
+offices:
+- address: Room GW.4;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0492
+  fax: 512-463-1182
+  classification: capitol
+- address: 6500 Rookin, Building C;Houston, TX 77074
+  voice: 713-271-3900
+  fax: 713-271-3902
+  classification: district
+  name: 'District Office #1'

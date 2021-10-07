@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '90'
-contact_details:
-- note: Capitol Office
-  address: 335C Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6907
-- note: District Office
-  address: 232 Azalea Avenue, Bamberg, SC 29003
-  voice: 803-682-2860
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0102840897
 other_names:
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0102840897
+offices:
+- address: 335C Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6907
+  classification: capitol
+- address: 232 Azalea Avenue, Bamberg, SC 29003
+  voice: 803-682-2860
+  classification: district
+  name: 'District Office #1'

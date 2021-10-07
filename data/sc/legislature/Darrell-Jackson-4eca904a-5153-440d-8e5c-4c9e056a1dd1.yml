@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: 612 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6048
-- note: District Office
-  address: 608 Motley Rd., Hopkins, SC 29061
-  voice: 803-776-6954
-- note: Primary Office
-  voice: 803-647-5157
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0920454435
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=0920454435
+offices:
+- address: 612 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6048
+  classification: capitol
+- address: 608 Motley Rd., Hopkins, SC 29061
+  voice: 803-776-6954
+  classification: district
+  name: 'District Office #1'
+- voice: 803-647-5157
+  classification: primary

@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '106'
-contact_details:
-- note: Capitol Office
-  address: 522D Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6781
-- note: District Office
-  address: P.O. Box 14444, Surfside Beach, SC 29587
-- note: Primary Office
-  voice: 843-650-9137
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0623863562
 other_names:
@@ -27,3 +19,12 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0623863562
+offices:
+- address: 522D Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6781
+  classification: capitol
+- address: P.O. Box 14444, Surfside Beach, SC 29587
+  classification: district
+  name: 'District Office #1'
+- voice: 843-650-9137
+  classification: primary

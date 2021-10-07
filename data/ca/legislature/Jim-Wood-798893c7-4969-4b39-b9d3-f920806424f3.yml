@@ -10,19 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0002
-  voice: 916-319-2002
-- note: District Office
-  address: 50 D Street, Suite 450;Santa Rosa, CA 95404
-  voice: 707-576-2526
-- note: District Office
-  address: 1036 5th Street, Suite D;Eureka, CA 95501
-  voice: 707-445-7014
-- note: District Office
-  address: 200 South School Street, Suite D;Ukiah, CA 95482
-  voice: 707-463-5770
 links:
 - url: https://a02.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD02&inframe=N
@@ -32,3 +19,19 @@ other_identifiers:
   identifier: CAL000443
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0002
+  voice: 916-319-2002
+  classification: capitol
+- address: 50 D Street, Suite 450;Santa Rosa, CA 95404
+  voice: 707-576-2526
+  classification: district
+  name: 'District Office #1'
+- address: 1036 5th Street, Suite D;Eureka, CA 95501
+  voice: 707-445-7014
+  classification: district
+  name: 'District Office #2'
+- address: 200 South School Street, Suite D;Ukiah, CA 95482
+  voice: 707-463-5770
+  classification: district
+  name: 'District Office #3'

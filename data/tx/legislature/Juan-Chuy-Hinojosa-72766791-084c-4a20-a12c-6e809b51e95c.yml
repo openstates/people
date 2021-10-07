@@ -49,13 +49,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0120
-- note: District Office
-  address: 602 N. Staples Street, Suite 200 Corpus Christi, TX 78401
-  voice: 361-882-0900
 links:
 - url: https://senate.texas.gov/member.php?d=20
 other_identifiers:
@@ -69,3 +62,11 @@ sources:
 - url: https://senate.texas.gov/member.php?d=20
 other_names:
 - name: Juan Hinojosa
+offices:
+- address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0120
+  classification: capitol
+- address: 602 N. Staples Street, Suite 200 Corpus Christi, TX 78401
+  voice: 361-882-0900
+  classification: district
+  name: 'District Office #1'

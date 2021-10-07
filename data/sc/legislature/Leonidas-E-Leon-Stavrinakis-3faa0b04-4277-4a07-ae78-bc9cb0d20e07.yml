@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '119'
-contact_details:
-- note: Capitol Office
-  address: 522C Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-3039
-- note: District Office
-  address: P.O. Box 30099, Charleston, SC 29417
-  voice: 843-573-0491
-- note: Primary Office
-  voice: 843-724-1060
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1747727063
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1747727063
+offices:
+- address: 522C Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-3039
+  classification: capitol
+- address: P.O. Box 30099, Charleston, SC 29417
+  voice: 843-573-0491
+  classification: district
+  name: 'District Office #1'
+- voice: 843-724-1060
+  classification: primary

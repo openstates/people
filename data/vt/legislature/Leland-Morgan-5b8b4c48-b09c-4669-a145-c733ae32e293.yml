@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Grand Isle-Chittenden
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 23 Morgan Rd.;Milton, VT 05468
-  voice: 802-318-0227
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30960
 - url: http://legislature.vermont.gov/people/single/2022/30960
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30960
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30960
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 23 Morgan Rd.;Milton, VT 05468
+  voice: 802-318-0227
+  classification: district
+  name: 'District Office #1'

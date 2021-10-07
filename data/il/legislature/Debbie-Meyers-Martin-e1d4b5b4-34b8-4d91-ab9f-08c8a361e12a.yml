@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '38'
-contact_details:
-- note: Capitol Office
-  address: 250-W Stratton Office Building;Springfield, IL 62706
-  voice: 217-558-1007
-- note: District Office
-  address: 813 School Avenue;Matteson, IL 60443
-  voice: 708-833-7010
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2741
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2942
@@ -25,3 +18,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2741
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2942
+offices:
+- address: 250-W Stratton Office Building;Springfield, IL 62706
+  voice: 217-558-1007
+  classification: capitol
+- address: 813 School Avenue;Matteson, IL 60443
+  voice: 708-833-7010
+  classification: district
+  name: 'District Office #1'

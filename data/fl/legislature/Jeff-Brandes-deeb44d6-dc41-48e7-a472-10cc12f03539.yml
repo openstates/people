@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: 414 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5024
-- note: District Office
-  address: 9800 4th Street North; Suite 200; St. Petersburg, FL 33702
-  voice: 727-563-2100
 links:
 - url: http://www.flsenate.gov/Senators/s24
 - url: http://www.flsenate.gov/Senators/2018-2020/S24
@@ -29,3 +22,11 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s24
 - url: http://www.flsenate.gov/Senators/2018-2020/S24
+offices:
+- address: 414 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5024
+  classification: capitol
+- address: 9800 4th Street North; Suite 200; St. Petersburg, FL 33702
+  voice: 727-563-2100
+  classification: district
+  name: 'District Office #1'

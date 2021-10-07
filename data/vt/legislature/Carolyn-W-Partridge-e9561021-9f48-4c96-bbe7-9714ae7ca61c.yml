@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 1612 Old Cheney Rd.;Windham, VT 05359
-  voice: 802-874-4182
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14527
 - url: http://legislature.vermont.gov/people/single/2022/14527
@@ -35,3 +29,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14527
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14527
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 1612 Old Cheney Rd.;Windham, VT 05359
+  voice: 802-874-4182
+  classification: district
+  name: 'District Office #1'

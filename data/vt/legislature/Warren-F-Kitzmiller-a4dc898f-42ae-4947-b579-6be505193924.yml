@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington-4
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 138 North St.;Montpelier, VT 05602
-  voice: 802-229-0878
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14540
 - url: http://legislature.vermont.gov/people/single/2022/14540
@@ -35,3 +29,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14540
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14540
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 138 North St.;Montpelier, VT 05602
+  voice: 802-229-0878
+  classification: district
+  name: 'District Office #1'

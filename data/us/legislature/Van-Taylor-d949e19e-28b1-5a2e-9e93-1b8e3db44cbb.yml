@@ -20,13 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TX-3
-contact_details:
-- note: Capitol Office
-  address: 1404 Longworth House Office Building Washington DC 20515-4303
-  voice: 202-225-4201
-- note: District Office
-  address: 5600 Tennyson Pkwy Suite 275; Plano, TX 75024-3818
-  voice: 972-202-4150
 links:
 - url: https://vantaylor.house.gov
   note: website
@@ -55,3 +48,11 @@ other_identifiers:
   identifier: Van Taylor
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1404 Longworth House Office Building Washington DC 20515-4303
+  voice: 202-225-4201
+  classification: capitol
+- address: 5600 Tennyson Pkwy Suite 275; Plano, TX 75024-3818
+  voice: 972-202-4150
+  classification: district
+  name: 'District Office #1'

@@ -11,12 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 396;Richmond, Virginia 23218
-  voice: 434-455-3382
-- note: District Office
-  address: 4925 Boonsboro Road;Box 172;Lynchburg, Virginia 24503
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S105
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S105
@@ -32,3 +26,10 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S105
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S105
+offices:
+- address: P.O. Box 396;Richmond, Virginia 23218
+  voice: 434-455-3382
+  classification: capitol
+- address: 4925 Boonsboro Road;Box 172;Lynchburg, Virginia 24503
+  classification: district
+  name: 'District Office #1'

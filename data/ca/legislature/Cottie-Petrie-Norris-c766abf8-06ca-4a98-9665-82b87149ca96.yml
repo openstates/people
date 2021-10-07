@@ -11,16 +11,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '74'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0074
-  voice: 916-319-2074
-- note: District Office
-  address: 19712 MacArthur Boulevard, Suite 150;Irvine, CA 92612
-  voice: 949-251-0074
 links:
 - url: https://a74.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD74&inframe=N
   note: Contact Form
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0074
+  voice: 916-319-2074
+  classification: capitol
+- address: 19712 MacArthur Boulevard, Suite 150;Irvine, CA 92612
+  voice: 949-251-0074
+  classification: district
+  name: 'District Office #1'

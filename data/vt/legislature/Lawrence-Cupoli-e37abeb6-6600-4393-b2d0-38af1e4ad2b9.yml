@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-5-2
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 57 Piedmont Pond Road;Rutland, VT 05701
-  voice: 802-417-4399
 links:
 - url: http://legislature.vermont.gov/people/single/2020/20387
 - url: http://legislature.vermont.gov/people/single/2022/20387
@@ -35,3 +29,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/20387
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/20387
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 57 Piedmont Pond Road;Rutland, VT 05701
+  voice: 802-417-4399
+  classification: district
+  name: 'District Office #1'

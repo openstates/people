@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: 121D Capitol Building;Springfield, IL 62706
-  voice: 217-782-7746
-- note: District Office
-  address: 164 Division Street;Suite 102;Elgin, IL 60120
-  voice: 847-214-8864
-  fax: 847-214-8867
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2677
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2896
@@ -28,3 +20,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2677
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2896
+offices:
+- address: 121D Capitol Building;Springfield, IL 62706
+  voice: 217-782-7746
+  classification: capitol
+- address: 164 Division Street;Suite 102;Elgin, IL 60120
+  voice: 847-214-8864
+  fax: 847-214-8867
+  classification: district
+  name: 'District Office #1'

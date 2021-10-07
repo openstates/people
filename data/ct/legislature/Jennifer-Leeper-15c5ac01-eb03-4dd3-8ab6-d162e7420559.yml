@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '132'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room;Hartford, CT 06106
-- note: District Office
-  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/Leeper
 other_names:
 - name: Leeper, Jennifer
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room;Hartford, CT 06106
+  classification: capitol
+- address: ', CT'
+  classification: district
+  name: 'District Office #1'

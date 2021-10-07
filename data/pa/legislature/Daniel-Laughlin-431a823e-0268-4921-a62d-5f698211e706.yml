@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '49'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203049;Harrisburg, PA 17120-3049;Room:;169 Main Capitol
-  voice: 717-787-8927
-- note: District Office
-  address: 1314 Griswold Plaza;Erie, PA 16501
-  voice: 814-453-2515
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1766
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -29,3 +22,11 @@ sources:
 extras:
   facebook: https://www.facebook.com/senatorlaughlin/
   twitter: https://twitter.com/senatorlaughlin
+offices:
+- address: Senate Box 203049;Harrisburg, PA 17120-3049;Room:;169 Main Capitol
+  voice: 717-787-8927
+  classification: capitol
+- address: 1314 Griswold Plaza;Erie, PA 16501
+  voice: 814-453-2515
+  classification: district
+  name: 'District Office #1'

@@ -9,11 +9,12 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '76'
-contact_details:
-- note: District Office
-  address: Sunshine Professional Center, Suite 2215; 9240 Bonita Beach Road Southeast;
+offices:
+- address: Sunshine Professional Center, Suite 2215; 9240 Bonita Beach Road Southeast;
     Bonita Springs, FL 34135-4251
   voice: 239-949-6279
-- note: Capitol Office
-  address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5076
+  classification: capitol

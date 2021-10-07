@@ -10,14 +10,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '109'
-contact_details:
-- note: Capitol Office
-  address: Room E1.416;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0953
-  fax: 512-463-5887
-- note: District Office
-  address: 103 N. Dallas Avenue;Lancaster, Texas 75146
-  voice: 972-227-1064
 links:
 - url: https://house.texas.gov/members/member-page/?district=109
 other_names:
@@ -25,3 +17,12 @@ other_names:
 - name: Carl O. Sherman, Sr.
 sources:
 - url: https://house.texas.gov/members/member-page/?district=109
+offices:
+- address: Room E1.416;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0953
+  fax: 512-463-5887
+  classification: capitol
+- address: 103 N. Dallas Avenue;Lancaster, Texas 75146
+  voice: 972-227-1064
+  classification: district
+  name: 'District Office #1'

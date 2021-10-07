@@ -20,14 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PR-AL
-contact_details:
-- note: Capitol Office
-  address: 2338 Rayburn House Office Building Washington DC 20515-5401
-  voice: 202-225-2615
-- note: District Office
-  address: P.O. Box 9023958; San Juan, PR 00902-3958
-  voice: 787-723-6333
-  fax: 787-729-7738
 links:
 - url: https://gonzalez-colon.house.gov
   note: website
@@ -56,3 +48,12 @@ other_identifiers:
   identifier: '67353'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2338 Rayburn House Office Building Washington DC 20515-5401
+  voice: 202-225-2615
+  classification: capitol
+- address: P.O. Box 9023958; San Juan, PR 00902-3958
+  voice: 787-723-6333
+  fax: 787-729-7738
+  classification: district
+  name: 'District Office #1'

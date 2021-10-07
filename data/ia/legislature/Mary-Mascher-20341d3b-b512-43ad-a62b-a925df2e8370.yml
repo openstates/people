@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '86'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 2012 Sherman Dr, Iowa City, IA 52240
-  voice: 319-351-2826
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=46
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=46
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=46
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=46
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 2012 Sherman Dr, Iowa City, IA 52240
+  voice: 319-351-2826
+  classification: district
+  name: 'District Office #1'

@@ -15,13 +15,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Utah
-contact_details:
-- note: Capitol Office
-  address: 354 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-5251
-- note: District Office
-  address: 125 S State St Suite 8402; Salt Lake City, UT 84138-1102
-  voice: 801-524-4380
 links:
 - url: https://www.romney.senate.gov
   note: website
@@ -56,3 +49,11 @@ other_identifiers:
   identifier: '41902'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 354 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-5251
+  classification: capitol
+- address: 125 S State St Suite 8402; Salt Lake City, UT 84138-1102
+  voice: 801-524-4380
+  classification: district
+  name: 'District Office #1'

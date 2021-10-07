@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '90'
-contact_details:
-- note: Capitol Office
-  address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-9489
-- note: District Office
-  address: P.O. Box 1900;Collins, MS 39428
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/sanford.xml
 other_identifiers:
@@ -26,3 +20,10 @@ sources:
 extras:
   org_info: Representative Sanford is affiliated with the Chamber of Commerce, MS
     Bar Assoc., Cattleman's Assoc., and the Covington County Historical Society.
+offices:
+- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-9489
+  classification: capitol
+- address: P.O. Box 1900;Collins, MS 39428
+  classification: district
+  name: 'District Office #1'

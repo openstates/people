@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: 312B Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6944
-- note: District Office
-  address: P.O. Box 10007, Greenville, SC 29603
-  voice: 864-676-9250
-- note: Primary Office
-  voice: 864-298-0084
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0103409079
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0103409079
+offices:
+- address: 312B Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6944
+  classification: capitol
+- address: P.O. Box 10007, Greenville, SC 29603
+  voice: 864-676-9250
+  classification: district
+  name: 'District Office #1'
+- voice: 864-298-0084
+  classification: primary

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: 244-W Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8037
-- note: District Office
-  address: 913 S. Main St.;Lombard, IL 60148
-  voice: 630-812-9292
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2739
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2940
@@ -25,3 +18,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2739
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2940
+offices:
+- address: 244-W Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8037
+  classification: capitol
+- address: 913 S. Main St.;Lombard, IL 60148
+  voice: 630-812-9292
+  classification: district
+  name: 'District Office #1'

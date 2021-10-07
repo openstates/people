@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '77'
-contact_details:
-- note: Capitol Office
-  address: 335D Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6875
-- note: District Office
-  address: P.O. Box 292434, Columbia, SC 29229
-  voice: 803-470-3961
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0657954467
 other_names:
@@ -23,3 +16,11 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0657954467
+offices:
+- address: 335D Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6875
+  classification: capitol
+- address: P.O. Box 292434, Columbia, SC 29229
+  voice: 803-470-3961
+  classification: district
+  name: 'District Office #1'

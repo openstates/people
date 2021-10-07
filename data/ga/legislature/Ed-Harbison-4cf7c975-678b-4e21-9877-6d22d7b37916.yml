@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: 432 State Capitol; Atlanta, GA 30334
-  voice: 404-656-0074
-  fax: 404-463-5547
-- note: District Office
-  address: P.O. Box 1292; Columbus, GA 31902
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
 - url: https://www.legis.ga.gov/members/senate/17?session=1029
@@ -40,3 +33,11 @@ extras:
   press: https://senatepress.net/category/senate-press/ed-harbison
   staff: Cyndi West
   staff email: cyndi.williams@senate.ga.gov
+offices:
+- address: 432 State Capitol; Atlanta, GA 30334
+  voice: 404-656-0074
+  fax: 404-463-5547
+  classification: capitol
+- address: P.O. Box 1292; Columbus, GA 31902
+  classification: district
+  name: 'District Office #1'

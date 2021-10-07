@@ -13,15 +13,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '174'
-contact_details:
-- note: Capitol Office
-  address: 107 East Wing P.O. Box 202174 Harrisburg, PA 17120-2174
-  voice: 717-772-4032
-  fax: 717-783-1579
-- note: District Office
-  address: 8014 Castor Avenue Philadelphia, PA 19152
-  voice: 215-342-1375
-  fax: 215-342-1641
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1615
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -39,3 +30,13 @@ extras:
   facebook: https://www.facebook.com/RepNeilson/
   twitter: https://twitter.com/RepNeilson
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgVZ7r6AcAd8hdSCnGWOcJHA
+offices:
+- address: 107 East Wing P.O. Box 202174 Harrisburg, PA 17120-2174
+  voice: 717-772-4032
+  fax: 717-783-1579
+  classification: capitol
+- address: 8014 Castor Avenue Philadelphia, PA 19152
+  voice: 215-342-1375
+  fax: 215-342-1641
+  classification: district
+  name: 'District Office #1'

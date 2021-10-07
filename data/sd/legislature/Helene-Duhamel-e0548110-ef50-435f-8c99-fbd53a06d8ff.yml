@@ -10,15 +10,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '32'
-contact_details:
-- note: District Office
-  address: 1622 West Blvd.Rapid City, SD 57701
-  voice: 605-342-2078
-- note: Capitol Office
-  voice: 605-773-3821
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/1785/Detail
 sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1785/Detail
 extras:
   occupation: Law Enforcement/Business Owner
+offices:
+- address: 1622 West Blvd.Rapid City, SD 57701
+  voice: 605-342-2078
+  classification: district
+  name: 'District Office #1'
+- voice: 605-773-3821
+  classification: capitol

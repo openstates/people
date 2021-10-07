@@ -15,13 +15,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '19'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 2032, Sacramento, CA 95814-4900
-  voice: 916-651-4019
-- note: District Office
-  address: 300 E. Esplanade Drive, Suite 430, Oxnard, CA 93036
-  voice: 805-988-1940
 links:
 - url: https://senate.ca.gov/sd19
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD19&inframe=N
@@ -33,3 +26,11 @@ other_identifiers:
   identifier: CAL000513
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 2032, Sacramento, CA 95814-4900
+  voice: 916-651-4019
+  classification: capitol
+- address: 300 E. Esplanade Drive, Suite 430, Oxnard, CA 93036
+  voice: 805-988-1940
+  classification: district
+  name: 'District Office #1'

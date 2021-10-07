@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '115'
-contact_details:
-- note: Capitol Office
-  address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-9391
-- note: District Office
-  address: 1352 Kensington Drive;Biloxi, MS 39530
-  voice: 228-273-0758
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/patterson.xml
 other_identifiers:
@@ -28,3 +21,11 @@ extras:
     Council, Biloxi Chamber of Commerce, Biloxi Bay Chamber of Commerce, Association
     of General Contractors of Mississippi, City of Biloxi Plumbing and Mechanical
     Board and the Biloxi Elks'' Lodge #606.'
+offices:
+- address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-9391
+  classification: capitol
+- address: 1352 Kensington Drive;Biloxi, MS 39530
+  voice: 228-273-0758
+  classification: district
+  name: 'District Office #1'

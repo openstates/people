@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '65'
-contact_details:
-- note: Capitol Office
-  address: 230-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-5457
-- note: District Office
-  address: 2325 Dean Street;Suite 800;St. Charles, IL 60175
-  voice: 630-797-5530
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2753
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2954
@@ -25,3 +18,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2753
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2954
+offices:
+- address: 230-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-5457
+  classification: capitol
+- address: 2325 Dean Street;Suite 800;St. Charles, IL 60175
+  voice: 630-797-5530
+  classification: district
+  name: 'District Office #1'

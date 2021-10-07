@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street, Legislative Office Bldg;Albany,, NY 12247
-  voice: 518-455-3595
-- note: District Office
-  address: 3190 Riverdale Ave.,;Bronx,, NY 10463
-  voice: 718-822-2049
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/alessandra-biaggi/contact
@@ -24,3 +17,11 @@ ids:
   twitter: SenatorBiaggi
 sources:
 - url: http://www.nysenate.gov/senators/alessandra-biaggi/contact
+offices:
+- address: 188 State Street, Legislative Office Bldg;Albany,, NY 12247
+  voice: 518-455-3595
+  classification: capitol
+- address: 3190 Riverdale Ave.,;Bronx,, NY 10463
+  voice: 718-822-2049
+  classification: district
+  name: 'District Office #1'

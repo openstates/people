@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '53'
-contact_details:
-- note: Capitol Office
-  address: Room 206E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3396
-- note: District Office
-  address: 1526 George Washington Highway;Thornton, WV 26440
-  voice: 304-892-3891
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jennings
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000391
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jennings
+offices:
+- address: Room 206E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3396
+  classification: capitol
+- address: 1526 George Washington Highway;Thornton, WV 26440
+  voice: 304-892-3891
+  classification: district
+  name: 'District Office #1'

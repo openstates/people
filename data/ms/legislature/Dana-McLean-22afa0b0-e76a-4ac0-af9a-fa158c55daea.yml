@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 332 Williamsburg Rd;Columbus, MS 39705
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mclean.xml
 sources:
@@ -23,3 +18,9 @@ extras:
   org_info: Representative McLean is affiliated with the Florida Bar Assn., Nat'l
     Assn. of Realtors, Greater Golden Triangle Realtor Assn., Columbus-Lowndes Chamber
     of Commerce, and Exchange Club Columbus Arts Council.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 332 Williamsburg Rd;Columbus, MS 39705
+  classification: district
+  name: 'District Office #1'

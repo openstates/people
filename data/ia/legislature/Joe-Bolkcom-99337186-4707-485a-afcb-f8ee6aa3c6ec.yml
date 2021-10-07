@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '43'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 1235 Oakes Dr, Iowa City, IA 52245
-  voice: 319-337-6280
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=123
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=123
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=123
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=123
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 1235 Oakes Dr, Iowa City, IA 52245
+  voice: 319-337-6280
+  classification: district
+  name: 'District Office #1'

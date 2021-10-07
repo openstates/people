@@ -37,13 +37,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0124
-- note: District Office
-  address: 819 Water Street Suite 125 Kerrville, Texas 78028
-  voice: 830-257-0350
 links:
 - url: https://senate.texas.gov/member.php?d=24
 other_identifiers:
@@ -51,3 +44,11 @@ other_identifiers:
   identifier: TXL000705
 sources:
 - url: https://senate.texas.gov/member.php?d=24
+offices:
+- address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0124
+  classification: capitol
+- address: 819 Water Street Suite 125 Kerrville, Texas 78028
+  voice: 830-257-0350
+  classification: district
+  name: 'District Office #1'

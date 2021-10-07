@@ -36,13 +36,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MI-5
-contact_details:
-- note: Capitol Office
-  address: 200 Cannon House Office Building Washington DC 20515-2205
-  voice: 202-225-3611
-- note: District Office
-  address: 601 S Saginaw St Suite 403; Flint, MI 48502-1513
-  voice: 810-238-8627
 links:
 - url: https://dankildee.house.gov
   note: website
@@ -79,3 +72,11 @@ other_identifiers:
   identifier: kg:/m/0n4c3yt
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 200 Cannon House Office Building Washington DC 20515-2205
+  voice: 202-225-3611
+  classification: capitol
+- address: 601 S Saginaw St Suite 403; Flint, MI 48502-1513
+  voice: 810-238-8627
+  classification: district
+  name: 'District Office #1'

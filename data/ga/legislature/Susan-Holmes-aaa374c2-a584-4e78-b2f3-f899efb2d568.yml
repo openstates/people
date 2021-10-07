@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '129'
-contact_details:
-- note: Capitol Office
-  address: 218-B State Capitol; Atlanta, GA 30334
-  voice: 404-656-5132
-- note: District Office
-  address: PO Box 151; Monticello, GA 31064
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=780&Session=27
 - url: https://www.legis.ga.gov/members/house/780?session=1029
@@ -42,3 +36,10 @@ extras:
   spouse: Paul
   staff: Vanessa Turner - Administrative Assistant
   staff email: vanessa.turner@house.ga.gov
+offices:
+- address: 218-B State Capitol; Atlanta, GA 30334
+  voice: 404-656-5132
+  classification: capitol
+- address: PO Box 151; Monticello, GA 31064
+  classification: district
+  name: 'District Office #1'

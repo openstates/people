@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: 222 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5039
-- note: District Office
-  address: 315 Pontotoc Street; Auburndale, FL 33823-3444
-  voice: 863-968-5666
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4704&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4704&LegislativeTermId=88
@@ -27,3 +20,11 @@ sources:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4704&LegislativeTermId=88
+offices:
+- address: 222 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5039
+  classification: capitol
+- address: 315 Pontotoc Street; Auburndale, FL 33823-3444
+  voice: 863-968-5666
+  classification: district
+  name: 'District Office #1'

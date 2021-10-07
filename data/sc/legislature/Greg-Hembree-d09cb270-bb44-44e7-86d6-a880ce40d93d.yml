@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: 404 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6350
-- note: District Office
-  address: P. O. Box 944, N. Myrtle Beach, SC 29597
-  voice: 843-222-1001
-- note: Primary Office
-  voice: 843-946-6556
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0819318084
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=0819318084
+offices:
+- address: 404 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6350
+  classification: capitol
+- address: P. O. Box 944, N. Myrtle Beach, SC 29597
+  voice: 843-222-1001
+  classification: district
+  name: 'District Office #1'
+- voice: 843-946-6556
+  classification: primary

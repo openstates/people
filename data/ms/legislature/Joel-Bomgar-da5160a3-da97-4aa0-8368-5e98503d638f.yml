@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '58'
-contact_details:
-- note: Capitol Office
-  address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-9485
-- note: District Office
-  address: PO Box 1998;Madison, MS 39130
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/bomgar.xml
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
     the Mississippi Air National Guard and on the Steering Council of MEC's Blueprint
     Mississippi.  He is a former board member of the Madison County Foundation and
     Belhaven University.
+offices:
+- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-9485
+  classification: capitol
+- address: PO Box 1998;Madison, MS 39130
+  classification: district
+  name: 'District Office #1'

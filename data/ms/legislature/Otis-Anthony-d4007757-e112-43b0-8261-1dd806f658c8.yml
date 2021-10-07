@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: PO Box 962;Indianola, MS 38751
-  voice: 662-452-5064
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/anthony.xml
 sources:
@@ -23,3 +17,10 @@ sources:
 extras:
   org_info: Representative Otis is a member of the Alpha Phi Alpha fraternity Inc,
     and Cutting edge gentlemen's club.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: PO Box 962;Indianola, MS 38751
+  voice: 662-452-5064
+  classification: district
+  name: 'District Office #1'

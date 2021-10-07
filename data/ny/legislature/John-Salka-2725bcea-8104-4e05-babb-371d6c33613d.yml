@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '121'
-contact_details:
-- note: Capitol Office
-  address: LOB 529; Albany, NY 12248
-  voice: 518-455-4807
-- note: District Office
-  address: 214 Farrier Avenue; Oneida, NY 13421
-  voice: 315-361-4125
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/John-Salka
@@ -25,3 +18,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/John-Salka
 - url: https://assembly.state.ny.us/mem/John-Salka
+offices:
+- address: LOB 529; Albany, NY 12248
+  voice: 518-455-4807
+  classification: capitol
+- address: 214 Farrier Avenue; Oneida, NY 13421
+  voice: 315-361-4125
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: 436C Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-3068
-- note: District Office
-  address: P.O. Box 157, Walhalla, SC 29691
-  voice: 864-638-2970
-- note: Primary Office
-  voice: 864-638-4237
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1914204316
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1914204316
+offices:
+- address: 436C Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-3068
+  classification: capitol
+- address: P.O. Box 157, Walhalla, SC 29691
+  voice: 864-638-2970
+  classification: district
+  name: 'District Office #1'
+- voice: 864-638-4237
+  classification: primary

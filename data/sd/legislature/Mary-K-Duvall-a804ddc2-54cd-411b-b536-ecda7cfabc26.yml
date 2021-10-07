@@ -10,15 +10,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '24'
-contact_details:
-- note: District Office
-  address: PO Box 453Pierre, SD 57501
-  voice: 605-224-4070
-- note: Capitol Office
-  voice: 605-773-3821
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/1786/Detail
 sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1786/Detail
 extras:
   occupation: Communications Consultant
+offices:
+- address: PO Box 453Pierre, SD 57501
+  voice: 605-224-4070
+  classification: district
+  name: 'District Office #1'
+- voice: 605-773-3821
+  classification: capitol

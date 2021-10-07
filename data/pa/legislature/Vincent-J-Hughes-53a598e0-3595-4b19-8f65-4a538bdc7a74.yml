@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '7'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203007;Harrisburg, PA 17120-3007;Room:;545 Main Capitol
-  voice: 717-787-7112
-  fax: 717-772-0579
-- note: District Office
-  address: 2401 North 54th Street;Philadelphia, PA 19131
-  voice: 215-879-7777
-  fax: 215-879-7778
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=152
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -32,3 +23,13 @@ extras:
   facebook: https://www.facebook.com/vincent.hughes.7
   instagram: https://www.instagram.com/senhughesoffice/
   twitter: https://twitter.com/SenatorHughes
+offices:
+- address: Senate Box 203007;Harrisburg, PA 17120-3007;Room:;545 Main Capitol
+  voice: 717-787-7112
+  fax: 717-772-0579
+  classification: capitol
+- address: 2401 North 54th Street;Philadelphia, PA 19131
+  voice: 215-879-7777
+  fax: 215-879-7778
+  classification: district
+  name: 'District Office #1'

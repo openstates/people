@@ -20,16 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: ND-AL
-contact_details:
-- note: Capitol Office
-  address: 1740 Longworth House Office Building Washington DC 20515-3400
-  voice: 202-225-2611
-- note: District Office
-  address: 220 E Rosser Ave Suite 228; Bismarck, ND 58501-3869
-  voice: 701-354-6700
-- note: District Office
-  address: 3217 Fiechtner Dr S D; Fargo, ND 58103-8735
-  voice: 701-353-6665
 links:
 - url: https://armstrong.house.gov
   note: website
@@ -58,3 +48,15 @@ other_identifiers:
   identifier: kg:/g/11hcszksh3
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1740 Longworth House Office Building Washington DC 20515-3400
+  voice: 202-225-2611
+  classification: capitol
+- address: 220 E Rosser Ave Suite 228; Bismarck, ND 58501-3869
+  voice: 701-354-6700
+  classification: district
+  name: 'District Office #1'
+- address: 3217 Fiechtner Dr S D; Fargo, ND 58103-8735
+  voice: 701-353-6665
+  classification: district
+  name: 'District Office #2'

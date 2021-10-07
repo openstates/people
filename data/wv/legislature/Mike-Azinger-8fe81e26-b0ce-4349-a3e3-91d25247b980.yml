@@ -15,13 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: Room 441M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7970
-- note: District Office
-  address: 1007 51st Street;Vienna, WV 26105
-  voice: 304-916-2177
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Azinger
 other_identifiers:
@@ -33,3 +26,11 @@ other_identifiers:
   identifier: ocd-person/1d07e116-08cb-4077-a8df-6a33f0b50150
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Azinger
+offices:
+- address: Room 441M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7970
+  classification: capitol
+- address: 1007 51st Street;Vienna, WV 26105
+  voice: 304-916-2177
+  classification: district
+  name: 'District Office #1'

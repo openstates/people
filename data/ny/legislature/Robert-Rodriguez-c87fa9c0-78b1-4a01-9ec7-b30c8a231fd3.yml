@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '68'
-contact_details:
-- note: Capitol Office
-  address: LOB 729; Albany, NY 12248
-  voice: 518-455-4781
-- note: District Office
-  address: 55 East 115th St; New York, NY 10029
-  voice: 212-828-3953
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Robert-J-Rodriguez
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Robert-J-Rodriguez
 - url: https://assembly.state.ny.us/mem/Robert-J-Rodriguez
+offices:
+- address: LOB 729; Albany, NY 12248
+  voice: 518-455-4781
+  classification: capitol
+- address: 55 East 115th St; New York, NY 10029
+  voice: 212-828-3953
+  classification: district
+  name: 'District Office #1'

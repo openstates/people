@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2226;Raleigh, NC 27601-1096
-  voice: 919-715-3021
-- note: District Office
-  address: PO Box 222;Warsaw, NC 28398
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/613
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Duplin
   - Onslow
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 2226;Raleigh, NC 27601-1096
+  voice: 919-715-3021
+  classification: capitol
+- address: PO Box 222;Warsaw, NC 28398
+  classification: district
+  name: 'District Office #1'

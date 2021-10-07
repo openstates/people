@@ -15,13 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: Room 216W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7984
-- note: District Office
-  address: 1449 Pleasant Avenue;Wellsburg, WV 26070
-  voice: 304-670-6605
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Weld
 other_identifiers:
@@ -33,3 +26,11 @@ other_identifiers:
   identifier: ocd-person/5532c060-4f50-4777-8998-335c23c6aefd
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Weld
+offices:
+- address: Room 216W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7984
+  classification: capitol
+- address: 1449 Pleasant Avenue;Wellsburg, WV 26070
+  voice: 304-670-6605
+  classification: district
+  name: 'District Office #1'

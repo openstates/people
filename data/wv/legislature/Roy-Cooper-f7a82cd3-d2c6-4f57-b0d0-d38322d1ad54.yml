@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: Room 203E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3119
-- note: District Office
-  address: 31 Pam's Way;Wayside, WV 24985
-  voice: 304-466-5523
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000172
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper
+offices:
+- address: Room 203E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3119
+  classification: capitol
+- address: 31 Pam's Way;Wayside, WV 24985
+  voice: 304-466-5523
+  classification: district
+  name: 'District Office #1'

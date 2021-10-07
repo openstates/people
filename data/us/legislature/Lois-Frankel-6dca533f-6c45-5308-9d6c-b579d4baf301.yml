@@ -35,14 +35,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: FL-21
-contact_details:
-- note: Capitol Office
-  address: 2305 Rayburn House Office Building Washington DC 20515-0921
-  voice: 202-225-9890
-- note: District Office
-  address: 2500 N. Military Trl. Suite 490; Boca Raton, FL 33431
-  voice: 561-998-9045
-  fax: 561-998-9048
 links:
 - url: https://frankel.house.gov
   note: website
@@ -83,3 +75,12 @@ other_identifiers:
   identifier: kg:/m/0gjdw8_
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2305 Rayburn House Office Building Washington DC 20515-0921
+  voice: 202-225-9890
+  classification: capitol
+- address: 2500 N. Military Trl. Suite 490; Boca Raton, FL 33431
+  voice: 561-998-9045
+  fax: 561-998-9048
+  classification: district
+  name: 'District Office #1'

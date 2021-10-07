@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '38'
-contact_details:
-- note: Capitol Office
-  address: 205 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6410
-- note: District Office
-  address: 122 President Circle, Summerville, SC 29483
-  voice: 843-821-3352
-- note: Primary Office
-  voice: 843-821-3009
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0141193165
 other_names:
@@ -30,3 +21,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=0141193165
+offices:
+- address: 205 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6410
+  classification: capitol
+- address: 122 President Circle, Summerville, SC 29483
+  voice: 843-821-3352
+  classification: district
+  name: 'District Office #1'
+- voice: 843-821-3009
+  classification: primary

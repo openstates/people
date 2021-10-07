@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '102'
-contact_details:
-- note: Capitol Office
-  address: 200-1N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8398
-  fax: 217-782-1275
-- note: District Office
-  address: 203 N. Cedar Street;Shelbyville, IL 62565
-  voice: 217-774-1306
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2697
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2913
@@ -37,3 +29,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2697
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2913
+offices:
+- address: 200-1N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8398
+  fax: 217-782-1275
+  classification: capitol
+- address: 203 N. Cedar Street;Shelbyville, IL 62565
+  voice: 217-774-1306
+  classification: district
+  name: 'District Office #1'

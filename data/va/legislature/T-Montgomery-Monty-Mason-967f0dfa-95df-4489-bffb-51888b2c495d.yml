@@ -11,12 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  voice: 804-698-7501
-- note: District Office
-  address: P. O. Box 232;Williamsburg, Virginia 23187
-  voice: 757-229-9310
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S102
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S102
@@ -33,3 +27,10 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+S102
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S102
+offices:
+- voice: 804-698-7501
+  classification: capitol
+- address: P. O. Box 232;Williamsburg, Virginia 23187
+  voice: 757-229-9310
+  classification: district
+  name: 'District Office #1'

@@ -14,13 +14,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  address: 111 Capitol Building;Springfield, IL 62706
-  voice: 217-782-5304
-- note: District Office
-  address: '6301 S. Archer Rd. #1W;Summit, IL 60501'
-  voice: 708-552-5225
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2777
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2976
@@ -32,3 +25,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2777
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2976
+offices:
+- address: 111 Capitol Building;Springfield, IL 62706
+  voice: 217-782-5304
+  classification: capitol
+- address: '6301 S. Archer Rd. #1W;Summit, IL 60501'
+  voice: 708-552-5225
+  classification: district
+  name: 'District Office #1'

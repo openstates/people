@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham-2-1
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 528 Goodenough Rd.;Brattleboro, VT 05301
-  voice: 802-246-1213
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30972
 - url: http://legislature.vermont.gov/people/single/2022/30972
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30972
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30972
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 528 Goodenough Rd.;Brattleboro, VT 05301
+  voice: 802-246-1213
+  classification: district
+  name: 'District Office #1'

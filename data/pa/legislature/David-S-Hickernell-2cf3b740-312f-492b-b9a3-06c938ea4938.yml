@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '98'
-contact_details:
-- note: Capitol Office
-  address: 43A East Wing P.O. Box 202098 Harrisburg, PA 17120-2098
-  voice: 717-783-2076
-  fax: 717-787-9175
-- note: District Office
-  address: 236 Locust Street Columbia, PA 17512
-  voice: 717-684-5525
-  fax: 717-684-2538
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1013
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1013
+offices:
+- address: 43A East Wing P.O. Box 202098 Harrisburg, PA 17120-2098
+  voice: 717-783-2076
+  fax: 717-787-9175
+  classification: capitol
+- address: 236 Locust Street Columbia, PA 17512
+  voice: 717-684-5525
+  fax: 717-684-2538
+  classification: district
+  name: 'District Office #1'

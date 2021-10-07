@@ -11,14 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '19'
-contact_details:
-- note: Capitol Office
-  address: 271-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8400
-  fax: 217-557-1934
-- note: District Office
-  address: 6315 N. Milwaukee Ave.;1st Fl;Chicago, IL 60646
-  voice: 773-647-1174
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2771
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2972
@@ -27,3 +19,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2771
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2972
+offices:
+- address: 271-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8400
+  fax: 217-557-1934
+  classification: capitol
+- address: 6315 N. Milwaukee Ave.;1st Fl;Chicago, IL 60646
+  voice: 773-647-1174
+  classification: district
+  name: 'District Office #1'

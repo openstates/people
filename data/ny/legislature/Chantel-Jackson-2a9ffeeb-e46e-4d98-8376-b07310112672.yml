@@ -9,13 +9,14 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '79'
-contact_details:
-- note: District Office
-  address: 780 Concourse Village West; Ground Fl. Professional; Bronx, NY 10451
-  voice: 718-538-3829
-- note: Capitol Office
-  voice: 518-455-5272
 links:
 - url: https://assembly.state.ny.us/mem/Chantel-Jackson
 sources:
 - url: https://assembly.state.ny.us/mem/Chantel-Jackson
+offices:
+- address: 780 Concourse Village West; Ground Fl. Professional; Bronx, NY 10451
+  voice: 718-538-3829
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5272
+  classification: capitol

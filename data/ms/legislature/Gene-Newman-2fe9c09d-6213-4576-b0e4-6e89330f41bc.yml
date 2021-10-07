@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '61'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 801 Country place Drive;Pearl, MS 39208
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/newman.xml
 sources:
@@ -22,3 +17,9 @@ sources:
 extras:
   org_info: Representative Newman is affiliated with the Pearl Chamber of Commerce
     and Pearl Kiwanis.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 801 Country place Drive;Pearl, MS 39208
+  classification: district
+  name: 'District Office #1'

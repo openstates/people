@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '63'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1309;Raleigh, NC 27601-1096
-  voice: 919-733-5820
-- note: District Office
-  address: PO Box 593;Mebane, NC 27302
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/781
 sources:
@@ -25,3 +19,10 @@ extras:
   counties:
   - Alamance
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1309;Raleigh, NC 27601-1096
+  voice: 919-733-5820
+  classification: capitol
+- address: PO Box 593;Mebane, NC 27302
+  classification: district
+  name: 'District Office #1'

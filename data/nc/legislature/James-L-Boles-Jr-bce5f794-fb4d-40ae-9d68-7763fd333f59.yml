@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '52'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 528;Raleigh, NC 27603-5925
-  voice: 919-733-5903
-- note: District Office
-  address: 425 W Pennsylvania Ave;Southern Pines, NC 28387
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/581
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Moore
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 528;Raleigh, NC 27603-5925
+  voice: 919-733-5903
+  classification: capitol
+- address: 425 W Pennsylvania Ave;Southern Pines, NC 28387
+  classification: district
+  name: 'District Office #1'

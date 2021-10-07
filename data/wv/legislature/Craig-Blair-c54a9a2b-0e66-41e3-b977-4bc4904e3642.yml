@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: Room 229M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7801
-- note: District Office
-  address: 47 Wasser Drive;Martinsburg, WV 25403
-  voice: 304-754-5040
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Blair
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000147
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Blair
+offices:
+- address: Room 229M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7801
+  classification: capitol
+- address: 47 Wasser Drive;Martinsburg, WV 25403
+  voice: 304-754-5040
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '6'
-contact_details:
-- note: District Office
-  address: 11886 - 320th St, Manning, IA 51455
-  voice: 712-790-8927
-- note: Capitol Office
-  voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30545
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30545
+offices:
+- address: 11886 - 320th St, Manning, IA 51455
+  voice: 712-790-8927
+  classification: district
+  name: 'District Office #1'
+- voice: 515-281-3371
+  classification: capitol

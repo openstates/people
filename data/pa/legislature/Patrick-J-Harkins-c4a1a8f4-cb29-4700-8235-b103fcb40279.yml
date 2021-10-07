@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: 202 Irvis Office Building P.O. Box 202001 Harrisburg, PA 17120-2001
-  voice: 717-787-7406
-  fax: 717-780-4775
-- note: District Office
-  address: 460 E 26th Street Erie, PA 16504
-  voice: 814-459-1949
-  fax: 814-871-4854
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1081
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -29,3 +20,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1081
 extras:
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgV_GcfsgVUt0PwAXkAWeMvn
+offices:
+- address: 202 Irvis Office Building P.O. Box 202001 Harrisburg, PA 17120-2001
+  voice: 717-787-7406
+  fax: 717-780-4775
+  classification: capitol
+- address: 460 E 26th Street Erie, PA 16504
+  voice: 814-459-1949
+  fax: 814-871-4854
+  classification: district
+  name: 'District Office #1'

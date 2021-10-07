@@ -10,16 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0003
-  voice: 916-319-2003
-- note: District Office
-  address: 2060 Talbert Drive, Suite 110;Chico, CA 95928
-  voice: 530-895-4217
-- note: District Office
-  address: 1130 Civic Center Boulevard, Suite F;Yuba City, CA 95993
-  voice: 530-671-0303
 links:
 - url: http://ad03.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD03&inframe=N
@@ -29,3 +19,15 @@ other_identifiers:
   identifier: CAL000458
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0003
+  voice: 916-319-2003
+  classification: capitol
+- address: 2060 Talbert Drive, Suite 110;Chico, CA 95928
+  voice: 530-895-4217
+  classification: district
+  name: 'District Office #1'
+- address: 1130 Civic Center Boulevard, Suite F;Yuba City, CA 95993
+  voice: 530-671-0303
+  classification: district
+  name: 'District Office #2'

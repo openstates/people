@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  voice: 701-255-0812
-  fax: 701-255-7247
-- note: District Office
-  address: 4604 Borden Harbor Drive SE;Mandan, ND;58554-7961
-  voice: 701-667-2922
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-todd-porter
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-todd-porter
@@ -32,3 +25,11 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-todd-porter
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-todd-porter
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-todd-porter
+offices:
+- voice: 701-255-0812
+  fax: 701-255-7247
+  classification: capitol
+- address: 4604 Borden Harbor Drive SE;Mandan, ND;58554-7961
+  voice: 701-667-2922
+  classification: district
+  name: 'District Office #1'

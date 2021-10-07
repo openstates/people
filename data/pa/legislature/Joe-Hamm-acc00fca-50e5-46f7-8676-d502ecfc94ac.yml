@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '84'
-contact_details:
-- note: District Office
-  address: 274 Broad Street Montoursville, PA 17754
-  voice: 570-546-2084
-  fax: 570-546-5520
-- note: Capitol Office
-  address: 431 Irvis Office Building P.O. Box 202084 Harrisburg, PA 17120-2084
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1904
+offices:
+- address: 274 Broad Street Montoursville, PA 17754
+  voice: 570-546-2084
+  fax: 570-546-5520
+  classification: district
+  name: 'District Office #1'
+- address: 431 Irvis Office Building P.O. Box 202084 Harrisburg, PA 17120-2084
+  classification: capitol

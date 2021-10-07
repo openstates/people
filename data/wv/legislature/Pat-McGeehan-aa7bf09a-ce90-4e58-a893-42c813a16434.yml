@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: Room 226E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3397
-- note: District Office
-  address: 616 Florida Avenue;Chester, WV 26034
-  voice: 304-374-7018
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McGeehan
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000291
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+McGeehan
+offices:
+- address: Room 226E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3397
+  classification: capitol
+- address: 616 Florida Avenue;Chester, WV 26034
+  voice: 304-374-7018
+  classification: district
+  name: 'District Office #1'

@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
   district: '29'
-contact_details:
-- note: Capitol Office
-  address: 2300 N. Lincoln Blvd., Rm. 415 Oklahoma City, OK 73105
-  voice: 405-521-5634
-- note: District Office
-  address: 2191 Kyle Road;Bartlesville, OK 74006
-  voice: 918-331-7267
 links:
 - url: http://oksenate.gov/Senators/biographies/daniels_bio.aspx
 - url: https://oksenate.gov/contact-senator?sid=1846
@@ -28,3 +21,11 @@ sources:
 - url: http://oksenate.gov/Senators/biographies/daniels_bio.html
 extras:
   email: daniels@oksenate.gov
+offices:
+- address: 2300 N. Lincoln Blvd., Rm. 415 Oklahoma City, OK 73105
+  voice: 405-521-5634
+  classification: capitol
+- address: 2191 Kyle Road;Bartlesville, OK 74006
+  voice: 918-331-7267
+  classification: district
+  name: 'District Office #1'

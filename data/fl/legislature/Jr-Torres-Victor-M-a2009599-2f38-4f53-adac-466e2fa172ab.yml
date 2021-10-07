@@ -11,12 +11,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '15'
-contact_details:
-- note: District Office
-  address: 101 Church Street; Suite 305; Kissimmee, FL 34741
-  fax: 850-410-4817
-- note: Capitol Office
-  address: 226 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
 links:
 - url: http://www.flsenate.gov/Senators/s15
 other_identifiers:
@@ -29,3 +23,10 @@ other_identifiers:
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s15
+offices:
+- address: 101 Church Street; Suite 305; Kissimmee, FL 34741
+  fax: 850-410-4817
+  classification: district
+  name: 'District Office #1'
+- address: 226 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  classification: capitol

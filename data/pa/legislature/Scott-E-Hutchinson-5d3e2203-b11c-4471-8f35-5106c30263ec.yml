@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203021;Harrisburg, PA 17120-3021;Room:;170 Main Capitol
-  voice: 717-787-9684
-  fax: 717-787-6088
-- note: District Office
-  address: 22045 Route 6;Warren, PA 16365-7952
-  voice: 814-728-2100
-  fax: 814-728-2102
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1629
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -34,3 +25,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/SenatorScottEHutchinson
   twitter: https://twitter.com/SenHutchinson
+offices:
+- address: Senate Box 203021;Harrisburg, PA 17120-3021;Room:;170 Main Capitol
+  voice: 717-787-9684
+  fax: 717-787-6088
+  classification: capitol
+- address: 22045 Route 6;Warren, PA 16365-7952
+  voice: 814-728-2100
+  fax: 814-728-2102
+  classification: district
+  name: 'District Office #1'

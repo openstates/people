@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0051
-  voice: 916-319-2051
-- note: District Office
-  address: 1910 West Sunset Boulevard, Suite 810;Los Angeles, CA 90026
-  voice: 213-483-5151
 links:
 - url: https://a51.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD51&inframe=N
@@ -28,3 +21,11 @@ sources:
 - url: http://assembly.ca.gov/assemblymembers
 other_names:
 - name: Wendy Carillo
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0051
+  voice: 916-319-2051
+  classification: capitol
+- address: 1910 West Sunset Boulevard, Suite 810;Los Angeles, CA 90026
+  voice: 213-483-5151
+  classification: district
+  name: 'District Office #1'

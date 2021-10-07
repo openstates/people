@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: LOB 619; Albany, NY 12248
-  voice: 518-455-4465
-- note: District Office
-  address: 1690 Central Court; Valley Stream, NY 11580
-  voice: 516-599-2972
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Michaelle-C-Solages
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Michaelle-C-Solages
 - url: https://assembly.state.ny.us/mem/Michaelle-C-Solages
+offices:
+- address: LOB 619; Albany, NY 12248
+  voice: 518-455-4465
+  classification: capitol
+- address: 1690 Central Court; Valley Stream, NY 11580
+  voice: 516-599-2972
+  classification: district
+  name: 'District Office #1'

@@ -10,15 +10,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '3'
-contact_details:
-- note: District Office
-  address: 90-B West Main St.,;Patchogue,, NY 11772
-  voice: 631-360-3356
-- note: Capitol Office
-  address: 188 State Street;Albany,, NY 12247
-  voice: 518-455-2950
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/alexis-weik/contact
 sources:
 - url: http://www.nysenate.gov/senators/alexis-weik/contact
+offices:
+- address: 90-B West Main St.,;Patchogue,, NY 11772
+  voice: 631-360-3356
+  classification: district
+  name: 'District Office #1'
+- address: 188 State Street;Albany,, NY 12247
+  voice: 518-455-2950
+  classification: capitol

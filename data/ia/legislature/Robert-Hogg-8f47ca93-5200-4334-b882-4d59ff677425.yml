@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '33'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: PO Box 1361, Cedar Rapids, IA 52406
-  voice: 319-247-0223
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6257
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6257
@@ -29,3 +23,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6257
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6257
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: PO Box 1361, Cedar Rapids, IA 52406
+  voice: 319-247-0223
+  classification: district
+  name: 'District Office #1'

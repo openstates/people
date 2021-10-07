@@ -115,22 +115,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: KY-5
-contact_details:
-- note: Capitol Office
-  address: 2406 Rayburn House Office Building Washington DC 20515-1705
-  voice: 202-225-4601
-- note: District Office
-  address: 48 S. KY Hwy. 15; Hazard, KY 41701
-  voice: 606-439-0794
-  fax: 606-439-4647
-- note: District Office
-  address: 110 Resource Ct. Suite A; Prestonsburg, KY 41653
-  voice: 606-886-0844
-  fax: 606-889-0371
-- note: District Office
-  address: 551 Clifty St.; Somerset, KY 42503
-  voice: 800-632-8588
-  fax: 606-678-4856
 links:
 - url: https://halrogers.house.gov
   note: website
@@ -169,3 +153,22 @@ other_identifiers:
   identifier: kg:/m/025jnx
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2406 Rayburn House Office Building Washington DC 20515-1705
+  voice: 202-225-4601
+  classification: capitol
+- address: 48 S. KY Hwy. 15; Hazard, KY 41701
+  voice: 606-439-0794
+  fax: 606-439-4647
+  classification: district
+  name: 'District Office #1'
+- address: 110 Resource Ct. Suite A; Prestonsburg, KY 41653
+  voice: 606-886-0844
+  fax: 606-889-0371
+  classification: district
+  name: 'District Office #2'
+- address: 551 Clifty St.; Somerset, KY 42503
+  voice: 800-632-8588
+  fax: 606-678-4856
+  classification: district
+  name: 'District Office #3'

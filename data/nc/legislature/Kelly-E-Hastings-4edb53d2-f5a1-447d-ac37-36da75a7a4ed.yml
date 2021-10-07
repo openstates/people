@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '110'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2208;Raleigh, NC 27601-1096
-  voice: 919-715-2002
-- note: District Office
-  address: PO Box 488;Cherryville, NC 28021
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/618
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Cleveland
   - Gaston
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 2208;Raleigh, NC 27601-1096
+  voice: 919-715-2002
+  classification: capitol
+- address: PO Box 488;Cherryville, NC 28021
+  classification: district
+  name: 'District Office #1'

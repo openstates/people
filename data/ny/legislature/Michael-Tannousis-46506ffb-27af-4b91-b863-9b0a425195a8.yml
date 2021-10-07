@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '64'
-contact_details:
-- note: District Office
-  address: 11 Maplewood Place; Staten Island, NY 10306
-  voice: 718-987-0197
-- note: Capitol Office
-  address: LOB 543; Albany, NY 12248
-  voice: 518-455-5716
 links:
 - url: https://assembly.state.ny.us/mem/Michael-Tannousis
 sources:
 - url: https://assembly.state.ny.us/mem/Michael-Tannousis
+offices:
+- address: 11 Maplewood Place; Staten Island, NY 10306
+  voice: 718-987-0197
+  classification: district
+  name: 'District Office #1'
+- address: LOB 543; Albany, NY 12248
+  voice: 518-455-5716
+  classification: capitol

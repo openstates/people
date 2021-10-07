@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203035;Harrisburg, PA 17120-3035;Room:;281 Main Capitol
-  voice: 717-787-5400
-  fax: 717-772-0573
-- note: District Office
-  address: 999 Eisenhower Boulevard Suite E;Johnstown, PA 15904
-  voice: 814-266-2277
-  fax: 814-266-0057
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1764
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -32,3 +23,13 @@ extras:
   facebook: https://www.facebook.com/senatorwaynelangerholcjr/
   instagram: https://www.instagram.com/senlangerholc/?hl=en
   twitter: https://twitter.com/senlangerholc
+offices:
+- address: Senate Box 203035;Harrisburg, PA 17120-3035;Room:;281 Main Capitol
+  voice: 717-787-5400
+  fax: 717-772-0573
+  classification: capitol
+- address: 999 Eisenhower Boulevard Suite E;Johnstown, PA 15904
+  voice: 814-266-2277
+  fax: 814-266-0057
+  classification: district
+  name: 'District Office #1'

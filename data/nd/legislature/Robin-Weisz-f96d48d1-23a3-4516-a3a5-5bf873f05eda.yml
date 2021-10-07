@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  voice: 701-962-3799
-- note: District Office
-  address: 2639 First Street SE;Hurdsfield, ND;58451-9029
-  voice: 701-962-3299
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-robin-weisz
@@ -31,3 +25,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-robin-weisz
+offices:
+- voice: 701-962-3799
+  classification: capitol
+- address: 2639 First Street SE;Hurdsfield, ND;58451-9029
+  voice: 701-962-3299
+  classification: district
+  name: 'District Office #1'

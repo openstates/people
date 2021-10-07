@@ -9,17 +9,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '114'
-contact_details:
-- note: Capitol Office
-  address: Room E2.320;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0576
-  fax: 512-463-7827
-- note: District Office
-  address: 10300 N. Central Expressway, Suite 198;Dallas, Texas 75231
-  voice: 214-234-7625
 links:
 - url: https://house.texas.gov/members/member-page/?district=114
 other_names:
 - name: Turner, John
 sources:
 - url: https://house.texas.gov/members/member-page/?district=114
+offices:
+- address: Room E2.320;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0576
+  fax: 512-463-7827
+  classification: capitol
+- address: 10300 N. Central Expressway, Suite 198;Dallas, Texas 75231
+  voice: 214-234-7625
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-2
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 1118 Clarendon Ave.;West Rutland, VT 05777
-  voice: 802-438-0031
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15771
 - url: http://legislature.vermont.gov/people/single/2022/15771
@@ -35,3 +29,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/15771
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15771
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 1118 Clarendon Ave.;West Rutland, VT 05777
+  voice: 802-438-0031
+  classification: district
+  name: 'District Office #1'

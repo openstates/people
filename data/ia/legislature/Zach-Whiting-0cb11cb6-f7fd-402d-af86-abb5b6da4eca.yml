@@ -10,14 +10,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: PO Box 385, Spirit Lake, IA 51360
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=26997
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=26997
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=26997
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=26997
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: PO Box 385, Spirit Lake, IA 51360
+  classification: district
+  name: 'District Office #1'

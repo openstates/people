@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3821
-- note: District Office
-  address: PO Box 312Vermillion, SD 57069
-  voice: 605-624-8723
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1506&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Profile/1847/Detail
@@ -29,3 +23,10 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1847/Detail
 extras:
   occupation: Retired Circuit Judge/Writer
+offices:
+- voice: 605-773-3821
+  classification: capitol
+- address: PO Box 312Vermillion, SD 57069
+  voice: 605-624-8723
+  classification: district
+  name: 'District Office #1'

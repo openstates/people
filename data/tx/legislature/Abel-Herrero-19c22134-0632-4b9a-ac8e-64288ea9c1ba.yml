@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  address: Room 4N.7;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0462
-  fax: 512-463-1705
-- note: District Office
-  address: 101 East Main Avenue;Robstown, Texas 78380
-  voice: 361-387-0457
 links:
 - url: https://house.texas.gov/members/member-page/?district=34
 other_identifiers:
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: TXL000605
 sources:
 - url: https://house.texas.gov/members/member-page/?district=34
+offices:
+- address: Room 4N.7;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0462
+  fax: 512-463-1705
+  classification: capitol
+- address: 101 East Main Avenue;Robstown, Texas 78380
+  voice: 361-387-0457
+  classification: district
+  name: 'District Office #1'

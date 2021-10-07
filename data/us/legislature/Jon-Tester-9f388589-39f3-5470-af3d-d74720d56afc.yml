@@ -25,38 +25,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Montana
-contact_details:
-- note: Capitol Office
-  address: 311 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-2644
-- note: District Office
-  address: 2900 4th Ave. N Suite 201; Billings, MT 59101
-  voice: 406-252-0550
-  fax: 406-252-7768
-- note: District Office
-  address: 1 E. Main St. Suite 202; Bozeman, MT 59715
-  voice: 406-586-4450
-  fax: 406-586-7647
-- note: District Office
-  address: 125 W. Granite Suite 200; Butte, MT 59701
-  voice: 406-723-3277
-  fax: 406-782-4717
-- note: District Office
-  address: 119 1st Ave. N Suite 102; Great Falls, MT 59401
-  voice: 402-452-9585
-  fax: 406-452-9586
-- note: District Office
-  address: 208 N. Montana Ave. Suite 202; Helena, MT 59601
-  voice: 406-449-5401
-  fax: 406-449-5462
-- note: District Office
-  address: 8 Third St. E; Kalispell, MT 59901
-  voice: 406-257-3360
-  fax: 406-257-3974
-- note: District Office
-  address: 130 W. Front St.; Missoula, MT 59802
-  voice: 406-728-3003
-  fax: 406-728-2193
 links:
 - url: https://www.tester.senate.gov
   note: website
@@ -97,3 +65,42 @@ other_identifiers:
   identifier: kg:/m/066cdp
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 311 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-2644
+  classification: capitol
+- address: 2900 4th Ave. N Suite 201; Billings, MT 59101
+  voice: 406-252-0550
+  fax: 406-252-7768
+  classification: district
+  name: 'District Office #1'
+- address: 1 E. Main St. Suite 202; Bozeman, MT 59715
+  voice: 406-586-4450
+  fax: 406-586-7647
+  classification: district
+  name: 'District Office #2'
+- address: 125 W. Granite Suite 200; Butte, MT 59701
+  voice: 406-723-3277
+  fax: 406-782-4717
+  classification: district
+  name: 'District Office #3'
+- address: 119 1st Ave. N Suite 102; Great Falls, MT 59401
+  voice: 402-452-9585
+  fax: 406-452-9586
+  classification: district
+  name: 'District Office #4'
+- address: 208 N. Montana Ave. Suite 202; Helena, MT 59601
+  voice: 406-449-5401
+  fax: 406-449-5462
+  classification: district
+  name: 'District Office #5'
+- address: 8 Third St. E; Kalispell, MT 59901
+  voice: 406-257-3360
+  fax: 406-257-3974
+  classification: district
+  name: 'District Office #6'
+- address: 130 W. Front St.; Missoula, MT 59802
+  voice: 406-728-3003
+  fax: 406-728-2193
+  classification: district
+  name: 'District Office #7'

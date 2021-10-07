@@ -30,22 +30,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: South Carolina
-contact_details:
-- note: Capitol Office
-  address: 104 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-6121
-- note: District Office
-  address: 1901 Main St. Suite 1425; Columbia, SC 29201
-  voice: 803-771-6112
-  fax: 855-802-9355
-- note: District Office
-  address: 104 S. Main St. Suite 803; Greenville, SC 29601
-  voice: 864-233-5366
-  fax: 855-802-9355
-- note: District Office
-  address: 2500 City Hall Ln. 3rd Floor Suite; North Charleston, SC 29406
-  voice: 843-727-4525
-  fax: 855-802-9355
 links:
 - url: https://www.scott.senate.gov
   note: website
@@ -90,3 +74,22 @@ other_identifiers:
   identifier: kg:/m/0c407g6
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 104 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-6121
+  classification: capitol
+- address: 1901 Main St. Suite 1425; Columbia, SC 29201
+  voice: 803-771-6112
+  fax: 855-802-9355
+  classification: district
+  name: 'District Office #1'
+- address: 104 S. Main St. Suite 803; Greenville, SC 29601
+  voice: 864-233-5366
+  fax: 855-802-9355
+  classification: district
+  name: 'District Office #2'
+- address: 2500 City Hall Ln. 3rd Floor Suite; North Charleston, SC 29406
+  voice: 843-727-4525
+  fax: 855-802-9355
+  classification: district
+  name: 'District Office #3'

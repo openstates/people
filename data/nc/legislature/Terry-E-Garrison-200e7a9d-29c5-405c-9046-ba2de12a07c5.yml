@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1209;Raleigh, NC 27601-1096
-  voice: 919-733-5824
-- note: District Office
-  address: PO Box 551;Henderson, NC 27536
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/718
 other_identifiers:
@@ -29,3 +23,10 @@ extras:
   - Vance
   - Warren
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1209;Raleigh, NC 27601-1096
+  voice: 919-733-5824
+  classification: capitol
+- address: PO Box 551;Henderson, NC 27536
+  classification: district
+  name: 'District Office #1'

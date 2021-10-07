@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '100'
-contact_details:
-- note: Capitol Office
-  address: 202-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-1840
-- note: District Office
-  address: 325 W. State Street, Suite 102;P.O. Box 160;Jacksonville, IL 62650
-  voice: 217-243-6221
-  fax: 217-245-2071
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2641
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2872
@@ -29,3 +21,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2641
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2872
+offices:
+- address: 202-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-1840
+  classification: capitol
+- address: 325 W. State Street, Suite 102;P.O. Box 160;Jacksonville, IL 62650
+  voice: 217-243-6221
+  fax: 217-245-2071
+  classification: district
+  name: 'District Office #1'

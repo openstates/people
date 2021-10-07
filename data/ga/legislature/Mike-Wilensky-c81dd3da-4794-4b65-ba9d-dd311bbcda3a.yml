@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '79'
-contact_details:
-- note: Capitol Office
-  address: 507-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0202
-- note: District Office
-  address: P.O. Box 88533; Dunwoody, GA 30356
-  voice: 678-791-1725
-  fax: 404-463-6381
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4944&Session=27
 - url: https://www.legis.ga.gov/members/house/4944?session=1029
@@ -39,3 +31,12 @@ extras:
   spouse: Amy
   staff: a href="
   staff email: ''
+offices:
+- address: 507-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0202
+  classification: capitol
+- address: P.O. Box 88533; Dunwoody, GA 30356
+  voice: 678-791-1725
+  fax: 404-463-6381
+  classification: district
+  name: 'District Office #1'

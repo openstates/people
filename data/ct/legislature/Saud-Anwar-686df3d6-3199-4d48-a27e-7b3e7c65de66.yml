@@ -9,15 +9,16 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 3300;Hartford, CT 06106
-  voice: 860-240-8600
-- note: District Office
-  address: 93 Rockledge Drive;South Windsor, CT 06074
 links:
 - url: http://www.senatedems.ct.gov/anwar
 other_names:
 - name: Anwar, Saud
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 3300;Hartford, CT 06106
+  voice: 860-240-8600
+  classification: capitol
+- address: 93 Rockledge Drive;South Windsor, CT 06074
+  classification: district
+  name: 'District Office #1'

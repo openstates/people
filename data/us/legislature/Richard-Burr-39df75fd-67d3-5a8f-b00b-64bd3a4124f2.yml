@@ -51,26 +51,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: North Carolina
-contact_details:
-- note: Capitol Office
-  address: 217 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-3154
-- note: District Office
-  address: 151 Patton Ave. Suite 204; Asheville, NC 28801
-  voice: 828-350-2437
-  fax: 828-350-2439
-- note: District Office
-  address: 100 Coast Line St. Room 210; Rocky Mount, NC 27804
-  voice: 252-977-9522
-  fax: 252-977-7902
-- note: District Office
-  address: 201 N. Front St. Suite 809; Wilmington, NC 28401
-  voice: 888-848-1833
-  fax: 910-251-7975
-- note: District Office
-  address: 2000 W. First St. Suite 508; Winston-Salem, NC 27104
-  voice: 336-631-5125
-  fax: 336-725-4493
 links:
 - url: https://www.burr.senate.gov
   note: website
@@ -115,3 +95,27 @@ other_identifiers:
   identifier: kg:/m/03g_s9
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 217 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-3154
+  classification: capitol
+- address: 151 Patton Ave. Suite 204; Asheville, NC 28801
+  voice: 828-350-2437
+  fax: 828-350-2439
+  classification: district
+  name: 'District Office #1'
+- address: 100 Coast Line St. Room 210; Rocky Mount, NC 27804
+  voice: 252-977-9522
+  fax: 252-977-7902
+  classification: district
+  name: 'District Office #2'
+- address: 201 N. Front St. Suite 809; Wilmington, NC 28401
+  voice: 888-848-1833
+  fax: 910-251-7975
+  classification: district
+  name: 'District Office #3'
+- address: 2000 W. First St. Suite 508; Winston-Salem, NC 27104
+  voice: 336-631-5125
+  fax: 336-725-4493
+  classification: district
+  name: 'District Office #4'

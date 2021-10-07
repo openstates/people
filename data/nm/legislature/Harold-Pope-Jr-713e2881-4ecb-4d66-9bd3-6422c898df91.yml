@@ -8,13 +8,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '23'
-contact_details:
-- note: District Office
-  address: P.O. Box 65692;Albuquerque, NM 87193
-  voice: 505-289-1087
-- note: Capitol Office
-  voice: 505-397-8843
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPOPE
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPOPE
+offices:
+- address: P.O. Box 65692;Albuquerque, NM 87193
+  voice: 505-289-1087
+  classification: district
+  name: 'District Office #1'
+- voice: 505-397-8843
+  classification: capitol

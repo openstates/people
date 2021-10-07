@@ -20,18 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-4
-contact_details:
-- note: Capitol Office
-  address: 120 Cannon House Office Building Washington DC 20515-3804
-  voice: 202-225-4731
-- note: District Office
-  address: 115 E Glenside Ave Suite 1; Glenside, PA 19038-4618
-  voice: 215-884-4300
-  fax: 215-884-3640
-- note: District Office
-  address: 101 E Main St A; Norristown, PA 19401-4916
-  voice: 610-382-1250
-  fax: 610-275-1759
 links:
 - url: https://dean.house.gov
   note: website
@@ -60,3 +48,17 @@ other_identifiers:
   identifier: Madeleine Dean
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 120 Cannon House Office Building Washington DC 20515-3804
+  voice: 202-225-4731
+  classification: capitol
+- address: 115 E Glenside Ave Suite 1; Glenside, PA 19038-4618
+  voice: 215-884-4300
+  fax: 215-884-3640
+  classification: district
+  name: 'District Office #1'
+- address: 101 E Main St A; Norristown, PA 19401-4916
+  voice: 610-382-1250
+  fax: 610-275-1759
+  classification: district
+  name: 'District Office #2'

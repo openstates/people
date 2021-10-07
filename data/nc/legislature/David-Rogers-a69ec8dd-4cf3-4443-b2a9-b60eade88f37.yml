@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '112'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 418C;Raleigh, NC 27603-5925
-  voice: 919-733-5749
-- note: District Office
-  address: PO Box 469;Rutherfordton, NC 28139
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/707
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Burke
   - Rutherford
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 418C;Raleigh, NC 27603-5925
+  voice: 919-733-5749
+  classification: capitol
+- address: PO Box 469;Rutherfordton, NC 28139
+  classification: district
+  name: 'District Office #1'

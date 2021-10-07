@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2439
-- note: District Office
-  address: 3731 Stovall Rd;Clarksdale, MS 38614
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/paden.xml
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
     E Henry Health Service Board, NAACP, Nat'l and Southern Assoc. of Student Employment
     Administrators, ASPIRE, Clarksdale Revitalization Inc., and Jonestown Family Center
     of Education and Wellness Church of God in Christ.
+offices:
+- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-2439
+  classification: capitol
+- address: 3731 Stovall Rd;Clarksdale, MS 38614
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: 25A East Wing P.O. Box 202021 Harrisburg, PA 17120-2021
-  voice: 717-783-9114
-  fax: 717-780-4761
-- note: District Office
-  address: 5154 Butler Street Pittsburgh, PA 15201
-  voice: 412-781-2750
-  fax: 412-781-2892
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1824
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -28,3 +19,13 @@ extras:
   facebook: https://www.facebook.com/RepInnamorato
   twitter: https://www.twitter.com/RepInnamorato
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgUqNgsWvQ0h8IpapUjsp0Qe
+offices:
+- address: 25A East Wing P.O. Box 202021 Harrisburg, PA 17120-2021
+  voice: 717-783-9114
+  fax: 717-780-4761
+  classification: capitol
+- address: 5154 Butler Street Pittsburgh, PA 15201
+  voice: 412-781-2750
+  fax: 412-781-2892
+  classification: district
+  name: 'District Office #1'

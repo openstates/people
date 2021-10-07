@@ -116,22 +116,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NJ-4
-contact_details:
-- note: Capitol Office
-  address: 2373 Rayburn House Office Building Washington DC 20515-3004
-  voice: 202-225-3765
-- note: District Office
-  address: 112 Village Center Dr. Second Floor; Freehold, NJ 07728
-  voice: 732-780-3035
-  fax: 732-780-3079
-- note: District Office
-  address: 4573 S. Broad St.; Hamilton, NJ 08620
-  voice: 609-585-7878
-  fax: 609-585-9155
-- note: District Office
-  address: 405 Route 539 (Pinehurst Rd.); Plumsted, NJ 08514
-  voice: 609-585-7878
-  fax: 609-585-9155
 links:
 - url: https://chrissmith.house.gov
   note: website
@@ -169,3 +153,22 @@ other_identifiers:
   identifier: Chris Smith (New Jersey)
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2373 Rayburn House Office Building Washington DC 20515-3004
+  voice: 202-225-3765
+  classification: capitol
+- address: 112 Village Center Dr. Second Floor; Freehold, NJ 07728
+  voice: 732-780-3035
+  fax: 732-780-3079
+  classification: district
+  name: 'District Office #1'
+- address: 4573 S. Broad St.; Hamilton, NJ 08620
+  voice: 609-585-7878
+  fax: 609-585-9155
+  classification: district
+  name: 'District Office #2'
+- address: 405 Route 539 (Pinehurst Rd.); Plumsted, NJ 08514
+  voice: 609-585-7878
+  fax: 609-585-9155
+  classification: district
+  name: 'District Office #3'

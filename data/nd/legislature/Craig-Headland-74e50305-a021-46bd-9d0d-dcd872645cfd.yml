@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '29'
-contact_details:
-- note: Capitol Office
-  voice: 701-269-2230
-- note: District Office
-  address: 4950 92nd Avenue SE;Montpelier, ND;58472-9630
-  voice: 701-489-3184
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-craig-headland
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-craig-headland
@@ -31,3 +25,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-craig-headland
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-craig-headland
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-craig-headland
+offices:
+- voice: 701-269-2230
+  classification: capitol
+- address: 4950 92nd Avenue SE;Montpelier, ND;58472-9630
+  voice: 701-489-3184
+  classification: district
+  name: 'District Office #1'

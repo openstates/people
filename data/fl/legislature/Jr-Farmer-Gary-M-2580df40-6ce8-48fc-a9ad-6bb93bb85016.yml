@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  address: 216 Senate Building;404 South Monroe Street;Tallahassee, FL 32399-1100
-  voice: 850-487-5034
-- note: District Office
-  address: Broward College Campus;111 East Las Olas Boulevard;Suite 913;Fort Lauderdale,
-    FL 33301
-  voice: 954-467-4227
 links:
 - url: http://www.flsenate.gov/Senators/s34
 other_identifiers:
@@ -26,3 +18,12 @@ other_identifiers:
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s34
+offices:
+- address: 216 Senate Building;404 South Monroe Street;Tallahassee, FL 32399-1100
+  voice: 850-487-5034
+  classification: capitol
+- address: Broward College Campus;111 East Las Olas Boulevard;Suite 913;Fort Lauderdale,
+    FL 33301
+  voice: 954-467-4227
+  classification: district
+  name: 'District Office #1'

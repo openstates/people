@@ -25,16 +25,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: DE-AL
-contact_details:
-- note: Capitol Office
-  address: 1724 Longworth House Office Building Washington DC 20515-0800
-  voice: 202-225-4165
-- note: District Office
-  address: 1105 N. Market St. Suite 400; Wilmington, DE 19801
-  voice: 302-830-2330
-- note: District Office
-  address: 28 The Circle Suite 2; Georgetown, DE 19947
-  voice: 302-858-4773
 links:
 - url: https://bluntrochester.house.gov
   note: website
@@ -68,3 +58,15 @@ other_identifiers:
   identifier: Lisa Blunt Rochester
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1724 Longworth House Office Building Washington DC 20515-0800
+  voice: 202-225-4165
+  classification: capitol
+- address: 1105 N. Market St. Suite 400; Wilmington, DE 19801
+  voice: 302-830-2330
+  classification: district
+  name: 'District Office #1'
+- address: 28 The Circle Suite 2; Georgetown, DE 19947
+  voice: 302-858-4773
+  classification: district
+  name: 'District Office #2'

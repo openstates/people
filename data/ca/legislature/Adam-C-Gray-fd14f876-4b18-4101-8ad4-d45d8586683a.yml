@@ -11,16 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0021
-  voice: 916-319-2021
-- note: District Office
-  address: 690 West 16th Street;Merced, CA 95340
-  voice: 209-726-5465
-- note: District Office
-  address: 1010 Tenth Street, Suite 5800;Modesto, CA 95354
-  voice: 209-521-2111
 links:
 - url: https://a21.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD21&inframe=N
@@ -36,3 +26,15 @@ other_identifiers:
   identifier: ocd-person/2908ac44-db9d-4a91-901d-6b26fb9dded2
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0021
+  voice: 916-319-2021
+  classification: capitol
+- address: 690 West 16th Street;Merced, CA 95340
+  voice: 209-726-5465
+  classification: district
+  name: 'District Office #1'
+- address: 1010 Tenth Street, Suite 5800;Modesto, CA 95354
+  voice: 209-521-2111
+  classification: district
+  name: 'District Office #2'

@@ -21,13 +21,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IN-4
-contact_details:
-- note: Capitol Office
-  address: 1314 Longworth House Office Building Washington DC 20515-1404
-  voice: 202-225-5037
-- note: District Office
-  address: 355 S Washington St Suite 210; Danville, IN 46122-1779
-  voice: 317-563-5567
 links:
 - url: https://baird.house.gov
   note: website
@@ -56,3 +49,11 @@ other_identifiers:
   identifier: kg:/g/11gfd5wndr
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1314 Longworth House Office Building Washington DC 20515-1404
+  voice: 202-225-5037
+  classification: capitol
+- address: 355 S Washington St Suite 210; Danville, IN 46122-1779
+  voice: 317-563-5567
+  classification: district
+  name: 'District Office #1'

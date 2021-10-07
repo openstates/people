@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '82'
-contact_details:
-- note: Capitol Office
-  address: LOB 836; Albany, NY 12248
-  voice: 518-455-5296
-- note: District Office
-  address: 3602 E. Tremont Ave.; Suite 201; Bronx, NY 10465
-  voice: 718-892-2235
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Michael-Benedetto
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Michael-Benedetto
 - url: https://assembly.state.ny.us/mem/Michael-Benedetto
+offices:
+- address: LOB 836; Albany, NY 12248
+  voice: 518-455-5296
+  classification: capitol
+- address: 3602 E. Tremont Ave.; Suite 201; Bronx, NY 10465
+  voice: 718-892-2235
+  classification: district
+  name: 'District Office #1'

@@ -11,12 +11,13 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '33'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1313
-- note: District Office
-  address: 1186 Caysie Cir, Idaho Falls, ID, 83402
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=33
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
+offices:
+- voice: 208-332-1313
+  classification: capitol
+- address: 1186 Caysie Cir, Idaho Falls, ID, 83402
+  classification: district
+  name: 'District Office #1'

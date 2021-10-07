@@ -9,12 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2705;Hartford, CT 06106
-  voice: 860-240-8800
-- note: District Office
-  address: 11 South Lee Road;Niantic, CT 06357
 links:
 - url: http://www.ctsenaterepublicans.com/home-Formica
 other_names:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: CTL000298
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2705;Hartford, CT 06106
+  voice: 860-240-8800
+  classification: capitol
+- address: 11 South Lee Road;Niantic, CT 06357
+  classification: district
+  name: 'District Office #1'

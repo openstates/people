@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '7'
-contact_details:
-- note: Capitol Office
-  address: 404A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6954
-- note: District Office
-  address: 402 Brown Ave., Belton, SC 29627
-- note: Primary Office
-  voice: 864-260-4025
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1903408863
 other_names:
@@ -27,3 +19,12 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1903408863
+offices:
+- address: 404A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6954
+  classification: capitol
+- address: 402 Brown Ave., Belton, SC 29627
+  classification: district
+  name: 'District Office #1'
+- voice: 864-260-4025
+  classification: primary

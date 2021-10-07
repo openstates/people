@@ -15,12 +15,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '119'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 418A1;Raleigh, NC 27603-5925
-  voice: 919-715-3005
-- note: District Office
-  address: PO Box 386;Bryson City, NC 28713
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/715
 other_identifiers:
@@ -33,3 +27,10 @@ extras:
   - Haywood
   - Jackson
   - Swain
+offices:
+- address: 300 N. Salisbury Street, Rm. 418A1;Raleigh, NC 27603-5925
+  voice: 919-715-3005
+  classification: capitol
+- address: PO Box 386;Bryson City, NC 28713
+  classification: district
+  name: 'District Office #1'

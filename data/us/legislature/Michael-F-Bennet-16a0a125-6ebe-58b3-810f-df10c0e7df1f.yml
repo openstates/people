@@ -26,34 +26,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Colorado
-contact_details:
-- note: Capitol Office
-  address: 261 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-5852
-- note: District Office
-  address: 609 Main St. Suite 110; Alamosa, CO 81101
-  voice: 719-587-0096
-- note: District Office
-  address: 409 N. Tejon St. Suite 107; Colorado Springs, CO 80903
-  voice: 719-328-1100
-  fax: 719-328-1129
-- note: District Office
-  address: 1244 Speer Blvd.; Denver, CO 80204
-  voice: 303-455-7600
-  fax: 303-455-8851
-- note: District Office
-  address: 835 E. 2nd Ave. Suite 206; Durango, CO 81301
-  voice: 970-259-1710
-- note: District Office
-  address: 1200 S. College Ave. Suite 211; Fort Collins, CO 80524
-  voice: 970-224-2200
-  fax: 970-224-2205
-- note: District Office
-  address: 225 N. 5th St. Suite 511; Grand Junction, CO 81501
-  voice: 970-241-6631
-- note: District Office
-  address: 129 W. B St.; Pueblo, CO 81003
-  voice: 719-542-7550
 links:
 - url: https://www.bennet.senate.gov/public
   note: website
@@ -94,3 +66,38 @@ other_identifiers:
   identifier: kg:/m/05b60qf
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 261 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-5852
+  classification: capitol
+- address: 609 Main St. Suite 110; Alamosa, CO 81101
+  voice: 719-587-0096
+  classification: district
+  name: 'District Office #1'
+- address: 409 N. Tejon St. Suite 107; Colorado Springs, CO 80903
+  voice: 719-328-1100
+  fax: 719-328-1129
+  classification: district
+  name: 'District Office #2'
+- address: 1244 Speer Blvd.; Denver, CO 80204
+  voice: 303-455-7600
+  fax: 303-455-8851
+  classification: district
+  name: 'District Office #3'
+- address: 835 E. 2nd Ave. Suite 206; Durango, CO 81301
+  voice: 970-259-1710
+  classification: district
+  name: 'District Office #4'
+- address: 1200 S. College Ave. Suite 211; Fort Collins, CO 80524
+  voice: 970-224-2200
+  fax: 970-224-2205
+  classification: district
+  name: 'District Office #5'
+- address: 225 N. 5th St. Suite 511; Grand Junction, CO 81501
+  voice: 970-241-6631
+  classification: district
+  name: 'District Office #6'
+- address: 129 W. B St.; Pueblo, CO 81003
+  voice: 719-542-7550
+  classification: district
+  name: 'District Office #7'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: LOB 526; Albany, NY 12248
-  voice: 518-455-5806
-- note: District Office
-  address: 185-06 Union Turnpike; Fresh Meadows, NY 11366
-  voice: 718-454-3027
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/David-I-Weprin
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/David-I-Weprin
 - url: https://assembly.state.ny.us/mem/David-I-Weprin
+offices:
+- address: LOB 526; Albany, NY 12248
+  voice: 518-455-5806
+  classification: capitol
+- address: 185-06 Union Turnpike; Fresh Meadows, NY 11366
+  voice: 718-454-3027
+  classification: district
+  name: 'District Office #1'

@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '23'
-contact_details:
-- note: Capitol Office
-  address: 229-E Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-5280
-- note: District Office
-  address: 1 Riverside Road;Suite 204 A;Riverside, IL 60546
-  voice: 708-442-6500
-  fax: 708-442-6501
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2573
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2819
@@ -37,3 +29,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2573
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2819
+offices:
+- address: 229-E Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-5280
+  classification: capitol
+- address: 1 Riverside Road;Suite 204 A;Riverside, IL 60546
+  voice: 708-442-6500
+  fax: 708-442-6501
+  classification: district
+  name: 'District Office #1'

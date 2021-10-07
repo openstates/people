@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '40'
-contact_details:
-- note: Capitol Office
-  address: 210 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5040
-- note: District Office
-  address: 9100 South Dadeland Boulevard; Suite 1500; Miami, FL 33156
-  voice: 305-596-3003
 links:
 - url: http://www.flsenate.gov/Senators/s40
 - url: http://www.flsenate.gov/Senators/2018-2020/S40
@@ -27,3 +20,11 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s40
 - url: http://www.flsenate.gov/Senators/2018-2020/S40
+offices:
+- address: 210 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5040
+  classification: capitol
+- address: 9100 South Dadeland Boulevard; Suite 1500; Miami, FL 33156
+  voice: 305-596-3003
+  classification: district
+  name: 'District Office #1'

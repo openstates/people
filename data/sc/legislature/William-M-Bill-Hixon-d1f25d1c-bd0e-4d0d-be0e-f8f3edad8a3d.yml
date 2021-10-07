@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '83'
-contact_details:
-- note: Capitol Office
-  address: 416A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6898
-- note: District Office
-  address: P.O. Box 7927, North Augusta, SC 29861
-  voice: 803-278-0892
-- note: Primary Office
-  voice: 803-279-8855
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0849715808
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0849715808
+offices:
+- address: 416A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6898
+  classification: capitol
+- address: P.O. Box 7927, North Augusta, SC 29861
+  voice: 803-278-0892
+  classification: district
+  name: 'District Office #1'
+- voice: 803-279-8855
+  classification: primary

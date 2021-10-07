@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '159'
-contact_details:
-- note: Capitol Office
-  address: 300 Irvis Office Building P.O. Box 202159 Harrisburg, PA 17120-2159
-  voice: 717-787-5881
-  fax: 717-780-4762
-- note: District Office
-  address: 401 Avenue of the States Chester, PA 19013
-  voice: 610-876-6420
-  fax: 610-447-3004
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1756
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1756
+offices:
+- address: 300 Irvis Office Building P.O. Box 202159 Harrisburg, PA 17120-2159
+  voice: 717-787-5881
+  fax: 717-780-4762
+  classification: capitol
+- address: 401 Avenue of the States Chester, PA 19013
+  voice: 610-876-6420
+  fax: 610-447-3004
+  classification: district
+  name: 'District Office #1'

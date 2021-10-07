@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203004;Harrisburg, PA 17120-3004;Room:;10 East Wing
-  voice: 717-787-1427
-  fax: 717-772-0572
-- note: District Office
-  address: 7106 Germantown Avenue Philadelphia, PA 19119
-  voice: 215-242-8171
-  fax: 215-242-6118
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1689
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -33,3 +24,13 @@ sources:
 extras:
   facebook: http://www.facebook.com/SenatorArtHaywood
   twitter: http://www.twitter.com/SenatorHaywood
+offices:
+- address: Senate Box 203004;Harrisburg, PA 17120-3004;Room:;10 East Wing
+  voice: 717-787-1427
+  fax: 717-772-0572
+  classification: capitol
+- address: 7106 Germantown Avenue Philadelphia, PA 19119
+  voice: 215-242-8171
+  fax: 215-242-6118
+  classification: district
+  name: 'District Office #1'

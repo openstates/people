@@ -13,13 +13,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '42'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0042
-  voice: 916-319-2042
-- note: District Office
-  address: 41608 Indian Trail Road, Suite D-1;Rancho Mirage, CA 92270
-  voice: 760-346-6342
 links:
 - url: https://www.assembly.ca.gov/assemblymemberchadmayes
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD42&inframe=N
@@ -29,3 +22,11 @@ other_identifiers:
   identifier: CAL000478
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0042
+  voice: 916-319-2042
+  classification: capitol
+- address: 41608 Indian Trail Road, Suite D-1;Rancho Mirage, CA 92270
+  voice: 760-346-6342
+  classification: district
+  name: 'District Office #1'

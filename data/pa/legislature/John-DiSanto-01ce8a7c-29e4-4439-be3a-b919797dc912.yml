@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203015;Harrisburg, PA 17120-3015;Room:;168 Main Capitol
-  voice: 717-787-6801
-  fax: 717-783-3722
-- note: District Office
-  address: 7 West Main Street PO Box 236;New Bloomfield, PA 17068
-  voice: 717-582-2454
-  fax: 717-582-2487
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1765
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: http://www.facebook.com/SenatorDiSanto
   twitter: http://twitter.com/SenatorDiSanto
+offices:
+- address: Senate Box 203015;Harrisburg, PA 17120-3015;Room:;168 Main Capitol
+  voice: 717-787-6801
+  fax: 717-783-3722
+  classification: capitol
+- address: 7 West Main Street PO Box 236;New Bloomfield, PA 17068
+  voice: 717-582-2454
+  fax: 717-582-2487
+  classification: district
+  name: 'District Office #1'

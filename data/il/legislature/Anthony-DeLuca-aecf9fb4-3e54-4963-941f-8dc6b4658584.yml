@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '80'
-contact_details:
-- note: Capitol Office
-  address: 277-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-1719
-- note: District Office
-  address: 195 W. Joe Orr Rd.;Suite 201;Chicago Heights, IL 60411
-  voice: 708-754-7900
-  fax: 708-754-7904
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2581
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2824
@@ -31,3 +23,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2581
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2824
+offices:
+- address: 277-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-1719
+  classification: capitol
+- address: 195 W. Joe Orr Rd.;Suite 201;Chicago Heights, IL 60411
+  voice: 708-754-7900
+  fax: 708-754-7904
+  classification: district
+  name: 'District Office #1'

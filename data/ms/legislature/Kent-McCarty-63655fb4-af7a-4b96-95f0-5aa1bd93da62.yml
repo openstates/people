@@ -11,11 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '101'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 13 Leaf Lane;Hattiesburg, MS 39402
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mccarty.xml
 sources:
@@ -23,3 +18,9 @@ sources:
 extras:
   org_info: Representative McCarty is affiliated with Pine Belt Foundation, Development
     Committee and Area Development Partnership.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 13 Leaf Lane;Hattiesburg, MS 39402
+  classification: district
+  name: 'District Office #1'

@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '59'
-contact_details:
-- note: Capitol Office
-  address: 266-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-0499
-- note: District Office
-  address: Vernon Township Administrative Building;3050 N. Main St.;Buffalo Grove,
-    IL 60089
-  voice: 847-478-9909
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2737
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2938
@@ -26,3 +18,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2737
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2938
+offices:
+- address: 266-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-0499
+  classification: capitol
+- address: Vernon Township Administrative Building;3050 N. Main St.;Buffalo Grove,
+    IL 60089
+  voice: 847-478-9909
+  classification: district
+  name: 'District Office #1'

@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: 103B Capitol Building;Springfield, IL 62706
-  voice: 217-558-1006
-- note: District Office
-  address: 510 S. Staley Road;Suite D;Champaign, IL 61822
-  voice: 217-607-1853
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2621
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2856
@@ -33,3 +26,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2621
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2856
+offices:
+- address: 103B Capitol Building;Springfield, IL 62706
+  voice: 217-558-1006
+  classification: capitol
+- address: 510 S. Staley Road;Suite D;Champaign, IL 61822
+  voice: 217-607-1853
+  classification: district
+  name: 'District Office #1'

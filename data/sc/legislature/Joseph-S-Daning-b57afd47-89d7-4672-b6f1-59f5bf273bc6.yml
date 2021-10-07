@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '92'
-contact_details:
-- note: Capitol Office
-  address: 310C Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-2951
-- note: District Office
-  address: 118 Queensbury Cir., Goose Creek, SC 29445
-  voice: 843-553-9288
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0451136310
 other_names:
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0451136310
+offices:
+- address: 310C Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-2951
+  classification: capitol
+- address: 118 Queensbury Cir., Goose Creek, SC 29445
+  voice: 843-553-9288
+  classification: district
+  name: 'District Office #1'

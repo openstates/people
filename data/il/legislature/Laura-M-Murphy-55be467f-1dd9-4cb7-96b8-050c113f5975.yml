@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: 108E Capitol Building;Springfield, IL 62706
-  voice: 217-782-3875
-- note: District Office
-  address: 880 Lee Street;Suite 100;Des Plaines, IL 60016
-  voice: 847-718-1110
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2668
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2890
@@ -29,3 +22,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2668
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2890
+offices:
+- address: 108E Capitol Building;Springfield, IL 62706
+  voice: 217-782-3875
+  classification: capitol
+- address: 880 Lee Street;Suite 100;Des Plaines, IL 60016
+  voice: 847-718-1110
+  classification: district
+  name: 'District Office #1'

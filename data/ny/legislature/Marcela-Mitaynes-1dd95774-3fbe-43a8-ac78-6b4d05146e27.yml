@@ -9,13 +9,14 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '51'
-contact_details:
-- note: District Office
-  address: 4907 4th Avenue; Suite, 1A; Brooklyn, NY 11220
-  voice: 718-492-6334
-- note: Capitol Office
-  voice: 518-455-3821
 links:
 - url: https://assembly.state.ny.us/mem/Marcela-Mitaynes
 sources:
 - url: https://assembly.state.ny.us/mem/Marcela-Mitaynes
+offices:
+- address: 4907 4th Avenue; Suite, 1A; Brooklyn, NY 11220
+  voice: 718-492-6334
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-3821
+  classification: capitol

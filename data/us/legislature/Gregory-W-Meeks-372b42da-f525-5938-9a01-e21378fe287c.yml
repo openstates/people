@@ -76,18 +76,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NY-5
-contact_details:
-- note: Capitol Office
-  address: 2310 Rayburn House Office Building Washington DC 20515-3205
-  voice: 202-225-3461
-- note: District Office
-  address: 67-12 Rockaway Beach Blvd.; Arverne, NY 11692
-  voice: 347-230-4032
-  fax: 347-230-4045
-- note: District Office
-  address: 153-01 Jamaica Ave. 2nd floor; Jamaica, NY 11432
-  voice: 718-725-6000
-  fax: 718-725-9868
 links:
 - url: https://meeks.house.gov
   note: website
@@ -126,3 +114,17 @@ other_identifiers:
   identifier: Gregory Meeks
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2310 Rayburn House Office Building Washington DC 20515-3205
+  voice: 202-225-3461
+  classification: capitol
+- address: 67-12 Rockaway Beach Blvd.; Arverne, NY 11692
+  voice: 347-230-4032
+  fax: 347-230-4045
+  classification: district
+  name: 'District Office #1'
+- address: 153-01 Jamaica Ave. 2nd floor; Jamaica, NY 11432
+  voice: 718-725-6000
+  fax: 718-725-9868
+  classification: district
+  name: 'District Office #2'

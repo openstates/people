@@ -11,14 +11,15 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: Room 151R, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3111
-- note: District Office
-  address: 78 Lynn Drive;Moundsville, WV 26041
-  voice: 304-280-0002
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Zukoff
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Zukoff
+offices:
+- address: Room 151R, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3111
+  classification: capitol
+- address: 78 Lynn Drive;Moundsville, WV 26041
+  voice: 304-280-0002
+  classification: district
+  name: 'District Office #1'

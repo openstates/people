@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '103'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: P.O. Box 1767;Hattiesburg, MS 39403
-  voice: 601-544-6490
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/watson.xml
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   org_info: Representative Watson is affiliated with the Jesse Brown Lodge, Phi Beta
     Kappa, NAACP, Mississippi Legal Services and the Mississippi, Iowa, Alaska, National
     and American Bar Associations.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: P.O. Box 1767;Hattiesburg, MS 39403
+  voice: 601-544-6490
+  classification: district
+  name: 'District Office #1'

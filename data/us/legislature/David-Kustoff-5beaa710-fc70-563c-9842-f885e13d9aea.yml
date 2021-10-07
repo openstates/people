@@ -25,21 +25,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TN-8
-contact_details:
-- note: Capitol Office
-  address: 560 Cannon House Office Building Washington DC 20515-4208
-  voice: 202-225-4714
-- note: District Office
-  address: 425 W Court St; Dyersburg, TN 38024-4616
-  voice: 731-412-1037
-- note: District Office
-  address: 5900 Poplar Ave. Suite 202; Memphis, TN 38119
-  voice: 901-682-4422
-  fax: 901-682-8973
-- note: District Office
-  address: 117 North Liberty Street; Jackson, TN 38301
-  voice: 731-423-4848
-  fax: 731-427-1537
 links:
 - url: https://kustoff.house.gov
   note: website
@@ -74,3 +59,21 @@ other_identifiers:
   identifier: David Kustoff
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 560 Cannon House Office Building Washington DC 20515-4208
+  voice: 202-225-4714
+  classification: capitol
+- address: 425 W Court St; Dyersburg, TN 38024-4616
+  voice: 731-412-1037
+  classification: district
+  name: 'District Office #1'
+- address: 5900 Poplar Ave. Suite 202; Memphis, TN 38119
+  voice: 901-682-4422
+  fax: 901-682-8973
+  classification: district
+  name: 'District Office #2'
+- address: 117 North Liberty Street; Jackson, TN 38301
+  voice: 731-423-4848
+  fax: 731-427-1537
+  classification: district
+  name: 'District Office #3'

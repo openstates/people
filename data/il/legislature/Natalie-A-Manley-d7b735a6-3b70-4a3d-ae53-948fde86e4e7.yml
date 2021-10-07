@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '98'
-contact_details:
-- note: Capitol Office
-  address: 109 Capitol Building;Springfield, IL 62706
-  voice: 217-782-3316
-- note: District Office
-  address: 1050 W. Romeo Rd.;Suite 101;Romeoville, IL 60446
-  voice: 815-725-2741
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2639
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2870
@@ -30,3 +23,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2639
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2870
+offices:
+- address: 109 Capitol Building;Springfield, IL 62706
+  voice: 217-782-3316
+  classification: capitol
+- address: 1050 W. Romeo Rd.;Suite 101;Romeoville, IL 60446
+  voice: 815-725-2741
+  classification: district
+  name: 'District Office #1'

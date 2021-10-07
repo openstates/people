@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street Room 811, Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2322
-- note: District Office
-  address: 159-53 102nd Street;Howard Beach,, NY 11414
-  voice: 718-322-5760
-  fax: 518-426-6875
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/joseph-p-addabbo-jr/contact
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: NYL000398
 sources:
 - url: http://www.nysenate.gov/senators/joseph-p-addabbo-jr/contact
+offices:
+- address: 188 State Street Room 811, Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-2322
+  classification: capitol
+- address: 159-53 102nd Street;Howard Beach,, NY 11414
+  voice: 718-322-5760
+  fax: 518-426-6875
+  classification: district
+  name: 'District Office #1'

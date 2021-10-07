@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '33'
-contact_details:
-- note: Capitol Office
-  address: 321-A CLOB; Atlanta, GA 30334
-  voice: 404-656-0054
-- note: District Office
-  address: P.O. Box 777; Marietta, GA 30061
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=855&Session=27
 - url: https://www.legis.ga.gov/members/senate/855?session=1029
@@ -38,3 +32,10 @@ extras:
   press: 'https://senatepress.net/category/senate-press/michael-rhett '
   staff: Ashley Thomas
   staff email: ashley.thomas@senate.ga.gov
+offices:
+- address: 321-A CLOB; Atlanta, GA 30334
+  voice: 404-656-0054
+  classification: capitol
+- address: P.O. Box 777; Marietta, GA 30061
+  classification: district
+  name: 'District Office #1'

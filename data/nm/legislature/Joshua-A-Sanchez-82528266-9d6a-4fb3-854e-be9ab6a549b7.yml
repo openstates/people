@@ -8,13 +8,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '30'
-contact_details:
-- note: District Office
-  address: P.O. Box 721;Bosque, NM 87006
-  voice: 505-864-7551
-- note: Capitol Office
-  voice: 505-397-8845
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSANJ
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSANJ
+offices:
+- address: P.O. Box 721;Bosque, NM 87006
+  voice: 505-864-7551
+  classification: district
+  name: 'District Office #1'
+- voice: 505-397-8845
+  classification: capitol

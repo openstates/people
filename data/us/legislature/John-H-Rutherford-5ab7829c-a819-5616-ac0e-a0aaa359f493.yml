@@ -26,13 +26,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: FL-4
-contact_details:
-- note: Capitol Office
-  address: 1711 Longworth House Office Building Washington DC 20515-0904
-  voice: 202-225-2501
-- note: District Office
-  address: 4130 Salisbury Rd.; Jacksonville, FL 32216
-  voice: 904-831-5205
 links:
 - url: https://rutherford.house.gov
   note: website
@@ -66,3 +59,11 @@ other_identifiers:
   identifier: John Rutherford (Florida)
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1711 Longworth House Office Building Washington DC 20515-0904
+  voice: 202-225-2501
+  classification: capitol
+- address: 4130 Salisbury Rd.; Jacksonville, FL 32216
+  voice: 904-831-5205
+  classification: district
+  name: 'District Office #1'

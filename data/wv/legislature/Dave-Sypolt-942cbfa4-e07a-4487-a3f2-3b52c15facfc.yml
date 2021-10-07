@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: Room 214W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7914
-- note: District Office
-  address: P.O. Box 5;Kingwood, WV 26537
-  voice: 304-698-5299
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Sypolt
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000029
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Sypolt
+offices:
+- address: Room 214W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7914
+  classification: capitol
+- address: P.O. Box 5;Kingwood, WV 26537
+  voice: 304-698-5299
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '90'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 6 Thode Ct, Davenport, IA 52802
-  voice: 563-324-7927
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=44
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=44
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=44
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=44
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 6 Thode Ct, Davenport, IA 52802
+  voice: 563-324-7927
+  classification: district
+  name: 'District Office #1'

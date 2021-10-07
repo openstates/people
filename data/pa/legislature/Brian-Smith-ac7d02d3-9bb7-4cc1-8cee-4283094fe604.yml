@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '66'
-contact_details:
-- note: District Office
-  address: 82 Barnett Street Brookville, PA 15825
-  voice: 814-849-8008
-  fax: 814-849-6710
-- note: Capitol Office
-  address: 160A East Wing P.O. Box 202066 Harrisburg, PA 17120-2066
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1902
+offices:
+- address: 82 Barnett Street Brookville, PA 15825
+  voice: 814-849-8008
+  fax: 814-849-6710
+  classification: district
+  name: 'District Office #1'
+- address: 160A East Wing P.O. Box 202066 Harrisburg, PA 17120-2066
+  classification: capitol

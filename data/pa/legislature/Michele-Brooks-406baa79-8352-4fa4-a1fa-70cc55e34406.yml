@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '50'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203050;Harrisburg, PA 17120-3050;Room:;168 Main Capitol
-  voice: 717-787-1322
-  fax: 717-772-0577
-- note: District Office
-  address: 100 Hadley Road Suite 9;Greenville, PA 16125
-  voice: 724-588-8911
-  fax: 724-588-5464
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1087
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -36,3 +27,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1087
 extras:
   facebook: https://www.facebook.com/senatormichelebrooks/
+offices:
+- address: Senate Box 203050;Harrisburg, PA 17120-3050;Room:;168 Main Capitol
+  voice: 717-787-1322
+  fax: 717-772-0577
+  classification: capitol
+- address: 100 Hadley Road Suite 9;Greenville, PA 16125
+  voice: 724-588-8911
+  fax: 724-588-5464
+  classification: district
+  name: 'District Office #1'

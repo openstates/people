@@ -11,15 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Bristol and Plymouth
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 212;Boston, MA, 02133
-  voice: 617-722-1114
-  fax: 617-722-1498
-- note: District Office
-  address: One Government Center;Fall River, MA 02722
-  voice: 508-646-0650
-  fax: 508-646-0656
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJR0
 other_identifiers:
@@ -31,3 +22,13 @@ other_identifiers:
   identifier: MAL000266
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MJR0
+offices:
+- address: 24 Beacon St.;Room 212;Boston, MA, 02133
+  voice: 617-722-1114
+  fax: 617-722-1498
+  classification: capitol
+- address: One Government Center;Fall River, MA 02722
+  voice: 508-646-0650
+  fax: 508-646-0656
+  classification: district
+  name: 'District Office #1'

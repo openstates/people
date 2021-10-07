@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: 270-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-2855
-- note: District Office
-  address: 2108 W. 35th St.;Chicago, IL 60609
-  voice: 872-281-5775
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2687
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2904
@@ -28,3 +21,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2687
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2904
+offices:
+- address: 270-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-2855
+  classification: capitol
+- address: 2108 W. 35th St.;Chicago, IL 60609
+  voice: 872-281-5775
+  classification: district
+  name: 'District Office #1'

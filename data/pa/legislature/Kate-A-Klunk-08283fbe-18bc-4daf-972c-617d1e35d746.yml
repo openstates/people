@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '169'
-contact_details:
-- note: Capitol Office
-  address: 161A East Wing P.O. Box 202169 Harrisburg, PA 17120-2169;Toll Free
-  voice: 855-282-0612
-  fax: 717-782-2952
-- note: District Office
-  address: 118 Carlisle Street Hanover, PA 17331
-  voice: 717-630-8942
-  fax: 717-630-9731
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1694
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/repklunk
   youtube: http://www.youtube.com/user/RepKlunk
+offices:
+- address: 161A East Wing P.O. Box 202169 Harrisburg, PA 17120-2169;Toll Free
+  voice: 855-282-0612
+  fax: 717-782-2952
+  classification: capitol
+- address: 118 Carlisle Street Hanover, PA 17331
+  voice: 717-630-8942
+  fax: 717-630-9731
+  classification: district
+  name: 'District Office #1'

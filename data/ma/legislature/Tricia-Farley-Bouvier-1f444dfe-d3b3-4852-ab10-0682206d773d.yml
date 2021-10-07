@@ -12,13 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 3rd Berkshire
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 156;Boston, MA, 02133
-  voice: 617-722-2240
-- note: District Office
-  address: 33 Dunham Mall;Pittsfield, MA 01201
-  voice: 413-442-4300
 links:
 - url: https://malegislature.gov/Legislators/Profile/TFB1
 other_identifiers:
@@ -32,3 +25,11 @@ other_identifiers:
   identifier: ocd-person/99a786de-969a-4c9f-ba6a-be3eb4ca2c58
 sources:
 - url: https://malegislature.gov/Legislators/Profile/TFB1
+offices:
+- address: 24 Beacon St.;Room 156;Boston, MA, 02133
+  voice: 617-722-2240
+  classification: capitol
+- address: 33 Dunham Mall;Pittsfield, MA 01201
+  voice: 413-442-4300
+  classification: district
+  name: 'District Office #1'

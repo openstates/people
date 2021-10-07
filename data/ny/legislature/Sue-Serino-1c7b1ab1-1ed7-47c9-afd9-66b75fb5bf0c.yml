@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street, Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2945
-- note: District Office
-  address: 4254 Albany Post Road;Hyde Park,, NY 12538
-  voice: 845-229-0106
-  fax: 845-229-2586
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/sue-serino/contact
@@ -32,3 +24,12 @@ other_identifiers:
   identifier: NYL000371
 sources:
 - url: http://www.nysenate.gov/senators/sue-serino/contact
+offices:
+- address: 188 State Street, Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-2945
+  classification: capitol
+- address: 4254 Albany Post Road;Hyde Park,, NY 12538
+  voice: 845-229-0106
+  fax: 845-229-2586
+  classification: district
+  name: 'District Office #1'

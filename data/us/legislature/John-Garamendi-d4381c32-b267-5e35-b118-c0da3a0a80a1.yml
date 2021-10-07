@@ -45,18 +45,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-3
-contact_details:
-- note: Capitol Office
-  address: 2368 Rayburn House Office Building Washington DC 20515-0503
-  voice: 202-225-1880
-- note: District Office
-  address: 412 G St.; Davis, CA 95616
-  voice: 530-753-5301
-  fax: 530-753-5614
-- note: District Office
-  address: 1261 Travis Blvd. Suite 130; Fairfield, CA 94533
-  voice: 707-438-1822
-  fax: 707-438-0523
 links:
 - url: https://garamendi.house.gov
   note: website
@@ -95,3 +83,17 @@ other_identifiers:
   identifier: John Garamendi
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2368 Rayburn House Office Building Washington DC 20515-0503
+  voice: 202-225-1880
+  classification: capitol
+- address: 412 G St.; Davis, CA 95616
+  voice: 530-753-5301
+  fax: 530-753-5614
+  classification: district
+  name: 'District Office #1'
+- address: 1261 Travis Blvd. Suite 130; Fairfield, CA 94533
+  voice: 707-438-1822
+  fax: 707-438-0523
+  classification: district
+  name: 'District Office #2'

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '94'
-contact_details:
-- note: Capitol Office
-  address: 245 Main Capitol Building P.O. Box 202094 Harrisburg, PA 17120-2094
-  voice: 717-783-6426
-  fax: 717-783-7655
-- note: District Office
-  address: 100 Redco Avenue Red Lion, PA 17356
-  voice: 717-244-9232
-  fax: 717-246-2387
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=200
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -33,3 +24,13 @@ extras:
   facebook: https://facebook.com/RepSaylor
   twitter: https://twitter.com/RepStanSaylor
   youtube: https://youtube.com/RepSaylor
+offices:
+- address: 245 Main Capitol Building P.O. Box 202094 Harrisburg, PA 17120-2094
+  voice: 717-783-6426
+  fax: 717-783-7655
+  classification: capitol
+- address: 100 Redco Avenue Red Lion, PA 17356
+  voice: 717-244-9232
+  fax: 717-246-2387
+  classification: district
+  name: 'District Office #1'

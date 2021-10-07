@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1204;Raleigh, NC 27601-1096
-  voice: 919-733-5803
-- note: District Office
-  address: 21981 Buie St;Wagram, NC 28396
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/497
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Hoke
   - Scotland
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1204;Raleigh, NC 27601-1096
+  voice: 919-733-5803
+  classification: capitol
+- address: 21981 Buie St;Wagram, NC 28396
+  classification: district
+  name: 'District Office #1'

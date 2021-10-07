@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: LOB 548; Albany, NY 12248
-  voice: 518-455-5721
-- note: District Office
-  address: 1310 48th St.; Unit 204; Brooklyn, NY 11219
-  voice: 718-853-9616
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Simcha-Eichenstein
@@ -25,3 +18,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Simcha-Eichenstein
 - url: https://assembly.state.ny.us/mem/Simcha-Eichenstein
+offices:
+- address: LOB 548; Albany, NY 12248
+  voice: 518-455-5721
+  classification: capitol
+- address: 1310 48th St.; Unit 204; Brooklyn, NY 11219
+  voice: 718-853-9616
+  classification: district
+  name: 'District Office #1'

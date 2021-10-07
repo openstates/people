@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '69'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0069
-  voice: 916-319-2069
-- note: District Office
-  address: 2400 East Katella Avenue, Suite 640;Anaheim, CA 92806
-  voice: 714-939-8469
 links:
 - url: https://a69.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD69&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000358
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0069
+  voice: 916-319-2069
+  classification: capitol
+- address: 2400 East Katella Avenue, Suite 640;Anaheim, CA 92806
+  voice: 714-939-8469
+  classification: district
+  name: 'District Office #1'

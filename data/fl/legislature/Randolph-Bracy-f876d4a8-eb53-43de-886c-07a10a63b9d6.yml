@@ -15,12 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  address: 213 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-- note: District Office
-  address: 6965 Piazza Grande Avenue; Suite 211; Orlando, FL 32835
-  fax: 888-263-3814
 links:
 - url: http://www.flsenate.gov/Senators/s11
 - url: http://www.flsenate.gov/Senators/2018-2020/S11
@@ -35,3 +29,10 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s11
 - url: http://www.flsenate.gov/Senators/2018-2020/S11
+offices:
+- address: 213 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  classification: capitol
+- address: 6965 Piazza Grande Avenue; Suite 211; Orlando, FL 32835
+  fax: 888-263-3814
+  classification: district
+  name: 'District Office #1'

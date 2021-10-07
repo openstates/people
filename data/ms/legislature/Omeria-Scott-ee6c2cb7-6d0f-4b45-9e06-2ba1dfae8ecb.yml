@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '80'
-contact_details:
-- note: Capitol Office
-  address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-4084
-- note: District Office
-  address: 615 East 19th Street;Laurel, MS 39440
-  voice: 601-649-7677
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/scott.xml
 other_identifiers:
@@ -27,3 +20,11 @@ extras:
   org_info: Representative Scott is affiliated with the Order of the Eastern Star,
     National Council of Negro Women, Federated Women of America, Association for Excellence
     in Education and Beacon of Hope Mississippi Scholarship Foundation.
+offices:
+- address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-4084
+  classification: capitol
+- address: 615 East 19th Street;Laurel, MS 39440
+  voice: 601-649-7677
+  classification: district
+  name: 'District Office #1'

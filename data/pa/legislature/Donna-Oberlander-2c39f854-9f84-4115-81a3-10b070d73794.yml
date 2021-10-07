@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '63'
-contact_details:
-- note: Capitol Office
-  address: 121 Main Capitol Building P.O. Box 202063 Harrisburg, PA 17120-2063
-  voice: 717-772-9908
-  fax: 717-782-2912
-- note: District Office
-  address: 309 East Saltwork Street Elderton, PA 15736
-  voice: 724-354-3500
-  fax: 724-354-2896
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1177
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepOberlander
   youtube: https://youtube.com/RepOberlander
+offices:
+- address: 121 Main Capitol Building P.O. Box 202063 Harrisburg, PA 17120-2063
+  voice: 717-772-9908
+  fax: 717-782-2912
+  classification: capitol
+- address: 309 East Saltwork Street Elderton, PA 15736
+  voice: 724-354-3500
+  fax: 724-354-2896
+  classification: district
+  name: 'District Office #1'

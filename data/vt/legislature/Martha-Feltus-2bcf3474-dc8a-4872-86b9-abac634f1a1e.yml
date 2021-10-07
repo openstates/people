@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Caledonia-4
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: P.O. Box 963;Lyndonville, VT 05851
-  voice: 802-626-9516
 links:
 - url: http://legislature.vermont.gov/people/single/2020/20375
 - url: http://legislature.vermont.gov/people/single/2022/20375
@@ -33,3 +27,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/20375
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/20375
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: P.O. Box 963;Lyndonville, VT 05851
+  voice: 802-626-9516
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  address: Room 413E State Capitol;Santa Fe, NM 87501
-  voice: 505-986-4236
-- note: District Office
-  address: Albuquerque, NM 87104
-  voice: 505-289-3939
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HMARJ
 other_names:
@@ -30,3 +23,11 @@ other_identifiers:
   identifier: NML000314
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HMARJ
+offices:
+- address: Room 413E State Capitol;Santa Fe, NM 87501
+  voice: 505-986-4236
+  classification: capitol
+- address: Albuquerque, NM 87104
+  voice: 505-289-3939
+  classification: district
+  name: 'District Office #1'

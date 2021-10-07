@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '199'
-contact_details:
-- note: Capitol Office
-  address: 149B East Wing P.O. Box 202199 Harrisburg, PA 17120-2199
-  voice: 717-772-2280
-  fax: 717-705-2012
-- note: District Office
-  address: 437 East North Street Carlisle, PA 17013
-  voice: 717-249-1990
-  fax: 717-249-8775
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1864
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -28,3 +19,13 @@ extras:
   facebook: https://www.facebook.com/RepGleim
   twitter: https://twitter.com/repgleim
   youtube: https://www.youtube.com/channel/UChtuvXCwuGvDP_EJAf8ZU5w
+offices:
+- address: 149B East Wing P.O. Box 202199 Harrisburg, PA 17120-2199
+  voice: 717-772-2280
+  fax: 717-705-2012
+  classification: capitol
+- address: 437 East North Street Carlisle, PA 17013
+  voice: 717-249-1990
+  fax: 717-249-8775
+  classification: district
+  name: 'District Office #1'

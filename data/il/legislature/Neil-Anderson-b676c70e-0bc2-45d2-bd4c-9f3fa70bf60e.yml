@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '36'
-contact_details:
-- note: Capitol Office
-  address: M103D Capitol Building;Springfield, IL 62706
-  voice: 217-782-5957
-- note: District Office
-  address: 1523 47th Avenue;Suite 2;Moline, IL 61265
-  voice: 309-736-7084
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2664
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2886
@@ -27,3 +20,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2664
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2886
+offices:
+- address: M103D Capitol Building;Springfield, IL 62706
+  voice: 217-782-5957
+  classification: capitol
+- address: 1523 47th Avenue;Suite 2;Moline, IL 61265
+  voice: 309-736-7084
+  classification: district
+  name: 'District Office #1'

@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Hampshire
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 33;Boston, MA, 02133
-  voice: 617-722-2060
-- note: District Office
-  address: P.O. Box 1309;Easthampton, MA 01027
-  voice: 413-529-4286
 links:
 - url: https://malegislature.gov/Legislators/Profile/DRC1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/DRC1
+offices:
+- address: 24 Beacon St.;Room 33;Boston, MA, 02133
+  voice: 617-722-2060
+  classification: capitol
+- address: P.O. Box 1309;Easthampton, MA 01027
+  voice: 413-529-4286
+  classification: district
+  name: 'District Office #1'

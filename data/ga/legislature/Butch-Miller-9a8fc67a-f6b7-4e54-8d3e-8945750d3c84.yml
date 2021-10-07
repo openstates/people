@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '49'
-contact_details:
-- note: Capitol Office
-  address: 321 State Capitol; Atlanta, GA 30334
-  voice: 404-656-6578
-- note: District Office
-  address: 2420 Browns Bridge Road; Gainesville, GA 30504
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=719&Session=27
 - url: https://www.legis.ga.gov/members/senate/719?session=1029
@@ -41,3 +35,10 @@ extras:
   staff: Steve Tippins
   staff email: steve.tippins@senate.ga.gov
   title: 'President Pro Tempore '
+offices:
+- address: 321 State Capitol; Atlanta, GA 30334
+  voice: 404-656-6578
+  classification: capitol
+- address: 2420 Browns Bridge Road; Gainesville, GA 30504
+  classification: district
+  name: 'District Office #1'

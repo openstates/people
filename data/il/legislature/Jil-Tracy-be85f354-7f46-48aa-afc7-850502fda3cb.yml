@@ -19,14 +19,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  address: 103C Capitol Building;Springfield, IL 62706
-  voice: 217-782-2479
-- note: District Office
-  address: 3701 East Lake Centre Drive;Suite 3;Quincy, IL 62305
-  voice: 217-223-0833
-  fax: 217-223-1565
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2680
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2899
@@ -46,3 +38,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2680
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2899
+offices:
+- address: 103C Capitol Building;Springfield, IL 62706
+  voice: 217-782-2479
+  classification: capitol
+- address: 3701 East Lake Centre Drive;Suite 3;Quincy, IL 62305
+  voice: 217-223-0833
+  fax: 217-223-1565
+  classification: district
+  name: 'District Office #1'

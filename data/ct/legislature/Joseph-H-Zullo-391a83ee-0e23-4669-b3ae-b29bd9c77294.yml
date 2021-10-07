@@ -10,16 +10,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '99'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 2 Lisa Lane;East Haven, CT 06512
-  voice: 203-927-0871
 links:
 - url: http://www.cthousegop.com/zullo/
 other_names:
 - name: Zullo, Joseph H.
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 2 Lisa Lane;East Haven, CT 06512
+  voice: 203-927-0871
+  classification: district
+  name: 'District Office #1'

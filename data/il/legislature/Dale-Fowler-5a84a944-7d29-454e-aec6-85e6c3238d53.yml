@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '59'
-contact_details:
-- note: Capitol Office
-  address: M103C Capitol Building;Springfield, IL 62706
-  voice: 217-782-5509
-- note: District Office
-  address: 2 North Vine;Suite 600;Harrisburg, IL 62946
-  voice: 618-294-8951
-  fax: 618-294-8950
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2678
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2897
@@ -28,3 +20,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2678
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2897
+offices:
+- address: M103C Capitol Building;Springfield, IL 62706
+  voice: 217-782-5509
+  classification: capitol
+- address: 2 North Vine;Suite 600;Harrisburg, IL 62946
+  voice: 618-294-8951
+  fax: 618-294-8950
+  classification: district
+  name: 'District Office #1'

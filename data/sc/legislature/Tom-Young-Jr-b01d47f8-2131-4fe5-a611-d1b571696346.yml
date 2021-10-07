@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: 608 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6000
-- note: District Office
-  address: P.O. Box 651, Aiken, SC 29802
-  voice: 803-215-3631
-- note: Primary Office
-  voice: 803-649-0000
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1996590730
 other_names:
@@ -32,3 +23,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=1996590730
+offices:
+- address: 608 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6000
+  classification: capitol
+- address: P.O. Box 651, Aiken, SC 29802
+  voice: 803-215-3631
+  classification: district
+  name: 'District Office #1'
+- voice: 803-649-0000
+  classification: primary

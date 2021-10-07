@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '66'
-contact_details:
-- note: Capitol Office
-  address: 309C Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-2809
-- note: District Office
-  address: 4188 Five Chop Road, Orangeburg, SC 29115
-  voice: 803-531-1257
-- note: Primary Office
-  voice: 803-534-2448
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0372727228
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0372727228
+offices:
+- address: 309C Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-2809
+  classification: capitol
+- address: 4188 Five Chop Road, Orangeburg, SC 29115
+  voice: 803-531-1257
+  classification: district
+  name: 'District Office #1'
+- voice: 803-534-2448
+  classification: primary

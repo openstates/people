@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: P.O.Box 128;Underhill Center, VT 05490
-  voice: 802-899-2382
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27159
 - url: http://legislature.vermont.gov/people/single/2022/27159
@@ -27,3 +21,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27159
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27159
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: P.O.Box 128;Underhill Center, VT 05490
+  voice: 802-899-2382
+  classification: district
+  name: 'District Office #1'

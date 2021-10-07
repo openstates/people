@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '116'
-contact_details:
-- note: Capitol Office
-  address: Room 201M-5;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-9466
-- note: District Office
-  address: 13372 Damon Ct.;Biloxi, MS 39532
-- note: District Office
-  address: 11839 Sleeping Deer Lane;Saucier, MS 39574
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/eure.xml
 other_identifiers:
@@ -30,3 +22,13 @@ extras:
     Young Professionals, Harrison County Republican Club and Woolmarket Little League
     Association.  He was previously affiliated with the Harrison County Sheriff's
     Department, MS Bureau of Narcotics and MS Public Service Commission.
+offices:
+- address: Room 201M-5;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-9466
+  classification: capitol
+- address: 13372 Damon Ct.;Biloxi, MS 39532
+  classification: district
+  name: 'District Office #1'
+- address: 11839 Sleeping Deer Lane;Saucier, MS 39574
+  classification: district
+  name: 'District Office #2'

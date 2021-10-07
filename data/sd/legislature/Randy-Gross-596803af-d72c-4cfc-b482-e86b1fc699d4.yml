@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3851
-- note: District Office
-  address: 48006 221st St.Elkton, SD 57026
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1616&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1796/Detail
@@ -28,3 +23,9 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1796/Detail
 extras:
   occupation: Farmer/Retired Banker
+offices:
+- voice: 605-773-3851
+  classification: capitol
+- address: 48006 221st St.Elkton, SD 57026
+  classification: district
+  name: 'District Office #1'

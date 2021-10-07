@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1319;Raleigh, NC 27601-1096
-  voice: 919-733-5802
-- note: District Office
-  address: 9121 West Mount Dr;Rocky Mount, NC 27803
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/743
 sources:
@@ -24,3 +18,10 @@ extras:
   counties:
   - Nash
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1319;Raleigh, NC 27601-1096
+  voice: 919-733-5802
+  classification: capitol
+- address: 9121 West Mount Dr;Rocky Mount, NC 27803
+  classification: district
+  name: 'District Office #1'

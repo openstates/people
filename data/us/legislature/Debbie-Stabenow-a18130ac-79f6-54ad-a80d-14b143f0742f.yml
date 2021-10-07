@@ -41,28 +41,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Michigan
-contact_details:
-- note: Capitol Office
-  address: 731 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-4822
-- note: District Office
-  address: 719 Griswold St. Suite 700; Detroit, MI 48226
-  voice: 313-961-4330
-- note: District Office
-  address: 221 W. Lake Lansing Rd. Suite 100; East Lansing, MI 48823
-  voice: 517-203-1760
-- note: District Office
-  address: 432 N. Saginaw St. Suite 301; Flint, MI 48502
-  voice: 810-720-4172
-- note: District Office
-  address: 3280 E. Beltline Ct. NE Suite 400; Grand Rapids, MI 49525
-  voice: 616-975-0052
-- note: District Office
-  address: 1901 W. Ridge Suite 7; Marquette, MI 49855
-  voice: 906-228-8756
-- note: District Office
-  address: 3335 S. Airport Road West Suite 6B; Traverse City, MI 49684
-  voice: 231-929-1031
 links:
 - url: https://www.stabenow.senate.gov
   note: website
@@ -107,3 +85,31 @@ other_identifiers:
   identifier: kg:/m/01xh64
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 731 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-4822
+  classification: capitol
+- address: 719 Griswold St. Suite 700; Detroit, MI 48226
+  voice: 313-961-4330
+  classification: district
+  name: 'District Office #1'
+- address: 221 W. Lake Lansing Rd. Suite 100; East Lansing, MI 48823
+  voice: 517-203-1760
+  classification: district
+  name: 'District Office #2'
+- address: 432 N. Saginaw St. Suite 301; Flint, MI 48502
+  voice: 810-720-4172
+  classification: district
+  name: 'District Office #3'
+- address: 3280 E. Beltline Ct. NE Suite 400; Grand Rapids, MI 49525
+  voice: 616-975-0052
+  classification: district
+  name: 'District Office #4'
+- address: 1901 W. Ridge Suite 7; Marquette, MI 49855
+  voice: 906-228-8756
+  classification: district
+  name: 'District Office #5'
+- address: 3335 S. Airport Road West Suite 6B; Traverse City, MI 49684
+  voice: 231-929-1031
+  classification: district
+  name: 'District Office #6'

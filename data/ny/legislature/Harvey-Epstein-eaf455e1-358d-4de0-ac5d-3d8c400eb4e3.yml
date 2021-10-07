@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '74'
-contact_details:
-- note: Capitol Office
-  address: 427 LOB; Albany, NY 12248
-  voice: 518-455-5506
-- note: District Office
-  address: 107 Avenue B; New York, NY 10009
-  voice: 212-979-9696
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Harvey-Epstein
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Harvey-Epstein
 - url: https://assembly.state.ny.us/mem/Harvey-Epstein
+offices:
+- address: 427 LOB; Albany, NY 12248
+  voice: 518-455-5506
+  classification: capitol
+- address: 107 Avenue B; New York, NY 10009
+  voice: 212-979-9696
+  classification: district
+  name: 'District Office #1'

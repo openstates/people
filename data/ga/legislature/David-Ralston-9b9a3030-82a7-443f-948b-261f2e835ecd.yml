@@ -10,15 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '7'
-contact_details:
-- note: Capitol Office
-  address: 332 State Capitol; Atlanta, GA 30334
-  voice: 404-656-5020
-  fax: 404-656-5644
-- note: District Office
-  address: PO Box 188; Blue Ridge, GA 30513
-  voice: 706-632-2221
-  fax: 706-632-6193
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=189&Session=27
 - url: https://www.legis.ga.gov/members/house/189?session=1029
@@ -43,3 +34,13 @@ extras:
   staff: a href="
   staff email: ''
   title: Speaker of the House
+offices:
+- address: 332 State Capitol; Atlanta, GA 30334
+  voice: 404-656-5020
+  fax: 404-656-5644
+  classification: capitol
+- address: PO Box 188; Blue Ridge, GA 30513
+  voice: 706-632-2221
+  fax: 706-632-6193
+  classification: district
+  name: 'District Office #1'

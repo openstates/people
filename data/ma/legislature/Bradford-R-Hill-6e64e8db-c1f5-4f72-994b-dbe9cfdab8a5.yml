@@ -12,13 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 4th Essex
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 128;Boston, MA, 02133
-  voice: 617-722-2100
-- note: District Office
-  address: P.O. Box 556;Ipswich, MA 01938
-  voice: 978-356-2626
 links:
 - url: https://malegislature.gov/Legislators/Profile/BRH1
 other_identifiers:
@@ -32,3 +25,11 @@ other_identifiers:
   identifier: ocd-person/e3a58717-2344-4382-b641-39571f06a487
 sources:
 - url: https://malegislature.gov/Legislators/Profile/BRH1
+offices:
+- address: 24 Beacon St.;Room 128;Boston, MA, 02133
+  voice: 617-722-2100
+  classification: capitol
+- address: P.O. Box 556;Ipswich, MA 01938
+  voice: 978-356-2626
+  classification: district
+  name: 'District Office #1'

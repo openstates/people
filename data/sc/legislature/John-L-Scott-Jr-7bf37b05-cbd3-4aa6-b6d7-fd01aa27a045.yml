@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '19'
-contact_details:
-- note: Capitol Office
-  address: 506 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6124
-- note: District Office
-  address: 215 Elmont Dr., Columbia, SC 29203
-  voice: 803-786-2373
-- note: Primary Office
-  voice: 803-733-5176
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1640908894
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=1640908894
+offices:
+- address: 506 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6124
+  classification: capitol
+- address: 215 Elmont Dr., Columbia, SC 29203
+  voice: 803-786-2373
+  classification: district
+  name: 'District Office #1'
+- voice: 803-733-5176
+  classification: primary

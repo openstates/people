@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  address: 303 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5035
-- note: District Office
-  address: 2955 Landover Boulevard; Spring Hill, FL 34608-7258
-  voice: 352-688-5004
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
@@ -27,3 +20,11 @@ sources:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
+offices:
+- address: 303 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5035
+  classification: capitol
+- address: 2955 Landover Boulevard; Spring Hill, FL 34608-7258
+  voice: 352-688-5004
+  classification: district
+  name: 'District Office #1'

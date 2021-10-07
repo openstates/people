@@ -25,14 +25,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-34
-contact_details:
-- note: Capitol Office
-  address: 1530 Longworth House Office Building Washington DC 20515-0534
-  voice: 202-225-6235
-- note: District Office
-  address: '350 S. Bixel St. #120; Los Angeles, CA 90017'
-  voice: 213-481-1427
-  fax: 213-481-1425
 links:
 - url: https://gomez.house.gov
   note: website
@@ -68,3 +60,12 @@ other_identifiers:
   identifier: '21754'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1530 Longworth House Office Building Washington DC 20515-0534
+  voice: 202-225-6235
+  classification: capitol
+- address: '350 S. Bixel St. #120; Los Angeles, CA 90017'
+  voice: 213-481-1427
+  fax: 213-481-1425
+  classification: district
+  name: 'District Office #1'

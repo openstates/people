@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: 530A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6888
-- note: District Office
-  address: '168 Hwy 274, #323, Lake Wylie, SC 29710'
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0234090881
 other_names:
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0234090881
+offices:
+- address: 530A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6888
+  classification: capitol
+- address: '168 Hwy 274, #323, Lake Wylie, SC 29710'
+  classification: district
+  name: 'District Office #1'

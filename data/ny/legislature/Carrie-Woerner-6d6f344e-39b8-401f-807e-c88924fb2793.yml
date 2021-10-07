@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '113'
-contact_details:
-- note: Capitol Office
-  address: LOB 502; Albany, NY 12248
-  voice: 518-455-5404
-- note: District Office
-  address: 112 Spring Street, Suite 205; Saratoga Springs, NY 12866
-  voice: 518-584-5493
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Carrie-Woerner
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Carrie-Woerner
 - url: https://assembly.state.ny.us/mem/Carrie-Woerner
+offices:
+- address: LOB 502; Albany, NY 12248
+  voice: 518-455-5404
+  classification: capitol
+- address: 112 Spring Street, Suite 205; Saratoga Springs, NY 12866
+  voice: 518-584-5493
+  classification: district
+  name: 'District Office #1'

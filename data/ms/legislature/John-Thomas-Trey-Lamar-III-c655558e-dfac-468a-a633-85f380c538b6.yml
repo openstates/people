@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: Room 201;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3343
-- note: District Office
-  address: 214 South Ward Street;Senatobia, MS 38668
-  voice: 662-562-0434
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/lamar.xml
 other_identifiers:
@@ -28,3 +21,11 @@ extras:
   org_info: Rep. Lamar is a member of First Baptist Church of Senatobia, Senatobia
     Rotory Club, Tate County Economic Development Foundation, MS BAR Association,
     and Ole Miss M-Club.
+offices:
+- address: Room 201;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3343
+  classification: capitol
+- address: 214 South Ward Street;Senatobia, MS 38668
+  voice: 662-562-0434
+  classification: district
+  name: 'District Office #1'

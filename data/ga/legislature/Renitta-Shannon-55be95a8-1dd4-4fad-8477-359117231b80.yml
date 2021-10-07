@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '84'
-contact_details:
-- note: Capitol Office
-  address: 512-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-7859
-- note: District Office
-  address: '2107 N. Decatur Rd., #717; Decatur, GA 300335305'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4897&Session=27
 - url: https://www.legis.ga.gov/members/house/4897?session=1029
@@ -39,3 +33,10 @@ extras:
   press: https://house-press.com/representative/Renitta-Shannon
   staff: Shunta Holloman - Administrative Assistant
   staff email: shunta.holloman@house.ga.gov
+offices:
+- address: 512-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-7859
+  classification: capitol
+- address: '2107 N. Decatur Rd., #717; Decatur, GA 300335305'
+  classification: district
+  name: 'District Office #1'

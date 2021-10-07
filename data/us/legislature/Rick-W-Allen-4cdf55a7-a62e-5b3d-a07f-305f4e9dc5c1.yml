@@ -31,25 +31,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: GA-12
-contact_details:
-- note: Capitol Office
-  address: 570 Cannon House Office Building Washington DC 20515-1012
-  voice: 202-225-2823
-- note: District Office
-  address: 2743 Perimeter Pkwy Suite 225; Augusta, GA 30909
-  voice: 706-228-1980
-  fax: 706-228-1954
-- note: District Office
-  address: 100 S. Church St.; Dublin, GA 31021
-  voice: 478-272-4030
-  fax: 478-277-0113
-- note: District Office
-  address: 50 E. Main St.; Statesboro, GA 30458
-  voice: 912-243-9452
-  fax: 912-243-9453
-- note: District Office
-  address: 107 Old Airport Rd. Suite A; Vidalia, GA 30475
-  voice: 912-403-3311
 links:
 - url: https://allen.house.gov
   note: website
@@ -86,3 +67,26 @@ other_identifiers:
   identifier: Rick Allen
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 570 Cannon House Office Building Washington DC 20515-1012
+  voice: 202-225-2823
+  classification: capitol
+- address: 2743 Perimeter Pkwy Suite 225; Augusta, GA 30909
+  voice: 706-228-1980
+  fax: 706-228-1954
+  classification: district
+  name: 'District Office #1'
+- address: 100 S. Church St.; Dublin, GA 31021
+  voice: 478-272-4030
+  fax: 478-277-0113
+  classification: district
+  name: 'District Office #2'
+- address: 50 E. Main St.; Statesboro, GA 30458
+  voice: 912-243-9452
+  fax: 912-243-9453
+  classification: district
+  name: 'District Office #3'
+- address: 107 Old Airport Rd. Suite A; Vidalia, GA 30475
+  voice: 912-403-3311
+  classification: district
+  name: 'District Office #4'

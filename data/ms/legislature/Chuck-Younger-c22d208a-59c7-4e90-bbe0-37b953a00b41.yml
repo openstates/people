@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  address: Room 215;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3232
-- note: District Office
-  address: 1213 Younger Road;Columbus, MS 39701
-  voice: 662-329-3430
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/younger.xml
 other_identifiers:
@@ -29,3 +22,11 @@ extras:
     Farm Bureau, Cattlemen's Association, District 5 Volunteer Fire Department, Prairie
     Land Water Association, National Federation of Independent Business, National
     Rifle Association lifetime and Lowndes Forestry Association.
+offices:
+- address: Room 215;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3232
+  classification: capitol
+- address: 1213 Younger Road;Columbus, MS 39701
+  voice: 662-329-3430
+  classification: district
+  name: 'District Office #1'

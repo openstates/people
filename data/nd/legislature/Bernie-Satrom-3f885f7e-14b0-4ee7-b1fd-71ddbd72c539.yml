@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  voice: 701-252-4058
-  fax: 701-252-4065
-- note: District Office
-  address: P.O. Box 950;Jamestown, ND;58402-0950
-  voice: 701-320-7239
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-bernie-satrom
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-bernie-satrom
@@ -28,3 +21,11 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-bernie-satrom
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-bernie-satrom
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-bernie-satrom
+offices:
+- voice: 701-252-4058
+  fax: 701-252-4065
+  classification: capitol
+- address: P.O. Box 950;Jamestown, ND;58402-0950
+  voice: 701-320-7239
+  classification: district
+  name: 'District Office #1'

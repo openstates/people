@@ -8,13 +8,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2204;Hartford, CT 06106
-  voice: 860-240-8600
-- note: District Office
-  address: 1109 East Middle Turnpike;Manchester, CT 06040
-  voice: 860-646-6882
 links:
 - url: http://www.senatedems.ct.gov/Cassano
 other_names:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: CTL000004
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2204;Hartford, CT 06106
+  voice: 860-240-8600
+  classification: capitol
+- address: 1109 East Middle Turnpike;Manchester, CT 06040
+  voice: 860-646-6882
+  classification: district
+  name: 'District Office #1'

@@ -12,14 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 8th Hampden
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 234;Boston, MA, 02133
-  voice: 617-722-2783
-- note: District Office
-  address: 333 Front Street, Suite 3;Chicopee, MA 01013
-  voice: 413-592-7857
-  fax: 413-592-1354
 links:
 - url: https://malegislature.gov/Legislators/Profile/JFW1
 other_identifiers:
@@ -31,3 +23,12 @@ other_identifiers:
   identifier: ocd-person/9307e2ab-b515-451c-ac05-73bb6c9656ff
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JFW1
+offices:
+- address: 24 Beacon St.;Room 234;Boston, MA, 02133
+  voice: 617-722-2783
+  classification: capitol
+- address: 333 Front Street, Suite 3;Chicopee, MA 01013
+  voice: 413-592-7857
+  fax: 413-592-1354
+  classification: district
+  name: 'District Office #1'

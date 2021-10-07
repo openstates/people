@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  address: 105A Capitol Building;Springfield, IL 62706
-  voice: 217-782-9407
-- note: District Office
-  address: 1011 State St.;Suite 210;Lemont, IL 60439
-  voice: 630-914-5733
-  fax: 630-796-2658
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2699
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2915
@@ -28,3 +20,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2699
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2915
+offices:
+- address: 105A Capitol Building;Springfield, IL 62706
+  voice: 217-782-9407
+  classification: capitol
+- address: 1011 State St.;Suite 210;Lemont, IL 60439
+  voice: 630-914-5733
+  fax: 630-796-2658
+  classification: district
+  name: 'District Office #1'

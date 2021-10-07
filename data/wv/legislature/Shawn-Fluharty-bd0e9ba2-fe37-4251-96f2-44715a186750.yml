@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: Room 260M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3270
-- note: District Office
-  address: 42 Walnut Avenue;Wheeling, WV 26003
-  voice: 304-281-8195
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fluharty
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000326
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fluharty
+offices:
+- address: Room 260M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3270
+  classification: capitol
+- address: 42 Walnut Avenue;Wheeling, WV 26003
+  voice: 304-281-8195
+  classification: district
+  name: 'District Office #1'

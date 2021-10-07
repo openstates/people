@@ -15,13 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '13'
-contact_details:
-- note: District Office
-  address: P.O. Box 223822;Chantilly, Virginia 20153
-  voice: 571-367-9080
-- note: District Office
-  address: P.O. Box 4489;Broadlands, Virginia 20148
-  voice: 571-267-9080
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H275
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S107
@@ -38,3 +31,12 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H275
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+S107
+offices:
+- address: P.O. Box 223822;Chantilly, Virginia 20153
+  voice: 571-367-9080
+  classification: district
+  name: 'District Office #1'
+- address: P.O. Box 4489;Broadlands, Virginia 20148
+  voice: 571-267-9080
+  classification: district
+  name: 'District Office #2'

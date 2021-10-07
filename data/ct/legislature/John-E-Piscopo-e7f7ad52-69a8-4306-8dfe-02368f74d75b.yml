@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '76'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4086;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 50 Judson Street;Thomaston, CT 06787
 links:
 - url: http://www.cthousegop.com/Piscopo/
 other_names:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: CTL000112
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4086;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 50 Judson Street;Thomaston, CT 06787
+  classification: district
+  name: 'District Office #1'

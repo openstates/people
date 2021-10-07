@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: 406 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5008
-- note: District Office
-  address: By Appointment Only; Putnam County Government Complex; 2509 Crill Avenue;
-    Palatka, FL 32177
-  voice: 352-264-4040
 links:
 - url: http://www.flsenate.gov/Senators/s8
 - url: http://www.flsenate.gov/Senators/2018-2020/S8
@@ -28,3 +20,12 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s8
 - url: http://www.flsenate.gov/Senators/2018-2020/S8
+offices:
+- address: 406 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5008
+  classification: capitol
+- address: By Appointment Only; Putnam County Government Complex; 2509 Crill Avenue;
+    Palatka, FL 32177
+  voice: 352-264-4040
+  classification: district
+  name: 'District Office #1'

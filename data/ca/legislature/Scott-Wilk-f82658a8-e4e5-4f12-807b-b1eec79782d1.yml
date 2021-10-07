@@ -15,13 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 3063, Sacramento, CA 95814-4900
-  voice: 916-651-4021
-- note: District Office
-  address: 14343 Civic Drive, First Floor, Victorville, CA 92392
-  voice: 760-843-8414
 links:
 - url: http://senate.ca.gov/sd21
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD21&inframe=N
@@ -35,3 +28,11 @@ other_identifiers:
   identifier: ocd-person/a3260637-0996-40bf-8ac4-71ea0b1de895
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 3063, Sacramento, CA 95814-4900
+  voice: 916-651-4021
+  classification: capitol
+- address: 14343 Civic Drive, First Floor, Victorville, CA 92392
+  voice: 760-843-8414
+  classification: district
+  name: 'District Office #1'

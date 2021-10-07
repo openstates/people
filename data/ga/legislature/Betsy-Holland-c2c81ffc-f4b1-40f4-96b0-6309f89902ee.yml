@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '54'
-contact_details:
-- note: Capitol Office
-  address: 409-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0116
-- note: District Office
-  address: 535 Pine Tree Drive NE; Atlanta, GA 30305
-  voice: 331-303-0507
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4943&Session=27
 - url: https://www.legis.ga.gov/members/house/4943?session=1029
@@ -38,3 +31,11 @@ extras:
   spouse: Jason
   staff: Jackie Hicks Rowe - Administrative Assistant
   staff email: jacquelyn.rowe@house.ga.gov
+offices:
+- address: 409-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0116
+  classification: capitol
+- address: 535 Pine Tree Drive NE; Atlanta, GA 30305
+  voice: 331-303-0507
+  classification: district
+  name: 'District Office #1'

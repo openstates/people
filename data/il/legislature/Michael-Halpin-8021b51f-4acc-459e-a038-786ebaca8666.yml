@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '72'
-contact_details:
-- note: Capitol Office
-  address: 272-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-5970
-- note: District Office
-  address: 1504 3rd Ave., 2nd Floor;County Office Bldg.;Rock Island, IL 61201
-  voice: 309-558-3612
-  fax: 309-793-4764
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2685
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2903
@@ -29,3 +21,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2685
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2903
+offices:
+- address: 272-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-5970
+  classification: capitol
+- address: 1504 3rd Ave., 2nd Floor;County Office Bldg.;Rock Island, IL 61201
+  voice: 309-558-3612
+  fax: 309-793-4764
+  classification: district
+  name: 'District Office #1'

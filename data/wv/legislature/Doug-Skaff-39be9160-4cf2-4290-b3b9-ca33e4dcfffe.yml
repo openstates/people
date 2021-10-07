@@ -16,12 +16,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  address: Room 260M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3240
-- note: District Office
-  address: 3 Joplin Place;South Charleston, WV 25303
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Skaff
 other_identifiers:
@@ -35,3 +29,10 @@ other_identifiers:
   identifier: ocd-person/be2cdf7d-9229-4ea1-bed8-df7abd5e1eb7
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Skaff
+offices:
+- address: Room 260M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3240
+  classification: capitol
+- address: 3 Joplin Place;South Charleston, WV 25303
+  classification: district
+  name: 'District Office #1'

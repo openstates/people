@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '122'
-contact_details:
-- note: District Office
-  address: 1 Kattelville Road; Suite 1; Binghamton, NY 13901
-  voice: 607-648-6080
-- note: Capitol Office
-  address: LOB 549; Albany, NY 12248
-  voice: 518-455-5741
 links:
 - url: https://assembly.state.ny.us/mem/Joe-Angelino
 sources:
 - url: https://assembly.state.ny.us/mem/Joe-Angelino
+offices:
+- address: 1 Kattelville Road; Suite 1; Binghamton, NY 13901
+  voice: 607-648-6080
+  classification: district
+  name: 'District Office #1'
+- address: LOB 549; Albany, NY 12248
+  voice: 518-455-5741
+  classification: capitol

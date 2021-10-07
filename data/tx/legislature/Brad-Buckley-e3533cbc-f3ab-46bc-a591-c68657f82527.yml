@@ -9,18 +9,20 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '54'
-contact_details:
-- note: Capitol Office
-  address: Room E1.316;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0684
-  fax: 512-463-8987
-- note: District Office
-  address: 1301 North Stagecoach Road;Salado, Texas 76571
-  voice: 254-947-5026
-- note: District Office
-  address: 501 East 4th Street, Suite 301;Lampasas, Texas 76550
-  voice: 512-556-5934
 links:
 - url: https://house.texas.gov/members/member-page/?district=54
 sources:
 - url: https://house.texas.gov/members/member-page/?district=54
+offices:
+- address: Room E1.316;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0684
+  fax: 512-463-8987
+  classification: capitol
+- address: 1301 North Stagecoach Road;Salado, Texas 76571
+  voice: 254-947-5026
+  classification: district
+  name: 'District Office #1'
+- address: 501 East 4th Street, Suite 301;Lampasas, Texas 76550
+  voice: 512-556-5934
+  classification: district
+  name: 'District Office #2'

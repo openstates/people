@@ -12,15 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 10th Norfolk
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 43;Boston, MA, 02133
-  voice: 617-722-2030
-  fax: 617-626-0279
-- note: District Office
-  address: 124 Grove Street, Ste 220;Franklin, MA 02038
-  voice: 508-520-3100
-  fax: 508-618-7126
 links:
 - url: https://malegislature.gov/Legislators/Profile/JNR1
 other_identifiers:
@@ -32,3 +23,13 @@ other_identifiers:
   identifier: ocd-person/173f7a0d-c31b-481d-8315-45686a325878
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JNR1
+offices:
+- address: 24 Beacon St.;Room 43;Boston, MA, 02133
+  voice: 617-722-2030
+  fax: 617-626-0279
+  classification: capitol
+- address: 124 Grove Street, Ste 220;Franklin, MA 02038
+  voice: 508-520-3100
+  fax: 508-618-7126
+  classification: district
+  name: 'District Office #1'

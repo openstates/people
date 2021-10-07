@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: 245 State Capitol; Atlanta, GA 30334
-  voice: 404-463-2248
-- note: District Office
-  address: '3 Central Plaza, #360; Rome, GA 30161'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=92&Session=27
 - url: https://www.legis.ga.gov/members/house/92?session=1029
@@ -43,3 +37,10 @@ extras:
   staff: a href="
   staff email: ''
   title: 'Chairman, Appropriations: Human Resources Subcommittee'
+offices:
+- address: 245 State Capitol; Atlanta, GA 30334
+  voice: 404-463-2248
+  classification: capitol
+- address: '3 Central Plaza, #360; Rome, GA 30161'
+  classification: district
+  name: 'District Office #1'

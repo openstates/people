@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3851
-- note: District Office
-  address: 2403 Bunker Dr.Aberdeen, SD 57401
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1611&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1862/Detail
@@ -28,3 +23,9 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1862/Detail
 extras:
   occupation: HVAC Specialist
+offices:
+- voice: 605-773-3851
+  classification: capitol
+- address: 2403 Bunker Dr.Aberdeen, SD 57401
+  classification: district
+  name: 'District Office #1'

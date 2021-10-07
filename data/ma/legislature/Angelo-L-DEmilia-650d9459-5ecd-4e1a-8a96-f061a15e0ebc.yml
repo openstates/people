@@ -12,14 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 8th Plymouth
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 548;Boston, MA, 02133
-  voice: 617-722-2488
-  fax: 617-626-0170
-- note: District Office
-  address: 31 Perkins Street;Bridgewater, MA 02324
-  voice: 508-697-2700
 links:
 - url: https://malegislature.gov/Legislators/Profile/ALD1
 other_identifiers:
@@ -35,3 +27,12 @@ other_identifiers:
   identifier: ocd-person/4b173d91-bc71-4635-b90a-aa17d656b3f3
 sources:
 - url: https://malegislature.gov/Legislators/Profile/ALD1
+offices:
+- address: 24 Beacon St.;Room 548;Boston, MA, 02133
+  voice: 617-722-2488
+  fax: 617-626-0170
+  classification: capitol
+- address: 31 Perkins Street;Bridgewater, MA 02324
+  voice: 508-697-2700
+  classification: district
+  name: 'District Office #1'

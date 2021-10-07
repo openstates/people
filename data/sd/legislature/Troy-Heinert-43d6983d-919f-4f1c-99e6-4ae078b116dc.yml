@@ -10,11 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3821
-- note: District Office
-  address: 27192 US Highway 18Mission, SD 57555
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1496&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1604&Session=2019
@@ -32,3 +27,9 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1801/Detail
 extras:
   occupation: Rancher/Rodeo Cowboy
+offices:
+- voice: 605-773-3821
+  classification: capitol
+- address: 27192 US Highway 18Mission, SD 57555
+  classification: district
+  name: 'District Office #1'

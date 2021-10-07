@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Lamoille-Washington
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 139 West Hill Rd.;Worcester, VT 05682
-  voice: 802-223-1014
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30962
 - url: http://legislature.vermont.gov/people/single/2022/30962
@@ -32,3 +26,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30962
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30962
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 139 West Hill Rd.;Worcester, VT 05682
+  voice: 802-223-1014
+  classification: district
+  name: 'District Office #1'

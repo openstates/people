@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '50'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 2368 Jackson St, Dubuque, IA 52001
-  voice: 563-556-6530
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=35
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=35
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=35
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=35
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 2368 Jackson St, Dubuque, IA 52001
+  voice: 563-556-6530
+  classification: district
+  name: 'District Office #1'

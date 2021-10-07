@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0017
-  voice: 916-319-2017
-- note: District Office
-  address: 455 Golden Gate Avenue, Suite 14300;San Francisco, CA 94102
-  voice: 415-557-3013
 links:
 - url: https://a17.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD17&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000452
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0017
+  voice: 916-319-2017
+  classification: capitol
+- address: 455 Golden Gate Avenue, Suite 14300;San Francisco, CA 94102
+  voice: 415-557-3013
+  classification: district
+  name: 'District Office #1'

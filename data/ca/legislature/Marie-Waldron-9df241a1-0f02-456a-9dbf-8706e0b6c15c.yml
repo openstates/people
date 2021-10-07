@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '75'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0075
-  voice: 916-319-2075
-- note: District Office
-  address: 350 West 5th Avenue, Suite 110;Escondido, CA 92025
-  voice: 760-480-7570
 links:
 - url: https://ad75.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD75&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000410
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0075
+  voice: 916-319-2075
+  classification: capitol
+- address: 350 West 5th Avenue, Suite 110;Escondido, CA 92025
+  voice: 760-480-7570
+  classification: district
+  name: 'District Office #1'

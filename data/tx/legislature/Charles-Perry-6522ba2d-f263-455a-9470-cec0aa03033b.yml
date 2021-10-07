@@ -43,13 +43,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0128
-- note: District Office
-  address: 203 Commerce Childress, TX 79201
-  voice: 940-937-0909
 links:
 - url: https://senate.texas.gov/member.php?d=28
 other_identifiers:
@@ -61,3 +54,11 @@ other_identifiers:
   identifier: TXL000511
 sources:
 - url: https://senate.texas.gov/member.php?d=28
+offices:
+- address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0128
+  classification: capitol
+- address: 203 Commerce Childress, TX 79201
+  voice: 940-937-0909
+  classification: district
+  name: 'District Office #1'

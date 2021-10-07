@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '191'
-contact_details:
-- note: Capitol Office
-  address: 423 Main Capitol P.O. Box 202191 Harrisburg, PA 17120-2191
-  voice: 717-772-9850
-  fax: 717-783-1516
-- note: District Office
-  address: 52 South 60th St Philadelphia, PA 19139
-  voice: 215-748-6712
-  fax: 215-748-1687
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1734
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1734
+offices:
+- address: 423 Main Capitol P.O. Box 202191 Harrisburg, PA 17120-2191
+  voice: 717-772-9850
+  fax: 717-783-1516
+  classification: capitol
+- address: 52 South 60th St Philadelphia, PA 19139
+  voice: 215-748-6712
+  fax: 215-748-1687
+  classification: district
+  name: 'District Office #1'

@@ -15,13 +15,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 4082, Sacramento, CA 95814-4900
-  voice: 916-651-4028
-- note: District Office
-  address: 45-125 Smurr Street, Suite B, Indio, CA 92201
-  voice: 760-398-6442
 links:
 - url: https://senate.ca.gov/sd28
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD28&inframe=N
@@ -31,3 +24,11 @@ other_identifiers:
   identifier: CAL000388
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 4082, Sacramento, CA 95814-4900
+  voice: 916-651-4028
+  classification: capitol
+- address: 45-125 Smurr Street, Suite B, Indio, CA 92201
+  voice: 760-398-6442
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1229;Raleigh, NC 27601-1096
-  voice: 919-715-0850
-- note: District Office
-  address: 87 Duck Pointe Dr;Roxboro, NC 27574
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/694
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Granville
   - Person
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1229;Raleigh, NC 27601-1096
+  voice: 919-715-0850
+  classification: capitol
+- address: 87 Duck Pointe Dr;Roxboro, NC 27574
+  classification: district
+  name: 'District Office #1'

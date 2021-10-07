@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham-5
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 239 Wiswall Hill Rd.;Newfane, VT 05345
-  voice: 802-365-7360
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24012
 - url: http://legislature.vermont.gov/people/single/2022/24012
@@ -29,3 +23,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/24012
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24012
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 239 Wiswall Hill Rd.;Newfane, VT 05345
+  voice: 802-365-7360
+  classification: district
+  name: 'District Office #1'

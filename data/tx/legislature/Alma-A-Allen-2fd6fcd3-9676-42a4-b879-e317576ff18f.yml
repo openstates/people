@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '131'
-contact_details:
-- note: Capitol Office
-  address: Room GW.5;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0744
-  fax: 512-463-0761
-- note: District Office
-  address: 10101 Fondren Road, Suite 500;Houston, TX 77096
-  voice: 713-776-0505
-  fax: 713-776-1490
 links:
 - url: https://house.texas.gov/members/member-page/?district=131
 other_identifiers:
@@ -31,3 +22,13 @@ sources:
 - url: https://house.texas.gov/members/member-page/?district=131
 other_names:
 - name: Alma Allen
+offices:
+- address: Room GW.5;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0744
+  fax: 512-463-0761
+  classification: capitol
+- address: 10101 Fondren Road, Suite 500;Houston, TX 77096
+  voice: 713-776-0505
+  fax: 713-776-1490
+  classification: district
+  name: 'District Office #1'

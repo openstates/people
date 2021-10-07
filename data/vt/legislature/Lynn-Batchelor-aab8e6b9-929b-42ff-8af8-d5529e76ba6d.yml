@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Orleans-1
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 165 Beach St.;Derby Line, VT 05830
-  voice: 802-873-3006
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15770
 - url: http://legislature.vermont.gov/people/single/2022/15770
@@ -31,3 +25,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/15770
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15770
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 165 Beach St.;Derby Line, VT 05830
+  voice: 802-873-3006
+  classification: district
+  name: 'District Office #1'

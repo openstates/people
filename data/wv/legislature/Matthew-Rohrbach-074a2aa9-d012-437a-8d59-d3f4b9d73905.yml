@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  address: Room 215E-C, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3221
-- note: District Office
-  address: 25 Kensington Lane;Huntington, WV 25705
-  voice: 304-563-9040
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Rohrbach
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000323
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Rohrbach
+offices:
+- address: Room 215E-C, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3221
+  classification: capitol
+- address: 25 Kensington Lane;Huntington, WV 25705
+  voice: 304-563-9040
+  classification: district
+  name: 'District Office #1'

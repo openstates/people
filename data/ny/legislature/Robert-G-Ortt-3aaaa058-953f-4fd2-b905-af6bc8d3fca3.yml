@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '62'
-contact_details:
-- note: Capitol Office
-  address: Capitol Building, Room 315;Albany,, NY 12247
-  voice: 518-455-2024
-- note: District Office
-  address: 175 Walnut Street, Suite 6;Lockport,, NY 14094
-  voice: 716-434-0680
-  fax: 716-434-3297
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/robert-g-ortt/contact
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: NYL000372
 sources:
 - url: http://www.nysenate.gov/senators/robert-g-ortt/contact
+offices:
+- address: Capitol Building, Room 315;Albany,, NY 12247
+  voice: 518-455-2024
+  classification: capitol
+- address: 175 Walnut Street, Suite 6;Lockport,, NY 14094
+  voice: 716-434-0680
+  fax: 716-434-3297
+  classification: district
+  name: 'District Office #1'

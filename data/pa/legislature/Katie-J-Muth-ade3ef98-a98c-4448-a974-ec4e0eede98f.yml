@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '44'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203044;Harrisburg, PA 17120-3044;Room:;185 Main Capitol
-  voice: 717-787-1398
-- note: District Office
-  address: 338 Main Street;Royersford, PA 19468
-  voice: 610-792-2137
-  fax: 610-948-3037
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1802
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -27,3 +19,12 @@ sources:
 extras:
   facebook: https://www.facebook.com/senatormuth/
   twitter: https://twitter.com/senatormuth
+offices:
+- address: Senate Box 203044;Harrisburg, PA 17120-3044;Room:;185 Main Capitol
+  voice: 717-787-1398
+  classification: capitol
+- address: 338 Main Street;Royersford, PA 19468
+  voice: 610-792-2137
+  fax: 610-948-3037
+  classification: district
+  name: 'District Office #1'

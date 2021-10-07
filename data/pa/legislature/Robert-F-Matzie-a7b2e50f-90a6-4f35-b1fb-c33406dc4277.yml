@@ -9,16 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  address: 121 Irvis Office Building P.O. Box 202016 Harrisburg, PA 17120-2016
-  voice: 717-787-4444
-  fax: 717-780-4772
-- note: District Office
-  address: Aliquippa Office Franklin Center of Beaver County, Inc. 524 Franklin Ave.
-    Aliquippa, PA 15001
-  voice: 724-375-3052
-  fax: 724-375-3058
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1173
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -35,3 +25,14 @@ sources:
 extras:
   twitter: https://www.twitter.com/RobMatzie
   youtube: http://www.youtube.com/playlist?list=PLFCB4F49FABFC43BF
+offices:
+- address: 121 Irvis Office Building P.O. Box 202016 Harrisburg, PA 17120-2016
+  voice: 717-787-4444
+  fax: 717-780-4772
+  classification: capitol
+- address: Aliquippa Office Franklin Center of Beaver County, Inc. 524 Franklin Ave.
+    Aliquippa, PA 15001
+  voice: 724-375-3052
+  fax: 724-375-3058
+  classification: district
+  name: 'District Office #1'

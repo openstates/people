@@ -8,12 +8,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '19'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2700;Hartford, CT 06106
-  voice: 860-240-8600
-- note: District Office
-  address: 187 Scotland Road;Baltic, CT 06330
 links:
 - url: http://www.senatedems.ct.gov/Osten
 other_names:
@@ -23,3 +17,10 @@ other_identifiers:
   identifier: CTL000222
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2700;Hartford, CT 06106
+  voice: 860-240-8600
+  classification: capitol
+- address: 187 Scotland Road;Baltic, CT 06330
+  classification: district
+  name: 'District Office #1'

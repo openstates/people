@@ -9,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '97'
-contact_details:
-- note: District Office
-  address: 1 Blue Hill Plaza, Ste. 1116; POB 1549; Pearl River, NY 10965
-  voice: 845-624-4601
-- note: Capitol Office
-  address: LOB 718; Albany, NY 12248
-  voice: 518-455-5118
 links:
 - url: https://assembly.state.ny.us/mem/Michael-Lawler
 sources:
 - url: https://assembly.state.ny.us/mem/Michael-Lawler
 other_names:
 - name: Mike Lawler
+offices:
+- address: 1 Blue Hill Plaza, Ste. 1116; POB 1549; Pearl River, NY 10965
+  voice: 845-624-4601
+  classification: district
+  name: 'District Office #1'
+- address: LOB 718; Albany, NY 12248
+  voice: 518-455-5118
+  classification: capitol

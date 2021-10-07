@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: LOB 919; Albany, NY 12248
-  voice: 518-455-5732
-- note: District Office
-  address: 95 Broad Hollow Road; Suite 100; Melville, NY 11747
-  voice: 631-271-8025
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Steve-Stern
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Steve-Stern
 - url: https://assembly.state.ny.us/mem/Steve-Stern
+offices:
+- address: LOB 919; Albany, NY 12248
+  voice: 518-455-5732
+  classification: capitol
+- address: 95 Broad Hollow Road; Suite 100; Melville, NY 11747
+  voice: 631-271-8025
+  classification: district
+  name: 'District Office #1'

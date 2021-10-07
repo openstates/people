@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '118'
-contact_details:
-- note: Capitol Office
-  address: 214-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-5131
-  fax: 217-782-1275
-- note: District Office
-  address: 2 N. Vine St.;Suite 5A;Harrisburg, IL 62946
-  voice: 618-294-8703
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2760
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2961
@@ -26,3 +18,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2760
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2961
+offices:
+- address: 214-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-5131
+  fax: 217-782-1275
+  classification: capitol
+- address: 2 N. Vine St.;Suite 5A;Harrisburg, IL 62946
+  voice: 618-294-8703
+  classification: district
+  name: 'District Office #1'

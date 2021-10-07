@@ -10,11 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '29'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3821
-- note: District Office
-  address: PO Box 100Union Center, SD 57787
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1498&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1582&Session=2019
@@ -30,3 +25,9 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1775/Detail
 extras:
   occupation: Rancher & Businessman
+offices:
+- voice: 605-773-3821
+  classification: capitol
+- address: PO Box 100Union Center, SD 57787
+  classification: district
+  name: 'District Office #1'

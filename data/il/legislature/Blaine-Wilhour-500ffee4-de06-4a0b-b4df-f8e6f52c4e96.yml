@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '107'
-contact_details:
-- note: Capitol Office
-  address: 213-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-0066
-  fax: 217-782-1141
-- note: District Office
-  address: 304 East Jefferson Avenue;Suite A;Effingham, IL 62401
-  voice: 217-994-9348
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2761
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2962
@@ -26,3 +18,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2761
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2962
+offices:
+- address: 213-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-0066
+  fax: 217-782-1141
+  classification: capitol
+- address: 304 East Jefferson Avenue;Suite A;Effingham, IL 62401
+  voice: 217-994-9348
+  classification: district
+  name: 'District Office #1'

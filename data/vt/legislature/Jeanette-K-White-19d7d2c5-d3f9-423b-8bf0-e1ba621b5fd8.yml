@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 35A Old Depot Rd.;Putney, VT 05346
-  voice: 802-387-4379
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14620
 - url: http://legislature.vermont.gov/people/single/2022/14620
@@ -35,3 +29,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14620
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14620
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 35A Old Depot Rd.;Putney, VT 05346
+  voice: 802-387-4379
+  classification: district
+  name: 'District Office #1'

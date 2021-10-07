@@ -9,18 +9,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '58'
-contact_details:
-- note: Capitol Office
-  address: B-16 Main Capitol Building P.O. Box 202058 Harrisburg, PA 17120-2058
-  voice: 717-783-3825
-  fax: 717-782-2964
-- note: District Office
-  address: 851 Finley Road Belle Vernon, PA 15012
-  voice: 724-929-2655
-  fax: 724-929-2651
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1875
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1875
+offices:
+- address: B-16 Main Capitol Building P.O. Box 202058 Harrisburg, PA 17120-2058
+  voice: 717-783-3825
+  fax: 717-782-2964
+  classification: capitol
+- address: 851 Finley Road Belle Vernon, PA 15012
+  voice: 724-929-2655
+  fax: 724-929-2651
+  classification: district
+  name: 'District Office #1'

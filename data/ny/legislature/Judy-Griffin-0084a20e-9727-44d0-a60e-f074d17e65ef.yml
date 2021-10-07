@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: LOB 432; Albany, NY 12248
-  voice: 518-455-4656
-- note: District Office
-  address: 74 N. Village Ave.; Rockville Centre, NY 11570
-  voice: 516-561-8216
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Judy-Griffin
@@ -25,3 +18,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Judy-Griffin
 - url: https://assembly.state.ny.us/mem/Judy-Griffin
+offices:
+- address: LOB 432; Albany, NY 12248
+  voice: 518-455-4656
+  classification: capitol
+- address: 74 N. Village Ave.; Rockville Centre, NY 11570
+  voice: 516-561-8216
+  classification: district
+  name: 'District Office #1'

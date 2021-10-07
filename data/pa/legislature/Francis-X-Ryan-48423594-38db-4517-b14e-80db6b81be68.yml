@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '101'
-contact_details:
-- note: Capitol Office
-  address: 149A East Wing P.O. Box 202101 Harrisburg, PA 17120-2101
-  voice: 717-783-1815
-  fax: 717-782-2937
-- note: District Office
-  address: 1044 E. Main Street Palmyra, PA 17078
-  voice: 717-838-3823
-  fax: 717-832-8194
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1750
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -29,3 +20,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1750
 extras:
   facebook: https://facebook.com/repfrankryan
+offices:
+- address: 149A East Wing P.O. Box 202101 Harrisburg, PA 17120-2101
+  voice: 717-783-1815
+  fax: 717-782-2937
+  classification: capitol
+- address: 1044 E. Main Street Palmyra, PA 17078
+  voice: 717-838-3823
+  fax: 717-832-8194
+  classification: district
+  name: 'District Office #1'

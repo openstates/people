@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: 522A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6966
-- note: District Office
-  address: 305 McKittrick Rd., Pelzer , SC 29669
-  voice: 864-243-5928
-- note: Primary Office
-  voice: 864-704-1058
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1841477052
 other_names:
@@ -32,3 +23,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1841477052
+offices:
+- address: 522A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6966
+  classification: capitol
+- address: 305 McKittrick Rd., Pelzer , SC 29669
+  voice: 864-243-5928
+  classification: district
+  name: 'District Office #1'
+- voice: 864-704-1058
+  classification: primary

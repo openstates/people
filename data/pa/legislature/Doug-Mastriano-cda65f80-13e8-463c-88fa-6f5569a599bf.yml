@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '33'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203033;Harrisburg, PA 17120-3033;Room:;187 Main Capitol
-  voice: 717-787-4651
-- note: District Office
-  address: 118 Carlisle Street Suite 309;Hanover, PA 17331
-  voice: 717-632-1153
-  fax: 717-632-1183
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1869
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -27,3 +19,12 @@ extras:
   facebook: https://www.facebook.com/SenatorDougMastriano
   instagram: https://www.instagram.com/senatormastriano/
   twitter: https://twitter.com/senmastriano
+offices:
+- address: Senate Box 203033;Harrisburg, PA 17120-3033;Room:;187 Main Capitol
+  voice: 717-787-4651
+  classification: capitol
+- address: 118 Carlisle Street Suite 309;Hanover, PA 17331
+  voice: 717-632-1153
+  fax: 717-632-1183
+  classification: district
+  name: 'District Office #1'

@@ -15,14 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: 205 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5013
-- note: District Office
-  address: 1726 South Bumby Avenue; Orlando, FL 32806
-  voice: 407-893-2422
-  fax: 888-263-3680
 links:
 - url: http://www.flsenate.gov/Senators/s13
 - url: http://www.flsenate.gov/Senators/2018-2020/S13
@@ -37,3 +29,12 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s13
 - url: http://www.flsenate.gov/Senators/2018-2020/S13
+offices:
+- address: 205 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5013
+  classification: capitol
+- address: 1726 South Bumby Avenue; Orlando, FL 32806
+  voice: 407-893-2422
+  fax: 888-263-3680
+  classification: district
+  name: 'District Office #1'

@@ -56,14 +56,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-6
-contact_details:
-- note: Capitol Office
-  address: 2311 Rayburn House Office Building Washington DC 20515-0506
-  voice: 202-225-7163
-- note: District Office
-  address: 501 I St. Suite 12-600; Sacramento, CA 95814
-  voice: 916-498-5600
-  fax: 916-444-6117
 links:
 - url: https://matsui.house.gov
   note: website
@@ -102,3 +94,12 @@ other_identifiers:
   identifier: Doris Matsui
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2311 Rayburn House Office Building Washington DC 20515-0506
+  voice: 202-225-7163
+  classification: capitol
+- address: 501 I St. Suite 12-600; Sacramento, CA 95814
+  voice: 916-498-5600
+  fax: 916-444-6117
+  classification: district
+  name: 'District Office #1'

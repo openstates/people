@@ -9,12 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 3105;Hartford, CT 06106
-  voice: 860-240-8600
-- note: District Office
-  address: 235 Blue Hills Avenue;Hartford, CT 06112
 links:
 - url: http://www.senatedems.ct.gov/McCrory
 other_names:
@@ -26,3 +20,10 @@ other_identifiers:
   identifier: CTL000359
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 3105;Hartford, CT 06106
+  voice: 860-240-8600
+  classification: capitol
+- address: 235 Blue Hills Avenue;Hartford, CT 06112
+  classification: district
+  name: 'District Office #1'

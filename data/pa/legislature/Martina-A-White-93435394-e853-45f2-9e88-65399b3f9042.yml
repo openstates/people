@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '170'
-contact_details:
-- note: Capitol Office
-  address: 152 Main Capitol Building P.O. Box 202170 Harrisburg, PA 17120-2170
-  voice: 717-787-6740
-  fax: 717-782-2929
-- note: District Office
-  address: 10501 Academy Road Unit E Philadelphia, PA 19114
-  voice: 215-632-3237
-  fax: 215-632-3437
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1732
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/repmartinawhite/
   youtube: https://www.youtube.com/channel/UCUOL82HXazpV73JY-PxuofQ
+offices:
+- address: 152 Main Capitol Building P.O. Box 202170 Harrisburg, PA 17120-2170
+  voice: 717-787-6740
+  fax: 717-782-2929
+  classification: capitol
+- address: 10501 Academy Road Unit E Philadelphia, PA 19114
+  voice: 215-632-3237
+  fax: 215-632-3437
+  classification: district
+  name: 'District Office #1'

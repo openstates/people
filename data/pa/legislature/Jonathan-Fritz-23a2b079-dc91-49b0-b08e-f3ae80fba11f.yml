@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '111'
-contact_details:
-- note: Capitol Office
-  address: 414 Irvis Office Building P.O. Box 202111 Harrisburg, PA 17120-2111
-  voice: 717-783-2910
-  fax: 717-782-2957
-- note: District Office
-  address: Preston Township Building 1515 Crosstown Highway Lakewood, PA 18439
-  voice: 570-278-3374
-  fax: 570-278-2952
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1752
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -29,3 +20,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1752
 extras:
   facebook: https://facebook.com/repfritz
+offices:
+- address: 414 Irvis Office Building P.O. Box 202111 Harrisburg, PA 17120-2111
+  voice: 717-783-2910
+  fax: 717-782-2957
+  classification: capitol
+- address: Preston Township Building 1515 Crosstown Highway Lakewood, PA 18439
+  voice: 570-278-3374
+  fax: 570-278-2952
+  classification: district
+  name: 'District Office #1'

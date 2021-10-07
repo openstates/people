@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: Room 213;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3232
-- note: District Office
-  address: P.O. Box 303;Corinth, MS 38835
-  voice: 662-287-6323
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/parks.xml
 other_identifiers:
@@ -26,3 +19,11 @@ sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/parks.xml
 extras:
   org_info: Senator Parks is a member of the Kiwanis, NRA, ASQ and PDA.
+offices:
+- address: Room 213;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3232
+  classification: capitol
+- address: P.O. Box 303;Corinth, MS 38835
+  voice: 662-287-6323
+  classification: district
+  name: 'District Office #1'

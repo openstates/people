@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 4085, Sacramento, CA 95814-4900
-  voice: 916-651-4010
-- note: District Office
-  address: 39510 Paseo Padre Parkway, Suite 280, Fremont, CA 94538
-  voice: 510-794-3900
 links:
 - url: https://senate.ca.gov/sd10
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD10&inframe=N
@@ -32,3 +25,11 @@ other_identifiers:
   identifier: CAL000479
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 4085, Sacramento, CA 95814-4900
+  voice: 916-651-4010
+  classification: capitol
+- address: 39510 Paseo Padre Parkway, Suite 280, Fremont, CA 94538
+  voice: 510-794-3900
+  classification: district
+  name: 'District Office #1'

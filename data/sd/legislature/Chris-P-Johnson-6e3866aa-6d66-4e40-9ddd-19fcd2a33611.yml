@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3851
-- note: District Office
-  address: 2526 Grandview Dr.Rapid City, SD 57701
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1642&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1807/Detail
@@ -29,3 +24,9 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1807/Detail
 extras:
   occupation: President - Mountain Time, Inc.
+offices:
+- voice: 605-773-3851
+  classification: capitol
+- address: 2526 Grandview Dr.Rapid City, SD 57701
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '78'
-contact_details:
-- note: Capitol Office
-  address: Room 400-H;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3371
-- note: District Office
-  address: 672 North 8th Ave;P.O. Box 424;Decatur, MS 39327
-  voice: 601-635-2044
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/rushing.xml
 other_identifiers:
@@ -29,3 +22,11 @@ extras:
     Legion Post 89, NRA, and North Decatur Water Assoc. Board.  Rep. Rushing previously
     served as Alderman and Mayor in Decatur, police officer, and served over 21 years
     as a Volunteer Firefighter and EMT.
+offices:
+- address: Room 400-H;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3371
+  classification: capitol
+- address: 672 North 8th Ave;P.O. Box 424;Decatur, MS 39327
+  voice: 601-635-2044
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203047;Harrisburg, PA 17120-3047;Room:;362 Main Capitol
-  voice: 717-787-3076
-  fax: 717-772-2756
-- note: District Office
-  address: 488 Adams Street;Rochester, PA 15074
-  voice: 724-774-0444
-  fax: 724-773-7384
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1189
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: http://www.facebook.com/senator.elder.vogel
   twitter: http://twitter.com/@SenElderVogelJr
+offices:
+- address: Senate Box 203047;Harrisburg, PA 17120-3047;Room:;362 Main Capitol
+  voice: 717-787-3076
+  fax: 717-772-2756
+  classification: capitol
+- address: 488 Adams Street;Rochester, PA 15074
+  voice: 724-774-0444
+  fax: 724-773-7384
+  classification: district
+  name: 'District Office #1'

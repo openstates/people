@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: Room 201;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3340
-- note: District Office
-  address: P.O. Drawer 300;Pontotoc, MS 38863
-  voice: 662-489-5157
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/huddleston.xml
 other_identifiers:
@@ -27,3 +20,11 @@ sources:
 extras:
   org_info: Representative Huddleston is a member of the Pontotoc Chamber of Commerce,
     Farm Bureau, Pontotoc Band Boosters, and  Vietnam Helicopter Pilots Association.
+offices:
+- address: Room 201;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3340
+  classification: capitol
+- address: P.O. Drawer 300;Pontotoc, MS 38863
+  voice: 662-489-5157
+  classification: district
+  name: 'District Office #1'

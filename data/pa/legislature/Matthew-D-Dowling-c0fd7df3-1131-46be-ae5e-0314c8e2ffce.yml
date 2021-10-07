@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: 53B East Wing P.O. Box 202051 Harrisburg, PA 17120-2051
-  voice: 717-783-5173
-  fax: 717-782-2963
-- note: District Office
-  address: Ohiopyle Stewart Community Center 15 Sherman Street Ohiopyle, PA 15470
-  voice: 814-634-4390
-  fax: 724-438-6104
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1746
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/repdowling
   twitter: https://twitter.com/repdowling
+offices:
+- address: 53B East Wing P.O. Box 202051 Harrisburg, PA 17120-2051
+  voice: 717-783-5173
+  fax: 717-782-2963
+  classification: capitol
+- address: Ohiopyle Stewart Community Center 15 Sherman Street Ohiopyle, PA 15470
+  voice: 814-634-4390
+  fax: 724-438-6104
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: LOB 439; Albany, NY 12248
-  voice: 518-455-3028
-- note: District Office
-  address: 2001 Park St.; Atlantic Beach, NY 11509
-  voice: 516-431-0500
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Melissa-Miller
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Melissa-Miller
 - url: https://assembly.state.ny.us/mem/Melissa-Miller
+offices:
+- address: LOB 439; Albany, NY 12248
+  voice: 518-455-3028
+  classification: capitol
+- address: 2001 Park St.; Atlantic Beach, NY 11509
+  voice: 516-431-0500
+  classification: district
+  name: 'District Office #1'

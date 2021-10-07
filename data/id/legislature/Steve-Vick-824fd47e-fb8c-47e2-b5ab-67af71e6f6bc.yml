@@ -16,11 +16,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1345
-- note: District Office
-  address: 2140 E Hanley Ave, Dalton Gardens, ID, 83815
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=2
 other_identifiers:
@@ -34,3 +29,9 @@ other_identifiers:
   identifier: ocd-person/2c1dc41c-d9b9-46bf-97ae-74a9b689b7be
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
+offices:
+- voice: 208-332-1345
+  classification: capitol
+- address: 2140 E Hanley Ave, Dalton Gardens, ID, 83815
+  classification: district
+  name: 'District Office #1'

@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2765
-- note: District Office
-  address: 5550 Merrick Road;Massapequa,, NY 11758
-  voice: 516-882-0630
-  fax: 518-426-6925
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/john-e-brooks/contact
@@ -28,3 +20,12 @@ other_identifiers:
   identifier: NYL000451
 sources:
 - url: http://www.nysenate.gov/senators/john-e-brooks/contact
+offices:
+- address: Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-2765
+  classification: capitol
+- address: 5550 Merrick Road;Massapequa,, NY 11758
+  voice: 516-882-0630
+  fax: 518-426-6925
+  classification: district
+  name: 'District Office #1'

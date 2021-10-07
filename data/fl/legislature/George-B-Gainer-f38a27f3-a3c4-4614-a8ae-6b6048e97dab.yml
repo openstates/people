@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: 408 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5002
-- note: District Office
-  address: Northwest Florida State College; 100 East College Boulevard; Building 330,
-    Rooms 105 and 112; Niceville, FL 32578
-  voice: 850-747-5454
 links:
 - url: http://www.flsenate.gov/Senators/s2
 - url: http://www.flsenate.gov/Senators/2018-2020/S2
@@ -28,3 +20,12 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s2
 - url: http://www.flsenate.gov/Senators/2018-2020/S2
+offices:
+- address: 408 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5002
+  classification: capitol
+- address: Northwest Florida State College; 100 East College Boulevard; Building 330,
+    Rooms 105 and 112; Niceville, FL 32578
+  voice: 850-747-5454
+  classification: district
+  name: 'District Office #1'

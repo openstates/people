@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '52'
-contact_details:
-- note: Capitol Office
-  address: Room 206E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3160
-- note: District Office
-  address: P.O. Box 5;Kingwood, WV 26537
-  voice: 304-290-1122
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Sypolt
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000387
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Sypolt
+offices:
+- address: Room 206E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3160
+  classification: capitol
+- address: P.O. Box 5;Kingwood, WV 26537
+  voice: 304-290-1122
+  classification: district
+  name: 'District Office #1'

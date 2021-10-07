@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: 105D Capitol Building;Springfield, IL 62706
-  voice: 217-782-8000
-- note: District Office
-  address: 5400 W. Elm St.;Suite 103;McHenry, IL 60050
-  voice: 815-455-6330
-  fax: 815-679-6756
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2711
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2925
@@ -28,3 +20,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2711
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2925
+offices:
+- address: 105D Capitol Building;Springfield, IL 62706
+  voice: 217-782-8000
+  classification: capitol
+- address: 5400 W. Elm St.;Suite 103;McHenry, IL 60050
+  voice: 815-455-6330
+  fax: 815-679-6756
+  classification: district
+  name: 'District Office #1'

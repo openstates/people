@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: 211 Ryan Office Building P.O. Box 202013 Harrisburg, PA 17120-2013
-  voice: 717-260-6117
-  fax: 717-782-2917
-- note: District Office
-  address: 1 Commerce Blvd. Suite 200 West Grove, PA 19390
-  voice: 610-869-1602
-  fax: 610-869-1605
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1215
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepLawrence
   youtube: https://youtube.com/RepLawrence
+offices:
+- address: 211 Ryan Office Building P.O. Box 202013 Harrisburg, PA 17120-2013
+  voice: 717-260-6117
+  fax: 717-782-2917
+  classification: capitol
+- address: 1 Commerce Blvd. Suite 200 West Grove, PA 19390
+  voice: 610-869-1602
+  fax: 610-869-1605
+  classification: district
+  name: 'District Office #1'

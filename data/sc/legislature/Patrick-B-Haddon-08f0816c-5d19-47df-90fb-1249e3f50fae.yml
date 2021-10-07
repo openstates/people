@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '19'
-contact_details:
-- note: Capitol Office
-  address: 320A Blatt Bldg., Columbia,, SC 29201
-  voice: 803-212-6962
-- note: District Office
-  address: PO Box 14884, Greenville,, SC 29610
-- note: Primary Office
-  voice: 864-320-1946
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0733806731
 other_names:
@@ -24,3 +16,12 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0733806731
+offices:
+- address: 320A Blatt Bldg., Columbia,, SC 29201
+  voice: 803-212-6962
+  classification: capitol
+- address: PO Box 14884, Greenville,, SC 29610
+  classification: district
+  name: 'District Office #1'
+- voice: 864-320-1946
+  classification: primary

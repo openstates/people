@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '109'
-contact_details:
-- note: Capitol Office
-  address: 607-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0287
-- note: District Office
-  address: 289 Jonesboro Rd.; Ste. 401; McDonough, GA 30253
 links:
 - url: https://www.legis.ga.gov/members/house/5001?session=1029
 sources:
@@ -33,3 +27,10 @@ extras:
   press: https://house-press.com/representative/Regina-Lewis-Ward
   staff: A. Jeffrey McNair - Administrative Assistant
   staff email: jeffrey.mcnair@house.ga.gov
+offices:
+- address: 607-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0287
+  classification: capitol
+- address: 289 Jonesboro Rd.; Ste. 401; McDonough, GA 30253
+  classification: district
+  name: 'District Office #1'

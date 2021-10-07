@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Orange-1
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 859 Graham Rd.;Williamstown, VT 05679
-  voice: 802-433-6127
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24008
 - url: http://legislature.vermont.gov/people/single/2022/24008
@@ -29,3 +23,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/24008
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24008
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 859 Graham Rd.;Williamstown, VT 05679
+  voice: 802-433-6127
+  classification: district
+  name: 'District Office #1'

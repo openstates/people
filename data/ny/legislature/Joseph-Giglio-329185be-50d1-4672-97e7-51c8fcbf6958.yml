@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '148'
-contact_details:
-- note: Capitol Office
-  address: LOB 525; Albany, NY 12248
-  voice: 518-455-5241
-- note: District Office
-  address: 700 West State Street; Olean, NY 14760
-  voice: 716-373-7103
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Joseph-M-Giglio
@@ -33,3 +26,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Joseph-M-Giglio
 - url: https://assembly.state.ny.us/mem/Joseph-M-Giglio
+offices:
+- address: LOB 525; Albany, NY 12248
+  voice: 518-455-5241
+  classification: capitol
+- address: 700 West State Street; Olean, NY 14760
+  voice: 716-373-7103
+  classification: district
+  name: 'District Office #1'

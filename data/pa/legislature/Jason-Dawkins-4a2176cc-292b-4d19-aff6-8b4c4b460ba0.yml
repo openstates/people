@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '179'
-contact_details:
-- note: Capitol Office
-  address: 32B East Wing P.O. Box 202179 Harrisburg, PA 17120-2179
-  voice: 717-787-1354
-  fax: 717-780-4789
-- note: District Office
-  address: 4667 Paul Street Philadelphia, PA 19124
-  voice: 215-744-7901
-  fax: 215-744-7906
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1685
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1685
+offices:
+- address: 32B East Wing P.O. Box 202179 Harrisburg, PA 17120-2179
+  voice: 717-787-1354
+  fax: 717-780-4789
+  classification: capitol
+- address: 4667 Paul Street Philadelphia, PA 19124
+  voice: 215-744-7901
+  fax: 215-744-7906
+  classification: district
+  name: 'District Office #1'

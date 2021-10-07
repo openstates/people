@@ -21,13 +21,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 205, Sacramento, CA 95814-4900
-  voice: 916-651-4039
-- note: District Office
-  address: 1350 Front Street, Suite 4061, San Diego, CA 92101
-  voice: 619-645-3133
 links:
 - url: https://senate.ca.gov/sd39
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD39&inframe=N
@@ -49,3 +42,11 @@ other_identifiers:
   identifier: ocd-person/4a469b57-af04-4bbe-bec7-145686fc3e55
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 205, Sacramento, CA 95814-4900
+  voice: 916-651-4039
+  classification: capitol
+- address: 1350 Front Street, Suite 4061, San Diego, CA 92101
+  voice: 619-645-3133
+  classification: district
+  name: 'District Office #1'

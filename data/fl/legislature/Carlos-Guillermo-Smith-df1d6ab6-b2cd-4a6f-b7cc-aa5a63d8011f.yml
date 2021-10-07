@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '49'
-contact_details:
-- note: Capitol Office
-  address: 1402 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5049
-- note: District Office
-  address: Unit 3; 4063 North Goldenrod Road; Winter Park, FL 32792-8914
-  voice: 407-681-5433
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4642&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4642&LegislativeTermId=88
@@ -27,3 +20,11 @@ sources:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4642&LegislativeTermId=88
+offices:
+- address: 1402 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5049
+  classification: capitol
+- address: Unit 3; 4063 North Goldenrod Road; Winter Park, FL 32792-8914
+  voice: 407-681-5433
+  classification: district
+  name: 'District Office #1'

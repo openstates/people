@@ -11,12 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  voice: 804-698-1008
-- note: District Office
-  address: P.O. Box 21094;Roanoke, Virginia 24018
-  voice: 540-384-0276
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H308
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H308
@@ -30,3 +24,10 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H308
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H308
+offices:
+- voice: 804-698-1008
+  classification: capitol
+- address: P.O. Box 21094;Roanoke, Virginia 24018
+  voice: 540-384-0276
+  classification: district
+  name: 'District Office #1'

@@ -20,14 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TX-21
-contact_details:
-- note: Capitol Office
-  address: 1005 Longworth House Office Building Washington DC 20515-4321
-  voice: 202-225-4236
-- note: District Office
-  address: 1100 NE Loop 410 Suite 640; San Antonio, TX 78209-1537
-  voice: 210-821-5024
-  fax: 210-821-5947
 links:
 - url: https://roy.house.gov
   note: website
@@ -56,3 +48,12 @@ other_identifiers:
   identifier: kg:/g/11fghyq4y1
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1005 Longworth House Office Building Washington DC 20515-4321
+  voice: 202-225-4236
+  classification: capitol
+- address: 1100 NE Loop 410 Suite 640; San Antonio, TX 78209-1537
+  voice: 210-821-5024
+  fax: 210-821-5947
+  classification: district
+  name: 'District Office #1'

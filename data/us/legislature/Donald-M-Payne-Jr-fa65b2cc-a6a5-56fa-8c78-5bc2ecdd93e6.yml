@@ -41,22 +41,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NJ-10
-contact_details:
-- note: Capitol Office
-  address: 106 Cannon House Office Building Washington DC 20515-3010
-  voice: 202-225-3436
-- note: District Office
-  address: 1455 Liberty Ave.; Hillside, NJ 07205
-  voice: 862-229-2994
-  fax: 862-225-2941
-- note: District Office
-  address: 253 Martin Luther King Dr.; Jersey City, NJ 07305
-  voice: 201-369-0392
-  fax: 201-369-0395
-- note: District Office
-  address: 60 Nelson Pl. 14th Floor; Newark, NJ 07102
-  voice: 973-645-3213
-  fax: 973-645-5902
 links:
 - url: https://payne.house.gov
   note: website
@@ -93,3 +77,22 @@ other_identifiers:
   identifier: Donald Payne Jr.
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 106 Cannon House Office Building Washington DC 20515-3010
+  voice: 202-225-3436
+  classification: capitol
+- address: 1455 Liberty Ave.; Hillside, NJ 07205
+  voice: 862-229-2994
+  fax: 862-225-2941
+  classification: district
+  name: 'District Office #1'
+- address: 253 Martin Luther King Dr.; Jersey City, NJ 07305
+  voice: 201-369-0392
+  fax: 201-369-0395
+  classification: district
+  name: 'District Office #2'
+- address: 60 Nelson Pl. 14th Floor; Newark, NJ 07102
+  voice: 973-645-3213
+  fax: 973-645-5902
+  classification: district
+  name: 'District Office #3'

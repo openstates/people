@@ -14,12 +14,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  address: Room 213W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7845
-- note: District Office
-  address: P.O. Box 910;Weston, WV 26452
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
@@ -29,3 +23,10 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
+offices:
+- address: Room 213W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7845
+  classification: capitol
+- address: P.O. Box 910;Weston, WV 26452
+  classification: district
+  name: 'District Office #1'

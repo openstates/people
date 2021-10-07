@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '49'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4029;Hartford, CT 06106
-  voice: 860-240-8500
-- note: District Office
-  address: 120 Bolivia Street;Willimantic, CT 06226
-  voice: 860-423-2085
 links:
 - url: http://www.housedems.ct.gov/Johnson
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000085
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4029;Hartford, CT 06106
+  voice: 860-240-8500
+  classification: capitol
+- address: 120 Bolivia Street;Willimantic, CT 06226
+  voice: 860-423-2085
+  classification: district
+  name: 'District Office #1'

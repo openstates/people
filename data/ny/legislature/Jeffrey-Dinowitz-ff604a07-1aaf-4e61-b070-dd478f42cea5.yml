@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '81'
-contact_details:
-- note: Capitol Office
-  address: LOB 831; Albany, NY 12248
-  voice: 518-455-5965
-- note: District Office
-  address: 3107 Kingsbridge Avenue; Bronx, NY 10463
-  voice: 718-796-5345
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Jeffrey-Dinowitz
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Jeffrey-Dinowitz
 - url: https://assembly.state.ny.us/mem/Jeffrey-Dinowitz
+offices:
+- address: LOB 831; Albany, NY 12248
+  voice: 518-455-5965
+  classification: capitol
+- address: 3107 Kingsbridge Avenue; Bronx, NY 10463
+  voice: 718-796-5345
+  classification: district
+  name: 'District Office #1'

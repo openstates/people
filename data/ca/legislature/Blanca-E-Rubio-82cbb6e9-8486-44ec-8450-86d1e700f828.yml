@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0048
-  voice: 916-319-2048
-- note: District Office
-  address: 100 North Barranca Street, Suite 895;West Covina, CA 91791
-  voice: 626-960-4457
 links:
 - url: https://a48.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD48&inframe=N
@@ -28,3 +21,11 @@ other_identifiers:
   identifier: CAL000529
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0048
+  voice: 916-319-2048
+  classification: capitol
+- address: 100 North Barranca Street, Suite 895;West Covina, CA 91791
+  voice: 626-960-4457
+  classification: district
+  name: 'District Office #1'

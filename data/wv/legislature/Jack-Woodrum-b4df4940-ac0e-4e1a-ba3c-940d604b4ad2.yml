@@ -10,14 +10,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: Room 229W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7849
-- note: District Office
-  address: P.O. Box 1496;Hinton, WV 25951
-  voice: 304-660-9241
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Woodrum
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Woodrum
+offices:
+- address: Room 229W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7849
+  classification: capitol
+- address: P.O. Box 1496;Hinton, WV 25951
+  voice: 304-660-9241
+  classification: district
+  name: 'District Office #1'

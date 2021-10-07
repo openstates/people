@@ -9,12 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '23'
-contact_details:
-- note: Capitol Office
-  address: 303 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6320
-- note: District Office
-  address: PO Box 84783, Lexington, SC 29073
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1656817983
 other_names:
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=1656817983
+offices:
+- address: 303 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6320
+  classification: capitol
+- address: PO Box 84783, Lexington, SC 29073
+  classification: district
+  name: 'District Office #1'

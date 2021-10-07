@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: Room 4R, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3367
-- note: District Office
-  address: 623 Wabash Drive;Follansbee, WV 26037
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Diserio
 other_identifiers:
@@ -23,3 +17,10 @@ other_identifiers:
   identifier: WVL000371
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Diserio
+offices:
+- address: Room 4R, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3367
+  classification: capitol
+- address: 623 Wabash Drive;Follansbee, WV 26037
+  classification: district
+  name: 'District Office #1'

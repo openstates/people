@@ -11,14 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Berkshire, Hampshire, Franklin and Hampden
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 109-E;Boston, MA, 02133
-  voice: 617-722-1625
-  fax: 617-722-1523
-- note: District Office
-  address: 100 North Street;Suite 410;Pittsfield, MA 01201
-  voice: 413-344-4561
 links:
 - url: https://malegislature.gov/Legislators/Profile/AGH0
 other_identifiers:
@@ -28,3 +20,12 @@ other_identifiers:
   identifier: MAL000568
 sources:
 - url: https://malegislature.gov/Legislators/Profile/AGH0
+offices:
+- address: 24 Beacon St.;Room 109-E;Boston, MA, 02133
+  voice: 617-722-1625
+  fax: 617-722-1523
+  classification: capitol
+- address: 100 North Street;Suite 410;Pittsfield, MA 01201
+  voice: 413-344-4561
+  classification: district
+  name: 'District Office #1'
