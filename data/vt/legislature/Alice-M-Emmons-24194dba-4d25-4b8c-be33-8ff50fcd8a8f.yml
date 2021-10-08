@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor-3-2
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 318 Summer St.;Springfield, VT 05156
-  voice: 802-885-5893
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14512
 - url: http://legislature.vermont.gov/people/single/2022/14512
@@ -37,3 +31,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14512
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14512
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 318 Summer St.;Springfield, VT 05156
+  voice: 802-885-5893
+  classification: district
+  name: 'District Office #1'

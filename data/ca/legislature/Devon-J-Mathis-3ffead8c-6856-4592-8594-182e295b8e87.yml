@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0026
-  voice: 916-319-2026
-- note: District Office
-  address: 100 West Willow Plaza, Suite 405;Visalia, CA 93291
-  voice: 559-636-3440
 links:
 - url: https://ad26.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD26&inframe=N
@@ -28,3 +21,11 @@ sources:
 - url: http://assembly.ca.gov/assemblymembers
 other_names:
 - name: Devon Mathis
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0026
+  voice: 916-319-2026
+  classification: capitol
+- address: 100 West Willow Plaza, Suite 405;Visalia, CA 93291
+  voice: 559-636-3440
+  classification: district
+  name: 'District Office #1'

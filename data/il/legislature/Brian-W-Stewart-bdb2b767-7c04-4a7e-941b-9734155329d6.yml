@@ -13,14 +13,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '45'
-contact_details:
-- note: Capitol Office
-  address: 105C Capitol Building;Springfield, IL 62706
-  voice: 217-782-0180
-- note: District Office
-  address: 50 W. Douglas St.;Suite 1001;Freeport, IL 61032
-  voice: 815-284-0045
-  fax: 815-232-0777
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2720
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2926
@@ -34,3 +26,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2720
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2926
+offices:
+- address: 105C Capitol Building;Springfield, IL 62706
+  voice: 217-782-0180
+  classification: capitol
+- address: 50 W. Douglas St.;Suite 1001;Freeport, IL 61032
+  voice: 815-284-0045
+  fax: 815-232-0777
+  classification: district
+  name: 'District Office #1'

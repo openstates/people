@@ -10,16 +10,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '67'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0067
-  voice: 916-319-2067
-- note: District Office
-  address: 41391 Kalmia Street, Suite 220;Murrieta, CA 92562
-  voice: 951-894-1232
 links:
 - url: https://ad67.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD67&inframe=N
   note: Contact Form
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0067
+  voice: 916-319-2067
+  classification: capitol
+- address: 41391 Kalmia Street, Suite 220;Murrieta, CA 92562
+  voice: 951-894-1232
+  classification: district
+  name: 'District Office #1'

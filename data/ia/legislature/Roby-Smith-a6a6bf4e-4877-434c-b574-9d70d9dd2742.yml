@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 2036 E 48th St, Davenport, IA 52807
-  voice: 563-386-0179
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9386
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9386
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9386
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9386
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 2036 E 48th St, Davenport, IA 52807
+  voice: 563-386-0179
+  classification: district
+  name: 'District Office #1'

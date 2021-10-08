@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '63'
-contact_details:
-- note: Capitol Office
-  address: 327A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6785
-- note: District Office
-  address: 626 W. Evans St., Florence, SC 29501
-  voice: 843-229-1874
-- note: Primary Office
-  voice: 843-662-4474
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0957954431
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0957954431
+offices:
+- address: 327A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6785
+  classification: capitol
+- address: 626 W. Evans St., Florence, SC 29501
+  voice: 843-229-1874
+  classification: district
+  name: 'District Office #1'
+- voice: 843-662-4474
+  classification: primary

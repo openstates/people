@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: 115 Irvis Office Building P.O. Box 202032 Harrisburg, PA 17120-2032
-  voice: 717-783-1011
-  fax: 717-772-9937
-- note: District Office
-  address: 7205 Saltsburg Road Pittsburgh, PA 15235
-  voice: 412-793-2448
-  fax: 412-793-7495
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=47
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepTonyDeLuca/
   youtube: http://www.youtube.com/playlist?list=PL7DD9E32CC64A3D8F
+offices:
+- address: 115 Irvis Office Building P.O. Box 202032 Harrisburg, PA 17120-2032
+  voice: 717-783-1011
+  fax: 717-772-9937
+  classification: capitol
+- address: 7205 Saltsburg Road Pittsburgh, PA 15235
+  voice: 412-793-2448
+  fax: 412-793-7495
+  classification: district
+  name: 'District Office #1'

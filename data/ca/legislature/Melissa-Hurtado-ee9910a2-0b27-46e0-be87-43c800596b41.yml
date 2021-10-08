@@ -11,16 +11,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 3070, Sacramento, CA 95814-4900
-  voice: 916-651-4014
-- note: District Office
-  address: 2550 Mariposa Mall, Suite 2016, Fresno, CA 93721
-  voice: 559-264-3070
 links:
 - url: https://senate.ca.gov/sd14
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD14&inframe=N
   note: Contact Form
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 3070, Sacramento, CA 95814-4900
+  voice: 916-651-4014
+  classification: capitol
+- address: 2550 Mariposa Mall, Suite 2016, Fresno, CA 93721
+  voice: 559-264-3070
+  classification: district
+  name: 'District Office #1'

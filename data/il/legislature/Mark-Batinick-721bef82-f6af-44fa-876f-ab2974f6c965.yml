@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '97'
-contact_details:
-- note: Capitol Office
-  address: 200-8N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-1331
-- note: District Office
-  address: 24047 W. Lockport St.;Plainfield;, IL 60544
-  voice: 815-254-0000
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2653
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2878
@@ -28,3 +21,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2653
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2878
+offices:
+- address: 200-8N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-1331
+  classification: capitol
+- address: 24047 W. Lockport St.;Plainfield;, IL 60544
+  voice: 815-254-0000
+  classification: district
+  name: 'District Office #1'

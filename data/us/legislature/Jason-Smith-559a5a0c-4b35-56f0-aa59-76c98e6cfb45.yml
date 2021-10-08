@@ -36,29 +36,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MO-8
-contact_details:
-- note: Capitol Office
-  address: 2418 Rayburn House Office Building Washington DC 20515-2508
-  voice: 202-225-4404
-- note: District Office
-  address: 2502 Tanner Dr. Suite 205; Cape Girardeau, MO 63703
-  voice: 573-335-0101
-  fax: 573-335-1931
-- note: District Office
-  address: 22 E. Columbia St.; Farmington, MO 63640
-  voice: 573-756-9755
-  fax: 573-756-9762
-- note: District Office
-  address: 2725 N. Westwood Blvd. Suite 5A; Poplar Bluff, MO 63901
-  voice: 573-609-2996
-- note: District Office
-  address: 830A S. Bishop; Rolla, MO 65401
-  voice: 573-364-2455
-  fax: 573-364-1053
-- note: District Office
-  address: 35 Court Sq. Suite 300; West Plains, MO 65775
-  voice: 417-255-1515
-  fax: 417-255-2009
 links:
 - url: https://jasonsmith.house.gov
   note: website
@@ -95,3 +72,31 @@ other_identifiers:
   identifier: kg:/m/0g9yj_2
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2418 Rayburn House Office Building Washington DC 20515-2508
+  voice: 202-225-4404
+  classification: capitol
+- address: 2502 Tanner Dr. Suite 205; Cape Girardeau, MO 63703
+  voice: 573-335-0101
+  fax: 573-335-1931
+  classification: district
+  name: 'District Office #1'
+- address: 22 E. Columbia St.; Farmington, MO 63640
+  voice: 573-756-9755
+  fax: 573-756-9762
+  classification: district
+  name: 'District Office #2'
+- address: 2725 N. Westwood Blvd. Suite 5A; Poplar Bluff, MO 63901
+  voice: 573-609-2996
+  classification: district
+  name: 'District Office #3'
+- address: 830A S. Bishop; Rolla, MO 65401
+  voice: 573-364-2455
+  fax: 573-364-1053
+  classification: district
+  name: 'District Office #4'
+- address: 35 Court Sq. Suite 300; West Plains, MO 65775
+  voice: 417-255-1515
+  fax: 417-255-2009
+  classification: district
+  name: 'District Office #5'

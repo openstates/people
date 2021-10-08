@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '55'
-contact_details:
-- note: District Office
-  address: Suite B; 205 South Commerce Avenue; Sebring, FL 33870-3626
+offices:
+- address: Suite B; 205 South Commerce Avenue; Sebring, FL 33870-3626
   voice: 863-386-6000
-- note: Capitol Office
-  address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5055
+  classification: capitol

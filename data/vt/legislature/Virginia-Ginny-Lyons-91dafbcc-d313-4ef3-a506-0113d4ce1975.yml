@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 241 White Birch Lane;Williston, VT 05495
-  voice: 802-863-6129
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14616
 - url: http://legislature.vermont.gov/people/single/2022/14616
@@ -35,3 +29,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14616
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14616
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 241 White Birch Lane;Williston, VT 05495
+  voice: 802-863-6129
+  classification: district
+  name: 'District Office #1'

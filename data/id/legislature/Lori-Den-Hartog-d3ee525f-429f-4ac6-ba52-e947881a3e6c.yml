@@ -12,11 +12,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1340
-- note: District Office
-  address: PO Box 267, Meridian, ID, 83680
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=22
 other_identifiers:
@@ -28,3 +23,9 @@ other_identifiers:
   identifier: ocd-person/2a3c21f7-09cf-4e53-82ab-bad426b34158
 sources:
 - url: https://legislature.idaho.gov/senate/membership/
+offices:
+- voice: 208-332-1340
+  classification: capitol
+- address: PO Box 267, Meridian, ID, 83680
+  classification: district
+  name: 'District Office #1'

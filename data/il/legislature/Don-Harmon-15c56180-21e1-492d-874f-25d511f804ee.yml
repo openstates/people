@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: 327 Capitol Building;Springfield, IL 62706
-  voice: 217-782-8176
-- note: District Office
-  address: 6941-B W. North Avenue;Oak Park, IL 60302
-  voice: 708-848-2002
-  fax: 708-848-2022
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2551
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2806
@@ -34,3 +26,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2551
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2806
+offices:
+- address: 327 Capitol Building;Springfield, IL 62706
+  voice: 217-782-8176
+  classification: capitol
+- address: 6941-B W. North Avenue;Oak Park, IL 60302
+  voice: 708-848-2002
+  fax: 708-848-2022
+  classification: district
+  name: 'District Office #1'

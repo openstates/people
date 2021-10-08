@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 4321 Calkins Ave SW, Oxford, IA 52322
-  voice: 319-631-4667
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14817
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14817
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14817
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14817
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 4321 Calkins Ave SW, Oxford, IA 52322
+  voice: 319-631-4667
+  classification: district
+  name: 'District Office #1'

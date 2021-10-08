@@ -15,13 +15,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 5097, Sacramento, CA 95814-4900
-  voice: 916-651-4005
-- note: District Office
-  address: 31 E. Channel Street, Suite 440, Stockton, CA 95202
-  voice: 209-948-7930
 links:
 - url: https://senate.ca.gov/sd05
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD05&inframe=N
@@ -31,3 +24,11 @@ other_identifiers:
   identifier: CAL000361
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 5097, Sacramento, CA 95814-4900
+  voice: 916-651-4005
+  classification: capitol
+- address: 31 E. Channel Street, Suite 440, Stockton, CA 95202
+  voice: 209-948-7930
+  classification: district
+  name: 'District Office #1'

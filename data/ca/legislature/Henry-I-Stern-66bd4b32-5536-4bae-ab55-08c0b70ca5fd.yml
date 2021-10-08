@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '27'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 5080, Sacramento, CA 95814-4900
-  voice: 916-651-4027
-- note: District Office
-  address: 5016 N. Parkway Calabasas, Suite 222, Calabasas, CA 91302
-  voice: 818-876-3352
 links:
 - url: https://senate.ca.gov/sd27
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD27&inframe=N
@@ -28,3 +21,11 @@ sources:
 - url: http://senate.ca.gov/senators
 other_names:
 - name: Henry I Stern
+offices:
+- address: State Capitol, Room 5080, Sacramento, CA 95814-4900
+  voice: 916-651-4027
+  classification: capitol
+- address: 5016 N. Parkway Calabasas, Suite 222, Calabasas, CA 91302
+  voice: 818-876-3352
+  classification: district
+  name: 'District Office #1'

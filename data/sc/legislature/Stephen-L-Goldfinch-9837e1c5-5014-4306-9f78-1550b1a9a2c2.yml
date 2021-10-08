@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  address: 513 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6172
-- note: District Office
-  address: P.O. Box 823, Murrells Inlet, SC 29576
-  voice: 843-385-4302
-- note: Primary Office
-  voice: 843-357-9301
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0682386282
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=0682386282
+offices:
+- address: 513 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6172
+  classification: capitol
+- address: P.O. Box 823, Murrells Inlet, SC 29576
+  voice: 843-385-4302
+  classification: district
+  name: 'District Office #1'
+- voice: 843-357-9301
+  classification: primary

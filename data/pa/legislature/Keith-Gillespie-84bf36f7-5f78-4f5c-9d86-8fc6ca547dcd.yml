@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  address: 45 East Wing P.O. Box 202047 Harrisburg, PA 17120-2047
-  voice: 717-705-7167
-  fax: 717-782-2914
-- note: District Office
-  address: 4186 Lincoln Highway York, PA 17406
-  voice: 717-840-4711
-  fax: 717-755-2896
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1006
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://Facebook.com/RepGillespie
   youtube: https://youtube.com/RepGillespie
+offices:
+- address: 45 East Wing P.O. Box 202047 Harrisburg, PA 17120-2047
+  voice: 717-705-7167
+  fax: 717-782-2914
+  classification: capitol
+- address: 4186 Lincoln Highway York, PA 17406
+  voice: 717-840-4711
+  fax: 717-755-2896
+  classification: district
+  name: 'District Office #1'

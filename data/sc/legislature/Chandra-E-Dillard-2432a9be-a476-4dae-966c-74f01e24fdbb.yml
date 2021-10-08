@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '23'
-contact_details:
-- note: Capitol Office
-  address: 414B Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6791
-- note: District Office
-  address: 5 Alleta Ave., Greenville, SC 29607
-  voice: 864-233-6549
-- note: Primary Office
-  voice: 864-294-2503
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0479545397
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0479545397
+offices:
+- address: 414B Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6791
+  classification: capitol
+- address: 5 Alleta Ave., Greenville, SC 29607
+  voice: 864-233-6549
+  classification: district
+  name: 'District Office #1'
+- voice: 864-294-2503
+  classification: primary

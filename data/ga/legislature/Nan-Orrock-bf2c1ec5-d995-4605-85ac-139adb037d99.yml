@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '36'
-contact_details:
-- note: Capitol Office
-  address: 420-B State Capitol; Atlanta, GA 30334
-  voice: 404-463-8054
-  fax: 404-657-9728
-- note: District Office
-  address: 1070 Delaware Avenue SE; Atlanta, GA 30316
-  voice: 404-524-5999
-  fax: 404-622-0486
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=33&Session=27
 - url: https://www.legis.ga.gov/members/senate/33?session=1029
@@ -43,3 +34,13 @@ extras:
   staff: LaTonia Long
   staff email: latonia.long@senate.ga.gov
   title: Democratic Caucus Secretary
+offices:
+- address: 420-B State Capitol; Atlanta, GA 30334
+  voice: 404-463-8054
+  fax: 404-657-9728
+  classification: capitol
+- address: 1070 Delaware Avenue SE; Atlanta, GA 30316
+  voice: 404-524-5999
+  fax: 404-622-0486
+  classification: district
+  name: 'District Office #1'

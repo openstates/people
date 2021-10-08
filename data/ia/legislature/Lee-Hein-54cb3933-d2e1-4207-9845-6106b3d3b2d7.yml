@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '96'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 17358 County Rd E-16, Monticello, IA 52310
-  voice: 319-465-5805
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9398
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9398
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9398
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9398
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 17358 County Rd E-16, Monticello, IA 52310
+  voice: 319-465-5805
+  classification: district
+  name: 'District Office #1'

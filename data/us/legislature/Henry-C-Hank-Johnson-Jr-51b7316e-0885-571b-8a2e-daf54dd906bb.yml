@@ -51,14 +51,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: GA-4
-contact_details:
-- note: Capitol Office
-  address: 2240 Rayburn House Office Building Washington DC 20515-1004
-  voice: 202-225-1605
-- note: District Office
-  address: 5240 Snapfinger Park Dr. Suite 130; Decatur, GA 30035
-  voice: 770-987-2291
-  fax: 770-987-8721
 links:
 - url: https://hankjohnson.house.gov
   note: website
@@ -97,3 +89,12 @@ other_identifiers:
   identifier: kg:/m/0flgyy
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2240 Rayburn House Office Building Washington DC 20515-1004
+  voice: 202-225-1605
+  classification: capitol
+- address: 5240 Snapfinger Park Dr. Suite 130; Decatur, GA 30035
+  voice: 770-987-2291
+  fax: 770-987-8721
+  classification: district
+  name: 'District Office #1'

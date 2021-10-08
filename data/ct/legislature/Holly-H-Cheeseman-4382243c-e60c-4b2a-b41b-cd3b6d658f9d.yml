@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '37'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 16 Mitchell Drive;Niantic, CT 06357
-  voice: 860-739-5429
 links:
 - url: http://www.cthousegop.com/Cheeseman/
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000324
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4200;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 16 Mitchell Drive;Niantic, CT 06357
+  voice: 860-739-5429
+  classification: district
+  name: 'District Office #1'

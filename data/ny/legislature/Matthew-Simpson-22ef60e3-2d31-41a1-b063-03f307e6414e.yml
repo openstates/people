@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '114'
-contact_details:
-- note: District Office
-  address: 140 Glen Street; Glens Falls, NY 12801
-  voice: 518-792-4546
-- note: Capitol Office
-  address: LOB 721; Albany, NY 12248
-  voice: 518-455-5565
 links:
 - url: https://assembly.state.ny.us/mem/Matthew-Simpson
 sources:
 - url: https://assembly.state.ny.us/mem/Matthew-Simpson
+offices:
+- address: 140 Glen Street; Glens Falls, NY 12801
+  voice: 518-792-4546
+  classification: district
+  name: 'District Office #1'
+- address: LOB 721; Albany, NY 12248
+  voice: 518-455-5565
+  classification: capitol

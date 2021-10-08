@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street., Legislative Office Bldg.,;Albany,, NY 12247
-  voice: 518-455-2177
-- note: District Office
-  address: 212 Evergreen Avenue;Brooklyn,, NY 11221
-  voice: 718-573-1726
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/julia-salazar/contact
@@ -24,3 +17,11 @@ ids:
   twitter: JuliaCarmel__
 sources:
 - url: http://www.nysenate.gov/senators/julia-salazar/contact
+offices:
+- address: 188 State Street., Legislative Office Bldg.,;Albany,, NY 12247
+  voice: 518-455-2177
+  classification: capitol
+- address: 212 Evergreen Avenue;Brooklyn,, NY 11221
+  voice: 718-573-1726
+  classification: district
+  name: 'District Office #1'

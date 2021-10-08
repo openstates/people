@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '105'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 72 Memorial Church Rd;Richton, MS 39467
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/goodin.xml
 sources:
@@ -22,3 +17,9 @@ sources:
 extras:
   org_info: Representative Goodin is affiliated with Disciples Chapel, Exchange Club,
     Farm Bureau, MS Forestry Assn, MOAA, Retired Army, METLA, and MSACTE
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 72 Memorial Church Rd;Richton, MS 39467
+  classification: district
+  name: 'District Office #1'

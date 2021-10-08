@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 320 S Blairsferry Crossing, Hiawatha, IA 52233
-  voice: 319-361-1725
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10318
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10318
@@ -31,3 +25,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10318
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10318
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 320 S Blairsferry Crossing, Hiawatha, IA 52233
+  voice: 319-361-1725
+  classification: district
+  name: 'District Office #1'

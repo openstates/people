@@ -8,15 +8,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 3300;Hartford, CT 06106
-  voice: 860-240-8600
-- note: District Office
-  address: 125 Weston Road;Westport, CT 06880
 links:
 - url: http://www.senatedems.ct.gov/haskell
 other_names:
 - name: Haskell, Will
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 3300;Hartford, CT 06106
+  voice: 860-240-8600
+  classification: capitol
+- address: 125 Weston Road;Westport, CT 06880
+  classification: district
+  name: 'District Office #1'

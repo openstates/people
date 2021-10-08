@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 120 Nottingham Lane;Burlington, VT 05408
-  voice: 802-503-5266
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15791
 - url: http://legislature.vermont.gov/people/single/2022/15791
@@ -33,3 +27,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/15791
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15791
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 120 Nottingham Lane;Burlington, VT 05408
+  voice: 802-503-5266
+  classification: district
+  name: 'District Office #1'

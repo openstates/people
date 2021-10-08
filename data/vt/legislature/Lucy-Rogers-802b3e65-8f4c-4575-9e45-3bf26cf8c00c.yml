@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Lamoille-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: P.O. Box 23;Waterville, VT 05492
-  voice: 802-730-0604
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30961
 - url: http://legislature.vermont.gov/people/single/2022/30961
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30961
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30961
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: P.O. Box 23;Waterville, VT 05492
+  voice: 802-730-0604
+  classification: district
+  name: 'District Office #1'

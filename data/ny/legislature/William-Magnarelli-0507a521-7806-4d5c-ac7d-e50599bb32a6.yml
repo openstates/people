@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '129'
-contact_details:
-- note: Capitol Office
-  address: LOB 830; Albany, NY 12248
-  voice: 518-455-4826
-- note: District Office
-  address: Room 840; 333 East Washington Street; Syracuse, NY 13202
-  voice: 315-428-9651
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/William-B-Magnarelli
@@ -32,3 +25,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/William-B-Magnarelli
 - url: https://assembly.state.ny.us/mem/William-B-Magnarelli
+offices:
+- address: LOB 830; Albany, NY 12248
+  voice: 518-455-4826
+  classification: capitol
+- address: Room 840; 333 East Washington Street; Syracuse, NY 13202
+  voice: 315-428-9651
+  classification: district
+  name: 'District Office #1'

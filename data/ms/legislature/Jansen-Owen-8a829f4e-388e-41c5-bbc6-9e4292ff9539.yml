@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '106'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: P.O. Box 249;Poplarville, MS 39470
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/owen.xml
 sources:
@@ -23,3 +18,9 @@ extras:
   org_info: 'Representative Owen is a member of: National Rifle Association; Poplarville
     Area Chamber of Commerce; Pearl River County Bar Association; Mississippi Bar
     Association; American Bar Association; The Federalist  Society'
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: P.O. Box 249;Poplarville, MS 39470
+  classification: district
+  name: 'District Office #1'

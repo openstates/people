@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '95'
-contact_details:
-- note: Capitol Office
-  address: LOB 641; Albany, NY 12248
-  voice: 518-455-5348
-- note: District Office
-  address: 2 Church Street; Ossining, NY 10562
-  voice: 914-941-1111
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Sandy-Galef
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Sandy-Galef
 - url: https://assembly.state.ny.us/mem/Sandy-Galef
+offices:
+- address: LOB 641; Albany, NY 12248
+  voice: 518-455-5348
+  classification: capitol
+- address: 2 Church Street; Ossining, NY 10562
+  voice: 914-941-1111
+  classification: district
+  name: 'District Office #1'

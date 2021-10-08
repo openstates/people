@@ -10,8 +10,9 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '20'
-contact_details:
-- note: District Office
-  address: 38507 Fifth Avenue; Zephyrhills, FL 33542
-- note: Capitol Office
-  address: 308 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+offices:
+- address: 38507 Fifth Avenue; Zephyrhills, FL 33542
+  classification: district
+  name: 'District Office #1'
+- address: 308 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  classification: capitol

@@ -10,13 +10,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '44'
-contact_details:
-- note: District Office
-  address: 156 Golf Ln, Burlington, IA 52601
-  voice: 319-754-4661
-- note: Capitol Office
-  voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30550
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30550
+offices:
+- address: 156 Golf Ln, Burlington, IA 52601
+  voice: 319-754-4661
+  classification: district
+  name: 'District Office #1'
+- voice: 515-281-3371
+  classification: capitol

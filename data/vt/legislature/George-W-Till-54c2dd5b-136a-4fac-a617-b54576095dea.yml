@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 74 Foothills Dr.;Jericho, VT 05465
-  voice: 802-899-2984
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14676
 - url: http://legislature.vermont.gov/people/single/2022/14676
@@ -37,3 +31,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14676
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14676
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 74 Foothills Dr.;Jericho, VT 05465
+  voice: 802-899-2984
+  classification: district
+  name: 'District Office #1'

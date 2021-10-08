@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Hampshire
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 443;Boston, MA, 02133
-  voice: 617-722-2460
-- note: District Office
-  address: 76 Gothic Street;Northampton, MA 01060
-  voice: 413-270-1166
 links:
 - url: https://malegislature.gov/Legislators/Profile/L_S1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/L_S1
+offices:
+- address: 24 Beacon St.;Room 443;Boston, MA, 02133
+  voice: 617-722-2460
+  classification: capitol
+- address: 76 Gothic Street;Northampton, MA 01060
+  voice: 413-270-1166
+  classification: district
+  name: 'District Office #1'

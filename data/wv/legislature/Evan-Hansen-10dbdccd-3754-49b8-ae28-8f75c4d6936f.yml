@@ -11,13 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: Room 150R, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3125
-- note: District Office
-  address: 341 Sanford Street;Morgantown, WV 26501
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Hansen
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Hansen
+offices:
+- address: Room 150R, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3125
+  classification: capitol
+- address: 341 Sanford Street;Morgantown, WV 26501
+  classification: district
+  name: 'District Office #1'

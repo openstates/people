@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '60'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2223;Raleigh, NC 27601-1096
-  voice: 919-733-5825
-- note: District Office
-  address: 1166 Roberts Ln;High Point, NC 27260
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/691
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Guilford
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 2223;Raleigh, NC 27601-1096
+  voice: 919-733-5825
+  classification: capitol
+- address: 1166 Roberts Ln;High Point, NC 27260
+  classification: district
+  name: 'District Office #1'

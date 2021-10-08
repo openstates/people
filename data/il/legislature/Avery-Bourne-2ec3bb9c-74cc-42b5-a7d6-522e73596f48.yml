@@ -10,15 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '95'
-contact_details:
-- note: Capitol Office
-  address: 217-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8071
-  fax: 217-782-1336
-- note: District Office
-  address: 106 E. Columbian Blvd. North;P.O. Box 38;Litchfield, IL 62056
-  voice: 217-324-5200
-  fax: 217-324-5201
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2666
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2888
@@ -30,3 +21,13 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2666
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2888
+offices:
+- address: 217-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8071
+  fax: 217-782-1336
+  classification: capitol
+- address: 106 E. Columbian Blvd. North;P.O. Box 38;Litchfield, IL 62056
+  voice: 217-324-5200
+  fax: 217-324-5201
+  classification: district
+  name: 'District Office #1'

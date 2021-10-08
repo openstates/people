@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '104'
-contact_details:
-- note: Capitol Office
-  address: 41A East Wing P.O. Box 202104 Harrisburg, PA 17120-2104
-  voice: 717-787-1230
-  fax: 717-787-7375
-- note: District Office
-  address: 260 Market Street Millersburg, PA 17061
-  voice: 717-692-0833
-  fax: 717-692-7071
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1107
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ extras:
   facebook: https://facebook.com/RepHelm
   twitter: https://www.twitter.com/RepHelm
   youtube: https://youtube.com/RepHelm
+offices:
+- address: 41A East Wing P.O. Box 202104 Harrisburg, PA 17120-2104
+  voice: 717-787-1230
+  fax: 717-787-7375
+  classification: capitol
+- address: 260 Market Street Millersburg, PA 17061
+  voice: 717-692-0833
+  fax: 717-692-7071
+  classification: district
+  name: 'District Office #1'

@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203039;Harrisburg, PA 17120-3039;Room:;292 Main Capitol
-  voice: 717-787-6063
-- note: District Office
-  address: 1075 South Main Street Suite 116 Westmoreland Crossroads Plaza;Greensburg,
-    PA 15601
-  voice: 724-600-7002
-  fax: 724-600-7008
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1188
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -34,3 +25,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1188
 extras:
   youtube: http://www.youtube.com/senatorkimward
+offices:
+- address: Senate Box 203039;Harrisburg, PA 17120-3039;Room:;292 Main Capitol
+  voice: 717-787-6063
+  classification: capitol
+- address: 1075 South Main Street Suite 116 Westmoreland Crossroads Plaza;Greensburg,
+    PA 15601
+  voice: 724-600-7002
+  fax: 724-600-7008
+  classification: district
+  name: 'District Office #1'

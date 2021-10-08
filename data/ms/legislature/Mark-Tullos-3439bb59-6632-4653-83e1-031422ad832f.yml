@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '79'
-contact_details:
-- note: Capitol Office
-  address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2431
-- note: District Office
-  address: PO Box 505;Raleigh, MS 39153
-  voice: 601-782-9167
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/tullos.xml
 other_identifiers:
@@ -28,3 +21,11 @@ extras:
   org_info: Representative Tullos is affiliated with the MS Bar Ass'n, Smith County
     Republicans, US Army Reserves, MS Army Nat'l Guard, and Deacon of Union Baptist
     Church.
+offices:
+- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-2431
+  classification: capitol
+- address: PO Box 505;Raleigh, MS 39153
+  voice: 601-782-9167
+  classification: district
+  name: 'District Office #1'

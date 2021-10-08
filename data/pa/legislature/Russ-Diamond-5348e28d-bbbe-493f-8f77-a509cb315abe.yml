@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '102'
-contact_details:
-- note: Capitol Office
-  address: 145B East Wing P.O. Box 202102 Harrisburg, PA 17120-2102
-  voice: 717-787-2686
-  fax: 717-782-2890
-- note: District Office
-  address: 2230 Lebanon Valley Mall Lebanon, PA 17042
-  voice: 717-277-2101
-  fax: 717-277-2105
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1686
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/repdiamond
   youtube: http://www.youtube.com/user/RepRussDiamond
+offices:
+- address: 145B East Wing P.O. Box 202102 Harrisburg, PA 17120-2102
+  voice: 717-787-2686
+  fax: 717-782-2890
+  classification: capitol
+- address: 2230 Lebanon Valley Mall Lebanon, PA 17042
+  voice: 717-277-2101
+  fax: 717-277-2105
+  classification: district
+  name: 'District Office #1'

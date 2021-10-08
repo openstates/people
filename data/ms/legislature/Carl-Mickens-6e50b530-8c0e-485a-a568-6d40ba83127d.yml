@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '42'
-contact_details:
-- note: Capitol Office
-  address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2439
-- note: District Office
-  address: P.O. Box 427;Brooksville, MS 39739
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mickens.xml
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   org_info: Representative Mickens is affiliated with the Kentucky State University
     alumni chapter, NAACP, Prince Hall Mason, MS Farm Bureau, Earl Nash PTO, and NCHS
     Booster.
+offices:
+- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-2439
+  classification: capitol
+- address: P.O. Box 427;Brooksville, MS 39739
+  classification: district
+  name: 'District Office #1'

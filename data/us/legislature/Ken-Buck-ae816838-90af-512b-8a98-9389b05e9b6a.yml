@@ -30,17 +30,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CO-4
-contact_details:
-- note: Capitol Office
-  address: 2455 Rayburn House Office Building Washington DC 20515-0604
-  voice: 202-225-4676
-- note: District Office
-  address: 900 Castleton Rd. Suite 112; Castle Rock, CO 80109
-  voice: 720-639-9165
-- note: District Office
-  address: 1023 39th Ave. Unit B; Greeley, CO 80634
-  voice: 970-702-2136
-  fax: 970-702-2951
 links:
 - url: https://buck.house.gov
   note: website
@@ -79,3 +68,16 @@ other_identifiers:
   identifier: Ken Buck
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2455 Rayburn House Office Building Washington DC 20515-0604
+  voice: 202-225-4676
+  classification: capitol
+- address: 900 Castleton Rd. Suite 112; Castle Rock, CO 80109
+  voice: 720-639-9165
+  classification: district
+  name: 'District Office #1'
+- address: 1023 39th Ave. Unit B; Greeley, CO 80634
+  voice: 970-702-2136
+  fax: 970-702-2951
+  classification: district
+  name: 'District Office #2'

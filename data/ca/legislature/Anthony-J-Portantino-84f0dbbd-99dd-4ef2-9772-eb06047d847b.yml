@@ -16,13 +16,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 3086, Sacramento, CA 95814-4900
-  voice: 916-651-4025
-- note: District Office
-  address: 201 E. Bonita Avenue, San Dimas, CA 91773
-  voice: 909-599-7351
 links:
 - url: https://senate.ca.gov/sd25
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD25&inframe=N
@@ -42,3 +35,11 @@ other_identifiers:
   identifier: ocd-person/03863888-caaf-4e8c-9b01-2642a9364884
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 3086, Sacramento, CA 95814-4900
+  voice: 916-651-4025
+  classification: capitol
+- address: 201 E. Bonita Avenue, San Dimas, CA 91773
+  voice: 909-599-7351
+  classification: district
+  name: 'District Office #1'

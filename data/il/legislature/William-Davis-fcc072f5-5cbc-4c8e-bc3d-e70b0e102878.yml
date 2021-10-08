@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: 262-W Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8197
-- note: District Office
-  address: 1912 W. 174th Street;East Hazel Crest, IL 60429
-  voice: 708-799-7300
-  fax: 708-799-7377
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2544
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2801
@@ -32,3 +24,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2544
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2801
+offices:
+- address: 262-W Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8197
+  classification: capitol
+- address: 1912 W. 174th Street;East Hazel Crest, IL 60429
+  voice: 708-799-7300
+  fax: 708-799-7377
+  classification: district
+  name: 'District Office #1'

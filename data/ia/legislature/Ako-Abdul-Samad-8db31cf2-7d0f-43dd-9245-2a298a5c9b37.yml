@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 1506 18th St, Des Moines, IA 50314
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6284
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6284
@@ -26,3 +21,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6284
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6284
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 1506 18th St, Des Moines, IA 50314
+  classification: district
+  name: 'District Office #1'

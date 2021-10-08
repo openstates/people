@@ -13,13 +13,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '61'
-contact_details:
-- note: Capitol Office
-  address: Room 218E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3188
-- note: District Office
-  address: 1125 W. King Street;Martinsburg, WV 25401
-  voice: 304-886-9907
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barrett
 other_identifiers:
@@ -31,3 +24,11 @@ other_identifiers:
   identifier: ocd-person/f7b54755-f78c-4184-b167-570673e07710
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barrett
+offices:
+- address: Room 218E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3188
+  classification: capitol
+- address: 1125 W. King Street;Martinsburg, WV 25401
+  voice: 304-886-9907
+  classification: district
+  name: 'District Office #1'

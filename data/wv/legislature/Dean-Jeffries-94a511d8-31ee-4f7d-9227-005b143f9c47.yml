@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '40'
-contact_details:
-- note: Capitol Office
-  address: Room 208E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3149
-- note: District Office
-  address: 207 Leo Drive;Elkview, WV 25071
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jeffries
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jeffries%2C+D.
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jeffries
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Jeffries%2C+D.
+offices:
+- address: Room 208E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3149
+  classification: capitol
+- address: 207 Leo Drive;Elkview, WV 25071
+  classification: district
+  name: 'District Office #1'

@@ -45,14 +45,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MI-7
-contact_details:
-- note: Capitol Office
-  address: 2266 Rayburn House Office Building Washington DC 20515-2207
-  voice: 202-225-6276
-- note: District Office
-  address: 401 W. Michigan Ave.; Jackson, MI 49201
-  voice: 517-780-9075
-  fax: 517-780-9081
 links:
 - url: https://walberg.house.gov
   note: website
@@ -91,3 +83,12 @@ other_identifiers:
   identifier: kg:/m/0d7n3m
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2266 Rayburn House Office Building Washington DC 20515-2207
+  voice: 202-225-6276
+  classification: capitol
+- address: 401 W. Michigan Ave.; Jackson, MI 49201
+  voice: 517-780-9075
+  fax: 517-780-9081
+  classification: district
+  name: 'District Office #1'

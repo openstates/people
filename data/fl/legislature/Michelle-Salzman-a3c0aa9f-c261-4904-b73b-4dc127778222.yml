@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '1'
-contact_details:
-- note: District Office
-  address: Suite G; 3101 West Michigan Avenue; Pensacola, FL 32526-1876
+offices:
+- address: Suite G; 3101 West Michigan Avenue; Pensacola, FL 32526-1876
   voice: 850-941-6091
-- note: Capitol Office
-  address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5001
+  classification: capitol

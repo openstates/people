@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  address: Room 216E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3277
-- note: District Office
-  address: P.O. Box 475;Milton, WV 25541
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Linville
 other_identifiers:
@@ -23,3 +17,10 @@ other_identifiers:
   identifier: WVL000398
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Linville
+offices:
+- address: Room 216E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3277
+  classification: capitol
+- address: P.O. Box 475;Milton, WV 25541
+  classification: district
+  name: 'District Office #1'

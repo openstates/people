@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '29'
-contact_details:
-- note: Capitol Office
-  address: 122 Capitol Building;Springfield, IL 62706
-  voice: 217-782-3650
-- note: District Office
-  address: 43 Highwood Ave.;Highwood, IL 60040
-  voice: 847-945-5200
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2619
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2854
@@ -27,3 +20,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2619
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2854
+offices:
+- address: 122 Capitol Building;Springfield, IL 62706
+  voice: 217-782-3650
+  classification: capitol
+- address: 43 Highwood Ave.;Highwood, IL 60040
+  voice: 847-945-5200
+  classification: district
+  name: 'District Office #1'

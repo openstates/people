@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '105'
-contact_details:
-- note: Capitol Office
-  address: 404C Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6796
-- note: District Office
-  address: 2082 Cane Branch Rd., Loris, SC 29569
-  voice: 843-455-3567
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0743749911
 other_names:
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0743749911
+offices:
+- address: 404C Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6796
+  classification: capitol
+- address: 2082 Cane Branch Rd., Loris, SC 29569
+  voice: 843-455-3567
+  classification: district
+  name: 'District Office #1'

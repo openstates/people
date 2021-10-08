@@ -10,19 +10,21 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0001
-  voice: 916-319-2001
-- note: District Office
-  address: 280 Hemsted Drive, Suite 110;Redding, CA 96002
-  voice: 530-223-6300
-- note: District Office
-  address: 356 Providence Mine Road, Office 6;Nevada City, CA 95959
-  voice: 530-265-0601
 links:
 - url: https://ad01.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD01&inframe=N
   note: Contact Form
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0001
+  voice: 916-319-2001
+  classification: capitol
+- address: 280 Hemsted Drive, Suite 110;Redding, CA 96002
+  voice: 530-223-6300
+  classification: district
+  name: 'District Office #1'
+- address: 356 Providence Mine Road, Office 6;Nevada City, CA 95959
+  voice: 530-265-0601
+  classification: district
+  name: 'District Office #2'

@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '6'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 5114, Sacramento, CA 95814-4900
-  voice: 916-651-4006
-- note: District Office
-  address: 2251 Florin Road, Suite 156, Sacramento, CA 95822
-  voice: 916-262-2904
 links:
 - url: http://senate.ca.gov/sd06
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD06&inframe=N
@@ -32,3 +25,11 @@ other_identifiers:
   identifier: CAL000474
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 5114, Sacramento, CA 95814-4900
+  voice: 916-651-4006
+  classification: capitol
+- address: 2251 Florin Road, Suite 156, Sacramento, CA 95822
+  voice: 916-262-2904
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '68'
-contact_details:
-- note: Capitol Office
-  address: 52A East Wing P.O. Box 202068 Harrisburg, PA 17120-2068
-  voice: 717-772-5371
-  fax: 717-782-2935
-- note: District Office
-  address: 74 Main Street Wellsboro, PA 16901
-  voice: 570-724-1390
-  fax: 570-724-2168
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1796
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1796
+offices:
+- address: 52A East Wing P.O. Box 202068 Harrisburg, PA 17120-2068
+  voice: 717-772-5371
+  fax: 717-782-2935
+  classification: capitol
+- address: 74 Main Street Wellsboro, PA 16901
+  voice: 570-724-1390
+  fax: 570-724-2168
+  classification: district
+  name: 'District Office #1'

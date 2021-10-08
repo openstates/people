@@ -15,13 +15,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '53'
-contact_details:
-- note: Capitol Office
-  address: 278-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-3739
-- note: District Office
-  address: 171 W. Wing St.;Suite 202;Arlington Heights, IL 60005
-  voice: 847-749-1137
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2944
@@ -35,3 +28,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2944
+offices:
+- address: 278-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-3739
+  classification: capitol
+- address: 171 W. Wing St.;Suite 202;Arlington Heights, IL 60005
+  voice: 847-749-1137
+  classification: district
+  name: 'District Office #1'

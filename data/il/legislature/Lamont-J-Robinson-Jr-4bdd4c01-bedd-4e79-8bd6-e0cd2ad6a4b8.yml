@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  address: 290-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-4535
-- note: District Office
-  address: 5048 S. Indiana Ave.;Chicago, IL 60615
-  voice: 773-924-4614
-  fax: 773-924-4652
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2746
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2947
@@ -26,3 +18,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2746
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2947
+offices:
+- address: 290-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-4535
+  classification: capitol
+- address: 5048 S. Indiana Ave.;Chicago, IL 60615
+  voice: 773-924-4614
+  fax: 773-924-4652
+  classification: district
+  name: 'District Office #1'

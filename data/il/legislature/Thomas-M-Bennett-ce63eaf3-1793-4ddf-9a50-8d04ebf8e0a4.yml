@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '106'
-contact_details:
-- note: Capitol Office
-  address: 220-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-558-1039
-  fax: 217-782-1275
-- note: District Office
-  address: 311 N. Mill St.;Suite 2;Pontiac, IL 61764
-  voice: 815-844-9179
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2654
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2879
@@ -30,3 +22,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2654
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2879
+offices:
+- address: 220-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-558-1039
+  fax: 217-782-1275
+  classification: capitol
+- address: 311 N. Mill St.;Suite 2;Pontiac, IL 61764
+  voice: 815-844-9179
+  classification: district
+  name: 'District Office #1'

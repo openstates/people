@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: 303-B CLOB; Atlanta, GA 30334
-  voice: 404-656-9644
-- note: District Office
-  address: '139 Altama Connector, #345; Brunswick, GA 31525'
-  voice: 912-464-1989
 links:
 - url: https://www.legis.ga.gov/members/senate/4976?session=1029
 sources:
@@ -31,3 +24,11 @@ extras:
   georgia_id: 4976
   staff: Meaghan Kelling
   staff email: meaghan.kelling@senate.ga.gov
+offices:
+- address: 303-B CLOB; Atlanta, GA 30334
+  voice: 404-656-9644
+  classification: capitol
+- address: '139 Altama Connector, #345; Brunswick, GA 31525'
+  voice: 912-464-1989
+  classification: district
+  name: 'District Office #1'

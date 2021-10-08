@@ -85,14 +85,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-40
-contact_details:
-- note: Capitol Office
-  address: 2083 Rayburn House Office Building Washington DC 20515-0540
-  voice: 202-225-1766
-- note: District Office
-  address: 500 Citadel Dr. Suite 320; Commerce, CA 90040
-  voice: 323-721-8790
-  fax: 323-721-8789
 links:
 - url: https://roybal-allard.house.gov
   note: website
@@ -131,3 +123,12 @@ other_identifiers:
   identifier: Lucille Roybal-Allard
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2083 Rayburn House Office Building Washington DC 20515-0540
+  voice: 202-225-1766
+  classification: capitol
+- address: 500 Citadel Dr. Suite 320; Commerce, CA 90040
+  voice: 323-721-8790
+  fax: 323-721-8789
+  classification: district
+  name: 'District Office #1'

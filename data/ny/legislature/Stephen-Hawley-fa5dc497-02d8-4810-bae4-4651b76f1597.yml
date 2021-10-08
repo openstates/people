@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '139'
-contact_details:
-- note: Capitol Office
-  address: LOB 521; Albany, NY 12248
-  voice: 518-455-5811
-- note: District Office
-  address: 121 N. Main Street; Suite 100; Albion, NY 14411
-  voice: 585-589-5780
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Stephen-Hawley
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Stephen-Hawley
 - url: https://assembly.state.ny.us/mem/Stephen-Hawley
+offices:
+- address: LOB 521; Albany, NY 12248
+  voice: 518-455-5811
+  classification: capitol
+- address: 121 N. Main Street; Suite 100; Albion, NY 14411
+  voice: 585-589-5780
+  classification: district
+  name: 'District Office #1'

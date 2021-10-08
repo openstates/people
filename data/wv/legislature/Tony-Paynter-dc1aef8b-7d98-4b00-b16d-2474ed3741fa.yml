@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  address: Room 222E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3163
-- note: District Office
-  address: HC 68 Box 931;Hanover, WV 24839
-  voice: 304-894-4647
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Paynter
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000383
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Paynter
+offices:
+- address: Room 222E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3163
+  classification: capitol
+- address: HC 68 Box 931;Hanover, WV 24839
+  voice: 304-894-4647
+  classification: district
+  name: 'District Office #1'

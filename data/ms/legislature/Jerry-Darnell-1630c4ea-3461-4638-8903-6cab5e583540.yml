@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 4250 Green Village Dr.;Hernando, MS 38632
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/darnell.xml
 sources:
@@ -23,3 +18,9 @@ extras:
   org_info: 'Representative Darnell is a member of the following: Mississippi Association
     of School Administrators, Farm Bureau member, and Mississippi State Extension
     Service Board Member.'
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 4250 Green Village Dr.;Hernando, MS 38632
+  classification: district
+  name: 'District Office #1'

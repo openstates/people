@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '109'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 304;Raleigh, NC 27603-5925
-  voice: 919-733-5809
-- note: District Office
-  address: 3517 Lincoln Ln;Gastonia, NC 28056
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/659
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Gaston
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 304;Raleigh, NC 27603-5925
+  voice: 919-733-5809
+  classification: capitol
+- address: 3517 Lincoln Ln;Gastonia, NC 28056
+  classification: district
+  name: 'District Office #1'

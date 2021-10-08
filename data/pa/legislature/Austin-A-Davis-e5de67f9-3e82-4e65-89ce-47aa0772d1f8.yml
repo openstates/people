@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  address: 216 Irvis Office Building P.O. Box 202035 Harrisburg, PA 17120-2035
-  voice: 717-783-1018
-  fax: 717-780-4779
-- note: District Office
-  address: 551 Ravensburg Blvd. Clairton, PA 15025
-  voice: 412-233-2505
-  fax: 412-476-3048
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1794
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1794
+offices:
+- address: 216 Irvis Office Building P.O. Box 202035 Harrisburg, PA 17120-2035
+  voice: 717-783-1018
+  fax: 717-780-4779
+  classification: capitol
+- address: 551 Ravensburg Blvd. Clairton, PA 15025
+  voice: 412-233-2505
+  fax: 412-476-3048
+  classification: district
+  name: 'District Office #1'

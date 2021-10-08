@@ -61,14 +61,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TX-26
-contact_details:
-- note: Capitol Office
-  address: 2161 Rayburn House Office Building Washington DC 20515-4326
-  voice: 202-225-7772
-- note: District Office
-  address: 2000 S. Stemmons Fwy. Suite 200; Lake Dallas, TX 75065
-  voice: 940-497-5031
-  fax: 940-497-5067
 links:
 - url: https://burgess.house.gov
   note: website
@@ -105,3 +97,12 @@ other_identifiers:
   identifier: kg:/m/03tq8_
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2161 Rayburn House Office Building Washington DC 20515-4326
+  voice: 202-225-7772
+  classification: capitol
+- address: 2000 S. Stemmons Fwy. Suite 200; Lake Dallas, TX 75065
+  voice: 940-497-5031
+  fax: 940-497-5067
+  classification: district
+  name: 'District Office #1'

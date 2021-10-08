@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  voice: 605-773-3851
-- note: District Office
-  address: 29177 477th Ave.Hudson, SD 57034
-  voice: 605-310-1645
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1503&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1563&Session=2019
@@ -33,3 +27,10 @@ sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1766/Detail
 extras:
   occupation: Farmer/Insurance
+offices:
+- voice: 605-773-3851
+  classification: capitol
+- address: 29177 477th Ave.Hudson, SD 57034
+  voice: 605-310-1645
+  classification: district
+  name: 'District Office #1'

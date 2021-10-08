@@ -15,13 +15,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 4032, Sacramento, CA 95814-4900
-  voice: 916-651-4003
-- note: District Office
-  address: 50 D Street, Suite 300, Santa Rosa, CA 95404
-  voice: 707-576-2093
 links:
 - url: https://senate.ca.gov/sd03
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD03&inframe=N
@@ -35,3 +28,11 @@ other_identifiers:
   identifier: ocd-person/5f62600a-6817-491e-9306-bc244fe4cf17
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 4032, Sacramento, CA 95814-4900
+  voice: 916-651-4003
+  classification: capitol
+- address: 50 D Street, Suite 300, Santa Rosa, CA 95404
+  voice: 707-576-2093
+  classification: district
+  name: 'District Office #1'

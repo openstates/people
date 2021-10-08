@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '69'
-contact_details:
-- note: Capitol Office
-  address: 115 Ryan Office Building P.O. Box 202069 Harrisburg, PA 17120-2069
-  voice: 717-783-8756
-  fax: 717-782-2911
-- note: District Office
-  address: 1605 Graham Avenue Windber Community Building Windber, PA 15963
-  voice: 814-467-4011
-  fax: 814-842-3367
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1174
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -29,3 +20,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1174
 extras:
   youtube: https://youtube.com/RepMetzgar
+offices:
+- address: 115 Ryan Office Building P.O. Box 202069 Harrisburg, PA 17120-2069
+  voice: 717-783-8756
+  fax: 717-782-2911
+  classification: capitol
+- address: 1605 Graham Avenue Windber Community Building Windber, PA 15963
+  voice: 814-467-4011
+  fax: 814-842-3367
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '27'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2123;Raleigh, NC 27601-1096
-  voice: 919-733-5662
-- note: District Office
-  address: PO Box 904;Gaston, NC 27832
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/481
 other_identifiers:
@@ -28,3 +22,10 @@ extras:
   - Halifax
   - Northampton
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 2123;Raleigh, NC 27601-1096
+  voice: 919-733-5662
+  classification: capitol
+- address: PO Box 904;Gaston, NC 27832
+  classification: district
+  name: 'District Office #1'

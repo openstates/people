@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  voice: 701-628-2886
-- note: District Office
-  address: P.O. Box 1191;Stanley, ND;58784-1191
-  voice: 701-628-2617
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-donald-w-longmuir
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-donald-w-longmuir
@@ -31,3 +25,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-donald-w-longmuir
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-donald-w-longmuir
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-donald-longmuir
+offices:
+- voice: 701-628-2886
+  classification: capitol
+- address: P.O. Box 1191;Stanley, ND;58784-1191
+  voice: 701-628-2617
+  classification: district
+  name: 'District Office #1'

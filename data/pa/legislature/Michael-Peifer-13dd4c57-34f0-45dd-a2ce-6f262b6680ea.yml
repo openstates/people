@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '139'
-contact_details:
-- note: Capitol Office
-  address: 218 Ryan Office Building P.O. Box 202139 Harrisburg, PA 17120-2139
-  voice: 717-783-2037
-  fax: 717-782-2910
-- note: District Office
-  address: 2523 Route 6, Suite 2 Hawley, PA 18428
-  voice: 570-226-5959
-  fax: 570-226-5955
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1117
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1117
 extras:
   youtube: https://youtube.com/RepPeifer
+offices:
+- address: 218 Ryan Office Building P.O. Box 202139 Harrisburg, PA 17120-2139
+  voice: 717-783-2037
+  fax: 717-782-2910
+  classification: capitol
+- address: 2523 Route 6, Suite 2 Hawley, PA 18428
+  voice: 570-226-5959
+  fax: 570-226-5955
+  classification: district
+  name: 'District Office #1'

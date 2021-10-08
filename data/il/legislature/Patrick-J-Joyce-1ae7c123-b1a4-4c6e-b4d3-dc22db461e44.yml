@@ -10,14 +10,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '40'
-contact_details:
-- note: Capitol Office
-  address: 108A Capitol Building;Springfield, IL 62706
-  voice: 217-782-7419
-- note: District Office
-  address: 270 Main St.;Park Forest, IL 60466
-  voice: 708-756-0882
-  fax: 708-756-0885
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2774
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2973
@@ -26,3 +18,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2774
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2973
+offices:
+- address: 108A Capitol Building;Springfield, IL 62706
+  voice: 217-782-7419
+  classification: capitol
+- address: 270 Main St.;Park Forest, IL 60466
+  voice: 708-756-0882
+  fax: 708-756-0885
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: 227-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8182
-- note: District Office
-  address: 5515 N. East River Rd.;Chicago, IL 60656
-  voice: 773-444-0611
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2770
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2971
@@ -25,3 +18,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2770
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2971
+offices:
+- address: 227-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8182
+  classification: capitol
+- address: 5515 N. East River Rd.;Chicago, IL 60656
+  voice: 773-444-0611
+  classification: district
+  name: 'District Office #1'

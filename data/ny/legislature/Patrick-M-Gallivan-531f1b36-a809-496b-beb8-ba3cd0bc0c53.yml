@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '59'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-3471
-- note: District Office
-  address: 2721 Transit Road;Elma,, NY 14059
-  voice: 716-656-8544
-  fax: 518-426-6949
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/patrick-m-gallivan/contact
@@ -34,3 +26,12 @@ other_identifiers:
   identifier: NYL000376
 sources:
 - url: http://www.nysenate.gov/senators/patrick-m-gallivan/contact
+offices:
+- address: Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-3471
+  classification: capitol
+- address: 2721 Transit Road;Elma,, NY 14059
+  voice: 716-656-8544
+  fax: 518-426-6949
+  classification: district
+  name: 'District Office #1'

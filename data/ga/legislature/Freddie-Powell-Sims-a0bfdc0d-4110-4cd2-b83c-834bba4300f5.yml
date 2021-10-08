@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  address: 121-E State Capitol; Atlanta, GA 30334
-  voice: 404-463-5259
-  fax: 404-463-2279
-- note: District Office
-  address: 5377 Goose Hollow Road; Dawson, GA 31742
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
@@ -44,3 +37,11 @@ extras:
   spouse: Norman
   staff: Emily Doppel
   staff email: emily.doppel@senate.ga.gov
+offices:
+- address: 121-E State Capitol; Atlanta, GA 30334
+  voice: 404-463-5259
+  fax: 404-463-2279
+  classification: capitol
+- address: 5377 Goose Hollow Road; Dawson, GA 31742
+  classification: district
+  name: 'District Office #1'

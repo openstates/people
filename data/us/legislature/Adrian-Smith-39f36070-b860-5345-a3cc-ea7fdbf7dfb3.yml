@@ -50,18 +50,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NE-3
-contact_details:
-- note: Capitol Office
-  address: 502 Cannon House Office Building Washington DC 20515-2703
-  voice: 202-225-6435
-- note: District Office
-  address: 1811 W. Second St. Suite 275; Grand Island, NE 68803
-  voice: 308-384-3900
-  fax: 308-384-3902
-- note: District Office
-  address: 416 Valley View Dr. Suite 600; Scottsbluff, NE 69361
-  voice: 308-633-6333
-  fax: 308-633-6335
 links:
 - url: https://adriansmith.house.gov
   note: website
@@ -99,3 +87,17 @@ other_identifiers:
   identifier: kg:/m/0c505n
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 502 Cannon House Office Building Washington DC 20515-2703
+  voice: 202-225-6435
+  classification: capitol
+- address: 1811 W. Second St. Suite 275; Grand Island, NE 68803
+  voice: 308-384-3900
+  fax: 308-384-3902
+  classification: district
+  name: 'District Office #1'
+- address: 416 Valley View Dr. Suite 600; Scottsbluff, NE 69361
+  voice: 308-633-6333
+  fax: 308-633-6335
+  classification: district
+  name: 'District Office #2'

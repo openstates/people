@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: Room 150R, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3127
-- note: District Office
-  address: 235 High Street, Suite 618;Morgantown, WV 26505
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fleischauer
 other_identifiers:
@@ -27,3 +21,10 @@ other_identifiers:
   identifier: WVL000262
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fleischauer
+offices:
+- address: Room 150R, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3127
+  classification: capitol
+- address: 235 High Street, Suite 618;Morgantown, WV 26505
+  classification: district
+  name: 'District Office #1'

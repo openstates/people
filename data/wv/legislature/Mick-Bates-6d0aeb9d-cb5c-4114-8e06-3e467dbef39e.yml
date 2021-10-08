@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: Room 150R, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3180
-- note: District Office
-  address: P.O. Box 844;Beckley, WV 25801
-  voice: 304-255-2376
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Bates
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000300
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Bates
+offices:
+- address: Room 150R, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3180
+  classification: capitol
+- address: P.O. Box 844;Beckley, WV 25801
+  voice: 304-255-2376
+  classification: district
+  name: 'District Office #1'

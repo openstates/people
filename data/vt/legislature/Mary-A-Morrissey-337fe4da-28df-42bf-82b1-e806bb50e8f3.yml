@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Bennington-2-2
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 228 Dewey St.;Bennington, VT 05201
-  voice: 802-442-2092
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14525
 - url: http://legislature.vermont.gov/people/single/2022/14525
@@ -33,3 +27,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14525
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14525
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 228 Dewey St.;Bennington, VT 05201
+  voice: 802-442-2092
+  classification: district
+  name: 'District Office #1'

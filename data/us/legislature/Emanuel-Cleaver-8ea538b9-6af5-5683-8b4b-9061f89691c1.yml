@@ -55,22 +55,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MO-5
-contact_details:
-- note: Capitol Office
-  address: 2335 Rayburn House Office Building Washington DC 20515-2505
-  voice: 202-225-4535
-- note: District Office
-  address: 1923 Main St; Higginsville, MO 64037
-  voice: 660-584-7373
-  fax: 660-584-7227
-- note: District Office
-  address: 411 W Maple Ave F; Independence, MO 64050-2840
-  voice: 816-833-4545
-  fax: 816-833-2991
-- note: District Office
-  address: 101 W. 31 St.; Kansas City, MO 64108
-  voice: 816-842-4545
-  fax: 816-471-5215
 links:
 - url: https://cleaver.house.gov
   note: website
@@ -109,3 +93,22 @@ other_identifiers:
   identifier: Emanuel Cleaver
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2335 Rayburn House Office Building Washington DC 20515-2505
+  voice: 202-225-4535
+  classification: capitol
+- address: 1923 Main St; Higginsville, MO 64037
+  voice: 660-584-7373
+  fax: 660-584-7227
+  classification: district
+  name: 'District Office #1'
+- address: 411 W Maple Ave F; Independence, MO 64050-2840
+  voice: 816-833-4545
+  fax: 816-833-2991
+  classification: district
+  name: 'District Office #2'
+- address: 101 W. 31 St.; Kansas City, MO 64108
+  voice: 816-842-4545
+  fax: 816-471-5215
+  classification: district
+  name: 'District Office #3'

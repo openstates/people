@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '54'
-contact_details:
-- note: Capitol Office
-  address: 215-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8026
-  fax: 217-782-1141
-- note: District Office
-  address: 117 East Palatine Road;Suite 106;Palatine, IL 60067
-  voice: 847-202-6584
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2592
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2834
@@ -31,3 +23,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2592
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2834
+offices:
+- address: 215-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8026
+  fax: 217-782-1141
+  classification: capitol
+- address: 117 East Palatine Road;Suite 106;Palatine, IL 60067
+  voice: 847-202-6584
+  classification: district
+  name: 'District Office #1'

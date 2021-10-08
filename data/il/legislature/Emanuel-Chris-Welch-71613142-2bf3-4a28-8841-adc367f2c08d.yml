@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '7'
-contact_details:
-- note: Capitol Office
-  address: 249-E Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8120
-- note: District Office
-  address: 10055 W. Roosevelt Rd.;Suite E;Westchester, IL 60154
-  voice: 708-450-1000
-  fax: 708-450-1104
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2624
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2859
@@ -35,3 +27,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2624
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2859
+offices:
+- address: 249-E Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8120
+  classification: capitol
+- address: 10055 W. Roosevelt Rd.;Suite E;Westchester, IL 60154
+  voice: 708-450-1000
+  fax: 708-450-1104
+  classification: district
+  name: 'District Office #1'

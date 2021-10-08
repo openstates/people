@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  address: 105E Capitol Building;Springfield, IL 62706
-  voice: 217-782-5413
-- note: District Office
-  address: State of Illinois Building;200 S. Wyman, Suite 302;Rockford, IL 61101
-  voice: 815-987-7555
-  fax: 815-987-7563
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2540
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2798
@@ -34,3 +26,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2540
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2798
+offices:
+- address: 105E Capitol Building;Springfield, IL 62706
+  voice: 217-782-5413
+  classification: capitol
+- address: State of Illinois Building;200 S. Wyman, Suite 302;Rockford, IL 61101
+  voice: 815-987-7555
+  fax: 815-987-7563
+  classification: district
+  name: 'District Office #1'

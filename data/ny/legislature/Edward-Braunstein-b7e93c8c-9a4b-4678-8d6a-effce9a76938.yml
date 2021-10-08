@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: LOB 842; Albany, NY 12248
-  voice: 518-455-5425
-- note: District Office
-  address: 213-33 39th Avenue; Suite 238; Bayside, NY 11361
-  voice: 718-357-3588
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Edward-C-Braunstein
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Edward-C-Braunstein
 - url: https://assembly.state.ny.us/mem/Edward-C-Braunstein
+offices:
+- address: LOB 842; Albany, NY 12248
+  voice: 518-455-5425
+  classification: capitol
+- address: 213-33 39th Avenue; Suite 238; Bayside, NY 11361
+  voice: 718-357-3588
+  classification: district
+  name: 'District Office #1'

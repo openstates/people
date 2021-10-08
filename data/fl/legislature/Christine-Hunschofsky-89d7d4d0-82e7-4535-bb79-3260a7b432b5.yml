@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '96'
-contact_details:
-- note: District Office
-  address: 4800 West Copans Road; Coconut Creek, FL 33063-3879
+offices:
+- address: 4800 West Copans Road; Coconut Creek, FL 33063-3879
   voice: 954-956-5600
-- note: Capitol Office
-  address: 1201 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1201 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5096
+  classification: capitol

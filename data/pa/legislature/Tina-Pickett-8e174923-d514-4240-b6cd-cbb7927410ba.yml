@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '110'
-contact_details:
-- note: Capitol Office
-  address: 315-A Main Capitol Building P.O. Box 202110 Harrisburg, PA 17120-2110
-  voice: 717-783-8238
-  fax: 717-782-2881
-- note: District Office
-  address: 320 Main Street Towanda, PA 18848
-  voice: 570-265-3124
-  fax: 570-265-9453
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=97
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepPickett
   youtube: https://youtube.com/RepPickett
+offices:
+- address: 315-A Main Capitol Building P.O. Box 202110 Harrisburg, PA 17120-2110
+  voice: 717-783-8238
+  fax: 717-782-2881
+  classification: capitol
+- address: 320 Main Street Towanda, PA 18848
+  voice: 570-265-3124
+  fax: 570-265-9453
+  classification: district
+  name: 'District Office #1'

@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '104'
-contact_details:
-- note: District Office
-  address: ', FL'
+offices:
+- address: ', FL'
   voice: 954-668-3662
-- note: Capitol Office
-  address: 1302 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1302 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5104
+  classification: capitol

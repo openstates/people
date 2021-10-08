@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '149'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room;Hartford, CT 06106
-- note: District Office
-  address: ', CT'
 links:
 - url: https://www.cthousegop.com/Fiorello
 other_names:
 - name: Fiorello, Kimberly
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room;Hartford, CT 06106
+  classification: capitol
+- address: ', CT'
+  classification: district
+  name: 'District Office #1'

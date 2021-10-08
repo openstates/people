@@ -7,12 +7,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '57'
-contact_details:
-- note: District Office
-  address: 55 Hanson Place; Brooklyn, NY 11217
-  voice: 718-596-0100
-- note: Capitol Office
-  voice: 518-455-5325
 links:
 - url: https://assembly.state.ny.us/mem/Phara-Souffrant-Forrest
 other_names:
@@ -20,3 +14,10 @@ other_names:
 - name: Forrest
 sources:
 - url: https://assembly.state.ny.us/mem/Phara-Souffrant-Forrest
+offices:
+- address: 55 Hanson Place; Brooklyn, NY 11217
+  voice: 718-596-0100
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5325
+  classification: capitol

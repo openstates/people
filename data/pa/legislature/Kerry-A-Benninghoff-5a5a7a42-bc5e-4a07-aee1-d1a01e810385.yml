@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '171'
-contact_details:
-- note: Capitol Office
-  address: 110 Main Capitol Building P.O. Box 202171 Harrisburg, PA 17120-2171
-  voice: 717-783-1918
-  fax: 717-260-6528
-- note: District Office
-  address: 77 North Main Street PO Box 592 Reedsville, PA 17084
-  voice: 717-667-1175
-  fax: 717-667-6025
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=215
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepBenninghoff
   youtube: https://youtube.com/RepBenninghoff
+offices:
+- address: 110 Main Capitol Building P.O. Box 202171 Harrisburg, PA 17120-2171
+  voice: 717-783-1918
+  fax: 717-260-6528
+  classification: capitol
+- address: 77 North Main Street PO Box 592 Reedsville, PA 17084
+  voice: 717-667-1175
+  fax: 717-667-6025
+  classification: district
+  name: 'District Office #1'

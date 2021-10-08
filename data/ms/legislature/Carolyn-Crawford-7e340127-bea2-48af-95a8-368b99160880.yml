@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '121'
-contact_details:
-- note: Capitol Office
-  address: Room 201M-7;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2582
-- note: District Office
-  address: 23155 Stablewood Cir;Pass Christian, MS 39571
-  voice: 228-452-5029
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/crawford.xml
 other_identifiers:
@@ -28,3 +21,11 @@ extras:
   org_info: Rep. Crawford is a member of the Harrison County Republican Women, Harrison
     County Republican Club, Saginaw Chippewa Indian Tribe of Michigan, L. B. Youth
     Recreation League and lifetime member of the NRA.
+offices:
+- address: Room 201M-7;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-2582
+  classification: capitol
+- address: 23155 Stablewood Cir;Pass Christian, MS 39571
+  voice: 228-452-5029
+  classification: district
+  name: 'District Office #1'

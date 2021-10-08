@@ -10,13 +10,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '42'
-contact_details:
-- note: District Office
-  address: PO Box 85, Montrose, IA 52639
-  voice: 319-520-8157
-- note: Capitol Office
-  voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30549
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30549
+offices:
+- address: PO Box 85, Montrose, IA 52639
+  voice: 319-520-8157
+  classification: district
+  name: 'District Office #1'
+- voice: 515-281-3371
+  classification: capitol

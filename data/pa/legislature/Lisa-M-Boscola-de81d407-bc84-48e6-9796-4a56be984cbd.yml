@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203018;Harrisburg, PA 17120-3018;Room:;458 Main Capitol
-  voice: 717-787-4236
-  fax: 717-783-1257
-- note: District Office
-  address: 1 East Broad Street Suite 120;Bethlehem, PA 18018
-  voice: 610-868-8667
-  fax: 610-861-2184
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=179
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/lisa.boscola
   twitter: https://twitter.com/SenLisaBoscola
+offices:
+- address: Senate Box 203018;Harrisburg, PA 17120-3018;Room:;458 Main Capitol
+  voice: 717-787-4236
+  fax: 717-783-1257
+  classification: capitol
+- address: 1 East Broad Street Suite 120;Bethlehem, PA 18018
+  voice: 610-868-8667
+  fax: 610-861-2184
+  classification: district
+  name: 'District Office #1'

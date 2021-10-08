@@ -9,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 78 S. Prospect Street;Putnam, CT 06260
-  voice: 860-933-3022
 links:
 - url: http://www.cthousegop.com/hayes/
 other_names:
 - name: Hayes, Rick L.
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4200;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 78 S. Prospect Street;Putnam, CT 06260
+  voice: 860-933-3022
+  classification: district
+  name: 'District Office #1'

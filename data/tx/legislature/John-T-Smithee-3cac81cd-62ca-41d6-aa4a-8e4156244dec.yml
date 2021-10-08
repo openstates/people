@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '86'
-contact_details:
-- note: Capitol Office
-  address: Room 1W.10;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0702
-  fax: 512-476-7016
-- note: District Office
-  address: 320 S. Polk, 1st Floor;Amarillo, TX 79101
-  voice: 806-372-3327
-  fax: 806-342-0327
 links:
 - url: https://house.texas.gov/members/member-page/?district=86
 other_identifiers:
@@ -29,3 +20,13 @@ other_identifiers:
   identifier: TXL000576
 sources:
 - url: https://house.texas.gov/members/member-page/?district=86
+offices:
+- address: Room 1W.10;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0702
+  fax: 512-476-7016
+  classification: capitol
+- address: 320 S. Polk, 1st Floor;Amarillo, TX 79101
+  voice: 806-372-3327
+  fax: 806-342-0327
+  classification: district
+  name: 'District Office #1'

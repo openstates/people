@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: Room 439M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7902
-- note: District Office
-  address: 509 Wheeling Avenue;Glen Dale, WV 26038
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Maroney
 other_identifiers:
@@ -23,3 +17,10 @@ other_identifiers:
   identifier: WVL000358
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Maroney
+offices:
+- address: Room 439M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7902
+  classification: capitol
+- address: 509 Wheeling Avenue;Glen Dale, WV 26038
+  classification: district
+  name: 'District Office #1'

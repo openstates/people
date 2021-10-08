@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 5064, Sacramento, CA 95814-4900
-  voice: 916-651-4004
-- note: District Office
-  address: 2635 Forest Ave, Suite 110, Chico, CA 95928
-  voice: 530-879-7424
 links:
 - url: http://senate.ca.gov/sd04
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD04&inframe=N
@@ -32,3 +25,11 @@ other_identifiers:
   identifier: CAL000433
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 5064, Sacramento, CA 95814-4900
+  voice: 916-651-4004
+  classification: capitol
+- address: 2635 Forest Ave, Suite 110, Chico, CA 95928
+  voice: 530-879-7424
+  classification: district
+  name: 'District Office #1'

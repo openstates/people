@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203032;Harrisburg, PA 17120-3032;Room:;187 Main Capitol
-  voice: 717-787-7175
-- note: District Office
-  address: 118 West Main Street Suite 204 Somerset, PA 15501
-  voice: 814-443-2053
-  fax: 814-443-2057
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1697
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -30,3 +22,12 @@ extras:
   facebook: http://www.facebook.com/Senatorstefano
   instagram: http://www.instagram.com/Senator_Stefano
   twitter: http://www.twitter.com/Senatorstefano
+offices:
+- address: Senate Box 203032;Harrisburg, PA 17120-3032;Room:;187 Main Capitol
+  voice: 717-787-7175
+  classification: capitol
+- address: 118 West Main Street Suite 204 Somerset, PA 15501
+  voice: 814-443-2053
+  fax: 814-443-2057
+  classification: district
+  name: 'District Office #1'

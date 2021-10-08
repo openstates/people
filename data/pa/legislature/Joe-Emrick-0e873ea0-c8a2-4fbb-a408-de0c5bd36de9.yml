@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '137'
-contact_details:
-- note: Capitol Office
-  address: 314C Main Capitol P.O. Box 202137 Harrisburg, PA 17120-2137
-  voice: 717-260-6159
-  fax: 717-782-2905
-- note: District Office
-  address: 134 South Main Street Nazareth, PA 18064
-  voice: 610-746-5090
-  fax: 610-746-5093
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1207
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepEmrick
   youtube: https://youtube.com/RepEmrick
+offices:
+- address: 314C Main Capitol P.O. Box 202137 Harrisburg, PA 17120-2137
+  voice: 717-260-6159
+  fax: 717-782-2905
+  classification: capitol
+- address: 134 South Main Street Nazareth, PA 18064
+  voice: 610-746-5090
+  fax: 610-746-5093
+  classification: district
+  name: 'District Office #1'

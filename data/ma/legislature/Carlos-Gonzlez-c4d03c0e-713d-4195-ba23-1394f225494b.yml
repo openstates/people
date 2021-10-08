@@ -11,12 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 10th Hampden
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 26;Boston, MA, 02133
-  voice: 617-722-2080
-- note: District Office
-  address: 44 Dover Street;Springfield, MA 01107
 links:
 - url: https://malegislature.gov/Legislators/Profile/C_G1
 other_names:
@@ -32,3 +26,10 @@ other_identifiers:
   identifier: MAL000575
 sources:
 - url: https://malegislature.gov/Legislators/Profile/C_G1
+offices:
+- address: 24 Beacon St.;Room 26;Boston, MA, 02133
+  voice: 617-722-2080
+  classification: capitol
+- address: 44 Dover Street;Springfield, MA 01107
+  classification: district
+  name: 'District Office #1'

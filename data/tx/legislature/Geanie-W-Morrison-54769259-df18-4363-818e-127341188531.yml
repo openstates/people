@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: Room 1W.6;Austin, TX 78768
-  voice: 512-463-0456
-  fax: 512-463-0158
-- note: District Office
-  address: 1908 N. Laurent, Suite 500;Victoria, Texas 77901
-  voice: 361-572-0196
-  fax: 361-576-0747
 links:
 - url: https://house.texas.gov/members/member-page/?district=30
 other_identifiers:
@@ -29,3 +20,13 @@ other_identifiers:
   identifier: TXL000623
 sources:
 - url: https://house.texas.gov/members/member-page/?district=30
+offices:
+- address: Room 1W.6;Austin, TX 78768
+  voice: 512-463-0456
+  fax: 512-463-0158
+  classification: capitol
+- address: 1908 N. Laurent, Suite 500;Victoria, Texas 77901
+  voice: 361-572-0196
+  fax: 361-576-0747
+  classification: district
+  name: 'District Office #1'

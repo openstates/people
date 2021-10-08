@@ -14,13 +14,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: 127 Capitol Building;Springfield, IL 62706
-  voice: 217-782-1035
-- note: District Office
-  address: 6315 N. Milwaukee Ave.;Suite 101;Chicago, IL 60646
-  voice: 773-286-1115
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2769
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2970
@@ -38,3 +31,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2769
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2970
+offices:
+- address: 127 Capitol Building;Springfield, IL 62706
+  voice: 217-782-1035
+  classification: capitol
+- address: 6315 N. Milwaukee Ave.;Suite 101;Chicago, IL 60646
+  voice: 773-286-1115
+  classification: district
+  name: 'District Office #1'

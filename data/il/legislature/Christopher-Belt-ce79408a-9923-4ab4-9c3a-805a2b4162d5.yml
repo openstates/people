@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '57'
-contact_details:
-- note: Capitol Office
-  address: M118 Capitol Building;Springfield, IL 62706
-  voice: 217-782-5399
-- note: District Office
-  address: 'Kenneth Hall Regional Office Bldg. #10;Collinsville Ave., Suite 201A;East
-    St. Louis, IL 62201'
-  voice: 618-875-1212
-  fax: 618-274-3010
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2721
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2927
@@ -26,3 +17,13 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2721
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2927
+offices:
+- address: M118 Capitol Building;Springfield, IL 62706
+  voice: 217-782-5399
+  classification: capitol
+- address: 'Kenneth Hall Regional Office Bldg. #10;Collinsville Ave., Suite 201A;East
+    St. Louis, IL 62201'
+  voice: 618-875-1212
+  fax: 618-274-3010
+  classification: district
+  name: 'District Office #1'

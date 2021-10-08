@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '73'
-contact_details:
-- note: Capitol Office
-  address: 111 Ryan Office Building P.O. Box 202073 Harrisburg, PA 17120-2073
-  voice: 717-787-7099
-  fax: 717-782-2922
-- note: District Office
-  address: 264 Haida Avenue Suite A1 Hastings, PA 16646
-  voice: 814-247-6210
-  fax: 814-247-6212
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1648
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,3 +23,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepSankey
   youtube: http://www.youtube.com/repsankey
+offices:
+- address: 111 Ryan Office Building P.O. Box 202073 Harrisburg, PA 17120-2073
+  voice: 717-787-7099
+  fax: 717-782-2922
+  classification: capitol
+- address: 264 Haida Avenue Suite A1 Hastings, PA 16646
+  voice: 814-247-6210
+  fax: 814-247-6212
+  classification: district
+  name: 'District Office #1'

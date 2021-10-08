@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '58'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Albany,, NY 12247
-  voice: 607-735-9671
-- note: District Office
-  address: 333 East Water Street;Elmira,, NY 14901
-  voice: 518-455-2091
-  fax: 607-735-9675
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/thomas-f-omara/contact
@@ -32,3 +24,12 @@ other_identifiers:
   identifier: NYL000377
 sources:
 - url: http://www.nysenate.gov/senators/thomas-f-omara/contact
+offices:
+- address: Legislative Office Building;Albany,, NY 12247
+  voice: 607-735-9671
+  classification: capitol
+- address: 333 East Water Street;Elmira,, NY 14901
+  voice: 518-455-2091
+  fax: 607-735-9675
+  classification: district
+  name: 'District Office #1'

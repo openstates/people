@@ -11,15 +11,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '57'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street, Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-3563
-  fax: 518-426-6905
-- note: District Office
-  address: 2-6 E. Second Street;Jamestown,, NY 14701
-  voice: 716-664-4603
-  fax: 716-664-2430
 links:
 - url: https://www.nysenate.gov/senators/george-m-borrello
 - url: http://www.nysenate.gov/senators-committees
@@ -29,3 +20,13 @@ other_names:
 sources:
 - url: https://www.nysenate.gov/senators/george-m-borrello
 - url: http://www.nysenate.gov/senators/george-m-borrello/contact
+offices:
+- address: 188 State Street, Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-3563
+  fax: 518-426-6905
+  classification: capitol
+- address: 2-6 E. Second Street;Jamestown,, NY 14701
+  voice: 716-664-4603
+  fax: 716-664-2430
+  classification: district
+  name: 'District Office #1'

@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '127'
-contact_details:
-- note: Capitol Office
-  address: Room GS.2;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0520
-  fax: 512-463-1606
-- note: District Office
-  address: '4501 Magnolia Cove Dr. #201;Kingwood, TX 77345'
-  voice: 281-360-9410
 links:
 - url: https://house.texas.gov/members/member-page/?district=127
 other_identifiers:
@@ -26,3 +18,12 @@ other_identifiers:
   identifier: TXL000590
 sources:
 - url: https://house.texas.gov/members/member-page/?district=127
+offices:
+- address: Room GS.2;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0520
+  fax: 512-463-1606
+  classification: capitol
+- address: '4501 Magnolia Cove Dr. #201;Kingwood, TX 77345'
+  voice: 281-360-9410
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '61'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 1920 W 7th St, Waterloo, IA 50702
-  voice: 319-404-3380
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14805
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14805
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14805
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14805
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 1920 W 7th St, Waterloo, IA 50702
+  voice: 319-404-3380
+  classification: district
+  name: 'District Office #1'

@@ -10,15 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  address: 251-E Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-4207
-  fax: 217-782-1130
-- note: District Office
-  address: 2525 W. 79th Street;Chicago, IL 60652
-  voice: 773-471-5200
-  fax: 773-471-1036
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2526
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2790
@@ -34,3 +25,13 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2526
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2790
+offices:
+- address: 251-E Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-4207
+  fax: 217-782-1130
+  classification: capitol
+- address: 2525 W. 79th Street;Chicago, IL 60652
+  voice: 773-471-5200
+  fax: 773-471-1036
+  classification: district
+  name: 'District Office #1'

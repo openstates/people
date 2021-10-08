@@ -20,18 +20,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Connecticut
-contact_details:
-- note: Capitol Office
-  address: 706 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-2823
-- note: District Office
-  address: 915 Lafayette Blvd. Suite 304; Bridgeport, CT 06604
-  voice: 203-330-0598
-  fax: 203-330-0608
-- note: District Office
-  address: 90 State House Sq. 10th Floor; Hartford, CT 06103
-  voice: 860-258-6940
-  fax: 860-258-6958
 links:
 - url: https://www.blumenthal.senate.gov
   note: website
@@ -72,3 +60,17 @@ other_identifiers:
   identifier: kg:/m/03tg8m
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 706 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-2823
+  classification: capitol
+- address: 915 Lafayette Blvd. Suite 304; Bridgeport, CT 06604
+  voice: 203-330-0598
+  fax: 203-330-0608
+  classification: district
+  name: 'District Office #1'
+- address: 90 State House Sq. 10th Floor; Hartford, CT 06103
+  voice: 860-258-6940
+  fax: 860-258-6958
+  classification: district
+  name: 'District Office #2'

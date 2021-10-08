@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Franklin-1
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 33 Carpenter Hill Rd.;St. Albans, VT 05478
-  voice: 802-527-7332
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27168
 - url: http://legislature.vermont.gov/people/single/2022/27168
@@ -27,3 +21,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27168
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27168
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 33 Carpenter Hill Rd.;St. Albans, VT 05478
+  voice: 802-527-7332
+  classification: district
+  name: 'District Office #1'

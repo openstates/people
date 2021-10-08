@@ -12,15 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Plymouth
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 124;Boston, MA, 02133
-  voice: 617-722-2100
-  fax: 617-722-2848
-- note: District Office
-  address: 191 Main Street, Suite 213F;Wareham, MA 02571
-  voice: 508-295-5999
-  fax: 508-295-5993
 links:
 - url: https://malegislature.gov/Legislators/Profile/SWG1
 other_identifiers:
@@ -32,3 +23,13 @@ other_identifiers:
   identifier: ocd-person/6701dae6-9ac1-48dd-875e-f6fa8a71a8bb
 sources:
 - url: https://malegislature.gov/Legislators/Profile/SWG1
+offices:
+- address: 24 Beacon St.;Room 124;Boston, MA, 02133
+  voice: 617-722-2100
+  fax: 617-722-2848
+  classification: capitol
+- address: 191 Main Street, Suite 213F;Wareham, MA 02571
+  voice: 508-295-5999
+  fax: 508-295-5993
+  classification: district
+  name: 'District Office #1'

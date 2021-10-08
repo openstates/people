@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  voice: 701-678-6225
-- note: District Office
-  address: P.O. Box 1008;Lisbon, ND;58054-1008
-  voice: 701-683-2194
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-sebastian-ertelt
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-sebastian-ertelt
@@ -27,3 +21,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-sebastian-ertelt
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-sebastian-ertelt
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-sebastian-ertelt
+offices:
+- voice: 701-678-6225
+  classification: capitol
+- address: P.O. Box 1008;Lisbon, ND;58054-1008
+  voice: 701-683-2194
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '91'
-contact_details:
-- note: Capitol Office
-  address: LOB 327; Albany, NY 12248
-  voice: 518-455-4897
-- note: District Office
-  address: 222 Grace Church Street; Port Chester, NY 10573
-  voice: 914-939-7028
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Steven-Otis
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Steven-Otis
 - url: https://assembly.state.ny.us/mem/Steven-Otis
+offices:
+- address: LOB 327; Albany, NY 12248
+  voice: 518-455-4897
+  classification: capitol
+- address: 222 Grace Church Street; Port Chester, NY 10573
+  voice: 914-939-7028
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '45'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 2207;Raleigh, NC 27601-1096
-  voice: 919-733-9892
-- note: District Office
-  address: 6922 Surrey Rd;Fayetteville, NC 28306
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/662
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Cumberland
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 2207;Raleigh, NC 27601-1096
+  voice: 919-733-9892
+  classification: capitol
+- address: 6922 Surrey Rd;Fayetteville, NC 28306
+  classification: district
+  name: 'District Office #1'

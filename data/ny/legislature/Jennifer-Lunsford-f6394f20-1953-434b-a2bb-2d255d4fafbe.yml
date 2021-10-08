@@ -9,13 +9,14 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '135'
-contact_details:
-- note: District Office
-  address: 268 Fairport Village Landing; Fairport, NY 14450
-  voice: 585-223-9130
-- note: Capitol Office
-  voice: 518-455-5784
 links:
 - url: https://assembly.state.ny.us/mem/Jennifer-Lunsford
 sources:
 - url: https://assembly.state.ny.us/mem/Jennifer-Lunsford
+offices:
+- address: 268 Fairport Village Landing; Fairport, NY 14450
+  voice: 585-223-9130
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5784
+  classification: capitol

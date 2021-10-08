@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: 606 Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-3215
-- note: District Office
-  address: 3845 Richmond Ave. Suite 2A;Staten Island,, NY 10312
-  voice: 718-984-4073
-  fax: 718-984-4455
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/andrew-j-lanza/contact
@@ -34,3 +26,12 @@ other_identifiers:
   identifier: NYL000459
 sources:
 - url: http://www.nysenate.gov/senators/andrew-j-lanza/contact
+offices:
+- address: 606 Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-3215
+  classification: capitol
+- address: 3845 Richmond Ave. Suite 2A;Staten Island,, NY 10312
+  voice: 718-984-4073
+  fax: 718-984-4455
+  classification: district
+  name: 'District Office #1'

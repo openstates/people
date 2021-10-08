@@ -10,13 +10,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  address: Room 417M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7973
-- note: District Office
-  address: 22253 Adolph Road;Helvetia, WV 26224
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Karnes
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Karnes
+offices:
+- address: Room 417M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7973
+  classification: capitol
+- address: 22253 Adolph Road;Helvetia, WV 26224
+  classification: district
+  name: 'District Office #1'

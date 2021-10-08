@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: Room 210W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7880
-- note: District Office
-  address: 171 S. Washington Street;Berkeley Springs, WV 25411
-  voice: 304-258-5133
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Trump
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000308
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Trump
+offices:
+- address: Room 210W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7880
+  classification: capitol
+- address: 171 S. Washington Street;Berkeley Springs, WV 25411
+  voice: 304-258-5133
+  classification: district
+  name: 'District Office #1'

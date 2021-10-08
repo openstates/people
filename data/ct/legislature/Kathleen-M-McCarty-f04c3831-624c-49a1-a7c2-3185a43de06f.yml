@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '38'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4046;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 226 Great Neck Road;Waterford, CT 06385
-  voice: 860-442-2903
 links:
 - url: http://www.cthousegop.com/McCarty/
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000277
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4046;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 226 Great Neck Road;Waterford, CT 06385
+  voice: 860-442-2903
+  classification: district
+  name: 'District Office #1'

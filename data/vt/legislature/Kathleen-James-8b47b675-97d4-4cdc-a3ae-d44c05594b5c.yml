@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Bennington-4
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: P.O. Box 1044;Manchester Center, VT 05255
-  voice: 802-828-2228
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30945
 - url: http://legislature.vermont.gov/people/single/2022/30945
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30945
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30945
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: P.O. Box 1044;Manchester Center, VT 05255
+  voice: 802-828-2228
+  classification: district
+  name: 'District Office #1'

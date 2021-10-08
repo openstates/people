@@ -20,13 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MI-8
-contact_details:
-- note: Capitol Office
-  address: 1210 Longworth House Office Building Washington DC 20515-2208
-  voice: 202-225-4872
-- note: District Office
-  address: 1100 W Saginaw St 3a; Lansing, MI 48915-2033
-  voice: 517-993-0510
 links:
 - url: https://slotkin.house.gov
   note: website
@@ -55,3 +48,11 @@ other_identifiers:
   identifier: kg:/g/11dfr3z7r1
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1210 Longworth House Office Building Washington DC 20515-2208
+  voice: 202-225-4872
+  classification: capitol
+- address: 1100 W Saginaw St 3a; Lansing, MI 48915-2033
+  voice: 517-993-0510
+  classification: district
+  name: 'District Office #1'

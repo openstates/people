@@ -9,13 +9,14 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '56'
-contact_details:
-- note: District Office
-  address: 1360 Fulton Street, Room 417; Brooklyn, NY 11216
-  voice: 718-399-7630
-- note: Capitol Office
-  voice: 518-455-5474
 links:
 - url: https://assembly.state.ny.us/mem/Stefani-Zinerman
 sources:
 - url: https://assembly.state.ny.us/mem/Stefani-Zinerman
+offices:
+- address: 1360 Fulton Street, Room 417; Brooklyn, NY 11216
+  voice: 718-399-7630
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5474
+  classification: capitol

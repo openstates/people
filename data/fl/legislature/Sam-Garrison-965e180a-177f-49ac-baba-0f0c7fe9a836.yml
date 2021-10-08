@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '18'
-contact_details:
-- note: District Office
-  address: Suite 104; 1279 Kingsley Avenue; Orange Park, FL 32073-4657
+offices:
+- address: Suite 104; 1279 Kingsley Avenue; Orange Park, FL 32073-4657
   voice: 904-278-5761
-- note: Capitol Office
-  address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1401 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5018
+  classification: capitol

@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '38'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203038;Harrisburg, PA 17120-3038;Room:;366 Main Capitol
-  voice: 717-787-6538
-- note: District Office
-  address: 5000 McKnight Road Suite 405;Pittsburgh, PA 15237
-  voice: 412-364-0469
-  fax: 412-364-0928
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1803
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -32,3 +24,12 @@ extras:
   facebook: https://www.facebook.com/SenWilliamsPA/
   instagram: https://www.instagram.com/SenWilliamsPA/
   twitter: https://twitter.com/SenWilliamsPA/
+offices:
+- address: Senate Box 203038;Harrisburg, PA 17120-3038;Room:;366 Main Capitol
+  voice: 717-787-6538
+  classification: capitol
+- address: 5000 McKnight Road Suite 405;Pittsburgh, PA 15237
+  voice: 412-364-0469
+  fax: 412-364-0928
+  classification: district
+  name: 'District Office #1'

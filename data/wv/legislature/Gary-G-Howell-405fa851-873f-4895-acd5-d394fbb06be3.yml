@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '56'
-contact_details:
-- note: Capitol Office
-  address: Room 242M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3191
-- note: District Office
-  address: P.O. Box 39;Keyser, WV 26726
-  voice: 304-788-6554
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Howell
 other_identifiers:
@@ -28,3 +21,11 @@ other_identifiers:
   identifier: WVL000265
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Howell
+offices:
+- address: Room 242M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3191
+  classification: capitol
+- address: P.O. Box 39;Keyser, WV 26726
+  voice: 304-788-6554
+  classification: district
+  name: 'District Office #1'

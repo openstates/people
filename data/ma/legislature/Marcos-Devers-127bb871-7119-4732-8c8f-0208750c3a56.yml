@@ -10,13 +10,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 16th Essex
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 527A;Boston, MA, 02133
-  voice: 617-722-2020
-- note: District Office
-  address: 200 Common Street;FL 2, Suite 207, Lawrence
-  voice: 978-912-0323
 links:
 - url: https://malegislature.gov/Legislators/Profile/MAD1
 other_identifiers:
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: ocd-person/05435a17-624a-499d-8cce-d7f09f958cba
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MAD1
+offices:
+- address: 24 Beacon St.;Room 527A;Boston, MA, 02133
+  voice: 617-722-2020
+  classification: capitol
+- address: 200 Common Street;FL 2, Suite 207, Lawrence
+  voice: 978-912-0323
+  classification: district
+  name: 'District Office #1'

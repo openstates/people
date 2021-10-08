@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  voice: 701-642-6444
-- note: District Office
-  address: 1504 Oakwood Avenue;Wahpeton, ND;58075-3553
-  voice: 701-642-9023
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-alisa-mitskog
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-alisa-mitskog
@@ -29,3 +23,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-alisa-mitskog
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-alisa-mitskog
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-alisa-mitskog
+offices:
+- voice: 701-642-6444
+  classification: capitol
+- address: 1504 Oakwood Avenue;Wahpeton, ND;58075-3553
+  voice: 701-642-9023
+  classification: district
+  name: 'District Office #1'

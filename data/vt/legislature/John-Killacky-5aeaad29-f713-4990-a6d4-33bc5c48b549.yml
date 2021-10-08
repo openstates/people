@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-7-3
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 72 Woodthrush Cir.;South Burlington, VT 05403
-  voice: 802-862-2254
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30949
 - url: http://legislature.vermont.gov/people/single/2022/30949
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30949
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30949
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 72 Woodthrush Cir.;South Burlington, VT 05403
+  voice: 802-862-2254
+  classification: district
+  name: 'District Office #1'

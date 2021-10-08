@@ -25,18 +25,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-20
-contact_details:
-- note: Capitol Office
-  address: 406 Cannon House Office Building Washington DC 20515-0520
-  voice: 202-225-2861
-- note: District Office
-  address: 100 W. Alisal St.; Salinas, CA 93901
-  voice: 831-424-2229
-  fax: 831-424-7099
-- note: District Office
-  address: 701 Ocean St. Room 318C; Santa Cruz, CA 95060
-  voice: 831-429-1976
-  fax: 831-424-7099
 links:
 - url: https://panetta.house.gov
   note: website
@@ -71,3 +59,17 @@ other_identifiers:
   identifier: Jimmy Panetta
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 406 Cannon House Office Building Washington DC 20515-0520
+  voice: 202-225-2861
+  classification: capitol
+- address: 100 W. Alisal St.; Salinas, CA 93901
+  voice: 831-424-2229
+  fax: 831-424-7099
+  classification: district
+  name: 'District Office #1'
+- address: 701 Ocean St. Room 318C; Santa Cruz, CA 95060
+  voice: 831-429-1976
+  fax: 831-424-7099
+  classification: district
+  name: 'District Office #2'

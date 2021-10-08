@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '103'
-contact_details:
-- note: Capitol Office
-  address: Room 1N.5;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0746
-- note: District Office
-  address: 1111 West Mockingbird Lane;Suite 1010;Dallas, TX 75247
-  voice: 214-943-6081
-  fax: 214-920-9996
 links:
 - url: https://house.texas.gov/members/member-page/?district=103
 other_identifiers:
@@ -28,3 +20,12 @@ other_identifiers:
   identifier: TXL000660
 sources:
 - url: https://house.texas.gov/members/member-page/?district=103
+offices:
+- address: Room 1N.5;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0746
+  classification: capitol
+- address: 1111 West Mockingbird Lane;Suite 1010;Dallas, TX 75247
+  voice: 214-943-6081
+  fax: 214-920-9996
+  classification: district
+  name: 'District Office #1'

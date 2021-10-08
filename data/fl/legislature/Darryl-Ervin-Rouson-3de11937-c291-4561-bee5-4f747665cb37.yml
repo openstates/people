@@ -20,14 +20,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '19'
-contact_details:
-- note: Capitol Office
-  address: 212 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5019
-- note: District Office
-  address: By Appointment Only; The Cuban Club; 2010 Avenida Republica de Cuba; Tampa,
-    FL 33605
-  voice: 727-822-6828
 links:
 - url: http://www.flsenate.gov/Senators/s19
 - url: http://www.flsenate.gov/Senators/2018-2020/S19
@@ -44,3 +36,12 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s19
 - url: http://www.flsenate.gov/Senators/2018-2020/S19
+offices:
+- address: 212 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5019
+  classification: capitol
+- address: By Appointment Only; The Cuban Club; 2010 Avenida Republica de Cuba; Tampa,
+    FL 33605
+  voice: 727-822-6828
+  classification: district
+  name: 'District Office #1'

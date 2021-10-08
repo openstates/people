@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: 172 State Street, Capitol Building;Albany,, NY 12247
-  voice: 518-455-2297
-- note: District Office
-  address: 211 E 43rd Street;New York,, NY 10017
-  voice: 212-490-9535
-  fax: 212-499-2558
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/liz-krueger/contact
@@ -32,3 +24,12 @@ other_identifiers:
   identifier: NYL000358
 sources:
 - url: http://www.nysenate.gov/senators/liz-krueger/contact
+offices:
+- address: 172 State Street, Capitol Building;Albany,, NY 12247
+  voice: 518-455-2297
+  classification: capitol
+- address: 211 E 43rd Street;New York,, NY 10017
+  voice: 212-490-9535
+  fax: 212-499-2558
+  classification: district
+  name: 'District Office #1'

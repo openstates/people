@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '6'
-contact_details:
-- note: Capitol Office
-  address: Room 217W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7808
-- note: District Office
-  address: 15577 Route 152 Road;Wayne, WV 25570
-  voice: 304-360-6272
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Maynard
 other_identifiers:
@@ -24,3 +17,11 @@ other_identifiers:
   identifier: WVL000312
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Maynard
+offices:
+- address: Room 217W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7808
+  classification: capitol
+- address: 15577 Route 152 Road;Wayne, WV 25570
+  voice: 304-360-6272
+  classification: district
+  name: 'District Office #1'

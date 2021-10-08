@@ -15,11 +15,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '29'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1079
-- note: District Office
-  address: 1469 W. Quinn Road, Pocatello, ID, 83202
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=29
 other_identifiers:
@@ -27,3 +22,9 @@ other_identifiers:
   identifier: IDL000237
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+offices:
+- voice: 208-332-1079
+  classification: capitol
+- address: 1469 W. Quinn Road, Pocatello, ID, 83202
+  classification: district
+  name: 'District Office #1'

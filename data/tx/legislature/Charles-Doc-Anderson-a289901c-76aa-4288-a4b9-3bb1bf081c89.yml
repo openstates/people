@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '56'
-contact_details:
-- note: Capitol Office
-  address: Room GW.7;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0135
-  fax: 512-463-0642
-- note: District Office
-  address: 900 Austin Ave., Suite 804;Waco, TX 76701
-  voice: 254-754-3892
-  fax: 254-754-1604
 links:
 - url: https://house.texas.gov/members/member-page/?district=56
 other_identifiers:
@@ -33,3 +24,13 @@ other_identifiers:
   identifier: TXL000547
 sources:
 - url: https://house.texas.gov/members/member-page/?district=56
+offices:
+- address: Room GW.7;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0135
+  fax: 512-463-0642
+  classification: capitol
+- address: 900 Austin Ave., Suite 804;Waco, TX 76701
+  voice: 254-754-3892
+  fax: 254-754-1604
+  classification: district
+  name: 'District Office #1'

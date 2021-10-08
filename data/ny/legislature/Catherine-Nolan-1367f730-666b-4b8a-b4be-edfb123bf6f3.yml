@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '37'
-contact_details:
-- note: Capitol Office
-  address: LOB 739; Albany, NY 12248
-  voice: 518-455-4851
-- note: District Office
-  address: 47-40 21 Street Room 810; Long Island City, NY 11101
-  voice: 718-784-3194
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Catherine-Nolan
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Catherine-Nolan
 - url: https://assembly.state.ny.us/mem/Catherine-Nolan
+offices:
+- address: LOB 739; Albany, NY 12248
+  voice: 518-455-4851
+  classification: capitol
+- address: 47-40 21 Street Room 810; Long Island City, NY 11101
+  voice: 718-784-3194
+  classification: district
+  name: 'District Office #1'

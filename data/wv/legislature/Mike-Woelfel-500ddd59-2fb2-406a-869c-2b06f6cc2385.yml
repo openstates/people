@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  address: Room 203W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7956
-- note: District Office
-  address: 801 8th Street;Huntington, WV 25701
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Woelfel
 other_identifiers:
@@ -23,3 +17,10 @@ other_identifiers:
   identifier: WVL000286
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Woelfel
+offices:
+- address: Room 203W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7956
+  classification: capitol
+- address: 801 8th Street;Huntington, WV 25701
+  classification: district
+  name: 'District Office #1'

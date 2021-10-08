@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2500;Hartford, CT 06106
-  voice: 860-240-0475
-- note: District Office
-  address: 480 Winchester Avenue;New Haven, CT 06511
-  voice: 203-676-8167
 links:
 - url: http://www.senatedems.ct.gov/Winfield
 other_identifiers:
@@ -23,3 +16,11 @@ other_identifiers:
   identifier: CTL000279
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2500;Hartford, CT 06106
+  voice: 860-240-0475
+  classification: capitol
+- address: 480 Winchester Avenue;New Haven, CT 06511
+  voice: 203-676-8167
+  classification: district
+  name: 'District Office #1'

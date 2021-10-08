@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  voice: 701-255-3900
-- note: District Office
-  address: 422 Toronto Drive;Bismarck, ND;58503-0276
-  voice: 701-258-0333
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-george-j-keiser
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-george-keiser
@@ -34,3 +28,10 @@ other_identifiers:
 sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-george-j-keiser
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-george-keiser
+offices:
+- voice: 701-255-3900
+  classification: capitol
+- address: 422 Toronto Drive;Bismarck, ND;58503-0276
+  voice: 701-258-0333
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: 248-W Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8052
-- note: District Office
-  address: 2100 Ridge Ave.;Suite 2600;Evanston, IL 60201
-  voice: 847-424-5401
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2583
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2825
@@ -30,3 +23,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2583
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2825
+offices:
+- address: 248-W Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8052
+  classification: capitol
+- address: 2100 Ridge Ave.;Suite 2600;Evanston, IL 60201
+  voice: 847-424-5401
+  classification: district
+  name: 'District Office #1'

@@ -9,18 +9,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: 164-B East Wing P.O. Box 202018 Harrisburg, PA 17120-2018
-  voice: 717-783-7319
-  fax: 717-772-2414
-- note: District Office
-  address: 2424 Bristol Road Neshaminy Valley Commons Bensalem, PA 19020
-  voice: 215-750-1017
-  fax: 215-750-1295
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1876
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1876
+offices:
+- address: 164-B East Wing P.O. Box 202018 Harrisburg, PA 17120-2018
+  voice: 717-783-7319
+  fax: 717-772-2414
+  classification: capitol
+- address: 2424 Bristol Road Neshaminy Valley Commons Bensalem, PA 19020
+  voice: 215-750-1017
+  fax: 215-750-1295
+  classification: district
+  name: 'District Office #1'

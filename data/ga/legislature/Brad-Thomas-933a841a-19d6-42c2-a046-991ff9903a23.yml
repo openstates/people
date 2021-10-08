@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: 401-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0152
-- note: District Office
-  address: 2210 Holly Springs Pkwy; Unit 1280; Holly Springs, GA 30115
-  voice: 678-224-1490
 links:
 - url: https://www.legis.ga.gov/members/house/4991?session=1029
 sources:
@@ -35,3 +28,11 @@ extras:
   spouse: Jennifer
   staff: Shakirah Nash - Administrative Assistant
   staff email: shakirah.nash@house.ga.gov
+offices:
+- address: 401-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0152
+  classification: capitol
+- address: 2210 Holly Springs Pkwy; Unit 1280; Holly Springs, GA 30115
+  voice: 678-224-1490
+  classification: district
+  name: 'District Office #1'

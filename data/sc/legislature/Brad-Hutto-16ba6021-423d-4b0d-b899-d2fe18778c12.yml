@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '40'
-contact_details:
-- note: Capitol Office
-  address: 510 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6140
-- note: District Office
-  address: P.O. Box 1084, Orangeburg, SC 29116-1084
-  voice: 803-536-1808
-- note: Primary Office
-  voice: 803-534-5218
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0912499891
 other_names:
@@ -30,3 +21,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=0912499891
+offices:
+- address: 510 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6140
+  classification: capitol
+- address: P.O. Box 1084, Orangeburg, SC 29116-1084
+  voice: 803-536-1808
+  classification: district
+  name: 'District Office #1'
+- voice: 803-534-5218
+  classification: primary

@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: 108B Capitol Building;Springfield, IL 62706
-  voice: 217-782-9573
-- note: District Office
-  address: 507 West 111th Street;Chicago, IL 60628
-  voice: 773-995-7748
-  fax: 773-995-9061
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2579
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2823
@@ -44,3 +36,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2579
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2823
+offices:
+- address: 108B Capitol Building;Springfield, IL 62706
+  voice: 217-782-9573
+  classification: capitol
+- address: 507 West 111th Street;Chicago, IL 60628
+  voice: 773-995-7748
+  fax: 773-995-9061
+  classification: district
+  name: 'District Office #1'

@@ -11,15 +11,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Bristol and Plymouth
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 312-C;Boston, MA, 02133
-  voice: 617-722-1440
-  fax: 617-722-1068
-- note: District Office
-  address: 888 Purchase Street Room 305;New Bedford, MA 02740
-  voice: 508-984-1474
-  fax: 508-984-1590
 links:
 - url: https://malegislature.gov/Legislators/Profile/MCM0
 other_identifiers:
@@ -29,3 +20,13 @@ other_identifiers:
   identifier: MAL000261
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MCM0
+offices:
+- address: 24 Beacon St.;Room 312-C;Boston, MA, 02133
+  voice: 617-722-1440
+  fax: 617-722-1068
+  classification: capitol
+- address: 888 Purchase Street Room 305;New Bedford, MA 02740
+  voice: 508-984-1474
+  fax: 508-984-1590
+  classification: district
+  name: 'District Office #1'

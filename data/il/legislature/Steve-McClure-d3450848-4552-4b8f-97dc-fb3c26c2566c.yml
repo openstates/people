@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '50'
-contact_details:
-- note: Capitol Office
-  address: 218 Capitol Building;Springfield, IL 62706
-  voice: 217-782-8206
-- note: District Office
-  address: 229 S. Main St.;Suite B;Jacksonville, IL 62650
-  voice: 217-245-7456
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2728
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2933
@@ -24,3 +17,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2728
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2933
+offices:
+- address: 218 Capitol Building;Springfield, IL 62706
+  voice: 217-782-8206
+  classification: capitol
+- address: 229 S. Main St.;Suite B;Jacksonville, IL 62650
+  voice: 217-245-7456
+  classification: district
+  name: 'District Office #1'

@@ -20,13 +20,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: 420 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5022
-- note: District Office
-  address: 2033 East Edgewood Drive; Suite 1; Lakeland, FL 33803
-  voice: 863-668-3028
 links:
 - url: http://www.flsenate.gov/Senators/s22
 - url: http://www.flsenate.gov/Senators/2018-2020/S22
@@ -43,3 +36,11 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s22
 - url: http://www.flsenate.gov/Senators/2018-2020/S22
+offices:
+- address: 420 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5022
+  classification: capitol
+- address: 2033 East Edgewood Drive; Suite 1; Lakeland, FL 33803
+  voice: 863-668-3028
+  classification: district
+  name: 'District Office #1'

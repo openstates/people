@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '43'
-contact_details:
-- note: Capitol Office
-  address: LOB 834; Albany, NY 12248
-  voice: 518-455-5262
-- note: District Office
-  address: 330 Empire Boulevard; 1st Floor; Brooklyn, NY 11225
-  voice: 718-771-3105
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Diana-C-Richardson
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Diana-C-Richardson
 - url: https://assembly.state.ny.us/mem/Diana-C-Richardson
+offices:
+- address: LOB 834; Albany, NY 12248
+  voice: 518-455-5262
+  classification: capitol
+- address: 330 Empire Boulevard; 1st Floor; Brooklyn, NY 11225
+  voice: 718-771-3105
+  classification: district
+  name: 'District Office #1'

@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '23'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street;Albany,, NY 12247
-  voice: 518-455-2437
-- note: District Office
-  address: 2872 West 15th Street;Brooklyn,, NY 11224-2602
-  voice: 718-727-9406
-  fax: 518-426-6943
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/diane-j-savino/contact
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: NYL000374
 sources:
 - url: http://www.nysenate.gov/senators/diane-j-savino/contact
+offices:
+- address: 188 State Street;Albany,, NY 12247
+  voice: 518-455-2437
+  classification: capitol
+- address: 2872 West 15th Street;Brooklyn,, NY 11224-2602
+  voice: 718-727-9406
+  fax: 518-426-6943
+  classification: district
+  name: 'District Office #1'

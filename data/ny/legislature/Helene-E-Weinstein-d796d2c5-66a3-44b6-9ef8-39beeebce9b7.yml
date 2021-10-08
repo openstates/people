@@ -8,14 +8,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '41'
-contact_details:
-- note: District Office
-  address: 3520 Nostrand Avenue; Brooklyn, NY 11229
-  voice: 718-648-4700
-- note: Capitol Office
-  address: LOB 923; Albany, NY 12248
-  voice: 518-455-5462
 links:
 - url: https://assembly.state.ny.us/mem/Helene-E-Weinstein
 sources:
 - url: https://assembly.state.ny.us/mem/Helene-E-Weinstein
+offices:
+- address: 3520 Nostrand Avenue; Brooklyn, NY 11229
+  voice: 718-648-4700
+  classification: district
+  name: 'District Office #1'
+- address: LOB 923; Albany, NY 12248
+  voice: 518-455-5462
+  classification: capitol

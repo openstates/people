@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '50'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0050
-  voice: 916-319-2050
-- note: District Office
-  address: 2800 28th Street, Suite 105;Santa Monica, CA 90405
-  voice: 310-450-0041
 links:
 - url: https://a50.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD50&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000342
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0050
+  voice: 916-319-2050
+  classification: capitol
+- address: 2800 28th Street, Suite 105;Santa Monica, CA 90405
+  voice: 310-450-0041
+  classification: district
+  name: 'District Office #1'

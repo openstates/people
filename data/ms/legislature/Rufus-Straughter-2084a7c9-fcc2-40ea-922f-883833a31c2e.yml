@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '51'
-contact_details:
-- note: Capitol Office
-  address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3456
-- note: District Office
-  address: 107 Van Buren Street;Belzoni, MS 39038
-  voice: 662-247-2728
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/straughter.xml
 other_identifiers:
@@ -27,3 +20,11 @@ sources:
 extras:
   org_info: Representative Straughter is affiliated Omega Psi Phi, Elks, NEA, MAE,
     HCAE, NCTM and the NAACP.
+offices:
+- address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3456
+  classification: capitol
+- address: 107 Van Buren Street;Belzoni, MS 39038
+  voice: 662-247-2728
+  classification: district
+  name: 'District Office #1'

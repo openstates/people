@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '98'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 337 4th Ave S, Clinton, IA 52732
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9397
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9397
@@ -28,3 +23,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9397
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9397
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 337 4th Ave S, Clinton, IA 52732
+  classification: district
+  name: 'District Office #1'

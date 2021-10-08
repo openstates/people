@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '79'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4100;Hartford, CT 06106
-  voice: 860-240-8500
-- note: District Office
-  address: P.O. Box 1399;Bristol, CT 06010
 links:
 - url: http://www.housedems.ct.gov/Ziogas
 other_names:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: CTL000314
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4100;Hartford, CT 06106
+  voice: 860-240-8500
+  classification: capitol
+- address: P.O. Box 1399;Bristol, CT 06010
+  classification: district
+  name: 'District Office #1'

@@ -35,29 +35,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-2
-contact_details:
-- note: Capitol Office
-  address: 1527 Longworth House Office Building Washington DC 20515-0502
-  voice: 202-225-5161
-- note: District Office
-  address: 317 Third St. Suite 1; Eureka, CA 95501
-  voice: 707-407-3585
-  fax: 707-407-3559
-- note: District Office
-  address: 430 N. Franklin St. P.O. Box 2208; Fort Bragg, CA 95437
-  voice: 707-962-0933
-  fax: 707-962-0905
-- note: District Office
-  address: '206 G St. Unit #3; Petaluma, CA 94952'
-  voice: 707-981-8967
-- note: District Office
-  address: 999 Fifth Ave. Suite 290; San Rafael, CA 94901
-  voice: 415-258-9657
-  fax: 415-258-9913
-- note: District Office
-  address: 559 Low Gap Rd.; Ukiah, CA 95482
-  voice: 707-962-0905
-  fax: 707-671-7449
 links:
 - url: https://huffman.house.gov
   note: website
@@ -94,3 +71,31 @@ other_identifiers:
   identifier: kg:/m/0ksfyx
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1527 Longworth House Office Building Washington DC 20515-0502
+  voice: 202-225-5161
+  classification: capitol
+- address: 317 Third St. Suite 1; Eureka, CA 95501
+  voice: 707-407-3585
+  fax: 707-407-3559
+  classification: district
+  name: 'District Office #1'
+- address: 430 N. Franklin St. P.O. Box 2208; Fort Bragg, CA 95437
+  voice: 707-962-0933
+  fax: 707-962-0905
+  classification: district
+  name: 'District Office #2'
+- address: '206 G St. Unit #3; Petaluma, CA 94952'
+  voice: 707-981-8967
+  classification: district
+  name: 'District Office #3'
+- address: 999 Fifth Ave. Suite 290; San Rafael, CA 94901
+  voice: 415-258-9657
+  fax: 415-258-9913
+  classification: district
+  name: 'District Office #4'
+- address: 559 Low Gap Rd.; Ukiah, CA 95482
+  voice: 707-962-0905
+  fax: 707-671-7449
+  classification: district
+  name: 'District Office #5'

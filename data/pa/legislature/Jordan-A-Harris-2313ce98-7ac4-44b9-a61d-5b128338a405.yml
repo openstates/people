@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '186'
-contact_details:
-- note: Capitol Office
-  address: 428 Main Capitol P.O. Box 202186 Harrisburg, PA 17120-2186
-  voice: 717-783-1792
-  fax: 717-787-7172
-- note: District Office
-  address: 2103 Snyder Avenue Philadelphia, PA 19145
-  voice: 215-755-9185
-  fax: 215-952-3375
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1633
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ extras:
   facebook: https://www.facebook.com/RepJordanHarris
   twitter: https://www.twitter.com/RepHarris
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgXlZde0v6mYg9x10OHBiZmp
+offices:
+- address: 428 Main Capitol P.O. Box 202186 Harrisburg, PA 17120-2186
+  voice: 717-783-1792
+  fax: 717-787-7172
+  classification: capitol
+- address: 2103 Snyder Avenue Philadelphia, PA 19145
+  voice: 215-755-9185
+  fax: 215-952-3375
+  classification: district
+  name: 'District Office #1'

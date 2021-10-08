@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  voice: 701-739-9328
-- note: District Office
-  address: 4518 Highway 20 South;Devils Lake, ND;58301-8518
-  voice: 701-662-4998
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-dennis-johnson
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-dennis-johnson
@@ -33,3 +27,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-dennis-johnson
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-dennis-johnson
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-dennis-johnson
+offices:
+- voice: 701-739-9328
+  classification: capitol
+- address: 4518 Highway 20 South;Devils Lake, ND;58301-8518
+  voice: 701-662-4998
+  classification: district
+  name: 'District Office #1'

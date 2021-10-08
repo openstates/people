@@ -10,14 +10,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: P.O. Box 8175;Greenwood, MS 38935-8175
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/osborne.xml
 other_names:
 - name: Solomon Osborne
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/osborne.xml
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: P.O. Box 8175;Greenwood, MS 38935-8175
+  classification: district
+  name: 'District Office #1'

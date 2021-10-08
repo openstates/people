@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '46'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 3025 Provence Ln, Muscatine, IA 52761
-  voice: 563-272-8683
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9406
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9406
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9406
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9406
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 3025 Provence Ln, Muscatine, IA 52761
+  voice: 563-272-8683
+  classification: district
+  name: 'District Office #1'

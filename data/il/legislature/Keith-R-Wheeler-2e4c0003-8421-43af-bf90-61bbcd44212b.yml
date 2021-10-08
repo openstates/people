@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '50'
-contact_details:
-- note: Capitol Office
-  address: 200-5N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-1486
-- note: District Office
-  address: 959 Oak Street;North Aurora, IL 60542
-  voice: 630-345-3464
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2660
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2883
@@ -30,3 +23,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2660
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2883
+offices:
+- address: 200-5N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-1486
+  classification: capitol
+- address: 959 Oak Street;North Aurora, IL 60542
+  voice: 630-345-3464
+  classification: district
+  name: 'District Office #1'

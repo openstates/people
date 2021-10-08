@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '56'
-contact_details:
-- note: Capitol Office
-  address: 311B Capitol Building;Springfield, IL 62706
-  voice: 217-782-5247
-- note: District Office
-  address: 35 Executive Plaza Court;Maryville, IL 62062
-  voice: 618-251-9840
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2722
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2928
@@ -24,3 +17,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2722
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2928
+offices:
+- address: 311B Capitol Building;Springfield, IL 62706
+  voice: 217-782-5247
+  classification: capitol
+- address: 35 Executive Plaza Court;Maryville, IL 62062
+  voice: 618-251-9840
+  classification: district
+  name: 'District Office #1'

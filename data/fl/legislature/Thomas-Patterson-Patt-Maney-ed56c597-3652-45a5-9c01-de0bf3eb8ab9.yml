@@ -7,13 +7,14 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '4'
-contact_details:
-- note: District Office
-  address: Suite 201, 202, 203; 115 Miracle Strip Parkway Southeast; Fort Walton Beach,
-    FL 32548-6018
-  voice: 850-833-3713
-- note: Capitol Office
-  address: 1102 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5004
 other_names:
 - name: Maney
+offices:
+- address: Suite 201, 202, 203; 115 Miracle Strip Parkway Southeast; Fort Walton Beach,
+    FL 32548-6018
+  voice: 850-833-3713
+  classification: district
+  name: 'District Office #1'
+- address: 1102 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5004
+  classification: capitol

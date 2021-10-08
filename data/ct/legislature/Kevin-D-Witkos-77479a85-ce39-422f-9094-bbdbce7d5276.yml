@@ -9,12 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 3400;Hartford, CT 06106
-  voice: 860-240-8800
-- note: District Office
-  address: 15 High Ledge Road;Canton, CT 06019
 links:
 - url: http://www.ctsenaterepublicans.com/home-witkos
 other_names:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: CTL000008
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 3400;Hartford, CT 06106
+  voice: 860-240-8800
+  classification: capitol
+- address: 15 High Ledge Road;Canton, CT 06019
+  classification: district
+  name: 'District Office #1'

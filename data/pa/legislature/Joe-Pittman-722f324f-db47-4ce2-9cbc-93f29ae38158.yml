@@ -9,17 +9,18 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203041;Harrisburg, PA 17120-3041;Room:;459 Main Capitol
-  voice: 717-787-8724
-- note: District Office
-  address: 3950 William Penn Highway Suite 1;Murrysville, PA 15668
-  voice: 724-327-2422
-  fax: 724-327-2436
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1870
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1870
+offices:
+- address: Senate Box 203041;Harrisburg, PA 17120-3041;Room:;459 Main Capitol
+  voice: 717-787-8724
+  classification: capitol
+- address: 3950 William Penn Highway Suite 1;Murrysville, PA 15668
+  voice: 724-327-2422
+  fax: 724-327-2436
+  classification: district
+  name: 'District Office #1'

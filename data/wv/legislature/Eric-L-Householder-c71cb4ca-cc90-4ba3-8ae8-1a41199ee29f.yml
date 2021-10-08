@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '64'
-contact_details:
-- note: Capitol Office
-  address: Room 462M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3230
-- note: District Office
-  address: 212 Snooks Lane;Martinsburg, WV 25405
-  voice: 304-262-9004
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Householder
 other_identifiers:
@@ -28,3 +21,11 @@ other_identifiers:
   identifier: WVL000256
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Householder
+offices:
+- address: Room 462M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3230
+  classification: capitol
+- address: 212 Snooks Lane;Martinsburg, WV 25405
+  voice: 304-262-9004
+  classification: district
+  name: 'District Office #1'

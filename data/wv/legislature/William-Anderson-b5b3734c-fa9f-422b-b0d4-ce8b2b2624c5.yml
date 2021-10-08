@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: Room 200E-C, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3168
-- note: District Office
-  address: 1011 Highland Avenue;Williamstown, WV 26187
-  voice: 304-481-4129
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
 other_identifiers:
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: WVL000257
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
+offices:
+- address: Room 200E-C, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3168
+  classification: capitol
+- address: 1011 Highland Avenue;Williamstown, WV 26187
+  voice: 304-481-4129
+  classification: district
+  name: 'District Office #1'

@@ -12,14 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 6th Bristol
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 236;Boston, MA, 02133
-  voice: 617-722-2430
-  fax: 617-626-0460
-- note: District Office
-  address: 441 North Main Street;2nd Floor;Fall River, MA 02720
-  voice: 774-322-1313
 links:
 - url: https://malegislature.gov/Legislators/Profile/CAF1
 other_identifiers:
@@ -33,3 +25,12 @@ other_identifiers:
   identifier: ocd-person/fd2814dc-089d-4b6c-b069-480836c204ab
 sources:
 - url: https://malegislature.gov/Legislators/Profile/CAF1
+offices:
+- address: 24 Beacon St.;Room 236;Boston, MA, 02133
+  voice: 617-722-2430
+  fax: 617-626-0460
+  classification: capitol
+- address: 441 North Main Street;2nd Floor;Fall River, MA 02720
+  voice: 774-322-1313
+  classification: district
+  name: 'District Office #1'

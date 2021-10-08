@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '78'
-contact_details:
-- note: Capitol Office
-  address: Room GN.8;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0728
-  fax: 512-463-0397
-- note: District Office
-  address: 7365 Remcon Circle C-301;El Paso, Tx 79912
-  voice: 915-751-2700
-  fax: 915-751-2702
 links:
 - url: https://house.texas.gov/members/member-page/?district=78
 other_identifiers:
@@ -31,3 +22,13 @@ other_identifiers:
   identifier: TXL000551
 sources:
 - url: https://house.texas.gov/members/member-page/?district=78
+offices:
+- address: Room GN.8;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0728
+  fax: 512-463-0397
+  classification: capitol
+- address: 7365 Remcon Circle C-301;El Paso, Tx 79912
+  voice: 915-751-2700
+  fax: 915-751-2702
+  classification: district
+  name: 'District Office #1'

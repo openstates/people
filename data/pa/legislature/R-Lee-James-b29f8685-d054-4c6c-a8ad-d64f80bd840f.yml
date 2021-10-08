@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '64'
-contact_details:
-- note: Capitol Office
-  address: 145A East Wing P.O. Box 202064 Harrisburg, PA 17120-2064
-  voice: 717-783-8188
-  fax: 717-782-2924
-- note: District Office
-  address: 3220 State Route 257 Suite 8 PO Box 547 Seneca, PA 16346
-  voice: 814-677-6413
-  fax: 814-676-1653
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1634
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: http://www.facebook.com/RepLeeJames
   youtube: http://www.youtube.com/RepLeeJames
+offices:
+- address: 145A East Wing P.O. Box 202064 Harrisburg, PA 17120-2064
+  voice: 717-783-8188
+  fax: 717-782-2924
+  classification: capitol
+- address: 3220 State Route 257 Suite 8 PO Box 547 Seneca, PA 16346
+  voice: 814-677-6413
+  fax: 814-676-1653
+  classification: district
+  name: 'District Office #1'

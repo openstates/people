@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: Room 212 B;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2395
-- note: District Office
-  address: P.O. Box 2030;Jackson, MS 39225
-  voice: 601-362-1045
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/horhn.xml
 other_identifiers:
@@ -32,3 +25,11 @@ extras:
     is also a board member of New Stage Theatre and Rainbow Health Food Co-op. He
     has appeared in several movies and television programs and is a member of the
     Screen Actors Guild.
+offices:
+- address: Room 212 B;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-2395
+  classification: capitol
+- address: P.O. Box 2030;Jackson, MS 39225
+  voice: 601-362-1045
+  classification: district
+  name: 'District Office #1'

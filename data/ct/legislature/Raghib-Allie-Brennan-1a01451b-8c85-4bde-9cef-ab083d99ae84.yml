@@ -9,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4000;Hartford, CT 06106
-  voice: 860-240-8585
-- note: District Office
-  address: 26 Grassy Plain Street, Unit 106;Bethel, CT 06801
-  voice: 203-241-6034
 links:
 - url: http://www.housedems.ct.gov/allie-brennan
 other_names:
 - name: Allie-brennan, Raghib
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4000;Hartford, CT 06106
+  voice: 860-240-8585
+  classification: capitol
+- address: 26 Grassy Plain Street, Unit 106;Bethel, CT 06801
+  voice: 203-241-6034
+  classification: district
+  name: 'District Office #1'

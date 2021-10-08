@@ -90,14 +90,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TN-5
-contact_details:
-- note: Capitol Office
-  address: 1536 Longworth House Office Building Washington DC 20515-4205
-  voice: 202-225-4311
-- note: District Office
-  address: 605 Church St.; Nashville, TN 37219
-  voice: 615-736-5295
-  fax: 615-736-7479
 links:
 - url: https://cooper.house.gov
   note: website
@@ -140,3 +132,12 @@ other_identifiers:
   identifier: kg:/m/03tm2p
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1536 Longworth House Office Building Washington DC 20515-4205
+  voice: 202-225-4311
+  classification: capitol
+- address: 605 Church St.; Nashville, TN 37219
+  voice: 615-736-5295
+  fax: 615-736-7479
+  classification: district
+  name: 'District Office #1'

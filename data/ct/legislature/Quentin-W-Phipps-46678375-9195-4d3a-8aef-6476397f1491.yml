@@ -9,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '100'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4000;Hartford, CT 06106
-  voice: 860-240-8585
-- note: District Office
-  address: 89 Bretton Road;Middletown, CT 06457
-  voice: 860-830-5407
 links:
 - url: http://www.housedems.ct.gov/phipps
 other_names:
 - name: Phipps, Quentin W.
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4000;Hartford, CT 06106
+  voice: 860-240-8585
+  classification: capitol
+- address: 89 Bretton Road;Middletown, CT 06457
+  voice: 860-830-5407
+  classification: district
+  name: 'District Office #1'

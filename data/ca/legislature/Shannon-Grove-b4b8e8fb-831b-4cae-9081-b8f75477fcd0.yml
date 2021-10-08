@@ -21,13 +21,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 305, Sacramento, CA 95814-4900
-  voice: 916-651-4016
-- note: District Office
-  address: 7248 Joshua Lane, Suite B, Yucca Valley, CA 92284
-  voice: 760-228-3136
 links:
 - url: https://senate.ca.gov/sd16
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD16&inframe=N
@@ -43,3 +36,11 @@ other_identifiers:
   identifier: ocd-person/073f7648-8887-4469-bbb5-dea5f7f1f87b
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 305, Sacramento, CA 95814-4900
+  voice: 916-651-4016
+  classification: capitol
+- address: 7248 Joshua Lane, Suite B, Yucca Valley, CA 92284
+  voice: 760-228-3136
+  classification: district
+  name: 'District Office #1'

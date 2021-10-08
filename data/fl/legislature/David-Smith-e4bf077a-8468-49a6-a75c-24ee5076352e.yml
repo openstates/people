@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: 200 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5028
-- note: District Office
-  address: '#266, Suite 2001; 1511 East State Road 434; Winter Springs, FL 32708-5646'
-  voice: 407-971-3570
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
@@ -26,3 +19,11 @@ sources:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
+offices:
+- address: 200 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5028
+  classification: capitol
+- address: '#266, Suite 2001; 1511 East State Road 434; Winter Springs, FL 32708-5646'
+  voice: 407-971-3570
+  classification: district
+  name: 'District Office #1'

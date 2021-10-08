@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4017;Hartford, CT 06106
-  voice: 860-240-8659
-- note: District Office
-  address: 9 Knoll Lane;Weatogue, CT 06089
-  voice: 860-803-4072
 links:
 - url: http://www.housedems.ct.gov/Hampton
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000197
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4017;Hartford, CT 06106
+  voice: 860-240-8659
+  classification: capitol
+- address: 9 Knoll Lane;Weatogue, CT 06089
+  voice: 860-803-4072
+  classification: district
+  name: 'District Office #1'

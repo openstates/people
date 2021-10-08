@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '60'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0060
-  voice: 916-319-2060
-- note: District Office
-  address: 391 North Main Street, Suite 210;Corona, CA 92878
-  voice: 951-371-6860
 links:
 - url: https://a60.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD60&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000525
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0060
+  voice: 916-319-2060
+  classification: capitol
+- address: 391 North Main Street, Suite 210;Corona, CA 92878
+  voice: 951-371-6860
+  classification: district
+  name: 'District Office #1'

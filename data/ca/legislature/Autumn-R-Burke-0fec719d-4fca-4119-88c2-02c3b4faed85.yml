@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '62'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0062
-  voice: 916-319-2062
-- note: District Office
-  address: One Manchester Boulevard, Suite 601;Inglewood, CA 90301
-  voice: 310-412-6400
 links:
 - url: https://a62.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD62&inframe=N
@@ -28,3 +21,11 @@ sources:
 - url: http://assembly.ca.gov/assemblymembers
 other_names:
 - name: Autumn Burke
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0062
+  voice: 916-319-2062
+  classification: capitol
+- address: One Manchester Boulevard, Suite 601;Inglewood, CA 90301
+  voice: 310-412-6400
+  classification: district
+  name: 'District Office #1'

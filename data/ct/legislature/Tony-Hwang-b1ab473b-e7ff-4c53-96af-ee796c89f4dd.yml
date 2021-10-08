@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 3602;Hartford, CT 06106
-  voice: 860-240-8805
-- note: District Office
-  address: 80 Martingale Lane;Fairfield, CT 06824
-  voice: 203-255-5555
 links:
 - url: http://www.ctsenaterepublicans.com/home-Hwang
 other_names:
@@ -27,3 +20,11 @@ other_identifiers:
   identifier: CTL000272
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 3602;Hartford, CT 06106
+  voice: 860-240-8805
+  classification: capitol
+- address: 80 Martingale Lane;Fairfield, CT 06824
+  voice: 203-255-5555
+  classification: district
+  name: 'District Office #1'

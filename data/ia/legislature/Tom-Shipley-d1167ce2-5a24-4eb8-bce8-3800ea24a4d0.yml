@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 2425 Birch Ave, Nodaway, IA 50857
-  voice: 712-785-3583
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14814
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14814
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14814
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14814
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 2425 Birch Ave, Nodaway, IA 50857
+  voice: 712-785-3583
+  classification: district
+  name: 'District Office #1'

@@ -10,16 +10,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  address: Room 203CN State Capitol;Santa Fe, NM 87501
-  voice: 505-986-4254
-- note: District Office
-  address: P.O. Box 652;Chamberino, NM 88027
-  voice: 575-201-3232
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HLARA
 ids:
   facebook: RayLaraforStateRepresentative
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=HLARA
+offices:
+- address: Room 203CN State Capitol;Santa Fe, NM 87501
+  voice: 505-986-4254
+  classification: capitol
+- address: P.O. Box 652;Chamberino, NM 88027
+  voice: 575-201-3232
+  classification: district
+  name: 'District Office #1'

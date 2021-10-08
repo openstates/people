@@ -55,18 +55,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NC-5
-contact_details:
-- note: Capitol Office
-  address: 2462 Rayburn House Office Building Washington DC 20515-3305
-  voice: 202-225-2071
-- note: District Office
-  address: 400 Shadowline Dr. Suite 205; Boone, NC 28607
-  voice: 828-265-0240
-  fax: 828-265-0390
-- note: District Office
-  address: 3540 Clemmons Rd. Suite 125; Clemmons, NC 27012
-  voice: 336-778-0211
-  fax: 336-778-2290
 links:
 - url: https://foxx.house.gov
   note: website
@@ -105,3 +93,17 @@ other_identifiers:
   identifier: kg:/m/02b5dz
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2462 Rayburn House Office Building Washington DC 20515-3305
+  voice: 202-225-2071
+  classification: capitol
+- address: 400 Shadowline Dr. Suite 205; Boone, NC 28607
+  voice: 828-265-0240
+  fax: 828-265-0390
+  classification: district
+  name: 'District Office #1'
+- address: 3540 Clemmons Rd. Suite 125; Clemmons, NC 27012
+  voice: 336-778-0211
+  fax: 336-778-2290
+  classification: district
+  name: 'District Office #2'

@@ -9,12 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  address: 612 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6048
-- note: District Office
-  address: 134 Oakland Ave., Spartanburg, SC 29302
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1784090695
 other_names:
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=1784090695
+offices:
+- address: 612 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6048
+  classification: capitol
+- address: 134 Oakland Ave., Spartanburg, SC 29302
+  classification: district
+  name: 'District Office #1'

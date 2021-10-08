@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '6'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0006
-  voice: 916-319-2006
-- note: District Office
-  address: 8799-A Auburn Folsom Road;Granite Bay, CA 95746
-  voice: 916-774-4430
 links:
 - url: https://ad06.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD06&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000520
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0006
+  voice: 916-319-2006
+  classification: capitol
+- address: 8799-A Auburn Folsom Road;Granite Bay, CA 95746
+  voice: 916-774-4430
+  classification: district
+  name: 'District Office #1'

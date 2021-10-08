@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '134'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2304;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 85 Brett Lane;Fairfield, CT 06824
 links:
 - url: http://www.cthousegop.com/Devlin/
 other_names:
@@ -26,3 +20,10 @@ other_identifiers:
   identifier: CTL000360
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2304;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 85 Brett Lane;Fairfield, CT 06824
+  classification: district
+  name: 'District Office #1'

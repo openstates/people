@@ -10,15 +10,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '32'
-contact_details:
-- note: District Office
-  address: 1 Wyoming St.Rapid City, SD 57701
-  voice: 605-721-7899
-- note: Capitol Office
-  voice: 605-773-3851
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/3792/Detail
 sources:
 - url: https://sdlegislature.gov/Legislators/Profile/3792/Detail
 extras:
   occupation: Retired
+offices:
+- address: 1 Wyoming St.Rapid City, SD 57701
+  voice: 605-721-7899
+  classification: district
+  name: 'District Office #1'
+- voice: 605-773-3851
+  classification: capitol

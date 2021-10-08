@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '7'
-contact_details:
-- note: Capitol Office
-  voice: 701-258-9848
-  fax: 701-258-1011
-- note: District Office
-  address: 2025 Pebbleview Loop;Bismarck, ND;58503-1277
-  voice: 701-214-0486
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-jason-dockter
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-jason-dockter
@@ -30,3 +23,11 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-jason-dockter
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-jason-dockter
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-jason-dockter
+offices:
+- voice: 701-258-9848
+  fax: 701-258-1011
+  classification: capitol
+- address: 2025 Pebbleview Loop;Bismarck, ND;58503-1277
+  voice: 701-214-0486
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '105'
-contact_details:
-- note: Capitol Office
-  address: 164A East Wing P.O. Box 202105 Harrisburg, PA 17120-2105
-  voice: 717-783-2014
-  fax: 717-705-2010
-- note: District Office
-  address: 4401 Linglestown Road Suite B Harrisburg, PA 17112
-  voice: 717-652-3721
-  fax: 717-652-6276
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1843
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepAndrewLewis
   youtube: https://www.youtube.com/channel/UC3_uc9Gi2Hz1dBRvYcs63_w
+offices:
+- address: 164A East Wing P.O. Box 202105 Harrisburg, PA 17120-2105
+  voice: 717-783-2014
+  fax: 717-705-2010
+  classification: capitol
+- address: 4401 Linglestown Road Suite B Harrisburg, PA 17112
+  voice: 717-652-3721
+  fax: 717-652-6276
+  classification: district
+  name: 'District Office #1'

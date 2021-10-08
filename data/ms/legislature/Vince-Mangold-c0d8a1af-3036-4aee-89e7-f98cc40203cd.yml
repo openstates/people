@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '53'
-contact_details:
-- note: Capitol Office
-  address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-5140
-- note: District Office
-  address: PO Box 1018;Jackson, MS 39201
-  voice: 601-835-2681
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mangold.xml
 other_identifiers:
@@ -27,3 +20,11 @@ sources:
 extras:
   org_info: Representative Mangold is affiliated with the Mississippi Cattleman's
     Assoc, Mississippi Assoc. of Independent Schools, and the Referees Assoc.
+offices:
+- address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-5140
+  classification: capitol
+- address: PO Box 1018;Jackson, MS 39201
+  voice: 601-835-2681
+  classification: district
+  name: 'District Office #1'

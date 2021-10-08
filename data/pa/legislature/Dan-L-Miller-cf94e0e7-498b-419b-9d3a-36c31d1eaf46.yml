@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '42'
-contact_details:
-- note: Capitol Office
-  address: 412 Main Capitol Building P.O. Box 202042 Harrisburg, PA 17120-2042
-  voice: 717-783-1850
-  fax: 717-780-4756
-- note: District Office
-  address: 650 Washington Road Suite 102 Mt. Lebanon, PA 15228
-  voice: 412-343-3870
-  fax: 412-343-2050
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1679
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -33,3 +24,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1679
 extras:
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgUKeWXUxQSWHzQzU74mgw-5
+offices:
+- address: 412 Main Capitol Building P.O. Box 202042 Harrisburg, PA 17120-2042
+  voice: 717-783-1850
+  fax: 717-780-4756
+  classification: capitol
+- address: 650 Washington Road Suite 102 Mt. Lebanon, PA 15228
+  voice: 412-343-3870
+  fax: 412-343-2050
+  classification: district
+  name: 'District Office #1'

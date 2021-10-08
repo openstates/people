@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  voice: 701-306-0860
-- note: District Office
-  address: 1011 Eighth Street South;Fargo, ND;58103-2725
-  voice: 701-235-0316
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-mary-schneider
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-mary-schneider
@@ -29,3 +23,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-mary-schneider
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-mary-schneider
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-mary-schneider
+offices:
+- voice: 701-306-0860
+  classification: capitol
+- address: 1011 Eighth Street South;Fargo, ND;58103-2725
+  voice: 701-235-0316
+  classification: district
+  name: 'District Office #1'

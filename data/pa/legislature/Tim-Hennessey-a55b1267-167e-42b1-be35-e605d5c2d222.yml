@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '26'
-contact_details:
-- note: Capitol Office
-  address: 313 Main Capitol Building P.O. Box 202026 Harrisburg, PA 17120-2026
-  voice: 717-787-3431
-  fax: 717-787-9864
-- note: District Office
-  address: 351 W. Schuylkill Road Suite 9 Coventry Square Pottstown, PA 19465
-  voice: 610-326-2626
-  fax: 610-326-2526
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=41
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=41
 extras:
   youtube: https://youtube.com/RepHennessey
+offices:
+- address: 313 Main Capitol Building P.O. Box 202026 Harrisburg, PA 17120-2026
+  voice: 717-787-3431
+  fax: 717-787-9864
+  classification: capitol
+- address: 351 W. Schuylkill Road Suite 9 Coventry Square Pottstown, PA 19465
+  voice: 610-326-2626
+  fax: 610-326-2526
+  classification: district
+  name: 'District Office #1'

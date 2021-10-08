@@ -20,16 +20,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Nevada
-contact_details:
-- note: Capitol Office
-  address: 713 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-6244
-- note: District Office
-  address: 8930 W Sunset Rd Suite 230; Las Vegas, NV 89148-5008
-  voice: 702-388-0205
-- note: District Office
-  address: 400 S Virginia St Suite 738; Reno, NV 89501-2132
-  voice: 775-337-0110
 links:
 - url: https://www.rosen.senate.gov
   note: website
@@ -67,3 +57,15 @@ other_identifiers:
   identifier: S402
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 713 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-6244
+  classification: capitol
+- address: 8930 W Sunset Rd Suite 230; Las Vegas, NV 89148-5008
+  voice: 702-388-0205
+  classification: district
+  name: 'District Office #1'
+- address: 400 S Virginia St Suite 738; Reno, NV 89501-2132
+  voice: 775-337-0110
+  classification: district
+  name: 'District Office #2'

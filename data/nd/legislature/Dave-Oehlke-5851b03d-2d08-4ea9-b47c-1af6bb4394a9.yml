@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  voice: 701-662-4051
-- note: District Office
-  address: 125 Woodlea Drive;Devils Lake, ND;58301-8545
-  voice: 701-662-8587
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/senate/senator-dave-oehlke
 - url: http://www.legis.nd.gov/assembly/66-2019/members/senate/senator-dave-oehlke
@@ -31,3 +25,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/senate/senator-dave-oehlke
 - url: http://www.legis.nd.gov/assembly/66-2019/members/senate/senator-dave-oehlke
 - url: http://www.legis.nd.gov/assembly/67-2021/members/senate/senator-dave-oehlke
+offices:
+- voice: 701-662-4051
+  classification: capitol
+- address: 125 Woodlea Drive;Devils Lake, ND;58301-8545
+  voice: 701-662-8587
+  classification: district
+  name: 'District Office #1'

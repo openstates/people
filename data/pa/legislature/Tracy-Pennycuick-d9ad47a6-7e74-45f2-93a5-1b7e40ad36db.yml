@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '147'
-contact_details:
-- note: District Office
-  address: 1885 Swamp Pike Suite 107 Gilbertsville, PA 19525
-  voice: 610-323-3299
-  fax: 610-323-3289
-- note: Capitol Office
-  address: 5 East Wing P.O. Box 202147 Harrisburg, PA 17120-2147
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1912
+offices:
+- address: 1885 Swamp Pike Suite 107 Gilbertsville, PA 19525
+  voice: 610-323-3299
+  fax: 610-323-3289
+  classification: district
+  name: 'District Office #1'
+- address: 5 East Wing P.O. Box 202147 Harrisburg, PA 17120-2147
+  classification: capitol

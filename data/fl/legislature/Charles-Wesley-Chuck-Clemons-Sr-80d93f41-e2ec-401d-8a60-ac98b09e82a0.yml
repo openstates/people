@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: 322 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5021
-- note: District Office
-  address: Unit 1; 105 Southwest 140th Court; Jonesville, FL 32669-3391
-  voice: 352-313-6542
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
@@ -29,3 +22,11 @@ sources:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
+offices:
+- address: 322 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5021
+  classification: capitol
+- address: Unit 1; 105 Southwest 140th Court; Jonesville, FL 32669-3391
+  voice: 352-313-6542
+  classification: district
+  name: 'District Office #1'

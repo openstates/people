@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '67'
-contact_details:
-- note: Capitol Office
-  address: 237-E Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-3167
-- note: District Office
-  address: E.J. "Zeke" Giorgi Center;200 S. Wyman, Suite 304;Rockford, IL 61101
-  voice: 815-987-7433
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2736
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2937
@@ -25,3 +18,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2736
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2937
+offices:
+- address: 237-E Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-3167
+  classification: capitol
+- address: E.J. "Zeke" Giorgi Center;200 S. Wyman, Suite 304;Rockford, IL 61101
+  voice: 815-987-7433
+  classification: district
+  name: 'District Office #1'

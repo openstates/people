@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '7'
-contact_details:
-- note: District Office
-  address: 859 Montauk Highway; Suite 1; Bayport, NY 11705
-  voice: 631-589-0348
-- note: Capitol Office
-  address: LOB 426; Albany, NY 12248
-  voice: 518-455-4611
 links:
 - url: https://assembly.state.ny.us/mem/Jarett-Gandolfo
 sources:
 - url: https://assembly.state.ny.us/mem/Jarett-Gandolfo
+offices:
+- address: 859 Montauk Highway; Suite 1; Bayport, NY 11705
+  voice: 631-589-0348
+  classification: district
+  name: 'District Office #1'
+- address: LOB 426; Albany, NY 12248
+  voice: 518-455-4611
+  classification: capitol

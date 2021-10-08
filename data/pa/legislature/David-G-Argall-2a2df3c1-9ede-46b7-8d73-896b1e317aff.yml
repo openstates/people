@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '29'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203029;Harrisburg, PA 17120-3029;Room:;171 Main Capitol
-  voice: 717-787-2637
-  fax: 717-783-8657
-- note: District Office
-  address: 237 West Broad Street;Tamaqua, PA 18252
-  voice: 570-668-1240
-  fax: 570-952-3374
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=69
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 extras:
   facebook: http://www.facebook.com/SenatorArgall
   twitter: http://www.twitter.com/SenatorArgall
+offices:
+- address: Senate Box 203029;Harrisburg, PA 17120-3029;Room:;171 Main Capitol
+  voice: 717-787-2637
+  fax: 717-783-8657
+  classification: capitol
+- address: 237 West Broad Street;Tamaqua, PA 18252
+  voice: 570-668-1240
+  fax: 570-952-3374
+  classification: district
+  name: 'District Office #1'

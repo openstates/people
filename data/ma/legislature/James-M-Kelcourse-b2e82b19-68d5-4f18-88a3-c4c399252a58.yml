@@ -12,13 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Essex
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 130;Boston, MA, 02133
-  voice: 617-722-2130
-- note: District Office
-  address: 23 Green Street;Newburyport, MA 01950
-  voice: 978-465-1777
 links:
 - url: https://malegislature.gov/Legislators/Profile/JMK1
 other_identifiers:
@@ -30,3 +23,11 @@ other_identifiers:
   identifier: ocd-person/01b54f92-d8d7-4308-ade7-6a9f96934dd3
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JMK1
+offices:
+- address: 24 Beacon St.;Room 130;Boston, MA, 02133
+  voice: 617-722-2130
+  classification: capitol
+- address: 23 Green Street;Newburyport, MA 01950
+  voice: 978-465-1777
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: LOB 323; Albany, NY 12248
-  voice: 518-455-5861
-- note: District Office
-  address: 33 Front Street; Suite 104; Hempstead, NY 11550
-  voice: 516-489-6610
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Taylor-Darling
@@ -27,3 +20,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Taylor-Raynor
 - url: https://assembly.state.ny.us/mem/Taylor-Darling
+offices:
+- address: LOB 323; Albany, NY 12248
+  voice: 518-455-5861
+  classification: capitol
+- address: 33 Front Street; Suite 104; Hempstead, NY 11550
+  voice: 516-489-6610
+  classification: district
+  name: 'District Office #1'

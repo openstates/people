@@ -12,13 +12,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: LOB 837; Albany, NY 12248
-  voice: 518-455-5997
-- note: District Office
-  address: 3350 Noyac Road; Building B, Suite 1; Sag Harbor, NY 11963
-  voice: 631-537-2583
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
@@ -35,3 +28,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
 - url: https://assembly.state.ny.us/mem/Fred-W-Thiele-Jr
+offices:
+- address: LOB 837; Albany, NY 12248
+  voice: 518-455-5997
+  classification: capitol
+- address: 3350 Noyac Road; Building B, Suite 1; Sag Harbor, NY 11963
+  voice: 631-537-2583
+  classification: district
+  name: 'District Office #1'

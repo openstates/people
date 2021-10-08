@@ -30,22 +30,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: LA-6
-contact_details:
-- note: Capitol Office
-  address: 2402 Rayburn House Office Building Washington DC 20515-1806
-  voice: 202-225-3901
-- note: District Office
-  address: 2351 Energy Dr. Suite 1200; Baton Rouge, LA 70808
-  voice: 225-442-1731
-  fax: 225-442-1736
-- note: District Office
-  address: 29261 Frost Rd. 2nd Floor; Livingston, LA 70754
-  voice: 225-686-4413
-  fax: 225-442-1736
-- note: District Office
-  address: 908 E. 1st St. Suite 405; Thibodaux, LA 70301
-  voice: 985-448-4103
-  fax: 225-442-1736
 links:
 - url: https://garretgraves.house.gov
   note: website
@@ -82,3 +66,22 @@ other_identifiers:
   identifier: Garret Graves
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2402 Rayburn House Office Building Washington DC 20515-1806
+  voice: 202-225-3901
+  classification: capitol
+- address: 2351 Energy Dr. Suite 1200; Baton Rouge, LA 70808
+  voice: 225-442-1731
+  fax: 225-442-1736
+  classification: district
+  name: 'District Office #1'
+- address: 29261 Frost Rd. 2nd Floor; Livingston, LA 70754
+  voice: 225-686-4413
+  fax: 225-442-1736
+  classification: district
+  name: 'District Office #2'
+- address: 908 E. 1st St. Suite 405; Thibodaux, LA 70301
+  voice: 985-448-4103
+  fax: 225-442-1736
+  classification: district
+  name: 'District Office #3'

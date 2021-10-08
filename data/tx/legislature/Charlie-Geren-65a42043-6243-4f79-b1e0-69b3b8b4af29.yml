@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '99'
-contact_details:
-- note: Capitol Office
-  address: Room GW.15;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0610
-  fax: 512-463-8310
-- note: District Office
-  address: 6713 Telephone Rd Suite 301;Lake Worth, TX 76135
-  voice: 817-237-2251
-  fax: 817-237-2264
 links:
 - url: https://house.texas.gov/members/member-page/?district=99
 other_identifiers:
@@ -29,3 +20,13 @@ other_identifiers:
   identifier: TXL000626
 sources:
 - url: https://house.texas.gov/members/member-page/?district=99
+offices:
+- address: Room GW.15;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0610
+  fax: 512-463-8310
+  classification: capitol
+- address: 6713 Telephone Rd Suite 301;Lake Worth, TX 76135
+  voice: 817-237-2251
+  fax: 817-237-2264
+  classification: district
+  name: 'District Office #1'

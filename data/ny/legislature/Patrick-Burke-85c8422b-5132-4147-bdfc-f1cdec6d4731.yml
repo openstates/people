@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '142'
-contact_details:
-- note: Capitol Office
-  address: LOB 833; Albany, NY 12248
-  voice: 518-455-4691
-- note: District Office
-  address: 1074 Union Road; West Seneca, NY 14224
-  voice: 716-608-6099
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Pat-Burke
@@ -27,3 +20,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Patrick-T-Burke
 - url: https://assembly.state.ny.us/mem/Pat-Burke
+offices:
+- address: LOB 833; Albany, NY 12248
+  voice: 518-455-4691
+  classification: capitol
+- address: 1074 Union Road; West Seneca, NY 14224
+  voice: 716-608-6099
+  classification: district
+  name: 'District Office #1'

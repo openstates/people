@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '49'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0049
-  voice: 916-319-2049
-- note: District Office
-  address: 1255 Corporate Center Drive, Suite 216;Monterey Park, CA 91754
-  voice: 323-264-4949
 links:
 - url: https://a49.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD49&inframe=N
@@ -28,3 +21,11 @@ other_identifiers:
   identifier: CAL000352
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0049
+  voice: 916-319-2049
+  classification: capitol
+- address: 1255 Corporate Center Drive, Suite 216;Monterey Park, CA 91754
+  voice: 323-264-4949
+  classification: district
+  name: 'District Office #1'

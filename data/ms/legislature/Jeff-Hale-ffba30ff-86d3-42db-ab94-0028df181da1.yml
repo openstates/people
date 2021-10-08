@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '24'
-contact_details:
-- note: Capitol Office
-  address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-9395
-- note: District Office
-  address: 2303 Westwind Drive;Nesbit, MS
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/hale.xml
 other_identifiers:
@@ -26,3 +20,10 @@ sources:
 extras:
   org_info: Representative Hale is affiliated with the Southern Rotary Club, Bridgetown
     Fire Dept., and MS Firefighters Assoc.
+offices:
+- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-9395
+  classification: capitol
+- address: 2303 Westwind Drive;Nesbit, MS
+  classification: district
+  name: 'District Office #1'

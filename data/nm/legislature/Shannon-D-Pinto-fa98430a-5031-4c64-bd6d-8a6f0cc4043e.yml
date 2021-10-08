@@ -11,15 +11,16 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: Room 301B State Capitol;Santa Fe, NM 87501
-  voice: 505-397-8841
-- note: District Office
-  address: P.O. Box 549;Tohatchi, NM 87325
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPINS
 ids:
   facebook: Shannon4NM
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SPINS
+offices:
+- address: Room 301B State Capitol;Santa Fe, NM 87501
+  voice: 505-397-8841
+  classification: capitol
+- address: P.O. Box 549;Tohatchi, NM 87325
+  classification: district
+  name: 'District Office #1'

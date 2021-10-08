@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '45'
-contact_details:
-- note: Capitol Office
-  voice: 701-235-5912
-- note: District Office
-  address: 3202 Broadway North, Apt. 108;Fargo, ND;58102-1004
-  voice: 701-306-2037
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-mary-johnson
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-mary-johnson
@@ -27,3 +21,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-mary-johnson
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-mary-johnson
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-mary-johnson
+offices:
+- voice: 701-235-5912
+  classification: capitol
+- address: 3202 Broadway North, Apt. 108;Fargo, ND;58102-1004
+  voice: 701-306-2037
+  classification: district
+  name: 'District Office #1'

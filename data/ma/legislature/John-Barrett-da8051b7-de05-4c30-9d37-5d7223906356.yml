@@ -11,13 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Berkshire
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 237;Boston, MA, 02133
-  voice: 617-722-2305
-- note: District Office
-  address: 8 Park St.;Adams, MA 01220
-  voice: 413-743-8300
 links:
 - url: https://malegislature.gov/Legislators/Profile/J_B1
 other_identifiers:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: MAL000579
 sources:
 - url: https://malegislature.gov/Legislators/Profile/J_B1
+offices:
+- address: 24 Beacon St.;Room 237;Boston, MA, 02133
+  voice: 617-722-2305
+  classification: capitol
+- address: 8 Park St.;Adams, MA 01220
+  voice: 413-743-8300
+  classification: district
+  name: 'District Office #1'

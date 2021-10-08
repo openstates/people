@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  address: 218 John A. Cherberg Building;PO Box 40441;Olympia, WA 98504
-  voice: 360-786-7641
-- note: District Office
-  address: 14205 SE 36th St.;Suite 310;Bellevue, WA 98006
-  voice: 425-880-2585
 links:
 - url: http://sdc.wastateleg.org/Wellman/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: WAL000247
 sources:
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+offices:
+- address: 218 John A. Cherberg Building;PO Box 40441;Olympia, WA 98504
+  voice: 360-786-7641
+  classification: capitol
+- address: 14205 SE 36th St.;Suite 310;Bellevue, WA 98006
+  voice: 425-880-2585
+  classification: district
+  name: 'District Office #1'

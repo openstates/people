@@ -12,13 +12,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '96'
-contact_details:
-- note: Capitol Office
-  address: Room 201;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-1541
-- note: District Office
-  address: Post Office Box 613;Magnolia, MS 39652
-  voice: 601-783-4979
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/cockerham.xml
 other_identifiers:
@@ -29,3 +22,11 @@ sources:
 extras:
   org_info: Representative Cockerham is a member of Alpha Kappa Alpha and is a member
     of the Mississippi and Louisiana Bar Associations.
+offices:
+- address: Room 201;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-1541
+  classification: capitol
+- address: Post Office Box 613;Magnolia, MS 39652
+  voice: 601-783-4979
+  classification: district
+  name: 'District Office #1'

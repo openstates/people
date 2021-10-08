@@ -10,16 +10,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '15'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 2082, Sacramento, CA 95814-4900
-  voice: 916-651-4015
-- note: District Office
-  address: 100 Paseo de San Antonio, Suite 209, San Jose, CA 95113
-  voice: 408-286-8318
 links:
 - url: https://senate.ca.gov/sd15
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD15&inframe=N
   note: Contact Form
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 2082, Sacramento, CA 95814-4900
+  voice: 916-651-4015
+  classification: capitol
+- address: 100 Paseo de San Antonio, Suite 209, San Jose, CA 95113
+  voice: 408-286-8318
+  classification: district
+  name: 'District Office #1'

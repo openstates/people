@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '6'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203006;Harrisburg, PA 17120-3006;Room:;286 Main Capitol
-  voice: 717-787-5072
-  fax: 717-772-2991
-- note: District Office
-  address: 696 Second Street Suite 5 Richboro, PA 18954
-  voice: 215-942-5157
-  fax: 215-942-5166
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=151
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=151
 extras:
   twitter: https://twitter.com/SenTomlinson
+offices:
+- address: Senate Box 203006;Harrisburg, PA 17120-3006;Room:;286 Main Capitol
+  voice: 717-787-5072
+  fax: 717-772-2991
+  classification: capitol
+- address: 696 Second Street Suite 5 Richboro, PA 18954
+  voice: 215-942-5157
+  fax: 215-942-5166
+  classification: district
+  name: 'District Office #1'

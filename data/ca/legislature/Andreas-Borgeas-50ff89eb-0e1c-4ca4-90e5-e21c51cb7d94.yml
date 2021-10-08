@@ -11,16 +11,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 3082, Sacramento, CA 95814-4900
-  voice: 916-651-4008
-- note: District Office
-  address: 460 Sutter Hill Road, Suite C, Sutter Creek, CA 95685
-  voice: 209-267-5033
 links:
 - url: https://senate.ca.gov/sd08
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD08&inframe=N
   note: Contact Form
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 3082, Sacramento, CA 95814-4900
+  voice: 916-651-4008
+  classification: capitol
+- address: 460 Sutter Hill Road, Suite C, Sutter Creek, CA 95685
+  voice: 209-267-5033
+  classification: district
+  name: 'District Office #1'

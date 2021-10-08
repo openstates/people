@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '86'
-contact_details:
-- note: Capitol Office
-  address: 200-9S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8090
-- note: District Office
-  address: 121 Springfield Avenue;Joliet, IL 60435
-  voice: 815-730-8600
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2605
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2844
@@ -40,3 +33,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2605
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2844
+offices:
+- address: 200-9S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8090
+  classification: capitol
+- address: 121 Springfield Avenue;Joliet, IL 60435
+  voice: 815-730-8600
+  classification: district
+  name: 'District Office #1'

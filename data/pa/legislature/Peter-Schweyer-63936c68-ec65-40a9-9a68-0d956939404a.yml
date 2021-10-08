@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: 325 Irvis Office Building P.O. Box 202022 Harrisburg, PA 17120-2022
-  voice: 717-787-2909
-  fax: 717-787-2176
-- note: District Office
-  address: 1501 Lehigh Street Suite 206 Allentown, PA 18103
-  voice: 610-791-6270
-  fax: 610-791-6274
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1706
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepSchweyer
   twitter: https://twitter.com/RepSchweyer
+offices:
+- address: 325 Irvis Office Building P.O. Box 202022 Harrisburg, PA 17120-2022
+  voice: 717-787-2909
+  fax: 717-787-2176
+  classification: capitol
+- address: 1501 Lehigh Street Suite 206 Allentown, PA 18103
+  voice: 610-791-6270
+  fax: 610-791-6274
+  classification: district
+  name: 'District Office #1'

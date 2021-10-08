@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '36'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203036;Harrisburg, PA 17120-3036;Room:;9 East Wing
-  voice: 717-787-4420
-  fax: 717-783-3156
-- note: District Office
-  address: 301 East Main Street;Lititz, PA 17543
-  voice: 717-627-0036
-  fax: 717-627-1389
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1198
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -33,3 +24,13 @@ extras:
   facebook: http://facebook.com/senatoraument
   instagram: https://www.instagram.com/senator_aument/
   twitter: http://twitter.com/SenatorAument
+offices:
+- address: Senate Box 203036;Harrisburg, PA 17120-3036;Room:;9 East Wing
+  voice: 717-787-4420
+  fax: 717-783-3156
+  classification: capitol
+- address: 301 East Main Street;Lititz, PA 17543
+  voice: 717-627-0036
+  fax: 717-627-1389
+  classification: district
+  name: 'District Office #1'

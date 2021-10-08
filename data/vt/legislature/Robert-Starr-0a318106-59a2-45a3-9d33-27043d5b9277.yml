@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Essex-Orleans
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 958 Vt. Rte. 105W;North Troy, VT 05859
-  voice: 802-988-2877
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14614
 - url: http://legislature.vermont.gov/people/single/2022/14614
@@ -33,3 +27,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14614
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14614
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 958 Vt. Rte. 105W;North Troy, VT 05859
+  voice: 802-988-2877
+  classification: district
+  name: 'District Office #1'

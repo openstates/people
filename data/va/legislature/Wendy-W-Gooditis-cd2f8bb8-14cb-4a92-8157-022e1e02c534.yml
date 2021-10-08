@@ -11,12 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  voice: 804-698-1010
-- note: District Office
-  address: P.O. Box 180;Boyce, Virginia 22620
-  voice: 540-300-3857
 links:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H296
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H296
@@ -33,3 +27,10 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H296
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H296
+offices:
+- voice: 804-698-1010
+  classification: capitol
+- address: P.O. Box 180;Boyce, Virginia 22620
+  voice: 540-300-3857
+  classification: district
+  name: 'District Office #1'

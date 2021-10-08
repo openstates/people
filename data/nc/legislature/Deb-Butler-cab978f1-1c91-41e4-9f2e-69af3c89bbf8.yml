@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1015;Raleigh, NC 27601-1096
-  voice: 919-733-5754
-- note: District Office
-  address: 711 Princess St, 2nd Floor;Wilmington, NC 28401
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/730
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - New Hanover
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1015;Raleigh, NC 27601-1096
+  voice: 919-733-5754
+  classification: capitol
+- address: 711 Princess St, 2nd Floor;Wilmington, NC 28401
+  classification: district
+  name: 'District Office #1'

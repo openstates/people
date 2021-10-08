@@ -10,13 +10,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '9'
-contact_details:
-- note: Capitol Office
-  address: Room 213W, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7807
-- note: District Office
-  address: P.O. Box 682;Mullens, WV 25882
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Stover
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Stover
+offices:
+- address: Room 213W, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7807
+  classification: capitol
+- address: P.O. Box 682;Mullens, WV 25882
+  classification: district
+  name: 'District Office #1'

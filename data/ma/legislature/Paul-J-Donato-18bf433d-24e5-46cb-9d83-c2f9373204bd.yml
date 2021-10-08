@@ -12,15 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 35th Middlesex
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 481;Boston, MA, 02133
-  voice: 617-722-2180
-  fax: 617-722-2347
-- note: District Office
-  address: 271 Spring Street;Medford, MA 02155
-  voice: 781-395-1683
-  fax: 781-395-2871
 links:
 - url: https://malegislature.gov/Legislators/Profile/PJD1
 other_identifiers:
@@ -32,3 +23,13 @@ other_identifiers:
   identifier: ocd-person/2f3747b7-1d92-421f-8329-12278b53c6c6
 sources:
 - url: https://malegislature.gov/Legislators/Profile/PJD1
+offices:
+- address: 24 Beacon St.;Room 481;Boston, MA, 02133
+  voice: 617-722-2180
+  fax: 617-722-2347
+  classification: capitol
+- address: 271 Spring Street;Medford, MA 02155
+  voice: 781-395-1683
+  fax: 781-395-2871
+  classification: district
+  name: 'District Office #1'

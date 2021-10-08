@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '182'
-contact_details:
-- note: Capitol Office
-  address: 200 Irvis Office Building P.O. Box 202182 Harrisburg, PA 17120-2182
-  voice: 717-783-4072
-  fax: 717-787-5066
-- note: District Office
-  address: 1015 Chestnut Street Suite 1101 Philadelphia, PA 19107
-  voice: 215-246-1501
-  fax: 215-246-1597
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1650
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ extras:
   facebook: https://www.facebook.com/RepBrianSims
   twitter: https://www.twitter.com/repsims
   youtube: https://www.youtube.com/playlist?list=PLjtqNtfs0bgUKm8c0UnufY_9-8th0VDgh
+offices:
+- address: 200 Irvis Office Building P.O. Box 202182 Harrisburg, PA 17120-2182
+  voice: 717-783-4072
+  fax: 717-787-5066
+  classification: capitol
+- address: 1015 Chestnut Street Suite 1101 Philadelphia, PA 19107
+  voice: 215-246-1501
+  fax: 215-246-1597
+  classification: district
+  name: 'District Office #1'

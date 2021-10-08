@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: 200-5S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-0150
-- note: District Office
-  address: 3042 W. North Avenue;Chicago, IL 60647
-  voice: 773-799-8219
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2747
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2948
@@ -25,3 +18,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2747
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2948
+offices:
+- address: 200-5S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-0150
+  classification: capitol
+- address: 3042 W. North Avenue;Chicago, IL 60647
+  voice: 773-799-8219
+  classification: district
+  name: 'District Office #1'

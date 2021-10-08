@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '84'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 320 Smith Ridge Lane;Enterprise, MS 39330
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/smith.xml
 sources:
@@ -22,3 +17,9 @@ sources:
 extras:
   org_info: Representative Smith is affiliated with the MS Assoc. of Sup. Education
     Committee, NRA, and NWTF.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 320 Smith Ridge Lane;Enterprise, MS 39330
+  classification: district
+  name: 'District Office #1'

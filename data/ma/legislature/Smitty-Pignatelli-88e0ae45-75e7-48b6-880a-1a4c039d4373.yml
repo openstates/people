@@ -11,14 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 4th Berkshire
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 473F;Boston, MA, 02133
-  voice: 617-722-2210
-  fax: 617-722-2238
-- note: District Office
-  address: Lenox Town Hall;PO Box 2228;Lenox, MA 01240
-  voice: 413-637-0631
 links:
 - url: https://malegislature.gov/Legislators/Profile/WSP1
 other_identifiers:
@@ -34,3 +26,12 @@ other_identifiers:
   identifier: MAL000573
 sources:
 - url: https://malegislature.gov/Legislators/Profile/WSP1
+offices:
+- address: 24 Beacon St.;Room 473F;Boston, MA, 02133
+  voice: 617-722-2210
+  fax: 617-722-2238
+  classification: capitol
+- address: Lenox Town Hall;PO Box 2228;Lenox, MA 01240
+  voice: 413-637-0631
+  classification: district
+  name: 'District Office #1'

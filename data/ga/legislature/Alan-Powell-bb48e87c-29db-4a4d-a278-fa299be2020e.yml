@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: 613-B Coverdell Legislative Office Building; Atlanta, GA 30334
-  voice: 404-463-3793
-  fax: 404-463-1673
-- note: District Office
-  address: 3059 Ridge Road; Hartwell, GA 30643
-  voice: 706-206-6500
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=187&Session=27
 - url: https://www.legis.ga.gov/members/house/187?session=1029
@@ -44,3 +36,12 @@ extras:
   staff: a href="
   staff email: ''
   title: Chairman, Regulated Industries
+offices:
+- address: 613-B Coverdell Legislative Office Building; Atlanta, GA 30334
+  voice: 404-463-3793
+  fax: 404-463-1673
+  classification: capitol
+- address: 3059 Ridge Road; Hartwell, GA 30643
+  voice: 706-206-6500
+  classification: district
+  name: 'District Office #1'

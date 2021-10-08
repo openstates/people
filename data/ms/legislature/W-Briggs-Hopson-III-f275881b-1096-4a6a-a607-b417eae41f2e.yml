@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '23'
-contact_details:
-- note: Capitol Office
-  address: Room 214;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3250
-- note: District Office
-  address: 1201 Cherry Street;Vicksburg, MS 39183
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/hopson.xml
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   org_info: Senator Hopson is a member of Sigma Alpha Epsilon.  He is also a member
     of Mission Mississippi, Mississippi River Trail, the United Way, the Mississippi
     Bar and the Red Carpet Bowl.
+offices:
+- address: Room 214;P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3250
+  classification: capitol
+- address: 1201 Cherry Street;Vicksburg, MS 39183
+  classification: district
+  name: 'District Office #1'

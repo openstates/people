@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '125'
-contact_details:
-- note: District Office
-  address: 106 East Court Street; Ithaca, NY 14850
-  voice: 607-277-8030
-- note: Capitol Office
-  voice: 518-455-5444
 links:
 - url: https://assembly.state.ny.us/mem/Anna-Kelles
 sources:
 - url: https://assembly.state.ny.us/mem/Anna-Kelles
 other_names:
 - name: Anna R. Kelles
+offices:
+- address: 106 East Court Street; Ithaca, NY 14850
+  voice: 607-277-8030
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-5444
+  classification: capitol

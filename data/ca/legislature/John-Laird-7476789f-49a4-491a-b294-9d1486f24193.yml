@@ -10,16 +10,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '17'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 4040, Sacramento, CA 95814-4900
-  voice: 916-651-4017
-- note: District Office
-  address: 701 Ocean Street, Suite 318A, Santa Cruz, CA 95060
-  voice: 831-425-0401
 links:
 - url: https://senate.ca.gov/sd17
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD17&inframe=N
   note: Contact Form
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 4040, Sacramento, CA 95814-4900
+  voice: 916-651-4017
+  classification: capitol
+- address: 701 Ocean Street, Suite 318A, Santa Cruz, CA 95060
+  voice: 831-425-0401
+  classification: district
+  name: 'District Office #1'

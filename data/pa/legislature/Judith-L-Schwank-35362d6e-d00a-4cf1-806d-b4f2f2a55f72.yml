@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203011;Harrisburg, PA 17120-3011;Room:;457 Main Capitol
-  voice: 717-787-8925
-  fax: 717-772-0578
-- note: District Office
-  address: 210 George Street Suite 201;Reading, PA 19605
-  voice: 610-929-2151
-  fax: 610-929-2576
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1234
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/senatorjudyschwank
   twitter: https://www.twitter.com/senjudyschwank
+offices:
+- address: Senate Box 203011;Harrisburg, PA 17120-3011;Room:;457 Main Capitol
+  voice: 717-787-8925
+  fax: 717-772-0578
+  classification: capitol
+- address: 210 George Street Suite 201;Reading, PA 19605
+  voice: 610-929-2151
+  fax: 610-929-2576
+  classification: district
+  name: 'District Office #1'

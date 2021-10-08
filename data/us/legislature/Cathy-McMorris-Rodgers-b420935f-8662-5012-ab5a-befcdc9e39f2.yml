@@ -56,19 +56,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: WA-5
-contact_details:
-- note: Capitol Office
-  address: 1035 Longworth House Office Building Washington DC 20515-4705
-  voice: 202-225-2006
-- note: District Office
-  address: 555 S. Main St.; Colville, WA 99114
-  voice: 509-684-3481
-- note: District Office
-  address: 10 North Post Street Suite 625; Spokane, WA 99201
-  voice: 509-353-2374
-- note: District Office
-  address: 26 E. Main St. Suite 2; Walla Walla, WA 99362
-  voice: 509-529-9358
 links:
 - url: https://mcmorris.house.gov
   note: website
@@ -107,3 +94,19 @@ other_identifiers:
   identifier: kg:/m/03dlf3
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1035 Longworth House Office Building Washington DC 20515-4705
+  voice: 202-225-2006
+  classification: capitol
+- address: 555 S. Main St.; Colville, WA 99114
+  voice: 509-684-3481
+  classification: district
+  name: 'District Office #1'
+- address: 10 North Post Street Suite 625; Spokane, WA 99201
+  voice: 509-353-2374
+  classification: district
+  name: 'District Office #2'
+- address: 26 E. Main St. Suite 2; Walla Walla, WA 99362
+  voice: 509-529-9358
+  classification: district
+  name: 'District Office #3'

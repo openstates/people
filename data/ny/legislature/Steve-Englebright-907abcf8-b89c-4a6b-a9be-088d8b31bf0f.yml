@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '4'
-contact_details:
-- note: Capitol Office
-  address: LOB 621; Albany, NY 12248
-  voice: 518-455-4804
-- note: District Office
-  address: 149 Main Street; East Setauket, NY 11733
-  voice: 631-751-3094
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Steve-Englebright
@@ -29,3 +22,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Steve-Englebright
 - url: https://assembly.state.ny.us/mem/Steve-Englebright
+offices:
+- address: LOB 621; Albany, NY 12248
+  voice: 518-455-4804
+  classification: capitol
+- address: 149 Main Street; East Setauket, NY 11733
+  voice: 631-751-3094
+  classification: district
+  name: 'District Office #1'

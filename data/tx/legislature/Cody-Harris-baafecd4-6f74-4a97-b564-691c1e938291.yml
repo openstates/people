@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: Room E1.318;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0730
-- note: District Office
-  address: 214 E. Elm St.;Hillsboro, TX 76645
-  voice: 254-582-4081
 links:
 - url: https://house.texas.gov/members/member-page/?district=8
 sources:
 - url: https://house.texas.gov/members/member-page/?district=8
+offices:
+- address: Room E1.318;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0730
+  classification: capitol
+- address: 214 E. Elm St.;Hillsboro, TX 76645
+  voice: 254-582-4081
+  classification: district
+  name: 'District Office #1'

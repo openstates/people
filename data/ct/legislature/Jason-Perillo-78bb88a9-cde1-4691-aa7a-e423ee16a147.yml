@@ -9,12 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '113'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4078;Hartford, CT 06106
-  voice: 800-842-1423
-- note: District Office
-  address: 454 Coram Avenue;Shelton, CT 06484
 links:
 - url: http://www.cthousegop.com/Perillo/
 other_names:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: CTL000149
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4078;Hartford, CT 06106
+  voice: 800-842-1423
+  classification: capitol
+- address: 454 Coram Avenue;Shelton, CT 06484
+  classification: district
+  name: 'District Office #1'

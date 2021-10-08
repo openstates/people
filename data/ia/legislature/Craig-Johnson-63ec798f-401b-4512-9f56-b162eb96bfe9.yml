@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 413 - 13th Ave NE, Independence, IA 50644
-  voice: 319-334-2413
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18075
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18075
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18075
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18075
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 413 - 13th Ave NE, Independence, IA 50644
+  voice: 319-334-2413
+  classification: district
+  name: 'District Office #1'

@@ -26,13 +26,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: FL-10
-contact_details:
-- note: Capitol Office
-  address: 217 Cannon House Office Building Washington DC 20515-0910
-  voice: 202-225-2176
-- note: District Office
-  address: 2295 S. Hiawassee Rd. Suite 301; Orlando, FL 32835
-  voice: 321-388-9808
 links:
 - url: https://demings.house.gov
   note: website
@@ -67,3 +60,11 @@ other_identifiers:
   identifier: Val Demings
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 217 Cannon House Office Building Washington DC 20515-0910
+  voice: 202-225-2176
+  classification: capitol
+- address: 2295 S. Hiawassee Rd. Suite 301; Orlando, FL 32835
+  voice: 321-388-9808
+  classification: district
+  name: 'District Office #1'

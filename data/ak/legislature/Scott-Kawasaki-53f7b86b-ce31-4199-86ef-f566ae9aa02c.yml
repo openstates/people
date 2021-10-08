@@ -14,14 +14,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: A
-contact_details:
-- note: Capitol Office
-  address: State Capitol Room 7; Juneau AK, 99801
-  voice: 907-465-3466
-- note: District Office
-  address: 1292 Sadler Way Suite 308;Fairbanks AK, 99701
-  voice: 907-456-7423
-  fax: 907-451-9293
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kaw
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=kaw
@@ -36,3 +28,12 @@ other_identifiers:
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kaw
 - url: http://w3.akleg.gov/
+offices:
+- address: State Capitol Room 7; Juneau AK, 99801
+  voice: 907-465-3466
+  classification: capitol
+- address: 1292 Sadler Way Suite 308;Fairbanks AK, 99701
+  voice: 907-456-7423
+  fax: 907-451-9293
+  classification: district
+  name: 'District Office #1'

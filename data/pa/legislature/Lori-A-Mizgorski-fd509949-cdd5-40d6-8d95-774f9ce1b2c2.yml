@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: 406 Irvis Office Building P.O. Box 202030 Harrisburg, PA 17120-2030
-  voice: 717-260-6407
-  fax: 717-783-5740
-- note: District Office
-  address: 4284 William Flinn Highway Suite 105 Allison Park, PA 15101
-  voice: 412-487-6605
-  fax: 412-487-5086
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1827
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepMizgorski
   youtube: https://www.youtube.com/channel/UC4JbPrLYU5SLBucKkQLxJ5A
+offices:
+- address: 406 Irvis Office Building P.O. Box 202030 Harrisburg, PA 17120-2030
+  voice: 717-260-6407
+  fax: 717-783-5740
+  classification: capitol
+- address: 4284 William Flinn Highway Suite 105 Allison Park, PA 15101
+  voice: 412-487-6605
+  fax: 412-487-5086
+  classification: district
+  name: 'District Office #1'

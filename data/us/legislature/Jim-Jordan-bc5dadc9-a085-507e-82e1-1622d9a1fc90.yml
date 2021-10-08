@@ -50,21 +50,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: OH-4
-contact_details:
-- note: Capitol Office
-  address: 2056 Rayburn House Office Building Washington DC 20515-3504
-  voice: 202-225-2676
-- note: District Office
-  address: 500 S. Sandusky Ave.; Bucyrus, OH 44820
-  voice: 419-663-1426
-- note: District Office
-  address: 3121 W. Elm Plz.; Lima, OH 45805
-  voice: 419-999-6455
-  fax: 419-999-4238
-- note: District Office
-  address: 13 B E. Main St.; Norwalk, OH 44857
-  voice: 419-663-1426
-  fax: 419-668-3015
 links:
 - url: https://jordan.house.gov
   note: website
@@ -103,3 +88,21 @@ other_identifiers:
   identifier: kg:/m/04l4x5
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2056 Rayburn House Office Building Washington DC 20515-3504
+  voice: 202-225-2676
+  classification: capitol
+- address: 500 S. Sandusky Ave.; Bucyrus, OH 44820
+  voice: 419-663-1426
+  classification: district
+  name: 'District Office #1'
+- address: 3121 W. Elm Plz.; Lima, OH 45805
+  voice: 419-999-6455
+  fax: 419-999-4238
+  classification: district
+  name: 'District Office #2'
+- address: 13 B E. Main St.; Norwalk, OH 44857
+  voice: 419-663-1426
+  fax: 419-668-3015
+  classification: district
+  name: 'District Office #3'

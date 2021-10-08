@@ -10,13 +10,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4000;Hartford, CT 06106
-  voice: 860-240-8585
-- note: District Office
-  address: 93 Plymouth Lane;Manchester, CT 06040
-  voice: 860-335-2023
 links:
 - url: http://www.housedems.ct.gov/luxenberg
 other_names:
@@ -28,3 +21,11 @@ other_identifiers:
   identifier: ocd-person/d36d807e-c27c-4085-97a8-9a98898d84d6
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4000;Hartford, CT 06106
+  voice: 860-240-8585
+  classification: capitol
+- address: 93 Plymouth Lane;Manchester, CT 06040
+  voice: 860-335-2023
+  classification: district
+  name: 'District Office #1'

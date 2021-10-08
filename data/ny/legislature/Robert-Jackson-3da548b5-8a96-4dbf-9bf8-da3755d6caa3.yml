@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street,;Albany,, NY 12247
-  voice: 518-455-2041
-- note: District Office
-  address: 5030 Broadway;New York,, NY 10034
-  voice: 212-544-0173
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/robert-jackson/contact
@@ -24,3 +17,11 @@ ids:
   twitter: SenatorRJackson
 sources:
 - url: http://www.nysenate.gov/senators/robert-jackson/contact
+offices:
+- address: 188 State Street,;Albany,, NY 12247
+  voice: 518-455-2041
+  classification: capitol
+- address: 5030 Broadway;New York,, NY 10034
+  voice: 212-544-0173
+  classification: district
+  name: 'District Office #1'

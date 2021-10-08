@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '68'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 25 Lakeview Drive;Watertown, CT 06795
-  voice: 203-509-0340
 links:
 - url: http://www.cthousegop.com/Polletta/
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000361
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4200;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 25 Lakeview Drive;Watertown, CT 06795
+  voice: 203-509-0340
+  classification: district
+  name: 'District Office #1'

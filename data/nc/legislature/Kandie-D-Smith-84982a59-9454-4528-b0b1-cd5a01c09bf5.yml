@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1315;Raleigh, NC 27601-1096
-  voice: 919-715-3023
-- note: District Office
-  address: PO Box 1832;Greenville, NC 27835
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/756
 other_names:
@@ -26,3 +20,10 @@ extras:
   counties:
   - Pitt
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1315;Raleigh, NC 27601-1096
+  voice: 919-715-3023
+  classification: capitol
+- address: PO Box 1832;Greenville, NC 27835
+  classification: district
+  name: 'District Office #1'

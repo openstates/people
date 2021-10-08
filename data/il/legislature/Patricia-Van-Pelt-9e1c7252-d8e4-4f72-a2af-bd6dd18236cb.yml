@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '5'
-contact_details:
-- note: Capitol Office
-  address: 121A Capitol Building;Springfield, IL 62706
-  voice: 217-782-6252
-- note: District Office
-  address: 1016 W. Jackson Boulevard;Chicago, IL 60607
-  voice: 312-888-9191
-  fax: 312-277-3716
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2623
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2858
@@ -28,3 +20,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2623
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2858
+offices:
+- address: 121A Capitol Building;Springfield, IL 62706
+  voice: 217-782-6252
+  classification: capitol
+- address: 1016 W. Jackson Boulevard;Chicago, IL 60607
+  voice: 312-888-9191
+  fax: 312-277-3716
+  classification: district
+  name: 'District Office #1'

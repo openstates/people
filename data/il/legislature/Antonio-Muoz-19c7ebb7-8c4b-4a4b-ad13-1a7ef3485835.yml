@@ -9,14 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: 323A Capitol Building;Springfield, IL 62706
-  voice: 217-782-9415
-- note: District Office
-  address: 1836 West 35th Street;Chicago, IL 60609
-  voice: 773-869-9050
-  fax: 773-869-9046
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2537
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2797
@@ -46,3 +38,12 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2537
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2797
+offices:
+- address: 323A Capitol Building;Springfield, IL 62706
+  voice: 217-782-9415
+  classification: capitol
+- address: 1836 West 35th Street;Chicago, IL 60609
+  voice: 773-869-9050
+  fax: 773-869-9046
+  classification: district
+  name: 'District Office #1'

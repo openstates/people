@@ -14,14 +14,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: 188 State Street, Legislative Office Building,;Albany,, NY 12247
-  voice: 518-455-3290
-- note: District Office
-  address: 47 Grand Street;Newburgh,, NY 12550
-  voice: 845-567-1270
-  fax: 518-426-6784
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/james-skoufis/contact
@@ -32,3 +24,12 @@ other_identifiers:
   identifier: NYL000309
 sources:
 - url: http://www.nysenate.gov/senators/james-skoufis/contact
+offices:
+- address: 188 State Street, Legislative Office Building,;Albany,, NY 12247
+  voice: 518-455-3290
+  classification: capitol
+- address: 47 Grand Street;Newburgh,, NY 12550
+  voice: 845-567-1270
+  fax: 518-426-6784
+  classification: district
+  name: 'District Office #1'

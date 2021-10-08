@@ -10,15 +10,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '22'
-contact_details:
-- note: District Office
-  address: 900 Beach Ave. N.E.Huron, SD 57350
-  voice: 605-354-2640
-- note: Capitol Office
-  voice: 605-773-3851
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/1883/Detail
 sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1883/Detail
 extras:
   occupation: Retired Banker
+offices:
+- address: 900 Beach Ave. N.E.Huron, SD 57350
+  voice: 605-354-2640
+  classification: district
+  name: 'District Office #1'
+- voice: 605-773-3851
+  classification: capitol

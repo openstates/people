@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '22'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203022;Harrisburg, PA 17120-3022;Room:;17 East Wing
-  voice: 717-787-6481
-  fax: 717-783-5198
-- note: District Office
-  address: Oppenheim Building 409 Lackawanna Ave. Suite 210;Scranton, PA 18503
-  voice: 877-346-5721
-  fax: 570-207-2897
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1227
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/SenatorJohnBlake/
   twitter: https://twitter.com/senjohnblake
+offices:
+- address: Senate Box 203022;Harrisburg, PA 17120-3022;Room:;17 East Wing
+  voice: 717-787-6481
+  fax: 717-783-5198
+  classification: capitol
+- address: Oppenheim Building 409 Lackawanna Ave. Suite 210;Scranton, PA 18503
+  voice: 877-346-5721
+  fax: 570-207-2897
+  classification: district
+  name: 'District Office #1'

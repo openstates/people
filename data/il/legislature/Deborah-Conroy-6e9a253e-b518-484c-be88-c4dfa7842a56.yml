@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '46'
-contact_details:
-- note: Capitol Office
-  address: 275-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8158
-- note: District Office
-  address: 28 S. Villa Ave.;Villa Park, IL 60181
-  voice: 630-415-3520
-  fax: 630-415-3522
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2631
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2863
@@ -33,3 +25,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2631
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2863
+offices:
+- address: 275-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8158
+  classification: capitol
+- address: 28 S. Villa Ave.;Villa Park, IL 60181
+  voice: 630-415-3520
+  fax: 630-415-3522
+  classification: district
+  name: 'District Office #1'

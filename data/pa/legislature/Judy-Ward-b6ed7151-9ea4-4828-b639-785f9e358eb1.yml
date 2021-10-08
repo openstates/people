@@ -14,15 +14,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203030;Harrisburg, PA 17120-3030;Room:;362 Main Capitol
-  voice: 717-787-5490
-  fax: 717-783-5192
-- note: District Office
-  address: 201 Lincoln Way West Suite 102 McConnellsburg, PA 17233
-  voice: 717-485-4126
-  fax: 717-485-4207
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1683
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -41,3 +32,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/SenJudyWard/
   youtube: http://www.youtube.com/user/RepJudyWard
+offices:
+- address: Senate Box 203030;Harrisburg, PA 17120-3030;Room:;362 Main Capitol
+  voice: 717-787-5490
+  fax: 717-783-5192
+  classification: capitol
+- address: 201 Lincoln Way West Suite 102 McConnellsburg, PA 17233
+  voice: 717-485-4126
+  fax: 717-485-4207
+  classification: district
+  name: 'District Office #1'

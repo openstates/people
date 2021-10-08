@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 4470 Hwy 71, Sioux Rapids, IA 50585
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10747
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10747
@@ -28,3 +23,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10747
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10747
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 4470 Hwy 71, Sioux Rapids, IA 50585
+  classification: district
+  name: 'District Office #1'

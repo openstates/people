@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '46'
-contact_details:
-- note: Capitol Office
-  address: LOB 324; Albany, NY 12248
-  voice: 518-455-4811
-- note: District Office
-  address: 2002 Mermaid Ave.; Brooklyn, NY 11224
-  voice: 718-266-0267
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Mathylde-Frontus
@@ -25,3 +18,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Mathylde-Frontus
 - url: https://assembly.state.ny.us/mem/Mathylde-Frontus
+offices:
+- address: LOB 324; Albany, NY 12248
+  voice: 518-455-4811
+  classification: capitol
+- address: 2002 Mermaid Ave.; Brooklyn, NY 11224
+  voice: 718-266-0267
+  classification: district
+  name: 'District Office #1'

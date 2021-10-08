@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  address: 310 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
-  voice: 850-487-5025
-- note: District Office
-  address: 215 SW Federal Highway; Suite 203; Stuart, FL 34994
-  voice: 772-221-4019
-  fax: 888-263-7895
 links:
 - url: http://www.flsenate.gov/Senators/s25
 - url: http://www.flsenate.gov/Senators/2018-2020/S25
@@ -25,3 +17,12 @@ sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s25
 - url: http://www.flsenate.gov/Senators/2018-2020/S25
+offices:
+- address: 310 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5025
+  classification: capitol
+- address: 215 SW Federal Highway; Suite 203; Stuart, FL 34994
+  voice: 772-221-4019
+  fax: 888-263-7895
+  classification: district
+  name: 'District Office #1'

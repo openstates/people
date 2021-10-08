@@ -9,15 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '16'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203016;Harrisburg, PA 17120-3016;Room:;281 Main Capitol
-  voice: 717-787-1349
-  fax: 717-772-3458
-- note: District Office
-  address: Five City Center 740 West Hamilton Street Suite 200;Allentown, PA 18101
-  voice: 610-821-8468
-  fax: 610-821-6798
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=76
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ extras:
   facebook: https://www.facebook.com/SenatorBrowne
   twitter: https://twitter.com/senatorbrowne
   youtube: https://www.youtube.com/channel/UCa143fKx0LpsfOhYIE8_Yew/featured
+offices:
+- address: Senate Box 203016;Harrisburg, PA 17120-3016;Room:;281 Main Capitol
+  voice: 717-787-1349
+  fax: 717-772-3458
+  classification: capitol
+- address: Five City Center 740 West Hamilton Street Suite 200;Allentown, PA 18101
+  voice: 610-821-8468
+  fax: 610-821-6798
+  classification: district
+  name: 'District Office #1'

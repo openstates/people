@@ -10,15 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '93'
-contact_details:
-- note: Capitol Office
-  address: 203-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-0416
-  fax: 217-782-1141
-- note: District Office
-  address: 331 N. Lafayette Street;P.O. Box 170;Macomb, IL 61455
-  voice: 309-836-2707
-  fax: 309-836-2231
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2597
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2838
@@ -36,3 +27,13 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2597
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2838
+offices:
+- address: 203-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-0416
+  fax: 217-782-1141
+  classification: capitol
+- address: 331 N. Lafayette Street;P.O. Box 170;Macomb, IL 61455
+  voice: 309-836-2707
+  fax: 309-836-2231
+  classification: district
+  name: 'District Office #1'

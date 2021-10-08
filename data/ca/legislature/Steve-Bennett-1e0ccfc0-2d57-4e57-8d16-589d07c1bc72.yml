@@ -10,19 +10,21 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '37'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0037
-  voice: 916-319-2037
-- note: District Office
-  address: 101 West Anapamu Street, Suite A;Santa Barbara, CA 93101
-  voice: 805-564-1649
-- note: District Office
-  address: 89 South California Street, Suite F;Ventura, CA 93001
-  voice: 805-641-3700
 links:
 - url: https://a37.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD37&inframe=N
   note: Contact Form
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0037
+  voice: 916-319-2037
+  classification: capitol
+- address: 101 West Anapamu Street, Suite A;Santa Barbara, CA 93101
+  voice: 805-564-1649
+  classification: district
+  name: 'District Office #1'
+- address: 89 South California Street, Suite F;Ventura, CA 93001
+  voice: 805-641-3700
+  classification: district
+  name: 'District Office #2'

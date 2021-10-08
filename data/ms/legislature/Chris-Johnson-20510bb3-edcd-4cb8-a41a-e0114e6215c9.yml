@@ -14,12 +14,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '45'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-4088
-- note: District Office
-  address: P.O. Box 18247;Hattiesburg, MS 39404
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/johnson_(87th).xml
 - url: http://billstatus.ls.state.ms.us/members/senate/johnson.xml
@@ -31,3 +25,10 @@ sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/johnson.xml
 extras:
   org_info: ''
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-4088
+  classification: capitol
+- address: P.O. Box 18247;Hattiesburg, MS 39404
+  classification: district
+  name: 'District Office #1'

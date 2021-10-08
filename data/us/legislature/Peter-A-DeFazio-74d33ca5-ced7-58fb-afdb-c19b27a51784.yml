@@ -101,22 +101,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: OR-4
-contact_details:
-- note: Capitol Office
-  address: 2134 Rayburn House Office Building Washington DC 20515-3704
-  voice: 202-225-6416
-- note: District Office
-  address: 125 Central Ave. Suite 350; Coos Bay, OR 97420
-  voice: 541-269-2609
-  fax: 541-269-5760
-- note: District Office
-  address: '405 E. 8th Ave. #2030; Eugene, OR 97401'
-  voice: 541-465-6732
-  fax: 541-465-6458
-- note: District Office
-  address: 612 SE. Jackson St. Room 9; Roseburg, OR 97470
-  voice: 541-440-3523
-  fax: 541-465-6458
 links:
 - url: https://defazio.house.gov
   note: website
@@ -157,3 +141,22 @@ other_identifiers:
   identifier: kg:/m/033ttx
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2134 Rayburn House Office Building Washington DC 20515-3704
+  voice: 202-225-6416
+  classification: capitol
+- address: 125 Central Ave. Suite 350; Coos Bay, OR 97420
+  voice: 541-269-2609
+  fax: 541-269-5760
+  classification: district
+  name: 'District Office #1'
+- address: '405 E. 8th Ave. #2030; Eugene, OR 97401'
+  voice: 541-465-6732
+  fax: 541-465-6458
+  classification: district
+  name: 'District Office #2'
+- address: 612 SE. Jackson St. Room 9; Roseburg, OR 97470
+  voice: 541-440-3523
+  fax: 541-465-6458
+  classification: district
+  name: 'District Office #3'

@@ -46,34 +46,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: New Mexico
-contact_details:
-- note: Capitol Office
-  address: 498 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-6621
-- note: District Office
-  address: 800 Municipal Dr.; Farmington, NM 87401
-  voice: 505-324-1005
-  fax: 505-324-1026
-- note: District Office
-  address: 110 W. Aztec Ave.; Gallup, NM 87301
-  voice: 505-863-0582
-  fax: 505-863-0678
-- note: District Office
-  address: 1103 National Ave Suite 210; Las Vegas, NM 87701-4024
-  voice: 505-454-3038
-  fax: 505-454-3265
-- note: District Office
-  address: 3200 Civic Center NE Suite 330; Rio Rancho, NM 87144
-  voice: 505-994-0499
-  fax: 505-994-0550
-- note: District Office
-  address: 1611 Calle Lorca Suite A; Santa Fe, NM 87505
-  voice: 505-984-8950
-  fax: 505-986-5047
-- note: District Office
-  address: 404 W. Route 66 Blvd.; Tucumcari, NM 88401
-  voice: 575-461-3029
-  fax: 575-461-3192
 links:
 - url: https://www.lujan.senate.gov
   note: website
@@ -116,3 +88,37 @@ other_identifiers:
   identifier: "Ben Ray Luj\xE1n"
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 498 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-6621
+  classification: capitol
+- address: 800 Municipal Dr.; Farmington, NM 87401
+  voice: 505-324-1005
+  fax: 505-324-1026
+  classification: district
+  name: 'District Office #1'
+- address: 110 W. Aztec Ave.; Gallup, NM 87301
+  voice: 505-863-0582
+  fax: 505-863-0678
+  classification: district
+  name: 'District Office #2'
+- address: 1103 National Ave Suite 210; Las Vegas, NM 87701-4024
+  voice: 505-454-3038
+  fax: 505-454-3265
+  classification: district
+  name: 'District Office #3'
+- address: 3200 Civic Center NE Suite 330; Rio Rancho, NM 87144
+  voice: 505-994-0499
+  fax: 505-994-0550
+  classification: district
+  name: 'District Office #4'
+- address: 1611 Calle Lorca Suite A; Santa Fe, NM 87505
+  voice: 505-984-8950
+  fax: 505-986-5047
+  classification: district
+  name: 'District Office #5'
+- address: 404 W. Route 66 Blvd.; Tucumcari, NM 88401
+  voice: 575-461-3029
+  fax: 575-461-3192
+  classification: district
+  name: 'District Office #6'

@@ -8,13 +8,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '11'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Bldg.;Albany,, NY 12247
-  voice: 518-455-2210
-- note: District Office
-  address: 38-50 Bell Boulevard;Bayside,, NY 11361
-  voice: 718-765-6675
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/john-liu/contact
@@ -27,3 +20,11 @@ ids:
 sources:
 - url: http://www.nysenate.gov/senators/john-liu/contact
 - url: http://www.nysenate.gov/senators/john-c-liu/contact
+offices:
+- address: Legislative Office Bldg.;Albany,, NY 12247
+  voice: 518-455-2210
+  classification: capitol
+- address: 38-50 Bell Boulevard;Bayside,, NY 11361
+  voice: 718-765-6675
+  classification: district
+  name: 'District Office #1'

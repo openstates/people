@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '115'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1002;Raleigh, NC 27601-1096
-  voice: 919-733-5746
-- note: District Office
-  address: 15 Clarke Ln;Fairview, NC 28730
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/689
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Buncombe
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1002;Raleigh, NC 27601-1096
+  voice: 919-733-5746
+  classification: capitol
+- address: 15 Clarke Ln;Fairview, NC 28730
+  classification: district
+  name: 'District Office #1'

@@ -26,13 +26,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-5
-contact_details:
-- note: Capitol Office
-  address: 1227 Longworth House Office Building Washington DC 20515-3805
-  voice: 202-225-2011
-- note: District Office
-  address: 927 E Baltimore Ave; East Lansdowne, PA 19050-2749
-  voice: 610-626-1913
 links:
 - url: https://scanlon.house.gov
   note: website
@@ -61,3 +54,11 @@ other_identifiers:
   identifier: kg:/g/11gtg87gkn
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1227 Longworth House Office Building Washington DC 20515-3805
+  voice: 202-225-2011
+  classification: capitol
+- address: 927 E Baltimore Ave; East Lansdowne, PA 19050-2749
+  voice: 610-626-1913
+  classification: district
+  name: 'District Office #1'

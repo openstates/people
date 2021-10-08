@@ -61,14 +61,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: OH-10
-contact_details:
-- note: Capitol Office
-  address: 2082 Rayburn House Office Building Washington DC 20515-3510
-  voice: 202-225-6465
-- note: District Office
-  address: 120 W. 3rd St. Suite 305; Dayton, OH 45402
-  voice: 937-225-2843
-  fax: 937-225-2752
 links:
 - url: https://turner.house.gov
   note: website
@@ -109,3 +101,12 @@ other_identifiers:
   identifier: kg:/m/03440l
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2082 Rayburn House Office Building Washington DC 20515-3510
+  voice: 202-225-6465
+  classification: capitol
+- address: 120 W. 3rd St. Suite 305; Dayton, OH 45402
+  voice: 937-225-2843
+  fax: 937-225-2752
+  classification: district
+  name: 'District Office #1'

@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '138'
-contact_details:
-- note: District Office
-  address: 196 W Moorestown Road Wind Gap, PA 18091
-  voice: 610-746-2100
-  fax: 610-746-3803
-- note: Capitol Office
-  address: 402 Irvis Office Building P.O. Box 202138 Harrisburg, PA 17120-2138
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1910
+offices:
+- address: 196 W Moorestown Road Wind Gap, PA 18091
+  voice: 610-746-2100
+  fax: 610-746-3803
+  classification: district
+  name: 'District Office #1'
+- address: 402 Irvis Office Building P.O. Box 202138 Harrisburg, PA 17120-2138
+  classification: capitol

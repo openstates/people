@@ -9,16 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: 105 Ryan Office Building P.O. Box 202014 Harrisburg, PA 17120-2014
-  voice: 717-260-6432
-  fax: 717-782-2918
-- note: District Office
-  address: Chippewa Township Municipal Building 2811 Darlington Road Suite 1 Beaver
-    Falls, PA 15010
-  voice: 724-847-1352
-  fax: 724-847-5283
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1086
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -33,3 +23,14 @@ sources:
 extras:
   facebook: https://facebook.com/RepMarshall
   youtube: https://youtube.com/RepMarshall
+offices:
+- address: 105 Ryan Office Building P.O. Box 202014 Harrisburg, PA 17120-2014
+  voice: 717-260-6432
+  fax: 717-782-2918
+  classification: capitol
+- address: Chippewa Township Municipal Building 2811 Darlington Road Suite 1 Beaver
+    Falls, PA 15010
+  voice: 724-847-1352
+  fax: 724-847-5283
+  classification: district
+  name: 'District Office #1'

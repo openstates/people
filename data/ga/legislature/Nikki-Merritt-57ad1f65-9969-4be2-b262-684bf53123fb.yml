@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '9'
-contact_details:
-- note: Capitol Office
-  address: 319-B CLOB; Atlanta, GA 30334
-  voice: 404-463-1310
-- note: District Office
-  address: 1911 Grayson Highway, Suite 8367; Grayson , GA 30017
 links:
 - url: https://www.legis.ga.gov/members/senate/4978?session=1029
 sources:
@@ -30,3 +24,10 @@ extras:
   georgia_id: 4978
   staff: Evelyn Thomas
   staff email: evelyn.thomas@senate.ga.gov
+offices:
+- address: 319-B CLOB; Atlanta, GA 30334
+  voice: 404-463-1310
+  classification: capitol
+- address: 1911 Grayson Highway, Suite 8367; Grayson , GA 30017
+  classification: district
+  name: 'District Office #1'

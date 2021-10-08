@@ -61,14 +61,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MD-2
-contact_details:
-- note: Capitol Office
-  address: 2206 Rayburn House Office Building Washington DC 20515-2002
-  voice: 202-225-3061
-- note: District Office
-  address: 375 W. Padonia Rd. Suite 200; Timonium, MD 21093
-  voice: 410-628-2701
-  fax: 410-628-2708
 links:
 - url: https://ruppersberger.house.gov
   note: website
@@ -107,3 +99,12 @@ other_identifiers:
   identifier: Dutch Ruppersberger
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2206 Rayburn House Office Building Washington DC 20515-2002
+  voice: 202-225-3061
+  classification: capitol
+- address: 375 W. Padonia Rd. Suite 200; Timonium, MD 21093
+  voice: 410-628-2701
+  fax: 410-628-2708
+  classification: district
+  name: 'District Office #1'

@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4066;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 67 Deer Hill Lane;Coventry, CT 06238
-  voice: 860-742-5287
 links:
 - url: http://www.cthousegop.com/Ackert/
 other_names:
@@ -27,3 +20,11 @@ other_identifiers:
   identifier: CTL000188
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4066;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 67 Deer Hill Lane;Coventry, CT 06238
+  voice: 860-742-5287
+  classification: district
+  name: 'District Office #1'

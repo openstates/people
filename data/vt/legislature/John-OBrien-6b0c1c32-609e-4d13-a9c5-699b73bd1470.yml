@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor-Orange-1
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 73 Moody Rd.;Tunbridge, VT 05077
-  voice: 802-889-3474
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30977
 - url: http://legislature.vermont.gov/people/single/2022/30977
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30977
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30977
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 73 Moody Rd.;Tunbridge, VT 05077
+  voice: 802-889-3474
+  classification: district
+  name: 'District Office #1'

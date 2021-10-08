@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '2'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203002;Harrisburg, PA 17120-3002;Room:;458 Main Capitol
-  voice: 717-787-1141
-  fax: 717-787-7439
-- note: District Office
-  address: 400 West Allegheny Avenue Philadelphia, PA 19133
-  voice: 215-291-4653
-  fax: 215-560-3260
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=277
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/SenatorTinaTartaglione/
   twitter: https://twitter.com/sentartaglione
+offices:
+- address: Senate Box 203002;Harrisburg, PA 17120-3002;Room:;458 Main Capitol
+  voice: 717-787-1141
+  fax: 717-787-7439
+  classification: capitol
+- address: 400 West Allegheny Avenue Philadelphia, PA 19133
+  voice: 215-291-4653
+  fax: 215-560-3260
+  classification: district
+  name: 'District Office #1'

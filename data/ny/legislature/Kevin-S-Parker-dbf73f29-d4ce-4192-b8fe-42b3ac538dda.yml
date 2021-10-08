@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '21'
-contact_details:
-- note: Capitol Office
-  address: 172 State Street Room 504, Capitol Building;Albany,, NY 12247
-  voice: 518-455-2580
-- note: District Office
-  address: 3021 Tilden Ave.,;Brooklyn,, NY 11226-5107
-  voice: 718-629-6401
-  fax: 518-426-6843
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/kevin-s-parker/contact
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: NYL000394
 sources:
 - url: http://www.nysenate.gov/senators/kevin-s-parker/contact
+offices:
+- address: 172 State Street Room 504, Capitol Building;Albany,, NY 12247
+  voice: 518-455-2580
+  classification: capitol
+- address: 3021 Tilden Ave.,;Brooklyn,, NY 11226-5107
+  voice: 718-629-6401
+  fax: 518-426-6843
+  classification: district
+  name: 'District Office #1'

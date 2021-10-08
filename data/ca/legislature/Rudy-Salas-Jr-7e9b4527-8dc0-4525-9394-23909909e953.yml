@@ -10,16 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '32'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0032
-  voice: 916-319-2032
-- note: District Office
-  address: 1430 Truxtun Avenue, Suite 803;Bakersfield, CA 93301
-  voice: 661-335-0302
-- note: District Office
-  address: 113 Court Street, Suite 201;Hanford, CA 93230
-  voice: 559-585-7170
 links:
 - url: https://a32.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD32&inframe=N
@@ -34,5 +24,15 @@ sources:
 other_names:
 - name: Rudy Salas Jr.
 - name: Rudy Salas
-
-
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0032
+  voice: 916-319-2032
+  classification: capitol
+- address: 1430 Truxtun Avenue, Suite 803;Bakersfield, CA 93301
+  voice: 661-335-0302
+  classification: district
+  name: 'District Office #1'
+- address: 113 Court Street, Suite 201;Hanford, CA 93230
+  voice: 559-585-7170
+  classification: district
+  name: 'District Office #2'

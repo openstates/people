@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '77'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: 125 Price Wallace Dr.;Mendenhall, MS 39114
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/wallace.xml
 other_identifiers:
@@ -25,3 +20,9 @@ sources:
 extras:
   org_info: Representative Wallace is a member of the Farm Bureau, Mississippi Cattlemen's
     Association, and Trust Advisory Board in Magee.
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: 125 Price Wallace Dr.;Mendenhall, MS 39114
+  classification: district
+  name: 'District Office #1'

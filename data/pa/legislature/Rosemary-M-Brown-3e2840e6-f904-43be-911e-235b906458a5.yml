@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '189'
-contact_details:
-- note: Capitol Office
-  address: 209 Ryan Office Building P.O. Box 202189 Harrisburg, PA 17120-2189
-  voice: 717-260-6171
-  fax: 717-787-9185
-- note: District Office
-  address: 143 Seven Bridge Road East Stroudsburg, PA 18301
-  voice: 570-420-8301
-  fax: 570-420-8304
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -34,3 +25,13 @@ sources:
 extras:
   facebook: https://Facebook.com/RepRosemaryBrown
   youtube: https://youtube.com/RepBrown
+offices:
+- address: 209 Ryan Office Building P.O. Box 202189 Harrisburg, PA 17120-2189
+  voice: 717-260-6171
+  fax: 717-787-9185
+  classification: capitol
+- address: 143 Seven Bridge Road East Stroudsburg, PA 18301
+  voice: 570-420-8301
+  fax: 570-420-8304
+  classification: district
+  name: 'District Office #1'

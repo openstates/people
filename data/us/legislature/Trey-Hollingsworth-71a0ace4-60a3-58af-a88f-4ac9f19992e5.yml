@@ -25,16 +25,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IN-9
-contact_details:
-- note: Capitol Office
-  address: 1641 Longworth House Office Building Washington DC 20515-1409
-  voice: 202-225-5315
-- note: District Office
-  address: 321 Quartermaster Ct.; Jeffersonville, IN 47130
-  voice: 812-288-3999
-- note: District Office
-  address: 100 E Jefferson St; Franklin, IN 46131-2323
-  voice: 317-851-8710
 links:
 - url: https://hollingsworth.house.gov
   note: website
@@ -69,3 +59,15 @@ other_identifiers:
   identifier: '21725'
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1641 Longworth House Office Building Washington DC 20515-1409
+  voice: 202-225-5315
+  classification: capitol
+- address: 321 Quartermaster Ct.; Jeffersonville, IN 47130
+  voice: 812-288-3999
+  classification: district
+  name: 'District Office #1'
+- address: 100 E Jefferson St; Franklin, IN 46131-2323
+  voice: 317-851-8710
+  classification: district
+  name: 'District Office #2'

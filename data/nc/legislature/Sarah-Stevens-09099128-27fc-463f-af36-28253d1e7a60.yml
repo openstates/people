@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '90'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 419;Raleigh, NC 27603-5925
-  voice: 919-715-1883
-- note: District Office
-  address: 2161 Margaret Dr;Mt. Airy, NC 27030
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/592
 other_identifiers:
@@ -29,3 +23,10 @@ extras:
   - Surry
   - Wilkes
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 419;Raleigh, NC 27603-5925
+  voice: 919-715-1883
+  classification: capitol
+- address: 2161 Margaret Dr;Mt. Airy, NC 27030
+  classification: district
+  name: 'District Office #1'

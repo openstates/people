@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: Room 245M, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-357-7959
-- note: District Office
-  address: 237 Locust Street;Ronceverte, WV 24970
 links:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Baldwin
 other_identifiers:
@@ -25,3 +19,10 @@ other_identifiers:
   identifier: WVL000392
 sources:
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Baldwin
+offices:
+- address: Room 245M, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-357-7959
+  classification: capitol
+- address: 237 Locust Street;Ronceverte, WV 24970
+  classification: district
+  name: 'District Office #1'

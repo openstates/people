@@ -8,12 +8,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 3705;Hartford, CT 06106
-  voice: 860-240-0043
-- note: District Office
-  address: 99 Montowese Street;Hartford, CT 06114
 links:
 - url: http://www.senatedems.ct.gov/Fonfara
 other_names:
@@ -23,3 +17,10 @@ other_identifiers:
   identifier: CTL000001
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 3705;Hartford, CT 06106
+  voice: 860-240-0043
+  classification: capitol
+- address: 99 Montowese Street;Hartford, CT 06114
+  classification: district
+  name: 'District Office #1'

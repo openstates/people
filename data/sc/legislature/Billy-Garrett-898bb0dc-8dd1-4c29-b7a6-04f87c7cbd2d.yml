@@ -9,12 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: 504 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6032
-- note: District Office
-  address: 109 Oak Avenue, Greenwood, SC 29646
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0638636287
 other_names:
@@ -22,3 +16,10 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=0638636287
+offices:
+- address: 504 Gressette Bldg., Columbia, SC 29201
+  voice: 803-212-6032
+  classification: capitol
+- address: 109 Oak Avenue, Greenwood, SC 29646
+  classification: district
+  name: 'District Office #1'

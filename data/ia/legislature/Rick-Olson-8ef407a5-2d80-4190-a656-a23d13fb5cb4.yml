@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 3012 E 31st Ct, Des Moines, IA 50317
-  voice: 515-348-9469
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=776
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=776
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=776
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=776
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 3012 E 31st Ct, Des Moines, IA 50317
+  voice: 515-348-9469
+  classification: district
+  name: 'District Office #1'

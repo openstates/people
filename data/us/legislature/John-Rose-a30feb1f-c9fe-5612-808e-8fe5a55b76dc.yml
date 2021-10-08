@@ -21,18 +21,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TN-6
-contact_details:
-- note: Capitol Office
-  address: 1124 Longworth House Office Building Washington DC 20515-4206
-  voice: 202-225-4231
-- note: District Office
-  address: 321 E Spring St Suite 301; Cookeville, TN 38501-4167
-  voice: 931-854-9430
-  fax: 615-206-8980
-- note: District Office
-  address: 355 N Belvedere Dr Suite 308; Gallatin, TN 37066-5466
-  voice: 615-206-8204
-  fax: 615-206-8980
 links:
 - url: https://johnrose.house.gov
   note: website
@@ -61,3 +49,17 @@ other_identifiers:
   identifier: kg:/g/11g8xhg1mz
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1124 Longworth House Office Building Washington DC 20515-4206
+  voice: 202-225-4231
+  classification: capitol
+- address: 321 E Spring St Suite 301; Cookeville, TN 38501-4167
+  voice: 931-854-9430
+  fax: 615-206-8980
+  classification: district
+  name: 'District Office #1'
+- address: 355 N Belvedere Dr Suite 308; Gallatin, TN 37066-5466
+  voice: 615-206-8204
+  fax: 615-206-8980
+  classification: district
+  name: 'District Office #2'

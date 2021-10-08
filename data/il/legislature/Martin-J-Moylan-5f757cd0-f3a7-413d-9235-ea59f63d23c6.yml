@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '55'
-contact_details:
-- note: Capitol Office
-  address: 292-S Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8007
-- note: District Office
-  address: 24 S. Des Plaines River Rd.;Ste. 400;Des Plaines, IL 60016
-  voice: 847-635-6821
-  fax: 847-635-8565
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2633
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2865
@@ -31,3 +23,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2633
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2865
+offices:
+- address: 292-S Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8007
+  classification: capitol
+- address: 24 S. Des Plaines River Rd.;Ste. 400;Des Plaines, IL 60016
+  voice: 847-635-6821
+  fax: 847-635-8565
+  classification: district
+  name: 'District Office #1'

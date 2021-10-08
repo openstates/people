@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '114'
-contact_details:
-- note: Capitol Office
-  address: 104 Irvis Office Building P.O. Box 202114 Harrisburg, PA 17120-2114
-  voice: 717-783-4874
-  fax: 717-772-2008
-- note: District Office
-  address: 802 South Main Street Taylor, PA 18517
-  voice: 570-562-2350
-  fax: 570-562-2353
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1866
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepBridget/
   twitter: https://twitter.com/RepBridget
+offices:
+- address: 104 Irvis Office Building P.O. Box 202114 Harrisburg, PA 17120-2114
+  voice: 717-783-4874
+  fax: 717-772-2008
+  classification: capitol
+- address: 802 South Main Street Taylor, PA 18517
+  voice: 570-562-2350
+  fax: 570-562-2353
+  classification: district
+  name: 'District Office #1'

@@ -7,12 +7,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '84'
-contact_details:
-- note: District Office
-  address: Building S, Room 209; 3209 Virginia Avenue; Fort Pierce, FL 34981-5541
-  voice: 772-595-1391
-- note: Capitol Office
-  address: 1101 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5084
 other_names:
 - name: Trabulsy
+offices:
+- address: Building S, Room 209; 3209 Virginia Avenue; Fort Pierce, FL 34981-5541
+  voice: 772-595-1391
+  classification: district
+  name: 'District Office #1'
+- address: 1101 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  voice: 850-717-5084
+  classification: capitol

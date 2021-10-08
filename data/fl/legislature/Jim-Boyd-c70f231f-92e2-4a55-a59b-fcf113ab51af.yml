@@ -10,8 +10,9 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '21'
-contact_details:
-- note: District Office
-  address: 717 Manatee Avenue West; Suite 100; Bradenton, FL 34205
-- note: Capitol Office
-  address: 312 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+offices:
+- address: 717 Manatee Avenue West; Suite 100; Bradenton, FL 34205
+  classification: district
+  name: 'District Office #1'
+- address: 312 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  classification: capitol

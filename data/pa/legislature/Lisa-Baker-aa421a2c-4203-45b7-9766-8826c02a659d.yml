@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203020;Harrisburg, PA 17120-3020;Room:;173 Main Capitol
-  voice: 717-787-7428
-  fax: 717-787-9242
-- note: District Office
-  address: 2512 Route 6 Hawley, PA 18428
-  voice: 570-226-5960
-  fax: 570-226-5964
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1077
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -33,3 +24,13 @@ sources:
 extras:
   facebook: http://www.facebook.com/senatorlisabaker
   twitter: http://www.twitter.com/SenLisaBaker
+offices:
+- address: Senate Box 203020;Harrisburg, PA 17120-3020;Room:;173 Main Capitol
+  voice: 717-787-7428
+  fax: 717-787-9242
+  classification: capitol
+- address: 2512 Route 6 Hawley, PA 18428
+  voice: 570-226-5960
+  fax: 570-226-5964
+  classification: district
+  name: 'District Office #1'

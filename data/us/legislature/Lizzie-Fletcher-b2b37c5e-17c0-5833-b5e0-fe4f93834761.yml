@@ -20,12 +20,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TX-7
-contact_details:
-- note: Capitol Office
-  address: 119 Cannon House Office Building Washington DC 20515-4307
-  voice: 202-225-2571
-- note: District Office
-  address: 5599 San Felipe St Suite 950; Houston, TX 77056-2724
 links:
 - url: https://fletcher.house.gov
   note: website
@@ -54,3 +48,10 @@ other_identifiers:
   identifier: kg:/g/11gzqssv7p
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 119 Cannon House Office Building Washington DC 20515-4307
+  voice: 202-225-2571
+  classification: capitol
+- address: 5599 San Felipe St Suite 950; Houston, TX 77056-2724
+  classification: district
+  name: 'District Office #1'

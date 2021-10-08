@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: 434C Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6919
-- note: District Office
-  address: 1031 Double Springs Rd., Townville, SC 29689
-  voice: 864-245-5885
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0835227173
 other_names:
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0835227173
+offices:
+- address: 434C Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6919
+  classification: capitol
+- address: 1031 Double Springs Rd., Townville, SC 29689
+  voice: 864-245-5885
+  classification: district
+  name: 'District Office #1'

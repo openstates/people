@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '124'
-contact_details:
-- note: Capitol Office
-  address: 320C Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-3261
-- note: District Office
-  address: P.O. Box 1228, Beaufort, SC 29901-1228
-- note: Primary Office
-  voice: 843-255-2260
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0539772663
 other_names:
@@ -27,3 +19,12 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0539772663
+offices:
+- address: 320C Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-3261
+  classification: capitol
+- address: P.O. Box 1228, Beaufort, SC 29901-1228
+  classification: district
+  name: 'District Office #1'
+- voice: 843-255-2260
+  classification: primary

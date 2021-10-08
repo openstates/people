@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '118'
-contact_details:
-- note: Capitol Office
-  address: 300 Main Capitol Building P.O. Box 202118 Harrisburg, PA 17120-2118
-  voice: 717-787-3589
-  fax: 717-780-4763
-- note: District Office
-  address: 42 Center Street Hughestown, PA 18640
-  voice: 800-894-0960
-  fax: 570-655-9110
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1111
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1111
 extras:
   youtube: http://www.youtube.com/playlist?list=PL11D6525C75221CA9
+offices:
+- address: 300 Main Capitol Building P.O. Box 202118 Harrisburg, PA 17120-2118
+  voice: 717-787-3589
+  fax: 717-780-4763
+  classification: capitol
+- address: 42 Center Street Hughestown, PA 18640
+  voice: 800-894-0960
+  fax: 570-655-9110
+  classification: district
+  name: 'District Office #1'

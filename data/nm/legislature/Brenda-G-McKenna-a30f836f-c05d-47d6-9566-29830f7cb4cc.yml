@@ -8,12 +8,13 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '9'
-contact_details:
-- note: District Office
-  address: P.O. Box 1351;Corrales, NM 87048
-- note: Capitol Office
-  voice: 505-397-8834
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SMCKE
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SMCKE
+offices:
+- address: P.O. Box 1351;Corrales, NM 87048
+  classification: district
+  name: 'District Office #1'
+- voice: 505-397-8834
+  classification: capitol

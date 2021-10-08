@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '173'
-contact_details:
-- note: Capitol Office
-  address: G-07 Irvis Office Building P.O. Box 202173 Harrisburg, PA 17120-2173
-  voice: 717-787-4331
-  fax: 717-772-9962
-- note: District Office
-  address: 7104 Torresdale Avenue Philadelphia, PA 19135
-  voice: 215-333-9760
-  fax: 215-281-3418
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1688
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1688
+offices:
+- address: G-07 Irvis Office Building P.O. Box 202173 Harrisburg, PA 17120-2173
+  voice: 717-787-4331
+  fax: 717-772-9962
+  classification: capitol
+- address: 7104 Torresdale Avenue Philadelphia, PA 19135
+  voice: 215-333-9760
+  fax: 215-281-3418
+  classification: district
+  name: 'District Office #1'

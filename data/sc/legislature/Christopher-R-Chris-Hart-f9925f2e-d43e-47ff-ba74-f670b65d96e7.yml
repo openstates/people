@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '73'
-contact_details:
-- note: Capitol Office
-  address: 432B Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-3061
-- note: District Office
-  address: 5219 Burke Ave., Columbia, SC 29203
-  voice: 803-771-7701
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0770454453
 other_names:
@@ -26,3 +19,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0770454453
+offices:
+- address: 432B Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-3061
+  classification: capitol
+- address: 5219 Burke Ave., Columbia, SC 29203
+  voice: 803-771-7701
+  classification: district
+  name: 'District Office #1'

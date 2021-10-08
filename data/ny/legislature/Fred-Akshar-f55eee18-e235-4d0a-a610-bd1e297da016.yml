@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '52'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building, Room 608;Albany,, NY 12247
-  voice: 518-455-2677
-- note: District Office
-  address: 44 Hawley Street;Binghamton,, NY 13901
-  voice: 607-773-8771
-  fax: 607-773-3688
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/fred-akshar/contact
@@ -32,3 +24,12 @@ other_identifiers:
   identifier: NYL000427
 sources:
 - url: http://www.nysenate.gov/senators/fred-akshar/contact
+offices:
+- address: Legislative Office Building, Room 608;Albany,, NY 12247
+  voice: 518-455-2677
+  classification: capitol
+- address: 44 Hawley Street;Binghamton,, NY 13901
+  voice: 607-773-8771
+  fax: 607-773-3688
+  classification: district
+  name: 'District Office #1'

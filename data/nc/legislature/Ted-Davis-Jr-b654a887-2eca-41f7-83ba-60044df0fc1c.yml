@@ -15,12 +15,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '20'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 417B;Raleigh, NC 27603-5925
-  voice: 919-733-5786
-- note: District Office
-  address: PO Box 2535;Wilmington, NC 28402
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/637
 other_identifiers:
@@ -32,3 +26,10 @@ extras:
   counties:
   - New Hanover
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 417B;Raleigh, NC 27603-5925
+  voice: 919-733-5786
+  classification: capitol
+- address: PO Box 2535;Wilmington, NC 28402
+  classification: district
+  name: 'District Office #1'

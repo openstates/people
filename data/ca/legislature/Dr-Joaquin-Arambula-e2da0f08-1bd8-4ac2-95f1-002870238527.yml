@@ -11,13 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0031
-  voice: 916-319-2031
-- note: District Office
-  address: 2550 Mariposa Mall, Room 5031;Fresno, CA 93721
-  voice: 559-445-5532
 links:
 - url: https://a31.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD31&inframe=N
@@ -34,3 +27,11 @@ other_identifiers:
   identifier: ocd-person/2fc70d74-fedb-4c4b-bc27-c9b44324dceb
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0031
+  voice: 916-319-2031
+  classification: capitol
+- address: 2550 Mariposa Mall, Room 5031;Fresno, CA 93721
+  voice: 559-445-5532
+  classification: district
+  name: 'District Office #1'

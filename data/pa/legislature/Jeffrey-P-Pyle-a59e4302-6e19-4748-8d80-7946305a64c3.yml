@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '60'
-contact_details:
-- note: Capitol Office
-  address: 216 Ryan Office Building P.O. Box 202060 Harrisburg, PA 17120-2060
-  voice: 717-783-5327
-  fax: 717-260-6511
-- note: District Office
-  address: 612 S. Pike Road Suite 106 Sarver, PA 16055
-  voice: 724-295-2200
-  fax: 724-295-2322
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1019
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ extras:
   facebook: https://facebook.com/RepJeffPyle
   twitter: https://twitter.com/RepJeffPyle
   youtube: https://youtube.com/RepPyle
+offices:
+- address: 216 Ryan Office Building P.O. Box 202060 Harrisburg, PA 17120-2060
+  voice: 717-783-5327
+  fax: 717-260-6511
+  classification: capitol
+- address: 612 S. Pike Road Suite 106 Sarver, PA 16055
+  voice: 724-295-2200
+  fax: 724-295-2322
+  classification: district
+  name: 'District Office #1'

@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '85'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4038;Hartford, CT 06106
-  voice: 860-240-8500
-- note: District Office
-  address: 188 South Cherry Street;Wallingford, CT 06492
-  voice: 203-269-8378
 links:
 - url: http://www.housedems.ct.gov/Mushinsky
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000121
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4038;Hartford, CT 06106
+  voice: 860-240-8500
+  classification: capitol
+- address: 188 South Cherry Street;Wallingford, CT 06492
+  voice: 203-269-8378
+  classification: district
+  name: 'District Office #1'

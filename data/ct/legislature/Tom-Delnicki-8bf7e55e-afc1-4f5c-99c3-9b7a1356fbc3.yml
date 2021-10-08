@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 130 Felt Road;South Windsor, CT 06074
-  voice: 860-644-0026
 links:
 - url: http://www.cthousegop.com/Delnicki/
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000339
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4200;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 130 Felt Road;South Windsor, CT 06074
+  voice: 860-644-0026
+  classification: district
+  name: 'District Office #1'

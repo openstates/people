@@ -51,22 +51,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: VA-1
-contact_details:
-- note: Capitol Office
-  address: 2055 Rayburn House Office Building Washington DC 20515-4601
-  voice: 202-225-4261
-- note: District Office
-  address: 6501 Mechanicsville Tpke Suite 102; Mechanicsville, VA 23111
-  voice: 804-730-6595
-  fax: 804-730-6597
-- note: District Office
-  address: 95 Dunn Dr. Suite 201; Stafford, VA 22556
-  voice: 540-659-2734
-  fax: 540-659-2737
-- note: District Office
-  address: 508 Church Lane; Tappahannock, VA 22560
-  voice: 804-443-0668
-  fax: 804-443-0671
 links:
 - url: https://wittman.house.gov
   note: website
@@ -105,3 +89,22 @@ other_identifiers:
   identifier: kg:/m/03cx7ld
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2055 Rayburn House Office Building Washington DC 20515-4601
+  voice: 202-225-4261
+  classification: capitol
+- address: 6501 Mechanicsville Tpke Suite 102; Mechanicsville, VA 23111
+  voice: 804-730-6595
+  fax: 804-730-6597
+  classification: district
+  name: 'District Office #1'
+- address: 95 Dunn Dr. Suite 201; Stafford, VA 22556
+  voice: 540-659-2734
+  fax: 540-659-2737
+  classification: district
+  name: 'District Office #2'
+- address: 508 Church Lane; Tappahannock, VA 22560
+  voice: 804-443-0668
+  fax: 804-443-0671
+  classification: district
+  name: 'District Office #3'

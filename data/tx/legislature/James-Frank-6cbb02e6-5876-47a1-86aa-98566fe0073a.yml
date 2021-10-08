@@ -9,14 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '69'
-contact_details:
-- note: Capitol Office
-  address: Room E2.604;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0534
-  fax: 512-463-8161
-- note: District Office
-  address: 1206 Hatton Road;Wichita Falls, TX 76302
-  voice: 940-767-1700
 links:
 - url: https://house.texas.gov/members/member-page/?district=69
 other_identifiers:
@@ -28,3 +20,12 @@ sources:
 - url: https://house.texas.gov/members/member-page/?district=69
 other_names:
 - name: James B. Frank
+offices:
+- address: Room E2.604;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0534
+  fax: 512-463-8161
+  classification: capitol
+- address: 1206 Hatton Road;Wichita Falls, TX 76302
+  voice: 940-767-1700
+  classification: district
+  name: 'District Office #1'

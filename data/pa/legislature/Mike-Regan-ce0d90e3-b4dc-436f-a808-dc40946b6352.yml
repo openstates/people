@@ -14,14 +14,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '31'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203031;Harrisburg, PA 17120-3031;Room:;172 Main Capitol
-  voice: 717-787-8524
-- note: District Office
-  address: 2151 Market Street Camp Hill, PA 17011
-  voice: 717-975-1985
-  fax: 717-432-1733
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1646
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -38,3 +30,12 @@ sources:
 extras:
   facebook: https://www.facebook.com/SenatorMikeRegan/
   twitter: http://twitter.com/SenatorReganPA
+offices:
+- address: Senate Box 203031;Harrisburg, PA 17120-3031;Room:;172 Main Capitol
+  voice: 717-787-8524
+  classification: capitol
+- address: 2151 Market Street Camp Hill, PA 17011
+  voice: 717-975-1985
+  fax: 717-432-1733
+  classification: district
+  name: 'District Office #1'

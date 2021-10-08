@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: LOB 430; Albany, NY 12248
-  voice: 518-455-4901
-- note: District Office
-  address: 3245 Route 112; Building 2, Ste. 6; Medford, NY 11763
-  voice: 631-207-0073
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Joe-DeStefano
@@ -25,3 +18,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Joe-DeStefano
 - url: https://assembly.state.ny.us/mem/Joe-DeStefano
+offices:
+- address: LOB 430; Albany, NY 12248
+  voice: 518-455-4901
+  classification: capitol
+- address: 3245 Route 112; Building 2, Ste. 6; Medford, NY 11763
+  voice: 631-207-0073
+  classification: district
+  name: 'District Office #1'

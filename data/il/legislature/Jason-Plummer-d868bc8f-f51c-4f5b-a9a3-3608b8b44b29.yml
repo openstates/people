@@ -9,13 +9,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '54'
-contact_details:
-- note: Capitol Office
-  address: M103F Capitol Building;Springfield, IL 62706
-  voice: 217-782-5755
-- note: District Office
-  address: 310 W. Gallatin St.;Vandalia, IL 62471
-  voice: 618-283-3000
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2730
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2935
@@ -24,3 +17,11 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2730
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2935
+offices:
+- address: M103F Capitol Building;Springfield, IL 62706
+  voice: 217-782-5755
+  classification: capitol
+- address: 310 W. Gallatin St.;Vandalia, IL 62471
+  voice: 618-283-3000
+  classification: district
+  name: 'District Office #1'

@@ -31,14 +31,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: AS-AL
-contact_details:
-- note: Capitol Office
-  address: 1339 Longworth House Office Building Washington DC 20515-5200
-  voice: 202-225-8577
-- note: District Office
-  address: 1 Fagatogo Square PO Box 5859; Pago Pago, AS 96799
-  voice: 684-633-3601
-  fax: 684-633-3607
 links:
 - url: https://radewagen.house.gov
   note: website
@@ -75,3 +67,12 @@ other_identifiers:
   identifier: Amata Radewagen
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 1339 Longworth House Office Building Washington DC 20515-5200
+  voice: 202-225-8577
+  classification: capitol
+- address: 1 Fagatogo Square PO Box 5859; Pago Pago, AS 96799
+  voice: 684-633-3601
+  fax: 684-633-3607
+  classification: district
+  name: 'District Office #1'

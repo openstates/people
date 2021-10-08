@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '36'
-contact_details:
-- note: Capitol Office
-  address: 429 Blatt Bldg., Columbia, SC 29201
-  voice: 803-734-3053
-- note: District Office
-  address: P.O. Box 93, Lyman, SC 29365
-  voice: 864-439-6255
-- note: Primary Office
-  voice: 864-909-1092
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0015909089
 other_names:
@@ -28,3 +19,13 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0015909089
+offices:
+- address: 429 Blatt Bldg., Columbia, SC 29201
+  voice: 803-734-3053
+  classification: capitol
+- address: P.O. Box 93, Lyman, SC 29365
+  voice: 864-439-6255
+  classification: district
+  name: 'District Office #1'
+- voice: 864-909-1092
+  classification: primary

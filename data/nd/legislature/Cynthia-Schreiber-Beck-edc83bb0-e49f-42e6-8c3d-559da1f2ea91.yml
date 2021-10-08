@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '25'
-contact_details:
-- note: Capitol Office
-  voice: 701-642-5777
-- note: District Office
-  address: 1251 Pegasus Road;Wahpeton, ND;58075-4868
-  voice: 701-899-3232
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-cynthia-schreiber-beck
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-cynthia-schreiber-beck
@@ -27,3 +21,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-cynthia-schreiber-beck
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-cynthia-schreiber-beck
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-cynthia-schreiber-beck
+offices:
+- voice: 701-642-5777
+  classification: capitol
+- address: 1251 Pegasus Road;Wahpeton, ND;58075-4868
+  voice: 701-899-3232
+  classification: district
+  name: 'District Office #1'

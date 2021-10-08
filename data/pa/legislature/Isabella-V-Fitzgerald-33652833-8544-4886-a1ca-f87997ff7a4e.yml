@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '203'
-contact_details:
-- note: Capitol Office
-  address: 28B East Wing P.O. Box 202203 Harrisburg, PA 17120-2203
-  voice: 717-783-4111
-  fax: 717-780-4753
-- note: District Office
-  address: 7178 Ogontz Avenue Philadelphia, PA 19138
-  voice: 215-549-0220
-  fax: 215-549-8965
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1762
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1762
+offices:
+- address: 28B East Wing P.O. Box 202203 Harrisburg, PA 17120-2203
+  voice: 717-783-4111
+  fax: 717-780-4753
+  classification: capitol
+- address: 7178 Ogontz Avenue Philadelphia, PA 19138
+  voice: 215-549-0220
+  fax: 215-549-8965
+  classification: district
+  name: 'District Office #1'

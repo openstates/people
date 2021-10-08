@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '116'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1217;Raleigh, NC 27601-1096
-  voice: 919-715-3012
-- note: District Office
-  address: 10 Cedarcliff Rd;Asheville, NC 28803
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/696
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Buncombe
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1217;Raleigh, NC 27601-1096
+  voice: 919-715-3012
+  classification: capitol
+- address: 10 Cedarcliff Rd;Asheville, NC 28803
+  classification: district
+  name: 'District Office #1'

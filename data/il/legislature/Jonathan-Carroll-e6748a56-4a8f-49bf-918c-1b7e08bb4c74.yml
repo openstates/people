@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '57'
-contact_details:
-- note: Capitol Office
-  address: 231-E Stratton Office Building;Springfield, IL 62706
-  voice: 217-558-1004
-- note: District Office
-  address: 3153 Dundee Road;Northbrook, IL 60062
-  voice: 847-229-5499
-  fax: 847-377-9497
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2701
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2916
@@ -29,3 +21,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2701
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2916
+offices:
+- address: 231-E Stratton Office Building;Springfield, IL 62706
+  voice: 217-558-1004
+  classification: capitol
+- address: 3153 Dundee Road;Northbrook, IL 60062
+  voice: 847-229-5499
+  fax: 847-377-9497
+  classification: district
+  name: 'District Office #1'

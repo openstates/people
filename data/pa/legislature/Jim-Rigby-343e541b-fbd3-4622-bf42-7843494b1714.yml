@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '71'
-contact_details:
-- note: Capitol Office
-  address: 432 Irvis Office Building P.O. Box 202071 Harrisburg, PA 17120-2071
-  voice: 717-772-9924
-  fax: 717-782-7980
-- note: District Office
-  address: 1340 Franklin Street Johnstown, PA 15905
-  voice: 814-536-9818
-  fax: 814-539-8429
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1836
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ sources:
 extras:
   facebook: https://www.facebook.com/RepJimRigby
   youtube: https://www.youtube.com/channel/UCrrnV9bz8JpObHlPccnjmMQ
+offices:
+- address: 432 Irvis Office Building P.O. Box 202071 Harrisburg, PA 17120-2071
+  voice: 717-772-9924
+  fax: 717-782-7980
+  classification: capitol
+- address: 1340 Franklin Street Johnstown, PA 15905
+  voice: 814-536-9818
+  fax: 814-539-8429
+  classification: district
+  name: 'District Office #1'

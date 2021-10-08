@@ -11,16 +11,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  address: State Capitol, Room 3076, Sacramento, CA 95814-4900
-  voice: 916-651-4034
-- note: District Office
-  address: 1000 East Santa Ana Blvd., Suite 220B, Santa Ana, CA 92701
-  voice: 714-558-3785
 links:
 - url: https://senate.ca.gov/sd34
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD34&inframe=N
   note: Contact Form
 sources:
 - url: http://senate.ca.gov/senators
+offices:
+- address: State Capitol, Room 3076, Sacramento, CA 95814-4900
+  voice: 916-651-4034
+  classification: capitol
+- address: 1000 East Santa Ana Blvd., Suite 220B, Santa Ana, CA 92701
+  voice: 714-558-3785
+  classification: district
+  name: 'District Office #1'

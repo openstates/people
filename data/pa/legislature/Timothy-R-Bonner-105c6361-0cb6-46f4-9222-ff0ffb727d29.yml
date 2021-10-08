@@ -9,18 +9,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '8'
-contact_details:
-- note: Capitol Office
-  address: 150A East Wing P.O. Box 202008 Harrisburg, PA 17120-2008
-  voice: 717-783-6438
-  fax: 717-782-2943
-- note: District Office
-  address: 234 West Pine Street Unit 1 Grove City, PA 16127
-  voice: 724-458-4911
-  fax: 724-450-4104
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1877
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1877
+offices:
+- address: 150A East Wing P.O. Box 202008 Harrisburg, PA 17120-2008
+  voice: 717-783-6438
+  fax: 717-782-2943
+  classification: capitol
+- address: 234 West Pine Street Unit 1 Grove City, PA 16127
+  voice: 724-458-4911
+  fax: 724-450-4104
+  classification: district
+  name: 'District Office #1'

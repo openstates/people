@@ -10,14 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '101'
-contact_details:
-- note: Capitol Office
-  address: 205 A-N Stratton Office Building;Springfield, IL 62706
-  voice: 217-782-8163
-- note: District Office
-  address: 715 West Imboden Drive;Decatur, IL 62521
-  voice: 217-876-1968
-  fax: 217-876-1973
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2759
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2960
@@ -26,3 +18,12 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2759
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2960
+offices:
+- address: 205 A-N Stratton Office Building;Springfield, IL 62706
+  voice: 217-782-8163
+  classification: capitol
+- address: 715 West Imboden Drive;Decatur, IL 62521
+  voice: 217-876-1968
+  fax: 217-876-1973
+  classification: district
+  name: 'District Office #1'

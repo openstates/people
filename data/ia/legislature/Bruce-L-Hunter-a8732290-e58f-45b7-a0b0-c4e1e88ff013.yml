@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '34'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 452 Wilmers Ave, Des Moines, IA 50315
-  voice: 515-256-8010
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=317
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=317
@@ -27,3 +21,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=317
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=317
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 452 Wilmers Ave, Des Moines, IA 50315
+  voice: 515-256-8010
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '41'
-contact_details:
-- note: Capitol Office
-  address: 16 West Jones Street, Rm. 1213;Raleigh, NC 27601-1096
-  voice: 919-733-5602
-- note: District Office
-  address: 300 Legault Dr;Cary, NC 27513
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/688
 other_identifiers:
@@ -27,3 +21,10 @@ extras:
   counties:
   - Wake
   notice: null
+offices:
+- address: 16 West Jones Street, Rm. 1213;Raleigh, NC 27601-1096
+  voice: 919-733-5602
+  classification: capitol
+- address: 300 Legault Dr;Cary, NC 27513
+  classification: district
+  name: 'District Office #1'

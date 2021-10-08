@@ -14,12 +14,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '77'
-contact_details:
-- note: Capitol Office
-  address: 300 N. Salisbury Street, Rm. 302;Raleigh, NC 27603-5925
-  voice: 919-733-5904
-- note: District Office
-  address: 330 S Salisbury St;Mocksville, NC 27028
 links:
 - url: https://www.ncleg.gov/Members/Biography/H/53
 other_identifiers:
@@ -32,3 +26,10 @@ extras:
   - Davie
   - Rowan
   notice: null
+offices:
+- address: 300 N. Salisbury Street, Rm. 302;Raleigh, NC 27603-5925
+  voice: 919-733-5904
+  classification: capitol
+- address: 330 S Salisbury St;Mocksville, NC 27028
+  classification: district
+  name: 'District Office #1'

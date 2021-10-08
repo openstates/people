@@ -9,9 +9,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '27'
-contact_details:
-- note: District Office
-  address: Suite C; 2730 Enterprise Road; Orange City , FL 32763-8320
-- note: Capitol Office
-  address: 1101 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+offices:
+- address: Suite C; 2730 Enterprise Road; Orange City , FL 32763-8320
+  classification: district
+  name: 'District Office #1'
+- address: 1101 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5027
+  classification: capitol

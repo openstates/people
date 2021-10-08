@@ -9,14 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '126'
-contact_details:
-- note: District Office
-  address: 69 South Street; Auburn, NY 13021
-  voice: 315-255-3045
-- note: Capitol Office
-  address: LOB 448; Albany, NY 12248
-  voice: 518-455-5878
 links:
 - url: https://assembly.state.ny.us/mem/John-Lemondes
 sources:
 - url: https://assembly.state.ny.us/mem/John-Lemondes
+offices:
+- address: 69 South Street; Auburn, NY 13021
+  voice: 315-255-3045
+  classification: district
+  name: 'District Office #1'
+- address: LOB 448; Albany, NY 12248
+  voice: 518-455-5878
+  classification: capitol

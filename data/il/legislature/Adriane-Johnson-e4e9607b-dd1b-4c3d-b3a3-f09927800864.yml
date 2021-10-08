@@ -9,15 +9,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: Capitol Building;Room 321;Springfield, IL 62706
-  voice: 217-782-8181
-- note: District Office
-  address: 1168 W. Lake Cook Road;Buffalo Grove, IL 60089
-  voice: 847-623-3006
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2980
 sources:
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2980
+offices:
+- address: Capitol Building;Room 321;Springfield, IL 62706
+  voice: 217-782-8181
+  classification: capitol
+- address: 1168 W. Lake Cook Road;Buffalo Grove, IL 60089
+  voice: 847-623-3006
+  classification: district
+  name: 'District Office #1'

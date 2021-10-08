@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '30'
-contact_details:
-- note: Capitol Office
-  address: 418B Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6885
-- note: District Office
-  address: 210 Big Rock Road, Blacksburg, SC 29702
-  voice: 864-839-3135
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1386931652
 other_names:
@@ -27,3 +20,11 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=1386931652
+offices:
+- address: 418B Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6885
+  classification: capitol
+- address: 210 Big Rock Road, Blacksburg, SC 29702
+  voice: 864-839-3135
+  classification: district
+  name: 'District Office #1'

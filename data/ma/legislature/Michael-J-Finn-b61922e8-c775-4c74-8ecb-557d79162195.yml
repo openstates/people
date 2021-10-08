@@ -12,14 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 6th Hampden
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 274;Boston, MA, 02133
-  voice: 617-722-2676
-  fax: 617-626-0189
-- note: District Office
-  address: 71 Park Avenue;West Springfield, MA 01089
-  voice: 413-363-1965
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJF1
 other_identifiers:
@@ -31,3 +23,12 @@ other_identifiers:
   identifier: ocd-person/461e8555-8243-4716-ae36-5b62bd6346c8
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MJF1
+offices:
+- address: 24 Beacon St.;Room 274;Boston, MA, 02133
+  voice: 617-722-2676
+  fax: 617-626-0189
+  classification: capitol
+- address: 71 Park Avenue;West Springfield, MA 01089
+  voice: 413-363-1965
+  classification: district
+  name: 'District Office #1'

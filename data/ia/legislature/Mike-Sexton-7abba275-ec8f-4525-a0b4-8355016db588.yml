@@ -10,12 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: 2202 Ogden Ave, Rockwell City, IA 50579
-  voice: 712-297-8720
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=1153
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=1153
@@ -25,3 +19,10 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=1153
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=1153
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: 2202 Ogden Ave, Rockwell City, IA 50579
+  voice: 712-297-8720
+  classification: district
+  name: 'District Office #1'

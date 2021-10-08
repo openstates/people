@@ -10,18 +10,19 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '85'
-contact_details:
-- note: Capitol Office
-  address: 141-A East Wing P.O. Box 202085 Harrisburg, PA 17120-2085
-  voice: 717-787-3443
-  fax: 717-782-2887
-- note: District Office
-  address: Mifflinburg Government Center 343 Chestnut Street Suite 1 Mifflinburg,
-    PA 17844
-  voice: 570-837-0052
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871
+offices:
+- address: 141-A East Wing P.O. Box 202085 Harrisburg, PA 17120-2085
+  voice: 717-787-3443
+  fax: 717-782-2887
+  classification: capitol
+- address: Mifflinburg Government Center 343 Chestnut Street Suite 1 Mifflinburg,
+    PA 17844
+  voice: 570-837-0052
+  classification: district
+  name: 'District Office #1'

@@ -45,18 +45,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: KY-2
-contact_details:
-- note: Capitol Office
-  address: 2434 Rayburn House Office Building Washington DC 20515-1702
-  voice: 202-225-3501
-- note: District Office
-  address: 996 Wilkinson Trce. Suite B2; Bowling Green, KY 42103
-  voice: 270-842-9896
-  fax: 270-842-9081
-- note: District Office
-  address: 2200 Airport Rd.; Owensboro, KY 42301
-- note: District Office
-  address: 411 W. Lincoln Trail Blvd.; Radcliff, KY 40160
 links:
 - url: https://guthrie.house.gov
   note: website
@@ -95,3 +83,18 @@ other_identifiers:
   identifier: kg:/m/0411qqt
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2434 Rayburn House Office Building Washington DC 20515-1702
+  voice: 202-225-3501
+  classification: capitol
+- address: 996 Wilkinson Trce. Suite B2; Bowling Green, KY 42103
+  voice: 270-842-9896
+  fax: 270-842-9081
+  classification: district
+  name: 'District Office #1'
+- address: 2200 Airport Rd.; Owensboro, KY 42301
+  classification: district
+  name: 'District Office #2'
+- address: 411 W. Lincoln Trail Blvd.; Radcliff, KY 40160
+  classification: district
+  name: 'District Office #3'

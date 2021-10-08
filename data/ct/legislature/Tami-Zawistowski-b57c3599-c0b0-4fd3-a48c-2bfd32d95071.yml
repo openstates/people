@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '61'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 2105;Hartford, CT 06106
-  voice: 860-240-8700
-- note: District Office
-  address: 11 Seymour Road;East Granby, CT 06026
-  voice: 860-658-1191
 links:
 - url: http://www.cthousegop.com/Zawistowski/
 other_names:
@@ -25,3 +18,11 @@ other_identifiers:
   identifier: CTL000259
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 2105;Hartford, CT 06106
+  voice: 860-240-8700
+  classification: capitol
+- address: 11 Seymour Road;East Granby, CT 06026
+  voice: 860-658-1191
+  classification: district
+  name: 'District Office #1'

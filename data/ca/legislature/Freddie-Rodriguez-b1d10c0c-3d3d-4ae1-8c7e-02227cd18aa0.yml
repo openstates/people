@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '52'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0052
-  voice: 916-319-2052
-- note: District Office
-  address: 13160 7th Street;Chino, CA 91710
-  voice: 909-902-9606
 links:
 - url: https://a52.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD52&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000428
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0052
+  voice: 916-319-2052
+  classification: capitol
+- address: 13160 7th Street;Chino, CA 91710
+  voice: 909-902-9606
+  classification: district
+  name: 'District Office #1'

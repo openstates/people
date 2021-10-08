@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '48'
-contact_details:
-- note: Capitol Office
-  address: 52B East Wing P.O. Box 202048 Harrisburg, PA 17120-2048
-  voice: 717-787-3315
-  fax: 717-782-2942
-- note: District Office
-  address: 190 North Main St. Suite 308 Washington, PA 15301
-  voice: 724-223-4541
-  fax: 724-223-4544
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1797
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -27,3 +18,13 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1797
+offices:
+- address: 52B East Wing P.O. Box 202048 Harrisburg, PA 17120-2048
+  voice: 717-787-3315
+  fax: 717-782-2942
+  classification: capitol
+- address: 190 North Main St. Suite 308 Washington, PA 15301
+  voice: 724-223-4541
+  fax: 724-223-4544
+  classification: district
+  name: 'District Office #1'

@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '47'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0047
-  voice: 916-319-2047
-- note: District Office
-  address: 290 North D Street, Suite 903;San Bernardino, CA 92401
-  voice: 909-381-3238
 links:
 - url: https://a47.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD47&inframe=N
@@ -28,3 +21,11 @@ sources:
 - url: http://assembly.ca.gov/assemblymembers
 other_names:
 - name: Eloise Gomez Reyes
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0047
+  voice: 916-319-2047
+  classification: capitol
+- address: 290 North D Street, Suite 903;San Bernardino, CA 92401
+  voice: 909-381-3238
+  classification: district
+  name: 'District Office #1'

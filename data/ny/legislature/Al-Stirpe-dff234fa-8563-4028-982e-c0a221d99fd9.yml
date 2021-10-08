@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '127'
-contact_details:
-- note: Capitol Office
-  address: LOB 622; Albany, NY 12248
-  voice: 518-455-4505
-- note: District Office
-  address: 7293 Buckley Road; Suite 201; N. Syracuse, NY 13212
-  voice: 315-452-1115
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Al-Stirpe
@@ -29,3 +22,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Al-Stirpe
 - url: https://assembly.state.ny.us/mem/Al-Stirpe
+offices:
+- address: LOB 622; Albany, NY 12248
+  voice: 518-455-4505
+  classification: capitol
+- address: 7293 Buckley Road; Suite 201; N. Syracuse, NY 13212
+  voice: 315-452-1115
+  classification: district
+  name: 'District Office #1'

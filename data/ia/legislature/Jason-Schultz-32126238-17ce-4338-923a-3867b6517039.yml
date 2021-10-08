@@ -10,11 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '9'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3371
-- note: District Office
-  address: 611 Cedar St, PO Box 70, Schleswig, IA 51461
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6588
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6588
@@ -28,3 +23,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6588
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6588
+offices:
+- voice: 515-281-3371
+  classification: capitol
+- address: 611 Cedar St, PO Box 70, Schleswig, IA 51461
+  classification: district
+  name: 'District Office #1'

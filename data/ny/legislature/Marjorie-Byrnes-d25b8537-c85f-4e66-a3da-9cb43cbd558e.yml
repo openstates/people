@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '133'
-contact_details:
-- note: Capitol Office
-  address: LOB 723; Albany, NY 12248
-  voice: 518-455-5662
-- note: District Office
-  address: 79 Genesee St.; Avon, NY 14414
-  voice: 585-218-0038
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Marjorie-Byrnes
@@ -25,3 +18,11 @@ ids:
 sources:
 - url: http://assembly.state.ny.us/mem/Marjorie-Byrnes
 - url: https://assembly.state.ny.us/mem/Marjorie-Byrnes
+offices:
+- address: LOB 723; Albany, NY 12248
+  voice: 518-455-5662
+  classification: capitol
+- address: 79 Genesee St.; Avon, NY 14414
+  voice: 585-218-0038
+  classification: district
+  name: 'District Office #1'

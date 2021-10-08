@@ -9,10 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '107'
-contact_details:
-- note: District Office
-  address: Suite 204; 610 Northwest 183rd Street; Miami Gardens, FL 33169-4472
+offices:
+- address: Suite 204; 610 Northwest 183rd Street; Miami Gardens, FL 33169-4472
   voice: 305-654-7100
-- note: Capitol Office
-  address: 1301 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
+  classification: district
+  name: 'District Office #1'
+- address: 1301 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
   voice: 850-717-5107
+  classification: capitol

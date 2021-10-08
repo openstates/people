@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203013;Harrisburg, PA 17120-3013;Room:;351 Main Capitol
-  voice: 717-787-6535
-- note: District Office
-  address: 48-50 W. Chestnut Street Suite 308;Lancaster, PA 17603
-  voice: 717-397-1309
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1763
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -29,3 +22,11 @@ sources:
 extras:
   facebook: https://www.facebook.com/SenatorScottMartinPA/
   twitter: https://twitter.com/ScottFMartin
+offices:
+- address: Senate Box 203013;Harrisburg, PA 17120-3013;Room:;351 Main Capitol
+  voice: 717-787-6535
+  classification: capitol
+- address: 48-50 W. Chestnut Street Suite 308;Lancaster, PA 17603
+  voice: 717-397-1309
+  classification: district
+  name: 'District Office #1'

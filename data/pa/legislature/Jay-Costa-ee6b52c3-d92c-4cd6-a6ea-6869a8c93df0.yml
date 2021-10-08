@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '43'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203043;Harrisburg, PA 17120-3043;Room:;535 Main Capitol
-  voice: 717-787-7683
-  fax: 717-783-5976
-- note: District Office
-  address: 314 E. Eighth Ave.;Homestead, PA 15120
-  voice: 412-462-4204
-  fax: 412-462-4543
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=254
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -34,3 +25,13 @@ extras:
   facebook: https://www.facebook.com/senatorjaycosta
   instagram: https://www.instagram.com/senatorcosta/
   twitter: https://twitter.com/senatorcosta
+offices:
+- address: Senate Box 203043;Harrisburg, PA 17120-3043;Room:;535 Main Capitol
+  voice: 717-787-7683
+  fax: 717-783-5976
+  classification: capitol
+- address: 314 E. Eighth Ave.;Homestead, PA 15120
+  voice: 412-462-4204
+  fax: 412-462-4543
+  classification: district
+  name: 'District Office #1'

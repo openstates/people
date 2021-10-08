@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '75'
-contact_details:
-- note: District Office
-  address: 315 E Market Street Suite B Clearfield, PA 16803
-  voice: 814-375-4688
-  fax: 814-375-5955
-- note: Capitol Office
-  address: 160B East Wing P.O. Box 202075 Harrisburg, PA 17120-2075
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1903
+offices:
+- address: 315 E Market Street Suite B Clearfield, PA 16803
+  voice: 814-375-4688
+  fax: 814-375-5955
+  classification: district
+  name: 'District Office #1'
+- address: 160B East Wing P.O. Box 202075 Harrisburg, PA 17120-2075
+  classification: capitol

@@ -13,11 +13,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '6'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room;Hartford, CT 06106
-- note: District Office
-  address: ', CT'
 links:
 - url: http://www.housedems.ct.gov/Lopes
 - url: http://www.senatedems.ct.gov/lopes
@@ -28,3 +23,9 @@ other_identifiers:
   identifier: CTL000190
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room;Hartford, CT 06106
+  classification: capitol
+- address: ', CT'
+  classification: district
+  name: 'District Office #1'

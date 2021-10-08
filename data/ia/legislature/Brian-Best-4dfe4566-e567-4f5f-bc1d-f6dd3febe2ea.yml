@@ -10,11 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '12'
-contact_details:
-- note: Capitol Office
-  voice: 515-281-3221
-- note: District Office
-  address: PO Box 491, Glidden, IA 51443
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14800
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14800
@@ -24,3 +19,9 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14800
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14800
+offices:
+- voice: 515-281-3221
+  classification: capitol
+- address: PO Box 491, Glidden, IA 51443
+  classification: district
+  name: 'District Office #1'

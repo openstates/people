@@ -11,14 +11,15 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '54'
-contact_details:
-- note: Capitol Office
-  address: Room 210E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3399
-- note: District Office
-  address: 207 N. Main St.;Petersburg, WV 26847
-  voice: 304-668-0868
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Hott
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Hott
+offices:
+- address: Room 210E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3399
+  classification: capitol
+- address: 207 N. Main St.;Petersburg, WV 26847
+  voice: 304-668-0868
+  classification: district
+  name: 'District Office #1'

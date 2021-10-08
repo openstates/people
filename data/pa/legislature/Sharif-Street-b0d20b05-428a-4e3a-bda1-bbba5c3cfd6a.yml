@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '3'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203003;Harrisburg, PA 17120-3003;Room:;535 Main Capitol
-  voice: 717-787-6735
-  fax: 717-772-0581
-- note: District Office
-  address: 4458 A Germantown Avenue Philadelphia, PA 19140
-  voice: 215-457-5200
-  fax: 215-457-5206
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1767
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -32,3 +23,13 @@ extras:
   facebook: https://www.facebook.com/SenSharifStreet/
   instagram: https://www.instagram.com/SenSharifstreet/
   twitter: https://twitter.com/SenSharifStreet
+offices:
+- address: Senate Box 203003;Harrisburg, PA 17120-3003;Room:;535 Main Capitol
+  voice: 717-787-6735
+  fax: 717-772-0581
+  classification: capitol
+- address: 4458 A Germantown Avenue Philadelphia, PA 19140
+  voice: 215-457-5200
+  fax: 215-457-5206
+  classification: district
+  name: 'District Office #1'

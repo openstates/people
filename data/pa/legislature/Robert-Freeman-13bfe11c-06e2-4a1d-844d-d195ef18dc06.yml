@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '136'
-contact_details:
-- note: Capitol Office
-  address: 207 Irvis Office Building P.O. Box 202136 Harrisburg, PA 17120-2136
-  voice: 717-783-3815
-  fax: 717-783-2152
-- note: District Office
-  address: 215 Northampton Street Easton, PA 18042
-  voice: 610-253-5543
-  fax: 610-250-2645
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=136
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -31,3 +22,13 @@ sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=136
 extras:
   youtube: http://www.youtube.com/playlist?list=PLD91FC5F7839C0E52
+offices:
+- address: 207 Irvis Office Building P.O. Box 202136 Harrisburg, PA 17120-2136
+  voice: 717-783-3815
+  fax: 717-783-2152
+  classification: capitol
+- address: 215 Northampton Street Easton, PA 18042
+  voice: 610-253-5543
+  fax: 610-250-2645
+  classification: district
+  name: 'District Office #1'

@@ -10,15 +10,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '85'
-contact_details:
-- note: Capitol Office
-  address: P. O. Box 1018;Jackson, MS 39215
-- note: District Office
-  address: P.O. Box 758;Fayette, MS 39069
-  voice: 601-702-1947
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/harness.xml
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/harness.xml
 extras:
   org_info: ''
+offices:
+- address: P. O. Box 1018;Jackson, MS 39215
+  classification: capitol
+- address: P.O. Box 758;Fayette, MS 39069
+  voice: 601-702-1947
+  classification: district
+  name: 'District Office #1'

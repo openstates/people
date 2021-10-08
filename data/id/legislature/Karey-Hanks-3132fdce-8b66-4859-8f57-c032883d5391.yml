@@ -15,11 +15,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '35'
-contact_details:
-- note: Capitol Office
-  voice: 208-332-1179
-- note: District Office
-  address: 463 N. 1800 E., St. Anthony, ID, 83445
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=35
 other_identifiers:
@@ -27,3 +22,9 @@ other_identifiers:
   identifier: IDL000313
 sources:
 - url: https://legislature.idaho.gov/house/membership/
+offices:
+- voice: 208-332-1179
+  classification: capitol
+- address: 463 N. 1800 E., St. Anthony, ID, 83445
+  classification: district
+  name: 'District Office #1'

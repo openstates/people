@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '107'
-contact_details:
-- note: Capitol Office
-  address: 315J Main Capitol Building P.O. Box 202107 Harrisburg, PA 17120-2107
-  voice: 717-260-6134
-  fax: 717-787-9463
-- note: District Office
-  address: 463 Mill Street Suite 1 Danville, PA 17821
-  voice: 570-275-3700
-  fax: 570-275-3711
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1216
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -30,3 +21,13 @@ sources:
 extras:
   facebook: https://facebook.com/RepMasser
   youtube: https://youtube.com/RepMasser
+offices:
+- address: 315J Main Capitol Building P.O. Box 202107 Harrisburg, PA 17120-2107
+  voice: 717-260-6134
+  fax: 717-787-9463
+  classification: capitol
+- address: 463 Mill Street Suite 1 Danville, PA 17821
+  voice: 570-275-3700
+  fax: 570-275-3711
+  classification: district
+  name: 'District Office #1'

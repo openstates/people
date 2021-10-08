@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '111'
-contact_details:
-- note: Capitol Office
-  address: LOB 654; Albany, NY 12248
-  voice: 518-455-5197
-- note: District Office
-  address: 2550 Riverfront Center; Amsterdam, NY 12010
-  voice: 518-843-0227
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Angelo-Santabarbara
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Angelo-Santabarbara
 - url: https://assembly.state.ny.us/mem/Angelo-Santabarbara
+offices:
+- address: LOB 654; Albany, NY 12248
+  voice: 518-455-5197
+  classification: capitol
+- address: 2550 Riverfront Center; Amsterdam, NY 12010
+  voice: 518-843-0227
+  classification: district
+  name: 'District Office #1'

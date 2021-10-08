@@ -9,15 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '18'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building;Room 4000;Hartford, CT 06106
-  voice: 860-240-8585
-- note: District Office
-  address: 360 North Quaker Lane;West Hartford, CT 06119
 links:
 - url: http://www.housedems.ct.gov/gilchrest
 other_names:
 - name: Gilchrest, Jillian
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
+offices:
+- address: Legislative Office Building;Room 4000;Hartford, CT 06106
+  voice: 860-240-8585
+  classification: capitol
+- address: 360 North Quaker Lane;West Hartford, CT 06119
+  classification: district
+  name: 'District Office #1'

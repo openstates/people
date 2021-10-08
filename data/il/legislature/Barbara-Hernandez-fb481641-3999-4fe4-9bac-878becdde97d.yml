@@ -11,13 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '83'
-contact_details:
-- note: Capitol Office
-  address: 233-E Stratton Office Building;Springfield, IL 62706
-  voice: 217-558-1002
-- note: District Office
-  address: 540 W. Galena Blvd.;Aurora, IL 60506
-  voice: 630-270-1848
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2766
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2967
@@ -26,3 +19,11 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2766
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2967
+offices:
+- address: 233-E Stratton Office Building;Springfield, IL 62706
+  voice: 217-558-1002
+  classification: capitol
+- address: 540 W. Galena Blvd.;Aurora, IL 60506
+  voice: 630-270-1848
+  classification: district
+  name: 'District Office #1'

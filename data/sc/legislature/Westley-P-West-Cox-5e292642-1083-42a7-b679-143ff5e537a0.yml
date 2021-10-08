@@ -9,15 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '10'
-contact_details:
-- note: Capitol Office
-  address: 434A Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6931
-- note: District Office
-  address: P.O. Box 315, Williamston, SC 29697
-  voice: 864-625-0463
-- note: Primary Office
-  voice: 864-847-9289
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0428693131
 other_names:
@@ -26,3 +17,13 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0428693131
+offices:
+- address: 434A Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6931
+  classification: capitol
+- address: P.O. Box 315, Williamston, SC 29697
+  voice: 864-625-0463
+  classification: district
+  name: 'District Office #1'
+- voice: 864-847-9289
+  classification: primary

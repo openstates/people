@@ -20,25 +20,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: South Dakota
-contact_details:
-- note: Capitol Office
-  address: 716 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-5842
-- note: District Office
-  address: 514 S. Main St. Suite 100; Aberdeen, SD 57401
-  voice: 605-225-0366
-- note: District Office
-  address: 111 W. Capitol Ave. Suite 210; Pierre, SD 57501
-  voice: 605-224-1450
-  fax: 605-224-1379
-- note: District Office
-  address: 1313 W. Main St.; Rapid City, SD 57701
-  voice: 605-343-5035
-  fax: 605-343-5348
-- note: District Office
-  address: 320 N. Main Ave. Suite A; Sioux Falls, SD 57104
-  voice: 605-336-0486
-  fax: 605-336-6624
 links:
 - url: https://www.rounds.senate.gov
   note: website
@@ -79,3 +60,26 @@ other_identifiers:
   identifier: Mike Rounds
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 716 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-5842
+  classification: capitol
+- address: 514 S. Main St. Suite 100; Aberdeen, SD 57401
+  voice: 605-225-0366
+  classification: district
+  name: 'District Office #1'
+- address: 111 W. Capitol Ave. Suite 210; Pierre, SD 57501
+  voice: 605-224-1450
+  fax: 605-224-1379
+  classification: district
+  name: 'District Office #2'
+- address: 1313 W. Main St.; Rapid City, SD 57701
+  voice: 605-343-5035
+  fax: 605-343-5348
+  classification: district
+  name: 'District Office #3'
+- address: 320 N. Main Ave. Suite A; Sioux Falls, SD 57104
+  voice: 605-336-0486
+  fax: 605-336-6624
+  classification: district
+  name: 'District Office #4'

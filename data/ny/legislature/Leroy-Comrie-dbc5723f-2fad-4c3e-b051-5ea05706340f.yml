@@ -10,14 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '14'
-contact_details:
-- note: Capitol Office
-  address: Legislative Office Building, Room 612;Albany,, NY 12247
-  voice: 518-455-2701
-- note: District Office
-  address: 113-43 Farmers Boulevard;St. Albans,, NY 11412
-  voice: 718-765-6359
-  fax: 518-455-2816
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/leroy-comrie/contact
@@ -30,3 +22,12 @@ other_identifiers:
   identifier: NYL000401
 sources:
 - url: http://www.nysenate.gov/senators/leroy-comrie/contact
+offices:
+- address: Legislative Office Building, Room 612;Albany,, NY 12247
+  voice: 518-455-2701
+  classification: capitol
+- address: 113-43 Farmers Boulevard;St. Albans,, NY 11412
+  voice: 718-765-6359
+  fax: 518-455-2816
+  classification: district
+  name: 'District Office #1'

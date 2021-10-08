@@ -10,13 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '51'
-contact_details:
-- note: District Office
-  address: 4030 West Road;Cortland,, NY 13045
-  voice: 607-432-5524
-- note: Capitol Office
-  address: 188 State Street;Albany,, NY 12247
-  voice: 518-455-3131
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/peter-oberacker/contact
@@ -24,3 +17,11 @@ ids:
   twitter: peter4senate51
 sources:
 - url: http://www.nysenate.gov/senators/peter-oberacker/contact
+offices:
+- address: 4030 West Road;Cortland,, NY 13045
+  voice: 607-432-5524
+  classification: district
+  name: 'District Office #1'
+- address: 188 State Street;Albany,, NY 12247
+  voice: 518-455-3131
+  classification: capitol

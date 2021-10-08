@@ -21,22 +21,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Maine
-contact_details:
-- note: Capitol Office
-  address: 133 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-5344
-- note: District Office
-  address: 4 Gabriel Dr. Suite 3; Augusta, ME 04330
-  voice: 207-622-8292
-- note: District Office
-  address: 202 Harlow St. Suite 20350; Bangor, ME 04401
-  voice: 207-945-8000
-- note: District Office
-  address: 169 Academy St. Suite A; Presque Isle, ME 04769
-  voice: 207-764-5124
-- note: District Office
-  address: 227 Main Street; Biddeford, ME 04005
-  voice: 207-352-5216
 links:
 - url: https://www.king.senate.gov
   note: website
@@ -77,3 +61,23 @@ other_identifiers:
   identifier: kg:/m/02hfx0
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 133 Hart Senate Office Building Washington DC 20510
+  voice: 202-224-5344
+  classification: capitol
+- address: 4 Gabriel Dr. Suite 3; Augusta, ME 04330
+  voice: 207-622-8292
+  classification: district
+  name: 'District Office #1'
+- address: 202 Harlow St. Suite 20350; Bangor, ME 04401
+  voice: 207-945-8000
+  classification: district
+  name: 'District Office #2'
+- address: 169 Academy St. Suite A; Presque Isle, ME 04769
+  voice: 207-764-5124
+  classification: district
+  name: 'District Office #3'
+- address: 227 Main Street; Biddeford, ME 04005
+  voice: 207-352-5216
+  classification: district
+  name: 'District Office #4'

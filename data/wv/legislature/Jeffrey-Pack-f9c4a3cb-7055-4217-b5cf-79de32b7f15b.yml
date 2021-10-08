@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '28'
-contact_details:
-- note: Capitol Office
-  address: Room 217E, Building 1;State Capitol Complex;Charleston, WV 25305
-  voice: 304-340-3269
-- note: District Office
-  address: P.O. Box 964;Cool Ridge, WV 25825
-  voice: 304-228-6925
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Pack
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Pack%2C+J.
@@ -28,3 +21,11 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Pack
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Pack%2C+J.
+offices:
+- address: Room 217E, Building 1;State Capitol Complex;Charleston, WV 25305
+  voice: 304-340-3269
+  classification: capitol
+- address: P.O. Box 964;Cool Ridge, WV 25825
+  voice: 304-228-6925
+  classification: district
+  name: 'District Office #1'

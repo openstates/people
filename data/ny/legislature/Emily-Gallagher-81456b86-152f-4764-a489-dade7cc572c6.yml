@@ -10,13 +10,14 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '50'
-contact_details:
-- note: District Office
-  address: 619 Lorimer Street; Brooklyn, NY 11211
-  voice: 718-383-7474
-- note: Capitol Office
-  voice: 518-455-4477
 links:
 - url: https://assembly.state.ny.us/mem/Emily-Gallagher
 sources:
 - url: https://assembly.state.ny.us/mem/Emily-Gallagher
+offices:
+- address: 619 Lorimer Street; Brooklyn, NY 11211
+  voice: 718-383-7474
+  classification: district
+  name: 'District Office #1'
+- voice: 518-455-4477
+  classification: capitol

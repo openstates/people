@@ -9,20 +9,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '39'
-contact_details:
-- note: Capitol Office
-  address: Room 1N.10;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0530
-  fax: 512-463-0849
-- note: District Office
-  address: 914 W. Pike Blvd.,;Weslaco, TX 78596
-  voice: 956-447-9473
-  fax: 956-447-8683
 links:
 - url: https://house.texas.gov/members/member-page/?district=39
 other_names:
-- name: Armando "Mando" Martinez
-- name: Armando "Mando" Martinez
+- name: Armando Martinez
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000308
@@ -32,5 +22,13 @@ other_identifiers:
   identifier: TXL000661
 sources:
 - url: https://house.texas.gov/members/member-page/?district=39
-other_names:
-- name: Armando Martinez
+offices:
+- address: Room 1N.10;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0530
+  fax: 512-463-0849
+  classification: capitol
+- address: 914 W. Pike Blvd.,;Weslaco, TX 78596
+  voice: 956-447-9473
+  fax: 956-447-8683
+  classification: district
+  name: 'District Office #1'

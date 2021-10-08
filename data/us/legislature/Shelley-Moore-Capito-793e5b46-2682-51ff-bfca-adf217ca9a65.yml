@@ -56,22 +56,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: West Virginia
-contact_details:
-- note: Capitol Office
-  address: 172 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-6472
-- note: District Office
-  address: 220 N. Kanawha St. Suite 1; Beckley, WV 25801
-  voice: 304-347-5372
-- note: District Office
-  address: 500 Virgina Street East Suite 950; Charleston, WV 25301
-  voice: 304-347-5372
-- note: District Office
-  address: 300 Foxcroft Ave. Suite 202A; Martinsburg, WV 25401
-  voice: 304-262-9285
-- note: District Office
-  address: 48 Donley St. Suite 504; Morgantown, WV 26501
-  voice: 304-292-2310
 links:
 - url: https://www.capito.senate.gov
   note: website
@@ -116,3 +100,23 @@ other_identifiers:
   identifier: kg:/m/024pwq
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 172 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-6472
+  classification: capitol
+- address: 220 N. Kanawha St. Suite 1; Beckley, WV 25801
+  voice: 304-347-5372
+  classification: district
+  name: 'District Office #1'
+- address: 500 Virgina Street East Suite 950; Charleston, WV 25301
+  voice: 304-347-5372
+  classification: district
+  name: 'District Office #2'
+- address: 300 Foxcroft Ave. Suite 202A; Martinsburg, WV 25401
+  voice: 304-262-9285
+  classification: district
+  name: 'District Office #3'
+- address: 48 Donley St. Suite 504; Morgantown, WV 26501
+  voice: 304-292-2310
+  classification: district
+  name: 'District Office #4'

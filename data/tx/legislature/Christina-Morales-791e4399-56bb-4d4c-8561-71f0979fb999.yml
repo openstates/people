@@ -9,17 +9,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '145'
-contact_details:
-- note: Capitol Office
-  address: Room E2.404;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0732
-  fax: 512-463-4781
-- note: District Office
-  address: 6960 Rustic Street, Suite 107;Parking Garage, Bldg. C;Houston, Texas 77087
-  voice: 713-718-5915
 links:
 - url: https://house.texas.gov/members/member-page/?district=145
 other_names:
 - name: Morales, Christina
 sources:
 - url: https://house.texas.gov/members/member-page/?district=145
+offices:
+- address: Room E2.404;P.O. Box 2910;Austin, TX 78768
+  voice: 512-463-0732
+  fax: 512-463-4781
+  classification: capitol
+- address: 6960 Rustic Street, Suite 107;Parking Garage, Bldg. C;Houston, Texas 77087
+  voice: 713-718-5915
+  classification: district
+  name: 'District Office #1'

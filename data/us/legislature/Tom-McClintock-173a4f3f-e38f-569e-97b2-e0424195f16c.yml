@@ -45,14 +45,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-4
-contact_details:
-- note: Capitol Office
-  address: 2312 Rayburn House Office Building Washington DC 20515-0504
-  voice: 202-225-2511
-- note: District Office
-  address: 2200A Douglas Blvd Suite 240; Roseville, CA 95661
-  voice: 916-786-5560
-  fax: 916-786-6364
 links:
 - url: https://mcclintock.house.gov
   note: website
@@ -93,3 +85,12 @@ other_identifiers:
   identifier: Tom McClintock
 sources:
 - url: https://theunitedstates.io/
+offices:
+- address: 2312 Rayburn House Office Building Washington DC 20515-0504
+  voice: 202-225-2511
+  classification: capitol
+- address: 2200A Douglas Blvd Suite 240; Roseville, CA 95661
+  voice: 916-786-5560
+  fax: 916-786-6364
+  classification: district
+  name: 'District Office #1'

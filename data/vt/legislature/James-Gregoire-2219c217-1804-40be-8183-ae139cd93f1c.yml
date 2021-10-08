@@ -11,12 +11,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Franklin-6
-contact_details:
-- note: Capitol Office
-  address: Vermont State House;115 State Street;Montpelier, VT 05633
-- note: District Office
-  address: 4668 Vt. Route 36;Fairfield, VT 05455
-  voice: 802-933-2667
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30958
 - url: http://legislature.vermont.gov/people/single/2022/30958
@@ -25,3 +19,10 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/30958
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30958
+offices:
+- address: Vermont State House;115 State Street;Montpelier, VT 05633
+  classification: capitol
+- address: 4668 Vt. Route 36;Fairfield, VT 05455
+  voice: 802-933-2667
+  classification: district
+  name: 'District Office #1'

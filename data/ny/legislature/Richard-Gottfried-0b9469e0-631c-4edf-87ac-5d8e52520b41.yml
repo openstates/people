@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '75'
-contact_details:
-- note: Capitol Office
-  address: LOB 822; Albany, NY 12248
-  voice: 518-455-4941
-- note: District Office
-  address: 214 West 29th Street; Suite 1002; New York, NY 10001
-  voice: 212-807-7900
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Richard-N-Gottfried
@@ -30,3 +23,11 @@ other_identifiers:
 sources:
 - url: http://assembly.state.ny.us/mem/Richard-N-Gottfried
 - url: https://assembly.state.ny.us/mem/Richard-N-Gottfried
+offices:
+- address: LOB 822; Albany, NY 12248
+  voice: 518-455-4941
+  classification: capitol
+- address: 214 West 29th Street; Suite 1002; New York, NY 10001
+  voice: 212-807-7900
+  classification: district
+  name: 'District Office #1'

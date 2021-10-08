@@ -10,13 +10,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '45'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 942849;Sacramento, CA 94249-0045
-  voice: 916-319-2045
-- note: District Office
-  address: 20750 Ventura Boulevard, Suite 101;Woodland Hills, CA 91364
-  voice: 818-346-4521
 links:
 - url: https://a45.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD45&inframe=N
@@ -26,3 +19,11 @@ other_identifiers:
   identifier: CAL000538
 sources:
 - url: http://assembly.ca.gov/assemblymembers
+offices:
+- address: P.O. Box 942849;Sacramento, CA 94249-0045
+  voice: 916-319-2045
+  classification: capitol
+- address: 20750 Ventura Boulevard, Suite 101;Woodland Hills, CA 91364
+  voice: 818-346-4521
+  classification: district
+  name: 'District Office #1'

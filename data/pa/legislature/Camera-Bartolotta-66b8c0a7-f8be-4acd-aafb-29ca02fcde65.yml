@@ -10,15 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '46'
-contact_details:
-- note: Capitol Office
-  address: Senate Box 203046;Harrisburg, PA 17120-3046;Room:;19 East Wing
-  voice: 717-787-1463
-  fax: 717-772-2108
-- note: District Office
-  address: 208 Second Street;Monongahela, PA 15063
-  voice: 724-258-3365
-  fax: 724-258-3368
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1698
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
@@ -33,3 +24,13 @@ sources:
 extras:
   facebook: http://facebook.com/senatorbartolotta
   twitter: http://twitter.com/senbartolotta
+offices:
+- address: Senate Box 203046;Harrisburg, PA 17120-3046;Room:;19 East Wing
+  voice: 717-787-1463
+  fax: 717-772-2108
+  classification: capitol
+- address: 208 Second Street;Monongahela, PA 15063
+  voice: 724-258-3365
+  fax: 724-258-3368
+  classification: district
+  name: 'District Office #1'

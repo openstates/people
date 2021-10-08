@@ -11,12 +11,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 7th Essex
-contact_details:
-- note: Capitol Office
-  address: 24 Beacon St.;Room 473G;Boston, MA, 02133
-  voice: 617-722-2070
-- note: District Office
-  address: PO Box 344;Salem, MA 01970;
 links:
 - url: https://malegislature.gov/Legislators/Profile/PFT1
 other_identifiers:
@@ -24,3 +18,10 @@ other_identifiers:
   identifier: MAL000416
 sources:
 - url: https://malegislature.gov/Legislators/Profile/PFT1
+offices:
+- address: 24 Beacon St.;Room 473G;Boston, MA, 02133
+  voice: 617-722-2070
+  classification: capitol
+- address: PO Box 344;Salem, MA 01970;
+  classification: district
+  name: 'District Office #1'

@@ -10,12 +10,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '1'
-contact_details:
-- note: Capitol Office
-  address: Room 415H State Capitol;Santa Fe, NM 87501
-  voice: 505-397-8848
-- note: District Office
-  address: PO Box 203;Farmington, NM 87499
 links:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSHAR
 - url: https://www.linkedin.com/in/william-sharer-71248033/
@@ -34,3 +28,10 @@ other_identifiers:
   identifier: NML000405
 sources:
 - url: http://www.nmlegis.gov/Members/Legislator?SponCode=SSHAR
+offices:
+- address: Room 415H State Capitol;Santa Fe, NM 87501
+  voice: 505-397-8848
+  classification: capitol
+- address: PO Box 203;Farmington, NM 87499
+  classification: district
+  name: 'District Office #1'

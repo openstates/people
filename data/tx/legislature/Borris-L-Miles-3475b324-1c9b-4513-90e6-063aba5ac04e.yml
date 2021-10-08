@@ -31,13 +31,6 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '13'
-contact_details:
-- note: Capitol Office
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
-  voice: 512-463-0113
-- note: District Office
-  address: 3300 Lyons Avenue, Suite 301 Houston, TX 77020
-  voice: 713-223-0387
 links:
 - url: https://senate.texas.gov/member.php?d=13
 other_identifiers:
@@ -51,3 +44,11 @@ other_identifiers:
   identifier: ocd-person/619d2cdd-788c-4582-ae13-85a44c32ae48
 sources:
 - url: https://senate.texas.gov/member.php?d=13
+offices:
+- address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  voice: 512-463-0113
+  classification: capitol
+- address: 3300 Lyons Avenue, Suite 301 Houston, TX 77020
+  voice: 713-223-0387
+  classification: district
+  name: 'District Office #1'

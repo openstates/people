@@ -9,13 +9,6 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '104'
-contact_details:
-- note: Capitol Office
-  address: 420D Blatt Bldg., Columbia, SC 29201
-  voice: 803-212-6918
-- note: District Office
-  address: 4487 Lake Circle, Little River, SC 29566
-  voice: 843-458-0844
 links:
 - url: http://www.scstatehouse.gov/member.php?code=0088636353
 other_names:
@@ -23,3 +16,11 @@ other_names:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=H
 - url: http://www.scstatehouse.gov/member.php?code=0088636353
+offices:
+- address: 420D Blatt Bldg., Columbia, SC 29201
+  voice: 803-212-6918
+  classification: capitol
+- address: 4487 Lake Circle, Little River, SC 29566
+  voice: 843-458-0844
+  classification: district
+  name: 'District Office #1'
