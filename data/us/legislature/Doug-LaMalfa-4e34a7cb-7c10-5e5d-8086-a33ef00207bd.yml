@@ -35,6 +35,22 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-1
+offices:
+- classification: capitol
+  address: 408 Cannon House Office Building Washington DC 20515-0501
+  voice: 202-225-3076
+- classification: district
+  address: 2399 Rickenbacker Way; Auburn, CA 95602
+  voice: 530-878-5035
+  name: 'District Office #1'
+- classification: district
+  address: 120 Independence Cir B; Chico, CA 95973-4925
+  voice: 530-343-1000
+  name: 'District Office #2'
+- classification: district
+  address: 2885 Churn Creek Rd. Suite C; Redding, CA 96002
+  voice: 530-223-5898
+  name: 'District Office #3'
 links:
 - url: https://lamalfa.house.gov
   note: website
@@ -73,19 +89,3 @@ other_identifiers:
   identifier: kg:/m/0288tnx
 sources:
 - url: https://theunitedstates.io/
-offices:
-- address: 408 Cannon House Office Building Washington DC 20515-0501
-  voice: 202-225-3076
-  classification: capitol
-- address: 2399 Rickenbacker Way; Auburn, CA 95602
-  voice: 530-878-5035
-  classification: district
-  name: 'District Office #1'
-- address: 120 Independence Cir B; Chico, CA 95973-4925
-  voice: 530-343-1000
-  classification: district
-  name: 'District Office #2'
-- address: 2885 Churn Creek Rd. Suite C; Redding, CA 96002
-  voice: 530-223-5898
-  classification: district
-  name: 'District Office #3'
