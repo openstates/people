@@ -35,6 +35,23 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IL-17
+offices:
+- classification: capitol
+  address: 1233 Longworth House Office Building Washington DC 20515-1317
+  voice: 202-225-5905
+- classification: district
+  address: 820 SW Adams St; Peoria, IL 61602
+  voice: 309-966-1813
+  name: 'District Office #1'
+- classification: district
+  address: 2401 4th Ave.; Rock Island, IL 61201
+  voice: 309-786-3406
+  fax: 309-786-3720
+  name: 'District Office #2'
+- classification: district
+  address: 119 N. Church St. Suite 207 & 208; Rockford, IL 61101
+  voice: 815-968-8011
+  name: 'District Office #3'
 links:
 - url: https://bustos.house.gov
   note: website
@@ -73,20 +90,3 @@ other_identifiers:
   identifier: kg:/m/0jwwtrm
 sources:
 - url: https://theunitedstates.io/
-offices:
-- address: 1233 Longworth House Office Building Washington DC 20515-1317
-  voice: 202-225-5905
-  classification: capitol
-- address: 820 SW Adams St; Peoria, IL 61602
-  voice: 309-966-1813
-  classification: district
-  name: 'District Office #1'
-- address: 2401 4th Ave.; Rock Island, IL 61201
-  voice: 309-786-3406
-  fax: 309-786-3720
-  classification: district
-  name: 'District Office #2'
-- address: 119 N. Church St. Suite 207 & 208; Rockford, IL 61101
-  voice: 815-968-8011
-  classification: district
-  name: 'District Office #3'

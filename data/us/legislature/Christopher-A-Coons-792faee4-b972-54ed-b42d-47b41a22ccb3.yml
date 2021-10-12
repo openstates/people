@@ -26,6 +26,20 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Delaware
+offices:
+- classification: capitol
+  address: 218 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-5042
+- classification: district
+  address: 500 W. Loockerman St. Suite 450; Dover, DE 19904
+  voice: 302-736-5601
+  fax: 302-736-5609
+  name: 'District Office #1'
+- classification: district
+  address: 1105 N. Market St. Suite 100; Wilmington, DE 19801-1233
+  voice: 302-573-6345
+  fax: 302-573-6351
+  name: 'District Office #2'
 links:
 - url: https://www.coons.senate.gov
   note: website
@@ -66,17 +80,3 @@ other_identifiers:
   identifier: kg:/m/082d3d
 sources:
 - url: https://theunitedstates.io/
-offices:
-- address: 218 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-5042
-  classification: capitol
-- address: 500 W. Loockerman St. Suite 450; Dover, DE 19904
-  voice: 302-736-5601
-  fax: 302-736-5609
-  classification: district
-  name: 'District Office #1'
-- address: 1105 N. Market St. Suite 100; Wilmington, DE 19801-1233
-  voice: 302-573-6345
-  fax: 302-573-6351
-  classification: district
-  name: 'District Office #2'

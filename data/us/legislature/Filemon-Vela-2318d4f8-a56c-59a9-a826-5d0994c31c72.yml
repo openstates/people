@@ -35,6 +35,28 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TX-34
+offices:
+- classification: capitol
+  address: 307 Cannon House Office Building Washington DC 20515-4334
+  voice: 202-225-9901
+- classification: district
+  address: 500 E. Main; Alice, TX 78332
+  voice: 361-230-9776
+  name: 'District Office #1'
+- classification: district
+  address: 800 N Expressway Suite 9; Brownsville, TX 78521-1482
+  voice: 956-544-8352
+  name: 'District Office #2'
+- classification: district
+  address: 1390 W. Expressway 83; San Benito, TX 78586
+  voice: 956-276-4497
+  fax: 956-276-4603
+  name: 'District Office #3'
+- classification: district
+  address: 301 W. Railroad; Weslaco, TX 78596
+  voice: 956-520-8273
+  fax: 956-520-8277
+  name: 'District Office #4'
 links:
 - url: https://vela.house.gov
   note: website
@@ -70,25 +92,3 @@ other_identifiers:
   identifier: kg:/m/0ll43fz
 sources:
 - url: https://theunitedstates.io/
-offices:
-- address: 307 Cannon House Office Building Washington DC 20515-4334
-  voice: 202-225-9901
-  classification: capitol
-- address: 500 E. Main; Alice, TX 78332
-  voice: 361-230-9776
-  classification: district
-  name: 'District Office #1'
-- address: 800 N Expressway Suite 9; Brownsville, TX 78521-1482
-  voice: 956-544-8352
-  classification: district
-  name: 'District Office #2'
-- address: 1390 W. Expressway 83; San Benito, TX 78586
-  voice: 956-276-4497
-  fax: 956-276-4603
-  classification: district
-  name: 'District Office #3'
-- address: 301 W. Railroad; Weslaco, TX 78596
-  voice: 956-520-8273
-  fax: 956-520-8277
-  classification: district
-  name: 'District Office #4'

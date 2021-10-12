@@ -71,6 +71,23 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: ID-2
+offices:
+- classification: capitol
+  address: 2084 Rayburn House Office Building Washington DC 20515-1202
+  voice: 202-225-5531
+- classification: district
+  address: 802 W. Bannock Suite 600; Boise, ID 83702
+  voice: 208-334-1953
+  fax: 208-334-9533
+  name: 'District Office #1'
+- classification: district
+  address: 410 Memorial Dr. Suite 203; Idaho Falls, ID 83402
+  voice: 208-523-6701
+  name: 'District Office #2'
+- classification: district
+  address: 650 Addison Ave W Suite 1078; Twin Falls, ID 83301-5851
+  voice: 208-734-7219
+  name: 'District Office #3'
 links:
 - url: https://simpson.house.gov
   note: website
@@ -109,20 +126,3 @@ other_identifiers:
   identifier: kg:/m/0255tn
 sources:
 - url: https://theunitedstates.io/
-offices:
-- address: 2084 Rayburn House Office Building Washington DC 20515-1202
-  voice: 202-225-5531
-  classification: capitol
-- address: 802 W. Bannock Suite 600; Boise, ID 83702
-  voice: 208-334-1953
-  fax: 208-334-9533
-  classification: district
-  name: 'District Office #1'
-- address: 410 Memorial Dr. Suite 203; Idaho Falls, ID 83402
-  voice: 208-523-6701
-  classification: district
-  name: 'District Office #2'
-- address: 650 Addison Ave W Suite 1078; Twin Falls, ID 83301-5851
-  voice: 208-734-7219
-  classification: district
-  name: 'District Office #3'
