@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Bristol
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 542; Boston, MA 02133
+  voice: 617-722-2488
+  fax: 617-722-2390
 links:
 - url: https://malegislature.gov/Legislators/Profile/FJB1
 other_identifiers:
@@ -23,8 +28,8 @@ other_identifiers:
   identifier: ocd-person/3c611229-c99e-4719-ac22-cda840483579
 sources:
 - url: https://malegislature.gov/Legislators/Profile/FJB1
-offices:
-- address: 24 Beacon St.;Room 542;Boston, MA, 02133
-  voice: 617-722-2488
-  fax: 617-722-2390
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/FJB1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Third Assistant Minority Leader
+  member code: FJB1

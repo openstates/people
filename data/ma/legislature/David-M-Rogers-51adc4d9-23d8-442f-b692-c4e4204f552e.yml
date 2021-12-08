@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 24th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 544; Boston, MA 02133
+  voice: 617-722-2637
+  fax: 617-626-0275
 links:
 - url: https://malegislature.gov/Legislators/Profile/DMR1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/e2a61a9d-eb11-47d9-afd8-22fcb6f8d267
 sources:
 - url: https://malegislature.gov/Legislators/Profile/DMR1
-offices:
-- address: 24 Beacon St.;Room 544;Boston, MA, 02133
-  voice: 617-722-2637
-  fax: 617-626-0275
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DMR1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: DMR1

@@ -11,6 +11,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Plymouth
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 39; Boston, MA 02133
+  voice: 617-722-2014
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJM2
 other_identifiers:
@@ -18,7 +22,7 @@ other_identifiers:
   identifier: MAL000479
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MJM2
-offices:
-- address: 24 Beacon St.;Room 39;Boston, MA, 02133
-  voice: 617-722-2014
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJM2
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MJM2

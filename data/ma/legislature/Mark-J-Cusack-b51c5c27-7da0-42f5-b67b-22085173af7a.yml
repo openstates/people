@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 5th Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 34; Boston, MA 02133
+  voice: 617-722-2320
+  fax: 617-722-2415
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJC1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/a7a32f33-b076-4f6b-b0f5-06e8e8bb399a
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MJC1
-offices:
-- address: 24 Beacon St.;Room 34;Boston, MA, 02133
-  voice: 617-722-2320
-  fax: 617-722-2415
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJC1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MJC1

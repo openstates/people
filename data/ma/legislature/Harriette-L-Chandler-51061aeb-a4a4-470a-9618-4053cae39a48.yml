@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 333; Boston, MA 02133
+  voice: 617-722-1544
+  fax: 617-722-1357
 links:
 - url: https://malegislature.gov/Legislators/Profile/HLC0
 other_identifiers:
@@ -18,8 +23,8 @@ other_identifiers:
   identifier: MAL000005
 sources:
 - url: https://malegislature.gov/Legislators/Profile/HLC0
-offices:
-- address: 24 Beacon St.;Room 333;Boston, MA, 02133
-  voice: 617-722-1544
-  fax: 617-722-1357
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/HLC0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Senate President Emerita
+  member code: HLC0

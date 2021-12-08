@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 11th Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 167; Boston, MA 02133
+  voice: 617-722-2230
 links:
 - url: https://malegislature.gov/Legislators/Profile/EAM1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/c3ea5baf-021d-4db6-9d59-9146beaa914c
 sources:
 - url: https://malegislature.gov/Legislators/Profile/EAM1
-offices:
-- address: 24 Beacon St.;Room 238;Boston, MA, 02133
-  voice: 617-722-2380
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/EAM1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: EAM1

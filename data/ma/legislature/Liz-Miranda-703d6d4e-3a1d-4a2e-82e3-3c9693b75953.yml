@@ -11,11 +11,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 5th Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 236; Boston, MA 02133
+  voice: 617-722-2430
 links:
 - url: https://malegislature.gov/Legislators/Profile/L_M2
 sources:
 - url: https://malegislature.gov/Legislators/Profile/L_M2
-offices:
-- address: 24 Beacon St.;Room 236;Boston, MA, 02133
-  voice: 617-722-2430
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/L_M2
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: L_M2

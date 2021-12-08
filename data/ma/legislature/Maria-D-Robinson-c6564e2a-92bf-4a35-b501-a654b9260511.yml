@@ -9,11 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 6th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 22; Boston, MA 02133
+  voice: 617-722-2140
 links:
 - url: https://malegislature.gov/Legislators/Profile/MDR1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MDR1
-offices:
-- address: 24 Beacon St.;Room 22;Boston, MA, 02133
-  voice: 617-722-2140
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MDR1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MDR1

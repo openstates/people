@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 36; Boston, MA 02133
+  voice: 617-722-2370
 links:
 - url: https://malegislature.gov/Legislators/Profile/djr1
 other_identifiers:
@@ -25,7 +29,7 @@ other_identifiers:
   identifier: ocd-person/d4a36444-3f7c-4a7b-975e-879353b6e453
 sources:
 - url: https://malegislature.gov/Legislators/Profile/djr1
-offices:
-- address: 24 Beacon St.;Room 36;Boston, MA, 02133
-  voice: 617-722-2370
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/djr1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: djr1

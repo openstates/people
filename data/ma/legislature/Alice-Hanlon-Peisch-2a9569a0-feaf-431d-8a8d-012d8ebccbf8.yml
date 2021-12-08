@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 14th Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 473G; Boston, MA 02133
+  voice: 617-722-2070
 links:
 - url: https://malegislature.gov/Legislators/Profile/AHP1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/9ff50f03-e7dc-407d-afd9-16cae5c80667
 sources:
 - url: https://malegislature.gov/Legislators/Profile/AHP1
-offices:
-- address: 24 Beacon St.;Room 473G;Boston, MA, 02133
-  voice: 617-722-2070
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AHP1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: AHP1

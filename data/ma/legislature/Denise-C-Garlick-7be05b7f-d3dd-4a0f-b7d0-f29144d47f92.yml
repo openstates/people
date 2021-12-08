@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 13th Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 238; Boston, MA 02133
+  voice: 617-722-2380
+  fax: 617-626-0197
 links:
 - url: https://malegislature.gov/Legislators/Profile/DCG1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/06b9febe-c064-4b80-b659-e9ad8bf2ff0f
 sources:
 - url: https://malegislature.gov/Legislators/Profile/DCG1
-offices:
-- address: 24 Beacon St.;Room 238;Boston, MA, 02133
-  voice: 617-722-2380
-  fax: 617-626-0197
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DCG1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: DCG1

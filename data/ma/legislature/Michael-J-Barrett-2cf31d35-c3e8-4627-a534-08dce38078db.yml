@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Third Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 109-D; Boston, MA 02133
+  voice: 617-722-1572
+  fax: 617-626-0898
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJB0
 other_identifiers:
@@ -22,8 +27,8 @@ other_identifiers:
   identifier: MAL000367
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MJB0
-offices:
-- address: 24 Beacon St.;Room 109-D;Boston, MA, 02133
-  voice: 617-722-1572
-  fax: 617-626-0898
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJB0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Assistant Majority Leader
+  member code: MJB0

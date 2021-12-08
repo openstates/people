@@ -11,6 +11,10 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Plymouth and Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 419; Boston, MA 02133
+  voice: 617-722-1646
 links:
 - url: https://malegislature.gov/Legislators/Profile/PMO
 other_identifiers:
@@ -20,7 +24,8 @@ other_identifiers:
   identifier: MAL000569
 sources:
 - url: https://malegislature.gov/Legislators/Profile/PMO
-offices:
-- address: 24 Beacon St.;Room 419;Boston, MA, 02133
-  voice: 617-722-1646
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PMO
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Assistant Minority Leader
+  member code: PMO

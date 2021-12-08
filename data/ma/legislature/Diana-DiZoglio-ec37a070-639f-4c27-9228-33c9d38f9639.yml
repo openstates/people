@@ -17,6 +17,11 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Essex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 416-B; Boston, MA 02133
+  voice: 617-722-1604
+  fax: 617-626-0191
 links:
 - url: https://malegislature.gov/Legislators/Profile/D_D0
 other_identifiers:
@@ -28,8 +33,7 @@ other_identifiers:
   identifier: ocd-person/a7896d17-c4a8-4f48-9c9f-08d459f446b5
 sources:
 - url: https://malegislature.gov/Legislators/Profile/D_D0
-offices:
-- address: 24 Beacon St.;Room 416-B;Boston, MA, 02133
-  voice: 617-722-1604
-  fax: 617-626-0191
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/D_D0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: D_D0
