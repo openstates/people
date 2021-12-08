@@ -11,7 +11,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '30'
-- type: upper
+- end_date: '2021-08-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '30'
 links:
@@ -27,7 +28,4 @@ other_identifiers:
   identifier: AZL000361
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=S
-offices:
-- address: Senate;1700 West Washington;Room 313;Phoenix, AZ 85007
-  voice: 602-926-4864
-  classification: capitol
+- url: https://www.azleg.gov/memberroster/?body=S

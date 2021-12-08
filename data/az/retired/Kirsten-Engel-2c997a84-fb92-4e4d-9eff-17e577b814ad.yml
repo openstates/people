@@ -12,9 +12,16 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '10'
 - start_date: 2021-01-10
+  end_date: '2021-09-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '10'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '10'
+offices:
+- classification: capitol
+  address: Senate;1700 West Washington;Phoenix, AZ 85007
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1878
 - url: https://www.linkedin.com/in/kirsten-engel-19b41312/
@@ -30,7 +37,4 @@ other_identifiers:
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
 - url: http://www.azleg.gov/MemberRoster/?body=S
-offices:
-- address: Senate;1700 West Washington;Room 315;Phoenix, AZ 85007
-  voice: 602-926-5178
-  classification: capitol
+- url: https://www.azleg.gov/memberroster/?body=S
