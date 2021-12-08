@@ -10,17 +10,21 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '13'
+offices:
+- classification: capitol
+  address: Capitol OfficeP.O. Box 942849, Sacramento, CA 94249-0004
+  voice: 916-319-2004
+- classification: district
+  address: 31 East Channel Street, Suite 306, Stockton, CA 95202
+  voice: 209-948-7479
+- classification: district
+  address: 31 East Channel Street, Suite 306;Stockton, CA 95202
+  voice: 209-948-7479
+  name: 'District Office #1'
 links:
 - url: https://a13.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD13&inframe=N
   note: Contact Form
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-offices:
-- address: P.O. Box 942849;Sacramento, CA 94249-0013
-  voice: 916-319-2013
-  classification: capitol
-- address: 31 East Channel Street, Suite 306;Stockton, CA 95202
-  voice: 209-948-7479
-  classification: district
-  name: 'District Office #1'
+- url: https://www.assembly.ca.gov/assemblymembers
