@@ -7,9 +7,17 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/stephens-mic
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2021-08-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '165'
+offices:
+- classification: capitol
+  address: 604-A Coverdell Legislative Office Building; Atlanta, GA 30334
+  voice: 404-656-0265
+- classification: district
+  address: PO Box 5485; Savannah, Ga 31414
+  voice: 912-661-1733
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=743&Session=27
 - url: https://www.legis.ga.gov/members/house/743?session=1029
@@ -34,11 +42,3 @@ extras:
   occupation: Retired Educator
   press: https://house-press.com/representative/Mickey-Stephens
   spouse: Gloria
-offices:
-- address: 604-A Coverdell Legislative Office Building; Atlanta, GA 30334
-  voice: 404-656-0265
-  classification: capitol
-- address: PO Box 5485; Savannah, Ga 31414
-  voice: 912-661-1733
-  classification: district
-  name: 'District Office #1'
