@@ -10,10 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '59'
+offices:
+- classification: capitol
+  address: Capitol OfficeP.O. Box 942849, Sacramento, CA 94249-0004
+  voice: 916-319-2004
+- classification: district
+  address: 700 Exposition Park Drive, Los Angeles, CA 90037
+  voice: 213-744-2111
+- classification: district
+  address: 700 Exposition Park Drive;Los Angeles, CA 90037
+  voice: 213-744-2111
+  name: 'District Office #1'
 links:
 - url: https://a59.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD59&inframe=N
   note: Contact Form
+other_names:
+- name: Reginald Jones-Sawyer
+- name: Reginald Byron Jones-Sawyer Sr.
+- name: Reginald Byron Jones-Sawyer Sr
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000380
@@ -23,15 +38,4 @@ other_identifiers:
   identifier: CAL000533
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_names:
-- name: Reginald Jones-Sawyer
-- name: Reginald Byron Jones-Sawyer Sr.
-- name: Reginald Byron Jones-Sawyer Sr
-offices:
-- address: P.O. Box 942849;Sacramento, CA 94249-0059
-  voice: 916-319-2059
-  classification: capitol
-- address: 700 Exposition Park Drive;Los Angeles, CA 90037
-  voice: 213-744-2111
-  classification: district
-  name: 'District Office #1'
+- url: https://www.assembly.ca.gov/assemblymembers
