@@ -2,7 +2,7 @@ id: ocd-person/f8bb88ef-0c5c-45fd-b4e5-397c14899892
 name: Sean Matthews
 given_name: Sean
 family_name: Matthews
-email: Sean.Matthews@state.de.us
+email: Sean.Matthews@delaware.gov
 image: https://legis.delaware.gov/images/default-source/default-album/SeanMatthews1.jpg?sfvrsn=0
 party:
 - name: Democratic
@@ -10,16 +10,20 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '10'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4351
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=318
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=318
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000126
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4351
-  classification: capitol
+- url: https://legis.delaware.gov/json/House/GetRepresentatives
+- url: https://legis.delaware.gov/LegislatorDetail?personId=318

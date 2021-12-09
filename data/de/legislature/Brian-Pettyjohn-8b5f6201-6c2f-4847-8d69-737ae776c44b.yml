@@ -2,7 +2,7 @@ id: ocd-person/8b5f6201-6c2f-4847-8d69-737ae776c44b
 name: Brian Pettyjohn
 given_name: Brian
 family_name: Pettyjohn
-email: Brian.Pettyjohn@state.de.us
+email: Brian.Pettyjohn@delaware.gov
 image: https://legis.delaware.gov/images/default-source/Legislators/BrianPettyjohn.jpg?sfvrsn=2
 party:
 - name: Republican
@@ -10,16 +10,22 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '19'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4117
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=9
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=9
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000079
 sources:
 - url: https://legis.delaware.gov/Senate
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4117
-  classification: capitol
+- url: https://legis.delaware.gov/json/Senate/GetSenators
+- url: https://legis.delaware.gov/LegislatorDetail?personId=9
+extras:
+  title: Senate Minority Whip

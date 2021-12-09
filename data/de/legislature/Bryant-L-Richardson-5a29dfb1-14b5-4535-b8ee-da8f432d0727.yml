@@ -2,7 +2,7 @@ id: ocd-person/5a29dfb1-14b5-4535-b8ee-da8f432d0727
 name: Bryant L. Richardson
 given_name: Bryant L.
 family_name: Richardson
-email: Bryant.Richardson@state.de.us
+email: Bryant.Richardson@delaware.gov
 image: https://legis.delaware.gov/images/default-source/Legislators/BryantRichardson.jpg?sfvrsn=2
 party:
 - name: Republican
@@ -10,16 +10,20 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '21'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4298
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=10
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=10
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000130
 sources:
 - url: https://legis.delaware.gov/Senate
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4298
-  classification: capitol
+- url: https://legis.delaware.gov/json/Senate/GetSenators
+- url: https://legis.delaware.gov/LegislatorDetail?personId=10
