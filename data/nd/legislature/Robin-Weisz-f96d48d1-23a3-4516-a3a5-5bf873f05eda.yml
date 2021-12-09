@@ -10,10 +10,20 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '14'
+offices:
+- classification: district
+  address: 2639 First Street SE, Hurdsfield, ND 58451-9029
+  voice: 701-962-3799
+- classification: district
+  address: 2639 First Street SE;Hurdsfield, ND;58451-9029
+  voice: 701-962-3299
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-robin-weisz
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-robin-weisz
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000077
@@ -25,10 +35,7 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-robin-weisz
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-robin-weisz
-offices:
-- voice: 701-962-3799
-  classification: capitol
-- address: 2639 First Street SE;Hurdsfield, ND;58451-9029
-  voice: 701-962-3299
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-robin-weisz
+extras:
+  bio info: []

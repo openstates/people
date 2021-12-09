@@ -10,14 +10,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '3'
+offices:
+- classification: district
+  address: 9801 Highway 52 South, Minot, ND 58701-2426
+- classification: district
+  address: 9801 Highway 52 South;Minot, ND;58701-2426
+  voice: 701-833-4752
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-bob-paulson
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson
+  note: homepage
 sources:
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-bob-paulson
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson
-offices:
-- address: 9801 Highway 52 South;Minot, ND;58701-2426
-  voice: 701-833-4752
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson
+extras:
+  bio info: []
+  Cell phone: 701-833-4752

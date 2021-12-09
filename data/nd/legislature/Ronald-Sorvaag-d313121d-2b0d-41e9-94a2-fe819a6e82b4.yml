@@ -10,10 +10,19 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '45'
+offices:
+- classification: district
+  address: 3402 Birdie Street North, Fargo, ND 58102-1201
+- classification: district
+  address: 3402 Birdie Street North;Fargo, ND;58102-1201
+  voice: 701-361-2156
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/senate/senator-ronald-sorvaag
 - url: http://www.legis.nd.gov/assembly/66-2019/members/senate/senator-ronald-sorvaag
 - url: http://www.legis.nd.gov/assembly/67-2021/members/senate/senator-ronald-sorvaag
+- url: https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-ronald-sorvaag
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000047
@@ -25,8 +34,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/senate/senator-ronald-sorvaag
 - url: http://www.legis.nd.gov/assembly/66-2019/members/senate/senator-ronald-sorvaag
 - url: http://www.legis.nd.gov/assembly/67-2021/members/senate/senator-ronald-sorvaag
-offices:
-- address: 3402 Birdie Street North;Fargo, ND;58102-1201
-  voice: 701-361-2156
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-ronald-sorvaag
+extras:
+  bio info: []
+  Cell phone: 701-361-2156
