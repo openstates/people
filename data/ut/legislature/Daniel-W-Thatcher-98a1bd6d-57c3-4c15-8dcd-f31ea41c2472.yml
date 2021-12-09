@@ -10,8 +10,23 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '12'
+offices:
+- classification: district
+  address: 6352 W CITY VISTAS WAY, WEST VALLEY CITY, UT, 84128
+  voice: 801-759-4746
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/daniel-thatcher
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=THATCDW
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist12.pdf
+  note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFITHATCDW.pdf
+  note: conflict of interest 0
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409399
+  note: finance report
+- url: https://senate.utah.gov/sen/THATCDW/
+  note: homepage
 other_names:
 - name: Thatcher, Daniel W.
 - name: Thatcher, D.
@@ -22,12 +37,13 @@ other_identifiers:
   identifier: UTL000183
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/THATCDW/
 extras:
-  links:
-  - https://le.utah.gov/senate/CofI/COFITHATCDW.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409399
-offices:
-- address: 6352 W CITY VISTAS WAY, WEST VALLEY CITY, UT, 84128
-  voice: 801-759-4746
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2011
+  profession: Independent Electronics and Low Voltage Wiring Contractor
+  education: Self-educated
+  counties represented:
+  - Salt Lake
+  - Tooele
+  cell phone: 801-759-4746

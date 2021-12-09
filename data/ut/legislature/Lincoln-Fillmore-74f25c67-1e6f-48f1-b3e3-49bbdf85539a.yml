@@ -10,8 +10,23 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '10'
+offices:
+- classification: district
+  address: 10167 S 1190 W, SOUTH JORDAN, UT, 84095
+  voice: 385-831-8902
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/lincoln-fillmore
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=FILLML
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist10.pdf
+  note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIFILLML.pdf
+  note: conflict of interest 0
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413349
+  note: finance report
+- url: https://senate.utah.gov/sen/FILLML/
+  note: homepage
 other_names:
 - name: Fillmore, Lincoln
 - name: Fillmore, L.
@@ -20,12 +35,12 @@ other_identifiers:
   identifier: UTL000276
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/FILLML/
 extras:
-  links:
-  - https://le.utah.gov/senate/CofI/COFIFILLML.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413349
-offices:
-- address: 10167 S 1190 W, SOUTH JORDAN, UT, 84095
-  voice: 385-831-8902
-  classification: district
-  name: 'District Office #1'
+  service start: Appointed January 5, 2016
+  profession: Small Business Owner
+  education: B.S., Mass Communication, University of Utah
+  counties represented:
+  - Salt Lake
+  cell phone: 385-831-8902

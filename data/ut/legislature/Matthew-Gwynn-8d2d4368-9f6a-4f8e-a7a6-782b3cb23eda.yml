@@ -11,17 +11,31 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '29'
+offices:
+- classification: district
+  address: 2595 N 2675 W, Farr West, UT, 84404
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/GWYNNM
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=GWYNNM
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist29.pdf
+  note: district demographics
+- url: http://house.utah.gov/rep/GWYNNM/
+  note: homepage
 other_names:
 - name: Gwynn, M.
 - name: Gwynn, Matthew
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/GWYNNM/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: 2595 N 2675 W, Farr West, UT, 84404
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Law Enforcement
+  education: M.A. Northwestern University, Public Policy and Admin; B.S. Weber State
+    University, Political Science
+  counties represented:
+  - Box Elder
+  - Weber
+  cell phone: 385-358-3266

@@ -10,8 +10,25 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '22'
+offices:
+- classification: district
+  address: 3271 E 1875 N, Layton, UT, 84040
+  voice: 801-593-1776
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/stuart-adams
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ADAMSJS
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist22.pdf
+  note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIADAMSJS2.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/senate/CofI/COFIADAMSJS.pdf
+  note: conflict of interest 1
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1408736
+  note: finance report
+- url: https://senate.utah.gov/sen/ADAMSJS/
+  note: homepage
 other_names:
 - name: Adams, J. S.
 - name: Adams, J. Stuart
@@ -22,13 +39,13 @@ other_identifiers:
   identifier: UTL000250
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/ADAMSJS/
 extras:
-  links:
-  - https://le.utah.gov/senate/CofI/COFIADAMSJS2.pdf
-  - https://le.utah.gov/senate/CofI/COFIADAMSJS.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1408736
-offices:
-- address: 3271 E 1875 N, Layton, UT, 84040
-  voice: 801-593-1776
-  classification: district
-  name: 'District Office #1'
+  service start: '2010'
+  profession: Businessman
+  education: B.A., Business Finance, University of Utah
+  counties represented:
+  - Davis
+  home phone: 801-593-1776
+  title: President

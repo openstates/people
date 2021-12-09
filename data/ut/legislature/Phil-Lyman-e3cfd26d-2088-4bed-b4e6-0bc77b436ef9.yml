@@ -11,19 +11,41 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '73'
+offices:
+- classification: district
+  address: 333 S MAIN ST, BLANDING, UT, 84511
+  voice: 435-459-2800
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/LYMANP
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=LYMANP
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist73.pdf
+  note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFILYMANP.pdf
+  note: conflict of interest 0
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415153
+  note: finance report
+- url: http://house.utah.gov/rep/LYMANP/
+  note: homepage
 other_names:
 - name: Lyman, Phil
 - name: Lyman, P.
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/LYMANP/
 extras:
-  links:
-  - https://le.utah.gov/house2/CofI/COFILYMANP.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415153
-offices:
-- address: 333 S MAIN ST, BLANDING, UT, 84511
-  voice: 435-459-2800
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2019
+  profession: Accountant
+  education: B.S., Accounting, Brigham Young University; M.S., Accounting, University
+    of Utah
+  counties represented:
+  - Beaver
+  - Garfield
+  - Kane
+  - Piute
+  - San Juan
+  - Sevier
+  - Wayne
+  cell phone: 435-459-2800

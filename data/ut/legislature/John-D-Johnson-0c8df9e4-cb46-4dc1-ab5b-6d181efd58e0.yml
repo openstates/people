@@ -11,18 +11,34 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '19'
+offices:
+- classification: district
+  address: 870 E 3550 N, Ogden, UT, 84414
+- classification: district
+  address: 870 e 3550 n, Ogden, UT, 84414
+  voice: 385-272-7428
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/john-johnson
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=JOHNSJD
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist19.pdf
+  note: district demographics
+- url: https://senate.utah.gov/sen/JOHNSJD/
+  note: homepage
 other_names:
 - name: Johnson, John D.
 - name: Johnson, J.
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/JOHNSJD/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: 870 e 3550 n, Ogden, UT, 84414
-  voice: 385-272-7428
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Professor
+  education: Ph.D.
+  counties represented:
+  - Morgan
+  - Summit
+  - Weber
+  cell phone: 385-272-7428

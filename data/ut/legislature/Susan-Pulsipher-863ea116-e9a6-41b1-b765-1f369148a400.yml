@@ -10,8 +10,31 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '50'
+offices:
+- classification: district
+  address: 1179 CHAPEL RIDGE DR, SOUTH JORDAN, UT, 84095
+- classification: district
+  address: 1179 CHAPEL RIDGE RD, SOUTH JORDAN, UT, 84095
+  voice: 801-446-6334
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/PULSIS
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PULSIS
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist50.pdf
+  note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFIPULSIS1.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/house2/CofI/COFIPULSIS.pdf
+  note: conflict of interest 1
+- url: http://le.utah.gov/house2/CofI/PULSIS1.pdf
+  note: conflict of interest 2
+- url: http://le.utah.gov/house2/CofI/PULSIS.pdf
+  note: conflict of interest 3
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413350
+  note: finance report
+- url: http://house.utah.gov/rep/PULSIS/
+  note: homepage
 other_names:
 - name: Pulsipher, S.
 - name: Pulsipher, Susan
@@ -20,15 +43,13 @@ other_identifiers:
   identifier: UTL000296
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/PULSIS/
 extras:
-  links:
-  - https://le.utah.gov/house2/CofI/COFIPULSIS1.pdf
-  - https://le.utah.gov/house2/CofI/COFIPULSIS.pdf
-  - http://le.utah.gov/house2/CofI/PULSIS1.pdf
-  - http://le.utah.gov/house2/CofI/PULSIS.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413350
-offices:
-- address: 1179 CHAPEL RIDGE RD, SOUTH JORDAN, UT, 84095
-  voice: 801-446-6334
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2017
+  profession: Homemaker, Education
+  education: B.S. Education, M.Ed. Education Leadership, Policy emphasis, Brigham
+    Young University
+  counties represented:
+  - Salt Lake
+  home phone: 801-446-6334

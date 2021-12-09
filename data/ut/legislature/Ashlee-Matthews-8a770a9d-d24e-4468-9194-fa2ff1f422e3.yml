@@ -11,17 +11,28 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '38'
+offices:
+- classification: district
+  address: 350 N. State Street, Suite 350, Salt Lake City, UT, 84114
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/MATTHA
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MATTHA
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist38.pdf
+  note: district demographics
+- url: http://house.utah.gov/rep/MATTHA/
+  note: homepage
 other_names:
 - name: Matthews, A.
 - name: Matthews, Ashlee
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/MATTHA/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: 350 N. State Street, Suite 350, Salt Lake City, UT, 84114
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Office Manager
+  counties represented:
+  - Salt Lake
+  cell phone: 385-264-2024
