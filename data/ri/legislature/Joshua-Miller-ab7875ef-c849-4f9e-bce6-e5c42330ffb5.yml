@@ -6,14 +6,25 @@ gender: Male
 email: sen-miller@rilegislature.gov
 image: http://www.rilegislature.gov/Senators/Pictures/miller.jpg
 party:
-- name: Democratic
+- end_date: '2021-12-09'
+  name: Democratic
+- name: Republican
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '28'
+offices:
+- classification: district
+  address: 50 Fieldstone Drive, Coventry, RI 02816
+  voice: 401-276-5568
+- classification: district
+  address: 41 Talbot Manor, Cranston 02905
+  voice: 401-276-5582
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/senators/Algiere/
 - url: http://www.rilegislature.gov/senators/algiere/default.aspx
+- url: http://www.rilegislature.gov/senators/miller/Pages/Biography.aspx
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000028
@@ -23,10 +34,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/senators/Miller/
 - url: http://www.rilegislature.gov/senators/miller/default.aspx
+- url: http://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/senators/miller/Pages/Biography.aspx
+  note: Image Source
 extras:
-  town_represented: Cranston, Providence
-offices:
-- address: 41 Talbot Manor, Cranston 02905
-  voice: 401-276-5582
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Coventry

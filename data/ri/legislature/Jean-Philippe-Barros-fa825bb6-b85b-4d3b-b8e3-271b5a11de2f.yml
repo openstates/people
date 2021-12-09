@@ -11,9 +11,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '59'
+offices:
+- classification: district
+  address: 1 William Street, Pawtucket, RI 02860
+  voice: 401-222-2466
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
+- url: http://www.rilegislature.gov/representatives/barros/default.aspx
+other_names:
+- name: Jean-Phillipe Barros
+- name: Jean-Philippe Barros
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000141
@@ -21,13 +30,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/representatives/Barros/
 - url: http://www.rilegislature.gov/representatives/barros/default.aspx
+- url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/representatives/barros/default.aspx
+  note: Image Source
 extras:
-  town_represented: Pawtucket
-other_names:
-- name: Jean-Phillipe Barros
-- name: Jean-Philippe Barros
-offices:
-- address: 1 William Street, Pawtucket, RI 02860
-  voice: 401-222-2466
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Pawtucket

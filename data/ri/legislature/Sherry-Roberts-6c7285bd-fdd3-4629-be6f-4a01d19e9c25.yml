@@ -11,9 +11,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '29'
+offices:
+- classification: district
+  address: 22 Seminole Trail, West Greenwich, RI 02817
+  voice: 401-222-2259
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
+- url: http://www.rilegislature.gov/representatives/roberts/default.aspx
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000152
@@ -21,13 +27,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/representatives/roberts/
 - url: http://www.rilegislature.gov/representatives/roberts/default.aspx
+- url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/representatives/roberts/default.aspx
+  note: Image Source
 extras:
-  name_first: ''
-  name_last: ''
-  name_middle: ''
-  town_represented: Coventry, West Greenwich
-offices:
-- address: 22 Seminole Trail, West Greenwich, RI 02817
-  voice: 401-222-2259
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Coventry, West Greenwich

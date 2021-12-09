@@ -11,9 +11,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '8'
+offices:
+- classification: district
+  voice: 401-276-5561
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/senators/Algiere/
 - url: http://www.rilegislature.gov/senators/algiere/default.aspx
+- url: http://www.rilegislature.gov/senators/cano/Pages/Biography.aspx
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000183
@@ -21,10 +26,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/senators/cano/
 - url: http://www.rilegislature.gov/senators/cano/default.aspx
+- url: http://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/senators/cano/Pages/Biography.aspx
+  note: Image Source
 extras:
-  town_represented: Pawtucket
-offices:
-- address: '-'
-  voice: 401-276-5561
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Providence
