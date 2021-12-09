@@ -9,17 +9,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '142'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 5005; Hartford, CT 06106-1591
+  voice: 860-240-8376
+- classification: district
+  address: 950 Silvermine Road; New Canaan, CT 06840
+- classification: district
+  address: 950 Silvermine Road;New Canaan, CT 06840
+  voice: 650-223-4045
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/dathan
 other_names:
 - name: Dathan, Lucy
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 5005;Hartford, CT 06106
-  voice: 860-240-8376
-  classification: capitol
-- address: 950 Silvermine Road;New Canaan, CT 06840
-  voice: 650-223-4045
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Appropriations (Vice Chair); Human Services; Insurance and Real Estate
+  committee codes: ;APP;HS;INS;
+  prison: '0'

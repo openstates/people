@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '81'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4046; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 55 Brookview Place; Plantsville, CT 06479
+- classification: district
+  address: 55 Brookview Place;Plantsville, CT 06479
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Fusco/
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000342
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4046;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 55 Brookview Place;Plantsville, CT 06479
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant House Republican Leader
+  committees: Aging; Banking; Commerce
+  committee codes: ;AGE;BA;CE;
+  prison: '0'

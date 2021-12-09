@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '137'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4109; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 8 East Rocks Road; Norwalk, CT 06851
+- classification: district
+  address: 8 East Rocks Road;Norwalk, CT 06851
+  voice: 203-840-1643
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Perone
 other_names:
@@ -18,11 +28,8 @@ other_identifiers:
   identifier: CTL000173
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4109;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 8 East Rocks Road;Norwalk, CT 06851
-  voice: 203-840-1643
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Banking; Energy and Technology; Finance, Revenue and Bonding
+  committee codes: ;BA;ET;FIN;
+  prison: '0'

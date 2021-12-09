@@ -9,15 +9,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '118'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: Legislative Office Building; Hartford, CT 06106
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/SmithF
 other_names:
 - name: Smith, Frank
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Housing (Vice Chair); Education; Environment
+  committee codes: ;ED;ENV;HSG;
+  business phone: 475-422-2263
+  prison: '0'

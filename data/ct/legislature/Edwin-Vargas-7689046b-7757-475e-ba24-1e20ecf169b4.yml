@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '6'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 1003; Hartford, CT 06106-1591
+  voice: 860-240-0454
+- classification: district
+  address: 141 Douglas Street; Hartford, CT 06114
+- classification: district
+  address: 141 Douglas Street;Hartford, CT 06114
+  voice: 860-956-1503
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Vargas
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000195
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 1003;Hartford, CT 06106
-  voice: 860-240-0454
-  classification: capitol
-- address: 141 Douglas Street;Hartford, CT 06114
-  voice: 860-956-1503
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Speaker of the House
+  committees: Aging; Executive and Legislative Nominations; Labor and Public Employees
+  committee codes: ;AGE;EXN;LAB;
+  business phone: 860-930-6359
+  prison: '0'

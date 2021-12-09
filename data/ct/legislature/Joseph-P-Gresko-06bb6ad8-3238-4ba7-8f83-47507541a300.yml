@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '121'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 1003; Hartford, CT 06106
+  voice: 860-240-0454
+- classification: district
+  address: 284 Mary Avenue; Stratford, CT 06614
+- classification: district
+  address: 284 Mary Avenue;Stratford, CT 06614
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Gresko
 other_names:
@@ -20,10 +29,8 @@ other_identifiers:
   identifier: CTL000311
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4006;Hartford, CT 06106
-  voice: 860-240-8582
-  classification: capitol
-- address: 284 Mary Avenue;Stratford, CT 06614
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Environment (Chair); Energy and Technology
+  committee codes: ;ENV;ET;
+  prison: '0'

@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '89'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4083; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 38 Colonial Drive; Prospect, CT 06712
+- classification: district
+  address: 38 Colonial Drive;Prospect, CT 06712
+  voice: 203-758-0029
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Zupkus/
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000210
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4083;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 38 Colonial Drive;Prospect, CT 06712
-  voice: 203-758-0029
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy House Republican Leader
+  committees: Finance, Revenue and Bonding; Legislative Management; Public Health;
+    Transportation
+  committee codes: ;FIN;LM;PH;TRA;
+  prison: '0'

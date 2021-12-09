@@ -9,6 +9,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '10'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2500; Hartford, CT 06106-1591
+  voice: 860-240-0475
+- classification: district
+  address: 480 Winchester Avenue; New Haven, CT 06511
+- classification: district
+  address: 480 Winchester Avenue;New Haven, CT 06511
+  voice: 203-676-8167
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/Winfield
 other_identifiers:
@@ -16,11 +26,10 @@ other_identifiers:
   identifier: CTL000279
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2500;Hartford, CT 06106
-  voice: 860-240-0475
-  classification: capitol
-- address: 480 Winchester Avenue;New Haven, CT 06511
-  voice: 203-676-8167
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Chief Deputy Majority Leader
+  committees: Judiciary (Chair); Energy and Technology (Vice Chair); Appropriations;
+    Education; General Law; Housing
+  committee codes: ;APP;ED;ET;GL;HSG;JUD;
+  prison: '0'

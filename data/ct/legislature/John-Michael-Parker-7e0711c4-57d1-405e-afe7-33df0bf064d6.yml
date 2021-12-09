@@ -2,22 +2,30 @@ id: ocd-person/7e0711c4-57d1-405e-afe7-33df0bf064d6
 name: John-Michael Parker
 given_name: John-Michael
 family_name: Parker
-email: John-Michael.Parker@cga.ct.gov
+email: JohnMichael.Parker@cga.ct.gov
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '101'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 227 Mungertown Road; Madison, CT 06443
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Parker
 other_names:
 - name: Parker, John-michael
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Education; Environment; Public Health
+  committee codes: ;ED;ENV;PH;
+  prison: '0'

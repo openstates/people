@@ -8,15 +8,25 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '14'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3300; Hartford, CT 06106-1591
+  voice: 860-240-8600
+- classification: district
+  address: 22 Saranac Road; Milford, CT 06461
+- classification: district
+  address: 22 Saranac Road;Milford, CT 06461
+  voice: 203-214-9133
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/maroney
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3300;Hartford, CT 06106
-  voice: 860-240-8600
-  classification: capitol
-- address: 22 Saranac Road;Milford, CT 06461
-  voice: 203-214-9133
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Majority Leader
+  committees: General Law (Chair); Regulation Review (Chair); Veterans' Affairs (Vice
+    Chair); Finance, Revenue and Bonding; Higher Education and Employment Advancement;
+    Insurance and Real Estate
+  committee codes: ;FIN;GL;HED;INS;RR;VA;
+  prison: '0'

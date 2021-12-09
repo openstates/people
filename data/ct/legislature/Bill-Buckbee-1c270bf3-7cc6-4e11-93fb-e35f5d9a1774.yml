@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '67'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4041; Hartford, CT 06106-1591
+  voice: 860-240-8723
+- classification: district
+  address: 64A Lanesville Road; New Milford, CT 06776
+- classification: district
+  address: 64A Lanesville Road;New Milford, CT 06776
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Buckbee/
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000317
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4041;Hartford, CT 06106
-  voice: 860-240-8723
-  classification: capitol
-- address: 64A Lanesville Road;New Milford, CT 06776
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Commerce (Ranking Member); Energy and Technology; Human Services; Veterans'
+    Affairs
+  committee codes: ;CE;ET;HS;VA;
+  prison: '0'

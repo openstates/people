@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '87'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4057; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 1804 Hartford Tpke; North Haven, CT 06473
+- classification: district
+  address: 1804 Hartford Tpke;North Haven, CT 06473
+  voice: 203-980-0030
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Yaccarino/
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000123
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4057;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 1804 Hartford Tpke;North Haven, CT 06473
-  voice: 203-980-0030
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Senior House Republican Whip
+  committees: Commerce; Executive and Legislative Nominations; Finance, Revenue and
+    Bonding
+  committee codes: ;CE;EXN;FIN;
+  prison: '0'

@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '44'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4063; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 204 Wright Road; Danielson, CT 06239
+- classification: district
+  address: 204 Wright Road;Danielson, CT 06239
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Dauphinais/
 other_names:
@@ -18,10 +27,8 @@ other_identifiers:
   identifier: CTL000334
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4063;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 204 Wright Road;Danielson, CT 06239
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Committee on Children (Ranking Member); Internship; Public Health; Transportation
+  committee codes: ;ISC;KID;PH;TRA;
+  prison: '0'

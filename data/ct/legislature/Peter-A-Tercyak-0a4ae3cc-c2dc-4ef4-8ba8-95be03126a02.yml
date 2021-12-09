@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '26'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4025; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 155 Batterson Drive; New Britain, CT 06053
+- classification: district
+  address: 150 Belridge Road;New Britain, CT 06053
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Tercyak
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000062
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4025;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 150 Belridge Road;New Britain, CT 06053
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Deputy Speaker of the House
+  committees: Appropriations; Energy and Technology; Public Health
+  committee codes: ;APP;ET;PH;
+  prison: '0'

@@ -8,16 +8,25 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '33'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3300; Hartford, CT 06106-1591
+  voice: 860-240-0428
+- classification: district
+  address: 300 Capitol Avenue; Hartford, CT 06106
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/needleman
 other_names:
 - name: Needleman, Norman
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3300;Hartford, CT 06106
-  voice: 860-240-0428
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy President Pro Tempore
+  committees: Energy and Technology (Chair); Planning and Development (Vice Chair);
+    Commerce; Finance, Revenue and Bonding; Transportation
+  committee codes: ;CE;ET;FIN;PD;TRA;
+  prison: '0'

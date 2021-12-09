@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '131'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4084; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 185 Riggs Street; Oxford, CT 06478
+- classification: district
+  address: 185 Riggs Street;Oxford, CT 06478
+  voice: 203-828-6154
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Labriola/
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000167
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4084;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 185 Riggs Street;Oxford, CT 06478
-  voice: 203-828-6154
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: House Republican Whip
+  committees: Government Administration and Elections; Judiciary; Transportation
+  committee codes: ;GAE;JUD;TRA;
+  prison: '0'

@@ -9,17 +9,26 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '119'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 265 New Haven Ave.; Milford, CT 06460
+- classification: district
+  address: 265 New Haven Ave.;Milford, CT 06460
+  voice: 203-530-3322
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/kennedy/
 other_names:
 - name: Kennedy, Kathy
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 265 New Haven Ave.;Milford, CT 06460
-  voice: 203-530-3322
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Executive and Legislative Nominations (Ranking Member); Appropriations;
+    Education; Public Health
+  committee codes: ;APP;ED;EXN;PH;
+  business phone: 203-530-3322
+  prison: '0'

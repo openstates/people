@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '110'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4107; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 13 Stillman Avenue; Danbury, CT 06810
+- classification: district
+  address: 13 Stillman Avenue;Danbury, CT 06810
+  voice: 203-778-5127
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Godfrey
 other_names:
@@ -18,11 +28,11 @@ other_identifiers:
   identifier: CTL000146
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4107;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 13 Stillman Avenue;Danbury, CT 06810
-  voice: 203-778-5127
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Speaker Pro Tempore
+  committees: Executive and Legislative Nominations; Judiciary; Legislative Management;
+    Regulation Review
+  committee codes: ;EXN;JUD;LM;RR;
+  business phone: 203-778-5127
+  prison: '0'

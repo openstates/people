@@ -9,15 +9,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '143'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: ; , CT
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Thomas
 other_names:
 - name: Thomas, Stephanie
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Government Administration and Elections (Vice Chair); Commerce; Transportation
+  committee codes: ;CE;GAE;TRA;
+  prison: '0'

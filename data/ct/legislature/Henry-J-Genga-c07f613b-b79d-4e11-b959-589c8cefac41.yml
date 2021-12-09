@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '10'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4030; Hartford, CT 06106-1591
+  voice: 860-240-8534
+- classification: district
+  address: 5 Elaine Drive; East Hartford, CT 06118
+- classification: district
+  address: 5 Elaine Drive;East Hartford, CT 06118
+  voice: 860-568-6395
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Genga
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000046
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4030;Hartford, CT 06106
-  voice: 860-240-8534
-  classification: capitol
-- address: 5 Elaine Drive;East Hartford, CT 06118
-  voice: 860-568-6395
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Majority Whip at Large
+  committees: Education; Public Health; Public Safety and Security
+  committee codes: ;ED;PH;PS;
+  prison: '0'

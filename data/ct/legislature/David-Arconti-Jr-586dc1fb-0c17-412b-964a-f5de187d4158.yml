@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '109'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3902; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 141 Great Plain Road; Danbury, CT 06811
+- classification: district
+  address: 141 Great Plain Road;Danbury, CT 06811
+  voice: 203-313-4407
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Arconti
 other_names:
@@ -24,11 +34,8 @@ other_identifiers:
   identifier: CTL000253
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3902;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 141 Great Plain Road;Danbury, CT 06811
-  voice: 203-313-4407
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Energy and Technology (Chair); General Law; Veterans' Affairs
+  committee codes: ;ET;GL;VA;
+  prison: '0'

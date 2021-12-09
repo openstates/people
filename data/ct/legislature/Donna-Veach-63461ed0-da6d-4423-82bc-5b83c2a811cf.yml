@@ -9,15 +9,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '30'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 1218 High Road; Kensington, CT 06037
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: https://www.cthousegop.com/veach
 other_names:
 - name: Veach, Donna
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Education; Judiciary; Planning and Development
+  committee codes: ;ED;JUD;PD;
+  business phone: 860-225-3020
+  prison: '0'

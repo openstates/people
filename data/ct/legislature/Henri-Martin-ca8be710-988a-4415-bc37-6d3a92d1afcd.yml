@@ -9,6 +9,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '31'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3400; Hartford, CT 06106-1591
+  voice: 860-240-0529
+- classification: district
+  address: 7 Ipswitch Road; Bristol, CT 06010
+- classification: district
+  address: 7 Ipswitch Road;Bristol, CT 06010
+  name: 'District Office #1'
 links:
 - url: http://www.ctsenaterepublicans.com/home-Martin
 other_names:
@@ -18,10 +27,11 @@ other_identifiers:
   identifier: CTL000263
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3400;Hartford, CT 06106
-  voice: 860-240-0529
-  classification: capitol
-- address: 7 Ipswitch Road;Bristol, CT 06010
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Senate Republican Leader
+  committees: Commerce (Ranking Member); Finance, Revenue and Bonding (Ranking Member);
+    Committee on Children (Ranking Member); Transportation
+  committee codes: ;CE;FIN;KID;TRA;
+  business phone: 860-589-0101
+  prison: '0'

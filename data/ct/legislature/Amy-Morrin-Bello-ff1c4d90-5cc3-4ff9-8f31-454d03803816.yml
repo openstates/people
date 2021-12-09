@@ -7,15 +7,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '28'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 311 Hartford Avenue; Wethersfield, CT 06109
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/morrinbello
 other_names:
 - name: Morrin Bello, Amy
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Government Administration and Elections; Internship; Legislative Management;
+    Transportation
+  committee codes: ;GAE;ISC;LM;TRA;
+  prison: '0'
