@@ -1,5 +1,5 @@
 id: ocd-person/9a4f5d0d-7c71-4f80-bcf0-da9b4882d0d7
-name: Richard Westman
+name: Richard A. Westman
 given_name: Richard
 family_name: Westman
 email: rawestman@gmail.com
@@ -10,9 +10,25 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Lamoille
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 2439 Iron Gate Rd. Cambridge, VT 05444
+- classification: district
+  address: 2439 Iron Gate Rd.;Cambridge, VT 05444
+  voice: 802-644-2297
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15796
 - url: http://legislature.vermont.gov/people/single/2022/15796
+- url: http://legislature.vermont.gov/people/single/2022/15796
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/LAMDIST.pdf
+  note: district map
+other_names:
+- name: Richard Westman
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000185
@@ -27,10 +43,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/15796
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15796
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 2439 Iron Gate Rd.;Cambridge, VT 05444
-  voice: 802-644-2297
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: 2439 Iron Gate Rd. Cambridge, VT 05444
+  home phone: (802) 644-2297
+  home email: rawestman@gmail.com

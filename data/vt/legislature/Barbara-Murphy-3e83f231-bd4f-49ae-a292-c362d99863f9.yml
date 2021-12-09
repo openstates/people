@@ -1,5 +1,5 @@
 id: ocd-person/3e83f231-bd4f-49ae-a292-c362d99863f9
-name: Barbara Murphy
+name: Barbara S. Murphy
 given_name: Barbara
 family_name: Murphy
 email: bsmffxvt@yahoo.com
@@ -10,9 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Franklin-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 7 Lily Rd. Fairfax, VT 05454
+- classification: district
+  address: 7 Lily Rd.;Fairfax, VT 05454
+  voice: 802-849-6545
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24017
 - url: http://legislature.vermont.gov/people/single/2022/24017
+- url: http://legislature.vermont.gov/people/single/2022/24017
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/FRA-2.pdf
+  note: district map
+other_names:
+- name: Barbara Murphy
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000469
@@ -23,10 +39,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/24017
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24017
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 7 Lily Rd.;Fairfax, VT 05454
-  voice: 802-849-6545
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Fairfax, VT 05454
+  home phone: (802) 849-6545
+  state email: bmurphy@leg.state.vt.us

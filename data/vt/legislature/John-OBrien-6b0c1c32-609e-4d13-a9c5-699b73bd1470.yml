@@ -1,5 +1,5 @@
 id: ocd-person/6b0c1c32-609e-4d13-a9c5-699b73bd1470
-name: John O'Brien
+name: John K. O'Brien
 given_name: John
 family_name: O'Brien
 email: jobrien@leg.state.vt.us
@@ -11,18 +11,32 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor-Orange-1
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 73 Moody Rd. Tunbridge, VT 05077
+- classification: district
+  address: 73 Moody Rd.;Tunbridge, VT 05077
+  voice: 802-889-3474
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30977
 - url: http://legislature.vermont.gov/people/single/2022/30977
+- url: http://legislature.vermont.gov/people/single/2022/30977
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WDR-ORA-1.pdf
+  note: district map
+other_names:
+- name: John O'Brien
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/30977
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30977
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 73 Moody Rd.;Tunbridge, VT 05077
-  voice: 802-889-3474
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Tunbridge, VT 05077
+  home phone: (802) 889-3474
+  state email: jobrien@leg.state.vt.us
