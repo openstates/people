@@ -10,8 +10,19 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '16'
+offices:
+- classification: capitol
+  address: Room 409 P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3237
+- classification: district
+  address: P. O. Drawer 1500 West Point, Mississippi 39773
+- classification: district
+  address: P. O. Drawer 1500;West Point, MS 39773
+  name: 'District Office #1'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/turner-ford.xml
+- url: http://billstatus.ls.state.ms.us/members/senate/turner-ford.xml
+  note: homepage
 other_names:
 - name: Turner- Ford
 other_identifiers:
@@ -21,12 +32,19 @@ other_identifiers:
   identifier: MSL000289
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/turner-ford.xml
+- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
-  org_info: Senator Turner is a member of Delta Sigma Theta, Sorority, Inc.
-offices:
-- address: Room 409;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3237
-  classification: capitol
-- address: P. O. Drawer 1500;West Point, MS 39773
-  classification: district
-  name: 'District Office #1'
+  occupation: Attorney
+  education:
+  - Hampton University
+  - Howard University
+  - Mississippi State University
+  - The University of Alabama at Birmingham
+  - The University of Mississippi
+  counties represented:
+  - Clay
+  - Lowndes
+  - Noxubee
+  - Oktibbeha
+  fax: (662)494-4814
+  other phone: (662)494-6611
