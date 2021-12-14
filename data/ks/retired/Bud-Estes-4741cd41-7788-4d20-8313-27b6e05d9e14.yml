@@ -12,7 +12,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '119'
-- type: upper
+- end_date: '2021-09-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '38'
 links:
@@ -31,7 +32,3 @@ sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/sen_estes_bud_1
 extras:
   occupation: Farm Machinery Dealer
-offices:
-- address: Room 236-E;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
-  voice: 785-296-7359
-  classification: capitol

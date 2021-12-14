@@ -8,18 +8,21 @@ party:
 - end_date: 2021-01-12
   name: Democratic
 - start_date: 2021-01-12
+  end_date: '2021-12-14'
   name: Independent
+- name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '37'
+offices:
+- classification: capitol
+  address: Room 45-S; Kansas State Capitol Building; 300 SW 10th St.; Topeka, KS 66612
+  voice: 785-296-7300
 links:
 - url: http://www.kslegislature.org/li/b2021_22/members/rep_coleman_aaron_1/
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_coleman_aaron_1
+- url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_coleman_aaron_1/
 extras:
-  occupation: Free-lance Dishwasher
-offices:
-- address: Room;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
-  voice: 785-296-7300
-  classification: capitol
+  occupation: Entrepreneur
