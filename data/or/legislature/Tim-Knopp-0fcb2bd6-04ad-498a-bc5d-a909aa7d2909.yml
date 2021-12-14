@@ -3,15 +3,21 @@ name: Tim Knopp
 given_name: Tim
 family_name: Knopp
 email: Sen.TimKnopp@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/knopp.jpg
+image: https://www.oregonlegislature.gov/knopp/PublishingImages/Pages/default/cropped%20headshot.jpg
 party:
 - name: Republican
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '27'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-323, Salem, OR, 97301
+  voice: 503-986-1950
 links:
 - url: https://www.oregonlegislature.gov/knopp
+- url: https://www.oregonlegislature.gov/knopp
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000099
@@ -21,7 +27,4 @@ other_identifiers:
   identifier: ORL000348
 sources:
 - url: https://www.oregonlegislature.gov/knopp
-offices:
-- address: 900 Court St NE, S-425, Salem, OR, 97301
-  voice: 503-986-1727
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

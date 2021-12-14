@@ -3,15 +3,21 @@ name: Bill Hansell
 given_name: Bill
 family_name: Hansell
 email: Sen.BillHansell@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/hansell.jpg
+image: https://www.oregonlegislature.gov/hansell/PublishingImages/Pages/default/Hansell.jpg
 party:
 - name: Republican
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '29'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-415, Salem, OR, 97301
+  voice: 503-986-1729
 links:
 - url: https://www.oregonlegislature.gov/hansell
+- url: https://www.oregonlegislature.gov/hansell
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000098
@@ -21,7 +27,4 @@ other_identifiers:
   identifier: ORL000307
 sources:
 - url: https://www.oregonlegislature.gov/hansell
-offices:
-- address: 900 Court St NE, S-415, Salem, OR, 97301
-  voice: 503-986-1729
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

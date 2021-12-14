@@ -1,17 +1,23 @@
 id: ocd-person/f1be7436-8ea5-48b2-8997-53dd566633b9
 name: James Manning Jr.
 given_name: James
-family_name: Manning
+family_name: Manning Jr.
 email: Sen.JamesManning@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/Manning.jpg
+image: https://www.oregonlegislature.gov/manning/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '7'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-205, Salem, OR, 97301
+  voice: 503-986-1707
 links:
 - url: https://www.oregonlegislature.gov/Manning
+- url: https://www.oregonlegislature.gov/Manning
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000373
@@ -19,7 +25,4 @@ other_identifiers:
   identifier: ORL000390
 sources:
 - url: https://www.oregonlegislature.gov/Manning
-offices:
-- address: 900 Court St NE, S-205, Salem, OR, 97301
-  voice: 503-986-1707
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

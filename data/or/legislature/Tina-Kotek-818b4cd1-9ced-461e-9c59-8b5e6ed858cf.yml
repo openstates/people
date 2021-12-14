@@ -3,15 +3,24 @@ name: Tina Kotek
 given_name: Tina
 family_name: Kotek
 email: Rep.TinaKotek@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/kotek.jpg
+image: https://www.oregonlegislature.gov/kotek/PublishingImages/Kotek%20Headshot%202021%20Cropped%20Small.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '44'
+offices:
+- classification: capitol
+  address: 900 Court St NE, 269, Salem, OR, 97301
+  voice: 503-986-1200
+- classification: district
+  address: Office located in Kenton Firehouse, Portland, OR
+  voice: 503-286-0558
 links:
 - url: https://www.oregonlegislature.gov/kotek
+- url: https://www.oregonlegislature.gov/kotek
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000066
@@ -21,7 +30,4 @@ other_identifiers:
   identifier: ORL000300
 sources:
 - url: https://www.oregonlegislature.gov/kotek
-offices:
-- address: 900 Court St NE, 269, Salem, OR, 97301
-  voice: 503-986-1200
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

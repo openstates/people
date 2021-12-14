@@ -3,7 +3,7 @@ name: Ricki Ruiz
 given_name: Ricki
 family_name: Ruiz
 email: Rep.RickiRuiz@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/ruiz.jpg
+image: https://www.oregonlegislature.gov/ruiz/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
@@ -11,11 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '50'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-375, Salem, OR, 97301
+  voice: 503-986-1450
 links:
 - url: https://www.oregonlegislature.gov/ruiz
+- url: https://www.oregonlegislature.gov/ruiz
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/ruiz
-offices:
-- address: 900 Court St NE, H-375, Salem, OR, 97301
-  voice: 503-986-1450
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

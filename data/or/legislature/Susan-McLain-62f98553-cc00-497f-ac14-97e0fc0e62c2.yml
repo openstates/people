@@ -3,15 +3,21 @@ name: Susan McLain
 given_name: Susan
 family_name: McLain
 email: Rep.SusanMcLain@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/mclain.jpg
+image: https://www.oregonlegislature.gov/mclain/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '29'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-477, Salem, OR, 97301
+  voice: 503-986-1429
 links:
 - url: https://www.oregonlegislature.gov/mclain
+- url: https://www.oregonlegislature.gov/mclain
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000261
@@ -19,7 +25,4 @@ other_identifiers:
   identifier: ORL000303
 sources:
 - url: https://www.oregonlegislature.gov/mclain
-offices:
-- address: 900 Court St NE, H-477, Salem, OR, 97301
-  voice: 503-986-1429
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

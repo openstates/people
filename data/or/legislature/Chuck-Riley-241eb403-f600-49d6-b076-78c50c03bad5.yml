@@ -3,15 +3,21 @@ name: Chuck Riley
 given_name: Chuck
 family_name: Riley
 email: Sen.ChuckRiley@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/riley.jpg
+image: https://www.oregonlegislature.gov/riley/PublishingImages/riley.jpg
 party:
 - name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '15'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-207, Salem, OR, 97301
+  voice: 503-986-1715
 links:
 - url: https://www.oregonlegislature.gov/riley
+- url: https://www.oregonlegislature.gov/riley
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000270
@@ -19,7 +25,4 @@ other_identifiers:
   identifier: ORL000297
 sources:
 - url: https://www.oregonlegislature.gov/riley
-offices:
-- address: 900 Court St NE, S-207, Salem, OR, 97301
-  voice: 503-986-1715
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators
