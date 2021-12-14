@@ -2,6 +2,7 @@ id: ocd-person/de9b28f6-a2a8-4edd-98cb-2b3ff2e6382c
 name: Mark Johnson
 given_name: Mark
 family_name: Johnson
+email: sen.mark.johnson@senate.mn
 image: https://www.senate.mn/img/member_thumbnails/01Johnson.jpg
 party:
 - name: Republican
@@ -9,6 +10,10 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '1'
+offices:
+- classification: capitol
+  address: 3111 Minnesota Senate Bldg.; St. Paul, MN 55155
+  voice: 651-296-5782
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1217
 other_identifiers:
@@ -17,7 +22,4 @@ other_identifiers:
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-offices:
-- address: 3111 Minnesota Senate Bldg.;95 University Avenue W.;St. Paul, MN 55155
-  voice: 651-296-5782
-  classification: capitol
+- url: https://www.senate.mn/api/members
