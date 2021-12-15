@@ -9,23 +9,31 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '15'
-links:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
-sources:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823
-extras:
-  facebook: https://www.facebook.com/RepKail
-  youtube: https://www.youtube.com/channel/UCpzQL17DfPDyIgOebGq3Zjg
 offices:
-- address: B-12 Main Capitol P.O. Box 202015 Harrisburg, PA 17120-2015
+- classification: capitol
+  address: B-12 Main Capitol P.O. Box 202015 Harrisburg, PA 17120-2015
   voice: 717-260-6144
   fax: 717-782-2919
-  classification: capitol
-- address: 34 Campbell Street Independence Twp. Municipal Building P.O. Box 14 Avella,
+- classification: district
+  address: 34 Campbell Street Independence Twp. Municipal Building P.O. Box 14 Avella,
     PA 15312
   voice: 724-587-3095
   fax: 724-773-7802
-  classification: district
   name: 'District Office #1'
+links:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823
+  note: homepage
+ids:
+  youtube: UCpzQL17DfPDyIgOebGq3Zjg
+  facebook: RepKail
+sources:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1823
+extras:
+  website: http://RepKail.com
+  Education:
+  - Geneva College, BA and Regent University School of Law, JD

@@ -10,19 +10,26 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '85'
+offices:
+- classification: capitol
+  address: 141-A East Wing P.O. Box 202085 Harrisburg, PA 17120-2085
+  voice: 717-787-3443
+  fax: 717-782-2887
+- classification: district
+  address: Mifflinburg Government Center 343 Chestnut Street Suite 1 Mifflinburg,
+    PA 17844
+  voice: 570-837-0052
+  fax: 570-966-0053
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871
+  note: homepage
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871
-offices:
-- address: 141-A East Wing P.O. Box 202085 Harrisburg, PA 17120-2085
-  voice: 717-787-3443
-  fax: 717-782-2887
-  classification: capitol
-- address: Mifflinburg Government Center 343 Chestnut Street Suite 1 Mifflinburg,
-    PA 17844
-  voice: 570-837-0052
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1871
+extras:
+  Education:
+  - PA Homeschool - 2009

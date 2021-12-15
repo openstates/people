@@ -9,9 +9,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '135'
+offices:
+- classification: capitol
+  address: 34 East Wing P.O. Box 202135 Harrisburg, PA 17120-2135
+  voice: 717-705-1881
+  fax: 717-772-2469
+- classification: district
+  address: 104 East Broad Street Bethlehem, PA 18018
+  voice: 610-867-3890
+  fax: 610-861-2104
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=80
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=80
+  note: homepage
+ids:
+  youtube: playlist?list=PL3833B2698B7840D7
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000215
@@ -20,15 +34,11 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=80
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=80
 extras:
-  youtube: http://www.youtube.com/playlist?list=PL3833B2698B7840D7
-offices:
-- address: 34 East Wing P.O. Box 202135 Harrisburg, PA 17120-2135
-  voice: 717-705-1881
-  fax: 717-772-2469
-  classification: capitol
-- address: 104 East Broad Street Bethlehem, PA 18018
-  voice: 610-867-3890
-  fax: 610-861-2104
-  classification: district
-  name: 'District Office #1'
+  website: http://www.pahouse.com/samuelson
+  Education:
+  - Liberty High School, 1978
+  - Lehigh University, B.A. Government, 1986
+  - ''
