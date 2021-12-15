@@ -11,8 +11,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '25'
+offices:
+- classification: capitol
+  voice: 208-332-1182
+- classification: district
+  address: 3791 N 2100 E, Filer, ID, 83328
+  fax: 208-326-4132
+  name: 'District Office #1'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=25
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=25
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000299
@@ -22,10 +31,3 @@ other_identifiers:
   identifier: ocd-person/195923bb-c409-4967-b091-44c737ed3ff8
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1182
-  classification: capitol
-- address: 3791 N 2100 E, Filer, ID, 83328
-  fax: 208-326-4132
-  classification: district
-  name: 'District Office #1'

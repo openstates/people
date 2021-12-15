@@ -17,8 +17,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '22'
+offices:
+- classification: capitol
+  voice: 208-332-1037
+- classification: district
+  address: 5311 Ridgewood Rd, Nampa, ID, 83687
+  voice: 208-888-4210
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=22
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=22
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000319
@@ -30,9 +38,3 @@ other_identifiers:
   identifier: ocd-person/7ce419cd-8375-46d7-87a1-eb7d3bc533ce
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1037
-  classification: capitol
-- address: 5311 Ridgewood Rd, Nampa, ID, 83687
-  classification: district
-  name: 'District Office #1'

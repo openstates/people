@@ -16,8 +16,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '2'
+offices:
+- classification: capitol
+  voice: 208-332-1177
+- classification: district
+  address: 564 E Prairie Ave, Dalton Gardens, ID, 83815
+  voice: 208-620-0873
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=2
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=2
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000320
@@ -29,9 +37,3 @@ other_identifiers:
   identifier: ocd-person/0e844eb2-de20-4d4c-b827-a0b1834e2392
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1177
-  classification: capitol
-- address: 564 E Prairie Ave, Dalton Gardens, ID, 83815
-  classification: district
-  name: 'District Office #1'
