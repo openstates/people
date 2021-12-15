@@ -11,10 +11,19 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '80'
+offices:
+- classification: capitol
+  address: Capitol OfficeP.O. Box 942849, Sacramento, CA 94249-0004
+  voice: 916-319-2004
+- classification: district
+  address: 1350 Front Street, Suite 6022, San Diego, CA 92101
+  voice: 619-338-8090
 links:
 - url: https://a80.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD80&inframe=N
   note: Contact Form
+other_names:
+- name: Lorena S. Gonzalez
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000425
@@ -22,13 +31,4 @@ other_identifiers:
   identifier: ocd-person/2fe17faa-293f-42db-b726-c44387f942e3
 sources:
 - url: http://assembly.ca.gov/assemblymembers
-other_names:
-- name: Lorena S. Gonzalez
-offices:
-- address: P.O. Box 942849;Sacramento, CA 94249-0080
-  voice: 916-319-2080
-  classification: capitol
-- address: 1350 Front Street, Suite 6022;San Diego, CA 92101
-  voice: 619-338-8090
-  classification: district
-  name: 'District Office #1'
+- url: https://www.assembly.ca.gov/assemblymembers
