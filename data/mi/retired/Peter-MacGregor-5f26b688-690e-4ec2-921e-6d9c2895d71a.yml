@@ -12,7 +12,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '73'
-- type: upper
+- end_date: '2021-12-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '28'
 links:
@@ -26,8 +27,3 @@ other_identifiers:
   identifier: ocd-person/f0f6a151-1374-4dc9-a748-4e6e37547214
 sources:
 - url: http://www.senate.michigan.gov/macgregor
-offices:
-- address: S-132 State Capitol Building;Lansing, MI 48909
-  voice: 517-373-0797
-  fax: 517-373-5236
-  classification: capitol
