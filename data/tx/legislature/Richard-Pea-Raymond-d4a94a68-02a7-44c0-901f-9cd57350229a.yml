@@ -9,8 +9,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '42'
+offices:
+- classification: capitol
+  address: Room 1W.2 P.O. Box 2910 Austin, TX 78768
+  voice: 512-463-0558
+  fax: 512-463-6296
+- classification: district
+  address: P.O. Box 6419 Laredo, Texas 78042
+  voice: 956-753-7722
+  fax: 956-753-7729
 links:
 - url: https://house.texas.gov/members/member-page/?district=42
+other_names:
+- name: "Richard Pe\xC3\xB1a Raymond"
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000334
@@ -24,15 +35,3 @@ other_identifiers:
   identifier: TXL000667
 sources:
 - url: https://house.texas.gov/members/member-page/?district=42
-other_names:
-- name: "Richard Pe\xC3\xB1a Raymond"
-offices:
-- address: Room 1W.2;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0558
-  fax: 512-463-6296
-  classification: capitol
-- address: West End Washington St.;Laredo, TX 78041
-  voice: 956-753-7722
-  fax: 956-753-7729
-  classification: district
-  name: 'District Office #1'

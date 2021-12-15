@@ -1,5 +1,5 @@
 id: ocd-person/a289901c-76aa-4288-a4b9-3bb1bf081c89
-name: Charles "Doc" Anderson
+name: Charles 'Doc' Anderson
 given_name: Charles
 family_name: Anderson
 image: https://house.texas.gov/photos/members/2155.jpg
@@ -9,8 +9,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '56'
+offices:
+- classification: capitol
+  address: Room GW.7 P.O. Box 2910 Austin, TX 78768
+  voice: 512-463-0135
+  fax: 512-463-0642
+- classification: district
+  address: 900 Austin Ave., Suite 804 Waco, TX 76701
+  voice: 254-754-3892
+  fax: 254-754-1604
 links:
 - url: https://house.texas.gov/members/member-page/?district=56
+other_names:
+- name: Charles "Doc" Anderson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000218
@@ -24,13 +35,3 @@ other_identifiers:
   identifier: TXL000547
 sources:
 - url: https://house.texas.gov/members/member-page/?district=56
-offices:
-- address: Room GW.7;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0135
-  fax: 512-463-0642
-  classification: capitol
-- address: 900 Austin Ave., Suite 804;Waco, TX 76701
-  voice: 254-754-3892
-  fax: 254-754-1604
-  classification: district
-  name: 'District Office #1'
