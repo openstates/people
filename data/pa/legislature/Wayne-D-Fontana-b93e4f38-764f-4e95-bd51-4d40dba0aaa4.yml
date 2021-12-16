@@ -10,24 +10,32 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '42'
+offices:
+- classification: capitol
+  address: 'Senate Box 203042 Harrisburg, PA 17120-3042 Room: 543 Main Capitol'
+  voice: 717-787-5300
+  fax: 717-772-5484
+- classification: district
+  address: 1039 Brookline Boulevard Suite 2;Pittsburgh, PA 15226
+  voice: 412-344-2551
+  fax: 412-344-3400
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1041
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1041
+  note: homepage
+ids:
+  twitter: waynedfontana
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000016
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1041
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1041
 extras:
-  twitter: http://twitter.com/waynedfontana
-offices:
-- address: Senate Box 203042;Harrisburg, PA 17120-3042;Room:;543 Main Capitol
-  voice: 717-787-5300
-  fax: 717-772-5484
-  classification: capitol
-- address: 1039 Brookline Boulevard Suite 2;Pittsburgh, PA 15226
-  voice: 412-344-2551
-  fax: 412-344-3400
-  classification: district
-  name: 'District Office #1'
+  website: http://www.senatorfontana.com
+  Education:
+  - Community College of Allegheny County, 1971, Associate Degree

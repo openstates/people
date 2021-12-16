@@ -3,15 +3,21 @@ name: Peter Courtney
 given_name: Peter
 family_name: Courtney
 email: Sen.PeterCourtney@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/courtney.jpg
+image: https://www.oregonlegislature.gov/courtney/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '11'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-201, Salem, OR, 97301
+  voice: 503-986-1600
 links:
 - url: https://www.oregonlegislature.gov/courtney
+- url: https://www.oregonlegislature.gov/courtney
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000007
@@ -21,7 +27,4 @@ other_identifiers:
   identifier: ORL000353
 sources:
 - url: https://www.oregonlegislature.gov/courtney
-offices:
-- address: 900 Court St NE, S-201, Salem, OR, 97301
-  voice: 503-986-1600
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

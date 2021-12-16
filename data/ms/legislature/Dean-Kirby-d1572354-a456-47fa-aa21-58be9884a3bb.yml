@@ -10,23 +10,31 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '30'
+offices:
+- classification: capitol
+  address: Room 307 P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-4089
+- classification: district
+  address: P.O. Box 54099 Pearl, Mississippi 39288
+- classification: district
+  address: P.O. Box 54099;Pearl, MS 39288
+  voice: 601-932-1966
+  name: 'District Office #1'
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/kirby.xml
+- url: http://billstatus.ls.state.ms.us/members/senate/Kirby.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000031
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/kirby.xml
+- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: http://billstatus.ls.state.ms.us/members/senate/Kirby.xml
 extras:
-  org_info: Senator Kirby is a member of the Homebuilders Association, NCSL, ALEC,
-    IIAM, NCOIL, NFIB, and the River Oaks Board. He is active in the Pearl & Rankin
-    Chambers of Commerce, Exchange Club and Kiwanis. He is also a 32nd Degree Scottish
-    Rite Mason.
-offices:
-- address: P.O. Box 54099;Pearl, MS 39288
-  voice: 601-932-1966
-  classification: district
-  name: 'District Office #1'
-- address: Room 212 D;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-4089
-  classification: capitol
+  title: President Pro Tempore
+  occupation: Insurance
+  education:
+  - Mississippi College
+  counties represented:
+  - Rankin

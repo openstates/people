@@ -10,10 +10,21 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '47'
+offices:
+- classification: capitol
+  voice: 701-258-8988
+  fax: 701-222-2577
+- classification: district
+  address: 3929 Valley Drive, Bismarck, ND 58503-1729
+- classification: district
+  address: 3929 Valley Drive;Bismarck, ND;58503-1729
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-lawrence-r-klemin
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-lawrence-r-klemin
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-lawrence-r-klemin
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-lawrence-r-klemin
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000143
@@ -25,10 +36,9 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-lawrence-r-klemin
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-lawrence-r-klemin
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-lawrence-r-klemin
-offices:
-- voice: 701-258-8988
-  fax: 701-222-2577
-  classification: capitol
-- address: 3929 Valley Drive;Bismarck, ND;58503-1729
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-lawrence-r-klemin
+extras:
+  bio info: []
+  Home phone: 701-222-2577
+  Cell phone: 701-471-5802

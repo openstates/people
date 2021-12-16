@@ -1,5 +1,5 @@
 id: ocd-person/e4716ff3-5ee2-4fe4-9822-4db560d0c8d8
-name: Tristan Toleno
+name: Tristan D. Toleno
 given_name: Tristan
 family_name: Toleno
 email: ttoleno@gmail.com
@@ -10,9 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham-2-3
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 33 Highlawn Rd. Brattleboro, VT 05301
+- classification: district
+  address: 33 Highlawn Rd.;Brattleboro, VT 05301
+  voice: 802-579-5511
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/20391
 - url: http://legislature.vermont.gov/people/single/2022/20391
+- url: http://legislature.vermont.gov/people/single/2022/20391
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WDH-2-3.pdf
+  note: district map
+other_names:
+- name: Tristan Toleno
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000316
@@ -25,10 +41,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/20391
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/20391
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 33 Highlawn Rd.;Brattleboro, VT 05301
-  voice: 802-579-5511
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Brattleboro, VT 05301
+  home phone: (802) 579-5511
+  state email: ttoleno@leg.state.vt.us

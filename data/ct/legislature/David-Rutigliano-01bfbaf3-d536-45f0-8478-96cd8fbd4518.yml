@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '123'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3801; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 52 Stemway Road; Trumbull, CT 06611
+- classification: district
+  address: 52 Stemway Road;Trumbull, CT 06611
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Rutigliano/
 other_names:
@@ -18,10 +27,10 @@ other_identifiers:
   identifier: CTL000217
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3801;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 52 Stemway Road;Trumbull, CT 06611
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Senior House Republican Whip
+  committees: General Law (Ranking Member); Labor and Public Employees; Regulation
+    Review
+  committee codes: ;GL;LAB;RR;
+  prison: '0'

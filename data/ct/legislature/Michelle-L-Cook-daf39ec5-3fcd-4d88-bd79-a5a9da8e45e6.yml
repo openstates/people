@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '65'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4035; Hartford, CT 06106-1591
+  voice: 860-240-8547
+- classification: district
+  address: 499 Charles Street; Torrington, CT 06790
+- classification: district
+  address: 499 Charles Street;Torrington, CT 06790
+  voice: 860-489-8038
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Cook
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000101
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4035;Hartford, CT 06106
-  voice: 860-240-8547
-  classification: capitol
-- address: 499 Charles Street;Torrington, CT 06790
-  voice: 860-489-8038
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy Speaker of the House
+  committees: Education; Human Services; Legislative Management; Public Health
+  committee codes: ;ED;HS;LM;PH;
+  prison: '0'

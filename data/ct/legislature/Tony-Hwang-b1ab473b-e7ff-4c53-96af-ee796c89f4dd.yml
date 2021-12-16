@@ -9,6 +9,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '28'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3602; Hartford, CT 06106-1591
+  voice: 860-240-8805
+- classification: district
+  address: 80 Martingale Lane; Fairfield, CT 06824
+- classification: district
+  address: 80 Martingale Lane;Fairfield, CT 06824
+  voice: 203-255-5555
+  name: 'District Office #1'
 links:
 - url: http://www.ctsenaterepublicans.com/home-Hwang
 other_names:
@@ -20,11 +30,11 @@ other_identifiers:
   identifier: CTL000272
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3602;Hartford, CT 06106
-  voice: 860-240-8805
-  classification: capitol
-- address: 80 Martingale Lane;Fairfield, CT 06824
-  voice: 203-255-5555
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Senate Republican Leader
+  committees: Insurance and Real Estate (Ranking Member); Planning and Development
+    (Ranking Member); Public Health (Ranking Member); Finance, Revenue and Bonding
+  committee codes: ;FIN;INS;PD;PH;
+  business phone: 203-807-8098
+  prison: '0'

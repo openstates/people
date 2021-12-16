@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 277; Boston, MA 02133
+  voice: 617-722-2012
 links:
 - url: https://malegislature.gov/Legislators/Profile/J_A1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/21f0c6ab-de54-44b3-8cfd-8aed860f3137
 sources:
 - url: https://malegislature.gov/Legislators/Profile/J_A1
-offices:
-- address: 24 Beacon St.;Room 277;Boston, MA, 02133
-  voice: 617-722-2012
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/J_A1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: J_A1

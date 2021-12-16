@@ -11,17 +11,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '68'
+offices:
+- classification: district
+  address: 54 Seymour St. Warren, RI 02885
+  voice: 401-258-1134
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
+- url: http://www.rilegislature.gov/representatives/speakman/default.aspx
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/representatives/Speakman/
 - url: http://www.rilegislature.gov/representatives/speakman/default.aspx
+- url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/representatives/speakman/default.aspx
+  note: Image Source
 extras:
-  town_represented: Bristol, Warren
-offices:
-- address: 54 Seymour St. Warren, RI 02885
-  voice: 401-258-1134
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Bristol, Warren

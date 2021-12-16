@@ -9,15 +9,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '35'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 39 High Street; Clinton, CT 06413
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/goupil
 other_names:
 - name: Goupil, Christine
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Planning and Development (Vice Chair); Human Services; Transportation
+  committee codes: ;HS;PD;TRA;
+  prison: '0'

@@ -1,5 +1,5 @@
 id: ocd-person/3cac81cd-62ca-41d6-aa4a-8e4156244dec
-name: John T. Smithee
+name: John Smithee
 given_name: John
 family_name: Smithee
 image: https://house.texas.gov/photos/members/4530.jpg
@@ -9,8 +9,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '86'
+offices:
+- classification: capitol
+  address: Room 1W.10 P.O. Box 2910 Austin, TX 78768
+  voice: 512-463-0702
+  fax: 512-476-7016
+- classification: district
+  address: 320 S. Polk, 1st Floor Amarillo, TX 79101
+  voice: 806-372-3327
+  fax: 806-342-0327
 links:
 - url: https://house.texas.gov/members/member-page/?district=86
+other_names:
+- name: John T. Smithee
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000344
@@ -20,13 +31,3 @@ other_identifiers:
   identifier: TXL000576
 sources:
 - url: https://house.texas.gov/members/member-page/?district=86
-offices:
-- address: Room 1W.10;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0702
-  fax: 512-476-7016
-  classification: capitol
-- address: 320 S. Polk, 1st Floor;Amarillo, TX 79101
-  voice: 806-372-3327
-  fax: 806-342-0327
-  classification: district
-  name: 'District Office #1'

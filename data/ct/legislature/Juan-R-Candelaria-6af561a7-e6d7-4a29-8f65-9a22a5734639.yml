@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '95'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4040; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 34 Sixth Street; New Haven, CT 06519
+- classification: district
+  address: 34 Sixth Street;New Haven, CT 06519
+  voice: 203-645-7905
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Candelaria
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000131
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4040;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 34 Sixth Street;New Haven, CT 06519
-  voice: 203-645-7905
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Speaker of the House
+  committees: Appropriations; Education; General Law
+  committee codes: ;APP;ED;GL;
+  prison: '0'

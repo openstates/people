@@ -11,6 +11,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 3rd Plymouth
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 34; Boston, MA 02133
+  voice: 617-722-2320
 links:
 - url: https://malegislature.gov/Legislators/Profile/J_M1
 other_identifiers:
@@ -18,7 +22,7 @@ other_identifiers:
   identifier: MAL000551
 sources:
 - url: https://malegislature.gov/Legislators/Profile/J_M1
-offices:
-- address: 24 Beacon St.;Room 34;Boston, MA, 02133
-  voice: 617-722-2320
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/J_M1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: J_M1

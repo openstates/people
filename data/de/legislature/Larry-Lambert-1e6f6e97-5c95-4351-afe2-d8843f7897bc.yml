@@ -2,15 +2,24 @@ id: ocd-person/1e6f6e97-5c95-4351-afe2-d8843f7897bc
 name: Larry Lambert
 given_name: Larry
 family_name: Lambert
+email: Larry.Lambert@delaware.gov
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '7'
+offices:
+- classification: capitol
+  address: 411 Legislative Avenue Dover, DE 19901
+  voice: 302-744-4351
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=24002
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=24002
+  note: homepage
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page
+- url: https://legis.delaware.gov/json/House/GetRepresentatives
+- url: https://legis.delaware.gov/LegislatorDetail?personId=24002

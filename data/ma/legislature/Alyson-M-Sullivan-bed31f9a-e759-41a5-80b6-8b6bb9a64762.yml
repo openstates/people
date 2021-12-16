@@ -9,11 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 7th Plymouth
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 237; Boston, MA 02133
+  voice: 617-722-2305
 links:
 - url: https://malegislature.gov/Legislators/Profile/AMS2
 sources:
 - url: https://malegislature.gov/Legislators/Profile/AMS2
-offices:
-- address: 24 Beacon St.;Room 237;Boston, MA, 02133
-  voice: 617-722-2305
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AMS2
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: AMS2

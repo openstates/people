@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '27'
+offices:
+- classification: capitol
+  voice: 208-332-1074
+- classification: district
+  address: PO Box 1207, Burley, ID, 83318-0828
+  voice: 208-312-1056
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=27
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=27
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000310
@@ -22,9 +30,3 @@ other_identifiers:
   identifier: ocd-person/d8eedd2e-cd3d-4c1e-a3e0-b4943ac6494c
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1074
-  classification: capitol
-- address: PO Box 1207, Burley, ID, 83318-0828
-  classification: district
-  name: 'District Office #1'

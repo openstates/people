@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '3'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4031; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 97 Amity Street; Hartford, CT 06106
+- classification: district
+  address: 97 Amity Street;Hartford, CT 06106
+  voice: 860-655-5907
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Gonzalez
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000039
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4031;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 97 Amity Street;Hartford, CT 06106
-  voice: 860-655-5907
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy Speaker of the House
+  committees: Appropriations; Housing; Legislative Management; Public Safety and Security
+  committee codes: ;APP;HSG;LM;PS;
+  prison: '0'

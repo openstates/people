@@ -11,6 +11,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 11th Hampden
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 160; Boston, MA 02133
+  voice: 617-722-2304
+- classification: district
+  voice: 413-316-4743
+  name: 'District Office #1'
 links:
 - url: https://malegislature.gov/Legislators/Profile/BLW1
 other_identifiers:
@@ -18,10 +25,7 @@ other_identifiers:
   identifier: MAL000461
 sources:
 - url: https://malegislature.gov/Legislators/Profile/BLW1
-offices:
-- address: 24 Beacon St.;Room 160;Boston, MA, 02133
-  voice: 617-722-2304
-  classification: capitol
-- voice: 413-316-4743
-  classification: district
-  name: 'District Office #1'
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BLW1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: BLW1

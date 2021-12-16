@@ -9,11 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 17th Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 146A; Boston, MA 02133
+  voice: 617-722-2575
 links:
 - url: https://malegislature.gov/Legislators/Profile/DAL1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/DAL1
-offices:
-- address: 24 Beacon St.;Room 146A;Boston, MA, 02133
-  voice: 617-722-2575
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DAL1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: DAL1

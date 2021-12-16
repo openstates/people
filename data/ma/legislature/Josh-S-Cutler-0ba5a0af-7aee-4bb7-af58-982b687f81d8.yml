@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 6th Plymouth
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 472; Boston, MA 02133
+  voice: 617-722-2013
+  fax: 617-626-0325
 links:
 - url: https://malegislature.gov/Legislators/Profile/JSC1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/84486bdc-7cb2-41db-9c8c-9e5639390211
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JSC1
-offices:
-- address: 24 Beacon St.;Room 167;Boston, MA, 02133
-  voice: 617-722-2810
-  fax: 617-626-0325
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JSC1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: JSC1

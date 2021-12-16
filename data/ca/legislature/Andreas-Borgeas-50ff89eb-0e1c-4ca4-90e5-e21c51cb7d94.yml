@@ -11,17 +11,23 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '8'
+offices:
+- classification: capitol
+  address: State Capitol, Room 3082, Sacramento, CA 95814-4900
+  voice: 916-651-4008
+- classification: district
+  address: 567 W. Shaw Avenue, Suite A-3, Fresno, CA 93704
+  voice: 559-243-8580
+- classification: district
+  address: 102 Grove Avenue, Suite B, Oakdale, CA 95361
+  voice: 209-848-8001
+- classification: district
+  address: 460 Sutter Hill Road, Suite C, Sutter Creek, CA 95685
+  voice: 209-267-5033
 links:
 - url: https://senate.ca.gov/sd08
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD08&inframe=N
   note: Contact Form
 sources:
 - url: http://senate.ca.gov/senators
-offices:
-- address: State Capitol, Room 3082, Sacramento, CA 95814-4900
-  voice: 916-651-4008
-  classification: capitol
-- address: 460 Sutter Hill Road, Suite C, Sutter Creek, CA 95685
-  voice: 209-267-5033
-  classification: district
-  name: 'District Office #1'
+- url: https://www.senate.ca.gov/senators

@@ -1,5 +1,5 @@
 id: ocd-person/784a12cd-3ecc-4fed-8b47-4e090038c2f8
-name: Jaime Foster
+name: Jaime S. Foster
 given_name: Jaime
 family_name: Foster
 email: Jaime.Foster@cga.ct.gov
@@ -9,15 +9,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '57'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 28 Abbott Road; Ellington, CT 06029
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Foster
 other_names:
 - name: Foster, Jaime S.
+- name: Jaime Foster
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Energy and Technology; Committee on Children; Public Health
+  committee codes: ;ET;KID;PH;
+  prison: '0'

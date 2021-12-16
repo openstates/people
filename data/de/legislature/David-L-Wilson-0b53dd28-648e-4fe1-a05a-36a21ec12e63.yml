@@ -2,7 +2,7 @@ id: ocd-person/0b53dd28-648e-4fe1-a05a-36a21ec12e63
 name: David L. Wilson
 given_name: David L.
 family_name: Wilson
-email: David.L.Wilson@state.de.us
+email: David.L.Wilson@delaware.gov
 image: https://legis.delaware.gov/images/default-source/Legislators/DavidWilson.jpg?sfvrsn=2
 party:
 - name: Republican
@@ -14,9 +14,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '18'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4048
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=92
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=92
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000062
@@ -27,7 +33,5 @@ sources:
   note: legislator list page
 - url: https://legis.delaware.gov/Senate
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4150
-  classification: capitol
+- url: https://legis.delaware.gov/json/Senate/GetSenators
+- url: https://legis.delaware.gov/LegislatorDetail?personId=92

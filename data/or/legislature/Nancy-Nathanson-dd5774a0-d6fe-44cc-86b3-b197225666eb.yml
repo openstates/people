@@ -2,16 +2,24 @@ id: ocd-person/dd5774a0-d6fe-44cc-86b3-b197225666eb
 name: Nancy Nathanson
 given_name: Nancy
 family_name: Nathanson
-email: Rep.NancyNathanson@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/nathanson.jpg
+email: Nancy.Nathanson@oregonlegislature.gov
+image: https://www.oregonlegislature.gov/nathanson/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '13'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-279, Salem, OR, 97301
+  voice: 503-986-1413
+- classification: district
+  address: PO Box 41895 Eugene, OR 97404
 links:
 - url: https://www.oregonlegislature.gov/nathanson
+- url: https://www.oregonlegislature.gov/nathanson
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000071
@@ -23,7 +31,4 @@ other_identifiers:
   identifier: ORL000294
 sources:
 - url: https://www.oregonlegislature.gov/nathanson
-offices:
-- address: 900 Court St NE, H-279, Salem, OR, 97301
-  voice: 503-986-1413
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

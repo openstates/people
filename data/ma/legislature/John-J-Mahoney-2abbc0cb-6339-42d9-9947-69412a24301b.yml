@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 13th Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 130; Boston, MA 02133
+  voice: 617-722-2130
+  fax: 617-626-0247
 links:
 - url: https://malegislature.gov/Legislators/Profile/JJM1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/04e214f0-7982-4d03-ab06-aedb0ff12570
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JJM1
-offices:
-- address: 24 Beacon St.;Room 130;Boston, MA, 02133
-  voice: 617-722-2130
-  fax: 617-626-0247
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JJM1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: JJM1

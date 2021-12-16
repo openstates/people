@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '93'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2702; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 1643 Ella Grasso Blvd.; New Haven, CT 06511
+- classification: district
+  address: 1643 Ella Grasso Blvd.;New Haven, CT 06511
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Walker
 other_names:
@@ -18,10 +27,8 @@ other_identifiers:
   identifier: CTL000129
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2702;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 1643 Ella Grasso Blvd.;New Haven, CT 06511
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Appropriations (Chair); Judiciary
+  committee codes: ;APP;JUD;
+  prison: '0'

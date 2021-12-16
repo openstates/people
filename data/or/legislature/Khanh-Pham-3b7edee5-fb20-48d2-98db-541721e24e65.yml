@@ -3,7 +3,7 @@ name: Khanh Pham
 given_name: Khanh
 family_name: Pham
 email: Rep.KhanhPham@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/pham.jpg
+image: https://www.oregonlegislature.gov/pham/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
@@ -11,11 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '46'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-486, Salem, OR, 97301
+  voice: 503-986-1446
 links:
 - url: https://www.oregonlegislature.gov/pham
+- url: https://www.oregonlegislature.gov/pham
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/pham
-offices:
-- address: 900 Court St NE, H-486, Salem, OR, 97301
-  voice: 503-986-1446
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

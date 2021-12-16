@@ -3,15 +3,23 @@ name: Paul Holvey
 given_name: Paul
 family_name: Holvey
 email: Rep.PaulHolvey@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/holvey.jpg
+image: https://www.oregonlegislature.gov/holvey/PublishingImages/PaulHolveyHeadshot.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '8'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-277, Salem, OR, 97301
+  voice: 503-986-1408
+- classification: district
+  address: PO Box 51048 Eugene, OR 97405
 links:
 - url: https://www.oregonlegislature.gov/holvey
+- url: https://www.oregonlegislature.gov/holvey
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000058
@@ -23,7 +31,4 @@ other_identifiers:
   identifier: ORL000311
 sources:
 - url: https://www.oregonlegislature.gov/holvey
-offices:
-- address: 900 Court St NE, H-277, Salem, OR, 97301
-  voice: 503-986-1408
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

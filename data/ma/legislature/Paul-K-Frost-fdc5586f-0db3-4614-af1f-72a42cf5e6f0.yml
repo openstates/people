@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 7th Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 542; Boston, MA 02133
+  voice: 617-722-2489
 links:
 - url: https://malegislature.gov/Legislators/Profile/PKF1
 other_identifiers:
@@ -23,7 +27,8 @@ other_identifiers:
   identifier: ocd-person/41193d72-4cf5-47b8-9fee-2c869bbdf813
 sources:
 - url: https://malegislature.gov/Legislators/Profile/PKF1
-offices:
-- address: 24 Beacon St.;Room 542;Boston, MA, 02133
-  voice: 617-722-2489
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PKF1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Third Assistant Minority Leader
+  member code: PKF1

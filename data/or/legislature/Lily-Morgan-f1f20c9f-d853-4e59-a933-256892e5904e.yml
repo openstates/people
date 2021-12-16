@@ -3,7 +3,7 @@ name: Lily Morgan
 given_name: Lily
 family_name: Morgan
 email: Rep.LilyMorgan@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/morgan.jpg
+image: https://www.oregonlegislature.gov/morgan/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
@@ -11,11 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '3'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-371, Salem, OR, 97301
+  voice: 503-986-1403
 links:
 - url: https://www.oregonlegislature.gov/morgan
+- url: https://www.oregonlegislature.gov/morgan
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/morgan
-offices:
-- address: 900 Court St NE, H-371, Salem, OR, 97301
-  voice: 503-986-1403
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

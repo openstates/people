@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Middlesex and Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 405; Boston, MA 02133
+  voice: 617-722-1650
+  fax: 617-722-1323
 links:
 - url: https://malegislature.gov/Legislators/Profile/SND0
 other_identifiers:
@@ -22,8 +27,8 @@ other_identifiers:
   identifier: MAL000250
 sources:
 - url: https://malegislature.gov/Legislators/Profile/SND0
-offices:
-- address: 24 Beacon St.;Room 405;Boston, MA, 02133
-  voice: 617-722-1650
-  fax: 617-722-1323
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/SND0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Assistant Majority Leader
+  member code: SND0

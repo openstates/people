@@ -3,15 +3,24 @@ name: Floyd Prozanski
 given_name: Floyd
 family_name: Prozanski
 email: Sen.FloydProzanski@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/prozanski.jpg
+image: https://www.oregonlegislature.gov/prozanski/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '4'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-413, Salem, OR, 97301
+  voice: 503-986-1704
+- classification: district
+  address: PO Box 11511, Eugene, OR 97440
+  voice: 541-342-2447
 links:
 - url: https://www.oregonlegislature.gov/prozanski
+- url: https://www.oregonlegislature.gov/prozanski
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000022
@@ -21,7 +30,4 @@ other_identifiers:
   identifier: ORL000356
 sources:
 - url: https://www.oregonlegislature.gov/prozanski
-offices:
-- address: 900 Court St NE, S-413, Salem, OR, 97301
-  voice: 503-986-1704
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

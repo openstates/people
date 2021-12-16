@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '124'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4037; Hartford, CT 06106-1591
+  voice: 860-240-0141
+- classification: district
+  address: 985 Stratford Avenue; Bridgeport, CT 06607
+- classification: district
+  address: 985 Stratford Avenue;Bridgeport, CT 06607
+  voice: 203-334-3876
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Baker
 other_names:
@@ -20,11 +30,9 @@ other_identifiers:
   identifier: CTL000304
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4037;Hartford, CT 06106
-  voice: 860-240-0141
-  classification: capitol
-- address: 985 Stratford Avenue;Bridgeport, CT 06607
-  voice: 203-334-3876
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Majority Whip-at-Large
+  committees: Appropriations; Banking; Planning and Development
+  committee codes: ;APP;BA;PD;
+  prison: '0'

@@ -8,6 +8,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '19'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2700; Hartford, CT 06106-1591
+  voice: 860-240-8600
+- classification: district
+  address: 187 Scotland Road; Baltic, CT 06330
+- classification: district
+  address: 187 Scotland Road;Baltic, CT 06330
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/Osten
 other_names:
@@ -17,10 +26,11 @@ other_identifiers:
   identifier: CTL000222
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2700;Hartford, CT 06106
-  voice: 860-240-8600
-  classification: capitol
-- address: 187 Scotland Road;Baltic, CT 06330
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy President Pro Tempore
+  committees: Appropriations (Chair); Public Safety and Security (Chair); General
+    Law; Legislative Management; Regulation Review; Transportation; Veterans' Affairs
+  committee codes: ;APP;GL;LM;PS;RR;TRA;VA;
+  business phone: 860-240-0579
+  prison: '0'

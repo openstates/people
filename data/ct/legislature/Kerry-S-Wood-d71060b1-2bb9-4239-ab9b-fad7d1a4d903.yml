@@ -9,17 +9,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '29'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 260 France Street; Rocky Hill, CT 06067
+- classification: district
+  address: 260 France Street;Rocky Hill, CT 06067
+  voice: 860-531-8322
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/wood
 other_names:
 - name: Wood, Kerry S.
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4000;Hartford, CT 06106
-  voice: 860-240-8585
-  classification: capitol
-- address: 260 France Street;Rocky Hill, CT 06067
-  voice: 860-531-8322
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Insurance and Real Estate (Chair); Commerce; Finance, Revenue and Bonding
+  committee codes: ;CE;FIN;INS;
+  business phone: 203-520-1794
+  prison: '0'

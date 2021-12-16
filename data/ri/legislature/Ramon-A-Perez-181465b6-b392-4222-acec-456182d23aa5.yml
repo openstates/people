@@ -8,17 +8,21 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '13'
+offices:
+- classification: district
+  address: 42 Ophelia Street, Providence RI 02909
+  voice: 401-301-6599
 links:
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
+- url: http://www.rilegislature.gov/representatives/perez/default.aspx
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilegislature.gov/representatives/perez/default.aspx
+- url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/representatives/perez/default.aspx
+  note: Image Source
 extras:
-  name_first: Ramon
-  name_last: Perez
-  name_middle: A.
-  town_represented: Johnston, Providence
-offices:
-- voice: 401-301-6599
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Johnston, Providence

@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '4'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2303; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 3 Linden Place; Hartford, CT 06106
+- classification: district
+  address: 3 Linden Place;Hartford, CT 06106
+  voice: 860-922-0768
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/concepcion
 other_names:
@@ -18,11 +28,11 @@ other_identifiers:
   identifier: CTL000366
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2303;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 3 Linden Place;Hartford, CT 06106
-  voice: 860-922-0768
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Majority Whip
+  committees: Executive and Legislative Nominations (Chair); Finance, Revenue and
+    Bonding; Transportation
+  committee codes: ;EXN;FIN;TRA;
+  business phone: 860-525-4451
+  prison: '0'

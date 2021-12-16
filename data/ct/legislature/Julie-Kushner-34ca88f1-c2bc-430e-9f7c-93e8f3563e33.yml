@@ -8,17 +8,26 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '24'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3800; Hartford, CT 06106-1591
+  voice: 860-240-0509
+- classification: district
+  address: 75 Old Ridgebury Road; Danbury, CT 06810
+- classification: district
+  address: 75 Old Ridgebury Road;Danbury, CT 06810
+  voice: 203-470-7957
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/kushner
 other_names:
 - name: Kushner, Julie
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3800;Hartford, CT 06106
-  voice: 860-240-0509
-  classification: capitol
-- address: 75 Old Ridgebury Road;Danbury, CT 06810
-  voice: 203-470-7957
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy President Pro Tempore
+  committees: Labor and Public Employees (Chair); Public Health (Vice Chair); Appropriations;
+    Education; Environment; Executive and Legislative Nominations; Housing
+  committee codes: ;APP;ED;ENV;EXN;HSG;LAB;PH;
+  prison: '0'

@@ -10,10 +10,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '42'
+offices:
+- classification: district
+  address: 5021 West Elm Court, Grand Forks, ND 58203-0606
+- classification: district
+  address: 5021 West Elm Court;Grand Forks, ND;58203-0606
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-emily-obrien
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-emily-obrien
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-emily-obrien
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-emily-obrien
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000501
@@ -21,7 +29,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-emily-obrien
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-emily-obrien
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-emily-obrien
-offices:
-- address: 5021 West Elm Court;Grand Forks, ND;58203-0606
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-emily-obrien
+extras:
+  bio info: []
+  Cell phone: 952-693-3109

@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 9th Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 473B; Boston, MA 02133
+  voice: 617-722-2263
 links:
 - url: https://malegislature.gov/Legislators/Profile/S_D1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/7c9814fe-451f-4697-a0bc-269557a5688c
 sources:
 - url: https://malegislature.gov/Legislators/Profile/S_D1
-offices:
-- address: 24 Beacon St.;Room 167;Boston, MA, 02133
-  voice: 617-722-2810
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/S_D1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: S_D1

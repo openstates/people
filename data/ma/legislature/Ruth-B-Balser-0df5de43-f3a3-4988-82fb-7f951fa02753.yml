@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 12th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 163; Boston, MA 02133
+  voice: 617-722-2199
+  fax: 617-626-0203
 links:
 - url: https://malegislature.gov/Legislators/Profile/RBB1
 other_identifiers:
@@ -23,8 +28,8 @@ other_identifiers:
   identifier: ocd-person/9db89358-c4f7-43ad-a761-5296188eff5d
 sources:
 - url: https://malegislature.gov/Legislators/Profile/RBB1
-offices:
-- address: 24 Beacon St.;Room 167;Boston, MA, 02133
-  voice: 617-722-2810
-  fax: 617-626-0119
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/RBB1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Second Division Chair
+  member code: RBB1

@@ -1,10 +1,10 @@
 id: ocd-person/a964be66-bd32-48ab-b6c4-9ede22177328
-name: Philip P.K. O'Neill
+name: "Philip P.K. O\u2019Neill"
 given_name: Philip
 family_name: O'Neill
 middle_name: P.K.
 email: PK.Oneill@asm.state.nv.us
-image: https://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/ONeill.PhilipPK.285.jpg
+image: https://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/ONeill.PhilipPK.285.jpg
 party:
 - name: Republican
 roles:
@@ -17,10 +17,23 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   district: '40'
+offices:
+- classification: capitol
+  address: Room 3124A;c/o Nevada Assembly;401 South Carson Street;Carson City, NV
+    89701-4747
+  voice: 775-684-8825
+- classification: district
+  address: 1216 Sonoma St.;Carson City,;NV 89701-6175
+- classification: district
+  address: 1216 Sonoma St.;Carson City, NV 89701-6175
+  name: 'District Office #1'
 links:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=285
+- url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/40
+  note: homepage
 other_names:
 - name: "Philip P.K. O\xE2\x80\x99Neill"
+- name: Philip P.K. O'Neill
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NVL000291
@@ -32,7 +45,5 @@ other_identifiers:
   identifier: NVL000359
 sources:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=285
-offices:
-- address: 1216 Sonoma St.;Carson City, NV 89701-6175
-  classification: district
-  name: 'District Office #1'
+- url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current
+- url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/40

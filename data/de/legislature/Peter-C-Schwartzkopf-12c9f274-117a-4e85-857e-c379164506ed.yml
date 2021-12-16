@@ -2,7 +2,7 @@ id: ocd-person/12c9f274-117a-4e85-857e-c379164506ed
 name: Peter C. Schwartzkopf
 given_name: Peter C.
 family_name: Schwartzkopf
-email: Peter.Schwartzkopf@state.de.us
+email: Peter.Schwartzkopf@delaware.gov
 image: https://legis.delaware.gov/images/default-source/default-album/PeterSchwartzkopf.jpg?sfvrsn=0
 party:
 - name: Democratic
@@ -10,9 +10,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '14'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4351
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=260
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=260
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000052
@@ -21,7 +27,7 @@ other_identifiers:
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4351
-  classification: capitol
+- url: https://legis.delaware.gov/json/House/GetRepresentatives
+- url: https://legis.delaware.gov/LegislatorDetail?personId=260
+extras:
+  title: Speaker of the House

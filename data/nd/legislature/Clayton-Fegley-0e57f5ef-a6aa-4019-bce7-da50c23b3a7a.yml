@@ -10,16 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '4'
+offices:
+- classification: district
+  address: 10801 240th Street NW, Berthold, ND 58718-9619
+  voice: 701-453-3621
+- classification: district
+  address: 10801 240th Street NW;Berthold, ND;58718-9619
+  voice: 701-453-3151
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-clayton-fegley
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-clayton-fegley
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-clayton-fegley
+  note: homepage
 sources:
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-clayton-fegley
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-clayton-fegley
-offices:
-- voice: 701-453-3621
-  classification: capitol
-- address: 10801 240th Street NW;Berthold, ND;58718-9619
-  voice: 701-453-3151
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-clayton-fegley
+extras:
+  bio info: []
+  Home phone: 701-453-3151
+  Cell phone: 701-263-1442

@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '20'
+offices:
+- classification: capitol
+  voice: 208-332-1062
+- classification: district
+  address: 1524 N Meridian Rd, Meridian, ID, 83642
+  name: 'District Office #1'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=20
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=20
+  note: homepage
 other_names:
 - name: Joe Palmer
 other_identifiers:
@@ -24,9 +32,3 @@ other_identifiers:
   identifier: ocd-person/ac5fec91-bd3b-4f3c-a188-ce2ed12ab367
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1062
-  classification: capitol
-- address: 1524 N Meridian Rd, Meridian, ID, 83642
-  classification: district
-  name: 'District Office #1'

@@ -10,8 +10,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '4'
+offices:
+- classification: capitol
+  address: House Majority Office Room 333, State House 2 State House Station Augusta,
+    Maine 04333-0002
+- classification: district
+  address: 34 High Pine Road, York, ME 03909
+  voice: 207-363-8353
+  name: 'District Office #1'
 links:
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/92
+- url: https://legislature.maine.gov/house/house/MemberProfiles/Details/92
+  note: homepage
 other_names:
 - name: HYMANSON of York
 other_identifiers:
@@ -19,10 +29,12 @@ other_identifiers:
   identifier: MEL000447
 sources:
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/92
+- url: https://legislature.maine.gov/house/house/MemberProfiles/ListAlpha
 extras:
-  district_name: York
-offices:
-- address: 34 High Pine Road, York, ME 03909
-  voice: 207-363-8353
-  classification: district
-  name: 'District Office #1'
+  Seat Number: '31'
+  towns represented:
+  - Ogunquit
+  - Sanford (Part)
+  - Wells (Part)
+  - York (Part)
+  occupation: Physician, Retired Business Owner

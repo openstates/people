@@ -10,11 +10,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Hampden
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 413-B; Boston, MA 02133
+  voice: 617-722-1660
 links:
 - url: https://malegislature.gov/Legislators/Profile/A_G0
 sources:
 - url: https://malegislature.gov/Legislators/Profile/A_G0
-offices:
-- address: 24 Beacon St.;Room 413-B;Boston, MA, 02133
-  voice: 617-722-1660
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/A_G0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: A_G0

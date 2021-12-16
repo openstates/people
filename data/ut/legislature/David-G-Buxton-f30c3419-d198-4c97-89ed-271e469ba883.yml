@@ -10,8 +10,23 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '20'
+offices:
+- classification: district
+  address: 4162 S 2340 W, ROY, UT, 84067
+  voice: 801-707-7095
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/david-buxton
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BUXTODG
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist20.pdf
+  note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIBUXTODG.pdf
+  note: conflict of interest 0
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414407
+  note: finance report
+- url: https://senate.utah.gov/sen/BUXTODG/
+  note: homepage
 other_names:
 - name: Buxton, David G.
 - name: Buxton, D. G.
@@ -22,12 +37,14 @@ other_identifiers:
   identifier: UTL000299
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/BUXTODG/
 extras:
-  links:
-  - https://le.utah.gov/senate/CofI/COFIBUXTODG.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414407
-offices:
-- address: 4162 S 2340 W, ROY, UT, 84067
-  voice: 801-707-7095
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2017
+  profession: General Contractor, Land Developer
+  education: Weber State University; Stevens Henager College
+  counties represented:
+  - Davis
+  - Weber
+  cell phone: 801-707-7095
+  title: Senate Rules Chair

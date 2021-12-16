@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '30'
+offices:
+- classification: capitol
+  voice: 208-332-1071
+- classification: district
+  address: 1860 Heather Circle, Idaho Falls, ID, 83406
+  voice: 208-522-4387
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=30
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=30
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000257
@@ -22,9 +30,3 @@ other_identifiers:
   identifier: ocd-person/452e15dc-2dd6-4fac-84c6-dd09f92b8f30
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1071
-  classification: capitol
-- address: 1860 Heather Circle, Idaho Falls, ID, 83406
-  classification: district
-  name: 'District Office #1'

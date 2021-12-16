@@ -11,6 +11,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 3rd Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 243; Boston, MA 02133
+  voice: 617-722-2990
+  fax: 617-570-6575
 links:
 - url: https://malegislature.gov/Legislators/Profile/AMM1
 other_identifiers:
@@ -18,8 +23,8 @@ other_identifiers:
   identifier: MAL000565
 sources:
 - url: https://malegislature.gov/Legislators/Profile/AMM1
-offices:
-- address: 24 Beacon St.;Room 243;Boston, MA, 02133
-  voice: 617-722-2990
-  fax: 617-570-6575
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AMM1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: House Ways and Means Chair
+  member code: AMM1

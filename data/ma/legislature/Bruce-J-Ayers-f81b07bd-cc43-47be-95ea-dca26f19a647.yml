@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 167; Boston, MA 02133
+  voice: 617-722-2230
 links:
 - url: https://malegislature.gov/Legislators/Profile/BJA1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/78df089d-a1f9-4cf3-9b1c-aaef4ddbefa9
 sources:
 - url: https://malegislature.gov/Legislators/Profile/BJA1
-offices:
-- address: 24 Beacon St.;Room 167;Boston, MA, 02133
-  voice: 617-722-2230
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BJA1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: BJA1

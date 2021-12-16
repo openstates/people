@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '12'
+offices:
+- classification: capitol
+  voice: 208-332-1059
+- classification: district
+  address: 12612 Smith Ave, Nampa, ID, 83651
+  voice: 208-412-5107
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=12
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=12
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000245
@@ -22,9 +30,3 @@ other_identifiers:
   identifier: ocd-person/87ed547a-3729-4c9b-86c5-9491320e3292
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1059
-  classification: capitol
-- address: 12612 Smith Ave, Nampa, ID, 83651
-  classification: district
-  name: 'District Office #1'

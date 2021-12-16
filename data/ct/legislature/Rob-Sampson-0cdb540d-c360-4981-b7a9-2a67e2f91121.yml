@@ -9,14 +9,23 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '16'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3400; Hartford, CT 06106-1591
+  voice: 860-240-8800
+- classification: district
+  address: ; , CT
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: http://www.ctsenaterepublicans.com/home-sampson
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3400;Hartford, CT 06106
-  voice: 860-240-8800
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Senate Republican Leader
+  committees: Government Administration and Elections (Ranking Member); Labor and
+    Public Employees (Ranking Member); Commerce; Judiciary
+  committee codes: ;CE;GAE;JUD;LAB;
+  prison: '0'

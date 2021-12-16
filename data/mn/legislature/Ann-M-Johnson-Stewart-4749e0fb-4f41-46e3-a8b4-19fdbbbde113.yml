@@ -11,14 +11,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '44'
+offices:
+- classification: capitol
+  address: 2413 Minnesota Senate Bldg.; St. Paul, MN 55155
+  voice: 651-296-9261
+- classification: district
+  address: 213 Townes Lane;Wayzata, MN 55391
+  name: 'District Office #1'
 links:
 - url: https://www.senate.mn/members/member_bio.html?member_id=1243
+- url: https://www.senate.mn/members/member_bio.html?mem_id=1243
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-offices:
-- address: 213 Townes Lane;Wayzata, MN 55391
-  classification: district
-  name: 'District Office #1'
-- voice: 651-296-9261
-  classification: capitol
+- url: https://www.senate.mn/api/members

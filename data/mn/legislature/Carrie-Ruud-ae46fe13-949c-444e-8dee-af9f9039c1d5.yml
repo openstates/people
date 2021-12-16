@@ -10,6 +10,13 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '10'
+offices:
+- classification: capitol
+  address: 3233 Minnesota Senate Bldg.; St. Paul, MN 55155
+  voice: 651-296-4913
+- classification: district
+  address: 8636 Bluebird Lane;Breezy Point, MN 56472
+  name: 'District Office #1'
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1196
 other_identifiers:
@@ -18,9 +25,4 @@ other_identifiers:
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-offices:
-- address: 8636 Bluebird Lane;Breezy Point, MN 56472
-  classification: district
-  name: 'District Office #1'
-- voice: 651-296-4913
-  classification: capitol
+- url: https://www.senate.mn/api/members

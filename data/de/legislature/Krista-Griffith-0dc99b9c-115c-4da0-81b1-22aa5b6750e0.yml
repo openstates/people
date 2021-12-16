@@ -2,7 +2,7 @@ id: ocd-person/0dc99b9c-115c-4da0-81b1-22aa5b6750e0
 name: Krista Griffith
 given_name: Krista
 family_name: Griffith
-email: Krista.griffith@state.de.us
+email: Krista.Griffith@delaware.gov
 image: https://legis.delaware.gov/Content/images/placeholder_leg.png
 party:
 - name: Democratic
@@ -10,13 +10,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '12'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4351
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=13593
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=13593
+  note: homepage
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4351
-  classification: capitol
+- url: https://legis.delaware.gov/json/House/GetRepresentatives
+- url: https://legis.delaware.gov/LegislatorDetail?personId=13593

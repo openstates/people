@@ -1,5 +1,5 @@
 id: ocd-person/f45bc8b4-9df5-40f6-9e14-1acc6987e058
-name: Jessica Brumsted
+name: Jessica C. Brumsted
 given_name: Jessica
 family_name: Brumsted
 email: JBrumsted@leg.state.vt.us
@@ -10,9 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-5-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 217 Heather Lane Shelburne, VT 05482
+- classification: district
+  address: 217 Heather Lane;Shelburne, VT 05482
+  voice: 802-985-9588
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27160
 - url: http://legislature.vermont.gov/people/single/2022/27160
+- url: http://legislature.vermont.gov/people/single/2022/27160
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-5-2.pdf
+  note: district map
+other_names:
+- name: Jessica Brumsted
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000842
@@ -21,10 +37,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27160
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27160
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 217 Heather Lane;Shelburne, VT 05482
-  voice: 802-985-9588
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Shelburne, VT 05482
+  home phone: (802) 985-9588
+  state email: JBrumsted@leg.state.vt.us

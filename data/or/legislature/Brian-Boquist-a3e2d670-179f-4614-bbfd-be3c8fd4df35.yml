@@ -3,15 +3,23 @@ name: Brian Boquist
 given_name: Brian
 family_name: Boquist
 email: Sen.BrianBoquist@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/boquist.jpg
+image: https://www.oregonlegislature.gov/boquist/PublishingImages/member_photo.jpg
 party:
-- name: Republican
+- end_date: '2021-12-14'
+  name: Republican
+- name: Independent
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '12'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-311, Salem, OR, 97301
+  voice: 503-986-1712
 links:
 - url: https://www.oregonlegislature.gov/boquist
+- url: https://www.oregonlegislature.gov/boquist
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000005
@@ -21,7 +29,4 @@ other_identifiers:
   identifier: ORL000304
 sources:
 - url: https://www.oregonlegislature.gov/boquist
-offices:
-- address: 900 Court St NE, S-311, Salem, OR, 97301
-  voice: 503-986-1712
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '22'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3003; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: PO Box 310; Plainville, CT 06062
+- classification: district
+  address: PO Box 310;Plainville, CT 06062
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Petit/
 other_names:
@@ -18,10 +27,8 @@ other_identifiers:
   identifier: CTL000346
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3003;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: PO Box 310;Plainville, CT 06062
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Public Health (Ranking Member); Education; Energy and Technology
+  committee codes: ;ED;ET;PH;
+  prison: '0'

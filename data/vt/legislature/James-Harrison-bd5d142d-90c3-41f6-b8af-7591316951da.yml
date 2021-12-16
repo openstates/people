@@ -10,9 +10,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-Windsor-1
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 75 Lazy Acres Rd. No. Chittenden, VT 05763
+- classification: district
+  address: 75 Lazy Acres Rd.;No. Chittenden, VT 05763
+  voice: 802-236-3001
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/28878
 - url: http://legislature.vermont.gov/people/single/2022/28878
+- url: http://legislature.vermont.gov/people/single/2022/28878
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-WDR-1.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000873
@@ -21,10 +35,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/28878
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/28878
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 75 Lazy Acres Rd.;No. Chittenden, VT 05763
-  voice: 802-236-3001
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: North Chittenden, VT 05763
+  home phone: (802) 236-3001
+  state email: jharrison@leg.state.vt.us

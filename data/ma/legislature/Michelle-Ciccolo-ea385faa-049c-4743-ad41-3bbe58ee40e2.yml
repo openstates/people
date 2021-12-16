@@ -9,11 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 15th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 473F; Boston, MA 02133
+  voice: 617-722-2210
 links:
 - url: https://malegislature.gov/Legislators/Profile/M_C2
 sources:
 - url: https://malegislature.gov/Legislators/Profile/M_C2
-offices:
-- address: 24 Beacon St.;Room 473F;Boston, MA, 02133
-  voice: 617-722-2210
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/M_C2
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: M_C2

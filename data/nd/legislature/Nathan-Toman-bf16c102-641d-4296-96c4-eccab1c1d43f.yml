@@ -10,10 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '34'
+offices:
+- classification: district
+  address: 203 Fourth Avenue NW, Mandan, ND 58554-3135
+- classification: district
+  address: 203 Fourth Avenue NW;Mandan, ND;58554-3135
+  voice: 701-484-1906
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-nathan-toman
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-nathan-toman
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-nathan-toman
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-nathan-toman
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000250
@@ -23,8 +32,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-nathan-toman
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-nathan-toman
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-nathan-toman
-offices:
-- address: 203 Fourth Avenue NW;Mandan, ND;58554-3135
-  voice: 701-484-1906
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-nathan-toman
+extras:
+  bio info: []
+  Cell phone: 701-484-1906

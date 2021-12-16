@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '63'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2004; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: P.O. Box 573; Winsted, CT 06098
+- classification: district
+  address: P.O. Box 573;Winsted, CT 06098
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Case/
 other_names:
@@ -18,10 +27,10 @@ other_identifiers:
   identifier: CTL000205
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2004;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: P.O. Box 573;Winsted, CT 06098
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: House Republican Whip
+  committees: Human Services (Ranking Member); Aging; Higher Education and Employment
+    Advancement
+  committee codes: ;AGE;HED;HS;
+  prison: '0'

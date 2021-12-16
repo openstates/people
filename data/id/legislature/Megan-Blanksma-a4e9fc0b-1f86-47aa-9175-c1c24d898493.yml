@@ -10,16 +10,20 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '23'
+offices:
+- classification: capitol
+  voice: 208-332-1054
+- classification: district
+  address: 595 S Thacker Rd, Hammett, ID, 83627
+  voice: 208-366-7976
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=23
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=23
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000264
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1054
-  classification: capitol
-- address: 595 S Thacker Rd, Hammett, ID, 83627
-  classification: district
-  name: 'District Office #1'
+extras:
+  title: Majority Caucus Chair

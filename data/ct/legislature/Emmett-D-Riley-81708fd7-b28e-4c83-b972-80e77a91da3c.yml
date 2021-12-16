@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '46'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4112; Hartford, CT 06106-1591
+  voice: 860-240-8382
+- classification: district
+  address: 25 Sherwood Lane; Norwich, CT 06360
+- classification: district
+  address: 25 Sherwood Lane;Norwich, CT 06360
+  voice: 860-887-6228
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Riley
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000202
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4112;Hartford, CT 06106
-  voice: 860-240-8382
-  classification: capitol
-- address: 25 Sherwood Lane;Norwich, CT 06360
-  voice: 860-887-6228
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Speaker of the House
+  committees: General Law; Insurance and Real Estate; Judiciary; Legislative Management
+  committee codes: ;GL;INS;JUD;LM;
+  prison: '0'

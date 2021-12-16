@@ -9,6 +9,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '11'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3300; Hartford, CT 06106-1591
+  voice: 860-240-8614
+- classification: district
+  address: 132 Fort Hale Road; New Haven, CT 06512
+- classification: district
+  address: 132 Fort Hale Road;New Haven, CT 06512
+  voice: 203-468-8829
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/Looney
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000011
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3300;Hartford, CT 06106
-  voice: 860-240-8614
-  classification: capitol
-- address: 132 Fort Hale Road;New Haven, CT 06512
-  voice: 203-468-8829
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Senate President Pro Tempore
+  committees: Legislative Management (Chair); Executive and Legislative Nominations
+    (Vice Chair)
+  committee codes: ;EXN;LM;
+  prison: '0'

@@ -9,6 +9,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '8'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3400; Hartford, CT 06106-1591
+  voice: 860-240-8800
+- classification: district
+  address: 15 High Ledge Road; Canton, CT 06019
+- classification: district
+  address: 15 High Ledge Road;Canton, CT 06019
+  name: 'District Office #1'
 links:
 - url: http://www.ctsenaterepublicans.com/home-witkos
 other_names:
@@ -18,10 +27,10 @@ other_identifiers:
   identifier: CTL000008
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3400;Hartford, CT 06106
-  voice: 860-240-8800
-  classification: capitol
-- address: 15 High Ledge Road;Canton, CT 06019
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Chief Deputy Senate Republican Leader
+  committees: General Law (Ranking Member); Higher Education and Employment Advancement
+    (Ranking Member); Internship (Ranking Member); Finance, Revenue and Bonding
+  committee codes: ;FIN;GL;HED;ISC;
+  prison: '0'

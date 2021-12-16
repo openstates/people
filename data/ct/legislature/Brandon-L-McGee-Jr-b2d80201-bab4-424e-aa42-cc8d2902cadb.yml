@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '5'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 5009; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 43 Warren Street; Hartford, CT 06120
+- classification: district
+  address: 43 Warren Street;Hartford, CT 06120
+  voice: 860-578-2979
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/McGee
 other_names:
@@ -24,11 +34,8 @@ other_identifiers:
   identifier: CTL000249
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 5009;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 43 Warren Street;Hartford, CT 06120
-  voice: 860-578-2979
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Housing (Chair); Appropriations; Education
+  committee codes: ;APP;ED;HSG;
+  prison: '0'

@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '36'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4045; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 29 East Liberty Street; Chester, CT 06412
+- classification: district
+  address: 29 East Liberty Street;Chester, CT 06412
+  voice: 860-836-2145
+  name: 'District Office #1'
 links:
 - url: http:////www.housedems.ct.gov/palm
 - url: http://www.housedems.ct.gov/palm
@@ -16,11 +26,10 @@ other_names:
 - name: Palm, Christine
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4045;Hartford, CT 06106
-  voice: 860-240-8585
-  classification: capitol
-- address: 29 East Liberty Street;Chester, CT 06412
-  voice: 860-836-2145
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Assistant Majority Leader
+  committees: Environment (Vice Chair); Internship (Ranking Member); Government Administration
+    and Elections; Judiciary
+  committee codes: ;ENV;GAE;ISC;JUD;
+  prison: '0'

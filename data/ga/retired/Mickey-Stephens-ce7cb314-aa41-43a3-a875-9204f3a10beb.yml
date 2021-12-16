@@ -1,0 +1,44 @@
+id: ocd-person/ce7cb314-aa41-43a3-a875-9204f3a10beb
+name: Mickey Stephens
+given_name: Mickey
+family_name: Stephens
+email: mickey.stephens@gmail.com
+image: https://www.legis.ga.gov/api/images/default-source/portraits/stephens-mickey-743.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2021-08-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '165'
+offices:
+- classification: capitol
+  address: 604-A Coverdell Legislative Office Building; Atlanta, GA 30334
+  voice: 404-656-0265
+- classification: district
+  address: PO Box 5485; Savannah, Ga 31414
+  voice: 912-661-1733
+links:
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=743&Session=27
+- url: https://www.legis.ga.gov/members/house/743?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000210
+- scheme: legacy_openstates
+  identifier: GAL000358
+sources:
+- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=743&Session=27
+- url: https://www.legis.ga.gov/members/house/743?session=1029
+- url: https://www.legis.ga.gov/members/house/743?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/743?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+extras:
+  residence: Savannah
+  city: Savannah
+  georgia_id: 743
+  birthday: April 4
+  occupation: Retired Educator
+  press: https://house-press.com/representative/Mickey-Stephens
+  spouse: Gloria

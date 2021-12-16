@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '144'
+offices:
+- classification: capitol
+  address: Capitol Building Room 407; Hartford, CT 06106-1591
+  voice: 860-240-0388
+- classification: district
+  address: 48 Lakeview Drive; Stamford, CT 06905
+- classification: district
+  address: 48 Lakeview Drive;Stamford, CT 06905
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Simmons
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000264
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Capitol Building;Room 407;Hartford, CT 06106
-  voice: 860-240-0388
-  classification: capitol
-- address: 48 Lakeview Drive;Stamford, CT 06905
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Commerce (Chair); Higher Education and Employment Advancement; Human
+    Services
+  committee codes: ;CE;HED;HS;
+  prison: '0'

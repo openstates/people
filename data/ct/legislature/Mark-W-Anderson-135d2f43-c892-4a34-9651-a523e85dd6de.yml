@@ -7,15 +7,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '62'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4052; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 49 Hunt Glen Drive; Granby, CT 06035
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: https://www.cthousegop.com/Anderson
 other_names:
 - name: Anderson, Mark W
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Commerce; Labor and Public Employees; Veterans' Affairs
+  committee codes: ;CE;LAB;VA;
+  prison: '0'

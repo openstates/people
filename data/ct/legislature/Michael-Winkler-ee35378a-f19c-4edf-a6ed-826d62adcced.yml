@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '56'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4026; Hartford, CT 06106-1591
+  voice: 860-240-8771
+- classification: district
+  address: 20 Gottier Drive; Vernon, CT 06066
+- classification: district
+  address: 20 Gottier Drive;Vernon, CT 06066
+  voice: 860-875-3149
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Winkler
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000349
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4026;Hartford, CT 06106
-  voice: 860-240-8771
-  classification: capitol
-- address: 20 Gottier Drive;Vernon, CT 06066
-  voice: 860-875-3149
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Majority Leader
+  committees: General Law; Labor and Public Employees; Planning and Development
+  committee codes: ;GL;LAB;PD;
+  business phone: 860-240-8771
+  prison: '0'

@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '41'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4100; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 95 Corey Road; Groton, CT 06340
+- classification: district
+  address: 95 Corey Road;Groton, CT 06340
+  voice: 860-271-1834
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/delaCruz
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000345
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4100;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 95 Corey Road;Groton, CT 06340
-  voice: 860-271-1834
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Majority Whip
+  committees: Aging; Housing; Veterans' Affairs
+  committee codes: ;AGE;HSG;VA;
+  prison: '0'

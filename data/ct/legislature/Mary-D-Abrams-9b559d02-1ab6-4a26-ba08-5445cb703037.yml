@@ -8,16 +8,25 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '13'
+offices:
+- classification: capitol
+  address: State Capitol Room 3000; Hartford, CT 06106-1591
+  voice: 860-240-0584
+- classification: district
+  address: 300 Capitol Avenue; Hartford, CT 06106
+- classification: district
+  address: 300 Capitol Avenue;Hartford, CT 06106
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/abrams
 other_names:
 - name: Daugherty Abrams, Mary
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: State Capitol;Room 3000;Hartford, CT 06106
-  voice: 860-240-0584
-  classification: capitol
-- address: 300 Capitol Avenue;Hartford, CT 06106
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy President Pro Tempore
+  committees: Public Health (Chair); Education (Vice Chair); Aging; Appropriations;
+    Transportation; Veterans' Affairs
+  committee codes: ;AGE;APP;ED;PH;TRA;VA;
+  prison: '0'

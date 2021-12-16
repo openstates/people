@@ -10,13 +10,27 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '31'
+offices:
+- classification: capitol
+  address: Room 308 P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-2220
+- classification: district
+  address: P. O. Box 28 Newton, Mississippi 39345
 links:
 - url: http://billstatus.ls.state.ms.us/members/senate/mccaughn.xml
+- url: http://billstatus.ls.state.ms.us/members/senate/mccaughn.xml
+  note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/mccaughn.xml
+- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
-  org_info: ''
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3229
-  classification: capitol
+  education:
+  - Morton High School
+  - Jones Junior College
+  - University of Mississippi
+  - Mississippi College School of Law
+  counties represented:
+  - Lauderdale
+  - Newton
+  - Scott
+  other phone: (601)683-2382

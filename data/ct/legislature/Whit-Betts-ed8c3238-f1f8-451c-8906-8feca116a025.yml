@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '78'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 1803; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 1924 Perkins Street; Bristol, CT 06010
+- classification: district
+  address: 1924 Perkins Street;Bristol, CT 06010
+  voice: 860-582-7105
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Betts/
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000114
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 1803;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 1924 Perkins Street;Bristol, CT 06010
-  voice: 860-582-7105
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Senior House Republican Whip
+  committees: Appropriations; Environment; Public Health
+  committee codes: ;APP;ENV;PH;
+  prison: '0'

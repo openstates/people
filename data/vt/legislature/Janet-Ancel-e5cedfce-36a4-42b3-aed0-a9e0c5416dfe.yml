@@ -10,9 +10,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington-6
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: P.O. Box 123 Calais, VT 05648
+- classification: district
+  address: P.O. Box 123;Calais, VT 05648
+  voice: 802-249-1660
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14580
 - url: http://legislature.vermont.gov/people/single/2022/14580
+- url: http://legislature.vermont.gov/people/single/2022/14580
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WAS-6.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000034
@@ -21,10 +35,7 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14580
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14580
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: P.O. Box 123;Calais, VT 05648
-  voice: 802-249-1660
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Calais, VT 05648
+  home phone: (802) 249-1660

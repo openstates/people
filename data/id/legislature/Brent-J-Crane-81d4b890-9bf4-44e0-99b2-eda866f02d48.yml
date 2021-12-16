@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '13'
+offices:
+- classification: capitol
+  voice: 208-332-1058
+- classification: district
+  address: PO Box 86, Nampa, ID, 83653
+  name: 'District Office #1'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=13
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=13
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000302
@@ -22,9 +30,3 @@ other_identifiers:
   identifier: ocd-person/5d9104b3-6039-4fdd-a422-97963070a9ce
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1058
-  classification: capitol
-- address: PO Box 86, Nampa, ID, 83653
-  classification: district
-  name: 'District Office #1'

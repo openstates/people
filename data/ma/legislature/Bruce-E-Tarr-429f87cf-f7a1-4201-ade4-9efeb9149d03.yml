@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Essex and Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 308; Boston, MA 02133
+  voice: 617-722-1600
+  fax: 617-722-1310
 links:
 - url: https://malegislature.gov/Legislators/Profile/BET0
 other_identifiers:
@@ -20,8 +25,8 @@ other_identifiers:
   identifier: MAL000271
 sources:
 - url: https://malegislature.gov/Legislators/Profile/BET0
-offices:
-- address: 24 Beacon St.;Room 308;Boston, MA, 02133
-  voice: 617-722-1600
-  fax: 617-722-1310
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/BET0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Minority Leader
+  member code: BET0

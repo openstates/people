@@ -9,6 +9,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '32'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3400; Hartford, CT 06106-1591
+  voice: 860-240-8800
+- classification: district
+  address: 92 Malvern Hill Road; Watertown, CT 06795
+- classification: district
+  address: 92 Malvern Hill Road;Watertown, CT 06795
+  name: 'District Office #1'
 links:
 - url: http://www.ctsenaterepublicans.com/home-Berthel
 other_names:
@@ -20,10 +29,10 @@ other_identifiers:
   identifier: CTL000358
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3400;Hartford, CT 06106
-  voice: 860-240-8800
-  classification: capitol
-- address: 92 Malvern Hill Road;Watertown, CT 06795
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Senate Republican Leader
+  committees: Banking (Ranking Member); Education (Ranking Member); Human Services
+    (Ranking Member); Veterans' Affairs
+  committee codes: ;BA;ED;HS;VA;
+  prison: '0'

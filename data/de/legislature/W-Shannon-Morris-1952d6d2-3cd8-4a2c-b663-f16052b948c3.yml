@@ -2,7 +2,7 @@ id: ocd-person/1952d6d2-3cd8-4a2c-b663-f16052b948c3
 name: Shannon Morris
 given_name: Shannon
 family_name: Morris
-email: Shannon.Morris@state.de.us
+email: Shannon.Morris@delaware.gov
 image: https://legis.delaware.gov/Content/images/placeholder_leg.png
 party:
 - name: Republican
@@ -10,15 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '30'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4171
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=13597
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=13597
+  note: homepage
 other_names:
 - name: W. Shannon Morris
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4171
-  classification: capitol
+- url: https://legis.delaware.gov/json/House/GetRepresentatives
+- url: https://legis.delaware.gov/LegislatorDetail?personId=13597

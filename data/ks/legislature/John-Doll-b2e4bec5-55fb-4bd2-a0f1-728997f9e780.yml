@@ -11,7 +11,9 @@ party:
   end_date: 2019-06-20
   name: Independent
 - start_date: 2019-06-20
+  end_date: '2021-12-14'
   name: Republican
+- name: Republican
 roles:
 - start_date: 2013-01-01
   end_date: 2016-12-31
@@ -21,6 +23,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '39'
+offices:
+- classification: capitol
+  address: Room 237-E; Kansas State Capitol Building; 300 SW 10th St.; Topeka, KS
+    66612
+  voice: 785-296-7694
 links:
 - url: http://www.kslegislature.org/li/b2019_20/members/sen_doll_john_1/
 - url: http://www.kslegislature.org/li/b2021_22/members/sen_doll_john_1/
@@ -33,9 +40,6 @@ other_identifiers:
   identifier: ocd-person/688d0f00-232d-4ef6-85f8-08885cdf6981
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/sen_doll_john_1
+- url: http://www.kslegislature.org/li/api/v11/rev-1/members/sen_doll_john_1/
 extras:
   occupation: Self-Employed
-offices:
-- address: Room 237-E;Kansas State Capitol Building;300 SW 10th St.;Topeka, KS 66612
-  voice: 785-296-7694
-  classification: capitol

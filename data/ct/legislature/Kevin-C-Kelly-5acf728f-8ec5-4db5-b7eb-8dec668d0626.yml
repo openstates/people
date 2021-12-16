@@ -9,6 +9,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '21'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2803; Hartford, CT 06106-1591
+  voice: 860-240-8800
+- classification: district
+  address: 240 York Street; Stratford, CT 06615
+- classification: district
+  address: 240 York Street;Stratford, CT 06615
+  name: 'District Office #1'
 links:
 - url: http://www.ctsenaterepublicans.com/home-kelly
 other_names:
@@ -18,10 +27,10 @@ other_identifiers:
   identifier: CTL000021
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2803;Hartford, CT 06106
-  voice: 860-240-8800
-  classification: capitol
-- address: 240 York Street;Stratford, CT 06615
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Senate Republican Leader
+  committees: Aging (Ranking Member); Executive and Legislative Nominations (Ranking
+    Member); Legislative Management (Ranking Member); Regulation Review
+  committee codes: ;AGE;EXN;LM;RR;
+  prison: '0'

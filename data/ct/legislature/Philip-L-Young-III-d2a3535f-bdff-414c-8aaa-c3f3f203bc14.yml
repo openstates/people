@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '120'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4100; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 88 Wood Avenue; Stratford, CT 06614
+- classification: district
+  address: 88 Wood Avenue;Stratford, CT 06614
+  voice: 203-502-1458
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/young
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000365
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4100;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 88 Wood Avenue;Stratford, CT 06614
-  voice: 203-502-1458
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Majority Whip
+  committees: Environment; Judiciary; Public Health
+  committee codes: ;ENV;JUD;PH;
+  prison: '0'

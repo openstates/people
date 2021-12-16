@@ -10,10 +10,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '56'
+offices:
+- classification: capitol
+  address: Room 318 North State Capitol PO Box 8953 Madison, WI 53708
+  voice: 608-266-7500
+  fax: 608-282-3656
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1588
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1850
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2165
+- url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2165
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000525
@@ -21,8 +28,11 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1588
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1850
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2165
-offices:
-- address: Room 318 North;State Capitol;PO Box 8953;Madison, WI 53708
-  voice: 608-266-7500
-  fax: 608-282-3656
-  classification: capitol
+- url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
+extras:
+  website: http://legis.wisconsin.gov/assembly/56/murphy
+  extra phone: (888) 534-0056
+  staff1: Christian Gonzalez-Caraballo
+  staff_email1: Christian.Gonzalez-Caraballo@legis.wisconsin.gov
+  staff2: Michael Moscicke
+  staff_email2: Michael.Moscicke@legis.wisconsin.gov

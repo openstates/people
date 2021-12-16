@@ -11,6 +11,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 7th Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 155; Boston, MA 02133
+  voice: 617-722-2450
 links:
 - url: https://malegislature.gov/Legislators/Profile/C_T1
 other_identifiers:
@@ -18,7 +22,7 @@ other_identifiers:
   identifier: MAL000544
 sources:
 - url: https://malegislature.gov/Legislators/Profile/C_T1
-offices:
-- address: 24 Beacon St.;Room 155;Boston, MA, 02133
-  voice: 617-722-2450
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/C_T1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: C_T1

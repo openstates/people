@@ -1,5 +1,5 @@
 id: ocd-person/73ee356a-069a-4f2c-938d-2bab3d81b49a
-name: Martin LaLonde
+name: Martin J. LaLonde
 given_name: Martin
 family_name: LaLonde
 email: martinlalonde@comcast.net
@@ -10,9 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-7-1
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 115 State St Montpelier, VT 05603
+- classification: district
+  address: 304 Four Sisters Rd.;South Burlington, VT 05403
+  voice: 802-863-3086
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24010
 - url: http://legislature.vermont.gov/people/single/2022/24010
+- url: http://legislature.vermont.gov/people/single/2022/24010
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-7-1.pdf
+  note: district map
+other_names:
+- name: Martin LaLonde
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000401
@@ -23,10 +39,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/24010
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24010
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 304 Four Sisters Rd.;South Burlington, VT 05403
-  voice: 802-863-3086
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: South Burlington, VT 05403
+  home phone: (802) 863-3086
+  state email: mlalonde@leg.state.vt.us

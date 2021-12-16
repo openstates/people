@@ -11,6 +11,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 16th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 473B; Boston, MA 02133
+  voice: 617-722-2263
+  fax: 617-570-2837
 links:
 - url: https://malegislature.gov/Legislators/Profile/TAG1
 other_identifiers:
@@ -18,8 +23,8 @@ other_identifiers:
   identifier: MAL000465
 sources:
 - url: https://malegislature.gov/Legislators/Profile/TAG1
-offices:
-- address: 24 Beacon St.;Room 473B;Boston, MA, 02133
-  voice: 617-722-2263
-  fax: 617-570-2837
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/TAG1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Fourth Division Chair
+  member code: TAG1

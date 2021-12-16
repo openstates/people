@@ -3,7 +3,7 @@ name: Jami Cate
 given_name: Jami
 family_name: Cate
 email: Rep.JamiCate@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/cate.jpg
+image: https://www.oregonlegislature.gov/cate/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
@@ -11,11 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '17'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-378, Salem, OR, 97301
+  voice: 503-986-1417
 links:
 - url: https://www.oregonlegislature.gov/cate
+- url: https://www.oregonlegislature.gov/cate
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/cate
-offices:
-- address: 900 Court St NE, H-378, Salem, OR, 97301
-  voice: 503-986-1417
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

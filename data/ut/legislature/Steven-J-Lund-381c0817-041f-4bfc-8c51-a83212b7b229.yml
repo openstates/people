@@ -11,17 +11,30 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '58'
+offices:
+- classification: district
+  address: PO Box 87, Manti, UT, 84642
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/LUNDSJ
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=LUNDSJ
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist58.pdf
+  note: district demographics
+- url: http://house.utah.gov/rep/LUNDSJ/
+  note: homepage
 other_names:
 - name: Lund, Steven J.
 - name: Lund, S.
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/LUNDSJ/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: PO Box 87, Manti, UT, 84642
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Engineer
+  education: B.S. Petroleum Engineering
+  counties represented:
+  - Juab
+  - Sanpete
+  cell phone: 385-358-3267

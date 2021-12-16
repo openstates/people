@@ -10,20 +10,24 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '36'
+offices:
+- classification: capitol
+  address: State Capitol, Room 3063, Sacramento, CA 95814-4900
+  voice: 916-651-4036
+- classification: district
+  address: 24031 El Toro Road, Suite 201A, Laguna Hills, CA 92653
+  voice: 949-598-5850
+- classification: district
+  address: 169 Saxony Road, Suite 103, Encinitas, CA 92024
+  voice: 760-642-0809
 links:
 - url: http://senate.ca.gov/sd36
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD36&inframe=N
   note: Contact Form
+- url: https://senate.ca.gov/sd36
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000475
 sources:
 - url: http://senate.ca.gov/senators
-offices:
-- address: State Capitol, Room 3048, Sacramento, CA 95814-4900
-  voice: 916-651-4036
-  classification: capitol
-- address: 169 Saxony Road, Suite 103, Encinitas, CA 92024
-  voice: 760-642-0809
-  classification: district
-  name: 'District Office #1'
+- url: https://www.senate.ca.gov/senators

@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 1st Barnstable
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 542; Boston, MA 02133
+  voice: 617-722-2488
 links:
 - url: https://malegislature.gov/Legislators/Profile/TRW1
 other_identifiers:
@@ -25,7 +29,7 @@ other_identifiers:
   identifier: ocd-person/152d0e47-c106-48c2-9f10-a5263ca9c3d6
 sources:
 - url: https://malegislature.gov/Legislators/Profile/TRW1
-offices:
-- address: 24 Beacon St.;Room 542;Boston, MA, 02133
-  voice: 617-722-2488
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/TRW1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: TRW1

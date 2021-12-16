@@ -9,25 +9,34 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '22'
+offices:
+- classification: capitol
+  address: 527E Main Capitol Building P.O. Box 202022 Harrisburg, PA 17120-2022
+  voice: 717-787-2909
+  fax: 717-787-2176
+- classification: district
+  address: 1501 Lehigh Street Suite 206 Allentown, PA 18103
+  voice: 610-791-6270
+  fax: 610-791-6274
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1706
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1706
+  note: homepage
+ids:
+  twitter: RepSchweyer
+  facebook: RepSchweyer
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000497
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1706
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1706
 extras:
-  facebook: https://www.facebook.com/RepSchweyer
-  twitter: https://twitter.com/RepSchweyer
-offices:
-- address: 325 Irvis Office Building P.O. Box 202022 Harrisburg, PA 17120-2022
-  voice: 717-787-2909
-  fax: 717-787-2176
-  classification: capitol
-- address: 1501 Lehigh Street Suite 206 Allentown, PA 18103
-  voice: 610-791-6270
-  fax: 610-791-6274
-  classification: district
-  name: 'District Office #1'
+  Education:
+  - Allentown Central Catholic High School, 1996
+  - Pennsylvania State University, BA Political Science
+  - Schreyer Honors College

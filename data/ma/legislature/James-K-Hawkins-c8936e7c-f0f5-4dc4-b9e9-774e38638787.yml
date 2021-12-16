@@ -11,6 +11,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Bristol
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 472; Boston, MA 02133
+  voice: 617-722-2013
+- classification: district
+  address: 485 Locust Street;Attleboro, MA 02703
+  name: 'District Office #1'
 links:
 - url: https://malegislature.gov/Legislators/Profile/JKH1
 other_identifiers:
@@ -18,10 +25,7 @@ other_identifiers:
   identifier: MAL000588
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JKH1
-offices:
-- address: 24 Beacon St.;Room 472;Boston, MA, 02133
-  voice: 617-722-2013
-  classification: capitol
-- address: 485 Locust Street;Attleboro, MA 02703
-  classification: district
-  name: 'District Office #1'
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JKH1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: JKH1

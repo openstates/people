@@ -3,15 +3,23 @@ name: Elizabeth Steiner Hayward
 given_name: Elizabeth
 family_name: Steiner Hayward
 email: Sen.ElizabethSteinerHayward@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/steinerhayward.jpg
+image: https://www.oregonlegislature.gov/steinerhayward/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '17'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-213, Salem, OR, 97301
+  voice: 503-986-1717
+- classification: district
+  address: PO Box 2281, Portland, Oregon 97208
 links:
 - url: https://www.oregonlegislature.gov/steinerhayward
+- url: https://www.oregonlegislature.gov/steinerhayward
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000093
@@ -21,7 +29,4 @@ other_identifiers:
   identifier: ORL000314
 sources:
 - url: https://www.oregonlegislature.gov/steinerhayward
-offices:
-- address: 900 Court St NE, S-213, Salem, OR, 97301
-  voice: 503-986-1717
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

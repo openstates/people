@@ -9,11 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 8th Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 443; Boston, MA 02133
+  voice: 617-722-2460
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJS3
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MJS3
-offices:
-- address: 24 Beacon St.;Room 443;Boston, MA, 02133
-  voice: 617-722-2460
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJS3
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MJS3

@@ -9,6 +9,12 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '18'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3501; Hartford, CT 06106-1591
+  voice: 860-240-8800
+- classification: district
+  address: Legislative Office Building; Hartford, CT 06106
 links:
 - url: http://www.ctsenaterepublicans.com/home-Somers
 other_names:
@@ -18,7 +24,10 @@ other_identifiers:
   identifier: CTL000330
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3501;Hartford, CT 06106
-  voice: 860-240-8800
-  classification: capitol
+extras:
+  gender: Female
+  title: Deputy Senate Republican Leader
+  committees: Public Health (Ranking Member); Transportation (Ranking Member); Appropriations;
+    Executive and Legislative Nominations
+  committee codes: ;APP;EXN;PH;TRA;
+  prison: '0'

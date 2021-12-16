@@ -3,15 +3,21 @@ name: Ken Helm
 given_name: Ken
 family_name: Helm
 email: Rep.KenHelm@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/helm.jpg
+image: https://www.oregonlegislature.gov/helm/PublishingImages/HD18-784-Edit.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '34'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-490, Salem, OR, 97301
+  voice: 503-986-1434
 links:
 - url: https://www.oregonlegislature.gov/helm
+- url: https://www.oregonlegislature.gov/helm
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000265
@@ -19,7 +25,4 @@ other_identifiers:
   identifier: ORL000350
 sources:
 - url: https://www.oregonlegislature.gov/helm
-offices:
-- address: 900 Court St NE, H-490, Salem, OR, 97301
-  voice: 503-986-1434
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators
