@@ -1,5 +1,7 @@
 id: ocd-person/29eeecd3-79b7-489c-b1a5-ace913e619f2
 name: Thomas C. Schamberg
+given_name: Thomas
+family_name: Schamberg
 email: Tom.Schamberg@leg.state.nh.us
 party:
 - name: Democratic
@@ -8,6 +10,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 4
+offices:
+- classification: district
+  address: 10 Clarke Road;Wilmot, NH 03287-4400
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -22,11 +28,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377166
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Thomas
-  last_name: Schamberg
-  middle_name: C.
-offices:
-- address: 10 Clarke Road;Wilmot, NH 03287-4400
-  classification: district
-  name: 'District Office #1'
+  county: Merrimack
+  elected status: Incumbent
+  gender code: M

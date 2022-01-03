@@ -1,6 +1,6 @@
 id: ocd-person/35c51630-9b9c-411a-9b98-0842cb6093df
 name: John B. Hunt
-given_name: John B.
+given_name: John
 family_name: Hunt
 email: jbhunt@prodigy.net
 image: http://www.gencourt.state.nh.us/house/images/memberpics/372375.jpg
@@ -10,6 +10,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Cheshire 11
+offices:
+- classification: district
+  address: 165 Sunridge Road;Rindge, NH 03461-5478
+  voice: 603-345-1129
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -24,12 +29,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=372375
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: John
-  last_name: Hunt
-  middle_name: B.
-offices:
-- address: 165 Sunridge Road;Rindge, NH 03461-5478
-  voice: 603-345-1129
-  classification: district
-  name: 'District Office #1'
+  county: Cheshire
+  elected status: Incumbent
+  gender code: M

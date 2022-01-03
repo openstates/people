@@ -1,5 +1,7 @@
 id: ocd-person/a2ff7d0d-db50-41fe-97ab-2a2007c99625
 name: Oliver J. Ford
+given_name: Oliver
+family_name: Ford
 email: lynchford@comcast.net
 party:
 - name: Republican
@@ -7,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 4
+offices:
+- classification: district
+  address: 67 Chester Street;Chester, NH 03036
+  voice: 603-867-1697
+  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Oliver
-  last_name: Ford
-  middle_name: J.
-offices:
-- address: 67 Chester Street;Chester, NH 03036
-  voice: 603-867-1697
-  classification: district
-  name: 'District Office #1'
+  county: Rockingham
+  elected status: new
+  gender code: M

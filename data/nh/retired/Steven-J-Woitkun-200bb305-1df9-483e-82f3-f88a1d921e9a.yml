@@ -12,7 +12,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 33
-- type: lower
+- end_date: '2021-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 12
 links:
@@ -31,8 +32,3 @@ extras:
   first_name: Steven
   last_name: Woitkun
   middle_name: J.
-offices:
-- address: 17D Granite Drive;Danville, NH 03819-4400
-  voice: 603-974-2828
-  classification: district
-  name: 'District Office #1'

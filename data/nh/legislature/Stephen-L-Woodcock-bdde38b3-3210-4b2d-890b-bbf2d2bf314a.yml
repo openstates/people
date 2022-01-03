@@ -1,5 +1,7 @@
 id: ocd-person/bdde38b3-3210-4b2d-890b-bbf2d2bf314a
 name: Stephen L. Woodcock
+given_name: Stephen
+family_name: Woodcock
 email: Steve.Woodcock@leg.state.nh.us
 party:
 - name: Democratic
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 2
+offices:
+- classification: district
+  address: PO Box 234;Center Conway, NH 03813-0234
+  voice: 603-356-2904
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408824
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Stephen
-  last_name: Woodcock
-  middle_name: L.
-offices:
-- address: PO Box 234;Center Conway, NH 03813-0234
-  voice: 603-356-2904
-  classification: district
-  name: 'District Office #1'
+  county: Carroll
+  elected status: Incumbent
+  gender code: M

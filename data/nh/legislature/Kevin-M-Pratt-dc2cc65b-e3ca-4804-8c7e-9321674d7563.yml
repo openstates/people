@@ -1,5 +1,7 @@
 id: ocd-person/dc2cc65b-e3ca-4804-8c7e-9321674d7563
 name: Kevin M. Pratt
+given_name: Kevin
+family_name: Pratt
 email: Kevin.Pratt@leg.state.nh.us
 party:
 - name: Republican
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 3
+offices:
+- classification: district
+  address: 11 Smith Pond Road;Raymond, NH 03077-1329
+  voice: 603-895-9502
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408900
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Kevin
-  last_name: Pratt
-  middle_name: M.
-offices:
-- address: 11 Smith Pond Road;Raymond, NH 03077-1329
-  voice: 603-895-9502
-  classification: district
-  name: 'District Office #1'
+  county: Rockingham
+  elected status: Incumbent
+  gender code: M

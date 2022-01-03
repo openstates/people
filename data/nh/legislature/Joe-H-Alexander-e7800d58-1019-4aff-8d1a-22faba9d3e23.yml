@@ -1,5 +1,7 @@
 id: ocd-person/e7800d58-1019-4aff-8d1a-22faba9d3e23
 name: Joe H. Alexander
+given_name: Joe
+family_name: Alexander
 email: Joe.Alexander@leg.state.nh.us
 party:
 - name: Republican
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 6
+offices:
+- classification: district
+  address: 3 Oakwood Lane, Unit 1;Goffstown, NH 03045-2597
+  voice: 603-856-5227
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408950
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Joe
-  last_name: Alexander
-  middle_name: H.
-offices:
-- address: 3 Oakwood Lane, Unit 1;Goffstown, NH 03045-2597
-  voice: 603-856-5227
-  classification: district
-  name: 'District Office #1'
+  county: Hillsborough
+  elected status: Incumbent
+  gender code: M

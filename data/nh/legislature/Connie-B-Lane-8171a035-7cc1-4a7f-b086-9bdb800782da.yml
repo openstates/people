@@ -1,5 +1,7 @@
 id: ocd-person/8171a035-7cc1-4a7f-b086-9bdb800782da
 name: Connie B. Lane
+given_name: Connie
+family_name: Lane
 email: Connie.Lane@leg.state.nh.us
 party:
 - name: Democratic
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 12
+offices:
+- classification: district
+  address: ','
+  voice: 603-491-7379
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408890
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Connie
-  last_name: Lane
-  middle_name: B.
-offices:
-- address: ','
-  voice: 603-491-7379
-  classification: district
-  name: 'District Office #1'
+  county: Merrimack
+  elected status: Incumbent
+  gender code: F

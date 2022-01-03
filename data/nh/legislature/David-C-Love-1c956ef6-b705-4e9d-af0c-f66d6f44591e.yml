@@ -1,5 +1,7 @@
 id: ocd-person/1c956ef6-b705-4e9d-af0c-f66d6f44591e
 name: David C. Love
+given_name: David
+family_name: Love
 email: davidlove4rep@gmail.com
 party:
 - name: Republican
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 6
+offices:
+- classification: district
+  address: '4 Maple Street #3;Derry, NH 03038-2345'
+  voice: 603-275-9851
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408905
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: David
-  last_name: Love
-  middle_name: C.
-offices:
-- address: '4 Maple Street #3;Derry, NH 03038-2345'
-  voice: 603-275-9851
-  classification: district
-  name: 'District Office #1'
+  county: Rockingham
+  elected status: Incumbent
+  gender code: M

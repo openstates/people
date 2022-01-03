@@ -1,5 +1,7 @@
 id: ocd-person/07c19313-fcb0-476b-b240-e299c55888f7
 name: Sue M. Mullen
+given_name: Sue
+family_name: Mullen
 email: Sue.Mullen@leg.state.nh.us
 party:
 - name: Democratic
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 7
+offices:
+- classification: district
+  address: 13 Privet Hedge Lane;Bedford, NH 03110-6068
+  voice: 603-647-0120
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408850
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Sue
-  last_name: Mullen
-  middle_name: M.
-offices:
-- address: 13 Privet Hedge Lane;Bedford, NH 03110-6068
-  voice: 603-647-0120
-  classification: district
-  name: 'District Office #1'
+  county: Hillsborough
+  elected status: Incumbent
+  gender code: F
