@@ -7,7 +7,8 @@ image: http://memdata.virginiageneralassembly.gov/images/display_image/H0320
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2021-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '91'
 links:
@@ -20,8 +21,3 @@ ids:
 sources:
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H320
-offices:
-- address: P.O. Box 1875;Hampton, Virginia 23669
-  voice: 804-698-1091
-  classification: district
-  name: 'District Office #1'
