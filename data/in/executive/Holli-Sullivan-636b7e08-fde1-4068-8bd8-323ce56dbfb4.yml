@@ -6,9 +6,14 @@ image: http://iga.in.gov/legislative/2021/portraits/legislator_holli_sullivan_83
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2021-03-16'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:in/government
   district: '78'
+- start_date: '2021-03-16'
+  end_date: '2022-12-31'
+  type: secretary of state
+  jurisdiction: ocd-jurisdiction/country:us/state:in/government
 links:
 - url: http://iga.in.gov/legislative/2021/legislators/legislator_holli_sullivan_834
 other_identifiers:
@@ -17,7 +22,3 @@ other_identifiers:
 sources:
 - url: http://iga.in.gov/legislative/2021/legislators/legislator_holli_sullivan_834
 - url: https://api.iga.in.gov/2021/legislators/holli_sullivan_834
-offices:
-- address: 200 W. Washington Street;Indianapolis, IN 46204
-  voice: 800-382-9841
-  classification: capitol
