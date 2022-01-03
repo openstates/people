@@ -8,7 +8,8 @@ image: http://memdata.virginiageneralassembly.gov/images/display_image/H0293
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2021-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
   district: '50'
 links:
@@ -27,8 +28,3 @@ sources:
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?191+mbr+H293
 - url: http://lis.virginia.gov/201/mbr/MBR.HTM
 - url: http://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H293
-offices:
-- address: P.O. Box 243;Manassas, Virginia 20108
-  voice: 571-606-7299
-  classification: district
-  name: 'District Office #1'
