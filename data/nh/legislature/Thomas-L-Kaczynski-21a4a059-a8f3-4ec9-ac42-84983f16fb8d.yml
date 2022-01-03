@@ -1,5 +1,7 @@
 id: ocd-person/21a4a059-a8f3-4ec9-ac42-84983f16fb8d
 name: Thomas L. Kaczynski
+given_name: Thomas
+family_name: Kaczynski
 email: hampoul@metrocast.net
 party:
 - name: Republican
@@ -7,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 22
+offices:
+- classification: district
+  address: 112 Whitehall Road;Rochester, NH 03868-5713
+  voice: 603-332-7310
+  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Thomas
-  last_name: Kaczynski
-  middle_name: L.
-offices:
-- address: 112 Whitehall Road;Rochester, NH 03868-5713
-  voice: 603-332-7310
-  classification: district
-  name: 'District Office #1'
+  county: Strafford
+  elected status: Former
+  gender code: M

@@ -1,5 +1,7 @@
 id: ocd-person/a22a36bb-3514-4d76-a39e-791902f41d6c
 name: John T. MacDonald
+given_name: John
+family_name: MacDonald
 email: John.MacDonald@leg.state.nh.us
 party:
 - name: Republican
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 6
+offices:
+- classification: district
+  address: PO Box 968;Wolfeboro Falls, NH 03896-0968
+  voice: 603-387-5255
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408825
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: John
-  last_name: MacDonald
-  middle_name: T.
-offices:
-- address: PO Box 968;Wolfeboro Falls, NH 03896-0968
-  voice: 603-387-5255
-  classification: district
-  name: 'District Office #1'
+  county: Carroll
+  elected status: Incumbent
+  gender code: M

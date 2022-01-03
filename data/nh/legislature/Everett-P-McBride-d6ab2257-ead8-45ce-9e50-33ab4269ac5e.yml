@@ -1,5 +1,7 @@
 id: ocd-person/d6ab2257-ead8-45ce-9e50-33ab4269ac5e
 name: Everett P. McBride
+given_name: Everett
+family_name: McBride
 email: emcbride@comcast.net
 party:
 - name: Republican
@@ -7,6 +9,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 8
+offices:
+- classification: district
+  address: 66 Millville Street;Salem, NH 03079-2620
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,11 +20,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408910
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Everett
-  last_name: McBride
-  middle_name: P.
-offices:
-- address: 66 Millville Street;Salem, NH 03079-2620
-  classification: district
-  name: 'District Office #1'
+  county: Rockingham
+  elected status: Incumbent
+  gender code: M
