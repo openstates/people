@@ -4,13 +4,19 @@ given_name: Ronald
 family_name: Dancer
 gender: Male
 email: AsmDancer@njleg.org
-image: http://www.njleg.state.nj.us/members/memberphotos/dancer_ronald_2020.jpg
+image: https://www.njleg.state.nj.us/members/memberphotos/dancer_ronald_2020.jpg
 party:
-- name: Republican
+- end_date: '2022-01-03'
+  name: Republican
+- name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nj/government
   district: '12'
+offices:
+- classification: district
+  address: 405 Rt. 539 Cream Ridge, NJ 08514
+  voice: 609-758-0205
 links:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=352
 other_names:
@@ -23,8 +29,7 @@ other_identifiers:
 sources:
 - url: http://www.njleg.state.nj.us/members/bio.asp?Leg=352
 - url: http://www.njleg.state.nj.us/downloads.asp
-offices:
-- address: 405 Rt. 539;Cream Ridge, NJ 08514
-  voice: 609-758-0205
-  classification: district
-  name: 'District Office #1'
+- url: https://www.njleg.state.nj.us/members/abcroster.asp
+- url: https://www.njleg.state.nj.us/members/BIO.asp?Leg=352
+extras:
+  role: Deputy Republican Leader
