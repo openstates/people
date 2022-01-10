@@ -6,13 +6,30 @@ email: Tom.McGillvray@mtleg.gov
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: '2005-01-03'
+  end_date: '2013-01-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '50'
+- start_date: 2021-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '23'
 offices:
 - classification: capitol
   voice: 406-698-4428
 links:
+- url: http://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=3851
 - url: https://leg.mt.gov/legislator-information/roster/individual/6822
+other_names:
+- name: McGillvray, Tom
+- name: Tom McGillvray
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000106
+- scheme: openstates
+  identifier: ocd-person/632aa1ac-ea2b-4ff0-8830-b7c7142c87d1
 sources:
+- url: http://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=3851
+- url: http://leg.mt.gov/content/sessions/62nd/2011HouseMembers.txt
 - url: https://leg.mt.gov/legislator-information/roster/individual/6822

@@ -6,7 +6,12 @@ image: https://ilga.gov/images/members/{58FBFE5F-39EE-4F3C-853A-0DB98E83E893}.jp
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2021-01-13'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '115'
+- start_date: 2021-01-13
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '58'
 offices:
@@ -17,10 +22,18 @@ offices:
   address: 1032 W. Industrial Park Road Murphysboro, IL 62966
   voice: 618-684-1100
 links:
+- url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2656
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2990
 - url: https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2990
   note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL000991
+- scheme: openstates
+  identifier: ocd-person/744da351-e7c7-4064-be1e-f3d68b1db668
 sources:
+- url: http://ilga.gov/house/default.asp?GA=101
+- url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2656
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2990
 - url: https://ilga.gov/senate/default.asp?GA=102

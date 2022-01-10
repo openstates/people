@@ -7,14 +7,27 @@ image: http://www.nebraskalegislature.gov/media/images/blogs/dist31.jpg
 party:
 - name: Nonpartisan
 roles:
-- type: legislature
+- start_date: '2005-01-05'
+  end_date: '2013-01-02'
+  type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
   district: '31'
-links:
-- url: http://news.legislature.ne.gov/dist31/
-sources:
-- url: http://news.legislature.ne.gov/dist31/
+- start_date: 2021-01-06
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '31'
 offices:
-- address: Room 1403; P.O. Box 94604; Lincoln, NE 68509
+- classification: capitol
+  address: Room 1403; P.O. Box 94604; Lincoln, NE 68509
   voice: 402-471-2327
-  classification: capitol
+links:
+- url: http://news.legislature.ne.gov/dist31/biography/
+- url: http://news.legislature.ne.gov/dist31/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000031
+- scheme: openstates
+  identifier: ocd-person/990cf88d-9713-4712-b51b-210b176e5155
+sources:
+- url: http://news.legislature.ne.gov/dist31/biography/
+- url: http://news.legislature.ne.gov/dist31/

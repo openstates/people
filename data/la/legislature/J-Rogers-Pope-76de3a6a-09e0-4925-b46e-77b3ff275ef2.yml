@@ -7,11 +7,30 @@ image: http://senate.la.gov/senators/pics/13a.jpg
 party:
 - name: Republican
 roles:
+- end_date: '2020-01-13'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '71'
 - start_date: '2020-01-13'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '13'
 links:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=71
 - url: http://senate.la.gov/senators/senpage.asp?SenID=13
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000251
+- scheme: legacy_openstates
+  identifier: LAL000399
+- scheme: legacy_openstates
+  identifier: LAL000603
+- scheme: legacy_openstates
+  identifier: LAL000719
+- scheme: legacy_openstates
+  identifier: LAL000904
+- scheme: openstates
+  identifier: ocd-person/925cec1d-1026-4437-851e-fca95aabd788
 sources:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=71
 - url: http://senate.la.gov/senators/senpage.asp?SenID=13

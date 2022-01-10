@@ -7,7 +7,12 @@ image: https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Beck2021-683x1
 party:
 - name: Democratic
 roles:
-- start_date: '2021-01-01'
+- start_date: 2017-01-04
+  end_date: '2021-01-06'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '92'
+- start_date: '2021-01-06'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '1'
@@ -16,6 +21,18 @@ offices:
   address: 201 W Capitol Ave, Room 328
   voice: 573-751-0220
 links:
+- url: http://www.house.mo.gov/MemberDetails.aspx?district=92
 - url: https://www.senate.mo.gov/mem01/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MOL000456
+- scheme: openstates
+  identifier: ocd-person/1ec6a491-f3c0-4d80-b9c0-fb4eb89b6465
 sources:
+- url: http://house.mo.gov/MemberGridCluster.aspx
+- url: http://www.house.mo.gov/MemberDetails.aspx?district=92
+- url: https://www.senate.mo.gov/senators-listing/
 - url: https://www.senate.mo.gov/mem01/
+extras:
+  first_name: Doug
+  last_name: Beck

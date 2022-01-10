@@ -6,7 +6,12 @@ image: https://ilga.gov/images/members/{7C3BEF77-7346-4A40-BC59-472919A869B8}.jp
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2021-01-13'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '85'
+- start_date: 2021-01-13
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '43'
 offices:
@@ -18,10 +23,18 @@ offices:
   voice: 815-207-4445
   fax: 815-207-4446
 links:
+- url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2698
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2988
 - url: https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2988
   note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ILL001083
+- scheme: openstates
+  identifier: ocd-person/7bc814c4-a404-4cb5-8991-9a219f352f56
 sources:
+- url: http://ilga.gov/house/default.asp?GA=101
+- url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2698
 - url: http://ilga.gov/senate/default.asp?GA=102
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2988
 - url: https://ilga.gov/senate/default.asp?GA=102

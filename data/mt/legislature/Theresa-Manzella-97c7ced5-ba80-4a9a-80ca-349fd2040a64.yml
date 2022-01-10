@@ -6,13 +6,31 @@ email: theresa.manzella@mtleg.gov
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2015-01-05
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '85'
+- start_date: 2021-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '44'
 offices:
 - classification: capitol
   voice: 406-546-9462
 links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4827
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5144
 - url: https://leg.mt.gov/legislator-information/roster/individual/6939
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000336
+- scheme: openstates
+  identifier: ocd-person/07893515-a49c-416d-8129-dde5734b739d
 sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5144
+- url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6939

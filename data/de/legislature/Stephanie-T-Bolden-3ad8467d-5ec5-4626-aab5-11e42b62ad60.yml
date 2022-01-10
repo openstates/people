@@ -7,7 +7,8 @@ image: https://legis.delaware.gov/images/default-source/default-album/StephanieT
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: '2010-11-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '2'
 offices:
@@ -15,14 +16,23 @@ offices:
   address: 411 Legislative Ave. Dover, DE 19901
   voice: 302-744-4351
 links:
+- url: http://legis.delaware.gov/legislature.nsf/52087754ec8b9261852569c10055df42/a11deaacd840c137852569de005b764b?OpenDocument&TableRow=1.5.5
 - url: https://legis.delaware.gov/LegislatorDetail?personId=332
   note: legislator page
 - url: https://legis.delaware.gov/LegislatorDetail?personId=332
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: DEL000026
+- scheme: legacy_openstates
+  identifier: DEL000090
+- scheme: openstates
+  identifier: ocd-person/ea734da3-b049-4c1d-a69c-3c75fdd0fef4
+- scheme: legacy_openstates
   identifier: DEL000141
 sources:
+- url: http://legis.delaware.gov/legislature.nsf/FSMain?OpenFrameset&Frame=right&src=/legislature.nsf/52087754EC8B9261852569C10055DF42/4729338B9BBCC16B85257E0E005D8DCB
+- url: http://legis.delaware.gov/Legislature.nsf/Reps?openview
 - url: https://legis.delaware.gov/House
   note: legislator list page
 - url: https://legis.delaware.gov/json/House/GetRepresentatives

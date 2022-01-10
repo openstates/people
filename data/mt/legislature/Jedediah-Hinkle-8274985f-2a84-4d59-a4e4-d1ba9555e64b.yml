@@ -6,13 +6,28 @@ email: jedediah.hinkle@mtleg.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2015-01-05
+  end_date: '2019-01-07'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '32'
+- start_date: 2021-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '67'
 offices:
 - classification: capitol
   voice: 406-585-0722
 links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4706
+  note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/6919
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000248
+- scheme: openstates
+  identifier: ocd-person/8bc614c7-4280-4880-b68f-a0a29f4ad3ee
 sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/6919

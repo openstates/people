@@ -7,6 +7,10 @@ image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a
 party:
 - name: Democratic
 roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '7'
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '33'
@@ -18,6 +22,11 @@ links:
 - url: http://leg.colorado.gov/legislators/james-coleman
 - url: http://leg.colorado.gov/legislators/james-coleman
   note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: COL000226
+- scheme: openstates
+  identifier: ocd-person/ff2f6795-50ae-4554-a2bb-ff5ae29c54ea
 sources:
 - url: http://leg.colorado.gov/legislators/james-coleman
 - url: http://leg.colorado.gov/legislators

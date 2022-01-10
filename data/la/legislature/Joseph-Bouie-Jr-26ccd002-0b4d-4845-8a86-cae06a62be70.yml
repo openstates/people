@@ -1,19 +1,36 @@
 id: ocd-person/26ccd002-0b4d-4845-8a86-cae06a62be70
 name: Joseph Bouie, Jr.
+given_name: Joseph
+family_name: Bouie
 email: bouiej@legis.la.gov
+image: https://senate.la.gov/Senators/SenLargePics/Dist3.JPG
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2020-01-13'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '97'
+- start_date: '2020-01-13'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '3'
-links:
-- url: http://senate.la.gov/senators/senpage.asp?SenID=3
-sources:
-- url: http://senate.la.gov/senators/senpage.asp?SenID=3
 offices:
-- address: 6305 Elysian Fields Ave.;Suite 400;New Orleans, LA 70122
+- classification: district
+  address: 6305 Elysian Fields Ave.;Suite 400;New Orleans, LA 70122
   voice: 504-286-1033
   fax: 504-286-1035
-  classification: district
   name: 'District Office #1'
+links:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=97
+- url: http://senate.la.gov/senators/senpage.asp?SenID=3
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000779
+- scheme: legacy_openstates
+  identifier: LAL000931
+- scheme: openstates
+  identifier: ocd-person/f63d95a0-df6d-42e4-8d06-e614e44a8907
+sources:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=97
+- url: http://senate.la.gov/senators/senpage.asp?SenID=3

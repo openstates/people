@@ -7,7 +7,18 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/evans-stacey
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '40'
+- start_date: '2013-01-01'
+  end_date: '2017-11-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '42'
+- start_date: 2021-01-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '57'
 offices:
@@ -19,8 +30,19 @@ offices:
   voice: 770-710-4087
   name: 'District Office #1'
 links:
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
 - url: https://www.legis.ga.gov/members/house/762?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000108
+- scheme: legacy_openstates
+  identifier: GAL000281
+- scheme: openstates
+  identifier: ocd-person/05d3a1bb-a849-4241-bbac-5a33a061de8d
 sources:
+- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
+- url: http://www.house.ga.gov/Representatives/en-US/HouseMembersList.aspx?Sort=District&Session=25
 - url: https://www.legis.ga.gov/members/house/762?session=1029
 - url: https://www.legis.ga.gov/members/house/762?session=1029
   note: Initial list page (requires authorization token)
