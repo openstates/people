@@ -5,6 +5,10 @@ image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a
 party:
 - name: Democratic
 roles:
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '12'
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '17'
@@ -16,6 +20,9 @@ links:
 - url: http://leg.colorado.gov/legislators/sonya-jaquez-lewis
 - url: http://leg.colorado.gov/legislators/sonya-jaquez-lewis
   note: homepage
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/7641b446-38a9-4444-bbf1-536662a85e14
 sources:
 - url: http://leg.colorado.gov/legislators/sonya-jaquez-lewis
 - url: http://leg.colorado.gov/legislators

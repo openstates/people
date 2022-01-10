@@ -6,13 +6,37 @@ email: Chris.Pope@mtleg.gov
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: '2015-01-05'
+  end_date: '2017-01-02'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '65'
+- start_date: '2019-01-06'
+  end_date: '2021-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '65'
+- start_date: 2021-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '31'
 offices:
 - classification: capitol
   voice: 406-581-8739
 links:
+- url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16520
+- url: https://leg.mt.gov/legislator-information/roster/individual/5124
 - url: https://leg.mt.gov/legislator-information/roster/individual/6882
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000281
+- scheme: openstates
+  identifier: ocd-person/f86a1b9b-ff06-4e4f-b6ab-447d7cc317a7
+- scheme: openstates
+  identifier: ocd-person/7a4650d4-465e-43cd-82f4-93531a318bde
+other_names:
+- name: Christopher S Pope
 sources:
+- url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=16520
+- url: http://leg.mt.gov/content/sessions/64th/2015HouseMembers.txt
 - url: https://leg.mt.gov/legislator-information/roster/individual/6882

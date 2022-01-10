@@ -22,7 +22,13 @@ image: https://senate.texas.gov/members/d30/img/Springer_87-0036D-009-web.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2021-01-06'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '68'
+  end_reason: Elected to Texas Senate
+- start_date: '2021-01-06'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '30'
 offices:
