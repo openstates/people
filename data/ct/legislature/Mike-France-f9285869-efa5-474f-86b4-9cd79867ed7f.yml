@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '42'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2205; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 17 Garden Drive; Gales Ferry, CT 06335
+- classification: district
+  address: 17 Garden Drive;Gales Ferry, CT 06335
+  voice: 860-464-9229
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/France/
 other_names:
@@ -18,11 +28,8 @@ other_identifiers:
   identifier: CTL000275
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2205;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 17 Garden Drive;Gales Ferry, CT 06335
-  voice: 860-464-9229
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Appropriations (Ranking Member); Government Administration and Elections
+  committee codes: ;APP;GAE;
+  prison: '0'

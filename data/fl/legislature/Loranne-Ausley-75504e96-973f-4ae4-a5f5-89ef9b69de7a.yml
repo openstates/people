@@ -3,17 +3,36 @@ name: Loranne Ausley
 given_name: Loranne
 family_name: Ausley
 email: ausley.loranne.web@flsenate.gov
-image: http://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s03_4663.jpg
+image: https://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s03_4663.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2020-11-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '9'
+- start_date: 2020-11-03
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '3'
 offices:
-- address: 20 East Washington Street; Suite D; Quincy, FL 32351
-  classification: district
-  name: 'District Office #1'
-- address: 202 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+- classification: capitol
+  address: 202 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5003
   fax: 850-487-5086
-  classification: capitol
+- classification: district
+  address: 20 East Washington Street; Suite D; Quincy, FL 32351
+  voice: 850-627-0474
+links:
+- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4190&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4190&LegislativeTermId=88
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000558
+- scheme: openstates
+  identifier: ocd-person/adc6ee39-4e32-45b7-8e87-c2ff817a63fd
+sources:
+- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4190&LegislativeTermId=88
+- url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
+- url: https://www.myfloridahouse.gov/Representatives
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4190&LegislativeTermId=88

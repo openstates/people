@@ -3,21 +3,24 @@ name: Daniel Bonham
 given_name: Daniel
 family_name: Bonham
 email: Rep.DanielBonham@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/bonham .jpg
+image: https://www.oregonlegislature.gov/bonham/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '59'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-390, Salem, OR, 97301
+  voice: 503-986-1459
 links:
 - url: https://www.oregonlegislature.gov/bonham
+- url: https://www.oregonlegislature.gov/bonham
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000400
 sources:
 - url: https://www.oregonlegislature.gov/bonham
-offices:
-- address: 900 Court St NE, H-390, Salem, OR, 97301
-  voice: 503-986-1459
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

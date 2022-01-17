@@ -9,13 +9,21 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '140'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: Legislative Office Building; Hartford, CT 06106
 links:
 - url: http://www.housedems.ct.gov/simms
 other_names:
 - name: Simms, Travis
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4000;Hartford, CT 06106
-  voice: 860-240-8585
-  classification: capitol
+extras:
+  gender: Male
+  title: Assistant Majority Leader
+  committees: Transportation (Vice Chair); Appropriations; Judiciary
+  committee codes: ;APP;JUD;TRA;
+  prison: '0'

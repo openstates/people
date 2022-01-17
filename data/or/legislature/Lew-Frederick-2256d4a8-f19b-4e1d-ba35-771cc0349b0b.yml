@@ -3,7 +3,7 @@ name: Lew Frederick
 given_name: Lew
 family_name: Frederick
 email: Sen.LewFrederick@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/frederick.jpg
+image: https://www.oregonlegislature.gov/frederick/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
@@ -15,8 +15,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '22'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-419, Salem, OR, 97301
+  voice: 503-986-1722
 links:
 - url: https://www.oregonlegislature.gov/frederick
+- url: https://www.oregonlegislature.gov/frederick
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000387
@@ -32,7 +38,4 @@ other_identifiers:
   identifier: ocd-person/03706f4f-f01c-4255-91a8-f82b23e90720
 sources:
 - url: https://www.oregonlegislature.gov/frederick
-offices:
-- address: 900 Court St NE, S-419, Salem, OR, 97301
-  voice: 503-986-1722
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

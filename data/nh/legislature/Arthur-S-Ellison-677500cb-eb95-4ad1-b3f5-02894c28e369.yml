@@ -1,5 +1,7 @@
 id: ocd-person/677500cb-eb95-4ad1-b3f5-02894c28e369
 name: Arthur S. Ellison
+given_name: Arthur
+family_name: Ellison
 email: Art.Ellison@leg.state.nh.us
 party:
 - name: Democratic
@@ -7,6 +9,11 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 27
+offices:
+- classification: district
+  address: 81 W. Parish Road;Concord, NH 03303-4000
+  voice: 603-224-7425
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -14,12 +21,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408897
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Arthur
-  last_name: Ellison
-  middle_name: S.
-offices:
-- address: 81 W. Parish Road;Concord, NH 03303-4000
-  voice: 603-224-7425
-  classification: district
-  name: 'District Office #1'
+  county: Merrimack
+  elected status: Incumbent
+  gender code: M

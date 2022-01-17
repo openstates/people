@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '117'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3904; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 13 Twin Circle Road; West Haven, CT 06516
+- classification: district
+  address: 13 Twin Circle Road;West Haven, CT 06516
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Ferraro/
 other_names:
@@ -18,10 +27,8 @@ other_identifiers:
   identifier: CTL000296
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3904;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 13 Twin Circle Road;West Haven, CT 06516
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Energy and Technology (Ranking Member); Appropriations; Veterans' Affairs
+  committee codes: ;APP;ET;VA;
+  prison: '0'

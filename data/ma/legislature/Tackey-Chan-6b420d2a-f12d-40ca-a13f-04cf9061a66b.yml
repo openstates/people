@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 42; Boston, MA 02133
+  voice: 617-722-2014
+  fax: 617-626-0146
 links:
 - url: https://malegislature.gov/Legislators/Profile/T_C1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/f8b7d632-d156-4ebf-aed9-7d1f9a71b2a7
 sources:
 - url: https://malegislature.gov/Legislators/Profile/T_C1
-offices:
-- address: 24 Beacon St.;Room 42;Boston, MA, 02133
-  voice: 617-722-2014
-  fax: 617-626-0146
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/T_C1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: T_C1

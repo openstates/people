@@ -9,22 +9,31 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '202'
+offices:
+- classification: capitol
+  address: 104A East Wing P.O. Box 202202 Harrisburg, PA 17120-2202
+  voice: 717-787-4117
+  fax: 717-783-4820
+- classification: district
+  address: 7012 Castor Avenue Philadelphia, PA 19149
+  voice: 215-342-6340
+  fax: 215-342-6344
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1761
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1761
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000558
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1761
-offices:
-- address: 104A East Wing P.O. Box 202202 Harrisburg, PA 17120-2202
-  voice: 717-787-4117
-  fax: 717-783-4820
-  classification: capitol
-- address: 7012 Castor Avenue Philadelphia, PA 19149
-  voice: 215-342-6340
-  fax: 215-342-6344
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1761
+extras:
+  Education:
+  - Abington Friends High School
+  - Swarthmore College, B.S.
+  - Villanova Law, J.D.

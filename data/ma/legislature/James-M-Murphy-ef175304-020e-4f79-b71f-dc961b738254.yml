@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 4th Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 254; Boston, MA 02133
+  voice: 617-722-2220
 links:
 - url: https://malegislature.gov/Legislators/Profile/JMM1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/1960f0f4-836b-48ed-81ba-bfb92965a1fb
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JMM1
-offices:
-- address: 24 Beacon St.;Room 254;Boston, MA, 02133
-  voice: 617-722-2220
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JMM1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: JMM1

@@ -10,8 +10,24 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '23'
+offices:
+- classification: district
+  address: 1248 W 1900 S, Woods Cross, UT, 84087
+  voice: 801-599-9823
+  fax: 801-525-5327
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/todd-weiler
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=WEILET
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist23.pdf
+  note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIWEILET.pdf
+  note: conflict of interest 0
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411361
+  note: finance report
+- url: https://senate.utah.gov/sen/WEILET/
+  note: homepage
 other_names:
 - name: Todd Weiler
 - name: Weiler, T.
@@ -23,13 +39,14 @@ other_identifiers:
   identifier: UTL000200
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/WEILET/
 extras:
-  links:
-  - https://le.utah.gov/senate/CofI/COFIWEILET.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411361
-offices:
-- address: 1248 W 1900 S, Woods Cross, UT, 84087
-  voice: 801-599-9823
-  fax: 801-525-5327
-  classification: district
-  name: 'District Office #1'
+  service start: Appointed January 13, 2012
+  profession: Attorney
+  education: J.D., J. Reuben Clark Law School; B.S., Brigham Young University
+  counties represented:
+  - Davis
+  - Salt Lake
+  cell phone: 801-599-9823
+  home phone: 801-599-9823

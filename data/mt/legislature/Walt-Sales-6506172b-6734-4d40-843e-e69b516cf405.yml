@@ -2,16 +2,35 @@ id: ocd-person/6506172b-6734-4d40-843e-e69b516cf405
 name: Walt Sales
 given_name: Walt
 family_name: Sales
+email: waltsales4montana@gmail.com
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2017-01-02
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '69'
+- start_date: 2021-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '35'
-links:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6824
-sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6824
 offices:
-- voice: 406-282-7435
-  classification: capitol
+- classification: capitol
+  voice: 406-282-7435
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4811
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5128
+- url: https://leg.mt.gov/legislator-information/roster/individual/6824
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000368
+- scheme: openstates
+  identifier: ocd-person/68807986-390b-47be-b33e-926b2e92899a
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/5128
+- url: https://leg.mt.gov/legislator-information/?session_select=113
+- url: https://leg.mt.gov/legislator-information/roster/individual/6824

@@ -11,6 +11,16 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Plymouth and Bristol
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 312-B; Boston, MA 02133
+  voice: 617-722-1551
+  fax: 617-722-1074
+- classification: district
+  address: 8 Trescott St., Suite 1;Taunton, MA 02780
+  voice: 508-822-3000
+  fax: 508-880-6084
+  name: 'District Office #1'
 links:
 - url: https://malegislature.gov/Legislators/Profile/MRP0
 other_identifiers:
@@ -20,13 +30,7 @@ other_identifiers:
   identifier: MAL000264
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MRP0
-offices:
-- address: 24 Beacon St.;Room 312-B;Boston, MA, 02133
-  voice: 617-722-1551
-  fax: 617-722-1074
-  classification: capitol
-- address: 8 Trescott St., Suite 1;Taunton, MA 02780
-  voice: 508-822-3000
-  fax: 508-880-6084
-  classification: district
-  name: 'District Office #1'
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MRP0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MRP0

@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Essex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 413-D; Boston, MA 02133
+  voice: 617-722-1410
+  fax: 617-722-1347
 links:
 - url: https://malegislature.gov/Legislators/Profile/JBL0
 other_identifiers:
@@ -22,8 +27,8 @@ other_identifiers:
   identifier: MAL000313
 sources:
 - url: https://malegislature.gov/Legislators/Profile/JBL0
-offices:
-- address: 24 Beacon St.;Room 413-D;Boston, MA, 02133
-  voice: 617-722-1410
-  fax: 617-722-1347
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/JBL0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Assistant Majority Leader
+  member code: JBL0

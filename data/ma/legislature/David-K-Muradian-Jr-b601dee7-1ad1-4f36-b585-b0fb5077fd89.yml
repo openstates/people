@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 9th Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 156; Boston, MA 02133
+  voice: 617-722-2240
 links:
 - url: https://malegislature.gov/Legislators/Profile/DKM1
 other_identifiers:
@@ -25,7 +29,7 @@ other_identifiers:
   identifier: ocd-person/cecc5621-126e-4161-8693-317f90e36eec
 sources:
 - url: https://malegislature.gov/Legislators/Profile/DKM1
-offices:
-- address: 24 Beacon St.;Room 156;Boston, MA, 02133
-  voice: 617-722-2240
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/DKM1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: DKM1

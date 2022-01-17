@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 6th Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 166; Boston, MA 02133
+  voice: 617-722-2692
 links:
 - url: https://malegislature.gov/Legislators/Profile/WCG1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/d2414296-b7f7-471c-b31a-64a09b0de846
 sources:
 - url: https://malegislature.gov/Legislators/Profile/WCG1
-offices:
-- address: 24 Beacon St.;Room 166;Boston, MA, 02133
-  voice: 617-722-2692
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/WCG1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: WCG1

@@ -3,25 +3,36 @@ name: "Raquel Ter\xE1n"
 given_name: Raquel
 family_name: "Ter\xE1n"
 email: rteran@azleg.gov
-image: "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/TER\xC1N.jpg"
+image: "https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/TER\xC1N.jpg"
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2021-09-28'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '30'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '30'
+offices:
+- classification: capitol
+  address: Senate;1700 West Washington;Room 315;Phoenix, AZ 85007
+  voice: 602-926-3308
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1911
 - url: https://www.linkedin.com/in/raquel-teran-ba313128/
   note: linkedin
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2051
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=2080
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=2080
 ids:
   twitter: RaquelTeran
   instagram: teranforazhouse
   facebook: raquelteran4house
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/08745d9f-652d-40bd-942a-7eee552e75df
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
-offices:
-- address: House of Representatives;1700 West Washington;Room 334;Phoenix, AZ 85007
-  voice: 602-926-3308
-  classification: capitol
+- url: https://www.azleg.gov/memberroster/?body=H
+- url: https://www.azleg.gov/memberroster/?body=S

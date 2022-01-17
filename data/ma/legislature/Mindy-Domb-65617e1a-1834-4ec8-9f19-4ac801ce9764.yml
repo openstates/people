@@ -11,15 +11,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 3rd Hampshire
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 134; Boston, MA 02133
+  voice: 617-722-2400
+- classification: district
+  address: PO Box 3215;Amherst, MA 01004-3215
+  voice: 413-461-2060
+  name: 'District Office #1'
 links:
 - url: https://malegislature.gov/Legislators/Profile/M_D2
 sources:
 - url: https://malegislature.gov/Legislators/Profile/M_D2
-offices:
-- address: 24 Beacon St.;Room 134;Boston, MA, 02133
-  voice: 617-722-2400
-  classification: capitol
-- address: PO Box 3215;Amherst, MA 01004-3215
-  voice: 413-461-2060
-  classification: district
-  name: 'District Office #1'
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/M_D2
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: M_D2

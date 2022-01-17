@@ -3,15 +3,21 @@ name: John Lively
 given_name: John
 family_name: Lively
 email: Rep.JohnLively@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/lively.jpg
+image: https://www.oregonlegislature.gov/lively/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '12'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-488, Salem, OR, 97301
+  voice: 503-986-1412
 links:
 - url: https://www.oregonlegislature.gov/lively
+- url: https://www.oregonlegislature.gov/lively
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000107
@@ -23,7 +29,4 @@ other_identifiers:
   identifier: ORL000288
 sources:
 - url: https://www.oregonlegislature.gov/lively
-offices:
-- address: 900 Court St NE, H-488, Salem, OR, 97301
-  voice: 503-986-1412
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

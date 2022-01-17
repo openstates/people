@@ -11,18 +11,33 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '10'
+offices:
+- classification: district
+  address: '1145 E 4600 S #150156, Ogden, UT, 84415'
+- classification: district
+  address: '1145 E 4600 S #150159, Ogden, UT, 84415'
+  voice: 385-278-3556
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/LESSER
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=LESSER
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist10.pdf
+  note: district demographics
+- url: http://house.utah.gov/rep/LESSER/
+  note: homepage
 other_names:
 - name: Lesser, Rosemary T.
 - name: Lesser, R.
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/LESSER/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: '1145 E 4600 S #150159, Ogden, UT, 84415'
-  voice: 385-278-3556
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Physician
+  education: B.S., University of Notre Dame, South Bend, Indiana; M.D., Uniformed
+    Services University of the Health Sciences, Bethesda Maryland
+  counties represented:
+  - Weber
+  cell phone: 385-278-3556

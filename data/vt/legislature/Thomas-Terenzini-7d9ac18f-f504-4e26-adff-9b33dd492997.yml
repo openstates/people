@@ -1,5 +1,5 @@
 id: ocd-person/7d9ac18f-f504-4e26-adff-9b33dd492997
-name: Thomas Terenzini
+name: Thomas P. Terenzini
 given_name: Thomas
 family_name: Terenzini
 email: thomas.terenzini@yahoo.com
@@ -10,11 +10,26 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-4
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 34B Chasanna Dr. Rutland, VT 05701
+- classification: district
+  address: 34B Chasanna Dr.;Rutland, VT 05701
+  voice: 802-855-1945
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/20386
 - url: http://legislature.vermont.gov/people/single/2022/20386
+- url: http://legislature.vermont.gov/people/single/2022/20386
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-4.pdf
+  note: district map
 other_names:
 - name: Terenzini
+- name: Thomas Terenzini
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000314
@@ -27,10 +42,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/20386
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/20386
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 34B Chasanna Dr.;Rutland, VT 05701
-  voice: 802-855-1945
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Rutland, VT 05701
+  home phone: (802) 855-1945
+  state email: tterenzini@leg.state.vt.us

@@ -16,8 +16,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '32'
+offices:
+- classification: capitol
+  voice: 208-332-1042
+- classification: district
+  address: 632 Highway 34, Grace, ID, 83241
+  voice: 208-425-3385
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=32
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=32
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000304
@@ -29,9 +37,3 @@ other_identifiers:
   identifier: ocd-person/a930a229-2e68-4ea3-8e88-ba9f539ead80
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1042
-  classification: capitol
-- address: 632 Highway 34, Grace, ID, 83241
-  classification: district
-  name: 'District Office #1'

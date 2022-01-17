@@ -3,15 +3,23 @@ name: Rob Nosse
 given_name: Rob
 family_name: Nosse
 email: Rep.RobNosse@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/nosse.jpg
+image: https://www.oregonlegislature.gov/nosse/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '42'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-472, Salem, OR, 97301
+  voice: 503-986-1442
+- classification: district
+  voice: 971-217-8037
 links:
 - url: https://www.oregonlegislature.gov/nosse
+- url: https://www.oregonlegislature.gov/nosse
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000259
@@ -19,7 +27,4 @@ other_identifiers:
   identifier: ORL000340
 sources:
 - url: https://www.oregonlegislature.gov/nosse
-offices:
-- address: 900 Court St NE, H-472, Salem, OR, 97301
-  voice: 503-986-1442
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

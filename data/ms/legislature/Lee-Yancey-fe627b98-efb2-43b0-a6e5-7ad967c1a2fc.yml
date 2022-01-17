@@ -7,20 +7,33 @@ image: http://billstatus.ls.state.ms.us/members/house/yancey.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: '2008-01-08'
+  end_date: '2012-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '20'
+- start_date: 2020-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '74'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: PO Box 4215;Brandon, MS 39047
+  name: 'District Office #1'
 links:
+- url: http://billstatus.ls.state.ms.us/members/senate/yancey.xml
 - url: http://billstatus.ls.state.ms.us/members/house/yancey.xml
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MSL000051
+- scheme: openstates
+  identifier: ocd-person/67a9c3c7-de4b-490c-8395-c6c1b85d9f1a
 sources:
+- url: http://billstatus.ls.state.ms.us/members/senate/yancey.xml
 - url: http://billstatus.ls.state.ms.us/members/house/yancey.xml
 extras:
   org_info: Representative Yancey is a member of the Rotary Club (former Flowood President),
     Paul Harris Fellow, former member of the Rankin County Repubican Executive committee,
     and NRA.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: PO Box 4215;Brandon, MS 39047
-  classification: district
-  name: 'District Office #1'

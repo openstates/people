@@ -3,15 +3,23 @@ name: Dan Rayfield
 given_name: Dan
 family_name: Rayfield
 email: Rep.DanRayfield@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/rayfield.jpg
+image: https://www.oregonlegislature.gov/rayfield/PublishingImages/Dan.Rayfield.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '16'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-275, Salem, OR, 97301
+  voice: 503-986-1416
+- classification: district
+  voice: 541-740-7744
 links:
 - url: https://www.oregonlegislature.gov/rayfield
+- url: https://www.oregonlegislature.gov/rayfield
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000276
@@ -19,7 +27,4 @@ other_identifiers:
   identifier: ORL000359
 sources:
 - url: https://www.oregonlegislature.gov/rayfield
-offices:
-- address: 900 Court St NE, H-275, Salem, OR, 97301
-  voice: 503-986-1416
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

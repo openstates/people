@@ -2,7 +2,7 @@ id: ocd-person/8a7842c7-39a7-40f7-9d05-0a9ee2acd977
 name: Valerie Longhurst
 given_name: Valerie
 family_name: Longhurst
-email: Valerie.Longhurst@state.de.us
+email: Valerie.Longhurst@delaware.gov
 image: https://legis.delaware.gov/images/default-source/default-album/ValerieLonghurst.jpg?sfvrsn=0
 party:
 - name: Democratic
@@ -10,9 +10,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '15'
+offices:
+- classification: capitol
+  address: 411 Legislative Ave. Dover, DE 19901
+  voice: 302-744-4351
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=359
   note: legislator page
+- url: https://legis.delaware.gov/LegislatorDetail?personId=359
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000042
@@ -21,7 +27,7 @@ other_identifiers:
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page
-offices:
-- address: 411 Legislative Ave. Dover, DE 19901
-  voice: 302-744-4351
-  classification: capitol
+- url: https://legis.delaware.gov/json/House/GetRepresentatives
+- url: https://legis.delaware.gov/LegislatorDetail?personId=359
+extras:
+  title: House Majority Leader

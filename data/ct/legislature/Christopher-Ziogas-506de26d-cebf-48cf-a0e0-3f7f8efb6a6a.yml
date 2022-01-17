@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '79'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4100; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: P.O. Box 1399; Bristol, CT 06010
+- classification: district
+  address: P.O. Box 1399;Bristol, CT 06010
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Ziogas
 other_names:
@@ -18,10 +27,11 @@ other_identifiers:
   identifier: CTL000314
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4100;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: P.O. Box 1399;Bristol, CT 06010
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Majority Whip-at-Large
+  committees: Banking; Finance, Revenue and Bonding; Higher Education and Employment
+    Advancement
+  committee codes: ;BA;FIN;HED;
+  business phone: 860-589-7289
+  prison: '0'

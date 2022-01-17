@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '106'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4053; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 3 Wiley Lane; Newtown, CT 06470
+- classification: district
+  address: 3 Wiley Lane;Newtown, CT 06470
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Bolinsky/
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000214
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4053;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 3 Wiley Lane;Newtown, CT 06470
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant House Republican Leader
+  committees: Aging; Appropriations; Education
+  committee codes: ;AGE;APP;ED;
+  prison: '0'

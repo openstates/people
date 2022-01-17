@@ -3,15 +3,21 @@ name: Fred Girod
 given_name: Fred
 family_name: Girod
 email: Sen.FredGirod@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/senate/MemberPhotos/girod.jpg
+image: https://www.oregonlegislature.gov/girod/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '9'
+offices:
+- classification: capitol
+  address: 900 Court St NE, S-326, Salem, OR, 97301
+  voice: 503-986-1709
 links:
 - url: https://www.oregonlegislature.gov/girod
+- url: https://www.oregonlegislature.gov/girod
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000013
@@ -21,7 +27,4 @@ other_identifiers:
   identifier: ORL000365
 sources:
 - url: https://www.oregonlegislature.gov/girod
-offices:
-- address: 900 Court St NE, S-326, Salem, OR, 97301
-  voice: 503-986-1950
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

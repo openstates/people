@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '11'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4010; Hartford, CT 06106-1591
+  voice: 860-240-1378
+- classification: district
+  address: 50 McKee Street; East Hartford, CT 06108
+- classification: district
+  address: 50 McKee Street;East Hartford, CT 06108
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Currey
 other_names:
@@ -20,10 +29,9 @@ other_identifiers:
   identifier: CTL000303
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4010;Hartford, CT 06106
-  voice: 860-240-1378
-  classification: capitol
-- address: 50 McKee Street;East Hartford, CT 06108
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Majority Leader
+  committees: Appropriations; Education; Judiciary
+  committee codes: ;APP;ED;JUD;
+  prison: '0'

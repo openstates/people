@@ -10,6 +10,13 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '20'
+offices:
+- classification: capitol
+  address: 3227 Minnesota Senate Bldg.; St. Paul, MN 55155
+  voice: 651-296-5558
+- classification: district
+  address: 4450 Washington Blvd.;Madison Lake, MN 56063
+  name: 'District Office #1'
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1225
 other_identifiers:
@@ -18,9 +25,4 @@ other_identifiers:
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-offices:
-- address: 4450 Washington Blvd.;Madison Lake, MN 56063
-  classification: district
-  name: 'District Office #1'
-- voice: 651-296-5558
-  classification: capitol
+- url: https://www.senate.mn/api/members

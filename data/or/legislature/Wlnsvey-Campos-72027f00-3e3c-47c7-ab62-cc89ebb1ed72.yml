@@ -3,7 +3,7 @@ name: Wlnsvey Campos
 given_name: Wlnsvey
 family_name: Campos
 email: Rep.WlnsveyCampos@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/campos.jpg
+image: https://www.oregonlegislature.gov/campos/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
@@ -11,11 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '28'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-285, Salem, OR, 97301
+  voice: 503-986-1428
 links:
 - url: https://www.oregonlegislature.gov/campos
+- url: https://www.oregonlegislature.gov/campos
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/campos
-offices:
-- address: 900 Court St NE, H-285, Salem, OR, 97301
-  voice: 503-986-1428
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

@@ -9,15 +9,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '69'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 507 Jeremy Swamp Road; Southbury, CT 06488
+- classification: district
+  address: ', CT'
+  name: 'District Office #1'
 links:
 - url: https://www.cthousegop.com/Harrison
 other_names:
 - name: Harrison, Cindy
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room;Hartford, CT 06106
-  classification: capitol
-- address: ', CT'
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Appropriations; Environment; Transportation
+  committee codes: ;APP;ENV;TRA;
+  prison: '0'

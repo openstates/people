@@ -11,19 +11,35 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '27'
+offices:
+- classification: district
+  address: 1955 W GROVE PARKWAY, SUITE 250, PLEASANT GROVE, UT, 84062
+  voice: 801-839-4653
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/BRAMMB
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BRAMMB
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist27.pdf
+  note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFIBRAMMB.pdf
+  note: conflict of interest 0
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415048
+  note: finance report
+- url: http://house.utah.gov/rep/BRAMMB/
+  note: homepage
 other_names:
 - name: Brammer, Brady
 - name: Brammer, B.
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/BRAMMB/
 extras:
-  links:
-  - https://le.utah.gov/house2/CofI/COFIBRAMMB.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415048
-offices:
-- address: 1955 W GROVE PARKWAY, SUITE 250, PLEASANT GROVE, UT, 84062
-  voice: 801-839-4653
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2019
+  profession: Attorney
+  education: B.A., Brigham Young University; J.D. Brigham Young University; M.P.A,
+    Brigham Young University
+  counties represented:
+  - Utah
+  cell phone: 801-839-4653

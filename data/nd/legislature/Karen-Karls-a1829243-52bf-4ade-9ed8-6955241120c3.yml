@@ -10,10 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '35'
+offices:
+- classification: district
+  address: 2112 Senate Drive, Bismarck, ND 58501-1978
+- classification: district
+  address: 2112 Senate Drive;Bismarck, ND;58501-1978
+  voice: 701-258-6836
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-karen-karls
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-karen-karls
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-karen-karls
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-karen-karls
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000118
@@ -25,8 +34,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-karen-karls
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-karen-karls
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-karen-karls
-offices:
-- address: 2112 Senate Drive;Bismarck, ND;58501-1978
-  voice: 701-258-6836
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-karen-karls
+extras:
+  bio info: []
+  Home phone: 701-258-6836

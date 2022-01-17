@@ -1,5 +1,5 @@
 id: ocd-person/7c4d8cad-55e5-474d-ac05-8db9a59da7fd
-name: Mia A. Ackerman
+name: Mia Ackerman
 given_name: Mia A.
 family_name: Ackerman
 gender: Female
@@ -11,9 +11,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '45'
+offices:
+- classification: district
+  address: 6 Shelter Lane, Cumberland, RI 02864
+  voice: 401-658-0981
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
+- url: http://www.rilegislature.gov/representatives/ackerman/default.aspx
+other_names:
+- name: Mia A. Ackerman
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000130
@@ -21,13 +29,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/representatives/ackerman/
 - url: http://www.rilegislature.gov/representatives/ackerman/default.aspx
+- url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/representatives/ackerman/default.aspx
+  note: Image Source
 extras:
-  name_first: Mia
-  name_last: Ackerman
-  name_middle: A.
-  town_represented: Cumberland, Lincoln
-offices:
-- address: 6 Shelter Lane, Cumberland, RI 02864
-  voice: 401-658-0981
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Cumberland, Lincoln

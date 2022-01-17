@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '66'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4054; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 42 Wheeler Road; Litchfield, CT 06759
+- classification: district
+  address: 42 Wheeler Road;Litchfield, CT 06759
+  voice: 860-489-9673
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Wilson/
 other_names:
@@ -18,11 +28,8 @@ other_identifiers:
   identifier: CTL000337
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4054;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 42 Wheeler Road;Litchfield, CT 06759
-  voice: 860-489-9673
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Aging (Ranking Member); Appropriations; Environment
+  committee codes: ;AGE;APP;ENV;
+  prison: '0'

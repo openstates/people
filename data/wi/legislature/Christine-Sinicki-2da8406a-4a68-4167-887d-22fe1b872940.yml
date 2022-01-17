@@ -10,10 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '20'
+offices:
+- classification: capitol
+  address: Room 114 North State Capitol PO Box 8953 Madison, WI 53708
+  voice: 608-266-8588
+  fax: 608-282-3620
+- classification: district
+  voice: 414-481-7667
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1610
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1814
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2189
+- url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2189
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000420
@@ -21,8 +30,11 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1610
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1814
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2189
-offices:
-- address: Room 114 North;State Capitol;PO Box 8953;Madison, WI 53708
-  voice: 608-266-8588
-  fax: 608-282-3620
-  classification: capitol
+- url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
+extras:
+  website: http://legis.wisconsin.gov/assembly/sinicki
+  extra phone: (888) 534-0020
+  staff1: Kylie Coffin
+  staff_email1: Kylie.Coffin2@legis.wisconsin.gov
+  staff2: Mary Beth George
+  staff_email2: MaryBeth.George@legis.wisconsin.gov

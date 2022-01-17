@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '23'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2304; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 99 Grassy Hill Road; Old Lyme, CT 06371
+- classification: district
+  address: 99 Grassy Hill Road;Old Lyme, CT 06371
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Carney/
 other_names:
@@ -20,10 +29,9 @@ other_identifiers:
   identifier: CTL000300
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2304;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 99 Grassy Hill Road;Old Lyme, CT 06371
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant House Republican Leader
+  committees: Transportation (Ranking Member); Education; Finance, Revenue and Bonding
+  committee codes: ;ED;FIN;TRA;
+  prison: '0'

@@ -11,8 +11,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '1'
+offices:
+- classification: district
+  address: PO Box 134, Blanchard, ID, 83804
+  name: 'District Office #1'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=1
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=1
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000307
@@ -22,9 +28,3 @@ other_identifiers:
   identifier: ocd-person/a03dd08f-1313-4b42-9f6b-c3dc8e257c07
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1190
-  classification: capitol
-- address: PO Box 134, Blanchard, ID, 83804
-  classification: district
-  name: 'District Office #1'

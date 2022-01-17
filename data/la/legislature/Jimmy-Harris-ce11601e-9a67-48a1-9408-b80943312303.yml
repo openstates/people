@@ -3,15 +3,29 @@ name: Jimmy Harris
 given_name: Jimmy
 family_name: Harris
 email: harrisj@legis.la.gov
-image: http://senate.la.gov/senators/pics/4a.jpg
+image: https://senate.la.gov/Senators/SenLargePics/Dist4.JPG
 party:
 - name: Democratic
 roles:
+- start_date: 2016-01-11
+  end_date: '2020-01-13'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '99'
 - start_date: '2020-01-13'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '4'
 links:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=99
 - url: http://senate.la.gov/senators/senpage.asp?SenID=4
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000826
+- scheme: legacy_openstates
+  identifier: LAL000863
+- scheme: openstates
+  identifier: ocd-person/cdc1b6c5-a3cb-4e34-af46-5e17c7d13b46
 sources:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=99
 - url: http://senate.la.gov/senators/senpage.asp?SenID=4

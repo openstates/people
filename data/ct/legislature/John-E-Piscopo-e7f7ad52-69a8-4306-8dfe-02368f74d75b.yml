@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '76'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4086; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 50 Judson Street; Thomaston, CT 06787
+- classification: district
+  address: 50 Judson Street;Thomaston, CT 06787
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Piscopo/
 other_names:
@@ -18,10 +27,10 @@ other_identifiers:
   identifier: CTL000112
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4086;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 50 Judson Street;Thomaston, CT 06787
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Chief House Republican Whip
+  committees: Environment; Energy and Technology; Finance, Revenue and Bonding; Legislative
+    Management
+  committee codes: ;ENV;ET;FIN;LM;
+  prison: '0'

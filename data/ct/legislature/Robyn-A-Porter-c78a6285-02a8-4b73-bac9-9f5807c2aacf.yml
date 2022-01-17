@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '94'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2704; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 99 Division Street; New Haven, CT 06511
+- classification: district
+  address: 99 Division Street;New Haven, CT 06511
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Porter
 other_names:
@@ -18,10 +27,8 @@ other_identifiers:
   identifier: CTL000260
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2704;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 99 Division Street;New Haven, CT 06511
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Labor and Public Employees (Chair); Appropriations; Judiciary
+  committee codes: ;APP;JUD;LAB;
+  prison: '0'

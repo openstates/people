@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '126'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 5005; Hartford, CT 06106-1591
+  voice: 860-240-0141
+- classification: district
+  address: 35 Wickliffe Circle; Bridgeport, CT 06606
+- classification: district
+  address: 35 Wickliffe Circle;Bridgeport, CT 06606
+  voice: 203-257-5281
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/stallworth
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000162
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 5005;Hartford, CT 06106
-  voice: 860-240-0141
-  classification: capitol
-- address: 35 Wickliffe Circle;Bridgeport, CT 06606
-  voice: 203-257-5281
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Deputy Speaker
+  committees: Banking; Higher Education and Employment Advancement; Human Services;
+    Legislative Management
+  committee codes: ;BA;HED;HS;LM;
+  prison: '0'

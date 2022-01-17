@@ -3,7 +3,7 @@ name: Mark Owens
 given_name: Mark
 family_name: Owens
 email: Rep.MarkOwens@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/owens.jpg
+image: https://www.oregonlegislature.gov/owens/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
@@ -11,10 +11,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '60'
+offices:
+- classification: capitol
+  address: 900 Court St NE, Room H-475, Salem, OR, 97301
 links:
 - url: https://www.oregonlegislature.gov/owens
+- url: https://www.oregonlegislature.gov/owens
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/owens
-offices:
-- address: 900 Court St NE, Room H-475, Salem, OR, 97301
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

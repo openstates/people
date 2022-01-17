@@ -1,5 +1,5 @@
 id: ocd-person/842ac286-38fb-428e-af54-1176d06b6144
-name: Peter Conlon
+name: Peter C. Conlon
 given_name: Peter
 family_name: Conlon
 email: PConlon@leg.state.vt.us
@@ -10,9 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Addison-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 33 West St. Cornwall, VT 05753
+- classification: district
+  address: 33 West St.;Cornwall, VT 05753
+  voice: 802-462-3134
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27155
 - url: http://legislature.vermont.gov/people/single/2022/27155
+- url: http://legislature.vermont.gov/people/single/2022/27155
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ADD-2.pdf
+  note: district map
+other_names:
+- name: Peter Conlon
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000850
@@ -21,10 +37,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/27155
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27155
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 33 West St.;Cornwall, VT 05753
-  voice: 802-462-3134
-  classification: district
-  name: 'District Office #1'
+- url: https://legislature.vermont.gov/people/loadAll/2022
+extras:
+  home address: Cornwall, VT 05753
+  home phone: (802) 462-3134
+  state email: PConlon@leg.state.vt.us

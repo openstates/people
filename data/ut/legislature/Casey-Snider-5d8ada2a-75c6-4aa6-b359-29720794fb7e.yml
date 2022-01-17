@@ -11,8 +11,29 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '5'
+offices:
+- classification: district
+  address: PO BOX 450, PARADISE, UT, 84328
+  voice: 435-890-3383
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/SNIDEC
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SNIDEC
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist05.pdf
+  note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFISNIDEC3.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/house2/CofI/COFISNIDEC2.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/COFISNIDEC1.pdf
+  note: conflict of interest 2
+- url: https://le.utah.gov/house2/CofI/COFISNIDEC.pdf
+  note: conflict of interest 3
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414881
+  note: finance report
+- url: http://house.utah.gov/rep/SNIDEC/
+  note: homepage
 other_names:
 - name: Snider, C.
 - name: Snider, Casey
@@ -21,15 +42,14 @@ other_identifiers:
   identifier: UTL000309
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/SNIDEC/
 extras:
-  links:
-  - https://le.utah.gov/house2/CofI/COFISNIDEC3.pdf
-  - https://le.utah.gov/house2/CofI/COFISNIDEC2.pdf
-  - https://le.utah.gov/house2/CofI/COFISNIDEC1.pdf
-  - https://le.utah.gov/house2/CofI/COFISNIDEC.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414881
-offices:
-- address: PO BOX 450, PARADISE, UT, 84328
-  voice: 435-890-3383
-  classification: district
-  name: 'District Office #1'
+  service start: Appointed October 15, 2018
+  profession: Executive Director
+  education: B.S., Conservation and Restoration Ecology and Law and Constitutional
+    Studies, Utah State University; M.S., Environmental Science and Policy, Johns
+    Hopkins University
+  counties represented:
+  - Cache
+  cell phone: 435-890-3383

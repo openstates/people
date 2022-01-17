@@ -3,15 +3,21 @@ name: David Gomberg
 given_name: David
 family_name: Gomberg
 email: Rep.DavidGomberg@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/gomberg.jpg
+image: https://www.oregonlegislature.gov/gomberg/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '10'
+offices:
+- classification: capitol
+  address: 900 Court St NE, H-480, Salem, OR, 97301
+  voice: 503-986-1410
 links:
 - url: https://www.oregonlegislature.gov/gomberg
+- url: https://www.oregonlegislature.gov/gomberg
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000105
@@ -23,7 +29,4 @@ other_identifiers:
   identifier: ORL000349
 sources:
 - url: https://www.oregonlegislature.gov/gomberg
-offices:
-- address: 900 Court St NE, H-480, Salem, OR, 97301
-  voice: 503-986-1410
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

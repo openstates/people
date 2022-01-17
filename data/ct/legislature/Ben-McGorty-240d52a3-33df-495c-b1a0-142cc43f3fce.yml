@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '122'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4062; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 30 Wigwam Drive; Shelton, CT 06484
+- classification: district
+  address: 30 Wigwam Drive;Shelton, CT 06484
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/McGorty/
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000261
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4062;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 30 Wigwam Drive;Shelton, CT 06484
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant House Republican Leader
+  committees: Banking; Public Safety and Security; Regulation Review
+  committee codes: ;BA;PS;RR;
+  prison: '0'

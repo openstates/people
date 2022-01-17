@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '97'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 5008; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 151 Huntington Road; New Haven, CT 06492
+- classification: district
+  address: 151 Huntington Road;New Haven, CT 06492
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Paolillo
 other_names:
@@ -20,10 +29,10 @@ other_identifiers:
   identifier: CTL000351
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 5008;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 151 Huntington Road;New Haven, CT 06492
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy Majority Leader
+  committees: Public Safety and Security (Vice Chair); Banking; Finance, Revenue and
+    Bonding
+  committee codes: ;BA;FIN;PS;
+  prison: '0'

@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '17'
+offices:
+- classification: capitol
+  voice: 208-332-1082
+- classification: district
+  address: 1104 S Johnson St, Boise, ID, 83705
+  voice: 208-343-1608
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=17
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=17
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000315
@@ -22,9 +30,3 @@ other_identifiers:
   identifier: ocd-person/27ee275b-ac80-47b9-8bc3-1f2f42eda1ff
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1082
-  classification: capitol
-- address: 1104 S Johnson St, Boise, ID, 83705
-  classification: district
-  name: 'District Office #1'

@@ -10,10 +10,19 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '4'
+offices:
+- classification: district
+  address: 8011 51st Street NW, Stanley, ND 58784-9562
+- classification: district
+  address: 8011 51st Street NW;Stanley, ND;58784-9562
+  voice: 701-421-8813
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/senate/senator-jordan-kannianen
 - url: http://www.legis.nd.gov/assembly/66-2019/members/senate/senator-jordan-kannianen
 - url: http://www.legis.nd.gov/assembly/67-2021/members/senate/senator-jordan-kannianen
+- url: https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-jordan-kannianen
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000496
@@ -21,8 +30,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/senate/senator-jordan-kannianen
 - url: http://www.legis.nd.gov/assembly/66-2019/members/senate/senator-jordan-kannianen
 - url: http://www.legis.nd.gov/assembly/67-2021/members/senate/senator-jordan-kannianen
-offices:
-- address: 8011 51st Street NW;Stanley, ND;58784-9562
-  voice: 701-421-8813
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/senate/senator-jordan-kannianen
+extras:
+  bio info: []
+  Cell phone: 701-421-8813

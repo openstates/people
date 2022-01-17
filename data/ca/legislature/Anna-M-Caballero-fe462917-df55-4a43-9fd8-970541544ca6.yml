@@ -21,6 +21,16 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '12'
+offices:
+- classification: capitol
+  address: State Capitol, Room 5052, Sacramento, CA 95814-4900
+  voice: 916-651-4012
+- classification: district
+  address: 510 West Main Street, Suite E, Merced, CA 95340
+  voice: 209-726-5495
+- classification: district
+  address: 132 W. Gabilan Street, Suite 101, Salinas, CA 93901
+  voice: 831-769-8040
 links:
 - url: https://senate.ca.gov/sd12
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD12&inframe=N
@@ -36,11 +46,4 @@ other_identifiers:
   identifier: ocd-person/9510e70e-11d8-4d56-8161-1e515dbc1d07
 sources:
 - url: http://senate.ca.gov/senators
-offices:
-- address: State Capitol, Room 5052, Sacramento, CA 95814-4900
-  voice: 916-651-4012
-  classification: capitol
-- address: 132 W. Gabilan Street, Suite 101, Salinas, CA 93901
-  voice: 831-769-8040
-  classification: district
-  name: 'District Office #1'
+- url: https://www.senate.ca.gov/senators

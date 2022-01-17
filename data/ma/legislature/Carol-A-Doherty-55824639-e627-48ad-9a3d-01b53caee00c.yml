@@ -8,11 +8,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 3rd Bristol
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 527A; Boston, MA 02133
+  voice: 617-722-2020
 links:
 - url: https://malegislature.gov/Legislators/Profile/CAD1
 sources:
 - url: https://malegislature.gov/Legislators/Profile/CAD1
-offices:
-- address: 24 Beacon St.;Room 527A;Boston, MA, 02133
-  voice: 617-722-2020
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CAD1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: CAD1

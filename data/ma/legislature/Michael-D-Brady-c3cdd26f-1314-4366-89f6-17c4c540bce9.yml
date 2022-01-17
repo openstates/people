@@ -11,6 +11,10 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Plymouth and Bristol
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 416-A; Boston, MA 02133
+  voice: 617-722-1200
 links:
 - url: https://malegislature.gov/Legislators/Profile/MDB0
 other_identifiers:
@@ -20,7 +24,7 @@ other_identifiers:
   identifier: MAL000391
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MDB0
-offices:
-- address: 24 Beacon St.;Room 416-A;Boston, MA, 02133
-  voice: 617-722-1200
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MDB0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MDB0

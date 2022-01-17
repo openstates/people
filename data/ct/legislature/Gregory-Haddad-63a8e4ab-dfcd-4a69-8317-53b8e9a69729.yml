@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '54'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 1804; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 28 Storrs Heights Road; Storrs, CT 06268
+- classification: district
+  address: 28 Storrs Heights Road;Storrs, CT 06268
+  voice: 860-429-8517
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/haddad
 other_names:
@@ -18,11 +28,10 @@ other_identifiers:
   identifier: CTL000090
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 1804;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 28 Storrs Heights Road;Storrs, CT 06268
-  voice: 860-429-8517
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Assistant Deputy Speaker of the House
+  committees: Appropriations; Government Administration and Elections; Higher Education
+    and Employment Advancement
+  committee codes: ;APP;GAE;HED;
+  prison: '0'

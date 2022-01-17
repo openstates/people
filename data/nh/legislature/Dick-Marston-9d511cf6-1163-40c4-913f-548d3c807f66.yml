@@ -2,6 +2,7 @@ id: ocd-person/9d511cf6-1163-40c4-913f-548d3c807f66
 name: Dick Marston
 given_name: Dick
 family_name: Marston
+email: ramarston1@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377140.jpg
 party:
 - name: Republican
@@ -14,6 +15,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 19
+offices:
+- classification: district
+  address: Manchester, NH 03102-2415
+  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377140
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -23,7 +28,8 @@ other_identifiers:
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377140
 - url: http://gencourt.state.nh.us/downloads/Members.txt
-offices:
-- address: Manchester, NH 03102-2415
-  classification: district
-  name: 'District Office #1'
+- url: http://gencourt.state.nh.us/downloads/members.txt
+extras:
+  county: Hillsborough
+  elected status: Former
+  gender code: M

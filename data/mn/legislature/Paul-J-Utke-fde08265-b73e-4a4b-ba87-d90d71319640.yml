@@ -10,6 +10,13 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '2'
+offices:
+- classification: capitol
+  address: 3403 Minnesota Senate Bldg.; St. Paul, MN 55155
+  voice: 651-296-9651
+- classification: district
+  address: 15666 Deerwood Loop;Park Rapids, MN 56470
+  name: 'District Office #1'
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1218
 other_identifiers:
@@ -20,9 +27,4 @@ other_identifiers:
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-offices:
-- address: 15666 Deerwood Loop;Park Rapids, MN 56470
-  classification: district
-  name: 'District Office #1'
-- voice: 651-296-9651
-  classification: capitol
+- url: https://www.senate.mn/api/members

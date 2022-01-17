@@ -11,8 +11,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '22'
+offices:
+- classification: capitol
+  voice: 208-332-1036
+- classification: district
+  address: 3865 S Black Cat Rd, Meridian, ID, 83687
+  name: 'District Office #1'
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=22
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=22
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000256
@@ -22,9 +30,5 @@ other_identifiers:
   identifier: ocd-person/667a662e-d98d-4c49-879c-ad9d5e0a4c03
 sources:
 - url: https://legislature.idaho.gov/house/membership/
-offices:
-- voice: 208-332-1036
-  classification: capitol
-- address: 3865 S Black Cat Rd, Meridian, ID, 83687
-  classification: district
-  name: 'District Office #1'
+extras:
+  title: Assistant Majority Leader

@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 10th Suffolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 26; Boston, MA 02133
+  voice: 617-722-2080
+  fax: 617-626-0158
 links:
 - url: https://malegislature.gov/Legislators/Profile/E_C1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/d8287492-1d4d-42b1-937d-0f0fedaff47d
 sources:
 - url: https://malegislature.gov/Legislators/Profile/E_C1
-offices:
-- address: 24 Beacon St.;Room 26;Boston, MA, 02133
-  voice: 617-722-2080
-  fax: 617-626-0158
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/E_C1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: E_C1

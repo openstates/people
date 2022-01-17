@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 23rd Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 540; Boston, MA 02133
+  voice: 617-722-2090
+  fax: 617-722-2848
 links:
 - url: https://malegislature.gov/Legislators/Profile/S_G1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/dda2082e-88b7-417b-b61b-1a69b2264f6d
 sources:
 - url: https://malegislature.gov/Legislators/Profile/S_G1
-offices:
-- address: 24 Beacon St.;Room 540;Boston, MA, 02133
-  voice: 617-722-2090
-  fax: 617-722-2848
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/S_G1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: S_G1

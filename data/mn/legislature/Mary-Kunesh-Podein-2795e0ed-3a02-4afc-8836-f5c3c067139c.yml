@@ -15,8 +15,13 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '41'
+offices:
+- classification: capitol
+  address: 2323 Minnesota Senate Bldg.; St. Paul, MN 55155
+  voice: 651-296-4334
 links:
 - url: https://www.senate.mn/members/member_bio.html?member_id=1242
+- url: https://www.senate.mn/members/member_bio.html?mem_id=1242
 other_names:
 - name: Mary Kunesh-Podein
 other_identifiers:
@@ -25,7 +30,4 @@ other_identifiers:
 sources:
 - url: https://www.senate.mn/members/list.csv
 - url: https://www.senate.mn/members/index.php
-offices:
-- address: 2323 Minnesota Senate Bldg.;95 University Avenue W.;St. Paul, MN 55155
-  voice: 651-296-4334
-  classification: capitol
+- url: https://www.senate.mn/api/members

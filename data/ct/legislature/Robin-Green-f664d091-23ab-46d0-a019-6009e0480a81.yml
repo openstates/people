@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '55'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 63 Highpoint Commons; Marlborough, CT 06447
+- classification: district
+  address: 63 Highpoint Commons;Marlborough, CT 06447
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Green/
 other_names:
@@ -18,10 +27,8 @@ other_identifiers:
   identifier: CTL000340
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 63 Highpoint Commons;Marlborough, CT 06447
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Committee on Children; Public Health
+  committee codes: ;KID;PH;
+  prison: '0'

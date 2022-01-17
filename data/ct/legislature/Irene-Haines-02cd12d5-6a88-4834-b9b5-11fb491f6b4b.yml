@@ -9,17 +9,26 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '34'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 112 Shanaghan Road; East Haddam, CT 06423
+- classification: district
+  address: 112 Shanaghan Road;East Haddam, CT 06423
+  voice: 860-608-8931
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/haines/
 other_names:
 - name: Haines, Irene M.
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4200;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 112 Shanaghan Road;East Haddam, CT 06423
-  voice: 860-608-8931
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  committees: Higher Education and Employment Advancement (Ranking Member); Education;
+    Transportation
+  committee codes: ;ED;HED;TRA;
+  business phone: 860-608-8931
+  prison: '0'

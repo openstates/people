@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '9'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3704; Hartford, CT 06106-1591
+  voice: 860-240-8586
+- classification: district
+  address: 169 Langford Lane; East Hartford, CT 06118
+- classification: district
+  address: 169 Langford Lane;East Hartford, CT 06118
+  voice: 860-895-8374
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Rojas
 other_names:
@@ -18,11 +28,9 @@ other_identifiers:
   identifier: CTL000045
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3704;Hartford, CT 06106
-  voice: 860-240-8586
-  classification: capitol
-- address: 169 Langford Lane;East Hartford, CT 06118
-  voice: 860-895-8374
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: House Majority Leader
+  committees: Legislative Management (Vice Chair)
+  committee codes: ;LM;
+  prison: '0'

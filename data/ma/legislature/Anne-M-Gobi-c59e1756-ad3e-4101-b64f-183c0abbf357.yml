@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Worcester, Hampden, Hampshire and Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 413-A; Boston, MA 02133
+  voice: 617-722-1540
+  fax: 617-722-1078
 links:
 - url: https://malegislature.gov/Legislators/Profile/AMG0
 other_identifiers:
@@ -24,8 +29,7 @@ other_identifiers:
   identifier: MAL000366
 sources:
 - url: https://malegislature.gov/Legislators/Profile/AMG0
-offices:
-- address: 24 Beacon St.;Room 413-A;Boston, MA, 02133
-  voice: 617-722-1540
-  fax: 617-722-1078
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/AMG0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: AMG0

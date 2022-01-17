@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 11th Plymouth
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 136; Boston, MA 02133
+  voice: 617-722-2300
+  fax: 617-626-0285
 links:
 - url: https://malegislature.gov/Legislators/Profile/CDC1
 other_identifiers:
@@ -23,8 +28,8 @@ other_identifiers:
   identifier: ocd-person/dd89e355-b12d-4bbe-ad83-cc0deb6ae3c4
 sources:
 - url: https://malegislature.gov/Legislators/Profile/CDC1
-offices:
-- address: 24 Beacon St.;Room 136;Boston, MA, 02133
-  voice: 617-722-2396
-  fax: 617-626-0285
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CDC1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Majority Leader
+  member code: CDC1

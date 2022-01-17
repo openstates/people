@@ -1,5 +1,5 @@
 id: ocd-person/656dec4e-3c95-43b1-9059-f2259300f88b
-name: Mike Kohler
+name: Mike L. Kohler
 given_name: Mike
 family_name: Kohler
 email: mkohler@le.utah.gov
@@ -11,17 +11,30 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '54'
+offices:
+- classification: district
+  address: PO Box 467, Midway, UT, 84049
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/KOHLEM
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=KOHLEM
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist54.pdf
+  note: district demographics
+- url: http://house.utah.gov/rep/KOHLEM/
+  note: homepage
 other_names:
 - name: Kohler, Mike L.
 - name: Kohler, M.
+- name: Mike Kohler
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/KOHLEM/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: PO Box 467, Midway, UT, 84049
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Business Manager
+  counties represented:
+  - Summit
+  - Wasatch
+  cell phone: 801-420-6158

@@ -11,9 +11,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '35'
+offices:
+- classification: district
+  address: 50 Woodmark Way, Wakefield, RI 02879
+  voice: 401-222-2466
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
+- url: http://www.rilegislature.gov/representatives/fogarty/default.aspx
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000146
@@ -21,13 +27,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/representatives/fogarty/
 - url: http://www.rilegislature.gov/representatives/fogarty/default.aspx
+- url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/representatives/fogarty/default.aspx
+  note: Image Source
 extras:
-  name_first: Kathleen
-  name_last: Fogarty
-  name_middle: A.
-  town_represented: South Kingstown
-offices:
-- address: 50 Woodmark Way, Wakefield, RI 02879
-  voice: 401-222-2466
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: South Kingstown

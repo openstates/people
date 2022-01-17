@@ -8,6 +8,14 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '29'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 1805; Hartford, CT 06106-1591
+  voice: 860-240-8634
+- classification: district
+  address: 300 Capitol Avenue, Legislative Office Bldg;Hartford, CT 06106
+  voice: 860-208-0429
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/Flexer
 other_names:
@@ -21,11 +29,10 @@ other_identifiers:
   identifier: CTL000302
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 1805;Hartford, CT 06106
-  voice: 860-240-8634
-  classification: capitol
-- address: 300 Capitol Avenue, Legislative Office Bldg;Hartford, CT 06106
-  voice: 860-208-0429
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Deputy Senate President Pro Tempore & Federal Relations Liaison
+  committees: Government Administration and Elections (Chair); Higher Education and
+    Employment Advancement (Vice Chair); Appropriations; Education; Judiciary
+  committee codes: ;APP;ED;GAE;HED;JUD;
+  prison: '0'

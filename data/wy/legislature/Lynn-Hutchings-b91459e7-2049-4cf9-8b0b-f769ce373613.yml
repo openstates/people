@@ -4,7 +4,7 @@ given_name: Lynn
 family_name: Hutchings
 email: Lynn.Hutchings@wyoleg.gov
 birth_date: 1960-09-06
-image: http://wyoleg.gov/LegislatorSummary/Photos/HutchingsLS05.jpg
+image: https://wyoleg.gov/LegislatorSummary/Photos/66th-HutchingsLynn.jpg
 party:
 - name: Republican
 roles:
@@ -17,9 +17,16 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '5'
+offices:
+- classification: district
+  address: P.O. Box 9603, Cheyenne WY 82003
+  voice: 307-316-0858
+  name: 'District Office #1'
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1997
 - url: http://wyoleg.gov/Legislators/2021/R/1997
+- url: http://wyoleg.gov/Legislators/2021/R/1997
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WYL000101
@@ -28,16 +35,19 @@ other_identifiers:
 sources:
 - url: http://wyoleg.gov/Legislators/2019/R/1997
 - url: http://wyoleg.gov/Legislators/2021/R/1997
+- url: https://wyoleg.gov/LsoService/api/legislator/2021/S
+- url: https://wyoleg.gov/LsoService/api/legislator/1997
 extras:
-  county: Laramie
-  number_children: ''
-  occupation: null
-  place_of_birth: ''
+  county: Laramie County
   religion: Christian
-  spouse_given_name: Thomas
-  wy_leg_id: 1997
-offices:
-- address: P.O. Box 9603, Cheyenne WY 82003
-  voice: 307-316-0858
-  classification: district
-  name: 'District Office #1'
+  spouse name: Thomas
+  house years: 'House:  2013-2014'
+  prior service:
+  - chamber: House
+    startYear: 2013
+    endYear: '2014'
+    district: ' District 42, '
+  - chamber: Senate
+    startYear: 2019
+    endYear: Present
+    district: ' District 05, '

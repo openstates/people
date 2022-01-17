@@ -10,13 +10,22 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '151'
+offices:
+- classification: capitol
+  address: 300 Capitol Ave., LOB Room 1002; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 300 Capitol Ave., LOB; Hartford, CT 06106
 links:
 - url: http://www.cthousegop.com/arora
 other_names:
 - name: Arora, Harry
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: 300 Capitol Ave., LOB;Room 1002;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
+extras:
+  gender: Male
+  committees: Labor and Public Employees (Ranking Member); Energy and Technology;
+    Human Services
+  committee codes: ;ET;HS;LAB;
+  business phone: 203-571-9325
+  prison: '0'

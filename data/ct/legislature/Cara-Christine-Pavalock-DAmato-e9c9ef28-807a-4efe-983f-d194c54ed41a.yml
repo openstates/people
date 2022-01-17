@@ -9,6 +9,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '77'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 4063; Hartford, CT 06106-1591
+  voice: 860-240-8700
+- classification: district
+  address: 467 Farmington Avenue; Bristol, CT 06010
+- classification: district
+  address: 182 Rossi Drive;Bristol, CT 06010
+  name: 'District Office #1'
 links:
 - url: http://www.cthousegop.com/Pavalock/
 other_names:
@@ -18,10 +27,9 @@ other_identifiers:
   identifier: CTL000322
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 4063;Hartford, CT 06106
-  voice: 860-240-8700
-  classification: capitol
-- address: 182 Rossi Drive;Bristol, CT 06010
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Assistant House Republican Leader
+  committees: Insurance and Real Estate (Ranking Member); Appropriations; Judiciary
+  committee codes: ;APP;INS;JUD;
+  prison: '0'

@@ -10,8 +10,35 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '48'
+offices:
+- classification: district
+  address: 1313 E 800 N, OREM, UT, 84097
+  voice: 801-836-6010
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/STRATKJ
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=STRATKJ
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist48.pdf
+  note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFISTRATKJ2.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/house2/CofI/COFISTRATKJ1.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/COFISTRATKJ.pdf
+  note: conflict of interest 2
+- url: http://le.utah.gov/house2/CofI/kstratton3.pdf
+  note: conflict of interest 3
+- url: http://le.utah.gov/house2/CofI/kstratton2.pdf
+  note: conflict of interest 4
+- url: http://le.utah.gov/house2/CofI/kstratton.pdf
+  note: conflict of interest 5
+- url: http://le.utah.gov/house2/CofI/STRATKJ.pdf
+  note: conflict of interest 6
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413031
+  note: finance report
+- url: http://house.utah.gov/rep/STRATKJ/
+  note: homepage
 other_names:
 - name: Stratton, Keven J.
 - name: Stratton, K.
@@ -24,18 +51,13 @@ other_identifiers:
   identifier: UTL000262
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/STRATKJ/
 extras:
-  links:
-  - https://le.utah.gov/house2/CofI/COFISTRATKJ2.pdf
-  - https://le.utah.gov/house2/CofI/COFISTRATKJ1.pdf
-  - https://le.utah.gov/house2/CofI/COFISTRATKJ.pdf
-  - http://le.utah.gov/house2/CofI/kstratton3.pdf
-  - http://le.utah.gov/house2/CofI/kstratton2.pdf
-  - http://le.utah.gov/house2/CofI/kstratton.pdf
-  - http://le.utah.gov/house2/CofI/STRATKJ.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413031
-offices:
-- address: 1313 E 800 N, OREM, UT, 84097
-  voice: 801-836-6010
-  classification: district
-  name: 'District Office #1'
+  service start: Appointed May 8, 2012
+  profession: Attorney, Businessman, Farmer
+  education: B.S., Finance, Brigham Young University; J.D., J. Reuben Clark Law School,
+    Brigham Young University
+  counties represented:
+  - Utah
+  cell phone: 801-836-6010

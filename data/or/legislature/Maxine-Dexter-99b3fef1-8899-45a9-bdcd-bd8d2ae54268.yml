@@ -3,7 +3,7 @@ name: Maxine Dexter
 given_name: Maxine
 family_name: Dexter
 email: Rep.MaxineDexter@oregonlegislature.gov
-image: https://www.oregonlegislature.gov/house/MemberPhotos/dexter.jpg
+image: https://www.oregonlegislature.gov/dexter/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
@@ -11,10 +11,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '33'
+offices:
+- classification: capitol
+  address: 900 Court St NE, Room H-283, Salem, OR, 97301
 links:
 - url: https://www.oregonlegislature.gov/dexter
+- url: https://www.oregonlegislature.gov/dexter
+  note: homepage
 sources:
 - url: https://www.oregonlegislature.gov/dexter
-offices:
-- address: 900 Court St NE, Room H-283, Salem, OR, 97301
-  classification: capitol
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators

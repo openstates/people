@@ -10,10 +10,21 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '28'
+offices:
+- classification: capitol
+  voice: 701-782-4111
+- classification: district
+  address: P.O. Box 467, Hazelton, ND 58544-0467
+- classification: district
+  address: P.O. Box 467;Hazelton, ND;58544-0467
+  voice: 701-321-2224
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-jeffery-j-magrum
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-jeffery-j-magrum
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-jeffery-j-magrum
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-jeffery-j-magrum
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000471
@@ -21,10 +32,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-jeffery-j-magrum
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-jeffery-j-magrum
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-jeffery-j-magrum
-offices:
-- address: P.O. Box 467;Hazelton, ND;58544-0467
-  voice: 701-321-2224
-  classification: district
-  name: 'District Office #1'
-- voice: 701-782-4111
-  classification: capitol
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-jeffery-j-magrum
+extras:
+  bio info: []
+  Cell phone: 701-321-2224

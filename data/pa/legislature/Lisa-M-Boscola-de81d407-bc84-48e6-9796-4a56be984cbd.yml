@@ -10,25 +10,33 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '18'
+offices:
+- classification: capitol
+  address: 'Senate Box 203018 Harrisburg, PA 17120-3018 Room: 458 Main Capitol'
+  voice: 717-787-4236
+  fax: 717-783-1257
+- classification: district
+  address: 1 East Broad Street Suite 120;Bethlehem, PA 18018
+  voice: 610-868-8667
+  fax: 610-861-2184
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=179
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=179
+  note: homepage
+ids:
+  twitter: SenLisaBoscola
+  facebook: lisa.boscola
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000004
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=179
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=179
 extras:
-  facebook: https://www.facebook.com/lisa.boscola
-  twitter: https://twitter.com/SenLisaBoscola
-offices:
-- address: Senate Box 203018;Harrisburg, PA 17120-3018;Room:;458 Main Capitol
-  voice: 717-787-4236
-  fax: 717-783-1257
-  classification: capitol
-- address: 1 East Broad Street Suite 120;Bethlehem, PA 18018
-  voice: 610-868-8667
-  fax: 610-861-2184
-  classification: district
-  name: 'District Office #1'
+  Education:
+  - Wilson College for Minor Judiciary, Certification for D.J., 1987;  Villanova University,
+    B.A. Political Science, (cum laude), 1984;  M.A. Political Science, 1985

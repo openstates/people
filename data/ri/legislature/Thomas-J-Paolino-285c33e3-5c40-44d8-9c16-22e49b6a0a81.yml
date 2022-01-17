@@ -6,14 +6,25 @@ gender: Male
 email: sen-Paolino@rilegislature.gov
 image: http://www.rilegislature.gov/senators/pictures/paolino.jpg
 party:
-- name: Republican
+- end_date: '2021-12-09'
+  name: Republican
+- name: Democratic
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '17'
+offices:
+- classification: district
+  address: 119 Brettonwoods Drive, Cranston RI 02920
+  voice: 401-222-2708
+- classification: district
+  address: 19 Heritage Drive Lincoln, RI 02865
+  voice: 401-726-3177
+  name: 'District Office #1'
 links:
 - url: http://www.rilin.state.ri.us/senators/Algiere/
 - url: http://www.rilegislature.gov/senators/algiere/default.aspx
+- url: http://www.rilegislature.gov/senators/paolino/Pages/Biography.aspx
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000170
@@ -21,13 +32,11 @@ sources:
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/senators/Paolino/
 - url: http://www.rilegislature.gov/senators/paolino/default.aspx
+- url: http://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp
+  note: Contact Web Page
+- url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
+  note: Detail Excel Source
+- url: http://www.rilegislature.gov/senators/paolino/Pages/Biography.aspx
+  note: Image Source
 extras:
-  name_first: Thomas
-  name_last: Paolino
-  name_middle: J.
-  town_represented: Lincoln, North Providence, North Smithfield
-offices:
-- address: 19 Heritage Drive Lincoln, RI 02865
-  voice: 401-726-3177
-  classification: district
-  name: 'District Office #1'
+  City/Town Represented: Cranston

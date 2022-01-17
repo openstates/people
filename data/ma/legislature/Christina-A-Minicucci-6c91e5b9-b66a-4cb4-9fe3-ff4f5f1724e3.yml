@@ -9,13 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 14th Essex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 448; Boston, MA 02133
+  voice: 617-722-2582
 links:
 - url: https://malegislature.gov/Legislators/Profile/CAM1
 - url: https://malegislature.gov/Legislators/Profile/CAM2
 sources:
 - url: https://malegislature.gov/Legislators/Profile/CAM1
 - url: https://malegislature.gov/Legislators/Profile/CAM2
-offices:
-- address: 24 Beacon St.;Room 448;Boston, MA, 02133
-  voice: 617-722-2582
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CAM2
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: CAM2

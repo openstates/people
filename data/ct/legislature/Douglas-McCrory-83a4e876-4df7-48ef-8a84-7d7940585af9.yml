@@ -9,6 +9,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '2'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 3105; Hartford, CT 06106-1591
+  voice: 860-240-8600
+- classification: district
+  address: 235 Blue Hills Avenue; Hartford, CT 06112
+- classification: district
+  address: 235 Blue Hills Avenue;Hartford, CT 06112
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/McCrory
 other_names:
@@ -20,10 +29,10 @@ other_identifiers:
   identifier: CTL000359
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 3105;Hartford, CT 06106
-  voice: 860-240-8600
-  classification: capitol
-- address: 235 Blue Hills Avenue;Hartford, CT 06112
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  title: Deputy President Pro Tempore
+  committees: Education (Chair); Internship (Chair); Banking (Vice Chair); Appropriations;
+    Commerce; Energy and Technology; Government Administration and Elections
+  committee codes: ;APP;BA;CE;ED;ET;GAE;ISC;
+  prison: '0'

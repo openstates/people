@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 15th Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 466; Boston, MA 02133
+  voice: 617-722-2017
+  fax: 617-626-0286
 links:
 - url: https://malegislature.gov/Legislators/Profile/MSK1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/38f2bdc1-1c26-49ec-a822-803ba0a3ad91
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MSK1
-offices:
-- address: 24 Beacon St.;Room 466;Boston, MA, 02133
-  voice: 617-722-2017
-  fax: 617-626-0286
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MSK1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MSK1

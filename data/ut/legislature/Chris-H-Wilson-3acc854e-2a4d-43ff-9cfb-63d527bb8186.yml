@@ -11,18 +11,35 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '25'
+offices:
+- classification: district
+  address: 1367 Cedarwood Lane, Logan, UT, 84341
+  voice: 435-752-7355
+- classification: district
+  address: 1367 Cedarwood Lane, Logan, , 84341
+  voice: 435-770-2861
+  name: 'District Office #1'
 links:
 - url: https://senate.utah.gov/chris-wilson
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=WILSOCH
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist25.pdf
+  note: district demographics
+- url: https://senate.utah.gov/sen/WILSOCH/
+  note: homepage
 other_names:
 - name: Wilson, Chris H.
 - name: Wilson, C.
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/WILSOCH/
 extras:
-  links:
-  - http://www.disclosures.utah.gov/Search/PublicSearch
-offices:
-- address: 1367 Cedarwood Lane, Logan, , 84341
-  voice: 435-770-2861
-  classification: district
-  name: 'District Office #1'
+  service start: January 1, 2021
+  profession: Business Owner
+  education: Bachelor, Business Administration, Finance emphasis, Utah State University
+  counties represented:
+  - Cache
+  - Rich
+  cell phone: 435-770-2861
+  home phone: 435-755-7013

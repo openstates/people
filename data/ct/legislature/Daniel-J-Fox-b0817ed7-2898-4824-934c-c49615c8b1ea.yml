@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '148'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2202; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 28 Pierce Place; Stamford, CT 06906
+- classification: district
+  address: 28 Pierce Place;Stamford, CT 06906
+  voice: 203-569-6290
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Fox
 other_names:
@@ -18,11 +28,8 @@ other_identifiers:
   identifier: CTL000184
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2202;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 28 Pierce Place;Stamford, CT 06906
-  voice: 203-569-6290
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Government Administration and Elections (Chair); Judiciary
+  committee codes: ;GAE;JUD;
+  prison: '0'

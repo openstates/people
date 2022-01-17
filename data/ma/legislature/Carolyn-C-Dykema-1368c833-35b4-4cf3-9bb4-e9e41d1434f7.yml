@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 8th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 127; Boston, MA 02133
+  voice: 617-722-2680
+  fax: 617-722-2239
 links:
 - url: https://malegislature.gov/Legislators/Profile/CCD1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/c2843f6e-314b-4d24-b573-547602d27bee
 sources:
 - url: https://malegislature.gov/Legislators/Profile/CCD1
-offices:
-- address: 24 Beacon St.;Room 127;Boston, MA, 02133
-  voice: 617-722-2680
-  fax: 617-722-2239
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CCD1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: CCD1

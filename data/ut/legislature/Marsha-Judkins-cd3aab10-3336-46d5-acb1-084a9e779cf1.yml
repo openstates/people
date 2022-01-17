@@ -10,8 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '61'
+offices:
+- classification: district
+  address: 838 N 2400 W, PROVO, UT, 84601
+  voice: 801-669-6962
+  name: 'District Office #1'
 links:
 - url: http://house.utah.gov/rep/JUDKIM
+- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=JUDKIM
+  note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist61.pdf
+  note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFIJUDKIM1.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/house2/CofI/COFIJUDKIM.pdf
+  note: conflict of interest 1
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414979
+  note: finance report
+- url: http://house.utah.gov/rep/JUDKIM/
+  note: homepage
 other_names:
 - name: Judkins, M.
 - name: Judkins, Marsha
@@ -20,13 +37,14 @@ other_identifiers:
   identifier: UTL000308
 sources:
 - url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
+- url: http://house.utah.gov/rep/JUDKIM/
 extras:
-  links:
-  - https://le.utah.gov/house2/CofI/COFIJUDKIM1.pdf
-  - https://le.utah.gov/house2/CofI/COFIJUDKIM.pdf
-  - https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414979
-offices:
-- address: 838 N 2400 W, PROVO, UT, 84601
-  voice: 801-669-6962
-  classification: district
-  name: 'District Office #1'
+  service start: Appointed July 17, 2018
+  profession: Adjunct Professor at UVU in Developmental Math
+  education: B.A. in Political Science and a Masters in Public Administration from
+    BYU.
+  counties represented:
+  - Utah
+  cell phone: 801-669-6962
+  home phone: 801-669-6962

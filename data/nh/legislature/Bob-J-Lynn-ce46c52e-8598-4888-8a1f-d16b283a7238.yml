@@ -1,5 +1,7 @@
 id: ocd-person/ce46c52e-8598-4888-8a1f-d16b283a7238
 name: Bob J. Lynn
+given_name: Bob
+family_name: Lynn
 email: rjlynn4@gmail.com
 party:
 - name: Republican
@@ -7,16 +9,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 7
+offices:
+- classification: district
+  address: Windham, NH 03087
+  voice: 603-598-1899
+  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  first_name: Bob
-  last_name: Lynn
-  middle_name: J.
-offices:
-- address: Windham, NH 03087
-  voice: 603-598-1899
-  classification: district
-  name: 'District Office #1'
+  county: Rockingham
+  elected status: new
+  gender code: M

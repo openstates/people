@@ -11,6 +11,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Worcester
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 109-B; Boston, MA 02133
+  voice: 617-722-1485
+  fax: 617-722-1066
+- classification: district
+  address: 36 North Quinsigamond Avenue;Shrewsbury, MA 01545
+  voice: 508-757-0323
+  name: 'District Office #1'
 links:
 - url: https://malegislature.gov/Legislators/Profile/MOM0
 other_identifiers:
@@ -22,12 +31,7 @@ other_identifiers:
   identifier: MAL000343
 sources:
 - url: https://malegislature.gov/Legislators/Profile/MOM0
-offices:
-- address: 24 Beacon St.;Room 109-B;Boston, MA, 02133
-  voice: 617-722-1485
-  fax: 617-722-1066
-  classification: capitol
-- address: 36 North Quinsigamond Avenue;Shrewsbury, MA 01545
-  voice: 508-757-0323
-  classification: district
-  name: 'District Office #1'
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MOM0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: MOM0

@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 8th Essex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 174; Boston, MA 02133
+  voice: 617-722-2877
 links:
 - url: https://malegislature.gov/Legislators/Profile/LAE1
 other_identifiers:
@@ -23,7 +27,7 @@ other_identifiers:
   identifier: ocd-person/b6beb651-3b01-4e6d-9ff7-b42de9633f72
 sources:
 - url: https://malegislature.gov/Legislators/Profile/LAE1
-offices:
-- address: 24 Beacon St.;Room 174;Boston, MA, 02133
-  voice: 617-722-2877
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/LAE1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: LAE1

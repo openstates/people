@@ -11,6 +11,11 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Worcester and Norfolk
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 213-A; Boston, MA 02133
+  voice: 617-722-1420
+  fax: 617-722-1944
 links:
 - url: https://malegislature.gov/Legislators/Profile/RCF0
 other_identifiers:
@@ -22,8 +27,8 @@ other_identifiers:
   identifier: MAL000364
 sources:
 - url: https://malegislature.gov/Legislators/Profile/RCF0
-offices:
-- address: 24 Beacon St.;Room 213-A;Boston, MA, 02133
-  voice: 617-722-1420
-  fax: 617-722-1944
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/RCF0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  leadership position: Assistant Minority Leader
+  member code: RCF0

@@ -9,6 +9,15 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '15'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 1805; Hartford, CT 06106-1591
+  voice: 860-240-0006
+- classification: district
+  address: 206 Columbia Blvd.; Waterbury, CT 06710
+- classification: district
+  address: 206 Columbia Blvd.;Waterbury, CT 06710
+  name: 'District Office #1'
 links:
 - url: http://www.senatedems.ct.gov/Hartley
 other_names:
@@ -18,10 +27,11 @@ other_identifiers:
   identifier: CTL000015
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 1805;Hartford, CT 06106
-  voice: 860-240-0006
-  classification: capitol
-- address: 206 Columbia Blvd.;Waterbury, CT 06710
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Female
+  title: Chief Deputy President Pro Tempore
+  committees: Commerce (Chair); Appropriations (Vice Chair); Banking; Executive and
+    Legislative Nominations; Legislative Management; Regulation Review
+  committee codes: ;APP;BA;CE;EXN;LM;RR;
+  business phone: 203-757-6267
+  prison: '0'

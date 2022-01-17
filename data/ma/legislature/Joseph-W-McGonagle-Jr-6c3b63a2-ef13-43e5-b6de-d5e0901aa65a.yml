@@ -12,6 +12,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 28th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 279; Boston, MA 02133
+  voice: 617-722-2017
 links:
 - url: https://malegislature.gov/Legislators/Profile/jwm1
 other_identifiers:
@@ -25,7 +29,7 @@ other_identifiers:
   identifier: ocd-person/a7136f3d-eb7f-43f5-92d5-1d35feb3e95e
 sources:
 - url: https://malegislature.gov/Legislators/Profile/jwm1
-offices:
-- address: 24 Beacon St.;Room 279;Boston, MA, 02133
-  voice: 617-722-2017
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/jwm1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: jwm1

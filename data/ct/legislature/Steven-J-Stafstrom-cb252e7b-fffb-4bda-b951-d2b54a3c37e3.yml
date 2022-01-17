@@ -9,6 +9,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '129'
+offices:
+- classification: capitol
+  address: Legislative Office Building Room 2500; Hartford, CT 06106-1591
+  voice: 860-240-8500
+- classification: district
+  address: 120 Sailors Lane; Bridgeport, CT 06605
+- classification: district
+  address: 120 Sailors Lane;Bridgeport, CT 06605
+  voice: 203-258-6878
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/Stafstrom
 other_names:
@@ -20,11 +30,8 @@ other_identifiers:
   identifier: CTL000356
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: Legislative Office Building;Room 2500;Hartford, CT 06106
-  voice: 860-240-8500
-  classification: capitol
-- address: 120 Sailors Lane;Bridgeport, CT 06605
-  voice: 203-258-6878
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Judiciary (Chair); Finance, Revenue and Bonding
+  committee codes: ;FIN;JUD;
+  prison: '0'

@@ -9,22 +9,31 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '179'
+offices:
+- classification: capitol
+  address: 32B East Wing P.O. Box 202179 Harrisburg, PA 17120-2179
+  voice: 717-787-1354
+  fax: 717-780-4789
+- classification: district
+  address: 4667 Paul Street Philadelphia, PA 19124
+  voice: 215-744-7901
+  fax: 215-744-7906
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1685
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1685
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000511
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1685
-offices:
-- address: 32B East Wing P.O. Box 202179 Harrisburg, PA 17120-2179
-  voice: 717-787-1354
-  fax: 717-780-4789
-  classification: capitol
-- address: 4667 Paul Street Philadelphia, PA 19124
-  voice: 215-744-7901
-  fax: 215-744-7906
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1685
+extras:
+  Education:
+  - Frankford High School
+  - Penn State, Abington Campus
+  - Temple, CCP dual B.A. Program

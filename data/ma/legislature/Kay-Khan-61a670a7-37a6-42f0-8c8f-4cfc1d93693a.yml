@@ -12,6 +12,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 11th Middlesex
+offices:
+- classification: capitol
+  address: 24 Beacon St., Room 146; Boston, MA 02133
+  voice: 617-722-2011
+  fax: 617-722-2238
 links:
 - url: https://malegislature.gov/Legislators/Profile/K_K1
 other_identifiers:
@@ -23,8 +28,7 @@ other_identifiers:
   identifier: ocd-person/6902e1a2-ece4-40b8-8422-0b9427731e5f
 sources:
 - url: https://malegislature.gov/Legislators/Profile/K_K1
-offices:
-- address: 24 Beacon St.;Room 146;Boston, MA, 02133
-  voice: 617-722-2011
-  fax: 617-722-2238
-  classification: capitol
+- url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/K_K1
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+extras:
+  member code: K_K1

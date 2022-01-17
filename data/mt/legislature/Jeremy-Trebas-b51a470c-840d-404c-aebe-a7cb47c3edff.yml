@@ -2,16 +2,32 @@ id: ocd-person/b51a470c-840d-404c-aebe-a7cb47c3edff
 name: Jeremy Trebas
 given_name: Jeremy
 family_name: Trebas
+email: trebasformthouse@gmail.com
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-01-02
+  end_date: '2019-01-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '25'
+- start_date: 2021-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '26'
-links:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6904
-sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6904
 offices:
-- voice: 406-899-5445
-  classification: capitol
+- classification: capitol
+  voice: 406-899-5445
+links:
+- url: https://leg.mt.gov/legislator-information/roster/individual/4847
+  note: legislator page
+- url: https://leg.mt.gov/legislator-information/roster/individual/6904
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000356
+- scheme: openstates
+  identifier: ocd-person/f5687cc8-8712-4c26-9224-7a36b48dfd10
+sources:
+- url: https://leg.mt.gov/legislator-information/?session_select=111
+  note: legislator list page
+- url: https://leg.mt.gov/legislator-information/roster/individual/6904

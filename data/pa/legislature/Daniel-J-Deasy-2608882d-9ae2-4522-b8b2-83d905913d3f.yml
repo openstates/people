@@ -9,9 +9,21 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '27'
+offices:
+- classification: capitol
+  address: 304 Irvis Office Building P.O. Box 202027 Harrisburg, PA 17120-2027
+  voice: 717-772-8187
+  fax: 717-787-7388
+- classification: district
+  address: 436 South Main Street Pittsburgh, PA 15220
+  voice: 412-928-9514
+  fax: 412-565-3170
+  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1166
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1166
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000090
@@ -20,13 +32,10 @@ other_identifiers:
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1166
-offices:
-- address: 304 Irvis Office Building P.O. Box 202027 Harrisburg, PA 17120-2027
-  voice: 717-772-8187
-  fax: 717-787-7388
-  classification: capitol
-- address: 436 South Main Street Pittsburgh, PA 15220
-  voice: 412-928-9514
-  fax: 412-565-3170
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1166
+extras:
+  website: http://www.pahouse.com/Deasy
+  Education:
+  - Bishop Canevin High School
+  - University of Pittsburgh

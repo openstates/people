@@ -1,5 +1,5 @@
 id: ocd-person/7847295c-78f3-4f8c-adb6-3536fca2782e
-name: Diego M. Bernal
+name: Diego Bernal
 given_name: Diego
 family_name: Bernal
 image: https://house.texas.gov/photos/members/3110.jpg
@@ -9,8 +9,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '123'
+offices:
+- classification: capitol
+  address: Room E1.508 P.O. Box 2910 Austin, TX 78768
+  voice: 512-463-0532
+- classification: district
+  address: 6531 San Pedro Village Plaza San Antonio, TX 78216
+  voice: 210-308-9700
 links:
 - url: https://house.texas.gov/members/member-page/?district=123
+other_names:
+- name: Diego Bernal
+- name: Diego M. Bernal
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000517
@@ -18,13 +28,3 @@ other_identifiers:
   identifier: TXL000599
 sources:
 - url: https://house.texas.gov/members/member-page/?district=123
-other_names:
-- name: Diego Bernal
-offices:
-- address: Room E1.508;P.O. Box 2910;Austin, TX 78768
-  voice: 512-463-0532
-  classification: capitol
-- address: 6531 San Pedro;Village Plaza;San Antonio, TX 78216
-  voice: 210-308-9700
-  classification: district
-  name: 'District Office #1'

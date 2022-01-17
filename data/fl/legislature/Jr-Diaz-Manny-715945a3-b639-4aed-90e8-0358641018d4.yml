@@ -1,23 +1,40 @@
 id: ocd-person/715945a3-b639-4aed-90e8-0358641018d4
-name: Manny Diaz Jr.
+name: Manny Diaz, Jr.
+given_name: Manny
+family_name: Diaz
 email: diaz.manny.web@flsenate.gov
-image: http://www.flsenate.gov/PublishedContent/Senators/2018-2020/Photos/s36_5343.jpg
+image: https://www.flsenate.gov/PublishedContent/Senators/2020-2022/Photos/s36_5343.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2018-11-06'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '103'
+- start_date: 2018-11-06
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '36'
+offices:
+- classification: capitol
+  address: 306 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
+  voice: 850-487-5036
+- classification: district
+  address: 10001 Northwest 87th Avenue;Hialeah Gardens, FL 33016
+  voice: 305-364-3073
+  name: 'District Office #1'
 links:
+- url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4558&LegislativeTermId=87
 - url: http://www.flsenate.gov/Senators/s36
+other_names:
+- name: Manny Diaz Jr.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: FLL000610
+- scheme: openstates
+  identifier: ocd-person/a57d23e8-f433-4d90-a367-768b2a436482
 sources:
+- url: http://www.flhouse.gov/Sections/Representatives/details.aspx?MemberId=4558&LegislativeTermId=87
+- url: http://www.flhouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s36
-offices:
-- address: 10001 Northwest 87th Avenue;Hialeah Gardens, FL 33016
-  voice: 305-364-3073
-  classification: district
-  name: 'District Office #1'
-- address: 306 Senate Building;404 South Monroe Street;Tallahassee, FL 32399-1100
-  voice: 850-487-5036
-  classification: capitol

@@ -3,19 +3,40 @@ name: Patrick Connick
 given_name: Patrick
 family_name: Connick
 email: connickp@legis.la.gov
+image: https://senate.la.gov/Senators/SenLargePics/Dist8.JPG
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2020-01-13'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '84'
+- start_date: '2020-01-13'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '8'
-links:
-- url: http://senate.la.gov/senators/senpage.asp?SenID=8
-sources:
-- url: http://senate.la.gov/senators/senpage.asp?SenID=8
 offices:
-- address: 5201 Westbank Expressway;Suite 315;Marrero, LA 70072
+- classification: district
+  address: 5201 Westbank Expressway;Suite 315;Marrero, LA 70072
   voice: 504-371-0240
   fax: 504-347-4526
-  classification: district
   name: 'District Office #1'
+links:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=84
+- url: http://senate.la.gov/senators/senpage.asp?SenID=8
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: LAL000193
+- scheme: legacy_openstates
+  identifier: LAL000342
+- scheme: legacy_openstates
+  identifier: LAL000545
+- scheme: legacy_openstates
+  identifier: LAL000661
+- scheme: legacy_openstates
+  identifier: LAL000861
+- scheme: openstates
+  identifier: ocd-person/c3dbbcb3-8ecd-47d6-a9a6-59465efa0bcd
+sources:
+- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=84
+- url: http://senate.la.gov/senators/senpage.asp?SenID=8

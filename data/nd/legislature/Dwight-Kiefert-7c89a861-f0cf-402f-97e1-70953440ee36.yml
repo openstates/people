@@ -10,10 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '24'
+offices:
+- classification: district
+  address: 3707 115th Avenue SE, Valley City, ND 58072-9312
+- classification: district
+  address: 3707 115th Avenue SE;Valley City, ND;58072-9312
+  voice: 701-845-0760
+  name: 'District Office #1'
 links:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-dwight-kiefert
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-dwight-kiefert
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-dwight-kiefert
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-dwight-kiefert
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NDL000219
@@ -23,8 +32,9 @@ sources:
 - url: http://www.legis.nd.gov/assembly/65-2017/members/house/representative-dwight-kiefert
 - url: http://www.legis.nd.gov/assembly/66-2019/members/house/representative-dwight-kiefert
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-dwight-kiefert
-offices:
-- address: 3707 115th Avenue SE;Valley City, ND;58072-9312
-  voice: 701-845-0760
-  classification: district
-  name: 'District Office #1'
+- url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
+- url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-dwight-kiefert
+extras:
+  bio info: []
+  Home phone: 701-845-0760
+  Cell phone: 701-490-0443

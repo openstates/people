@@ -10,17 +10,25 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '48'
+offices:
+- classification: capitol
+  address: 300 Capitol Avenue Room ; Hartford, CT 06106-1591
+  voice: 860-240-8585
+- classification: district
+  address: 12 Broadway; Colchester, CT 06415
+- classification: district
+  address: 12 Broadway;Colchester, CT 06415
+  voice: 860-537-1925
+  name: 'District Office #1'
 links:
 - url: http://www.housedems.ct.gov/smith
 other_names:
 - name: Smith, Brian T.
 sources:
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
-offices:
-- address: 300 Capitol Avenue;Room;Hartford, CT 06106
-  voice: 860-240-8585
-  classification: capitol
-- address: 12 Broadway;Colchester, CT 06415
-  voice: 860-537-1925
-  classification: district
-  name: 'District Office #1'
+extras:
+  gender: Male
+  committees: Higher Education and Employment Advancement; Planning and Development;
+    Transportation
+  committee codes: ;HED;PD;TRA;
+  prison: '0'
