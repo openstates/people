@@ -37,15 +37,16 @@ jobs:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
+    - name: people to S3
+      run: poetry run os-people to-csv --upload
+      env:
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}a
+
     - name: committees to database
       run: poetry run os-committees to-database
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
-    - name: people to S3
-      run: poetry run os-people to-csv --upload
-      env:
-        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
