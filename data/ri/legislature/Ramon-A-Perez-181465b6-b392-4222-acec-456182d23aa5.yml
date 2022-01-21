@@ -1,11 +1,19 @@
 id: ocd-person/181465b6-b392-4222-acec-456182d23aa5
 name: Ramon A. Perez
+given_name: Ramon
+family_name: Perez
 email: rep-perez@rilegislature.gov
 image: http://www.rilegislature.gov/representatives/Pictures/perez.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-01-03
+  end_date: '2018-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '13'
+- start_date: 2021-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '13'
 offices:
@@ -13,10 +21,17 @@ offices:
   address: 42 Ophelia Street, Providence RI 02909
   voice: 401-301-6599
 links:
+- url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
 - url: http://www.rilegislature.gov/representatives/perez/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000166
+- scheme: openstates
+  identifier: ocd-person/cb4b9262-15f2-4a77-946f-274da6e63d7d
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+- url: http://www.rilin.state.ri.us/representatives/Perez/
 - url: http://www.rilegislature.gov/representatives/perez/default.aspx
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
   note: Contact Web Page

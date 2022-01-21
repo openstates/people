@@ -1,25 +1,40 @@
 id: ocd-person/f13bda4e-bfb4-49fc-a986-ba8d2b3e7e43
 name: Anthony H. Palumbo
+given_name: Anthony
+family_name: Palumbo
 email: palumbo@nysenate.gov
 image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/palumbo-headshot2.jpg?itok=iMC_RWH8
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2013-11-06
+  end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '2'
+- start_date: 2021-01-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '1'
+offices:
+- classification: capitol
+  address: 188 State Street;Albany,, NY 12247
+  voice: 518-455-3121
+- classification: district
+  address: 28 North Country Rd,;Mt. Sinai,, NY 11766
+  voice: 631-473-1461
+  name: 'District Office #1'
 links:
+- url: http://assembly.state.ny.us/mem/?sh=email
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/anthony-h-palumbo/contact
 ids:
   twitter: AnthonyHPalumbo
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NYL000326
+- scheme: openstates
+  identifier: ocd-person/c2e999a5-9d77-463f-a0fb-23f3de68eb0f
 sources:
+- url: http://assembly.state.ny.us/mem/Anthony-H-Palumbo
 - url: http://www.nysenate.gov/senators/anthony-h-palumbo/contact
-offices:
-- address: 28 North Country Rd,;Mt. Sinai,, NY 11766
-  voice: 631-473-1461
-  classification: district
-  name: 'District Office #1'
-- address: 188 State Street;Albany,, NY 12247
-  voice: 518-455-3121
-  classification: capitol

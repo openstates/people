@@ -6,7 +6,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?a=Senate&m
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: '2005-01-03'
+  end_date: '2013-01-14'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '2'
+- start_date: 2021-01-11
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '2'
 offices:
@@ -14,8 +20,15 @@ offices:
   address: 105 Irv Newhouse Building; P.O. Box 40402; Olympia, WA 98504
   voice: 360-786-7602
 links:
+- url: http://www.leg.wa.gov/house/representatives/Pages/mccune.aspx
 - url: http://JimMcCune.src.wastateleg.org/
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WAL000107
+- scheme: openstates
+  identifier: ocd-person/f6bca6f7-78a2-4a62-913f-dd9916088284
 sources:
+- url: http://www.leg.wa.gov/house/representatives/Pages/mccune.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate

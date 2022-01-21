@@ -7,14 +7,27 @@ image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2964.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2015-01-01
+  end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '88'
+- start_date: 2021-01-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '26'
-links:
-- url: http://www.ohiosenate.gov/senators/reineke
-sources:
-- url: http://www.ohiosenate.gov/senators
 offices:
-- address: Senate Building;1 Capitol Square;1st Floor;Columbus, OH 43215
+- classification: capitol
+  address: Senate Building;1 Capitol Square;1st Floor;Columbus, OH 43215
   voice: 614-466-8049
-  classification: capitol
+links:
+- url: http://www.ohiohouse.gov/bill-reineke
+- url: http://www.ohiosenate.gov/senators/reineke
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000276
+- scheme: openstates
+  identifier: ocd-person/c07cbd24-eaa2-41b8-b3c0-5231dbe2cdf4
+sources:
+- url: http://www.ohiohouse.gov/members/member-directory
+- url: http://www.ohiosenate.gov/senators

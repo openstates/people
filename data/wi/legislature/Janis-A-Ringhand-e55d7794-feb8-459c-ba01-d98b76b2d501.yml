@@ -1,13 +1,24 @@
 id: ocd-person/e55d7794-feb8-459c-ba01-d98b76b2d501
 name: Janis Ringhand
-given_name: Janis A.
+given_name: Janis
 family_name: Ringhand
 email: Sen.Ringhand@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2110.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: '2011-01-03'
+  end_date: '2013-01-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '80'
+- start_date: '2013-01-07'
+  end_date: '2015-01-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '45'
+- start_date: 2015-01-05
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '15'
 offices:
@@ -16,6 +27,7 @@ offices:
   voice: 608-266-2253
   fax: 608-282-3555
 links:
+- url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=45&h=A
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1522
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1914
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2110
@@ -25,8 +37,15 @@ other_names:
 - name: Janis A. Ringhand
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: WIL000474
+- scheme: legacy_openstates
+  identifier: WIL000532
+- scheme: openstates
+  identifier: ocd-person/ea767416-66e3-4605-87da-6dd292677ec3
+- scheme: legacy_openstates
   identifier: WIL000575
 sources:
+- url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=45&h=A
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1522
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1914
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2110

@@ -7,14 +7,27 @@ image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2961.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: '2014-12-02'
+  end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '42'
+- start_date: 2021-01-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '6'
-links:
-- url: http://www.ohiosenate.gov/senators/antani
-sources:
-- url: http://www.ohiosenate.gov/senators
 offices:
-- address: Senate Building;1 Capitol Square;Ground Floor;Columbus, OH 43215
+- classification: capitol
+  address: Senate Building;1 Capitol Square;Ground Floor;Columbus, OH 43215
   voice: 614-466-4538
-  classification: capitol
+links:
+- url: http://www.ohiohouse.gov/niraj-antani
+- url: http://www.ohiosenate.gov/senators/antani
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000272
+- scheme: openstates
+  identifier: ocd-person/cc75eb79-4d73-427f-8138-57ab3aa27420
+sources:
+- url: http://www.ohiohouse.gov/members/member-directory
+- url: http://www.ohiosenate.gov/senators

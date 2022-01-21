@@ -2,11 +2,17 @@ id: ocd-person/1e20aaf3-ffbb-4666-82c2-374b232b41ac
 name: Chris Gildon
 given_name: Chris
 family_name: Gildon
+email: Chris.Gildon@leg.wa.gov
 image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?a=Senate&m=29101
 party:
 - name: Republican
 roles:
-- start_date: '2021-01-01'
+- start_date: '2019-01-14'
+  end_date: '2021-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '25'
+- start_date: '2021-01-11'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '25'
@@ -18,9 +24,16 @@ offices:
   address: 101 South Meridian; Suite C Puyallup, WA; 98371
   voice: 253-840-4523
 links:
-- url: https://chrisgildon.src.wastateleg.org/
+- url: http://houserepublicans.wa.gov/Chris-Gildon/
+- url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: http://ChrisGildon.src.wastateleg.org/
+- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/102cce10-13ca-4064-a3ab-4f6dcaaad1c9
 sources:
+- url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
+- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://chrisgildon.src.wastateleg.org/
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate
 extras:

@@ -7,7 +7,11 @@ image: https://le.utah.gov/images/legislator/IVORYK.jpg
 party:
 - name: Republican
 roles:
-- start_date: 2019-09-13
+- end_date: '2019-08-19'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '47'
+- start_date: 2021-11-17
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '47'
@@ -15,6 +19,7 @@ offices:
 - classification: district
   address: 8393 S 2010 W, WEST JORDAN, UT, 84088
 links:
+- url: http://house.utah.gov/rep/IVORYK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=IVORYK
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist47.pdf
@@ -39,6 +44,13 @@ links:
   note: finance report
 - url: http://house.utah.gov/rep/IVORYK/
   note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000067
+- scheme: legacy_openstates
+  identifier: UTL000210
+- scheme: openstates
+  identifier: ocd-person/dc7ed9be-2389-4da0-af91-5123770111e6
 sources:
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/IVORYK/

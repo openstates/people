@@ -7,7 +7,13 @@ image: http://www.gencourt.state.nh.us/Senate/images/senators/12.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2014-12-03
+  end_date: '2018-12-05'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '12'
+- start_date: 2020-12-02
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: '12'
 offices:
@@ -18,6 +24,15 @@ links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district12.aspx
   note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000033
+- scheme: legacy_openstates
+  identifier: NHL001296
+- scheme: legacy_openstates
+  identifier: NHL001139
+- scheme: openstates
+  identifier: ocd-person/50c1665e-0f89-425c-810b-53c2febce701
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district12.aspx
 - url: http://gencourt.state.nh.us/downloads/Members.txt

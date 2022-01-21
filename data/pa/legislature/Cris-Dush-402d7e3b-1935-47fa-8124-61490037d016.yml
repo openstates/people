@@ -6,7 +6,13 @@ image: https://www.legis.state.pa.us/images/members/200/1687.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2014-12-01
+  end_date: '2020-11-30'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '66'
+- start_date: 2020-12-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '25'
 offices:
@@ -23,12 +29,20 @@ offices:
   fax: 814-938-1950
   name: 'District Office #1'
 links:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1687
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1687
   note: homepage
 ids:
   youtube: RepDush
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PAL000513
+- scheme: openstates
+  identifier: ocd-person/020bc334-a50b-4970-8e94-5546eb699228
 sources:
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1687
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1687
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha

@@ -6,7 +6,13 @@ email: hampoul@metrocast.net
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-12-03
+  end_date: '2018-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 22
+- start_date: 2020-12-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 22
 offices:
@@ -16,7 +22,15 @@ offices:
   name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001072
+- scheme: legacy_openstates
+  identifier: NHL001298
+- scheme: openstates
+  identifier: ocd-person/8953e0dd-f326-4d89-8c2a-b3990379f339
 sources:
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377241
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
