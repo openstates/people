@@ -1,20 +1,35 @@
 id: ocd-person/445d3fc7-d9a5-48d8-8869-f023aa274ae7
 name: George F. Lang
+given_name: George
+family_name: Lang
 email: sd04@ohiosenate.gov
 image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2960.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2017-09-13
+  end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '52'
+- start_date: 2021-01-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '4'
+offices:
+- classification: capitol
+  address: Senate Building;1 Capitol Square;1st Floor;Columbus, OH 43215
+  voice: 614-466-8072
 links:
+- url: http://www.ohiohouse.gov/george-f-lang
 - url: http://www.ohiosenate.gov/senators/lang
 other_names:
 - name: George Lang
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: OHL000380
+- scheme: openstates
+  identifier: ocd-person/b6120038-2425-435a-a8c1-8ebf4bb1c60b
 sources:
+- url: http://www.ohiohouse.gov/members/member-directory
 - url: http://www.ohiosenate.gov/senators
-offices:
-- address: Senate Building;1 Capitol Square;1st Floor;Columbus, OH 43215
-  voice: 614-466-8072
-  classification: capitol

@@ -3,10 +3,17 @@ name: Caroletta C. Alicea
 given_name: Caroletta
 family_name: Alicea
 email: cmealicea@aol.com
+image: http://www.gencourt.state.nh.us/house/images/memberpics/377060.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2012-12-05
+  end_date: '2018-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 8
+- start_date: 2020-12-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 8
 offices:
@@ -16,7 +23,15 @@ offices:
   name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL000430
+- scheme: legacy_openstates
+  identifier: NHL001503
+- scheme: openstates
+  identifier: ocd-person/d630e6ac-5606-43cd-b839-b01db6807360
 sources:
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377060
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 extras:

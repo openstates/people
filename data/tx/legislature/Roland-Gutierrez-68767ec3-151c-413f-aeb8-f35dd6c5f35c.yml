@@ -27,7 +27,13 @@ image: https://senate.texas.gov/members/d19/img/Gutierrez_headshot_2021.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2008-05-14
+  end_date: '2021-01-12'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '119'
+- start_date: 2021-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '19'
 offices:
@@ -35,6 +41,17 @@ offices:
   address: P.O. Box 12068 Capitol Station Austin, TX 78711
   voice: 512-463-0119
 links:
+- url: https://house.texas.gov/members/member-page/?district=119
 - url: https://senate.texas.gov/member.php?d=19
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000269
+- scheme: legacy_openstates
+  identifier: TXL000087
+- scheme: legacy_openstates
+  identifier: TXL000617
+- scheme: openstates
+  identifier: ocd-person/044c1886-d76a-40d5-947c-66930cdb48a5
 sources:
+- url: https://house.texas.gov/members/member-page/?district=119
 - url: https://senate.texas.gov/member.php?d=19

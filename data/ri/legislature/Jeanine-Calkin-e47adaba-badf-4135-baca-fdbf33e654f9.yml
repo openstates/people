@@ -7,7 +7,13 @@ image: http://www.rilegislature.gov/senators/pictures/calkin.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2017-01-03
+  end_date: '2018-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '30'
+- start_date: 2021-01-05
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '30'
 offices:
@@ -15,10 +21,17 @@ offices:
   address: 8 Aurora Road, East Greenwich, RI 02818
   voice: 401-921-6682
 links:
+- url: http://www.rilin.state.ri.us/senators/Algiere/
 - url: http://www.rilegislature.gov/senators/algiere/default.aspx
 - url: http://www.rilegislature.gov/senators/calkin/Pages/Biography.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000175
+- scheme: openstates
+  identifier: ocd-person/43d25ea9-24c1-4ec4-aea4-60553abf05e9
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/SenEmailListDistrict.asp
+- url: http://www.rilin.state.ri.us/senators/Calkin/
 - url: http://www.rilegislature.gov/senators/calkin/default.aspx
 - url: http://webserver.rilegislature.gov/Email/SenEmailListDistrict.asp
   note: Contact Web Page

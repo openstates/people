@@ -7,7 +7,13 @@ image: http://www.gencourt.state.nh.us/Senate/images/senators/11.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2014-12-03
+  end_date: '2018-12-05'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '11'
+- start_date: 2020-12-02
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: '11'
 offices:
@@ -20,6 +26,11 @@ links:
   note: homepage
 other_names:
 - name: Gary L. Daniels
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NHL001374
+- scheme: openstates
+  identifier: ocd-person/d984ba47-6032-46dc-a4fa-95d0b51635d3
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district11.aspx
 - url: http://gencourt.state.nh.us/downloads/Members.txt

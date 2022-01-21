@@ -1,13 +1,19 @@
 id: ocd-person/f7363aea-836d-4e8f-bdb7-8f42687d084c
 name: Patricia L. Morgan
+given_name: Patricia
+family_name: Morgan
 email: rep-morgan@rilegislature.gov
 image: http://www.rilegislature.gov/representatives/pictures/morgan.jpg
 party:
-- end_date: '2021-12-09'
-  name: Democratic
 - name: Republican
 roles:
-- type: lower
+- start_date: 2011-01-04
+  end_date: '2018-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '26'
+- start_date: 2021-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '26'
 offices:
@@ -15,10 +21,17 @@ offices:
   address: 411 Wakefield Street, West Warwick RI 02893
   voice: 401-862-3040
 links:
+- url: http://www.rilin.state.ri.us/representatives/carson/
 - url: http://www.rilegislature.gov/representatives/carson/default.aspx
 - url: http://www.rilegislature.gov/representatives/morgan/default.aspx
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000064
+- scheme: openstates
+  identifier: ocd-person/11630aba-a2e9-443b-9cdb-4b40d24434e7
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
+- url: http://www.rilin.state.ri.us/representatives/Morgan/
 - url: http://www.rilegislature.gov/representatives/morgan/default.aspx
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
   note: Contact Web Page

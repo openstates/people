@@ -1,13 +1,19 @@
 id: ocd-person/b2ad4345-9408-4238-a1f9-13e747f599b3
 name: Van Wanggaard
-given_name: Van H.
+given_name: Van
 family_name: Wanggaard
 email: Sen.Wanggaard@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2118.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: '2011-01-03'
+  end_date: '2012-07-11'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '21'
+- start_date: 2015-01-05
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '21'
 offices:
@@ -16,6 +22,7 @@ offices:
   voice: 608-266-1832
   fax: 608-282-3561
 links:
+- url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=21
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1531
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1925
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2118
@@ -25,8 +32,13 @@ other_names:
 - name: Van H. Wanggaard
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: WIL000452
+- scheme: openstates
+  identifier: ocd-person/cf794c79-1296-47f4-9a3f-7e6a12aee6a1
+- scheme: legacy_openstates
   identifier: WIL000593
 sources:
+- url: http://legis.wi.gov/w3asp/contact/legislatorpages.aspx?house=Senate&district=21
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1531
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1925
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2118

@@ -6,18 +6,27 @@ image: http://www.tucamarapr.org/dnncamara/images/Representantes/d03fbfb0-5b18-4
 party:
 - name: "Partido Popular Democr\xE1tico"
 roles:
-- type: lower
+- start_date: '2001-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
   district: '39'
+offices:
+- classification: capitol
+  address: 2do. PISO ANEXO
+  voice: 787-622-4895
 links:
+- url: http://www.camaraderepresentantes.org/cr_legs.asp
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=42
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: PRL000070
+- scheme: legacy_openstates
+  identifier: PRL000225
+- scheme: openstates
+  identifier: ocd-person/3bd04dac-fe54-43d9-a7bd-0db1fd885530
+- scheme: legacy_openstates
   identifier: PRL000296
 sources:
+- url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara.aspx
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=42
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/Biografia.aspx
-offices:
-- address: 2do. PISO ANEXO
-  voice: 787-622-4895
-  classification: capitol

@@ -22,7 +22,13 @@ image: https://senate.texas.gov/members/d29/img/Blanco_86-0694D-010_2021.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2015-01-13
+  end_date: '2021-01-12'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '76'
+- start_date: 2021-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '29'
 offices:
@@ -30,8 +36,17 @@ offices:
   address: P.O. Box 12068 Capitol Station Austin, TX 78711
   voice: 512-463-0129
 links:
+- url: https://house.texas.gov/members/member-page/?district=76
 - url: https://senate.texas.gov/member.php?d=29
 other_names:
 - name: "C\xC3\xA9sar Blanco"
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000497
+- scheme: legacy_openstates
+  identifier: TXL000636
+- scheme: openstates
+  identifier: ocd-person/59d40546-dec7-4f69-813b-183d9925e6b7
 sources:
+- url: https://house.texas.gov/members/member-page/?district=76
 - url: https://senate.texas.gov/member.php?d=29

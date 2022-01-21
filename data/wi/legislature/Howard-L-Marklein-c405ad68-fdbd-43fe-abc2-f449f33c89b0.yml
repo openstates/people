@@ -1,13 +1,19 @@
 id: ocd-person/c405ad68-fdbd-43fe-abc2-f449f33c89b0
 name: Howard Marklein
-given_name: Howard L.
+given_name: Howard
 family_name: Marklein
 email: Sen.Marklein@legis.wi.gov
 image: https://docs.legis.wisconsin.gov/2021/legislators/senate/2105.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: '2011-01-03'
+  end_date: '2015-01-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '51'
+- start_date: 2015-01-05
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '17'
 offices:
@@ -16,6 +22,7 @@ offices:
   voice: 608-266-0703
   fax: 608-282-3557
 links:
+- url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=51&h=A
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1516
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1908
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2105
@@ -25,8 +32,13 @@ other_names:
 - name: Howard L. Marklein
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: WIL000472
+- scheme: openstates
+  identifier: ocd-person/c099bd99-a788-4ba9-8f66-6b00ef322e87
+- scheme: legacy_openstates
   identifier: WIL000589
 sources:
+- url: http://legis.wisconsin.gov/Pages/leg-info.aspx?d=51&h=A
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1516
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1908
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2105
