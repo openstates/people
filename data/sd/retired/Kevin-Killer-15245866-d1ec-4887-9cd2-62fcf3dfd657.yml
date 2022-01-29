@@ -6,16 +6,29 @@ image: https://sdlegislature.gov/inc/img/Legislators/Killer_2017.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: '2009-01-01'
+  end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '27'
+- start_date: 2017-01-01
+  end_date: '2018-12-31'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '27'
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1469&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=987&Session=2016
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: SDL000065
+- scheme: legacy_openstates
   identifier: SDL000289
+- scheme: openstates
+  identifier: ocd-person/16901c21-86fb-4118-bcb9-34b723cd3118
 sources:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1469&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=987&Session=2016
+- url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=987&Session=2016
 extras:
   occupation: Ex. Director/Non-Profit

@@ -1,5 +1,5 @@
 id: ocd-person/56737473-c4f4-47c4-ad9e-c99e97d5acec
-name: Daniel J Sullivan
+name: Daniel J. Sullivan
 given_name: Daniel
 family_name: Sullivan
 middle_name: J.
@@ -7,18 +7,25 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/376692.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2013-01-01'
-  end_date: '2016-12-31'
+- start_date: '2006-12-06'
+  end_date: '2012-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 8
+- start_date: '2012-12-05'
+  end_date: '2016-12-07'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 42
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
+- start_date: 2016-12-07
+  end_date: '2018-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 8
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376692
+other_names:
+- name: Daniel J Sullivan
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000372
@@ -26,5 +33,10 @@ other_identifiers:
   identifier: NHL000749
 - scheme: legacy_openstates
   identifier: NHL001040
+- scheme: legacy_openstates
+  identifier: NHL001465
+- scheme: openstates
+  identifier: ocd-person/99e8f0ca-4e98-4df7-ab84-423354d3d21d
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376692
+- url: http://www.gencourt.state.nh.us/downloads/Members.txt

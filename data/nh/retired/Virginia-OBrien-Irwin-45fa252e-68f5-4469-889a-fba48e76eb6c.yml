@@ -1,24 +1,41 @@
 id: ocd-person/45fa252e-68f5-4469-889a-fba48e76eb6c
 name: Virginia O'Brien Irwin
-given_name: Virginia O'Brien
+given_name: Virginia
 family_name: Irwin
+middle_name: O'Brien
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377057.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: '2012-12-05'
+  end_date: '2014-12-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 6
+- start_date: '2014-12-03'
+  end_date: '2016-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 9
+- start_date: 2016-12-07
+  end_date: '2018-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 6
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377057
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: NHL000594
+- scheme: legacy_openstates
+  identifier: NHL000929
+- scheme: legacy_openstates
+  identifier: NHL001249
+- scheme: legacy_openstates
   identifier: NHL001411
+- scheme: openstates
+  identifier: ocd-person/aaef1802-1b0e-4c4c-b4cd-44b2d62a751d
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377057
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
-extras:
-  first_name: Virginia
-  last_name: Irwin
-  middle_name: O'Brien

@@ -6,14 +6,30 @@ image: http://www.senate.michigan.gov/_images/OBrien.png
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: '2011-01-01'
+  end_date: '2015-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '61'
+- start_date: 2015-01-01
+  end_date: '2019-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '20'
 links:
 - url: http://www.senate.michigan.gov/obrien
+- url: http://repOBrien.gophouse.org
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: MIL000099
+- scheme: legacy_openstates
+  identifier: MIL000172
+- scheme: legacy_openstates
+  identifier: MIL000224
+- scheme: legacy_openstates
   identifier: MIL000263
+- scheme: openstates
+  identifier: ocd-person/e146b0e8-0dac-4dac-b6b7-e330021c49a2
 sources:
 - url: http://www.senate.michigan.gov/obrien
+- url: http://www.house.mi.gov/mhrpublic/frmRepList.aspx

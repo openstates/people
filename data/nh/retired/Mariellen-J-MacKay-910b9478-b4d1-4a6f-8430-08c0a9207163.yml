@@ -1,24 +1,37 @@
 id: ocd-person/910b9478-b4d1-4a6f-8430-08c0a9207163
 name: Mariellen J. MacKay
-given_name: Mariellen J.
+given_name: Mariellen
 family_name: MacKay
+middle_name: J.
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377136.jpg
 party:
-- name: Republican
+- end_date: 2017-04-25
+  name: Democratic
+- start_date: 2017-04-25
+  name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: '2012-12-05'
+  end_date: '2014-12-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 30
+- start_date: 2016-12-07
+  end_date: '2018-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 30
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377136
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: NHL000633
+- scheme: legacy_openstates
+  identifier: NHL000880
+- scheme: legacy_openstates
   identifier: NHL001451
+- scheme: openstates
+  identifier: ocd-person/81bb5a56-8a0b-40c7-b95e-c83ee5a837e9
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377136
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
-extras:
-  first_name: Mariellen
-  last_name: MacKay
-  middle_name: J.

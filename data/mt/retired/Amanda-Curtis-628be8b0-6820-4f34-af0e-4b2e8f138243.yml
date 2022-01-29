@@ -2,19 +2,33 @@ id: ocd-person/628be8b0-6820-4f34-af0e-4b2e8f138243
 name: Amanda Curtis
 given_name: Amanda
 family_name: Curtis
+image: http://leg.mt.gov/images/legislators_63rd/15145.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2018-01-01'
+- start_date: '2013-01-07'
+  end_date: '2015-01-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '76'
+- start_date: 2017-01-02
+  end_date: '2019-01-07'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '74'
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4816
   note: legislator page
+- url: http://leg.mt.gov/css/Sessions/63rd/leg_info.asp?HouseID=0&SessionID=107&LAWSID=15145
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: MTL000179
+- scheme: legacy_openstates
   identifier: MTL000370
+- scheme: openstates
+  identifier: ocd-person/2271133e-49f5-4f53-82b1-828ba72b3582
 sources:
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
+- url: http://leg.mt.gov/css/Sessions/63rd/leg_info.asp?HouseID=0&SessionID=107&LAWSID=15145
+- url: http://leg.mt.gov/content/sessions/63rd/2013HouseMembers.txt

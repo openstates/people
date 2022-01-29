@@ -6,7 +6,13 @@ image: http://www.kslegislature.org/li/m/images/pics/rep_aurand_clay_1.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2019-01-13'
+- start_date: '1995-01-09'
+  end_date: '2013-01-14'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  district: '109'
+- start_date: 2017-01-09
+  end_date: '2019-01-13'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '106'
@@ -14,7 +20,11 @@ links:
 - url: http://www.kslegislature.org/li/b2017_18/members/rep_aurand_clay_1/
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: KSL000041
+- scheme: legacy_openstates
   identifier: KSL000357
+- scheme: openstates
+  identifier: ocd-person/8a1f1bdb-ca06-4cf6-a9b7-d4099dca5fc8
 sources:
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_aurand_clay_1
 extras:
