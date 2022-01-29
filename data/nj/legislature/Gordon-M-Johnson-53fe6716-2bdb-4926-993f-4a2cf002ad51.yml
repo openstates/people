@@ -2,11 +2,19 @@ id: ocd-person/53fe6716-2bdb-4926-993f-4a2cf002ad51
 name: Gordon M. Johnson
 given_name: Gordon
 family_name: Johnson
+gender: Male
 email: SenJohnson@njleg.org
+image: https://www.njleg.state.nj.us/members/memberphotos/johnson_color.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2002-01-08
+  end_date: '2022-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '37'
+- start_date: 2022-01-11
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nj/government
   district: '37'
 offices:
@@ -15,8 +23,15 @@ offices:
   voice: 201-928-0100
 links:
 - url: https://www.njleg.state.nj.us/legislative-roster/434/senator-johnson
+other_names:
+- name: Johnson, Gordon M.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NJL000114
+- scheme: openstates
+  identifier: ocd-person/bd45cf15-bb60-4435-8739-6a837124ce67
 sources:
+- url: http://www.njleg.state.nj.us/members/bio.asp?Leg=214
 - url: https://www.njleg.state.nj.us/legislative-roster
 - url: https://www.njleg.state.nj.us/legislative-roster/434/senator-johnson
-- url: https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/434
 - url: https://www.njleg.state.nj.us/api/legislatorData/legislatorBio/434

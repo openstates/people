@@ -2,16 +2,34 @@ id: ocd-person/1cab0682-209d-4963-a758-dc5303c61927
 name: Kristin Hansen
 given_name: Kristin
 family_name: Hansen
+image: http://leg.mt.gov/images/legislators_64th/12600.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2017-01-01'
+- start_date: '2011-01-03'
+  end_date: '2015-01-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '33'
+- start_date: '2015-01-05'
+  end_date: '2016-12-05'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '14'
+  end_reason: Became chief legal counsel for the Montana auditor's office
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4705
   note: legislator page
+- url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12600
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000082
+- scheme: legacy_openstates
+  identifier: MTL000260
+- scheme: openstates
+  identifier: ocd-person/90e7ba98-4c09-4239-8901-a176f1f0063d
 sources:
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
+- url: http://leg.mt.gov/css/Sessions/64th/leg_info.asp?HouseID=0&SessionID=109&LAWSID=12600
+- url: http://leg.mt.gov/content/sessions/64th/2015SenateMembers.txt

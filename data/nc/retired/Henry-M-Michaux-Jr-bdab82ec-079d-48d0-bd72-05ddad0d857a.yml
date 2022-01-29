@@ -1,22 +1,33 @@
 id: ocd-person/bdab82ec-079d-48d0-bd72-05ddad0d857a
 name: Henry M. Michaux, Jr.
-given_name: Henry M.
+given_name: Henry
 family_name: Michaux
-image: http://www.ncleg.net/House/pictures/hiRes/71.jpg
+image: https://www.ncleg.gov/Members/MemberImage/S/421/High
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: 2003-01-01
+  end_date: '2018-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '31'
+- start_date: 2020-01-13
+  end_date: '2020-03-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '20'
+  end_reason: Permanent successor appointed for seat
 links:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=71
+- url: https://www.ncleg.gov/Members/Biography/S/421
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000140
+- scheme: openstates
+  identifier: ocd-person/4fc71d5b-52cf-4df7-959c-44d0471f9964
 sources:
 - url: http://www.ncleg.net/gascripts/members/viewMember.pl?sChamber=House&nUserID=71
+- url: https://www.ncleg.gov/Members/Biography/S/421
 extras:
   counties:
   - Durham

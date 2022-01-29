@@ -1,20 +1,38 @@
 id: ocd-person/ba65f8ac-7d45-470f-85ed-3eac8ab81932
 name: Nate Mcconnell
 given_name: Nate
-family_name: Mcconnell
+family_name: McConnell
+email: NateForSD48@gmail.com
 party:
 - name: Democratic
 roles:
-- start_date: '2015-01-01'
-  end_date: '2016-12-31'
+- start_date: '2015-01-05'
+  end_date: 2018-03-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '89'
+- start_date: 2018-03-05
+  end_date: '2020-11-05'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '48'
+  end_reason: Spend time with family
 links:
 - url: http://leg.mt.gov/css/Sessions/65th/leg_infoca7c-2.html?HouseID=0&SessionID=111&LAWSID=18710
+- url: https://leg.mt.gov/legislator-information/roster/individual/5056
+other_names:
+- name: Nate McConnell
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000334
+- scheme: legacy_openstates
+  identifier: MTL000425
+- scheme: openstates
+  identifier: ocd-person/7fdfc0b9-dff9-41c7-9e5a-6b0beb1d0c2e
+- scheme: openstates
+  identifier: ocd-person/39f41df6-4f33-459e-9019-1b9c0b4477ed
 sources:
 - url: http://leg.mt.gov/content/sessions/65th/2017HouseMembers.txt
 - url: http://leg.mt.gov/css/Sessions/65th/leg_infoca7c-2.html?HouseID=0&SessionID=111&LAWSID=18710
+- url: https://leg.mt.gov/legislator-information/roster/individual/5056
+- url: https://leg.mt.gov/legislator-information/?session_select=113

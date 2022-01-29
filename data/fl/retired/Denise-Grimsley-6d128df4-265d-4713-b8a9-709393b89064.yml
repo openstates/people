@@ -6,15 +6,34 @@ image: http://www.flsenate.gov/PublishedContent/Senators/2016-2018/Photos/s26_50
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: '2004-11-02'
+  end_date: '2012-11-06'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '77'
+- start_date: '2012-11-06'
+  end_date: '2016-11-08'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '21'
+- start_date: 2016-11-08
+  end_date: '2018-11-06'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '26'
 links:
 - url: http://www.flsenate.gov/Senators/s26
+- url: http://www.flsenate.gov/Senators/s21
 other_identifiers:
 - scheme: legacy_openstates
+  identifier: FLL000086
+- scheme: legacy_openstates
+  identifier: FLL000185
+- scheme: legacy_openstates
   identifier: FLL000556
+- scheme: openstates
+  identifier: ocd-person/c0db64ed-c9f7-4031-9bd9-d1d605e078de
 sources:
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s26
+- url: http://www.flsenate.gov/Senators/s21
