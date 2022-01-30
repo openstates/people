@@ -2,20 +2,26 @@ id: ocd-person/9d3f5669-f452-4926-91ec-a74a4c4a48e5
 name: Janeen Sollman
 given_name: Janeen
 family_name: Sollman
-email: Rep.JaneenSollman@oregonlegislature.gov
+email: Sen.JaneenSollman@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/sollman/PublishingImages/Pages/staff/alteza_films-66_43format.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-01-09
+  end_date: 2022-01-21
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '30'
+  end_reason: Appointed to fill Senate vacancy
+- start_date: 2021-01-21
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '15'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-487, Salem, OR, 97301
-  voice: 503-986-1430
+  address: 900 Court St NE, S-207, Salem, OR, 97301
+  voice: 503-986-1715
 links:
-- url: https://www.oregonlegislature.gov/sollman
 - url: https://www.oregonlegislature.gov/sollman
   note: homepage
 other_identifiers:
@@ -25,4 +31,4 @@ other_identifiers:
   identifier: ORL000394
 sources:
 - url: https://www.oregonlegislature.gov/sollman
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2021R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
