@@ -1,21 +1,33 @@
 id: ocd-person/8564d477-bb39-47a4-87e1-3ceacd7d3abe
-name: Mark Huizenga
+name: Mark E. Huizenga
 given_name: Mark
 family_name: Huizenga
-email: MarkHuizenga@house.mi.gov
-image: http://gophouse.org/wp-content/uploads/2019/01/HS_HUIZENGA_0119-214x300.jpg
+email: SenMHuizenga@senate.michigan.gov
+image: https://senate.michigan.gov/_images/28th.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: 2021-11-10
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '74'
-links:
-- url: http://gophouse.org/representatives/westmi/huizenga/
-sources:
-- url: http://gophouse.org/representatives/westmi/huizenga/
-- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
+  end_reason: Elected to Michigan Senate
+- start_date: 2021-11-10
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '28'
 offices:
-- address: North House Office Building 10-1093
-  voice: 517-373-8900
-  classification: capitol
+- classification: capitol
+  address: 7200 Binsfeld Bldg
+  voice: 517-373-0797
+links:
+- url: https://SenatorMarkHuizenga.com
+- url: https://SenatorMarkHuizenga.com/contact
+  note: Contact
+other_names:
+- name: Mark Huizenga
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/2af1ca75-0507-41ce-b2e4-6cab6d7d55ab
+sources:
+- url: https://senate.michigan.gov/senatorinfo_list.html
