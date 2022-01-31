@@ -1,11 +1,16 @@
 id: ocd-person/1537769d-0c74-4c69-91ab-fa35e50c813e
 name: Malinda B. White
-given_name: Malinda B.
+given_name: Malinda
 family_name: White
 email: whitema@legis.la.gov
-image: http://house.louisiana.gov/h_reps/RepPics09/rep75.jpg
+image: https://house.louisiana.gov/H_Reps/RepPics20/rep75.jpg
 party:
-- name: Democratic
+- end_date: 2021-07-01
+  name: Democratic
+- start_date: 2021-07-01
+  end_date: '2022-01-30'
+  name: Independent
+- name: Independent
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
@@ -14,8 +19,10 @@ offices:
 - classification: district
   address: 116 Georgia Ave.;Suite B;Bogalusa, LA 70427
   voice: 985-730-2147
+  fax: 985-730-2149
 links:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=75
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=75
+  note: homepage
 other_names:
 - name: Malinda White
 other_identifiers:
@@ -24,4 +31,10 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000881
 sources:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=75
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=75
+- url: https://house.louisiana.gov/H_Reps/H_Reps_FullInfo
+extras:
+  legislative assistant: Linda Mizell
+  representing parishes:
+  - St. Tammany and Washington
+  education: Varnado High School; some college

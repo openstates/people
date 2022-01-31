@@ -1,13 +1,18 @@
 id: ocd-person/acdaa5e6-3b22-44b9-8b47-480b801483dd
 name: Katrina R. Jackson
-given_name: Katrina R.
+given_name: Katrina
 family_name: Jackson
 email: jacksonk@legis.la.gov
-image: http://house.louisiana.gov/h_reps/RepPics09/rep16.jpg
+image: https://senate.la.gov/SenatorPics/Sen34.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: 2020-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '16'
+- start_date: 2020-01-13
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '34'
 offices:
@@ -16,7 +21,8 @@ offices:
   voice: 318-343-2877
   fax: 318-343-2879
 links:
-- url: http://senate.la.gov/senators/senpage.asp?SenID=34
+- url: https://senate.la.gov/smembers.aspx?ID=34
+  note: homepage
 other_names:
 - name: Katrina Jackson
 other_identifiers:
@@ -29,4 +35,17 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000850
 sources:
-- url: http://senate.la.gov/senators/senpage.asp?SenID=34
+- url: https://senate.la.gov/smembers.aspx?ID=34
+- url: https://senate.la.gov/Senators_FullInfo
+extras:
+  legislative assistant: Yolanda Binns
+  representing parishes:
+  - Concordia
+  - East Carroll
+  - Madison
+  - Morehouse
+  - Ouachita
+  - Richland
+  - Tensas
+  education: University of Louisiana at Monroe, B.A.; Southern University Law Center,
+    J.D.
