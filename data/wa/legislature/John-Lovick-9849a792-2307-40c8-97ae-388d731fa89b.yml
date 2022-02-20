@@ -3,26 +3,34 @@ name: John Lovick
 given_name: John
 family_name: Lovick
 email: john.lovick@leg.wa.gov
-image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?a=House&m=3476
+image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?a=Senate&m=3476
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: 2021-12-15
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '44'
+  end_reason: Appointed to Washington Senate
+- start_date: 2021-12-15
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '44'
 offices:
 - classification: capitol
-  address: 430 Legislative Building; PO Box 40600; Olympia, WA 98504
+  address: 226 John A. Cherberg Building; PO Box 40444; Olympia, WA 98504
   voice: 253-275-1405
 links:
 - url: http://housedemocrats.wa.gov/legislators/John-Lovick/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Lovick/
+- url: http://sdc.wastateleg.org/Lovick/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000240
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House
+- url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate
 extras:
-  title: Deputy Speaker Pro Tempore
+  title: Vice President Pro Tempore
