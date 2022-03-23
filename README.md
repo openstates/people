@@ -7,10 +7,10 @@ This repository contains YAML files with official information on state legislato
 ## Links
 
 * [People Issues](https://github.com/openstates/issues/issues?q=is%3Aissue+is%3Aopen+label%3Adata%3Apeople)
-* [Contributor's Guide](https://docs.openstates.org/en/latest/contributing/getting-started.html)
-* [Documentation](https://docs.openstates.org/en/latest/contributing/people.html)
+* [Contributor's Guide](https://docs.openstates.org/contributing/)
+* [Documentation](https://docs.openstates.org/contributing/people/)
 * [Open States Discussions](https://github.com/openstates/issues/discussions)
-* [Code of Conduct](https://docs.openstates.org/en/latest/contributing/code-of-conduct.html)
+* [Code of Conduct](https://docs.openstates.org/code-of-conduct/)
 
 
 ## Data Layout
