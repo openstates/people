@@ -2,13 +2,16 @@ id: ocd-person/558988f4-83b4-4635-a34a-946bf9e73cbd
 name: Hugh K. Leatherman, Sr.
 given_name: Hugh
 family_name: Leatherman
+death_date: 2021-11-12
 image: http://www.scstatehouse.gov/images/members/1068181690.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2021-11-12'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '31'
+  end_reason: Deceased
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1068181690
 other_names:
@@ -19,11 +22,3 @@ other_identifiers:
 sources:
 - url: http://www.scstatehouse.gov/member.php?chamber=S
 - url: http://www.scstatehouse.gov/member.php?code=1068181690
-offices:
-- address: 111 Gressette Bldg., Columbia, SC 29201
-  voice: 803-212-6640
-  classification: capitol
-- address: 1817 Pineland Ave., Florence, SC 29501
-  voice: 843-667-1152
-  classification: district
-  name: 'District Office #1'
