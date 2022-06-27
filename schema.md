@@ -82,6 +82,9 @@ These sections can have a list of objects, each with the following fields availa
 
 * other_names:
     * name: alternate name that has been seen for this person **required**
+        * if a new name has strange spacing, you must quote the entire entry
+        * e.g. `name: "Stephanie  T. Bolan"` vs. `name: Stephanie  T. Bolan`
+        * If you neglect to do this, yaml _will_ remove additional spaces
     * start_date: optional date name started being valid for this person
     * end_date: optional date name ceased to be valid for this person
 
