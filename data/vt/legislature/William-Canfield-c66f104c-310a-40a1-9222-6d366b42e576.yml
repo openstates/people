@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-3
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-265-4428
+  address: 12 Pine St. Fair Haven, VT 05743
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14569
 - url: http://legislature.vermont.gov/people/single/2022/14569
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-3.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000047
@@ -26,15 +36,11 @@ other_identifiers:
   identifier: VTL000617
 - scheme: legacy_openstates
   identifier: VTL000779
+other_names:
+  - name: William P. Canfield
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14569
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14569
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 12 Pine St.;Fair Haven, VT 05743
-  voice: 802-265-4428
-  classification: district
-  name: 'District Office #1'
+

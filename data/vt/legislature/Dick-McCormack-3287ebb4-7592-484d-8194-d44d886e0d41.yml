@@ -10,11 +10,22 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-793-6417
+  address: 115 State St. Montpelier, VT 05633
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14625
 - url: http://legislature.vermont.gov/people/single/2022/14625
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WSRDIST.pdf
+  note: district map
 other_names:
 - name: Richard McCormack
+- name: Dick J. McCormack
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000020
@@ -29,10 +40,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14625
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14625
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 115 State St.;Montpelier, VT 05633
-  voice: 802-793-6417
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: 127 Cleveland Brook Rd. Bethel, VT 05032
+  home phone: (802) 793-6417
+  state email: rmccormack@leg.state.vt.us
+

@@ -10,11 +10,22 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-6-3
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-318-2585
+  address: 221 North Winooski Ave. Burlington, VT 05401
 links:
 - url: http://legislature.vermont.gov/people/single/2020/20376
 - url: http://legislature.vermont.gov/people/single/2022/20376
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-6-3.pdf
+  note: district map
 other_names:
 - name: Curtis McCormack
+- name: Curt A. McCormack
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000285
@@ -35,10 +46,7 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/20376
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/20376
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 221 North Winooski Ave.;Burlington, VT 05401
-  voice: 802-318-2585
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Burlington, VT 05401
+  home phone: (802) 318-2585
+  state email: cmccormack@leg.state.vt.us

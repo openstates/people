@@ -10,21 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Lamoille-Washington
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-888-5958
+  address: 28 Mansfield Ave. Morrisville, VT 05661
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27172
 - url: http://legislature.vermont.gov/people/single/2022/27172
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/LAM-WAS.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000829
+other_names:
+  - name: David W. Yacovone
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/27172
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27172
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 28 Mansfield Ave.;Morrisville, VT 05661
-  voice: 802-888-5958
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Morrisville, VT 05661
+  home phone: (802) 888-5958

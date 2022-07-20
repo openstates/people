@@ -1,5 +1,5 @@
 id: ocd-person/599c54f9-34b6-4e31-bb50-e36708c3509b
-name: Patricia McCoy
+name: Patricia A. McCoy
 given_name: Patricia
 family_name: McCoy
 email: pattie.mccoy5@gmail.com
@@ -10,9 +10,20 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-1
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 115 State St. Montpelier, VT 05633
+  name: 'District Office #1'
 links:
-- url: http://legislature.vermont.gov/people/single/2020/24015
 - url: http://legislature.vermont.gov/people/single/2022/24015
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-1.pdf
+  note: district map
+other_names:
+- name: Patricia McCoy
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000381
@@ -23,9 +34,7 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/24015
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24015
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 115 State St.;Montpelier, VT 05633
-  classification: district
-  name: 'District Office #1'
+extras:
+  work address: Poultney, VT 05764
+  home address: Poultney, VT 05764
+  state email: pmccoy@leg.state.vt.us
