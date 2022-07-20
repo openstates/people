@@ -10,21 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-6-4
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-448-2178
+  address: 12 1/2 Isham St. Burlington, VT 05401
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27162
 - url: http://legislature.vermont.gov/people/single/2022/27162
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-6-4.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000848
+other_names:
+  - name: Brian J. Cina
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/27162
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27162
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 12 1/2 Isham St.;Burlington, VT 05401
-  voice: 802-448-2178
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Burlington, VT 05401
+  home phone: (802) 448-2178

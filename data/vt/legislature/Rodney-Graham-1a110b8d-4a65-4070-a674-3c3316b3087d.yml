@@ -10,23 +10,31 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Orange-1
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-433-6127
+  address: 859 Graham Rd. Williamstown, VT 05679
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24008
 - url: http://legislature.vermont.gov/people/single/2022/24008
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ORA-1.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000358
 - scheme: legacy_openstates
   identifier: VTL000547
+other_names:
+  - name: Rodney P. Graham
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/24008
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24008
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 859 Graham Rd.;Williamstown, VT 05679
-  voice: 802-433-6127
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Williamstown, VT 05679
+  state email: rgraham@leg.state.vt.us

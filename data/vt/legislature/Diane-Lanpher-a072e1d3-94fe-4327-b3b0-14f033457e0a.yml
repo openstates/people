@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Addison-3
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-877-2230
+  address: P.O. Box 165 Vergennes, VT 05491
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14667
 - url: http://legislature.vermont.gov/people/single/2022/14667
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ADD-3.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000100
@@ -20,15 +30,13 @@ other_identifiers:
   identifier: VTL000427
 - scheme: legacy_openstates
   identifier: VTL000675
+other_names:
+  - name: Diane M. Lanpher
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14667
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14667
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: P.O. Box 165;Vergennes, VT 05491
-  voice: 802-877-2230
-  classification: district
-  name: 'District Office #1'
+extras:
+  work address: So. Burlington, VT 05403
+  home address: Vergennes, VT 05491

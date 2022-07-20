@@ -9,15 +9,23 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-6-5
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 115 State St. Montpelier, VT 05633
+  voice: 617-470-6740
+  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2022/34705
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-6-5.pdf
+  note: district map
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/34705
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 115 State St.;Montpelier, VT 05633
-  voice: 617-470-6740
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: 184 Locust Terrace Burlington, VT 05401
+  home phone: (617) 470-6740
+  state email: gstebbins@leg.state.vt.us
