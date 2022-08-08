@@ -10,21 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Lamoille-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-730-7171
+  address: 1394 Richard Woolcut Rd. Wolcott, VT 05680
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27171
 - url: http://legislature.vermont.gov/people/single/2022/27171
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/LAM-2.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000816
+other_names:
+  - name: Daniel A. Noyes
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/27171
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27171
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 1394 Richard Woolcut Rd.;Wolcott, VT 05680
-  voice: 802-730-7171
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Wolcott, VT 05680
+  home phone: (802) 730-7171

@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Orleans-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-334-6302
+  address: 106 Private Pond Rd. Newport, VT 05855
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14568
 - url: http://legislature.vermont.gov/people/single/2022/14568
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ORL-2.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000113
@@ -22,15 +32,12 @@ other_identifiers:
   identifier: VTL000470
 - scheme: legacy_openstates
   identifier: VTL000753
+other_names:
+  - name: Michael J. Marcotte
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14568
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14568
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 106 Private Pond Rd.;Newport, VT 05855
-  voice: 802-334-6302
-  classification: district
-  name: 'District Office #1'
+extras:
+  state email: mmarcotte@leg.state.vt.us

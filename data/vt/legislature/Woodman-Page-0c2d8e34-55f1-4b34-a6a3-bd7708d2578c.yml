@@ -11,18 +11,25 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Orleans-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-334-6988
+  address: 115 State St. Montpelier, VT 05633
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30964
 - url: http://legislature.vermont.gov/people/single/2022/30964
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ORL-2.pdf
+  note: district map
+other_names:
+  - name: Woodman H. Page
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/30964
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30964
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 115 State St.;Montpelier, VT 05633
-  voice: 802-334-6988
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Newport, VT 05855

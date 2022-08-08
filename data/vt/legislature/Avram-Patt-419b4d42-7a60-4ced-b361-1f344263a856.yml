@@ -11,9 +11,19 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Lamoille-Washington
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-223-1014
+  address: 139 West Hill Rd. Worcester, VT 05682
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30962
 - url: http://legislature.vermont.gov/people/single/2022/30962
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/LAM-WAS.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000446
@@ -21,15 +31,13 @@ other_identifiers:
   identifier: VTL000708
 - scheme: openstates
   identifier: ocd-person/6066765f-9228-47df-b0a5-9a297e1784eb
+other_names:
+  - name: Avram I. Patt
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/30962
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30962
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 139 West Hill Rd.;Worcester, VT 05682
-  voice: 802-223-1014
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Worcester, VT 05682
+  home phone: (802) 223-1014

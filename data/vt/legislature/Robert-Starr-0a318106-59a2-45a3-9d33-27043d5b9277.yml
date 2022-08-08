@@ -10,9 +10,19 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Essex-Orleans
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-988-2877
+  address: 958 Vt. Rte. 105W North Troy, VT 05859
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14614
 - url: http://legislature.vermont.gov/people/single/2022/14614
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/E-ODIST.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000029
@@ -22,15 +32,10 @@ other_identifiers:
   identifier: VTL000516
 - scheme: legacy_openstates
   identifier: VTL000598
+other_names:
+  - name: Robert A. Starr
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14614
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14614
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 958 Vt. Rte. 105W;North Troy, VT 05859
-  voice: 802-988-2877
-  classification: district
-  name: 'District Office #1'

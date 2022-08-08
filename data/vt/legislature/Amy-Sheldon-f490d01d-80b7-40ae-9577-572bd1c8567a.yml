@@ -10,23 +10,32 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Addison-1
+offices:
+- address: Vermont State House 115 State Street Montpelier, VT 05633
+  classification: capitol
+  voice: 802-828-2228
+- address: P.O. Box 311 East Middlebury, VT 05740
+  voice: 802-377-1110
+  classification: district
+  name: 'District Office #1'
 links:
-- url: http://legislature.vermont.gov/people/single/2020/24022
 - url: http://legislature.vermont.gov/people/single/2022/24022
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ADD-1.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000422
 - scheme: legacy_openstates
   identifier: VTL000682
+other_names:
+  - name: Amy D. Sheldon
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/24022
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24022
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: P.O. Box 311;East Middlebury, VT 05740
-  voice: 802-377-1110
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: East Middlebury, VT 05740
+  home phone: (802) 377-1110
+  state email: asheldon@leg.state.vt.us

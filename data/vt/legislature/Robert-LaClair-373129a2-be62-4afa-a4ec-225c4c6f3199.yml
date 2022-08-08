@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-476-9668
+  address: 146 Airport Rd. Barre, VT 05641
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24009
 - url: http://legislature.vermont.gov/people/single/2022/24009
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WAS-2.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000423
@@ -20,15 +30,12 @@ other_identifiers:
   identifier: VTL000559
 - scheme: legacy_openstates
   identifier: VTL000802
+other_names:
+  - name: Robert B. LaClair
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/24009
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24009
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 146 Airport Rd.;Barre, VT 05641
-  voice: 802-476-9668
-  classification: district
-  name: 'District Office #1'
+extras:
+  state email: rlaclair@leg.state.vt.us

@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor-4-2
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-295-1066
+  address: 682 Christian St. White River Jct., VT 05001
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15774
 - url: http://legislature.vermont.gov/people/single/2022/15774
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WDR-4-2.pdf
+  note: district map
 other_names:
 - name: Kevin Christie
 other_identifiers:
@@ -35,10 +45,6 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/15774
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15774
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 682 Christian St.;White River Jct., VT 05001
-  voice: 802-295-1066
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: White River Jct., VT 05001
+  state email: kchristie@leg.state.vt.us

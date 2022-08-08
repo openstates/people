@@ -10,9 +10,17 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 24 Colonial Dr. Montpelier, VT 05602
 links:
-- url: http://legislature.vermont.gov/people/single/2020/14604
 - url: http://legislature.vermont.gov/people/single/2022/14604
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WASDIST.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000008
@@ -22,15 +30,13 @@ other_identifiers:
   identifier: VTL000541
 - scheme: legacy_openstates
   identifier: VTL000563
+other_names:
+  - name: Ann E. Cummings
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14604
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14604
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 24 Colonial Dr.;Montpelier, VT 05602
-  voice: 802-223-6043
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: 24 Colonial Dr. Montpelier, VT 05602
+  home phone: (802) 223-6043

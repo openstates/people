@@ -10,9 +10,18 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington-7
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 115 State St. Montpelier, VT 05633
 links:
 - url: http://legislature.vermont.gov/people/single/2020/14536
 - url: http://legislature.vermont.gov/people/single/2022/14536
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/WAS-7.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000076
@@ -26,14 +35,13 @@ other_identifiers:
   identifier: VTL000733
 - scheme: legacy_openstates
   identifier: VTL000782
+other_names:
+  - name: Maxine J. Grad
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/14536
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14536
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 115 State St.;Montpelier, VT 05633
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Moretown, VT 05660
+  state email: mgrad@leg.state.vt.us

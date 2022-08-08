@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Orleans-Caledonia
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  voice: 802-754-2790
+  address: 1367 Creek Rd. Irasburg, VT 05845
 links:
 - url: http://legislature.vermont.gov/people/single/2020/15786
 - url: http://legislature.vermont.gov/people/single/2022/15786
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/ORL-CAL.pdf
+  note: district map
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000204
@@ -22,15 +32,14 @@ other_identifiers:
   identifier: VTL000466
 - scheme: legacy_openstates
   identifier: VTL000570
+other_names:
+  - name: Vicki M. Strong
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/15786
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/15786
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 1367 Creek Rd.;Irasburg, VT 05845
-  voice: 802-754-2790
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Irasburg, VT 05845
+  work email: vickistrongvt@gmail.com
+  state email: vstrong@leg.state.vt.us

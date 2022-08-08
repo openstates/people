@@ -10,9 +10,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-5-1
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
+  voice: 802-828-2228
+- classification: district
+  address: 17 Clinton Ave. Rutland, VT 05701
+  voice: 802-342-1214
+  name: 'District Office #1'
 links:
-- url: http://legislature.vermont.gov/people/single/2020/14686
 - url: http://legislature.vermont.gov/people/single/2022/14686
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-5-1.pdf
+  note: district map
 other_names:
 - name: Peter Fagan
 other_identifiers:
@@ -27,10 +37,7 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14686
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14686
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 17 Clinton Ave.;Rutland, VT 05701
-  voice: 802-342-1214
-  classification: district
-  name: 'District Office #1'
+extras:
+  home address: Rutland, VT 05701
+  home phone: (802) 342-1214
+  state email: pfagan@leg.state.vt.us
