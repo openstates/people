@@ -5,11 +5,21 @@ family_name: May
 email: may@nysenate.gov
 image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/may-2019portrait.jpg?itok=4i_QKFvz
 party:
-- name: Democratic
+- end_date: '2022-12-28'
+  name: Democratic
+- name: Democratic/Working Families
 roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '53'
+offices:
+- classification: capitol
+  address: 198 State Street, Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-2838
+- classification: district
+  address: 100 Eaton Street;Morrisville,, NY 13408
+  voice: 315-478-8745
+  name: 'District Office #1'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/rachel-may/contact
@@ -17,11 +27,3 @@ ids:
   twitter: RachelMayNY
 sources:
 - url: http://www.nysenate.gov/senators/rachel-may/contact
-offices:
-- address: 198 State Street, Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2838
-  classification: capitol
-- address: 100 Eaton Street;Morrisville,, NY 13408
-  voice: 315-478-8745
-  classification: district
-  name: 'District Office #1'
