@@ -10,11 +10,19 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '42'
+- start_date: '2019-01-14'
+  end_date: '2022-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '42'
 offices:
 - classification: capitol
   address: 213 John A. Cherberg Building; PO Box 40442; Olympia, WA 98504
   voice: 360-305-0356
 links:
 - url: http://sdc.wastateleg.org/Shewmake/
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/d95d04c7-e3d0-4120-91c6-2bbeba4c8acb
 sources:
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate
