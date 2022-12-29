@@ -11,13 +11,15 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '99'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '98'
 offices:
 - classification: capitol
   address: 611-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0314
 - classification: district
   address: P.O. Box 931886; Norcross, GA 30093
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4999?session=1029
 sources:
@@ -25,6 +27,10 @@ sources:
 - url: https://www.legis.ga.gov/members/house/4999?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4999?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4999?session=1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4999?session=1031&chamber=1
   note: Detail page (requires authorization token)
 extras:
   residence: Norcross

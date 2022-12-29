@@ -11,6 +11,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '56'
+offices:
+- classification: capitol
+  address: 411-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0126
 links:
 - url: https://www.legis.ga.gov/members/house/4995?session=1029
 sources:
@@ -18,6 +22,10 @@ sources:
 - url: https://www.legis.ga.gov/members/house/4995?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4995?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4995?session=1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4995?session=1031&chamber=1
   note: Detail page (requires authorization token)
 extras:
   residence: Atlanta
@@ -28,7 +36,3 @@ extras:
   press: https://house-press.com/representative/Mesha-Mainor
   staff: Audrea Carson - Administrative Assistant
   staff email: audrea.carson@house.ga.gov
-offices:
-- address: 411-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0126
-  classification: capitol

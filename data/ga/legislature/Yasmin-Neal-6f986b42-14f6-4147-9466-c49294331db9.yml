@@ -17,13 +17,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '74'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '79'
 offices:
 - classification: capitol
   address: 511-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-6372
-- classification: district
-  address: 7393 Tara Road; Jonesboro, GA 30236
-  name: 'District Office #1'
 links:
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/nealYasmin.html
 - url: https://www.legis.ga.gov/members/house/765?session=1029
@@ -38,6 +38,10 @@ sources:
 - url: https://www.legis.ga.gov/members/house/765?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/765?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/765?session=1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/765?session=1031&chamber=1
   note: Detail page (requires authorization token)
 extras:
   residence: Jonesboro
