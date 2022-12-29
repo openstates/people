@@ -7,7 +7,8 @@ image: http://billstatus.ls.state.ms.us/members/house/hudson.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-29'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '29'
 links:
@@ -19,9 +20,3 @@ sources:
 - url: http://billstatus.ls.state.ms.us/members/house/hudson.xml
 extras:
   org_info: Representative Hudson is affiliated with Alpha Phi Alpha Fraternity, Inc.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 207 Dr. RT Hollingsworth;Shelby, MS 38774
-  classification: district
-  name: 'District Office #1'
