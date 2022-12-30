@@ -7,10 +7,12 @@ party:
 - name: Republican
 roles:
 - start_date: 2020-12-07
+  end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '67'
-- type: upper
+- start_date: 2022-12-05
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '32'
 offices:
