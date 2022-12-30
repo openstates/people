@@ -1,16 +1,15 @@
 id: ocd-person/1a0136c3-8703-4e91-9c0a-a119c5e7be10
-name: 'David Brummel '
+name: David Brummel
 given_name: David
-family_name: 'Brummel '
+family_name: Brummel
+email: davidbrummel@warrenville.il.us
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:il/place:warrenville/government
+- end_date: '2025-04-01'
   type: mayor
-  end_date: '2025-04-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:il/place:warrenville/government
+offices:
+- classification: primary
+  address: 3S258 Manning Avenue;Warrenville, IL 60555
+  voice: 630-836-3050
 sources:
 - url: https://warrenville.il.us/332/Mayor
-links: []
-email: davidbrummel@warrenville.il.us
-offices:
-- address: 3S258 Manning Avenue;Warrenville, IL 60555
-  voice: 630-836-3050
-  classification: primary
