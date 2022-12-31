@@ -5,6 +5,11 @@ party:
 - name: Republican
 roles:
 - type: lower
+  start_date: '2022-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '72'
+- type: lower
+  end_date: '2022-12-30'
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '75'
 offices:

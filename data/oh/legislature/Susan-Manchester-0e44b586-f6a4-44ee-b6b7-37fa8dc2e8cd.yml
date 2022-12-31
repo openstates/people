@@ -2,7 +2,7 @@ id: ocd-person/0e44b586-f6a4-44ee-b6b7-37fa8dc2e8cd
 name: Susan Manchester
 given_name: Susan
 family_name: Manchester
-email: rep84@ohiohouse.gov
+email: rep78@ohiohouse.gov
 biography: State Representative Susan Manchester is serving her first term in the
   Ohio House of Representatives. She represents the 84th District, which encompasses
   Mercer County, as well as portions of Auglaize, Darke and Shelby counties.
@@ -10,7 +10,12 @@ image: https://www.legislature.ohio.gov/Assets/HouseMembers/Headshots/Medium/290
 party:
 - name: Republican
 roles:
+- type: lower
+  start_date: '2022-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '78'
 - start_date: '2019-01-01'
+  end_date: '2022-12-30'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '84'

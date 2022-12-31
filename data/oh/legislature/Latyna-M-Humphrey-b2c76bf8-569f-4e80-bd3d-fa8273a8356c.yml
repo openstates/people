@@ -5,9 +5,14 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2022-12-30'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '26'
+- type: lower
+  start_date: '2022-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '2'
 offices:
 - classification: capitol
   address: 77 South High Street; 10th Floor; Columbus, OH 43215
