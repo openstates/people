@@ -7,15 +7,19 @@ image: https://legislature.maine.gov/uploads/visual_edit/cyrway-5x7-1.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: 2022-12-06
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '16'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '63'
 offices:
 - classification: capitol
-  voice: 207-287-1505
+  address: House Minority Office Room 332, State House 2 State House Station Augusta,
+    Maine 04333-0002
 - classification: district
   address: 463 Benton Road, Albion, ME 04910
-  voice: 207-437-7787
 links:
 - url: https://legislature.maine.gov/District-16
 - url: https://legislature.maine.gov/District-16
@@ -25,6 +29,7 @@ links:
 other_names:
 - name: Scott W. Cyrway
 - name: CYRWAY of Kennebec
+- name: Scott Wynn Cyrway
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MEL000280

@@ -13,9 +13,13 @@ party:
 - start_date: 2022-01-05
   name: Republican
 roles:
-- type: lower
+- end_date: 2022-12-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '73'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '79'
 offices:
 - classification: capitol
   address: House Minority Office Room 332, State House 2 State House Station Augusta,
