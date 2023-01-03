@@ -7,19 +7,14 @@ party:
 - name: Democratic
 roles:
 - start_date: 2020-12-07
+  end_date: '2022-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '37'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 4140 Sacramento, CA 94249-0037
-  voice: 916-319-2037
-- classification: district
-  address: 101 West Anapamu Street, Suite A, Santa Barbara, CA 93101
-  voice: 805-564-1649
-- classification: district
-  address: 89 South California Street, Suite F, Ventura, CA 93001
-  voice: 805-641-3700
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '38'
 links:
 - url: https://a37.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD37&inframe=N
