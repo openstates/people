@@ -8,16 +8,19 @@ party:
 - name: Democratic
 roles:
 - start_date: 2020-12-02
+  end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '1'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '151'
 offices:
 - classification: capitol
   address: House Majority Office Room 333, State House 2 State House Station Augusta,
     Maine 04333-0002
 - classification: district
   address: 26 Haley Road, Kittery, ME 03904
-  voice: 207-439-1865
 links:
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/1406
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/1406

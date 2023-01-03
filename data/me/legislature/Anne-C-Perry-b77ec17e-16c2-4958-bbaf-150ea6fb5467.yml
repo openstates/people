@@ -7,9 +7,14 @@ image: https://legislature.maine.gov/house/house/Repository/MemberProfiles/907f0
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2016-12-07
+  end_date: 2022-12-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '140'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '9'
 offices:
 - classification: capitol
   address: House Majority Office Room 333, State House 2 State House Station Augusta,
