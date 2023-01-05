@@ -10,18 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '30'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: P.O. Box 236 Tutwiler, Mississippi 38963
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/rosebud.xml
+- url: http://billstatus.ls.state.ms.us/members/house/rosebud.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000304
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/rosebud.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: ''
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: P.O. Box 236;Tutwiler, MS 38963
-  classification: district
-  name: 'District Office #1'
+  occupation: Consulting
+  education:
+  - Mississippi Delta C.C.
+  - Tennessee Valley Public Power Academy
+  counties represented:
+  - Bolivar
+  - Quitman
+  - Sunflower
+  - Tallahatchie
+  other phone: (662)902-3787
