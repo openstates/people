@@ -5,7 +5,9 @@ family_name: Horan
 email: khoran@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/horan.jpg
 party:
-- name: Democratic
+- end_date: '2020-01-06'
+  name: Democratic
+- name: Republican
 roles:
 - start_date: 2012-01-01
   end_date: 2015-12-31
@@ -15,8 +17,17 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '34'
+offices:
+- classification: capitol
+  address: Room 400-F P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3311
+- classification: district
+  address: P.O. Box 2166 Grenada, Mississippi 38901
+  voice: 662-226-1817
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/horan.xml
+- url: http://billstatus.ls.state.ms.us/members/house/horan.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000257
@@ -26,14 +37,16 @@ other_identifiers:
   identifier: ocd-person/c3741045-e044-490e-8186-43149d8ec505
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/horan.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. Horan is a member of the Milestone Hospice, Inc. and Mississippi
-    Bar Association.
-offices:
-- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3311
-  classification: capitol
-- address: P.O. Box 2166;Grenada, MS 38901
-  voice: 662-226-1817
-  classification: district
-  name: 'District Office #1'
+  education:
+  - Mississippi College School of Law
+  - University of Mississippi
+  - Water Valley High School
+  counties represented:
+  - Carroll
+  - Grenada
+  - Holmes
+  - Leflore
+  - Tallahatchie
+  other phone: (662)226-2185

@@ -5,21 +5,31 @@ family_name: Yates
 email: syates@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/yates.jpg
 party:
-- name: Democratic
+- end_date: '2022-01-13'
+  name: Democratic
+- name: Independent
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '64'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: PO Box 16409 Jackson, Mississippi 39236
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/yates.xml
+- url: http://billstatus.ls.state.ms.us/members/house/yates.xml
+  note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/yates.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Yates is affiliated with the MS Bar Assn, Junior League
-    of Jackson, MS Assn. Justice, and Galloway United Methodist Church.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: PO Box 16409;Jackson, MS 39236
-  classification: district
-  name: 'District Office #1'
+  occupation: Attorney
+  education:
+  - MC School of Law-JD
+  - Univ of Southern Miss-BA
+  - Hinds CC-AA
+  counties represented:
+  - Hinds
+  - Madison
