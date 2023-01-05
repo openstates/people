@@ -2,15 +2,14 @@ id: ocd-person/f72c6048-082d-4f36-b17c-dc07e9f4fb8c
 name: Mark Johnson
 given_name: Mark
 family_name: Johnson
+email: citycouncil@kalispell.com
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:mt/place:kalispell/government
+- end_date: '2026-12-31'
   type: mayor
-  end_date: '2021-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/place:kalispell/government
+offices:
+- classification: primary
+  address: P.O. Box 1997;Kalispell, MT 59903
+  voice: 406-758-7756
 sources:
 - url: https://www.kalispell.com/184/Mayor-City-Council
-links: []
-email: citycouncil@kalispell.com
-offices:
-- address: P.O. Box 1997;Kalispell, MT 59903
-  voice: 406-758-7756
-  classification: primary
