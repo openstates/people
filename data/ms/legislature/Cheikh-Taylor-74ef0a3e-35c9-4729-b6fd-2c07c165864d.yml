@@ -10,21 +10,28 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '38'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: 383 Steele Rd Starkville, Mississippi 39759
+  voice: 662-617-8125
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
+- url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000299
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Taylor is affiliated with Habitat for Humanity, Oktibbeha
-    County Board of Supervisors' Advisory Council, Starkville Area Arts Council, Oktibbeha
-    County Food Policy Council, Omega Psi Phi Fraternity Inc, and NAACP.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 383 Steele Rd;Starkville, MS 39759
-  voice: 662-617-8125
-  classification: district
-  name: 'District Office #1'
+  occupation: Executive Director/Community Development
+  education:
+  - Howard University, BS
+  - Starkville High school
+  counties represented:
+  - Clay
+  - Lowndes
+  - Oktibbeha

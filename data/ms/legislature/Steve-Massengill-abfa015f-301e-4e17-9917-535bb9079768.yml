@@ -10,20 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '13'
+offices:
+- classification: capitol
+  address: Room 400-E P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3353
+- classification: district
+  address: 424 Massengill Road Hickory Flat, Mississippi 38633
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/massengill.xml
+- url: http://billstatus.ls.state.ms.us/members/house/massengill.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000195
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/massengill.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. Massengill is a member of Ebenezer Men's Club (President) and Pott's
-    Camp Booster Club.
-offices:
-- address: Room 400-E;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3353
-  classification: capitol
-- address: 424 Massengill Road;Hickory Flat, MS 38633
-  classification: district
-  name: 'District Office #1'
+  occupation: Big M Transportation
+  education:
+  - Hickory Flat High School
+  counties represented:
+  - Benton
+  - Lafayette
+  - Marshall
+  - Union
+  other phone: (662)815-5000
