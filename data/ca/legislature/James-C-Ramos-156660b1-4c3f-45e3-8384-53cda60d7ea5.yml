@@ -8,16 +8,14 @@ party:
 - name: Democratic
 roles:
 - start_date: '2018-12-03'
+  end_date: '2022-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '40'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 4110 Sacramento, CA 94249-0040
-  voice: 916-319-2040
-- classification: district
-  address: 10350 Commerce Center Drive, Suite A-200, Rancho Cucamonga, CA 91730
-  voice: 909-476-5023
+- start_date: '2022-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '45'
 links:
 - url: https://a40.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD40&inframe=N
