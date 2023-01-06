@@ -7,17 +7,20 @@ image: https://house.mo.gov/MemberPhoto.aspx?id=2245
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '63'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '102'
 links:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=063
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=102
 other_names:
 - name: West, Richard
 sources:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=063
-offices:
-- address: MO House of Representatives; 201 West Capitol Avenue; Room 116A-1; Jefferson
-    City MO 65101
-  voice: 573-751-1460
-  classification: capitol
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=102
+extras:
+  hometown: Wentzville
