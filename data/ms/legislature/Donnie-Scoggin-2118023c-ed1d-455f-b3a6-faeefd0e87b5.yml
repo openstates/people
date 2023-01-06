@@ -10,20 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '89'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: 1203 Pine Street Ellisville, Mississippi 39437
+  voice: 601-319-5421
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/scoggin.xml
+- url: http://billstatus.ls.state.ms.us/members/house/scoggin.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000291
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/scoggin.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. Scoggin is affiliated with Jones County E.D.A., Jones County Republican,
-    and Member Mississippi Nurse Practitioner's Assoc.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 1203 Pine Street;Ellisville, MS 39437
-  voice: 601-319-5421
-  classification: district
-  name: 'District Office #1'
+  occupation: Nurse Practitioner
+  education:
+  - M.U.W MS
+  - U.S.M. BS
+  - J.C.J.C. AA
+  counties represented:
+  - Jones
+  other phone1: (601)319-5421
+  other phone2: (601)477-8553

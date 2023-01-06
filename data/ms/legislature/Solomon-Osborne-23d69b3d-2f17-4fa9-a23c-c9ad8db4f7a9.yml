@@ -10,15 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '32'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: P.O. Box 8175 Greenwood, Mississippi 38935-8175
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/osborne.xml
+- url: http://billstatus.ls.state.ms.us/members/house/osborne.xml
+  note: homepage
 other_names:
 - name: Solomon Osborne
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/osborne.xml
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: P.O. Box 8175;Greenwood, MS 38935-8175
-  classification: district
-  name: 'District Office #1'
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
+extras:
+  occupation: Attorney
+  education:
+  - Amanda Elzy High School,
+  - BA Tougaloo College Political Science, Juris Doctorate University of Illinois
+    College of Law
+  counties represented:
+  - Leflore
