@@ -8,20 +8,30 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-09'
+  end_date: '2023-01-04'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-9-2
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-19
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30952
 - url: http://legislature.vermont.gov/people/single/2022/30952
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-9-2.pdf
   note: district map
+- url: http://legislature.vermont.gov/people/single/2024/30952
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-19.pdf
+  note: district map
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/30952
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30952
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/30952
 offices:
 - address: Vermont State House;115 State Street;Montpelier, VT 05633
   classification: capitol
