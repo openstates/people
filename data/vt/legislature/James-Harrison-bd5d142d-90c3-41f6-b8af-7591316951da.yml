@@ -7,12 +7,14 @@ image: https://legislature.vermont.gov/Documents/Legislators/JHarrison.jpg
 party:
 - name: Republican
 roles:
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  district: Rutland-Windsor-1
-- type: lower
+- start_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-11
+- end_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Rutland-Windsor-1
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
@@ -45,3 +47,5 @@ extras:
   home address: North Chittenden, VT 05763
   home phone: (802) 236-3001
   state email: jharrison@leg.state.vt.us
+other_names:
+  - name: Jim Harrison

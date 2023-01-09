@@ -7,7 +7,12 @@ image: https://legislature.vermont.gov/Documents/Legislators/CMattos.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-Franklin
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-10
 offices:
