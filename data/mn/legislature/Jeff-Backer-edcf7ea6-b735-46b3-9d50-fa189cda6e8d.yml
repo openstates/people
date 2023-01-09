@@ -3,14 +3,18 @@ name: Jeff Backer
 given_name: Jeff
 family_name: Backer
 gender: Male
-email: rep.jeff.backer@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/12A.gif?v=112221
+email: rep.jeff.backer@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/09A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 12A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 9A
 offices:
 - classification: capitol
   address: 369 State Office Building;St. Paul, MN 55155
