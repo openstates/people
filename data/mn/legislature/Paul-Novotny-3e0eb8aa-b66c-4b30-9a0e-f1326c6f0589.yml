@@ -9,13 +9,13 @@ party:
 - name: Republican
 roles:
 - start_date: 2020-02-11
+  end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 30A
-offices:
-- classification: capitol
-  address: 301 State Office Building;St. Paul, MN 55155
-  voice: 651-296-4237
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 30B
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15536
 sources:
