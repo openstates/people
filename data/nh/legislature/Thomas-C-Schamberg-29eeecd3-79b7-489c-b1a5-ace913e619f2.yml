@@ -10,13 +10,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 4
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 6
 offices:
 - classification: district
-  address: 10 Clarke Road;Wilmot, NH 03287-4400
-  name: 'District Office #1'
+  address: 10 Clarke Road Wilmot, NH 03287-4400
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=771
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000722
@@ -29,6 +33,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=771
 extras:
   county: Merrimack
   elected status: Incumbent

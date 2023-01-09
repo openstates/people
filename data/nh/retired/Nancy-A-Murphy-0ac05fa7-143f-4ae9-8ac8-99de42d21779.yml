@@ -1,6 +1,9 @@
 id: ocd-person/0ac05fa7-143f-4ae9-8ac8-99de42d21779
 name: Nancy A. Murphy
+given_name: Nancy
+family_name: Murphy
 email: Nancy.Murphy@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/408861.jpg
 party:
 - name: Democratic
 roles:
@@ -8,12 +11,22 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 21
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 12
+offices:
+- classification: district
+  address: 20 Brenda Lane Merrimack, NH 03054-2508
+  voice: 603-424-0254
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9089
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408861
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9089
 extras:
-  first_name: Nancy
-  last_name: Murphy
-  middle_name: A.
+  county: Hillsborough
+  elected status: new
+  gender code: F

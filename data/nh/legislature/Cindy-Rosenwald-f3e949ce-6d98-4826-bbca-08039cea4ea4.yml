@@ -14,15 +14,20 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: '13'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 13
 offices:
 - classification: capitol
-  address: State House, Room 120;107 North Main Street;Concord, NH 03301
+  address: State House, Room 120 107 North Main Street Concord, NH 03301
   voice: 603-271-3207
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district13.aspx
   note: homepage
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district13.aspx
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000326
@@ -36,4 +41,6 @@ sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  elected status: new
+  county: Hillsborough
+  elected status: Incumbent
+  gender code: F

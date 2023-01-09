@@ -2,7 +2,7 @@ id: ocd-person/643751f4-6db0-4021-bf76-b8f2483d640d
 name: Charlie G. St. Clair
 given_name: Charlie
 family_name: St. Clair
-email: Charlie.StClair@leg.state.nh.us
+email: Charlie.St.Clair@leg.state.nh.us
 party:
 - name: Democratic
 roles:
@@ -10,15 +10,25 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 9
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 5
+offices:
+- classification: district
+  address: PO Box 5416 Laconia, NH 03247-5416
+  voice: 603-387-5944
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8956
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001510
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408811
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8956
 extras:
-  first_name: Charlie
-  last_name: St. Clair
-  middle_name: G.
+  county: Belknap
+  elected status: Incumbent
+  gender code: M
