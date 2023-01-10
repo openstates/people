@@ -4,16 +4,20 @@ given_name: Michael
 family_name: Nelson
 gender: Male
 email: rep.michael.nelson@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/40A.gif?v=112221
+image: https://www.house.mn.gov/hinfo/memberimgls93/38A.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 40A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 38A
 offices:
 - classification: capitol
-  address: 585 State Office Building;St. Paul, MN 55155
+  address: 563 State Office Building;St. Paul, MN 55155
   voice: 651-296-3751
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/10779
