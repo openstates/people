@@ -3,20 +3,21 @@ name: Steve Green
 given_name: Steve
 family_name: Green
 gender: Male
-email: rep.steve.green@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/02B.gif?v=112221
+email: sen.steve.green@senate.mn
+image: https://www.senate.mn/img/member_thumbnails/02Green.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 2B
-offices:
-- classification: capitol
-  address: 315 State Office Building;St. Paul, MN 55155
-  voice: 651-296-9918
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '2'
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15395
+- url: https://www.senate.mn/members/member_bio.html?mem_id=1251
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000409
@@ -24,3 +25,4 @@ other_identifiers:
   identifier: MNL000621
 sources:
 - url: http://www.house.leg.state.mn.us/members/hmem.asp
+- url: https://www.senate.mn/api/members
