@@ -11,10 +11,13 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
-  end_date: '2023-01-05'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '21'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '8'  
 links:
 - url: http://www.ohiohouse.gov/beth-liston
 - url: http://ohiohouse.gov/beth-liston
