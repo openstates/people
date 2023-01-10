@@ -7,7 +7,12 @@ image: https://legislature.vermont.gov/Documents/Legislators/FMcfaun.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Washington-Orange
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Washington-2
 offices:
