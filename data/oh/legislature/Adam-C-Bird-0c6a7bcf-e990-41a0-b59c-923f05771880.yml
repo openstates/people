@@ -4,9 +4,13 @@ image: https://www.legislature.ohio.gov/Assets/HouseMembers/Headshots/Medium/295
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '66'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '63'
 offices:
 - classification: capitol
   address: 77 South High Street; 11th Floor; Columbus, OH 43215
@@ -17,4 +21,5 @@ links:
 other_names:
 - name: Adam Bird
 sources:
-- url: http://ohiohouse.gov/adam-c-bird
+- url: https://www.legislature.ohio.gov/legislators/house-directory
+  note: member list page
