@@ -1,0 +1,31 @@
+id: ocd-person/13afc78a-1028-462e-8f98-6df3f7f028d5
+name: John Lively
+given_name: John
+family_name: Lively
+gender: Male
+email: Rep.JohnLively@oregonlegislature.gov
+image: https://www.oregonlegislature.gov/lively/PublishingImages/member_photo.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '12'
+links:
+- url: https://www.oregonlegislature.gov/lively
+- url: https://www.oregonlegislature.gov/lively
+  note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000107
+- scheme: legacy_openstates
+  identifier: ORL000130
+- scheme: legacy_openstates
+  identifier: ORL000207
+- scheme: legacy_openstates
+  identifier: ORL000288
+sources:
+- url: https://www.oregonlegislature.gov/lively
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
