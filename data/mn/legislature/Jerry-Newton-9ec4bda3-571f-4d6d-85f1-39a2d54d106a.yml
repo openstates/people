@@ -18,13 +18,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 37A
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '37'
-offices:
-- classification: capitol
-  address: 2403 Minnesota Senate Bldg.; St. Paul, MN 55155
-  voice: 651-296-2556
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 35B
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1229
 other_identifiers:

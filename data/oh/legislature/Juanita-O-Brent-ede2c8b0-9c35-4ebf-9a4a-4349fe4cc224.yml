@@ -10,14 +10,13 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '12'
-offices:
-- classification: capitol
-  address: 77 South High Street; 10th Floor; Columbus, OH 43215
-  voice: 614-466-1408
-  fax: 614-719-3912
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '22'
 links:
 - url: http://www.ohiohouse.gov/juanita-o-brent
 - url: http://ohiohouse.gov/juanita-o-brent
