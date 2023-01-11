@@ -11,14 +11,13 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '21'
-offices:
-- classification: capitol
-  address: 77 South High Street; 10th Floor; Columbus, OH 43215
-  voice: 614-644-6030
-  fax: 614-719-6960
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '8'
 links:
 - url: http://www.ohiohouse.gov/beth-liston
 - url: http://ohiohouse.gov/beth-liston

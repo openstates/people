@@ -1,16 +1,15 @@
 id: ocd-person/cc8ff7d8-5f89-4cd2-b908-ea6518569574
-name: 'Pete Marsh '
+name: Pete Marsh
 given_name: Pete
-family_name: 'Marsh '
+family_name: Marsh
+email: pmarsh@hilliardohio.gov
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:oh/place:hilliard/government
+- end_date: '2023-12-31'
   type: mayor
-  end_date: '2023-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/place:hilliard/government
+offices:
+- classification: primary
+  address: 3800 Municipal Way;Hilliard, OH 43026
+  voice: 614-876-7361
 sources:
 - url: https://hilliardohio.gov/city-council/
-links: []
-email: pmarsh@hilliardohio.gov
-offices:
-- address: 3800 Municipal Way;Hilliard, OH 43026
-  voice: 614-876-7361
-  classification: primary
