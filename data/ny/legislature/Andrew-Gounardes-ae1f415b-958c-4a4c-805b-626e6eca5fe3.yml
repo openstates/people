@@ -7,9 +7,22 @@ image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/ag_hea
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '22'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '26'
+offices:
+- classification: capitol
+  address: Legislative Office Bldg.;Albany,, NY 12247
+  voice: 518-455-3270
+- classification: district
+  address: 8018 5th Avenue;Brooklyn,, NY 11209
+  voice: 718-238-6044
+  fax: 518-426-6782
+  name: 'District Office #1'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/andrew-gounardes/contact
@@ -17,12 +30,3 @@ ids:
   twitter: agounardes
 sources:
 - url: http://www.nysenate.gov/senators/andrew-gounardes/contact
-offices:
-- address: Legislative Office Bldg.;Albany,, NY 12247
-  voice: 518-455-3270
-  classification: capitol
-- address: 8018 5th Avenue;Brooklyn,, NY 11209
-  voice: 718-238-6044
-  fax: 518-426-6782
-  classification: district
-  name: 'District Office #1'

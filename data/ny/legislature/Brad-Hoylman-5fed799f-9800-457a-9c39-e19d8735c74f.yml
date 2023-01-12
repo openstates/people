@@ -6,10 +6,15 @@ email: hoylman@nysenate.gov
 image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/bh_headshot.jpg?itok=Q44ltiNA
 party:
 - name: Democratic
+- name: Democratic/Working Families
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '27'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '47'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/brad-hoylman/contact
@@ -22,12 +27,3 @@ other_identifiers:
   identifier: NYL000384
 sources:
 - url: http://www.nysenate.gov/senators/brad-hoylman/contact
-offices:
-- address: Legislative Office Building, Room 310;Albany,, NY 12247
-  voice: 518-455-2451
-  classification: capitol
-- address: 322 Eighth Avenue, Suite 1700;New York,, NY 10001
-  voice: 212-633-8052
-  fax: 518-426-6846
-  classification: district
-  name: 'District Office #1'

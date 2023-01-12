@@ -7,9 +7,13 @@ image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/sf_hea
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '17'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '22'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/simcha-felder/contact
@@ -22,12 +26,3 @@ other_identifiers:
   identifier: NYL000386
 sources:
 - url: http://www.nysenate.gov/senators/simcha-felder/contact
-offices:
-- address: 504 Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2754
-  classification: capitol
-- address: 4623 16th Avenue;Brooklyn,, NY 11219
-  voice: 718-253-2015
-  fax: 518-426-6931
-  classification: district
-  name: 'District Office #1'
