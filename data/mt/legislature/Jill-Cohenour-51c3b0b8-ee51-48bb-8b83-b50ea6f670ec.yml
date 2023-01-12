@@ -7,9 +7,16 @@ email: Jill.Cohenour@mtleg.gov
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-02'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '42'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '84'
+offices:
+- classification: capitol
+  voice: 406-227-1144
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4703
   note: legislator page
@@ -26,7 +33,3 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5054
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6800
-offices:
-- address: 2610 COLT DR;East Helena, MT 59635
-  voice: 406-227-1144
-  classification: capitol

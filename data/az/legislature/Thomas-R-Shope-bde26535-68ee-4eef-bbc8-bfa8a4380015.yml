@@ -4,13 +4,17 @@ given_name: Thomas
 family_name: Shope
 gender: Male
 email: tshope@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/SHOPE.png
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '8'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '16'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 310;Phoenix, AZ 85007
@@ -21,6 +25,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1962
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1962
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2142
 other_names:
 - name: Thomas "T.J." Shope, Jr.
 ids:
@@ -37,3 +42,5 @@ sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
 - url: http://www.azleg.gov/MemberRoster/?body=S
 - url: https://www.azleg.gov/memberroster/?body=S
+extras:
+  title: President Pro Tempore
