@@ -6,20 +6,25 @@ email: tedisco@nysenate.gov
 image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_tedisco-hs.jpg?itok=4-C9InuB
 party:
 - name: Republican
+- name: Republican/Conservative
 roles:
-- start_date: 2011-01-01
-  end_date: 2012-12-31
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '110'
-- start_date: 2013-01-01
-  end_date: 2016-12-31
+- start_date: '2013-01-01'
+  end_date: '2016-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '112'
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '49'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '44'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/james-tedisco/contact
@@ -36,12 +41,3 @@ other_identifiers:
   identifier: ocd-person/c024ab00-3817-4245-9ce7-0da06a1e1aab
 sources:
 - url: http://www.nysenate.gov/senators/james-tedisco/contact
-offices:
-- address: Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2181
-  classification: capitol
-- address: 636 Plank Rd.;Clifton Park,, NY 12065-2046
-  voice: 518-885-1829
-  fax: 518-426-6821
-  classification: district
-  name: 'District Office #1'
