@@ -3,13 +3,22 @@ name: Bob Peterson
 given_name: Bob
 family_name: Peterson
 email: sd17@ohiosenate.gov
-image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2062.jpg
+image: https://www.legislature.ohio.gov/assets/people/bob-peterson/headshots/thumbnails/medium/bob-peterson-march-2017-headshot_medium.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '17'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '91'
+offices:
+- classification: capitol
+  address: 77 S. High St; 11th Floor; Columbus, OH 43215
+  voice: 614-466-3506
+  fax: 614-719-6986
 links:
 - url: http://www.ohiosenate.gov/senators/peterson
 other_identifiers:
@@ -19,7 +28,3 @@ other_identifiers:
   identifier: OHL000159
 sources:
 - url: http://www.ohiosenate.gov/senators
-offices:
-- address: Senate Building;1 Capitol Square;1st Floor;Columbus, OH 43215
-  voice: 614-466-8156
-  classification: capitol

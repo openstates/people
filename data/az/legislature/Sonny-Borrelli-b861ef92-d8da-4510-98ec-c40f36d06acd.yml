@@ -4,17 +4,21 @@ given_name: Sonny
 family_name: Borrelli
 gender: Male
 email: sborrelli@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/BORRELLI.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Republican
 roles:
-- end_date: 2016-12-31
+- end_date: '2016-12-31'
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '5'
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '5'
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '5'
+  district: '30'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 212;Phoenix, AZ 85007
@@ -25,6 +29,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1959
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1959
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2118
 ids:
   twitter: SonnyBorrelli
   facebook: sonny.borrelli
@@ -39,4 +44,4 @@ sources:
 - url: http://www.azleg.gov/MemberRoster/?body=S
 - url: https://www.azleg.gov/memberroster/?body=S
 extras:
-  title: Majority Whip
+  title: Majority Leader
