@@ -7,9 +7,22 @@ image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/%2811-
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '47'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '53'
+offices:
+- classification: capitol
+  address: 172 State Street, Capitol Building;Albany,, NY 12247
+  voice: 518-455-3334
+- classification: district
+  address: 207 Genesee Street Room 408;Utica,, NY 13501
+  voice: 315-793-9072
+  fax: 315-793-0298
+  name: 'District Office #1'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/joseph-griffo/contact
@@ -22,12 +35,3 @@ other_identifiers:
   identifier: NYL000412
 sources:
 - url: http://www.nysenate.gov/senators/joseph-griffo/contact
-offices:
-- address: 172 State Street, Capitol Building;Albany,, NY 12247
-  voice: 518-455-3334
-  classification: capitol
-- address: 207 Genesee Street Room 408;Utica,, NY 13501
-  voice: 315-793-9072
-  fax: 315-793-0298
-  classification: district
-  name: 'District Office #1'
