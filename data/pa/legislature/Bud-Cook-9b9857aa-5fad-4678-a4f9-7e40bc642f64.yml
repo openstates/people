@@ -3,23 +3,28 @@ name: Bud Cook
 given_name: Bud
 family_name: Cook
 gender: Male
-image: https://www.legis.state.pa.us/images/members/200/1745.jpg
+image: https://www.legis.state.pa.us/images/members/200/1745.jpg?1672753659451
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '49'
+- start_date: '2022-12-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '50'
 offices:
 - classification: capitol
-  address: B13 Main Capitol Building P.O. Box 202049 Harrisburg, PA 17120-2049
+  address: B13 Main Capitol Building P.O. Box 202050 Harrisburg, PA 17120-2050
   voice: 717-783-8655
   fax: 717-782-2962
 - classification: district
-  address: 130 Woodland Court Center in the Woods Brownsville, PA 15417;Toll Free
+  address: '130 Woodland Court Center in the Woods Brownsville, PA 15417 Office Hours:
+    Mon & Tues 9:00 am - 4:30 pm'
   voice: 724-929-2660
   fax: 724-938-5352
-  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1745
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
