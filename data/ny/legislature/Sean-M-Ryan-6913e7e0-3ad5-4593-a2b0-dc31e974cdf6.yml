@@ -5,9 +5,13 @@ image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/01-20-
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '60'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '61'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/sean-m-ryan/contact
