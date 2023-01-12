@@ -11,14 +11,13 @@ party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '61'
-offices:
-- classification: capitol
-  address: 77 South High Street; 11th Floor; Columbus, OH 43215
-  voice: 614-644-6074
-  fax: 614-719-3963
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '57'
 links:
 - url: http://www.ohiohouse.gov/jamie-callender
 - url: http://ohiohouse.gov/jamie-callender
