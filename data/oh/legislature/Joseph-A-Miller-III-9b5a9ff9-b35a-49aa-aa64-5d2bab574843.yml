@@ -13,14 +13,13 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '56'
-offices:
-- classification: capitol
-  address: 77 South High Street; 10th Floor; Columbus, OH 43215
-  voice: 614-466-5141
-  fax: 614-719-3956
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '53'
 links:
 - url: http://www.ohiohouse.gov/joseph-a-miller-iii
 - url: http://ohiohouse.gov/joseph-a-miller-iii
