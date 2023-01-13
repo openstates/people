@@ -7,9 +7,18 @@ image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/briank
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '26'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '27'
+offices:
+- classification: capitol
+  address: Legislative Office Building;Albany,, NY 12247
+  voice: 518-455-2625
+  fax: 518-426-6956
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/brian-kavanagh/contact
@@ -22,8 +31,3 @@ other_identifiers:
   identifier: NYL000465
 sources:
 - url: http://www.nysenate.gov/senators/brian-kavanagh/contact
-offices:
-- address: Legislative Office Building;Albany,, NY 12247
-  voice: 518-455-2625
-  fax: 518-426-6956
-  classification: capitol
