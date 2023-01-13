@@ -7,19 +7,17 @@ image: https://www.legis.state.pa.us/images/members/200/1200.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '189'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '40'
 offices:
 - classification: capitol
-  address: 209 Ryan Office Building P.O. Box 202189 Harrisburg, PA 17120-2189
-  voice: 717-260-6171
-  fax: 717-787-9185
-- classification: district
-  address: 143 Seven Bridge Road East Stroudsburg, PA 18301
-  voice: 570-420-8301
-  fax: 570-420-8304
-  name: 'District Office #1'
+  address: 'Senate Box 203040 Harrisburg, PA 17120-3040 Room: 187 Main Capitol'
+  voice: 717-787-6123
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
