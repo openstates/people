@@ -3,14 +3,19 @@ name: Shannon Bird
 given_name: Shannon
 family_name: Bird
 gender: Female
-email: Shannon.bird.house@state.co.us
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_bird%2C%20shannon.jpg?itok=pgmC4Eux
+email: shannon.bird.house@coleg.gov
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_bird%2C%20shannon.jpg?itok=3C8YsxSr
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '35'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '29'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 307 Denver, CO 80203
@@ -25,3 +30,4 @@ sources:
 extras:
   counties represented:
   - Adams
+  - Jefferson
