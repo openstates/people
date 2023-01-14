@@ -1,0 +1,38 @@
+id: ocd-person/bcab0f3a-68fd-4f91-bbc0-bb68b122c044
+name: Sam Park
+given_name: Sam
+family_name: Park
+email: sam.park@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/park-sam-4901.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '107'
+offices:
+- classification: capitol
+  address: 611-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0314
+- classification: district
+  address: 4850 Sugarloaf Pkwy Ste. 209-188; Lawrenceville, GA 30044
+links:
+- url: https://www.legis.ga.gov/members/house/4901?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4901?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Lawrenceville
+  city: Lawrenceville
+  georgia_id: 4901
+  birthday: October 1
+  occupation: Attorney
+  press: https://house-press.com/representative/Sam-Park
+  staff: Wyletha Thompson - Administrative Assistant
+  staff email: wyletha.thompson@house.ga.gov
+  title: Minority Caucus Whip

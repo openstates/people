@@ -1,0 +1,53 @@
+id: ocd-person/f863b50d-c865-463a-830a-e5648837d9f7
+name: Robert Dickey
+given_name: Robert
+family_name: Dickey
+gender: Male
+email: robert.dickey@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/dickey-robert-791.jpg
+party:
+- name: Republican
+roles:
+- end_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '140'
+- end_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '145'
+links:
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
+- url: https://www.legis.ga.gov/members/house/791?session=1029
+- url: https://www.legis.ga.gov/members/house/791?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000096
+- scheme: legacy_openstates
+  identifier: GAL000270
+- scheme: legacy_openstates
+  identifier: GAL000381
+- scheme: legacy_openstates
+  identifier: GAL000384
+sources:
+- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
+- url: https://www.legis.ga.gov/members/house/791?session=1029
+- url: https://www.legis.ga.gov/members/house/791?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/791?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/791?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Musella
+  city: Musella
+  georgia_id: 791
+  occupation: Agribusiness/Peach Grower
+  press: https://house-press.com/representative/Robert-Dickey
+  spouse: Cynde

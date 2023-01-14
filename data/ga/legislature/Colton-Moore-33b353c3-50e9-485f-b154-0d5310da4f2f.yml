@@ -1,0 +1,28 @@
+id: ocd-person/33b353c3-50e9-485f-b154-0d5310da4f2f
+name: Colton Moore
+given_name: Colton
+family_name: Moore
+email: colton.moore@senate.ga.gov
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '53'
+offices:
+- classification: district
+  address: P.O. Box 1516; Trenton, GA 30752
+links:
+- url: https://www.legis.ga.gov/members/senate/4933?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4933?session=1031&chamber=2
+  note: API member detail (requires authorization token)
+extras:
+  residence: Trenton
+  city: Trenton
+  georgia_id: 4933

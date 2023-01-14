@@ -1,0 +1,33 @@
+id: ocd-person/a4988328-3c62-4eba-b1b3-c568cde62121
+name: Ed Setzler
+given_name: Ed
+family_name: Setzler
+email: ed.setzler@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/setzler-ed-203.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '37'
+offices:
+- classification: district
+  address: 1555 Boxwood Trace; Acworth, GA 30102
+links:
+- url: https://www.legis.ga.gov/members/senate/203?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/203?session=1031&chamber=2
+  note: API member detail (requires authorization token)
+extras:
+  residence: Acworth
+  city: Acworth
+  georgia_id: 203
+  birthday: March 18
+  occupation: Engineering Manager
+  press: https://house-press.com/representative/Ed-Setzler
+  spouse: Tracie

@@ -1,0 +1,29 @@
+id: ocd-person/ef5ce31b-48c5-4ac5-9566-f61aaabfc98b
+name: Derek Mallow
+given_name: Derek
+family_name: Mallow
+email: derek.mallow@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/mallow-derek-5007.jpg
+party:
+- name: Democratic
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '2'
+offices:
+- classification: district
+  address: P.O. Box 14034; Savannah, GA 14034
+links:
+- url: https://www.legis.ga.gov/members/senate/5007?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5007?session=1031&chamber=2
+  note: API member detail (requires authorization token)
+extras:
+  residence: Savannah
+  city: Savannah
+  georgia_id: 5007
