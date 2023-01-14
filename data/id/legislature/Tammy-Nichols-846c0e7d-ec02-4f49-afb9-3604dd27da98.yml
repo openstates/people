@@ -8,10 +8,12 @@ party:
 - name: Republican
 roles:
 - start_date: '2018-12-01'
+  end_date: '2022-12-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '11'
-- type: upper
+- start_date: '2022-12-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '10'
 offices:
