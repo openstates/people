@@ -8,10 +8,12 @@ image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27031
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '68'
-- type: upper
+- start_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '37'
 offices:

@@ -8,9 +8,14 @@ image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27032
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '70'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '79'
 offices:
 - classification: district
   address: 411 Hanover Rd SW, Cedar Rapids, IA 52404
