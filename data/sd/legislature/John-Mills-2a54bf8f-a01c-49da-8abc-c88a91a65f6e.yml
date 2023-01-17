@@ -7,9 +7,14 @@ image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/mills_2019.j
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '4'
+- start_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '8'
 offices:
 - classification: district
   address: 21730 464th Ave.; Volga, SD 57071

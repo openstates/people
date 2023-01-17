@@ -8,7 +8,12 @@ image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/wink, dean r
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '29'
+- start_date: '2023-01-10'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '29'
 offices:

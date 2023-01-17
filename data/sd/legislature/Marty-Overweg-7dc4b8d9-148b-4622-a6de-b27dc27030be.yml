@@ -7,10 +7,12 @@ image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/https://lawm
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '19'
-- type: lower
+- start_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '21'
 offices:
