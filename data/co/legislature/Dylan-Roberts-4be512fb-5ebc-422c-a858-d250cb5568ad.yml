@@ -3,18 +3,23 @@ name: Dylan Roberts
 given_name: Dylan
 family_name: Roberts
 gender: Male
-email: dylan.roberts.house@state.co.us
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_roberts%2C%20dylan.jpg?itok=FEkrBuvi
+email: dylan.roberts.senate@coleg.gov
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_roberts%2C%20dylan.jpg?itok=32fwczed
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '26'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '8'
 offices:
 - classification: capitol
-  address: 200 E Colfax RM 307 Denver, CO 80203
-  voice: 303-866-2923
+  address: 200 E Colfax RM 346 Denver, CO 80203
+  voice: 303-866-4871
 links:
 - url: http://leg.colorado.gov/legislators/dylan-roberts
 - url: http://leg.colorado.gov/legislators/dylan-roberts
@@ -27,5 +32,13 @@ sources:
 - url: http://leg.colorado.gov/legislators
 extras:
   counties represented:
+  - Clear Creek
   - Eagle
+  - Garfield
+  - Gilpin
+  - Grand
+  - Jackson
+  - Moffat
+  - Rio Blanco
   - Routt
+  - Summit
