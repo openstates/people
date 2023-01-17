@@ -10,7 +10,17 @@ roles:
 - start_date: 2021-11-30
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: "30"
+  district: '30'
+offices:
+- classification: capitol
+  address: 188 State Street Room 917,;Albany,, NY 12247
+  voice: 518-455-2441
+  fax: 518-426-6809
+- classification: district
+  address: 163 West 125th Street;New York,, NY 10027
+  voice: 212-222-7315
+  fax: 212-678-0001
+  name: 'District Office #1'
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: https://www.nysenate.gov/senators/cordell-cleare/contact
@@ -18,13 +28,3 @@ ids:
   twitter: CordellCleare
 sources:
 - url: https://www.nysenate.gov/senators/cordell-cleare/contact
-offices:
-- address: 188 State Street Room 917,;Albany,, NY 12247
-  voice: 518-455-2441
-  fax: 518-426-6809
-  classification: capitol
-- address: 163 West 125th Street;New York,, NY 10027
-  voice: 212-222-7315
-  fax: 212-678-0001
-  classification: district
-  name: "District Office #1"

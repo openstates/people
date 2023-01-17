@@ -8,14 +8,13 @@ image: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2144.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '79'
-offices:
-- classification: capitol
-  address: Room 119 North State Capitol PO Box 8952 Madison, WI 53708
-  voice: 608-266-5340
-  fax: 608-282-3679
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '27'
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1559
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1873

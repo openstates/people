@@ -10,21 +10,29 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '107'
+offices:
+- classification: capitol
+  address: Room BSMNT P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3278
+- classification: district
+  address: 1211 Bexley Church Rd Lucedale, Mississippi 39452
+  voice: 601-947-3125
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
+- url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000201
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. McLeod is a member of the George Co. Economic Development Board of
-    Directors, Academic Board, and Farm Bureau.
-offices:
-- address: Room BSMNT;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3278
-  classification: capitol
-- address: 1211 Bexley Church Rd;Lucedale, MS 39452
-  voice: 601-947-3125
-  classification: district
-  name: 'District Office #1'
+  occupation: Business Owner
+  education:
+  - Hinds Community College
+  - Mississippi Gulf Coast Community College
+  - George County High School
+  counties represented:
+  - George
+  - Stone

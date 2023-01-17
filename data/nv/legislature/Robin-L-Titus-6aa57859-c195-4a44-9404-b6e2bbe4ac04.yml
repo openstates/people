@@ -8,20 +8,13 @@ image: https://leg.state.nv.us/Session/82nd2023/legislators/Assembly/Images/Titu
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   district: '38'
-offices:
-- classification: capitol
-  address: Room 3105C;c/o Nevada Assembly;401 South Carson Street;Carson City, NV
-    89701-4747
-  voice: 775-684-8507
-- classification: district
-  address: P.O. Box 377;Wellington,;NV 89444-0377
-- classification: district
-  address: P.O. Box 377;Wellington, NV 89444-0377
-  voice: 775-901-3844
-  name: 'District Office #1'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '17'
 links:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=281
 - url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/38
@@ -37,5 +30,3 @@ sources:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=281
 - url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current
 - url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/38
-extras:
-  title: Minority Floor Leader
