@@ -4,20 +4,26 @@ given_name: Jake
 family_name: Hoffman
 gender: Male
 email: jake.hoffman@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/HOFFMAN.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '12'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '15'
 offices:
 - classification: capitol
-  address: House of Representatives;1700 West Washington;Room 341;Phoenix, AZ 85007
+  address: Senate;1700 West Washington;Room 306;Phoenix, AZ 85007
   voice: 602-926-3292
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2066
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2066
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2130
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
 - url: https://www.azleg.gov/memberroster/?body=H
+- url: https://www.azleg.gov/memberroster/?body=S

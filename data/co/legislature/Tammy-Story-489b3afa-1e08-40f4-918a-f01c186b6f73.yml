@@ -3,18 +3,23 @@ name: Tammy Story
 given_name: Tammy
 family_name: Story
 gender: Female
-email: tammy.story.senate@state.co.us
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_story%2C%20tammy.jpg?itok=plu1UvQt
+email: tammy.story.house@coleg.gov
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_story%2C%20tammy.jpg?itok=3rx_uWQE
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '16'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '25'
 offices:
 - classification: capitol
-  address: 200 E Colfax RM 346 Denver, CO 80203
-  voice: 303-866-4873
+  address: 200 E Colfax RM 307 Denver, CO 80203
+  voice: 303-866-2582
 links:
 - url: http://leg.colorado.gov/legislators/tammy-story
 - url: http://leg.colorado.gov/legislators/tammy-story
@@ -24,7 +29,4 @@ sources:
 - url: http://leg.colorado.gov/legislators
 extras:
   counties represented:
-  - Boulder
-  - Denver
-  - Gilpin
   - Jefferson

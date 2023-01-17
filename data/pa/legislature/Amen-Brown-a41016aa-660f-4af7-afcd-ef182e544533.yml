@@ -3,16 +3,20 @@ name: Amen Brown
 given_name: Amen
 family_name: Brown
 gender: Male
-image: https://www.legis.state.pa.us/images/members/200/1919.jpg
+image: https://www.legis.state.pa.us/images/members/200/1919.jpg?1672753659451
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '190'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '10'
 offices:
 - classification: capitol
-  address: 27A East Wing P.O. Box 202190 Harrisburg, PA 17120-2190
+  address: 27A East Wing P.O. Box 202010 Harrisburg, PA 17120-2010
   voice: 717-783-3822
   fax: 717-772-2384
 - classification: district
