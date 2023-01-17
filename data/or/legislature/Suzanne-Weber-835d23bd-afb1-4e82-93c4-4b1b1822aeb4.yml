@@ -3,19 +3,24 @@ name: Suzanne Weber
 given_name: Suzanne
 family_name: Weber
 gender: Female
-email: Rep.SuzanneWeber@oregonlegislature.gov
+email: Sen.SuzanneWeber@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/weber/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2021-01-11
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '32'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '16'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-483, Salem, OR, 97301
-  voice: 503-986-1432
+  address: 900 Court St NE, S-405, Salem, OR, 97301
+  voice: 503-986-1716
 - classification: district
   voice: 503-300-4493
 links:
@@ -25,3 +30,4 @@ links:
 sources:
 - url: https://www.oregonlegislature.gov/weber
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
