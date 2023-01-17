@@ -3,18 +3,23 @@ name: Mark Meek
 given_name: Mark
 family_name: Meek
 gender: Male
-email: Rep.MarkMeek@oregonlegislature.gov
+email: Sen.MarkMeek@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/meek/PublishingImages/Pages/default/meek%20headshot.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '40'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '20'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-478, Salem, OR, 97301
-  voice: 503-986-1440
+  address: 900 Court St NE, S-417, Salem, OR, 97301
+  voice: 503-986-1720
 links:
 - url: https://www.oregonlegislature.gov/meek
 - url: https://www.oregonlegislature.gov/meek
@@ -27,3 +32,4 @@ other_identifiers:
 sources:
 - url: https://www.oregonlegislature.gov/meek
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

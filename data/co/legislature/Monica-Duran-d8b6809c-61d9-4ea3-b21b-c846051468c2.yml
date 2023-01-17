@@ -3,14 +3,19 @@ name: Monica Duran
 given_name: Monica
 family_name: Duran
 gender: Female
-email: monica.duran.house@state.co.us
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_duran%2C%20monica.jpg?itok=iBwcTCt8
+email: monica.duran.house@coleg.gov
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_duran%2C%20monica.jpg?itok=UUH0Utdo
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '24'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '23'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 307 Denver, CO 80203
@@ -23,6 +28,6 @@ sources:
 - url: http://leg.colorado.gov/legislators/monica-duran
 - url: http://leg.colorado.gov/legislators
 extras:
-  title: Majority Co-Whip
+  title: Majority Leader
   counties represented:
   - Jefferson
