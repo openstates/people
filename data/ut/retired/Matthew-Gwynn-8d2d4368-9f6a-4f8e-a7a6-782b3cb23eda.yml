@@ -9,10 +9,13 @@ party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
-  end_date: '2022-12-31'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '29'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '6'  
 links:
 - url: http://house.utah.gov/rep/GWYNNM
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=GWYNNM
