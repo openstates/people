@@ -1,0 +1,29 @@
+id: ocd-person/5474fbe2-6cdb-4ad2-9831-cdffaca442af
+name: Solomon Adesanya
+given_name: Solomon
+family_name: Adesanya
+email: solomon.adesanya@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/adesanya-solomon-5025.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '43'
+links:
+- url: https://www.legis.ga.gov/members/house/5025?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5025?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Marietta
+  city: Marietta
+  georgia_id: 5025
+  birthday: July 12
+  occupation: Business Owner
+  spouse: Ashleigh
