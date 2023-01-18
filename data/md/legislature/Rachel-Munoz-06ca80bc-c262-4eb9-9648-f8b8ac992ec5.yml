@@ -9,10 +9,12 @@ party:
 - name: Republican
 roles:
 - start_date: 2021-11-08
+  end_date: '2023-01-11'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '33'
-- type: lower
+- start_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '31'
 offices:
