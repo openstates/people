@@ -9,9 +9,14 @@ party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '67'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '65'
 offices:
 - classification: district
   address: 357 E 1250 S, Payson, UT, 84651

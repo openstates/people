@@ -8,9 +8,14 @@ image: https://le.utah.gov/images/legislator/CHRISKJ.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '56'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '53'
 offices:
 - classification: district
   address: 1256 E 1500 N, LEHI, UT, 84043

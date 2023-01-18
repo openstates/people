@@ -8,9 +8,14 @@ image: https://le.utah.gov/images/legislator/THURSNK.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '64'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '62'
 offices:
 - classification: district
   address: 965 E CENTER STREET, PROVO, UT, 84606
