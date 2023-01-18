@@ -8,9 +8,14 @@ image: https://www.arkleg.state.ar.us/Content/photos/2021/House/538_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '38'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '70'
 offices:
 - classification: district
   address: 2513 McCain Blvd, Suite 208, North Little Rock, AR 72116

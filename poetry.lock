@@ -1944,3 +1944,12 @@ yarl = [
     {file = "yarl-1.8.2-cp39-cp39-win_amd64.whl", hash = "sha256:6604711362f2dbf7160df21c416f81fac0de6dbcf0b5445a2ef25478ecc4c778"},
     {file = "yarl-1.8.2.tar.gz", hash = "sha256:49d43402c6e3013ad0978602bf6bf5328535c48d192304b91b97a3c6790b1562"},
 ]
+
+[package.dependencies]
+idna = ">=2.0"
+multidict = ">=4.0"
+
+[metadata]
+lock-version = "2.0"
+python-versions = "^3.9"
+content-hash = "7d5fb811525eb2aee228865a5c9e698a286ff06675b80e5b08c9a668ca5b92f8"
