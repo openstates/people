@@ -2,15 +2,14 @@ id: ocd-person/ffbb79cf-f6c4-4155-917e-81f3cb7158b7
 name: Marco McClendon
 given_name: Marco
 family_name: McClendon
+email: mmcclendon@citywm.com
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:ar/place:west_memphis/government
+- end_date: '2023-12-31'
   type: mayor
-  end_date: '2023-12-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/place:west_memphis/government
+offices:
+- classification: primary
+  address: P.O. Box 1728 ;West Memphis, AR 72303
+  voice: 870-732-7500
 sources:
 - url: http://www.westmemphisar.gov/416/Mayors-Office
-links: []
-email: mmcclendon@citywm.com
-offices:
-- address: P.O. Box 1728 ;West Memphis, AR 72303
-  voice: 870-732-7500
-  classification: primary
