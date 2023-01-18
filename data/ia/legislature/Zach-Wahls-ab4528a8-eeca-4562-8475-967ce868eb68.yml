@@ -4,19 +4,23 @@ given_name: Zach
 family_name: Wahls
 gender: Male
 email: zach.wahls@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27002
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27002
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '37'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '43'
 offices:
 - classification: capitol
   voice: 515-281-3371
 - classification: district
-  address: 1507 Winterpark Dr, Coralville, IA 52241
-  name: 'District Office #1'
+  voice: 515-281-3901
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27002
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27002
@@ -28,8 +32,5 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27002
 - url: https://www.legis.iowa.gov/legislators/senate
 extras:
-  home address: 1507 Winterpark Dr, Coralville, IA 52241
-  cell phone: 319.318.2094
-  capitol phone: 515.281.3371
-  office phone: 515.281.3901
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
   occupation: Small Business Owner/Credit Union Executive

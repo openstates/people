@@ -4,24 +4,28 @@ given_name: Julian
 family_name: Garrett
 gender: Male
 email: julian.garrett@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=9404
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=9404
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '13'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '11'
 offices:
 - classification: capitol
   voice: 515-281-3371
-- classification: district
-  address: Box 493, Indianola, IA 50125
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9404
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9404
 - url: http://www.iowasenaterepublicans.com/senators/julian.garrett/
 - url: http://www.iowasenaterepublicans.com/senators/julian-garrett/
+- url: http://http://www.iowasenaterepublicans.com/senators/julian.garrett/
+- url: http://http://www.iowasenaterepublicans.com/senators/julian-garrett/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000070
@@ -39,8 +43,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9404
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9404
 - url: https://www.legis.iowa.gov/legislators/senate
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=9404
 extras:
-  home address: Box 493, Indianola, IA 50125
-  cell phone: 515.971.0883
-  capitol phone: 515.281.3371
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
   occupation: Farmer

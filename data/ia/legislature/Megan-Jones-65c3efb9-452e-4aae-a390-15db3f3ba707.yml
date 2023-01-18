@@ -4,24 +4,27 @@ given_name: Megan
 family_name: Jones
 gender: Female
 email: megan.jones@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=10747
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=10747
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '2'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '6'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 4470 Hwy 71, Sioux Rapids, IA 50585
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10747
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10747
 - url: http://www.jonesforiowa.com
 - url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=10747&ga=89
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=10747&ga=90
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000257
@@ -33,7 +36,6 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10747
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10747
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=10747
 extras:
-  home address: 4470 Hwy 71, Sioux Rapids, IA 50585
-  cell phone: 515.991.7337
-  capitol phone: 515.281.3221
+  occupation: Non-practicing Attorney/Farm Wife/Mom

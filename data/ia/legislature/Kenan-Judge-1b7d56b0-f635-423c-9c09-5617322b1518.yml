@@ -3,19 +3,29 @@ name: Kenan Judge
 given_name: Kenan
 family_name: Judge
 gender: Male
-email: Kenan.Judge@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27027
+email: kenan.judge@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27027
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '44'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '27'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27027
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27027
 - url: http://eepurl.com/gXSavj
+- url: http://http://eepurl.com/gXSavj
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27027
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27027
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27027
+extras:
+  home email: judge.kenan@gmail.com
+  occupation: Retired
