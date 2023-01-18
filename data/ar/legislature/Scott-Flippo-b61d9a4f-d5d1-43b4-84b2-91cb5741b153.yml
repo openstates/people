@@ -7,9 +7,14 @@ image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/508_sm.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '17'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '23'
 offices:
 - classification: district
   address: P.O. Box 705, Bull Shoals, AR 72619
