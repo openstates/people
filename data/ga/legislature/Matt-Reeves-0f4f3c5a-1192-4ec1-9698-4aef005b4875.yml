@@ -1,0 +1,29 @@
+id: ocd-person/0f4f3c5a-1192-4ec1-9698-4aef005b4875
+name: Matt Reeves
+given_name: Matt
+family_name: Reeves
+email: matt.reeves@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/reeves-matt-5040.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '99'
+links:
+- url: https://www.legis.ga.gov/members/house/5040?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5040?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Duluth
+  city: Duluth
+  georgia_id: 5040
+  birthday: October 4
+  occupation: Lawyer
+  spouse: Suzette

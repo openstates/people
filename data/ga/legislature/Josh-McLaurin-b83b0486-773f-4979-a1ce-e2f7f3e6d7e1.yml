@@ -8,16 +8,13 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/mclaurin-jos
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '51'
-offices:
-- classification: capitol
-  address: 507-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0202
-- classification: district
-  address: P.O. Box 567297; Atlanta, GA 31156
-  name: 'District Office #1'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '14'  
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4942&Session=27
 - url: https://www.legis.ga.gov/members/house/4942?session=1029

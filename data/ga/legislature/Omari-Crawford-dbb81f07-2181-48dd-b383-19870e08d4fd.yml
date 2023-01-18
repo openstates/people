@@ -1,0 +1,28 @@
+id: ocd-person/dbb81f07-2181-48dd-b383-19870e08d4fd
+name: Omari Crawford
+given_name: Omari
+family_name: Crawford
+email: omari.crawford@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/crawford-omari-5036.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '84'
+links:
+- url: https://www.legis.ga.gov/members/house/5036?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5036?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Decatur
+  city: Decatur
+  georgia_id: 5036
+  birthday: March 10
+  occupation: Assistant DeKalb County Attorney

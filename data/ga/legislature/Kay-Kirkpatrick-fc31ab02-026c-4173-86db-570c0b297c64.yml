@@ -16,10 +16,15 @@ offices:
   address: 324-A CLOB; Atlanta, GA 30334
   voice: 404-656-3932
 - classification: district
-  address: 2146 Roswell RD; Suite 108895; Marietta, GA 30062
+  address: 2146 Roswell Road; Suite 108895; Marietta, GA 30062
+
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4910&Session=27
 - url: https://www.legis.ga.gov/members/senate/4910?session=1029
+- url: https://www.legis.ga.gov/members/senate/4910?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000477
@@ -31,6 +36,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4910?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4910?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Marietta
   city: Marietta

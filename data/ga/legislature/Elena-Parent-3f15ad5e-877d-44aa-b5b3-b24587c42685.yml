@@ -15,13 +15,13 @@ offices:
 - classification: capitol
   address: 121-A State Capitol; Atlanta, GA 30334
   voice: 404-656-5109
-- classification: district
-  address: 1250 Oakdale Road NE;Atlanta, GA 30307
-  voice: 678-404-4652
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
 - url: https://www.legis.ga.gov/members/senate/768?session=1029
+- url: https://www.legis.ga.gov/members/senate/768?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000179
@@ -35,6 +35,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/768?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/768?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Atlanta
   city: Atlanta
@@ -45,4 +49,3 @@ extras:
   spouse: Briley Brisendine
   staff: Stephanie Tanner
   staff email: stephanie.tanner@senate.ga.gov
-  title: Democratic Caucus Chairman

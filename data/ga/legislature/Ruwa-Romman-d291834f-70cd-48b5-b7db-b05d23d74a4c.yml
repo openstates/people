@@ -1,0 +1,29 @@
+id: ocd-person/d291834f-70cd-48b5-b7db-b05d23d74a4c
+name: Ruwa Romman
+given_name: Ruwa
+family_name: Romman
+email: ruwa.romman@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/romman-ruwa-5039.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '97'
+links:
+- url: https://www.legis.ga.gov/members/house/5039?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5039?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Duluth
+  city: Duluth
+  georgia_id: 5039
+  birthday: June 14
+  occupation: Senior Consultant
+  spouse: Shahzaib

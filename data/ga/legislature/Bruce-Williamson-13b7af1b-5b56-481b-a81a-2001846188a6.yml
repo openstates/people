@@ -8,9 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/williamson-b
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '115'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '112'
 offices:
 - classification: capitol
   address: 415-B State Capitol; Atlanta, GA 30334

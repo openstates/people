@@ -1,0 +1,32 @@
+id: ocd-person/91abe321-5ea4-4f17-b8d8-573d7cb913e6
+name: Scott Hilton
+given_name: Scott
+family_name: Hilton
+email: scott.hilton@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/hilton-scott-4899.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '48'
+offices:
+- classification: district
+  address: 5425 Peachtree Parkway; Peachtree Corners, GA 30092
+links:
+- url: https://www.legis.ga.gov/members/house/4899?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4899?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Peachtree Corners
+  city: Peachtree Corners
+  georgia_id: 4899
+  birthday: November 20
+  occupation: Commercial Banker
+  spouse: Meredith

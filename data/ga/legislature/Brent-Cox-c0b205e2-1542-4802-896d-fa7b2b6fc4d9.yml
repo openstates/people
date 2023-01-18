@@ -1,0 +1,29 @@
+id: ocd-person/c0b205e2-1542-4802-896d-fa7b2b6fc4d9
+name: Brent Cox
+given_name: Brent
+family_name: Cox
+email: brent.cox@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/cox-brent-5021.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '28'
+links:
+- url: https://www.legis.ga.gov/members/house/5021?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5021?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Dawsonville
+  city: Dawsonville
+  georgia_id: 5021
+  birthday: December 8
+  occupation: Business Owner
+  spouse: Tonya
