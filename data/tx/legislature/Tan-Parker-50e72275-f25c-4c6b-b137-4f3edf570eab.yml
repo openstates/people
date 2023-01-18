@@ -1,10 +1,17 @@
 id: ocd-person/50e72275-f25c-4c6b-b137-4f3edf570eab
 name: Tan Parker
+given_name: Tan
+family_name: Parker
 image: https://senate.texas.gov/members/d12/img/86_20190619_SAM_0008.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '63'
+- start_date: '2023-01-10'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '12'
 offices:

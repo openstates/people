@@ -7,10 +7,12 @@ image: https://house.texas.gov/members/photos/4155.jpg?v=88.3
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '61'
-- type: upper
+- start_date: '2023-01-10'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '10'
 offices:
