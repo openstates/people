@@ -1,15 +1,20 @@
 id: ocd-person/6feda596-fd20-429b-ae4e-bedab7e5a1c5
-name: Claudia Ordaz
+name: Claudia Ordaz Perez
 given_name: Claudia
-family_name: Ordaz
+family_name: Ordaz Perez
 gender: Female
 image: https://house.texas.gov/members/photos/4285.jpg?v=88.3
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '76'
+- start_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '79'  
 offices:
 - classification: capitol
   address: Room E1.512 P.O. Box 2910 Austin, TX 78768
