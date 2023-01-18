@@ -9,10 +9,14 @@ party:
 - name: Republican
 roles:
 - start_date: 2020-04-16
-  end_date: '2022-12-31'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '53'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '4'  
 links:
 - url: http://house.utah.gov/rep/BIRKEK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BIRKEK
