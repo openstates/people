@@ -1,0 +1,31 @@
+id: ocd-person/031b880f-171c-448f-b1c1-62ac47693909
+name: Lynn Gladney
+given_name: Lynn
+family_name: Gladney
+email: lynn.gladney@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/gladney-lynn-5048.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '130'
+offices:
+- classification: district
+  address: P.O. Box 5713; Augusta, GA 30916
+links:
+- url: https://www.legis.ga.gov/members/house/5048?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5048?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Augusta
+  city: Augusta
+  georgia_id: 5048
+  birthday: November 27
+  occupation: Director, Motor Vehicle Registration Division

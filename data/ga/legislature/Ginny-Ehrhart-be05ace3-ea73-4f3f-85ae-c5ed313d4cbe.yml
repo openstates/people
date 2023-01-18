@@ -13,14 +13,17 @@ roles:
   district: '36'
 offices:
 - classification: capitol
-  address: 401-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0152
+  address: 415 State Capitol; Atlanta, GA 30334
+  voice: 404-656-5024
 - classification: district
   address: P.O. Box 1206; Marietta, GA 30061
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4937&Session=27
 - url: https://www.legis.ga.gov/members/house/4937?session=1029
+- url: https://www.legis.ga.gov/members/house/4937?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4937&Session=27
@@ -29,6 +32,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4937?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4937?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Marietta
   city: Marietta
@@ -37,5 +44,6 @@ extras:
   occupation: Business Owner, Author, Speaker, Radio Host
   press: https://house-press.com/representative/Ginny-Ehrhart
   spouse: Earl
-  staff: Shakirah Nash - Administrative Assistant
-  staff email: shakirah.nash@house.ga.gov
+  staff: Deborah Baselj - Administrative Assistant
+  staff email: deborah.baselj@house.ga.gov
+  title: Majority Caucus Secretary/Treasurer

@@ -1,0 +1,29 @@
+id: ocd-person/dc99efc3-076b-4d00-b4b0-66a0507a4057
+name: Gabe Okoye
+given_name: Gabe
+family_name: Okoye
+email: gabe.okoye@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/okoye-gabe-5041.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '102'
+links:
+- url: https://www.legis.ga.gov/members/house/5041?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5041?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Lawrenceville
+  city: Lawrenceville
+  georgia_id: 5041
+  birthday: November 2
+  occupation: Licensed Civil Engineer
+  spouse: Agnes

@@ -13,10 +13,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '134'
-- start_date: 2013-01-01
+- end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '138'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '151'
 offices:
 - classification: capitol
   address: 401-G State Capitol; Atlanta, GA 30334
@@ -25,10 +29,13 @@ offices:
   address: PO Box 824; Americus, GA 31709
   voice: 229-924-7823
   fax: 229-924-7893
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
+- url: https://www.legis.ga.gov/members/house/81?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000083
@@ -44,6 +51,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/81?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/81?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Americus
   city: Americus
@@ -54,4 +65,3 @@ extras:
   spouse: Gaynor
   staff: Ronny Pouliot - Administrative Assistant
   staff email: ronald.pouliot@house.ga.gov
-  title: Chairman, Small Business Development

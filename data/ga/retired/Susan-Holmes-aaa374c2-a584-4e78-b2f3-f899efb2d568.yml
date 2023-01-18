@@ -1,0 +1,40 @@
+id: ocd-person/aaa374c2-a584-4e78-b2f3-f899efb2d568
+name: Susan Holmes
+given_name: Susan
+family_name: Holmes
+gender: Female
+email: susan.holmes@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/holmes-susan-780.jpg
+party:
+- name: Republican
+roles:
+- end_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '129'
+links:
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=780&Session=27
+- url: https://www.legis.ga.gov/members/house/780?session=1029
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000132
+- scheme: legacy_openstates
+  identifier: GAL000306
+sources:
+- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=780&Session=27
+- url: https://www.legis.ga.gov/members/house/780?session=1029
+- url: https://www.legis.ga.gov/members/house/780?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/780?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+extras:
+  residence: Monticello
+  city: Monticello
+  georgia_id: 780
+  birthday: October 8
+  occupation: Retired
+  press: https://house-press.com/representative/Susan-Holmes
+  spouse: Paul
+  staff: Vanessa Turner - Administrative Assistant
+  staff email: vanessa.turner@house.ga.gov

@@ -1,0 +1,29 @@
+id: ocd-person/08ee45fd-d3f4-4129-9e7c-27cf52533ed2
+name: Reynaldo "Rey" Martinez
+given_name: Reynaldo
+family_name: Martinez
+email: reynaldo.martinez@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/martinez-reynaldo--rey--5045.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '111'
+links:
+- url: https://www.legis.ga.gov/members/house/5045?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5045?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Loganville
+  city: Loganville
+  georgia_id: 5045
+  birthday: June 12
+  occupation: Military Retired
+  spouse: AnaMaria
