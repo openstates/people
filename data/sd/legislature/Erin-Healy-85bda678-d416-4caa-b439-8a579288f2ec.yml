@@ -8,9 +8,14 @@ image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/healy, erin 
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '14'
+- start_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '10'
 offices:
 - classification: district
   address: 1509 S. Frederick Dr.; Sioux Falls, SD 57105

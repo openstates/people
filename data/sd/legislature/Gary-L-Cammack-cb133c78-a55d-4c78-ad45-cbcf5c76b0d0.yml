@@ -14,12 +14,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '29'
 - start_date: 2015-01-13
+  end_date: '2023-01-10'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '29'
-offices:
-- classification: district
-  address: PO Box 100; Union Center, SD 57787
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '29'  
 links:
 - url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=1037&Session=2016
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1498&Session=2018s
