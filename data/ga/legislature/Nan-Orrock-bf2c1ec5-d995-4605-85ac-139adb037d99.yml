@@ -20,10 +20,13 @@ offices:
   address: 1070 Delaware Avenue SE; Atlanta, GA 30316
   voice: 404-524-5999
   fax: 404-622-0486
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=33&Session=27
 - url: https://www.legis.ga.gov/members/senate/33?session=1029
+- url: https://www.legis.ga.gov/members/senate/33?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000038
@@ -35,6 +38,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/33?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/33?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Atlanta
   city: Atlanta
@@ -42,6 +49,5 @@ extras:
   birthday: November 8
   occupation: Non-Profit Director
   press: 'https://senatepress.net/category/senate-press/nan-orrock '
-  staff: Giselle Simental
-  staff email: giselle.simental@senate.ga.gov
-  title: Democratic Caucus Secretary
+  staff: Phyllis Richardson
+  staff email: phyllis.richardson@senate.ga.gov

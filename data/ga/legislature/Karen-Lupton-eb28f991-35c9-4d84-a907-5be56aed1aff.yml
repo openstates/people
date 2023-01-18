@@ -1,0 +1,29 @@
+id: ocd-person/eb28f991-35c9-4d84-a907-5be56aed1aff
+name: Karen Lupton
+given_name: Karen
+family_name: Lupton
+email: karen.lupton@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/lupton-karen-5035.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '83'
+links:
+- url: https://www.legis.ga.gov/members/house/5035?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5035?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Chamblee
+  city: Chamblee
+  georgia_id: 5035
+  birthday: October 28
+  occupation: Public Servant
+  spouse: Jonathan

@@ -1,0 +1,29 @@
+id: ocd-person/3a323603-753e-4380-993c-9bb2a7fc55f3
+name: Derrick McCollum
+given_name: Derrick
+family_name: McCollum
+email: derrick.mccollum@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/mccollum-derrick-5022.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '30'
+links:
+- url: https://www.legis.ga.gov/members/house/5022?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5022?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Gainesville
+  city: Gainesville
+  georgia_id: 5022
+  birthday: April 22
+  occupation: Entrepreneur/Retired Firefighter
+  spouse: Gina

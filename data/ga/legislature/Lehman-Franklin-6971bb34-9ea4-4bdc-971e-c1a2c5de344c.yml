@@ -1,0 +1,29 @@
+id: ocd-person/6971bb34-9ea4-4bdc-971e-c1a2c5de344c
+name: Lehman Franklin
+given_name: Lehman
+family_name: Franklin
+email: lehman.franklin@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/franklin-lehman-5053.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '160'
+links:
+- url: https://www.legis.ga.gov/members/house/5053?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5053?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Statesboro
+  city: Statesboro
+  georgia_id: 5053
+  birthday: January 31
+  occupation: Automobile Industry
+  spouse: Lorie

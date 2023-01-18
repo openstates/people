@@ -1,0 +1,29 @@
+id: ocd-person/e6dcaefd-8ecd-4f08-990f-e4443ae53ee8
+name: Jason Esteves
+given_name: Jason
+family_name: Esteves
+email: jason.esteves@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/esteves-jason-5014.jpg
+party:
+- name: Democratic
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '6'
+offices:
+- classification: district
+  address: 2275 Marietta Blvd NW; Suite 270-180; Atlanta, GA 30318
+links:
+- url: https://www.legis.ga.gov/members/senate/5014?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5014?session=1031&chamber=2
+  note: API member detail (requires authorization token)
+extras:
+  residence: Atlanta
+  city: Atlanta
+  georgia_id: 5014

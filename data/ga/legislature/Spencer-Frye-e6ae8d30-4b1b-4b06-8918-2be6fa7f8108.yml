@@ -8,9 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/frye-spencer
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '118'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '122'
 offices:
 - classification: capitol
   address: 604-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
