@@ -1,20 +1,24 @@
-id: ocd-person/6aa728bb-3584-48fb-b05b-4b507c3ec4ea
+id: ocd-person/f02f17f5-e795-4950-a181-4dddfbe33dab
 name: Dean Proctor
 given_name: Dean
 family_name: Proctor
+gender: Male
 email: Dean.Proctor@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/424/Low
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2020-08-15
+  end_date: '2023-01-11'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '42'
+- start_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '45'
-offices:
-- classification: capitol
-  address: 16 West Jones Street, Rm. 2108; Raleigh, NC 27601
-  voice: 919-733-5876
 links:
+- url: https://www.ncleg.gov/Members/Biography/S/424
 - url: https://www.ncleg.gov/Members/IntroducedBills/S/424
 - url: https://www.ncleg.gov/Members/Votes/S/424
 - url: https://www.ncleg.gov/Members/Committees/S/424
@@ -22,7 +26,7 @@ sources:
 - url: https://www.ncleg.gov/Members/Biography/S/424
 - url: https://www.ncleg.gov/Members/MemberTable/S
 extras:
-  terms in senate: 2+ (0 in House)
-  represented counties: Caldwell, Catawba
+  terms in senate: 1+ (0 in House)
+  represented counties: Alexander, Catawba
   legislative assistant: Linda Wente
   legislative assistant email: Linda.Wente@ncleg.gov
