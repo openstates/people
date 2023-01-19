@@ -4,24 +4,28 @@ given_name: Tony
 family_name: Bisignano
 gender: Male
 email: tony.bisignano@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=906
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=906
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '17'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '15'
 offices:
 - classification: capitol
   voice: 515-281-3371
-- classification: district
-  address: 2618 E Leach Ave, Des Moines, IA 50320
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=906
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=906
 - url: http://www.senate.iowa.gov/senator/bisignano/
 - url: http://https://mailchi.mp/legis/bisignano
+- url: http://http://www.senate.iowa.gov/senator/bisignano/
+- url: http://https://www.senate.iowa.gov/democrats/subscribe/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000516
@@ -29,9 +33,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=906
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=906
 - url: https://www.legis.iowa.gov/legislators/senate
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=906
 extras:
-  home email: biz.tony@gmail.com
-  home address: 2618 E Leach Ave, Des Moines, IA 50320
-  cell phone: 515.371.5990
-  capitol phone: 515.281.3371
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
   occupation: Retired

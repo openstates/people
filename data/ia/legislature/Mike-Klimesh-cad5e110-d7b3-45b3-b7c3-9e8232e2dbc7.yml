@@ -4,29 +4,31 @@ given_name: Mike
 family_name: Klimesh
 gender: Male
 email: mike.klimesh@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=30547
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=30547
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '28'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '32'
 offices:
-- classification: district
-  address: PO Box 111, Spillville, IA 52168
-  name: 'District Office #1'
 - classification: capitol
   voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30547
 - url: http://www.iowasenaterepublicans.com/senators/mike-klimesh/
 - url: http://www.iowasenaterepublicans.com/senators/mike-klimesh/
+- url: http://http://www.iowasenaterepublicans.com/senators/mike-klimesh/
+- url: http://http://www.iowasenaterepublicans.com/senators/mike-klimesh/
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30547
 - url: https://www.legis.iowa.gov/legislators/senate
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30547
 extras:
-  home email: mike@graphicsinc.biz
-  home address: PO Box 111, Spillville, IA 52168
-  cell phone: 563.380.4224
-  capitol phone: 515.281.3371
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
   occupation: Management/Small Business Owner

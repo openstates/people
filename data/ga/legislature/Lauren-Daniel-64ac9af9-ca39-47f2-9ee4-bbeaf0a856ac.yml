@@ -1,0 +1,26 @@
+id: ocd-person/64ac9af9-ca39-47f2-9ee4-bbeaf0a856ac
+name: Lauren Daniel
+given_name: Lauren
+family_name: Daniel
+email: lauren.daniel@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/daniel-lauren-5047.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '117'
+links:
+- url: https://www.legis.ga.gov/members/house/5047?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5047?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: null
+  city: ''
+  georgia_id: 5047

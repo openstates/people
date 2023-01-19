@@ -1,0 +1,28 @@
+id: ocd-person/2a68d594-e7d5-49cd-b615-6efb872430c3
+name: Imani Barnes
+given_name: Imani
+family_name: Barnes
+email: imani.barnes@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/barnes-imani-5037.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '86'
+links:
+- url: https://www.legis.ga.gov/members/house/5037?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5037?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Tucker
+  city: Tucker
+  georgia_id: 5037
+  birthday: February 4
+  occupation: Biomedical Research Scientist
