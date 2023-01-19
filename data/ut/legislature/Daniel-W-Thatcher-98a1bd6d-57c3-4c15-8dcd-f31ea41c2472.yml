@@ -8,18 +8,20 @@ image: https://le.utah.gov/images/legislator/THATCDW.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '12'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '11'
 offices:
 - classification: district
   address: 6352 W CITY VISTAS WAY, WEST VALLEY CITY, UT, 84128
-  voice: 801-759-4746
 links:
-- url: https://senate.utah.gov/daniel-thatcher
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=THATCDW
   note: legislation
-- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist12.pdf
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist11.pdf
   note: district demographics
 - url: https://le.utah.gov/senate/CofI/COFITHATCDW.pdf
   note: conflict of interest 0
@@ -36,7 +38,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000183
 sources:
-- url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/THATCDW/
 extras:

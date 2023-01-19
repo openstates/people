@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/MOSSJ.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '2'
-offices:
-- classification: district
-  address: 1668 N ASPEN CIR, SARATOGA SPRINGS, UT, 84045
-  voice: 385-250-6738
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '51'
 links:
 - url: http://house.utah.gov/rep/MOSSJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MOSSJ
@@ -35,6 +36,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=MOSSJ
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist51.pdf
+  note: district demographics
 other_names:
 - name: Moss, Jefferson
 - name: Moss, J.
