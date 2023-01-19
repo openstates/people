@@ -3,20 +3,19 @@ name: Liz Bennett
 given_name: Liz
 family_name: Bennett
 gender: Female
-email: Liz.Bennett@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=14806
+email: liz.bennett@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=34000
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '65'
-offices:
-- classification: capitol
-  voice: 515-281-3221
-- classification: district
-  address: PO Box 665, Cedar Rapids, IA 52406
-  name: 'District Office #1'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '39'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14806
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14806
@@ -28,6 +27,8 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14806
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14806
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=34000
+- url: https://www.legis.iowa.gov/legislators/senate
 extras:
   home address: PO Box 665, Cedar Rapids, IA 52406
   capitol phone: 515.281.3221

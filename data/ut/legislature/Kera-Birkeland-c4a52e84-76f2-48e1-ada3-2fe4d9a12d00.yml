@@ -9,13 +9,14 @@ party:
 - name: Republican
 roles:
 - start_date: 2020-04-16
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '53'
-offices:
-- classification: district
-  address: P.O. BOX 497, MORGAN, UT, 84050
-  voice: 385-266-2677
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '4'
 links:
 - url: http://house.utah.gov/rep/BIRKEK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BIRKEK

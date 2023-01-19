@@ -9,13 +9,14 @@ party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '41'
-offices:
-- classification: district
-  address: 350 North State, Suite 350, Salt Lake City, UT, 84114
-  voice: 385-275-5682
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '47'
 links:
 - url: http://house.utah.gov/rep/STRONMA
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=STRONMA
@@ -30,6 +31,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=STRONMA
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist47.pdf
+  note: district demographics
 other_names:
 - name: Strong, M.A.
 - name: Strong, Mark A.

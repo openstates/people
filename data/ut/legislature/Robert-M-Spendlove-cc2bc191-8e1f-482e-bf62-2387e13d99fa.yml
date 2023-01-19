@@ -8,18 +8,20 @@ image: https://le.utah.gov/images/legislator/SPENDRM.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '49'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '42'
 offices:
 - classification: district
   address: 2492 E BARCELONA DR, SANDY, UT, 84093
-  voice: 801-560-5394
 links:
-- url: http://house.utah.gov/rep/SPENDRM
-- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SPENDRM
+- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=SPENDRM
   note: legislation
-- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist49.pdf
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist42.pdf
   note: district demographics
 - url: https://le.utah.gov/house2/CofI/COFISPENDRM1.pdf
   note: conflict of interest 0
@@ -37,18 +39,7 @@ links:
   note: finance report
 - url: http://house.utah.gov/rep/SPENDRM/
   note: homepage
-- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=SPENDRM
-  note: legislation
-other_names:
-- name: Spendlove, R.
-- name: Spendlove, Robert M.
-other_identifiers:
-- scheme: legacy_openstates
-  identifier: UTL000147
-- scheme: legacy_openstates
-  identifier: UTL000258
 sources:
-- url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/SPENDRM/
 extras:

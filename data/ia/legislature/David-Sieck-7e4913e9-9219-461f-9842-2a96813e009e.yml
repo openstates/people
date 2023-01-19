@@ -3,24 +3,28 @@ name: David Sieck
 given_name: David
 family_name: Sieck
 gender: Male
-email: David.Sieck@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=15920
+email: david.sieck@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=15920
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '23'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '16'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 1710 Timber Ln, Glenwood, IA 51534
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=15920
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=15920
 - url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=15920&ga=89
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=15920&ga=90
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000522
@@ -28,6 +32,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=15920
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=15920
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=15920
 extras:
-  home address: 1710 Timber Ln, Glenwood, IA 51534
-  capitol phone: 515.281.3221
+  home email: davidasieck@gmail.com
+  occupation: Farmer/Real Estate Salesperson

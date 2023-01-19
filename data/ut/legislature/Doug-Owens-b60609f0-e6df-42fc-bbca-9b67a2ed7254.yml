@@ -9,13 +9,14 @@ party:
 - name: Democratic
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '36'
-offices:
-- classification: district
-  address: PO Box 91072, Millcreek, UT, 84109
-  voice: 385-499-3761
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '33'
 links:
 - url: http://house.utah.gov/rep/OWENSDO
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=OWENSDO
@@ -28,6 +29,8 @@ links:
   note: legislation
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415426
   note: finance report
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist33.pdf
+  note: district demographics
 other_names:
 - name: Owens, Doug
 - name: Owens, D.

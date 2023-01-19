@@ -4,7 +4,7 @@ given_name: Todd
 family_name: Taylor
 gender: Male
 email: todd.taylor@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=54
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=54
 party:
 - name: Democratic
 roles:
@@ -12,9 +12,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '70'
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '35'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '40'
 offices:
 - classification: capitol
   voice: 515-281-3371
@@ -25,6 +30,7 @@ offices:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=54
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=54
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=54
 - url: http://www.senate.iowa.gov/senator/todd-taylor/
 - url: http://https://mailchi.mp/legis/ttaylor
 other_identifiers:
@@ -35,6 +41,7 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=54
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=54
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=54
 - url: https://www.legis.iowa.gov/legislators/senate
 extras:
   home phone: 319.396.8587
