@@ -4,29 +4,31 @@ given_name: Claire
 family_name: Celsi
 gender: Female
 email: claire.celsi@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27000
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27000
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-02'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '21'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '16'
 offices:
 - classification: capitol
   voice: 515-281-3371
-- classification: district
-  address: '4400 EP True Pkwy #52, West Des Moines, IA 50265'
-  voice: 515-462-0487
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27000
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27000
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27000
 - url: http://www.senate.iowa.gov/senator/celsi/
 - url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=27000&ga=89
 - url: http://www.claire4iowa.com
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27000
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27000
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27000
 - url: https://www.legis.iowa.gov/legislators/senate
 extras:
   home phone: 515.462.0487

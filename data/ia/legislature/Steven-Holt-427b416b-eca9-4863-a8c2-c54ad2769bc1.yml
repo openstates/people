@@ -3,24 +3,24 @@ name: Steven Holt
 given_name: Steven
 family_name: Holt
 gender: Male
-email: Steven.Holt@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=14802
+email: steven.holt@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=14802
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '18'
-offices:
-- classification: capitol
-  voice: 515-281-3221
-- classification: district
-  address: 1430 3rd Ave S, Denison, IA 51442
-  name: 'District Office #1'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '12'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14802
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14802
 - url: http://https://us12.list-manage.com/subscribe?u=f955f4c16837dca985de73bb8&id=02599e57e6
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000512
@@ -30,9 +30,6 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=14802
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14802
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=14802
 extras:
-  home email: holtforhouse@gmail.com
-  home address: 1430 3rd Ave S, Denison, IA 51442
-  cell phone: 712.269.4042
-  capitol phone: 515.281.3221
-  occupation: Retired USMC
+  occupation: Retired
