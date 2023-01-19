@@ -8,19 +8,21 @@ image: https://le.utah.gov/images/legislator/STENQJ.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2019-01-01'
+- end_date: '2022-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '51'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '46'
 offices:
 - classification: district
   address: '129 E 13800 S, Ste B2 #351, DRAPER, UT, 84020'
   voice: 385-272-9437
 links:
-- url: http://house.utah.gov/rep/STENQJ
-- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=STENQJ
+- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=STENQJ
   note: legislation
-- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist51.pdf
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist46.pdf
   note: district demographics
 - url: https://le.utah.gov/house2/CofI/COFISTENQJ2.pdf
   note: conflict of interest 0
@@ -32,13 +34,10 @@ links:
   note: finance report
 - url: http://house.utah.gov/rep/STENQJ/
   note: homepage
-- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=STENQJ
-  note: legislation
 other_names:
 - name: Stenquist, J.
 - name: Stenquist, Jeffrey D.
 sources:
-- url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/STENQJ/
 extras:
