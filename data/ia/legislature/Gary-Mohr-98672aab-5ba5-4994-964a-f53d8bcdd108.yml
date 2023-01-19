@@ -3,24 +3,27 @@ name: Gary M. Mohr
 given_name: Gary
 family_name: Mohr
 gender: Male
-email: Gary.Mohr@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18038
+email: gary.mohr@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18038
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '94'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '93'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 4755 School House Rd, Bettendorf, IA 52722
-  voice: 563-332-8377
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18038
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18038
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://facebook.us4.list-manage.com/subscribe?u=4f656da8e0485e1a4a8032e0f&id=f0dd08c637
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000527
@@ -28,8 +31,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18038
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18038
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18038
 extras:
-  home phone: 563.332.8377
-  home address: 4755 School House Rd, Bettendorf, IA 52722
-  capitol phone: 515.281.3221
-  occupation: Retired Community College Administrator
+  home email: garymohr1951@gmail.com
+  occupation: Retired Higher Education Administrator

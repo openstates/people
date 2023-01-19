@@ -1,0 +1,26 @@
+id: ocd-person/9fe70ed7-31a0-4732-92b1-54d2a79a4654
+name: Tremaine Teddy Reese
+given_name: Tremaine
+family_name: Reese
+email: tremaine.reese@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/reese-tremaine-teddy-5050.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '140'
+links:
+- url: https://www.legis.ga.gov/members/house/5050?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5050?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: null
+  city: ''
+  georgia_id: 5050

@@ -8,13 +8,13 @@ image: https://le.utah.gov/images/legislator/ROMERAY.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '26'
-offices:
-- classification: district
-  address: 350 North State, Suite 350, Salt Lake City, UT, 84114
-  voice: 801-722-4972
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '25'
 links:
 - url: http://house.utah.gov/rep/ROMERAY
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ROMERAY

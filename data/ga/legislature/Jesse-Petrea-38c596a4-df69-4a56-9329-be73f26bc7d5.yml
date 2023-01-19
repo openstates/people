@@ -17,11 +17,13 @@ offices:
   voice: 404-656-5115
 - classification: district
   address: 108 Loyer Lane; Savannah, GA 31411
-  voice: 912-629-2468
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=862&Session=27
 - url: https://www.legis.ga.gov/members/house/862?session=1029
+- url: https://www.legis.ga.gov/members/house/862?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000401
@@ -33,6 +35,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/862?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/862?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Savannah
   city: Savannah
@@ -41,6 +47,5 @@ extras:
   occupation: Business Owner/Healthcare Executive
   press: https://house-press.com/representative/Jesse-Petrea
   spouse: Brianna
-  staff: Allegra Johnson - Administrative Assistant
-  staff email: allegra.johnson@house.ga.gov
-  title: Chairman, Human Relations & Aging
+  staff: Shunta Holloman - Administrative Assistant
+  staff email: shunta.holloman@house.ga.gov

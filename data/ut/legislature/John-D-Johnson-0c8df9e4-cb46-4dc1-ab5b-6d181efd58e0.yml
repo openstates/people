@@ -9,13 +9,17 @@ party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '19'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '3'
 offices:
 - classification: district
-  address: 870 e 3550 n, North Ogden, UT, 84414
-  voice: 801-391-2521
+  address: '#297 2637 N Washington Blvd, North Ogden, UT, 84414'
 links:
 - url: https://senate.utah.gov/john-johnson
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=JOHNSJD
@@ -26,6 +30,8 @@ links:
   note: homepage
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415473
   note: finance report
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist03.pdf
+  note: district demographics
 other_names:
 - name: Johnson, John D.
 - name: Johnson, J.
@@ -41,5 +47,4 @@ extras:
   - Morgan
   - Summit
   - Weber
-  cell phone: '8013912521'
-  home phone: '8013912521'
+  cell phone: 385-272-7428

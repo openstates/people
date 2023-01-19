@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/MALOYC.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '6'
-offices:
-- classification: district
-  address: 283 E 500 N, LEHI, UT, 84043
-  voice: 801-477-0019
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '52'
 links:
 - url: http://house.utah.gov/rep/MALOYC
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MALOYC
