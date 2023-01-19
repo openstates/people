@@ -13,13 +13,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '61'
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '15'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '23'
 offices:
 - classification: district
-  address: 1374 W 1940 N, PROVO, UT, 84604
-  voice: 801-319-0170
+  address: 1374 W 1940 N, Provo, UT, 84604
   fax: 801-356-2442
 links:
 - url: https://senate.utah.gov/keith-grover
@@ -43,6 +47,8 @@ links:
   note: finance report
 - url: https://senate.utah.gov/sen/GROVEK/
   note: homepage
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist23.pdf
+  note: district demographics
 other_names:
 - name: Grover, Keith
 - name: Grover, K.
