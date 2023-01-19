@@ -12,6 +12,12 @@ jobs:
     steps:
     # Python & dependency installation
     - uses: actions/checkout@v3
+    - name: Yaml file linting
+      run: |
+        docker run --rm \
+        -v $(pwd):/code \
+        registry.gitlab.com/pipeline-components/yamllint:latest \
+        -c .yamllint.yml -s .
     - name: setup Python 3.9
       uses: actions/setup-python@v4
       with:
