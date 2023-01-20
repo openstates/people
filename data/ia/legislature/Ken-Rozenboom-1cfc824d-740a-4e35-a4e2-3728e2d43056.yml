@@ -4,24 +4,28 @@ given_name: Ken
 family_name: Rozenboom
 gender: Male
 email: ken.rozenboom@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=10731
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=10731
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '40'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '19'
 offices:
 - classification: capitol
   voice: 515-281-3371
-- classification: district
-  address: 2200 Oxford Ave, Oskaloosa, IA 52577
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10731
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10731
 - url: http://www.iowasenaterepublicans.com/senators/ken-rozenboom/
 - url: http://www.iowasenaterepublicans.com/senators/ken-rozenboom/
+- url: http://http://www.iowasenaterepublicans.com/senators/ken-rozenboom/
+- url: http://http://www.iowasenaterepublicans.com/senators/ken-rozenboom/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000210
@@ -29,8 +33,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10731
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10731
 - url: https://www.legis.iowa.gov/legislators/senate
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=10731
 extras:
-  home address: 2200 Oxford Ave, Oskaloosa, IA 52577
-  cell phone: 641.295.6551
-  capitol phone: 515.281.3371
-  occupation: Farming/Ag business
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
+  occupation: Farming/Ag Business
