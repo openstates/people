@@ -19,10 +19,13 @@ offices:
 - classification: district
   address: P.O. Box 311225; Atlanta, GA 30331
   voice: 404-625-8855
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=372&Session=27
 - url: https://www.legis.ga.gov/members/senate/372?session=1029
+- url: https://www.legis.ga.gov/members/senate/372?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000028
@@ -34,6 +37,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/372?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/372?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Atlanta
   city: Atlanta

@@ -1,0 +1,29 @@
+id: ocd-person/fc1a5e1f-6ce4-47ab-987b-095afa166359
+name: Kimberly New
+given_name: Kimberly
+family_name: New
+email: kimberly.new@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/new-kimberly-5030.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '64'
+links:
+- url: https://www.legis.ga.gov/members/house/5030?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5030?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Villa Rica
+  city: Villa Rica
+  georgia_id: 5030
+  birthday: November 12
+  occupation: Business Owner
+  spouse: Billy

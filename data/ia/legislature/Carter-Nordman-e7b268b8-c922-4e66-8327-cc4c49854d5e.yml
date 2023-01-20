@@ -4,19 +4,26 @@ given_name: Carter
 family_name: Nordman
 gender: Male
 email: Carter.Nordman@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=30647
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=30647
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '19'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '47'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30647
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30647
 other_names:
 - name: Carter Nordman
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30647
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30647
 - url: https://www.legis.iowa.gov/legislators/house
 extras:
   home email: carter@carterforiowa.com

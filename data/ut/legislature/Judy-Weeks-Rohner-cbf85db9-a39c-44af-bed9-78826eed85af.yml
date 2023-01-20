@@ -6,23 +6,25 @@ image: https://le.utah.gov/images/legislator/ROHNEJ.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '33'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '30'
 offices:
 - classification: district
   address: 3762 S 3600 W, West Valley City, UT, 84119
 links:
-- url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ROHNEJ
-  note: legislation
-- url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist33.pdf
-  note: district demographics
-- url: http://house.utah.gov/rep/ROHNEJ/
-  note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=ROHNEJ
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist30.pdf
+  note: district demographics
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415738
   note: finance report
+- url: http://house.utah.gov/rep/ROHNEJ/
+  note: homepage
 sources:
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ROHNEJ/

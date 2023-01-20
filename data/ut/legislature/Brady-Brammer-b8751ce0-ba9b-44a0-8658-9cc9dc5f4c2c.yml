@@ -9,13 +9,17 @@ party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '27'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '54'
 offices:
 - classification: district
-  address: 1955 W GROVE PARKWAY, SUITE 250, PLEASANT GROVE, UT, 84062
-  voice: 801-709-1790
+  address: 4067 W VIEW POINTE DR, Highland, UT, 84003
 links:
 - url: http://house.utah.gov/rep/BRAMMB
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BRAMMB
@@ -30,6 +34,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=BRAMMB
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist54.pdf
+  note: district demographics
 other_names:
 - name: Brammer, Brady
 - name: Brammer, B.
@@ -44,4 +50,4 @@ extras:
     Brigham Young University
   counties represented:
   - Utah
-  cell phone: 801-709-1790
+  cell phone: 801-839-4653

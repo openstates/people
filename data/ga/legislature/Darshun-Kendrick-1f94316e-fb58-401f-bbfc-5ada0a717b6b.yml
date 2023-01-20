@@ -8,19 +8,21 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/kendrick-dar
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '93'
-offices:
-- classification: capitol
-  address: 404-F Coverdell Legislative Office Building; Atlanta, GA 30334
-  voice: 404-656-0109
-- classification: district
-  address: PO Box 630; Lithonia, GA 30058
-  name: 'District Office #1'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '95'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=770&Session=27
 - url: https://www.legis.ga.gov/members/house/770?session=1029
+- url: https://www.legis.ga.gov/members/house/770?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000149
@@ -34,6 +36,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/770?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/770?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Lithonia
   city: Lithonia

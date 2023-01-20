@@ -8,9 +8,14 @@ image: https://le.utah.gov/images/legislator/KINGBS.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '28'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '23'
 offices:
 - classification: district
   address: '875 S DONNER WAY #1504, SALT LAKE CITY, UT, 84108'
@@ -40,6 +45,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=KINGBS
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist23.pdf
+  note: district demographics
 other_names:
 - name: King, Brian S.
 other_identifiers:
@@ -60,4 +67,3 @@ extras:
   - Summit
   cell phone: 801-560-0769
   home phone: 801-583-5464
-  title: Minority Leader
