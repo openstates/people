@@ -4,25 +4,32 @@ given_name: Ann
 family_name: Meyer
 gender: Female
 email: Ann.Meyer@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27019
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27019
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '9'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '8'
 offices:
-- classification: district
-  address: 1948 Stadium Dr, Fort Dodge, IA 50501
-  name: 'District Office #1'
+- classification: capitol
+  voice: 515-281-3221
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27019
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27019
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=27019&ga=90
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27019
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27019
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27019
 - url: https://www.legis.iowa.gov/legislators/house
 extras:
   home address: 1948 Stadium Dr, Fort Dodge, IA 50501
   cell phone: 515.570.6610
+  home email: annmeyer@frontiernet.net
   occupation: Registered Nurse

@@ -3,27 +3,30 @@ name: Thomas D. Gerhold
 given_name: Thomas
 family_name: Gerhold
 gender: Male
-email: Thomas.Gerhold@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27033
+email: thomas.gerhold@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27033
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '75'
-offices:
-- classification: district
-  address: 3326 71st St, Atkins, IA 52206
-  name: 'District Office #1'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '84'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27033
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27033
 - url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=27033&ga=89
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=27033&ga=90
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27033
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27033
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27033
 extras:
-  home address: 3326  71st St, Atkins, IA 52206
-  cell phone: 319.361.2950
+  home email: tdgerhold@netins.net
   occupation: Research Associate

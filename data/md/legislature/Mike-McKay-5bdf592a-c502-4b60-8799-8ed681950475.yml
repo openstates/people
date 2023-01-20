@@ -8,14 +8,13 @@ image: http://mgaleg.maryland.gov/2022RS/images/mckay01.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: 1C
-offices:
-- classification: capitol
-  address: 322 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401
-  voice: 410-841-3321
-  fax: 410-841-3460
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: '1'
 links:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=mckay01&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/mckay01

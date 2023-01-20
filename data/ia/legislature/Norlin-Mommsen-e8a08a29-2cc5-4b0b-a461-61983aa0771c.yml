@@ -3,28 +3,35 @@ name: Norlin Mommsen
 given_name: Norlin
 family_name: Mommsen
 gender: Male
-email: Norlin.Mommsen@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=14810
+email: norlin.mommsen@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=14810
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '97'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '70'
 offices:
-- classification: district
-  address: 2308 15th St Ct, DeWitt, IA 52742
-  name: 'District Office #1'
 - classification: capitol
   voice: 515-281-3221
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14810
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=14810&ga=90
+other_names:
+- name: Norlin G. Mommsen
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/8b71a0ba-b73f-4ce9-bb88-3ff7bbdb8d1d
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=14810
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=14810
 extras:
   home email: norlinmommsen@yahoo.com
-  home address: 2308 15th St Ct, DeWitt, IA 52742
-  cell phone: 563.357.9826
-  capitol phone: 515.281.3221
   occupation: Farmer
