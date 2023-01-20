@@ -2,14 +2,18 @@ id: ocd-person/5d387655-8234-48d2-a1dd-dd2f4a83ca6f
 name: David Monson
 given_name: David
 family_name: Monson
-email: dmonson@nd.gov
-image: https://www.legis.nd.gov/files/styles/medium/public/person/photo/dmonson.jpg?itok=6CTrMTOx
+email: dmonson@ndlegis.gov
+image: https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dmonson2023.jpg?itok=k-ar-UCY
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '10'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
+  district: '19'
 offices:
 - classification: district
   address: P.O. Box 8, Osnabrock, ND 58269-0008
@@ -33,6 +37,9 @@ sources:
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-david-monson
 - url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
 - url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-david-monson
+- url: https://www.ndlegis.gov/biography/david-monson
+  note: member details page
+- url: https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=5
+  note: members list page
 extras:
-  bio info: []
-  Home phone: 701-496-3394
+  home: 701-496-3394
