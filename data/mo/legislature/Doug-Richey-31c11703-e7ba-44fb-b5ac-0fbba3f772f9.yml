@@ -8,23 +8,28 @@ image: https://house.mo.gov/MemberPhoto.aspx?id=2088
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '38'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '39'
+offices:
+- classification: capitol
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 207-B; Jefferson
+    City MO 65101
+  voice: 573-751-1468
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=38
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=038
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=039
 other_names:
 - name: Richey, Doug
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=38
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=038
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=039
 extras:
-  first_name: Doug
-  last_name: Richey
-offices:
-- address: MO House of Representatives; 201 West Capitol Avenue; Room 207-B; Jefferson
-    City MO 65101
-  voice: 573-751-2238
-  classification: capitol
+  hometown: Excelsior Springs

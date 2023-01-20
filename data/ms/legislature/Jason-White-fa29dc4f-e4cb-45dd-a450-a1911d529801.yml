@@ -10,24 +10,34 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '48'
+offices:
+- classification: capitol
+  address: Room 302 P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3304
+- classification: district
+  address: P.O. Box 246 West, Mississippi 39192
+  voice: 662-967-2015
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/white.xml
 - url: http://billstatus.ls.state.ms.us/members/house/White.xml
+- url: http://billstatus.ls.state.ms.us/members/house/white.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000217
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/white.xml
 - url: http://billstatus.ls.state.ms.us/members/house/White.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. White is a member of the MS BAR Assoc.(President), Attala County
-    BAR Assoc.(President), West Historical & Preservation Society, Board of Dir.,
-    Attala County Forestry Assoc., and Attala County Farmers Co-op.
-offices:
-- address: Room 201;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3359
-  classification: capitol
-- address: P.O. Box 246;West, MS 39192
-  voice: 662-967-2015
-  classification: district
-  name: 'District Office #1'
+  title: Speaker Pro Tempore
+  occupation: Attorney
+  education:
+  - Mississippi College School of Law
+  - Mississippi College
+  counties represented:
+  - Attala
+  - Carroll
+  - Holmes
+  - Leake
+  other phone: (662)289-8888

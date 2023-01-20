@@ -1,0 +1,29 @@
+id: ocd-person/7475f989-a4f9-4ac8-9188-26903a012d71
+name: Long Tran
+given_name: Long
+family_name: Tran
+email: long.tran@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/tran-long-5034.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '80'
+links:
+- url: https://www.legis.ga.gov/members/house/5034?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5034?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Dunwoody
+  city: Dunwoody
+  georgia_id: 5034
+  birthday: May 4
+  occupation: "Caf\xE9 Owner"
+  spouse: Susie

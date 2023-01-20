@@ -11,14 +11,19 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '50'
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '53'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '27'
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4795
   note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5112
 - url: https://leg.mt.gov/legislator-information/roster/individual/6847
+- url: https://leg.mt.gov/legislator-information/roster/individual/7547
 other_names:
 - name: Lenz, Dennis R.
 - name: Dennis R Lenz
@@ -36,7 +41,4 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5112
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6847
-offices:
-- address: PO BOX 20752;Billings, MT 59104
-  voice: 406-671-7052
-  classification: capitol
+- url: https://leg.mt.gov/legislator-information/roster/individual/7547

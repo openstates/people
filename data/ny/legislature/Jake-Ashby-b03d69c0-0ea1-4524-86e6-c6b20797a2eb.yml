@@ -7,18 +7,13 @@ image: https://assembly.state.ny.us/write/upload/member_files/107/headshot/107.j
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '107'
-offices:
-- classification: capitol
-  address: LOB 402; Albany, NY 12248
-  voice: 518-455-5777
-  fax: 518-455-5923
-- classification: district
-  address: 594 Columbia Turnpike; East Greenbush, NY 12061
-  voice: 518-272-6149
-  fax: 518-477-5404
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '43'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Jake-Ashby

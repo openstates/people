@@ -9,13 +9,14 @@ party:
 - name: Democratic
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '46'
-offices:
-- classification: district
-  address: 6682 S Candle Cove, Cottonwood Heights, UT, 84121
-  voice: 385-224-9197
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '41'
 links:
 - url: http://house.utah.gov/rep/BENNIGL
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BENNIGL

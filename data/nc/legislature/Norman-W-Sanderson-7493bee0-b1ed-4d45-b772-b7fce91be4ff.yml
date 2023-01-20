@@ -8,9 +8,14 @@ image: https://www.ncleg.gov/Members/MemberImage/S/375/Low
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '2'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '1'
 offices:
 - classification: capitol
   address: 300 N. Salisbury Street, Rm. 309; Raleigh, NC 27603

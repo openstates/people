@@ -4,13 +4,17 @@ given_name: Peter
 family_name: Fischer
 gender: Male
 email: rep.peter.fischer@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/43A.gif?v=112221
+image: https://www.house.mn.gov/hinfo/memberimgls93/44A.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 43A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 44A
 offices:
 - classification: capitol
   address: 551 State Office Building;St. Paul, MN 55155

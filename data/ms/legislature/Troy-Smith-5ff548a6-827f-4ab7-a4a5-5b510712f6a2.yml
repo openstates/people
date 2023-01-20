@@ -10,16 +10,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '84'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: 320 Smith Ridge Lane Enterprise, Mississippi 39330
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/smith.xml
+- url: http://billstatus.ls.state.ms.us/members/house/smith.xml
+  note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/smith.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Smith is affiliated with the MS Assoc. of Sup. Education
-    Committee, NRA, and NWTF.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 320 Smith Ridge Lane;Enterprise, MS 39330
-  classification: district
-  name: 'District Office #1'
+  education:
+  - Jones County Jr. College
+  - Quitman High school
+  counties represented:
+  - Clarke
+  - Jasper
+  - Newton
+  other phone: (601)527-7991

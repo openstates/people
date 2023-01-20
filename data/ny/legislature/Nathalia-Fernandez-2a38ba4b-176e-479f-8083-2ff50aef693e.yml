@@ -7,17 +7,13 @@ image: https://assembly.state.ny.us/write/upload/member_files/080/headshot/080.j
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '80'
-offices:
-- classification: capitol
-  address: LOB 540; Albany, NY 12248
-  voice: 518-455-5844
-- classification: district
-  address: 2018 Williamsbridge Road; Bronx, NY 10461
-  voice: 718-409-0109
-  fax: 718-409-0431
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '34'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Nathalia-Fernandez

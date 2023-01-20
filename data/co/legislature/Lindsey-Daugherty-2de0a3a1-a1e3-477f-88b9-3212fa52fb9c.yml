@@ -3,14 +3,19 @@ name: Lindsey Daugherty
 given_name: Lindsey
 family_name: Daugherty
 gender: Female
-email: lindsey.daugherty.house@state.co.us
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_daugherty%2C%20lindsey.jpg?itok=Evg3JFKY
+email: lindsey.daugherty.house@coleg.gov
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_daugherty%2C%20lindsey.jpg?itok=Pe9ZXBjb
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '29'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '24'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 307 Denver, CO 80203
@@ -24,4 +29,5 @@ sources:
 - url: http://leg.colorado.gov/legislators
 extras:
   counties represented:
+  - Adams
   - Jefferson
