@@ -8,13 +8,14 @@ image: https://www.oregonlegislature.gov/lively/PublishingImages/member_photo.jp
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '12'
-offices:
-- classification: capitol
-  address: 900 Court St NE, H-488, Salem, OR, 97301
-  voice: 503-986-1412
+- start_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '7'
 links:
 - url: https://www.oregonlegislature.gov/lively
 - url: https://www.oregonlegislature.gov/lively
@@ -31,3 +32,4 @@ other_identifiers:
 sources:
 - url: https://www.oregonlegislature.gov/lively
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

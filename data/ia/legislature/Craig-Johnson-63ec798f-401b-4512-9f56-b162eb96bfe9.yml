@@ -4,13 +4,18 @@ given_name: Craig
 family_name: Johnson
 gender: Male
 email: craig.johnson@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18075
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18075
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '32'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '67'
 offices:
 - classification: capitol
   voice: 515-281-3371
@@ -21,6 +26,7 @@ offices:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18075
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18075
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18075
 - url: http://www.iowasenaterepublicans.com/senators/craig-johnson/
 - url: http://www.iowasenaterepublicans.com/senators/craig-johnson/
 other_names:
@@ -31,6 +37,7 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18075
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18075
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18075
 - url: https://www.legis.iowa.gov/legislators/senate
 extras:
   home address: 413 - 13th Ave NE, Independence, IA 50644

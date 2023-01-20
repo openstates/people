@@ -8,18 +8,18 @@ image: https://le.utah.gov/images/legislator/SANDASD.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- end_date: '2019-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '1'
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '17'
-offices:
-- classification: district
-  address: 635 Hillcrest Circle, Tremonton, UT, 84337
-  voice: 435-279-7551
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '1'
 links:
 - url: https://senate.utah.gov/scott-sandall
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SANDASD

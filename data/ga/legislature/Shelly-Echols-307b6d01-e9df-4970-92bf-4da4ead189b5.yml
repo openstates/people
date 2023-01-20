@@ -1,0 +1,29 @@
+id: ocd-person/307b6d01-e9df-4970-92bf-4da4ead189b5
+name: Shelly Echols
+given_name: Shelly
+family_name: Echols
+email: shelly.echols@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/echols-shelly-5017.jpg
+party:
+- name: Republican
+roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '49'
+offices:
+- classification: district
+  address: 7132 Sloan Stephens Rd.; Alto, GA 30510
+links:
+- url: https://www.legis.ga.gov/members/senate/5017?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5017?session=1031&chamber=2
+  note: API member detail (requires authorization token)
+extras:
+  residence: Alto
+  city: Alto
+  georgia_id: 5017
