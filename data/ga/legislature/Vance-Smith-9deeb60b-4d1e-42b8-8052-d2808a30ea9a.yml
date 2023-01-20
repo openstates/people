@@ -2,24 +2,33 @@ id: ocd-person/9deeb60b-4d1e-42b8-8052-d2808a30ea9a
 name: Vance Smith
 given_name: Vance
 family_name: Smith
+gender: Male
 email: vance.smith@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-vance-215.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '133'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '138'
 offices:
 - classification: capitol
   address: 601-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0254
 - classification: district
   address: P.O. Box 171; Pine Mountain, GA 31822
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=215&Session=27
 - url: https://www.legis.ga.gov/members/house/215?session=1029
+- url: https://www.legis.ga.gov/members/house/215?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=215&Session=27
@@ -28,6 +37,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/215?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/215?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Pine Mountain
   city: Pine Mountain

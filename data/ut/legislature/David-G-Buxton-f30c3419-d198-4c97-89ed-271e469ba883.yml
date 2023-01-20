@@ -2,18 +2,23 @@ id: ocd-person/f30c3419-d198-4c97-89ed-271e469ba883
 name: David G. Buxton
 given_name: David
 family_name: Buxton
+gender: Male
 email: gbuxton@le.utah.gov
 image: https://le.utah.gov/images/legislator/BUXTODG.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '20'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '4'
 offices:
 - classification: district
-  address: 4162 S 2340 W, ROY, UT, 84067
-  voice: 801-707-7095
+  address: 4162 S 2340 W, Roy, UT, 84067
 links:
 - url: https://senate.utah.gov/david-buxton
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BUXTODG
@@ -26,6 +31,8 @@ links:
   note: finance report
 - url: https://senate.utah.gov/sen/BUXTODG/
   note: homepage
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist04.pdf
+  note: district demographics
 other_names:
 - name: Buxton, David G.
 - name: Buxton, D. G.

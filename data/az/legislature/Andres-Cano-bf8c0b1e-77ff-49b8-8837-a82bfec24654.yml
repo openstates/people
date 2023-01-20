@@ -2,17 +2,22 @@ id: ocd-person/bf8c0b1e-77ff-49b8-8837-a82bfec24654
 name: "Andr\xE9s Cano"
 given_name: Andres
 family_name: Cano
+gender: Male
 email: acano@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/CANO.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '3'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '20'
 offices:
 - classification: capitol
-  address: House of Representatives;1700 West Washington;Room 332;Phoenix, AZ 85007
+  address: House of Representatives;1700 West Washington;Room 320;Phoenix, AZ 85007
   voice: 602-926-3027
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1892
@@ -20,6 +25,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2032
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2032
+- url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2151
 other_names:
 - name: Andres Cano
 ids:
@@ -29,3 +35,5 @@ ids:
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
 - url: https://www.azleg.gov/memberroster/?body=H
+extras:
+  title: Minority Leader

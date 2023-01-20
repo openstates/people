@@ -2,18 +2,19 @@ id: ocd-person/c0275aeb-e2ff-44c7-b4ab-cae4bf495d84
 name: Dave Baker
 given_name: Dave
 family_name: Baker
+gender: Male
 email: rep.dave.baker@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/17B.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 17B
-offices:
-- classification: capitol
-  address: 387 State Office Building;St. Paul, MN 55155
-  voice: 651-296-6206
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 16B
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15429
 other_identifiers:

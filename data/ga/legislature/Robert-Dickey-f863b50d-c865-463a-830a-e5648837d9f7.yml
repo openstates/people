@@ -2,25 +2,27 @@ id: ocd-person/f863b50d-c865-463a-830a-e5648837d9f7
 name: Robert Dickey
 given_name: Robert
 family_name: Dickey
+gender: Male
 email: robert.dickey@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/dickey-robert-791.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '140'
-offices:
-- classification: capitol
-  address: 228-B State Capitol; Atlanta, GA 30334
-  voice: 404-656-5099
-- classification: district
-  address: PO Box 10; Musella, GA 31066
-  voice: 478-836-4362
-  name: 'District Office #1'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '145'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/members/house/791?session=1029
+- url: https://www.legis.ga.gov/members/house/791?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000096
@@ -38,6 +40,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/791?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/791?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Musella
   city: Musella
@@ -45,6 +51,3 @@ extras:
   occupation: Agribusiness/Peach Grower
   press: https://house-press.com/representative/Robert-Dickey
   spouse: Cynde
-  staff: a href="
-  staff email: ''
-  title: Chairman, Agriculture & Consumer Affairs

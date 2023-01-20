@@ -2,30 +2,36 @@ id: ocd-person/b001a55f-61fa-4e62-85fd-ac6c282f2711
 name: Angela Moore
 given_name: Angela
 family_name: Moore
+gender: Female
 email: angela.moore@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/moore-angela-5008.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '90'
-offices:
-- classification: capitol
-  address: 411-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0126
-- classification: district
-  address: 2724 Wesley Chapel Rd, Ste. 361731; Ste 361731; Decatur, GA 30034
-  voice: 678-824-5790
-  name: 'District Office #1'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '91'
 links:
 - url: https://www.legis.ga.gov/members/house/5008?session=1029
+- url: https://www.legis.ga.gov/members/house/5008?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/5008?session=1029
 - url: https://www.legis.ga.gov/members/house/5008?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5008?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5008?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Decatur
   city: Decatur

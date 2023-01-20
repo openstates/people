@@ -2,14 +2,20 @@ id: ocd-person/9c6428d6-af30-4a4f-bb9c-666d3d6d84c5
 name: Jacob Bossman
 given_name: Jacob
 family_name: Bossman
+gender: Male
 email: Jacob.Bossman@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=25497
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=25497
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '6'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '14'
 offices:
 - classification: district
   address: 2650 S Cedar St, Sioux City, IA 51106
@@ -17,12 +23,14 @@ offices:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=25497
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=25497
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=25497
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000555
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=25497
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=25497
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=25497
 - url: https://www.legis.iowa.gov/legislators/house
 extras:
   home address: 2650 S Cedar St, Sioux City, IA 51106

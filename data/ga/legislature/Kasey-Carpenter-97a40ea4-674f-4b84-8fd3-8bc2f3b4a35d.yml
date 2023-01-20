@@ -2,6 +2,7 @@ id: ocd-person/97a40ea4-674f-4b84-8fd3-8bc2f3b4a35d
 name: Kasey Carpenter
 given_name: Kasey
 family_name: Carpenter
+gender: Male
 email: kasey.carpenter@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/carpenter-kasey-4911.jpg
 party:
@@ -16,10 +17,13 @@ offices:
   voice: 404-657-1803
 - classification: district
   address: PO Box 1144; Dalton, GA 30722
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4911&Session=27
 - url: https://www.legis.ga.gov/members/house/4911?session=1029
+- url: https://www.legis.ga.gov/members/house/4911?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000478
@@ -31,6 +35,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4911?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4911?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Dalton
   city: Dalton
@@ -39,6 +47,5 @@ extras:
   occupation: Restaurant Owner
   press: https://house-press.com/representative/Kasey-Carpenter
   spouse: Julie
-  staff: a href="
-  staff email: ''
-  title: Chairman, Creative Arts & Entertainment
+  staff: Shivonna Parker - Administrative Assistant
+  staff email: shivonna.parker@house.ga.gov

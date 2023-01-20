@@ -2,6 +2,7 @@ id: ocd-person/60bb96c4-f20c-4918-b88b-d7857341e5f4
 name: Bo Hatchett
 given_name: Bo
 family_name: Hatchett
+gender: Male
 email: bo.hatchett@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/hatchett-bo-4984.jpg
 party:
@@ -16,19 +17,25 @@ offices:
   voice: 404-656-7454
 - classification: district
   address: P.O. Box 2706; Clarkesville, GA 30523
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/senate/4984?session=1029
+- url: https://www.legis.ga.gov/members/senate/4984?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/senate/4984?session=1029
 - url: https://www.legis.ga.gov/members/senate/4984?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4984?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4984?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Cornelia
   city: Cornelia
   georgia_id: 4984
   staff: Brenita Simmons
   staff email: brenita.simmons@senate.ga.gov
-  title: 'Governor''s Floor Leader '

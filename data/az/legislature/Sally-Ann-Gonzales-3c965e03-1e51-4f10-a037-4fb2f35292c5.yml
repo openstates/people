@@ -2,8 +2,9 @@ id: ocd-person/3c965e03-1e51-4f10-a037-4fb2f35292c5
 name: Sally Ann Gonzales
 given_name: Sally
 family_name: Gonzales
+gender: Female
 email: sgonzales@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/GONZALES.gif
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
@@ -11,9 +12,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '3'
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '3'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '20'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 314;Phoenix, AZ 85007
@@ -24,6 +29,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1957
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1957
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2126
 ids:
   twitter: GonzalesSally
   facebook: AZStateHouse

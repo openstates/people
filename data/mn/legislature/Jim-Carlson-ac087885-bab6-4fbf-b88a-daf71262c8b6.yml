@@ -2,14 +2,19 @@ id: ocd-person/ac087885-bab6-4fbf-b88a-daf71262c8b6
 name: Jim Carlson
 given_name: Jim
 family_name: Carlson
+gender: Male
 email: sen.jim.carlson@senate.mn
 image: https://www.senate.mn/img/member_thumbnails/51Carlson.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '51'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '52'
 offices:
 - classification: capitol
   address: 2207 Minnesota Senate Bldg.; St. Paul, MN 55155

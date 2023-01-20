@@ -2,22 +2,28 @@ id: ocd-person/095a6754-d7ca-4f1f-b562-974d92e7eb3c
 name: Lupe Contreras
 given_name: Lupe
 family_name: Contreras
+gender: Male
 email: lcontreras@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/CONTRERAS.gif
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '19'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '22'
 offices:
 - classification: capitol
-  address: Senate;1700 West Washington;Room 305;Phoenix, AZ 85007
+  address: House of Representatives;1700 West Washington;Room 330;Phoenix, AZ 85007
   voice: 602-926-5284
 links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=54&session=122&legislator=1935
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1973
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1973
+- url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2156
 ids:
   twitter: sencontreras
   facebook: FriendsForLupeContreras
@@ -27,5 +33,6 @@ other_identifiers:
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=S
 - url: https://www.azleg.gov/memberroster/?body=S
+- url: https://www.azleg.gov/memberroster/?body=H
 extras:
   title: Assistant Minority Leader

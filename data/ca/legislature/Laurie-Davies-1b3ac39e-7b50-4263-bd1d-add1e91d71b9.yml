@@ -10,13 +10,17 @@ roles:
   type: mayor
   jurisdiction: ocd-jurisdiction/country:us/state:ca/place:laguna_niguel/government
 - start_date: 2020-12-07
+  end_date: '2022-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '73'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '74'
 offices:
 - classification: capitol
-  address: 1021 O Street, Suite 4720 Sacramento, CA 94249-0073
-  voice: 916-319-2073
+  address: 1021 O Street, Suite 4720, Sacramento, CA 95814
+  voice: 916-319-2074
 - classification: district
   address: 31473 Rancho Viejo Road, Suite 104, San Juan Capistrano, CA 92675
   voice: 949-240-7300
@@ -24,6 +28,7 @@ links:
 - url: https://ad73.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD73&inframe=N
   note: Contact Form
+- url: https://ad74.asmrc.org/
 other_identifiers:
 - scheme: openstates
   identifier: ocd-person/0ac6b6d4-745c-43fd-b4d2-730ffac09043
@@ -31,4 +36,4 @@ sources:
 - url: http://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
-  P.O. Box: P.O. Box 942849  Sacramento, CA  94249-0073
+  P.O. Box: P.O. Box 942849, Sacramento, CA  94249-0074;

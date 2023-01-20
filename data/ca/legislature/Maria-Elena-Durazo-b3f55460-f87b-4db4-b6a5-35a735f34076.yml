@@ -8,20 +8,19 @@ party:
 - name: Democratic
 roles:
 - start_date: '2018-12-03'
+  end_date: '2022-12-05'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '24'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 7530, Sacramento, CA 95814-4900
-  voice: 916-651-4024
-- classification: district
-  address: 1808 W. Sunset Blvd., Los Angeles, CA 90026
-  voice: 213-483-9300
+- start_date: '2022-12-05'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '26'
 links:
 - url: https://senate.ca.gov/sd24
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=SD24&inframe=N
   note: Contact Form
+- url: https://senate.ca.gov/sd26
 other_names:
 - name: Maria Elena Durazo
 sources:

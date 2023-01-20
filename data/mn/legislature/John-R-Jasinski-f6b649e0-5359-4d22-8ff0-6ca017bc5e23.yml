@@ -2,14 +2,19 @@ id: ocd-person/f6b649e0-5359-4d22-8ff0-6ca017bc5e23
 name: John R. Jasinski
 given_name: John
 family_name: Jasinski
+gender: Male
 email: sen.john.jasinski@senate.mn
 image: https://www.senate.mn/img/member_thumbnails/24Jasinski.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '24'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '19'
 offices:
 - classification: capitol
   address: 3211 Minnesota Senate Bldg.; St. Paul, MN 55155

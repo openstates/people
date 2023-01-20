@@ -2,24 +2,25 @@ id: ocd-person/dad6bcf1-d56a-4a10-a969-2980dd3582d8
 name: Ruth Ann Gaines
 given_name: Ruth Ann
 family_name: Gaines
+gender: Female
 email: ruthann.gaines@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=9413
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=9413
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '32'
-offices:
-- classification: capitol
-  voice: 515-281-3221
-- classification: district
-  address: 3501 Oxford St, Des Moines, IA 50313
-  name: 'District Office #1'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '33'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9413
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9413
 - url: http://eepurl.com/gXMYEr
+- url: http://http://eepurl.com/gXMYEr
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000069
@@ -29,8 +30,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=9413
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=9413
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=9413
 extras:
   home email: ragaines@dmacc.edu
-  cell phone: 515.210.7216
-  capitol phone: 515.281.3221
-  occupation: DMACC Adjunct Professor
+  occupation: Community College Professor

@@ -2,14 +2,19 @@ id: ocd-person/c41944c1-d89b-4c3f-a76f-d5c58d0a507f
 name: Rick Hansen
 given_name: Rick
 family_name: Hansen
+gender: Male
 email: rep.rick.hansen@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/52A.gif?v=112221
+image: https://www.house.mn.gov/hinfo/memberimgls93/53B.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 52A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 53B
 offices:
 - classification: capitol
   address: 407 State Office Building;St. Paul, MN 55155

@@ -10,21 +10,27 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '60'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: 107 Lori Circle Brandon, Mississippi 39042
+  voice: 601-540-0041
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
+- url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000302
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: "Rep. Shanks is a member of the following:  \nRankin County Republican\
-    \ Executive Committee,\nReserve Police Officer of Brandon \nNRA Member\n\nFormer\
-    \ Alderman of Brandon"
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 312 Busick Well Rd;Brandon, MS 39042
-  voice: 601-540-0041
-  classification: district
-  name: 'District Office #1'
+  occupation: Businessman
+  education:
+  - University Christian School
+  - Hinds Community College
+  - Mississippi State University
+  counties represented:
+  - Rankin

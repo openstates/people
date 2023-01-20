@@ -2,6 +2,7 @@ id: ocd-person/1ac93f89-f367-4de3-82ba-79fa78d4d134
 name: Chuck Payne
 given_name: Chuck
 family_name: Payne
+gender: Male
 email: chuck.payne@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/payne-chuck--4909.jpg
 party:
@@ -17,13 +18,15 @@ offices:
   fax: 404-657-7266
 - classification: district
   address: P.O. Box 1074; Dalton , GA 30722
-  voice: 706-529-6748
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4909&Session=27
 - url: https://www.legis.ga.gov/members/senate/4909?session=1029
+- url: https://www.legis.ga.gov/members/senate/4909?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_names:
-- name: Chuck  Payne
+- name: Chuck Payne
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000475
@@ -35,6 +38,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4909?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4909?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: 'Dalton '
   city: Dalton

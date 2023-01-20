@@ -2,6 +2,7 @@ id: ocd-person/933a841a-19d6-42c2-a046-991ff9903a23
 name: Brad Thomas
 given_name: Brad
 family_name: Thomas
+gender: Male
 email: brad.thomas@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/thomas-brad-4991.jpg
 party:
@@ -17,15 +18,22 @@ offices:
 - classification: district
   address: 2210 Holly Springs Pkwy; Unit 1280; Holly Springs, GA 30115
   voice: 678-224-1490
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4991?session=1029
+- url: https://www.legis.ga.gov/members/house/4991?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4991?session=1029
 - url: https://www.legis.ga.gov/members/house/4991?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4991?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4991?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Holly Springs
   city: Holly Springs

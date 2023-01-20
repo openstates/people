@@ -2,14 +2,20 @@ id: ocd-person/fa84bdc1-e9c1-4794-b6ad-b8e0564efd9d
 name: Richard Smith
 given_name: Richard
 family_name: Smith
+gender: Male
 email: richard.smith@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-richard-213.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '134'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '139'
 offices:
 - classification: capitol
   address: HM-1 State Capitol; Atlanta, GA 30334

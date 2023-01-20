@@ -2,14 +2,20 @@ id: ocd-person/8d06fd93-cc42-47e3-a00c-2229718b7226
 name: Carol Spackman Moss
 given_name: Carol
 family_name: Moss
+gender: Female
 email: csmoss@le.utah.gov
 image: https://le.utah.gov/images/legislator/MOSSCS.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '37'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '34'
 offices:
 - classification: district
   address: 350 North State, Suite 350, Salt Lake City, UT, 84114

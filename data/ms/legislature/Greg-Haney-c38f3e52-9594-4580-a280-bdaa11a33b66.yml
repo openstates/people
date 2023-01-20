@@ -10,20 +10,28 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '118'
+offices:
+- classification: capitol
+  address: Room 400-F P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3338
+- classification: district
+  address: 104 45th St Gulfport, Mississippi 39507
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/haney.xml
+- url: http://billstatus.ls.state.ms.us/members/house/haney.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000203
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/haney.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. Haney is a member of the Nat'l Assoc. of Realtors, MS Assoc. of Realtors,
-    MS Gulf Coast Realtors, MS Gulf Coast a MLS, Harrison County Republican Club.
-offices:
-- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3338
-  classification: capitol
-- address: 104 45th St;Gulfport, MS 39507
-  classification: district
-  name: 'District Office #1'
+  occupation: Real Estate Broker
+  education:
+  - University of Southern Mississippi
+  - Mississippi Gulf Coast Community College
+  - Gulfport East High School
+  counties represented:
+  - Harrison
+  other phone: (228)864-9095

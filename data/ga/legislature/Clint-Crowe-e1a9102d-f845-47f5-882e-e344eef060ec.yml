@@ -2,29 +2,42 @@ id: ocd-person/e1a9102d-f845-47f5-882e-e344eef060ec
 name: Clint Crowe
 given_name: Clint
 family_name: Crowe
+gender: Male
 email: clint.crowe@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/crowe-clint-5002.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '110'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '118'
 offices:
 - classification: capitol
   address: 612-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0325
 - classification: district
   address: 115 Mabry Rd; Jackson, GA 30233
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/5002?session=1029
+- url: https://www.legis.ga.gov/members/house/5002?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/5002?session=1029
 - url: https://www.legis.ga.gov/members/house/5002?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5002?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5002?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Jackson
   city: Jackson

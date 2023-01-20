@@ -2,14 +2,20 @@ id: ocd-person/a53e6bbd-a5b8-436b-94ae-bebf957c5b61
 name: Brian Prince
 given_name: Brian
 family_name: Prince
+gender: Male
 email: brian.prince@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/prince-brian-847.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '127'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '132'
 offices:
 - classification: capitol
   address: 409-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -17,10 +23,13 @@ offices:
 - classification: district
   address: P.O. Box 14264; Augusta, GA 30919
   voice: 706-364-4230
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=847&Session=27
 - url: https://www.legis.ga.gov/members/house/847?session=1029
+- url: https://www.legis.ga.gov/members/house/847?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000390
@@ -32,6 +41,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/847?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/847?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Augusta
   city: Augusta

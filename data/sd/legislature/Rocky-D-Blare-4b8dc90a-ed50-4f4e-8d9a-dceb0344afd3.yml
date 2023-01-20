@@ -7,7 +7,12 @@ image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/blare_2019.j
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2021-01-12'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '21'
+- start_date: '2021-01-12'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '21'
 offices:
@@ -15,6 +20,11 @@ offices:
   address: 31176 269th St.; Ideal, SD 57541
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/1770/Detail
+other_names:
+- name: Rocky Blaire
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/cdfe4536-bb88-428b-b110-2b4f93023589
 sources:
 - url: https://sdlegislature.gov/Legislators/Profile/1770/Detail
 extras:

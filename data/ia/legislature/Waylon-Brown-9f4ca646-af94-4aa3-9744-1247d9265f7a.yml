@@ -2,14 +2,20 @@ id: ocd-person/9f4ca646-af94-4aa3-9744-1247d9265f7a
 name: Waylon Brown
 given_name: Waylon
 family_name: Brown
+gender: Male
 email: waylon.brown@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18074
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18074
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '26'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '30'
 offices:
 - classification: capitol
   voice: 515-281-3371
@@ -19,6 +25,7 @@ offices:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18074
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18074
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18074
 - url: http://www.iowasenaterepublicans.com/senators/Waylon-brown/
 - url: http://www.iowasenaterepublicans.com/senators/Waylon-brown/
 other_identifiers:
@@ -27,6 +34,7 @@ other_identifiers:
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18074
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18074
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18074
 - url: https://www.legis.iowa.gov/legislators/senate
 extras:
   home address: 2415 Hwy 218, Osage, IA 50461

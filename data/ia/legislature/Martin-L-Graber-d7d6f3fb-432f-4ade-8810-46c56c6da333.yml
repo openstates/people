@@ -1,24 +1,29 @@
 id: ocd-person/d7d6f3fb-432f-4ade-8810-46c56c6da333
 name: Martin L. Graber
-email: Martin.Graber@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=30655
+gender: Male
+email: martin.graber@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=30655
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '83'
-offices:
-- classification: district
-  address: 2163 N Fork Dr, Fort Madison, IA 52627
-  name: 'District Office #1'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '100'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30655
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=30655&ga=90
 other_names:
 - name: Graber
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30655
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30655
 extras:
-  home address: 2163 N Fork Dr, Fort Madison, IA 52627
+  home email: col_graber@yahoo.com
   occupation: Financial Advisor

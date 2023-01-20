@@ -2,24 +2,28 @@ id: ocd-person/c746f92f-f2d1-4dd9-aa76-f056fe026c32
 name: Monica Kurth
 given_name: Monica
 family_name: Kurth
-email: Monica.Kurth@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18614
+gender: Female
+email: monica.kurth@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18614
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '89'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '98'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 1933 N Marquette St, Davenport, IA 52804
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18614
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18614
 - url: http://eepurl.com/gXNhsX
+- url: http://http://eepurl.com/gXNhsX
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000549
@@ -27,9 +31,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18614
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18614
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18614
 extras:
   home email: mkurth10@gmail.com
-  home address: 1933 N Marquette St, Davenport, IA 52804
-  cell phone: 563.271.9332
-  capitol phone: 515.281.3221
-  occupation: Retired Teacher - Eastern Iowa Community Colleges
+  occupation: Retired Teacher

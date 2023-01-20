@@ -2,18 +2,19 @@ id: ocd-person/863ea116-e9a6-41b1-b765-1f369148a400
 name: Susan Pulsipher
 given_name: Susan
 family_name: Pulsipher
+gender: Female
 email: susanpulsipher@le.utah.gov
 image: https://le.utah.gov/images/legislator/PULSIS.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '50'
-offices:
-- classification: district
-  address: 1179 CHAPEL RIDGE DR, SOUTH JORDAN, UT, 84095
-  voice: 385-242-6397
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '45'
 links:
 - url: http://house.utah.gov/rep/PULSIS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PULSIS

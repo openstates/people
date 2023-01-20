@@ -2,6 +2,7 @@ id: ocd-person/a7d01880-beeb-4183-8dfa-a3300600c062
 name: Janet Buckner
 given_name: Janet
 family_name: Buckner
+gender: Female
 email: janet.buckner.senate@state.co.us
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_buckner%2C%20janet.jpg?itok=-af5yHQv
 party:
@@ -11,9 +12,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '40'
-- type: upper
+- end_date: '2023-01-08'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '28'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '29'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 346 Denver, CO 80203
@@ -35,5 +40,6 @@ sources:
 - url: http://leg.colorado.gov/legislators
 - url: http://leg.colorado.gov/legislators/janet-buckner
 extras:
+  title: Majority Caucus Chair
   counties represented:
   - Arapahoe

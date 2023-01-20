@@ -2,26 +2,30 @@ id: ocd-person/b51c0843-c860-4568-a3a7-3d004a377fd4
 name: Sandy Salmon
 given_name: Sandy
 family_name: Salmon
+gender: Female
 email: sandy.salmon@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=10754
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=10754
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '63'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '29'
 offices:
 - classification: capitol
-  voice: 515-281-3221
-- classification: district
-  address: 9711 Streeter Rd, Janesville, IA 50647
-  voice: 319-987-3021
-  name: 'District Office #1'
+  voice: 515-281-3371
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10754
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10754
 - url: http://www.sandysalmon.org
 - url: http://https://www.sandysalmon.org/newsletters
+- url: http://http://www.iowasenaterepublicans.com/senators/sandy-salmon/
+- url: http://http://www.iowasenaterepublicans.com/senators/sandy-salmon/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000296
@@ -29,8 +33,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10754
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10754
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=10754
+- url: https://www.legis.iowa.gov/legislators/senate
 extras:
-  home phone: 319.987.3021
-  home address: 9711 Streeter Rd, Janesville, IA 50647
-  capitol phone: 515.281.3221
-  occupation: Retired Home Educator
+  business address: 1007 E Grand Ave, Des Moines, IA 50319

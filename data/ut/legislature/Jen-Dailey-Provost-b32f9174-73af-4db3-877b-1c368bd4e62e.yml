@@ -2,15 +2,21 @@ id: ocd-person/b32f9174-73af-4db3-877b-1c368bd4e62e
 name: Jennifer Dailey-Provost
 given_name: Jennifer
 family_name: Dailey-Provost
+gender: Female
 email: jdprovost@le.utah.gov
 image: https://le.utah.gov/images/legislator/DAILEJ.jpg
 party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '24'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '22'
 offices:
 - classification: district
   address: 350 North State, Suite 350, Salt Lake City, UT, 84114

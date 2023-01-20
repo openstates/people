@@ -2,21 +2,30 @@ id: ocd-person/0f113187-3958-449e-9c4e-3e81390c1dd4
 name: Jo Doll
 given_name: Jo
 family_name: Doll
+gender: Female
 image: https://house.mo.gov/MemberPhoto.aspx?id=2224
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '83'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '91'
+offices:
+- classification: capitol
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 109-I; Jefferson
+    City MO 65101
+  voice: 573-751-1285
 links:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=083
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=091
 other_names:
 - name: Doll, Jo
 sources:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=083
-offices:
-- address: MO House of Representatives; 201 West Capitol Avenue; Room 109-I; Jefferson
-    City MO 65101
-  voice: 573-751-2883
-  classification: capitol
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=091
+extras:
+  hometown: St. Louis

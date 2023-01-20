@@ -2,23 +2,28 @@ id: ocd-person/37952941-d329-4c96-8458-654fa495ec76
 name: Jane Bloomingdale
 given_name: Jane
 family_name: Bloomingdale
-email: Jane.Bloomingdale@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18043
+gender: Female
+email: jane.bloomingdale@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18043
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '51'
+- start_date: '2023-01-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '60'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 501 2nd Ave N, Northwood, IA 50459
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18043
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18043
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=18043&ga=90
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000529
@@ -26,7 +31,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18043
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18043
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18043
 extras:
-  home address: 501 2nd Ave N, Northwood, IA 50459
-  cell phone: 641.390.0837
-  capitol phone: 515.281.3221
+  home email: bloomtax@gmail.com
+  occupation: Accountant

@@ -10,17 +10,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '98'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: PO Box 772 Summit, Mississippi 39666
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/porter.xml
+- url: http://billstatus.ls.state.ms.us/members/house/porter.xml
+  note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/porter.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Porter is affiliated with Alpha Phi Alpha Fraternity Inc,
-    Founder of Yancy Men's Mentoring, member of Summit Missionary Baptist Church,
-    and church trustee.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: PO Box 772;Summit, MS 39666
-  classification: district
-  name: 'District Office #1'
+  occupation: Attorney
+  education:
+  - Mississippi College of Law-2018
+  - University of MS-2013
+  - McComb High school-2009
+  counties represented:
+  - Pike
+  - Walthall

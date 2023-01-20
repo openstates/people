@@ -2,21 +2,19 @@ id: ocd-person/f9d51075-c77f-4c05-88b9-ed716fd3b964
 name: Becky Evans
 given_name: Becky
 family_name: Evans
+gender: Female
 email: becky.evans@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/evans-becky-4946.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '83'
-offices:
-- classification: capitol
-  address: 404-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0109
-- classification: district
-  address: P.O. Box 15074; Atlanta, GA 30333
-  name: 'District Office #1'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '89'  
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4946&Session=27
 - url: https://www.legis.ga.gov/members/house/4946?session=1029

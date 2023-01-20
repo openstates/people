@@ -2,24 +2,33 @@ id: ocd-person/f8db50e0-08ab-406c-ac8b-39c7038ef5ca
 name: Karen Mathiak
 given_name: Karen
 family_name: Mathiak
+gender: Female
 email: karen.mathiak@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/mathiak-karen-4894.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '73'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '74'
 offices:
 - classification: capitol
   address: 508-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0213
 - classification: district
   address: 127 Dunwoody Circle; Griffin, GA 30223
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4894&Session=27
 - url: https://www.legis.ga.gov/members/house/4894?session=1029
+- url: https://www.legis.ga.gov/members/house/4894?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000461
@@ -31,6 +40,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4894?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4894?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Griffin
   city: Griffin
@@ -39,6 +52,5 @@ extras:
   occupation: Chiropractor
   press: https://house-press.com/representative/Karen-Mathiak
   spouse: Marty
-  staff: Wyletha Thompson - Administrative Assistant
-  staff email: wyletha.thompson@house.ga.gov
-  title: Chairman, State Planning & Community Affairs
+  staff: Dendrick Atkins - Administrative Assistant
+  staff email: dendrick.atkins@house.ga.gov

@@ -2,17 +2,20 @@ id: ocd-person/5b47c889-e555-4d3c-9b30-97d52ee02960
 name: J. Stuart Adams
 given_name: J. Stuart
 family_name: Adams
+gender: Male
 email: jsadams@le.utah.gov
 image: https://le.utah.gov/images/legislator/ADAMSJS.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '22'
-offices:
-- classification: district
-  address: 3271 E 1875 N, Layton, UT, 84040
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '7'
 links:
 - url: https://senate.utah.gov/stuart-adams
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ADAMSJS

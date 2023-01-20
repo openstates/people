@@ -2,6 +2,7 @@ id: ocd-person/c76bd4cf-9149-46e8-a001-e2c81c5942d5
 name: Ken Ivory
 given_name: Ken
 family_name: Ivory
+gender: Male
 email: kivory@le.utah.gov
 image: https://le.utah.gov/images/legislator/IVORYK.jpg
 party:
@@ -12,13 +13,17 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '47'
 - start_date: 2021-11-17
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '47'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '39'
 offices:
 - classification: district
   address: 8393 S 2010 W, WEST JORDAN, UT, 84088
-  voice: 801-694-8380
 links:
 - url: http://house.utah.gov/rep/IVORYK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=IVORYK
@@ -47,6 +52,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=IVORYK
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist39.pdf
+  note: district demographics
 other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000067

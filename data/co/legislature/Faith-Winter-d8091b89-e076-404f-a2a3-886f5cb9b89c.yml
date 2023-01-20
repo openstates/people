@@ -2,6 +2,7 @@ id: ocd-person/d8091b89-e076-404f-a2a3-886f5cb9b89c
 name: Faith Winter
 given_name: Faith
 family_name: Winter
+gender: Female
 email: faith.winter.senate@state.co.us
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_sen%20winter%2C%20faith%202022.jpg?itok=7VWr0Nl7
 party:
@@ -11,9 +12,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '35'
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '24'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '25'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 346 Denver, CO 80203

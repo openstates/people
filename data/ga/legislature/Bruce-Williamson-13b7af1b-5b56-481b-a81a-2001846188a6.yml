@@ -2,14 +2,20 @@ id: ocd-person/13b7af1b-5b56-481b-a81a-2001846188a6
 name: Bruce Williamson
 given_name: Bruce
 family_name: Williamson
+gender: Male
 email: bruce.williamson@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/williamson-bruce-778.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '115'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '112'
 offices:
 - classification: capitol
   address: 415-B State Capitol; Atlanta, GA 30334

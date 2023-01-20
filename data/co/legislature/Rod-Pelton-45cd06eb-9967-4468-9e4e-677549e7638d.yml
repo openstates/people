@@ -2,14 +2,20 @@ id: ocd-person/45cd06eb-9967-4468-9e4e-677549e7638d
 name: Rod Pelton
 given_name: Rod
 family_name: Pelton
+gender: Male
 email: rod.pelton.house@state.co.us
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_pelton%2C%20rod.jpg?itok=r5N4efX4
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '65'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '35'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 307 Denver, CO 80203

@@ -2,18 +2,19 @@ id: ocd-person/06d334f0-dd19-4a8e-b1c9-5f1ae1d90e26
 name: Steve Eliason
 given_name: Steve
 family_name: Eliason
+gender: Male
 email: seliason@le.utah.gov
 image: https://le.utah.gov/images/legislator/ELIASS.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '45'
-offices:
-- classification: district
-  address: 8157 S GRAMBLING WAY, SANDY, UT, 84094
-  voice: 801-673-4748
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '43'
 links:
 - url: http://house.utah.gov/rep/ELIASS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ELIASS

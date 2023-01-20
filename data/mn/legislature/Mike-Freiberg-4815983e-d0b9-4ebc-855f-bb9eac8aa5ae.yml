@@ -2,14 +2,19 @@ id: ocd-person/4815983e-d0b9-4ebc-855f-bb9eac8aa5ae
 name: Mike Freiberg
 given_name: Mike
 family_name: Freiberg
-email: rep.mike.freiberg@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/45B.gif?v=112221
+gender: Male
+email: rep.mike.freiberg@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/43B.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 45B
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 43B
 offices:
 - classification: capitol
   address: 381 State Office Building;St. Paul, MN 55155

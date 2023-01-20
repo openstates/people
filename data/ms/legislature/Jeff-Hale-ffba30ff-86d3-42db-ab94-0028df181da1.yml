@@ -10,20 +10,27 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '24'
+offices:
+- classification: capitol
+  address: Room 400-F P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-9395
+- classification: district
+  address: 2303 Westwind Drive Nesbit, Mississippi
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/hale.xml
+- url: http://billstatus.ls.state.ms.us/members/house/hale.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000282
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/hale.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Hale is affiliated with the Southern Rotary Club, Bridgetown
-    Fire Dept., and MS Firefighters Assoc.
-offices:
-- address: Room 400-F;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-9395
-  classification: capitol
-- address: 2303 Westwind Drive;Nesbit, MS
-  classification: district
-  name: 'District Office #1'
+  occupation: Public Safety/Sales
+  education:
+  - MS Fire Academy
+  - Northwest College
+  counties represented:
+  - DeSoto
+  other phone: (901)461-6673

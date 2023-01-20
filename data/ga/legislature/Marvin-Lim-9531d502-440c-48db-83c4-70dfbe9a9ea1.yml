@@ -2,29 +2,42 @@ id: ocd-person/9531d502-440c-48db-83c4-70dfbe9a9ea1
 name: Marvin Lim
 given_name: Marvin
 family_name: Lim
+gender: Male
 email: marvin.lim@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/lim-marvin-4999.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '99'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '98'
 offices:
 - classification: capitol
   address: 611-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0314
 - classification: district
   address: P.O. Box 931886; Norcross, GA 30093
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4999?session=1029
+- url: https://www.legis.ga.gov/members/house/4999?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4999?session=1029
 - url: https://www.legis.ga.gov/members/house/4999?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4999?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4999?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Norcross
   city: Norcross

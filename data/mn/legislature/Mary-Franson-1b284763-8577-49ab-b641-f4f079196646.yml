@@ -2,18 +2,19 @@ id: ocd-person/1b284763-8577-49ab-b641-f4f079196646
 name: Mary Franson
 given_name: Mary
 family_name: Franson
+gender: Female
 email: rep.mary.franson@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/08B.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 8B
-offices:
-- classification: capitol
-  address: 303 State Office Building;St. Paul, MN 55155
-  voice: 651-296-3201
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 12B
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15347
 other_identifiers:

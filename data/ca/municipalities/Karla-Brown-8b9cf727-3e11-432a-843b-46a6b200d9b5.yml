@@ -2,15 +2,14 @@ id: ocd-person/8b9cf727-3e11-432a-843b-46a6b200d9b5
 name: Karla Brown
 given_name: Karla
 family_name: Brown
+email: kbrown@cityofpleasantonca.gov
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:ca/place:pleasanton/government
+- end_date: '2024-11-01'
   type: mayor
-  end_date: '2022-11-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/place:pleasanton/government
+offices:
+- classification: primary
+  address: P.O. Box 520;Pleasanton, CA 94566
+  voice: 925-931-5001
 sources:
 - url: http://www.cityofpleasantonca.gov/gov/depts/manager/council/brown.asp
-links: []
-email: kbrown@cityofpleasantonca.gov
-offices:
-- address: P.O. Box 520;Pleasanton, CA 94566
-  voice: 925-931-5001
-  classification: primary

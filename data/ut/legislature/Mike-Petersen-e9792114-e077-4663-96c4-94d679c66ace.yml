@@ -2,19 +2,20 @@ id: ocd-person/e9792114-e077-4663-96c4-94d679c66ace
 name: Mike J. Petersen
 given_name: Mike
 family_name: Petersen
+gender: Male
 email: mpetersen@le.utah.gov
 image: https://le.utah.gov/images/legislator/PETERM.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '3'
-offices:
-- classification: district
-  address: 1505 East 2000 North, North Logan, UT, 84341
-  voice: 435-770-6925
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '2'
 links:
 - url: http://house.utah.gov/rep/PETERM
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PETERM

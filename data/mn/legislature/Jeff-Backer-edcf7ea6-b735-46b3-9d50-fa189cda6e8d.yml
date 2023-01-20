@@ -2,14 +2,19 @@ id: ocd-person/edcf7ea6-b735-46b3-9d50-fa189cda6e8d
 name: Jeff Backer
 given_name: Jeff
 family_name: Backer
-email: rep.jeff.backer@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/12A.gif?v=112221
+gender: Male
+email: rep.jeff.backer@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/09A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 12A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 9A
 offices:
 - classification: capitol
   address: 369 State Office Building;St. Paul, MN 55155

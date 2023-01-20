@@ -2,18 +2,27 @@ id: ocd-person/d6a3a052-3fb3-4dce-9ce0-074852fb2612
 name: Willis Curdy
 given_name: Willis
 family_name: Curdy
+gender: Male
 email: Willis.Curdy@mtleg.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '98'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '49'
+offices:
+- classification: capitol
+  voice: 406-546-0523
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4840
   note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5157
 - url: https://leg.mt.gov/legislator-information/roster/individual/6879
+- url: https://leg.mt.gov/legislator-information/roster/individual/7490
 other_names:
 - name: Curdy, Willis
 other_identifiers:
@@ -25,7 +34,4 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5157
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6879
-offices:
-- address: 11280 KONA RANCH RD;Missoula, MT 59804-9790
-  voice: 406-546-0523
-  classification: capitol
+- url: https://leg.mt.gov/legislator-information/roster/individual/7490

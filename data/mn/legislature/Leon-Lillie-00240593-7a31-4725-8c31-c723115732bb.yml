@@ -2,14 +2,19 @@ id: ocd-person/00240593-7a31-4725-8c31-c723115732bb
 name: Leon Lillie
 given_name: Leon
 family_name: Lillie
+gender: Male
 email: rep.leon.lillie@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/43B.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 43B
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 44B
 offices:
 - classification: capitol
   address: 365 State Office Building;St. Paul, MN 55155

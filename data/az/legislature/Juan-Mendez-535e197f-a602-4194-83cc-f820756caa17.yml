@@ -2,18 +2,23 @@ id: ocd-person/535e197f-a602-4194-83cc-f820756caa17
 name: Juan Mendez
 given_name: Juan
 family_name: Mendez
+gender: Male
 email: jmendez@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/MENDEZ.gif
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
-- end_date: 2014-12-31
+- end_date: '2014-12-31'
   type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '26'
+- end_date: '2023-01-08'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '26'
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '26'
+  district: '8'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 313;Phoenix, AZ 85007
@@ -24,6 +29,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1980
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1980
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2136
 ids:
   twitter: mendezforaz
   instagram: sen.mendez

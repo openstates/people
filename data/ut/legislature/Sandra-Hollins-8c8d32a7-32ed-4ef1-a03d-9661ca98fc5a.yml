@@ -2,14 +2,20 @@ id: ocd-person/8c8d32a7-32ed-4ef1-a03d-9661ca98fc5a
 name: Sandra Hollins
 given_name: Sandra
 family_name: Hollins
+gender: Female
 email: shollins@le.utah.gov
 image: https://le.utah.gov/images/legislator/HOLLIS.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '23'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '21'
 offices:
 - classification: district
   address: 350 North State, Suite 350, Salt Lake City, UT, 84114

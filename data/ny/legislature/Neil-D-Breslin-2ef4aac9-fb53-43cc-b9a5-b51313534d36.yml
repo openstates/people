@@ -7,9 +7,18 @@ image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/07-20-
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '44'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '46'
+offices:
+- classification: capitol
+  address: 172 State Street, Capitol Building;Albany,, NY 12247
+  voice: 518-455-2225
+  fax: 518-426-6807
 links:
 - url: http://www.nysenate.gov/senators-committees
 - url: http://www.nysenate.gov/senators/neil-d-breslin/contact
@@ -24,8 +33,3 @@ other_identifiers:
   identifier: NYL000368
 sources:
 - url: http://www.nysenate.gov/senators/neil-d-breslin/contact
-offices:
-- address: 172 State Street, Capitol Building;Albany,, NY 12247
-  voice: 518-455-2225
-  fax: 518-426-6807
-  classification: capitol

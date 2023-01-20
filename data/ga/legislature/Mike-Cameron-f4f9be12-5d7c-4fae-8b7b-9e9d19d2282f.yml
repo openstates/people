@@ -2,6 +2,7 @@ id: ocd-person/f4f9be12-5d7c-4fae-8b7b-9e9d19d2282f
 name: Mike Cameron
 given_name: Mike
 family_name: Cameron
+gender: Male
 email: mike.cameron@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/cameron-mike-4986.jpg
 party:
@@ -16,15 +17,22 @@ offices:
   voice: 404-656-0188
 - classification: district
   address: 1100 S. Crest Rd; Rossville, GA 30741
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4986?session=1029
+- url: https://www.legis.ga.gov/members/house/4986?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4986?session=1029
 - url: https://www.legis.ga.gov/members/house/4986?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4986?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4986?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Rossville
   city: Rossville

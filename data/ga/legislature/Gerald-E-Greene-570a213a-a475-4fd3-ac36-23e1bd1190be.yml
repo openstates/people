@@ -2,14 +2,20 @@ id: ocd-person/570a213a-a475-4fd3-ac36-23e1bd1190be
 name: Gerald Greene
 given_name: Gerald
 family_name: Greene
+gender: Male
 email: gerald.greene@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/greene-gerald-115.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '151'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '154'
 offices:
 - classification: capitol
   address: 416 State Capitol; Atlanta, GA 30334

@@ -2,28 +2,36 @@ id: ocd-person/53433938-7922-4e1c-b1bf-5943b8186751
 name: Paula Brown
 given_name: Paula
 family_name: Brown
+gender: Female
 email: Paula.Brown@house.mo.gov
 image: https://house.mo.gov/MemberPhoto.aspx?id=2053
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '70'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '87'
+offices:
+- classification: capitol
+  address: MO House of Representatives; 201 West Capitol Avenue; Room 106-A; Jefferson
+    City MO 65101
+  voice: 573-751-0100
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=70
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=070
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=087
 other_names:
 - name: Brown, Paula
 sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=70
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=070
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=087
 extras:
   first_name: Paula
   last_name: Brown
-offices:
-- address: MO House of Representatives; 201 West Capitol Avenue; Room 106-A; Jefferson
-    City MO 65101
-  voice: 573-751-4163
-  classification: capitol
+  hometown: Hazelwood

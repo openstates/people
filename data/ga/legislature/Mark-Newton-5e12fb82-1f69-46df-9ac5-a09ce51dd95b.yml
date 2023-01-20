@@ -2,21 +2,27 @@ id: ocd-person/5e12fb82-1f69-46df-9ac5-a09ce51dd95b
 name: Mark Newton
 given_name: Mark
 family_name: Newton
+gender: Male
 email: mark.newton@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/newton-mark-4902.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '123'
-offices:
-- classification: capitol
-  address: 401-K State Capitol; Atlanta, GA 30334
-  voice: 404-463-7853
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '127'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4902&Session=27
 - url: https://www.legis.ga.gov/members/house/4902?session=1029
+- url: https://www.legis.ga.gov/members/house/4902?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000473
@@ -28,6 +34,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4902?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4902?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Augusta
   city: Augusta
@@ -35,4 +45,3 @@ extras:
   press: https://house-press.com/representative/Mark-Newton
   staff: Ronny Pouliot - Administrative Assistant
   staff email: ronald.pouliot@house.ga.gov
-  title: Chairman, Special Committee on Access to Quality Health Care

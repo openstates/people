@@ -7,9 +7,13 @@ image: https://legislature.maine.gov/uploads/visual_edit/woodsome-5x7-2.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: 2022-12-07
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '33'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '139'
 offices:
 - classification: capitol
   voice: 207-287-1505

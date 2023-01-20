@@ -2,14 +2,20 @@ id: ocd-person/6d49f384-ea91-41f2-b703-229a0a7452d9
 name: Todd D. Weiler
 given_name: Todd
 family_name: Weiler
+gender: Male
 email: tweiler@le.utah.gov
 image: https://le.utah.gov/images/legislator/WEILET.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '23'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '8'
 offices:
 - classification: district
   address: 1248 W 1900 S, Woods Cross, UT, 84087

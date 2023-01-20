@@ -2,23 +2,25 @@ id: ocd-person/29fd7869-2422-4f28-a978-11e5783f51b1
 name: Jacob L. Anderegg
 given_name: Jacob
 family_name: Anderegg
+gender: Male
 email: janderegg@le.utah.gov
 image: https://le.utah.gov/images/legislator/ANDERJL.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2013-01-01
-  end_date: 2018-12-31
+  end_date: 2019-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '6'
-- type: upper
+- start_date: 2019-01-01
+  end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '13'
-offices:
-- classification: district
-  address: PO BOX 934, LEHI, UT, 84043-0934
-  voice: 801-901-3580
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '22'
 links:
 - url: https://senate.utah.gov/jacob-anderegg
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ANDERJL

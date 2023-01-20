@@ -2,23 +2,29 @@ id: ocd-person/54fe073e-e061-43aa-9299-42fe869102d0
 name: John Fuller
 given_name: John
 family_name: Fuller
+gender: Male
 email: John.Fuller@mtleg.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '8'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '4'
+offices:
+- classification: capitol
+  voice: 406-253-4897
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5066
 - url: https://leg.mt.gov/legislator-information/roster/individual/6833
+- url: https://leg.mt.gov/legislator-information/roster/individual/7513
 other_names:
 - name: Fuller, John
 sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5066
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6833
-offices:
-- address: 248 Eagle View Trail;Whitefish, MT 59937
-  voice: 406-253-4897
-  classification: capitol
+- url: https://leg.mt.gov/legislator-information/roster/individual/7513

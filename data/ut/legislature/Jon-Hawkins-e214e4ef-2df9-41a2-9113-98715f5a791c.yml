@@ -2,19 +2,21 @@ id: ocd-person/e214e4ef-2df9-41a2-9113-98715f5a791c
 name: Jon Hawkins
 given_name: Jon
 family_name: Hawkins
+gender: Male
 email: jhawkins@le.utah.gov
 image: https://le.utah.gov/images/legislator/HAWKIJ.jpg
 party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '57'
-offices:
-- classification: district
-  address: PO BOX 353, PLEASANT GROVE, UT, 84062
-  voice: 801-769-0975
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '55'
 links:
 - url: http://house.utah.gov/rep/HAWKIJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=HAWKIJ
@@ -29,6 +31,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=HAWKIJ
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist55.pdf
+  note: district demographics
 other_names:
 - name: Hawkins, J.
 sources:
@@ -42,4 +46,4 @@ extras:
     University
   counties represented:
   - Utah
-  cell phone: 801-769-0975
+  cell phone: 801-368-2534

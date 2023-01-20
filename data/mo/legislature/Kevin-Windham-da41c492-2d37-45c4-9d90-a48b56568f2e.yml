@@ -2,17 +2,23 @@ id: ocd-person/da41c492-2d37-45c4-9d90-a48b56568f2e
 name: Kevin Windham
 given_name: Kevin
 family_name: Windham
+gender: Male
 email: Kevin.Windhamjr@house.mo.gov
 image: https://house.mo.gov/MemberPhoto.aspx?id=2091
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '85'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '74'
 links:
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=85
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=085
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=074
 other_names:
 - name: Kevin Windhamjr
 - name: Windham, Kevin
@@ -20,11 +26,6 @@ sources:
 - url: http://house.mo.gov/MemberGridCluster.aspx
 - url: http://www.house.mo.gov/MemberDetails.aspx?district=85
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=085
+- url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=074
 extras:
-  first_name: Kevin
-  last_name: Windham
-offices:
-- address: MO House of Representatives; 201 West Capitol Avenue; Room 130-DC; Jefferson
-    City MO 65101
-  voice: 573-751-4468
-  classification: capitol
+  hometown: Hillsdale

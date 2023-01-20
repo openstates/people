@@ -2,14 +2,20 @@ id: ocd-person/7493bee0-b1ed-4d45-b772-b7fce91be4ff
 name: Norman W. Sanderson
 given_name: Norman
 family_name: Sanderson
+gender: Male
 email: Norman.Sanderson@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/375/Low
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '2'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '1'
 offices:
 - classification: capitol
   address: 300 N. Salisbury Street, Rm. 309; Raleigh, NC 27603

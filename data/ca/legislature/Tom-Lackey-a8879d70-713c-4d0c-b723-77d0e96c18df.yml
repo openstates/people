@@ -7,20 +7,19 @@ image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/lack
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-05'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '36'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 5340 Sacramento, CA 94249-0036
-  voice: 916-319-2036
-- classification: district
-  address: 41301 12th Street West, Suite F, Palmdale, CA 93551
-  voice: 661-267-7636
+- start_date: '2022-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '34'
 links:
 - url: https://ad36.asmrc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD36&inframe=N
   note: Contact Form
+- url: https://ad34.asmrc.org/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000481
@@ -28,4 +27,4 @@ sources:
 - url: http://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
-  P.O. Box: P.O. Box 942849  Sacramento, CA  94249-0036
+  P.O. Box: P.O. Box 942849, Sacramento, CA  94249-0034;

@@ -2,12 +2,18 @@ id: ocd-person/4e1fee1d-1f1c-416b-9615-4171d4074db8
 name: Benjamin Brooks
 given_name: Benjamin
 family_name: Brooks
-email: Benjamin.Brooks@house.state.md.us
-image: http://mgaleg.maryland.gov/2022RS/images/brooks01.jpg
+gender: Male
+email: benjamin.brooks@senate.state.md.us
+image: http://mgaleg.maryland.gov/2023RS/images/brooks02.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: '10'
+- start_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '10'
 offices:
@@ -17,9 +23,11 @@ offices:
 links:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=brooks01&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/brooks01
+- url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/brooks02
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MDL000625
 sources:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=brooks01&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/brooks01
+- url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/brooks02

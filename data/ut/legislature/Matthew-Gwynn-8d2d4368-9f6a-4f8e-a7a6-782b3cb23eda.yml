@@ -2,19 +2,20 @@ id: ocd-person/8d2d4368-9f6a-4f8e-a7a6-782b3cb23eda
 name: Matthew H. Gwynn
 given_name: Matthew
 family_name: Gwynn
+gender: Male
 email: mgwynn@le.utah.gov
 image: https://le.utah.gov/images/legislator/GWYNNM.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '29'
-offices:
-- classification: district
-  address: 2595 N 2675 W, Farr West, UT, 84404
-  voice: 385-358-3266
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '6'
 links:
 - url: http://house.utah.gov/rep/GWYNNM
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=GWYNNM

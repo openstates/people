@@ -2,15 +2,14 @@ id: ocd-person/ea47c354-856e-49ee-8f9d-e6eec6ae2580
 name: Leonard D. Jones, Jr.
 given_name: Leonard D.
 family_name: Jones, Jr.
+email: ljones@grandview.org
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:mo/place:grandview/government
+- end_date: '2023-04-01'
   type: mayor
-  end_date: '2023-04-01'
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/place:grandview/government
+offices:
+- classification: primary
+  address: 1200 Main Street;Grandview, MO 64030
+  voice: 816-316-4801
 sources:
 - url: https://www.grandview.org/government/city-government/mayor-and-aldermen/leonard-d-jones-jr
-links: []
-email: ljones@grandview.org
-offices:
-- address: 1200 Main Street;Grandview, MO 64030
-  voice: 816-316-4801
-  classification: primary

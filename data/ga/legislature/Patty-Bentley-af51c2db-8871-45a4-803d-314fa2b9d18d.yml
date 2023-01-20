@@ -2,24 +2,27 @@ id: ocd-person/af51c2db-8871-45a4-803d-314fa2b9d18d
 name: Patty Bentley
 given_name: Patty
 family_name: Bentley
+gender: Female
 email: patty.bentley@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/bentley-patty-811.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '139'
-offices:
-- classification: capitol
-  address: 607-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0287
-- classification: district
-  address: 133 Railroad Street; Butler, GA 31006
-  name: 'District Office #1'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '150'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=811&Session=27
 - url: https://www.legis.ga.gov/members/house/811?session=1029
+- url: https://www.legis.ga.gov/members/house/811?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000245
@@ -31,6 +34,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/811?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/811?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Butler
   city: Butler

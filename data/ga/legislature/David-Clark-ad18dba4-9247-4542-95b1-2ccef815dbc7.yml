@@ -2,14 +2,20 @@ id: ocd-person/ad18dba4-9247-4542-95b1-2ccef815dbc7
 name: David Clark
 given_name: David
 family_name: Clark
+gender: Male
 email: david.clark@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/clark-david-867.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '98'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '100'
 offices:
 - classification: capitol
   address: 611-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334

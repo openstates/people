@@ -2,14 +2,18 @@ id: ocd-person/a8e9d4c9-c6fa-41cf-8440-30ba429d4c63
 name: Mike Schatz
 given_name: Mike
 family_name: Schatz
-email: mischatz@nd.gov
-image: https://www.legis.nd.gov/files/styles/medium/public/person/photo/mischatz.jpg?itok=lu_mxP4L
+email: mischatz@ndlegis.gov
+image: https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mischatz2023.jpg?itok=uu_Ize75
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '36'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
+  district: '39'
 offices:
 - classification: district
   address: 400 East Ninth Street, New England, ND 58647-7528
@@ -32,7 +36,10 @@ sources:
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-mike-schatz
 - url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
 - url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-mike-schatz
+- url: https://www.ndlegis.gov/biography/mike-schatz
+  note: member details page
+- url: https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=7
+  note: members list page
 extras:
-  bio info: []
-  Home phone: 701-579-4823
-  Cell phone: 701-333-8610
+  cell: 701-333-8610
+  home: 701-579-4823

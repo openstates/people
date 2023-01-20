@@ -2,21 +2,28 @@ id: ocd-person/8750015c-a9dc-4eac-951d-7f7b51abd3e7
 name: Steve Kaiser
 given_name: Steve
 family_name: Kaiser
+gender: Male
 email: skaiser@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/KAISER.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '15'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '2'
 offices:
 - classification: capitol
-  address: House of Representatives;1700 West Washington;Room 345;Phoenix, AZ 85007
+  address: Senate;1700 West Washington;Room 302;Phoenix, AZ 85007
   voice: 602-926-3314
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2067
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2067
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2131
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
 - url: https://www.azleg.gov/memberroster/?body=H
+- url: https://www.azleg.gov/memberroster/?body=S

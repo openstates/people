@@ -2,15 +2,20 @@ id: ocd-person/ad3245d1-b310-4d50-8290-e642d078f661
 name: Bjorn Olson
 given_name: Bjorn
 family_name: Olson
+gender: Male
 email: rep.bjorn.olson@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/23A.gif?v=112221
 party:
 - name: Republican
 roles:
-- start_date: 2021-01-05
+- start_date: '2021-01-05'
+  end_date: '2023-01-02'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 23A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 22A
 offices:
 - classification: capitol
   address: 375 State Office Building;St. Paul, MN 55155

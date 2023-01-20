@@ -2,6 +2,7 @@ id: ocd-person/5e6ceaa7-8c7a-4e9b-95fa-304041daaab0
 name: James Beverly
 given_name: James
 family_name: Beverly
+gender: Male
 email: james.beverly@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/beverly-james-793.jpg
 party:
@@ -17,10 +18,13 @@ offices:
 - classification: district
   address: P.O. Box 13451; Macon, GA 31208
   voice: 478-803-0001
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=793&Session=27
 - url: https://www.legis.ga.gov/members/house/793?session=1029
+- url: https://www.legis.ga.gov/members/house/793?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000070
@@ -34,6 +38,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/793?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/793?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Macon
   city: Macon

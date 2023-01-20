@@ -2,6 +2,7 @@ id: ocd-person/6f986b42-14f6-4147-9466-c49294331db9
 name: Yasmin Neal
 given_name: Yasmin
 family_name: Neal
+gender: Female
 email: yasmin.neal@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/neal-yasmin-765.jpg
 party:
@@ -13,19 +14,25 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '75'
 - start_date: 2021-01-11
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '74'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '79'
 offices:
 - classification: capitol
   address: 511-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-6372
-- classification: district
-  address: 7393 Tara Road; Jonesboro, GA 30236
-  name: 'District Office #1'
 links:
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/nealYasmin.html
 - url: https://www.legis.ga.gov/members/house/765?session=1029
+- url: https://www.legis.ga.gov/members/house/765?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000173
@@ -38,6 +45,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/765?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/765?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Jonesboro
   city: Jonesboro

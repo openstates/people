@@ -2,14 +2,19 @@ id: ocd-person/eebac21f-2ba7-4368-a8e9-fcc20672ad1e
 name: Karen Lewis Young
 given_name: Karen
 family_name: Young
+gender: Female
 email: Karen.Young@house.state.md.us
-image: http://mgaleg.maryland.gov/2022RS/images/young02.jpg
+image: http://mgaleg.maryland.gov/2023RS/images/young04.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: 3A
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: '3'
 offices:
 - classification: capitol
   address: 416 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401

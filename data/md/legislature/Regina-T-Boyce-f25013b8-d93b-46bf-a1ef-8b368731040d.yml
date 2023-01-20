@@ -2,14 +2,20 @@ id: ocd-person/f25013b8-d93b-46bf-a1ef-8b368731040d
 name: Regina T. Boyce
 given_name: Regina
 family_name: Boyce
+gender: Female
 email: regina.boyce@house.state.md.us
-image: http://mgaleg.maryland.gov/2022RS/images/boyce01.jpg
+image: http://mgaleg.maryland.gov/2023RS/images/boyce01.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '43'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: 43A
 offices:
 - classification: capitol
   address: 316 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401

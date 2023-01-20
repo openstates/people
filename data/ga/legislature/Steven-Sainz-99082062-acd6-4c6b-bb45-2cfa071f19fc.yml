@@ -2,6 +2,7 @@ id: ocd-person/99082062-acd6-4c6b-bb45-2cfa071f19fc
 name: Steven Sainz
 given_name: Steven
 family_name: Sainz
+gender: Male
 email: steven.sainz@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/sainz-steven-4962.jpg
 party:
@@ -16,12 +17,13 @@ offices:
   voice: 404-656-0178
 - classification: district
   address: 2712 Osborne Rd; St. Marys, GA 31558
-- classification: district
-  address: 203 E 5th St; Woodbine, GA 31569
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4962&Session=27
 - url: https://www.legis.ga.gov/members/house/4962?session=1029
+- url: https://www.legis.ga.gov/members/house/4962?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4962&Session=27
@@ -30,6 +32,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4962?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4962?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: St. Marys
   city: St. Marys
@@ -37,5 +43,5 @@ extras:
   birthday: July 13
   occupation: CEO
   press: https://house-press.com/representative/Steven-Sainz
-  staff: Shivonna Parker - Administrative Assistant
-  staff email: shivonna.parker@house.ga.gov
+  staff: Shaniqua Johnson - Administrative Assistant
+  staff email: shaniqua.johnson@house.ga.gov

@@ -2,6 +2,7 @@ id: ocd-person/7767ee85-7961-45ba-adc2-c3606b1c39b8
 name: Lauren McDonald
 given_name: Lauren
 family_name: McDonald
+gender: Male
 email: lauren.mcdonald@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/mcdonald-lauren-4992.jpg
 party:
@@ -18,15 +19,22 @@ offices:
   address: 4180 Creekwood Dr; Cumming, GA 30041
   voice: 770-886-9899
   fax: 770-886-6997
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4992?session=1029
+- url: https://www.legis.ga.gov/members/house/4992?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4992?session=1029
 - url: https://www.legis.ga.gov/members/house/4992?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4992?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4992?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Cumming
   city: Cumming
@@ -37,4 +45,3 @@ extras:
   spouse: Claire
   staff: Talmadge James - Administrative Assistant
   staff email: talmadge.james@house.ga.gov
-  title: Governor's Floor Leader

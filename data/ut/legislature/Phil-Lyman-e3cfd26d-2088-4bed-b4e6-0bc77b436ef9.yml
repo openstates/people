@@ -2,19 +2,21 @@ id: ocd-person/e3cfd26d-2088-4bed-b4e6-0bc77b436ef9
 name: Phil Lyman
 given_name: Phil
 family_name: Lyman
+gender: Male
 email: plyman@le.utah.gov
 image: https://le.utah.gov/images/legislator/LYMANP.jpg
 party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '73'
-offices:
-- classification: district
-  address: 333 S MAIN ST, BLANDING, UT, 84511
-  voice: 435-459-2800
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '69'
 links:
 - url: http://house.utah.gov/rep/LYMANP
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=LYMANP
@@ -29,6 +31,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=LYMANP
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist69.pdf
+  note: district demographics
 other_names:
 - name: Lyman, Phil
 - name: Lyman, P.

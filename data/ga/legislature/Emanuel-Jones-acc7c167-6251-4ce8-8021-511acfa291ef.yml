@@ -2,6 +2,7 @@ id: ocd-person/acc7c167-6251-4ce8-8021-511acfa291ef
 name: Emanuel Jones
 given_name: Emanuel
 family_name: Jones
+gender: Male
 email: emanuel.jones@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/jones-emanuel-28.jpg
 party:
@@ -19,10 +20,13 @@ offices:
   address: P.O. Box 370244; Decatur, GA 30037
   voice: 770-294-3020
   fax: 770-964-7162
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=28&Session=27
 - url: https://www.legis.ga.gov/members/senate/28?session=1029
+- url: https://www.legis.ga.gov/members/senate/28?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000030
@@ -34,6 +38,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/28?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/28?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Decatur
   city: Decatur
@@ -43,6 +51,5 @@ extras:
   press: https://senatepress.net/category/senate-press/emanuel-jones
   religion: Shiloh Baptist Church in McDonough
   spouse: Gloria
-  staff: Daniel Coley
-  staff email: daniel.coley@senate.ga.gov
-  title: Democratic Vice Chairman
+  staff: Megan Stevens
+  staff email: stevens.megan@senate.ga.gov

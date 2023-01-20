@@ -2,6 +2,7 @@ id: ocd-person/ac1cac30-3fec-4c56-b172-b483db465a6b
 name: John Albers
 given_name: John
 family_name: Albers
+gender: Male
 email: john.albers@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/albers-john-754.jpg
 party:
@@ -15,14 +16,13 @@ offices:
   address: 421-C State Capitol; Atlanta, GA 30334
   voice: 404-463-8055
   fax: 404-651-6768
-- classification: district
-  address: 101 Vickery St; Roswell, GA 30075
-  voice: 678-667-3656
-  fax: 404-806-4385
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=754&Session=27
 - url: https://www.legis.ga.gov/members/senate/754?session=1029
+- url: https://www.legis.ga.gov/members/senate/754?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000001
@@ -34,6 +34,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/754?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/754?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: 'Roswell '
   city: Roswell
@@ -45,4 +49,3 @@ extras:
   spouse: Kari
   staff: Ali Farmer
   staff email: ali.farmer@senate.ga.gov
-  title: Chief Deputy Whip

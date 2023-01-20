@@ -2,14 +2,20 @@ id: ocd-person/e4e40f68-0970-4392-b739-3c68f749bcdc
 name: Beth Camp
 given_name: Beth
 family_name: Camp
+gender: Female
 email: beth.camp@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/camp-beth-5004.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '131'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '135'
 offices:
 - classification: capitol
   address: 508-C Coverdell Legislative Office Bldg.; Atlanta, GA 30334

@@ -2,14 +2,20 @@ id: ocd-person/cbf6aefa-a6aa-4de5-9237-d1c34e5c4930
 name: Eric Ebersole
 given_name: Eric
 family_name: Ebersole
+gender: Male
 email: Eric.Ebersole@house.state.md.us
-image: http://mgaleg.maryland.gov/2022RS/images/ebersole01.jpg
+image: http://mgaleg.maryland.gov/2023RS/images/ebersole01.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '12'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: 44A
 offices:
 - classification: capitol
   address: 305 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401
