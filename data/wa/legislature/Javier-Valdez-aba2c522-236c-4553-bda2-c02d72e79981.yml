@@ -8,10 +8,12 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=27975
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '46'
-- type: upper
+- start_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '46'
 offices:
