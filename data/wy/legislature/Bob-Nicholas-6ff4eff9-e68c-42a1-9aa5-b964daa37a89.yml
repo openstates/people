@@ -8,14 +8,17 @@ image: https://wyoleg.gov/LegislatorSummary/Photos/66th-NicholasBob.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '8'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '7'
 offices:
 - classification: district
-  address: 6225 Mountainview Drive, Cheyenne WY 82009
+  address: 6225 Mountainview Drive, Cheyenne, WY 82009
   voice: 307-634-6057
-  name: 'District Office #1'
 links:
 - url: http://wyoleg.gov/Legislators/2019/R/1980
 - url: http://wyoleg.gov/Legislators/2021/R/1980
@@ -29,6 +32,7 @@ sources:
 - url: http://wyoleg.gov/Legislators/2021/R/1980
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/H
 - url: https://wyoleg.gov/LsoService/api/legislator/1980
+- url: https://wyoleg.gov/LsoService/api/legislator/2023/H
 extras:
   county: Laramie County
   education:
@@ -43,5 +47,9 @@ extras:
   prior service:
   - chamber: House
     startYear: 2011
-    endYear: Present
+    endYear: '2022'
     district: ' District 08, '
+  - chamber: House
+    startYear: 2023
+    endYear: Present
+    district: ' District 07, '
