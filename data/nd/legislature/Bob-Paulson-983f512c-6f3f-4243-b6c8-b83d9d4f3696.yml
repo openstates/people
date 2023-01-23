@@ -3,11 +3,15 @@ name: Bob Paulson
 given_name: Bob
 family_name: Paulson
 email: bpaulson@nd.gov
-image: https://www.legis.nd.gov/files/styles/medium/public/person/photo/bpaulson.jpg?itok=36cu6Wrb
+image: https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bpaulson2023.jpg?itok=SDpdNURV
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nd/government
+  district: '3'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '3'
 offices:
@@ -23,6 +27,8 @@ sources:
 - url: http://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson
 - url: https://www.legis.nd.gov/assembly/67-2021/members/members-by-district
 - url: https://www.legis.nd.gov/assembly/67-2021/members/house/representative-bob-paulson
+- url: https://www.ndlegis.gov/assembly/68-2023/regular/members?combine=&field_legis_chamber_target_id=All&field_legis_district_target_id=All&field_legislator_party_target_id=All&page=6
+  note: members list page
 extras:
-  bio info: []
-  Cell phone: 701-833-4752
+  cell: 701-833-4752
+  home: 701-624-2023

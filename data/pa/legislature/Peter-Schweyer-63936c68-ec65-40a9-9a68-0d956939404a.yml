@@ -7,19 +7,22 @@ image: https://www.legis.state.pa.us/images/members/200/1706.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '22'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '134'
 offices:
 - classification: capitol
-  address: 527E Main Capitol Building P.O. Box 202022 Harrisburg, PA 17120-2022
+  address: 527E Main Capitol Building P.O. Box 202134 Harrisburg, PA 17120-2134
   voice: 717-787-2909
   fax: 717-787-2176
 - classification: district
   address: 1501 Lehigh Street Suite 206 Allentown, PA 18103
   voice: 610-791-6270
   fax: 610-791-6274
-  name: 'District Office #1'
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1706
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm

@@ -8,18 +8,20 @@ image: https://le.utah.gov/images/legislator/FILLML.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '10'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '17'
 offices:
 - classification: district
   address: 10167 S 1190 W, SOUTH JORDAN, UT, 84095
-  voice: 385-831-8902
 links:
-- url: https://senate.utah.gov/lincoln-fillmore
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=FILLML
   note: legislation
-- url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist10.pdf
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist17.pdf
   note: district demographics
 - url: https://le.utah.gov/senate/CofI/COFIFILLML.pdf
   note: conflict of interest 0
@@ -34,7 +36,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000276
 sources:
-- url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/FILLML/
 extras:

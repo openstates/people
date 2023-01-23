@@ -7,18 +7,13 @@ image: https://assembly.state.ny.us/write/upload/member_files/101/headshot/101.j
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '101'
-offices:
-- classification: capitol
-  address: LOB 439; Albany, NY 12248
-  voice: 518-455-5334
-  fax: 518-455-5391
-- classification: district
-  address: 48 Genesee St.; New Hartford, NY 13413
-  voice: 315-736-3879
-  fax: 315-736-3947
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '122'
 links:
 - url: http://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Brian-D-Miller
