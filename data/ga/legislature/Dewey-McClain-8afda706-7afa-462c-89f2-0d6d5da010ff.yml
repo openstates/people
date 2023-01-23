@@ -8,20 +8,21 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/mcclain-dewe
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '100'
-offices:
-- classification: capitol
-  address: 509-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0220
-- classification: district
-  address: P.O. Box 1621; Lilburn, GA 30048
-  voice: 404-525-3559
-  name: 'District Office #1'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '109'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=845&Session=27
 - url: https://www.legis.ga.gov/members/house/845?session=1029
+- url: https://www.legis.ga.gov/members/house/845?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000388
@@ -33,6 +34,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/845?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/845?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Lawrenceville
   city: Lawrenceville
@@ -41,5 +46,5 @@ extras:
   occupation: Vice-President of Georgia Pro Players Inc.
   press: https://house-press.com/representative/Dewey-McClain
   spouse: Linda
-  staff: Lisa White - Administrative Assistant
-  staff email: lisa.white@house.ga.gov
+  staff: Josephine Lamar - Administrative Assistant
+  staff email: josephine.lamar@house.ga.gov

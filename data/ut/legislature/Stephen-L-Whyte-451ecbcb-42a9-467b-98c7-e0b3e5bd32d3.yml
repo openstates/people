@@ -5,13 +5,14 @@ image: https://le.utah.gov/images/legislator/WHYTESL.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '65'
-offices:
-- classification: district
-  address: 913 S IRIS LANE, MAPLETON, UT, 84664
-  voice: 385-271-8435
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '63'
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=WHYTESL
   note: legislation
@@ -23,6 +24,8 @@ links:
   note: legislation
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415754
   note: finance report
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist63.pdf
+  note: district demographics
 sources:
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/WHYTESL/

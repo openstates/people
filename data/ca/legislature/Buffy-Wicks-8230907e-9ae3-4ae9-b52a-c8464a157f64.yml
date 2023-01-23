@@ -8,22 +8,21 @@ party:
 - name: Democratic
 roles:
 - start_date: '2018-12-03'
+  end_date: '2022-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '15'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 4240 Sacramento, CA 94249-0015
-  voice: 916-319-2015
-- classification: district
-  address: 1515 Clay Street, Suite 2201, Oakland, CA 94612
-  voice: 510-286-1400
+- start_date: '2022-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '14'
 links:
 - url: https://a15.asmdc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD15&inframe=N
   note: Contact Form
+- url: https://a14.asmdc.org
 sources:
 - url: http://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
-  P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0015
+  P.O. Box: P.O. Box 942849, Sacramento, CA 94249-0014;

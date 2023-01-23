@@ -18,10 +18,13 @@ offices:
   fax: 404-463-2279
 - classification: district
   address: 5377 Goose Hollow Road; Dawson, GA 31742
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
+- url: https://www.legis.ga.gov/members/senate/209?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_names:
 - name: Freddie Sims
 - name: Freddie Powell Sims
@@ -36,6 +39,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/209?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/209?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Dawson
   city: Dawson
@@ -44,5 +51,5 @@ extras:
   occupation: Retired Middle School Principal
   press: 'https://senatepress.net/category/senate-press/freddie-powell-sims '
   spouse: Norman
-  staff: Kalen Banks
-  staff email: kalen.banks@senate.ga.gov
+  staff: Samaria Milton
+  staff email: samaria.milton@senate.ga.gov

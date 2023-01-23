@@ -4,19 +4,24 @@ given_name: Neal
 family_name: Carter
 gender: Male
 email: ncarter@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/CARTER.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Republican
 roles:
-- start_date: 2021-11-05
+- start_date: '2021-11-05'
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '8'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '15'
 offices:
 - classification: capitol
-  address: House of Representatives;1700 West Washington;Room 309;Phoenix, AZ 85007
+  address: House of Representatives;1700 West Washington;Room 130;Phoenix, AZ 85007
   voice: 602-926-5761
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2098
+- url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2152
 sources:
 - url: https://www.azleg.gov/memberroster/?body=H

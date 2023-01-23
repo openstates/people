@@ -1,0 +1,29 @@
+id: ocd-person/f7e27cbb-1ffb-498a-a74e-e0c4f4ce1e6c
+name: Tish Naghise
+given_name: Tish
+family_name: Naghise
+email: tish.naghise@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/naghise-tish-5032.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '68'
+links:
+- url: https://www.legis.ga.gov/members/house/5032?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5032?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Fayetteville
+  city: Fayetteville
+  georgia_id: 5032
+  birthday: October 7
+  occupation: Engagement Organizer
+  spouse: Charles

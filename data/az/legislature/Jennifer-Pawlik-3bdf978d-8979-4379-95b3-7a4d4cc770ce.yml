@@ -4,13 +4,17 @@ given_name: Jennifer
 family_name: Pawlik
 gender: Female
 email: jpawlik@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/PAWLIK.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '17'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '13'
 offices:
 - classification: capitol
   address: House of Representatives;1700 West Washington;Room 118;Phoenix, AZ 85007
@@ -21,6 +25,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2042
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2042
+- url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2187
 ids:
   twitter: jennifer_pawlik
   instagram: jennifer.pawlik

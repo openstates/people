@@ -3,18 +3,26 @@ name: Dan Bartel
 given_name: Dan
 family_name: Bartel
 gender: Male
-email: danbartel2@gmail.com
+email: Dan.Bartel@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '29'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '15'
+offices:
+- classification: capitol
+  voice: 406-366-4160
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4771
   note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5088
 - url: https://leg.mt.gov/legislator-information/roster/individual/6839
+- url: https://leg.mt.gov/legislator-information/roster/individual/7470
 other_names:
 - name: Bartel, Dan
 other_identifiers:
@@ -26,7 +34,4 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5088
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6839
-offices:
-- address: PO BOX 1181;Lewistown, MT 59457-1181
-  voice: 406-366-4160
-  classification: capitol
+- url: https://leg.mt.gov/legislator-information/roster/individual/7470

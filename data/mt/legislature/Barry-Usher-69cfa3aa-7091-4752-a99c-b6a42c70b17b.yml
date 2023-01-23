@@ -7,14 +7,22 @@ email: barry.usher@mtleg.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '40'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '20'
+offices:
+- classification: capitol
+  voice: 406-252-2888
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4782
   note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5099
 - url: https://leg.mt.gov/legislator-information/roster/individual/6908
+- url: https://leg.mt.gov/legislator-information/roster/individual/7603
 other_names:
 - name: Usher, Barry
 other_identifiers:
@@ -26,7 +34,4 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5099
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6908
-offices:
-- address: 6900 S FRONTAGE RD;Billings, MT 59101
-  voice: 406-252-2888
-  classification: capitol
+- url: https://leg.mt.gov/legislator-information/roster/individual/7603

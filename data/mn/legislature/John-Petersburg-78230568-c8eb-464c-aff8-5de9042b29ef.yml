@@ -8,9 +8,13 @@ image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/24A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 24A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 19B
 offices:
 - classification: capitol
   address: 217 State Office Building;St. Paul, MN 55155

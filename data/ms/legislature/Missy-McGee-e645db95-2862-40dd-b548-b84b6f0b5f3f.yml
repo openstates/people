@@ -10,21 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '102'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: PO Box 19089 Hattiesburg, Mississippi 39404
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
+- url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000296
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative McGee is a lifetime member of USM Alumni Association, former
-    board member of the USM Athletic Foundation, life member of the Hattiesburg Jr
-    Auxiliary Leadership Pinebelt; Area Development Partnership, Hattiesburg Dixie
-    Youth baseball, and member of Main Street United Methodist Church.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: PO Box 19089;Hattiesburg, MS 39404
-  classification: district
-  name: 'District Office #1'
+  education:
+  - University of Southern Miss, Speech Communication, BS/MS
+  - Hattiesburg High School
+  counties represented:
+  - Forrest
+  - Lamar

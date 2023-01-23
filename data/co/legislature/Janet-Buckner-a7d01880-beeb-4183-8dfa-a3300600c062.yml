@@ -12,9 +12,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '40'
-- type: upper
+- end_date: '2023-01-08'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '28'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '29'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 346 Denver, CO 80203
@@ -36,5 +40,6 @@ sources:
 - url: http://leg.colorado.gov/legislators
 - url: http://leg.colorado.gov/legislators/janet-buckner
 extras:
+  title: Majority Caucus Chair
   counties represented:
   - Arapahoe

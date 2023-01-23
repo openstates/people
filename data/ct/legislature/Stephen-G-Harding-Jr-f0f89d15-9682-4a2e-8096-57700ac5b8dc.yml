@@ -8,18 +8,13 @@ image: https://www.cthousegop.com/harding/wp-content/uploads/sites/35/2016/11/Ha
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '107'
-offices:
-- classification: capitol
-  address: Legislative Office Building Room 4044; Hartford, CT 06106-1591
-  voice: 860-240-8700
-- classification: district
-  address: 21 Brookfield Meadows; Brookfield, CT 06804
-- classification: district
-  address: 21 Brookfield Meadows;Brookfield, CT 06804
-  name: 'District Office #1'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '30'
 links:
 - url: http://www.cthousegop.com/Harding/
 - url: https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27107%27&dist_name=Harding,%20Stephen%20G.

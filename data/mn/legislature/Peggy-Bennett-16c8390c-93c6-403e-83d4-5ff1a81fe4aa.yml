@@ -3,14 +3,18 @@ name: Peggy Bennett
 given_name: Peggy
 family_name: Bennett
 gender: Female
-email: rep.peggy.bennett@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/27A.gif?v=112221
+email: rep.peggy.bennett@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/23A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 27A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 23A
 offices:
 - classification: capitol
   address: 307 State Office Building;St. Paul, MN 55155

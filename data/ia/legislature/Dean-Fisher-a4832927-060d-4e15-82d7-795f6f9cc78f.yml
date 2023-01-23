@@ -8,9 +8,14 @@ image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=10755
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '72'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '53'
 offices:
 - classification: capitol
   voice: 515-281-3221

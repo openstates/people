@@ -4,16 +4,20 @@ given_name: Sine
 family_name: Kerr
 gender: Female
 email: skerr@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/KERR.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '13'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '25'
 offices:
 - classification: capitol
-  address: Senate;1700 West Washington;Room 302;Phoenix, AZ 85007
+  address: Senate;1700 West Washington;Room 212;Phoenix, AZ 85007
   voice: 602-926-5955
 links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=54&session=122&legislator=1929
@@ -21,6 +25,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=123&legislator=1967
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1967
+- url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2134
 ids:
   twitter: SineKerr
 other_identifiers:
@@ -29,3 +34,5 @@ other_identifiers:
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=S
 - url: https://www.azleg.gov/memberroster/?body=S
+extras:
+  title: Majority Whip
