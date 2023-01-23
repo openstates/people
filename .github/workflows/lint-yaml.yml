@@ -34,7 +34,7 @@ jobs:
         docker run --rm \
         -v $(pwd):/code \
         registry.gitlab.com/pipeline-components/yamllint:latest \
-        -c .yamllint.yml -s .
+        -s .
     - name: setup Python 3.9
       uses: actions/setup-python@v4
       with:
