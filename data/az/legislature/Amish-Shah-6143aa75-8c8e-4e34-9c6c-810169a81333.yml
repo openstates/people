@@ -4,13 +4,17 @@ given_name: Amish
 family_name: Shah
 gender: Male
 email: ashah@azleg.gov
-image: https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/SHAH.jpg
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '24'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '5'
 offices:
 - classification: capitol
   address: House of Representatives;1700 West Washington;Room 123;Phoenix, AZ 85007
@@ -21,6 +25,7 @@ links:
   note: linkedin
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=123&legislator=2048
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2048
+- url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2197
 ids:
   twitter: DrAmishShah
   facebook: amishforarizona

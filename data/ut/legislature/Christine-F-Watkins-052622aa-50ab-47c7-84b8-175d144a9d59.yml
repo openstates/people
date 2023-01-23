@@ -9,9 +9,14 @@ party:
 - name: Republican
 roles:
 - start_date: 2011-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '69'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '67'
 offices:
 - classification: district
   address: 1548 E 5700 S, PRICE, UT, 84501
@@ -36,6 +41,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=WATKICF
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist67.pdf
+  note: district demographics
 other_names:
 - name: Watkins, C.
 - name: Watkins, Christine F.

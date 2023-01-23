@@ -8,15 +8,22 @@ birth_date: 1980-10-10
 image: https://theunitedstates.io/images/congress/450x550/G000594.jpg
 party:
 - start_date: '2021-01-03'
+  end_date: '2025-01-03'
   name: Republican
 roles:
 - start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: TX-23
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: TX-23
 offices:
 - classification: capitol
-  address: 1009 Longworth House Office Building Washington DC 20515-4323
+  address: 2244 Rayburn House Office Building Washington DC 20515-4323
   voice: 202-225-4511
 links:
 - url: https://gonzales.house.gov
@@ -33,8 +40,10 @@ other_identifiers:
 - scheme: govtrack
   identifier: '456849'
 - scheme: wikidata
-  identifier: ''
+  identifier: Q104648170
 - scheme: google_entity_id
   identifier: kg:/g/11fs52clcr
+- scheme: wikipedia
+  identifier: Tony Gonzales
 sources:
 - url: https://theunitedstates.io/

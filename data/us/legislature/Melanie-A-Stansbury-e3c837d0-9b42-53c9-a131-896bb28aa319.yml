@@ -8,9 +8,16 @@ birth_date: 1979-01-31
 image: https://theunitedstates.io/images/congress/450x550/S001218.jpg
 party:
 - start_date: '2021-06-14'
+  end_date: '2025-01-03'
   name: Democratic
 roles:
 - start_date: '2021-06-14'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NM-1
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NM-1
@@ -38,5 +45,9 @@ other_identifiers:
   identifier: Q96184996
 - scheme: ballotpedia
   identifier: Melanie Ann Stansbury
+- scheme: votesmart
+  identifier: '180789'
+- scheme: google_entity_id
+  identifier: kg:/g/11f_jwp_yr
 sources:
 - url: https://theunitedstates.io/

@@ -7,19 +7,20 @@ image: https://www.legis.state.pa.us/images/members/200/1169.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '142'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '6'
 offices:
 - classification: capitol
-  address: 18 East Wing P.O. Box 202142 Harrisburg, PA 17120-2142
-  voice: 717-260-6140
-  fax: 717-782-2916
+  address: 'Senate Box 203006 Harrisburg, PA 17120-3006 Room: 169 Main Capitol'
+  voice: 717-787-5072
 - classification: district
-  address: 1500 Desire Avenue Feasterville, PA 19053
-  voice: 215-942-4067
-  fax: 215-942-4069
-  name: 'District Office #1'
+  address: 370 East Maple Avenue Suite 203 Langhorne, PA 19047
+  voice: 215-638-1784
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1169
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm

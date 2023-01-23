@@ -8,9 +8,13 @@ image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/48A.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 48A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 49A
 offices:
 - classification: capitol
   address: 571 State Office Building;St. Paul, MN 55155

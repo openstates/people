@@ -8,15 +8,22 @@ birth_date: 1974-05-27
 image: https://theunitedstates.io/images/congress/450x550/G000596.jpg
 party:
 - start_date: '2021-01-03'
+  end_date: '2025-01-03'
   name: Republican
 roles:
 - start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: GA-14
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: GA-14
 offices:
 - classification: capitol
-  address: 1023 Longworth House Office Building Washington DC 20515-1014
+  address: 403 Cannon House Office Building Washington DC 20515-1014
   voice: 202-225-5211
 links:
 - url: https://greene.house.gov
@@ -40,5 +47,7 @@ other_identifiers:
   identifier: kg:/g/11fscs046n
 - scheme: ballotpedia
   identifier: Marjorie Taylor Greene
+- scheme: votesmart
+  identifier: '189785'
 sources:
 - url: https://theunitedstates.io/

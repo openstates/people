@@ -1,0 +1,29 @@
+id: ocd-person/72370a62-92f4-46f1-ab7b-193a643085b8
+name: Carter Barrett
+given_name: Carter
+family_name: Barrett
+email: carter.barrett@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/barrett-carter-5020.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '24'
+links:
+- url: https://www.legis.ga.gov/members/house/5020?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5020?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Cumming
+  city: Cumming
+  georgia_id: 5020
+  birthday: June 27
+  occupation: Banking & Investments
+  spouse: Jamie

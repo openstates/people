@@ -9,13 +9,13 @@ party:
 - name: Republican
 roles:
 - start_date: 2021-01-05
+  end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 5B
-offices:
-- classification: capitol
-  address: 233 State Office Building;St. Paul, MN 55155
-  voice: 651-296-4936
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 7A
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15540
 sources:

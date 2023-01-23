@@ -8,9 +8,14 @@ party:
 - name: Republican
 roles:
 - start_date: 2013-01-01
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '18'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '90'
 offices:
 - classification: district
   address: 866 North 12th Street, Arkadelphia, AR 71923

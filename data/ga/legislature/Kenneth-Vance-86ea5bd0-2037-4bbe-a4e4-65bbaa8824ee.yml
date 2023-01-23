@@ -1,0 +1,26 @@
+id: ocd-person/86ea5bd0-2037-4bbe-a4e4-65bbaa8824ee
+name: Kenneth Vance
+given_name: Kenneth
+family_name: Vance
+email: kenneth.vance@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/vance-kenneth-5049.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '133'
+links:
+- url: https://www.legis.ga.gov/members/house/5049?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5049?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: null
+  city: ''
+  georgia_id: 5049
