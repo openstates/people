@@ -9,13 +9,17 @@ party:
 - name: Democratic
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '38'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '37'
 offices:
 - classification: district
   address: 350 N. State Street, Suite 350, Salt Lake City, UT, 84114
-  voice: 385-264-2024
 links:
 - url: http://house.utah.gov/rep/MATTHA
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MATTHA
@@ -28,6 +32,8 @@ links:
   note: legislation
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415432
   note: finance report
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist37.pdf
+  note: district demographics
 other_names:
 - name: Matthews, A.
 - name: Matthews, Ashlee

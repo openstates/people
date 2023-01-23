@@ -8,13 +8,17 @@ image: https://le.utah.gov/images/legislator/BRISCJK.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '25'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '24'
 offices:
 - classification: district
-  address: 350 North State, Suite 350, Salt Lake City, UT, 84114
-  voice: 801-946-9791
+  address: 1124 E 600 S, SALT LAKE CITY, UT, 84102
 links:
 - url: http://house.utah.gov/rep/BRISCJK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BRISCJK
@@ -41,6 +45,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=BRISCJK
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist24.pdf
+  note: district demographics
 other_names:
 - name: Briscoe, J.
 - name: Briscoe, Joel K.

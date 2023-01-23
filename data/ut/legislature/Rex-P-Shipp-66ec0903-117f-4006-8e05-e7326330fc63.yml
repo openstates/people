@@ -9,12 +9,13 @@ party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '72'
-offices:
-- classification: district
-  address: 749 S ST JAMES PLACE, CEDAR CITY, UT, 84720
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '71'
 links:
 - url: http://house.utah.gov/rep/SHIPPRP
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SHIPPRP

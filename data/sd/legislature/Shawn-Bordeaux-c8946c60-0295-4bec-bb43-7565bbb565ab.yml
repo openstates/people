@@ -7,12 +7,13 @@ image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/bordeaux_201
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: 26A
-offices:
-- classification: district
-  address: PO Box 283; Mission, SD 57555
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '26'  
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1513&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1592&Session=2019

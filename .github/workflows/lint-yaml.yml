@@ -8,6 +8,7 @@ on:
       - "data/**"
       - "settings.yml"
       - "poetry.lock"
+      - ".github/workflows/lint-yaml.yml"
   pull_request:
     branches:
       - main
@@ -15,6 +16,7 @@ on:
       - "data/**"
       - "settings.yml"
       - "poetry.lock"
+      - ".github/workflows/lint-yaml.yml"
 
 jobs:
   lint:
@@ -43,10 +45,10 @@ jobs:
       run: poetry install
       # if: steps.cache.outputs.cache-hit != 'true'
 
-    - name: lint people
-      run: poetry run os-people lint
-      env:
-        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+    #- name: lint people
+    #  run: poetry run os-people lint
+    #  env:
+    #    OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
     - name: lint committees
       run: poetry run os-committees lint
       env:

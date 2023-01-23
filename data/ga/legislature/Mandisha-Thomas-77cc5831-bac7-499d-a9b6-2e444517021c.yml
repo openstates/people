@@ -17,6 +17,10 @@ offices:
   voice: 404-656-6372
 links:
 - url: https://www.legis.ga.gov/members/house/4996?session=1029
+- url: https://www.legis.ga.gov/members/house/4996?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_names:
 - name: Mandisha Thomas
 sources:
@@ -25,6 +29,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4996?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4996?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: South Fulton
   city: South Fulton

@@ -4,17 +4,18 @@ given_name: Terri
 family_name: Hill
 gender: Female
 email: Terri.Hill@house.state.md.us
-image: http://mgaleg.maryland.gov/2022RS/images/hill02.jpg
+image: http://mgaleg.maryland.gov/2023RS/images/hill02.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '12'
-offices:
-- classification: capitol
-  address: 214 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401
-  voice: 410-841-3378
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: 12A
 links:
 - url: http://mgaleg.maryland.gov/webmga/frmMain.aspx?pid=sponpage&tab=subject6&id=hill02&stab=01
 - url: http://mgaleg.maryland.gov/mgawebsite/Members/Details/hill02

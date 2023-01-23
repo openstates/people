@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/BRAMBCS.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '16'
-offices:
-- classification: district
-  address: 3663 North 870 East, Provo, UT, 84604
-  voice: 801-361-5802
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '24'
 links:
 - url: https://senate.utah.gov/curtis-bramble
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BRAMBCS
@@ -31,6 +32,8 @@ links:
   note: finance report
 - url: https://senate.utah.gov/sen/BRAMBCS/
   note: homepage
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist24.pdf
+  note: district demographics
 other_names:
 - name: Bramble, Curtis S.
 - name: Bramble, C.
