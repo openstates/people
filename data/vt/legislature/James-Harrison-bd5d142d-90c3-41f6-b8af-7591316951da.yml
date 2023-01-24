@@ -7,7 +7,12 @@ image: https://legislature.vermont.gov/Documents/Legislators/JHarrison.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Rutland-11
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-Windsor-1
 offices:
@@ -16,16 +21,16 @@ offices:
   voice: 802-828-2228
 - classification: district
   address: 75 Lazy Acres Rd. No. Chittenden, VT 05763
-- classification: district
-  address: 75 Lazy Acres Rd.;No. Chittenden, VT 05763
-  voice: 802-236-3001
-  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/28878
 - url: http://legislature.vermont.gov/people/single/2022/28878
 - url: http://legislature.vermont.gov/people/single/2022/28878
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-WDR-1.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/28878
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Rutland-11.pdf
   note: district map
 other_identifiers:
 - scheme: legacy_openstates
@@ -36,7 +41,11 @@ sources:
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/28878
 - url: https://legislature.vermont.gov/people/loadAll/2022
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/28878
 extras:
   home address: North Chittenden, VT 05763
   home phone: (802) 236-3001
   state email: jharrison@leg.state.vt.us
+other_names:
+  - name: Jim Harrison
