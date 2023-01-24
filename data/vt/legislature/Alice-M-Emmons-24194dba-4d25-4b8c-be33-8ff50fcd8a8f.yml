@@ -1,27 +1,34 @@
 id: ocd-person/24194dba-4d25-4b8c-be33-8ff50fcd8a8f
 name: Alice M. Emmons
-given_name: Alice
+given_name: Alice M.
 family_name: Emmons
 email: aemmons61@hotmail.com
 image: https://legislature.vermont.gov/Documents/Legislators/AEmmons.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windsor-3-2
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windsor-3
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
   voice: 802-828-2228
 - classification: district
   address: 318 Summer St. Springfield, VT 05156
-  voice: 802-885-5893
-  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2022/14512
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/WDR-3-2.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/14512
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Windsor-3.pdf
   note: district map
 other_names:
 - name: Alice Emmons
@@ -41,6 +48,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14512
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14512
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/14512
 extras:
   home address: Springfield, VT 05156
   home phone: (802) 885-5893

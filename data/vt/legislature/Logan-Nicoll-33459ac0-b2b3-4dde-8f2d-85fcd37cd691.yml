@@ -8,25 +8,29 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-09'
+  end_date: '2023-01-04'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Rutland-Windsor-2
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Rutland-Windsor
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
   voice: 802-828-2228
 - classification: district
   address: 11 Depot St. Ludlow, VT 05149
-- classification: district
-  address: 11 Depot St.;Ludlow, VT 05149
-  voice: 802-345-8430
-  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30967
 - url: http://legislature.vermont.gov/people/single/2022/30967
 - url: http://legislature.vermont.gov/people/single/2022/30967
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/RUT-WDR-2.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/30967
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Rutland-Windsor.pdf
   note: district map
 other_names:
 - name: Logan Nicoll
@@ -36,6 +40,8 @@ sources:
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30967
 - url: https://legislature.vermont.gov/people/loadAll/2022
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/30967
 extras:
   home address: Ludlow, VT 05149
   home phone: (802) 345-8430

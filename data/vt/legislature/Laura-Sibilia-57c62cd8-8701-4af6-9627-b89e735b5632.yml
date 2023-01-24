@@ -7,25 +7,30 @@ image: https://legislature.vermont.gov/Documents/Legislators/LSibilia.jpg
 party:
 - name: Independent
 roles:
-- type: lower
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham-Bennington
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windham-2
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
   voice: 802-828-2228
 - classification: district
   address: P.O. Box 2052 West Dover, VT 05356
-- classification: district
-  address: P.O. Box 2052;West Dover, VT 05356
-  voice: 802-348-7131
-  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/24023
 - url: http://legislature.vermont.gov/people/single/2022/24023
 - url: http://legislature.vermont.gov/people/single/2022/24023
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/WDH-BEN.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/24023
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Windham-2.pdf
   note: district map
 other_names:
 - name: Laura Sibilia
@@ -40,6 +45,8 @@ sources:
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/24023
 - url: https://legislature.vermont.gov/people/loadAll/2022
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/24023
 extras:
   work address: Brattleboro, VT 05301
   home address: West Dover, VT 05356

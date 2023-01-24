@@ -1,5 +1,5 @@
 id: ocd-person/f8dc94db-66cf-4d5e-b1af-0b6307140524
-name: Amy Grant
+name: Amy L. Grant
 given_name: Amy
 family_name: Grant
 email: grant@ilhousegop.org
@@ -7,22 +7,30 @@ image: https://ilga.gov/images/members/{41DCC207-977E-45DC-BD10-A8AFDCEB673E}.jp
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '42'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '47'
 offices:
 - classification: capitol
   address: 206-N Stratton Office Building Springfield, IL 62706
   voice: 217-558-1037
 - classification: district
-  address: 416 E. Roosevelt Road;Suite 111;Wheaton, IL 60187
+  address: 416 E. Roosevelt Road Suite 111 Wheaton, IL 60187
   voice: 331-218-4182
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2754
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2955
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2955
   note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3150
+  note: homepage
+other_names:
+- name: Amy Grant
 sources:
 - url: http://ilga.gov/house/default.asp?GA=101
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2754
@@ -30,3 +38,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2955
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2955
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3150

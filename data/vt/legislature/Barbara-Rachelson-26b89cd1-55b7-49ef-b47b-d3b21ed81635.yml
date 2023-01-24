@@ -7,25 +7,30 @@ image: https://legislature.vermont.gov/Documents/Legislators/Rachelson.Barb.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-6-6
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-14
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
   voice: 802-828-2228
 - classification: district
   address: 205 Summit St. Burlington, VT 05401
-- classification: district
-  address: 205 Summit St.;Burlington, VT 05401
-  voice: 802-862-1290
-  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2020/20377
 - url: http://legislature.vermont.gov/people/single/2022/20377
 - url: http://legislature.vermont.gov/people/single/2022/20377
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-6-6.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/20377
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-14.pdf
   note: district map
 other_identifiers:
 - scheme: legacy_openstates
@@ -36,6 +41,8 @@ sources:
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/20377
 - url: https://legislature.vermont.gov/people/loadAll/2022
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/20377
 extras:
   work address: Burlington, VT 05406
   home address: Burlington, VT 05401
