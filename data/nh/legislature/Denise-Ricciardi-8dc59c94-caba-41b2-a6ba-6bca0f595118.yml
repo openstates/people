@@ -10,17 +10,24 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: '9'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 9
 offices:
 - classification: capitol
-  address: State House, Room 105-A;107 North Main Street;Concord, NH 03301
-  voice: 603-271-4151
+  address: State House, Room 106 107 North Main Street Concord, NH 03301
+  voice: 603-271-1403
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district09.aspx
   note: homepage
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district09.aspx
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district09.aspx
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  elected status: new
+  county: Cheshire
+  elected status: Incumbent
+  gender code: F

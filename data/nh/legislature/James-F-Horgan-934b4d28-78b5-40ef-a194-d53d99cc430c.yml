@@ -10,7 +10,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 2
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 1
 offices:
+- classification: district
+  address: 1255 Meaderboro Road Farmington, NH 03835-4222
+  voice: 603-859-3929
 - classification: district
   address: 1255 Meaderboro Road;Farmington, NH 03835-4222
   voice: 603-859-3929
@@ -18,6 +24,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8434
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001335
@@ -26,6 +34,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8434
 extras:
   county: Strafford
   elected status: Incumbent

@@ -14,7 +14,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 26
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 36
 offices:
+- classification: district
+  address: 928 Starch Mill Road Mason, NH 03048-4003
+  voice: 603-878-2610
 - classification: district
   address: 928 Starch Mill Road;Mason, NH 03048-4003
   voice: 603-878-2610
@@ -22,6 +28,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8346
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001444
@@ -30,7 +38,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8346
 extras:
   county: Hillsborough
-  elected status: Former
+  elected status: Incumbent
   gender code: M

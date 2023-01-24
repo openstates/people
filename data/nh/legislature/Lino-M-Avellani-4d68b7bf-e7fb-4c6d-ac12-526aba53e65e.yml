@@ -10,7 +10,12 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 5
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Carroll 4
 offices:
+- classification: district
+  address: P.O. Box 516, Sanbornville, NH 03872
 - classification: district
   address: P.O. Box 516;Sanbornville, NH 03872-0516
   voice: 603-858-5196
@@ -18,6 +23,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=815
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001067
@@ -26,6 +33,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=815
 extras:
   county: Carroll
   elected status: Incumbent

@@ -15,7 +15,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 23
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 24
 offices:
+- classification: district
+  address: 10 Van Etten Drive Greenland, NH 03840-2182
+  voice: 603-970-1827
 - classification: district
   address: 10 Van Etten Drive;Greenland, NH 03840-2182
   voice: 603-970-1827
@@ -23,6 +29,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=742
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001428
@@ -37,6 +45,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=742
 extras:
   county: Rockingham
   elected status: Incumbent

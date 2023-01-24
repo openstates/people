@@ -1,6 +1,6 @@
 id: ocd-person/69275b32-0ad6-48a4-9787-bf2869573772
 name: Mark S. MacKenzie
-given_name: Mark S.
+given_name: Mark
 family_name: MacKenzie
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408516.jpg
 party:
@@ -10,15 +10,24 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 17
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 40
+offices:
+- classification: district
+  address: 319 W Erie Street Manchester, NH 03102-5058
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8516
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001415
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408516
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8516
 extras:
-  first_name: Mark
-  last_name: MacKenzie
-  middle_name: S.
+  county: Hillsborough
+  elected status: new
+  gender code: M

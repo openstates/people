@@ -10,7 +10,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 4
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 9
 offices:
+- classification: district
+  address: 41 Hunt Pond Road Sandown, NH 03873-2141
+  voice: 603-887-2793
 - classification: district
   address: 41 Hunt Pond Road;Sandown, NH 03873-2141
   voice: 603-887-2793
@@ -18,6 +24,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=908
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001230
@@ -36,6 +44,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=908
 extras:
   county: Rockingham
   elected status: Incumbent

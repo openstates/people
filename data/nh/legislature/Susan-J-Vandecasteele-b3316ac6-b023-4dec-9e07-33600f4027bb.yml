@@ -9,15 +9,24 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 8
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 25
 offices:
+- classification: district
+  address: 8 Webb Street Salem, NH 03079
+  voice: 603-401-8065
 - classification: district
   address: 8 Webb Street;Salem, NH 03079
   name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9938
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9938
 extras:
   county: Rockingham
   elected status: new

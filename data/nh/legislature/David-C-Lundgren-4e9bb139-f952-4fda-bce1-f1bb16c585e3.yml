@@ -10,7 +10,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 5
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 16
 offices:
+- classification: district
+  address: 21 King John Drive Londonderry, NH 03053-3416
+  voice: 603-432-3499
 - classification: district
   address: 21 King John Drive;Londonderry, NH 03053-3416
   voice: 603-432-3499
@@ -18,6 +24,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=635
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000224
@@ -30,6 +38,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=635
 extras:
   county: Rockingham
   elected status: Incumbent

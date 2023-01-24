@@ -10,7 +10,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 37
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 13
 offices:
+- classification: district
+  address: 6 Raven Drive Hudson, NH 03051-3355
+  voice: 603-265-0771
 - classification: district
   address: 6 Raven Drive;Hudson, NH 03051-3355
   voice: 603-265-0771
@@ -18,6 +24,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8359
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001406
@@ -26,6 +34,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8359
 extras:
   county: Hillsborough
   elected status: Incumbent

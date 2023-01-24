@@ -1,5 +1,7 @@
 id: ocd-person/0119879d-c522-4d71-992d-936a57389093
 name: Fred E. Davis
+given_name: Fred
+family_name: Davis
 email: Fred.Davis@leg.state.nh.us
 party:
 - name: Democratic
@@ -8,12 +10,21 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 31
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 3
+offices:
+- classification: district
+  address: 58 Worcester Street Nashua, NH 03060-9009
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9109
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408873
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9109
 extras:
-  first_name: Fred
-  last_name: Davis
-  middle_name: E.
+  county: Hillsborough
+  elected status: new
+  gender code: M

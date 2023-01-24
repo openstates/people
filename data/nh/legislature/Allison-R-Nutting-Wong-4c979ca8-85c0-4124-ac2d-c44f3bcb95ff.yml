@@ -10,7 +10,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 32
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 9
 offices:
+- classification: district
+  address: 49 MacDonald Drive Nashua, NH 03062-1855
+  voice: 603-809-0560
 - classification: district
   address: 49 MacDonald Drive;Nashua, NH 03062-1855
   voice: 603-809-0560
@@ -18,11 +24,14 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=6681
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=406681
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=6681
 extras:
   county: Hillsborough
   elected status: Incumbent

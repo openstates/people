@@ -9,7 +9,13 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 6
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 10
 offices:
+- classification: district
+  address: PO Box 26 Durham, NH 03824-0026
+  voice: 508-677-5141
 - classification: district
   address: PO Box 26;Durham, NH 03824-0026
   voice: 508-677-5141
@@ -17,11 +23,14 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9231
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408932
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9231
 extras:
   county: Strafford
   elected status: Incumbent

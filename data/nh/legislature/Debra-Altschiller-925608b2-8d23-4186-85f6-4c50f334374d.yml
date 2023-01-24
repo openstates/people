@@ -2,15 +2,21 @@ id: ocd-person/925608b2-8d23-4186-85f6-4c50f334374d
 name: Debra Altschiller
 given_name: Debra
 family_name: Altschiller
-email: debra.altschiller@leg.state.nh.us
-image: http://www.gencourt.state.nh.us/house/images/memberpics/408616.jpg
+email: Debra.Altschiller@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/Senate/images/senators/24.jpg
 party:
 - name: Democratic
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 19
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 24
 offices:
+- classification: capitol
+  address: Legislative Office Building, Room 5 33 North State Street Concord, NH 03301
+  voice: 603-271-7875
 - classification: district
   address: 15 Apple Way;Stratham, NH 03885-2502
   voice: 603-686-1234
@@ -18,6 +24,8 @@ offices:
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district24.aspx
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001391
@@ -26,7 +34,8 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district24.aspx
 extras:
   county: Rockingham
-  elected status: Incumbent
+  elected status: new
   gender code: F

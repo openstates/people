@@ -9,18 +9,26 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 4
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 6
 offices:
+- classification: district
+  address: 272 Pleasant Street Claremont, NH 03743-3162
 - classification: district
   address: 272 Pleasant Street;Claremont, NH 03743-3162
   name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9240
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408941
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9240
 extras:
   county: Sullivan
   elected status: Incumbent
