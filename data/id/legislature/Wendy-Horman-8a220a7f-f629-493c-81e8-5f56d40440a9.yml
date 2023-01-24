@@ -3,14 +3,19 @@ name: Wendy Horman
 given_name: Wendy
 family_name: Horman
 email: WendyHorman@house.idaho.gov
-image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2022/directory/Horman2146.jpg
+image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Horman2146.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2013-01-01
+  end_date: '2022-12-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  district: '30'
+  district: 30B
+- start_date: '2022-12-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: 32B
 offices:
 - classification: capitol
   voice: 208-332-1071
@@ -20,6 +25,8 @@ offices:
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=30
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2022&district=30
+  note: homepage
+- url: https://legislature.idaho.gov/legislators/membership/?yr=2023&district=32
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
