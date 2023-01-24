@@ -1,6 +1,6 @@
 id: ocd-person/2bf6abc2-667f-494f-896a-812721ee77d3
 name: Mollie S. Burke
-given_name: Mollie
+given_name: Mollie S.
 family_name: Burke
 email: mburke@sover.net
 image: https://legislature.vermont.gov/Documents/Legislators/Burke.Mollie.jpg
@@ -9,21 +9,28 @@ party:
   name: Progressive
 - name: Progressive/Democratic
 roles:
-- type: lower
+- end_date: '2023-01-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Windham-2-2
+- start_date: '2023-01-04'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Windham-8
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
   voice: 802-828-2228
 - classification: district
   address: 62 West St. Brattleboro, VT 05301
-  voice: 802-257-4844
-  name: 'District Office #1'
 links:
 - url: http://legislature.vermont.gov/people/single/2022/14690
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/WDH-2-2.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/14690
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Windham-8.pdf
   note: district map
 other_names:
 - name: Mollie Burke
@@ -43,6 +50,8 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2020/14690
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/14690
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/14690
 extras:
   home address: Brattleboro, VT 05301
   home phone: (802) 257-4844
