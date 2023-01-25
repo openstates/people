@@ -9,10 +9,13 @@ party:
 - name: Republican
 roles:
 - start_date: 2021-12-21
-  end_date: '2023-01-11'
+  end_date: '2022-12-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '42'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '46'  
 links:
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Honaker
   note: homepage
