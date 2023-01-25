@@ -8,16 +8,13 @@ image: http://www.wvlegislature.gov/images/members/2022/house/fluharty_shawn.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '3'
-offices:
-- classification: capitol
-  address: Room 260M, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3270
-- classification: district
-  address: 42 Walnut Avenue;Wheeling, WV 26003
-  voice: 304-281-8195
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '5'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fluharty
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fluharty

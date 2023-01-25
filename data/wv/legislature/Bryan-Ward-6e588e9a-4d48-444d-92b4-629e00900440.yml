@@ -4,20 +4,26 @@ given_name: Bryan
 family_name: Ward
 gender: Male
 email: bryan.ward@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/ward_bryan.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/ward_bryan.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '55'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '86'
 offices:
 - classification: capitol
-  address: Room 205E, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
+  address: Room 201E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
   voice: 304-340-3154
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Ward%2C+B.
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Ward,%20B.
+  note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Ward
   note: homepage
 other_names:
 - name: Ward, B.
@@ -25,3 +31,4 @@ sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Ward%2C+B.
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Ward,%20B.
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Ward
