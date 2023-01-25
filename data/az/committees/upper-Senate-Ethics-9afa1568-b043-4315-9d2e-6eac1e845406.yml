@@ -5,6 +5,7 @@ name: Senate Ethics
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
 members:
 - name: Victoria Steele
   role: member
@@ -29,3 +30,7 @@ members:
 - name: Stephanie Stahl Hamilton
   role: member
   person_id: ocd-person/df482d8a-1ed9-41ae-b4ba-d73d4cd9aa39
+extras:
+  Committee ID: 2030
+  Committee Short Name: ETHICS
+  Committee Type: Standing
