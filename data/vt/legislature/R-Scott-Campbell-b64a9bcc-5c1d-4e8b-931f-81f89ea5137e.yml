@@ -1,5 +1,5 @@
 id: ocd-person/b64a9bcc-5c1d-4e8b-931f-81f89ea5137e
-name: R. Scott Campbell
+name: Scott Campbell
 given_name: R. Scott
 family_name: Campbell
 email: scampbell@leg.state.vt.us
@@ -8,19 +8,14 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-01-09'
+  end_date: '2023-01-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Caledonia-3
-offices:
-- classification: capitol
-  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
-  voice: 802-828-2228
-- classification: district
-  address: 761 Crow Hill Rd. St. Johnsbury, VT 05819
-- classification: district
-  address: 761 Crow Hill Rd.;St. Johnsbury, VT 05819
-  voice: 802-595-5580
-  name: 'District Office #1'
+- start_date: '2023-01-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Caledonia-Essex
 links:
 - url: http://legislature.vermont.gov/people/single/2020/30946
 - url: http://legislature.vermont.gov/people/single/2022/30946
@@ -28,12 +23,18 @@ links:
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CAL-3.pdf
   note: district map
+- url: http://legislature.vermont.gov/people/single/2024/30946
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Caledonia-Essex.pdf
+  note: district map
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/30946
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/30946
 - url: https://legislature.vermont.gov/people/loadAll/2022
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/30946
 extras:
   home address: St. Johnsbury, VT 05819
   home phone: (802) 595-5580
