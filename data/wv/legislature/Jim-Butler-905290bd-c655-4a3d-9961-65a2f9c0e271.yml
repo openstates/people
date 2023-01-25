@@ -1,4 +1,4 @@
-id: ocd-person/b8c5f0c6-1e47-4fd9-9cc5-1550e2ba6848
+id: ocd-person/905290bd-c655-4a3d-9961-65a2f9c0e271
 name: Jim Butler
 given_name: Jim
 family_name: Butler
@@ -7,7 +7,11 @@ image: http://www.wvlegislature.gov/images/members/2023/house/butler_jim.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2018-12-01'
+- end_date: '2020-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '14'
+- start_date: '2022-12-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '18'
@@ -19,8 +23,12 @@ offices:
   address: P.O. Box 296 Henderson, WV 25106
   voice: 304-675-3984
 links:
+- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Butler
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Butler
-  note: homepage
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: WVL000152
 sources:
+- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Butler
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Butler
