@@ -8,6 +8,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/91/1029
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/details/91/1031
+  note: Detail page (requires authorization token)
 links:
 - url: https://www.legis.ga.gov/committees/house/91
   note: homepage
@@ -16,7 +20,7 @@ members:
   role: Chairman
   person_id: ocd-person/9dfc8ec3-0935-4d1d-877d-e05cf7a5dca5
 - name: John LaHood
-  role: Vice Chairman
+  role: Member
   person_id: ocd-person/9249be26-54d2-467a-88ec-2588b886148d
 - name: Timothy Barr
   role: Member
@@ -37,7 +41,7 @@ members:
   role: Member
   person_id: ocd-person/99f0a2a7-8817-4756-a40e-575e259890e7
 - name: Emory Dunahoo
-  role: Member
+  role: Vice Chairman
   person_id: ocd-person/3b2b9f31-6859-4582-8d82-581597c0c178
 - name: Spencer Frye
   role: Member
@@ -55,7 +59,7 @@ members:
   role: Member
   person_id: ocd-person/7767ee85-7961-45ba-adc2-c3606b1c39b8
 - name: Jesse Petrea
-  role: Member
+  role: Secretary
   person_id: ocd-person/38c596a4-df69-4a56-9329-be73f26bc7d5
 - name: Jason Ridley
   role: Member
@@ -69,6 +73,9 @@ members:
 - name: Noel Williams, Jr.
   role: Member
   person_id: ocd-person/3252da04-a17e-4298-b19d-9dd2fbf29ded
+- name: Dewey McClain
+  role: Member
+  person_id: ocd-person/8afda706-7afa-462c-89f2-0d6d5da010ff
 extras:
   address: 228-A State Capitol  Atlanta, Ga 30334
   phone: '4046565099'
