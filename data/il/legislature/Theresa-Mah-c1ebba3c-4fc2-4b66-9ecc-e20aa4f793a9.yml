@@ -3,26 +3,32 @@ name: Theresa Mah
 given_name: Theresa
 family_name: Mah
 gender: Female
-email: rep.theresamah@gmail.com
+email: office@reptheresamah.com
 image: https://ilga.gov/images/members/{808BAA30-BB82-437A-9A76-386F9A65A073}.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '2'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '24'
 offices:
 - classification: capitol
   address: 270-S Stratton Office Building Springfield, IL 62706
   voice: 217-782-2855
 - classification: district
-  address: 2108 W. 35th St.;Chicago, IL 60609
+  address: 2108 W. 35th St. Chicago, IL 60609
   voice: 872-281-5775
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2687
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2904
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2904
+  note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3107
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
@@ -34,3 +40,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2904
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2904
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3107

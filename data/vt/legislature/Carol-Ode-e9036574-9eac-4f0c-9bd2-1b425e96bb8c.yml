@@ -7,25 +7,24 @@ image: https://legislature.vermont.gov/Documents/Legislators/Ode.Carol.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-05'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-6-1
-offices:
-- classification: capitol
-  address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
-  voice: 802-828-2228
-- classification: district
-  address: 115 State St Montpelier, VT 05603
-- classification: district
-  address: 115 State St;Montpelier, VT 05603
-  voice: 802-863-3818
-  name: 'District Office #1'
+- start_date: '2023-01-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-18
 links:
 - url: http://legislature.vermont.gov/people/single/2020/27161
 - url: http://legislature.vermont.gov/people/single/2022/27161
 - url: http://legislature.vermont.gov/people/single/2022/27161
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-6-1.pdf
+  note: district map
+- url: http://legislature.vermont.gov/people/single/2024/27161
+  note: homepage
+- url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-18.pdf
   note: district map
 other_identifiers:
 - scheme: legacy_openstates
@@ -36,6 +35,8 @@ sources:
 - url: http://legislature.vermont.gov/people/loadAll/2022
 - url: http://legislature.vermont.gov/people/single/2022/27161
 - url: https://legislature.vermont.gov/people/loadAll/2022
+- url: https://legislature.vermont.gov/people/loadAll/2024
+- url: http://legislature.vermont.gov/people/single/2024/27161
 extras:
   home address: Burlington, VT 05408
   home phone: (802) 863-3818

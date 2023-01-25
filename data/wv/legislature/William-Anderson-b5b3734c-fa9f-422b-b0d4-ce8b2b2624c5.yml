@@ -8,19 +8,18 @@ image: http://www.wvlegislature.gov/images/members/2022/house/anderson_bill.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '8'
-offices:
-- classification: capitol
-  address: Room 200E-C, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3168
-- classification: district
-  address: 1011 Highland Avenue;Williamstown, WV 26187
-  voice: 304-481-4129
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '10'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson
+  note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson,%20B.
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
@@ -31,3 +30,4 @@ sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson,%20B.
