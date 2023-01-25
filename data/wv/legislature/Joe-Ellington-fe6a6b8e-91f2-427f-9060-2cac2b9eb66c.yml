@@ -4,13 +4,17 @@ given_name: Joe
 family_name: Ellington
 gender: Male
 email: joe.ellington@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/ellington_joe.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/ellington_joe.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '27'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '38'
 offices:
 - classification: capitol
   address: Room 434M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305

@@ -4,13 +4,17 @@ given_name: Roger
 family_name: Hanshaw
 gender: Male
 email: roger.hanshaw@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/hanshaw_roger.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/hanshaw_roger.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-30'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '33'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '62'
 offices:
 - classification: capitol
   address: Room 228M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
