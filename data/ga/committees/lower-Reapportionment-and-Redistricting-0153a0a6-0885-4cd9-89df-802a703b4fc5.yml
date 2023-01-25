@@ -1,26 +1,26 @@
-id: ocd-organization/ebeee78c-0e37-43ff-9a08-bfdfa368e25c
+id: ocd-organization/0153a0a6-0885-4cd9-89df-802a703b4fc5
 jurisdiction: ocd-jurisdiction/country:us/state:ga/government
 classification: committee
-name: Legislative & Congressional Reapportionment
+name: Reapportionment and Redistricting
 chamber: lower
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
+- url: https://www.legis.ga.gov/api/committees/List/1031
   note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/details/114/1029
+- url: https://www.legis.ga.gov/api/committees/details/199/1031
   note: Detail page (requires authorization token)
 links:
-- url: https://www.legis.ga.gov/committees/house/114
+- url: https://www.legis.ga.gov/committees/house/199
   note: homepage
 members:
-- name: Bonnie Rich
+- name: Rob Leverett
   role: Chairman
-  person_id: ocd-person/08452f85-2530-4c39-8309-22ca020b848e
-- name: Darlene Taylor
+  person_id: ocd-person/29210f3f-ec97-47c8-9492-b81154275109
+- name: Soo Hong
   role: Vice Chairman
-  person_id: ocd-person/d00eb950-0fb6-41ab-ae22-8e9ce84d7cf0
-- name: Susan Holmes
+  person_id: ocd-person/64721c9b-451c-4bc9-9040-4ca232ffd746
+- name: Matt Reeves
   role: Secretary
-  person_id: ocd-person/aaa374c2-a584-4e78-b2f3-f899efb2d568
+  person_id: ocd-person/0f4f3c5a-1192-4ec1-9698-4aef005b4875
 - name: Kimberly Alexander
   role: Member
   person_id: ocd-person/275b772e-6407-4aaa-8bd6-ceddad1da7fa
@@ -30,9 +30,6 @@ members:
 - name: Buddy DeLoach
   role: Member
   person_id: ocd-person/d40576ac-fbc0-4b42-98ee-f6362063784d
-- name: Matt Dollar
-  role: Member
-  person_id: ocd-person/f1db7c7d-cf44-4a58-aaab-5c75ad4bc76e
 - name: Chuck Efstration
   role: Member
   person_id: ocd-person/3ff894cb-f2e4-47d0-9f67-b125245a10c3
@@ -48,23 +45,21 @@ members:
 - name: Jan Jones
   role: Member
   person_id: ocd-person/85740034-23b0-4001-9190-8948bd9f3b37
-- name: Randy Nix
+- name: Brian Prince
   role: Member
-  person_id: ocd-person/07f649d3-e1bd-4897-b267-51f8ec6092ef
+  person_id: ocd-person/a53e6bbd-a5b8-436b-94ae-bebf957c5b61
 - name: Sandra Scott
   role: Member
   person_id: ocd-person/21c6cae1-bcd2-4403-ad39-af04b64ce55c
-- name: Ed Setzler
-  role: Member
-  person_id: ocd-person/777f58bb-9d6b-4755-ab7b-b94d11629cb5
 - name: Lynn Smith
   role: Member
   person_id: ocd-person/945875f7-f3c5-4c75-acd6-a195a0f76b12
 - name: Richard Smith
   role: Member
   person_id: ocd-person/fa84bdc1-e9c1-4794-b6ad-b8e0564efd9d
-- name: Mickey Stephens
+- name: Darlene Taylor
   role: Member
-- name: Brian Prince
-  role: Member
-  person_id: ocd-person/a53e6bbd-a5b8-436b-94ae-bebf957c5b61
+  person_id: ocd-person/d00eb950-0fb6-41ab-ae22-8e9ce84d7cf0
+extras:
+  address: 508-A Coverdell Legislative Office Bldg.  Atlanta, GA 30334
+  phone: '4046560213'
