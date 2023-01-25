@@ -8,15 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2022/house/griffith_ric.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '19'
-offices:
-- classification: capitol
-  address: Room 6R, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3355
-- classification: district
-  address: 748 Beech Street;Kenova, WV 25530
+- start_date: '2022-12-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '27'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Griffith
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Griffith
