@@ -7,9 +7,13 @@ image: http://www.gencourt.state.nh.us/Senate/images/senators/02.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2022-12-07'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 2
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 4
 offices:
 - classification: capitol
   address: State House, Room 107 107 North Main Street Concord, NH 03301

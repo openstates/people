@@ -6,10 +6,12 @@ email: james.mason@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 2
-- type: lower
+- start_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 3
 offices:

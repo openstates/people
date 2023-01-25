@@ -7,7 +7,8 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/409050.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 8
 - type: lower
@@ -16,9 +17,6 @@ roles:
 offices:
 - classification: district
   address: PO Box 571 Charlestown, NH 03603
-- classification: district
-  address: PO Box 571;Charlestown, NH 03603
-  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9950

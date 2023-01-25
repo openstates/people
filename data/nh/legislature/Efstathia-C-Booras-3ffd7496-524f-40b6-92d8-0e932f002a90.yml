@@ -13,7 +13,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 33
-- type: lower
+- end_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 33
 - type: lower
@@ -22,9 +23,6 @@ roles:
 offices:
 - classification: district
   address: 44 Balcom Street Nashua, NH 03060-3722
-- classification: district
-  address: 44 Balcom Street;Nashua, NH 03060-3722
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377071
 - url: http://gencourt.state.nh.us/downloads/Members.txt

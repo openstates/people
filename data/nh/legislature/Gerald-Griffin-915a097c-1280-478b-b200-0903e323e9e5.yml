@@ -11,7 +11,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 5
-- type: lower
+- end_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 5
 - type: lower
@@ -21,10 +22,6 @@ offices:
 - classification: district
   address: PO Box 1 Mont Vernon, NH 03057-0001
   voice: 603-673-7467
-- classification: district
-  address: PO Box 1;Mont Vernon, NH 03057-0001
-  voice: 603-673-7467
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt

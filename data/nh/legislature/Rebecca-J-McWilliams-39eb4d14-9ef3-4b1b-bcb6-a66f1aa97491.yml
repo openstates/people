@@ -7,20 +7,19 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408898.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 27
-- type: lower
+- start_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 30
 offices:
 - classification: district
   address: 192 Silk Farm Road Concord, NH 03301-8424
   voice: 603-228-6230
-- classification: district
-  address: 192 Silk Farm Road;Concord, NH 03301-8424
-  voice: 603-228-6230
-  name: 'District Office #1'
+
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt

@@ -7,20 +7,18 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408822.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 1
-- type: lower
+- start_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 2
 offices:
 - classification: district
   address: PO Box 487 Glen, NH 03838-0487
   voice: 603-986-6216
-- classification: district
-  address: PO Box 487;Glen, NH 03838-0487
-  voice: 603-986-6216
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
