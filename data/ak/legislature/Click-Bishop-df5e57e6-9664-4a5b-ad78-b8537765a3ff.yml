@@ -3,24 +3,39 @@ name: Click Bishop
 given_name: Click
 family_name: Bishop
 email: Senator.Click.Bishop@akleg.gov
-image: http://akleg.gov/images/legislators/bis.jpg
+image: http://akleg.gov/images/legislators/450x600/BIS.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-16'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: C
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: R
 offices:
 - classification: capitol
-  address: State Capitol Room 516; Juneau, AK, 99801
+  address: State Capitol Room 504, Juneau, AK, 99801
   voice: 907-465-2327
+- classification: district
+  address: 1292 Sadler Way Ste 308, Fairbanks, AK, 99701
+  voice: 907-456-8161
+  fax: 907-456-3346
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=bis
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=bis
 - url: http://www.akleg.gov/basis/Member/Detail/32?code=bis
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000062
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=bis
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=BIS
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 800-336-7383
