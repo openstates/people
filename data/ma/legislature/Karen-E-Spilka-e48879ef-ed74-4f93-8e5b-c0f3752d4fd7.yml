@@ -8,9 +8,13 @@ image: https://malegislature.gov/Legislators/Profile/170/KES0.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-04'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Middlesex and Norfolk
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Middlesex and Norfolk
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 332; Boston, MA 02133
@@ -29,6 +33,8 @@ sources:
 - url: https://malegislature.gov/Legislators/Profile/KES0
 - url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/KES0
 - url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+- url: http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/KES0
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/
 extras:
   leadership position: President of the Senate
   member code: KES0
