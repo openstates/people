@@ -3,17 +3,17 @@ name: Cathy Tilton
 given_name: Cathy
 family_name: Tilton
 email: Representative.Cathy.Tilton@akleg.gov
-image: http://akleg.gov/images/legislators/tlt.jpg
+image: http://akleg.gov/images/legislators/450x600/TLT.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '12'
-offices:
-- classification: capitol
-  address: State Capitol Room 404; Juneau, AK, 99801
-  voice: 907-465-2199
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '26'
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=tlt
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=tlt
@@ -24,3 +24,10 @@ other_identifiers:
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=tlt
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=TLT
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  title: Speaker
+  toll_free_phone: 800-342-2199
