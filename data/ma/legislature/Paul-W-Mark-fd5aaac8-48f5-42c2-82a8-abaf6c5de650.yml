@@ -3,26 +3,23 @@ name: Paul W. Mark
 given_name: Paul
 family_name: Mark
 gender: Male
-email: Paul.Mark@mahouse.gov
-image: https://malegislature.gov/Legislators/Profile/170/PWM1.jpg
+email: Paul.Mark@masenate.gov
+image: https://malegislature.gov/Legislators/Profile/170/PWM0.jpg
 party:
 - name: Democratic
 roles:
-- start_date: 2011-01-01
+- start_date: '2011-01-01'
+  end_date: '2023-01-04'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 2nd Berkshire
-offices:
-- classification: capitol
-  address: 24 Beacon St., Room 279; Boston, MA 02133
-  voice: 617-722-2017
-  fax: 617-626-0249
-- classification: district
-  address: P.O. Box 114;Dalton, MA 01227
-  voice: 413-464-5635
-  name: 'District Office #1'
+- start_date: '2023-01-04'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Berkshire, Hampden, Franklin and Hampshire
 links:
 - url: https://malegislature.gov/Legislators/Profile/PWM1
+- url: https://malegislature.gov/Legislators/Profile/PWM0
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000530
@@ -34,5 +31,7 @@ sources:
 - url: https://malegislature.gov/Legislators/Profile/PWM1
 - url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PWM1
 - url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+- url: http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/PWM0
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/
 extras:
-  member code: PWM1
+  member code: PWM0
