@@ -1,4 +1,4 @@
-id: ocd-person/8c0cde73-cb2f-4022-8bad-c90408432eca
+id: ocd-person/7dcdf7b8-530a-4b81-85b6-745af9224eb1
 name: Dan Saddler
 given_name: Dan
 family_name: Saddler
@@ -7,6 +7,10 @@ image: http://akleg.gov/images/legislators/450x600/SAD.jpg
 party:
 - name: Republican
 roles:
+- end_date: '2018-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '13'
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '24'
@@ -14,7 +18,18 @@ offices:
 - classification: capitol
   address: State Capitol Room 204, Juneau, AK, 99801
   voice: 907-465-3783
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=sad
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=SAD
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000052
+- scheme: legacy_openstates
+  identifier: AKL000113
+- scheme: legacy_openstates
+  identifier: AKL000146
 sources:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=sad
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=SAD
   note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33

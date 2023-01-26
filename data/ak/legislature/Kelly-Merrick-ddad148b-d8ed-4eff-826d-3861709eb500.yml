@@ -1,12 +1,16 @@
-id: ocd-person/59bf8a41-f261-40eb-9ce4-5d3073f8a313
+id: ocd-person/ddad148b-d8ed-4eff-826d-3861709eb500
 name: Kelly Merrick
 given_name: Kelly
 family_name: Merrick
-email: Senator.Kelly.Merrick@akleg.gov
+email: Representative.Kelly.Merrick@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/MRR.jpg
 party:
 - name: Republican
 roles:
+- end_date: '2023-01-16'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '14'
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: L
@@ -17,7 +21,12 @@ offices:
 - classification: district
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-269-3630
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=mrr
+- url: http://www.akleg.gov/basis/Member/Detail/32?code=mrr
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=MRR
 sources:
+- url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=MRR
   note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33

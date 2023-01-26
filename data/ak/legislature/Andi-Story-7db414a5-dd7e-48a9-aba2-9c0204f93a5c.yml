@@ -1,4 +1,4 @@
-id: ocd-person/373f0fc8-e3fd-4067-a5bc-50e175b3469c
+id: ocd-person/7db414a5-dd7e-48a9-aba2-9c0204f93a5c
 name: Andi Story
 given_name: Andi
 family_name: Story
@@ -7,6 +7,10 @@ image: http://akleg.gov/images/legislators/450x600/STO.jpg
 party:
 - name: Democratic
 roles:
+- end_date: '2023-01-16'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '34'
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '3'
@@ -16,9 +20,12 @@ offices:
   voice: 907-465-3744
 - classification: district
   address: State Capitol Room 403, Juneau, AK, 99801
-sources:
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=sto
+- url: http://www.akleg.gov/basis/Member/Detail/32?code=sto
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=STO
-  note: member detail page
+sources:
+- url: http://w3.akleg.gov/
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

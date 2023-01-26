@@ -1,4 +1,4 @@
-id: ocd-person/f9cf4dd5-29a7-474c-907f-87c3bed847c0
+id: ocd-person/d19f85d6-4018-49c7-9f3c-a477dd8096e6
 name: David Wilson
 given_name: David
 family_name: Wilson
@@ -7,6 +7,10 @@ image: http://akleg.gov/images/legislators/450x600/WLN.jpg
 party:
 - name: Republican
 roles:
+- end_date: '2023-01-16'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: D
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: N
@@ -18,7 +22,17 @@ offices:
   address: 600 E Railroad Ave, Wasilla, AK, 99654
   voice: 907-376-4866
   fax: 907-373-4724
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=wln
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=wln
+- url: http://www.akleg.gov/basis/Member/Detail/32?code=wln
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=WLN
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000191
 sources:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=wln
+- url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=WLN
   note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33

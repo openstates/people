@@ -1,4 +1,4 @@
-id: ocd-person/da630dad-b74a-43fa-9da1-512b4134cdf6
+id: ocd-person/f8593ecf-bd23-47b9-92e4-ae6910979e00
 name: Mike Shower
 given_name: Mike
 family_name: Shower
@@ -7,6 +7,10 @@ image: http://akleg.gov/images/legislators/450x600/SHO.jpg
 party:
 - name: Republican
 roles:
+- end_date: '2023-01-16'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: E
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: O
@@ -17,7 +21,17 @@ offices:
 - classification: district
   address: 600 E Railroad Ave, Wasilla, AK, 99654
   voice: 907-376-3370
+links:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
+- url: http://www.akleg.gov/basis/Member/Detail/31?code=sho
+- url: http://www.akleg.gov/basis/Member/Detail/32?code=sho
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=SHO
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000196
 sources:
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
+- url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=SHO
   note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
