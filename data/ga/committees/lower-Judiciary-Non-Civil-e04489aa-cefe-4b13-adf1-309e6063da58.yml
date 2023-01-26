@@ -8,12 +8,16 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/146/1029
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/details/146/1031
+  note: Detail page (requires authorization token)
 links:
 - url: https://www.legis.ga.gov/committees/house/146
   note: homepage
 members:
 - name: James Burchett
-  role: Chairman
+  role: Member
   person_id: ocd-person/dbce462d-74e3-42d3-bd6c-3b9f8eeb69fe
 - name: Micah Gravley
   role: Secretary
@@ -31,7 +35,7 @@ members:
   role: Member
   person_id: ocd-person/15db25fc-273b-467f-b8f9-897337f40b65
 - name: Chuck Efstration
-  role: Ex-Officio
+  role: Member
   person_id: ocd-person/3ff894cb-f2e4-47d0-9f67-b125245a10c3
 - name: Dar'shun Kendrick
   role: Member
@@ -52,5 +56,44 @@ members:
   role: Member
   person_id: ocd-person/777f58bb-9d6b-4755-ab7b-b94d11629cb5
 - name: Tyler Paul Smith
-  role: Member
+  role: Chairman
   person_id: ocd-person/4b162447-89a7-4ffc-acbf-617e1ad87e2a
+- name: Deborah Silcox
+  role: Vice Chairman
+  person_id: ocd-person/b824f8fd-7343-449d-8027-fcd0afaf1949
+- name: Clint Crowe
+  role: Secretary
+  person_id: ocd-person/e1a9102d-f845-47f5-882e-e344eef060ec
+- name: Barry Fleming
+  role: Member
+  person_id: ocd-person/7ea227b9-339a-485a-bfc8-467206ad2457
+- name: Joseph Gullett
+  role: Member
+  person_id: ocd-person/f36d2507-b19a-4ee5-b4f9-5c06df761edf
+- name: Stan Gunter
+  role: Ex-Officio
+  person_id: ocd-person/432ef767-d4c8-4736-b2ac-96397205fb3d
+- name: Soo Hong
+  role: Member
+  person_id: ocd-person/64721c9b-451c-4bc9-9040-4ca232ffd746
+- name: Rob Leverett
+  role: Member
+  person_id: ocd-person/29210f3f-ec97-47c8-9492-b81154275109
+- name: Tanya F. Miller
+  role: Member
+  person_id: ocd-person/6e5432a3-09ed-4813-b11d-e97222bb7e4d
+- name: Farooq Mughal
+  role: Member
+  person_id: ocd-person/a37d3d01-84a2-4c9a-8309-2c4aa03d0928
+- name: Yasmin Neal
+  role: Member
+  person_id: ocd-person/6f986b42-14f6-4147-9466-c49294331db9
+- name: Matt Reeves
+  role: Member
+  person_id: ocd-person/0f4f3c5a-1192-4ec1-9698-4aef005b4875
+- name: Shea Roberts
+  role: Member
+  person_id: ocd-person/9007dcd9-3246-4cf3-9185-7478b3a9ad7a
+extras:
+  address: 401-K State Capitol  Atlanta, GA 30334
+  phone: '4044637853'
