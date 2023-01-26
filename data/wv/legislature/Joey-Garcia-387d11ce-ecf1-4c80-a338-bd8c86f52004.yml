@@ -4,19 +4,17 @@ given_name: Joey
 family_name: Garcia
 gender: Male
 email: joey.garcia@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/garcia_joey.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/garcia_joey.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '50'
-offices:
-- classification: capitol
-  address: Room 252M, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3124
-- classification: district
-  address: 207 Circle Drive;Fairmont, WV 26554
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '76'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Garcia
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia

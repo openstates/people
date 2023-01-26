@@ -8,23 +8,29 @@ image: https://ilga.gov/images/members/{BFF3CD04-BFB6-4681-952F-D519B27FE904}.jp
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '94'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '99'
 offices:
 - classification: capitol
   address: 221-N Stratton Office Building Springfield, IL 62706
   voice: 217-782-8096
   fax: 217-782-1141
 - classification: district
-  address: 3701 E. Lake Centre Dr.;Suite 3;Quincy;, IL 62305
+  address: 3701 E. Lake Centre Dr. Suite 3 Quincy;, IL 62305
   voice: 217-223-0833
   fax: 217-223-1565
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2657
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2881
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2881
+  note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3089
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
@@ -38,3 +44,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2881
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2881
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3089

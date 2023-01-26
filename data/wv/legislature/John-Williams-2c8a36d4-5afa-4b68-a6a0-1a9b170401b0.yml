@@ -4,19 +4,23 @@ given_name: John
 family_name: Williams
 gender: Male
 email: john.williams@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/williams_john.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/williams_john.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '51'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '80'
 offices:
 - classification: capitol
-  address: Room 4R, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
+  address: Room 4R, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
   voice: 304-340-3173
 - classification: district
-  address: 1462 Lakeland Avenue;Morgantown, WV 26505
+  address: 1462 Lakeland Avenue Morgantown, WV 26505
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Williams
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Williams
