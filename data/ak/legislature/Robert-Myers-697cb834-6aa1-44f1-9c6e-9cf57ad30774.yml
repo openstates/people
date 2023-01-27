@@ -7,14 +7,24 @@ image: http://akleg.gov/images/legislators/mye.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-16'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: B
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: Q
 offices:
 - classification: capitol
+  address: State Capitol Room 417, Juneau, AK, 99801
   voice: 907-465-3719
+- classification: district
+  address: 1292 Sadler Way Ste 308, Fairbanks, AK, 99701
+  voice: 907-451-2157
+  fax: 907-465-3258
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/32?code=mye
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=MYE
 other_names:
 - name: MYERS
 - name: Myers
@@ -24,3 +34,9 @@ other_identifiers:
   identifier: ocd-person/21523bd3-e711-4c97-82fa-84a1fb55a6f1
 sources:
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=MYE
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 877-465-3719

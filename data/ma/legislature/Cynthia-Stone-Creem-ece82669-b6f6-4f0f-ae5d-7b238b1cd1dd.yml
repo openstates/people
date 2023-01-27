@@ -8,9 +8,13 @@ image: https://malegislature.gov/Legislators/Profile/170/CSC0.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-04'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Middlesex and Norfolk
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Norfolk and Middlesex
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 312-A; Boston, MA 02133
@@ -31,6 +35,7 @@ sources:
 - url: https://malegislature.gov/Legislators/Profile/CSC0
 - url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/CSC0
 - url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+- url: http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/CSC0
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/
 extras:
-  leadership position: Majority Leader
   member code: CSC0

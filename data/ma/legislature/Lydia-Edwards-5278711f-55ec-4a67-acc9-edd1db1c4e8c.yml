@@ -7,10 +7,14 @@ image: https://malegislature.gov/Legislators/Profile/170/LME0.jpg
 party:
 - name: Democratic
 roles:
-- start_date: 2022-01-20
+- start_date: '2022-01-20'
+  end_date: '2023-01-04'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Suffolk and Middlesex
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Third Suffolk
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 520; Boston, MA 02133
@@ -20,5 +24,7 @@ links:
 sources:
 - url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/LME0
 - url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+- url: http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/LME0
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/
 extras:
   member code: LME0

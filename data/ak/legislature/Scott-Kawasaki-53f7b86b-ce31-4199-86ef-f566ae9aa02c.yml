@@ -3,7 +3,7 @@ name: Scott Kawasaki
 given_name: Scott
 family_name: Kawasaki
 email: Senator.Scott.Kawasaki@akleg.gov
-image: http://akleg.gov/images/legislators/kaw.jpg
+image: http://akleg.gov/images/legislators/450x600/KAW.jpg
 party:
 - name: Democratic
 roles:
@@ -11,9 +11,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '1'
-- type: upper
+- end_date: '2023-01-16'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: A
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: P
 offices:
 - classification: capitol
   address: State Capitol Room 7; Juneau, AK, 99801
@@ -27,6 +31,7 @@ links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kaw
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=kaw
 - url: http://www.akleg.gov/basis/Member/Detail/32?code=kaw
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000042
@@ -37,3 +42,9 @@ other_identifiers:
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=kaw
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=KAW
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 866-465-3466

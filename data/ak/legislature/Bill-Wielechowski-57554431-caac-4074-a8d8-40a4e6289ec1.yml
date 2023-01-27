@@ -3,17 +3,25 @@ name: Bill Wielechowski
 given_name: Bill
 family_name: Wielechowski
 email: Senator.Bill.Wielechowski@akleg.gov
-image: http://akleg.gov/images/legislators/wie.jpg
+image: http://akleg.gov/images/legislators/450x600/WIE.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-16'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: H
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: K
 offices:
 - classification: capitol
-  address: State Capitol Room 9; Juneau, AK, 99801
+  address: State Capitol Room 103, Juneau, AK, 99801
   voice: 907-465-2435
+- classification: district
+  address: 1500 W Benson Blvd, Anchorage, AK, 99503
+  voice: 907-269-0120
+  fax: 907-465-6615
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=wie
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=wie
@@ -28,3 +36,9 @@ other_identifiers:
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=wie
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=WIE
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 800-550-2435

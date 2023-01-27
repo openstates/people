@@ -8,9 +8,13 @@ image: https://malegislature.gov/Legislators/Profile/170/PMO.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-04'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Plymouth and Norfolk
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: First Plymouth and Norfolk
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 419; Boston, MA 02133
@@ -26,6 +30,7 @@ sources:
 - url: https://malegislature.gov/Legislators/Profile/PMO
 - url: http://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/PMO
 - url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
+- url: http://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/PMO
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/
 extras:
-  leadership position: Assistant Minority Leader
   member code: PMO

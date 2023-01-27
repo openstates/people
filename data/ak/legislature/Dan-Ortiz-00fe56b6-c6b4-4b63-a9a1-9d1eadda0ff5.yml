@@ -3,24 +3,37 @@ name: Dan Ortiz
 given_name: Dan
 family_name: Ortiz
 email: Representative.Dan.Ortiz@akleg.gov
-image: http://akleg.gov/images/legislators/ort.jpg
+image: http://akleg.gov/images/legislators/450x600/ORT.jpg
 party:
 - name: Independent
 roles:
-- type: lower
+- end_date: '2023-01-16'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '36'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '1'
 offices:
 - classification: capitol
-  address: State Capitol Room 513; Juneau, AK, 99801
+  address: State Capitol Room 500, Juneau, AK, 99801
   voice: 907-465-3824
+- classification: district
+  address: 1900 First Ave S
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=ort
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=ort
 - url: http://www.akleg.gov/basis/Member/Detail/32?code=ort
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=ORT
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000163
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=ort
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=ORT
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 800-686-3824
