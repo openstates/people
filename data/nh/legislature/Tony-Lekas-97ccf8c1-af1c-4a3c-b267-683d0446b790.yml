@@ -3,25 +3,33 @@ name: Tony Lekas
 given_name: Tony
 family_name: Lekas
 email: rep.tony.lekas@gmail.com
+image: http://www.gencourt.state.nh.us/house/images/memberpics/408881.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 37
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 38
 offices:
 - classification: district
-  address: 30 Barretts Hill Road;Hudson, NH 03051-3501
+  address: 30 Barretts Hill Road Hudson, NH 03051-3501
   voice: 603-305-5726
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9239
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408881
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9239
 extras:
   county: Hillsborough
   elected status: Incumbent

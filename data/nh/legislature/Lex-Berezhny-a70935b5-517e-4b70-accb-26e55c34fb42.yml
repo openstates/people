@@ -6,9 +6,13 @@ email: lex@berezhny.com
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Grafton 9
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Grafton 11
 offices:
 - classification: district
   address: PO Box 41;Grafton, NH 03240

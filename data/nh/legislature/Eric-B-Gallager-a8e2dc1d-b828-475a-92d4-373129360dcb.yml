@@ -3,21 +3,28 @@ name: Eric B. Gallager
 given_name: Eric
 family_name: Gallager
 email: eric.gallager@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/409026.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 15
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 20
 offices:
 - classification: district
   address: Concord, NH 03301
-  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9926
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9926
 extras:
   county: Merrimack
   elected status: new

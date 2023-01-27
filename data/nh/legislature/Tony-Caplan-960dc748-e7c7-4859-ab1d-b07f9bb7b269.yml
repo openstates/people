@@ -3,23 +3,31 @@ name: Tony Caplan
 given_name: Tony
 family_name: Caplan
 email: Tony.Caplan@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/409023.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: '2022-12-07'
+  end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 6
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 8
 offices:
 - classification: district
-  address: 810 Ray Road;Henniker, NH 03242
+  address: 810 Ray Road Henniker, NH 03242
   voice: 603-428-7042
-  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9923
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9923
 extras:
   county: Merrimack
-  elected status: new
+  elected status: Incumbent
   gender code: M

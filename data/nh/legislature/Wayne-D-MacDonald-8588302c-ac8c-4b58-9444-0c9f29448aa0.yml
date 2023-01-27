@@ -3,23 +3,31 @@ name: Wayne D. MacDonald
 given_name: Wayne
 family_name: MacDonald
 email: elephantsmarching@msn.com
+image: http://www.gencourt.state.nh.us/house/images/memberpics/409051.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 5
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 16
 offices:
 - classification: district
-  address: 11 Dickey Street;Derry, NH 03038
+  address: 11 Dickey Street Londonderry, NH 03038
   voice: 603-434-8191
-  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9951
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9951
 extras:
   county: Rockingham
-  elected status: new
+  elected status: Incumbent
   gender code: M

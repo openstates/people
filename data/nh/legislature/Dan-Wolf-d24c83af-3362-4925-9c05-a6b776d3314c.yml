@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/802694.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 5
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 7
 offices:
 - classification: district
-  address: PO Box 88;Newbury, NH 03255-0088
+  address: PO Box 88 Newbury, NH 03255-0088
   voice: 603-763-5176
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=3714
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001414
@@ -26,6 +31,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=3714
 extras:
   county: Merrimack
   elected status: Incumbent

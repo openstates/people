@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408412.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 8
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 25
 offices:
 - classification: district
-  address: 25 Liberty Street;Salem, NH 03079-2437
+  address: 25 Liberty Street Salem, NH 03079-2437
   voice: 603-770-8230
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8412
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001417
@@ -26,6 +31,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8412
 extras:
   county: Rockingham
   elected status: Incumbent

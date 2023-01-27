@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377016.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 41
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 2
 offices:
 - classification: district
-  address: 71 Eagle Drive;Bedford, NH 03110-4414
+  address: 71 Eagle Drive Bedford, NH 03110-4414
   voice: 603-682-1557
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=651
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000330
@@ -30,6 +35,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=651
 extras:
   county: Hillsborough
   elected status: Incumbent

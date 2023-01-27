@@ -7,14 +7,17 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408808.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-06'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 18
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 29
 offices:
 - classification: district
-  address: 806 Alton Woods Drive;Concord, NH 03301-7857
+  address: 806 Alton Woods Drive Concord, NH 03301-7857
   voice: 603-856-7279
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
@@ -26,6 +29,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8858
 extras:
   county: Merrimack
   elected status: Incumbent

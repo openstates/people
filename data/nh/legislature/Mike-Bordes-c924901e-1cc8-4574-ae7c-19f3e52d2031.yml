@@ -6,19 +6,22 @@ email: mike.bordes@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 3
-offices:
-- classification: district
-  address: 266 N Endicott Street, Unit 3;Laconia, NH 03246
-  name: 'District Office #1'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 5
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9861
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9861
 extras:
   county: Belknap
-  elected status: new
+  elected status: Incumbent
   gender code: M

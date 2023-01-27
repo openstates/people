@@ -7,17 +7,19 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408369.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 2
-offices:
-- classification: district
-  address: PO Box 36;Franklin, NH 03235-0036
-  voice: 603-320-9524
-  name: 'District Office #1'
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 3
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8369
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001378
@@ -26,6 +28,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8369
 extras:
   county: Merrimack
   elected status: Incumbent

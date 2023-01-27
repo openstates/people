@@ -7,17 +7,23 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377318.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 17
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 21
 offices:
 - classification: district
-  address: 454 Sixth Street;Dover, NH 03820-5910
+  address: 454 Sixth Street Dover, NH 03820-5910
   voice: 603-749-2347
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=919
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001132
@@ -26,6 +32,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=919
 extras:
   county: Strafford
   elected status: Incumbent

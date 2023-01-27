@@ -7,17 +7,23 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377005.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 2
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 1
 offices:
 - classification: district
-  address: 76 Cocheco Road;Farmington, NH 03835-3803
+  address: 76 Cocheco Road Farmington, NH 03835-3803
   voice: 603-755-2447
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=647
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000296
@@ -30,6 +36,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=647
 extras:
   county: Strafford
   elected status: Incumbent
