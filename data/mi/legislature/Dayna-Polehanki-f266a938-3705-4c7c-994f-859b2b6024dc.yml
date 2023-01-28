@@ -4,13 +4,21 @@ given_name: Dayna
 family_name: Polehanki
 gender: Female
 email: sendpolehanki@senate.michigan.gov
-image: https://senate.michigan.gov/_images/7th.jpg
+image: https://senatedems.com/polehanki/wp-content/uploads/sites/11/2022/12/Polehanki-Official-Portrait.jpeg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '7'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '5'
+offices:
+- classification: capitol
+  address: S-310 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  voice: 517-373-7350
 links:
 - url: https://senatedems.com/polehanki/
 - url: https://senatedems.com/polehanki/contact
@@ -18,8 +26,7 @@ links:
 sources:
 - url: https://senatedems.com/polehanki/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 5400 Binsfeld Bldg
-  voice: 517-373-7350
-  fax: 517-373-9228
-  classification: capitol
+- url: https://senate.michigan.gov/senators/SenatorData.json
+  note: Members List JSON Data Page
+- url: https://senate.michigan.gov/senators/senatorinfo_list.html
+  note: Members List HTML page
