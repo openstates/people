@@ -3,19 +3,30 @@ name: Andi Story
 given_name: Andi
 family_name: Story
 email: Representative.Andi.Story@akleg.gov
-image: http://akleg.gov/images/legislators/sto.jpg
+image: http://akleg.gov/images/legislators/450x600/STO.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-16'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '34'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '3'
 offices:
 - classification: capitol
-  address: State Capitol Room 403; Juneau, AK, 99801
+  address: State Capitol Room 426, Juneau, AK, 99801
   voice: 907-465-3744
+- classification: district
+  address: State Capitol Room 403, Juneau, AK, 99801
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=sto
 - url: http://www.akleg.gov/basis/Member/Detail/32?code=sto
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=STO
 sources:
 - url: http://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 800-968-6744

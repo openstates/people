@@ -7,17 +7,19 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377188.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 28
-offices:
-- classification: district
-  address: 16 Nixon Park;Portsmouth, NH 03801-5728
-  voice: 603-436-6142
-  name: 'District Office #1'
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 27
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=792
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000783
@@ -26,6 +28,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=792
 extras:
   county: Rockingham
   elected status: Incumbent

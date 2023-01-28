@@ -6,17 +6,22 @@ email: harringt@metrocast.net
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-06'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 3
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 18
 offices:
 - classification: district
-  address: 82 Garland Road;Strafford, NH 03884-6835
+  address: 82 Garland Road Strafford, NH 03884-6835
   voice: 603-942-8691
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=5122
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001341
@@ -27,6 +32,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=5122
 extras:
   county: Strafford
   elected status: Incumbent

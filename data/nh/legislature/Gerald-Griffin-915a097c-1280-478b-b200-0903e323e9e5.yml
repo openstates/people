@@ -2,6 +2,7 @@ id: ocd-person/915a097c-1280-478b-b200-0903e323e9e5
 name: Gerald Griffin
 given_name: Gerald
 family_name: Griffin
+email: Gerald.Griffin@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408314.jpg
 party:
 - name: Republican
@@ -10,17 +11,22 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 5
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 5
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 42
 offices:
 - classification: district
-  address: PO Box 1;Mont Vernon, NH 03057-0001
+  address: PO Box 1 Mont Vernon, NH 03057-0001
   voice: 603-673-7467
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8314
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001392
@@ -29,6 +35,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8314
 extras:
   county: Hillsborough
   elected status: Former

@@ -6,9 +6,17 @@ email: Bill.King@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 23
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 43
+offices:
+- classification: district
+  address: 344 Elm Street, Unit 5;Milford, NH 03055
+  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 other_names:
@@ -19,7 +27,3 @@ extras:
   first_name: Bill
   last_name: King
   middle_name: ''
-offices:
-- address: 344 Elm Street, Unit 5;Milford, NH 03055
-  classification: district
-  name: 'District Office #1'

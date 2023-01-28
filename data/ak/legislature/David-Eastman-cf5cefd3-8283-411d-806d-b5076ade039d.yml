@@ -3,17 +3,24 @@ name: David Eastman
 given_name: David
 family_name: Eastman
 email: Representative.David.Eastman@akleg.gov
-image: http://akleg.gov/images/legislators/eas.jpg
+image: http://akleg.gov/images/legislators/450x600/EAS.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-16'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '10'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '27'
 offices:
 - classification: capitol
-  address: State Capitol Room 422; Juneau, AK, 99801
+  address: State Capitol Room 114, Juneau, AK, 99801
   voice: 907-465-2186
+- classification: district
+  address: 600 E Railroad Ave, Wasilla, AK, 99654
+  voice: 907-373-1842
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=eas
 - url: http://www.akleg.gov/basis/Member/Detail/31?code=eas
@@ -24,3 +31,9 @@ other_identifiers:
 sources:
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=eas
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=EAS
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 800-468-2186

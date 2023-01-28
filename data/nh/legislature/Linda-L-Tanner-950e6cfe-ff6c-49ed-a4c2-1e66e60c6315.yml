@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377179.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-06'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 9
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 5
 offices:
 - classification: district
-  address: Georges Mills, NH 03751-0267
+  address: PO Box 267 Georges Mills, NH 03751-0267
   voice: 603-763-4471
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=784
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000758
@@ -30,6 +35,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=784
 extras:
   county: Sullivan
   elected status: Incumbent

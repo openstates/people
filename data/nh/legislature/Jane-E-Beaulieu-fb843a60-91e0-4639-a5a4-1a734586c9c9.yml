@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/376550.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 45
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 19
 offices:
 - classification: district
-  address: 609 South Main Street;Manchester, NH 03102-5134
-  voice: 603-626-1260
-  name: 'District Office #1'
+  address: 609 South Main Street Manchester, NH 03102-5134
+  voice: 603-203-8440
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=501
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000445
@@ -28,6 +33,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=501
 extras:
   county: Hillsborough
   elected status: Incumbent

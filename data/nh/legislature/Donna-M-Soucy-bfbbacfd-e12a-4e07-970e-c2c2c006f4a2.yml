@@ -8,23 +8,20 @@ party:
 - name: Democratic
 roles:
 - start_date: 2013-01-01
-  end_date: 2014-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: '18'
-- start_date: 2015-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: '18'
 offices:
 - classification: capitol
-  address: State House, Room 120;107 North Main Street;Concord, NH 03301
+  address: State House, Room 120 107 North Main Street Concord, NH 03301
   voice: 603-271-3207
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district18.aspx
   note: homepage
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district18.aspx
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001351
@@ -40,5 +37,6 @@ sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
+  county: Hillsborough
   elected status: Incumbent
   gender code: F

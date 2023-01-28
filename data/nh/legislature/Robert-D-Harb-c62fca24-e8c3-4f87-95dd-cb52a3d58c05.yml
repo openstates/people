@@ -3,25 +3,32 @@ name: Robert D. Harb
 given_name: Robert
 family_name: Harb
 email: Robert.Harb@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/408914.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 14
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 20
 offices:
 - classification: district
-  address: 18 Hilltop Road;Plaistow, NH 03865-2916
-  voice: 603-382-8067
-  name: 'District Office #1'
+  address: 18 Hilltop Road Plaistow, NH 03865-2916
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9293
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408914
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9293
 extras:
   county: Rockingham
   elected status: Incumbent

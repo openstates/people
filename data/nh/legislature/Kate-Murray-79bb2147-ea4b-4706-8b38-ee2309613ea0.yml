@@ -7,9 +7,13 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408619.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 24
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 22
 offices:
 - classification: district
   address: PO Box 2193;New Castle, NH 03854-2193

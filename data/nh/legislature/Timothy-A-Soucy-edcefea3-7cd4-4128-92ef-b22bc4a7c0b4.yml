@@ -7,22 +7,27 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/376869.jpg
 party:
 - name: Democratic
 roles:
-- start_date: 2013-01-01
-  end_date: 2016-12-31
+- start_date: '2013-01-01'
+  end_date: '2016-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 34
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 16
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 21
 offices:
 - classification: district
-  address: 11 Princeton Street;Concord, NH 03301-2333
+  address: 11 Princeton Street Concord, NH 03301-2333
   voice: 603-305-5012
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=599
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001454
@@ -37,6 +42,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=599
 extras:
   county: Merrimack
   elected status: Incumbent

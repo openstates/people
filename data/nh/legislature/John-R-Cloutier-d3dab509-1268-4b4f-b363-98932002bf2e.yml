@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/375829.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-04'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 10
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 6
 offices:
 - classification: district
-  address: 2 Winter St, Apt. D-14;Claremont, NH 03743-5091
+  address: '164 Broad St., Apt. #3 Claremont, NH 03743'
   voice: 603-542-6190
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=427
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000084
@@ -30,6 +35,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=427
 extras:
   county: Sullivan
   elected status: Incumbent

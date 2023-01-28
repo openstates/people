@@ -7,17 +7,19 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/376028.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 14
-offices:
-- classification: district
-  address: 139 North State Street;Concord, NH 03301-6431
-  voice: 603-224-0623
-  name: 'District Office #1'
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 18
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=440
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000226
@@ -30,6 +32,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=440
 extras:
   county: Merrimack
   elected status: Incumbent
