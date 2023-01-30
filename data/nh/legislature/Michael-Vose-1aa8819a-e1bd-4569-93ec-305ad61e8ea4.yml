@@ -11,17 +11,23 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 9
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 9
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 5
 offices:
 - classification: district
-  address: 75 Olde Bridge Lane;Epping, NH 03042-1922
+  address: 75 Olde Bridge Lane Epping, NH 03042-1922
   voice: 603-734-4084
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=909
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001174
@@ -30,6 +36,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=909
 extras:
   county: Rockingham
   elected status: Incumbent

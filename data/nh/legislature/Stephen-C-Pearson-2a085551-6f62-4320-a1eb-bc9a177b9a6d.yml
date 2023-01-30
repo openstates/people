@@ -6,22 +6,28 @@ email: Steve.Pearson@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 6
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 13
 offices:
 - classification: district
-  address: 221 Hampstead Road;Derry, NH 03038-4814
+  address: 221 Hampstead Road Derry, NH 03038-4814
   voice: 603-548-8523
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9269
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408906
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9269
 extras:
   county: Rockingham
   elected status: Incumbent

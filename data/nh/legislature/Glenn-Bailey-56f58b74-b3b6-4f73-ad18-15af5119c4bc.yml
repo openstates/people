@@ -6,19 +6,29 @@ email: grbailey@metrocast.net
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 1
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 2
 offices:
+- classification: district
+  address: 156 Park Place Milton, NH 03851
 - classification: district
   address: 156 Park Place;Milton, NH 03851
   name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9946
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9946
 extras:
   county: Strafford
-  elected status: new
+  elected status: Incumbent
   gender code: M

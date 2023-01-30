@@ -7,19 +7,29 @@ image: http://www.gencourt.state.nh.us/Senate/images/senators/15.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2022-12-07'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '15'
+- start_date: '2022-12-07'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: '15'
 offices:
 - classification: capitol
-  address: Legislative Office Building, Room 101;33 North State Street;Concord, NH 03301
+  address: Legislative Office Building, Room 102-A 33 North State Street Concord, NH 03301
+  voice: 603-271-3092
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district15.aspx
   note: homepage
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district15.aspx
+  note: member detail page
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district15.aspx
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 extras:
-  elected status: new
+  county: Merrimack
+  elected status: Incumbent
+  gender code: F

@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408537.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 29
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 4
 offices:
 - classification: district
-  address: 25 Charlotte Avenue;Nashua, NH 03064-1552
+  address: 25 Charlotte Avenue Nashua, NH 03064-1552
   voice: 603-880-8973
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8537
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001473
@@ -26,6 +31,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8537
 extras:
   county: Hillsborough
   elected status: Incumbent

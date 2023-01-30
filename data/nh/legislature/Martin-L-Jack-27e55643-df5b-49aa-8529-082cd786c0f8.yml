@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377126.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 36
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 10
 offices:
 - classification: district
-  address: 83 Cadogan Way;Nashua, NH 03062-2285
+  address: 83 Cadogan Way Nashua, NH 03062-2285
   voice: 603-318-0457
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=733
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000596
@@ -28,6 +33,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=733
 extras:
   county: Hillsborough
   elected status: Incumbent

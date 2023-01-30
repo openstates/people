@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377307.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 10
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 9
 offices:
 - classification: district
-  address: 211 Putney Hill Road;Hopkinton, NH 03229-2510
+  address: 211 Putney Hill Road Hopkinton, NH 03229-2510
   voice: 603-746-6484
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=880
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001220
@@ -26,6 +31,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=880
 extras:
   county: Merrimack
   elected status: Incumbent

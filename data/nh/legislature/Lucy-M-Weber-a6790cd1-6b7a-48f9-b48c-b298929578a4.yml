@@ -7,17 +7,22 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/376668.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Cheshire 1
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 5
 offices:
 - classification: district
-  address: 217 Old Keene Road;Walpole, NH 03608-4845
+  address: 217 Old Keene Road Walpole, NH 03608-4845
   voice: 603-499-0282
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=531
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000411
@@ -30,6 +35,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=531
 extras:
   county: Cheshire
   elected status: Incumbent

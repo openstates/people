@@ -7,17 +7,23 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/408479.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Cheshire 1
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 6
 offices:
 - classification: district
-  address: PO Box 414;Spofford, NH 03462-0414
+  address: PO Box 414 Spofford, NH 03462-0414
   voice: 603-363-4424
-  name: 'District Office #1'
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8479
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001397
@@ -26,6 +32,7 @@ sources:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8479
 extras:
   county: Cheshire
   elected status: Incumbent
