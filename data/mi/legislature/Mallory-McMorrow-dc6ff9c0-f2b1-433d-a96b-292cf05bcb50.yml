@@ -8,9 +8,14 @@ image: https://senate.michigan.gov/_images/13th.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '13'
+- start_date: 2023-01-11
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '8'
 links:
 - url: https://senatedems.com/mcmorrow/
 - url: https://senatedems.com/mcmorrow/contact
@@ -18,8 +23,3 @@ links:
 sources:
 - url: https://senatedems.com/mcmorrow/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 6200 Binsfeld Bldg
-  voice: 517-373-2523
-  fax: 517-373-5669
-  classification: capitol

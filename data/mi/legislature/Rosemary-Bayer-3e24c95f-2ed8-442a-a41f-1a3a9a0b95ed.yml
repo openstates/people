@@ -8,9 +8,13 @@ image: https://senate.michigan.gov/_images/12th.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '12'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '13'
 links:
 - url: https://senatedems.com/bayer/
 - url: https://senatedems.com/bayer/contact
@@ -18,8 +22,3 @@ links:
 sources:
 - url: https://senatedems.com/bayer/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 3600 Binsfeld Bldg
-  voice: 517-373-2417
-  fax: 517-373-2694
-  classification: capitol

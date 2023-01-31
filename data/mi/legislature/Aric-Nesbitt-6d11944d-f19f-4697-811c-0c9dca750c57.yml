@@ -4,23 +4,31 @@ given_name: Aric
 family_name: Nesbitt
 gender: Male
 email: SenANesbitt@senate.michigan.gov
-image: https://senate.michigan.gov/_images/26th.jpg
+image: https://www.misenategop.com/wp-content/uploads/2019/01/Nesbitt-580x770.jpg
 party:
 - name: Republican
 roles:
-- start_date: 2011-01-01
-  end_date: 2012-12-31
+- start_date: '2011-01-01'
+  end_date: '2012-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '80'
-- start_date: 2013-01-01
-  end_date: 2016-12-31
+- start_date: '2013-01-01'
+  end_date: '2016-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '66'
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '26'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '20'
+offices:
+- classification: capitol
+  address: S-105 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  voice: 517-373-0793
 links:
 - url: https://www.senatoraricnesbitt.com/
 - url: https://www.senatoraricnesbitt.com/contact
@@ -35,8 +43,7 @@ other_identifiers:
 sources:
 - url: https://www.senatoraricnesbitt.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 6100 Binsfeld Bldg
-  voice: 517-373-0793
-  fax: 517-373-5607
-  classification: capitol
+- url: https://senate.michigan.gov/senators/SenatorData.json
+  note: Members List JSON Data Page
+- url: https://senate.michigan.gov/senators/senatorinfo_list.html
+  note: Members List HTML page

@@ -8,9 +8,13 @@ image: https://senate.michigan.gov/_images/14th.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '14'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '24'
 links:
 - url: https://www.senatorruthjohnson.com/
 - url: https://www.senatorruthjohnson.com/contact/
@@ -18,8 +22,3 @@ links:
 sources:
 - url: https://www.senatorruthjohnson.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 7300 Binsfeld Bldg
-  voice: 517-373-1636
-  fax: 517-373-1453
-  classification: capitol

@@ -3,19 +3,23 @@ name: Dale Zorn
 given_name: Dale
 family_name: Zorn
 gender: Male
-email: SenDZorn@senate.michigan.gov
-image: https://senate.michigan.gov/_images/17th.jpg
+email: DaleZorn@house.mi.gov
+image: https://www.house.mi.gov/media/Representatives/Zorn-034.jpg
 party:
 - name: Republican
 roles:
-- start_date: 2011-01-01
-  end_date: 2014-12-31
+- start_date: '2011-01-01'
+  end_date: '2014-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '56'
-- type: upper
+- end_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '17'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '34'
 links:
 - url: http://www.senate.michigan.gov/zorn
 - url: https://senate.michigan.gov/zorn
@@ -35,8 +39,7 @@ other_identifiers:
 sources:
 - url: http://www.senate.michigan.gov/zorn
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 5100 Binsfeld Bldg
-  voice: 517-373-3543
-  fax: 517-373-0927
-  classification: capitol
+- url: https://www.house.mi.gov/repdetail/repDaleZorn
+  note: Member Details Page
+- url: https://www.house.mi.gov/AllRepresentatives
+  note: Members List Page
