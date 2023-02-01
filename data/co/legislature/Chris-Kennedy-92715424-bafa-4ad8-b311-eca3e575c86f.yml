@@ -2,14 +2,20 @@ id: ocd-person/92715424-bafa-4ad8-b311-eca3e575c86f
 name: Chris Kennedy
 given_name: Chris
 family_name: Kennedy
+gender: Male
 email: chris.kennedy.house@state.co.us
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_kennedy%2C%20chris.jpg?itok=I5xgodEV
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '23'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '30'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 307 Denver, CO 80203

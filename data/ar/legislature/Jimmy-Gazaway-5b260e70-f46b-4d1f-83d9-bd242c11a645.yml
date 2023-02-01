@@ -7,9 +7,14 @@ image: https://www.arkleg.state.ar.us/Content/photos/2021/House/526_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '57'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '31'
 offices:
 - classification: district
   address: 800 West Court Street, Paragould, AR 72450
@@ -18,17 +23,29 @@ offices:
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Gazaway&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gazaway&ddBienniumSession=2021%2F2021R
+- url: https://www.jimmygazaway.com/
+  note: Campaign Website
 other_names:
 - name: Gazaway
+ids:
+  twitter: jimmygazaway
+  facebook: JimmyGazawayAR
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000370
+- scheme: followthemoney
+  identifier: '37971363'
+- scheme: votesmart
+  identifier: '166155'
+- scheme: ballotpedia
+  identifier: Jimmy_Gazaway
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Gazaway&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gazaway&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gazaway&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gazaway&ddBienniumSession=2021%2F2022F
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
 extras:
   seniority: '49'
   occupation: Attorney

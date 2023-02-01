@@ -2,18 +2,19 @@ id: ocd-person/a9040c8f-56d4-4ad9-83f5-e6f1216e7a5e
 name: Eric Lucero
 given_name: Eric
 family_name: Lucero
+gender: Male
 email: rep.eric.lucero@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/30B.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 30B
-offices:
-- classification: capitol
-  address: 221 State Office Building;St. Paul, MN 55155
-  voice: 651-296-1534
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '30'
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15438
 other_identifiers:

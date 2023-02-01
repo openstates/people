@@ -7,17 +7,33 @@ image: https://www.arkleg.state.ar.us/Content/photos/2021/House/594_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '94'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '15'
 offices:
 - classification: district
   address: 2706 West Dogwood Street, Rogers, AR 72758
   name: 'District Office #1'
 links:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr&ddBienniumSession=2021%2F2021R
+- url: https://johncarrforarkansas.com/
+  note: Campaign Website
 other_names:
 - name: Carr
+ids:
+  facebook: StateRepJohnPCarr
+other_identifiers:
+- scheme: followthemoney
+  identifier: '48412420'
+- scheme: votesmart
+  identifier: '187870'
+- scheme: ballotpedia
+  identifier: John_Carr
 sources:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr&ddBienniumSession=2021%2F2021S1

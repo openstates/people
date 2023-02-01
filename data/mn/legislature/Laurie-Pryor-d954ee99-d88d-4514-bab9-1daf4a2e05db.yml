@@ -2,14 +2,19 @@ id: ocd-person/d954ee99-d88d-4514-bab9-1daf4a2e05db
 name: Laurie Pryor
 given_name: Laurie
 family_name: Pryor
+gender: Female
 email: rep.laurie.pryor@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/48A.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 48A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 49A
 offices:
 - classification: capitol
   address: 571 State Office Building;St. Paul, MN 55155

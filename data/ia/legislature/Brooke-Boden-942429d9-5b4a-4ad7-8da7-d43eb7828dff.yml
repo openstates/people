@@ -2,18 +2,31 @@ id: ocd-person/942429d9-5b4a-4ad7-8da7-d43eb7828dff
 name: Brooke Boden
 given_name: Brooke
 family_name: Boden
-email: Brooke.Boden@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=30648
+gender: Female
+email: brooke.boden@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=30648
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '26'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '21'
+offices:
+- classification: capitol
+  voice: 515-281-3221
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30648
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://brookeforiowa.us7.list-manage.com/subscribe?u=2729c18ae239c6270f597da67&id=dbd3dab3ff
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=30648
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=30648
 extras:
-  cell phone: 515.971.7156
+  home email: brookeboden@gmail.com
+  occupation: Self-employed

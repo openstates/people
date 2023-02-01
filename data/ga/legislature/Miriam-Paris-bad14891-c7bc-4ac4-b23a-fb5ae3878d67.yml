@@ -2,6 +2,7 @@ id: ocd-person/bad14891-c7bc-4ac4-b23a-fb5ae3878d67
 name: Miriam Paris
 given_name: Miriam
 family_name: Paris
+gender: Female
 email: miriam.paris@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/paris-miriam-794.jpg
 party:
@@ -22,10 +23,13 @@ offices:
 - classification: district
   address: P.O. Box 14056; Macon, GA 31203
   voice: 478-737-3036
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
 - url: https://www.legis.ga.gov/members/house/794?session=1029
+- url: https://www.legis.ga.gov/members/house/794?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000448
@@ -41,6 +45,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/794?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/794?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Macon
   city: Macon

@@ -2,18 +2,19 @@ id: ocd-person/e4b1c526-c1b8-49b3-89f9-63c28fdcd563
 name: Dean Urdahl
 given_name: Dean
 family_name: Urdahl
+gender: Male
 email: rep.dean.urdahl@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/18A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 18A
-offices:
-- classification: capitol
-  address: 279 State Office Building;St. Paul, MN 55155
-  voice: 651-296-4344
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 16A
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/10792
 other_identifiers:

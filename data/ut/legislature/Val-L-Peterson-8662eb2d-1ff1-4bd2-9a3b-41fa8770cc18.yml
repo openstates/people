@@ -2,14 +2,20 @@ id: ocd-person/8662eb2d-1ff1-4bd2-9a3b-41fa8770cc18
 name: Val L. Peterson
 given_name: Val
 family_name: Peterson
+gender: Male
 email: vpeterson@le.utah.gov
 image: https://le.utah.gov/images/legislator/PETERVL.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '59'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '56'
 offices:
 - classification: district
   address: 528 W 1160 N, OREM, UT, 84057
@@ -45,6 +51,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=PETERVL
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist56.pdf
+  note: district demographics
 other_names:
 - name: Peterson, Val L.
 - name: Peterson, V.
@@ -60,10 +68,11 @@ sources:
 extras:
   service start: January 1, 2011
   profession: Higher Education Administration
-  education: B.A., Communications/PR, Brigham Young University; M.A., Communications,
+  education: |
+    B.A., Communications/PR, Brigham Young University; M.A., Communications,
     Brigham Young University; M.S., Strategic Studies, United States Army War College;
     Ph.D., Educational Leadership, Brigham Young University
   counties represented:
   - Utah
   home phone: 801-224-4473
-  title: Majority Assistant Whip
+  title: Executive Appropriations Chair

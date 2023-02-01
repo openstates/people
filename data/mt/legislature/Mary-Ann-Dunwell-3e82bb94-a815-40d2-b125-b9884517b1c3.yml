@@ -2,18 +2,24 @@ id: ocd-person/3e82bb94-a815-40d2-b125-b9884517b1c3
 name: Mary Ann Dunwell
 given_name: Mary Ann
 family_name: Dunwell
-email: maryann.dunwell@mtleg.gov
+gender: Female
+email: MaryAnn.Dunwell@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '84'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '42'
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4826
   note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5143
 - url: https://leg.mt.gov/legislator-information/roster/individual/6873
+- url: https://leg.mt.gov/legislator-information/roster/individual/7493
 other_names:
 - name: Dunwell, Mary Ann
 other_identifiers:
@@ -27,7 +33,4 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5143
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6873
-offices:
-- address: 2811 ALEXIS AVE;Helena, MT 59601-8655
-  voice: 406-461-5358
-  classification: capitol
+- url: https://leg.mt.gov/legislator-information/roster/individual/7493

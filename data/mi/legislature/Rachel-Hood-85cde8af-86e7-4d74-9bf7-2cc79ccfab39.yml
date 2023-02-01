@@ -2,18 +2,23 @@ id: ocd-person/85cde8af-86e7-4d74-9bf7-2cc79ccfab39
 name: Rachel Hood
 given_name: Rachel
 family_name: Hood
+gender: Female
 email: RachelHood@house.mi.gov
 image: https://housedems.com/sites/default/files/Images/Representative_Images/D076_Rachel_Hood/076_Hood.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '76'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '81'
 offices:
 - classification: capitol
-  address: Room 1095 House Office Building
-  voice: 1-517-373-0822
+  address: SHOB 11-1185
+  voice: 1-517-373-1790
 links:
 - url: https://housedems.com/hood
 sources:

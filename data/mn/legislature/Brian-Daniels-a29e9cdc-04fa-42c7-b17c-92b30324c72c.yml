@@ -2,18 +2,20 @@ id: ocd-person/a29e9cdc-04fa-42c7-b17c-92b30324c72c
 name: Brian Daniels
 given_name: Brian
 family_name: Daniels
-email: rep.brian.daniels@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/24B.gif?v=112221
+gender: Male
+email: rep.brian.daniels@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/19A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 24B
-offices:
-- classification: capitol
-  address: 231 State Office Building;St. Paul, MN 55155
-  voice: 651-296-8237
+- start_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 19A
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15433
 other_identifiers:

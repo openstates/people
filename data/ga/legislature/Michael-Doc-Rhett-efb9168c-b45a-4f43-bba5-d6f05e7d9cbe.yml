@@ -2,6 +2,7 @@ id: ocd-person/efb9168c-b45a-4f43-bba5-d6f05e7d9cbe
 name: Michael 'Doc' Rhett
 given_name: Michael 'Doc'
 family_name: Rhett
+gender: Male
 email: michael.rhett@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/rhett-michael--doc--855.jpg
 party:
@@ -16,10 +17,13 @@ offices:
   voice: 404-656-0054
 - classification: district
   address: P.O. Box 777; Marietta, GA 30061
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=855&Session=27
 - url: https://www.legis.ga.gov/members/senate/855?session=1029
+- url: https://www.legis.ga.gov/members/senate/855?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000396
@@ -31,11 +35,14 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/855?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/855?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Marietta
   city: Marietta
   georgia_id: 855
-  birthday: December 30
   press: 'https://senatepress.net/category/senate-press/michael-rhett '
   staff: Tina Coria
   staff email: tina.coria@senate.ga.gov

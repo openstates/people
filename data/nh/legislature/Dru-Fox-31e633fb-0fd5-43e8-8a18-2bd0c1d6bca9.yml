@@ -3,23 +3,31 @@ name: Dru Fox
 given_name: Dru
 family_name: Fox
 email: Dru.Fox@leg.state.nh.us
+image: http://www.gencourt.state.nh.us/house/images/memberpics/408975.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Cheshire 6
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 2
 offices:
 - classification: district
-  address: 50 Eastview Road;Keene, NH 03431
+  address: 50 Eastview Road Keene, NH 03431
   voice: 603-352-2332
-  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9873
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9873
 extras:
   county: Cheshire
-  elected status: new
+  elected status: Incumbent
   gender code: F

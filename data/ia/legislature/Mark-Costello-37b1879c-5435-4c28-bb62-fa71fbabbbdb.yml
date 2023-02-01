@@ -2,25 +2,27 @@ id: ocd-person/37b1879c-5435-4c28-bb62-fa71fbabbbdb
 name: Mark Costello
 given_name: Mark
 family_name: Costello
+gender: Male
 email: mark.costello@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=10749
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=10749
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '12'
-offices:
-- classification: capitol
-  voice: 515-281-3371
-- classification: district
-  address: 37265 Rains Ave, Imogene, IA 51645
-  name: 'District Office #1'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '8'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10749
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10749
 - url: http://www.iowasenaterepublicans.com/senators/mark-costello/
 - url: http://www.iowasenaterepublicans.com/senators/mark-costello/
+- url: http://http://www.iowasenaterepublicans.com/senators/mark-costello/
+- url: http://http://www.iowasenaterepublicans.com/senators/mark-costello/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000234
@@ -30,8 +32,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=10749
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=10749
 - url: https://www.legis.iowa.gov/legislators/senate
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=10749
 extras:
-  home address: 37265 Rains Ave, Imogene, IA 51645
-  cell phone: 712.520.0303
-  capitol phone: 515.281.3371
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
   occupation: Farmer

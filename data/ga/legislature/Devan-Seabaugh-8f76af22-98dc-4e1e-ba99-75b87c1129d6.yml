@@ -2,6 +2,7 @@ id: ocd-person/8f76af22-98dc-4e1e-ba99-75b87c1129d6
 name: Devan Seabaugh
 given_name: Devan
 family_name: Seabaugh
+gender: Male
 email: devan.seabaugh@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/seabaugh-devan-5009.jpg
 party:
@@ -15,6 +16,11 @@ offices:
 - classification: capitol
   address: 401-C Coverdell ; Atlanta, GA 30334
   voice: 404-656-0152
+links:
+- url: https://www.legis.ga.gov/members/house/5009?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: openstates
   identifier: ocd-person/408d7fb4-2898-4000-8d8f-f069ad239258
@@ -23,6 +29,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5009?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5009?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Marietta
   city: Marietta

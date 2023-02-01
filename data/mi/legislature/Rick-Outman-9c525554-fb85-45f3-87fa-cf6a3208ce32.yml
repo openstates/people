@@ -2,8 +2,9 @@ id: ocd-person/9c525554-fb85-45f3-87fa-cf6a3208ce32
 name: Rick Outman
 given_name: Rick
 family_name: Outman
-email: SenROutman@senate.michigan.gov
-image: https://senate.michigan.gov/_images/33rd.jpg
+gender: Male
+email: senroutman@senate.michigan.gov
+image: https://www.misenategop.com/wp-content/uploads/2019/01/Outman-580x770.jpg
 party:
 - name: Republican
 roles:
@@ -15,10 +16,18 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '33'
+offices:
+- classification: capitol
+  address: 4400 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  voice: 517-373-3760
 links:
 - url: https://www.senatorrickoutman.com/
 - url: https://www.senatorrickoutman.com/contact
   note: Contact
+- url: https://www.senatorrickoutman.com
+  note: Member Page
+- url: https://www.senatorrickoutman.com/contact
+  note: Member Contact Page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000108
@@ -27,8 +36,7 @@ other_identifiers:
 sources:
 - url: https://www.senatorrickoutman.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 4400 Binsfeld Bldg
-  voice: 517-373-3760
-  fax: 517-373-8661
-  classification: capitol
+- url: https://senate.michigan.gov/senators/SenatorData.json
+  note: Members List JSON Data Page
+- url: https://senate.michigan.gov/senators/senatorinfo_list.html
+  note: Members List HTML page

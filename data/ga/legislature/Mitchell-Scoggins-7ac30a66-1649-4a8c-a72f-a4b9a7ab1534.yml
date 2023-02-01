@@ -2,6 +2,7 @@ id: ocd-person/7ac30a66-1649-4a8c-a72f-a4b9a7ab1534
 name: Mitchell Scoggins
 given_name: Mitchell
 family_name: Scoggins
+gender: Male
 email: mitchell.scoggins@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/scoggins-mitchell-4964.jpg
 party:
@@ -16,10 +17,13 @@ offices:
   voice: 404-656-0254
 - classification: district
   address: P.O. Box 18; Rydal, GA 30171
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4964&Session=27
 - url: https://www.legis.ga.gov/members/house/4964?session=1029
+- url: https://www.legis.ga.gov/members/house/4964?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4964&Session=27
@@ -28,6 +32,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4964?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4964?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Cartersville
   city: Cartersville

@@ -2,6 +2,7 @@ id: ocd-person/432ef767-d4c8-4736-b2ac-96397205fb3d
 name: Stan Gunter
 given_name: Stan
 family_name: Gunter
+gender: Male
 email: stan.gunter@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/gunter-stan-4987.jpg
 party:
@@ -16,15 +17,22 @@ offices:
   voice: 404-656-0325
 - classification: district
   address: P.O. Box 2376; Blairsville, GA 30514
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4987?session=1029
+- url: https://www.legis.ga.gov/members/house/4987?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4987?session=1029
 - url: https://www.legis.ga.gov/members/house/4987?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4987?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4987?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Blairsville
   city: Blairsville
@@ -35,4 +43,3 @@ extras:
   spouse: Rita
   staff: Delane Roberts - Administrative Assistant
   staff email: delane.roberts@house.ga.gov
-  title: Chairman, Special Committee on Election Integrity

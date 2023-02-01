@@ -1,21 +1,29 @@
 id: ocd-person/5b93277b-9bb5-47e6-93e0-f75cb742b2d7
-name: "Marcelino Qui\xF1onez"
+name: "Marcelino Quinonez"
 given_name: Marcelino
-family_name: "Qui\xF1onez"
+family_name: "Quinonez"
+gender: Male
 email: mquinonez@azleg.gov
-image: "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/QUI\xD1ONEZ.jpg"
+image: https://www.azleg.gov/alisimages/nophoto.gif
 party:
 - name: Democratic
 roles:
-- start_date: 2021-12-16
+- start_date: '2021-12-16'
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '27'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '11'
 offices:
 - classification: capitol
-  address: House of Representatives;1700 West Washington;Room 115;Phoenix, AZ 85007
+  address: House of Representatives;1700 West Washington;Room 322;Phoenix, AZ 85007
   voice: 602-926-3285
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2113
+- url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2192
 sources:
 - url: https://www.azleg.gov/memberroster/?body=H
+extras:
+  title: Minority Whip

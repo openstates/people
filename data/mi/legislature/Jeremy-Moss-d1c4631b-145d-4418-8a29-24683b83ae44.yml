@@ -2,8 +2,9 @@ id: ocd-person/d1c4631b-145d-4418-8a29-24683b83ae44
 name: Jeremy Moss
 given_name: Jeremy
 family_name: Moss
+gender: Male
 email: senjmoss@senate.michigan.gov
-image: https://senate.michigan.gov/_images/11th.jpg
+image: https://senatedems.com/moss/wp-content/uploads/sites/13/2023/01/MDS_Moss_W3A6000.jpg
 party:
 - name: Democratic
 roles:
@@ -11,21 +12,32 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '35'
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '11'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '7'
+offices:
+- classification: capitol
+  address: S-132 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  voice: 517-373-7888
 links:
 - url: https://senatedems.com/moss/
 - url: https://senatedems.com/moss/contact
   note: Contact
+- url: https://senatedems.com/moss
+  note: Member Page
+- url: http://senatedems.com/moss/contact
+  note: Member Contact Page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000284
 sources:
 - url: https://senatedems.com/moss/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 6400 Binsfeld Bldg
-  voice: 517-373-7888
-  fax: 517-373-2983
-  classification: capitol
+- url: https://senate.michigan.gov/senators/SenatorData.json
+  note: Members List JSON Data Page
+- url: https://senate.michigan.gov/senators/senatorinfo_list.html
+  note: Members List HTML page

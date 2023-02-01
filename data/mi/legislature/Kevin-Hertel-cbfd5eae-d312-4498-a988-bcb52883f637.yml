@@ -2,18 +2,19 @@ id: ocd-person/cbfd5eae-d312-4498-a988-bcb52883f637
 name: Kevin Hertel
 given_name: Kevin
 family_name: Hertel
+gender: Male
 email: KevinHertel@house.mi.gov
 image: https://housedems.com/sites/default/files/Images/Representative_Images/D018_Kevin_Hertel/Hertel_Headshot.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '18'
-offices:
-- classification: capitol
-  address: Room 697 House Office Building
-  voice: 1-517-373-1180
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '12'
 links:
 - url: https://housedems.com/hertel
 other_identifiers:

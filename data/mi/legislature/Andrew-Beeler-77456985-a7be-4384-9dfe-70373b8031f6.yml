@@ -2,17 +2,18 @@ id: ocd-person/77456985-a7be-4384-9dfe-70373b8031f6
 name: Andrew Beeler
 given_name: Andrew
 family_name: Beeler
+gender: Male
 email: AndrewBeeler@house.mi.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '83'
-offices:
-- classification: capitol
-  address: Room 1187 House Office Building
-  voice: 1-517-373-0835
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '64'
 links:
 - url: http://repbeeler.com
 sources:

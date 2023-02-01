@@ -2,35 +2,54 @@ id: ocd-person/f009d442-b840-4308-b48e-f38591e5d0d4
 name: David Wallace
 given_name: David
 family_name: Wallace
+gender: Male
 email: David.Wallace@senate.ar.gov
-image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/518_sm.jpg
+image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/518_sm.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '22'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '19'
 offices:
 - classification: district
   address: P.O. Box 11, Leachville, AR 72438
-  voice: 870-919-8046
-  name: 'District Office #1'
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+Wallace+-+Senate+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
+- url: https://www.daveforarkansas.com/
+  note: Campaign Website
+- url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Wallace+-+Senator+Bio.pdf
+  note: Biography
 other_names:
 - name: D. Wallace
+ids:
+  twitter: SenDaveWallace
+  instagram: senatordavewallace
+  facebook: electdave
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000368
+- scheme: followthemoney
+  identifier: '22027719'
+- scheme: votesmart
+  identifier: '150294'
+- scheme: ballotpedia
+  identifier: Dave_Wallace_(Arkansas)
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
-  seniority: '23'
+  seniority: '13'
   occupation: Disaster Recovery, Wallace Resource Systems
   church affiliation: Southern Baptist
   veteran: 'Yes'

@@ -2,14 +2,20 @@ id: ocd-person/8e36fabe-9e2a-4ccd-b29a-1395d6318560
 name: Norman K. Thurston
 given_name: Norman
 family_name: Thurston
+gender: Male
 email: normthurston@le.utah.gov
 image: https://le.utah.gov/images/legislator/THURSNK.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '64'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '62'
 offices:
 - classification: district
   address: 965 E CENTER STREET, PROVO, UT, 84606
@@ -55,7 +61,8 @@ sources:
 extras:
   service start: January 1, 2015
   profession: Economist
-  education: B.A., Spanish and Agricultural Economics, Brigham Young University; M.A.,
+  education: |
+    B.A., Spanish and Agricultural Economics, Brigham Young University; M.A.,
     Economics, Princeton University; Ph.D. Economics, Princeton University
   counties represented:
   - Utah

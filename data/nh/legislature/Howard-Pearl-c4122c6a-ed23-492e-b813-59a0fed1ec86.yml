@@ -1,32 +1,29 @@
 id: ocd-person/c4122c6a-ed23-492e-b813-59a0fed1ec86
-name: Howard C. Pearl
+name: Howard Pearl
 given_name: Howard
 family_name: Pearl
 email: Howard.Pearl@leg.state.nh.us
-image: http://www.gencourt.state.nh.us/house/images/memberpics/408383.jpg
+image: http://www.gencourt.state.nh.us/Senate/images/senators/17.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-06'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 26
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '17'
 offices:
-- classification: district
-  address: 409 Loudon Ridge Road;Loudon, NH 03307-1708
-  voice: 603-231-1482
-  name: 'District Office #1'
+- classification: capitol
+  address: State House, Room 105-A 107 North Main Street Concord, NH 03301
+  voice: 603-271-4151
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-other_identifiers:
-- scheme: legacy_openstates
-  identifier: NHL001356
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district17.aspx
+  note: member detail page
 sources:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408383
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district17.aspx
 extras:
   county: Merrimack
-  elected status: Incumbent
+  elected status: new
   gender code: M

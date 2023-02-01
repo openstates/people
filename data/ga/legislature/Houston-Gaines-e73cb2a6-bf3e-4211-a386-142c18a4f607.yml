@@ -2,21 +2,19 @@ id: ocd-person/e73cb2a6-bf3e-4211-a386-142c18a4f607
 name: Houston Gaines
 given_name: Houston
 family_name: Gaines
+gender: Male
 email: houston.gaines@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/gaines-houston-4955.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '117'
-offices:
-- classification: capitol
-  address: 402 Coverdell Legislative Office Bldg; Atlanta, GA 30334
-  voice: 404-656-5087
-- classification: district
-  address: P.O. Box 1203; Athens, GA 30603
-  name: 'District Office #1'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '120'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4955&Session=27
 - url: https://www.legis.ga.gov/members/house/4955?session=1029

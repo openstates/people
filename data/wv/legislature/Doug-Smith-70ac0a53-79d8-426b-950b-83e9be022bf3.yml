@@ -2,18 +2,25 @@ id: ocd-person/70ac0a53-79d8-426b-950b-83e9be022bf3
 name: Doug Smith
 given_name: Doug
 family_name: Smith
+gender: Male
 email: doug.smith@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/smith_doug.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/smith_doug.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '27'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '39'
 offices:
 - classification: capitol
-  address: Room 204E, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
+  address: Room 229E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
   voice: 304-340-3187
+- classification: district
+  voice: 678-656-8233
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Smith
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Smith

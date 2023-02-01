@@ -7,13 +7,17 @@ image: https://legislature.maine.gov/house/house/Repository/MemberProfiles/3b421
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: 2022-12-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '121'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '27'
 offices:
 - classification: capitol
-  address: House Minority Office Room 332, State House 2 State House Station Augusta,
-    Maine 04333-0002
+  address: House Minority Office Room 332, State House 2 State House Station Augusta, Maine 04333-0002
 - classification: district
   address: 38 Emerald Drive, Milford, ME 04461
   voice: 207-356-8198

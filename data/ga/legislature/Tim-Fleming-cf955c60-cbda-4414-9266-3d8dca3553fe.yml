@@ -1,0 +1,29 @@
+id: ocd-person/cf955c60-cbda-4414-9266-3d8dca3553fe
+name: Tim Fleming
+given_name: Tim
+family_name: Fleming
+email: tim.fleming@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/fleming-tim-5046.jpg
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '114'
+links:
+- url: https://www.legis.ga.gov/members/house/5046?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5046?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Covington
+  city: Covington
+  georgia_id: 5046
+  birthday: August 19
+  occupation: Businessman
+  spouse: Lacey

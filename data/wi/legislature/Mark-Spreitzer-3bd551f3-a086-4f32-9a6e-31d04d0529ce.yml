@@ -2,19 +2,19 @@ id: ocd-person/3bd551f3-a086-4f32-9a6e-31d04d0529ce
 name: Mark Spreitzer
 given_name: Mark
 family_name: Spreitzer
+gender: Male
 email: Rep.Spreitzer@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2194.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '45'
-offices:
-- classification: capitol
-  address: Room 113 North State Capitol PO Box 8953 Madison, WI 53708
-  voice: 608-266-1192
-  fax: 608-282-3645
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '15'
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1613
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1839

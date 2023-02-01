@@ -2,19 +2,24 @@ id: ocd-person/381c0817-041f-4bfc-8c51-a83212b7b229
 name: Steven J. Lund
 given_name: Steven
 family_name: Lund
+gender: Male
 email: slund@le.utah.gov
 image: https://le.utah.gov/images/legislator/LUNDSJ.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '58'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '66'
 offices:
 - classification: district
   address: PO Box 87, Manti, UT, 84642
-  voice: 385-358-3267
 links:
 - url: http://house.utah.gov/rep/LUNDSJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=LUNDSJ
@@ -27,6 +32,8 @@ links:
   note: legislation
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415447
   note: finance report
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist66.pdf
+  note: district demographics
 other_names:
 - name: Lund, Steven J.
 - name: Lund, S.

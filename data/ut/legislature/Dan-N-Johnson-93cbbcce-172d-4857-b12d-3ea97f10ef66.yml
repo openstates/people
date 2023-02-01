@@ -2,19 +2,21 @@ id: ocd-person/93cbbcce-172d-4857-b12d-3ea97f10ef66
 name: Dan N. Johnson
 given_name: Dan
 family_name: Johnson
+gender: Male
 email: dnjohnson@le.utah.gov
 image: https://le.utah.gov/images/legislator/JOHNSDN.jpg
 party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '4'
-offices:
-- classification: district
-  address: 526 W 600 S, LOGAN, UT, 84321
-  voice: 435-770-7051
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '3'
 links:
 - url: http://house.utah.gov/rep/JOHNSDN
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=JOHNSDN
@@ -39,8 +41,7 @@ sources:
 extras:
   service start: January 1, 2019
   profession: Retired educator
-  education: B.S., Education; M.S., Secondary Education; Ed.S, Specialist in Administration;
-    Ed.D., Educational Leadership
+  education: B.S., Education; M.S., Secondary Education; Ed.S, Specialist in Administration; Ed.D., Educational Leadership
   counties represented:
   - Cache
   cell phone: 435-770-7051

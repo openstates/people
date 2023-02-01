@@ -2,20 +2,25 @@ id: ocd-person/c71cb4ca-cc90-4ba3-8ae8-1a41199ee29f
 name: Eric L. Householder
 given_name: Eric
 family_name: Householder
+gender: Male
 email: eric.householder@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/householder_eric.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/householder_eric.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '64'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '96'
 offices:
 - classification: capitol
-  address: Room 462M, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3230
+  address: Room 228M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
+  voice: 304-340-3220
 - classification: district
-  address: 212 Snooks Lane;Martinsburg, WV 25405
+  address: 212 Snooks Lane Martinsburg, WV 25405
   voice: 304-262-9004
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Householder
@@ -32,3 +37,5 @@ sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Householder
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Householder
+extras:
+  title: Majority Leader

@@ -2,27 +2,28 @@ id: ocd-person/8902ec21-c923-4923-853e-2eeecbc51793
 name: Nate Boulton
 given_name: Nate
 family_name: Boulton
+gender: Male
 email: nate.boulton@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18073
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18073
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '16'
-offices:
-- classification: capitol
-  voice: 515-281-3371
-- classification: district
-  address: 3127 Thompson Ave, Des Moines, IA 50317
-  voice: 515-265-1389
-  name: 'District Office #1'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '20'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18073
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18073
 - url: http://www.senate.iowa.gov/senator/boulton
 - url: http://https://mailchi.mp/legis/boulton
 - url: http://www.nateboulton.com/
+- url: http://http://www.senate.iowa.gov/senator/boulton
+- url: http://https://www.senate.iowa.gov/democrats/subscribe/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000537
@@ -30,9 +31,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18073
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18073
 - url: https://www.legis.iowa.gov/legislators/senate
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18073
 extras:
-  home phone: 515.265.1389
-  home address: 3127 Thompson Ave, Des Moines, IA 50317
-  business phone: 515.288.4148
-  capitol phone: 515.281.3371
+  business address: 1007 E Grand Ave, Des Moines, IA 50319
   occupation: Attorney

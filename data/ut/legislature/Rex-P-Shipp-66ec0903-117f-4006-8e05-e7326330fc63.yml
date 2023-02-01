@@ -2,18 +2,20 @@ id: ocd-person/66ec0903-117f-4006-8e05-e7326330fc63
 name: Rex P. Shipp
 given_name: Rex
 family_name: Shipp
+gender: Male
 email: rshipp@le.utah.gov
 image: https://le.utah.gov/images/legislator/SHIPPRP.jpg
 party:
 - name: Republican
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '72'
-offices:
-- classification: district
-  address: 749 S ST JAMES PLACE, CEDAR CITY, UT, 84720
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '71'
 links:
 - url: http://house.utah.gov/rep/SHIPPRP
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SHIPPRP
@@ -42,8 +44,7 @@ sources:
 extras:
   service start: January 1, 2019
   profession: Financial Adviser
-  education: B.S., Industrial Technology, Southern Utah University; CLU, ChFC, American
-    College
+  education: B.S., Industrial Technology, Southern Utah University; CLU, ChFC, American College
   counties represented:
   - Iron
   home phone: 435-590-1073

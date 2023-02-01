@@ -2,21 +2,19 @@ id: ocd-person/3b2b9f31-6859-4582-8d82-581597c0c178
 name: Emory Dunahoo
 given_name: Emory
 family_name: Dunahoo
+gender: Male
 email: emory.dunahoo@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/dunahoo-emory-797.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '30'
-offices:
-- classification: capitol
-  address: 401-A Coverdell Legislative Office Building; Atlanta, GA 30334
-  voice: 404-656-0152
-- classification: district
-  address: 4495 Bryant Quarter Rd.; Gillsville, GA 30543
-  name: 'District Office #1'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '31'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
 - url: https://www.legis.ga.gov/members/house/797?session=1029

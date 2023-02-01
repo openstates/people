@@ -2,14 +2,20 @@ id: ocd-person/9b68d2a2-ead2-401e-a225-1edae68f6099
 name: Carrie Koelker
 given_name: Carrie
 family_name: Koelker
+gender: Female
 email: carrie.koelker@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27001
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27001
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-03'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '29'
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '33'
 offices:
 - classification: capitol
   voice: 515-281-3371
@@ -19,11 +25,13 @@ offices:
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27001
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27001
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27001
 - url: http://www.iowasenaterepublicans.com/senators/carrie-koelker/
 - url: http://www.iowasenaterepublicans.com/senators/carrie-koelker/
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27001
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27001
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27001
 - url: https://www.legis.iowa.gov/legislators/senate
 extras:
   home address: Dyersville, IA 52040

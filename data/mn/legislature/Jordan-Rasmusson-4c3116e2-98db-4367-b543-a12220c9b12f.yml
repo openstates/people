@@ -2,15 +2,20 @@ id: ocd-person/4c3116e2-98db-4367-b543-a12220c9b12f
 name: Jordan Rasmusson
 given_name: Jordan
 family_name: Rasmusson
+gender: Male
 email: rep.jordan.rasmusson@house.mn
 image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/08A.gif?v=112221
 party:
 - name: Republican
 roles:
-- start_date: 2021-01-05
+- start_date: '2021-01-05'
+  end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 8A
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '9'
 offices:
 - classification: capitol
   address: 291 State Office Building;St. Paul, MN 55155

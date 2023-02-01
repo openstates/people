@@ -7,9 +7,13 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377309.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 26
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 28
 offices:
 - classification: district
   address: 243 Middle Road;Portsmouth, NH 03801-4803

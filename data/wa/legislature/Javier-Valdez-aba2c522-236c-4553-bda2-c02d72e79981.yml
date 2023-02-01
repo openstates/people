@@ -2,25 +2,33 @@ id: ocd-person/aba2c522-236c-4553-bda2-c02d72e79981
 name: Javier Valdez
 given_name: Javier
 family_name: Valdez
+gender: Male
 email: javier.valdez@leg.wa.gov
-image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?a=House&m=27975
+image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=27975
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '46'
+- start_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '46'
 offices:
 - classification: capitol
-  address: 306 John L. O'Brien Building; PO Box 40600; Olympia, WA 98504
-  voice: 206-905-8739
+  address: 403 Legislative Building; PO Box 40446; Olympia, WA 98504
+  voice: 360-786-7690
 links:
 - url: http://housedemocrats.wa.gov/legislators/Javier-Valdez/
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://housedemocrats.wa.gov/Valdez/
+- url: http://sdc.wastateleg.org/Valdez/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000275
 sources:
 - url: http://www.leg.wa.gov/house/representatives/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=House
+- url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate

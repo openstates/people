@@ -2,7 +2,8 @@ name: Update Database
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   update-database:
@@ -10,15 +11,21 @@ jobs:
 
     steps:
     # Python & dependency installation
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - name: Yaml file linting
+      run: |
+        docker run --rm \
+        -v $(pwd):/code \
+        registry.gitlab.com/pipeline-components/yamllint:latest \
+        -s .
     - name: setup Python 3.9
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.9
     - name: install Poetry
-      uses: snok/install-poetry@v1.1.1
+      uses: snok/install-poetry@v1.3.3
     - name: cache Poetry virtualenv
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       id: cache
       with:
         path: ~/.virtualenvs/
@@ -50,4 +57,3 @@ jobs:
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
-

@@ -2,6 +2,7 @@ id: ocd-person/2019a2c5-82cd-4759-b747-5aa22ef62acb
 name: Mike Glanton
 given_name: Mike
 family_name: Glanton
+gender: Male
 email: mike.glanton@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/glanton-mike-111.jpg
 party:
@@ -16,10 +17,13 @@ offices:
   voice: 404-657-1803
 - classification: district
   address: P.O. Box 216; Jonesboro, GA 30236
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=111&Session=27
 - url: https://www.legis.ga.gov/members/house/111?session=1029
+- url: https://www.legis.ga.gov/members/house/111?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000288
@@ -31,6 +35,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/111?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/111?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Jonesboro
   city: Jonesboro
@@ -39,5 +47,5 @@ extras:
   occupation: Corporate Chief Operating Officer
   press: https://house-press.com/representative/Mike-Glanton
   spouse: Pearla
-  staff: a href="
-  staff email: ''
+  staff: Shivonna Parker - Administrative Assistant
+  staff email: shivonna.parker@house.ga.gov

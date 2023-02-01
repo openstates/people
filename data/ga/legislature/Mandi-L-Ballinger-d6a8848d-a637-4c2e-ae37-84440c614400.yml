@@ -2,6 +2,7 @@ id: ocd-person/d6a8848d-a637-4c2e-ae37-84440c614400
 name: Mandi Ballinger
 given_name: Mandi
 family_name: Ballinger
+gender: Female
 email: mandi.ballinger@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/ballinger-mandi-808.jpg
 party:
@@ -16,10 +17,13 @@ offices:
   voice: 404-656-7153
 - classification: district
   address: P.O. Box 5123; Canton, GA 30114
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=808&Session=27
 - url: https://www.legis.ga.gov/members/house/808?session=1029
+- url: https://www.legis.ga.gov/members/house/808?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000242
@@ -31,6 +35,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/808?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/808?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Canton
   city: Canton
@@ -40,4 +48,3 @@ extras:
   press: https://house-press.com/representative/Mandi-Ballinger
   staff: a href="
   staff email: ''
-  title: Chairman, Juvenile Justice

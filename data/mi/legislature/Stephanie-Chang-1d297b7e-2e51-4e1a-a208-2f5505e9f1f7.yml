@@ -2,8 +2,9 @@ id: ocd-person/1d297b7e-2e51-4e1a-a208-2f5505e9f1f7
 name: Stephanie Chang
 given_name: Stephanie
 family_name: Chang
+gender: Female
 email: senschang@senate.michigan.gov
-image: https://senate.michigan.gov/_images/1st.jpg
+image: https://senatedems.com/chang/wp-content/uploads/sites/9/2022/12/MDS_Chang_DSC5412.jpg
 party:
 - name: Democratic
 roles:
@@ -11,21 +12,32 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '6'
-- type: upper
+- end_date: '2022-12-31'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '1'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '3'
+offices:
+- classification: capitol
+  address: 4100 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  voice: 517-373-7346
 links:
 - url: https://senatedems.com/chang/
 - url: https://senatedems.com/chang/contact
   note: Contact
+- url: https://senatedems.com/chang
+  note: Member Page
+- url: http://senatedems.com/chang/contact
+  note: Member Contact Page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000291
 sources:
 - url: https://senatedems.com/chang/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: S-9 Capitol Bldg
-  voice: 517-373-7346
-  fax: 517-373-9320
-  classification: capitol
+- url: https://senate.michigan.gov/senators/SenatorData.json
+  note: Members List JSON Data Page
+- url: https://senate.michigan.gov/senators/senatorinfo_list.html
+  note: Members List HTML page

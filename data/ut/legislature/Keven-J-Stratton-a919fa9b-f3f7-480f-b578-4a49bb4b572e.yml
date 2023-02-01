@@ -2,18 +2,20 @@ id: ocd-person/a919fa9b-f3f7-480f-b578-4a49bb4b572e
 name: Keven J. Stratton
 given_name: Keven
 family_name: Stratton
+gender: Male
 email: kstratton@le.utah.gov
 image: https://le.utah.gov/images/legislator/STRATKJ.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '48'
-offices:
-- classification: district
-  address: 350 North State, Suite 350, Salt Lake City, UT, 84114
-  voice: 801-836-6010
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '58'
 links:
 - url: http://house.utah.gov/rep/STRATKJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=STRATKJ
@@ -57,8 +59,7 @@ sources:
 extras:
   service start: Appointed May 8, 2012
   profession: Attorney, Businessman, Farmer
-  education: B.S., Finance, Brigham Young University; J.D., J. Reuben Clark Law School,
-    Brigham Young University
+  education: B.S., Finance, Brigham Young University; J.D., J. Reuben Clark Law School, Brigham Young University
   counties represented:
   - Utah
   cell phone: 801-836-6010

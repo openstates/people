@@ -2,14 +2,20 @@ id: ocd-person/84e203b4-277c-4e10-aeb3-a80158bdf525
 name: Johnny Mautz
 given_name: Johnny
 family_name: Mautz
+gender: Male
 email: Johnny.Mautz@house.state.md.us
 image: http://mgaleg.maryland.gov/2022RS/images/mautz01.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: 37B
+- start_date: '2023-01-11'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: '37'
 offices:
 - classification: capitol
   address: 424 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401

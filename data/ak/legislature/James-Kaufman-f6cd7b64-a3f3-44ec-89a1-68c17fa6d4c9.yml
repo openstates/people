@@ -7,14 +7,28 @@ image: http://akleg.gov/images/legislators/kau.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '28'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: F
 offices:
 - classification: capitol
-  address: State Capitol Room 405; Juneau, AK, 99801
+  address: State Capitol Room 115, Juneau, AK, 99801
   voice: 907-465-4949
+- classification: district
+  address: 1500 W Benson Blvd, Anchorage, AK, 99503
+  voice: 907-269-0244
 links:
 - url: http://www.akleg.gov/basis/Member/Detail/32?code=kau
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=KAU
 sources:
 - url: http://w3.akleg.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=KAU
+  note: member detail page
+- url: https://www.akleg.gov/basis/mbr_info.asp?session=33
+  note: member list page
+extras:
+  toll_free_phone: 800-478-4950

@@ -2,10 +2,13 @@ id: ocd-person/d97661f8-25e9-4b1d-8ad6-25e26ea802c4
 name: James Hieb
 given_name: James
 family_name: Hieb
+gender: Male
 email: Rep.JamesHieb@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/hieb/PublishingImages/member_photo.jpg
 party:
-- name: Democratic
+- end_date: '2023-01-11'
+  name: Democratic
+- name: Republican
 roles:
 - start_date: 2022-02-08
   type: lower
@@ -14,9 +17,11 @@ roles:
 offices:
 - classification: capitol
   address: 900 Court St NE, Room H-377, Salem, OR, 97301
+  voice: 503-986-1439
 links:
 - url: https://www.oregonlegislature.gov/hieb
   note: homepage
 sources:
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
 - url: https://www.oregonlegislature.gov/hieb
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

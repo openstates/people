@@ -2,14 +2,20 @@ id: ocd-person/0f288c5b-484a-4b70-8209-0a23f922edd1
 name: David Jenkins
 given_name: David
 family_name: Jenkins
+gender: Male
 email: david.jenkins@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/jenkins-david-5005.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '132'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '136'
 offices:
 - classification: capitol
   address: 504-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334

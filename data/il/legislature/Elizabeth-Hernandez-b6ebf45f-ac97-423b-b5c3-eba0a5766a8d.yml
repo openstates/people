@@ -1,29 +1,38 @@
 id: ocd-person/b6ebf45f-ac97-423b-b5c3-eba0a5766a8d
-name: Elizabeth Hernandez
+name: Elizabeth "Lisa" Hernandez
 given_name: Elizabeth
 family_name: Hernandez
+gender: Female
 email: office@repehernandez.com
 image: https://ilga.gov/images/members/{4E4C2A21-FDC2-48CA-9BA8-462A62E7A33B}.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '24'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '2'
 offices:
 - classification: capitol
   address: 109 Capitol Building Springfield, IL 62706
   voice: 217-782-8173
 - classification: district
-  address: 6117 West Cermak Road;Cicero, IL 60804
+  address: 6117 West Cermak Road Cicero, IL 60804
   voice: 708-222-5240
   fax: 708-222-5241
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2568
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2816
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2816
   note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3037
+  note: homepage
+other_names:
+- name: Elizabeth Hernandez
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ILL000112
@@ -36,3 +45,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2816
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2816
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3037

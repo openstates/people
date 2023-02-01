@@ -2,15 +2,14 @@ id: ocd-person/1c773db6-4667-451a-9e53-042f47f99c08
 name: William M. Hastings
 given_name: William M.
 family_name: Hastings
+email: mayor@cityofkaty.com.
 roles:
-- jurisdiction: ocd-jurisdiction/country:us/state:tx/place:katy/government
+- end_date: '2023-05-31'
   type: mayor
-  end_date: '2023-05-31'
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/place:katy/government
+offices:
+- classification: primary
+  address: 901 Avenue C;Katy, TX 77493
+  voice: 281-391-4800
 sources:
 - url: https://www.cityofkaty.com/government/mayor-city-council/mayor-william-m-bill-hastings
-links: []
-email: mayor@cityofkaty.com.
-offices:
-- address: 901 Avenue C;Katy, TX 77493
-  voice: 281-391-4800
-  classification: primary

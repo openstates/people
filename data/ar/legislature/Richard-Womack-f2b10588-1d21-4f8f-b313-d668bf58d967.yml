@@ -8,9 +8,14 @@ party:
 - name: Republican
 roles:
 - start_date: 2013-01-01
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '18'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '90'
 offices:
 - classification: district
   address: 866 North 12th Street, Arkadelphia, AR 71923
@@ -19,8 +24,12 @@ offices:
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Womack&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Womack&ddBienniumSession=2021%2F2021R
+- url: https://www.richardwomack.com
+  note: Campaign Website
 other_names:
 - name: Womack
+ids:
+  facebook: richard.womack.731
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000382
@@ -28,6 +37,12 @@ other_identifiers:
   identifier: ARL000252
 - scheme: openstates
   identifier: ocd-person/d3d54087-6425-406b-b5a1-7202eaf41856
+- scheme: followthemoney
+  identifier: '10885342'
+- scheme: votesmart
+  identifier: '136630'
+- scheme: ballotpedia
+  identifier: Richard_Womack
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Womack&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Womack&ddBienniumSession=2021%2F2021R

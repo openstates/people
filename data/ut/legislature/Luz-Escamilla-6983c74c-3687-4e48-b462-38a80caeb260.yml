@@ -2,18 +2,19 @@ id: ocd-person/6983c74c-3687-4e48-b462-38a80caeb260
 name: Luz Escamilla
 given_name: Luz
 family_name: Escamilla
+gender: Female
 email: lescamilla@le.utah.gov
 image: https://le.utah.gov/images/legislator/ESCAML.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '1'
-offices:
-- classification: district
-  address: 1004 N MORTON DR, SALT LAKE CITY, UT, 84116
-  voice: 801-550-6434
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '10'
 links:
 - url: https://senate.utah.gov/luz-escamilla
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ESCAML
@@ -30,6 +31,8 @@ links:
   note: finance report
 - url: https://senate.utah.gov/sen/ESCAML/
   note: homepage
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist10.pdf
+  note: district demographics
 other_names:
 - name: Escamilla, L.
 - name: Escamilla, Luz
@@ -51,4 +54,4 @@ extras:
   counties represented:
   - Salt Lake
   cell phone: 801-550-6434
-  title: Minority Whip
+  title: Minority Leader

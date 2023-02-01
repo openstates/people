@@ -2,14 +2,19 @@ id: ocd-person/da4c1675-372e-4c9d-9599-ce45502c93fc
 name: Brian Johnson
 given_name: Brian
 family_name: Johnson
-email: rep.brian.johnson@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/32A.gif?v=112221
+gender: Male
+email: rep.brian.johnson@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/28A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 32A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 28A
 offices:
 - classification: capitol
   address: 243 State Office Building;St. Paul, MN 55155

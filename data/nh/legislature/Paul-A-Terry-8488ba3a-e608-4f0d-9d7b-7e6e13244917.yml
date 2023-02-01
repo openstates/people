@@ -6,19 +6,24 @@ email: Paul.Terry@leg.state.nh.us
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-06'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 5
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 7
 offices:
 - classification: district
-  address: 915 Stockbridge Corner Road;Alton, NH 03809
-  name: 'District Office #1'
+  address: 915 Stockbridge Corner Road Alton, NH 03809
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9866
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9866
 extras:
   county: Belknap
-  elected status: new
+  elected status: Incumbent
   gender code: M

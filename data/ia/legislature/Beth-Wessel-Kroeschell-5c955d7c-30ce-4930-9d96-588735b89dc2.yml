@@ -2,25 +2,28 @@ id: ocd-person/5c955d7c-30ce-4930-9d96-588735b89dc2
 name: Beth Wessel-Kroeschell
 given_name: Beth
 family_name: Wessel-Kroeschell
+gender: Female
 email: beth.wessel-kroeschell@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=774
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=774
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '45'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '49'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 518 Ash Ave, Ames, IA 50014
-  voice: 515-451-4307
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=774
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=774
 - url: http://eepurl.com/gXNo2T
+- url: http://http://eepurl.com/gXNo2T
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000144
@@ -28,9 +31,6 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=774
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=774
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=774
 extras:
-  home phone: 515.451.4307
   home email: bweskroe81@gmail.com
-  home address: 518 Ash Ave, Ames, IA 50014
-  cell phone: 515.451.4307
-  capitol phone: 515.281.3221

@@ -2,18 +2,19 @@ id: ocd-person/d987aff4-abcf-4f2a-826d-b5741d065d44
 name: Angela Romero
 given_name: Angela
 family_name: Romero
+gender: Female
 email: angelaromero@le.utah.gov
 image: https://le.utah.gov/images/legislator/ROMERAY.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '26'
-offices:
-- classification: district
-  address: 350 North State, Suite 350, Salt Lake City, UT, 84114
-  voice: 801-722-4972
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '25'
 links:
 - url: http://house.utah.gov/rep/ROMERAY
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ROMERAY
@@ -53,8 +54,7 @@ sources:
 extras:
   service start: January 1, 2013
   profession: Program Manager
-  education: B.S., Political Science and Chicano Studies, University of Utah; M.P.A.,
-    University of Utah
+  education: B.S., Political Science and Chicano Studies, University of Utah; M.P.A., University of Utah
   counties represented:
   - Salt Lake
   cell phone: 801-722-4972

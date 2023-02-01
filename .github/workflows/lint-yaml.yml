@@ -2,17 +2,25 @@ name: Lint YAML
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
     paths:
       - "data/**"
       - "settings.yml"
+      - ".yamllint"
       - "poetry.lock"
+      - "pyproject.toml"
+      - ".github/workflows/lint-yaml.yml"
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
     paths:
       - "data/**"
       - "settings.yml"
+      - ".yamllint"
       - "poetry.lock"
+      - "pyproject.toml"
+      - ".github/workflows/lint-yaml.yml"
 
 jobs:
   lint:
@@ -20,15 +28,21 @@ jobs:
 
     steps:
     # Python & dependency installation
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    - name: Yaml file linting
+      run: |
+        docker run --rm \
+        -v $(pwd):/code \
+        registry.gitlab.com/pipeline-components/yamllint:latest \
+        -s .
     - name: setup Python 3.9
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: 3.9
     - name: install Poetry
-      uses: snok/install-poetry@v1.1.1
+      uses: snok/install-poetry@v1.3.3
     - name: cache Poetry virtualenv
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       id: cache
       with:
         path: ~/.virtualenvs/
@@ -41,10 +55,10 @@ jobs:
       run: poetry install
       # if: steps.cache.outputs.cache-hit != 'true'
 
-    - name: lint people
-      run: poetry run os-people lint
-      env:
-        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+    #- name: lint people
+    #  run: poetry run os-people lint
+    #  env:
+    #    OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
     - name: lint committees
       run: poetry run os-committees lint
       env:

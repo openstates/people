@@ -2,15 +2,21 @@ id: ocd-person/1773d5d5-4967-4af5-9880-3106ace372d7
 name: Jefferson S. Burton
 given_name: Jefferson
 family_name: Burton
+gender: Male
 email: jburton@le.utah.gov
 image: https://le.utah.gov/images/legislator/BURTOJS.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '66'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '64'
 offices:
 - classification: district
   address: 350 North State, Suite 350, Salt Lake City, UT, 84114
@@ -27,6 +33,8 @@ links:
   note: legislation
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415546
   note: finance report
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist64.pdf
+  note: district demographics
 other_names:
 - name: Burton, Jefferson S.
 - name: Burton, J.
@@ -37,8 +45,7 @@ sources:
 extras:
   service start: January 1, 2021
   profession: Senior Vice President - Community Development - Zions Bank
-  education: B.S. University of New York - M.S. United States Army War College - M.A.
-    University of Phoenix
+  education: B.S. University of New York - M.S. United States Army War College - M.A. University of Phoenix
   counties represented:
   - Utah
   cell phone: 385-225-0575

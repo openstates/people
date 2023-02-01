@@ -2,34 +2,48 @@ id: ocd-person/38a8f4c9-1138-461c-a8a1-ac853c79d3ca
 name: Dwight Tosh
 given_name: Dwight
 family_name: Tosh
+gender: Male
 email: dwight.tosh@arkansashouse.org
-image: https://www.arkleg.state.ar.us/Content/photos/2021/House/503_sm.jpg
+image: https://www.arkleg.state.ar.us/Content/photos/2023/House/503_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '52'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '38'
 offices:
 - classification: district
   address: 4513 Butler Road, Jonesboro, AR 72404
-  voice: 870-926-0423
-  name: 'District Office #1'
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Tosh&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Tosh&ddBienniumSession=2021%2F2021R
 other_names:
 - name: Tosh
+ids:
+  facebook: State Representative Dwight Tosh
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000336
+- scheme: followthemoney
+  identifier: '22027715'
+- scheme: votesmart
+  identifier: '150290'
+- scheme: ballotpedia
+  identifier: Dwight_Tosh
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Tosh&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Tosh&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Tosh&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Tosh&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
-  seniority: '31'
+  seniority: '19'
   occupation: Retired
   church affiliation: Community Fellowship
   veteran: 'No'

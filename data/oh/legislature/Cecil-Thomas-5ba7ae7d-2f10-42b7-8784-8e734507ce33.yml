@@ -7,9 +7,13 @@ image: http://www.ohiosenate.gov/Assets/Members/Headshots/Medium/2801.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '9'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '25'
 links:
 - url: http://www.ohiosenate.gov/senators/thomas
 other_identifiers:
@@ -17,7 +21,3 @@ other_identifiers:
   identifier: OHL000295
 sources:
 - url: http://www.ohiosenate.gov/senators
-offices:
-- address: Senate Building;1 Capitol Square;2nd Floor;Columbus, OH 43215
-  voice: 614-466-5980
-  classification: capitol

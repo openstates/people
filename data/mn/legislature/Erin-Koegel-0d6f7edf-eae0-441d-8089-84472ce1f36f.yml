@@ -2,14 +2,19 @@ id: ocd-person/0d6f7edf-eae0-441d-8089-84472ce1f36f
 name: Erin Koegel
 given_name: Erin
 family_name: Koegel
-email: rep.erin.koegel@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/37A.gif?v=112221
+gender: Female
+email: rep.erin.koegel@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/39A.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 37A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 39A
 offices:
 - classification: capitol
   address: 445 State Office Building;St. Paul, MN 55155

@@ -2,21 +2,20 @@ id: ocd-person/f4aa8149-e34f-4a7d-b43a-fdc975e797de
 name: Geoff Foster
 given_name: Geoff
 family_name: Foster
+gender: Male
 email: geoff.foster@wvhouse.gov
 image: http://www.wvlegislature.gov/images/members/2022/house/foster_geoff.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '15'
-offices:
-- classification: capitol
-  address: Room 211E, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3121
-- classification: district
-  address: 10 Hawthorne Street;Winfield, WV 25213
-  voice: 304-561-4229
+- start_date: '2022-12-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '20'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Foster%2C+G.
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Foster

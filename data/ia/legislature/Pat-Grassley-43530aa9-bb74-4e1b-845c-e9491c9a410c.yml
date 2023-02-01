@@ -2,26 +2,30 @@ id: ocd-person/43530aa9-bb74-4e1b-845c-e9491c9a410c
 name: Pat Grassley
 given_name: Pat
 family_name: Grassley
+gender: Male
 email: pat.grassley@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=6277
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=6277
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '50'
+- start_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '57'
 offices:
 - classification: capitol
   voice: 515-281-3221
-- classification: district
-  address: 30601 Deer Trail Dr, New Hartford, IA 50660
-  voice: 319-214-0351
-  name: 'District Office #1'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6277
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6277
 - url: http://iowahouserepublicans.com/members/pat-grassley
 - url: http://https://mailchi.mp/78e98d00d91a/sign-up-for-my-newsletter
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://twitter.com/PatGrassley
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000072
@@ -31,8 +35,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6277
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6277
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=6277
 extras:
-  home phone: 319.214.0351
-  home address: 30601 Deer Trail Dr, New Hartford, IA 50660
-  capitol phone: 515.281.3221
+  home email: patgrassley@gmail.com
   occupation: Farmer

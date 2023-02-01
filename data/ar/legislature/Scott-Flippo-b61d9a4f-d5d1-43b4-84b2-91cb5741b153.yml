@@ -7,9 +7,14 @@ image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/508_sm.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '17'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '23'
 offices:
 - classification: district
   address: P.O. Box 705, Bull Shoals, AR 72619
@@ -19,17 +24,29 @@ links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+Flippo+-+Senate+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
+- url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2021%2FMember%20Profiles%2FSenator+Flippo+-+Senate+Bio.pdf
+  note: Biography
 other_names:
 - name: Flippo
+ids:
+  twitter: ScottFlippo
+  facebook: scott.flippo.9
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000354
+- scheme: followthemoney
+  identifier: '9800262'
+- scheme: votesmart
+  identifier: '150244'
+- scheme: ballotpedia
+  identifier: Scott_Flippo
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Flippo&ddBienniumSession=2021%2F2022F
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
 extras:
   seniority: '18'
   occupation: Assisted Living Owner

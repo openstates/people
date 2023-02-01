@@ -2,6 +2,7 @@ id: ocd-person/a1c1163d-af8d-4b88-9365-07717d4a45c3
 name: Jeff Irwin
 given_name: Jeff
 family_name: Irwin
+gender: Male
 email: senjirwin@senate.michigan.gov
 image: https://senate.michigan.gov/_images/18th.jpg
 party:
@@ -12,9 +13,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '53'
-- type: upper
+- end_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '18'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '15'
 links:
 - url: https://senatedems.com/irwin/
 - url: https://senatedems.com/irwin/contact/
@@ -27,8 +32,3 @@ other_identifiers:
 sources:
 - url: https://senatedems.com/irwin/
 - url: https://senate.michigan.gov/senatorinfo_list.html
-offices:
-- address: 5300 Binsfeld Bldg
-  voice: 517-373-2406
-  fax: 517-373-5679
-  classification: capitol

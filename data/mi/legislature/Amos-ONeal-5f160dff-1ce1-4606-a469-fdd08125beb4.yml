@@ -2,17 +2,18 @@ id: ocd-person/5f160dff-1ce1-4606-a469-fdd08125beb4
 name: Amos O'Neal
 given_name: Amos
 family_name: O'Neal
+gender: Male
 email: AmosOneal@house.mi.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '95'
-offices:
-- classification: capitol
-  address: Room 1199 House Office Building
-  voice: 1-517-373-0152
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '94'
 links:
 - url: https://housedems.com/amos-oneal/
 sources:

@@ -2,14 +2,20 @@ id: ocd-person/aee56bc8-022b-4351-81c0-9b5050846a8b
 name: Kay J. Christofferson
 given_name: Kay
 family_name: Christofferson
+gender: Male
 email: kchristofferson@le.utah.gov
 image: https://le.utah.gov/images/legislator/CHRISKJ.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '56'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '53'
 offices:
 - classification: district
   address: 1256 E 1500 N, LEHI, UT, 84043

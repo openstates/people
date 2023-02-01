@@ -2,14 +2,19 @@ id: ocd-person/6652aa40-32c5-4430-bbf6-707a0b8a1f56
 name: Duane Quam
 given_name: Duane
 family_name: Quam
-email: rep.duane.quam@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/25A.gif?v=112221
+gender: Male
+email: rep.duane.quam@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/24A.gif?v=112221
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 25A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 24A
 offices:
 - classification: capitol
   address: 247 State Office Building;St. Paul, MN 55155

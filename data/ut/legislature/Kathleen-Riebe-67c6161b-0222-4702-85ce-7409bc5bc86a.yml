@@ -2,19 +2,20 @@ id: ocd-person/67c6161b-0222-4702-85ce-7409bc5bc86a
 name: Kathleen A. Riebe
 given_name: Kathleen
 family_name: Riebe
+gender: Female
 email: kriebe@le.utah.gov
 image: https://le.utah.gov/images/legislator/RIEBEK.jpg
 party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '8'
-offices:
-- classification: district
-  address: 9040 S Greenhills Drive, Cottonwood Heights, UT, 84093
-  voice: 385-222-1742
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '15'
 links:
 - url: https://senate.utah.gov/kathleen-riebe
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=RIEBEK
@@ -38,7 +39,8 @@ sources:
 extras:
   service start: January 1, 2019
   profession: Educational Technology Teacher
-  education: B.S., Ed. 9 Soc, Hofstra University; M. Ed. Admin End, Utah State University;
+  education: |
+    B.S., Ed. 9 Soc, Hofstra University; M. Ed. Admin End, Utah State University;
     Tech Endorsement, Southern Utah State University
   counties represented:
   - Salt Lake

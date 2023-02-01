@@ -10,9 +10,16 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '54'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: 206 Willow Way Vicksburg, Mississippi 39183
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/ford.xml
 - url: http://billstatus.ls.state.ms.us/members/house/ford_(54th).xml
+- url: http://billstatus.ls.state.ms.us/members/house/ford_(54th).xml
+  note: homepage
 other_names:
 - name: Ford (54th)
 other_identifiers:
@@ -21,11 +28,15 @@ other_identifiers:
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/ford.xml
 - url: http://billstatus.ls.state.ms.us/members/house/ford_(54th).xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Ford is affiliated with Red Carpet Bowl.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 206 Willow Way;Vicksburg, MS 39183
-  classification: district
-  name: 'District Office #1'
+  occupation: Insurance Agent
+  education:
+  - University of Alabama at Birmingham
+  - Hinds Community College
+  - Warren High school
+  counties represented:
+  - Issaquena
+  - Warren
+  - Yazoo
+  other phone: (601)218-8185

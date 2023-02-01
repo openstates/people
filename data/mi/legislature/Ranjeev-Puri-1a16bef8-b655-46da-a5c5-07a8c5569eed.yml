@@ -2,17 +2,18 @@ id: ocd-person/1a16bef8-b655-46da-a5c5-07a8c5569eed
 name: Ranjeev Puri
 given_name: Ranjeev
 family_name: Puri
+gender: Male
 email: ranjeevpuri@house.mi.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '21'
-offices:
-- classification: capitol
-  address: Room 785 House Office Building
-  voice: 1-517-373-2575
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '24'
 links:
 - url: https://housedems.com/ranjeev-puri/
 sources:

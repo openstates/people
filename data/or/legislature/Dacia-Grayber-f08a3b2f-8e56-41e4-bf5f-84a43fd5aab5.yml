@@ -2,15 +2,21 @@ id: ocd-person/f08a3b2f-8e56-41e4-bf5f-84a43fd5aab5
 name: Dacia Grayber
 given_name: Dacia
 family_name: Grayber
+gender: Female
 email: Rep.DaciaGrayber@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/grayber/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
 - start_date: 2021-01-11
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '35'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '28'
 offices:
 - classification: capitol
   address: 900 Court St NE, H-492, Salem, OR, 97301
@@ -22,3 +28,4 @@ links:
 sources:
 - url: https://www.oregonlegislature.gov/grayber
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

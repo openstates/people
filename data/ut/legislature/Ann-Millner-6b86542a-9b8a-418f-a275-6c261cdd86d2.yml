@@ -2,14 +2,20 @@ id: ocd-person/6b86542a-9b8a-418f-a275-6c261cdd86d2
 name: Ann Millner
 given_name: Ann
 family_name: Millner
+gender: Female
 email: amillner@le.utah.gov
 image: https://le.utah.gov/images/legislator/MILLNA.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '18'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '5'
 offices:
 - classification: district
   address: '4287 Harrison Blvd #313, Ogden, UT, 84403'
@@ -26,6 +32,8 @@ links:
   note: finance report
 - url: https://senate.utah.gov/sen/MILLNA/
   note: homepage
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist05.pdf
+  note: district demographics
 other_names:
 - name: Millner, A.
 - name: Millner, Ann

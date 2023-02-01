@@ -7,9 +7,13 @@ image: https://legislature.maine.gov/uploads/visual_edit/dill-5x7.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- end_date: 2022-12-07
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '5'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '26'
 offices:
 - classification: capitol
   voice: 207-287-1515

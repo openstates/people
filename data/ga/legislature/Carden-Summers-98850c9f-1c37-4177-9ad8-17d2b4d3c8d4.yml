@@ -2,6 +2,7 @@ id: ocd-person/98850c9f-1c37-4177-9ad8-17d2b4d3c8d4
 name: Carden Summers
 given_name: Carden
 family_name: Summers
+gender: Male
 email: carden.summers@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/summers-carden-4971.jpg
 party:
@@ -17,10 +18,13 @@ offices:
   voice: 404-463-5258
 - classification: district
   address: 108 East 13th Avenue; Cordele, GA 31015
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4971&Session=27
 - url: https://www.legis.ga.gov/members/senate/4971?session=1029
+- url: https://www.legis.ga.gov/members/senate/4971?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4971&Session=27
@@ -29,6 +33,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4971?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4971?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Cordele
   city: Cordele

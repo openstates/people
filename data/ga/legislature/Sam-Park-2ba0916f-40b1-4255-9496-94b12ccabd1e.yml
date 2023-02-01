@@ -2,14 +2,20 @@ id: ocd-person/2ba0916f-40b1-4255-9496-94b12ccabd1e
 name: Sam Park
 given_name: Sam
 family_name: Park
+gender: Male
 email: sam.park@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/park-sam-4901.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '101'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '107'
 offices:
 - classification: capitol
   address: 611-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334

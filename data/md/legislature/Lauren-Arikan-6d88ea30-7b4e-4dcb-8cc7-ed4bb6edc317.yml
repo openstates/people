@@ -2,14 +2,20 @@ id: ocd-person/6d88ea30-7b4e-4dcb-8cc7-ed4bb6edc317
 name: Lauren Arikan
 given_name: Lauren
 family_name: Arikan
+gender: Female
 email: lauren.arikan@house.state.md.us
-image: http://mgaleg.maryland.gov/2022RS/images/arikan01.jpg
+image: http://mgaleg.maryland.gov/2023RS/images/arikan01.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '7'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: 7B
 offices:
 - classification: capitol
   address: 324 Lowe House Office Building; 6 Bladen Street; Annapolis, MD 21401

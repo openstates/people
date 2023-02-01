@@ -2,14 +2,20 @@ id: ocd-person/c0936ba9-d863-4262-8fd1-3e08fb1013c8
 name: Cindy Crawford
 given_name: Cindy
 family_name: Crawford
+gender: Female
 email: cindy.crawford@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2021/House/551_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '76'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '51'
 offices:
 - classification: district
   address: P.O. Box 180628, Fort Smith, AR 72918
@@ -20,12 +26,23 @@ links:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Crawford&ddBienniumSession=2021%2F2021R
 other_names:
 - name: Crawford
+ids:
+  twitter: cindycrawford_
+  facebook: CrawfordForDistrict76
+other_identifiers:
+- scheme: followthemoney
+  identifier: '44492134'
+- scheme: votesmart
+  identifier: '178577'
+- scheme: ballotpedia
+  identifier: Cindy_Crawford
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Crawford&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Crawford&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Crawford&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Crawford&ddBienniumSession=2021%2F2022F
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
 extras:
   seniority: '66'
   occupation: CEO

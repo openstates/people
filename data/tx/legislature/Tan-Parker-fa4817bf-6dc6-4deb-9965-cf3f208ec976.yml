@@ -2,13 +2,18 @@ id: ocd-person/fa4817bf-6dc6-4deb-9965-cf3f208ec976
 name: Tan Parker
 given_name: Tan
 family_name: Parker
+gender: Male
 image: https://house.texas.gov/photos/members/4090.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '63'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '12'
 offices:
 - classification: capitol
   address: Room 1W.11 P.O. Box 2910 Austin, TX 78768

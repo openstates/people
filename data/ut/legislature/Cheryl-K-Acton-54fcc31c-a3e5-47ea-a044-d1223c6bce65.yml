@@ -2,18 +2,20 @@ id: ocd-person/54fcc31c-a3e5-47ea-a044-d1223c6bce65
 name: Cheryl K. Acton
 given_name: Cheryl
 family_name: Acton
+gender: Female
 email: cacton@le.utah.gov
 image: https://le.utah.gov/images/legislator/ACTONCK.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '43'
-offices:
-- classification: district
-  address: 5143 W. Wheatcrest Circle, West Jordan, UT, 84081
-  voice: 801-809-3571
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '38'
 links:
 - url: http://house.utah.gov/rep/ACTONCK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ACTONCK

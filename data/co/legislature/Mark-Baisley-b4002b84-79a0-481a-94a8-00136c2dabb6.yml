@@ -2,18 +2,19 @@ id: ocd-person/b4002b84-79a0-481a-94a8-00136c2dabb6
 name: Mark Baisley
 given_name: Mark
 family_name: Baisley
-email: mark.baisley.house@state.co.us
-image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2022a_baisley%2C%20mark.jpg?itok=Q8RKggjI
+gender: Male
+email: mark.baisley.senate@coleg.gov
+image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_baisley%2C%20mark.jpg?itok=qxT3wSUf
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '39'
-offices:
-- classification: capitol
-  address: 200 E Colfax RM 307 Denver, CO 80203
-  voice: 303-866-2935
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '4'
 links:
 - url: http://leg.colorado.gov/legislators/mark-baisley
 - url: http://leg.colorado.gov/legislators/mark-baisley
@@ -23,5 +24,11 @@ sources:
 - url: http://leg.colorado.gov/legislators
 extras:
   counties represented:
+  - Chaffee
+  - Custer
   - Douglas
+  - Fremont
+  - Jefferson
+  - Lake
+  - Park
   - Teller

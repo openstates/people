@@ -10,17 +10,25 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '63'
+offices:
+- classification: capitol
+  address: P. O. Box 1018;Jackson, MS 39215
+- classification: district
+  address: 120 Western Hills Drive Jackson, Mississippi 39212
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/foster.xml
+- url: http://billstatus.ls.state.ms.us/members/house/foster.xml
+  note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/foster.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Representative Foster is president of Western Hills Homeowners Association,
-    Association of South Jackson board member, PTSO, PTA member of Utica Elementary
-    Middle school, and Phi Theta Kappa Honor Society.
-offices:
-- address: P. O. Box 1018;Jackson, MS 39215
-  classification: capitol
-- address: 120 Western Hills Drive;Jackson, MS 39212
-  classification: district
-  name: 'District Office #1'
+  education:
+  - Mississippi College
+  - Hinds Community College
+  - Raymond High school
+  counties represented:
+  - Hinds
+  - Warren
+  - Yazoo
+  other phone: (601)842-7742

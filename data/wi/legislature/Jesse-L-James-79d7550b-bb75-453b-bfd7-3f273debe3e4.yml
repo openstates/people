@@ -2,19 +2,19 @@ id: ocd-person/79d7550b-bb75-453b-bfd7-3f273debe3e4
 name: Jesse James
 given_name: Jesse
 family_name: James
+gender: Male
 email: Rep.James@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2149.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-03'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '68'
-offices:
-- classification: capitol
-  address: Room 9 West State Capitol PO Box 8952 Madison, WI 53708
-  voice: 608-266-9172
-  fax: 608-282-3668
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '23'
 links:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1937
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2149

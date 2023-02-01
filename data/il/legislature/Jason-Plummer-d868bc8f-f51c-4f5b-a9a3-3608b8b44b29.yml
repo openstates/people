@@ -2,25 +2,32 @@ id: ocd-person/d868bc8f-f51c-4f5b-a9a3-3608b8b44b29
 name: Jason Plummer
 given_name: Jason
 family_name: Plummer
+gender: Male
 image: https://ilga.gov/images/members/{CE75DC7E-2CD4-4D01-B697-C2866F828E25}.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '54'
+- start_date: '2023-01-11'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '55'
 offices:
 - classification: capitol
-  address: 309M Capitol Building Springfield, IL 62706
+  address: Stratton Office Building Section A, Office M
   voice: 217-782-5755
 - classification: district
-  address: 310 W. Gallatin St.;Vandalia, IL 62471
+  address: Springfield, IL 62706 310 W. Gallatin St. Vandalia, IL 62471
   voice: 618-283-3000
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/senate/Senator.asp?GA=101&MemberID=2730
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2935
 - url: https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2935
+  note: homepage
+- url: https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3133
   note: homepage
 sources:
 - url: http://ilga.gov/senate/default.asp?GA=101
@@ -29,3 +36,5 @@ sources:
 - url: http://ilga.gov/senate/Senator.asp?GA=102&MemberID=2935
 - url: https://ilga.gov/senate/default.asp?GA=102
 - url: https://ilga.gov/senate/Senator.asp?GA=102&MemberID=2935
+- url: https://ilga.gov/senate/default.asp?GA=103
+- url: https://ilga.gov/senate/Senator.asp?GA=103&MemberID=3133

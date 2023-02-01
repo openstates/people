@@ -7,16 +7,14 @@ party:
 - name: Democratic
 roles:
 - start_date: '2021-05-24'
+  end_date: '2022-12-05'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '54'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 5630 Sacramento, CA 94249-0054
-  voice: 916-319-2054
-- classification: district
-  address: 5601 West Slauson Avenue, Suite 200, Culver City, CA 90230
-  voice: 310-641-5410
+- start_date: '2022-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '55'
 links:
 - url: https://a54.asmdc.org/
 - url: https://a54.asmdc.org

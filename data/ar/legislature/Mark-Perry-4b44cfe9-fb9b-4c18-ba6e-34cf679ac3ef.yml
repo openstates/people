@@ -13,9 +13,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '44'
 - start_date: 2013-01-01
+  end_date: '2023-01-09'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '42'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '66'
 offices:
 - classification: district
   address: P.O. Box 97, Jacksonville, AR 72078
@@ -26,6 +31,8 @@ links:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2021%2F2021R
 other_names:
 - name: Perry
+ids:
+  facebook: MakingOurMarkTogether
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000093
@@ -33,6 +40,12 @@ other_identifiers:
   identifier: ARL000229
 - scheme: openstates
   identifier: ocd-person/da77f1c8-27e9-48df-b5fc-1018381b9f52
+- scheme: followthemoney
+  identifier: '44492079'
+- scheme: votesmart
+  identifier: '103770'
+- scheme: ballotpedia
+  identifier: Mark_Perry
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2021%2F2021R

@@ -10,24 +10,28 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '111'
+offices:
+- classification: capitol
+  address: Room 202 P. O. Box 1018;Jackson, MS 39215
+  voice: 601-359-3355
+- classification: district
+  address: 901 Beach Blvd Pascagoula, Mississippi 39567
 links:
 - url: http://billstatus.ls.state.ms.us/members/house/busby.xml
+- url: http://billstatus.ls.state.ms.us/members/house/busby.xml
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000223
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/busby.xml
+- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
-  org_info: Rep. Busby is a member of the Pascagoula Rotary Club, Jackson County Chamber
-    of Commerce, Jackson County Economic Development FDN, American Society of Mechanical
-    Engineers, American Council of Engineering Companies, and the NRA.
-offices:
-- address: Room 202;P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3355
-  classification: capitol
-- address: 4703 Willow Street;Pascagoula, MS 39567
-  classification: district
-  name: 'District Office #1'
-- address: 901 Beach Blvd;Pascagoula, MS 39567
-  classification: district
-  name: 'District Office #2'
+  occupation: Engineer, Business Owner
+  education:
+  - University of South Alabama
+  - Mississippi Gulf Coast Community College
+  counties represented:
+  - Jackson
+  other phone1: (228)990-2200
+  other phone2: (228)769-0501

@@ -2,24 +2,31 @@ id: ocd-person/de50d28d-6a58-4244-8c74-36ca3f41767a
 name: Ben Queen
 given_name: Ben
 family_name: Queen
-email: ben.queen@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/queen_ben.jpg
+gender: Male
+email: ben.queen@wvsenate.gov
+image: http://www.wvlegislature.gov/images/members/2023/senate/queen_ben.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '48'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '12'
 offices:
 - classification: capitol
-  address: Room 221E, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3171
+  address: Room 204W, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
+  voice: 304-357-7904
 - classification: district
-  address: P.O. Box 1311;Bridgeport, WV 26330
+  address: P.O. 1311 Bridgeport, WV 26330
   voice: 304-709-2013
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Queen
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Queen
+  note: homepage
+- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Queen
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
@@ -28,3 +35,5 @@ sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Queen
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Queen
+- url: http://www.wvlegislature.gov/Senate1/roster.cfm
+- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Queen

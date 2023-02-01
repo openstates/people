@@ -7,16 +7,14 @@ image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad24
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-05'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '24'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 6130 Sacramento, CA 94249-0024
-  voice: 916-319-2024
-- classification: district
-  address: 721 Colorado Ave, Suite 101, Palo Alto, CA 94303
-  voice: 650-324-0224
+- start_date: '2022-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '23'
 links:
 - url: https://a24.asmdc.org/
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD24&inframe=N

@@ -2,32 +2,48 @@ id: ocd-person/8b544682-2d9b-4759-bdc1-e560cced87fa
 name: Cameron Cooper
 given_name: Cameron
 family_name: Cooper
+gender: Male
 email: cameron.cooper@arkansashouse.org
-image: https://www.arkleg.state.ar.us/Content/photos/2021/House/561_sm.jpg
+image: https://www.arkleg.state.ar.us/Content/photos/2023/House/561_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '44'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '57'
 offices:
 - classification: district
   address: 295 Burl Cooper Road, Romance, AR 72136
-  voice: 501-230-5635
-  name: 'District Office #1'
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2021%2F2021R
 other_names:
 - name: C. Cooper
+ids:
+  facebook: cameron.cooper.5477
+other_identifiers:
+- scheme: followthemoney
+  identifier: '44492083'
+- scheme: votesmart
+  identifier: '81630'
+- scheme: ballotpedia
+  identifier: Cameron_Cooper
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2021%2F2022F
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=C.+Cooper&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
-  seniority: '74'
+  seniority: '53'
   occupation: Manager for Pathfinder, Inc; Farmer
   church affiliation: Church of Christ
   veteran: 'No'

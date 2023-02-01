@@ -2,6 +2,7 @@ id: ocd-person/713cac52-0a57-4baa-8273-6eeca5b491df
 name: John Carson
 given_name: John
 family_name: Carson
+gender: Male
 email: john.carson@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/carson-john-795.jpg
 party:
@@ -17,10 +18,13 @@ offices:
 - classification: district
   address: 3605 Sandy Plains Road, Suite 240-123; Marietta, GA 30066
   voice: 404-520-8826
-  name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
 - url: https://www.legis.ga.gov/members/house/795?session=1029
+- url: https://www.legis.ga.gov/members/house/795?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000234
@@ -36,6 +40,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/795?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/795?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Marietta
   city: Marietta
@@ -43,6 +51,3 @@ extras:
   birthday: September 21
   press: https://house-press.com/representative/John-Carson
   spouse: Beverly
-  staff: a href="
-  staff email: ''
-  title: Chairman, Retirement

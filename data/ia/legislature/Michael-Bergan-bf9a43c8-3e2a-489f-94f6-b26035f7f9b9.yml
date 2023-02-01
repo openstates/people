@@ -2,23 +2,25 @@ id: ocd-person/bf9a43c8-3e2a-489f-94f6-b26035f7f9b9
 name: Michael R. Bergan
 given_name: Michael
 family_name: Bergan
-email: Michael.Bergan@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=18044
+gender: Male
+email: michael.bergan@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=18044
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '55'
-offices:
-- classification: capitol
-  voice: 515-281-3221
-- classification: district
-  address: 1204 N Bear Rd, Dorchester, IA 52140
-  name: 'District Office #1'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '63'
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18044
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18044
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://iowa.us4.list-manage.com/subscribe?u=cda8d4cec739450efbb093a0a&id=09e9bff453
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000539
@@ -26,8 +28,7 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=18044
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=18044
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=18044
 extras:
-  home address: 1204 N Bear Rd, Dorchester, IA 52140
-  cell phone: 563.380.3974
-  capitol phone: 515.281.3221
+  home email: berganmr@gmail.com
   occupation: Accountant

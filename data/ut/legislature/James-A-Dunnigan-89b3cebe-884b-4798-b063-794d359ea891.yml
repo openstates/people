@@ -2,14 +2,20 @@ id: ocd-person/89b3cebe-884b-4798-b063-794d359ea891
 name: James A. Dunnigan
 given_name: James
 family_name: Dunnigan
+gender: Male
 email: jdunnigan@le.utah.gov
 image: https://le.utah.gov/images/legislator/DUNNIJA.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '39'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '36'
 offices:
 - classification: district
   address: 3105 W 5400 S STE 6, TAYLORSVILLE, UT, 84129

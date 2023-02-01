@@ -6,18 +6,25 @@ email: Mark.Paige@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 18
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 11
 offices:
 - classification: district
   address: Exeter, NH 03833
   name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9942
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9942
 extras:
   county: Rockingham
   elected status: new

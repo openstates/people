@@ -2,18 +2,23 @@ id: ocd-person/19b8cf37-0b98-4194-9d2c-db6da3fae35c
 name: Joe Tate
 given_name: Joe
 family_name: Tate
+gender: Male
 email: JoeTate@house.mi.gov
 image: https://housedems.com/sites/default/files/Images/Representative_Images/D002_Joe_Tate/002_Tate.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '2'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '10'
 offices:
 - classification: capitol
-  address: Room 586 House Office Building
-  voice: 1-517-373-1776
+  address: CB 1-H-164
+  voice: 1-517-373-0857
 links:
 - url: https://housedems.com/tate
 sources:

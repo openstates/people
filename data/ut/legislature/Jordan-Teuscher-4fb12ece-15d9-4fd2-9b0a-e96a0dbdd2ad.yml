@@ -2,19 +2,21 @@ id: ocd-person/4fb12ece-15d9-4fd2-9b0a-e96a0dbdd2ad
 name: Jordan D. Teuscher
 given_name: Jordan
 family_name: Teuscher
+gender: Male
 email: jteuscher@le.utah.gov
 image: https://le.utah.gov/images/legislator/TEUSCJ.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '42'
-offices:
-- classification: district
-  address: 5413 W Burntside Avenue, South Jordan, UT, 84009
-  voice: 385-285-5489
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '44'
 links:
 - url: http://house.utah.gov/rep/TEUSCJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=TEUSCJ
@@ -38,7 +40,8 @@ sources:
 extras:
   service start: January 1, 2021
   profession: Attorney
-  education: Juris Doctor, Brigham Young University; Political Science/Philosophy,
+  education: |
+    Juris Doctor, Brigham Young University; Political Science/Philosophy,
     Bachelor of Arts, Brigham Young University; Riverton High School
   counties represented:
   - Salt Lake

@@ -7,16 +7,14 @@ image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/flor
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-05'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '12'
-offices:
-- classification: capitol
-  address: 1021 O Street, Suite 4730 Sacramento, CA 94249-0012
-  voice: 916-319-2012
-- classification: district
-  address: 578 North Wilma Avenue, Suite B, Ripon, CA 95366
-  voice: 209-599-2112
+- start_date: '2022-12-05'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '9'
 links:
 - url: https://ad12.asmrc.org
 - url: https://lcmspubcontact.lc.ca.gov/PublicLCMS/ContactPopup.php?district=AD12&inframe=N

@@ -2,21 +2,20 @@ id: ocd-person/2461647c-b7dc-4df2-b1b8-6acee9700b7c
 name: Mark Dean
 given_name: Mark
 family_name: Dean
+gender: Male
 email: mark.dean@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/dean_mark.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/dean_mark.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '21'
-offices:
-- classification: capitol
-  address: Room 222E, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
-  voice: 304-340-3304
-- classification: district
-  address: P.O. Box 15;Verner, WV 25650
-  voice: 304-601-3425
+- start_date: '2022-12-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '34'
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Dean
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Dean

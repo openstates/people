@@ -2,26 +2,33 @@ id: ocd-person/11ceb3de-a680-4dc0-b140-edd37f04e75b
 name: Jeff Shipley
 given_name: Jeff
 family_name: Shipley
-email: Jeff.Shipley@legis.iowa.gov
-image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=89&pid=27036
+gender: Male
+email: jeff.shipley@legis.iowa.gov
+image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=27036
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '82'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '87'
 offices:
-- classification: district
-  address: 12245 Jasmine Ave, Birmingham, IA 52535
-  name: 'District Office #1'
+- classification: capitol
+  voice: 515-281-3221
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27036
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27036
+- url: http://https://iowahouserepublicans.nationbuilder.com/reps
+- url: http://https://www.legis.iowa.gov/legislators/legislator/newsletter?id=27036&ga=90
 sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=27036
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=27036
 - url: https://www.legis.iowa.gov/legislators/house
+- url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=27036
 extras:
-  home address: 12245 Jasmine Ave, Birmingham, IA 52535
-  cell phone: 319.432.3108
-  occupation: Artist
+  home email: j.j.shipley@gmail.com
+  occupation: Legal Advocate

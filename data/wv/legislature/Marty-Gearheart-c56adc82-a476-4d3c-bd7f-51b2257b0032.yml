@@ -2,21 +2,28 @@ id: ocd-person/c56adc82-a476-4d3c-bd7f-51b2257b0032
 name: Marty Gearheart
 given_name: Marty
 family_name: Gearheart
+gender: Male
 email: marty.gearheart@wvhouse.gov
-image: http://www.wvlegislature.gov/images/members/2022/house/gearheart_marty.jpg
+image: http://www.wvlegislature.gov/images/members/2023/house/gearheart_marty.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-30'
+- start_date: '2012-12-01'
+  end_date: '2018-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '27'
+- start_date: '2020-12-01'
+  end_date: '2022-12-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '27'
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '27'
+  district: '37'
 offices:
 - classification: capitol
-  address: Room 202E, Bldg. 1;1900 Kanawha Blvd. E.;Charleston, WV 25305
+  address: Room 200E-A, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
   voice: 304-340-3179
 links:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Gearheart
@@ -31,3 +38,5 @@ sources:
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Gearheart
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Gearheart
+extras:
+  title: Majority Whip

@@ -2,14 +2,20 @@ id: ocd-person/abda0ae5-9ecb-4363-9a6a-487f1cf8899e
 name: David Friess
 given_name: David
 family_name: Friess
+gender: Male
 email: friess@ilhousegop.org
 image: https://ilga.gov/images/members/{C1F3982E-6DA7-4AE6-96B9-77E9FBC87A2A}.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '116'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '115'
 offices:
 - classification: capitol
   address: 208-N Stratton Office Building Springfield, IL 62706
@@ -21,8 +27,12 @@ links:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=3004
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=3004
   note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3192
+  note: homepage
 sources:
 - url: http://ilga.gov/house/default.asp?GA=102
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=3004
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=3004
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3192

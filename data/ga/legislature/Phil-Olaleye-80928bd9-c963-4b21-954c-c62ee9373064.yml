@@ -1,0 +1,29 @@
+id: ocd-person/80928bd9-c963-4b21-954c-c62ee9373064
+name: Phil Olaleye
+given_name: Phil
+family_name: Olaleye
+email: phil.olaleye@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/olaleye-phil-5028.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '59'
+links:
+- url: https://www.legis.ga.gov/members/house/5028?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5028?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Atlanta
+  city: Atlanta
+  georgia_id: 5028
+  birthday: June 4
+  occupation: Non-profit Executive (Education)
+  spouse: Sabrina

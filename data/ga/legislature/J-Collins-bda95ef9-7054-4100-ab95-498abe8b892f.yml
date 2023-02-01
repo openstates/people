@@ -2,21 +2,20 @@ id: ocd-person/bda95ef9-7054-4100-ab95-498abe8b892f
 name: J Collins
 given_name: J
 family_name: Collins
+gender: Male
 email: j.collins@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/collins-j-4892.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '68'
-offices:
-- classification: capitol
-  address: 408-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-657-1803
-- classification: district
-  address: 206 South Carroll Rd.; Villa Rica, GA 30180
-  name: 'District Office #1'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '71'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4892&Session=27
 - url: https://www.legis.ga.gov/members/house/4892?session=1029

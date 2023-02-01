@@ -2,27 +2,34 @@ id: ocd-person/500ffee4-de06-4a0b-b4df-f8e6f52c4e96
 name: Blaine Wilhour
 given_name: Blaine
 family_name: Wilhour
+gender: Male
 email: wilhour@ilhousegop.org
 image: https://ilga.gov/images/members/{66C5580C-A414-41BB-B3AC-638925AC34CD}.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '107'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '110'
 offices:
 - classification: capitol
   address: 213-N Stratton Office Building Springfield, IL 62706
   voice: 217-782-0066
   fax: 217-782-1141
 - classification: district
-  address: 304 East Jefferson Avenue;Suite A;Effingham, IL 62401
-  voice: 217-994-9348
-  name: 'District Office #1'
+  address: 152 South Church Street P.O. Box I Louisville, IL 62658
+  voice: 618-665-4109
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2761
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2962
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2962
+  note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3156
   note: homepage
 sources:
 - url: http://ilga.gov/house/default.asp?GA=101
@@ -31,3 +38,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2962
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2962
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3156

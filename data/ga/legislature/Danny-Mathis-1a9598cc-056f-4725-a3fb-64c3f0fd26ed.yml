@@ -2,14 +2,20 @@ id: ocd-person/1a9598cc-056f-4725-a3fb-64c3f0fd26ed
 name: Danny Mathis
 given_name: Danny
 family_name: Mathis
+gender: Male
 email: danny.mathis@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/mathis-danny-4959.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '144'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '149'
 offices:
 - classification: capitol
   address: 401-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334

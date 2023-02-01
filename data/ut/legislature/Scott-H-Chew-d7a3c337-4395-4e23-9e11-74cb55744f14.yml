@@ -2,18 +2,23 @@ id: ocd-person/d7a3c337-4395-4e23-9e11-74cb55744f14
 name: Scott H. Chew
 given_name: Scott
 family_name: Chew
+gender: Male
 email: scottchew@le.utah.gov
 image: https://le.utah.gov/images/legislator/CHEWSH.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-01'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '55'
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '68'
 offices:
 - classification: district
-  address: PO BOX 126, JENSEN, UT, 84035
-  voice: 435-630-0221
+  address: PO BOX 126, Jensen, UT, 84035
 links:
 - url: http://house.utah.gov/rep/CHEWSH
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=CHEWSH
@@ -38,6 +43,8 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=CHEWSH
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist68.pdf
+  note: district demographics
 other_names:
 - name: Chew, S.
 - name: Chew, Scott H.

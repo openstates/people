@@ -2,17 +2,18 @@ id: ocd-person/ae5a3a48-9948-4c6c-95c2-c2d0915fd866
 name: Regina Weiss
 given_name: Regina
 family_name: Weiss
+gender: Female
 email: reginaweiss@house.mi.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '27'
-offices:
-- classification: capitol
-  address: Room 791 House Office Building
-  voice: 1-517-373-0478
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '6'
 links:
 - url: https://housedems.com/regina-weiss/
 sources:

@@ -5,9 +5,18 @@ image: http://www.gencourt.state.nh.us/house/images/memberpics/377258.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 6
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 13
+offices:
+- classification: district
+  address: 19 Beacon Hill Road;Derry, NH 03038-4386
+  voice: 603-425-6605
+  name: 'District Office #1'
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
@@ -24,8 +33,3 @@ extras:
   first_name: Katherine
   last_name: Prudhomme-O'Brien
   middle_name: J.
-offices:
-- address: 19 Beacon Hill Road;Derry, NH 03038-4386
-  voice: 603-425-6605
-  classification: district
-  name: 'District Office #1'

@@ -2,18 +2,19 @@ id: ocd-person/b6d8b86d-2975-4d07-83fe-a1841f39806b
 name: Roger Hauck
 given_name: Roger
 family_name: Hauck
+gender: Male
 email: RogerHauck@house.mi.gov
 image: http://gophouse.org/wp-content/uploads/2017/01/Roger-Hauck-214x300.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '99'
-offices:
-- classification: capitol
-  address: Room 1288 House Office Building
-  voice: 1-517-373-1789
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '34'
 links:
 - url: http://gophouse.org/representatives/central/hauck/
 other_identifiers:

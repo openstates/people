@@ -2,23 +2,25 @@ id: ocd-person/6540aa74-9456-4b29-9b56-cadd31104db2
 name: Daniel McCay
 given_name: Daniel
 family_name: McCay
+gender: Male
 email: dmccay@le.utah.gov
 image: https://le.utah.gov/images/legislator/MCCAYD.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- end_date: '2019-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '41'
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '11'
-offices:
-- classification: district
-  address: 13307 HERITAGE FARM COVE, RIVERTON, UT, 84065
-  voice: 801-810-4110
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '18'
 links:
 - url: https://senate.utah.gov/daniel-mccay
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MCCAYD
@@ -41,6 +43,8 @@ links:
   note: finance report
 - url: https://senate.utah.gov/sen/MCCAYD/
   note: homepage
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist18.pdf
+  note: district demographics
 other_names:
 - name: McCay, D.
 - name: McCay, Daniel
@@ -56,10 +60,10 @@ sources:
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/MCCAYD/
 extras:
-  service start: Appointed to House on January 20, 2012; Elected to Senate January
-    1, 2019
+  service start: Appointed to House on January 20, 2012; Elected to Senate January 1, 2019
   profession: Attorney/Real Estate Portfolio Manager
-  education: Bachelors in Secondary Education, Utah State University; Masters in Instructional
+  education: |
+    Bachelors in Secondary Education, Utah State University; Masters in Instructional
     Design, Utah State University; J. D., Willamette University
   counties represented:
   - Salt Lake

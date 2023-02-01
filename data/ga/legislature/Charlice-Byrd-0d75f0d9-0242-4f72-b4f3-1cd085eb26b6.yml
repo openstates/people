@@ -2,6 +2,7 @@ id: ocd-person/0d75f0d9-0242-4f72-b4f3-1cd085eb26b6
 name: Charlice Byrd
 given_name: Charlice
 family_name: Byrd
+gender: Female
 email: charlice.byrd@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/byrd-charlice-75.jpg
 party:
@@ -21,11 +22,14 @@ offices:
   address: 508-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0213
 - classification: district
-  address: PO Box 505; Woodstock, GA 30188
-  name: 'District Office #1'
+  address: 1025 Rose Creek Dr, Suite 620-165; Suite 620-165; Woodstock, GA 30189
 links:
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/byrdCharlice.htm
 - url: https://www.legis.ga.gov/members/house/75?session=1029
+- url: https://www.legis.ga.gov/members/house/75?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000079
@@ -38,6 +42,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/75?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/75?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Woodstock
   city: Woodstock
@@ -46,5 +54,5 @@ extras:
   occupation: Retired
   press: https://house-press.com/representative/Charlice-Byrd
   spouse: Michael
-  staff: Wyletha Thompson - Administrative Assistant
-  staff email: wyletha.thompson@house.ga.gov
+  staff: Dendrick Atkins - Administrative Assistant
+  staff email: dendrick.atkins@house.ga.gov

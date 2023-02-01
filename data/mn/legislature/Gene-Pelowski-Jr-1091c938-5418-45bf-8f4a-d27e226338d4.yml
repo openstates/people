@@ -2,14 +2,19 @@ id: ocd-person/1091c938-5418-45bf-8f4a-d27e226338d4
 name: Gene Pelowski Jr.
 given_name: Gene
 family_name: Pelowski
-email: rep.gene.pelowski@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/28A.gif?v=112221
+gender: Male
+email: rep.gene.pelowski@house.mn.gov
+image: https://www.house.mn.gov/hinfo/memberimgls93/26A.gif?v=112221
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- end_date: '2023-01-02'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 28A
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 26A
 offices:
 - classification: capitol
   address: 491 State Office Building;St. Paul, MN 55155

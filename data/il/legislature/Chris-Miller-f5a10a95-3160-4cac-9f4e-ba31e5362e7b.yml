@@ -2,26 +2,33 @@ id: ocd-person/f5a10a95-3160-4cac-9f4e-ba31e5362e7b
 name: Chris Miller
 given_name: Chris
 family_name: Miller
+gender: Male
 email: chrismiller2019gop@gmail.com
 image: https://ilga.gov/images/members/{2A519012-9070-494B-9FFC-C2646374202E}.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '110'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '101'
 offices:
 - classification: capitol
   address: 222-N Stratton Office Building Springfield, IL 62706
   voice: 217-558-1040
 - classification: district
-  address: 211 South Cross Street;Robinson, IL 62454
+  address: 1113 Lincoln Ave Charleston, IL 61920
   voice: 618-546-0044
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2758
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2959
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2959
+  note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3153
   note: homepage
 sources:
 - url: http://ilga.gov/house/default.asp?GA=101
@@ -30,3 +37,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2959
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2959
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3153

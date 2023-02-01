@@ -2,6 +2,7 @@ id: ocd-person/4dc87191-fa52-4c2f-bc9c-8823a8b4c882
 name: Bill Cowsert
 given_name: Bill
 family_name: Cowsert
+gender: Male
 email: bill.cowsert@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/cowsert-bill-9.jpg
 party:
@@ -19,10 +20,13 @@ offices:
   address: P.O. Box 512; Athens, GA 30603
   voice: 706-543-7700
   fax: 706-543-7731
-  name: 'District Office #1'
 links:
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: https://www.legis.ga.gov/members/senate/9?session=1029
+- url: https://www.legis.ga.gov/members/senate/9?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000009
@@ -34,6 +38,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/9?session=1029&chamber=2
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/9?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Athens
   city: Athens

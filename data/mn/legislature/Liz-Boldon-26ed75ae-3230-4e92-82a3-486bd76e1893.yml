@@ -2,20 +2,24 @@ id: ocd-person/26ed75ae-3230-4e92-82a3-486bd76e1893
 name: Liz Boldon
 given_name: Liz
 family_name: Boldon
-email: rep.liz.boldon@house.mn
-image: https://www.house.leg.state.mn.us/hinfo/memberimgls92/25B.gif?v=112221
+gender: Female
+email: sen.liz.boldon@senate.mn
+image: https://www.senate.mn/img/member_thumbnails/25Boldon.jpg
 party:
 - name: Democratic-Farmer-Labor
 roles:
 - start_date: 2021-01-05
+  end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 25B
-offices:
-- classification: capitol
-  address: 533 State Office Building;St. Paul, MN 55155
-  voice: 651-296-9249
+- start_date: '2023-01-03'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '25'
 links:
 - url: http://www.house.leg.state.mn.us/members/profile/15545
+- url: https://www.senate.mn/members/member_bio.html?mem_id=1259
 sources:
 - url: http://www.house.leg.state.mn.us/members/hmem.asp
+- url: https://www.senate.mn/api/members

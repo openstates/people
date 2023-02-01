@@ -4,33 +4,49 @@ given_name: Ben
 family_name: Gilmore
 gender: Male
 email: ben.gilmore@senate.ar.gov
-image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/583_sm.jpg
+image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/583_sm.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '26'
+- start_date: '2023-01-09'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '1'
 offices:
 - classification: district
   address: Po Box 1197, Crossett, AR 71635
-  voice: 501-467-5952
-  name: 'District Office #1'
 links:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gilmore&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+Gilmore+-+Sentor+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
+- url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2021%2FMember%20Profiles%2FSenator+Gilmore+-+Sentor+Bio.pdf
+  note: Biography
+- url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Gilmore+-+Senator+Bio.pdf
+  note: Biography
 other_names:
 - name: Gilmore
 ids:
   twitter: lbengilmore
   instagram: lbengilmore
   facebook: Ben4StateSenate
+other_identifiers:
+- scheme: followthemoney
+  identifier: '48412796'
+- scheme: votesmart
+  identifier: '187880'
+- scheme: ballotpedia
+  identifier: Ben_Gilmore
 sources:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gilmore&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gilmore&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Gilmore&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
-  seniority: '35'
+  seniority: '21'
   occupation: Marketing and Communications Consultant
   veteran: 'No'
   public service: Senate 2021

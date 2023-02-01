@@ -2,14 +2,20 @@ id: ocd-person/22fd401f-6227-4a26-ab44-1dbce5ce728a
 name: Carlton Wing
 given_name: Carlton
 family_name: Wing
+gender: Male
 email: carlton@carltonwing.com
 image: https://www.arkleg.state.ar.us/Content/photos/2021/House/538_sm.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '38'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '70'
 offices:
 - classification: district
   address: 2513 McCain Blvd, Suite 208, North Little Rock, AR 72116
@@ -18,17 +24,31 @@ offices:
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Wing&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Wing&ddBienniumSession=2021%2F2021R
+- url: https://carltonwing.com/
+  note: Campaign Website
 other_names:
 - name: Wing
+ids:
+  twitter: carltonwing
+  youtube: Carlton Wing
+  instagram: carltonwingstaterep
+  facebook: carltonwingarkansas
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000376
+- scheme: followthemoney
+  identifier: '37971333'
+- scheme: votesmart
+  identifier: '166147'
+- scheme: ballotpedia
+  identifier: Carlton_Wing
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Wing&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Wing&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Wing&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Wing&ddBienniumSession=2021%2F2022F
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
 extras:
   seniority: '58'
   occupation: Television Producer

@@ -4,22 +4,25 @@ given_name: Blake
 family_name: Johnson
 gender: Male
 email: Blake.Johnson@senate.ar.gov
-image: https://www.arkleg.state.ar.us/Content/photos/2021/Senate/509_sm.jpg
+image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/509_sm.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '20'
-offices:
-- classification: district
-  address: P.O. Box 8, Corning, AR 72422
-  voice: 870-323-1766
-  name: 'District Office #1'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '21'
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+Blake+Johnson++-+Senate+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
+- url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2021%2FMember%20Profiles%2FSenator+Blake+Johnson++-+Senate+Bio.pdf
+  note: Biography
+- url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Blake+Johnson+-+Senator+Bio.pdf
+  note: Biography
 other_names:
 - name: B. Johnson
 ids:
@@ -28,13 +31,21 @@ ids:
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000353
+- scheme: followthemoney
+  identifier: '9652398'
+- scheme: votesmart
+  identifier: '136741'
+- scheme: ballotpedia
+  identifier: Blake_Johnson
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=B.+Johnson&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
-  seniority: '20'
+  seniority: '12'
   occupation: Farmer
   church affiliation: Baptist
   veteran: 'No'

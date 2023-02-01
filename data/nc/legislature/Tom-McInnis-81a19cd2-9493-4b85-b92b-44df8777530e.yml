@@ -2,14 +2,20 @@ id: ocd-person/81a19cd2-9493-4b85-b92b-44df8777530e
 name: Tom McInnis
 given_name: Tom
 family_name: McInnis
+gender: Male
 email: Tom.McInnis@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/389/Low
 party:
 - name: Republican
 roles:
-- type: upper
+- end_date: '2023-01-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '25'
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '21'
 offices:
 - classification: capitol
   address: 300 N. Salisbury Street, Rm. 314; Raleigh, NC 27603
@@ -26,7 +32,7 @@ sources:
 - url: https://www.ncleg.gov/Members/Biography/S/389
 - url: https://www.ncleg.gov/Members/MemberTable/S
 extras:
-  terms in senate: 4 (0 in House)
-  represented counties: Anson, Moore, Richmond, Scotland
+  terms in senate: 5 (0 in House)
+  represented counties: Cumberland, Moore
   legislative assistant: Lynn Taylor
   legislative assistant email: Lynn.Taylor@ncleg.gov

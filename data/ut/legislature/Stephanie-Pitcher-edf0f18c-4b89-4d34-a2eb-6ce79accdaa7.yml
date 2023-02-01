@@ -2,19 +2,21 @@ id: ocd-person/edf0f18c-4b89-4d34-a2eb-6ce79accdaa7
 name: Stephanie Pitcher
 given_name: Stephanie
 family_name: Pitcher
+gender: Female
 email: spitcher@le.utah.gov
 image: https://le.utah.gov/images/legislator/PITCHS.jpg
 party:
 - name: Democratic
 roles:
 - start_date: '2019-01-01'
+  end_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '40'
-offices:
-- classification: district
-  address: 2830 S GLENMARE ST, SALT LAKE CITY, UT, 84106
-  voice: 385-272-8032
+- start_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '14'
 links:
 - url: http://house.utah.gov/rep/PITCHS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PITCHS
@@ -29,6 +31,10 @@ links:
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=PITCHS
   note: legislation
+- url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist14.pdf
+  note: district demographics
+- url: https://senate.utah.gov/sen/PITCHS/
+  note: homepage
 other_names:
 - name: Pitcher, S.
 - name: Pitcher, Stephanie
@@ -36,8 +42,10 @@ sources:
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/PITCHS/
+- url: https://senate.utah.gov/sen/PITCHS/
 extras:
   service start: January 1, 2019
   counties represented:
   - Salt Lake
   cell phone: 385-272-8032
+  title: Minority Caucus Manager

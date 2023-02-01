@@ -2,26 +2,33 @@ id: ocd-person/cb40e6c0-da2d-49ef-aa76-e6896644dadf
 name: Terra Costa Howard
 given_name: Terra
 family_name: Howard
+gender: Female
 email: RepTCH48@gmail.com
 image: https://ilga.gov/images/members/{7A155EE5-0C58-43BC-9B51-65B6E2908BA1}.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '48'
+- start_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '42'
 offices:
 - classification: capitol
   address: 246-W Stratton Office Building Springfield, IL 62706
   voice: 217-782-8037
 - classification: district
-  address: 913 S. Main St.;Lombard, IL 60148
+  address: 913 S. Main St. Lombard, IL 60148
   voice: 630-812-9292
-  name: 'District Office #1'
 links:
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2739
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2940
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2940
+  note: homepage
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3137
   note: homepage
 sources:
 - url: http://ilga.gov/house/default.asp?GA=101
@@ -30,3 +37,5 @@ sources:
 - url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2940
 - url: https://ilga.gov/house/default.asp?GA=102
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2940
+- url: https://ilga.gov/house/default.asp?GA=103
+- url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3137

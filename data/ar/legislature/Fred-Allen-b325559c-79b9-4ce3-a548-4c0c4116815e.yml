@@ -2,8 +2,9 @@ id: ocd-person/b325559c-79b9-4ce3-a548-4c0c4116815e
 name: Fred Allen
 given_name: Fred
 family_name: Allen
+gender: Male
 email: fredallen99@comcast.net
-image: https://www.arkleg.state.ar.us/Content/photos/2021/House/519_sm.jpg
+image: https://www.arkleg.state.ar.us/Content/photos/2023/House/519_sm.jpg
 party:
 - name: Democratic
 roles:
@@ -12,19 +13,24 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '33'
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '30'
+- start_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '77'
 offices:
 - classification: district
   address: 19 Dover Drive, Little Rock, AR 72204
-  voice: 501-804-7844
-  name: 'District Office #1'
 links:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
 other_names:
 - name: F. Allen
+ids:
+  facebook: fredallendist30
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ARL000360
@@ -32,16 +38,24 @@ other_identifiers:
   identifier: ARL000001
 - scheme: openstates
   identifier: ocd-person/791db008-194a-45c1-b9ff-5cdef426b120
+- scheme: followthemoney
+  identifier: '6475720'
+- scheme: votesmart
+  identifier: '27782'
+- scheme: ballotpedia
+  identifier: Fred_Allen
 sources:
 - url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2022F
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
-  seniority: '45'
+  seniority: '30'
   occupation: Contractor/Photographer
   church affiliation: Baptist
   veteran: 'No'
-  public service: House 2007,  2009,  2011,   2017,  Assistant Speaker Pro Tempore
-    2019
+  public service: House 2007,  2009,  2011,   2017,  Assistant Speaker Pro Tempore 2019

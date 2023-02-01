@@ -2,12 +2,18 @@ id: ocd-person/e9b85600-e33e-4a0a-af9f-bbcb98c0153f
 name: Noel Frame
 given_name: Noel
 family_name: Frame
+gender: Female
 email: noel.frame@leg.wa.gov
-image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?a=House&m=23902
+image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=23902
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2023-01-11'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '36'
+- start_date: '2023-01-11'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '36'
 offices:

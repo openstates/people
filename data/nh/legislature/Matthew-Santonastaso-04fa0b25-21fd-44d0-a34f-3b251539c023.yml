@@ -6,20 +6,23 @@ email: Santonastaso@CheshireLiberty.com
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-12-07'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Cheshire 14
-offices:
-- classification: district
-  address: 343 US Rte 202;Rindge, NH 03461
-  voice: 603-865-7146
-  name: 'District Office #1'
+- start_date: '2022-12-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Cheshire 18
 links:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9877
+  note: member detail page
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9877
 extras:
   county: Cheshire
-  elected status: new
+  elected status: Incumbent
   gender code: M

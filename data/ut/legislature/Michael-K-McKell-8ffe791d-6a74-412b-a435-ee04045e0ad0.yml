@@ -2,6 +2,7 @@ id: ocd-person/8ffe791d-6a74-412b-a435-ee04045e0ad0
 name: Michael K. McKell
 given_name: Michael
 family_name: McKell
+gender: Male
 email: mmckell@le.utah.gov
 image: https://le.utah.gov/images/legislator/MCKELMK.jpg
 party:
@@ -12,13 +13,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '66'
 - start_date: 2021-01-01
+  end_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '7'
-offices:
-- classification: district
-  address: 642 KIRBY LANE STE 105, SPANISH FORK, UT, 84660
-  voice: 801-798-9000
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '25'
 links:
 - url: https://senate.utah.gov/michael-mckell
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MCKELMK

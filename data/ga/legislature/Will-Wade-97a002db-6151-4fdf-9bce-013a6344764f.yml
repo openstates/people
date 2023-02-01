@@ -2,6 +2,7 @@ id: ocd-person/97a002db-6151-4fdf-9bce-013a6344764f
 name: Will Wade
 given_name: Will
 family_name: Wade
+gender: Male
 email: will.wade@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/wade-will-4988.jpg
 party:
@@ -16,15 +17,22 @@ offices:
   voice: 404-656-0188
 - classification: district
   address: P.O. Box 1685; Dawsonville, GA 30534
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/4988?session=1029
+- url: https://www.legis.ga.gov/members/house/4988?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4988?session=1029
 - url: https://www.legis.ga.gov/members/house/4988?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4988?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4988?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Dawsonville
   city: Dawsonville
