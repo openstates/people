@@ -6,9 +6,18 @@ image: http://www.tucamarapr.org/dnncamara/images/Representantes/db95dc4b-7fa8-4
 party:
 - name: Partido Nuevo Progresista
 roles:
-- type: lower
+- end_date: '2022-09-11'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
   district: '3'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: '1'
+offices:
+- classification: capitol
+  address: 1er. PISO ANEXO
+  voice: 787-723-8745
+  fax: 787-725-8805
 links:
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=192
 other_identifiers:
@@ -17,8 +26,3 @@ other_identifiers:
 sources:
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=192
 - url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/Biografia.aspx
-offices:
-- address: 1er. PISO ANEXO
-  voice: 787-723-8745
-  fax: 787-725-8805
-  classification: capitol
