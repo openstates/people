@@ -1,0 +1,27 @@
+id: ocd-organization/5068262a-78dd-4725-a8f5-47d625f124df
+jurisdiction: ocd-jurisdiction/country:us/state:in/government
+classification: committee
+name: Joint Rules
+chamber: upper
+sources:
+- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
+  note: Committee List API from current beta version of Indiana gov site
+links:
+- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getMembers?committee_id=b0f57f94-11bd-4dd4-9765-425eaeb32dc0&session_lpid=session_2023
+  note: homepage
+members:
+- name: Chris Garten
+  role: Chair
+  person_id: ocd-person/dc07e0d2-7372-46c2-967c-878ec522879d
+- name: Rodric Bray
+  role: Ex Officio
+  person_id: ocd-person/766cf9c2-a001-49a1-8fba-075a0510767d
+- name: Michael Crider
+  role: Member
+  person_id: ocd-person/6ffd10c6-9fd6-4378-8841-63ce4ca88764
+- name: Greg Taylor
+  role: Member
+  person_id: ocd-person/39798614-3cb2-40b7-adad-4f5c53ff59e5
+- name: Shelli Yoder
+  role: Member
+  person_id: ocd-person/872447dd-3b06-421e-af8c-25ea68aa5ae4
