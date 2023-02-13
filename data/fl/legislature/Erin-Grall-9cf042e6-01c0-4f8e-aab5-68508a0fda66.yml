@@ -7,16 +7,14 @@ image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4637.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-08'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '54'
-offices:
-- classification: capitol
-  address: 417 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5054
-- classification: district
-  address: Suite B2-203; 1801 27th Street; Vero Beach, FL 32960-3388
-  voice: 772-778-5005
+- start_date: 2022-11-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '29'
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4637&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4637&LegislativeTermId=88
