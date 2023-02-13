@@ -7,16 +7,13 @@ image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4633.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2022-11-08'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '12'
-offices:
-- classification: capitol
-  address: 214 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5012
-- classification: district
-  address: Suite 1; 1615 Huffingham Road; Jacksonville, FL 32216-2792
-  voice: 904-723-5300
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '4'
 links:
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4633&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4633&LegislativeTermId=88

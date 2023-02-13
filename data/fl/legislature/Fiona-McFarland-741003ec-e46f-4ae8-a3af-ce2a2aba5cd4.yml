@@ -3,20 +3,18 @@ name: Fiona McFarland
 given_name: Fiona
 family_name: McFarland
 gender: Female
-image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4780.jpg
+image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4780.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-02-10'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '72'
-offices:
-- classification: capitol
-  address: 303 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5072
-- classification: district
-  address: Suite 206; 3131 South Tamiami Trail; Sarasota, FL 34239-5101
-  voice: 941-361-2465
+- start_date: '2023-02-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '73'
 links:
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4780&LegislativeTermId=89
 sources:
