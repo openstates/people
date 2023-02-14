@@ -1,17 +1,22 @@
 id: ocd-person/1be9ca60-ccf5-4beb-835a-3c292e04eaef
 name: Dianne "Ms Dee" Hart
 gender: Female
-image: https://www.myfloridahouse.gov//FileStores/Web/Imaging/Member/4736.jpg
+image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4736.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: '2022-11-08'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '61'
+- start_date: '2022-11-08'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '63'
 offices:
 - classification: capitol
   address: 1003 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
-  voice: 850-717-5061
+  voice: 850-717-5063
 - classification: district
   address: 3911 North Tampa Street; Tampa, FL 33603-4745
   voice: 813-224-1956
