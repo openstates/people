@@ -2,8 +2,8 @@ id: ocd-person/4f0a4d5d-b27a-4f33-b394-f27d306f8a42
 name: Steve Hurst
 given_name: Steve
 family_name: Hurst
-email: steve.hurst@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hurst_35.jpeg
+email: repstevehurst98@gmail.com
+image: https://phs4j.com/alison/imgs/house/Hurst_35.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '35'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 413-A, Montgomery AL
+  address: 11 South Union Street,Suite 413-A,Montgomery, AL 36130-2950
   voice: 334-261-0415
+- classification: district
+  address: 155 Quail Run Road,Munford, AL 36268
+  voice: 334-280-3276
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100516&OID_PERSON=3294
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000083
@@ -27,6 +32,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100516&OID_PERSON=3294
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hurst&OID_SPONSOR=100516&OID_PERSON=3294&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Calhoun County, Clay County, Talladega County
+  counties: Calhoun County, Clay County, Talladega County

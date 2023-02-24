@@ -2,7 +2,8 @@ id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
 name: Shane Stringer
 given_name: Shane
 family_name: Stringer
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Stringer_102.jpeg
+email: shane.stringer@alhouse.gov
+image: https://phs4j.com/alison/imgs/house/Stringer_102.png
 party:
 - name: Republican
 roles:
@@ -12,14 +13,20 @@ roles:
   district: '102'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 524-B, Montgomery AL
+  address: 11 South Union Street,Suite 524-B,Montgomery, AL 36130-2950
   voice: 334-261-0594
+- classification: district
+  address: 104 S Lawrence St,Mobile, AL 36602
+  voice: 251-208-5480
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100584&OID_PERSON=8516
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100584&OID_PERSON=8516
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Stringer&OID_SPONSOR=100584&OID_PERSON=8516&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Mobile County
+  counties: Baldwin County, Mobile County
