@@ -2,8 +2,8 @@ id: ocd-person/4f16fb38-9aa5-48fd-bbff-907544c04e28
 name: John W. Rogers
 given_name: John W.
 family_name: Rogers
-email: yke@cec.conteduc.uab.edu
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Rogers_52.jpeg
+email: johnrogers1424@gmail.com
+image: https://phs4j.com/alison/imgs/house/Rogers_52.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '52'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 523 A, Montgomery AL
+  address: 11 South Union Street,Suite 523 A,Montgomery, AL 36130-2950
   voice: 334-261-0387
+- classification: district
+  address: 1424 18th St. SW,Birmingham, AL 35211
+  voice: 334-261-0495
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100533&OID_PERSON=1112
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000123
@@ -27,6 +32,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100533&OID_PERSON=1112
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Rogers&OID_SPONSOR=100533&OID_PERSON=1112&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Jefferson County
+  counties: Jefferson County

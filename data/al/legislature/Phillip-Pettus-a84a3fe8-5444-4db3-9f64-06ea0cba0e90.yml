@@ -3,7 +3,7 @@ name: Phillip Pettus
 given_name: Phillip
 family_name: Pettus
 email: phillip.pettus@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Pettus_1.jpeg
+image: https://phs4j.com/alison/imgs/house/Pettus_1.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '1'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 400 A, Montgomery AL
+  address: 11 South Union Street,Suite 400 A,Montgomery, AL 36130-2950
   voice: 334-261-0591
+- classification: district
+  address: 771 County Road 144,Killen, AL 35645
+  voice: 256-757-6679
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100481&OID_PERSON=7700
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000178
@@ -27,6 +32,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100481&OID_PERSON=7700
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Pettus&OID_SPONSOR=100481&OID_PERSON=7700&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Lauderdale County
+  counties: Lauderdale County

@@ -3,7 +3,7 @@ name: Adline Clarke
 given_name: Adline
 family_name: Clarke
 email: adline.clarke@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Clarke_97.jpeg
+image: https://phs4j.com/alison/imgs/house/Clarke_97.png
 party:
 - name: Democratic
 roles:
@@ -12,13 +12,15 @@ roles:
   district: '97'
 offices:
 - classification: capitol
-  address: Suite 540-B;11 S. Union Street;Montgomery, AL 36130
+  address: P.O. Box 40758 ,Mobile, AL 36640
   voice: 334-261-0549
 - classification: district
-  address: P.O. Box 40758 , , Mobile AL
-  voice: 251-208-5480
+  address: Post Office Box 40758,Mobile, AL 36640
+  voice: 251-208-5481
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100579&OID_PERSON=7425
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000146
@@ -32,6 +34,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100579&OID_PERSON=7425
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Clarke&OID_SPONSOR=100579&OID_PERSON=7425&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36640'
-  county: Mobile County
+  counties: Mobile County

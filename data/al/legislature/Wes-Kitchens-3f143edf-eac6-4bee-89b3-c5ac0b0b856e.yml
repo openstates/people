@@ -3,7 +3,7 @@ name: Wes Kitchens
 given_name: Wes
 family_name: Kitchens
 email: weskitchens@mclo.org
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Kitchens_27.jpeg
+image: https://phs4j.com/alison/imgs/house/Kitchens_27.png
 party:
 - name: Republican
 roles:
@@ -13,14 +13,20 @@ roles:
   district: '27'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 433, Montgomery AL
+  address: 11 South Union Street,Suite 433,Montgomery, AL 36104
   voice: 334-261-0539
+- classification: district
+  address: 412-A Gunter Avenue,Guntersville, AL 35976
+  voice: 256-582-0619
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Kitchens&OID_SPONSOR=100507&OID_PERSON=8496&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Blount County, DeKalb County, Marshall County
+  counties: Marshall County

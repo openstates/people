@@ -2,7 +2,8 @@ id: ocd-person/63e7d9b8-136c-4ebc-bb87-19660eb7b624
 name: Craig Lipscomb
 given_name: Craig
 family_name: Lipscomb
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Lipscomb_30.jpeg
+email: info@craiglipscomb.com
+image: https://phs4j.com/alison/imgs/house/Lipscomb_30.png
 party:
 - name: Republican
 roles:
@@ -12,14 +13,20 @@ roles:
   district: '30'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 528 D, Montgomery AL
+  address: 11 South Union Street,Suite 528 D,Montgomery, AL 36104
   voice: 334-261-0546
+- classification: district
+  address: 442 Chestnut Street,Gadsden, AL 35901
+  voice: 334-501-7133
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100511&OID_PERSON=8499
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100511&OID_PERSON=8499
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lipscomb&OID_SPONSOR=100511&OID_PERSON=8499&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Etowah County, St. Clair County
+  counties: Etowah County, St. Clair County

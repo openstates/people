@@ -2,8 +2,8 @@ id: ocd-person/9314859d-000f-447c-9aa7-4993b13e8010
 name: Laura Hall
 given_name: Laura
 family_name: Hall
-email: laura.hall@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hall_19.jpeg
+email: annihall19@gmail.com
+image: https://phs4j.com/alison/imgs/house/Hall_19.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '19'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 517-D, Montgomery AL
+  address: 11 South Union Street,Suite 517-D,Montgomery, AL 36130-2950
   voice: 334-261-0517
+- classification: district
+  address: 726 Madison Street,Huntsville, AL 35801
+  voice: 256-539-5441
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100499&OID_PERSON=1068
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000074
@@ -29,6 +34,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100499&OID_PERSON=1068
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hall&OID_SPONSOR=100499&OID_PERSON=1068&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Madison County
+  counties: Madison County
