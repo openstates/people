@@ -3,7 +3,7 @@ name: Jim Hill
 given_name: Jim
 family_name: Hill
 email: jim.hill@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hill_50.jpeg
+image: https://phs4j.com/alison/imgs/house/Hill_50.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '50'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 419, Montgomery AL
+  address: 11 South Union Street,Suite 419,Montgomery, AL 36130-2950
   voice: 334-261-0494
+- classification: district
+  address: 2603 Moody Parkway,Moody, AL 35004
+  voice: 205-838-1990
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100531&OID_PERSON=7696
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000164
@@ -29,6 +34,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100531&OID_PERSON=7696
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hill&OID_SPONSOR=100531&OID_PERSON=7696&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: St. Clair County
+  counties: St. Clair County

@@ -2,7 +2,8 @@ id: ocd-person/c128ed12-dd1b-4b5f-8c64-9d86bf9d6580
 name: Andy Whitt
 given_name: Andy
 family_name: Whitt
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Whitt_6.jpeg
+email: andy.whitt@alhouse.gov
+image: https://phs4j.com/alison/imgs/house/Whitt_6.png
 party:
 - name: Republican
 roles:
@@ -12,14 +13,20 @@ roles:
   district: '6'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 522 C, Montgomery AL
+  address: 11 South Union Street,Suite 522 C,Montgomery, AL 36104
   voice: 334-261-0404
+- classification: district
+  address: Post Office Box 306,Harvest, AL 35749
+  voice: 256-539-5441
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100486&OID_PERSON=8490
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100486&OID_PERSON=8490
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Whitt&OID_SPONSOR=100486&OID_PERSON=8490&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Limestone County, Madison County
+  counties: Madison County, Limestone County

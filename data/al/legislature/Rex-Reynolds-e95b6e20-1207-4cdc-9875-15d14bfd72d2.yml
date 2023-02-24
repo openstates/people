@@ -2,8 +2,8 @@ id: ocd-person/e95b6e20-1207-4cdc-9875-15d14bfd72d2
 name: Rex Reynolds
 given_name: Rex
 family_name: Reynolds
-email: rex.reynolds@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Reynolds_21.jpeg
+email: reynoldsdist21@gmail.com
+image: https://phs4j.com/alison/imgs/house/Reynolds_21.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '21'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 524 D, Montgomery AL
+  address: 11 South Union Street,Suite 524 D,Montgomery, AL 36130-2950
   voice: 334-261-0571
+- classification: district
+  address: Post Office Box 18743,Huntsville, AL 35804
+  voice: 256-582-0619
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100501&OID_PERSON=8445
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000557
@@ -23,6 +28,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100501&OID_PERSON=8445
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Reynolds&OID_SPONSOR=100501&OID_PERSON=8445&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Madison County
+  counties: Madison County

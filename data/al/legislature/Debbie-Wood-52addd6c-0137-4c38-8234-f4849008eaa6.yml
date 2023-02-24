@@ -2,7 +2,8 @@ id: ocd-person/52addd6c-0137-4c38-8234-f4849008eaa6
 name: Debbie Wood
 given_name: Debbie
 family_name: Wood
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Wood_38.jpeg
+email: debbie.wood@alhouse.gov
+image: https://www.legislature.state.al.us/pdf/house/members/Wood_38.png
 party:
 - name: Republican
 roles:
@@ -12,16 +13,22 @@ roles:
   district: '38'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 527 C, Montgomery AL
+  address: 11 South Union Street,Suite 527 C,Montgomery, AL 36104
   voice: 334-261-0532
+- classification: district
+  address: 3011 20th Avenue,Valley, AL 36854
+  voice: 706-773-9404
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100519&OID_PERSON=8500
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_names:
 - name: Wood (D)
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100519&OID_PERSON=8500
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wood&OID_SPONSOR=100519&OID_PERSON=8500&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Chambers County, Lee County
+  counties: Chambers County, Lee County

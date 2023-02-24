@@ -3,7 +3,7 @@ name: "Kenyatt\xE9 Hassell"
 given_name: "Kenyatt\xE9"
 family_name: Hassell
 email: ken.hassell@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hassell_78.jpeg
+image: https://www.legislature.state.al.us/pdf/house/members/kenyatte-hassell.png
 party:
 - name: Democratic
 roles:
@@ -12,14 +12,20 @@ roles:
   district: '78'
 offices:
 - classification: capitol
-  address: 11 South Union Street, , Montgomery AL
+  address: 11 South Union Street, ,Montgomery, AL 36104
   voice: 334-261-0506
+- classification: district
+  address: 1200 Hugh Street,Montgomery, AL 36108
+  voice: 334-834-8494
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hassell&OID_SPONSOR=9100560&OID_PERSON=998507&SESSNAME=Regular%20Session%202022
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=pending.jpeg&OID_SPONSOR=110693&OID_PERSON=9339&SESSNAME=
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hassell&OID_SPONSOR=110693&OID_PERSON=9339&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Montgomery County
+  counties: Montgomery County

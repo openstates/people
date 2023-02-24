@@ -3,7 +3,7 @@ name: Margie Wilcox
 given_name: Margie
 family_name: Wilcox
 email: margie.wilcox@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Wilcox_104.jpeg
+image: https://phs4j.com/alison/imgs/house/Wilcox_104.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '104'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 417-J, Montgomery AL
+  address: 11 South Union Street,Suite 417-J,Montgomery, AL 36130-2950
   voice: 334-261-0577
+- classification: district
+  address: 104 South Lawrence Street,Mobile, AL 36602
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100586&OID_PERSON=7547
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000149
@@ -27,6 +31,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100586&OID_PERSON=7547
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wilcox&OID_SPONSOR=100586&OID_PERSON=7547&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Mobile County
+  counties: Mobile County

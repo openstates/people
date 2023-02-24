@@ -2,7 +2,8 @@ id: ocd-person/04a1794d-93f0-435f-8c68-1b435f2fc1a0
 name: Chip Brown
 given_name: Chip
 family_name: Brown
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Brown_105.jpeg
+email: chip.brown@alhouse.gov
+image: https://phs4j.com/alison/imgs/house/Brown_105.png
 party:
 - name: Republican
 roles:
@@ -12,16 +13,21 @@ roles:
   district: '105'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 524-F, Montgomery AL
+  address: 11 South Union Street,Suite 524-F, Montgomery, AL 36130-2950
   voice: 334-261-0447
+- classification: district
+  address: 104 South Lawrence Street, Mobile, AL 36602
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100587&OID_PERSON=8517
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_names:
 - name: Brown (C)
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100587&OID_PERSON=8517
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Brown&OID_SPONSOR=100587&OID_PERSON=8517&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Mobile County
+  counties: Mobile County

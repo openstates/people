@@ -3,7 +3,7 @@ name: David Standridge
 given_name: David
 family_name: Standridge
 email: david.standridge@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Standridge_34.jpeg
+image: https://www.legislature.state.al.us/pdf/house/members/Standridge_34.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '34'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 403 B, Montgomery AL
+  address: 11 South Union Street,Suite 403 B,Montgomery, AL 36130-2950
   voice: 334-261-0446
+- classification: district
+  address: Post Office Box 76,Hayden, AL 35079
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100515&OID_PERSON=7217
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000142
@@ -27,6 +31,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100515&OID_PERSON=7217
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Standridge&OID_SPONSOR=100515&OID_PERSON=7217&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Blount County, Marshall County
+  counties: Blount County

@@ -2,7 +2,8 @@ id: ocd-person/d9d5a3a8-71f6-4c2e-8805-3fa715b315f4
 name: Rhett Marques
 given_name: Rhett
 family_name: Marques
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Marques_91.jpeg
+email: rhett.marques@alhouse.gov
+image: https://phs4j.com/alison/imgs/house/Marques_91.png
 party:
 - name: Republican
 roles:
@@ -12,14 +13,20 @@ roles:
   district: '91'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 527 B, Montgomery AL
+  address: 11 South Union Street,Suite 527 B,Montgomery, AL 36104
   voice: 334-261-0473
+- classification: district
+  address: 1161 Geneva Hwy,Enterprise, AL 36330
+  voice: 334-289-5664
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100573&OID_PERSON=8513
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100573&OID_PERSON=8513
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Marques&OID_SPONSOR=100573&OID_PERSON=8513&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Coffee County
+  counties: Coffee County

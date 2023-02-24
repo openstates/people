@@ -3,7 +3,7 @@ name: Jim Carns
 given_name: Jim
 family_name: Carns
 email: jwcarns@gmail.com
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Carns_48.jpeg
+image: https://phs4j.com/alison/imgs/house/Carns_48.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '48'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 403 A, Montgomery AL
+  address: 11 South Union Street,Suite 403 A,Montgomery, AL 36130-2950
   voice: 334-261-0429
+- classification: district
+  address: 1713 Pump House Lane,Vestavia Hills, AL 35243
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100529&OID_PERSON=1028
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000053
@@ -29,6 +33,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100529&OID_PERSON=1028
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Carns&OID_SPONSOR=100529&OID_PERSON=1028&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Jefferson County, Shelby County
+  counties: Jefferson County, Shelby County

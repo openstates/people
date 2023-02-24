@@ -2,7 +2,8 @@ id: ocd-person/390ee0ed-0b5e-4f45-a740-63511c4fa3fd
 name: Jamie Kiel
 given_name: Jamie
 family_name: Kiel
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Kiel_18.jpeg
+email: jamie.kiel@alhouse.gov
+image: https://phs4j.com/alison/imgs/house/Kiel_18.png
 party:
 - name: Republican
 roles:
@@ -12,14 +13,19 @@ roles:
   district: '18'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 525 D, Montgomery AL
+  address: 11 South Union Street,Suite 525 D,Montgomery, AL 36104
   voice: 334-261-0521
+- classification: district
+  address: 14696 Highway 43,Russellville, AL 35653
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100498&OID_PERSON=8495
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100498&OID_PERSON=8495
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Kiel&OID_SPONSOR=100498&OID_PERSON=8495&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Colbert County, Franklin County, Lauderdale County
+  counties: Colbert County, Franklin County
