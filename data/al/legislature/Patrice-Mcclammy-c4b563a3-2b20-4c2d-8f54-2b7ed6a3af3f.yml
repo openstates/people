@@ -1,9 +1,9 @@
 id: ocd-person/c4b563a3-2b20-4c2d-8f54-2b7ed6a3af3f
-name: Patrice Mcclammy
+name: Patrice McClammy
 given_name: Patrice
-family_name: Mcclammy
+family_name: McClammy
 email: patrice.mcclammy@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/McClammy_76.jpeg
+image: https://phs4j.com/alison/imgs/house/mcclammy.png
 party:
 - name: Democratic
 roles:
@@ -12,11 +12,20 @@ roles:
   district: '76'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 536 A, Montgomery AL
+  address: 11 South Union Street,Suite 536 A,Montgomery, AL 36130-2950
   voice: 334-261-0580
+- classification: district
+  address: 530 S Union St,Montgomery, AL 36125
+  voice: 334-414-7345
+links:
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
+other_names:
+- name: Patrice Mcclammy
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=McClammy&OID_SPONSOR=111050&OID_PERSON=1101&SESSNAME=
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Montgomery County
+  counties: Montgomery County

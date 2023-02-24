@@ -3,7 +3,7 @@ name: Cynthia Almond
 given_name: Cynthia
 family_name: Almond
 email: cynthia.almond@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Almond_63.jpeg
+image: https://phs4j.com/alison/imgs/house/Almond_63.png
 party:
 - name: Republican
 roles:
@@ -13,11 +13,18 @@ roles:
   district: '63'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 528-A, Montgomery AL
+  address: 11 South Union Street,Suite 528-A,Montgomery, AL 36130-2950
   voice: 334-261-0558
+- classification: district
+  address: 2704 8th Street,Tuscaloosa, AL 35401
+  voice: 205-523-0198
+links:
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Almond&OID_SPONSOR=110857&OID_PERSON=9400&SESSNAME=
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Tuscaloosa County
+  counties: Tuscaloosa County

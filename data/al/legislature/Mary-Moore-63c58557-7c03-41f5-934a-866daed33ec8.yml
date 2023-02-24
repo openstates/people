@@ -3,7 +3,7 @@ name: Mary Moore
 given_name: Mary
 family_name: Moore
 email: mamoor48@bellsouth.net
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Moore_59.jpeg
+image: https://phs4j.com/alison/imgs/house/Moore_59.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '59'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 539 D, Montgomery AL
+  address: 11 South Union Street,Suite 539 D,Montgomery, AL 36130-2950
   voice: 334-261-0508
+- classification: district
+  address: 1622 36th Avenue North,Birmingham, AL 35207
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_names:
 - name: Moore (M)
 other_identifiers:
@@ -29,6 +33,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Moore&OID_SPONSOR=100540&OID_PERSON=4462&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Jefferson County
+  counties: Jefferson County

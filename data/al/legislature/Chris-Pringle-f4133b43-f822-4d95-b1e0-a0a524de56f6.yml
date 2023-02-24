@@ -3,7 +3,7 @@ name: Chris Pringle
 given_name: Chris
 family_name: Pringle
 email: chris.pringle@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Pringle_101.jpeg
+image: https://phs4j.com/alison/imgs/house/Pringle_101.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '101'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 402, Montgomery AL
+  address: 11 South Union Street,Suite 402,Montgomery, AL 36130-2950
   voice: 334-261-0489
+- classification: district
+  address: 4 Princess Anne Road,Mobile, AL 36608
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000171
@@ -27,6 +31,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Pringle&OID_SPONSOR=100583&OID_PERSON=1109&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Mobile County
+  counties: Mobile County

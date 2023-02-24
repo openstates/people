@@ -2,8 +2,8 @@ id: ocd-person/73cebf90-bf5a-444a-857e-b5bbddc374bf
 name: Juandalynn Givan
 given_name: Juandalynn
 family_name: Givan
-email: juandalynn.givan@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Givan_60.jpeg
+email: 307j@att
+image: https://www.legislature.state.al.us/pdf/house/members/Givan_60.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '60'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 528-E, Montgomery AL
+  address: 11 South Union Street,Suite 528-E,Montgomery, AL 36130-2950
   voice: 334-261-0584
+- classification: district
+  address: 63 Greenleaf Drive,Birmingham, AL 35214
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100541&OID_PERSON=6665
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000070
@@ -29,6 +33,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100541&OID_PERSON=6665
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Givan&OID_SPONSOR=100541&OID_PERSON=6665&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Jefferson County
+  counties: Jefferson County

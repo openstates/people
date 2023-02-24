@@ -1,0 +1,27 @@
+id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
+name: Matt Woods
+given_name: Matt
+family_name: Woods
+email: matt.woods@alhouse.gov
+image: https://www.legislature.state.al.us/pdf/house/members/Woods_13.png
+party:
+- name: Republican
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '13'
+offices:
+- classification: capitol
+  address: 11 South Union Street,Montgomery, AL 36130-2950
+  voice: 334-261-0495
+- classification: district
+  address: Post Office Box 1627,Jasper, AL 35502
+  voice: 334-261-0495
+links:
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
+sources:
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
+extras:
+  counties: Walker County
