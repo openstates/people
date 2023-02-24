@@ -3,7 +3,7 @@ name: Barbara Drummond
 given_name: Barbara
 family_name: Drummond
 email: drummondbarbara@att.net
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Drummond_103.jpeg
+image: https://www.legislature.state.al.us/pdf/house/members/Drummond_103.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '103'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 529, Montgomery AL
+  address: 11 South Union Street,Suite 529,Montgomery, AL 36130-2950
   voice: 334-261-0564
+- classification: district
+  address: 1266 Horton Drive,Mobile, AL 36605
+  voice: 251-208-5481
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100585&OID_PERSON=7712
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000176
@@ -29,6 +34,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100585&OID_PERSON=7712
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Drummond&OID_SPONSOR=100585&OID_PERSON=7712&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Mobile County
+  counties: Mobile County

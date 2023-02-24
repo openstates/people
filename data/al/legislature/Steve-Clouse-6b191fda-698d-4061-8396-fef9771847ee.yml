@@ -3,7 +3,7 @@ name: Steve Clouse
 given_name: Steve
 family_name: Clouse
 email: steve.clouse@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Clouse_93.jpeg
+image: https://phs4j.com/alison/imgs/house/Clouse_93.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '93'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 410-D, Montgomery AL
-  voice: 334-261-0479
+  address: 11 South Union Street,Suite 410-D,Montgomery, AL 36130-2950
+  voice: 334-261-0488
+- classification: district
+  address: Post Office Box 818,Ozark, AL 36361
+  voice: 334-774-7384
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100575&OID_PERSON=1035
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000055
@@ -27,6 +32,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100575&OID_PERSON=1035
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Clouse&OID_SPONSOR=100575&OID_PERSON=1035&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Dale County, Houston County
+  counties: Dale County, Houston County

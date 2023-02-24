@@ -2,8 +2,8 @@ id: ocd-person/37a5dfa8-e69f-4567-b8c0-3ea35a69f181
 name: Paul W. Lee
 given_name: Paul W.
 family_name: Lee
-email: plee@wrcjobs.com
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Lee_86.jpeg
+email: pleed86@gmail.com
+image: https://phs4j.com/alison/imgs/house/Lee_86.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '86'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 410 F, Montgomery AL
+  address: 11 South Union Street,Suite 410 F,Montgomery, AL 36130-2950
   voice: 334-261-0488
+- classification: district
+  address: '304 Ashborough Circle, Suite 1, Dothan, AL 36301'
+  voice: 334-792-9682
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000093
@@ -27,6 +32,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lee&OID_SPONSOR=100568&OID_PERSON=6672&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Houston County
+  counties: Houston County

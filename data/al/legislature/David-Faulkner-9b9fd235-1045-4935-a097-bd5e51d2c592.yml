@@ -3,7 +3,7 @@ name: David Faulkner
 given_name: David
 family_name: Faulkner
 email: David@DavidFaulknerAL46.com
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Faulkner_46.jpeg
+image: https://phs4j.com/alison/imgs/house/Faulkner_46.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '46'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 400-D, Montgomery AL
+  address: 11 South Union Street,Suite 400-D,Montgomery, AL 36130-2950
   voice: 334-261-0442
+- classification: district
+  address: '505 North 20th Street, Suite 1800, Birmingham, AL 35203'
+  voice: 205-250-6604
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100527&OID_PERSON=7693
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000157
@@ -29,6 +34,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100527&OID_PERSON=7693
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Faulkner&OID_SPONSOR=100527&OID_PERSON=7693&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Jefferson County
+  counties: Jefferson County

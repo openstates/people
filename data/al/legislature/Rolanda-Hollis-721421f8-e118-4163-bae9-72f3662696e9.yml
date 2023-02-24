@@ -3,7 +3,7 @@ name: Rolanda Hollis
 given_name: Rolanda
 family_name: Hollis
 email: rolanda.hollis@alhouse.gov
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Hollis_58.jpeg
+image: https://phs4j.com/alison/imgs/house/Hollis_58.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '58'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 536-D, Montgomery AL
+  address: 11 South Union Street,Suite 536-D,Montgomery, AL 36130-2950
   voice: 334-261-9520
+- classification: district
+  address: 524 Red Lane Road,Birmingham, AL 35215
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100539&OID_PERSON=8220
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000555
@@ -23,6 +27,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100539&OID_PERSON=8220
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Hollis&OID_SPONSOR=100539&OID_PERSON=8220&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Jefferson County
+  counties: Jefferson County

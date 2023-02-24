@@ -2,7 +2,8 @@ id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
 name: Sam Jones
 given_name: Sam
 family_name: Jones
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Jones_99.jpeg
+email: SL Jones@ballhealth.com
+image: https://phs4j.com/alison/imgs/house/Jones_99.png
 party:
 - name: Democratic
 roles:
@@ -12,16 +13,21 @@ roles:
   district: '99'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 540 C, Montgomery AL
+  address: 11 South Union Street,Suite 540 C,Montgomery, AL 36104
   voice: 334-261-0963
+- classification: district
+  address: 1 Southern Way,Mobile, AL 36619
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100581&OID_PERSON=8515
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_names:
 - name: Jones (S)
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100581&OID_PERSON=8515
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Jones&OID_SPONSOR=100581&OID_PERSON=8515&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Mobile County
+  counties: Mobile County

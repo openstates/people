@@ -3,7 +3,7 @@ name: Chris England
 given_name: Chris
 family_name: England
 email: cengland1@hotmail.com
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/England_70.jpeg
+image: https://www.legislature.state.al.us/pdf/house/members/England_70.png
 party:
 - name: Democratic
 roles:
@@ -12,10 +12,15 @@ roles:
   district: '70'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 539-B, Montgomery AL
+  address: 11 South Union Street,Suite 539-B,Montgomery, AL 36130-2950
   voice: 334-261-0503
+- classification: district
+  address: 2201 University Blvd.,Tuscaloosa, AL 35401
+  voice: 205-248-5140
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100552&OID_PERSON=5543
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000062
@@ -27,6 +32,7 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100552&OID_PERSON=5543
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=England&OID_SPONSOR=100552&OID_PERSON=5543&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Tuscaloosa County
+  counties: Tuscaloosa County

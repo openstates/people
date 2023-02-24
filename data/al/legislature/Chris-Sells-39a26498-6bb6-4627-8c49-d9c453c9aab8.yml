@@ -3,7 +3,7 @@ name: Chris Sells
 given_name: Chris
 family_name: Sells
 email: csea@centurytel.net
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Sells_90.jpeg
+image: https://phs4j.com/alison/imgs/house/Sells_90.png
 party:
 - name: Republican
 roles:
@@ -12,10 +12,14 @@ roles:
   district: '90'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 401 C, Montgomery AL
+  address: 11 South Union Street,Suite 401 C,Montgomery, AL 36130-2950
   voice: 334-261-0568
+- classification: district
+  address: 271 North Mt. Zion Road,Greenville, AL 36037
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100572&OID_PERSON=7702
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000162
@@ -29,6 +33,8 @@ sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100572&OID_PERSON=7702
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Sells&OID_SPONSOR=100572&OID_PERSON=7702&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: 36130-2950
-  county: Butler County, Coffee County, Conecuh County, Crenshaw County, Montgomery County
+  counties: Butler County, Coffee County, Conecuh County, Crenshaw County, Montgomery
+            County

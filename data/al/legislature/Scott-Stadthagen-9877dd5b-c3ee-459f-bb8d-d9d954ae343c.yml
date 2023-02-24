@@ -2,7 +2,8 @@ id: ocd-person/9877dd5b-c3ee-459f-bb8d-d9d954ae343c
 name: Scott Stadthagen
 given_name: Scott
 family_name: Stadthagen
-image: http://www.legislature.state.al.us/ALISWWW/House/Representative%20Pictures/Stadthagen_9.jpeg
+email: scott.stadthagen@alhouse.gov
+image: https://phs4j.com/alison/imgs/house/Stadthagen_9.png
 party:
 - name: Republican
 roles:
@@ -12,14 +13,20 @@ roles:
   district: '9'
 offices:
 - classification: capitol
-  address: 11 South Union Street, Suite 525 B, Montgomery AL
+  address: 11 South Union Street,Suite 525 B,Montgomery, AL 36104
   voice: 334-261-0436
+- classification: district
+  address: Post Office Box 114,Hartselle, AL 35640
+  voice: 205-543-0647
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100489&OID_PERSON=8492
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100489&OID_PERSON=8492
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Stadthagen&OID_SPONSOR=100489&OID_PERSON=8492&SESSNAME=
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
 extras:
-  postal code: '36104'
-  county: Cullman County, Marshall County, Morgan County
+  counties: Morgan County
