@@ -6,43 +6,56 @@ chamber: upper
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3269&COMMITTEE=Tourism
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3269&COMMITTEE=Tourism
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
 - name: Del Marsh
   role: Chairperson
   person_id: ocd-person/0d68f0c5-593d-418a-915e-0f7d3778fae0
 - name: Randy Price
-  role: Vice Chairperson
+  role: Chairperson
   person_id: ocd-person/040b7935-b32a-4d6d-9fa4-ec86e5ffd303
 - name: Rodger M. Smitherman
   role: Ranking Minority Member
   person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
 - name: William M. Beasley
-  role: member
+  role: Member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
 - name: Chris Elliott
-  role: member
+  role: Member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
 - name: Garlan Gudger
-  role: member
+  role: Member
   person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Andrew Jones
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/84d43460-8578-4b85-b2ee-7f6849e270d8
 - name: Steve Livingston
-  role: member
+  role: Member
   person_id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
 - name: Tim Melson
   role: member
   person_id: ocd-person/2f934a90-dc27-4289-b571-36e80ea4384b
 - name: David Sessions
-  role: member
+  role: Member
   person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
 - name: Bobby D. Singleton
-  role: member
+  role: Member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
+- name: Greg Albritton
+  role: Member
+  person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
+- name: Lance Bell
+  role: Member
+  person_id: ocd-person/889eac7b-10b6-4f00-9bd6-e93a93d93211
+- name: Robert Stewart
+  role: Member
+  person_id: ocd-person/cd2d1a70-0bb3-49b3-871c-9e227392653d
 extras:
   Clerk: Asia Franklin
   Phone: 334 261-0712

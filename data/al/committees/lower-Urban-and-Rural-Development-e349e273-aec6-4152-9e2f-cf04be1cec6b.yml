@@ -6,15 +6,19 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3214&COMMITTEE=Urban%20and%20Rural%20Development
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3214&COMMITTEE=Urban%20and%20Rural%20Development
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Randall Shedd
   role: Chair
   person_id: ocd-person/87484b9e-8b03-4b92-90a9-0de7b51d1240
 - name: David Standridge
-  role: Vice Chair
+  role: Chair
   person_id: ocd-person/0efb60b3-60e6-4248-a264-41a2a1d35036
 - name: Prince Chestnut
   role: Ranking Minority Member
@@ -29,7 +33,7 @@ members:
   role: member
   person_id: ocd-person/04a1794d-93f0-435f-8c68-1b435f2fc1a0
 - name: Sam Jones
-  role: member
+  role: Member
   person_id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
 - name: TaShina Morris
   role: member
@@ -41,8 +45,29 @@ members:
   role: member
   person_id: ocd-person/050e1a72-402d-46ae-a9c3-1c5dff003ee6
 - name: Debbie Wood
-  role: member
+  role: Member
   person_id: ocd-person/52addd6c-0137-4c38-8234-f4849008eaa6
+- name: Ritchie Whorton
+  role: Vice Chairperson
+  person_id: ocd-person/7e00e45e-24bf-4939-83b8-a56a90e3ea61
+- name: Mary Moore
+  role: Member
+  person_id: ocd-person/63c58557-7c03-41f5-934a-866daed33ec8
+- name: Matt Woods
+  role: Member
+  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
+- name: Kerry (Bubba) Underwood
+  role: Member
+  person_id: ocd-person/3828d8e6-1f22-4cb1-be51-b3d3a0c36b98
+- name: Rick Rehm
+  role: Member
+  person_id: ocd-person/31629cc7-81e6-4422-9aa3-89e6b9073259
+- name: Matthew Hammett
+  role: Member
+  person_id: ocd-person/ff14c161-755d-44c8-a1e5-c2e3930a5317
+- name: Jennifer Fidler
+  role: Member
+  person_id: ocd-person/48d9f4e1-ec8b-4353-9207-a70db34449a9
 extras:
   Clerk: Jennifer Stallworth
   Phone: (334) 261-0466

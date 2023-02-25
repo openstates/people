@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2619&COMMITTEE=County%20and%20Municipal%20Government
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2619&COMMITTEE=County%20and%20Municipal%20Government
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Reed Ingram
@@ -23,16 +27,16 @@ members:
   role: member
   person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 - name: Adline Clarke
-  role: member
+  role: Member
   person_id: ocd-person/4cb1aeb5-d822-4f2c-a7e6-ae2a132acf17
 - name: Danny Crawford
-  role: member
+  role: Member
   person_id: ocd-person/749e2cb2-e087-4920-aea3-b40d28f56db5
 - name: Steve Hurst
-  role: member
+  role: Member
   person_id: ocd-person/4f0a4d5d-b27a-4f33-b394-f27d306f8a42
 - name: Sam Jones
-  role: member
+  role: Member
   person_id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
 - name: Steve McMillan
   role: member
@@ -44,8 +48,23 @@ members:
   role: member
   person_id: ocd-person/9f5bb9f3-0c86-4ece-95fe-6859562620f1
 - name: Debbie Wood
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/52addd6c-0137-4c38-8234-f4849008eaa6
+- name: Ben Harrison
+  role: Member
+  person_id: ocd-person/a2413268-fe7d-4a14-839c-14e9723da23a
+- name: Kerry (Bubba) Underwood
+  role: Member
+  person_id: ocd-person/3828d8e6-1f22-4cb1-be51-b3d3a0c36b98
+- name: Troy Stubbs
+  role: Member
+  person_id: ocd-person/82715f9c-12a1-4e99-8020-a47b37dfa92b
+- name: Matthew Hammett
+  role: Member
+  person_id: ocd-person/ff14c161-755d-44c8-a1e5-c2e3930a5317
+- name: Jennifer Fidler
+  role: Member
+  person_id: ocd-person/48d9f4e1-ec8b-4353-9207-a70db34449a9
 extras:
   Clerk: Mary Ruth Davis
   Phone: (334) 261-0478

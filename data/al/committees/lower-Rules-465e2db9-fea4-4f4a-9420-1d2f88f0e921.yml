@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1809&COMMITTEE=Rules
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1809&COMMITTEE=Rules
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Mike Jones
@@ -23,10 +27,10 @@ members:
   role: member
   person_id: ocd-person/04a1794d-93f0-435f-8c68-1b435f2fc1a0
 - name: Anthony Daniels
-  role: member
+  role: Member
   person_id: ocd-person/95f7541d-5429-41aa-85e5-7fc9cf33d688
 - name: David Faulkner
-  role: member
+  role: Vice Chair
   person_id: ocd-person/9b9fd235-1045-4935-a097-bd5e51d2c592
 - name: Victor Gaston
   role: member
@@ -44,17 +48,44 @@ members:
   role: member
   person_id: ocd-person/39a26498-6bb6-4627-8c49-d9c453c9aab8
 - name: Jeff Sorrells
-  role: member
+  role: Member
   person_id: ocd-person/18af5645-53f2-4571-b24d-3173abf2b567
 - name: David Standridge
   role: member
   person_id: ocd-person/0efb60b3-60e6-4248-a264-41a2a1d35036
 - name: Pebblin W. Warren
-  role: member
+  role: Member
   person_id: ocd-person/7c93c20f-6b0b-4743-8118-3cb4e9194c26
 - name: Randy Wood
-  role: member
+  role: Member
   person_id: ocd-person/451a4cb7-3585-46d3-86c7-61b345f7a601
+- name: Joe Lovvorn
+  role: Chair
+  person_id: ocd-person/972dcfd0-f2a2-438b-b5de-276ceb398a91
+- name: Scott Stadthagen
+  role: Member
+  person_id: ocd-person/9877dd5b-c3ee-459f-bb8d-d9d954ae343c
+- name: Kyle South
+  role: Member
+  person_id: ocd-person/cbef3e56-a05d-4dca-8b0c-200e4bff9ad5
+- name: Wes Kitchens
+  role: Member
+  person_id: ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e
+- name: Adline Clarke
+  role: Member
+  person_id: ocd-person/4cb1aeb5-d822-4f2c-a7e6-ae2a132acf17
+- name: Chris Pringle
+  role: Member
+  person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
+- name: Shane Stringer
+  role: Member
+  person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
+- name: Cynthia Almond
+  role: Member
+  person_id: ocd-person/ad8462f8-3f3d-483e-8171-6211cd6b6bad
+- name: Matt Woods
+  role: Member
+  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
 extras:
   Clerk: Tracey Arnold
   Phone: (334) 261-0573

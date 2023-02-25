@@ -6,8 +6,12 @@ chamber: upper
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3264&COMMITTEE=Banking%20and%20Insurance
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3264&COMMITTEE=Banking%20and%20Insurance
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
 - name: Shay Shelnutt
@@ -20,34 +24,34 @@ members:
   role: Ranking Minority Member
   person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
 - name: Will Barfoot
-  role: member
+  role: Member
   person_id: ocd-person/8cca1495-936e-4ac5-920a-cc4aa22e495e
 - name: Donnie Chesteen
   role: member
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
 - name: Chris Elliott
-  role: member
+  role: Member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
 - name: Andrew Jones
-  role: member
+  role: Member
   person_id: ocd-person/84d43460-8578-4b85-b2ee-7f6849e270d8
 - name: Steve Livingston
-  role: member
+  role: Member
   person_id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
 - name: Randy Price
-  role: member
+  role: Member
   person_id: ocd-person/040b7935-b32a-4d6d-9fa4-ec86e5ffd303
 - name: Greg J. Reed
   role: member
   person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
 - name: Dan Roberts
-  role: member
+  role: Member
   person_id: ocd-person/c58c02cd-0f5c-4454-b5d9-6eb0e604ea25
 - name: Clay Scofield
-  role: member
+  role: Member
   person_id: ocd-person/889cc21f-1563-4375-8efc-f2f20bff945c
 - name: Bobby D. Singleton
-  role: member
+  role: Member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
 - name: J. T. "Jabo" Waggoner
   role: member
@@ -55,6 +59,21 @@ members:
 - name: Tom Whatley
   role: member
   person_id: ocd-person/92d3faf4-14f4-4efe-bb2d-57e6567fa51f
+- name: J. T. 'Jabo' Waggoner
+  role: Member
+  person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
+- name: Kirk Hatcher
+  role: Member
+  person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
+- name: Jay Hovey
+  role: Member
+  person_id: ocd-person/d581a562-c33c-44c0-a707-c21dddf140aa
+- name: Merika Coleman
+  role: Member
+  person_id: ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5
+- name: Josh Carnley
+  role: Member
+  person_id: ocd-person/51b33504-a943-4091-a3bd-f0b8feb124be
 extras:
   Clerk: Katie Fisher
   Phone: 334 261-0710

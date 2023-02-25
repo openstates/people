@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2944&COMMITTEE=Commerce%20and%20Small%20Business
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2944&COMMITTEE=Commerce%20and%20Small%20Business
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Jim Carns
@@ -23,7 +27,7 @@ members:
   role: member
   person_id: ocd-person/ea79bb0f-ec68-42f3-bf9a-7d28045fc292
 - name: Adline Clarke
-  role: member
+  role: Member
   person_id: ocd-person/4cb1aeb5-d822-4f2c-a7e6-ae2a132acf17
 - name: Jeremy Gray
   role: member
@@ -47,8 +51,29 @@ members:
   role: member
   person_id: ocd-person/c128ed12-dd1b-4b5f-8c64-9d86bf9d6580
 - name: Ritchie Whorton
-  role: member
+  role: Member
   person_id: ocd-person/7e00e45e-24bf-4939-83b8-a56a90e3ea61
+- name: Phillip Rigsby
+  role: Member
+  person_id: ocd-person/78f07b0c-9939-4e03-81f8-f851511a46cb
+- name: Mark Gidley
+  role: Member
+  person_id: ocd-person/97514731-a41d-4328-841f-afdcaac1c6e2
+- name: Brock Colvin
+  role: Member
+  person_id: ocd-person/aaffbe89-25dd-4454-85f7-81e4ed89c749
+- name: Troy Stubbs
+  role: Member
+  person_id: ocd-person/82715f9c-12a1-4e99-8020-a47b37dfa92b
+- name: Patrick Sellers
+  role: Member
+  person_id: ocd-person/19244bfa-5953-4304-8955-cc58d0c5d16d
+- name: Phillip Ensler
+  role: Member
+  person_id: ocd-person/397cb6b4-54fe-42e2-9135-7b440d925649
+- name: Mark Shirey
+  role: Member
+  person_id: ocd-person/41debaee-f705-453d-a46f-3e8282b8a4b0
 extras:
   Clerk: Mary Ruth Davis
   Phone: (334) 261-0478

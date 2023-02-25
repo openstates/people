@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2943&COMMITTEE=Technology%20and%20Research
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2943&COMMITTEE=Technology%20and%20Research
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Joe Lovvorn
@@ -20,16 +24,15 @@ members:
   role: Ranking Minority Member
   person_id: ocd-person/9314859d-000f-447c-9aa7-4993b13e8010
 - name: Alan Baker
-  role: member
+  role: Member
   person_id: ocd-person/cb2488d5-f0b6-4e9f-948b-ff7e9f4e1907
 - name: Craig Lipscomb
   role: member
   person_id: ocd-person/63e7d9b8-136c-4ebc-bb87-19660eb7b624
 - name: Steve McMillan
-  role: member
-  person_id: ocd-person/e1aa6586-238c-43a2-83d2-18ae2a5cfcb9
+  role: Member
 - name: Mary Moore
-  role: member
+  role: Member
   person_id: ocd-person/63c58557-7c03-41f5-934a-866daed33ec8
 - name: Howard Sanderford
   role: member

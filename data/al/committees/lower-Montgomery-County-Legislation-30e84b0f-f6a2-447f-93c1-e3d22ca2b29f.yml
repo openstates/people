@@ -6,24 +6,28 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2350&COMMITTEE=Montgomery%20County%20Legislation
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2350&COMMITTEE=Montgomery%20County%20Legislation
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Kelvin Lawrence
   role: Vice Chair
   person_id: ocd-person/0e1643ee-370a-499d-80df-96116d63c216
 - name: Reed Ingram
-  role: member
+  role: Member
   person_id: ocd-person/bd08d7a5-b1f3-484f-80c1-bddf2d636413
 - name: Charlotte Meadows
   role: member
   person_id: ocd-person/be9221a8-14c1-4abf-9c05-15672bfbd7bc
 - name: TaShina Morris
-  role: member
+  role: Member
   person_id: ocd-person/2ba6dc9a-31db-4371-9d69-7fa000e7a08a
 - name: Chris Sells
-  role: member
+  role: Member
   person_id: ocd-person/39a26498-6bb6-4627-8c49-d9c453c9aab8
 extras:
   Clerk: Teresa Evans

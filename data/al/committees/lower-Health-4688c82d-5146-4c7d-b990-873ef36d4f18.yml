@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1791&COMMITTEE=Health
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1791&COMMITTEE=Health
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Paul W. Lee
@@ -17,44 +21,59 @@ members:
   role: Ranking Minority Member
   person_id: ocd-person/9314859d-000f-447c-9aa7-4993b13e8010
 - name: Jeremy Gray
-  role: member
+  role: Member
   person_id: ocd-person/15372a5d-6a78-40f2-aebf-fd7692c41cb0
 - name: Wes Kitchens
-  role: member
+  role: Member
   person_id: ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e
 - name: Craig Lipscomb
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/63e7d9b8-136c-4ebc-bb87-19660eb7b624
 - name: Joe Lovvorn
   role: member
   person_id: ocd-person/972dcfd0-f2a2-438b-b5de-276ceb398a91
 - name: Rhett Marques
-  role: member
+  role: Member
   person_id: ocd-person/d9d5a3a8-71f6-4c2e-8805-3fa715b315f4
 - name: Charlotte Meadows
   role: member
   person_id: ocd-person/be9221a8-14c1-4abf-9c05-15672bfbd7bc
 - name: Arnold Mooney
-  role: member
+  role: Member
   person_id: ocd-person/02655110-0839-4b2e-9f4b-b3a43788e275
 - name: Ed Oliver
   role: member
   person_id: ocd-person/9ec989cb-f503-46c1-aa2a-2913e2bc16bd
 - name: Neil Rafferty
-  role: member
+  role: Member
   person_id: ocd-person/dc6e41ae-d1b3-47c7-b225-1d5ec88a9fdc
 - name: Chris Sells
   role: member
   person_id: ocd-person/39a26498-6bb6-4627-8c49-d9c453c9aab8
 - name: Jeff Sorrells
-  role: member
+  role: Member
   person_id: ocd-person/18af5645-53f2-4571-b24d-3173abf2b567
 - name: Scott Stadthagen
   role: member
   person_id: ocd-person/9877dd5b-c3ee-459f-bb8d-d9d954ae343c
 - name: Pebblin W. Warren
-  role: member
+  role: Member
   person_id: ocd-person/7c93c20f-6b0b-4743-8118-3cb4e9194c26
+- name: Phillip Rigsby
+  role: Member
+  person_id: ocd-person/78f07b0c-9939-4e03-81f8-f851511a46cb
+- name: David Cole
+  role: Member
+  person_id: ocd-person/90f601b2-5628-4b5d-a31f-fb338451901a
+- name: Susan DuBose
+  role: Member
+  person_id: ocd-person/03612130-d61e-43dd-9768-ddca8f27d4ea
+- name: Frances Holk-Jones
+  role: Member
+  person_id: ocd-person/3bc2e263-71cf-41e2-80c5-3f97cad999ff
+- name: Mark Shirey
+  role: Member
+  person_id: ocd-person/41debaee-f705-453d-a46f-3e8282b8a4b0
 extras:
   Clerk: Mikelann Auburtin
   Phone: (334) 261-0488

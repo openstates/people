@@ -6,8 +6,12 @@ chamber: upper
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
 - name: Jim McClendon
@@ -20,38 +24,47 @@ members:
   role: Ranking Minority Member
   person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
 - name: William M. Beasley
-  role: member
+  role: Member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
 - name: Tom Butler
-  role: member
+  role: Member
   person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
 - name: Donnie Chesteen
-  role: member
+  role: Member
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
 - name: Sam Givhan
-  role: member
+  role: Member
   person_id: ocd-person/21753744-c2a0-45d4-90f8-3d4082c794d4
 - name: Garlan Gudger
   role: member
   person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Tim Melson
-  role: member
+  role: Chairperson
   person_id: ocd-person/2f934a90-dc27-4289-b571-36e80ea4384b
 - name: Greg J. Reed
   role: member
   person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
 - name: Dan Roberts
-  role: member
+  role: Member
   person_id: ocd-person/c58c02cd-0f5c-4454-b5d9-6eb0e604ea25
 - name: Tom Whatley
   role: member
   person_id: ocd-person/92d3faf4-14f4-4efe-bb2d-57e6567fa51f
 - name: Jack W. Williams
-  role: member
+  role: Member
   person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
 - name: April Weaver
-  role: member
+  role: Member
   person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: Shay Shelnutt
+  role: Member
+  person_id: ocd-person/9487b441-352c-43be-a2bb-8abc45e20671
+- name: Lance Bell
+  role: Member
+  person_id: ocd-person/889eac7b-10b6-4f00-9bd6-e93a93d93211
+- name: Robert Stewart
+  role: Member
+  person_id: ocd-person/cd2d1a70-0bb3-49b3-871c-9e227392653d
 extras:
   Clerk: Lindsey Lewis
   Phone: 334 261-0856

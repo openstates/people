@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2799&COMMITTEE=Education%20Policy
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2799&COMMITTEE=Education%20Policy
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Terri Collins
@@ -20,31 +24,31 @@ members:
   role: Ranking Minority Member
   person_id: ocd-person/2a270e80-f041-4068-aae3-2d636cefee51
 - name: Anthony Daniels
-  role: member
+  role: Member
   person_id: ocd-person/95f7541d-5429-41aa-85e5-7fc9cf33d688
 - name: Will Dismukes
   role: member
   person_id: ocd-person/04ec11d7-b28f-44ce-8ed4-336950c1b9b3
 - name: Barbara Drummond
-  role: member
+  role: Ranking Minority Member
   person_id: ocd-person/375419e1-4626-4a9a-92ed-15962de5be09
 - name: Brett Easterbrook
-  role: member
+  role: Member
   person_id: ocd-person/def57a9e-a907-4e62-b990-41dc19661c06
 - name: Corley Ellis
   role: member
   person_id: ocd-person/3b1a631d-35d4-47bd-a37c-a98fed7a5bd4
 - name: Tracy Estes
-  role: member
+  role: Member
   person_id: ocd-person/25308613-cda5-4e1c-aef7-821ada580575
 - name: Bob Fincher
-  role: member
+  role: Member
   person_id: ocd-person/03d6bca3-9630-4173-a3c0-4ab4b5aaaedb
 - name: Charlotte Meadows
   role: member
   person_id: ocd-person/be9221a8-14c1-4abf-9c05-15672bfbd7bc
 - name: TaShina Morris
-  role: member
+  role: Member
   person_id: ocd-person/2ba6dc9a-31db-4371-9d69-7fa000e7a08a
 - name: Kerry Rich
   role: member
@@ -55,6 +59,33 @@ members:
 - name: Shane Stringer
   role: member
   person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
+- name: Alan Baker
+  role: Vice Chair
+  person_id: ocd-person/cb2488d5-f0b6-4e9f-948b-ff7e9f4e1907
+- name: Jeremy Gray
+  role: Member
+  person_id: ocd-person/15372a5d-6a78-40f2-aebf-fd7692c41cb0
+- name: Ivan Smith
+  role: Member
+  person_id: ocd-person/2e9b60b3-d931-412e-a9f6-803aa7c7b085
+- name: Kenneth Paschal
+  role: Member
+  person_id: ocd-person/ab6d4114-8d0a-4439-934b-10197234473c
+- name: Mark Gidley
+  role: Member
+  person_id: ocd-person/97514731-a41d-4328-841f-afdcaac1c6e2
+- name: Matt Woods
+  role: Member
+  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
+- name: Susan DuBose
+  role: Member
+  person_id: ocd-person/03612130-d61e-43dd-9768-ddca8f27d4ea
+- name: Marcus Paramore
+  role: Member
+  person_id: ocd-person/723a971e-91d9-4717-8f19-45f16e18690f
+- name: Frances Holk-Jones
+  role: Member
+  person_id: ocd-person/3bc2e263-71cf-41e2-80c5-3f97cad999ff
 extras:
   Clerk: Adam Rawlins
   Phone: (334) 261-0493
