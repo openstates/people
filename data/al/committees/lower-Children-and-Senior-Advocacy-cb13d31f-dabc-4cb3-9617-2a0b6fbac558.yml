@@ -6,40 +6,50 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2950&COMMITTEE=Children%20and%20Senior%20Advocacy
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2950&COMMITTEE=Children%20and%20Senior%20Advocacy
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: K. L. Brown
   role: Chair
   person_id: ocd-person/fe873537-3868-4416-986f-adc61fe81fa7
 - name: Randall Shedd
-  role: Vice Chair
+  role: Member
   person_id: ocd-person/87484b9e-8b03-4b92-90a9-0de7b51d1240
 - name: Barbara Boyd
   role: Ranking Minority Member
   person_id: ocd-person/a1033b9f-f53e-46b8-ab4e-508d87e0d8e8
 - name: Jim Carns
-  role: member
+  role: Member
   person_id: ocd-person/0d7f5989-df17-4c90-8267-4914f5598712
 - name: Barbara Drummond
-  role: member
+  role: Member
   person_id: ocd-person/375419e1-4626-4a9a-92ed-15962de5be09
 - name: Tracy Estes
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/25308613-cda5-4e1c-aef7-821ada580575
 - name: Tommy Hanes
   role: member
   person_id: ocd-person/578ce109-77dd-48ab-9073-60e2beec6f2e
 - name: Mary Moore
-  role: member
+  role: Member
   person_id: ocd-person/63c58557-7c03-41f5-934a-866daed33ec8
 - name: Ginny Shaver
-  role: member
+  role: Chair
   person_id: ocd-person/08fce57e-b511-4572-bcb8-7c712d8e7d05
 - name: Tim Wadsworth
-  role: member
+  role: Member
   person_id: ocd-person/04f7bd8e-094b-433c-9e91-7ebe64c75604
+- name: Ernie Yarbrough
+  role: Member
+  person_id: ocd-person/5658aa05-6ffa-4774-a8a4-f49c169769d2
+- name: Rick Rehm
+  role: Member
+  person_id: ocd-person/31629cc7-81e6-4422-9aa3-89e6b9073259
 extras:
   Clerk: Clif Richard
   Phone: (334) 261-0458

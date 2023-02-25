@@ -6,40 +6,56 @@ chamber: upper
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3262&COMMITTEE=Education%20Policy
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3262&COMMITTEE=Education%20Policy
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
 - name: Tim Melson
   role: Chairperson
   person_id: ocd-person/2f934a90-dc27-4289-b571-36e80ea4384b
 - name: Donnie Chesteen
-  role: Vice Chairperson
+  role: Chairperson
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
 - name: Rodger M. Smitherman
   role: Ranking Minority Member
   person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
 - name: Tom Butler
-  role: member
+  role: Member
   person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
 - name: Chris Elliott
   role: member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
 - name: Vivian Davis Figures
-  role: member
+  role: Member
   person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
 - name: Jim McClendon
   role: member
   person_id: ocd-person/2bfb02bf-091c-4a88-97d0-e95ae0af0ed6
 - name: Randy Price
-  role: member
+  role: Member
   person_id: ocd-person/040b7935-b32a-4d6d-9fa4-ec86e5ffd303
 - name: Greg J. Reed
   role: member
   person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
 - name: Shay Shelnutt
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/9487b441-352c-43be-a2bb-8abc45e20671
+- name: Garlan Gudger
+  role: Member
+  person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
+- name: Larry Stutts
+  role: Member
+  person_id: ocd-person/abc69c3a-3f86-4880-a1ea-a2a52677b877
+- name: Kirk Hatcher
+  role: Member
+  person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
+- name: Jay Hovey
+  role: Member
+  person_id: ocd-person/d581a562-c33c-44c0-a707-c21dddf140aa
 extras:
   Clerk: Johnson Norman
   Phone: 334 261-0773

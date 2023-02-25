@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2347&COMMITTEE=Jefferson%20County%20Legislation
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2347&COMMITTEE=Jefferson%20County%20Legislation
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Jim Carns
@@ -29,34 +33,34 @@ members:
   role: member
   person_id: ocd-person/b2f6e319-d4e7-448c-b496-01a2d65702e3
 - name: David Faulkner
-  role: member
+  role: Member
   person_id: ocd-person/9b9fd235-1045-4935-a097-bd5e51d2c592
 - name: Danny Garrett
-  role: member
+  role: Member
   person_id: ocd-person/4aab5f96-d36a-4274-9591-9922a353c10b
 - name: Juandalynn Givan
-  role: member
+  role: Member
   person_id: ocd-person/73cebf90-bf5a-444a-857e-b5bbddc374bf
 - name: Rolanda Hollis
-  role: member
+  role: Member
   person_id: ocd-person/721421f8-e118-4163-bae9-72f3662696e9
 - name: Mary Moore
-  role: member
+  role: Member
   person_id: ocd-person/63c58557-7c03-41f5-934a-866daed33ec8
 - name: Neil Rafferty
-  role: member
+  role: Member
   person_id: ocd-person/dc6e41ae-d1b3-47c7-b225-1d5ec88a9fdc
 - name: John W. Rogers
-  role: member
+  role: Member
   person_id: ocd-person/4f16fb38-9aa5-48fd-bbff-907544c04e28
 - name: Kyle South
-  role: member
+  role: Member
   person_id: ocd-person/cbef3e56-a05d-4dca-8b0c-200e4bff9ad5
 - name: Allen Treadaway
-  role: member
+  role: Member
   person_id: ocd-person/3f96a690-e9a3-4774-8484-49a5a079b18c
 - name: Tim Wadsworth
-  role: member
+  role: Member
   person_id: ocd-person/04f7bd8e-094b-433c-9e91-7ebe64c75604
 - name: David Wheeler
   role: member

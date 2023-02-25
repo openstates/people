@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2346&COMMITTEE=Local%20Legislation
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2346&COMMITTEE=Local%20Legislation
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Alan Baker
@@ -26,7 +30,7 @@ members:
   role: member
   person_id: ocd-person/04ec11d7-b28f-44ce-8ed4-336950c1b9b3
 - name: Bob Fincher
-  role: member
+  role: Member
   person_id: ocd-person/03d6bca3-9630-4173-a3c0-4ab4b5aaaedb
 - name: Dexter Grimsley
   role: member
@@ -35,10 +39,10 @@ members:
   role: member
   person_id: ocd-person/2b07eb25-57d7-4c49-b24f-3857d330482c
 - name: Craig Lipscomb
-  role: member
+  role: Member
   person_id: ocd-person/63e7d9b8-136c-4ebc-bb87-19660eb7b624
 - name: Randall Shedd
-  role: member
+  role: Member
   person_id: ocd-person/87484b9e-8b03-4b92-90a9-0de7b51d1240
 - name: Harry Shiver
   role: member
@@ -50,11 +54,35 @@ members:
   role: member
   person_id: ocd-person/0efb60b3-60e6-4248-a264-41a2a1d35036
 - name: Tim Wadsworth
-  role: member
+  role: Member
   person_id: ocd-person/04f7bd8e-094b-433c-9e91-7ebe64c75604
 - name: David Wheeler
   role: member
   person_id: ocd-person/9f5bb9f3-0c86-4ece-95fe-6859562620f1
+- name: Kelvin Lawrence
+  role: Member
+  person_id: ocd-person/0e1643ee-370a-499d-80df-96116d63c216
+- name: Steve Clouse
+  role: Member
+  person_id: ocd-person/6b191fda-698d-4061-8396-fef9771847ee
+- name: Matt Woods
+  role: Member
+  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
+- name: Kerry (Bubba) Underwood
+  role: Member
+  person_id: ocd-person/3828d8e6-1f22-4cb1-be51-b3d3a0c36b98
+- name: Patrick Sellers
+  role: Member
+  person_id: ocd-person/19244bfa-5953-4304-8955-cc58d0c5d16d
+- name: Donna Givens
+  role: Member
+  person_id: ocd-person/ef19bb65-dc3c-4815-ac71-b1ffd9abf28b
+- name: Phillip Ensler
+  role: Member
+  person_id: ocd-person/397cb6b4-54fe-42e2-9135-7b440d925649
+- name: Jennifer Fidler
+  role: Member
+  person_id: ocd-person/48d9f4e1-ec8b-4353-9207-a70db34449a9
 extras:
   Clerk: Jennifer Stallworth
   Phone: (334) 261-0466

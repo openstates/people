@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3192&COMMITTEE=Limestone%20County%20Legislation
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3192&COMMITTEE=Limestone%20County%20Legislation
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Danny Crawford
@@ -20,10 +24,10 @@ members:
   role: member
   person_id: ocd-person/b989ea94-ff93-487a-b46f-3fdaf6ab4347
 - name: Parker Moore
-  role: member
+  role: Member
   person_id: ocd-person/95e63d6f-1815-4364-8817-0d26e360013f
 - name: Andy Whitt
-  role: member
+  role: Member
   person_id: ocd-person/c128ed12-dd1b-4b5f-8c64-9d86bf9d6580
 extras:
   Clerk: Adam Rawlins

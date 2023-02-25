@@ -6,33 +6,37 @@ chamber: upper
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3257&COMMITTEE=Finance%20and%20Taxation%20Education
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3257&COMMITTEE=Finance%20and%20Taxation%20Education
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
 - name: Arthur Orr
   role: Chairperson
   person_id: ocd-person/b38546ec-f8fb-4e99-8e0c-46715b2e8578
 - name: Tim Melson
-  role: Vice Chairperson
+  role: Member
   person_id: ocd-person/2f934a90-dc27-4289-b571-36e80ea4384b
 - name: Rodger M. Smitherman
   role: Ranking Minority Member
   person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
 - name: Greg Albritton
-  role: member
+  role: Member
   person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
 - name: Gerald H. Allen
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a
 - name: Donnie Chesteen
-  role: member
+  role: Member
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
 - name: Vivian Davis Figures
-  role: member
+  role: Member
   person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
 - name: Garlan Gudger
-  role: member
+  role: Member
   person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Jim McClendon
   role: member
@@ -44,13 +48,13 @@ members:
   role: member
   person_id: ocd-person/1c18390b-b150-4361-8dfc-9f37c1f2b51f
 - name: Clay Scofield
-  role: member
+  role: Member
   person_id: ocd-person/889cc21f-1563-4375-8efc-f2f20bff945c
 - name: David Sessions
-  role: member
+  role: Member
   person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
 - name: Bobby D. Singleton
-  role: member
+  role: Member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
 - name: J. T. "Jabo" Waggoner
   role: member
@@ -58,6 +62,21 @@ members:
 - name: Tom Whatley
   role: member
   person_id: ocd-person/92d3faf4-14f4-4efe-bb2d-57e6567fa51f
+- name: Tom Butler
+  role: Member
+  person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
+- name: Dan Roberts
+  role: Member
+  person_id: ocd-person/c58c02cd-0f5c-4454-b5d9-6eb0e604ea25
+- name: J. T. 'Jabo' Waggoner
+  role: Member
+  person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
+- name: Kirk Hatcher
+  role: Member
+  person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
+- name: Jay Hovey
+  role: Member
+  person_id: ocd-person/d581a562-c33c-44c0-a707-c21dddf140aa
 extras:
   Clerk: Dalton Doyle
   Phone: 334 261-0758

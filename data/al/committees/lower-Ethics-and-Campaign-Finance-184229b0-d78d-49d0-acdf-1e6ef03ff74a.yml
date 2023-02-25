@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2951&COMMITTEE=Ethics%20and%20Campaign%20Finance
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2951&COMMITTEE=Ethics%20and%20Campaign%20Finance
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Mike Ball
@@ -23,7 +27,7 @@ members:
   role: member
   person_id: ocd-person/b2f6e319-d4e7-448c-b496-01a2d65702e3
 - name: Berry Forte
-  role: member
+  role: Member
   person_id: ocd-person/a5d0ab78-e643-4ea1-86f2-2dad948b498a
 - name: Dexter Grimsley
   role: member
@@ -32,14 +36,41 @@ members:
   role: member
   person_id: ocd-person/e95b6e20-1207-4cdc-9875-15d14bfd72d2
 - name: Matt Simpson
-  role: member
+  role: Chairperson
   person_id: ocd-person/52046189-0464-4140-9cdf-b6c66312d49d
 - name: Andrew Sorrell
   role: member
   person_id: ocd-person/6e7f8f74-90fd-416b-b08e-188d6315b3ce
 - name: Ritchie Whorton
-  role: member
+  role: Member
   person_id: ocd-person/7e00e45e-24bf-4939-83b8-a56a90e3ea61
+- name: Cynthia Almond
+  role: Vice Chairperson
+  person_id: ocd-person/ad8462f8-3f3d-483e-8171-6211cd6b6bad
+- name: Corey Harbison
+  role: Member
+  person_id: ocd-person/2e6c07ff-be85-441b-b733-48eb1b607675
+- name: Chris England
+  role: Member
+  person_id: ocd-person/b57cc6b9-3627-431f-8a01-4c3c7ba973d4
+- name: Matt Woods
+  role: Member
+  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
+- name: Leigh Hulsey
+  role: Member
+  person_id: ocd-person/f2489dbf-ac57-427f-8200-4cf6e6610980
+- name: James Lomax
+  role: Member
+  person_id: ocd-person/d54b8dfc-7921-4f35-ad22-ad2efdaad100
+- name: Mike Shaw
+  role: Member
+  person_id: ocd-person/cff09a3a-b81e-433d-80f5-45f6472f4642
+- name: Ron Bolton
+  role: Member
+  person_id: ocd-person/b94526a8-1564-43f5-ad38-98b795e95f02
+- name: Curtis Travis
+  role: Member
+  person_id: ocd-person/583c130d-a97a-48c9-9a18-03e94aa93930
 extras:
   Clerk: Adam Rawlins
   Phone: 334-261-0058

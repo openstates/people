@@ -6,20 +6,24 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2352&COMMITTEE=Shelby%20County%20Legislation
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2352&COMMITTEE=Shelby%20County%20Legislation
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: April Weaver
   role: Chair
 - name: Jim Carns
-  role: member
+  role: Member
   person_id: ocd-person/0d7f5989-df17-4c90-8267-4914f5598712
 - name: Dickie Drake
   role: member
   person_id: ocd-person/a3afb3d8-6f33-43f6-bc5e-6edfd927944d
 - name: Corley Ellis
-  role: member
+  role: Member
   person_id: ocd-person/3b1a631d-35d4-47bd-a37c-a98fed7a5bd4
 - name: Allen Farley
   role: member
@@ -28,7 +32,7 @@ members:
   role: Chair
   person_id: ocd-person/02655110-0839-4b2e-9f4b-b3a43788e275
 - name: Kenneth Paschal
-  role: member
+  role: Member
   person_id: ocd-person/ab6d4114-8d0a-4439-934b-10197234473c
 extras:
   Clerk: Jennifer Stallworth

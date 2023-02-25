@@ -6,42 +6,46 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2338&COMMITTEE=Ways%20and%20Means%20Education
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2338&COMMITTEE=Ways%20and%20Means%20Education
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Danny Garrett
   role: Chair
   person_id: ocd-person/4aab5f96-d36a-4274-9591-9922a353c10b
 - name: Joe Lovvorn
-  role: Vice Chair
+  role: Member
   person_id: ocd-person/972dcfd0-f2a2-438b-b5de-276ceb398a91
 - name: Rod Scott
   role: Ranking Minority Member
   person_id: ocd-person/2a270e80-f041-4068-aae3-2d636cefee51
 - name: Alan Baker
-  role: member
+  role: Member
   person_id: ocd-person/cb2488d5-f0b6-4e9f-948b-ff7e9f4e1907
 - name: Prince Chestnut
-  role: member
+  role: Member
   person_id: ocd-person/b1e60061-fb98-4c20-8532-b734d08cdbc3
 - name: Terri Collins
-  role: member
+  role: Member
   person_id: ocd-person/902f0f81-a34c-4714-a3eb-bf563abbea96
 - name: Barbara Drummond
-  role: member
+  role: Ranking Minority Member
   person_id: ocd-person/375419e1-4626-4a9a-92ed-15962de5be09
 - name: Corley Ellis
-  role: member
+  role: Member
   person_id: ocd-person/3b1a631d-35d4-47bd-a37c-a98fed7a5bd4
 - name: David Faulkner
-  role: member
+  role: Member
   person_id: ocd-person/9b9fd235-1045-4935-a097-bd5e51d2c592
 - name: Dexter Grimsley
   role: member
   person_id: ocd-person/bb08a16c-3da6-43f7-a98e-3d6fa5c11f47
 - name: Jamie Kiel
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/390ee0ed-0b5e-4f45-a740-63511c4fa3fd
 - name: Nathaniel Ledbetter
   role: member
@@ -53,8 +57,23 @@ members:
   role: member
   person_id: ocd-person/9c1b2b35-8f0c-4812-a14e-864944729d12
 - name: Debbie Wood
-  role: member
+  role: Member
   person_id: ocd-person/52addd6c-0137-4c38-8234-f4849008eaa6
+- name: Anthony Daniels
+  role: Member
+  person_id: ocd-person/95f7541d-5429-41aa-85e5-7fc9cf33d688
+- name: Kelvin Lawrence
+  role: Member
+  person_id: ocd-person/0e1643ee-370a-499d-80df-96116d63c216
+- name: Cynthia Almond
+  role: Member
+  person_id: ocd-person/ad8462f8-3f3d-483e-8171-6211cd6b6bad
+- name: Brock Colvin
+  role: Member
+  person_id: ocd-person/aaffbe89-25dd-4454-85f7-81e4ed89c749
+- name: Troy Stubbs
+  role: Member
+  person_id: ocd-person/82715f9c-12a1-4e99-8020-a47b37dfa92b
 extras:
   Clerk: Karen Cheeks
   Phone: (334) 261-0524

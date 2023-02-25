@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2949&COMMITTEE=Military%20and%20Veterans%20Affairs
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2949&COMMITTEE=Military%20and%20Veterans%20Affairs
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Dickie Drake
@@ -23,23 +27,44 @@ members:
   role: member
   person_id: ocd-person/2b07eb25-57d7-4c49-b24f-3857d330482c
 - name: Sam Jones
-  role: member
+  role: Ranking Minority Member
   person_id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
 - name: Phillip Pettus
-  role: member
+  role: Member
   person_id: ocd-person/a84a3fe8-5444-4db3-9f64-06ea0cba0e90
 - name: Allen Treadaway
-  role: member
+  role: Member
   person_id: ocd-person/3f96a690-e9a3-4774-8484-49a5a079b18c
 - name: Randy Wood
-  role: member
+  role: Member
   person_id: ocd-person/451a4cb7-3585-46d3-86c7-61b345f7a601
 - name: "Kenyatt\xE9 Hassell"
-  role: member
+  role: Member
   person_id: ocd-person/63c5bc01-757d-474a-9c75-286da0076e3e
 - name: Kenneth Paschal
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/ab6d4114-8d0a-4439-934b-10197234473c
+- name: Ed Oliver
+  role: Chairperson
+  person_id: ocd-person/9ec989cb-f503-46c1-aa2a-2913e2bc16bd
+- name: Patrice McClammy
+  role: Member
+  person_id: ocd-person/c4b563a3-2b20-4c2d-8f54-2b7ed6a3af3f
+- name: Mark Gidley
+  role: Member
+  person_id: ocd-person/97514731-a41d-4328-841f-afdcaac1c6e2
+- name: Ben Harrison
+  role: Member
+  person_id: ocd-person/a2413268-fe7d-4a14-839c-14e9723da23a
+- name: Chad Robertson
+  role: Member
+  person_id: ocd-person/60ec1e11-da78-43be-90e5-5d850bf3edc7
+- name: Fred (Coach) Plump
+  role: Member
+  person_id: ocd-person/295eb580-87ee-4359-a3fa-9ae914e8df1d
+- name: Jerry Starnes
+  role: Member
+  person_id: ocd-person/8394a967-dcf1-4901-a8d5-9ca120da382e
 extras:
   Clerk: Clif Richard
   Phone: (334) 261-0458

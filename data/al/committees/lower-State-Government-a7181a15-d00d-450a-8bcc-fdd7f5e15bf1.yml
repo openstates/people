@@ -6,15 +6,19 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2337&COMMITTEE=State%20Government
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2337&COMMITTEE=State%20Government
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Chris Pringle
   role: Chair
   person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
 - name: Chris Sells
-  role: Vice Chair
+  role: Chairperson
   person_id: ocd-person/39a26498-6bb6-4627-8c49-d9c453c9aab8
 - name: John W. Rogers
   role: Ranking Minority Member
@@ -23,10 +27,10 @@ members:
   role: member
   person_id: ocd-person/6308bf76-ac79-4260-89fe-24ed2ba51d86
 - name: Russell Bedsole
-  role: member
+  role: Vice Chairperson
   person_id: ocd-person/af4e689f-d9f8-4a90-a883-1ed68e476aa9
 - name: Barbara Boyd
-  role: member
+  role: Member
   person_id: ocd-person/a1033b9f-f53e-46b8-ab4e-508d87e0d8e8
 - name: Brett Easterbrook
   role: member
@@ -35,10 +39,10 @@ members:
   role: member
   person_id: ocd-person/721421f8-e118-4163-bae9-72f3662696e9
 - name: Jamie Kiel
-  role: member
+  role: Member
   person_id: ocd-person/390ee0ed-0b5e-4f45-a740-63511c4fa3fd
 - name: Kelvin Lawrence
-  role: member
+  role: Member
   person_id: ocd-person/0e1643ee-370a-499d-80df-96116d63c216
 - name: Connie C. Rowe
   role: member
@@ -47,8 +51,32 @@ members:
   role: member
   person_id: ocd-person/e36c9886-4776-47b8-a18a-fba2019a17a5
 - name: Scott Stadthagen
-  role: member
+  role: Member
   person_id: ocd-person/9877dd5b-c3ee-459f-bb8d-d9d954ae343c
+- name: Randy Wood
+  role: Member
+  person_id: ocd-person/451a4cb7-3585-46d3-86c7-61b345f7a601
+- name: Prince Chestnut
+  role: Member
+  person_id: ocd-person/b1e60061-fb98-4c20-8532-b734d08cdbc3
+- name: Ernie Yarbrough
+  role: Member
+  person_id: ocd-person/5658aa05-6ffa-4774-a8a4-f49c169769d2
+- name: David Cole
+  role: Member
+  person_id: ocd-person/90f601b2-5628-4b5d-a31f-fb338451901a
+- name: Mike Kirkland
+  role: Member
+  person_id: ocd-person/c2e0fa74-36df-4d34-8203-962c546442fa
+- name: Mack Butler
+  role: Member
+  person_id: ocd-person/5071243c-3e2d-4acb-ac8d-0d3a8af3eb8a
+- name: Mike Shaw
+  role: Member
+  person_id: ocd-person/cff09a3a-b81e-433d-80f5-45f6472f4642
+- name: Marcus Paramore
+  role: Member
+  person_id: ocd-person/723a971e-91d9-4717-8f19-45f16e18690f
 extras:
   Clerk: Jacqueline Tymes
   Phone: (334) 261-0431

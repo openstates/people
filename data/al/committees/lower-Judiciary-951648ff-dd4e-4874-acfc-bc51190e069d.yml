@@ -6,8 +6,12 @@ chamber: lower
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1795&COMMITTEE=Judiciary
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: Committee list api call
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1795&COMMITTEE=Judiciary
+  note: homepage
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Jim Hill
@@ -23,7 +27,7 @@ members:
   role: member
   person_id: ocd-person/6308bf76-ac79-4260-89fe-24ed2ba51d86
 - name: Prince Chestnut
-  role: member
+  role: Member
   person_id: ocd-person/b1e60061-fb98-4c20-8532-b734d08cdbc3
 - name: Merika Coleman
   role: member
@@ -32,20 +36,44 @@ members:
   role: member
   person_id: ocd-person/a3afb3d8-6f33-43f6-bc5e-6edfd927944d
 - name: Chris England
-  role: member
+  role: Ranking Minority Member
   person_id: ocd-person/b57cc6b9-3627-431f-8a01-4c3c7ba973d4
 - name: David Faulkner
-  role: member
+  role: Member
   person_id: ocd-person/9b9fd235-1045-4935-a097-bd5e51d2c592
 - name: Mike Holmes
   role: member
   person_id: ocd-person/fc14c612-4ebd-4e88-a8d0-5a851db1c88a
 - name: Phillip Pettus
-  role: member
+  role: Member
   person_id: ocd-person/a84a3fe8-5444-4db3-9f64-06ea0cba0e90
 - name: Matt Simpson
-  role: member
+  role: Member
   person_id: ocd-person/52046189-0464-4140-9cdf-b6c66312d49d
+- name: Jerry Starnes
+  role: Member
+  person_id: ocd-person/8394a967-dcf1-4901-a8d5-9ca120da382e
+- name: Ontario Tillman
+  role: Member
+  person_id: ocd-person/a86c6f40-304e-49fd-a312-3aa30660fcdf
+- name: Patrice McClammy
+  role: Member
+  person_id: ocd-person/c4b563a3-2b20-4c2d-8f54-2b7ed6a3af3f
+- name: Cynthia Almond
+  role: Member
+  person_id: ocd-person/ad8462f8-3f3d-483e-8171-6211cd6b6bad
+- name: Ben Robbins
+  role: Member
+  person_id: ocd-person/7da5c799-bd67-458a-b3b1-a0cdda8f474e
+- name: Russell Bedsole
+  role: Member
+  person_id: ocd-person/af4e689f-d9f8-4a90-a883-1ed68e476aa9
+- name: Shane Stringer
+  role: Member
+  person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
+- name: David Standridge
+  role: Member
+  person_id: ocd-person/0efb60b3-60e6-4248-a264-41a2a1d35036
 extras:
   Clerk: Brandy Allen
   Phone: (334) 261-0494
