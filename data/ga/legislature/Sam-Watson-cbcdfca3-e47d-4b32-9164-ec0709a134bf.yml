@@ -8,9 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/watson-sam-8
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-02-06'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '172'
+- start_date: '2023-02-06'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '11'
 offices:
 - classification: capitol
   address: 245 State Capitol; Atlanta, GA 30334
