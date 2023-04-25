@@ -5,8 +5,14 @@ name: Appropriations
 chamber: lower
 sources:
 - url: https://www.legis.state.pa.us/cfdocs/CteeInfo/index.cfm?Code=4&CteeBody=H&SessYear=2021
+- url: https://www.legis.state.pa.us/cfdocs/CteeInfo/StandingCommittees.cfm?CteeBody=H
+  note: Committee list page
+- url: https://www.legis.state.pa.us/cfdocs/CteeInfo/index.cfm?Code=62&CteeBody=H&SessYear=2023
+  note: Committee homepage
 links:
 - url: https://www.legis.state.pa.us/cfdocs/CteeInfo/index.cfm?Code=4&CteeBody=H&SessYear=2021
+  note: homepage
+- url: https://www.legis.state.pa.us/cfdocs/CteeInfo/index.cfm?Code=62&CteeBody=H&SessYear=2023
   note: homepage
 members:
 - name: Stan Saylor
@@ -16,7 +22,7 @@ members:
   role: Democratic Chair
   person_id: ocd-person/a15da78b-2475-4606-854f-7477dfc4233d
 - name: John A. Lawrence
-  role: Secretary
+  role: Member
   person_id: ocd-person/8c1966e4-80f4-4a98-bf55-b1de0b9705b3
 - name: Jesse Topper
   role: Vice Chair
@@ -25,19 +31,16 @@ members:
   role: Subcommittee Chair on Economic Impact & Infrastructure
   person_id: ocd-person/02117eb4-a7b3-4095-831b-1857910660fb
 - name: Torren C. Ecker
-  role: Subcommittee Chair on Criminal Justice
+  role: Member
   person_id: ocd-person/6f375652-451b-4c39-9b29-6ba5a07073c6
 - name: Keith J. Greiner
   role: Subcommittee Chair on Fiscal Policy
   person_id: ocd-person/dcd0037e-7833-416d-9523-5f25802bd43a
-- name: John A. Lawrence
-  role: Subcommittee Chair on Government & Financial Oversight
-  person_id: ocd-person/8c1966e4-80f4-4a98-bf55-b1de0b9705b3
 - name: Natalie Mihalek
-  role: Subcommittee Chair on Education
+  role: Member
   person_id: ocd-person/c5e053dd-a874-4a51-a071-661a20db33ab
 - name: Clint Owlett
-  role: Subcommittee Chair on Health & Welfare
+  role: Member
   person_id: ocd-person/626de4be-b2f3-4a37-bbbc-ede598381d6b
 - name: Jonathan Fritz
   role: member
@@ -52,7 +55,7 @@ members:
   role: member
   person_id: ocd-person/b29f8685-d054-4c6c-a8ad-d64f80bd840f
 - name: Zachary Mako
-  role: member
+  role: Member
   person_id: ocd-person/c3b27985-614c-434d-b3c0-3e032fad4d6c
 - name: Timothy J. O'Neal
   role: member
@@ -60,18 +63,17 @@ members:
 - name: Christopher B. Quinn
   role: member
   person_id: ocd-person/d6358ed3-bd9b-4299-ba0a-e5449b38ecd4
-- name: Greg Rothman
-  role: member
-  person_id: ocd-person/3e99b4f3-2efa-4330-b0b9-fb273b1322ea
 - name: Louis C. Schmitt, Jr.
   role: member
+  person_id: ocd-person/e19d3bae-7d48-4e27-af66-e9453633edca
 - name: Meghan Schroeder
   role: member
   person_id: ocd-person/a9fe3ee7-4079-47fb-8cfc-5ce3cb7803aa
 - name: James B. Struzzi, II
   role: member
+  person_id: ocd-person/4a24dcc2-5619-4bb1-acb3-bf7a7d08e6b1
 - name: Ryan Warner
-  role: member
+  role: Member
   person_id: ocd-person/0d747b7a-0a5a-42cf-8bb6-1eb0fa69090f
 - name: Jeff C. Wheeland
   role: member
@@ -86,19 +88,19 @@ members:
   role: member
   person_id: ocd-person/c7ba89f6-7317-43c8-8bc3-0270843583f6
 - name: Morgan Cephas
-  role: member
+  role: Member
   person_id: ocd-person/05326e52-202a-46cd-bbbe-cc8d01d9a44b
 - name: Austin A. Davis
   role: member
   person_id: ocd-person/e5de67f9-3e82-4e65-89ce-47aa0772d1f8
 - name: Elizabeth Fiedler
-  role: member
+  role: Member
   person_id: ocd-person/90d95881-f6ae-4b29-af31-31a8821b8a7c
 - name: Patty Kim
   role: member
   person_id: ocd-person/b5ff17d0-36e8-4f29-8c9b-e51bb9b3ea29
 - name: Emily Kinkead
-  role: member
+  role: Member
   person_id: ocd-person/875b1add-2803-4cc3-964b-0e351ed6ca1c
 - name: Stephen Kinsey
   role: member
@@ -107,14 +109,89 @@ members:
   role: member
   person_id: ocd-person/8187ecb2-3e4b-4ba0-819e-a7cfb4b9ac93
 - name: Kyle J. Mullins
-  role: member
+  role: Member
   person_id: ocd-person/625784c9-4cd0-417c-9c44-1acd53b34307
 - name: Benjamin V. Sanchez
-  role: member
+  role: Member
   person_id: ocd-person/b64463e2-41f6-4d58-a725-03db71798c1c
 - name: Peter Schweyer
   role: member
   person_id: ocd-person/63936c68-ec65-40a9-9a68-0d956939404a
 - name: Joe Webster
-  role: member
+  role: Member
   person_id: ocd-person/676410b6-c3aa-4c17-856f-7d896e6fbc83
+- name: Jordan A. Harris
+  role: Chair
+  person_id: ocd-person/2313ce98-7ac4-44b9-a61d-5b128338a405
+- name: Seth M. Grove
+  role: Republican Chair
+  person_id: ocd-person/f10a1cb3-df7f-432c-8d33-e6d3293b7f88
+- name: Aerion Abney
+  role: Member
+  person_id: ocd-person/1b5abb1e-0028-49a3-ae86-cfb90296c796
+- name: Tim Brennan
+  role: Member
+  person_id: ocd-person/de68158e-3cc9-4651-b3a1-71f5e77b7dab
+- name: Gina H. Curry
+  role: Member
+  person_id: ocd-person/4c88ce64-4ba6-4f5e-a22f-86bf6a0d5b7f
+- name: Justin C. Fleming
+  role: Member
+  person_id: ocd-person/98b96b05-81eb-4871-a81b-2e03c0b92267
+- name: Pat Gallagher
+  role: Member
+  person_id: ocd-person/36e7e815-87a3-4c58-baae-71f210e48114
+- name: Manuel Guzman
+  role: Member
+  person_id: ocd-person/d26c016b-27e5-4171-849b-94773178023d
+- name: Bridget M. Kosierowski
+  role: Member
+  person_id: ocd-person/e5149ed2-f2bb-4054-8064-e2331ffaf1c0
+- name: Dave Madsen
+  role: Member
+  person_id: ocd-person/4a0c9e5e-07cc-4b4b-a47a-22be60d1623e
+- name: Steven R. Malagari
+  role: Member
+  person_id: ocd-person/fa1e1564-0a13-4b26-8416-098b39627df7
+- name: La'Tasha D. Mayes
+  role: Member
+  person_id: ocd-person/526967db-cef3-4f64-a380-1377f5c6f1fe
+- name: Napoleon J. Nelson
+  role: Member
+  person_id: ocd-person/94e57e39-e58d-4374-9506-ece1a01e0ebd
+- name: Abigail Salisbury
+  role: Member
+  person_id: ocd-person/4bc74848-3896-4a0a-9310-970458f48d1a
+- name: Joshua Siegel
+  role: Member
+  person_id: ocd-person/52f7d2da-ab1a-4cac-a08a-249b4d0507fe
+- name: Ben Waxman
+  role: Member
+  person_id: ocd-person/1f2c3093-8ce7-41f7-8df0-6cd14ddd354b
+- name: Regina G. Young
+  role: Member
+  person_id: ocd-person/a737f4d4-5b45-469b-8d51-98c7aa78183a
+- name: Mike Cabell
+  role: Member
+  person_id: ocd-person/efb61438-e171-442c-bc81-897138ca998c
+- name: Ann Flood
+  role: Member
+  person_id: ocd-person/e00e0f63-7058-46a4-8b63-f31dc804c614
+- name: Thomas H. Kutz
+  role: Member
+  person_id: ocd-person/932682ef-c7da-4383-8c50-58879fba0ca6
+- name: Kristin Marcell
+  role: Member
+  person_id: ocd-person/f1c8d8ab-0220-4b1e-96d0-6e0ae0b6df87
+- name: Marci Mustello
+  role: Member
+  person_id: ocd-person/dc7a449c-43cf-4522-b2a3-efb4707907c4
+- name: Eric R. Nelson
+  role: Member
+  person_id: ocd-person/0910d394-3c42-48ee-aea7-6d4c0c144130
+- name: Louis C. Schmitt
+  role: Member
+  person_id: ocd-person/e19d3bae-7d48-4e27-af66-e9453633edca
+- name: James B. Struzzi
+  role: Member
+  person_id: ocd-person/4a24dcc2-5619-4bb1-acb3-bf7a7d08e6b1
