@@ -9,6 +9,10 @@ party:
 roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '26'
+- end_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '82'
 offices:
 - classification: district
@@ -27,10 +31,14 @@ other_identifiers:
   identifier: '187846'
 - scheme: ballotpedia
   identifier: Mark_Berry
+- scheme: openstates
+  identifier: ocd-person/bfed95fa-4b07-45fe-9072-e0499e5a056e
 sources:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Berry&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Berry&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Berry&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
   seniority: '99'
   occupation: Retired Military
