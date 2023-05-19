@@ -3,7 +3,7 @@ name: Rick Williams
 given_name: Rick
 family_name: Williams
 gender: Male
-email: rick.williams@house.ga.gov
+email: rick.williams@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/williams-rick-4905.jpg
 party:
 - name: Republican
@@ -18,14 +18,18 @@ roles:
   district: '25'
 offices:
 - classification: capitol
-  address: 601-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0254
+  address: 327-B CLOB; Atlanta, GA 30334
+  voice: 404-656-0082
 - classification: district
   address: 1670 N. Jefferson Street; Milledgeville, GA 31061
   name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4905&Session=27
 - url: https://www.legis.ga.gov/members/house/4905?session=1029
+- url: https://www.legis.ga.gov/members/senate/4905?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000472
@@ -39,6 +43,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4905?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4905?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Milledgeville
   city: Milledgeville
@@ -47,5 +55,5 @@ extras:
   occupation: Funeral Director
   press: https://house-press.com/representative/Rick-Williams
   spouse: Donna
-  staff: a href="
-  staff email: ''
+  staff: Tarika Jackson
+  staff email: tarika.jackson@senate.ga.gov

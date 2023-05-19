@@ -15,14 +15,28 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '123'
+offices:
+- classification: capitol
+  address: 508-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0213
+- classification: district
+  address: P.O. Drawer 399; Elberton, GA 30635
 links:
 - url: https://www.legis.ga.gov/members/house/4993?session=1029
+- url: https://www.legis.ga.gov/members/house/4993?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/house/4993?session=1029
 - url: https://www.legis.ga.gov/members/house/4993?session=1029
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4993?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4993?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Elberton
   city: Elberton
@@ -31,6 +45,6 @@ extras:
   occupation: Attorney
   press: https://house-press.com/representative/Rob-Leverett
   spouse: Mary Dana
-  staff: LaTricia Howard - Administrative Assistant
-  staff email: latricia.howard@house.ga.gov
-  title: Majority Caucus Chief Deputy Whip
+  staff: Lauryn Bennett-Walker - Administrative Assistant
+  staff email: lauryn.bennett-walker@house.ga.gov
+  title: Chairman, Reapportionment & Redistricting

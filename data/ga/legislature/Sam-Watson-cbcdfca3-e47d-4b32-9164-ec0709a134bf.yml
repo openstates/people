@@ -3,7 +3,7 @@ name: Sam Watson
 given_name: Sam
 family_name: Watson
 gender: Male
-email: sam.watson@house.ga.gov
+email: sam.watson@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/watson-sam-837.jpg
 party:
 - name: Republican
@@ -18,14 +18,18 @@ roles:
   district: '11'
 offices:
 - classification: capitol
-  address: 245 State Capitol; Atlanta, GA 30334
-  voice: 404-463-2246
+  address: 302-A CLOB; Atlanta, GA 30334
+  voice: 404-656-0065
 - classification: district
   address: P.O. Box 3914; Moultrie, GA 31776
   name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=837&Session=27
 - url: https://www.legis.ga.gov/members/house/837?session=1029
+- url: https://www.legis.ga.gov/members/senate/837?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000369
@@ -37,6 +41,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/837?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/837?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
   residence: Moultrie
   city: Moultrie
@@ -45,6 +53,3 @@ extras:
   occupation: Farmer
   press: https://house-press.com/representative/Sam-Watson
   spouse: Emily
-  staff: a href="
-  staff email: ''
-  title: 'Chairman, Appropriations: General Government Subcommittee'

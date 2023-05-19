@@ -10,6 +10,12 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '140'
+offices:
+- classification: capitol
+  address: 404-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0109
+- classification: district
+  address: P.O. Box 5974; Columbus, GA 31906
 links:
 - url: https://www.legis.ga.gov/members/house/5050?session=1031
   note: HTML member detail page
@@ -21,6 +27,11 @@ sources:
 - url: https://www.legis.ga.gov/api/members/detail/5050?session=1031&chamber=1
   note: API member detail (requires authorization token)
 extras:
-  residence: null
-  city: ''
+  residence: Columbus
+  city: Columbus
   georgia_id: 5050
+  birthday: August 28
+  press: https://house-press.com/representative/Tremaine-Reese
+  spouse: Chasity
+  staff: Cheryl Jackson - Administrative Assistant
+  staff email: cheryl.jackson@house.ga.gov

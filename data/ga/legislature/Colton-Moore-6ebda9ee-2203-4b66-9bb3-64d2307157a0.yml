@@ -2,8 +2,8 @@ id: ocd-person/6ebda9ee-2203-4b66-9bb3-64d2307157a0
 name: Colton Moore
 given_name: Colton
 family_name: Moore
-email: colton.moore@house.ga.gov
-image: http://www.house.ga.gov/SiteCollectionImages/MooreColton4933.jpg
+email: colton.moore@senate.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/moore-colton-4933.jpg
 party:
 - name: Republican
 roles:
@@ -15,10 +15,28 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '53'
+offices:
+- classification: capitol
+  address: 322-B CLOB; Atlanta, GA 30334
+  voice: 404-656-0256
+- classification: district
+  address: P.O. Box 1516; Trenton, GA 30752
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4933&Session=27
+- url: https://www.legis.ga.gov/members/senate/4933?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/senate
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4933&Session=27
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4933?session=1031&chamber=2
+  note: API member detail (requires authorization token)
 extras:
-  guid: 4933
+  residence: Trenton
+  city: Trenton
+  georgia_id: 4933
+  staff: Nathan Teasley
+  staff email: nathan.teasley@senate.ga.gov

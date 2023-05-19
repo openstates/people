@@ -1,0 +1,33 @@
+id: ocd-person/fe4b934e-8976-4c62-bcb0-ed8ae9782560
+name: Eric Bell
+given_name: Eric
+family_name: Bell
+email: eric.bell@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/bell-eric-5061.jpg
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '75'
+offices:
+- classification: capitol
+  address: 411-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0126
+links:
+- url: https://www.legis.ga.gov/members/house/5061?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+sources:
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/5061?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: null
+  city: ''
+  georgia_id: 5061
+  press: https://house-press.com/representative/Eric-Bell
+  staff: Audrea Carson - Administrative Assistant
+  staff email: audrea.carson@house.ga.gov

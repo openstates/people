@@ -15,9 +15,19 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '120'
+offices:
+- classification: capitol
+  address: 415 State Capitol; Atlanta, GA 30334
+  voice: 404-656-5025
+- classification: district
+  address: P.O. Box 1203; Athens, GA 30603
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4955&Session=27
 - url: https://www.legis.ga.gov/members/house/4955?session=1029
+- url: https://www.legis.ga.gov/members/house/4955?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4955&Session=27
@@ -26,6 +36,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4955?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4955?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Athens
   city: Athens
@@ -33,6 +47,6 @@ extras:
   birthday: January 11
   occupation: Financial Services
   press: https://house-press.com/representative/Houston-Gaines
-  staff: Caroline Younce - Administrative Assistant
-  staff email: caroline.younce@house.ga.gov
-  title: Chairman, Legislative & Congressional Reapportionment
+  staff: Peyton Puckett - Administrative Assistant
+  staff email: peyton.puckett@house.ga.gov
+  title: Majority Caucus Vice-Chairman

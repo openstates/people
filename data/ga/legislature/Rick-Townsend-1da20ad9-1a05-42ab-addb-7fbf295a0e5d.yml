@@ -10,6 +10,12 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '179'
+offices:
+- classification: capitol
+  address: 501-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0178
+- classification: district
+  address: 3410 Cypress Mill Rd, Suite 127; Brunswick, GA 31520
 links:
 - url: https://www.legis.ga.gov/members/house/5055?session=1031
   note: HTML member detail page
@@ -21,9 +27,12 @@ sources:
 - url: https://www.legis.ga.gov/api/members/detail/5055?session=1031&chamber=1
   note: API member detail (requires authorization token)
 extras:
-  residence: St. Simon's Island
-  city: St. Simon's Island
+  residence: Brunswick
+  city: Brunswick
   georgia_id: 5055
   birthday: June 9
   occupation: Retired Educator and Small Business Owner
+  press: https://house-press.com/representative/Rick-Townsend
   spouse: Carolyn
+  staff: Shaniqua Johnson - Administrative Assistant
+  staff email: shaniqua.johnson@house.ga.gov

@@ -10,6 +10,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '51'
+offices:
+- classification: capitol
+  address: 607-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0287
 links:
 - url: https://www.legis.ga.gov/members/house/5026?session=1031
   note: HTML member detail page
@@ -21,9 +25,12 @@ sources:
 - url: https://www.legis.ga.gov/api/members/detail/5026?session=1031&chamber=1
   note: API member detail (requires authorization token)
 extras:
-  residence: null
-  city: ''
+  residence: Sandy Springs
+  city: Sandy Springs
   georgia_id: 5026
   birthday: October 14
   occupation: Attorney
+  press: https://house-press.com/representative/Esther-Panitch
   spouse: Roger
+  staff: Jennifer Clark - Administrative Assistant
+  staff email: jennifer.clark@house.ga.gov

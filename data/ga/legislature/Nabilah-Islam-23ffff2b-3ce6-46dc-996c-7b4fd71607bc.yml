@@ -10,6 +10,10 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '7'
+offices:
+- classification: capitol
+  address: 320-B CLOB; Atlanta, GA 30334
+  voice: 404-463-5263
 links:
 - url: https://www.legis.ga.gov/members/senate/5015?session=1031
   note: HTML member detail page
@@ -21,6 +25,8 @@ sources:
 - url: https://www.legis.ga.gov/api/members/detail/5015?session=1031&chamber=2
   note: API member detail (requires authorization token)
 extras:
-  residence: null
-  city: ''
+  residence: Lawrenceville
+  city: Lawrenceville
   georgia_id: 5015
+  staff: Phyllis Williams
+  staff email: phyllis.williams@senate.ga.gov
