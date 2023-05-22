@@ -2,9 +2,12 @@ id: ocd-person/f51bcd29-63c8-4ef6-96d9-4bdd7b7617ee
 name: Brandon Phinney
 given_name: Brandon
 family_name: Phinney
+email: Brandon.Phinney@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408447.jpg
 party:
-- name: Libertarian
+- end_date: '2023-05-22'
+  name: Libertarian
+- name: Republican
 roles:
 - end_date: '2018-12-31'
   type: lower
@@ -14,15 +17,22 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 9
+offices:
+- classification: district
+  address: 88 B Charles Street Rochester, NH 03867-2600
+  voice: 603-486-1419
 links:
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8447
+  note: member detail page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001389
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408447
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8447
 extras:
-  first_name: Brandon
-  last_name: Phinney
-  middle_name: ''
+  county: Strafford
+  elected status: new
+  gender code: M
