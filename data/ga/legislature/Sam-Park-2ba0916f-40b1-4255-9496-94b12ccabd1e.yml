@@ -18,14 +18,18 @@ roles:
   district: '107'
 offices:
 - classification: capitol
-  address: 611-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0314
+  address: 609 Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-5059
 - classification: district
   address: 4850 Sugarloaf Pkwy Ste. 209-188; Lawrenceville, GA 30044
   name: 'District Office #1'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4901&Session=27
 - url: https://www.legis.ga.gov/members/house/4901?session=1029
+- url: https://www.legis.ga.gov/members/house/4901?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000462
@@ -39,6 +43,10 @@ sources:
   note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4901?session=1029&chamber=1
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4901?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
   residence: Lawrenceville
   city: Lawrenceville
@@ -46,5 +54,6 @@ extras:
   birthday: October 1
   occupation: Attorney
   press: https://house-press.com/representative/Sam-Park
-  staff: Kimberli Wideman - Administrative Assistant
-  staff email: kim.wideman@house.ga.gov
+  staff: Wyletha Thompson - Administrative Assistant
+  staff email: wyletha.thompson@house.ga.gov
+  title: Minority Caucus Whip

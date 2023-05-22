@@ -3,7 +3,7 @@ name: Deborah Silcox
 given_name: Deborah
 family_name: Silcox
 email: deborah.silcox@house.ga.gov
-image: http://www.house.ga.gov/SiteCollectionImages/SilcoxDeborah4887.jpg
+image: https://www.legis.ga.gov/api/images/default-source/portraits/silcox-deborah-4887.jpg
 party:
 - name: Republican
 roles:
@@ -15,13 +15,36 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '53'
+offices:
+- classification: capitol
+  address: 408-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-657-1803
+- classification: district
+  address: '6300 Powers Ferry Rd, Ste. 600, # 177; Atlanta, GA 30339'
 links:
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4887&Session=27
+- url: https://www.legis.ga.gov/members/house/4887?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000463
 sources:
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4887&Session=27
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/4887?session=1031&chamber=1
+  note: API member detail (requires authorization token)
 extras:
-  guid: 4887
+  residence: Sandy Springs
+  city: Sandy Springs
+  georgia_id: 4887
+  birthday: October 31
+  occupation: Attorney
+  press: https://house-press.com/representative/Deborah-Silcox
+  spouse: Daniel
+  staff: a href="
+  staff email: ''
+  title: Chairman, MARTOC

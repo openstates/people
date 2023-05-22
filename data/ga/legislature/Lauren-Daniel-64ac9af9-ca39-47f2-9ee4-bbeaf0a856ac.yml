@@ -10,6 +10,12 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '117'
+offices:
+- classification: capitol
+  address: 501-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0178
+- classification: district
+  address: P.O. Box 131; Locust Grove, GA 30248
 links:
 - url: https://www.legis.ga.gov/members/house/5047?session=1031
   note: HTML member detail page
@@ -21,6 +27,9 @@ sources:
 - url: https://www.legis.ga.gov/api/members/detail/5047?session=1031&chamber=1
   note: API member detail (requires authorization token)
 extras:
-  residence: null
-  city: ''
+  residence: Locust Grove
+  city: Locust Grove
   georgia_id: 5047
+  press: https://house-press.com/representative/Lauren-Daniel
+  staff: Shaniqua Johnson - Administrative Assistant
+  staff email: shaniqua.johnson@house.ga.gov

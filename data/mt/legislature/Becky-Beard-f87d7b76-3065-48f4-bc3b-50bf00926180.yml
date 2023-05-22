@@ -9,10 +9,26 @@ roles:
 - type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '40'
+- end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '80'
 offices:
 - classification: capitol
   voice: 406-479-3048
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7472
+other_names:
+- name: Beard, Becky
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MTL000390
+- scheme: openstates
+  identifier: ocd-person/3caf3468-b597-41e1-b748-e717218f5189
 sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/7472
+  - url: https://leg.mt.gov/legislator-information/?session_select=111
+    note: legislator list page
+  - url: https://leg.mt.gov/legislator-information/roster/individual/5139
+  - url: https://leg.mt.gov/legislator-information/?session_select=113
+  - url: https://leg.mt.gov/legislator-information/roster/individual/6924
+  - url: https://leg.mt.gov/legislator-information/roster/individual/7472

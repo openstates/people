@@ -11,13 +11,17 @@ party:
 - name: Republican
 roles:
 - start_date: 2022-02-08
+  end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '39'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '51'
 offices:
 - classification: capitol
-  address: 900 Court St NE, Room H-377, Salem, OR, 97301
-  voice: 503-986-1439
+  address: 900 Court St NE, H-377, Salem, OR, 97301
+  voice: 503-986-1451
 links:
 - url: https://www.oregonlegislature.gov/hieb
   note: homepage

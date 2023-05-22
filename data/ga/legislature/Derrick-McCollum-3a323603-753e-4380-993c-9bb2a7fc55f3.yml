@@ -10,6 +10,10 @@ roles:
 - type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '30'
+offices:
+- classification: capitol
+  address: 401-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-656-0152
 links:
 - url: https://www.legis.ga.gov/members/house/5022?session=1031
   note: HTML member detail page
@@ -21,9 +25,12 @@ sources:
 - url: https://www.legis.ga.gov/api/members/detail/5022?session=1031&chamber=1
   note: API member detail (requires authorization token)
 extras:
-  residence: Gainesville
-  city: Gainesville
+  residence: Chestnut Mountain
+  city: Chestnut Mountain
   georgia_id: 5022
   birthday: April 22
   occupation: Entrepreneur/Retired Firefighter
+  press: https://house-press.com/representative/Derrick-McCollum
   spouse: Gina
+  staff: Shakirah Nash - Administrative Assistant
+  staff email: shakirah.nash@house.ga.gov

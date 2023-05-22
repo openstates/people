@@ -8,7 +8,11 @@ image: https://www.oregonlegislature.gov/smithd/PublishingImages/member_photo.jp
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '1'
+- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '1'
 offices:

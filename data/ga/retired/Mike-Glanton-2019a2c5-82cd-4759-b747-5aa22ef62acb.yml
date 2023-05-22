@@ -1,0 +1,52 @@
+id: ocd-person/2019a2c5-82cd-4759-b747-5aa22ef62acb
+name: Mike Glanton
+given_name: Mike
+family_name: Glanton
+gender: Male
+email: mike.glanton@house.ga.gov
+image: https://www.legis.ga.gov/api/images/default-source/portraits/glanton-mike-111.jpg
+party:
+- name: Democratic
+roles:
+- end_date: '2023-01-24'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '75'
+offices:
+- classification: capitol
+  address: 408-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+  voice: 404-657-1803
+- classification: district
+  address: P.O. Box 216; Jonesboro, GA 30236
+links:
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=111&Session=27
+- url: https://www.legis.ga.gov/members/house/111?session=1029
+- url: https://www.legis.ga.gov/members/house/111?session=1031
+  note: HTML member detail page
+- url: http://www.legis.ga.gov/members/house
+  note: HTML members list page
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: GAL000288
+sources:
+- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=111&Session=27
+- url: https://www.legis.ga.gov/members/house/111?session=1029
+- url: https://www.legis.ga.gov/members/house/111?session=1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/111?session=1029&chamber=1
+  note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/detail/111?session=1031&chamber=1
+  note: API member detail (requires authorization token)
+extras:
+  residence: Jonesboro
+  city: Jonesboro
+  georgia_id: 111
+  birthday: June 21
+  occupation: Corporate Chief Operating Officer
+  press: https://house-press.com/representative/Mike-Glanton
+  spouse: Pearla
+  staff: Shivonna Parker - Administrative Assistant
+  staff email: shivonna.parker@house.ga.gov
