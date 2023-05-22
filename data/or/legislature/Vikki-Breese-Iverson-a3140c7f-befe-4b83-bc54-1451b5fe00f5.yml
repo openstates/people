@@ -9,9 +9,13 @@ party:
 - name: Republican
 roles:
 - start_date: 2019-08-13
+  end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '55'
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '59'
 offices:
 - classification: capitol
   address: 900 Court St NE, Room H-395, Salem, OR, 97301
