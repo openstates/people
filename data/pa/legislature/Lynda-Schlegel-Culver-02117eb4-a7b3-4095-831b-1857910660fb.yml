@@ -3,22 +3,25 @@ name: Lynda Schlegel Culver
 given_name: Lynda
 family_name: Culver
 gender: Female
-image: https://www.legis.state.pa.us/images/members/200/1202.jpg?1672753659451
+image: https://www.legis.state.pa.us/images/members/200/1202.jpg?1684774806693
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '108'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '27'
 offices:
 - classification: capitol
-  address: 213 Ryan Office Building P.O. Box 202108 Harrisburg, PA 17120-2108
-  voice: 717-787-3485
-  fax: 717-782-2892
+  address: 'Senate Box 203027 Harrisburg, PA 17120-3027 Room: 460 Main Capitol'
+  voice: 717-787-8928
 - classification: district
-  address: '1 Susquehanna Valley Mall Drive Suite F3 Selinsgrove, PA 17870 Office Hours: Monday - Friday 1:00 pm - 4:00 pm'
-  voice: 570-372-5510
-  fax: 570-372-5511
+  address: 42 West Eighth Ave. Suite 3, P.O. Box 456 Shamokin Dam, PA 17876
+  voice: 570-743-1918
+  fax: 570-743-7714
 links:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1202
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
@@ -32,6 +35,8 @@ ids:
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000275
+- scheme: openstates
+  identifier: ocd-person/5ca1ffca-e9f8-406d-8cb4-f56e064d9f26
 sources:
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1202
