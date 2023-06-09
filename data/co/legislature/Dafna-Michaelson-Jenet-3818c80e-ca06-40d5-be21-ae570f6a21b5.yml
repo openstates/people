@@ -5,9 +5,15 @@ image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '32'
+- start_date: '2021-01-13'
+  end_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '30'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 307 Denver, CO 80203
