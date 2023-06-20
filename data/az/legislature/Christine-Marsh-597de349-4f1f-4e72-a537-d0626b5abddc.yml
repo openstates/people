@@ -7,9 +7,14 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/MARSH.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: '2023-01-09'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '4'
+- end_date: '2023-01-08'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '28'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 315;Phoenix, AZ 85007
