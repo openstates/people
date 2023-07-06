@@ -2,12 +2,18 @@ id: ocd-person/3e7145a3-8729-497c-a168-db98d22cf015
 name: Stephanie Luck
 given_name: Stephanie
 family_name: Luck
+gender: Female
 email: stephanie.luck.house@coleg.gov
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023a_luck%2C%20stephanie.jpg?itok=MMfTRpF9
 party:
 - name: Republican
 roles:
-- type: lower
+- end_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '47'
+- start_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '60'
 offices:
