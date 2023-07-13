@@ -2,15 +2,21 @@ id: ocd-person/4eb017f8-318e-43ba-b0c5-9fecbc3d0530
 name: Sarah Crawford
 given_name: Sarah
 family_name: Crawford
+gender: Female
 email: Sarah.Crawford@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/H/800/Low
 party:
 - name: Democratic
 roles:
-- start_date: 2021-01-01
+- start_date: '2023-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '66'
+- start_date: '2021-01-01'
+  end_date: '2023-01-01'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '18'
 offices:
 - classification: capitol
   address: 16 West Jones Street, Rm. 1323; Raleigh, NC 27601-1096

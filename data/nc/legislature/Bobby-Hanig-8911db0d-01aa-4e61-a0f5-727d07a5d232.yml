@@ -2,15 +2,20 @@ id: ocd-person/8911db0d-01aa-4e61-a0f5-727d07a5d232
 name: Bobby Hanig
 given_name: Bobby
 family_name: Hanig
+gender: Male
 email: Bobby.Hanig@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/435/Low
 party:
 - name: Republican
 roles:
-- start_date: 2021-01-01
+- start_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '3'
+- end_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '6'
 offices:
 - classification: capitol
   address: 300 N. Salisbury Street, Rm. 629; Raleigh, NC 27603

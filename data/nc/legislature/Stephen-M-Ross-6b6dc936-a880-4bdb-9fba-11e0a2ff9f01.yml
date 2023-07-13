@@ -5,7 +5,12 @@ image: https://www.ncleg.gov/Members/MemberImage/H/812/Low
 party:
 - name: Republican
 roles:
-- start_date: 2021-01-01
+- start_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '63'
+roles:
+- end_date: '2020-12-31'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '63'
