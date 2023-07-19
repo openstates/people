@@ -2,15 +2,20 @@ id: ocd-person/4c3a1120-2dd5-4fbe-a084-e64894e57163
 name: Rachel Hunt
 given_name: Rachel
 family_name: Hunt
+gender: Female
 email: Rachel.Hunt@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/442/Low
 party:
 - name: Democratic
 roles:
-- start_date: 2020-08-15
+- start_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '42'
+- end_date: '2023-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '103'
 offices:
 - classification: capitol
   address: 16 West Jones Street, Rm. 1117; Raleigh, NC 27601
@@ -19,6 +24,9 @@ links:
 - url: https://www.ncleg.gov/Members/IntroducedBills/S/442
 - url: https://www.ncleg.gov/Members/Votes/S/442
 - url: https://www.ncleg.gov/Members/Committees/S/442
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/de30a18a-253d-432a-aad5-ace421b739c5
 sources:
 - url: https://www.ncleg.gov/Members/Biography/S/442
 - url: https://www.ncleg.gov/Members/MemberTable/S

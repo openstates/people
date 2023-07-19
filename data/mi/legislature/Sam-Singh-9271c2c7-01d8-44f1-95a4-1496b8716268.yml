@@ -7,10 +7,14 @@ image: https://senatedems.com/singh/wp-content/uploads/sites/23/2023/01/Singh-po
 party:
 - name: Democratic
 roles:
-- start_date: 2021-11-10
+- start_date: '2023-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '28'
+- end_date: '2018-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '69'
 offices:
 - classification: capitol
   address: S-8 Capitol Building, 201 Townsend St, Lansing, MI 48933
@@ -20,6 +24,9 @@ links:
   note: Member Page
 - url: http://senatedems.com/singh/contact
   note: Member Contact Page
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/d81a8dd3-945e-40e1-ae2b-bb5d1e763ead
 sources:
 - url: https://senate.michigan.gov/senators/SenatorData.json
   note: Members List JSON Data Page
