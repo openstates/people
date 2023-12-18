@@ -2,12 +2,19 @@ id: ocd-person/53afaba4-8ddc-4784-87c3-aaede576ac44
 name: Lisa Reynolds
 given_name: Lisa
 family_name: Reynolds
+gender: Female
 email: Rep.LisaReynolds@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/reynolds/PublishingImages/Pages/default/Lisa%20Reynolds%20-%20%20Headshot.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: '2021-01-11'
+  end_date: '2023-01-09'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '36'
+- start_date: '2023-01-09'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '34'
 offices:
@@ -17,6 +24,9 @@ offices:
 links:
 - url: https://www.oregonlegislature.gov/reynolds
   note: homepage
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/0845449d-1755-4fa3-b65c-8f973d52db80
 sources:
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/reynolds
