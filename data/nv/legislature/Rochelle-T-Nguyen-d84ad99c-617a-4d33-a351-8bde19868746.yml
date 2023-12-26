@@ -9,11 +9,12 @@ party:
 - name: Democratic
 roles:
 - start_date: '2019-02-04'
-  end_date: 2022-12-21
+  end_date: '2022-12-21'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   district: '10'
-- type: upper
+- start_date: '2022-12-21'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   district: '3'
 offices:
