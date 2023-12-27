@@ -5,15 +5,19 @@ image: https://scstatehouse.gov/images/members/1811931601.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- end_date: 2023-11-06
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '109'
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
+  district: '42'
 offices:
 - classification: capitol
-  address: 328A Blatt Bldg. Columbia, SC 29201
-  voice: 803-212-6721
+  address: 508 Gressette Bldg. Columbia, SC 29201
+  voice: 803-212-6132
 - classification: district
-  address: 2629 Orchid Ave. North Charleston, SC 29405
+  address: P.O. Box 30160 Charleston, SC 29417
   voice: 843-577-5530
 links:
 - url: http://www.scstatehouse.gov/member.php?code=1811931601
@@ -31,6 +35,7 @@ sources:
 - url: https://www.scstatehouse.gov/member.php?code=1811931601
 - url: https://scstatehouse.gov/member.php?chamber=H
 - url: https://scstatehouse.gov/member.php?code=1811931601
+- url: https://scstatehouse.gov/member.php?chamber=S
 extras:
   Columbia Address Cell Phone: (843) 732-6353
   counties represented: Charleston & Dorchester Counties
