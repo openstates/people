@@ -4,7 +4,9 @@ given_name: Maria
 family_name: Perez
 email: Maria.Perez@leg.state.nh.us
 party:
-- name: Democratic
+- end_date: '2023-12-26'
+  name: Democratic
+- name: Independent
 roles:
 - end_date: '2022-12-07'
   type: lower
@@ -15,6 +17,9 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 43
 offices:
+- classification: district
+  address: "State House\x96House Member Mail 107 North Main Street Concord, NH 03301"
+  voice: 603-801-7867
 - classification: district
   address: Milford, NH 03055
   name: 'District Office #1'
