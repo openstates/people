@@ -1,0 +1,23 @@
+id: ocd-person/03ab8e26-365c-4dab-8e49-df2a8b7613f8
+name: Travis Hendrix
+given_name: Travis
+family_name: Hendrix
+image: https://www.legislature.state.al.us/pdf/house/members/Hendrix_55.png
+party:
+- name: Democratic
+roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '55'
+offices:
+- classification: capitol
+  address: 11 South Union Street,Suite 540-A,Montgomery, AL 36130-2950
+  voice: 334-261-0452
+links:
+- url: https://alison.legislature.state.al.us/house-leaders-members
+  note: homepage
+sources:
+- url: https://gql.api.alison.legislature.state.al.us/graphql
+  note: graphql endpoint for member information
+extras:
+  counties: Jefferson County
