@@ -1,6 +1,6 @@
 id: ocd-person/75f1b339-bd9f-4f7c-820b-75812553bde0
-name: Peggy Scott
-given_name: Peggy
+name: Peggy S. Scott
+given_name: Peggy S.
 family_name: Scott
 gender: Female
 email: rep.peggy.scott@house.mn.gov
@@ -8,20 +8,23 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/31B.gif?v=032323
 party:
 - name: Republican
 roles:
+- start_date: '2023-01-03'
+  end_date: ''
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 31B
 - end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 35B
-- start_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 31B
 offices:
 - classification: capitol
   address: 335 State Office Building;St. Paul, MN 55155
   voice: 651-296-4231
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15314
+- url: https://www.house.mn.gov/members/profile/15314
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000164
@@ -31,5 +34,3 @@ other_identifiers:
   identifier: MNL000472
 - scheme: legacy_openstates
   identifier: MNL000603
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

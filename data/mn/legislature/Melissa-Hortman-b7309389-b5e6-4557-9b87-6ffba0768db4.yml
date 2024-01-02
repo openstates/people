@@ -8,19 +8,23 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/34B.gif?v=032323
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- start_date: '2023-01-03'
+  end_date: ''
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 34B
 - end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 36B
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 34B
 offices:
 - classification: capitol
   address: 463 State Office Building;St. Paul, MN 55155
   voice: 651-296-4280
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/12266
+- url: https://www.house.mn.gov/members/profile/12266
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000161
@@ -30,5 +34,3 @@ other_identifiers:
   identifier: MNL000421
 - scheme: legacy_openstates
   identifier: MNL000694
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

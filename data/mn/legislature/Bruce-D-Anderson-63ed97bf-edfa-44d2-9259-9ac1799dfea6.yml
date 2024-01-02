@@ -1,6 +1,6 @@
 id: ocd-person/63ed97bf-edfa-44d2-9259-9ac1799dfea6
-name: Bruce D. Anderson
-given_name: Bruce
+name: Bruce Douglas Anderson
+given_name: Bruce Douglas
 family_name: Anderson
 gender: Male
 email: sen.bruce.anderson@senate.mn
@@ -8,7 +8,9 @@ image: https://www.senate.mn/img/member_thumbnails/29Anderson.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: null
+  end_date: ''
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '29'
 offices:
@@ -17,6 +19,10 @@ offices:
   voice: 651-296-5981
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1201
+sources:
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000104
@@ -24,7 +30,3 @@ other_identifiers:
   identifier: MNL000227
 - scheme: legacy_openstates
   identifier: MNL000492
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members

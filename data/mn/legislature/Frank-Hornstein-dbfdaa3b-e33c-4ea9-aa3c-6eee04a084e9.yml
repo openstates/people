@@ -8,7 +8,9 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/61A.gif?v=032323
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- type: lower
+- start_date: null
+  end_date: ''
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 61A
 offices:
@@ -16,7 +18,9 @@ offices:
   address: 563 State Office Building;St. Paul, MN 55155
   voice: 651-296-9281
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/10767
+- url: https://www.house.mn.gov/members/profile/10767
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000187
@@ -26,5 +30,3 @@ other_identifiers:
   identifier: MNL000420
 - scheme: legacy_openstates
   identifier: MNL000643
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

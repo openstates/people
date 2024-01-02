@@ -1,6 +1,6 @@
 id: ocd-person/d1b377a1-8caa-4e37-999b-83ef8a1bf92c
 name: Gary H. Dahms
-given_name: Gary
+given_name: Gary H.
 family_name: Dahms
 gender: Male
 email: sen.gary.dahms@senate.mn
@@ -8,25 +8,27 @@ image: https://www.senate.mn/img/member_thumbnails/16Dahms.jpg
 party:
 - name: Republican
 roles:
+- start_date: '2023-01-03'
+  end_date: ''
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '15'
 - end_date: '2023-01-03'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '16'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: '15'
 offices:
 - classification: capitol
   address: 2219 Minnesota Senate Bldg.; St. Paul, MN 55155
   voice: 651-296-8138
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1174
+sources:
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000206
 - scheme: legacy_openstates
   identifier: MNL000503
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members

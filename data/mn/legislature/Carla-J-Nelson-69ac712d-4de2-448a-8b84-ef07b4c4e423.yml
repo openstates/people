@@ -1,6 +1,6 @@
 id: ocd-person/69ac712d-4de2-448a-8b84-ef07b4c4e423
-name: Carla J. Nelson
-given_name: Carla
+name: Carla Jean Nelson
+given_name: Carla Jean
 family_name: Nelson
 gender: Female
 email: sen.carla.nelson@senate.mn
@@ -8,25 +8,27 @@ image: https://www.senate.mn/img/member_thumbnails/26Nelson.jpg
 party:
 - name: Republican
 roles:
+- start_date: '2023-01-03'
+  end_date: ''
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '24'
 - end_date: '2023-01-02'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '26'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: '24'
 offices:
 - classification: capitol
   address: 2301 Minnesota Senate Bldg.; St. Paul, MN 55155
   voice: 651-296-4848
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1178
+sources:
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000219
 - scheme: legacy_openstates
   identifier: MNL000530
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members
