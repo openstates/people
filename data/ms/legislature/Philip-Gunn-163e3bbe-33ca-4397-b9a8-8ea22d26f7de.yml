@@ -2,11 +2,15 @@ id: ocd-person/163e3bbe-33ca-4397-b9a8-8ea22d26f7de
 name: Philip Gunn
 given_name: Philip
 family_name: Gunn
+gender: Male
+email: pgunn@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/gunn.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2004-01-06
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '56'
 offices:
@@ -16,9 +20,11 @@ offices:
 - classification: district
   address: P. O. Box 1018 Jackson, Mississippi 39215
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/Gunn.xml
-- url: http://billstatus.ls.state.ms.us/members/house/gunn.xml
+- url: https://billstatus.ls.state.ms.us/members/house/gunn.xml
   note: homepage
+- url: https://billstatus.ls.state.ms.us/members/house/Gunn.xml
+other_names:
+- name: Philip Anthony Gunn
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000069

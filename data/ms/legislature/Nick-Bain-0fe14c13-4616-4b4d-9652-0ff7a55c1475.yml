@@ -2,14 +2,15 @@ id: ocd-person/0fe14c13-4616-4b4d-9652-0ff7a55c1475
 name: Nick Bain
 given_name: Nick
 family_name: Bain
+gender: Male
 email: nbain@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/bain.jpg
 party:
-- end_date: '2019-03-01'
-  name: Democratic
 - name: Republican
 roles:
-- type: lower
+- start_date: 2019-03-01
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '2'
 offices:
@@ -20,9 +21,10 @@ offices:
   address: 1408 Pine Road Corinth, Mississippi 38834
   voice: 662-287-1620
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/bain.xml
-- url: http://billstatus.ls.state.ms.us/members/house/bain.xml
+- url: https://billstatus.ls.state.ms.us/members/house/bain.xml
   note: homepage
+other_names:
+- name: Nicholas Ryan Bain
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000199

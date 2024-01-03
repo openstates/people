@@ -2,12 +2,15 @@ id: ocd-person/1630c4ea-3461-4638-8903-6cab5e583540
 name: Jerry Darnell
 given_name: Jerry
 family_name: Darnell
+gender: Male
 email: jdarnell@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/darnell.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2020-01-07
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '28'
 offices:
@@ -16,8 +19,7 @@ offices:
 - classification: district
   address: 4250 Green Village Dr. Hernando, Mississippi 38632
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/darnell.xml
-- url: http://billstatus.ls.state.ms.us/members/house/darnell.xml
+- url: https://billstatus.ls.state.ms.us/members/house/darnell.xml
   note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/darnell.xml

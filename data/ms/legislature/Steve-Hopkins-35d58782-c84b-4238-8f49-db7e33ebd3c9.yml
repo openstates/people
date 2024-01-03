@@ -2,12 +2,15 @@ id: ocd-person/35d58782-c84b-4238-8f49-db7e33ebd3c9
 name: Steve Hopkins
 given_name: Steve
 family_name: Hopkins
+gender: Male
 email: shopkins@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/hopkins.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-05
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '7'
 offices:
@@ -16,8 +19,7 @@ offices:
 - classification: district
   address: 1205 Worthington Drive Southaven, Mississippi 38671
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/hopkins.xml
-- url: http://billstatus.ls.state.ms.us/members/house/hopkins.xml
+- url: https://billstatus.ls.state.ms.us/members/house/hopkins.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

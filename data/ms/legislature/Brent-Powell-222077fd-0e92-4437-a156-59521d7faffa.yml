@@ -2,12 +2,14 @@ id: ocd-person/222077fd-0e92-4437-a156-59521d7faffa
 name: Brent Powell
 given_name: Brent
 family_name: Powell
+gender: Male
 email: bpowell@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/powell.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '59'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: P.O. Box 5454 Brandon, Mississippi 39047
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/powell.xml
-- url: http://billstatus.ls.state.ms.us/members/house/powell.xml
+- url: https://billstatus.ls.state.ms.us/members/house/powell.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

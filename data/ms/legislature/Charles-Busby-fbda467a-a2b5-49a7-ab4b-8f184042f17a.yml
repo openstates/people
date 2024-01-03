@@ -2,12 +2,15 @@ id: ocd-person/fbda467a-a2b5-49a7-ab4b-8f184042f17a
 name: Charles Busby
 given_name: Charles
 family_name: Busby
+gender: Male
 email: cbusby@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/busby.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '111'
 offices:
@@ -17,8 +20,7 @@ offices:
 - classification: district
   address: 901 Beach Blvd Pascagoula, Mississippi 39567
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/busby.xml
-- url: http://billstatus.ls.state.ms.us/members/house/busby.xml
+- url: https://billstatus.ls.state.ms.us/members/house/busby.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

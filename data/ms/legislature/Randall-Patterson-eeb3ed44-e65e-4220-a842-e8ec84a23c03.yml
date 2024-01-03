@@ -2,11 +2,15 @@ id: ocd-person/eeb3ed44-e65e-4220-a842-e8ec84a23c03
 name: Randall Patterson
 given_name: Randall
 family_name: Patterson
+gender: Male
+email: rpatterson@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/patterson.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-09-25
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '115'
 offices:
@@ -17,9 +21,10 @@ offices:
   address: 1352 Kensington Drive Biloxi, Mississippi 39530
   voice: 228-273-0758
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/patterson.xml
-- url: http://billstatus.ls.state.ms.us/members/house/patterson.xml
+- url: https://billstatus.ls.state.ms.us/members/house/patterson.xml
   note: homepage
+other_names:
+- name: Randall H. Patterson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000130

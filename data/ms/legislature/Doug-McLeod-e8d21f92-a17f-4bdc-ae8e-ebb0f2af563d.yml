@@ -2,12 +2,15 @@ id: ocd-person/e8d21f92-a17f-4bdc-ae8e-ebb0f2af563d
 name: Doug McLeod
 given_name: Doug
 family_name: McLeod
+gender: Male
 email: dmcleod@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/mcleod.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '107'
 offices:
@@ -18,9 +21,10 @@ offices:
   address: 1211 Bexley Church Rd Lucedale, Mississippi 39452
   voice: 601-947-3125
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
-- url: http://billstatus.ls.state.ms.us/members/house/mcleod.xml
+- url: https://billstatus.ls.state.ms.us/members/house/mcleod.xml
   note: homepage
+other_names:
+- name: Douglas Dwain McLeod
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000201

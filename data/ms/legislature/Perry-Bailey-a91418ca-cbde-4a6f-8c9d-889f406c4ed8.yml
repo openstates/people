@@ -2,12 +2,15 @@ id: ocd-person/a91418ca-cbde-4a6f-8c9d-889f406c4ed8
 name: Perry Bailey
 given_name: Perry
 family_name: Bailey
+gender: Male
 email: pbailey@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/bailey_(23rd).jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-02-14
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '23'
 offices:
@@ -17,8 +20,10 @@ offices:
   address: 187 CR 418 Calhoun City, Mississippi 38916
   voice: 662-983-5726
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/bailey_(23rd).xml
+- url: https://billstatus.ls.state.ms.us/members/house/bailey_(23rd).xml
   note: homepage
+other_names:
+- name: Perry Van Bailey
 sources:
 - url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 - url: http://billstatus.ls.state.ms.us/members/house/bailey_(23rd).xml

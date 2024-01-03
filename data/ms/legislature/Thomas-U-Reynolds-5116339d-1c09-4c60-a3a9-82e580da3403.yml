@@ -1,13 +1,16 @@
 id: ocd-person/5116339d-1c09-4c60-a3a9-82e580da3403
-name: Thomas U. Reynolds
-given_name: Thomas U.
+name: Thomas Reynolds
+given_name: Thomas
 family_name: Reynolds
+gender: Male
 email: treynolds@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/reynolds.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 1980-01-08
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '33'
 offices:
@@ -18,9 +21,11 @@ offices:
   address: P. O. Drawer 280 Charleston, Mississippi 38921
   voice: 662-473-2571
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/reynolds.xml
-- url: http://billstatus.ls.state.ms.us/members/house/reynolds.xml
+- url: https://billstatus.ls.state.ms.us/members/house/reynolds.xml
   note: homepage
+other_names:
+- name: Thomas Upton Reynolds
+- name: Thomas U. Reynolds
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000165

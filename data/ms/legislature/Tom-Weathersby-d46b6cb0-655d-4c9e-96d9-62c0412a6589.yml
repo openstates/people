@@ -2,12 +2,15 @@ id: ocd-person/d46b6cb0-655d-4c9e-96d9-62c0412a6589
 name: Tom Weathersby
 given_name: Tom
 family_name: Weathersby
+gender: Male
 email: tweathersby@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/weathersby.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 1992-01-07
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '62'
 offices:
@@ -18,9 +21,10 @@ offices:
   address: 3806 Highway 49 S Florence, Mississippi 39073
   voice: 601-845-2017
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/weathersby.xml
-- url: http://billstatus.ls.state.ms.us/members/house/weathersby.xml
+- url: https://billstatus.ls.state.ms.us/members/house/weathersby.xml
   note: homepage
+other_names:
+- name: Thomas Weathersby
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000151

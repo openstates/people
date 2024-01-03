@@ -2,12 +2,15 @@ id: ocd-person/44a6c11e-df2b-43d5-bce6-4f31c1bc8efe
 name: Chris Brown
 given_name: Chris
 family_name: Brown
+gender: Male
 email: crbrown@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/brown_(20th).jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '20'
 offices:
@@ -18,11 +21,11 @@ offices:
   address: 33112 Hwy Hwy 45 N Nettleton, Mississippi 38858
   voice: 662-749-7118
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/brown.xml
-- url: http://billstatus.ls.state.ms.us/members/house/brown_(20th).xml
-- url: http://billstatus.ls.state.ms.us/members/house/brown_(20th).xml
+- url: https://billstatus.ls.state.ms.us/members/house/brown.xml
+- url: https://billstatus.ls.state.ms.us/members/house/brown_(20th).xml
   note: homepage
 other_names:
+- name: Christopher R. Brown
 - name: Brown (20th)
 other_identifiers:
 - scheme: legacy_openstates

@@ -2,12 +2,15 @@ id: ocd-person/4871dab1-570b-48ac-be4f-fd523c5c24fd
 name: Chris McDaniel
 given_name: Chris
 family_name: McDaniel
+gender: Male
 email: cmcdaniel@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2008-01-08
+  end_date: 2024-01-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '42'
 offices:
@@ -18,9 +21,10 @@ offices:
   address: 506 South Court Ellisville, Mississippi 39437
   voice: 601-477-2291
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/mcdaniel.xml
   note: homepage
+other_names:
+- name: Christopher Brian McDaniel
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000042
@@ -28,7 +32,8 @@ sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/mcdaniel.xml
 - url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
-  occupation: Attorney, Partner of Hortman, Harlow, Bassi, Robinson and McDaniel, PLLC.
+  occupation: Attorney, Partner of Hortman, Harlow, Bassi, Robinson and McDaniel,
+    PLLC.
   education:
   - Jones County Junior College
   - William Carey University

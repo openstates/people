@@ -2,12 +2,15 @@ id: ocd-person/7c8428fb-7cb4-4653-9629-f41037af9669
 name: Philip Moran
 given_name: Philip
 family_name: Moran
+gender: Male
 email: pmoran@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/moran.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2012-01-03
+  end_date: 2024-01-01
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '46'
 offices:
@@ -17,9 +20,10 @@ offices:
 - classification: district
   address: 18403 Old Joe Moran Road Klin, Mississippi 39556
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/moran.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/moran.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/moran.xml
   note: homepage
+other_names:
+- name: Philip Edward Moran
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000190

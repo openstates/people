@@ -1,22 +1,23 @@
 id: ocd-person/d247f852-5545-40b2-b974-757b73b1e807
-name: Michael T. Evans
-given_name: Michael T.
+name: Michael Evans
+given_name: Michael
 family_name: Evans
+gender: Male
 email: mevans@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/evans_(45th).jpg
 party:
-- end_date: '2020-01-01'
-  name: Democratic
 - name: Independent
 roles:
+- start_date: 2020-01-07
+  end_date: 2024-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '45'
 - start_date: 2012-01-01
   end_date: 2015-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '43'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  district: '45'
 offices:
 - classification: capitol
   address: Room 400-F P. O. Box 1018;Jackson, MS 39215
@@ -25,10 +26,11 @@ offices:
   address: 1147 Mount Harmony Rd Preston, Mississippi 39354
   voice: 662-677-3738
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/evans_(45th).xml
-- url: http://billstatus.ls.state.ms.us/members/house/evans_(45th).xml
+- url: https://billstatus.ls.state.ms.us/members/house/evans_(45th).xml
   note: homepage
 other_names:
+- name: Michael Ted Evans
+- name: Michael T. Evans
 - name: Evans (45th)
 other_identifiers:
 - scheme: legacy_openstates

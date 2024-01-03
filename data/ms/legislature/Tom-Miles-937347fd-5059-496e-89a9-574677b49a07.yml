@@ -2,12 +2,15 @@ id: ocd-person/937347fd-5059-496e-89a9-574677b49a07
 name: Tom Miles
 given_name: Tom
 family_name: Miles
+gender: Male
 email: tmiles@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/miles.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2012-01-03
+  end_date: 2024-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '75'
 offices:
@@ -18,8 +21,7 @@ offices:
   address: 807 Hwy 35 South Forest, Mississippi 39074
   voice: 601-732-9511
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/miles.xml
-- url: http://billstatus.ls.state.ms.us/members/house/miles.xml
+- url: https://billstatus.ls.state.ms.us/members/house/miles.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
