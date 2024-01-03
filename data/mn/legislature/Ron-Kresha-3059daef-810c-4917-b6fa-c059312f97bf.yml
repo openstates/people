@@ -8,23 +8,24 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/10A.gif?v=032323
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 10A
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 9B
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 10A
 offices:
 - classification: capitol
   address: 207 State Office Building;St. Paul, MN 55155
   voice: 651-296-4247
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15404
+- url: https://www.house.mn.gov/members/profile/15404
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000428
 - scheme: legacy_openstates
   identifier: MNL000596
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp
