@@ -1,13 +1,16 @@
 id: ocd-person/fdc5586f-0db3-4614-af1f-72a42cf5e6f0
-name: Paul K. Frost
+name: Paul Frost
 given_name: Paul
 family_name: Frost
 gender: Male
-email: Paul.Frost@mahouse.gov
+email: paul.frost@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/PKF1.jpg
 party:
 - name: Republican
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 7th Worcester
 - start_date: 2011-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -18,6 +21,8 @@ offices:
   voice: 617-722-2489
 links:
 - url: https://malegislature.gov/Legislators/Profile/PKF1
+other_names:
+- name: Paul K. Frost
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000413

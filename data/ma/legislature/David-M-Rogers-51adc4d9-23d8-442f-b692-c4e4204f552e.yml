@@ -1,13 +1,16 @@
 id: ocd-person/51adc4d9-23d8-442f-b692-c4e4204f552e
-name: David M. Rogers
-given_name: David
+name: Dave Rogers
+given_name: Dave
 family_name: Rogers
 gender: Male
-email: Dave.Rogers@mahouse.gov
+email: dave.rogers@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/DMR1.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 24th Middlesex
 - start_date: 2013-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,11 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 473B; Boston, MA 02133
   voice: 617-722-2263
-  fax: 617-626-0275
 links:
 - url: https://malegislature.gov/Legislators/Profile/DMR1
+- url: https://www.repdaverogers.com/
+other_names:
+- name: David M. Rogers
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000514

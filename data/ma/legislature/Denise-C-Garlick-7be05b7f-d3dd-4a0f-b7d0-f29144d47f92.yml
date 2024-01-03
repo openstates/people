@@ -1,13 +1,16 @@
 id: ocd-person/7be05b7f-d3dd-4a0f-b7d0-f29144d47f92
-name: Denise C. Garlick
+name: Denise Garlick
 given_name: Denise
 family_name: Garlick
 gender: Female
-email: Denise.Garlick@mahouse.gov
+email: denise.garlick@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/DCG1.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 13th Norfolk
 - start_date: 2011-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,10 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 473G; Boston, MA 02133
   voice: 617-722-2070
-  fax: 617-626-0197
 links:
 - url: https://malegislature.gov/Legislators/Profile/DCG1
+other_names:
+- name: Denise C. Garlick
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000553

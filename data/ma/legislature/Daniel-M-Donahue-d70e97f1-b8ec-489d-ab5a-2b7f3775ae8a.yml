@@ -1,13 +1,16 @@
 id: ocd-person/d70e97f1-b8ec-489d-ab5a-2b7f3775ae8a
-name: Daniel M. Donahue
-given_name: Daniel
+name: Dan Donahue
+given_name: Dan
 family_name: Donahue
 gender: Male
-email: Daniel.Donahue@mahouse.gov
+email: daniel.donahue@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/DMD1.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 16th Worcester
 - start_date: 2013-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,10 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 544; Boston, MA 02133
   voice: 617-722-2637
-  fax: 617-626-0457
 links:
 - url: https://malegislature.gov/Legislators/Profile/DMD1
+other_names:
+- name: Daniel M. Donahue
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000449

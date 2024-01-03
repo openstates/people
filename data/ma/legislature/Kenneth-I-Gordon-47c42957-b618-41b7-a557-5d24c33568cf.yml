@@ -1,13 +1,16 @@
 id: ocd-person/47c42957-b618-41b7-a557-5d24c33568cf
-name: Kenneth I. Gordon
-given_name: Kenneth
+name: Ken Gordon
+given_name: Ken
 family_name: Gordon
 gender: Male
-email: Ken.Gordon@mahouse.gov
+email: ken.gordon@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/KIG1.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 21st Middlesex
 - start_date: 2013-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,10 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 156; Boston, MA 02133
   voice: 617-722-2240
-  fax: 617-626-0320
 links:
 - url: https://malegislature.gov/Legislators/Profile/KIG1
+other_names:
+- name: Kenneth I. Gordon
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000546

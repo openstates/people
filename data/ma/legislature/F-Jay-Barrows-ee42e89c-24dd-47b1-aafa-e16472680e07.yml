@@ -1,6 +1,6 @@
 id: ocd-person/ee42e89c-24dd-47b1-aafa-e16472680e07
-name: F. Jay Barrows
-given_name: F. Jay
+name: Jay Barrows
+given_name: Jay
 family_name: Barrows
 gender: Male
 email: fred.barrows@mahouse.gov
@@ -8,6 +8,9 @@ image: https://malegislature.gov/Legislators/Profile/170/FJB1.jpg
 party:
 - name: Republican
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 1st Bristol
 - start_date: 2011-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,11 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 128; Boston, MA 02133
   voice: 617-722-2100
-  fax: 617-722-2390
 links:
 - url: https://malegislature.gov/Legislators/Profile/FJB1
+other_names:
+- name: Fred Jay Barrows
+- name: F. Jay Barrows
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000439

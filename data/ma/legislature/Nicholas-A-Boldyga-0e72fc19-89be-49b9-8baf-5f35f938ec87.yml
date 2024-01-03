@@ -1,13 +1,16 @@
 id: ocd-person/0e72fc19-89be-49b9-8baf-5f35f938ec87
-name: Nicholas A. Boldyga
-given_name: Nicholas
+name: Nick Boldyga
+given_name: Nick
 family_name: Boldyga
 gender: Male
-email: Nicholas.Boldyga@mahouse.gov
+email: nicholas.boldyga@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/NAG1.jpg
 party:
 - name: Republican
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 3rd Hampden
 - start_date: 2011-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,10 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 167; Boston, MA 02133
   voice: 617-722-2810
-  fax: 617-626-0137
 links:
 - url: https://malegislature.gov/Legislators/Profile/NAG1
+other_names:
+- name: Nicholas A. Boldyga
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000463

@@ -1,13 +1,16 @@
 id: ocd-person/b9019024-899b-41b3-a283-69c50866fabd
-name: Marjorie C. Decker
+name: Marjorie Decker
 given_name: Marjorie
 family_name: Decker
 gender: Female
-email: Marjorie.Decker@mahouse.gov
+email: marjorie.decker@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/MCD1.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 25th Middlesex
 - start_date: 2013-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,9 +19,10 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 130; Boston, MA 02133
   voice: 617-722-2130
-  fax: 617-626-0337
 links:
 - url: https://malegislature.gov/Legislators/Profile/MCD1
+other_names:
+- name: Marjorie C. Decker
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000451

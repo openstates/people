@@ -1,13 +1,16 @@
 id: ocd-person/2abbc0cb-6339-42d9-9947-69412a24301b
-name: John J. Mahoney
+name: John Mahoney
 given_name: John
 family_name: Mahoney
 gender: Male
-email: John.Mahoney@mahouse.gov
+email: john.mahoney@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/JJM2.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 13th Worcester
 - start_date: 2011-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -16,10 +19,11 @@ offices:
 - classification: capitol
   address: 24 Beacon St., Room 146; Boston, MA 02133
   voice: 617-722-2575
-  fax: 617-626-0247
 links:
-- url: https://malegislature.gov/Legislators/Profile/JJM1
 - url: https://malegislature.gov/Legislators/Profile/JJM2
+- url: https://malegislature.gov/Legislators/Profile/JJM1
+other_names:
+- name: John J. Mahoney
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000420

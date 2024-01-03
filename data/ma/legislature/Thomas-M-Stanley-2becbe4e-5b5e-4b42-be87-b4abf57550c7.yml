@@ -1,13 +1,16 @@
 id: ocd-person/2becbe4e-5b5e-4b42-be87-b4abf57550c7
-name: Thomas M. Stanley
-given_name: Thomas
+name: Tom Stanley
+given_name: Tom
 family_name: Stanley
 gender: Male
-email: Thomas.Stanley@mahouse.gov
+email: thomas.stanley@mahouse.gov
 image: https://malegislature.gov/Legislators/Profile/170/TMS1.jpg
 party:
 - name: Democratic
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 9th Middlesex
 - start_date: 2011-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
@@ -18,6 +21,8 @@ offices:
   voice: 617-722-2810
 links:
 - url: https://malegislature.gov/Legislators/Profile/TMS1
+other_names:
+- name: Thomas M. Stanley
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000481
