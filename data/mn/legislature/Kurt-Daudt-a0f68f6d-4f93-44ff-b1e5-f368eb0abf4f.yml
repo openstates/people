@@ -8,19 +8,24 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/27B.gif?v=032323
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 27B
 - end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 31A
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 27B
 offices:
 - classification: capitol
   address: 273 State Office Building;St. Paul, MN 55155
   voice: 651-296-5364
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15345
+- url: https://www.house.mn.gov/members/profile/15345
+other_names:
+- name: Kurt Louis Daudt
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000246
@@ -28,5 +33,3 @@ other_identifiers:
   identifier: MNL000388
 - scheme: legacy_openstates
   identifier: MNL000578
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

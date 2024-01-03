@@ -8,20 +8,23 @@ image: https://www.senate.mn/img/member_thumbnails/20Drazkowski.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '20'
 - end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 21B
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: '20'
 offices:
 - classification: capitol
   address: 2411 Minnesota Senate Bldg.; St. Paul, MN 55155
   voice: 651-296-5612
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15286
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1258
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000123
@@ -31,6 +34,3 @@ other_identifiers:
   identifier: MNL000396
 - scheme: legacy_openstates
   identifier: MNL000645
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp
-- url: https://www.senate.mn/api/members

@@ -1,5 +1,5 @@
 id: ocd-person/f20a4255-6c65-4091-a0f5-aea70f133cdb
-name: Mark W. Koran
+name: Mark Koran
 given_name: Mark
 family_name: Koran
 gender: Male
@@ -8,25 +8,28 @@ image: https://www.senate.mn/img/member_thumbnails/32Koran.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '28'
 - end_date: '2023-01-03'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '32'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: '28'
 offices:
 - classification: capitol
   address: 2203 Minnesota Senate Bldg.; St. Paul, MN 55155
   voice: 651-296-5419
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1228
+other_names:
+- name: Mark W. Koran
+sources:
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000753
 - scheme: legacy_openstates
   identifier: MNL000774
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members

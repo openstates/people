@@ -8,20 +8,24 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/15A.gif?v=032323
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 15A
 - end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 16A
-- start_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 15A
 offices:
 - classification: capitol
   address: 245 State Office Building;St. Paul, MN 55155
   voice: 651-296-5374
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15369
+- url: https://www.house.mn.gov/members/profile/15369
+other_names:
+- name: Christopher Thomas Swedzinski
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000347
@@ -29,5 +33,3 @@ other_identifiers:
   identifier: MNL000478
 - scheme: legacy_openstates
   identifier: MNL000605
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

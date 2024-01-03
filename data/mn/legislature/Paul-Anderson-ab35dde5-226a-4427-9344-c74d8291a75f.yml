@@ -8,19 +8,24 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/12A.gif?v=032323
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 12A
 - end_date: '2023-01-03'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 12B
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 12A
 offices:
 - classification: capitol
   address: 277 State Office Building;St. Paul, MN 55155
   voice: 651-296-4317
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15301
+- url: https://www.house.mn.gov/members/profile/15301
+other_names:
+- name: Paul H. Anderson
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000092
@@ -30,5 +35,3 @@ other_identifiers:
   identifier: MNL000374
 - scheme: legacy_openstates
   identifier: MNL000654
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp
