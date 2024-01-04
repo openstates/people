@@ -3,17 +3,19 @@ name: Lisa Thomas
 given_name: Lisa
 family_name: Thomas
 gender: Female
-image: https://images.house.mo.gov/MemberPhoto.aspx?id=2228
+email: lisa.thomas@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2228
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '123'
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '124'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '123'
 offices:
 - classification: capitol
   address: MO House of Representatives; 201 West Capitol Avenue; Room 400; Jefferson
@@ -22,6 +24,7 @@ offices:
 links:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=124
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=123
+- url: https://house.mo.gov/MemberDetails.aspx?district=123
 other_names:
 - name: Thomas, Lisa
 sources:
