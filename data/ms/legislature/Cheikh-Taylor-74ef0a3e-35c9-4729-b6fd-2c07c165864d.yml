@@ -2,12 +2,14 @@ id: ocd-person/74ef0a3e-35c9-4729-b6fd-2c07c165864d
 name: Cheikh Taylor
 given_name: Cheikh
 family_name: Taylor
+gender: Male
 email: ctaylor@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/taylor.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-12-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '38'
 offices:
@@ -17,8 +19,7 @@ offices:
   address: 383 Steele Rd Starkville, Mississippi 39759
   voice: 662-617-8125
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
-- url: http://billstatus.ls.state.ms.us/members/house/taylor.xml
+- url: https://billstatus.ls.state.ms.us/members/house/taylor.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
