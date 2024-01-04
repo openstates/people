@@ -2,19 +2,21 @@ id: ocd-person/051d0089-f1cc-4523-a48d-ae98700165f8
 name: Laurie Osher
 given_name: Laurie
 family_name: Osher
-email: Laurie.Osher@legislature.maine.gov
+gender: Female
+email: laurie.osher@legislature.maine.gov
 image: https://legislature.maine.gov/house/house/Repository/MemberProfiles/62af6ace-cea8-45d3-b863-ada1f65c3a25_Osher.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '25'
 - start_date: 2020-12-02
   end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '123'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  district: '25'
 offices:
 - classification: capitol
   address: House Majority Office Room 333, State House 2 State House Station Augusta,
@@ -23,8 +25,8 @@ offices:
   address: 13 Mayo Street, Orono, ME 04473
 links:
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/1436
-- url: https://legislature.maine.gov/house/house/MemberProfiles/Details/1436
   note: homepage
+- url: https://legislature.maine.gov/housedems/osherl/index.html
 other_names:
 - name: OSHER of Orono
 sources:

@@ -2,11 +2,16 @@ id: ocd-person/fa3e8ae3-757e-44fb-9451-6bf381d748ce
 name: Russell Black
 given_name: Russell
 family_name: Black
-email: Russell.Black@legislature.maine.gov
+gender: Male
+email: russell.black@legislature.maine.gov
 image: https://legislature.maine.gov/uploads/visual_edit/black-5x7.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '5'
 - end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
@@ -15,9 +20,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '17'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  district: '5'
 offices:
 - classification: capitol
   voice: 207-287-1505

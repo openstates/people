@@ -1,12 +1,17 @@
 id: ocd-person/7dc90231-0b7d-40d5-93e2-e32335922a48
-name: Benjamin Chipman
-given_name: Benjamin
+name: Ben Chipman
+given_name: Ben
 family_name: Chipman
-email: Ben.Chipman@legislature.maine.gov
+gender: Male
+email: ben.chipman@legislature.maine.gov
 image: https://legislature.maine.gov/uploads/visual_edit/chipman-5x7.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2022-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '28'
 - start_date: 2011-01-01
   end_date: 2014-12-31
   type: lower
@@ -21,9 +26,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '27'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  district: '28'
 offices:
 - classification: capitol
   voice: 207-287-1515
@@ -34,12 +36,14 @@ links:
 - url: https://legislature.maine.gov/District-27
 - url: https://legislature.maine.gov/District-27
   note: homepage
-- url: http://www.mainesenate.org/senator/senator/ben-chipman/
-  note: website
 - url: https://legislature.maine.gov/District28
   note: homepage
+- url: https://www.mainesenate.org/senator/senator/ben-chipman/
+  note: website
+- url: https://legislature.maine.gov/district28
 other_names:
 - name: Benjamin M. Chipman
+- name: Benjamin Chipman
 - name: CHIPMAN of Cumberland
 other_identifiers:
 - scheme: legacy_openstates

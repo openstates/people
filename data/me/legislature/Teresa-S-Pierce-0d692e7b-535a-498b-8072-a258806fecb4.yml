@@ -2,18 +2,20 @@ id: ocd-person/0d692e7b-535a-498b-8072-a258806fecb4
 name: Teresa Pierce
 given_name: Teresa
 family_name: Pierce
-email: Teresa.Pierce@legislature.maine.gov
+gender: Female
+email: teresa.pierce@legislature.maine.gov
 image: https://legislature.maine.gov/uploads/visual_edit/pierce-web-748x1024.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2022-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '25'
 - end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '44'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  district: '25'
 offices:
 - classification: capitol
   address: House Majority Office Room 333, State House 2 State House Station Augusta,
@@ -27,11 +29,12 @@ links:
   note: homepage
 - url: https://legislature.maine.gov/District25
   note: homepage
+- url: https://legislature.maine.gov/district25
 - url: https://www.mainesenate.org/senator/senator/senator-teresa-pierce/
   note: website
 other_names:
-- name: Teresa PIERCE
 - name: Teresa S. Pierce
+- name: Teresa PIERCE
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MEL000351
