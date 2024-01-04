@@ -2,28 +2,32 @@ id: ocd-person/b12abcbf-fbbe-4464-854e-6960b024e62a
 name: Brian Seaworth
 given_name: Brian
 family_name: Seaworth
+gender: Male
 email: brian.seaworth@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377023.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Merrimack 20
-- start_date: '2022-12-07'
+- start_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 12
+- end_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 20
 offices:
 - classification: district
   address: 161 Buck Street Pembroke, NH 03275-3002
   voice: 603-722-0807
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=944
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=944
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377023
+other_names:
+- name: G. Brian Seaworth
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001185

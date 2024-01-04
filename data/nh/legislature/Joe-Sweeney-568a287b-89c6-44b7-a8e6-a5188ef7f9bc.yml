@@ -2,32 +2,37 @@ id: ocd-person/568a287b-89c6-44b7-a8e6-a5188ef7f9bc
 name: Joe Sweeney
 given_name: Joe
 family_name: Sweeney
-email: Joe.Sweeney@leg.state.nh.us
+gender: Male
+email: joe.sweeney@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377174.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2013-01-01'
-  end_date: '2016-12-31'
+- start_date: 2022-12-07
   type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 8
-- end_date: '2022-12-07'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 8
-- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 25
+- start_date: 2013-01-01
+  end_date: 2016-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 8
+- end_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 8
 offices:
 - classification: district
   address: 3 Artisan Drive Unit 233 Salem, NH 03079-3973
   voice: 603-327-7184
 links:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377174
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=779
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377174
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=779
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=779
+other_names:
+- name: Joseph Sweeney
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000751

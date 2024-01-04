@@ -1,27 +1,32 @@
 id: ocd-person/2830876f-1a4d-4332-ae2a-a97607c4e1b9
-name: Janet G. Wall
+name: Janet Wall
 given_name: Janet
 family_name: Wall
+gender: Female
 email: janet.wall@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/372557.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 11
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Strafford 11
 offices:
 - classification: district
   address: 9 Kelley Road Madbury, NH 03823-7634
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=415
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=415
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=372557
+other_names:
+- name: Janet G. Wall
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000403

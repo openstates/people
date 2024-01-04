@@ -2,27 +2,30 @@ id: ocd-person/0dbeb05f-3510-48d3-9918-a929a6069ac2
 name: Chris Muns
 given_name: Chris
 family_name: Muns
-email: Chris.Muns@leg.state.nh.us
+gender: Male
+email: chris.muns@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377150.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2013-01-01'
-  end_date: '2014-12-31'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 29
+- start_date: 2013-01-01
+  end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 21
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 29
 offices:
 - classification: district
   address: 5 Nersesian Way Hampton, NH 03842-1561
   voice: 603-929-3629
 links:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377150
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=755
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377150
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=755
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=755
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000659

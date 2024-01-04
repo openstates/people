@@ -1,28 +1,33 @@
 id: ocd-person/49453d65-a175-4c22-bc1f-878d02ea3d45
-name: Beth S. Richards
+name: Beth Richards
 given_name: Beth
 family_name: Richards
+gender: Female
 email: bethrichardsforward3@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408564.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 17
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 13
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Merrimack 17
 offices:
 - classification: district
   address: 3 Willard Street Concord, NH 03303-3509
   voice: 603-219-0038
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8564
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8564
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=408564
+other_names:
+- name: Beth S. Richards
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001402

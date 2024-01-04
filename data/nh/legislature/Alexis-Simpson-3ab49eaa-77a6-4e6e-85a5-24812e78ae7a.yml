@@ -1,35 +1,40 @@
 id: ocd-person/3ab49eaa-77a6-4e6e-85a5-24812e78ae7a
-name: Alexis H Simpson
+name: Alexis Simpson
 given_name: Alexis
 family_name: Simpson
-email: Alexis.Simpson@leg.state.nh.us
+gender: Female
+email: ahksimpson@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377314.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2015-01-01'
-  end_date: '2016-12-31'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 33
+- start_date: 2015-01-01
+  end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 18
 - start_date: 2020-12-02
-  end_date: '2022-12-07'
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 36
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 33
 offices:
 - classification: district
-  address: 20 Main Street Exeter, NH 03833-2438
+  address: 20 Main Street;Exeter, NH 03833-2438
   voice: 603-303-4722
 links:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=377314
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=904
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377314
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=904
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=904
 other_names:
+- name: Alexis Kemmler Simpson
+- name: Alexis H Simpson
 - name: Alexis Simpson
 other_identifiers:
 - scheme: legacy_openstates
