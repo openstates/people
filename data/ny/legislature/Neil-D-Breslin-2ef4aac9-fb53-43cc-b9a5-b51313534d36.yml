@@ -1,29 +1,32 @@
 id: ocd-person/2ef4aac9-fb53-43cc-b9a5-b51313534d36
-name: Neil D. Breslin
+name: Neil Breslin
 given_name: Neil
 family_name: Breslin
+gender: Male
 email: breslin@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/07-20-11_breslin_-hs-032.jpg?itok=tCUiO_XK
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/07-20-11_breslin_-hs-032.jpg?itok=sNxOrDrN
 party:
-- end_date: '2023-03-03'
-  name: Democratic
 - name: Democratic/Working Families
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '46'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '44'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '46'
 offices:
 - classification: capitol
   address: Room 430 CAP; Albany,NY 12247
   voice: 518-455-2225
-  fax: 518-426-6807
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/neil-d-breslin/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/neil-d-breslin/contact
+- url: https://www.nysenate.gov/senators/neil-d-breslin
+other_names:
+- name: Neil David Breslin
+- name: Neil D. Breslin
 ids:
   twitter: NeilBreslin44
 other_identifiers:

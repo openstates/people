@@ -2,28 +2,30 @@ id: ocd-person/9dd382bd-0f4f-4a99-ad58-679e26114f70
 name: Alexis Weik
 given_name: Alexis
 family_name: Weik
+gender: Female
 email: weik@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/alexis_weik_hs.jpg?itok=lg54Kn-q
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/alexis_weik_hs.jpg?itok=F8H4DVNB
 party:
-- name: Republican
 - name: Republican/Conservative
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '8'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '3'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '8'
 offices:
 - classification: capitol
   address: Legislative Office Building, Room 413; Albany,NY 12247
   voice: 518-455-2950
 - classification: district
-  address: Suite GL-005; Bohemia,NY 11716
+  address: Suite 205,; Bayshore,NY 11706
   voice: 631-665-2311
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/alexis-weik/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/alexis-weik/contact
+- url: https://www.nysenate.gov/senators/alexis-weik
 sources:
 - url: http://www.nysenate.gov/senators/alexis-weik/contact
