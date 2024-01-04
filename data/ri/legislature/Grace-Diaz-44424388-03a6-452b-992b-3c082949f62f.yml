@@ -8,7 +8,8 @@ image: http://www.rilegislature.gov/representatives/pictures/diaz.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2005-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '11'
 offices:
@@ -16,18 +17,15 @@ offices:
   address: 45 Adelaide Avenue, Providence, RI 02907
   voice: 401-575-3641
 links:
-- url: http://www.rilin.state.ri.us/representatives/carson/
-- url: http://www.rilegislature.gov/representatives/carson/default.aspx
-- url: http://www.rilegislature.gov/representatives/diaz/default.aspx
+- url: https://www.rilin.state.ri.us/representatives/carson/
+- url: https://www.rilegislature.gov/representatives/carson/default.aspx
+- url: https://www.rilegislature.gov/representatives/diaz/default.aspx
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000049
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
-  note: Contact Web Page
 - url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
-  note: Detail Excel Source
 - url: http://www.rilegislature.gov/representatives/diaz/default.aspx
-  note: Image Source
 extras:
   City/Town Represented: Providence

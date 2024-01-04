@@ -1,6 +1,6 @@
 id: ocd-person/0b20a11e-e90b-4ff2-aa25-5334a8592071
-name: Stephen M. Casey
-given_name: Stephen M.
+name: Stephen Casey
+given_name: Stephen
 family_name: Casey
 gender: Male
 email: rep-casey@rilegislature.gov
@@ -8,16 +8,19 @@ image: http://www.rilegislature.gov/representatives/pictures/casey.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2013-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '50'
 offices:
 - classification: district
   address: 625 Park Avenue 2F, Woonsocket, RI 02985
 links:
-- url: http://www.rilin.state.ri.us/representatives/carson/
-- url: http://www.rilegislature.gov/representatives/carson/default.aspx
-- url: http://www.rilegislature.gov/representatives/casey/default.aspx
+- url: https://www.rilin.state.ri.us/representatives/carson/
+- url: https://www.rilegislature.gov/representatives/carson/default.aspx
+- url: https://www.rilegislature.gov/representatives/casey/default.aspx
+other_names:
+- name: Stephen M. Casey
 other_identifiers:
 - scheme: legacy_openstates
   identifier: RIL000132
@@ -26,10 +29,7 @@ sources:
 - url: http://www.rilin.state.ri.us/representatives/Casey/
 - url: http://www.rilegislature.gov/representatives/casey/default.aspx
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
-  note: Contact Web Page
 - url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
-  note: Detail Excel Source
 - url: http://www.rilegislature.gov/representatives/casey/default.aspx
-  note: Image Source
 extras:
   City/Town Represented: Woonsocket

@@ -8,7 +8,8 @@ image: http://www.rilegislature.gov/representatives/pictures/alzate.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2019-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
   district: '60'
 offices:
@@ -16,18 +17,15 @@ offices:
   address: 984 York Avenue, Pawtucket, RI 02861
   voice: 401-663-5600
 links:
-- url: http://www.rilin.state.ri.us/representatives/carson/
-- url: http://www.rilegislature.gov/representatives/carson/default.aspx
-- url: http://www.rilegislature.gov/representatives/alzate/default.aspx
+- url: https://www.rilin.state.ri.us/representatives/carson/
+- url: https://www.rilegislature.gov/representatives/carson/default.aspx
+- url: https://www.rilegislature.gov/representatives/alzate/default.aspx
 sources:
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
 - url: http://www.rilin.state.ri.us/representatives/alzate/
 - url: http://www.rilegislature.gov/representatives/alzate/default.aspx
 - url: http://webserver.rilin.state.ri.us/Email/RepEmailListDistrict.asp
-  note: Contact Web Page
 - url: http://www.rilegislature.gov/SiteAssets/MailingLists/Representatives.xls
-  note: Detail Excel Source
 - url: http://www.rilegislature.gov/representatives/alzate/default.aspx
-  note: Image Source
 extras:
   City/Town Represented: Pawtucket, Central Falls
