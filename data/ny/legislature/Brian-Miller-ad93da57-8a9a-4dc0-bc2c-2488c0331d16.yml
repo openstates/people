@@ -1,32 +1,34 @@
 id: ocd-person/ad93da57-8a9a-4dc0-bc2c-2488c0331d16
-name: Brian D. Miller
+name: Brian Miller
 given_name: Brian
 family_name: Miller
-email: millerb@nyassembly.gov
+gender: Male
+email: millerb@nysassembly.gov
 image: https://assembly.state.ny.us/write/upload/member_files/122/headshot/122.jpg?hst=1660074350
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '122'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '101'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '122'
 offices:
 - classification: capitol
   address: LOB 439; Albany, NY 12248
   voice: 518-455-5334
-  fax: 518-455-5391
 - classification: district
   address: 48 Genesee St.; New Hartford, NY 13413
   voice: 315-736-3879
-  fax: 315-736-3947
 links:
-- url: http://assembly.state.ny.us/mem/?sh=email
+- url: https://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Brian-D-Miller
+- url: https://nyassembly.gov/mem/Brian-D-Miller
 other_names:
+- name: Brian D. Miller
 - name: Brian Miller
 - name: MILLER B
 - name: Miller B

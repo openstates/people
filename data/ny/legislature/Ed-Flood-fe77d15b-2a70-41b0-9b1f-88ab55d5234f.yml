@@ -2,12 +2,14 @@ id: ocd-person/fe77d15b-2a70-41b0-9b1f-88ab55d5234f
 name: Ed Flood
 given_name: Ed
 family_name: Flood
+gender: Male
 email: floode@nyassembly.gov
 image: https://assembly.state.ny.us/write/upload/member_files/004/headshot/004.jpg?hst=1672560813
 party:
-- name: Republican
+- name: Republican/Conservative
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '4'
 offices:
@@ -19,5 +21,8 @@ offices:
   voice: 631-751-3094
 links:
 - url: https://assembly.state.ny.us/mem/Ed-Flood
+- url: https://nyassembly.gov/mem/Ed-Flood
+other_names:
+- name: Edward Albert Flood
 sources:
 - url: https://assembly.state.ny.us/mem/Ed-Flood
