@@ -1,5 +1,5 @@
 id: ocd-person/a37a3f66-83a2-4a7e-90e3-8de41be7262d
-name: John C. Velis
+name: John Velis
 given_name: John
 family_name: Velis
 gender: Male
@@ -8,18 +8,19 @@ image: https://malegislature.gov/Legislators/Profile/170/JCV0.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2013-01-01'
-  end_date: '2020-12-31'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Hampden and Hampshire
+- start_date: 2013-01-01
+  end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 4th Hampden
-- end_date: '2023-01-04'
+- end_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Hampden and Hampshire
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: Hampden and Hampshire
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 513; Boston, MA 02133
@@ -27,6 +28,9 @@ offices:
 links:
 - url: https://malegislature.gov/Legislators/Profile/jcv1
 - url: https://malegislature.gov/Legislators/Profile/JCV0
+other_names:
+- name: John Christopher Velis
+- name: John C. Velis
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000504

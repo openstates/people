@@ -2,24 +2,28 @@ id: ocd-person/9a227955-60e0-45e3-bea8-03f44f4cd08e
 name: Jeffrey Greeson
 given_name: Jeffrey
 family_name: Greeson
-email: Jeffrey.Greeson@leg.state.nh.us
+gender: Male
+email: jeffrey.greeson@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Grafton 6
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Grafton 16
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Grafton 6
 offices:
 - classification: district
   address: PO Box 130 Wentworth, NH 03282
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9893
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9893
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9893
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

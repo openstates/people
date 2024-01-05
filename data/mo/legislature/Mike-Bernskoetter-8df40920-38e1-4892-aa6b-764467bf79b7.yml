@@ -3,25 +3,27 @@ name: Mike Bernskoetter
 given_name: Mike
 family_name: Bernskoetter
 gender: Male
-email: Mike.Bernskoetter@senate.mo.gov
+email: mike.bernskoetter@senate.mo.gov
 image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/Bernskoetter-200x300.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2019-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '6'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '59'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '6'
 offices:
 - classification: capitol
   address: 201 W Capitol Ave, Room 417
   voice: 573-751-2076
 links:
-- url: http://www.senate.mo.gov/mem06
 - url: https://www.senate.mo.gov/mem06
+- url: https://www.senate.mo.gov/mem06
+- url: https://www.senate.mo.gov/Senators/Member/06
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MOL000042

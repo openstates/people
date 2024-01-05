@@ -1,30 +1,31 @@
 id: ocd-person/975453b1-113a-40e9-8036-53e714a47b66
-name: James Tedisco
-given_name: James
+name: Jim Tedisco
+given_name: Jim
 family_name: Tedisco
+gender: Male
 email: tedisco@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_tedisco-hs.jpg?itok=kOlhs5wl
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/official_tedisco-hs.jpg?itok=4-C9InuB
 party:
-- name: Republican
 - name: Republican/Conservative
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '44'
+- start_date: 2011-01-01
+  end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '110'
-- start_date: '2013-01-01'
-  end_date: '2016-12-31'
+- start_date: 2013-01-01
+  end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '112'
-- end_date: '2022-12-31'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '49'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '44'
 offices:
 - classification: capitol
   address: Room 515; Albany,NY 12247
@@ -33,8 +34,12 @@ offices:
   address: 2nd Floor; Clifton Park,NY 12065-2046
   voice: 518-885-1829
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/james-tedisco/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/james-tedisco/contact
+- url: https://www.nysenate.gov/senators/james-tedisco
+other_names:
+- name: James Nicholas Tedisco
+- name: James Tedisco
 ids:
   twitter: JamesTedisco
 other_identifiers:

@@ -2,26 +2,28 @@ id: ocd-person/c4122c6a-ed23-492e-b813-59a0fed1ec86
 name: Howard Pearl
 given_name: Howard
 family_name: Pearl
-email: Howard.Pearl@leg.state.nh.us
+gender: Male
+email: howard.pearl@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/Senate/images/senators/17.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-06'
+- start_date: 2022-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '17'
+- end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 26
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: '17'
-#  district: Merrimack 17
 offices:
 - classification: capitol
   address: State House, Room 105-A 107 North Main Street Concord, NH 03301
   voice: 603-271-4151
 links:
-- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district17.aspx
+- url: https://www.gencourt.state.nh.us/Senate/members/webpages/district17.aspx
   note: member detail page
+- url: https://gencourt.state.nh.us/senate/members/webpages/district17.aspx
 sources:
 - url: http://www.gencourt.state.nh.us/Senate/members/webpages/district17.aspx
 extras:

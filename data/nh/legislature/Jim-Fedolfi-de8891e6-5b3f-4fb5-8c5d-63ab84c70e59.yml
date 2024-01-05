@@ -1,28 +1,33 @@
 id: ocd-person/de8891e6-5b3f-4fb5-8c5d-63ab84c70e59
-name: Jim L. Fedolfi
+name: Jim Fedolfi
 given_name: Jim
 family_name: Fedolfi
-email: jfedolfi@comcast.net
+gender: Male
+email: jimfornh@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408299.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 30
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 1
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 30
 offices:
 - classification: district
   address: 21 Bradford Circle Hillsborough, NH 03244-4864
   voice: 603-464-3050
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8299
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8299
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?member=408299
+other_names:
+- name: Jim L. Fedolfi
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001450

@@ -1,29 +1,35 @@
 id: ocd-person/e94c1d98-5454-40a2-8293-ee0998fee8ca
-name: Sherman A. Packard
-given_name: Sherman
+name: Sherm Packard
+given_name: Sherm
 family_name: Packard
+gender: Male
 email: sherman.packard@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/375453.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2022-12-07'
-  end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 16
+- start_date: 2022-12-07
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 5
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 16
 offices:
 - classification: district
   address: 70 Old Derry Road Londonderry, NH 03053-2218
   voice: 603-271-3661
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=425
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=425
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=375453
+other_names:
+- name: Sherman Adams Packard
+- name: Sherman A. Packard
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000273

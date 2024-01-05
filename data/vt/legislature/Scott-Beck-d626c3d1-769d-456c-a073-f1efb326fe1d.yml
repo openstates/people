@@ -2,18 +2,20 @@ id: ocd-person/d626c3d1-769d-456c-a073-f1efb326fe1d
 name: Scott Beck
 given_name: Scott
 family_name: Beck
+gender: Male
 email: sbeck@leg.state.vt.us
 image: https://legislature.vermont.gov/Documents/Legislators/SBeck.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Caledonia-Essex
 - end_date: 2023-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Caledonia-3
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  district: Caledonia-Essex
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
@@ -21,18 +23,19 @@ offices:
 - classification: district
   address: 93 Overlook Dr. St. Johnsbury, VT 05819
 links:
-- url: http://legislature.vermont.gov/people/single/2020/23996
-- url: http://legislature.vermont.gov/people/single/2022/23996
+- url: https://legislature.vermont.gov/people/single/2020/23996
+- url: https://legislature.vermont.gov/people/single/2022/23996
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CAL-3.pdf
   note: district map
+- url: https://legislature.vermont.gov/people/single/2024/23996
+other_names:
+- name: Scott L. Beck
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000346
 - scheme: legacy_openstates
   identifier: VTL000616
-other_names:
-  - name: Scott L. Beck
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/23996

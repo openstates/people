@@ -1,24 +1,30 @@
 id: ocd-person/8488ba3a-e608-4f0d-9d7b-7e6e13244917
-name: Paul A. Terry
+name: Paul Terry
 given_name: Paul
 family_name: Terry
-email: Paul.Terry@leg.state.nh.us
+gender: Male
+email: paul.terry@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-06'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 7
+- end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 5
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Belknap 7
 offices:
 - classification: district
   address: 915 Stockbridge Corner Road Alton, NH 03809
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9866
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9866
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9866
+other_names:
+- name: Paul A. Terry
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

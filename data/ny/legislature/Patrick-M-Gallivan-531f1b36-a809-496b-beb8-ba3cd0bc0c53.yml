@@ -1,21 +1,21 @@
 id: ocd-person/531f1b36-a809-496b-beb8-ba3cd0bc0c53
-name: Patrick M. Gallivan
-given_name: Patrick M.
+name: Patrick Gallivan
+given_name: Patrick
 family_name: Gallivan
+gender: Male
 email: gallivan@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/09-15-16_gallivan-hs-012a.jpg?itok=MfQatkaV
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/09-15-16_gallivan-hs-012a.jpg?itok=6Ayxm7iL
 party:
-- end_date: '2023-03-03'
-  name: Republican
 - name: Republican/Conservative
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '60'
+- end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '59'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '60'
 offices:
 - classification: capitol
   address: Room 311; Albany,NY 12247
@@ -24,9 +24,11 @@ offices:
   address: Suite 116; Elma,NY 14059
   voice: 716-656-8544
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/patrick-m-gallivan/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/patrick-m-gallivan/contact
+- url: https://www.nysenate.gov/senators/patrick-m-gallivan
 other_names:
+- name: Patrick M. Gallivan
 - name: GALLIVAN
 ids:
   twitter: senatorgallivan

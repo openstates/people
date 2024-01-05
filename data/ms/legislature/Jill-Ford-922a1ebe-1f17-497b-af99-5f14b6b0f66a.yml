@@ -2,12 +2,14 @@ id: ocd-person/922a1ebe-1f17-497b-af99-5f14b6b0f66a
 name: Jill Ford
 given_name: Jill
 family_name: Ford
+gender: Female
 email: jford@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/ford_(73rd).jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2020-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '73'
 offices:
@@ -15,8 +17,7 @@ offices:
   address: P. O. Box 1018;Jackson, MS 39215
   voice: 601-359-3770
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/ford_(73rd).xml
-- url: http://billstatus.ls.state.ms.us/members/house/ford_(73rd).xml
+- url: https://billstatus.ls.state.ms.us/members/house/ford_(73rd).xml
   note: homepage
 other_names:
 - name: Ford (73rd)
