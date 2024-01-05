@@ -2,12 +2,14 @@ id: ocd-person/48567f29-ec70-4ff5-bda5-873f2e42933b
 name: Dan Eubanks
 given_name: Dan
 family_name: Eubanks
+gender: Male
 email: deubanks@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/eubanks.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '25'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: PO Box 184 Walls, Mississippi 38680
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/eubanks.xml
-- url: http://billstatus.ls.state.ms.us/members/house/eubanks.xml
+- url: https://billstatus.ls.state.ms.us/members/house/eubanks.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

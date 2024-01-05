@@ -1,12 +1,17 @@
 id: ocd-person/99fd8cce-55ba-493a-b787-e339a57de7df
-name: Steven Bradford
-given_name: Steven
+name: Steve Bradford
+given_name: Steve
 family_name: Bradford
 gender: Male
+email: senator.bradford@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/bradford.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2016-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '35'
 - start_date: 2009-01-01
   end_date: 2012-12-31
   type: lower
@@ -17,9 +22,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '62'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '35'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 7210, Sacramento, CA 95814-4900
@@ -32,6 +34,9 @@ offices:
   voice: 310-514-8573
 links:
 - url: https://senate.ca.gov/sd35
+- url: https://sd35.senate.ca.gov/
+other_names:
+- name: Steven Bradford
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000510

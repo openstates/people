@@ -2,12 +2,14 @@ id: ocd-person/c3ea3d93-cd2d-48f4-babd-a47bbd951108
 name: Manly Barton
 given_name: Manly
 family_name: Barton
+gender: Male
 email: mbarton@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/barton.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '109'
 offices:
@@ -18,9 +20,10 @@ offices:
   address: 7905 Pecan Ridge Moss Point, Mississippi 39562
   voice: 228-588-2763
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/barton.xml
-- url: http://billstatus.ls.state.ms.us/members/house/barton.xml
+- url: https://billstatus.ls.state.ms.us/members/house/barton.xml
   note: homepage
+other_names:
+- name: Manly George Barton
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000208

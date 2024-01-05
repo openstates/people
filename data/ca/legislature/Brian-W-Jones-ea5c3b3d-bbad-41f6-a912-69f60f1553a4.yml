@@ -1,12 +1,17 @@
 id: ocd-person/ea5c3b3d-bbad-41f6-a912-69f60f1553a4
-name: Brian W. Jones
+name: Brian Jones
 given_name: Brian
 family_name: Jones
 gender: Male
+email: senator.jones@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/brian_jones_headshot_blue.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '40'
 - start_date: 2010-12-06
   end_date: 2012-11-30
   type: lower
@@ -17,19 +22,18 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '71'
-- start_date: '2018-12-03'
-  end_date: '2022-12-05'
+- start_date: 2018-12-03
+  end_date: 2022-12-05
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '38'
-- start_date: '2022-12-05'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '40'
+offices: []
 links:
 - url: https://senate.ca.gov/sd38
 - url: https://senate.ca.gov/sd40
+- url: https://sr40.senate.ca.gov/
 other_names:
+- name: Brian W. Jones
 - name: Brian Jones
 other_identifiers:
 - scheme: legacy_openstates

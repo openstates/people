@@ -3,17 +3,19 @@ name: Ron Copeland
 given_name: Ron
 family_name: Copeland
 gender: Male
-image: https://images.house.mo.gov/MemberPhoto.aspx?id=2236
+email: ron.copeland@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2236
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '120'
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '143'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '120'
 offices:
 - classification: capitol
   address: MO House of Representatives; 201 West Capitol Avenue; Room 313-2; Jefferson
@@ -22,6 +24,7 @@ offices:
 links:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=143
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=120
+- url: https://house.mo.gov/MemberDetails.aspx?district=120
 other_names:
 - name: Copeland, Ron
 sources:

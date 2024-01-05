@@ -2,12 +2,14 @@ id: ocd-person/e36cdae5-3437-48fc-93b4-280b09af661b
 name: Rob Roberson
 given_name: Rob
 family_name: Roberson
+gender: Male
 email: rroberson@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/roberson.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '43'
 offices:
@@ -17,9 +19,10 @@ offices:
 - classification: district
   address: 212 East Main Street Starkville, Mississippi 39759
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/roberson.xml
-- url: http://billstatus.ls.state.ms.us/members/house/roberson.xml
+- url: https://billstatus.ls.state.ms.us/members/house/roberson.xml
   note: homepage
+other_names:
+- name: Loyd B. Roberson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000273

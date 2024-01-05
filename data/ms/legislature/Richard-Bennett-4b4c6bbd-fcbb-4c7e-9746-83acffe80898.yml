@@ -2,12 +2,14 @@ id: ocd-person/4b4c6bbd-fcbb-4c7e-9746-83acffe80898
 name: Richard Bennett
 given_name: Richard
 family_name: Bennett
+gender: Male
 email: rbennett@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/bennett.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2008-01-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '120'
 offices:
@@ -18,9 +20,10 @@ offices:
   address: 20108 Daugherty Rd Long Beach, Mississippi 39560
   voice: 228-861-6348
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/bennett.xml
-- url: http://billstatus.ls.state.ms.us/members/house/bennett.xml
+- url: https://billstatus.ls.state.ms.us/members/house/bennett.xml
   note: homepage
+other_names:
+- name: Richard B. Bennett
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000102
