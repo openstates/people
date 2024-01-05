@@ -2,25 +2,31 @@ id: ocd-person/c6471995-41db-497c-8953-dd3ea5871870
 name: Janet Nguyen
 given_name: Janet
 family_name: Nguyen
+gender: Female
+email: senator.nguyen@senate.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad72_janet_nguyen.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-30'
+- start_date: 2022-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '36'
+- end_date: 2018-11-30
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '34'
 - start_date: 2020-12-07
-  end_date: '2022-12-05'
+  end_date: 2022-12-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '72'
-- start_date: '2022-12-05'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '36'
+offices: []
 links:
 - url: https://ad72.asmrc.org/
+- url: https://sr36.senate.ca.gov/
+other_names:
+- name: Janet Q. Nguyen
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000469
