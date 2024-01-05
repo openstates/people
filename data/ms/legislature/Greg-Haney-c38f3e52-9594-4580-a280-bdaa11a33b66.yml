@@ -2,12 +2,14 @@ id: ocd-person/c38f3e52-9594-4580-a280-bdaa11a33b66
 name: Greg Haney
 given_name: Greg
 family_name: Haney
+gender: Male
 email: ghaney@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/haney.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '118'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: 104 45th St Gulfport, Mississippi 39507
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/haney.xml
-- url: http://billstatus.ls.state.ms.us/members/house/haney.xml
+- url: https://billstatus.ls.state.ms.us/members/house/haney.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
