@@ -2,19 +2,21 @@ id: ocd-person/d9462f08-2b27-4969-8436-9a1c21534a40
 name: Kelly Seyarto
 given_name: Kelly
 family_name: Seyarto
+gender: Male
+email: senator.seyarto@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/seyarto_kelly_r-32c.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '32'
 - start_date: 2020-12-07
   end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '67'
-- start_date: 2022-12-05
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '32'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 7120, Sacramento, CA 95814-4900
@@ -25,6 +27,9 @@ offices:
 links:
 - url: https://ad67.asmrc.org/
 - url: https://senate.ca.gov/sd32
+- url: https://sr32.senate.ca.gov/
+other_names:
+- name: Dennis Kelly Seyarto
 sources:
 - url: http://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers

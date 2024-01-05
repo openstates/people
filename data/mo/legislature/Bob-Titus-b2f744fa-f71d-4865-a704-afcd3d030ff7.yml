@@ -2,11 +2,14 @@ id: ocd-person/b2f744fa-f71d-4865-a704-afcd3d030ff7
 name: Bob Titus
 given_name: Bob
 family_name: Titus
-image: https://images.house.mo.gov/MemberPhoto.aspx?id=2369
+gender: Male
+email: bob.titus@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2369
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '139'
 offices:
@@ -16,6 +19,7 @@ offices:
   voice: 573-751-3833
 links:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=139
+- url: https://house.mo.gov/MemberDetails.aspx?district=139
 sources:
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=139
 extras:

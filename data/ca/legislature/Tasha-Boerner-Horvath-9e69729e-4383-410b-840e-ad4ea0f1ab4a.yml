@@ -1,19 +1,21 @@
 id: ocd-person/9e69729e-4383-410b-840e-ad4ea0f1ab4a
-name: Tasha Boerner Horvath
+name: Tasha Boerner
 given_name: Tasha
-family_name: Boerner Horvath
+family_name: Boerner
 gender: Female
+email: assemblymember.boerner@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/a76_t_b_horvath.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-04'
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '77'
+- end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '76'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '77'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 4150 Sacramento, CA 94249-0076
@@ -23,7 +25,9 @@ offices:
   voice: 760-434-7605
 links:
 - url: https://a77.asmdc.org/
-
+other_names:
+- name: Tasha Nicole Boerner
+- name: Tasha Boerner Horvath
 sources:
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:

@@ -1,28 +1,33 @@
 id: ocd-person/84f79859-fef0-441d-80bb-5edeafc70e78
-name: Jeanine M. Notter
+name: Jeanine Notter
 given_name: Jeanine
 family_name: Notter
+gender: Female
 email: jeanine.notter@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376991.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 12
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 21
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 12
 offices:
 - classification: district
   address: 19 Whittier Road Merrimack, NH 03054-4755
   voice: 603-423-0408
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=639
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=639
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=376991
+other_names:
+- name: Jeanine M. Notter
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000262

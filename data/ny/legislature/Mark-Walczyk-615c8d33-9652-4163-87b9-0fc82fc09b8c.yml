@@ -2,27 +2,30 @@ id: ocd-person/615c8d33-9652-4163-87b9-0fc82fc09b8c
 name: Mark Walczyk
 given_name: Mark
 family_name: Walczyk
-email: walczykm@nyassembly.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/walczyk_hs_001.jpg?itok=iVqrZY5V
+gender: Male
+email: walczyk@nysenate.gov
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/walczyk_hs_001.jpg?itok=DzABU3Xf
 party:
-- end_date: '2023-03-03'
-  name: Republican
 - name: Republican/Conservative
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '49'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '116'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '49'
 offices:
 - classification: capitol
   address: Legislative Office Building, Room 302; Albany,NY 12247
   voice: 518-455-3438
 links:
-- url: http://assembly.state.ny.us/mem/?sh=email
+- url: https://assembly.state.ny.us/mem/?sh=email
 - url: https://assembly.state.ny.us/mem/Mark-Walczyk
+- url: https://www.nysenate.gov/senators/mark-walczyk
+other_names:
+- name: Mark C. Walczyk
 ids:
   twitter: MarkWalczyk
 sources:

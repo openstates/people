@@ -1,28 +1,33 @@
 id: ocd-person/433c67d6-bfdc-410e-87e2-463c93d55a17
-name: John M. Potucek
+name: John Potucek
 given_name: John
 family_name: Potucek
-email: John.Potucek@leg.state.nh.us
+gender: Male
+email: john.potucek@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377257.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 13
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 13
 offices:
 - classification: district
   address: 18 Sunset Avenue Derry, NH 03038-4244
   voice: 603-432-9049
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=902
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=902
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377257
+other_names:
+- name: John M. Potucek
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001168

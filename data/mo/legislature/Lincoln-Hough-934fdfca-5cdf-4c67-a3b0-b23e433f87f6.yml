@@ -3,10 +3,15 @@ name: Lincoln Hough
 given_name: Lincoln
 family_name: Hough
 gender: Male
+email: lincoln.hough@senate.mo.gov
 image: https://www.senate.mo.gov/19web/wp-content/uploads/2019/10/Hough-200x300.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2019-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '30'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
@@ -17,16 +22,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '135'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '30'
 offices:
 - classification: capitol
   address: 201 W Capitol Ave, Room 419
   voice: 573-751-1311
 links:
-- url: http://www.senate.mo.gov/mem30
 - url: https://www.senate.mo.gov/mem30
+- url: https://www.senate.mo.gov/mem30
+- url: https://www.senate.mo.gov/Senators/Member/30
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MOL000095

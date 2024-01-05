@@ -1,13 +1,16 @@
 id: ocd-person/a9b13089-77fc-4e9d-a9e4-35933ea903a0
-name: Shelley B. Mayer
+name: Shelley Mayer
 given_name: Shelley
 family_name: Mayer
+gender: Female
 email: smayer@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/senators-committee-160-photo-thumbsd37sm.jpg?itok=WVLAEcnZ
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/senators-committee-160-photo-thumbsd37sm.jpg?itok=GVLoEXUn
 party:
-- name: Democratic
 - name: Democratic/Working Families
 roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '37'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
@@ -18,18 +21,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '90'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '37'
 offices:
 - classification: capitol
   address: Legislative Office Building, Room 509; Albany,NY 12247
   voice: 518-455-2031
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/shelley-mayer/contact
-- url: http://www.nysenate.gov/senators/shelley-b-mayer/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/shelley-mayer/contact
+- url: https://www.nysenate.gov/senators/shelley-b-mayer/contact
+- url: https://www.nysenate.gov/senators/shelley-b-mayer
 other_names:
+- name: Shelley B. Mayer
 - name: Shelley Mayer
 ids:
   twitter: ShelleyBMayer

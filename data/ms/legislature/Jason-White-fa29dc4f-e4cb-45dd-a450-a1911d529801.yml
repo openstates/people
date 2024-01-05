@@ -2,12 +2,14 @@ id: ocd-person/fa29dc4f-e4cb-45dd-a450-a1911d529801
 name: Jason White
 given_name: Jason
 family_name: White
+gender: Male
 email: jwhite@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/white.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '48'
 offices:
@@ -18,10 +20,11 @@ offices:
   address: P.O. Box 246 West, Mississippi 39192
   voice: 662-967-2015
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/white.xml
-- url: http://billstatus.ls.state.ms.us/members/house/White.xml
-- url: http://billstatus.ls.state.ms.us/members/house/white.xml
+- url: https://billstatus.ls.state.ms.us/members/house/White.xml
+- url: https://billstatus.ls.state.ms.us/members/house/white.xml
   note: homepage
+other_names:
+- name: Jason M. White
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000217

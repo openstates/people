@@ -1,28 +1,33 @@
 id: ocd-person/a0936f2f-8170-47f9-8b05-6c6697a95968
-name: Karel A. Crawford
+name: Karel Crawford
 given_name: Karel
 family_name: Crawford
+gender: Female
 email: karel.crawford@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377087.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Carroll 3
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Carroll 3
 offices:
 - classification: district
   address: PO Box 825 Center Harbor, NH 03226-0825
   voice: 603-253-7857
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=694
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=694
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377087
+other_names:
+- name: Karel A. Crawford
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000498

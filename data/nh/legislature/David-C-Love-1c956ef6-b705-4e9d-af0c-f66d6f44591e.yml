@@ -1,27 +1,33 @@
 id: ocd-person/1c956ef6-b705-4e9d-af0c-f66d6f44591e
-name: David C. Love
+name: David Love
 given_name: David
 family_name: Love
-email: David.Love@leg.state.nh.us
+gender: Male
+email: david.love@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 13
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 13
 offices:
 - classification: district
   address: '4 Maple Street #3 Derry, NH 03038-2345'
   voice: 603-275-9851
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8407
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8407
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=8407
+other_names:
+- name: David C. Love
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408905
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt

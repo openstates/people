@@ -3,18 +3,20 @@ name: Melissa Hurtado
 given_name: Melissa
 family_name: Hurtado
 gender: Female
+email: senator.hurtado@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator_hurtado_0.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2018-12-03'
-  end_date: '2022-12-05'
+- start_date: 2022-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '16'
+- start_date: 2018-12-03
+  end_date: 2022-12-05
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '14'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '16'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 7310, Sacramento, CA 95814-4900
@@ -28,6 +30,7 @@ offices:
 links:
 - url: https://senate.ca.gov/sd14
 - url: https://senate.ca.gov/sd16
+- url: https://sd16.senate.ca.gov/
 sources:
 - url: http://senate.ca.gov/senators
 - url: https://www.senate.ca.gov/senators
