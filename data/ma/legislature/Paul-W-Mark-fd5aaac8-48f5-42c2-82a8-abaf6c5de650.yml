@@ -1,22 +1,22 @@
 id: ocd-person/fd5aaac8-48f5-42c2-82a8-abaf6c5de650
-name: Paul W. Mark
+name: Paul Mark
 given_name: Paul
 family_name: Mark
 gender: Male
-email: Paul.Mark@masenate.gov
+email: paul.mark@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/PWM0.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2011-01-01'
-  end_date: '2023-01-04'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: 2nd Berkshire
-- start_date: '2023-01-04'
+- start_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Berkshire, Hampden, Franklin and Hampshire
+- start_date: 2011-01-01
+  end_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 2nd Berkshire
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 504; Boston, MA 02133
@@ -24,6 +24,8 @@ offices:
 links:
 - url: https://malegislature.gov/Legislators/Profile/PWM1
 - url: https://malegislature.gov/Legislators/Profile/PWM0
+other_names:
+- name: Paul W. Mark
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000530

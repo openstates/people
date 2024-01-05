@@ -1,27 +1,29 @@
 id: ocd-person/edebef62-78d9-4f8b-a94d-65a29dbc09f6
-name: Ryan C. Fattman
+name: Ryan Fattman
 given_name: Ryan
 family_name: Fattman
 gender: Male
-email: Ryan.Fattman@masenate.gov
+email: ryan.fattman@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/RCF0.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Worcester and Hampden
+- end_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Worcester and Norfolk
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: Worcester and Hampden
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 213-A; Boston, MA 02133
   voice: 617-722-1420
-  fax: 617-722-1944
 links:
 - url: https://malegislature.gov/Legislators/Profile/RCF0
+other_names:
+- name: Ryan C. Fattman
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000089
