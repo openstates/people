@@ -2,12 +2,14 @@ id: ocd-person/0c9a7d35-4b91-42c7-8af2-39b6514c23d8
 name: Clay Deweese
 given_name: Clay
 family_name: Deweese
+gender: Male
 email: cdeweese@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/deweese.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2020-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '12'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: 5006 Bluff Cove Oxford, Mississippi 38655
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/deweese.xml
-- url: http://billstatus.ls.state.ms.us/members/house/deweese.xml
+- url: https://billstatus.ls.state.ms.us/members/house/deweese.xml
   note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/deweese.xml
