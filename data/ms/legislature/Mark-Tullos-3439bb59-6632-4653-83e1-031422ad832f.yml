@@ -2,12 +2,14 @@ id: ocd-person/3439bb59-6632-4653-83e1-031422ad832f
 name: Mark Tullos
 given_name: Mark
 family_name: Tullos
+gender: Male
 email: mtullos@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/tullos.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-20
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '79'
 offices:
@@ -18,9 +20,10 @@ offices:
   address: PO Box 505 Raleigh, Mississippi 39153
   voice: 601-782-9167
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/tullos.xml
-- url: http://billstatus.ls.state.ms.us/members/house/tullos.xml
+- url: https://billstatus.ls.state.ms.us/members/house/tullos.xml
   note: homepage
+other_names:
+- name: Mark K. Tullos
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000286
