@@ -8,25 +8,25 @@ image: https://www.senate.mn/img/member_thumbnails/02Green.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '2'
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 2B
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: '2'
 offices:
 - classification: capitol
   address: 2319 Minnesota Senate Bldg.; St. Paul, MN 55155
   voice: 651-297-8063
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/15395
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1251
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000409
 - scheme: legacy_openstates
   identifier: MNL000621
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp
-- url: https://www.senate.mn/api/members

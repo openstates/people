@@ -2,12 +2,14 @@ id: ocd-person/2fe9c09d-6213-4576-b0e4-6e89330f41bc
 name: Gene Newman
 given_name: Gene
 family_name: Newman
+gender: Male
 email: gnewman@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/newman.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2020-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '61'
 offices:
@@ -16,8 +18,7 @@ offices:
 - classification: district
   address: 801 Country place Drive Pearl, Mississippi 39208
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/newman.xml
-- url: http://billstatus.ls.state.ms.us/members/house/newman.xml
+- url: https://billstatus.ls.state.ms.us/members/house/newman.xml
   note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/newman.xml

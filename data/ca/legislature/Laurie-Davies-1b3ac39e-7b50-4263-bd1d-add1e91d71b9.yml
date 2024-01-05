@@ -2,21 +2,24 @@ id: ocd-person/1b3ac39e-7b50-4263-bd1d-add1e91d71b9
 name: Laurie Davies
 given_name: Laurie
 family_name: Davies
+gender: Female
+email: assemblymember.davies@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/arc_new_member_headshots_asm.ca_.gov_120x150px_davies.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2021-03-01'
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '74'
+- end_date: 2021-03-01
   type: mayor
   jurisdiction: ocd-jurisdiction/country:us/state:ca/place:laguna_niguel/government
 - start_date: 2020-12-07
-  end_date: '2022-12-05'
+  end_date: 2022-12-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '73'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '74'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 4720, Sacramento, CA 95814
@@ -27,6 +30,8 @@ offices:
 links:
 - url: https://ad73.asmrc.org/
 - url: https://ad74.asmrc.org/
+other_names:
+- name: Laurie Ann Davies
 other_identifiers:
 - scheme: openstates
   identifier: ocd-person/0ac6b6d4-745c-43fd-b4d2-730ffac09043

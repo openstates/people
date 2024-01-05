@@ -2,12 +2,14 @@ id: ocd-person/da9d953d-a95f-4166-9b94-e6c5e5b40c86
 name: Daryl Porter
 given_name: Daryl
 family_name: Porter
+gender: Male
 email: dporter@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/porter.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2020-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '98'
 offices:
@@ -16,9 +18,10 @@ offices:
 - classification: district
   address: PO Box 772 Summit, Mississippi 39666
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/porter.xml
-- url: http://billstatus.ls.state.ms.us/members/house/porter.xml
+- url: https://billstatus.ls.state.ms.us/members/house/porter.xml
   note: homepage
+other_names:
+- name: Daryl L. Porter
 sources:
 - url: http://billstatus.ls.state.ms.us/members/house/porter.xml
 - url: http://billstatus.ls.state.ms.us/members/hr_membs.xml

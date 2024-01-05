@@ -1,15 +1,19 @@
 id: ocd-person/ad627e35-da3a-4877-a414-591479f567ae
-name: James A. Boyle
+name: James Boyle
 given_name: James
 family_name: Boyle
-middle_name: A.
-email: James.Boyle@legislature.maine.gov
+gender: Male
+email: james.boyle@legislature.maine.gov
 image: https://legislature.maine.gov/house/house/Repository/MemberProfiles/03290f7f-d2dc-40e2-865d-4538208ba81e_Boyle.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2013-01-01'
-  end_date: '2014-12-31'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '109'
+- start_date: 2013-01-01
+  end_date: 2014-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '6'
@@ -18,9 +22,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '27'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  district: '109'
 offices:
 - classification: capitol
   address: House Majority Office Room 333, State House 2 State House Station Augusta,
@@ -28,9 +29,13 @@ offices:
 - classification: district
   address: 25 Dundee Road, Gorham, ME 04038
 links:
-- url: http://www.maine.gov/legis/senate/bio06s.htm
+- url: https://www.maine.gov/legis/senate/bio06s.htm
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/1452
   note: homepage
+- url: https://legislature.maine.gov/housedems/boylej/index.html
+other_names:
+- name: James Allen Boyle
+- name: James A. Boyle
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MEL000194

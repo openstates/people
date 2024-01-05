@@ -3,11 +3,15 @@ name: Jerry Newton
 given_name: Jerry
 family_name: Newton
 gender: Male
-email: rep.jerry.newton@house.mn.gov
+email: sen.jerry.newton@senate.mn.gov
 image: https://www.house.mn.gov/hinfo/memberimgls93/35B.gif?v=032323
 party:
 - name: Democratic-Farmer-Labor
 roles:
+- start_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 35B
 - start_date: 2009-01-01
   end_date: 2010-12-31
   type: lower
@@ -18,20 +22,23 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 37A
-- end_date: '2023-01-03'
+- end_date: 2023-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '37'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 35B
 offices:
 - classification: capitol
   address: 367 State Office Building;St. Paul, MN 55155
   voice: 651-296-1729
 links:
-- url: https://www.senate.mn/members/member_bio.html?mem_id=1229
-- url: http://www.house.leg.state.mn.us/members/profile/15315
+- url: https://www.house.leg.state.mn.us/members/profile/15315
+other_names:
+- name: Gerald F. Newton
+sources:
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000748
@@ -43,8 +50,3 @@ other_identifiers:
   identifier: MNL000635
 - scheme: openstates
   identifier: ocd-person/3a342b25-cd1e-4061-b70c-c171dc3d5bc7
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

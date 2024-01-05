@@ -2,29 +2,31 @@ id: ocd-person/7cc1d333-efac-47fb-a109-98113c762790
 name: Diane Pauer
 given_name: Diane
 family_name: Pauer
-email: Diane.Pauer@leg.state.nh.us
+gender: Female
+email: diane.pauer@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/409010.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 36
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 26
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 36
 offices:
 - classification: district
-  address: "State House\x96House Member Mail 107 North Main Street Concord, NH 03301"
+  address: Brookline, NH 03033
 - classification: district
   address: 12 Westview Road;Brookline, NH 03033
   voice: 603-801-5088
-  name: 'District Office #1'
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9910
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9910
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9910
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
