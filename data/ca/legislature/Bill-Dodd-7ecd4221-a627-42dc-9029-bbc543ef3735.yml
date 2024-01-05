@@ -3,18 +3,20 @@ name: Bill Dodd
 given_name: Bill
 family_name: Dodd
 gender: Male
+email: senator.dodd@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sen_bill_dodd.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2016-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '3'
 - start_date: 2015-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '4'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '3'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 7610, Sacramento, CA 95814-4900
@@ -33,6 +35,9 @@ offices:
   voice: 707-551-2389
 links:
 - url: https://senate.ca.gov/sd03
+- url: https://sd03.senate.ca.gov/
+other_names:
+- name: William Harold Dodd
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000514

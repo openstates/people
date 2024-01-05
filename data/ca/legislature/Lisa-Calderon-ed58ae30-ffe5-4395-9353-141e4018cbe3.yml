@@ -2,17 +2,20 @@ id: ocd-person/ed58ae30-ffe5-4395-9353-141e4018cbe3
 name: Lisa Calderon
 given_name: Lisa
 family_name: Calderon
+gender: Female
+email: assemblymember.calderon@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/calderon-057.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '56'
 - end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '57'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '56'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 4120 Sacramento, CA 94249-0057
@@ -23,6 +26,8 @@ offices:
 links:
 - url: https://a57.asmdc.org/
 - url: https://a56.asmdc.org/
+other_names:
+- name: Lisa Yvette Calderon
 sources:
 - url: http://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers

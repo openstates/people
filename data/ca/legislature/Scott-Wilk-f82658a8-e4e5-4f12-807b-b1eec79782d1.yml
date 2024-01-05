@@ -3,18 +3,20 @@ name: Scott Wilk
 given_name: Scott
 family_name: Wilk
 gender: Male
+email: senator.wilk@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/wilk.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2016-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '21'
 - start_date: 2013-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '38'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '21'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 7140, Sacramento, CA 95814-4900
@@ -29,7 +31,10 @@ offices:
   address: 14343 Civic Drive, First Floor, Victorville, CA 92392
   voice: 760-843-8414
 links:
-- url: http://senate.ca.gov/sd21
+- url: https://senate.ca.gov/sd21
+- url: https://sr21.senate.ca.gov/
+other_names:
+- name: Scott Thomas Wilk
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000505

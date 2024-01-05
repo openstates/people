@@ -2,12 +2,14 @@ id: ocd-person/6e50b530-8c0e-485a-a568-6d40ba83127d
 name: Carl Mickens
 given_name: Carl
 family_name: Mickens
+gender: Male
 email: cmickens@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/mickens.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2016-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '42'
 offices:
@@ -17,9 +19,10 @@ offices:
 - classification: district
   address: P.O. Box 427 Brooksville, Mississippi 39739
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/mickens.xml
-- url: http://billstatus.ls.state.ms.us/members/house/mickens.xml
+- url: https://billstatus.ls.state.ms.us/members/house/mickens.xml
   note: homepage
+other_names:
+- name: Carl L. Mickens
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000248

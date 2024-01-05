@@ -2,12 +2,14 @@ id: ocd-person/b90d629d-9f8b-421a-88e3-9f72580cdd37
 name: John Horhn
 given_name: John
 family_name: Horhn
+gender: Male
 email: jhorhn@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/horhn.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 1993-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '26'
 offices:
@@ -18,9 +20,10 @@ offices:
   address: P.O. Box 2030 Jackson, Mississippi 39225
   voice: 601-362-1045
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/horhn.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/horhn.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/horhn.xml
   note: homepage
+other_names:
+- name: John A. Horhn
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000045
