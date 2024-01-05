@@ -1,30 +1,41 @@
 id: ocd-person/c028faa3-479d-440c-b2a5-e4320933c10f
-name: Sarah "Sarita" Austin
-given_name: Sarah
+name: Sarita Austin
+given_name: Sarita
 family_name: Austin
+gender: Female
 email: saustin@leg.state.vt.us
 image: https://legislature.vermont.gov/Documents/Legislators/Austin.Sarah.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2019-01-09'
-  end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-19
+- start_date: 2019-01-09
+  end_date: 2023-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-9-2
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  district: Chittenden-19
+offices:
+- classification: capitol
+  address: Vermont State House;115 State Street;Montpelier, VT 05633
+- classification: district
+  address: 285 Crooked Creek Rd.;Colchester, VT 05446
+  voice: 802-310-4698
 links:
-- url: http://legislature.vermont.gov/people/single/2020/30952
-- url: http://legislature.vermont.gov/people/single/2022/30952
+- url: https://legislature.vermont.gov/people/single/2020/30952
+- url: https://legislature.vermont.gov/people/single/2022/30952
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-9-2.pdf
   note: district map
-- url: http://legislature.vermont.gov/people/single/2024/30952
-  note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Chittenden-19.pdf
   note: district map
+- url: https://legislature.vermont.gov/people/single/2024/30952
+  note: homepage
+other_names:
+- name: Sarah Austin
+- name: Sarah "Sarita" Austin
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/30952
@@ -32,10 +43,3 @@ sources:
 - url: http://legislature.vermont.gov/people/single/2022/30952
 - url: https://legislature.vermont.gov/people/loadAll/2024
 - url: http://legislature.vermont.gov/people/single/2024/30952
-offices:
-- address: Vermont State House;115 State Street;Montpelier, VT 05633
-  classification: capitol
-- address: 285 Crooked Creek Rd.;Colchester, VT 05446
-  voice: 802-310-4698
-  classification: district
-  name: 'District Office #1'
