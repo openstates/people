@@ -2,24 +2,30 @@ id: ocd-person/c924901e-1cc8-4574-ae7c-19f3e52d2031
 name: Mike Bordes
 given_name: Mike
 family_name: Bordes
+gender: Male
 email: mike.bordes@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-11'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 5
+- end_date: 2023-01-11
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 3
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Belknap 5
 offices:
 - classification: district
   address: 20B Kristen Dr. Laconia, NH 03246
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9861
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9861
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9861
+other_names:
+- name: Michael D. Bordes
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

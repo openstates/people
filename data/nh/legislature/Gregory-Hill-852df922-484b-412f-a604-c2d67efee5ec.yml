@@ -1,18 +1,21 @@
 id: ocd-person/852df922-484b-412f-a604-c2d67efee5ec
-name: Gregory G. Hill
-given_name: Gregory
+name: Greg Hill
+given_name: Greg
 family_name: Hill
+gender: Male
 email: greghillnh@gmail.com
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 2
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 3
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Merrimack 2
 offices:
 - classification: district
   address: 1 Knowles Farm Road Northfield, NH 03276-4517
@@ -20,12 +23,15 @@ offices:
 - classification: district
   address: 1 Knowles Farm Road;Northfield, NH 03276-4517
   voice: 603-286-7329
-  name: 'District Office #1'
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=943
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=943
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=943
+other_names:
+- name: Gregory Hill
+- name: Gregory G. Hill
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000168

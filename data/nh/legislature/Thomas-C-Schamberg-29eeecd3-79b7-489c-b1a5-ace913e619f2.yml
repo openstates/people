@@ -1,31 +1,36 @@
 id: ocd-person/29eeecd3-79b7-489c-b1a5-ace913e619f2
-name: Thomas C. Schamberg
-given_name: Thomas
+name: Tom Schamberg
+given_name: Tom
 family_name: Schamberg
-email: Tom.Schamberg@leg.state.nh.us
+gender: Male
+email: tom.schamberg@leg.state.nh.us
+image: ''
 party:
 - name: Democratic
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 6
 - start_date: 2013-01-01
-  end_date: '2022-12-07'
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Merrimack 6
 offices:
 - classification: district
   address: 10 Clarke Road Wilmot, NH 03287-4400
   voice: 603-715-6778
 - classification: district
   address: 10 Clarke Road;Wilmot, NH 03287-4400
-  name: 'District Office #1'
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=771
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=771
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=771
+other_names:
+- name: Thomas C. Schamberg
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000722
