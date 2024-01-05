@@ -3,20 +3,24 @@ name: Phillip Chen
 given_name: Phillip
 family_name: Chen
 gender: Male
+email: assemblymember.chen@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/chen.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-05'
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '59'
+- end_date: 2022-12-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '55'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '59'
+offices: []
 links:
 - url: https://ad55.asmrc.org
 - url: https://ad59.asmrc.org
+- url: https://ad59.asmrc.org/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000530

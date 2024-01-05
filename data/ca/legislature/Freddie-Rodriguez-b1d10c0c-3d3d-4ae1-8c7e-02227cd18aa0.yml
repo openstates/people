@@ -3,17 +3,19 @@ name: Freddie Rodriguez
 given_name: Freddie
 family_name: Rodriguez
 gender: Male
+email: assemblymember.rodriguez@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD52_Rodriguez_0.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-04'
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '53'
+- end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '52'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '53'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 5250 Sacramento, CA 94249-0052

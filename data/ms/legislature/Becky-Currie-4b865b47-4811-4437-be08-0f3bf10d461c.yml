@@ -2,12 +2,14 @@ id: ocd-person/4b865b47-4811-4437-be08-0f3bf10d461c
 name: Becky Currie
 given_name: Becky
 family_name: Currie
+gender: Female
 email: bcurrie@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/currie.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2008-01-08
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '92'
 offices:
@@ -18,8 +20,7 @@ offices:
   address: 407 Oliver Dr Brookhaven, Mississippi 39601
   voice: 601-833-5953
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/currie.xml
-- url: http://billstatus.ls.state.ms.us/members/house/currie.xml
+- url: https://billstatus.ls.state.ms.us/members/house/currie.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

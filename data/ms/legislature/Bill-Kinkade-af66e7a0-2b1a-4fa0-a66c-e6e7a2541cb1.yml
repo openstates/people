@@ -2,12 +2,14 @@ id: ocd-person/af66e7a0-2b1a-4fa0-a66c-e6e7a2541cb1
 name: Bill Kinkade
 given_name: Bill
 family_name: Kinkade
+gender: Male
 email: bkinkade@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/kinkade.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '52'
 offices:
@@ -17,9 +19,10 @@ offices:
 - classification: district
   address: 71 Peachtree Rd Byhalia, Mississippi 38611
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/kinkade.xml
-- url: http://billstatus.ls.state.ms.us/members/house/kinkade.xml
+- url: https://billstatus.ls.state.ms.us/members/house/kinkade.xml
   note: homepage
+other_names:
+- name: William Franklin Kinkade
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000229

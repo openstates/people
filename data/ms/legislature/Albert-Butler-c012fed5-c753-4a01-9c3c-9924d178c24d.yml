@@ -2,12 +2,19 @@ id: ocd-person/c012fed5-c753-4a01-9c3c-9924d178c24d
 name: Albert Butler
 given_name: Albert
 family_name: Butler
+gender: Male
 email: abutler@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/butler_(36th).jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2024-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '37'
 - type: upper
+  start_date: 2010-01-02
+  end_date: 2024-01-01
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '36'
 offices:
@@ -18,8 +25,8 @@ offices:
   address: P. O. Box 614 Port Gibson, Mississippi 39150
   voice: 601-437-4089
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/butler.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/butler_(36th).xml
+- url: https://billstatus.ls.state.ms.us/members/senate/butler.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/butler_(36th).xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

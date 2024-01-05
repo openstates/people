@@ -2,21 +2,21 @@ id: ocd-person/b339d980-af38-4e76-b53c-215c26191cc1
 name: Kevin Horan
 given_name: Kevin
 family_name: Horan
+gender: Male
 email: khoran@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/horan.jpg
 party:
-- end_date: '2020-01-06'
-  name: Democratic
 - name: Republican
 roles:
+- start_date: 2021-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '34'
 - start_date: 2012-01-01
   end_date: 2015-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '24'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  district: '34'
 offices:
 - classification: capitol
   address: Room 400-F P. O. Box 1018;Jackson, MS 39215
@@ -25,9 +25,10 @@ offices:
   address: P.O. Box 2166 Grenada, Mississippi 38901
   voice: 662-226-1817
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/horan.xml
-- url: http://billstatus.ls.state.ms.us/members/house/horan.xml
+- url: https://billstatus.ls.state.ms.us/members/house/horan.xml
   note: homepage
+other_names:
+- name: Mark Kevin Horan
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000257
