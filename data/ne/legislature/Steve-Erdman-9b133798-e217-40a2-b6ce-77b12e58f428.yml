@@ -2,12 +2,14 @@ id: ocd-person/9b133798-e217-40a2-b6ce-77b12e58f428
 name: Steve Erdman
 given_name: Steve
 family_name: Erdman
+gender: Male
 email: serdman@leg.ne.gov
 image: https://www.nebraskalegislature.gov/media/images/senators/dist47/highres/dist47.jpg
 party:
 - name: Nonpartisan
 roles:
-- type: legislature
+- start_date: 2017-01-04
+  type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
   district: '47'
 offices:
@@ -15,9 +17,10 @@ offices:
   address: Room 1124; P.O. Box 94604; Lincoln, NE 68509
   voice: 402-471-2616
 links:
-- url: http://news.legislature.ne.gov/dist47
+- url: https://news.legislature.ne.gov/dist47
+- url: https://news.legislature.ne.gov/dist47/
+- url: https://nebraskalegislature.gov/senators/landing-pages/index.php?District=47
 - url: http://news.legislature.ne.gov/dist47/
-- url: http://nebraskalegislature.gov/senators/landing-pages/index.php?District=47
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NEL000099
@@ -27,6 +30,4 @@ sources:
 - url: http://news.legislature.ne.gov/dist47
 - url: http://news.legislature.ne.gov/dist47/
 - url: http://nebraskalegislature.gov/senators/landing-pages/index.php?District=47
-  note: member detail page
 - url: https://nebraskalegislature.gov/senators/senator_list.php
-  note: members list page

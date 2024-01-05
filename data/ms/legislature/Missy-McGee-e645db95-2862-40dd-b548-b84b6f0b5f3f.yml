@@ -2,12 +2,14 @@ id: ocd-person/e645db95-2862-40dd-b548-b84b6f0b5f3f
 name: Missy McGee
 given_name: Missy
 family_name: McGee
+gender: Female
 email: mmcgee@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/mcgee.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-10-13
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '102'
 offices:
@@ -16,9 +18,10 @@ offices:
 - classification: district
   address: PO Box 19089 Hattiesburg, Mississippi 39404
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
-- url: http://billstatus.ls.state.ms.us/members/house/mcgee.xml
+- url: https://billstatus.ls.state.ms.us/members/house/mcgee.xml
   note: homepage
+other_names:
+- name: Missy Warren McGee
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000296

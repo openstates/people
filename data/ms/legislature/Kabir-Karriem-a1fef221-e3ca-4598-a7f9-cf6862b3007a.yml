@@ -2,12 +2,14 @@ id: ocd-person/a1fef221-e3ca-4598-a7f9-cf6862b3007a
 name: Kabir Karriem
 given_name: Kabir
 family_name: Karriem
+gender: Male
 email: kkarriem@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/karriem.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2016-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '41'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: 400 High Street Jackson, Mississippi 39201
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/karriem.xml
-- url: http://billstatus.ls.state.ms.us/members/house/karriem.xml
+- url: https://billstatus.ls.state.ms.us/members/house/karriem.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

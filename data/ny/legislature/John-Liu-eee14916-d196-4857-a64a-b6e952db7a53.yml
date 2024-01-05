@@ -1,17 +1,21 @@
 id: ocd-person/eee14916-d196-4857-a64a-b6e952db7a53
-name: John C. Liu
+name: John Liu
+given_name: John
+family_name: Liu
+gender: Male
 email: liu@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/2023/08/16/sd16-jl-member-head-shot-160.jpg?itok=IcyVdlES
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/liu-760-article-photonysenate.jpg?itok=Nyrv_a2O
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '16'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '11'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '16'
 offices:
 - classification: capitol
   address: Room 915; Albany,NY 12247
@@ -21,12 +25,14 @@ offices:
 - classification: district
   address: 38-50 Bell Boulevard;Bayside, NY 11361
   voice: 718-765-6675
-  name: 'District Office #1'
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/john-liu/contact
-- url: http://www.nysenate.gov/senators/john-c-liu/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/john-liu/contact
+- url: https://www.nysenate.gov/senators/john-c-liu/contact
+- url: https://www.nysenate.gov/senators/john-c-liu
 other_names:
+- name: John Chun Liu
+- name: John C. Liu
 - name: John Liu
 - name: LIU
 ids:

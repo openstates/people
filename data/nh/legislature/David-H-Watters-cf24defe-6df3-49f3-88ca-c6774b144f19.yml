@@ -1,38 +1,37 @@
 id: ocd-person/cf24defe-6df3-49f3-88ca-c6774b144f19
-name: David H. Watters
+name: David Watters
 given_name: David
 family_name: Watters
-email: David.Watters@leg.state.nh.us
+gender: Male
+email: david.watters@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/Senate/images/senators/04.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2012-12-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '4'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 4
-- start_date: 2013-01-01
-  end_date: 2014-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: '4'
-- start_date: 2015-01-01
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: '4'
 offices:
 - classification: capitol
-  address: Legislative Office Building, Room 101-A 33 North State Street Concord, NH 03301
+  address: Legislative Office Building, Room 101-A 33 North State Street Concord,
+    NH 03301
   voice: 603-271-2104
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district04.aspx
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/Senate/members/webpages/district04.aspx
   note: homepage
-- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district04.aspx
+- url: https://www.gencourt.state.nh.us/Senate/members/webpages/district04.aspx
   note: member detail page
+- url: https://gencourt.state.nh.us/Senate/members/webpages/district04.aspx
 other_names:
+- name: David H. Watters
 - name: David H Watters
 other_identifiers:
 - scheme: legacy_openstates

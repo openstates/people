@@ -1,6 +1,6 @@
 id: ocd-person/9f51689c-7d78-4e84-8a13-8bcd0d8b10ad
-name: John Rizzo
-given_name: John
+name: J.J. Rizzo
+given_name: J.J.
 family_name: Rizzo
 gender: Male
 email: john.rizzo@senate.mo.gov
@@ -8,6 +8,10 @@ image: https://www.senate.mo.gov/18web/wp-content/uploads/2016/12/Rizzo2018-683x
 party:
 - name: Democratic
 roles:
+- start_date: 2017-01-11
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '11'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
@@ -18,16 +22,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '19'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '11'
 offices:
 - classification: capitol
   address: 201 W Capitol Ave, Room 333
   voice: 573-751-3074
 links:
-- url: http://www.senate.mo.gov/mem11
 - url: https://www.senate.mo.gov/mem11
+- url: https://www.senate.mo.gov/mem11
+- url: https://www.senate.mo.gov/Senators/Member/11
+other_names:
+- name: John Joseph Rizzo
+- name: John Rizzo
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MOL000470
