@@ -1,28 +1,33 @@
 id: ocd-person/4c4f4974-0202-43a0-9aba-f41d0f99603a
-name: John C. Janigian
+name: John Janigian
 given_name: John
 family_name: Janigian
-email: John.Janigian@leg.state.nh.us
+gender: Male
+email: john.janigian@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408412.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 25
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 8
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 25
 offices:
 - classification: district
   address: 25 Liberty Street Salem, NH 03079-2437
   voice: 603-770-8230
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8412
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8412
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?member=408412
+other_names:
+- name: John C. Janigian
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001417

@@ -2,27 +2,30 @@ id: ocd-person/5d7f39ae-2cc4-4b36-bd76-828a24bc454d
 name: Juliet Harvey-Bolia
 given_name: Juliet
 family_name: Harvey-Bolia
-email: Juliet.HarveyBolia@leg.state.nh.us
+gender: Female
+email: juliet.harveybolia@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 3
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Belknap 3
 offices:
 - classification: district
   address: 66 Dunlop Drive Tilton, NH 03276
 - classification: district
   address: 66 Dunlop Drive;Tilton, NH 03276
-  name: 'District Office #1'
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9865
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9865
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9865
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

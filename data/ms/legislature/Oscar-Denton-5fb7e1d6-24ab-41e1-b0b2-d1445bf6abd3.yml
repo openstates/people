@@ -2,12 +2,14 @@ id: ocd-person/5fb7e1d6-24ab-41e1-b0b2-d1445bf6abd3
 name: Oscar Denton
 given_name: Oscar
 family_name: Denton
+gender: Male
 email: odenton@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/denton.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2013-11-29
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '55'
 offices:
@@ -18,8 +20,7 @@ offices:
   address: 5024 Rollingwood E. Drive Vicksburg, Mississippi 39180
   voice: 601-638-4007
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/denton.xml
-- url: http://billstatus.ls.state.ms.us/members/house/denton.xml
+- url: https://billstatus.ls.state.ms.us/members/house/denton.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

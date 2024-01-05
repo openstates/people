@@ -1,28 +1,33 @@
 id: ocd-person/d0d7f906-c48f-4a61-943c-1faf0162b329
-name: Laurie J. Sanborn
+name: Laurie Sanborn
 given_name: Laurie
 family_name: Sanborn
+gender: Female
 email: repsanborn@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377016.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-04'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 2
+- end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 41
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 2
 offices:
 - classification: district
   address: 71 Eagle Drive Bedford, NH 03110-4414
   voice: 603-682-1557
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=651
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=651
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377016
+other_names:
+- name: Laurie J. Sanborn
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000330

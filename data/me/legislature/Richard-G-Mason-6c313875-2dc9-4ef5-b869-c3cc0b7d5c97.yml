@@ -1,19 +1,21 @@
 id: ocd-person/6c313875-2dc9-4ef5-b869-c3cc0b7d5c97
-name: Richard G. Mason
-given_name: Richard
+name: Rick Mason
+given_name: Rick
 family_name: Mason
-email: Richard.Mason@legislature.maine.gov
+gender: Male
+email: richard.mason@legislature.maine.gov
 image: https://legislature.maine.gov/house/house/Repository/MemberProfiles/00d3edf9-afa9-42a9-894e-6f123441a00b_MasonNEW.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '97'
 - end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '56'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:me/government
-  district: '97'
 offices:
 - classification: capitol
   address: House Minority Office Room 332, State House 2 State House Station Augusta,
@@ -23,9 +25,10 @@ offices:
   voice: 207-577-1001
 links:
 - url: https://legislature.maine.gov/house/house/MemberProfiles/Details/158
-- url: https://legislature.maine.gov/house/house/MemberProfiles/Details/158
   note: homepage
+- url: https://mainehousegop.org/members/mason-richard/
 other_names:
+- name: Richard G. Mason
 - name: Richard MASON
 other_identifiers:
 - scheme: legacy_openstates

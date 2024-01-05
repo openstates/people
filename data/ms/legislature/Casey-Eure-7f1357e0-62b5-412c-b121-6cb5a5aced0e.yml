@@ -2,12 +2,14 @@ id: ocd-person/7f1357e0-62b5-412c-b121-6cb5a5aced0e
 name: Casey Eure
 given_name: Casey
 family_name: Eure
+gender: Male
 email: ceure@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/eure.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2011-02-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '116'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: 11839 Sleeping Deer Lane Saucier, Mississippi 39574
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/eure.xml
-- url: http://billstatus.ls.state.ms.us/members/house/eure.xml
+- url: https://billstatus.ls.state.ms.us/members/house/eure.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

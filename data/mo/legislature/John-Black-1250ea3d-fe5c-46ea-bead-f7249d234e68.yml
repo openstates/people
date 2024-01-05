@@ -3,25 +3,26 @@ name: John Black
 given_name: John
 family_name: Black
 gender: Male
-email: John.Black@house.mo.gov
-image: https://images.house.mo.gov/MemberPhoto.aspx?id=2114
+email: john.black@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=2114
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-29'
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '129'
+- end_date: 2022-12-29
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '137'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '129'
 offices:
 - classification: capitol
   address: MO House of Representatives; 201 West Capitol Avenue; Room 410-B; Jefferson
     City MO 65101
   voice: 573-751-1167
 links:
-- url: http://www.house.mo.gov/MemberDetails.aspx?district=137
+- url: https://www.house.mo.gov/MemberDetails.aspx?district=137
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=137
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=129
 other_names:

@@ -2,29 +2,31 @@ id: ocd-person/cc6881df-b386-488d-bbc1-71e71b808306
 name: Joe Angelino
 given_name: Joe
 family_name: Angelino
+gender: Male
 email: angelinoj@nyassembly.gov
 image: https://assembly.state.ny.us/write/upload/member_files/121/headshot/121.jpg?hst=1660074724
 party:
-- name: Republican
+- name: Republican/Conservative/Independence
 roles:
-- end_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '122'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '121'
+- end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '122'
 offices:
 - classification: capitol
   address: LOB 549; Albany, NY 12248
   voice: 518-455-5741
-  fax: 518-455-5864
 - classification: district
   address: 1 Kattelville Road; Suite 1; Binghamton, NY 13901
   voice: 607-648-6080
-  fax: 607-648-6089
 links:
 - url: https://assembly.state.ny.us/mem/Joe-Angelino
+- url: https://nyassembly.gov/mem/Joe-Angelino
+other_names:
+- name: Joseph Angelino
 sources:
 - url: https://assembly.state.ny.us/mem/Joe-Angelino

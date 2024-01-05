@@ -1,28 +1,34 @@
 id: ocd-person/ce46c52e-8598-4888-8a1f-d16b283a7238
-name: Robert J. Lynn
+name: Bob Lynn
 given_name: Bob
 family_name: Lynn
+gender: Male
 email: rjlynn4@gmail.com
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 17
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 7
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 17
 offices:
 - classification: district
-  address: State House-House Member Mail 107 North Main Street Concord, NH 03301
+  address: Windham, NH 03087
   voice: 603-598-1899
 links:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9937
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9937
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9937
 other_names:
+- name: Robert J. Lynn
 - name: Bob J. Lynn
 sources:
+- url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9937
 extras:

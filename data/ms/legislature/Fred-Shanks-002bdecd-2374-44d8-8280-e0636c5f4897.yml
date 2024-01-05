@@ -2,12 +2,14 @@ id: ocd-person/002bdecd-2374-44d8-8280-e0636c5f4897
 name: Fred Shanks
 given_name: Fred
 family_name: Shanks
+gender: Male
 email: fshanks@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/shanks.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2018-03-19
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '60'
 offices:
@@ -17,8 +19,7 @@ offices:
   address: 107 Lori Circle Brandon, Mississippi 39042
   voice: 601-540-0041
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
-- url: http://billstatus.ls.state.ms.us/members/house/shanks.xml
+- url: https://billstatus.ls.state.ms.us/members/house/shanks.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
