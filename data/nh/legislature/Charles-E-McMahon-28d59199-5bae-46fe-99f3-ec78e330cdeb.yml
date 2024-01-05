@@ -1,28 +1,33 @@
 id: ocd-person/28d59199-5bae-46fe-99f3-ec78e330cdeb
-name: Charles E. McMahon
+name: Charles McMahon
 given_name: Charles
 family_name: McMahon
+gender: Male
 email: cmcmahon55@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376498.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 17
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 7
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 17
 offices:
 - classification: district
   address: 11 Floral Street Windham, NH 03087-1024
   voice: 603-432-8877
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=489
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=489
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=376498
+other_names:
+- name: Charles E. McMahon
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000243

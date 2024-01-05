@@ -2,18 +2,20 @@ id: ocd-person/20510bb3-edcd-4cb8-a41a-e0114e6215c9
 name: Chris Johnson
 given_name: Chris
 family_name: Johnson
+gender: Male
 email: chjohnson@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/johnson.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-01-07'
+- start_date: 2020-01-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '45'
+- end_date: 2020-01-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '87'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  district: '45'
 offices:
 - classification: capitol
   address: Room 213 P. O. Box 1018;Jackson, MS 39215
@@ -21,9 +23,8 @@ offices:
 - classification: district
   address: P.O. Box 18247 Hattiesburg, Mississippi 39404
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/johnson_(87th).xml
-- url: http://billstatus.ls.state.ms.us/members/senate/johnson.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/johnson.xml
+- url: https://billstatus.ls.state.ms.us/members/house/johnson_(87th).xml
+- url: https://billstatus.ls.state.ms.us/members/senate/johnson.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

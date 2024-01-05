@@ -1,33 +1,38 @@
 id: ocd-person/d6200a81-3d99-4ff7-93e0-e2f3b49cfd65
-name: Dennis J. Malloy
+name: Dennis Malloy
 given_name: Dennis
 family_name: Malloy
+gender: Male
 email: dennis.malloy@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377137.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 24
 - start_date: 2013-01-01
   end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 4
-- end_date: '2022-12-07'
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 23
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 24
 offices:
 - classification: district
   address: 10 Van Etten Drive Greenland, NH 03840-2182
   voice: 603-970-1827
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=742
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=742
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377137
+other_names:
+- name: Dennis J. Malloy
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001428

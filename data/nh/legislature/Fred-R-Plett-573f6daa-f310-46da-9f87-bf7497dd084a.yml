@@ -1,28 +1,34 @@
 id: ocd-person/573f6daa-f310-46da-9f87-bf7497dd084a
-name: Fred R. Plett
+name: Fred Plett
 given_name: Fred
 family_name: Plett
-email: Fred.Plett@leg.state.nh.us
+gender: Male
+email: fred.plett@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408952.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 29
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 29
 offices:
 - classification: district
   address: 29 My Way Goffstown, NH 03045-6613
   voice: 603-660-0732
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9184
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9184
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9184
+other_names:
+- name: Frederick Randall Plett
+- name: Fred R. Plett
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408952
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt

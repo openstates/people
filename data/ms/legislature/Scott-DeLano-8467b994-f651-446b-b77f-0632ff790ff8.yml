@@ -2,18 +2,20 @@ id: ocd-person/8467b994-f651-446b-b77f-0632ff790ff8
 name: Scott DeLano
 given_name: Scott
 family_name: DeLano
+gender: Male
 email: sdelano@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/delano.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-01-07'
+- start_date: 2020-01-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '50'
+- end_date: 2020-01-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '117'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  district: '50'
 offices:
 - classification: capitol
   address: Room 213 P. O. Box 1018;Jackson, MS 39215
@@ -22,9 +24,8 @@ offices:
   address: P.O. Box 4524 Biloxi, Mississippi 39535
   voice: 228-388-8087
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/delano.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/delano.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/delano.xml
+- url: https://billstatus.ls.state.ms.us/members/house/delano.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/delano.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

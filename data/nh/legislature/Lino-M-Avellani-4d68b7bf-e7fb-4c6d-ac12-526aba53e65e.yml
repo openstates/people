@@ -1,27 +1,32 @@
 id: ocd-person/4d68b7bf-e7fb-4c6d-ac12-526aba53e65e
-name: Lino M. Avellani
+name: Lino Avellani
 given_name: Lino
 family_name: Avellani
+gender: Male
 email: lino.avellani@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377205.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Carroll 4
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 5
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Carroll 4
 offices:
 - classification: district
   address: P.O. Box 516, Sanbornville, NH 03872
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=815
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=815
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377205
+other_names:
+- name: Lino M. Avellani
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001067

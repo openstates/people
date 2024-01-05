@@ -2,12 +2,14 @@ id: ocd-person/eaa39996-c8a7-4568-b01e-d7685667227b
 name: Mike Thompson
 given_name: Mike
 family_name: Thompson
-email: MThompson@senate.ms.gov
+gender: Male
+email: mthompson@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/thompson.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2020-01-07
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '48'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: P. O. Box 280 Gulfport, Mississippi 39502
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/thompson.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/thompson.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/thompson.xml
   note: homepage
 sources:
 - url: http://billstatus.ls.state.ms.us/members/senate/thompson.xml

@@ -1,29 +1,35 @@
 id: ocd-person/22809c1b-0676-4ad9-8d0e-8a0a9d19063a
-name: Thomas L. Buco
-given_name: Thomas
+name: Tom Buco
+given_name: Tom
 family_name: Buco
-email: Tom.Buco@leg.state.nh.us
+gender: Male
+email: tom.buco@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376645.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2022-12-07'
-  end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Carroll 1
+- start_date: 2022-12-07
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Carroll 2
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Carroll 1
 offices:
 - classification: district
   address: PO Box 3149 Conway, NH 03818-3149
   voice: 603-986-5629
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=523
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=523
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=376645
+other_names:
+- name: Thomas Buco
+- name: Thomas L. Buco
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000464

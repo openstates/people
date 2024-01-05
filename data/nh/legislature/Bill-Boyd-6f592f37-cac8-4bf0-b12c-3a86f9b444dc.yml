@@ -2,26 +2,29 @@ id: ocd-person/6f592f37-cac8-4bf0-b12c-3a86f9b444dc
 name: Bill Boyd
 given_name: Bill
 family_name: Boyd
-email: Bill.Boyd@leg.state.nh.us
+gender: Male
+email: bill.boyd@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/409055.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2021-04-16'
-  end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 12
+- start_date: 2021-04-16
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 21
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 12
 offices:
 - classification: district
   address: 139 Joppa Road Merrimack, NH 03054
   voice: 603-660-6077
 links:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=10347
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=10347
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=10347
 sources:
 - url: http://gencourt.state.nh.us/house/members/default.aspx
 - url: http://gencourt.state.nh.us/downloads/members.txt

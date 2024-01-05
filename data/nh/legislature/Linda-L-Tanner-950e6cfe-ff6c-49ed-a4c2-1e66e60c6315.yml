@@ -1,28 +1,33 @@
 id: ocd-person/950e6cfe-ff6c-49ed-a4c2-1e66e60c6315
-name: Linda L. Tanner
+name: Linda Tanner
 given_name: Linda
 family_name: Tanner
+gender: Female
 email: linda.tanner@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377179.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-06'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 5
+- end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 9
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Sullivan 5
 offices:
 - classification: district
   address: PO Box 267 Georges Mills, NH 03751-0267
   voice: 603-763-4471
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=784
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=784
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377179
+other_names:
+- name: Linda L. Tanner
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000758

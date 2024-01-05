@@ -1,12 +1,15 @@
 id: ocd-person/e7684f57-ee0c-48ea-8157-8f04c2b8e685
-name: Robert L. Sanders
+name: Robert Sanders
+given_name: Robert
 family_name: Sanders
+gender: Male
 email: rsanders@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/sanders.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2021-11-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '29'
 offices:
@@ -16,8 +19,10 @@ offices:
   address: 925 S Martin Luther King Dr Cleveland, Mississippi 38732
   voice: 662-719-9906
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/sanders.xml
+- url: https://billstatus.ls.state.ms.us/members/house/sanders.xml
   note: homepage
+other_names:
+- name: Robert L. Sanders
 sources:
 - url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
 - url: http://billstatus.ls.state.ms.us/members/house/sanders.xml
