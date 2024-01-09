@@ -8,13 +8,14 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/HOFFMAN.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '15'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '12'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '15'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 306;Phoenix, AZ 85007
@@ -24,6 +25,7 @@ links:
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2066
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2130
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=128&legislator=2130
+- url: https://www.azleg.gov/senate-member/?legislature=56&legislator=2130
 sources:
 - url: http://www.azleg.gov/MemberRoster/?body=H
 - url: https://www.azleg.gov/memberroster/?body=H

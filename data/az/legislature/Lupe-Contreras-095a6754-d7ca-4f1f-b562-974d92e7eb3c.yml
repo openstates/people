@@ -1,6 +1,6 @@
 id: ocd-person/095a6754-d7ca-4f1f-b562-974d92e7eb3c
-name: Lupe Contreras
-given_name: Lupe
+name: Lupe Chavira Contreras
+given_name: Lupe Chavira
 family_name: Contreras
 gender: Male
 email: lcontreras@azleg.gov
@@ -8,13 +8,14 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/House/CONTRERAS_L.gif
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '22'
+- end_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '19'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '22'
 offices:
 - classification: capitol
   address: House of Representatives;1700 West Washington;Room 320;Phoenix, AZ 85007
@@ -25,6 +26,9 @@ links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1973
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2156
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=128&legislator=2156
+- url: https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2156
+other_names:
+- name: Lupe Contreras
 ids:
   twitter: sencontreras
   facebook: FriendsForLupeContreras
