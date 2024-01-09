@@ -2,19 +2,21 @@ id: ocd-person/45d0b998-57ed-4c6f-ae22-bdbc4262f3e3
 name: Laurin Hendrix
 given_name: Laurin
 family_name: Hendrix
+gender: Male
 email: lhendrix@azleg.gov
 image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/House/HENDRIX.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2009-01-01'
-  end_date: '2010-12-31'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '14'
+- start_date: 2009-01-01
+  end_date: 2010-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '22'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '14'
 offices:
 - classification: capitol
   address: House of Representatives;1700 West Washington;Room 312;Phoenix, AZ 85007
@@ -22,6 +24,7 @@ offices:
 links:
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2172
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=128&legislator=2172
+- url: https://www.azleg.gov/house-member/?legislature=56&session=127&legislator=2172
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AZL000061

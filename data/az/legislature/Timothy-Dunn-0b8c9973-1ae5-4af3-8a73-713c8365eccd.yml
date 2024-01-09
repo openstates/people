@@ -1,6 +1,6 @@
 id: ocd-person/0b8c9973-1ae5-4af3-8a73-713c8365eccd
-name: Tim Dunn
-given_name: Timothy
+name: Timothy Marvin Dunn
+given_name: Timothy Marvin
 family_name: Dunn
 gender: Male
 email: tdunn@azleg.gov
@@ -8,13 +8,14 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/House/DUNN.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '25'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '13'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '25'
 offices:
 - classification: capitol
   address: House of Representatives;1700 West Washington;Room 114;Phoenix, AZ 85007
@@ -23,7 +24,9 @@ links:
 - url: https://www.azleg.gov/House/House-member/?legislature=54&session=122&legislator=1890
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2031
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2160
+- url: https://www.azleg.gov/house-member/?legislature=55&legislator=2031
 other_names:
+- name: Tim Dunn
 - name: Timothy M. Dunn
 - name: Timothy M Dunn
 ids:

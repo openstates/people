@@ -1,6 +1,6 @@
 id: ocd-person/6e8f2c0d-c9d3-4cb5-ae59-5264cb6d61a7
-name: David Livingston
-given_name: David
+name: David Alan Livingston
+given_name: David Alan
 family_name: Livingston
 gender: Male
 email: dlivingston@azleg.gov
@@ -8,17 +8,18 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/House/LIVINGSTON.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-01-14'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '28'
+- end_date: 2018-01-14
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '22'
-- end_date: '2023-01-08'
+- end_date: 2023-01-08
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '22'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '28'
 offices:
 - classification: capitol
   address: House of Representatives;1700 West Washington;Room 222;Phoenix, AZ 85007
@@ -31,6 +32,9 @@ links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1976
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=127&legislator=2175
 - url: https://www.azleg.gov/House/House-member/?legislature=56&session=128&legislator=2175
+- url: https://www.azleg.gov/senate-member/?legislature=55&legislator=1976
+other_names:
+- name: David Livingston
 ids:
   twitter: livingstonld22
   facebook: votelivingston
