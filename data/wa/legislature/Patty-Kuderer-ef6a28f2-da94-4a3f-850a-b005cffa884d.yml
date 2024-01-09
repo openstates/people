@@ -1,6 +1,6 @@
 id: ocd-person/ef6a28f2-da94-4a3f-850a-b005cffa884d
 name: Patty Kuderer
-given_name: Patty
+given_name: Patricia
 family_name: Kuderer
 gender: Female
 email: patty.kuderer@leg.wa.gov
@@ -8,12 +8,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=21520
 party:
 - name: Democratic
 roles:
+- start_date: 2017-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '48'
 - start_date: 2015-01-01
   end_date: 2018-12-31
   type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  district: '48'
-- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '48'
 offices:
@@ -21,8 +22,9 @@ offices:
   address: 223 John A. Cherberg Building; PO Box 40448; Olympia, WA 98504
   voice: 360-786-7694
 links:
-- url: http://sdc.wastateleg.org/Kuderer/
-- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://sdc.wastateleg.org/Kuderer/
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://senatedemocrats.wa.gov/kuderer/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000256
@@ -33,5 +35,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/84c9ebce-40db-47ff-ad39-d3c588113c1f
 sources:
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate
