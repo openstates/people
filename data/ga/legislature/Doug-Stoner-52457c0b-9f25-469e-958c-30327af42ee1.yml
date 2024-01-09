@@ -2,12 +2,14 @@ id: ocd-person/52457c0b-9f25-469e-958c-30327af42ee1
 name: Doug Stoner
 given_name: Doug
 family_name: Stoner
+gender: Male
 email: doug.stoner@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/stoner-doug-45.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '40'
 offices:
@@ -17,8 +19,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/45?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/45
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

@@ -2,12 +2,14 @@ id: ocd-person/c0b205e2-1542-4802-896d-fa7b2b6fc4d9
 name: Brent Cox
 given_name: Brent
 family_name: Cox
+gender: Male
 email: brent.cox@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/cox-brent-5021.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '28'
 offices:
@@ -17,8 +19,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5021?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5021
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

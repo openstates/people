@@ -1,6 +1,6 @@
 id: ocd-person/97a002db-6151-4fdf-9bce-013a6344764f
-name: Will Wade
-given_name: Will
+name: William Solomon Wade
+given_name: William Solomon
 family_name: Wade
 gender: Male
 email: will.wade@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/wade-will-49
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-01-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '9'
 offices:
@@ -21,12 +22,15 @@ links:
 - url: https://www.legis.ga.gov/members/house/4988?session=1029
 - url: https://www.legis.ga.gov/members/house/4988?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4988
+other_names:
+- name: Will Wade
 sources:
 - url: https://www.legis.ga.gov/members/house/4988?session=1029
-- url: https://www.legis.ga.gov/members/house/4988?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4988?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4988?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
