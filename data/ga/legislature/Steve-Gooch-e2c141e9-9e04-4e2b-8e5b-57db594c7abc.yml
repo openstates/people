@@ -1,39 +1,43 @@
 id: ocd-person/e2c141e9-9e04-4e2b-8e5b-57db594c7abc
-name: Steve Gooch
-given_name: Steve
+name: Stephen Wade Gooch
+given_name: Stephen Wade
 family_name: Gooch
 gender: Male
-email: missing@invalid.no
+email: steve.gooch@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/gooch-steve-752.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2011-01-10
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '51'
 offices:
 - classification: capitol
   address: 236 State Capitol; Atlanta, GA 30334
   voice: 404-656-9221
-  fax: 404-651-6768
 - classification: district
   address: P.O. Box 600; Dahlonega, GA 30533
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=752&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=752&Session=27
 - url: https://www.legis.ga.gov/members/senate/752?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/752?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
+other_names:
+- name: Steve Gooch
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000017
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=752&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=752&Session=27
 - url: https://www.legis.ga.gov/members/senate/752?session=1029
-- url: https://www.legis.ga.gov/members/senate/752?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/752?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/752?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

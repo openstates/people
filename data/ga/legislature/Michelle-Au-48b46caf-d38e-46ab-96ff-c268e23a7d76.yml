@@ -1,6 +1,6 @@
 id: ocd-person/48b46caf-d38e-46ab-96ff-c268e23a7d76
-name: Michelle Au
-given_name: Michelle
+name: Michelle Hsiao Au
+given_name: Michelle Hsiao
 family_name: Au
 gender: Female
 email: michelle.au@house.ga.gov
@@ -8,14 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/au-michelle-
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '48'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '50'
+- end_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '48'
 offices:
 - classification: capitol
   address: 611-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -26,12 +26,15 @@ links:
 - url: https://www.legis.ga.gov/members/senate/4983?session=1029
 - url: https://www.legis.ga.gov/members/house/4983?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4983
+other_names:
+- name: Michelle Au
 sources:
 - url: https://www.legis.ga.gov/members/senate/4983?session=1029
-- url: https://www.legis.ga.gov/members/senate/4983?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/4983?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4983?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

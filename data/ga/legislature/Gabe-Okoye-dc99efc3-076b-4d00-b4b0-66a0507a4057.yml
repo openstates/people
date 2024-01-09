@@ -2,12 +2,14 @@ id: ocd-person/dc99efc3-076b-4d00-b4b0-66a0507a4057
 name: Gabe Okoye
 given_name: Gabe
 family_name: Okoye
+gender: Male
 email: gabe.okoye@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/okoye-gabe-5041.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '102'
 offices:
@@ -19,8 +21,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5041?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5041
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

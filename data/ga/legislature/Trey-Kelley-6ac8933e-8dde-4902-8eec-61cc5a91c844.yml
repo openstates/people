@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/kelley-trey-
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '16'
 offices:
@@ -18,21 +19,24 @@ offices:
 - classification: district
   address: P.O. Box 206; Cedartown, GA 30125
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=825&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=825&Session=27
 - url: https://www.legis.ga.gov/members/house/825?session=1029
 - url: https://www.legis.ga.gov/members/house/825?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/825
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000317
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=825&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=825&Session=27
 - url: https://www.legis.ga.gov/members/house/825?session=1029
-- url: https://www.legis.ga.gov/members/house/825?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/825?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/825?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

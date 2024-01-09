@@ -2,12 +2,14 @@ id: ocd-person/c4c6c741-0cb4-4179-b46d-9983421b8fdd
 name: Mitchell Horner
 given_name: Mitchell
 family_name: Horner
+gender: Male
 email: mitchell.horner@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/horner-mitchell-5018.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '3'
 offices:
@@ -17,8 +19,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5018?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5018
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

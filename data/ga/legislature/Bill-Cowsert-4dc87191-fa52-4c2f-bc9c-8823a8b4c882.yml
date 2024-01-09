@@ -1,6 +1,6 @@
 id: ocd-person/4dc87191-fa52-4c2f-bc9c-8823a8b4c882
-name: Bill Cowsert
-given_name: Bill
+name: William Stone Cowsert
+given_name: William Stone
 family_name: Cowsert
 gender: Male
 email: bill.cowsert@senate.ga.gov
@@ -8,34 +8,37 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/cowsert-bill
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2007-01-02
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '46'
 offices:
 - classification: capitol
   address: 432 State Capitol; Atlanta, GA 30334
   voice: 404-463-1366
-  fax: 404-463-5547
 - classification: district
   address: P.O. Box 512; Athens, GA 30603
   voice: 706-543-7700
-  fax: 706-543-7731
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
-- url: https://www.legis.ga.gov/members/senate/9?session=1029
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: https://www.legis.ga.gov/members/senate/9?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/9?session=1029
+other_names:
+- name: Bill Cowsert
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000009
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: https://www.legis.ga.gov/members/senate/9?session=1029
-- url: https://www.legis.ga.gov/members/senate/9?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/9?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/9?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

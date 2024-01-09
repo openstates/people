@@ -1,13 +1,15 @@
 id: ocd-person/dbb81f07-2181-48dd-b383-19870e08d4fd
-name: Omari Crawford
-given_name: Omari
+name: Omari J. Crawford
+given_name: Omari J.
 family_name: Crawford
+gender: Male
 email: omari.crawford@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/crawford-omari-5036.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '84'
 offices:
@@ -17,8 +19,11 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5036?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5036
+other_names:
+- name: Omari Crawford
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
