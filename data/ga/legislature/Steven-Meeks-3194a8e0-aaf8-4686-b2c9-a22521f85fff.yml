@@ -1,6 +1,6 @@
 id: ocd-person/3194a8e0-aaf8-4686-b2c9-a22521f85fff
-name: Steven Meeks
-given_name: Steven
+name: Steven A. Meeks
+given_name: Steven A.
 family_name: Meeks
 gender: Male
 email: steven.meeks@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/meeks-steven
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2019-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '178'
 offices:
@@ -18,18 +19,23 @@ offices:
 - classification: district
   address: P.O. Box 178; Screven, GA 31560
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4961&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4961&Session=27
 - url: https://www.legis.ga.gov/members/house/4961?session=1029
 - url: https://www.legis.ga.gov/members/house/4961?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4961
+other_names:
+- name: Steven Meeks
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4961&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4961&Session=27
 - url: https://www.legis.ga.gov/members/house/4961?session=1029
-- url: https://www.legis.ga.gov/members/house/4961?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4961?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4961?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

@@ -1,6 +1,6 @@
 id: ocd-person/594aa971-500b-42a4-9d7a-1ceb4c029220
-name: Jason Ridley
-given_name: Jason
+name: Jason Thomas Ridley
+given_name: Jason Thomas
 family_name: Ridley
 gender: Male
 email: jason.ridley@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/ridley-jason
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '6'
 offices:
@@ -18,21 +19,26 @@ offices:
 - classification: district
   address: P.O. Box 2010; Chatsworth, GA 30705
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4883&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4883&Session=27
 - url: https://www.legis.ga.gov/members/house/4883?session=1029
 - url: https://www.legis.ga.gov/members/house/4883?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4883
+other_names:
+- name: Jason Ridley
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000467
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4883&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4883&Session=27
 - url: https://www.legis.ga.gov/members/house/4883?session=1029
-- url: https://www.legis.ga.gov/members/house/4883?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4883?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4883?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

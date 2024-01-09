@@ -1,6 +1,6 @@
 id: ocd-person/078246e9-90b8-43aa-bb92-d7016f517b8e
-name: Marty Harbin
-given_name: Marty
+name: Maurice H. Harbin
+given_name: Maurice H.
 family_name: Harbin
 gender: Male
 email: marty.harbin@senate.ga.gov
@@ -8,32 +8,36 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/harbin-marty
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2015-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '16'
 offices:
 - classification: capitol
   address: 302-B CLOB; Atlanta, GA 30334
   voice: 404-656-0078
-  fax: 404-656-6484
 - classification: district
   address: 215 Greencastle Road; Tyrone, GA 30290
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=850&Session=27
-- url: https://www.legis.ga.gov/members/senate/850?session=1029
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=850&Session=27
 - url: https://www.legis.ga.gov/members/senate/850?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/850?session=1029
+other_names:
+- name: Marty Harbin
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000398
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=850&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=850&Session=27
 - url: https://www.legis.ga.gov/members/senate/850?session=1029
-- url: https://www.legis.ga.gov/members/senate/850?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/850?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/850?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

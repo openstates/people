@@ -1,6 +1,6 @@
 id: ocd-person/713cac52-0a57-4baa-8273-6eeca5b491df
-name: John Carson
-given_name: John
+name: John K. Carson
+given_name: John K.
 family_name: Carson
 gender: Male
 email: john.carson@house.ga.gov
@@ -19,12 +19,15 @@ offices:
   address: 3605 Sandy Plains Road, Suite 240-123; Marietta, GA 30066
   voice: 404-520-8826
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
 - url: https://www.legis.ga.gov/members/house/795?session=1029
 - url: https://www.legis.ga.gov/members/house/795?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/795
+other_names:
+- name: John Carson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000234
@@ -33,11 +36,13 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000257
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=795&Session=27
 - url: https://www.legis.ga.gov/members/house/795?session=1029
-- url: https://www.legis.ga.gov/members/house/795?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/795?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/795?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

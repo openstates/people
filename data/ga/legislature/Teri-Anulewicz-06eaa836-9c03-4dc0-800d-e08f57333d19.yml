@@ -1,6 +1,6 @@
 id: ocd-person/06eaa836-9c03-4dc0-800d-e08f57333d19
-name: Teri Anulewicz
-given_name: Teri
+name: Teri Lippincott Anulewicz
+given_name: Teri Lippincott
 family_name: Anulewicz
 gender: Female
 email: teri.anulewicz@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/anulewicz-te
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-11-27
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '42'
 offices:
@@ -18,21 +19,26 @@ offices:
 - classification: district
   address: P.O. Box 1385; Smyrna, GA 30081
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4915&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4915&Session=27
 - url: https://www.legis.ga.gov/members/house/4915?session=1029
 - url: https://www.legis.ga.gov/members/house/4915?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4915
+other_names:
+- name: Teri Anulewicz
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000480
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4915&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4915&Session=27
 - url: https://www.legis.ga.gov/members/house/4915?session=1029
-- url: https://www.legis.ga.gov/members/house/4915?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4915?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4915?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

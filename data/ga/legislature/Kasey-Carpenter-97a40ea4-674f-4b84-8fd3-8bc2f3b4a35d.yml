@@ -1,6 +1,6 @@
 id: ocd-person/97a40ea4-674f-4b84-8fd3-8bc2f3b4a35d
-name: Kasey Carpenter
-given_name: Kasey
+name: Kasey Scott Carpenter
+given_name: Kasey Scott
 family_name: Carpenter
 gender: Male
 email: kasey.carpenter@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/carpenter-ka
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-11-20
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '4'
 offices:
@@ -18,21 +19,26 @@ offices:
 - classification: district
   address: PO Box 1144; Dalton, GA 30722
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4911&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4911&Session=27
 - url: https://www.legis.ga.gov/members/house/4911?session=1029
 - url: https://www.legis.ga.gov/members/house/4911?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4911
+other_names:
+- name: Kasey Carpenter
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000478
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4911&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4911&Session=27
 - url: https://www.legis.ga.gov/members/house/4911?session=1029
-- url: https://www.legis.ga.gov/members/house/4911?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4911?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4911?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

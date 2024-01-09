@@ -1,6 +1,6 @@
 id: ocd-person/d40576ac-fbc0-4b42-98ee-f6362063784d
-name: Buddy DeLoach
-given_name: Buddy
+name: Homer M. DeLoach
+given_name: Homer M.
 family_name: DeLoach
 gender: Male
 email: buddy.deloach@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/deloach-budd
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-01-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '167'
 offices:
@@ -21,12 +22,15 @@ links:
 - url: https://www.legis.ga.gov/members/house/303?session=1029
 - url: https://www.legis.ga.gov/members/house/303?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/303
+other_names:
+- name: Buddy DeLoach
 sources:
 - url: https://www.legis.ga.gov/members/house/303?session=1029
-- url: https://www.legis.ga.gov/members/house/303?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/303?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/303?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

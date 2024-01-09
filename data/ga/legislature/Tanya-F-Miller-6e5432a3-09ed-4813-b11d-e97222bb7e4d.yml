@@ -1,13 +1,15 @@
 id: ocd-person/6e5432a3-09ed-4813-b11d-e97222bb7e4d
-name: Tanya F. Miller
-given_name: Tanya
+name: Tanya Felecia Miller
+given_name: Tanya Felecia
 family_name: Miller
+gender: Female
 email: tanya.miller@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/miller-tanya-f-5029.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '62'
 offices:
@@ -17,8 +19,12 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5029?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5029
+other_names:
+- name: Tanya Miller
+- name: Tanya F. Miller
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

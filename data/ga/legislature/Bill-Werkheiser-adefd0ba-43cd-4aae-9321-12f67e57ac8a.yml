@@ -1,6 +1,6 @@
 id: ocd-person/adefd0ba-43cd-4aae-9321-12f67e57ac8a
-name: Bill Werkheiser
-given_name: Bill
+name: William A. Werkheiser
+given_name: William A.
 family_name: Werkheiser
 gender: Male
 email: bill.werkheiser@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/werkheiser-b
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2015-01-12
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '157'
 offices:
@@ -19,23 +20,28 @@ offices:
   address: P.O. Box 27; Glennville, GA 30427
   voice: 912-237-0145
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=863&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=863&Session=27
 - url: https://www.legis.ga.gov/members/house/863?session=1029
 - url: https://www.legis.ga.gov/members/house/863?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/863
+other_names:
+- name: Bill Werkheiser
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000415
 - scheme: legacy_openstates
   identifier: GAL000423
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=863&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=863&Session=27
 - url: https://www.legis.ga.gov/members/house/863?session=1029
-- url: https://www.legis.ga.gov/members/house/863?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/863?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/863?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

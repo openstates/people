@@ -1,6 +1,6 @@
 id: ocd-person/9e417b67-da09-4516-b858-6b2458f53633
-name: Frank Ginn
-given_name: Frank
+name: Franklin Joseph Ginn
+given_name: Franklin Joseph
 family_name: Ginn
 gender: Male
 email: frank.ginn@senate.ga.gov
@@ -8,33 +8,37 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/ginn-frank-7
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2011-01-10
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '47'
 offices:
 - classification: capitol
   address: 121-I State Capitol; Atlanta, GA 30334
   voice: 404-656-4700
-  fax: 404-657-3248
 - classification: district
   address: P.O. Box 1136; Danielsville, GA 30633
   voice: 706-680-4466
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=751&Session=27
-- url: https://www.legis.ga.gov/members/senate/751?session=1029
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=751&Session=27
 - url: https://www.legis.ga.gov/members/senate/751?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/751?session=1029
+other_names:
+- name: Frank Ginn
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000014
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=751&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=751&Session=27
 - url: https://www.legis.ga.gov/members/senate/751?session=1029
-- url: https://www.legis.ga.gov/members/senate/751?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/751?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/751?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
