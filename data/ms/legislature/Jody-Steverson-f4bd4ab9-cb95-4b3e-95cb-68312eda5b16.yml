@@ -2,12 +2,14 @@ id: ocd-person/f4bd4ab9-cb95-4b3e-95cb-68312eda5b16
 name: Jody Steverson
 given_name: Jody
 family_name: Steverson
+gender: Male
 email: jsteverson@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/steverson.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2015-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '4'
 offices:
@@ -18,9 +20,10 @@ offices:
   address: 125 Woodridge Ripley, Mississippi 38663
   voice: 662-837-0194
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/steverson.xml
-- url: http://billstatus.ls.state.ms.us/members/house/steverson.xml
+- url: https://billstatus.ls.state.ms.us/members/house/steverson.xml
   note: homepage
+other_names:
+- name: Joseph F. Steverson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000204

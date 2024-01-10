@@ -1,32 +1,37 @@
 id: ocd-person/5411c21d-e8ee-4300-a79b-1a688e01c481
-name: Jason A. Janvrin
+name: Jason Janvrin
 given_name: Jason
 family_name: Janvrin
-email: Jason.Janvrin@leg.state.nh.us
+gender: Male
+email: jason.janvrin@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408422.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 40
 - end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 20
 - start_date: 2019-01-01
-  end_date: '2020-12-31'
+  end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 37
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 40
 offices:
 - classification: district
   address: PO Box 462 Seabrook, NH 03874-0462
   voice: 603-944-7449
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8422
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8422
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=408422
+other_names:
+- name: Jason A. Janvrin
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001313

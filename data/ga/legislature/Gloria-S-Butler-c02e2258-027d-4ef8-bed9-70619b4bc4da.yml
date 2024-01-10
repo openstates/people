@@ -1,9 +1,9 @@
 id: ocd-person/c02e2258-027d-4ef8-bed9-70619b4bc4da
-name: Gloria Butler
-given_name: Gloria
+name: Gloria Singleton Butler
+given_name: Gloria Singleton
 family_name: Butler
 gender: Female
-email: missing@invalid.no
+email: gloria.butler@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/butler-gloria-5.jpg
 party:
 - name: Democratic
@@ -15,25 +15,29 @@ offices:
 - classification: capitol
   address: 420-C State Capitol; Atlanta, GA 30334
   voice: 404-656-0075
-  fax: 404-657-9728
 - classification: district
   address: 6241 Southland Trace; Stone Mountain, GA 30087
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=5&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=5&Session=27
 - url: https://www.legis.ga.gov/members/senate/5?session=1029
 - url: https://www.legis.ga.gov/members/senate/5?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/5
+other_names:
+- name: Gloria Butler
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000005
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=5&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=5&Session=27
 - url: https://www.legis.ga.gov/members/senate/5?session=1029
-- url: https://www.legis.ga.gov/members/senate/5?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/5?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/5?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

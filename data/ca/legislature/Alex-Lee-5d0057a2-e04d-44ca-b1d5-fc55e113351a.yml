@@ -2,18 +2,21 @@ id: ocd-person/5d0057a2-e04d-44ca-b1d5-fc55e113351a
 name: Alex Lee
 given_name: Alex
 family_name: Lee
+gender: Male
+email: alex.lee@asm.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/lee-025.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2020-12-07'
-  end_date: '2022-12-04'
+- start_date: 2022-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '24'
+- start_date: 2020-12-07
+  end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '25'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '24'
 offices:
 - classification: capitol
   address: 1021 O Street, Suite 6330, Sacramento, CA 95814
@@ -23,6 +26,9 @@ offices:
   voice: 408-262-2501
 links:
 - url: https://a25.asmdc.org/
+- url: https://a24.asmdc.org/
+other_names:
+- name: Alex Tinming Lee
 sources:
 - url: http://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers

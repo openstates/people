@@ -2,12 +2,14 @@ id: ocd-person/f2f61e1d-8d34-40c7-95ff-fb08cd2a4f75
 name: David Jordan
 given_name: David
 family_name: Jordan
+gender: Male
 email: djordan@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/jordan.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 1993-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '24'
 offices:
@@ -18,9 +20,10 @@ offices:
   address: P.O. Box 8173 Greenwood, Mississippi 38930
   voice: 662-453-5361
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/jordan.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/jordan.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/jordan.xml
   note: homepage
+other_names:
+- name: David Lee Jordan
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000023

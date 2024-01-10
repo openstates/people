@@ -2,12 +2,14 @@ id: ocd-person/8b4b00cb-6f78-4b69-b788-796b19d94752
 name: Bethany Ballard
 given_name: Bethany
 family_name: Ballard
+gender: Female
 email: bethany.ballard@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/ballard-bethany-5051.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '147'
 offices:
@@ -17,8 +19,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5051?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5051
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

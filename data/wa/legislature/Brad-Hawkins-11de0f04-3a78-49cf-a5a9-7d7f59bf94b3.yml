@@ -1,6 +1,6 @@
 id: ocd-person/11de0f04-3a78-49cf-a5a9-7d7f59bf94b3
 name: Brad Hawkins
-given_name: Brad
+given_name: Bradley Matthew
 family_name: Hawkins
 gender: Male
 email: brad.hawkins@leg.wa.gov
@@ -8,12 +8,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=2006
 party:
 - name: Republican
 roles:
+- start_date: 2017-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '12'
 - start_date: 2013-01-01
   end_date: 2018-12-31
   type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  district: '12'
-- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '12'
 offices:
@@ -21,8 +22,9 @@ offices:
   address: 203 Legislative Modular Building; PO Box 40412; Olympia, WA 98504
   voice: 360-786-7622
 links:
-- url: http://BradHawkins.src.wastateleg.org/
-- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://BradHawkins.src.wastateleg.org/
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://bradhawkins.src.wastateleg.org/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000267
@@ -31,5 +33,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/87934228-89fc-495f-a396-becd7b913b31
 sources:
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate

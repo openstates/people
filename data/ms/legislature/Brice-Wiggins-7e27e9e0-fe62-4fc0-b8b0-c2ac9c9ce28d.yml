@@ -2,12 +2,14 @@ id: ocd-person/7e27e9e0-fe62-4fc0-b8b0-c2ac9c9ce28d
 name: Brice Wiggins
 given_name: Brice
 family_name: Wiggins
+gender: Male
 email: bwiggins@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/wiggins.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2012-01-03
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '52'
 offices:
@@ -17,9 +19,10 @@ offices:
 - classification: district
   address: 1201 Farnsworth Ave Pascagoula, Mississippi 39567
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/wiggins.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/wiggins.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/wiggins.xml
   note: homepage
+other_names:
+- name: Christopher Brice Wiggins
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000191

@@ -1,28 +1,33 @@
 id: ocd-person/903e02f2-e17d-41f4-bd94-f91557c0e1fd
-name: Jeffrey P. Goley
+name: Jeffrey Goley
 given_name: Jeffrey
 family_name: Goley
+gender: Male
 email: jgoley03104@yahoo.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376227.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 21
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 8
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 21
 offices:
 - classification: district
   address: 1683 River Road Manchester, NH 03104-1645
   voice: 603-626-6659
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=460
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=460
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=376227
+other_names:
+- name: Jeffrey P. Goley
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000145

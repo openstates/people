@@ -2,12 +2,14 @@ id: ocd-person/622761e7-fba1-4a35-879b-45a6dd021ab0
 name: Joey Hood
 given_name: Joey
 family_name: Hood
+gender: Male
 email: jhood@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/hood.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2012-01-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '35'
 offices:
@@ -18,8 +20,7 @@ offices:
   address: P.O. Box 759 Ackerman, Mississippi 39735
   voice: 662-547-9818
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/hood.xml
-- url: http://billstatus.ls.state.ms.us/members/house/hood.xml
+- url: https://billstatus.ls.state.ms.us/members/house/hood.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

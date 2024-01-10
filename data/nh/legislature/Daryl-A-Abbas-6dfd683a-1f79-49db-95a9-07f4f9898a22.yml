@@ -1,26 +1,31 @@
 id: ocd-person/6dfd683a-1f79-49db-95a9-07f4f9898a22
-name: Daryl A. Abbas
+name: Daryl Abbas
 given_name: Daryl
 family_name: Abbas
-email: Daryl.Abbas@leg.state.nh.us
+gender: Male
+email: daryl.abbas@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '22'
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 8
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: '22'
 offices:
-- classification: capitol
-  address: State House, Room 105-A 107 North Main Street Concord, NH 03301
-  voice: 603-271-4151
+- classification: district
+  address: 34 South Shore Road;Salem, NH 03079
+  voice: 603-560-1929
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/senate/members/webpages/district22.aspx
 other_names:
+- name: Daryl A. Abbas
 - name: Daryl Abbas
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408908

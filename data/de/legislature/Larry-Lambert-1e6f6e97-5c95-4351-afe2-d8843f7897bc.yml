@@ -1,12 +1,14 @@
 id: ocd-person/1e6f6e97-5c95-4351-afe2-d8843f7897bc
 name: Larry Lambert
-given_name: Larry
+given_name: Larry D.
 family_name: Lambert
-email: Larry.Lambert@delaware.gov
+gender: Male
+email: larry.lambert@delaware.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2020-11-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '7'
 offices:
@@ -18,6 +20,8 @@ links:
   note: legislator page
 - url: https://legis.delaware.gov/LegislatorDetail?personId=24002
   note: homepage
+- url: https://legis.delaware.gov/AssemblyMember/151/Lambert
+- url: https://housedems.delaware.gov/members/house-district-7/
 sources:
 - url: https://legis.delaware.gov/House
   note: legislator list page

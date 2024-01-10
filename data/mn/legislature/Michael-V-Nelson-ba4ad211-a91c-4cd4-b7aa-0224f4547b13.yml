@@ -1,6 +1,6 @@
 id: ocd-person/ba4ad211-a91c-4cd4-b7aa-0224f4547b13
-name: Michael Nelson
-given_name: Michael
+name: Mike Nelson
+given_name: Mike
 family_name: Nelson
 gender: Male
 email: rep.michael.nelson@house.mn.gov
@@ -8,23 +8,27 @@ image: https://www.house.mn.gov/hinfo/memberimgls93/38A.gif?v=032323
 party:
 - name: Democratic-Farmer-Labor
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 38A
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 40A
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: 38A
 offices:
 - classification: capitol
   address: 585 State Office Building;St. Paul, MN 55155
   voice: 651-296-3751
 links:
-- url: http://www.house.leg.state.mn.us/members/profile/10779
+- url: https://www.house.mn.gov/members/profile/10779
 other_names:
+- name: Michael V. Nelson
+- name: Michael Nelson
 - name: Nelson, M.
 - name: Michael Nelson
-- name: Michael V. Nelson
+sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000158
@@ -36,5 +40,3 @@ other_identifiers:
   identifier: MNL000577
 - scheme: legacy_openstates
   identifier: MNL000724
-sources:
-- url: http://www.house.leg.state.mn.us/members/hmem.asp

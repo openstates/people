@@ -1,6 +1,6 @@
 id: ocd-person/68185f1d-fa54-4571-b305-fcd6c7dc024e
-name: Michael Smith
-given_name: Michael
+name: Michael A. Smith
+given_name: Michael A.
 family_name: Smith
 gender: Male
 email: michael.smith@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-michae
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2013-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '41'
 offices:
@@ -19,21 +20,26 @@ offices:
   address: 2162 Caneridge Drive; Marietta, GA 30064
   voice: 404-652-9227
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
 - url: https://www.legis.ga.gov/members/house/832?session=1029
 - url: https://www.legis.ga.gov/members/house/832?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/832
+other_names:
+- name: Michael Smith
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000355
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=832&Session=27
 - url: https://www.legis.ga.gov/members/house/832?session=1029
-- url: https://www.legis.ga.gov/members/house/832?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/832?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/832?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

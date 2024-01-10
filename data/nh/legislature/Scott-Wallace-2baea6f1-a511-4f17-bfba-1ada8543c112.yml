@@ -2,32 +2,34 @@ id: ocd-person/2baea6f1-a511-4f17-bfba-1ada8543c112
 name: Scott Wallace
 given_name: Scott
 family_name: Wallace
-email: Scott.Wallace@leg.state.nh.us
+gender: Male
+email: scott.wallace@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408431.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 8
 - start_date: 2016-12-07
-  end_date: '2018-12-05'
+  end_date: 2018-12-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 33
 - start_date: 2018-12-05
-  end_date: '2022-12-07'
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 12
-- start_date: '2022-12-07'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 8
 offices:
 - classification: district
   address: 34 Wymans Landing Danville, NH 03819-3148
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8431
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8431
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=408431
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001325

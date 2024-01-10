@@ -2,22 +2,24 @@ id: ocd-person/c1f048f2-6e1d-4e1b-b161-d97e2f16c1f8
 name: James Skoufis
 given_name: James
 family_name: Skoufis
+gender: Male
 email: skoufis@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/skoufis_nysenate.gov_image.jpeg?itok=JHxr3Lpo
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/skoufis_nysenate.gov_image.jpeg?itok=eNfSopav
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '42'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '99'
-- end_date: '2023-01-01'
+- end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '39'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '42'
 offices:
 - classification: capitol
   address: Room 815; Albany,NY 12247
@@ -26,8 +28,11 @@ offices:
   address: Suites 202 & 207; Cornwall,NY 12518-2146
   voice: 845-567-1270
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/james-skoufis/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/james-skoufis/contact
+- url: https://www.nysenate.gov/senators/james-skoufis
+other_names:
+- name: James George Skoufis
 ids:
   twitter: JamesSkoufis
 other_identifiers:

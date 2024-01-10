@@ -1,19 +1,21 @@
 id: ocd-person/b7377e58-3efa-49b5-a1f0-83da9da3d715
 name: David Silvers
-given_name: David
+given_name: David Ryan
 family_name: Silvers
 gender: Male
+email: david.silvers@myfloridahouse.gov
 image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4627.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '89'
+- end_date: 2022-11-08
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '87'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '89'
 offices:
 - classification: capitol
   address: 407 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
@@ -22,14 +24,16 @@ offices:
   address: Suite 200; 1850 Forest Hill Boulevard; West Palm Beach, FL 33406-6060
   voice: 561-357-4824
 links:
-- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4627&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4627&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4627&LegislativeTermId=88
 - url: https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4627&LegislativeTermId=90
   note: member detail page
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4627
 other_identifiers:
 - scheme: legacy_openstates
   identifier: FLL000569
 sources:
+- url: https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4627&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives

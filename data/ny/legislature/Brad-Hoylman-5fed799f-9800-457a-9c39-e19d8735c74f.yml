@@ -1,20 +1,21 @@
 id: ocd-person/5fed799f-9800-457a-9c39-e19d8735c74f
 name: Brad Hoylman-Sigal
 given_name: Brad
-family_name: Hoylman
+family_name: Hoylman-Sigal
+gender: Male
 email: hoylman@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/bh_headshot.jpg?itok=oDW5cicy
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/bh_headshot.jpg?itok=Q44ltiNA
 party:
-- name: Democratic
 - name: Democratic/Working Families
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '47'
+- end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '27'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '47'
 offices:
 - classification: capitol
   address: Legislative Office Building, Room 310; Albany,NY 12247
@@ -23,9 +24,11 @@ offices:
   address: 322 Eighth Avenue, Suite 1700; New York,NY 10001
   voice: 212-633-8052
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/brad-hoylman/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/brad-hoylman/contact
+- url: https://www.nysenate.gov/senators/brad-hoylman-sigal
 other_names:
+- name: Brad Madison Hoylman-Sigal
 - name: Brad Hoylman
 ids:
   twitter: bradhoylman

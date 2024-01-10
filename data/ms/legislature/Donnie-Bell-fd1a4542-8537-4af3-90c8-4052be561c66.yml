@@ -2,12 +2,14 @@ id: ocd-person/fd1a4542-8537-4af3-90c8-4052be561c66
 name: Donnie Bell
 given_name: Donnie
 family_name: Bell
+gender: Male
 email: dbell@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/bell_(21st).jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2011-11-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '21'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: 836 Tucker Rd Fulton, Mississippi 38843
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/bell_(21st).xml
-- url: http://billstatus.ls.state.ms.us/members/house/bell_(21st).xml
+- url: https://billstatus.ls.state.ms.us/members/house/bell_(21st).xml
   note: homepage
 other_names:
 - name: Bell (21st)

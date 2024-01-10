@@ -1,6 +1,6 @@
 id: ocd-person/a45d8fe7-d052-4d18-bc5f-b5911948d42c
 name: Shelly Short
-given_name: Shelly
+given_name: Shelly Anne
 family_name: Short
 gender: Female
 email: shelly.short@leg.wa.gov
@@ -8,12 +8,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=11952
 party:
 - name: Republican
 roles:
+- start_date: 2017-02-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '7'
 - start_date: 2011-01-01
   end_date: 2018-12-31
   type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  district: '7'
-- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '7'
 offices:
@@ -21,8 +22,9 @@ offices:
   address: 409 Legislative Building; PO Box 40407; Olympia, WA 98504
   voice: 360-786-7612
 links:
-- url: http://ShellyShort.src.wastateleg.org/
-- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://ShellyShort.src.wastateleg.org/
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://shellyshort.src.wastateleg.org/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000272
@@ -31,6 +33,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/bca66fde-c372-4788-9ccd-069a2f01e670
 sources:
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate
 extras:

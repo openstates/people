@@ -2,12 +2,14 @@ id: ocd-person/a37d3d01-84a2-4c9a-8309-2c4aa03d0928
 name: Farooq Mughal
 given_name: Farooq
 family_name: Mughal
+gender: Male
 email: farooq.mughal@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/mughal-farooq-5043.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '105'
 offices:
@@ -19,8 +21,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5043?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5043
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

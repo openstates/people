@@ -1,6 +1,6 @@
 id: ocd-person/42517dd7-eccb-4d22-a795-cbd010b69ee6
-name: Chuck Martin
-given_name: Charles
+name: Charles E. Martin
+given_name: Charles E.
 family_name: Martin
 gender: Male
 email: chuck.martin@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/martin-chuck
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '49'
 offices:
@@ -18,13 +19,15 @@ offices:
 - classification: district
   address: 11770 Haynes Bridge RoadSuite 205-544; Alpharetta, GA 30004
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=164&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=164&Session=27
 - url: https://www.legis.ga.gov/members/house/164?session=1029
 - url: https://www.legis.ga.gov/members/house/164?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/164
 other_names:
+- name: Chuck Martin
 - name: Charles Martin
 other_identifiers:
 - scheme: legacy_openstates
@@ -32,11 +35,13 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000327
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=164&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=164&Session=27
 - url: https://www.legis.ga.gov/members/house/164?session=1029
-- url: https://www.legis.ga.gov/members/house/164?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/164?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/164?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

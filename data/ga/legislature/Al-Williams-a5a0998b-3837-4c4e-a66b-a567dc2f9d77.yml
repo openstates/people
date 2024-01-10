@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/williams-al-
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2003-01-13
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '168'
 offices:
@@ -18,23 +19,26 @@ offices:
 - classification: district
   address: 9041 East Oglethorpe Highway; Midway, GA 31320
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=230&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=230&Session=27
 - url: https://www.legis.ga.gov/members/house/230?session=1029
 - url: https://www.legis.ga.gov/members/house/230?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/230
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000228
 - scheme: legacy_openstates
   identifier: GAL000374
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=230&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=230&Session=27
 - url: https://www.legis.ga.gov/members/house/230?session=1029
-- url: https://www.legis.ga.gov/members/house/230?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/230?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/230?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

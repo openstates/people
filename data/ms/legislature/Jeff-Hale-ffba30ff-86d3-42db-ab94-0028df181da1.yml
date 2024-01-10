@@ -2,12 +2,14 @@ id: ocd-person/ffba30ff-86d3-42db-ab94-0028df181da1
 name: Jeff Hale
 given_name: Jeff
 family_name: Hale
+gender: Male
 email: jhale@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/hale.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '24'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: 2140 Watson View West Nesbit, Mississippi 38651
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/hale.xml
-- url: http://billstatus.ls.state.ms.us/members/house/hale.xml
+- url: https://billstatus.ls.state.ms.us/members/house/hale.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

@@ -2,31 +2,29 @@ id: ocd-person/b2e4bec5-55fb-4bd2-a0f1-728997f9e780
 name: John Doll
 given_name: John
 family_name: Doll
-email: John.Doll@senate.ks.gov
+gender: Male
+email: john.doll@senate.ks.gov
 image: http://www.kslegislature.org/li/m/images/pics/sen_doll_john_1.jpg
 party:
-- end_date: 2018-03-07
-  name: Republican
-- end_date: 2019-06-20
-  name: Independent
 - name: Republican
 roles:
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
+  district: '39'
 - start_date: 2013-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '123'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ks/government
-  district: '39'
 offices:
 - classification: capitol
-  address: Room 237-E; Kansas State Capitol Building; 300 SW 10th St.; Topeka, KS 66612
+  address: Room 237-E; Kansas State Capitol Building; 300 SW 10th St.; Topeka, KS
+    66612
   voice: 785-296-7694
 links:
-- url: http://www.kslegislature.org/li/b2019_20/members/sen_doll_john_1/
-- url: http://www.kslegislature.org/li/b2021_22/members/sen_doll_john_1/
-- url: http://www.kslegislature.org/li/b2023_24/members/sen_doll_john_1/
+- url: https://www.kslegislature.org/li/b2019_20/members/sen_doll_john_1/
+- url: https://www.kslegislature.org/li/b2021_22/members/sen_doll_john_1/
+- url: https://www.kslegislature.org/li/b2023_24/members/sen_doll_john_1/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: KSL000370
@@ -35,6 +33,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/688d0f00-232d-4ef6-85f8-08885cdf6981
 sources:
+- url: https://www.kslegislature.org/li/api/v11/rev-1/members/sen_doll_john_1
+- url: https://www.kslegislature.org/li/api/v11/rev-1/members/sen_doll_john_1/
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/sen_doll_john_1
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/sen_doll_john_1/
 extras:

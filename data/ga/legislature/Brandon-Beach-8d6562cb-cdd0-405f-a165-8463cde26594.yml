@@ -15,26 +15,27 @@ offices:
 - classification: capitol
   address: 303-A CLOB; Atlanta, GA 30334
   voice: 404-463-1378
-  fax: 404-463-1386
 - classification: district
   address: 3100 Brierfield Road; Alpharetta, GA 30004
   voice: 678-640-1811
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=840&Session=27
-- url: https://www.legis.ga.gov/members/senate/840?session=1029
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=840&Session=27
 - url: https://www.legis.ga.gov/members/senate/840?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/840?session=1029
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000378
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=840&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=840&Session=27
 - url: https://www.legis.ga.gov/members/senate/840?session=1029
-- url: https://www.legis.ga.gov/members/senate/840?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/840?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/840?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

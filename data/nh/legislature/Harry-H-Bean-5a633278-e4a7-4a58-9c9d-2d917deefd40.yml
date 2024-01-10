@@ -1,28 +1,33 @@
 id: ocd-person/5a633278-e4a7-4a58-9c9d-2d917deefd40
-name: Harry H. Bean
+name: Harry Bean
 given_name: Harry
 family_name: Bean
-email: Harry.Bean@leg.state.nh.us
+gender: Male
+email: harry.bean@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408817.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Belknap 6
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Belknap 2
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Belknap 6
 offices:
 - classification: district
   address: 234 Saltmarsh Pond Road Gilford, NH 03249-7567
   voice: 603-455-2993
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9409
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9409
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9409
+other_names:
+- name: Harry H. Bean
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408817
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt

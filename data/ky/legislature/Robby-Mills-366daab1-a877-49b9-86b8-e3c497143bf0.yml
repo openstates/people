@@ -2,18 +2,20 @@ id: ocd-person/366daab1-a877-49b9-86b8-e3c497143bf0
 name: Robby Mills
 given_name: Robby
 family_name: Mills
-email: Robby.Mills@lrc.ky.gov
+gender: Male
+email: robby.mills@lrc.ky.gov
 image: https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate104.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2019-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
+  district: '4'
 - end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ky/government
   district: '11'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ky/government
-  district: '4'
 offices:
 - classification: capitol
   voice: 502-564-8100
@@ -21,9 +23,9 @@ offices:
   address: Annex Room 284 Frankfort, KY 40601
 links:
 - url: https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=104
-- url: https://legislature.ky.gov/Legislators/Pages/Legislator-Profile.aspx?DistrictNumber=104
   note: homepage
 other_names:
+- name: Robert Mills
 - name: R. Mills
 ids:
   twitter: robbymillsforky

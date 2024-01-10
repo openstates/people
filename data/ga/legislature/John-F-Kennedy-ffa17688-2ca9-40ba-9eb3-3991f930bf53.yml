@@ -1,43 +1,45 @@
 id: ocd-person/ffa17688-2ca9-40ba-9eb3-3991f930bf53
-name: John F. Kennedy
-given_name: John F.
+name: John Flanders Kennedy
+given_name: John Flanders
 family_name: Kennedy
 gender: Male
-email: missing@invalid.no
+email: john.kennedy@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/kennedy-john-852.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2015-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '18'
 offices:
 - classification: capitol
   address: 321 State Capitol; Atlanta, GA 30334
   voice: 404-656-6578
-  fax: 404-651-6768
 - classification: district
   address: 231 Riverside Drive; Macon, GA 31201
   voice: 478-749-9981
-  fax: 478-742-8720
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=852&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=852&Session=27
 - url: https://www.legis.ga.gov/members/senate/852?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/852?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
 other_names:
 - name: John Kennedy
+- name: John F. Kennedy
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000400
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=852&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=852&Session=27
 - url: https://www.legis.ga.gov/members/senate/852?session=1029
-- url: https://www.legis.ga.gov/members/senate/852?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/852?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/852?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

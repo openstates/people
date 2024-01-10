@@ -1,6 +1,6 @@
 id: ocd-person/b83b0486-773f-4979-a1ce-e2f7f3e6d7e1
-name: Josh McLaurin
-given_name: Josh
+name: Joshua Ivan McLaurin
+given_name: Joshua Ivan
 family_name: McLaurin
 gender: Male
 email: josh.mclaurin@senate.ga.gov
@@ -8,13 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/mclaurin-jos
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '14'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '51'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '14'
 offices:
 - classification: capitol
   address: 323-A CLOB; Atlanta, GA 30334
@@ -22,18 +23,22 @@ offices:
 - classification: district
   address: P.O. Box 567297; Atlanta, GA 31156
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4942&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4942&Session=27
 - url: https://www.legis.ga.gov/members/house/4942?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/4942?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
+other_names:
+- name: Josh McLaurin
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4942&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4942&Session=27
 - url: https://www.legis.ga.gov/members/house/4942?session=1029
-- url: https://www.legis.ga.gov/members/house/4942?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4942?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4942?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
