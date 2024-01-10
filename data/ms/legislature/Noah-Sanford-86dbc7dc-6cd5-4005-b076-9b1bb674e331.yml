@@ -2,12 +2,14 @@ id: ocd-person/86dbc7dc-6cd5-4005-b076-9b1bb674e331
 name: Noah Sanford
 given_name: Noah
 family_name: Sanford
+gender: Male
 email: nsanford@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/sanford.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '90'
 offices:
@@ -17,8 +19,7 @@ offices:
 - classification: district
   address: P.O. Box 1900 Collins, Mississippi 39428
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/sanford.xml
-- url: http://billstatus.ls.state.ms.us/members/house/sanford.xml
+- url: https://billstatus.ls.state.ms.us/members/house/sanford.xml
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates

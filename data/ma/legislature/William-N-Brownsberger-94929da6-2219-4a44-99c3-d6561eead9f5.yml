@@ -1,26 +1,30 @@
 id: ocd-person/94929da6-2219-4a44-99c3-d6561eead9f5
-name: William N. Brownsberger
-given_name: William
+name: Will Brownsberger
+given_name: Will
 family_name: Brownsberger
 gender: Male
-email: William.Brownsberger@masenate.gov
+email: william.brownsberger@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/WNB0.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Suffolk and Middlesex
+- end_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Second Suffolk and Middlesex
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: Suffolk and Middlesex
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 319; Boston, MA 02133
   voice: 617-722-1280
 links:
 - url: https://malegislature.gov/Legislators/Profile/WNB0
+- url: https://willbrownsberger.com/
+other_names:
+- name: William N. Brownsberger
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000060

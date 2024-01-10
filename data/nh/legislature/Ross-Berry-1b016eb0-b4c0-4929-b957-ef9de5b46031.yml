@@ -2,26 +2,29 @@ id: ocd-person/1b016eb0-b4c0-4929-b957-ef9de5b46031
 name: Ross Berry
 given_name: Ross
 family_name: Berry
-email: Ross@berryfornh.com
+gender: Male
+email: ross@berryfornh.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/409019.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 39
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 44
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 39
 offices:
 - classification: district
   address: 401 Riverdale Avenue Manchester, NH 03103
   voice: 603-944-9531
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9919
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9919
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9919
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

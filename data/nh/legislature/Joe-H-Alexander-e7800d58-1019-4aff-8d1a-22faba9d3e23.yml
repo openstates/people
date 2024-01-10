@@ -1,27 +1,34 @@
 id: ocd-person/e7800d58-1019-4aff-8d1a-22faba9d3e23
-name: Joe H. Alexander
+name: Joe Alexander
 given_name: Joe
 family_name: Alexander
-email: Joe.Alexander@leg.state.nh.us
+gender: Male
+email: joe.alexander@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 29
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 29
 offices:
 - classification: district
   address: 3 Oakwood Lane, Unit 1 Goffstown, NH 03045-2597
   voice: 603-856-5227
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9165
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9165
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9165
+other_names:
+- name: Joseph Alexander
+- name: Joe H. Alexander
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408950
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt

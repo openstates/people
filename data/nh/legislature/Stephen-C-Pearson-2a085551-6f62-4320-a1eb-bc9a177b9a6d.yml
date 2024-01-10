@@ -1,27 +1,34 @@
 id: ocd-person/2a085551-6f62-4320-a1eb-bc9a177b9a6d
-name: Stephen C. Pearson
-given_name: Stephen
+name: Steve Pearson
+given_name: Steve
 family_name: Pearson
-email: Steve.Pearson@leg.state.nh.us
+gender: Male
+email: steve.pearson@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 13
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 13
 offices:
 - classification: district
   address: 221 Hampstead Road Derry, NH 03038-4814
   voice: 603-548-8523
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9269
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9269
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9269
+other_names:
+- name: Stephen Pearson
+- name: Stephen C. Pearson
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408906
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt

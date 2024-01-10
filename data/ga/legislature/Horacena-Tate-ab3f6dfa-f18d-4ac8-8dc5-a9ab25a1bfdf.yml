@@ -1,6 +1,6 @@
 id: ocd-person/ab3f6dfa-f18d-4ac8-8dc5-a9ab25a1bfdf
-name: Horacena Tate
-given_name: Horacena
+name: Horacena E. Tate
+given_name: Horacena E.
 family_name: Tate
 gender: Female
 email: horacena.tate@senate.ga.gov
@@ -8,32 +8,37 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/tate-horacen
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 1999-01-11
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '38'
 offices:
 - classification: capitol
   address: 121-G State Capitol; Atlanta, GA 30334
   voice: 404-463-8053
-  fax: 404-463-7783
 - classification: district
   address: None Listed; None, None None
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=47&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=47&Session=27
 - url: https://www.legis.ga.gov/members/senate/47?session=1029
 - url: https://www.legis.ga.gov/members/senate/47?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/47
+other_names:
+- name: Horacena Tate
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000048
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=47&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=47&Session=27
 - url: https://www.legis.ga.gov/members/senate/47?session=1029
-- url: https://www.legis.ga.gov/members/senate/47?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/47?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/47?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

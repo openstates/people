@@ -2,25 +2,29 @@ id: ocd-person/72ef654a-277a-4309-b0ae-08fee715af2c
 name: Lisa Post
 given_name: Lisa
 family_name: Post
-email: Lisacmpost@gmail.com
+gender: Female
+email: lisacmpost@gmail.com
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 42
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 42
 offices:
 - classification: district
   address: 43 S Crooked Rd Lyndeborough, NH 03082
   voice: 978-226-3379
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9896
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9896
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9896
 other_names:
 - name: Lisa C.M. Post
 sources:

@@ -8,14 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/moore-angela
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '90'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '91'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '90'
 offices:
 - classification: capitol
   address: 411-H Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -27,12 +27,13 @@ links:
 - url: https://www.legis.ga.gov/members/house/5008?session=1029
 - url: https://www.legis.ga.gov/members/house/5008?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5008
 sources:
 - url: https://www.legis.ga.gov/members/house/5008?session=1029
-- url: https://www.legis.ga.gov/members/house/5008?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/5008?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/5008?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

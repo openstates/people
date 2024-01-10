@@ -1,28 +1,32 @@
 id: ocd-person/6e2bc564-5cd1-4f96-a265-4753b7f12ee1
-name: Jason M. Osborne
+name: Jason Osborne
 given_name: Jason
 family_name: Osborne
-email: Jason@Osborne4NH.com
+gender: Male
+email: jason@osborne4nh.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377253.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 2
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 2
 offices:
 - classification: district
   address: 65 Miner Road Auburn, NH 03032-3974
   voice: 603-391-2138
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=901
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=901
   note: member detail page
+other_names:
+- name: Jason M. Osborne
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001119

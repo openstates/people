@@ -1,32 +1,40 @@
 id: ocd-person/66ba1045-a0e7-4602-b228-e68dea8be29e
-name: Charles Melvin Sr.
-given_name: Charles
+name: Charlie Melvin
+given_name: Charlie
 family_name: Melvin
-email: Charlie.Melvin@leg.state.nh.us
+gender: Male
+email: charlie.melvin@leg.state.nh.us
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 20
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 15
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 20
 offices:
 - classification: district
   address: 81 South Main Street Newton, NH 03858-3707
   voice: 603-819-6280
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8419
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8419
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=8419
 other_names:
+- name: Charles Melvin
+- name: Charles Melvin Sr.
 - name: Charles R. Melvin
 - name: Charles R. Melvin Sr.
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408915
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/Members.txt
+- url: http://gencourt.state.nh.us/downloads/members.txt
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8419
 extras:
   county: Rockingham

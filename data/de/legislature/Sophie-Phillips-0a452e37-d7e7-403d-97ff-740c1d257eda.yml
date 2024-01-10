@@ -2,11 +2,13 @@ id: ocd-person/0a452e37-d7e7-403d-97ff-740c1d257eda
 name: Sophie Phillips
 given_name: Sophie
 family_name: Phillips
+gender: Female
 email: sophie.phillips@delaware.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2022-11-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '18'
 offices:
@@ -16,6 +18,8 @@ offices:
 links:
 - url: https://legis.delaware.gov/LegislatorDetail?personId=24308
   note: homepage
+- url: https://legis.delaware.gov/AssemblyMember/152/Phillips
+- url: https://housedems.delaware.gov/members/house-district-18/
 sources:
 - url: https://legis.delaware.gov/json/House/GetRepresentatives
 - url: https://legis.delaware.gov/LegislatorDetail?personId=24308

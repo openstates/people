@@ -1,26 +1,29 @@
 id: ocd-person/493988da-4de8-49a0-8d6c-090097e89920
-name: Patrick M. O'Connor
+name: Patrick O'Connor
 given_name: Patrick
 family_name: O'Connor
 gender: Male
-email: Patrick.OConnor@masenate.gov
+email: patrick.oconnor@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/PMO.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: First Plymouth and Norfolk
+- end_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Plymouth and Norfolk
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: First Plymouth and Norfolk
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 419; Boston, MA 02133
   voice: 617-722-1646
 links:
 - url: https://malegislature.gov/Legislators/Profile/PMO
+other_names:
+- name: Patrick M. O'Connor
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000527

@@ -8,6 +8,10 @@ image: https://www.senate.mn/img/member_thumbnails/35Abeler.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2016-02-22
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: '35'
 - start_date: 2009-01-01
   end_date: 2012-12-31
   type: lower
@@ -18,15 +22,18 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: 35A
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-  district: '35'
 offices:
 - classification: capitol
   address: 2207 Minnesota Senate Bldg.; St. Paul, MN 55155
   voice: 651-296-3733
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1216
+other_names:
+- name: James Joseph Abeler
+sources:
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000729
@@ -38,7 +45,3 @@ other_identifiers:
   identifier: MNL000370
 - scheme: openstates
   identifier: ocd-person/c9dd9cd4-1e64-4cb9-b02e-fa02075f7058
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members

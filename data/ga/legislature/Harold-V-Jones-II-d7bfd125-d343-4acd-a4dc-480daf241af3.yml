@@ -1,14 +1,15 @@
 id: ocd-person/d7bfd125-d343-4acd-a4dc-480daf241af3
-name: Harold Jones II
-given_name: Harold
-family_name: Jones II
+name: Harold V. Jones
+given_name: Harold V.
+family_name: Jones
 gender: Male
-email: missing@invalid.no
+email: harold.jones@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/jones-ii-harold-851.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2015-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '22'
 offices:
@@ -18,23 +19,27 @@ offices:
 - classification: district
   address: 437 Walker Street; Augusta, GA 30901
   voice: 706-339-1424
-  fax: 706-432-9180
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=851&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=851&Session=27
 - url: https://www.legis.ga.gov/members/senate/851?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/851?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
+other_names:
+- name: Harold Jones
+- name: Harold Jones II
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000414
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=851&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=851&Session=27
 - url: https://www.legis.ga.gov/members/senate/851?session=1029
-- url: https://www.legis.ga.gov/members/senate/851?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/851?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/851?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

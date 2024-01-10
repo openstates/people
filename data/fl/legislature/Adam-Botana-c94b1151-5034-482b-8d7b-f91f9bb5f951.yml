@@ -3,17 +3,19 @@ name: Adam Botana
 given_name: Adam
 family_name: Botana
 gender: Male
+email: adam.botana@myfloridahouse.gov
 image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4782.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '80'
+- end_date: 2022-11-08
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '76'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '80'
 offices:
 - classification: capitol
   address: 319 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
@@ -26,6 +28,7 @@ links:
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4782&LegislativeTermId=89
 - url: https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4782&LegislativeTermId=90
   note: member detail page
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4782
 sources:
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4782&LegislativeTermId=89
 - url: https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4782&LegislativeTermId=90

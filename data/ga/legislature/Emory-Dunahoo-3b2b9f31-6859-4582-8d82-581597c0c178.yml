@@ -1,6 +1,6 @@
 id: ocd-person/3b2b9f31-6859-4582-8d82-581597c0c178
-name: Emory Dunahoo
-given_name: Emory
+name: Emory West Dunahoo
+given_name: Emory West
 family_name: Dunahoo
 gender: Male
 email: emory.dunahoo@house.ga.gov
@@ -8,13 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/dunahoo-emor
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '31'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '30'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '31'
 offices:
 - classification: capitol
   address: 401-I State Capitol; Atlanta, GA 30334
@@ -22,21 +23,26 @@ offices:
 - classification: district
   address: 4495 Bryant Quarter Rd.; Gillsville, GA 30543
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
 - url: https://www.legis.ga.gov/members/house/797?session=1029
 - url: https://www.legis.ga.gov/members/house/797?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/797
+other_names:
+- name: Emory Dunahoo
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000275
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=797&Session=27
 - url: https://www.legis.ga.gov/members/house/797?session=1029
-- url: https://www.legis.ga.gov/members/house/797?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/797?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/797?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

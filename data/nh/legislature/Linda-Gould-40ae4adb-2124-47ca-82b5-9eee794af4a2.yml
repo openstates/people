@@ -1,28 +1,33 @@
 id: ocd-person/40ae4adb-2124-47ca-82b5-9eee794af4a2
-name: Linda R. Gould
+name: Linda Gould
 given_name: Linda
 family_name: Gould
+gender: Female
 email: linda.gould@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377299.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-04'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 2
+- end_date: 2022-12-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 7
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 2
 offices:
 - classification: district
   address: 2 Elder Williams Road Bedford, NH 03110-5122
   voice: 603-472-3877
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=849
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=849
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377299
+other_names:
+- name: Linda R. Gould
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001167

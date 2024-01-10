@@ -3,28 +3,31 @@ name: Phil Christofanelli
 given_name: Phil
 family_name: Christofanelli
 gender: Male
-email: Phil.Christofanelli@house.mo.gov
-image: https://images.house.mo.gov/MemberPhoto.aspx?id=1914
+email: phil.christofanelli@house.mo.gov
+image: https://house.mo.gov/MemberPhoto.aspx?id=1914
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '104'
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '105'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
-  district: '104'
 offices:
 - classification: capitol
   address: MO House of Representatives; 201 West Capitol Avenue; Room 408-B; Jefferson
     City MO 65101
   voice: 573-751-2250
 links:
-- url: http://www.house.mo.gov/MemberDetails.aspx?district=105
+- url: https://www.house.mo.gov/MemberDetails.aspx?district=105
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=105
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=104
+- url: https://house.mo.gov/MemberDetails.aspx?district=104
 other_names:
+- name: Philip J. Christofanelli
 - name: Christofanelli, Phil
 other_identifiers:
 - scheme: legacy_openstates

@@ -1,6 +1,6 @@
 id: ocd-person/88e0ae45-75e7-48b6-880a-1a4c039d4373
 name: Smitty Pignatelli
-given_name: William
+given_name: Smitty
 family_name: Pignatelli
 gender: Male
 email: rep.smitty@mahouse.gov
@@ -8,20 +8,22 @@ image: https://malegislature.gov/Legislators/Profile/170/WSP1.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: 3rd Berkshire
+- end_date: 2023-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 4th Berkshire
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: 3rd Berkshire
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 166; Boston, MA 02133
   voice: 617-722-2692
-  fax: 617-722-2238
 links:
 - url: https://malegislature.gov/Legislators/Profile/WSP1
+other_names:
+- name: William Smitty Pignatelli
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000158

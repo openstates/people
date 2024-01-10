@@ -2,12 +2,14 @@ id: ocd-person/3a323603-753e-4380-993c-9bb2a7fc55f3
 name: Derrick McCollum
 given_name: Derrick
 family_name: McCollum
+gender: Male
 email: derrick.mccollum@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/mccollum-derrick-5022.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '30'
 offices:
@@ -17,8 +19,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5022?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5022
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

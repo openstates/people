@@ -2,12 +2,14 @@ id: ocd-person/9046fcb2-f3eb-4233-bd92-32c94e60f9df
 name: Derrick Jackson
 given_name: Derrick
 family_name: Jackson
+gender: Male
 email: derrick.jackson@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/jackson-derrick-4891.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-06-29
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '68'
 offices:
@@ -17,10 +19,10 @@ offices:
 - classification: district
   address: '100 Commerce Drive, # 1052; Tyrone, GA 30290'
 links:
+- url: https://www.legis.ga.gov/members/house
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4891?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
-  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

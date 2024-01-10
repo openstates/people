@@ -8,12 +8,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=12003
 party:
 - name: Democratic
 roles:
+- start_date: 2017-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '24'
 - start_date: 2011-01-01
   end_date: 2018-12-31
   type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  district: '24'
-- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '24'
 offices:
@@ -23,8 +24,9 @@ offices:
 - classification: district
   address: 504 East 8th Street; Suite C Port Angeles, WA; 98362
 links:
-- url: http://sdc.wastateleg.org/VanDeWege/
-- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://sdc.wastateleg.org/VanDeWege/
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://senatedemocrats.wa.gov/vandewege/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000258
@@ -33,5 +35,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/f6411b5f-860a-466e-ac1a-3dbe5e25297a
 sources:
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate

@@ -2,12 +2,14 @@ id: ocd-person/7fe0478b-3777-490c-93cb-20f83baf3d3f
 name: Bob Evans
 given_name: Bob
 family_name: Evans
+gender: Male
 email: bevans@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/evans_(91st).jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2008-01-08
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '91'
 offices:
@@ -18,10 +20,12 @@ offices:
   address: P.O. Box 636 Monticello, Mississippi 39654
   voice: 601-587-9313
 links:
-- url: http://billstatus.ls.state.ms.us/members/house/evans_(91st).xml
-- url: http://billstatus.ls.state.ms.us/members/house/evans_(91st).xml
+- url: https://billstatus.ls.state.ms.us/members/house/evans_(91st).xml
+- url: https://billstatus.ls.state.ms.us/members/house/evans_(91st).xml
   note: homepage
+- url: https://billstatus.ls.state.ms.us/members/house/evans_%2891st%29.xml
 other_names:
+- name: Robert E. Evans
 - name: Evans (91st)
 other_identifiers:
 - scheme: legacy_openstates
