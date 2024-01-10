@@ -2,19 +2,21 @@ id: ocd-person/18630d08-6afc-4892-ac2f-e13f0d9932f6
 name: David Parker
 given_name: David
 family_name: Parker
+gender: Male
 email: dparker@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/parker.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2016-01-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
+  district: '2'
 - start_date: 2012-01-01
   end_date: 2015-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '19'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ms/government
-  district: '2'
 offices:
 - classification: capitol
   address: Room 213 P. O. Box 1018;Jackson, MS 39215
@@ -23,9 +25,10 @@ offices:
   address: 6947Crumpler Blvd. Olive Branch, Mississippi 38654
   voice: 662-893-3309
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/parker.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/parker.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/parker.xml
   note: homepage
+other_names:
+- name: David L. Parker
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000251

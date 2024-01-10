@@ -8,23 +8,24 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/sims-freddie
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2009-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '12'
 offices:
 - classification: capitol
   address: 121-E State Capitol; Atlanta, GA 30334
   voice: 404-463-5259
-  fax: 404-463-2279
 - classification: district
   address: 5377 Goose Hollow Road; Dawson, GA 31742
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
 - url: https://www.legis.ga.gov/members/senate/209?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/209
 other_names:
 - name: Freddie Sims
 - name: Freddie Powell Sims
@@ -32,11 +33,13 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000044
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
-- url: https://www.legis.ga.gov/members/senate/209?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/209?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/209?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

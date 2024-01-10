@@ -15,27 +15,29 @@ offices:
 - classification: capitol
   address: 611-H Coverdell Legislative Office Building; Atlanta, GA 30034
   voice: 404-656-0314
-  fax: 404-656-0250
 - classification: district
   address: 733 Evelyn Street; Sandersville, Ga 31082
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=738&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=738&Session=27
 - url: https://www.legis.ga.gov/members/house/738?session=1029
 - url: https://www.legis.ga.gov/members/house/738?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/738
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000139
 - scheme: legacy_openstates
   identifier: GAL000310
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=738&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=738&Session=27
 - url: https://www.legis.ga.gov/members/house/738?session=1029
-- url: https://www.legis.ga.gov/members/house/738?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/738?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/738?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

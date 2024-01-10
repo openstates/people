@@ -2,26 +2,28 @@ id: ocd-person/92f3f397-dd30-4d35-95dc-6381a8d9dcd5
 name: Rachel May
 given_name: Rachel
 family_name: May
+gender: Female
 email: may@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/may-2019portrait.jpg?itok=2q2pYK34
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/may-2019portrait.jpg?itok=4i_QKFvz
 party:
-- name: Democratic
 - name: Democratic/Working Families
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '48'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '53'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '48'
 offices:
 - classification: capitol
   address: Suite 803; Albany,NY 12247
   voice: 518-455-2838
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/rachel-may/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/rachel-may/contact
+- url: https://www.nysenate.gov/senators/rachel-may
 ids:
   twitter: RachelMayNY
 sources:

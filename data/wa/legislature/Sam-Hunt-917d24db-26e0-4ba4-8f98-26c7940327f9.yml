@@ -1,6 +1,6 @@
 id: ocd-person/917d24db-26e0-4ba4-8f98-26c7940327f9
 name: Sam Hunt
-given_name: Sam
+given_name: Samuel W.
 family_name: Hunt
 gender: Male
 email: sam.hunt@leg.wa.gov
@@ -8,12 +8,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=5155
 party:
 - name: Democratic
 roles:
+- start_date: 2017-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '22'
 - start_date: 2011-01-01
   end_date: 2018-12-31
   type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
-  district: '22'
-- type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '22'
 offices:
@@ -21,8 +22,9 @@ offices:
   address: 405 Legislative Building; PO Box 40422; Olympia, WA 98504
   voice: 360-786-7642
 links:
-- url: http://sdc.wastateleg.org/Hunt/
-- url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://sdc.wastateleg.org/Hunt/
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
+- url: https://senatedemocrats.wa.gov/hunt/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WAL000253
@@ -31,5 +33,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/7a2e1a22-5736-4747-884a-26bd93132455
 sources:
+- url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: http://www.leg.wa.gov/senate/senators/Pages/default.aspx
 - url: https://app.leg.wa.gov/ContentParts/MemberDirectory/?a=Senate

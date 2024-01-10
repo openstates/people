@@ -1,29 +1,35 @@
 id: ocd-person/4febed48-b7fd-4b44-98e8-fb20de52968e
-name: Thomas L. Southworth
-given_name: Thomas
+name: Tom Southworth
+given_name: Tom
 family_name: Southworth
-email: Thomas.Southworth@leg.state.nh.us
+gender: Male
+email: thomas.southworth@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377316.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2022-12-07'
-  end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Strafford 11
+- start_date: 2022-12-07
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 20
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Strafford 11
 offices:
 - classification: district
   address: 56 Durham Road, Unit 26 Dover, NH 03820-4471
   voice: 603-742-0556
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=918
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=918
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377316
+other_names:
+- name: Thomas Southworth
+- name: Thomas L. Southworth
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001196

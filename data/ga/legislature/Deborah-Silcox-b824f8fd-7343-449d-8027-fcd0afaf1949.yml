@@ -1,20 +1,21 @@
 id: ocd-person/b824f8fd-7343-449d-8027-fcd0afaf1949
-name: Deborah Silcox
-given_name: Deborah
+name: Deborah D. Silcox
+given_name: Deborah D.
 family_name: Silcox
+gender: Female
 email: deborah.silcox@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/silcox-deborah-4887.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '52'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '53'
+- end_date: 2020-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '52'
 offices:
 - classification: capitol
   address: 408-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -22,15 +23,20 @@ offices:
 - classification: district
   address: '6300 Powers Ferry Rd, Ste. 600, # 177; Atlanta, GA 30339'
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4887&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4887&Session=27
 - url: https://www.legis.ga.gov/members/house/4887?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4887
+other_names:
+- name: Deborah Silcox
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000463
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4887&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4887&Session=27
 - url: https://www.legis.ga.gov/api/members/list/1031

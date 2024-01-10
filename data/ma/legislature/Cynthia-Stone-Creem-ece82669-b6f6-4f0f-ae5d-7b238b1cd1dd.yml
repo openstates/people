@@ -1,27 +1,30 @@
 id: ocd-person/ece82669-b6f6-4f0f-ae5d-7b238b1cd1dd
-name: Cynthia Stone Creem
+name: Cynthia Creem
 given_name: Cynthia
 family_name: Creem
 gender: Female
-email: Cynthia.Creem@masenate.gov
+email: cynthia.creem@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/CSC0.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Norfolk and Middlesex
+- end_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Middlesex and Norfolk
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: Norfolk and Middlesex
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 312-A; Boston, MA 02133
   voice: 617-722-1639
-  fax: 617-722-1266
 links:
 - url: https://malegislature.gov/Legislators/Profile/CSC0
+- url: https://www.senatorcindycreem.com/
+other_names:
+- name: Cynthia Stone Creem
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000008

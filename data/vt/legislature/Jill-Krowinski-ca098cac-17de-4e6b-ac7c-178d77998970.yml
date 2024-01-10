@@ -2,32 +2,36 @@ id: ocd-person/ca098cac-17de-4e6b-ac7c-178d77998970
 name: Jill Krowinski
 given_name: Jill
 family_name: Krowinski
+gender: Female
 email: jkrowinski@leg.state.vt.us
 image: https://legislature.vermont.gov/Documents/Legislators/JKrowinski.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-04'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
-  district: Chittenden-6-3
-- start_date: '2023-01-04'
+- start_date: 2023-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden-16
+- end_date: 2023-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden-6-3
 offices:
 - classification: capitol
   address: Vermont State House;115 State Street;Montpelier, VT 05633-5301
   voice: 802-828-2228
 - classification: district
-  voice: 802-363-3907
   address: 115 State St. Montpelier, VT 05633
+  voice: 802-363-3907
 links:
-- url: http://legislature.vermont.gov/people/single/2020/19342
-- url: http://legislature.vermont.gov/people/single/2022/19342
+- url: https://legislature.vermont.gov/people/single/2020/19342
+- url: https://legislature.vermont.gov/people/single/2022/19342
   note: homepage
 - url: https://legislature.vermont.gov/Documents/SmallMaps/CHI-6-3.pdf
   note: district map
+- url: https://legislature.vermont.gov/people/single/2024/19342
+other_names:
+- name: Jill L. Krowinski
 other_identifiers:
 - scheme: legacy_openstates
   identifier: VTL000214
@@ -37,8 +41,6 @@ other_identifiers:
   identifier: VTL000411
 - scheme: legacy_openstates
   identifier: VTL000606
-other_names:
-  - name: Jill L. Krowinski
 sources:
 - url: http://legislature.vermont.gov/people/loadAll/2020
 - url: http://legislature.vermont.gov/people/single/2020/19342

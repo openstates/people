@@ -2,12 +2,14 @@ id: ocd-person/f8bb88ef-0c5c-45fd-b4e5-397c14899892
 name: Sean Matthews
 given_name: Sean
 family_name: Matthews
-email: Sean.Matthews@delaware.gov
+gender: Male
+email: sean.matthews@delaware.gov
 image: https://legis.delaware.gov/images/default-source/default-album/SeanMatthews1.jpg?sfvrsn=0
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2015-01-13
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:de/government
   district: '10'
 offices:
@@ -19,6 +21,8 @@ links:
   note: legislator page
 - url: https://legis.delaware.gov/LegislatorDetail?personId=318
   note: homepage
+- url: https://legis.delaware.gov/AssemblyMember/150/Matthews
+- url: https://housedems.delaware.gov/members/house-district-10/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: DEL000126

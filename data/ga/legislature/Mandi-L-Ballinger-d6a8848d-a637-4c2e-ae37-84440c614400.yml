@@ -1,6 +1,6 @@
 id: ocd-person/d6a8848d-a637-4c2e-ae37-84440c614400
-name: Mandi Ballinger
-given_name: Mandi
+name: Mandi L. Ballinger
+given_name: Mandi L.
 family_name: Ballinger
 gender: Female
 email: mandi.ballinger@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/ballinger-ma
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '23'
 offices:
@@ -18,21 +19,26 @@ offices:
 - classification: district
   address: P.O. Box 5123; Canton, GA 30114
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=808&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=808&Session=27
 - url: https://www.legis.ga.gov/members/house/808?session=1029
 - url: https://www.legis.ga.gov/members/house/808?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/808
+other_names:
+- name: Mandi Ballinger
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000242
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=808&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=808&Session=27
 - url: https://www.legis.ga.gov/members/house/808?session=1029
-- url: https://www.legis.ga.gov/members/house/808?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/808?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/808?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

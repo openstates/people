@@ -1,21 +1,21 @@
 id: ocd-person/1bb8d14b-9d5d-4edd-8c93-37e95991a8e4
-name: Debra Bazemore
+name: Debra Jones-Bazemore
 given_name: Debra
-family_name: Bazemore
+family_name: Jones-Bazemore
 gender: Female
 email: debra.bazemore@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/bazemore-debra-4890.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '63'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '69'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '63'
 offices:
 - classification: capitol
   address: 507-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -23,21 +23,26 @@ offices:
 - classification: district
   address: 7042 Galloway Pointe; South Fulton, GA 30296
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4890&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4890&Session=27
 - url: https://www.legis.ga.gov/members/house/4890?session=1029
 - url: https://www.legis.ga.gov/members/house/4890?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4890
+other_names:
+- name: Debra Bazemore
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000447
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4890&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4890&Session=27
 - url: https://www.legis.ga.gov/members/house/4890?session=1029
-- url: https://www.legis.ga.gov/members/house/4890?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4890?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4890?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

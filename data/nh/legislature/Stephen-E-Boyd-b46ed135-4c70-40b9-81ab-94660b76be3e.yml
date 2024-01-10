@@ -1,27 +1,33 @@
 id: ocd-person/b46ed135-4c70-40b9-81ab-94660b76be3e
-name: Stephen E. Boyd
+name: Stephen Boyd
 given_name: Stephen
 family_name: Boyd
+gender: Male
 email: seboyd2020@gmail.com
+image: ''
 party:
 - name: Republican
 roles:
-- start_date: '2022-12-07'
-  end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Merrimack 10
+- start_date: 2022-12-07
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Merrimack 24
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Merrimack 10
 offices:
 - classification: district
   address: 51 Whitehall Road Hooksett, NH 03106
   voice: 603-203-0746
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9929
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9929
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9929
+other_names:
+- name: Stephen E. Boyd
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

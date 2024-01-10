@@ -2,33 +2,35 @@ id: ocd-person/b089786f-4435-4822-a7d6-3725cca787bf
 name: Mark McLean
 given_name: Mark
 family_name: McLean
+gender: Male
 email: mark.mclean@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377251.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 15
 - start_date: 2015-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 15
-- end_date: '2022-12-07'
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 44
-- start_date: '2022-12-07'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 15
 offices:
 - classification: district
   address: 43 Forest Hill Way Manchester, NH 03109-5145
   voice: 603-668-0076
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=859
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=859
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?member=377251
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001507

@@ -1,19 +1,21 @@
 id: ocd-person/e4bf077a-8468-49a6-a75c-24ee5076352e
-name: David Smith
-given_name: David
+name: Dave Smith
+given_name: David Allen
 family_name: Smith
 gender: Male
+email: david.smith@myfloridahouse.gov
 image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4718.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '38'
+- end_date: 2022-11-08
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '28'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '38'
 offices:
 - classification: capitol
   address: 315 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
@@ -22,13 +24,16 @@ offices:
   address: '#266, Suite 2001; 1511 East State Road 434; Winter Springs, FL 32708-5646'
   voice: 407-971-3570
 links:
-- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
 - url: https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=90
   note: member detail page
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718
 other_names:
+- name: David Smith
 - name: Smith, D.
 sources:
+- url: https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4718&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives

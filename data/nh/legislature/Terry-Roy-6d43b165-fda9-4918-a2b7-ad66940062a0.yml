@@ -2,28 +2,31 @@ id: ocd-person/6d43b165-fda9-4918-a2b7-ad66940062a0
 name: Terry Roy
 given_name: Terry
 family_name: Roy
-email: Terry.Roy@leg.state.nh.us
+gender: Male
+email: terry.roy@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408925.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2022-12-07'
-  end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 31
+- start_date: 2022-12-07
+  end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 32
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 31
 offices:
 - classification: district
   address: 252 South Road Deerfield, NH 03037-1702
   voice: 603-239-3369
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9272
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9272
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?member=408925
 sources:
 - url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408925
 - url: http://www.gencourt.state.nh.us/downloads/Members.txt

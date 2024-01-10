@@ -1,6 +1,6 @@
 id: ocd-person/e11cecf4-f2e5-49d9-ba9e-47681f779438
-name: Lee Anderson
-given_name: Lee
+name: Lee I. Anderson
+given_name: Lee I.
 family_name: Anderson
 gender: Male
 email: lee.anderson@senate.ga.gov
@@ -8,14 +8,15 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/anderson-lee
 party:
 - name: Republican
 roles:
+- start_date: 2017-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '24'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '117'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '24'
 offices:
 - classification: capitol
   address: 325-B CLOB; Atlanta, GA 30334
@@ -23,12 +24,14 @@ offices:
 - classification: district
   address: 160 Louisville Road; Grovetown, Ga 30813
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=723&Session=27
-- url: https://www.legis.ga.gov/members/senate/723?session=1029
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=723&Session=27
 - url: https://www.legis.ga.gov/members/senate/723?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/723?session=1029
+other_names:
+- name: Lee Anderson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000443
@@ -37,11 +40,13 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/5e9e4a33-4c6e-4e96-b87a-0f4a4b59aaf6
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=723&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=723&Session=27
 - url: https://www.legis.ga.gov/members/senate/723?session=1029
-- url: https://www.legis.ga.gov/members/senate/723?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/723?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/723?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

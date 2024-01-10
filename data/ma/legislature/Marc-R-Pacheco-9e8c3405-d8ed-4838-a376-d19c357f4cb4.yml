@@ -1,27 +1,29 @@
 id: ocd-person/9e8c3405-d8ed-4838-a376-d19c357f4cb4
-name: Marc R. Pacheco
+name: Marc Pacheco
 given_name: Marc
 family_name: Pacheco
 gender: Male
-email: Marc.Pacheco@masenate.gov
+email: marc.pacheco@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/MRP0.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Third Bristol and Plymouth
+- end_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Plymouth and Bristol
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: Third Bristol and Plymouth
 offices:
 - classification: capitol
   address: 24 Beacon St., Room 312-B; Boston, MA 02133
   voice: 617-722-1551
-  fax: 617-722-1074
 links:
 - url: https://malegislature.gov/Legislators/Profile/MRP0
+other_names:
+- name: Marc R. Pacheco
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000029

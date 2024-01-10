@@ -1,26 +1,31 @@
 id: ocd-person/4a80db99-34b2-4d33-995b-41d889592bf3
-name: Maureen C. Mooney
+name: Maureen Mooney
 given_name: Maureen
 family_name: Mooney
-email: maureen.mooney@leg.state.nh.us
+gender: Female
+email: rep.maureen.mooney@gmail.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376501.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 12
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 21
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 12
 offices:
 - classification: district
   address: PO Box 1676 Merrimack, NH 03054-1676
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=5772
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=5772
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=5772
+other_names:
+- name: Maureen C. Mooney
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

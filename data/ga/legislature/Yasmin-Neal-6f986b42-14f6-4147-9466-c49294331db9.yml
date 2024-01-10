@@ -8,41 +8,43 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/neal-yasmin-
 party:
 - name: Democratic
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '79'
+- start_date: 2011-01-01
+  end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '75'
 - start_date: 2021-01-11
-  end_date: '2023-01-09'
+  end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '74'
-- start_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '79'
 offices:
 - classification: capitol
   address: 511-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-6372
 links:
-- url: http://www1.legis.ga.gov/legis/2011_12/house/bios/nealYasmin.html
+- url: https://www1.legis.ga.gov/legis/2011_12/house/bios/nealYasmin.html
 - url: https://www.legis.ga.gov/members/house/765?session=1029
 - url: https://www.legis.ga.gov/members/house/765?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/765
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000173
 - scheme: openstates
   identifier: ocd-person/098ba64e-8f0c-4fd0-8928-d17aab9774db
 sources:
+- url: https://www1.legis.ga.gov/legis/2011_12/house/bios/nealYasmin.html
 - url: http://www1.legis.ga.gov/legis/2011_12/house/bios/nealYasmin.html
 - url: https://www.legis.ga.gov/members/house/765?session=1029
-- url: https://www.legis.ga.gov/members/house/765?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/765?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/765?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
