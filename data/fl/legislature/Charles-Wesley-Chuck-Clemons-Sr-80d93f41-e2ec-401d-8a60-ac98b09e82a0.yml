@@ -1,19 +1,21 @@
 id: ocd-person/80d93f41-e2ec-401d-8a60-ac98b09e82a0
-name: Charles Wesley "Chuck" Clemons, Sr.
-given_name: Charles Wesley "Chuck"
-family_name: Clemons, Sr.
+name: Chuck Clemons
+given_name: Charles Wesley
+family_name: Clemons
 gender: Male
+email: chuck.clemons@myfloridahouse.gov
 image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4655.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '22'
+- end_date: 2022-11-08
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '21'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '22'
 offices:
 - classification: capitol
   address: 422 The Capitol; 402 South Monroe Street; Tallahassee, FL 32399-1300
@@ -22,16 +24,19 @@ offices:
   address: Suite 1; 105 Southwest 140th Court; Newberry, FL 32669-3391
   voice: 352-313-6542
 links:
-- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
 - url: https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=90
   note: member detail page
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655
 other_names:
+- name: Charles Wesley "Chuck" Clemons, Sr.
 - name: Clemons
 other_identifiers:
 - scheme: legacy_openstates
   identifier: FLL000599
 sources:
+- url: https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4655&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
