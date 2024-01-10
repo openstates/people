@@ -1,19 +1,21 @@
 id: ocd-person/9aa18702-15a2-4281-926b-4e980f2e8aa0
-name: Roger K. Kirby
-given_name: Roger
+name: Roger Kirby
+given_name: Roger K.
 family_name: Kirby
 gender: Male
+email: rogerkirby61@gmail.com
 image: https://scstatehouse.gov/images/members/1006818061.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-11-14'
+- start_date: 2022-11-14
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
+  district: '101'
+- end_date: 2022-11-14
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '61'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
-  district: '101'
 offices:
 - classification: capitol
   address: 314B Blatt Bldg. Columbia, SC 29201
@@ -22,12 +24,12 @@ offices:
   address: 1690 Johnsonville Hwy. Lake City, SC 29560
   voice: 843-374-7653
 links:
-- url: http://www.scstatehouse.gov/member.php?code=1006818061
-- url: https://www.scstatehouse.gov/member.php?code=1006818061
-  note: homepage
 - url: https://scstatehouse.gov/member.php?code=1006818061
   note: homepage
+- url: https://www.scstatehouse.gov/member.php?code=1006818061
+  note: homepage
 other_names:
+- name: Roger K. Kirby
 - name: Kirby, Roger K.
 other_identifiers:
 - scheme: legacy_openstates

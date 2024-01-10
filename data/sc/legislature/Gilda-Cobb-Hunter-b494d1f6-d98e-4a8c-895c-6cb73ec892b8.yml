@@ -3,17 +3,19 @@ name: Gilda Cobb-Hunter
 given_name: Gilda
 family_name: Cobb-Hunter
 gender: Female
+email: gildacobbhunter@schouse.gov
 image: https://scstatehouse.gov/images/members/0372727228.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-11-14'
+- start_date: 2022-11-14
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
+  district: '95'
+- end_date: 2022-11-14
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '66'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
-  district: '95'
 offices:
 - classification: capitol
   address: 309C Blatt Bldg. Columbia, SC 29201
@@ -22,10 +24,9 @@ offices:
   address: 4188 Five Chop Rd. Orangeburg, SC 29115
   voice: 803-534-2448
 links:
-- url: http://www.scstatehouse.gov/member.php?code=0372727228
-- url: https://www.scstatehouse.gov/member.php?code=0372727228
-  note: homepage
 - url: https://scstatehouse.gov/member.php?code=0372727228
+  note: homepage
+- url: https://www.scstatehouse.gov/member.php?code=0372727228
   note: homepage
 other_names:
 - name: Cobb-Hunter, Gilda
