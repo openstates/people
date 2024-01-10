@@ -1,25 +1,21 @@
 id: ocd-person/9b4e7cb9-4e4e-484d-8ce9-4fe4a73b8c59
-name: Mia S. McLeod
-given_name: Mia
+name: Mia McLeod
+given_name: Mia S.
 family_name: McLeod
 gender: Female
+email: mia@scsenate.gov
 image: https://scstatehouse.gov/images/members/0279545421.jpg
 party:
-- end_date: '2023-01-23'
-  name: Democratic
-- end_date: '2023-05-23'
-  name: Independent
-- end_date: '2023-12-27'
-  name: Democratic
 - name: Independent
 roles:
+- start_date: 2023-01-10
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
+  district: '22'
 - end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '79'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
-  district: '22'
 offices:
 - classification: capitol
   address: 604 Gressette Bldg. Columbia, SC 29201
@@ -27,12 +23,12 @@ offices:
 - classification: district
   address: P. O. Box 290692 Columbia, SC 29229
 links:
-- url: http://www.scstatehouse.gov/member.php?code=0279545421
-- url: https://www.scstatehouse.gov/member.php?code=0279545421
-  note: homepage
 - url: https://scstatehouse.gov/member.php?code=0279545421
   note: homepage
+- url: https://www.scstatehouse.gov/member.php?code=0279545421
+  note: homepage
 other_names:
+- name: Mia S. McLeod
 - name: McLeod, Mia S.
 other_identifiers:
 - scheme: legacy_openstates
