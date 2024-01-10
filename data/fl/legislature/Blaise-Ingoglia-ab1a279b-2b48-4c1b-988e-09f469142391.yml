@@ -8,13 +8,14 @@ image: https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s11_5410.
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '11'
+- end_date: 2022-11-08
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '35'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '11'
 offices:
 - classification: capitol
   address: 310 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -23,14 +24,16 @@ offices:
   address: 2943 Landover Blvd.; Spring Hill, FL 34608
   voice: 352-666-5707
 links:
-- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
 - url: https://flsenate.gov/Senators/2022-2024/S11
   note: member detail page
+- url: https://www.flsenate.gov/Senators/S11
 other_identifiers:
 - scheme: legacy_openstates
   identifier: FLL000622
 sources:
+- url: https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4603&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives

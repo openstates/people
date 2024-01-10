@@ -1,6 +1,6 @@
 id: ocd-person/a8a2eaa4-449b-441f-96bb-d8a3e8191479
-name: Shevrin D. "Shev" Jones
-given_name: Shevrin
+name: Shev Jones
+given_name: Shevrin D.
 family_name: Jones
 gender: Male
 email: jones.shevrin.web@flsenate.gov
@@ -8,18 +8,18 @@ image: https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s34_5453.
 party:
 - name: Democratic
 roles:
-- end_date: '2020-12-31'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '101'
-- end_date: '2022-11-08'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '35'
-- start_date: '2022-11-08'
+- start_date: 2022-11-08
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '34'
+- end_date: 2020-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '101'
+- end_date: 2022-11-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '35'
 offices:
 - classification: capitol
   address: 218 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -28,15 +28,19 @@ offices:
   address: 606 Northwest 183rd Street; Miami Gardens, FL 33169
   voice: 305-493-6002
 links:
-- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4559&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4559&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4559&LegislativeTermId=88
 - url: https://www.flsenate.gov/Senators/S35
 - url: https://flsenate.gov/Senators/2022-2024/S34
   note: member detail page
+- url: https://www.flsenate.gov/Senators/S34
+other_names:
+- name: Shevrin D. "Shev" Jones
 other_identifiers:
 - scheme: legacy_openstates
   identifier: FLL000625
 sources:
+- url: https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4559&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives
