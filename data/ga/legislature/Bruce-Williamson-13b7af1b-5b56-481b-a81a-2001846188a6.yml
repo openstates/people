@@ -1,6 +1,6 @@
 id: ocd-person/13b7af1b-5b56-481b-a81a-2001846188a6
-name: Bruce Williamson
-given_name: Bruce
+name: Hugh Bruce Williamson
+given_name: Hugh Bruce
 family_name: Williamson
 gender: Male
 email: bruce.williamson@house.ga.gov
@@ -8,14 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/williamson-b
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '115'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '112'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '115'
 offices:
 - classification: capitol
   address: 415-B State Capitol; Atlanta, GA 30334
@@ -23,25 +23,29 @@ offices:
 - classification: district
   address: PO Box 430; Monroe, GA 30655
   voice: 770-267-2566
-  name: 'District Office #1'
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
 - url: https://www.legis.ga.gov/members/house/778?session=1029
 - url: https://www.legis.ga.gov/members/house/778?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/778
+other_names:
+- name: Bruce Williamson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000232
 - scheme: legacy_openstates
   identifier: GAL000376
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
 - url: https://www.legis.ga.gov/members/house/778?session=1029
-- url: https://www.legis.ga.gov/members/house/778?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/778?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/778?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

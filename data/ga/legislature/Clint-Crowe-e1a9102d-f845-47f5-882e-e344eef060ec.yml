@@ -1,6 +1,6 @@
 id: ocd-person/e1a9102d-f845-47f5-882e-e344eef060ec
-name: Clint Crowe
-given_name: Clint
+name: Clinton Crowe
+given_name: Clinton
 family_name: Crowe
 gender: Male
 email: clint.crowe@house.ga.gov
@@ -8,14 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/crowe-clint-
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '110'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '118'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '110'
 offices:
 - classification: capitol
   address: 612-A Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -26,12 +26,15 @@ links:
 - url: https://www.legis.ga.gov/members/house/5002?session=1029
 - url: https://www.legis.ga.gov/members/house/5002?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5002
+other_names:
+- name: Clint Crowe
 sources:
 - url: https://www.legis.ga.gov/members/house/5002?session=1029
-- url: https://www.legis.ga.gov/members/house/5002?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/5002?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/5002?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

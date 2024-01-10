@@ -3,38 +3,42 @@ name: Kim Schofield
 given_name: Kim
 family_name: Schofield
 gender: Female
-email: kim.schofield@house.ga.gov
+email: kim.schoefield@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/schofield-kim-4916.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '63'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '60'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '63'
 offices:
 - classification: capitol
   address: 608-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0298
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4916&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4916&Session=27
 - url: https://www.legis.ga.gov/members/house/4916?session=1029
 - url: https://www.legis.ga.gov/members/house/4916?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4916
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000483
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4916&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4916&Session=27
 - url: https://www.legis.ga.gov/members/house/4916?session=1029
-- url: https://www.legis.ga.gov/members/house/4916?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4916?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4916?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

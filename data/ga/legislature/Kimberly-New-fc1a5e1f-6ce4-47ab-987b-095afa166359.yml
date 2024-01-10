@@ -1,13 +1,15 @@
 id: ocd-person/fc1a5e1f-6ce4-47ab-987b-095afa166359
-name: Kimberly New
-given_name: Kimberly
+name: Kimberly R. New
+given_name: Kimberly R.
 family_name: New
+gender: Female
 email: kimberly.new@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/new-kimberly-5030.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '64'
 offices:
@@ -17,8 +19,11 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5030?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5030
+other_names:
+- name: Kimberly New
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

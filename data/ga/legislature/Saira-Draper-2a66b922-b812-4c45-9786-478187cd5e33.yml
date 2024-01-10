@@ -1,13 +1,15 @@
 id: ocd-person/2a66b922-b812-4c45-9786-478187cd5e33
-name: Saira Draper
-given_name: Saira
+name: Saira Amir Draper
+given_name: Saira Amir
 family_name: Draper
+gender: Female
 email: saira.draper@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/draper-saira-5038.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '90'
 offices:
@@ -17,8 +19,11 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5038?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5038
+other_names:
+- name: Saira Draper
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

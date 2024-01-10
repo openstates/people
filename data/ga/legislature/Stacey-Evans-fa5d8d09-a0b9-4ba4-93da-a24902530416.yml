@@ -1,6 +1,6 @@
 id: ocd-person/fa5d8d09-a0b9-4ba4-93da-a24902530416
-name: Stacey Evans
-given_name: Stacey
+name: Stacey Godfrey Evans
+given_name: Stacey Godfrey
 family_name: Evans
 gender: Female
 email: stacey.evans@house.ga.gov
@@ -8,20 +8,20 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/evans-stacey
 party:
 - name: Democratic
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '40'
-- start_date: '2013-01-01'
-  end_date: '2017-11-05'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '42'
 - start_date: 2021-01-11
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '57'
+- start_date: 2011-01-01
+  end_date: 2012-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '40'
+- start_date: 2013-01-01
+  end_date: 2017-11-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '42'
 offices:
 - classification: capitol
   address: 409-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -30,12 +30,15 @@ offices:
   address: 750 Piedmont Ave NE; Atlanta, GA 30308
   voice: 770-710-4087
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
 - url: https://www.legis.ga.gov/members/house/762?session=1029
 - url: https://www.legis.ga.gov/members/house/762?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/762
+other_names:
+- name: Stacey Evans
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000108
@@ -44,12 +47,15 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/05d3a1bb-a849-4241-bbac-5a33a061de8d
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
+- url: https://www.house.ga.gov/Representatives/en-US/HouseMembersList.aspx?Sort=District&Session=25
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
 - url: http://www.house.ga.gov/Representatives/en-US/HouseMembersList.aspx?Sort=District&Session=25
 - url: https://www.legis.ga.gov/members/house/762?session=1029
-- url: https://www.legis.ga.gov/members/house/762?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/762?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/762?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

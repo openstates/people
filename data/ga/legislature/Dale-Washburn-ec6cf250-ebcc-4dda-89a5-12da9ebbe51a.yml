@@ -1,6 +1,6 @@
 id: ocd-person/ec6cf250-ebcc-4dda-89a5-12da9ebbe51a
-name: Dale Washburn
-given_name: Dale
+name: Roy Dale Washburn
+given_name: Roy Dale
 family_name: Washburn
 gender: Male
 email: dale.washburn@house.ga.gov
@@ -8,14 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/washburn-dal
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '141'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '144'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '141'
 offices:
 - classification: capitol
   address: 401-H Coverdell Legislative Office Bldg.; Atlanta, GA 30334
@@ -23,18 +23,23 @@ offices:
 - classification: district
   address: 3040 Riverside Dr, Suite C-2; Macon, GA 31210
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4958&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4958&Session=27
 - url: https://www.legis.ga.gov/members/house/4958?session=1029
 - url: https://www.legis.ga.gov/members/house/4958?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4958
+other_names:
+- name: Dale Washburn
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4958&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4958&Session=27
 - url: https://www.legis.ga.gov/members/house/4958?session=1029
-- url: https://www.legis.ga.gov/members/house/4958?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4958?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4958?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/merritt-nikk
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2021-01-11
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '9'
 offices:
@@ -19,14 +20,14 @@ offices:
   address: 1911 Grayson Highway, Suite 8367; Grayson, GA 30017
 links:
 - url: https://www.legis.ga.gov/members/senate/4978?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/4978?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
 sources:
 - url: https://www.legis.ga.gov/members/senate/4978?session=1029
-- url: https://www.legis.ga.gov/members/senate/4978?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/4978?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4978?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

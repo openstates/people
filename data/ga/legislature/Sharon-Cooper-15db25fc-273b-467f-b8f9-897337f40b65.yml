@@ -8,13 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/cooper-sharo
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '45'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '43'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '45'
 offices:
 - classification: capitol
   address: 436 State Capitol; Atlanta, GA 30334
@@ -22,25 +23,27 @@ offices:
 - classification: district
   address: 1234 Powers Ferry Rd., Suite 104; Marietta, GA 30067
   voice: 770-956-8357
-  fax: 770-956-9693
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/members/house/86?session=1029
 - url: https://www.legis.ga.gov/members/house/86?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/86
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000090
 - scheme: legacy_openstates
   identifier: GAL000265
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/members/house/86?session=1029
-- url: https://www.legis.ga.gov/members/house/86?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/86?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/86?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

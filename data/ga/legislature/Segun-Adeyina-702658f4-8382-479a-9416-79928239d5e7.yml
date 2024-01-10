@@ -2,12 +2,14 @@ id: ocd-person/702658f4-8382-479a-9416-79928239d5e7
 name: Segun Adeyina
 given_name: Segun
 family_name: Adeyina
+gender: Male
 email: segun.adeyina@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/adeyina-segun-5044.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '110'
 offices:
@@ -19,8 +21,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5044?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5044
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

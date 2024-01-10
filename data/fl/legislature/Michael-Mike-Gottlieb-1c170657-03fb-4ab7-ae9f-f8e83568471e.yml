@@ -1,17 +1,21 @@
 id: ocd-person/1c170657-03fb-4ab7-ae9f-f8e83568471e
-name: Michael "Mike" Gottlieb
+name: Mike Gottlieb
+given_name: Michael Alan
+family_name: Gottlieb
 gender: Male
+email: mike.gottlieb@myfloridahouse.gov
 image: https://myfloridahouse.gov//FileStores/Web/Imaging/Member/4724.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '102'
+- end_date: 2022-11-08
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '98'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '102'
 offices:
 - classification: capitol
   address: 407 House Office Building; 402 South Monroe Street; Tallahassee, FL 32399-1300
@@ -20,13 +24,16 @@ offices:
   address: 400 Northwest 73rd Avenue; Plantation, FL 33317-1609
   voice: 954-655-5498
 links:
-- url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=88
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=88
 - url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=88
 - url: https://myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=90
   note: member detail page
+- url: https://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724
 other_names:
+- name: Michael "Mike" Gottlieb
 - name: Gottlieb
 sources:
+- url: https://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: http://www.myfloridahouse.gov/Sections/Representatives/details.aspx?MemberId=4724&LegislativeTermId=88
 - url: http://www.myfloridahouse.gov/Sections/Representatives/representatives.aspx
 - url: https://www.myfloridahouse.gov/Representatives

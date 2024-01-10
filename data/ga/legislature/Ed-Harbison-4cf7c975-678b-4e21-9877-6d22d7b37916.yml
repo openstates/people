@@ -15,25 +15,26 @@ offices:
 - classification: capitol
   address: 432 State Capitol; Atlanta, GA 30334
   voice: 404-656-0074
-  fax: 404-463-5547
 - classification: district
   address: P.O. Box 1292; Columbus, GA 31902
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
-- url: https://www.legis.ga.gov/members/senate/17?session=1029
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
 - url: https://www.legis.ga.gov/members/senate/17?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/17?session=1029
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000020
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
 - url: https://www.legis.ga.gov/members/senate/17?session=1029
-- url: https://www.legis.ga.gov/members/senate/17?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/17?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/17?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

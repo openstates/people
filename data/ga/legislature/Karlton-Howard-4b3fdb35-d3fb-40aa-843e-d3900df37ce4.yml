@@ -2,12 +2,14 @@ id: ocd-person/4b3fdb35-d3fb-40aa-843e-d3900df37ce4
 name: Karlton Howard
 given_name: Karlton
 family_name: Howard
+gender: Male
 email: karlton.howard@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/howard-karlton-5056.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '129'
 offices:
@@ -17,8 +19,9 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house/5056?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5056
 sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)

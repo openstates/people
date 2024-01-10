@@ -8,17 +8,18 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/KAVANAGH.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-01-14'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '3'
+- end_date: 2018-01-14
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '23'
-- end_date: '2023-01-09'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '23'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '3'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 200;Phoenix, AZ 85007
@@ -29,6 +30,7 @@ links:
 - url: https://www.azleg.gov/House/House-member/?legislature=55&session=125&legislator=2056
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2132
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=128&legislator=2132
+- url: https://www.azleg.gov/house-member/?legislature=55&legislator=2056
 ids:
   twitter: johnkavanagh_az
   facebook: John.KavanaghAZ
