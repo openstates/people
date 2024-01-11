@@ -2,23 +2,24 @@ id: ocd-person/3ec7aed7-4927-419a-b9e3-5bb337fd4a6c
 name: Sam Whitson
 given_name: Sam
 family_name: Whitson
+gender: Male
 email: rep.sam.whitson@capitol.tn.gov
 image: https://www.capitol.tn.gov/house/members/images/h65.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-11-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '65'
 offices:
 - classification: capitol
   address: 425 Rep. John Lewis Way N. Suite 552 Cordell Hull Bldg. Nashville, TN 37243
   voice: 615-741-1864
-  fax: 615-253-0228
 - classification: district
   address: 803 Fair Street Franklin, TN 37064
 links:
-- url: http://www.capitol.tn.gov/house/members/h65.html
+- url: https://www.capitol.tn.gov/house/members/h65.html
 - url: https://www.capitol.tn.gov/house/members/h65.html
   note: homepage
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H65
@@ -27,6 +28,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TNL000486
 sources:
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H
 - url: http://www.capitol.tn.gov/house/members/
 - url: http://www.capitol.tn.gov/house/members/h65.html
 - url: https://www.capitol.tn.gov/house/members/
