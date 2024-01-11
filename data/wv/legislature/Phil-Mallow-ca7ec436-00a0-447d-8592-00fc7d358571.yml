@@ -1,6 +1,6 @@
 id: ocd-person/ca7ec436-00a0-447d-8592-00fc7d358571
 name: Phil Mallow
-given_name: Phil
+given_name: Philip Wayne
 family_name: Mallow
 gender: Male
 email: phil.mallow@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/mallow_phil.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '75'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '50'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '75'
 offices:
 - classification: capitol
   address: Room 252M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -22,10 +23,14 @@ offices:
 - classification: district
   address: P.O. Box 3 Kingmont, WV 26578
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Mallow
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Mallow
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Mallow
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Mallow
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Mallow
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Mallow
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Mallow
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Mallow
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Mallow

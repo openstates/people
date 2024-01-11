@@ -1,6 +1,6 @@
 id: ocd-person/93c6a37e-8b80-4a72-9f07-2b22579af272
 name: Paul Espinosa
-given_name: Paul
+given_name: Paul Allen
 family_name: Espinosa
 gender: Male
 email: paul.espinosa@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/espinosa_paul.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '98'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '66'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '98'
 offices:
 - classification: capitol
   address: Room 246M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,13 +24,17 @@ offices:
   address: 107 Hancock Court Charles Town, WV 25414
   voice: 304-728-8139
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Espinosa
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Espinosa
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Espinosa
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Espinosa
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate+Espinosa
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000227
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Espinosa
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Espinosa
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Espinosa
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Espinosa

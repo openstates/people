@@ -1,6 +1,6 @@
 id: ocd-person/5bb7ff93-88f4-42ec-ba11-6921dead66a1
 name: George Miller
-given_name: George
+given_name: George A.
 family_name: Miller
 gender: Male
 email: george.miller@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/miller_george.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '90'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '58'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '90'
 offices:
 - classification: capitol
   address: Room 276M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -22,10 +23,14 @@ offices:
 - classification: district
   address: 2450 Martinsburg Road Berkeley Springs, WV 25411
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Miller
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Miller
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Miller
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Miller
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Miller
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Miller
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Miller
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Miller
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Miller

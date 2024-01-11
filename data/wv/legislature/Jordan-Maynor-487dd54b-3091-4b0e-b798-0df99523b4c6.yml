@@ -1,6 +1,6 @@
 id: ocd-person/487dd54b-3091-4b0e-b798-0df99523b4c6
 name: Jordan Maynor
-given_name: Jordan
+given_name: Jordan A.
 family_name: Maynor
 gender: Male
 email: jordan.maynor@wvhouse.gov
@@ -8,21 +8,25 @@ image: http://www.wvlegislature.gov/images/members/2023/house/maynor_jordan.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '41'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '28'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '41'
 offices:
 - classification: capitol
   address: Room 221E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
   voice: 304-340-3164
 links:
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Maynor
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Maynor
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Maynor
 sources:
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Maynor
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Maynor
 extras:

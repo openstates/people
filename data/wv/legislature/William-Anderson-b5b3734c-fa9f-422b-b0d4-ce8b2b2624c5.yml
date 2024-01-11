@@ -1,6 +1,6 @@
 id: ocd-person/b5b3734c-fa9f-422b-b0d4-ce8b2b2624c5
-name: William Anderson
-given_name: William
+name: Bill Anderson
+given_name: Everette William
 family_name: Anderson
 gender: Male
 email: bill.anderson@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/anderson_bill.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '10'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '8'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '10'
 offices:
 - classification: capitol
   address: Room 200E-C, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,17 +24,23 @@ offices:
   address: 1011 Highland Avenue Williamstown, WV 26187
   voice: 304-481-4129
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson,%20B.
   note: homepage
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson,%20B.
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson
   note: homepage
+other_names:
+- name: William Anderson
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000046
 - scheme: legacy_openstates
   identifier: WVL000257
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson,%20B.
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Anderson
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Anderson

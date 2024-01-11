@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/fast_tom.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-30'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '51'
+- end_date: 2022-11-30
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '32'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '51'
 offices:
 - classification: capitol
   address: Room 408M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,13 +24,17 @@ offices:
   address: P.O. Box 332 Fayetteville, WV 25840
   voice: 304-574-0777
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fast
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fast
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fast
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fast
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate+Fast
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000285
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fast
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fast
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Fast
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Fast

@@ -1,6 +1,6 @@
 id: ocd-person/387d11ce-ecf1-4c80-a338-bd8c86f52004
 name: Joey Garcia
-given_name: Joey
+given_name: Joseph David
 family_name: Garcia
 gender: Male
 email: joey.garcia@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/garcia_joey.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '76'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '50'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '76'
 offices:
 - classification: capitol
   address: Room 4R, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -22,10 +23,14 @@ offices:
 - classification: district
   address: 207 Circle Drive Fairmont, WV 26554
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Garcia
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Garcia
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Garcia
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Garcia
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia

@@ -1,6 +1,6 @@
 id: ocd-person/69547a9d-4e96-4ea8-94eb-528e40d5d004
 name: Patrick Martin
-given_name: Patrick
+given_name: Patrick S.
 family_name: Martin
 gender: Male
 email: patrick.martin@wvsenate.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/senate/martin_patrick.jp
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-01'
+- start_date: 2020-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '12'
+- end_date: 2020-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '46'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '12'
 offices:
 - classification: capitol
   address: Room 209W, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -22,14 +23,19 @@ offices:
 - classification: district
   address: 111 Homeland Road Jane Lew, WV 26378
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
-- url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
-- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Martin
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
+- url: https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Martin
   note: homepage
+- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Martin
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000354
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
+- url: https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
+- url: https://www.wvlegislature.gov/Senate1/roster.cfm
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Martin
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Martin
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Martin
 - url: http://www.wvlegislature.gov/Senate1/roster.cfm

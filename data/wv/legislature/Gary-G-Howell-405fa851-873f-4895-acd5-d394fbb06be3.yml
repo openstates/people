@@ -1,6 +1,6 @@
 id: ocd-person/405fa851-873f-4895-acd5-d394fbb06be3
-name: Gary G. Howell
-given_name: Gary
+name: Gary Howell
+given_name: Gary G.
 family_name: Howell
 gender: Male
 email: gary.howell@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/howell_gary.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '87'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '56'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '87'
 offices:
 - classification: capitol
   address: Room 202E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,9 +24,12 @@ offices:
   address: P.O. Box 39 Keyser, WV 26726
   voice: 304-790-9022
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Howell
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Howell
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Howell
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Howell
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate+Howell
+other_names:
+- name: Gary G. Howell
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000125
@@ -34,6 +38,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000265
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Howell
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Howell
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Howell
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Howell

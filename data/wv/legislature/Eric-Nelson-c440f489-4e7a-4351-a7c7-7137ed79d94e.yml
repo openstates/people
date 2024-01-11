@@ -1,6 +1,6 @@
 id: ocd-person/c440f489-4e7a-4351-a7c7-7137ed79d94e
 name: Eric Nelson
-given_name: Eric
+given_name: Fredrik Eric
 family_name: Nelson
 gender: Male
 email: eric.nelson@wvsenate.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/senate/nelson_eric.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2020-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '17'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '35'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '17'
 offices:
 - classification: capitol
   address: Room 216W, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -22,10 +23,11 @@ offices:
 - classification: district
   address: P.O. Box 186 Charleston, WV 25321
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Nelson
-- url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Nelson
-- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Nelson
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Nelson
+- url: https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Nelson
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Nelson
   note: homepage
+- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Nelson
 other_names:
 - name: Nelson
 other_identifiers:
@@ -34,6 +36,10 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000181
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Nelson
+- url: https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Nelson
+- url: https://www.wvlegislature.gov/Senate1/roster.cfm
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Nelson
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Nelson
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Nelson
 - url: http://www.wvlegislature.gov/Senate1/roster.cfm
