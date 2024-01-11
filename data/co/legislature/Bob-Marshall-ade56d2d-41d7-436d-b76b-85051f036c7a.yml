@@ -1,13 +1,15 @@
 id: ocd-person/ade56d2d-41d7-436d-b76b-85051f036c7a
 name: Bob Marshall
-given_name: Bob
+given_name: Robert
 family_name: Marshall
+gender: Male
 email: bob.marshall.house@coleg.gov
 image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023b_marshall%2C%20bob.jpg?itok=5ohSNQXK
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '43'
 offices:
@@ -15,9 +17,11 @@ offices:
   address: 200 E Colfax RM 307 Denver, CO 80203
   voice: 303-866-2936
 links:
-- url: http://leg.colorado.gov/legislators/bob-marshall
+- url: https://leg.colorado.gov/legislators/bob-marshall
   note: homepage
 sources:
+- url: https://leg.colorado.gov/legislators
+- url: https://leg.colorado.gov/legislators/bob-marshall
 - url: http://leg.colorado.gov/legislators
 - url: http://leg.colorado.gov/legislators/bob-marshall
 extras:
