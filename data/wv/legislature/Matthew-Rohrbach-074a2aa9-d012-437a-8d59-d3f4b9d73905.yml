@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/rohrbach_matthew.j
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '26'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '17'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '26'
 offices:
 - classification: capitol
   address: Room 242M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,13 +24,17 @@ offices:
   address: 25 Kensington Lane Huntington, WV 25705
   voice: 304-563-9040
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Rohrbach
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Rohrbach
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Rohrbach
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Rohrbach
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate+Rohrbach
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000323
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Rohrbach
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Rohrbach
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Rohrbach
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Rohrbach

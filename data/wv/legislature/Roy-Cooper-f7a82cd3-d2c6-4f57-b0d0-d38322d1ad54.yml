@@ -1,6 +1,6 @@
 id: ocd-person/f7a82cd3-d2c6-4f57-b0d0-d38322d1ad54
 name: Roy Cooper
-given_name: Roy
+given_name: Roy Gale
 family_name: Cooper
 gender: Male
 email: roy.cooper@wvhouse.gov
@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/cooper_roy.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '40'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '28'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '40'
 offices:
 - classification: capitol
   address: Room 203E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,13 +24,17 @@ offices:
   address: 31 Pam's Way Wayside, WV 24985
   voice: 304-466-5523
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Cooper
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Cooper
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate+Cooper
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000172
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Cooper
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Cooper
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Cooper

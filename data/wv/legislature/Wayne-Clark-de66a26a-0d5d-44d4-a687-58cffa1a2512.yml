@@ -2,18 +2,20 @@ id: ocd-person/de66a26a-0d5d-44d4-a687-58cffa1a2512
 name: Wayne Clark
 given_name: Wayne
 family_name: Clark
+gender: Male
 email: wayne.clark@wvhouse.gov
 image: http://www.wvlegislature.gov/images/members/2023/house/clark_wayne.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '99'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '65'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '99'
 offices:
 - classification: capitol
   address: Room 202E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -21,10 +23,14 @@ offices:
 - classification: district
   address: 397 Davis Street Charles Town, WV 25414
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Clark
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Clark
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Clark
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Clark
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Clark
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Clark
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Clark
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Clark
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Clark

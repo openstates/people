@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/hanshaw_roger.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '62'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '33'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '62'
 offices:
 - classification: capitol
   address: Room 228M, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,13 +24,17 @@ offices:
   address: 5035 Wallback Road Wallback, WV 25285
   voice: 304-587-9947
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Speaker+Hanshaw
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Speaker%20Hanshaw
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Speaker+Hanshaw
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Speaker%20Hanshaw
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Speaker%20Hanshaw
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000309
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Speaker+Hanshaw
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Speaker%20Hanshaw
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Speaker+Hanshaw
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Speaker%20Hanshaw

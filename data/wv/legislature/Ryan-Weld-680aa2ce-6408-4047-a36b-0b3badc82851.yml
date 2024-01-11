@@ -1,6 +1,6 @@
 id: ocd-person/680aa2ce-6408-4047-a36b-0b3badc82851
 name: Ryan Weld
-given_name: Ryan
+given_name: Ryan William
 family_name: Weld
 gender: Male
 email: ryan.weld@wvsenate.gov
@@ -8,14 +8,15 @@ image: http://www.wvlegislature.gov/images/members/2023/senate/weld_ryan.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2016-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '1'
 - start_date: 2015-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '2'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '1'
 offices:
 - classification: capitol
   address: Room 216W, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,9 +24,10 @@ offices:
 - classification: district
   address: 1449 Pleasant Avenue Wellsburg, WV 26070
 links:
-- url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Weld
-- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Weld
+- url: https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Weld
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Weld
   note: homepage
+- url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Weld
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000376
@@ -34,6 +36,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/5532c060-4f50-4777-8998-335c23c6aefd
 sources:
+- url: https://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Weld
+- url: https://www.wvlegislature.gov/Senate1/roster.cfm
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Weld
 - url: http://www.legis.state.wv.us/Senate1/lawmaker.cfm?member=Senator+Weld
 - url: http://www.wvlegislature.gov/Senate1/roster.cfm
 - url: http://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Weld

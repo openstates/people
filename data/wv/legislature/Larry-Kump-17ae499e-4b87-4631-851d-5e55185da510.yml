@@ -1,25 +1,27 @@
 id: ocd-person/17ae499e-4b87-4631-851d-5e55185da510
-name: Larry D. Kump
-given_name: Larry
+name: Larry Kump
+given_name: Larry Douglas
 family_name: Kump
+gender: Male
 email: larry.kump@wvhouse.gov
 image: http://www.wvlegislature.gov/images/members/2023/house/kump_larry.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '94'
+- start_date: 2011-01-01
+  end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '52'
-- start_date: '2018-12-01'
-  end_date: '2020-12-31'
+- start_date: 2018-12-01
+  end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '59'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '94'
 offices:
 - classification: capitol
   address: Room 68MB, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -28,10 +30,12 @@ offices:
   address: P.O. Box 1131 Falling Waters, WV 25419
   voice: 304-274-3104
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Kump
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kump
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Kump
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kump
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kump
 other_names:
+- name: Larry D. Kump
 - name: Larry Kump
 other_identifiers:
 - scheme: legacy_openstates
@@ -43,6 +47,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/24eb7532-0d81-4397-960d-efca08b7af96
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Kump
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kump
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Kump
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Kump

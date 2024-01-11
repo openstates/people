@@ -8,13 +8,14 @@ image: http://www.wvlegislature.gov/images/members/2023/house/phillips_chris.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-01'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '68'
+- end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '47'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
-  district: '68'
 offices:
 - classification: capitol
   address: Room 213E, Bldg. 1 1900 Kanawha Blvd. E. Charleston, WV 25305
@@ -23,10 +24,14 @@ offices:
   address: 742 Sawmill Road Buckhannon, WV 26201
   voice: 304-614-3246
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Phillips
-- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Phillips
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Phillips
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Phillips
   note: homepage
+- url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Phillips
 sources:
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Phillips
+- url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Phillips
 - url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Phillips
 - url: http://www.wvlegislature.gov/House/roster.cfm
 - url: http://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Phillips
