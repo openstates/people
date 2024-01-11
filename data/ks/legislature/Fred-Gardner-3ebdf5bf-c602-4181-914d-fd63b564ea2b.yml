@@ -2,21 +2,25 @@ id: ocd-person/3ebdf5bf-c602-4181-914d-fd63b564ea2b
 name: Fred Gardner
 given_name: Fred
 family_name: Gardner
-email: Fred.Gardner@house.ks.gov
+gender: Male
+email: fred.gardner@house.ks.gov
 image: http://www.kslegislature.org/li/m/images/pics/rep_gardner_fred_1.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ks/government
   district: '9'
 offices:
 - classification: capitol
-  address: Room 512-N; Kansas State Capitol Building; 300 SW 10th St.; Topeka, KS 66612
+  address: Room 512-N; Kansas State Capitol Building; 300 SW 10th St.; Topeka, KS
+    66612
   voice: 785-296-7451
 links:
-- url: http://www.kslegislature.org/li/b2023_24/members/rep_gardner_fred_1/
+- url: https://www.kslegislature.org/li/b2023_24/members/rep_gardner_fred_1/
 sources:
+- url: https://www.kslegislature.org/li/api/v11/rev-1/members/rep_gardner_fred_1/
 - url: http://www.kslegislature.org/li/api/v11/rev-1/members/rep_gardner_fred_1/
 extras:
   occupation: Veterinarian

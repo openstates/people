@@ -2,23 +2,24 @@ id: ocd-person/d1ead0ef-cc7a-48b3-9fec-0afc8b9d013d
 name: John Crawford
 given_name: John
 family_name: Crawford
+gender: Male
 email: rep.john.crawford@capitol.tn.gov
 image: https://www.capitol.tn.gov/house/members/images/h1.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-11-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '1'
 offices:
 - classification: capitol
   address: 425 Rep. John Lewis Way N. Suite 540 Cordell Hull Bldg. Nashville, TN 37243
   voice: 615-741-7623
-  fax: 615-253-0272
 - classification: district
   address: 904 E. Center Street Street Kingsport, TN 37660
 links:
-- url: http://www.capitol.tn.gov/house/members/h1.html
+- url: https://www.capitol.tn.gov/house/members/h1.html
 - url: https://www.capitol.tn.gov/house/members/h1.html
   note: homepage
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H1
@@ -27,6 +28,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TNL000479
 sources:
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H
 - url: http://www.capitol.tn.gov/house/members/
 - url: http://www.capitol.tn.gov/house/members/h1.html
 - url: https://www.capitol.tn.gov/house/members/

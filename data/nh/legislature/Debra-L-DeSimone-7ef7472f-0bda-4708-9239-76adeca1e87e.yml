@@ -1,28 +1,33 @@
 id: ocd-person/7ef7472f-0bda-4708-9239-76adeca1e87e
-name: Debra L. DeSimone
+name: Debra DeSimone
 given_name: Debra
 family_name: DeSimone
+gender: Female
 email: debra.desimone@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376807.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 18
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 14
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 18
 offices:
 - classification: district
   address: 11 Providence Hill Road Atkinson, NH 03811-2328
   voice: 603-362-4314
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=570
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=570
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=376807
+other_names:
+- name: Debra L. DeSimone
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000107

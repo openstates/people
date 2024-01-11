@@ -1,6 +1,6 @@
 id: ocd-person/0f288c5b-484a-4b70-8209-0a23f922edd1
-name: David Jenkins
-given_name: David
+name: David Glenn Jenkins
+given_name: David Glenn
 family_name: Jenkins
 gender: Male
 email: david.jenkins@house.ga.gov
@@ -8,31 +8,33 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/jenkins-davi
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '132'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '136'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '132'
 offices:
 - classification: capitol
   address: 504-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
   voice: 404-656-0188
 - classification: district
   address: 833 John Trammell Rd; Grantville, GA 30220
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/5005?session=1029
 - url: https://www.legis.ga.gov/members/house/5005?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5005
+other_names:
+- name: David Jenkins
 sources:
 - url: https://www.legis.ga.gov/members/house/5005?session=1029
-- url: https://www.legis.ga.gov/members/house/5005?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/5005?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/5005?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

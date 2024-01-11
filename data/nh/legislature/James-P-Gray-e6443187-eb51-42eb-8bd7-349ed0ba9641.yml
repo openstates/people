@@ -1,31 +1,36 @@
 id: ocd-person/e6443187-eb51-42eb-8bd7-349ed0ba9641
-name: James P. Gray
+name: James Gray
 given_name: James
 family_name: Gray
-email: James.Gray@leg.state.nh.us
+gender: Male
+email: james.gray@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/Senate/images/senators/06.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2016-12-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: '6'
 - start_date: 2013-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Strafford 8
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: '6'
 offices:
 - classification: capitol
   address: State House, Room 105 107 North Main Street Concord, NH 03301
   voice: 603-271-4980
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district06.aspx
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/Senate/members/webpages/district06.aspx
   note: homepage
-- url: http://www.gencourt.state.nh.us/Senate/members/webpages/district06.aspx
+- url: https://www.gencourt.state.nh.us/Senate/members/webpages/district06.aspx
   note: member detail page
+- url: https://gencourt.state.nh.us/Senate/members/webpages/district06.aspx
+other_names:
+- name: James P. Gray
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001398

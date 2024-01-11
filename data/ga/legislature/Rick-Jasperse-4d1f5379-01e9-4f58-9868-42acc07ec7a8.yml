@@ -1,6 +1,6 @@
 id: ocd-person/4d1f5379-01e9-4f58-9868-42acc07ec7a8
-name: Rick Jasperse
-given_name: Rick
+name: Richard Clark Jasperse
+given_name: Richard Clark
 family_name: Jasperse
 gender: Male
 email: rick.jasperse@house.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/jasperse-ric
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '11'
 offices:
@@ -18,23 +19,28 @@ offices:
 - classification: district
   address: 89 Apple Valley Farm Lane; Jasper, GA 30143
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
 - url: https://www.legis.ga.gov/members/house/755?session=1029
 - url: https://www.legis.ga.gov/members/house/755?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/755
+other_names:
+- name: Rick Jasperse
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000142
 - scheme: legacy_openstates
   identifier: GAL000311
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=755&Session=27
 - url: https://www.legis.ga.gov/members/house/755?session=1029
-- url: https://www.legis.ga.gov/members/house/755?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/755?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/755?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

@@ -1,6 +1,6 @@
 id: ocd-person/777f58bb-9d6b-4755-ab7b-b94d11629cb5
-name: Ed Setzler
-given_name: Ed
+name: L. Edwin Setzler
+given_name: L. Edwin
 family_name: Setzler
 gender: Male
 email: ed.setzler@senate.ga.gov
@@ -8,13 +8,14 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/setzler-ed-2
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '37'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '35'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '37'
 offices:
 - classification: capitol
   address: 322-A CLOB; Atlanta, GA 30334
@@ -22,21 +23,25 @@ offices:
 - classification: district
   address: 1555 Boxwood Trace; Acworth, GA 30102
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=203&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=203&Session=27
 - url: https://www.legis.ga.gov/members/house/203?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/203?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
+other_names:
+- name: Ed Setzler
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000198
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=203&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=203&Session=27
 - url: https://www.legis.ga.gov/members/house/203?session=1029
-- url: https://www.legis.ga.gov/members/house/203?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/203?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/203?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

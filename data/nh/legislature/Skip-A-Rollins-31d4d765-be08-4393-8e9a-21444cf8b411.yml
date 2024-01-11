@@ -1,28 +1,33 @@
 id: ocd-person/31d4d765-be08-4393-8e9a-21444cf8b411
-name: Skip A. Rollins
+name: Skip Rollins
 given_name: Skip
 family_name: Rollins
+gender: Male
 email: skip@lavalleys.com
 image: http://www.gencourt.state.nh.us/house/images/memberpics/377163.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Sullivan 3
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Sullivan 6
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Sullivan 3
 offices:
 - classification: district
   address: 5 Willow Street Newport, NH 03773-2823
   voice: 603-863-6340
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=768
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=768
   note: member detail page
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=377163
+other_names:
+- name: Skip A. Rollins
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001085

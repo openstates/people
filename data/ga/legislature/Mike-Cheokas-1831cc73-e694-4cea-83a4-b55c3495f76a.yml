@@ -8,19 +8,19 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/cheokas-mike
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '151'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '134'
-- end_date: '2023-01-09'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '138'
-- start_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '151'
 offices:
 - classification: capitol
   address: 401-G State Capitol; Atlanta, GA 30334
@@ -28,14 +28,14 @@ offices:
 - classification: district
   address: PO Box 824; Americus, GA 31709
   voice: 229-924-7823
-  fax: 229-924-7893
 links:
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
 - url: https://www.legis.ga.gov/members/house/81?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/81
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000083
@@ -44,11 +44,13 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/00a9c185-5235-4c96-ba15-c5a0406b3027
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
-- url: https://www.legis.ga.gov/members/house/81?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/81?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/81?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

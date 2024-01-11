@@ -1,28 +1,33 @@
 id: ocd-person/3787c84d-f615-4e9d-bac8-42f86ea308db
-name: Jess C. Edwards
+name: Jess Edwards
 given_name: Jess
 family_name: Edwards
+gender: Male
 email: jess.edwards@leg.state.nh.us
 image: http://www.gencourt.state.nh.us/house/images/memberpics/408392.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 31
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 31
 offices:
 - classification: district
   address: 33 Rattlesnake Hill Road Auburn, NH 03032-3802
   voice: 603-370-7885
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=8392
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=8392
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?member=408392
+other_names:
+- name: Jess C. Edwards
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001315

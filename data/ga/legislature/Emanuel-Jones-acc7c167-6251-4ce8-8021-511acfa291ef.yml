@@ -1,6 +1,6 @@
 id: ocd-person/acc7c167-6251-4ce8-8021-511acfa291ef
-name: Emanuel Jones
-given_name: Emanuel
+name: Emanuel Davie Jones
+given_name: Emanuel Davie
 family_name: Jones
 gender: Male
 email: emanuel.jones@senate.ga.gov
@@ -8,34 +8,38 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/jones-emanue
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2005-01-10
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '10'
 offices:
 - classification: capitol
   address: 420-D State Capitol; Atlanta, GA 30334
   voice: 404-656-0502
-  fax: 404-657-9728
 - classification: district
   address: P.O. Box 370244; Decatur, GA 30037
   voice: 770-294-3020
-  fax: 770-964-7162
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=28&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=28&Session=27
 - url: https://www.legis.ga.gov/members/senate/28?session=1029
 - url: https://www.legis.ga.gov/members/senate/28?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/28
+other_names:
+- name: Emanuel Jones
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000030
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=28&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=28&Session=27
 - url: https://www.legis.ga.gov/members/senate/28?session=1029
-- url: https://www.legis.ga.gov/members/senate/28?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/28?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/28?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

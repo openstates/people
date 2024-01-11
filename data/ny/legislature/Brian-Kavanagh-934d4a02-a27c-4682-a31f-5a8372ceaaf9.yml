@@ -2,26 +2,30 @@ id: ocd-person/934d4a02-a27c-4682-a31f-5a8372ceaaf9
 name: Brian Kavanagh
 given_name: Brian
 family_name: Kavanagh
+gender: Male
 email: kavanagh@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/briankavanaghsenatorspage.jpg?itok=pcVwOSHu
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/briankavanaghsenatorspage.jpg?itok=VBk-Tnd3
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '27'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '26'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '27'
 offices:
 - classification: capitol
   address: Room 512; Albany,NY 12247
   voice: 518-455-2625
-  fax: 518-426-6956
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/brian-kavanagh/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/brian-kavanagh/contact
+- url: https://www.nysenate.gov/senators/brian-kavanagh
+other_names:
+- name: Brian P. Kavanagh
 ids:
   twitter: BrianKavanaghNY
 other_identifiers:

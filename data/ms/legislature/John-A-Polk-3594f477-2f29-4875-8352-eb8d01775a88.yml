@@ -1,13 +1,15 @@
 id: ocd-person/3594f477-2f29-4875-8352-eb8d01775a88
-name: John A. Polk
-given_name: John A.
+name: John Polk
+given_name: John
 family_name: Polk
+gender: Male
 email: jpolk@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/polk.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2012-01-03
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '44'
 offices:
@@ -17,9 +19,11 @@ offices:
 - classification: district
   address: 53 Tidewater Rd Hattiesburg, Mississippi 39402
 links:
-- url: http://billstatus.ls.state.ms.us/members/senate/polk.xml
-- url: http://billstatus.ls.state.ms.us/members/senate/polk.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/polk.xml
   note: homepage
+other_names:
+- name: John Allen Polk
+- name: John A. Polk
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000180

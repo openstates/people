@@ -2,28 +2,31 @@ id: ocd-person/fa8b39ea-006f-420a-9a3f-fe36d0db8776
 name: Jim Kofalt
 given_name: Jim
 family_name: Kofalt
+gender: Male
 email: staterep@jimkofalt.com
+image: ''
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-07'
+- start_date: 2022-12-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 32
+- end_date: 2022-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 4
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Hillsborough 32
 offices:
 - classification: district
   address: 107 Eastview Drive Wilton, NH 03086
 - classification: district
   address: Wilton, NH 03086
   voice: 607-821-2009
-  name: 'District Office #1'
 links:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9895
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9895
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9895
 sources:
 - url: http://gencourt.state.nh.us/downloads/Members.txt
 - url: http://gencourt.state.nh.us/downloads/members.txt

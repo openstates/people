@@ -2,25 +2,26 @@ id: ocd-person/37dddeca-88ef-4254-b6f2-b2ddd6526665
 name: Steve Southerland
 given_name: Steve
 family_name: Southerland
+gender: Male
 email: sen.steve.southerland@capitol.tn.gov
 image: https://www.capitol.tn.gov/senate/members/images/s9.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-08'
+- start_date: 2022-11-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '9'
+- end_date: 2022-11-08
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '1'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
-  district: '9'
 offices:
 - classification: capitol
   address: 425 Rep. John Lewis Way N. Suite 722 Cordell Hull Bldg. Nashville, TN 37243
   voice: 615-741-3851
-  fax: 615-253-0330
 links:
-- url: http://www.capitol.tn.gov/senate/members/s1.html
+- url: https://www.capitol.tn.gov/senate/members/s1.html
 - url: https://www.capitol.tn.gov/senate/members/s1.html
   note: homepage
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S9
@@ -33,6 +34,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TNL000320
 sources:
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S
 - url: http://www.capitol.tn.gov/senate/members/
 - url: http://www.capitol.tn.gov/senate/members/s1.html
 - url: https://www.capitol.tn.gov/senate/members/

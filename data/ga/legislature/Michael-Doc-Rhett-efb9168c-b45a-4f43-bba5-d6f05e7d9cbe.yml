@@ -1,6 +1,6 @@
 id: ocd-person/efb9168c-b45a-4f43-bba5-d6f05e7d9cbe
-name: Michael 'Doc' Rhett
-given_name: Michael 'Doc'
+name: Michael A. Rhett
+given_name: Michael A.
 family_name: Rhett
 gender: Male
 email: michael.rhett@senate.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/rhett-michae
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2015-01-12
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '33'
 offices:
@@ -18,21 +19,26 @@ offices:
 - classification: district
   address: P.O. Box 777; Marietta, GA 30061
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=855&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=855&Session=27
 - url: https://www.legis.ga.gov/members/senate/855?session=1029
+- url: https://www.legis.ga.gov/members/senate
+  note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/855?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
-  note: HTML members list page
+other_names:
+- name: Doc Rhett
+- name: Michael 'Doc' Rhett
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000396
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=855&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=855&Session=27
 - url: https://www.legis.ga.gov/members/senate/855?session=1029
-- url: https://www.legis.ga.gov/members/senate/855?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/855?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/855?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

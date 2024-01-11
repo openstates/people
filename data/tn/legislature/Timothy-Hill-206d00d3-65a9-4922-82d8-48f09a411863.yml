@@ -1,13 +1,18 @@
 id: ocd-person/206d00d3-65a9-4922-82d8-48f09a411863
 name: Timothy Hill
-given_name: Timothy
+given_name: Timothy Aaron
 family_name: Hill
+gender: Male
 email: rep.timothy.hill@capitol.tn.gov
 image: https://www.capitol.tn.gov/house/members/images/h3.jpg
 party:
 - name: Republican
 roles:
-- start_date: 2020-11-03
+- start_date: 2023-05-11
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '3'
+- end_date: 2020-11-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '3'
@@ -15,11 +20,18 @@ offices:
 - classification: capitol
   address: 425 Rep. John Lewis Way N. Suite 582 Cordell Hull Bldg. Nashville, TN 37243
   voice: 615-741-2050
-  fax: 615-253-0298
 links:
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H3
   note: homepage
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/d2ead1d7-1373-44f9-8a1f-86a2049d21d0
+- scheme: legacy_openstates
+  identifier: TNL000205
+- scheme: legacy_openstates
+  identifier: TNL000361
 sources:
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H
 - url: http://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=H
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=H3
 extras:

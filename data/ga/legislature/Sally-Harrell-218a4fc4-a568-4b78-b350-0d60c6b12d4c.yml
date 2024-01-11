@@ -1,6 +1,6 @@
 id: ocd-person/218a4fc4-a568-4b78-b350-0d60c6b12d4c
-name: Sally Harrell
-given_name: Sally
+name: Sally Roettger Harrell
+given_name: Sally Roettger
 family_name: Harrell
 gender: Female
 email: sally.harrell@senate.ga.gov
@@ -8,7 +8,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/harrell-sall
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2019-01-14
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '40'
 offices:
@@ -18,18 +19,23 @@ offices:
 - classification: district
   address: P.O. Box 941365; Atlanta, GA 31141
 links:
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=311&Session=27
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=311&Session=27
 - url: https://www.legis.ga.gov/members/senate/311?session=1029
 - url: https://www.legis.ga.gov/members/senate/311?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/senate
+- url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/311
+other_names:
+- name: Sally Harrell
 sources:
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=311&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=311&Session=27
 - url: https://www.legis.ga.gov/members/senate/311?session=1029
-- url: https://www.legis.ga.gov/members/senate/311?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/311?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/311?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

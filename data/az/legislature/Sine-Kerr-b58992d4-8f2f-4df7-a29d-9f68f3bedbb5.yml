@@ -8,13 +8,14 @@ image: https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/KERR.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '25'
+- end_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '13'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '25'
 offices:
 - classification: capitol
   address: Senate;1700 West Washington;Room 212;Phoenix, AZ 85007
@@ -27,6 +28,7 @@ links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=55&session=125&legislator=1967
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=127&legislator=2134
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=128&legislator=2134
+- url: https://www.azleg.gov/senate-member/?legislature=55&legislator=1967
 ids:
   twitter: SineKerr
 other_identifiers:

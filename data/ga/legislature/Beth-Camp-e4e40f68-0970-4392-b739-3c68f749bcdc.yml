@@ -1,6 +1,6 @@
 id: ocd-person/e4e40f68-0970-4392-b739-3c68f749bcdc
-name: Beth Camp
-given_name: Beth
+name: Elizabeth Anne Thompson Camp
+given_name: Elizabeth Anne Thompson
 family_name: Camp
 gender: Female
 email: beth.camp@house.ga.gov
@@ -8,31 +8,33 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/camp-beth-50
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-11'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '131'
-- start_date: '2023-01-11'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '135'
+- end_date: 2023-01-11
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '131'
 offices:
 - classification: capitol
   address: 401-B State Capitol; Atlanta, GA 30334
   voice: 404-656-7855
 - classification: district
   address: 1235 Strickland Rd; Concord, GA 30206
-  name: 'District Office #1'
 links:
 - url: https://www.legis.ga.gov/members/house/5004?session=1029
 - url: https://www.legis.ga.gov/members/house/5004?session=1031
   note: HTML member detail page
-- url: http://www.legis.ga.gov/members/house
+- url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/5004
+other_names:
+- name: Beth Camp
 sources:
 - url: https://www.legis.ga.gov/members/house/5004?session=1029
-- url: https://www.legis.ga.gov/members/house/5004?session=1029
   note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/5004?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/5004?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

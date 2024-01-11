@@ -1,24 +1,31 @@
 id: ocd-person/6913e7e0-3ad5-4593-a2b0-dc31e974cdf6
-name: Sean M. Ryan
+name: Sean Ryan
+given_name: Sean
+family_name: Ryan
+gender: Male
 email: ryan@nysenate.gov
-image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/01-20-21_ryan-hs_0011.jpg?itok=Bk50KTs1
+image: https://www.nysenate.gov/sites/default/files/styles/160x160/public/01-20-21_ryan-hs_0011.jpg?itok=Nvb1381k
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '61'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '60'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
-  district: '61'
 offices:
 - classification: capitol
   address: Legislative Office Building, Room 944; Albany,NY 12247
   voice: 518-455-3240
 links:
-- url: http://www.nysenate.gov/senators-committees
-- url: http://www.nysenate.gov/senators/sean-m-ryan/contact
+- url: https://www.nysenate.gov/senators-committees
+- url: https://www.nysenate.gov/senators/sean-m-ryan/contact
+- url: https://www.nysenate.gov/senators/sean-m-ryan
+other_names:
+- name: Sean M. Ryan
 ids:
   twitter: SenSeanRyan
 sources:

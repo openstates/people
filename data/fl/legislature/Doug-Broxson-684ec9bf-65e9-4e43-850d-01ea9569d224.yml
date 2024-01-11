@@ -1,6 +1,6 @@
 id: ocd-person/684ec9bf-65e9-4e43-850d-01ea9569d224
 name: Doug Broxson
-given_name: Doug
+given_name: Douglas Vaughn
 family_name: Broxson
 gender: Male
 email: broxson.doug.web@flsenate.gov
@@ -8,14 +8,15 @@ image: https://flsenate.gov/PublishedContent/Senators/2022-2024/Photos/s01_5194.
 party:
 - name: Republican
 roles:
+- start_date: 2016-11-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
+  district: '1'
 - start_date: 2015-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:fl/government
   district: '3'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:fl/government
-  district: '1'
 offices:
 - classification: capitol
   address: 202 Senate Building; 404 South Monroe Street; Tallahassee, FL 32399-1100
@@ -24,10 +25,10 @@ offices:
   address: 418 West Garden Street; Room 403; Pensacola, FL 32502
   voice: 850-595-1036
 links:
-- url: http://www.flsenate.gov/Senators/s1
-- url: http://www.flsenate.gov/Senators/2018-2020/S1
+- url: https://www.flsenate.gov/Senators/2018-2020/S1
 - url: https://flsenate.gov/Senators/2022-2024/S1
   note: member detail page
+- url: https://www.flsenate.gov/Senators/s1
 other_identifiers:
 - scheme: legacy_openstates
   identifier: FLL000577
@@ -36,6 +37,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/97934a61-a014-479b-8a70-5fd95e37068f
 sources:
+- url: https://www.flsenate.gov/Senators/
+- url: https://www.flsenate.gov/Senators/s1
+- url: https://www.flsenate.gov/Senators/2018-2020/S1
 - url: http://www.flsenate.gov/Senators/
 - url: http://www.flsenate.gov/Senators/s1
 - url: http://www.flsenate.gov/Senators/2018-2020/S1
