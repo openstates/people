@@ -8,25 +8,25 @@ image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023b
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '22'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '24'
-- start_date: '2019-01-04'
-  end_date: '2023-01-08'
+- start_date: 2019-01-04
+  end_date: 2023-01-08
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '20'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:co/government
-  district: '22'
 offices:
 - classification: capitol
   address: 200 E Colfax RM 346 Denver, CO 80203
   voice: 303-866-4856
 links:
-- url: http://leg.colorado.gov/legislators/jessie-danielson
-- url: http://leg.colorado.gov/legislators/jessie-danielson
+- url: https://leg.colorado.gov/legislators/jessie-danielson
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
@@ -34,6 +34,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/ed95a811-9d25-4769-90a0-4a48d1240f83
 sources:
+- url: https://leg.colorado.gov/legislators/jessie-danielson
+- url: https://leg.colorado.gov/legislators
 - url: http://leg.colorado.gov/legislators/jessie-danielson
 - url: http://leg.colorado.gov/legislators
 extras:

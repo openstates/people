@@ -8,22 +8,24 @@ image: http://leg.colorado.gov/sites/default/files/styles/width_300/public/2023b
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '4'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '39'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:co/government
-  district: '4'
 offices:
 - classification: capitol
   address: 200 E Colfax RM Denver, CO 80203
   voice: 303-866-4877
 links:
-- url: http://leg.colorado.gov/legislators/mark-baisley
-- url: http://leg.colorado.gov/legislators/mark-baisley
+- url: https://leg.colorado.gov/legislators/mark-baisley
   note: homepage
 sources:
+- url: https://leg.colorado.gov/legislators/mark-baisley
+- url: https://leg.colorado.gov/legislators
 - url: http://leg.colorado.gov/legislators/mark-baisley
 - url: http://leg.colorado.gov/legislators
 extras:
