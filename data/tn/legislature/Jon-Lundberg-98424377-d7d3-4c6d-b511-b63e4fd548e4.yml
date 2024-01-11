@@ -2,19 +2,21 @@ id: ocd-person/98424377-d7d3-4c6d-b511-b63e4fd548e4
 name: Jon Lundberg
 given_name: Jon
 family_name: Lundberg
+gender: Male
 email: sen.jon.lundberg@capitol.tn.gov
 image: https://www.capitol.tn.gov/senate/members/images/s4.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2016-11-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '4'
 - start_date: 2011-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '1'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
-  district: '4'
 offices:
 - classification: capitol
   address: 425 Rep. John Lewis Way N. Suite 744 Cordell Hull Bldg. Nashville, TN 37243
@@ -22,7 +24,7 @@ offices:
 - classification: district
   address: 212 Skyline Dr. Bristol, TN 37620
 links:
-- url: http://www.capitol.tn.gov/senate/members/s4.html
+- url: https://www.capitol.tn.gov/senate/members/s4.html
 - url: https://www.capitol.tn.gov/senate/members/s4.html
   note: homepage
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S4
@@ -41,6 +43,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/20752630-6523-454b-b696-0e77c3ec7cee
 sources:
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S
 - url: http://www.capitol.tn.gov/senate/members/
 - url: http://www.capitol.tn.gov/senate/members/s4.html
 - url: https://www.capitol.tn.gov/senate/members/

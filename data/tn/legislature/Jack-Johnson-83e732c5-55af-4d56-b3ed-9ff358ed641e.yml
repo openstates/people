@@ -2,26 +2,26 @@ id: ocd-person/83e732c5-55af-4d56-b3ed-9ff358ed641e
 name: Jack Johnson
 given_name: Jack
 family_name: Johnson
+gender: Male
 email: sen.jack.johnson@capitol.tn.gov
 image: https://www.capitol.tn.gov/senate/members/images/s27.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-01-08'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
-  district: '23'
-- start_date: '2022-01-08'
+- start_date: 2022-11-08
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '27'
+- end_date: 2022-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '23'
 offices:
 - classification: capitol
   address: 425 Rep. John Lewis Way N. Suite 702 Cordell Hull Bldg. Nashville, TN 37243
   voice: 615-741-2495
-  fax: 615-253-0321
 links:
-- url: http://www.capitol.tn.gov/senate/members/s23.html
+- url: https://www.capitol.tn.gov/senate/members/s23.html
 - url: https://www.capitol.tn.gov/senate/members/s23.html
   note: homepage
 - url: https://wapp.capitol.tn.gov/apps/legislatorinfo/member.aspx?district=S27
@@ -34,6 +34,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TNL000447
 sources:
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/directory.aspx?chamber=S
 - url: http://www.capitol.tn.gov/senate/members/
 - url: http://www.capitol.tn.gov/senate/members/s23.html
 - url: https://www.capitol.tn.gov/senate/members/
