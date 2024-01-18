@@ -1,6 +1,6 @@
 id: ocd-person/06d334f0-dd19-4a8e-b1c9-5f1ae1d90e26
 name: Steve Eliason
-given_name: Steve
+given_name: Steven
 family_name: Eliason
 gender: Male
 email: seliason@le.utah.gov
@@ -8,20 +8,21 @@ image: https://le.utah.gov/images/legislator/ELIASS.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '43'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '45'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '43'
 offices:
 - classification: capitol
   voice: 801-673-4748
 - classification: district
   address: 8157 S GRAMBLING WAY, Sandy, UT, 84094
 links:
-- url: http://house.utah.gov/rep/ELIASS
+- url: https://house.utah.gov/rep/ELIASS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ELIASS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist45.pdf
@@ -30,28 +31,29 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFIELIASS.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/seliason6.pdf
+- url: https://le.utah.gov/house2/CofI/seliason6.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/seliason5.pdf
+- url: https://le.utah.gov/house2/CofI/seliason5.pdf
   note: conflict of interest 3
-- url: http://le.utah.gov/house2/CofI/seliason4.pdf
+- url: https://le.utah.gov/house2/CofI/seliason4.pdf
   note: conflict of interest 4
-- url: http://le.utah.gov/house2/CofI/seliason3.pdf
+- url: https://le.utah.gov/house2/CofI/seliason3.pdf
   note: conflict of interest 5
-- url: http://le.utah.gov/house2/CofI/seliason2.pdf
+- url: https://le.utah.gov/house2/CofI/seliason2.pdf
   note: conflict of interest 6
-- url: http://le.utah.gov/house2/CofI/seliason.pdf
+- url: https://le.utah.gov/house2/CofI/seliason.pdf
   note: conflict of interest 7
-- url: http://le.utah.gov/house2/CofI/ELIASS.pdf
+- url: https://le.utah.gov/house2/CofI/ELIASS.pdf
   note: conflict of interest 8
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409528
   note: finance report
-- url: http://house.utah.gov/rep/ELIASS/
+- url: https://house.utah.gov/rep/ELIASS/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=ELIASS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist43.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/ELIASS/
 other_names:
 - name: Eliason, S.
 - name: Eliason, Steve
@@ -61,6 +63,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000271
 sources:
+- url: https://house.utah.gov/rep/ELIASS/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ELIASS/

@@ -1,18 +1,21 @@
 id: ocd-person/cbf85db9-a39c-44af-bed9-78826eed85af
 name: Judy Weeks Rohner
+given_name: Judy
+family_name: Weeks Rohner
 gender: Female
 email: jrohner@le.utah.gov
 image: https://le.utah.gov/images/legislator/ROHNEJ.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '30'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '33'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '30'
 offices:
 - classification: capitol
   voice: 801-232-6645
@@ -25,9 +28,11 @@ links:
   note: district demographics
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415738
   note: finance report
-- url: http://house.utah.gov/rep/ROHNEJ/
+- url: https://house.utah.gov/rep/ROHNEJ/
   note: homepage
+- url: https://house.utleg.gov/rep/ROHNEJ/
 sources:
+- url: https://house.utah.gov/rep/ROHNEJ/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ROHNEJ/
 extras:

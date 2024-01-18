@@ -8,20 +8,21 @@ image: https://le.utah.gov/images/legislator/PULSIS.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '45'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '50'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '45'
 offices:
 - classification: capitol
   voice: 801-446-6334
 - classification: district
   address: 1179 CHAPEL RIDGE DR, SOUTH JORDAN, UT, 84095
 links:
-- url: http://house.utah.gov/rep/PULSIS
+- url: https://house.utah.gov/rep/PULSIS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PULSIS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist50.pdf
@@ -30,18 +31,19 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFIPULSIS.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/PULSIS1.pdf
+- url: https://le.utah.gov/house2/CofI/PULSIS1.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/PULSIS.pdf
+- url: https://le.utah.gov/house2/CofI/PULSIS.pdf
   note: conflict of interest 3
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1413350
   note: finance report
-- url: http://house.utah.gov/rep/PULSIS/
+- url: https://house.utah.gov/rep/PULSIS/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=PULSIS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist45.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/PULSIS/
 other_names:
 - name: Pulsipher, S.
 - name: Pulsipher, Susan
@@ -49,13 +51,15 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000296
 sources:
+- url: https://house.utah.gov/rep/PULSIS/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/PULSIS/
 extras:
   service start: January 1, 2017
   profession: Homemaker, Education
-  education: B.S. Education, M.Ed. Education Leadership, Policy emphasis, Brigham Young University
+  education: B.S. Education, M.Ed. Education Leadership, Policy emphasis, Brigham
+    Young University
   counties represented:
   - Salt Lake
   home phone: 801-446-6334

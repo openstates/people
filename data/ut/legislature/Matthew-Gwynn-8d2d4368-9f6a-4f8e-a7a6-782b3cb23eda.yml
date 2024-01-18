@@ -1,6 +1,6 @@
 id: ocd-person/8d2d4368-9f6a-4f8e-a7a6-782b3cb23eda
-name: Matthew H. Gwynn
-given_name: Matthew
+name: Matt Gwynn
+given_name: Matthew H.
 family_name: Gwynn
 gender: Male
 email: mgwynn@le.utah.gov
@@ -8,26 +8,27 @@ image: https://le.utah.gov/images/legislator/GWYNNM.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '6'
 - start_date: 2021-01-01
-  end_date: '2023-01-01'
+  end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '29'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '6'
 offices:
 - classification: capitol
   voice: 385-358-3266
 - classification: district
   address: 2595 N 2675 W, Farr West, UT, 84404
 links:
-- url: http://house.utah.gov/rep/GWYNNM
+- url: https://house.utah.gov/rep/GWYNNM
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=GWYNNM
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist29.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/GWYNNM/
+- url: https://house.utah.gov/rep/GWYNNM/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=GWYNNM
   note: legislation
@@ -35,18 +36,22 @@ links:
   note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist06.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/GWYNNM/
 other_names:
+- name: Matthew H. Gwynn
 - name: Gwynn, M.
 - name: Gwynn, Matthew
 - name: Matthew Gwynn
 sources:
+- url: https://house.utah.gov/rep/GWYNNM/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/GWYNNM/
 extras:
   service start: January 1, 2021
   profession: Law Enforcement
-  education: M.A. Northwestern University, Public Policy and Admin; B.S. Weber State University, Political Science
+  education: M.A. Northwestern University, Public Policy and Admin; B.S. Weber State
+    University, Political Science
   counties represented:
   - Box Elder
   - Weber

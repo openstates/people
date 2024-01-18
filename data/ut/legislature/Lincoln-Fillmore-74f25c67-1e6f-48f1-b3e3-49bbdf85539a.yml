@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/FILLML.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '17'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '10'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '17'
 offices:
 - classification: capitol
   voice: 385-831-8902

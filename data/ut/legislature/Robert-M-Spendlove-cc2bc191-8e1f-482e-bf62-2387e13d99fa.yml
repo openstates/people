@@ -1,6 +1,6 @@
 id: ocd-person/cc2bc191-8e1f-482e-bf62-2387e13d99fa
-name: Robert M. Spendlove
-given_name: Robert
+name: Robert Spendlove
+given_name: Robert M.
 family_name: Spendlove
 gender: Male
 email: rspendlove@le.utah.gov
@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/SPENDRM.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '42'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '49'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '42'
 offices:
 - classification: capitol
   voice: 801-560-5394
@@ -29,19 +30,23 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFISPENDRM.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/SPENDRM1.pdf
+- url: https://le.utah.gov/house2/CofI/SPENDRM1.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/rspendlove2.pdf
+- url: https://le.utah.gov/house2/CofI/rspendlove2.pdf
   note: conflict of interest 3
-- url: http://le.utah.gov/house2/CofI/rspendlove.pdf
+- url: https://le.utah.gov/house2/CofI/rspendlove.pdf
   note: conflict of interest 4
-- url: http://le.utah.gov/house2/CofI/SPENDRM.pdf
+- url: https://le.utah.gov/house2/CofI/SPENDRM.pdf
   note: conflict of interest 5
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412510
   note: finance report
-- url: http://house.utah.gov/rep/SPENDRM/
+- url: https://house.utah.gov/rep/SPENDRM/
   note: homepage
+- url: https://house.utleg.gov/rep/SPENDRM/
+other_names:
+- name: Robert M. Spendlove
 sources:
+- url: https://house.utah.gov/rep/SPENDRM/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/SPENDRM/
 extras:

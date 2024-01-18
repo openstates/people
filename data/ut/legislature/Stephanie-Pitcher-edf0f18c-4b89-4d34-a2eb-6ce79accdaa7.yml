@@ -8,15 +8,15 @@ image: https://le.utah.gov/images/legislator/PITCHS.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2019-01-01'
-  end_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '40'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '14'
+- start_date: 2019-01-01
+  end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '40'
 offices:
 - classification: capitol
   address: 350 North State St. Suite 320, SALT LAKE CITY, UT, 84114
@@ -24,7 +24,7 @@ offices:
 - classification: district
   address: 2830 S GLENMARE ST, SALT LAKE CITY, UT, 84106
 links:
-- url: http://house.utah.gov/rep/PITCHS
+- url: https://house.utah.gov/rep/PITCHS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PITCHS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist40.pdf
@@ -33,7 +33,7 @@ links:
   note: conflict of interest 0
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414982
   note: finance report
-- url: http://house.utah.gov/rep/PITCHS/
+- url: https://house.utah.gov/rep/PITCHS/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=PITCHS
   note: legislation
@@ -45,6 +45,7 @@ other_names:
 - name: Pitcher, S.
 - name: Pitcher, Stephanie
 sources:
+- url: https://house.utah.gov/rep/PITCHS/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/PITCHS/

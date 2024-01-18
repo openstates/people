@@ -1,18 +1,21 @@
 id: ocd-person/451ecbcb-42a9-467b-98c7-e0b3e5bd32d3
-name: Stephen L. Whyte
+name: Stephen Whyte
+given_name: Stephen L.
+family_name: Whyte
+gender: Male
 email: swhyte@le.utah.gov
 image: https://le.utah.gov/images/legislator/WHYTESL.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '65'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '63'
+- end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '65'
 offices:
 - classification: capitol
   voice: 385-271-8435
@@ -23,7 +26,7 @@ links:
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist65.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/WHYTESL/
+- url: https://house.utah.gov/rep/WHYTESL/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=WHYTESL
   note: legislation
@@ -31,7 +34,11 @@ links:
   note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist63.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/WHYTESL/
+other_names:
+- name: Stephen L. Whyte
 sources:
+- url: https://house.utah.gov/rep/WHYTESL/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/WHYTESL/
 extras:

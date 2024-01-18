@@ -8,20 +8,20 @@ image: https://le.utah.gov/images/legislator/MOSSJ.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '2'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '51'
+- end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '2'
 offices:
 - classification: capitol
   address: 350 N State St Suite 350, SALT LAKE CITY, UT, 84114
   voice: 385-250-6738
 links:
-- url: http://house.utah.gov/rep/MOSSJ
+- url: https://house.utah.gov/rep/MOSSJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MOSSJ
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist02.pdf
@@ -30,18 +30,19 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFIMOSSJ.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/MOSSJ1.pdf
+- url: https://le.utah.gov/house2/CofI/MOSSJ1.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/MOSSJ.pdf
+- url: https://le.utah.gov/house2/CofI/MOSSJ.pdf
   note: conflict of interest 3
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411562
   note: finance report
-- url: http://house.utah.gov/rep/MOSSJ/
+- url: https://house.utah.gov/rep/MOSSJ/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=MOSSJ
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist51.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/MOSSJ/
 other_names:
 - name: Moss, Jefferson
 - name: Moss, J.
@@ -49,6 +50,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000298
 sources:
+- url: https://house.utah.gov/rep/MOSSJ/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/MOSSJ/

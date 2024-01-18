@@ -1,6 +1,6 @@
 id: ocd-person/ef1c9af3-b4f9-4eeb-b63d-a22f01c84262
-name: Derrin R. Owens
-given_name: Derrin
+name: Derrin Owens
+given_name: Derrin R.
 family_name: Owens
 gender: Male
 email: derrinowens@le.utah.gov
@@ -8,17 +8,18 @@ image: https://le.utah.gov/images/legislator/OWENSD.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '27'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '58'
-- end_date: '2022-12-31'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '24'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '27'
 offices:
 - classification: district
   address: P.O. Box 127, Fountain Green, UT, 84632
@@ -42,15 +43,16 @@ links:
   note: conflict of interest 5
 - url: https://le.utah.gov/house2/CofI/OWENSD.pdf
   note: conflict of interest 6
-- url: http://le.utah.gov/house2/CofI/dowens2.pdf
+- url: https://le.utah.gov/house2/CofI/dowens2.pdf
   note: conflict of interest 7
-- url: http://le.utah.gov/house2/CofI/dowens.pdf
+- url: https://le.utah.gov/house2/CofI/dowens.pdf
   note: conflict of interest 8
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414375
   note: finance report
 - url: https://senate.utah.gov/sen/OWENSD/
   note: homepage
 other_names:
+- name: Derrin R. Owens
 - name: Owens, Derrin R.
 - name: Owens, D.R.
 other_identifiers:

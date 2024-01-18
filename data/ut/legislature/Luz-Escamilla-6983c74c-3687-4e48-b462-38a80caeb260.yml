@@ -1,6 +1,6 @@
 id: ocd-person/6983c74c-3687-4e48-b462-38a80caeb260
 name: Luz Escamilla
-given_name: Luz
+given_name: Luz Robles
 family_name: Escamilla
 gender: Female
 email: lescamilla@le.utah.gov
@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/ESCAML.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '10'
+- end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '1'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '10'
 offices:
 - classification: capitol
   voice: 801-550-6434
@@ -34,10 +35,10 @@ links:
   note: conflict of interest 2
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1875
   note: finance report
-- url: https://senate.utah.gov/sen/ESCAML/
-  note: homepage
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist10.pdf
   note: district demographics
+- url: https://senate.utah.gov/sen/ESCAML/
+  note: homepage
 other_names:
 - name: Escamilla, L.
 - name: Escamilla, Luz

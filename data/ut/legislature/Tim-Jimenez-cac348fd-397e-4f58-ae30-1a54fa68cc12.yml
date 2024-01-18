@@ -1,13 +1,15 @@
 id: ocd-person/cac348fd-397e-4f58-ae30-1a54fa68cc12
 name: Tim Jimenez
-given_name: Tim
+given_name: Timothy Adrian
 family_name: Jimenez
+gender: Male
 email: tjimenez@le.utah.gov
 image: https://le.utah.gov/images/legislator/JIMENT.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '28'
 offices:
@@ -20,9 +22,11 @@ links:
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist28.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/JIMENT/
+- url: https://house.utah.gov/rep/JIMENT/
   note: homepage
+- url: https://house.utleg.gov/rep/JIMENT/
 sources:
+- url: https://house.utah.gov/rep/JIMENT/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/JIMENT/
 extras:
