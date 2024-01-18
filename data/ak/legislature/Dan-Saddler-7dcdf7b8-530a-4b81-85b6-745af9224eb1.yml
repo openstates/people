@@ -2,18 +2,20 @@ id: ocd-person/7dcdf7b8-530a-4b81-85b6-745af9224eb1
 name: Dan Saddler
 given_name: Dan
 family_name: Saddler
-email: Representative.Dan.Saddler@akleg.gov
+gender: Male
+email: rep.dan.saddler@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/SAD.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2023-01-17
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '24'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '13'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: '24'
 offices:
 - classification: capitol
   address: State Capitol Room 204, Juneau, AK, 99801
@@ -22,8 +24,10 @@ offices:
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-334-2630
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=sad
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=SAD
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=sad
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=SAD
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=sad
+- url: https://akhousemajority.com/rep-saddler/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000052
@@ -32,9 +36,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000146
 sources:
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=sad
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=SAD
+  note: member detail page
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=sad
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=SAD
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

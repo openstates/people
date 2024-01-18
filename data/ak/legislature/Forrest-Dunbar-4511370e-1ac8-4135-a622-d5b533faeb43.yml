@@ -1,13 +1,15 @@
 id: ocd-person/4511370e-1ac8-4135-a622-d5b533faeb43
 name: Forrest Dunbar
-given_name: Forrest
+given_name: Forrest A.
 family_name: Dunbar
-email: Senator.Forrest.Dunbar@akleg.gov
+gender: Male
+email: sen.forrest.dunbar@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/DNB.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2023-01-17
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: J
 offices:
@@ -17,9 +19,13 @@ offices:
 - classification: district
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-269-0246
+links:
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=dnb
+- url: https://alaskasenate.org/dunbar/
 sources:
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=DNB
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=DNB
   note: member detail page
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=DNB
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

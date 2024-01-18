@@ -2,17 +2,22 @@ id: ocd-person/08482886-6b5c-4890-9dae-36ab92946eb7
 name: Thomas Baker
 given_name: Thomas
 family_name: Baker
-email: Representative.Thomas.Baker@akleg.gov
+gender: Male
+email: representative.thomas.baker@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/BAK.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-11-13
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '40'
+links:
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=bak
 sources:
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=BAK
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=BAK
   note: member detail page
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=BAK
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:
