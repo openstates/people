@@ -1,6 +1,6 @@
 id: ocd-person/d1c2870a-8fee-47bf-a48e-4320311f06fd
-name: Mark L. Walker
-given_name: Mark
+name: Mark Walker
+given_name: Mark L.
 family_name: Walker
 gender: Male
 email: contact@staterepwalker53.com
@@ -8,14 +8,15 @@ image: https://ilga.gov/images/members/{BC2AF76D-FAE4-44C4-8632-AA4E629A9678}.jp
 party:
 - name: Democratic
 roles:
+- start_date: 2019-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:il/government
+  district: '53'
 - start_date: 2009-01-01
   end_date: 2010-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:il/government
   district: '66'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:il/government
-  district: '53'
 offices:
 - classification: capitol
   address: 200-8S Stratton Office Building Springfield, IL 62706
@@ -24,18 +25,24 @@ offices:
   address: 171 W. Wing St. Suite 202 Arlington Heights, IL 60005
   voice: 847-749-1137
 links:
-- url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
-- url: http://ilga.gov/house/Rep.asp?GA=102&MemberID=2944
+- url: https://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
+- url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2944
 - url: https://ilga.gov/house/Rep.asp?GA=102&MemberID=2944
   note: homepage
 - url: https://ilga.gov/house/Rep.asp?GA=103&MemberID=3140
   note: homepage
+- url: https://www.ilga.gov/house/Rep.asp?GA=103&MemberID=3140
+- url: https://www.staterepwalker.com/
+other_names:
+- name: Mark L. Walker
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ILL000830
 - scheme: openstates
   identifier: ocd-person/2f5ab721-2a6f-4c54-ab55-d1e9920079fd
 sources:
+- url: https://ilga.gov/house/default.asp?GA=101
+- url: https://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
 - url: http://ilga.gov/house/default.asp?GA=101
 - url: http://ilga.gov/house/Rep.asp?GA=101&MemberID=2743
 - url: http://ilga.gov/house/default.asp?GA=102
