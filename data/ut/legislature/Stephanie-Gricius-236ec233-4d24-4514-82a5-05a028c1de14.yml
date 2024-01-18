@@ -2,12 +2,14 @@ id: ocd-person/236ec233-4d24-4514-82a5-05a028c1de14
 name: Stephanie Gricius
 given_name: Stephanie
 family_name: Gricius
+gender: Female
 email: sgricius@le.utah.gov
 image: https://le.utah.gov/images/legislator/GRICIS.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '50'
 offices:
@@ -21,9 +23,11 @@ links:
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist50.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/GRICIS/
+- url: https://house.utah.gov/rep/GRICIS/
   note: homepage
+- url: https://house.utleg.gov/rep/GRICIS/
 sources:
+- url: https://house.utah.gov/rep/GRICIS/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/GRICIS/
 extras:

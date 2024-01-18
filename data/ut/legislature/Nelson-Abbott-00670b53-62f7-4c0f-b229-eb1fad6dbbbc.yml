@@ -1,6 +1,6 @@
 id: ocd-person/00670b53-62f7-4c0f-b229-eb1fad6dbbbc
-name: Nelson T. Abbott
-given_name: Nelson
+name: Nelson Abbott
+given_name: Nelson T.
 family_name: Abbott
 gender: Male
 email: nabbott@le.utah.gov
@@ -8,27 +8,27 @@ image: https://le.utah.gov/images/legislator/ABBOTN.jpg
 party:
 - name: Republican
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '57'
+  start_date: 2023-01-01
 - start_date: 2021-01-01
-  end_date: '2023-01-01'
+  end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '60'
-- start_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '57'
 offices:
 - classification: capitol
   voice: 385-358-3269
 - classification: district
   address: 195 S Palisade Dr., Orem, UT, 84097
 links:
-- url: http://house.utah.gov/rep/ABBOTN
+- url: https://house.utah.gov/rep/ABBOTN
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ABBOTN
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist60.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/ABBOTN/
+- url: https://house.utah.gov/rep/ABBOTN/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=ABBOTN
   note: legislation
@@ -36,11 +36,14 @@ links:
   note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist57.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/ABBOTN/
 other_names:
+- name: Nelson T. Abbott
 - name: Abbott, Nelson T.
 - name: Abbott, N.
 - name: Nelson Abbott
 sources:
+- url: https://house.utah.gov/rep/ABBOTN/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ABBOTN/

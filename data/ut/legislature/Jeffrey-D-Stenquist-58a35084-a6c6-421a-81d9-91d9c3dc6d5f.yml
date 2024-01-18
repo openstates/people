@@ -1,6 +1,6 @@
 id: ocd-person/58a35084-a6c6-421a-81d9-91d9c3dc6d5f
-name: Jeffrey D. Stenquist
-given_name: Jeffrey
+name: Jeff Stenquist
+given_name: Jeffrey D.
 family_name: Stenquist
 gender: Male
 email: jstenquist@le.utah.gov
@@ -8,13 +8,14 @@ image: https://le.utah.gov/images/legislator/STENQJ.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '46'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '51'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '46'
 offices:
 - classification: district
   address: '129 E 13800 S, Ste B2 #351, DRAPER, UT, 84020'
@@ -32,12 +33,15 @@ links:
   note: conflict of interest 2
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414943
   note: finance report
-- url: http://house.utah.gov/rep/STENQJ/
+- url: https://house.utah.gov/rep/STENQJ/
   note: homepage
+- url: https://house.utleg.gov/rep/STENQJ/
 other_names:
+- name: Jeffrey D. Stenquist
 - name: Stenquist, J.
 - name: Stenquist, Jeffrey D.
 sources:
+- url: https://house.utah.gov/rep/STENQJ/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/STENQJ/
 extras:

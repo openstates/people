@@ -1,6 +1,6 @@
 id: ocd-person/c351d354-5397-4f6e-b67d-98c41cea0d2c
-name: Wayne A. Harper
-given_name: Wayne
+name: Wayne Harper
+given_name: Wayne A.
 family_name: Harper
 gender: Male
 email: wharper@le.utah.gov
@@ -8,14 +8,14 @@ image: https://le.utah.gov/images/legislator/HARPEWA.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '6'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '16'
+- end_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '6'
 offices:
 - classification: capitol
   voice: 801-566-5466
@@ -31,11 +31,12 @@ links:
   note: conflict of interest 0
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1070
   note: finance report
-- url: https://senate.utah.gov/sen/HARPEWA/
-  note: homepage
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist16.pdf
   note: district demographics
+- url: https://senate.utah.gov/sen/HARPEWA/
+  note: homepage
 other_names:
+- name: Wayne A. Harper
 - name: Harper, W.
 - name: Harper, Wayne A.
 other_identifiers:
@@ -50,7 +51,8 @@ sources:
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/HARPEWA/
 extras:
-  service start: House of Representatives January 1, 1997 - December 31, 2012; Senate January 1, 2013
+  service start: House of Representatives January 1, 1997 - December 31, 2012; Senate
+    January 1, 2013
   profession: Taylorsville City; Business and Economic Development Consulting
   education: B.A., M.S., History, Brigham Young University
   counties represented:

@@ -1,6 +1,6 @@
 id: ocd-person/c76bd4cf-9149-46e8-a001-e2c81c5942d5
 name: Ken Ivory
-given_name: Ken
+given_name: Kenneth Robert
 family_name: Ivory
 gender: Male
 email: kivory@le.utah.gov
@@ -8,26 +8,26 @@ image: https://le.utah.gov/images/legislator/IVORYK.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2019-08-19'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '39'
+- end_date: 2019-08-19
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '47'
 - start_date: 2021-11-17
-  end_date: '2023-01-01'
+  end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '47'
-- start_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '39'
 offices:
 - classification: capitol
   voice: 801-694-8380
 - classification: district
   address: 8393 S 2010 W, WEST JORDAN, UT, 84088
 links:
-- url: http://house.utah.gov/rep/IVORYK
+- url: https://house.utah.gov/rep/IVORYK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=IVORYK
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist47.pdf
@@ -36,26 +36,27 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFIIVORYK.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/IVORYK2.pdf
+- url: https://le.utah.gov/house2/CofI/IVORYK2.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/IVORYK1.pdf
+- url: https://le.utah.gov/house2/CofI/IVORYK1.pdf
   note: conflict of interest 3
-- url: http://le.utah.gov/house2/CofI/kivory3.pdf
+- url: https://le.utah.gov/house2/CofI/kivory3.pdf
   note: conflict of interest 4
-- url: http://le.utah.gov/house2/CofI/kivory2.pdf
+- url: https://le.utah.gov/house2/CofI/kivory2.pdf
   note: conflict of interest 5
-- url: http://le.utah.gov/house2/CofI/kivory.pdf
+- url: https://le.utah.gov/house2/CofI/kivory.pdf
   note: conflict of interest 6
-- url: http://le.utah.gov/house2/CofI/IVORYK.pdf
+- url: https://le.utah.gov/house2/CofI/IVORYK.pdf
   note: conflict of interest 7
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1409302
   note: finance report
-- url: http://house.utah.gov/rep/IVORYK/
+- url: https://house.utah.gov/rep/IVORYK/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=IVORYK
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist39.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/IVORYK/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000067
@@ -64,6 +65,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/dc7ed9be-2389-4da0-af91-5123770111e6
 sources:
+- url: https://house.utah.gov/rep/IVORYK/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/IVORYK/
 extras:

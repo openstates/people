@@ -2,12 +2,14 @@ id: ocd-person/3187c9ea-c509-45f3-9eb4-a8ba2d8fd7d9
 name: Trevor Lee
 given_name: Trevor
 family_name: Lee
+gender: Male
 email: tlee@le.utah.gov
 image: https://le.utah.gov/images/legislator/LEETA.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '16'
 offices:
@@ -21,11 +23,13 @@ links:
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist16.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/LEETA/
+- url: https://house.utah.gov/rep/LEETA/
   note: homepage
+- url: https://house.utleg.gov/rep/LEETA/
 other_names:
 - name: Trevor A. Lee
 sources:
+- url: https://house.utah.gov/rep/LEETA/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/LEETA/
 extras:

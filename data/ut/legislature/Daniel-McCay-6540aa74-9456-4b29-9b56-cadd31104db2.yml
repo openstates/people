@@ -1,5 +1,5 @@
 id: ocd-person/6540aa74-9456-4b29-9b56-cadd31104db2
-name: Daniel McCay
+name: Dan McCay
 given_name: Daniel
 family_name: McCay
 gender: Male
@@ -8,19 +8,19 @@ image: https://le.utah.gov/images/legislator/MCCAYD.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2019-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '41'
-- start_date: '2019-01-01'
-  end_date: '2023-01-01'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '11'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '18'
+- end_date: 2019-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '41'
+- start_date: 2019-01-01
+  end_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '11'
 offices:
 - classification: capitol
   address: 350 N State Street, Ste. 320, SALT LAKE CITY, UT, 84114
@@ -35,21 +35,22 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFIMCCAYD.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/MCCAYD1.pdf
+- url: https://le.utah.gov/house2/CofI/MCCAYD1.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/dmccay2.pdf
+- url: https://le.utah.gov/house2/CofI/dmccay2.pdf
   note: conflict of interest 3
-- url: http://le.utah.gov/house2/CofI/dmccay.pdf
+- url: https://le.utah.gov/house2/CofI/dmccay.pdf
   note: conflict of interest 4
-- url: http://le.utah.gov/house2/CofI/MCCAYD.pdf
+- url: https://le.utah.gov/house2/CofI/MCCAYD.pdf
   note: conflict of interest 5
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411368
   note: finance report
-- url: https://senate.utah.gov/sen/MCCAYD/
-  note: homepage
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist18.pdf
   note: district demographics
+- url: https://senate.utah.gov/sen/MCCAYD/
+  note: homepage
 other_names:
+- name: Daniel McCay
 - name: McCay, D.
 - name: McCay, Daniel
 other_identifiers:
@@ -64,9 +65,11 @@ sources:
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/MCCAYD/
 extras:
-  service start: Appointed to House on January 20, 2012; Elected to Senate January 1, 2019
+  service start: Appointed to House on January 20, 2012; Elected to Senate January
+    1, 2019
   profession: Attorney/Real Estate Portfolio Manager
-  education: Bachelors in Secondary Education, Utah State University; Masters in Instructional Design, Utah State University; J. D., Willamette University
+  education: Bachelors in Secondary Education, Utah State University; Masters in Instructional
+    Design, Utah State University; J. D., Willamette University
   counties represented:
   - Salt Lake
   - Utah

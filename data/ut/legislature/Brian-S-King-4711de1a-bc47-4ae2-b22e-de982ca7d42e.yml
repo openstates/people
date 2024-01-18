@@ -1,6 +1,6 @@
 id: ocd-person/4711de1a-bc47-4ae2-b22e-de982ca7d42e
-name: Brian S. King
-given_name: Brian
+name: Brian King
+given_name: Brian S.
 family_name: King
 gender: Male
 email: briansking@le.utah.gov
@@ -8,21 +8,20 @@ image: https://le.utah.gov/images/legislator/KINGBS.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '28'
-- start_date: '2023-01-01'
+- start_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '23'
+- end_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '28'
 offices:
 - classification: district
   address: '875 S DONNER WAY #1504, SALT LAKE CITY, UT, 84108'
   voice: 801-532-1739
-  fax: 801-532-1936
 links:
-- url: http://house.utah.gov/rep/KINGBS
+- url: https://house.utah.gov/rep/KINGBS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=KINGBS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist28.pdf
@@ -31,23 +30,25 @@ links:
   note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/COFIKINGBS.pdf
   note: conflict of interest 1
-- url: http://le.utah.gov/house2/CofI/brianking3.pdf
+- url: https://le.utah.gov/house2/CofI/brianking3.pdf
   note: conflict of interest 2
-- url: http://le.utah.gov/house2/CofI/brianking2.pdf
+- url: https://le.utah.gov/house2/CofI/brianking2.pdf
   note: conflict of interest 3
-- url: http://le.utah.gov/house2/CofI/brianking.pdf
+- url: https://le.utah.gov/house2/CofI/brianking.pdf
   note: conflict of interest 4
-- url: http://le.utah.gov/house2/CofI/KINGBS.pdf
+- url: https://le.utah.gov/house2/CofI/KINGBS.pdf
   note: conflict of interest 5
 - url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1883
   note: finance report
-- url: http://house.utah.gov/rep/KINGBS/
+- url: https://house.utah.gov/rep/KINGBS/
   note: homepage
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=KINGBS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist23.pdf
   note: district demographics
+- url: https://house.utleg.gov/rep/KINGBS/
 other_names:
+- name: Brian S. King
 - name: King, Brian S.
 other_identifiers:
 - scheme: legacy_openstates
@@ -55,6 +56,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000224
 sources:
+- url: https://house.utah.gov/rep/KINGBS/
 - url: http://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/KINGBS/

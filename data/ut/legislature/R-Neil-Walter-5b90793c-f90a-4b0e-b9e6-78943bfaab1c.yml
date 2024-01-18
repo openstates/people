@@ -1,11 +1,15 @@
 id: ocd-person/5b90793c-f90a-4b0e-b9e6-78943bfaab1c
-name: R. Neil Walter
+name: Neil Walter
+given_name: R. Neil
+family_name: Walter
+gender: Male
 email: nwalter@le.utah.gov
 image: https://le.utah.gov/images/legislator/WALTER.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '74'
 offices:
@@ -17,9 +21,13 @@ links:
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist74.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/WALTER/
+- url: https://house.utah.gov/rep/WALTER/
   note: homepage
+- url: https://house.utleg.gov/rep/WALTER/
+other_names:
+- name: R. Neil Walter
 sources:
+- url: https://house.utah.gov/rep/WALTER/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/WALTER/
 extras:
