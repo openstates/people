@@ -1,19 +1,21 @@
 id: ocd-person/f5c83068-a809-4f57-8b77-1e77c87ee93b
 name: Gary Stevens
-given_name: Gary
+given_name: Gary Lee
 family_name: Stevens
-email: Senator.Gary.Stevens@akleg.gov
+gender: Male
+email: sen.gary.stevens@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/STG.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-11'
+- start_date: 2023-01-17
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: C
+- end_date: 2023-01-11
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: P
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: C
 offices:
 - classification: capitol
   address: State Capitol Room 111, Juneau, AK, 99801
@@ -21,21 +23,24 @@ offices:
 - classification: district
   address: 305 Center Ave Ste 1, Kodiak, AK, 99615
   voice: 907-486-4925
-  fax: 907-486-5264
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=stg
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=stg
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=stg
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=stg
+- url: https://www.akleg.gov/basis/Member/Detail/31?code=stg
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=stg
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=stg
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000001
 - scheme: legacy_openstates
   identifier: AKL000173
 sources:
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=stg
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=STG
+  note: member detail page
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=stg
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=STG
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

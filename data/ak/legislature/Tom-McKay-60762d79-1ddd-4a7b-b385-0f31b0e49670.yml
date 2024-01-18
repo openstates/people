@@ -1,20 +1,21 @@
 id: ocd-person/60762d79-1ddd-4a7b-b385-0f31b0e49670
 name: Tom McKay
-given_name: Tom
+given_name: Thomas
 family_name: McKay
-email: Representative.Tom.McKay@akleg.gov
+gender: Male
+email: rep.tom.mckay@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/MCK.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-17'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: '24'
-- start_date: '2023-01-17'
+- start_date: 2023-01-17
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '15'
+- end_date: 2023-01-17
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '24'
 offices:
 - classification: capitol
   address: State Capitol Room 128, Juneau, AK, 99801
@@ -23,11 +24,15 @@ offices:
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-269-0200
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=mck
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=mck
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=mck
+- url: https://akhousemajority.com/rep-mckay/
 sources:
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=MCK
+  note: member detail page
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=MCK
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

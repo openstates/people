@@ -1,19 +1,21 @@
 id: ocd-person/f8593ecf-bd23-47b9-92e4-ae6910979e00
 name: Mike Shower
-given_name: Mike
+given_name: Michael Karl
 family_name: Shower
-email: Senator.Mike.Shower@akleg.gov
+gender: Male
+email: sen.mike.shower@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/SHO.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-16'
+- start_date: 2023-01-17
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: O
+- end_date: 2023-01-16
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: E
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: O
 offices:
 - classification: capitol
   address: State Capitol Room 419, Juneau, AK, 99801
@@ -22,18 +24,23 @@ offices:
   address: 600 E Railroad Ave, Wasilla, AK, 99654
   voice: 907-376-3370
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=sho
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=sho
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=SHO
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=sho
+- url: https://www.akleg.gov/basis/Member/Detail/31?code=sho
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=SHO
+- url: https://akleg.gov/legislator.php?id=sho
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=sho
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=sho
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000196
 sources:
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=sho
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=SHO
+  note: member detail page
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=sho
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=SHO
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

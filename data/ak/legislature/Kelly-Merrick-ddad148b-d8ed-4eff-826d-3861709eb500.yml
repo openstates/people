@@ -1,19 +1,21 @@
 id: ocd-person/ddad148b-d8ed-4eff-826d-3861709eb500
 name: Kelly Merrick
-given_name: Kelly
+given_name: Kelly Richards
 family_name: Merrick
-email: Senator.Kelly.Merrick@akleg.gov
+gender: Female
+email: sen.kelly.merrick@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/MRR.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-16'
+- start_date: 2023-01-17
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: L
+- end_date: 2023-01-16
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '14'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: L
 offices:
 - classification: capitol
   address: State Capitol Room 510, Juneau, AK, 99801
@@ -22,13 +24,17 @@ offices:
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-269-3630
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=mrr
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=mrr
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=MRR
+- url: https://www.akleg.gov/basis/Member/Detail/31?code=mrr
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=mrr
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=MRR
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=mrr
+- url: https://alaskasenate.org/merrick/
 sources:
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=MRR
+  note: member detail page
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=MRR
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

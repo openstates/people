@@ -2,14 +2,14 @@ id: ocd-person/b097e069-345d-42da-b821-0c2c9747ccfc
 name: Bryce Edgmon
 given_name: Bryce
 family_name: Edgmon
-email: Representative.Bryce.Edgmon@akleg.gov
+gender: Male
+email: rep.bryce.edgmon@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/EDG.jpg
 party:
-- end_date: 2019-02-11
-  name: Democratic
 - name: Independent
 roles:
-- type: lower
+- start_date: 2019-02-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '37'
 offices:
@@ -19,11 +19,12 @@ offices:
 - classification: district
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-269-0275
-  fax: 907-465-3445
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=edg
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=edg
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=edg
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=edg
+- url: https://www.akleg.gov/basis/Member/Detail/31?code=edg
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=edg
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=edg
+- url: https://akhousemajority.com/rep-edgmon/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000027
@@ -32,10 +33,13 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000161
 sources:
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=edg
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=EDG
+  note: member detail page
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=edg
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=EDG
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

@@ -1,19 +1,21 @@
 id: ocd-person/2d74c456-7818-42bc-a284-63026fbbfc56
 name: Louise Stutes
-given_name: Louise
+given_name: Louise Ball
 family_name: Stutes
-email: Representative.Louise.Stutes@akleg.gov
+gender: Female
+email: rep.louise.stutes@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/STS.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-11'
+- start_date: 2023-01-17
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: '5'
+- end_date: 2023-01-11
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '32'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: '5'
 offices:
 - classification: capitol
   address: State Capitol Room 110, Juneau, AK, 99801
@@ -21,20 +23,24 @@ offices:
 - classification: district
   address: 305 Center Ave Ste 1, Kodiak, AK, 99615
   voice: 907-486-8872
-  fax: 907-486-5264
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=sts
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=sts
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=sts
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=STS
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=sts
+- url: https://www.akleg.gov/basis/Member/Detail/31?code=sts
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=sts
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=STS
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=sts
+- url: https://akhouse.org/rep_stutes
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000130
 sources:
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=sts
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=STS
+  note: member detail page
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=sts
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=STS
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

@@ -2,12 +2,14 @@ id: ocd-person/a1adb2e5-3c63-4032-81e8-9e787976ca63
 name: Genevieve Mina
 given_name: Genevieve
 family_name: Mina
-email: Representative.Genevieve.Mina@akleg.gov
+gender: Female
+email: rep.genevieve.mina@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/MNA.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-17
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '19'
 offices:
@@ -17,9 +19,13 @@ offices:
 - classification: district
   address: 1500 W Benson Blvd, Anchorage, AK, 99503
   voice: 907-269-0144
+links:
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=mna
+- url: https://akhouse.org/rep-mina/
 sources:
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=MNA
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=MNA
   note: member detail page
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=MNA
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

@@ -1,34 +1,36 @@
 id: ocd-person/f0e5bb6f-c8d1-43c1-a671-9c15d23781a1
 name: Shelley Hughes
-given_name: Shelley
+given_name: Shelley Steiner
 family_name: Hughes
-email: Senator.Shelley.Hughes@akleg.gov
+gender: Female
+email: sen.shelley.hughes@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/HUS.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
+- start_date: 2023-01-17
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: M
+- start_date: 2011-01-01
+  end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '13'
-- start_date: '2013-01-01'
-  end_date: '2014-12-31'
+- start_date: 2013-01-01
+  end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '8'
-- start_date: '2015-01-01'
-  end_date: '2016-12-31'
+- start_date: 2015-01-01
+  end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '11'
-- end_date: '2023-01-16'
+- end_date: 2023-01-16
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: F
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
-  district: M
 offices:
 - classification: capitol
   address: State Capitol Room 7, Juneau, AK, 99801
@@ -36,11 +38,11 @@ offices:
 - classification: district
   address: 600 E Railroad Ave, Wasilla, AK, 99654
   voice: 907-376-3725
-  fax: 907-376-4768
 links:
-- url: http://www.akleg.gov/basis/Member/Detail/30?code=hus
-- url: http://www.akleg.gov/basis/Member/Detail/31?code=hus
-- url: http://www.akleg.gov/basis/Member/Detail/32?code=hus
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=hus
+- url: https://www.akleg.gov/basis/Member/Detail/31?code=hus
+- url: https://www.akleg.gov/basis/Member/Detail/32?code=hus
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=hus
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AKL000180
@@ -53,10 +55,13 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/f4a6ea26-a05a-4d1e-b92d-9a8bf1fdb20c
 sources:
+- url: https://www.akleg.gov/basis/Member/Detail/30?code=hus
+- url: https://w3.akleg.gov/
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=HUS
+  note: member detail page
 - url: http://www.akleg.gov/basis/Member/Detail/30?code=hus
 - url: http://w3.akleg.gov/
 - url: http://www.akleg.gov/basis/Member/Detail/33?code=HUS
-  note: member detail page
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

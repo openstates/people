@@ -2,12 +2,14 @@ id: ocd-person/5ef3ef20-0fd1-41a3-be56-7844d169bba8
 name: Maxine Dibert
 given_name: Maxine
 family_name: Dibert
-email: Representative.Maxine.Dibert@akleg.gov
+gender: Female
+email: rep.maxine.dibert@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/DIB.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-17
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '31'
 offices:
@@ -17,9 +19,13 @@ offices:
 - classification: district
   address: 1292 Sadler Way Ste 308, Fairbanks, AK, 99701
   voice: 907-451-4347
+links:
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=dib
+- url: https://akhouse.org/rep-dibert/
 sources:
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=DIB
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=DIB
   note: member detail page
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=DIB
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:

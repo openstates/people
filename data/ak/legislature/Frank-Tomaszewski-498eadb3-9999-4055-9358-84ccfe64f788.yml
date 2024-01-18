@@ -2,12 +2,14 @@ id: ocd-person/498eadb3-9999-4055-9358-84ccfe64f788
 name: Frank Tomaszewski
 given_name: Frank
 family_name: Tomaszewski
-email: Representative.Frank.Tomaszewski@akleg.gov
+gender: Male
+email: rep.frank.tomaszewski@akleg.gov
 image: http://akleg.gov/images/legislators/450x600/TMZ.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-17
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
   district: '34'
 offices:
@@ -17,9 +19,12 @@ offices:
 - classification: district
   address: 1292 Sadler Way Ste 308, Fairbanks, AK, 99701
   voice: 907-456-8172
+links:
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=tmz
 sources:
-- url: http://www.akleg.gov/basis/Member/Detail/33?code=TMZ
+- url: https://www.akleg.gov/basis/Member/Detail/33?code=TMZ
   note: member detail page
+- url: http://www.akleg.gov/basis/Member/Detail/33?code=TMZ
 - url: https://www.akleg.gov/basis/mbr_info.asp?session=33
   note: member list page
 extras:
