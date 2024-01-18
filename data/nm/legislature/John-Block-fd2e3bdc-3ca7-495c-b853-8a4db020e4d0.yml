@@ -1,13 +1,15 @@
 id: ocd-person/fd2e3bdc-3ca7-495c-b853-8a4db020e4d0
 name: John Block
-given_name: John
+given_name: John Peter
 family_name: Block
-email: John.Block@nmlegis.gov
+gender: Male
+email: john.block@nmlegis.gov
 image: https://www.nmlegis.gov/Images/Legislators/House/HBLOC.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '51'
 links:
