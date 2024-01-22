@@ -13,11 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '43'
 offices:
-- classification: capitol
-  address: Room 214-B P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3250
 - classification: district
-  address: P.O. Box 1090 Leakesville, Mississippi 39451
+  address: P.O. Box 1090, Leakesville MS, 39451
+  voice: 601-394-4400
+- classification: capitol
+  address: State Capitol Room 214-B, 400 High St., Jackson MS, 39201
+  voice: 601-359-3250
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/debar.xml
   note: homepage
@@ -31,8 +32,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000287
 sources:
-- url: http://billstatus.ls.state.ms.us/members/senate/debar.xml
-- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/debar.xml
+- url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
   occupation: Attorney
   education:
