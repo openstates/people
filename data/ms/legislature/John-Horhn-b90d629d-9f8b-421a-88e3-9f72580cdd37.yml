@@ -1,7 +1,8 @@
 id: ocd-person/b90d629d-9f8b-421a-88e3-9f72580cdd37
 name: John Horhn
-given_name: John
+given_name: John A.
 family_name: Horhn
+birth_date: '1955-02-08'
 gender: Male
 email: jhorhn@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/horhn.jpg
@@ -13,12 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '26'
 offices:
-- classification: capitol
-  address: Room 215 P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2886
 - classification: district
-  address: P.O. Box 2030 Jackson, Mississippi 39225
+  address: P.O. Box 2030, Jackson MS, 39225
   voice: 601-362-1045
+- classification: capitol
+  address: State Capitol Room 215, 400 High St., Jackson MS, 39201
+  voice: 601-359-2886
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson MS, 39215
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/horhn.xml
   note: homepage
@@ -28,8 +31,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000045
 sources:
-- url: http://billstatus.ls.state.ms.us/members/senate/horhn.xml
-- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/horhn.xml
+- url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
   occupation: Community Development Consultant; Motivational Speaker
   education:

@@ -1,7 +1,8 @@
 id: ocd-person/26c38427-62d3-440b-9253-c3e485fbd8ea
 name: John Faulkner
-given_name: John
+given_name: John G.
 family_name: Faulkner
+birth_date: '1965-08-20'
 gender: Male
 email: jfaulkner@house.ms.gov
 image: http://billstatus.ls.state.ms.us/members/house/faulkner.jpg
@@ -13,12 +14,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '5'
 offices:
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson MS, 39215
 - classification: capitol
-  address: Room 400-F P. O. Box 1018;Jackson, MS 39215
+  address: State Capitol Room 400-F, 400 High St., Jackson MS, 39201
   voice: 601-359-2432
-- classification: district
-  address: P.O. Box 5955 Holly Springs, Mississippi 38634
-  voice: 662-350-0339
 links:
 - url: https://billstatus.ls.state.ms.us/members/house/faulkner.xml
   note: homepage
@@ -28,8 +28,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000240
 sources:
-- url: http://billstatus.ls.state.ms.us/members/house/faulkner.xml
-- url: http://billstatus.ls.state.ms.us/members/hr_membs.xml
+- url: https://billstatus.ls.state.ms.us/members/house/faulkner.xml
+- url: https://billstatus.ls.state.ms.us/members/hr_membs.xml
 extras:
   occupation: Youth Counselor
   education:

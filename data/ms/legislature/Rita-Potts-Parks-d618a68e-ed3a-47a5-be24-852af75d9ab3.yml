@@ -1,7 +1,8 @@
 id: ocd-person/d618a68e-ed3a-47a5-be24-852af75d9ab3
 name: Rita Parks
-given_name: Rita
+given_name: Rita Potts
 family_name: Parks
+birth_date: '1962-12-18'
 gender: Female
 email: rparks@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/parks.jpg
@@ -13,12 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '4'
 offices:
-- classification: capitol
-  address: Room 404 P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-3232
 - classification: district
-  address: P.O. Box 303 Corinth, Mississippi 38835
+  address: P.O. Box 303, Corinth MS, 38835
   voice: 662-287-6323
+- classification: capitol
+  address: State Capitol Room 404, 400 High St., Jackson MS, 39201
+  voice: 601-359-3232
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson MS, 39215
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/parks.xml
   note: homepage
@@ -28,8 +31,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000193
 sources:
-- url: http://billstatus.ls.state.ms.us/members/senate/parks.xml
-- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/parks.xml
+- url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
   occupation: Quality and Regulatory Manager
   education:

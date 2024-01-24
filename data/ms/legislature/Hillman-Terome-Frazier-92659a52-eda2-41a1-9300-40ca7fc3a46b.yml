@@ -1,7 +1,8 @@
 id: ocd-person/92659a52-eda2-41a1-9300-40ca7fc3a46b
 name: Hillman Frazier
-given_name: Hillman
+given_name: Hillman Terome
 family_name: Frazier
+birth_date: '1950-07-17'
 gender: Male
 email: hfrazier@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/frazier.jpg
@@ -13,12 +14,15 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '27'
 offices:
-- classification: capitol
-  address: Room 407 P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2220
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson MS, 39215
 - classification: district
-  address: 2066 Queensroad Avenue Jackson, Mississippi 39213
+  address: 2066 Queensroad Ave., Jackson MS, 39213
   voice: 601-982-1871
+  fax: 601-359-5957
+- classification: capitol
+  address: State Capitol Room 407, 400 High St., Jackson MS, 39201
+  voice: 601-359-2220
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/frazier.xml
   note: homepage
@@ -28,8 +32,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000022
 sources:
-- url: http://billstatus.ls.state.ms.us/members/senate/frazier.xml
-- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/frazier.xml
+- url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
   occupation: Consultant
   education:

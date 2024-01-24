@@ -1,7 +1,8 @@
 id: ocd-person/3594f477-2f29-4875-8352-eb8d01775a88
 name: John Polk
-given_name: John
+given_name: John Allen
 family_name: Polk
+birth_date: '1949-03-18'
 gender: Male
 email: jpolk@senate.ms.gov
 image: http://billstatus.ls.state.ms.us/members/senate/polk.jpg
@@ -13,11 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '44'
 offices:
-- classification: capitol
-  address: Room 215 P. O. Box 1018;Jackson, MS 39215
-  voice: 601-359-2395
 - classification: district
-  address: 53 Tidewater Rd Hattiesburg, Mississippi 39402
+  address: 53 Tidewater Road, Hattiesburg MS, 39402
+  voice: 601-261-5613
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson MS, 39215
+- classification: capitol
+  address: State Capitol Room 215, 400 High St., Jackson MS, 39201
+  voice: 601-359-2395
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/polk.xml
   note: homepage
@@ -28,8 +32,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000180
 sources:
-- url: http://billstatus.ls.state.ms.us/members/senate/polk.xml
-- url: http://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://billstatus.ls.state.ms.us/members/senate/polk.xml
+- url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
 extras:
   occupation: Business Executive
   education:
