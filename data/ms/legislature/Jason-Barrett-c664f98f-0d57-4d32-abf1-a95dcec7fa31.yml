@@ -14,12 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '39'
 offices:
-- classification: capitol
-  address: State Capitol Room 409, 400 High St., Jackson MS, 39201
-  voice: 601-359-3237
 - classification: district
   address: P.O. Box 729, Brookhaven MS, 39601
   voice: 601-833-1177
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson MS, 39215
+- classification: capitol
+  address: State Capitol Room 409, 400 High St., Jackson MS, 39201
+  voice: 601-359-3237
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/barrett.xml
   note: homepage
