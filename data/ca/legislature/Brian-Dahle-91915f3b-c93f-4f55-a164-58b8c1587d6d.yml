@@ -2,6 +2,7 @@ id: ocd-person/91915f3b-c93f-4f55-a164-58b8c1587d6d
 name: Brian Dahle
 given_name: Brian
 family_name: Dahle
+birth_date: '1965-09-20'
 gender: Male
 email: senator.dahle@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/senator-dahle.jpg
@@ -13,18 +14,19 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '1'
 offices:
-- classification: capitol
-  address: 1021 O Street, Suite 7230, Sacramento, CA 95814-4900
-  voice: 916-651-4001
 - classification: district
-  address: 1320 Yuba Street, Suite 102, Redding, CA 96001
-  voice: 530-224-7001
-- classification: district
-  address: 11230 Gold Express Drive, Suite 304, Gold River, CA 95670
+  address: 11230 Gold Express Drive Suite 304, Gold River, CA 95670
   voice: 916-464-4201
 - classification: district
-  address: 11310 McCourtney Road, Unit E2/E3, Grass Valley, CA 95949
-  voice: 530-271-1022
+  address: 2635 Forest Ave., Chico, CA 95928
+  voice: 530-879-7424
+- classification: district
+  address: 1320 Yuba St. Suite 102, Redding, CA 96001
+  voice: 530-224-7001
+- classification: capitol
+  address: 1021 O St., Suite 7230, Sacramento, CA 95814
+  voice: 916-651-4001
+  fax: 916-651-4901
 links:
 - url: https://senate.ca.gov/sd01
 - url: https://sr01.senate.ca.gov/
@@ -34,5 +36,5 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000357
 sources:
-- url: http://senate.ca.gov/senators
+- url: https://senate.ca.gov/senators
 - url: https://www.senate.ca.gov/senators

@@ -2,6 +2,7 @@ id: ocd-person/24facf9e-7fb1-4475-9120-05cd0145c7c1
 name: Marc Berman
 given_name: Marc
 family_name: Berman
+birth_date: '1980-10-31'
 gender: Male
 email: assemblymember.berman@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad24_berman_roster150_20161205.jpg
@@ -16,7 +17,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '24'
-offices: []
+offices:
+- classification: district
+  address: 721 Colorado Ave. Suite 101, Palo Alto, CA 94303
+  voice: 650-324-0224
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 8130, Sacramento, CA 94249
+  voice: 916-319-2023
+  fax: 916-319-2123
 links:
 - url: https://a24.asmdc.org/
 - url: https://a23.asmdc.org/
@@ -24,7 +32,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000528
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0024

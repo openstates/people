@@ -2,6 +2,7 @@ id: ocd-person/6ba768a4-2756-42b5-a5c5-f6b8b5db0491
 name: Phillip Chen
 given_name: Phillip
 family_name: Chen
+birth_date: '1978-04-22'
 gender: Male
 email: assemblymember.chen@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/chen.jpg
@@ -16,7 +17,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '55'
-offices: []
+offices:
+- classification: district
+  address: '3 Pointe Drive Suite #313, Brea, CA 92821'
+  voice: 714-529-5502
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 4620, Sacramento, CA 94249
+  voice: 916-319-2059
+  fax: 916-319-2159
 links:
 - url: https://ad55.asmrc.org
 - url: https://ad59.asmrc.org
@@ -25,7 +33,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000530
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA  94249-0055

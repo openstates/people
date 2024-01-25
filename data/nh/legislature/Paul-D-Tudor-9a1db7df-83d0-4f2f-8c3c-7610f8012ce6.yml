@@ -4,7 +4,6 @@ given_name: Paul
 family_name: Tudor
 gender: Male
 email: paultudor.1strockingham@gmail.com
-image: ''
 party:
 - name: Republican
 roles:
@@ -13,10 +12,8 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 1
 offices:
-- classification: district
-  address: 167 Bow Street Northwood, NH 03261
-- classification: district
-  address: 167 Bow Street;Northwood, NH 03261
+- classification: home
+  address: 167 Bow St., Northwood, NH 3261
 links:
 - url: https://gencourt.state.nh.us/downloads/Members.txt
 - url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9930
@@ -25,9 +22,9 @@ links:
 other_names:
 - name: Paul D. Tudor
 sources:
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9930
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9930
 extras:
   county: Rockingham
   elected status: Incumbent

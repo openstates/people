@@ -2,6 +2,7 @@ id: ocd-person/2e27cd32-daea-4a11-987b-bef3c4068e02
 name: Miguel Santiago
 given_name: Miguel
 family_name: Santiago
+birth_date: '1973-03-03'
 gender: Male
 email: assemblymember.santiago@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD53_Santiago_Portrait150_20141201.jpg
@@ -16,7 +17,15 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '53'
-offices: []
+offices:
+- classification: district
+  address: Room 1050, 320 W. 4th St., Los Angeles, CA 90013
+  voice: 213-620-4646
+  fax: 213-620-6319
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 6150, Sacramento, CA 94249
+  voice: 916-319-2054
+  fax: 916-319-2154
 links:
 - url: https://a53.asmdc.org/
 - url: https://a54.asmdc.org/
@@ -24,7 +33,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000454
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0053

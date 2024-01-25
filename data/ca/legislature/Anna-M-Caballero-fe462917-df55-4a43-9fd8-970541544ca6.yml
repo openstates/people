@@ -1,7 +1,8 @@
 id: ocd-person/fe462917-df55-4a43-9fd8-970541544ca6
 name: Anna Caballero
-given_name: Anna
+given_name: Anna Marie
 family_name: Caballero
+birth_date: '1955-04-18'
 gender: Female
 email: senator.caballero@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/2016-ad30_annacaballero.jpg
@@ -27,7 +28,22 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '12'
-offices: []
+offices:
+- classification: district
+  address: 132 W. Gabilan St. Suite 101, Salinas, CA 93901
+  voice: 831-769-8084
+  fax: 831-769-8086
+- classification: capitol
+  address: 1021 O St., Suite 7620, Sacramento, CA 95814
+  voice: 916-651-4014
+  fax: 916-651-4912
+- classification: district
+  address: 2550 Mariposa Mall, Suite 2016, Fresno, CA 93721
+  voice: 559-264-3070
+- classification: district
+  address: 510 W. Main St. Suite E, Merced, CA 95340
+  voice: 209-726-5495
+  fax: 209-726-5498
 links:
 - url: https://senate.ca.gov/sd12
 - url: https://sd14.senate.ca.gov/
@@ -42,5 +58,5 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/9510e70e-11d8-4d56-8161-1e515dbc1d07
 sources:
-- url: http://senate.ca.gov/senators
+- url: https://senate.ca.gov/senators
 - url: https://www.senate.ca.gov/senators
