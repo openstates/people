@@ -2,21 +2,24 @@ id: ocd-person/01e401fa-3dca-460b-8eac-080f6e7fce90
 name: David Fracht
 given_name: David
 family_name: Fracht
-email: David.fracht@leg.state.nh.us
+gender: Male
+email: david.fracht@leg.state.nh.us
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-09-06
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Grafton 16
 offices:
-- classification: district
-  address: PO Box 1065 Enfield, NH 03748-1065
+- classification: home
+  address: P.O. Box 1065, Enfield, NH 3748
 links:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=11041
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=11041
   note: member detail page
+- url: https://gencourt.state.nh.us/house/members/member.aspx?pid=11041
 sources:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=11041
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=11041
 extras:
   county: Grafton
   elected status: new

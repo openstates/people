@@ -1,7 +1,8 @@
 id: ocd-person/a8879d70-713c-4d0c-b723-77d0e96c18df
 name: Tom Lackey
-given_name: Tom
+given_name: Thomas W.
 family_name: Lackey
+birth_date: '1959-03-12'
 gender: Male
 email: assemblymember.lackey@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/lackey.png
@@ -16,7 +17,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '36'
-offices: []
+offices:
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 5340, Sacramento, CA 94249
+  voice: 916-319-2034
+- classification: district
+  address: 14955 Dale Evans Parkway, Apple Valley, CA 92307
+  voice: 760-539-1341
+- classification: district
+  address: 41301 W. 12th St. Suite F, Palmdale, CA 93551
+  voice: 661-267-7636
 links:
 - url: https://ad36.asmrc.org/
 - url: https://ad34.asmrc.org/
@@ -26,7 +36,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000481
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849, Sacramento, CA  94249-0034;

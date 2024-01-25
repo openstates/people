@@ -2,6 +2,7 @@ id: ocd-person/27c957dd-86a1-4bbe-9007-f4ebf931a795
 name: Anthony Rendon
 given_name: Anthony
 family_name: Rendon
+birth_date: '1968-03-04'
 gender: Male
 email: assemblymember.rendon@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad63-rendon_0.jpg
@@ -16,7 +17,15 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '63'
-offices: []
+offices:
+- classification: capitol
+  address: Room 367, 1020 N St., Sacramento, CA 94249
+  voice: 916-319-2062
+  fax: 916-319-2162
+- classification: district
+  address: 4909 Lakewood Blvd. Suite 400, Lakewood, CA 90712
+  voice: 562-529-3250
+  fax: 562-529-3255
 links:
 - url: https://speaker.asmdc.org/
 - url: https://a62.asmdc.org/
@@ -24,7 +33,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000403
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0063
