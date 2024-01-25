@@ -91,17 +91,17 @@ lxml = ["lxml"]
 
 [[package]]
 name = "boto3"
-version = "1.34.26"
+version = "1.34.27"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">= 3.8"
 files = [
-    {file = "boto3-1.34.26-py3-none-any.whl", hash = "sha256:881b07d0d55e5d85b62e6c965efcb2820bdfbd8f23a73a7bc9dac3a4997a1343"},
-    {file = "boto3-1.34.26.tar.gz", hash = "sha256:0491a65e55de999d07f42bb28ff6a38bad493934154b6304fcdfb4699a612d6c"},
+    {file = "boto3-1.34.27-py3-none-any.whl", hash = "sha256:3626db4ba9fbb1b58c8fe923da5ed670873b3d881a102956ea19d3b69cd097cc"},
+    {file = "boto3-1.34.27.tar.gz", hash = "sha256:ebdd938019f3df2e7b50585353963d4553faf3fbb7b2085c440107fa6caa233b"},
 ]
 
 [package.dependencies]
-botocore = ">=1.34.26,<1.35.0"
+botocore = ">=1.34.27,<1.35.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -110,13 +110,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.34.26"
+version = "1.34.27"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">= 3.8"
 files = [
-    {file = "botocore-1.34.26-py3-none-any.whl", hash = "sha256:4f3df0f6ed722e944d6f0eed964bc00b6489e50c6e8d5fdbbb68eb0c6c16c7c9"},
-    {file = "botocore-1.34.26.tar.gz", hash = "sha256:63543102467b3b5ba73903f11a14c3157ee442a360f3cb2f5316a8d6bc3e10e7"},
+    {file = "botocore-1.34.27-py3-none-any.whl", hash = "sha256:1c10f247136ad17b6ef1588c1e043e294dbaebdebe9ce84dc56713029f515c53"},
+    {file = "botocore-1.34.27.tar.gz", hash = "sha256:a0e68ba264275b358b8c1cca604161f4d9465cf7847d73e929543a9f30ff22d1"},
 ]
 
 [package.dependencies]
@@ -757,13 +757,13 @@ et-xmlfile = "*"
 
 [[package]]
 name = "openstates"
-version = "6.18.0"
+version = "6.18.1"
 description = "core infrastructure for the openstates project"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "openstates-6.18.0-py3-none-any.whl", hash = "sha256:599c535a269c526c3cc7afa01ff316d0668a0fe22667d55ce1df41d8002aacc3"},
-    {file = "openstates-6.18.0.tar.gz", hash = "sha256:d41fa2b49afdbb1ea5f1d42bcec052d3318996446a43a4ce50a4523324fc79b3"},
+    {file = "openstates-6.18.1-py3-none-any.whl", hash = "sha256:2db47758ff9c24a1f80062e8a0db836c0a71cdfdc4386730d68dc59806cd357a"},
+    {file = "openstates-6.18.1.tar.gz", hash = "sha256:87ab84cc3c6b09a1682e515cac98e1c3646c60243db574a7edf1e392595ec477"},
 ]
 
 [package.dependencies]
