@@ -4,7 +4,6 @@ given_name: David
 family_name: Meuse
 gender: Male
 email: david.meuse@leg.state.nh.us
-image: ''
 party:
 - name: Democratic
 roles:
@@ -17,10 +16,8 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 29
 offices:
-- classification: district
-  address: 579 Sagamore Ave, Unit 97 Portsmouth, NH 03801-5573
-- classification: district
-  address: 579 Sagamore Ave, Unit 97;Portsmouth, NH 03801-5573
+- classification: home
+  address: 579 Sagamore Ave. Unit 97, Portsmouth, NH 3801
 links:
 - url: https://www.gencourt.state.nh.us/downloads/Members.txt
 - url: https://gencourt.state.nh.us/downloads/Members.txt
@@ -28,11 +25,11 @@ links:
   note: member detail page
 - url: https://gencourt.state.nh.us/house/members/member.aspx?pid=9226
 sources:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=408924
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/Members.txt
-- url: http://gencourt.state.nh.us/downloads/members.txt
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?pid=9226
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=408924
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/Members.txt
+- url: https://gencourt.state.nh.us/downloads/members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9226
 extras:
   county: Rockingham
   elected status: Incumbent

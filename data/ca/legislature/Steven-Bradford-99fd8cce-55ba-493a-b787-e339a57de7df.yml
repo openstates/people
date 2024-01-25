@@ -1,7 +1,8 @@
 id: ocd-person/99fd8cce-55ba-493a-b787-e339a57de7df
 name: Steve Bradford
-given_name: Steve
+given_name: Steven
 family_name: Bradford
+birth_date: '1960-01-12'
 gender: Male
 email: senator.bradford@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/bradford.jpg
@@ -23,15 +24,17 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '62'
 offices:
-- classification: capitol
-  address: 1021 O Street, Suite 7210, Sacramento, CA 95814-4900
-  voice: 916-651-4035
 - classification: district
-  address: One Manchester Blvd., Suite 600, Inglewood, CA 90301
+  address: 1 W. Manchester Blvd. Suite 600, Inglewood, CA 90301
   voice: 310-412-6120
+  fax: 310-412-6125
 - classification: district
-  address: 302 W. 5th Street, Suite 203, San Pedro, CA 90731
+  address: 302 W. 5th St. Suite 203, San Pedro, CA 90731
   voice: 310-514-8573
+- classification: capitol
+  address: 1021 O St., Suite 7210, Sacramento, CA 95814
+  voice: 916-651-4035
+  fax: 916-651-4935
 links:
 - url: https://senate.ca.gov/sd35
 - url: https://sd35.senate.ca.gov/
@@ -49,5 +52,5 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/186990bd-0061-4494-a16c-0c19fc5f9e92
 sources:
-- url: http://senate.ca.gov/senators
+- url: https://senate.ca.gov/senators
 - url: https://www.senate.ca.gov/senators

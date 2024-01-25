@@ -1,7 +1,8 @@
 id: ocd-person/9f520ee9-8314-4029-8752-e6107f2e734e
 name: Reggie Jones-Sawyer
-given_name: Reggie
+given_name: Reginald Byron
 family_name: Jones-Sawyer
+birth_date: '1957-01-14'
 gender: Male
 email: assemblymember.jones-sawyer@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/jones-sawyer-014-02-06-19.jpg
@@ -16,7 +17,15 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '59'
-offices: []
+offices:
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 6320, Sacramento, CA 94249
+  voice: 916-319-2057
+  fax: 916-319-2157
+- classification: district
+  address: 700 Exposition Park Drive, Los Angeles, CA 90037
+  voice: 213-744-2111
+  fax: 213-744-2122
 links:
 - url: https://a59.asmdc.org/
 - url: https://a57.asmdc.org/
@@ -34,7 +43,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000533
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849, Sacramento, CA 94249-0057;

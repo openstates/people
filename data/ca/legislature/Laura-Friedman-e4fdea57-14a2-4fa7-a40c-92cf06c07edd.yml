@@ -2,6 +2,7 @@ id: ocd-person/e4fdea57-14a2-4fa7-a40c-92cf06c07edd
 name: Laura Friedman
 given_name: Laura
 family_name: Friedman
+birth_date: '1966-12-03'
 gender: Female
 email: assemblymember.friedman@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad43_friedman.jpg
@@ -16,7 +17,15 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '43'
-offices: []
+offices:
+- classification: district
+  address: 300 E. Magnolia Blvd. Suite 504, Burbank, CA 91502
+  voice: 818-558-3043
+  fax: 818-558-3042
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 5150, Sacramento, CA 94249
+  voice: 916-319-2044
+  fax: 916-319-2144
 links:
 - url: https://a43.asmdc.org
 - url: https://a44.asmdc.org/
@@ -24,7 +33,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000500
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0043
