@@ -1,7 +1,8 @@
 id: ocd-person/7ecd4221-a627-42dc-9029-bbc543ef3735
 name: Bill Dodd
-given_name: Bill
+given_name: William Harold
 family_name: Dodd
+birth_date: '1956-06-10'
 gender: Male
 email: senator.dodd@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/sen_bill_dodd.jpg
@@ -18,21 +19,26 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '4'
 offices:
-- classification: capitol
-  address: 1021 O Street, Suite 7610, Sacramento, CA 95814-4900
-  voice: 916-651-4003
 - classification: district
-  address: 2721 Napa Valley Corporate Drive, Building 4, 2nd Floor, Napa, CA 94558
+  address: 2721 Napa Valley Corporate Drive Building 4, 2nd Floor, Napa, CA 94558
   voice: 707-224-1990
+  fax: 707-224-1992
 - classification: district
-  address: 555 Mason Street, Suite 275, Vacaville, CA 95688
-  voice: 707-454-3808
-- classification: district
-  address: 50 D Street, Suite 300, Santa Rosa, CA 95404
+  address: 50 D St. Suite 300, Santa Rosa, CA 95404
   voice: 707-576-2093
+  fax: 707-576-2095
+- classification: capitol
+  address: 1021 O St., Suite 7610, Sacramento, CA 95814
+  voice: 916-651-4003
+  fax: 916-651-4903
 - classification: district
-  address: 420 Virginia Street, Suite 1-C, Vallejo, CA 94590
+  address: 555 Mason St. Suite 275, Vacaville, CA 95688
+  voice: 707-454-3808
+  fax: 707-454-3811
+- classification: district
+  address: 420 Virginia St. Suite 1C, Vallejo, CA 94590
   voice: 707-551-2389
+  fax: 707-551-2390
 links:
 - url: https://senate.ca.gov/sd03
 - url: https://sd03.senate.ca.gov/
@@ -46,5 +52,5 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/5f62600a-6817-491e-9306-bc244fe4cf17
 sources:
-- url: http://senate.ca.gov/senators
+- url: https://senate.ca.gov/senators
 - url: https://www.senate.ca.gov/senators

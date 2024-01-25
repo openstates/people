@@ -1,7 +1,8 @@
 id: ocd-person/ea5c3b3d-bbad-41f6-a912-69f60f1553a4
 name: Brian Jones
-given_name: Brian
+given_name: Brian W.
 family_name: Jones
+birth_date: '1968-08-09'
 gender: Male
 email: senator.jones@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/brian_jones_headshot_blue.jpg
@@ -27,7 +28,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '38'
-offices: []
+offices:
+- classification: capitol
+  address: 1021 O St., Suite 7640, Sacramento, CA 95814
+  voice: 916-651-4040
+  fax: 916-651-4938
+- classification: district
+  address: 720 N. Broadway Suite 110, Escondido, CA 92025
+  voice: 760-796-4655
+- classification: district
+  address: 10650 Treena St. Suite 110, San Diego, CA 92131
+  voice: 858-547-3818
 links:
 - url: https://senate.ca.gov/sd38
 - url: https://senate.ca.gov/sd40
@@ -45,5 +56,5 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/942b33d9-3458-459a-b817-bc8adbf2be77
 sources:
-- url: http://senate.ca.gov/senators
+- url: https://senate.ca.gov/senators
 - url: https://www.senate.ca.gov/senators

@@ -2,6 +2,7 @@ id: ocd-person/61cc77e3-551f-40e6-bb6f-16edd89b04db
 name: Sabrina Cervantes
 given_name: Sabrina
 family_name: Cervantes
+birth_date: '1987-10-24'
 gender: Female
 email: assemblymember.cervantes@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad60_cervantes_roster150_20161205.jpg
@@ -16,7 +17,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '60'
-offices: []
+offices:
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 4240, Sacramento, CA 94249
+  voice: 916-319-2058
+  fax: 916-319-2158
+- classification: district
+  address: 391 N. Main St. Suite 210, Corona, CA 92878
+  voice: 951-371-6860
 links:
 - url: https://a60.asmdc.org/
 - url: https://a58.asmdc.org/
@@ -24,7 +32,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000525
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0060

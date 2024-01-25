@@ -1,7 +1,8 @@
 id: ocd-person/c830a90c-8964-4c0f-b31b-729cab1144fd
 name: Heath Flora
-given_name: Heath
+given_name: Heath Hubert
 family_name: Flora
+birth_date: '1983-07-19'
 gender: Male
 email: assemblymember.flora@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/flora.jpg
@@ -16,7 +17,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '12'
-offices: []
+offices:
+- classification: district
+  address: 578 N. Wilma Ave. Suite B, Ripon, CA 95366
+  voice: 209-599-2112
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 4730, Sacramento, CA 94249
+  voice: 916-319-2009
 links:
 - url: https://ad12.asmrc.org
 - url: https://ad09.asmrc.org/
@@ -26,7 +33,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000502
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0012

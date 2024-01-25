@@ -1,7 +1,8 @@
 id: ocd-person/70b66c63-35f1-416d-9816-79d5752481a6
 name: Wendy Carrillo
-given_name: Wendy
-family_name: Carrillo
+given_name: Wendy Maria
+family_name: Carrillo Dono
+birth_date: '1980-08-10'
 gender: Female
 email: assemblymember.carrillo@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad51_carrillo_1.jpg
@@ -16,7 +17,14 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '51'
-offices: []
+offices:
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 5620, Sacramento, CA 94249
+  voice: 916-319-2052
+  fax: 916-319-2152
+- classification: district
+  address: 1910 W. Sunset Blvd. Suite 810, Los Angeles, CA 90026
+  voice: 213-483-5252
 links:
 - url: https://a51.asmdc.org/
 - url: https://a52.asmdc.org/
@@ -27,7 +35,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000535
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849, Sacramento, CA  94249-0052;

@@ -1,7 +1,8 @@
 id: ocd-person/c6471995-41db-497c-8953-dd3ea5871870
 name: Janet Nguyen
-given_name: Janet
+given_name: Janet Q.
 family_name: Nguyen
+birth_date: '1976-05-01'
 gender: Female
 email: senator.nguyen@senate.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/ad72_janet_nguyen.jpg
@@ -21,7 +22,13 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '72'
-offices: []
+offices:
+- classification: district
+  address: 301 Main St. Suite 212, Huntington Beach, CA 92648
+  voice: 714-374-4000
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 7130, Sacramento, CA 95814
+  voice: 916-651-4036
 links:
 - url: https://ad72.asmrc.org/
 - url: https://sr36.senate.ca.gov/
@@ -31,7 +38,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000469
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0072

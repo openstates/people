@@ -2,6 +2,7 @@ id: ocd-person/c4f4c9c1-1f1b-4cb6-854b-434c53495006
 name: Eduardo Garcia
 given_name: Eduardo
 family_name: Garcia
+birth_date: '1977-02-04'
 gender: Male
 email: assemblymember.eduardogarcia@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/AD56_Garcia_Portrait150_20141201.jpg
@@ -16,7 +17,19 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '56'
-offices: []
+offices:
+- classification: district
+  address: 48220 Jackson St. Suite A3, Coachella, CA 92236
+  voice: 760-347-2360
+  fax: 760-347-5704
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 8120, Sacramento, CA 94249
+  voice: 916-319-2036
+  fax: 916-319-2136
+- classification: district
+  address: 1101 Airport Road Suite D, Imperial, CA 92251
+  voice: 760-355-8656
+  fax: 760-355-8856
 links:
 - url: https://a56.asmdc.org/
 - url: https://a36.asmdc.org/
@@ -24,7 +37,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000461
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0056

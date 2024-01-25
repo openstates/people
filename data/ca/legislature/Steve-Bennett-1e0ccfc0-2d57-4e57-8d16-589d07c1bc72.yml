@@ -2,6 +2,7 @@ id: ocd-person/1e0ccfc0-2d57-4e57-8d16-589d07c1bc72
 name: Steve Bennett
 given_name: Steve
 family_name: Bennett
+birth_date: '1950-12-31'
 gender: Male
 email: assemblymember.bennett@assembly.ca.gov
 image: https://www.assembly.ca.gov/sites/assembly.ca.gov/files/memberphotos/official_portrait_0.jpg
@@ -17,12 +18,20 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '37'
-offices: []
+offices:
+- classification: district
+  address: 300 E. Esplanade Drive Suite 1790, Oxnard, CA 93036
+  voice: 805-485-4745
+  fax: 805-485-4779
+- classification: capitol
+  address: P.O. Box 942849 1021 O St., Suite 4710, Sacramento, CA 94249
+  voice: 916-319-2038
+  fax: 916-319-2138
 links:
 - url: https://a37.asmdc.org/
 - url: https://a38.asmdc.org/
 sources:
-- url: http://assembly.ca.gov/assemblymembers
+- url: https://assembly.ca.gov/assemblymembers
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0037
