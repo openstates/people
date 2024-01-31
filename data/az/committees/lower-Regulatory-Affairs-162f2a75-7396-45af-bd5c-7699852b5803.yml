@@ -5,6 +5,11 @@ name: Regulatory Affairs
 chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Laurin Hendrix
   role: Chair
@@ -14,7 +19,6 @@ members:
   person_id: ocd-person/f200e859-7563-46d4-922f-68580e1a1fb5
 - name: Flavio Bravo
   role: member
-  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
 - name: Nancy Gutierrez
   role: member
   person_id: ocd-person/f9216229-6490-412d-aa30-8baac5c2be3e
@@ -27,6 +31,18 @@ members:
 - name: "Michele Pe\xF1a"
   role: member
   person_id: ocd-person/68c38dfc-a12b-4c51-8b70-c4e02931cddf
+- name: David Marshall, Sr.
+  role: member
+  person_id: ocd-person/8bc6f450-7fc4-4258-bf5a-86465e85b9fb
+- name: Alexander Kolodin
+  role: member
+  person_id: ocd-person/102ffcb1-3028-401f-b74f-6f45db25e05e
+- name: Lupe Contreras
+  role: member
+  person_id: ocd-person/095a6754-d7ca-4f1f-b562-974d92e7eb3c
+- name: "Quant\xE1 Crews"
+  role: member
+  person_id: ocd-person/0fb2e73b-b140-4669-a9bd-b75facb342dd
 extras:
   Committee ID: 2014
   Committee Short Name: RA

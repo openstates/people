@@ -6,6 +6,11 @@ chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Mark W. Finchem
   role: member
@@ -50,6 +55,7 @@ members:
   person_id: ocd-person/bdcadc0a-7e86-4e6a-8e27-4896dbb094ce
 - name: Quang H Nguyen
   role: Chair
+  person_id: ocd-person/a4f969ab-e79a-4364-9a93-ad8c75ccf668
 - name: Lupe Contreras
   role: member
   person_id: ocd-person/095a6754-d7ca-4f1f-b562-974d92e7eb3c
@@ -61,9 +67,16 @@ members:
   person_id: ocd-person/87e6206a-c16e-4038-a86f-0d5c88b993e3
 - name: David Marshall, Sr.
   role: member
+  person_id: ocd-person/8bc6f450-7fc4-4258-bf5a-86465e85b9fb
 - name: Cory McGarr
   role: member
   person_id: ocd-person/f200e859-7563-46d4-922f-68580e1a1fb5
+- name: Julie Willoughby
+  role: member
+  person_id: ocd-person/d19ab410-5bc3-4160-b279-765e25d959ab
+- name: Leo Biasiucci
+  role: member
+  person_id: ocd-person/433aab5d-35be-48cc-80a9-f468d5279022
 extras:
   Committee ID: 2009
   Committee Short Name: JUD

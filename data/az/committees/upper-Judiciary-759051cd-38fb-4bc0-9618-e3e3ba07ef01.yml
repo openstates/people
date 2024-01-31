@@ -6,6 +6,11 @@ chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Sonny Borrelli
   role: member
@@ -35,6 +40,7 @@ members:
   person_id: ocd-person/df482d8a-1ed9-41ae-b4ba-d73d4cd9aa39
 - name: "Denise \u201CMitzi\u201D Epstein"
   role: member
+  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
 - name: Anna Hernandez
   role: member
   person_id: ocd-person/ddfd6808-4722-4fd4-880a-2053ac4e7223
@@ -46,9 +52,13 @@ members:
   person_id: ocd-person/f4ea36ef-3e74-4753-be45-43d3029a8a0d
 - name: Christine Marsh
   role: member
+  person_id: ocd-person/597de349-4f1f-4e72-a537-d0626b5abddc
 - name: Justine Wadsack
   role: member
   person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
+- name: Flavio Bravo
+  role: member
+  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
 extras:
   Committee ID: 2029
   Committee Short Name: JUD

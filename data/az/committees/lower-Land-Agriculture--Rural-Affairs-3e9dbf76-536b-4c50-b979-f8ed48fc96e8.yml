@@ -6,6 +6,11 @@ chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: David L. Cook
   role: member
@@ -61,6 +66,7 @@ members:
   person_id: ocd-person/8db06598-a7e1-4b25-9e76-6a2be0d9eae3
 - name: David L Cook
   role: member
+  person_id: ocd-person/b7d285d8-63a8-4e65-8889-2aa064eda4ff
 - name: Consuelo Hernandez
   role: member
   person_id: ocd-person/0a4e4b0a-a16e-475b-8aa1-75088657d8c1
@@ -73,6 +79,9 @@ members:
 - name: Keith Seaman
   role: member
   person_id: ocd-person/378d7047-ec0c-4c8d-9c62-22a33c940a0e
+- name: Nancy Gutierrez
+  role: member
+  person_id: ocd-person/f9216229-6490-412d-aa30-8baac5c2be3e
 extras:
   Committee ID: 2010
   Committee Short Name: LARA

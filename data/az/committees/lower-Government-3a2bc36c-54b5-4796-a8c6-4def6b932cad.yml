@@ -5,14 +5,20 @@ name: Government
 chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Timothy M Dunn
   role: Chair
+  person_id: ocd-person/0b8c9973-1ae5-4af3-8a73-713c8365eccd
 - name: John Gillette
   role: Vice Chair
+  person_id: ocd-person/fd68e4c2-0463-477c-81ea-e2e36273e12b
 - name: Flavio Bravo
   role: member
-  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
 - name: Lydia Hernandez
   role: member
   person_id: ocd-person/7a33e2bd-8394-45d9-967b-0c39430ff39b
@@ -21,6 +27,7 @@ members:
   person_id: ocd-person/11b313a8-0f20-4d81-8060-4ec7e65f1a29
 - name: Jennifer L Longdon
   role: member
+  person_id: ocd-person/b4ba9e54-93fb-4fa2-899a-8eb47b615215
 - name: Steve Montenegro
   role: member
   person_id: ocd-person/37f8815d-1672-42dd-9e9b-305449d7bb8b
@@ -30,6 +37,18 @@ members:
 - name: Mae Peshlakai
   role: member
   person_id: ocd-person/bcc217f5-fe08-4213-b8a5-78d1e4d64184
+- name: "Michele Pe\xF1a"
+  role: member
+  person_id: ocd-person/68c38dfc-a12b-4c51-8b70-c4e02931cddf
+- name: Nancy Gutierrez
+  role: member
+  person_id: ocd-person/f9216229-6490-412d-aa30-8baac5c2be3e
+- name: Betty J Villegas
+  role: member
+  person_id: ocd-person/81d12f3a-b635-4111-be8d-a71d2f7565f2
+- name: Melody Hernandez
+  role: member
+  person_id: ocd-person/6f247e22-b02f-45f9-9b2c-27e507928c0e
 extras:
   Committee ID: 2007
   Committee Short Name: GOV

@@ -6,6 +6,11 @@ chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Lisa Otondo
   role: member
@@ -65,6 +70,15 @@ members:
 - name: Anthony Kern
   role: member
   person_id: ocd-person/f4ea36ef-3e74-4753-be45-43d3029a8a0d
+- name: Priya Sundareshan
+  role: member
+  person_id: ocd-person/7ff01dde-5112-436f-a267-dd7a7f91ec9b
+- name: Thomas "T.J." Shope
+  role: member
+  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
+- name: Juan Mendez
+  role: member
+  person_id: ocd-person/535e197f-a602-4194-83cc-f820756caa17
 extras:
   Committee ID: 2020
   Committee Short Name: APPROP
