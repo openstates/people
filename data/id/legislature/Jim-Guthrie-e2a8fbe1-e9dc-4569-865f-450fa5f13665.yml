@@ -2,25 +2,28 @@ id: ocd-person/e2a8fbe1-e9dc-4569-865f-450fa5f13665
 name: Jim Guthrie
 given_name: Jim
 family_name: Guthrie
-email: JGuthrie@senate.idaho.gov
+birth_date: '1955-07-13'
+gender: Male
+email: jguthrie@senate.idaho.gov
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Guthrie1179.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2012-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '28'
 - start_date: 2011-01-01
   end_date: 2012-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: 29B
-- start_date: 2012-12-01
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  district: '28'
 offices:
 - classification: capitol
+  address: P.O. Box 83720 700 W. Jefferson, Boise, ID 83720
   voice: 208-332-1348
 - classification: district
-  address: 320 S Marsh Creek Rd, McCammon, ID, 83250
+  address: 320 S. Marsh Creek Road, McCammon, ID 83250
   voice: 208-251-9303
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=28
@@ -28,6 +31,7 @@ links:
   note: homepage
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2023&district=28
   note: homepage
+- url: https://legislature.idaho.gov/legislators/membership/2023/id1179/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000323
@@ -38,4 +42,5 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/46491008-a8d6-44ec-be47-bc39a11b2d91
 sources:
+- url: https://legislature.idaho.gov/legislators/membership/2023/id1179/
 - url: https://legislature.idaho.gov/senate/membership/

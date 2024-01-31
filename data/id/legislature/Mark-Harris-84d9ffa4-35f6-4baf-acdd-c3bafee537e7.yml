@@ -2,30 +2,34 @@ id: ocd-person/84d9ffa4-35f6-4baf-acdd-c3bafee537e7
 name: Mark Harris
 given_name: Mark
 family_name: Harris
-email: MHarris@senate.idaho.gov
+gender: Male
+email: mharris@senate.idaho.gov
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Harris3584.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-30'
+- start_date: 2022-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '35'
+- end_date: 2022-11-30
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '32'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  district: '35'
 offices:
-- classification: capitol
-  voice: 208-332-1429
 - classification: district
-  address: 1619 8- Mile Creek Rd, Soda Springs, ID, 83276
+  address: 1619 8-Mile Creek Road, Soda Springs, ID 83276
   voice: 208-547-3360
+- classification: capitol
+  address: P.O. Box 83720 700 W. Jefferson, Boise, ID 83720
+  voice: 208-332-1429
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=32
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2022&district=32
   note: homepage
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2023&district=35
   note: homepage
+- url: https://legislature.idaho.gov/legislators/membership/2023/id3584/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000253
@@ -34,6 +38,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/9766a542-dbe1-4d59-a51b-e1dd0100d5a8
 sources:
+- url: https://legislature.idaho.gov/legislators/membership/2023/id3584/
 - url: https://legislature.idaho.gov/senate/membership/
 extras:
   title: Majority Caucus Chair

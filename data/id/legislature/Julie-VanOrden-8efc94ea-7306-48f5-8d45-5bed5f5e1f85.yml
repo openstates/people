@@ -2,7 +2,8 @@ id: ocd-person/8efc94ea-7306-48f5-8d45-5bed5f5e1f85
 name: Julie VanOrden
 given_name: Julie
 family_name: VanOrden
-email: JVanOrden@senate.idaho.gov
+gender: Female
+email: jvanorden@senate.idaho.gov
 image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/VanOrden2129.jpg
 party:
 - name: Republican
@@ -12,21 +13,24 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '31'
-- type: upper
+- start_date: '2022-12-01'
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  district: '30'
+  district: 30
 offices:
 - classification: capitol
+  address: P.O. Box 83720 700 W. Jefferson, Boise, ID 83720
   voice: 208-332-1346
 - classification: district
-  address: 425 S 1100 W, Pingree, ID, 83262
+  address: 425 S. 1100 West, Pingree, ID 83262
   voice: 208-684-4052
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2018&district=31
-- url: http://legislature.idaho.gov/house/membershipSingle.cfm?ID=2129
+- url: https://legislature.idaho.gov/house/membershipSingle.cfm?ID=2129
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2023&district=30
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2023&district=30
   note: homepage
+- url: https://legislature.idaho.gov/legislators/membership/2023/id2129/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000184
@@ -35,6 +39,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/792963f7-8645-4206-8ba8-2e4a107aba4c
 sources:
+- url: https://legislature.idaho.gov/legislators/membership/2023/id2129/
 - url: https://legislature.idaho.gov/house/membership/
-- url: http://legislature.idaho.gov/house/membership.cfm
+- url: https://legislature.idaho.gov/house/membership.cfm
 - url: https://legislature.idaho.gov/senate/membership/
