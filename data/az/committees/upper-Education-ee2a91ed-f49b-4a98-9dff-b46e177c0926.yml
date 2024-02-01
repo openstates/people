@@ -6,6 +6,11 @@ chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Sally Ann Gonzales
   role: member
@@ -30,12 +35,12 @@ members:
   person_id: ocd-person/1683f77e-7d5c-42b7-ba43-2c937da4c77a
 - name: Christine Marsh
   role: member
+  person_id: ocd-person/597de349-4f1f-4e72-a537-d0626b5abddc
 - name: Ken Bennett
   role: Chair
   person_id: ocd-person/e0798d71-d83a-4fa7-82c8-0644ec9f96ac
 - name: Steve Kaiser
   role: member
-  person_id: ocd-person/8750015c-a9dc-4eac-951d-7f7b51abd3e7
 - name: Sine Kerr
   role: member
   person_id: ocd-person/b58992d4-8f2f-4df7-a29d-9f68f3bedbb5
@@ -45,6 +50,23 @@ members:
 - name: Justine Wadsack
   role: Vice Chair
   person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
+- name: Brian Fernandez
+  role: member
+  person_id: ocd-person/5425612b-fb2c-4857-8f75-31523345eb2b
+- name: "Denise \u201CMitzi\u201D Epstein"
+  role: member
+  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
+- name: "Raquel Ter\xE1n"
+  role: member
+- name: Frank Carroll
+  role: member
+  person_id: ocd-person/faca0001-6681-450b-9577-6185f4f49a3d
+- name: Eva Diaz
+  role: member
+  person_id: ocd-person/e1cd66fa-a0de-45fd-ae53-a4db7d178d21
+- name: Shawnna Bolick
+  role: member
+  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
 extras:
   Committee ID: 2024
   Committee Short Name: ED

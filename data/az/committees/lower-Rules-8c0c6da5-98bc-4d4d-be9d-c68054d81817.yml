@@ -6,6 +6,11 @@ chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Russell "Rusty" Bowers
   role: member
@@ -39,7 +44,6 @@ members:
   person_id: ocd-person/1e39adcf-868d-4722-a07b-09fcd36ad9ed
 - name: "Andr\xE9s Cano"
   role: member
-  person_id: ocd-person/bf8c0b1e-77ff-49b8-8837-a82bfec24654
 - name: Christopher Mathis
   role: member
   person_id: ocd-person/b2ed48a3-b9ae-42be-a2c8-22a47477acfd
@@ -49,6 +53,18 @@ members:
 - name: Athena Salman
   role: member
   person_id: ocd-person/226f30cc-1c58-49e3-bbf3-5f3713d988a5
+- name: Lupe Contreras
+  role: member
+  person_id: ocd-person/095a6754-d7ca-4f1f-b562-974d92e7eb3c
+- name: Nancy Gutierrez
+  role: member
+  person_id: ocd-person/f9216229-6490-412d-aa30-8baac5c2be3e
+- name: Oscar De Los Santos
+  role: member
+  person_id: ocd-person/a4fabea6-f50e-4fe9-8696-8b4505a481e8
+- name: Alexander Kolodin
+  role: member
+  person_id: ocd-person/102ffcb1-3028-401f-b74f-6f45db25e05e
 extras:
   Committee ID: 2015
   Committee Short Name: RULES

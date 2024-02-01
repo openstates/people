@@ -6,6 +6,11 @@ chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Jeff Weninger
   role: Chair
@@ -75,6 +80,12 @@ members:
 - name: Lorena Austin
   role: member
   person_id: ocd-person/90a36fec-df56-4f22-bf16-790866d5b227
+- name: Mariana Sandoval
+  role: member
+  person_id: ocd-person/3b6fa6b2-0a60-4f2e-9fd8-0882b04d9e0b
+- name: Leo Biasiucci
+  role: member
+  person_id: ocd-person/433aab5d-35be-48cc-80a9-f468d5279022
 extras:
   Committee ID: 2005
   Committee Short Name: COM

@@ -6,6 +6,11 @@ chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Victoria Steele
   role: member
@@ -30,6 +35,21 @@ members:
 - name: Stephanie Stahl Hamilton
   role: member
   person_id: ocd-person/df482d8a-1ed9-41ae-b4ba-d73d4cd9aa39
+- name: Eva Burch
+  role: member
+  person_id: ocd-person/81fc749a-e845-49cd-be39-ca9795831417
+- name: David C. Farnsworth
+  role: Chair
+  person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
+- name: "Rosanna Gabald\xF3n"
+  role: member
+  person_id: ocd-person/6de57177-1b9e-4864-bb87-97c528842030
+- name: Janae Shamp
+  role: member
+  person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
+- name: Justine Wadsack
+  role: member
+  person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
 extras:
   Committee ID: 2030
   Committee Short Name: ETHICS

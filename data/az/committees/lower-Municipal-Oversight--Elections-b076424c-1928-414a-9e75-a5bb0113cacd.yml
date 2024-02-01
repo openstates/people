@@ -5,6 +5,11 @@ name: Municipal Oversight & Elections
 chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Alexander Kolodin
   role: Vice Chair
@@ -35,7 +40,15 @@ members:
   person_id: ocd-person/60e499a9-9dad-46fb-9c2e-a6036c54a728
 - name: Liz Harris
   role: member
-  person_id: ocd-person/bb4d09de-2d31-41aa-9c10-6d741affaa38
+- name: Neal Carter
+  role: member
+  person_id: ocd-person/17f344ec-ffe3-46fe-ba7a-8efdc5fbf2fd
+- name: Analise Ortiz
+  role: member
+  person_id: ocd-person/87e6206a-c16e-4038-a86f-0d5c88b993e3
+- name: Betty J Villegas
+  role: member
+  person_id: ocd-person/81d12f3a-b635-4111-be8d-a71d2f7565f2
 extras:
   Committee ID: 2011
   Committee Short Name: MOE

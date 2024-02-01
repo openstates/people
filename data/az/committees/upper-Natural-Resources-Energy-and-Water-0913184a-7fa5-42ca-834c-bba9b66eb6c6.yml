@@ -6,6 +6,11 @@ chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Lisa Otondo
   role: member
@@ -44,9 +49,16 @@ members:
   person_id: ocd-person/5425612b-fb2c-4857-8f75-31523345eb2b
 - name: Thomas "T.J." Shope
   role: Vice Chair
+  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
 - name: Priya Sundareshan
   role: member
   person_id: ocd-person/7ff01dde-5112-436f-a267-dd7a7f91ec9b
+- name: Sonny Borrelli
+  role: member
+  person_id: ocd-person/b861ef92-d8da-4510-98ec-c40f36d06acd
+- name: Flavio Bravo
+  role: member
+  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
 extras:
   Committee ID: 2028
   Committee Short Name: NREW

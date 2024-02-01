@@ -6,6 +6,11 @@ chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
+- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
+  note: API with all committee details
+links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
+  note: homepage
 members:
 - name: Karen Fann
   role: Chair
@@ -36,11 +41,18 @@ members:
   person_id: ocd-person/66e496a4-a407-4af1-add3-ef6899b89807
 - name: Thomas "T.J." Shope
   role: member
+  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
 - name: "Raquel Ter\xE1n"
   role: member
 - name: Sine Kerr
   role: member
   person_id: ocd-person/b58992d4-8f2f-4df7-a29d-9f68f3bedbb5
+- name: "Denise \u201CMitzi\u201D Epstein"
+  role: member
+  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
+- name: Flavio Bravo
+  role: member
+  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
 extras:
   Committee ID: 2021
   Committee Short Name: RULES
