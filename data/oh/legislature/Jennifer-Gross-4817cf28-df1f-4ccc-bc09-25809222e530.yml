@@ -1,28 +1,32 @@
 id: ocd-person/4817cf28-df1f-4ccc-bc09-25809222e530
 name: Jennifer Gross
-given_name: Jennifer
+given_name: Jennifer Sherwood
 family_name: Gross
+gender: Female
+email: rep45@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/jennifer-gross/headshots/thumbnails/medium/jennifer-gross-july-2023-headshot_medium.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '45'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '52'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  district: '45'
 offices:
 - classification: capitol
-  address: 77 South High Street; Floor 13; Columbus, OH 43215
+  address: Room 13th Floor, 77 S. High St., Columbus, OH 43215
   voice: 614-466-8550
   fax: 614-719-6955
 links:
-- url: http://ohiohouse.gov/jennifer-gross
+- url: https://ohiohouse.gov/jennifer-gross
+- url: https://ohiohouse.gov/members/jennifer-gross
 sources:
-- url: http://ohiohouse.gov/jennifer-gross
 - url: https://ohiohouse.gov/members/jennifer-gross
   note: member details page
+- url: https://ohiohouse.gov/jennifer-gross
 - url: https://www.legislature.ohio.gov/legislators/house-directory
   note: member list page

@@ -1,28 +1,32 @@
 id: ocd-person/495f037f-b054-4eea-956f-05f672bcf142
 name: Mike Loychik
-given_name: Mike
+given_name: Michael
 family_name: Loychik
+gender: Male
+email: rep65@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/mike-loychik/headshots/thumbnails/medium/mike-loychik-january-2021-headshot_medium.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '65'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '63'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  district: '65'
 offices:
 - classification: capitol
-  address: 77 South High Street; Floor 12; Columbus, OH 43215
+  address: Room 12th Floor, 77 S. High St., Columbus, OH 43215
   voice: 614-466-3488
   fax: 614-719-3965
 links:
-- url: http://ohiohouse.gov/mike-loychik
+- url: https://ohiohouse.gov/mike-loychik
+- url: https://ohiohouse.gov/members/mike-loychik
 sources:
-- url: http://ohiohouse.gov/mike-loychik
 - url: https://ohiohouse.gov/members/mike-loychik
   note: member details page
+- url: https://ohiohouse.gov/mike-loychik
 - url: https://www.legislature.ohio.gov/legislators/house-directory
   note: member list page

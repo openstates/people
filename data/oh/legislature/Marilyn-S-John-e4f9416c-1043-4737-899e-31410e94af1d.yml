@@ -1,28 +1,35 @@
 id: ocd-person/e4f9416c-1043-4737-899e-31410e94af1d
-name: Marilyn S. John
+name: Marilyn John
+given_name: Marilyn Sue
+family_name: John
+gender: Female
+email: rep76@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/marilyn-s-john/headshots/thumbnails/medium/marilyn-s-john-january-2023-headshot_medium.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '76'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '2'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  district: '76'
 offices:
 - classification: capitol
-  address: 77 South High Street; Floor 13; Columbus, OH 43215
+  address: Room 13th Floor, 77 S. High St., Columbus, OH 43215
   voice: 614-466-5802
   fax: 614-719-3973
 links:
-- url: http://ohiohouse.gov/marilyn-s-john
+- url: https://ohiohouse.gov/marilyn-s-john
+- url: https://ohiohouse.gov/members/marilyn-s-john
 other_names:
+- name: Marilyn S. John
 - name: Marilyn John
 sources:
-- url: http://ohiohouse.gov/marilyn-s-john
-- url: https://www.legislature.ohio.gov/legislators/house-directory
-  note: member list page
 - url: https://ohiohouse.gov/members/marilyn-s-john
   note: member details page
+- url: https://ohiohouse.gov/marilyn-s-john
+- url: https://www.legislature.ohio.gov/legislators/house-directory
+  note: member list page
