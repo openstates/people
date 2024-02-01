@@ -1,30 +1,34 @@
 id: ocd-person/d2ecec1d-db13-4a47-836b-9e75f3a31c78
 name: Tom Young
-given_name: Tom
+given_name: James
 family_name: Young
+gender: Male
+email: rep37@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/tom-young/headshots/thumbnails/medium/tom-young-january-2021-headshot_medium.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '37'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '42'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  district: '37'
 offices:
 - classification: capitol
-  address: 77 South High Street; Floor 11; Columbus, OH 43215
+  address: Room 11th Floor, 77 S. High St., Columbus, OH 43215
   voice: 614-466-6504
   fax: 614-719-6966
 links:
-- url: http://ohiohouse.gov/tom-young
+- url: https://ohiohouse.gov/tom-young
+- url: https://ohiohouse.gov/members/tom-young
 other_names:
 - name: Tom Young, T.
 sources:
-- url: http://ohiohouse.gov/tom-young
-- url: https://www.legislature.ohio.gov/legislators/house-directory
-  note: member list page
 - url: https://ohiohouse.gov/members/tom-young
   note: member details page
+- url: https://ohiohouse.gov/tom-young
+- url: https://www.legislature.ohio.gov/legislators/house-directory
+  note: member list page

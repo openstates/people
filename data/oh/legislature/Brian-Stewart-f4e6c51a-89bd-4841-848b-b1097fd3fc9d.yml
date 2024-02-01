@@ -2,27 +2,31 @@ id: ocd-person/f4e6c51a-89bd-4841-848b-b1097fd3fc9d
 name: Brian Stewart
 given_name: Brian
 family_name: Stewart
+gender: Male
+email: rep12@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/brian-stewart/headshots/thumbnails/medium/brian-stewart-november-2023-headshot_medium.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '12'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '78'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
-  district: '12'
 offices:
 - classification: capitol
-  address: 77 South High Street; Floor 13; Columbus, OH 43215
+  address: Room 13th Floor, 77 S. High St., Columbus, OH 43215
   voice: 614-466-1464
   fax: 614-719-3961
 links:
-- url: http://ohiohouse.gov/brian-stewart
+- url: https://ohiohouse.gov/brian-stewart
+- url: https://ohiohouse.gov/members/brian-stewart
 sources:
-- url: http://ohiohouse.gov/brian-stewart
-- url: https://www.legislature.ohio.gov/legislators/house-directory
-  note: member list page
 - url: https://ohiohouse.gov/members/brian-stewart
   note: member details page
+- url: https://ohiohouse.gov/brian-stewart
+- url: https://www.legislature.ohio.gov/legislators/house-directory
+  note: member list page

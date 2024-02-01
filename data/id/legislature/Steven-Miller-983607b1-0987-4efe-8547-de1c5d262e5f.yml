@@ -8,7 +8,11 @@ image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directo
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-30'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: 24B
+- end_date: 2018-11-30
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '26'
@@ -17,12 +21,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '26'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:id/government
-  district: 24B
 offices:
 - classification: district
   address: 1208 E. 200 North, Fairfield, ID 83327
+  voice: 208-332-1061
 - classification: capitol
   address: P.O. Box 83720 700 W. Jefferson, Boise, ID 83720
   voice: 208-332-1061
