@@ -1,34 +1,42 @@
 id: ocd-person/3e2840e6-f904-43be-911e-235b906458a5
-name: Rosemary M. Brown
-given_name: Rosemary
+name: Rosemary Brown
+given_name: Rosemary Maula
 family_name: Brown
+birth_date: '1970-11-20'
 gender: Female
+email: rbrown@pasen.gov
 image: https://www.legis.state.pa.us/images/members/200/1200.jpg?1703415645672
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-30'
+- start_date: 2022-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '40'
+- end_date: 2022-11-30
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '189'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  district: '40'
 offices:
-- classification: capitol
-  address: 'Senate Box 203040 Harrisburg, PA 17120-3040 Room: 187 Main Capitol'
-  voice: 717-787-6123
 - classification: district
-  address: 487 Cortez Road Jefferson Township, PA 18436
+  address: 487 Cortez Road, Jefferson Township, PA 18436
   voice: 570-213-5705
+- classification: district
+  address: 2398 Route 611 Suite 201, Scotrun, PA 18355
+  voice: 570-620-4326
+- classification: capitol
+  address: Room 187, Main Capitol Senate Box 203040, Harrisburg, PA 17120
+  voice: 717-787-6123
 links:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
   note: homepage
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1200
   note: homepage
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senate_bio.cfm?id=1200
 other_names:
+- name: Rosemary M. Brown
 - name: BROWN, R
 - name: BROWN, R.
 - name: R. Brown
@@ -40,8 +48,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000273
 sources:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senate_bio.cfm?id=1200
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/representatives_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=H&sort=alpha
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/House_bio.cfm?id=1200
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha

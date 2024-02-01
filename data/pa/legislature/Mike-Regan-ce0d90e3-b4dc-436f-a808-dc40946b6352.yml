@@ -1,33 +1,35 @@
 id: ocd-person/ce0d90e3-b4dc-436f-a808-dc40946b6352
 name: Mike Regan
-given_name: Mike
+given_name: Michael
 family_name: Regan
+birth_date: '1961-09-10'
 gender: Male
 email: mregan@pasen.gov
 image: https://www.legis.state.pa.us/images/members/200/1646.jpg?1703415645672
 party:
 - name: Republican
 roles:
+- start_date: 2016-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
+  district: '31'
 - end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:pa/government
   district: '92'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:pa/government
-  district: '31'
 offices:
 - classification: capitol
-  address: 'Senate Box 203031 Harrisburg, PA 17120-3031 Room: 171 Main Capitol'
+  address: Room 171, Main Capitol Senate Box 203031, Harrisburg, PA 17120
   voice: 717-787-8524
 - classification: district
-  address: 1 East Harrisburg Street Dillsburg, PA 17019
+  address: 1 E. Harrisburg St., Dillsburg, PA 17019
   voice: 717-432-1730
   fax: 717-432-1733
 links:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1646
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1646
   note: homepage
+- url: https://senatorregan.com/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: PAL000552
@@ -36,10 +38,10 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/730cec72-892f-47ef-bef6-57572fadbcc0
 sources:
-- url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1646
+- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/senators_alpha.cfm
 - url: http://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1646
 - url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/mbrList.cfm?body=S&sort=alpha
-- url: https://www.legis.state.pa.us/cfdocs/legis/home/member_information/Senate_bio.cfm?id=1646
 extras:
   website: http://www.senatormikereganpa.com/
   Education:
