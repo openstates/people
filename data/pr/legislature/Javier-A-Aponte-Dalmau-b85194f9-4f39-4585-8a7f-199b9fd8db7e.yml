@@ -1,29 +1,33 @@
 id: ocd-person/b85194f9-4f39-4585-8a7f-199b9fd8db7e
-name: Javier A. Aponte Dalmau
-given_name: Javier
+name: Javier Aponte Dalmau
+given_name: Javier A.
 family_name: Aponte Dalmau
+birth_date: '1971-05-18'
+gender: Male
 email: japonte@senado.pr.gov
 image: https://senado.pr.gov/document_vault/senator/10/FourYearPeriods/12/photo/JAVIER%20APONTE%20DALMAU.jpg
 party:
-- name: "Partido Popular Democr\xE1tico"
+- name: "Partido Popular Democr\u00e1tico"
 roles:
-- end_date: '2020-12-31'
+- start_date: 2021-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: 8
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
   district: '38'
-- start_date: '2021-01-01'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
-  district: '8'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: Senado, El Capitolio P.O. Box 9023431, San Juan, PR 902
   voice: 787-724-2030
 links:
 - url: https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=698
-- url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=80
+- url: https://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=80
 - url: https://senado.pr.gov/senators/hon-javier-a-aponte-dalmau
   note: homepage
 other_names:
+- name: Javier A. Aponte Dalmau
 - name: Javier Aponte Dalmau
 other_identifiers:
 - scheme: legacy_openstates
@@ -33,8 +37,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/b96e27b7-42ef-412b-a8a6-41593703754c
 sources:
-- url: https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=698
-- url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=80
-- url: http://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/Biografia.aspx
-- url: https://senado.pr.gov/index.cfm?module=senadores
 - url: https://senado.pr.gov/senators/hon-javier-a-aponte-dalmau
+- url: https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=698
+- url: https://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=80
+- url: https://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/Biografia.aspx
+- url: https://senado.pr.gov/index.cfm?module=senadores
