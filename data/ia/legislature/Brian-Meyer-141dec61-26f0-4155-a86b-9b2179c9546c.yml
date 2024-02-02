@@ -2,6 +2,7 @@ id: ocd-person/141dec61-26f0-4155-a86b-9b2179c9546c
 name: Brian Meyer
 given_name: Brian
 family_name: Meyer
+birth_date: '1973-11-01'
 gender: Male
 email: brian.meyer@legis.iowa.gov
 image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=6377
@@ -17,10 +18,9 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '33'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: 1007 E. Grand Ave., Des Moines, IA 50319
   voice: 515-281-3221
-- classification: district
-  address: 5417 SE 29th St, Des Moines, IA 50320
 links:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6377
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6377
@@ -32,6 +32,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000327
 sources:
+- url: https://www.legis.iowa.gov/legislators/legislator?personID=6377
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=6377
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=89&personID=6377
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=6377
