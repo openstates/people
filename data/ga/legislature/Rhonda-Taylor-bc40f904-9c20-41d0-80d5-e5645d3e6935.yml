@@ -1,5 +1,5 @@
 id: ocd-person/bc40f904-9c20-41d0-80d5-e5645d3e6935
-name: Rhonda S. Taylor
+name: Rhonda Taylor
 given_name: Rhonda S.
 family_name: Taylor
 gender: Female
@@ -8,20 +8,20 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/taylor-rhond
 party:
 - name: Democratic
 roles:
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '92'
 - end_date: 2022-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '91'
-- start_date: 2022-01-09
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '92'
 offices:
-- classification: capitol
-  address: 604-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0265
 - classification: district
-  address: P.O. Box 82452; Conyers, GA 30013
+  address: P.O. Box 82452, Conyers, GA 30013
+- classification: capitol-mail
+  address: Room 604-E, Coverdell Legislative Office Building, Atlanta, GA 30334
+  voice: 404-656-0265
 links:
 - url: https://www.legis.ga.gov/members/house/4998?session=1029
 - url: https://www.legis.ga.gov/members/house/4998?session=1031
@@ -30,10 +30,11 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4998
 other_names:
+- name: Rhonda S. Taylor
 - name: Rhonda Taylor
 sources:
+- url: https://www.legis.ga.gov/members/house/4998
 - url: https://www.legis.ga.gov/members/house/4998?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/4998?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4998?session=1029&chamber=1
   note: Detail page (requires authorization token)

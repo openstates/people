@@ -13,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '130'
 offices:
-- classification: capitol
-  address: 409-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 409-E, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0116
-- classification: district
-  address: P.O. Box 5713; Augusta, GA 30916
+- classification: district-mail
+  address: P.O. Box 5713, Augusta, GA 30916
 links:
 - url: https://www.legis.ga.gov/members/house/5048?session=1031
   note: HTML member detail page
@@ -25,6 +25,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/5048
 sources:
+- url: https://www.legis.ga.gov/members/house/5048
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5048?session=1031&chamber=1

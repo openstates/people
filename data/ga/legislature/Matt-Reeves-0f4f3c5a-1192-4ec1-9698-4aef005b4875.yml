@@ -1,5 +1,5 @@
 id: ocd-person/0f4f3c5a-1192-4ec1-9698-4aef005b4875
-name: R. Matthew Reeves
+name: Matt Reeves
 given_name: R. Matthew
 family_name: Reeves
 gender: Male
@@ -13,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '99'
 offices:
-- classification: capitol
-  address: 401-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 401-G, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0152
-- classification: district
-  address: 1960 Satellite Blvd., Suite 4000; Duluth, GA 30097
+- classification: district-mail
+  address: 1960 Satellite Blvd. Suite 4000, Duluth, GA 30097
   voice: 770-236-9768
 links:
 - url: https://www.legis.ga.gov/members/house/5040?session=1031
@@ -26,8 +26,10 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/5040
 other_names:
+- name: R. Matthew Reeves
 - name: Matt Reeves
 sources:
+- url: https://www.legis.ga.gov/members/house/5040
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5040?session=1031&chamber=1

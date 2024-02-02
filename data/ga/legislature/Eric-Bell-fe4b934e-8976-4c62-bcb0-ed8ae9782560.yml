@@ -1,5 +1,5 @@
 id: ocd-person/fe4b934e-8976-4c62-bcb0-ed8ae9782560
-name: Eric W. Bell
+name: Eric Bell
 given_name: Eric W.
 family_name: Bell
 gender: Male
@@ -13,8 +13,10 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '75'
 offices:
-- classification: capitol
-  address: 411-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+- classification: district-mail
+  address: Jonesboro, GA
+- classification: capitol-mail
+  address: Room 411-D, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0126
 links:
 - url: https://www.legis.ga.gov/members/house/5061?session=1031
@@ -23,8 +25,10 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/5061
 other_names:
+- name: Eric W. Bell
 - name: Eric Bell
 sources:
+- url: https://www.legis.ga.gov/members/house/5061
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5061?session=1031&chamber=1

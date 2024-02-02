@@ -1,7 +1,8 @@
 id: ocd-person/4a9ef816-9130-4510-a19e-3124e3f2aeed
-name: William W. Hitchens
+name: Bill Hitchens
 given_name: William W.
 family_name: Hitchens
+birth_date: '1947-04-26'
 gender: Male
 email: bill.hitchens@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/hitchens-bill-823.jpg
@@ -13,11 +14,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '161'
 offices:
-- classification: capitol
-  address: 217 State Capitol; Atlanta, GA 30334
+- classification: district-mail
+  address: 2440 Rincon-Stillwell Road, Rincon, GA 31326
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-5126
-- classification: district
-  address: 2440 Rincon-Stillwell Rd.; Rincon, GA 31326
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
 - url: https://www.legis.ga.gov/members/house/823?session=1029
@@ -27,17 +28,18 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/823
 other_names:
+- name: William W. Hitchens
 - name: Bill Hitchens
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000304
 sources:
+- url: https://www.legis.ga.gov/members/house/823
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
 - url: https://www.legis.ga.gov/members/house/823?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/823?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/823?session=1029&chamber=1
   note: Detail page (requires authorization token)

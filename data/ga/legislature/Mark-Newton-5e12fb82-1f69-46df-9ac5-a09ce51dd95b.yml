@@ -1,5 +1,5 @@
 id: ocd-person/5e12fb82-1f69-46df-9ac5-a09ce51dd95b
-name: William Mark Newton
+name: Mark Newton
 given_name: William Mark
 family_name: Newton
 gender: Male
@@ -17,8 +17,10 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '123'
 offices:
-- classification: capitol
-  address: 401-D State Capitol; Atlanta, GA 30334
+- classification: district-mail
+  address: Augusta, GA
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-7855
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4902&Session=27
@@ -29,17 +31,18 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4902
 other_names:
+- name: William Mark Newton
 - name: Mark Newton
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000473
 sources:
+- url: https://www.legis.ga.gov/members/house/4902
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4902&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4902&Session=27
 - url: https://www.legis.ga.gov/members/house/4902?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/4902?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4902?session=1029&chamber=1
   note: Detail page (requires authorization token)

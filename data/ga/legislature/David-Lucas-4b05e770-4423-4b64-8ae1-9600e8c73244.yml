@@ -1,7 +1,8 @@
 id: ocd-person/4b05e770-4423-4b64-8ae1-9600e8c73244
-name: David Eugene Lucas
+name: David Lucas
 given_name: David Eugene
 family_name: Lucas
+birth_date: '1950-04-23'
 gender: Male
 email: david.lucas@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/lucas-david-157.jpg
@@ -12,8 +13,8 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '26'
 offices:
-- classification: capitol
-  address: 110-B State Capitol; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-0150
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=157&Session=27
@@ -23,17 +24,18 @@ links:
 - url: https://www.legis.ga.gov/members/senate/157?session=1031
   note: HTML member detail page
 other_names:
+- name: David Eugene Lucas
 - name: David Lucas
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000324
 sources:
+- url: https://www.legis.ga.gov/members/senate/157?session=1031
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=157&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=157&Session=27
 - url: https://www.legis.ga.gov/members/senate/157?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/senate/157?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/157?session=1029&chamber=2
   note: Detail page (requires authorization token)

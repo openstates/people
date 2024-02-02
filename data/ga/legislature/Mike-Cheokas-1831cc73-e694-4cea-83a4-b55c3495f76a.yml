@@ -2,6 +2,7 @@ id: ocd-person/1831cc73-e694-4cea-83a4-b55c3495f76a
 name: Mike Cheokas
 given_name: Mike
 family_name: Cheokas
+birth_date: '1953-05-27'
 gender: Male
 email: mike.cheokas@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/cheokas-mike-81.jpg
@@ -22,12 +23,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '138'
 offices:
-- classification: capitol
-  address: 401-G State Capitol; Atlanta, GA 30334
-  voice: 404-463-7853
-- classification: district
-  address: PO Box 824; Americus, GA 31709
+- classification: district-mail
+  address: P.O. Box 824, Americus, GA 31709
   voice: 229-924-7823
+- classification: capitol-mail
+  address: Atlanta, GA 30334
+  voice: 404-463-7853
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
@@ -44,12 +45,12 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/00a9c185-5235-4c96-ba15-c5a0406b3027
 sources:
+- url: https://www.legis.ga.gov/members/house/81
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://www.legis.ga.gov/members/house/81?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/81?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/81?session=1029&chamber=1
   note: Detail page (requires authorization token)

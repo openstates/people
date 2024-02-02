@@ -1,5 +1,5 @@
 id: ocd-person/562e162f-2a60-441c-956b-11db12eef266
-name: Carl Wayne Gilliard
+name: Carl Gilliard
 given_name: Carl Wayne
 family_name: Gilliard
 gender: Male
@@ -13,9 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '162'
 offices:
-- classification: capitol
-  address: 512-G Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 512-G, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-7859
+- classification: district-mail
+  address: Garden City, GA
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4881&Session=27
 - url: https://www.legis.ga.gov/members/house/4881?session=1029
@@ -25,6 +27,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4881
 other_names:
+- name: Carl Wayne Gilliard
 - name: Carl Gilliard
 other_identifiers:
 - scheme: legacy_openstates
@@ -32,12 +35,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000442
 sources:
+- url: https://www.legis.ga.gov/members/house/4881
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4881&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4881&Session=27
 - url: https://www.legis.ga.gov/members/house/4881?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/4881?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4881?session=1029&chamber=1
   note: Detail page (requires authorization token)

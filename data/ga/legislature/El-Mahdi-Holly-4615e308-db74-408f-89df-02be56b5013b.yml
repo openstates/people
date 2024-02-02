@@ -17,12 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '111'
 offices:
-- classification: capitol
-  address: 607-F Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0287
-- classification: district
-  address: 1740 Hudson Bridge Rd, Ste 1221; Stockbridge, GA 30253
+- classification: district-mail
+  address: 1740 Hudson Bridge Road Suite 1221, Stockbridge, GA 30253
   voice: 770-284-8146
+- classification: capitol-mail
+  address: Room 607-F, Coverdell Legislative Office Building, Atlanta, GA 30334
+  voice: 404-656-0287
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4954&Session=27
 - url: https://www.legis.ga.gov/members/house/4954?session=1029
@@ -32,12 +32,12 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4954
 sources:
+- url: https://www.legis.ga.gov/members/house/4954
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4954&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4954&Session=27
 - url: https://www.legis.ga.gov/members/house/4954?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/4954?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4954?session=1029&chamber=1
   note: Detail page (requires authorization token)

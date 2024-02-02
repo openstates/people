@@ -1,5 +1,5 @@
 id: ocd-person/60bb96c4-f20c-4918-b88b-d7857341e5f4
-name: Thomas Hatchett
+name: Bo Hatchett
 given_name: Thomas
 family_name: Hatchett
 gender: Male
@@ -13,23 +13,24 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '50'
 offices:
-- classification: capitol
-  address: 109 State Capitol; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-651-7745
-- classification: district
-  address: P.O. Box 2706; Clarkesville, GA 30523
+- classification: district-mail
+  address: P.O. Box 2706, Clarkesville, GA 30523
 links:
 - url: https://www.legis.ga.gov/members/senate/4984?session=1029
-- url: https://www.legis.ga.gov/members/senate/4984?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/4984?session=1032
+- url: https://www.legis.ga.gov/members/senate/4984?session=1031
+  note: HTML member detail page
 other_names:
+- name: Thomas Hatchett
 - name: Bo Hatchett
 sources:
+- url: https://www.legis.ga.gov/members/senate/4984?session=1031
 - url: https://www.legis.ga.gov/members/senate/4984?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/senate/4984?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4984?session=1029&chamber=2
   note: Detail page (requires authorization token)

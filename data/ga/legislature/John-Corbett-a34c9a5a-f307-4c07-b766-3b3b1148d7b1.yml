@@ -1,7 +1,8 @@
 id: ocd-person/a34c9a5a-f307-4c07-b766-3b3b1148d7b1
-name: John L. Corbett
+name: John Corbett
 given_name: John L.
 family_name: Corbett
+birth_date: '1962-09-23'
 gender: Male
 email: john.corbett@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/corbett-john-859.jpg
@@ -13,11 +14,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '174'
 offices:
-- classification: capitol
-  address: 131-B State Capitol; Atlanta, GA 30334
+- classification: district-mail
+  address: 1484 Georgia Highway 135 South, Lake Park, GA 31636
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-5105
-- classification: district
-  address: 1484 Ga. Hwy. 135 S.; Lake Park, GA 31636
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=859&Session=27
 - url: https://www.legis.ga.gov/members/house/859?session=1029
@@ -27,17 +28,18 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/859
 other_names:
+- name: John L. Corbett
 - name: John Corbett
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000395
 sources:
+- url: https://www.legis.ga.gov/members/house/859
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=859&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=859&Session=27
 - url: https://www.legis.ga.gov/members/house/859?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/859?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/859?session=1029&chamber=1
   note: Detail page (requires authorization token)
