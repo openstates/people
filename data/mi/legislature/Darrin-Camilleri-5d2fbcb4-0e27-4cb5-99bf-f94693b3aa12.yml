@@ -1,34 +1,38 @@
 id: ocd-person/5d2fbcb4-0e27-4cb5-99bf-f94693b3aa12
 name: Darrin Camilleri
-given_name: Darrin
+given_name: Darrin Quiroz
 family_name: Camilleri
+birth_date: '1992-01-28'
 gender: Male
 email: sendcamilleri@senate.michigan.gov
 image: https://senatedems.com/camilleri/wp-content/uploads/sites/10/2022/12/Portrait_Camilleri_Web.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '4'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '23'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '4'
 offices:
 - classification: capitol
-  address: S-2 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  address: Room S-2, Capitol Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-7918
 links:
 - url: https://housedems.com/camilleri
 - url: https://senatedems.com/camilleri
   note: Member Page
-- url: http://senatedems.com/camilleri/contact
+- url: https://senatedems.com/camilleri/contact
   note: Member Contact Page
+- url: https://senatedems.com/camilleri/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000342
 sources:
+- url: https://senatedems.com/camilleri/
 - url: https://housedems.com/camilleri
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives

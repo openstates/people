@@ -2,17 +2,23 @@ id: ocd-person/b34263be-1f2e-49db-a261-b30e76ba790a
 name: Mike McFall
 given_name: Mike
 family_name: McFall
-email: MikeMcFall@house.mi.gov
+birth_date: '1974-03-04'
+gender: Male
+email: mikemcfall@house.mi.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '8'
 offices:
 - classification: capitol
-  address: S-687 House Office Building
-  voice: 1-517-373-3815
+  address: Room S-687, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-3815
+links:
+- url: https://housedems.com/Mike-McFall/
 sources:
 - url: https://housedems.com/Mike-McFall/
   note: Member Details Page

@@ -3,27 +3,28 @@ name: Amos O'Neal
 given_name: Amos
 family_name: O'Neal
 gender: Male
-email: AmosOneal@house.mi.gov
+email: amosoneal@house.mi.gov
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '94'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '95'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '94'
 offices:
 - classification: capitol
-  address: N-1198 House Office Building
-  voice: 1-517-373-0837
+  address: Room N-1199, Anderson House Office Building P.O. Box 30014, Lansing, MI 48909
+  voice: 517-373-0152
 links:
 - url: https://housedems.com/amos-oneal/
 sources:
-- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
-- url: https://www.house.mi.gov/AllRepresentatives
 - url: https://housedems.com/amos-oneal/
   note: Member Details Page
+- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
   note: Members List Page
+- url: https://www.house.mi.gov/AllRepresentatives

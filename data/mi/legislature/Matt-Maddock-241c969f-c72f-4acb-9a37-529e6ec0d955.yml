@@ -1,32 +1,36 @@
 id: ocd-person/241c969f-c72f-4acb-9a37-529e6ec0d955
 name: Matt Maddock
-given_name: Matt
+given_name: Matthew
 family_name: Maddock
 gender: Male
-email: MattMaddock@house.mi.gov
+email: mattmaddock@house.mi.gov
 image: https://dtj5wlj7ond0z.cloudfront.net/uploads/2023/01/Maddock-051.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '51'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '44'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '51'
 offices:
 - classification: capitol
-  address: S-985 House Office Building
-  voice: 1-517-373-1780
+  address: Room S-985, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-1780
 links:
-- url: http://gophouse.org/representatives/southeast/maddock/
+- url: https://gophouse.org/representatives/southeast/maddock/
 - url: ''
+- url: https://gophouse.org/member/repmattmaddock/about
 sources:
-- url: http://gophouse.org/representatives/southeast/maddock/
+- url: https://gophouse.org/member/repmattmaddock/about
+- url: https://gophouse.org/representatives/southeast/maddock/
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
-- url: http://RepMaddock.com
+  note: Members List Page
+- url: https://RepMaddock.com
   note: Member Details Page
 - url: https://www.house.mi.gov/AllRepresentatives
-  note: Members List Page

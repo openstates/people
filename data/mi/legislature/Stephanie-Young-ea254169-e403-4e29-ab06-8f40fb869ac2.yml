@@ -1,31 +1,35 @@
 id: ocd-person/ea254169-e403-4e29-ab06-8f40fb869ac2
-name: Stephanie A. Young
+name: Stephanie Young
 given_name: Stephanie A.
 family_name: Young
+birth_date: '1965-01-02'
 gender: Female
 email: stephanieyoung@house.mi.gov
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '16'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '8'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '16'
 offices:
 - classification: capitol
-  address: N-695 House Office Building
-  voice: 1-517-373-2576
+  address: Room S-687, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-3815
 links:
 - url: https://housedems.com/stephanie-young/
 other_names:
+- name: Stephanie A. Young
 - name: Stephanie Young
 sources:
-- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
-- url: https://www.house.mi.gov/AllRepresentatives
 - url: https://housedems.com/stephanie-young/
   note: Member Details Page
+- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
   note: Members List Page
+- url: https://www.house.mi.gov/AllRepresentatives

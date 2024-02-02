@@ -1,30 +1,34 @@
 id: ocd-person/4dee484b-79f4-4ca2-92dc-2ed7e0623d6b
 name: Steve Carra
-given_name: Steve
+given_name: Stephen
 family_name: Carra
 gender: Male
-email: SteveCarra@house.mi.gov
+email: stevecarra@house.mi.gov
 image: https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/05/HS_CARRA_0221_NSC_2360-scaled.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '36'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '59'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '36'
 offices:
 - classification: capitol
-  address: S-885 House Office Building
-  voice: 1-517-373-0843
+  address: Room N-993, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-0832
 links:
-- url: http://repcarra.com
+- url: https://repcarra.com
+- url: https://gophouse.org/member/repstevecarra/about
 sources:
+- url: https://gophouse.org/member/repstevecarra/about
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
-- url: http://repcarra.com
+  note: Members List Page
+- url: https://repcarra.com
   note: Member Details Page
 - url: https://www.house.mi.gov/AllRepresentatives
-  note: Members List Page

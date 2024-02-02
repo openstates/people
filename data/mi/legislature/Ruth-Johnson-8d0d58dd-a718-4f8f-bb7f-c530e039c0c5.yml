@@ -2,31 +2,34 @@ id: ocd-person/8d0d58dd-a718-4f8f-bb7f-c530e039c0c5
 name: Ruth Johnson
 given_name: Ruth
 family_name: Johnson
+birth_date: '1955-01-08'
 gender: Female
 email: senrjohnson@senate.michigan.gov
 image: https://www.misenategop.com/wp-content/uploads/2023/01/Johnson-580x770.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '24'
+- end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '14'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '24'
 offices:
 - classification: capitol
-  address: 7300 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 7300, Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-1636
+  fax: 517-373-1453
 links:
-- url: https://www.senatorruthjohnson.com/
 - url: https://www.senatorruthjohnson.com/contact/
   note: Contact
 - url: https://www.senatorruthjohnson.com
   note: Member Page
 - url: https://www.senatorruthjohnson.com/contact
   note: Member Contact Page
+- url: https://www.senatorruthjohnson.com/
 sources:
 - url: https://www.senatorruthjohnson.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html

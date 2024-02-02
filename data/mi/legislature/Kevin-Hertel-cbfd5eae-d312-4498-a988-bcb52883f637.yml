@@ -1,6 +1,6 @@
 id: ocd-person/cbfd5eae-d312-4498-a988-bcb52883f637
 name: Kevin Hertel
-given_name: Kevin
+given_name: Kevin Michael
 family_name: Hertel
 gender: Male
 email: senkhertel@senate.michigan.gov
@@ -8,27 +8,30 @@ image: https://senatedems.com/hertel/wp-content/uploads/sites/16/2022/12/Hertel_
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '12'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '18'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '12'
 offices:
 - classification: capitol
-  address: 7600 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 7600, Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-7315
 links:
 - url: https://housedems.com/hertel
 - url: https://senatedems.com/hertel
   note: Member Page
-- url: http://senatedems.com/hertel/contact
+- url: https://senatedems.com/hertel/contact
   note: Member Contact Page
+- url: https://senatedems.com/hertel/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000355
 sources:
+- url: https://senatedems.com/hertel/
 - url: https://housedems.com/hertel
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives

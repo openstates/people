@@ -1,35 +1,40 @@
 id: ocd-person/c96aa62f-6a2c-4d37-9074-2c25875c639b
 name: Thomas Albert
-given_name: Thomas
+given_name: Thomas A.
 family_name: Albert
+birth_date: '1985-04-12'
 gender: Male
 email: sentalbert@senate.michigan.gov
 image: https://www.misenategop.com/wp-content/uploads/2023/01/Albert-580x770.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '18'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '86'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '18'
 offices:
 - classification: capitol
-  address: 4500 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 4500, Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-1734
+  fax: 517-373-5397
 links:
-- url: http://gophouse.org/representatives/westmi/albert/
+- url: https://gophouse.org/representatives/westmi/albert/
 - url: https://www.senatorthomasalbert.com
   note: Member Page
 - url: https://www.senatorthomasalbert.com/contact
   note: Member Contact Page
+- url: https://www.senatorthomasalbert.com/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000332
 sources:
-- url: http://gophouse.org/representatives/westmi/albert/
+- url: https://www.senatorthomasalbert.com/
+- url: https://gophouse.org/representatives/westmi/albert/
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
 - url: https://senate.michigan.gov/senators/SenatorData.json

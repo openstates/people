@@ -1,42 +1,44 @@
 id: ocd-person/6d11944d-f19f-4697-811c-0c9dca750c57
 name: Aric Nesbitt
-given_name: Aric
+given_name: Aric Y.
 family_name: Nesbitt
+birth_date: '1980-01-25'
 gender: Male
 email: senanesbitt@senate.michigan.gov
 image: https://www.misenategop.com/wp-content/uploads/2019/01/Nesbitt-580x770.jpg
 party:
 - name: Republican
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '20'
+- start_date: 2011-01-01
+  end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '80'
-- start_date: '2013-01-01'
-  end_date: '2016-12-31'
+- start_date: 2013-01-01
+  end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '66'
-- end_date: '2022-12-31'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '26'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '20'
 offices:
 - classification: capitol
-  address: S-105 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 6100, Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-0793
 links:
-- url: https://www.senatoraricnesbitt.com/
 - url: https://www.senatoraricnesbitt.com/contact
   note: Contact
 - url: https://www.senatoraricnesbitt.com
   note: Member Page
 - url: https://www.senatoraricnesbitt.com/contact
   note: Member Contact Page
+- url: https://www.senatoraricnesbitt.com/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000118

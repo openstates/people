@@ -1,31 +1,35 @@
 id: ocd-person/f5c9b37d-39a5-4c63-a526-6f35f45cf5cf
 name: Kara Hope
-given_name: Kara
+given_name: Kara Henigan
 family_name: Hope
 gender: Female
-email: KaraHope@house.mi.gov
+email: karahope@house.mi.gov
 image: https://housedems.com/sites/default/files/Images/Representative_Images/D067_Kara_Hope/067_Hope.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '74'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '67'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '74'
 offices:
 - classification: capitol
-  address: N-1093 House Office Building
-  voice: 1-517-373-8900
+  address: Room S-1086, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-0587
 links:
 - url: https://housedems.com/hope
+- url: https://housedems.com/kara-hope/
 sources:
-- url: https://housedems.com/hope
-- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
-- url: https://www.house.mi.gov/AllRepresentatives
+- url: https://housedems.com/kara-hope/
 - url: https://housedems.com/hope
   note: Member Details Page
+- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
   note: Members List Page
+- url: https://housedems.com/hope
+- url: https://www.house.mi.gov/AllRepresentatives
