@@ -1,7 +1,8 @@
 id: ocd-person/64012657-d026-411c-9525-3232524a5145
-name: Jon G. Burns
+name: Jon Burns
 given_name: Jon G.
 family_name: Burns
+birth_date: '1952-09-04'
 gender: Male
 email: jon.burns@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/burns-jon-73.jpg
@@ -12,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '159'
 offices:
-- classification: capitol
-  address: 332 State Capitol; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-5020
-- classification: district
-  address: P.O. Box 1000; Springfield, GA 31329
+- classification: district-mail
+  address: P.O. Box 1000, Springfield, GA 31329
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=73&Session=27
 - url: https://www.legis.ga.gov/members/house/73?session=1029
@@ -26,6 +27,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/73
 other_names:
+- name: Jon G. Burns
 - name: Jon Burns
 other_identifiers:
 - scheme: legacy_openstates
@@ -33,12 +35,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000254
 sources:
+- url: https://www.legis.ga.gov/members/house/73
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=73&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=73&Session=27
 - url: https://www.legis.ga.gov/members/house/73?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/73?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/73?session=1029&chamber=1
   note: Detail page (requires authorization token)

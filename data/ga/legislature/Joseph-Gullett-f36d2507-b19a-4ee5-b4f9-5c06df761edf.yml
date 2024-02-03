@@ -13,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '19'
 offices:
-- classification: capitol
-  address: 501-D Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+- classification: district-mail
+  address: P.O. Box 801626, Acworth, GA 30101
+- classification: capitol-mail
+  address: Room 501-D, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0178
-- classification: district
-  address: P.O. Box 801626; Acworth, GA 30101
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4936&Session=27
 - url: https://www.legis.ga.gov/members/house/4936?session=1029
@@ -27,12 +27,12 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4936
 sources:
+- url: https://www.legis.ga.gov/members/house/4936
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4936&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4936&Session=27
 - url: https://www.legis.ga.gov/members/house/4936?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/4936?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/4936?session=1029&chamber=1
   note: Detail page (requires authorization token)

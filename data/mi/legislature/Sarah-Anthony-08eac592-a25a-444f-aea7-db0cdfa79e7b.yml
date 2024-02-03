@@ -8,24 +8,27 @@ image: https://senatedems.com/anthony/wp-content/uploads/sites/21/2022/12/MDS_An
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '21'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '68'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '21'
 offices:
 - classification: capitol
-  address: S-324 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  address: Room S-324, Capitol Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-6960
 links:
 - url: https://housedems.com/anthony
 - url: https://senatedems.com/anthony
   note: Member Page
-- url: http://senatedems.com/anthony/contact
+- url: https://senatedems.com/anthony/contact
   note: Member Contact Page
+- url: https://senatedems.com/anthony/
 sources:
+- url: https://senatedems.com/anthony/
 - url: https://housedems.com/anthony
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives

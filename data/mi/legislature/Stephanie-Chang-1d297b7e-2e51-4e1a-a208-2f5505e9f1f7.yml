@@ -1,6 +1,6 @@
 id: ocd-person/1d297b7e-2e51-4e1a-a208-2f5505e9f1f7
 name: Stephanie Chang
-given_name: Stephanie
+given_name: Stephanie Gray
 family_name: Chang
 gender: Female
 email: senschang@senate.michigan.gov
@@ -8,29 +8,33 @@ image: https://senatedems.com/chang/wp-content/uploads/sites/9/2022/12/MDS_Chang
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '3'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '6'
-- end_date: '2022-12-31'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '1'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '3'
 offices:
+- classification: district
+  address: Samaritan Center 5555 Conner, Suite 1400D, Detroit, MI 48213
+  voice: 313-922-6949
 - classification: capitol
-  address: 4100 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Capitol Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-7346
 links:
-- url: https://senatedems.com/chang/
 - url: https://senatedems.com/chang/contact
   note: Contact
 - url: https://senatedems.com/chang
   note: Member Page
-- url: http://senatedems.com/chang/contact
+- url: https://senatedems.com/chang/contact
   note: Member Contact Page
+- url: https://senatedems.com/chang/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000291

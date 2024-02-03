@@ -1,7 +1,8 @@
 id: ocd-person/1f94316e-fb58-401f-bbfc-5ada0a717b6b
-name: Dar'shun Nicole Kendrick
+name: Dar'shun Kendrick
 given_name: Dar'shun Nicole
 family_name: Kendrick
+birth_date: '1982-08-28'
 gender: Female
 email: darshun.kendrick@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/kendrick-dar-shun-770.jpg
@@ -17,11 +18,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '93'
 offices:
-- classification: capitol
-  address: 411-B Coverdell Legislative Office Building; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 411-B, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0126
-- classification: district
-  address: PO Box 630; Lithonia, GA 30058
+- classification: district-mail
+  address: P.O. Box 630, Lithonia, GA 30058
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=770&Session=27
 - url: https://www.legis.ga.gov/members/house/770?session=1029
@@ -31,6 +32,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/770
 other_names:
+- name: Dar'shun Nicole Kendrick
 - name: Dar'shun Kendrick
 other_identifiers:
 - scheme: legacy_openstates
@@ -38,12 +40,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000318
 sources:
+- url: https://www.legis.ga.gov/members/house/770
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=770&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=770&Session=27
 - url: https://www.legis.ga.gov/members/house/770?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/770?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/770?session=1029&chamber=1
   note: Detail page (requires authorization token)

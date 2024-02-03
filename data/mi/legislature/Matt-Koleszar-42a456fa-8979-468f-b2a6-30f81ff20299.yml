@@ -3,29 +3,33 @@ name: Matt Koleszar
 given_name: Matt
 family_name: Koleszar
 gender: Male
-email: MattKoleszar@house.mi.gov
+email: mattkoleszar@house.mi.gov
 image: https://housedems.com/sites/default/files/Images/Representative_Images/D020_Matt_Koleszar/020_Koleszar.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '22'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '20'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '22'
 offices:
 - classification: capitol
-  address: S-786 House Office Building
-  voice: 1-517-373-0854
+  address: Room N-699, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-3816
 links:
 - url: https://housedems.com/koleszar
+- url: https://housedems.com/matt-koleszar/
 sources:
-- url: https://housedems.com/koleszar
-- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
-- url: https://www.house.mi.gov/AllRepresentatives
+- url: https://housedems.com/matt-koleszar/
 - url: https://housedems.com/koleszar
   note: Member Details Page
+- url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
   note: Members List Page
+- url: https://housedems.com/koleszar
+- url: https://www.house.mi.gov/AllRepresentatives

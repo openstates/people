@@ -1,7 +1,8 @@
 id: ocd-person/110cea65-4417-4b3a-aa39-3e7e6122073d
-name: Valencia M. Seay
+name: Valencia Seay
 given_name: Valencia M.
 family_name: Seay
+birth_date: '1953-07-06'
 gender: Female
 email: valencia.seay@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/seay-valencia-41.jpg
@@ -13,12 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '34'
 offices:
-- classification: capitol
-  address: 420-A State Capitol; Atlanta, GA 30334
-  voice: 404-656-5095
-- classification: district
-  address: P.O. Box 960008; Riverdale, GA 30274
+- classification: district-mail
+  address: P.O. Box 960008, Riverdale, GA 30274
   voice: 770-909-9912
+- classification: capitol-mail
+  address: Atlanta, GA 30334
+  voice: 404-656-5095
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
 - url: https://www.legis.ga.gov/members/senate/41?session=1031
@@ -27,18 +28,17 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/41?session=1029
 other_names:
+- name: Valencia M. Seay
 - name: Valencia Seay
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000042
 sources:
+- url: https://www.legis.ga.gov/members/senate/41?session=1029
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
-- url: https://www.legis.ga.gov/members/senate/41?session=1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/41?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/41?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

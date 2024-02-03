@@ -1,5 +1,5 @@
 id: ocd-person/f863b50d-c865-463a-830a-e5648837d9f7
-name: Robert Lee Dickey
+name: Robert Dickey
 given_name: Robert Lee
 family_name: Dickey
 gender: Male
@@ -17,12 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '140'
 offices:
-- classification: capitol
-  address: 228-B State Capitol; Atlanta, GA 30334
-  voice: 404-656-5099
-- classification: district
-  address: 3440 Musella Rd; Musella, GA 31066
+- classification: district-mail
+  address: 3440 Musella Road, Musella, GA 31066
   voice: 478-836-4362
+- classification: capitol-mail
+  address: Atlanta, GA 30334
+  voice: 404-656-5099
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/members/house/791?session=1029
@@ -32,6 +32,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/791
 other_names:
+- name: Robert Lee Dickey
 - name: Robert Dickey
 other_identifiers:
 - scheme: legacy_openstates
@@ -43,12 +44,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000384
 sources:
+- url: https://www.legis.ga.gov/members/house/791
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/members/house/791?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/791?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/791?session=1029&chamber=1
   note: Detail page (requires authorization token)

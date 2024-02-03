@@ -2,32 +2,34 @@ id: ocd-person/9c525554-fb85-45f3-87fa-cf6a3208ce32
 name: Rick Outman
 given_name: Rick
 family_name: Outman
+birth_date: '1963-12-15'
 gender: Male
 email: senroutman@senate.michigan.gov
 image: https://www.misenategop.com/wp-content/uploads/2019/01/Outman-580x770.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2019-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '33'
 - start_date: 2011-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '70'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '33'
 offices:
 - classification: capitol
-  address: 4400 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 4400, Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-3760
 links:
-- url: https://www.senatorrickoutman.com/
 - url: https://www.senatorrickoutman.com/contact
   note: Contact
 - url: https://www.senatorrickoutman.com
   note: Member Page
 - url: https://www.senatorrickoutman.com/contact
   note: Member Contact Page
+- url: https://www.senatorrickoutman.com/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000108

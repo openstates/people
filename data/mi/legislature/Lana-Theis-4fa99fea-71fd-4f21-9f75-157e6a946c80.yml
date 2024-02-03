@@ -2,35 +2,38 @@ id: ocd-person/4fa99fea-71fd-4f21-9f75-157e6a946c80
 name: Lana Theis
 given_name: Lana
 family_name: Theis
+birth_date: '1965-06-23'
 gender: Female
 email: senltheis@senate.michigan.gov
 image: https://www.misenategop.com/wp-content/uploads/2019/01/Theis-580x770.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2019-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '22'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '42'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '22'
 offices:
 - classification: capitol
-  address: 7400 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 7400, Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-2420
 links:
 - url: https://www.senatorlanatheis.com/
 - url: https://www.senatorlanatheis.com/contact
   note: Contact
-- url: https://www.senatorlanatheis.com
-  note: Member Page
 - url: https://www.senatorlanatheis.com/contact
   note: Member Contact Page
+- url: https://www.senatorlanatheis.com
+  note: Member Page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000297
 sources:
+- url: https://www.senatorlanatheis.com
 - url: https://www.senatorlanatheis.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
 - url: https://senate.michigan.gov/senators/SenatorData.json

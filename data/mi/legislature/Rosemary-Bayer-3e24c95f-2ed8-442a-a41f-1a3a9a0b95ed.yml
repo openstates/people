@@ -8,25 +8,27 @@ image: https://senatedems.com/bayer/wp-content/uploads/sites/17/2022/12/Bayer-Of
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '13'
+- end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '12'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '13'
 offices:
 - classification: capitol
-  address: 3100 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-2417
+  fax: 517-373-2694
 links:
-- url: https://senatedems.com/bayer/
 - url: https://senatedems.com/bayer/contact
   note: Contact
 - url: https://senatedems.com/bayer
   note: Member Page
-- url: http://senatedems.com/bayer/contact
+- url: https://senatedems.com/bayer/contact
   note: Member Contact Page
+- url: https://senatedems.com/bayer/
 sources:
 - url: https://senatedems.com/bayer/
 - url: https://senate.michigan.gov/senatorinfo_list.html

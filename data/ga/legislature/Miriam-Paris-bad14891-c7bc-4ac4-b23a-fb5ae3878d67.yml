@@ -2,6 +2,7 @@ id: ocd-person/bad14891-c7bc-4ac4-b23a-fb5ae3878d67
 name: Miriam Paris
 given_name: Miriam
 family_name: Paris
+birth_date: '1960-06-30'
 gender: Female
 email: miriam.paris@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/paris-miriam-794.jpg
@@ -18,12 +19,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '26'
 offices:
-- classification: capitol
-  address: 404-B Coverdell Legislative Office Bldg.; Atlanta, GA 30334
-  voice: 404-656-0109
-- classification: district
-  address: P.O. Box 14056; Macon, GA 31203
+- classification: district-mail
+  address: P.O. Box 14056, Macon, GA 31203
   voice: 478-737-3036
+- classification: capitol-mail
+  address: Room 404-B, Coverdell Legislative Office Building, Atlanta, GA 30334
+  voice: 404-656-0109
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
 - url: https://www.legis.ga.gov/members/house/794?session=1029
@@ -40,12 +41,12 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/6828474f-f544-4258-aa6a-5ddb6b8e11f1
 sources:
+- url: https://www.legis.ga.gov/members/house/794
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
 - url: https://www.legis.ga.gov/members/house/794?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/794?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/794?session=1029&chamber=1
   note: Detail page (requires authorization token)

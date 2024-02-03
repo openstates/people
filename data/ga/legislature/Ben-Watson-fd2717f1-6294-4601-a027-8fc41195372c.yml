@@ -1,7 +1,8 @@
 id: ocd-person/fd2717f1-6294-4601-a027-8fc41195372c
-name: Benjamin Luther Watson
+name: Ben Watson
 given_name: Benjamin Luther
 family_name: Watson
+birth_date: '1959-07-27'
 gender: Male
 email: ben.watson@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/watson-ben-784.jpg
@@ -13,8 +14,8 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '1'
 offices:
-- classification: capitol
-  address: 325-A CLOB; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 325-A, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-7880
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
@@ -24,6 +25,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/784?session=1029
 other_names:
+- name: Benjamin Luther Watson
 - name: Ben Watson
 other_identifiers:
 - scheme: legacy_openstates
@@ -33,13 +35,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000417
 sources:
+- url: https://www.legis.ga.gov/members/senate/784?session=1029
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=784&Session=27
-- url: https://www.legis.ga.gov/members/senate/784?session=1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/784?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/784?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

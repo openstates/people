@@ -1,36 +1,40 @@
 id: ocd-person/30afc35e-fa35-448c-b303-e0f6cc456c77
 name: Dan Lauwers
-given_name: Dan
+given_name: Daniel Victor
 family_name: Lauwers
+birth_date: '1963-01-15'
 gender: Male
 email: sendlauwers@senate.michigan.gov
 image: https://www.misenategop.com/wp-content/uploads/2023/01/Lauwers-580x770.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2019-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '25'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '81'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '25'
 offices:
 - classification: capitol
-  address: S-9 Capitol Building, 201 Townsend St, Lansing, MI 48933
+  address: Room S-2, Capitol Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-7708
+  fax: 517-373-1450
 links:
 - url: https://www.senatordanlauwers.com/
 - url: https://www.senatordanlauwers.com/contact
   note: Contact
-- url: https://www.senatordanlauwers.com
-  note: Member Page
 - url: https://www.senatordanlauwers.com/contact
   note: Member Contact Page
+- url: https://www.senatordanlauwers.com
+  note: Member Page
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000236
 sources:
+- url: https://www.senatordanlauwers.com
 - url: https://www.senatordanlauwers.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
 - url: https://senate.michigan.gov/senators/SenatorData.json

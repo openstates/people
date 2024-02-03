@@ -1,5 +1,5 @@
 id: ocd-person/86ea5bd0-2037-4bbe-a4e4-65bbaa8824ee
-name: Kenneth Vance
+name: Ken Vance
 given_name: Kenneth
 family_name: Vance
 gender: Male
@@ -13,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '133'
 offices:
-- classification: capitol
-  address: 501-E Coverdell Legislative Office Bldg.; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 501-E, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0178
-- classification: district
-  address: P.O. Box 705; Milledgeville, GA 31061
+- classification: district-mail
+  address: P.O. Box 705, Milledgeville, GA 31061
 links:
 - url: https://www.legis.ga.gov/members/house/5049?session=1031
   note: HTML member detail page
@@ -25,9 +25,11 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/5049
 other_names:
+- name: Kenneth Vance
 - name: Ken Vance
 - name: Kenneth Vance
 sources:
+- url: https://www.legis.ga.gov/members/house/5049
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5049?session=1031&chamber=1

@@ -1,31 +1,36 @@
 id: ocd-person/77456985-a7be-4384-9dfe-70373b8031f6
-name: Andrew W. Beeler
-given_name: Andrew W.
+name: Andrew Beeler
+given_name: Andrew
 family_name: Beeler
 gender: Male
-email: AndrewBeeler@house.mi.gov
+email: andrewbeeler@house.mi.gov
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-01'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '64'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '83'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '64'
 offices:
 - classification: capitol
-  address: S-821 House Office Building
-  voice: 1-517-373-1795
+  address: Room S-1187, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-0835
 links:
-- url: http://repbeeler.com
+- url: https://repbeeler.com
+- url: https://gophouse.org/member/repandrewbeeler/about
 other_names:
+- name: Andrew W. Beeler
 - name: Andrew Beeler
 sources:
+- url: https://gophouse.org/member/repandrewbeeler/about
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
-- url: http://repbeeler.com
+  note: Members List Page
+- url: https://repbeeler.com
   note: Member Details Page
 - url: https://www.house.mi.gov/AllRepresentatives
-  note: Members List Page

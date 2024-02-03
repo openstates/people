@@ -2,6 +2,7 @@ id: ocd-person/15db25fc-273b-467f-b8f9-897337f40b65
 name: Sharon Cooper
 given_name: Sharon
 family_name: Cooper
+birth_date: '1942-10-23'
 gender: Female
 email: sharon.cooper@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/cooper-sharon-86.jpg
@@ -17,12 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '43'
 offices:
-- classification: capitol
-  address: 436 State Capitol; Atlanta, GA 30334
-  voice: 404-656-5069
-- classification: district
-  address: 1234 Powers Ferry Rd., Suite 104; Marietta, GA 30067
+- classification: district-mail
+  address: 1234 Powers Ferry Road Suite 104, Marietta, GA 30067
   voice: 770-956-8357
+- classification: capitol-mail
+  address: Atlanta, GA 30334
+  voice: 404-656-5069
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/members/house/86?session=1029
@@ -37,12 +38,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000265
 sources:
+- url: https://www.legis.ga.gov/members/house/86
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/members/house/86?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/86?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/86?session=1029&chamber=1
   note: Detail page (requires authorization token)
@@ -58,6 +59,4 @@ extras:
   occupation: Medical Administrator/R.N M.S.N
   press: https://house-press.com/representative/Sharon-Cooper
   spouse: Tom
-  staff: a href="
-  staff email: ''
   title: Chairman, Public Health

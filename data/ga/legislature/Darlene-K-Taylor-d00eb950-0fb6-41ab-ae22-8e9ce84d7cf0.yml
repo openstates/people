@@ -1,9 +1,10 @@
 id: ocd-person/d00eb950-0fb6-41ab-ae22-8e9ce84d7cf0
-name: Darlene K. Taylor
+name: Darlene Taylor
 given_name: Darlene K.
 family_name: Taylor
+birth_date: '1950-01-29'
 gender: Female
-email: darlene.taylor@house.ga.gov
+email: darlene@rose.net
 image: https://www.legis.ga.gov/api/images/default-source/portraits/taylor-darlene-786.jpg
 party:
 - name: Republican
@@ -13,12 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '173'
 offices:
-- classification: capitol
-  address: 245-A State Capitol; Atlanta, GA 30334
-  voice: 404-463-2246
-- classification: district
-  address: PO Box 6580; Thomasville, GA 31758
+- classification: district-mail
+  address: P.O. Box 6580, Thomasville, GA 31758
   voice: 229-225-9943
+- classification: capitol-mail
+  address: Atlanta, GA 30334
+  voice: 404-463-2248
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=786&Session=27
 - url: https://www.legis.ga.gov/members/house/786?session=1029
@@ -28,6 +29,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/786
 other_names:
+- name: Darlene K. Taylor
 - name: Darlene Taylor
 other_identifiers:
 - scheme: legacy_openstates
@@ -35,12 +37,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000380
 sources:
+- url: https://www.legis.ga.gov/members/house/786
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=786&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=786&Session=27
 - url: https://www.legis.ga.gov/members/house/786?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/786?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/786?session=1029&chamber=1
   note: Detail page (requires authorization token)

@@ -1,7 +1,8 @@
 id: ocd-person/a0bfdc0d-4110-4cd2-b83c-834bba4300f5
-name: Freddie Powell Sims
+name: Freddie Sims
 given_name: Freddie Powell
 family_name: Sims
+birth_date: '1950-11-01'
 gender: Female
 email: freddie.sims@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/sims-freddie-209.jpg
@@ -13,11 +14,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '12'
 offices:
-- classification: capitol
-  address: 121-E State Capitol; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-463-5259
-- classification: district
-  address: 5377 Goose Hollow Road; Dawson, GA 31742
+- classification: district-mail
+  address: 5377 Goose Hollow Road, Dawson, GA 31742
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
@@ -27,18 +28,19 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/209
 other_names:
+- name: Freddie Powell Sims
 - name: Freddie Sims
 - name: Freddie Powell Sims
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000044
 sources:
+- url: https://www.legis.ga.gov/members/senate/209
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/senate/209?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/209?session=1029&chamber=2
   note: Detail page (requires authorization token)

@@ -1,37 +1,40 @@
 id: ocd-person/6ebda9ee-2203-4b66-9bb3-64d2307157a0
-name: Colton Chase Moore
+name: Colton Moore
 given_name: Colton Chase
 family_name: Moore
+birth_date: '1993-10-10'
 gender: Male
 email: colton.moore@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/moore-colton-4933.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-09-28
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '53'
 - end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '1'
-- start_date: 2023-01-09
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '53'
 offices:
-- classification: capitol
-  address: 322-B CLOB; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Room 322-B, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0256
-- classification: district
-  address: P.O. Box 1516; Trenton, GA 30752
+- classification: district-mail
+  address: P.O. Box 1516, Trenton, GA 30752
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4933&Session=27
-- url: https://www.legis.ga.gov/members/senate/4933?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/4933?session=1032
+- url: https://www.legis.ga.gov/members/senate/4933?session=1031
+  note: HTML member detail page
 other_names:
+- name: Colton Chase Moore
 - name: Colton Moore
 sources:
+- url: https://www.legis.ga.gov/members/senate/4933?session=1031
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4933&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl

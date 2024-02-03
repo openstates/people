@@ -1,30 +1,34 @@
 id: ocd-person/154e0e09-4da4-449d-9ebe-58c0b720e513
 name: Andrew Fink
-given_name: Andrew
+given_name: Andrew F.
 family_name: Fink
 gender: Male
-email: AndrewFink@house.mi.gov
+email: andrewfink@house.mi.gov
 image: https://dtj5wlj7ond0z.cloudfront.net/uploads/2021/01/HS_FINK_0121_NSC_7667-scaled.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '35'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '58'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '35'
 offices:
 - classification: capitol
-  address: N-799 House Office Building
-  voice: 1-517-373-1788
+  address: Room N-992, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-1794
 links:
-- url: http://repfink.com
+- url: https://repfink.com
+- url: https://gophouse.org/member/repandrewfink/about
 sources:
+- url: https://gophouse.org/member/repandrewfink/about
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
-- url: http://repfink.com
+  note: Members List Page
+- url: https://repfink.com
   note: Member Details Page
 - url: https://www.house.mi.gov/AllRepresentatives
-  note: Members List Page

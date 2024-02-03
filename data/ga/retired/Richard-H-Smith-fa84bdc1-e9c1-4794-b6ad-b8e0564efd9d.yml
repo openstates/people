@@ -1,14 +1,16 @@
 id: ocd-person/fa84bdc1-e9c1-4794-b6ad-b8e0564efd9d
-name: Richard H. Smith
+name: Richard Smith
 given_name: Richard H.
 family_name: Smith
 gender: Male
 email: richard.smith@house.ga.gov
+birth_date: 1945-03-09
 image: https://www.legis.ga.gov/api/images/default-source/portraits/smith-richard-213.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2023-01-09
+  end_date: 2023-01-29
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '139'
@@ -16,12 +18,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '134'
-offices:
-- classification: capitol
-  address: HM-1 State Capitol; Atlanta, GA 30334
-  voice: 404-656-5141
-- classification: district
-  address: PO Box 2122; Columbus, GA 319022122
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=213&Session=27
 - url: https://www.legis.ga.gov/members/house/213?session=1029
@@ -31,6 +27,7 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/213
 other_names:
+- name: Richard H. Smith
 - name: Richard Smith
 other_identifiers:
 - scheme: legacy_openstates
@@ -38,12 +35,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000356
 sources:
+- url: https://www.legis.ga.gov/members/house/213
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=213&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=213&Session=27
 - url: https://www.legis.ga.gov/members/house/213?session=1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/213?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/213?session=1029&chamber=1
   note: Detail page (requires authorization token)

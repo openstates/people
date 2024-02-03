@@ -8,29 +8,31 @@ image: https://senatedems.com/santana/wp-content/uploads/sites/8/2022/12/Santana
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '2'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '9'
-- end_date: '2022-12-31'
+- end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '3'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '2'
 offices:
 - classification: capitol
-  address: 5600 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Binsfeld Building P.O. Box 30036, Lansing, MI 48909
   voice: 517-373-0990
+  fax: 517-373-5338
 links:
-- url: https://senatedems.com/santana/
 - url: https://senatedems.com/santana/contact
   note: Contact
 - url: https://senatedems.com/santana
   note: Member Page
-- url: http://senatedems.com/santana/contact
+- url: https://senatedems.com/santana/contact
   note: Member Contact Page
+- url: https://senatedems.com/santana/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MIL000356

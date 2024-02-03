@@ -2,6 +2,7 @@ id: ocd-person/3f15ad5e-877d-44aa-b5b3-b24587c42685
 name: Elena Parent
 given_name: Elena
 family_name: Parent
+birth_date: '1975-12-27'
 gender: Female
 email: elena.parent@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/parent-elena-768.jpg
@@ -13,8 +14,8 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '42'
 offices:
-- classification: capitol
-  address: 121-A State Capitol; Atlanta, GA 30334
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-5109
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
@@ -29,13 +30,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000406
 sources:
+- url: https://www.legis.ga.gov/members/senate/768?session=1029
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
-- url: https://www.legis.ga.gov/members/senate/768?session=1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/768?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/768?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

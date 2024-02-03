@@ -2,6 +2,7 @@ id: ocd-person/4cf7c975-678b-4e21-9877-6d22d7b37916
 name: Ed Harbison
 given_name: Ed
 family_name: Harbison
+birth_date: '1941-08-25'
 gender: Male
 email: ed.harbison@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/harbison-ed-17.jpg
@@ -12,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '15'
 offices:
-- classification: capitol
-  address: 432 State Capitol; Atlanta, GA 30334
+- classification: district-mail
+  address: P.O. Box 1292, Columbus, GA 31902
+- classification: capitol-mail
+  address: Atlanta, GA 30334
   voice: 404-656-0074
-- classification: district
-  address: P.O. Box 1292; Columbus, GA 31902
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
 - url: https://www.legis.ga.gov/members/senate/17?session=1031
@@ -28,13 +29,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000020
 sources:
+- url: https://www.legis.ga.gov/members/senate/17?session=1029
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
 - url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=17&Session=27
-- url: https://www.legis.ga.gov/members/senate/17?session=1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/17?session=1029
 - url: https://www.legis.ga.gov/api/members/detail/17?session=1029&chamber=2
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

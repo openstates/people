@@ -1,6 +1,6 @@
 id: ocd-person/8564d477-bb39-47a4-87e1-3ceacd7d3abe
 name: Mark Huizenga
-given_name: Mark
+given_name: Mark E.
 family_name: Huizenga
 gender: Male
 email: senmhuizenga@senate.michigan.gov
@@ -8,23 +8,26 @@ image: https://www.misenategop.com/wp-content/uploads/2021/11/Huizenga-580x770.j
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '30'
 - end_date: 2021-11-10
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '74'
   end_reason: Elected to Michigan Senate
 - start_date: 2021-11-10
-  end_date: '2023-01-01'
+  end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '28'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '30'
 offices:
 - classification: capitol
-  address: 7200 Binsfeld Building, 201 Townsend St, Lansing, MI 48933
+  address: Room 7200, Binsfeld Office Building, 201 Townsend St. P.O. Box 30036, Lansing,
+    MI 48909
   voice: 517-373-0797
+  fax: 517-373-5236
 links:
 - url: https://SenatorMarkHuizenga.com
 - url: https://SenatorMarkHuizenga.com/contact
@@ -33,6 +36,7 @@ links:
   note: Member Page
 - url: https://www.senatormarkhuizenga.com/contact
   note: Member Contact Page
+- url: https://www.senatormarkhuizenga.com/
 other_names:
 - name: Mark Huizenga
 - name: Mark E. Huizenga
@@ -40,6 +44,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/2af1ca75-0507-41ce-b2e4-6cab6d7d55ab
 sources:
+- url: https://www.senatormarkhuizenga.com/
 - url: https://senate.michigan.gov/senatorinfo_list.html
 - url: https://senate.michigan.gov/senators/SenatorData.json
   note: Members List JSON Data Page

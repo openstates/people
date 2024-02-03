@@ -1,33 +1,37 @@
 id: ocd-person/960d6487-b202-46fa-8905-e001b6954d5a
 name: Greg VanWoerkom
-given_name: Greg
+given_name: Gregory
 family_name: VanWoerkom
 gender: Male
-email: GregVanWoerkom@house.mi.gov
+email: gregvanwoerkom@house.mi.gov
 image: https://dtj5wlj7ond0z.cloudfront.net/uploads/2020/07/HS_VAN-WOERKOM_0119.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '88'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '91'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '88'
 offices:
 - classification: capitol
-  address: N-1192 House Office Building
-  voice: 1-517-373-1830
+  address: Room N-1192, Anderson House Office Building P.O. Box 30014, Lansing, MI
+    48909
+  voice: 517-373-1830
 links:
-- url: http://gophouse.org/representatives/westmi/vanwoerkom/
+- url: https://gophouse.org/representatives/westmi/vanwoerkom/
+- url: https://gophouse.org/member/repgregvanwoerkom/about
 sources:
-- url: http://gophouse.org/representatives/westmi/vanwoerkom/
+- url: https://gophouse.org/member/repgregvanwoerkom/about
+- url: https://gophouse.org/representatives/westmi/vanwoerkom/
+  note: Member Details Page
 - url: https://www.house.mi.gov/MHRPublic/frmRepListMilenia.aspx?all=true
 - url: https://www.house.mi.gov/AllRepresentatives
-- url: http://gophouse.org/representatives/westmi/vanwoerkom/
-  note: Member Details Page
-- url: https://www.house.mi.gov/AllRepresentatives
   note: Members List Page
-- url: http://RepVanWoerkom.com
+- url: http://gophouse.org/representatives/westmi/vanwoerkom/
+- url: https://www.house.mi.gov/AllRepresentatives
+- url: https://RepVanWoerkom.com
   note: Member Details Page
