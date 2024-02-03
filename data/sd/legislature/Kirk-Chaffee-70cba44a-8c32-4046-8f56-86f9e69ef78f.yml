@@ -2,6 +2,7 @@ id: ocd-person/70cba44a-8c32-4046-8f56-86f9e69ef78f
 name: Kirk Chaffee
 given_name: Kirk
 family_name: Chaffee
+birth_date: '1963-11-22'
 gender: Male
 email: kirk.chaffee@sdlegislature.gov
 image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/chaffee_2019.jpg
@@ -13,8 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '29'
 offices:
-- classification: district
-  address: PO Box 280; Whitewood, SD 57793
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3251
+- classification: district-mail
+  address: P.O. Box 280, Whitewood, SD 57793
+  voice: 605-490-8616
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1641&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1777/Detail
@@ -26,6 +31,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/99808126-c966-4bce-bd84-17c49d636a0f
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4485/Detail
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1641&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1777/Detail
 extras:

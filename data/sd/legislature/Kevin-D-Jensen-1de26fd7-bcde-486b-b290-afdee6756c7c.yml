@@ -2,6 +2,7 @@ id: ocd-person/1de26fd7-bcde-486b-b290-afdee6756c7c
 name: Kevin Jensen
 given_name: Kevin D.
 family_name: Jensen
+birth_date: '1954-08-18'
 gender: Male
 email: kevin.jensen@sdlegislature.gov
 image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/jensen,
@@ -14,11 +15,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '16'
 offices:
-- classification: capitol
-  voice: 605-773-3851
-- classification: district
-  address: 27808 484th Ave.; Canton, SD 57013
+- classification: district-mail
+  address: 27808 484th Ave., Canton, SD 57013
+- classification: home
+  address: SD
   voice: 605-366-6947
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3851
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1540&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1427&Session=2019
@@ -34,9 +38,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/c67b7545-3fd0-46fe-9ad5-0b9154472164
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4374/Detail
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1540&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1427&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1804/Detail
-- url: https://sdlegislature.gov/Legislators/Profile/4374/Detail
 extras:
   occupation: Business Owner

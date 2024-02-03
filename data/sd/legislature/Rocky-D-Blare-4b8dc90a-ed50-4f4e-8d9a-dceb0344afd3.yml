@@ -13,8 +13,15 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '21'
 offices:
-- classification: district
-  address: 31176 269th St.; Ideal, SD 57541
+- classification: district-mail
+  address: 31176 269th St., Ideal, SD 57541
+  voice: 605-842-3260
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3851
+- classification: home
+  address: SD
+  voice: 605-842-1617
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/1770/Detail
 - url: https://sdlegislature.gov/Legislators/Profile/4337/Detail
@@ -25,6 +32,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/cdfe4536-bb88-428b-b110-2b4f93023589
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4337/Detail
 - url: https://sdlegislature.gov/Legislators/Profile/1770/Detail
 extras:
   occupation: Insurance Agent

@@ -14,8 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '13'
 offices:
-- classification: district
-  address: 6405 S. Killarney Cir.; Sioux Falls, SD 57108
+- classification: home
+  address: SD
+  voice: 605-371-1668
+- classification: district-mail
+  address: 6405 S. Killarney Circle, Sioux Falls, SD 57108
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3851
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1537&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1431&Session=2019
@@ -31,6 +37,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/c76afc4b-0b85-4e3a-a87e-4b52c94b43d0
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4403/Detail
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1537&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1431&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1836/Detail

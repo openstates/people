@@ -2,6 +2,7 @@ id: ocd-person/0121d607-e75c-4427-bd76-a6e01434afca
 name: Mike Stevens
 given_name: Mike
 family_name: Stevens
+birth_date: '1953-01-24'
 gender: Male
 email: mike.stevens@sdlegislature.gov
 image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/stevens, mike
@@ -14,8 +15,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '18'
 offices:
-- classification: district
-  address: 214 Marina Del Ave.; Yankton, SD 57078
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3851
+- classification: district-mail
+  address: 214 Marina Del Ave., Yankton, SD 57078
+- classification: home
+  address: SD
+  voice: 605-661-0057
 links:
 - url: https://sdlegislature.gov/Legislators/Profile/3790/Detail
 - url: https://sdlegislature.gov/Legislators/Profile/4421/Detail
@@ -26,6 +33,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/29551e1b-d2f9-405b-9353-b15b6c85aa5a
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4421/Detail
 - url: https://sdlegislature.gov/Legislators/Profile/3790/Detail
 extras:
   occupation: Attorney
