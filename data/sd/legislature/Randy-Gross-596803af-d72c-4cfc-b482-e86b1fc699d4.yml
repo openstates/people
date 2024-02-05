@@ -17,8 +17,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '8'
 offices:
-- classification: district
-  address: 48006 221st St.; Elkton, SD 57026
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3251
+- classification: district-mail
+  address: 48006 221st St., Elkton, SD 57026
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1616&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1796/Detail
@@ -30,6 +33,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/8ff22f4e-b93a-4a50-8c9f-2dbee97bfbf0
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4503/Detail
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1616&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1796/Detail
 extras:

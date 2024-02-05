@@ -13,8 +13,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '11'
 offices:
-- classification: district
-  address: 7421 W. Luke Dr.; Sioux Falls, SD 57106
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3851
+- classification: district-mail
+  address: 7421 W. Luke Drive, Sioux Falls, SD 57106
+- classification: home
+  address: SD
+  voice: 605-695-0391
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1549&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Profile/1809/Detail
@@ -28,6 +34,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/735a6a6c-9e3f-428c-854e-c8d539f51955
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4379/Detail
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1549&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Profile/1809/Detail
 extras:

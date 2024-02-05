@@ -14,11 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '15'
 offices:
-- classification: capitol
-  voice: 605-773-3821
-- classification: district
-  address: 802 S. Willow Ave.; Sioux Falls, SD 57104-4543
+- classification: district-mail
+  address: 802 S. Willow Ave., Sioux Falls, SD 57104
   voice: 605-371-6311
+- classification: capitol
+  address: Capitol Building 500 E. Capitol Ave., Pierre, SD 57501
+  voice: 605-773-3821
 links:
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1523&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1437&Session=2019
@@ -31,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: SDL000321
 sources:
+- url: https://sdlegislature.gov/Legislators/Profile/4394/Detail
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1523&Session=2018s
 - url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1437&Session=2019
 - url: https://sdlegislature.gov/Legislators/Profile/1827/Detail
-- url: https://sdlegislature.gov/Legislators/Profile/4394/Detail
 extras:
   occupation: Economics Professor
