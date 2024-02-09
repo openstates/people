@@ -1,35 +1,41 @@
 id: ocd-person/003644e8-cb82-45c6-b875-e52bc28424bb
 name: Romaine Quinn
-given_name: Romaine
+given_name: Romaine Robert
 family_name: Quinn
-email: Sen.Quinn@legis.wisconsin.gov
+birth_date: '1990-07-30'
+gender: Male
+email: sen.quinn@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2564.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '25'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '75'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '25'
 offices:
-- classification: capitol
-  address: Room 123 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 123 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-3510
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1601
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1869
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2564
+- url: https://legis.wisconsin.gov/senate/25/quinn/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000574
 sources:
-- url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1601
-- url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1869
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2564
   note: member detail page
+- url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1601
+- url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1869
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
 extras:

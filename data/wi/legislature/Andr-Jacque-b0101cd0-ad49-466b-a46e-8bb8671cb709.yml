@@ -1,30 +1,36 @@
 id: ocd-person/b0101cd0-ad49-466b-a46e-8bb8671cb709
 name: "Andr\xE9 Jacque"
-given_name: "Andr\xE9"
+given_name: Andre
 family_name: Jacque
+birth_date: '1980-10-13'
 gender: Male
-email: Sen.Jacque@legis.wisconsin.gov
+email: sen.jacque@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2419.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2019-01-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '1'
 - end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '2'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '1'
 offices:
-- classification: capitol
-  address: Room 7 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 7 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-3512
   fax: 608-282-3541
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
 links:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1941
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099
   note: homepage
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2419
+- url: https://legis.wisconsin.gov/senate/01/jacque
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000461
@@ -33,13 +39,13 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/0e27c35e-f9fc-483e-80fa-0718735e8451
 sources:
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2419
+  note: member detail page
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1941
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2099
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
-- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2419
-  note: member detail page
 extras:
   website: http://legis.wisconsin.gov/senate/01/jacque
   extra phone: ''

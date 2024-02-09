@@ -2,22 +2,26 @@ id: ocd-person/3092ab11-6aa8-44af-a204-3719c6f0e4b5
 name: Joan Ballweg
 given_name: Joan
 family_name: Ballweg
+birth_date: '1952-03-16'
 gender: Female
-email: Sen.Ballweg@legis.wisconsin.gov
+email: sen.ballweg@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2409.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2021-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '14'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '41'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '14'
 offices:
-- classification: capitol
-  address: Room 409 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
+- classification: district
+  address: State Capitol Room 409 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-0751
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1535
@@ -25,20 +29,22 @@ links:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2250
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2250
   note: homepage
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2409
+- url: https://legis.wisconsin.gov/senate/14/ballweg
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000349
 - scheme: openstates
   identifier: ocd-person/96497491-768e-434b-968b-c27c8dfb8980
 sources:
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2409
+  note: member detail page
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1535
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1835
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2250
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
-- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2409
-  note: member detail page
 extras:
   website: https://legis.wisconsin.gov/senate/14/ballweg
   title: Majority Caucus Vice-Chair
