@@ -1,22 +1,24 @@
 id: ocd-person/fb69d630-1f0b-49e1-999b-0aefb2bb502f
 name: Hoa Nguyen
-given_name: Hoa
+given_name: Hoa H.
 family_name: Nguyen
-email: Rep.HoaNguyen@oregonlegislature.gov
+gender: Female
+email: rep.hoanguyen@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/nguyen/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '48'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-473, Salem, OR, 97301
+  address: Room H-473, 900 Court St. NE, Salem, OR 97301
   voice: 503-986-1448
 links:
 - url: https://www.oregonlegislature.gov/nguyen
   note: homepage
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/nguyen
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

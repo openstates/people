@@ -2,21 +2,24 @@ id: ocd-person/9bb85e98-3001-46d7-85fb-5843675d17ba
 name: Daniel Bonham
 given_name: Daniel
 family_name: Bonham
-email: Sen.DanielBonham@oregonlegislature.gov
+birth_date: '1977-06-03'
+gender: Male
+email: sen.danielbonham@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/bonham/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2023-01-09
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '26'
-- end_date: '2023-01-01'
+- end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '59'
 offices:
 - classification: capitol
-  address: 900 Court St NE, S-423, Salem, OR, 97301
+  address: "Room S-423\u200B\u200B, 900 Court St. NE, Salem, OR 97301"
   voice: 503-986-1726
 links:
 - url: https://www.oregonlegislature.gov/bonham
@@ -25,5 +28,5 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/41b2bed8-0261-4caf-b09e-ffea4f32318f
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/bonham
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
