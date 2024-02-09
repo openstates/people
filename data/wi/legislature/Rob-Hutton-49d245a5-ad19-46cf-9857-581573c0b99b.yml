@@ -2,34 +2,40 @@ id: ocd-person/49d245a5-ad19-46cf-9857-581573c0b99b
 name: Rob Hutton
 given_name: Rob
 family_name: Hutton
-email: Sen.Hutton@legis.wisconsin.gov
+birth_date: '1967-04-07'
+gender: Male
+email: sen.hutton@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2560.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '5'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '13'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '5'
 offices:
-- classification: capitol
-  address: Room 313 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 313 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-2512
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1562
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1807
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2560
+- url: https://legis.wisconsin.gov/senate/05/hutton/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000513
 sources:
-- url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1562
-- url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1807
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2560
   note: member detail page
+- url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1562
+- url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1807
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
 extras:

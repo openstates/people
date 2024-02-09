@@ -1,38 +1,46 @@
 id: ocd-person/1152309b-c82f-4660-bd5d-3e16322f1200
-name: Daniel Knodl
-given_name: Daniel
+name: Dan Knodl
+given_name: Daniel Raymond
 family_name: Knodl
+birth_date: '1958-12-14'
 gender: Male
-email: Sen.Knodl@legis.wisconsin.gov
+email: sen.knodl@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2688.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-05-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '8'
 - end_date: 2023-05-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '24'
-- start_date: '2023-05-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '8'
 offices:
-- classification: capitol
-  address: Room 108 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 108 South, P.O. Box 7882, Madison, WI 53707
   voice: 608-266-5830
-  fax: 608-282-3624
+- classification: capitol-mail
+  address: P.O. Box 8952, Madison, WI 53708
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1574
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1818
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2153
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2153
   note: homepage
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2688
+- url: https://legis.wisconsin.gov/senate/08/knodl/
+other_names:
+- name: Daniel Knodl
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000384
 - scheme: legacy_openstates
   identifier: WIL000520
 sources:
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2688
+  note: member detail page
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1574
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1818
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2153
@@ -43,8 +51,6 @@ sources:
   note: member detail page
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
-- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2688
-  note: member detail page
 extras:
   website: https://legis.wisconsin.gov/senate/08/knodl
   extra phone: ''

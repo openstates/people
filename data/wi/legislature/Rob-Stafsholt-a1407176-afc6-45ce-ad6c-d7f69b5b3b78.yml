@@ -1,30 +1,36 @@
 id: ocd-person/a1407176-afc6-45ce-ad6c-d7f69b5b3b78
 name: Rob Stafsholt
-given_name: Rob
+given_name: Robert R.
 family_name: Stafsholt
+birth_date: '1975-11-13'
 gender: Male
-email: Sen.Stafsholt@legis.wisconsin.gov
+email: sen.stafsholt@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2434.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2021-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '10'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '29'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '10'
 offices:
-- classification: capitol
-  address: Room 15 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 15 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-7745
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1635
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1823
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2248
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2248
   note: homepage
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2434
+- url: https://legis.wisconsin.gov/senate/10/stafsholt/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000629
@@ -33,14 +39,14 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/7c7f4965-fdab-4a07-9507-cf14c0b02efb
 sources:
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2434
+  note: member detail page
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1635
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1823
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2248
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
-- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2434
-  note: member detail page
 extras:
   website: https://legis.wisconsin.gov/senate/10/stafsholt
   extra phone: ''
