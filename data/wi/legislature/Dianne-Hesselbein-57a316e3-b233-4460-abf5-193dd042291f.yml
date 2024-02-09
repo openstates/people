@@ -2,41 +2,47 @@ id: ocd-person/57a316e3-b233-4460-abf5-193dd042291f
 name: Dianne Hesselbein
 given_name: Dianne
 family_name: Hesselbein
+birth_date: '1971-03-10'
 gender: Female
-email: Sen.Hesselbein@legis.wisconsin.gov
+email: sen.hesselbein@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2566.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-03'
+- start_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '27'
+- end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '79'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '27'
 offices:
-- classification: capitol
-  address: Room 206 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 206 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-6670
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1559
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1873
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2144
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2144
   note: homepage
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2566
+- url: https://legis.wisconsin.gov/senate/27/hesselbein/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000511
 sources:
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2566
+  note: member detail page
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1559
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1873
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2144
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
-- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2566
-  note: member detail page
 extras:
   website: https://legis.wisconsin.gov/senate/27/hesselbein
   title: Minority Leader

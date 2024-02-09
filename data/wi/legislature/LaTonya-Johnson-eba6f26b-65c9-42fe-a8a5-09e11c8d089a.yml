@@ -2,32 +2,36 @@ id: ocd-person/eba6f26b-65c9-42fe-a8a5-09e11c8d089a
 name: LaTonya Johnson
 given_name: LaTonya
 family_name: Johnson
+birth_date: '1972-06-22'
 gender: Female
-email: Sen.Johnson@legis.wisconsin.gov
+email: sen.johnson@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2421.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2017-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '6'
 - end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '17'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
-  district: '6'
 offices:
-- classification: capitol
-  address: Room 106 South State Capitol PO Box 7882 Madison, WI 53707
+- classification: district
+  address: State Capitol Room 106 South, 2 E. Main St., Madison, WI 53702
   voice: 608-266-2500
   fax: 608-282-3546
-- classification: district
-  voice: 414-313-1241
+- classification: capitol-mail
+  address: P.O. Box 7882, Madison, WI 53707
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1643
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1904
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2100
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2100
   note: homepage
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2421
+- url: https://legis.wisconsin.gov/senate/06/johnson/
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WIL000627
@@ -36,14 +40,14 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/87999884-0aa3-4b05-8bbf-0118ead14994
 sources:
+- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2421
+  note: member detail page
 - url: https://docs.legis.wisconsin.gov/2017/legislators/senate/1643
 - url: https://docs.legis.wisconsin.gov/2019/legislators/senate/1904
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/2100
 - url: https://docs.legis.wisconsin.gov/2021/legislators/senate/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/senate/
   note: members list page
-- url: https://docs.legis.wisconsin.gov/2023/legislators/senate/2421
-  note: member detail page
 extras:
   website: http://legis.wisconsin.gov/senate/06/johnson
   extra phone: (877) 474-2000
