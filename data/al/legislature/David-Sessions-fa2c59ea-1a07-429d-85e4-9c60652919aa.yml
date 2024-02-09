@@ -1,26 +1,27 @@
 id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
 name: David Sessions
-given_name: David
+given_name: David R.
 family_name: Sessions
+gender: Male
 email: d.r.sessions@att.net
 image: https://www.legislature.state.al.us/pdf/senate/members/Sessions_35.png
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-07'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  district: '105'
-- start_date: '2018-11-07'
+- start_date: 2018-11-07
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '35'
+- end_date: 2018-11-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '105'
 offices:
 - classification: capitol
-  address: 11 S Union Street,Suite 734,Montgomery, AL 36130
+  address: Room 734, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0882
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
 - url: https://alison.legislature.state.al.us/senate-leaders-members
   note: homepage
 other_identifiers:
@@ -31,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000357
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
-- url: http://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Sessions&OID_SPONSOR=100478&OID_PERSON=6832&SESSNAME=Regular%20Session%202022
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100478&OID_PERSON=6832
+- url: https://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Sessions&OID_SPONSOR=100478&OID_PERSON=6832&SESSNAME=Regular%20Session%202022
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

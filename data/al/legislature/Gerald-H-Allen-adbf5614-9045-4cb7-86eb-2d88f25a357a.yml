@@ -1,26 +1,31 @@
 id: ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a
-name: Gerald H. Allen
+name: Gerald Allen
 given_name: Gerald H.
 family_name: Allen
+birth_date: '1950-02-08'
+gender: Male
 email: gerald.allen@alsenate.gov
 image: https://www.legislature.state.al.us/pdf/senate/members/Allen_21.png
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2010-11-03
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '21'
 offices:
-- classification: capitol
-  address: 11 S Union Street,Suite 729,Montgomery, AL 36130
-  voice: 334-261-0889
-  fax: 334-353-8277
 - classification: district
+  address: AL
   voice: 334-261-0861
+- classification: capitol
+  address: Room 729, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0889
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100464&OID_PERSON=1014
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100464&OID_PERSON=1014
 - url: https://alison.legislature.state.al.us/senate-leaders-members
   note: homepage
+other_names:
+- name: Gerald H. Allen
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000001
@@ -31,9 +36,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000546
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100464&OID_PERSON=1014
-- url: http://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Allen&OID_SPONSOR=100464&OID_PERSON=1014&SESSNAME=Regular%20Session%202022
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100464&OID_PERSON=1014
+- url: https://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Allen&OID_SPONSOR=100464&OID_PERSON=1014&SESSNAME=Regular%20Session%202022
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

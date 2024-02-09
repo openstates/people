@@ -2,20 +2,22 @@ id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
 name: Steve Livingston
 given_name: Steve
 family_name: Livingston
+gender: Male
 email: steve.livingston@alsenate.gov
 image: https://www.legislature.state.al.us/pdf/senate/members/Livingston_8.png
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2014-11-05
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '8'
 offices:
 - classification: capitol
-  address: 11 S Union Street,Suite 731,Montgomery, AL 36130
+  address: Room 731, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0858
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100451&OID_PERSON=7689
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100451&OID_PERSON=7689
 - url: https://alison.legislature.state.al.us/senate-leaders-members
   note: homepage
 other_identifiers:
@@ -28,9 +30,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000521
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100451&OID_PERSON=7689
-- url: http://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Livingston&OID_SPONSOR=100451&OID_PERSON=7689&SESSNAME=Regular%20Session%202022
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100451&OID_PERSON=7689
+- url: https://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Livingston&OID_SPONSOR=100451&OID_PERSON=7689&SESSNAME=Regular%20Session%202022
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

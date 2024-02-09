@@ -2,32 +2,34 @@ id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 name: Chris Blackshear
 given_name: Chris
 family_name: Blackshear
+gender: Male
 email: chris.blackshear@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Blackshear_80.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-01-29
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '80'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 404,Montgomery, AL 36130-2950
-  voice: 334-261-0428
 - classification: district
-  address: Post Office Box 1178,Smiths Station, AL 36877
+  address: P.O. Box 1178, Smiths Station, AL 36877
   voice: 706-464-8941
+- classification: capitol
+  address: Room 404, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0428
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100562&OID_PERSON=7981
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100562&OID_PERSON=7981
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000550
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100562&OID_PERSON=7981
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Blackshear&OID_SPONSOR=100562&OID_PERSON=7981&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100562&OID_PERSON=7981
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Blackshear&OID_SPONSOR=100562&OID_PERSON=7981&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

@@ -2,23 +2,26 @@ id: ocd-person/451a4cb7-3585-46d3-86c7-61b345f7a601
 name: Randy Wood
 given_name: Randy
 family_name: Wood
+birth_date: '1947-03-25'
+gender: Male
 email: strep36@gmail.com
 image: https://www.legislature.state.al.us/pdf/house/members/Wood_36.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2002-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '36'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 417-H,Montgomery, AL 36130-2950
+  address: Room 417-H, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0552
 - classification: district
-  address: Post Office Box 4432,Anniston, AL 36204
+  address: P.O. Box 4432, Anniston, AL 36204
   voice: 256-239-9190
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100517&OID_PERSON=4457
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100517&OID_PERSON=4457
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_names:
@@ -31,9 +34,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000347
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100517&OID_PERSON=4457
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wood&OID_SPONSOR=100517&OID_PERSON=4457&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100517&OID_PERSON=4457
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wood&OID_SPONSOR=100517&OID_PERSON=4457&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

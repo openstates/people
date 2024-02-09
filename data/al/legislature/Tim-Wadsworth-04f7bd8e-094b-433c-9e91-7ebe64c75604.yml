@@ -1,23 +1,27 @@
 id: ocd-person/04f7bd8e-094b-433c-9e91-7ebe64c75604
 name: Tim Wadsworth
-given_name: Tim
+given_name: Timothy Ray
 family_name: Wadsworth
+birth_date: '1957-06-03'
+gender: Male
 email: wadsworth.tim654321@gmail.com
 image: https://www.legislature.state.al.us/pdf/house/members/Wadsworth_14.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '14'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 427-C,Montgomery, AL 36130-2950
+  address: Room 427-C, 11 S. Union St., Montgomery, AL 36130
   voice: 205-300-4008
 - classification: district
-  address: 1175 Helicon Road,Arley, AL 35541
+  address: 11754 Helicon Road, Arley, AL 35541
+  voice: 205-300-4008
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100494&OID_PERSON=7704
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100494&OID_PERSON=7704
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -28,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000453
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100494&OID_PERSON=7704
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wadsworth&OID_SPONSOR=100494&OID_PERSON=7704&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100494&OID_PERSON=7704
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Wadsworth&OID_SPONSOR=100494&OID_PERSON=7704&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

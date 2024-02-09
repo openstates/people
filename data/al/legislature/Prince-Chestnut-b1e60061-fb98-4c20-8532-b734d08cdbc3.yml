@@ -2,32 +2,34 @@ id: ocd-person/b1e60061-fb98-4c20-8532-b734d08cdbc3
 name: Prince Chestnut
 given_name: Prince
 family_name: Chestnut
+gender: Male
 email: chestnut4house@gmail.com
 image: https://www.legislature.state.al.us/pdf/house/members/Chestnut_67.png
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-04-25
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '67'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 438,Montgomery, AL 36130-2950
-  voice: 334-261-0598
-- classification: district
-  address: Post Office Box 628,Selma, AL 36702
+  address: Room 537E, 11 S. Union St. 334-874-2569, Montgomery, AL 36130
   voice: 334-874-2569
+- classification: district
+  address: P.O. Box 628, Selma, AL 36702
+  voice: 334-261-0500
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100549&OID_PERSON=8261
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100549&OID_PERSON=8261
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000556
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100549&OID_PERSON=8261
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Chestnut&OID_SPONSOR=100549&OID_PERSON=8261&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100549&OID_PERSON=8261
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Chestnut&OID_SPONSOR=100549&OID_PERSON=8261&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

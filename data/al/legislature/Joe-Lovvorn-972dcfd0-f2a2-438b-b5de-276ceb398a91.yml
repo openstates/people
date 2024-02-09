@@ -2,32 +2,34 @@ id: ocd-person/972dcfd0-f2a2-438b-b5de-276ceb398a91
 name: Joe Lovvorn
 given_name: Joe
 family_name: Lovvorn
+birth_date: '1976-09-05'
+gender: Male
 email: joe.lovvorn@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Lovvorn_79.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-09-22
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '79'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 519-Q,Montgomery, AL 36130-2950
+  address: Room 435, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0540
 - classification: district
-  address: '515 Ogletree Road,Office: ,Auburn, AL 36830'
-  voice: 334-347-0946
+  address: Auburn, AL 36830
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100561&OID_PERSON=8119
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100561&OID_PERSON=8119
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000554
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100561&OID_PERSON=8119
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lovvorn&OID_SPONSOR=100561&OID_PERSON=8119&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100561&OID_PERSON=8119
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lovvorn&OID_SPONSOR=100561&OID_PERSON=8119&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:
