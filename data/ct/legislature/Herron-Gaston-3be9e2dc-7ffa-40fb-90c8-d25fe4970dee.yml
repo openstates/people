@@ -1,23 +1,25 @@
 id: ocd-person/3be9e2dc-7ffa-40fb-90c8-d25fe4970dee
 name: Herron Gaston
-given_name: Herron
+given_name: Herron Keyon
 family_name: Gaston
+gender: Male
+email: herron.gaston@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2023-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '23'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 3300; Hartford, CT 06106-1591
-  voice: 860-240-8600
-- classification: district
-  address: ; , CT
+  address: Room 2000, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
+  voice: 860-240-0591
 links:
-- url: http://www.senatedems.ct.gov/gaston
-- url: http://senatedems.ct.gov/gaston
+- url: https://senatedems.ct.gov/gaston
+- url: https://www.senatedems.ct.gov/gaston
 sources:
+- url: http://www.senatedems.ct.gov/gaston
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

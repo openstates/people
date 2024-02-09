@@ -3,33 +3,33 @@ name: Derek Slap
 given_name: Derek
 family_name: Slap
 gender: Male
+email: derek.slap@cga.ct.gov
 image: http://www.senatedems.ct.gov/templates/slap/images/slap-hi.jpg
 party:
 - name: Democratic
 roles:
-- end_date: 2019-03-01
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  district: '19'
 - start_date: 2019-03-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '5'
+- end_date: 2019-03-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '19'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 1000; Hartford, CT 06106-1591
+  address: Room 1800, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-1436
-- classification: district
-  address: 51 Fairlee Road; West Hartford, CT 06107
 links:
-- url: http://www.senatedems.ct.gov/slap
 - url: https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S05%27&dist_name=Slap,%20Derek
+- url: https://www.senatedems.ct.gov/slap
 other_names:
 - name: Slap, Derek
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CTL000320
 sources:
+- url: http://www.senatedems.ct.gov/slap
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

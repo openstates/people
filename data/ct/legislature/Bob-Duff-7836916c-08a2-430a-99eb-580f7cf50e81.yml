@@ -1,35 +1,38 @@
 id: ocd-person/7836916c-08a2-430a-99eb-580f7cf50e81
 name: Bob Duff
-given_name: Bob
+given_name: Robert Bruce
 family_name: Duff
+birth_date: '1971-05-08'
 gender: Male
-email: Bob.Duff@cga.ct.gov
+email: duff@senatedems.ct.gov
 image: http://www.senatedems.ct.gov/templates/duff/images/duff-headshot.jpg
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2005-01-07
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '25'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 3300; Hartford, CT 06106-1591
+  address: Room 3300, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-0414
-- classification: district
-  address: 50 Toilsome Avenue; Norwalk, CT 06851
 links:
-- url: http://www.senatedems.ct.gov/Duff
+- url: https://www.senatedems.ct.gov/Duff
 - url: https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27S25%27&dist_name=Duff,%20Bob
+- url: http://www.senatedems.ct.gov/Duff.php
 other_names:
 - name: Duff, Bob
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CTL000025
 sources:
+- url: http://www.senatedems.ct.gov/Duff.php
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male
   title: Senate Majority Leader
-  committees: Executive and Legislative Nominations (Chair); Legislative Management (Vice Chair)
+  committees: Executive and Legislative Nominations (Chair); Legislative Management
+    (Vice Chair)
   committee codes: ;EXN;LM;
   prison: '0'
