@@ -1,29 +1,37 @@
 id: ocd-person/5318144e-d466-40ea-8e35-f0f09bf57760
-name: Julia C. Howard
-given_name: Julia
+name: Julia Howard
+given_name: Julia Craven
 family_name: Howard
+birth_date: '1944-08-20'
 gender: Female
-email: Julia.Howard@ncleg.gov
+email: julia.howard@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/H/53/Low
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2019-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '77'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '79'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  district: '77'
 offices:
 - classification: capitol
-  address: 300 N. Salisbury Street, Rm. 302; Raleigh, NC 27603-5925
+  address: Room 302, North Carolina House of Representatives 300 N. Salisbury St.,
+    Raleigh, NC 27603
   voice: 919-733-5904
+- classification: district-mail
+  address: 330 S. Salisbury St., Mocksville, NC 27028
+  voice: 336-751-3538
 links:
-- url: https://www.ncleg.gov/Members/Biography/H/53
 - url: https://www.ncleg.gov/Members/IntroducedBills/H/53
 - url: https://www.ncleg.gov/Members/Votes/H/53
 - url: https://www.ncleg.gov/Members/Committees/H/53
+- url: https://www.ncleg.gov/Members/Biography/H/53
+other_names:
+- name: Julia C. Howard
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000114

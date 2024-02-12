@@ -1,31 +1,35 @@
 id: ocd-person/d7e20d53-bf34-45db-8ed1-d246f6849c44
 name: Grey Mills
-given_name: Grey
+given_name: Paul Grey
 family_name: Mills
 gender: Male
-email: Grey.Mills@ncleg.gov
+email: grey.mills@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/H/588/Low
 party:
 - name: Republican
 roles:
-- start_date: '2009-01-01'
-  end_date: '2012-12-31'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  district: '95'
 - start_date: 2021-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '95'
+- start_date: 2009-01-01
+  end_date: 2012-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '95'
 offices:
+- classification: district-mail
+  address: P.O. Box 4502, Mooresville, NC 28117
+  voice: 704-664-0863
 - classification: capitol
-  address: 300 N. Salisbury Street, Rm. 635; Raleigh, NC 27603-5925
+  address: Room 635, North Carolina House of Representatives 300 N. Salisbury St.,
+    Raleigh, NC 27603
   voice: 919-733-5741
 links:
-- url: https://www.ncleg.gov/Members/Biography/H/588
 - url: https://www.ncleg.gov/Members/IntroducedBills/H/588
 - url: https://www.ncleg.gov/Members/Votes/H/588
 - url: https://www.ncleg.gov/Members/Committees/H/588
+- url: https://www.ncleg.gov/Members/Biography/H/588
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000141
