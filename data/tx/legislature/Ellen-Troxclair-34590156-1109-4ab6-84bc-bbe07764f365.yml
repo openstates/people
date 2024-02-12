@@ -2,14 +2,24 @@ id: ocd-person/34590156-1109-4ab6-84bc-bbe07764f365
 name: Ellen Troxclair
 given_name: Ellen
 family_name: Troxclair
+birth_date: '1985-02-04'
+gender: Female
+email: ellen.troxclair@house.texas.gov
 image: https://house.texas.gov/members/photos/4385.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-10
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '19'
 offices:
-- classification: capitol
-  address: Room E1.208 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room E1.208, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0490
+- classification: district
+  address: 624 N. Main St. Suite 102, Boerne, TX 78006
+links:
+- url: https://house.texas.gov/members/member-page/?district=19
+sources:
+- url: https://house.texas.gov/members/member-page/?district=19

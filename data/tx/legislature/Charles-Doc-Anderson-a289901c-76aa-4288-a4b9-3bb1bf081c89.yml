@@ -1,26 +1,30 @@
 id: ocd-person/a289901c-76aa-4288-a4b9-3bb1bf081c89
-name: Charles 'Doc' Anderson
+name: Doc Anderson
 given_name: Charles
 family_name: Anderson
+birth_date: '1945-06-29'
 gender: Male
+email: charles.anderson@house.texas.gov
 image: https://house.texas.gov/members/photos/2155.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2005-01-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '56'
 offices:
-- classification: capitol
-  address: Room 1N.8 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room 1N.8, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0135
 - classification: district
-  address: 900 Austin Ave., Suite 804 Waco, TX 76701
+  address: 900 Austin Ave., Suite 804, Waco, TX 76701
   voice: 254-754-3892
   fax: 254-754-1604
 links:
 - url: https://house.texas.gov/members/member-page/?district=56
 other_names:
+- name: Charles 'Doc' Anderson
 - name: Charles "Doc" Anderson
 other_identifiers:
 - scheme: legacy_openstates

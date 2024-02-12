@@ -2,23 +2,27 @@ id: ocd-person/19c22134-0632-4b9a-ac8e-64288ea9c1ba
 name: Abel Herrero
 given_name: Abel
 family_name: Herrero
+birth_date: '1969-10-29'
 gender: Male
+email: abel.herrero@house.texas.gov
 image: https://house.texas.gov/members/photos/3140.jpg?v=88.25
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2013-01-08
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '34'
 offices:
-- classification: capitol
-  address: Room 3S.2 P.O. Box 2910 Austin, TX 78768
+- classification: district
+  address: 101 E. Main Ave., Robstown, TX 78380
+  voice: 361-387-0457
+- classification: capitol-mail
+  address: Room 3S.2, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0462
   fax: 512-463-1705
-- classification: district
-  address: 101 East Main Avenue Robstown, Texas 78380
-  voice: 361-387-0457
 links:
+- url: https://legdir.capitol.texas.gov/MemberInfo.aspx?Chamber=H&Code=A3140
 - url: https://house.texas.gov/members/member-page/?district=34
 other_identifiers:
 - scheme: legacy_openstates
@@ -30,4 +34,5 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000605
 sources:
+- url: https://legdir.capitol.texas.gov/MemberInfo.aspx?Chamber=H&Code=A3140
 - url: https://house.texas.gov/members/member-page/?district=34

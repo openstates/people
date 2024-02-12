@@ -1,33 +1,38 @@
 id: ocd-person/68f05872-16c8-4d3a-ab5f-ea667ca52b27
 name: Trent Ashby
-given_name: Trent
+given_name: Trenton E.
 family_name: Ashby
+birth_date: '1972-10-09'
 gender: Male
+email: trent.ashby@house.texas.gov
 image: https://house.texas.gov/members/photos/2330.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-10'
+- start_date: 2023-01-10
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '9'
+- end_date: 2023-01-10
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '57'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  district: '9'
 offices:
-- classification: capitol
-  address: Room E2.806 P.O. Box 2910 Austin, TX 78768
-  voice: 512-463-0508
-  fax: 512-463-5934
 - classification: district
-  address: 2915 Atkinson Dr. Lufkin, TX 75901
+  address: 2915 Atkinson Drive, Lufkin, TX 75901
   voice: 936-634-2762
+- classification: capitol-mail
+  address: Room E2.806, P.O. Box 2910, Austin, TX 78768
+  voice: 512-463-0508
+  fax: 512-463-5896
 links:
 - url: https://house.texas.gov/members/member-page/?district=57
+- url: https://house.texas.gov/members/member-page/?district=09
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000424
 - scheme: legacy_openstates
   identifier: TXL000634
 sources:
+- url: https://house.texas.gov/members/member-page/?district=09
 - url: https://house.texas.gov/members/member-page/?district=57

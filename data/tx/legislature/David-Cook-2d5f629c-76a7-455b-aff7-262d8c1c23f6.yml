@@ -2,21 +2,24 @@ id: ocd-person/2d5f629c-76a7-455b-aff7-262d8c1c23f6
 name: David Cook
 given_name: David
 family_name: Cook
+birth_date: '1971-07-05'
 gender: Male
+email: david.cook@house.texas.gov
 image: https://house.texas.gov/members/photos/3960.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-01-12
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '96'
 offices:
-- classification: capitol
-  address: Room E1.402 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room E1.402, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0374
   fax: 512-463-0364
 - classification: district
-  address: 309 E. Broad Street, Mansfield, TX 76063
+  address: 309 E. Broad St., Mansfield, TX 76063
   voice: 817-473-1960
 links:
 - url: https://house.texas.gov/members/member-page/?district=96

@@ -1,20 +1,26 @@
 id: ocd-person/a4e4115b-d488-4e93-8354-80e361c0c260
 name: Stan Lambert
-given_name: Stan
+given_name: Standard Dwight
 family_name: Lambert
+birth_date: '1952-12-21'
 gender: Male
+email: stan.lambert@house.texas.gov
 image: https://house.texas.gov/members/photos/3225.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-01-10
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '71'
 offices:
-- classification: capitol
-  address: Room E2.814 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room E2.814, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0718
   fax: 512-463-0994
+- classification: district
+  address: 547 Chestnut, Abilene, TX 79602
+  voice: 325-670-9310
 links:
 - url: https://house.texas.gov/members/member-page/?district=71
 other_identifiers:
