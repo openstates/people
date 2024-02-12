@@ -2,25 +2,29 @@ id: ocd-person/1bf7a3a7-5871-4777-af71-dbdfd358e41b
 name: Mike Holcomb
 given_name: Mike
 family_name: Holcomb
+gender: Male
 email: mike.holcomb@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/434_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '10'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '93'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '10'
 offices:
-- classification: district
+- classification: district-mail
   address: 9108 Sulphur Springs Road, Pine Bluff, AR 71603
+  voice: 870-489-7177
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2021%2F2021R
+- url: https://www.arkansashouse.org/district/93
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb
 other_names:
 - name: Holcomb
 other_identifiers:
@@ -33,7 +37,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Mike_Holcomb
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2019%2F2020F
+- url: https://www.arkansashouse.org/district/93
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Holcomb&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
@@ -46,4 +51,5 @@ extras:
   occupation: Retired Educator/Retired County Judge
   church affiliation: Baptist Watson Chapel
   veteran: 'No'
-  public service: County Judge,  Quorum Court,  Former Police Officer,  Former Deputy Sheriff; First Term House 2013,  2015,  2017
+  public service: County Judge,  Quorum Court,  Former Police Officer,  Former Deputy
+    Sheriff; First Term House 2013,  2015,  2017

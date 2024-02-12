@@ -1,29 +1,33 @@
 id: ocd-person/dfa1d0ff-842e-49d2-baa7-41525816070e
-name: John P. Carr
-given_name: John
+name: John Carr
+given_name: John Paul
 family_name: Carr
+birth_date: '1974-09-23'
+gender: Male
 email: john.carr@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/594_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '94'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '15'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '94'
 offices:
-- classification: district
-  address: 2706 West Dogwood Street, Rogers, AR 72758
-  name: 'District Office #1'
+- classification: district-mail
+  address: 2706 W. Dogwood St., Rogers, AR 72758
 links:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr&ddBienniumSession=2021%2F2021R
 - url: https://johncarrforarkansas.com/
   note: Campaign Website
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr
+- url: https://www.arkansashouse.org/district/15
 other_names:
+- name: John P. Carr
 - name: Carr
 ids:
   facebook: StateRepJohnPCarr
@@ -35,6 +39,7 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: John_Carr
 sources:
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Carr&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

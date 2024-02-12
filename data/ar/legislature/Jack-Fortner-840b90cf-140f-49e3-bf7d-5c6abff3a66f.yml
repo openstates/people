@@ -8,20 +8,23 @@ image: https://www.arkleg.state.ar.us/Content/photos/2023/House/513_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '99'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '4'
+- end_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '99'
 offices:
-- classification: district
-  address: 343 MC 4016, Yellville, AR 72687
+- classification: district-mail
+  address: 343 Marion County 4016, Yellville, AR 72687
+  voice: 870-656-7664
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2021%2F2021R
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner
+- url: https://www.arkansashouse.org/district/4
 other_names:
 - name: Fortner
 ids:
@@ -36,7 +39,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Jack_Fortner
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Fortner&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
@@ -47,4 +51,5 @@ extras:
   occupation: Retired Businessman
   church affiliation: Baptist
   veteran: 'Yes'
-  public service: Justice of the Peace,  Airport Board,  Planning Board,  First Term House 2015
+  public service: Justice of the Peace,  Airport Board,  Planning Board,  First Term
+    House 2015
