@@ -2,18 +2,22 @@ id: ocd-person/230e88ef-7b8d-4229-b121-c1df2328c78a
 name: Jorin Johnson
 given_name: Jorin
 family_name: Johnson
+gender: Male
 email: jjohnson@ndlegis.gov
 image: https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jjohnson2023.jpg?itok=jpJuUDcr
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2022-12-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '41'
 offices:
-- classification: district
-  address: 1002 28th Street South, Suite C, Fargo, ND 58103-8736
+- classification: district-mail
+  address: 1002 28th St. South Suite C, Fargo, ND 58103
   voice: 701-356-3233
+links:
+- url: https://www.ndlegis.gov/biography/jorin-johnson
 sources:
 - url: https://www.ndlegis.gov/biography/jorin-johnson
   note: member details page
