@@ -2,15 +2,21 @@ id: ocd-person/5492c1bb-9eb1-4cf9-a689-0de78812382f
 name: Gary Parry
 given_name: Gary
 family_name: Parry
-email: Gary.Parry@legmt.gov
+gender: Male
+email: gary.parry@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '39'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+- classification: district-mail
+  address: P.O. Box 455, Colstrip, MT 59323
   voice: 406-749-0543
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7641

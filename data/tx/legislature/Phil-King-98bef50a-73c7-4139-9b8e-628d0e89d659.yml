@@ -1,23 +1,32 @@
 id: ocd-person/98bef50a-73c7-4139-9b8e-628d0e89d659
 name: Phil King
-given_name: Phil
+given_name: Phillip Stephen
 family_name: King
+birth_date: '1956-02-29'
 gender: Male
+email: phil.king@senate.texas.gov
 image: https://senate.texas.gov/members/d10/img/Phil-King-Headshot-2023.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-10'
+- start_date: 2023-01-10
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '10'
+- end_date: 2023-01-10
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '61'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  district: '10'
 offices:
-- classification: capitol
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+- classification: capitol-mail
+  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
   voice: 512-463-0110
+- classification: district
+  address: Nan and Bob Kingsley Building 1710 Martin Drive, Weatherford, TX 76086
+  voice: 817-596-4796
+- classification: district
+  address: Heritage Rock II 2340 W. Interstate 20, Suite 218, Arlington, TX 76017
+  voice: 817-465-2506
 links:
 - url: https://house.texas.gov/members/member-page/?district=61
 - url: https://senate.texas.gov/member.php?d=10
@@ -31,5 +40,5 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000579
 sources:
-- url: https://house.texas.gov/members/member-page/?district=61
 - url: https://senate.texas.gov/member.php?d=10
+- url: https://house.texas.gov/members/member-page/?district=61

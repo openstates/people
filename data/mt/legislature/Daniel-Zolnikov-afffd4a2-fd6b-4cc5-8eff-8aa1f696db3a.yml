@@ -2,13 +2,22 @@ id: ocd-person/afffd4a2-fd6b-4cc5-8eff-8aa1f696db3a
 name: Daniel Zolnikov
 given_name: Daniel
 family_name: Zolnikov
-email: Daniel.Zolnikov@legmt.gov
+birth_date: '1987-01-29'
+gender: Male
+email: daniel.zolnikov@legmt.gov
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2023-01-02
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '22'
+offices:
+- classification: district-mail
+  address: P.O. Box 50403, Billings, MT 59105
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7652
 sources:

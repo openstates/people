@@ -3,16 +3,22 @@ name: Matt Regier
 given_name: Matt
 family_name: Regier
 gender: Male
-email: Matt.Regier@legmt.gov
+email: matt.regier@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '4'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: MT
   voice: 406-284-5639
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4747
   note: legislator page
@@ -25,9 +31,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000365
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7580
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5062
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6832
-- url: https://leg.mt.gov/legislator-information/roster/individual/7580

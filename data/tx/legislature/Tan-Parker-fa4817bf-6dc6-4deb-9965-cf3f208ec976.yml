@@ -1,25 +1,37 @@
 id: ocd-person/fa4817bf-6dc6-4deb-9965-cf3f208ec976
 name: Tan Parker
-given_name: Tan
+given_name: Nathaniel Willis
 family_name: Parker
+birth_date: '1971-05-22'
 gender: Male
+email: tan.parker@senate.texas.gov
 image: https://senate.texas.gov/members/d12/img/86_20190619_SAM_0008.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-10'
+- start_date: 2023-01-10
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '12'
+- end_date: 2023-01-10
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '63'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
-  district: '12'
 offices:
 - classification: capitol
-  address: P.O. Box 12068 Capitol Station Austin, TX 78711
+  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
   voice: 512-463-0112
+- classification: district
+  address: Weatherford College 502 Big Sandy Court, Bridgeport, TX 76426
+- classification: district
+  address: '8226 Douglas Ave. #625, Dallas, TX 75225'
+  voice: 214-361-3561
+- classification: district
+  address: 600 Parker Square Suite 250, Flower Mound, TX 75028
+  voice: 972-724-8477
 links:
 - url: https://house.texas.gov/members/member-page/?district=63
+- url: https://www.txdirectory.com/online/person/?id=28288
 - url: https://senate.texas.gov/member.php?d=12
 other_identifiers:
 - scheme: legacy_openstates
@@ -29,5 +41,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000665
 sources:
+- url: https://www.txdirectory.com/online/person/?id=28288
 - url: https://house.texas.gov/members/member-page/?district=63
 - url: https://senate.texas.gov/member.php?d=12

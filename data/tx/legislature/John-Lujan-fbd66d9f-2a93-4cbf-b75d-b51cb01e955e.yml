@@ -2,16 +2,25 @@ id: ocd-person/fbd66d9f-2a93-4cbf-b75d-b51cb01e955e
 name: John Lujan
 given_name: John
 family_name: Lujan
+birth_date: '1962-06-07'
+gender: Male
+email: john.lujan@house.texas.gov
 image: https://house.texas.gov/members/photos/3145.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-11-16
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '118'
 offices:
-- classification: capitol
-  address: Room E2.812 P.O. Box 2910 Austin, TX 78768
-  voice: 512-463-0714
-- classification: district
+- classification: district-mail
+  address: TX
   voice: 210-595-0068
+- classification: capitol-mail
+  address: Room E2.812, P.O. Box 2910, Austin, TX 78768
+  voice: 512-463-0714
+links:
+- url: https://house.texas.gov/members/member-page/?district=118
+sources:
+- url: https://house.texas.gov/members/member-page/?district=118

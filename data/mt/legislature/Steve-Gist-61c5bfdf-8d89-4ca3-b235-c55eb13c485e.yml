@@ -3,16 +3,22 @@ name: Steve Gist
 given_name: Steve
 family_name: Gist
 gender: Male
-email: Steven.Gist@legmt.gov
+email: steven.gist@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '25'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: MT
   voice: 406-231-4050
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6903
 - url: https://leg.mt.gov/legislator-information/roster/individual/7518
@@ -20,5 +26,5 @@ other_names:
 - name: Gist, Steve
 - name: Steve Gist
 sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6903
 - url: https://leg.mt.gov/legislator-information/roster/individual/7518
+- url: https://leg.mt.gov/legislator-information/roster/individual/6903

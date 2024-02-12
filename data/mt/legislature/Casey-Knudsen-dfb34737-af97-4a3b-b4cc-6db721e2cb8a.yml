@@ -1,18 +1,25 @@
 id: ocd-person/dfb34737-af97-4a3b-b4cc-6db721e2cb8a
 name: Casey Knudsen
-given_name: Casey
+given_name: Casey James
 family_name: Knudsen
+birth_date: '1990-11-09'
 gender: Male
-email: Casey.Knudsen@legmt.gov
+email: casey.knudsen@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '33'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 18, Malta, MT 59538
   voice: 406-390-0274
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4775
   note: legislator page
@@ -23,9 +30,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000398
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7543
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5092
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6840
-- url: https://leg.mt.gov/legislator-information/roster/individual/7543

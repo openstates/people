@@ -1,17 +1,24 @@
 id: ocd-person/3b95ca27-a496-4781-8fda-7d98db846f50
 name: Mike Yakawich
-given_name: Mike
+given_name: Michael
 family_name: Yakawich
-email: Mike.Yakawich@legmt.gov
+gender: Male
+email: mike.yakawich@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2022-04-19
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '51'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 32004, Billings, MT 59107
   voice: 406-647-6391
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7650
 sources:

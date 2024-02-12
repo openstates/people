@@ -1,22 +1,27 @@
 id: ocd-person/69cfa3aa-7091-4752-a99c-b6a42c70b17b
 name: Barry Usher
-given_name: Barry
+given_name: Barry M.
 family_name: Usher
 gender: Male
-email: Barry.Usher@legmt.gov
+email: barry.usher@legmt.gov
 party:
 - name: Republican
 roles:
-- end_date: '2022-12-31'
+- start_date: 2023-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '20'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '40'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '20'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: 6900 S. Frontage Road, Billings, MT 59101
   voice: 406-252-2888
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4782
   note: legislator page
@@ -29,9 +34,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000355
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7603
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5099
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6908
-- url: https://leg.mt.gov/legislator-information/roster/individual/7603

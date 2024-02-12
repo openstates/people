@@ -1,22 +1,25 @@
 id: ocd-person/a5e2021c-8221-41ba-b45c-cc89d13b2af2
 name: Chris Turner
-given_name: Chris
+given_name: Christopher
 family_name: Turner
+birth_date: '1972-10-10'
 gender: Male
+email: chris.turner@house.texas.gov
 image: https://house.texas.gov/members/photos/4680.jpg?v=88.25
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2013-01-08
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '101'
 offices:
-- classification: capitol
-  address: Room 4N.3 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room 4N.3, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0574
   fax: 512-463-1481
 - classification: district
-  address: 320 Westway Place, Suite 501 Arlington, TX 76018
+  address: 320 Westway Place Suite 501, Arlington, TX 76018
   voice: 817-459-2800
 links:
 - url: https://house.texas.gov/members/member-page/?district=101

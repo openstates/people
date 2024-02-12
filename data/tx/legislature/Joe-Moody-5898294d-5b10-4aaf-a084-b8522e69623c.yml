@@ -1,25 +1,29 @@
 id: ocd-person/5898294d-5b10-4aaf-a084-b8522e69623c
 name: Joe Moody
-given_name: Joe
+given_name: Joseph E.
 family_name: Moody
+birth_date: '1981-01-09'
 gender: Male
+email: joe.moody@house.texas.gov
 image: https://house.texas.gov/members/photos/3850.jpg?v=88.25
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2013-01-08
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '78'
 offices:
-- classification: capitol
-  address: Room GW.18 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room GW.18, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0728
   fax: 512-463-0397
 - classification: district
-  address: 7365 Remcon Circle C-301 El Paso, Tx 79912
+  address: 7365 Remcon Circle, C-301, El Paso, TX 79912
   voice: 915-751-2700
   fax: 915-751-2702
 links:
+- url: https://legdir.capitol.texas.gov/MemberInfo.aspx?Chamber=H&Code=A3850
 - url: https://house.texas.gov/members/member-page/?district=78
 other_identifiers:
 - scheme: legacy_openstates
@@ -31,4 +35,5 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000551
 sources:
+- url: https://legdir.capitol.texas.gov/MemberInfo.aspx?Chamber=H&Code=A3850
 - url: https://house.texas.gov/members/member-page/?district=78

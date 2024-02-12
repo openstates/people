@@ -1,16 +1,23 @@
 id: ocd-person/a5539d52-ce2e-4170-9035-c8c33a2d4dc6
 name: Ed Butcher
-given_name: Ed
+given_name: Edward
 family_name: Butcher
-email: Ed.Butcher@legmt.gov
+gender: Male
+email: ed.butcher@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '29'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
+- classification: district-mail
+  address: P.O. Box 89, Winifred, MT 59489
   voice: 406-462-5615
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7656

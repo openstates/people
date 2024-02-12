@@ -2,16 +2,23 @@ id: ocd-person/a732704e-9b03-449c-b24f-f4c567b5acdd
 name: Janie Lopez
 given_name: Janie
 family_name: Lopez
+gender: Female
+email: janie.lopez@house.texas.gov
 image: https://house.texas.gov/members/photos/4295.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-10
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '37'
 offices:
-- classification: capitol
-  address: Room E2.802 P.O. Box 2910 Austin, TX 78768
-  voice: 512-463-0640
 - classification: district
-  address: 1390 W. Expressway 83 San Benito, Texas 78586
+  address: 1390 W. Expressway 83, San Benito, TX 78586
+- classification: capitol-mail
+  address: Room E2.802, P.O. Box 2910, Austin, TX 78768
+  voice: 512-463-0640
+links:
+- url: https://house.texas.gov/members/member-page/?district=37
+sources:
+- url: https://house.texas.gov/members/member-page/?district=37
