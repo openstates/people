@@ -2,22 +2,28 @@ id: ocd-person/e3e287d4-038d-42c5-8926-8d2fdff485eb
 name: Jon Conrad
 given_name: Jon
 family_name: Conrad
-email: Jon.Conrad@wyoleg.gov
+gender: Male
+email: jon.conrad@wyoleg.gov
 image: https://wyoleg.gov/LegislatorSummary/Photos/67th-ConradJon.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '19'
 offices:
-- classification: district
-  address: PO Box 466, Mountain View, WY 82939
+- classification: home
+  address: P.O. Box 466, Mountain View, WY 82939
   voice: 307-871-3195
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 links:
-- url: http://wyoleg.gov/Legislators/2021/R/2097
+- url: https://wyoleg.gov/Legislators/2021/R/2097
   note: homepage
+- url: https://www.wyoleg.gov/Legislators/2023/H/2097
 sources:
+- url: https://www.wyoleg.gov/Legislators/2023/H/2097
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/H
 - url: https://wyoleg.gov/LsoService/api/legislator/2097
 extras:

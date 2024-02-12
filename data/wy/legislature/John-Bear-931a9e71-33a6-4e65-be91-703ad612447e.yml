@@ -2,24 +2,30 @@ id: ocd-person/931a9e71-33a6-4e65-be91-703ad612447e
 name: John Bear
 given_name: John
 family_name: Bear
-email: John.Bear@wyoleg.gov
+gender: Male
+email: john.bear@wyoleg.gov
 image: https://wyoleg.gov/LegislatorSummary/Photos/67th-BearJohn.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '31'
 offices:
-- classification: district
-  address: 305 W Lakeway Road, Gillette, WY 82718
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
+- classification: home
+  address: 305 W. Lakeway Road, Gillette, WY 82718
   voice: 307-670-1130
 links:
-- url: http://wyoleg.gov/Legislators/2021/R/2075
-- url: http://wyoleg.gov/Legislators/2021/R/2075
+- url: https://wyoleg.gov/Legislators/2021/R/2075
+- url: https://wyoleg.gov/Legislators/2021/R/2075
   note: homepage
+- url: https://www.wyoleg.gov/Legislators/2023/H/2075
 sources:
-- url: http://wyoleg.gov/Legislators/2021/R/2075
+- url: https://www.wyoleg.gov/Legislators/2023/H/2075
+- url: https://wyoleg.gov/Legislators/2021/R/2075
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/H
 - url: https://wyoleg.gov/LsoService/api/legislator/2075
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/H
