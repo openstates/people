@@ -3,20 +3,26 @@ name: Jill Cohenour
 given_name: Jill
 family_name: Cohenour
 gender: Female
-email: Jill.Cohenour@legmt.gov
+email: jill.cohenour@legmt.gov
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-02'
+- start_date: 2023-01-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '84'
+- end_date: 2023-01-02
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '42'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '84'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: 2610 Colt Drive, East Helena, MT 59635
   voice: 406-227-1144
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4825
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4703
   note: legislator page
@@ -29,9 +35,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000305
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7488
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5054
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6800
-- url: https://leg.mt.gov/legislator-information/roster/individual/7488

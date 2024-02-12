@@ -2,16 +2,23 @@ id: ocd-person/aad657b3-2d8f-48cf-99b3-650ccddf258b
 name: Jonathan Windy Boy
 given_name: Jonathan
 family_name: Windy Boy
+birth_date: '1958-08-28'
 gender: Male
-email: Jonathan.WindyBoy@legmt.gov
+email: jonathan.windyboy@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '32'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
+- classification: district-mail
+  address: P.O. Box 250, Box Elder, MT 59521
   voice: 406-945-1805
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4774
@@ -31,9 +38,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000414
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7612
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5091
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6857
-- url: https://leg.mt.gov/legislator-information/roster/individual/7612

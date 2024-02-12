@@ -1,31 +1,37 @@
 id: ocd-person/e9b6d4cf-9585-4cc4-8802-598065431e0e
 name: Frank Smith
-given_name: Frank
+given_name: Frank J.
 family_name: Smith
+birth_date: '1942-09-27'
 gender: Male
-email: Frank.Smith@legmt.gov
+email: frank.smith@legmt.gov
 party:
 - name: Democratic
 roles:
-- start_date: '2011-01-01'
-  end_date: '2012-12-31'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '31'
-- start_date: 2017-01-02
-  end_date: '2021-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '16'
 - start_date: 2021-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '31'
+- start_date: 2011-01-01
+  end_date: 2012-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '31'
+- start_date: 2017-01-02
+  end_date: 2021-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '16'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 729, Poplar, MT 59255
   voice: 406-942-0615
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
-- url: http://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=7879
+- url: https://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=7879
 - url: https://leg.mt.gov/legislator-information/roster/individual/4725
   note: legislator page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5011
@@ -41,11 +47,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000371
 sources:
-- url: http://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=7879
-- url: http://leg.mt.gov/content/sessions/62nd/2011HouseMembers.txt
+- url: https://leg.mt.gov/legislator-information/roster/individual/7591
+- url: https://leg.mt.gov/css/Sessions/62nd/leg_info.asp?HouseID=0&SessionID=105&LAWSID=7879
+- url: https://leg.mt.gov/content/sessions/62nd/2011HouseMembers.txt
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5011
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6827
-- url: https://leg.mt.gov/legislator-information/roster/individual/7591

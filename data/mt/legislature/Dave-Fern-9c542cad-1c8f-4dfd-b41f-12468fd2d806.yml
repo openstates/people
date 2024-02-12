@@ -1,18 +1,24 @@
 id: ocd-person/9c542cad-1c8f-4dfd-b41f-12468fd2d806
 name: Dave Fern
-given_name: Dave
+given_name: Dave B.
 family_name: Fern
 gender: Male
-email: Dave.Fern@legmt.gov
+email: dave.fern@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '5'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: 211 Dakota Ave., Whitefish, MT 59937
   voice: 406-212-0674
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4748
   note: legislator page
@@ -25,9 +31,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000367
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7502
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5063
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6856
-- url: https://leg.mt.gov/legislator-information/roster/individual/7502

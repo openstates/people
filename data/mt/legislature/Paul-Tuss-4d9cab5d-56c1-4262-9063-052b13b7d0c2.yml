@@ -2,15 +2,21 @@ id: ocd-person/4d9cab5d-56c1-4262-9063-052b13b7d0c2
 name: Paul Tuss
 given_name: Paul
 family_name: Tuss
-email: Paul.Tuss@legmt.gov
+gender: Male
+email: paul.tuss@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '28'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+- classification: district-mail
+  address: 13 Spruce Drive, Havre, MT 59501
   voice: 406-945-0412
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7647

@@ -1,17 +1,24 @@
 id: ocd-person/a1b59e61-3b93-4e73-b9ee-03d6dd2c464a
 name: Terry Moore
-given_name: Terry
+given_name: Terrill
 family_name: Moore
+birth_date: '1952-05-25'
 gender: Male
-email: Terry.Moore@legmt.gov
+email: terry.moore@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2019-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '54'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
+- classification: district-mail
+  address: MT
   voice: 406-671-5393
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5113
@@ -20,7 +27,7 @@ links:
 other_names:
 - name: Moore, Terry
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7565
 - url: https://leg.mt.gov/legislator-information/roster/individual/5113
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6915
-- url: https://leg.mt.gov/legislator-information/roster/individual/7565

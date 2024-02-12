@@ -2,13 +2,21 @@ id: ocd-person/be2c0041-9ca1-48d1-8244-023a31458b5e
 name: Terry Falk
 given_name: Terry
 family_name: Falk
-email: Terry.Falk@legmt.gov
+gender: Male
+email: terry.falk@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '8'
+offices:
+- classification: district-mail
+  address: P.O. Box 9484, Kalispell, MT 59904
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/7626
 sources:

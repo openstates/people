@@ -1,22 +1,29 @@
 id: ocd-person/afcd51eb-e3cf-4bc4-8093-80f884de54e2
 name: Steve Fitzpatrick
-given_name: Steve
+given_name: Steven J.
 family_name: Fitzpatrick
+birth_date: '1978-12-02'
 gender: Male
-email: Steve.Fitzpatrick@legmt.gov
+email: steve.fitzpatrick@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: 2017-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '10'
 - end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '20'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '10'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: 3203 15th Ave. South, Great Falls, MT 59405
   voice: 406-750-6764
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4825
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4723
   note: legislator page
@@ -33,9 +40,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/2f3bb43e-d868-41e0-970e-e0b482ab1c09
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7506
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5009
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6819
-- url: https://leg.mt.gov/legislator-information/roster/individual/7506

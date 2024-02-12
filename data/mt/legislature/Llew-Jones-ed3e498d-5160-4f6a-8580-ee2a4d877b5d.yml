@@ -1,22 +1,29 @@
 id: ocd-person/ed3e498d-5160-4f6a-8580-ee2a4d877b5d
 name: Llew Jones
-given_name: Llew
+given_name: Llewelyn E.
 family_name: Jones
+birth_date: '1962-12-02'
 gender: Male
-email: Llew.Jones@legmt.gov
+email: llew.jones@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: 2019-01-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '18'
 - end_date: 2018-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '9'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '18'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: MT
   voice: 406-271-3104
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5076
 - url: https://leg.mt.gov/legislator-information/roster/individual/6837
@@ -31,7 +38,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/cbe3d754-5e22-4006-a3c7-c65eefc292b1
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7534
 - url: https://leg.mt.gov/legislator-information/roster/individual/5076
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6837
-- url: https://leg.mt.gov/legislator-information/roster/individual/7534
