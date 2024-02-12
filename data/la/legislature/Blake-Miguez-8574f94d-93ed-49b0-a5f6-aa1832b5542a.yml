@@ -1,23 +1,29 @@
 id: ocd-person/8574f94d-93ed-49b0-a5f6-aa1832b5542a
 name: Blake Miguez
-given_name: Blake
+given_name: Blake John
 family_name: Miguez
-email: miguezb@legis.la.gov
-image: https://house.louisiana.gov/H_Reps/RepPics20/rep49.jpg
+gender: Male
+email: sen22@legis.la.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2024-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '22'
+- end_date: 2024-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '49'
 offices:
 - classification: district
-  address: 1101 E. Admiral Doyle Drive, Suite 301-8 New Iberia, LA 70560
+  address: 1101 E. Admiral Doyle Drive Suite 301-8, New Iberia, LA 70560
   voice: 337-373-9400
   fax: 337-373-9402
 links:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=49
   note: homepage
+- url: https://senate.la.gov/smembers?ID=22
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000794
@@ -26,9 +32,10 @@ other_identifiers:
 sources:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=49
 - url: https://house.louisiana.gov/H_Reps/H_Reps_FullInfo
+- url: https://senate.la.gov/smembers?ID=22
 extras:
   legislative assistant: Kirsten D. Bourque
   representing parishes:
   - Iberia and Vermilion
   education: Catholic High School New Iberia, 1999; Louisiana State University, Political
-             Science, 2004; Southern University Law Center, 2008
+    Science, 2004; Southern University Law Center, 2008

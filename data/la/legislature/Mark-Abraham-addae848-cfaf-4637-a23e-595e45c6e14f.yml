@@ -1,29 +1,32 @@
 id: ocd-person/addae848-cfaf-4637-a23e-595e45c6e14f
 name: Mark Abraham
-given_name: Mark
+given_name: Mark Thorpe
 family_name: Abraham
+birth_date: '1953-11-11'
+gender: Male
 email: abrahamm@legis.la.gov
 image: https://senate.la.gov/SenatorPics/Sen25.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-01-13'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  district: '36'
-- start_date: '2020-01-13'
+- start_date: 2020-01-13
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '25'
+- end_date: 2020-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '36'
 offices:
 - classification: district
-  address: 130 Jamestown Road Lake Charles, LA 70605
+  address: 130 Jamestown Road, Lake Charles, LA 70605
   voice: 337-475-3016
   fax: 337-475-3018
 links:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=36
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=36
 - url: https://senate.la.gov/smembers.aspx?ID=25
   note: homepage
+- url: https://senate.la.gov/smembers?ID=25
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000806
@@ -32,7 +35,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/0cb298d9-8b1b-4407-a126-77dd427034f3
 sources:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=36
+- url: https://senate.la.gov/smembers?ID=25
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=36
 - url: https://senate.la.gov/smembers.aspx?ID=25
 - url: https://senate.la.gov/Senators_FullInfo
 extras:
