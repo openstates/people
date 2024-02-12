@@ -2,7 +2,9 @@ id: ocd-person/6b191fda-698d-4061-8396-fef9771847ee
 name: Steve Clouse
 given_name: Steve
 family_name: Clouse
-email: steve.clouse@alhouse.gov
+birth_date: '1956-02-07'
+gender: Male
+email: steve.clouse@alhouse.org
 image: https://www.legislature.state.al.us/pdf/house/members/Clouse_93.png
 party:
 - name: Republican
@@ -11,14 +13,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '93'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 400-E,Montgomery, AL 36130-2950
-  voice: 334-261-0488
 - classification: district
-  address: Post Office Box 818,Ozark, AL 36361
+  address: P.O. Box 818, Ozark, AL 36361
   voice: 334-774-7384
+- classification: capitol
+  address: Room 410-D, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0488
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100575&OID_PERSON=1035
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100575&OID_PERSON=1035
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -29,9 +31,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000382
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100575&OID_PERSON=1035
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Clouse&OID_SPONSOR=100575&OID_PERSON=1035&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100575&OID_PERSON=1035
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Clouse&OID_SPONSOR=100575&OID_PERSON=1035&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

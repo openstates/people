@@ -1,23 +1,30 @@
 id: ocd-person/5032448a-7275-4a02-8dc1-d251cdde8ad9
 name: Alan Seabaugh
-given_name: Alan
+given_name: Alan Thomas
 family_name: Seabaugh
-email: seabaugha@legis.la.gov
-image: https://house.louisiana.gov/H_Reps/RepPics20/rep5.jpg
+birth_date: '1967-05-20'
+gender: Male
+email: sen31@legis.la.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2024-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '31'
+- end_date: 2024-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '5'
 offices:
 - classification: district
-  address: 401 Market Street, Suite 1150 Shreveport, LA 71101
+  address: 401 Market St. Suite 1150, Shreveport, LA 71101
   voice: 318-676-7990
   fax: 318-676-7992
 links:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=5
   note: homepage
+- url: https://senate.la.gov/smembers?ID=31
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000280
@@ -32,9 +39,10 @@ other_identifiers:
 sources:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=5
 - url: https://house.louisiana.gov/H_Reps/H_Reps_FullInfo
+- url: https://senate.la.gov/smembers?ID=31
 extras:
   legislative assistant: Emily Mott and Megan McCreary
   representing parishes:
   - Caddo
   education: Louisiana State University, B.A., 1990; Louisiana State University Law
-             School, J.D., 1993
+    School, J.D., 1993

@@ -8,23 +8,29 @@ image: https://le.utah.gov/images/legislator/MACPHM.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-10-10
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '26'
 offices:
-- classification: capitol
-  address: 350 N State Street, STE 350, Salt Lake City, UT, 84114
+- classification: home
+  address: UT
   voice: 801-520-2974
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1650
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=MACPHM
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist26.pdf
   note: district demographics
-- url: http://house.utah.gov/rep/MACPHM/
+- url: https://house.utah.gov/rep/MACPHM/
   note: homepage
+- url: https://house.utleg.gov/rep/MACPHM/
 sources:
+- url: https://house.utleg.gov/rep/MACPHM/
 - url: https://le.utah.gov/data/legislators.json
-- url: http://house.utah.gov/rep/MACPHM/
+- url: https://house.utah.gov/rep/MACPHM/
 extras:
   service start: October 10, 2023
   counties represented:

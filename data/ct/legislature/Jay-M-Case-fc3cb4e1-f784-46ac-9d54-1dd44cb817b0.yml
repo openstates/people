@@ -1,31 +1,34 @@
 id: ocd-person/fc3cb4e1-f784-46ac-9d54-1dd44cb817b0
-name: Jay M. Case
+name: Jay Case
 given_name: Jay
 family_name: Case
+birth_date: '1970-10-10'
 gender: Male
-email: Jay.Case@housegop.ct.gov
+email: jay.case@housegop.ct.gov
 image: https://www.cthousegop.com/case/wp-content/uploads/sites/15/2016/11/Case-2017-Web-Bio-Pict.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2013-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '63'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 2004; Hartford, CT 06106-1591
+  address: Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-8700
-- classification: district
-  address: P.O. Box 573; Winsted, CT 06098
 links:
-- url: http://www.cthousegop.com/Case/
+- url: https://www.cthousegop.com/Case/
 - url: https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27063%27&dist_name=Jay,%20Case
+- url: https://www.cthousegop.com/Case/main/
 other_names:
+- name: Jay M. Case
 - name: Case, Jay M.
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CTL000205
 sources:
+- url: https://www.cthousegop.com/Case/main/
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

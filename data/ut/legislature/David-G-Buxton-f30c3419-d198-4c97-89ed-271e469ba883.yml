@@ -17,10 +17,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '20'
 offices:
-- classification: capitol
+- classification: home
+  address: 4162 S. 2340 West, Roy, UT 84067
   voice: 801-707-7095
-- classification: district
-  address: 4162 S 2340 W, Roy, UT, 84067
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
 links:
 - url: https://senate.utah.gov/david-buxton
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BUXTODG
@@ -45,9 +48,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000299
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/BUXTODG/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2017
   profession: General Contractor, Land Developer

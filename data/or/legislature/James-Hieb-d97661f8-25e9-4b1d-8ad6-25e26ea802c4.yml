@@ -3,29 +3,28 @@ name: James Hieb
 given_name: James
 family_name: Hieb
 gender: Male
-email: Rep.JamesHieb@oregonlegislature.gov
+email: rep.jameshieb@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/hieb/PublishingImages/member_photo.jpg
 party:
-- end_date: '2023-01-11'
-  name: Democratic
 - name: Republican
 roles:
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '51'
 - start_date: 2022-02-08
   end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '39'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:or/government
-  district: '51'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-377, Salem, OR, 97301
+  address: Room H-377, 900 Court St. NE, Salem, OR 97301
   voice: 503-986-1451
 links:
 - url: https://www.oregonlegislature.gov/hieb
   note: homepage
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
 - url: https://www.oregonlegislature.gov/hieb
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

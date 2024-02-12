@@ -2,22 +2,23 @@ id: ocd-person/7d852e7a-ae99-4f89-b4c0-4d7cb7e816db
 name: Royce Duplessis
 given_name: Royce
 family_name: Duplessis
-email: SEN05@legis.la.gov
+gender: Male
+email: duplessisr@legis.la.gov
 image: https://senate.la.gov/SenatorPics/Sen5.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2022-12-06'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  district: '93'
-- start_date: '2022-12-06'
+- start_date: 2022-12-07
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '5'
+- end_date: 2022-12-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '93'
 offices:
 - classification: district
-  address: 643 Magazine Street Suite 302 New Orleans, LA 70130
+  address: 643 Magazine St. Suite 302, New Orleans, LA 70130
   voice: 504-568-2740
   fax: 504-568-2744
 links:
@@ -25,10 +26,12 @@ links:
   note: homepage
 - url: https://senate.la.gov/smembers.aspx?ID=5
   note: homepage
+- url: https://senate.la.gov/smembers?ID=5
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000960
 sources:
+- url: https://senate.la.gov/smembers?ID=5
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=93
 - url: https://house.louisiana.gov/H_Reps/H_Reps_FullInfo
 - url: https://senate.la.gov/Senators_FullInfo
@@ -39,4 +42,5 @@ extras:
   representing parishes:
   - Orleans
   - Jefferson
-  education: "Xavier University of Louisiana - B.S. in Communications\r\nHoward University School of Law - Juris Doctorate"
+  education: "Xavier University of Louisiana - B.S. in Communications\r\nHoward University\
+    \ School of Law - Juris Doctorate"

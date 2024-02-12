@@ -2,36 +2,41 @@ id: ocd-person/4f702d02-54ad-4143-837a-09be9a03ee6e
 name: Tim Salazar
 given_name: Tim
 family_name: Salazar
-email: Tim.Salazar@wyoleg.gov
+gender: Male
+email: tim.salazar@wyoleg.gov
 image: https://wyoleg.gov/LegislatorSummary/Photos/67th-SalazarTim.jpg
 party:
 - name: Republican
 roles:
-- start_date: 2017-01-02
-  end_date: '2021-01-04'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  district: '34'
 - start_date: 2021-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '26'
+- start_date: 2017-01-02
+  end_date: 2021-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '34'
 offices:
-- classification: district
+- classification: home
   address: 331 Peterson Road, Riverton, WY 82501
   voice: 307-220-1213
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 links:
-- url: http://wyoleg.gov/Legislators/2019/R/2028
-- url: http://wyoleg.gov/Legislators/2021/R/2028
+- url: https://wyoleg.gov/Legislators/2019/R/2028
+- url: https://wyoleg.gov/Legislators/2021/R/2028
   note: homepage
+- url: https://www.wyoleg.gov/Legislators/2023/S/2028
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WYL000144
 - scheme: openstates
   identifier: ocd-person/a6d55cf1-880f-43bf-80a1-0fe854983a36
 sources:
-- url: http://wyoleg.gov/Legislators/2019/R/2028
-- url: http://wyoleg.gov/Legislators/2021/R/2028
+- url: https://www.wyoleg.gov/Legislators/2023/S/2028
+- url: https://wyoleg.gov/Legislators/2019/R/2028
+- url: https://wyoleg.gov/Legislators/2021/R/2028
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/S
 - url: https://wyoleg.gov/LsoService/api/legislator/2028
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/S

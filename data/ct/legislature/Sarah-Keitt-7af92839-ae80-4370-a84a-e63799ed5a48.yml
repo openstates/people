@@ -2,22 +2,24 @@ id: ocd-person/7af92839-ae80-4370-a84a-e63799ed5a48
 name: Sarah Keitt
 given_name: Sarah
 family_name: Keitt
+gender: Female
 email: sarah.keitt@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '134'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  address: Room 4014, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-8585
-- classification: district
-  address: ; ,
 links:
-- url: http://www.housedems.ct.gov/keitt
+- url: https://www.housedems.ct.gov/keitt
+- url: https://www.housedems.ct.gov/Keitt
 sources:
+- url: https://www.housedems.ct.gov/Keitt
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Female

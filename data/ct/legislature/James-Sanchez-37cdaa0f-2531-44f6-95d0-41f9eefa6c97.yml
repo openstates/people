@@ -1,23 +1,26 @@
 id: ocd-person/37cdaa0f-2531-44f6-95d0-41f9eefa6c97
-name: James Sanchez
-given_name: James
+name: "Jimmy S\xE1nchez"
+given_name: James B.
 family_name: Sanchez
+gender: Male
 email: james.sanchez@cga.ct.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-03-06
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '6'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 4000; Hartford, CT 06106-1591
+  address: Room 4046, Legislative Office Building, Hartford, CT 6106
   voice: 860-240-8585
-- classification: district
-  address: Legislative Office Building; Hartford, CT 06106
 links:
-- url: http://www.housedems.ct.gov/sanchezJ
+- url: https://www.housedems.ct.gov/sanchezJ
+other_names:
+- name: James Sanchez
 sources:
+- url: http://www.housedems.ct.gov/sanchezJ
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

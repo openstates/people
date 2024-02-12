@@ -18,9 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '24'
 offices:
-- classification: capitol
-  address: 350 N State Street, Suite 350, SALT LAKE CITY, UT, 84114
+- classification: home
+  address: UT
   voice: 385-321-7827
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
 links:
 - url: https://house.utah.gov/rep/DAILEJ
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=DAILEJ
@@ -46,8 +49,9 @@ other_names:
 - name: Dailey-Provost, J.
 - name: Dailey-Provost, Jennifer
 sources:
+- url: https://house.utleg.gov/rep/DAILEJ/
 - url: https://house.utah.gov/rep/DAILEJ/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/DAILEJ/
 extras:

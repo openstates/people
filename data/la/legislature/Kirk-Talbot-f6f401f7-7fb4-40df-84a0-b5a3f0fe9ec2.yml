@@ -1,29 +1,31 @@
 id: ocd-person/f6f401f7-7fb4-40df-84a0-b5a3f0fe9ec2
 name: Kirk Talbot
-given_name: Kirk
+given_name: Michael Kirk
 family_name: Talbot
+birth_date: '1969-11-18'
+gender: Male
 email: talbotk@legis.la.gov
 image: https://senate.la.gov/SenatorPics/Sen10.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-01-13'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  district: '78'
-- start_date: '2020-01-13'
+- start_date: 2020-01-13
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '10'
+- end_date: 2020-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '78'
 offices:
 - classification: district
-  address: 9523 Jefferson Hwy. Suite B River Ridge, LA 70123
+  address: 9523 Jefferson Highway Suite B, River Ridge, LA 70123
   voice: 504-736-7299
-  fax: 504-736-7113
 links:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=78
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=78
 - url: https://senate.la.gov/smembers.aspx?ID=10
   note: homepage
+- url: https://senate.la.gov/smembers?ID=10
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000267
@@ -38,7 +40,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/0f79aef8-7c2d-4b40-8073-ce578ea5e088
 sources:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=78
+- url: https://senate.la.gov/smembers?ID=10
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=78
 - url: https://senate.la.gov/smembers.aspx?ID=10
 - url: https://senate.la.gov/Senators_FullInfo
 extras:

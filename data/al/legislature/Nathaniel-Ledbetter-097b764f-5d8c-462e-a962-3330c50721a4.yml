@@ -2,23 +2,24 @@ id: ocd-person/097b764f-5d8c-462e-a962-3330c50721a4
 name: Nathaniel Ledbetter
 given_name: Nathaniel
 family_name: Ledbetter
+gender: Male
 email: nathaniel.ledbetter@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Ledbetter_24.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '24'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 519-I,Montgomery, AL 36130-2950
-  voice: 334-261-0505
 - classification: district
-  address: Post Office Box 725,Rainsville, AL 35986
-  voice: 334-792-0022 ext. 285
+  address: P.O. Box 725, Rainsville, AL 35986
+- classification: capitol
+  address: Room 401-G, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-9506
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100504&OID_PERSON=7698
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100504&OID_PERSON=7698
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -31,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000506
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100504&OID_PERSON=7698
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Ledbetter&OID_SPONSOR=100504&OID_PERSON=7698&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100504&OID_PERSON=7698
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Ledbetter&OID_SPONSOR=100504&OID_PERSON=7698&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

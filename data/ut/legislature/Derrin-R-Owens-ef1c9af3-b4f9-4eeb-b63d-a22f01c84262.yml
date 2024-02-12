@@ -21,9 +21,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '24'
 offices:
-- classification: district
-  address: P.O. Box 127, Fountain Green, UT, 84632
+- classification: home
+  address: P.O. Box 127, Fountain Green, UT 84632
   voice: 435-851-1284
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=OWENSD
   note: legislation
@@ -59,8 +62,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000282
 sources:
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/OWENSD/
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: '2015'
   profession: Executive Director, Economic Development

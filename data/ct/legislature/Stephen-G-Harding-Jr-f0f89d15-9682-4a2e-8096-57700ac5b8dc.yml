@@ -3,28 +3,29 @@ name: Stephen Harding
 given_name: Stephen
 family_name: Harding
 gender: Male
-email: Stephen.Harding@cga.ct.gov
+email: stephen.harding@cga.ct.gov
 image: https://www.cthousegop.com/harding/wp-content/uploads/sites/35/2016/11/Harding_Bio_Photo_Web.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-04'
+- start_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '30'
+- end_date: 2023-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '107'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
-  district: '30'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 3400; Hartford, CT 06106-1591
+  address: Room 3400, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-8800
-- classification: district
-  address: ; ,
+  fax: 860-240-8306
 links:
-- url: http://www.cthousegop.com/Harding/
+- url: https://www.cthousegop.com/Harding/
 - url: https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27107%27&dist_name=Harding,%20Stephen%20G.
-- url: http://www.ctsenaterepublicans.com/home-Harding
+- url: https://www.ctsenaterepublicans.com/home-Harding
+- url: https://ctsenaterepublicans.com/home-harding/
 other_names:
 - name: Harding, Stephen G.
 - name: Steve Harding
@@ -35,6 +36,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CTL000308
 sources:
+- url: https://ctsenaterepublicans.com/home-harding/
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

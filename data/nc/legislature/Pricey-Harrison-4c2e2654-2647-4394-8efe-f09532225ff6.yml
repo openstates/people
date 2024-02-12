@@ -1,29 +1,35 @@
 id: ocd-person/4c2e2654-2647-4394-8efe-f09532225ff6
 name: Pricey Harrison
-given_name: Pricey
+given_name: Mary Price Taylor
 family_name: Harrison
+birth_date: '1958-08-31'
 gender: Female
-email: Pricey.Harrison@ncleg.gov
+email: pricey.harrison@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/H/504/Low
 party:
 - name: Democratic
 roles:
-- end_date: '2018-12-31'
+- start_date: 2019-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '61'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '57'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  district: '61'
 offices:
+- classification: district-mail
+  address: P.O. Box 9339, Greensboro, NC 27429
+  voice: 336-274-5574
 - classification: capitol
-  address: 16 West Jones Street, Rm. 1218; Raleigh, NC 27601-1096
+  address: Room 1218, North Carolina House of Representatives 16 W. Jones St., Raleigh,
+    NC 27601
   voice: 919-733-5771
 links:
-- url: https://www.ncleg.gov/Members/Biography/H/504
 - url: https://www.ncleg.gov/Members/IntroducedBills/H/504
 - url: https://www.ncleg.gov/Members/Votes/H/504
 - url: https://www.ncleg.gov/Members/Committees/H/504
+- url: https://www.ncleg.gov/Members/Biography/H/504
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000108

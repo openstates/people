@@ -17,15 +17,20 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
   district: '20'
 offices:
+- classification: home
+  address: 3802 Sioux Lane, Madison Lake, MN 56063
+  voice: 507-381-0808
 - classification: capitol
-  address: 2225 Minnesota Senate Bldg.; St. Paul, MN 55155
+  address: Room 2225, Minnesota Senate Building 95 W. University Ave., St. Paul, MN
+    55155
   voice: 651-296-5558
 links:
 - url: https://www.senate.mn/members/member_bio.html?mem_id=1225
-sources:
-- url: https://www.senate.mn/members/list.csv
-- url: https://www.senate.mn/members/index.php
-- url: https://www.senate.mn/api/members
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MNL000739
+sources:
+- url: https://www.senate.mn/members/member_bio.html?mem_id=1225
+- url: https://www.senate.mn/members/list.csv
+- url: https://www.senate.mn/members/index.php
+- url: https://www.senate.mn/api/members

@@ -1,29 +1,34 @@
 id: ocd-person/a8344aaa-aff7-42b3-b1a2-59539191fbb2
-name: Franklin J. Foil
-given_name: Franklin
+name: Franklin Foil
+given_name: Franklin Johnson
 family_name: Foil
+birth_date: '1964-10-31'
+gender: Male
 email: foilf@legis.la.gov
 image: https://senate.la.gov/SenatorPics/Sen16.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-01-13'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  district: '70'
 - start_date: 2020-01-13
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '16'
+- end_date: 2020-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '70'
 offices:
 - classification: district
-  address: 412 N. 4th St. Suite 230 Baton Rouge, LA 70802
+  address: 412 N. 4th St. Suite 230, Baton Rouge, LA 70802
   voice: 225-342-6777
   fax: 225-342-6785
 links:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=70
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=70
 - url: https://senate.la.gov/smembers.aspx?ID=16
   note: homepage
+- url: https://senate.la.gov/smembers?ID=16
+other_names:
+- name: Franklin J. Foil
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000204
@@ -38,11 +43,13 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/b26b2103-192d-4fea-92eb-1990ebf01025
 sources:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=70
+- url: https://senate.la.gov/smembers?ID=16
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=70
 - url: https://senate.la.gov/smembers.aspx?ID=16
 - url: https://senate.la.gov/Senators_FullInfo
 extras:
   legislative assistant: Meg Duggar
   representing parishes:
   - East Baton Rouge
-  education: Louisiana State University, B.A., Political Science, 1987, Loyola School of Law, J.D., 1991
+  education: Louisiana State University, B.A., Political Science, 1987, Loyola School
+    of Law, J.D., 1991

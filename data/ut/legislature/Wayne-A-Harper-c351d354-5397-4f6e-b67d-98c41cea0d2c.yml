@@ -2,6 +2,7 @@ id: ocd-person/c351d354-5397-4f6e-b67d-98c41cea0d2c
 name: Wayne Harper
 given_name: Wayne A.
 family_name: Harper
+birth_date: '1956-02-27'
 gender: Male
 email: wharper@le.utah.gov
 image: https://le.utah.gov/images/legislator/HARPEWA.jpg
@@ -17,10 +18,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '6'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: 2094 Surrey Circle, Taylorsville, UT 84129
   voice: 801-566-5466
-- classification: district
-  address: 2094 SURREY CIR, Taylorsville, UT, 84129
 links:
 - url: https://senate.utah.gov/wayne-harper
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=HARPEWA
@@ -47,9 +51,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000268
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/HARPEWA/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: House of Representatives January 1, 1997 - December 31, 2012; Senate
     January 1, 2013

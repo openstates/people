@@ -2,13 +2,18 @@ id: ocd-person/79e71401-1fce-49bc-84cf-4e4449a9a696
 name: Greg Nibert
 given_name: Gregory J.
 family_name: Nibert
+birth_date: '1958-01-03'
 gender: Male
 email: greg.nibert@nmlegis.gov
-image: https://www.nmlegis.gov/Images/Legislators/House/HNIBE.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2024-01-05
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '27'
 - start_date: 2017-01-17
+  end_date: 2024-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '59'
@@ -24,13 +29,15 @@ links:
   note: linkedin
 - url: https://www.nmlegis.gov/Members/Legislator?SponCode=HNIBE
   note: homepage
+- url: https://www.nmlegis.gov/Members/Legislator?SponCode=SNIBE
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NML000422
 sources:
-- url: http://www.nmlegis.gov/Members/Legislator?SponCode=HNIBE
+- url: https://www.nmlegis.gov/Members/Legislator?SponCode=HNIBE
 - url: https://www.nmlegis.gov/Members/Legislator_List?T=R
 - url: https://www.nmlegis.gov/Members/Legislator?SponCode=HNIBE
+- url: https://www.nmlegis.gov/Members/Legislator?SponCode=SNIBE
 extras:
   counties represented: Chaves
   service: Representative since 2017

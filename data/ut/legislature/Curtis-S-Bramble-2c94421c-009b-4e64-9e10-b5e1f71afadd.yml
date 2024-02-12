@@ -2,6 +2,7 @@ id: ocd-person/2c94421c-009b-4e64-9e10-b5e1f71afadd
 name: Curt Bramble
 given_name: Curtis Scott
 family_name: Bramble
+birth_date: '1957-10-18'
 gender: Male
 email: curt@cbramble.com
 image: https://le.utah.gov/images/legislator/BRAMBCS.jpg
@@ -17,10 +18,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '16'
 offices:
-- classification: capitol
-  voice: 801-361-5802
-- classification: district
-  address: 3663 North 870 East, Provo, UT, 84604
+- classification: home
+  address: 3663 N. 870 East, Provo, UT 84604
+  voice: 801-226-3663
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
 links:
 - url: https://senate.utah.gov/curtis-bramble
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BRAMBCS
@@ -49,9 +53,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000198
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/BRAMBCS/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2001
   profession: CPA

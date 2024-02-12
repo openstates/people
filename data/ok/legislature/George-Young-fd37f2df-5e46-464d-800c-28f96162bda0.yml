@@ -1,32 +1,37 @@
 id: ocd-person/fd37f2df-5e46-464d-800c-28f96162bda0
 name: George Young
-given_name: George
+given_name: George E.
 family_name: Young
+gender: Male
+email: george.young@oksenate.gov
 image: https://oksenate.gov/sites/default/files/Young%2C%20George%20Flags2022%201.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2018-11-15'
+- start_date: 2018-11-16
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '48'
+- end_date: 2018-11-15
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
   district: '99'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  district: '48'
 offices:
 - classification: capitol
-  address: 2300 N. Lincoln Blvd., Rm. 524 Oklahoma City, OK 73105
+  address: Room 524, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105
   voice: 405-521-5531
 links:
-- url: http://oksenate.gov/Senators/biographies/young_bio.aspx
+- url: https://oksenate.gov/Senators/biographies/young_bio.aspx
 - url: https://oksenate.gov/contact-senator?sid=1864
   note: Contact Form
+- url: https://oksenate.gov/senators/george-young
 other_identifiers:
 - scheme: legacy_openstates
   identifier: OKL000200
 sources:
-- url: http://oksenate.gov/Senators/biographies/young_bio.aspx
-- url: http://oksenate.gov/Senators/biographies/young_bio.html
+- url: https://oksenate.gov/senators/george-young
+- url: https://oksenate.gov/Senators/biographies/young_bio.aspx
+- url: https://oksenate.gov/Senators/biographies/young_bio.html
 extras:
   _scraped_name: Young, George
   email: george.young@okhouse.gov

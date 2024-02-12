@@ -1,28 +1,34 @@
 id: ocd-person/de934263-fe58-4281-bd70-1291fcbd0e25
-name: Roger D. Lynch
-given_name: Roger
+name: Roger Lynch
+given_name: Roger D.
 family_name: Lynch
+gender: Male
 email: roger.lynch@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/528_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '60'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '14'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '60'
 offices:
-- classification: district
+- classification: district-mail
   address: 405 Gold Lane, Lonoke, AR 72086
+  voice: 501-412-8959
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2021%2F2021R
-- url: http://www.rogerdlynch.com
+- url: https://www.rogerdlynch.com
   note: Campaign Website
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch
+- url: https://www.arkansashouse.org/district/60
 other_names:
+- name: Roger D. Lynch
 - name: Lynch
 ids:
   twitter: rogerdlynch
@@ -37,7 +43,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Roger_Lynch
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

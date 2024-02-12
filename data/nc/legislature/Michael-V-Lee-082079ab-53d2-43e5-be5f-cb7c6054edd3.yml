@@ -1,35 +1,38 @@
 id: ocd-person/082079ab-53d2-43e5-be5f-cb7c6054edd3
-name: Michael V. Lee
-given_name: Michael
+name: Michael Lee
+given_name: Michael Vincent
 family_name: Lee
+birth_date: '1968-11-29'
 gender: Male
-email: Michael.Lee@ncleg.gov
+email: michael.lee@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/387/Low
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '7'
+- end_date: 2018-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '9'
 - start_date: 2021-01-01
-  end_date: '2023-01-01'
+  end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '9'
-- start_date: '2023-01-01'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  district: '7'
 offices:
 - classification: capitol
-  address: 300 N. Salisbury Street, Rm. 523; Raleigh, NC 27603-5925
+  address: Room 523, 300 N. Salisbury St., Raleigh, NC 27603
   voice: 919-715-2525
 links:
-- url: https://www.ncleg.gov/Members/Biography/S/387
 - url: https://www.ncleg.gov/Members/IntroducedBills/S/387
 - url: https://www.ncleg.gov/Members/Votes/S/387
 - url: https://www.ncleg.gov/Members/Committees/S/387
+- url: https://www.ncleg.gov/Members/Biography/S/387
+other_names:
+- name: Michael V. Lee
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000324

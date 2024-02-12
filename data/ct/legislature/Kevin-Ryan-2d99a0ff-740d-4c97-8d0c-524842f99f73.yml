@@ -2,29 +2,30 @@ id: ocd-person/2d99a0ff-740d-4c97-8d0c-524842f99f73
 name: Kevin Ryan
 given_name: Kevin
 family_name: Ryan
-email: Kevin.Ryan@cga.ct.gov
+gender: Male
+email: kevin.ryan@cga.ct.gov
 image: http://www2.housedems.ct.gov/Ryan/images/Ryan_HS.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 1993-01-06
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '139'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 4108; Hartford, CT 06106-1591
-  voice: 860-240-8504
-- classification: district
-  address: 21 Terrace Drive; Oakdale, CT 06370
+  address: Room 4108, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
+  voice: 860-240-8585
 links:
-- url: http://www.housedems.ct.gov/Ryan
 - url: https://www.cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27139%27&dist_name=139%20-%Ryan,%Kevin
+- url: https://www.housedems.ct.gov/Ryan
 other_names:
 - name: Ryan, Kevin
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CTL000175
 sources:
+- url: https://www.housedems.ct.gov/Ryan
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

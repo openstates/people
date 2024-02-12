@@ -2,6 +2,7 @@ id: ocd-person/c76bd4cf-9149-46e8-a001-e2c81c5942d5
 name: Ken Ivory
 given_name: Kenneth Robert
 family_name: Ivory
+birth_date: '1963-01-12'
 gender: Male
 email: kivory@le.utah.gov
 image: https://le.utah.gov/images/legislator/IVORYK.jpg
@@ -22,10 +23,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '47'
 offices:
-- classification: capitol
+- classification: home
+  address: 8393 S. 2010 West, West Jordan, UT 84088
   voice: 801-694-8380
-- classification: district
-  address: 8393 S 2010 W, WEST JORDAN, UT, 84088
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://house.utah.gov/rep/IVORYK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=IVORYK
@@ -65,6 +68,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/dc7ed9be-2389-4da0-af91-5123770111e6
 sources:
+- url: https://house.utleg.gov/rep/IVORYK/
 - url: https://house.utah.gov/rep/IVORYK/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/IVORYK/

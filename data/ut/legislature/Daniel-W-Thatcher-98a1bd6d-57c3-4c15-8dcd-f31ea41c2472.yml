@@ -17,10 +17,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '12'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: 6352 W. City Vistas Way, West Valley City, UT 84128
   voice: 801-759-4746
-- classification: district
-  address: 6352 W CITY VISTAS WAY, SALT LAKE CITY, UT, 84128
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=THATCDW
   note: legislation
@@ -42,8 +45,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000183
 sources:
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/THATCDW/
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2011
   profession: Independent Electronics and Low Voltage Wiring Contractor

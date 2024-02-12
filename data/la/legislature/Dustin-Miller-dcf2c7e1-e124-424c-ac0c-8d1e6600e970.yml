@@ -2,28 +2,32 @@ id: ocd-person/dcf2c7e1-e124-424c-ac0c-8d1e6600e970
 name: Dustin Miller
 given_name: Dustin
 family_name: Miller
+gender: Male
 email: millerd@legis.la.gov
 image: https://house.louisiana.gov/H_Reps/RepPics20/rep40.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2016-01-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '40'
 offices:
 - classification: district
-  address: 1310 South Union Street, Suite 2 Opelousas, LA 70570
+  address: 1310 S. Union St. Suite 2, Opelousas, LA 70570
   voice: 337-943-2900
   fax: 337-943-2902
 links:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=40
   note: homepage
+- url: https://house.louisiana.gov/H_Reps/members?ID=40
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000839
 - scheme: legacy_openstates
   identifier: LAL000910
 sources:
+- url: https://house.louisiana.gov/H_Reps/members?ID=40
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=40
 - url: https://house.louisiana.gov/H_Reps/H_Reps_FullInfo
 extras:
@@ -31,4 +35,4 @@ extras:
   representing parishes:
   - St. Landry
   education: Opelousas Catholic High School; University of Louisiana at Lafayette,
-             B.S.N.; Southern University, M.S.N., Family Nursing
+    B.S.N.; Southern University, M.S.N., Family Nursing

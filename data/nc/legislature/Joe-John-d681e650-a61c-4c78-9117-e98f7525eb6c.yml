@@ -1,25 +1,31 @@
 id: ocd-person/d681e650-a61c-4c78-9117-e98f7525eb6c
 name: Joe John
-given_name: Joe
+given_name: Joseph R.
 family_name: John
+birth_date: '1939-10-13'
 gender: Male
-email: Joe.John@ncleg.gov
+email: joe.john@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/H/722/Low
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-01-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '40'
 offices:
 - classification: capitol
-  address: 16 West Jones Street, Rm. 1013; Raleigh, NC 27601-1096
+  address: Room 1013, North Carolina House of Representatives 16 W. Jones St., Raleigh,
+    NC 27601
+  voice: 919-733-5530
+- classification: district-mail
+  address: 11800 Black Horse Run, Raleigh, NC 27613
   voice: 919-733-5530
 links:
-- url: https://www.ncleg.gov/Members/Biography/H/722
 - url: https://www.ncleg.gov/Members/IntroducedBills/H/722
 - url: https://www.ncleg.gov/Members/Votes/H/722
 - url: https://www.ncleg.gov/Members/Committees/H/722
+- url: https://www.ncleg.gov/Members/Biography/H/722
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000376

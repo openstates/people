@@ -2,6 +2,7 @@ id: ocd-person/3ee27d8b-c865-4d86-b33e-9cfb34c3bac4
 name: Evan Vickers
 given_name: Evan J.
 family_name: Vickers
+birth_date: '1954-05-15'
 gender: Male
 email: evickers@le.utah.gov
 image: https://le.utah.gov/images/legislator/VICKEEJ.jpg
@@ -13,9 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '28'
 offices:
-- classification: district
-  address: 2166 North Cobble Creek Drive, Cedar City, UT, 84721
-  voice: 435-586-9651
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: 2166 N. Cobble Creek Drive, Cedar City, UT 84721
+  voice: 435-817-5565
+  fax: 435-586-3473
 links:
 - url: https://senate.utah.gov/evan-vickers
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=VICKEEJ
@@ -42,9 +48,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000187
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/VICKEEJ/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: Utah House of Representatives 2009-2012
   profession: Pharmacist/Business Owner

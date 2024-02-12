@@ -2,21 +2,24 @@ id: ocd-person/5947e2cd-aa8b-4df1-869f-961357705a3c
 name: Kim Thatcher
 given_name: Kim
 family_name: Thatcher
-email: Sen.KimThatcher@oregonlegislature.gov
+birth_date: '1964-10-30'
+gender: Female
+email: sen.kimthatcher@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/thatcher/PublishingImages/thatcher2023.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2023-01-09
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '11'
 offices:
 - classification: capitol
-  address: 900 Court St NE, S-307, Salem, OR, 97301
-  voice: 503-986-1713
+  address: Room S-307, 900 Court St. NE, Salem, OR 97301
+  voice: 503-986-1711
 links:
 - url: https://www.oregonlegislature.gov/thatcher
   note: homepage
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/thatcher
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

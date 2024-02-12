@@ -2,6 +2,7 @@ id: ocd-person/39f80bf5-e4c8-4b0f-9ca6-5f43508a5755
 name: Jefferson Moss
 given_name: Jefferson
 family_name: Moss
+birth_date: '1976-06-04'
 gender: Male
 email: jeffersonmoss@le.utah.gov
 image: https://le.utah.gov/images/legislator/MOSSJ.jpg
@@ -17,8 +18,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '2'
 offices:
-- classification: capitol
-  address: 350 N State St Suite 350, SALT LAKE CITY, UT, 84114
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
+- classification: home
+  address: 1668 N. Aspen Circle, Saratoga Springs, UT 84045
   voice: 385-250-6738
 links:
 - url: https://house.utah.gov/rep/MOSSJ
@@ -50,8 +54,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000298
 sources:
+- url: https://house.utleg.gov/rep/MOSSJ/
 - url: https://house.utah.gov/rep/MOSSJ/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/MOSSJ/
 extras:

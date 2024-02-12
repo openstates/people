@@ -13,10 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '14'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
+- classification: home
+  address: P.O. Box 160152, Clearfield, UT 84016
   voice: 801-589-2934
-- classification: district
-  address: PO BOX 160152, CLEARFIELD, UT, 84016
 links:
 - url: https://house.utah.gov/rep/LISONK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=LISONK
@@ -49,8 +51,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000292
 sources:
+- url: https://house.utleg.gov/rep/LISONK/
 - url: https://house.utah.gov/rep/LISONK/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/LISONK/
 extras:

@@ -2,6 +2,8 @@ id: ocd-person/63c58557-7c03-41f5-934a-866daed33ec8
 name: Mary Moore
 given_name: Mary
 family_name: Moore
+birth_date: '1948-07-23'
+gender: Female
 email: mamoor48@bellsouth.net
 image: https://www.legislature.state.al.us/pdf/house/members/Moore_59.png
 party:
@@ -11,13 +13,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '59'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 539-D,Montgomery, AL 36130-2950
-  voice: 334-261-0508
 - classification: district
-  address: 1622 36th Avenue North,Birmingham, AL 35207
+  address: 1622 36th Ave. North, Birmingham, AL 35207
+  voice: 205-229-9966
+- classification: capitol
+  address: Room 539-D, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0508
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_names:
@@ -30,9 +33,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000465
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Moore&OID_SPONSOR=100540&OID_PERSON=4462&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100540&OID_PERSON=4462
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Moore&OID_SPONSOR=100540&OID_PERSON=4462&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

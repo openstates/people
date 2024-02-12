@@ -1,24 +1,26 @@
 id: ocd-person/4aab5f96-d36a-4274-9591-9922a353c10b
 name: Danny Garrett
-given_name: Danny
+given_name: J. Daniel
 family_name: Garrett
+birth_date: '1957-10-11'
+gender: Male
 email: dannygarrett44@gmail.com
 image: https://www.legislature.state.al.us/pdf/house/members/Garrett_44.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '44'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 410-A,Montgomery, AL 36130-2950
-  voice: 334-261-0524
 - classification: district
-  address: Post Office Box 531,Trussville, AL 35173
-  voice: 205-410-4637
+  address: P.O. Box 531, Trussville, AL 35173
+- classification: capitol
+  address: Room 410 A, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0424
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100525&OID_PERSON=7713
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100525&OID_PERSON=7713
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -29,9 +31,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000352
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100525&OID_PERSON=7713
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Garrett&OID_SPONSOR=100525&OID_PERSON=7713&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100525&OID_PERSON=7713
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Garrett&OID_SPONSOR=100525&OID_PERSON=7713&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

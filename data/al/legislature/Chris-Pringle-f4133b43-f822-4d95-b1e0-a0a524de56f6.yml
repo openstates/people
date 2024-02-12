@@ -1,23 +1,27 @@
 id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
 name: Chris Pringle
-given_name: Chris
+given_name: Christopher Paul
 family_name: Pringle
+birth_date: '1961-02-25'
+gender: Male
 email: chris.pringle@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Pringle_101.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '101'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 519-G,Montgomery, AL 36130-2950
+  address: Room 402, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0489
 - classification: district
-  address: 4 Princess Anne Road,Mobile, AL 36608
+  address: 4 Princess Anne Road, Mobile, AL 36608
+  voice: 251-341-1110
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -28,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000327
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Pringle&OID_SPONSOR=100583&OID_PERSON=1109&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100583&OID_PERSON=1109
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Pringle&OID_SPONSOR=100583&OID_PERSON=1109&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

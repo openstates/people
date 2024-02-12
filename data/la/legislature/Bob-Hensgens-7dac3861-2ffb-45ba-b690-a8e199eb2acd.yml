@@ -1,13 +1,16 @@
 id: ocd-person/7dac3861-2ffb-45ba-b690-a8e199eb2acd
 name: Bob Hensgens
-given_name: Bob
+given_name: Craig Robert
 family_name: Hensgens
+birth_date: '1955-01-26'
+gender: Male
 email: sen26@legis.la.gov
 image: https://senate.la.gov/SenatorPics/Sen26.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2018-12-10
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '26'
 - end_date: 2018-11-06
@@ -16,12 +19,13 @@ roles:
   district: '47'
 offices:
 - classification: district
-  address: 122 N. State Street Suite 100 Abbeville, LA 70510
+  address: 122 N. State St. Suite 100, Abbeville, LA 70510
   voice: 337-740-6425
   fax: 337-898-1160
 links:
 - url: https://senate.la.gov/smembers.aspx?ID=26
   note: homepage
+- url: https://senate.la.gov/smembers?ID=26
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000430
@@ -32,6 +36,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000871
 sources:
+- url: https://senate.la.gov/smembers?ID=26
 - url: https://senate.la.gov/smembers.aspx?ID=26
 - url: https://senate.la.gov/Senators_FullInfo
 extras:
@@ -42,4 +47,5 @@ extras:
   - Lafayette
   - St. Landry
   - Vermilion
-  education: Vermilion Catholic High, 1983; University Southwestern Louisiana, Business Administration
+  education: Vermilion Catholic High, 1983; University Southwestern Louisiana, Business
+    Administration

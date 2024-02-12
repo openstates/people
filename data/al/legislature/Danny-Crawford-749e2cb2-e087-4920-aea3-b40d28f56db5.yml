@@ -2,32 +2,35 @@ id: ocd-person/749e2cb2-e087-4920-aea3-b40d28f56db5
 name: Danny Crawford
 given_name: Danny
 family_name: Crawford
-email: Danny.F.Crawford@gmail.com
+birth_date: '1950-06-06'
+gender: Male
+email: danny.crawford@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Crawford_5.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2016-02-17
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '5'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 403-C,Montgomery, AL 36130-2950
-  voice: 334-261-0516
 - classification: district
-  address: 113 Lindsay Lane N,Athens, AL 35613
+  address: 113 Lindsay Lane North, Athens, AL 35613
   voice: 256-871-1944
+- classification: capitol
+  address: Room 434, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0516
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100485&OID_PERSON=8000
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100485&OID_PERSON=8000
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000551
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100485&OID_PERSON=8000
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Crawford&OID_SPONSOR=100485&OID_PERSON=8000&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100485&OID_PERSON=8000
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Crawford&OID_SPONSOR=100485&OID_PERSON=8000&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

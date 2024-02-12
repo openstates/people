@@ -1,34 +1,36 @@
 id: ocd-person/4b44cfe9-fb9b-4c18-ba6e-34cf679ac3ef
 name: Mark Perry
-given_name: Mark
+given_name: Mark Wilson
 family_name: Perry
-email: mperry@windstream.net
+gender: Male
+email: mark.perry@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/548_sm.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '66'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '44'
 - start_date: 2013-01-01
-  end_date: '2023-01-09'
+  end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '42'
-- start_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '66'
 offices:
-- classification: district
+- classification: district-mail
   address: P.O. Box 97, Jacksonville, AR 72078
   voice: 501-982-4561
-  name: 'District Office #1'
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2021%2F2021R
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry
+- url: https://www.arkansashouse.org/district/66
 other_names:
 - name: Perry
 ids:
@@ -47,7 +49,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Mark_Perry
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Perry&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

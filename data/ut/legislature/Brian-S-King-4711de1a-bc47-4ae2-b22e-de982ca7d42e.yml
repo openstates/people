@@ -2,6 +2,7 @@ id: ocd-person/4711de1a-bc47-4ae2-b22e-de982ca7d42e
 name: Brian King
 given_name: Brian S.
 family_name: King
+birth_date: '1959-08-19'
 gender: Male
 email: briansking@le.utah.gov
 image: https://le.utah.gov/images/legislator/KINGBS.jpg
@@ -17,9 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '28'
 offices:
-- classification: district
-  address: '875 S DONNER WAY #1504, SALT LAKE CITY, UT, 84108'
-  voice: 801-532-1739
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
+- classification: home
+  address: '875 S. Donner Way #1504, Salt Lake City, UT 84108'
+  voice: 801-560-0769
 links:
 - url: https://house.utah.gov/rep/KINGBS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=KINGBS
@@ -56,8 +60,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000224
 sources:
+- url: https://house.utleg.gov/rep/KINGBS/
 - url: https://house.utah.gov/rep/KINGBS/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/KINGBS/
 extras:

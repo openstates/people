@@ -1,29 +1,31 @@
 id: ocd-person/91615553-5509-4625-ab20-7a81896438e0
 name: Carl Ford
-given_name: Carl
+given_name: Carl Lindsey
 family_name: Ford
+birth_date: '1957-07-11'
 gender: Male
-email: Carl.Ford@ncleg.gov
+email: carl.ford@ncleg.gov
 image: https://www.ncleg.gov/Members/MemberImage/S/410/Low
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2019-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
+  district: '33'
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '76'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nc/government
-  district: '33'
 offices:
 - classification: capitol
-  address: 300 N. Salisbury Street, Rm. 625; Raleigh, NC 27603
+  address: Room 625, North Carolina Senate 300 N. Salisbury St., Raleigh, NC 27603
   voice: 919-733-5665
 links:
-- url: https://www.ncleg.gov/Members/Biography/S/410
 - url: https://www.ncleg.gov/Members/IntroducedBills/S/410
 - url: https://www.ncleg.gov/Members/Votes/S/410
 - url: https://www.ncleg.gov/Members/Committees/S/410
+- url: https://www.ncleg.gov/Members/Biography/S/410
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NCL000277

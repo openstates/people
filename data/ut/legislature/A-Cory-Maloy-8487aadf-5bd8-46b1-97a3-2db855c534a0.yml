@@ -2,6 +2,7 @@ id: ocd-person/8487aadf-5bd8-46b1-97a3-2db855c534a0
 name: Cory Maloy
 given_name: A. Cory
 family_name: Maloy
+birth_date: '1962-07-31'
 gender: Male
 email: corymaloy@le.utah.gov
 image: https://le.utah.gov/images/legislator/MALOYC.jpg
@@ -17,10 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '6'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
+- classification: home
+  address: 283 E. 500 North, Lehi, UT 84043
   voice: 801-477-0019
-- classification: district
-  address: 283 E 500 N, LEHI, UT, 84043
 links:
 - url: https://house.utah.gov/rep/MALOYC
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MALOYC
@@ -54,8 +57,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000297
 sources:
+- url: https://house.utleg.gov/rep/MALOYC/
 - url: https://house.utah.gov/rep/MALOYC/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/MALOYC/
 extras:

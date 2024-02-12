@@ -2,6 +2,7 @@ id: ocd-person/cac348fd-397e-4f58-ae30-1a54fa68cc12
 name: Tim Jimenez
 given_name: Timothy Adrian
 family_name: Jimenez
+birth_date: '1977-05-30'
 gender: Male
 email: tjimenez@le.utah.gov
 image: https://le.utah.gov/images/legislator/JIMENT.jpg
@@ -13,10 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '28'
 offices:
-- classification: capitol
+- classification: home
+  address: 573 E. 1420 North, Tooele, UT 84074
   voice: 801-560-8061
-- classification: district
-  address: 573 East 1420 North, Tooele, UT, 84074
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=JIMENT
   note: legislation
@@ -26,6 +29,7 @@ links:
   note: homepage
 - url: https://house.utleg.gov/rep/JIMENT/
 sources:
+- url: https://house.utleg.gov/rep/JIMENT/
 - url: https://house.utah.gov/rep/JIMENT/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/JIMENT/
