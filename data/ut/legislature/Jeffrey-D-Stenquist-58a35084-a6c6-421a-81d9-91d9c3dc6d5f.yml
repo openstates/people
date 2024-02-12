@@ -2,6 +2,7 @@ id: ocd-person/58a35084-a6c6-421a-81d9-91d9c3dc6d5f
 name: Jeff Stenquist
 given_name: Jeffrey D.
 family_name: Stenquist
+birth_date: '1969-12-31'
 gender: Male
 email: jstenquist@le.utah.gov
 image: https://le.utah.gov/images/legislator/STENQJ.jpg
@@ -17,9 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '51'
 offices:
-- classification: district
-  address: '129 E 13800 S, Ste B2 #351, DRAPER, UT, 84020'
+- classification: home
+  address: '129 E. 13800 South Suite B2 #351, Drapper, UT 84020'
   voice: 385-272-9437
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=STENQJ
   note: legislation
@@ -41,6 +45,7 @@ other_names:
 - name: Stenquist, J.
 - name: Stenquist, Jeffrey D.
 sources:
+- url: https://house.utleg.gov/rep/STENQJ/
 - url: https://house.utah.gov/rep/STENQJ/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/STENQJ/

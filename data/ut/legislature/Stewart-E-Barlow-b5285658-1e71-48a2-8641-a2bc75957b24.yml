@@ -13,10 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '17'
 offices:
-- classification: capitol
+- classification: home
+  address: 940 Signal Hill, Fruit Heights, UT 84037
   voice: 801-289-6699
-- classification: district
-  address: 940 SIGNAL HILL, FRUIT HEIGHTS, UT, 84037
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://house.utah.gov/rep/BARLOSE
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BARLOSE
@@ -64,8 +66,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/ec84c19b-e975-4bb1-9999-912421f000b3
 sources:
+- url: https://house.utleg.gov/rep/BARLOSE/
 - url: https://house.utah.gov/rep/BARLOSE/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/BARLOSE/
 extras:

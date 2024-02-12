@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '10'
 offices:
-- classification: capitol
-  voice: 385-831-8902
-- classification: district
-  address: 10167 S 1190 W, SALT LAKE CITY, UT, 84095
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: 10167 S. 1190 West, South Jordan, UT 84095
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=FILLML
   note: legislation
@@ -39,8 +41,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000276
 sources:
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/FILLML/
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: Appointed January 5, 2016
   profession: Small Business Owner

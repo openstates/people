@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '45'
 offices:
-- classification: capitol
+- classification: home
+  address: 8157 S. Grambling Way, Sandy, UT 84094
   voice: 801-673-4748
-- classification: district
-  address: 8157 S GRAMBLING WAY, Sandy, UT, 84094
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://house.utah.gov/rep/ELIASS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ELIASS
@@ -63,8 +65,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000271
 sources:
+- url: https://house.utleg.gov/rep/ELIASS/
 - url: https://house.utah.gov/rep/ELIASS/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ELIASS/
 extras:

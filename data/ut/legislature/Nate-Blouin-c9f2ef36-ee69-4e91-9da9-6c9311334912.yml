@@ -2,6 +2,7 @@ id: ocd-person/c9f2ef36-ee69-4e91-9da9-6c9311334912
 name: Nate Blouin
 given_name: Nate
 family_name: Blouin
+birth_date: '1989-05-16'
 gender: Male
 email: nblouin@le.utah.gov
 image: https://le.utah.gov/images/legislator/BLOUIN.jpg
@@ -13,9 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '13'
 offices:
-- classification: capitol
-  address: 350 State St, Salt Lake City, UT, 84103
+- classification: home
+  address: UT
   voice: 801-597-2409
+- classification: capitol-mail
+  address: 350 State St., Salt Lake City, UT 84103
+  voice: 801-538-1035
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BLOUIN
   note: legislation
@@ -24,8 +28,8 @@ links:
 - url: https://senate.utah.gov/sen/BLOUIN/
   note: homepage
 sources:
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/BLOUIN/
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2023
   profession: Renewable Energy Advocate

@@ -13,9 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '27'
 offices:
-- classification: district
-  address: '4956 W 6200 S #434, Kearns, UT, 84118'
+- classification: home
+  address: '4956 W. 6200 South #434, Kearns, UT 84118'
   voice: 801-657-0466
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=LOUBEA
   note: legislation
@@ -27,6 +30,7 @@ links:
 other_names:
 - name: Anthony E. Loubet
 sources:
+- url: https://house.utleg.gov/rep/LOUBEA/
 - url: https://house.utah.gov/rep/LOUBEA/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/LOUBEA/

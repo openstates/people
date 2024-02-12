@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '33'
 offices:
-- classification: capitol
-  voice: 801-232-6645
-- classification: district
-  address: 3762 S 3600 W, West Valley City, UT, 84119
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
+- classification: home
+  address: 3762 S. 3600 West, West Valley City, UT 84119
+  voice: 801-538-1029
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=ROHNEJ
   note: legislation
@@ -32,6 +34,7 @@ links:
   note: homepage
 - url: https://house.utleg.gov/rep/ROHNEJ/
 sources:
+- url: https://house.utleg.gov/rep/ROHNEJ/
 - url: https://house.utah.gov/rep/ROHNEJ/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ROHNEJ/

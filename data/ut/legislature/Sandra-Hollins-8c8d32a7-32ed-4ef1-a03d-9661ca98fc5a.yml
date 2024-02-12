@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '23'
 offices:
-- classification: capitol
+- classification: home
+  address: UT
   voice: 801-363-4257
-- classification: district
-  address: PO Box 16462, SALT LAKE CITY, UT, 84116
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1650
 links:
 - url: https://house.utah.gov/rep/HOLLIS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=HOLLIS
@@ -63,8 +65,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000242
 sources:
+- url: https://house.utleg.gov/rep/HOLLIS/
 - url: https://house.utah.gov/rep/HOLLIS/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/HOLLIS/
 extras:

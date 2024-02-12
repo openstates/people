@@ -13,10 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '12'
 offices:
-- classification: capitol
+- classification: home
+  address: 4904 W. 5850 South, Hooper, UT 84315
   voice: 801-859-7713
-- classification: district
-  address: 4904 W 5850 S, HOOPER, UT, 84315
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://house.utah.gov/rep/SCHULM
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SCHULM
@@ -53,8 +55,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000206
 sources:
+- url: https://house.utleg.gov/rep/SCHULM/
 - url: https://house.utah.gov/rep/SCHULM/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/SCHULM/
 extras:

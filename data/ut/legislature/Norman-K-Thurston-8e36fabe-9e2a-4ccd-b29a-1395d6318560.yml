@@ -17,9 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '64'
 offices:
-- classification: district
-  address: 965 E CENTER STREET, PROVO, UT, 84606
+- classification: home
+  address: 965 E. Center St., Provo, UT 84606
   voice: 801-477-5348
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://house.utah.gov/rep/THURSNK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=THURSNK
@@ -60,8 +63,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000304
 sources:
+- url: https://house.utleg.gov/rep/THURSNK/
 - url: https://house.utah.gov/rep/THURSNK/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/THURSNK/
 extras:

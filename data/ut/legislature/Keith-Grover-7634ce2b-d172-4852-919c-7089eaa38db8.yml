@@ -22,10 +22,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '15'
 offices:
-- classification: capitol
+- classification: home
+  address: 1374 W. 1940 North, Provo, UT 84604
   voice: 801-319-0170
-- classification: district
-  address: 1374 W 1940 N, Provo, UT, 84604
+  fax: 801-356-2442
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
 links:
 - url: https://senate.utah.gov/keith-grover
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=GROVEK
@@ -63,9 +67,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/c17b9ece-b750-4eb1-befb-591757513771
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/GROVEK/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2007
   profession: Administrator

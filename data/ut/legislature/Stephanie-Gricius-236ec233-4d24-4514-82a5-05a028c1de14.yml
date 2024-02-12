@@ -13,11 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '50'
 offices:
-- classification: capitol
-  address: 350 N State Street, Suite 350, Salt Lake City, UT, 84114
+- classification: home
+  address: UT
   voice: 801-901-8251
-- classification: district
-  address: 350 State St, Salt Lake City, UT, 84103
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=GRICIS
   note: legislation
@@ -27,6 +28,7 @@ links:
   note: homepage
 - url: https://house.utleg.gov/rep/GRICIS/
 sources:
+- url: https://house.utleg.gov/rep/GRICIS/
 - url: https://house.utah.gov/rep/GRICIS/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/GRICIS/

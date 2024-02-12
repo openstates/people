@@ -13,9 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '48'
 offices:
-- classification: capitol
-  address: 350 N State Street, Suite 350, Salt Lake City, UT, 84114
+- classification: home
+  address: UT
   voice: 801-657-0340
+- classification: capitol-mail
+  address: 350 N. State St. Suite 350, Salt Lake City, UT 84103
+  voice: 801-538-1650
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=COBBJ
   note: legislation
@@ -27,6 +30,7 @@ links:
 other_names:
 - name: James F. Cobb
 sources:
+- url: https://house.utleg.gov/rep/COBBJ/
 - url: https://house.utah.gov/rep/COBBJ/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/COBBJ/

@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '65'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
+- classification: home
+  address: 913 S. Iris Lane, Mapleton, UT 84664
   voice: 385-271-8435
-- classification: district
-  address: 913 S IRIS LANE, MAPLETON, UT, 84664
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=WHYTESL
   note: legislation
@@ -38,6 +40,7 @@ links:
 other_names:
 - name: Stephen L. Whyte
 sources:
+- url: https://house.utleg.gov/rep/WHYTESL/
 - url: https://house.utah.gov/rep/WHYTESL/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/WHYTESL/

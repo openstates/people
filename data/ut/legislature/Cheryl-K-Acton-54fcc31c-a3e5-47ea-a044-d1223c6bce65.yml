@@ -17,8 +17,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '43'
 offices:
-- classification: capitol
-  address: 350 N State Street, Ste. 350, Salt Lake City, UT, 84114
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
+- classification: home
+  address: 5143 W. Wheatcrest Circle, West Jordan, UT 84081
   voice: 801-809-3571
 links:
 - url: https://house.utah.gov/rep/ACTONCK
@@ -51,8 +54,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000300
 sources:
+- url: https://house.utleg.gov/rep/ACTONCK/
 - url: https://house.utah.gov/rep/ACTONCK/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ACTONCK/
 extras:

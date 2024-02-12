@@ -13,10 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '31'
 offices:
-- classification: capitol
-  voice: 801-879-2490
-- classification: district
-  address: 2418 W 3965 S, West Valley City, UT, 84119
+- classification: home
+  address: 2418 W. 3965 South, West Valley City, UT 84119
+  voice: 801-538-1029
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=GARNEB
   note: legislation
@@ -26,6 +28,7 @@ links:
   note: homepage
 - url: https://house.utleg.gov/rep/GARNEB/
 sources:
+- url: https://house.utleg.gov/rep/GARNEB/
 - url: https://house.utah.gov/rep/GARNEB/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/GARNEB/

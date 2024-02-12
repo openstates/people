@@ -18,9 +18,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '17'
 offices:
-- classification: district
-  address: 635 Hillcrest Circle, Tremonton, UT, 84337
+- classification: home
+  address: 635 N. Hillcrest Circle, Tremonton, UT 84337
   voice: 435-279-7551
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
 links:
 - url: https://senate.utah.gov/scott-sandall
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SANDASD
@@ -57,9 +61,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000259
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/SANDASD/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: 2015-2018 Utah House of Representatives; 2019 Senate
   profession: Farm and Ranch

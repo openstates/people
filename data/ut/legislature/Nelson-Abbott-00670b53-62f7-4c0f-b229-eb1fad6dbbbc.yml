@@ -2,6 +2,7 @@ id: ocd-person/00670b53-62f7-4c0f-b229-eb1fad6dbbbc
 name: Nelson Abbott
 given_name: Nelson T.
 family_name: Abbott
+birth_date: '1966-01-30'
 gender: Male
 email: nabbott@le.utah.gov
 image: https://le.utah.gov/images/legislator/ABBOTN.jpg
@@ -18,10 +19,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '60'
 offices:
-- classification: capitol
+- classification: home
+  address: 195 S. Palisade Drive, Orem, UT 84097
   voice: 385-358-3269
-- classification: district
-  address: 195 S Palisade Dr., Orem, UT, 84097
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
 links:
 - url: https://house.utah.gov/rep/ABBOTN
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ABBOTN
@@ -43,8 +46,9 @@ other_names:
 - name: Abbott, N.
 - name: Nelson Abbott
 sources:
+- url: https://house.utleg.gov/rep/ABBOTN/
 - url: https://house.utah.gov/rep/ABBOTN/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ABBOTN/
 extras:

@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '25'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
+- classification: home
+  address: 1124 E. 600 South, Salt Lake City, UT 84102
   voice: 801-946-9791
-- classification: district
-  address: 1124 E 600 S, SALT LAKE CITY, UT, 84102
 links:
 - url: https://house.utah.gov/rep/BRISCJK
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BRISCJK
@@ -60,8 +62,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000246
 sources:
+- url: https://house.utleg.gov/rep/BRISCJK/
 - url: https://house.utah.gov/rep/BRISCJK/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/BRISCJK/
 extras:

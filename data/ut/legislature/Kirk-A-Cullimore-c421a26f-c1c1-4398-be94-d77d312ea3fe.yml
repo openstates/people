@@ -18,10 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '9'
 offices:
-- classification: capitol
-  address: 350 North State St. Suite 320, Salt Lake City, UT, 84114
-- classification: district
-  address: PO Box 900986, Sandy, UT, 84090
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: Draper, UT
   voice: 801-571-6611
 links:
 - url: https://senate.utah.gov/kirk-cullimore
@@ -42,9 +44,9 @@ other_names:
 - name: Cullimore, Kirk A.
 - name: Cullimore, K. A.
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/CULLIKA/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2019
   profession: Attorney
