@@ -1,27 +1,50 @@
-id: ocd-organization/f9c17981-7c18-420c-ae57-745a26a66bc2
+id: ocd-organization/cebf2140-9066-49fa-bef0-ba46cfd4cd53
 jurisdiction: ocd-jurisdiction/country:us/state:wv/government
 classification: committee
 name: Technology and Infrastructure
-chamber: lower
+chamber: legislature
 sources:
-- url: https://www.wvlegislature.gov/committees/house/HouseCommittee.cfm?Chart=rt
+- url: https://www.wvlegislature.gov/committees/interims/committee.cfm?abb=tech_infra
+  note: Technology and Infrastructure committee url
+- url: https://www.wvlegislature.gov/committees/interims/committee.cfm?abb=tech_infra
   note: Committee detail page
 links:
-- url: https://www.wvlegislature.gov/committees/house/HouseCommittee.cfm?Chart=rt
+- url: https://www.wvlegislature.gov/committees/interims/committee.cfm?abb=tech_infra
   note: homepage
 members:
+- name: Ben Queen
+  role: Chair
+  person_id: ocd-person/de50d28d-6a58-4244-8c74-36ca3f41767a
+- name: Laura Wakim Chapman
+  role: Member
+  person_id: ocd-person/599fd572-0475-4215-8d43-1474237f5a78
+- name: Charles H. Clements
+  role: Member
+  person_id: ocd-person/8941d02d-cee0-47a4-9c68-de73382b20af
+- name: Patrick S. Martin
+  role: Member
+- name: Mark R. Maynard
+  role: Member
+  person_id: ocd-person/e98e90d4-7e6d-47e0-b837-6f5f8b492d9c
+- name: Eric Nelson Jr.
+  role: Member
+- name: Rupie Phillips
+  role: Member
+  person_id: ocd-person/c1187148-471e-4bdc-acf5-16fa0d5d998e
+- name: Robert H. Plymale
+  role: Member
+  person_id: ocd-person/d6033218-5c7e-4ee6-b24f-6d70c4c0ed9c
+- name: Randy E. Smith
+  role: Member
+- name: Mike Stuart
+  role: Member
+  person_id: ocd-person/9237b2d2-52dd-4e7c-98e0-6c5a346356f6
+- name: Chandler Swope
+  role: Member
+  person_id: ocd-person/ee4376b1-df2e-4d56-867b-b8585de9b441
 - name: Daniel Linville
   role: Chair
   person_id: ocd-person/32c4e5cf-81f5-4564-bb9b-568d13156dec
-- name: Jarred Cannon
-  role: Vice-Chair
-  person_id: ocd-person/e617259d-e2c9-4043-a759-321c7e3ff7f0
-- name: John Williams
-  role: Minority Chair
-  person_id: ocd-person/2c8a36d4-5afa-4b68-a6a0-1a9b170401b0
-- name: Joey Garcia
-  role: Minority Vice-Chair
-  person_id: ocd-person/387d11ce-ecf1-4c80-a338-bd8c86f52004
 - name: David Adkins
   role: Member
   person_id: ocd-person/30543e71-ae37-4efa-af20-7d00492c459f
@@ -34,30 +57,35 @@ members:
 - name: Jim Butler
   role: Member
   person_id: ocd-person/905290bd-c655-4a3d-9961-65a2f9c0e271
-- name: Moore Capito
+- name: Jarred Cannon
   role: Member
-  person_id: ocd-person/e5e11b21-fa9b-4396-8a3f-578787cad37c
+  person_id: ocd-person/e617259d-e2c9-4043-a759-321c7e3ff7f0
+- name: Capito
+  role: Member
 - name: Paul Espinosa
   role: Member
   person_id: ocd-person/93c6a37e-8b80-4a72-9f07-2b22579af272
 - name: Bob Fehrenbacher
   role: Member
   person_id: ocd-person/a70a295b-82a5-44a0-ba22-a462823f7abb
+- name: Joey Garcia
+  role: Member
+  person_id: ocd-person/387d11ce-ecf1-4c80-a338-bd8c86f52004
 - name: Marty Gearheart
   role: Member
   person_id: ocd-person/c56adc82-a476-4d3c-bd7f-51b2257b0032
-- name: Anita Hall
+- name: Hall, A.
   role: Member
-  person_id: ocd-person/f7bbf0af-3af6-4c6c-b861-eae6d6fb6320
+- name: Hall, W.
+  role: Member
 - name: Rick Hillenbrand
   role: Member
   person_id: ocd-person/5e9dad08-2267-4354-b695-814e1014a0ec
 - name: Michael Hite
   role: Member
   person_id: ocd-person/0ef791a3-2e24-4751-8686-21ffac958ce0
-- name: Riley Keaton
+- name: Keaton
   role: Member
-  person_id: ocd-person/ab6bded4-191e-4d06-aa00-bdea96a12ffd
 - name: Patrick Lucas
   role: Member
   person_id: ocd-person/9a7c2d4d-002a-439e-b095-e7b86329fc1c
@@ -67,6 +95,9 @@ members:
 - name: Jordan Maynor
   role: Member
   person_id: ocd-person/487dd54b-3091-4b0e-b798-0df99523b4c6
+- name: Erica Moore
+  role: Member
+  person_id: ocd-person/74fee589-c9e9-4dd7-a719-d9b165b2b2c7
 - name: Mickey Petitto
   role: Member
   person_id: ocd-person/354b56ae-dee4-4536-879e-cfb0d80b4069
@@ -79,24 +110,12 @@ members:
 - name: Bryan Ward
   role: Member
   person_id: ocd-person/6e588e9a-4d48-444d-92b4-629e00900440
+- name: John Williams
+  role: Member
+  person_id: ocd-person/2c8a36d4-5afa-4b68-a6a0-1a9b170401b0
 - name: Jimmy Willis
   role: Member
   person_id: ocd-person/5a2928e1-3371-480d-be6f-1c3133de4609
 - name: Kayla Young
   role: Member
   person_id: ocd-person/3317959e-9fbd-40dc-aa7a-0f0a9cc06c3f
-- name: Jeff Campbell
-  role: Member
-  person_id: ocd-person/81cad520-b015-42c8-b533-64a9e4596197
-- name: David Green
-  role: Member
-  person_id: ocd-person/b0526275-df8b-4f42-b16b-064aa721a858
-- name: Walter Hall
-  role: Member
-  person_id: ocd-person/542b49b1-72ed-4e96-98bf-e7c236b92e12
-- name: Josh Holstein
-  role: Member
-  person_id: ocd-person/9d8c89be-2ece-4dff-8a6d-65dccb8e647e
-- name: Jeffrey Stephens
-  role: Member
-  person_id: ocd-person/0092e49c-3dfe-4a2b-b053-e7a0360accf1
