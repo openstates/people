@@ -1,26 +1,31 @@
 id: ocd-person/37a5dfa8-e69f-4567-b8c0-3ea35a69f181
-name: Paul W. Lee
+name: Paul Lee
 given_name: Paul W.
 family_name: Lee
-email: pleed86@gmail.com
+birth_date: '1960-10-07'
+gender: Male
+email: plee@wrcjobs.com
 image: https://www.legislature.state.al.us/pdf/house/members/Lee_86.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2010-11-03
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '86'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 410-F,Montgomery, AL 36130-2950
-  voice: 334-261-0488
 - classification: district
-  address: '304 Ashborough Circle,Office: Suite 1,Dothan, AL 36301'
+  address: 304 Ashborough Circle, Dothan, AL 36301
   voice: 334-792-9682
+- classification: capitol
+  address: Room 410-F, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0488
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
+other_names:
+- name: Paul W. Lee
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000093
@@ -29,9 +34,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000436
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lee&OID_SPONSOR=100568&OID_PERSON=6672&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100568&OID_PERSON=6672
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Lee&OID_SPONSOR=100568&OID_PERSON=6672&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

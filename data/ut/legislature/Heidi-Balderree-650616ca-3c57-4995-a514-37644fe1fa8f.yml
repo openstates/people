@@ -8,12 +8,16 @@ image: https://le.utah.gov/images/legislator/BALDEH.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2023-10-17
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '22'
 offices:
-- classification: capitol
-  address: 350 N State St, Ste 320, Salt Lake City, UT, 84114
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+- classification: home
+  address: UT
   voice: 385-910-3237
 links:
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BALDEH
@@ -22,9 +26,12 @@ links:
   note: district demographics
 - url: https://senate.utah.gov/sen/BALDEH/
   note: homepage
+other_names:
+- name: Balderree, Heidi
+- name: Balderree, H.
 sources:
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/BALDEH/
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: October 17, 2023
   education: Masters of Human Resource Mgmt (Keller Graduate School of Management),

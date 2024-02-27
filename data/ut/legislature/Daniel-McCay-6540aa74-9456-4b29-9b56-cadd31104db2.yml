@@ -22,8 +22,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '11'
 offices:
-- classification: capitol
-  address: 350 N State Street, Ste. 320, SALT LAKE CITY, UT, 84114
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: 13307 Heritage Farm Cove, Riverton, UT 84065
   voice: 801-810-4110
 links:
 - url: https://senate.utah.gov/daniel-mccay
@@ -61,9 +65,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000170
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/MCCAYD/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: Appointed to House on January 20, 2012; Elected to Senate January
     1, 2019

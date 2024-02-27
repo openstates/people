@@ -2,22 +2,24 @@ id: ocd-person/ab33209c-a8c8-4a6e-a480-ef298eeaa74a
 name: Joe Hoxha
 given_name: Joe
 family_name: Hoxha
+gender: Male
 email: joe.hoxha@housegop.ct.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '78'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  address: Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-8700
-- classification: district
-  address: ; ,
 links:
-- url: http://www.cthousegop.com/hoxha/
+- url: https://www.cthousegop.com/hoxha/
+- url: https://www.cthousegop.com/Hoxha/
 sources:
+- url: https://www.cthousegop.com/Hoxha/
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male

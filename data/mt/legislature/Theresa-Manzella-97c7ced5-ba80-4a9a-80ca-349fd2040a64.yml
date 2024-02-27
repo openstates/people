@@ -2,22 +2,28 @@ id: ocd-person/97c7ced5-ba80-4a9a-80ca-349fd2040a64
 name: Theresa Manzella
 given_name: Theresa
 family_name: Manzella
+birth_date: '1964-11-26'
 gender: Female
-email: Theresa.Manzella@legmt.gov
+email: theresa.manzella@legmt.gov
 party:
 - name: Republican
 roles:
-- start_date: 2015-01-05
-  end_date: '2021-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '85'
 - start_date: 2021-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '44'
+- start_date: 2015-01-05
+  end_date: 2021-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '85'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4825
+- classification: district-mail
+  address: 640 Gold Creek Loop, Hamilton, MT 59840
   voice: 406-546-9462
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4827
@@ -31,9 +37,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/07893515-a49c-416d-8129-dde5734b739d
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7554
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5144
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6939
-- url: https://leg.mt.gov/legislator-information/roster/individual/7554

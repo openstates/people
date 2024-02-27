@@ -13,11 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '60'
 offices:
-- classification: capitol
-  address: 350 N State Street, Ste. 350, Salt Lake City, UT, 84114
-  voice: 801-598-0052
-- classification: district
+- classification: capitol-mail
+  address: 350 N. State St., Suite 350, Salt Lake City, UT 84114
   voice: 801-538-1029
+- classification: home
+  address: UT
+  voice: 801-598-0052
 links:
 - url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=CLANCT
   note: legislation
@@ -26,7 +27,11 @@ links:
 - url: https://house.utah.gov/rep/CLANCT/
   note: homepage
 - url: https://house.utleg.gov/rep/CLANCT/
+other_names:
+- name: Clancy, Tyler
+- name: Clancy, T.
 sources:
+- url: https://house.utleg.gov/rep/CLANCT/
 - url: https://house.utah.gov/rep/CLANCT/
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/CLANCT/

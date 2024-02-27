@@ -1,26 +1,31 @@
 id: ocd-person/0fd1ad64-349c-42d9-ae46-4ff7d3eb9495
-name: Dennis R Lenz
-given_name: Dennis
+name: Dennis Lenz
+given_name: Dennis Robert
 family_name: Lenz
 gender: Male
-email: Dennis.Lenz@legmt.gov
+email: dennis.lenz@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '27'
 - end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '50'
-- end_date: '2022-12-31'
+- end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '53'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '27'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 20752, Billings, MT 59104
   voice: 406-671-7052
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4795
   note: legislator page
@@ -28,6 +33,7 @@ links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6847
 - url: https://leg.mt.gov/legislator-information/roster/individual/7547
 other_names:
+- name: Dennis R Lenz
 - name: Lenz, Dennis R.
 - name: Dennis R Lenz
 - name: Lenz, Dennis
@@ -40,9 +46,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/e2c67964-f21a-4675-b168-b5521e2b5bff
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7547
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5112
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6847
-- url: https://leg.mt.gov/legislator-information/roster/individual/7547

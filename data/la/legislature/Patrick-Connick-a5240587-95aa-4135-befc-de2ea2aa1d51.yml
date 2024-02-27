@@ -1,29 +1,31 @@
 id: ocd-person/a5240587-95aa-4135-befc-de2ea2aa1d51
 name: Patrick Connick
-given_name: Patrick
+given_name: John Patrick
 family_name: Connick
+gender: Male
 email: connickp@legis.la.gov
 image: https://senate.la.gov/SenatorPics/Sen8.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-01-13'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:la/government
-  district: '84'
-- start_date: '2020-01-13'
+- start_date: 2020-01-13
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '8'
+- end_date: 2020-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '84'
 offices:
 - classification: district
-  address: 5201 Westbank Expressway Suite 315 Marrero, LA 70072
+  address: 5201 Westbank Expressway Suite 315, Marrero, LA 70072
   voice: 504-371-0240
   fax: 504-347-4526
 links:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=84
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=84
 - url: https://senate.la.gov/smembers.aspx?ID=8
   note: homepage
+- url: https://senate.la.gov/smembers?ID=8
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000193
@@ -38,7 +40,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/c3dbbcb3-8ecd-47d6-a9a6-59465efa0bcd
 sources:
-- url: http://house.louisiana.gov/H_Reps/members.aspx?ID=84
+- url: https://senate.la.gov/smembers?ID=8
+- url: https://house.louisiana.gov/H_Reps/members.aspx?ID=84
 - url: https://senate.la.gov/smembers.aspx?ID=8
 - url: https://senate.la.gov/Senators_FullInfo
 extras:
@@ -46,4 +49,5 @@ extras:
   representing parishes:
   - Jefferson
   - Plaquemines
-  education: Archbishop Shaw High School, 1979; Loyola University at New Orleans, 1983, B.A.;  Loyola University Law School, 1993, J.D.
+  education: Archbishop Shaw High School, 1979; Loyola University at New Orleans,
+    1983, B.A.;  Loyola University Law School, 1993, J.D.

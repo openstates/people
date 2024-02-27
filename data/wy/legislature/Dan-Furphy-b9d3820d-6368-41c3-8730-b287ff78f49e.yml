@@ -2,34 +2,39 @@ id: ocd-person/b9d3820d-6368-41c3-8730-b287ff78f49e
 name: Dan Furphy
 given_name: Dan
 family_name: Furphy
-email: Dan.Furphy@wyoleg.gov
-birth_date: 1951-01-15
+gender: Male
+email: dan.furphy@wyoleg.gov
 image: https://wyoleg.gov/LegislatorSummary/Photos/67th-FurphyDan.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2020-12-31'
+- start_date: 2021-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '10'
+- end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '14'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  district: '10'
 offices:
-- classification: district
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
+- classification: home
   address: 2605 Dover Drive, Laramie, WY 82072
   voice: 307-760-0148
 links:
-- url: http://wyoleg.gov/Legislators/2019/R/2036
-- url: http://wyoleg.gov/Legislators/2021/R/2036
-- url: http://wyoleg.gov/Legislators/2021/R/2036
+- url: https://wyoleg.gov/Legislators/2019/R/2036
+- url: https://wyoleg.gov/Legislators/2021/R/2036
+- url: https://wyoleg.gov/Legislators/2021/R/2036
   note: homepage
+- url: https://www.wyoleg.gov/Legislators/2023/S/2036
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WYL000154
 sources:
-- url: http://wyoleg.gov/Legislators/2019/R/2036
-- url: http://wyoleg.gov/Legislators/2021/R/2036
+- url: https://www.wyoleg.gov/Legislators/2023/S/2036
+- url: https://wyoleg.gov/Legislators/2019/R/2036
+- url: https://wyoleg.gov/Legislators/2021/R/2036
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/S
 - url: https://wyoleg.gov/LsoService/api/legislator/2036
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/S

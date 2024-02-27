@@ -1,17 +1,24 @@
 id: ocd-person/d7ca6eb8-615f-4b3c-8651-3a5f86577f0a
 name: Tom France
-given_name: Tom
+given_name: Thomas
 family_name: France
+birth_date: '1951-06-15'
 gender: Male
-email: Tom.France@legmt.gov
+email: tom.france@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2021-01-04
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '94'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
+- classification: district-mail
+  address: 5900 Thornbird Lane, Missoula, MT 59808
   voice: 406-396-5085
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6877
@@ -20,5 +27,5 @@ other_names:
 - name: France, Tom
 - name: Tom France
 sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6877
 - url: https://leg.mt.gov/legislator-information/roster/individual/7510
+- url: https://leg.mt.gov/legislator-information/roster/individual/6877

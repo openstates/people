@@ -1,32 +1,34 @@
 id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
 name: Sam Jones
-given_name: Sam
+given_name: Samuel Leon
 family_name: Jones
-email: SL Jones@ballhealth.com
+birth_date: '1947-04-14'
+gender: Male
+email: sam.jones@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Jones_99.png
 party:
 - name: Democratic
 roles:
-- start_date: '2018-11-07'
+- start_date: 2018-11-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '99'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 540-C,Montgomery, AL 36130-2950
-  voice: 334-261-0963
 - classification: district
-  address: 1 Southern Way,Mobile, AL 36619
+  address: Mobile, AL 36640
+- classification: capitol
+  address: Room 540-C, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0963
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100581&OID_PERSON=8515
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100581&OID_PERSON=8515
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_names:
 - name: Jones (S)
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100581&OID_PERSON=8515
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Jones&OID_SPONSOR=100581&OID_PERSON=8515&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100581&OID_PERSON=8515
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Jones&OID_SPONSOR=100581&OID_PERSON=8515&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

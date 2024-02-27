@@ -1,26 +1,32 @@
 id: ocd-person/8f827a3b-16fe-4e09-bad0-c3e29c73d9c8
-name: Wendy Mckamey
+name: Wendy McKamey
 given_name: Wendy
-family_name: Mckamey
+family_name: McKamey
+birth_date: '1946-12-15'
 gender: Female
-email: Wendy.McKamey@legmt.gov
+email: wendy.mckamey@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '12'
 - end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '23'
-- end_date: '2023-01-02'
+- end_date: 2023-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '19'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '12'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: 33 Upper Millegan Road, Great Falls, MT 59405
   voice: 406-868-5006
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4762
   note: legislator page
@@ -28,6 +34,7 @@ links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6897
 - url: https://leg.mt.gov/legislator-information/roster/individual/7560
 other_names:
+- name: Wendy Mckamey
 - name: McKamey, Wendy
 - name: Wendy McKamey
 other_identifiers:
@@ -38,9 +45,9 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/3b9dfb11-becb-4279-99f2-3896428d264b
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7560
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5077
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6897
-- url: https://leg.mt.gov/legislator-information/roster/individual/7560

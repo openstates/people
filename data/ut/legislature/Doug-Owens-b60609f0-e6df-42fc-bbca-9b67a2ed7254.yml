@@ -2,6 +2,7 @@ id: ocd-person/b60609f0-e6df-42fc-bbca-9b67a2ed7254
 name: Doug Owens
 given_name: Doug
 family_name: Owens
+birth_date: '1963-08-14'
 gender: Male
 email: dougowens@le.utah.gov
 image: https://le.utah.gov/images/legislator/OWENSDO.jpg
@@ -18,10 +19,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '36'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
+  voice: 801-538-1650
+- classification: home
+  address: P.O. Box 91072, Millcreek, UT 84109
   voice: 385-499-3761
-- classification: district
-  address: PO Box 91072, Millcreek, UT, 84109
 links:
 - url: https://house.utah.gov/rep/OWENSDO
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=OWENSDO
@@ -41,8 +44,9 @@ other_names:
 - name: Owens, Doug
 - name: Owens, D.
 sources:
+- url: https://house.utleg.gov/rep/OWENSDO/
 - url: https://house.utah.gov/rep/OWENSDO/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/OWENSDO/
 extras:

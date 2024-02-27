@@ -2,27 +2,28 @@ id: ocd-person/94c7e249-88bb-4f83-b225-6b34f9361d0f
 name: Ira Hansen
 given_name: Ira
 family_name: Hansen
+birth_date: '1960-10-05'
 gender: Male
 email: ira.hansen@sen.state.nv.us
 image: https://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Hansen.Ira.157.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  district: '32'
-- start_date: '2019-02-04'
+- start_date: 2018-11-07
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   district: '14'
+- end_date: 2018-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '32'
 offices:
 - classification: capitol
-  address: Room 2100;c/o Nevada Senate;401 South Carson Street;Carson City, NV 89701-4747
+  address: Room 2100, Nevada Senate 401 S. Carson St., Carson City, NV 89701
   voice: 775-684-1480
-- classification: district
-  address: 68 Amigo Court;Sparks,;NV 89441-6213
   fax: 775-322-8889
+- classification: district-mail
+  address: 68 Amigo Court, Sparks, NV 89441
 links:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=157
 - url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/14
@@ -37,8 +38,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: NVL000317
 sources:
+- url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/14
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=157
 - url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current
-- url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/14
-extras:
-  title: "\r\n                                "

@@ -1,33 +1,36 @@
 id: ocd-person/e95b6e20-1207-4cdc-9875-15d14bfd72d2
 name: Rex Reynolds
-given_name: Rex
+given_name: Rex Brian
 family_name: Reynolds
-email: reynoldsdist21@gmail.com
+birth_date: '1959-06-23'
+gender: Male
+email: rex.reynolds@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Reynolds_21.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2018-03-27
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '21'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 410-D,Montgomery, AL 36130-2950
-  voice: 334-261-0571
 - classification: district
-  address: Post Office Box 18743,Huntsville, AL 35804
-  voice: 256-582-0619
+  address: Huntsville, AL
+  voice: 256-539-5441
+- classification: capitol
+  address: Room 524-D, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0571
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100501&OID_PERSON=8445
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100501&OID_PERSON=8445
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000557
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100501&OID_PERSON=8445
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Reynolds&OID_SPONSOR=100501&OID_PERSON=8445&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100501&OID_PERSON=8445
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Reynolds&OID_SPONSOR=100501&OID_PERSON=8445&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

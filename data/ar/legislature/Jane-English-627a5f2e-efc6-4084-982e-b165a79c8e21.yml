@@ -1,24 +1,28 @@
 id: ocd-person/627a5f2e-efc6-4084-982e-b165a79c8e21
 name: Jane English
-given_name: Jane
+given_name: Elizabeth Jane
 family_name: English
+birth_date: '1940-11-09'
+gender: Female
 email: jane.english@senate.ar.gov
 image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/405_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '13'
+- end_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '34'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '13'
 offices:
-- classification: district
+- classification: district-mail
   address: 3 Great Oak Court, North Little Rock, AR 72116
+  voice: 501-257-7670
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+English+-+Senate+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
 - url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2021%2FMember%20Profiles%2FSenator+English+-+Senate+Bio.pdf
@@ -27,6 +31,8 @@ links:
   note: Biography
 - url: https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+English+-+Senator+Bio.pdf
   note: Biography
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English
+- url: https://senate.arkansas.gov/senators/jane-english/
 other_names:
 - name: J. English
 ids:
@@ -43,7 +49,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Jane_English
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+English&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

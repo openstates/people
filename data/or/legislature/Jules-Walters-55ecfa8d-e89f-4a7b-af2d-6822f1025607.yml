@@ -2,21 +2,23 @@ id: ocd-person/55ecfa8d-e89f-4a7b-af2d-6822f1025607
 name: Jules Walters
 given_name: Jules
 family_name: Walters
-email: Rep.JulesWalters@oregonlegislature.gov
+gender: Female
+email: rep.juleswalters@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/walters/PublishingImages/Pages/biography/HeadshotCrop.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '37'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-489, Salem, OR, 97301
+  address: Room H-489, 900 Court St. NE, Salem, OR 97301
   voice: 503-986-1437
 links:
 - url: https://www.oregonlegislature.gov/walters
   note: homepage
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/walters
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

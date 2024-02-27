@@ -2,29 +2,31 @@ id: ocd-person/def57a9e-a907-4e62-b990-41dc19661c06
 name: Brett Easterbrook
 given_name: Brett
 family_name: Easterbrook
-email: brett.easterbrook@yahoo.com
+birth_date: '1963-10-10'
+gender: Male
+email: brett@bretteasterbrook.com
 image: https://www.legislature.state.al.us/pdf/house/members/Easterbrook_65.png
 party:
 - name: Republican
 roles:
-- start_date: '2018-11-07'
+- start_date: 2018-11-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '65'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 427-L,Montgomery, AL 36130-2950
-  voice: 334-261-0402
 - classification: district
-  address: 633 Escatawpa Road,Fruitdale, AL 36539
+  address: Fruitdale, AL 36539
+- classification: capitol
+  address: Room 526-D, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0402
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100547&OID_PERSON=8505
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100547&OID_PERSON=8505
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100547&OID_PERSON=8505
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Easterbrook&OID_SPONSOR=100547&OID_PERSON=8505&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100547&OID_PERSON=8505
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Easterbrook&OID_SPONSOR=100547&OID_PERSON=8505&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

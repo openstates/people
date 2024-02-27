@@ -2,21 +2,22 @@ id: ocd-person/d54b8dfc-7921-4f35-ad22-ad2efdaad100
 name: James Lomax
 given_name: James
 family_name: Lomax
+gender: Male
 email: jamesoliverlomax@gmail.com
 image: https://www.legislature.state.al.us/pdf/house/members/Lomax_20.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2022-11-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '20'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 525-A,Montgomery, AL 36130-2950
-  voice: 334-261-0444
 - classification: district
-  address: Post Office Box 875,Huntsville, AL 35804
+  address: P.O. Box 875, Huntsville, AL 35804
   voice: 256-503-6088
+- classification: capitol
+  address: 11 S. Union St., Montgomery, AL 36130
 links:
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage

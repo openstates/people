@@ -1,23 +1,29 @@
 id: ocd-person/ef77e3ee-eec4-4274-ae22-7b1074227740
 name: Mike Fox
-given_name: Mike
+given_name: Michael
 family_name: Fox
 gender: Male
-email: Michael.Fox@legmt.gov
+email: michael.fox@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2021-01-04
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '16'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 442, Hays, MT 59527
   voice: 406-399-0479
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4825
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6817
 - url: https://leg.mt.gov/legislator-information/roster/individual/7509
 other_names:
 - name: Fox, Mike
 sources:
-- url: https://leg.mt.gov/legislator-information/roster/individual/6817
 - url: https://leg.mt.gov/legislator-information/roster/individual/7509
+- url: https://leg.mt.gov/legislator-information/roster/individual/6817

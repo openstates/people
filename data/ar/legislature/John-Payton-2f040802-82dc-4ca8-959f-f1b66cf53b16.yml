@@ -1,31 +1,38 @@
 id: ocd-person/2f040802-82dc-4ca8-959f-f1b66cf53b16
 name: John Payton
-given_name: John
+given_name: John Russell
 family_name: Payton
+birth_date: '1967-01-22'
+gender: Male
 email: john.payton@senate.ar.gov
 image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/638_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-10'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '22'
+- end_date: 2023-01-10
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '64'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '22'
 offices:
-- classification: district
+- classification: district-mail
   address: P.O. Box 181, Wilburn, AR 72179
+  voice: 501-362-5815
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Bills/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Payton+-+Senator+Bio.pdf
   note: Biography
 - url: https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Payton+-+Senator+Bio.pdf
   note: Biography
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+Payton&ddBienniumSession=2023%2F2023R
+- url: https://senate.arkansas.gov/senators/john-payton/
 other_names:
 - name: Payton
+- name: J. Payton
 ids:
   facebook: JohnPaytonForStateSenate
 other_identifiers:
@@ -38,11 +45,11 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: John_Payton_(Arkansas)
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+Payton&ddBienniumSession=2023%2F2023R
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Payton&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults
-- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=J.+Payton&ddBienniumSession=2023%2F2023R
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2023%2F2023R#SearchResults
 extras:
   seniority: '32'

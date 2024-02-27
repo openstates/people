@@ -2,8 +2,9 @@ id: ocd-person/5cef5a01-f3ea-4c28-aa39-036449806388
 name: Walt Brooks
 given_name: Walt
 family_name: Brooks
+birth_date: '1973-01-21'
 gender: Male
-email: wbrooks@le.utah.gov
+email: walt@waltbrooks.com
 image: https://le.utah.gov/images/legislator/BROOKW.jpg
 party:
 - name: Republican
@@ -13,9 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '75'
 offices:
-- classification: district
-  address: 393 W 300 N, ST GEORGE, UT, 84770
-  voice: 435-414-2005
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
+- classification: home
+  address: 393 W. 300 North, St. George, UT 84770
+  voice: 435-817-3530
 links:
 - url: https://house.utah.gov/rep/BROOKW
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=BROOKW
@@ -48,8 +52,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000280
 sources:
+- url: https://house.utleg.gov/rep/BROOKW/
 - url: https://house.utah.gov/rep/BROOKW/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/BROOKW/
 extras:

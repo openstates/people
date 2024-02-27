@@ -2,23 +2,26 @@ id: ocd-person/7e00e45e-24bf-4939-83b8-a56a90e3ea61
 name: Ritchie Whorton
 given_name: Ritchie
 family_name: Whorton
+birth_date: '1960-03-04'
+gender: Male
 email: ritchiewhorton@gmail.com
 image: https://www.legislature.state.al.us/pdf/house/members/Whorton_22.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2014-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '22'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 427-J,Montgomery, AL 36130-2950
-  voice: 334-261-0553
 - classification: district
-  address: 134 Rock Spring Road,Owens Cross Roads, AL 35763
-  voice: 256-679-6490
+  address: 100 E. Peachtree St., Scottsboro, AL 35768
+  voice: 256-218-3090
+- classification: capitol
+  address: Room 427-J, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0553
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100502&OID_PERSON=7705
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100502&OID_PERSON=7705
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -29,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000339
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100502&OID_PERSON=7705
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Whorton&OID_SPONSOR=100502&OID_PERSON=7705&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100502&OID_PERSON=7705
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Whorton&OID_SPONSOR=100502&OID_PERSON=7705&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

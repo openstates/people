@@ -2,27 +2,33 @@ id: ocd-person/b51a470c-840d-404c-aebe-a7cb47c3edff
 name: Jeremy Trebas
 given_name: Jeremy
 family_name: Trebas
+birth_date: '1984-06-03'
 gender: Male
-email: Jeremy.Trebas@legmt.gov
+email: jeremy.trebas@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '13'
 - start_date: 2017-01-02
-  end_date: '2019-01-07'
+  end_date: 2019-01-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '25'
 - start_date: 2021-01-04
-  end_date: '2022-12-31'
+  end_date: 2022-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '26'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
-  district: '13'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 2364, Great Falls, MT 59403
   voice: 406-899-5445
+- classification: capitol-mail
+  address: Montana Senate P.O. Box 200500, Helena, MT 59620
+  voice: 406-444-4800
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4847
   note: legislator page
@@ -34,7 +40,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/f5687cc8-8712-4c26-9224-7a36b48dfd10
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7601
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/6904
-- url: https://leg.mt.gov/legislator-information/roster/individual/7601

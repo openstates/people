@@ -1,35 +1,38 @@
 id: ocd-person/df318645-047c-46a5-be61-682a7272e6b6
 name: Joe Polletta
-given_name: Joe
+given_name: Joseph
 family_name: Polletta
+birth_date: '1988-09-01'
 gender: Male
-email: Joe.Polletta@housegop.ct.gov
+email: joe.polletta@housegop.ct.gov
 image: https://www.cthousegop.com/polletta/wp-content/uploads/sites/74/2017/04/Polletta-Web-Bio.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-05-01
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '68'
 offices:
 - classification: capitol
-  address: Legislative Office Building Room 4200; Hartford, CT 06106-1591
+  address: Room 4200, Legislative Office Building 300 Capitol Ave., Hartford, CT 6106
   voice: 860-240-8700
-- classification: district
-  address: 25 Lakeview Drive; Watertown, CT 06795
 links:
-- url: http://www.cthousegop.com/Polletta/
+- url: https://www.cthousegop.com/Polletta/
 - url: https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27068%27&dist_name=Polletta,%20Joe
+- url: https://www.cthousegop.com/Polletta/main/
 other_names:
 - name: Polletta, Joe
 other_identifiers:
 - scheme: legacy_openstates
   identifier: CTL000361
 sources:
+- url: https://www.cthousegop.com/Polletta/main/
 - url: ftp://ftp.cga.ct.gov/pub/data/LegislatorDatabase.csv
 extras:
   gender: Male
   title: Senior House Republican Whip
-  committees: Finance, Revenue and Bonding; Human Services; Housing; Public Safety and Security
+  committees: Finance, Revenue and Bonding; Human Services; Housing; Public Safety
+    and Security
   committee codes: ;FIN;HS;HSG;PS;
   prison: '0'

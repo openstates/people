@@ -2,17 +2,23 @@ id: ocd-person/1e64880a-672d-4b71-a2e6-f95c41193953
 name: Fred Anderson
 given_name: Fred
 family_name: Anderson
+birth_date: '1944-06-16'
 gender: Male
-email: Fred.Anderson@legmt.gov
+email: fred.anderson@legmt.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '20'
 offices:
-- classification: capitol
-  voice: 406-761-4042
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
+- classification: district-mail
+  address: Great Falls, MT 59405
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4763
   note: legislator page
@@ -25,9 +31,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000405
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7617
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5078
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6898
-- url: https://leg.mt.gov/legislator-information/roster/individual/7617

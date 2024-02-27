@@ -2,31 +2,33 @@ id: ocd-person/3b1a631d-35d4-47bd-a37c-a98fed7a5bd4
 name: Corley Ellis
 given_name: Corley
 family_name: Ellis
+gender: Male
 email: corley.ellis@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Ellis_41.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2017-02-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '41'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 404,Montgomery, AL 36130-2950
-  voice: 334-261-0560
 - classification: district
-  address: Post Office Box 1177,Columbiana, AL 35051
+  address: P.O. Box 1177, Columbiana, AL 35051
+- classification: capitol
+  address: Room 404, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0560
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100522&OID_PERSON=8129
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100522&OID_PERSON=8129
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000552
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100522&OID_PERSON=8129
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Ellis&OID_SPONSOR=100522&OID_PERSON=8129&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100522&OID_PERSON=8129
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Ellis&OID_SPONSOR=100522&OID_PERSON=8129&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

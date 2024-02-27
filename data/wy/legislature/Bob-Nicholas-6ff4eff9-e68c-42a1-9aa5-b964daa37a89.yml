@@ -1,35 +1,42 @@
 id: ocd-person/6ff4eff9-e68c-42a1-9aa5-b964daa37a89
 name: Bob Nicholas
-given_name: Bob
+given_name: Robert A.
 family_name: Nicholas
-email: Bob.Nicholas@wyoleg.gov
-birth_date: 1957-10-14
+birth_date: '1957-10-14'
+gender: Male
+email: bob.nicholas@wyoleg.gov
 image: https://wyoleg.gov/LegislatorSummary/Photos/67th-NicholasBob.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-02'
+- start_date: 2023-01-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '7'
+- end_date: 2023-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '8'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
-  district: '7'
 offices:
-- classification: district
+- classification: home
   address: 6225 Mountainview Drive, Cheyenne, WY 82009
   voice: 307-634-6057
+  fax: 307-635-7155
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 links:
-- url: http://wyoleg.gov/Legislators/2019/R/1980
-- url: http://wyoleg.gov/Legislators/2021/R/1980
-- url: http://wyoleg.gov/Legislators/2021/R/1980
+- url: https://wyoleg.gov/Legislators/2019/R/1980
+- url: https://wyoleg.gov/Legislators/2021/R/1980
+- url: https://wyoleg.gov/Legislators/2021/R/1980
   note: homepage
+- url: https://www.wyoleg.gov/Legislators/2023/H/1980
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WYL000073
 sources:
-- url: http://wyoleg.gov/Legislators/2019/R/1980
-- url: http://wyoleg.gov/Legislators/2021/R/1980
+- url: https://www.wyoleg.gov/Legislators/2023/H/1980
+- url: https://wyoleg.gov/Legislators/2019/R/1980
+- url: https://wyoleg.gov/Legislators/2021/R/1980
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/H
 - url: https://wyoleg.gov/LsoService/api/legislator/1980
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/H

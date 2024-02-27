@@ -18,11 +18,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '40'
 offices:
-- classification: capitol
-  address: 350 North State St. Suite 320, SALT LAKE CITY, UT, 84114
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
+- classification: home
+  address: 2830 S. Glenmare St., Salt Lake City, UT 84106
   voice: 385-272-8032
-- classification: district
-  address: 2830 S GLENMARE ST, SALT LAKE CITY, UT, 84106
 links:
 - url: https://house.utah.gov/rep/PITCHS
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PITCHS
@@ -45,11 +47,11 @@ other_names:
 - name: Pitcher, S.
 - name: Pitcher, Stephanie
 sources:
+- url: https://senate.utah.gov/sen/PITCHS/
 - url: https://house.utah.gov/rep/PITCHS/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/PITCHS/
-- url: https://senate.utah.gov/sen/PITCHS/
 extras:
   service start: January 1, 2019
   counties represented:

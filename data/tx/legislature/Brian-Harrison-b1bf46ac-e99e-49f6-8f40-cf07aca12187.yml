@@ -1,19 +1,25 @@
 id: ocd-person/b1bf46ac-e99e-49f6-8f40-cf07aca12187
 name: Brian Harrison
-given_name: Brian
+given_name: Brian Edward
 family_name: Harrison
 gender: Male
+email: brian.harrison@house.texas.gov
 image: https://house.texas.gov/members/photos/4085.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2021-10-12
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '10'
 offices:
-- classification: capitol
-  address: Room E2.704 P.O. Box 2910 Austin, TX 78768
-  voice: 512-463-0516
 - classification: district
-  address: 100 N College Street, Suite 306 Waxahachie, TX 75165
+  address: 100 N. College St., Suite 306, Waxahachie, TX 75165
   voice: 972-923-0264
+- classification: capitol-mail
+  address: Room E2.704, P.O. Box 2910, Austin, TX 78768
+  voice: 512-463-0516
+links:
+- url: https://house.texas.gov/members/member-page/?district=10
+sources:
+- url: https://house.texas.gov/members/member-page/?district=10

@@ -2,23 +2,26 @@ id: ocd-person/902f0f81-a34c-4714-a3eb-bf563abbea96
 name: Terri Collins
 given_name: Terri
 family_name: Collins
+birth_date: '1958-05-06'
+gender: Female
 email: terri@terricollins.org
 image: https://www.legislature.state.al.us/pdf/house/members/Collins_8.png
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2010-11-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '8'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 427-A,Montgomery, AL 36130-2950
+  address: Room 427-A, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0472
 - classification: district
-  address: 2128 6th Avenue, SE, Suite 504,Decatur, AL 35602
-  voice: 256-260-2146
+  address: P.O. Box 21, Decatur, AL 35602
+  voice: 256-227-0360
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100488&OID_PERSON=6661
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100488&OID_PERSON=6661
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 other_identifiers:
@@ -29,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000377
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100488&OID_PERSON=6661
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Collins&OID_SPONSOR=100488&OID_PERSON=6661&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100488&OID_PERSON=6661
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Collins&OID_SPONSOR=100488&OID_PERSON=6661&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

@@ -2,21 +2,23 @@ id: ocd-person/20f31b04-63fd-45a8-8075-5e6e1beae485
 name: Lucetta Elmer
 given_name: Lucetta
 family_name: Elmer
-email: Rep.LucettaElmer@oregonlegislature.gov
+gender: Female
+email: rep.lucettaelmer@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/elmer/PublishingImages/member_photo.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '24'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-374, Salem, OR, 97301
+  address: Room H-374, 900 Court St. NE, Salem, OR 97301
   voice: 503-986-1424
 links:
 - url: https://www.oregonlegislature.gov/elmer
   note: homepage
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/elmer
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

@@ -1,23 +1,29 @@
 id: ocd-person/8ddb8078-482c-4df5-983d-ece9e5825cc2
 name: Bob Davis
-given_name: Bob
+given_name: Robert
 family_name: Davis
-email: Bob.Davis@wyoleg.gov
+gender: Male
+email: bob.davis@wyoleg.gov
 image: https://wyoleg.gov/LegislatorSummary/Photos/67th-DavisBob.jpg
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2023-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '47'
 offices:
-- classification: district
-  address: PO Box 369, Baggs, WY 82321
+- classification: home
+  address: P.O. Box 369, Baggs, WY 82321
   voice: 307-380-6457
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 links:
-- url: http://wyoleg.gov/Legislators/2021/R/2110
+- url: https://wyoleg.gov/Legislators/2021/R/2110
   note: homepage
+- url: https://www.wyoleg.gov/Legislators/2023/H/2110
 sources:
+- url: https://www.wyoleg.gov/Legislators/2023/H/2110
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/H
 - url: https://wyoleg.gov/LsoService/api/legislator/2110
 extras:

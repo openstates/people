@@ -1,35 +1,38 @@
 id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
-name: Jack W. Williams
+name: Jack Williams
 given_name: Jack W.
 family_name: Williams
+gender: Male
 email: jackwilliams55@icloud.com
 image: https://www.legislature.state.al.us/pdf/senate/members/Williams_34.png
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-07'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  district: '102'
-- start_date: '2018-11-07'
+- start_date: 2018-11-07
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '34'
+- end_date: 2018-11-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '102'
 offices:
 - classification: capitol
-  address: 11 S Union Street,Suite 734,Montgomery, AL 36130
+  address: Room 734, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0829
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100477&OID_PERSON=7707
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100477&OID_PERSON=7707
 - url: https://alison.legislature.state.al.us/senate-leaders-members
   note: homepage
+other_names:
+- name: Jack W. Williams
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000250
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100477&OID_PERSON=7707
-- url: http://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Williams&OID_SPONSOR=100477&OID_PERSON=7707&SESSNAME=Regular%20Session%202022
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?OID_SPONSOR=100477&OID_PERSON=7707
+- url: https://www.legislature.state.al.us/aliswww/ISD/Senate/ALSenators.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALSenator.aspx?NAME=Williams&OID_SPONSOR=100477&OID_PERSON=7707&SESSNAME=Regular%20Session%202022
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

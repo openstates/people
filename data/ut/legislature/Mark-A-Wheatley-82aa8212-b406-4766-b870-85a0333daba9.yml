@@ -13,10 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '35'
 offices:
-- classification: capitol
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1650
+- classification: home
+  address: UT
   voice: 801-556-4862
-- classification: district
-  address: 350 North State, Suite 350, Salt Lake City, UT, 84114
 links:
 - url: https://house.utah.gov/rep/WHEATMA
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=WHEATMA
@@ -58,8 +60,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000189
 sources:
+- url: https://house.utleg.gov/rep/WHEATMA/
 - url: https://house.utah.gov/rep/WHEATMA/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/WHEATMA/
 extras:

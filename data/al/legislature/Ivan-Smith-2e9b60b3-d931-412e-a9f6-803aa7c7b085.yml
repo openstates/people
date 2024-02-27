@@ -1,30 +1,33 @@
 id: ocd-person/2e9b60b3-d931-412e-a9f6-803aa7c7b085
-name: Ivan Smith
+name: Van Smith
 given_name: Ivan
 family_name: Smith
-email: vansmith53@gmail.com
+gender: Male
+email: ivan.smith@alhouse.gov
 image: https://www.legislature.state.al.us/pdf/house/members/Smith_42.png
 party:
 - name: Republican
 roles:
-- start_date: '2019-11-05'
+- start_date: 2019-11-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '42'
 offices:
-- classification: capitol
-  address: 11 South Union Street,Suite 423,Montgomery, AL 36130-2950
-  voice: 334-261-0459
 - classification: district
-  address: 2223 County Road 19, North,Prattville, AL 36067
+  address: 2223 County Road 19 North, Prattville, AL 36067
+- classification: capitol
+  address: Room 531, 11 S. Union St., Montgomery, AL 36130
+  voice: 334-261-0459
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
+other_names:
+- name: Ivan Smith
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

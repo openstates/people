@@ -17,10 +17,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '27'
 offices:
-- classification: capitol
-  voice: 435-748-2828
-- classification: district
-  address: PO Box 383, Ferron , UT, 84523
+- classification: home
+  address: P.O. Box 485, Orangeville, UT 84537
+  voice: 435-384-5550
+  fax: 435-748-2089
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
 links:
 - url: https://senate.utah.gov/david-hinkins
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=HINKIDP
@@ -45,9 +49,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000214
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/HINKIDP/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: January 1, 2009
   profession: Electrician

@@ -1,23 +1,26 @@
 id: ocd-person/3cac81cd-62ca-41d6-aa4a-8e4156244dec
 name: John Smithee
-given_name: John
+given_name: John True
 family_name: Smithee
+birth_date: '1951-09-07'
 gender: Male
+email: john.smithee@house.texas.gov
 image: https://house.texas.gov/members/photos/4530.jpg?v=88.25
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 1985-01-08
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '86'
 offices:
-- classification: capitol
-  address: Room 1W.10 P.O. Box 2910 Austin, TX 78768
+- classification: capitol-mail
+  address: Room 1W.10, P.O. Box 2910, Austin, TX 78768
   voice: 512-463-0702
+  fax: 512-476-7016
 - classification: district
-  address: 320 S. Polk, 1st Floor Amarillo, TX 79101
+  address: 320 S. Polk 1st Floor, Lobby Box 28, Amarillo, TX 79101
   voice: 806-372-3327
-  fax: 806-342-0327
 links:
 - url: https://house.texas.gov/members/member-page/?district=86
 other_names:

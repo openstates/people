@@ -1,25 +1,28 @@
 id: ocd-person/f009d442-b840-4308-b48e-f38591e5d0d4
-name: David Wallace
-given_name: David
+name: Dave Wallace
+given_name: David Ray
 family_name: Wallace
+birth_date: '1948-11-24'
 gender: Male
-email: David.Wallace@senate.ar.gov
+email: david.wallace@senate.ar.gov
 image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/518_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '19'
+- end_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '22'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '19'
 offices:
-- classification: district
+- classification: district-mail
   address: P.O. Box 11, Leachville, AR 72438
+  voice: 870-919-8046
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+Wallace+-+Senate+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
 - url: https://www.daveforarkansas.com/
@@ -28,7 +31,10 @@ links:
   note: Biography
 - url: https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Wallace+-+Senator+Bio.pdf
   note: Biography
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace
+- url: https://senate.arkansas.gov/senators/david-wallace/
 other_names:
+- name: David Wallace
 - name: D. Wallace
 ids:
   twitter: SenDaveWallace
@@ -44,7 +50,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Dave_Wallace_(Arkansas)
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=D.+Wallace&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

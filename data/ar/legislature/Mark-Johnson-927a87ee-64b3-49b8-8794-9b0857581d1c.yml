@@ -2,24 +2,26 @@ id: ocd-person/927a87ee-64b3-49b8-8794-9b0857581d1c
 name: Mark Johnson
 given_name: Mark
 family_name: Johnson
+gender: Male
 email: mark.johnson@senate.ar.gov
 image: https://www.arkleg.state.ar.us/Content/photos/2023/Senate/574_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '15'
-- start_date: '2023-01-09'
+- start_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '17'
+- end_date: 2023-01-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '15'
 offices:
-- classification: district
+- classification: district-mail
   address: P.O. Box 241022, Little Rock, AR 72223
+  voice: 501-682-2920
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Document?id=&filename=Senator+Mark+Johnson++-+Senate+Bio.pdf&source=Member+Profiles&ddBienniumSession=2021
 - url: https://www.markjohnsonforarkansas.com
@@ -30,6 +32,8 @@ links:
   note: Biography
 - url: https://www.arkleg.state.ar.us/Home/FTPDocument?path=%2FAssembly%2F2023%2FMember%20Profiles%2FSenator+Mark+Johnson+-+Senator+Bio.pdf
   note: Biography
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson
+- url: https://senate.arkansas.gov/senators/mark-johnson/
 other_names:
 - name: M. Johnson
 ids:
@@ -42,7 +46,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Mark_Johnson_(Arkansas)
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=M.+Johnson&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

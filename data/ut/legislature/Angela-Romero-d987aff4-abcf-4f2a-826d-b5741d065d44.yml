@@ -17,10 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '26'
 offices:
-- classification: capitol
-  voice: 801-722-4972
+- classification: capitol-mail
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1650
 - classification: district
   address: PO BOX 25732, SALT LAKE CITY, UT, 84125
+  voice: 801-722-4972
 links:
 - url: https://house.utah.gov/rep/ROMERAY
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ROMERAY
@@ -57,8 +59,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000172
 sources:
+- url: https://house.utleg.gov/rep/ROMERAY/
 - url: https://house.utah.gov/rep/ROMERAY/
-- url: http://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 - url: https://le.utah.gov/data/legislators.json
 - url: http://house.utah.gov/rep/ROMERAY/
 extras:

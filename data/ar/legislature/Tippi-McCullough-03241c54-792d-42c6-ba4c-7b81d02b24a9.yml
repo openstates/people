@@ -1,25 +1,30 @@
 id: ocd-person/03241c54-792d-42c6-ba4c-7b81d02b24a9
 name: Tippi McCullough
-given_name: Tippi
+given_name: Tippi Lynn
 family_name: McCullough
+gender: Female
 email: tippi.mccullough@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/570_sm.jpg
 party:
 - name: Democratic
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '74'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '33'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '74'
 offices:
-- classification: district
+- classification: district-mail
   address: P.O. Box 250256, Little Rock, AR 72225
+  voice: 501-766-3177
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2021%2F2021R
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough
+- url: https://www.arkansashouse.org/district/74
 other_names:
 - name: McCullough
 ids:
@@ -33,7 +38,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Tippi_McCullough
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=McCullough&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List?sort=Type&by=desc&ddBienniumSession=2021%2F2021S1#SearchResults

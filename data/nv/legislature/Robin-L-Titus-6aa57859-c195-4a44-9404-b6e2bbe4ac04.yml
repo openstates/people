@@ -1,26 +1,28 @@
 id: ocd-person/6aa57859-c195-4a44-9404-b6e2bbe4ac04
-name: Robin L. Titus
-given_name: Robin
+name: Robin Titus
+given_name: Robin L.
 family_name: Titus
+birth_date: '1954-02-21'
 gender: Female
 email: robin.titus@sen.state.nv.us
 image: https://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Titus.Robin.281.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-09'
+- start_date: 2022-11-09
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
+  district: '17'
+- end_date: 2022-11-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nv/government
   district: '38'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:nv/government
-  district: '17'
 offices:
 - classification: capitol
-  address: Room 2101;c/o Nevada Senate;401 South Carson Street;Carson City, NV 89701-4747
+  address: Room 2101, Nevada Senate 401 S. Carson St., Carson City, NV 89701
   voice: 775-684-1470
-- classification: district
-  address: P.O. Box 377;Wellington,;NV 89444-0377
+- classification: district-mail
+  address: P.O. Box 377, Wellington, NV 89444
   voice: 775-901-3844
 links:
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=281
@@ -29,6 +31,7 @@ links:
 - url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/17
   note: homepage
 other_names:
+- name: Robin L. Titus
 - name: Robin Titus
 other_identifiers:
 - scheme: legacy_openstates
@@ -36,10 +39,8 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: NVL000335
 sources:
+- url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/17
 - url: https://www.leg.state.nv.us/App/Legislator/A/api/81st2021/Legislator?id=281
 - url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current
 - url: https://www.leg.state.nv.us/App/Legislator/A/Assembly/Current/38
 - url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current
-- url: https://www.leg.state.nv.us/App/Legislator/A/Senate/Current/17
-extras:
-  title: "\r\n                                "

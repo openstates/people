@@ -2,21 +2,23 @@ id: ocd-person/6adb2361-6526-450f-b2b1-e9f32311ca7d
 name: Mark Gamba
 given_name: Mark
 family_name: Gamba
-email: Rep.MarkGamba@oregonlegislature.gov
+gender: Male
+email: rep.markgamba@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/gamba/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2023-01-09
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '41'
 offices:
 - classification: capitol
-  address: 900 Court St NE, H-477, Salem, OR, 97301
+  address: Room H-477, 900 Court St. NE, Salem, OR 97301
   voice: 503-986-1441
 links:
 - url: https://www.oregonlegislature.gov/gamba
   note: homepage
 sources:
-- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://www.oregonlegislature.gov/gamba
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators

@@ -1,27 +1,31 @@
 id: ocd-person/8c8517c3-75ee-4b27-8d8c-3444c036ba78
 name: Casey Murdock
-given_name: Casey
+given_name: William Casey
 family_name: Murdock
+gender: Male
+email: murdock@oksenate.gov
 image: https://oksenate.gov/sites/default/files/murdock.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2018-02-26
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '27'
 - start_date: 2015-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
   district: '61'
-- type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
-  district: '27'
 offices:
 - classification: capitol
-  address: 2300 N. Lincoln Blvd., Rm. 431 Oklahoma City, OK 73105
+  address: Room 431, 2300 N. Lincoln Blvd., Oklahoma City, OK 73105
   voice: 405-521-5626
 links:
-- url: http://oksenate.gov/Senators/biographies/murdock_bio.aspx
+- url: https://oksenate.gov/Senators/biographies/murdock_bio.aspx
 - url: https://oksenate.gov/contact-senator?sid=1862
   note: Contact Form
+- url: https://oksenate.gov/senators/casey-murdock
 other_identifiers:
 - scheme: legacy_openstates
   identifier: OKL000328
@@ -30,7 +34,8 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/b80f171a-cf10-485b-822d-06d7e98bbb8a
 sources:
-- url: http://oksenate.gov/Senators/biographies/murdock_bio.aspx
-- url: http://oksenate.gov/Senators/biographies/murdock_bio.html
+- url: https://oksenate.gov/senators/casey-murdock
+- url: https://oksenate.gov/Senators/biographies/murdock_bio.aspx
+- url: https://oksenate.gov/Senators/biographies/murdock_bio.html
 extras:
   email: murdock@oksenate.gov

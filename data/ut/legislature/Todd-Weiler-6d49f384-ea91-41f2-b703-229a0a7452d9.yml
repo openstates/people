@@ -2,6 +2,7 @@ id: ocd-person/6d49f384-ea91-41f2-b703-229a0a7452d9
 name: Todd Weiler
 given_name: Todd
 family_name: Weiler
+birth_date: '1967-05-04'
 gender: Male
 email: tweiler@le.utah.gov
 image: https://le.utah.gov/images/legislator/WEILET.jpg
@@ -17,9 +18,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '23'
 offices:
-- classification: district
-  address: 1248 W 1900 S, Woods Cross, UT, 84087
+- classification: home
+  address: 1248 W. 1900 South, Woods Cross, UT 84087
   voice: 801-599-9823
+  fax: 801-525-5327
+- classification: capitol-mail
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+  fax: 801-326-1475
 links:
 - url: https://senate.utah.gov/todd-weiler
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=WEILET
@@ -45,9 +51,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000200
 sources:
-- url: http://le.utah.gov/data/legislators.json
-- url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/WEILET/
+- url: https://le.utah.gov/data/legislators.json
+- url: https://le.utah.gov/data/legislators.json
 extras:
   service start: Appointed January 13, 2012
   profession: Attorney

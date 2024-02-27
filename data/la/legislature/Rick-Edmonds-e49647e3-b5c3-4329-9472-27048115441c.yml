@@ -1,23 +1,28 @@
 id: ocd-person/e49647e3-b5c3-4329-9472-27048115441c
 name: Rick Edmonds
-given_name: Rick
+given_name: Richard Phillip
 family_name: Edmonds
-email: edmondsr@legis.la.gov
-image: https://house.louisiana.gov/H_Reps/RepPics20/rep66.jpg
+gender: Male
+email: sen06@legis.la.gov
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2024-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:la/government
+  district: '6'
+- end_date: 2024-01-07
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '66'
 offices:
 - classification: district
-  address: 3931 S. Sherwood Forest Blvd., Suite 200 Baton Rouge, LA 70816
+  address: 3931 S. Sherwood Forest Blvd. Suite 200, Baton Rouge, LA 70816
   voice: 225-295-9240
-  fax: 225-295-9242
 links:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=66
   note: homepage
+- url: https://senate.la.gov/smembers?ID=6
 other_identifiers:
 - scheme: legacy_openstates
   identifier: LAL000819
@@ -26,6 +31,7 @@ other_identifiers:
 sources:
 - url: https://house.louisiana.gov/H_Reps/members.aspx?ID=66
 - url: https://house.louisiana.gov/H_Reps/H_Reps_FullInfo
+- url: https://senate.la.gov/smembers?ID=6
 extras:
   legislative assistant: Zoe McRaney and Mason Batts
   representing parishes:

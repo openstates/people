@@ -1,31 +1,33 @@
 id: ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e
 name: Wes Kitchens
-given_name: Wes
+given_name: Wesley Thomas
 family_name: Kitchens
+birth_date: '1989-03-04'
+gender: Male
 email: weskitchens@mclo.org
-image: https://www.legislature.state.al.us/pdf/house/members/Kitchens_27.png
 party:
 - name: Republican
 roles:
-- start_date: '2018-11-07'
+- start_date: 2024-01-23
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+  district: '9'
+- start_date: 2018-11-07
+  end_date: 2024-01-22
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '27'
 offices:
 - classification: capitol
-  address: 11 South Union Street,Suite 433,Montgomery, AL 36130-2950
-  voice: 334-261-0539
-- classification: district
-  address: 412-A Gunter Avenue,Guntersville, AL 35976
-  voice: 256-582-0619
+  address: 11 S. Union St., Montgomery, AL 36130
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Kitchens&OID_SPONSOR=100507&OID_PERSON=8496&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100507&OID_PERSON=8496
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Kitchens&OID_SPONSOR=100507&OID_PERSON=8496&SESSNAME=
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 extras:

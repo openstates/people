@@ -2,23 +2,29 @@ id: ocd-person/2920db4d-9f68-411a-bd01-9ca6e9089ef7
 name: Jon Milligan
 given_name: Jon
 family_name: Milligan
+gender: Male
 email: jonmilligan@ymail.com
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/590_sm.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2023-01-09'
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '33'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '53'
-- type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '33'
 offices:
-- classification: district
+- classification: district-mail
   address: 300 County Road 803, Lake City, AR 72437
+  voice: 870-219-1261
 links:
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Milligan&ddBienniumSession=2021%2F2021R
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Milligan
+- url: https://www.arkansashouse.org/district/33
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Milligan&ddBienniumSession=2023%2F2023R
 other_names:
 - name: Milligan
 ids:
@@ -31,6 +37,7 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Jon_Milligan
 sources:
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Milligan
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Milligan&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Milligan&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List

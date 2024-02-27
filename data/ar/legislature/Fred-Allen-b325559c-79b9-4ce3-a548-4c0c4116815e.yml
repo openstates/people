@@ -8,25 +8,28 @@ image: https://www.arkleg.state.ar.us/Content/photos/2023/House/519_sm.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '77'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '33'
-- end_date: '2023-01-09'
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '30'
-- start_date: '2023-01-09'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
-  district: '77'
 offices:
-- classification: district
+- classification: district-mail
   address: 19 Dover Drive, Little Rock, AR 72204
+  voice: 501-804-7844
 links:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen
+- url: https://www.arkansashouse.org/district/77
 other_names:
 - name: F. Allen
 ids:
@@ -45,7 +48,8 @@ other_identifiers:
 - scheme: ballotpedia
   identifier: Fred_Allen
 sources:
-- url: http://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021R
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=F.+Allen&ddBienniumSession=2021%2F2021S1
 - url: https://www.arkleg.state.ar.us/Legislators/List
@@ -58,4 +62,5 @@ extras:
   occupation: Contractor/Photographer
   church affiliation: Baptist
   veteran: 'No'
-  public service: House 2007,  2009,  2011,   2017,  Assistant Speaker Pro Tempore 2019
+  public service: House 2007,  2009,  2011,   2017,  Assistant Speaker Pro Tempore
+    2019

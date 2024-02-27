@@ -2,17 +2,24 @@ id: ocd-person/df262d31-e1ec-4411-b316-4176a5f494d2
 name: Jim Hamilton
 given_name: Jim
 family_name: Hamilton
+birth_date: '1959-08-29'
 gender: Male
-email: Jim.Hamilton@legmt.gov
+email: jim.hamilton@legmt.gov
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2017-01-02
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '61'
 offices:
-- classification: capitol
+- classification: district-mail
+  address: P.O. Box 1768, Bozeman, MT 59771
   voice: 406-570-7517
+- classification: capitol-mail
+  address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
+  voice: 406-444-4800
+  fax: 406-444-4862
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/4803
   note: legislator page
@@ -25,9 +32,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000384
 sources:
+- url: https://leg.mt.gov/legislator-information/roster/individual/7523
 - url: https://leg.mt.gov/legislator-information/?session_select=111
   note: legislator list page
 - url: https://leg.mt.gov/legislator-information/roster/individual/5120
 - url: https://leg.mt.gov/legislator-information/?session_select=113
 - url: https://leg.mt.gov/legislator-information/roster/individual/6830
-- url: https://leg.mt.gov/legislator-information/roster/individual/7523
