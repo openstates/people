@@ -14,14 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: First Bristol and Plymouth
 offices:
-- classification: district
-  address: Room 235, 1 Government Center, Fall River, MA 2722
-  voice: 508-646-0650
-  fax: 508-646-0656
 - classification: capitol
-  address: Room 212, State House 24 Beacon St., Boston, MA 2133
+  address: Room 212, State House 24 Beacon St., Boston, MA 02133
   voice: 617-722-1114
   fax: 617-722-1498
+- classification: district
+  address: Room 235, 1 Government Center, Fall River, MA 02722
+  voice: 508-646-0650
+  fax: 508-646-0656
 links:
 - url: https://malegislature.gov/Legislators/Profile/MJR0
 - url: https://www.senatorrodrigues.com/
@@ -35,11 +35,16 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MAL000266
 sources:
-- url: https://malegislature.gov/Legislators/Profile/MJR0
-- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJR0
 - url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/
-- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/MJR0
 - url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/
+- url: https://malegislature.gov/Legislators/Profile/MJR0
+- url: https://www.senatorrodrigues.com
+- url: https://en.wikipedia.org/wiki/Michael_Rodrigues_(politician)
+- url: https://ballotpedia.org/Michael_Rodrigues
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers/MJR0
+- url: https://malegislature.gov/api/GeneralCourts/192/LegislativeMembers
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers/MJR0
+- url: https://malegislature.gov/api/GeneralCourts/193/LegislativeMembers
 extras:
   leadership position: Senate Ways and Means Chair
   member code: MJR0
