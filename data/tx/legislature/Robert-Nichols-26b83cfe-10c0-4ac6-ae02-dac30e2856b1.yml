@@ -14,21 +14,21 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '3'
 offices:
+- classification: capitol-mail
+  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
+  voice: 512-463-0103
 - classification: district
   address: 202 E. Pilar St. Suite 309, Nacogdoches, TX 75961
   voice: 936-564-4252
   fax: 936-564-4276
 - classification: district
-  address: 329 Neches St., Jacksonville, TX 75766
-  voice: 903-589-3003
-  fax: 903-589-0203
-- classification: district
   address: 2915 Atkinson Drive, Lufkin, TX 75901
   voice: 936-699-4988
   fax: 936-699-4991
-- classification: capitol-mail
-  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
-  voice: 512-463-0103
+- classification: district
+  address: 329 Neches St., Jacksonville, TX 75766
+  voice: 903-589-3003
+  fax: 903-589-0203
 - classification: district
   address: 769 S. Main St. Suite 100, Lumberton, TX 77657
   voice: 409-755-9893
@@ -41,4 +41,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000018
 sources:
+- url: https://ballotpedia.org/Robert_Nichols_(Texas)
+- url: https://en.wikipedia.org/wiki/Robert_Nichols_(politician)
+- url: https://justfacts.votesmart.org/candidate/biography/59338/robert-nichols
 - url: https://senate.texas.gov/member.php?d=3
