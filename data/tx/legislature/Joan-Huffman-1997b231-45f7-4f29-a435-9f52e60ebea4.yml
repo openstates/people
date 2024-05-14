@@ -14,8 +14,9 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '17'
 offices:
-- classification: district-mail
-  address: P.O. Box 541774, Houston, TX 77254
+- classification: capitol-mail
+  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
+  voice: 512-463-0117
 - classification: district
   address: 129 Circle Way Suite 101, Lake Jackson, TX 77566
   voice: 979-480-0994
@@ -23,9 +24,8 @@ offices:
 - classification: district
   address: 16010 Barkers Point Lane Suite 265, Houston, TX 77079
   voice: 281-497-2450
-- classification: capitol-mail
-  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
-  voice: 512-463-0117
+- classification: district-mail
+  address: P.O. Box 541774, Houston, TX 77254
 links:
 - url: https://senate.texas.gov/member.php?d=17
 other_identifiers:
@@ -34,4 +34,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TXL000014
 sources:
+- url: https://ballotpedia.org/Joan_Huffman
+- url: https://en.wikipedia.org/wiki/Joan_Huffman
+- url: https://justfacts.votesmart.org/candidate/biography/110896/joan-huffman
 - url: https://senate.texas.gov/member.php?d=17
