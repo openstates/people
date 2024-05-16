@@ -4,7 +4,7 @@ given_name: Matthew
 family_name: Woods
 gender: Male
 email: matt.woods@alhouse.gov
-image: https://www.legislature.state.al.us/pdf/house/members/Woods_13.png
+image: https://storage.googleapis.com/enview-public-general/legislative-people-photos/122297.jpg
 party:
 - name: Republican
 roles:
@@ -13,16 +13,18 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '13'
 offices:
+- classification: capitol
+  address: 11 S. Union St., Montgomery, AL 36130
 - classification: district
   address: P.O. Box 1627, Jasper, AL 35502
   voice: 334-261-0495
-- classification: capitol
-  address: 11 S. Union St., Montgomery, AL 36130
 links:
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 sources:
+- url: https://ballotpedia.org/Matt_Woods
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
+- url: https://www.linkedin.com/in/matthew-woods-20680883
 extras:
   counties: Walker County

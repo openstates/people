@@ -4,7 +4,7 @@ given_name: Bill
 family_name: Lamb
 gender: Male
 email: lambbama@gmail.com
-image: https://www.legislature.state.al.us/pdf/house/members/Lamb_62.png
+image: https://storage.googleapis.com/enview-public-general/legislative-people-photos/122312.jpg
 party:
 - name: Republican
 roles:
@@ -13,16 +13,18 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '62'
 offices:
+- classification: capitol
+  address: 11 S. Union St., Montgomery, AL 36130
 - classification: district
   address: 7402 Marigold Lane, Tuscaloosa, AL 35405
   voice: 205-361-5262
-- classification: capitol
-  address: 11 S. Union St., Montgomery, AL 36130
 links:
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 sources:
+- url: https://ballotpedia.org/Bill_Lamb
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
+- url: https://www.linkedin.com/in/bill-lamb-380b0178
 extras:
   counties: Tuscaloosa County
