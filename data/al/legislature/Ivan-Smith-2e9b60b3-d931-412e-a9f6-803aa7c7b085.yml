@@ -4,7 +4,7 @@ given_name: Ivan
 family_name: Smith
 gender: Male
 email: ivan.smith@alhouse.gov
-image: https://www.legislature.state.al.us/pdf/house/members/Smith_42.png
+image: https://storage.googleapis.com/enview-public-general/legislative-people-photos/83711.jpg
 party:
 - name: Republican
 roles:
@@ -13,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '42'
 offices:
-- classification: district
-  address: 2223 County Road 19 North, Prattville, AL 36067
 - classification: capitol
   address: Room 531, 11 S. Union St., Montgomery, AL 36130
   voice: 334-261-0459
+- classification: district
+  address: 2223 County Road 19 North, Prattville, AL 36067
 links:
 - url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
 - url: https://alison.legislature.state.al.us/house-leaders-members
@@ -25,10 +25,11 @@ links:
 other_names:
 - name: Ivan Smith
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
-- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://ballotpedia.org/Van_Smith
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=
+- url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?NAME=Smith&OID_SPONSOR=105207&OID_PERSON=8811&SESSNAME=Regular%20Session%202021
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 extras:
   counties: Autauga County, Chilton County

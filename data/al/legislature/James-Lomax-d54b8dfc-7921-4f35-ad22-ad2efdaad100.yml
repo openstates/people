@@ -4,7 +4,7 @@ given_name: James
 family_name: Lomax
 gender: Male
 email: jamesoliverlomax@gmail.com
-image: https://www.legislature.state.al.us/pdf/house/members/Lomax_20.png
+image: https://storage.googleapis.com/enview-public-general/legislative-people-photos/122298.jpg
 party:
 - name: Republican
 roles:
@@ -13,16 +13,18 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '20'
 offices:
+- classification: capitol
+  address: 11 S. Union St., Montgomery, AL 36130
 - classification: district
   address: P.O. Box 875, Huntsville, AL 35804
   voice: 256-503-6088
-- classification: capitol
-  address: 11 S. Union St., Montgomery, AL 36130
 links:
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
 sources:
+- url: https://ballotpedia.org/James_Lomax
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
+- url: https://www.linkedin.com/in/jamesolomax
 extras:
   counties: Madison County
