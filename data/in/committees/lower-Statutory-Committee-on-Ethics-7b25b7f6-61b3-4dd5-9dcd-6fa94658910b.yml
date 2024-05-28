@@ -1,30 +1,31 @@
 id: ocd-organization/7b25b7f6-61b3-4dd5-9dcd-6fa94658910b
 jurisdiction: ocd-jurisdiction/country:us/state:in/government
 classification: committee
-name: Statutory Committee on Ethics
+name: Statutory Ethics
 chamber: lower
 sources:
 - url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
   note: Committee List API from current beta version of Indiana gov site
 links:
+- url: https://iga.in.gov/2024/committees/house/statutory-committee-on-ethics
 - url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getMembers?committee_id=0cae316e-618a-4654-aa01-70887a7f3b2a&session_lpid=session_2023
   note: homepage
 members:
 - name: Karen Engleman
-  role: Chair
+  role: chair
   person_id: ocd-person/efa78779-f35e-49fb-8b6b-5cccd00c870a
 - name: Sue Errington
-  role: Vice Chair
+  role: vice chair
   person_id: ocd-person/98feacbe-3be5-407e-a437-66d65a836a5e
-- name: Donna Schaibley
-  role: Member
-  person_id: ocd-person/062c9921-6c7e-489b-bcc2-b140231cd2c2
-- name: Gregory Steuerwald
-  role: Member
-  person_id: ocd-person/3ee97114-199a-4084-903f-5eaa231ca656
 - name: Carey Hamilton
-  role: Member
+  role: member
   person_id: ocd-person/ec6a3cce-3eca-4020-8809-a7a1875e1663
+- name: Donna Schaibley
+  role: member
+  person_id: ocd-person/062c9921-6c7e-489b-bcc2-b140231cd2c2
+- name: Greg Steuerwald
+  role: member
+  person_id: ocd-person/3ee97114-199a-4084-903f-5eaa231ca656
 - name: Matt Pierce
-  role: Member
+  role: member
   person_id: ocd-person/c66bcc9b-d5e6-478b-b11e-25be7f4e0aaa
