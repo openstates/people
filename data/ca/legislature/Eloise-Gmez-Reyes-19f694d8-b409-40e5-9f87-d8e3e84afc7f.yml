@@ -18,14 +18,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '47'
 offices:
-- classification: district
-  address: 301 E. Vanderbilt Way Suite 400, San Bernardino, CA 92408
-  voice: 909-381-4100
-  fax: 909-381-4150
 - classification: capitol
   address: P.O. Box 942849 1021 O St., Suite 4510, Sacramento, CA 94249
   voice: 916-319-2050
   fax: 916-319-2150
+- classification: district
+  address: 301 E. Vanderbilt Way Suite 400, San Bernardino, CA 92408
+  voice: 909-381-4100
+  fax: 909-381-4150
 - classification: district
   address: Santa Clara County, CA
   voice: 909-381-3238
@@ -40,7 +40,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000515
 sources:
+- url: https://a50.asmdc.org
+- url: https://a50.asmdc.org/biography
 - url: https://assembly.ca.gov/assemblymembers
+- url: https://ballotpedia.org/Eloise_Reyes
+- url: https://en.wikipedia.org/wiki/Eloise_Reyes
 - url: https://www.assembly.ca.gov/assemblymembers
+- url: https://www.linkedin.com/in/eloise-reyes-726759a
 extras:
   P.O. Box: P.O. Box 942849, Sacramento, CA  94249-0050;
