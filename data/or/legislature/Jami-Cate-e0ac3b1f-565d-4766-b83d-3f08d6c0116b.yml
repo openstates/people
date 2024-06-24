@@ -9,6 +9,10 @@ party:
 - name: Republican
 roles:
 - start_date: 2023-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '11'
+- start_date: 2023-01-09
   end_date: 2025-01-13
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
@@ -25,6 +29,8 @@ links:
 - url: https://www.oregonlegislature.gov/cate
   note: homepage
 sources:
-- url: https://www.oregonlegislature.gov/cate
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
 - url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
+- url: https://ballotpedia.org/Jami_Cate
+- url: https://en.wikipedia.org/wiki/Jami_Cate
+- url: https://www.oregonlegislature.gov/cate
