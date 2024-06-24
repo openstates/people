@@ -5,20 +5,24 @@ family_name: Case
 birth_date: '1958-06-02'
 gender: Male
 email: cale.case@wyoleg.gov
-image: https://wyoleg.gov/LegislatorSummary/Photos/67th-CaseCale.jpg
+image: http://legisweb.state.wy.us/LegislatorSummary/photos/CaseCS25.jpg
 party:
 - name: Republican
 roles:
 - start_date: 1999-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: District 25
+- start_date: 1999-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '25'
 offices:
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 - classification: home
   address: 787 S. 4th St., Lander, WY 82520
   voice: 307-332-7623
-- classification: capitol-mail
-  address: State Capitol 213, Cheyenne, WY 82002
 links:
 - url: https://wyoleg.gov/Legislators/2019/R/945
 - url: https://wyoleg.gov/Legislators/2021/R/945
@@ -29,12 +33,14 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: WYL000005
 sources:
+- url: https://ballotpedia.org/Cale_Case
+- url: https://en.wikipedia.org/wiki/Cale_Case
 - url: https://www.wyoleg.gov/Legislators/2023/S/945
 - url: https://wyoleg.gov/Legislators/2019/R/945
 - url: https://wyoleg.gov/Legislators/2021/R/945
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/S
-- url: https://wyoleg.gov/LsoService/api/legislator/945
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/S
+- url: https://wyoleg.gov/LsoService/api/legislator/945
 extras:
   county: Fremont County
   occupation: Economist

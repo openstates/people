@@ -4,20 +4,24 @@ given_name: Bill
 family_name: Henderson
 gender: Male
 email: bill.henderson@wyoleg.gov
-image: https://wyoleg.gov/LegislatorSummary/Photos/67th-HendersonBill.jpg
+image: https://wyoleg.gov/LegislatorSummary/Photos/66th-HendersonBill.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2017-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: District 41
+- start_date: 2017-01-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '41'
 offices:
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 - classification: home
   address: P.O. Box 20877, Cheyenne, WY 82003
   voice: 307-201-9898
-- classification: capitol-mail
-  address: State Capitol 213, Cheyenne, WY 82002
 links:
 - url: https://wyoleg.gov/Legislators/2019/R/2042
 - url: https://wyoleg.gov/Legislators/2021/R/2042
@@ -28,12 +32,15 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: WYL000156
 sources:
+- url: https://ballotpedia.org/Bill_Henderson_(Wyoming)
+- url: https://en.wikipedia.org/wiki/Bill_Henderson_(Wyoming_politician)
+- url: https://justfacts.votesmart.org/candidate/biography/153990/bill-henderson
 - url: https://www.wyoleg.gov/Legislators/2023/H/2042
 - url: https://wyoleg.gov/Legislators/2019/R/2042
 - url: https://wyoleg.gov/Legislators/2021/R/2042
 - url: https://wyoleg.gov/LsoService/api/legislator/2021/H
-- url: https://wyoleg.gov/LsoService/api/legislator/2042
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/H
+- url: https://wyoleg.gov/LsoService/api/legislator/2042
 extras:
   county: Laramie County
   occupation: Banking; Business Development Executive, Cheyenne Market; Commander,
