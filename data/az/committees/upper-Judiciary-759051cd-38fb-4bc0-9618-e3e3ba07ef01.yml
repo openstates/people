@@ -1,7 +1,7 @@
 id: ocd-organization/759051cd-38fb-4bc0-9618-e3e3ba07ef01
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Judiciary
+name: Arizona Senate Judiciary Committee
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
@@ -9,56 +9,28 @@ sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
 links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2029&sessionId=128
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
-- name: Sonny Borrelli
-  role: member
-  person_id: ocd-person/b861ef92-d8da-4510-98ec-c40f36d06acd
-- name: Wendy Rogers
-  role: member
-  person_id: ocd-person/417c9599-7617-4b6d-ac0a-1d1b2a005f4e
-- name: Kirsten Engel
-  role: member
-- name: Vince Leach
-  role: member
-  person_id: ocd-person/00f9103d-191e-40ca-8f5c-e5bf806896a6
-- name: Warren Petersen
-  role: Chair
-  person_id: ocd-person/1bbf0d07-d4d6-4654-b330-8d7f6542e258
-- name: Nancy Barto
-  role: member
-  person_id: ocd-person/923989bc-5bbd-4b65-92ce-365d62b0e9f4
-- name: Lupe Contreras
-  role: member
-  person_id: ocd-person/095a6754-d7ca-4f1f-b562-974d92e7eb3c
-- name: Martin Quezada
-  role: member
-  person_id: ocd-person/63396e5e-c77d-4f2c-b700-ff240eea75f5
-- name: Stephanie Stahl Hamilton
-  role: member
-  person_id: ocd-person/df482d8a-1ed9-41ae-b4ba-d73d4cd9aa39
-- name: "Denise \u201CMitzi\u201D Epstein"
-  role: member
-  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
+- name: Anthony Kern
+  role: chair
+  person_id: ocd-person/f4ea36ef-3e74-4753-be45-43d3029a8a0d
+- name: John Kavanagh
+  role: vice chair
+  person_id: ocd-person/b6144266-5383-491f-8c87-df8fd11805ea
 - name: Anna Hernandez
   role: member
   person_id: ocd-person/ddfd6808-4722-4fd4-880a-2053ac4e7223
-- name: John Kavanagh
-  role: Vice Chair
-  person_id: ocd-person/b6144266-5383-491f-8c87-df8fd11805ea
-- name: Anthony Kern
-  role: Chair
-  person_id: ocd-person/f4ea36ef-3e74-4753-be45-43d3029a8a0d
-- name: Christine Marsh
-  role: member
-  person_id: ocd-person/597de349-4f1f-4e72-a537-d0626b5abddc
-- name: Justine Wadsack
-  role: member
-  person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
 - name: Flavio Bravo
   role: member
   person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
+- name: Justine Wadsack
+  role: member
+  person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
+- name: Mitzi Epstein
+  role: member
+  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
 extras:
   Committee ID: 2029
   Committee Short Name: JUD

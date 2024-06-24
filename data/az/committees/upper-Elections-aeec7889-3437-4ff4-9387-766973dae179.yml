@@ -1,49 +1,41 @@
 id: ocd-organization/aeec7889-3437-4ff4-9387-766973dae179
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Elections
+name: Arizona Senate Elections Committee
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
 links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2032&sessionId=128
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
+- name: Wendy Rogers
+  role: chair
+  person_id: ocd-person/417c9599-7617-4b6d-ac0a-1d1b2a005f4e
 - name: Ken Bennett
-  role: Vice Chair
+  role: vice chair
   person_id: ocd-person/e0798d71-d83a-4fa7-82c8-0644ec9f96ac
-- name: Sonny Borrelli
-  role: member
-  person_id: ocd-person/b861ef92-d8da-4510-98ec-c40f36d06acd
 - name: Anna Hernandez
   role: member
   person_id: ocd-person/ddfd6808-4722-4fd4-880a-2053ac4e7223
-- name: John Kavanagh
-  role: member
-  person_id: ocd-person/b6144266-5383-491f-8c87-df8fd11805ea
-- name: Juan Mendez
-  role: member
-  person_id: ocd-person/535e197f-a602-4194-83cc-f820756caa17
-- name: Wendy Rogers
-  role: Chair
-  person_id: ocd-person/417c9599-7617-4b6d-ac0a-1d1b2a005f4e
-- name: Thomas "T.J." Shope
-  role: member
-  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
-- name: Priya Sundareshan
-  role: member
-  person_id: ocd-person/7ff01dde-5112-436f-a267-dd7a7f91ec9b
-- name: Janae Shamp
-  role: member
-  person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
-- name: Justine Wadsack
-  role: member
-  person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
 - name: Flavio Bravo
   role: member
   person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
+- name: John Kavanagh
+  role: member
+  person_id: ocd-person/b6144266-5383-491f-8c87-df8fd11805ea
+- name: Priya Sundareshan
+  role: member
+  person_id: ocd-person/7ff01dde-5112-436f-a267-dd7a7f91ec9b
+- name: Sonny Borrelli
+  role: member
+  person_id: ocd-person/b861ef92-d8da-4510-98ec-c40f36d06acd
+- name: T.J. Shope
+  role: member
+  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
 extras:
   Committee ID: 2032
   Committee Short Name: ELEC

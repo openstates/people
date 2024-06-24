@@ -1,7 +1,7 @@
 id: ocd-organization/9afa1568-b043-4315-9d2e-6eac1e845406
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Senate Ethics
+name: Arizona Senate Ethics Committee
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
@@ -9,47 +9,25 @@ sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
 links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2030&sessionId=128
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
-- name: Victoria Steele
-  role: member
-  person_id: ocd-person/85bad9c8-db84-4385-96d4-61f16729c56a
-- name: Kirsten Engel
-  role: member
-- name: Vince Leach
-  role: member
-  person_id: ocd-person/00f9103d-191e-40ca-8f5c-e5bf806896a6
-- name: Warren Petersen
-  role: member
-  person_id: ocd-person/1bbf0d07-d4d6-4654-b330-8d7f6542e258
-- name: Sine Kerr
-  role: Chair
-  person_id: ocd-person/b58992d4-8f2f-4df7-a29d-9f68f3bedbb5
-- name: Tyler Pace
-  role: member
-  person_id: ocd-person/1683f77e-7d5c-42b7-ba43-2c937da4c77a
-- name: Rebecca Rios
-  role: member
-  person_id: ocd-person/fdb1383c-a38d-49a8-b536-3cfc9ff6cb3b
-- name: Stephanie Stahl Hamilton
-  role: member
-  person_id: ocd-person/df482d8a-1ed9-41ae-b4ba-d73d4cd9aa39
+- name: Dave Farnsworth
+  role: chair
+  person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
 - name: Eva Burch
   role: member
   person_id: ocd-person/81fc749a-e845-49cd-be39-ca9795831417
-- name: David C. Farnsworth
-  role: Chair
-  person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
-- name: "Rosanna Gabald\xF3n"
-  role: member
-  person_id: ocd-person/6de57177-1b9e-4864-bb87-97c528842030
 - name: Janae Shamp
   role: member
   person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
 - name: Justine Wadsack
   role: member
   person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
+- name: "Rosanna Gabald\xF3n"
+  role: member
+  person_id: ocd-person/6de57177-1b9e-4864-bb87-97c528842030
 extras:
   Committee ID: 2030
   Committee Short Name: ETHICS

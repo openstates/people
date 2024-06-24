@@ -1,51 +1,31 @@
 id: ocd-organization/e0d3a690-2713-4dea-bf98-0dc84ab6be83
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Director Nominations
+name: Arizona Senate Director Nominations Committee
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
 links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2095&sessionId=128
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
+- name: Jake Hoffman
+  role: chair
+  person_id: ocd-person/35f7056c-9f29-4b66-9ae0-f041fe6e7e05
+- name: Sine Kerr
+  role: vice chair
+  person_id: ocd-person/b58992d4-8f2f-4df7-a29d-9f68f3bedbb5
 - name: Eva Burch
   role: member
   person_id: ocd-person/81fc749a-e845-49cd-be39-ca9795831417
-- name: Jake Hoffman
-  role: Chair
-  person_id: ocd-person/35f7056c-9f29-4b66-9ae0-f041fe6e7e05
-- name: Sine Kerr
-  role: Vice Chair
-  person_id: ocd-person/b58992d4-8f2f-4df7-a29d-9f68f3bedbb5
-- name: Christine Marsh
-  role: member
-  person_id: ocd-person/597de349-4f1f-4e72-a537-d0626b5abddc
-- name: Thomas "T.J." Shope
-  role: member
-  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
 - name: Lela Alston
   role: member
   person_id: ocd-person/030638cb-5fcd-4637-8c59-c129e28db988
-- name: Janae Shamp
+- name: T.J. Shope
   role: member
-  person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
-- name: "Denise \u201CMitzi\u201D Epstein"
-  role: member
-  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
-- name: John Kavanagh
-  role: member
-  person_id: ocd-person/b6144266-5383-491f-8c87-df8fd11805ea
-- name: Justine Wadsack
-  role: member
-  person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
-- name: Anna Hernandez
-  role: member
-  person_id: ocd-person/ddfd6808-4722-4fd4-880a-2053ac4e7223
-- name: Flavio Bravo
-  role: member
-  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
+  person_id: ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015
 extras:
   Committee ID: 2095
   Committee Short Name: DINO

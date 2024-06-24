@@ -1,39 +1,37 @@
 id: ocd-organization/61311ad2-5819-4d59-b14b-c6517f75669f
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Finance and Commerce
+name: Arizona Senate Finance and Commerce Committee
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
 links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2106&sessionId=128
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
-- name: Lela Alston
-  role: member
-  person_id: ocd-person/030638cb-5fcd-4637-8c59-c129e28db988
-- name: "Denise \u201CMitzi\u201D Epstein"
-  role: member
-  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
+- name: J.D. Mesnard
+  role: chair
+  person_id: ocd-person/06adeea1-c37c-4dd1-8be5-92e9b5d3556e
+- name: Shawnna Bolick
+  role: vice chair
+  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
 - name: Brian Fernandez
   role: member
   person_id: ocd-person/5425612b-fb2c-4857-8f75-31523345eb2b
 - name: David Gowan
   role: member
   person_id: ocd-person/51520de4-0e87-475b-91d2-99aa18addf72
-- name: J.D. Mesnard
-  role: Chair
-  person_id: ocd-person/06adeea1-c37c-4dd1-8be5-92e9b5d3556e
 - name: Janae Shamp
   role: member
   person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
-- name: Shawnna Bolick
-  role: Vice Chair
-  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
-- name: Sine Kerr
+- name: Lela Alston
   role: member
-  person_id: ocd-person/b58992d4-8f2f-4df7-a29d-9f68f3bedbb5
+  person_id: ocd-person/030638cb-5fcd-4637-8c59-c129e28db988
+- name: Mitzi Epstein
+  role: member
+  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
 extras:
   Committee ID: 2106
   Committee Short Name: FICO
