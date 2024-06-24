@@ -14,13 +14,13 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '25'
 offices:
-- classification: district
-  address: 241 Richardson Road, Ridgeland MS, 39157
-- classification: capitol-mail
-  address: P.O. Box 1018, Jackson MS, 39215
 - classification: capitol
-  address: State Capitol Room 212-C, 400 High St., Jackson MS, 39201
-  voice: 601-359-2886
+  address: State Capitol Room 212-C, 400 High St., Jackson, MS 39201
+  voice: 601-359-2220
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson, MS 39215
+- classification: home
+  address: 241 Richardson Road, Ridgeland, MS 39157
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/michel.xml
   note: homepage
@@ -30,8 +30,10 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000288
 sources:
+- url: https://ballotpedia.org/Walter_Michel
 - url: https://billstatus.ls.state.ms.us/members/senate/michel.xml
 - url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://en.wikipedia.org/wiki/J._Walter_Michel
 extras:
   occupation: Commercial Real Estate
   education:
