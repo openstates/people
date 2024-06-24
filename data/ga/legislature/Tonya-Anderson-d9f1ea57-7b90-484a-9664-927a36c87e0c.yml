@@ -18,18 +18,18 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '92'
 offices:
-- classification: district
-  address: P.O. Box 1026, Lithonia, GA 30058
 - classification: capitol
   address: Atlanta, GA 30334
   voice: 404-463-2598
+- classification: district
+  address: P.O. Box 1026, Lithonia, GA 30058
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
-- url: https://www.legis.ga.gov/members/senate/807?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/807?session=1029
+- url: https://www.legis.ga.gov/members/senate/807?session=1031
+  note: HTML member detail page
 other_names:
 - name: Tonya P. Anderson
 - name: Tonya Anderson
@@ -41,17 +41,22 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/936dece6-443d-4164-97f4-3f9737f7807d
 sources:
-- url: https://www.legis.ga.gov/members/senate/807?session=1029
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
+- url: https://ballotpedia.org/Tonya_Anderson
+- url: https://en.wikipedia.org/wiki/Tonya_Anderson
+- url: https://justfacts.votesmart.org/candidate/biography/142015/tonya-anderson
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.legis.ga.gov/api/members/detail/807?session=1029&chamber=2
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/807?session=1031&chamber=2
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/807?session=1029
+- url: https://www.legis.ga.gov/members/senate/807?session=1031
+- url: https://www.linkedin.com/in/tonyapanderson
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
 extras:
   residence: Lithonia
   city: Lithonia

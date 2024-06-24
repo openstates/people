@@ -13,12 +13,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '26'
 offices:
-- classification: district
-  address: 4180 Creekwood Drive, Cumming, GA 30041
-  voice: 770-886-9899
 - classification: capitol
   address: Atlanta, GA 30334
   voice: 404-656-7737
+- classification: district
+  address: 4180 Creekwood Drive, Cumming, GA 30041
+  voice: 770-886-9899
 links:
 - url: https://www.legis.ga.gov/members/house/4992?session=1029
 - url: https://www.legis.ga.gov/members/house/4992?session=1031
@@ -30,15 +30,17 @@ other_names:
 - name: Lauren Wylie McDonald
 - name: Lauren McDonald
 sources:
-- url: https://www.legis.ga.gov/members/house/4992
-- url: https://www.legis.ga.gov/members/house/4992?session=1029
-- url: https://www.legis.ga.gov/members/house/4992?session=1029
+- url: https://ballotpedia.org/Lauren_W._McDonald_III
+- url: https://en.wikipedia.org/wiki/Lauren_McDonald
+- url: https://justfacts.votesmart.org/candidate/biography/151410/lauren-mcdonald-iii
 - url: https://www.legis.ga.gov/api/members/detail/4992?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4992?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4992
+- url: https://www.legis.ga.gov/members/house/4992?session=1029
 extras:
   residence: Cumming
   city: Cumming

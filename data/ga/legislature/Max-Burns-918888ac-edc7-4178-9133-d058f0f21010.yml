@@ -12,6 +12,12 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '23'
+offices:
+- classification: capitol
+  address: Room 327-A, Coverdell Legislative Office Building, Atlanta, GA 30334
+  voice: 404-463-1376
+- classification: district-mail
+  address: P.O. Box 203, Sylvania, GA 30467
 links:
 - url: https://www.legis.ga.gov/members/senate/4979?session=1029
 - url: https://www.legis.ga.gov/members/senate/4979?session=1031
@@ -23,16 +29,18 @@ other_names:
 - name: Othell Maxie Burns
 - name: Max Burns
 sources:
-- url: https://www.legis.ga.gov/members/senate/4979
-- url: https://www.legis.ga.gov/members/senate/4979?session=1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/4979?session=1029
+- url: https://ballotpedia.org/Max_Burns
+- url: https://en.wikipedia.org/wiki/Max_Burns
+- url: https://justfacts.votesmart.org/candidate/biography/32069/max-burns
 - url: https://www.legis.ga.gov/api/members/detail/4979?session=1029&chamber=2
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4979?session=1031&chamber=2
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/4979
+- url: https://www.legis.ga.gov/members/senate/4979?session=1029
+- url: https://www.linkedin.com/in/max-burns-56980a9
 extras:
   residence: Sylvania
   city: Sylvania
