@@ -7,8 +7,12 @@ gender: Male
 email: japonte@senado.pr.gov
 image: https://senado.pr.gov/document_vault/senator/10/FourYearPeriods/12/photo/JAVIER%20APONTE%20DALMAU.jpg
 party:
-- name: "Partido Popular Democr\u00e1tico"
+- name: "Partido Popular Democr\xE1tico"
 roles:
+- start_date: 2021-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: VIII
 - start_date: 2021-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
@@ -19,7 +23,7 @@ roles:
   district: '38'
 offices:
 - classification: district-mail
-  address: Senado, El Capitolio P.O. Box 9023431, San Juan, PR 902
+  address: Senado, El Capitolio P.O. Box 9023431, San Juan, PR 00902
   voice: 787-724-2030
 links:
 - url: https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=698
@@ -37,8 +41,10 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/b96e27b7-42ef-412b-a8a6-41593703754c
 sources:
+- url: https://ballotpedia.org/Javier_Aponte_Dalmau
+- url: https://en.wikipedia.org/wiki/Javier_Aponte_Dalmau
+- url: https://senado.pr.gov/index.cfm?module=senadores
 - url: https://senado.pr.gov/senators/hon-javier-a-aponte-dalmau
 - url: https://sutra.oslpr.org/osl/esutra/AdmLegisladorReg.aspx?rid=698
-- url: https://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=80
 - url: https://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/Biografia.aspx
-- url: https://senado.pr.gov/index.cfm?module=senadores
+- url: https://www.tucamarapr.org/dnncamara/ComposiciondelaCamara/biografia.aspx?rep=80
