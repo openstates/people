@@ -4,67 +4,55 @@ classification: committee
 name: Judiciary
 chamber: upper
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
   note: homepage
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
-- name: Tom Whatley
-  role: Chairperson
-  person_id: ocd-person/92d3faf4-14f4-4efe-bb2d-57e6567fa51f
 - name: Will Barfoot
-  role: Chairperson
+  role: chair
   person_id: ocd-person/8cca1495-936e-4ac5-920a-cc4aa22e495e
-- name: Rodger M. Smitherman
-  role: Ranking Minority Member
-  person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
-- name: Greg Albritton
-  role: Member
-  person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
-- name: Linda Coleman-Madison
-  role: Member
-  person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
-- name: Vivian Davis Figures
-  role: Member
-  person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
 - name: Sam Givhan
-  role: Vice Chairperson
+  role: vice chair
   person_id: ocd-person/21753744-c2a0-45d4-90f8-3d4082c794d4
-- name: Del Marsh
-  role: member
-  person_id: ocd-person/0d68f0c5-593d-418a-915e-0f7d3778fae0
-- name: Arthur Orr
-  role: Member
-  person_id: ocd-person/b38546ec-f8fb-4e99-8e0c-46715b2e8578
-- name: Greg J. Reed
-  role: member
-  person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
-- name: Malika Sanders-Fortier
-  role: member
-  person_id: ocd-person/1c18390b-b150-4361-8dfc-9f37c1f2b51f
-- name: Bobby D. Singleton
-  role: Member
-  person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
-- name: Larry Stutts
-  role: Member
-  person_id: ocd-person/abc69c3a-3f86-4880-a1ea-a2a52677b877
-- name: Chris Elliott
-  role: Member
-  person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
+- name: Rodger Smitherman
+  role: ranking democratic member
+  person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
 - name: April Weaver
-  role: Member
+  role: member
   person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
-- name: Lance Bell
-  role: Member
-  person_id: ocd-person/889eac7b-10b6-4f00-9bd6-e93a93d93211
+- name: Arthur Orr
+  role: member
+  person_id: ocd-person/b38546ec-f8fb-4e99-8e0c-46715b2e8578
+- name: Bobby Singleton
+  role: member
+  person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
+- name: Chris Elliott
+  role: member
+  person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
+- name: Greg Albritton
+  role: member
+  person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
 - name: Josh Carnley
-  role: Member
+  role: member
   person_id: ocd-person/51b33504-a943-4091-a3bd-f0b8feb124be
+- name: Lance Bell
+  role: member
+  person_id: ocd-person/889eac7b-10b6-4f00-9bd6-e93a93d93211
+- name: Larry Stutts
+  role: member
+  person_id: ocd-person/abc69c3a-3f86-4880-a1ea-a2a52677b877
+- name: Linda Coleman-Madison
+  role: member
+  person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
+- name: Vivian Figures
+  role: member
+  person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
 extras:
   Clerk: Kim Robertson
   Phone: 334 261-0893
