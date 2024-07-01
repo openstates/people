@@ -4,67 +4,49 @@ classification: committee
 name: Insurance
 chamber: lower
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1794&COMMITTEE=Insurance
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1794&COMMITTEE=Insurance
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1794&COMMITTEE=Insurance
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1794&COMMITTEE=Insurance
   note: homepage
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
-- name: Kerry Rich
-  role: Chair
-  person_id: ocd-person/bec72a41-5782-44e4-b1a0-e78cddc4255c
 - name: Corley Ellis
-  role: Chair
+  role: chair
   person_id: ocd-person/3b1a631d-35d4-47bd-a37c-a98fed7a5bd4
-- name: Chris England
-  role: Ranking Minority Member
-  person_id: ocd-person/b57cc6b9-3627-431f-8a01-4c3c7ba973d4
-- name: Louise Alexander
-  role: member
-  person_id: ocd-person/ea79bb0f-ec68-42f3-bf9a-7d28045fc292
-- name: Chip Brown
-  role: Member
-  person_id: ocd-person/04a1794d-93f0-435f-8c68-1b435f2fc1a0
-- name: Anthony Daniels
-  role: member
-  person_id: ocd-person/95f7541d-5429-41aa-85e5-7fc9cf33d688
 - name: Brett Easterbrook
-  role: Vice Chairperson
+  role: vice chair
   person_id: ocd-person/def57a9e-a907-4e62-b990-41dc19661c06
+- name: A.J. McCampbell
+  role: ranking member
+  person_id: ocd-person/474c3552-b3cd-4015-ac15-3c6301a0ce0e
+- name: Brock Colvin
+  role: member
+  person_id: ocd-person/aaffbe89-25dd-4454-85f7-81e4ed89c749
+- name: Chip Brown
+  role: member
+  person_id: ocd-person/04a1794d-93f0-435f-8c68-1b435f2fc1a0
+- name: Chris Blackshear
+  role: member
+  person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 - name: David Faulkner
-  role: Member
+  role: member
   person_id: ocd-person/9b9fd235-1045-4935-a097-bd5e51d2c592
 - name: Jamie Kiel
-  role: Member
-  person_id: ocd-person/390ee0ed-0b5e-4f45-a740-63511c4fa3fd
-- name: Ivan Smith
   role: member
-  person_id: ocd-person/2e9b60b3-d931-412e-a9f6-803aa7c7b085
-- name: Kyle South
-  role: Member
-  person_id: ocd-person/cbef3e56-a05d-4dca-8b0c-200e4bff9ad5
-- name: Artis 'A.J.' McCampbell
-  role: Ranking Minority Member
-  person_id: ocd-person/474c3552-b3cd-4015-ac15-3c6301a0ce0e
-- name: Chris Blackshear
-  role: Member
-  person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
-- name: Brock Colvin
-  role: Member
-  person_id: ocd-person/aaffbe89-25dd-4454-85f7-81e4ed89c749
+  person_id: ocd-person/390ee0ed-0b5e-4f45-a740-63511c4fa3fd
+- name: Matt Woods
+  role: member
+  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
 - name: Patrick Sellers
-  role: Member
+  role: member
   person_id: ocd-person/19244bfa-5953-4304-8955-cc58d0c5d16d
 - name: Phillip Ensler
-  role: Member
+  role: member
   person_id: ocd-person/397cb6b4-54fe-42e2-9135-7b440d925649
-- name: Matt Woods
-  role: Member
-  person_id: ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e
 extras:
   Clerk: Carmen Berrey
   Phone: (334) 261-0468
