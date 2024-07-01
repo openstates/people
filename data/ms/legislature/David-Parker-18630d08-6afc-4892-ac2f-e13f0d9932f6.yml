@@ -19,15 +19,15 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '19'
 offices:
+- classification: capitol
+  address: State Capitol Room 213, 400 High St., Jackson, MS 39201
+  voice: 601-359-4088
 - classification: capitol-mail
-  address: P.O. Box 1018, Jackson MS, 39215
-- classification: district
-  address: 6947 Crumpler Blvd., Olive Branch MS, 38654
+  address: P.O. Box 1018, Jackson, MS 39215
+- classification: home
+  address: 6947 Crumpler Blvd., Olive Branch, MS 38654
   voice: 662-893-3300
   fax: 662-893-3301
-- classification: capitol
-  address: State Capitol Room 213, 400 High St., Jackson MS, 39201
-  voice: 601-359-4088
 links:
 - url: https://billstatus.ls.state.ms.us/members/senate/parker.xml
   note: homepage
@@ -41,8 +41,10 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/c998e641-4136-4595-a560-19804dc402cd
 sources:
+- url: https://ballotpedia.org/David_Parker_(Mississippi)
 - url: https://billstatus.ls.state.ms.us/members/senate/parker.xml
 - url: https://billstatus.ls.state.ms.us/members/ss_membs.xml
+- url: https://en.wikipedia.org/wiki/David_Parker_(Mississippi_politician)
 extras:
   occupation: Optometrist
   education:

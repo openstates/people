@@ -4,31 +4,25 @@ classification: committee
 name: Local Legislation
 chamber: upper
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3271&COMMITTEE=Local%20Legislation
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3271&COMMITTEE=Local%20Legislation
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3271&COMMITTEE=Local%20Legislation
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3271&COMMITTEE=Local%20Legislation
   note: homepage
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
 members:
 - name: Clyde Chambliss
-  role: Chairperson
+  role: chair
   person_id: ocd-person/d1307771-6d50-4d56-9995-b5d799917d7b
-- name: Del Marsh
-  role: member
-  person_id: ocd-person/0d68f0c5-593d-418a-915e-0f7d3778fae0
-- name: Greg J. Reed
-  role: Member
-  person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
-- name: Clay Scofield
-  role: Vice Chairperson
-  person_id: ocd-person/889cc21f-1563-4375-8efc-f2f20bff945c
 - name: Steve Livingston
-  role: Vice Chairperson
+  role: vice chair
   person_id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
+- name: Greg Reed
+  role: member
+  person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
 extras:
   Clerk: Sabrina Gaston
   Phone: 334 261-0881

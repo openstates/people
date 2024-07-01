@@ -14,11 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '25'
 offices:
-- classification: capitol-mail
-  address: P.O. Box 1018, Jackson MS, 39215
 - classification: capitol
-  address: State Capitol Room Basement, 400 High St., Jackson MS, 39201
+  address: State Capitol Room Basement, 400 High St., Jackson, MS 39201
   voice: 601-359-4082
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson, MS 39215
+- classification: home
+  address: P.O. Box 184, Walls, MS 38680
+  voice: 662-374-0035
 links:
 - url: https://billstatus.ls.state.ms.us/members/house/eubanks.xml
   note: homepage
@@ -26,8 +29,10 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000267
 sources:
+- url: https://ballotpedia.org/Dan_Eubanks
 - url: https://billstatus.ls.state.ms.us/members/house/eubanks.xml
 - url: https://billstatus.ls.state.ms.us/members/hr_membs.xml
+- url: https://www.linkedin.com/in/dan-eubanks-b48844147
 extras:
   occupation: Director of Youth and Young Adult Ministries
   education:
