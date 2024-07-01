@@ -11,19 +11,25 @@ roles:
 - start_date: 2023-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: District 3
+- start_date: 2023-01-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '3'
 offices:
+- classification: capitol-mail
+  address: State Capitol 213, Cheyenne, WY 82002
 - classification: home
   address: P.O. Box 633, Gillette, WY 82717
   voice: 307-359-5856
-- classification: capitol-mail
-  address: State Capitol 213, Cheyenne, WY 82002
 links:
 - url: https://wyoleg.gov/Legislators/2021/R/2091
   note: homepage
 - url: https://www.wyoleg.gov/Legislators/2023/H/2091
 - url: https://en.wikipedia.org/wiki/Abby_Angelos
 sources:
+- url: https://ballotpedia.org/Abby_Angelos
+- url: https://en.wikipedia.org/wiki/Abby_Angelos
 - url: https://www.wyoleg.gov/Legislators/2023/H/2091
 - url: https://wyoleg.gov/LsoService/api/legislator/2023/H
 - url: https://wyoleg.gov/LsoService/api/legislator/2091
