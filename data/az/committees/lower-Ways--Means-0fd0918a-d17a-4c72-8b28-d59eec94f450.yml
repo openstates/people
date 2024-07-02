@@ -1,7 +1,7 @@
 id: ocd-organization/0fd0918a-d17a-4c72-8b28-d59eec94f450
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Ways & Means
+name: Ways and Means
 chamber: lower
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
@@ -9,55 +9,19 @@ sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
 links:
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=1896&sessionId=123
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
-- name: Regina E. Cobb
-  role: member
-  person_id: ocd-person/c1216de5-2070-43b3-8398-7cf074dbf336
-- name: Travis Grantham
-  role: member
-  person_id: ocd-person/f94da191-f569-4d35-a9d4-edb04a1efc02
-- name: Tim Dunn
-  role: member
-  person_id: ocd-person/0b8c9973-1ae5-4af3-8a73-713c8365eccd
-- name: Shawnna Bolick
-  role: Chair
-  person_id: ocd-person/33c76d31-65d6-4072-9d30-c1b292a7bb52
-- name: Brenda Barton
-  role: Vice Chair
-  person_id: ocd-person/df90b258-b808-46bc-bd70-0cc63a0bb619
-- name: Steve Kaiser
-  role: member
-  person_id: ocd-person/8750015c-a9dc-4eac-951d-7f7b51abd3e7
-- name: Pamela Powers Hannley
-  role: member
-  person_id: ocd-person/8a2ae29c-b83a-4f0f-8920-168b3b16ff64
-- name: Mitzi Epstein
-  role: member
-  person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
-- name: "Andr\xE9s Cano"
-  role: member
-- name: Lorenzo Sierra
-  role: member
-  person_id: ocd-person/4507941a-0263-4f8a-8fb2-13a9ab049fac
-- name: Amish Shah
-  role: member
-  person_id: ocd-person/6143aa75-8c8e-4e34-9c6c-810169a81333
-- name: Lupe Diaz
-  role: member
 - name: Neal Carter
-  role: Chair
+  role: chair
   person_id: ocd-person/17f344ec-ffe3-46fe-ba7a-8efdc5fbf2fd
 - name: Justin Heap
-  role: Vice Chair
+  role: vice chair
   person_id: ocd-person/44a57af9-ca23-408a-8e36-ed0c4bac37c9
-- name: Seth Blattman
+- name: Austin Smith
   role: member
-  person_id: ocd-person/4b29d125-27ee-46c7-a6ac-ed870c1f10a7
-- name: Michael Carbone
-  role: member
-  person_id: ocd-person/8db06598-a7e1-4b25-9e76-6a2be0d9eae3
+  person_id: ocd-person/2af31c38-60fa-45ff-8d84-2406888ec74c
 - name: David Livingston
   role: member
   person_id: ocd-person/6e8f2c0d-c9d3-4cb5-ae59-5264cb6d61a7
@@ -67,15 +31,18 @@ members:
 - name: Mariana Sandoval
   role: member
   person_id: ocd-person/3b6fa6b2-0a60-4f2e-9fd8-0882b04d9e0b
-- name: Austin Smith
+- name: Michael Carbone
   role: member
-  person_id: ocd-person/2af31c38-60fa-45ff-8d84-2406888ec74c
-- name: "Marcelino Qui\xF1onez"
-  role: member
-  person_id: ocd-person/5b93277b-9bb5-47e6-93e0-f75cb742b2d7
+  person_id: ocd-person/8db06598-a7e1-4b25-9e76-6a2be0d9eae3
 - name: "Quant\xE1 Crews"
   role: member
   person_id: ocd-person/0fb2e73b-b140-4669-a9bd-b75facb342dd
+- name: Seth Blattman
+  role: member
+  person_id: ocd-person/4b29d125-27ee-46c7-a6ac-ed870c1f10a7
+- name: Travis Grantham
+  role: member
+  person_id: ocd-person/f94da191-f569-4d35-a9d4-edb04a1efc02
 extras:
   Committee ID: 2017
   Committee Short Name: WM
