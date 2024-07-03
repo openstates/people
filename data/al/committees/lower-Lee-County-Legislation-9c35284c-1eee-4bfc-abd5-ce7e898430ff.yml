@@ -4,31 +4,31 @@ classification: committee
 name: Lee County Legislation
 chamber: lower
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
   note: homepage
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Joe Lovvorn
-  role: Chair
+  role: chair
   person_id: ocd-person/972dcfd0-f2a2-438b-b5de-276ceb398a91
 - name: Chris Blackshear
-  role: Member
+  role: member
   person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
-- name: Jeremy Gray
-  role: Member
-  person_id: ocd-person/15372a5d-6a78-40f2-aebf-fd7692c41cb0
-- name: Pebblin W. Warren
-  role: Member
-  person_id: ocd-person/7c93c20f-6b0b-4743-8118-3cb4e9194c26
 - name: Debbie Wood
-  role: Member
+  role: member
   person_id: ocd-person/52addd6c-0137-4c38-8234-f4849008eaa6
+- name: Jeremy Gray
+  role: member
+  person_id: ocd-person/15372a5d-6a78-40f2-aebf-fd7692c41cb0
+- name: Pebblin Warren
+  role: member
+  person_id: ocd-person/7c93c20f-6b0b-4743-8118-3cb4e9194c26
 extras:
   Clerk: Teresa Evans
   Phone: (334) 261-0550
