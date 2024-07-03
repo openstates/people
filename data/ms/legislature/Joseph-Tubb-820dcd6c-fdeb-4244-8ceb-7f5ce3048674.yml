@@ -14,11 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '87'
 offices:
-- classification: capitol-mail
-  address: P.O. Box 1018, Jackson MS, 39215
 - classification: capitol
-  address: State Capitol 400 High St., Jackson MS, 39201
+  address: State Capitol 400 High St., Jackson, MS 39201
   voice: 601-359-3360
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson, MS 39215
+- classification: home
+  address: 30 Pin Oak Lane, Purvis, MS 39475
+  voice: 601-336-3660
 links:
 - url: https://billstatus.ls.state.ms.us/members/house/tubb.xml
   note: homepage
@@ -29,8 +32,10 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/a8849df7-0c27-47d9-bd3d-3e154fdc2c3f
 sources:
+- url: https://ballotpedia.org/Joseph_Tubb
 - url: https://billstatus.ls.state.ms.us/members/house/tubb.xml
 - url: https://billstatus.ls.state.ms.us/members/hr_membs.xml
+- url: https://www.linkedin.com/in/joseph-tubb-48307054
 extras:
   occupation: Commercial Realtor
   education:

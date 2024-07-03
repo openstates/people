@@ -4,79 +4,55 @@ classification: committee
 name: Financial Services
 chamber: lower
 sources:
-- url: http://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2948&COMMITTEE=Financial%20Services
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2948&COMMITTEE=Financial%20Services
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
 links:
-- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2948&COMMITTEE=Financial%20Services
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2948&COMMITTEE=Financial%20Services
   note: homepage
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
 members:
 - name: Chris Blackshear
-  role: Chair
+  role: chair
   person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 - name: Andy Whitt
-  role: Vice Chair
+  role: vice chair
   person_id: ocd-person/c128ed12-dd1b-4b5f-8c64-9d86bf9d6580
-- name: John W. Rogers
-  role: Ranking Minority Member
-  person_id: ocd-person/4f16fb38-9aa5-48fd-bbff-907544c04e28
-- name: Merika Coleman
-  role: member
-  person_id: ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5
-- name: Reed Ingram
-  role: member
-  person_id: ocd-person/bd08d7a5-b1f3-484f-80c1-bddf2d636413
-- name: Kelvin Lawrence
-  role: member
-  person_id: ocd-person/0e1643ee-370a-499d-80df-96116d63c216
-- name: Andrew Sorrell
-  role: member
-  person_id: ocd-person/6e7f8f74-90fd-416b-b08e-188d6315b3ce
-- name: Jeff Sorrells
-  role: Member
-  person_id: ocd-person/18af5645-53f2-4571-b24d-3173abf2b567
-- name: Kyle South
-  role: Member
-  person_id: ocd-person/cbef3e56-a05d-4dca-8b0c-200e4bff9ad5
-- name: David Standridge
-  role: Member
-  person_id: ocd-person/0efb60b3-60e6-4248-a264-41a2a1d35036
-- name: Rodney Sullivan
-  role: member
-  person_id: ocd-person/9c1b2b35-8f0c-4812-a14e-864944729d12
-- name: Rich Wingo
-  role: member
-  person_id: ocd-person/6e9a21cb-0685-4943-bb00-c90f9f6b349f
-- name: Steve Clouse
-  role: Member
-  person_id: ocd-person/6b191fda-698d-4061-8396-fef9771847ee
-- name: Patrice McClammy
-  role: Member
+- name: Penni McClammy
+  role: ranking democratic member
   person_id: ocd-person/c4b563a3-2b20-4c2d-8f54-2b7ed6a3af3f
-- name: Kerry (Bubba) Underwood
-  role: Member
+- name: Bubba Underwood
+  role: member
   person_id: ocd-person/3828d8e6-1f22-4cb1-be51-b3d3a0c36b98
+- name: David Standridge
+  role: member
+  person_id: ocd-person/0efb60b3-60e6-4248-a264-41a2a1d35036
+- name: James Lomax
+  role: member
+  person_id: ocd-person/d54b8dfc-7921-4f35-ad22-ad2efdaad100
+- name: Jeff Sorrells
+  role: member
+  person_id: ocd-person/18af5645-53f2-4571-b24d-3173abf2b567
+- name: Marcus Paramore
+  role: member
+  person_id: ocd-person/723a971e-91d9-4717-8f19-45f16e18690f
 - name: Mike Shaw
-  role: Member
+  role: member
   person_id: ocd-person/cff09a3a-b81e-433d-80f5-45f6472f4642
 - name: Ontario Tillman
-  role: Member
+  role: member
   person_id: ocd-person/a86c6f40-304e-49fd-a312-3aa30660fcdf
 - name: Phillip Ensler
-  role: Member
+  role: member
   person_id: ocd-person/397cb6b4-54fe-42e2-9135-7b440d925649
-- name: Marcus Paramore
-  role: Member
-  person_id: ocd-person/723a971e-91d9-4717-8f19-45f16e18690f
-- name: James Lomax
-  role: Member
-  person_id: ocd-person/d54b8dfc-7921-4f35-ad22-ad2efdaad100
 - name: Rick Rehm
-  role: Member
+  role: member
   person_id: ocd-person/31629cc7-81e6-4422-9aa3-89e6b9073259
+- name: Steve Clouse
+  role: member
+  person_id: ocd-person/6b191fda-698d-4061-8396-fef9771847ee
 extras:
   Clerk: Carmen Berrey
   Phone: (334) 261-0468
