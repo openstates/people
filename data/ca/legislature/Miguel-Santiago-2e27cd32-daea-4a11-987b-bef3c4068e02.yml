@@ -18,14 +18,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '53'
 offices:
-- classification: district
-  address: Room 1050, 320 W. 4th St., Los Angeles, CA 90013
-  voice: 213-620-4646
-  fax: 213-620-6319
 - classification: capitol
   address: P.O. Box 942849 1021 O St., Suite 6150, Sacramento, CA 94249
   voice: 916-319-2054
   fax: 916-319-2154
+- classification: district
+  address: Room 1050, 320 W. 4th St., Los Angeles, CA 90013
+  voice: 213-620-4646
+  fax: 213-620-6319
 links:
 - url: https://a53.asmdc.org/
 - url: https://a54.asmdc.org/
@@ -33,7 +33,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000454
 sources:
+- url: https://a54.asmdc.org
 - url: https://assembly.ca.gov/assemblymembers
+- url: https://ballotpedia.org/Miguel_Santiago_(California)
+- url: https://en.wikipedia.org/wiki/Miguel_Santiago
+- url: https://justfacts.votesmart.org/candidate/biography/151853/miguel-santiago
 - url: https://www.assembly.ca.gov/assemblymembers
 extras:
   P.O. Box: P.O. Box 942849  Sacramento, CA 94249-0053
