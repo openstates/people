@@ -13,11 +13,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ms/government
   district: '121'
 offices:
-- classification: capitol-mail
-  address: P.O. Box 1018, Jackson MS, 39215
 - classification: capitol
-  address: State Capitol Room 201-M7, 400 High St., Jackson MS, 39201
+  address: State Capitol Room 201-M7, 400 High St., Jackson, MS 39201
   voice: 601-359-2582
+- classification: capitol-mail
+  address: P.O. Box 1018, Jackson, MS 39215
+- classification: home
+  address: 23155 Stablewood Circle, Pass Christian, MS 39571
+  voice: 228-779-6263
 links:
 - url: https://billstatus.ls.state.ms.us/members/house/crawford.xml
   note: homepage
@@ -25,8 +28,11 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: MSL000207
 sources:
+- url: https://ballotpedia.org/Carolyn_Crawford
 - url: https://billstatus.ls.state.ms.us/members/house/crawford.xml
 - url: https://billstatus.ls.state.ms.us/members/hr_membs.xml
+- url: https://en.wikipedia.org/wiki/Carolyn_Crawford
+- url: https://www.linkedin.com/in/carolyn-crawford-20785b82
 extras:
   occupation: former Social Worker
   education:
