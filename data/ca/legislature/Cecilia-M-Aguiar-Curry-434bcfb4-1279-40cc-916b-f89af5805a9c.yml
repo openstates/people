@@ -14,14 +14,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '4'
 offices:
-- classification: district
-  address: 2721 Napa Valley Corporate Drive, Napa, CA 94558
-  voice: 707-224-0440
-  fax: 707-224-0430
 - classification: capitol
   address: P.O. Box 942849 1021 O St., Suite 8210, Sacramento, CA 94249
   voice: 916-319-2004
   fax: 916-319-2104
+- classification: district
+  address: 2721 Napa Valley Corporate Drive, Napa, CA 94558
+  voice: 707-224-0440
+  fax: 707-224-0430
 - classification: district
   address: 600 A St. Suite D, Davis, CA 95616
   voice: 530-757-1034
@@ -35,7 +35,13 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: CAL000517
 sources:
+- url: https://a04.asmdc.org
+- url: https://a04.asmdc.org/biography
 - url: https://assembly.ca.gov/assemblymembers
+- url: https://ballotpedia.org/Cecilia_Aguiar-Curry
+- url: https://en.wikipedia.org/wiki/Cecilia_Aguiar-Curry
+- url: https://justfacts.votesmart.org/candidate/biography/169297/cecilia-aguiar-curry
 - url: https://www.assembly.ca.gov/assemblymembers
+- url: https://www.linkedin.com/in/cecilia-aguiar-curry-9810b526
 extras:
   P.O. Box: P.O. Box 942849, Sacramento, CA  94249-0004;
