@@ -1,17 +1,19 @@
 id: ocd-organization/a442e201-63ad-4db1-b324-55f2b52b96a7
 jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
-name: Alabama Oil and Gas Study
+name: Oil and Gas Study
 chamber: legislature
 sources:
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Membership information api call
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
+links:
+- url: https://gql.api.alison.legislature.state.al.us/graphql
 members:
-- name: Greg J. Reed
-  role: Chairperson
+- name: Greg Reed
+  role: chair
   person_id: ocd-person/1f20eba9-8e3a-4042-8a3b-5717029f6c0b
 - name: Greg Albritton
-  role: Member
+  role: member
   person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
