@@ -19,12 +19,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '26'
 offices:
-- classification: district-mail
-  address: P.O. Box 14056, Macon, GA 31203
-  voice: 478-737-3036
 - classification: capitol-mail
   address: Room 404-B, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0109
+- classification: district-mail
+  address: P.O. Box 14056, Macon, GA 31203
+  voice: 478-737-3036
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
 - url: https://www.legis.ga.gov/members/house/794?session=1029
@@ -41,19 +41,22 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/6828474f-f544-4258-aa6a-5ddb6b8e11f1
 sources:
-- url: https://www.legis.ga.gov/members/house/794
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
-- url: https://www.legis.ga.gov/members/house/794?session=1029
-- url: https://www.legis.ga.gov/members/house/794?session=1029
+- url: https://ballotpedia.org/Miriam_Paris
+- url: https://en.wikipedia.org/wiki/Miriam_Paris
+- url: https://justfacts.votesmart.org/candidate/biography/72142/miriam-paris
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=794&Session=27
 - url: https://www.legis.ga.gov/api/members/detail/794?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/794?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/794
+- url: https://www.legis.ga.gov/members/house/794?session=1029
+- url: https://www.linkedin.com/in/miriam-paris-57822b131
 extras:
   residence: Macon
   city: Macon

@@ -17,12 +17,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '140'
 offices:
-- classification: district-mail
-  address: 3440 Musella Road, Musella, GA 31066
-  voice: 478-836-4362
 - classification: capitol-mail
   address: Atlanta, GA 30334
   voice: 404-656-5099
+- classification: district-mail
+  address: 3440 Musella Road, Musella, GA 31066
+  voice: 478-836-4362
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/members/house/791?session=1029
@@ -44,19 +44,22 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000384
 sources:
-- url: https://www.legis.ga.gov/members/house/791
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
-- url: https://www.legis.ga.gov/members/house/791?session=1029
-- url: https://www.legis.ga.gov/members/house/791?session=1029
+- url: https://ballotpedia.org/Robert_Dickey
+- url: https://en.wikipedia.org/wiki/Robert_Dickey_(politician)
+- url: https://justfacts.votesmart.org/candidate/biography/128763/robert-dickey
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=791&Session=27
 - url: https://www.legis.ga.gov/api/members/detail/791?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/791?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/791
+- url: https://www.legis.ga.gov/members/house/791?session=1029
+- url: https://www.linkedin.com/in/robert-dickey-42999b19
 extras:
   residence: Musella
   city: Musella
