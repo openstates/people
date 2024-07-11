@@ -17,11 +17,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '73'
 offices:
-- classification: district-mail
-  address: 127 Dunwoody Circle, Griffin, GA 30223
 - classification: capitol-mail
   address: Room 508-D, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0213
+- classification: district-mail
+  address: 127 Dunwoody Circle, Griffin, GA 30223
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4894&Session=27
 - url: https://www.legis.ga.gov/members/house/4894?session=1029
@@ -34,19 +34,21 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000461
 sources:
-- url: https://www.legis.ga.gov/members/house/4894
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4894&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4894&Session=27
-- url: https://www.legis.ga.gov/members/house/4894?session=1029
-- url: https://www.legis.ga.gov/members/house/4894?session=1029
+- url: https://ballotpedia.org/Karen_Mathiak
+- url: https://en.wikipedia.org/wiki/Karen_Mathiak
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4894&Session=27
 - url: https://www.legis.ga.gov/api/members/detail/4894?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4894?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4894
+- url: https://www.legis.ga.gov/members/house/4894?session=1029
+- url: https://www.linkedin.com/in/karen-mathiak-b3b25a5
 extras:
   residence: Griffin
   city: Griffin

@@ -14,12 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '4'
 offices:
-- classification: district-mail
-  address: P.O. Box 25, Statesboro, GA 30459
-  voice: 912-682-5819
 - classification: capitol-mail
   address: Room 304-A, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-463-1371
+- classification: district-mail
+  address: P.O. Box 25, Statesboro, GA 30459
+  voice: 912-682-5819
 links:
 - url: https://www.legis.ga.gov/members/senate/4972?session=1031
   note: HTML member detail page
@@ -30,13 +30,18 @@ other_names:
 - name: William R. Hickman
 - name: Billy Hickman
 sources:
-- url: https://www.legis.ga.gov/members/senate/4972?session=1029
+- url: https://ballotpedia.org/Billy_Hickman_(Georgia)
+- url: https://en.wikipedia.org/wiki/Billy_Hickman
+- url: https://justfacts.votesmart.org/candidate/biography/192247/billy-hickman
+- url: https://www.dhhccpa.com/william-r-billy-hickman-jr
 - url: https://www.legis.ga.gov/api/members/detail/4972?session=1029&chamber=2
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4972?session=1031&chamber=2
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/4972?session=1029
+- url: https://www.linkedin.com/in/billyhickman
 extras:
   residence: Statesboro
   city: Statesboro
