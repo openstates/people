@@ -13,11 +13,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '171'
 offices:
-- classification: district-mail
-  address: 4556 Squirrel Haven Road, Camilla, GA 31730
 - classification: capitol-mail
   address: Room 601-C, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0254
+- classification: district-mail
+  address: 4556 Squirrel Haven Road, Camilla, GA 31730
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4970&Session=27
 - url: https://www.legis.ga.gov/members/house/4970?session=1029
@@ -27,19 +27,20 @@ links:
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/4970
 sources:
-- url: https://www.legis.ga.gov/members/house/4970
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4970&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4970&Session=27
-- url: https://www.legis.ga.gov/members/house/4970?session=1029
-- url: https://www.legis.ga.gov/members/house/4970?session=1029
+- url: https://ballotpedia.org/Joe_Campbell_(Georgia)
+- url: https://en.wikipedia.org/wiki/Joe_Campbell_(Georgia_politician)
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4970&Session=27
 - url: https://www.legis.ga.gov/api/members/detail/4970?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/4970?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4970
+- url: https://www.legis.ga.gov/members/house/4970?session=1029
 extras:
   residence: Camilla
   city: Camilla

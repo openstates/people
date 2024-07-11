@@ -14,11 +14,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '161'
 offices:
-- classification: district-mail
-  address: 2440 Rincon-Stillwell Road, Rincon, GA 31326
 - classification: capitol-mail
   address: Atlanta, GA 30334
   voice: 404-656-5126
+- classification: district-mail
+  address: 2440 Rincon-Stillwell Road, Rincon, GA 31326
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
 - url: https://www.legis.ga.gov/members/house/823?session=1029
@@ -34,19 +34,22 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000304
 sources:
-- url: https://www.legis.ga.gov/members/house/823
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
-- url: https://www.legis.ga.gov/members/house/823?session=1029
-- url: https://www.legis.ga.gov/members/house/823?session=1029
+- url: https://ballotpedia.org/Bill_Hitchens
+- url: https://en.wikipedia.org/wiki/Bill_Hitchens
+- url: https://justfacts.votesmart.org/candidate/biography/142235/bill-hitchens
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=823&Session=27
 - url: https://www.legis.ga.gov/api/members/detail/823?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/823?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/823
+- url: https://www.legis.ga.gov/members/house/823?session=1029
+- url: https://www.linkedin.com/in/bill-hitchens-bb369957
 extras:
   residence: Rincon
   city: Rincon

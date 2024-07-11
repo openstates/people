@@ -12,16 +12,16 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '135'
-- end_date: 2023-01-11
+- end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '131'
 offices:
-- classification: district-mail
-  address: 1235 Strickland Road, Concord, GA 30206
 - classification: capitol-mail
   address: Atlanta, GA 30334
   voice: 404-656-7855
+- classification: district-mail
+  address: 1235 Strickland Road, Concord, GA 30206
 links:
 - url: https://www.legis.ga.gov/members/house/5004?session=1029
 - url: https://www.legis.ga.gov/members/house/5004?session=1031
@@ -33,15 +33,17 @@ other_names:
 - name: Elizabeth Anne Thompson Camp
 - name: Beth Camp
 sources:
-- url: https://www.legis.ga.gov/members/house/5004
-- url: https://www.legis.ga.gov/members/house/5004?session=1029
-- url: https://www.legis.ga.gov/members/house/5004?session=1029
+- url: https://ballotpedia.org/Beth_Camp
+- url: https://justfacts.votesmart.org/candidate/190404/beth-camp
 - url: https://www.legis.ga.gov/api/members/detail/5004?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5004?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/5004
+- url: https://www.legis.ga.gov/members/house/5004?session=1029
+- url: https://www.linkedin.com/in/beth-camp-62060113
 extras:
   residence: Concord
   city: Concord
