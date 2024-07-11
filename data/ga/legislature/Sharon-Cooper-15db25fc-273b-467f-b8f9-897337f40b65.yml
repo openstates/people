@@ -18,12 +18,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '43'
 offices:
-- classification: district-mail
-  address: 1234 Powers Ferry Road Suite 104, Marietta, GA 30067
-  voice: 770-956-8357
 - classification: capitol-mail
   address: Atlanta, GA 30334
   voice: 404-656-5069
+- classification: district-mail
+  address: 1234 Powers Ferry Road Suite 104, Marietta, GA 30067
+  voice: 770-956-8357
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/members/house/86?session=1029
@@ -38,19 +38,21 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000265
 sources:
-- url: https://www.legis.ga.gov/members/house/86
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
-- url: https://www.legis.ga.gov/members/house/86?session=1029
-- url: https://www.legis.ga.gov/members/house/86?session=1029
+- url: https://ballotpedia.org/Sharon_Cooper
+- url: https://en.wikipedia.org/wiki/Sharon_Cooper
+- url: https://justfacts.votesmart.org/candidate/biography/11740/sharon-cooper
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
+- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=86&Session=27
 - url: https://www.legis.ga.gov/api/members/detail/86?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/86?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/86
+- url: https://www.legis.ga.gov/members/house/86?session=1029
 extras:
   residence: Marietta
   city: Marietta
