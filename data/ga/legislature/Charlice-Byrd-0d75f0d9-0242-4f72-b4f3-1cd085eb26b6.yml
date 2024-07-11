@@ -19,11 +19,11 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '20'
 offices:
-- classification: district-mail
-  address: 1025 Rose Creek Drive Suite 620-165, Woodstock, GA 30189
 - classification: capitol-mail
   address: Room 508-B, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0213
+- classification: district-mail
+  address: 1025 Rose Creek Drive Suite 620-165, Woodstock, GA 30189
 links:
 - url: https://www1.legis.ga.gov/legis/2011_12/house/bios/byrdCharlice.htm
 - url: https://www.legis.ga.gov/members/house/75?session=1029
@@ -41,17 +41,20 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/5c300729-146e-4e89-bd10-b7a184dbf31d
 sources:
-- url: https://www.legis.ga.gov/members/house/75
 - url: https://www1.legis.ga.gov/legis/2011_12/house/bios/byrdCharlice.htm
-- url: http://www1.legis.ga.gov/legis/2011_12/house/bios/byrdCharlice.htm
-- url: https://www.legis.ga.gov/members/house/75?session=1029
-- url: https://www.legis.ga.gov/members/house/75?session=1029
+- url: https://ballotpedia.org/Charlice_Byrd
+- url: https://en.wikipedia.org/wiki/Charlice_Byrd
+- url: https://justfacts.votesmart.org/candidate/biography/32017/charlice-byrd
 - url: https://www.legis.ga.gov/api/members/detail/75?session=1029&chamber=1
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/75?session=1031&chamber=1
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/75
+- url: https://www.legis.ga.gov/members/house/75?session=1029
+- url: https://www.linkedin.com/in/charlice-byrd-5a9b766
+- url: https://www1.legis.ga.gov/legis/2011_12/house/bios/byrdCharlice.htm
 extras:
   residence: Woodstock
   city: Woodstock

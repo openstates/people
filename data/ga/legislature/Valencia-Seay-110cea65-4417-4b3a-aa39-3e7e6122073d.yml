@@ -14,12 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '34'
 offices:
-- classification: district-mail
-  address: P.O. Box 960008, Riverdale, GA 30274
-  voice: 770-909-9912
 - classification: capitol-mail
   address: Atlanta, GA 30334
   voice: 404-656-5095
+- classification: district-mail
+  address: P.O. Box 960008, Riverdale, GA 30274
+  voice: 770-909-9912
 links:
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
 - url: https://www.legis.ga.gov/members/senate/41?session=1031
@@ -34,17 +34,21 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000042
 sources:
-- url: https://www.legis.ga.gov/members/senate/41?session=1029
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
-- url: http://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: http://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
+- url: https://ballotpedia.org/Valencia_Seay
+- url: https://en.wikipedia.org/wiki/Valencia_Seay
+- url: https://justfacts.votesmart.org/candidate/biography/32093/valencia-seay
+- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.legis.ga.gov/api/members/detail/41?session=1029&chamber=2
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/members/list/1031
-  note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/41?session=1031&chamber=2
   note: API member detail (requires authorization token)
+- url: https://www.legis.ga.gov/api/members/list/1031
+  note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/41?session=1029
+- url: https://www.linkedin.com/in/valencia-seay-00749726
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=41&Session=27
 extras:
   residence: Riverdale
   city: Riverdale
