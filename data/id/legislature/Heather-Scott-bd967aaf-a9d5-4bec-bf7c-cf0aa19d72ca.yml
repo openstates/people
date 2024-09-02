@@ -11,6 +11,10 @@ roles:
 - start_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '2'
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: 2A
 - start_date: 2013-01-01
   end_date: 2022-12-01
@@ -21,7 +25,7 @@ offices:
 - classification: capitol
   address: P.O. Box 83720 700 W. Jefferson, Boise, ID 83720
   voice: 208-332-1190
-- classification: district
+- classification: district-mail
   address: P.O. Box 134, Blanchard, ID 83804
 links:
 - url: https://legislature.idaho.gov/legislators/membership/?yr=2021&district=1
@@ -31,6 +35,8 @@ links:
   note: homepage
 - url: https://legislature.idaho.gov/legislators/membership/2023/id3137/
 - url: https://repheatherscott.com/
+other_names:
+- name: H. Scott
 other_identifiers:
 - scheme: legacy_openstates
   identifier: IDL000307
