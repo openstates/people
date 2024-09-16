@@ -1,6 +1,6 @@
 id: ocd-person/e5ee7c55-aa4e-4ce8-b3c8-5ab542f7a836
 name: Sage Dixon
-given_name: Sage G.
+given_name: Sage
 family_name: Dixon
 gender: Male
 email: sdixon@house.idaho.gov
@@ -8,6 +8,9 @@ image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2019/directo
 party:
 - name: Republican
 roles:
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '1'
 - start_date: 2014-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
@@ -27,6 +30,9 @@ links:
   note: homepage
 - url: https://legislature.idaho.gov/legislators/membership/2023/id3130/
 other_names:
+- name: Dixon, S.
+- name: S. Dixon
+- name: S.G. Dixon
 - name: Sage G. Dixon
 other_identifiers:
 - scheme: legacy_openstates

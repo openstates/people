@@ -1,6 +1,6 @@
 id: ocd-person/983607b1-0987-4efe-8547-de1c5d262e5f
 name: Steve Miller
-given_name: Steven
+given_name: Steve
 family_name: Miller
 gender: Male
 email: smiller@house.idaho.gov
@@ -8,6 +8,10 @@ image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directo
 party:
 - name: Republican
 roles:
+- start_date: 2022-12-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '24'
 - start_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
@@ -36,6 +40,8 @@ links:
   note: homepage
 - url: https://legislature.idaho.gov/legislators/membership/2023/id2134/
 other_names:
+- name: Miller, S.
+- name: S. Miller
 - name: Steven Miller
 other_identifiers:
 - scheme: legacy_openstates
