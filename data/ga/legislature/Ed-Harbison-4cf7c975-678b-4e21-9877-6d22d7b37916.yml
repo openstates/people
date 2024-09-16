@@ -9,7 +9,8 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/harbison-ed-
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 1993-01-11
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '15'
 offices:
@@ -25,6 +26,10 @@ links:
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/17?session=1029
+- url: https://www.legis.ga.gov/members/senate/17
+other_names:
+- name: E. Harbison
+- name: Harbison, E.
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000020
@@ -41,6 +46,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/17
 - url: https://www.legis.ga.gov/members/senate/17?session=1029
 - url: https://www.linkedin.com/in/ed-harbison-2467216b
 - url: https://www.linkedin.com/in/senator-ed-harbison-533b4784

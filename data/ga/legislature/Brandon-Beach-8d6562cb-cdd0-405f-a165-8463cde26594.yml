@@ -2,13 +2,15 @@ id: ocd-person/8d6562cb-cdd0-405f-a165-8463cde26594
 name: Brandon Beach
 given_name: Brandon
 family_name: Beach
+birth_date: '1961-05-02'
 gender: Male
 email: brandon.beach@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/beach-brandon-840.jpg
 party:
 - name: Republican
 roles:
-- type: upper
+- start_date: 2013-01-14
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '21'
 offices:
@@ -25,6 +27,11 @@ links:
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/840?session=1029
+- url: https://www.legis.ga.gov/members/senate/840
+other_names:
+- name: B. Beach
+- name: B.L. Beach
+- name: Beach, B.
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000378
@@ -41,6 +48,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/840
 - url: https://www.legis.ga.gov/members/senate/840?session=1029
 - url: https://www.linkedin.com/in/brandon-beach-4480892
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=840&Session=27
