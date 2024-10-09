@@ -10,11 +10,13 @@ party:
 - name: Republican
 roles:
 - start_date: 2016-12-01
+  end_date: '2024-01-01'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nd/government
   district: '40'
-  end_date: '2024-01-01'
-offices: []
+offices:
+- classification: district-mail
+  address: Minot, ND 58703
 links:
 - url: https://www.legis.nd.gov/assembly/65-2017/members/house/representative-randy-a-schobinger
 - url: https://www.legis.nd.gov/assembly/66-2019/members/house/representative-randy-a-schobinger
