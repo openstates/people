@@ -1,6 +1,6 @@
 id: ocd-person/ad9925ab-ab4a-46e9-a316-4d3a964736a3
 name: Teresa Reilly
-given_name: Teresa E.
+given_name: Teresa
 family_name: Reilly
 birth_date: '1958-06-28'
 gender: Female
@@ -9,6 +9,10 @@ image: https://mgaleg.maryland.gov/2023RS/images/reilly01.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-11
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:md/government
+  district: 35A
 - start_date: 2015-01-14
   end_date: 2023-01-10
   type: lower
@@ -19,10 +23,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: 35B
-- start_date: 2023-01-11
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:md/government
-  district: 35A
 offices:
 - classification: capitol
   address: Room 325, Lowe House Office Building 6 Bladen St., Annapolis, MD 21401
@@ -33,6 +33,9 @@ links:
 - url: https://msa.maryland.gov/msa/mdmanual/06hse/html/msa17075.html
 - url: https://mgaleg.maryland.gov/mgawebsite/Members/Details/reilly01
 other_names:
+- name: Reilly, T.
+- name: T. Reilly
+- name: T.E. Reilly
 - name: Teresa E. Reilly
 other_identifiers:
 - scheme: legacy_openstates
