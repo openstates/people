@@ -10,11 +10,17 @@ party:
 - name: Republican
 roles:
 - start_date: 2013-01-01
+  end_date: 2024-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nc/government
   district: '94'
-  end_date: '2024-01-01'
-offices: []
+offices:
+- classification: capitol
+  address: Room 301D, North Carolina House of Representatives 300 N. Salisbury St.,
+    Raleigh, NC 27603
+  voice: 919-733-5935
+- classification: district-mail
+  address: P.O. Box 522, North Wilkesboro, NC 28659
 links:
 - url: https://www.ncleg.gov/Members/IntroducedBills/H/643
 - url: https://www.ncleg.gov/Members/Votes/H/643
