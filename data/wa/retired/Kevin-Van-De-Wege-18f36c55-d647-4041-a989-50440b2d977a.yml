@@ -10,16 +10,21 @@ party:
 - name: Democratic
 roles:
 - start_date: 2017-01-09
+  end_date: '2024-01-01'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '24'
-  end_date: '2024-01-01'
 - start_date: 2011-01-01
   end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '24'
-offices: []
+offices:
+- classification: district
+  address: 504 E. 8th St. Suite C, Port Angeles, WA 98362
+- classification: district
+  address: Room 212, John A. Cherberg Building P.O. Box 40424, Olympia, WA 98504
+  voice: 360-786-7646
 links:
 - url: https://sdc.wastateleg.org/VanDeWege/
 - url: https://www.leg.wa.gov/senate/senators/Pages/default.aspx
