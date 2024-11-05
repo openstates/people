@@ -2,32 +2,38 @@ id: ocd-person/ad74f627-3223-5505-811c-599046becb2e
 name: Scott Fitzgerald
 given_name: Scott
 family_name: Fitzgerald
-middle_name: L.
-gender: M
-birth_date: 1963-11-16
+birth_date: '1963-11-16'
+gender: Male
+email: https://fitzgerald.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/F000471.jpg
 party:
-- start_date: '2021-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: WI-5
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: WI-5
 offices:
 - classification: capitol
-  address: 1507 Longworth House Office Building Washington DC 20515-4905
+  address: 1507 Longworth House Office Building, Washington, DC 20515
   voice: 202-225-5101
+- classification: district
+  address: 175 E. Wisconsin Ave. Suite H, 2nd Floor, Oconomowoc, WI 53066
+  voice: 262-784-1111
 links:
 - url: https://fitzgerald.house.gov
   note: website
+- url: https://fitzgerald.house.gov/
+other_names:
+- name: Fitzgerald, S.
+- name: S. Fitzgerald
+- name: S.L. Fitzgerald
 ids:
   twitter: RepFitzgerald
 other_identifiers:
@@ -49,3 +55,10 @@ other_identifiers:
   identifier: '3446'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Scott_Fitzgerald
+- url: https://en.wikipedia.org/wiki/Scott_L._Fitzgerald
+- url: https://fitzgerald.house.gov
+- url: https://justfacts.votesmart.org/candidate/biography/3446/scott-fitzgerald
+- url: https://scottfitzgeraldforcongress.com/#meet-scott
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/scott_fitzgerald/456855

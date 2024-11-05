@@ -1,141 +1,137 @@
 id: ocd-person/ced62f94-88a6-5a4b-b470-89cf1ee4bdac
-name: Charles E. Schumer
-given_name: Charles
+name: Chuck Schumer
+given_name: Chuck
 family_name: Schumer
-middle_name: E.
-gender: M
-birth_date: 1950-11-23
+birth_date: '1950-11-23'
+gender: Male
+email: https://www.schumer.senate.gov/contact/message-chuck
 image: https://theunitedstates.io/images/congress/450x550/S000148.jpg
 party:
-- start_date: '1981-01-05'
-  end_date: '2029-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '1981-01-05'
-  end_date: '1983-01-03'
+- start_date: 2023-01-03
+  end_date: 2029-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: New York
+- start_date: 2017-01-03
+  end_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: New York
+- start_date: 2011-01-05
+  end_date: 2017-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: New York
+- start_date: 2005-01-04
+  end_date: 2011-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: New York
+- start_date: 1999-01-06
+  end_date: 2005-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: New York
+- start_date: 1997-01-07
+  end_date: 1999-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-9
+- start_date: 1995-01-04
+  end_date: 1997-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-9
+- start_date: 1993-01-05
+  end_date: 1995-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-9
+- start_date: 1991-01-03
+  end_date: 1993-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-10
+- start_date: 1989-01-03
+  end_date: 1991-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-10
+- start_date: 1987-01-06
+  end_date: 1989-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-10
+- start_date: 1985-01-03
+  end_date: 1987-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-10
+- start_date: 1983-01-03
+  end_date: 1985-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-10
+- start_date: 1981-01-05
+  end_date: 1983-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NY-16
-- start_date: '1983-01-03'
-  end_date: '1985-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-10
-- start_date: '1985-01-03'
-  end_date: '1987-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-10
-- start_date: '1987-01-06'
-  end_date: '1989-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-10
-- start_date: '1989-01-03'
-  end_date: '1991-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-10
-- start_date: '1991-01-03'
-  end_date: '1993-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-10
-- start_date: '1993-01-05'
-  end_date: '1995-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-9
-- start_date: '1995-01-04'
-  end_date: '1997-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-9
-- start_date: '1997-01-07'
-  end_date: '1999-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: NY-9
-- start_date: '1999-01-06'
-  end_date: '2005-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: New York
-- start_date: '2005-01-04'
-  end_date: '2011-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: New York
-- start_date: '2011-01-05'
-  end_date: '2017-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: New York
-- start_date: '2017-01-03'
-  end_date: '2023-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: New York
-- start_date: '2023-01-03'
-  end_date: '2029-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: New York
 offices:
 - classification: capitol
-  address: 322 Hart Senate Office Building Washington DC 20510
+  address: 322 Hart Senate Office Building, Washington, DC 20510
   voice: 202-224-6542
-- classification: district
-  address: 100 State St. Room 3040; Rochester, NY 14614
-  voice: 585-263-5866
-  fax: 585-263-3173
-  name: 'District Office #1'
-- classification: district
-  address: 1 Clinton Ave. Room 420; Albany, NY 12207
+  fax: 202-228-3027
+- classification: capitol
+  address: Leo O'Brien Building Room 827, Albany, NY 12207
   voice: 518-431-4070
   fax: 518-431-4076
-  name: 'District Office #2'
 - classification: district
-  address: 15 Henry St. Room. 100 A-F; Binghamton, NY 13901
-  voice: 607-772-6792
-  fax: 607-772-8124
-  name: 'District Office #3'
-- classification: district
-  address: '130 S. Elmwood Ave. #660; Buffalo, NY 14202'
-  voice: 716-846-4111
-  fax: 716-846-4113
-  name: 'District Office #4'
-- classification: district
-  address: 145 Pine Lawn Rd. Suite 300; Melville, NY 11747
-  voice: 631-753-0978
-  fax: 631-753-0997
-  name: 'District Office #5'
-- classification: district
-  address: 780 Third Ave. Suite 2301; New York, NY 10017
-  voice: 212-486-4430
-  fax: 202-228-2838
-  name: 'District Office #6'
-- classification: district
-  address: One Park Place Suite 100; Peekskill, NY 10566
+  address: 1 Park Place Suite 100, Peekskill, NY 10566
   voice: 914-734-1532
   fax: 914-734-1673
-  name: 'District Office #7'
 - classification: district
-  address: 100 S. Clinton St. Room 841; Syracuse, NY 13261
+  address: 100 S. Clinton St. Room 841, Syracuse, NY 13261
   voice: 315-423-5471
   fax: 315-423-5185
-  name: 'District Office #8'
+- classification: district
+  address: 100 State St. Room 3040, Rochester, NY 14614
+  voice: 585-263-5866
+  fax: 585-263-3173
+- classification: district
+  address: 130 S. Elmwood Ave. Suite 660, Buffalo, NY 14202
+  voice: 716-846-4111
+  fax: 716-846-4113
+- classification: district
+  address: 145 Pine Lawn Road Suite 300N, Melville, NY 11747
+  voice: 631-753-0978
+  fax: 631-391-9068
+- classification: district
+  address: 780 3rd Ave. Suite 2301, New York, NY 10017
+  voice: 212-486-4430
+  fax: 212-228-2838
+- classification: district
+  address: Federal Office Building 15 Henry St., Room 100 A-F, Binghamton, NY 13901
+  voice: 607-772-6792
+  fax: 607-772-8124
 links:
 - url: https://www.schumer.senate.gov
   note: website
 - url: https://www.schumer.senate.gov/contact/email-chuck
   note: contact form
+- url: https://www.schumer.senate.gov/
+other_names:
+- name: C. Schumer
+- name: C.E. Schumer
+- name: Charles E. Schumer
+- name: Schumer (D-NY)
+- name: Schumer, C.
 ids:
   twitter: SenSchumer
   youtube: UC-ABttxh8uQv_10qmwGaidw
   facebook: senschumer
-other_names:
-- name: Schumer (D-NY)
 other_identifiers:
 - scheme: bioguide
   identifier: S000148
@@ -171,3 +167,9 @@ other_identifiers:
   identifier: kg:/m/01w74d
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Chuck_Schumer
+- url: https://en.wikipedia.org/wiki/Chuck_Schumer
+- url: https://justfacts.votesmart.org/candidate/26976/chuck-schumer
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/charles_schumer/300087
+- url: https://www.schumer.senate.gov

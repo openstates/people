@@ -2,31 +2,38 @@ id: ocd-person/51e14e3d-a2c7-5d16-81d5-6608049b5d7e
 name: Mike Flood
 given_name: Mike
 family_name: Flood
-gender: M
-birth_date: 1975-02-23
+birth_date: '1975-02-23'
+gender: Male
+email: https://flood.house.gov/contact
 image: https://theunitedstates.io/images/congress/450x550/F000474.jpg
 party:
-- start_date: '2022-07-12'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2022-07-12'
-  end_date: '2023-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NE-1
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2022-07-12
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NE-1
 offices:
 - classification: capitol
-  address: 343 Cannon House Office Building Washington DC 20515-2701
+  address: 343 Cannon House Office Building, Washington, DC 20515
   voice: 202-225-4806
+- classification: district
+  address: 301 S. 13th St. Suite 100, Lincoln, NE 68508
+  voice: 402-438-1598
 links:
 - url: https://flood.house.gov
   note: website
+- url: https://flood.house.gov/
+other_names:
+- name: Flood, M.
+- name: M. Flood
+- name: M.J. Flood
 other_identifiers:
 - scheme: bioguide
   identifier: F000474
@@ -46,3 +53,10 @@ other_identifiers:
   identifier: '41983'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Mike_Flood
+- url: https://en.wikipedia.org/wiki/Mike_Flood_(politician)
+- url: https://flood.house.gov
+- url: https://justfacts.votesmart.org/candidate/biography/41983/mike-flood
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/mike_flood/456868
+- url: https://www.linkedin.com/in/mike-flood-72a5a262

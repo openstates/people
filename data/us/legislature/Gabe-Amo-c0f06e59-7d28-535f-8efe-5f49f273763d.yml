@@ -2,26 +2,35 @@ id: ocd-person/c0f06e59-7d28-535f-8efe-5f49f273763d
 name: Gabe Amo
 given_name: Gabe
 family_name: Amo
-gender: M
-birth_date: 1987-12-11
+birth_date: '1987-12-11'
+gender: Male
+email: https://amo.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/A000380.jpg
 party:
-- start_date: '2023-11-07'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2023-11-07'
-  end_date: '2025-01-03'
+- start_date: 2023-11-07
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: RI-1
 offices:
 - classification: capitol
-  address: 2233 Rayburn House Office Building Washington DC 20515-3901
+  address: 2233 Rayburn House Office Building, Washington, DC 20515
   voice: 202-225-4911
+  fax: 202-225-3290
+- classification: district
+  address: 1070 Main St. Suite 300, Pawtucket, RI 02860
+  voice: 401-729-5600
+  fax: 401-729-5608
 links:
 - url: https://amo.house.gov
   note: website
+- url: https://amo.house.gov/
+other_names:
+- name: Amo, G.
+- name: G. Amo
+- name: G.F.K. Amo
 other_identifiers:
 - scheme: bioguide
   identifier: A000380
@@ -39,3 +48,7 @@ other_identifiers:
   identifier: Gabe Amo
 sources:
 - url: https://theunitedstates.io/
+- url: https://amo.house.gov
+- url: https://en.wikipedia.org/wiki/Gabe_Amo
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/gabeamo

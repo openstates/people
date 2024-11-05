@@ -2,84 +2,82 @@ id: ocd-person/46c3b77a-7d00-5ecc-83d0-04c8fa05bf04
 name: Maria Cantwell
 given_name: Maria
 family_name: Cantwell
-gender: F
-birth_date: 1958-10-13
+birth_date: '1958-10-13'
+gender: Female
+email: https://www.cantwell.senate.gov/contact/email/form
 image: https://theunitedstates.io/images/congress/450x550/C000127.jpg
 party:
-- start_date: '1993-01-05'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '1993-01-05'
-  end_date: '1995-01-03'
+- start_date: 2019-01-03
+  end_date: 2025-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Washington
+- start_date: 2013-01-03
+  end_date: 2019-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Washington
+- start_date: 2007-01-04
+  end_date: 2013-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Washington
+- start_date: 2001-01-03
+  end_date: 2007-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Washington
+- start_date: 1993-01-05
+  end_date: 1995-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: WA-1
-- start_date: '2001-01-03'
-  end_date: '2007-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: Washington
-- start_date: '2007-01-04'
-  end_date: '2013-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: Washington
-- start_date: '2013-01-03'
-  end_date: '2019-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: Washington
-- start_date: '2019-01-03'
-  end_date: '2025-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: Washington
 offices:
 - classification: capitol
-  address: 511 Hart Senate Office Building Washington DC 20510
+  address: 511 Hart Senate Office Building, Washington, DC 20510
   voice: 202-224-3441
+  fax: 202-228-0514
 - classification: district
-  address: 2930 Wetmore Ave. Suite 9B; Everett, WA 98201
+  address: 2930 Wetmore Ave. Suite 9B, Everett, WA 98201
   voice: 425-303-0114
   fax: 425-303-8351
-  name: 'District Office #1'
 - classification: district
-  address: 825 Jadwin Ave. Suite 206; Richland, WA 99352
+  address: 825 Jadwin Ave. Suite 206, Richland, WA 99352
   voice: 509-946-8106
   fax: 509-946-6937
-  name: 'District Office #2'
 - classification: district
-  address: 915 Second Ave. Suite 3206; Seattle, WA 98174
-  voice: 206-220-6400
-  fax: 206-220-6404
-  name: 'District Office #3'
-- classification: district
-  address: 920 W. Riverside Ave. Suite 697; Spokane, WA 99201
-  voice: 509-353-2507
-  fax: 509-353-2547
-  name: 'District Office #4'
-- classification: district
-  address: 950 Pacific Ave. Suite 615; Tacoma, WA 98402
+  address: 950 Pacific Ave. Suite 615, Tacoma, WA 98402
   voice: 253-572-2281
   fax: 253-572-5879
-  name: 'District Office #5'
 - classification: district
-  address: 1313 Officers Row; Vancouver, WA 98661
+  address: Jackson Federal Building 915 2nd Ave., Suite 3206, Seattle, WA 98174
+  voice: 206-220-6400
+  fax: 206-220-6404
+- classification: district
+  address: The Marshall House 1313 Officers Row, Vancouver, WA 98661
   voice: 360-696-7838
   fax: 360-696-7844
-  name: 'District Office #6'
+- classification: district
+  address: U.S. Federal Courthouse 920 W. Riverside Ave., Suite 697, Spokane, WA 99201
+  voice: 509-353-2507
+  fax: 509-353-2547
 links:
 - url: https://www.cantwell.senate.gov
   note: website
 - url: https://www.cantwell.senate.gov/public/index.cfm/email-maria
   note: contact form
+- url: https://www.cantwell.senate.gov/
+other_names:
+- name: Cantwell (D-WA)
+- name: Cantwell, M.
+- name: M. Cantwell
+- name: M.E. Cantwell
 ids:
   twitter: SenatorCantwell
   youtube: UCN52UDqKgvHRk39ncySrIMw
   facebook: senatorcantwell
-other_names:
-- name: Cantwell (D-WA)
 other_identifiers:
 - scheme: bioguide
   identifier: C000127
@@ -115,3 +113,10 @@ other_identifiers:
   identifier: kg:/m/01x68t
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Maria_Cantwell
+- url: https://en.wikipedia.org/wiki/Maria_Cantwell
+- url: https://justfacts.votesmart.org/candidate/27122/maria-cantwell
+- url: https://theunitedstates.io
+- url: https://www.cantwell.senate.gov
+- url: https://www.cantwell.senate.gov/about/biography
+- url: https://www.govtrack.us/congress/members/maria_cantwell/300018

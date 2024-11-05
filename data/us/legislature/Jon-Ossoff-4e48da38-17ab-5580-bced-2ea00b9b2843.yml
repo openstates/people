@@ -2,32 +2,51 @@ id: ocd-person/4e48da38-17ab-5580-bced-2ea00b9b2843
 name: Jon Ossoff
 given_name: Jon
 family_name: Ossoff
-gender: M
-birth_date: 1987-02-16
+birth_date: '1987-02-16'
+gender: Male
+email: https://www.ossoff.senate.gov/contact-us/
 image: https://theunitedstates.io/images/congress/450x550/O000174.jpg
 party:
-- start_date: '2021-01-20'
-  end_date: '2027-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2021-01-20'
-  end_date: '2027-01-03'
+- start_date: 2021-01-20
+  end_date: 2027-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Georgia
 offices:
 - classification: capitol
-  address: 303 Hart Senate Office Building Washington DC 20510
+  address: 303 Hart Senate Office Building, Washington, DC 20510
   voice: 202-224-3521
+  fax: 202-224-2575
+- classification: district
+  address: 1 10th St. Suite 660, Augusta, GA 30901
+  voice: ''
+- classification: district
+  address: 18 9th St., Suite 513, Columbus, GA 31901
+  voice: 706-780-7053
+  fax: 202-228-2346
+- classification: district
+  address: 271 17th St. NW Suite 1510, Atlanta, GA 30363
+  voice: 470-786-7800
+  fax: 404-949-0912
+- classification: district
+  address: 532 Stephenson Ave. Suite 103B, Savannah, GA 31405
+  voice: 912-200-9402
+  fax: 202-228-6565
 links:
 - url: https://www.ossoff.senate.gov
   note: website
 - url: https://www.ossoff.senate.gov/contact-us/
   note: contact form
+- url: https://www.ossoff.senate.gov/
+other_names:
+- name: J. Ossoff
+- name: Ossoff (D-GA)
+- name: Ossoff, J.
+- name: T.J. Ossoff
 ids:
   twitter: SenOssoff
-other_names:
-- name: Ossoff (D-GA)
 other_identifiers:
 - scheme: bioguide
   identifier: O000174
@@ -53,3 +72,9 @@ other_identifiers:
   identifier: kg:/g/11g6njlbw2
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Jon_Ossoff
+- url: https://en.wikipedia.org/wiki/Jon_Ossoff
+- url: https://justfacts.votesmart.org/candidate/176134/jon-ossoff
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/jon_ossoff/456857
+- url: https://www.ossoff.senate.gov

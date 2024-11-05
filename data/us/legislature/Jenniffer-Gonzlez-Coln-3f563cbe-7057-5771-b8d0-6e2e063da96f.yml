@@ -1,42 +1,48 @@
 id: ocd-person/3f563cbe-7057-5771-b8d0-6e2e063da96f
-name: "Jenniffer Gonz\xE1lez-Col\xF3n"
+name: "Jenniffer Gonz\xE1lez"
 given_name: Jenniffer
-family_name: "Gonz\xE1lez-Col\xF3n"
-gender: F
-birth_date: 1976-08-05
+family_name: "Gonz\xE1lez"
+birth_date: '1976-08-05'
+gender: Female
+email: https://gonzalez-colon.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/G000582.jpg
 party:
-- start_date: '2017-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2017-01-03'
-  end_date: '2021-01-03'
+- start_date: 2017-01-03
+  end_date: 2025-01-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PR-At-Large
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PR-AL
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PR-AL
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2017-01-03
+  end_date: 2021-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PR-AL
 offices:
 - classification: capitol
-  address: 2338 Rayburn House Office Building Washington DC 20515-5401
+  address: 2338 Rayburn House Office Building, Washington, DC 20515
   voice: 202-225-2615
+  fax: 202-225-2154
 - classification: district
-  address: P.O. Box 9023958; San Juan, PR 00902-3958
+  address: Edificio Antigua Escuela, Medicina Tropical P.O. Box 9023958, San Juan,
+    PR 00902
   voice: 787-723-6333
-  fax: 787-729-7738
-  name: 'District Office #1'
+  fax: 787-729-6824
 links:
 - url: https://gonzalez-colon.house.gov
   note: website
+- url: https://gonzalez-colon.house.gov/
+other_names:
+- name: "Gonz\xE1lez, J."
+- name: "J. Gonz\xE1lez"
+- name: "J.A. Gonz\xE1lez"
+- name: "Jenniffer Gonz\xE1lez-Col\xF3n"
 ids:
   twitter: RepJenniffer
   youtube: UCZj99h3-GNKjGGeyp7AJeXw
@@ -62,3 +68,7 @@ other_identifiers:
   identifier: '67353'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Jennifer_Gonzalez_Colon
+- url: https://en.wikipedia.org/wiki/Jenniffer_Gonz%C3%A1lez
+- url: https://gonzalez-colon.house.gov
+- url: https://theunitedstates.io

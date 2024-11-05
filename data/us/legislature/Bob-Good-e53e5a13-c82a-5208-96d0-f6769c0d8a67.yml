@@ -1,37 +1,43 @@
 id: ocd-person/e53e5a13-c82a-5208-96d0-f6769c0d8a67
 name: Bob Good
-given_name: Robert
+given_name: Bob
 family_name: Good
-middle_name: G.
-gender: M
-birth_date: 1965-09-11
+birth_date: '1965-09-11'
+gender: Male
+email: https://good.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/G000595.jpg
 party:
-- start_date: '2021-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2025-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: VA-5
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: VA-5
 offices:
 - classification: capitol
-  address: 461 Cannon House Office Building Washington DC 20515-4605
+  address: 461 Cannon House Office Building, Washington, DC 20515
   voice: 202-225-4711
+  fax: 202-225-5681
+- classification: district
+  address: 20436 Lynchburg Highway, Suite F, Lynchburg, VA 24502
+  voice: 434-791-2596
 links:
 - url: https://good.house.gov
   note: website
+- url: https://good.house.gov/
+other_names:
+- name: B. Good
+- name: Good (VA)
+- name: Good, B.
+- name: R.G. Good
 ids:
   twitter: RepBobGood
-other_names:
-- name: Good (VA)
 other_identifiers:
 - scheme: bioguide
   identifier: G000595
@@ -49,3 +55,10 @@ other_identifiers:
   identifier: kg:/g/11fsfm06kc
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Bob_Good
+- url: https://en.wikipedia.org/wiki/Bob_Good
+- url: https://good.house.gov
+- url: https://justfacts.votesmart.org/candidate/biography/190745/robert-good
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/robert_good/456853
+- url: https://www.linkedin.com/in/bogood

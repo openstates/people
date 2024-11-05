@@ -1,37 +1,47 @@
 id: ocd-person/b98a30a0-ae7f-5910-9883-3132a7164446
-name: Mary E. Miller
+name: Mary Miller
 given_name: Mary
 family_name: Miller
-middle_name: E.
-gender: F
-birth_date: 1959-08-27
+birth_date: '1959-08-27'
+gender: Female
+email: https://marymiller.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/M001211.jpg
 party:
-- start_date: '2021-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IL-15
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IL-15
 offices:
 - classification: capitol
-  address: 1740 Longworth House Office Building Washington DC 20515-1315
+  address: 1740 Longworth House Office Building, Washington, DC 20515
   voice: 202-225-5271
+  fax: 202-225-5880
+- classification: district
+  address: 3236 Broadway St. Suite 200, Quincy, IL 62301
+  voice: 217-640-6210
+- classification: district
+  address: 604 E. Main St. Suite G, Mahomet, IL 61853
+  voice: 217-703-6100
 links:
 - url: https://marymiller.house.gov
   note: website
+- url: https://marymiller.house.gov/
+other_names:
+- name: M. Miller
+- name: M.E. Miller
+- name: Mary E. Miller
+- name: Miller (IL)
+- name: Miller, M.
 ids:
   twitter: RepMaryMiller
-other_names:
-- name: Miller (IL)
 other_identifiers:
 - scheme: bioguide
   identifier: M001211
@@ -49,3 +59,9 @@ other_identifiers:
   identifier: kg:/g/11fsd5mh_l
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Mary_Miller_(Illinois)
+- url: https://en.wikipedia.org/wiki/Mary_Miller_(politician)
+- url: https://justfacts.votesmart.org/candidate/biography/187988/mary-miller
+- url: https://marymiller.house.gov
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/mary_miller/456820

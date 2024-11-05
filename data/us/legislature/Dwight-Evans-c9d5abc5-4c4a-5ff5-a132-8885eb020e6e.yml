@@ -2,51 +2,59 @@ id: ocd-person/c9d5abc5-4c4a-5ff5-a132-8885eb020e6e
 name: Dwight Evans
 given_name: Dwight
 family_name: Evans
-gender: M
-birth_date: 1954-05-16
+birth_date: '1954-05-16'
+gender: Male
+email: https://evans.house.gov/zip_authentication?form=/contact/email
 image: https://theunitedstates.io/images/congress/450x550/E000296.jpg
 party:
-- start_date: '2016-11-14'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2016-11-14'
-  end_date: '2017-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-3
+- start_date: 2021-01-03
+  end_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-3
+- start_date: 2019-01-03
+  end_date: 2021-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-3
+- start_date: 2017-01-03
+  end_date: 2019-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-2
-- start_date: '2017-01-03'
-  end_date: '2019-01-03'
+- start_date: 2016-11-14
+  end_date: 2017-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-2
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PA-3
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PA-3
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PA-3
 offices:
 - classification: capitol
-  address: 1105 Longworth House Office Building Washington DC 20515-3803
+  address: 1105 Longworth House Office Building, Washington, DC 20515
   voice: 202-225-4001
+  fax: 202-225-5392
 - classification: district
-  address: 7174 Ogontz Ave.; Philadelphia, PA 19138
+  address: 1310 Point Breeze Ave., Philadelphia, PA 19146
+  voice: 215-254-3400
+  fax: 771-200-5094
+- classification: district
+  address: 7174 Ogontz Ave., Philadelphia, PA 19138
   voice: 215-276-0340
-  fax: 215-276-2939
-  name: 'District Office #1'
+  fax: 771-200-5094
 links:
 - url: https://evans.house.gov
   note: website
+- url: https://evans.house.gov/
+other_names:
+- name: D. Evans
+- name: D.E. Evans
+- name: Evans, D.
 ids:
   twitter: RepDwightEvans
   facebook: RepDwightEvans
@@ -77,3 +85,11 @@ other_identifiers:
   identifier: '21566'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Dwight_Evans
+- url: https://en.wikipedia.org/wiki/Dwight_E._Evans
+- url: https://evans.house.gov
+- url: https://evans.house.gov/about
+- url: https://justfacts.votesmart.org/candidate/biography/9128/dwight-evans
+- url: https://theunitedstates.io
+- url: https://www.dwightevans.com/meet-dwight
+- url: https://www.govtrack.us/congress/members/dwight_evans/412677
