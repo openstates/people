@@ -2,41 +2,45 @@ id: ocd-person/db31d257-8b81-52c8-a2e1-d26c6ee4a8be
 name: Mike Garcia
 given_name: Mike
 family_name: Garcia
-gender: M
-birth_date: 1976-04-24
+birth_date: '1976-04-24'
+gender: Male
+email: https://mikegarcia.house.gov/contact/
 image: https://theunitedstates.io/images/congress/450x550/G000061.jpg
 party:
-- start_date: '2020-05-19'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2020-05-19'
-  end_date: '2021-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: CA-25
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: CA-25
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: CA-27
-offices:
-- classification: capitol
-  address: 144 Cannon House Office Building Washington DC 20515-0527
-  voice: 202-225-1956
+- start_date: 2020-05-19
+  end_date: 2021-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-25
+- start_date: 2021-01-03
+  end_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-25
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: CA-27
 links:
 - url: https://mikegarcia.house.gov
   note: website
+- url: https://mikegarcia.house.gov/
+other_names:
+- name: Garcia, M.
+- name: Garcia, Mike
+- name: M. Garcia
+- name: M.J. Garcia
 ids:
   twitter: RepMikeGarcia
   facebook: RepMikeGarcia
-other_names:
-- name: Garcia, Mike
 other_identifiers:
 - scheme: bioguide
   identifier: G000061
@@ -58,3 +62,12 @@ other_identifiers:
   identifier: '188664'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Mike_Garcia
+- url: https://en.wikipedia.org/wiki/Mike_Garcia_(California_politician)
+- url: https://justfacts.votesmart.org/candidate/biography/188664/mike-garcia
+- url: https://mikegarcia.house.gov
+- url: https://mikegarcia.house.gov/about
+- url: https://theunitedstates.io
+- url: https://www.electmikegarcia.com/meet-mike
+- url: https://www.govtrack.us/congress/members/mike_garcia/456792
+- url: https://www.linkedin.com/in/michael-garcia-96131b14

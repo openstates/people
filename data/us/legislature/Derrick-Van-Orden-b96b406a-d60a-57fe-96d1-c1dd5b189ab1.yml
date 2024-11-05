@@ -2,27 +2,31 @@ id: ocd-person/b96b406a-d60a-57fe-96d1-c1dd5b189ab1
 name: Derrick Van Orden
 given_name: Derrick
 family_name: Van Orden
-middle_name: Francis
-gender: M
-birth_date: 1969-09-15
+birth_date: '1969-09-15'
+gender: Male
+email: https://vanorden.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/V000135.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WI-03
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: WI-3
-offices:
-- classification: capitol
-  address: 1513 Longworth House Office Building Washington DC 20515-4903
-  voice: 202-225-5506
 links:
 - url: https://vanorden.house.gov
   note: website
+- url: https://vanorden.house.gov/
+other_names:
+- name: D. Van Orden
+- name: D.F. Van Orden
+- name: Van Orden, D.
 ids:
   twitter: RepVanOrden
 other_identifiers:
@@ -46,3 +50,11 @@ other_identifiers:
   identifier: '192343'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Derrick_Van_Orden
+- url: https://en.wikipedia.org/wiki/Derrick_Van_Orden
+- url: https://justfacts.votesmart.org/candidate/192343/derrick-van-orden
+- url: https://justfacts.votesmart.org/candidate/biography/192343/derrick-van-orden
+- url: https://theunitedstates.io
+- url: https://vanorden.house.gov
+- url: https://www.govtrack.us/congress/members/derrick_van_orden/456950
+- url: https://www.linkedin.com/in/derrick-van-orden-1a637a105

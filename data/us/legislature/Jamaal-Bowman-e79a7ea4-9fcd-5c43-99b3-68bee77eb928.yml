@@ -2,31 +2,36 @@ id: ocd-person/e79a7ea4-9fcd-5c43-99b3-68bee77eb928
 name: Jamaal Bowman
 given_name: Jamaal
 family_name: Bowman
-gender: M
-birth_date: 1976-04-01
+birth_date: '1976-04-01'
+gender: Male
+email: https://bowman.house.gov/contact/email-us
 image: https://theunitedstates.io/images/congress/450x550/B001223.jpg
 party:
-- start_date: '2021-01-03'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2025-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NY-16
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NY-16
-offices:
-- classification: capitol
-  address: 345 Cannon House Office Building Washington DC 20515-3216
-  voice: 202-225-2464
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-16
 links:
 - url: https://bowman.house.gov
   note: website
+- url: https://bowman.house.gov/
+other_names:
+- name: Bowman, J.
+- name: J. Bowman
+- name: J.A. Bowman
 ids:
   twitter: RepBowman
 other_identifiers:
@@ -48,3 +53,9 @@ other_identifiers:
   identifier: Jamaal Bowman
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Jamaal_Bowman
+- url: https://bowman.house.gov
+- url: https://en.wikipedia.org/wiki/Jamaal_Bowman
+- url: https://justfacts.votesmart.org/candidate/biography/191205/jamaal-bowman
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/jamaal_bowman/456839

@@ -1,27 +1,41 @@
 id: ocd-person/6d89e5cc-c605-55ff-ba4d-b3d58d6ac1af
-name: Jennifer L. McClellan
-given_name: Jennifer
+name: Jenn McClellan
+given_name: Jenn
 family_name: McClellan
-gender: F
-birth_date: 1972-12-28
+birth_date: '1972-12-28'
+gender: Female
+email: https://mcclellan.house.gov/address_authentication?form=/contact/email-me
 image: https://theunitedstates.io/images/congress/450x550/M001227.jpg
 party:
-- start_date: '2023-03-07'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2023-03-07'
-  end_date: '2025-01-03'
+- start_date: 2023-03-07
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: VA-04
+- start_date: 2023-03-07
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: VA-4
 offices:
 - classification: capitol
-  address: 2417 Rayburn House Office Building Washington DC 20515-4604
-  voice: 202-225-6365
+  address: 11 S. 12th St. Suite 401, Richmond, VA 23219
+  voice: '804-486-1840 '
+- classification: district
+  address: 2417 Rayburn House Office Building, Washington, DC 20515
+  voice: '202-225-6365 '
+  fax: 202-226-1170
 links:
 - url: https://mcclellan.house.gov
   note: website
+- url: https://mcclellan.house.gov/
+other_names:
+- name: J. McClellan
+- name: J.L. McClellan
+- name: Jennifer L. McClellan
+- name: McClellan, J.
 other_identifiers:
 - scheme: bioguide
   identifier: M001227
@@ -41,3 +55,8 @@ other_identifiers:
   identifier: '58655'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Jenn_McClellan
+- url: https://en.wikipedia.org/wiki/Jennifer_McClellan
+- url: https://mcclellan.house.gov
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/jennifer-mcclellan-85533ba

@@ -2,50 +2,43 @@ id: ocd-person/1daf07ea-2575-511e-a5a8-47f0662cf209
 name: Madeleine Dean
 given_name: Madeleine
 family_name: Dean
-gender: F
-birth_date: 1959-06-06
+birth_date: '1959-06-06'
+gender: Female
+email: https://dean.house.gov/email-me
 image: https://theunitedstates.io/images/congress/450x550/D000631.jpg
 party:
-- start_date: '2019-01-03'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
+- start_date: 2019-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-04
+- start_date: 2019-01-03
+  end_date: 2021-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-4
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-4
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-4
-offices:
-- classification: capitol
-  address: 150 Cannon House Office Building Washington DC 20515-3804
-  voice: 202-225-4731
-- classification: district
-  address: 115 E Glenside Ave Suite 1; Glenside, PA 19038-4618
-  voice: 215-884-4300
-  fax: 215-884-3640
-  name: 'District Office #1'
-- classification: district
-  address: 101 E Main St A; Norristown, PA 19401-4916
-  voice: 610-382-1250
-  fax: 610-275-1759
-  name: 'District Office #2'
 links:
 - url: https://dean.house.gov
   note: website
-ids:
-  twitter: RepDean
+- url: https://dean.house.gov/
 other_names:
 - name: Dean (PA)
+- name: Dean, M.
+- name: M. Dean
+ids:
+  twitter: RepDean
 other_identifiers:
 - scheme: bioguide
   identifier: D000631
@@ -69,3 +62,10 @@ other_identifiers:
   identifier: Madeleine Dean
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Madeleine_Dean
+- url: https://dean.house.gov
+- url: https://dean.house.gov/biography
+- url: https://en.wikipedia.org/wiki/Madeleine_Dean
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/madeleine_dean/412809
+- url: https://www.linkedin.com/in/madeleine-dean-41007a74

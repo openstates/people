@@ -2,26 +2,31 @@ id: ocd-person/fef4e629-aa7e-5bc5-9128-abfce1af96d5
 name: Mike Ezell
 given_name: Mike
 family_name: Ezell
-gender: M
-birth_date: 1959-04-06
+birth_date: '1959-04-06'
+gender: Male
+email: https://ezell.house.gov/contact/
 image: https://theunitedstates.io/images/congress/450x550/E000235.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MS-04
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MS-4
-offices:
-- classification: capitol
-  address: 443 Cannon House Office Building Washington DC 20515-2404
-  voice: 202-225-5772
 links:
 - url: https://ezell.house.gov
   note: website
+- url: https://ezell.house.gov/
+other_names:
+- name: Ezell, M.
+- name: M. Ezell
+- name: W.M. Ezell
 ids:
   twitter: RepEzell
 other_identifiers:
@@ -41,3 +46,9 @@ other_identifiers:
   identifier: '202526'
 sources:
 - url: https://theunitedstates.io/
+- url: https://en.wikipedia.org/wiki/Mike_Ezell
+- url: https://ezell.house.gov
+- url: https://ezell.house.gov/about
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/mike-ezell-33856880
+- url: https://www.mikeezell.ms/about

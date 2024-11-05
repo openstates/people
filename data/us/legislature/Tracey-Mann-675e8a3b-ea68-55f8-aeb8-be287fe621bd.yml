@@ -2,32 +2,36 @@ id: ocd-person/675e8a3b-ea68-55f8-aeb8-be287fe621bd
 name: Tracey Mann
 given_name: Tracey
 family_name: Mann
-middle_name: Robert
-gender: M
-birth_date: 1976-12-17
+birth_date: '1976-12-17'
+gender: Male
+email: https://mann.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/M000871.jpg
 party:
-- start_date: '2021-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: KS-01
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: KS-1
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: KS-1
-offices:
-- classification: capitol
-  address: 344 Cannon House Office Building Washington DC 20515-1601
-  voice: 202-225-2715
 links:
 - url: https://mann.house.gov
   note: website
+- url: https://mann.house.gov/
+other_names:
+- name: Mann, T.
+- name: T. Mann
+- name: T.R. Mann
 ids:
   twitter: RepMann
 other_identifiers:
@@ -47,3 +51,9 @@ other_identifiers:
   identifier: kg:/g/11hcbb5b38
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Tracey_Mann
+- url: https://en.wikipedia.org/wiki/Tracey_Mann
+- url: https://justfacts.votesmart.org/candidate/biography/125007/tracey-mann
+- url: https://mann.house.gov
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/tracey_mann/456823

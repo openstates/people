@@ -2,26 +2,30 @@ id: ocd-person/42d739b0-f570-5d50-b549-eeaa2c7507ee
 name: Eric Sorensen
 given_name: Eric
 family_name: Sorensen
-gender: M
-birth_date: 1976-03-18
+birth_date: '1976-03-18'
+gender: Male
+email: https://sorensen.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/S001225.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IL-17
-offices:
-- classification: capitol
-  address: 1205 Longworth House Office Building Washington DC 20515-1317
-  voice: 202-225-5905
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: IL-17
 links:
 - url: https://sorensen.house.gov
   note: website
+- url: https://sorensen.house.gov/
+other_names:
+- name: E. Sorensen
+- name: Sorensen, E.
 ids:
   twitter: RepEricSorensen
 other_identifiers:
@@ -41,3 +45,8 @@ other_identifiers:
   identifier: '204339'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Eric_Sorensen
+- url: https://en.wikipedia.org/wiki/Eric_Sorensen_(politician)
+- url: https://sorensen.house.gov
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/eric-sorensen-1733a989

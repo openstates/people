@@ -2,31 +2,34 @@ id: ocd-person/a5212de0-6253-5b67-8473-2b00d1f22da6
 name: Aaron Bean
 given_name: Aaron
 family_name: Bean
-middle_name: Paul
-gender: M
-birth_date: 1967-01-25
+birth_date: '1967-01-25'
+gender: Male
+email: https://bean.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/B001314.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-04
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: FL-4
-offices:
-- classification: capitol
-  address: 1239 Longworth House Office Building Washington DC 20515-0904
-  voice: 202-225-0123
 links:
 - url: https://bean.house.gov
   note: website
+- url: https://bean.house.gov/
+other_names:
+- name: A. Bean
+- name: A.P. Bean
+- name: Bean (FL)
+- name: Bean, A.
 ids:
   twitter: RepAaronBean
-other_names:
-- name: Bean (FL)
 other_identifiers:
 - scheme: bioguide
   identifier: B001314
@@ -44,3 +47,8 @@ other_identifiers:
   identifier: '53932'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Aaron_Bean
+- url: https://bean.house.gov
+- url: https://en.wikipedia.org/wiki/Aaron_Bean
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/bean-aaron-693b179

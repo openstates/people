@@ -2,32 +2,35 @@ id: ocd-person/6f500f52-75ce-5cf0-afc6-5be71f0921d2
 name: John Fetterman
 given_name: John
 family_name: Fetterman
-middle_name: Karl
-gender: M
-birth_date: 1969-08-15
+birth_date: '1969-08-15'
+gender: Male
+email: https://www.fetterman.senate.gov/contact/
 image: https://theunitedstates.io/images/congress/450x550/F000479.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2029-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2023-01-03'
-  end_date: '2029-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Pennsylvania
-offices:
-- classification: capitol
-  address: 142 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-4254
+- start_date: 2023-01-03
+  end_date: 2029-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Pennsylvania
 links:
 - url: https://www.fetterman.senate.gov
   note: website
 - url: https://www.fetterman.senate.gov/contact/
   note: contact form
+- url: https://www.fetterman.senate.gov/
 other_names:
-- name: John K. Fetterman
 - name: Fetterman (D-PA)
+- name: Fetterman, J.
+- name: J. Fetterman
+- name: J.K. Fetterman
+- name: John K. Fetterman
 other_identifiers:
 - scheme: bioguide
   identifier: F000479
@@ -49,3 +52,9 @@ other_identifiers:
   identifier: John Fetterman
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/John_Fetterman
+- url: https://en.wikipedia.org/wiki/John_Fetterman_(politician)
+- url: https://justfacts.votesmart.org/candidate/biography/166286/john-fetterman
+- url: https://theunitedstates.io
+- url: https://www.fetterman.senate.gov
+- url: https://www.govtrack.us/congress/members/john_fetterman/456877

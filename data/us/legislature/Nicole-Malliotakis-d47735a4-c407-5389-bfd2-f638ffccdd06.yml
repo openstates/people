@@ -2,31 +2,36 @@ id: ocd-person/d47735a4-c407-5389-bfd2-f638ffccdd06
 name: Nicole Malliotakis
 given_name: Nicole
 family_name: Malliotakis
-gender: F
-birth_date: 1980-11-11
+birth_date: '1980-11-11'
+gender: Female
+email: https://malliotakis.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/M000317.jpg
 party:
-- start_date: '2021-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2030-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NY-11
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NY-11
-offices:
-- classification: capitol
-  address: 351 Cannon House Office Building Washington DC 20515-3211
-  voice: 202-225-3371
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NY-11
 links:
 - url: https://malliotakis.house.gov
   note: website
+- url: https://malliotakis.house.gov/
+other_names:
+- name: Malliotakis, N.
+- name: N. Malliotakis
+- name: N.R. Malliotakis
 ids:
   twitter: RepMalliotakis
 other_identifiers:
@@ -46,3 +51,9 @@ other_identifiers:
   identifier: kg:/m/0g5817m
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Nicole_Malliotakis
+- url: https://en.wikipedia.org/wiki/Nicole_Malliotakis
+- url: https://justfacts.votesmart.org/candidate/biography/127929/nicole-malliotakis
+- url: https://malliotakis.house.gov
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/nicole_malliotakis/456837

@@ -1,27 +1,33 @@
 id: ocd-person/e54a4532-aa1e-5e2d-b630-4f35ef10a46f
-name: Dale W. Strong
+name: Dale Strong
 given_name: Dale
 family_name: Strong
-gender: M
-birth_date: 1970-05-08
+birth_date: '1970-05-08'
+gender: Male
+email: https://strong.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/S001220.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: AL-05
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: AL-5
-offices:
-- classification: capitol
-  address: 1337 Longworth House Office Building Washington DC 20515-0105
-  voice: 202-225-4801
 links:
 - url: https://strong.house.gov
   note: website
+- url: https://strong.house.gov/
+other_names:
+- name: D. Strong
+- name: D.W. Strong
+- name: Dale W. Strong
+- name: Strong, D.
 other_identifiers:
 - scheme: bioguide
   identifier: S001220
@@ -39,3 +45,8 @@ other_identifiers:
   identifier: '81485'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Dale_Strong
+- url: https://en.wikipedia.org/wiki/Dale_Strong
+- url: https://strong.house.gov
+- url: https://theunitedstates.io
+- url: https://www.dalestrongforcongress.com/about

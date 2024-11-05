@@ -2,27 +2,31 @@ id: ocd-person/63dfcb23-8196-5bd6-a5cc-b6592d99150e
 name: Greg Landsman
 given_name: Greg
 family_name: Landsman
-middle_name: John
-gender: M
-birth_date: 1976-12-04
+birth_date: '1976-12-04'
+gender: Male
+email: https://landsman.house.gov/contact
 image: https://theunitedstates.io/images/congress/450x550/L000601.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: OH-01
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: OH-1
-offices:
-- classification: capitol
-  address: 1432 Longworth House Office Building Washington DC 20515-3501
-  voice: 202-225-2216
 links:
 - url: https://landsman.house.gov
   note: website
+- url: https://landsman.house.gov/
+other_names:
+- name: G. Landsman
+- name: G.J. Landsman
+- name: Landsman, G.
 other_identifiers:
 - scheme: bioguide
   identifier: L000601
@@ -42,3 +46,10 @@ other_identifiers:
   identifier: kg:/g/11rn585y5q
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Greg_Landsman
+- url: https://en.wikipedia.org/wiki/Greg_Landsman
+- url: https://justfacts.votesmart.org/candidate/biography/186237/greg-landsman
+- url: https://landsman.house.gov
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/greg_landsman/456928
+- url: https://www.linkedin.com/in/greg-landsman-3b335ab

@@ -2,48 +2,41 @@ id: ocd-person/6b015607-c3dd-5867-a1bb-733bf84fe091
 name: Michael Guest
 given_name: Michael
 family_name: Guest
-gender: M
-birth_date: 1970-02-04
+birth_date: '1970-02-04'
+gender: Male
+email: https://guest.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/G000591.jpg
 party:
-- start_date: '2019-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
+- start_date: 2019-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: MS-03
+- start_date: 2019-01-03
+  end_date: 2021-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MS-3
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MS-3
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MS-3
-offices:
-- classification: capitol
-  address: 450 Cannon House Office Building Washington DC 20515-2403
-  voice: 202-225-5031
-- classification: district
-  address: 308B E Government St; Brandon, MS 39042-3262
-  voice: 769-241-6120
-  name: 'District Office #1'
-- classification: district
-  address: 2214 5th St Suite 2170; Meridian, MS 39301-5809
-  voice: 601-693-6681
-  name: 'District Office #2'
-- classification: district
-  address: 600 Russell St Suite 160; Starkville, MS 39759-8505
-  voice: 662-324-0007
-  name: 'District Office #3'
 links:
 - url: https://guest.house.gov
   note: website
+- url: https://guest.house.gov/
+other_names:
+- name: Guest, M.
+- name: M. Guest
+- name: M.P. Guest
 ids:
   twitter: RepMichaelGuest
 other_identifiers:
@@ -67,3 +60,11 @@ other_identifiers:
   identifier: Michael Guest
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Michael_Guest
+- url: https://en.wikipedia.org/wiki/Michael_Guest_(politician)
+- url: https://guest.house.gov
+- url: https://guest.house.gov/about
+- url: https://justfacts.votesmart.org/candidate/key-votes/179667/michael-guest
+- url: https://michaelguest.ms/about-michael
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/michael_guest/412793

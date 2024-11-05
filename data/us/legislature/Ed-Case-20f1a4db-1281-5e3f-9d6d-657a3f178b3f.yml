@@ -2,50 +2,51 @@ id: ocd-person/20f1a4db-1281-5e3f-9d6d-657a3f178b3f
 name: Ed Case
 given_name: Ed
 family_name: Case
-gender: M
-birth_date: 1952-09-27
+birth_date: '1952-09-27'
+gender: Male
+email: https://case.house.gov/contact/
 image: https://theunitedstates.io/images/congress/450x550/C001055.jpg
 party:
-- start_date: '2003-01-07'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2003-01-07'
-  end_date: '2005-01-03'
+- start_date: 2019-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: HI-01
+- start_date: 2003-01-07
+  end_date: 2005-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: HI-2
-- start_date: '2005-01-04'
-  end_date: '2007-01-03'
+- start_date: 2005-01-04
+  end_date: 2007-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: HI-2
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
+- start_date: 2019-01-03
+  end_date: 2021-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: HI-1
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
+- start_date: 2021-01-03
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: HI-1
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: HI-1
-offices:
-- classification: capitol
-  address: 2210 Rayburn House Office Building Washington DC 20515-1101
-  voice: 202-225-2726
-- classification: district
-  address: 1132 Bishop St Suite 1910; Honolulu, HI 96813-2807
-  voice: 808-650-6688
-  name: 'District Office #1'
 links:
 - url: https://case.house.gov
   note: website
+- url: https://case.house.gov/
+other_names:
+- name: Case, E.
+- name: E. Case
+- name: E.E. Case
 ids:
   twitter: RepEdCase
 other_identifiers:
@@ -73,3 +74,9 @@ other_identifiers:
   identifier: Ed Case
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Ed_Case
+- url: https://case.house.gov
+- url: https://en.wikipedia.org/wiki/Ed_Case
+- url: https://justfacts.votesmart.org/candidate/biography/3422/ed-case
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/ed_case/400069

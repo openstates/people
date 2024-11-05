@@ -2,76 +2,48 @@ id: ocd-person/75cfdbf0-b681-5535-8a97-b53310335e72
 name: Steve Daines
 given_name: Steve
 family_name: Daines
-gender: M
-birth_date: 1962-08-20
+birth_date: '1962-08-20'
+gender: Male
+email: https://www.daines.senate.gov/services/email-steve/
 image: https://theunitedstates.io/images/congress/450x550/D000618.jpg
 party:
-- start_date: '2013-01-03'
-  end_date: '2027-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2013-01-03'
-  end_date: '2015-01-03'
+- start_date: 2015-01-06
+  end_date: 2030-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Montana
+- start_date: 2013-01-03
+  end_date: 2015-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MT-1
-- start_date: '2015-01-06'
-  end_date: '2021-01-03'
+- start_date: 2015-01-06
+  end_date: 2021-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Montana
-- start_date: '2021-01-03'
-  end_date: '2027-01-03'
+- start_date: 2021-01-03
+  end_date: 2027-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Montana
-offices:
-- classification: capitol
-  address: 320 Hart Senate Office Building Washington DC 20510
-  voice: 202-224-2651
-- classification: district
-  address: 222 N. 32nd St. Suite 100; Billings, MT 59101
-  voice: 406-245-6822
-  name: 'District Office #1'
-- classification: district
-  address: 13 S. Willson Ave. Suite 8; Bozeman, MT 59718
-  voice: 406-587-3446
-  name: 'District Office #2'
-- classification: district
-  address: 104 4th Street North Suite 302; Great Falls, MT 59401
-  voice: 406-453-0148
-  name: 'District Office #3'
-- classification: district
-  address: 310 N Ctr.; Hardin, MT 59034
-  voice: 406-665-4126
-  name: 'District Office #4'
-- classification: district
-  address: 30 W. 14th St. Suite 206; Helena, MT 59601
-  voice: 406-443-3189
-  name: 'District Office #5'
-- classification: district
-  address: 40 2nd St East Suite 211; Kalispell, MT 59901
-  voice: 406-257-3765
-  name: 'District Office #6'
-- classification: district
-  address: 218 E. Front St. Suite 103; Missoula, MT 59802
-  voice: 406-549-8198
-  name: 'District Office #7'
-- classification: district
-  address: '609 S. Central Ave. Suite #4; Sidney, MT 59270'
-  voice: 406-482-9010
-  name: 'District Office #8'
 links:
 - url: https://www.daines.senate.gov
   note: website
 - url: https://www.daines.senate.gov/connect/email-steve
   note: contact form
+- url: https://www.daines.senate.gov/
+other_names:
+- name: Daines (R-MT)
+- name: Daines, S.
+- name: S. Daines
+- name: S.D. Daines
 ids:
   twitter: SteveDaines
   youtube: UC-ny-W5mEUGytiyMdXbQ20Q
   facebook: SteveDainesMT
-other_names:
-- name: Daines (R-MT)
 other_identifiers:
 - scheme: govtrack
   identifier: '412549'
@@ -105,3 +77,10 @@ other_identifiers:
   identifier: kg:/m/03qlc5t
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Steve_Daines
+- url: https://en.wikipedia.org/wiki/Steve_Daines
+- url: https://justfacts.votesmart.org/candidate/135720/steve-daines
+- url: https://theunitedstates.io
+- url: https://www.daines.senate.gov
+- url: https://www.govtrack.us/congress/members/steve_daines/412549
+- url: https://www.linkedin.com/in/stevedaines

@@ -1,32 +1,36 @@
 id: ocd-person/a516a327-22fc-57af-931b-f28926b44b85
-name: Robert Menendez
-given_name: Robert
+name: Rob Menendez
+given_name: Rob
 family_name: Menendez
-middle_name: Jacobsen
-gender: M
-birth_date: 1985-07-12
+birth_date: '1985-07-12'
+gender: Male
+email: https://menendez.house.gov/address_authentication?form=/contact
 image: https://theunitedstates.io/images/congress/450x550/M001226.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: NJ-08
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: NJ-8
-offices:
-- classification: capitol
-  address: 1007 Longworth House Office Building Washington DC 20515-3008
-  voice: 202-225-7919
 links:
 - url: https://menendez.house.gov
   note: website
-ids:
-  twitter: RepMenendez
+- url: https://menendez.house.gov/
 other_names:
 - name: Menendez
+- name: Menendez, R.
+- name: R. Menendez
+- name: R.J. Menendez
+- name: Robert Menendez
+ids:
+  twitter: RepMenendez
 other_identifiers:
 - scheme: bioguide
   identifier: M001226
@@ -44,3 +48,8 @@ other_identifiers:
   identifier: '205678'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Rob_Menendez_(New_Jersey)
+- url: https://en.wikipedia.org/wiki/Rob_Menendez
+- url: https://menendez.house.gov
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/rob-menendez-89630345

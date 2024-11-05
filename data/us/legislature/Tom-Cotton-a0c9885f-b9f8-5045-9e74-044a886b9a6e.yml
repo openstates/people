@@ -2,64 +2,47 @@ id: ocd-person/a0c9885f-b9f8-5045-9e74-044a886b9a6e
 name: Tom Cotton
 given_name: Tom
 family_name: Cotton
-gender: M
-birth_date: 1977-05-13
+birth_date: '1977-05-13'
+gender: Male
+email: https://www.cotton.senate.gov/contact/contact-tom
 image: https://theunitedstates.io/images/congress/450x550/C001095.jpg
 party:
-- start_date: '2013-01-03'
-  end_date: '2027-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2013-01-03'
-  end_date: '2015-01-03'
+- start_date: 2015-01-06
+  end_date: 2030-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: Arkansas
+- start_date: 2013-01-03
+  end_date: 2015-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: AR-4
-- start_date: '2015-01-06'
-  end_date: '2021-01-03'
+- start_date: 2015-01-06
+  end_date: 2021-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Arkansas
-- start_date: '2021-01-03'
-  end_date: '2027-01-03'
+- start_date: 2021-01-03
+  end_date: 2027-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Arkansas
-offices:
-- classification: capitol
-  address: 326 Russell Senate Office Building Washington DC 20510
-  voice: 202-224-2353
-- classification: district
-  address: 106 W. Main St. Suite 410; El Dorado, AR 71730
-  voice: 870-864-8582
-  fax: 870-864-8571
-  name: 'District Office #1'
-- classification: district
-  address: 300 S. Church Suite 338; Jonesboro, AR 72401
-  voice: 870-933-6223
-  fax: 870-933-6596
-  name: 'District Office #2'
-- classification: district
-  address: 1401 W. Capitol Ave. Suite 235; Little Rock, AR 72201
-  voice: 501-223-9081
-  fax: 501-223-9105
-  name: 'District Office #3'
-- classification: district
-  address: 1108 S. Old Missouri Rd. Suite B; Springdale, AR 72764
-  voice: 479-751-0879
-  fax: 479-927-1092
-  name: 'District Office #4'
 links:
-- url: https://www.cotton.senate.gov
-  note: website
 - url: https://www.cotton.senate.gov/contact/contact-tom
   note: contact form
+- url: https://www.cotton.senate.gov
+  note: website
+other_names:
+- name: Cotton (R-AR)
+- name: Cotton, T.
+- name: T. Cotton
+- name: T.B. Cotton
 ids:
   twitter: SenTomCotton
   youtube: UCXEk6mokWBajIpNatbjnwSg
   facebook: SenatorTomCotton
-other_names:
-- name: Cotton (R-AR)
 other_identifiers:
 - scheme: govtrack
   identifier: '412508'
@@ -93,3 +76,10 @@ other_identifiers:
   identifier: kg:/m/02g3ds
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Tom_Cotton
+- url: https://en.wikipedia.org/wiki/Tom_Cotton
+- url: https://justfacts.votesmart.org/candidate/biography/135651/tom-cotton
+- url: https://theunitedstates.io
+- url: https://www.cotton.senate.gov
+- url: https://www.govtrack.us/congress/members/tom_cotton/412508
+- url: https://www.linkedin.com/in/tom-cotton-8756857
