@@ -2,69 +2,70 @@ id: ocd-person/3bb4a99e-9448-5b35-86cd-114bd035535e
 name: Tim Scott
 given_name: Tim
 family_name: Scott
-gender: M
 birth_date: 1965-09-19
+gender: Male
+email: https://www.scott.senate.gov/contact/email-me/
 image: https://theunitedstates.io/images/congress/450x550/S001184.jpg
 party:
-- start_date: '2011-01-05'
-  end_date: '2029-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2011-01-05'
-  end_date: '2013-01-02'
+- start_date: 2023-01-03
+  end_date: 2029-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: South Carolina
+- start_date: 2017-01-03
+  end_date: 2023-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: South Carolina
+- start_date: 2015-01-06
+  end_date: 2017-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: South Carolina
+- start_date: 2013-01-03
+  end_date: 2015-01-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: South Carolina
+- start_date: 2011-01-05
+  end_date: 2013-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: SC-1
-- start_date: '2013-01-03'
-  end_date: '2015-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: South Carolina
-- start_date: '2015-01-06'
-  end_date: '2017-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: South Carolina
-- start_date: '2017-01-03'
-  end_date: '2023-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: South Carolina
-- start_date: '2023-01-03'
-  end_date: '2029-01-03'
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: South Carolina
 offices:
 - classification: capitol
-  address: 104 Hart Senate Office Building Washington DC 20510
+  address: 104 Hart Senate Office Building, Washington, DC 20510
   voice: 202-224-6121
+  fax: 202-228-5143
 - classification: district
-  address: 1901 Main St. Suite 1425; Columbia, SC 29201
+  address: 1901 Main St. Suite 1425, Columbia, SC 29201
   voice: 803-771-6112
   fax: 855-802-9355
-  name: 'District Office #1'
 - classification: district
-  address: 104 S. Main St. Suite 803; Greenville, SC 29601
-  voice: 864-233-5366
-  fax: 855-802-9355
-  name: 'District Office #2'
-- classification: district
-  address: 2500 City Hall Ln. 3rd Floor Suite; North Charleston, SC 29406
+  address: 2500 City Hall Lane 3rd Floor Suite, North Charleston, SC 29406
   voice: 843-727-4525
   fax: 855-802-9355
-  name: 'District Office #3'
+- classification: district
+  address: 301 N. Main St. Suite 1006, Greenville, SC 29601
+  voice: 864-233-5366
+  fax: 855-802-9355
 links:
 - url: https://www.scott.senate.gov
   note: website
 - url: https://www.scott.senate.gov/contact/email-me
   note: contact form
+- url: https://www.scott.senate.gov/
+other_names:
+- name: Scott (R-SC)
+- name: Scott, T.
+- name: T. Scott
+- name: T.E. Scott
 ids:
   twitter: SenatorTimScott
   youtube: UCSfAsbG80CNInSKrtpKoL-w
   facebook: SenatorTimScott
-other_names:
-- name: Scott (R-SC)
 other_identifiers:
 - scheme: bioguide
   identifier: S001184
@@ -100,3 +101,10 @@ other_identifiers:
   identifier: kg:/m/0c407g6
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Tim_Scott
+- url: https://en.wikipedia.org/wiki/Tim_Scott_%28politician%29
+- url: https://justfacts.votesmart.org/candidate/11940/tim-scott
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/tim_scott/412471
+- url: https://www.linkedin.com/in/senatortimscott
+- url: https://www.scott.senate.gov

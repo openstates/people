@@ -2,82 +2,72 @@ id: ocd-person/04db1dc5-1903-5913-a439-fed236ff85a3
 name: Daniel Webster
 given_name: Daniel
 family_name: Webster
-gender: M
 birth_date: 1949-04-27
+gender: Male
+email: https://webster.house.gov/email-me
 image: https://theunitedstates.io/images/congress/450x550/W000806.jpg
 party:
-- start_date: '2011-01-05'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2011-01-05'
-  end_date: '2013-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-11
+- start_date: 2021-01-03
+  end_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-11
+- start_date: 2019-01-03
+  end_date: 2021-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-11
+- start_date: 2017-01-03
+  end_date: 2019-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-11
+- start_date: 2015-01-06
+  end_date: 2017-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-10
+- start_date: 2013-01-03
+  end_date: 2015-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: FL-10
+- start_date: 2011-01-05
+  end_date: 2013-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: FL-8
-- start_date: '2013-01-03'
-  end_date: '2015-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: FL-10
-- start_date: '2015-01-06'
-  end_date: '2017-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: FL-10
-- start_date: '2017-01-03'
-  end_date: '2019-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: FL-11
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: FL-11
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: FL-11
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: FL-11
 offices:
 - classification: capitol
-  address: 2184 Rayburn House Office Building Washington DC 20515-0911
+  address: 2184 Rayburn House Office Building, Washington, DC 20515
   voice: 202-225-1002
 - classification: district
-  address: 15 N. Main Street Suite B; Brooksville, FL 34601
-  voice: 352-241-9230
-  fax: 352-241-9181
-  name: 'District Office #1'
-- classification: district
-  address: 212 W. Main St. Suite 208A; Inverness, FL 34450
-  voice: 352-241-9204
-  fax: 352-241-9181
-  name: 'District Office #2'
-- classification: district
-  address: '318 S 2nd St # A; Leesburg, FL 34748-5805'
+  address: 1200 Oakley Seaver Drive Suite 203, Clermont, FL 34711
   voice: 352-241-9220
-  fax: 352-241-9220
-  name: 'District Office #3'
 - classification: district
-  address: 8015 E County Rd 466 Suite B; The Villages, FL 32162
+  address: 8015 E. County Road 466 Suite B, The Villages, FL 32162
   voice: 352-383-3552
-  fax: 352-241-9181
-  name: 'District Office #4'
+  fax: 352-241-9220
 links:
 - url: https://webster.house.gov
   note: website
+- url: https://webster.house.gov/home
+other_names:
+- name: D. Webster
+- name: D.A. Webster
+- name: Webster (FL)
+- name: Webster, D.
 ids:
   twitter: RepWebster
   youtube: UCCoX4VdU7U11eGEA0lbRtLw
   facebook: RepWebster
-other_names:
-- name: Webster (FL)
 other_identifiers:
 - scheme: bioguide
   identifier: W000806
@@ -111,3 +101,11 @@ other_identifiers:
   identifier: kg:/m/03cg47l
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Daniel_Webster_(Florida)
+- url: https://en.wikipedia.org/wiki/Daniel_Webster_(Florida_politician)
+- url: https://justfacts.votesmart.org/candidate/24302/daniel-webster
+- url: https://theunitedstates.io
+- url: https://webster.house.gov/biography
+- url: https://webster.house.gov/home
+- url: https://www.electwebster.com/meet-daniel
+- url: https://www.govtrack.us/congress/members/daniel_webster/412410
