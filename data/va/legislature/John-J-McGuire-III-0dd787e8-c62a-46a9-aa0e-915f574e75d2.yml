@@ -2,13 +2,18 @@ id: ocd-person/0dd787e8-c62a-46a9-aa0e-915f574e75d2
 name: John McGuire
 given_name: John
 family_name: McGuire
-birth_date: '1968-08-24'
+birth_date: 1968-08-24
 gender: Male
 email: senatormcguire@senate.virginia.gov
 image: https://apps.senate.virginia.gov/Senator/images/member_photos/McGuire10
 party:
 - name: Republican
 roles:
+- start_date: 2024-11-05
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:/government
+  district: VA-5
 - start_date: 2024-01-10
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:va/government
@@ -52,3 +57,5 @@ sources:
 - url: https://lis.virginia.gov/cgi-bin/legp604.exe?201+mbr+H300
 - url: https://lis.virginia.gov/cgi-bin/legp604.exe?221+mbr+H300
 - url: https://lis.virginia.gov/cgi-bin/legp604.exe?241+mbr+S123
+- url: https://www.linkedin.com/in/john-j-mcguire
+- url: https://www.mcguireva.com/about
