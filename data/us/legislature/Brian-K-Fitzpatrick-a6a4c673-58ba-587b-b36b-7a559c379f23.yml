@@ -1,48 +1,52 @@
 id: ocd-person/a6a4c673-58ba-587b-b36b-7a559c379f23
-name: Brian K. Fitzpatrick
+name: Brian Fitzpatrick
 given_name: Brian
 family_name: Fitzpatrick
-middle_name: K.
-gender: M
 birth_date: 1973-12-17
+gender: Male
+email: https://fitzpatrick.house.gov/email
 image: https://theunitedstates.io/images/congress/450x550/F000466.jpg
 party:
-- start_date: '2017-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2017-01-03'
-  end_date: '2019-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-1
+- start_date: 2021-01-03
+  end_date: 2023-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-1
+- start_date: 2019-01-03
+  end_date: 2021-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: PA-1
+- start_date: 2017-01-03
+  end_date: 2019-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: PA-8
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PA-1
-- start_date: '2021-01-03'
-  end_date: '2023-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PA-1
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: PA-1
 offices:
 - classification: capitol
-  address: 271 Cannon House Office Building Washington DC 20515-3801
+  address: 271 Cannon House Office Building, Washington, DC 20515
   voice: 202-225-4276
+  fax: 202-225-9511
 - classification: district
-  address: 1717 Langhorne-Newtown Rd. Suite 400; Langhorne, PA 19047
+  address: 1717 Langhorne-Newtown Road Suite 225, Langhorne, PA 19047
   voice: 215-579-8102
   fax: 215-579-8109
-  name: 'District Office #1'
 links:
 - url: https://fitzpatrick.house.gov
   note: website
+- url: https://fitzpatrick.house.gov/
+other_names:
+- name: B. Fitzpatrick
+- name: B.K. Fitzpatrick
+- name: Brian K. Fitzpatrick
+- name: Fitzpatrick, B.
 ids:
   twitter: RepBrianFitz
   youtube: UCYMNcgHss4_Q5JY2vSvMpgw
@@ -74,3 +78,9 @@ other_identifiers:
   identifier: Brian Fitzpatrick
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Brian_Fitzpatrick
+- url: https://en.wikipedia.org/wiki/Brian_Fitzpatrick_(American_politician)
+- url: https://fitzpatrick.house.gov
+- url: https://justfacts.votesmart.org/candidate/biography/167708/brian-fitzpatrick
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/brian_fitzpatrick/412721

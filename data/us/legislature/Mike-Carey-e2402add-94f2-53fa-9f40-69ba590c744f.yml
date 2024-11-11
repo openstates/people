@@ -2,31 +2,39 @@ id: ocd-person/e2402add-94f2-53fa-9f40-69ba590c744f
 name: Mike Carey
 given_name: Mike
 family_name: Carey
-gender: M
 birth_date: 1971-03-13
+gender: Male
+email: https://carey.house.gov/address_authentication?form=/contact/email-me
 image: https://theunitedstates.io/images/congress/450x550/C001126.jpg
 party:
-- start_date: '2021-11-04'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2021-11-04'
-  end_date: '2023-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: OH-15
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2021-11-04
+  end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: OH-15
 offices:
 - classification: capitol
-  address: 1433 Longworth House Office Building Washington DC 20515-3515
+  address: 1433 Longworth House Office Building, Washington, DC 20515
   voice: 202-225-2015
+  fax: 202-225-3529
+- classification: district
+  address: 140 E. Town St. Suite 1200, Columbus, OH 43215
+  voice: 614-927-6902
 links:
 - url: https://carey.house.gov
   note: website
+- url: https://carey.house.gov/
+other_names:
+- name: Carey, M.
+- name: M. Carey
+- name: M.T.W. Carey
 ids:
   twitter: RepMikeCarey
 other_identifiers:
@@ -44,3 +52,9 @@ other_identifiers:
   identifier: Q108010312
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Mike_Carey_(Ohio)
+- url: https://carey.house.gov
+- url: https://en.wikipedia.org/wiki/Mike_Carey_(politician)
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/mike_carey/456864
+- url: https://www.linkedin.com/in/michaeltwcarey

@@ -2,38 +2,47 @@ id: ocd-person/30665d55-5695-5ede-930d-c92e63e4ee65
 name: Mark Kelly
 given_name: Mark
 family_name: Kelly
-gender: M
 birth_date: 1964-02-21
+gender: Male
+email: https://www.kelly.senate.gov/contact/contact-form/
 image: https://theunitedstates.io/images/congress/450x550/K000377.jpg
 party:
-- start_date: '2020-12-02'
-  end_date: '2029-01-03'
-  name: Democratic
+- name: Democratic
 roles:
-- start_date: '2020-12-02'
-  end_date: '2023-01-03'
+- start_date: 2023-01-03
+  end_date: 2029-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Arizona
-- start_date: '2023-01-03'
-  end_date: '2029-01-03'
+- start_date: 2020-12-02
+  end_date: 2023-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Arizona
 offices:
 - classification: capitol
-  address: 516 Hart Senate Office Building Washington DC 20510
+  address: 516 Hart Senate Office Building, Washington, DC 20510
   voice: 202-224-2235
+- classification: district
+  address: 100 N. Stone Ave. Suite 600, Tucson, AZ 85701
+  voice: 520-475-5177
+- classification: district
+  address: 2201 E. Camelback Road Suite 115, Phoenix, AZ 85016
+  voice: 602-671-7901
 links:
 - url: https://www.kelly.senate.gov
   note: website
 - url: https://www.kelly.senate.gov/contact/contact-form/
   note: contact form
+- url: https://www.kelly.senate.gov/
+other_names:
+- name: Kelly (D-AZ)
+- name: Kelly, M.
+- name: M. Kelly
+- name: M.E. Kelly
 ids:
   twitter: SenMarkKelly
   facebook: SenMarkKelly
-other_names:
-- name: Kelly (D-AZ)
 other_identifiers:
 - scheme: bioguide
   identifier: K000377
@@ -55,3 +64,10 @@ other_identifiers:
   identifier: '190594'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Mark_Kelly
+- url: https://en.wikipedia.org/wiki/Mark_Kelly_%28astronaut%29
+- url: https://justfacts.votesmart.org/candidate/biography/190594/mark-kelly
+- url: https://markkelly.com/bio
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/mark_kelly/456794
+- url: https://www.kelly.senate.gov

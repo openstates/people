@@ -2,27 +2,33 @@ id: ocd-person/f32918a9-b738-5f20-8c3e-f95c7fda80cb
 name: John James
 given_name: John
 family_name: James
-middle_name: Edwards
-gender: M
 birth_date: 1981-06-08
+gender: Male
+email: https://james.house.gov/contact/
 image: https://theunitedstates.io/images/congress/450x550/J000307.jpg
 party:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2023-01-03'
-  end_date: '2025-01-03'
+- start_date: 2023-01-03
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: MI-10
 offices:
 - classification: capitol
-  address: 1319 Longworth House Office Building Washington DC 20515-2210
+  address: 1319 Longworth House Office Building, Washington, DC 20515
   voice: 202-225-4961
+- classification: district
+  address: 30500 Van Dyke Ave. Suite 306, Warren, MI 48093
+  voice: 586-498-7122
 links:
 - url: https://james.house.gov
   note: website
+- url: https://james.house.gov/
+other_names:
+- name: J. James
+- name: J.E. James
+- name: James, J.
 other_identifiers:
 - scheme: bioguide
   identifier: J000307
@@ -44,3 +50,9 @@ other_identifiers:
   identifier: '181062'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/John_James_(Michigan)
+- url: https://en.wikipedia.org/wiki/John_E._James
+- url: https://james.house.gov
+- url: https://justfacts.votesmart.org/candidate/biography/181062/john-james
+- url: https://theunitedstates.io
+- url: https://www.linkedin.com/in/john-james-29732757

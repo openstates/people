@@ -2,50 +2,63 @@ id: ocd-person/09a67947-f66a-55ac-b4ba-5c656ad7f67d
 name: Roger Marshall
 given_name: Roger
 family_name: Marshall
-gender: M
 birth_date: 1960-08-09
+gender: Male
+email: https://www.marshall.senate.gov/contact/contact-form/
 image: https://theunitedstates.io/images/congress/450x550/M001198.jpg
 party:
-- start_date: '2017-01-03'
-  end_date: '2027-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2017-01-03'
-  end_date: '2019-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: KS-1
-- start_date: '2019-01-03'
-  end_date: '2021-01-03'
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: KS-1
-- start_date: '2021-01-03'
-  end_date: '2027-01-03'
+- start_date: 2021-01-03
+  end_date: 2027-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Kansas
+- start_date: 2019-01-03
+  end_date: 2021-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: KS-1
+- start_date: 2017-01-03
+  end_date: 2019-01-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: KS-1
 offices:
 - classification: capitol
-  address: 479A Russell Senate Office Building Washington DC 20510
+  address: 479A Russell Senate Office Building, Washington, DC 20510
   voice: 202-224-4774
 - classification: district
-  address: 200 E. Iron Ave.; Salina, KS 67401
-  voice: 785-829-9000
-  name: 'District Office #1'
+  address: 100 S. Market St. Suite 102, Wichita, KS 67202
+  voice: 316-803-6120
 - classification: district
-  address: 816 Campus Dr. Suite 500; Garden City, KS 67846
+  address: 204 S. Santa Fe Ave. Suite 1, Salina, KS 67401
+  voice: 785-829-9000
+- classification: district
+  address: 402B N. Broadway, Pittsburg, KS 66762
+  voice: 620-404-7016
+- classification: district
+  address: 7011 W. 121st St. Suite 100, Overland Park, KS 66209
+  voice: 913-879-7070
+- classification: district
+  address: 800 SW Jackson St. Suite 600, Topeka, KS 66612
+  voice: 785-414-7501
+- classification: district
+  address: 921 Lareu St. Suite C, Garden City, KS 67846
   voice: 620-765-7800
-  name: 'District Office #2'
 links:
 - url: https://www.marshall.senate.gov
   note: website
 - url: https://www.marshall.senate.gov/contact/
   note: contact form
-ids:
-  twitter: SenatorMarshall
+- url: https://www.marshall.senate.gov/
 other_names:
 - name: Marshall (R-KS)
+- name: Marshall, R.
+- name: R. Marshall
+- name: R.W. Marshall
+ids:
+  twitter: SenatorMarshall
 other_identifiers:
 - scheme: bioguide
   identifier: M001198
@@ -77,3 +90,9 @@ other_identifiers:
   identifier: Roger Marshall
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Roger_Marshall
+- url: https://en.wikipedia.org/wiki/Roger_Marshall_(politician)
+- url: https://justfacts.votesmart.org/candidate/biography/172080/roger-marshall
+- url: https://theunitedstates.io
+- url: https://www.govtrack.us/congress/members/roger_marshall/412704
+- url: https://www.marshall.senate.gov
