@@ -2,7 +2,7 @@ id: ocd-person/99fd8cce-55ba-493a-b787-e339a57de7df
 name: Steve Bradford
 given_name: Steve
 family_name: Bradford
-birth_date: '1960-01-12'
+birth_date: 1960-01-12
 gender: Male
 email: senator.bradford@senate.ca.gov
 image: https://www.senate.ca.gov/sites/senate.ca.gov/files/senator_photos/bradford.jpg
@@ -10,19 +10,20 @@ party:
 - name: Democratic
 roles:
 - start_date: 2016-12-05
+  end_date: 2024-12-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '35'
-- start_date: 2009-01-01
-  end_date: 2012-12-31
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
-  district: '51'
 - start_date: 2013-01-01
   end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
   district: '62'
+- start_date: 2009-01-01
+  end_date: 2012-12-31
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '51'
 offices:
 - classification: capitol
   address: 1021 O St., Suite 7210, Sacramento, CA 95814
