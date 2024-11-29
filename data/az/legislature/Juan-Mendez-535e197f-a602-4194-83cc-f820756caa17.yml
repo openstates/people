@@ -2,7 +2,7 @@ id: ocd-person/535e197f-a602-4194-83cc-f820756caa17
 name: Juan Mendez
 given_name: Juan
 family_name: Mendez
-birth_date: '1985-05-18'
+birth_date: 1985-05-18
 gender: Male
 email: jmendez@azleg.gov
 image: http://www.azleg.gov/alisImages/MemberPhotos/52leg/House/MENDEZ.gif
@@ -10,15 +10,16 @@ party:
 - name: Democratic
 roles:
 - start_date: 2023-01-09
+  end_date: 2025-01-12
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '8'
-- end_date: 2014-12-31
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:az/government
-  district: '26'
 - end_date: 2023-01-08
   type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '26'
+- end_date: 2014-12-31
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '26'
 offices:
