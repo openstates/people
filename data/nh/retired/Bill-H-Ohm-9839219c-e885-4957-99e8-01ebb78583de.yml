@@ -2,16 +2,25 @@ id: ocd-person/9839219c-e885-4957-99e8-01ebb78583de
 name: Bill H. Ohm
 given_name: Bill H.
 family_name: Ohm
+gender: Male
 image: http://www.gencourt.state.nh.us/house/images/memberpics/376994.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-12-31'
+- start_date: 2024-12-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 10
+- end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 36
 links:
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+other_names:
+- name: B. Ohm
+- name: B.H. Ohm
+- name: Ohm, B.
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL000268
@@ -22,8 +31,10 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: NHL001273
 sources:
-- url: http://www.gencourt.state.nh.us/house/members/member.aspx?member=376994
-- url: http://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/downloads/Members.txt
+- url: https://www.gencourt.state.nh.us/house/members/member.aspx?member=376994
+- url: https://ballotpedia.org/Bill_Ohm
+- url: https://billohm.com
 extras:
   first_name: Bill
   last_name: Ohm
