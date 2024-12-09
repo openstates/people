@@ -9,18 +9,19 @@ party:
 - name: Democratic
 roles:
 - start_date: 2023-01-09
+  end_date: 2025-01-07
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '28'
+- end_date: 2023-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:co/government
+  district: '29'
 - start_date: 2011-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:co/government
   district: '42'
-- end_date: 2023-01-08
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:co/government
-  district: '29'
 offices:
 - classification: capitol
   address: 200 E. Colfax, Denver, CO 80203
