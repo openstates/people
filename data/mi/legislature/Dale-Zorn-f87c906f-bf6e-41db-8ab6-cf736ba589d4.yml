@@ -2,7 +2,7 @@ id: ocd-person/f87c906f-bf6e-41db-8ab6-cf736ba589d4
 name: Dale Zorn
 given_name: Dale
 family_name: Zorn
-birth_date: '1953-12-31'
+birth_date: 1953-12-31
 gender: Male
 email: dalezorn@house.mi.gov
 image: https://www.house.mi.gov/media/Representatives/Zorn-034.jpg
@@ -10,18 +10,19 @@ party:
 - name: Republican
 roles:
 - start_date: 2023-01-01
+  end_date: 2024-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '34'
+- end_date: 2023-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '17'
 - start_date: 2011-01-01
   end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '56'
-- end_date: 2023-01-01
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
-  district: '17'
 offices:
 - classification: capitol
   address: Room N-798, Anderson House Office Building P.O. Box 30014, Lansing, MI
