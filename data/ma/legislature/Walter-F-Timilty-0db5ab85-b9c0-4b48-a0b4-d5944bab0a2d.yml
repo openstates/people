@@ -2,7 +2,7 @@ id: ocd-person/0db5ab85-b9c0-4b48-a0b4-d5944bab0a2d
 name: Walter Timilty
 given_name: Walter
 family_name: Timilty
-birth_date: '1969-07-19'
+birth_date: 1969-07-19
 gender: Male
 email: walter.timilty@masenate.gov
 image: https://malegislature.gov/Legislators/Profile/170/WFT0.jpg
@@ -10,18 +10,19 @@ party:
 - name: Democratic
 roles:
 - start_date: 2023-01-04
+  end_date: 2024-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: Norfolk, Plymouth and Bristol
+- end_date: 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
+  district: Norfolk, Bristol and Plymouth
 - start_date: 2011-01-01
   end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ma/government
   district: 7th Norfolk
-- end_date: 2023-01-04
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ma/government
-  district: Norfolk, Bristol and Plymouth
 offices:
 - classification: capitol
   address: Room 213-B, State House 24 Beacon St., Boston, MA 02133
