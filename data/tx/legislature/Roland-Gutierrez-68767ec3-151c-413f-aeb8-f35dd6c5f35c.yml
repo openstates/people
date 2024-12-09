@@ -19,9 +19,6 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
   district: '119'
 offices:
-- classification: capitol-mail
-  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
-  voice: 512-463-0119
 - classification: district
   address: 1313 SE Military Drive Suite 207, San Antonio, TX 78214
   voice: 210-532-2302
@@ -29,6 +26,9 @@ offices:
 - classification: district
   address: 2401 Garner Field Road Building Q2, Uvalde, TX 78801
   voice: 830-278-1234
+- classification: district-mail
+  address: P.O. Box 12068 Capitol Station, Austin, TX 78711
+  voice: 512-463-0119
 links:
 - url: https://house.texas.gov/members/member-page/?district=119
 - url: https://senate.texas.gov/member.php?d=19
