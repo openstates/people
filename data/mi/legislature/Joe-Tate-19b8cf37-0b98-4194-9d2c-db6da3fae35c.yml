@@ -3,12 +3,16 @@ name: Joe Tate
 given_name: Joe
 family_name: Tate
 gender: Male
-email: joetate@house.mi.gov
 image: https://housedems.com/sites/default/files/Images/Representative_Images/D002_Joe_Tate/002_Tate.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2025-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '9'
 - start_date: 2023-01-01
+  end_date: 2024-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '10'

@@ -2,23 +2,36 @@ id: ocd-person/153bfb26-334e-52a4-9659-424ef09470eb
 name: Tony Wied
 given_name: Tony
 family_name: Wied
-gender: M
 birth_date: 1976-05-03
+gender: Male
+email: https://wied.house.gov/address_authentication?form=/contact/email-me
 image: https://theunitedstates.io/images/congress/450x550/W000829.jpg
 party:
-- start_date: '2024-11-05'
-  end_date: '2025-01-03'
-  name: Republican
+- name: Republican
 roles:
-- start_date: '2024-11-05'
-  end_date: '2025-01-03'
+- start_date: 2024-11-12
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WI-8
+- start_date: 2024-11-05
+  end_date: 2025-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: WI-8
 offices:
 - classification: capitol
-  address: 1211 Longworth House Office Building Washington DC 20515-4908
+  address: 424 Cannon House Office Building, Washington, DC 20515
   voice: 202-225-5665
+- classification: district
+  address: 1702 Scheuring Road Suite B, De Pere, WI 54115
+  voice: 920-301-4500
+links:
+- url: https://wied.house.gov/
+other_names:
+- name: A.C. Wied
+- name: T. Wied
+- name: Wied, T.
 other_identifiers:
 - scheme: bioguide
   identifier: W000829
@@ -36,3 +49,10 @@ other_identifiers:
   identifier: '218131'
 sources:
 - url: https://theunitedstates.io/
+- url: https://ballotpedia.org/Tony_Wied
+- url: https://en.wikipedia.org/wiki/Tony_Wied
+- url: https://justfacts.votesmart.org/candidate/218131/tony-wied
+- url: https://theunitedstates.io
+- url: https://tonywiedforcongress.com
+- url: https://wied.house.gov
+- url: https://www.linkedin.com/in/tony-wied-0b3b28145

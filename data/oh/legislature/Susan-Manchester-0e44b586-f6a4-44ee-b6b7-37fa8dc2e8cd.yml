@@ -2,14 +2,18 @@ id: ocd-person/0e44b586-f6a4-44ee-b6b7-37fa8dc2e8cd
 name: Susan Manchester
 given_name: Susan
 family_name: Manchester
-birth_date: '1987-06-22'
+birth_date: 1987-06-22
 gender: Female
-email: rep78@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/susan-manchester/headshots/thumbnails/medium/susan-manchester-january-2023-headshot_medium.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2025-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '12'
 - start_date: 2023-01-01
+  end_date: 2025-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '78'

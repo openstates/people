@@ -2,14 +2,18 @@ id: ocd-person/57925a0b-3010-440d-a012-c8465535c13e
 name: Art Staed
 given_name: Art
 family_name: Staed
-birth_date: '1949-04-21'
+birth_date: 1949-04-21
 gender: Male
-email: art.staed@legis.iowa.gov
 image: https://www.legis.iowa.gov/photo?action=getPhoto&ga=90&pid=10743
 party:
 - name: Democratic
 roles:
+- start_date: 2025-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '40'
 - start_date: 2023-01-01
+  end_date: 2025-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '80'
