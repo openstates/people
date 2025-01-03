@@ -3,12 +3,16 @@ name: Jim Townsend
 given_name: Jim
 family_name: Townsend
 gender: Male
-email: townsend@pvtn.net
 image: https://www.nmlegis.gov/Images/Legislators/House/HTOWJ.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2025-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nm/government
+  district: '34'
 - start_date: 2015-01-20
+  end_date: 2025-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nm/government
   district: '54'
