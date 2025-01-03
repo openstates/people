@@ -3,11 +3,15 @@ name: Regina Weiss
 given_name: Regina
 family_name: Weiss
 gender: Female
-email: reginaweiss@house.mi.gov
 party:
 - name: Democratic
 roles:
+- start_date: 2025-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '5'
 - start_date: 2023-01-01
+  end_date: 2024-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '6'
@@ -17,7 +21,7 @@ roles:
   district: '27'
 offices:
 - classification: capitol
-  address: Room N-791, Anderson House Office Building P.O. Box 30014, Lansing, MI
+  address: Room CB-371, Anderson House Office Building P.O. Box 30014, Lansing, MI
     48909
   voice: 517-373-0823
 links:
