@@ -3,11 +3,15 @@ name: Helena Scott
 given_name: Helena
 family_name: Scott
 gender: Female
-email: helenascott@house.mi.gov
 party:
 - name: Democratic
 roles:
+- start_date: 2025-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '8'
 - start_date: 2021-01-01
+  end_date: 2024-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '7'

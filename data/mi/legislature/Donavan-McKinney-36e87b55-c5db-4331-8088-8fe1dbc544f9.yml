@@ -2,13 +2,17 @@ id: ocd-person/36e87b55-c5db-4331-8088-8fe1dbc544f9
 name: Donavan McKinney
 given_name: Donavan
 family_name: McKinney
-birth_date: '1992-06-16'
+birth_date: 1992-06-16
 gender: Male
-email: donavanmckinney@house.mi.gov
 party:
 - name: Democratic
 roles:
+- start_date: 2025-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '11'
 - start_date: 2023-01-01
+  end_date: 2024-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '14'
