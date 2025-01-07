@@ -2,18 +2,37 @@ id: ocd-person/ac0ea194-e426-45e6-9882-670b9ca78414
 name: Riley Moore
 given_name: Riley
 family_name: Moore
+birth_date: 1980-07-01
+gender: Male
 image: http://www.legis.state.wv.us/images/members/2017/house/moore_riley.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-30'
+- start_date: 2025-01-03
+  end_date: 2030-01-01
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: WV-2
+- end_date: 2018-11-30
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '67'
+offices:
+- classification: capitol
+  address: 1337 Longworth House Office Building, Washington, DC
+  voice: 202-225-2711
 links:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Moore
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Moore
+other_names:
+- name: Moore, R.
+- name: R. Moore
+- name: R.M. Moore
 other_identifiers:
 - scheme: legacy_openstates
   identifier: WVL000374
 sources:
-- url: http://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Moore
+- url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Moore
+- url: https://ballotpedia.org/Riley_Moore
+- url: https://en.wikipedia.org/wiki/Riley_Moore
+- url: https://justfacts.votesmart.org/candidate/biography/167483/riley-moore
+- url: https://www.mooreforwv.com/about
