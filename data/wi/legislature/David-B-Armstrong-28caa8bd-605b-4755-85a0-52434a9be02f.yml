@@ -3,15 +3,19 @@ name: Dave Armstrong
 given_name: Dave
 family_name: Armstrong
 gender: Male
-email: rep.armstrong@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2444.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '67'
 - start_date: 2021-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '75'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2268
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2268
@@ -28,13 +32,13 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/75/armstrong
 - url: https://ballotpedia.org/David_Armstrong_(Wisconsin)
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2268
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2444
   note: member detail page
-- url: https://legis.wisconsin.gov/assembly/75/armstrong
 extras:
   website: https://legis.wisconsin.gov/assembly/75/armstrong
   extra phone: (888) 534-0075
