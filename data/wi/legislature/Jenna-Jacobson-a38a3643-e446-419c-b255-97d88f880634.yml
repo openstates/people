@@ -3,15 +3,19 @@ name: Jenna Jacobson
 given_name: Jenna
 family_name: Jacobson
 gender: Female
-email: rep.jacobson@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2545.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '50'
 - start_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '43'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2545
 - url: https://legis.wisconsin.gov/assembly/43/jacobson/
@@ -23,12 +27,12 @@ other_names:
 sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/43/jacobson
 - url: https://ballotpedia.org/Jenna_Jacobson
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2545
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Jenna_Jacobson
-- url: https://legis.wisconsin.gov/assembly/43/jacobson
 - url: https://www.linkedin.com/in/wisconsin-jenna-jacobson
 extras:
   website: https://legis.wisconsin.gov/assembly/43/jacobson/

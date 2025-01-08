@@ -3,15 +3,19 @@ name: Amanda Nedweski
 given_name: Amanda
 family_name: Nedweski
 gender: Female
-email: rep.nedweski@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2551.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '32'
 - start_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '61'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2551
 - url: https://legis.wisconsin.gov/assembly/61/Nedweski/
@@ -23,12 +27,12 @@ other_names:
 sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/61/Nedweski
 - url: https://ballotpedia.org/Amanda_Nedweski
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2551
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Amanda_Nedweski
-- url: https://legis.wisconsin.gov/assembly/61/Nedweski
 extras:
   website: https://legis.wisconsin.gov/assembly/61/Nedweski
   extra phone: (888) 529-0061

@@ -2,17 +2,21 @@ id: ocd-person/4e1004c1-d397-4a50-baeb-2d3fbbd2912f
 name: Jerry O'Connor
 given_name: Jerry
 family_name: O'Connor
-birth_date: '1953-09-14'
+birth_date: 1953-09-14
 gender: Male
-email: rep.o'connor@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2549.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '60'
 - start_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '52'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2549
 - url: https://legis.wisconsin.gov/assembly/52/oconnor/
@@ -23,12 +27,12 @@ other_names:
 sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/52/oconnor
 - url: https://ballotpedia.org/Jerry_O%E2%80%99Connor
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2549
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Jerry_L._O%27Connor
-- url: https://legis.wisconsin.gov/assembly/52/oconnor
 - url: https://www.linkedin.com/in/jerry-o-connor-7a06428
 extras:
   website: https://legis.wisconsin.gov/assembly/52/oconnor/

@@ -2,16 +2,20 @@ id: ocd-person/b51a470c-840d-404c-aebe-a7cb47c3edff
 name: Jeremy Trebas
 given_name: Jeremy
 family_name: Trebas
-birth_date: '1984-06-03'
+birth_date: 1984-06-03
 gender: Male
-email: jeremy.trebas@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '10'
 - start_date: 2023-01-02
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '13'
+  end_date: *id001
 - start_date: 2017-01-02
   end_date: 2019-01-07
   type: lower
@@ -23,7 +27,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '26'
 offices:
-- classification: capitol-mail
+- classification: district-mail
   address: Montana Senate P.O. Box 200500, Helena, MT 59620
   voice: 406-444-4800
 - classification: district-mail
@@ -37,6 +41,7 @@ links:
 other_names:
 - name: J. Trebas
 - name: Trebas, J.
+- name: Trebas, Jeremy
 other_identifiers:
 - scheme: legacy_openstates
   identifier: MTL000356

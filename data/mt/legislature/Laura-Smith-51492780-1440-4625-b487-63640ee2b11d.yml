@@ -3,16 +3,20 @@ name: Laura Smith
 given_name: Laura
 family_name: Smith
 gender: Female
-email: laura.smith@legmt.gov
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-06
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '40'
 - start_date: 2023-01-02
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '79'
+  end_date: *id001
 offices:
-- classification: capitol-mail
+- classification: district-mail
   address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
   voice: 406-444-4800
 - classification: district-mail
@@ -23,6 +27,7 @@ links:
 other_names:
 - name: L. Smith
 - name: Smith, L.
+- name: Smith, Laura
 sources:
 - url: https://ballotpedia.org/Laura_Smith_(Montana)
 - url: https://leg.mt.gov/legislator-information/roster/individual/7644

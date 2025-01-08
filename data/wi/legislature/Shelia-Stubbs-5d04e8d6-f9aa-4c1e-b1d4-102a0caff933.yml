@@ -3,15 +3,19 @@ name: Shelia Stubbs
 given_name: Shelia
 family_name: Stubbs
 gender: Female
-email: rep.stubbs@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2520.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '78'
 - start_date: 2019-01-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '77'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1931
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2198
@@ -26,6 +30,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/77/stubbs
 - url: https://ballotpedia.org/Shelia_Stubbs
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1931
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly
@@ -34,7 +39,6 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2520
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Shelia_Stubbs
-- url: https://legis.wisconsin.gov/assembly/77/stubbs
 extras:
   website: http://legis.wisconsin.gov/assembly/77/stubbs
   extra phone: (888) 534-0077

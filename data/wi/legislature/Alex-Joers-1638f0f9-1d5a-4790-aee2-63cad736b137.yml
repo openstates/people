@@ -2,17 +2,21 @@ id: ocd-person/1638f0f9-1d5a-4790-aee2-63cad736b137
 name: Alex Joers
 given_name: Alex
 family_name: Joers
-birth_date: '1992-08-27'
+birth_date: 1992-08-27
 gender: Male
-email: rep.joers@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2553.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '81'
 - start_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '79'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2553
 - url: https://legis.wisconsin.gov/assembly/79/joers/
@@ -24,13 +28,13 @@ other_names:
 sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
-- url: https://ballotpedia.org/Alex_Joers
 - url: https://board.countyofdane.com/supervisors/detail/9
+- url: https://legis.wisconsin.gov/assembly/79/joers
+- url: https://ballotpedia.org/Alex_Joers
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2553
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Alex_Joers
-- url: https://legis.wisconsin.gov/assembly/79/joers
 - url: https://www.linkedin.com/in/alex-joers-62b30b78
 extras:
   website: https://legis.wisconsin.gov/assembly/79/joers

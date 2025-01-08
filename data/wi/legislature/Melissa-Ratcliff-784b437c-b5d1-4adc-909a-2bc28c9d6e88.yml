@@ -3,15 +3,19 @@ name: Melissa Ratcliff
 given_name: Melissa
 family_name: Ratcliff
 gender: Female
-email: rep.ratcliff@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2546.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-06
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '16'
 - start_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '46'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2546
 - url: https://legis.wisconsin.gov/assembly/46/ratcliff/
@@ -23,13 +27,13 @@ other_names:
 sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/46/ratcliff
 - url: https://ballotpedia.org/Melissa_Ratcliff
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2546
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Melissa_Ratcliff#:~:text=She%20is%20a%20member%2Delect,of%20the%20Wisconsin%20State%20Assembly
 - url: https://justfacts.votesmart.org/candidate/biography/185930/melissa-ratcliff
-- url: https://legis.wisconsin.gov/assembly/46/ratcliff
 - url: https://www.linkedin.com/in/melissa-ratcliff-28471520
 extras:
   website: https://legis.wisconsin.gov/assembly/46/ratcliff/
