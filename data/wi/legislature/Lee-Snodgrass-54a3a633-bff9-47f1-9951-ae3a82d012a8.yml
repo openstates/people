@@ -3,15 +3,19 @@ name: Lee Snodgrass
 given_name: Lee
 family_name: Snodgrass
 gender: Female
-email: rep.snodgrass@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2514.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '52'
 - start_date: 2021-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '57'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2267
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2267
@@ -27,6 +31,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/57/snodgrass
 - url: https://ballotpedia.org/Lee_Snodgrass
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2267
@@ -34,7 +39,6 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2514
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Lee_Snodgrass
-- url: https://legis.wisconsin.gov/assembly/57/snodgrass
 - url: https://www.linkedin.com/in/leesnodgrass
 extras:
   website: http://legis.wisconsin.gov/assembly/57/snodgrass

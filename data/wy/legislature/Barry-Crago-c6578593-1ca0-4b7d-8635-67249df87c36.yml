@@ -1,19 +1,23 @@
 id: ocd-person/c6578593-1ca0-4b7d-8635-67249df87c36
 name: Barry Crago
-given_name: Barry Vincent
+given_name: Barry
 family_name: Crago
 gender: Male
-email: barry.crago@wyoleg.gov
-image: https://wyoleg.gov/LegislatorSummary/Photos/66th-CragoBarry.jpg
+image: https://wyoleg.gov/LegislatorSummary/Photos/68th-CragoBarry.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wy/government
+  district: '22'
 - start_date: 2021-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wy/government
   district: '40'
+  end_date: *id001
 offices:
-- classification: capitol-mail
+- classification: district-mail
   address: State Capitol 213, Cheyenne, WY 82002
 - classification: home
   address: 443 Lobban Ave., Buffalo, WY 82834
@@ -23,6 +27,10 @@ links:
 - url: https://wyoleg.gov/Legislators/2021/R/2078
   note: homepage
 - url: https://www.wyoleg.gov/Legislators/2023/H/2078
+other_names:
+- name: B. Crago
+- name: B.V. Crago
+- name: Crago, B.
 sources:
 - url: https://ballotpedia.org/Barry_Crago
 - url: https://en.wikipedia.org/wiki/Barry_Crago

@@ -1,6 +1,6 @@
 id: ocd-person/036ab735-ad82-450e-a5ca-098b1436cb90
-name: Calvin Musselman
-given_name: Calvin
+name: Cal Musselman
+given_name: Cal
 family_name: Musselman
 gender: Male
 email: cmusselman@le.utah.gov
@@ -8,14 +8,19 @@ image: https://le.utah.gov/images/legislator/MUSSECR.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2025-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '4'
 - start_date: 2019-01-01
+  end_date: 2025-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '9'
 offices:
-- classification: capitol-mail
-  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
-  voice: 801-538-1650
+- classification: capitol
+  address: None
+  voice: 801-773-1777
 - classification: home
   address: 4137 S. 4100 West, West Haven, UT 84401
   voice: 801-941-6188
@@ -38,9 +43,11 @@ links:
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist09.pdf
   note: district demographics
 - url: https://house.utleg.gov/rep/MUSSECR/
+- url: https://senate.utah.gov/sen/MUSSECR/
 other_names:
 - name: C. Musselman
 - name: C.R. Musselman
+- name: Calvin Musselman
 - name: Calvin R. Musselman
 - name: Musselman, C.
 - name: Musselman, C.R.
@@ -56,6 +63,7 @@ sources:
 - url: https://house.utleg.gov/rep/MUSSECR
 - url: https://justfacts.votesmart.org/candidate/biography/182138/cal-musselman
 - url: https://le.utah.gov/data/legislators.json
+- url: https://senate.utah.gov/sen/MUSSECR
 - url: https://www.linkedin.com/in/calvin-ray-musselman-0414301b
 extras:
   service start: January 1, 2019

@@ -2,17 +2,21 @@ id: ocd-person/b4554989-ede4-44a0-a541-c2aea2659d39
 name: Tyler August
 given_name: Tyler
 family_name: August
-birth_date: '1983-01-26'
+birth_date: 1983-01-26
 gender: Male
-email: rep.august@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2445.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '31'
 - start_date: 2011-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '32'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1534
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1826
@@ -31,6 +35,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/32/august
 - url: https://ballotpedia.org/Tyler_August
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1534
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1826
@@ -41,7 +46,6 @@ sources:
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Tyler_August
 - url: https://justfacts.votesmart.org/candidate/127109/tyler-august
-- url: https://legis.wisconsin.gov/assembly/32/august
 - url: https://www.linkedin.com/in/tyler-august-25740732
 extras:
   website: http://legis.wisconsin.gov/assembly/august/

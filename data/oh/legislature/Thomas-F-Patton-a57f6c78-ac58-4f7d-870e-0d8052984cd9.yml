@@ -2,14 +2,18 @@ id: ocd-person/a57f6c78-ac58-4f7d-870e-0d8052984cd9
 name: Tom Patton
 given_name: Tom
 family_name: Patton
-birth_date: '1953-11-03'
+birth_date: 1953-11-03
 gender: Male
-email: rep17@ohiohouse.gov
 image: https://www.legislature.ohio.gov/assets/people/thomas-f-patton/headshots/thumbnails/medium/thomas-f-patton-november-2023-headshot_medium.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2025-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '24'
 - start_date: 2023-01-01
+  end_date: 2025-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '17'

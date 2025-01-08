@@ -3,15 +3,19 @@ name: Will Penterman
 given_name: Will
 family_name: Penterman
 gender: Male
-email: rep.penterman@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2497.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '38'
 - start_date: 2021-07-26
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '37'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2398
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2398
@@ -28,13 +32,13 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/37/penterman
 - url: https://ballotpedia.org/William_Penterman
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2398
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2497
   note: member detail page
-- url: https://legis.wisconsin.gov/assembly/37/penterman
 extras:
   website: https://legis.wisconsin.gov/assembly/37/penterman
   extra phone: (888) 534-0037

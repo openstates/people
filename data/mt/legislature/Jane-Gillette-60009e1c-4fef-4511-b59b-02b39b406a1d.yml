@@ -7,17 +7,23 @@ email: jane.gillette@legmt.gov
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '77'
 - start_date: 2021-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '64'
+  end_date: *id001
 offices:
-- classification: capitol-mail
+- classification: district-mail
+  address: 32 Riverview Road, Three Forks, MT 59752
+  voice: 406-868-1549
+- classification: district-mail
   address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
   voice: 406-444-4800
   fax: 406-444-4862
-- classification: district-mail
-  address: P.O. Box 1751, Bozeman, MT 59771
 links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6918
 - url: https://leg.mt.gov/legislator-information/roster/individual/7517

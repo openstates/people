@@ -3,15 +3,19 @@ name: Clint Moses
 given_name: Clint
 family_name: Moses
 gender: Male
-email: rep.moses@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2487.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '92'
 - start_date: 2021-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '29'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2253
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2253
@@ -26,6 +30,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/29/moses
 - url: https://ballotpedia.org/Clint_Moses
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2253
@@ -33,7 +38,6 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2487
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Clint_Moses
-- url: https://legis.wisconsin.gov/assembly/29/moses
 - url: https://www.linkedin.com/in/clint-moses-661ab323
 - url: https://www.linkedin.com/in/clint-moses-85269a5
 extras:

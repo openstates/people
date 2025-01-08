@@ -2,17 +2,21 @@ id: ocd-person/ef921fbc-cb1a-4208-a4ab-b2ea99114f0a
 name: Chuck Wichgers
 given_name: Chuck
 family_name: Wichgers
-birth_date: '1965-07-04'
+birth_date: 1965-07-04
 gender: Male
-email: rep.wichgers@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2556.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '84'
 - start_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '82'
+  end_date: *id001
 - end_date: 2023-01-03
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
@@ -37,6 +41,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/82/wichgers
 - url: https://ballotpedia.org/Chuck_Wichgers
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1640
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1877
@@ -47,7 +52,6 @@ sources:
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Chuck_Wichgers
 - url: https://justfacts.votesmart.org/candidate/171895/chuck-wichgers
-- url: https://legis.wisconsin.gov/assembly/82/wichgers
 - url: https://www.linkedin.com/in/chuck-wichgers-038b4512
 extras:
   website: https://legis.wisconsin.gov/assembly/82/wichgers/

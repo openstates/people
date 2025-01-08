@@ -2,17 +2,21 @@ id: ocd-person/43c33bdc-3c41-47cc-8ffb-10a043ecdc93
 name: Kevin Petersen
 given_name: Kevin
 family_name: Petersen
-birth_date: '1964-12-14'
+birth_date: 1964-12-14
 gender: Male
-email: rep.petersen@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2498.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '57'
 - start_date: 2007-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '40'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1598
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1834
@@ -33,6 +37,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/40/petersen
 - url: https://ballotpedia.org/Kevin_Petersen
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1598
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1834
@@ -42,7 +47,6 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2498
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Kevin_David_Petersen
-- url: https://legis.wisconsin.gov/assembly/40/petersen
 extras:
   website: http://legis.wisconsin.gov/assembly/40/petersen
   title: Speaker Pro Tempore

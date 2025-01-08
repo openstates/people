@@ -2,17 +2,21 @@ id: ocd-person/b6559841-9e69-4435-8788-0d8bc087baed
 name: Mark Born
 given_name: Mark
 family_name: Born
-birth_date: '1976-04-14'
+birth_date: 1976-04-14
 gender: Male
-email: rep.born@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2449.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '37'
 - start_date: 2013-01-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '39'
+  end_date: *id001
 links:
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1541
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1833
@@ -32,6 +36,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
+- url: https://legis.wisconsin.gov/assembly/39/born
 - url: https://ballotpedia.org/Mark_Born
 - url: https://docs.legis.wisconsin.gov/2017/legislators/assembly/1541
 - url: https://docs.legis.wisconsin.gov/2019/legislators/assembly/1833
@@ -41,7 +46,6 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2449
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Mark_Born
-- url: https://legis.wisconsin.gov/assembly/39/born
 extras:
   website: http://legis.wisconsin.gov/assembly/39/born
   extra phone: (888) 534-0039
