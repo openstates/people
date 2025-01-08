@@ -3,12 +3,13 @@ name = "ospeople"
 version = "2.0"
 description = ""
 authors = ["James Turk <dev@jamesturk.net>"]
+packages = [{ include = "ospeople" }]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-openstates = "^6.20.12"
+openstates = "^6.20.13"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 invoke = "^1.5.0"
 
 [build-system]
