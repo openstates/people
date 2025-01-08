@@ -3,15 +3,19 @@ name: Maggie Nurrenbern
 given_name: Maggie
 family_name: Nurrenbern
 gender: Female
-email: maggie.nurrenbern@house.mo.gov
 image: https://house.mo.gov/MemberPhoto.aspx?id=2211
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '17'
 - start_date: 2021-01-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '15'
+  end_date: *id001
 offices:
 - classification: capitol
   address: Room 101-F, 201 W. Capitol Ave., Jefferson City, MO 65101
@@ -25,8 +29,8 @@ other_names:
 - name: Nurrenbern, M.
 - name: Nurrenbern, Maggie
 sources:
-- url: https://ballotpedia.org/Maggie_Nurrenbern
 - url: https://house.mo.gov/MemberDetails.aspx?district=015
+- url: https://ballotpedia.org/Maggie_Nurrenbern
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=015
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=015
 extras:

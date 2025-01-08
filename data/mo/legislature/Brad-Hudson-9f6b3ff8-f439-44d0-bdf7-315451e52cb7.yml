@@ -3,35 +3,42 @@ name: Brad Hudson
 given_name: Brad
 family_name: Hudson
 gender: Male
-email: brad.hudson@house.mo.gov
+email: brad.hudson@senate.mo.gov
 image: https://house.mo.gov/MemberPhoto.aspx?id=2081
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:mo/government
+  district: '33'
 - start_date: 2019-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mo/government
   district: '138'
+  end_date: *id001
 offices:
 - classification: capitol
-  address: Room 207-A, 201 W. Capitol Ave., Jefferson City, MO 65101
-  voice: 573-751-3851
+  address: Room 426, 201 W. Capitol Ave., Jefferson City, MO 65101
+  voice: 573-751-1882
 links:
 - url: https://www.house.mo.gov/MemberDetails.aspx?district=138
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=138
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=138
 - url: https://house.mo.gov/memberdetails.aspx?district=138
+- url: https://www.senate.mo.gov/Senators/Member/33
 other_names:
 - name: B. Hudson
 - name: Hudson, B.
 - name: Hudson, Brad
 sources:
-- url: https://ballotpedia.org/Brad_Hudson
 - url: https://house.mo.gov/memberdetails.aspx?district=138
+- url: https://ballotpedia.org/Brad_Hudson
 - url: https://house.mo.gov/MemberDetails.aspx?year=2021&code=R&district=138
 - url: https://house.mo.gov/MemberDetails.aspx?year=2023&code=R&district=138
 - url: https://house.mo.gov/MemberGridCluster.aspx
 - url: https://www.brad4mo.com/meet-brad
 - url: https://www.house.mo.gov/MemberDetails.aspx?district=138
+- url: https://www.senate.mo.gov/Senators/Member/33
 extras:
   hometown: Cape Fair

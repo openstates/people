@@ -1,25 +1,31 @@
 id: ocd-person/ba794ad6-45fa-40cc-8642-55e759a94d71
 name: Phil Baruth
-given_name: Philip E.
+given_name: Phil
 family_name: Baruth
-birth_date: '1962-02-10'
+birth_date: 1962-02-10
 gender: Male
 email: pbaruth@leg.state.vt.us
+image: https://legislature.vermont.gov/Documents/Legislators/PBaruth.jpg
 party:
 - name: Democratic/Progressive
 roles:
+- start_date: &id001 2023-01-04
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Chittenden Central
 - start_date: 2023-01-04
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Chittenden Central
-offices:
-- classification: capitol
-  address: Vermont State House 115 State St., Montpelier, VT 5633
-  voice: 802-828-2228
-- classification: home
-  address: Burlington, VT
-  voice: 802-503-5266
+  end_date: *id001
 links:
 - url: https://legislature.vermont.gov/people/single/2024/15791
 other_names:
 - name: Baruth
+- name: Baruth, P.
+- name: P. Baruth
+- name: P.E. Baruth
+sources:
+- url: https://ballotpedia.org/Philip_Baruth
+- url: https://en.wikipedia.org/wiki/Philip_Baruth
+- url: https://legislature.vermont.gov/people/single/2024/15791
