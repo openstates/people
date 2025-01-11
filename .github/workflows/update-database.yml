@@ -47,7 +47,7 @@ jobs:
 
 
     - name: people to database
-      run: poetry run os-people to-database
+      run: poetry run os-people to-database --purge
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         DATABASE_URL: ${{ secrets.DATABASE_URL }}
