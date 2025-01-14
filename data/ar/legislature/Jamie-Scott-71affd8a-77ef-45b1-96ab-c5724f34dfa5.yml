@@ -2,17 +2,21 @@ id: ocd-person/71affd8a-77ef-45b1-96ab-c5724f34dfa5
 name: Jamie Scott
 given_name: Jamie
 family_name: Scott
-birth_date: '1982-03-07'
+birth_date: 1982-03-07
 gender: Female
-email: jamie.scott@arkansashouse.org
 image: https://www.arkleg.state.ar.us/Content/photos/2023/House/552_sm.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ar/government
+  district: '12'
 - start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '72'
+  end_date: *id001
 - end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
