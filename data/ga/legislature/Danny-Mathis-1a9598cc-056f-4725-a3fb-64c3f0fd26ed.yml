@@ -3,15 +3,19 @@ name: Danny Mathis
 given_name: Danny
 family_name: Mathis
 gender: Male
-email: danny.mathis@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/mathis-danny-4959.jpg
 party:
 - name: Republican
 roles:
+- start_date: &id001 2025-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '133'
 - start_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '149'
+  end_date: *id001
 - end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government

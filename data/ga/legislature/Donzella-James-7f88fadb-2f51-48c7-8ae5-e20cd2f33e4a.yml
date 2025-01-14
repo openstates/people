@@ -2,17 +2,21 @@ id: ocd-person/7f88fadb-2f51-48c7-8ae5-e20cd2f33e4a
 name: Donzella James
 given_name: Donzella
 family_name: James
-birth_date: '1948-05-03'
+birth_date: 1948-05-03
 gender: Female
-email: donzella.james@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/james-donzella-372.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '28'
 - start_date: 2009-12-13
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '35'
+  end_date: *id001
 offices:
 - classification: capitol-mail
   address: Atlanta, GA 30334

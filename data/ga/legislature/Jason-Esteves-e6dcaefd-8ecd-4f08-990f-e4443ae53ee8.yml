@@ -3,15 +3,19 @@ name: Jason Esteves
 given_name: Jason
 family_name: Esteves
 gender: Male
-email: jason.esteves@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/esteves-jason-5014.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '35'
 - start_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '6'
+  end_date: *id001
 offices:
 - classification: capitol-mail
   address: Room 319-A, Coverdell Legislative Office Building, Atlanta, GA 30334
@@ -30,6 +34,7 @@ other_names:
 - name: J.F. Esteves
 sources:
 - url: https://ballotpedia.org/Jason_Esteves
+- url: https://en.wikipedia.org/wiki/Jason_Esteves
 - url: https://www.legis.ga.gov/api/members/detail/5014?session=1031&chamber=2
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031

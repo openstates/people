@@ -2,17 +2,21 @@ id: ocd-person/3f15ad5e-877d-44aa-b5b3-b24587c42685
 name: Elena Parent
 given_name: Elena
 family_name: Parent
-birth_date: '1975-12-27'
+birth_date: 1975-12-27
 gender: Female
-email: elena.parent@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/parent-elena-768.jpg
 party:
 - name: Democratic
 roles:
+- start_date: &id001 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '44'
 - start_date: 2015-01-12
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '42'
+  end_date: *id001
 offices:
 - classification: capitol-mail
   address: Atlanta, GA 30334
@@ -35,6 +39,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000406
 sources:
+- url: https://www.legis.ga.gov/members/senate/768
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
 - url: https://ballotpedia.org/Elena_Parent
@@ -46,7 +51,6 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/768
 - url: https://www.legis.ga.gov/members/senate/768?session=1029
 - url: https://www.linkedin.com/in/elena-parent-1b20676
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=768&Session=27
