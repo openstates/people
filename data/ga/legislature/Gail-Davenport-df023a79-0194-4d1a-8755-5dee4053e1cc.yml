@@ -2,17 +2,21 @@ id: ocd-person/df023a79-0194-4d1a-8755-5dee4053e1cc
 name: Gail Davenport
 given_name: Gail
 family_name: Davenport
-birth_date: '1949-03-01'
+birth_date: 1949-03-01
 gender: Female
-email: gail.davenport@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/davenport-gail-10.jpg
 party:
 - name: Democratic
 roles:
+- start_date: 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '17'
 - start_date: 2011-01-10
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '44'
+  end_date: 2025-01-13
 offices:
 - classification: capitol-mail
   address: Atlanta, GA 30334
@@ -34,6 +38,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000011
 sources:
+- url: https://www.legis.ga.gov/members/senate/10
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=10&Session=27
 - url: https://ballotpedia.org/Gail_Davenport
@@ -46,7 +51,6 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
-- url: https://www.legis.ga.gov/members/senate/10
 - url: https://www.legis.ga.gov/members/senate/10?session=1029
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=10&Session=27
 extras:
