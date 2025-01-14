@@ -8,7 +8,7 @@ email: steve.fitzpatrick@legmt.gov
 party:
 - name: Republican
 roles:
-- start_date: 2025-01-06
+- start_date: &id001 2025-01-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '24'
@@ -16,7 +16,7 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '10'
-  end_date:
+  end_date: *id001
 - end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
@@ -35,6 +35,7 @@ links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/5009
 - url: https://leg.mt.gov/legislator-information/roster/individual/6819
 - url: https://leg.mt.gov/legislator-information/roster/individual/7506
+- url: https://www.legmt.gov/legislators/1278/
 other_names:
 - name: Fitzpatrick, S.
 - name: Fitzpatrick, Steve
@@ -57,3 +58,4 @@ sources:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6819
 - url: https://leg.mt.gov/legislator-information/roster/individual/7506
 - url: https://www.bkbh.com/person/steve-fitzpatrick
+- url: https://www.legmt.gov/legislators/1278

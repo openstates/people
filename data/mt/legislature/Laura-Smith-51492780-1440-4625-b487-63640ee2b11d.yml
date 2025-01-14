@@ -6,7 +6,7 @@ gender: Female
 party:
 - name: Democratic
 roles:
-- start_date: 2025-01-06
+- start_date: &id001 2025-01-06
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '40'
@@ -14,7 +14,7 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '79'
-  end_date:
+  end_date: *id001
 offices:
 - classification: district-mail
   address: Montana House of Representatives P.O. Box 200400, Helena, MT 59620
