@@ -2,45 +2,50 @@ id: ocd-person/befb976c-1369-5d86-a53f-4aeebdf486cc
 name: Jim Banks
 given_name: Jim
 family_name: Banks
+gender: M
 birth_date: 1979-07-16
-gender: Male
 image: https://theunitedstates.io/images/congress/450x550/B001299.jpg
 party:
-- name: Republican
+- start_date: '2017-01-03'
+  end_date: '2031-01-03'
+  name: Republican
 roles:
-- start_date: 2025-01-03
-  end_date: 2030-01-01
+- start_date: '2017-01-03'
+  end_date: '2019-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: IN-3
+- start_date: '2019-01-03'
+  end_date: '2021-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: IN-3
+- start_date: '2021-01-03'
+  end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: IN-3
+- start_date: '2023-01-03'
+  end_date: '2025-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/government
+  district: IN-3
+- start_date: '2025-01-03'
+  end_date: '2031-01-03'
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/government
   district: Indiana
-- start_date: 2023-01-03
-  end_date: 2024-11-05
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: IN-3
-- start_date: 2021-01-03
-  end_date: 2023-01-03
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: IN-3
-- start_date: 2019-01-03
-  end_date: 2021-01-03
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: IN-3
-- start_date: 2017-01-03
-  end_date: 2019-01-03
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/government
-  district: IN-3
+offices:
+- classification: capitol
+  address: B85 Russell Senate Office Building Washington DC 20510
+  voice: 202-224-4814
+- classification: district
+  address: 1300 S. Harrison St.; Fort Wayne, IN 46802
+  voice: 260-702-4750
+  name: 'District Office #1'
 links:
-- url: https://banks.house.gov
+- url: https://www.banks.senate.gov
   note: website
-- url: https://banks.house.gov/
-other_names:
-- name: Banks, J.
-- name: J. Banks
-- name: J.E. Banks
 ids:
   twitter: RepJimBanks
   youtube: UC_FR6TySW9uxvhjozkis6Xg
@@ -48,6 +53,8 @@ ids:
 other_identifiers:
 - scheme: bioguide
   identifier: B001299
+- scheme: lis
+  identifier: S429
 - scheme: govtrack
   identifier: '412702'
 - scheme: wikipedia
@@ -74,10 +81,3 @@ other_identifiers:
   identifier: '13052'
 sources:
 - url: https://theunitedstates.io/
-- url: https://ballotpedia.org/Jim_Banks_(Indiana)
-- url: https://banks.house.gov
-- url: https://banks.house.gov/biography
-- url: https://banksforsenate.com/meet-jim
-- url: https://en.wikipedia.org/wiki/Jim_Banks
-- url: https://theunitedstates.io
-- url: https://www.govtrack.us/congress/members/jim_banks/412702
