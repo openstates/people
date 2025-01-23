@@ -13,6 +13,11 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '43'
+- start_date: 2013-01-14
+  end_date: 2015-09-16
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '43'
 - start_date: 2013-01-01
   end_date: 2016-12-31
   type: lower
@@ -20,7 +25,7 @@ roles:
   district: '92'
 offices:
 - classification: capitol
-  address: Atlanta, GA 30334
+  address: State Capitol Room 110-A, 110-A, Atlanta, GA 30334
   voice: 404-463-2598
 - classification: district-mail
   address: P.O. Box 1026, Lithonia, GA 30058
@@ -31,6 +36,7 @@ links:
 - url: https://www.legis.ga.gov/members/senate/807?session=1029
 - url: https://www.legis.ga.gov/members/senate/807?session=1031
   note: HTML member detail page
+- url: https://www.legis.ga.gov/members/senate/807?
 other_names:
 - name: Anderson, T.
 - name: T. Anderson
@@ -45,6 +51,7 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/936dece6-443d-4164-97f4-3f9737f7807d
 sources:
+- url: https://www.legis.ga.gov/members/senate/807?session=1031
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
 - url: https://ballotpedia.org/Tonya_Anderson
@@ -57,8 +64,8 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/807?
 - url: https://www.legis.ga.gov/members/senate/807?session=1029
-- url: https://www.legis.ga.gov/members/senate/807?session=1031
 - url: https://www.linkedin.com/in/tonyapanderson
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=807&Session=27
 extras:

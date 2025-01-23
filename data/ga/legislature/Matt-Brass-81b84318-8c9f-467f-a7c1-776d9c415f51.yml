@@ -4,11 +4,17 @@ given_name: Matt
 family_name: Brass
 birth_date: 1978-01-19
 gender: Male
+email: matt.brass@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/brass-matt-4907.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '6'
+- start_date: 2017-01-09
+  end_date: 2025-01-12
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '6'
@@ -19,7 +25,7 @@ roles:
   end_date: 2025-01-13
 offices:
 - classification: capitol-mail
-  address: Atlanta, GA 30334
+  address: State Capitol Room 453, 453, Atlanta, GA 30334
   voice: 404-656-0057
 - classification: district-mail
   address: P.O. Box 1313, Newnan, GA 30264

@@ -9,10 +9,10 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/evans-stacey
 party:
 - name: Democratic
 roles:
-- start_date: 2021-01-11
-  type: lower
+- type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '57'
+  start_date: 2021-01-11
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
@@ -25,7 +25,8 @@ roles:
   district: '42'
 offices:
 - classification: capitol
-  address: Room 409-D, Coverdell Legislative Office Building, Atlanta, GA 30334
+  address: Room 409-D, Coverdell Legislative Office Building   409-D, Atlanta, GA
+    30334
   voice: 404-656-0116
 - classification: district
   address: 750 Piedmont Ave. NE, Atlanta, GA 30308
