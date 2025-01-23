@@ -4,11 +4,17 @@ given_name: Lisa
 family_name: Subeck
 birth_date: 1971-06-17
 gender: Female
+email: rep.subeck@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2521.jpg
 party:
 - name: Democratic
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '79'
+- start_date: 2015-01-07
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '79'

@@ -4,11 +4,17 @@ given_name: Kevin
 family_name: Petersen
 birth_date: 1964-12-14
 gender: Male
+email: rep.petersen@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2498.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '57'
+- start_date: 2007-01-01
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '57'

@@ -4,11 +4,17 @@ given_name: Jerry
 family_name: O'Connor
 birth_date: 1953-09-14
 gender: Male
+email: rep.o'connor@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2549.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '60'
+- start_date: 2023-01-03
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '60'

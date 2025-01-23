@@ -4,11 +4,17 @@ given_name: Eric
 family_name: Wimberger
 birth_date: 1979-04-02
 gender: Male
+email: sen.wimberger@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/senate/2439.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '2'
+- start_date: 2021-01-04
+  end_date: 2025-01-05
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '2'
@@ -19,7 +25,7 @@ roles:
   end_date: 2025-01-06
 offices:
 - classification: district
-  address: State Capitol Room 104 South, 2 E. Main St., Madison, WI 53702
+  address: State Capitol Room 104 South, 2 E. Main St.  104 South, Madison, WI 53702
   voice: 608-266-5670
 - classification: district-mail
   address: P.O. Box 7882, Madison, WI 53707

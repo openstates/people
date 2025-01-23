@@ -4,11 +4,17 @@ given_name: Elijah
 family_name: Behnke
 birth_date: 1983-02-15
 gender: Male
+email: rep.behnke@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2447.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '6'
+- start_date: 2021-04-28
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '6'
@@ -31,7 +37,6 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/
   note: members list page
-- url: https://legis.wisconsin.gov/assembly/89/behnke
 - url: https://ballotpedia.org/Elijah_Behnke
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly
 - url: https://docs.legis.wisconsin.gov/2021/legislators/assembly/2396
@@ -39,6 +44,7 @@ sources:
 - url: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2447
   note: member detail page
 - url: https://en.wikipedia.org/wiki/Elijah_Behnke
+- url: https://legis.wisconsin.gov/assembly/89/behnke
 extras:
   website: https://legis.wisconsin.gov/assembly/89/behnke
   extra phone: (888) 534-0089

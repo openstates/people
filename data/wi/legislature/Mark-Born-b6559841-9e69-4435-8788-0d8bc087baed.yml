@@ -4,11 +4,17 @@ given_name: Mark
 family_name: Born
 birth_date: 1976-04-14
 gender: Male
+email: rep.born@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2449.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '37'
+- start_date: 2013-01-07
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '37'

@@ -4,11 +4,17 @@ given_name: Alex
 family_name: Dallman
 birth_date: 1992-05-22
 gender: Male
+email: rep.dallman@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2459.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '39'
+- start_date: 2021-01-04
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '39'
