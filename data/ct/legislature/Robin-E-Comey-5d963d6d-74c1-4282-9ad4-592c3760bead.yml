@@ -10,11 +10,19 @@ party:
 - name: Democratic
 roles:
 - start_date: 2019-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '102'
+- start_date: 2019-01-09
   end_date: 2025-01-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '102'
-offices: []
+offices:
+- classification: capitol
+  address: Room 4034, Legislative Office Building 300 Capitol Ave.  4034, Hartford,
+    CT 06106
+  voice: 800-842-8267
 links:
 - url: https://housedems.ct.gov/comey
 - url: https://cga.ct.gov/asp/CGABillStatus/CGAMemberBills.asp?dist_code=%27102%27&dist_name=Comey,%20Robin%20E.
