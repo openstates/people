@@ -13,12 +13,17 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ny/government
   district: '35'
+- start_date: 2007-01-01
+  end_date: 2022-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ny/government
+  district: '35'
 offices:
-- classification: district
+- classification: capitol
   address: Room 330, 172 State Street, Albany, NY 12247
   voice: 518-455-2715
   fax: 518-426-6844
-- classification: capitol
+- classification: capitol-mail
   address: Room 907, Legislative Office Building, Albany, NY 12247
   voice: 518-455-2585
   fax: 518-426-6811
@@ -27,7 +32,7 @@ offices:
   voice: 914-423-4031
   fax: 914-423-0979
 - classification: district
-  address: Room 1930, 250 Broadway, New York, NY 10007
+  address: Room 1930, 250 Broadway   1930, New York, NY 10007
   voice: 212-298-5585
   fax: 212-298-5623
 links:
