@@ -4,11 +4,17 @@ given_name: Tony
 family_name: Kurtz
 birth_date: 1966-12-23
 gender: Male
+email: rep.kurtz@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2479.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '41'
+- start_date: 2019-01-07
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '41'

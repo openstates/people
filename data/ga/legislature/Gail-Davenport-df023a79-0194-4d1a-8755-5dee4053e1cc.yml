@@ -4,11 +4,22 @@ given_name: Gail
 family_name: Davenport
 birth_date: 1949-03-01
 gender: Female
+email: gail.davenport@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/davenport-gail-10.jpg
 party:
 - name: Democratic
 roles:
 - start_date: 2025-01-13
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '17'
+- start_date: 2011-01-10
+  end_date: 2025-01-12
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '17'
+- start_date: 2007-01-02
+  end_date: 2009-01-12
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '17'
@@ -19,7 +30,7 @@ roles:
   end_date: 2025-01-13
 offices:
 - classification: capitol-mail
-  address: Atlanta, GA 30334
+  address: State Capitol Room 121-H, 121-H, Atlanta, GA 30334
   voice: 404-463-5260
 - classification: district-mail
   address: P.O. Box 1074, Jonesboro, GA 30237
@@ -34,11 +45,11 @@ links:
 other_names:
 - name: Davenport, G.
 - name: G. Davenport
+- name: G.P. Davenport
 other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000011
 sources:
-- url: https://www.legis.ga.gov/members/senate/10
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=10&Session=27
 - url: https://ballotpedia.org/Gail_Davenport
@@ -51,6 +62,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/10
 - url: https://www.legis.ga.gov/members/senate/10?session=1029
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=10&Session=27
 extras:

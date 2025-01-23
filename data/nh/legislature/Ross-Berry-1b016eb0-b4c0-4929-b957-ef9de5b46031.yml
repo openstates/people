@@ -4,11 +4,22 @@ given_name: Ross
 family_name: Berry
 birth_date: 1989-12-16
 gender: Male
+email: ross.berry@leg.state.nh.us
 image: https://www.gencourt.state.nh.us/house/images/memberpics/409019.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2024-12-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 44
+- start_date: 2022-12-07
+  end_date: 2024-05-15
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 44
+- start_date: 2020-12-02
+  end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 44
@@ -21,6 +32,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 44
+offices:
+- classification: home
+  address: 119 Buzzell Hill Road, Weare, NH 03281
+  voice: 603-944-9531
 links:
 - url: https://gencourt.state.nh.us/downloads/Members.txt
 - url: https://www.gencourt.state.nh.us/house/members/member.aspx?pid=9919

@@ -4,11 +4,22 @@ given_name: Joey
 family_name: Garcia
 birth_date: 1983-01-30
 gender: Male
-image: http://www.wvlegislature.gov/images/members/2021/house/garcia_joey.jpg
+email: joey.garcia@wvsenate.gov
+image: https://www.wvlegislature.gov/images/members/2025/senate/garcia_joey.jpg
 party:
 - name: Democratic
 roles:
 - start_date: 2024-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '13'
+- start_date: 2020-12-01
+  end_date: 2022-11-30
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '13'
+- start_date: 2022-12-01
+  end_date: 2024-11-30
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '13'
@@ -22,14 +33,14 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '50'
 offices:
+- classification: capitol
+  address: State Capitol Complex Building 1, Charleston, WV 25305
 - classification: district
-  address: State Capitol Room 4R, Complex Building 1, Charleston, WV 25305
-  voice: 304-340-3124
-- classification: home
   address: 207 Circle Drive, Fairmont, WV 26554
 links:
 - url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Garcia
 - url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Garcia
 other_names:
 - name: Garcia, J.
 - name: J. Garcia
@@ -44,3 +55,4 @@ sources:
 - url: https://www.linkedin.com/in/joey-garcia-ab4b2431
 - url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Garcia
 - url: https://www.wvlegislature.gov/House/roster.cfm
+- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Garcia

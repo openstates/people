@@ -3,11 +3,17 @@ name: Mark Warden
 given_name: Mark
 family_name: Warden
 gender: Male
+email: mark.warden@leg.state.nh.us
 image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mark_Warden_candidate_photo__Medium__fixed.JPG
 party:
 - name: Republican
 roles:
-- start_date: 2024-12-04
+- type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Hillsborough 39
+  start_date: 2024-12-04
+- start_date: 2018-12-05
+  end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 39
@@ -25,6 +31,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Hillsborough 15
+offices:
+- classification: home
+  address: 215 Laxson Ave., Manchester, NH 03103
+  voice: 603-391-2888
 links:
 - url: https://www.gencourt.state.nh.us/downloads/Members.txt
 - url: https://gencourt.state.nh.us/downloads/Members.txt

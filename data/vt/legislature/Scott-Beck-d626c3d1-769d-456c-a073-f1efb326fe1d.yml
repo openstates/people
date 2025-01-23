@@ -2,12 +2,24 @@ id: ocd-person/d626c3d1-769d-456c-a073-f1efb326fe1d
 name: Scott Beck
 given_name: Scott
 family_name: Beck
+birth_date: 1968-04-17
 gender: Male
+email: sbeck@leg.state.vt.us
 image: https://legislature.vermont.gov/Documents/Legislators/SBeck.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Caledonia
+- start_date: 2023-01-04
+  end_date: 2025-01-07
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Caledonia
+- start_date: 2015-01-07
+  end_date: 2023-01-03
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Caledonia
@@ -37,6 +49,7 @@ links:
 other_names:
 - name: Beck, S.
 - name: S. Beck
+- name: S.L. Beck
 - name: Scott L. Beck
 other_identifiers:
 - scheme: legacy_openstates

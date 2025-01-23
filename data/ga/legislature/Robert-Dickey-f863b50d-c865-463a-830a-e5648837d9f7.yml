@@ -3,11 +3,22 @@ name: Robert Dickey
 given_name: Robert
 family_name: Dickey
 gender: Male
+email: robert.dickey@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/dickey-robert-791.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '134'
+- end_date: 2023-01-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '134'
+  start_date: 2025-01-13
+- start_date: 2023-01-09
+  end_date: 2025-01-12
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '134'
@@ -22,7 +33,7 @@ roles:
   district: '140'
 offices:
 - classification: capitol-mail
-  address: Atlanta, GA 30334
+  address: State Capitol Room 228-B, 228-B, Atlanta, GA 30334
   voice: 404-656-5099
 - classification: district-mail
   address: 3440 Musella Road, Musella, GA 31066

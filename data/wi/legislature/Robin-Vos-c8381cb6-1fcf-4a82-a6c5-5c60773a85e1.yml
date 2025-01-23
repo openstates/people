@@ -4,11 +4,17 @@ given_name: Robin
 family_name: Vos
 birth_date: 1968-07-05
 gender: Male
+email: rep.vos@legis.wisconsin.gov
 image: https://docs.legis.wisconsin.gov/2023/legislators/assembly/2531.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:wi/government
+  district: '33'
+- start_date: 2005-01-03
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wi/government
   district: '33'

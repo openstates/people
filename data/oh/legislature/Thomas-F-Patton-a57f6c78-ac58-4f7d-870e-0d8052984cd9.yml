@@ -4,11 +4,27 @@ given_name: Tom
 family_name: Patton
 birth_date: 1953-11-03
 gender: Male
+email: sd24@ohiosenate.gov
 image: https://www.legislature.ohio.gov/assets/people/thomas-f-patton/headshots/thumbnails/medium/thomas-f-patton-november-2023-headshot_medium.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '24'
+- end_date: 2016-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '24'
+  start_date: 2025-01-01
+- start_date: 2023-01-01
+  end_date: 2024-12-31
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:oh/government
+  district: '24'
+- start_date: 2017-01-01
+  end_date: 2022-12-31
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:oh/government
   district: '24'
@@ -23,9 +39,7 @@ roles:
   district: '7'
 offices:
 - classification: capitol
-  address: 77 S. High St. 11th Floor, Columbus, OH 43215
-  voice: 614-466-4895
-  fax: 614-719-6957
+  address: Statehouse, 1 Capitol Square, Columbus, OH 43215
 links:
 - url: https://www.ohiohouse.gov/thomas-f-patton
 - url: https://ohiohouse.gov/thomas-f-patton

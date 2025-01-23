@@ -9,7 +9,13 @@ image: https://app.leg.wa.gov/ContentParts/MemberDirectory/LargePhoto?m=12002
 party:
 - name: Democratic
 roles:
-- type: upper
+- start_date: 2013-12-16
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wa/government
+  district: '43'
+- start_date: 2007-01-08
+  end_date: 2013-12-16
+  type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wa/government
   district: '43'
 offices:
@@ -17,7 +23,7 @@ offices:
   address: 1200 12th Ave. South Suite 801, Seattle, WA 98144
   voice: 206-729-3206
 - classification: district-mail
-  address: Room 309, Legislative Building P.O. Box 40443, Olympia, WA 98504
+  address: Room 309, Legislative Building P.O. Box 40443  309, Olympia, WA 98504
   voice: 360-786-7628
 links:
 - url: https://sdc.wastateleg.org/Pedersen/
