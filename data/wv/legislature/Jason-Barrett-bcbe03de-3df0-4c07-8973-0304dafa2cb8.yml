@@ -13,15 +13,24 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '16'
+- start_date: 2016-12-01
+  end_date: 2020-12-11
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '16'
+- start_date: 2020-12-11
+  end_date: 2022-11-30
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:wv/government
+  district: '16'
 - end_date: 2022-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:wv/government
   district: '61'
 offices:
+- classification: capitol
+  address: State Capitol Complex Building 1, Charleston, WV 25305
 - classification: district
-  address: State Capitol Room 204W, Complex Building 1, Charleston, WV 25305
-  voice: 304-357-7933
-- classification: home
   address: 1125 W. King St., Martinsburg, WV 25401
   voice: 304-886-9907
 links:
@@ -43,7 +52,6 @@ sources:
 - url: https://www.legis.state.wv.us/House/lawmaker.cfm?member=Delegate+Barrett
 - url: https://www.wvlegislature.gov/House/lawmaker.cfm?member=Delegate%20Barrett
 - url: https://www.wvlegislature.gov/House/roster.cfm
-- url: https://www.wvlegislature.gov/Senate1/lawmaker.cfm?member=Senator%20Barrett
 - url: https://www.wvlegislature.gov/Senate1/roster.cfm
 - url: https://ballotpedia.org/Jason_Barrett_(West_Virginia)
 - url: https://en.wikipedia.org/wiki/Jason_Barrett_(West_Virginia_politician)
