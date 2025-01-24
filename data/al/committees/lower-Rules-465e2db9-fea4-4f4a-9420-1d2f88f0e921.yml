@@ -3,16 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Rules
 chamber: lower
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1809&COMMITTEE=Rules
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1809&COMMITTEE=Rules
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1809&COMMITTEE=Rules
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
-  note: homepage
 members:
 - name: Joe Lovvorn
   role: chair
@@ -29,6 +22,9 @@ members:
 - name: Anthony Daniels
   role: member
   person_id: ocd-person/95f7541d-5429-41aa-85e5-7fc9cf33d688
+- name: Chris Pringle
+  role: member
+  person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
 - name: Chris Pringle
   role: member
   person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
@@ -57,11 +53,6 @@ members:
   role: member
   person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
 other_names:
-- name: House Committee on Rules
 - name: House Rules
+- name: House Committee on Rules
 - name: House Rules Committee
-extras:
-  Clerk: Tracey Arnold
-  Phone: (334) 261-0573
-  Email: tracey.arnold@alhouse.gov
-  Room: Room 519 C

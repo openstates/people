@@ -3,14 +3,8 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Veterans, Military Affairs, and Public Safety
 chamber: upper
-sources:
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Membership information api call
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
 - name: Andrew Jones
   role: chair
@@ -18,6 +12,12 @@ members:
 - name: Donnie Chesteen
   role: vice chair
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
+- name: Donnie Chesteen
+  role: vice chair
+  person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
+- name: Billy Beasley
+  role: ranking member
+  person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
 - name: Billy Beasley
   role: ranking member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
@@ -27,6 +27,9 @@ members:
 - name: Keith Kelley
   role: member
   person_id: ocd-person/e259674a-2a78-4423-b8d0-3d759ee90912
+- name: Kirk Hatcher
+  role: member
+  person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
 - name: Kirk Hatcher
   role: member
   person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
@@ -40,8 +43,6 @@ members:
   role: member
   person_id: ocd-person/8cca1495-936e-4ac5-920a-cc4aa22e495e
 other_names:
-- name: Committee on Veterans, Military Affairs, and Public Safety
-- name: Senate Committee on Veterans, Military Affairs, and Public Safety
 - name: Senate Veterans, Military Affairs, and Public Safety
+- name: Senate Committee on Veterans, Military Affairs, and Public Safety
 - name: Senate Veterans, Military Affairs, and Public Safety Committee
-- name: Veterans, Military Affairs, and Public Safety Committee

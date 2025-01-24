@@ -3,13 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:nj/government
 classification: committee
 name: Labor
 chamber: lower
-sources:
-- url: https://www.njleg.state.nj.us/api/legislatorData/committeeInfo/assembly-committees
-  note: JSON data page from NJ Legislative API
 links:
 - url: https://njleg.state.nj.us/committees/assembly-committees?committee=ALA
 - url: https://www.njleg.state.nj.us/committees/assembly-committees
-  note: homepage
 members:
 - name: Anthony Verrelli
   role: chair
@@ -23,6 +19,9 @@ members:
 - name: Annette Quijano
   role: member
   person_id: ocd-person/ec370db8-c51e-4022-9868-5cad9c38e97d
+- name: Brian Bergen
+  role: member
+  person_id: ocd-person/006c1bd9-54e9-49be-9d02-12dda1119149
 - name: Brian Bergen
   role: member
   person_id: ocd-person/006c1bd9-54e9-49be-9d02-12dda1119149
@@ -45,9 +44,6 @@ members:
   role: member
   person_id: ocd-person/6cab3e19-7a7c-4488-877f-a6a167306ba5
 other_names:
-- name: Assembly Committee on Labor
 - name: Assembly Labor
+- name: Assembly Committee on Labor
 - name: Assembly Labor Committee
-- name: House Committee on Labor
-- name: House Labor
-- name: House Labor Committee

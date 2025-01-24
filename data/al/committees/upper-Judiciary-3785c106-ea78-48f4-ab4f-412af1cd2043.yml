@@ -3,16 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Judiciary
 chamber: upper
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
 - name: Will Barfoot
   role: chair
@@ -26,15 +19,24 @@ members:
 - name: April Weaver
   role: member
   person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: April Weaver
+  role: member
+  person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
 - name: Arthur Orr
   role: member
   person_id: ocd-person/b38546ec-f8fb-4e99-8e0c-46715b2e8578
 - name: Bobby Singleton
   role: member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
+- name: Bobby Singleton
+  role: member
+  person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
 - name: Chris Elliott
   role: member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
+- name: Greg Albritton
+  role: member
+  person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
 - name: Greg Albritton
   role: member
   person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
@@ -50,15 +52,13 @@ members:
 - name: Linda Coleman-Madison
   role: member
   person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
+- name: Linda Coleman-Madison
+  role: member
+  person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
 - name: Vivian Figures
   role: member
   person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
 other_names:
-- name: Senate Committee on Judiciary
 - name: Senate Judiciary
+- name: Senate Committee on Judiciary
 - name: Senate Judiciary Committee
-extras:
-  Clerk: Kim Robertson
-  Phone: 334 261-0893
-  Email: kim.robertson@alsenate.gov
-  Suite: '734'

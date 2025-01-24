@@ -3,20 +3,22 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Confirmations
 chamber: upper
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3259&COMMITTEE=Confirmations
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3259&COMMITTEE=Confirmations
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3259&COMMITTEE=Confirmations
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
 - name: April Weaver
   role: chair
   person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: April Weaver
+  role: chair
+  person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: Jabo Waggoner
+  role: vice chair
+  person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
+- name: Jabo Waggoner
+  role: vice chair
+  person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
 - name: Jabo Waggoner
   role: vice chair
   person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
@@ -29,6 +31,12 @@ members:
 - name: Bobby Singleton
   role: member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
+- name: Bobby Singleton
+  role: member
+  person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
+- name: David Sessions
+  role: member
+  person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
 - name: David Sessions
   role: member
   person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
@@ -38,9 +46,21 @@ members:
 - name: Gerald Allen
   role: member
   person_id: ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a
+- name: Gerald Allen
+  role: member
+  person_id: ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a
+- name: Gerald Allen
+  role: member
+  person_id: ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a
 - name: Jack Williams
   role: member
   person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
+- name: Jack Williams
+  role: member
+  person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
+- name: Kirk Hatcher
+  role: member
+  person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
 - name: Kirk Hatcher
   role: member
   person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
@@ -60,13 +80,6 @@ members:
   role: member
   person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
 other_names:
-- name: Committee on Confirmations
-- name: Confirmations Committee
-- name: Senate Committee on Confirmations
 - name: Senate Confirmations
+- name: Senate Committee on Confirmations
 - name: Senate Confirmations Committee
-extras:
-  Clerk: Gail Cobb
-  Phone: 334 261-0872
-  Email: gail.cobb@alsenate.gov
-  Suite: '730'

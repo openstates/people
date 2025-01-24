@@ -3,16 +3,13 @@ jurisdiction: ocd-jurisdiction/country:us/state:nv/government
 classification: committee
 name: Revenue
 chamber: lower
-sources:
-- url: https://www.leg.state.nv.us/App/NELIS/REL/82nd2023/HomeCommittee/LoadCommitteeListTab?selectedTab=List
-  note: Committees list page
-- url: https://www.leg.state.nv.us/App/NELIS/REL/82nd2023/Committee/FillSelectedCommitteeTab?selectedTab=Overview&committeeOrSubCommitteeKey=400
-  note: Committee detail page
 links:
 - url: https://www.leg.state.nv.us/App/NELIS/REL/82nd2023/Committee/400/Overview
 - url: https://www.leg.state.nv.us/App/NELIS/REL/82nd2023/Committee/FillSelectedCommitteeTab?selectedTab=Overview&committeeOrSubCommitteeKey=400
-  note: homepage
 members:
+- name: Shea Backus
+  role: chair
+  person_id: ocd-person/1fa69460-c910-4cf1-acfb-1d44c342e658
 - name: Shea Backus
   role: chair
   person_id: ocd-person/1fa69460-c910-4cf1-acfb-1d44c342e658
@@ -22,6 +19,9 @@ members:
 - name: Danielle Gallant
   role: member
   person_id: ocd-person/bf8b61a8-585a-4357-82f8-bd8de898262b
+- name: David Orentlicher
+  role: member
+  person_id: ocd-person/7d16a086-5877-48e9-9e76-13c5159f89ce
 - name: David Orentlicher
   role: member
   person_id: ocd-person/7d16a086-5877-48e9-9e76-13c5159f89ce
@@ -43,7 +43,10 @@ members:
 - name: P.K. O'Neill
   role: member
   person_id: ocd-person/a964be66-bd32-48ab-b6c4-9ede22177328
+- name: P.K. O'Neill
+  role: member
+  person_id: ocd-person/a964be66-bd32-48ab-b6c4-9ede22177328
 other_names:
-- name: Assembly Committee on Revenue
 - name: Assembly Revenue
+- name: Assembly Committee on Revenue
 - name: Assembly Revenue Committee

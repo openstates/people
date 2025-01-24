@@ -3,20 +3,16 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Banking and Insurance
 chamber: upper
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3264&COMMITTEE=Banking%20and%20Insurance
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3264&COMMITTEE=Banking%20and%20Insurance
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3264&COMMITTEE=Banking%20and%20Insurance
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
 - name: Shay Shelnutt
   role: chair
   person_id: ocd-person/9487b441-352c-43be-a2bb-8abc45e20671
+- name: Jack Williams
+  role: vice chair
+  person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
 - name: Jack Williams
   role: vice chair
   person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
@@ -29,12 +25,21 @@ members:
 - name: Bobby Singleton
   role: member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
+- name: Bobby Singleton
+  role: member
+  person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
 - name: Chris Elliott
   role: member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
 - name: Dan Roberts
   role: member
   person_id: ocd-person/c58c02cd-0f5c-4454-b5d9-6eb0e604ea25
+- name: Jabo Waggoner
+  role: member
+  person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
+- name: Jabo Waggoner
+  role: member
+  person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
 - name: Jabo Waggoner
   role: member
   person_id: ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce
@@ -47,6 +52,12 @@ members:
 - name: Kirk Hatcher
   role: member
   person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
+- name: Kirk Hatcher
+  role: member
+  person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8
+- name: Merika Coleman
+  role: member
+  person_id: ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5
 - name: Merika Coleman
   role: member
   person_id: ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5
@@ -59,17 +70,13 @@ members:
 - name: Wes Kitchens
   role: member
   person_id: ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e
+- name: Wes Kitchens
+  role: member
+  person_id: ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e
 - name: Will Barfoot
   role: member
   person_id: ocd-person/8cca1495-936e-4ac5-920a-cc4aa22e495e
 other_names:
-- name: Banking and Insurance Committee
-- name: Committee on Banking and Insurance
 - name: Senate Banking and Insurance
-- name: Senate Banking and Insurance Committee
 - name: Senate Committee on Banking and Insurance
-extras:
-  Clerk: Katie Fisher
-  Phone: 334 261-0710
-  Email: Katie.norris@alsenate.gov
-  Suite: '732'
+- name: Senate Banking and Insurance Committee

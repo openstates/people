@@ -3,16 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Healthcare
 chamber: upper
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
 - name: Tim Melson
   role: chair
@@ -23,9 +16,18 @@ members:
 - name: Linda Coleman-Madison
   role: ranking democratic member
   person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
+- name: Linda Coleman-Madison
+  role: ranking democratic member
+  person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
 - name: April Weaver
   role: member
   person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: April Weaver
+  role: member
+  person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: Billy Beasley
+  role: member
+  person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
 - name: Billy Beasley
   role: member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
@@ -35,6 +37,12 @@ members:
 - name: Donnie Chesteen
   role: member
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
+- name: Donnie Chesteen
+  role: member
+  person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
+- name: Jack Williams
+  role: member
+  person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
 - name: Jack Williams
   role: member
   person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
@@ -53,14 +61,16 @@ members:
 - name: Tom Butler
   role: member
   person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
+- name: Tom Butler
+  role: member
+  person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
+- name: Tom Butler
+  role: member
+  person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
+- name: Tom Butler
+  role: member
+  person_id: ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a
 other_names:
-- name: Committee on Healthcare
-- name: Healthcare Committee
-- name: Senate Committee on Healthcare
 - name: Senate Healthcare
+- name: Senate Committee on Healthcare
 - name: Senate Healthcare Committee
-extras:
-  Clerk: Lindsey Lewis
-  Phone: 334 261-0856
-  Email: lindsey.lewis@alsenate.gov
-  Suite: '729'

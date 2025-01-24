@@ -3,25 +3,19 @@ jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
 name: Government
 chamber: upper
-sources:
-- url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
-- url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
-- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
-  note: API with all committee details
 links:
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2022&sessionId=128
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
-  note: homepage
 members:
 - name: Jake Hoffman
   role: chair
   person_id: ocd-person/35f7056c-9f29-4b66-9ae0-f041fe6e7e05
-- name: Anna Hernandez
+- name: Jake Hoffman
+  role: chair
+  person_id: ocd-person/35f7056c-9f29-4b66-9ae0-f041fe6e7e05
+- name: Dave Farnsworth
   role: member
-  person_id: ocd-person/ddfd6808-4722-4fd4-880a-2053ac4e7223
-- name: Anthony Kern
-  role: member
-  person_id: ocd-person/f4ea36ef-3e74-4753-be45-43d3029a8a0d
+  person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
 - name: Dave Farnsworth
   role: member
   person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
@@ -31,17 +25,7 @@ members:
 - name: Janae Shamp
   role: member
   person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
-- name: Juan Mendez
-  role: member
-  person_id: ocd-person/535e197f-a602-4194-83cc-f820756caa17
-- name: Justine Wadsack
-  role: member
-  person_id: ocd-person/52dbdd42-ca89-4d28-9642-f43e3b1e6358
 other_names:
-- name: Senate Committee on Government
 - name: Senate Government
+- name: Senate Committee on Government
 - name: Senate Government Committee
-extras:
-  Committee ID: 2022
-  Committee Short Name: GOV
-  Committee Type: Standing

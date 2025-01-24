@@ -3,20 +3,25 @@ jurisdiction: ocd-jurisdiction/country:us/state:nj/government
 classification: committee
 name: Environment and Energy
 chamber: upper
-sources:
-- url: https://www.njleg.state.nj.us/api/legislatorData/committeeInfo/senate-committees
-  note: JSON data page from NJ Legislative API
 links:
 - url: https://njleg.state.nj.us/committees/senate-committees?committee=SEN
 - url: https://www.njleg.state.nj.us/committees/senate-committees
-  note: homepage
 members:
+- name: Bob Smith
+  role: chair
+  person_id: ocd-person/177d44ba-0c93-4e26-b245-84aa2239f7b4
 - name: Bob Smith
   role: chair
   person_id: ocd-person/177d44ba-0c93-4e26-b245-84aa2239f7b4
 - name: Linda Greenstein
   role: vice chair
   person_id: ocd-person/27646653-40e2-4c79-b608-0f2edcaa0322
+- name: Linda Greenstein
+  role: vice chair
+  person_id: ocd-person/27646653-40e2-4c79-b608-0f2edcaa0322
+- name: John McKeon
+  role: member
+  person_id: ocd-person/1fec06e0-00df-4d84-8c9a-18e80a6f29e2
 - name: John McKeon
   role: member
   person_id: ocd-person/1fec06e0-00df-4d84-8c9a-18e80a6f29e2
@@ -26,9 +31,10 @@ members:
 - name: Parker Space
   role: member
   person_id: ocd-person/1dde507a-70ed-4f89-95f8-cd11748a753c
+- name: Parker Space
+  role: member
+  person_id: ocd-person/1dde507a-70ed-4f89-95f8-cd11748a753c
 other_names:
-- name: Committee on Environment and Energy
-- name: Environment and Energy Committee
-- name: Senate Committee on Environment and Energy
 - name: Senate Environment and Energy
+- name: Senate Committee on Environment and Energy
 - name: Senate Environment and Energy Committee

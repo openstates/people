@@ -3,13 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:nj/government
 classification: committee
 name: Appropriations
 chamber: lower
-sources:
-- url: https://www.njleg.state.nj.us/api/legislatorData/committeeInfo/assembly-committees
-  note: JSON data page from NJ Legislative API
 links:
 - url: https://njleg.state.nj.us/committees/assembly-committees?committee=AAP
 - url: https://www.njleg.state.nj.us/committees/assembly-committees
-  note: homepage
 members:
 - name: Lisa Swain
   role: chair
@@ -35,9 +31,6 @@ members:
 - name: Jay Webber
   role: member
   person_id: ocd-person/dbe67894-e4cd-46ea-bb59-877a8b4f26d0
-- name: Pam Lampitt
-  role: member
-  person_id: ocd-person/279cf9a8-0a51-45cd-b79f-b174f6f1cbc0
 - name: Shama Haider
   role: member
   person_id: ocd-person/49be7512-9343-4189-8769-4497ed129a92
@@ -45,11 +38,6 @@ members:
   role: member
   person_id: ocd-person/c05a0080-95df-4576-a81c-d509fb4a5063
 other_names:
-- name: Appropriations Committee
 - name: Assembly Appropriations
-- name: Assembly Appropriations Committee
 - name: Assembly Committee on Appropriations
-- name: Committee on Appropriations
-- name: House Appropriations
-- name: House Appropriations Committee
-- name: House Committee on Appropriations
+- name: Assembly Appropriations Committee

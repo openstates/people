@@ -3,18 +3,8 @@ jurisdiction: ocd-jurisdiction/country:us/state:ga/government
 classification: committee
 name: Administrative Affairs
 chamber: upper
-sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/details/134/1029
-  note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/details/134/1031
-  note: Detail page (requires authorization token)
 links:
 - url: https://www.legis.ga.gov/committees/senate/134
-  note: homepage
 members:
 - name: John Kennedy
   role: chair
@@ -22,20 +12,22 @@ members:
 - name: Ben Watson
   role: member
   person_id: ocd-person/fd2717f1-6294-4601-a027-8fc41195372c
-- name: Gloria Butler
+- name: Ben Watson
   role: member
-  person_id: ocd-person/c02e2258-027d-4ef8-bed9-70619b4bc4da
-- name: Shelly Echols
+  person_id: ocd-person/fd2717f1-6294-4601-a027-8fc41195372c
+- name: Ben Watson
   role: member
-  person_id: ocd-person/307b6d01-e9df-4970-92bf-4da4ead189b5
+  person_id: ocd-person/fd2717f1-6294-4601-a027-8fc41195372c
+- name: Matt Brass
+  role: member
+  person_id: ocd-person/81b84318-8c9f-467f-a7c1-776d9c415f51
+- name: Matt Brass
+  role: member
+  person_id: ocd-person/81b84318-8c9f-467f-a7c1-776d9c415f51
 - name: Steve Gooch
   role: member
   person_id: ocd-person/e2c141e9-9e04-4e2b-8e5b-57db594c7abc
 other_names:
 - name: Senate Administrative Affairs
-- name: Senate Administrative Affairs Committee
 - name: Senate Committee on Administrative Affairs
-extras:
-  address: 321 CAP  Atlanta, GA 30334
-  phone: '4046566578'
-  fax: '4046516768'
+- name: Senate Administrative Affairs Committee

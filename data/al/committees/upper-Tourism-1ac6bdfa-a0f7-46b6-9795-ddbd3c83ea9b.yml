@@ -3,16 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Tourism
 chamber: upper
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3269&COMMITTEE=Tourism
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3269&COMMITTEE=Tourism
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3269&COMMITTEE=Tourism
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
 - name: Randy Price
   role: chair
@@ -26,6 +19,12 @@ members:
 - name: Billy Beasley
   role: member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
+- name: Billy Beasley
+  role: member
+  person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
+- name: Bobby Singleton
+  role: member
+  person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
 - name: Bobby Singleton
   role: member
   person_id: ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493
@@ -35,9 +34,15 @@ members:
 - name: David Sessions
   role: member
   person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
+- name: David Sessions
+  role: member
+  person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
 - name: Garlan Gudger
   role: member
   person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
+- name: Greg Albritton
+  role: member
+  person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
 - name: Greg Albritton
   role: member
   person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
@@ -51,13 +56,6 @@ members:
   role: member
   person_id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
 other_names:
-- name: Committee on Tourism
-- name: Senate Committee on Tourism
 - name: Senate Tourism
+- name: Senate Committee on Tourism
 - name: Senate Tourism Committee
-- name: Tourism Committee
-extras:
-  Clerk: Asia Franklin
-  Phone: 334 261-0712
-  Email: asia.franklin@alsenate.gov
-  Suite: '726'

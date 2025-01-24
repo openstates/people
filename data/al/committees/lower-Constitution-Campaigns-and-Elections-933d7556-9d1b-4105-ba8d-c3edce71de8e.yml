@@ -3,14 +3,8 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Constitution, Campaigns and Elections
 chamber: lower
-sources:
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Membership information api call
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
-  note: homepage
 members:
 - name: Bob Fincher
   role: chair
@@ -33,6 +27,9 @@ members:
 - name: Chris Pringle
   role: member
   person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
+- name: Chris Pringle
+  role: member
+  person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
 - name: James Lomax
   role: member
   person_id: ocd-person/d54b8dfc-7921-4f35-ad22-ad2efdaad100
@@ -48,6 +45,9 @@ members:
 - name: Mack Butler
   role: member
   person_id: ocd-person/5071243c-3e2d-4acb-ac8d-0d3a8af3eb8a
+- name: Mack Butler
+  role: member
+  person_id: ocd-person/5071243c-3e2d-4acb-ac8d-0d3a8af3eb8a
 - name: Mark Shirey
   role: member
   person_id: ocd-person/41debaee-f705-453d-a46f-3e8282b8a4b0
@@ -58,8 +58,6 @@ members:
   role: member
   person_id: ocd-person/78f07b0c-9939-4e03-81f8-f851511a46cb
 other_names:
-- name: Committee on Constitution, Campaigns and Elections
-- name: Constitution, Campaigns and Elections Committee
-- name: House Committee on Constitution, Campaigns and Elections
 - name: House Constitution, Campaigns and Elections
+- name: House Committee on Constitution, Campaigns and Elections
 - name: House Constitution, Campaigns and Elections Committee

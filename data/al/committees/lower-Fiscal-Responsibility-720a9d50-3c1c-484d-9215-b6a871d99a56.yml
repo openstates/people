@@ -3,16 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Fiscal Responsibility
 chamber: lower
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3215&COMMITTEE=Fiscal%20Responsibility
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3215&COMMITTEE=Fiscal%20Responsibility
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3215&COMMITTEE=Fiscal%20Responsibility
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
-  note: homepage
 members:
 - name: Phillip Pettus
   role: chair
@@ -45,13 +38,6 @@ members:
   role: member
   person_id: ocd-person/03612130-d61e-43dd-9768-ddca8f27d4ea
 other_names:
-- name: Committee on Fiscal Responsibility
-- name: Fiscal Responsibility Committee
-- name: House Committee on Fiscal Responsibility
 - name: House Fiscal Responsibility
+- name: House Committee on Fiscal Responsibility
 - name: House Fiscal Responsibility Committee
-extras:
-  Clerk: Carmen Berrey
-  Phone: (334) 261-0468
-  Email: carmen.berrey@alhouse.gov
-  Room: Room 404

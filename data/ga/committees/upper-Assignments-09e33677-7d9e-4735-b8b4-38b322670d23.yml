@@ -3,18 +3,8 @@ jurisdiction: ocd-jurisdiction/country:us/state:ga/government
 classification: committee
 name: Assignments
 chamber: upper
-sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/details/133/1029
-  note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/details/133/1031
-  note: Detail page (requires authorization token)
 links:
 - url: https://www.legis.ga.gov/committees/senate/133
-  note: homepage
 members:
 - name: Brandon Beach
   role: member
@@ -30,8 +20,5 @@ members:
   person_id: ocd-person/e2c141e9-9e04-4e2b-8e5b-57db594c7abc
 other_names:
 - name: Senate Assignments
-- name: Senate Assignments Committee
 - name: Senate Committee on Assignments
-extras:
-  address: 240 CAP  Atlanta, GA 30334
-  fax: '4044635220'
+- name: Senate Assignments Committee

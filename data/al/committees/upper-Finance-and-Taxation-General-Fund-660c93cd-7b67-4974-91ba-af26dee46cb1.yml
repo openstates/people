@@ -3,17 +3,13 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Finance and Taxation General Fund
 chamber: upper
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3258&COMMITTEE=Finance%20and%20Taxation%20General%20Fund
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3258&COMMITTEE=Finance%20and%20Taxation%20General%20Fund
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3258&COMMITTEE=Finance%20and%20Taxation%20General%20Fund
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
-  note: homepage
 members:
+- name: Greg Albritton
+  role: chair
+  person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
 - name: Greg Albritton
   role: chair
   person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0
@@ -23,15 +19,24 @@ members:
 - name: Linda Coleman-Madison
   role: ranking democratic member
   person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
+- name: Linda Coleman-Madison
+  role: ranking democratic member
+  person_id: ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd
 - name: Andrew Jones
   role: member
   person_id: ocd-person/84d43460-8578-4b85-b2ee-7f6849e270d8
 - name: April Weaver
   role: member
   person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
+- name: April Weaver
+  role: member
+  person_id: ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d
 - name: Arthur Orr
   role: member
   person_id: ocd-person/b38546ec-f8fb-4e99-8e0c-46715b2e8578
+- name: Billy Beasley
+  role: member
+  person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
 - name: Billy Beasley
   role: member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
@@ -44,6 +49,9 @@ members:
 - name: Larry Stutts
   role: member
   person_id: ocd-person/abc69c3a-3f86-4880-a1ea-a2a52677b877
+- name: Merika Coleman
+  role: member
+  person_id: ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5
 - name: Merika Coleman
   role: member
   person_id: ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5
@@ -63,13 +71,6 @@ members:
   role: member
   person_id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
 other_names:
-- name: Committee on Finance and Taxation General Fund
-- name: Finance and Taxation General Fund Committee
-- name: Senate Committee on Finance and Taxation General Fund
 - name: Senate Finance and Taxation General Fund
+- name: Senate Committee on Finance and Taxation General Fund
 - name: Senate Finance and Taxation General Fund Committee
-extras:
-  Clerk: Dianne Gray
-  Phone: 334 261-0785
-  Email: dianne.gray@alsenate.gov
-  Suite: '727'

@@ -3,16 +3,9 @@ jurisdiction: ocd-jurisdiction/country:us/state:al/government
 classification: committee
 name: Judiciary
 chamber: lower
-sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1795&COMMITTEE=Judiciary
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1795&COMMITTEE=Judiciary
-  note: homepage
+- url: http://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1795&COMMITTEE=Judiciary
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
-  note: homepage
 members:
 - name: Jim Hill
   role: chair
@@ -60,11 +53,6 @@ members:
   role: member
   person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
 other_names:
-- name: House Committee on Judiciary
 - name: House Judiciary
+- name: House Committee on Judiciary
 - name: House Judiciary Committee
-extras:
-  Clerk: Brandy Allen
-  Phone: (334) 261-0494
-  Email: brandy.allen@alhouse.gov
-  Room: Room 419

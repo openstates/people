@@ -3,18 +3,30 @@ jurisdiction: ocd-jurisdiction/country:us/state:in/government
 classification: committee
 name: Ethics
 chamber: upper
-sources:
-- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
-  note: Committee List API from current beta version of Indiana gov site
 links:
 - url: https://iga.in.gov/2024/committees/senate/ethics
+- url: https://iga.in.gov/2025/committees/senate/ethics
 - url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getMembers?committee_id=fda7b2fc-1213-443a-ab33-f8418763f8a7&session_lpid=session_2023
-  note: homepage
 members:
 - name: Eric Bassler
   role: chair
   person_id: ocd-person/2d517236-2a88-435f-bc1f-ce09de86c6f9
+- name: Rodney Pol
+  role: vice chair
+  person_id: ocd-person/4058ba4c-30a9-46a7-80a1-1f3de1e44a2f
+- name: Greg Walker
+  role: ranking republican member
+  person_id: ocd-person/0bee6f8c-db8b-4e92-8bd4-799c71c55c2c
+- name: Andrea Hunley
+  role: member
+  person_id: ocd-person/f22b3c5a-950d-4e0c-83c8-bf9a7c005c73
+- name: Fady Qaddoura
+  role: member
+  person_id: ocd-person/ba72879f-42bd-4735-a3e0-d5edd0358f98
+- name: Liz Brown
+  role: member
+  person_id: ocd-person/d9013459-1dea-46ee-bdd5-5b2874b76e0a
 other_names:
-- name: Senate Committee on Ethics
 - name: Senate Ethics
+- name: Senate Committee on Ethics
 - name: Senate Ethics Committee

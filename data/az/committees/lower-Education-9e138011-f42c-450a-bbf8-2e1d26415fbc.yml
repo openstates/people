@@ -3,31 +3,21 @@ jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
 name: Education
 chamber: lower
-sources:
-- url: https://apps.azleg.gov/api/Committee/?sessionId=123&includeMembers=true
-- url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
-- url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
-  note: API with all committee details
 links:
-- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=1892&sessionId=123
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
-  note: homepage
 members:
+- name: Beverly Pingerelli
+  role: chair
+  person_id: ocd-person/77be0e97-4c93-4332-a9f9-9348560fdf98
 - name: Beverly Pingerelli
   role: chair
   person_id: ocd-person/77be0e97-4c93-4332-a9f9-9348560fdf98
 - name: David Marshall
   role: vice chair
   person_id: ocd-person/8bc6f450-7fc4-4258-bf5a-86465e85b9fb
-- name: David Cook
+- name: Lupe Diaz
   role: member
-  person_id: ocd-person/b7d285d8-63a8-4e65-8889-2aa064eda4ff
-- name: Jennifer Pawlik
-  role: member
-  person_id: ocd-person/3bdf978d-8979-4379-95b3-7a4d4cc770ce
-- name: Judy Schwiebert
-  role: member
-  person_id: ocd-person/8e5bee66-d53d-4167-b9a8-de8f54145bf2
+  person_id: ocd-person/bc52f516-a13b-4490-a12c-7b98fa3969e5
 - name: Lupe Diaz
   role: member
   person_id: ocd-person/bc52f516-a13b-4490-a12c-7b98fa3969e5
@@ -37,14 +27,10 @@ members:
 - name: Nancy Gutierrez
   role: member
   person_id: ocd-person/f9216229-6490-412d-aa30-8baac5c2be3e
-- name: Rachel Jones
+- name: Rachel Keshel
   role: member
   person_id: ocd-person/11b313a8-0f20-4d81-8060-4ec7e65f1a29
 other_names:
-- name: House Committee on Education
 - name: House Education
+- name: House Committee on Education
 - name: House Education Committee
-extras:
-  Committee ID: 2006
-  Committee Short Name: ED
-  Committee Type: Standing
