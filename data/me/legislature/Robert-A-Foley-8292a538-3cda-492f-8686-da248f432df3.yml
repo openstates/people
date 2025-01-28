@@ -3,11 +3,22 @@ name: Bob Foley
 given_name: Bob
 family_name: Foley
 gender: Male
+email: robert.foley@legislature.maine.gov
 image: http://www.maine.gov/legis/house/photo128/folera.jpg
 party:
 - name: Republican
 roles:
-- start_date: 2024-12-04
+- start_date: 2024-12-03
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '145'
+- start_date: 2014-12-03
+  end_date: 2018-12-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:me/government
+  district: '145'
+- start_date: 2018-12-05
+  end_date: 2020-12-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '145'
@@ -15,9 +26,17 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:me/government
   district: '7'
+offices:
+- classification: capitol
+  address: Room 332, 2 State House Station, Augusta, ME 04333
+  voice: 207-287-1440
+- classification: home
+  address: 57 Shady Lane, Wells, ME 04090
+  voice: 207-590-2144
 links:
 - url: https://www.maine.gov/legis/house/hsebios/folera.htm
 - url: https://mainehousegop.org/members/foley-robert/
+- url: https://legislature.maine.gov/house/house/MemberProfiles/Details/64
 other_names:
 - name: B. Foley
 - name: Foley, B.
@@ -31,6 +50,7 @@ sources:
 - url: https://ballotpedia.org/Robert_Foley
 - url: https://en.wikipedia.org/wiki/Robert_Foley_(American_politician)
 - url: https://justfacts.votesmart.org/candidate/biography/151401/robert-foley
+- url: https://legislature.maine.gov/house/house/MemberProfiles/Details/64
 - url: https://mainehousegop.org/members/foley-robert
 - url: https://www.linkedin.com/in/robert-foley-64326732
 extras:

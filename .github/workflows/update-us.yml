@@ -2,7 +2,7 @@ name: Update US data
 
 on:
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "0 0 31 2 * " # Disable cron job for now. There is no February 31st
   workflow_dispatch:
 
 jobs:
