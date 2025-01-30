@@ -8,7 +8,12 @@ email: zack.wirth@legmt.gov
 party:
 - name: Republican
 roles:
-- start_date: &id001 2025-01-06
+- start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '17'
+- start_date: 2023-01-02
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '17'
@@ -16,7 +21,7 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '80'
-  end_date: *id001
+  end_date: 2025-01-06
 offices:
 - classification: district-mail
   address: 2020 Chevallier Drive, Wolf Creek, MT 59648
