@@ -9,7 +9,12 @@ image: https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directo
 party:
 - name: Democratic
 roles:
-- start_date: 2022-12-01
+- type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:id/government
+  district: '29'
+  start_date: 2022-12-01
+- start_date: 2020-12-01
+  end_date: 2022-11-30
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:id/government
   district: '29'
