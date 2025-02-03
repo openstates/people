@@ -13,6 +13,11 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '15'
+- start_date: 2015-01-12
+  end_date: 2023-01-02
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
+  district: '15'
 - start_date: 1987-01-12
   end_date: 1993-01-10
   type: upper
@@ -20,11 +25,6 @@ roles:
   district: '15'
 - start_date: 1993-01-11
   end_date: 1997-01-12
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ia/government
-  district: '15'
-- start_date: 2015-01-12
-  end_date: 2023-01-02
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ia/government
   district: '15'
@@ -51,6 +51,7 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: IAL000516
 sources:
+- url: https://www.senate.iowa.gov/senator/bisignano
 - url: https://ballotpedia.org/Tony_Bisignano
 - url: https://en.wikipedia.org/wiki/Tony_Bisignano
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=88&personID=906
@@ -58,6 +59,5 @@ sources:
 - url: https://www.legis.iowa.gov/legislators/legislator?ga=90&personID=906
 - url: https://www.legis.iowa.gov/legislators/legislator?personID=906
 - url: https://www.legis.iowa.gov/legislators/senate
-- url: https://www.senate.iowa.gov/senator/bisignano
 extras:
   occupation: Retired
