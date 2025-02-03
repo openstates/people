@@ -7,7 +7,12 @@ email: kerri.seekins-crowe@legmt.gov
 party:
 - name: Republican
 roles:
-- start_date: &id001 2025-01-06
+- start_date: 2025-01-06
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mt/government
+  district: '39'
+- start_date: 2021-01-04
+  end_date: 2025-01-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '39'
@@ -15,7 +20,7 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mt/government
   district: '43'
-  end_date: *id001
+  end_date: 2025-01-06
 offices:
 - classification: district-mail
   address: 480 Pinon Drive, Billings, MT 59015
@@ -28,6 +33,7 @@ links:
 - url: https://leg.mt.gov/legislator-information/roster/individual/6909
 - url: https://leg.mt.gov/legislator-information/roster/individual/7588
 - url: https://www.legmt.gov/legislators/1439
+- url: https://www.legmt.gov/legislators/1439/
 other_names:
 - name: K. Seekins-Crowe
 - name: Kerri Seekins-Crowe
