@@ -4,11 +4,17 @@ given_name: Sam
 family_name: Marty
 birth_date: 1947-11-08
 gender: Male
-image: https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/marty_2019.jpg
+email: sam.marty@sdlegislature.gov
+image: https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MARTY.jpg
 party:
 - name: Republican
 roles:
 - start_date: 2025-01-14
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '28'
+- start_date: 2015-01-13
+  end_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
   district: '28'
