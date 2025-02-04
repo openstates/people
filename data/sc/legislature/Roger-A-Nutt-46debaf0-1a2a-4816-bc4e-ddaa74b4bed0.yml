@@ -14,13 +14,18 @@ roles:
   district: '12'
 - start_date: 2020-11-09
   end_date: 2024-11-10
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sc/government
+  district: '12'
+- start_date: 2020-11-09
+  end_date: 2024-11-10
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '34'
 offices:
-- classification: district-mail
-  address: Room 402A, Blatt Building P.O. Box 11867, Columbia, SC 29201
-  voice: 803-212-6792
+- classification: capitol
+  address: Room 501, Gressette Building, Columbia, SC 29201
+  voice: 803-212-6100
 - classification: home
   address: 142 Twin Lakes Drive, Moore, SC 29369
   voice: 864-706-1557
@@ -39,6 +44,7 @@ other_names:
 sources:
 - url: https://www.scstatehouse.gov/member.php?code=1424999829
 - url: https://ballotpedia.org/Roger_Nutt
+- url: https://en.wikipedia.org/wiki/Roger_Nutt
 - url: https://justfacts.votesmart.org/candidate/biography/56868/roger-nutt
 - url: https://scstatehouse.gov/member.php?chamber=H
 - url: https://scstatehouse.gov/member.php?code=1424999829
