@@ -2,11 +2,18 @@ id: ocd-person/fc1a5e1f-6ce4-47ab-987b-095afa166359
 name: Kimberly New
 given_name: Kimberly
 family_name: New
+birth_date: 1967-11-12
 gender: Female
+email: kimberly.new@house.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/new-kimberly-5030.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2023-01-09
+  end_date: 2025-01-12
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '40'
 - start_date: 2025-01-13
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government

@@ -9,6 +9,11 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/mallow-derek
 party:
 - name: Democratic
 roles:
+- start_date: 2021-01-11
+  end_date: 2023-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '2'
 - start_date: 2023-01-09
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
@@ -38,6 +43,7 @@ other_names:
 - name: Mallow, D.
 sources:
 - url: https://ballotpedia.org/Derek_Mallow
+- url: https://en.wikipedia.org/wiki/Derek_Mallow
 - url: https://www.legis.ga.gov/api/members/detail/5007?session=1029&chamber=1
   note: Detail page (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/detail/5007?session=1031&chamber=2

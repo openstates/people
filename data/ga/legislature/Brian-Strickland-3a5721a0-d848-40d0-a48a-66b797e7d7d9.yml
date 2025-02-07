@@ -4,10 +4,21 @@ given_name: Brian
 family_name: Strickland
 birth_date: 1983-10-26
 gender: Male
+email: brian.strickland@senate.ga.gov
 image: https://www.legis.ga.gov/api/images/default-source/portraits/strickland-brian-835.jpg
 party:
 - name: Republican
 roles:
+- start_date: 2013-01-14
+  end_date: 2017-12-01
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '42'
+- start_date: 2018-01-16
+  end_date: 2025-01-12
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
+  district: '42'
 - start_date: 2025-01-13
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
@@ -50,7 +61,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/9377bdba-e623-477c-ba0f-828b830a99c3
 sources:
-- url: https://www.legis.ga.gov/members/senate/835
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 - url: https://ballotpedia.org/Brian_Strickland
@@ -62,6 +72,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/835
 - url: https://www.legis.ga.gov/members/senate/835?session=1029
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 extras:
