@@ -8,23 +8,35 @@ sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2181&sessionId=129
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
 links:
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=1896&sessionId=123
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2181&sessionId=129
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
-- name: Neal Carter
+- name: Justin Olson
   role: chair
-  person_id: ocd-person/17f344ec-ffe3-46fe-ba7a-8efdc5fbf2fd
+  person_id: ocd-person/448cb969-a498-4826-ad1e-c443fe9b8057
+- name: Nick Kupper
+  role: vice chair
+  person_id: ocd-person/8595d83f-1e95-4c0d-8c24-100a4a763a8f
 - name: David Livingston
   role: member
   person_id: ocd-person/6e8f2c0d-c9d3-4cb5-ae59-5264cb6d61a7
+- name: "Elda Luna-N\xE1jera"
+  role: member
+  person_id: ocd-person/93db82ca-c8b1-43e4-98ce-ba52f4d0f635
+- name: James Taylor
+  role: member
+  person_id: ocd-person/70f55f83-fed8-497f-86a9-94b6d428b9b4
 - name: Mariana Sandoval
   role: member
   person_id: ocd-person/3b6fa6b2-0a60-4f2e-9fd8-0882b04d9e0b
-- name: Michael Carbone
+- name: Neal Carter
   role: member
-  person_id: ocd-person/8db06598-a7e1-4b25-9e76-6a2be0d9eae3
+  person_id: ocd-person/17f344ec-ffe3-46fe-ba7a-8efdc5fbf2fd
 - name: "Quant\xE1 Crews"
   role: member
   person_id: ocd-person/0fb2e73b-b140-4669-a9bd-b75facb342dd
