@@ -4,6 +4,7 @@ given_name: Jim
 family_name: Banks
 birth_date: 1979-07-16
 gender: Male
+email: https://www.banks.senate.gov/
 image: https://unitedstates.github.io/images/congress/450x550/B001299.jpg
 party:
 - name: Republican
@@ -33,10 +34,21 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/government
   district: IN-3
+offices:
+- classification: capitol
+  address: B85 Russell Senate Office Building 2 Constitution Ave. NE, Washington,
+    DC 20002
+  voice: 202-224-4814
+- classification: district
+  address: E. Ross Adair Federal Building 1300 S. Harrison St., Suite 3105, Fort Wayne,
+    IN 46802
+- classification: district
+  address: Hammond Federal Building 5400 Federal Plaza, Suite 3200, Hammond, IN 46320
 links:
 - url: https://banks.house.gov
   note: website
 - url: https://banks.house.gov/
+- url: https://www.banks.senate.gov/
 other_names:
 - name: Banks, J.
 - name: J. Banks
@@ -46,32 +58,32 @@ ids:
   youtube: UC_FR6TySW9uxvhjozkis6Xg
   facebook: RepJimBanks
 other_identifiers:
-- scheme: bioguide
-  identifier: B001299
-- scheme: govtrack
-  identifier: '412702'
-- scheme: wikipedia
-  identifier: Jim Banks
-- scheme: wikidata
-  identifier: Q16146788
-- scheme: votesmart
-  identifier: '116801'
-- scheme: fec
-  identifier: H6IN03229
-- scheme: opensecrets
-  identifier: N00037185
-- scheme: maplight
-  identifier: '2214'
-- scheme: google_entity_id
-  identifier: kg:/m/0j621nj
 - scheme: ballotpedia
   identifier: Jim Banks
+- scheme: bioguide
+  identifier: B001299
 - scheme: cspan
   identifier: '89806'
+- scheme: fec
+  identifier: H6IN03229
+- scheme: google_entity_id
+  identifier: kg:/m/0j621nj
+- scheme: govtrack
+  identifier: '412702'
 - scheme: icpsr
   identifier: '21702'
+- scheme: maplight
+  identifier: '2214'
+- scheme: opensecrets
+  identifier: N00037185
 - scheme: pictorial
   identifier: '13052'
+- scheme: votesmart
+  identifier: '116801'
+- scheme: wikidata
+  identifier: Q16146788
+- scheme: wikipedia
+  identifier: Jim Banks
 sources:
 - url: https://unitedstates.github.io/
 - url: https://ballotpedia.org/Jim_Banks_(Indiana)
@@ -80,4 +92,5 @@ sources:
 - url: https://banksforsenate.com/meet-jim
 - url: https://en.wikipedia.org/wiki/Jim_Banks
 - url: https://unitedstates.github.io
+- url: https://www.banks.senate.gov
 - url: https://www.govtrack.us/congress/members/jim_banks/412702
