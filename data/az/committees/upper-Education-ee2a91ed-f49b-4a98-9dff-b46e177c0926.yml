@@ -8,20 +8,35 @@ sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2224&sessionId=129
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
 links:
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2024&sessionId=128
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2224&sessionId=129
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
+- name: Dave Farnsworth
+  role: chair
+  person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
+- name: Carine Werner
+  role: vice chair
+  person_id: ocd-person/051cb7cf-e965-49a7-844a-a8830447df0c
 - name: Catherine Miranda
   role: member
   person_id: ocd-person/6241112b-910b-4ad8-9c0d-9caad318874f
-- name: Sally Gonzales
+- name: Eva Diaz
   role: member
-  person_id: ocd-person/3c965e03-1e51-4f10-a037-4fb2f35292c5
-- name: Shawnna Bolick
+  person_id: ocd-person/e1cd66fa-a0de-45fd-ae53-a4db7d178d21
+- name: Flavio Bravo
   role: member
-  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
+  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
+- name: J.D. Mesnard
+  role: member
+  person_id: ocd-person/06adeea1-c37c-4dd1-8be5-92e9b5d3556e
+- name: Tim Dunn
+  role: member
+  person_id: ocd-person/0b8c9973-1ae5-4af3-8a73-713c8365eccd
 other_names:
 - name: Senate Committee on Education
 - name: Senate Education

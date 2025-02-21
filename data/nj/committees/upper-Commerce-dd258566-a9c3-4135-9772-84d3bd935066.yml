@@ -6,11 +6,16 @@ chamber: upper
 sources:
 - url: https://www.njleg.state.nj.us/api/legislatorData/committeeInfo/senate-committees
   note: JSON data page from NJ Legislative API
+- url: https://njleg.state.nj.us/committees/senate-committees?committee=SCM
+- url: https://www.njleg.state.nj.us/committees/senate-committees
 links:
 - url: https://njleg.state.nj.us/committees/senate-committees?committee=SCM
 - url: https://www.njleg.state.nj.us/committees/senate-committees
   note: homepage
 members:
+- name: Joe Lagana
+  role: chair
+  person_id: ocd-person/90a0a109-2ce3-4a55-8761-1e07ff875703
 - name: Joe Cryan
   role: vice chair
   person_id: ocd-person/5dcef6ac-7dbe-4c65-a53b-670c89a615e7
