@@ -14,20 +14,20 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '46'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-463-1366
 - classification: district-mail
   address: P.O. Box 512, Athens, GA 30603
   voice: 706-543-7700
 links:
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/9?
 - url: https://www.legis.ga.gov/members/senate/9?session=1029
 - url: https://www.legis.ga.gov/members/senate/9?session=1031
   note: HTML member detail page
-- url: https://www.legis.ga.gov/members/senate/9?
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 other_names:
 - name: B. Cowsert
 - name: Bill Cowsert
@@ -38,9 +38,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000009
 sources:
-- url: https://www.legis.ga.gov/members/senate/9?session=1031
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 - url: https://ballotpedia.org/Bill_Cowsert
 - url: https://en.wikipedia.org/wiki/Bill_Cowsert
 - url: https://justfacts.votesmart.org/candidate/biography/31562/bill-cowsert
@@ -53,6 +50,7 @@ sources:
   note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/members/senate/9?
 - url: https://www.legis.ga.gov/members/senate/9?session=1029
+- url: https://www.legis.ga.gov/members/senate/9?session=1031
 - url: https://www.linkedin.com/in/bill-cowsert-0abb578
 - url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=9&Session=27
 extras:

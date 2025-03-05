@@ -12,45 +12,33 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '7'
-- start_date: 2009-09-16
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '7'
-- start_date: 2002-06-19
-  end_date: 2006-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '7'
 - end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '22'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
   voice: 801-538-1035
-  fax: 801-326-1475
 - classification: home
-  address: 3271 E. 1875 North, Layton, UT 84040
+  address: UT
   voice: 801-593-1776
-  fax: 801-544-7676
 links:
-- url: https://senate.utah.gov/stuart-adams
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1408736
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ADAMSJS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist22.pdf
   note: district demographics
-- url: https://le.utah.gov/senate/CofI/COFIADAMSJS2.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/senate/CofI/COFIADAMSJS.pdf
-  note: conflict of interest 1
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1408736
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist07.pdf
   note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIADAMSJS.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/senate/CofI/COFIADAMSJS2.pdf
+  note: conflict of interest 0
 - url: https://senate.utah.gov/sen/ADAMSJS/
   note: homepage
+- url: https://senate.utah.gov/stuart-adams
 other_names:
 - name: Adams, J. S.
 - name: Adams, J. Stuart
@@ -64,12 +52,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000250
 sources:
-- url: https://senate.utah.gov/sen/ADAMSJS/
 - url: https://ballotpedia.org/Stuart_Adams
 - url: https://en.wikipedia.org/wiki/J._Stuart_Adams
 - url: https://justfacts.votesmart.org/candidate/biography/50400/stuart-adams
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/ADAMSJS
+- url: https://senate.utah.gov/sen/ADAMSJS/
 extras:
   service start: '2010'
   profession: Businessman

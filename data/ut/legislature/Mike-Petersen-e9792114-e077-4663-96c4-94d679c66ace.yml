@@ -13,37 +13,32 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '2'
 - start_date: 2021-01-01
-  end_date: 2022-12-31
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '2'
-- start_date: 2021-01-01
   end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '3'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
   voice: 801-538-1029
-- classification: home
-  address: 1505 E. 2000 North, North Logan, UT 84341
+- classification: district
+  address: UT
   voice: 435-770-6925
 links:
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415376
+  note: finance report
 - url: https://house.utah.gov/rep/PETERM
+- url: https://house.utah.gov/rep/PETERM/
+  note: homepage
+- url: https://house.utleg.gov/rep/PETERM/
+- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=PETERM
+  note: legislation
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=PETERM
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist03.pdf
   note: district demographics
-- url: https://house.utah.gov/rep/PETERM/
-  note: homepage
-- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=PETERM
-  note: legislation
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415376
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist02.pdf
   note: district demographics
-- url: https://house.utleg.gov/rep/PETERM/
 other_names:
 - name: M. Petersen
 - name: M.J. Petersen
@@ -54,14 +49,12 @@ other_names:
 - name: Petersen, Michael J.
 - name: Petersen, Mike J.
 sources:
-- url: https://house.utleg.gov/rep/PETERM/
-- url: https://house.utah.gov/rep/PETERM/
-- url: https://house.utah.gov/rep/PETERM/
-- url: https://house.utah.gov/rep/PETERM
 - url: https://ballotpedia.org/Mike_Petersen_(Utah)
 - url: https://en.wikipedia.org/wiki/Mike_Petersen_(Utah_politician)
 - url: https://house.utah.gov/rep/PETERM
+- url: https://house.utah.gov/rep/PETERM/
 - url: https://house.utleg.gov/rep/PETERM
+- url: https://house.utleg.gov/rep/PETERM/
 - url: https://le.utah.gov/data/legislators.json
 - url: https://www.linkedin.com/in/mike-petersen-phd-0b401a4
 extras:
