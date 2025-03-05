@@ -12,29 +12,24 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '60'
-- end_date: 2023-01-08
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '60'
-  start_date: 2023-01-09
 - end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '53'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 404-A, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0308
 - classification: district
   address: 3246 Amhurst Drive, NW, Atlanta, GA 30318
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=143&Session=27
-- url: https://www.legis.ga.gov/members/house/143?session=1029
-- url: https://www.legis.ga.gov/members/house/143?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/143
+- url: https://www.legis.ga.gov/members/house/143?session=1029
+- url: https://www.legis.ga.gov/members/house/143?session=1031
+  note: HTML member detail page
 other_names:
 - name: Jones, S.
 - name: S. Jones
@@ -44,8 +39,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000315
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=143&Session=27
 - url: https://ballotpedia.org/Sheila_Jones
 - url: https://en.wikipedia.org/wiki/Sheila_Jones
 - url: https://justfacts.votesmart.org/candidate/biography/31662/sheila-jones

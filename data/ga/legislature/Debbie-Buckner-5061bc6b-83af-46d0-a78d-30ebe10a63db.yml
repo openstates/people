@@ -13,13 +13,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '137'
-- end_date: 2013-01-13
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '137'
-  start_date: 2013-01-14
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 409-A, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0116
 - classification: district-mail
@@ -27,12 +22,12 @@ offices:
   voice: 706-269-3630
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=71&Session=27
-- url: https://www.legis.ga.gov/members/house/71?session=1029
-- url: https://www.legis.ga.gov/members/house/71?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/71
+- url: https://www.legis.ga.gov/members/house/71?session=1029
+- url: https://www.legis.ga.gov/members/house/71?session=1031
+  note: HTML member detail page
 other_names:
 - name: Buckner, D.
 - name: D. Buckner
@@ -45,8 +40,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000253
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=71&Session=27
 - url: https://ballotpedia.org/Debbie_Buckner
 - url: https://en.wikipedia.org/wiki/Debbie_Buckner
 - url: https://justfacts.votesmart.org/candidate/biography/31792/debbie-buckner

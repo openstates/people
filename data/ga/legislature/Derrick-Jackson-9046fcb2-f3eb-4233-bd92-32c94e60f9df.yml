@@ -13,13 +13,8 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '68'
-- start_date: 2017-01-09
-  end_date: 2023-01-08
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '68'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 509-G, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0220
 - classification: district-mail
@@ -27,6 +22,7 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/house/4891
 - url: https://www.legis.ga.gov/members/house/4891?session=1031
   note: HTML member detail page
 other_names:
@@ -39,6 +35,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/house/4891
 - url: https://www.legis.ga.gov/members/house/4891?session=1031
 - url: https://www.linkedin.com/in/derrick-jackson-abd-522a287
 extras:

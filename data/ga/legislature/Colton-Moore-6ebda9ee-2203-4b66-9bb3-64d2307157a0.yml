@@ -13,22 +13,12 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '53'
-- start_date: 2023-01-09
-  end_date: 2023-09-27
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '53'
-- start_date: 2019-01-14
-  end_date: 2021-01-10
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '53'
 - end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '1'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 322-B, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-0256
 - classification: district-mail
@@ -37,9 +27,10 @@ links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4933&Session=27
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
-- url: https://www.legis.ga.gov/members/senate/4933?session=1032
+- url: https://www.legis.ga.gov/members/senate/4933
 - url: https://www.legis.ga.gov/members/senate/4933?session=1031
   note: HTML member detail page
+- url: https://www.legis.ga.gov/members/senate/4933?session=1032
 other_names:
 - name: C. Moore
 - name: C.C. Moore
@@ -47,8 +38,6 @@ other_names:
 - name: Colton Moore
 - name: Moore, C.
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4933&Session=27
 - url: https://ballotpedia.org/Colton_Moore
 - url: https://en.wikipedia.org/wiki/Colton_Moore
 - url: https://justfacts.votesmart.org/candidate/biography/178711/colton-moore
@@ -58,6 +47,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/4933
 - url: https://www.legis.ga.gov/members/senate/4933?session=1031
 - url: https://www.linkedin.com/in/coltoncmoore
 extras:

@@ -13,40 +13,25 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '42'
-- start_date: 2013-01-14
-  end_date: 2017-12-01
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '42'
-- start_date: 2018-01-16
-  end_date: 2025-01-12
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '42'
-- start_date: 2018-01-16
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '17'
-  end_date: 2025-01-13
 - start_date: 2013-01-01
   end_date: 2018-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '111'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 324-B, Coverdell Legislative Office Building, Atlanta, GA 30334
-  voice: 404-463-6598
+  voice: 404-656-0508
 - classification: district-mail
   address: P.O. Box 1895, McDonough, GA 30253
 links:
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
-- url: https://www.legis.ga.gov/members/senate/835?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
-- url: https://www.legis.ga.gov/members/senate/835?session=1029
 - url: https://www.legis.ga.gov/members/senate/835
+- url: https://www.legis.ga.gov/members/senate/835?session=1029
+- url: https://www.legis.ga.gov/members/senate/835?session=1031
+  note: HTML member detail page
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 other_names:
 - name: B. Strickland
 - name: Brian Strickland
@@ -61,8 +46,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/9377bdba-e623-477c-ba0f-828b830a99c3
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=835&Session=27
 - url: https://ballotpedia.org/Brian_Strickland
 - url: https://en.wikipedia.org/wiki/Brian_Strickland
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
