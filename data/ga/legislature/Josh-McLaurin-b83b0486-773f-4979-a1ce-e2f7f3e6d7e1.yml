@@ -13,17 +13,12 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '14'
-- start_date: 2019-01-14
-  end_date: 2023-01-08
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '14'
 - end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '51'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 323-A, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-463-4228
 - classification: district-mail
@@ -33,6 +28,7 @@ links:
 - url: https://www.legis.ga.gov/members/house/4942?session=1029
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
+- url: https://www.legis.ga.gov/members/senate/4942
 - url: https://www.legis.ga.gov/members/senate/4942?session=1031
   note: HTML member detail page
 other_names:
@@ -42,8 +38,6 @@ other_names:
 - name: Joshua Ivan McLaurin
 - name: McLaurin, J.
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=4942&Session=27
 - url: https://ballotpedia.org/Josh_McLaurin
 - url: https://en.wikipedia.org/wiki/Josh_McLaurin
 - url: https://justfacts.votesmart.org/candidate/biography/178766/josh-mclaurin
@@ -56,6 +50,7 @@ sources:
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
 - url: https://www.legis.ga.gov/members/house/4942?session=1029
+- url: https://www.legis.ga.gov/members/senate/4942
 - url: https://www.legis.ga.gov/members/senate/4942?session=1031
 - url: https://www.linkedin.com/in/josh-mclaurin-72a13821
 extras:

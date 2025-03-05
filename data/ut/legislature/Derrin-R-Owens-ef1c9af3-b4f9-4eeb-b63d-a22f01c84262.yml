@@ -12,16 +12,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '27'
-- start_date: 2021-01-01
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '27'
-- start_date: 2015-08-10
-  end_date: 2020-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '27'
 - end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
@@ -31,37 +21,36 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '24'
 offices:
+- classification: capitol
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
 - classification: district-mail
-  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
-  voice: 801-538-1029
-- classification: home
   address: P.O. Box 127, Fountain Green, UT 84632
-  voice: 435-851-1284
 links:
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414375
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=OWENSD
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist27.pdf
   note: district demographics
-- url: https://le.utah.gov/house2/CofI/COFIOWENSD4.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/house2/CofI/COFIOWENSD3.pdf
-  note: conflict of interest 1
-- url: https://le.utah.gov/house2/CofI/COFIOWENSD2.pdf
-  note: conflict of interest 2
-- url: https://le.utah.gov/house2/CofI/COFIOWENSD1.pdf
-  note: conflict of interest 3
 - url: https://le.utah.gov/house2/CofI/COFIOWENSD.pdf
   note: conflict of interest 4
-- url: https://le.utah.gov/house2/CofI/OWENSD1.pdf
-  note: conflict of interest 5
-- url: https://le.utah.gov/house2/CofI/OWENSD.pdf
-  note: conflict of interest 6
-- url: https://le.utah.gov/house2/CofI/dowens2.pdf
-  note: conflict of interest 7
+- url: https://le.utah.gov/house2/CofI/COFIOWENSD1.pdf
+  note: conflict of interest 3
+- url: https://le.utah.gov/house2/CofI/COFIOWENSD2.pdf
+  note: conflict of interest 2
+- url: https://le.utah.gov/house2/CofI/COFIOWENSD3.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/COFIOWENSD4.pdf
+  note: conflict of interest 0
 - url: https://le.utah.gov/house2/CofI/dowens.pdf
   note: conflict of interest 8
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414375
-  note: finance report
+- url: https://le.utah.gov/house2/CofI/dowens2.pdf
+  note: conflict of interest 7
+- url: https://le.utah.gov/house2/CofI/OWENSD.pdf
+  note: conflict of interest 6
+- url: https://le.utah.gov/house2/CofI/OWENSD1.pdf
+  note: conflict of interest 5
 - url: https://senate.utah.gov/sen/OWENSD/
   note: homepage
 other_names:
@@ -75,12 +64,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000282
 sources:
-- url: https://senate.utah.gov/sen/OWENSD/
 - url: https://ballotpedia.org/Derrin_Owens
 - url: https://en.wikipedia.org/wiki/Derrin_Owens
 - url: https://justfacts.votesmart.org/candidate/biography/164665/derrin-owens
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/OWENSD
+- url: https://senate.utah.gov/sen/OWENSD/
 extras:
   service start: '2015'
   profession: Executive Director, Economic Development

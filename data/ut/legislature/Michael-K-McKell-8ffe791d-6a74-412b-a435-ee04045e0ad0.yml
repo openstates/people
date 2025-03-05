@@ -12,16 +12,6 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '25'
-- start_date: 2021-01-01
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '25'
-- start_date: 2013-01-01
-  end_date: 2020-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '25'
 - end_date: 2020-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
@@ -32,36 +22,36 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '7'
 offices:
-- classification: district-mail
-  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
-  voice: 801-538-1029
-- classification: home
+- classification: capitol
+  address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
+  voice: 801-538-1035
+- classification: district
   address: 642 Kirby Lane Suite 105, Spanish Fork, UT 84660
   voice: 801-798-9000
 links:
-- url: https://senate.utah.gov/michael-mckell
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411332
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MCKELMK
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist07.pdf
   note: district demographics
-- url: https://le.utah.gov/house2/CofI/COFIMCKELMK2.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/house2/CofI/COFIMCKELMK1.pdf
-  note: conflict of interest 1
-- url: https://le.utah.gov/house2/CofI/COFIMCKELMK.pdf
-  note: conflict of interest 2
-- url: https://le.utah.gov/house2/CofI/MCKELMK1.pdf
-  note: conflict of interest 3
-- url: https://le.utah.gov/house2/CofI/mmckell2.pdf
-  note: conflict of interest 4
-- url: https://le.utah.gov/house2/CofI/mmckell.pdf
-  note: conflict of interest 5
-- url: https://le.utah.gov/house2/CofI/MCKELMK.pdf
-  note: conflict of interest 6
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1411332
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist25.pdf
   note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFIMCKELMK.pdf
+  note: conflict of interest 2
+- url: https://le.utah.gov/house2/CofI/COFIMCKELMK1.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/COFIMCKELMK2.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/house2/CofI/MCKELMK.pdf
+  note: conflict of interest 6
+- url: https://le.utah.gov/house2/CofI/MCKELMK1.pdf
+  note: conflict of interest 3
+- url: https://le.utah.gov/house2/CofI/mmckell.pdf
+  note: conflict of interest 5
+- url: https://le.utah.gov/house2/CofI/mmckell2.pdf
+  note: conflict of interest 4
+- url: https://senate.utah.gov/michael-mckell
 - url: https://senate.utah.gov/sen/MCKELMK/
   note: homepage
 other_names:
@@ -78,12 +68,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000301
 sources:
-- url: https://senate.utah.gov/sen/MCKELMK/
 - url: https://ballotpedia.org/Mike_McKell
 - url: https://en.wikipedia.org/wiki/Mike_McKell
 - url: https://justfacts.votesmart.org/candidate/biography/137542/mike-mckell
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/MCKELMK
+- url: https://senate.utah.gov/sen/MCKELMK/
 - url: https://www.linkedin.com/in/michaelmckell
 extras:
   service start: January 1, 2013

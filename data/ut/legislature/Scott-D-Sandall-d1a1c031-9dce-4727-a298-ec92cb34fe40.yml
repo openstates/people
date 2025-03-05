@@ -12,53 +12,41 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '1'
-- start_date: 2015-01-01
-  end_date: 2018-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '1'
-- start_date: 2019-01-01
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '1'
 - start_date: 2019-01-01
   end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '17'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
   voice: 801-538-1035
-  fax: 801-326-1475
-- classification: home
-  address: 635 N. Hillcrest Circle, Tremonton, UT 84337
-  voice: 435-279-7551
+- classification: district
+  address: 635 Hillcrest Circle, Tremonton, UT 84337
 links:
-- url: https://senate.utah.gov/scott-sandall
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412644
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=SANDASD
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist17.pdf
   note: district demographics
-- url: https://le.utah.gov/senate/CofI/COFISANDASD.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/house2/CofI/COFISANDASD1.pdf
-  note: conflict of interest 1
-- url: https://le.utah.gov/house2/CofI/COFISANDASD.pdf
-  note: conflict of interest 2
-- url: https://le.utah.gov/house2/CofI/SANDASD1.pdf
-  note: conflict of interest 3
-- url: https://le.utah.gov/house2/CofI/SANDASD.pdf
-  note: conflict of interest 4
-- url: https://le.utah.gov/house2/CofI/ssandall2.pdf
-  note: conflict of interest 5
-- url: https://le.utah.gov/house2/CofI/ssandall.pdf
-  note: conflict of interest 6
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412644
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist01.pdf
   note: district demographics
+- url: https://le.utah.gov/house2/CofI/COFISANDASD.pdf
+  note: conflict of interest 2
+- url: https://le.utah.gov/house2/CofI/COFISANDASD1.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/SANDASD.pdf
+  note: conflict of interest 4
+- url: https://le.utah.gov/house2/CofI/SANDASD1.pdf
+  note: conflict of interest 3
+- url: https://le.utah.gov/house2/CofI/ssandall.pdf
+  note: conflict of interest 6
+- url: https://le.utah.gov/house2/CofI/ssandall2.pdf
+  note: conflict of interest 5
+- url: https://le.utah.gov/senate/CofI/COFISANDASD.pdf
+  note: conflict of interest 0
+- url: https://senate.utah.gov/scott-sandall
 - url: https://senate.utah.gov/sen/SANDASD/
   note: homepage
 other_names:
@@ -73,12 +61,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000259
 sources:
-- url: https://senate.utah.gov/sen/SANDASD/
 - url: https://ballotpedia.org/Scott_Sandall
 - url: https://en.wikipedia.org/wiki/Scott_Sandall
 - url: https://justfacts.votesmart.org/candidate/biography/151629/scott-sandall
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/SANDASD
+- url: https://senate.utah.gov/sen/SANDASD/
 - url: https://www.linkedin.com/in/scott-sandall-582b19aa
 extras:
   service start: 2015-2018 Utah House of Representatives; 2019 Senate

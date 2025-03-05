@@ -14,7 +14,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '48'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Room 305-B, Coverdell Legislative Office Building, Atlanta, GA 30334
   voice: 404-656-7127
 - classification: district-mail
@@ -22,9 +22,10 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
-- url: https://www.legis.ga.gov/members/senate/5016?session=1032
+- url: https://www.legis.ga.gov/members/senate/5016
 - url: https://www.legis.ga.gov/members/senate/5016?session=1031
   note: HTML member detail page
+- url: https://www.legis.ga.gov/members/senate/5016?session=1032
 other_names:
 - name: S. Still
 - name: S.M.T. Still
@@ -36,6 +37,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/5016
 - url: https://www.legis.ga.gov/members/senate/5016?session=1031
 - url: https://www.linkedin.com/in/shawnstill
 extras:

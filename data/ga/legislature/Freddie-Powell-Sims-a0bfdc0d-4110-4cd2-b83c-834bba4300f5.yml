@@ -13,25 +13,20 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '12'
-- start_date: 2005-01-10
-  end_date: 2009-01-12
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '12'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-463-5259
 - classification: district-mail
   address: 5377 Goose Hollow Road, Dawson, GA 31742
 links:
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
-- url: https://www.legis.ga.gov/members/senate/209?session=1029
-- url: https://www.legis.ga.gov/members/senate/209?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/209
+- url: https://www.legis.ga.gov/members/senate/209?session=1029
+- url: https://www.legis.ga.gov/members/senate/209?session=1031
+  note: HTML member detail page
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 other_names:
 - name: F. Sims
 - name: F.P. Sims
@@ -43,8 +38,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000044
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=209&Session=27
 - url: https://ballotpedia.org/Freddie_Sims
 - url: https://en.wikipedia.org/wiki/Freddie_Powell_Sims
 - url: https://justfacts.votesmart.org/candidate/biography/31367/freddie-sims
