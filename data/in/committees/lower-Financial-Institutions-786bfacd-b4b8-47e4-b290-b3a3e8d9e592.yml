@@ -4,10 +4,10 @@ classification: committee
 name: Financial Institutions
 chamber: lower
 sources:
-- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
-  note: Committee List API from current beta version of Indiana gov site
 - url: https://iga.in.gov/2024/committees/house/financial-institutions
 - url: https://iga.in.gov/2025/committees/house/financial-institutions
+- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
+  note: Committee List API from current beta version of Indiana gov site
 - url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getMembers?committee_id=0c002665-60b4-487f-9f0a-f2ece55720c2&session_lpid=session_2023
 links:
 - url: https://iga.in.gov/2024/committees/house/financial-institutions
