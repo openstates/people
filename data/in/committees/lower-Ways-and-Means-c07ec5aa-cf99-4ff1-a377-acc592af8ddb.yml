@@ -4,10 +4,10 @@ classification: committee
 name: Ways and Means
 chamber: lower
 sources:
-- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
-  note: Committee List API from current beta version of Indiana gov site
 - url: https://iga.in.gov/2024/committees/house/ways-and-means
 - url: https://iga.in.gov/2025/committees/house/ways-and-means
+- url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getCommittees?session_lpid=session_2023
+  note: Committee List API from current beta version of Indiana gov site
 - url: https://tlhgp53g3c.execute-api.us-east-2.amazonaws.com/beta/api/getMembers?committee_id=fd9f91bc-9606-4e92-8f70-1ea21246f10f&session_lpid=session_2023
 links:
 - url: https://iga.in.gov/2024/committees/house/ways-and-means
