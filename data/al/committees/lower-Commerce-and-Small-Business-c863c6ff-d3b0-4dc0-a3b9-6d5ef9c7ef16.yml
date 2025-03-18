@@ -4,14 +4,15 @@ classification: committee
 name: Commerce and Small Business
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2944&COMMITTEE=Commerce%20and%20Small%20Business
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2944&COMMITTEE=Commerce%20and%20Small%20Business
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2944&COMMITTEE=Commerce%20and%20Small%20Business
   note: homepage
 members:
 - name: Jim Carns

@@ -4,14 +4,15 @@ classification: committee
 name: Education Policy
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3262&COMMITTEE=Education%20Policy
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3262&COMMITTEE=Education%20Policy
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3262&COMMITTEE=Education%20Policy
   note: homepage
 members:
 - name: Donnie Chesteen
@@ -44,6 +45,9 @@ members:
 - name: Vivian Figures
   role: member
   person_id: ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3
+- name: Wes Kitchens
+  role: member
+  person_id: ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e
 other_names:
 - name: Senate Committee on Education Policy
 - name: Senate Education Policy

@@ -13,22 +13,12 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '112'
-- start_date: 2011-01-10
-  end_date: 2013-01-14
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '112'
-- start_date: 2013-01-14
-  end_date: 2023-01-08
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '112'
 - end_date: 2023-01-09
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '115'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-656-5025
 - classification: district-mail
@@ -36,12 +26,12 @@ offices:
   voice: 770-267-2566
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
-- url: https://www.legis.ga.gov/members/house/778?session=1029
-- url: https://www.legis.ga.gov/members/house/778?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/778
+- url: https://www.legis.ga.gov/members/house/778?session=1029
+- url: https://www.legis.ga.gov/members/house/778?session=1031
+  note: HTML member detail page
 other_names:
 - name: B. Williamson
 - name: Bruce Williamson
@@ -54,8 +44,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000376
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=778&Session=27
 - url: https://ballotpedia.org/Bruce_Williamson_(Georgia)
 - url: https://en.wikipedia.org/wiki/Bruce_Williamson_(politician)
 - url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl

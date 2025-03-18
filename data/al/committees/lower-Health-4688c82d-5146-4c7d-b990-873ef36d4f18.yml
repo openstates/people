@@ -4,14 +4,15 @@ classification: committee
 name: Health
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1791&COMMITTEE=Health
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1791&COMMITTEE=Health
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=1791&COMMITTEE=Health
   note: homepage
 members:
 - name: Paul Lee
@@ -26,6 +27,9 @@ members:
 - name: Arnold Mooney
   role: member
   person_id: ocd-person/02655110-0839-4b2e-9f4b-b3a43788e275
+- name: Bryan Brinyark
+  role: member
+  person_id: ocd-person/ed6f9cbb-3180-4e8e-b9c1-c56dd888ce38
 - name: Frances Holk-Jones
   role: member
   person_id: ocd-person/3bc2e263-71cf-41e2-80c5-3f97cad999ff
@@ -35,6 +39,9 @@ members:
 - name: Jeremy Gray
   role: member
   person_id: ocd-person/15372a5d-6a78-40f2-aebf-fd7692c41cb0
+- name: Marcus Paramore
+  role: member
+  person_id: ocd-person/723a971e-91d9-4717-8f19-45f16e18690f
 - name: Mark Shirey
   role: member
   person_id: ocd-person/41debaee-f705-453d-a46f-3e8282b8a4b0

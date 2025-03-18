@@ -13,41 +13,36 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '22'
 - start_date: 2019-01-01
-  end_date: 2022-12-31
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '22'
-- start_date: 2019-01-01
   end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '24'
 offices:
-- classification: district-mail
-  address: P.O. Box 145030 350 N. State St., Suite 400, Salt Lake City, UT 84114
-  voice: 801-538-1650
-- classification: home
+- classification: capitol
+  address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
+  voice: 801-538-1029
+- classification: district
   address: UT
   voice: 385-321-7827
 links:
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414811
+  note: finance report
 - url: https://house.utah.gov/rep/DAILEJ
+- url: https://house.utah.gov/rep/DAILEJ/
+  note: homepage
+- url: https://house.utleg.gov/rep/DAILEJ/
+- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=DAILEJ
+  note: legislation
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=DAILEJ
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist24.pdf
   note: district demographics
-- url: https://le.utah.gov/house2/CofI/COFIDAILEJ1.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/house2/CofI/COFIDAILEJ.pdf
-  note: conflict of interest 1
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1414811
-  note: finance report
-- url: https://house.utah.gov/rep/DAILEJ/
-  note: homepage
-- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=DAILEJ
-  note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist22.pdf
   note: district demographics
-- url: https://house.utleg.gov/rep/DAILEJ/
+- url: https://le.utah.gov/house2/CofI/COFIDAILEJ.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/COFIDAILEJ1.pdf
+  note: conflict of interest 0
 other_names:
 - name: Dailey-Provost, J.
 - name: Dailey-Provost, Jennifer
@@ -55,14 +50,12 @@ other_names:
 - name: Jen Dailey-Provost
 - name: Jennifer Dailey-Provost
 sources:
-- url: https://house.utleg.gov/rep/DAILEJ/
-- url: https://house.utah.gov/rep/DAILEJ/
-- url: https://house.utah.gov/rep/DAILEJ/
-- url: https://house.utah.gov/rep/DAILEJ
 - url: https://ballotpedia.org/Jen_Dailey-Provost
 - url: https://en.wikipedia.org/wiki/Jennifer_Dailey-Provost
 - url: https://house.utah.gov/rep/DAILEJ
+- url: https://house.utah.gov/rep/DAILEJ/
 - url: https://house.utleg.gov/rep/DAILEJ
+- url: https://house.utleg.gov/rep/DAILEJ/
 - url: https://justfacts.votesmart.org/candidate/biography/182159/jen-dailey-provost
 - url: https://le.utah.gov/data/legislators.json
 extras:

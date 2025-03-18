@@ -4,14 +4,15 @@ classification: committee
 name: Agriculture and Consumer Affairs
 chamber: upper
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/107/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/107/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/senate/107
 links:
 - url: https://www.legis.ga.gov/committees/senate/107
   note: homepage
@@ -22,6 +23,9 @@ members:
 - name: Lee Anderson
   role: vice chair
   person_id: ocd-person/e11cecf4-f2e5-49d9-ba9e-47681f779438
+- name: Drew Echols
+  role: ex-officio
+  person_id: ocd-person/6be704ef-6250-4e08-86d3-f5fa2e1eebf3
 - name: Sam Watson
   role: ex-officio
   person_id: ocd-person/cbcdfca3-e47d-4b32-9164-ec0709a134bf
@@ -40,12 +44,12 @@ members:
 - name: Jason Esteves
   role: member
   person_id: ocd-person/e6dcaefd-8ecd-4f08-990f-e4443ae53ee8
-- name: Kim Jackson
-  role: member
-  person_id: ocd-person/2f8621bc-0548-457c-8b0d-9148e14b77fe
 - name: Max Burns
   role: member
   person_id: ocd-person/918888ac-edc7-4178-9133-d058f0f21010
+- name: RaShaun Kemp
+  role: member
+  person_id: ocd-person/069fb4fa-766b-40e4-90b7-ce96b4fa2ace
 other_names:
 - name: Senate Agriculture and Consumer Affairs
 - name: Senate Agriculture and Consumer Affairs Committee

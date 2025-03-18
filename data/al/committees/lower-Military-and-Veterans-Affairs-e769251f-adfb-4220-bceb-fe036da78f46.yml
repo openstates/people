@@ -4,14 +4,15 @@ classification: committee
 name: Military and Veterans Affairs
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2949&COMMITTEE=Military%20and%20Veterans%20Affairs
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2949&COMMITTEE=Military%20and%20Veterans%20Affairs
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2949&COMMITTEE=Military%20and%20Veterans%20Affairs
   note: homepage
 members:
 - name: Ed Oliver
@@ -50,6 +51,9 @@ members:
 - name: Randy Wood
   role: member
   person_id: ocd-person/451a4cb7-3585-46d3-86c7-61b345f7a601
+- name: Travis Hendrix
+  role: member
+  person_id: ocd-person/03ab8e26-365c-4dab-8e49-df2a8b7613f8
 other_names:
 - name: Committee on Military and Veterans Affairs
 - name: House Committee on Military and Veterans Affairs

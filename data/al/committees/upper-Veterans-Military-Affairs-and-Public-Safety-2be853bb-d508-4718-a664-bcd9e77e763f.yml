@@ -4,10 +4,9 @@ classification: committee
 name: Veterans, Military Affairs, and Public Safety
 chamber: upper
 sources:
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Membership information api call
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
   note: homepage
@@ -21,6 +20,9 @@ members:
 - name: Billy Beasley
   role: ranking member
   person_id: ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696
+- name: Garlan Gudger
+  role: member
+  person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Josh Carnley
   role: member
   person_id: ocd-person/51b33504-a943-4091-a3bd-f0b8feb124be

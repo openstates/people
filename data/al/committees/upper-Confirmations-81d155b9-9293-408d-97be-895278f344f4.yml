@@ -4,14 +4,15 @@ classification: committee
 name: Confirmations
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3259&COMMITTEE=Confirmations
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3259&COMMITTEE=Confirmations
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3259&COMMITTEE=Confirmations
   note: homepage
 members:
 - name: April Weaver
@@ -41,6 +42,9 @@ members:
 - name: Jack Williams
   role: member
   person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e
+- name: Josh Carnley
+  role: member
+  person_id: ocd-person/51b33504-a943-4091-a3bd-f0b8feb124be
 - name: Kirk Hatcher
   role: member
   person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8

@@ -1,43 +1,50 @@
 id: ocd-organization/61311ad2-5819-4d59-b14b-c6517f75669f
 jurisdiction: ocd-jurisdiction/country:us/state:az/government
 classification: committee
-name: Finance and Commerce
+name: Finance
 chamber: upper
 sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2226&sessionId=129
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
 links:
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2106&sessionId=128
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2226&sessionId=129
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
 - name: J.D. Mesnard
   role: chair
   person_id: ocd-person/06adeea1-c37c-4dd1-8be5-92e9b5d3556e
-- name: Shawnna Bolick
+- name: Vince Leach
   role: vice chair
-  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
+  person_id: ocd-person/00f9103d-191e-40ca-8f5c-e5bf806896a6
 - name: Brian Fernandez
   role: member
   person_id: ocd-person/5425612b-fb2c-4857-8f75-31523345eb2b
-- name: David Gowan
+- name: Flavio Bravo
   role: member
-  person_id: ocd-person/51520de4-0e87-475b-91d2-99aa18addf72
-- name: Janae Shamp
+  person_id: ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e
+- name: Jake Hoffman
   role: member
-  person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
-- name: Lela Alston
-  role: member
-  person_id: ocd-person/030638cb-5fcd-4637-8c59-c129e28db988
+  person_id: ocd-person/35f7056c-9f29-4b66-9ae0-f041fe6e7e05
 - name: Mitzi Epstein
   role: member
   person_id: ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d
+- name: Shawnna Bolick
+  role: member
+  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
 other_names:
 - name: Committee on Finance and Commerce
+- name: Finance and Commerce
 - name: Finance and Commerce Committee
+- name: Senate Committee on Finance
 - name: Senate Committee on Finance and Commerce
+- name: Senate Finance
 - name: Senate Finance and Commerce
 - name: Senate Finance and Commerce Committee
+- name: Senate Finance Committee
 extras:
   Committee ID: 2106
   Committee Short Name: FICO

@@ -23,16 +23,20 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '65'
 offices:
-- classification: district-mail
+- classification: capitol
+  address: State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201
+  voice: 501-682-6211
+- classification: district
   address: 1091 Dutton Mountain Road, Center Ridge, AR 72027
   voice: 501-912-1441
 links:
+- url: https://arkleg.state.ar.us/Legislators/Detail?member=Beck
+- url: https://www.arkansashouse.org/district/43
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Beck
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Beck&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Beck&ddBienniumSession=2021%2F2021R
 - url: https://www.rickbeck.org
   note: Campaign Website
-- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Beck
-- url: https://www.arkansashouse.org/district/43
 other_names:
 - name: Beck
 - name: Beck, R.
@@ -41,17 +45,18 @@ other_names:
 ids:
   facebook: '100064776606249'
 other_identifiers:
+- scheme: ballotpedia
+  identifier: Rick_Beck
+- scheme: followthemoney
+  identifier: '22027748'
 - scheme: legacy_openstates
   identifier: ARL000289
 - scheme: legacy_openstates
   identifier: ARL000325
-- scheme: followthemoney
-  identifier: '22027748'
 - scheme: votesmart
   identifier: '150224'
-- scheme: ballotpedia
-  identifier: Rick_Beck
 sources:
+- url: https://arkleg.state.ar.us/Legislators/Detail?member=Beck
 - url: https://ballotpedia.org/Rick_Beck
 - url: https://en.wikipedia.org/wiki/Rick_Beck
 - url: https://justfacts.votesmart.org/candidate/biography/150224/rick-beck

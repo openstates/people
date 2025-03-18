@@ -4,14 +4,15 @@ classification: committee
 name: Finance and Taxation General Fund
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3258&COMMITTEE=Finance%20and%20Taxation%20General%20Fund
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3258&COMMITTEE=Finance%20and%20Taxation%20General%20Fund
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3258&COMMITTEE=Finance%20and%20Taxation%20General%20Fund
   note: homepage
 members:
 - name: Greg Albritton
@@ -38,6 +39,9 @@ members:
 - name: Chris Elliott
   role: member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
+- name: Garlan Gudger
+  role: member
+  person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Keith Kelley
   role: member
   person_id: ocd-person/e259674a-2a78-4423-b8d0-3d759ee90912

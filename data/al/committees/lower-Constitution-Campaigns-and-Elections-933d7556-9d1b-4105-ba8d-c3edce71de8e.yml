@@ -4,10 +4,9 @@ classification: committee
 name: Constitution, Campaigns and Elections
 chamber: lower
 sources:
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Membership information api call
-- url: https://gql.api.alison.legislature.state.al.us/graphql
-  note: Committee list api call
 links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
@@ -33,9 +32,6 @@ members:
 - name: Chris Pringle
   role: member
   person_id: ocd-person/f4133b43-f822-4d95-b1e0-a0a524de56f6
-- name: James Lomax
-  role: member
-  person_id: ocd-person/d54b8dfc-7921-4f35-ad22-ad2efdaad100
 - name: Kelvin Datcher
   role: member
   person_id: ocd-person/441922a8-63c1-498b-9de5-f5ee85d9dcf3
@@ -54,6 +50,9 @@ members:
 - name: Matt Simpson
   role: member
   person_id: ocd-person/52046189-0464-4140-9cdf-b6c66312d49d
+- name: Neil Rafferty
+  role: member
+  person_id: ocd-person/dc6e41ae-d1b3-47c7-b225-1d5ec88a9fdc
 - name: Phillip Rigsby
   role: member
   person_id: ocd-person/78f07b0c-9939-4e03-81f8-f851511a46cb

@@ -4,31 +4,38 @@ classification: committee
 name: Lee County Legislation
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2353&COMMITTEE=Lee%20County%20Legislation
   note: homepage
 members:
 - name: Joe Lovvorn
   role: chair
   person_id: ocd-person/972dcfd0-f2a2-438b-b5de-276ceb398a91
+- name: Pebblin Warren
+  role: vice chair
+  person_id: ocd-person/7c93c20f-6b0b-4743-8118-3cb4e9194c26
+- name: Bob Fincher
+  role: member
+  person_id: ocd-person/03d6bca3-9630-4173-a3c0-4ab4b5aaaedb
 - name: Chris Blackshear
   role: member
   person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 - name: Debbie Wood
   role: member
   person_id: ocd-person/52addd6c-0137-4c38-8234-f4849008eaa6
+- name: Ed Oliver
+  role: member
+  person_id: ocd-person/9ec989cb-f503-46c1-aa2a-2913e2bc16bd
 - name: Jeremy Gray
   role: member
   person_id: ocd-person/15372a5d-6a78-40f2-aebf-fd7692c41cb0
-- name: Pebblin Warren
-  role: member
-  person_id: ocd-person/7c93c20f-6b0b-4743-8118-3cb4e9194c26
 other_names:
 - name: Committee on Lee County Legislation
 - name: House Committee on Lee County Legislation

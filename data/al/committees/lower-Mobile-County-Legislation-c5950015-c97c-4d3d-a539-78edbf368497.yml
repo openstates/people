@@ -4,18 +4,25 @@ classification: committee
 name: Mobile County Legislation
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2348&COMMITTEE=Mobile%20County%20Legislation
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2348&COMMITTEE=Mobile%20County%20Legislation
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
   note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2348&COMMITTEE=Mobile%20County%20Legislation
+  note: homepage
 members:
-- name: Napoleon Bracy
+- name: Shane Stringer
+  role: chair
+  person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
+- name: Sam Jones
   role: vice chair
+  person_id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
+- name: Napoleon Bracy
+  role: ranking democratic member
   person_id: ocd-person/947c7906-7825-442f-9241-d777b9bbe999
 - name: Adline Clarke
   role: member
@@ -32,15 +39,9 @@ members:
 - name: Margie Wilcox
   role: member
   person_id: ocd-person/050e1a72-402d-46ae-a9c3-1c5dff003ee6
-- name: Matt Simpson
+- name: Mark Shirey
   role: member
-  person_id: ocd-person/52046189-0464-4140-9cdf-b6c66312d49d
-- name: Sam Jones
-  role: member
-  person_id: ocd-person/1c825e04-ad1e-4009-a8d8-157abc001f3e
-- name: Shane Stringer
-  role: member
-  person_id: ocd-person/6a24df4b-b8e2-449a-8f18-d12d15f2bc5b
+  person_id: ocd-person/41debaee-f705-453d-a46f-3e8282b8a4b0
 other_names:
 - name: House Committee on Mobile County Legislation
 - name: House Mobile County Legislation
