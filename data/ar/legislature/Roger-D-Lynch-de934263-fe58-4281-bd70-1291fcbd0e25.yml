@@ -22,16 +22,20 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '14'
 offices:
-- classification: district-mail
+- classification: capitol
+  address: State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201
+  voice: 501-682-6211
+- classification: district
   address: 405 Gold Lane, Lonoke, AR 72086
   voice: 501-412-8959
 links:
+- url: https://arkleg.state.ar.us/Legislators/Detail?member=Lynch
+- url: https://www.arkansashouse.org/district/60
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch&ddBienniumSession=2021%2F2021R
 - url: https://www.rogerdlynch.com
   note: Campaign Website
-- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Lynch
-- url: https://www.arkansashouse.org/district/60
 other_names:
 - name: Lynch
 - name: Lynch, R.
@@ -42,15 +46,16 @@ ids:
   twitter: rogerdlynch
   facebook: rogerDLynch
 other_identifiers:
-- scheme: legacy_openstates
-  identifier: ARL000384
-- scheme: followthemoney
-  identifier: '37971291'
-- scheme: votesmart
-  identifier: '82534'
 - scheme: ballotpedia
   identifier: Roger_Lynch
+- scheme: followthemoney
+  identifier: '37971291'
+- scheme: legacy_openstates
+  identifier: ARL000384
+- scheme: votesmart
+  identifier: '82534'
 sources:
+- url: https://arkleg.state.ar.us/Legislators/Detail?member=Lynch
 - url: https://ballotpedia.org/Roger_Lynch
 - url: https://en.wikipedia.org/wiki/Roger_Lynch_(politician)
 - url: https://justfacts.votesmart.org/candidate/biography/82534/roger-lynch

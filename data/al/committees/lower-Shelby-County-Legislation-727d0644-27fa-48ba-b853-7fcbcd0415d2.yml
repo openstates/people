@@ -4,19 +4,23 @@ classification: committee
 name: Shelby County Legislation
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2352&COMMITTEE=Shelby%20County%20Legislation
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2352&COMMITTEE=Shelby%20County%20Legislation
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2352&COMMITTEE=Shelby%20County%20Legislation
   note: homepage
 members:
 - name: Arnold Mooney
   role: chair
   person_id: ocd-person/02655110-0839-4b2e-9f4b-b3a43788e275
+- name: Russell Bedsole
+  role: vice chair
+  person_id: ocd-person/af4e689f-d9f8-4a90-a883-1ed68e476aa9
 - name: Corley Ellis
   role: member
   person_id: ocd-person/3b1a631d-35d4-47bd-a37c-a98fed7a5bd4
@@ -26,6 +30,12 @@ members:
 - name: Kenneth Paschal
   role: member
   person_id: ocd-person/ab6d4114-8d0a-4439-934b-10197234473c
+- name: Leigh Hulsey
+  role: member
+  person_id: ocd-person/f2489dbf-ac57-427f-8200-4cf6e6610980
+- name: Susan DuBose
+  role: member
+  person_id: ocd-person/03612130-d61e-43dd-9768-ddca8f27d4ea
 other_names:
 - name: House Committee on Shelby County Legislation
 - name: House Shelby County Legislation

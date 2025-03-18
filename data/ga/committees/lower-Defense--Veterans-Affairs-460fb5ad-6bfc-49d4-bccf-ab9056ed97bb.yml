@@ -4,14 +4,15 @@ classification: committee
 name: Defense and Veterans Affairs
 chamber: lower
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/90/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/90/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/house/90
 links:
 - url: https://www.legis.ga.gov/committees/house/90
   note: homepage
@@ -52,15 +53,24 @@ members:
 - name: Derrick McCollum
   role: member
   person_id: ocd-person/3a323603-753e-4380-993c-9bb2a7fc55f3
+- name: Eddie Lumsden
+  role: member
+  person_id: ocd-person/f33d979c-554c-433e-ad0f-837eef1da589
 - name: Eric Bell
   role: member
   person_id: ocd-person/fe4b934e-8976-4c62-bcb0-ed8ae9782560
-- name: Lynn Gladney
+- name: Floyd Griffin
+  role: member
+  person_id: ocd-person/b261086c-7b16-4a8e-82a6-22df4445af84
+- name: Lynn Heffner
   role: member
   person_id: ocd-person/031b880f-171c-448f-b1c1-62ac47693909
 - name: Mark Newton
   role: member
   person_id: ocd-person/5e12fb82-1f69-46df-9ac5-a09ce51dd95b
+- name: Noelle Kahaian
+  role: member
+  person_id: ocd-person/fdf78e39-985f-48c3-8ed3-ccf15946871f
 - name: Rey Martinez
   role: member
   person_id: ocd-person/08ee45fd-d3f4-4129-9e7c-27cf52533ed2
@@ -76,6 +86,9 @@ members:
 - name: Steven Sainz
   role: member
   person_id: ocd-person/99082062-acd6-4c6b-bb45-2cfa071f19fc
+- name: Sylvia Wayfer
+  role: member
+  person_id: ocd-person/cabc1e6f-ba7c-4063-a778-707579f91ec8
 - name: Viola Davis
   role: member
   person_id: ocd-person/e3b1be9c-b244-4466-9192-adc365a31cfb

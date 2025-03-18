@@ -4,28 +4,41 @@ classification: committee
 name: Montgomery County Legislation
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2350&COMMITTEE=Montgomery%20County%20Legislation
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2350&COMMITTEE=Montgomery%20County%20Legislation
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2350&COMMITTEE=Montgomery%20County%20Legislation
   note: homepage
 members:
 - name: Kelvin Lawrence
-  role: vice chair
+  role: chair
   person_id: ocd-person/0e1643ee-370a-499d-80df-96116d63c216
+- name: TaShina Morris
+  role: vice chair
+  person_id: ocd-person/2ba6dc9a-31db-4371-9d69-7fa000e7a08a
 - name: Chris Sells
   role: member
   person_id: ocd-person/39a26498-6bb6-4627-8c49-d9c453c9aab8
+- name: "Kenyatt\xE9 Hassell"
+  role: member
+  person_id: ocd-person/63c5bc01-757d-474a-9c75-286da0076e3e
+- name: Margie Wilcox
+  role: member
+  person_id: ocd-person/050e1a72-402d-46ae-a9c3-1c5dff003ee6
+- name: Penni McClammy
+  role: member
+  person_id: ocd-person/c4b563a3-2b20-4c2d-8f54-2b7ed6a3af3f
+- name: Phillip Ensler
+  role: member
+  person_id: ocd-person/397cb6b4-54fe-42e2-9135-7b440d925649
 - name: Reed Ingram
   role: member
   person_id: ocd-person/bd08d7a5-b1f3-484f-80c1-bddf2d636413
-- name: TaShina Morris
-  role: member
-  person_id: ocd-person/2ba6dc9a-31db-4371-9d69-7fa000e7a08a
 other_names:
 - name: Committee on Montgomery County Legislation
 - name: House Committee on Montgomery County Legislation

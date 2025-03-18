@@ -9,10 +9,10 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/evans-stacey
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2021-01-11
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '57'
-  start_date: 2021-01-11
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
@@ -32,12 +32,12 @@ offices:
   voice: 770-710-4087
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
-- url: https://www.legis.ga.gov/members/house/762?session=1029
-- url: https://www.legis.ga.gov/members/house/762?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/762
+- url: https://www.legis.ga.gov/members/house/762?session=1029
+- url: https://www.legis.ga.gov/members/house/762?session=1031
+  note: HTML member detail page
 other_names:
 - name: Evans, S.
 - name: S. Evans
@@ -52,9 +52,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/05d3a1bb-a849-4241-bbac-5a33a061de8d
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/HouseMembersList.aspx?Sort=District&Session=25
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=762&Session=25
 - url: https://ballotpedia.org/Stacey_Evans
 - url: https://en.wikipedia.org/wiki/Stacey_Evans
 - url: https://justfacts.votesmart.org/candidate/biography/122796/stacey-evans

@@ -4,14 +4,15 @@ classification: committee
 name: Ways and Means
 chamber: lower
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/101/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/101/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/house/101
 links:
 - url: https://www.legis.ga.gov/committees/house/101
   note: homepage
@@ -19,15 +20,15 @@ members:
 - name: Shaw Blackmon
   role: chair
   person_id: ocd-person/ee145624-3295-4db4-b3ce-9d1583e4ef6e
-- name: Clint Crowe
+- name: Trey Kelley
   role: vice chair
-  person_id: ocd-person/e1a9102d-f845-47f5-882e-e344eef060ec
+  person_id: ocd-person/6ac8933e-8dde-4902-8eec-61cc5a91c844
+- name: Matt Barton
+  role: ex-officio
+  person_id: ocd-person/9103b29e-964b-4637-9304-0e73216d7796
 - name: Matt Hatchett
   role: ex-officio
   person_id: ocd-person/c81779f3-65bf-4714-b295-79cac3b0da28
-- name: Steven Meeks
-  role: ex-officio
-  person_id: ocd-person/3194a8e0-aaf8-4686-b2c9-a22521f85fff
 - name: Trey Rhodes
   role: secretary
   person_id: ocd-person/9dfc8ec3-0935-4d1d-877d-e05cf7a5dca5
@@ -40,9 +41,18 @@ members:
 - name: Bruce Williamson
   role: member
   person_id: ocd-person/13b7af1b-5b56-481b-a81a-2001846188a6
+- name: Chas Cannon
+  role: member
+  person_id: ocd-person/cba2f06c-773c-49d3-949c-b1a2db377c21
+- name: Chuck Efstration
+  role: member
+  person_id: ocd-person/3ff894cb-f2e4-47d0-9f67-b125245a10c3
 - name: Chuck Martin
   role: member
   person_id: ocd-person/42517dd7-eccb-4d22-a795-cbd010b69ee6
+- name: Clint Crowe
+  role: member
+  person_id: ocd-person/e1a9102d-f845-47f5-882e-e344eef060ec
 - name: Dale Washburn
   role: member
   person_id: ocd-person/ec6cf250-ebcc-4dda-89a5-12da9ebbe51a
@@ -85,21 +95,30 @@ members:
 - name: Ron Stephens
   role: member
   person_id: ocd-person/aeaeb854-ff9c-47cb-8069-395b60ba05b2
+- name: Scott Hilton
+  role: member
+  person_id: ocd-person/91abe321-5ea4-4f17-b8d8-573d7cb913e6
 - name: Scott Holcomb
   role: member
   person_id: ocd-person/99ef9b20-6b1f-4831-8e58-a523de606cda
+- name: Sheila Jones
+  role: member
+  person_id: ocd-person/b278b399-5ca3-4cd7-bc19-4053166577a2
+- name: Soo Hong
+  role: member
+  person_id: ocd-person/64721c9b-451c-4bc9-9040-4ca232ffd746
 - name: Spencer Frye
   role: member
   person_id: ocd-person/e6ae8d30-4b1b-4b06-8918-2be6fa7f8108
-- name: Steven Sainz
+- name: Todd Jones
   role: member
-  person_id: ocd-person/99082062-acd6-4c6b-bb45-2cfa071f19fc
-- name: Trey Kelley
-  role: member
-  person_id: ocd-person/6ac8933e-8dde-4902-8eec-61cc5a91c844
+  person_id: ocd-person/45567c87-3ba6-49ec-9ea2-5ebb880aa94c
 - name: Vance Smith
   role: member
   person_id: ocd-person/9deeb60b-4d1e-42b8-8052-d2808a30ea9a
+- name: Yasmin Neal
+  role: member
+  person_id: ocd-person/6f986b42-14f6-4147-9466-c49294331db9
 other_names:
 - name: House Committee on Ways and Means
 - name: House Ways and Means

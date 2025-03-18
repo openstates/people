@@ -4,14 +4,15 @@ classification: committee
 name: Healthcare
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3267&COMMITTEE=Healthcare
   note: homepage
 members:
 - name: Tim Melson
@@ -35,6 +36,9 @@ members:
 - name: Donnie Chesteen
   role: member
   person_id: ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063
+- name: Garlan Gudger
+  role: member
+  person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Jack Williams
   role: member
   person_id: ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e

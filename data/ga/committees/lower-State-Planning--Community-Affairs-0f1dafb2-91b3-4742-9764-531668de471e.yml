@@ -4,14 +4,15 @@ classification: committee
 name: State Planning and Community Affairs
 chamber: lower
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/111/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/111/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/house/111
 links:
 - url: https://www.legis.ga.gov/committees/house/111
   note: homepage
@@ -22,12 +23,18 @@ members:
 - name: Patty Marie Stinson
   role: vice chair
   person_id: ocd-person/af51c2db-8871-45a4-803d-314fa2b9d18d
+- name: Joe Campbell
+  role: secretary
+  person_id: ocd-person/c862c17f-ed00-41d7-97e5-1138f451a96c
 - name: Anne Westbrook
   role: member
   person_id: ocd-person/e16d6516-badc-4682-9e3a-84f30a44b060
 - name: Beth Camp
   role: member
   person_id: ocd-person/e4e40f68-0970-4392-b739-3c68f749bcdc
+- name: Bryce Berry
+  role: member
+  person_id: ocd-person/b1187e7a-8cea-4e91-9c9f-7c7c61df3c85
 - name: Charlice Byrd
   role: member
   person_id: ocd-person/0d75f0d9-0242-4f72-b4f3-1cd085eb26b6
@@ -43,36 +50,24 @@ members:
 - name: Dewey McClain
   role: member
   person_id: ocd-person/8afda706-7afa-462c-89f2-0d6d5da010ff
-- name: Gabe Okoye
+- name: Floyd Griffin
   role: member
-  person_id: ocd-person/dc99efc3-076b-4d00-b4b0-66a0507a4057
-- name: Inga Willis
+  person_id: ocd-person/b261086c-7b16-4a8e-82a6-22df4445af84
+- name: Nissa Jones
   role: member
-  person_id: ocd-person/f02d369f-2d48-4d8d-853d-77ce5a8810fc
-- name: Joe Campbell
+  person_id: ocd-person/55074030-4d64-4da0-b68a-5e3945d00f25
+- name: Noelle Kahaian
   role: member
-  person_id: ocd-person/c862c17f-ed00-41d7-97e5-1138f451a96c
-- name: John Carson
+  person_id: ocd-person/fdf78e39-985f-48c3-8ed3-ccf15946871f
+- name: Robert Flournoy
   role: member
-  person_id: ocd-person/713cac52-0a57-4baa-8273-6eeca5b491df
-- name: Mack Jackson
-  role: member
-  person_id: ocd-person/8e209d95-2333-4aa2-a628-1bdcec0674f5
-- name: Noel Williams
-  role: member
-  person_id: ocd-person/3252da04-a17e-4298-b19d-9dd2fbf29ded
+  person_id: ocd-person/32c3fbdd-4034-47d0-b7ab-0411bd200737
 - name: Shea Roberts
   role: member
   person_id: ocd-person/9007dcd9-3246-4cf3-9185-7478b3a9ad7a
-- name: Teddy Reese
-  role: member
-  person_id: ocd-person/9fe70ed7-31a0-4732-92b1-54d2a79a4654
 - name: Trey Rhodes
   role: member
   person_id: ocd-person/9dfc8ec3-0935-4d1d-877d-e05cf7a5dca5
-- name: Victor Anderson
-  role: member
-  person_id: ocd-person/546d682f-b256-4060-8fd3-084d7f118d43
 - name: Will Wade
   role: member
   person_id: ocd-person/97a002db-6151-4fdf-9bce-013a6344764f

@@ -4,14 +4,15 @@ classification: committee
 name: Rules
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3256&COMMITTEE=Rules
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3256&COMMITTEE=Rules
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3256&COMMITTEE=Rules
   note: homepage
 members:
 - name: Jabo Waggoner
@@ -21,7 +22,7 @@ members:
   role: vice chair
   person_id: ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce
 - name: Rodger Smitherman
-  role: ranking member
+  role: ranking democratic member
   person_id: ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7
 - name: Andrew Jones
   role: member
@@ -41,6 +42,9 @@ members:
 - name: David Sessions
   role: member
   person_id: ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa
+- name: Garlan Gudger
+  role: member
+  person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Gerald Allen
   role: member
   person_id: ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a

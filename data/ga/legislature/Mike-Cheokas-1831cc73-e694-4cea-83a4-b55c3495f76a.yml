@@ -13,16 +13,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '151'
-- end_date: 2017-01-08
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '151'
-  start_date: 2023-01-09
-- start_date: 2019-01-14
-  end_date: 2023-01-08
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ga/government
-  district: '151'
 - start_date: 2011-01-01
   end_date: 2012-12-31
   type: lower
@@ -33,7 +23,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '138'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-463-7853
 - classification: district-mail
@@ -41,12 +31,12 @@ offices:
   voice: 229-924-7823
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
-- url: https://www.legis.ga.gov/members/house/81?session=1029
-- url: https://www.legis.ga.gov/members/house/81?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/81
+- url: https://www.legis.ga.gov/members/house/81?session=1029
+- url: https://www.legis.ga.gov/members/house/81?session=1031
+  note: HTML member detail page
 other_names:
 - name: Cheokas, M.
 - name: M. Cheokas
@@ -58,8 +48,6 @@ other_identifiers:
 - scheme: openstates
   identifier: ocd-person/00a9c185-5235-4c96-ba15-c5a0406b3027
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=81&Session=27
 - url: https://ballotpedia.org/Mike_Cheokas
 - url: https://en.wikipedia.org/wiki/Mike_Cheokas
 - url: https://justfacts.votesmart.org/candidate/biography/31576/mike-cheokas

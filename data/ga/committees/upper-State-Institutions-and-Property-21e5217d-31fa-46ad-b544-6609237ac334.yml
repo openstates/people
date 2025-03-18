@@ -4,14 +4,15 @@ classification: committee
 name: State Institutions and Property
 chamber: upper
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/143/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/143/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/senate/143
 links:
 - url: https://www.legis.ga.gov/committees/senate/143
   note: homepage
@@ -23,14 +24,11 @@ members:
   role: vice chair
   person_id: ocd-person/e9c5a2fc-3354-49e1-ac29-783502155fe7
 - name: Gail Davenport
-  role: secretary
+  role: member
   person_id: ocd-person/df023a79-0194-4d1a-8755-5dee4053e1cc
-- name: Harold Jones
+- name: RaShaun Kemp
   role: member
-  person_id: ocd-person/d7bfd125-d343-4acd-a4dc-480daf241af3
-- name: Nabilah Islam Parkes
-  role: member
-  person_id: ocd-person/23ffff2b-3ce6-46dc-996c-7b4fd71607bc
+  person_id: ocd-person/069fb4fa-766b-40e4-90b7-ce96b4fa2ace
 - name: Sally Harrell
   role: member
   person_id: ocd-person/218a4fc4-a568-4b78-b350-0d60c6b12d4c

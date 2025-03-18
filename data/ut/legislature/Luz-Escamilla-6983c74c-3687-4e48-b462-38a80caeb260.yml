@@ -12,39 +12,30 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '10'
-- start_date: 2009-01-01
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '10'
 - end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '1'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
   voice: 801-538-1035
-  fax: 801-326-1475
-- classification: home
-  address: 1004 N. Morton Drive, Salt Lake City, UT 84116
-  voice: 801-550-6434
 links:
-- url: https://senate.utah.gov/luz-escamilla
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1875
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=ESCAML
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist01.pdf
   note: district demographics
-- url: https://le.utah.gov/senate/CofI/COFIESCAML1.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/senate/CofI/COFIESCAML.pdf
-  note: conflict of interest 1
-- url: https://le.utah.gov/senate/CofI/COFIESCAML2.pdf
-  note: conflict of interest 2
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1875
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist10.pdf
   note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIESCAML.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/senate/CofI/COFIESCAML1.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/senate/CofI/COFIESCAML2.pdf
+  note: conflict of interest 2
+- url: https://senate.utah.gov/luz-escamilla
 - url: https://senate.utah.gov/sen/ESCAML/
   note: homepage
 other_names:
@@ -60,12 +51,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000195
 sources:
-- url: https://senate.utah.gov/sen/ESCAML/
 - url: https://ballotpedia.org/Luz_Escamilla
 - url: https://en.wikipedia.org/wiki/Luz_Escamilla
 - url: https://justfacts.votesmart.org/candidate/biography/103492/luz-escamilla
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/ESCAML
+- url: https://senate.utah.gov/sen/ESCAML/
 - url: https://www.linkedin.com/in/luz-escamilla-518595156
 extras:
   service start: January 1, 2009

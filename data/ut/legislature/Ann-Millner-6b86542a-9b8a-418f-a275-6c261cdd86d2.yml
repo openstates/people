@@ -12,35 +12,29 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '5'
-- start_date: 2015-01-01
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '5'
 - end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '18'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
   voice: 801-538-1035
-  fax: 801-326-1475
-- classification: home
-  address: 4287 Harrison Blvd., Room 313, Ogden, UT 84403
+- classification: district
+  address: Room 313, 4287 Harrison Blvd., Ogden, UT 84403
   voice: 801-900-3897
 links:
-- url: https://senate.utah.gov/ann-millner
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412594
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MILLNA
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist18.pdf
   note: district demographics
-- url: https://le.utah.gov/senate/CofI/COFIMILLNA.pdf
-  note: conflict of interest 0
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1412594
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist05.pdf
   note: district demographics
+- url: https://le.utah.gov/senate/CofI/COFIMILLNA.pdf
+  note: conflict of interest 0
+- url: https://senate.utah.gov/ann-millner
 - url: https://senate.utah.gov/sen/MILLNA/
   note: homepage
 other_names:
@@ -54,12 +48,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000202
 sources:
-- url: https://senate.utah.gov/sen/MILLNA/
 - url: https://ballotpedia.org/Ann_Millner
 - url: https://en.wikipedia.org/wiki/Ann_Millner
 - url: https://justfacts.votesmart.org/candidate/biography/151613/ann-millner
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/MILLNA
+- url: https://senate.utah.gov/sen/MILLNA/
 - url: https://www.linkedin.com/in/annmillner
 extras:
   service start: January 2015-Present

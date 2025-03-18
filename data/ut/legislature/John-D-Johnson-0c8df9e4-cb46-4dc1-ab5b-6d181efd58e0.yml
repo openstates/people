@@ -13,33 +13,26 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '3'
 - start_date: 2021-01-01
-  end_date: 2022-12-31
-  type: upper
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '3'
-- start_date: 2021-01-01
   end_date: 2023-01-01
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '19'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145115 350 N. State St., Suite 320, Salt Lake City, UT 84114
   voice: 801-538-1035
-  fax: 801-326-1475
-- classification: home
-  address: Ogden, UT 84414
-  voice: 385-272-7428
+- classification: district
+  address: Room 297, 2637 N. Washington Blvd., North Ogden, UT 84414
 links:
-- url: https://senate.utah.gov/john-johnson
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415473
+  note: finance report
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=JOHNSJD
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/Senate_Dist19.pdf
   note: district demographics
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1415473
-  note: finance report
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/Senate_Dist03.pdf
   note: district demographics
+- url: https://senate.utah.gov/john-johnson
 - url: https://senate.utah.gov/sen/JOHNSJD/
   note: homepage
 other_names:
@@ -49,11 +42,11 @@ other_names:
 - name: Johnson, J.
 - name: Johnson, John D.
 sources:
-- url: https://senate.utah.gov/sen/JOHNSJD/
 - url: https://ballotpedia.org/John_Johnson_(Utah)
 - url: https://en.wikipedia.org/wiki/John_D._Johnson_(politician)
 - url: https://le.utah.gov/data/legislators.json
 - url: https://senate.utah.gov/sen/JOHNSJD
+- url: https://senate.utah.gov/sen/JOHNSJD/
 - url: https://www.linkedin.com/in/johndjohnsonusu
 extras:
   service start: January 1, 2021

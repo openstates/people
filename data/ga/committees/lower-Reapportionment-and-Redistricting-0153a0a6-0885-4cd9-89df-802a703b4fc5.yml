@@ -4,10 +4,11 @@ classification: committee
 name: Reapportionment and Redistricting
 chamber: lower
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/199/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/house/199
 links:
 - url: https://www.legis.ga.gov/committees/house/199
   note: homepage
@@ -51,6 +52,9 @@ members:
 - name: Mandi Ballinger
   role: member
   person_id: ocd-person/d6a8848d-a637-4c2e-ae37-84440c614400
+- name: Mitchell Scoggins
+  role: member
+  person_id: ocd-person/7ac30a66-1649-4a8c-a72f-a4b9a7ab1534
 - name: Sandra Scott
   role: member
   person_id: ocd-person/21c6cae1-bcd2-4403-ad39-af04b64ce55c

@@ -13,7 +13,7 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '3'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-463-1309
 - classification: district-mail
@@ -22,9 +22,10 @@ offices:
 links:
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
-- url: https://www.legis.ga.gov/members/senate/5013?session=1032
+- url: https://www.legis.ga.gov/members/senate/5013
 - url: https://www.legis.ga.gov/members/senate/5013?session=1031
   note: HTML member detail page
+- url: https://www.legis.ga.gov/members/senate/5013?session=1032
 other_names:
 - name: Hodges, M.
 - name: M. Hodges
@@ -38,6 +39,7 @@ sources:
   note: API member detail (requires authorization token)
 - url: https://www.legis.ga.gov/api/members/list/1031
   note: API members list (requires authorization token)
+- url: https://www.legis.ga.gov/members/senate/5013
 - url: https://www.legis.ga.gov/members/senate/5013?session=1031
 - url: https://www.linkedin.com/in/michael-d-hodges-176929111
 extras:

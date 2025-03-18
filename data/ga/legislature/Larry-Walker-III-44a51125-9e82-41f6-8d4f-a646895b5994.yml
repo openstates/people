@@ -14,20 +14,20 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '20'
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-656-0095
 - classification: district-mail
   address: 1110 Washington St., Perry, GA 31069
   voice: 404-656-0095
 links:
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4878&Session=27
-- url: https://www.legis.ga.gov/members/senate/4878?session=1029
-- url: https://www.legis.ga.gov/members/senate/4878?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/senate
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/senate/4878
+- url: https://www.legis.ga.gov/members/senate/4878?session=1029
+- url: https://www.legis.ga.gov/members/senate/4878?session=1031
+  note: HTML member detail page
+- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4878&Session=27
 other_names:
 - name: L. Walker
 - name: L.C. Walker
@@ -41,8 +41,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000438
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.senate.ga.gov/SENATORS/en-US/member.aspx?Member=4878&Session=27
 - url: https://ballotpedia.org/Larry_Walker_(Georgia)
 - url: https://en.wikipedia.org/wiki/Larry_Walker_III
 - url: https://justfacts.votesmart.org/candidate/biography/157220/larry-walker-iii

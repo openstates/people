@@ -8,23 +8,29 @@ sources:
 - url: https://apps.azleg.gov/api/Committee/?sessionId=127&includeMembers=true
 - url: https://apps.azleg.gov/api/Committee/?sessionId=128&includeMembers=true
   note: API with all committee details
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2230&sessionId=129
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
 links:
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2030&sessionId=128
+- url: https://apps.azleg.gov/BillStatus/CommitteeOverView/?commid=2230&sessionId=129
 - url: https://apps.azleg.gov/BillStatus/CommitteeOverView?SessionID=128
   note: homepage
 members:
-- name: Dave Farnsworth
+- name: Shawnna Bolick
   role: chair
+  person_id: ocd-person/355be281-2f88-4108-b894-62c54b67fba3
+- name: Wendy Rogers
+  role: vice chair
+  person_id: ocd-person/417c9599-7617-4b6d-ac0a-1d1b2a005f4e
+- name: Dave Farnsworth
+  role: member
   person_id: ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2
 - name: Eva Burch
   role: member
   person_id: ocd-person/81fc749a-e845-49cd-be39-ca9795831417
-- name: Janae Shamp
+- name: Eva Diaz
   role: member
-  person_id: ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9
-- name: "Rosanna Gabald\xF3n"
-  role: member
-  person_id: ocd-person/6de57177-1b9e-4864-bb87-97c528842030
+  person_id: ocd-person/e1cd66fa-a0de-45fd-ae53-a4db7d178d21
 other_names:
 - name: Senate Committee on Ethics
 - name: Senate Ethics

@@ -4,14 +4,15 @@ classification: committee
 name: Agriculture and Forestry
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2620&COMMITTEE=Agriculture%20and%20Forestry
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2620&COMMITTEE=Agriculture%20and%20Forestry
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2620&COMMITTEE=Agriculture%20and%20Forestry
   note: homepage
 members:
 - name: Danny Crawford
@@ -41,9 +42,6 @@ members:
 - name: Ed Oliver
   role: member
   person_id: ocd-person/9ec989cb-f503-46c1-aa2a-2913e2bc16bd
-- name: Jeff Sorrells
-  role: member
-  person_id: ocd-person/18af5645-53f2-4571-b24d-3173abf2b567
 - name: Jennifer Fidler
   role: member
   person_id: ocd-person/48d9f4e1-ec8b-4353-9207-a70db34449a9

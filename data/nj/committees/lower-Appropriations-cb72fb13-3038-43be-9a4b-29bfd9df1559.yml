@@ -4,8 +4,10 @@ classification: committee
 name: Appropriations
 chamber: lower
 sources:
+- url: https://njleg.state.nj.us/committees/assembly-committees?committee=AAP
 - url: https://www.njleg.state.nj.us/api/legislatorData/committeeInfo/assembly-committees
   note: JSON data page from NJ Legislative API
+- url: https://www.njleg.state.nj.us/committees/assembly-committees
 links:
 - url: https://njleg.state.nj.us/committees/assembly-committees?committee=AAP
 - url: https://www.njleg.state.nj.us/committees/assembly-committees
@@ -35,6 +37,9 @@ members:
 - name: Jay Webber
   role: member
   person_id: ocd-person/dbe67894-e4cd-46ea-bb59-877a8b4f26d0
+- name: Melinda Kane
+  role: member
+  person_id: ocd-person/a33ec105-c8ff-446b-ae8b-1a79f402f983
 - name: Shama Haider
   role: member
   person_id: ocd-person/49be7512-9343-4189-8769-4497ed129a92

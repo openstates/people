@@ -23,14 +23,18 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:ar/government
   district: '59'
 offices:
-- classification: district-mail
+- classification: capitol
+  address: State Capitol Arkansas  500 Woodlane St., Suite 350, Little Rock, AR 72201
+  voice: 501-682-6211
+- classification: district
   address: 2204 Doral Drive, Jonesboro, AR 72404
   voice: 870-340-7499
 links:
+- url: https://arkleg.state.ar.us/Legislators/Detail?member=Ladyman
+- url: https://www.arkansashouse.org/district/32
+- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Ladyman
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Ladyman&ddBienniumSession=2019%2F2020F
 - url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Ladyman&ddBienniumSession=2021%2F2021R
-- url: https://www.arkleg.state.ar.us/Legislators/Detail?member=Ladyman
-- url: https://www.arkansashouse.org/district/32
 other_names:
 - name: J. Ladyman
 - name: J.R. Ladyman
@@ -40,17 +44,18 @@ ids:
   twitter: JackLadyman
   facebook: jackladymancampaign
 other_identifiers:
+- scheme: ballotpedia
+  identifier: Jack_Ladyman
+- scheme: followthemoney
+  identifier: '22027727'
 - scheme: legacy_openstates
   identifier: ARL000287
 - scheme: legacy_openstates
   identifier: ARL000330
-- scheme: followthemoney
-  identifier: '22027727'
 - scheme: votesmart
   identifier: '150259'
-- scheme: ballotpedia
-  identifier: Jack_Ladyman
 sources:
+- url: https://arkleg.state.ar.us/Legislators/Detail?member=Ladyman
 - url: https://ballotpedia.org/Jack_Ladyman
 - url: https://en.wikipedia.org/wiki/Jack_Ladyman
 - url: https://www.arkansashouse.org/district/32

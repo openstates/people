@@ -4,14 +4,15 @@ classification: committee
 name: Finance and Taxation Education
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3257&COMMITTEE=Finance%20and%20Taxation%20Education
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3257&COMMITTEE=Finance%20and%20Taxation%20Education
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3257&COMMITTEE=Finance%20and%20Taxation%20Education
   note: homepage
 members:
 - name: Arthur Orr
@@ -47,6 +48,9 @@ members:
 - name: Jay Hovey
   role: member
   person_id: ocd-person/d581a562-c33c-44c0-a707-c21dddf140aa
+- name: Keith Kelley
+  role: member
+  person_id: ocd-person/e259674a-2a78-4423-b8d0-3d759ee90912
 - name: Kirk Hatcher
   role: member
   person_id: ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8

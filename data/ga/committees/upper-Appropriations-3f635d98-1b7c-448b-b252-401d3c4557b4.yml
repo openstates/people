@@ -4,14 +4,15 @@ classification: committee
 name: Appropriations
 chamber: upper
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/103/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/103/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/senate/103
 links:
 - url: https://www.legis.ga.gov/committees/senate/103
   note: homepage
@@ -25,9 +26,6 @@ members:
 - name: Chuck Hufstetler
   role: ex-officio
   person_id: ocd-person/b11d0191-cd84-4a93-add6-ee65494caff2
-- name: Chuck Payne
-  role: ex-officio
-  person_id: ocd-person/1ac93f89-f367-4de3-82ba-79fa78d4d134
 - name: David Lucas
   role: ex-officio
   person_id: ocd-person/4b05e770-4423-4b64-8ae1-9600e8c73244
@@ -37,6 +35,9 @@ members:
 - name: Max Burns
   role: ex-officio
   person_id: ocd-person/918888ac-edc7-4178-9133-d058f0f21010
+- name: Russ Goodman
+  role: ex-officio
+  person_id: ocd-person/b90b899d-87f0-43a5-9d15-6e310187ac41
 - name: Clint Dixon
   role: secretary
   person_id: ocd-person/17a7e011-73f2-4ac5-8470-3436b47a6744
@@ -82,6 +83,9 @@ members:
 - name: Kay Kirkpatrick
   role: member
   person_id: ocd-person/fc31ab02-026c-4173-86db-570c0b297c64
+- name: Kim Jackson
+  role: member
+  person_id: ocd-person/2f8621bc-0548-457c-8b0d-9148e14b77fe
 - name: Larry Walker
   role: member
   person_id: ocd-person/44a51125-9e82-41f6-8d4f-a646895b5994
@@ -106,6 +110,9 @@ members:
 - name: Steve Gooch
   role: member
   person_id: ocd-person/e2c141e9-9e04-4e2b-8e5b-57db594c7abc
+- name: Tonya Anderson
+  role: member
+  person_id: ocd-person/d9f1ea57-7b90-484a-9664-927a36c87e0c
 other_names:
 - name: Senate Appropriations
 - name: Senate Appropriations Committee

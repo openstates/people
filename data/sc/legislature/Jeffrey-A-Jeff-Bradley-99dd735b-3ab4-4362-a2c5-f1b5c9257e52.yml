@@ -14,12 +14,12 @@ roles:
   jurisdiction: ocd-jurisdiction/country:us/state:sc/government
   district: '123'
 offices:
-- classification: district-mail
-  address: P.O. Box 11867, Columbia, SC 29211
-  voice: 843-342-6918
-- classification: district-mail
+- classification: capitol
   address: Room 202, Blatt Building P.O. Box 11867, Columbia, SC 29201
   voice: 803-212-6815
+- classification: home
+  address: P.O. Box 11867, Columbia, SC 29211
+  voice: 843-342-6918
 links:
 - url: https://scstatehouse.gov/member.php?code=0171590889
   note: homepage
@@ -35,7 +35,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: SCL000222
 sources:
-- url: https://www.scstatehouse.gov/member.php?code=0171590889
 - url: https://ballotpedia.org/Jeff_Bradley
 - url: https://en.wikipedia.org/wiki/Jeff_Bradley_(politician)
 - url: https://justfacts.votesmart.org/candidate/biography/152611/jeff-bradley

@@ -4,19 +4,23 @@ classification: committee
 name: Ways and Means General Fund
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2339&COMMITTEE=Ways%20and%20Means%20GeneralFund
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2339&COMMITTEE=Ways%20and%20Means%20GeneralFund
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=2339&COMMITTEE=Ways%20and%20Means%20GeneralFund
   note: homepage
 members:
 - name: Rex Reynolds
   role: chair
   person_id: ocd-person/e95b6e20-1207-4cdc-9875-15d14bfd72d2
+- name: Chris Blackshear
+  role: vice chair
+  person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 - name: Laura Hall
   role: ranking democratic member
   person_id: ocd-person/9314859d-000f-447c-9aa7-4993b13e8010
@@ -38,12 +42,12 @@ members:
 - name: Bubba Underwood
   role: member
   person_id: ocd-person/3828d8e6-1f22-4cb1-be51-b3d3a0c36b98
-- name: Chris Blackshear
-  role: member
-  person_id: ocd-person/6b644492-bb54-496c-8ad3-22ec002056d4
 - name: Chris Sells
   role: member
   person_id: ocd-person/39a26498-6bb6-4627-8c49-d9c453c9aab8
+- name: Donna Givens
+  role: member
+  person_id: ocd-person/ef19bb65-dc3c-4815-ac71-b1ffd9abf28b
 - name: Jeff Sorrells
   role: member
   person_id: ocd-person/18af5645-53f2-4571-b24d-3173abf2b567

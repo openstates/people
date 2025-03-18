@@ -4,14 +4,15 @@ classification: committee
 name: Fiscal Responsibility
 chamber: lower
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3215&COMMITTEE=Fiscal%20Responsibility
+- url: https://alison.legislature.state.al.us/committees-house-standing-current
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/House/HouseCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3215&COMMITTEE=Fiscal%20Responsibility
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-house-standing-current
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/HseCommittee.aspx?OID_ORGANIZATION=3215&COMMITTEE=Fiscal%20Responsibility
   note: homepage
 members:
 - name: Phillip Pettus
@@ -44,6 +45,9 @@ members:
 - name: Susan DuBose
   role: member
   person_id: ocd-person/03612130-d61e-43dd-9768-ddca8f27d4ea
+- name: Travis Hendrix
+  role: member
+  person_id: ocd-person/03ab8e26-365c-4dab-8e49-df2a8b7613f8
 other_names:
 - name: Committee on Fiscal Responsibility
 - name: Fiscal Responsibility Committee

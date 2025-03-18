@@ -4,14 +4,15 @@ classification: committee
 name: Judiciary
 chamber: upper
 sources:
-- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
-- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
+- url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: Committee list api call
-links:
+- url: https://www.legislature.state.al.us/aliswww/ISD/senate/SenateCommittees.aspx
 - url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
-  note: homepage
+links:
 - url: https://alison.legislature.state.al.us/committees-senate-standing-current-year
+  note: homepage
+- url: https://www.legislature.state.al.us/aliswww/ISD/SenCommittee.aspx?OID_ORGANIZATION=3260&COMMITTEE=Judiciary
   note: homepage
 members:
 - name: Will Barfoot
@@ -35,6 +36,9 @@ members:
 - name: Chris Elliott
   role: member
   person_id: ocd-person/67479855-f23e-4119-b886-91dddc09a47a
+- name: Garlan Gudger
+  role: member
+  person_id: ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e
 - name: Greg Albritton
   role: member
   person_id: ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0

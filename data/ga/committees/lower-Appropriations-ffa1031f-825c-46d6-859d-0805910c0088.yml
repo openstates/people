@@ -4,14 +4,15 @@ classification: committee
 name: Appropriations
 chamber: lower
 sources:
-- url: https://www.legis.ga.gov/api/committees/List/1029
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/88/1029
   note: Detail page (requires authorization token)
-- url: https://www.legis.ga.gov/api/committees/List/1031
-  note: Initial list page (requires authorization token)
 - url: https://www.legis.ga.gov/api/committees/details/88/1031
   note: Detail page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1029
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/api/committees/List/1031
+  note: Initial list page (requires authorization token)
+- url: https://www.legis.ga.gov/committees/house/88
 links:
 - url: https://www.legis.ga.gov/committees/house/88
   note: homepage
@@ -19,21 +20,24 @@ members:
 - name: Matt Hatchett
   role: chair
   person_id: ocd-person/c81779f3-65bf-4714-b295-79cac3b0da28
-- name: Clint Crowe
-  role: ex-officio
-  person_id: ocd-person/e1a9102d-f845-47f5-882e-e344eef060ec
+- name: Houston Gaines
+  role: vice chair
+  person_id: ocd-person/e73cb2a6-bf3e-4211-a386-142c18a4f607
 - name: Shaw Blackmon
   role: ex-officio
   person_id: ocd-person/ee145624-3295-4db4-b3ce-9d1583e4ef6e
-- name: Steven Meeks
-  role: secretary
-  person_id: ocd-person/3194a8e0-aaf8-4686-b2c9-a22521f85fff
+- name: Trey Kelley
+  role: ex-officio
+  person_id: ocd-person/6ac8933e-8dde-4902-8eec-61cc5a91c844
 - name: Al Williams
   role: member
   person_id: ocd-person/a5a0998b-3837-4c4e-a66b-a567dc2f9d77
 - name: Alan Powell
   role: member
   person_id: ocd-person/bb48e87c-29db-4a4d-a278-fa299be2020e
+- name: Bethany Ballard
+  role: member
+  person_id: ocd-person/8b4b00cb-6f78-4b69-b788-796b19d94752
 - name: Bill Hitchens
   role: member
   person_id: ocd-person/4a9ef816-9130-4510-a19e-3124e3f2aeed
@@ -58,6 +62,9 @@ members:
 - name: Carolyn Hugley
   role: member
   person_id: ocd-person/0f5a9273-2fc6-458f-af59-b75070a1dc76
+- name: Carter Barrett
+  role: member
+  person_id: ocd-person/72370a62-92f4-46f1-ab7b-193a643085b8
 - name: Chris Erwin
   role: member
   person_id: ocd-person/d79c3e9b-b73d-416b-9bfd-8a0338d8256c
@@ -97,9 +104,9 @@ members:
 - name: Gerald Greene
   role: member
   person_id: ocd-person/570a213a-a475-4fd3-ac36-23e1bd1190be
-- name: Houston Gaines
+- name: James Burchett
   role: member
-  person_id: ocd-person/e73cb2a6-bf3e-4211-a386-142c18a4f607
+  person_id: ocd-person/dbce462d-74e3-42d3-bd6c-3b9f8eeb69fe
 - name: Jan Jones
   role: member
   person_id: ocd-person/85740034-23b0-4001-9190-8948bd9f3b37
@@ -130,18 +137,33 @@ members:
 - name: Karen Mathiak
   role: member
   person_id: ocd-person/f8db50e0-08ab-406c-ac8b-39c7038ef5ca
+- name: Kasey Carpenter
+  role: member
+  person_id: ocd-person/97a40ea4-674f-4b84-8fd3-8bc2f3b4a35d
 - name: Katie Dempsey
   role: member
   person_id: ocd-person/bf68b3dc-ca81-49f9-8e33-fe27317183d3
 - name: Kimberly Alexander
   role: member
   person_id: ocd-person/275b772e-6407-4aaa-8bd6-ceddad1da7fa
+- name: Kimberly New
+  role: member
+  person_id: ocd-person/fc1a5e1f-6ce4-47ab-987b-095afa166359
+- name: Lauren McDonald
+  role: member
+  person_id: ocd-person/7767ee85-7961-45ba-adc2-c3606b1c39b8
 - name: Lee Hawkins
   role: member
   person_id: ocd-person/69493144-3e3e-49a8-9e1f-f9a948fd0ff3
 - name: Leesa Hagan
   role: member
   person_id: ocd-person/df874c28-6403-42c1-9cbb-0855508cda85
+- name: Lehman Franklin
+  role: member
+  person_id: ocd-person/6971bb34-9ea4-4bdc-971e-c1a2c5de344c
+- name: Lydia Glaize
+  role: member
+  person_id: ocd-person/ee575d7a-b5a1-419c-949d-4aa9290a67a1
 - name: Lynn Smith
   role: member
   person_id: ocd-person/945875f7-f3c5-4c75-acd6-a195a0f76b12
@@ -160,6 +182,9 @@ members:
 - name: Martin Momtahan
   role: member
   person_id: ocd-person/6552dd8d-1020-4bbb-abfc-88975573ebd4
+- name: Marvin Lim
+  role: member
+  person_id: ocd-person/9531d502-440c-48db-83c4-70dfbe9a9ea1
 - name: Mary Margaret Oliver
   role: member
   person_id: ocd-person/e6ca1b23-0972-4df6-ab04-6186cf9da814
@@ -169,6 +194,9 @@ members:
 - name: Matt Dubnik
   role: member
   person_id: ocd-person/99f0a2a7-8817-4756-a40e-575e259890e7
+- name: Matt Reeves
+  role: member
+  person_id: ocd-person/0f4f3c5a-1192-4ec1-9698-4aef005b4875
 - name: Matthew Gambill
   role: member
   person_id: ocd-person/909e9026-e549-494b-be99-e8562a389e0c
@@ -193,12 +221,18 @@ members:
 - name: Ron Stephens
   role: member
   person_id: ocd-person/aeaeb854-ff9c-47cb-8069-395b60ba05b2
+- name: Sam Park
+  role: member
+  person_id: ocd-person/2ba0916f-40b1-4255-9496-94b12ccabd1e
 - name: Scott Holcomb
   role: member
   person_id: ocd-person/99ef9b20-6b1f-4831-8e58-a523de606cda
 - name: Sheila Jones
   role: member
   person_id: ocd-person/b278b399-5ca3-4cd7-bc19-4053166577a2
+- name: Spencer Frye
+  role: member
+  person_id: ocd-person/e6ae8d30-4b1b-4b06-8918-2be6fa7f8108
 - name: Stacey Evans
   role: member
   person_id: ocd-person/fa5d8d09-a0b9-4ba4-93da-a24902530416
@@ -208,6 +242,9 @@ members:
 - name: Steve Tarvin
   role: member
   person_id: ocd-person/80f4bbdf-02f3-4233-8456-e550e7e745af
+- name: Steven Meeks
+  role: member
+  person_id: ocd-person/3194a8e0-aaf8-4686-b2c9-a22521f85fff
 - name: Steven Sainz
   role: member
   person_id: ocd-person/99082062-acd6-4c6b-bb45-2cfa071f19fc

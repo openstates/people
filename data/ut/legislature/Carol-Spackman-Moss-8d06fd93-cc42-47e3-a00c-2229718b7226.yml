@@ -12,53 +12,48 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '34'
-- start_date: 2001-01-01
-  end_date: 2022-12-31
-  type: lower
-  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
-  district: '34'
 - end_date: 2023-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
   district: '37'
 offices:
-- classification: district-mail
+- classification: capitol
   address: P.O. Box 145030 350 N. State St., Suite 350, Salt Lake City, UT 84114
-  voice: 801-538-1650
-- classification: home
-  address: UT
+  voice: 801-538-1029
+- classification: district
+  address: 2712 E. Kelly Lane, Salt Lake City, UT 84117
   voice: 801-647-8764
 links:
+- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1248
+  note: finance report
 - url: https://house.utah.gov/rep/MOSSCS
+- url: https://house.utah.gov/rep/MOSSCS/
+  note: homepage
+- url: https://house.utleg.gov/rep/MOSSCS/
+- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=MOSSCS
+  note: legislation
 - url: https://le.utah.gov/asp/billsintro/SenResults.asp?Listbox2=MOSSCS
   note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2020/House_Dist37.pdf
   note: district demographics
-- url: https://le.utah.gov/house2/CofI/COFIMOSSCS1.pdf
-  note: conflict of interest 0
-- url: https://le.utah.gov/house2/CofI/COFIMOSSCS.pdf
-  note: conflict of interest 1
-- url: https://le.utah.gov/house2/CofI/MOSSCS3.pdf
-  note: conflict of interest 2
-- url: https://le.utah.gov/house2/CofI/MOSSCS2.pdf
-  note: conflict of interest 3
-- url: https://le.utah.gov/house2/CofI/MOSSCS1.pdf
-  note: conflict of interest 4
-- url: https://le.utah.gov/house2/CofI/cmoss2.pdf
-  note: conflict of interest 5
-- url: https://le.utah.gov/house2/CofI/cmoss.pdf
-  note: conflict of interest 6
-- url: https://le.utah.gov/house2/CofI/MOSSCS.pdf
-  note: conflict of interest 7
-- url: https://disclosures.utah.gov/Search/PublicSearch/FolderDetails/1248
-  note: finance report
-- url: https://house.utah.gov/rep/MOSSCS/
-  note: homepage
-- url: https://le.utah.gov/asp/billsintro/RepResults.asp?Listbox3=MOSSCS
-  note: legislation
 - url: https://le.utah.gov/Documents/demographic/profiles/2022/House_Dist34.pdf
   note: district demographics
-- url: https://house.utleg.gov/rep/MOSSCS/
+- url: https://le.utah.gov/house2/CofI/cmoss.pdf
+  note: conflict of interest 6
+- url: https://le.utah.gov/house2/CofI/cmoss2.pdf
+  note: conflict of interest 5
+- url: https://le.utah.gov/house2/CofI/COFIMOSSCS.pdf
+  note: conflict of interest 1
+- url: https://le.utah.gov/house2/CofI/COFIMOSSCS1.pdf
+  note: conflict of interest 0
+- url: https://le.utah.gov/house2/CofI/MOSSCS.pdf
+  note: conflict of interest 7
+- url: https://le.utah.gov/house2/CofI/MOSSCS1.pdf
+  note: conflict of interest 4
+- url: https://le.utah.gov/house2/CofI/MOSSCS2.pdf
+  note: conflict of interest 3
+- url: https://le.utah.gov/house2/CofI/MOSSCS3.pdf
+  note: conflict of interest 2
 other_names:
 - name: C. Moss
 - name: C.S. Moss
@@ -72,14 +67,12 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: UTL000261
 sources:
-- url: https://house.utleg.gov/rep/MOSSCS/
-- url: https://house.utah.gov/rep/MOSSCS/
-- url: https://house.utah.gov/rep/MOSSCS/
-- url: https://house.utah.gov/rep/MOSSCS
 - url: https://ballotpedia.org/Carol_Moss
 - url: https://en.wikipedia.org/wiki/Carol_Spackman_Moss
 - url: https://house.utah.gov/rep/MOSSCS
+- url: https://house.utah.gov/rep/MOSSCS/
 - url: https://house.utleg.gov/rep/MOSSCS
+- url: https://house.utleg.gov/rep/MOSSCS/
 - url: https://justfacts.votesmart.org/candidate/biography/50719/carol-spackman-moss
 - url: https://le.utah.gov/data/legislators.json
 extras:

@@ -9,12 +9,12 @@ image: https://www.legis.ga.gov/api/images/default-source/portraits/parrish-butc
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 1985-01-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ga/government
   district: '158'
-  start_date: 1985-01-14
 offices:
-- classification: capitol-mail
+- classification: capitol
   address: Atlanta, GA 30334
   voice: 404-463-2246
 - classification: district-mail
@@ -22,12 +22,12 @@ offices:
   voice: 478-237-3838
 links:
 - url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=183&Session=27
-- url: https://www.legis.ga.gov/members/house/183?session=1029
-- url: https://www.legis.ga.gov/members/house/183?session=1031
-  note: HTML member detail page
 - url: https://www.legis.ga.gov/members/house
   note: HTML members list page
 - url: https://www.legis.ga.gov/members/house/183
+- url: https://www.legis.ga.gov/members/house/183?session=1029
+- url: https://www.legis.ga.gov/members/house/183?session=1031
+  note: HTML member detail page
 other_names:
 - name: B. Parrish
 - name: Butch Parrish
@@ -40,8 +40,6 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: GAL000338
 sources:
-- url: https://webservices.legis.ga.gov/GGAServices/Members/Service.svc?wsdl
-- url: https://www.house.ga.gov/Representatives/en-US/member.aspx?Member=183&Session=27
 - url: https://ballotpedia.org/Butch_Parrish
 - url: https://en.wikipedia.org/wiki/Butch_Parrish
 - url: https://justfacts.votesmart.org/candidate/biography/7942/butch-parrish
