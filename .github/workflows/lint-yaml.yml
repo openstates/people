@@ -27,6 +27,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c  # v46.0.5
+      with:
+        dir_names: 'true'
+    - name: List all changed directories
+      env:
+        ALL_CHANGED_DIRS: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        for file in ${ALL_CHANGED_DIRS}; do
+          echo "$file was changed"
+        done
     # Python & dependency installation
     - uses: actions/checkout@v3
     - name: Yaml file linting
