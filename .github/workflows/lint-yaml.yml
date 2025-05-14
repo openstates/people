@@ -31,12 +31,16 @@ jobs:
       id: changed-dirs
       with:
         dir_names: 'true'
-    - name: List all changed directories
+    - name: Dry run lint commands
       env:
         ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
       run: |
-        for file in ${ALL_CHANGED_DIRS}; do
-          echo "$file was changed"
+        for dir in ${ALL_CHANGED_DIRS}; do
+          echo "$dir was changed"
+          if [[ "$dir" =~ ^data/([a-z]+)/(legislature|retired|executive|municipalities) ]]
+            dir=${BASH_REMATCH[1]}
+            echo "poetry run os-people lint $dir"
+          fi
         done
     # Python & dependency installation
     - uses: actions/checkout@v3
