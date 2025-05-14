@@ -73,18 +73,19 @@ jobs:
             dir=${BASH_REMATCH[1]}
             poetry run os-people lint "$dir"
           else
-            echo "$dir contains changes, but ignored for linting"
+            echo "$dir contains changes, but ignored for linting people"
           fi
         done
     - name: lint committees selectively
+      env:
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+        ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
       run: |
         for dir in ${ALL_CHANGED_DIRS}; do
           if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/committees ]]; then
             dir=${BASH_REMATCH[1]}
             poetry run os-committees lint "$dir"
           else
-            echo "$dir contains changes, but ignored for linting"
+            echo "$dir contains changes, but ignored for linting committees"
           fi
         done
-      env:
-        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
