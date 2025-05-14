@@ -37,7 +37,7 @@ jobs:
       run: |
         for dir in ${ALL_CHANGED_DIRS}; do
           echo "$dir was changed"
-          if [[ "$dir" =~ ^data/([a-z]+)/(legislature|retired|executive|municipalities) ]]
+          if [[ "$dir" =~ ^data/([a-z]+)/(legislature|retired|executive|municipalities) ]]; then
             dir=${BASH_REMATCH[1]}
             echo "poetry run os-people lint $dir"
           fi
