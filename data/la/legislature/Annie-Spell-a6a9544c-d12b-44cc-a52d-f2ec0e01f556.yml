@@ -4,19 +4,24 @@ given_name: Annie
 family_name: Spell
 gender: Female
 email: hse045@legis.la.gov
-image: https://img.legistorm.com/people/235/180235.jpg?rand=74512
 party:
 - name: Republican
 roles:
-- type: lower
+- start_date: 2025-04-14
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:la/government
   district: '45'
+offices:
+- classification: district
+  address: 1438 S. College Road, Lafayette, LA 70503
+  voice: 337-349-5545
+- classification: district-mail
+  address: P.O. Box 51152, Lafayette, LA 70505
 links:
 - url: https://house.louisiana.gov/H_Reps/members?ID=45
 other_names:
 - name: A. Spell
 - name: Spell, A.
-other_identifiers: []
 sources:
 - url: https://ballotpedia.org/Annie_Spell
 - url: https://en.wikipedia.org/wiki/Annie_Spell
