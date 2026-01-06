@@ -2,17 +2,32 @@ id: ocd-person/73710d6f-5ce6-4015-8b6f-92fa17458afc
 name: Tobias Read
 given_name: Tobias
 family_name: Read
+email: oregon.sos@oregon.gov
 image: http://www.oregonlegislature.gov/house/MemberPhotos/read.jpg
 party:
 - name: Democratic
 roles:
-- start_date: '2011-01-01'
-  end_date: '2016-12-31'
+- start_date: 2011-01-01
+  end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '27'
-links:
-- url: http://www.oregonlegislature.gov/read
+- start_date: 2025-01-06
+  end_date: 2029-01-03
+  type: secretary of state
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+offices:
+- classification: capitol
+  address: 136 State Capitol ; ; Salem, OR 97310-0722
+  voice: 503-986-1523
+  fax: 503-373-7414
+sources:
+- url: https://sos.oregon.gov/Pages/index.aspx
+ids:
+  twitter: OregonSOS
+  facebook: oregonsos
+  instagram: oregonsos
+  youtube: OregonSOS
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000075
@@ -22,5 +37,3 @@ other_identifiers:
   identifier: ORL000230
 - scheme: legacy_openstates
   identifier: ORL000336
-sources:
-- url: http://www.oregonlegislature.gov/house/Pages/RepresentativesAll.aspx
