@@ -18,10 +18,10 @@ jobs:
         -v $(pwd):/code \
         registry.gitlab.com/pipeline-components/yamllint:latest \
         -s .
-    - name: setup Python 3.9
+    - name: setup Python 3.11
       uses: actions/setup-python@v4
       with:
-        python-version: 3.9
+        python-version: 3.11
     - name: install Poetry
       uses: snok/install-poetry@v1.4.1
     - name: cache Poetry virtualenv
