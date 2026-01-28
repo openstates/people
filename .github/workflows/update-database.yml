@@ -23,7 +23,7 @@ jobs:
       with:
         python-version: 3.11
     - name: install Poetry
-      uses: snok/install-poetry@v1.3.3
+      uses: snok/install-poetry@v1.4.1
     - name: cache Poetry virtualenv
       uses: actions/cache@v3
       id: cache
