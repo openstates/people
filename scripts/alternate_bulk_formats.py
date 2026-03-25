@@ -4,159 +4,7 @@ import glob
 import os
 import sys
 import utils
-
-
-# def generate_legislator_csv():
-
-#     #yaml filenames
-#     yamls = ["legislators-current.yaml","legislators-historical.yaml"]
-#     yaml_social = "legislators-social-media.yaml"
-
-#     #list of yaml field name, csv column name tuples. Split into categories which do not reflect yaml structure (structured for logical csv column ordering)
-#     bio_fields = [
-#     ("last", "last_name"),
-#     ("first", "first_name"),
-#     ("middle", "middle_name"),
-#     ("suffix", "suffix"),
-#     ("nickname", "nickname"),
-#     ("official_full", "full_name"),
-#     ("birthday", "birthday"),
-#     ("gender", "gender")
-#     ]
-
-#     #ID crosswalks, omit FEC id's, which may contain (arbitrary?) number of values
-#     crosswalk_fields = [
-#     ("bioguide", "bioguide_id"),
-#     ("thomas", "thomas_id"),
-#     ("opensecrets", "opensecrets_id"),
-#     ("lis","lis_id"),
-#     ("fec","fec_ids"),
-#     ("cspan", "cspan_id"),
-#     ("govtrack", "govtrack_id"),
-#     ("votesmart", "votesmart_id"),
-#     ("ballotpedia", "ballotpedia_id"),
-#     ("washington_post", "washington_post_id"),
-#     ("icpsr", "icpsr_id"),
-#     ("wikipedia", "wikipedia_id")
-#     ]
-
-#     #separate list for children of "terms", csv only captures data for most recent term
-#     #currently excluding start/end dates - earliest start to latest end is deceptive (excludes gaps) as is start/end for most recent term
-#     term_fields = [
-#     ("type", "type"),
-#     ("state", "state"),
-#     ("district", "district"),
-#     ("class", "senate_class"),
-#     ("party", "party"),
-#     ("url", "url"),
-#     ("address", "address"),
-#     ("phone", "phone"),
-#     ("contact_form", "contact_form"),
-#     ("rss_url", "rss_url"),
-#     ]
-
-#     #pulled from legislators-social-media.yaml
-#     social_media_fields = [
-#     ("twitter", "twitter"),
-#     ("twitter_id", "twitter_id"),
-#     ("facebook", "facebook"),
-#     ("youtube", "youtube"),
-#     ("youtube_id", "youtube_id"),
-#     ("mastodon", "mastodon")
-#     ]
-
-
-#     print("Loading %s..." %yaml_social)
-#     social = utils.load_data(yaml_social)
-
-#     for filename in yamls:
-#         print("Converting %s to CSV..." % filename)
-
-#         legislators = utils.load_data(filename)
-
-#         #convert yaml to csv
-#         csv_output = csv.writer(open("../alternate_formats/csv/" + filename.replace(".yaml", ".csv"),"w"))
-
-#         head = []
-#         for pair in bio_fields:
-#             head.append(pair[1])
-#         for pair in term_fields:
-#             head.append(pair[1])
-#         for pair in social_media_fields:
-#             head.append(pair[1])
-#         for pair in crosswalk_fields:
-#             head.append(pair[1])
-#         csv_output.writerow(head)
-
-#         for legislator in legislators:
-#             legislator_row = []
-#             for pair in bio_fields:
-#                 if 'name' in legislator and pair[0] in legislator['name']:
-#                     legislator_row.append(legislator['name'][pair[0]])
-#                 elif 'bio' in legislator and pair[0] in legislator['bio']:
-#                     legislator_row.append(legislator['bio'][pair[0]])
-#                 else:
-#                     legislator_row.append(None)
-
-#             for pair in term_fields:
-#                 latest_term = legislator['terms'][len(legislator['terms'])-1]
-#                 if pair[0] in latest_term:
-#                     legislator_row.append(latest_term[pair[0]])
-#                 else:
-#                     legislator_row.append(None)
-
-#             social_match = None
-#             for social_legislator in social:
-#                 if 'bioguide' in legislator['id'] and 'bioguide' in social_legislator['id'] and legislator['id']['bioguide'] == social_legislator['id']['bioguide']:
-#                     social_match = social_legislator
-#                     break
-#                 elif 'thomas' in legislator['id'] and 'thomas' in social_legislator['id'] and legislator['id']['thomas'] == social_legislator['id']['thomas']:
-#                     social_match = social_legislator
-#                     break
-#                 elif 'govtrack' in legislator['id'] and 'govtrack' in social_legislator['id'] and legislator['id']['govtrack'] == social_legislator['id']['govtrack']:
-#                     social_match = social_legislator
-#                     break
-#             for pair in social_media_fields:
-#                 if social_match != None:
-#                     if pair[0] in social_match['social']:
-#                         legislator_row.append(social_match['social'][pair[0]])
-#                     else:
-#                         legislator_row.append(None)
-#                 else:
-#                     legislator_row.append(None)
-
-#             for pair in crosswalk_fields:
-#                 if pair[0] in legislator['id']:
-#                     value = legislator['id'][pair[0]]
-#                     if isinstance(value, list):
-#                         # make FEC IDs comma-separated
-#                         value = ",".join(value)
-#                     legislator_row.append(value)
-#                 else:
-#                     legislator_row.append(None)
-
-#             csv_output.writerow(legislator_row)
-
-
-# def generate_district_office_csv():
-#     filename = "legislators-district-offices.yaml"
-#     print("Converting %s to CSV..." % filename)
-#     legislators_offices = utils.load_data(filename)
-#     fields = [
-#         "bioguide", "thomas", "govtrack", "id", "address", "building",
-#         "city", "fax", "hours", "phone", "state", "suite", "zip",
-#         "latitude", "longitude"]
-
-#     f = open("../alternate_formats/csv/" + filename.replace(".yaml", ".csv"), "w")
-#     csv_output = csv.DictWriter(f, fieldnames=fields)
-#     csv_output.writeheader()
-
-#     for legislator_offices in legislators_offices:
-#         legislator_ids = legislator_offices['id']
-#         for office in legislator_offices['offices']:
-#             office.update(legislator_ids)
-#             csv_output.writerow(office)
-
+from postal.parser import parse_address
 
 def generate_legislator_json():
     #yaml filenames
@@ -178,21 +26,128 @@ def generate_legislator_json():
                 if os.path.isdir(statesub_dir):
                     jsonDataList = []  # Reset for each directory
                     json_out_filename = os.path.join(script_dir,"../alternate_formats/json/", state, filename+'.json')
+                    os.makedirs(os.path.dirname(json_out_filename), exist_ok=True)
                     if not force_refresh and os.path.exists(json_out_filename):
                         print(f"Skipping {json_out_filename}, already exists. Use --force-refresh to regenerate.")
                         continue
 
+                    print("Processing directory: %s..." % statesub_dir)
                     for filepath in glob.glob(os.path.join(statesub_dir, '*.yml')): #for each yaml file in dir
                         yaml_filename = os.path.basename(filepath)
                         print("Converting %s to JSON..." % yaml_filename)
-                        dict = utils.load_data(filepath)
-                        dict['state'] = utils.states[state.upper()]  # Add state name
-                        jsonDataList.append(dict)
+                        data = utils.load_data(filepath)
+                        
+                        # Translate from open states format to legislators-current format
+                        person = {}
+
+                        person['id'] = {}
+                        if 'id' in data:
+                            person['id']['openstates'] = data['id']
+                            
+                        person['name'] = {}
+                        if 'name' in data:
+                            person['name']['official_full'] = data['name']
+                        if 'given_name' in data:
+                            person['name']['first'] = data['given_name']
+                        if 'family_name' in data:
+                            person['name']['last'] = data['family_name']
+                            
+                        person['bio'] = {}
+                        if 'gender' in data:
+                            person['bio']['gender'] = 'M' if data['gender'] == 'Male' else 'F' if data['gender'] == 'Female' else data['gender']
+                        if 'birth_date' in data and data['birth_date']:
+                            person['bio']['birthday'] = data['birth_date']
+                        if 'image' in data:
+                            person['image_url'] = data['image']
+
+                        person['terms'] = []
+                        if 'roles' in data:
+                            for role in data['roles']:
+                                # start a new term and always give it an addresses list
+                                term = {'addresses': []}
+                                term['type'] = role['type']
+                                term['state'] = utils.states[state.upper()]
+                                if 'district' in role:
+                                    term['district'] = role['district']
+                                if 'start_date' in role:
+                                    term['start'] = str(role['start_date'])
+                                if 'end_date' in role:
+                                    term['end'] = str(role['end_date'])
+
+                                # try to find party
+                                if 'party' in data and len(data['party']) > 0:
+                                     term['party'] = data['party'][0].get('name')
+
+                                # try to find offices
+                                if 'offices' in data and len(data['offices']) > 0:
+                                    for office in data['offices']:
+                                        term['addresses'].append(parse_office_address(office))
+
+                                if 'email' in data:
+                                    term['contact_form'] = data['email']
+
+                                if 'links' in data and len(data['links']) > 0:
+                                    term['url'] = data['links'][-1].get('url')  # Use the last link as the URL
+
+                                person['terms'].append(term)
+                                person['terms'].reverse()  # Reverse to have most recent term last, to match congressional format
+
+                        jsonDataList.append(person)
 
                 # Write immediately after processing each directory
                     utils.write(
-                        json.dumps(jsonDataList, default=utils.format_datetime, indent=2, sort_keys=True),
+                        json.dumps(jsonDataList, default=utils.format_datetime, indent=2),
                         json_out_filename)
+
+def parse_office_address(office):
+
+    # run libpostal; it always returns lower‑cased components
+    parsed_items = parse_address(office.get('address', ''))
+
+    # restore capitalisation – e.g. “pennsylvania” → “Pennsylvania”
+    # you can tweak this if you need to preserve “USA”, “McFoo” etc.
+    parsed_items = [(component.title(), label) for component, label in parsed_items]
+
+    # parse_address() returns a list of (component, label) tuples,
+    # turn it into a dict keyed by label for easier lookup
+    comps = {label: component for component, label in parsed_items}
+
+                                        # first line: house number + road (+ road type if present)
+    addr1_parts = []
+    if 'house_number' in comps:
+        addr1_parts.append(comps['house_number'])
+    if 'road' in comps:
+        addr1_parts.append(comps['road'])
+    if 'road_type' in comps:          # e.g. "St", "Ave"
+        addr1_parts.append(comps['road_type'])
+    address1 = ' '.join(addr1_parts) if addr1_parts else None
+
+                                        # second line: any unit/room/level/suite/PO‑box info
+    secondary = []
+    if 'room' in comps:
+        secondary.append('Room ' + comps['room'])
+    if 'unit' in comps:
+        secondary.append(comps['unit'])
+    if 'level' in comps:
+        secondary.append('Level ' + comps['level'])
+    if 'suite' in comps:
+        secondary.append('Suite ' + comps['suite'])
+    if 'po_box' in comps:
+        secondary.append('P.O. Box ' + comps['po_box'])
+    address2 = ', '.join(secondary) if secondary else None
+    newOffice = {}
+    newOffice['address1'] = address1
+    newOffice['address2'] = address2
+    newOffice['city'] = comps.get('city')
+    newOffice['state'] = comps.get('state')
+    newOffice['zip'] = comps.get('postcode')
+
+    if 'voice' in office:
+        newOffice['phone'] = office['voice']
+    if 'classification' in office:
+        newOffice['title'] = office['classification']
+
+    return newOffice
 
 if __name__ == '__main__':
     print("Generating alternate bulk formats for People...")
