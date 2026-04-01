@@ -10,8 +10,19 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '27'
+- start_date: '2019-01-14'
+  end_date: '2027-01-18'
+  type: lt_governor
+  jurisdiction: ocd-jurisdiction/country:us/state:al/government
+offices:
+- classification: capitol
+  address: Alabama State House; 11 S Union Street; Montgomery, AL 36130
+  voice: 334-261-9590
 links:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85941&OID_PERSON=7709
+- url: https://ltgov.alabama.gov/about/
+- url: https://ltgov.alabama.gov/contact/
+  note: webform
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000153
@@ -22,3 +33,4 @@ other_identifiers:
 sources:
 - url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85941&OID_PERSON=7709
 - url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
+- url: https://ltgov.alabama.gov/about/
