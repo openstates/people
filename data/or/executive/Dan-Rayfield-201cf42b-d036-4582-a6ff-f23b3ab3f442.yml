@@ -2,10 +2,18 @@ id: ocd-person/201cf42b-d036-4582-a6ff-f23b3ab3f442
 name: Dan Rayfield
 given_name: Dan
 family_name: Rayfield
+birth_date: 1979-03-01
+gender: Male
+email: rep.danrayfield@oregonlegislature.gov
 image: https://www.naag.org/wp-content/uploads/2025/01/ag-OR-Rayfield-Dan.png
 party:
 - name: Democratic
 roles:
+- start_date: 2015-01-12
+  end_date: 2025-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:or/government
+  district: '16'
 - start_date: '2024-12-31'
   end_date: '2029-01-01'
   type: attorney general
@@ -15,8 +23,26 @@ offices:
   address: Justice Bldg., 1162 Court St., NE; Salem, OR 97301
   voice: 503-378-6002
 links:
+- url: https://www.oregonlegislature.gov/rayfield
+  note: homepage
 - url: https://www.doj.state.or.us/
+other_names:
+- name: D. Rayfield
+- name: D.A. Rayfield
+- name: Rayfield, D.
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ORL000276
+- scheme: legacy_openstates
+  identifier: ORL000359
 sources:
-- url: https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/attorney-general-dan-rayfield/
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2022R1')/Legislators
+- url: https://api.oregonlegislature.gov/odata/odataservice.svc/LegislativeSessions('2023R1')/Legislators
 - url: https://ballotpedia.org/Dan_Rayfield
+- url: https://en.wikipedia.org/wiki/Dan_Rayfield
+- url: https://www.linkedin.com/in/daniel-a-rayfield-a4710455
+- url: https://www.oregonlegislature.gov/rayfield
+- url: https://www.doj.state.or.us/oregon-department-of-justice/office-of-the-attorney-general/attorney-general-dan-rayfield/
 - url: https://www.naag.org/attorney-general/dan-rayfield/
+extras:
+  title: Speaker

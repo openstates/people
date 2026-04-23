@@ -2,22 +2,32 @@ id: ocd-person/1529b892-b3da-4958-bb3a-5bf04d7b5e0c
 name: Rob Bonta
 given_name: Rob
 family_name: Bonta
+gender: Male
 image: https://www.naag.org/wp-content/uploads/2021/04/ag-CA-Bonta.jpg
 party:
 - name: Democratic
 roles:
+- end_date: '2021-10-10'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+  district: '18'
 - start_date: '2021-04-23'
   end_date: '2027-01-04'
   type: attorney general
   jurisdiction: ocd-jurisdiction/country:us/state:ca/government
+links:
+- url: https://a18.asmdc.org
+- url: https://oag.ca.gov/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: CAL000346
+sources:
+- url: http://assembly.ca.gov/assemblymembers
+- url: https://oag.ca.gov/contact
+- url: https://ballotpedia.org/Rob_Bonta
+- url: https://www.naag.org/attorney-general/rob-bonta/
 offices:
 - classification: capitol
   address: P.O. Box 944255; Sacramento, CA 94244-2550
   voice: 916-210-6276
   fax: 916-323-5341
-links:
-- url: https://oag.ca.gov/
-sources:
-- url: https://oag.ca.gov/contact
-- url: https://ballotpedia.org/Rob_Bonta
-- url: https://www.naag.org/attorney-general/rob-bonta/

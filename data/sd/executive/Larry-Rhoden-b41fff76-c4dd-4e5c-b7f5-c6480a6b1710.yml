@@ -2,30 +2,53 @@ id: ocd-person/b41fff76-c4dd-4e5c-b7f5-c6480a6b1710
 name: Larry Rhoden
 given_name: Larry
 family_name: Rhoden
-birth_date: 1959-02-05
 image: https://governor.sd.gov/img/Governor-Rhoden-header.jpg
 party:
 - name: Republican
 roles:
+- end_date: '2018-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '29'
+- start_date: '2009-01-01'
+  end_date: '2014-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+  district: '29'
 - start_date: '2025-01-25'
   end_date: '2027-01-04'
   type: governor
   jurisdiction: ocd-jurisdiction/country:us/state:sd/government
+links:
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1463&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=440
+- url: https://governor.sd.gov/
+- url: https://governorlarryrhoden.com/
+  note: campaign
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: SDL000282
+- scheme: openstates
+  identifier: ocd-person/b0b10e29-de2d-4b42-a2f2-0fe5ebc6f716
+- scheme: legacy_openstates
+  identifier: SDL000031
+sources:
+- url: https://sdlegislature.gov/Legislators/Legislators/MemberDetail.aspx?Member=1463&Session=2018s
+- url: http://legis.sd.gov/Legislators/Legislators/MemberDetail.aspx?Member=440
+- url: http://legis.sd.gov/Legislators/Legislators/MemberCommittees.aspx?Member=440
+- url: https://governor.sd.gov/
+- url: https://ballotpedia.org/Larry_Rhoden
+- url: https://www.trailofgovernors.com/governor-larry-rhoden/
+extras:
+  occupation: Rancher
+birth_date: 1959-02-05
 offices:
 - classification: capitol
   address: 500 East Capitol Avenue; Pierre, SD 57501
   voice: 605-773-3212
   fax: 605-773-4711
-links:
-- url: https://governor.sd.gov/
-- url: https://governorlarryrhoden.com/
-  note: campaign
 ids:
   twitter: GovLarryRhoden
   instagram: govlarryrhoden
-  youtube: '@GovLarryRhoden'
+  youtube: GovLarryRhoden
   facebook: GovLarryRhoden
-sources:
-- url: https://governor.sd.gov/
-- url: https://ballotpedia.org/Larry_Rhoden
-- url: https://www.trailofgovernors.com/governor-larry-rhoden/

@@ -4,18 +4,28 @@ given_name: Peggy
 family_name: Flanagan
 image: https://mn.gov/governor/assets/flanagan-bio-thumbnail_tcm1055-653288.png
 party:
-- name: Democratic
+- name: Democratic-Farmer-Labor
 roles:
+- end_date: '2019-01-07'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mn/government
+  district: 46A
 - start_date: '2019-01-07'
   end_date: '2027-01-04'
   type: lt_governor
   jurisdiction: ocd-jurisdiction/country:us/state:mn/government
-offices:
-- classification: capitol
-  address: 130 State Capitol, 75 Rev Dr. Martin Luther King Jr. Blvd.; St. Paul, MN 55155
-  voice: 651-201-3400
 links:
+- url: http://www.house.leg.state.mn.us/members/members.asp?id=15451
 - url: https://mn.gov/governor/about-gov/peggyflanagan/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: MNL000706
 sources:
+- url: http://www.house.leg.state.mn.us/members/hmem.asp
 - url: https://mn.gov/governor/about-gov/peggyflanagan/
 - url: https://ballotpedia.org/Peggy_Flanagan
+offices:
+- classification: capitol
+  address: 130 State Capitol, 75 Rev Dr. Martin Luther King Jr. Blvd.; St. Paul, MN
+    55155
+  voice: 651-201-3400
