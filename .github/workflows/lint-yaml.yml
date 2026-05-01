@@ -11,6 +11,7 @@ on:
       - "poetry.lock"
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
+      - ".github/scripts/check_duplicate_people.py"
   pull_request:
     branches:
       - main
@@ -21,6 +22,7 @@ on:
       - "poetry.lock"
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
+      - ".github/scripts/check_duplicate_people.py"
 
 jobs:
   lint:
@@ -34,6 +36,8 @@ jobs:
       id: changed-dirs
       with:
         dir_names: 'true'
+    - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c  # v46.0.5
+      id: changed-files
     - name: Yaml file linting
       run: |
         docker run --rm \
@@ -77,6 +81,11 @@ jobs:
             echo "$dir contains changes, but ignored for linting people"
           fi
         done
+    - name: check duplicate people selectively
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        poetry run python .github/scripts/check_duplicate_people.py --changed-files ${ALL_CHANGED_FILES}
     - name: lint committees selectively
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
