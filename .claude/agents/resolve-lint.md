@@ -14,7 +14,7 @@ verify that data issues have been resolved.
 
 The lint command is:
 
-`OS_PEOPLE_DIRECTORY=./ poetry run os-people lint nd`
+`OS_PEOPLE_DIRECTORY=./ poetry run os-people lint --ignore-role-warnings nd`
 
 Where `nd` represents the jurisdiction being linted (aka subfolder within the `data` folder). When you run this command,
 it should generally match the branch that is checked out. For example, the following branch should be `nc`:
