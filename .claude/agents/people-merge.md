@@ -40,6 +40,6 @@ accomplish the following:
 
 The lint command is:
 
-`OS_PEOPLE_DIRECTORY=./ poetry run os-people lint`
+`OS_PEOPLE_DIRECTORY=./ poetry run os-people lint --ignore-role-warnings`
 
 This will lint the current branch for ALL jurisdictions.
