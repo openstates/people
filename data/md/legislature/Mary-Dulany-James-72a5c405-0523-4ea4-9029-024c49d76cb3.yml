@@ -13,11 +13,11 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '34'
-- start_date: 1999-01-13
-  end_date: 2015-01-13
-  type: upper
+- start_date: '2007-01-01'
+  end_date: '2014-12-31'
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
-  district: '34'
+  district: 34A
 offices:
 - classification: capitol
   address: Room 103, James Senate Office Building 11 Bladen St., Annapolis, MD 21401
@@ -28,9 +28,17 @@ links:
 other_names:
 - name: James, M.
 - name: M. James
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/c0832fae-fa24-4cd4-a104-a2f09fae8c77
+- scheme: legacy_openstates
+  identifier: MDL000300
+- scheme: legacy_openstates
+  identifier: MDL000536
 sources:
 - url: https://ballotpedia.org/Mary-Dulany_James
 - url: https://en.wikipedia.org/wiki/Mary-Dulany_James
+- url: https://justfacts.votesmart.org/candidate/biography/19227/mary-dulany-james
 - url: https://mgaleg.maryland.gov/mgawebsite/Members/Details/james01
 - url: https://msa.maryland.gov/msa/mdmanual/05sen/html/msa02778.html
 - url: https://www.linkedin.com/in/mary-dulany-james-a4b45990
