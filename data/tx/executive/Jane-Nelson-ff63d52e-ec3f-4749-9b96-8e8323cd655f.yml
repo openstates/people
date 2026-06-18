@@ -2,6 +2,7 @@ id: ocd-person/ff63d52e-ec3f-4749-9b96-8e8323cd655f
 name: Jane Nelson
 given_name: Jane
 family_name: Nelson
+gender: Female
 email: secretary@sos.texas.gov
 image: https://www.sos.state.tx.us/images/jane-nelson-portrait-small.jpg
 party:
@@ -10,13 +11,24 @@ roles:
 - end_date: '2027-01-04'
   type: secretary of state
   jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+- end_date: '2023-01-05'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tx/government
+  district: '12'
 offices:
 - classification: capitol
   address: 1100 Congress Ave. ; ; Austin, TX 78701-
   voice: 512-463-5650
 links:
 - url: https://www.sos.state.tx.us/index.shtml
+- url: https://senate.texas.gov/member.php?d=12
 ids:
   twitter: TXsecofstate
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: TXL000199
+- scheme: legacy_openstates
+  identifier: TXL000017
 sources:
 - url: https://www.sos.state.tx.us/index.shtml
+- url: https://senate.texas.gov/member.php?d=12
