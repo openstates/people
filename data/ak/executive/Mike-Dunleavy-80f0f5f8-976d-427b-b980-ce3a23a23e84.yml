@@ -3,7 +3,7 @@ name: Mike Dunleavy
 given_name: Mike
 family_name: Dunleavy
 birth_date: 1961-05-05
-image: https://gov.alaska.gov/wp-content/uploads/sites/2/Governor-8x10-1.jpg
+image: https://gov.alaska.gov/wp-content/uploads/Gov-website-photo.jpg
 party:
 - name: Republican
 roles:
@@ -11,6 +11,16 @@ roles:
   end_date: '2026-12-07'
   type: governor
   jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+- start_date: '2015-01-01'
+  end_date: '2018-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: E
+- start_date: '2013-01-01'
+  end_date: '2014-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ak/government
+  district: D
 offices:
 - classification: capitol
   address: State Capitol; P.O. Box 110001; Juneau, AK 99811-0001
@@ -20,7 +30,14 @@ links:
 - url: https://gov.alaska.gov/
 - url: http://aws.state.ak.us/CrmForms/Home/Feedback
   note: webform
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=dnl
 ids:
   twitter: GovDunleavy
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: AKL000063
+- scheme: legacy_openstates
+  identifier: AKL000166
 sources:
 - url: https://gov.alaska.gov/
+- url: http://www.akleg.gov/basis/Member/Detail/30?code=dnl
