@@ -2,13 +2,19 @@ id: ocd-person/18b9f6aa-ba50-4c0a-953c-fba2720ef2a6
 name: Gregg Amore
 given_name: Gregg
 family_name: Amore
+gender: Male
 email: secretaryamore@sos.ri.gov
+image: https://www.sos.ri.gov/assets/img/secretary-amore-headshot.jpg
 party:
 - name: Democratic
 roles:
 - end_date: '2027-01-04'
   type: secretary of state
   jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+- end_date: '2023-01-03'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ri/government
+  district: '65'
 offices:
 - classification: capitol
   address: 82 Smith St.; Rm 217; Providence, RI 02903-
@@ -18,7 +24,14 @@ links:
 - url: https://www.sos.ri.gov
 - url: https://www.sos.ri.gov/contact
   note: webform
+- url: http://www.rilegislature.gov/representatives/amore/default.aspx
 ids:
   twitter: RISecState
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: RIL000135
 sources:
 - url: https://www.sos.ri.gov
+- url: http://www.rilegislature.gov/representatives/amore/default.aspx
+extras:
+  City/Town Represented: East Providence
