@@ -2,13 +2,15 @@ id: ocd-person/8334f7e1-d712-44b4-8570-d0d0a6d131d3
 name: Paul Evans
 given_name: Paul
 family_name: Evans
+birth_date: 1970-05-22
 gender: Male
 email: rep.paulevans@oregonlegislature.gov
 image: https://www.oregonlegislature.gov/evans/PublishingImages/member_photo.jpg
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2015-01-12
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:or/government
   district: '20'
 offices:
@@ -21,6 +23,7 @@ links:
 other_names:
 - name: Evans, P.
 - name: P. Evans
+- name: P.L. Evans
 other_identifiers:
 - scheme: legacy_openstates
   identifier: ORL000260
