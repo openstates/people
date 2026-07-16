@@ -9,7 +9,8 @@ image: https://www.legislature.state.al.us/pdf/house/members/Lawrence_69.png
 party:
 - name: Democratic
 roles:
-- type: lower
+- start_date: 2014-11-05
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '69'
 offices:
@@ -22,6 +23,7 @@ offices:
 links:
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
+- url: https://alison.legislature.state.al.us/house-leaders-members?tab=1&search=Lawrence
 - url: https://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=100551&OID_PERSON=7697
 other_names:
 - name: K. Lawrence
@@ -35,7 +37,9 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: ALL000351
 sources:
+- url: https://alison.legislature.state.al.us/house-leaders-members?tab=1&search=Lawrence
 - url: https://ballotpedia.org/Kelvin_Lawrence
+- url: https://en.wikipedia.org/wiki/Kelvin_Lawrence
 - url: https://en.wikipedia.org/wiki/Kelvin_Lawrence_(politician)
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
