@@ -13,8 +13,8 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: '34'
-- start_date: '2007-01-01'
-  end_date: '2014-12-31'
+- start_date: 2007-01-01
+  end_date: 2014-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:md/government
   district: 34A
@@ -29,12 +29,12 @@ other_names:
 - name: James, M.
 - name: M. James
 other_identifiers:
-- scheme: openstates
-  identifier: ocd-person/c0832fae-fa24-4cd4-a104-a2f09fae8c77
 - scheme: legacy_openstates
   identifier: MDL000300
 - scheme: legacy_openstates
   identifier: MDL000536
+- scheme: openstates
+  identifier: ocd-person/c0832fae-fa24-4cd4-a104-a2f09fae8c77
 sources:
 - url: https://ballotpedia.org/Mary-Dulany_James
 - url: https://en.wikipedia.org/wiki/Mary-Dulany_James
