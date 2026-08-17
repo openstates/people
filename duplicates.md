@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `426`
-- Files involved: `860`
+- Duplicate name groups: `425`
+- Files involved: `858`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -22,9 +22,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `jack` `williams`
   - `data/al/legislature/Jack-W-Williams-a7e333c5-03f2-4343-9981-956bcc1ea38e.yml`
   - `data/al/retired/Jack-Williams-e383fc29-5212-42d3-bc76-46dd93bf3e6f.yml`
-- `john` `merrill`
-  - `data/al/executive/John-Merrill-6a69be8a-7d2c-4291-9d18-a03b7fdfd29d.yml`
-  - `data/al/retired/John-Merrill-5c06e1c9-7b24-4796-94de-eea8651a83f7.yml`
 - `mack` `butler`
   - `data/al/legislature/Mack-Butler-5071243c-3e2d-4acb-ac8d-0d3a8af3eb8a.yml`
   - `data/al/retired/Mack-Butler-76f9d6ad-f147-4913-b011-3f52e1105f77.yml`
@@ -1412,6 +1409,7 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ### PR #4045
 
+- `al` `john` `merrill`: consolidated executive (6a69be8a) into retired (5c06e1c9), deleted executive file
 - `ca` `shirley` `weber`: consolidated retired (71cfb6c2) into executive (c8e67d27), deleted retired file
 - `ct` `stephanie` `thomas`: consolidated retired (ea5497d0) into executive (e54205b6), deleted retired file
 - `ga` `brad` `raffensperger`: consolidated retired (1e5d1b04) into executive (02e75ac0), deleted retired file
