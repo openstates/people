@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `428`
-- Files involved: `864`
+- Duplicate name groups: `427`
+- Files involved: `862`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -233,9 +233,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `marilyn` `moore`
   - `data/ct/retired/Marilyn-Moore-8d113751-6123-4181-a3a7-eb5c3c9e70e5.yml`
   - `data/ct/retired/Marilyn-V-Moore-41d83b98-d5ab-48db-b847-3a3e08194b4c.yml`
-- `stephanie` `thomas`
-  - `data/ct/executive/Stephanie-Thomas-e54205b6-c824-4f64-9a68-301d01318457.yml`
-  - `data/ct/retired/Stephanie-Thomas-ea5497d0-5a3b-4dcc-9d13-5d50a586cf2b.yml`
 
 ## dc
 
@@ -1418,4 +1415,5 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ### PR #4045
 
+- `ct` `stephanie` `thomas`: consolidated retired (ea5497d0) into executive (e54205b6), deleted retired file
 - `ga` `brad` `raffensperger`: consolidated retired (1e5d1b04) into executive (02e75ac0), deleted retired file
