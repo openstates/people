@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `429`
-- Files involved: `866`
+- Duplicate name groups: `428`
+- Files involved: `864`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -345,9 +345,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## ga
 
-- `brad` `raffensperger`
-  - `data/ga/executive/Brad-Raffensperger-02e75ac0-4350-4305-980e-8dc0462c5cc1.yml`
-  - `data/ga/retired/Brad-Raffensperger-1e5d1b04-a659-45b4-9c43-0945df52b1a3.yml`
 - `derrick` `jackson`
   - `data/ga/legislature/Derrick-Jackson-9046fcb2-f3eb-4233-bd92-32c94e60f9df.yml`
   - `data/ga/retired/Derrick-Jackson-9c6d1032-c14f-4b57-90df-eaa1273cc336.yml`
@@ -1418,3 +1415,7 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `az` `regina` `cobb`: consolidated retired dupe into `55cdd789`
 - `az` `reginald` `bolding`: consolidated retired dupe into `97d71f2f`
 - `az` `sarah` `liguori`: consolidated retired dupe into legislature `99f91f84`
+
+### PR #4045
+
+- `ga` `brad` `raffensperger`: consolidated retired (1e5d1b04) into executive (02e75ac0), deleted retired file
