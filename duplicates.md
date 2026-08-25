@@ -184,6 +184,9 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `aja` `brown`
   - `data/ca/retired/Aja-Brown-2bb63001-991e-4262-9b5f-111ad2f33881.yml`
   - `data/ca/retired/Aja-Brown-7451e00b-d236-492e-8049-224cc4b600f2.yml`
+- `chris` `rogers`
+  - `data/ca/legislature/Chris-Rogers-84a80bdb-37d5-4f52-8f55-e116fb97ca58.yml`
+  - `data/ca/municipalities/Chris-Rogers-40141964-f8cb-4270-a013-c483902a09ee.yml`
 - `bill` `zimmerman`
   - `data/ca/municipalities/Bill-Zimmerman-3990341b-18c1-4974-b9f1-4e4c35e8b2e2.yml`
   - `data/ca/retired/Bill-Zimmerman-bb6e1e33-cab7-4a3c-949e-a5ded8b3dce4.yml`
