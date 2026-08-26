@@ -4,12 +4,17 @@ given_name: Danielle
 family_name: Conrad
 birth_date: 1977-08-05
 gender: Female
-email: dconrad@leg.ne.gov
+email: danielle.conrad@leg.ne.gov
 image: https://www.nebraskalegislature.gov/media/images/senators/dist46/highres/dist46.jpg
 party:
 - name: Nonpartisan
 roles:
 - start_date: 2023-01-04
+  type: legislature
+  jurisdiction: ocd-jurisdiction/country:us/state:ne/government
+  district: '46'
+- start_date: '2011-01-01'
+  end_date: '2014-12-31'
   type: legislature
   jurisdiction: ocd-jurisdiction/country:us/state:ne/government
   district: '46'
@@ -19,12 +24,16 @@ offices:
   voice: 402-471-2720
 links:
 - url: https://nebraskalegislature.gov/senators/landing-pages/index.php?District=46
+- url: http://news.legislature.ne.gov/dist46/biography/
 other_names:
 - name: Conrad, D.
 - name: D. Conrad
 ids:
   twitter: SenConrad
   facebook: ConradforLegislature
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: NEL000046
 sources:
 - url: https://ballotpedia.org/Danielle_Conrad
 - url: https://en.wikipedia.org/wiki/Danielle_Conrad

@@ -281,9 +281,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## ct
 
-- `aundré` `bumgardner`
-  - `data/ct/legislature/Aundre-Bumgardner-32ad6577-b1ee-411f-9dca-e40e06226703.yml`
-  - `data/ct/retired/Aundr-Bumgardner-1af3c171-f7f9-4843-8a06-25960ac20bc6.yml`
 - `brenda l.` `kupchick`
   - `data/ct/municipalities/Brenda-L-Kupchick-d799c3ad-6665-45be-b4d8-6784ad72849a.yml`
   - `data/ct/retired/Brenda-L-Kupchick-d9f16dc8-f123-451a-a1cf-191706553a25.yml`
@@ -942,9 +939,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## ne
 
-- `danielle` `conrad`
-  - `data/ne/legislature/Danielle-Conrad-bf280e36-3547-4d6a-b5aa-d6c32bb5547a.yml`
-  - `data/ne/retired/Danielle-Conrad-950eb956-e493-451e-a446-4faa11d9641e.yml`
 - `merv` `riepe`
   - `data/ne/legislature/Merv-Riepe-3c015cf9-e3de-42cf-a364-64607ecc70ce.yml`
   - `data/ne/retired/Merv-Riepe-8a0290ef-475b-4394-994e-d5fcc08970e8.yml`
@@ -987,9 +981,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `john` `reagan`
   - `data/nh/retired/John-M-Reagan-6fae3b68-faa2-4965-834d-94a8e28de553.yml`
   - `data/nh/retired/John-Reagan-f516d40a-3676-4437-8285-a931d7c2885b.yml`
-- `katherine` `prudhomme-o'brien`
-  - `data/nh/legislature/Katherine-J-Prudhomme-OBrien-a0a8c9d8-1f27-4d28-a249-8a5856ea5c05.yml`
-  - `data/nh/retired/Katherine-Prudhomme-OBrien-92c01f02-b619-495b-b3a5-4d089c044cb4.yml`
 - `keith` `murphy`
   - `data/nh/legislature/Keith-R-Murphy-7ec573c3-d961-4d08-a71c-d239490b5c1a.yml`
   - `data/nh/retired/Keith-Murphy-f5a60d8c-c900-4e53-9095-b9fdfeb7f506.yml`
@@ -1130,9 +1121,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `frank` `larose`
   - `data/oh/executive/Frank-LaRose-eaeed96a-2f5c-43f2-aef4-fa3432d33451.yml`
   - `data/oh/retired/Frank-LaRose-56038e50-64a7-40b8-a748-a772003e6c24.yml`
-- `kyle` `koehler`
-  - `data/oh/legislature/Kyle-Koehler-f2e79c7c-7e3a-496d-8f87-d43b62eb54a5.yml`
-  - `data/oh/retired/Kyle-Koehler-9578948b-5af3-46fd-9567-8438c67fa148.yml`
 - `mark` `romanchuk`
   - `data/oh/legislature/Mark-Romanchuk-2ae62dc8-e902-4a8e-99b7-182477c50bc3.yml`
   - `data/oh/retired/Mark-J-Romanchuk-257a1a5f-8888-49e4-a652-69db47e75832.yml`
@@ -1458,3 +1446,13 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `eric` `barlow`
   - `data/wy/legislature/Eric-Barlow-afa67bb0-3191-4dce-94ab-ddb3a9e7475c.yml`
   - `data/wy/retired/Eric-Barlow-d54d2b39-7361-46f7-b4be-b5f4cb11f7b3.yml`
+
+## Resolved
+
+### PR #4001
+
+- `ct` `aundré` `bumgardner`: consolidated retired (1af3c171) into legislature (32ad6577), deleted retired file
+- `ne` `danielle` `conrad`: consolidated retired (950eb956) into legislature (bf280e36), deleted retired file
+- `nh` `katherine` `prudhomme-o'brien`: consolidated retired (92c01f02) into legislature (a0a8c9d8), deleted retired file
+- `oh` `kyle` `koehler`: consolidated retired (9578948b) into legislature (f2e79c7c), deleted retired file
+- `ca` `chris` `rogers`: two distinct people (state legislator vs mayor); changed legislator given_name to `Christopher`, added `Chris Rogers` to other_names
