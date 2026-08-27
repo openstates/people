@@ -197,9 +197,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `carol` `dutra-vernaci`
   - `data/ca/municipalities/Carol-Dutra-Vernaci-611c6cfe-bc70-4f7e-bca1-b0a48579a132.yml`
   - `data/ca/retired/Carol-Dutra-Vernaci-40737603-029c-4a1b-a295-c7a73450b4c4.yml`
-- `chris` `rogers`
-  - `data/ca/legislature/Chris-Rogers-84a80bdb-37d5-4f52-8f55-e116fb97ca58.yml`
-  - `data/ca/municipalities/Chris-Rogers-40141964-f8cb-4270-a013-c483902a09ee.yml`
 - `darrell` `steinberg`
   - `data/ca/retired/Darrell-Steinberg-9a11af5e-84e1-445b-b1db-5f9a431e9dc2.yml`
   - `data/ca/retired/Darrell-Steinberg-b16c60c3-a356-48c5-88b9-29adaa61cabf.yml`
@@ -1456,3 +1453,11 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `nh` `katherine` `prudhomme-o'brien`: consolidated retired (92c01f02) into legislature (a0a8c9d8), deleted retired file
 - `oh` `kyle` `koehler`: consolidated retired (9578948b) into legislature (f2e79c7c), deleted retired file
 - `ca` `chris` `rogers`: two distinct people (state legislator vs mayor); changed legislator given_name to `Christopher`, added `Chris Rogers` to other_names
+
+### auto-merge-2026-08-27
+
+- `ca` `chris` `rogers`: same person (Santa Rosa mayor elected to CA Assembly); consolidated municipalities record (40141964) into legislature (84a80bdb), deleted municipalities file
+- `co` `janice` `rich`: consolidated retired (45efea89) into legislature (2372415a), deleted retired file
+- `co` `julie` `mccluskie`: consolidated retired (fd2cb73e) into legislature (53facaaf), deleted retired file
+- `nh` `gary` `daniels`: consolidated legislature (4c8ac73e) into retired (281c916b), deleted legislature file
+- `oh` `kyle` `koehler`: consolidated legislature (9578948b) into legislature (f2e79c7c), deleted duplicate file
