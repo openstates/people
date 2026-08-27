@@ -1453,3 +1453,11 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `nh` `katherine` `prudhomme-o'brien`: consolidated retired (92c01f02) into legislature (a0a8c9d8), deleted retired file
 - `oh` `kyle` `koehler`: consolidated retired (9578948b) into legislature (f2e79c7c), deleted retired file
 - `ca` `chris` `rogers`: same person (Santa Rosa mayor 2020-2022 -> CA Assembly District 2 since 2024); mayor role/office/sources already consolidated into legislature file; corrected given_name back to `Chris` (was mistakenly set to `Christopher`)
+
+### auto-merge-2026-08-27
+
+- `ca` `chris` `rogers`: same person (Santa Rosa mayor elected to CA Assembly); consolidated municipalities record (40141964) into legislature (84a80bdb), deleted municipalities file
+- `co` `janice` `rich`: consolidated retired (45efea89) into legislature (2372415a), deleted retired file
+- `co` `julie` `mccluskie`: consolidated retired (fd2cb73e) into legislature (53facaaf), deleted retired file
+- `nh` `gary` `daniels`: consolidated legislature (4c8ac73e) into retired (281c916b), deleted legislature file
+- `oh` `kyle` `koehler`: consolidated legislature (9578948b) into legislature (f2e79c7c), deleted duplicate file
