@@ -17,6 +17,16 @@ roles:
   type: upper
   jurisdiction: ocd-jurisdiction/country:us/state:az/government
   district: '8'
+- start_date: '2013-01-01'
+  end_date: '2014-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '8'
+- start_date: '2015-01-01'
+  end_date: '2016-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:az/government
+  district: '8'
 offices:
 - classification: capitol
   address: Room 212, 1700 W. Washington St., Phoenix, AZ 85007
@@ -31,6 +41,8 @@ links:
 - url: https://www.azleg.gov/Senate/Senate-member/?legislature=56&session=128&legislator=2142
 - url: https://www.linkedin.com/in/t-j-shope-76585a132/
   note: linkedin
+- url: http://www.azleg.gov/MembersPage.asp?Member_ID=81&Legislature=51&Session_ID=110
+- url: http://www.azleg.gov/MembersPage.asp?Member_ID=36&Legislature=52&Session_ID=115
 other_names:
 - name: Shope, T.
 - name: T. Shope
@@ -45,6 +57,10 @@ ids:
 other_identifiers:
 - scheme: legacy_openstates
   identifier: AZL000377
+- scheme: legacy_openstates
+  identifier: AZL000289
+- scheme: legacy_openstates
+  identifier: AZL000309
 - scheme: openstates
   identifier: ocd-person/2f01ccca-ad88-4bce-b341-0f71bc2c1342
 - scheme: openstates
@@ -59,5 +75,7 @@ sources:
 - url: https://www.azleg.gov/senate-member/?legislature=56&legislator=2142
 - url: https://www.azleg.gov/senate-member/?legislature=57&legislator=2396
 - url: https://www.linkedin.com/in/t-j-shope-76585a132
+- url: http://www.azleg.gov/MemberRoster.asp?Session_ID=110&body=H
+- url: http://www.azleg.gov/MemberRoster.asp?Session_ID=115&body=H
 extras:
   title: President Pro Tempore
