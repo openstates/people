@@ -8,7 +8,7 @@ on:
       - "data/**"
       - "settings.yml"
       - ".yamllint"
-      - "poetry.lock"
+      - "uv.lock"
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
@@ -19,7 +19,7 @@ on:
       - "data/**"
       - "settings.yml"
       - ".yamllint"
-      - "poetry.lock"
+      - "uv.lock"
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
@@ -44,28 +44,16 @@ jobs:
         -v $(pwd):/code \
         registry.gitlab.com/pipeline-components/yamllint:0.34.0 \
         -s .
-    - name: setup Python 3.11
-      uses: actions/setup-python@v4
+    - name: install uv
+      uses: astral-sh/setup-uv@v3
       with:
         python-version: 3.11
-    - name: install Poetry
-      uses: snok/install-poetry@v1.4.1
-    - name: cache Poetry virtualenv
-      uses: actions/cache@v3
-      id: cache
-      with:
-        path: ~/.virtualenvs/
-        key: poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          poetry-${{ hashFiles('**/poetry.lock') }}
-    - name: set poetry config path
-      run: poetry config virtualenvs.path ~/.virtualenvs
+        enable-cache: true
     - name: install dependencies
-      run: poetry install --no-root
-      # if: steps.cache.outputs.cache-hit != 'true'
+      run: uv sync
 
 #    - name: lint people
-#      run: poetry run os-people lint
+#      run: uv run os-people lint
 #      env:
 #        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
     - name: lint people selectively
@@ -76,7 +64,7 @@ jobs:
         for dir in ${ALL_CHANGED_DIRS}; do
           if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/(legislature|retired|executive|municipalities) ]]; then
             dir=${BASH_REMATCH[1]}
-            poetry run os-people lint "$dir"
+            uv run os-people lint "$dir"
           else
             echo "$dir contains changes, but ignored for linting people"
           fi
@@ -85,7 +73,7 @@ jobs:
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
-        poetry run python .github/scripts/check_duplicate_people.py --changed-files ${ALL_CHANGED_FILES}
+        uv run python .github/scripts/check_duplicate_people.py --changed-files ${ALL_CHANGED_FILES}
     - name: lint committees selectively
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
@@ -94,7 +82,7 @@ jobs:
         for dir in ${ALL_CHANGED_DIRS}; do
           if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/committees ]]; then
             dir=${BASH_REMATCH[1]}
-            poetry run os-committees lint "$dir"
+            uv run os-committees lint "$dir"
           else
             echo "$dir contains changes, but ignored for linting committees"
           fi

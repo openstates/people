@@ -51,6 +51,6 @@ Where `az,co,ks,la,md,me,ma,mi,nh,pa` is a comma-separated list of jurisdiction 
 
 The lint command to lint ALL jurisdictions is:
 
-`OS_PEOPLE_DIRECTORY=./ poetry run os-people lint --ignore-role-warnings`
+`OS_PEOPLE_DIRECTORY=./ uv run os-people lint --ignore-role-warnings`
 
 This will lint the current branch for ALL jurisdictions.
