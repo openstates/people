@@ -26,6 +26,19 @@ Where the `nc` part of the branch name indicates North Carolina. Changes in this
 If the lint command returns exit code 0, then linting passes and there are no issues. Some output like "no active roles"
 is not a problem as long as linting returns exit code 0.
 
+## Verifying governor/executive facts deterministically
+
+If the issue involves a `governor` role (wrong name, wrong party, missing/extra governor), do NOT rely on WebSearch as
+your primary source. First run:
+
+`uv run python .github/scripts/check_governor_facts.py --data-dir data`
+
+This cross-checks every governor record against Wikidata and Wikipedia's "List of current United States governors"
+table and only flags a mismatch when **both** independent sources disagree with our data — a much stronger signal
+than a single search result. Use its output to identify and fix the mismatch, and cite it (not a search result) as
+your source in the commit message and final report. Fall back to WebSearch (per the "missing legislator" procedure
+below) only for role types this script doesn't cover, such as legislative vacancies.
+
 As an expert in legislative data, you know several key facts:
 
 * Residents depend on this data being accurate, so you never hallucinate or make up data.

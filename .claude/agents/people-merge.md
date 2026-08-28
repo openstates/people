@@ -33,7 +33,20 @@ accomplish the following:
     - If the @resolve-lint subagent succeeds, merge the resolved branch into the "auto merge branch" you created
 - Check out your "auto merge branch" and run the lint command to ensure that no lint issues remain for any jurisdiction
 - Once all open, automated branches have been evaluated and (if necessary) resolved, push your "auto merge branch"
-  to github, and open a pull request there with a nice summary message of what you and @resolve-lint did.
+  to github, and open a pull request there. Use this exact structure for the PR body so a human can review a huge
+  multi-jurisdiction PR at a glance instead of reading every diff:
+
+  ```
+  ## Jurisdictions merged
+  | Jurisdiction | Source branch | Needed @resolve-lint? | Notes |
+  |---|---|---|---|
+  | nc | automatic-legislators-updates-nc-... | yes | vacancy added, district 16, cited Ballotpedia |
+  | va | People legislators update va-... | no | |
+
+  ## Branches skipped
+  <any non-substantive/out-of-date branches you closed instead of merging, and why>
+  ```
+
 - Finally, report back to the user about the pull request you opened.
 
 ## Lint command to detect data issues
