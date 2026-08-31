@@ -8,9 +8,14 @@ party:
 - name: Republican
 roles:
 - start_date: '2017-01-05'
-  end_date: '2025-01-09'
+  end_date: '2027-01-14'
   type: governor
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+- start_date: '2009-01-01'
+  end_date: '2010-12-31'
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:vt/government
+  district: Washington
 offices:
 - classification: capitol
   address: 109 State Street; Pavilion Office Building; Montpelier, VT 05609
@@ -18,7 +23,11 @@ offices:
   fax: 802-828-3339
 links:
 - url: https://governor.vermont.gov/
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: VTL000025
 ids:
   twitter: GovPhilScott
 sources:
 - url: https://governor.vermont.gov/
+- url: http://www.leg.state.vt.us/legdir/memberdata.cfm/memberdata.doc?FileType=W
