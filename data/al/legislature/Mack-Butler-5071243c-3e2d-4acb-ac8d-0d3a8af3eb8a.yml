@@ -13,11 +13,11 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
   district: '28'
-- end_date: 2018-11-06
+- start_date: 2012-12-11
+  end_date: 2018-11-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:al/government
-  district: '28'
-  start_date: 2022-11-09
+  district: '30'
 offices:
 - classification: capitol
   address: Room 527-D, 11 S. Union St., Montgomery, AL 36130
@@ -28,17 +28,31 @@ offices:
 links:
 - url: https://alison.legislature.state.al.us/house-leaders-members
   note: homepage
+- url: https://alison.legislature.state.al.us/house-leaders-members?tab=1&search=Butler
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85944&OID_PERSON=5352
 other_names:
 - name: Butler (M)
 - name: Butler, M.
 - name: M. Butler
 - name: M.N. Butler
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: ALL000141
+- scheme: legacy_openstates
+  identifier: ALL000384
+- scheme: legacy_openstates
+  identifier: ALL000197
+- scheme: legacy_openstates
+  identifier: ALL000479
 sources:
+- url: https://alison.legislature.state.al.us/house-leaders-members?tab=1&search=Butler
 - url: https://ballotpedia.org/Mack_Butler
 - url: https://en.wikipedia.org/wiki/Mack_Butler
 - url: https://gql.api.alison.legislature.state.al.us/graphql
   note: graphql endpoint for member information
 - url: https://justfacts.votesmart.org/candidate/biography/143699/mack-butler
 - url: https://www.linkedin.com/in/mack-butler-457b5921
+- url: http://www.legislature.state.al.us/aliswww/ISD/ALRepresentative.aspx?OID_SPONSOR=85944&OID_PERSON=5352
+- url: http://www.legislature.state.al.us/aliswww/ISD/House/ALRepresentatives.aspx
 extras:
   counties: Etowah County
