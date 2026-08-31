@@ -61,6 +61,25 @@ district legitimately has two incumbents, but do not assume both left just becau
 news item — verify each one by name against a source that names them specifically (see openstates/issues#1389,
 where ND lower-20's Beltz was retired alongside Hagert even though only Hagert had resigned).
 
+If it warns about a "possible repurposed identity" (an `other_names` entry with a different given name than the
+file's own, sharing its family name), a predecessor's file may have been overwritten for their successor instead of
+being retired into its own file — see openstates/issues#4040, where Barbara Blackmon's MS SD-21 file was silently
+repurposed for her son Bradford when he took the seat, leaving "Barbara Blackmon" stranded in his `other_names` and
+her own service history gone. The check is heuristic (it can't tell a genuine nickname from a different person), so
+verify before acting:
+
+1. WebSearch/WebFetch to confirm the flagged `other_names` entry names a real, distinct predecessor in this same
+   seat (not a legal-name/nickname variant the heuristic missed). If it's just a nickname, no action needed — remove
+   it from your findings.
+2. If it's a distinct predecessor, split the file: create a new file for them under `retired/` with their own `id`,
+   their own role history (with an `end_date` for when they left, sourced individually per the "missing legislator"
+   procedure — not the successor's start_date used blindly), and their own `other_names`/sources. Do not fabricate
+   their history; reconstruct it from sources the way you would for any missing legislator.
+3. Remove the predecessor's name from the current occupant's `other_names` and re-verify the current file's own
+   `roles`/`sources` describe only the current occupant, not a mix of both people's data.
+4. Re-run `check_role_dates.py` — the warning should be gone since the repurposed name no longer appears in the
+   current file's `other_names`.
+
 ## When a vacancy's successor is already a sitting legislator elsewhere
 
 Before treating a filled vacancy as "add a new role, done," check whether the successor already has a file in this

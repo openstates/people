@@ -32,6 +32,16 @@ Two more, from openstates/issues#1389 and #1390 (both traced to PR #3780,
    own file - he kept an open-ended lower/118 role and never gained an upper/59 role, so
    the seat looked permanently vacant even though the successor already exists in the
    dataset under a different chamber/district.
+
+One more, from openstates/issues#4040: a predecessor's file was repurposed for their
+successor instead of retiring the predecessor and creating a new file. MS SD-21's
+Barbara Blackmon left the seat in 2024 and her son Bradford Blackmon took it - the bot
+overwrote her file in place (roles, offices, sources all became his) and left "Barbara
+Blackmon" sitting in the new occupant's `other_names`, so a search for "Bradford
+Blackmon" misses the file entirely and Barbara's own service history is gone. A
+same-family-name-different-given-name entry in `other_names` (not an initial or
+nickname of the current given_name) is the fingerprint: `other_names` should hold
+aliases of the file's own occupant, not a different person who once held the seat.
 """
 
 from __future__ import annotations
@@ -146,6 +156,133 @@ def find_shared_end_dates(
     return {date: entries for date, entries in by_date.items() if len(entries) > 1}
 
 
+def _normalized(s: str) -> str:
+    return "".join(ch for ch in s.lower() if ch.isalnum())
+
+
+_NICKNAME_PREFIX_LEN = 3
+_MIN_GIVEN_TOKEN_LEN = 2
+_MIN_NAME_PARTS = 2
+
+# Classic English nicknames that share no letters with their formal name, so the
+# prefix-overlap check below can't recognize them as the same person (Dave/David or
+# Steve/Stephen share a prefix and are already handled without this table).
+_CLASSIC_NICKNAMES = {
+    frozenset({"bill", "william"}),
+    frozenset({"billy", "william"}),
+    frozenset({"jack", "john"}),
+    frozenset({"bob", "robert"}),
+    frozenset({"bobby", "robert"}),
+    frozenset({"dick", "richard"}),
+    frozenset({"rick", "richard"}),
+    frozenset({"peggy", "margaret"}),
+    frozenset({"peg", "margaret"}),
+    frozenset({"ted", "edward"}),
+    frozenset({"ned", "edward"}),
+    frozenset({"hank", "henry"}),
+    frozenset({"chuck", "charles"}),
+    frozenset({"kate", "katherine"}),
+    frozenset({"kate", "catherine"}),
+    frozenset({"sally", "sarah"}),
+    frozenset({"betty", "elizabeth"}),
+    frozenset({"beth", "elizabeth"}),
+    frozenset({"liz", "elizabeth"}),
+    frozenset({"peggy", "margaret"}),
+    frozenset({"polly", "mary"}),
+    frozenset({"molly", "mary"}),
+    frozenset({"jim", "james"}),
+    frozenset({"jimmy", "james"}),
+    frozenset({"don", "donald"}),
+    frozenset({"ron", "ronald"}),
+    frozenset({"tom", "thomas"}),
+    frozenset({"tommy", "thomas"}),
+    frozenset({"ken", "kenneth"}),
+    frozenset({"fred", "frederick"}),
+    frozenset({"ed", "edward"}),
+    frozenset({"eddie", "edward"}),
+    frozenset({"joe", "joseph"}),
+    frozenset({"al", "albert"}),
+    frozenset({"gus", "augustus"}),
+    frozenset({"peg", "margaret"}),
+}
+
+
+def _plausible_same_person_nickname(given: str, other_given: str) -> bool:
+    """True if the two given-name tokens are very likely nickname/legal-name variants
+    of the same person, rather than two different people.
+
+    Most English nicknames share a prefix with the formal name (Dave/David,
+    Danny/Daniel, Patty/Patricia) - a shared prefix of 3+ letters is treated as the
+    same person. A short table covers the common exceptions that share no letters
+    (Bill/William, Jack/John, Bob/Robert). This is a heuristic, not a name database:
+    it trades a few missed detections for not drowning the real #4040-style signal
+    in nickname noise.
+    """
+    g, o = given.lower(), other_given.lower()
+    if g == o:
+        return True
+    prefix_len = min(_NICKNAME_PREFIX_LEN, len(g), len(o))
+    if prefix_len >= _NICKNAME_PREFIX_LEN and g[:prefix_len] == o[:prefix_len]:
+        return True
+    return frozenset({g, o}) in _CLASSIC_NICKNAMES
+
+
+def _given_name_token(name: str, family: str) -> str | None:
+    """Extract a plausible given-name token from a "First ... Last" other_names entry.
+
+    Requires the entry to end with the record's own family_name exactly, so bare
+    surnames ("Pilkington"), "Last, First" forms, and initials-only entries ("B.",
+    "B.J.") are skipped - those are legitimate shorthand for the record's own name,
+    not evidence of a different person.
+    """
+    if "," in name:
+        return None
+    parts = name.split()
+    if len(parts) < _MIN_NAME_PARTS or parts[-1] != family:
+        return None
+    token = parts[0].rstrip(".")
+    if len(token) <= _MIN_GIVEN_TOKEN_LEN or not token.isalpha():
+        return None
+    return token
+
+
+def find_repurposed_identities(
+    files: list[Path],
+) -> list[tuple[Path, str, str]]:
+    """Flag other_names entries that look like a *different* person's name.
+
+    Catches openstates/issues#4040: a predecessor's file gets repurposed for their
+    successor (same family, e.g. parent/child) instead of retiring the predecessor
+    into their own file. other_names should hold aliases of the file's own occupant
+    (nicknames, initials, maiden names) - a full given name that differs from the
+    record's given_name while sharing its family_name is the fingerprint of a
+    different person's identity left behind in the file, not a legitimate alias.
+    """
+    flagged: list[tuple[Path, str, str]] = []
+    for path in files:
+        with path.open() as f:
+            record = yaml.safe_load(f) or {}
+        given = (record.get("given_name") or "").strip()
+        family = (record.get("family_name") or "").strip()
+        if not given or not family:
+            continue
+        for other in record.get("other_names") or []:
+            other_name = (other.get("name") or "").strip()
+            token = _given_name_token(other_name, family)
+            if not token or token.lower() == given.lower():
+                continue
+            # "Kerry (Bubba) Underwood" for given_name "Bubba", or 'Artis "A. J."
+            # McCampbell' for given_name "A.J." - the record's own given_name shows
+            # up inside the other_names string itself, so it's describing this same
+            # person under a fuller/legal form, not a different individual.
+            if _normalized(given) in _normalized(other_name):
+                continue
+            if _plausible_same_person_nickname(given, token):
+                continue
+            flagged.append((path, other_name, given))
+    return flagged
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
@@ -215,6 +352,18 @@ def main() -> int:
                 "person's name - verify each one individually against a "
                 "source naming them specifically before retiring more than "
                 "one incumbent of the same seat at once."
+            )
+
+    if args.changed_files is not None and integrity_targets:
+        repurposed = find_repurposed_identities(integrity_targets)
+        for path, other_name, given in sorted(repurposed, key=lambda r: str(r[0])):
+            print(
+                f"warning: {path} lists other_name {other_name!r}, a different given "
+                f"name than this file's own {given!r} but sharing its family name - "
+                "possible repurposed identity (see openstates/issues#4040). Verify "
+                f"whether {other_name!r} is a distinct person (e.g. predecessor in "
+                "the same seat) who needs their own retired/ file with their own "
+                "service history, rather than an alias of the current occupant."
             )
 
     if found_problems:
