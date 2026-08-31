@@ -8,9 +8,14 @@ party:
 - name: Republican
 roles:
 - start_date: '2021-01-04'
-  end_date: '2025-01-01'
+  end_date: '2029-01-01'
   type: governor
   jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+- start_date: '2013-01-01'
+  end_date: '2014-12-31'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ut/government
+  district: '58'
 offices:
 - classification: capitol
   address: PO Box 142325 ; ; Salt Lake City, UT 84114-
@@ -18,7 +23,13 @@ offices:
   fax: 801-538-1133
 links:
 - url: https://governor.utah.gov/
+- url: http://le.utah.gov/house2/detail.jsp?i=COXSJ
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: UTL000137
 ids:
   twitter: SpencerJCox
 sources:
 - url: https://governor.utah.gov/
+- url: http://le.utah.gov/house2/representatives.jsp
+- url: http://le.utah.gov/house2/detail.jsp?i=COXSJ
