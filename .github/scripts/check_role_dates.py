@@ -16,6 +16,22 @@ wrong to something that knows the real-world facts or compares across files:
    2026-08-22 respectively). No structural check can know which date is "true", but a
    date shared by unrelated people in different jurisdictions is a strong smell worth a
    human/agent double-checking against each person's own source.
+
+Two more, from openstates/issues#1389 and #1390 (both traced to PR #3780,
+"Retired Mike Beltz (lower 20), added Dave Rustebakke as replacement"):
+
+3. Wrong incumbent retired in a multi-seat district: ND House district 20 seats two
+   people (Beltz and Hagert). Only Hagert resigned; Rustebakke was his replacement. The
+   bot matched "district 20" in a news item to *both* incumbents on file and retired
+   both, erroneously removing Beltz from the dataset for months. A shared district
+   between two people is never grounds to retire either of them - identity (name) must
+   match the source describing the departure, not just the district number.
+4. Successor already sitting elsewhere, old role never closed: IL Paul Jacobs was
+   appointed from House district 118 to fill Senate district 59 (vacated by Fowler, who
+   *is* correctly retired). The bot added the SD-59 vacancy but never touched Jacobs's
+   own file - he kept an open-ended lower/118 role and never gained an upper/59 role, so
+   the seat looked permanently vacant even though the successor already exists in the
+   dataset under a different chamber/district.
 """
 
 from __future__ import annotations
@@ -79,6 +95,30 @@ def check_role_integrity(record: dict) -> list[str]:
             )
 
     return problems
+
+
+def find_same_seat_retirements(
+    files: list[Path],
+) -> dict[tuple, list[tuple[str, Path]]]:
+    """Group newly-added end_dates by (jurisdiction, type, district) among files.
+
+    Catches issue #1389: a multi-seat district (e.g. a state House district electing
+    two members) had both incumbents retired in the same batch because a news item
+    named the district, when only one of them had actually left. Two people sharing a
+    seat number is normal for a multi-seat district; two people sharing a seat number
+    *both being retired in the same change* is the smell - it means the district
+    number was matched instead of the departing person's name/identity.
+    """
+    by_seat: dict[tuple, list[tuple[str, Path]]] = defaultdict(list)
+    for path in files:
+        with path.open() as f:
+            record = yaml.safe_load(f) or {}
+        name = f"{record.get('given_name', '')} {record.get('family_name', '')}".strip()
+        for role in record.get("roles") or []:
+            if role.get("end_date"):
+                key = (role.get("jurisdiction"), role.get("type"), role.get("district"))
+                by_seat[key].append((name, path))
+    return {seat: entries for seat, entries in by_seat.items() if len(entries) > 1}
 
 
 def find_shared_end_dates(
@@ -145,8 +185,10 @@ def main() -> int:
             print(f"{path}: {problem}")
 
     # Scoped to changed files only - see find_shared_end_dates' docstring for why
-    # comparing against the whole repo is the wrong check.
-    if integrity_targets:
+    # comparing against the whole repo is the wrong check (a seat like a US House
+    # district has had many genuinely-unrelated retirees over the decades; only a
+    # single batch of changed files makes a shared date/seat meaningful).
+    if args.changed_files is not None and integrity_targets:
         shared = find_shared_end_dates(integrity_targets)
         for date, entries in sorted(shared.items()):
             names = ", ".join(f"{name} ({path})" for name, path in entries)
@@ -156,6 +198,23 @@ def main() -> int:
                 "  Verify each person's effective date individually against their "
                 "own source - a shared date across unrelated people is often a "
                 "batch/announcement date rather than each person's real one."
+            )
+
+        same_seat = find_same_seat_retirements(integrity_targets)
+        for (jurisdiction, rtype, district), entries in sorted(
+            same_seat.items(), key=lambda kv: str(kv[0])
+        ):
+            names = ", ".join(f"{name} ({path})" for name, path in entries)
+            print(
+                f"warning: {len(entries)} people retired for the same seat "
+                f"(jurisdiction={jurisdiction!r}, type={rtype!r}, "
+                f"district={district!r}): {names}\n"
+                "  A multi-seat district can legitimately have two incumbents, "
+                "but both being retired in the same change is a sign the "
+                "district number was matched instead of the departing "
+                "person's name - verify each one individually against a "
+                "source naming them specifically before retiring more than "
+                "one incumbent of the same seat at once."
             )
 
     if found_problems:

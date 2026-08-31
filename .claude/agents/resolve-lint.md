@@ -56,7 +56,28 @@ inside any single jurisdiction's branch and only shows up once multiple are bund
 If it reports a dangling/duplicate role, fix it by editing the existing role in place rather than leaving the
 duplicate — check which entry has the plausible, sourced dates and delete the other. If it warns about a shared
 end_date, verify each affected person's date individually per the "missing legislator" procedure below before
-trusting any of them.
+trusting any of them. If it warns about two people retired for the same seat, treat it the same way: a two-seat
+district legitimately has two incumbents, but do not assume both left just because the district number matched a
+news item — verify each one by name against a source that names them specifically (see openstates/issues#1389,
+where ND lower-20's Beltz was retired alongside Hagert even though only Hagert had resigned).
+
+## When a vacancy's successor is already a sitting legislator elsewhere
+
+Before treating a filled vacancy as "add a new role, done," check whether the successor already has a file in this
+repository under a different seat — a sitting legislator appointed/elected to a new seat (a House member moving to
+the Senate, a legislator moving districts) keeps their existing file; they don't get a second one. openstates/issues#1390
+(IL SD-59) traced to exactly this: Paul Jacobs was appointed from House district 118 to fill the Senate district 59
+vacancy left by Fowler's retirement, but only Fowler's side of the change was made — Jacobs's own file kept an
+open-ended lower/118 role and never gained the upper/59 role, so the seat still looked vacant to lint even after the
+vacancy entry was correct.
+
+1. Search for the successor's name across `data/{jurisdiction}/legislature/` before assuming they're new to the
+   dataset.
+2. If found, edit that existing file: add `end_date` to the old role (their last day in the old seat — usually the
+   day before the new role's `start_date`, or the date reported for their departure) and add the new role, rather
+   than leaving the old role open-ended or creating a second file for the same person.
+3. Re-run the lint command — the vacancy for their new seat should now show as filled, and their old seat should
+   correctly show a vacancy (or its own replacement) instead of a still-open role for someone who has moved on.
 
 ## Verifying governor/executive facts deterministically
 
