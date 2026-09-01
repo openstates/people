@@ -42,11 +42,24 @@ Blackmon" misses the file entirely and Barbara's own service history is gone. A
 same-family-name-different-given-name entry in `other_names` (not an initial or
 nickname of the current given_name) is the fingerprint: `other_names` should hold
 aliases of the file's own occupant, not a different person who once held the seat.
+
+Two more, found while combining ten states' worth of executive-record fixes
+(openstates/people#4045): the same shapes kept recurring across unrelated states'
+governor/AG/lt-governor/SoS files, which `os-people lint` doesn't catch because
+neither one is a schema violation:
+
+7. Role missing `start_date`: e.g. GA's Brad Raffensperger (secretary of state) and
+   AZ's Adrian Fontes (secretary of state) both had a role with an `end_date` but no
+   `start_date`, leaving the term's boundary undefined.
+8. A person filed under `executive/` whose every role has already ended: e.g. DE's
+   John Carney was still in `executive/` with his governor role's `end_date` in the
+   past, well after Matt Meyer's inauguration - he belonged in `retired/`.
 """
 
 from __future__ import annotations
 
 import argparse
+import datetime
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -105,6 +118,44 @@ def check_role_integrity(record: dict) -> list[str]:
             )
 
     return problems
+
+
+def check_missing_start_date(record: dict) -> list[str]:
+    """Flag roles that have an end_date but no start_date.
+
+    A role's term boundary is undefined without a start_date, and this has
+    shown up repeatedly across unrelated states' executive records (GA's
+    Raffensperger, AZ's Fontes) rather than being a one-off typo.
+    """
+    return [
+        f"role has end_date {role['end_date']} but no start_date "
+        f"(district={role.get('district')!r}, type={role.get('type')!r})"
+        for role in record.get("roles") or []
+        if role.get("end_date") and not role.get("start_date")
+    ]
+
+
+def find_stale_executive_persons(files: list[Path]) -> list[tuple[str, Path, str]]:
+    """Flag executive/ files whose every role has already ended.
+
+    Catches DE's John Carney: still filed under executive/ with his governor
+    role's end_date in the past. A person whose most recent role has already
+    ended belongs in retired/, not executive/.
+    """
+    today = str(datetime.date.today())
+    flagged: list[tuple[str, Path, str]] = []
+    for path in files:
+        if "executive" not in path.parts:
+            continue
+        with path.open() as f:
+            record = yaml.safe_load(f) or {}
+        roles = record.get("roles") or []
+        end_dates = [str(r["end_date"]) for r in roles if r.get("end_date")]
+        if roles and end_dates and max(end_dates) < today:
+            given = record.get("given_name", "")
+            family = record.get("family_name", "")
+            flagged.append((f"{given} {family}".strip(), path, max(end_dates)))
+    return flagged
 
 
 def find_same_seat_retirements(
@@ -283,6 +334,57 @@ def find_repurposed_identities(
     return flagged
 
 
+def print_changed_file_warnings(integrity_targets: list[Path]) -> None:
+    """Print the warning-level (non-blocking) checks that only make sense when
+    scoped to a batch of changed files - see find_shared_end_dates' docstring."""
+    shared = find_shared_end_dates(integrity_targets)
+    for date, entries in sorted(shared.items()):
+        names = ", ".join(f"{name} ({path})" for name, path in entries)
+        print(
+            f"warning: {len(entries)} people have a role end_date of {date}: "
+            f"{names}\n"
+            "  Verify each person's effective date individually against their "
+            "own source - a shared date across unrelated people is often a "
+            "batch/announcement date rather than each person's real one."
+        )
+
+    same_seat = find_same_seat_retirements(integrity_targets)
+    for (jurisdiction, rtype, district), entries in sorted(
+        same_seat.items(), key=lambda kv: str(kv[0])
+    ):
+        names = ", ".join(f"{name} ({path})" for name, path in entries)
+        print(
+            f"warning: {len(entries)} people retired for the same seat "
+            f"(jurisdiction={jurisdiction!r}, type={rtype!r}, "
+            f"district={district!r}): {names}\n"
+            "  A multi-seat district can legitimately have two incumbents, "
+            "but both being retired in the same change is a sign the "
+            "district number was matched instead of the departing "
+            "person's name - verify each one individually against a "
+            "source naming them specifically before retiring more than "
+            "one incumbent of the same seat at once."
+        )
+
+    stale = find_stale_executive_persons(integrity_targets)
+    for name, path, last_end_date in sorted(stale, key=lambda s: str(s[1])):
+        print(
+            f"warning: {path} lists {name} under executive/ but their most "
+            f"recent role ended {last_end_date}, which is in the past - "
+            "consider moving this file to retired/ (see openstates/people#4045)."
+        )
+
+    repurposed = find_repurposed_identities(integrity_targets)
+    for path, other_name, given in sorted(repurposed, key=lambda r: str(r[0])):
+        print(
+            f"warning: {path} lists other_name {other_name!r}, a different given "
+            f"name than this file's own {given!r} but sharing its family name - "
+            "possible repurposed identity (see openstates/issues#4040). Verify "
+            f"whether {other_name!r} is a distinct person (e.g. predecessor in "
+            "the same seat) who needs their own retired/ file with their own "
+            "service history, rather than an alias of the current occupant."
+        )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
@@ -320,51 +422,16 @@ def main() -> int:
         for problem in check_role_integrity(record):
             found_problems = True
             print(f"{path}: {problem}")
+        for problem in check_missing_start_date(record):
+            found_problems = True
+            print(f"{path}: {problem}")
 
     # Scoped to changed files only - see find_shared_end_dates' docstring for why
     # comparing against the whole repo is the wrong check (a seat like a US House
     # district has had many genuinely-unrelated retirees over the decades; only a
     # single batch of changed files makes a shared date/seat meaningful).
     if args.changed_files is not None and integrity_targets:
-        shared = find_shared_end_dates(integrity_targets)
-        for date, entries in sorted(shared.items()):
-            names = ", ".join(f"{name} ({path})" for name, path in entries)
-            print(
-                f"warning: {len(entries)} people have a role end_date of {date}: "
-                f"{names}\n"
-                "  Verify each person's effective date individually against their "
-                "own source - a shared date across unrelated people is often a "
-                "batch/announcement date rather than each person's real one."
-            )
-
-        same_seat = find_same_seat_retirements(integrity_targets)
-        for (jurisdiction, rtype, district), entries in sorted(
-            same_seat.items(), key=lambda kv: str(kv[0])
-        ):
-            names = ", ".join(f"{name} ({path})" for name, path in entries)
-            print(
-                f"warning: {len(entries)} people retired for the same seat "
-                f"(jurisdiction={jurisdiction!r}, type={rtype!r}, "
-                f"district={district!r}): {names}\n"
-                "  A multi-seat district can legitimately have two incumbents, "
-                "but both being retired in the same change is a sign the "
-                "district number was matched instead of the departing "
-                "person's name - verify each one individually against a "
-                "source naming them specifically before retiring more than "
-                "one incumbent of the same seat at once."
-            )
-
-    if args.changed_files is not None and integrity_targets:
-        repurposed = find_repurposed_identities(integrity_targets)
-        for path, other_name, given in sorted(repurposed, key=lambda r: str(r[0])):
-            print(
-                f"warning: {path} lists other_name {other_name!r}, a different given "
-                f"name than this file's own {given!r} but sharing its family name - "
-                "possible repurposed identity (see openstates/issues#4040). Verify "
-                f"whether {other_name!r} is a distinct person (e.g. predecessor in "
-                "the same seat) who needs their own retired/ file with their own "
-                "service history, rather than an alias of the current occupant."
-            )
+        print_changed_file_warnings(integrity_targets)
 
     if found_problems:
         print(
