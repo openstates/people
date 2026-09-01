@@ -128,12 +128,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
   - `data/az/retired/Anthony-Kern-82385dc6-0d39-4d02-aa6d-95dbc2534972.yml`
   - `data/az/retired/Anthony-Kern-f4ea36ef-3e74-4753-be45-43d3029a8a0d.yml`
   - `data/az/retired/Anthony-T-Kern-5053d803-8513-47ed-9ad1-d49c1b12f012.yml`
-- `catherine` `miranda`
-  - `data/az/legislature/Catherine-Miranda-6241112b-910b-4ad8-9c0d-9caad318874f.yml`
-  - `data/az/retired/Catherine-Miranda-cab32a4c-9f0f-445b-b8d2-a80a937ec87a.yml`
-- `david` `gowan`
-  - `data/az/legislature/David-Gowan-51520de4-0e87-475b-91d2-99aa18addf72.yml`
-  - `data/az/retired/David-Gowan-96ec9994-949d-47bd-8b20-79dec573323f.yml`
 - `jerry` `weiers`
   - `data/az/retired/Jerry-Weiers-5d724fe6-d337-4eae-820a-37ce92dd363c.yml`
   - `data/az/retired/Jerry-Weiers-6f8b10da-5b02-4732-94ab-873957fb0a3f.yml`
@@ -141,9 +135,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `john` `giles`
   - `data/az/retired/John-Giles-5c1097a1-137c-422f-9906-99b9c9503687.yml`
   - `data/az/retired/John-Giles-5efe53bd-0f33-4ade-a121-271d2da9381b.yml`
-- `justin` `olson`
-  - `data/az/legislature/Justin-Olson-448cb969-a498-4826-ad1e-c443fe9b8057.yml`
-  - `data/az/retired/Justin-Olson-7eb206d9-c5b3-441e-93c2-8b2ba8110a32.yml`
 - `katie` `hobbs`
   - `data/az/executive/Katie-Hobbs-6e522a2a-e7b7-4713-a40f-c897e4341a87.yml`
   - `data/az/retired/Katie-Hobbs-b2e74e17-c184-4a98-921f-0683e513de6c.yml`
@@ -163,18 +154,9 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `reginald` `bolding`
   - `data/az/retired/Reginald-Bolding-97d71f2f-9518-43fa-8076-5a78809563ff.yml`
   - `data/az/retired/Reginald-Bolding-Jr-e7896fe6-b6a8-4fee-99d2-efb539262b7d.yml`
-- `rosanna` `gabaldón`
-  - `data/az/legislature/Rosanna-Gabaldn-6de57177-1b9e-4864-bb87-97c528842030.yml`
-  - `data/az/retired/Rosanna-Gabaldn-6910a81f-2b36-450a-ae79-b7387862ff05.yml`
 - `sarah` `liguori`
   - `data/az/legislature/Sarah-Liguori-99f91f84-b1db-4a48-897a-4f87593357ea.yml`
   - `data/az/retired/Sarah-Liguori-f62fec81-65ec-4893-aa8a-ea6b7c8b8df8.yml`
-- `shawnna` `bolick`
-  - `data/az/legislature/Shawnna-Bolick-355be281-2f88-4108-b894-62c54b67fba3.yml`
-  - `data/az/retired/Shawnna-Bolick-33c76d31-65d6-4072-9d30-c1b292a7bb52.yml`
-- `t.j.` `shope`
-  - `data/az/legislature/Thomas-R-Shope-bde26535-68ee-4eef-bbc8-bfa8a4380015.yml`
-  - `data/az/retired/TJ-Shope-ac99bf33-0875-4723-836c-286476d8725f.yml`
 - `warren` `petersen`
   - `data/az/legislature/Warren-Petersen-66e496a4-a407-4af1-add3-ef6899b89807.yml`
   - `data/az/retired/Warren-Petersen-1bbf0d07-d4d6-4654-b330-8d7f6542e258.yml`
@@ -1453,3 +1435,12 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `nh` `katherine` `prudhomme-o'brien`: consolidated retired (92c01f02) into legislature (a0a8c9d8), deleted retired file
 - `oh` `kyle` `koehler`: consolidated retired (9578948b) into legislature (f2e79c7c), deleted retired file
 - `ca` `chris` `rogers`: same person (Santa Rosa mayor 2020-2022 -> CA Assembly District 2 since 2024); mayor role/office/sources already consolidated into legislature file; corrected given_name back to `Chris` (was mistakenly set to `Christopher`)
+
+### auto-merge-2026-08-27
+
+- `az` `catherine` `miranda`: consolidated retired (cab32a4c) into legislature (6241112b), deleted retired file
+- `az` `david` `gowan`: consolidated retired (96ec9994) into legislature (51520de4), deleted retired file
+- `az` `justin` `olson`: consolidated retired (7eb206d9) into legislature (448cb969), deleted retired file
+- `az` `rosanna` `gabaldón`: consolidated both retired records (4a1331fe, 6910a81f) into legislature (6de57177), deleted retired files
+- `az` `shawnna` `bolick`: consolidated retired (33c76d31) into legislature (355be281), deleted retired file
+- `az` `t.j.` `shope`: consolidated both retired records (ac99bf33, dbab135f) into legislature (bde26535), deleted retired files
