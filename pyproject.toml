@@ -7,7 +7,44 @@ requires-python = ">=3.9"
 dependencies = ["openstates>=6.25.2,<7"]
 
 [dependency-groups]
-dev = ["invoke>=1.5.0,<2"]
+dev = [
+    "invoke>=1.5.0,<2",
+    "ruff>=0.16.5",
+    "ty>=0.0.75",
+]
 
 [tool.uv]
 package = false
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle (Error)
+    "F",    # Pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "C4",   # flake8-comprehensions
+    "RUF",  # Ruff-specific rules
+    "PTH",  # flake8-use-pathlib
+    "ARG",  # flake8-unused-arguments
+    "N",    # pep8-naming
+    "PERF", # Perflint
+    "TRY",  # tryceratops
+    "RET",  # flake8-return
+    "PIE",  # flake8-pie
+    "TID",  # flake8-tidy-imports
+    "S",    # flake8-bandit
+    "BLE",  # flake8-blind-except
+    "A",    # flake8-builtins
+    "ISC",  # flake8-implicit-str-concat
+    "ERA",  # eradicate
+    "W",    # pycodestyle (Warning)
+    "PL",   # Pylint
+]
+
+[tool.ty.environment]
+python-version = "3.9"
