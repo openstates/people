@@ -32,6 +32,14 @@ accomplish the following:
       input if necessary.
     - If the @resolve-lint subagent succeeds, merge the resolved branch into the "auto merge branch" you created
 - Check out your "auto merge branch" and run the lint command to ensure that no lint issues remain for any jurisdiction
+- **Before pushing**, run `uv run python .github/scripts/check_role_dates.py --data-dir data --changed-files
+  $(git diff --name-only origin/main...HEAD -- data)`. PR #4038's review found that the bot has shipped role-date bugs
+  that are only visible once several jurisdictions' branches are bundled together — see the "Checking for known
+  openstates-bot role-date bugs" section of `resolve-lint.md` for the specific incidents. A non-zero exit means a
+  dangling/duplicate role entry slipped through; a "shared end_date" warning means two or more of the jurisdictions
+  you bundled retired someone on the exact same date, which is the fingerprint of a batch date rather than each
+  person's own — verify each one against its own source (per @resolve-lint's "missing legislator" procedure) before
+  trusting it, even though the warning alone won't block your push.
 - Once all open, automated branches have been evaluated and (if necessary) resolved, push your "auto merge branch"
   to github, and open a pull request there. Use this exact structure for the PR body so a human can review a huge
   multi-jurisdiction PR at a glance instead of reading every diff:

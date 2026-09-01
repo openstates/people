@@ -26,6 +26,38 @@ Where the `nc` part of the branch name indicates North Carolina. Changes in this
 If the lint command returns exit code 0, then linting passes and there are no issues. Some output like "no active roles"
 is not a problem as long as linting returns exit code 0.
 
+## Checking for known openstates-bot role-date bugs
+
+Investigation of PR #4038 (`auto-merge-2026-08-27`) found that the automated `automatic-legislators-updates-*`
+branches have twice shipped role-date bugs that pass `os-people lint` cleanly (they're structurally valid, just
+wrong) and were only caught by a human reviewer clicking through sources on the PR:
+
+* **Dangling/duplicate role entries.** The bot has appended a new role instead of editing an existing one in place —
+  producing either a second active role for a seat that already has one (ND: Mike Beltz kept an open-ended role
+  alongside his already-correctly-dated one), or a role whose `end_date` predates its own `start_date` (NH: Charlie
+  St. Clair had a duplicate Belknap 5 entry ending in 2020, before its own 2022 start).
+* **Batched resignation dates.** When retiring several legislators discovered via the same news roundup, the bot
+  has used one shared date for all of them instead of each person's real effective date — NY Gianaris, NC Hanig,
+  and NH St. Clair were all dated 2026-08-26 in the same auto-merge batch, when their actual dates were 2026-08-07,
+  2026-08-24, and 2026-08-22 respectively.
+
+Before working any branch, run:
+
+`uv run python .github/scripts/check_role_dates.py --data-dir data --changed-files <files this branch changed>`
+
+This catches dangling/duplicate role entries deterministically (no web access needed — a role with `end_date` before
+its own `start_date`, or two roles with identical type/jurisdiction/district/start_date, is never valid) and exits
+non-zero if found. It also prints a warning (non-blocking) when two or more of the *changed* files share an
+identical role `end_date` — that pattern is the fingerprint of a batch date rather than a verified one, and is worth
+extra scrutiny even though it doesn't fail the build on its own. When merging several jurisdictions' branches
+together (the `people-merge` workflow), run this across all of them at once — the shared-date bug is invisible from
+inside any single jurisdiction's branch and only shows up once multiple are bundled.
+
+If it reports a dangling/duplicate role, fix it by editing the existing role in place rather than leaving the
+duplicate — check which entry has the plausible, sourced dates and delete the other. If it warns about a shared
+end_date, verify each affected person's date individually per the "missing legislator" procedure below before
+trusting any of them.
+
 ## Verifying governor/executive facts deterministically
 
 If the issue involves a `governor` role (wrong name, wrong party, missing/extra governor), do NOT rely on WebSearch as

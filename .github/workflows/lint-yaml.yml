@@ -12,6 +12,7 @@ on:
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
+      - ".github/scripts/check_role_dates.py"
   pull_request:
     branches:
       - main
@@ -23,6 +24,7 @@ on:
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
+      - ".github/scripts/check_role_dates.py"
 
 jobs:
   lint:
@@ -74,6 +76,11 @@ jobs:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
         uv run python .github/scripts/check_duplicate_people.py --changed-files ${ALL_CHANGED_FILES}
+    - name: check role date integrity selectively
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        uv run python .github/scripts/check_role_dates.py --changed-files ${ALL_CHANGED_FILES}
     - name: lint committees selectively
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
