@@ -4,7 +4,12 @@ given_name: John
 family_name: Giles
 email: mayor@mesaaz.gov
 roles:
-- end_date: '2020-12-31'
+- start_date: '2014-09-18'
+  end_date: '2020-12-31'
+  type: mayor
+  jurisdiction: ocd-jurisdiction/country:us/state:az/place:mesa/government
+- start_date: '2021-01-05'
+  end_date: 2024-12-31
   type: mayor
   jurisdiction: ocd-jurisdiction/country:us/state:az/place:mesa/government
 offices:
@@ -13,5 +18,10 @@ offices:
   voice: 480-644-2388
 links:
 - url: https://www.mesaaz.gov/about-us/contact-us
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/5efe53bd-0f33-4ade-a121-271d2da9381b
 sources:
 - url: https://www.mesaaz.gov/about-us/contact-us
+- url: https://www.mesaaz.gov/government/mayor-council/mayor-john-giles
+- url: https://en.wikipedia.org/wiki/John_Giles_(mayor)
