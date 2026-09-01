@@ -95,12 +95,39 @@ there truly is no current elected legislator. The steps involved are:
    for the jurisdiction + chamber + district number, and looking to see if top, recent results indicate the district is
    indeed vacant. Ballotpedia (ballotpedia.org) is a great source for this, so a good search is often:
    "pennsylvania house district 12 ballotpedia"
-2. Add a new entry to `settings.yml` file to represent this vacancy for the correct jurisdiction, chamber and district.
+
+   Do not take a bot branch's move of a legislator's file into `retired/` as evidence a vacancy is real — an audit of
+   PRs #4020 (MO), #4015 (LA), and several districts in #4022 (NH) found the bot had retired sitting, still-active
+   legislators (e.g. a term-limited incumbent finishing out their term, or someone with no resignation reported
+   anywhere) purely because it stamped the same batch date/roundup article across unrelated people. If your search
+   turns up no independent confirmation this specific person actually resigned/retired — not just that the branch
+   says so — do not add the vacancy or the `end_date`; the file likely needs to move back to `legislature/` instead.
+2. If the vacancy is caused by a resignation/retirement, get the exact effective date from that specific legislator's
+   own bio page (their Ballotpedia page, Wikipedia page, or official chamber bio) — not from a roundup/batch article
+   that lists several resignations together. A batch source's date is often the article's publish date or the date the
+   resignation was *announced*, not the date it took effect, and different legislators named in the same article can
+   have different effective dates. Use that exact date as the retired role's `end_date`. If several legislators are
+   being retired in the same session, verify each one's date individually — do not reuse one date across all of them.
+3. Add a new entry to `settings.yml` file to represent this vacancy for the correct jurisdiction, chamber and district.
    The `vacant_until` value can either be set for the day after a special election (if indicated in web search results)
-   or simply set to 6 months from now.
-3. Re-run the lint command to verify that data issues in this jurisdiction have been resolved.
-4. Commit the change with a message like "NC: vacancy added for district 16"
-5. Push the change back to github
+   or simply set to 6 months from now. Before assuming a special election applies, confirm the jurisdiction actually
+   fills legislative vacancies that way — several states (e.g. NC) fill them by party-recommended governor appointment
+   instead, usually within days, with no special election at all. Don't default to the state's next *general* election
+   date just because it's the nearest date turned up by a search — that date is meaningless for an appointment-filled
+   seat and this has slipped into `settings.yml` before undetected (see PR #4025's second commit, which fixed the
+   `end_date` but left a stale general-election `vacant_until` unexamined).
+
+   Even when a general election genuinely is how the seat gets filled, "day after the election" can still be wrong.
+   Some states bar a special election once a vacancy occurs too close to term's end (e.g. NY Public Officers Law
+   §42(4)(b): no special election for a vacancy after April 1 of a term's final year, absent a special legislative
+   session) — the seat is then filled only by whoever wins the already-scheduled general, and that winner doesn't
+   take office until the new term starts, not the day after election day. Check whether the jurisdiction has a
+   cutoff like this before assuming "day after general" is correct; if the seat stays vacant until the next term
+   begins, use that term-start date instead (see PR #4024's NY fix: `vacant_until` corrected from 2026-11-04 to
+   2027-01-01).
+4. Re-run the lint command to verify that data issues in this jurisdiction have been resolved.
+5. Commit the change with a message like "NC: vacancy added for district 16"
+6. Push the change back to github
 
 ### extra legislator
 
@@ -116,3 +143,25 @@ for this jurisdiction/chamber/district.
 
 Sometimes a value shows up that causes a formatting issue. Often this is a phone number that simply needs to be modified
 to match conventions found in other files in this repository.
+
+### possible duplicate person (two files, same/similar name)
+
+`duplicates.md` or `check_duplicate_people.py` may flag two files as a possible duplicate. Never conclude "two distinct
+people" on the strength of a name match alone, and never conclude it just because two roles have overlapping or
+adjoining dates — a person elected to a new office commonly keeps their old office for days or weeks until a successor
+is sworn in, so an overlap between an outgoing local/prior role's `end_date` and a new role's start is *expected*, not
+evidence of two people. Likewise, do not "resolve" a flagged pair by cosmetically changing one file's `given_name` or
+`other_names` to make the collision go away without first establishing whether it's actually the same person — this
+just hides the duplicate instead of fixing it.
+
+Instead, actively verify identity before deciding either way:
+
+1. WebSearch/WebFetch for a bio (Wikipedia, Ballotpedia, official chamber/office page) covering both roles. Compare
+   `birth_date`, prior career history, and photo/description. If one file lacks a `birth_date`, look it up rather than
+   treating its absence as unresolvable.
+2. If sources confirm it's one person, consolidate into a single file: keep the more complete/senior record (usually
+   the current legislator file), merge in the other file's roles/sources/links, and delete the redundant file. Record
+   the resolution in `duplicates.md` with the sources you used.
+3. Only conclude "two distinct people" when a source explicitly distinguishes them (e.g. two different birth dates, or
+   a bio that clearly describes separate individuals) — record that source in `duplicates.md` too.
+4. Re-run the lint and `check_duplicate_people.py` commands to confirm the resolution.
