@@ -64,9 +64,9 @@ accomplish the following:
 Often, the best approach is to lint ONLY the jurisdictions/directories where we have made changes on the current
 branch. There is a helper script to run for a set of jurisdictions:
 
-`OS_PEOPLE_DIRECTORY=./ bash .github/scripts/lint-multiple.sh az,co,ks,la,md,me,ma,mi,nh,pa --ignore-role-warnings`
+`OS_PEOPLE_DIRECTORY=./ uv run os-people lint az co ks la md me ma mi nh pa --ignore-role-warnings`
 
-Where `az,co,ks,la,md,me,ma,mi,nh,pa` is a comma-separated list of jurisdiction abbreviations to be linted.
+Where `az co ks la md me ma mi nh pa` is a list of jurisdiction abbreviations to be linted.
 
 ### Lint all jurisdictions
 
