@@ -49,24 +49,33 @@ jobs:
       run: uvx yamllint==1.38.0 -s .
     - name: install dependencies
       run: uv sync
-
-#    - name: lint people
-#      run: uv run os-people lint
-#      env:
-#        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
     - name: lint people selectively
       env:
         ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
       run: |
-        for dir in ${ALL_CHANGED_DIRS}; do
-          if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/(legislature|retired|executive|municipalities) ]]; then
-            dir=${BASH_REMATCH[1]}
-            uv run os-people lint "$dir"
-          else
-            echo "$dir contains changes, but ignored for linting people"
+        # settings.yml holds vacancies used to compute every jurisdiction's
+        # expected district counts (see Validator/get_expected_districts in
+        # openstates.utils.people.lint_people). It isn't under data/, so it
+        # never matches the per-dir regex below - a bad vacancy entry there
+        # can hide a real missing/extra-legislator error for a jurisdiction
+        # whose own files didn't change. Lint everything when it changes.
+        if [[ " ${ALL_CHANGED_FILES} " == *" settings.yml "* ]]; then
+          echo "settings.yml changed: linting all jurisdictions"
+          uv run os-people lint
+        else
+          abbrs=()
+          for dir in ${ALL_CHANGED_DIRS}; do
+            if [[ "$dir" =~ ^data/([a-z]{2})/(legislature|retired|executive|municipalities) ]]; then
+              abbrs+=("${BASH_REMATCH[1]}")
+            fi
+          done
+          if [[ ${#abbrs[@]} -gt 0 ]]; then
+            mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
+            uv run os-people lint "${abbrs[@]}"
           fi
-        done
+        fi
     - name: check duplicate people selectively
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
