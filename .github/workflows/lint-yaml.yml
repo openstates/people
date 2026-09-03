@@ -28,29 +28,25 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       # Python & dependency installation
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
 
-    - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c  # v46.0.5
+    - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
       id: changed-dirs
       with:
+        files: data/**
         dir_names: 'true'
-    - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c  # v46.0.5
+    - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
       id: changed-files
-    - name: Yaml file linting
-      run: |
-        docker run --rm \
-        -v $(pwd):/code \
-        registry.gitlab.com/pipeline-components/yamllint:0.34.0 \
-        -s .
     - name: install uv
-      uses: astral-sh/setup-uv@v3
+      uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
       with:
-        python-version: 3.11
         enable-cache: true
+    - name: Yaml file linting
+      run: uvx yamllint==1.38.0 -s .
     - name: install dependencies
       run: uv sync
 
@@ -86,11 +82,13 @@ jobs:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
       run: |
+        abbrs=()
         for dir in ${ALL_CHANGED_DIRS}; do
-          if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/committees ]]; then
-            dir=${BASH_REMATCH[1]}
-            uv run os-committees lint "$dir"
-          else
-            echo "$dir contains changes, but ignored for linting committees"
+          if [[ "$dir" =~ ^data/([a-z]{2})/committees ]]; then
+            abbrs+=("${BASH_REMATCH[1]}")
           fi
         done
+        if [[ ${#abbrs[@]} -gt 0 ]]; then
+          mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
+          uv run os-committees lint "${abbrs[@]}"
+        fi

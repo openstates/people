@@ -7,22 +7,17 @@ on:
 
 jobs:
   update-database:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     # Python & dependency installation
-    - uses: actions/checkout@v3
-    - name: Yaml file linting
-      run: |
-        docker run --rm \
-        -v $(pwd):/code \
-        registry.gitlab.com/pipeline-components/yamllint:latest \
-        -s .
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
     - name: install uv
-      uses: astral-sh/setup-uv@v3
+      uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
       with:
-        python-version: 3.11
         enable-cache: true
+    - name: Yaml file linting
+      run: uvx yamllint==1.38.0 -s .
     - name: install dependencies
       run: uv sync
 
