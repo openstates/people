@@ -3,7 +3,7 @@ name = "ospeople"
 version = "2.0"
 description = ""
 authors = [{ name = "James Turk", email = "dev@jamesturk.net" }]
-requires-python = ">=3.9"
+requires-python = ">=3.13"
 dependencies = ["openstates>=6.25.2,<7"]
 
 [dependency-groups]
@@ -15,9 +15,13 @@ dev = [
 
 [tool.uv]
 package = false
+# textract 1.6.5 (pulled in transitively by openstates<7) pins six~=1.12.0,
+# which breaks on Python 3.12+ (its lazy module loader predates exec_module
+# support, https://github.com/benjaminp/six/issues/517). Force a modern six.
+override-dependencies = ["six>=1.16"]
 
 [tool.ruff]
-target-version = "py39"
+target-version = "py313"
 
 [tool.ruff.lint]
 select = [
@@ -47,4 +51,4 @@ select = [
 ]
 
 [tool.ty.environment]
-python-version = "3.9"
+python-version = "3.13"
