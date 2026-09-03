@@ -1,16 +1,54 @@
-[tool.poetry]
+[project]
 name = "ospeople"
 version = "2.0"
 description = ""
-authors = ["James Turk <dev@jamesturk.net>"]
+authors = [{ name = "James Turk", email = "dev@jamesturk.net" }]
+requires-python = ">=3.13"
+dependencies = ["openstates>=6.25.2,<7"]
 
-[tool.poetry.dependencies]
-python = "^3.9"
-openstates = "^6.25.2"
+[dependency-groups]
+dev = [
+    "invoke>=1.5.0,<2",
+    "ruff>=0.16.5",
+    "ty>=0.0.75",
+]
 
-[tool.poetry.group.dev.dependencies]
-invoke = "^1.5.0"
+[tool.uv]
+package = false
+# textract 1.6.5 (pulled in transitively by openstates<7) pins six~=1.12.0,
+# which breaks on Python 3.12+ (its lazy module loader predates exec_module
+# support, https://github.com/benjaminp/six/issues/517). Force a modern six.
+override-dependencies = ["six>=1.16"]
 
-[build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.core.masonry.api"
+[tool.ruff]
+target-version = "py313"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle (Error)
+    "F",    # Pyflakes
+    "I",    # isort
+    "UP",   # pyupgrade
+    "B",    # flake8-bugbear
+    "SIM",  # flake8-simplify
+    "C4",   # flake8-comprehensions
+    "RUF",  # Ruff-specific rules
+    "PTH",  # flake8-use-pathlib
+    "ARG",  # flake8-unused-arguments
+    "N",    # pep8-naming
+    "PERF", # Perflint
+    "TRY",  # tryceratops
+    "RET",  # flake8-return
+    "PIE",  # flake8-pie
+    "TID",  # flake8-tidy-imports
+    "S",    # flake8-bandit
+    "BLE",  # flake8-blind-except
+    "A",    # flake8-builtins
+    "ISC",  # flake8-implicit-str-concat
+    "ERA",  # eradicate
+    "W",    # pycodestyle (Warning)
+    "PL",   # Pylint
+]
+
+[tool.ty.environment]
+python-version = "3.13"

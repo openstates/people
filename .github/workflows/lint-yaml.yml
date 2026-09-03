@@ -8,10 +8,11 @@ on:
       - "data/**"
       - "settings.yml"
       - ".yamllint"
-      - "poetry.lock"
+      - "uv.lock"
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
+      - ".github/scripts/check_role_dates.py"
   pull_request:
     branches:
       - main
@@ -19,83 +20,84 @@ on:
       - "data/**"
       - "settings.yml"
       - ".yamllint"
-      - "poetry.lock"
+      - "uv.lock"
       - "pyproject.toml"
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
+      - ".github/scripts/check_role_dates.py"
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       # Python & dependency installation
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
 
-    - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c  # v46.0.5
+    - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
       id: changed-dirs
       with:
+        files: data/**
         dir_names: 'true'
-    - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c  # v46.0.5
+    - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
       id: changed-files
+    - name: install uv
+      uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
+      with:
+        enable-cache: true
     - name: Yaml file linting
-      run: |
-        docker run --rm \
-        -v $(pwd):/code \
-        registry.gitlab.com/pipeline-components/yamllint:0.34.0 \
-        -s .
-    - name: setup Python 3.11
-      uses: actions/setup-python@v4
-      with:
-        python-version: 3.11
-    - name: install Poetry
-      uses: snok/install-poetry@v1.4.1
-    - name: cache Poetry virtualenv
-      uses: actions/cache@v3
-      id: cache
-      with:
-        path: ~/.virtualenvs/
-        key: poetry-${{ hashFiles('**/poetry.lock') }}
-        restore-keys: |
-          poetry-${{ hashFiles('**/poetry.lock') }}
-    - name: set poetry config path
-      run: poetry config virtualenvs.path ~/.virtualenvs
+      run: uvx yamllint==1.38.0 -s .
     - name: install dependencies
-      run: poetry install --no-root
-      # if: steps.cache.outputs.cache-hit != 'true'
-
-#    - name: lint people
-#      run: poetry run os-people lint
-#      env:
-#        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+      run: uv sync
     - name: lint people selectively
       env:
         ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
       run: |
-        for dir in ${ALL_CHANGED_DIRS}; do
-          if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/(legislature|retired|executive|municipalities) ]]; then
-            dir=${BASH_REMATCH[1]}
-            poetry run os-people lint "$dir"
-          else
-            echo "$dir contains changes, but ignored for linting people"
+        # settings.yml holds vacancies used to compute every jurisdiction's
+        # expected district counts (see Validator/get_expected_districts in
+        # openstates.utils.people.lint_people). It isn't under data/, so it
+        # never matches the per-dir regex below - a bad vacancy entry there
+        # can hide a real missing/extra-legislator error for a jurisdiction
+        # whose own files didn't change. Lint everything when it changes.
+        if [[ " ${ALL_CHANGED_FILES} " == *" settings.yml "* ]]; then
+          echo "settings.yml changed: linting all jurisdictions"
+          uv run os-people lint
+        else
+          abbrs=()
+          for dir in ${ALL_CHANGED_DIRS}; do
+            if [[ "$dir" =~ ^data/([a-z]{2})/(legislature|retired|executive|municipalities) ]]; then
+              abbrs+=("${BASH_REMATCH[1]}")
+            fi
+          done
+          if [[ ${#abbrs[@]} -gt 0 ]]; then
+            mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
+            uv run os-people lint "${abbrs[@]}"
           fi
-        done
+        fi
     - name: check duplicate people selectively
       env:
         ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
       run: |
-        poetry run python .github/scripts/check_duplicate_people.py --changed-files ${ALL_CHANGED_FILES}
+        uv run python .github/scripts/check_duplicate_people.py --changed-files ${ALL_CHANGED_FILES}
+    - name: check role date integrity selectively
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+      run: |
+        uv run python .github/scripts/check_role_dates.py --changed-files ${ALL_CHANGED_FILES}
     - name: lint committees selectively
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
         ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
       run: |
+        abbrs=()
         for dir in ${ALL_CHANGED_DIRS}; do
-          if [[ "$dir" =~ ^data/(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|pr|ri|sc|sd|tn|tx|us|ut|va|vt|wa|wi|wv|wy)/committees ]]; then
-            dir=${BASH_REMATCH[1]}
-            poetry run os-committees lint "$dir"
-          else
-            echo "$dir contains changes, but ignored for linting committees"
+          if [[ "$dir" =~ ^data/([a-z]{2})/committees ]]; then
+            abbrs+=("${BASH_REMATCH[1]}")
           fi
         done
+        if [[ ${#abbrs[@]} -gt 0 ]]; then
+          mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
+          uv run os-committees lint "${abbrs[@]}"
+        fi

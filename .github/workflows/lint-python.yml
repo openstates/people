@@ -1,0 +1,43 @@
+name: Lint Python
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.py"
+      - "uv.lock"
+      - "pyproject.toml"
+      - ".github/workflows/lint-python.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "**/*.py"
+      - "uv.lock"
+      - "pyproject.toml"
+      - ".github/workflows/lint-python.yml"
+
+jobs:
+  lint:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+
+    - name: install uv
+      uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
+      with:
+        enable-cache: true
+
+    - name: install dependencies
+      run: uv sync
+
+    - name: ruff check
+      run: uv run ruff check .
+
+    - name: ruff format check
+      run: uv run ruff format --check .
+
+    - name: ty check
+      run: uv run ty check .

@@ -32,8 +32,29 @@ accomplish the following:
       input if necessary.
     - If the @resolve-lint subagent succeeds, merge the resolved branch into the "auto merge branch" you created
 - Check out your "auto merge branch" and run the lint command to ensure that no lint issues remain for any jurisdiction
+- **Before pushing**, run `uv run python .github/scripts/check_role_dates.py --data-dir data --changed-files
+  $(git diff --name-only origin/main...HEAD -- data)`. PR #4038's review found that the bot has shipped role-date bugs
+  that are only visible once several jurisdictions' branches are bundled together — see the "Checking for known
+  openstates-bot role-date bugs" section of `resolve-lint.md` for the specific incidents. A non-zero exit means a
+  dangling/duplicate role entry slipped through; a "shared end_date" warning means two or more of the jurisdictions
+  you bundled retired someone on the exact same date, which is the fingerprint of a batch date rather than each
+  person's own — verify each one against its own source (per @resolve-lint's "missing legislator" procedure) before
+  trusting it, even though the warning alone won't block your push.
 - Once all open, automated branches have been evaluated and (if necessary) resolved, push your "auto merge branch"
-  to github, and open a pull request there with a nice summary message of what you and @resolve-lint did.
+  to github, and open a pull request there. Use this exact structure for the PR body so a human can review a huge
+  multi-jurisdiction PR at a glance instead of reading every diff:
+
+  ```
+  ## Jurisdictions merged
+  | Jurisdiction | Source branch | Needed @resolve-lint? | Notes |
+  |---|---|---|---|
+  | nc | automatic-legislators-updates-nc-... | yes | vacancy added, district 16, cited Ballotpedia |
+  | va | People legislators update va-... | no | |
+
+  ## Branches skipped
+  <any non-substantive/out-of-date branches you closed instead of merging, and why>
+  ```
+
 - Finally, report back to the user about the pull request you opened.
 
 ## Lint command to detect data issues
@@ -43,14 +64,14 @@ accomplish the following:
 Often, the best approach is to lint ONLY the jurisdictions/directories where we have made changes on the current
 branch. There is a helper script to run for a set of jurisdictions:
 
-`OS_PEOPLE_DIRECTORY=./ bash .github/scripts/lint-multiple.sh az,co,ks,la,md,me,ma,mi,nh,pa --ignore-role-warnings`
+`OS_PEOPLE_DIRECTORY=./ uv run os-people lint az co ks la md me ma mi nh pa --ignore-role-warnings`
 
-Where `az,co,ks,la,md,me,ma,mi,nh,pa` is a comma-separated list of jurisdiction abbreviations to be linted.
+Where `az co ks la md me ma mi nh pa` is a list of jurisdiction abbreviations to be linted.
 
 ### Lint all jurisdictions
 
 The lint command to lint ALL jurisdictions is:
 
-`OS_PEOPLE_DIRECTORY=./ poetry run os-people lint --ignore-role-warnings`
+`OS_PEOPLE_DIRECTORY=./ uv run os-people lint --ignore-role-warnings`
 
 This will lint the current branch for ALL jurisdictions.
