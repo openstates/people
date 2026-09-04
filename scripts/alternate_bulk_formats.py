@@ -32,6 +32,7 @@ def generate_legislator_json():
                         continue
 
                     print("Processing directory: %s..." % statesub_dir)
+                    place_names = load_place_names(statedir_path)
                     for filepath in glob.glob(os.path.join(statesub_dir, '*.yml')): #for each yaml file in dir
                         yaml_filename = os.path.basename(filepath)
                         print("Converting %s to JSON..." % yaml_filename)
@@ -73,6 +74,13 @@ def generate_legislator_json():
                                     term['start'] = str(role['start_date'])
                                 if 'end_date' in role:
                                     term['end'] = str(role['end_date'])
+                                # Municipal roles carry an OCD jurisdiction instead of a
+                                # district; pass it through with a display name so
+                                # clients can label the seat (e.g. "Mayor • Hawthorne").
+                                if 'jurisdiction' in role:
+                                    term['jurisdiction'] = role['jurisdiction']
+                                    term['place'] = jurisdiction_place_name(
+                                        role['jurisdiction'], place_names)
 
                                 # try to find party
                                 if 'party' in data and len(data['party']) > 0:
@@ -98,6 +106,33 @@ def generate_legislator_json():
                     utils.write(
                         json.dumps(jsonDataList, default=utils.format_datetime, indent=2),
                         json_out_filename)
+
+def load_place_names(statedir_path):
+    """Map OCD jurisdiction ids to display names from <state>/municipalities.yml."""
+    path = os.path.join(statedir_path, 'municipalities.yml')
+    if not os.path.exists(path):
+        return {}
+    try:
+        entries = utils.load_data(path) or []
+    except Exception as e:
+        print("Could not load %s: %s" % (path, e))
+        return {}
+    return {e['id']: e['name'] for e in entries if 'id' in e and 'name' in e}
+
+
+def jurisdiction_place_name(jurisdiction, place_names):
+    """Display name for an OCD jurisdiction id.
+
+    Prefers municipalities.yml; falls back to the `place:` segment of the id
+    (e.g. .../place:los_angeles/government -> "Los Angeles").
+    """
+    if jurisdiction in place_names:
+        return place_names[jurisdiction]
+    for segment in jurisdiction.split('/'):
+        if segment.startswith('place:'):
+            return segment[len('place:'):].replace('_', ' ').title()
+    return None
+
 
 def parse_office_address(office):
 
