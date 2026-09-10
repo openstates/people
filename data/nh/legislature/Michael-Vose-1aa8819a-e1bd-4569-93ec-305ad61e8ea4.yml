@@ -12,7 +12,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 5
-  end_date: 2026-09-09
 - start_date: 2019-10-23
   end_date: 2022-12-06
   type: lower
@@ -31,7 +30,10 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 9
-offices: []
+offices:
+- classification: capitol
+  address: State House 107 N. Main St., Concord, NH 03301
+  voice: 603-271-3661
 links:
 - url: https://gc.nh.gov/house/members/member.aspx?pid=909
 - url: https://gencourt.state.nh.us/downloads/Members.txt
