@@ -11,13 +11,12 @@ for the same reasoning applied to role dates.
 from __future__ import annotations
 
 import argparse
-import shutil
-import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 import yaml
+from _git_base import read_at_base
 
 _PERSON_DIRS = ("executive", "legislature", "municipalities", "retired")
 
@@ -81,22 +80,16 @@ def check_state(data_dir: Path, state: str) -> dict[tuple[str, str], list[Path]]
 def name_at_base(base_ref: str, path: Path) -> tuple[str, str] | None:
     """Return (given_name, family_name) for path at base_ref, or None if absent.
 
-    None also covers an unreadable or unparseable base revision: the group is
-    then treated as new and reported, rather than silently dropped.
+    Renames are followed, so a person moved from `legislature/` to `retired/` is
+    still recognised as the same pre-existing record. None also covers an
+    unparseable base revision: the group is then treated as new and reported,
+    rather than silently dropped.
     """
-    git = shutil.which("git") or "git"
-    # Fixed argv, no shell: base_ref and path are a git ref and a repo path
-    # supplied by the caller (CI passes the event's base SHA), not free text.
-    result = subprocess.run(  # noqa: S603
-        [git, "show", f"{base_ref}:{path.as_posix()}"],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    if result.returncode != 0:
+    content = read_at_base(base_ref, path)
+    if content is None:
         return None
     try:
-        record = yaml.safe_load(result.stdout) or {}
+        record = yaml.safe_load(content) or {}
     except yaml.YAMLError:
         return None
     return normalize(record.get("given_name")), normalize(record.get("family_name"))

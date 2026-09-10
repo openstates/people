@@ -70,14 +70,13 @@ from __future__ import annotations
 
 import argparse
 import datetime
-import shutil
-import subprocess
 import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import NamedTuple
 
 import yaml
+from _git_base import read_at_base
 
 _PERSON_DIRS = ("executive", "legislature", "municipalities", "retired")
 
@@ -383,21 +382,15 @@ def load_base_records(base_ref: str, paths: list[Path]) -> dict[Path, dict]:
     A file the change adds has no base revision, so every finding in it is new and
     correctly reported. An unreadable base revision is treated the same way: the
     check falls back to reporting the finding rather than silently dropping it.
+    Renames are followed, so retiring a person - which moves their file from
+    `legislature/` to `retired/` - does not make their whole history look new.
     """
-    git = shutil.which("git") or "git"
     records: dict[Path, dict] = {}
     for path in paths:
-        # Fixed argv, no shell: base_ref and path are a git ref and a repo path
-        # supplied by the caller (CI passes the event's base SHA), not free text.
-        result = subprocess.run(  # noqa: S603
-            [git, "show", f"{base_ref}:{path.as_posix()}"],
-            capture_output=True,
-            text=True,
-            check=False,
-        )
-        if result.returncode != 0:
+        content = read_at_base(base_ref, path)
+        if content is None:
             continue
-        records[path] = yaml.safe_load(result.stdout) or {}
+        records[path] = yaml.safe_load(content) or {}
     return records
 
 
