@@ -1,0 +1,1146 @@
+# Legal term-start rules, one entry per jurisdiction (directory under data/).
+#
+# This table is the source of truth for term dates. check_terms.py computes the expected
+# date from it, so a review only researches a rule when the entry is missing, unverified,
+# stale (verified more than 2 years ago), or contradicted by a source.
+# A role's end_date is the next term's start (split-term rule), so `start` covers both.
+#
+# legislature:            applies to upper, lower and unicameral (`legislature`) roles
+#   start:  rule (grammar below)          REQUIRED
+#   upper:/lower: {start: ...}            only when a chamber differs
+#   term:   {upper: N, lower: N}          years
+#   vacancy: how a mid-term member's start date is set (oath, certification, ...)
+#   repo:   rule the repo actually uses, only when it differs from `start`
+#   cite:   constitution/statute section  REQUIRED to count as verified
+#   url:    official text of `cite`        REQUIRED to count as verified
+#   verified: YYYY-MM-DD                   date someone read `url` and confirmed `start`
+#   notes:  anything a reviewer must know
+# executive:              governor and other elected statewide offices
+#   same fields, plus
+#   appointed: [role types that are appointed, not elected, in this state]
+#   offices: {<role type>: {start: ..., term: N, cite: ...}}   only when an office differs
+#   previous: [{start: <old rule>, until: YYYY-MM-DD, cite: ...}]  rules replaced by a law
+#             change; `until` is the first day the current rule applies
+#
+# Rule grammar (case-insensitive; check_terms.py --self-test parses every rule here):
+#   election                       general election day (Tue after 1st Mon of Nov)
+#   day after election
+#   <N> days after election        e.g. "15 days after election"
+#   <Nth> <Dow> of <Mon>           e.g. "2nd Mon of Jan"
+#   <Mon> <D>                      e.g. "Jan 3"
+#   <Dow> after <anchor>           first such weekday strictly after the anchor,
+#                                  e.g. "Wed after 1st Mon of Jan", "Mon after Jan 1"
+#   oath | certification | varies  no fixed date: verify per person
+#   [YYYY-MM-DD, ...]              explicit dates, when the law ties the start to an event
+#                                  such as the session convening; dates outside the list are
+#                                  reported off-cycle, so add each new session's date
+# A Jan-Oct date belongs to the year after the election; Nov/Dec to the election year.
+# Role types in use: upper, lower, legislature, governor, lt_governor, attorney general,
+# secretary of state, chief election officer, treasurer, auditor.
+
+ak:
+  legislature:
+    start: 3rd Tue of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: >-
+      governor appoints within 30 days (AS 15.40.320); the term begins when same-party members
+      of the house confirm, or if no confirmation is required, the first day the appointee is
+      present when the legislature meets (AS 15.40.340).
+    cite: AS 24.05.080
+    url: https://www.akleg.gov/basis/statutes.asp#24.05.080
+    verified: 2026-10-07
+    notes: >-
+      Const. art. II sec. 3 sets the 4th Mon of Jan "unless otherwise provided by law"; AS 24.05.080
+      sets the 3rd Tue of Jan. Repo matches 2015-2025 except 2021-01-11 (law: 2021-01-19) and
+      2013-01-28 (law: 2013-01-15).
+  executive:
+    start: 1st Mon of Dec
+    term: 4
+    appointed: [attorney general]
+    vacancy: lt governor succeeds the governor; the AG serves at the governor's pleasure (start = appointment).
+    cite: Alaska Const. art. III secs. 4, 8, 25
+    url: https://ltgov.alaska.gov/information/alaskas-constitution/
+    verified: 2026-10-07
+    notes: Governor and lt governor from noon on the 1st Mon of Dec. No elected SoS. Repo matches.
+al:
+  legislature:
+    start: day after election
+    term: {upper: 4, lower: 4}
+    vacancy: >-
+      governor issues a writ of special election; an unopposed candidate is certified without an
+      election (sec. 46(b)); a seat vacated on or after Oct 1 of the 3rd year stays empty (sec. 46(c)).
+      Start = certification or oath.
+    cite: Ala. Const. 2022 sec. 46
+    url: https://www.legislature.state.al.us/pdf/lsa/proposed-constitution/2022-constitution-statewide.pdf
+    verified: 2026-10-07
+    notes: Repo matches. The url path says "proposed" but it is the text ratified in Nov 2022.
+  executive:
+    start: Mon after 2nd Tue of Jan
+    term: 4
+    vacancy: lt governor succeeds the governor; governor appoints AG, auditor, SoS, treasurer, agriculture commissioner until a successor qualifies (sec. 136).
+    cite: Ala. Const. 2022 sec. 116
+    url: https://www.legislature.state.al.us/pdf/lsa/proposed-constitution/2022-constitution-statewide.pdf
+    verified: 2026-10-07
+    notes: Repo matches.
+ar:
+  legislature:
+    start: varies
+    repo: 2nd Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: governor issues writs of special election (Ark. Const. art. 5 sec. 6); start = certification or oath.
+    notes: >-
+      No fixed date found: art. 5 secs. 2-3 set term lengths and sec. 5(b) the session (2nd Mon of
+      Jan, odd years); Ark. Code 21-1-102 (unofficial 2012 mirror) excepts legislators from its Jan 1
+      rule. Repo uses the convening date.
+  executive:
+    start: varies
+    repo: 2nd Tue of Jan
+    term: 4
+    vacancy: governor appoints SoS, treasurer, auditor, AG for the unexpired term (art. 6 sec. 22); start = appointment.
+    notes: >-
+      Art. 6 sec. 3: the Speaker opens and publishes the votes "during the first week of the session",
+      and installation follows; by custom the 2nd Tue of Jan. Source: SoS "Election Laws of Arkansas and
+      Constitution, 2025 Edition". Cole Jester's 2025-01-01 start is an appointment.
+az:
+  legislature:
+    start: varies
+    repo: 2nd Mon of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: county board of supervisors appoints from 3 same-party nominees (A.R.S. 41-1202); start = appointment/oath.
+    notes: >-
+      No explicit term start found (art. 4 pt. 2 sec. 21 implies the 1st Mon of Jan without stating it).
+      A.R.S. 41-1101 convenes the legislature at noon on the 2nd Mon of Jan, when members take the oath;
+      the repo uses that date.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    vacancy: succession order lt gov, SoS, AG, treasurer, superintendent (art. 5 sec. 6); other vacancies by governor appointment (art. 5 sec. 8).
+    cite: Ariz. Const. art. 5 sec. 1
+    url: https://www.azleg.gov/const/5/1.htm
+    verified: 2026-10-07
+    notes: The lt governor office (Prop 131, 2022) is first elected in 2026. Repo matches.
+ca:
+  legislature:
+    start: 1st Mon of Dec
+    term: {upper: 4, lower: 2}
+    vacancy: special election called by the Governor; start = oath after certification (verify per person)
+    notes: >-
+      Cal. Const. art. IV sec. 2(a)(3): terms "commence on the first Monday in December next
+      following her or his election". Repo matches. Not verified: leginfo.legislature.ca.gov
+      returns 403 to automated fetches; wording from secondary sources.
+  executive:
+    start: Mon after Jan 1
+    term: 4
+    vacancy: Governor nominates and the Legislature confirms (Cal. Const. art. V sec. 5(b)); start = confirmation/oath
+    notes: >-
+      Cal. Const. art. V secs. 2, 11: Governor, Lt Gov, AG, Controller, SoS, Treasurer hold office
+      "from the Monday after January 1 following the election". Repo matches. Not verified: leginfo 403.
+co:
+  legislature:
+    start: [2019-01-04, 2021-01-13, 2023-01-09, 2025-01-08]
+    term: {upper: 4, lower: 2}
+    vacancy: party vacancy committee selects; start = selection/oath (verify per person)
+    cite: Colo. Const. art. V, sec. 7
+    url: https://www.coloradosos.gov/pubs/elections/Initiatives/titleBoard/filings/2023-2024/286Amended.pdf
+    notes: >-
+      Terms begin "on the convening of the first regular session of the general assembly next after
+      their election" (no later than the 2nd Wed of Jan), so the date varies by session; add each
+      new session's convening date to the list. Repo uses these dates. The url is an SOS filing
+      quoting the section; the official constitution (LexisNexis) was not fetched, so unverified.
+  executive:
+    start: 2nd Tue of Jan
+    term: 4
+    vacancy: Lt Gov by Governor nomination confirmed by both houses (art. IV sec. 13); others by Governor appointment
+    notes: >-
+      Colo. Const. art. IV sec. 1 and C.R.S. 1-1-201: 4-year terms "commencing on the second Tuesday
+      of January". Repo matches. Not verified: official text on LexisNexis, not fetched.
+ct:
+  legislature:
+    start: Wed after 1st Mon of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: special election by writ (C.G.S. 9-212 ff.); start = oath after the canvass (verify per person)
+    cite: Conn. Const. art. III, sec. 10
+    url: https://portal.ct.gov/sots/register-manual/section-i/constitution-of-the-state-of-connecticut
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: Wed after 1st Mon of Jan
+    term: 4
+    cite: Conn. Const. art. IV, sec. 2
+    url: https://portal.ct.gov/sots/register-manual/section-i/constitution-of-the-state-of-connecticut
+    verified: 2026-10-07
+    notes: Governor, Lt Gov, Secretary of the State, Treasurer, Comptroller, AG. Repo matches.
+dc:
+  legislature:
+    start: Jan 2
+    term: {legislature: 4}
+    vacancy: >-
+      ward seat: special election; winner takes office on the day the Board certifies the election.
+      At-large seat: party central committee appoints an interim member (start = appointment date)
+      until the special-election winner is certified.
+    cite: D.C. Code sec. 1-204.01
+    url: https://code.dccouncil.gov/us/dc/council/code/sections/1-204.01
+    verified: 2026-10-07
+    notes: Staggered 4-year terms "begin at noon on January 2nd of the year following their election". Repo matches.
+  executive:
+    start: Jan 2
+    term: 4
+    vacancy: special election for the remainder of the term; start = certification/oath (verify per person)
+    cite: D.C. Code sec. 1-204.21
+    url: https://code.dccouncil.gov/us/dc/council/code/sections/1-204.21
+    verified: 2026-10-07
+    notes: Mayor (role type governor). Repo matches.
+de:
+  legislature:
+    start: day after election
+    term: {upper: 4, lower: 2}
+    vacancy: special election by writ of the presiding officer (Governor if not in session); start = day after the special election.
+    cite: Del. Const. art. II, secs. 3(e), 6
+    url: https://delcode.delaware.gov/constitution/constitution-03.html
+    verified: 2026-10-07
+    notes: >-
+      "The terms of Senators and Representatives begin on the day next after their election."
+      Repo matches since 2018. 2011-2015 roles use the 2nd Tue of Jan, which may follow the
+      pre-amendment text (83 Del. Laws c. 351 / 84 Del. Laws c. 18): add it under `previous:`
+      once read; don't "fix" pre-2018 roles before then.
+  executive:
+    start: 3rd Tue of Jan
+    term: 4
+    appointed: [chief election officer]
+    offices:
+      attorney general:
+        start: 1st Tue of Jan
+        cite: Del. Const. art. III, secs. 21, 24
+    cite: Del. Const. art. III, secs. 5, 19, 21, 24
+    url: https://delcode.delaware.gov/constitution/constitution-04.html
+    verified: 2026-10-07
+    notes: >-
+      Governor "4 years from the third Tuesday in January next ensuing"; lt gov same term. AG,
+      treasurer, auditor, insurance commissioner default to the 1st Tue of Jan (sec. 24). The State
+      Election Commissioner (chief election officer) is appointed for 4 years with Senate
+      confirmation (15 Del. C. 301(a)); the roster gives the current term ending 2028-06-30, so
+      terms do not run 4 years from the 2019-06-19 confirmation: each split needs a reappointment
+      or confirmation record.
+fl:
+  legislature:
+    start: election
+    term: {upper: 4, lower: 2}
+    vacancy: filled only by special election; members take office upon election, so start = special election day.
+    cite: Fla. Const. art. III, sec. 15(d)
+    url: https://www.flsenate.gov/Laws/Constitution
+    verified: 2026-10-07
+    notes: Repo matches. Senate terms can be 2 years after redistricting (art. III, sec. 15(a)).
+  executive:
+    start: Tue after 1st Mon of Jan
+    term: 4
+    appointed: [secretary of state]
+    vacancy: >-
+      Governor appoints (art. IV, sec. 1(f)): for the rest of the term if under 28 months remain,
+      otherwise until the Tue after the 1st Mon of Jan following the next general election.
+      Start = appointment date.
+    cite: Fla. Const. art. IV, secs. 5(a), 1(f)
+    url: https://www.flsenate.gov/Laws/Constitution
+    verified: 2026-10-07
+    notes: Governor, lt gov, AG, CFO, agriculture commissioner. SoS serves at the Governor's pleasure (Fla. Stat. 20.10). Repo matches.
+ga:
+  legislature:
+    start: 2nd Mon of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: special election; start = special election date or oath (verify per person).
+    notes: >-
+      Art. III, sec. II, para. V(a): members serve "until the time fixed for the convening of the
+      next General Assembly", which convenes the 2nd Mon of Jan (art. III, sec. IV, para. I). Repo
+      matches. Unverified: read on FindLaw only; sos.ga.gov's PDF returned 403.
+  executive:
+    start: oath
+    term: 4
+    vacancy: >-
+      Lt Gov succeeds the Governor; the Governor appoints to other constitutional offices until a
+      successor is elected. Start = appointment/oath date.
+    notes: >-
+      No fixed date: the Governor-elect is "installed in office at the next session of the General
+      Assembly" (art. V, sec. I, para. II); other officers serve the Governor's term. Inauguration
+      varies (2019-01-14, 2023-01-12). Lt Gov Burt Jones's 2023-01-09 needs a swearing-in source.
+      Unverified: FindLaw only.
+hi:
+  legislature:
+    start: election
+    term: {upper: 4, lower: 2}
+    vacancy: Governor appoints from a party list (art. III, sec. 5; HRS 17-3, not fetched); start = appointment date.
+    cite: Haw. Const. art. III, secs. 4, 5
+    url: https://lrb.hawaii.gov/constitution/
+    verified: 2026-10-07
+    notes: >-
+      "The term of a member of the legislature shall begin on the day of the general election at
+      which elected". Repo matches. Senate terms can be 2 years after reapportionment (art. III, sec. 7).
+  executive:
+    start: 1st Mon of Dec
+    term: 4
+    appointed: [attorney general, chief election officer]
+    cite: Haw. Const. art. V, secs. 1, 2
+    url: https://lrb.hawaii.gov/constitution/
+    verified: 2026-10-07
+    notes: Governor and lt gov. AG appointed with Senate consent; chief election officer appointed by the Elections Commission. Repo matches.
+ia:
+  legislature:
+    start: Jan 2
+    repo: Jan 1
+    term: {upper: 4, lower: 2}
+    vacancy: special election; a vacancy-filler's term "shall commence as soon as the officer has qualified" (Iowa Code 39.8).
+    cite: Iowa Code 39.8
+    url: https://www.legis.iowa.gov/docs/code/39.8.pdf
+    verified: 2026-10-07
+    notes: >-
+      Terms begin "on the first day of January following the election which is not a Sunday or legal
+      holiday"; Jan 1 is always a legal holiday (Iowa Code 1C.1), so Jan 2, or Jan 3 when Jan 2 is a
+      Sunday (next: 2033, which this rule gets wrong). Repo mixed: 2023-01-01 x80, 2023-01-03 x35,
+      2025-01-01 x16, 2025-01-02 x7.
+  executive:
+    start: Tue after 2nd Mon of Jan
+    term: 4
+    offices:
+      attorney general: {start: Jan 2, cite: "Iowa Code 39.8, 39.9"}
+      secretary of state: {start: Jan 2, cite: "Iowa Code 39.8, 39.9"}
+    vacancy: lt governor succeeds the governor; other vacancies by governor appointment, starting when qualified (39.8).
+    cite: Iowa Const. art. IV, sec. 15; Iowa Code 39.8, 39.9
+    url: https://www.legis.iowa.gov/docs/publications/ICNST/402724.pdf
+    verified: 2026-10-07
+    notes: Governor and lt governor "commence on the Tuesday after the second Monday of January"; others use 39.8 (Jan 2).
+id:
+  legislature:
+    start: Dec 1
+    term: {upper: 2, lower: 2}
+    vacancy: governor appoints from the district party committee's nominees (statute not fetched); start = appointment/oath.
+    cite: Idaho Const. art. III, sec. 3
+    url: https://legislature.idaho.gov/statutesrules/idconst/ArtIII/Sect3
+    verified: 2026-10-07
+    notes: Repo matches; older outliers use 2013-01-01 and 2011-01-01.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    vacancy: governor appoints (art. IV sec. 6, not fetched); start = appointment/oath.
+    cite: Idaho Const. art. IV, sec. 1
+    url: https://legislature.idaho.gov/statutesrules/idconst/ArtIV/Sect1
+    verified: 2026-10-07
+    notes: Governor, LG, SoS, controller, treasurer, AG, superintendent. Repo matches.
+il:
+  legislature:
+    start: 2nd Wed of Jan
+    term: {upper: 4-4-2 cycle per decade, lower: 2}
+    vacancy: same-party appointment within 30 days (Const. art. IV sec. 2(d)); start = appointment date.
+    notes: >-
+      No explicit term-start clause; art. IV sec. 5(a) has the General Assembly convene the 2nd Wed of
+      Jan and be "a continuous body during the term", implying the term starts at convening. Repo
+      matches. Unverified: no statute found.
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    appointed: [chief election officer]
+    vacancy: AG/SoS/comptroller/treasurer by governor appointment (art. V sec. 7); an LG vacancy stays vacant.
+    cite: Ill. Const. art. V, sec. 2
+    url: https://lrb.ilga.gov/Commission/lrb/con5.htm
+    verified: 2026-10-07
+    notes: Pritzker end 2027-01-04 should be 2027-01-11; Raoul start 2019-01-15 should be 2019-01-14.
+in:
+  legislature:
+    start: day after election
+    term: {upper: 4, lower: 2}
+    vacancy: party caucus selection (IC 3-13-5, not fetched); start = selection/oath.
+    cite: Ind. Const. art. 4, sec. 3
+    url: https://web.archive.org/web/2014/http://www.in.gov/legislative/ic/code/const/art4.html
+    notes: 'Repo matches. Unverified: archived copy only (iga.in.gov is JS-only).'
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    offices:
+      secretary of state: {start: Jan 1, cite: IC 4-5-1-1}
+    vacancy: governor appoints SoS/AG; an LG vacancy is filled by governor nomination confirmed by the General Assembly.
+    cite: Ind. Const. art. 5, sec. 9; IC 4-6-1-2 (AG)
+    url: https://web.archive.org/web/2013/http://www.in.gov/legislative/ic/code/const/art5.html
+    notes: >-
+      Governor, LG and AG start the 2nd Mon of Jan; SoS "shall take office on January 1". Unverified:
+      archived copies only. Rokita's AG role is not split at 2025-01-13.
+ks:
+  legislature:
+    start: 2nd Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: governor appoints whoever the district party convention selects (K.S.A. 25-3902, 25-3903); start = appointment/oath.
+    cite: Kan. Const. art. 2, sec. 2
+    url: https://www.ksrevisor.gov/kanconst/093_002_0002.html
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    vacancy: governor appoints; start = appointment/oath.
+    cite: Kan. Const. art. 1, sec. 1
+    url: https://www.ksrevisor.gov/kanconst/093_001_0001.html
+    verified: 2026-10-07
+    notes: Governor, lt governor, SoS, AG. Repo matches.
+ky:
+  legislature:
+    start: Jan 1
+    term: {upper: 4, lower: 2}
+    vacancy: special election only (Ky. Const. sec. 152); start = certification/oath.
+    cite: Ky. Const. sec. 30
+    url: https://apps.legislature.ky.gov/Law/Constitution/Constitution/ViewConstitution?rsn=34
+    verified: 2026-10-07
+    notes: '"shall begin upon the first day of January of the year succeeding their election". Repo matches.'
+  executive:
+    start: Tue after Dec 6
+    term: 4
+    offices:
+      attorney general: {start: 1st Mon of Jan, cite: Ky. Const. sec. 91}
+      secretary of state: {start: 1st Mon of Jan, cite: Ky. Const. sec. 91}
+      treasurer: {start: 1st Mon of Jan, cite: Ky. Const. sec. 91}
+      auditor: {start: 1st Mon of Jan, cite: Ky. Const. sec. 91}
+    vacancy: governor appoints to statewide offices until the next election (sec. 152); lt gov succeeds a governor (sec. 82).
+    cite: Ky. Const. secs. 73, 91
+    url: https://apps.legislature.ky.gov/Law/Constitution/Constitution/ViewConstitution?rsn=81
+    verified: 2026-10-07
+    notes: >-
+      Governor and lt governor begin "on the fifth Tuesday succeeding their election" (sec. 73):
+      election day + 35 days, always the Tuesday between Dec 7 and 13. Odd-year elections. Sec. 91
+      officers start the first Monday in January after their election (rsn=99).
+la:
+  legislature:
+    start: 2nd Mon of Jan
+    term: {upper: 4, lower: 4}
+    vacancy: special election only (art. III sec. 4(D)); winner takes office within 30 days of promulgation (art. III sec. 5(B)); start = oath.
+    cite: La. Const. art. III, sec. 5(A); art. IV, sec. 3(A)
+    url: https://legis.la.gov/Legis/Law.aspx?d=206420
+    verified: 2026-10-07
+    notes: Members take office with the statewide officials, noon on the 2nd Mon of Jan. Repo matches.
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    vacancy: special election or succession per art. IV; start = oath.
+    cite: La. Const. art. IV, sec. 3(A)
+    url: https://legis.la.gov/Legis/Law.aspx?d=206439
+    verified: 2026-10-07
+    notes: All elected statewide officers. 2026 bills on election timing were pending, none in force at verification.
+ma:
+  legislature:
+    start: 1st Wed of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: special election; no start date in the constitution, use the oath date.
+    cite: Mass. Const. Amend. art. LXXXII (art. LXIV sec. 1)
+    url: https://malegislature.gov/Laws/Constitution
+    verified: 2026-10-07
+    notes: Repo mostly matches; ~16 roles use 2011-01-01 and some 2013-01-01 (placeholders).
+  executive:
+    start: Thu after 1st Wed of Jan
+    term: 4
+    offices:
+      attorney general: {start: 3rd Wed of Jan}
+      chief election officer: {start: 3rd Wed of Jan}
+      treasurer: {start: 3rd Wed of Jan}
+      auditor: {start: 3rd Wed of Jan}
+    vacancy: governor appoints with the council or the legislature elects, depending on office (not researched); start = appointment/oath.
+    cite: Mass. Const. Amend. art. LXXXII (art. LXIV sec. 1)
+    url: https://malegislature.gov/Laws/Constitution
+    verified: 2026-10-07
+    notes: Governor and lt governor begin noon on the Thursday after the 1st Wed of Jan; secretary (chief election officer), treasurer, AG, auditor on the 3rd Wed of Jan. All elected.
+md:
+  legislature:
+    start: 2nd Wed of Jan
+    term: {upper: 4, lower: 4}
+    vacancy: Governor appoints the party central committee's nominee (Const. Art. III s13); start = appointment/oath.
+    cite: Md. Const. Art. III, s6
+    url: https://msa.maryland.gov/msa/mdmanual/43const/html/03art3.html
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: 3rd Wed of Jan
+    term: 4
+    appointed: [chief election officer]
+    offices:
+      attorney general:
+        start: oath
+        cite: Md. Const. Art. V, s1
+        url: https://msa.maryland.gov/msa/mdmanual/43const/html/05art5.html
+        notes: '"four years from the time of his election and qualification"; repo 2023-01-03 is the oath.'
+    cite: Md. Const. Art. II, s1
+    url: https://msa.maryland.gov/msa/mdmanual/43const/html/02art2.html
+    verified: 2026-10-07
+    notes: Lt governor assumed to share the governor's start (Art. II s1A gives none). Repo matches.
+me:
+  legislature:
+    start: Tue after Nov 29
+    repo: 1st Wed of Dec
+    term: {upper: 2, lower: 2}
+    vacancy: special election (Const. Art. IV Pt.1 s6); start = oath after certification.
+    cite: Me. Const. Art. IV, Pt.1 s2; Pt.2 s1; Pt.3 s1
+    url: https://legislature.maine.gov/ros/LawsOfMaine/App/views/constitution.html
+    verified: 2026-10-07
+    notes: >-
+      AMBIGUOUS: members "hold their office 2 years from the day next preceding the first Wednesday
+      in December" - either that Tuesday or (reading "from" as exclusive) the Wednesday, when the
+      Legislature convenes. Repo uses the Wednesday for 2018-2022 and the Tuesday for 2024. Pick
+      one reading and record it here.
+  executive:
+    start: Wed after 1st Tue of Jan
+    term: 4
+    offices:
+      attorney general: {start: oath, term: 2}
+      secretary of state: {start: oath, term: 2}
+      treasurer: {start: oath, term: 2}
+    cite: Me. Const. Art. V, Pt.1 s2
+    url: https://legislature.maine.gov/ros/LawsOfMaine/App/views/constitution.html
+    verified: 2026-10-07
+    notes: >-
+      Governor 4 years from the Wed after the 1st Tue of Jan. AG, SoS, treasurer are elected by
+      the Legislature by joint ballot for 2-year terms with no fixed start: verify each oath, one
+      role per term (AG Frey's single role spans 4 terms).
+mi:
+  legislature:
+    start: Jan 1
+    term: {upper: 4, lower: 2}
+    vacancy: Governor may call a special election (MCL 168.178, 168.634); start = oath after the canvass.
+    cite: Mich. Const. art. XI s2; MCL 168.173
+    url: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-173
+    verified: 2026-10-07
+    notes: Noon Jan 1 after the election. Repo matches.
+  executive:
+    start: Jan 1
+    term: 4
+    vacancy: Governor appoints to SoS/AG vacancies (art. V s21); start = appointment date.
+    cite: Mich. Const. art. XI s2; MCL 168.79
+    url: https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-Article-XI-2
+    verified: 2026-10-07
+    notes: Repo matches.
+mn:
+  legislature:
+    start: 1st Mon of Jan
+    repo: Tue after 2nd Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: special election (Const. art. IV s4; Minn. Stat. ch. 204D, not fetched); start = oath after canvass.
+    cite: Minn. Const. art. VII s7
+    url: https://www.revisor.mn.gov/constitution/
+    verified: 2026-10-07
+    notes: >-
+      "The official year ... commences on the first Monday in January in each year and all terms
+      of office terminate at that time". The repo uses convening dates instead: Tue after 1st Mon
+      of Jan through 2023, Tue after 2nd Mon of Jan in 2025 (Minn. Stat. 3.011 as amended; amendment
+      date not checked). Decide whether the repo follows the law or convening. Senate terms 2-4-4.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    cite: Minn. Const. art. V s2, s4; art. VII s7
+    url: https://www.revisor.mn.gov/constitution/
+    verified: 2026-10-07
+    notes: Governor, lt governor, SoS, AG, auditor. Repo matches.
+mo:
+  legislature:
+    start: Wed after 1st Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: special election on the governor's writ (Mo. Const. art. III sec. 14; RSMo 21.110); start = oath/seating
+    notes: >-
+      No text found that says when a legislator's term begins; Mo. Const. art. III sec. 20 sets the
+      convening date ("first Wednesday after the first Monday in January following each general
+      election") and members are sworn in that day. Repo matches. Unverified: sec. 20 is a session
+      rule, not a term rule.
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    vacancy: governor appoints to vacant elective offices except lt governor (RSMo 105.030); start = appointment/oath
+    cite: RSMo 26.015 (governor, lt governor); RSMo 27.010 (attorney general)
+    url: https://revisor.mo.gov/main/OneSection.aspx?section=26.015
+    verified: 2026-10-07
+    notes: >-
+      "12:00 noon on the second Monday in January next after their election". No start-date statute
+      found for secretary of state, treasurer or auditor; assumed the same. Repo matches.
+ms:
+  legislature:
+    start: varies
+    repo: Tue after 1st Mon of Jan
+    term: {upper: 4, lower: 4}
+    vacancy: special election; start = oath after certification
+    notes: >-
+      Miss. Const. secs. 34-36 set 4-year terms and the session convening ("Tuesday after the first
+      Monday of January") but not when a term begins; members take the oath on the first day of
+      session. Repo uses the convening date. Odd-year elections.
+      https://www.sos.ms.gov/sites/default/files/publications/Mississippi_Constitution.pdf
+  executive:
+    start: varies
+    repo: Thu after 1st Mon of Jan
+    term: 4
+    offices:
+      governor: {start: varies, repo: Tue after 2nd Mon of Jan}
+    notes: >-
+      Miss. Const. secs. 116, 140 set no start date; a concurrent resolution sets each term's
+      inauguration (2024 SC 501: lt governor and other officials Thursday 2024-01-04; governor the
+      following Tuesday). Each term needs its resolution. Hosemann's end_date 2028-01-11 uses the
+      governor's date; Fitch's 2028-01-06 fits the Thursday pattern.
+mt:
+  legislature:
+    start: 1st Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: >-
+      appointed by the county commissioners (MCA 5-2-402); start = appointment. A senator elected
+      to fill a vacancy starts the day after the election (MCA 5-2-102).
+    cite: Mont. Const. art. V sec. 3; MCA 5-2-102
+    url: https://archive.legmt.gov/bills/mca/title_0050/chapter_0020/part_0010/section_0020/0050-0020-0010-0020.html
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    vacancy: governor appoints (Mont. Const. art. VI sec. 6, not fetched); start = appointment
+    cite: Mont. Const. art. VI sec. 1(2)
+    url: https://archive.legmt.gov/bills/mca/title_0000/article_0060/part_0010/section_0010/0000-0060-0010-0010.html
+    verified: 2026-10-07
+    notes: Governor, lt governor, SoS, AG, superintendent, auditor. Repo matches.
+nc:
+  legislature:
+    start: Jan 1
+    term: {upper: 2, lower: 2}
+    vacancy: governor appoints the party's recommendation (G.S. 163-11, not fetched); start = appointment
+    cite: N.C. Const. art. II sec. 9
+    url: https://www.ncleg.gov/Laws/Constitution/Article2
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: Jan 1
+    term: 4
+    appointed: [chief election officer]
+    vacancy: >-
+      lt governor succeeds the governor (art. III sec. 3); governor appoints to other elective
+      offices until the next election more than 60 days after the vacancy (art. III sec. 7).
+    cite: N.C. Const. art. III secs. 2, 7
+    url: https://www.ncleg.gov/Laws/Constitution/Article3
+    verified: 2026-10-07
+    notes: chief election officer = State Board of Elections executive director, appointed by the board (G.S. 163-26).
+nd:
+  legislature:
+    start: Dec 1
+    term: {upper: 4, lower: 4}
+    vacancy: >-
+      appointed by the party's district committee within 21 days (else the legislative management
+      chairman), NDCC 44-02-03.1; start = appointment date, except a member-elect vacancy runs from Dec 1.
+    cite: N.D. Const. art. IV, secs. 4, 7; NDCC 44-02-03.1
+    url: https://www.ndlegis.gov/constit/a04.pdf
+    verified: 2026-10-07
+    notes: Repo matches. Staggered 4-year terms in both chambers.
+  executive:
+    start: Dec 1
+    previous:
+      - {start: Jan 1, until: 2024-12-01, cite: NDCC 44-01-03}
+    term: 4
+    offices:
+      governor: {start: Dec 15, cite: "N.D. Const. art. V, sec. 5"}
+      lt_governor: {start: Dec 15, cite: "N.D. Const. art. V, sec. 5"}
+    vacancy: governor appoints when no other method is provided (art. V, sec. 8); lt governor succeeds the governor (art. V, sec. 11).
+    cite: N.D. Const. art. V, sec. 5; NDCC 44-01-03, 44-01-03.1
+    url: https://www.ndlegis.gov/cencode/t44c01.pdf
+    verified: 2026-10-07
+    notes: >-
+      NDCC 44-01-03.1 (HB 1235, 2023): AG, SoS, auditor, treasurer and other elected officers
+      qualify Dec 1 after the election, from the 2024 election on; earlier terms began Jan 1.
+      Howe (SoS) and Wrigley (AG) end_date 2027-01-01 should be 2026-12-01.
+ne:
+  legislature:
+    start: varies
+    repo: Wed after 1st Mon of Jan
+    term: {legislature: 4}
+    vacancy: >-
+      governor appoints (Neb. Rev. Stat. 32-566); start = appointment date. Before May 1 of the
+      term's 2nd year the appointee serves until the Tue after the 1st Mon of Jan after the next
+      general election.
+    cite: Neb. Const. art. III, secs. 7, 10; art. XVII, sec. 5; Neb. Rev. Stat. 32-566
+    url: https://nebraskalegislature.gov/laws/articles.php?article=XVII-5
+    notes: >-
+      UNRESOLVED. No explicit legislative term start. Candidates: art. XVII-5 default (Thu after 1st
+      Tue of Jan), art. III-10 session convening (Wed after 1st Mon of Jan, which the repo uses), and
+      the Tuesday implied by 32-566.
+  executive:
+    start: Thu after 1st Tue of Jan
+    term: 4
+    vacancy: governor appoints (Neb. Rev. Stat. 32-567(1)); lt governor succeeds the governor (art. IV, sec. 16).
+    cite: Neb. Const. art. IV, sec. 1; art. XVII, sec. 5
+    url: https://nebraskalegislature.gov/laws/articles.php?article=XVII-5
+    verified: 2026-10-07
+    notes: Governor, lt gov, AG, SoS, auditor, treasurer. Repo matches.
+nh:
+  legislature:
+    start: 1st Wed of Dec
+    term: {upper: 2, lower: 2}
+    vacancy: special election called by the governor and council; start = oath.
+    notes: >-
+      N.H. Const. Pt. II art. 3: the General Court dissolves "at 12:01 A.M. on the first Wednesday
+      of December in even numbered years" and organizes that day. Repo matches; some old entries use
+      2013-01-01. Unverified: official pages returned 403/503.
+  executive:
+    start: varies
+    repo: Thu after 1st Tue of Jan
+    term: 2
+    appointed: [attorney general]
+    offices:
+      secretary of state:
+        start: Wed after 1st Tue of Jan
+        cite: RSA 5:1, II
+        url: https://gc.nh.gov/rsa/html/I/5/5-1.htm
+        notes: Elected by the legislature in joint session.
+    vacancy: Senate president, then House speaker, acts as governor (Pt. II art. 49). AG appointed by governor and council for 4 years (RSA 21-M:3).
+    notes: >-
+      No constitutional or statutory governor term start; inauguration is in practice the day after
+      the canvass (Pt. II art. 42: canvass the Wed after the 1st Tue of Jan). Repo inconsistent
+      (Ayotte starts Thu 2025-01-09, ends Wed 2027-01-06).
+nj:
+  legislature:
+    start: 2nd Tue of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: >-
+      party county committee fills the seat within 35 days (start = selection/oath); a special
+      election at the next general election at least 51 days later fills the unexpired term.
+    cite: N.J. Const. art. IV, sec. I, para. 3; sec. II, paras. 2, 4
+    url: https://www.njleg.gov/constitution
+    verified: 2026-10-07
+    notes: Senate 2-4-4 cycle around the census. Repo matches.
+  executive:
+    start: 3rd Tue of Jan
+    term: 4
+    appointed: [attorney general, secretary of state]
+    vacancy: lt governor succeeds the governor; AG and SoS start on appointment/confirmation.
+    cite: N.J. Const. art. V, sec. I, para. 5; sec. IV, para. 3
+    url: https://www.njleg.gov/constitution
+    verified: 2026-10-07
+    notes: SoS and AG serve during the governor's term. Sherrill (governor) end 2030-01-20 should be 2030-01-15.
+nm:
+  legislature:
+    start: Jan 1
+    term: {upper: 4, lower: 2}
+    vacancy: >-
+      county commission of the county where the vacancy occurs appoints; appointee serves to
+      Dec 31 after the next general election (Const. art. IV sec. 4). Start = appointment/oath date.
+    cite: N.M. Const. art. XX, sec. 3 (as amended 2020, HJR 8)
+    url: https://nmlegis.gov/Sessions/20%20Regular/final/HJR08.PDF
+    verified: 2026-10-07
+    notes: >-
+      art. XX sec. 3(A): term of every state officer "shall commence on the first day of January
+      next after the officer's election". Applies from the 2020 amendment; repo uses Jan 1 since
+      2021. 2013-2019 rows use session-convening dates (3rd Tue of Jan): the pre-2020 rule is not
+      yet researched, so add it under `previous:` before judging those rows.
+  executive:
+    start: Jan 1
+    term: 4
+    vacancy: >-
+      art. XX sec. 3(B): officer elected to fill a vacancy takes office Jan 1 after the election;
+      appointees start on appointment/oath.
+    cite: N.M. Const. art. V, sec. 1; art. XX, sec. 3
+    url: https://nmlegis.gov/Sessions/20%20Regular/final/HJR08.PDF
+    verified: 2026-10-07
+    notes: >-
+      art. V sec. 1 (4-year terms beginning Jan 1 next after election) read only via a search
+      snippet, not the official text; the url is the art. XX sec. 3 text. Repo matches.
+nv:
+  legislature:
+    start: day after election
+    term: {upper: 4, lower: 2}
+    vacancy: >-
+      board of county commissioners appoints a person of the same party (Const. art. 4 sec. 12);
+      start = appointment date.
+    cite: Nev. Const. art. 4, secs. 3, 4
+    url: https://www.leg.state.nv.us/const/nvconst.html
+    verified: 2026-10-07
+    notes: '"term of Office shall be two [four] years from the day next after their election". Repo matches.'
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    vacancy: governor fills vacancies in other offices by appointment; start = appointment/oath date.
+    cite: NRS 223.020, 223.030; Nev. Const. art. 5, secs. 2, 17, 19
+    url: https://www.leg.state.nv.us/nrs/nrs-223.html
+    verified: 2026-10-07
+    notes: >-
+      NRS 223.030: oath "on the 1st Monday of January next succeeding his or her election"; art. 5
+      secs. 17, 19 give lt gov, SoS, treasurer, controller and AG the governor's term. Repo matches.
+ny:
+  legislature:
+    start: Jan 1
+    term: {upper: 2, lower: 2}
+    vacancy: >-
+      filled by special election (no appointment); start = certification/oath after the special
+      election. Statute not fetched.
+    cite: N.Y. Const. art. XIII, sec. 4; art. III, sec. 2
+    url: https://www.nysenate.gov/legislation/laws/CNS/A13S4
+    verified: 2026-10-07
+    notes: >-
+      "The political year and legislative term shall begin on the first day of January". Repo
+      mostly Jan 1; 2017-01-04, 2019-01-02 and 2021-01-06 rows do not match the rule.
+  executive:
+    start: Jan 1
+    term: 4
+    appointed: [chief election officer]
+    vacancy: lt gov succeeds the governor; the governor appoints a lt gov; start = succession/oath date.
+    cite: N.Y. Const. art. XIII, sec. 4; art. IV, sec. 1
+    url: https://www.nysenate.gov/legislation/laws/CNS/A13S4
+    verified: 2026-10-07
+    notes: >-
+      chief election officer = State Board of Elections co-chair, appointed (terms not researched).
+      Repo matches.
+oh:
+  legislature:
+    start: Jan 1
+    term: {upper: 4, lower: 2}
+    vacancy: >-
+      elected by resolution of the same-party members of the chamber; start = oath on presenting
+      the SoS certificate. A senate appointee in the first 20 months serves only to Dec 31 after
+      the next even-year general election.
+    cite: Ohio Const. art. II, secs. 2, 11
+    url: https://codes.ohio.gov/ohio-constitution/section-2.2
+    verified: 2026-10-07
+    notes: Repo matches; mid-year dates are appointments.
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    vacancy: governor appoints (lt gov needs legislative confirmation); start = appointment/oath date.
+    cite: Ohio Const. art. III, sec. 2
+    url: https://codes.ohio.gov/ohio-constitution/section-3.2
+    verified: 2026-10-07
+    notes: Governor, lt gov, SoS, treasurer, AG, auditor. Repo matches.
+ok:
+  legislature:
+    start: 15 days after election
+    term: {upper: 4, lower: 2}
+    vacancy: special election winner assumes office "upon the certification of the election by the State Election Board" (26 O.S. 12-109).
+    cite: 14 O.S. 80.35.14 (Senate); 14 O.S. 145 (House)
+    url: https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=488763
+    verified: 2026-10-07
+    notes: >-
+      Terms run from "the fifteenth day succeeding the General Election". Repo matches 2014/2016/2022/2024
+      but uses 2018-11-16 and 2020-11-16 where the law gives 2018-11-21 and 2020-11-18.
+  executive:
+    start: 2nd Mon of Jan
+    term: 4
+    appointed: [chief election officer]
+    cite: Okla. Const. art. VI sec. 4(A)
+    url: https://www.oscn.net/applications/oscn/DeliverDocument.asp?CiteID=84915
+    verified: 2026-10-07
+    notes: Governor, LG, auditor, AG, treasurer, labor commissioner, superintendent. Chief election officer = Secretary of the State Election Board (26 O.S. 2-101.6).
+or:
+  legislature:
+    start: 2nd Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: same-party appointment (ORS 171.051); start = appointment/oath.
+    cite: Or. Const. art. IV sec. 4(1)
+    url: https://www.oregonlegislature.gov/bills_laws/Pages/OrConst.aspx
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    offices:
+      governor:
+        start: varies
+        repo: 2nd Mon of Jan
+        cite: ORS 176.010; Or. Const. art. V sec. 1
+        url: https://www.oregonlegislature.gov/bills_laws/ors/ors176.html
+        notes: Term "shall commence upon the publication of the returns by the Speaker of the House", an event; the repo uses the 2nd Mon of Jan.
+    cite: Or. Const. art. II sec. 14; ORS 180.020
+    url: https://www.oregonlegislature.gov/bills_laws/Pages/OrConst.aspx
+    verified: 2026-10-07
+    notes: All officers except the governor start the 1st Mon of Jan. AG Rayfield's 2024-12-31 start is an early vacancy appointment (ORS 180.040).
+pa:
+  legislature:
+    start: Dec 1
+    term: {upper: 4, lower: 2}
+    vacancy: special election by writ of the presiding officer (art. II sec. 2); start = certification/oath.
+    cite: Pa. Const. art. II secs. 2-3
+    url: https://www.palegis.us/statutes/consolidated/view-statute?70&iFrame=true&txtType=HTM&ttl=00&div=0&chpt=2
+    verified: 2026-10-07
+    notes: Repo matches since 2016; older roles use session-convening dates (2009-01-06, 2013-01-01, 2015-01-06).
+  executive:
+    start: 3rd Tue of Jan
+    term: 4
+    appointed: [secretary of state]
+    cite: Pa. Const. art. IV secs. 3, 4, 4.1
+    url: https://www.palegis.us/statutes/consolidated/view-statute?70&iFrame=true&txtType=HTM&ttl=00&div=0&chpt=4
+    verified: 2026-10-07
+    notes: Governor, LG, AG (AG elected on the 2024/2028 cycle). Secretary of the Commonwealth appointed (art. IV sec. 8).
+pr:
+  legislature:
+    start: Jan 2
+    term: {upper: 4, lower: 4}
+    vacancy: >-
+      art. III sec. 8: special election for district seats vacated more than 15 months before the
+      general election; interim appointees and at-large seats filled by the chamber president on the
+      party's proposal. Start = appointment, certification or oath.
+    cite: P.R. Const. art. III sec. 8
+    url: https://presupuesto.pr.gov/presupuesto_aprobado_2012-2013/PresupuestoRecomendado2013/suppdocs/baselegal/081/081a.pdf
+    verified: 2026-10-07
+    notes: Repo mostly matches; 5 roles use 2025-01-01.
+  executive:
+    start: Jan 2
+    term: 4
+    appointed: [chief election officer]
+    cite: P.R. Const. art. IV sec. 2
+    url: https://presupuesto.pr.gov/presupuesto_aprobado_2012-2013/PresupuestoRecomendado2013/suppdocs/baselegal/081/081a.pdf
+    verified: 2026-10-07
+    notes: A governor vacancy passes to the Secretary of State (art. IV sec. 7).
+ri:
+  legislature:
+    start: 1st Tue of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: special election; start = oath/certification. Statute not read.
+    cite: R.I. Const. art. IV, sec. 1
+    url: https://www.rilegislature.gov/riconstitution/Constitution/C04.aspx
+    verified: 2026-10-07
+    notes: '"hold office for two (2) years from the first Tuesday of January next succeeding their election". Repo matches.'
+  executive:
+    start: 1st Tue of Jan
+    term: 4
+    vacancy: lt governor succeeds the governor (art. IX sec. 9); other vacancies not covered by art. IX (lt gov was filled by appointment in 2021, source not read).
+    cite: R.I. Const. art. IV, sec. 1
+    url: https://www.rilegislature.gov/riconstitution/Constitution/C04.aspx
+    verified: 2026-10-07
+    notes: Governor, lt governor, SoS, AG, general treasurer. Repo matches.
+sc:
+  legislature:
+    start: Mon after election
+    term: {upper: 4, lower: 2}
+    vacancy: special election by writ of the Senate President or House Speaker (art. III sec. 25); start = oath/certification.
+    cite: S.C. Const. art. III, sec. 10
+    url: https://www.scstatehouse.gov/scconstitution/A03.pdf
+    verified: 2026-10-07
+    notes: '"shall begin on the Monday following such election". Repo matches.'
+  executive:
+    start: Wed after 2nd Tue of Jan
+    term: 4
+    appointed: [chief election officer]
+    vacancy: lt gov becomes governor (art. IV secs. 6-7); others by oath.
+    cite: S.C. Const. art. IV, secs. 4, 8; art. VI, sec. 7
+    url: https://www.scstatehouse.gov/scconstitution/A04.pdf
+    verified: 2026-10-07
+    notes: >-
+      Governor "at noon on the first Wednesday following the second Tuesday in January"; lt gov,
+      SoS, AG, treasurer, comptroller coterminous. Chief election officer = State Election
+      Commission executive director, appointed with Senate consent, 4-year renewable term, no fixed
+      calendar start (S.C. Code 7-3-20).
+sd:
+  legislature:
+    start: 1st Mon of Jan
+    repo: 2nd Tue of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: Governor appoints (S.D. Const. art. III sec. 10); start = appointment/oath.
+    notes: >-
+      UNVERIFIED. The constitution sets 2-year terms and a 2nd-Tue-of-Jan convening (art. III secs.
+      6, 7) but no term start. SDCL 3-1-2 has state officers enter office the first Monday of
+      January "or within twenty days thereafter"; nothing found applying it to legislators. Repo
+      uses the convening date.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    vacancy: >-
+      Lt gov succeeds the governor; a lt gov nominee "shall take office upon confirmation" by both
+      houses (art. IV sec. 6), so start = confirmation. Others by appointment (SDCL 3-4-3, not fully read).
+    cite: SDCL 3-1-2
+    url: https://sdlegislature.gov/Statutes/3-1-2
+    verified: 2026-10-07
+    notes: >-
+      1st Mon of Jan "or within twenty days thereafter"; a state officer may also qualify on the
+      Saturday before the 2nd Tuesday of January (Sat after 1st Tue of Jan; Noem 2019, 2023). Repo
+      uses the Monday.
+tn:
+  legislature:
+    start: election
+    term: {upper: 4, lower: 2}
+    vacancy: county legislative body appoints an interim successor until a special election (art. II sec. 15, not read); start = appointment.
+    cite: Tenn. Const. art. II, sec. 3
+    url: https://www.tn.gov/content/dam/tn/attorneygeneral/documents/ops/2008/op08-173.pdf
+    verified: 2026-10-07
+    notes: >-
+      "from the day of the general election". The url is a TN AG opinion quoting the section; the
+      official constitution sites returned 403. Repo matches.
+  executive:
+    start: Sat after Jan 14
+    term: 4
+    appointed: [attorney general, secretary of state]
+    vacancy: Speaker of the Senate (lt gov) succeeds the governor; start = oath.
+    notes: >-
+      UNVERIFIED (TN code sites blocked): TCA 8-1-101 reportedly has the governor take the oath "on
+      the first Saturday following the fourteenth day of January". Repo matches. AG appointed by the
+      Supreme Court for 8 years (art. VI sec. 5; current term from 2022-09-01). SoS elected by the
+      General Assembly for 4 years (art. III sec. 17), in practice at the January joint convention
+      of odd years.
+tx:
+  legislature:
+    start: 2nd Tue of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: special election (Tex. Const. art. III, sec. 13, not fetched); start = oath after the canvass.
+    cite: Tex. Const. art. III, secs. 3-4; Tex. Gov't Code 301.001
+    url: https://tcss.legis.texas.gov/resources/CN/htm/CN.3.htm
+    verified: 2026-10-07
+    notes: >-
+      Members take office on the day set by law for convening the regular session; Gov't Code
+      301.001 sets noon on the 2nd Tue of Jan of odd years. Repo matches.
+  executive:
+    start: Tue after 2nd Tue of Jan
+    appointed: [secretary of state]
+    offices:
+      attorney general:
+        start: Jan 1
+        repo: oath
+        cite: Tex. Gov't Code 601.003(a); Tex. Const. art. IV, sec. 23
+        url: https://tcss.legis.texas.gov/resources/GV/htm/GV.601.htm
+        notes: AG term begins Jan 1 by statute; the repo uses the oath date (Paxton 2015-01-05).
+    vacancy: >-
+      LG becomes governor for the rest of the term (art. IV, sec. 16(d)). A person elected to an
+      unexpired term takes office on receiving the certificate of election (Gov't Code 601.004).
+    cite: Tex. Const. art. IV, secs. 4, 16(a)
+    url: https://tcss.legis.texas.gov/resources/CN/htm/CN.4.htm
+    verified: 2026-10-07
+    notes: >-
+      Governor installed "on the first Tuesday after the organization of the Legislature"; LG serves
+      the same term. SoS is appointed and serves during the governor's term.
+us:
+  legislature:
+    start: Jan 3
+    term: {upper: 6, lower: 2}
+    vacancy: >-
+      House: 'special election (art. I, sec. 2, cl. 4). Senate: governor''s temporary appointment'
+      where state law allows, or special election (amend. XVII). Start = oath date.
+    cite: U.S. Const. amend. XX, sec. 1
+    url: https://www.archives.gov/founding-docs/amendments-11-27
+    verified: 2026-10-07
+    notes: >-
+      Repo uses Jan 3 for 2013 and 2017-2025, but the convening date for some older Congresses
+      (2015-01-06, 2011-01-05, 2009-01-06, ...). The legal start is Jan 3.
+ut:
+  legislature:
+    start: Jan 1
+    term: {upper: 4, lower: 2}
+    vacancy: governor appoints from the party's nominees (Const. art. VI, sec. 13, not fetched); start = appointment/oath.
+    cite: Utah Const. art. VI, secs. 3(2), 4(2)
+    url: https://le.utah.gov/xcode/ArticleVI/UC_AVI_S3_1800010118000101.html
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    vacancy: governor appoints for auditor, treasurer, AG from the same party (art. VII, sec. 10(2)); start = appointment/oath.
+    cite: Utah Const. art. VII, sec. 1(2)(a)
+    url: https://le.utah.gov/xcode/ArticleVII/UC_AVII_S1_1800010118000101.html
+    verified: 2026-10-07
+    notes: Governor, LG, auditor, treasurer, AG. Derek Brown's AG start 2025-01-07 vs legal 2025-01-06.
+va:
+  legislature:
+    start: 2nd Wed of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: special election by writ (Va. Code 24.2-216); start = qualification/oath after certification.
+    cite: Va. Code 24.2-214, 24.2-215
+    url: https://law.lis.virginia.gov/vacodefull/title24.2/chapter2/article4/
+    verified: 2026-10-07
+    notes: Odd-year elections. Repo matches.
+  executive:
+    start: Sat after 2nd Wed of Jan
+    term: 4
+    appointed: [chief election officer]
+    vacancy: >-
+      LG succeeds the governor (24.2-211); LG vacancy not filled (24.2-212); AG elected by the General
+      Assembly or interim appointment (24.2-213).
+    cite: Va. Const. art. V, sec. 1; Va. Code 24.2-210
+    url: https://law.lis.virginia.gov/vacodefull/title24.2/chapter2/article3/
+    verified: 2026-10-07
+    notes: >-
+      Commissioner of Elections (chief election officer) is appointed with General Assembly
+      confirmation for 4 years beginning July 1 of the year after a gubernatorial election
+      (Va. Code 24.2-102(B)).
+vt:
+  legislature:
+    start: Wed after 1st Mon of Jan
+    term: {upper: 2, lower: 2}
+    vacancy: Governor appoints for the unexpired term (17 V.S.A. 2622-2623, not fetched); start = appointment/oath.
+    cite: Vt. Const. ch. II sec. 46
+    url: https://legislature.vermont.gov/statutes/constitution-of-the-state-of-vermont/
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: oath
+    repo: Thu after 1st Mon of Jan
+    term: 2
+    vacancy: Governor appoints the Treasurer "for the time being" (ch. II sec. 24); others by statute (17 V.S.A. 2623, not fetched).
+    cite: Vt. Const. ch. II sec. 49
+    url: https://legislature.vermont.gov/statutes/constitution-of-the-state-of-vermont/
+    verified: 2026-10-07
+    notes: >-
+      Terms "commence when they shall be chosen and qualified" (no fixed date); inauguration follows
+      the canvass, which the repo records as the Thursday after the 1st Mon of Jan.
+wa:
+  legislature:
+    start: 2nd Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: county legislative authority appoints one of 3 same-party nominees (Const. art. II sec. 15); successor elected at the next general election starts when qualified (RCW 42.12.040, 29A.04.133).
+    cite: RCW 44.04.021
+    url: https://app.leg.wa.gov/RCW/default.aspx?cite=44.04.021
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: Wed after 2nd Mon of Jan
+    repo: 2nd Mon of Jan
+    term: 4
+    vacancy: governor appoints until a successor is elected at the next general election (RCW 42.12.040).
+    cite: RCW 43.01.010
+    url: https://app.leg.wa.gov/RCW/default.aspx?cite=43.01.010
+    verified: 2026-10-07
+    notes: >-
+      Const. art. III sec. 4 says 2nd Mon of Jan "until otherwise provided by law"; RCW 43.01.010 sets
+      the Wednesday after. Repo is inconsistent, mostly the 2nd Mon; Ferguson's 2025-01-09 start /
+      2028-12-30 end and Hobbs's 2029-01-01 end match neither.
+wi:
+  legislature:
+    start: varies
+    repo: 1st Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: special election called by the governor (Wis. Stat. 8.50); start = oath after certification.
+    cite: Wis. Stat. 13.02(1)
+    url: https://docs.legis.wisconsin.gov/statutes/statutes/13/i/02
+    verified: 2026-10-07
+    notes: >-
+      GRAMMAR GAP: convenes and takes the oath "on the first Monday of January in each odd-numbered
+      year ... but if the first Monday of January falls on January 1 or 2, ... on January 3". Repo
+      2023-01-03 follows the exception; 2017-01-02 does not (statute gives 2017-01-03).
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    appointed: [chief election officer]
+    cite: Wis. Stat. 8.25(4)(b)2
+    url: https://docs.legis.wisconsin.gov/document/statutes/8.25(4)
+    verified: 2026-10-07
+    notes: >-
+      Gov, lt gov, SoS, treasurer, AG. Chief election officer = Elections Commission administrator,
+      appointed with Senate consent for 4 years "expiring on July 1 of the odd-numbered year" (15.61).
+wv:
+  legislature:
+    start: Dec 1
+    term: {upper: 4, lower: 2}
+    vacancy: appointment by general law (governor, from a party list) until a successor elected at the next general election qualifies.
+    cite: W. Va. Const. art. IV sec. 7
+    url: https://www.wvlegislature.gov/WVCODE/WV_CON.cfm
+    verified: 2026-10-07
+    notes: Repo matches.
+  executive:
+    start: Mon after 2nd Wed of Jan
+    term: 4
+    vacancy: governor appoints SoS/auditor/treasurer/agriculture commissioner/AG until a successor is elected and qualified (art. VII sec. 17).
+    cite: W. Va. Const. art. VII sec. 1
+    url: https://www.wvlegislature.gov/WVCODE/WV_CON.cfm
+    verified: 2026-10-07
+    notes: Repo matches.
+wy:
+  legislature:
+    start: 1st Mon of Jan
+    term: {upper: 4, lower: 2}
+    vacancy: county commissioners appoint until a successor elected at the next general election takes office the 1st Mon of the following January (W.S. 22-18-111).
+    cite: W.S. 22-2-107
+    url: https://wyoleg.gov/statutes/compress/title22.pdf
+    verified: 2026-10-07
+    notes: Repo matches except 2013-01-08 (rule gives 2013-01-07).
+  executive:
+    start: 1st Mon of Jan
+    term: 4
+    appointed: [attorney general]
+    vacancy: temporary appointment until a successor elected at the next general election takes office (W.S. 22-18-111).
+    cite: W.S. 22-2-107
+    url: https://wyoleg.gov/statutes/compress/title22.pdf
+    verified: 2026-10-07
+    notes: AG appointed by the governor with Senate consent, serves at pleasure (W.S. 9-1-601). Repo matches.
