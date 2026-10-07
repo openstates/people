@@ -43,6 +43,12 @@ jobs:
         dir_names: 'true'
     - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
       id: changed-files
+      with:
+        # A big change (e.g. a repo-wide cleanup touching thousands of files)
+        # overflows Linux's 128KB limit on a single env var, so steps read the
+        # list from this file instead of the step output.
+        write_output_files: 'true'
+        output_dir: .github/outputs
     - name: install uv
       uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
       with:
@@ -54,7 +60,6 @@ jobs:
     - name: lint people selectively
       env:
         ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
       run: |
         # settings.yml holds vacancies used to compute every jurisdiction's
@@ -63,6 +68,7 @@ jobs:
         # never matches the per-dir regex below - a bad vacancy entry there
         # can hide a real missing/extra-legislator error for a jurisdiction
         # whose own files didn't change. Lint everything when it changes.
+        ALL_CHANGED_FILES=$(cat .github/outputs/all_changed_files.txt)
         if [[ " ${ALL_CHANGED_FILES} " == *" settings.yml "* ]]; then
           echo "settings.yml changed: linting all jurisdictions"
           uv run os-people lint
@@ -104,27 +110,24 @@ jobs:
         echo "base-args=" >> "${GITHUB_OUTPUT}"
     - name: check duplicate people selectively
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         BASE_ARGS: ${{ steps.base.outputs.base-args }}
       run: |
         uv run python .github/scripts/check_duplicate_people.py \
-          --changed-files ${ALL_CHANGED_FILES} ${BASE_ARGS}
+          --changed-files $(cat .github/outputs/all_changed_files.txt) ${BASE_ARGS}
     - name: check role date integrity selectively
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         BASE_ARGS: ${{ steps.base.outputs.base-args }}
       run: |
         uv run python .github/scripts/check_role_dates.py \
-          --changed-files ${ALL_CHANGED_FILES} ${BASE_ARGS}
+          --changed-files $(cat .github/outputs/all_changed_files.txt) ${BASE_ARGS}
     - name: check new URLs are live
       env:
-        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         BASE_ARGS: ${{ steps.base.outputs.base-args }}
       run: |
         # Requests only URLs this change added or changed; fails on 404/410 or
         # a domain that no longer exists, warns on anything inconclusive.
         uv run python .github/scripts/check_links.py \
-          --changed-files ${ALL_CHANGED_FILES} ${BASE_ARGS}
+          --changed-files $(cat .github/outputs/all_changed_files.txt) ${BASE_ARGS}
     - name: lint committees selectively
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
