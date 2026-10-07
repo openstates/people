@@ -1203,9 +1203,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `andy` `berke`
   - `data/tn/retired/Andy-Berke--67cedf87-0c2a-474e-80d7-b5e00b8bc7a0.yml`
   - `data/tn/retired/Andy-Berke-6e5d5734-beb1-4381-809d-08c6859c3ce3.yml`
-- `joe` `pitts`
-  - `data/tn/retired/Joe-Pitts-273de6b0-a4bc-4446-b186-fa15ef29976e.yml`
-  - `data/tn/retired/Joe-Pitts-5ad978f9-94c7-4263-9e70-bfcb4384ec0e.yml`
 - `kevin` `brooks`
   - `data/tn/retired/Kevin-Brooks-a77f1dbe-8a0b-48c8-af73-c4b45a2ad865.yml`
   - `data/tn/retired/Kevin-Brooks-eb0e4e6d-5f9c-40fb-b722-8a4a9a6a9f50.yml`
@@ -1418,3 +1415,7 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `az` `regina` `cobb`: consolidated retired dupe into `55cdd789`
 - `az` `reginald` `bolding`: consolidated retired dupe into `97d71f2f`
 - `az` `sarah` `liguori`: consolidated retired dupe into legislature `99f91f84`
+
+### mayors-september-10
+
+- `tn` `joe` `pitts`: same person (TN House District 67 2007-2018 -> Clarksville mayor since 2019); consolidated retired mayor record (273de6b0) into the legislature record (5ad978f9), moved to municipalities, deleted the mayor file
