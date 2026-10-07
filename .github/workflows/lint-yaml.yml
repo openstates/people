@@ -13,6 +13,7 @@ on:
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
       - ".github/scripts/check_role_dates.py"
+      - ".github/scripts/check_links.py"
   pull_request:
     branches:
       - main
@@ -25,6 +26,7 @@ on:
       - ".github/workflows/lint-yaml.yml"
       - ".github/scripts/check_duplicate_people.py"
       - ".github/scripts/check_role_dates.py"
+      - ".github/scripts/check_links.py"
 
 jobs:
   lint:
@@ -81,7 +83,7 @@ jobs:
       env:
         BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
       run: |
-        # The two checks below report only what this change introduced. Both
+        # The checks below report only what this change introduced. Both
         # describe a bot mistake being made, so a long-standing one in a file
         # the change merely reformats is not this author's to fix - see
         # check_role_dates.py's module docstring. Without a usable base they
@@ -113,6 +115,15 @@ jobs:
         BASE_ARGS: ${{ steps.base.outputs.base-args }}
       run: |
         uv run python .github/scripts/check_role_dates.py \
+          --changed-files ${ALL_CHANGED_FILES} ${BASE_ARGS}
+    - name: check new URLs are live
+      env:
+        ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+        BASE_ARGS: ${{ steps.base.outputs.base-args }}
+      run: |
+        # Requests only URLs this change added or changed; fails on 404/410 or
+        # a domain that no longer exists, warns on anything inconclusive.
+        uv run python .github/scripts/check_links.py \
           --changed-files ${ALL_CHANGED_FILES} ${BASE_ARGS}
     - name: lint committees selectively
       env:
