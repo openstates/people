@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `429`
-- Files involved: `866`
+- Duplicate name groups: `425`
+- Files involved: `858`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -22,9 +22,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `jack` `williams`
   - `data/al/legislature/Jack-W-Williams-a7e333c5-03f2-4343-9981-956bcc1ea38e.yml`
   - `data/al/retired/Jack-Williams-e383fc29-5212-42d3-bc76-46dd93bf3e6f.yml`
-- `john` `merrill`
-  - `data/al/executive/John-Merrill-6a69be8a-7d2c-4291-9d18-a03b7fdfd29d.yml`
-  - `data/al/retired/John-Merrill-5c06e1c9-7b24-4796-94de-eea8651a83f7.yml`
 - `mack` `butler`
   - `data/al/legislature/Mack-Butler-5071243c-3e2d-4acb-ac8d-0d3a8af3eb8a.yml`
   - `data/al/retired/Mack-Butler-76f9d6ad-f147-4913-b011-3f52e1105f77.yml`
@@ -176,9 +173,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `roger` `niello`
   - `data/ca/legislature/Roger-W-Niello-ee85bc79-20ee-4046-905e-ad797995fa41.yml`
   - `data/ca/retired/Roger-Niello-917e90ed-3ac1-4ee9-a143-789ad0cf5e72.yml`
-- `shirley` `weber`
-  - `data/ca/executive/Shirley-Weber-c8e67d27-47c2-4565-8e29-79bc78ae9495.yml`
-  - `data/ca/retired/Shirley-N-Weber-71cfb6c2-577a-4813-8bdf-a1083314c491.yml`
 - `susan m.` `landry`
   - `data/ca/retired/Susan-M-Landry-1c4e63bd-84a8-4196-9395-4a20efe21d7f.yml`
   - `data/ca/retired/Susan-M-Landry-f7853ff4-5f48-49cf-a644-9ee037391e05.yml`
@@ -233,9 +227,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `marilyn` `moore`
   - `data/ct/retired/Marilyn-Moore-8d113751-6123-4181-a3a7-eb5c3c9e70e5.yml`
   - `data/ct/retired/Marilyn-V-Moore-41d83b98-d5ab-48db-b847-3a3e08194b4c.yml`
-- `stephanie` `thomas`
-  - `data/ct/executive/Stephanie-Thomas-e54205b6-c824-4f64-9a68-301d01318457.yml`
-  - `data/ct/retired/Stephanie-Thomas-ea5497d0-5a3b-4dcc-9d13-5d50a586cf2b.yml`
 
 ## dc
 
@@ -345,9 +336,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## ga
 
-- `brad` `raffensperger`
-  - `data/ga/executive/Brad-Raffensperger-02e75ac0-4350-4305-980e-8dc0462c5cc1.yml`
-  - `data/ga/retired/Brad-Raffensperger-1e5d1b04-a659-45b4-9c43-0945df52b1a3.yml`
 - `derrick` `jackson`
   - `data/ga/legislature/Derrick-Jackson-9046fcb2-f3eb-4233-bd92-32c94e60f9df.yml`
   - `data/ga/retired/Derrick-Jackson-9c6d1032-c14f-4b57-90df-eaa1273cc336.yml`
@@ -1418,3 +1406,10 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `az` `regina` `cobb`: consolidated retired dupe into `55cdd789`
 - `az` `reginald` `bolding`: consolidated retired dupe into `97d71f2f`
 - `az` `sarah` `liguori`: consolidated retired dupe into legislature `99f91f84`
+
+### PR #4045
+
+- `al` `john` `merrill`: consolidated executive (6a69be8a) into retired (5c06e1c9), deleted executive file
+- `ca` `shirley` `weber`: consolidated retired (71cfb6c2) into executive (c8e67d27), deleted retired file
+- `ct` `stephanie` `thomas`: consolidated retired (ea5497d0) into executive (e54205b6), deleted retired file
+- `ga` `brad` `raffensperger`: consolidated retired (1e5d1b04) into executive (02e75ac0), deleted retired file
