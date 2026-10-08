@@ -15,8 +15,11 @@ by their identifying fields so an edited role prints as field-level old -> new.
 
 import argparse
 import json
+import re
+import shutil
 import subprocess
 import sys
+from pathlib import Path
 
 import yaml
 
@@ -32,15 +35,17 @@ ITEM_KEYS = {
 
 
 def git(*args):
-    return subprocess.run(["git", *args], capture_output=True, text=True, check=True).stdout
+    exe = shutil.which("git") or "git"
+    return subprocess.run(  # noqa: S603
+        [exe, *args], capture_output=True, text=True, check=True
+    ).stdout
 
 
 def load(ref, path):
     if path is None:
         return {}
     if ref is None:
-        with open(path) as f:
-            return yaml.safe_load(f) or {}
+        return yaml.safe_load(Path(path).read_text()) or {}
     return yaml.safe_load(git("show", f"{ref}:{path}")) or {}
 
 
@@ -49,7 +54,9 @@ def text(value):
         return ""
     if isinstance(value, (dict, list)):
         return json.dumps(value, default=str, sort_keys=True)
-    return " ".join(str(value).split())  # data can hold tabs/newlines; keep the TSV intact
+    return " ".join(
+        str(value).split()
+    )  # data can hold tabs/newlines; keep the TSV intact
 
 
 def pair(field, old_items, new_items):
@@ -63,11 +70,19 @@ def pair(field, old_items, new_items):
     for old in old_left:
         # best partner: the added item sharing the most identifying fields (>= 1)
         scored = [
-            (sum(isinstance(old, dict) and isinstance(n, dict) and old.get(k) == n.get(k) for k in keys), n)
+            (
+                sum(
+                    isinstance(old, dict)
+                    and isinstance(n, dict)
+                    and old.get(k) == n.get(k)
+                    for k in keys
+                ),
+                n,
+            )
             for n in new_left
         ]
         score, new = max(scored, key=lambda s: s[0], default=(0, None))
-        if score == 0:
+        if score == 0 or new is None:
             yield f"{field}[{label(old, keys)}]", old, None
             continue
         new_left.remove(new)
@@ -101,11 +116,15 @@ def is_person(path):
 
 
 def scope_paths(scope):
-    return [f"data/{s}" if len(s) == 2 and s.isalpha() else s for s in scope] or ["data"]
+    paths = [f"data/{s}" if re.fullmatch("[a-z]{2}", s) else s for s in scope]
+    return paths or ["data"]
 
 
 def changed_files(base, scope, every_file=False):
-    """Yield (kind, old_path, new_path) for person files in scope, working tree vs base."""
+    """Yield (kind, old_path, new_path) for person files in scope.
+
+    Compares the working tree with base.
+    """
     paths = scope_paths(scope)
     seen = set()
     for line in git("diff", "--name-status", "-M", base, "--", *paths).splitlines():
@@ -121,7 +140,9 @@ def changed_files(base, scope, every_file=False):
             yield "deleted", names[0], None
         else:
             yield "edited", names[0], names[0]
-    for name in git("ls-files", "--others", "--exclude-standard", "--", *paths).splitlines():
+    for name in git(
+        "ls-files", "--others", "--exclude-standard", "--", *paths
+    ).splitlines():
         if is_person(name):
             seen.add(name)
             yield "added", None, name
@@ -139,14 +160,22 @@ def main():
     args = parser.parse_args()
 
     out = sys.stdout
-    for kind, old_path, new_path in changed_files(args.base, args.scope, args.all and bool(args.scope)):
+    for kind, old_path, new_path in changed_files(
+        args.base, args.scope, args.all and bool(args.scope)
+    ):
         old, new = load(args.base, old_path), load(None, new_path)
         who = text(new.get("name") or old.get("name"))
         path = new_path or old_path
         if kind == "moved":
             out.write(f"{path}\t{who}\tmoved\tpath\t{old_path}\t{new_path}\n")
         for field, a, b in facts(old, new):
-            change = "unchanged" if a == b else kind if kind in ("added", "deleted") else "edited"
+            change = (
+                "unchanged"
+                if a == b
+                else kind
+                if kind in ("added", "deleted")
+                else "edited"
+            )
             if change != "unchanged" or args.all:
                 out.write(f"{path}\t{who}\t{change}\t{field}\t{text(a)}\t{text(b)}\n")
 

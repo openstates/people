@@ -80,9 +80,10 @@ every role date a verdict:
 | `MISMATCH` | within 21 days of the rule date | WRONG unless a source shows a mid-term start that day |
 | `off-cycle` | far from any rule date | research: special election, appointment, resignation, death |
 | `placeholder` | `YYYY-12-31` / `YYYY-01-01` | WRONG; legacy placeholder, never copy it |
+| `departure` | an `end_date` with no later term of the same seat, not on a rule date | research the death/resignation/removal date (official vacancy list first, e.g. clerk.house.gov/Members/ViewVacancies); `expected` is the term end if they served it out |
 | `appointed` | appointed office | research: confirmation or reappointment record per term |
 | `no-rule` | no rule for this state/office | research the rule first (below) |
-| `merged-terms` | a person file has fewer roles of one type than at the base | BLOCKER: restore the split (see the rule below) |
+| `merged-terms` | one role now spans 2+ terms the base had as separate roles (`value`: "N terms -> 1 role"); deleting a duplicate or an overlapping aggregate role doesn't count | BLOCKER: restore the split (see the rule below) |
 
 **Trust a table entry** when it has `cite`, `url` and a `verified` date within the last 2 years:
 then the rule is settled and research covers only the person-specific facts. **Re-verify an
@@ -188,7 +189,7 @@ what was searched in the report and in the commit message. Then run
 | `12-31` / `01-01` dates | Placeholder |
 | Description says "retired X", diff doesn't | Already on main, or missing |
 | `end_date` in the future on a split term | Statutory end; confirm against the official site |
-| Role count for a person+office drops between base and head (two terms merged into one) | BLOCKER. Terms are never combined; restore the split and fix the boundary date instead. `check_terms.py` reports it as `merged-terms` |
+| One role now covers two terms that the base kept separate | BLOCKER. Terms are never combined; restore the split and fix the boundary date instead. `check_terms.py` reports it as `merged-terms` |
 
 ## Common mistakes
 
@@ -196,6 +197,8 @@ what was searched in the report and in the commit message. Then run
   statewide rule, not the legislative one.
 - Computing weekdays by hand. Use `check_terms.py`.
 - Treating Wikipedia/Ballotpedia agreement as VERIFIED for a date. They copy each other.
+- Trusting a congress-legislators departure date without the Clerk's vacancy list: it can be
+  a day off (the posting date, or the day before a death).
 - Reporting pre-existing problems as blockers. They go in section 2.
 - Reading only the summary bullets of the PR description or commit messages.
 - Editing files without `--fix`.
