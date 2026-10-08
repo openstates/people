@@ -9,12 +9,22 @@ image: http://www2.housedems.ct.gov/Comey/images/Comey_HS.jpg
 party:
 - name: Democratic
 roles:
-- start_date: 2019-01-09
+- start_date: 2025-01-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '102'
+- start_date: 2023-01-04
+  end_date: 2025-01-08
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:ct/government
+  district: '102'
+- start_date: 2021-01-06
+  end_date: 2023-01-04
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '102'
 - start_date: 2019-01-09
-  end_date: 2025-01-07
+  end_date: 2021-01-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ct/government
   district: '102'
