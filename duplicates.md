@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `425`
-- Files involved: `858`
+- Duplicate name groups: `424`
+- Files involved: `856`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -1191,9 +1191,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `andy` `berke`
   - `data/tn/retired/Andy-Berke--67cedf87-0c2a-474e-80d7-b5e00b8bc7a0.yml`
   - `data/tn/retired/Andy-Berke-6e5d5734-beb1-4381-809d-08c6859c3ce3.yml`
-- `joe` `pitts`
-  - `data/tn/retired/Joe-Pitts-273de6b0-a4bc-4446-b186-fa15ef29976e.yml`
-  - `data/tn/retired/Joe-Pitts-5ad978f9-94c7-4263-9e70-bfcb4384ec0e.yml`
 - `kevin` `brooks`
   - `data/tn/retired/Kevin-Brooks-a77f1dbe-8a0b-48c8-af73-c4b45a2ad865.yml`
   - `data/tn/retired/Kevin-Brooks-eb0e4e6d-5f9c-40fb-b722-8a4a9a6a9f50.yml`
@@ -1413,3 +1410,7 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `ca` `shirley` `weber`: consolidated retired (71cfb6c2) into executive (c8e67d27), deleted retired file
 - `ct` `stephanie` `thomas`: consolidated retired (ea5497d0) into executive (e54205b6), deleted retired file
 - `ga` `brad` `raffensperger`: consolidated retired (1e5d1b04) into executive (02e75ac0), deleted retired file
+
+### PR #4089
+
+- `tn` `joe` `pitts`: same person (TN House District 67 2007-2018 -> Clarksville mayor since 2019); consolidated retired mayor record (273de6b0) into the legislature record (5ad978f9), moved to municipalities, deleted the mayor file
