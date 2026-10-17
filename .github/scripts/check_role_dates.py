@@ -54,6 +54,16 @@ neither one is a schema violation:
 8. A person filed under `executive/` whose every role has already ended: e.g. DE's
    John Carney was still in `executive/` with his governor role's `end_date` in the
    past, well after Matt Meyer's inauguration - he belonged in `retired/`.
+
+Every check above describes a *bot mistake being introduced*, so the check only
+reports a finding the change under review actually introduced. Given `--base-ref`,
+the same analysis runs twice - once over the base revision of the changed files,
+once over the working-tree revision - and only findings absent from the base are
+reported. Without that, a PR that merely reformats or re-sorts a file (the bot
+rewrites `'2019-01-14'` as `2019-01-14` and re-sorts `links:`, changing no data)
+inherits every long-standing problem in every file it happens to touch, and its
+author is asked to fix history they did not write. Pre-existing findings are
+counted in a single summary line instead, and never block.
 """
 
 from __future__ import annotations
@@ -63,8 +73,10 @@ import datetime
 import sys
 from collections import defaultdict
 from pathlib import Path
+from typing import NamedTuple
 
 import yaml
+from _git_base import read_at_base
 
 _PERSON_DIRS = ("executive", "legislature", "municipalities", "retired")
 
@@ -135,7 +147,15 @@ def check_missing_start_date(record: dict) -> list[str]:
     ]
 
 
-def find_stale_executive_persons(files: list[Path]) -> list[tuple[str, Path, str]]:
+def _person_name(record: dict) -> str:
+    given = record.get("given_name", "")
+    family = record.get("family_name", "")
+    return f"{given} {family}".strip()
+
+
+def find_stale_executive_persons(
+    records: dict[Path, dict],
+) -> list[tuple[str, Path, str]]:
     """Flag executive/ files whose every role has already ended.
 
     Catches DE's John Carney: still filed under executive/ with his governor
@@ -144,24 +164,20 @@ def find_stale_executive_persons(files: list[Path]) -> list[tuple[str, Path, str
     """
     today = str(datetime.date.today())
     flagged: list[tuple[str, Path, str]] = []
-    for path in files:
+    for path, record in records.items():
         if "executive" not in path.parts:
             continue
-        with path.open() as f:
-            record = yaml.safe_load(f) or {}
         roles = record.get("roles") or []
         end_dates = [str(r["end_date"]) for r in roles if r.get("end_date")]
         if roles and end_dates and max(end_dates) < today:
-            given = record.get("given_name", "")
-            family = record.get("family_name", "")
-            flagged.append((f"{given} {family}".strip(), path, max(end_dates)))
+            flagged.append((_person_name(record), path, max(end_dates)))
     return flagged
 
 
 def find_same_seat_retirements(
-    files: list[Path],
+    records: dict[Path, dict],
 ) -> dict[tuple, list[tuple[str, Path]]]:
-    """Group newly-added end_dates by (jurisdiction, type, district) among files.
+    """Group ended roles by (jurisdiction, type, district) among the given files.
 
     Catches issue #1389: a multi-seat district (e.g. a state House district electing
     two members) had both incumbents retired in the same batch because a news item
@@ -169,21 +185,28 @@ def find_same_seat_retirements(
     seat number is normal for a multi-seat district; two people sharing a seat number
     *both being retired in the same change* is the smell - it means the district
     number was matched instead of the departing person's name/identity.
+
+    One person legitimately holds the same seat across consecutive terms, which is
+    two ended roles for one seat in one file and not this bug at all, so each person
+    counts once per seat.
     """
-    by_seat: dict[tuple, list[tuple[str, Path]]] = defaultdict(list)
-    for path in files:
-        with path.open() as f:
-            record = yaml.safe_load(f) or {}
-        name = f"{record.get('given_name', '')} {record.get('family_name', '')}".strip()
+    by_seat: dict[tuple, dict[str, tuple[str, Path]]] = defaultdict(dict)
+    for path, record in records.items():
+        person = str(record.get("id") or path)
+        name = _person_name(record)
         for role in record.get("roles") or []:
             if role.get("end_date"):
                 key = (role.get("jurisdiction"), role.get("type"), role.get("district"))
-                by_seat[key].append((name, path))
-    return {seat: entries for seat, entries in by_seat.items() if len(entries) > 1}
+                by_seat[key][person] = (name, path)
+    return {
+        seat: sorted(people.values(), key=lambda entry: str(entry[1]))
+        for seat, people in by_seat.items()
+        if len(people) > 1
+    }
 
 
 def find_shared_end_dates(
-    files: list[Path],
+    records: dict[Path, dict],
 ) -> dict[str, list[tuple[str, Path]]]:
     """Group role end_dates by date, among only the given (changed) files.
 
@@ -194,17 +217,29 @@ def find_shared_end_dates(
     people retired in the same batch under one shared date - only shows up when
     comparing people who changed together, e.g. in one people-merge run that
     bundles several jurisdictions' bot branches.
+
+    Even within one change, a date already on file for both people is not a batch
+    date this change invented; --base-ref filters those out (see module docstring).
+
+    Placeholder end_dates are skipped: data/us uses 2100-01-01 to mean "no known
+    end", so every congressional file added shares it, and none of them describes
+    a resignation at all.
     """
-    by_date: dict[str, list[tuple[str, Path]]] = defaultdict(list)
-    for path in files:
-        with path.open() as f:
-            record = yaml.safe_load(f) or {}
-        name = f"{record.get('given_name', '')} {record.get('family_name', '')}".strip()
+    # ~10 years out, in days so a leap day can't make this raise.
+    horizon = str(datetime.date.today() + datetime.timedelta(days=3653))
+    by_date: dict[str, dict[str, tuple[str, Path]]] = defaultdict(dict)
+    for path, record in records.items():
+        person = str(record.get("id") or path)
+        name = _person_name(record)
         for role in record.get("roles") or []:
             end = role.get("end_date")
-            if end:
-                by_date[str(end)].append((name, path))
-    return {date: entries for date, entries in by_date.items() if len(entries) > 1}
+            if end and str(end) < horizon:
+                by_date[str(end)][person] = (name, path)
+    return {
+        date: sorted(people.values(), key=lambda entry: str(entry[1]))
+        for date, people in by_date.items()
+        if len(people) > 1
+    }
 
 
 def _normalized(s: str) -> str:
@@ -298,7 +333,7 @@ def _given_name_token(name: str, family: str) -> str | None:
 
 
 def find_repurposed_identities(
-    files: list[Path],
+    records: dict[Path, dict],
 ) -> list[tuple[Path, str, str]]:
     """Flag other_names entries that look like a *different* person's name.
 
@@ -310,9 +345,7 @@ def find_repurposed_identities(
     different person's identity left behind in the file, not a legitimate alias.
     """
     flagged: list[tuple[Path, str, str]] = []
-    for path in files:
-        with path.open() as f:
-            record = yaml.safe_load(f) or {}
+    for path, record in records.items():
         given = (record.get("given_name") or "").strip()
         family = (record.get("family_name") or "").strip()
         if not given or not family:
@@ -334,55 +367,134 @@ def find_repurposed_identities(
     return flagged
 
 
-def print_changed_file_warnings(integrity_targets: list[Path]) -> None:
-    """Print the warning-level (non-blocking) checks that only make sense when
-    scoped to a batch of changed files - see find_shared_end_dates' docstring."""
-    shared = find_shared_end_dates(integrity_targets)
-    for date, entries in sorted(shared.items()):
+def load_record(path: Path) -> dict:
+    with path.open() as f:
+        return yaml.safe_load(f) or {}
+
+
+def load_records(paths: list[Path]) -> dict[Path, dict]:
+    return {path: load_record(path) for path in paths}
+
+
+def load_base_records(base_ref: str, paths: list[Path]) -> dict[Path, dict]:
+    """Load each path as it exists at base_ref, skipping files added by the change.
+
+    A file the change adds has no base revision, so every finding in it is new and
+    correctly reported. An unreadable base revision is treated the same way: the
+    check falls back to reporting the finding rather than silently dropping it.
+    Renames are followed, so retiring a person - which moves their file from
+    `legislature/` to `retired/` - does not make their whole history look new.
+    """
+    records: dict[Path, dict] = {}
+    for path in paths:
+        content = read_at_base(base_ref, path)
+        if content is None:
+            continue
+        records[path] = yaml.safe_load(content) or {}
+    return records
+
+
+class Finding(NamedTuple):
+    """One reported problem, plus a key identifying it across revisions.
+
+    The key must not change when a file is only reformatted, so dates go into it
+    as strings: the bot rewrites `'2019-01-14'` as `2019-01-14`, which YAML loads
+    as a str in one revision and a datetime.date in the other.
+    """
+
+    key: tuple
+    message: str
+    blocking: bool
+
+
+def batch_findings(records: dict[Path, dict]) -> list[Finding]:
+    """The warning-level (non-blocking) checks that only make sense when scoped to a
+    batch of changed files - see find_shared_end_dates' docstring."""
+    findings: list[Finding] = []
+
+    for date, entries in sorted(find_shared_end_dates(records).items()):
         names = ", ".join(f"{name} ({path})" for name, path in entries)
-        print(
-            f"warning: {len(entries)} people have a role end_date of {date}: "
-            f"{names}\n"
-            "  Verify each person's effective date individually against their "
-            "own source - a shared date across unrelated people is often a "
-            "batch/announcement date rather than each person's real one."
+        findings.append(
+            Finding(
+                ("shared-end-date", date, tuple(str(path) for _, path in entries)),
+                f"warning: {len(entries)} people have a role end_date of {date}: "
+                f"{names}\n"
+                "  Verify each person's effective date individually against their "
+                "own source - a shared date across unrelated people is often a "
+                "batch/announcement date rather than each person's real one.",
+                False,
+            )
         )
 
-    same_seat = find_same_seat_retirements(integrity_targets)
+    same_seat = find_same_seat_retirements(records)
     for (jurisdiction, rtype, district), entries in sorted(
         same_seat.items(), key=lambda kv: str(kv[0])
     ):
         names = ", ".join(f"{name} ({path})" for name, path in entries)
-        print(
-            f"warning: {len(entries)} people retired for the same seat "
-            f"(jurisdiction={jurisdiction!r}, type={rtype!r}, "
-            f"district={district!r}): {names}\n"
-            "  A multi-seat district can legitimately have two incumbents, "
-            "but both being retired in the same change is a sign the "
-            "district number was matched instead of the departing "
-            "person's name - verify each one individually against a "
-            "source naming them specifically before retiring more than "
-            "one incumbent of the same seat at once."
+        findings.append(
+            Finding(
+                (
+                    "same-seat",
+                    str(jurisdiction),
+                    str(rtype),
+                    str(district),
+                    tuple(str(path) for _, path in entries),
+                ),
+                f"warning: {len(entries)} people retired for the same seat "
+                f"(jurisdiction={jurisdiction!r}, type={rtype!r}, "
+                f"district={district!r}): {names}\n"
+                "  A multi-seat district can legitimately have two incumbents, "
+                "but both being retired in the same change is a sign the "
+                "district number was matched instead of the departing "
+                "person's name - verify each one individually against a "
+                "source naming them specifically before retiring more than "
+                "one incumbent of the same seat at once.",
+                False,
+            )
         )
 
-    stale = find_stale_executive_persons(integrity_targets)
+    stale = find_stale_executive_persons(records)
     for name, path, last_end_date in sorted(stale, key=lambda s: str(s[1])):
-        print(
-            f"warning: {path} lists {name} under executive/ but their most "
-            f"recent role ended {last_end_date}, which is in the past - "
-            "consider moving this file to retired/ (see openstates/people#4045)."
+        findings.append(
+            Finding(
+                ("stale-executive", str(path)),
+                f"warning: {path} lists {name} under executive/ but their most "
+                f"recent role ended {last_end_date}, which is in the past - "
+                "consider moving this file to retired/ (see openstates/people#4045).",
+                False,
+            )
         )
 
-    repurposed = find_repurposed_identities(integrity_targets)
+    repurposed = find_repurposed_identities(records)
     for path, other_name, given in sorted(repurposed, key=lambda r: str(r[0])):
-        print(
-            f"warning: {path} lists other_name {other_name!r}, a different given "
-            f"name than this file's own {given!r} but sharing its family name - "
-            "possible repurposed identity (see openstates/issues#4040). Verify "
-            f"whether {other_name!r} is a distinct person (e.g. predecessor in "
-            "the same seat) who needs their own retired/ file with their own "
-            "service history, rather than an alias of the current occupant."
+        findings.append(
+            Finding(
+                ("repurposed-identity", str(path), other_name),
+                f"warning: {path} lists other_name {other_name!r}, a different given "
+                f"name than this file's own {given!r} but sharing its family name - "
+                "possible repurposed identity (see openstates/issues#4040). Verify "
+                f"whether {other_name!r} is a distinct person (e.g. predecessor in "
+                "the same seat) who needs their own retired/ file with their own "
+                "service history, rather than an alias of the current occupant.",
+                False,
+            )
         )
+
+    return findings
+
+
+def collect_findings(records: dict[Path, dict], batch: bool) -> list[Finding]:
+    """Every finding in one revision of the files, as comparable Finding keys."""
+    findings: list[Finding] = []
+    for path, record in sorted(records.items(), key=lambda kv: str(kv[0])):
+        problems = check_role_integrity(record) + check_missing_start_date(record)
+        findings.extend(
+            Finding(("role", str(path), problem), f"{path}: {problem}", True)
+            for problem in problems
+        )
+    if batch:
+        findings.extend(batch_findings(records))
+    return findings
 
 
 def main() -> int:
@@ -400,9 +512,18 @@ def main() -> int:
         nargs="*",
         help="limit the integrity check to these changed person files",
     )
+    parser.add_argument(
+        "--base-ref",
+        help=(
+            "git ref the change is based on. Findings that already exist at this "
+            "ref are reported as a pre-existing count instead of blocking, so a "
+            "change is only asked to answer for what it introduced."
+        ),
+    )
     args = parser.parse_args()
 
-    if args.changed_files is not None:
+    scoped = args.changed_files is not None
+    if scoped:
         integrity_targets = [
             Path(f)
             for f in args.changed_files
@@ -414,26 +535,32 @@ def main() -> int:
     else:
         integrity_targets = person_files(args.data_dir)
 
-    found_problems = False
+    # Batch checks are scoped to changed files only - see find_shared_end_dates'
+    # docstring for why comparing against the whole repo is the wrong check (a seat
+    # like a US House district has had many genuinely-unrelated retirees over the
+    # decades; only a single batch of changed files makes a shared date/seat
+    # meaningful).
+    findings = collect_findings(load_records(integrity_targets), batch=scoped)
 
-    for path in integrity_targets:
-        with path.open() as f:
-            record = yaml.safe_load(f) or {}
-        for problem in check_role_integrity(record):
-            found_problems = True
-            print(f"{path}: {problem}")
-        for problem in check_missing_start_date(record):
-            found_problems = True
-            print(f"{path}: {problem}")
+    preexisting = 0
+    if args.base_ref:
+        base_records = load_base_records(args.base_ref, integrity_targets)
+        base_keys = {f.key for f in collect_findings(base_records, batch=scoped)}
+        new_findings = [f for f in findings if f.key not in base_keys]
+        preexisting = len(findings) - len(new_findings)
+        findings = new_findings
 
-    # Scoped to changed files only - see find_shared_end_dates' docstring for why
-    # comparing against the whole repo is the wrong check (a seat like a US House
-    # district has had many genuinely-unrelated retirees over the decades; only a
-    # single batch of changed files makes a shared date/seat meaningful).
-    if args.changed_files is not None and integrity_targets:
-        print_changed_file_warnings(integrity_targets)
+    for finding in findings:
+        print(finding.message)
 
-    if found_problems:
+    if preexisting:
+        print(
+            f"note: {preexisting} role-date finding(s) in these files already exist "
+            f"at {args.base_ref} and are not this change's to fix. Re-run without "
+            "--base-ref to list them."
+        )
+
+    if any(finding.blocking for finding in findings):
         print(
             "\nRole date integrity problems found (duplicate/dangling role entries).",
             file=sys.stderr,

@@ -26,6 +26,28 @@ Where the `nc` part of the branch name indicates North Carolina. Changes in this
 If the lint command returns exit code 0, then linting passes and there are no issues. Some output like "no active roles"
 is not a problem as long as linting returns exit code 0.
 
+## Scope: fix what the branch introduced, nothing else
+
+`check_role_dates.py` and `check_duplicate_people.py` both take `--base-ref`, and with it they report only
+findings that are absent from the base revision. This exists because these branches are mostly reformatting: the
+bot rewrites `'2019-01-14'` as `2019-01-14` and re-sorts `links:`, changing no data, and the checks used to fail
+such a branch over every long-standing problem in every file it happened to touch. A repo-wide run of the role-date
+check reports over eight thousand findings, so almost any touched file carries some.
+
+Always pass `--base-ref`. When a run ends with a line like:
+
+```
+note: 14 role-date finding(s) in these files already exist at <base> and are not this change's to fix.
+```
+
+that count is pre-existing data, deliberately not listed, and **out of scope for this branch**. Do not go fix it
+here, do not widen the branch to clean it up, and do not report it as an outstanding issue on the pull request. If
+the underlying data looks genuinely wrong, raise it separately rather than enlarging a routine update. Only the
+findings printed above that note were introduced by the branch, and only those are yours to resolve.
+
+The same applies to `os-people lint`: run it on the base revision too if you are unsure whether an error is the
+branch's doing. An error that reproduces on the base is not this branch's to fix.
+
 ## Checking for known openstates-bot role-date bugs
 
 Investigation of PR #4038 (`auto-merge-2026-08-27`) found that the automated `automatic-legislators-updates-*`
@@ -43,7 +65,10 @@ wrong) and were only caught by a human reviewer clicking through sources on the 
 
 Before working any branch, run:
 
-`uv run python .github/scripts/check_role_dates.py --data-dir data --changed-files <files this branch changed>`
+`uv run python .github/scripts/check_role_dates.py --changed-files <files this branch changed> --base-ref <base>`
+
+where `<base>` is the commit the branch is based on (`git merge-base HEAD origin/main`). CI passes the pull
+request's base SHA the same way. See "Scope" below for why the base ref matters and what its `note:` line means.
 
 This catches dangling/duplicate role entries deterministically (no web access needed — a role with `end_date` before
 its own `start_date`, or two roles with identical type/jurisdiction/district/start_date, is never valid) and exits
@@ -204,4 +229,9 @@ Instead, actively verify identity before deciding either way:
    the resolution in `duplicates.md` with the sources you used.
 3. Only conclude "two distinct people" when a source explicitly distinguishes them (e.g. two different birth dates, or
    a bio that clearly describes separate individuals) — record that source in `duplicates.md` too.
-4. Re-run the lint and `check_duplicate_people.py` commands to confirm the resolution.
+4. Re-run the lint and `check_duplicate_people.py` commands to confirm the resolution. Run the duplicate check
+   as `uv run python .github/scripts/check_duplicate_people.py --changed-files <files this branch changed>
+   --base-ref <base>`: a pair whose two files both already carried these names at the base revision is
+   pre-existing history, reported as a `note:` count and not this branch's to resolve. The pairs that fail are the
+   ones this branch created, such as a brand-new file for a person who already has one (NH PR #4074 added a second
+   Gary Daniels file while moving the existing one to `retired/`).

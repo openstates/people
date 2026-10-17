@@ -32,8 +32,11 @@ accomplish the following:
       input if necessary.
     - If the @resolve-lint subagent succeeds, merge the resolved branch into the "auto merge branch" you created
 - Check out your "auto merge branch" and run the lint command to ensure that no lint issues remain for any jurisdiction
-- **Before pushing**, run `uv run python .github/scripts/check_role_dates.py --data-dir data --changed-files
-  $(git diff --name-only origin/main...HEAD -- data)`. PR #4038's review found that the bot has shipped role-date bugs
+- **Before pushing**, run `uv run python .github/scripts/check_role_dates.py --changed-files
+  $(git diff --name-only origin/main...HEAD -- data) --base-ref origin/main`. Pass `--base-ref` every time: without
+  it the check reports every long-standing problem in every file the merge touches, none of which is yours to fix,
+  and its closing `note:` line counts exactly those pre-existing findings — leave them alone. PR #4038's review
+  found that the bot has shipped role-date bugs
   that are only visible once several jurisdictions' branches are bundled together — see the "Checking for known
   openstates-bot role-date bugs" section of `resolve-lint.md` for the specific incidents. A non-zero exit means a
   dangling/duplicate role entry slipped through; a "shared end_date" warning means two or more of the jurisdictions
