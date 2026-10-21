@@ -2,14 +2,59 @@ id: ocd-person/5dcef6ac-7dbe-4c65-a53b-670c89a615e7
 name: Joe Cryan
 given_name: Joe
 family_name: Cryan
-birth_date: 1961-09-01
 gender: Male
 email: sencryan@njleg.org
+birth_date: 1961-09-01
 party:
 - name: Democratic
 roles:
-- start_date: 2018-01-09
+- start_date: 2024-01-09
   type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2022-01-11
+  end_date: 2024-01-08
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2018-01-09
+  end_date: 2022-01-10
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2014-01-14
+  end_date: 2015-01-04
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2012-01-10
+  end_date: 2014-01-13
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2010-01-12
+  end_date: 2012-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2008-01-08
+  end_date: 2010-01-11
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2006-01-10
+  end_date: 2008-01-07
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2004-01-13
+  end_date: 2006-01-09
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nj/government
+  district: '20'
+- start_date: 2002-01-08
+  end_date: 2004-01-12
+  type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nj/government
   district: '20'
 offices:
@@ -23,15 +68,21 @@ offices:
 links:
 - url: https://www.njleg.state.nj.us/legislative-roster/406/senator-cryan
 - url: https://www.njsendems.org/senators/joseph-cryan/
+- url: http://www.njleg.state.nj.us/members/bio.asp?Leg=204
 other_names:
 - name: Cryan, J.
 - name: Cryan, Joseph P.
 - name: J. Cryan
 - name: J.P. Cryan
 - name: Joseph P. Cryan
+- name: Joseph Cryan
 other_identifiers:
 - scheme: legacy_openstates
   identifier: NJL000224
+- scheme: openstates
+  identifier: ocd-person/eb87a7b0-2ad9-4400-b643-f4c510a1b3d8
+- scheme: legacy_openstates
+  identifier: NJL000061
 sources:
 - url: https://ballotpedia.org/Joseph_Cryan
 - url: https://en.wikipedia.org/wiki/Joseph_Cryan
@@ -45,3 +96,5 @@ sources:
 - url: https://www.njleg.state.nj.us/members/bio.asp?Leg=406
 - url: https://www.njleg.state.nj.us/members/BIO.asp?Leg=406
 - url: https://www.njsendems.org/senators/joseph-cryan
+- url: http://www.njleg.state.nj.us/members/bio.asp?Leg=204
+- url: http://www.njleg.state.nj.us/downloads.asp
