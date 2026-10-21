@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `424`
-- Files involved: `856`
+- Duplicate name groups: `422`
+- Files involved: `852`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -897,9 +897,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `fenton` `groen`
   - `data/nh/retired/Fenton-Groen-1396a02f-8c77-4f09-b9c7-10f2070721bd.yml`
   - `data/nh/retired/Fenton-L-Groen-9a5bfca1-f35f-4050-93d4-0abedb8ba436.yml`
-- `fred` `doucette`
-  - `data/nh/retired/Fred-Doucette-b544733a-d241-4568-88c2-7521cb67bf04.yml`
-  - `data/nh/retired/Fred-G-Doucette-db4ec0a8-f70c-4510-ae01-c9050646a503.yml`
 - `gary` `daniels`
   - `data/nh/retired/Gary-L-Daniels-281c916b-4280-41ff-9ee1-ba183d838536.yml`
   - `data/nh/retired/Gary-L-Daniels-4c8ac73e-dca4-48ca-b50c-25d0d41425bc.yml`
@@ -954,9 +951,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `susan` `almy`
   - `data/nh/legislature/Susan-W-Almy-e13283b4-defe-4f4e-8e67-4d89b8e3790c.yml`
   - `data/nh/retired/Susan-W-Almy-856da428-f5e9-4fa4-92c7-d08575cae4a2.yml`
-- `susan` `delemus`
-  - `data/nh/retired/Susan-C-DeLemus-0d0e2536-4b7b-49ad-823c-e636099eef9a.yml`
-  - `data/nh/retired/Susan-C-DeLemus-0e3a4612-9179-4659-a512-86322f4ff0ef.yml`
 - `ted` `rokas`
   - `data/nh/retired/Ted-Rokas-c148c301-5a02-4711-b27f-167fc111b832.yml`
   - `data/nh/retired/Ted-V-Rokas-88ea3db4-12b1-4a76-97c7-f03528b2569c.yml`
@@ -1414,3 +1408,9 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 ### PR #4089
 
 - `tn` `joe` `pitts`: same person (TN House District 67 2007-2018 -> Clarksville mayor since 2019); consolidated retired mayor record (273de6b0) into the legislature record (5ad978f9), moved to municipalities, deleted the mayor file
+
+### PR #4176
+
+- `nh` `fred` `doucette`: consolidated retired (b544733a) into retired (db4ec0a8), deleted the other retired file
+- `nh` `susan` `delemus`: consolidated both retired records (0d0e2536, 0e3a4612) into legislature `Sue-DeLemus` (62edd52b), deleted retired files
+- `nh` `victoria` `sullivan`: consolidated retired `Victoria-L-Sullivan` (0b69a6f5) into legislature (dbf39ca6), deleted retired file (not flagged: given names differed)

@@ -9,16 +9,27 @@ party:
 - name: Republican
 roles:
 - start_date: 2022-12-07
+  end_date: 2025-03-26
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 25
-  end_date: 2025-03-26
-- start_date: 2018-12-05
+- start_date: 2020-12-02
   end_date: 2022-12-06
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
-  district: Rockingham 25
-- end_date: 2022-12-07
+  district: Rockingham 8
+- start_date: 2018-12-05
+  end_date: 2020-12-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 8
+- start_date: 2016-12-07
+  end_date: 2018-12-05
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:nh/government
+  district: Rockingham 8
+- start_date: 2014-12-03
+  end_date: 2016-12-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:nh/government
   district: Rockingham 8
@@ -34,6 +45,11 @@ other_names:
 - name: Doucette, F.
 - name: F. Doucette
 - name: Fred G. Doucette
+other_identifiers:
+- scheme: openstates
+  identifier: ocd-person/b544733a-d241-4568-88c2-7521cb67bf04
+- scheme: legacy_openstates
+  identifier: NHL001160
 sources:
 - url: https://ballotpedia.org/Fred_Doucette
 - url: https://gc.nh.gov/house/members/member.aspx?member=377220
