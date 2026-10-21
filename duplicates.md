@@ -37,15 +37,9 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `brian` `evans`
   - `data/ar/legislature/Brian-S-Evans-a1614a7c-f5f0-4fe1-a2b1-c8390e4bf106.yml`
   - `data/ar/retired/Brian-S-Evans-844b8ab2-d68c-4aa6-9b98-647b2c380e0a.yml`
-- `bryan` `king`
-  - `data/ar/legislature/Bryan-King-ac9a90a0-dfba-4bf0-a07d-ca2232b21a90.yml`
-  - `data/ar/retired/Bryan-King-a89e0832-a0ed-4b5f-98b1-21f74833dd60.yml`
 - `carol` `dalby`
   - `data/ar/legislature/Carol-Dalby-247b430e-d46a-474a-87bc-24d03c636fd8.yml`
   - `data/ar/retired/Carol-Dalby-495926c5-ea19-4140-9c7b-2a67cc5cdc50.yml`
-- `clarke` `tucker`
-  - `data/ar/legislature/Clarke-Tucker-cdb599f1-f956-430d-9ba2-87ce18d3fd53.yml`
-  - `data/ar/retired/Clarke-Tucker-27859771-43ae-4b7b-b33c-832f4e294d6f.yml`
 - `clint` `penzo`
   - `data/ar/legislature/Clint-Penzo-6c773215-c5d7-4039-bcb2-d2abe9053e39.yml`
   - `data/ar/retired/Clint-Penzo-73f7d9f8-e8fc-448d-939e-683dd0d49669.yml`
@@ -660,9 +654,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `paul` `davis`
   - `data/me/retired/Paul-T-Davis-Sr-0dd8bc2b-7237-4f5c-955a-478c7fb57654.yml`
   - `data/me/retired/Paul-T-Davis-bd258c94-db3f-419f-83c1-707886c98ff5.yml`
-- `pinny` `beebe-center`
-  - `data/me/legislature/Anne-Beebe-Center-db11e611-94a4-4451-8486-f941a532789d.yml`
-  - `data/me/retired/Pinny-Beebe-Center-283a0d7c-98df-40fd-8fdf-44d7e0378e6b.yml`
 - `shenna` `bellows`
   - `data/me/executive/Shenna-Bellows-a641743d-e1c1-4bb6-bba0-ad1f143dbf20.yml`
   - `data/me/retired/Shenna-L-Bellows-57f42a08-7404-484b-8885-05d10679cab7.yml`
@@ -1110,9 +1101,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## pr
 
-- `josé` `pérez cordero`
-  - `data/pr/legislature/Jos-J-Prez-Cordero-65f91ca5-2401-4bd4-b146-79b08b12fad6.yml`
-  - `data/pr/retired/Jos-J-Prez-Cordero-49054128-56f7-4c06-ad4c-74e13c62be28.yml`
 - `migdalia` `gonzález`
   - `data/pr/retired/Migdalia-Gonzalez-a5036514-440a-4db9-a089-349caea8ca73.yml`
   - `data/pr/retired/Migdalia-Gonzlez-8b62caa9-ef8b-44ff-872c-030c6e33096c.yml`
@@ -1373,6 +1361,13 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
   - `data/wy/retired/Eric-Barlow-d54d2b39-7361-46f7-b4be-b5f4cb11f7b3.yml`
 
 ## Resolved
+
+### PR #4177
+
+- `ar` `bryan` `king`: consolidated retired (a89e0832) into legislature (ac9a90a0), deleted retired file
+- `ar` `clarke` `tucker`: consolidated retired (27859771) into legislature (cdb599f1), deleted retired file
+- `me` `pinny` `beebe-center`: consolidated retired (283a0d7c) into legislature (db11e611), deleted retired file
+- `pr` `josé` `pérez cordero`: consolidated retired (49054128) into legislature (65f91ca5), deleted retired file
 
 ### PR #4001
 
