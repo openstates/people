@@ -9,9 +9,11 @@ party:
 - name: Republican
 roles:
 - start_date: 2023-01-04
+  end_date: '2026-01-16'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Franklin-8
+  end_reason: Resigned
 - start_date: 2019-01-09
   end_date: 2023-01-03
   type: lower
@@ -22,10 +24,6 @@ roles:
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:vt/government
   district: Franklin-3-1
-offices:
-- classification: capitol
-  address: Vermont State House 115 State St., Montpelier, VT 05633
-  voice: 802-828-2228
 links:
 - url: https://legislature.vermont.gov/Documents/SmallMaps/2022/House/Franklin-8.pdf
   note: district map
