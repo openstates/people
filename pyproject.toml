@@ -50,5 +50,9 @@ select = [
     "PL",   # Pylint
 ]
 
+[tool.ruff.lint.per-file-ignores]
+# check_terms.py --self-test is these scripts' test suite
+".claude/skills/**" = ["S101"]
+
 [tool.ty.environment]
 python-version = "3.13"
