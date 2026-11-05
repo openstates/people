@@ -28,63 +28,27 @@ on:
       - ".github/scripts/check_role_dates.py"
       # - ".github/scripts/check_links.py"
 
+# A new push to a PR cancels that PR's still-running check; pushes to main
+# always finish.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.sha }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
   lint:
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
 
     steps:
       # Python & dependency installation
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
-
-    - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
-      id: changed-dirs
-      with:
-        files: data/**
-        dir_names: 'true'
-    - uses: tj-actions/changed-files@9426d40962ed5378910ee2e21d5f8c6fcbf2dd96  # v47.0.6
-      id: changed-files
-      with:
-        # A big change (e.g. a repo-wide cleanup touching thousands of files)
-        # overflows Linux's 128KB limit on a single env var, so steps read the
-        # list from this file instead of the step output.
-        write_output_files: 'true'
-        output_dir: .github/outputs
     - name: install uv
       uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
       with:
         enable-cache: true
-    - name: Yaml file linting
-      run: uvx yamllint==1.38.0 -s .
     - name: install dependencies
       run: uv sync
-    - name: lint people selectively
-      env:
-        ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
-        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
-      run: |
-        # settings.yml holds vacancies used to compute every jurisdiction's
-        # expected district counts (see Validator/get_expected_districts in
-        # openstates.utils.people.lint_people). It isn't under data/, so it
-        # never matches the per-dir regex below - a bad vacancy entry there
-        # can hide a real missing/extra-legislator error for a jurisdiction
-        # whose own files didn't change. Lint everything when it changes.
-        ALL_CHANGED_FILES=$(cat .github/outputs/all_changed_files.txt)
-        if [[ " ${ALL_CHANGED_FILES} " == *" settings.yml "* ]]; then
-          echo "settings.yml changed: linting all jurisdictions"
-          uv run os-people lint
-        else
-          abbrs=()
-          for dir in ${ALL_CHANGED_DIRS}; do
-            if [[ "$dir" =~ ^data/([a-z]{2})/(legislature|retired|executive|municipalities) ]]; then
-              abbrs+=("${BASH_REMATCH[1]}")
-            fi
-          done
-          if [[ ${#abbrs[@]} -gt 0 ]]; then
-            mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
-            uv run os-people lint "${abbrs[@]}"
-          fi
-        fi
-    - name: resolve base revision
+    - name: resolve base revision and changed files
       id: base
       env:
         BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
@@ -94,6 +58,12 @@ jobs:
         # the change merely reformats is not this author's to fix - see
         # check_role_dates.py's module docstring. Without a usable base they
         # report everything, which is noisy but never misses a real problem.
+        #
+        # The changed-file list goes to a file, not a step output: a big
+        # change (e.g. a repo-wide cleanup touching thousands of files)
+        # overflows Linux's 128KB limit on a single env var.
+        mkdir -p .github/outputs
+        changed=.github/outputs/all_changed_files.txt
         empty_sha=0000000000000000000000000000000000000000
         if [[ -n "${BASE_SHA}" && "${BASE_SHA}" != "${empty_sha}" ]]; then
           # actions/checkout clones at depth 1, so the base commit is usually
@@ -102,12 +72,65 @@ jobs:
             || git fetch --no-tags --depth=1 origin "${BASE_SHA}" \
             || true
           if git cat-file -e "${BASE_SHA}^{commit}" 2>/dev/null; then
+            # Deleted files are left out: there is nothing left to lint.
+            git -c core.quotepath=off diff --name-only --diff-filter=d \
+              "${BASE_SHA}" HEAD > "${changed}"
             echo "base-args=--base-ref ${BASE_SHA}" >> "${GITHUB_OUTPUT}"
             exit 0
           fi
           echo "base ${BASE_SHA} unavailable: reporting all findings"
         fi
         echo "base-args=" >> "${GITHUB_OUTPUT}"
+        # Fall back to the files the checked-out commit itself changed (for a
+        # PR's merge commit, that is the whole PR). Listing every file instead
+        # would overflow the --changed-files argument list (~2MB of paths).
+        if git fetch --no-tags --deepen=1 origin "$(git rev-parse HEAD)" \
+            && git -c core.quotepath=off diff --name-only --diff-filter=d \
+              HEAD^ HEAD > "${changed}"; then
+          exit 0
+        fi
+        echo "no parent commit either: linting everything"
+        : > "${changed}"
+        echo "full=true" >> "${GITHUB_OUTPUT}"
+    - name: Yaml file linting
+      env:
+        FULL: ${{ steps.base.outputs.full }}
+      run: |
+        # A .yamllint change can flag files this change didn't touch, so it
+        # (or a missing base) lints the whole repo, split across all cores.
+        if [[ "${FULL}" == "true" ]] || grep -qxF '.yamllint' .github/outputs/all_changed_files.txt; then
+          git ls-files -z '*.yml' '*.yaml' .yamllint \
+            | xargs -0 -n 2000 -P "$(nproc)" uv run yamllint -s
+        else
+          grep -E '\.ya?ml$' .github/outputs/all_changed_files.txt \
+            | tr '\n' '\0' | xargs -0 -r uv run yamllint -s
+        fi
+    - name: lint people selectively
+      env:
+        FULL: ${{ steps.base.outputs.full }}
+        OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
+      run: |
+        # settings.yml holds vacancies used to compute every jurisdiction's
+        # expected district counts (see Validator/get_expected_districts in
+        # openstates.utils.people.lint_people). It isn't under data/, so it
+        # never matches the per-dir regex below - a bad vacancy entry there
+        # can hide a real missing/extra-legislator error for a jurisdiction
+        # whose own files didn't change. Lint everything when it changes.
+        if [[ "${FULL}" == "true" ]] || grep -qxF 'settings.yml' .github/outputs/all_changed_files.txt; then
+          echo "settings.yml changed or no base: linting all jurisdictions"
+          uv run os-people lint
+        else
+          abbrs=()
+          while IFS= read -r file; do
+            if [[ "$file" =~ ^data/([a-z]{2})/(legislature|retired|executive|municipalities)/ ]]; then
+              abbrs+=("${BASH_REMATCH[1]}")
+            fi
+          done < .github/outputs/all_changed_files.txt
+          if [[ ${#abbrs[@]} -gt 0 ]]; then
+            mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
+            uv run os-people lint "${abbrs[@]}"
+          fi
+        fi
     - name: check duplicate people selectively
       env:
         BASE_ARGS: ${{ steps.base.outputs.base-args }}
@@ -131,14 +154,13 @@ jobs:
     - name: lint committees selectively
       env:
         OS_PEOPLE_DIRECTORY: ${{ env.GITHUB_WORKSPACE }}
-        ALL_CHANGED_DIRS: ${{ steps.changed-dirs.outputs.all_changed_files }}
       run: |
         abbrs=()
-        for dir in ${ALL_CHANGED_DIRS}; do
-          if [[ "$dir" =~ ^data/([a-z]{2})/committees ]]; then
+        while IFS= read -r file; do
+          if [[ "$file" =~ ^data/([a-z]{2})/committees/ ]]; then
             abbrs+=("${BASH_REMATCH[1]}")
           fi
-        done
+        done < .github/outputs/all_changed_files.txt
         if [[ ${#abbrs[@]} -gt 0 ]]; then
           mapfile -t abbrs < <(printf '%s\n' "${abbrs[@]}" | sort -u)
           uv run os-committees lint "${abbrs[@]}"

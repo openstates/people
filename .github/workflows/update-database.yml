@@ -5,9 +5,16 @@ on:
     branches:
       - main
 
+# Run uploads one at a time, in push order, so an older commit's upload can't
+# finish after (and overwrite) a newer one's.
+concurrency:
+  group: update-database
+  cancel-in-progress: false
+
 jobs:
   update-database:
     runs-on: ubuntu-24.04
+    timeout-minutes: 15
 
     steps:
     # Python & dependency installation
@@ -16,10 +23,16 @@ jobs:
       uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d  # v10.0.1
       with:
         enable-cache: true
-    - name: Yaml file linting
-      run: uvx yamllint==1.38.0 -s .
     - name: install dependencies
       run: uv sync
+
+    # Gates the upload: PyYAML keeps the last value of a duplicated key without
+    # error, so yamllint's key-duplicates rule is the only guard against
+    # silently uploading lost data, and main has no branch protection.
+    - name: Yaml file linting
+      run: |
+        git ls-files -z '*.yml' '*.yaml' .yamllint \
+          | xargs -0 -n 2000 -P "$(nproc)" uv run yamllint -s
 
     - name: people to S3
       run: uv run os-people to-csv --upload
