@@ -160,10 +160,10 @@ def find_regressions(
     regressions = []
     for (office_key, field), base_values in sorted(base_contacts.items()):
         head_values = head_contacts.get((office_key, field), frozenset())
-        for old_value in sorted(base_values - head_values):
-            regressions.append(
-                Regression(path, name, office_key, field, old_value)
-            )
+        regressions.extend(
+            Regression(path, name, office_key, field, old_value)
+            for old_value in sorted(base_values - head_values)
+        )
     return regressions
 
 
@@ -230,8 +230,7 @@ def main() -> int:
         # the preexisting counter for parity with the other check scripts, in
         # case future callers pass a mid-chain ref where the gap was already
         # partially introduced.
-        for regression in regressions:
-            all_regressions.append(regression)
+        all_regressions.extend(regressions)
 
     new_regressions = all_regressions  # see comment above - all are new by construction
 
