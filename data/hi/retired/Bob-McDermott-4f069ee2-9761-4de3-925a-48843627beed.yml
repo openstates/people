@@ -2,23 +2,36 @@ id: ocd-person/4f069ee2-9761-4de3-925a-48843627beed
 name: Bob McDermott
 given_name: Bob
 family_name: McDermott
-email: repmcdermott@Capitol.hawaii.gov
+birth_date: 1963-08-05
+gender: Male
 party:
 - name: Republican
 roles:
-- end_date: '2022-11-07'
+- start_date: 2026-11-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:hi/government
+  district: '20'
+- end_date: 2022-11-07
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:hi/government
   district: '40'
 links:
-- url: http://capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2019
+- url: https://capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2019
 - url: https://www.capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2021
 - url: https://www.capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2022
+other_names:
+- name: B. McDermott
+- name: McDermott, B.
+- name: R.C. McDermott
 other_identifiers:
 - scheme: legacy_openstates
   identifier: HIL000118
 sources:
-- url: http://capitol.hawaii.gov/members/legislators.aspx?chamber=H
-- url: http://capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2019
+- url: https://ballotpedia.org/Bob_McDermott
+- url: https://capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2019
+- url: https://capitol.hawaii.gov/members/legislators.aspx?chamber=H
+- url: https://en.wikipedia.org/wiki/Bob_McDermott
+- url: https://justfacts.votesmart.org/candidate/biography/14848/bob-mcdermott
 - url: https://www.capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2021
 - url: https://www.capitol.hawaii.gov/memberpage.aspx?member=mcdermott&year=2022
+- url: https://www.linkedin.com/in/bob-mcdermott-57033135
