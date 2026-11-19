@@ -43,6 +43,13 @@ accomplish the following:
   you bundled retired someone on the exact same date, which is the fingerprint of a batch date rather than each
   person's own — verify each one against its own source (per @resolve-lint's "missing legislator" procedure) before
   trusting it, even though the warning alone won't block your push.
+- **Also before pushing**, run `uv run python .github/scripts/check_data_regressions.py --changed-files
+  $(git diff --name-only origin/main...HEAD -- data) --base-ref origin/main`. This never exits non-zero, but its
+  warnings mean a bot branch dropped an office phone, fax, or email that existed on main — the fingerprint of the
+  scraper writing empty offices because it did not collect the value (see openstates/issues#1445, #1453). Pass each
+  flagged file to @resolve-lint to verify whether the person is still in office and the contact is still on the
+  official site before merging. Do not skip this check when bundling multiple jurisdictions: the scraper defect
+  that drops phones tends to hit several states in the same auto-merge run.
 - Once all open, automated branches have been evaluated and (if necessary) resolved, push your "auto merge branch"
   to github, and open a pull request there. Use this exact structure for the PR body so a human can review a huge
   multi-jurisdiction PR at a glance instead of reading every diff:
