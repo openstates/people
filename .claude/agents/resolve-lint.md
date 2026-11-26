@@ -48,7 +48,56 @@ findings printed above that note were introduced by the branch, and only those a
 The same applies to `os-people lint`: run it on the base revision too if you are unsure whether an error is the
 branch's doing. An error that reproduces on the base is not this branch's to fix.
 
-## Checking for known openstates-bot role-date bugs
+## Checking for dropped contact data (offices regression)
+
+`check_data_regressions.py` runs on every bot PR and warns when a changed file
+loses an `offices` contact field — `voice`, `fax`, or `email` — that was
+present in the base revision. This catches the pattern documented in
+openstates/issues#1445 and #1453: the scraper wrote an empty `offices: []`
+because it did not collect the value, silently overwriting a phone number that
+was manually added from the official legislative site.
+
+The check never fails the build on its own (exit 0 always) because a removal
+can be legitimate. When you see output like:
+
+```
+warning: data/nd/legislature/Karla-Rose-Hanson-<id>.yml (Karla Rose Hanson)
+lost offices['capitol'].voice = '701-555-0101'
+  Verify whether this person is still in office and the contact is still on
+  the official site before accepting this removal (see openstates/issues#1445, #1453).
+```
+
+Do the following for each flagged person:
+
+1. Check whether the person is still in office. If the bot PR also moved their
+   file to `retired/` or added an `end_date` to their active role, the removal
+   is correct — their office contact is no longer theirs. No action needed.
+
+2. If they are still in office, look up their contact on the official legislative
+   site (their chamber's member directory or their own bio page — Ballotpedia is
+   a secondary fallback, not the primary source for contact info). Use the same
+   source the number was originally taken from if it is cited in `sources:`.
+
+3. If the official site still lists the contact, restore it to the YAML file.
+   Keep the existing `sources:` entry that cites where the number came from; do
+   not add a new one just for restoring a value that was already sourced.
+
+4. If the official site no longer lists it (number changed, office reorganized,
+   person has no published contact), accept the removal — do not restore a dead
+   number. If the site lists a *different* number, replace rather than restore.
+
+5. Re-run the check to confirm no warnings remain for this branch:
+   `uv run python .github/scripts/check_data_regressions.py \
+     --changed-files <files this branch changed> \
+     --base-ref <base>`
+
+Do not bulk-restore all flagged values without checking each one individually.
+A batch of warnings in a multi-jurisdiction merge (e.g. ND + SD + WI all in one
+auto-merge run) means each person needs their own lookup — the same scraper
+defect tends to hit multiple states at once, but the fix for each person is
+still individual.
+
+
 
 Investigation of PR #4038 (`auto-merge-2026-08-27`) found that the automated `automatic-legislators-updates-*`
 branches have twice shipped role-date bugs that pass `os-people lint` cleanly (they're structurally valid, just
