@@ -1,21 +1,34 @@
 id: ocd-person/b7e7fb76-d4a8-429c-b7e1-b054d4dbbb30
-name: Justin F. Wood
+name: Justin Wood
 given_name: Justin
 family_name: Wood
-middle_name: F.
+birth_date: 1989-12-23
+gender: Male
 party:
 - name: Republican
 roles:
-- start_date: '2013-01-01'
-  end_date: '2016-12-31'
+- start_date: 2026-11-18
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:ok/government
+  district: '17'
+- start_date: 2013-01-01
+  end_date: 2016-12-31
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:ok/government
   district: '26'
+other_names:
+- name: J. Wood
+- name: J.F. Wood
+- name: Justin F. Wood
+- name: Wood, J.
 other_identifiers:
 - scheme: legacy_openstates
   identifier: OKL000179
 - scheme: legacy_openstates
   identifier: OKL000198
 sources:
-- url: http://www.okhouse.gov/Members/Default.aspx
-- url: http://www.okhouse.gov/District.aspx?District=26
+- url: https://ballotpedia.org/Justin_Wood_(Oklahoma_state_representative)
+- url: https://en.wikipedia.org/wiki/Justin_Wood_(politician)
+- url: https://www.linkedin.com/in/justinwood405
+- url: https://www.okhouse.gov/District.aspx?District=26
+- url: https://www.okhouse.gov/Members/Default.aspx
