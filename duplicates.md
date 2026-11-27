@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `424`
-- Files involved: `856`
+- Duplicate name groups: `421`
+- Files involved: `850`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -37,15 +37,9 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `brian` `evans`
   - `data/ar/legislature/Brian-S-Evans-a1614a7c-f5f0-4fe1-a2b1-c8390e4bf106.yml`
   - `data/ar/retired/Brian-S-Evans-844b8ab2-d68c-4aa6-9b98-647b2c380e0a.yml`
-- `bryan` `king`
-  - `data/ar/legislature/Bryan-King-ac9a90a0-dfba-4bf0-a07d-ca2232b21a90.yml`
-  - `data/ar/retired/Bryan-King-a89e0832-a0ed-4b5f-98b1-21f74833dd60.yml`
 - `carol` `dalby`
   - `data/ar/legislature/Carol-Dalby-247b430e-d46a-474a-87bc-24d03c636fd8.yml`
   - `data/ar/retired/Carol-Dalby-495926c5-ea19-4140-9c7b-2a67cc5cdc50.yml`
-- `clarke` `tucker`
-  - `data/ar/legislature/Clarke-Tucker-cdb599f1-f956-430d-9ba2-87ce18d3fd53.yml`
-  - `data/ar/retired/Clarke-Tucker-27859771-43ae-4b7b-b33c-832f4e294d6f.yml`
 - `clint` `penzo`
   - `data/ar/legislature/Clint-Penzo-6c773215-c5d7-4039-bcb2-d2abe9053e39.yml`
   - `data/ar/retired/Clint-Penzo-73f7d9f8-e8fc-448d-939e-683dd0d49669.yml`
@@ -660,9 +654,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `paul` `davis`
   - `data/me/retired/Paul-T-Davis-Sr-0dd8bc2b-7237-4f5c-955a-478c7fb57654.yml`
   - `data/me/retired/Paul-T-Davis-bd258c94-db3f-419f-83c1-707886c98ff5.yml`
-- `pinny` `beebe-center`
-  - `data/me/legislature/Anne-Beebe-Center-db11e611-94a4-4451-8486-f941a532789d.yml`
-  - `data/me/retired/Pinny-Beebe-Center-283a0d7c-98df-40fd-8fdf-44d7e0378e6b.yml`
 - `shenna` `bellows`
   - `data/me/executive/Shenna-Bellows-a641743d-e1c1-4bb6-bba0-ad1f143dbf20.yml`
   - `data/me/retired/Shenna-L-Bellows-57f42a08-7404-484b-8885-05d10679cab7.yml`
@@ -894,9 +885,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `fenton` `groen`
   - `data/nh/retired/Fenton-Groen-1396a02f-8c77-4f09-b9c7-10f2070721bd.yml`
   - `data/nh/retired/Fenton-L-Groen-9a5bfca1-f35f-4050-93d4-0abedb8ba436.yml`
-- `fred` `doucette`
-  - `data/nh/retired/Fred-Doucette-b544733a-d241-4568-88c2-7521cb67bf04.yml`
-  - `data/nh/retired/Fred-G-Doucette-db4ec0a8-f70c-4510-ae01-c9050646a503.yml`
 - `gary` `daniels`
   - `data/nh/retired/Gary-L-Daniels-281c916b-4280-41ff-9ee1-ba183d838536.yml`
   - `data/nh/retired/Gary-L-Daniels-4c8ac73e-dca4-48ca-b50c-25d0d41425bc.yml`
@@ -951,9 +939,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `susan` `almy`
   - `data/nh/legislature/Susan-W-Almy-e13283b4-defe-4f4e-8e67-4d89b8e3790c.yml`
   - `data/nh/retired/Susan-W-Almy-856da428-f5e9-4fa4-92c7-d08575cae4a2.yml`
-- `susan` `delemus`
-  - `data/nh/retired/Susan-C-DeLemus-0d0e2536-4b7b-49ad-823c-e636099eef9a.yml`
-  - `data/nh/retired/Susan-C-DeLemus-0e3a4612-9179-4659-a512-86322f4ff0ef.yml`
 - `ted` `rokas`
   - `data/nh/retired/Ted-Rokas-c148c301-5a02-4711-b27f-167fc111b832.yml`
   - `data/nh/retired/Ted-V-Rokas-88ea3db4-12b1-4a76-97c7-f03528b2569c.yml`
@@ -1107,9 +1092,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## pr
 
-- `josé` `pérez cordero`
-  - `data/pr/legislature/Jos-J-Prez-Cordero-65f91ca5-2401-4bd4-b146-79b08b12fad6.yml`
-  - `data/pr/retired/Jos-J-Prez-Cordero-49054128-56f7-4c06-ad4c-74e13c62be28.yml`
 - `migdalia` `gonzález`
   - `data/pr/retired/Migdalia-Gonzalez-a5036514-440a-4db9-a089-349caea8ca73.yml`
   - `data/pr/retired/Migdalia-Gonzlez-8b62caa9-ef8b-44ff-872c-030c6e33096c.yml`
@@ -1188,9 +1170,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `andy` `berke`
   - `data/tn/retired/Andy-Berke--67cedf87-0c2a-474e-80d7-b5e00b8bc7a0.yml`
   - `data/tn/retired/Andy-Berke-6e5d5734-beb1-4381-809d-08c6859c3ce3.yml`
-- `joe` `pitts`
-  - `data/tn/retired/Joe-Pitts-273de6b0-a4bc-4446-b186-fa15ef29976e.yml`
-  - `data/tn/retired/Joe-Pitts-5ad978f9-94c7-4263-9e70-bfcb4384ec0e.yml`
 - `kevin` `brooks`
   - `data/tn/retired/Kevin-Brooks-a77f1dbe-8a0b-48c8-af73-c4b45a2ad865.yml`
   - `data/tn/retired/Kevin-Brooks-eb0e4e6d-5f9c-40fb-b722-8a4a9a6a9f50.yml`
@@ -1374,6 +1353,13 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## Resolved
 
+### PR #4177
+
+- `ar` `bryan` `king`: consolidated retired (a89e0832) into legislature (ac9a90a0), deleted retired file
+- `ar` `clarke` `tucker`: consolidated retired (27859771) into legislature (cdb599f1), deleted retired file
+- `me` `pinny` `beebe-center`: consolidated retired (283a0d7c) into legislature (db11e611), deleted retired file
+- `pr` `josé` `pérez cordero`: consolidated retired (49054128) into legislature (65f91ca5), deleted retired file
+
 ### PR #4001
 
 - `ct` `aundré` `bumgardner`: consolidated retired (1af3c171) into legislature (32ad6577), deleted retired file
@@ -1410,6 +1396,16 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `ca` `shirley` `weber`: consolidated retired (71cfb6c2) into executive (c8e67d27), deleted retired file
 - `ct` `stephanie` `thomas`: consolidated retired (ea5497d0) into executive (e54205b6), deleted retired file
 - `ga` `brad` `raffensperger`: consolidated retired (1e5d1b04) into executive (02e75ac0), deleted retired file
+
+### PR #4089
+
+- `tn` `joe` `pitts`: same person (TN House District 67 2007-2018 -> Clarksville mayor since 2019); consolidated retired mayor record (273de6b0) into the legislature record (5ad978f9), moved to municipalities, deleted the mayor file
+
+### PR #4176
+
+- `nh` `fred` `doucette`: consolidated retired (b544733a) into retired (db4ec0a8), deleted the other retired file
+- `nh` `susan` `delemus`: consolidated both retired records (0d0e2536, 0e3a4612) into legislature `Sue-DeLemus` (62edd52b), deleted retired files
+- `nh` `victoria` `sullivan`: consolidated retired `Victoria-L-Sullivan` (0b69a6f5) into legislature (dbf39ca6), deleted retired file (not flagged: given names differed)
 
 ### PR #4164
 

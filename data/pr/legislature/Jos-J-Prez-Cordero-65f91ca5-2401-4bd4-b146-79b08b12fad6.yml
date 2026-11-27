@@ -9,15 +9,20 @@ image: https://www.camara.pr.gov/wp-content/uploads/2021/08/REP.-JOSE-CHE-PEREZ-
 party:
 - name: Partido Nuevo Progresista
 roles:
+- start_date: 2025-01-02
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
+  district: At-Large
 - start_date: 2021-04-06
+  end_date: 2025-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
   district: At-Large
-- end_date: 2021-01-01
+- start_date: 2017-01-02
+  end_date: 2021-01-01
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/territory:pr/government
-  district: At-Large
-  start_date: 2021-04-06
+  district: '18'
 offices:
 - classification: capitol
   address: "El Capitolio, Avenida Constituci\xF3n P.O. Box 9022228, San Juan, PR 00902"
@@ -33,6 +38,11 @@ other_names:
 - name: "J.J. P\xE9rez Cordero"
 - name: "Jos\xE9 J. P\xE9rez Cordero"
 - name: "P\xE9rez Cordero, J."
+other_identifiers:
+- scheme: legacy_openstates
+  identifier: PRL000244
+- scheme: openstates
+  identifier: ocd-person/49054128-56f7-4c06-ad4c-74e13c62be28
 sources:
 - url: https://ballotpedia.org/Jos%C3%A9_P%C3%A9rez_Cordero
 - url: https://camara.registrok12.com/team/jose-j-perez-cordero-2
