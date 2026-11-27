@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `422`
-- Files involved: `852`
+- Duplicate name groups: `421`
+- Files involved: `850`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -705,9 +705,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `pauline` `wendzel`
   - `data/mi/legislature/Pauline-Wendzel-f749bf7e-46bc-482d-ac6e-60288f3b722e.yml`
   - `data/mi/retired/Pauline-Wendzel-262428ec-422f-42ec-a206-51dfe2bba93a.yml`
-- `sheldon` `neeley`
-  - `data/mi/retired/Sheldon-Neeley-98ce9311-8f46-4572-9866-80a7eceeb746.yml`
-  - `data/mi/retired/Sheldon-Neeley-ce87d244-de67-4e85-8358-5a791543743a.yml`
 - `vicki` `barnett`
   - `data/mi/retired/Vicki-Barnett-4f9a6234-b9bd-452a-824a-11a1c262cf45.yml`
   - `data/mi/retired/Vicki-Barnett-b96080c0-cf2d-4803-a6a6-3d31229f595d.yml`
@@ -1409,3 +1406,7 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `nh` `fred` `doucette`: consolidated retired (b544733a) into retired (db4ec0a8), deleted the other retired file
 - `nh` `susan` `delemus`: consolidated both retired records (0d0e2536, 0e3a4612) into legislature `Sue-DeLemus` (62edd52b), deleted retired files
 - `nh` `victoria` `sullivan`: consolidated retired `Victoria-L-Sullivan` (0b69a6f5) into legislature (dbf39ca6), deleted retired file (not flagged: given names differed)
+
+### PR #4164
+
+- `mi` `sheldon` `neeley`: consolidated retired House 34 record (98ce9311) into the Flint mayor record (ce87d244), deleted the House file
