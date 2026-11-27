@@ -1401,7 +1401,7 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `nh` `susan` `delemus`: consolidated both retired records (0d0e2536, 0e3a4612) into legislature `Sue-DeLemus` (62edd52b), deleted retired files
 - `nh` `victoria` `sullivan`: consolidated retired `Victoria-L-Sullivan` (0b69a6f5) into legislature (dbf39ca6), deleted retired file (not flagged: given names differed)
 
-### PR #XXXX
+### PR #4335
 
 - `mi` `andy` `schor`: consolidated retired House record (2d8a99e3) into the mayor record (537630fb), revived to municipalities, deleted the House file
 - `ny` `sean` `ryan`: consolidated retired Assembly record (3bcad7b1) into the Senate record (6913e7e0), revived to municipalities, deleted the Assembly file
