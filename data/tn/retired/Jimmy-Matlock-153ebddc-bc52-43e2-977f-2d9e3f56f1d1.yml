@@ -2,16 +2,34 @@ id: ocd-person/153ebddc-bc52-43e2-977f-2d9e3f56f1d1
 name: Jimmy Matlock
 given_name: Jimmy
 family_name: Matlock
-image: http://www.capitol.tn.gov/house/members/images/h21.jpg
+birth_date: 1959-02-05
+gender: Male
+email: sen.jimmy.matlock@capitol.tn.gov
+image: https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/Jimmy_Matlock.jpg
 party:
 - name: Republican
 roles:
-- end_date: '2018-11-05'
+- start_date: 2026-11-03
+  type: upper
+  jurisdiction: ocd-jurisdiction/country:us/state:tn/government
+  district: '5'
+- end_date: 2018-11-05
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:tn/government
   district: '21'
+offices:
+- classification: capitol
+  address: Cordell Hull Building 425 Fifth Ave. North, Nashville, TN 37243
+  voice: 615-741-6806
+  fax: 615-253-0285
 links:
-- url: http://www.capitol.tn.gov/house/members/h21.html
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S5
+- url: https://www.capitol.tn.gov/house/members/h21.html
+other_names:
+- name: J. Matlock
+- name: J.L. Matlock
+- name: Matlock, J
+- name: Matlock, J.
 other_identifiers:
 - scheme: legacy_openstates
   identifier: TNL000087
@@ -22,5 +40,10 @@ other_identifiers:
 - scheme: legacy_openstates
   identifier: TNL000328
 sources:
-- url: http://www.capitol.tn.gov/house/members/
-- url: http://www.capitol.tn.gov/house/members/h21.html
+- url: http://www.capitol.tn.gov/house/members
+- url: https://ballotpedia.org/Jimmy_Matlock
+- url: https://en.wikipedia.org/wiki/Jimmy_Matlock
+- url: https://justfacts.votesmart.org/candidate/biography/67368/jimmy-matlock
+- url: https://wapp.capitol.tn.gov/apps/LegislatorInfo/Member?district=S5
+- url: https://www.capitol.tn.gov/house/members/
+- url: https://www.capitol.tn.gov/house/members/h21.html
