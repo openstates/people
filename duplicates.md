@@ -3,8 +3,8 @@
 Generated from `.github/scripts/check_duplicate_people.py` duplicate identity rule: within a state, two person files are duplicates when normalized `given_name` and `family_name` match.
 
 - States with duplicates: `52`
-- Duplicate name groups: `422`
-- Files involved: `852`
+- Duplicate name groups: `419`
+- Files involved: `846`
 
 Resolution convention: when a duplicate group is fixed, move the whole group under a `## Resolved` section at the bottom with the resolving PR number. This keeps unresolved groups easy to scan while preserving cleanup history for coordination.
 
@@ -663,9 +663,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 
 ## mi
 
-- `andy` `schor`
-  - `data/mi/retired/Andy-Schor-2d8a99e3-3864-48eb-8352-5d3a64184b8d.yml`
-  - `data/mi/retired/Andy-Schor-537630fb-30fc-4bc1-93be-97e465625184.yml`
 - `david` `anderson`
   - `data/mi/municipalities/David-Anderson-29fb6f78-497d-4775-b1f9-8b0be6be371e.yml`
   - `data/mi/retired/David-Anderson-df15c153-b52f-458f-8b71-f868c8bda3ac.yml`
@@ -1016,9 +1013,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `mike` `spano`
   - `data/ny/retired/Mike-Spano-211acd0f-ce3d-4bfd-a771-011000d0481a.yml`
   - `data/ny/retired/Mike-Spano-4c279513-6979-4605-9f0f-d9a312e6a999.yml`
-- `sean` `ryan`
-  - `data/ny/retired/Sean-M-Ryan-6913e7e0-3ad5-4593-a2b0-dc31e974cdf6.yml`
-  - `data/ny/retired/Sean-Ryan-3bcad7b1-387d-42bf-8233-ce88bd671b50.yml`
 - `zohran` `mamdani`
   - `data/ny/municipalities/Zohran-Mamdani-0986ce6e-b580-46ef-85c3-86c2d049857a.yml`
   - `data/ny/retired/Zohran-Mamdani-7bf43536-ab00-4cce-84c2-e2cc1c418d9c.yml`
@@ -1224,9 +1218,6 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `pete` `flores`
   - `data/tx/legislature/Pete-Flores-682e8ef8-8fc1-4490-a04d-63a7c6d92185.yml`
   - `data/tx/retired/Pete-Flores-7a497d46-5c50-4bf4-9be7-26fcf13aa659.yml`
-- `ron` `nirenberg`
-  - `data/tx/municipalities/Ron-Nirenberg--1dedd1e4-bd05-4fde-b688-2145b7070bee.yml`
-  - `data/tx/retired/Ron-Nirenberg-4ba1ad17-03f6-4b23-86b0-d270700b077b.yml`
 - `scott` `lemay`
   - `data/tx/municipalities/Scott-LeMay-0db1d663-6487-47c6-97b9-a1a5a4bcccd6.yml`
   - `data/tx/retired/Scott-LeMay-343fbe64-4ab7-4e6a-9e66-a94bbfd1e8c1.yml`
@@ -1409,3 +1400,9 @@ Resolution convention: when a duplicate group is fixed, move the whole group und
 - `nh` `fred` `doucette`: consolidated retired (b544733a) into retired (db4ec0a8), deleted the other retired file
 - `nh` `susan` `delemus`: consolidated both retired records (0d0e2536, 0e3a4612) into legislature `Sue-DeLemus` (62edd52b), deleted retired files
 - `nh` `victoria` `sullivan`: consolidated retired `Victoria-L-Sullivan` (0b69a6f5) into legislature (dbf39ca6), deleted retired file (not flagged: given names differed)
+
+### PR #XXXX
+
+- `mi` `andy` `schor`: consolidated retired House record (2d8a99e3) into the mayor record (537630fb), revived to municipalities, deleted the House file
+- `ny` `sean` `ryan`: consolidated retired Assembly record (3bcad7b1) into the Senate record (6913e7e0), revived to municipalities, deleted the Assembly file
+- `tx` `ron` `nirenberg`: consolidated retired record (4ba1ad17) into the municipalities record (1dedd1e4), retired it, deleted the other file
