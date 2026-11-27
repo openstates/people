@@ -6,12 +6,26 @@ party:
 - name: Democratic
 roles:
 - start_date: '2015-01-01'
+  end_date: '2017-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '34'
+- start_date: '2017-01-01'
+  end_date: '2019-01-01'
+  type: lower
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/government
+  district: '34'
+- start_date: '2019-01-01'
   end_date: '2019-11-11'
   type: lower
   jurisdiction: ocd-jurisdiction/country:us/state:mi/government
   district: '34'
 - start_date: '2019-11-11'
-  end_date: '2026-12'
+  end_date: '2022-12-05'
+  type: mayor
+  jurisdiction: ocd-jurisdiction/country:us/state:mi/place:flint/government
+- start_date: '2022-12-05'
+  end_date: '2026-12-01'
   type: mayor
   jurisdiction: ocd-jurisdiction/country:us/state:mi/place:flint/government
 offices:
